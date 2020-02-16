@@ -14,8 +14,8 @@ theme:
   logo: 'images/codacy-logo.png'
 
 # Repository
-repo_name: 'prcr/codacy-docs'
-repo_url: 'https://github.com/prcr/codacy-docs'
+repo_name: 'pauloribeiro-codacy/codacy-docs-poc'
+repo_url: 'https://github.com/pauloribeiro-codacy/codacy-docs-poc'
 
 # Copyright
 copyright: 'Copyright © 2020 <a href="https://www.codacy.com">Codacy</a>'
