@@ -1,0 +1,40 @@
+# Project information
+site_name: Codacy documentation
+
+# Configuration
+theme:
+  name: 'material'
+  favicon: 'images/favicon.ico'
+  palette:
+    primary: 'indigo'
+    accent: 'indigo'
+  font:
+    text: 'Ubuntu'
+    code: 'Ubuntu Mono'
+  logo: 'images/codacy-logo.png'
+
+# Repository
+repo_name: 'prcr/codacy-docs'
+repo_url: 'https://github.com/prcr/codacy-docs'
+
+# Copyright
+copyright: 'Copyright © 2020 <a href="https://www.codacy.com">Codacy</a>'
+
+# Extensions
+markdown_extensions:
+  - toc:
+      permalink: true
+  - admonition
+  - codehilite:
+      linenums: True
+  - meta
+
+# Page structure
+nav:
+  - Home: 'index.md'
+  - Getting started:
+      - 'getting-started/getting-started.md'
+      - 'getting-started/repository-add.md'
+      - 'getting-started/account-permissions.md'
+      - 'getting-started/repository-setup.md'
+      - 'getting-started/supported-languages.md'
