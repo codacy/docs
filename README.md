@@ -1,6 +1,6 @@
 # Codacy documentation
 
-<https://prcr.github.io/codacy-docs/>
+<https://pauloribeiro-codacy.github.io/codacy-docs-poc/>
 
 ## Preview docs locally
 
