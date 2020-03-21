@@ -22,7 +22,7 @@ repo_name: 'pauloribeiro-codacy/codacy-docs-poc'
 repo_url: 'https://github.com/pauloribeiro-codacy/codacy-docs-poc'
 
 # Copyright
-copyright: 'Copyright © 2020 <a href="https://www.codacy.com">Codacy</a>'
+copyright: '© <a href="https://www.codacy.com">Codacy</a>'
 
 # Extensions
 markdown_extensions:
@@ -33,7 +33,7 @@ markdown_extensions:
       linenums: True
   - meta
 
-# Page structure
+# Table of contents
 nav:
   - Home: 'index.md'
   - Getting started:
