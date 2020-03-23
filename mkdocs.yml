@@ -1,5 +1,6 @@
 # Project information
 site_name: Codacy documentation
+site_url: https://pauloribeiro-codacy.github.io/codacy-docs-poc/
 
 # Configuration
 theme:
