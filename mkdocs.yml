@@ -13,7 +13,6 @@ theme:
     text: 'Ubuntu'
     code: 'Ubuntu Mono'
   logo: 'images/codacy-logo.png'
-  custom_dir: 'theme'
 
   extra_css:
   - 'css/extra.css'
