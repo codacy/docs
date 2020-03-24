@@ -1,4 +1,4 @@
-# Why isn’t Codacy commenting on my PRs anymore?
+# Why isn't Codacy commenting on my PRs anymore?
 
 <span class="wysiwyg-color-black wysiwyg-font-size-medium">There are
 various reasons for Codacy to stop commenting on PRs. The most common
