@@ -9,13 +9,14 @@ theme:
   palette:
     primary: "indigo"
     accent: "indigo"
-  font:
-    text: "Ubuntu"
-    code: "Ubuntu Mono"
-  logo: "images/codacy-logo.png"
+  logo: "images/codacy-logo.svg"
+  # feature:
+  #   tabs: true
 
-  extra_css:
-    - "css/extra.css"
+extra_css:
+  - "css/extra.css"
+
+google_analytics: ["UA-45639808-4", "codacy.com"]
 
 # Repository
 repo_name: "pauloribeiro-codacy/codacy-docs-poc"
