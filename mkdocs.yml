@@ -34,11 +34,11 @@ markdown_extensions:
   - meta
 
 # Table of contents
-nav:
-  - Home: 'index.md'
-  - Getting started:
-      - 'getting-started/getting-started.md'
-      - 'getting-started/repository-add.md'
-      - 'getting-started/account-permissions.md'
-      - 'getting-started/repository-setup.md'
-      - 'getting-started/supported-languages.md'
+#nav:
+#  - Home: 'index.md'
+#  - Getting started:
+#      - 'getting-started/getting-started.md'
+#      - 'getting-started/repository-add.md'
+#      - 'getting-started/account-permissions.md'
+#      - 'getting-started/repository-setup.md'
+#      - 'getting-started/supported-languages.md'
