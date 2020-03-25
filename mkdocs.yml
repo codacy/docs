@@ -1,6 +1,8 @@
+strict: true
+
 # Project information
 site_name: Codacy documentation
-site_url: http://docs.dev.codacy.org
+site_url: http://docs.dev.codacy.org/
 
 # Configuration
 theme:
