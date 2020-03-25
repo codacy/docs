@@ -25,14 +25,14 @@ Should contain:
 
 ##### Correct:
 
--   http://my.stash.example.com:7990
+-   `http://my.stash.example.com:7990`
 
 ##### Incorrect:
 
--   my.stash.example.com
--   my.stash.example.com/
--   my.stash.example.com:7990
--   my.stash.example.com:7990/
+-   `my.stash.example.com`
+-   `my.stash.example.com/`
+-   `my.stash.example.com:7990`
+-   `my.stash.example.com:7990/`
 
 ### Project Keys ***\[required\]***
 
@@ -103,8 +103,6 @@ Server as an integration in the repository settings.
 
 NOTE: Please make sure that Bitbucket has SSH enabled so we can access
 your repositories' source code.
-
-##  
 
 ## Pull request comments
 

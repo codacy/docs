@@ -20,16 +20,16 @@ Should NOT contain:
 
 ##### Correct:
 
--   https://my.github.enterprise.example.com
+-   `https://my.github.enterprise.example.com`
 
 ##### Incorrect:
 
--   my.github.enterprise.example.com
--   https://my.github.enterprise.example.com/
--   https://my.github.enterprise.example.com:9000
--   https://user@pass:my.github.enterprise.example.com
--   my.github.enterprise.example.com:9000
--   my.github.enterprise.example.com:9000/
+-   `my.github.enterprise.example.com`
+-   `https://my.github.enterprise.example.com/`
+-   `https://my.github.enterprise.example.com:9000`
+-   `https://user@pass:my.github.enterprise.example.com`
+-   `my.github.enterprise.example.com:9000`
+-   `my.github.enterprise.example.com:9000`
 
 ### Port
 
@@ -82,17 +82,17 @@ and, if applicable, the port where it is running.
 
 ##### Correct:
 
--   [http://your.codacy.url.com](http://your.codacy.url.com/)
--   [http://your.codacy.url.com:9000](http://your.codacy.url.com:9000/)
--   [http://53.43.42.12](http://53.43.42.12/)
--   [http://53.43.42.12:9000](http://53.43.42.12:9000/)
+-   `http://your.codacy.url.com`
+-   `http://your.codacy.url.com:9000`
+-   `http://53.43.42.12`
+-   `http://53.43.42.12:9000`
 
 ##### Incorrect:
 
--   your.codacy.url.com
--   your.codacy.url.com:9000
--   53.43.42.12
--   53.43.42.12:9000
+-   `your.codacy.url.com`
+-   `your.codacy.url.com:9000`
+-   `53.43.42.12`
+-   `53.43.42.12:9000`
 
 ### Token retrieval ***\[required\]***
 
