@@ -9,7 +9,7 @@ work.
 
 
 
-## **1. Commits**
+## 1. Commits
  
 
 ![](https://support.codacy.com/hc/article_attachments/360012280513/image-1.png)
