@@ -42,6 +42,7 @@ markdown_extensions:
 
 plugins:
   - search
+  - monorepo
   - redirects:
       redirect_maps:
         "hc/en-us/articles/115000254665.md": "self-hosted/managing-authentication-for-the-control-panel-(115000254665).md"
@@ -336,12 +337,7 @@ plugins:
         "hc/en-us/articles/360034116533-Cloud-Release-Notes-07-Aug-2019.md": "product-updates/cloud-release-notes-|-07-aug-2019-(360034116533).md"
         "hc/en-us/articles/360035276553.md": "product-updates/cloud-release-notes-|-05-set-2019-(360035276553).md"
         "hc/en-us/articles/360035276553-Cloud-Release-Notes-05-Set-2019.md": "product-updates/cloud-release-notes-|-05-set-2019-(360035276553).md"
-# Table of contents
-#nav:
-#  - Home: 'index.md'
-#  - Getting started:
-#      - 'getting-started/getting-started.md'
-#      - 'getting-started/repository-add.md'
-#      - 'getting-started/account-permissions.md'
-#      - 'getting-started/repository-setup.md'
-#      - 'getting-started/supported-languages.md'
+
+nav:
+  - Home: "index.md"
+  - "Installing Codacy": "!include ./submodules/chart/mkdocs.yml"
