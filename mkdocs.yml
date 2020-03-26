@@ -7,18 +7,21 @@ site_url: http://docs.dev.codacy.org/
 # Configuration
 theme:
   name: "material"
-  favicon: "images/favicon.ico"
+  favicon: "assets/images/favicon.ico"
   palette:
     primary: "indigo"
     accent: "indigo"
-  logo: "images/codacy-logo.svg"
+  logo: "assets/images/codacy-logo.svg"
   # feature:
   #   tabs: true
 
 extra_css:
-  - "css/extra.css"
+  - "assets/stylesheets/extra.css"
 
-google_analytics: ["UA-45639808-4", "codacy.com"]
+extra_javascript:
+  - "assets/javascripts/extra.js"
+
+google_analytics: ["UA-45639808-4", "auto"]
 
 # Repository
 repo_name: "codacy/docs"
@@ -29,12 +32,13 @@ copyright: '© <a href="https://www.codacy.com">Codacy</a>'
 
 # Extensions
 markdown_extensions:
-  - toc:
-      permalink: true
   - admonition
   - codehilite:
-      linenums: True
+      guess_lang: false
+      linenums: true
   - meta
+  - toc:
+      permalink: true
 
 plugins:
   - search
