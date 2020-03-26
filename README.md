@@ -1,5 +1,7 @@
 # Codacy documentation
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5e8bce49e0df4be8a880f2df02759d88)](https://www.codacy.com?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=codacy/docs&amp;utm_campaign=Badge_Grade) ![Publish docs via GitHub Pages](https://github.com/codacy/docs/workflows/Publish%20docs%20via%20GitHub%20Pages/badge.svg?branch=master)
+
 <http://docs.dev.codacy.org>
 
 ## Preview docs locally

@@ -30,13 +30,13 @@ You'll also need to add the following 'Redirect URL's. Make sure to
 update your protocol to use either HTTP or HTTPS and your domain name as
 well. Keep in mind this field is case sensitive. 
 
-https://codacy.example.com/login/GitLab  
+```text
+https://codacy.example.com/login/GitLab
 https://codacy.example.com/add/addProvider/GitLab  
 https://codacy.example.com/add/addService/GitLab  
 https://codacy.example.com/add/addPermissions/GitLab
-
+```
  
-
 ![](https://support.codacy.com/hc/article_attachments/360009579499/app-created-gl.png)
 
  
