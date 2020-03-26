@@ -21,7 +21,7 @@ To change the settings for commits, click on **Customize**:
 -   **Duplication is over** - The commit is marked not up to standards if the number of clones introduced is bigger than the set value. By default, this setting is off.
 -   **Coverage variation is under** - The commit is marked not up to standards if the coverage introduced is smaller than the set value. By default, this setting is off.
 
-## **2. Pull Requests**
+## 2. Pull Requests
 
 
 ![](https://support.codacy.com/hc/article_attachments/360012252294/image-2.png)
@@ -34,7 +34,7 @@ Upon clicking the pull request **Customize** button, the following settings appe
 -   **Coverage variation is under** - The pull request is marked not up to standards if the coverage introduced is smaller than the value set here. This value refers to the variation of coverage on your PR, for example, if your repository has 90% coverage and you want to make sure this value doesn't decrease this you should set this to 0%. By default, this setting is off.
 
 
-## **3. Repository**
+## 3. Repository
 
  
 ![](https://support.codacy.com/hc/article_attachments/360012280493/image-3.png)
