@@ -20,7 +20,7 @@ If this is your case, go to the **Integrations** tab and add GitHub/Bitbucket. 
 To turn on post-commit hooks for GitHub:
 
 1.  Copy the Hook URL to your Clipboard.
-2.  Go to [Webhooks &amp; Services](https://github.com/johnaabotelho/test/settings/hooks/new) under your repository settings
+2.  Go to Webhooks &amp; Services under your repository settings
 3.  Paste the Hook URL into the "Payload URL" field
 4.  Select "application/json" in the "Content Type" field
 5.  Click "Add Webhook"
