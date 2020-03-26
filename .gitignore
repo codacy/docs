@@ -1,3 +1,11 @@
+# MkDocs build dir
 site/
 
+# OS generated files
 .DS_Store
+
+# Common backup files
+*.swp
+*.bak
+*.tmp
+*~
