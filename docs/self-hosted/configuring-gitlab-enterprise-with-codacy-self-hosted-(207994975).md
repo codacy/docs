@@ -21,14 +21,14 @@ This should contain:
 
 ##### Correct:
 
--   [http://my.gitlab.url:7990](http://localhost:7990/)
+-   `http://my.gitlab.url:7990`
 
 ##### Incorrect:
 
--   my.gitlab.example.com
--   my.gitlab.example.com/
--   my.gitlab.example.com:7990
--   my.gitlab.example.com:7990/
+-   `my.gitlab.example.com`
+-   `my.gitlab.example.com/`
+-   `my.gitlab.example.com:7990`
+-   `my.gitlab.example.com:7990/`
 
  
 
@@ -50,13 +50,13 @@ You'll also need to add the following 'Redirect URI'. Make sure to
 update your protocol to use either http or https and your domain name as
 well. Keep in mind this field is case sensitive. 
 
+```text
 https://codacy.example.com/login/GitLabEnterprise  
 https://codacy.example.com/add/addProvider/GitLabEnterprise  
 https://codacy.example.com/add/addService/GitLabEnterprise  
 https://codacy.example.com/add/addPermissions/GitLabEnterprise
-
+```
  
-
 ![](https://support.codacy.com/hc/article_attachments/115002399813/screen_shot_2017-09-06_at_15.34.15_720.png)
 
  
