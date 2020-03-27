@@ -5,7 +5,7 @@ uses, some false positives may occur.
 
 To instruct which Python version you want Codacy to use, you can define
 the following in a [Codacy configuration
-file](https://support.codacy.com/hc/en-us/articles/115002130625-Codacy-Configuration-File) added
+file](/hc/en-us/articles/115002130625-Codacy-Configuration-File) added
 in the root of your repository - **.codacy.yml**:
 
     ---

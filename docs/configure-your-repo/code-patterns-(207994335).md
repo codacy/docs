@@ -18,7 +18,7 @@ over the pattern and the Show Details option will appear):
 
  
 
-![](https://support.codacy.com/hc/en-us/article_attachments/203969219/pattern-explanation.png)
+![](/hc/en-us/article_attachments/203969219/pattern-explanation.png)
 
  
 
@@ -75,7 +75,7 @@ on the checkbox on the left of the title:
 
  
 
-![](https://support.codacy.com/hc/en-us/article_attachments/203969269/enabled.png)
+![](/hc/en-us/article_attachments/203969269/enabled.png)
 
  
 
@@ -85,7 +85,7 @@ style="line-height: 0; display: none;"></span>When you change the
 enabled patterns you can reanalyse your repository. To do that, just
 enter the latest commit from your list on the **Commit** view and click
 to
-[reanalyse](https://support.codacy.com/hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-). <span
+[reanalyse](/hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-). <span
 id="selectionBoundary_1538191427574_9720132835185136"
 class="rangySelectionBoundary"
 style="line-height: 0; display: none;"></span>
@@ -365,14 +365,14 @@ style="line-height: 0; display: none;"></span> **</span>
 repository's root. However, you can set up a different repository folder
 on which to start the analysis using a [<span class="s2">Codacy
 configuration
-file</span>](https://support.codacy.com/hc/en-us/articles/115002130625-Codacy-Configuration-File).
+file</span>](/hc/en-us/articles/115002130625-Codacy-Configuration-File).
 This file needs to be named **".codacy.yaml"** or **".codacy.yml"** and
 must be placed in the repository's root.</span>
 
 <span class="s1">See example below:</span>
 
 [<span
-class="ng-scope ng-binding">.codacy.yaml</span>](https://support.codacy.com/knowledge/articles/115000566729/en-us?brand_id=549689)
+class="ng-scope ng-binding">.codacy.yaml</span>](/knowledge/articles/115000566729/en-us?brand_id=549689)
 
     ---
     engines:

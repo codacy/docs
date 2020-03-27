@@ -69,9 +69,9 @@ contributors.
 
 For more details on how to invite team members to your organization,
 please
-read [here](https://support.codacy.com/hc/en-us/articles/360009340553-Creating-and-managing-teams).
+read [here](/hc/en-us/articles/360009340553-Creating-and-managing-teams).
 For more information on user permissions, please read
-[here](https://support.codacy.com/hc/en-us/articles/207280189).
+[here](/hc/en-us/articles/207280189).
 
  
 

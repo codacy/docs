@@ -13,7 +13,7 @@ This will make your organization the owner of this repository.
 
  
 
-![](https://support.codacy.com/hc/en-us/article_attachments/204595909/add-project-team.gif)
+![](/hc/en-us/article_attachments/204595909/add-project-team.gif)
 
  
 

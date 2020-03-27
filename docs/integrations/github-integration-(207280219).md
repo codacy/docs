@@ -28,7 +28,7 @@ browsing the existing issues on the repository:
 
  
 
-![](https://support.codacy.com/hc/en-us/article_attachments/115000333565/Screen_Shot_2016-12-27_at_12.11.35.png)
+![](/hc/en-us/article_attachments/115000333565/Screen_Shot_2016-12-27_at_12.11.35.png)
 
 <span class="wysiwyg-font-size-small">GitHub integration</span>
 

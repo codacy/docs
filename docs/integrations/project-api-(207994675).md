@@ -3,7 +3,7 @@
 The Codacy API offers specific methods to manipulate repositories. You
 access these by using a Project API Token generated for your repository.
 
-![](https://support.codacy.com/hc/en-us/article_attachments/115000318505/Screen_Shot_2016-12-26_at_17.50.15.png)
+![](/hc/en-us/article_attachments/115000318505/Screen_Shot_2016-12-26_at_17.50.15.png)
 
  
 

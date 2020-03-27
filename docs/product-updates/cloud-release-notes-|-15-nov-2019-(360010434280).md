@@ -7,7 +7,7 @@ Synced organizations for GitHub are live!
 This feature will allow for easier integration with GitHub and
 organization management. Here you can find our [documentation on the new
 features and how to use
-them](https://support.codacy.com/hc/en-us/articles/360010263720).
+them](/hc/en-us/articles/360010263720).
 
 As a consequence, the next time you log in to Codacy you will see a
 window asking for one additional permission on GitHub with this

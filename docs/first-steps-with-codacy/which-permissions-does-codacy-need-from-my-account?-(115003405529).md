@@ -125,7 +125,7 @@ continue to be able to perform operations that only require using the
 Git protocol either via SSH or HTTPS, such as detecting new commits and
 calculating diffs. To unregister your repositories from Codacy and stop
 the analysis you must [delete them from your Codacy
-account](https://support.codacy.com/hc/en-us/articles/207994835-How-do-I-transfer-delete-a-repository-from-my-account-).
+account](/hc/en-us/articles/207994835-How-do-I-transfer-delete-a-repository-from-my-account-).
 
 If you need to use an integration that you have previously revoked, log
 in again to Codacy with that integration so that Codacy can request the

@@ -26,16 +26,16 @@ The commit detail will show you an overview of what changed in that particular 
 
 A detailed issue delta information is always available, showing exactly which issues were fixed or created in each commit.
 
-![](https://support.codacy.com/hc/en-us/article_attachments/207480065/Screen_Shot_2016-10-11_at_10.00.39.png)
+![](/hc/en-us/article_attachments/207480065/Screen_Shot_2016-10-11_at_10.00.39.png)
 
 By expanding an issue, you can find information on why it's an issue, how to solve it, and links to community sources on the problem found.
 You will also find a few additional options, including "Ignore issue", "Remove pattern", "Ignore file", and also integrations you may have enabled.
 
-![](https://support.codacy.com/hc/en-us/article_attachments/207480045/Screen_Shot_2016-10-11_at_10.03.18.png)
+![](/hc/en-us/article_attachments/207480045/Screen_Shot_2016-10-11_at_10.03.18.png)
 
 
 ## 4. Commit diff
 
 The changed files can also be reviewed using a git diff visualizer, helping achieve a quick and easy code review.
 
-![](https://support.codacy.com/hc/en-us/article_attachments/207440649/Screen_Shot_2016-10-11_at_10.00.55.png)
+![](/hc/en-us/article_attachments/207440649/Screen_Shot_2016-10-11_at_10.00.55.png)

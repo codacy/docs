@@ -14,7 +14,7 @@ information when accepting pull requests.
 integration has at least write permissions for that repository. The
 status shows whether your pull request and coverage are up to standards
 or not as per the [Pull Request Quality
-Settings](https://support.codacy.com/hc/en-us/articles/360009164573-Quality-Settings)
+Settings](/hc/en-us/articles/360009164573-Quality-Settings)
 set up for your repository. To see the coverage status, please make sure
 the Coverage option is enabled in the Pull Request Quality settings.
 

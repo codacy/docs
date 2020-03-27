@@ -52,14 +52,14 @@ character set.
 We recommend installing this database on a separate machine.
 
 You can find setup instructions for this
-database [here](https://support.codacy.com/hc/en-us/articles/360002902573).
+database [here](/hc/en-us/articles/360002902573).
 
 It is also possible to set up a local PostgreSQL 9.4.x database, but
 please **note that a local database is recommended for testing purposes
 only**. If you would like to use a Docker-based database instance for
 this purpose (without data persistence between reboots), you can find
 setup instructions
-[here](https://support.codacy.com/hc/en-us/articles/207994955-Installing-postgres-for-Codacy-Enterprise-Using-a-Docker-container).
+[here](/hc/en-us/articles/207994955-Installing-postgres-for-Codacy-Enterprise-Using-a-Docker-container).
 
 You can test the connection from the Codacy server to your database
 later on the setup process, just after you run the setup script the
@@ -77,7 +77,7 @@ class="ng-scope ng-binding">shell</span>](https://docs.codacy.com/docs/codacy-in
 We recommend installing Codacy on **Ubuntu 16.04**.
 
 If you need to install Codacy on a different operating system, please
-[contact us first](https://support.codacy.com/hc/en-us/requests/new).
+[contact us first](/hc/en-us/requests/new).
 Although Docker aims at being environment-independent, not all Linux
 distributions fully support the Docker features that Codacy relies on to
 run. Installing Codacy on a different OS may yield unpredictable
@@ -155,7 +155,7 @@ Please make sure:
     \[TCP\] port, which 5432 by default.
 -   PostgreSQL is configured to accept connections from the Codacy
     server, as
-    documented [here](https://support.codacy.com/hc/en-us/articles/360002902573).
+    documented [here](/hc/en-us/articles/360002902573).
 
 ### 1.5.4 - Access to servers you want to integrate with
 
@@ -213,7 +213,7 @@ will then proceed to install the Codacy Control Panel.
 Using the provided Postgres database will allow you to evaluate Codacy
 without having to properly install a Postgres database, but, as stated
 in the
-<a href="https://support.codacy.com/hc/en-us/articles/207994955-Postgres" class="doc-link">Postgres installation guide</a>,
+<a href="/hc/en-us/articles/207994955-Postgres" class="doc-link">Postgres installation guide</a>,
 this database is not supported for production environments.
 
 After this, you will be ready to start the configuration process in step
@@ -321,7 +321,7 @@ application execution.
  
 
 ![<span class="wysiwyg-font-size-small">Pulling
-dockers</span>](https://support.codacy.com/hc/en-us/article_attachments/203971169/Screen_Shot_2015-10-29_at_16.04.41.png)
+dockers</span>](/hc/en-us/article_attachments/203971169/Screen_Shot_2015-10-29_at_16.04.41.png)
 
  
 
@@ -339,7 +339,7 @@ option</span>
 **RUN** will start the application. At any time, you can check the
 status of Codacy by navigating to Support:</span>
 
-![](https://support.codacy.com/hc/en-us/article_attachments/115001595665/Screen_Shot_2017-02-22_at_16.28.13.png)
+![](/hc/en-us/article_attachments/115001595665/Screen_Shot_2017-02-22_at_16.28.13.png)
 
 <span class="wysiwyg-font-size-small">Support screen</span>
 
@@ -383,7 +383,7 @@ order to test your installation of Codacy. Codacy will provide you with
 a checkup page that will scan for any missed configuration setting.
 
 ![<span class="wysiwyg-font-size-small">Failed settings
-screen</span>](https://support.codacy.com/hc/en-us/article_attachments/203971199/Screen_Shot_2015-07-28_at_13.02.09.png)
+screen</span>](/hc/en-us/article_attachments/203971199/Screen_Shot_2015-07-28_at_13.02.09.png)
 
 ##  
 
@@ -396,7 +396,7 @@ Agreement.
 
  
 
-![](https://support.codacy.com/hc/en-us/article_attachments/204010765/Screen_Shot_2015-07-29_at_13.23.34.png)
+![](/hc/en-us/article_attachments/204010765/Screen_Shot_2015-07-29_at_13.23.34.png)
 
  
 
@@ -404,7 +404,7 @@ After accepting it, you will be redirected to the initial registration
 screen.
 
 ![<span class="wysiwyg-font-size-small">Registration
-panel</span>](https://support.codacy.com/hc/en-us/article_attachments/203971209/Screen_Shot_2015-07-29_at_13.26.11-1.png)
+panel</span>](/hc/en-us/article_attachments/203971209/Screen_Shot_2015-07-29_at_13.26.11-1.png)
 
 The first user to register will automatically be an admin and will be
 able to administer the platform and create additional users.
@@ -468,7 +468,7 @@ the certificate key to the CSR file in the settings panel. By enabling
 the HTTPS settings, the control panel will be accessible through HTTPS
 and will use the configured port (9443 by default).
 
-![](https://support.codacy.com/hc/en-us/article_attachments/115001580009/pasted_image_at_2017_02_22_04_16_pm_480.png)
+![](/hc/en-us/article_attachments/115001580009/pasted_image_at_2017_02_22_04_16_pm_480.png)
 
 After this is complete, make sure you "Save" and click "Reload".
 

@@ -6,7 +6,7 @@ We use external tools at Codacy, in this tutorial we provide our own template wr
 You can also fork the code of one of our tools, and modify it; here are some examples:
 [codacy-phpmd](https://github.com/codacy/codacy-phpmd), [codacy-jshint](https://github.com/codacy/codacy-jshint), [codacy-pmdJava](https://github.com/codacy/codacy-pmdJava).
 
-This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the <a href="https://support.codacy.com/hc/en-us/articles/207994725-Tool-Developer-Guide" class="doc-link">Tool Developer Guide</a>.
+This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the <a href="/hc/en-us/articles/207994725-Tool-Developer-Guide" class="doc-link">Tool Developer Guide</a>.
 
 ## Scala Engine Template
 
@@ -76,7 +76,7 @@ The used types like **PatternDef** and **Result** are defined as case classes. T
 
 The entry point of our template for you is the **Engine** object. In the **codacy.Engine**, you can see the object **Engine** extends a DockerEngine that receives a **Tool**.
 
-[Engine.scala](https://support.codacy.com/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala)
+[Engine.scala](/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala)
 
 ```scala
     object Engine extends DockerEngine(MyTool)
@@ -86,7 +86,7 @@ Your tool must extend **Tool**, (as shown before, MyTemplate already extends it
 
 When you want to execute a command, we recommend you generate the sequence you want to run and use the process API provided by `scala.sys.process._` to run it and pick up the result.
 
-[Scala](https://support.codacy.com/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala)
+[Scala](/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala)
 
 ```scala
     import scala.sys.process._

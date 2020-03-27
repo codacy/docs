@@ -22,7 +22,7 @@ There are many tools to generate coverage. We have a few suggestions:
 See also:
 
 -   [Add coverage to your
-    repo](https://support.codacy.com/hc/en-us/articles/207993835-Add-coverage-to-your-repo)
--   [Coverage](https://support.codacy.com/hc/en-us/articles/207279819)
+    repo](/hc/en-us/articles/207993835-Add-coverage-to-your-repo)
+-   [Coverage](/hc/en-us/articles/207279819)
 
  

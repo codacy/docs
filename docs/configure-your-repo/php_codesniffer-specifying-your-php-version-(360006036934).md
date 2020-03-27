@@ -7,7 +7,7 @@ versions](https://github.com/wimg/PHPCompatibility#sniffing-your-code-for-compat
 
 To instruct which PHP version you want Codacy to use, you can define the
 following in a [Codacy configuration
-file](https://support.codacy.com/hc/en-us/articles/115002130625-Codacy-Configuration-File) -
+file](/hc/en-us/articles/115002130625-Codacy-Configuration-File) -
 **.codacy.yml**:
 
     ---

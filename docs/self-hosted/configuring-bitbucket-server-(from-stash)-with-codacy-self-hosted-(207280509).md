@@ -78,7 +78,7 @@ After the link is created, click edit to add an incoming connection.
 
 #### Add incoming connection
 
-![](https://support.codacy.com/hc/en-us/article_attachments/204010695/stash5.png)
+![](/hc/en-us/article_attachments/204010695/stash5.png)
 
 ##### Consumer Key
 

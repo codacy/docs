@@ -28,4 +28,4 @@ You can manage your existing Authors in the People section of your organization 
 
 ### Synced Organizations Availability 🚧
 
-Sync Organizations are only available for GitHub organizations. While we are working on expanding support for this feature, if you'd like to add repositories from another provider, follow the [steps for adding a repository through the manual wizard](https://support.codacy.com/hc/en-us/articles/207278449).
+Sync Organizations are only available for GitHub organizations. While we are working on expanding support for this feature, if you'd like to add repositories from another provider, follow the [steps for adding a repository through the manual wizard](/hc/en-us/articles/207278449).

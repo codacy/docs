@@ -69,7 +69,7 @@ To create the application in your GitHub Enterprise, visit
 `settings/applications/new` and create an application pointing to your
 local Codacy deployment URL.
 
-![](https://support.codacy.com/hc/en-us/article_attachments/203971039/Screenshot_2015-04-16_13.55.59.png)
+![](/hc/en-us/article_attachments/203971039/Screenshot_2015-04-16_13.55.59.png)
 
  
 
@@ -100,7 +100,7 @@ After the application is created, you should copy both the `Client ID`
 and the `Client Secret` and paste them in the setup page on your Codacy
 Self-hosted.
 
-![](https://support.codacy.com/hc/en-us/article_attachments/204010675/Screenshot_2015-04-16_14.02.55.png)
+![](/hc/en-us/article_attachments/204010675/Screenshot_2015-04-16_14.02.55.png)
 
 After this is done you will be able to use GitHub Enterprise as an
 authentication method to add repositories and as an integration in the

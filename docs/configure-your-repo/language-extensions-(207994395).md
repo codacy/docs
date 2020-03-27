@@ -6,7 +6,7 @@ so, go to your repository's **Settings**&gt;**File Extensions**
 
 ![<span class="wysiwyg-font-size-small wysiwyg-color-black60">Repository
 Settings -&gt; File
-Extensions</span>](https://support.codacy.com/hc/en-us/article_attachments/207541949/Screen_Shot_2016-10-14_at_12.00.47.png)
+Extensions</span>](/hc/en-us/article_attachments/207541949/Screen_Shot_2016-10-14_at_12.00.47.png)
 
  
 

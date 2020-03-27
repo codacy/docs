@@ -49,7 +49,7 @@ machine running Codacy, as all analysis will be performed offline. 
 ## What are the network requirements for Codacy for inbound and outbound traffic ports? 
 
 -   You can find our network requirements here:
-    <https://support.codacy.com/hc/en-us/articles/207995025#networking-ports>
+    </hc/en-us/articles/207995025#networking-ports>
 
  
 
@@ -113,7 +113,7 @@ to:
 {{ conf.doplicated.var.internalhostip }}
 
 ![<span class="wysiwyg-font-size-small">Configuration
-key</span>](https://support.codacy.com/hc/en-us/article_attachments/203971099/unnamed-1.png)
+key</span>](/hc/en-us/article_attachments/203971099/unnamed-1.png)
 
 If you are not using DNS, you should set Host and Host Docker Ip to:
 

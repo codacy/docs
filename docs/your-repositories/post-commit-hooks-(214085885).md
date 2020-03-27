@@ -27,7 +27,7 @@ To turn on post-commit hooks for GitHub:
 
 Here's an example of how to configure your hooks on Github:
 
-![](https://support.codacy.com/hc/en-us/article_attachments/115000853845/YmJy6PV8ge_2.gif)
+![](/hc/en-us/article_attachments/115000853845/YmJy6PV8ge_2.gif)
 
 **Permissions to create Post-Commit Hooks**
 

@@ -16,14 +16,14 @@ assist you with the migration.
     soon as a Pull Request is analysed instead of having to wait till
     coverage was available.
 -   New Dashboards: We have improved our existing [Project
-    dashboard](https://support.codacy.com/hc/en-us/articles/360003890673-Project-Dashboard-How-does-it-work-),
+    dashboard](/hc/en-us/articles/360003890673-Project-Dashboard-How-does-it-work-),
     and launched two new ones:
-    [Organization](https://support.codacy.com/hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-)
+    [Organization](/hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-)
     and [Personal
-    dashboard](https://support.codacy.com/hc/en-us/articles/360003863434-Personal-Dashboard-How-does-it-work-). 
+    dashboard](/hc/en-us/articles/360003863434-Personal-Dashboard-How-does-it-work-). 
 -   We now support configuration files in Submodules for GitHub,
     Bitbucket (not Stash/Bitbucket Server) and GitLab. Check our
-    [documentation](https://support.codacy.com/hc/en-us/articles/360005239394)
+    [documentation](/hc/en-us/articles/360005239394)
     for more information on this.
 -   You can now update build status for commits in BitBucket.
 -   We now support partial coverage reports so you can now submit
@@ -33,7 +33,7 @@ assist you with the migration.
     is an article with steps on how to upload partial coverage to
     Codacy.
 -   We now display errors concerning [Codacy configuration
-    file](https://support.codacy.com/hc/en-us/articles/115002130625-Codacy-Configuration-File)
+    file](/hc/en-us/articles/115002130625-Codacy-Configuration-File)
     in the UI.
 -   We have updated the following tools to newer versions:
     -   Scalastyle version 1.0.0

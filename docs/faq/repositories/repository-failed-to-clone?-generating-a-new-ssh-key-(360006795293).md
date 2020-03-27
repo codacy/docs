@@ -16,5 +16,5 @@ Alternatively, you can do this process manually by copying the SSH key.
 
 ![Screen\_Shot\_2018-07-08\_at\_19.59.04.png](/images/Screen_Shot_2018-07-08_at_19.59.04.png)
 
-**Generate New User Key **should only be used if [your repository is using submodules on Codacy](https://support.codacy.com/hc/en-us/articles/360005239394-Submodules-how-to-enable-them-).
+**Generate New User Key **should only be used if [your repository is using submodules on Codacy](/hc/en-us/articles/360005239394-Submodules-how-to-enable-them-).
 Adding the SSH key to your account allows Codacy to access the repository and all the submodules, without you adding the key to the repository and then having to copy it to all its submodules.

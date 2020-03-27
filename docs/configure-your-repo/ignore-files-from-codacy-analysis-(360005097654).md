@@ -29,7 +29,7 @@ be **"**</span>**.codacy.yaml" **or** <span
 class="s1">"</span>.codacy.yml"**.
 
 [<span
-class="ng-scope ng-binding">.codacy.yaml</span>](https://support.codacy.com/knowledge/articles/115000566729/en-us?brand_id=549689)
+class="ng-scope ng-binding">.codacy.yaml</span>](/knowledge/articles/115000566729/en-us?brand_id=549689)
 
     ---
     engines:

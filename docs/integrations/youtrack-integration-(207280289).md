@@ -11,7 +11,7 @@ configured be able to access your YouTrack installation:
  
 
 ![<span class="wysiwyg-font-size-small">Enabling YouTrack
-integration</span>](https://support.codacy.com/hc/en-us/article_attachments/115000339045/youtrack.gif)
+integration</span>](/hc/en-us/article_attachments/115000339045/youtrack.gif)
 
  
 

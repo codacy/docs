@@ -36,7 +36,7 @@ By clicking in "merge" you are directed to the Git provider to merge the pull re
 
 ### 3. Hotspots
 
-You have a section of relevant items that require attention from you. On this section you can see a set of attention points, you can click on them or dismiss them, in case you don't feel they are relevant. We have created a [full article on this](https://support.codacy.com/hc/en-us/articles/360003863594-Hotspots-How-they-work-) so that you can learn more about it.
+You have a section of relevant items that require attention from you. On this section you can see a set of attention points, you can click on them or dismiss them, in case you don't feel they are relevant. We have created a [full article on this](/hc/en-us/articles/360003863594-Hotspots-How-they-work-) so that you can learn more about it.
 
 
 

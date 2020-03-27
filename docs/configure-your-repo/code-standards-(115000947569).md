@@ -22,4 +22,4 @@ You can use configuration files to enforce code standards.
  
 
 Learn more about [Setting up configuration files in your
-repository](https://support.codacy.com/hc/en-us/articles/207994335-Code-Patterns).
+repository](/hc/en-us/articles/207994335-Code-Patterns).

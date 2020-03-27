@@ -48,7 +48,7 @@ status and comments on Bitbucket.**
 Bitbucket integration is not available, someone who has Admin
 permissions in both Codacy and Bitbucket to </span>[<span
 style="font-weight: 400;">re-do the
-integration</span>](https://support.codacy.com/hc/en-us/articles/207280239-Bitbucket-Integration)<span
+integration</span>](/hc/en-us/articles/207280239-Bitbucket-Integration)<span
 style="font-weight: 400;"> in Codacy.   </span> 
 
 <span style="font-weight: 400;">You can login with Bitbucket through

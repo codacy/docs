@@ -56,6 +56,6 @@ We support the following languages 
  
 
 You can see a full list of plugin engines we support
-[here](https://support.codacy.com/hc/en-us/articles/213632009-Engines).
+[here](/hc/en-us/articles/213632009-Engines).
 
  

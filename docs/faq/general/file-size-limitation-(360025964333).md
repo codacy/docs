@@ -12,7 +12,7 @@ As a solution to this problem, we placed a size limit to the files that Codacy w
 
 ## What if I really need a file analyzed that is over this limit?
 
-While Codacy will discard your file by default, you can still have it analyzed using our [CLI](https://support.codacy.com/hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results) and running the analysis locally. CLI does not have a set timeout or any limitation on file size, so you will be able to have your files analyzed this way.
+While Codacy will discard your file by default, you can still have it analyzed using our [CLI](/hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results) and running the analysis locally. CLI does not have a set timeout or any limitation on file size, so you will be able to have your files analyzed this way.
 
 ## What about Self-hosted instances?
 

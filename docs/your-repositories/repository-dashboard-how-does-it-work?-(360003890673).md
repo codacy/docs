@@ -37,7 +37,7 @@ On the chart you can select to see results for the "Last 7 days", forthe "Last 3
 
 You can see, per criterium (Issues, Complex Files, Duplicated code and Coverage), how the repository is behaving on the last x days. You can navigate on the different criterium by clicking on the tabs of the chart.
 
-You can also see, the **trend for the next 31 days** (assuming the past behavior), the **pull request prediction** (the changes caused by open pull requests if they are not changed) and the **quality standard** (defined on the repository [Quality Settings](https://support.codacy.com/hc/en-us/articles/360009164573-Quality-Settings)).
+You can also see, the **trend for the next 31 days** (assuming the past behavior), the **pull request prediction** (the changes caused by open pull requests if they are not changed) and the **quality standard** (defined on the repository [Quality Settings](/hc/en-us/articles/360009164573-Quality-Settings)).
 
 In the example you see "Issues" with a red indicator **<img src="/images/Screen_Shot_2018-05-03_at_22.51.02.png" width="11" height="10" alt="Screen_Shot_2018-05-03_at_22.51.02.png" />** meaning the number of Issues is above what was defined on the quality standards.
 Also, we can see next to each criterium **a delta** (can be "=", a drop or an increase), representing the changes observed in the period selected. In the example, there was no change of number of Issues on the last 31 days, however there was a decrease of 160% of duplicated code.
@@ -59,7 +59,7 @@ You can also click on "See all issues" and go to the list of issues with no cate
 
 ### 3. Coverage status
 
-On this component of the Repository Dashboard you will see the number of files without coverage, the number of files with coverage "not up to standards" and files with coverage "up to standards" based on your [quality settings](https://support.codacy.com/hc/en-us/articles/360009164573-Quality-Settings) (defined at the repository level). If you click on "See all files" you will go to the list of files.
+On this component of the Repository Dashboard you will see the number of files without coverage, the number of files with coverage "not up to standards" and files with coverage "up to standards" based on your [quality settings](/hc/en-us/articles/360009164573-Quality-Settings) (defined at the repository level). If you click on "See all files" you will go to the list of files.
 
 <img src="/images/Screenshot_2019-02-25_at_10.25.50.png" width="367" height="256" alt="Screenshot_2019-02-25_at_10.25.50.png" />
 
@@ -67,11 +67,11 @@ In case you don't have coverage set up for this repository we will let you know 
 
 ### 4. Hotspots
 
-You have a section of relevant items that require attention on the Repository. On this section you can see a set of attention points, you can click on them or dismiss them, in case you don't feel they are relevant. We have created a [full article on this,](https://support.codacy.com/hc/en-us/articles/360003863594-Hotspots-How-they-work-) so that you can learn more about it.
+You have a section of relevant items that require attention on the Repository. On this section you can see a set of attention points, you can click on them or dismiss them, in case you don't feel they are relevant. We have created a [full article on this,](/hc/en-us/articles/360003863594-Hotspots-How-they-work-) so that you can learn more about it.
 
 ### 5. Logs
 
-You have a section of relevant activities that happened on the repository you selected. We have created a [full article on this,](https://support.codacy.com/hc/en-us/articles/360003890693-Logs-How-do-they-work-) so you can learn more about it.
+You have a section of relevant activities that happened on the repository you selected. We have created a [full article on this,](/hc/en-us/articles/360003890693-Logs-How-do-they-work-) so you can learn more about it.
 
 ### 6. Pull requests status
 

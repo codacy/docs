@@ -2,7 +2,7 @@
 
 Codacy only supports Gitlab version 9.5 or later. 
 
-![](https://support.codacy.com/hc/en-us/article_attachments/115004382929/a266513d752d2a479f3eb047d4badda079abeff428f931394c516c80d9903eef.png)
+![](/hc/en-us/article_attachments/115004382929/a266513d752d2a479f3eb047d4badda079abeff428f931394c516c80d9903eef.png)
 
 ##  
 
