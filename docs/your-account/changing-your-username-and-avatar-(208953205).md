@@ -4,7 +4,7 @@
 
 To change your name or username, click on your avatar, and select **Your Account**. Once on the account settings page, select the field you'd like to edit, make your adjustments, and click on **Save Changes**.
 
-![](https://support.codacy.com/hc/en-us/article_attachments/204627945/account-settings-change-name.gif)
+![](/hc/en-us/article_attachments/204627945/account-settings-change-name.gif)
 
 
 ## Changing your avatar

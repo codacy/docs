@@ -21,7 +21,7 @@
 -   <span style="font-weight: 400;">Updated ESLint to
     [v5.16.0](https://eslint.org/blog/2019/03/eslint-v5.16.0-released)</span>
 -   <span style="font-weight: 400;">Added [Spotbugs and FindBugs
-    Security](https://support.codacy.com/hc/en-us/articles/360023916013-Run-SpotBugs)</span>
+    Security](/hc/en-us/articles/360023916013-Run-SpotBugs)</span>
 -   <span style="font-weight: 400;">Added new Control Panel
     configuration to allow configuring HTTPS when using a third-party
     certificate manager. </span>
@@ -45,6 +45,3 @@
 -   <span style="font-weight: 400;">Fixed the bug where user needed to
     login with Bitbucket to link Codacy account to Bitbucket if using
     another signup method.</span>
-
-  
-  

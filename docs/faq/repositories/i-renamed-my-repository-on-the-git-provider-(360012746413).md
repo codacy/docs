@@ -5,4 +5,4 @@ lose historical data about your repository.
 
 
 
-![Screenshot\_2018-11-27\_at\_15.58.37.png](https://support.codacy.com/hc/article_attachments/360018780554/Screenshot_2018-11-27_at_15.58.37.png)
+![Screenshot\_2018-11-27\_at\_15.58.37.png](/images/Screenshot_2018-11-27_at_15.58.37.png)

@@ -2,7 +2,7 @@
 
 Codacy only supports Gitlab version 9.5 or later. 
 
-![](https://support.codacy.com/hc/en-us/article_attachments/115004382929/a266513d752d2a479f3eb047d4badda079abeff428f931394c516c80d9903eef.png)
+![](/hc/en-us/article_attachments/115004382929/a266513d752d2a479f3eb047d4badda079abeff428f931394c516c80d9903eef.png)
 
 ##  
 
@@ -40,7 +40,7 @@ Follow the link to create an application on Gitlab Enterprise.
 
  
 
-![](https://support.codacy.com/hc/article_attachments/115004607265/Screen_Shot_2017-05-17_at_13.16.37.png)
+![](/images/Screen_Shot_2017-05-17_at_13.16.37.png)
 
  
 
@@ -51,12 +51,12 @@ update your protocol to use either http or https and your domain name as
 well. Keep in mind this field is case sensitive. 
 
 ```text
-https://codacy.example.com/login/GitLabEnterprise  
-https://codacy.example.com/add/addProvider/GitLabEnterprise  
-https://codacy.example.com/add/addService/GitLabEnterprise  
+https://codacy.example.com/login/GitLabEnterprise
+https://codacy.example.com/add/addProvider/GitLabEnterprise
+https://codacy.example.com/add/addService/GitLabEnterprise
 https://codacy.example.com/add/addPermissions/GitLabEnterprise
 ```
  
-![](https://support.codacy.com/hc/article_attachments/115002399813/screen_shot_2017-09-06_at_15.34.15_720.png)
+![](/images/screen_shot_2017-09-06_at_15.34.15_720.png)
 
  

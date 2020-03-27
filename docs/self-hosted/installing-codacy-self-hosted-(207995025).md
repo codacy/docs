@@ -52,14 +52,14 @@ character set.
 We recommend installing this database on a separate machine.
 
 You can find setup instructions for this
-database [here](https://support.codacy.com/hc/en-us/articles/360002902573).
+database [here](/hc/en-us/articles/360002902573).
 
 It is also possible to set up a local PostgreSQL 9.4.x database, but
 please **note that a local database is recommended for testing purposes
 only**. If you would like to use a Docker-based database instance for
 this purpose (without data persistence between reboots), you can find
 setup instructions
-[here](https://support.codacy.com/hc/en-us/articles/207994955-Installing-postgres-for-Codacy-Enterprise-Using-a-Docker-container).
+[here](/hc/en-us/articles/207994955-Installing-postgres-for-Codacy-Enterprise-Using-a-Docker-container).
 
 You can test the connection from the Codacy server to your database
 later on the setup process, just after you run the setup script the
@@ -70,14 +70,14 @@ container:
 [<span
 class="ng-scope ng-binding">shell</span>](https://docs.codacy.com/docs/codacy-installation)
 
-    docker run -it --rm postgres:9.4.5 sh -c 'exec psql -h "<POSTGRESQL-HOST>" -p "<POSTGRESQL-PORT>" -U <POSTGRESQL-USER>' 
+    docker run -it --rm postgres:9.4.5 sh -c 'exec psql -h "<POSTGRESQL-HOST>" -p "<POSTGRESQL-PORT>" -U <POSTGRESQL-USER>'
 
 ## 1.3 - Software
 
 We recommend installing Codacy on **Ubuntu 16.04**.
 
 If you need to install Codacy on a different operating system, please
-[contact us first](https://support.codacy.com/hc/en-us/requests/new).
+[contact us first](/hc/en-us/requests/new).
 Although Docker aims at being environment-independent, not all Linux
 distributions fully support the Docker features that Codacy relies on to
 run. Installing Codacy on a different OS may yield unpredictable
@@ -116,7 +116,7 @@ To check the DNS servers configured on your target machine:
 [<span
 class="ng-scope ng-binding">shell</span>](https://docs.codacy.com/docs/codacy-installation)
 
-    cat /etc/resolv.conf 
+    cat /etc/resolv.conf
 
 In order to add a new DNS server to this configuration, use the
 *nameserver* command:
@@ -124,7 +124,7 @@ In order to add a new DNS server to this configuration, use the
 [<span
 class="ng-scope ng-binding">shell</span>](https://docs.codacy.com/docs/codacy-installation)
 
-    nameserver <some-ip-address> 
+    nameserver <some-ip-address>
 
 ### 1.5.2 - Ports to open for the Codacy server
 
@@ -142,9 +142,9 @@ For the target machine, make sure you have these ports open for
 On the **outbound** traffic side, ensure that you can access the
 Internet from the Codacy server, including:
 
--   getenterprise.codacy.com on ports 80 and 443 \[TCP\]  
+-   getenterprise.codacy.com on ports 80 and 443 \[TCP\]
     (download application setup and update packages)
--   index.docker.io on port 443 \[TCP\]  
+-   index.docker.io on port 443 \[TCP\]
     (download application docker images)
 
 ### 1.5.3 - Database setup
@@ -155,7 +155,7 @@ Please make sure:
     \[TCP\] port, which 5432 by default.
 -   PostgreSQL is configured to accept connections from the Codacy
     server, as
-    documented [here](https://support.codacy.com/hc/en-us/articles/360002902573).
+    documented [here](/hc/en-us/articles/360002902573).
 
 ### 1.5.4 - Access to servers you want to integrate with
 
@@ -165,7 +165,7 @@ Ensure that:
     (e.g, Gitlab, email servers) on their respective API / service
     ports;
 -   The services you want to integrate with can access the Codacy
-    server.  
+    server.
     (The ports that must be open on the Codacy server are already
     enumerated above.)
 
@@ -213,7 +213,7 @@ will then proceed to install the Codacy Control Panel.
 Using the provided Postgres database will allow you to evaluate Codacy
 without having to properly install a Postgres database, but, as stated
 in the
-<a href="https://support.codacy.com/hc/en-us/articles/207994955-Postgres" class="doc-link">Postgres installation guide</a>,
+<a href="/hc/en-us/articles/207994955-Postgres" class="doc-link">Postgres installation guide</a>,
 this database is not supported for production environments.
 
 After this, you will be ready to start the configuration process in step
@@ -238,7 +238,7 @@ the application web UI. This will be a file with the extension *.dlk*.
 This will provide you with access to download a custom-built virtual
 infrastructure of Codacy that run in your own infrastructure.
 
-<img src="https://support.codacy.com/hc/en-us/article_attachments/208296969/Screen_Shot_2016-10-31_at_16.59.32.png" width="592" height="220" />
+<img src="/images/Screen_Shot_2016-10-31_at_16.59.32.png" width="592" height="220" />
 
 <span class="wysiwyg-font-size-small">The license should be provided by
 a Codacy representative.</span>
@@ -250,7 +250,7 @@ a Codacy representative.</span>
 After validating the license, you will be presented with the Codacy
 Control Panel, used to configure and update the application.
 
- <img src="https://support.codacy.com/hc/en-us/article_attachments/208297049/Screen_Shot_2016-10-31_at_17.01.07.png" width="722" height="220" />
+ <img src="/images/Screen_Shot_2016-10-31_at_17.01.07.png" width="722" height="220" />
 
 <span class="wysiwyg-font-size-small">Codacy Control Panel</span>
 
@@ -268,7 +268,7 @@ For your initial application installation or future Codacy updates,
 click the button **Check for Updates** in the top right corner. If a new
 update is available, a new option will appear:
 
- <img src="https://support.codacy.com/hc/en-us/article_attachments/208315125/Screen_Shot_2016-10-31_at_17.07.38.png" width="655" height="234" />
+ <img src="/images/Screen_Shot_2016-10-31_at_17.07.38.png" width="655" height="234" />
 
 <span class="wysiwyg-font-size-small">New version available</span>
 
@@ -277,7 +277,7 @@ configurations is required. To configure the new version, click on
 the **Configure **link in the upper right hand corner. This will open a
 new screen with every configuration key required to run Codacy.
 
- <img src="https://support.codacy.com/hc/en-us/article_attachments/208315185/Screen_Shot_2016-10-31_at_17.11.35.png" width="460" height="496" />
+ <img src="/images/Screen_Shot_2016-10-31_at_17.11.35.png" width="460" height="496" />
 
 <span class="wysiwyg-font-size-small">Application configuration</span>
 
@@ -288,7 +288,7 @@ anything.
 If you would like to configure an external database, change the
 following settings:
 
- <img src="https://support.codacy.com/hc/en-us/article_attachments/208315205/Screen_Shot_2016-10-31_at_17.13.10.png" width="406" height="325" />
+ <img src="/images/Screen_Shot_2016-10-31_at_17.13.10.png" width="406" height="325" />
 
 <span class="wysiwyg-font-size-small">Mandatory settings to be
 reviewed</span>
@@ -307,7 +307,7 @@ After configuring the application, hitting save will return you to the
 update screen. A new option to pull the version will be presented in the
 upper left corner:
 
- <img src="https://support.codacy.com/hc/en-us/article_attachments/208315125/Screen_Shot_2016-10-31_at_17.07.38.png" width="669" height="239" />
+ <img src="/images/Screen_Shot_2016-10-31_at_17.07.38.png" width="669" height="239" />
 
 <span class="wysiwyg-font-size-small">PULL option available</span>
 
@@ -321,14 +321,14 @@ application execution.
  
 
 ![<span class="wysiwyg-font-size-small">Pulling
-dockers</span>](https://support.codacy.com/hc/en-us/article_attachments/203971169/Screen_Shot_2015-10-29_at_16.04.41.png)
+dockers</span>](/hc/en-us/article_attachments/203971169/Screen_Shot_2015-10-29_at_16.04.41.png)
 
  
 
 When done, a success message will show in the logs, and refreshing the
 page will show a new option **Run** in the toolbar:
 
- <img src="https://support.codacy.com/hc/en-us/article_attachments/208297449/Screen_Shot_2016-10-31_at_17.15.06.png" width="584" height="297" />
+ <img src="/images/Screen_Shot_2016-10-31_at_17.15.06.png" width="584" height="297" />
 
 <span class="wysiwyg-font-size-small">Docker pulled and new RUN
 option</span>
@@ -339,7 +339,7 @@ option</span>
 **RUN** will start the application. At any time, you can check the
 status of Codacy by navigating to Support:</span>
 
-![](https://support.codacy.com/hc/en-us/article_attachments/115001595665/Screen_Shot_2017-02-22_at_16.28.13.png)
+![](/hc/en-us/article_attachments/115001595665/Screen_Shot_2017-02-22_at_16.28.13.png)
 
 <span class="wysiwyg-font-size-small">Support screen</span>
 
@@ -383,7 +383,7 @@ order to test your installation of Codacy. Codacy will provide you with
 a checkup page that will scan for any missed configuration setting.
 
 ![<span class="wysiwyg-font-size-small">Failed settings
-screen</span>](https://support.codacy.com/hc/en-us/article_attachments/203971199/Screen_Shot_2015-07-28_at_13.02.09.png)
+screen</span>](/hc/en-us/article_attachments/203971199/Screen_Shot_2015-07-28_at_13.02.09.png)
 
 ##  
 
@@ -396,7 +396,7 @@ Agreement.
 
  
 
-![](https://support.codacy.com/hc/en-us/article_attachments/204010765/Screen_Shot_2015-07-29_at_13.23.34.png)
+![](/hc/en-us/article_attachments/204010765/Screen_Shot_2015-07-29_at_13.23.34.png)
 
  
 
@@ -404,7 +404,7 @@ After accepting it, you will be redirected to the initial registration
 screen.
 
 ![<span class="wysiwyg-font-size-small">Registration
-panel</span>](https://support.codacy.com/hc/en-us/article_attachments/203971209/Screen_Shot_2015-07-29_at_13.26.11-1.png)
+panel</span>](/hc/en-us/article_attachments/203971209/Screen_Shot_2015-07-29_at_13.26.11-1.png)
 
 The first user to register will automatically be an admin and will be
 able to administer the platform and create additional users.
@@ -430,7 +430,7 @@ default patterns. These defaults will be applied to new repositories.
  
 
 ![<span
-class="wysiwyg-font-size-small">Code patterns</span> ](https://support.codacy.com/hc/article_attachments/360035881173/Screenshot_2019-05-20_at_11.44.45.png)
+class="wysiwyg-font-size-small">Code patterns</span> ](/images/Screenshot_2019-05-20_at_11.44.45.png)
 
 Codacy is now ready to be used.
 
@@ -457,7 +457,7 @@ through HTTPS and will use the configured port (9443 by default).  
 
  
 
-![Screen\_Shot\_2018-01-25\_at\_10.43.15.png](https://support.codacy.com/hc/article_attachments/360000395274/Screen_Shot_2018-01-25_at_10.43.15.png)
+![Screen\_Shot\_2018-01-25\_at\_10.43.15.png](/images/Screen_Shot_2018-01-25_at_10.43.15.png)
 
  
 
@@ -468,7 +468,7 @@ the certificate key to the CSR file in the settings panel. By enabling
 the HTTPS settings, the control panel will be accessible through HTTPS
 and will use the configured port (9443 by default).
 
-![](https://support.codacy.com/hc/en-us/article_attachments/115001580009/pasted_image_at_2017_02_22_04_16_pm_480.png)
+![](/hc/en-us/article_attachments/115001580009/pasted_image_at_2017_02_22_04_16_pm_480.png)
 
 After this is complete, make sure you "Save" and click "Reload".
 

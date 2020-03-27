@@ -19,7 +19,7 @@ appear as coming from codacy-bot.
 
  
 
-![Feb-14-2019\_16-31-44.gif](https://support.codacy.com/hc/article_attachments/360026859013/Feb-14-2019_16-31-44.gif) 
+![Feb-14-2019\_16-31-44.gif](/images/Feb-14-2019_16-31-44.gif) 
 
 <span class="wysiwyg-font-size-small">Enabling Bitbucket Cloud
 integration</span>
@@ -34,7 +34,7 @@ After enabling the Bitbucket Cloud integration, you will have additional
 options when browsing the existing issues on the repository:
 
 ![<span class="wysiwyg-font-size-small">Bitbucket Cloud
-integration</span>](https://support.codacy.com/hc/article_attachments/115004252873/blobid0.png)
+integration</span>](/images/blobid0.png)
 
  
 

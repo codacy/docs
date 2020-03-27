@@ -169,9 +169,9 @@ them, we wouldn't have support for those languages.
 </table>
 
 Do you love a language we don't support? Do you want your name and that
-language on this list?  
+language on this list?
 Check
-<a href="https://support.codacy.com/hc/en-us/articles/207994725-Tool-Developer-Guide" class="doc-link">How to add support for a language guide</a>.
+<a href="/hc/en-us/articles/207994725-Tool-Developer-Guide" class="doc-link">How to add support for a language guide</a>.
 
 ##  
 

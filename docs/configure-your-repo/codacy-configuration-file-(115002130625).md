@@ -9,7 +9,7 @@ languages.
 You can ignore files globally, for certain categories (duplication,
 metrics or coverage) or for a specific tool (e.g.: Rubocop). The
 category metrics refers to the information you find under [File
-details](https://support.codacy.com/hc/en-us/articles/207279849#2-file-detail)
+details](/hc/en-us/articles/207279849#2-file-detail)
 such as Size, Structure and Complexity. 
 
 To add custom extensions to a language you can also add an entry in this
@@ -18,7 +18,7 @@ with those extensions and might need changes.
 
 If you want to disable an engine that needs to be done directly in the
 [Code
-Patterns](https://support.codacy.com/hc/en-us/articles/207994335-Code-Patterns)
+Patterns](/hc/en-us/articles/207994335-Code-Patterns)
 page.
 
 <span class="s1">The file name must be **"**</span>**.codacy.yaml"**
@@ -26,7 +26,7 @@ or **<span class="s1">"</span>.codacy.yml"** and should be placed in the
 root of your repository.
 
 [<span
-class="ng-scope ng-binding">.codacy.yaml</span>](https://support.codacy.com/knowledge/articles/115000566729/en-us?brand_id=549689)
+class="ng-scope ng-binding">.codacy.yaml</span>](/knowledge/articles/115000566729/en-us?brand_id=549689)
 
     ---
     engines:

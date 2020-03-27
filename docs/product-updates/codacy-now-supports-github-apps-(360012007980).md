@@ -14,7 +14,7 @@ only a specific repository, Apps will have you covered.</span>
 
 <span style="font-weight: 400;">Using Apps also unlocks access to new
 APIs, like GitHub Checks for creating better pull request
-reviews.</span>![ghapps.gif](https://support.codacy.com/hc/article_attachments/360009269879/ghapps.gif)
+reviews.</span>![ghapps.gif](/images/ghapps.gif)
 
 <span style="font-weight: 400;">To migrate to Apps all you have to do is
 sign out, sign in to Codacy and follow the wizard requesting the new

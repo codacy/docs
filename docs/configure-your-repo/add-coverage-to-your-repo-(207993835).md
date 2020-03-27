@@ -18,6 +18,6 @@ how to send multiple coverage reports for the same language.
 
 See also:
 
--   [Coverage](https://support.codacy.com/hc/en-us/articles/207279819-Coverage)
+-   [Coverage](/hc/en-us/articles/207279819-Coverage)
 -   [Generate
-    Coverage](https://support.codacy.com/hc/en-us/articles/207312879-Generate-Coverage)
+    Coverage](/hc/en-us/articles/207312879-Generate-Coverage)

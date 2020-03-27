@@ -15,7 +15,7 @@ Open **Your Account,** open the **Plans and Billing** tab, and select
 the plan you wish.
 
                  
- ![Mar-10-2017\_15-08-09.gif](https://support.codacy.com/hc/article_attachments/115002132245/Mar-10-2017_15-08-09.gif)
+ ![Mar-10-2017\_15-08-09.gif](/images/Mar-10-2017_15-08-09.gif)
 
 Please, note that when upgrading your personal account, only your
 commits will be analyzed.
@@ -29,7 +29,7 @@ Go to **Organizations**, select the organization you want to upgrade,
 open the **Plans and Billing** tab, and select the plan you'd like.
 
                  
- ![Mar-10-2017\_17-02-37.gif](https://support.codacy.com/hc/article_attachments/115002135565/Mar-10-2017_17-02-37.gif)
+ ![Mar-10-2017\_17-02-37.gif](/images/Mar-10-2017_17-02-37.gif)
 
  
 

@@ -13,7 +13,7 @@ If you are using GitHub or Bitbucket you can let Codacy configure the hook for y
 It is possible that this switch is not visible for you.
 If this is your case, go to the **Integrations** tab and add GitHub/Bitbucket. **Make sure you enable it after adding it.**
 
-![Screen\_Shot\_.png](https://support.codacy.com/hc/article_attachments/115005410673/Screen_Shot_.png)
+![Screen\_Shot\_.png](/images/Screen_Shot_.png)
 
 ## Manual Setup of Post-Commit Hooks on GitHub
 
@@ -27,7 +27,7 @@ To turn on post-commit hooks for GitHub:
 
 Here's an example of how to configure your hooks on Github:
 
-![](https://support.codacy.com/hc/en-us/article_attachments/115000853845/YmJy6PV8ge_2.gif)
+![](/hc/en-us/article_attachments/115000853845/YmJy6PV8ge_2.gif)
 
 **Permissions to create Post-Commit Hooks**
 

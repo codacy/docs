@@ -95,7 +95,7 @@ To revoke the access from Codacy to one or more of the OAuth providers:
     selecting **Your Account**.
 
     ![Opening Your
-    Account](https://support.codacy.com/hc/article_attachments/360009344000/revoke-1.png)
+    Account](/images/revoke-1.png)
 
 2.  The Profile page lists all current integrations with Git providers
     or Google that you used to sign in or log in to Codacy. To revoke
@@ -103,7 +103,7 @@ To revoke the access from Codacy to one or more of the OAuth providers:
     the intended integration.
 
     ![Revoking an
-    integration](https://support.codacy.com/hc/article_attachments/360009355339/revoke-2.png)
+    integration](/images/revoke-2.png)
 
 3.  To ensure that the integration is removed not only on Codacy but
     also on the integration side, we recommend that you follow the
@@ -125,7 +125,7 @@ continue to be able to perform operations that only require using the
 Git protocol either via SSH or HTTPS, such as detecting new commits and
 calculating diffs. To unregister your repositories from Codacy and stop
 the analysis you must [delete them from your Codacy
-account](https://support.codacy.com/hc/en-us/articles/207994835-How-do-I-transfer-delete-a-repository-from-my-account-).
+account](/hc/en-us/articles/207994835-How-do-I-transfer-delete-a-repository-from-my-account-).
 
 If you need to use an integration that you have previously revoked, log
 in again to Codacy with that integration so that Codacy can request the

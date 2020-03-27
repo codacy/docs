@@ -4,11 +4,11 @@ When you first sign up, Codacy asks you to grant access to all repositories or i
 
 To see additional repositories you can grant additional access on the "Add repository" page, either on your "My repositories" list:
 
-![Screenshot\_2020-02-26\_at\_21.43.56.png](https://support.codacy.com/hc/article_attachments/360009383839/Screenshot_2020-02-26_at_21.43.56.png)
+![Screenshot\_2020-02-26\_at\_21.43.56.png](/images/Screenshot_2020-02-26_at_21.43.56.png)
 
 Or on an organization repositories page:
 
-![Screenshot\_2020-02-26\_at\_21.39.52.png](https://support.codacy.com/hc/article_attachments/360009373560/Screenshot_2020-02-26_at_21.39.52.png)
+![Screenshot\_2020-02-26\_at\_21.39.52.png](/images/Screenshot_2020-02-26_at_21.39.52.png)
 
 After granting Codacy for access to additional data, the repositories will immediately become visible without any need for further configuration.
 

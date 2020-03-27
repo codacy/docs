@@ -12,7 +12,7 @@ As a solution to this problem, we placed a size limit to the files that Codacy w
 
 ## What if I really need a file analyzed that is over this limit?
 
-While Codacy will discard your file by default, you can still have it analyzed using our [CLI](https://support.codacy.com/hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results) and running the analysis locally. CLI does not have a set timeout or any limitation on file size, so you will be able to have your files analyzed this way.
+While Codacy will discard your file by default, you can still have it analyzed using our [CLI](/hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results) and running the analysis locally. CLI does not have a set timeout or any limitation on file size, so you will be able to have your files analyzed this way.
 
 ## What about Self-hosted instances?
 
@@ -20,4 +20,4 @@ By default, Codacy Self-hosted has the same limit of 150 KB as our Cloud version
 
 The change can be done on the Configuration panel:
 
-![Screen\_Shot\_2019-06-27\_at\_16.47.18.png](https://support.codacy.com/hc/article_attachments/360040986773/Screen_Shot_2019-06-27_at_16.47.18.png)
+![Screen\_Shot\_2019-06-27\_at\_16.47.18.png](/images/Screen_Shot_2019-06-27_at_16.47.18.png)

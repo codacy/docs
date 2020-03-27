@@ -6,7 +6,7 @@ defined address.
 To add a WebHook, access the **Integrations** tab of your repository
 **Settings**, click on "Add channel" and select "WebHook" from the list.
 
-![](https://support.codacy.com/hc/en-us/article_attachments/209270725/Screen_Shot_2016-12-02_at_17.41.49.png)
+![](/hc/en-us/article_attachments/209270725/Screen_Shot_2016-12-02_at_17.41.49.png)
 
 ## Configuration
 
@@ -15,7 +15,7 @@ To add a WebHook, access the **Integrations** tab of your repository
 The URL where to POST the message
 
 After filling the field you have to click the Save button and everything
-should be setup correctly.  
+should be setup correctly.
 You can use the Test button to send a test notification to the address.
 
 When Codacy sends the POST to the address the message is in JSON format.

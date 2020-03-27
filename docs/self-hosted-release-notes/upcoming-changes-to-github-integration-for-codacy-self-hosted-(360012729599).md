@@ -22,6 +22,6 @@ Despite the integration with existing repositories continuing to work,
 the following steps will be required:
 
 1.  Codacy Admin: [Create and configure a new GitHub
-    App](https://support.codacy.com/hc/en-us/articles/360012665460)
+    App](/hc/en-us/articles/360012665460)
 2.  GitHub organization Admin: Install the new App in the organization
 3.  All GitHub users: When signing in, grant access with the new App

@@ -42,7 +42,7 @@ here:
  
 
 For users that don't have Admin permissions, they will need to be added
-to a [team](https://support.codacy.com/hc/en-us/articles/360009340553).
+to a [team](/hc/en-us/articles/360009340553).
 When adding users to a team, the Administrator can decide the level of
 permissions each team member should have for the repositories within
 that team. 

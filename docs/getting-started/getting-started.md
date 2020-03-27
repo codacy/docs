@@ -8,7 +8,7 @@ To get started, head to [codacy.com](https://www.codacy.com/) and click **Get st
 
 Signing up with a Git provider such as GitHub links your Codacy user with your Git provider user, making it easier to add repositories to Codacy and invite your teammates.
 
-You’ll be prompted to allow Codacy access to your Git provider during the authorization flow. Read more about [the permissions Codacy requires and why](https://support.codacy.com/hc/en-us/articles/115003405529).
+You’ll be prompted to allow Codacy access to your Git provider during the authorization flow. Read more about [the permissions Codacy requires and why](/hc/en-us/articles/115003405529).
 
 ## 2. Account Details
 
@@ -18,9 +18,9 @@ You’ll be asked to fill in a few details about your company so we know a bit m
 
 ![onboarding\_step3\_add.png](images/onboarding_step3_add.png)
 
-Now, you’ll need to select the organization that contains your repositories. If you can’t see the organization you are looking for, [read this troubleshooting page](https://support.codacy.com/hc/en-us/articles/360010264500).
+Now, you’ll need to select the organization that contains your repositories. If you can’t see the organization you are looking for, [read this troubleshooting page](/hc/en-us/articles/360010264500).
 
-The selected organization will then be synced with Codacy so that managing your team permissions is easy. Read more about [what synced organizations do](https://support.codacy.com/hc/en-us/articles/360010263720).
+The selected organization will then be synced with Codacy so that managing your team permissions is easy. Read more about [what synced organizations do](/hc/en-us/articles/360010263720).
 
 ## 4. Add repositories
 
@@ -30,8 +30,8 @@ And as a final step, you can select the repositories that you wish to analyze. C
 
 ## 5. You're all set!  🎉
 
-Read our guide on [what to do with a newly added repository](https://support.codacy.com/hc/en-us/articles/207993605) to explore static analysis issues and continue configuring your repository.
+Read our guide on [what to do with a newly added repository](/hc/en-us/articles/207993605) to explore static analysis issues and continue configuring your repository.
 
 ## Synced Organizations Availability 🚧
 
-Sync Organizations are only available for GitHub organizations. While we are working on expanding support for this feature, if you'd like to add repositories from a personal GitHub account, follow the [steps for adding a repository through the manual wizard](https://support.codacy.com/hc/en-us/articles/207278449).
+Sync Organizations are only available for GitHub organizations. While we are working on expanding support for this feature, if you'd like to add repositories from a personal GitHub account, follow the [steps for adding a repository through the manual wizard](/hc/en-us/articles/207278449).

@@ -18,7 +18,7 @@ over the pattern and the Show Details option will appear):
 
  
 
-![](https://support.codacy.com/hc/en-us/article_attachments/203969219/pattern-explanation.png)
+![](/hc/en-us/article_attachments/203969219/pattern-explanation.png)
 
  
 
@@ -34,9 +34,9 @@ style="line-height: 0; display: none;"></span>
 
  
 
-<img src="https://support.codacy.com/hc/en-us/article_attachments/115004092189/c14f895e0f57610b7fd706e27b31925e785e1a184549e765daf9f1e69ad54602.png" width="693" height="177" />
+<img src="/images/c14f895e0f57610b7fd706e27b31925e785e1a184549e765daf9f1e69ad54602.png" width="693" height="177" />
 
-  
+
 
 ### <span class="ng-binding"><span id="selectionBoundary_1538191371968_6307191414366646" class="rangySelectionBoundary" style="line-height: 0; display: none;"></span>The issues detected by Codacy belong to one of the following categories:</span>
 
@@ -75,7 +75,7 @@ on the checkbox on the left of the title:
 
  
 
-![](https://support.codacy.com/hc/en-us/article_attachments/203969269/enabled.png)
+![](/hc/en-us/article_attachments/203969269/enabled.png)
 
  
 
@@ -85,7 +85,7 @@ style="line-height: 0; display: none;"></span>When you change the
 enabled patterns you can reanalyse your repository. To do that, just
 enter the latest commit from your list on the **Commit** view and click
 to
-[reanalyse](https://support.codacy.com/hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-). <span
+[reanalyse](/hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-). <span
 id="selectionBoundary_1538191427574_9720132835185136"
 class="rangySelectionBoundary"
 style="line-height: 0; display: none;"></span>
@@ -93,7 +93,7 @@ style="line-height: 0; display: none;"></span>
  
 
 <figure>
-<img src="https://support.codacy.com/hc/en-us/article_attachments/115004092209/b76fc1f9e8dab5a1db65856b0dd09ce79a156a013573cdef5a700e823dc53547.png" width="637" height="450" alt="" />
+<img src="/images/b76fc1f9e8dab5a1db65856b0dd09ce79a156a013573cdef5a700e823dc53547.png" width="637" height="450" alt="" />
 </figure>
 
  
@@ -112,7 +112,7 @@ style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Ar
 -&gt; </span>**Default Patterns:**
 
 ![<span class="wysiwyg-font-size-small wysiwyg-color-black60">Account
-Patterns</span>](https://support.codacy.com/hc/article_attachments/115005881393/Screen_Shot_2018-01-12_at_11.21.22.png)
+Patterns</span>](/images/Screen_Shot_2018-01-12_at_11.21.22.png)
 
 ### <span class="ng-binding"><span id="selectionBoundary_1538191496580_4422751245661616" class="rangySelectionBoundary" style="line-height: 0; display: none;"></span>Repository Patterns</span>
 
@@ -122,7 +122,7 @@ selection for repositories already added. You can go to **Code
 patterns:**
 
 ![<span class="wysiwyg-font-size-small wysiwyg-color-black60">Repository
-Patterns</span>](https://support.codacy.com/hc/article_attachments/360038394674/Screen_Shot_2019-06-18_at_17.57.58.png)
+Patterns</span>](/images/Screen_Shot_2019-06-18_at_17.57.58.png)
 
   
 
@@ -142,7 +142,7 @@ results accordingly to your configuration file, you need to go to the
 Code Patterns view and select "Configuration file" for the respective
 tool and select the option as shown in the example below.
 
-![Screen\_Shot\_2017-10-09\_at\_18.54.12.png](https://support.codacy.com/hc/article_attachments/115003197494/Screen_Shot_2017-10-09_at_18.54.12.png)
+![Screen\_Shot\_2017-10-09\_at\_18.54.12.png](/images/Screen_Shot_2017-10-09_at_18.54.12.png)
 
 <span id="selectionBoundary_1538191573076_4069043064518669"
 class="rangySelectionBoundary"
@@ -365,14 +365,14 @@ style="line-height: 0; display: none;"></span> **</span>
 repository's root. However, you can set up a different repository folder
 on which to start the analysis using a [<span class="s2">Codacy
 configuration
-file</span>](https://support.codacy.com/hc/en-us/articles/115002130625-Codacy-Configuration-File).
+file</span>](/hc/en-us/articles/115002130625-Codacy-Configuration-File).
 This file needs to be named **".codacy.yaml"** or **".codacy.yml"** and
 must be placed in the repository's root.</span>
 
 <span class="s1">See example below:</span>
 
 [<span
-class="ng-scope ng-binding">.codacy.yaml</span>](https://support.codacy.com/knowledge/articles/115000566729/en-us?brand_id=549689)
+class="ng-scope ng-binding">.codacy.yaml</span>](/knowledge/articles/115000566729/en-us?brand_id=549689)
 
     ---
     engines:

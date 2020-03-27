@@ -15,4 +15,4 @@ on GitLab.
 
  
 
-![Screen\_Shot\_2018-08-07\_at\_18.30.15.png](https://support.codacy.com/hc/article_attachments/360010128234/Screen_Shot_2018-08-07_at_18.30.15.png)
+![Screen\_Shot\_2018-08-07\_at\_18.30.15.png](/images/Screen_Shot_2018-08-07_at_18.30.15.png)
