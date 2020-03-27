@@ -4,7 +4,7 @@ To create an organization, click on your avatar and select
 **Organizations**. Type the name in the **Create new organization**
 field and click on **Create New**.
 
-![](https://support.codacy.com/hc/article_attachments/360012570234/image-0.gif)
+![](/images/image-0.gif)
 
 # <span style="font-size: 13px;">Renaming your organization</span>
 
@@ -15,7 +15,7 @@ always rename an organization</span> but:</span>
     back if someone else registers your original organization
     name.</span>
 -   <span class="wysiwyg-color-black">This may break all your repository
-    URLs.  
+    URLs.
     </span>
 
  
@@ -25,7 +25,7 @@ original URLs will be valid for at least 15 days.</span>
 
  
 
-![](https://support.codacy.com/hc/article_attachments/360035486794/rename-org.png)
+![](/images/rename-org.png)
 
  
 

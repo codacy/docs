@@ -4,13 +4,13 @@ Here you can define quality settings for your repository, giving you control ove
 
 To access the quality settings, please browse to **Settings &gt; Quality Settings**. Here you find three sections where you can set specific values on commit, pull request, and repository levels. Below we explain what these settings do and how they work.
 
-![](https://support.codacy.com/hc/article_attachments/360012252314/image-0.png)
+![](/images/image-0.png)
 
 
 
 ## 1. Commits
 
-![](https://support.codacy.com/hc/article_attachments/360012280513/image-1.png)
+![](/images/image-1.png)
 
 To change the settings for commits, click on **Customize**:
 
@@ -21,7 +21,7 @@ To change the settings for commits, click on **Customize**:
 
 ## 2. Pull Requests
 
-![](https://support.codacy.com/hc/article_attachments/360012252294/image-2.png)
+![](/images/image-2.png)
 
 Upon clicking the pull request **Customize** button, the following settings appear:
 
@@ -33,7 +33,7 @@ Upon clicking the pull request **Customize** button, the following settings appe
 
 ## 3. Repository
 
-![](https://support.codacy.com/hc/article_attachments/360012280493/image-3.png)
+![](/images/image-3.png)
 
 When you click on the Repository’s **Customize** button, Codacy presents you with:
 

@@ -12,7 +12,7 @@ This view only shows the files on your main branch.
 
  
 
-![Screen\_Shot\_2018-05-29\_at\_13.51.51.png](https://support.codacy.com/hc/article_attachments/360006447053/Screen_Shot_2018-05-29_at_13.51.51.png)
+![Screen\_Shot\_2018-05-29\_at\_13.51.51.png](/images/Screen_Shot_2018-05-29_at_13.51.51.png)
 
  
 
@@ -58,7 +58,7 @@ class="ng-scope ng-binding">.codacy.yaml</span>](https://support.codacy.com/know
       - 'spec/**/*'
       - 'benchmarks/**/*'
       - '*.min.js'
-      - '**/tests/**' 
+      - '**/tests/**'
 
 If you wish to, you should use the following syntax:
 
@@ -67,9 +67,9 @@ If you wish to, you should use the following syntax:
 '\*\*.extension' ignores all files with the same extension across all
 your repository
 
-'test/\*' ignores all files in the root of test  
-'test/\*\*' ignores everything inside test  
-'test/\*\*/\*' ignores all files inside sub-folder of test  
+'test/\*' ignores all files in the root of test
+'test/\*\*' ignores everything inside test
+'test/\*\*/\*' ignores all files inside sub-folder of test
 '\*\*/\*.resource' Ignores all .resource in all folders and sub-folders
 
 Please note that if the Codacy configuration file exists in the repo and
@@ -87,31 +87,31 @@ by the tool itself.
 Also there are few files that Codacy ignores by default, matching the
 following regular exceptions:
 
-.\*\[\\.-\]min\\.css  
-.\*\[\\.-\]min\\.js  
-.\*node\_modules/.\*  
-.\*bower\_components  
-.\*vendor/.\*  
-.\*third\[\_-\]?\[Pp\]arty  
-.\*docs?/.\*  
-.\*samples  
-.\*releases?/.\*  
-.\*builds  
-.\*dist/.\*  
-.\*external  
-.\*libs/.\*  
-.\*d3\\.js  
-.\*angular(-resource|)?\\.js  
-.\*select2(-resource|)?\\.js  
-.\*-ace\\.js  
-.\*typeahead\\.js  
-.\*jquery-ui\\.js  
-.\*reveal\\.js  
-.\*three\\.js  
-.\*chart\\.js  
-.\*jquery\\.js  
-.\*underscore\\.js  
-.\*lodash\\.js  
-.\*bootstrap\\.js  
-.\*bootstrap\\.css  
+.\*\[\\.-\]min\\.css
+.\*\[\\.-\]min\\.js
+.\*node\_modules/.\*
+.\*bower\_components
+.\*vendor/.\*
+.\*third\[\_-\]?\[Pp\]arty
+.\*docs?/.\*
+.\*samples
+.\*releases?/.\*
+.\*builds
+.\*dist/.\*
+.\*external
+.\*libs/.\*
+.\*d3\\.js
+.\*angular(-resource|)?\\.js
+.\*select2(-resource|)?\\.js
+.\*-ace\\.js
+.\*typeahead\\.js
+.\*jquery-ui\\.js
+.\*reveal\\.js
+.\*three\\.js
+.\*chart\\.js
+.\*jquery\\.js
+.\*underscore\\.js
+.\*lodash\\.js
+.\*bootstrap\\.js
+.\*bootstrap\\.css
 .\*font-awesome\\.css

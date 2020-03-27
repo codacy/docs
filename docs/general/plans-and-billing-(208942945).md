@@ -54,7 +54,7 @@ class="rangySelectionBoundary"
 style="line-height: 0; display: none;"></span></span>
 
 <span
-style="font-weight: 400;">![plan-and-billing.png](https://support.codacy.com/hc/article_attachments/360008304520/plan-and-billing.png)</span>
+style="font-weight: 400;">![plan-and-billing.png](/images/span>
 
  
 

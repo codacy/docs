@@ -129,7 +129,7 @@ the address of the Docker network interface with an `ifconfig` and then
 whitelist the range ip addresses according to it (for
 example, `172.17.0.0/16)`.
 
-![Screen\_Shot\_2018-04-24\_at\_15.55.58.png](https://support.codacy.com/hc/article_attachments/360004137354/Screen_Shot_2018-04-24_at_15.55.58.png) 
+![Screen\_Shot\_2018-04-24\_at\_15.55.58.png](/images/Screen_Shot_2018-04-24_at_15.55.58.png) 
 
 Finally, restart postgres:
 

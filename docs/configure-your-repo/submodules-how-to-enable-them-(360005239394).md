@@ -45,7 +45,7 @@ on Codacy that have submodules:</span>
  
 
 <span
-style="font-weight: 400;">![Screenshot\_2019-05-16\_at\_15.28.55.png](https://support.codacy.com/hc/article_attachments/360036767653/Screenshot_2019-05-16_at_15.28.55.png)</span>
+style="font-weight: 400;">![Screenshot\_2019-05-16\_at\_15.28.55.png](/images/span>
 
  
 
@@ -57,7 +57,7 @@ Administration Settings.</span>
 
  
 
-![Screenshot\_2019-05-16\_at\_14.24.06.png](https://support.codacy.com/hc/article_attachments/360035922974/Screenshot_2019-05-16_at_14.24.06.png)
+![Screenshot\_2019-05-16\_at\_14.24.06.png](/images/Screenshot_2019-05-16_at_14.24.06.png)
 
 **How does this work?**
 
@@ -97,7 +97,7 @@ on Codacy that have submodules:</span>
 
  
 
-![Screenshot\_2019-05-16\_at\_15.52.00.png](https://support.codacy.com/hc/article_attachments/360036767633/Screenshot_2019-05-16_at_15.52.00.png)
+![Screenshot\_2019-05-16\_at\_15.52.00.png](/images/Screenshot_2019-05-16_at_15.52.00.png)
 
  
 

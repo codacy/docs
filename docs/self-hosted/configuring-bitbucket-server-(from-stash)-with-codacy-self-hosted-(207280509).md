@@ -2,11 +2,11 @@
 
 ------------------------------------------------------------------------
 
-![](https://support.codacy.com/hc/article_attachments/360011639334/bitbucket_server_1.gif)
+![](/images/bitbucket_server_1.gif)
 
-![bitbucket\_server\_2.gif](https://support.codacy.com/hc/article_attachments/360011690273/bitbucket_server_2.gif)
+![bitbucket\_server\_2.gif](/images/bitbucket_server_2.gif)
 
-![](https://support.codacy.com/hc/article_attachments/115005167185/Screen_Shot_2017-06-01_at_16.05.41.png)
+![](/images/Screen_Shot_2017-06-01_at_16.05.41.png)
 
 ##  
 
@@ -38,7 +38,7 @@ Should contain:
 
 The project in Stash that you would like to retrieve repositories from.
 
-![Screen\_Shot\_2017-06-01\_at\_16.08.50.png](https://support.codacy.com/hc/article_attachments/115005206549/Screen_Shot_2017-06-01_at_16.08.50.png)
+![Screen\_Shot\_2017-06-01\_at\_16.08.50.png](/images/Screen_Shot_2017-06-01_at_16.08.50.png)
 
 ##  
 
@@ -47,14 +47,14 @@ The project in Stash that you would like to retrieve repositories from.
 ------------------------------------------------------------------------
 
 To set up Stash you need to create an application link on your Stash
-installation.  
+installation.
 To start you can click on `here` and go to the application links list.
 
 ### Application Link Creation ***\[required\]***
 
 #### Create the link
 
-![](https://support.codacy.com/hc/article_attachments/115005205749/Screen_Shot_2017-06-01_at_16.02.07.png)
+![](/images/Screen_Shot_2017-06-01_at_16.02.07.png)
 
 ##### Application Url
 
@@ -62,7 +62,7 @@ This is your Codacy installation url.
 
 #### Name the link
 
-![](https://support.codacy.com/hc/article_attachments/115005167265/Screen_Shot_2017-06-01_at_16.06.21.png)
+![](/images/Screen_Shot_2017-06-01_at_16.06.21.png)
 
 #### Application Name
 
@@ -117,6 +117,6 @@ comments.
 
 Below is an example of a Codacy comment:
 
-<img src="https://support.codacy.com/hc/article_attachments/115002835429/screenshot-codacy-stash-westeurope-cloudapp-azure-com-7990-projects-yap-repos-yet-another-repo-pull-requests-1-overview-1490808958032.png" width="499" height="474" alt="screenshot-codacy-stash-westeurope-cloudapp-azure-com-7990-projects-yap-repos-yet-another-repo-pull-requests-1-overview-1490808958032.png" />
+<img src="/images/screenshot-codacy-stash-westeurope-cloudapp-azure-com-7990-projects-yap-repos-yet-another-repo-pull-requests-1-overview-1490808958032.png" width="499" height="474" alt="screenshot-codacy-stash-westeurope-cloudapp-azure-com-7990-projects-yap-repos-yet-another-repo-pull-requests-1-overview-1490808958032.png" />
 
  

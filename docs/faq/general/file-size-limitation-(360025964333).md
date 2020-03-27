@@ -20,4 +20,4 @@ By default, Codacy Self-hosted has the same limit of 150 KB as our Cloud version
 
 The change can be done on the Configuration panel:
 
-![Screen\_Shot\_2019-06-27\_at\_16.47.18.png](https://support.codacy.com/hc/article_attachments/360040986773/Screen_Shot_2019-06-27_at_16.47.18.png)
+![Screen\_Shot\_2019-06-27\_at\_16.47.18.png](/images/Screen_Shot_2019-06-27_at_16.47.18.png)

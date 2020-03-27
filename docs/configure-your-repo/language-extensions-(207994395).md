@@ -17,7 +17,7 @@ After clicking **Save**, you will be given the opportunity to retry the
 most recent commit with the new settings. To do this, click on the
 option **Analyze now** that appears in the footer of the screen:
 
-![](https://support.codacy.com/hc/article_attachments/360040158014/Screen_Shot_2019-07-02_at_15.24.42.png)
+![](/images/Screen_Shot_2019-07-02_at_15.24.42.png)
 
  
 

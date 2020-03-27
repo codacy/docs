@@ -16,7 +16,7 @@ Codacy will appear as coming from codacy-bot.
  
 
 <figure>
-<img src="https://support.codacy.com/hc/article_attachments/115001629834/Aug-10-2017_17-47-06.gif" width="669" height="283" alt="" /><figcaption><span class="wysiwyg-font-size-small">Enabling GitHub integration</span></figcaption>
+<img src="/images/Aug-10-2017_17-47-06.gif" width="669" height="283" alt="" /><figcaption><span class="wysiwyg-font-size-small">Enabling GitHub integration</span></figcaption>
 </figure>
 
  
@@ -41,7 +41,7 @@ GitHub with additional information when accepting pull requests.
  
 
 ![<span class="wysiwyg-font-size-small">Additional
-options</span>](https://support.codacy.com/hc/article_attachments/115004279034/Screen_Shot_2017-11-15_at_17.50.49.png)
+options</span>](/images/Screen_Shot_2017-11-15_at_17.50.49.png)
 
 ***Pull Request Comment ***makes a comment on the Pull Request line when
 a new issue is found and shows the pattern raising the issue. Click on
@@ -50,7 +50,7 @@ how to fix it.
 
  
 
-![Screen\_Shot\_2017-11-15\_at\_18.23.26.png](https://support.codacy.com/hc/article_attachments/115004251253/Screen_Shot_2017-11-15_at_18.23.26.png)
+![Screen\_Shot\_2017-11-15\_at\_18.23.26.png](/images/Screen_Shot_2017-11-15_at_18.23.26.png)
 
 <span class="wysiwyg-font-size-small" style="font-size: x-small;">Pull
 request comment</span>
@@ -63,7 +63,7 @@ and duplication. 
 
  
 
-![Screen\_Shot\_2017-11-15\_at\_18.12.58.png](https://support.codacy.com/hc/article_attachments/115004251373/Screen_Shot_2017-11-15_at_18.12.58.png)
+![Screen\_Shot\_2017-11-15\_at\_18.12.58.png](/images/Screen_Shot_2017-11-15_at_18.12.58.png)
 
 <span class="wysiwyg-font-size-small" style="font-size: x-small;">Pull
 request summary</span>

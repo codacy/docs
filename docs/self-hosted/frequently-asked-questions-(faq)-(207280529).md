@@ -58,12 +58,12 @@ machine running Codacy, as all analysis will be performed offline. 
 The most common cause for this is that the new DB is not created:
 
 *Error in custom provider, Configuration error: Configuration error:
-Cannot connect to database \[results\]  
-while locating play.api.db.DBApiProvider  
+Cannot connect to database \[results\]
+while locating play.api.db.DBApiProvider
 while locating play.api.db.DBApiWhile*
 
-To fix this:  
-1 - Restart server  
+To fix this:
+1 - Restart server
 2 - Update the control panel:
 
 [<span
@@ -92,7 +92,7 @@ In the PSQL shell, run:
 [<span
 class="ng-scope ng-binding">psql</span>](https://docs.codacy.com/docs/frequently-asked-questions)
 
-    CREATE DATABASE codacy_results WITH OWNER=codacy; 
+    CREATE DATABASE codacy_results WITH OWNER=codacy;
 
 ##  
 
@@ -121,7 +121,7 @@ If you are not using DNS, you should set Host and Host Docker Ip to:
 
 {{ conf.doplicated.var.internalhostip }}
 
-<img src="https://support.codacy.com/hc/en-us/article_attachments/204405305/Pasted_image_at_2016_05_19_11_21.png" width="822" height="181" />
+<img src="/images/Pasted_image_at_2016_05_19_11_21.png" width="822" height="181" />
 
  
 
@@ -211,7 +211,7 @@ hidden behind a load balancer.</span>
 <span style="font-weight: 400;">1. In the Codacy Control panel, click
 the option to "update to the latest version"</span>
 
-![image003.png](https://support.codacy.com/hc/article_attachments/360015778913/image003.png)
+![image003.png](/images/image003.png)
 
 <span style="font-weight: 400;">2. Pull Dockers (do not leave this page
 until this task is completed) </span>
@@ -230,7 +230,7 @@ Please see the section above for how to update to the latest version.
 for updates</span>
 
 <span
-style="font-weight: 400;">![Screen\_Shot\_2018-07-13\_at\_15.27.23.png](https://support.codacy.com/hc/article_attachments/360008816953/Screen_Shot_2018-07-13_at_15.27.23.png)</span>
+style="font-weight: 400;">![Screen\_Shot\_2018-07-13\_at\_15.27.23.png](/images/span>
 
 <span style="font-weight: 400;">2. Go to control panel home -&gt;
 Configure -&gt; click Save at the bottom of the page (no need to change
@@ -254,11 +254,11 @@ supported version:
     Codacy installed and do the following steps:</span>
 
 -   <span style="font-weight: 400;">Remove previous docker
-    installation</span>  
+    installation</span>
 
         sudo apt-get remove docker docker-engine docker.io
 
--   <span style="font-weight: 400;">Remove docker data folder</span>  
+-   <span style="font-weight: 400;">Remove docker data folder</span>
 
         sudo mv /var/lib/docker/ /tmp
 

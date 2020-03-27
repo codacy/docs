@@ -2,7 +2,7 @@
 
 With synced organizations, your Git provider organizations and members will be automatically imported into Codacy. Changes to membership will reflect on Codacy real time and you can add new repositories to Codacy in one click.
 
-![Screenshot\_2019-12-19\_at\_15.39.24.png](https://support.codacy.com/hc/article_attachments/360007380159/Screenshot_2019-12-19_at_15.39.24.png)
+![Screenshot\_2019-12-19\_at\_15.39.24.png](/images/Screenshot_2019-12-19_at_15.39.24.png)
 
 By setting up a synced organization, you are avoiding having to deal with manual team and repository management, duplicate repositories, stuck repositories created with insufficient permissions and blocked pull request status due to overriding.
 
@@ -10,19 +10,19 @@ By setting up a synced organization, you are avoiding having to deal with manua
 
 Organizations that can be added to Codacy show up on the Organizations list.
 
-![screencapture-app-dev-codacy-org-organizations-2019-11-04-20\_44\_48.png](https://support.codacy.com/hc/article_attachments/360006118800/screencapture-app-dev-codacy-org-organizations-2019-11-04-20_44_48.png)
+![screencapture-app-dev-codacy-org-organizations-2019-11-04-20\_44\_48.png](/images/screencapture-app-dev-codacy-org-organizations-2019-11-04-20_44_48.png)
 
 If you can't see the organization you are looking for, [find out what could be the possible reasons](https://support.codacy.com/hc/en-us/articles/360010264500).
 
 ## People
 
-![screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-2019-11-04-19\_02\_28.png](https://support.codacy.com/hc/article_attachments/360006146299/screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-2019-11-04-19_02_28.png)
+![screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-2019-11-04-19\_02\_28.png](/images/screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-2019-11-04-19_02_28.png)
 
 You can see and manage who joined your organization on Codacy in the People section.
 
 ### Settings to add people
 
-![screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-billing-2019-11-04-18\_58\_13.png](https://support.codacy.com/hc/article_attachments/360006118060/screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-billing-2019-11-04-18_58_13.png)
+![screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-billing-2019-11-04-18\_58\_13.png](/images/screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-billing-2019-11-04-18_58_13.png)
 
 There are different ways to control who can join your organization:
 

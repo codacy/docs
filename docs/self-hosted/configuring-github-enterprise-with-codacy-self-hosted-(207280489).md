@@ -2,7 +2,7 @@
 
  
 
-![](https://support.codacy.com/hc/article_attachments/208046385/pasted_image_at_2016_10_24_17_27_720.png)
+![](/images/pasted_image_at_2016_10_24_17_27_720.png)
 
 ##  
 

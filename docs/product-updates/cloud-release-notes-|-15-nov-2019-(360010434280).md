@@ -13,7 +13,7 @@ As a consequence, the next time you log in to Codacy you will see a
 window asking for one additional permission on GitHub with this
 information:
 
-![Screen\_Shot\_2019-11-15\_at\_17.37.07.png](https://support.codacy.com/hc/article_attachments/360006449119/Screen_Shot_2019-11-15_at_17.37.07.png)
+![Screen\_Shot\_2019-11-15\_at\_17.37.07.png](/images/Screen_Shot_2019-11-15_at_17.37.07.png)
 
 This will allow us to create an organization hook on GitHub for the new
 Synced organizations that will notify us whenever changes occur on

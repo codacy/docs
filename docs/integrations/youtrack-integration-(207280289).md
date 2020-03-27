@@ -21,11 +21,11 @@ the repository:
 
  
 
-  
 
-![](https://support.codacy.com/hc/article_attachments/360010902634/blobid0.png) 
 
-  
+![](/images/blobid0.png) 
+
+
 
 <span class="wysiwyg-font-size-small">YouTrack integration</span>
 

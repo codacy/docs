@@ -21,10 +21,10 @@ This will make your organization the owner of this repository.
 
 Click on your avatar and select Organizations. Select the Organization
 and then the Team that your repository belongs to. Click on
-the  <img src="https://support.codacy.com/hc/article_attachments/360013750934/Screenshot_2018-09-28_at_16.39.50.png" width="26" height="29" alt="Screenshot_2018-09-28_at_16.39.50.png" /> 
+the  <img src="/images/Screenshot_2018-09-28_at_16.39.50.png" width="26" height="29" alt="Screenshot_2018-09-28_at_16.39.50.png" /> 
 and confirm the prompt to delete the repository.
 
-![remove\_project\_from\_team.gif](https://support.codacy.com/hc/article_attachments/360013750854/remove_project_from_team.gif)
+![remove\_project\_from\_team.gif](/images/remove_project_from_team.gif)
 
  
 

@@ -24,7 +24,7 @@ bit more about your use case.
 
 ## 3. Choose an organization
 
-![Screenshot\_2020-02-26\_at\_21.30.45.png](https://support.codacy.com/hc/article_attachments/360009373300/Screenshot_2020-02-26_at_21.30.45.png)
+![Screenshot\_2020-02-26\_at\_21.30.45.png](/images/Screenshot_2020-02-26_at_21.30.45.png)
 
 Now, you’ll need to select the organization that contains your
 repositories. If you can’t see the organization you are looking for,
@@ -38,7 +38,7 @@ do](https://support.codacy.com/hc/en-us/articles/360010263720).
 
 ## 4. Add repositories
 
-![Screenshot\_2020-02-26\_at\_21.31.41.png](https://support.codacy.com/hc/article_attachments/360009383579/Screenshot_2020-02-26_at_21.31.41.png)
+![Screenshot\_2020-02-26\_at\_21.31.41.png](/images/Screenshot_2020-02-26_at_21.31.41.png)
 
 And as a final step, you can select the repositories that you wish to
 analyze. Codacy will start the first analysis and set up everything

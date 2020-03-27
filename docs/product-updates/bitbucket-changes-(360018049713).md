@@ -54,4 +54,4 @@ style="font-weight: 400;"> in Codacy.   </span> 
 <span style="font-weight: 400;">You can login with Bitbucket through
 </span>[<span
 style="font-weight: 400;">https://www.codacy.com/login-with/bitbucket</span>](https://www.codacy.com/login-with/bitbucket)<span
-style="font-weight: 400;">.![Screenshot\_2019-02-14\_at\_12.00.41.png](https://support.codacy.com/hc/article_attachments/360026896873/Screenshot_2019-02-14_at_12.00.41.png)</span>
+style="font-weight: 400;">.![Screenshot\_2019-02-14\_at\_12.00.41.png](/images/span>

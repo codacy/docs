@@ -14,7 +14,7 @@ You can use configuration files to enforce code standards.
 <tr class="even">
 <td>PHP</td>
 <td>PSR1 and PSR2</td>
-<td><a href="https://support.codacy.com/hc/article_attachments/115001031245/phpcs.xml">phpcs.xml</a></td>
+<td><a href="/images/td>
 </tr>
 </tbody>
 </table>

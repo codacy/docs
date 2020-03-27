@@ -3,7 +3,7 @@
 Codacy begins an initial analysis as soon as you add a repository and
 sends you an email notification once the first analysis is completed.
 
-![screencapture-app-dev-codacy-org-manual-Codacy-codacy-scalameta-dashboard-2019-11-04-21\_56\_19.png](https://support.codacy.com/hc/article_attachments/360006119260/screencapture-app-dev-codacy-org-manual-Codacy-codacy-scalameta-dashboard-2019-11-04-21_56_19.png)
+![screencapture-app-dev-codacy-org-manual-Codacy-codacy-scalameta-dashboard-2019-11-04-21\_56\_19.png](/images/screencapture-app-dev-codacy-org-manual-Codacy-codacy-scalameta-dashboard-2019-11-04-21_56_19.png)
 
 <span
 style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">After
