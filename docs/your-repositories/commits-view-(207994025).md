@@ -22,7 +22,6 @@ The commit detail will show you an overview of what changed in that particular 
 ![](/images/blobid2.png)
 
 
-## 3. Commit delta
 
 A detailed issue delta information is always available, showing exactly which issues were fixed or created in each commit.
 
@@ -34,7 +33,6 @@ You will also find a few additional options, including "Ignore issue", "Remove p
 ![](/hc/en-us/article_attachments/207480045/Screen_Shot_2016-10-11_at_10.03.18.png)
 
 
-## 4. Commit diff
 
 The changed files can also be reviewed using a git diff visualizer, helping achieve a quick and easy code review.
 

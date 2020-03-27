@@ -9,6 +9,7 @@ Under Authors, you will see people whose commits are being analyzed, in addition
 ![screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-authors-2019-12-19-09\_56\_39.png](/images/screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-authors-2019-12-19-09_56_39.png)
 
 
+
 ## Adding Authors
 
 You can add Authors in the People section of your organization settings or directly on a Pull request page.
@@ -17,6 +18,7 @@ You can add Authors in the People section of your organization settings or direc
 
 
 ![screencapture-app-dev-codacy-org-gh-mugiwara-nakama-codacy-pylint-python3-commit-2019-12-19-10\_00\_34.png](/images/screencapture-app-dev-codacy-org-gh-mugiwara-nakama-codacy-pylint-python3-commit-2019-12-19-10_00_34.png)
+
 
 
 ## Managing authors
