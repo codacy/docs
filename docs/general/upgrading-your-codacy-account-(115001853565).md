@@ -33,4 +33,4 @@ open the **Plans and Billing** tab, and select the plan you'd like.
 
  
 
-If you still have questions, please, contact us at <support@codacy.com>.
+If you still have questions, please, contact us.

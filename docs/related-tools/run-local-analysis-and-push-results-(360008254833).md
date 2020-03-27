@@ -21,14 +21,14 @@ Then, you can invoke the CLI to get a report with all the issues:
 If you don't specify the tool, the analysis will run as Codacy does in
 the backend. For specific results, you can pass it with *--tool*.
 
-You can see the available tools with:  
+You can see the available tools with:
 codacy-analysis-cli analyse --help
 
 <span class="wysiwyg-font-size-x-large">Codacy Self-hosted</span>
 
 <span class="wysiwyg-font-size-medium">There is an additional step to go
 through if you are using Codacy Self-hosted</span><span
-class="wysiwyg-font-size-medium">.  
+class="wysiwyg-font-size-medium">.
 </span>Please configure the endpoint where Codacy Self-hosted is running
 either by using the flag*`--codacy-api-base-url`* or the environment
 variable *`CODACY_API_BASE_URL`*
@@ -38,11 +38,11 @@ variable *`CODACY_API_BASE_URL`*
 For advanced configuration details, check all the CLI flags in the [CLI
 documentation](https://github.com/codacy/codacy-analysis-cli#cli-parameters).
 
-Some flags you might be interested in:  
+Some flags you might be interested in:
 *--allow-network* - to run the tools that require compilation like
-SpotBugs, FindBugs, FindSecBugs  
+SpotBugs, FindBugs, FindSecBugs
 *--max-allowed-issues* - returns a non-zero exit code when a certain
-number of issues is exceeded  
+number of issues is exceeded
 *--fail-if-incomplete* - to return a non-zero exit code when any tool
 fails to run successfully
 
@@ -72,7 +72,7 @@ The pushing results feature need several changes:
 3.  <span style="font-weight: 300;">Add \`--upload\` flag,
     \`</span><span style="font-weight: 300;">--project-token
     &lt;PROJECT-TOKEN&gt;\` and \`--codacy-api-base-url
-    &lt;API-BASE-URL&gt;\` to the codacy-analysis-cli command.  
+    &lt;API-BASE-URL&gt;\` to the codacy-analysis-cli command.
     </span>
 
 # Notes
@@ -93,4 +93,4 @@ it uses might be broken without notice.
  
 
 If you run into issues or have any questions, please don't hesitate to
-reach out at <support@codacy.com>.
+reach out.

@@ -15,5 +15,4 @@ commits and PRs, will resume immediately after the maintenance window.
 
 <span style="font-weight: 400;">We appreciate your patience and
 apologize in advance for any inconvenience this may cause. As always, if
-you have questions or issues, please reach out to us at
-support@codacy.com.</span>
+you have questions or issues, please reach out to us.</span>

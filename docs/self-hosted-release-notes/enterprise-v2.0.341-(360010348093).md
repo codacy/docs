@@ -2,9 +2,7 @@
 
 <span style="font-weight: 400;">These updates won’t be available if you
 are still using Codacy Legacy version. If you want to update Codacy to
-the newest version, please contact us at </span>[<span
-style="font-weight: 400;">support@codacy.com</span>](mailto:support@codacy.com)<span
-style="font-weight: 400;">, and we will schedule a call to assist you
+the newest version, please contact us, and we will schedule a call to assist you
 with the migration. </span><span style="font-weight: 400;">Below is the
 list of enhancements and bug fixes available with this update.</span>
 
@@ -26,7 +24,7 @@ cause the update to take longer than usual.</span>
     sheets-userformat="{&quot;2&quot;:513,&quot;3&quot;:[null,0],&quot;12&quot;:0}">Improved
     logs error messages when uploading the API endpoints results for
     CLI</span></span>
--   We have updated the following tools to newer versions:  
+-   We have updated the following tools to newer versions:
     -   <span style="font-weight: 400;"><span
         sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Fixed issued that prevent Add project view from loading when user has substancial amount of repositories&quot;}"
         sheets-userformat="{&quot;2&quot;:513,&quot;3&quot;:[null,0],&quot;12&quot;:0}">Checkstyle

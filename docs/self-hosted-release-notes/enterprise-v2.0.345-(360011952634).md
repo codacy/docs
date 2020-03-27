@@ -2,8 +2,7 @@
 
 These updates won’t be available if you are still using Codacy Legacy
 version. If you want to update Codacy to the newest version, please
-contact us at <span
-class="wysiwyg-color-blue90 wysiwyg-underline">support@codacy.com</span>,
+contact us,
 and we will schedule a call to assist you with the migration. Below is
 the list of enhancements and bug fixes available with this update.
 

@@ -28,9 +28,7 @@ style="font-weight: 400;">Pricing</span>](https://www.codacy.com/pricing)<span
 style="font-weight: 400;"> page.</span>
 
 <span style="font-weight: 400;">If you are still not sure what plan to
-choose, tell us about your requirements at </span>[<span
-style="font-weight: 400;">support@codacy.com</span>](mailto:support@codacy.com)<span
-style="font-weight: 400;"> and we will get back to you with a tailored
+choose, tell us about your requirements and we will get back to you with a tailored
 proposal. </span>
 
  
@@ -71,7 +69,7 @@ contributors.
 
 For more details on how to invite team members to your organization,
 please
-read [here](https://support.codacy.com/hc/en-us/articles/360009340553-Creating-and-managing-teams).  
+read [here](https://support.codacy.com/hc/en-us/articles/360009340553-Creating-and-managing-teams).
 For more information on user permissions, please read
 [here](https://support.codacy.com/hc/en-us/articles/207280189).
 
@@ -96,17 +94,6 @@ If you are a student or a non-profit organization and have a team of up
 to 4 users you can benefit from our Startup plan for free.
 
 Bigger teams will be eligible for a discount, so if your team has 5
-users or more, please email us from your school or work email address to
-<support@codacy.com>. In your email, please provide copies of
+users or more, please send us from your school or work email address. Please provide copies of
 documentation to verify your eligibility. We’ll evaluate your request
 and get back to you.
-
- 
-
-## **I have more questions!**
-
-------------------------------------------------------------------------
-
-<span style="font-weight: 400;">Just send us an email at </span>[<span
-style="font-weight: 400;">support@codacy.com</span>](mailto:support@codacy.com)<span
-style="font-weight: 400;">, we'll be more than happy to help.</span>

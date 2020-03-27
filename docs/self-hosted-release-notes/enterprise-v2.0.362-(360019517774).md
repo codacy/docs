@@ -2,8 +2,7 @@
 
 These updates won’t be available if you are still using Codacy Legacy
 version. If you want to update Codacy to the newest version, please
-contact us at <span
-class="wysiwyg-color-blue90 wysiwyg-underline">support@codacy.com</span>,
+contact us,
 and we will schedule a call to assist you with the migration. Below is
 the list of enhancements and bug fixes available with this update.
 
@@ -36,8 +35,7 @@ considered for analysis of 150 kb. This means that: </span>
     files, there is still the chance that some files that are actually
     development code and should be analysed won’t be. If you have any
     files over this limit and consider necessary to analyze them, please
-    reach out to </span>[<span
-    style="font-weight: 400;">support@codacy.com</span>](mailto:support@codacy.com)
+    reach out to us
 
 <span style="font-weight: 400;">Another measure taken to improve
 performance was to remove the ability to add projects using Git url,
@@ -57,9 +55,7 @@ specific use cases:</span>
     Control Panel: this may be useful, particularly if you have very
     large projects that take a long time to analyse, which may cause
     some tools to time out. If you’re experiencing any troubles with
-    your analysis, you should reach out to </span>[<span
-    style="font-weight: 400;">support@codacy.com</span>](mailto:support@codacy.com)<span
-    style="font-weight: 400;"> and we’ll assist with any necessary
+    your analysis, you should reach out and we’ll assist with any necessary
     changes;</span>
 
  
