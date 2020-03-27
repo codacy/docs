@@ -1,3 +1,15 @@
 .md-header {
     background-color: #172b4d !important;
 }
+
+.md-container > .md-tabs {
+    background-color: #354B71;
+}
+
+.md-footer-nav {
+    background-color: #293852;
+}
+
+.md-footer-meta {
+    background-color: #222f45;
+}
