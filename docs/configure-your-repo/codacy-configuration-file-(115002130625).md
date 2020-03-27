@@ -51,7 +51,7 @@ class="ng-scope ng-binding">.codacy.yaml</span>](https://support.codacy.com/know
       - 'spec/**/*'
       - 'benchmarks/**/*'
       - '**.min.js'
-      - '**/tests/**' 
+      - '**/tests/**'
 
  
 
@@ -62,9 +62,9 @@ If you wish to, you should use the following syntax:
 '\*\*.extension' ignores all files with the same extension across all
 your repository
 
-'test/\*' ignores all files in the root of test  
-'test/\*\*' ignores everything inside test  
-'test/\*\*/\*' ignores all files inside sub-folder of test  
+'test/\*' ignores all files in the root of test
+'test/\*\*' ignores everything inside test
+'test/\*\*/\*' ignores all files inside sub-folder of test
 '\*\*/\*.resource' Ignores all .resource in all folders and sub-folders
 
  
@@ -136,9 +136,4 @@ file. The names that should be used for each of them are:
     tslint
     tsqllint
 
- If you have questions about Codacy configuration file, please, contact
-us at support@codacy.com. 
-
- 
-
- 
+If you have questions about Codacy configuration file, please, contact us.

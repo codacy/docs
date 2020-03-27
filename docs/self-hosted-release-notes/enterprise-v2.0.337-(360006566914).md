@@ -2,9 +2,7 @@
 
 <span style="font-weight:400">These updates won’t be available if you
 are still using Codacy Legacy version. If you want to update Codacy the
-newest version please contact us at </span>[<span
-style="font-weight:400">support@codacy.com</span>](mailto:support@codacy.com)<span
-style="font-weight:400"> so we can schedule a call and assist you with
+newest version please contact us, so we can schedule a call and assist you with
 the migration. </span>
 
 <span style="font-weight:400">Below is the list of enhancements and bug

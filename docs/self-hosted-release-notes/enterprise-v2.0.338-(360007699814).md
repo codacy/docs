@@ -2,9 +2,7 @@
 
 <span style="font-weight: 400;">These updates won’t be available if you
 are still using Codacy Legacy version. If you want to update Codacy to
-the newest version please contact us at </span>[<span
-style="font-weight: 400;">support@codacy.com</span>](mailto:support@codacy.com)<span
-style="font-weight: 400;"> and we will schedule a call to assist you
+the newest version please contact us, and we will schedule a call to assist you
 with the migration. </span><span style="font-weight: 400;">Below is the
 list of enhancements and bug fixes available with this update.</span>
 
@@ -17,7 +15,7 @@ list of enhancements and bug fixes available with this update.</span>
     maintaining a shared configuration file for your team, which can
     then be applied to multiple git repositories. </span><span
     style="font-weight: 400;">Submodules allow you to address two main
-    problems:  
+    problems:
     </span>
     -   <span style="font-weight: 400;">Shared configuration for an
         organization while keeping your style guide consistent,

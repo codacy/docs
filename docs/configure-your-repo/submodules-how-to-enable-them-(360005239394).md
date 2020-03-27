@@ -23,9 +23,7 @@ style="font-weight: 400;">\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_\_
 <span style="font-weight: 400;">By default we do normal git clones which
 will not clone submodules, this it to ensure that we only clone
 necessary repos. However if you’re already using submodules this feature
-can be enabled by contacting our </span>[<span
-style="font-weight: 400;">Support
-Team</span>](mailto:support@codacy.com)<span style="font-weight: 400;">.
+can be enabled by contacting our Support Team.
 After the submodules have been enabled, </span>[<span
 style="font-weight: 400;">you will need to update the
 license</span>](https://support.codacy.com/hc/en-us/articles/207280529-Frequently-Asked-Questions-FAQ-#How-to-update-the-license)<span
@@ -80,9 +78,7 @@ for Organization accounts.</span>
 <span style="font-weight: 400;">By default we do normal git clones that
 will not clone submodules, this it to ensure that we only clone
 necessary repos. However if your organization is already using
-submodules these can be enabled by contacting our </span>[<span
-style="font-weight: 400;">Support
-Team</span>](mailto:support@codacy.com)<span style="font-weight: 400;">.
+submodules these can be enabled by contacting our Support Team.
 If your submodules are public repositories, please make sure your URL is
 using the </span>*<span style="font-weight: 400;">HTTPS </span>*<span
 style="font-weight: 400;">protocol. If your submodules are private, make
@@ -115,6 +111,3 @@ needs to clone an additional repository it has no access to. Since there
 is no way of identifying the submodules of a repository before cloning
 it, Codacy adds the SSH keys to the user’s account, thus enabling access
 to all repositories the user has.</span>
-
-  
-  

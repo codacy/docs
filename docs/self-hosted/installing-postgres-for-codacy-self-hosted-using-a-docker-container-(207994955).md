@@ -8,12 +8,11 @@ Codacy requires a working installation of Postgres to work. Depending on
 the number of repositories you are running you might need different
 requirements.
 
-**Recommended specs**:  
-4 cores CPU  
-8 GB RAM  
+**Recommended specs**:
+4 cores CPU
+8 GB RAM
 Minimum 100 GB+ Hard Drive - this will depend on the number of
-repositories you have. For a custom recommendation, please contact us at
-support@codacy.com.
+repositories you have. For a custom recommendation, please contact us.
 
 If you already have a Postgres installation, jump directly to step 1.3.
 
@@ -73,7 +72,7 @@ To check for local IP and port, just run:
 [<span
 class="ng-scope ng-binding">shell</span>](https://docs.codacy.com/docs/postgres)
 
-    docker run -it --link application_db:postgres --rm postgres:9.4.5 sh -c 'echo $POSTGRES_PORT_5432_TCP_ADDR;echo "$POSTGRES_PORT_5432_TCP_PORT"' 
+    docker run -it --link application_db:postgres --rm postgres:9.4.5 sh -c 'echo $POSTGRES_PORT_5432_TCP_ADDR;echo "$POSTGRES_PORT_5432_TCP_PORT"'
 
 This will be important to properly configure Codacy to access your local
 Postgres docker.

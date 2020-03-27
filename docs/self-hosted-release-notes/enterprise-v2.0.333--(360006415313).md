@@ -2,7 +2,7 @@
 
 The following updates are only available if you already upgraded Codacy
 to Docker v17.09.0-ce. If you haven’t done this yet but would like to,
-please contact us at support@codacy.com and we will schedule a call and
+please contact us and we will schedule a call and
 assist you with the migration.
 
 **Product Enhancements:**
@@ -38,10 +38,10 @@ assist you with the migration.
 -   We have updated the following tools to newer versions:
     -   Scalastyle version 1.0.0
     -   SCSSLint version 0.57.0
-    -   CPPcheck version 1.83  
+    -   CPPcheck version 1.83
         Following plugins have been added as well:
     -   ESLint:
-        -   eslint-plugin-prettier  
+        -   eslint-plugin-prettier
             eslint-config-react
     -   PHP CodeSniffer
         -   [PHP

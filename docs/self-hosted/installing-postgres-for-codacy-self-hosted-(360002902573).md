@@ -8,12 +8,11 @@ Codacy requires a working installation of Postgres to work. Depending on
 the number of repositories you are running you might need different
 requirements.
 
-**Recommended specs**:  
-4 cores CPU  
-8 GB RAM  
+**Recommended specs**:
+4 cores CPU
+8 GB RAM
 Minimum 500 GB+ Hard Drive - this will depend on the number of
-repositories you have. For a custom recommendation, please contact us
-at support@codacy.com. 
+repositories you have. For a custom recommendation, please contact us.
 
 If you already have a Postgres installation, jump directly to step 1.3.
 

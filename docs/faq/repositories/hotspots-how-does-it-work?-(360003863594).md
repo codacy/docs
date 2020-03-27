@@ -28,4 +28,4 @@ For now, we have implemented:
 | Total X reports of security patterns in a specific repository   | On this Hotspot we let you know a specific repository has more than X issues related with security.                  | You will see this Hotspot at Organization level, to give you an overview on overall security issues your organization might be facing.                               |
  
 
-We would love your feedback, in case you want to let us know what you think about the Repository Dashboard, how it could be improved, etc feel free to reach out or leave a comment!
+We would love your feedback, in case you want to let us know what you think about the Repository Dashboard, how it could be improved, etc feel free to reach out!

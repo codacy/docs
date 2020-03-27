@@ -1,48 +1,19 @@
 # Default Patterns
 
-When you register a repository without having set your own default
-patterns, Codacy will apply a subset of the existing patterns to it. The
-patterns enabled by default are chosen according to community feedback
-or previously approved existing coding standards.
+When you register a repository without having set your own default patterns, Codacy will apply a subset of the existing patterns to it. The patterns enabled by default are chosen according to community feedback or previously approved existing coding standards.
 
-You can change the default list of patterns, creating a unique coding
-standard that is applied automatically to any repository that you
-register. After repository registration, any change to the list of
-patterns in the Repository settings will only be applied to that
-specific repository, allowing you to completely customize any repository
-to suit whatever coding standard you deem appropriate.
+You can change the default list of patterns, creating a unique coding standard that is applied automatically to any repository that you register. After repository registration, any change to the list of patterns in the Repository settings will only be applied to that specific repository, allowing you to completely customize any repository to suit whatever coding standard you deem appropriate.
 
-To do this, go to [Default
-Patterns](https://www.codacy.com/account/patterns) in Account Settings:
+To do this, go to [Default Patterns](https://www.codacy.com/account/patterns) in Account Settings: 
 
- 
+![List of default patterns on the account, showing some selected and some unselected.](https://support.codacy.com/hc/en-us/article_attachments/204628285/default-patterns.png)
 
-![<span class="wysiwyg-font-size-small">List of default patterns on the
-account, showing some selected and some
-unselected.</span>](https://support.codacy.com/hc/en-us/article_attachments/204628285/default-patterns.png)
 
- 
+To add or remove a pattern from the list of default patterns, use the checkbox next to the pattern name. You will be provided with feedback:
 
-To add or remove a pattern from the list of default patterns, use the
-checkbox next to the pattern name. You will be provided with feedback:
+![Enabling a pattern and placing him as default.](https://support.codacy.com/hc/en-us/article_attachments/204593389/default-pattern-enable-pattern.png)
 
-![<span class="wysiwyg-font-size-small">Enabling a pattern and placing
-him as
-default.</span>](https://support.codacy.com/hc/en-us/article_attachments/204593389/default-pattern-enable-pattern.png)
 
- 
+To navigate through the issues, you can use the available filters. Allowing you to search the issues you feel are more suited for your repository:
 
-To navigate through the issues, you can use the available filters.
-Allowing you to search the issues you feel are more suited for your
-repository:
-
- 
-
-![<span class="wysiwyg-font-size-small">Using the pattern list
-filter.</span>](https://support.codacy.com/hc/en-us/article_attachments/204628305/default-pattern-enabled.gif)
-
- 
-
- 
-
- 
+![Using the pattern list filter.](https://support.codacy.com/hc/en-us/article_attachments/204628305/default-pattern-enabled.gif)

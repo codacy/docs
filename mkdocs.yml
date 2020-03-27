@@ -36,6 +36,7 @@ markdown_extensions:
   - codehilite:
       guess_lang: false
       linenums: true
+  - footnotes
   - meta
   - toc:
       permalink: true
@@ -236,8 +237,6 @@ plugins:
         "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-my-PRs-anymore-.md": "troubleshooting/why-isn’t-codacy-commenting-on-my-prs-anymore?-(360009411934).md"
         "hc/en-us/articles/360010035840.md": "self-hosted-release-notes/enterprise-v2.0.372-(360010035840).md"
         "hc/en-us/articles/360010035840-Enterprise-v2-0-372.md": "self-hosted-release-notes/enterprise-v2.0.372-(360010035840).md"
-        "hc/en-us/articles/360010068680.md": "troubleshooting/bitbucket-ip-whitelisting-(360010068680).md"
-        "hc/en-us/articles/360010068680-Bitbucket-IP-whitelisting.md": "troubleshooting/bitbucket-ip-whitelisting-(360010068680).md"
         "hc/en-us/articles/360010263540.md": "first-steps-with-codacy/getting-started-with-codacy-(360010263540).md"
         "hc/en-us/articles/360010263540-Getting-started-with-Codacy.md": "first-steps-with-codacy/getting-started-with-codacy-(360010263540).md"
         "hc/en-us/articles/360010263720.md": "synced-organizations/what-are-synced-organizations-(360010263720).md"
@@ -462,7 +461,6 @@ nav:
           - synced-organizations/why-aren't-my-github-repositories-showing?-(360012141819).md
           - synced-organizations/why-can't-i-see-my-organization?-(360010264500).md
       - troubleshooting:
-          - troubleshooting/bitbucket-ip-whitelisting-(360010068680).md
           - troubleshooting/how-do-i-change-my-email-address-in-codacy?--(213149905).md
           - troubleshooting/why-do-i-get-a-"not-a-member-of-the-organization"-message?--(115001959985).md
           - troubleshooting/why-isn’t-codacy-commenting-on-my-prs-anymore?-(360009411934).md
