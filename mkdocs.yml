@@ -1,5 +1,5 @@
 # Project information
-site_name: Codacy documentation
+site_name: Codacy docs
 site_url: http://docs.dev.codacy.org/
 
 # Configuration
@@ -71,10 +71,10 @@ plugins:
         "hc/en-us/articles/115002492425-NodeSecurity-Dependencies-Inspection.md": "product-updates/removal-of-nodesecurity,-golint-and-scsslint-(360012328140).md"
         "hc/en-us/articles/115002868829.md": "self-hosted/monitoring-codacy-self-hosted-(115002868829).md"
         "hc/en-us/articles/115002868829-Monitoring-Codacy-Self-hosted.md": "self-hosted/monitoring-codacy-self-hosted-(115002868829).md"
-        "hc/en-us/articles/115003405529.md": "first-steps-with-codacy/which-permissions-does-codacy-need-from-my-account?-(115003405529).md"
-        "hc/en-us/articles/115003405529-Which-permissions-does-Codacy-need-from-my-account-.md": "first-steps-with-codacy/which-permissions-does-codacy-need-from-my-account?-(115003405529).md"
-        "hc/en-us/articles/207278449.md": "first-steps-with-codacy/setting-up-your-personal-repositories-(207278449).md"
-        "hc/en-us/articles/207278449-Setting-up-your-personal-repositories.md": "first-steps-with-codacy/setting-up-your-personal-repositories-(207278449).md"
+        "hc/en-us/articles/115003405529.md": "getting-started/which-permissions-does-codacy-need-from-my-account?-(115003405529).md"
+        "hc/en-us/articles/115003405529-Which-permissions-does-Codacy-need-from-my-account-.md": "getting-started/which-permissions-does-codacy-need-from-my-account?-(115003405529).md"
+        "hc/en-us/articles/207278449.md": "getting-started/setting-up-your-personal-repositories-(207278449).md"
+        "hc/en-us/articles/207278449-Setting-up-your-personal-repositories.md": "getting-started/setting-up-your-personal-repositories-(207278449).md"
         "hc/en-us/articles/207279599.md": "faq/security/how-does-codacy-keep-my-data-secure?-(207279599).md"
         "hc/en-us/articles/207279599-How-does-Codacy-keep-my-data-secure-.md": "faq/security/how-does-codacy-keep-my-data-secure?-(207279599).md"
         "hc/en-us/articles/207279819.md": "configure-your-repo/coverage-(207279819).md"
@@ -105,8 +105,8 @@ plugins:
         "hc/en-us/articles/207280529-Frequently-Asked-Questions-faq/.md": "self-hosted/frequently-asked-questions-(faq)-(207280529).md"
         "hc/en-us/articles/207312879.md": "configure-your-repo/generate-coverage-(207312879).md"
         "hc/en-us/articles/207312879-Generate-Coverage.md": "configure-your-repo/generate-coverage-(207312879).md"
-        "hc/en-us/articles/207993605.md": "first-steps-with-codacy/i-added-a-repository.-now-what?-(207993605).md"
-        "hc/en-us/articles/207993605-I-added-a-repository-Now-what-.md": "first-steps-with-codacy/i-added-a-repository.-now-what?-(207993605).md"
+        "hc/en-us/articles/207993605.md": "getting-started/i-added-a-repository.-now-what?-(207993605).md"
+        "hc/en-us/articles/207993605-I-added-a-repository-Now-what-.md": "getting-started/i-added-a-repository.-now-what?-(207993605).md"
         "hc/en-us/articles/207993835.md": "configure-your-repo/add-coverage-to-your-repo-(207993835).md"
         "hc/en-us/articles/207993835-Add-coverage-to-your-repo.md": "configure-your-repo/add-coverage-to-your-repo-(207993835).md"
         "hc/en-us/articles/207994025.md": "your-repositories/commits-view-(207994025).md"
@@ -119,8 +119,8 @@ plugins:
         "hc/en-us/articles/207994675-Project-API.md": "integrations/project-api-(207994675).md"
         "hc/en-us/articles/207994725.md": "supported-technologies/tool-developer-guide-(207994725).md"
         "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "supported-technologies/tool-developer-guide-(207994725).md"
-        "hc/en-us/articles/207994735.md": "first-steps-with-codacy/supported-languages-(207994735).md"
-        "hc/en-us/articles/207994735-Supported-Languages.md": "first-steps-with-codacy/supported-languages-(207994735).md"
+        "hc/en-us/articles/207994735.md": "getting-started/supported-languages-(207994735).md"
+        "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages-(207994735).md"
         "hc/en-us/articles/207994765.md": "your-repositories/what-are-the-different-grades-and-how-are-they-calculated?-(207994765).md"
         "hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-.md": "your-repositories/what-are-the-different-grades-and-how-are-they-calculated?-(207994765).md"
         "hc/en-us/articles/207994825.md": "faq/repositories/how-do-i-manually-force-a-repository-update?-(207994825).md"
@@ -237,8 +237,8 @@ plugins:
         "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-my-PRs-anymore-.md": "troubleshooting/why-isn’t-codacy-commenting-on-my-prs-anymore?-(360009411934).md"
         "hc/en-us/articles/360010035840.md": "self-hosted-release-notes/enterprise-v2.0.372-(360010035840).md"
         "hc/en-us/articles/360010035840-Enterprise-v2-0-372.md": "self-hosted-release-notes/enterprise-v2.0.372-(360010035840).md"
-        "hc/en-us/articles/360010263540.md": "first-steps-with-codacy/getting-started-with-codacy-(360010263540).md"
-        "hc/en-us/articles/360010263540-Getting-started-with-Codacy.md": "first-steps-with-codacy/getting-started-with-codacy-(360010263540).md"
+        "hc/en-us/articles/360010263540.md": "getting-started/getting-started-with-codacy-(360010263540).md"
+        "hc/en-us/articles/360010263540-Getting-started-with-Codacy.md": "getting-started/getting-started-with-codacy-(360010263540).md"
         "hc/en-us/articles/360010263720.md": "synced-organizations/what-are-synced-organizations-(360010263720).md"
         "hc/en-us/articles/360010263720-What-are-synced-organizations.md": "synced-organizations/what-are-synced-organizations-(360010263720).md"
         "hc/en-us/articles/360010264500.md": "synced-organizations/why-can't-i-see-my-organization?-(360010264500).md"
@@ -340,6 +340,12 @@ plugins:
 
 nav:
   - Home: "index.md"
+  - "Getting started":
+    - getting-started/getting-started-with-codacy-(360010263540).md
+    - getting-started/i-added-a-repository.-now-what?-(207993605).md
+    - getting-started/setting-up-your-personal-repositories-(207278449).md
+    - getting-started/supported-languages-(207994735).md
+    - getting-started/which-permissions-does-codacy-need-from-my-account?-(115003405529).md
   - "Product documentation":
       - configure-your-repo:
           - configure-your-repo/add-coverage-to-your-repo-(207993835).md
@@ -354,22 +360,10 @@ nav:
           - configure-your-repo/specifying-language-(360001207234).md
           - configure-your-repo/specifying-your-python-version-(115002330985).md
           - configure-your-repo/submodules-how-to-enable-them-(360005239394).md
-      - first-steps-with-codacy:
-          - first-steps-with-codacy/getting-started-with-codacy-(360010263540).md
-          - first-steps-with-codacy/i-added-a-repository.-now-what?-(207993605).md
-          - first-steps-with-codacy/setting-up-your-personal-repositories-(207278449).md
-          - first-steps-with-codacy/supported-languages-(207994735).md
-          - first-steps-with-codacy/which-permissions-does-codacy-need-from-my-account?-(115003405529).md
       - general:
           - general/plans-and-billing-(208942945).md
           - general/updates-to-codacy’s-privacy-policy-(360004685494).md
           - general/upgrading-your-codacy-account-(115001853565).md
-      - getting-started:
-          - getting-started/getting-started.md
-          - getting-started/account-permissions.md
-          - getting-started/repository-add.md
-          - getting-started/repository-setup.md
-          - getting-started/supported-languages.md
       - integrations:
           - integrations/bitbucket-cloud-integration-(207280239).md
           - integrations/github-integration-(207280219).md
