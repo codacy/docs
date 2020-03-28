@@ -384,54 +384,55 @@ nav:
       - related-tools:
           - related-tools/api-tokens-(115000255385).md
           - related-tools/run-local-analysis-and-push-results-(360008254833).md
-  - self-hosted:
-      - self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted-(207280509).md
-      - self-hosted/configuring-github-cloud-with-codacy-self-hosted-(360006671054).md
-      - self-hosted/configuring-github-enterprise-with-codacy-self-hosted-(207280489).md
-      - self-hosted/configuring-gitlab.com-with-codacy-self-hosted-(360012368539).md
-      - self-hosted/configuring-gitlab-enterprise-with-codacy-self-hosted-(207994975).md
-      - self-hosted/configuring-your-email-server-with-codacy-enterprise-(360007262774).md
-      - self-hosted/create-and-configure-a-new-github-app-(360012665460).md
-      - self-hosted/frequently-asked-questions-(faq)-(207280529).md
-      - self-hosted/gitlab-integration-codacy-self-hosted-(360007846913).md
-      - self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise?-(207994905).md
-      - self-hosted/how-to-download-logs-(360009345493).md
-      - self-hosted/installing-codacy-self-hosted-(207995025).md
-      - self-hosted/installing-postgres-for-codacy-self-hosted-(360002902573).md
-      - self-hosted/installing-postgres-for-codacy-self-hosted-using-a-docker-container-(207994955).md
-      - self-hosted/managing-authentication-for-the-control-panel-(115000254665).md
-      - self-hosted/monitoring-codacy-self-hosted-(115002868829).md
-      - self-hosted/run-spotbugs-(360023916013).md
-      - supported-technologies:
-          - supported-technologies/engines-(213632009).md
-          - supported-technologies/tool-developer-guide-(207994725).md
-          - supported-technologies/tool-developer-guide-using-scala-(207280379).md
-      - synced-organizations:
-          - synced-organizations/adding-and-managing-authors-(360010922420).md
-          - synced-organizations/authors-vs-members-(360012030340).md
-          - synced-organizations/how-to-configure-which-users-can-ignore-issues-(360012126419).md
-          - synced-organizations/roles-and-permissions-for-synced-organizations-(360010373559).md
-          - synced-organizations/what-are-synced-organizations-(360010263720).md
-          - synced-organizations/why-aren't-my-github-repositories-showing?-(360012141819).md
-          - synced-organizations/why-can't-i-see-my-organization?-(360010264500).md
-      - your-account:
-          - your-account/changing-your-username-and-avatar-(208953205).md
-          - your-account/default-patterns-(208241349).md
-          - your-account/notifications-(208942125).md
-          - your-account/personal-dashboard-how-does-it-work?-(360003863434).md
-      - your-repositories:
-          - your-repositories/badges-(212799365).md
-          - your-repositories/commits-view-(207994025).md
-          - your-repositories/files-view-(207279849).md
-          - your-repositories/issues-view-(360009180134).md
-          - your-repositories/managing-branches-(207280019).md
-          - your-repositories/organization-dashboard-how-does-it-work?-(360003863274).md
-          - your-repositories/post-commit-hooks-(214085885).md
-          - your-repositories/quality-settings-(360009164573).md
-          - your-repositories/repository-dashboard-how-does-it-work?-(360003890673).md
-          - your-repositories/security-dashboard-(115000723329).md
-          - your-repositories/share-your-repository-with-a-non-codacy-user-(360006718454).md
-          - your-repositories/what-are-the-different-grades-and-how-are-they-calculated?-(207994765).md
+      - "Supported technologies":
+        - supported-technologies/engines-(213632009).md
+        - supported-technologies/tool-developer-guide-(207994725).md
+        - supported-technologies/tool-developer-guide-using-scala-(207280379).md
+      - "Synced organizations":
+        - synced-organizations/adding-and-managing-authors-(360010922420).md
+        - synced-organizations/authors-vs-members-(360012030340).md
+        - synced-organizations/how-to-configure-which-users-can-ignore-issues-(360012126419).md
+        - synced-organizations/roles-and-permissions-for-synced-organizations-(360010373559).md
+        - synced-organizations/what-are-synced-organizations-(360010263720).md
+        - synced-organizations/why-aren't-my-github-repositories-showing?-(360012141819).md
+        - synced-organizations/why-can't-i-see-my-organization?-(360010264500).md
+      - "Your account":
+        - your-account/changing-your-username-and-avatar-(208953205).md
+        - your-account/default-patterns-(208241349).md
+        - your-account/notifications-(208942125).md
+        - your-account/personal-dashboard-how-does-it-work?-(360003863434).md
+      - "Your repositories":
+        - your-repositories/badges-(212799365).md
+        - your-repositories/commits-view-(207994025).md
+        - your-repositories/files-view-(207279849).md
+        - your-repositories/issues-view-(360009180134).md
+        - your-repositories/managing-branches-(207280019).md
+        - your-repositories/organization-dashboard-how-does-it-work?-(360003863274).md
+        - your-repositories/post-commit-hooks-(214085885).md
+        - your-repositories/quality-settings-(360009164573).md
+        - your-repositories/repository-dashboard-how-does-it-work?-(360003890673).md
+        - your-repositories/security-dashboard-(115000723329).md
+        - your-repositories/share-your-repository-with-a-non-codacy-user-(360006718454).md
+        - your-repositories/what-are-the-different-grades-and-how-are-they-calculated?-(207994765).md
+  - Self-hosted:
+    - self-hosted/index.md
+    - self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted-(207280509).md
+    - self-hosted/configuring-github-cloud-with-codacy-self-hosted-(360006671054).md
+    - self-hosted/configuring-github-enterprise-with-codacy-self-hosted-(207280489).md
+    - self-hosted/configuring-gitlab.com-with-codacy-self-hosted-(360012368539).md
+    - self-hosted/configuring-gitlab-enterprise-with-codacy-self-hosted-(207994975).md
+    - self-hosted/configuring-your-email-server-with-codacy-enterprise-(360007262774).md
+    - self-hosted/create-and-configure-a-new-github-app-(360012665460).md
+    - self-hosted/frequently-asked-questions-(faq)-(207280529).md
+    - self-hosted/gitlab-integration-codacy-self-hosted-(360007846913).md
+    - self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise?-(207994905).md
+    - self-hosted/how-to-download-logs-(360009345493).md
+    - self-hosted/installing-codacy-self-hosted-(207995025).md
+    - self-hosted/installing-postgres-for-codacy-self-hosted-(360002902573).md
+    - self-hosted/installing-postgres-for-codacy-self-hosted-using-a-docker-container-(207994955).md
+    - self-hosted/managing-authentication-for-the-control-panel-(115000254665).md
+    - self-hosted/monitoring-codacy-self-hosted-(115002868829).md
+    - self-hosted/run-spotbugs-(360023916013).md
   - "Installing Codacy": "!include ./submodules/chart/mkdocs.yml"
   - "Release notes":
     - release-notes/index.md
