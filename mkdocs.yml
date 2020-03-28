@@ -6,6 +6,7 @@ site_url: http://docs.dev.codacy.org/
 theme:
   name: "material"
   custom_dir: "theme"
+  font: false
   favicon: "assets/images/favicon.ico"
   palette:
     primary: "indigo"
