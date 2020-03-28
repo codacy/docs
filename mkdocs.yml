@@ -51,8 +51,8 @@ plugins:
         "hc/en-us/articles/115000254665-Managing-authentication-for-the-Control-Panel.md": "self-hosted/managing-authentication-for-the-control-panel-(115000254665).md"
         "hc/en-us/articles/115000255385.md": "user-guide/related-tools/api-tokens-(115000255385).md"
         "hc/en-us/articles/115000255385-API-Tokens.md": "user-guide/related-tools/api-tokens-(115000255385).md"
-        "hc/en-us/articles/115000282129.md": "faq/repositories/why-can't-i-configure-post-commit-hooks-and-integrations?-(115000282129).md"
-        "hc/en-us/articles/115000282129-Why-can-t-I-configure-post-commit-hooks-and-integrations-.md": "faq/repositories/why-can't-i-configure-post-commit-hooks-and-integrations?-(115000282129).md"
+        "hc/en-us/articles/115000282129.md": "faq/repositories/why-can't-i-configure-post-commit-hooks-and-integrations-(115000282129).md"
+        "hc/en-us/articles/115000282129-Why-can-t-I-configure-post-commit-hooks-and-integrations-.md": "faq/repositories/why-can't-i-configure-post-commit-hooks-and-integrations-(115000282129).md"
         "hc/en-us/articles/115000488285.md": "user-guide/integrations/slack-(115000488285).md"
         "hc/en-us/articles/115000488285-Slack.md": "user-guide/integrations/slack-(115000488285).md"
         "hc/en-us/articles/115000723329.md": "user-guide/your-repositories/security-dashboard-(115000723329).md"
@@ -61,8 +61,8 @@ plugins:
         "hc/en-us/articles/115000947569-Code-Standards.md": "user-guide/configure-your-repo/code-standards-(115000947569).md"
         "hc/en-us/articles/115001853565.md": "user-guide/general/upgrading-your-codacy-account-(115001853565).md"
         "hc/en-us/articles/115001853565-Upgrading-your-Codacy-account.md": "user-guide/general/upgrading-your-codacy-account-(115001853565).md"
-        "hc/en-us/articles/115001959985.md": 'faq/troubleshooting/why-do-i-get-a-"not-a-member-of-the-organization"-message?--(115001959985).md'
-        "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": 'faq/troubleshooting/why-do-i-get-a-"not-a-member-of-the-organization"-message?--(115001959985).md'
+        "hc/en-us/articles/115001959985.md": 'faq/troubleshooting/why-do-i-get-a-"not-a-member-of-the-organization"-message--(115001959985).md'
+        "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": 'faq/troubleshooting/why-do-i-get-a-"not-a-member-of-the-organization"-message--(115001959985).md'
         "hc/en-us/articles/115002130625.md": "user-guide/configure-your-repo/codacy-configuration-file-(115002130625).md"
         "hc/en-us/articles/115002130625-Codacy-Configuration-File.md": "user-guide/configure-your-repo/codacy-configuration-file-(115002130625).md"
         "hc/en-us/articles/115002330985.md": "user-guide/configure-your-repo/specifying-your-python-version-(115002330985).md"
@@ -71,12 +71,12 @@ plugins:
         "hc/en-us/articles/115002492425-NodeSecurity-Dependencies-Inspection.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint-(360012328140).md"
         "hc/en-us/articles/115002868829.md": "self-hosted/monitoring-codacy-self-hosted-(115002868829).md"
         "hc/en-us/articles/115002868829-Monitoring-Codacy-Self-hosted.md": "self-hosted/monitoring-codacy-self-hosted-(115002868829).md"
-        "hc/en-us/articles/115003405529.md": "getting-started/which-permissions-does-codacy-need-from-my-account?-(115003405529).md"
-        "hc/en-us/articles/115003405529-Which-permissions-does-Codacy-need-from-my-account-.md": "getting-started/which-permissions-does-codacy-need-from-my-account?-(115003405529).md"
+        "hc/en-us/articles/115003405529.md": "getting-started/which-permissions-does-codacy-need-from-my-account-(115003405529).md"
+        "hc/en-us/articles/115003405529-Which-permissions-does-Codacy-need-from-my-account-.md": "getting-started/which-permissions-does-codacy-need-from-my-account-(115003405529).md"
         "hc/en-us/articles/207278449.md": "getting-started/setting-up-your-personal-repositories-(207278449).md"
         "hc/en-us/articles/207278449-Setting-up-your-personal-repositories.md": "getting-started/setting-up-your-personal-repositories-(207278449).md"
-        "hc/en-us/articles/207279599.md": "faq/security/how-does-codacy-keep-my-data-secure?-(207279599).md"
-        "hc/en-us/articles/207279599-How-does-Codacy-keep-my-data-secure-.md": "faq/security/how-does-codacy-keep-my-data-secure?-(207279599).md"
+        "hc/en-us/articles/207279599.md": "faq/security/how-does-codacy-keep-my-data-secure-(207279599).md"
+        "hc/en-us/articles/207279599-How-does-Codacy-keep-my-data-secure-.md": "faq/security/how-does-codacy-keep-my-data-secure-(207279599).md"
         "hc/en-us/articles/207279819.md": "user-guide/configure-your-repo/coverage-(207279819).md"
         "hc/en-us/articles/207279819-Coverage.md": "user-guide/configure-your-repo/coverage-(207279819).md"
         "hc/en-us/articles/207279849.md": "user-guide/your-repositories/files-view-(207279849).md"
@@ -105,8 +105,8 @@ plugins:
         "hc/en-us/articles/207280529-Frequently-Asked-Questions-faq/.md": "self-hosted/frequently-asked-questions-(faq)-(207280529).md"
         "hc/en-us/articles/207312879.md": "user-guide/configure-your-repo/generate-coverage-(207312879).md"
         "hc/en-us/articles/207312879-Generate-Coverage.md": "user-guide/configure-your-repo/generate-coverage-(207312879).md"
-        "hc/en-us/articles/207993605.md": "getting-started/i-added-a-repository.-now-what?-(207993605).md"
-        "hc/en-us/articles/207993605-I-added-a-repository-Now-what-.md": "getting-started/i-added-a-repository.-now-what?-(207993605).md"
+        "hc/en-us/articles/207993605.md": "getting-started/i-added-a-repository.-now-what-(207993605).md"
+        "hc/en-us/articles/207993605-I-added-a-repository-Now-what-.md": "getting-started/i-added-a-repository.-now-what-(207993605).md"
         "hc/en-us/articles/207993835.md": "user-guide/configure-your-repo/add-coverage-to-your-repo-(207993835).md"
         "hc/en-us/articles/207993835-Add-coverage-to-your-repo.md": "user-guide/configure-your-repo/add-coverage-to-your-repo-(207993835).md"
         "hc/en-us/articles/207994025.md": "user-guide/your-repositories/commits-view-(207994025).md"
@@ -121,22 +121,22 @@ plugins:
         "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "user-guide/supported-technologies/tool-developer-guide-(207994725).md"
         "hc/en-us/articles/207994735.md": "getting-started/supported-languages-(207994735).md"
         "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages-(207994735).md"
-        "hc/en-us/articles/207994765.md": "user-guide/your-repositories/what-are-the-different-grades-and-how-are-they-calculated?-(207994765).md"
-        "hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-.md": "user-guide/your-repositories/what-are-the-different-grades-and-how-are-they-calculated?-(207994765).md"
-        "hc/en-us/articles/207994825.md": "faq/repositories/how-do-i-manually-force-a-repository-update?-(207994825).md"
-        "hc/en-us/articles/207994825-How-do-I-manually-force-a-repository-update-.md": "faq/repositories/how-do-i-manually-force-a-repository-update?-(207994825).md"
-        "hc/en-us/articles/207994835.md": "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account?-(207994835).md"
-        "hc/en-us/articles/207994835-How-do-I-transfer-delete-a-repository-from-my-account-.md": "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account?-(207994835).md"
-        "hc/en-us/articles/207994865.md": "faq/general/can-you-add-repos-from-other-git-providers?-(207994865).md"
-        "hc/en-us/articles/207994865-Can-you-add-repos-from-other-Git-providers-.md": "faq/general/can-you-add-repos-from-other-git-providers?-(207994865).md"
-        "hc/en-us/articles/207994885.md": "faq/general/which-browsers-do-you-support?-(207994885).md"
-        "hc/en-us/articles/207994885-Which-browsers-do-you-support-.md": "faq/general/which-browsers-do-you-support?-(207994885).md"
-        "hc/en-us/articles/207994895.md": "faq/repositories/how-long-does-it-take-for-my-repository-to-be-analysed?-(207994895).md"
-        "hc/en-us/articles/207994895-How-long-does-it-take-for-my-repository-to-be-analysed-.md": "faq/repositories/how-long-does-it-take-for-my-repository-to-be-analysed?-(207994895).md"
-        "hc/en-us/articles/207994905.md": "self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise?-(207994905).md"
-        "hc/en-us/articles/207994905-How-do-I-install-Codacy-webhooks-on-GitHub-Enterprise-.md": "self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise?-(207994905).md"
-        "hc/en-us/articles/207994935.md": "faq/troubleshooting/why-isn't-my-public-repository-being-analysed?-(207994935).md"
-        "hc/en-us/articles/207994935-Why-isn-t-my-public-repository-being-analysed-.md": "faq/troubleshooting/why-isn't-my-public-repository-being-analysed?-(207994935).md"
+        "hc/en-us/articles/207994765.md": "user-guide/your-repositories/what-are-the-different-grades-and-how-are-they-calculated-(207994765).md"
+        "hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-.md": "user-guide/your-repositories/what-are-the-different-grades-and-how-are-they-calculated-(207994765).md"
+        "hc/en-us/articles/207994825.md": "faq/repositories/how-do-i-manually-force-a-repository-update-(207994825).md"
+        "hc/en-us/articles/207994825-How-do-I-manually-force-a-repository-update-.md": "faq/repositories/how-do-i-manually-force-a-repository-update-(207994825).md"
+        "hc/en-us/articles/207994835.md": "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account-(207994835).md"
+        "hc/en-us/articles/207994835-How-do-I-transfer-delete-a-repository-from-my-account-.md": "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account-(207994835).md"
+        "hc/en-us/articles/207994865.md": "faq/general/can-you-add-repos-from-other-git-providers-(207994865).md"
+        "hc/en-us/articles/207994865-Can-you-add-repos-from-other-Git-providers-.md": "faq/general/can-you-add-repos-from-other-git-providers-(207994865).md"
+        "hc/en-us/articles/207994885.md": "faq/general/which-browsers-do-you-support-(207994885).md"
+        "hc/en-us/articles/207994885-Which-browsers-do-you-support-.md": "faq/general/which-browsers-do-you-support-(207994885).md"
+        "hc/en-us/articles/207994895.md": "faq/repositories/how-long-does-it-take-for-my-repository-to-be-analysed-(207994895).md"
+        "hc/en-us/articles/207994895-How-long-does-it-take-for-my-repository-to-be-analysed-.md": "faq/repositories/how-long-does-it-take-for-my-repository-to-be-analysed-(207994895).md"
+        "hc/en-us/articles/207994905.md": "self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise-(207994905).md"
+        "hc/en-us/articles/207994905-How-do-I-install-Codacy-webhooks-on-GitHub-Enterprise-.md": "self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise-(207994905).md"
+        "hc/en-us/articles/207994935.md": "faq/troubleshooting/why-isn't-my-public-repository-being-analysed-(207994935).md"
+        "hc/en-us/articles/207994935-Why-isn-t-my-public-repository-being-analysed-.md": "faq/troubleshooting/why-isn't-my-public-repository-being-analysed-(207994935).md"
         "hc/en-us/articles/207994955.md": "self-hosted/installing-postgres-for-codacy-self-hosted-using-a-docker-container-(207994955).md"
         "hc/en-us/articles/207994955-Installing-postgres-for-Codacy-Self-hosted-Using-a-Docker-container.md": "self-hosted/installing-postgres-for-codacy-self-hosted-using-a-docker-container-(207994955).md"
         "hc/en-us/articles/207994975.md": "self-hosted/configuring-gitlab-enterprise-with-codacy-self-hosted-(207994975).md"
@@ -155,40 +155,40 @@ plugins:
         "hc/en-us/articles/208942945-Plans-and-Billing.md": "user-guide/general/plans-and-billing-(208942945).md"
         "hc/en-us/articles/208953205.md": "user-guide/your-account/changing-your-username-and-avatar-(208953205).md"
         "hc/en-us/articles/208953205-Changing-your-username-and-avatar.md": "user-guide/your-account/changing-your-username-and-avatar-(208953205).md"
-        "hc/en-us/articles/212622529.md": "faq/repositories/why-can't-i-see-my-organization's-repositories?-(212622529).md"
-        "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-s-repositories-.md": "faq/repositories/why-can't-i-see-my-organization's-repositories?-(212622529).md"
+        "hc/en-us/articles/212622529.md": "faq/repositories/why-can't-i-see-my-organization's-repositories-(212622529).md"
+        "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-s-repositories-.md": "faq/repositories/why-can't-i-see-my-organization's-repositories-(212622529).md"
         "hc/en-us/articles/212799365.md": "user-guide/your-repositories/badges-(212799365).md"
         "hc/en-us/articles/212799365-Badges.md": "user-guide/your-repositories/badges-(212799365).md"
-        "hc/en-us/articles/213149905.md": "faq/troubleshooting/how-do-i-change-my-email-address-in-codacy?--(213149905).md"
-        "hc/en-us/articles/213149905-How-do-I-change-my-email-address-in-Codacy-.md": "faq/troubleshooting/how-do-i-change-my-email-address-in-codacy?--(213149905).md"
-        "hc/en-us/articles/213211825.md": "faq/engines/do-you-check-for-dependencies?--(213211825).md"
-        "hc/en-us/articles/213211825-Do-you-check-for-dependencies-.md": "faq/engines/do-you-check-for-dependencies?--(213211825).md"
-        "hc/en-us/articles/213217965.md": "faq/general/which-version-control-systems-do-you-support?-(213217965).md"
-        "hc/en-us/articles/213217965-Which-version-control-systems-do-you-support-.md": "faq/general/which-version-control-systems-do-you-support?-(213217965).md"
+        "hc/en-us/articles/213149905.md": "faq/troubleshooting/how-do-i-change-my-email-address-in-codacy--(213149905).md"
+        "hc/en-us/articles/213149905-How-do-I-change-my-email-address-in-Codacy-.md": "faq/troubleshooting/how-do-i-change-my-email-address-in-codacy--(213149905).md"
+        "hc/en-us/articles/213211825.md": "faq/engines/do-you-check-for-dependencies--(213211825).md"
+        "hc/en-us/articles/213211825-Do-you-check-for-dependencies-.md": "faq/engines/do-you-check-for-dependencies--(213211825).md"
+        "hc/en-us/articles/213217965.md": "faq/general/which-version-control-systems-do-you-support-(213217965).md"
+        "hc/en-us/articles/213217965-Which-version-control-systems-do-you-support-.md": "faq/general/which-version-control-systems-do-you-support-(213217965).md"
         "hc/en-us/articles/213280129.md": "user-guide/integrations/jira-(213280129).md"
         "hc/en-us/articles/213280129-JIRA.md": "user-guide/integrations/jira-(213280129).md"
         "hc/en-us/articles/213632009.md": "user-guide/supported-technologies/engines-(213632009).md"
         "hc/en-us/articles/213632009-Engines.md": "user-guide/supported-technologies/engines-(213632009).md"
-        "hc/en-us/articles/213840489.md": "faq/repositories/how-do-i-reanalyze-my-repository?-(213840489).md"
-        "hc/en-us/articles/213840489-How-do-I-reanalyze-my-repository-.md": "faq/repositories/how-do-i-reanalyze-my-repository?-(213840489).md"
+        "hc/en-us/articles/213840489.md": "faq/repositories/how-do-i-reanalyze-my-repository-(213840489).md"
+        "hc/en-us/articles/213840489-How-do-I-reanalyze-my-repository-.md": "faq/repositories/how-do-i-reanalyze-my-repository-(213840489).md"
         "hc/en-us/articles/214085885.md": "user-guide/your-repositories/post-commit-hooks-(214085885).md"
         "hc/en-us/articles/214085885-Post-Commit-Hooks.md": "user-guide/your-repositories/post-commit-hooks-(214085885).md"
-        "hc/en-us/articles/214377225.md": "faq/repositories/does-codacy-automatically-analyse-all-pull-requests?--(214377225).md"
-        "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "faq/repositories/does-codacy-automatically-analyse-all-pull-requests?--(214377225).md"
+        "hc/en-us/articles/214377225.md": "faq/repositories/does-codacy-automatically-analyse-all-pull-requests--(214377225).md"
+        "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "faq/repositories/does-codacy-automatically-analyse-all-pull-requests--(214377225).md"
         "hc/en-us/articles/360001207234.md": "user-guide/configure-your-repo/specifying-language-(360001207234).md"
         "hc/en-us/articles/360001207234-Specifying-language.md": "user-guide/configure-your-repo/specifying-language-(360001207234).md"
         "hc/en-us/articles/360002902573.md": "self-hosted/installing-postgres-for-codacy-self-hosted-(360002902573).md"
         "hc/en-us/articles/360002902573-Installing-postgres-for-Codacy-Self-hosted.md": "self-hosted/installing-postgres-for-codacy-self-hosted-(360002902573).md"
-        "hc/en-us/articles/360003863274.md": "user-guide/your-repositories/organization-dashboard-how-does-it-work?-(360003863274).md"
-        "hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-.md": "user-guide/your-repositories/organization-dashboard-how-does-it-work?-(360003863274).md"
-        "hc/en-us/articles/360003863434.md": "user-guide/your-account/personal-dashboard-how-does-it-work?-(360003863434).md"
-        "hc/en-us/articles/360003863434-Personal-Dashboard-How-does-it-work-.md": "user-guide/your-account/personal-dashboard-how-does-it-work?-(360003863434).md"
-        "hc/en-us/articles/360003863594.md": "faq/repositories/hotspots-how-does-it-work?-(360003863594).md"
-        "hc/en-us/articles/360003863594-Hotspots-How-does-it-work-.md": "faq/repositories/hotspots-how-does-it-work?-(360003863594).md"
-        "hc/en-us/articles/360003890673.md": "user-guide/your-repositories/repository-dashboard-how-does-it-work?-(360003890673).md"
-        "hc/en-us/articles/360003890673-Repository-Dashboard-How-does-it-work-.md": "user-guide/your-repositories/repository-dashboard-how-does-it-work?-(360003890673).md"
-        "hc/en-us/articles/360003890693.md": "faq/repositories/what-are-logs?-(360003890693).md"
-        "hc/en-us/articles/360003890693-What-are-Logs-.md": "faq/repositories/what-are-logs?-(360003890693).md"
+        "hc/en-us/articles/360003863274.md": "user-guide/your-repositories/organization-dashboard-how-does-it-work-(360003863274).md"
+        "hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-.md": "user-guide/your-repositories/organization-dashboard-how-does-it-work-(360003863274).md"
+        "hc/en-us/articles/360003863434.md": "user-guide/your-account/personal-dashboard-how-does-it-work-(360003863434).md"
+        "hc/en-us/articles/360003863434-Personal-Dashboard-How-does-it-work-.md": "user-guide/your-account/personal-dashboard-how-does-it-work-(360003863434).md"
+        "hc/en-us/articles/360003863594.md": "faq/repositories/hotspots-how-does-it-work-(360003863594).md"
+        "hc/en-us/articles/360003863594-Hotspots-How-does-it-work-.md": "faq/repositories/hotspots-how-does-it-work-(360003863594).md"
+        "hc/en-us/articles/360003890673.md": "user-guide/your-repositories/repository-dashboard-how-does-it-work-(360003890673).md"
+        "hc/en-us/articles/360003890673-Repository-Dashboard-How-does-it-work-.md": "user-guide/your-repositories/repository-dashboard-how-does-it-work-(360003890673).md"
+        "hc/en-us/articles/360003890693.md": "faq/repositories/what-are-logs-(360003890693).md"
+        "hc/en-us/articles/360003890693-What-are-Logs-.md": "faq/repositories/what-are-logs-(360003890693).md"
         "hc/en-us/articles/360004685494.md": "user-guide/general/updates-to-codacy’s-privacy-policy-(360004685494).md"
         "hc/en-us/articles/360004685494-Updates-to-Codacy-s-Privacy-Policy.md": "user-guide/general/updates-to-codacy’s-privacy-policy-(360004685494).md"
         "hc/en-us/articles/360005097654.md": "user-guide/configure-your-repo/ignore-files-from-codacy-analysis-(360005097654).md"
@@ -207,8 +207,8 @@ plugins:
         "hc/en-us/articles/360006671054-Configuring-GitHub-Cloud-with-Codacy-Self-hosted.md": "self-hosted/configuring-github-cloud-with-codacy-self-hosted-(360006671054).md"
         "hc/en-us/articles/360006718454.md": "user-guide/your-repositories/share-your-repository-with-a-non-codacy-user-(360006718454).md"
         "hc/en-us/articles/360006718454-Share-your-repository-with-a-non-Codacy-user.md": "user-guide/your-repositories/share-your-repository-with-a-non-codacy-user-(360006718454).md"
-        "hc/en-us/articles/360006795293.md": "faq/repositories/repository-failed-to-clone?-generating-a-new-ssh-key-(360006795293).md"
-        "hc/en-us/articles/360006795293-Repository-failed-to-clone-Generating-a-new-SSH-key.md": "faq/repositories/repository-failed-to-clone?-generating-a-new-ssh-key-(360006795293).md"
+        "hc/en-us/articles/360006795293.md": "faq/repositories/repository-failed-to-clone-generating-a-new-ssh-key-(360006795293).md"
+        "hc/en-us/articles/360006795293-Repository-failed-to-clone-Generating-a-new-SSH-key.md": "faq/repositories/repository-failed-to-clone-generating-a-new-ssh-key-(360006795293).md"
         "hc/en-us/articles/360007262774.md": "self-hosted/configuring-your-email-server-with-codacy-enterprise-(360007262774).md"
         "hc/en-us/articles/360007262774-Configuring-your-Email-Server-with-Codacy-Enterprise.md": "self-hosted/configuring-your-email-server-with-codacy-enterprise-(360007262774).md"
         "hc/en-us/articles/360007316034.md": "release-notes/cloud/cloud-release-notes-|-23-july-2018-(360007316034).md"
@@ -233,16 +233,16 @@ plugins:
         "hc/en-us/articles/360009345493-How-to-download-logs.md": "self-hosted/how-to-download-logs-(360009345493).md"
         "hc/en-us/articles/360009384980.md": "release-notes/self-hosted/enterprise-v2.0.371-(360009384980).md"
         "hc/en-us/articles/360009384980-Enterprise-v2-0-371.md": "release-notes/self-hosted/enterprise-v2.0.371-(360009384980).md"
-        "hc/en-us/articles/360009411934.md": "faq/troubleshooting/why-isn’t-codacy-commenting-on-my-prs-anymore?-(360009411934).md"
-        "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-my-PRs-anymore-.md": "faq/troubleshooting/why-isn’t-codacy-commenting-on-my-prs-anymore?-(360009411934).md"
+        "hc/en-us/articles/360009411934.md": "faq/troubleshooting/why-isn’t-codacy-commenting-on-my-prs-anymore-(360009411934).md"
+        "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-my-PRs-anymore-.md": "faq/troubleshooting/why-isn’t-codacy-commenting-on-my-prs-anymore-(360009411934).md"
         "hc/en-us/articles/360010035840.md": "release-notes/self-hosted/enterprise-v2.0.372-(360010035840).md"
         "hc/en-us/articles/360010035840-Enterprise-v2-0-372.md": "release-notes/self-hosted/enterprise-v2.0.372-(360010035840).md"
         "hc/en-us/articles/360010263540.md": "getting-started/getting-started-with-codacy-(360010263540).md"
         "hc/en-us/articles/360010263540-Getting-started-with-Codacy.md": "getting-started/getting-started-with-codacy-(360010263540).md"
         "hc/en-us/articles/360010263720.md": "user-guide/synced-organizations/what-are-synced-organizations-(360010263720).md"
         "hc/en-us/articles/360010263720-What-are-synced-organizations.md": "user-guide/synced-organizations/what-are-synced-organizations-(360010263720).md"
-        "hc/en-us/articles/360010264500.md": "user-guide/synced-organizations/why-can't-i-see-my-organization?-(360010264500).md"
-        "hc/en-us/articles/360010264500-Why-can-t-I-see-my-organization-.md": "user-guide/synced-organizations/why-can't-i-see-my-organization?-(360010264500).md"
+        "hc/en-us/articles/360010264500.md": "user-guide/synced-organizations/why-can't-i-see-my-organization-(360010264500).md"
+        "hc/en-us/articles/360010264500-Why-can-t-I-see-my-organization-.md": "user-guide/synced-organizations/why-can't-i-see-my-organization-(360010264500).md"
         "hc/en-us/articles/360010306559.md": "release-notes/cloud/cloud-release-notes-|-30-oct-2019-(360010306559).md"
         "hc/en-us/articles/360010306559-Cloud-Release-Notes-30-Oct-2019.md": "release-notes/cloud/cloud-release-notes-|-30-oct-2019-(360010306559).md"
         "hc/en-us/articles/360010348093.md": "release-notes/self-hosted/enterprise-v2.0.341-(360010348093).md"
@@ -257,8 +257,8 @@ plugins:
         "hc/en-us/articles/360011105534-Cloud-Release-Notes-19-October-2018.md": "release-notes/cloud/cloud-release-notes-|-19-october-2018-(360011105534).md"
         "hc/en-us/articles/360011781859.md": "release-notes/self-hosted/enterprise-v2.0.376-(360011781859).md"
         "hc/en-us/articles/360011781859-Enterprise-v2-0-376.md": "release-notes/self-hosted/enterprise-v2.0.376-(360011781859).md"
-        "hc/en-us/articles/360011935900.md": "faq/general/how-does-codacy-support-gitlab-cloud?-(360011935900).md"
-        "hc/en-us/articles/360011935900-How-does-Codacy-support-GitLab-Cloud-.md": "faq/general/how-does-codacy-support-gitlab-cloud?-(360011935900).md"
+        "hc/en-us/articles/360011935900.md": "faq/general/how-does-codacy-support-gitlab-cloud-(360011935900).md"
+        "hc/en-us/articles/360011935900-How-does-Codacy-support-GitLab-Cloud-.md": "faq/general/how-does-codacy-support-gitlab-cloud-(360011935900).md"
         "hc/en-us/articles/360011952634.md": "release-notes/self-hosted/enterprise-v2.0.345-(360011952634).md"
         "hc/en-us/articles/360011952634-Enterprise-v2-0-345.md": "release-notes/self-hosted/enterprise-v2.0.345-(360011952634).md"
         "hc/en-us/articles/360012007980.md": "release-notes/cloud/codacy-now-supports-github-apps-(360012007980).md"
@@ -273,8 +273,8 @@ plugins:
         "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "user-guide/synced-organizations/how-to-configure-which-users-can-ignore-issues-(360012126419).md"
         "hc/en-us/articles/360012141513.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst)-(360012141513).md"
         "hc/en-us/articles/360012141513-Scheduled-Maintenance-Saturday-17th-Nov-8-00-GMT-0-00-PST-.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst)-(360012141513).md"
-        "hc/en-us/articles/360012141819.md": "user-guide/synced-organizations/why-aren't-my-github-repositories-showing?-(360012141819).md"
-        "hc/en-us/articles/360012141819-Why-aren-t-my-GitHub-repositories-showing-.md": "user-guide/synced-organizations/why-aren't-my-github-repositories-showing?-(360012141819).md"
+        "hc/en-us/articles/360012141819.md": "user-guide/synced-organizations/why-aren't-my-github-repositories-showing-(360012141819).md"
+        "hc/en-us/articles/360012141819-Why-aren-t-my-GitHub-repositories-showing-.md": "user-guide/synced-organizations/why-aren't-my-github-repositories-showing-(360012141819).md"
         "hc/en-us/articles/360012267020.md": "release-notes/self-hosted/self-hosted-v2.0.378-(360012267020).md"
         "hc/en-us/articles/360012267020-Self-hosted-v2-0-378.md": "release-notes/self-hosted/self-hosted-v2.0.378-(360012267020).md"
         "hc/en-us/articles/360012328140.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint-(360012328140).md"
@@ -283,8 +283,8 @@ plugins:
         "hc/en-us/articles/360012368539-Configuring-GitLab-com-with-Codacy-Self-hosted.md": "self-hosted/configuring-gitlab.com-with-codacy-self-hosted-(360012368539).md"
         "hc/en-us/articles/360012494113.md": "release-notes/cloud/cloud-release-notes-|-16-november-2018-(360012494113).md"
         "hc/en-us/articles/360012494113-Cloud-Release-Notes-16-November-2018.md": "release-notes/cloud/cloud-release-notes-|-16-november-2018-(360012494113).md"
-        "hc/en-us/articles/360012563579.md": "faq/general/how-does-codacy-support-bitbucket-server?-(360012563579).md"
-        "hc/en-us/articles/360012563579-How-does-Codacy-support-Bitbucket-Server-.md": "faq/general/how-does-codacy-support-bitbucket-server?-(360012563579).md"
+        "hc/en-us/articles/360012563579.md": "faq/general/how-does-codacy-support-bitbucket-server-(360012563579).md"
+        "hc/en-us/articles/360012563579-How-does-Codacy-support-Bitbucket-Server-.md": "faq/general/how-does-codacy-support-bitbucket-server-(360012563579).md"
         "hc/en-us/articles/360012665460.md": "self-hosted/create-and-configure-a-new-github-app-(360012665460).md"
         "hc/en-us/articles/360012665460-Create-and-configure-a-new-GitHub-App.md": "self-hosted/create-and-configure-a-new-github-app-(360012665460).md"
         "hc/en-us/articles/360012729599.md": "release-notes/self-hosted/upcoming-changes-to-github-integration-for-codacy-self-hosted-(360012729599).md"
@@ -307,8 +307,8 @@ plugins:
         "hc/en-us/articles/360020553894-Cloud-Release-Notes-29-March-2019.md": "release-notes/cloud/cloud-release-notes-|-29-march-2019-(360020553894).md"
         "hc/en-us/articles/360020569254.md": "release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt)-(360020569254).md"
         "hc/en-us/articles/360020569254-Scheduled-Maintenance-Saturday-30th-Mar-05-00-GMT-01-00-EDT-.md": "release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt)-(360020569254).md"
-        "hc/en-us/articles/360021260713.md": "faq/repositories/how-does-codacy-measure-complexity-in-my-repository?--(360021260713).md"
-        "hc/en-us/articles/360021260713-How-does-Codacy-measure-complexity-in-my-repository-.md": "faq/repositories/how-does-codacy-measure-complexity-in-my-repository?--(360021260713).md"
+        "hc/en-us/articles/360021260713.md": "faq/repositories/how-does-codacy-measure-complexity-in-my-repository--(360021260713).md"
+        "hc/en-us/articles/360021260713-How-does-Codacy-measure-complexity-in-my-repository-.md": "faq/repositories/how-does-codacy-measure-complexity-in-my-repository--(360021260713).md"
         "hc/en-us/articles/360021378573.md": "release-notes/cloud/cloud-release-notes-|-08-april-2019-(360021378573).md"
         "hc/en-us/articles/360021378573-Cloud-Release-Notes-08-April-2019.md": "release-notes/cloud/cloud-release-notes-|-08-april-2019-(360021378573).md"
         "hc/en-us/articles/360021584573.md": "release-notes/self-hosted/enterprise-v2.0.366-(360021584573).md"
@@ -325,12 +325,12 @@ plugins:
         "hc/en-us/articles/360024237614-Enterprise-v2-0-368.md": "release-notes/self-hosted/enterprise-v2.0.368-(360024237614).md"
         "hc/en-us/articles/360025014373.md": "release-notes/cloud/cloud-release-notes-|-18-jun-2019-(360025014373).md"
         "hc/en-us/articles/360025014373-Cloud-Release-Notes-18-Jun-2019.md": "release-notes/cloud/cloud-release-notes-|-18-jun-2019-(360025014373).md"
-        "hc/en-us/articles/360025654573.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs?-(360025654573).md"
-        "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs?-(360025654573).md"
+        "hc/en-us/articles/360025654573.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs-(360025654573).md"
+        "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs-(360025654573).md"
         "hc/en-us/articles/360025964333.md": "faq/general/file-size-limitation-(360025964333).md"
         "hc/en-us/articles/360025964333-File-size-limitation.md": "faq/general/file-size-limitation-(360025964333).md"
-        "hc/en-us/articles/360025964853.md": "faq/general/why-is-my-file-missing?-(360025964853).md"
-        "hc/en-us/articles/360025964853-Why-is-my-file-missing-.md": "faq/general/why-is-my-file-missing?-(360025964853).md"
+        "hc/en-us/articles/360025964853.md": "faq/general/why-is-my-file-missing-(360025964853).md"
+        "hc/en-us/articles/360025964853-Why-is-my-file-missing-.md": "faq/general/why-is-my-file-missing-(360025964853).md"
         "hc/en-us/articles/360034116413.md": "release-notes/self-hosted/enterprise-v2.0.369-(360034116413).md"
         "hc/en-us/articles/360034116413-Enterprise-v2-0-369.md": "release-notes/self-hosted/enterprise-v2.0.369-(360034116413).md"
         "hc/en-us/articles/360034116533.md": "release-notes/cloud/cloud-release-notes-|-07-aug-2019-(360034116533).md"
@@ -343,10 +343,10 @@ nav:
   - "Getting started":
     - getting-started/index.md
     - getting-started/getting-started-with-codacy-(360010263540).md
-    - getting-started/i-added-a-repository.-now-what?-(207993605).md
+    - getting-started/i-added-a-repository.-now-what-(207993605).md
     - getting-started/setting-up-your-personal-repositories-(207278449).md
     - getting-started/supported-languages-(207994735).md
-    - getting-started/which-permissions-does-codacy-need-from-my-account?-(115003405529).md
+    - getting-started/which-permissions-does-codacy-need-from-my-account-(115003405529).md
   - "User guide":
     - user-guide/index.md
     - General:
@@ -356,15 +356,15 @@ nav:
         - user-guide/general/plans-and-billing-(208942945).md
       - "Your account":
         - user-guide/your-account/default-patterns-(208241349).md
-        - user-guide/your-account/personal-dashboard-how-does-it-work?-(360003863434).md
+        - user-guide/your-account/personal-dashboard-how-does-it-work-(360003863434).md
         - user-guide/your-account/changing-your-username-and-avatar-(208953205).md
         - user-guide/your-account/notifications-(208942125).md
       - "Synced organizations":
         - user-guide/synced-organizations/what-are-synced-organizations-(360010263720).md
         - user-guide/synced-organizations/roles-and-permissions-for-synced-organizations-(360010373559).md
         - user-guide/synced-organizations/adding-and-managing-authors-(360010922420).md
-        - user-guide/synced-organizations/why-can't-i-see-my-organization?-(360010264500).md
-        - user-guide/synced-organizations/why-aren't-my-github-repositories-showing?-(360012141819).md
+        - user-guide/synced-organizations/why-can't-i-see-my-organization-(360010264500).md
+        - user-guide/synced-organizations/why-aren't-my-github-repositories-showing-(360012141819).md
         - user-guide/synced-organizations/authors-vs-members-(360012030340).md
         - user-guide/synced-organizations/how-to-configure-which-users-can-ignore-issues-(360012126419).md
       - "Manual organizations":
@@ -387,9 +387,9 @@ nav:
         - user-guide/related-tools/run-local-analysis-and-push-results-(360008254833).md
     - "Working with your repo":
       - "Your repositories":
-        - user-guide/your-repositories/organization-dashboard-how-does-it-work?-(360003863274).md
-        - user-guide/your-repositories/repository-dashboard-how-does-it-work?-(360003890673).md
-        - user-guide/your-repositories/what-are-the-different-grades-and-how-are-they-calculated?-(207994765).md
+        - user-guide/your-repositories/organization-dashboard-how-does-it-work-(360003863274).md
+        - user-guide/your-repositories/repository-dashboard-how-does-it-work-(360003890673).md
+        - user-guide/your-repositories/what-are-the-different-grades-and-how-are-they-calculated-(207994765).md
         - user-guide/your-repositories/issues-view-(360009180134).md
         - user-guide/your-repositories/commits-view-(207994025).md
         - user-guide/your-repositories/security-dashboard-(115000723329).md
@@ -428,7 +428,7 @@ nav:
     - self-hosted/create-and-configure-a-new-github-app-(360012665460).md
     - self-hosted/frequently-asked-questions-(faq)-(207280529).md
     - self-hosted/gitlab-integration-codacy-self-hosted-(360007846913).md
-    - self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise?-(207994905).md
+    - self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise-(207994905).md
     - self-hosted/how-to-download-logs-(360009345493).md
     - self-hosted/installing-codacy-self-hosted-(207995025).md
     - self-hosted/installing-postgres-for-codacy-self-hosted-(360002902573).md
@@ -481,34 +481,34 @@ nav:
       - release-notes/self-hosted/enterprise-v2.0.333--(360006415313).md
   - FAQs:
     - faq/index.md
-    - faq/general/can-you-add-repos-from-other-git-providers?-(207994865).md
+    - faq/general/can-you-add-repos-from-other-git-providers-(207994865).md
     - faq/general/file-size-limitation-(360025964333).md
-    - faq/general/how-does-codacy-support-bitbucket-server?-(360012563579).md
-    - faq/general/how-does-codacy-support-gitlab-cloud?-(360011935900).md
-    - faq/general/which-browsers-do-you-support?-(207994885).md
-    - faq/general/which-version-control-systems-do-you-support?-(213217965).md
-    - faq/general/why-is-my-file-missing?-(360025964853).md
+    - faq/general/how-does-codacy-support-bitbucket-server-(360012563579).md
+    - faq/general/how-does-codacy-support-gitlab-cloud-(360011935900).md
+    - faq/general/which-browsers-do-you-support-(207994885).md
+    - faq/general/which-version-control-systems-do-you-support-(213217965).md
+    - faq/general/why-is-my-file-missing-(360025964853).md
     - Engines:
-      - faq/engines/do-you-check-for-dependencies?--(213211825).md
+      - faq/engines/do-you-check-for-dependencies--(213211825).md
     - Repositories:
-      - faq/repositories/does-codacy-automatically-analyse-all-pull-requests?--(214377225).md
-      - faq/repositories/hotspots-how-does-it-work?-(360003863594).md
-      - faq/repositories/how-does-codacy-measure-complexity-in-my-repository?--(360021260713).md
-      - faq/repositories/how-do-i-manually-force-a-repository-update?-(207994825).md
-      - faq/repositories/how-do-i-reanalyze-my-repository?-(213840489).md
-      - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs?-(360025654573).md
-      - faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account?-(207994835).md
-      - faq/repositories/how-long-does-it-take-for-my-repository-to-be-analysed?-(207994895).md
+      - faq/repositories/does-codacy-automatically-analyse-all-pull-requests--(214377225).md
+      - faq/repositories/hotspots-how-does-it-work-(360003863594).md
+      - faq/repositories/how-does-codacy-measure-complexity-in-my-repository--(360021260713).md
+      - faq/repositories/how-do-i-manually-force-a-repository-update-(207994825).md
+      - faq/repositories/how-do-i-reanalyze-my-repository-(213840489).md
+      - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs-(360025654573).md
+      - faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account-(207994835).md
+      - faq/repositories/how-long-does-it-take-for-my-repository-to-be-analysed-(207994895).md
       - faq/repositories/i-renamed-my-repository-on-the-git-provider-(360012746413).md
-      - faq/repositories/repository-failed-to-clone?-generating-a-new-ssh-key-(360006795293).md
+      - faq/repositories/repository-failed-to-clone-generating-a-new-ssh-key-(360006795293).md
       - faq/repositories/skipping-an-analysis-(360005839053).md
-      - faq/repositories/what-are-logs?-(360003890693).md
-      - faq/repositories/why-can't-i-configure-post-commit-hooks-and-integrations?-(115000282129).md
-      - faq/repositories/why-can't-i-see-my-organization's-repositories?-(212622529).md
+      - faq/repositories/what-are-logs-(360003890693).md
+      - faq/repositories/why-can't-i-configure-post-commit-hooks-and-integrations-(115000282129).md
+      - faq/repositories/why-can't-i-see-my-organization's-repositories-(212622529).md
     - Security:
-      - faq/security/how-does-codacy-keep-my-data-secure?-(207279599).md
+      - faq/security/how-does-codacy-keep-my-data-secure-(207279599).md
     - Troubleshooting:
-        - faq/troubleshooting/how-do-i-change-my-email-address-in-codacy?--(213149905).md
-        - faq/troubleshooting/why-do-i-get-a-"not-a-member-of-the-organization"-message?--(115001959985).md
-        - faq/troubleshooting/why-isn’t-codacy-commenting-on-my-prs-anymore?-(360009411934).md
-        - faq/troubleshooting/why-isn't-my-public-repository-being-analysed?-(207994935).md
+        - faq/troubleshooting/how-do-i-change-my-email-address-in-codacy--(213149905).md
+        - faq/troubleshooting/why-do-i-get-a-"not-a-member-of-the-organization"-message--(115001959985).md
+        - faq/troubleshooting/why-isn’t-codacy-commenting-on-my-prs-anymore-(360009411934).md
+        - faq/troubleshooting/why-isn't-my-public-repository-being-analysed-(207994935).md
