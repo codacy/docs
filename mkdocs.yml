@@ -339,15 +339,16 @@ plugins:
         "hc/en-us/articles/360035276553-Cloud-Release-Notes-05-Set-2019.md": "release-notes/cloud/cloud-release-notes-|-05-set-2019-(360035276553).md"
 
 nav:
-  - Home: "index.md"
+  - "Documentation home": "index.md"
   - "Getting started":
+    - getting-started/index.md
     - getting-started/getting-started-with-codacy-(360010263540).md
     - getting-started/i-added-a-repository.-now-what?-(207993605).md
     - getting-started/setting-up-your-personal-repositories-(207278449).md
     - getting-started/supported-languages-(207994735).md
     - getting-started/which-permissions-does-codacy-need-from-my-account?-(115003405529).md
   - "User guide":
-    - index.md
+    - user-guide/index.md
     - General:
       - General:
         - user-guide/general/updates-to-codacy’s-privacy-policy-(360004685494).md
@@ -479,6 +480,7 @@ nav:
       - release-notes/self-hosted/enterprise-v2.0.337-(360006566914).md
       - release-notes/self-hosted/enterprise-v2.0.333--(360006415313).md
   - FAQs:
+    - faq/index.md
     - faq/general/can-you-add-repos-from-other-git-providers?-(207994865).md
     - faq/general/file-size-limitation-(360025964333).md
     - faq/general/how-does-codacy-support-bitbucket-server?-(360012563579).md
