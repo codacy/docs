@@ -67,8 +67,8 @@ plugins:
         "hc/en-us/articles/115002130625-Codacy-Configuration-File.md": "configure-your-repo/codacy-configuration-file-(115002130625).md"
         "hc/en-us/articles/115002330985.md": "configure-your-repo/specifying-your-python-version-(115002330985).md"
         "hc/en-us/articles/115002330985-Specifying-your-Python-version.md": "configure-your-repo/specifying-your-python-version-(115002330985).md"
-        "hc/en-us/articles/115002492425.md": "product-updates/removal-of-nodesecurity,-golint-and-scsslint-(360012328140).md"
-        "hc/en-us/articles/115002492425-NodeSecurity-Dependencies-Inspection.md": "product-updates/removal-of-nodesecurity,-golint-and-scsslint-(360012328140).md"
+        "hc/en-us/articles/115002492425.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint-(360012328140).md"
+        "hc/en-us/articles/115002492425-NodeSecurity-Dependencies-Inspection.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint-(360012328140).md"
         "hc/en-us/articles/115002868829.md": "self-hosted/monitoring-codacy-self-hosted-(115002868829).md"
         "hc/en-us/articles/115002868829-Monitoring-Codacy-Self-hosted.md": "self-hosted/monitoring-codacy-self-hosted-(115002868829).md"
         "hc/en-us/articles/115003405529.md": "getting-started/which-permissions-does-codacy-need-from-my-account?-(115003405529).md"
@@ -199,10 +199,10 @@ plugins:
         "hc/en-us/articles/360005839053-Skipping-an-analysis.md": "faq/repositories/skipping-an-analysis-(360005839053).md"
         "hc/en-us/articles/360006036934.md": "configure-your-repo/php_codesniffer-specifying-your-php-version-(360006036934).md"
         "hc/en-us/articles/360006036934-PHP-CodeSniffer-Specifying-your-PHP-version.md": "configure-your-repo/php_codesniffer-specifying-your-php-version-(360006036934).md"
-        "hc/en-us/articles/360006415313.md": "self-hosted-release-notes/enterprise-v2.0.333--(360006415313).md"
-        "hc/en-us/articles/360006415313-Enterprise-v2-0-333-.md": "self-hosted-release-notes/enterprise-v2.0.333--(360006415313).md"
-        "hc/en-us/articles/360006566914.md": "self-hosted-release-notes/enterprise-v2.0.337-(360006566914).md"
-        "hc/en-us/articles/360006566914-Enterprise-v2-0-337.md": "self-hosted-release-notes/enterprise-v2.0.337-(360006566914).md"
+        "hc/en-us/articles/360006415313.md": "release-notes/self-hosted/enterprise-v2.0.333--(360006415313).md"
+        "hc/en-us/articles/360006415313-Enterprise-v2-0-333-.md": "release-notes/self-hosted/enterprise-v2.0.333--(360006415313).md"
+        "hc/en-us/articles/360006566914.md": "release-notes/self-hosted/enterprise-v2.0.337-(360006566914).md"
+        "hc/en-us/articles/360006566914-Enterprise-v2-0-337.md": "release-notes/self-hosted/enterprise-v2.0.337-(360006566914).md"
         "hc/en-us/articles/360006671054.md": "self-hosted/configuring-github-cloud-with-codacy-self-hosted-(360006671054).md"
         "hc/en-us/articles/360006671054-Configuring-GitHub-Cloud-with-Codacy-Self-hosted.md": "self-hosted/configuring-github-cloud-with-codacy-self-hosted-(360006671054).md"
         "hc/en-us/articles/360006718454.md": "your-repositories/share-your-repository-with-a-non-codacy-user-(360006718454).md"
@@ -211,16 +211,16 @@ plugins:
         "hc/en-us/articles/360006795293-Repository-failed-to-clone-Generating-a-new-SSH-key.md": "faq/repositories/repository-failed-to-clone?-generating-a-new-ssh-key-(360006795293).md"
         "hc/en-us/articles/360007262774.md": "self-hosted/configuring-your-email-server-with-codacy-enterprise-(360007262774).md"
         "hc/en-us/articles/360007262774-Configuring-your-Email-Server-with-Codacy-Enterprise.md": "self-hosted/configuring-your-email-server-with-codacy-enterprise-(360007262774).md"
-        "hc/en-us/articles/360007316034.md": "product-updates/cloud-release-notes-|-23-july-2018-(360007316034).md"
-        "hc/en-us/articles/360007316034-Cloud-Release-Notes-23-July-2018.md": "product-updates/cloud-release-notes-|-23-july-2018-(360007316034).md"
-        "hc/en-us/articles/360007699814.md": "self-hosted-release-notes/enterprise-v2.0.338-(360007699814).md"
-        "hc/en-us/articles/360007699814-Enterprise-v2-0-338.md": "self-hosted-release-notes/enterprise-v2.0.338-(360007699814).md"
+        "hc/en-us/articles/360007316034.md": "release-notes/cloud/cloud-release-notes-|-23-july-2018-(360007316034).md"
+        "hc/en-us/articles/360007316034-Cloud-Release-Notes-23-July-2018.md": "release-notes/cloud/cloud-release-notes-|-23-july-2018-(360007316034).md"
+        "hc/en-us/articles/360007699814.md": "release-notes/self-hosted/enterprise-v2.0.338-(360007699814).md"
+        "hc/en-us/articles/360007699814-Enterprise-v2-0-338.md": "release-notes/self-hosted/enterprise-v2.0.338-(360007699814).md"
         "hc/en-us/articles/360007846913.md": "self-hosted/gitlab-integration-codacy-self-hosted-(360007846913).md"
         "hc/en-us/articles/360007846913-GitLab-integration-Codacy-Self-hosted.md": "self-hosted/gitlab-integration-codacy-self-hosted-(360007846913).md"
         "hc/en-us/articles/360008254833.md": "related-tools/run-local-analysis-and-push-results-(360008254833).md"
         "hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results.md": "related-tools/run-local-analysis-and-push-results-(360008254833).md"
-        "hc/en-us/articles/360008762954.md": "self-hosted-release-notes/enterprise-v2.0.339-(360008762954).md"
-        "hc/en-us/articles/360008762954-Enterprise-v2-0-339.md": "self-hosted-release-notes/enterprise-v2.0.339-(360008762954).md"
+        "hc/en-us/articles/360008762954.md": "release-notes/self-hosted/enterprise-v2.0.339-(360008762954).md"
+        "hc/en-us/articles/360008762954-Enterprise-v2-0-339.md": "release-notes/self-hosted/enterprise-v2.0.339-(360008762954).md"
         "hc/en-us/articles/360009164573.md": "your-repositories/quality-settings-(360009164573).md"
         "hc/en-us/articles/360009164573-Quality-Settings.md": "your-repositories/quality-settings-(360009164573).md"
         "hc/en-us/articles/360009180134.md": "your-repositories/issues-view-(360009180134).md"
@@ -231,112 +231,112 @@ plugins:
         "hc/en-us/articles/360009340553-Creating-and-managing-teams.md": "manual-organizations/creating-and-managing-teams-(360009340553).md"
         "hc/en-us/articles/360009345493.md": "self-hosted/how-to-download-logs-(360009345493).md"
         "hc/en-us/articles/360009345493-How-to-download-logs.md": "self-hosted/how-to-download-logs-(360009345493).md"
-        "hc/en-us/articles/360009384980.md": "self-hosted-release-notes/enterprise-v2.0.371-(360009384980).md"
-        "hc/en-us/articles/360009384980-Enterprise-v2-0-371.md": "self-hosted-release-notes/enterprise-v2.0.371-(360009384980).md"
+        "hc/en-us/articles/360009384980.md": "release-notes/self-hosted/enterprise-v2.0.371-(360009384980).md"
+        "hc/en-us/articles/360009384980-Enterprise-v2-0-371.md": "release-notes/self-hosted/enterprise-v2.0.371-(360009384980).md"
         "hc/en-us/articles/360009411934.md": "faq/troubleshooting/why-isn’t-codacy-commenting-on-my-prs-anymore?-(360009411934).md"
         "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-my-PRs-anymore-.md": "faq/troubleshooting/why-isn’t-codacy-commenting-on-my-prs-anymore?-(360009411934).md"
-        "hc/en-us/articles/360010035840.md": "self-hosted-release-notes/enterprise-v2.0.372-(360010035840).md"
-        "hc/en-us/articles/360010035840-Enterprise-v2-0-372.md": "self-hosted-release-notes/enterprise-v2.0.372-(360010035840).md"
+        "hc/en-us/articles/360010035840.md": "release-notes/self-hosted/enterprise-v2.0.372-(360010035840).md"
+        "hc/en-us/articles/360010035840-Enterprise-v2-0-372.md": "release-notes/self-hosted/enterprise-v2.0.372-(360010035840).md"
         "hc/en-us/articles/360010263540.md": "getting-started/getting-started-with-codacy-(360010263540).md"
         "hc/en-us/articles/360010263540-Getting-started-with-Codacy.md": "getting-started/getting-started-with-codacy-(360010263540).md"
         "hc/en-us/articles/360010263720.md": "synced-organizations/what-are-synced-organizations-(360010263720).md"
         "hc/en-us/articles/360010263720-What-are-synced-organizations.md": "synced-organizations/what-are-synced-organizations-(360010263720).md"
         "hc/en-us/articles/360010264500.md": "synced-organizations/why-can't-i-see-my-organization?-(360010264500).md"
         "hc/en-us/articles/360010264500-Why-can-t-I-see-my-organization-.md": "synced-organizations/why-can't-i-see-my-organization?-(360010264500).md"
-        "hc/en-us/articles/360010306559.md": "product-updates/cloud-release-notes-|-30-oct-2019-(360010306559).md"
-        "hc/en-us/articles/360010306559-Cloud-Release-Notes-30-Oct-2019.md": "product-updates/cloud-release-notes-|-30-oct-2019-(360010306559).md"
-        "hc/en-us/articles/360010348093.md": "self-hosted-release-notes/enterprise-v2.0.341-(360010348093).md"
-        "hc/en-us/articles/360010348093-Enterprise-v2-0-341.md": "self-hosted-release-notes/enterprise-v2.0.341-(360010348093).md"
+        "hc/en-us/articles/360010306559.md": "release-notes/cloud/cloud-release-notes-|-30-oct-2019-(360010306559).md"
+        "hc/en-us/articles/360010306559-Cloud-Release-Notes-30-Oct-2019.md": "release-notes/cloud/cloud-release-notes-|-30-oct-2019-(360010306559).md"
+        "hc/en-us/articles/360010348093.md": "release-notes/self-hosted/enterprise-v2.0.341-(360010348093).md"
+        "hc/en-us/articles/360010348093-Enterprise-v2-0-341.md": "release-notes/self-hosted/enterprise-v2.0.341-(360010348093).md"
         "hc/en-us/articles/360010373559.md": "synced-organizations/roles-and-permissions-for-synced-organizations-(360010373559).md"
         "hc/en-us/articles/360010373559-Roles-and-permissions-for-synced-organizations.md": "synced-organizations/roles-and-permissions-for-synced-organizations-(360010373559).md"
-        "hc/en-us/articles/360010434280.md": "product-updates/cloud-release-notes-|-15-nov-2019-(360010434280).md"
-        "hc/en-us/articles/360010434280-Cloud-Release-Notes-15-Nov-2019.md": "product-updates/cloud-release-notes-|-15-nov-2019-(360010434280).md"
+        "hc/en-us/articles/360010434280.md": "release-notes/cloud/cloud-release-notes-|-15-nov-2019-(360010434280).md"
+        "hc/en-us/articles/360010434280-Cloud-Release-Notes-15-Nov-2019.md": "release-notes/cloud/cloud-release-notes-|-15-nov-2019-(360010434280).md"
         "hc/en-us/articles/360010922420.md": "synced-organizations/adding-and-managing-authors-(360010922420).md"
         "hc/en-us/articles/360010922420-Adding-and-managing-Authors.md": "synced-organizations/adding-and-managing-authors-(360010922420).md"
-        "hc/en-us/articles/360011105534.md": "product-updates/cloud-release-notes-|-19-october-2018-(360011105534).md"
-        "hc/en-us/articles/360011105534-Cloud-Release-Notes-19-October-2018.md": "product-updates/cloud-release-notes-|-19-october-2018-(360011105534).md"
-        "hc/en-us/articles/360011781859.md": "self-hosted-release-notes/enterprise-v2.0.376-(360011781859).md"
-        "hc/en-us/articles/360011781859-Enterprise-v2-0-376.md": "self-hosted-release-notes/enterprise-v2.0.376-(360011781859).md"
+        "hc/en-us/articles/360011105534.md": "release-notes/cloud/cloud-release-notes-|-19-october-2018-(360011105534).md"
+        "hc/en-us/articles/360011105534-Cloud-Release-Notes-19-October-2018.md": "release-notes/cloud/cloud-release-notes-|-19-october-2018-(360011105534).md"
+        "hc/en-us/articles/360011781859.md": "release-notes/self-hosted/enterprise-v2.0.376-(360011781859).md"
+        "hc/en-us/articles/360011781859-Enterprise-v2-0-376.md": "release-notes/self-hosted/enterprise-v2.0.376-(360011781859).md"
         "hc/en-us/articles/360011935900.md": "faq/general/how-does-codacy-support-gitlab-cloud?-(360011935900).md"
         "hc/en-us/articles/360011935900-How-does-Codacy-support-GitLab-Cloud-.md": "faq/general/how-does-codacy-support-gitlab-cloud?-(360011935900).md"
-        "hc/en-us/articles/360011952634.md": "self-hosted-release-notes/enterprise-v2.0.345-(360011952634).md"
-        "hc/en-us/articles/360011952634-Enterprise-v2-0-345.md": "self-hosted-release-notes/enterprise-v2.0.345-(360011952634).md"
-        "hc/en-us/articles/360012007980.md": "product-updates/codacy-now-supports-github-apps-(360012007980).md"
-        "hc/en-us/articles/360012007980-Codacy-now-supports-GitHub-Apps.md": "product-updates/codacy-now-supports-github-apps-(360012007980).md"
+        "hc/en-us/articles/360011952634.md": "release-notes/self-hosted/enterprise-v2.0.345-(360011952634).md"
+        "hc/en-us/articles/360011952634-Enterprise-v2-0-345.md": "release-notes/self-hosted/enterprise-v2.0.345-(360011952634).md"
+        "hc/en-us/articles/360012007980.md": "release-notes/cloud/codacy-now-supports-github-apps-(360012007980).md"
+        "hc/en-us/articles/360012007980-Codacy-now-supports-GitHub-Apps.md": "release-notes/cloud/codacy-now-supports-github-apps-(360012007980).md"
         "hc/en-us/articles/360012030340.md": "synced-organizations/authors-vs-members-(360012030340).md"
         "hc/en-us/articles/360012030340-Authors-vs-Members.md": "synced-organizations/authors-vs-members-(360012030340).md"
         "hc/en-us/articles/360012037659.md": "integrations/gitlab-integration-(360012037659).md"
         "hc/en-us/articles/360012037659-GitLab-Integration.md": "integrations/gitlab-integration-(360012037659).md"
-        "hc/en-us/articles/360012056493.md": "product-updates/cloud-release-notes-|-02-november-2018-(360012056493).md"
-        "hc/en-us/articles/360012056493-Cloud-Release-Notes-02-November-2018.md": "product-updates/cloud-release-notes-|-02-november-2018-(360012056493).md"
+        "hc/en-us/articles/360012056493.md": "release-notes/cloud/cloud-release-notes-|-02-november-2018-(360012056493).md"
+        "hc/en-us/articles/360012056493-Cloud-Release-Notes-02-November-2018.md": "release-notes/cloud/cloud-release-notes-|-02-november-2018-(360012056493).md"
         "hc/en-us/articles/360012126419.md": "synced-organizations/how-to-configure-which-users-can-ignore-issues-(360012126419).md"
         "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "synced-organizations/how-to-configure-which-users-can-ignore-issues-(360012126419).md"
-        "hc/en-us/articles/360012141513.md": "product-updates/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst)-(360012141513).md"
-        "hc/en-us/articles/360012141513-Scheduled-Maintenance-Saturday-17th-Nov-8-00-GMT-0-00-PST-.md": "product-updates/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst)-(360012141513).md"
+        "hc/en-us/articles/360012141513.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst)-(360012141513).md"
+        "hc/en-us/articles/360012141513-Scheduled-Maintenance-Saturday-17th-Nov-8-00-GMT-0-00-PST-.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst)-(360012141513).md"
         "hc/en-us/articles/360012141819.md": "synced-organizations/why-aren't-my-github-repositories-showing?-(360012141819).md"
         "hc/en-us/articles/360012141819-Why-aren-t-my-GitHub-repositories-showing-.md": "synced-organizations/why-aren't-my-github-repositories-showing?-(360012141819).md"
-        "hc/en-us/articles/360012267020.md": "self-hosted-release-notes/self-hosted-v2.0.378-(360012267020).md"
-        "hc/en-us/articles/360012267020-Self-hosted-v2-0-378.md": "self-hosted-release-notes/self-hosted-v2.0.378-(360012267020).md"
-        "hc/en-us/articles/360012328140.md": "product-updates/removal-of-nodesecurity,-golint-and-scsslint-(360012328140).md"
-        "hc/en-us/articles/360012328140-Removal-of-NodeSecurity-GoLint-and-SCSSLint.md": "product-updates/removal-of-nodesecurity,-golint-and-scsslint-(360012328140).md"
+        "hc/en-us/articles/360012267020.md": "release-notes/self-hosted/self-hosted-v2.0.378-(360012267020).md"
+        "hc/en-us/articles/360012267020-Self-hosted-v2-0-378.md": "release-notes/self-hosted/self-hosted-v2.0.378-(360012267020).md"
+        "hc/en-us/articles/360012328140.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint-(360012328140).md"
+        "hc/en-us/articles/360012328140-Removal-of-NodeSecurity-GoLint-and-SCSSLint.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint-(360012328140).md"
         "hc/en-us/articles/360012368539.md": "self-hosted/configuring-gitlab.com-with-codacy-self-hosted-(360012368539).md"
         "hc/en-us/articles/360012368539-Configuring-GitLab-com-with-Codacy-Self-hosted.md": "self-hosted/configuring-gitlab.com-with-codacy-self-hosted-(360012368539).md"
-        "hc/en-us/articles/360012494113.md": "product-updates/cloud-release-notes-|-16-november-2018-(360012494113).md"
-        "hc/en-us/articles/360012494113-Cloud-Release-Notes-16-November-2018.md": "product-updates/cloud-release-notes-|-16-november-2018-(360012494113).md"
+        "hc/en-us/articles/360012494113.md": "release-notes/cloud/cloud-release-notes-|-16-november-2018-(360012494113).md"
+        "hc/en-us/articles/360012494113-Cloud-Release-Notes-16-November-2018.md": "release-notes/cloud/cloud-release-notes-|-16-november-2018-(360012494113).md"
         "hc/en-us/articles/360012563579.md": "faq/general/how-does-codacy-support-bitbucket-server?-(360012563579).md"
         "hc/en-us/articles/360012563579-How-does-Codacy-support-Bitbucket-Server-.md": "faq/general/how-does-codacy-support-bitbucket-server?-(360012563579).md"
         "hc/en-us/articles/360012665460.md": "self-hosted/create-and-configure-a-new-github-app-(360012665460).md"
         "hc/en-us/articles/360012665460-Create-and-configure-a-new-GitHub-App.md": "self-hosted/create-and-configure-a-new-github-app-(360012665460).md"
-        "hc/en-us/articles/360012729599.md": "self-hosted-release-notes/upcoming-changes-to-github-integration-for-codacy-self-hosted-(360012729599).md"
-        "hc/en-us/articles/360012729599-Upcoming-changes-to-GitHub-integration-for-Codacy-Self-hosted.md": "self-hosted-release-notes/upcoming-changes-to-github-integration-for-codacy-self-hosted-(360012729599).md"
+        "hc/en-us/articles/360012729599.md": "release-notes/self-hosted/upcoming-changes-to-github-integration-for-codacy-self-hosted-(360012729599).md"
+        "hc/en-us/articles/360012729599-Upcoming-changes-to-GitHub-integration-for-Codacy-Self-hosted.md": "release-notes/self-hosted/upcoming-changes-to-github-integration-for-codacy-self-hosted-(360012729599).md"
         "hc/en-us/articles/360012746413.md": "faq/repositories/i-renamed-my-repository-on-the-git-provider-(360012746413).md"
         "hc/en-us/articles/360012746413-I-renamed-my-repository-on-the-Git-provider.md": "faq/repositories/i-renamed-my-repository-on-the-git-provider-(360012746413).md"
-        "hc/en-us/articles/360014948173.md": "self-hosted-release-notes/enterprise-v2.0.348-(360014948173).md"
-        "hc/en-us/articles/360014948173-Enterprise-v2-0-348.md": "self-hosted-release-notes/enterprise-v2.0.348-(360014948173).md"
-        "hc/en-us/articles/360015220333.md": "product-updates/cloud-release-notes-|-02-january-2019-(360015220333).md"
-        "hc/en-us/articles/360015220333-Cloud-Release-Notes-02-January-2019.md": "product-updates/cloud-release-notes-|-02-january-2019-(360015220333).md"
-        "hc/en-us/articles/360015221174.md": "product-updates/scheduled-maintenance-saturday,-5th-jan@05:30-gmt-(21:30-pst)-(360015221174).md"
-        "hc/en-us/articles/360015221174-Scheduled-Maintenance-Saturday-5th-Jan-05-30-GMT-21-30-PST-.md": "product-updates/scheduled-maintenance-saturday,-5th-jan@05:30-gmt-(21:30-pst)-(360015221174).md"
-        "hc/en-us/articles/360018049713.md": "product-updates/bitbucket-changes-(360018049713).md"
-        "hc/en-us/articles/360018049713-Bitbucket-changes.md": "product-updates/bitbucket-changes-(360018049713).md"
-        "hc/en-us/articles/360019517774.md": "self-hosted-release-notes/enterprise-v2.0.362-(360019517774).md"
-        "hc/en-us/articles/360019517774-Enterprise-v2-0-362.md": "self-hosted-release-notes/enterprise-v2.0.362-(360019517774).md"
-        "hc/en-us/articles/360019887754.md": "self-hosted-release-notes/enterprise-v2.0.362.1-(360019887754).md"
-        "hc/en-us/articles/360019887754-Enterprise-v2-0-362-1.md": "self-hosted-release-notes/enterprise-v2.0.362.1-(360019887754).md"
-        "hc/en-us/articles/360020553894.md": "product-updates/cloud-release-notes-|-29-march-2019-(360020553894).md"
-        "hc/en-us/articles/360020553894-Cloud-Release-Notes-29-March-2019.md": "product-updates/cloud-release-notes-|-29-march-2019-(360020553894).md"
-        "hc/en-us/articles/360020569254.md": "product-updates/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt)-(360020569254).md"
-        "hc/en-us/articles/360020569254-Scheduled-Maintenance-Saturday-30th-Mar-05-00-GMT-01-00-EDT-.md": "product-updates/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt)-(360020569254).md"
+        "hc/en-us/articles/360014948173.md": "release-notes/self-hosted/enterprise-v2.0.348-(360014948173).md"
+        "hc/en-us/articles/360014948173-Enterprise-v2-0-348.md": "release-notes/self-hosted/enterprise-v2.0.348-(360014948173).md"
+        "hc/en-us/articles/360015220333.md": "release-notes/cloud/cloud-release-notes-|-02-january-2019-(360015220333).md"
+        "hc/en-us/articles/360015220333-Cloud-Release-Notes-02-January-2019.md": "release-notes/cloud/cloud-release-notes-|-02-january-2019-(360015220333).md"
+        "hc/en-us/articles/360015221174.md": "release-notes/cloud/scheduled-maintenance-saturday,-5th-jan@05:30-gmt-(21:30-pst)-(360015221174).md"
+        "hc/en-us/articles/360015221174-Scheduled-Maintenance-Saturday-5th-Jan-05-30-GMT-21-30-PST-.md": "release-notes/cloud/scheduled-maintenance-saturday,-5th-jan@05:30-gmt-(21:30-pst)-(360015221174).md"
+        "hc/en-us/articles/360018049713.md": "release-notes/cloud/bitbucket-changes-(360018049713).md"
+        "hc/en-us/articles/360018049713-Bitbucket-changes.md": "release-notes/cloud/bitbucket-changes-(360018049713).md"
+        "hc/en-us/articles/360019517774.md": "release-notes/self-hosted/enterprise-v2.0.362-(360019517774).md"
+        "hc/en-us/articles/360019517774-Enterprise-v2-0-362.md": "release-notes/self-hosted/enterprise-v2.0.362-(360019517774).md"
+        "hc/en-us/articles/360019887754.md": "release-notes/self-hosted/enterprise-v2.0.362.1-(360019887754).md"
+        "hc/en-us/articles/360019887754-Enterprise-v2-0-362-1.md": "release-notes/self-hosted/enterprise-v2.0.362.1-(360019887754).md"
+        "hc/en-us/articles/360020553894.md": "release-notes/cloud/cloud-release-notes-|-29-march-2019-(360020553894).md"
+        "hc/en-us/articles/360020553894-Cloud-Release-Notes-29-March-2019.md": "release-notes/cloud/cloud-release-notes-|-29-march-2019-(360020553894).md"
+        "hc/en-us/articles/360020569254.md": "release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt)-(360020569254).md"
+        "hc/en-us/articles/360020569254-Scheduled-Maintenance-Saturday-30th-Mar-05-00-GMT-01-00-EDT-.md": "release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt)-(360020569254).md"
         "hc/en-us/articles/360021260713.md": "faq/repositories/how-does-codacy-measure-complexity-in-my-repository?--(360021260713).md"
         "hc/en-us/articles/360021260713-How-does-Codacy-measure-complexity-in-my-repository-.md": "faq/repositories/how-does-codacy-measure-complexity-in-my-repository?--(360021260713).md"
-        "hc/en-us/articles/360021378573.md": "product-updates/cloud-release-notes-|-08-april-2019-(360021378573).md"
-        "hc/en-us/articles/360021378573-Cloud-Release-Notes-08-April-2019.md": "product-updates/cloud-release-notes-|-08-april-2019-(360021378573).md"
-        "hc/en-us/articles/360021584573.md": "self-hosted-release-notes/enterprise-v2.0.366-(360021584573).md"
-        "hc/en-us/articles/360021584573-Enterprise-v2-0-366.md": "self-hosted-release-notes/enterprise-v2.0.366-(360021584573).md"
-        "hc/en-us/articles/360022090213.md": "self-hosted-release-notes/enterprise-v.2.0.367-(360022090213).md"
-        "hc/en-us/articles/360022090213-Enterprise-v-2-0-367.md": "self-hosted-release-notes/enterprise-v.2.0.367-(360022090213).md"
-        "hc/en-us/articles/360022690193.md": "product-updates/cloud-release-notes-|-05-may-2019-(360022690193).md"
-        "hc/en-us/articles/360022690193-Cloud-Release-Notes-05-May-2019.md": "product-updates/cloud-release-notes-|-05-may-2019-(360022690193).md"
-        "hc/en-us/articles/360023517013.md": "product-updates/cloud-release-notes-|-20-may-2019-(360023517013).md"
-        "hc/en-us/articles/360023517013-Cloud-Release-Notes-20-May-2019.md": "product-updates/cloud-release-notes-|-20-may-2019-(360023517013).md"
+        "hc/en-us/articles/360021378573.md": "release-notes/cloud/cloud-release-notes-|-08-april-2019-(360021378573).md"
+        "hc/en-us/articles/360021378573-Cloud-Release-Notes-08-April-2019.md": "release-notes/cloud/cloud-release-notes-|-08-april-2019-(360021378573).md"
+        "hc/en-us/articles/360021584573.md": "release-notes/self-hosted/enterprise-v2.0.366-(360021584573).md"
+        "hc/en-us/articles/360021584573-Enterprise-v2-0-366.md": "release-notes/self-hosted/enterprise-v2.0.366-(360021584573).md"
+        "hc/en-us/articles/360022090213.md": "release-notes/self-hosted/enterprise-v.2.0.367-(360022090213).md"
+        "hc/en-us/articles/360022090213-Enterprise-v-2-0-367.md": "release-notes/self-hosted/enterprise-v.2.0.367-(360022090213).md"
+        "hc/en-us/articles/360022690193.md": "release-notes/cloud/cloud-release-notes-|-05-may-2019-(360022690193).md"
+        "hc/en-us/articles/360022690193-Cloud-Release-Notes-05-May-2019.md": "release-notes/cloud/cloud-release-notes-|-05-may-2019-(360022690193).md"
+        "hc/en-us/articles/360023517013.md": "release-notes/cloud/cloud-release-notes-|-20-may-2019-(360023517013).md"
+        "hc/en-us/articles/360023517013-Cloud-Release-Notes-20-May-2019.md": "release-notes/cloud/cloud-release-notes-|-20-may-2019-(360023517013).md"
         "hc/en-us/articles/360023916013.md": "self-hosted/run-spotbugs-(360023916013).md"
         "hc/en-us/articles/360023916013-Run-SpotBugs.md": "self-hosted/run-spotbugs-(360023916013).md"
-        "hc/en-us/articles/360024237614.md": "self-hosted-release-notes/enterprise-v2.0.368-(360024237614).md"
-        "hc/en-us/articles/360024237614-Enterprise-v2-0-368.md": "self-hosted-release-notes/enterprise-v2.0.368-(360024237614).md"
-        "hc/en-us/articles/360025014373.md": "product-updates/cloud-release-notes-|-18-jun-2019-(360025014373).md"
-        "hc/en-us/articles/360025014373-Cloud-Release-Notes-18-Jun-2019.md": "product-updates/cloud-release-notes-|-18-jun-2019-(360025014373).md"
+        "hc/en-us/articles/360024237614.md": "release-notes/self-hosted/enterprise-v2.0.368-(360024237614).md"
+        "hc/en-us/articles/360024237614-Enterprise-v2-0-368.md": "release-notes/self-hosted/enterprise-v2.0.368-(360024237614).md"
+        "hc/en-us/articles/360025014373.md": "release-notes/cloud/cloud-release-notes-|-18-jun-2019-(360025014373).md"
+        "hc/en-us/articles/360025014373-Cloud-Release-Notes-18-Jun-2019.md": "release-notes/cloud/cloud-release-notes-|-18-jun-2019-(360025014373).md"
         "hc/en-us/articles/360025654573.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs?-(360025654573).md"
         "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs?-(360025654573).md"
         "hc/en-us/articles/360025964333.md": "faq/general/file-size-limitation-(360025964333).md"
         "hc/en-us/articles/360025964333-File-size-limitation.md": "faq/general/file-size-limitation-(360025964333).md"
         "hc/en-us/articles/360025964853.md": "faq/general/why-is-my-file-missing?-(360025964853).md"
         "hc/en-us/articles/360025964853-Why-is-my-file-missing-.md": "faq/general/why-is-my-file-missing?-(360025964853).md"
-        "hc/en-us/articles/360034116413.md": "self-hosted-release-notes/enterprise-v2.0.369-(360034116413).md"
-        "hc/en-us/articles/360034116413-Enterprise-v2-0-369.md": "self-hosted-release-notes/enterprise-v2.0.369-(360034116413).md"
-        "hc/en-us/articles/360034116533.md": "product-updates/cloud-release-notes-|-07-aug-2019-(360034116533).md"
-        "hc/en-us/articles/360034116533-Cloud-Release-Notes-07-Aug-2019.md": "product-updates/cloud-release-notes-|-07-aug-2019-(360034116533).md"
-        "hc/en-us/articles/360035276553.md": "product-updates/cloud-release-notes-|-05-set-2019-(360035276553).md"
-        "hc/en-us/articles/360035276553-Cloud-Release-Notes-05-Set-2019.md": "product-updates/cloud-release-notes-|-05-set-2019-(360035276553).md"
+        "hc/en-us/articles/360034116413.md": "release-notes/self-hosted/enterprise-v2.0.369-(360034116413).md"
+        "hc/en-us/articles/360034116413-Enterprise-v2-0-369.md": "release-notes/self-hosted/enterprise-v2.0.369-(360034116413).md"
+        "hc/en-us/articles/360034116533.md": "release-notes/cloud/cloud-release-notes-|-07-aug-2019-(360034116533).md"
+        "hc/en-us/articles/360034116533-Cloud-Release-Notes-07-Aug-2019.md": "release-notes/cloud/cloud-release-notes-|-07-aug-2019-(360034116533).md"
+        "hc/en-us/articles/360035276553.md": "release-notes/cloud/cloud-release-notes-|-05-set-2019-(360035276553).md"
+        "hc/en-us/articles/360035276553-Cloud-Release-Notes-05-Set-2019.md": "release-notes/cloud/cloud-release-notes-|-05-set-2019-(360035276553).md"
 
 nav:
   - Home: "index.md"
@@ -381,67 +381,27 @@ nav:
           - manual-organizations/managing-team-repositories-(208243169).md
       - other:
           - other/special-thanks-(207995005).md
-      - product-updates:
-          - product-updates/bitbucket-changes-(360018049713).md
-          - product-updates/cloud-release-notes-|-02-january-2019-(360015220333).md
-          - product-updates/cloud-release-notes-|-02-november-2018-(360012056493).md
-          - product-updates/cloud-release-notes-|-05-may-2019-(360022690193).md
-          - product-updates/cloud-release-notes-|-05-set-2019-(360035276553).md
-          - product-updates/cloud-release-notes-|-07-aug-2019-(360034116533).md
-          - product-updates/cloud-release-notes-|-08-april-2019-(360021378573).md
-          - product-updates/cloud-release-notes-|-15-nov-2019-(360010434280).md
-          - product-updates/cloud-release-notes-|-16-november-2018-(360012494113).md
-          - product-updates/cloud-release-notes-|-18-jun-2019-(360025014373).md
-          - product-updates/cloud-release-notes-|-19-october-2018-(360011105534).md
-          - product-updates/cloud-release-notes-|-20-may-2019-(360023517013).md
-          - product-updates/cloud-release-notes-|-23-july-2018-(360007316034).md
-          - product-updates/cloud-release-notes-|-29-march-2019-(360020553894).md
-          - product-updates/cloud-release-notes-|-30-oct-2019-(360010306559).md
-          - product-updates/codacy-now-supports-github-apps-(360012007980).md
-          - product-updates/removal-of-nodesecurity,-golint-and-scsslint-(360012328140).md
-          - product-updates/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst)-(360012141513).md
-          - product-updates/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt)-(360020569254).md
-          - product-updates/scheduled-maintenance-saturday,-5th-jan@05:30-gmt-(21:30-pst)-(360015221174).md
       - related-tools:
           - related-tools/api-tokens-(115000255385).md
           - related-tools/run-local-analysis-and-push-results-(360008254833).md
-      - self-hosted:
-          - self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted-(207280509).md
-          - self-hosted/configuring-github-cloud-with-codacy-self-hosted-(360006671054).md
-          - self-hosted/configuring-github-enterprise-with-codacy-self-hosted-(207280489).md
-          - self-hosted/configuring-gitlab.com-with-codacy-self-hosted-(360012368539).md
-          - self-hosted/configuring-gitlab-enterprise-with-codacy-self-hosted-(207994975).md
-          - self-hosted/configuring-your-email-server-with-codacy-enterprise-(360007262774).md
-          - self-hosted/create-and-configure-a-new-github-app-(360012665460).md
-          - self-hosted/frequently-asked-questions-(faq)-(207280529).md
-          - self-hosted/gitlab-integration-codacy-self-hosted-(360007846913).md
-          - self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise?-(207994905).md
-          - self-hosted/how-to-download-logs-(360009345493).md
-          - self-hosted/installing-codacy-self-hosted-(207995025).md
-          - self-hosted/installing-postgres-for-codacy-self-hosted-(360002902573).md
-          - self-hosted/installing-postgres-for-codacy-self-hosted-using-a-docker-container-(207994955).md
-          - self-hosted/managing-authentication-for-the-control-panel-(115000254665).md
-          - self-hosted/monitoring-codacy-self-hosted-(115002868829).md
-          - self-hosted/run-spotbugs-(360023916013).md
-      - self-hosted-release-notes:
-          - self-hosted-release-notes/enterprise-v2.0.333--(360006415313).md
-          - self-hosted-release-notes/enterprise-v2.0.337-(360006566914).md
-          - self-hosted-release-notes/enterprise-v2.0.338-(360007699814).md
-          - self-hosted-release-notes/enterprise-v2.0.339-(360008762954).md
-          - self-hosted-release-notes/enterprise-v2.0.341-(360010348093).md
-          - self-hosted-release-notes/enterprise-v2.0.345-(360011952634).md
-          - self-hosted-release-notes/enterprise-v2.0.348-(360014948173).md
-          - self-hosted-release-notes/enterprise-v2.0.362.1-(360019887754).md
-          - self-hosted-release-notes/enterprise-v2.0.362-(360019517774).md
-          - self-hosted-release-notes/enterprise-v2.0.366-(360021584573).md
-          - self-hosted-release-notes/enterprise-v.2.0.367-(360022090213).md
-          - self-hosted-release-notes/enterprise-v2.0.368-(360024237614).md
-          - self-hosted-release-notes/enterprise-v2.0.369-(360034116413).md
-          - self-hosted-release-notes/enterprise-v2.0.371-(360009384980).md
-          - self-hosted-release-notes/enterprise-v2.0.372-(360010035840).md
-          - self-hosted-release-notes/enterprise-v2.0.376-(360011781859).md
-          - self-hosted-release-notes/self-hosted-v2.0.378-(360012267020).md
-          - self-hosted-release-notes/upcoming-changes-to-github-integration-for-codacy-self-hosted-(360012729599).md
+  - self-hosted:
+      - self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted-(207280509).md
+      - self-hosted/configuring-github-cloud-with-codacy-self-hosted-(360006671054).md
+      - self-hosted/configuring-github-enterprise-with-codacy-self-hosted-(207280489).md
+      - self-hosted/configuring-gitlab.com-with-codacy-self-hosted-(360012368539).md
+      - self-hosted/configuring-gitlab-enterprise-with-codacy-self-hosted-(207994975).md
+      - self-hosted/configuring-your-email-server-with-codacy-enterprise-(360007262774).md
+      - self-hosted/create-and-configure-a-new-github-app-(360012665460).md
+      - self-hosted/frequently-asked-questions-(faq)-(207280529).md
+      - self-hosted/gitlab-integration-codacy-self-hosted-(360007846913).md
+      - self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise?-(207994905).md
+      - self-hosted/how-to-download-logs-(360009345493).md
+      - self-hosted/installing-codacy-self-hosted-(207995025).md
+      - self-hosted/installing-postgres-for-codacy-self-hosted-(360002902573).md
+      - self-hosted/installing-postgres-for-codacy-self-hosted-using-a-docker-container-(207994955).md
+      - self-hosted/managing-authentication-for-the-control-panel-(115000254665).md
+      - self-hosted/monitoring-codacy-self-hosted-(115002868829).md
+      - self-hosted/run-spotbugs-(360023916013).md
       - supported-technologies:
           - supported-technologies/engines-(213632009).md
           - supported-technologies/tool-developer-guide-(207994725).md
@@ -473,6 +433,48 @@ nav:
           - your-repositories/share-your-repository-with-a-non-codacy-user-(360006718454).md
           - your-repositories/what-are-the-different-grades-and-how-are-they-calculated?-(207994765).md
   - "Installing Codacy": "!include ./submodules/chart/mkdocs.yml"
+  - "Release notes":
+    - release-notes/index.md
+    - "Cloud release notes":
+      - release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint-(360012328140).md
+      - release-notes/cloud/codacy-now-supports-github-apps-(360012007980).md
+      - release-notes/cloud/cloud-release-notes-|-15-nov-2019-(360010434280).md
+      - release-notes/cloud/cloud-release-notes-|-30-oct-2019-(360010306559).md
+      - release-notes/cloud/cloud-release-notes-|-05-set-2019-(360035276553).md
+      - release-notes/cloud/cloud-release-notes-|-07-aug-2019-(360034116533).md
+      - release-notes/cloud/cloud-release-notes-|-18-jun-2019-(360025014373).md
+      - release-notes/cloud/cloud-release-notes-|-20-may-2019-(360023517013).md
+      - release-notes/cloud/cloud-release-notes-|-05-may-2019-(360022690193).md
+      - release-notes/cloud/cloud-release-notes-|-08-april-2019-(360021378573).md
+      - release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt)-(360020569254).md
+      - release-notes/cloud/cloud-release-notes-|-29-march-2019-(360020553894).md
+      - release-notes/cloud/bitbucket-changes-(360018049713).md
+      - release-notes/cloud/scheduled-maintenance-saturday,-5th-jan@05:30-gmt-(21:30-pst)-(360015221174).md
+      - release-notes/cloud/cloud-release-notes-|-02-january-2019-(360015220333).md
+      - release-notes/cloud/cloud-release-notes-|-16-november-2018-(360012494113).md
+      - release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst)-(360012141513).md
+      - release-notes/cloud/cloud-release-notes-|-02-november-2018-(360012056493).md
+      - release-notes/cloud/cloud-release-notes-|-19-october-2018-(360011105534).md
+      - release-notes/cloud/cloud-release-notes-|-23-july-2018-(360007316034).md
+    - "Self-hosted release notes":
+      - release-notes/self-hosted/upcoming-changes-to-github-integration-for-codacy-self-hosted-(360012729599).md
+      - release-notes/self-hosted/self-hosted-v2.0.378-(360012267020).md
+      - release-notes/self-hosted/enterprise-v2.0.376-(360011781859).md
+      - release-notes/self-hosted/enterprise-v2.0.372-(360010035840).md
+      - release-notes/self-hosted/enterprise-v2.0.371-(360009384980).md
+      - release-notes/self-hosted/enterprise-v2.0.369-(360034116413).md
+      - release-notes/self-hosted/enterprise-v2.0.368-(360024237614).md
+      - release-notes/self-hosted/enterprise-v.2.0.367-(360022090213).md
+      - release-notes/self-hosted/enterprise-v2.0.366-(360021584573).md
+      - release-notes/self-hosted/enterprise-v2.0.362.1-(360019887754).md
+      - release-notes/self-hosted/enterprise-v2.0.362-(360019517774).md
+      - release-notes/self-hosted/enterprise-v2.0.348-(360014948173).md
+      - release-notes/self-hosted/enterprise-v2.0.345-(360011952634).md
+      - release-notes/self-hosted/enterprise-v2.0.341-(360010348093).md
+      - release-notes/self-hosted/enterprise-v2.0.339-(360008762954).md
+      - release-notes/self-hosted/enterprise-v2.0.338-(360007699814).md
+      - release-notes/self-hosted/enterprise-v2.0.337-(360006566914).md
+      - release-notes/self-hosted/enterprise-v2.0.333--(360006415313).md
   - FAQs:
     - faq/general/can-you-add-repos-from-other-git-providers?-(207994865).md
     - faq/general/file-size-limitation-(360025964333).md
