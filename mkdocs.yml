@@ -346,74 +346,75 @@ nav:
     - getting-started/setting-up-your-personal-repositories-(207278449).md
     - getting-started/supported-languages-(207994735).md
     - getting-started/which-permissions-does-codacy-need-from-my-account?-(115003405529).md
-  - "Product documentation":
-      - configure-your-repo:
-          - configure-your-repo/add-coverage-to-your-repo-(207993835).md
-          - configure-your-repo/codacy-configuration-file-(115002130625).md
-          - configure-your-repo/code-patterns-(207994335).md
-          - configure-your-repo/code-standards-(115000947569).md
-          - configure-your-repo/coverage-(207279819).md
-          - configure-your-repo/generate-coverage-(207312879).md
-          - configure-your-repo/ignore-files-from-codacy-analysis-(360005097654).md
-          - configure-your-repo/language-extensions-(207994395).md
-          - configure-your-repo/php_codesniffer-specifying-your-php-version-(360006036934).md
-          - configure-your-repo/specifying-language-(360001207234).md
-          - configure-your-repo/specifying-your-python-version-(115002330985).md
-          - configure-your-repo/submodules-how-to-enable-them-(360005239394).md
-      - general:
-          - general/plans-and-billing-(208942945).md
-          - general/updates-to-codacy’s-privacy-policy-(360004685494).md
-          - general/upgrading-your-codacy-account-(115001853565).md
-      - integrations:
-          - integrations/bitbucket-cloud-integration-(207280239).md
-          - integrations/github-integration-(207280219).md
-          - integrations/gitlab-integration-(360012037659).md
-          - integrations/heroku-(207280329).md
-          - integrations/jira-(213280129).md
-          - integrations/project-api-(207994675).md
-          - integrations/slack-(115000488285).md
-          - integrations/webhook-notifications-(207280359).md
-          - integrations/youtrack-integration-(207280289).md
-      - manual-organizations:
-          - manual-organizations/administrative-permissions-(207280189).md
-          - manual-organizations/creating-and-managing-teams-(360009340553).md
-          - manual-organizations/creating-and-renaming-an-organization-(360009209594).md
-          - manual-organizations/managing-team-repositories-(208243169).md
-      - other:
-          - other/special-thanks-(207995005).md
-      - related-tools:
-          - related-tools/api-tokens-(115000255385).md
-          - related-tools/run-local-analysis-and-push-results-(360008254833).md
+  - "User guides":
+    - General:
+      - General:
+        - general/updates-to-codacy’s-privacy-policy-(360004685494).md
+        - general/upgrading-your-codacy-account-(115001853565).md
+        - general/plans-and-billing-(208942945).md
+      - "Your account":
+        - your-account/default-patterns-(208241349).md
+        - your-account/personal-dashboard-how-does-it-work?-(360003863434).md
+        - your-account/changing-your-username-and-avatar-(208953205).md
+        - your-account/notifications-(208942125).md
+      - "Synced organizations":
+        - synced-organizations/what-are-synced-organizations-(360010263720).md
+        - synced-organizations/roles-and-permissions-for-synced-organizations-(360010373559).md
+        - synced-organizations/adding-and-managing-authors-(360010922420).md
+        - synced-organizations/why-can't-i-see-my-organization?-(360010264500).md
+        - synced-organizations/why-aren't-my-github-repositories-showing?-(360012141819).md
+        - synced-organizations/authors-vs-members-(360012030340).md
+        - synced-organizations/how-to-configure-which-users-can-ignore-issues-(360012126419).md
+      - "Manual organizations":
+        - manual-organizations/creating-and-renaming-an-organization-(360009209594).md
+        - manual-organizations/creating-and-managing-teams-(360009340553).md
+        - manual-organizations/managing-team-repositories-(208243169).md
+        - manual-organizations/administrative-permissions-(207280189).md
+      - Integrations:
+        - integrations/github-integration-(207280219).md
+        - integrations/gitlab-integration-(360012037659).md
+        - integrations/bitbucket-cloud-integration-(207280239).md
+        - integrations/slack-(115000488285).md
+        - integrations/jira-(213280129).md
+        - integrations/youtrack-integration-(207280289).md
+        - integrations/heroku-(207280329).md
+        - integrations/project-api-(207994675).md
+        - integrations/webhook-notifications-(207280359).md
+      - "Related tools":
+        - related-tools/api-tokens-(115000255385).md
+        - related-tools/run-local-analysis-and-push-results-(360008254833).md
+    - "Working with your repo":
+      - "Your repositories":
+        - your-repositories/organization-dashboard-how-does-it-work?-(360003863274).md
+        - your-repositories/repository-dashboard-how-does-it-work?-(360003890673).md
+        - your-repositories/what-are-the-different-grades-and-how-are-they-calculated?-(207994765).md
+        - your-repositories/issues-view-(360009180134).md
+        - your-repositories/commits-view-(207994025).md
+        - your-repositories/security-dashboard-(115000723329).md
+        - your-repositories/badges-(212799365).md
+        - your-repositories/quality-settings-(360009164573).md
+        - your-repositories/files-view-(207279849).md
+        - your-repositories/managing-branches-(207280019).md
+        - your-repositories/post-commit-hooks-(214085885).md
+        - your-repositories/share-your-repository-with-a-non-codacy-user-(360006718454).md
+      - "Configure your repo":
+        - configure-your-repo/code-patterns-(207994335).md
+        - configure-your-repo/add-coverage-to-your-repo-(207993835).md
+        - configure-your-repo/coverage-(207279819).md
+        - configure-your-repo/generate-coverage-(207312879).md
+        - configure-your-repo/codacy-configuration-file-(115002130625).md
+        - configure-your-repo/ignore-files-from-codacy-analysis-(360005097654).md
+        - configure-your-repo/submodules-how-to-enable-them-(360005239394).md
+        - configure-your-repo/language-extensions-(207994395).md
+        - configure-your-repo/specifying-language-(360001207234).md
+        - configure-your-repo/specifying-your-python-version-(115002330985).md
+        - configure-your-repo/php_codesniffer-specifying-your-php-version-(360006036934).md
+        - configure-your-repo/code-standards-(115000947569).md
       - "Supported technologies":
         - supported-technologies/engines-(213632009).md
         - supported-technologies/tool-developer-guide-(207994725).md
         - supported-technologies/tool-developer-guide-using-scala-(207280379).md
-      - "Synced organizations":
-        - synced-organizations/adding-and-managing-authors-(360010922420).md
-        - synced-organizations/authors-vs-members-(360012030340).md
-        - synced-organizations/how-to-configure-which-users-can-ignore-issues-(360012126419).md
-        - synced-organizations/roles-and-permissions-for-synced-organizations-(360010373559).md
-        - synced-organizations/what-are-synced-organizations-(360010263720).md
-        - synced-organizations/why-aren't-my-github-repositories-showing?-(360012141819).md
-        - synced-organizations/why-can't-i-see-my-organization?-(360010264500).md
-      - "Your account":
-        - your-account/changing-your-username-and-avatar-(208953205).md
-        - your-account/default-patterns-(208241349).md
-        - your-account/notifications-(208942125).md
-        - your-account/personal-dashboard-how-does-it-work?-(360003863434).md
-      - "Your repositories":
-        - your-repositories/badges-(212799365).md
-        - your-repositories/commits-view-(207994025).md
-        - your-repositories/files-view-(207279849).md
-        - your-repositories/issues-view-(360009180134).md
-        - your-repositories/managing-branches-(207280019).md
-        - your-repositories/organization-dashboard-how-does-it-work?-(360003863274).md
-        - your-repositories/post-commit-hooks-(214085885).md
-        - your-repositories/quality-settings-(360009164573).md
-        - your-repositories/repository-dashboard-how-does-it-work?-(360003890673).md
-        - your-repositories/security-dashboard-(115000723329).md
-        - your-repositories/share-your-repository-with-a-non-codacy-user-(360006718454).md
-        - your-repositories/what-are-the-different-grades-and-how-are-they-calculated?-(207994765).md
+    - other/special-thanks-(207995005).md
   - Self-hosted:
     - self-hosted/index.md
     - self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted-(207280509).md
