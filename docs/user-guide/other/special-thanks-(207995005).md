@@ -1,17 +1,10 @@
 # Special Thanks
 
-We would like to thank everyone who greatly helped us. The names on
-these lists contributed immensely to what Codacy is today.
-
-##  
+We would like to thank everyone who greatly helped us. The names on these lists contributed immensely to what Codacy is today.
 
 ## Open Source Tools
 
-------------------------------------------------------------------------
-
-In addition to in-house built rules, we use open source tools for many
-of our static analysis. We want to express our gratitude to those tools
-and to everyone who contributed.
+In addition to in-house built rules, we use open source tools for many of our static analysis. We want to express our gratitude to those tools and to everyone who contributed.
 
 <table>
 <colgroup>
@@ -110,14 +103,10 @@ and to everyone who contributed.
 </tbody>
 </table>
 
-##  
 
 ## Language Support Contributions
 
-------------------------------------------------------------------------
-
-These are the tools integrated on our website by our own users! Without
-them, we wouldn't have support for those languages.
+These are the tools integrated on our website by our own users! Without them, we wouldn't have support for those languages.
 
 <table>
 <colgroup>
@@ -168,19 +157,12 @@ them, we wouldn't have support for those languages.
 </tbody>
 </table>
 
-Do you love a language we don't support? Do you want your name and that
-language on this list?
-Check
-<a href="/hc/en-us/articles/207994725-Tool-Developer-Guide" class="doc-link">How to add support for a language guide</a>.
-
-##  
+Do you love a language we don't support? Do you want your name and that language on this list?
+Check <a href="/hc/en-us/articles/207994725-Tool-Developer-Guide" class="doc-link">How to add support for a language guide</a>.
 
 ## Collaborators
 
-------------------------------------------------------------------------
-
-For all the people who helped us so much, we want to give a big shout
-out and thanks!
+For all the people who helped us so much, we want to give a big shout out and thanks!
 
 <table>
 <colgroup>
@@ -220,9 +202,3 @@ out and thanks!
 </tr>
 </tbody>
 </table>
-
- 
-
- 
-
- 
