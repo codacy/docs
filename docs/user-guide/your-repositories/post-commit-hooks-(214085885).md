@@ -27,7 +27,7 @@ To turn on post-commit hooks for GitHub:
 
 Here's an example of how to configure your hooks on Github:
 
-![](/hc/en-us/article_attachments/115000853845/YmJy6PV8ge_2.gif)
+![](/images/YmJy6PV8ge_2.gif)
 
 **Permissions to create Post-Commit Hooks**
 

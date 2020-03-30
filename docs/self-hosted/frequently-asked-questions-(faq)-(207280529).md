@@ -81,7 +81,7 @@ If you are using Postgres on Docker, the DB IP may change upon server restart. A
 
 `{{ conf.doplicated.var.internalhostip }}`
 
-![<span class="wysiwyg-font-size-small">Configuration key</span>](/hc/en-us/article_attachments/203971099/unnamed-1.png)
+![<span class="wysiwyg-font-size-small">Configuration key</span>](/images/unnamed-1.png)
 
 If you are not using DNS, you should set Host and Host Docker Ip to:
 
