@@ -3,11 +3,11 @@
 SSH keys are used for repository cloning and exclusively used for these repositories. Depending on the level of access the user configuring the repository on Codacy has on the remote git provider, the key can be added either directly to the repository itself, because the user has Write or Admin access; or to the user, with Read or Commit-only access.
 For that reason, some changes on the remote git provider can cause Codacy to stop communicating with the repository.
 
--   Renaming the repository or moving to a different account:
-    1.  In the Repository Settings view, update the git URL to match the new one
--   Removing access to the user that configured the repository on Codacy, if the key was added to its account:
-    1.  In the Repository Settings view, recreate the integration with the remote git provider;
-    1.  Then click "Generate New Repository key". See below for details.
+- Renaming the repository or moving to a different account:
+    1. In the Repository Settings view, update the git URL to match the new one
+- Removing access to the user that configured the repository on Codacy, if the key was added to its account:
+    1. In the Repository Settings view, recreate the integration with the remote git provider;
+    2. Then click "Generate New Repository key". See below for details.
 
 ![Screen\_Shot\_2018-07-08\_at\_19.58.46.png](/images/Screen_Shot_2018-07-08_at_19.58.46.png)
 
