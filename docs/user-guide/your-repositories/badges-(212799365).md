@@ -9,7 +9,7 @@ You can add a badge directly to your repo by clicking the option "Badge" directl
 
 If you go to your Repository Settings -&gt; General tab you have the option to add the badge with your Codacy grade (same as above) and, if you set up Code Coverage, a badge for your coverage.
 
-![](/hc/en-us/article_attachments/207480985/Screen_Shot_2016-10-11_at_10.33.01.png)
+![](/images/Screen_Shot_2016-10-11_at_10.33.01.png)
 
 
 **Creating badges for different branches?**

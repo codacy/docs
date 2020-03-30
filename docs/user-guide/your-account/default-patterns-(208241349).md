@@ -6,14 +6,14 @@ You can change the default list of patterns, creating a unique coding standard t
 
 To do this, go to [Default Patterns](https://www.codacy.com/account/patterns) in Account Settings: 
 
-![List of default patterns on the account, showing some selected and some unselected.](/hc/en-us/article_attachments/204628285/default-patterns.png)
+![List of default patterns on the account, showing some selected and some unselected.](/images/default-patterns.png)
 
 
 To add or remove a pattern from the list of default patterns, use the checkbox next to the pattern name. You will be provided with feedback:
 
-![Enabling a pattern and placing him as default.](/hc/en-us/article_attachments/204593389/default-pattern-enable-pattern.png)
+![Enabling a pattern and placing him as default.](/images/default-pattern-enable-pattern.png)
 
 
 To navigate through the issues, you can use the available filters. Allowing you to search the issues you feel are more suited for your repository:
 
-![Using the pattern list filter.](/hc/en-us/article_attachments/204628305/default-pattern-enabled.gif)
+![Using the pattern list filter.](/images/default-pattern-enabled.gif)

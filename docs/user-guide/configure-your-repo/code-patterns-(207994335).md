@@ -7,7 +7,7 @@ As a wise man once said, "You can't please everyone", and that is true for code 
 
 Each pattern has a title and a short description. To see a detailed explanation you can click on Show Details in the top right corner (mouse over the pattern and the Show Details option will appear):
 
-![](/hc/en-us/article_attachments/203969219/pattern-explanation.png)
+![](/images/pattern-explanation.png)
 
 The pattern explanation shows more detail about the issues it can detect and how to fix them.
 
@@ -37,7 +37,7 @@ You can filter the patterns by category using the side menu:
 
 To configure the patterns used to analyse your repository simply click on the checkbox on the left of the title:
 
-![](/hc/en-us/article_attachments/203969269/enabled.png)
+![](/images/enabled.png)
 
 When you change the enabled patterns you can reanalyse your repository. To do that, just enter the latest commit from your list on the **Commit** view and click to [reanalyse](/hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-).
 
