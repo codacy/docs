@@ -13,7 +13,7 @@ After installing it for a repository, it has to be enabled by a user with reposi
 
 Once the integration is enabled, you will see additional options when browsing the existing issues on the repository:
 
-![](/hc/en-us/article_attachments/115000333565/Screen_Shot_2016-12-27_at_12.11.35.png)
+![](/images/Screen_Shot_2016-12-27_at_12.11.35.png)
 GitHub integration
 
 
