@@ -33,7 +33,7 @@ cause the update to take longer than usual.</span>
     -   <span style="font-weight: 400;"><span
         sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Fixed issued that prevent Add project view from loading when user has substancial amount of repositories&quot;}"
         sheets-userformat="{&quot;2&quot;:513,&quot;3&quot;:[null,0],&quot;12&quot;:0}">ESLint
-        - eslint-plugin-promise to version
+        \- eslint-plugin-promise to version
         [4.0.1](https://www.npmjs.com/package/eslint-plugin-promise)</span></span>
     -   <span style="font-weight: 400;"><span
         sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Fixed issued that prevent Add project view from loading when user has substancial amount of repositories&quot;}"

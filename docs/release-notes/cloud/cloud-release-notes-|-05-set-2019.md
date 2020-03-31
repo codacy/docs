@@ -18,7 +18,7 @@
 <!-- -->
 
 -   <span style="font-weight: 400;">Updated tools:</span>  
-    -   <span style="font-weight: 400;">SonarC\# has been updated from
+    -   <span style="font-weight: 400;">SonarC# has been updated from
         version 5.10.1.1411 to
         [7.16.0.8981](https://github.com/SonarSource/sonar-dotnet/releases/tag/7.16.0.8981)</span>
     -   <span style="font-weight: 400;">Pylint has been updated to

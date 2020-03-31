@@ -13,14 +13,14 @@ If you are using GitHub or Bitbucket you can let Codacy configure the hook for y
 It is possible that this switch is not visible for you.
 If this is your case, go to the **Integrations** tab and add GitHub/Bitbucket. **Make sure you enable it after adding it.**
 
-![Screen\_Shot\_.png](/images/Screen_Shot_.png)
+![Screen_Shot\_.png](/images/Screen_Shot_.png)
 
 ## Manual Setup of Post-Commit Hooks on GitHub
 
 To turn on post-commit hooks for GitHub:
 
 1.  Copy the Hook URL to your Clipboard.
-2.  Go to Webhooks &amp; Services under your repository settings
+2.  Go to Webhooks & Services under your repository settings
 3.  Paste the Hook URL into the "Payload URL" field
 4.  Select "application/json" in the "Content Type" field
 5.  Click "Add Webhook"

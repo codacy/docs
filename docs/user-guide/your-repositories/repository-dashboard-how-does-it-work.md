@@ -6,11 +6,7 @@ On your **Repository Dashboard** you get an overview of the repository and atten
 
 On the Repository Dashboard you can find two main sections: the repository view of a specific branch (on the left side (in white) and the main branch summary view on the right side (in gray). Overall, you will find 3 main sections on the branch specific section: **1 Quality evolution Chart**, **2 Issues breakdown**, **3 Coverage status**; and on the main branch section: **4 Hotspots**, **5 Logs** and **6 Pull requests status** sections. 
 
-
-
 <img src="/images/Screen_Shot_2018-05-03_at_22.33.18.png" width="370" height="323" alt="Screen_Shot_2018-05-03_at_22.33.18.png" />
-
-
 
 ## How can I access the Repository Dashboard?
 
@@ -23,8 +19,6 @@ On the Repository Dashboard you can select which branch you want to see details 
 At any given moment in time, you can go back to your Organization view by clicking on "Team" on the left navigation sidebar. Or you can navigate to all the different menu options available on the repository view: Commits, Files, Issues, Pull Requests, Security, Code Patterns and Settings. If you click "Dashboard" at this level, you will always go back to the Repository Dashboard view.
 
 <img src="/images/Screen_Shot_2018-05-03_at_22.40.11.png" width="272" height="368" alt="Screen_Shot_2018-05-03_at_22.40.11.png" />
-
-
 
 ## What are the functionalities available?
 
@@ -77,9 +71,6 @@ You have a section of relevant activities that happened on the repository you se
 
 Under this section you will see a display of all open pull requests for this repository and their split between "Not up to standards", "Up to standards" and "Analysis failed". If you click on "See all pull requests" you go to the Pull requests page for that repository. 
 
-
 <img src="/images/Screen_Shot_2018-05-03_at_23.08.42.png" width="224" height="179" alt="Screen_Shot_2018-05-03_at_23.08.42.png" />  
-
-
 
 We would love your feedback, in case you want to let us know what you think about the Repository Dashboard, how it could be improved, etc feel free to reach out! 

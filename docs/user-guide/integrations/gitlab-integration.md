@@ -1,6 +1,6 @@
 # GitLab Integration
 
-After adding a repository, navigate to your repository's **Settings -&gt; Integrations** tab to enable GitLab integration for comments on pull requests, issue creation, and more.
+After adding a repository, navigate to your repository's **Settings -> Integrations** tab to enable GitLab integration for comments on pull requests, issue creation, and more.
 
 ![gitlab-integration.png](/images/gitlab-integration.png)
 

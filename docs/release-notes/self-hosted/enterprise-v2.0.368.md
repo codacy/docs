@@ -1,7 +1,5 @@
 # Enterprise v2.0.368
 
- 
-
 ## <span style="font-weight: 400;">Product Enhancements</span>
 
 -   <span style="font-weight: 400;">Refreshed the UI look for all

@@ -9,9 +9,9 @@ After the trial period, you can either upgrade to a paid plan to enjoy Codacy wi
 
 We offer 3 different plans:
 
-- Open Source
-- Pro
-- [Self-hosted](https://www.codacy.com/self-hosted)
+-   Open Source
+-   Pro
+-   [Self-hosted](https://www.codacy.com/self-hosted)
 
 To learn more about our plans, please see our [Pricing](https://www.codacy.com/pricing) page.
 

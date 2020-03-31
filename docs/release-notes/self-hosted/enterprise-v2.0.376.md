@@ -50,7 +50,7 @@
         2.4.3](https://github.com/PyCQA/pylint/releases/tag/pylint-2.4.3)
     -   Updated [SQLint to
         0.1.9](https://rubygems.org/gems/sqlint/versions/0.1.9)
-    -   Updated [Sonar C\# to
+    -   Updated [Sonar C# to
         8.0](https://github.com/SonarSource/sonar-dotnet/releases/tag/8.0.0.9566)
     -   Updated [Cppcheck to
         1.90](https://sourceforge.net/p/cppcheck/news/2019/12/cppcheck-190/)
@@ -111,5 +111,3 @@
     large number of files
 -   Fixed issue related with "Last 7 days" button displaying results for
     last 31 days on Repository Dashboard
-
- 

@@ -9,8 +9,6 @@
     hooks</span>](/hc/en-us/articles/214085885-Post-Commit-Hooks)<span
     style="font-weight:400"> enabled.</span> 
 
- 
-
 **Bug fixes**
 
 -   <span style="font-weight:400">Fixed a bug where Go tools weren’t

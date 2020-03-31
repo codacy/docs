@@ -24,5 +24,4 @@ For now, we have implemented:
 | Specific user added a specific repository                    | On the Organization and on the Repository Dashboards. |
 | Specific user removed a specific repository                  | On the Organization Dashboard.                        |
 
-
 Please reach out to us with your comments and improvement ideas.

@@ -40,10 +40,10 @@ style="font-weight:400">semaphoreci</span>](https://docs.semaphoreci.com/)
 
 <span style="font-weight:400">Updated tools:</span><span
 style="font-weight:400">  
-  
+
 </span>
 
--   <span style="font-weight:400">SonarC\# has been updated from version
+-   <span style="font-weight:400">SonarC# has been updated from version
     5.10.1.1411 to </span>[<span
     style="font-weight:400">7.16.0.8981</span>](https://github.com/SonarSource/sonar-dotnet/releases/tag/7.16.0.8981)
 -   <span style="font-weight:400">Pylint has been updated to

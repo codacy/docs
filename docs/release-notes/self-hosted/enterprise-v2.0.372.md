@@ -6,7 +6,7 @@ repositories and providers.</span>
 
 ## Product Enhancements
 
--   Added support to configuration file for Sonar C\#
+-   Added support to configuration file for Sonar C#
 -   Updated tools:
     -   Cppcheck has been updated to
         [1.89](https://sourceforge.net/p/cppcheck/news/2019/09/cppcheck-189/)
@@ -16,7 +16,7 @@ repositories and providers.</span>
         [6.18.0](https://pmd.github.io/2019/09/15/PMD-6.18.0/)
     -   Stylelint has been updated to
         [11.0.0](https://github.com/stylelint/stylelint/releases/tag/11.0.0)
-    -   Sonar C\# has been updated to
+    -   Sonar C# has been updated to
         [7.17.0.9346](https://github.com/SonarSource/sonar-dotnet/releases/tag/7.17.0.9346)
     -   Detekt has been updated to
         [1.1.0](https://github.com/arturbosch/detekt/releases/tag/1.1.0)
@@ -43,5 +43,3 @@ repositories and providers.</span>
     large files
 -   Disabled Spotbugs by default since it requires extra setup
 -   Fixed Pylint and Pylint (Python 3) Django project not being analyzed
-
- 

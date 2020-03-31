@@ -20,5 +20,3 @@
     character in the name</span>
 -   <span style="font-weight: 400;">Fixed a bug in the setup of Gitlab
     integration</span>
-
- 

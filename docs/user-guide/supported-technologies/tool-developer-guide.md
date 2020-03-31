@@ -14,26 +14,24 @@ We also have a <a href="/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-
 
 ## Requirements
 
-- Docker definition with the tool you want to integrate
-- Define the documentation for the patterns provided by the tool
-
+-   Docker definition with the tool you want to integrate
+-   Define the documentation for the patterns provided by the tool
 
 ## Assumptions and Behaviour
 
-- To run the tool we provide the configuration file, **/src/.codacy.json**, with the files you should analyse and also the patterns you should check.
+-   To run the tool we provide the configuration file, **/src/.codacy.json**, with the files you should analyse and also the patterns you should check.
 -   The files to analyse are located in **/src**, meaning that when provided in the configuration, the paths are relative to **/src**.
 
 **.codacy.json**
 
-- **files:** Files to be analysed (their path is relative to /src)
-- **tools:** Array of tools \*
-    - **name:** Unique identifier of the tool
-    - **patterns:** Array of patterns that must be checked
-        - **patternId:** Unique identifier of the pattern
-        - **parameters:** Parameters of the pattern
-            - **name:** Unique identifier of the parameter
-            - **value:** Value to be used as parameter value
-
+-   **files:** Files to be analysed (their path is relative to /src)
+-   **tools:** Array of tools \*
+    -   **name:** Unique identifier of the tool
+    -   **patterns:** Array of patterns that must be checked
+        -   **patternId:** Unique identifier of the pattern
+        -   **parameters:** Parameters of the pattern
+            -   **name:** Unique identifier of the parameter
+            -   **value:** Value to be used as parameter value
 
 [.codacy.json](https://docs.codacy.com/docs/tool-developer-guide)
 
@@ -61,34 +59,33 @@ We also have a <a href="/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-
 
 If **/src/.codacy.json** does not exist or any of its contents (files or patterns) is not available, you should invoke the tool for all files from **/src** (files should be searched recursively for all folders in **/src**) and check them with the default patterns.
 
-- When receiving **/src/.codacy.json**, you should only run your tool for the subset of files in **files**, and for the patterns present on **patterns** for your tool **name**.
-
+-   When receiving **/src/.codacy.json**, you should only run your tool for the subset of files in **files**, and for the patterns present on **patterns** for your tool **name**.
 
 ## Setup
 
 **1. Write the docker file that will run the tool.**
 It must have a binary entry point without any parameters. 
 
-**2. Write a *patterns.json* with the configuration of your tool.**
+**2. Write a _patterns.json_ with the configuration of your tool.**
 This file must be located on **/docs/patterns.json**.
 
-- **name:** Unique identifier of the tool (lower-case letters without
-    spaces)
+-   **name:** Unique identifier of the tool (lower-case letters without
+      spaces)
 
-- **patterns:** The patterns that the tool provides
+-   **patterns:** The patterns that the tool provides
 
-    - **patternId:** Unique identifier of the pattern (lower-case
-        letters without spaces)
+    -   **patternId:** Unique identifier of the pattern (lower-case
+          letters without spaces)
 
-    - **level:** Severity level of the issue \*
+    -   **level:** Severity level of the issue \*
 
-    - **category:** Category of the issue \*
+    -   **category:** Category of the issue \*
 
-    - **parameters:** Parameters received by the pattern
+    -   **parameters:** Parameters received by the pattern
 
-        - **name:** Unique identifier of the parameter (lower-case
-            letters without spaces)
-        - **default:** Default value of the parameter
+        -   **name:** Unique identifier of the parameter (lower-case
+              letters without spaces)
+        -   **default:** Default value of the parameter
 
 [patterns.json](https://docs.codacy.com/docs/tool-developer-guide)
 
@@ -115,12 +112,11 @@ This file must be located on **/docs/patterns.json**.
 
 For **level** types we have:
 
-- **Error**, **Warning**, **Info**
+-   **Error**, **Warning**, **Info**
 
 For **category** types we have:
 
-- **ErrorProne**, **CodeStyle**, **UnusedCode**, **Security**, **Compatibility**, **Performance**, **Documentation**
-
+-   **ErrorProne**, **CodeStyle**, **UnusedCode**, **Security**, **Compatibility**, **Performance**, **Documentation**
 
 **3. Write the code to run the tool.**
 
@@ -164,8 +160,8 @@ Your files for this section should be placed in **/docs/description/**.
 
 In order to provide more details you can create:
 
-- A single /docs/description/description.json
-- **\[Optional\]** A /docs/description/&lt;PATTERN-ID&gt;.md for each pattern
+-   A single /docs/description/description.json
+-   **\[Optional]** A /docs/description/&lt;PATTERN-ID>.md for each pattern
 
 In the **description.json** you define the title for the pattern, brief description, time to fix (in minutes), and also a description of the parameters in the following format:
 
@@ -188,11 +184,11 @@ In the **description.json** you define the title for the pattern, brief descript
     ]
 ```
 
-**\[Optional\] **To give a more detailed explanation about the issue, you should define the &lt;PATTERN-ID&gt;.md
+**\[Optional] **To give a more detailed explanation about the issue, you should define the &lt;PATTERN-ID>.md
 
 UnusedModifier.md
 
-```markdown
+````markdown
     Fields in interfaces are automatically public static final, and methods are public abstract.
     Classes or interfaces nested in an interface are automatically public and static (all nested interfaces are automatically static).
 
@@ -269,12 +265,11 @@ UnusedModifier.php
        //#Warn: UnusedModifier
        public static interface Baz {} // static ignored
     }
-```
+````
 
 To run this use our test repository available [here](https://github.com/codacy/codacy-plugins-test).
 
 You just need the docker image built in your local repo and then follow the steps to run it.
-
 
 ## Submit the Docker
 
@@ -294,15 +289,15 @@ docker run -t \\
 
 ### Docker restrictions
 
-- Docker image size should not exceed 500MB
-- Docker should contain a non-root user named docker with UID/GID 2004
-- All the source code of the docker must be public
-- The docker base must officially be supported on DockerHub
-- Your docker must be provided in a repository through a public git host (ex: GitHub, Bitbucket, ...)
+-   Docker image size should not exceed 500MB
+-   Docker should contain a non-root user named docker with UID/GID 2004
+-   All the source code of the docker must be public
+-   The docker base must officially be supported on DockerHub
+-   Your docker must be provided in a repository through a public git host (ex: GitHub, Bitbucket, ...)
 
 ### Docker submission
 
-- To submit the docker you should send an email to support@codacy.com with the link to the git repository with your docker definition.
-- The docker will then be subjected to a review by our team and we will then contact you with more details.
+-   To submit the docker you should send an email to support@codacy.com with the link to the git repository with your docker definition.
+-   The docker will then be subjected to a review by our team and we will then contact you with more details.
 
 If you have any question or suggestion regarding this guide please contact us.

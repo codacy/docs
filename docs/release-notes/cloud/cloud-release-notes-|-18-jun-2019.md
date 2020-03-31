@@ -10,5 +10,3 @@
 
 -   <span style="font-weight: 400;">Fixed bug where Duplication would
     show incorrect values if the branch was changed</span>
-
- 

@@ -16,7 +16,6 @@ If you already have a Postgres installation, jump directly to step 1.3.
 Codacy officially supports Postgres version 9.4. Codacy requires 'UTF-8' encoding. Make sure that your database character set is correctly configured. For more information see
 <https://www.postgresql.org/docs/9.4/static/multibyte.html>
 
-
 ## 1 - Postgres
 
 Here are some quick steps to have a running Postgres installation on Ubuntu 16.04.
@@ -31,11 +30,9 @@ You can change your locale to a UTF-8 variant by running:
 
 `update-locale LANG=en_US.UTF-8`
 
-
 ## 1.2 - Install postgres
 
 First, ensure that you install **postgres 9.4** following the instructions described [here](https://www.postgresql.org/download/linux/ubuntu/).
-
 
 ## 1.3 - Run postgres
 
@@ -52,7 +49,6 @@ If you see `Active: inactive (dead)`, start the PostgreSQL service using the fo
 PostgreSQL also needs to be enabled to start on reboot. Do that with this command:
 
 `sudo systemctl enable postgresql`
-
 
 ## 1.4 - Allow external connections
 
@@ -88,7 +84,7 @@ If you want to whitelist your IP **only,** you can use your network/mask inste
 !!! note
     This is not recommended, but if you are running postgres on the same machine where Codacy is and want to whitelist just Codacy's IP address, you will have to whitelist a range of IP addresses. This is because Codacy runs inside Docker and won't have always the same IP address inside the Docker network. To do this, you should first obtain the address of the Docker network interface with an `ifconfig` and then whitelist the range ip addresses according to it (for example, `172.17.0.0/16)`.
 
-![Screen\_Shot\_2018-04-24\_at\_15.55.58.png](/images/Screen_Shot_2018-04-24_at_15.55.58.png) 
+![Screen_Shot_2018-04-24_at_15.55.58.png](/images/Screen_Shot_2018-04-24_at_15.55.58.png) 
 
 Finally, restart postgres:
 
@@ -112,12 +108,11 @@ You can change the username/password to suit your security needs.
 
 Make sure that you can connect to the Postgres database using the newly created user. For additional settings, follow the steps in the Postgres documentation.
 
-
 ## Additional topics
 
 ### Connecting psql Client Using the Google Cloud SQL Proxy Docker Image
 
 If you are connecting to your postgres instance through a [docker container proxy](https://cloud.google.com/sql/docs/postgres/connect-docker), we recommend that you configure the following:
 
-- Make sure your postgres docker container is configured with --restart always
-- In the Codacy control panel, the "Database hostname" option should be set with the IP address or DNS of the Codacy instance itself.
+-   Make sure your postgres docker container is configured with --restart always
+-   In the Codacy control panel, the "Database hostname" option should be set with the IP address or DNS of the Codacy instance itself.

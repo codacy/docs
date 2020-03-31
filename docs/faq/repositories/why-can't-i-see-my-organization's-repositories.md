@@ -8,10 +8,10 @@ In case you have a duplicated repository on your account, please delete it and u
 
 In the unlikely event of not seeing repositories for one/multiple organizations, please go to your GitHub settings and revoke Codacy OAuth application.
 
-![Screen\_Shot\_2018-02-12\_at\_18.51.06.png](/images/Screen_Shot_2018-02-12_at_18.51.06.png)
+![Screen_Shot_2018-02-12_at_18.51.06.png](/images/Screen_Shot_2018-02-12_at_18.51.06.png)
 
 After revoking Codacy from the GitHub Authorized OAuth Apps, go back to Codacy and add a repository to see the "Authorize Codacy" menu. (Note you may have to click "GitHub" on the sidebar to request for Codacy's permission on GitHub's side)
 
-![Screen\_Shot\_2018-02-12\_at\_18.54.23.png](/images/Screen_Shot_2018-02-12_at_18.54.23.png)
+![Screen_Shot_2018-02-12_at_18.54.23.png](/images/Screen_Shot_2018-02-12_at_18.54.23.png)
 
 Click "Grant" on each organization, to see their repositories on Codacy.

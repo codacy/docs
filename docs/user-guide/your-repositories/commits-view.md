@@ -14,14 +14,11 @@ When viewing the commits list, some commits may still not have been analysed, ei
 
 If any commit created or fixed any issue on the repository, that information will be displayed on the right-hand side of the list, allowing for a quick overview of the repository quality evolution.
 
-
 ## 2. Commit detail
 
 The commit detail will show you an overview of what changed in that particular commit, showing all the differences that were introduced.
 
 ![](/images/blobid2.png)
-
-
 
 A detailed issue delta information is always available, showing exactly which issues were fixed or created in each commit.
 
@@ -31,8 +28,6 @@ By expanding an issue, you can find information on why it's an issue, how to sol
 You will also find a few additional options, including "Ignore issue", "Remove pattern", "Ignore file", and also integrations you may have enabled.
 
 ![](/images/Screen_Shot_2016-10-11_at_10.03.18.png)
-
-
 
 The changed files can also be reviewed using a git diff visualizer, helping achieve a quick and easy code review.
 

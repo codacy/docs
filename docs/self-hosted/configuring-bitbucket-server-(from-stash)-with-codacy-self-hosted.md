@@ -2,44 +2,44 @@
 
 ![](/images/bitbucket_server_1.gif)
 
-![bitbucket\_server\_2.gif](/images/bitbucket_server_2.gif)
+![bitbucket_server_2.gif](/images/bitbucket_server_2.gif)
 
 ![](/images/Screen_Shot_2017-06-01_at_16.05.41.png)
 
 ## Endpoint
 
-### Url ***\[required\]***
+### Url **_\[required]_**
 
 The URL where the Stash application is deployed.
 
 Should contain:
 
-- Protocol (ex: http, https)
-- Port (if other than 80) (ex: 9000)
+-   Protocol (ex: http, https)
+-   Port (if other than 80) (ex: 9000)
 
 ##### Correct:
 
-- `http://my.stash.example.com:7990`
+-   `http://my.stash.example.com:7990`
 
 ##### Incorrect:
 
-- `my.stash.example.com`
-- `my.stash.example.com/`
-- `my.stash.example.com:7990`
-- `my.stash.example.com:7990/`
+-   `my.stash.example.com`
+-   `my.stash.example.com/`
+-   `my.stash.example.com:7990`
+-   `my.stash.example.com:7990/`
 
-### Project Keys ***\[required\]***
+### Project Keys **_\[required]_**
 
 The project in Stash that you would like to retrieve repositories from.
 
-![Screen\_Shot\_2017-06-01\_at\_16.08.50.png](/images/Screen_Shot_2017-06-01_at_16.08.50.png)
+![Screen_Shot_2017-06-01_at_16.08.50.png](/images/Screen_Shot_2017-06-01_at_16.08.50.png)
 
 ## Stash Application Link
 
 To set up Stash you need to create an application link on your Stash installation.
 To start you can click on `here` and go to the application links list.
 
-### Application Link Creation ***\[required\]***
+### Application Link Creation **_\[required]_**
 
 #### Create the link
 
@@ -85,7 +85,6 @@ The rest of the fields can be left blank.
 
 After the application link is created, you will be able to add Bitbucket Server as an integration in the repository settings.
 
-
 !!! note
     Please make sure that Bitbucket has SSH enabled so we can access your repositories' source code.
 
@@ -93,7 +92,7 @@ After the application link is created, you will be able to add Bitbucket Server 
 
 To enable comments on your pull requests you have to add the Stash integration to each of your repositories.
 
-After you add a repository on Codacy go to Settings -&gt; Integrations and add Stash. Click on the checkbox to enable the pull request comments.
+After you add a repository on Codacy go to Settings -> Integrations and add Stash. Click on the checkbox to enable the pull request comments.
 
 Below is an example of a Codacy comment:
 

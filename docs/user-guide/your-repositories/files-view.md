@@ -11,8 +11,6 @@ When you click in a filename, it opens the File detail.
 
 ![](/images/Screen_Shot_2016-10-13_at_12.02.14.png)
 
-
-
 The file detail starts with a header where you can see a lot of statistical information on the file:
 
 ![](/images/Screen_Shot_2016-10-13_at_17.58.47.png)

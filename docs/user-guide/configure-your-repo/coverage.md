@@ -20,15 +20,13 @@ You should keep your API token well protected, as it grants owner permissions to
 
 ### Setting token as environment variable
 
-export CODACY\_PROJECT\_TOKEN=%Project\_Token%
+export CODACY_PROJECT_TOKEN=%Project_Token%
 
-(replacing %Project\_Token% with your token)
-
+(replacing %Project_Token% with your token)
 
 ## Setup
 
 Check [here](https://github.com/codacy/codacy-coverage-reporter#setup) for detailed instructions on how to set up the coverage reporter plugin.
-
 
 ## Submitting coverage for unsupported languages or tools
 
@@ -54,9 +52,9 @@ If your language or build tool isn't supported yet, you can send the coverage da
 !!! note
 In case the token was retrieved from the Repository integrations tab, the header should be `project_token`. If it is an account token, the header should be `api_token` and you must call [this API method](https://api.codacy.com/swagger#savecoveragewithprojectname) instead.
 
-Also, note all *coverable* lines should be present on the "coverage" variable of the JSON payload. In the example, you can see that "5": 0, meaning that line 5 is not covered.
+Also, note all _coverable_ lines should be present on the "coverage" variable of the JSON payload. In the example, you can see that "5": 0, meaning that line 5 is not covered.
 
 ## See also
 
-- [Add Coverage to your repo](/hc/en-us/articles/207993835-Add-coverage-to-your-repo)
-- [Generate Coverage](/hc/en-us/articles/207312879-Generate-Coverage)
+-   [Add Coverage to your repo](/hc/en-us/articles/207993835-Add-coverage-to-your-repo)
+-   [Generate Coverage](/hc/en-us/articles/207312879-Generate-Coverage)
