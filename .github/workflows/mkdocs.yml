@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref != 'refs/heads/master'
     steps:
-      - name: Checkout master
+      - name: Checkout branch
         uses: actions/checkout@v2
         with:
           submodules: true
@@ -41,3 +41,4 @@ jobs:
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CUSTOM_DOMAIN: docs.dev.codacy.org
