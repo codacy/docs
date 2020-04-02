@@ -25,8 +25,8 @@ strict: true
 google_analytics: ["UA-45639808-4", "auto"]
 
 # Repository
-repo_name: "codacy/docs"
-repo_url: "https://github.com/codacy/docs"
+# repo_name: "codacy/docs"
+# repo_url: "https://github.com/codacy/docs"
 
 # Copyright
 copyright: '© 2020 <a href="https://www.codacy.com">Codacy</a> - Automated code review'
