@@ -2,7 +2,6 @@
 
 As a wise man once said, "You can't please everyone", and that is true for code patterns. But don't you worry! You can choose from a range of patterns to fit your needs.
 
-
 ## 1. Pattern details and filters
 
 Each pattern has a title and a short description. To see a detailed explanation you can click on Show Details in the top right corner (mouse over the pattern and the Show Details option will appear):
@@ -49,7 +48,7 @@ When you change the enabled patterns you can reanalyse your repository. To do th
 
 ###  Account Patterns
 
-Here you can change the default selection of patterns by enabling / disabling  them for all future repositories added by you. Just go to **Account Settings** -&gt; **Default Patterns:**
+Here you can change the default selection of patterns by enabling / disabling  them for all future repositories added by you. Just go to **Account Settings** -> **Default Patterns:**
 
 ![Account Patterns](/images/Screen_Shot_2018-01-12_at_11.21.22.png)
 
@@ -59,7 +58,6 @@ Here you can specify the patterns you want to use for each repository. When you 
 
 ![Repository Patterns](/images/Screen_Shot_2019-06-18_at_17.57.58.png)
 
-
 ## 4. I have my own tool configuration file
 
 If you have configuration files for your static analysis tool of choice, just add it to the root of your repository and Codacy will pick it up automatically.
@@ -68,7 +66,7 @@ If you have configuration files for your static analysis tool of choice, just ad
 
 Codacy currently supports configuration files for several tools. To have results accordingly to your configuration file, you need to go to the Code Patterns view and select "Configuration file" for the respective tool and select the option as shown in the example below.
 
-![Screen\_Shot\_2017-10-09\_at\_18.54.12.png](/images/Screen_Shot_2017-10-09_at_18.54.12.png)
+![Screen_Shot_2017-10-09_at_18.54.12.png](/images/Screen_Shot_2017-10-09_at_18.54.12.png)
 
 The known file names for each tool are the following:
 
@@ -82,16 +80,16 @@ The known file names for each tool are the following:
 | credo                                                              | Elixir                                                     | .credo.exs                                                                                                |                                                                                                                            |
 | CSSLint                                                            | CSS                                                        | .csslintrc                                                                                                |                                                                                                                            |
 | detekt                                                             | Kotlin                                                     | default-detekt-config.yml, detekt.yml                                                                     | Supports config file in other dirs than root and can search up to 5 dirs into the repository.                              |
-| ESLint                                                             | JavaScript, Typescript, JSON                               | .eslintrc.js, .eslintrc.yaml,.eslintrc.yml, .eslintrc.json,                                               |
-| .eslintrc                                                          | Plugins in the UI                                          |
-| Other Plugins                                                      |
+| ESLint                                                             | JavaScript, Typescript, JSON                               | .eslintrc.js, .eslintrc.yaml,.eslintrc.yml, .eslintrc.json,                                               |                                                                                                                            |
+| .eslintrc                                                          | Plugins in the UI                                          |                                                                                                           |                                                                                                                            |
+| Other Plugins                                                      |                                                            |                                                                                                           |                                                                                                                            |
 | Hadolint                                                           | Docker                                                     | .hadolint.yaml                                                                                            |                                                                                                                            |
 | JSHint                                                             | JavaScript                                                 | .jshintrc                                                                                                 |                                                                                                                            |
 | PHP CodeSniffer                                                    | PHP                                                        | phpcs.xml, phpcs.xml.dist                                                                                 |                                                                                                                            |
 | PHPMD                                                              | PHP                                                        | codesize.xml                                                                                              |                                                                                                                            |
 | PMD                                                                | Apex, Java, Javascript, JSP, XML, Velocity and Visualforce | ruleset.xml, apex-ruleset.xml                                                                             | Supports config file in other dirs than root and can search up to 5 dirs into the repository.                              |
-| Prospector                                                         | Python                                                     | .landscape.yml, .landscape.yaml, landscape.yml, landscape.yaml,                                           |
-| .prospector.yml, .prospector.yaml, prospector.yml, prospector.yaml |                                                            |
+| Prospector                                                         | Python                                                     | .landscape.yml, .landscape.yaml, landscape.yml, landscape.yaml,                                           |                                                                                                                            |
+| .prospector.yml, .prospector.yaml, prospector.yml, prospector.yaml |                                                            |                                                                                                           |                                                                                                                            |
 | Pylint                                                             | Python                                                     | pylintrc, .pylintrc                                                                                       | Plugins                                                                                                                    |
 | RemarkLint                                                         | Markdown                                                   | .remarkrc, .remarkrc.json, .remarkrc.yaml, .remarkrc.yml, .remarkrc.js                                    |                                                                                                                            |
 | Rubocop                                                            | Ruby                                                       | .rubocop.yml                                                                                              |                                                                                                                            |
@@ -104,7 +102,6 @@ The known file names for each tool are the following:
 | Tailor                                                             | Swift                                                      | .tailor.yml                                                                                               |                                                                                                                            |
 | TSLint                                                             | TypeScript                                                 | tslint.json                                                                                               |                                                                                                                            |
 | tsqllint                                                           | SQL                                                        | .tsqllintrc                                                                                               |                                                                                                                            |
-
 
 ## 5. Configuring the repository root directory for analysis
 

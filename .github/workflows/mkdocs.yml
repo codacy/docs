@@ -4,8 +4,9 @@ on: push
 
 jobs:
   build:
-    name: mkdocs
+    name: build
     runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/master'
     steps:
       - name: Checkout master
         uses: actions/checkout@v2
@@ -26,8 +27,17 @@ jobs:
         run: |
           mkdocs build
 
+  deploy:
+    name: deploy
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/master'
+    steps:
+      - name: Checkout master
+        uses: actions/checkout@v2
+        with:
+          submodules: true
+
       - name: Deploy docs
         uses: mhausenblas/mkdocs-deploy-gh-pages@master
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        if: github.ref == 'refs/heads/master'

@@ -2,17 +2,17 @@
 
 ## Setup the Codacy Analysis CLI
 
-Follow the [installation guide](https://github.com/codacy/codacy-analysis-cli#install) to get the *codacy-analysis-cli* executable running on your build server.
+Follow the [installation guide](https://github.com/codacy/codacy-analysis-cli#install) to get the _codacy-analysis-cli_ executable running on your build server.
 
 ## Running an analysis with the CLI
 
-At the moment, the CLI still requires to retrieve the configuration from Codacy to perform an analysis. In order to access the repository, you will have to obtain a *Project Token* as explained in the [CLI documentation](https://github.com/codacy/codacy-analysis-cli#project-token). Then, you can invoke the CLI to get a report with all the issues:
+At the moment, the CLI still requires to retrieve the configuration from Codacy to perform an analysis. In order to access the repository, you will have to obtain a _Project Token_ as explained in the [CLI documentation](https://github.com/codacy/codacy-analysis-cli#project-token). Then, you can invoke the CLI to get a report with all the issues:
 
 ```sh
 codacy-analysis-cli analyse --directory <SOURCE-CODE-PATH> --project-token <PROJECT-TOKEN> --allow-network --codacy-api-base-url <API-BASE-URL> --verbose --upload
 ```
 
-If you don't specify the tool, the analysis will run as Codacy does in the backend. For specific results, you can pass it with *--tool*.
+If you don't specify the tool, the analysis will run as Codacy does in the backend. For specific results, you can pass it with _--tool_.
 
 You can see the available tools with: `codacy-analysis-cli analyse --help`
 
@@ -33,10 +33,9 @@ Since end of June 2019, starting with SpotBugs, Codacy Self-hosted version will 
 
 The pushing results feature need several changes:
 
-1. Enable **Run analysis through build server** in the repository settings in tab *General* section *Repository analysis*.
-2. Generate a Project API token in the project settings in tab *Integrations*.
-3. Add `--upload` flag, `--project-token "PROJECT-TOKEN"` and `--codacy-api-base-url "API-BASE-URL"` to the codacy-analysis-cli command.
-
+1.  Enable **Run analysis through build server** in the repository settings in tab _General_ section _Repository analysis_.
+2.  Generate a Project API token in the project settings in tab _Integrations_.
+3.  Add `--upload` flag, `--project-token "PROJECT-TOKEN"` and `--codacy-api-base-url "API-BASE-URL"` to the codacy-analysis-cli command.
 
 ## Notes
 
@@ -45,7 +44,5 @@ The pushing results feature need several changes:
 If you have ignored issues on Codacy be aware that the CLI will not respect those ignores when printing the results locally.
 
 When uploading results for Codacy Self-hosted the ignores will be reflected on Codacy after the analysis is complete.
-
-
 
 If you run into issues or have any questions, please don't hesitate to reach out.

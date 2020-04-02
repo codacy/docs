@@ -1,6 +1,6 @@
 # How do I transfer/delete a repository from my account?
 
-If you wish to stop analysis and unregister your repository from Codacy, please go to your repository **Settings** -&gt; **General**.
+If you wish to stop analysis and unregister your repository from Codacy, please go to your repository **Settings** -> **General**.
 
 This will not remove your repository from your Git provider. It will only remove data concerning your repository in Codacy.
 
@@ -11,7 +11,3 @@ On this page, you can also transfer your repository to another of your organizat
 </figure>
 
 **Note:** To remove a repository you need to have [Admin rights](/hc/en-us/articles/207280189-Administrative-Permissions) for that repository. 
-
- 
-
- 

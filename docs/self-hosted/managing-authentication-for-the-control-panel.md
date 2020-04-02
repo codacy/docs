@@ -42,12 +42,10 @@ export DOPLICATED_PASSWORD=mypassword
 bash -c "$(curl -fsSL https://getenterprise.codacy.com/get)" -s update $HOME "legacy"
 ```
 
-
 ## Will I lose any data if I install the Control Panel again?
 
 No, you won't lose any data if you reinstall the Control Panel, **except for the username and password**.
 
-
 ## Can I set up a username and password for Monitoring (Crow)?
 
-Yes, after you set up the user for the control panel, Crow will have the same credentials. Just go to: Configure -&gt; Save -&gt; And wait 10-15 seconds (for all the services to stop) -&gt; Reload
+Yes, after you set up the user for the control panel, Crow will have the same credentials. Just go to: Configure -> Save -> And wait 10-15 seconds (for all the services to stop) -> Reload

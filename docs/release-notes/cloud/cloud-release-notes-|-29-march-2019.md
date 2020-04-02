@@ -48,14 +48,12 @@ should be considered for analysis. This means that:</span>
     projects using git URL. Projects that were added before the 12th Feb
     2019 will continue to be analyzed as usual.</span>
 
- 
-
 **Bug fixes**
 
 -   <span style="font-weight: 400;">Fixed a bug where it wasn’t possible
     to unignore a file </span>
 -   <span style="font-weight: 400;">Fixed a bug where it wasn’t possible
-    to add Bitbucket integration in the project Settings -&gt;
+    to add Bitbucket integration in the project Settings ->
     Integrations page</span>
 -   <span style="font-weight: 400;">Fixed a bug where pull requests
     weren’t analysing when a branch was renamed </span>
@@ -66,7 +64,7 @@ should be considered for analysis. This means that:</span>
 -   <span style="font-weight: 400;">Fixed a bug that prevented users to
     save changes in project Settings when using Firefox 61</span>
 -   <span style="font-weight: 400;">Fixed a bug with PHP Code Sniffer
-    “PHPCS\_Internal” pattern that was generating false positives</span>
+    “PHPCS_Internal” pattern that was generating false positives</span>
 -   <span style="font-weight: 400;">Fixed a bug with PHP Code Sniffer
     deprecated parameters “customSanitizingFunctions property” and
     “WordPress.CSRF.NonceVerification" that were generating false

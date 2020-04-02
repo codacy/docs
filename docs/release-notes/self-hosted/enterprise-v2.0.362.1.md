@@ -4,4 +4,4 @@ These updates won’t be available if you are still using Codacy Legacy version.
 
 ## Bug fixes
 
-- Fixed a bug that was causing Crow (Monitoring) not to open
+-   Fixed a bug that was causing Crow (Monitoring) not to open

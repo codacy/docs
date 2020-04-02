@@ -32,7 +32,7 @@
     -   Updated PyLint to 1.9.5
     -   Updated PyLint (Python 3) to 2.4.3
     -   Updated PHP Code Sniffer to 3.5.3
-    -   Updated Sonar C\# to 8.4
+    -   Updated Sonar C# to 8.4
     -   Updated Detekt to 1.5.0
     -   Updated Ameba to 0.11.0
 -   **Disabled tools:**
@@ -64,5 +64,3 @@ Other corrections:
     the API.
 -   Fixed an issue that prevented users to add Bitbucket integration to
     their repositories.
-
- 

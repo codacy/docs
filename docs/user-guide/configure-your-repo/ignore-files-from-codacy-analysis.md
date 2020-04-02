@@ -4,10 +4,10 @@ In some situations, you may want to exclude files from Codacy's analyses and th
 
 ## Repository Settings
 
-You can exclude files from your repository analysis on your Repository Settings -&gt; Ignored files and select the files you want to ignore.
+You can exclude files from your repository analysis on your Repository Settings -> Ignored files and select the files you want to ignore.
 This view only shows the files on your main branch.
 
-![Screen\_Shot\_2018-05-29\_at\_13.51.51.png](/images/Screen_Shot_2018-05-29_at_13.51.51.png)
+![Screen_Shot_2018-05-29_at_13.51.51.png](/images/Screen_Shot_2018-05-29_at_13.51.51.png)
 
 ## Codacy configuration file
 
@@ -48,7 +48,6 @@ exclude_paths:
 
 If you wish to, you should use the following syntax:
 
-
 '\*\*.extension' ignores all files with the same extension across all your repository
 
 'test/\*' ignores all files in the root of test
@@ -58,19 +57,18 @@ If you wish to, you should use the following syntax:
 
 Please note that if the Codacy configuration file exists in the repo and if you have 'exclude paths' the settings defined in the UI (shown above), will not apply.
 
-
 ## Other considerations about ignored files
 
 In some cases, you can also ignore some files using your own configuration files although this depends on this option being supported by the tool itself.
 
 Also there are few files that Codacy ignores by default, matching the following regular exceptions:
 
-.\*\[\\.-\]min\\.css
-.\*\[\\.-\]min\\.js
-.\*node\_modules/.\*
-.\*bower\_components
+.\*\[\\.-]min\\.css
+.\*\[\\.-]min\\.js
+.\*node_modules/.\*
+.\*bower_components
 .\*vendor/.\*
-.\*third\[\_-\]?\[Pp\]arty
+.\*third\[\_-]?\[Pp]arty
 .\*docs?/.\*
 .\*samples
 .\*releases?/.\*

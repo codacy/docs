@@ -1,9 +1,8 @@
 # Language Extensions
 
-If your repository has source files with unrecognized extensions, you so, go to your repository's **Settings** &gt; **File Extensions**.
+If your repository has source files with unrecognized extensions, you so, go to your repository's **Settings** > **File Extensions**.
 
-![<span class="wysiwyg-font-size-small wysiwyg-color-black60">Repository Settings -&gt; File Extensions</span>](/images/Screen_Shot_2016-10-14_at_12.00.47.png)
-
+![&lt;span class="wysiwyg-font-size-small wysiwyg-color-black60">Repository Settings -> File Extensions&lt;/span>](/images/Screen_Shot_2016-10-14_at_12.00.47.png)
 
 To change it, add the extensions you want to be recognized for each language. 
 

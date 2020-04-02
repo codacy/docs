@@ -6,13 +6,11 @@ Codacy supports analysis on multiple branches on your git repositories
 
 By default, Codacy will automatically trigger analysis on the **master** branch only.
 
-You can redefine your Main branch by going to repository **Settings** -&gt; **Branches** tab.
-
+You can redefine your Main branch by going to repository **Settings** -> **Branches** tab.
 
 ## Pull Request
 
 Upon **pull requests**, Codacy will automatically trigger analysis on the branch the pull request belongs to and analyze the pull request.
-
 
 ## Enable other branches
 

@@ -6,34 +6,31 @@ Codacy only supports Gitlab version 9.5 or later. 
 
 ## Location
 
-### ***Endpoint \[required\]***
+### **_Endpoint \[required]_**
 
 The URL where the GitLab application is deployed.
 
 This should contain:
 
-- Protocol (ex: http, https)
-- Port (if other than 80) (ex: 9000)
+-   Protocol (ex: http, https)
+-   Port (if other than 80) (ex: 9000)
 
 ##### Correct:
 
-- `http://my.gitlab.url:7990`
+-   `http://my.gitlab.url:7990`
 
 ##### Incorrect:
 
-- `my.gitlab.example.com`
-- `my.gitlab.example.com/`
-- `my.gitlab.example.com:7990`
-- `my.gitlab.example.com:7990/`
-
+-   `my.gitlab.example.com`
+-   `my.gitlab.example.com/`
+-   `my.gitlab.example.com:7990`
+-   `my.gitlab.example.com:7990/`
 
 ## GitLab Application
 
 Follow the link to create an application on Gitlab Enterprise.
 
-
 ![](/images/Screen_Shot_2017-05-17_at_13.16.37.png)
-
 
 Then paste the application ID and secret in Codacy Self-hosted.
 
@@ -45,5 +42,5 @@ https://codacy.example.com/add/addProvider/GitLabEnterprise
 https://codacy.example.com/add/addService/GitLabEnterprise
 https://codacy.example.com/add/addPermissions/GitLabEnterprise
 ```
- 
+
 ![](/images/screen_shot_2017-09-06_at_15.34.15_720.png)

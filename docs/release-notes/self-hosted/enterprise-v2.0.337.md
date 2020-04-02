@@ -24,5 +24,3 @@ panel</span>
     </span>
 -   <span style="font-weight:400">Fixed bug with Remove user
     functionality</span>
-
- 

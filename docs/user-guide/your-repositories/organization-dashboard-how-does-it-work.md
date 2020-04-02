@@ -18,7 +18,6 @@ You can also select which team(s) you would like to view in the Organization Das
 
 You cannot select a team that does not have any repositories to view in the Organization Dashboard.  
 
-
 ## What functionalities are available?
 
 ### 1. Overall Quality Chart 
@@ -27,17 +26,17 @@ The Overall Quality Chart displays your repositories and compares them against t
 
 <img src="/images/Screen_Shot_2018-05-03_at_21.04.18.png" width="623" height="354" alt="Screen_Shot_2018-05-03_at_21.04.18.png" />
 
-- In the upper left is the average grade (A, in this example).
-- The graph displays how different repositories match up to your goals and the average grade.
-- You can see how each repository is performing by hovering over the bar. If something is not up to standards, you will see it flagged.
-- You can also go directly to each repository by clicking on the name of the repository at the bottom of each column.
+-   In the upper left is the average grade (A, in this example).
+-   The graph displays how different repositories match up to your goals and the average grade.
+-   You can see how each repository is performing by hovering over the bar. If something is not up to standards, you will see it flagged.
+-   You can also go directly to each repository by clicking on the name of the repository at the bottom of each column.
 
 <img src="/images/Screen_Shot_2018-05-03_at_21.07.51.png" width="274" height="263" alt="Screen_Shot_2018-05-03_at_21.07.51.png" />
 
 **Other Criteria** 
 
-- For each specific criteria (Issues, Complex Files, Duplication, and Coverage), you can click on its tab to compare repositories.
-- This comparison will display your repositories' current statuses against the average and against your goal for this criteria.
+-   For each specific criteria (Issues, Complex Files, Duplication, and Coverage), you can click on its tab to compare repositories.
+-   This comparison will display your repositories' current statuses against the average and against your goal for this criteria.
 
 <img src="/images/Screen_Shot_2018-05-03_at_21.09.44.png" width="412" height="234" alt="Screen_Shot_2018-05-03_at_21.09.44.png" />
 
@@ -63,12 +62,9 @@ If you don't have enough enough repositories for comparison, don't worry --  we
 
 Hotspots are items that require your attention. You can click through on each to view the pull requests or dismiss them. This will dismiss the item for everybody in your team. Read more about hotspots [here](/hc/en-us/articles/360003863594-Hotspots-How-they-work-).
 
- 
-
 ### 3. Open pull requests
 
 Under this section you can see two tabs: **Most problematic** pull requests (PR) and **Last updated** pull requests. These represent a short list of the open pull requests on the repositories of the Team you selected.
-
 
 **Most problematic**
 
@@ -88,7 +84,6 @@ This tab displays a short list of all open pull requests sorted by the date of u
 
 Logs display a list of all relevant activity in your organization. You can read more about them [here](/hc/en-us/articles/360003890693-Logs-How-do-they-work-).
 
-
 ### 5. Last updated repositories
 
 This section displays a maximum of 6 repositories by date of last update. Each repository card will display the date of the last update, the current grade, and the status for each criteria. 
@@ -96,8 +91,5 @@ This section displays a maximum of 6 repositories by date of last update. Each r
 You can also See all repositories or Add a repository here. 
 
 <img src="/images/Screen_Shot_2018-05-03_at_22.10.29.png" width="597" height="176" alt="Screen_Shot_2018-05-03_at_22.10.29.png" />
-
-
-
 
 We would love your feedback on what you think about the Organization Dashboard and how you think it could be improved. Please feel free to reach out!

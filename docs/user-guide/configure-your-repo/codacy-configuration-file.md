@@ -48,9 +48,7 @@ If you wish to, you should use the following syntax:
 'test/\*\*/\*' ignores all files inside sub-folder of test
 '\*\*/\*.resource' Ignores all .resource in all folders and sub-folders
 
-
-To configure your 'exclude\_paths', you can read more about the [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29).
-
+To configure your 'exclude_paths', you can read more about the [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29).
 
 Please note that if the file exists in the repo and if you have 'exclude paths', the UI ignores, will not apply.
 

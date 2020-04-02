@@ -6,7 +6,6 @@ To change your name or username, click on your avatar, and select **Your Account
 
 ![](/images/account-settings-change-name.gif)
 
-
 ## Changing your avatar
 
 To change your avatar, create an account at <http://en.gravatar.com/> with the same email you logged into Codacy with and change it there.

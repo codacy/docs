@@ -8,11 +8,9 @@ To do this, go to [Default Patterns](https://www.codacy.com/account/patterns) in
 
 ![List of default patterns on the account, showing some selected and some unselected.](/images/default-patterns.png)
 
-
 To add or remove a pattern from the list of default patterns, use the checkbox next to the pattern name. You will be provided with feedback:
 
 ![Enabling a pattern and placing him as default.](/images/default-pattern-enable-pattern.png)
-
 
 To navigate through the issues, you can use the available filters. Allowing you to search the issues you feel are more suited for your repository:
 

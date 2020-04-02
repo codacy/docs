@@ -8,13 +8,13 @@ Each of the Git providers have different options regarding what can be done with
 
 GitHub allows for a specific check to be mandatory for a PR to be merged. This allows our users to make sure that a PR is only merged when it gets an OK from Codacy.
 
-Official Documentation: [https://help.github.com/en/articles/enabling-required-status-checks](https://help.github.com/en/articles/enabling-required-status-checks)
+Official Documentation: <https://help.github.com/en/articles/enabling-required-status-checks>
 
 ## Bitbucket
 
 Bitbucket does not allow for a specific check to be required before merge, but instead, for a minimum number of checks to be performed successfully before the PR can be merged. This number can be zero, all the checks being run in the PR or a number in between. Some of these options are only available for certain pricing plans in Bitbucket.
 
-Official Documentation: [https://confluence.atlassian.com/bitbucket/suggest-or-require-checks-before-a-merge-856691474.html](https://confluence.atlassian.com/bitbucket/suggest-or-require-checks-before-a-merge-856691474.html)
+Official Documentation: <https://confluence.atlassian.com/bitbucket/suggest-or-require-checks-before-a-merge-856691474.html>
 
 ## GitLab
 

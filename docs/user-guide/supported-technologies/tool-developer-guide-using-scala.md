@@ -12,9 +12,8 @@ This tutorial covers only the template code to write the engine; if you didn't c
 
 We use Scala to integrate our tools at Codacy. In this template, you only need to do a couple of things to integrate your tool:
 
-- Configure the **build.sbt** so it generates the docker to run your tool
-- Extend the **codacy.dockerApi.Tool** trait
-
+-   Configure the **build.sbt** so it generates the docker to run your tool
+-   Extend the **codacy.dockerApi.Tool** trait
 
 ## Configuring build.sbt
 
@@ -22,7 +21,7 @@ Our Scala template is built using sbt, which already has a great plugin to gener
 
 To configure a docker, you should edit the build.sbt in the root directory of our template.
 
-One thing you probably want to change is the *installAll* value, which contains the commands to install the tools and all necessary dependencies.
+One thing you probably want to change is the _installAll_ value, which contains the commands to install the tools and all necessary dependencies.
 
 ## Implementing Tool trait
 

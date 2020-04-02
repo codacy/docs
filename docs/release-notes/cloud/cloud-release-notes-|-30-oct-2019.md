@@ -2,7 +2,7 @@
 
 ## <span style="font-weight: 400;">Product Enhancements</span>
 
-<span style="font-weight: 400;">Improved Coverage support for C\# by
+<span style="font-weight: 400;">Improved Coverage support for C# by
 adding a [dedicated tool to upload
 coverage](https://github.com/codacy/csharp-codacy-coverage)</span>
 
@@ -24,7 +24,7 @@ C.</span>
 -   <span style="font-weight: 400;">Detekt</span><span
     style="font-weight: 400;"> has been updated to </span>[<span
     style="font-weight: 400;">1.0.1</span>](https://github.com/arturbosch/detekt/releases/tag/1.0.1)
--   <span style="font-weight: 400;">Sonar C\#</span><span
+-   <span style="font-weight: 400;">Sonar C#</span><span
     style="font-weight: 400;"> has been updated to </span>[<span
     style="font-weight: 400;">7.17</span>](https://github.com/SonarSource/sonar-dotnet/releases/tag/7.17.0.9346)
 -   <span style="font-weight: 400;">PMD</span><span

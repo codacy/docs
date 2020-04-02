@@ -103,7 +103,6 @@ In addition to in-house built rules, we use open source tools for many of our st
 </tbody>
 </table>
 
-
 ## Language Support Contributions
 
 These are the tools integrated on our website by our own users! Without them, we wouldn't have support for those languages.

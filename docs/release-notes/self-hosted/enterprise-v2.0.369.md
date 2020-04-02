@@ -31,5 +31,3 @@
     not load correctly</span>
 -   <span style="font-weight: 400;">Fixed UI glitch where an empty space
     would appear if no on-premise integration is enabled</span>
-
- 

@@ -8,8 +8,6 @@
     -   [<span
         style="font-weight: 400;">eslint-plugin-relay</span>](https://www.npmjs.com/package/eslint-plugin-relay)
 
- 
-
 **Bug fixes**
 
 -   <span style="font-weight: 400;">Fixed a bug that was preventing

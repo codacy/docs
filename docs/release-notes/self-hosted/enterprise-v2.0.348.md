@@ -44,4 +44,4 @@ the list of enhancements and bug fixes available with this update.
 -   Fixed a bug that didn't allow to select some projects in the team
     dashboards 
 -   Fixed a bug where Codacy's configuration file was not ignoring files
-    with 'exclude\_paths' 
+    with 'exclude_paths' 

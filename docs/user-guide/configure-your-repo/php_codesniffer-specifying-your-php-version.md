@@ -1,4 +1,4 @@
-# PHP\_CodeSniffer - Specifying your PHP version
+# PHP_CodeSniffer - Specifying your PHP version
 
 If you are using the PHP Compatibility Coding Standard for PHP CodeSniffer, you can specify the PHP version you'd like to use from the [supported versions](https://github.com/wimg/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions).
 

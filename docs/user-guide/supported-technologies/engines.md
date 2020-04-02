@@ -208,7 +208,6 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 </tbody>
 </table>
 
-
 ## Other tools
 
 Although we expect all tools to run within an engine container, some tools are still supported directly as a binary in our analysis servers and are not configurable in the UI:
