@@ -6,21 +6,38 @@
 
 ## Preview docs locally
 
+[Build and preview](https://www.mkdocs.org/#getting-started) the generated HTML on your machine to validate your changes:
+
 ```bash
-# preview mkdocs
 mkdocs serve
 ```
 
 ## Manually publish to GitHub Pages
 
-Deployment is done automatically once on master.
+Deployment of the generated HTML to GitHub pages is done automatically on every push to `master`.
 
-Instructions for [deploying in GitHub](http://www.mkdocs.org/user-guide/deploying-your-docs/):
+However, you can also [manually deploy](http://www.mkdocs.org/user-guide/deploying-your-docs/) the pages if needed:
 
 ```bash
 mkdocs gh-deploy
 ```
 
-## Copyright
+## What is Codacy
 
-Copyright 2020 [Codacy](https://www.codacy.com).
+[Codacy](https://www.codacy.com/) is an automated code review tool that monitors your technical debt, helps you improve your code quality, teaches best practices to your developers, and helps you save time in code reviews.
+
+### Among Codacy’s features
+
+-   Identify new static analysis issues
+-   Commit and pull request analysis with GitHub, BitBucket, GitLab (and also direct Git repositories)
+-   Auto-comments on commits and pull requests
+-   Integrations with Slack, Jira
+-   Track issues in code style, security, error proneness, performance, unused code and other categories
+
+Codacy also helps keep track of code coverage, code duplication, and code complexity.
+
+Codacy supports PHP, Python, Ruby, Java, JavaScript, and Scala, among others.
+
+### Free for Open Source
+
+Codacy is free for Open Source projects.
