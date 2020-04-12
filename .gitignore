@@ -4,7 +4,10 @@ site/
 # OS generated files
 .DS_Store
 
-# Common backup files
+# IDE files
+.vscode
+
+# Backup files
 *.swp
 *.bak
 *.tmp
