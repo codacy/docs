@@ -21,7 +21,3 @@ You can add Authors in the People section of your organization settings or direc
 You can manage your existing Authors in the People section of your organization settings.
 
 ![screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-authors-2019-12-19-09_57_24.png](/images/screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-authors-2019-12-19-09_57_24.png)
-
-### Synced Organizations Availability 🚧
-
-Sync Organizations are only available for GitHub organizations. While we are working on expanding support for this feature, if you'd like to add repositories from another provider, follow the [steps for adding a repository through the manual wizard](/hc/en-us/articles/207278449).
