@@ -13,7 +13,7 @@ theme:
     accent: "indigo"
   logo: "assets/images/codacy-logo.svg"
   feature:
-    tabs: true
+    tabs: false
 
 extra_css:
   - "assets/stylesheets/extra.css"
