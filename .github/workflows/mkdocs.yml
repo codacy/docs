@@ -40,7 +40,7 @@ jobs:
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
     steps:
-      - name: Checkout branch
+      - name: Checkout master
         uses: actions/checkout@v2
         with:
           submodules: true
