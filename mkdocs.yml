@@ -428,6 +428,7 @@ nav:
       - self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted.md
       - self-hosted/configuring-github-cloud-with-codacy-self-hosted.md
       - self-hosted/configuring-github-enterprise-with-codacy-self-hosted.md
+      - self-hosted/create-github-app.md
       - self-hosted/configuring-gitlab.com-with-codacy-self-hosted.md
       - self-hosted/configuring-gitlab-enterprise-with-codacy-self-hosted.md
       - self-hosted/configuring-your-email-server-with-codacy-enterprise.md
@@ -445,7 +446,6 @@ nav:
   - "Installing Codacy": "!include ./submodules/chart/mkdocs.yml"
   - "Release notes":
       - release-notes/index.md
-      - self-hosted/create-github-app.md
       - "Cloud release notes":
           - release-notes/cloud/deprecating-http-headers-for-api-tokens.md
           - release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md
@@ -469,8 +469,8 @@ nav:
           - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
           - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
       - "Self-hosted release notes":
-          - release-notes/self-hosted/upcoming-changes-to-github-integration-for-codacy-self-hosted.md
           - release-notes/self-hosted/self-hosted-v2.0.379.md
+          - release-notes/self-hosted/upcoming-changes-to-github-integration-for-codacy-self-hosted.md
           - release-notes/self-hosted/self-hosted-v2.0.378.md
           - release-notes/self-hosted/enterprise-v2.0.376.md
           - release-notes/self-hosted/enterprise-v2.0.372.md
@@ -517,8 +517,8 @@ nav:
       - Security:
           - faq/security/how-does-codacy-keep-my-data-secure.md
       - Troubleshooting:
-          - faq/troubleshooting/cancelling-your-plan.md
           - faq/troubleshooting/how-do-i-change-my-email-address-in-codacy-.md
           - faq/troubleshooting/why-do-i-get-a-"not-a-member-of-the-organization"-message-.md
           - faq/troubleshooting/why-isn’t-codacy-commenting-on-my-prs-anymore.md
           - faq/troubleshooting/why-isn't-my-public-repository-being-analysed.md
+          - faq/troubleshooting/cancelling-your-plan.md
