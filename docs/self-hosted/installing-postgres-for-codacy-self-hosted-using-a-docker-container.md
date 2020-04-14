@@ -13,7 +13,7 @@ If you already have a Postgres installation, jump directly to step 1.3.
 
 ### Postgres Version
 
-Codacy officially supports Postgres versions 9.3 and 9.4. Codacy requires 'UTF-8' encoding. Make sure that your database character set is correctly configured. For more information see <https://www.postgresql.org/docs/9.4/static/multibyte.html>
+Codacy officially supports Postgres versions 9.6. Codacy requires 'UTF-8' encoding. Make sure that your database character set is correctly configured. For more information see <https://www.postgresql.org/docs/9.4/static/multibyte.html>
 
 ## 1 - Postgres
 

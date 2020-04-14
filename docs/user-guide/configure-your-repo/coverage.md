@@ -50,7 +50,7 @@ If your language or build tool isn't supported yet, you can send the coverage da
 ```
 
 !!! note
-In case the token was retrieved from the Repository integrations tab, the header should be `project_token`. If it is an account token, the header should be `api_token` and you must call [this API method](https://api.codacy.com/swagger#savecoveragewithprojectname) instead.
+In case the token was retrieved from the Repository integrations tab, the header should be `project-token`. If it is an account token, the header should be `api-token` and you must call [this API method](https://api.codacy.com/swagger#savecoveragewithprojectname) instead.
 
 Also, note all _coverable_ lines should be present on the "coverage" variable of the JSON payload. In the example, you can see that "5": 0, meaning that line 5 is not covered.
 

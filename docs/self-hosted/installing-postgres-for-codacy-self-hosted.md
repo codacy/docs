@@ -13,7 +13,7 @@ If you already have a Postgres installation, jump directly to step 1.3.
 
 ### Postgres Version
 
-Codacy officially supports Postgres version 9.4. Codacy requires 'UTF-8' encoding. Make sure that your database character set is correctly configured. For more information see
+Codacy officially supports Postgres version 9.6. Codacy requires 'UTF-8' encoding. Make sure that your database character set is correctly configured. For more information see
 <https://www.postgresql.org/docs/9.4/static/multibyte.html>
 
 ## 1 - Postgres
@@ -32,7 +32,7 @@ You can change your locale to a UTF-8 variant by running:
 
 ## 1.2 - Install postgres
 
-First, ensure that you install **postgres 9.4** following the instructions described [here](https://www.postgresql.org/download/linux/ubuntu/).
+First, ensure that you install **postgres 9.6** following the instructions described [here](https://www.postgresql.org/download/linux/ubuntu/).
 
 ## 1.3 - Run postgres
 
@@ -57,7 +57,7 @@ In order to access PostgreSQL from a different machine, you'll need to do additi
 Using Nano (or vim/emacs/other), edit your `postgresql.conf` file. We're specifically looking for a line that says `listen_addresses`. We're going to modify where PostgreSQL is listening.
 
 ```conf
-# /etc/postgresql/9.4/main/postgresql.conf
+# /etc/postgresql/9.6/main/postgresql.conf
 
 #---------------------------------------------------------
 # CONNECTIONS AND AUTHENTICATION
@@ -72,7 +72,7 @@ max_connections = 300
 Next we're going to edit our `pg_hba.conf` file and configure it to allow remote connections. At the very end of the file, add the following line:
 
 ```conf
-# /etc/postgresql/9.4/main/pg_hba.conf
+# /etc/postgresql/9.6/main/pg_hba.conf
 
 host all all  0.0.0.0/0 md5
 ```

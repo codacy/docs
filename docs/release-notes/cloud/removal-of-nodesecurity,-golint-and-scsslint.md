@@ -4,7 +4,7 @@ On the week of March 9th 2020, we'll be removing some tools from Codacy.
 
 Those tools are: NodeSecurity, GoLint and SCSSLint.
 
-These tools have become deprecated or stopped bring updated by their maintainers and started providing a bad experience for Codacy users either by reporting false positives or causing other unexpected issues.
+These tools have become deprecated or stopped being updated by their maintainers and started providing a bad experience for Codacy users either by reporting false positives or causing other unexpected issues.
 
 We've been working on alternatives for each tool. Continue reading to find out how you can replace each of the removed tool:
 

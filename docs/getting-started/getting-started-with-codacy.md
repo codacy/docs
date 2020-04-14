@@ -31,7 +31,3 @@ And as a final step, you can select the repositories that you wish to analyze. C
 ## 5. You're all set!  🎉
 
 Read our guide on [what to do with a newly added repository](/hc/en-us/articles/207993605) to explore static analysis issues and continue configuring your repository.
-
-## Synced Organizations Availability 🚧
-
-Sync Organizations are only available for GitHub organizations. While we are working on expanding support for this feature, if you'd like to add repositories from a personal GitHub account, follow the [steps for adding a repository through the manual wizard](/hc/en-us/articles/207278449).
