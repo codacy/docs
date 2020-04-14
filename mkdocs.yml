@@ -346,14 +346,12 @@ plugins:
 nav:
     - "Documentation home": "index.md"
     - "Getting started":
-          - getting-started/index.md
           - getting-started/getting-started-with-codacy.md
           - getting-started/i-added-a-repository.-now-what.md
           - getting-started/setting-up-your-personal-repositories.md
           - getting-started/supported-languages.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
     - "User guide":
-          - user-guide/index.md
           - General:
                 - General:
                       - user-guide/general/updates-to-codacy’s-privacy-policy.md
@@ -422,7 +420,6 @@ nav:
                       - user-guide/supported-technologies/tool-developer-guide-using-scala.md
           - user-guide/other/special-thanks.md
     - Self-hosted:
-          - self-hosted/index.md
           - self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted.md
           - self-hosted/configuring-github-cloud-with-codacy-self-hosted.md
           - self-hosted/configuring-github-enterprise-with-codacy-self-hosted.md
@@ -442,7 +439,6 @@ nav:
           - self-hosted/run-spotbugs.md
     - "Installing Codacy": "!include ./submodules/chart/mkdocs.yml"
     - "Release notes":
-          - release-notes/index.md
           - "Cloud release notes":
                 - release-notes/cloud/deprecating-http-headers-for-api-tokens.md
                 - release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md
@@ -486,7 +482,6 @@ nav:
                 - release-notes/self-hosted/enterprise-v2.0.337.md
                 - release-notes/self-hosted/enterprise-v2.0.333-.md
     - FAQs:
-          - faq/index.md
           - faq/general/can-you-add-repos-from-other-git-providers.md
           - faq/general/file-size-limitation.md
           - faq/general/how-does-codacy-support-bitbucket-server.md
