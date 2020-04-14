@@ -9,7 +9,7 @@
 
 To create an organization, click on your avatar and select **Organizations**. Type the name in the **Create new organization** field and click on **Create New**.
 
-![](/images/image-0.gif)
+![](/images/image-00.gif)
 
 ## Renaming your organization
 
