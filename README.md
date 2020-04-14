@@ -1,6 +1,6 @@
 # Codacy documentation
 
-[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5e8bce49e0df4be8a880f2df02759d88)](https://www.codacy.com?utm_source=github.com&utm_medium=referral&utm_content=codacy/docs&utm_campaign=Badge_Grade) ![build](https://github.com/codacy/docs/workflows/mkdocs/badge.svg)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/5e8bce49e0df4be8a880f2df02759d88)](https://www.codacy.com?utm_source=github.com&utm_medium=referral&utm_content=codacy/docs&utm_campaign=Badge_Grade) [![build](https://github.com/codacy/docs/workflows/mkdocs/badge.svg)](https://github.com/codacy/docs/actions)
 
 <http://docs.dev.codacy.org>
 
