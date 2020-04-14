@@ -48,4 +48,4 @@ No, you won't lose any data if you reinstall the Control Panel, **except for th
 
 ## Can I set up a username and password for Monitoring (Crow)?
 
-Yes, after you set up the user for the control panel, Crow will have the same credentials. Just go to: Configure -> Save -> And wait 10-15 seconds (for all the services to stop) -> Reload
+Yes, after you set up the user for the control panel, Crow will have the same credentials. Open Configure, click Save, and wait 10-15 seconds for all the services to stop. Aftertwards, click Reload.

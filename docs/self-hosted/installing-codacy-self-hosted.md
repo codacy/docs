@@ -33,15 +33,15 @@ Our general advice is to have an extra 2 CPUs and 4GB RAM per additional running
 
 **Required database:**
 
--   PostgreSQL 9.4.x
+-   PostgreSQL 9.6.x
 
-Codacy requires a pre-installed PostgreSQL 9.4.x database, using a UTF-8 character set.
+Codacy requires a pre-installed PostgreSQL 9.6.x database, using a UTF-8 character set.
 
 We recommend installing this database on a separate machine.
 
 You can find setup instructions for this database [here](/hc/en-us/articles/360002902573).
 
-It is also possible to set up a local PostgreSQL 9.4.x database, but please **note that a local database is recommended for testing purposes only**. If you would like to use a Docker-based database instance for this purpose (without data persistence between reboots), you can find
+It is also possible to set up a local PostgreSQL 9.6.x database, but please **note that a local database is recommended for testing purposes only**. If you would like to use a Docker-based database instance for this purpose (without data persistence between reboots), you can find
 setup instructions [here](/hc/en-us/articles/207994955-Installing-postgres-for-Codacy-Enterprise-Using-a-Docker-container).
 
 You can test the connection from the Codacy server to your database later on the setup process, just after you run the setup script the first time (which installs Docker) and before the second time (which installs the Codacy services), through PSQL running from a Docker

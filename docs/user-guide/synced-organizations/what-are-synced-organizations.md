@@ -44,7 +44,3 @@ In case you change your organization or repository on the Git provider, they'll 
 Follow our guide to [add a synced organization](/hc/en-us/articles/360010373499).
 
 Check out the [roles and permission mapping from the GitHub permissions](/hc/en-us/articles/360010373559).
-
-### Synced Organizations Availability 🚧
-
-Sync Organizations are only available for GitHub organizations. While we are working on expanding support for this feature, if you'd like to add repositories from another provider, follow the [steps for adding a repository through the manual wizard](/hc/en-us/articles/207278449).
