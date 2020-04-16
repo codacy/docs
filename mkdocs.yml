@@ -273,8 +273,6 @@ plugins:
               "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "user-guide/synced-organizations/how-to-configure-which-users-can-ignore-issues.md"
               "hc/en-us/articles/360012141513.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md"
               "hc/en-us/articles/360012141513-Scheduled-Maintenance-Saturday-17th-Nov-8-00-GMT-0-00-PST-.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md"
-              "hc/en-us/articles/360012141819.md": "user-guide/synced-organizations/why-aren't-my-github-repositories-showing.md"
-              "hc/en-us/articles/360012141819-Why-aren-t-my-GitHub-repositories-showing-.md": "user-guide/synced-organizations/why-aren't-my-github-repositories-showing.md"
               "hc/en-us/articles/360012267020.md": "release-notes/self-hosted/self-hosted-v2.0.378.md"
               "hc/en-us/articles/360012267020-Self-hosted-v2-0-378.md": "release-notes/self-hosted/self-hosted-v2.0.378.md"
               "hc/en-us/articles/360012328140.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md"
@@ -368,7 +366,6 @@ nav:
                       - user-guide/synced-organizations/roles-and-permissions-for-synced-organizations.md
                       - user-guide/synced-organizations/adding-and-managing-authors.md
                       - user-guide/synced-organizations/why-can't-i-see-my-organization.md
-                      - user-guide/synced-organizations/why-aren't-my-github-repositories-showing.md
                       - user-guide/synced-organizations/authors-vs-members.md
                       - user-guide/synced-organizations/how-to-configure-which-users-can-ignore-issues.md
                 - "Manual organizations":
