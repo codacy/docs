@@ -404,6 +404,7 @@ nav:
                       - user-guide/configure-your-repo/add-coverage-to-your-repo.md
                       - user-guide/configure-your-repo/coverage.md
                       - user-guide/configure-your-repo/generate-coverage.md
+                      - "Add coverage to your repo": "!include ./submodules/codacy-coverage-reporter/mkdocs.yml"
                       - user-guide/configure-your-repo/codacy-configuration-file.md
                       - user-guide/configure-your-repo/ignore-files-from-codacy-analysis.md
                       - user-guide/configure-your-repo/submodules-how-to-enable-them.md
