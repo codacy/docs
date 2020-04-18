@@ -1,0 +1,14 @@
+<div role="navigation" aria-label="breadcrumbs navigation">
+    <ul class="md-breadcrumbs">
+        <li><a href="{{ nav.homepage.url|url }}">Homepage</a></li>
+        {% if page %}
+        {% for doc in page.ancestors|reverse %}
+            {% if doc.link %}
+            <li><a href="{{ doc.link|e }}">{{ doc.title }}</a></li>
+            {% else %}
+            <li>{{ doc.title }}</li>
+            {% endif %}
+        {% endfor %}
+        {% endif %}
+    </ul>
+</div>

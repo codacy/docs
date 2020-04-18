@@ -12,3 +12,4 @@ site/
 *.bak
 *.tmp
 *~
+.metals

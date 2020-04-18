@@ -45,3 +45,21 @@ pre {
 .md-footer-meta {
     background-color: #222f45;
 }
+
+.md-content {
+    margin-right: 0;
+}
+
+.md-breadcrumbs li {
+    display: inline-block;
+}
+
+.md-breadcrumbs li:before {
+    content: '/';
+    margin-right: 10px;
+}
+
+.md-breadcrumbs li:first-child:before {
+    content: '';
+    margin-right: 0;
+}
