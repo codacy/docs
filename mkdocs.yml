@@ -15,8 +15,11 @@ theme:
     logo: "assets/images/codacy-docs-logo.svg"
     features: []
 
+extra_css:
+    - "assets/stylesheets/version-select.css"
 extra_javascript:
     - "assets/javascripts/extra.js"
+    - "assets/javascripts/version-select.js"
 
 strict: true
 
