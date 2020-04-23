@@ -11,7 +11,9 @@ assignees: pauloribeiro-codacy
 - [ ] Bug or incorrect information
 - [ ] Missing information
 - [ ] Outdated information
+- [ ] Enhancement
 - [ ] Other
+
 
 **Affected pages**
 This feedback applies to the following documentation pages / URLs:
@@ -19,6 +21,12 @@ This feedback applies to the following documentation pages / URLs:
 
 **Feedback**
 Your feedback:
+
+
+**Priority**
+- [ ] High
+- [ ] Medium
+- [ ] Low
 
 
 **Additional context**
