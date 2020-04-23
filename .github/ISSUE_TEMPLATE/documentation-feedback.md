@@ -8,11 +8,11 @@ assignees: pauloribeiro-codacy
 ---
 
 **Type of feedback**
-- [ ] Bug or incorrect information
-- [ ] Missing information
-- [ ] Outdated information
-- [ ] Enhancement
-- [ ] Other
+-   [ ] Bug or incorrect information
+-   [ ] Missing information
+-   [ ] Outdated information
+-   [ ] Enhancement
+-   [ ] Other
 
 **Feedback**
 
@@ -22,9 +22,9 @@ This feedback applies to the following documentation pages / URLs:
 
 
 **Priority**
-- [ ] High
-- [ ] Medium
-- [ ] Low
+-   [ ] High
+-   [ ] Medium
+-   [ ] Low
 
 **Additional context**
 If applicable, provide any other context or information that could be useful in updating the documentation:
