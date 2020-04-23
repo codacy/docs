@@ -14,20 +14,17 @@ assignees: pauloribeiro-codacy
 - [ ] Enhancement
 - [ ] Other
 
+**Feedback**
+
 
 **Affected pages**
 This feedback applies to the following documentation pages / URLs:
-
-
-**Feedback**
-Your feedback:
 
 
 **Priority**
 - [ ] High
 - [ ] Medium
 - [ ] Low
-
 
 **Additional context**
 If applicable, provide any other context or information that could be useful in updating the documentation:
