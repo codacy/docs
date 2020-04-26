@@ -79,7 +79,4 @@ jobs:
 
       - name: Deploy docs
         run: |
-          echo "${CUSTOM_DOMAIN}" > "${GITHUB_WORKSPACE}/docs/CNAME"
-          mkdocs gh-deploy --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --force
-        env:
-          CUSTOM_DOMAIN: docs.dev.codacy.org
+          mike deploy cloud --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --force
