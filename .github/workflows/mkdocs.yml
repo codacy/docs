@@ -11,6 +11,7 @@ jobs:
       - name: Checkout branch
         uses: actions/checkout@v2
         with:
+          token: ${{ secrets.GH_PERSONAL_ACC_TOK }}
           submodules: true
 
       - name: Set up Python
