@@ -44,7 +44,6 @@ jobs:
       - name: Checkout master
         uses: actions/checkout@v2
         with:
-        with:
           token: ${{ secrets.GH_PERSONAL_ACC_TOK }}
           submodules: true
 
