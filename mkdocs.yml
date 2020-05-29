@@ -4,19 +4,17 @@ site_url: http://docs.dev.codacy.org/
 
 # Configuration
 theme:
-    name: "material"
-    custom_dir: "theme"
+    name: null
+    custom_dir: "submodules/mkdocs-codacy-theme/material"
     font: false
+    language: en
     favicon: "assets/images/favicon.ico"
     palette:
-        primary: "indigo"
-        accent: "indigo"
-    logo: "assets/images/codacy-logo.svg"
-    feature:
-        tabs: false
+      primary: indigo
+      accent: indigo
+    logo: "assets/images/codacy-docs-logo.svg"
+    features: []
 
-extra_css:
-    - "assets/stylesheets/extra.css"
 extra_javascript:
     - "assets/javascripts/extra.js"
 

@@ -5,3 +5,6 @@
 	path = submodules/codacy-coverage-reporter
 	url = https://github.com/codacy/codacy-coverage-reporter
 	branch = mkdocs
+[submodule "submodules/mkdocs-codacy-theme"]
+	path = submodules/mkdocs-codacy-theme
+	url = git@github.com:codacy/mkdocs-codacy-theme.git
