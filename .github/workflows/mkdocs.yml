@@ -6,7 +6,7 @@ jobs:
   build:
     name: build
     runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'release-')
+    if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release-')
     steps:
       - name: Checkout branch
         uses: actions/checkout@v2
@@ -40,7 +40,7 @@ jobs:
   deploy-version:
     name: deploy-version
     runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'release-')
+    if: startsWith(github.ref, 'refs/heads/release-')
     steps:
       - name: Checkout master
         uses: actions/checkout@v2
@@ -79,7 +79,7 @@ jobs:
 
       - name: Deploy docs
         run: |
-          mike deploy ${git rev-parse --abbrev-ref HEAD | sed "s|^release-\([0-9.]*\).*|\1|"} --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --force
+          mike deploy ${GITHUB_REF##*/release-} --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --force
 
   deploy:
     name: deploy
@@ -123,4 +123,7 @@ jobs:
 
       - name: Deploy docs
         run: |
-          mike deploy . -t Cloud --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push
+          echo "${CUSTOM_DOMAIN}" > "${GITHUB_WORKSPACE}/docs/CNAME"
+          mike deploy . -t Cloud --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --force
+        env:
+          CUSTOM_DOMAIN: docs.dev.codacy.org
