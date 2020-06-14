@@ -51,8 +51,8 @@ window.addEventListener("DOMContentLoaded", function() {
         container.className = "md-nav__item";
         container.appendChild(select);
   
-        var sidebar = document.querySelector(".md-nav--primary > .md-nav__list");
-        sidebar.parentNode.insertBefore(container, sidebar);
+        var search = document.querySelector(".search-cta-top > .md-search");
+        search.insertAdjacentElement("afterend", container);
     };
     xhr.send();
 });
