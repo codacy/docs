@@ -1,80 +1,57 @@
 # Configuring GitHub Enterprise with Codacy Self-hosted
 
-![](/images/pasted_image_at_2016_10_24_17_27_720.png)
+Configuring GitHub Enterprise allows you to easily add GitHub
+repositories to your Codacy Self-hosted installation.
 
-## Location
+Follow the instructions below to set up the Codacy integration with
+GitHub Enterprise:
 
-### Endpoint/Hostname **_\[required]_**
+1.  <span style="font-weight: 400;">Follow the instructions on
+    </span>[<span style="font-weight: 400;">creating and configuring a
+    GitHub
+    App</span>](/hc/en-us/articles/360012665460)<span
+    style="font-weight: 400;">.</span>
+2.  <span style="font-weight: 400;">On Codacy, open **Admin**,
+    **Integrations**, and select GitHub Enterprise.</span>![GitHub
+    Enterprise
+    integration](/hc/article_attachments/360011391880/screenshot-github-enterprise.png)
+3.  <span style="font-weight: 400;">Configure the GitHub Enterprise
+    integration as follows:</span>
+    <table>
+    <colgroup>
+    <col width="50%" />
+    <col width="50%" />
+    </colgroup>
+    <tbody>
+    <tr class="odd">
+    <td><p><strong>Endpoint</strong></p></td>
+    <td><p><span style="font-weight: 400;">URL of the GitHub Enterprise instance, specifying the HTTP protocol:</span></p>
+    <ul>
+    <li><span style="font-weight: 400;">https://&lt;github enterprise hostname&gt;</span></li>
+    <li><span style="font-weight: 400;">http://&lt;github enterprise hostname&gt;</span></li>
+    </ul></td>
+    </tr>
+    <tr class="even">
+    <td><p><strong>Port</strong></p></td>
+    <td><p><span style="font-weight: 400;">Port of the GitHub Enterprise instance.</span></p>
+    <p><span style="font-weight: 400;">If empty, Codacy will use the default port.</span></p></td>
+    </tr>
+    <tr class="odd">
+    <td><p><strong>Using private mode?</strong></p></td>
+    <td><p><span style="font-weight: 400;">Enable the check box if your GitHub Enterprise is configured to use private mode.</span></p></td>
+    </tr>
+    <tr class="even">
+    <td><p><strong>Client ID</strong></p></td>
+    <td><p><span style="font-weight: 400;">Client ID generated when you created the GitHub App.</span></p></td>
+    </tr>
+    <tr class="odd">
+    <td><p><strong>Client Secret</strong></p></td>
+    <td><p><span style="font-weight: 400;">Client Secret generated when you created the GitHub App.</span></p></td>
+    </tr>
+    </tbody>
+    </table>
 
-The endpoint or hostname where the GitHub Enterprise is deployed.
+4.  <span style="font-weight: 400;">Click </span>**Test & Save**<span
+    style="font-weight: 400;"> to validate and save the integration with
+    GitHub Enterprise.</span>
 
-Should NOT contain:
-
--   Port (ex: 9000)
-
-##### Correct:
-
--   `https://my.github.enterprise.example.com`
-
-##### Incorrect:
-
--   `my.github.enterprise.example.com`
--   `https://my.github.enterprise.example.com/`
--   `https://my.github.enterprise.example.com:9000`
--   `https://user@pass:my.github.enterprise.example.com`
--   `my.github.enterprise.example.com:9000`
--   `my.github.enterprise.example.com:9000`
-
-### Port
-
-The port where the application is running.
-
-This is not required.
-
-The default port will be used if left empty.
-
-## Configuration
-
-### Protocol
-
-Choose between HTTP and HTTPS protocol for communicating with your GitHub Enterprise installation. If you have problems connecting with the instance, this may be the cause.
-
-### Private Mode
-
-Whether your GitHub Enterprise is configured to use private mode or not.
-
-## GitHub Application
-
-### Application Creation **_\[required]_**
-
-To integrate with GitHub we use a GitHub Application.
-
-To create the application in your GitHub Enterprise, visit `settings/applications/new` and create an application pointing to your local Codacy deployment URL.
-
-![](/images/Screenshot_2015-04-16_13.55.59.png)
-
-You can fill all the fields with the suggested text above or use your own text except for the field `Authorization callback URL` where you must insert your local Codacy deployment url.
-
-The URL should contain the endpoint/ip, the protocol (HTTP or HTTPS), and, if applicable, the port where it is running.
-
-##### Correct:
-
--   `http://your.codacy.url.com`
--   `http://your.codacy.url.com:9000`
--   `http://53.43.42.12`
--   `http://53.43.42.12:9000`
-
-##### Incorrect:
-
--   `your.codacy.url.com`
--   `your.codacy.url.com:9000`
--   `53.43.42.12`
--   `53.43.42.12:9000`
-
-### Token retrieval **_\[required]_**
-
-After the application is created, you should copy both the `Client ID` and the `Client Secret` and paste them in the setup page on your Codacy Self-hosted.
-
-![](/images/Screenshot_2015-04-16_14.02.55.png)
-
-After this is done you will be able to use GitHub Enterprise as an authentication method to add repositories and as an integration in the repository settings.
