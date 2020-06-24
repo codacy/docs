@@ -16,7 +16,7 @@ You’ll be asked to fill in a few details about your company so we know a bit m
 
 ## 3. Choose an organization
 
-![Screenshot_2020-02-26_at_21.30.45.png](/images/Screenshot_2020-02-26_at_21.30.45.png)
+![](/images/Screenshot_2020-02-26_at_21.30.45.png)
 
 Now, you’ll need to select the organization that contains your repositories. If you can’t see the organization you are looking for, [read this troubleshooting page](/hc/en-us/articles/360010264500).
 
@@ -24,7 +24,7 @@ The selected organization will then be synced with Codacy so that managing your 
 
 ## 4. Add repositories
 
-![Screenshot_2020-02-26_at_21.31.41.png](/images/Screenshot_2020-02-26_at_21.31.41.png)
+![](/images/Screenshot_2020-02-26_at_21.31.41.png)
 
 And as a final step, you can select the repositories that you wish to analyze. Codacy will start the first analysis and set up everything required to ensure your next commits on those repositories are analyzed.
 
