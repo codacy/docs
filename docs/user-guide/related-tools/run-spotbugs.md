@@ -1,11 +1,14 @@
 # Run SpotBugs
 
-[SpotBugs](https://spotbugs.github.io/) is available for Codacy Self-hosted, with the following plugins: [Find Security Bugs](https://find-sec-bugs.github.io/) and
-[FBContrib](https://github.com/mebigfatguy/fb-contrib).
+[SpotBugs](https://spotbugs.github.io/) is available for Codacy Cloud and Codacy Self-hosted, with the following plugins: [Find Security Bugs](https://find-sec-bugs.github.io/) and [FBContrib](https://github.com/mebigfatguy/fb-contrib).
 
-To run this tool, you simply need to compile your Java or Scala repository on your build server, as you would normally do, and then invoke the [codacy-analysis-cli](/hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results) on the root of the repository specifying the tool SpotBugs.
+To run this tool:
 
-```sh
+1.  Enable the setting "Run analysis through build server" under your repository **Settings** > **General** > **Repository analysis**
+2.  Compile your Java or Scala repository on your build server, as you would normally do
+3.  Invoke [`codacy-analysis-cli`](/hc/en-us/articles/360008254833-Run-local-analysis) on the root of the repository specifying the tool SpotBugs
+
+```bash
 codacy-analysis-cli analyse --tool spotbugs \
                             --directory <SOURCE-CODE-PATH> \
                             --project-token <PROJECT-TOKEN> \
@@ -15,15 +18,15 @@ codacy-analysis-cli analyse --tool spotbugs \
                             --verbose
 ```
 
-The Codacy CLI will then run SpotBugs on the compiled classes of your repository, parse the results and if you set up the [push results](/hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results#push-results) options, these results can be sent to Codacy and used in the analysis for the Self-hosted version.
+The Codacy CLI will then run SpotBugs on the compiled classes of your repository and upload these results to Codacy to be used in your workflow.
 
-## Detecting Sources and Compiled Classes
+## Detecting sources and compiled classes
 
 Codacy tries to find the classes and map results to the files automatically. If you use Maven, Gradle and SBT then the default layouts are detected automatically as well.
 
-You have the option to configure these paths manually if there is an issue with detection. To do so, add [Codacy configuration file](/hc/en-us/articles/115002130625-Codacy-Configuration-File)  to the repository root - **.codacy.yml**:
+You have the option to configure these paths manually if there is an issue with detection. To do so, add [Codacy configuration file](/hc/en-us/articles/115002130625-Codacy-Configuration-File) to the repository root - **.codacy.yml**:
 
-```yaml
+```yml
 ---
 engines:
   spotbugs:
@@ -39,11 +42,11 @@ engines:
 
 When running SpotBugs on the compiled classes of larger projects, the [default execution timeout of 15 minutes](https://github.com/codacy/codacy-analysis-cli/blob/master/README.md#commands-and-configuration) may not be enough for SpotBugs to complete the analysis.
 
-To increase the timeout that each tool has to execute, use the option --tool-timeout when invoking the codacy-analysis-cli command.
+To increase the timeout that each tool has to execute, use the option `--tool-timeout` when invoking the `codacy-analysis-cli` command.
 
 For example, to set the timeout to 1 hour, run:
 
-```sh
+```bash
 codacy-analysis-cli analyse --tool spotbugs \
                             --tool-timeout 1hour \
                             --directory <SOURCE-CODE-PATH> \
@@ -53,5 +56,3 @@ codacy-analysis-cli analyse --tool spotbugs \
                             --upload \
                             --verbose
 ```
-
-Please reach out if you need help with anything.

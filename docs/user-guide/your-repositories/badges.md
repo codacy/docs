@@ -1,17 +1,13 @@
 # Badges
 
-Codacy supports badges you can integrate into your repositories to show your repository code quality level. 
+You can add a Codacy badge to the README of your repository to display the current code quality grade or code coverage.
 
-You can add a badge directly to your repo by clicking the option "Badge" directly in your repository dashboard.
+To obtain your Codacy badge, open your repository **Settings**, tab **General**, select the markup language, and copy the generated code to your README file. If you have set up code coverage for your repository, you can also add a badge for your coverage.
 
-![Screenshot_2019-01-07_at_14.16.15.png](/images/Screenshot_2019-01-07_at_14.16.15.png)
+![](/images/codacy-badge.png)
 
-If you go to your Repository Settings -> General tab you have the option to add the badge with your Codacy grade (same as above) and, if you set up Code Coverage, a badge for your coverage.
+If you want the Codacy badge to display information for a different branch, specify the name of the branch by appending the query parameter `branch=<branch_name>` to the URL of the badge. For example:
 
-![](/images/Screen_Shot_2016-10-11_at_10.33.01.png)
-
-**Creating badges for different branches?**
-
-You can do that if in the end of the badge URL, you add the query parameter "branch=BRANCH_NAME". 
-
-Example: `https://api.codacy.com/project/badge/Grade/72a7aaa0e3fd4a8db27607da159d3daa?branch=test`
+```text
+https://api.codacy.com/project/badge/Grade/a0000?branch=test
+```
