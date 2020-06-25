@@ -6,13 +6,13 @@ As a wise man once said, "You can't please everyone", and that is true for code 
 
 Each pattern has a title and a short description. To see a detailed explanation you can click on Show Details in the top right corner (mouse over the pattern and the Show Details option will appear):
 
-![](/images/pattern-explanation.png)
+![](/images/pattern-explanation.png)  
 
 The pattern explanation shows more detail about the issues it can detect and how to fix them.
 
-You can filter the patterns by category using the side menu:
+You can filter the patterns by category using the side menu: 
 
-<img src="/images/c14f895e0f57610b7fd706e27b31925e785e1a184549e765daf9f1e69ad54602.png" width="693" height="177" />
+![](/images/c14f895e0f57610b7fd706e27b31925e785e1a184549e765daf9f1e69ad54602.png)
 
 ### The issues detected by Codacy belong to one of the following categories:
 
@@ -36,28 +36,27 @@ You can filter the patterns by category using the side menu:
 
 To configure the patterns used to analyse your repository simply click on the checkbox on the left of the title:
 
-![](/images/enabled.png)
+![](/images/enabled.png) 
 
-When you change the enabled patterns you can reanalyse your repository. To do that, just enter the latest commit from your list on the **Commit** view and click to [reanalyse](/hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-).
+When you change the enabled patterns you can reanalyse your repository. To do that, just enter the latest commit from your list on the **Commit** view and click to [reanalyse](/hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-). 
 
-<figure>
-<img src="/images/b76fc1f9e8dab5a1db65856b0dd09ce79a156a013573cdef5a700e823dc53547.png" width="637" height="450" alt="" />
-</figure>
+![](/images/b76fc1f9e8dab5a1db65856b0dd09ce79a156a013573cdef5a700e823dc53547.png)
 
 ## 3. Account vs Repository Patterns
 
-###  Account Patterns
+###  Account Patterns
 
-Here you can change the default selection of patterns by enabling / disabling  them for all future repositories added by you. Just go to **Account Settings** -> **Default Patterns:**
+Here you can change the default selection of patterns by enabling / disabling  them for all future repositories added by you. Just
+go to **Account Settings** &gt; **Default Patterns**:
 
-![Account Patterns](/images/Screen_Shot_2018-01-12_at_11.21.22.png)
+![](/images/Screen_Shot_2018-01-12_at_11.21.22.png)
 
 ### Repository Patterns
 
-Here you can specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. You can go to **Code patterns**:
+Here you can specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. You can go to **Code patterns:**
 
-![Repository Patterns](/images/Screen_Shot_2019-06-18_at_17.57.58.png)
-
+![](/images/Screen_Shot_2019-06-18_at_17.57.58.png)
+  
 ## 4. I have my own tool configuration file
 
 If you have configuration files for your static analysis tool of choice, just add it to the root of your repository and Codacy will pick it up automatically.
@@ -66,56 +65,204 @@ If you have configuration files for your static analysis tool of choice, just ad
 
 Codacy currently supports configuration files for several tools. To have results accordingly to your configuration file, you need to go to the Code Patterns view and select "Configuration file" for the respective tool and select the option as shown in the example below.
 
-![Screen_Shot_2017-10-09_at_18.54.12.png](/images/Screen_Shot_2017-10-09_at_18.54.12.png)
+![](/images/Screen_Shot_2017-10-09_at_18.54.12.png)
 
 The known file names for each tool are the following:
 
-| Tool name                                                          | Language                                                   | Files detected                                                                                            | Other info                                                                                                                 |
-| ------------------------------------------------------------------ | ---------------------------------------------------------- | --------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------- |
-| Ameba                                                              | Crystal                                                    | .ameba.yml                                                                                                |                                                                                                                            |
-| Bandit                                                             | Python                                                     | bandit.yml, .bandit                                                                                       | To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repo containing: skips: ['B101'] |
-| Brakeman                                                           | Ruby                                                       | config/brakeman.yml                                                                                       |                                                                                                                            |
-| Checkstyle                                                         | Java                                                       | checkstyle.xml                                                                                            | Supports config file in other dirs than root and can search up to 5 dirs into the repository.                              |
-| Codenarc                                                           | Groovy                                                     | .codenarcrc                                                                                               |                                                                                                                            |
-| credo                                                              | Elixir                                                     | .credo.exs                                                                                                |                                                                                                                            |
-| CSSLint                                                            | CSS                                                        | .csslintrc                                                                                                |                                                                                                                            |
-| detekt                                                             | Kotlin                                                     | default-detekt-config.yml, detekt.yml                                                                     | Supports config file in other dirs than root and can search up to 5 dirs into the repository.                              |
-| ESLint                                                             | JavaScript, Typescript, JSON                               | .eslintrc.js, .eslintrc.yaml,.eslintrc.yml, .eslintrc.json,                                               |                                                                                                                            |
-| .eslintrc                                                          | Plugins in the UI                                          |                                                                                                           |                                                                                                                            |
-| Other Plugins                                                      |                                                            |                                                                                                           |                                                                                                                            |
-| Hadolint                                                           | Docker                                                     | .hadolint.yaml                                                                                            |                                                                                                                            |
-| JSHint                                                             | JavaScript                                                 | .jshintrc                                                                                                 |                                                                                                                            |
-| PHP CodeSniffer                                                    | PHP                                                        | phpcs.xml, phpcs.xml.dist                                                                                 |                                                                                                                            |
-| PHPMD                                                              | PHP                                                        | codesize.xml                                                                                              |                                                                                                                            |
-| PMD                                                                | Apex, Java, Javascript, JSP, XML, Velocity and Visualforce | ruleset.xml, apex-ruleset.xml                                                                             | Supports config file in other dirs than root and can search up to 5 dirs into the repository.                              |
-| Prospector                                                         | Python                                                     | .landscape.yml, .landscape.yaml, landscape.yml, landscape.yaml,                                           |                                                                                                                            |
-| .prospector.yml, .prospector.yaml, prospector.yml, prospector.yaml |                                                            |                                                                                                           |                                                                                                                            |
-| Pylint                                                             | Python                                                     | pylintrc, .pylintrc                                                                                       | Plugins                                                                                                                    |
-| RemarkLint                                                         | Markdown                                                   | .remarkrc, .remarkrc.json, .remarkrc.yaml, .remarkrc.yml, .remarkrc.js                                    |                                                                                                                            |
-| Rubocop                                                            | Ruby                                                       | .rubocop.yml                                                                                              |                                                                                                                            |
-| ScalaStyle                                                         | Scala                                                      | scalastyle_config.xml, scalastyle-config.xml                                                              |                                                                                                                            |
-| SCSSLint                                                           | SASS                                                       | .scss-lint.yml                                                                                            |                                                                                                                            |
-| Sonar C#                                                           | C#                                                         | SonarLint.xml                                                                                             |                                                                                                                            |
-| Spotbugs                                                           | Java, Scala                                                | findbugs.xml, findbugs-includes.xml, findbugs-excludes.xml                                                | Supports config file in other dirs than root and can search up to 5 dirs into the repository.                              |
-| Stylelint                                                          | LESS, SASS, CSS                                            | .stylelintrc, stylelint.config.js, .stylelintrc.json, .stylelintrc.yaml, .stylelintrc.js, stylelintrc.yml | Supports config file in other dirs than root and can search up to 5 dirs into the repository.                              |
-| SwiftLint                                                          | Swift                                                      | .swiftlint.yml                                                                                            |                                                                                                                            |
-| Tailor                                                             | Swift                                                      | .tailor.yml                                                                                               |                                                                                                                            |
-| TSLint                                                             | TypeScript                                                 | tslint.json                                                                                               |                                                                                                                            |
-| tsqllint                                                           | SQL                                                        | .tsqllintrc                                                                                               |                                                                                                                            |
+<table>
+<tbody>
+<tr>
+<td>Tool name</td>
+<td>Language</td>
+<td>Files detected</td>
+<td>Other info</td>
+</tr>
+<tr>
+<td>Ameba</td>
+<td>Crystal</td>
+<td>.ameba.yml</td>
+<td> </td>
+</tr>
+<tr>
+<td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
+<td>Python</td>
+<td>bandit.yml, .bandit </td>
+<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repo containing: skips: \['B101'\]</td>
+</tr>
+<tr>
+<td>Brakeman</td>
+<td>Ruby</td>
+<td>config/brakeman.yml</td>
+<td> </td>
+</tr>
+<tr>
+<td>Checkstyle</td>
+<td>Java</td>
+<td>checkstyle.xml </td>
+<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+</tr>
+<tr>
+<td>Codenarc</td>
+<td>Groovy</td>
+<td>.codenarcrc</td>
+<td> </td>
+</tr>
+<tr>
+<td>credo</td>
+<td>Elixir</td>
+<td>.credo.exs</td>
+<td> </td>
+</tr>
+<tr>
+<td>CSSLint</td>
+<td>CSS</td>
+<td>.csslintrc</td>
+<td> </td>
+</tr>
+<tr>
+<td>detekt</td>
+<td>Kotlin</td>
+<td>default-detekt-config.yml, detekt.yml</td>
+<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+</tr>
+<tr>
+<td><a href="https://eslint.org/docs/user-guide/configuring">ESLint</a></td>
+<td>JavaScript, Typescript, JSON</td>
+<td>.eslintrc.js, .eslintrc.yaml,.eslintrc.yml, .eslintrc.json,<br />
+.eslintrc</td>
+<td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintDefaultOptions.ts#L26">Plugins in the UI</a><br />
+ <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L119">Other Plugins</a></td>
+</tr>
+<tr>
+<td>Hadolint</td>
+<td>Docker </td>
+<td>.hadolint.yaml</td>
+<td> </td>
+</tr>
+<tr>
+<td>JSHint</td>
+<td>JavaScript </td>
+<td>.jshintrc</td>
+<td> </td>
+</tr>
+<tr>
+<td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP CodeSniffer</a></td>
+<td>PHP</td>
+<td>phpcs.xml, phpcs.xml.dist</td>
+<td> </td>
+</tr>
+<tr>
+<td>PHPMD</td>
+<td>PHP</td>
+<td>codesize.xml</td>
+<td> </td>
+</tr>
+<tr>
+<td>PMD</td>
+<td>Apex, Java, Javascript, JSP, XML, Velocity and Visualforce</td>
+<td>ruleset.xml, apex-ruleset.xml</td>
+<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+</tr>
+<tr>
+<td>Prospector</td>
+<td>Python</td>
+<td>.landscape.yml, .landscape.yaml, landscape.yml, landscape.yaml,<br />
+.prospector.yml, .prospector.yaml, prospector.yml, prospector.yaml</td>
+<td> </td>
+</tr>
+<tr>
+<td>Pylint</td>
+<td>Python</td>
+<td>pylintrc, .pylintrc </td>
+<td><a href="https://github.com/codacy/codacy-pylint/blob/master/build.sbt#L39">Plugins</a> </td>
+</tr>
+<tr>
+<td>RemarkLint</td>
+<td>Markdown</td>
+<td>.remarkrc, .remarkrc.json, .remarkrc.yaml, .remarkrc.yml, .remarkrc.js</td>
+<td> </td>
+</tr>
+<tr>
+<td>Rubocop</td>
+<td>Ruby </td>
+<td>.rubocop.yml</td>
+<td> </td>
+</tr>
+<tr>
+<td>ScalaStyle</td>
+<td>Scala </td>
+<td>scalastyle_config.xml, scalastyle-config.xml</td>
+<td> </td>
+</tr>
+<tr>
+<td>SCSSLint</td>
+<td>SASS </td>
+<td>.scss-lint.yml</td>
+<td> </td>
+</tr>
+<tr>
+<td>Sonar C#</td>
+<td>C#</td>
+<td>SonarLint.xml</td>
+<td> </td>
+</tr>
+<tr>
+<td>Spotbugs</td>
+<td>Java, Scala</td>
+<td>findbugs.xml, findbugs-includes.xml, findbugs-excludes.xml</td>
+<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+</tr>
+<tr>
+<td>Stylelint</td>
+<td>LESS, SASS, CSS</td>
+<td>.stylelintrc, stylelint.config.js, .stylelintrc.json, .stylelintrc.yaml, .stylelintrc.js, stylelintrc.yml</td>
+<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+</tr>
+<tr>
+<td>SwiftLint</td>
+<td>Swift</td>
+<td>.swiftlint.yml</td>
+<td> </td>
+</tr>
+<tr>
+<td>Tailor</td>
+<td>Swift</td>
+<td> .tailor.yml</td>
+<td> </td>
+</tr>
+<tr>
+<td>TSLint</td>
+<td>TypeScript</td>
+<td>tslint.json</td>
+<td> </td>
+</tr>
+<tr>
+<td>tsqllint</td>
+<td>SQL</td>
+<td>.tsqllintrc</td>
+<td> </td>
+</tr>
+<tr>
+<td>Revive</td>
+<td>Go</td>
+<td>revive.toml</td>
+<td> </td>
+</tr>
+</tbody>
+</table>
+
+For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
 
 ## 5. Configuring the repository root directory for analysis
 
-By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a [Codacy configuration file](/hc/en-us/articles/115002130625-Codacy-Configuration-File).
-This file needs to be named **".codacy.yaml"** or **".codacy.yml"** and must be placed in the repository's root.
+By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a [Codacy configuration file](/hc/en-us/articles/115002130625-Codacy-Configuration-File). This file needs to be named **".codacy.yaml"** or **".codacy.yml"** and must be placed in the repository's root.
 
 See example below:
 
-```yaml
----
-engines:
-    rubocop:
-    enabled: true
-    exclude_paths:
-        - config/engines.yml
-    base_sub_dir: test/baseDir
-```
+    ---
+    engines:
+     rubocop:
+     enabled: true
+     exclude_paths:
+     - config/engines.yml
+     base_sub_dir: test/baseDir

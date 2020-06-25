@@ -1,4 +1,4 @@
-# Administrative Permissions
+# Administrative permissions
 
 Organization permissions allow fine-grained control over your organization's members and repositories.
 
@@ -7,16 +7,12 @@ All organizations have an Administrators team. Each member of this team is an a
 Any member of the Administrators team has full read/write permissions. You can view the actions available per permission level here:
 
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
-<tr class="odd">
-<td></td>
-<td><strong>Organization</strong></td>
+<tr>
+<td colspan="2"><strong>Organization</strong></td>
+<td>&nbsp;</td>
 </tr>
-<tr class="even">
+<tr>
 <td><strong>Admin</strong></td>
 <td><ul>
 <li>Add/Remove members</li>
@@ -34,29 +30,24 @@ Any member of the Administrators team has full read/write permissions. You can 
 </tbody>
 </table>
 
-For users that don't have Admin permissions, they will need to be added to a [team](/hc/en-us/articles/360009340553).
-When adding users to a team, the Administrator can decide the level of permissions each team member should have for the repositories within that team. 
+For users that don't have Admin permissions, they will need to be added to a [team](/hc/en-us/articles/360009340553). When adding users to a team, the Administrator can decide the level of permissions each team member should have for the repositories within that team. 
 
 <table>
-<colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
-</colgroup>
 <tbody>
-<tr class="odd">
-<td> </td>
-<td><strong>Team</strong></td>
+<tr>
+<td colspan="2"><strong>Team</strong></td>
+<td>&nbsp;</td>
 </tr>
-<tr class="even">
+<tr>
 <td><strong>Read</strong></td>
 <td><ul>
 <li>See repository issues and metrics</li>
 <li>Add repositories to the Administrators team (to add repo to a specific team needs to have write permissions)</li>
 </ul></td>
 </tr>
-<tr class="odd">
+<tr>
 <td><strong>Write</strong></td>
-<td>Same as Read permissions plus: 
+<td> Same as Read permissions plus: 
 <ul>
 <li>Add repositories to specific teams</li>
 <li>Add/Remove integrations of team repositories</li>
