@@ -79,7 +79,7 @@ jobs:
 
       - name: Deploy docs
         run: |
-          mike deploy ${GITHUB_REF##*/release-} --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --force
+          mike deploy ${GITHUB_REF##*/release/} --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --force
 
   deploy:
     name: deploy
