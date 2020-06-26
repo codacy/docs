@@ -2,7 +2,7 @@
 
 As a wise man once said, "You can't please everyone", and that is true for code patterns. But don't you worry! You can choose from a range of patterns to fit your needs.
 
-## 1. Pattern details and filters
+## Pattern details and filters
 
 Each pattern has a title and a short description. To see a detailed explanation you can click on Show Details in the top right corner (mouse over the pattern and the Show Details option will appear):
 
@@ -16,23 +16,23 @@ You can filter the patterns by category using the side menu: 
 
 ### The issues detected by Codacy belong to one of the following categories:
 
-**Code Style** - Code formatting and syntax problems. Ex: variable name style, enforce the use of brackets and quotation marks
+-   **Code Style:** Code formatting and syntax problems. For example, variable names style, enforcing the use of brackets and quotation marks
 
-**Error Prone** - Code that may hide bugs and language keywords that should be used with caution. Ex: == in Javascript or Option.get in Scala
+-   **Error Prone:** Code that may hide bugs and language keywords that should be used with caution. For example, the operator `==` in Javascript or `Option.get` in Scala
 
-**Code Complexity** - Highly complex methods and classes that should be refactored
+-   **Code Complexity:** High complexity methods and classes that should be refactored
 
-**Performance** - Code that could have performance problems
+-   **Performance:** Code that could have performance problems
 
-**Compatibility** - Used mainly for frontend code, detects compatibility problems across different browser versions
+-   **Compatibility:** Used mainly for frontend code, detects compatibility problems across different browser versions
 
-**Unused Code** - Unused variables and methods, code that can't be reached
+-   **Unused Code:** Unused variables and methods, code that can't be reached
 
-**Security** - All security problems
+-   **Security:** All security problems
 
-**Documentation** - Detects methods and classes that do not have the correct comment annotations
+-   **Documentation:** Detects methods and classes that do not have the correct comment annotations
 
-## 2. Configure your repository patterns
+## Configure your repository patterns
 
 To configure the patterns used to analyse your repository simply click on the checkbox on the left of the title:
 
@@ -42,28 +42,28 @@ When you change the enabled patterns you can reanalyse your repository. To do th
 
 ![](/images/b76fc1f9e8dab5a1db65856b0dd09ce79a156a013573cdef5a700e823dc53547.png)
 
-## 3. Account vs Repository Patterns
+## Account vs repository patterns
 
-###  Account Patterns
+### Account patterns
 
 Here you can change the default selection of patterns by enabling / disabling  them for all future repositories added by you. Just
-go to **Account Settings** &gt; **Default Patterns**:
+go to **Account Settings** and open **Default Patterns**:
 
 ![](/images/Screen_Shot_2018-01-12_at_11.21.22.png)
 
-### Repository Patterns
+### Repository patterns
 
-Here you can specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. You can go to **Code patterns:**
+Here you can specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. You can go to **Code patterns**:
 
 ![](/images/Screen_Shot_2019-06-18_at_17.57.58.png)
   
-## 4. I have my own tool configuration file
+## I have my own tool configuration file
 
 If you have configuration files for your static analysis tool of choice, just add it to the root of your repository and Codacy will pick it up automatically.
 
 **Supported Configuration files**
 
-Codacy currently supports configuration files for several tools. To have results accordingly to your configuration file, you need to go to the Code Patterns view and select "Configuration file" for the respective tool and select the option as shown in the example below.
+Codacy currently supports configuration files for several tools. To have results according to your configuration file, you need to go to the Code Patterns view, select **Configuration file** for the respective tool, and select the option as shown in the example below.
 
 ![](/images/Screen_Shot_2017-10-09_at_18.54.12.png)
 
@@ -253,7 +253,7 @@ The known file names for each tool are the following:
 
 For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
 
-## 5. Configuring the repository root directory for analysis
+## Configuring the repository root directory for analysis
 
 By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a [Codacy configuration file](/hc/en-us/articles/115002130625-Codacy-Configuration-File). This file needs to be named **".codacy.yaml"** or **".codacy.yml"** and must be placed in the repository's root.
 

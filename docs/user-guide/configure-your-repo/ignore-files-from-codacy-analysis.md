@@ -10,31 +10,33 @@ In some cases, you can also ignore some files using your own configuration files
 
 By default, Codacy also ignores files matching the following regular expressions:
 
-    .*[\.-]min\.css
-    .*[\.-]min\.js
-    .*node_modules/.*
-    .*bower_components
-    .*vendor/.*
-    .*third[_-]?[Pp]arty
-    .*docs?/.*
-    .*samples
-    .*releases?/.*
-    .*builds
-    .*dist/.*
-    .*external
-    .*libs/.*
-    .*d3\.js
-    .*angular(-resource|)?\.js
-    .*select2(-resource|)?\.js
-    .*-ace\.js
-    .*typeahead\.js
-    .*jquery-ui\.js
-    .*reveal\.js
-    .*three\.js
-    .*chart\.js
-    .*jquery\.js
-    .*underscore\.js
-    .*lodash\.js
-    .*bootstrap\.js
-    .*bootstrap\.css
-    .*font-awesome\.css
+```text
+.*[\.-]min\.css
+.*[\.-]min\.js
+.*node_modules/.*
+.*bower_components
+.*vendor/.*
+.*third[_-]?[Pp]arty
+.*docs?/.*
+.*samples
+.*releases?/.*
+.*builds
+.*dist/.*
+.*external
+.*libs/.*
+.*d3\.js
+.*angular(-resource|)?\.js
+.*select2(-resource|)?\.js
+.*-ace\.js
+.*typeahead\.js
+.*jquery-ui\.js
+.*reveal\.js
+.*three\.js
+.*chart\.js
+.*jquery\.js
+.*underscore\.js
+.*lodash\.js
+.*bootstrap\.js
+.*bootstrap\.css
+.*font-awesome\.css
+```

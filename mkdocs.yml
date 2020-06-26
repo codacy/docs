@@ -115,8 +115,8 @@ plugins:
               "hc/en-us/articles/207994025-Commits-View.md": "user-guide/your-repositories/commits-view.md"
               "hc/en-us/articles/207994335.md": "user-guide/configure-your-repo/code-patterns.md"
               "hc/en-us/articles/207994335-Code-Patterns.md": "user-guide/configure-your-repo/code-patterns.md"
-              "hc/en-us/articles/207994395.md": "user-guide/configure-your-repo/language-extensions.md"
-              "hc/en-us/articles/207994395-Language-Extensions.md": "user-guide/configure-your-repo/language-extensions.md"
+              "hc/en-us/articles/207994395.md": "user-guide/configure-your-repo/file-extensions.md"
+              "hc/en-us/articles/207994395-File-Extensions.md": "user-guide/configure-your-repo/file-extensions.md"
               "hc/en-us/articles/207994675.md": "user-guide/integrations/project-api.md"
               "hc/en-us/articles/207994675-Project-API.md": "user-guide/integrations/project-api.md"
               "hc/en-us/articles/207994725.md": "user-guide/supported-technologies/tool-developer-guide.md"
@@ -401,7 +401,7 @@ nav:
                       - user-guide/configure-your-repo/codacy-configuration-file.md
                       - user-guide/configure-your-repo/ignore-files-from-codacy-analysis.md
                       - user-guide/configure-your-repo/submodules-how-to-enable-them.md
-                      - user-guide/configure-your-repo/language-extensions.md
+                      - user-guide/configure-your-repo/file-extensions.md
                       - user-guide/configure-your-repo/specifying-language.md
                       - user-guide/configure-your-repo/specifying-your-python-version.md
                       - user-guide/configure-your-repo/php_codesniffer-specifying-your-php-version.md

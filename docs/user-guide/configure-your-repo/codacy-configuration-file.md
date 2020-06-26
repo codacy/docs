@@ -10,7 +10,7 @@ To add custom extensions to a language you can also add an entry in this file, b
 
 If you want to disable an engine that needs to be done directly in the [Code Patterns](/hc/en-us/articles/207994335-Code-Patterns) page.
 
-The configuration file name must be **"****.codacy.yaml"** or **".codacy.yml"** and should be placed in the root of
+The configuration file name must be **".codacy.yaml"** or **".codacy.yml"** and should be placed in the root of
 your repository.
 
     ---
@@ -52,54 +52,58 @@ Please note that if the configuration file exists in your repository, any 'exclu
 
 You can use the [codacy-analysis-cli](https://github.com/codacy/codacy-analysis-cli#install) to validate the contents of your configuration file. Run the following command in the folder where the configuration file is located:
 
-    codacy-analysis-cli validate-configuration --directory `pwd`
+```bash
+codacy-analysis-cli validate-configuration --directory `pwd`
+```
 
 ## Which tools can be configured and which name should I use?
 
 All tools that Codacy supports are configurable using our configuration file. The names that should be used for each of them are:
 
-    ameba
-    bandit
-    brakeman
-    bundleraudit
-    checkstyle
-    codacy-scalameta-pro
-    codenarc
-    coffeelint
-    cppcheck
-    credo
-    csslint
-    detekt
-    eslint
-    findbugs
-    findbugssec
-    flawfinder
-    golint
-    govet
-    hadolint
-    jacksonlinter
-    jshint
-    nsp
-    phpcs
-    phpmd
-    pmd-legacy
-    pmd
-    prospector
-    psscriptanalyzer
-    pylint
-    pylintpython3
-    remark-int
-    rubocop
-    scalastyle
-    scsslint
-    shellcheck
-    sonarscharp
-    spotbugs
-    SQLint
-    stylelint
-    swiftlint
-    tailor
-    tslint
-    tsqllint
+```text
+ameba
+bandit
+brakeman
+bundleraudit
+checkstyle
+codacy-scalameta-pro
+codenarc
+coffeelint
+cppcheck
+credo
+csslint
+detekt
+eslint
+findbugs
+findbugssec
+flawfinder
+golint
+govet
+hadolint
+jacksonlinter
+jshint
+nsp
+phpcs
+phpmd
+pmd-legacy
+pmd
+prospector
+psscriptanalyzer
+pylint
+pylintpython3
+remark-int
+rubocop
+scalastyle
+scsslint
+shellcheck
+sonarscharp
+spotbugs
+SQLint
+stylelint
+swiftlint
+tailor
+tslint
+tsqllint
+```
 
 If you have questions about Codacy configuration file, please, contact us at <support@codacy.com>.
