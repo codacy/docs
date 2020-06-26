@@ -21,18 +21,17 @@ If you are still not sure what plan to choose, tell us about your requirements a
 
 Yes, you can change your plan at any time.
 
-## I’m part of an organization. How do I change my plan?
+## I'm part of an organization. How do I change my plan?
 
 To change the plan for your organization, click on your avatar and go to **Organization**, select the organization, click on Plan and Billing, change the plan, and confirm.
 
-![plan-and-billing.png](/hc/article_attachments/360008304520/plan-and-billing.png)
+![](/images/plan-and-billing.png)
 
 ## How many users do I need to have in my organization?
 
 Users are developers contributing to the repository and any team member with access to the code analysis results on the Codacy UI. Your organization should have as many users as your repositories have contributors.
 
-For more details on how to invite team members to your organization, please read [here](/hc/en-us/articles/360009340553-Creating-and-managing-teams).
-For more information on user permissions, please read [here](/hc/en-us/articles/207280189).
+For more details on how to invite team members to your organization, please read [here](/hc/en-us/articles/360009340553-Creating-and-managing-teams). For more information on user permissions, please read [here](/hc/en-us/articles/207280189).
 
 ## How can I manage my billing details?
 
