@@ -2,7 +2,7 @@
 
 ## Skipping an analysis
 
-By default, Codacy automatically analyzes a repository whenever you push changes. You can override this behavior by adding a `[ci skip]` or `[skip ci]` tag anywhere in a commit’s title or message.
+By default, Codacy automatically analyzes a repository whenever you push changes. You can override this behavior by adding a `[ci skip]` or `[skip ci]` tag anywhere in a commit's title or message.
 
 If you later decide to build a skipped commit, you can override any skip tags by reanalyzing the commit.
 
