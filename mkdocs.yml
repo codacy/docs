@@ -363,6 +363,11 @@ plugins:
               "hc/en-us/articles/360014054759-Self-hosted-v1-1-0-for-Kubernetes.md": "release-notes/self-hosted/self-hosted-v1.1.0-for-kubernetes.md"
               "hc/en-us/articles/360014254780.md": "release-notes/self-hosted/self-hosted-v1.2.0-for-kubernetes.md"
               "hc/en-us/articles/360014254780-Self-hosted-v1-2-0-for-Kubernetes.md": "release-notes/self-hosted/self-hosted-v1.2.0-for-kubernetes.md"
+              "hc/en-us/articles/360014670040.md": "release-notes/self-hosted/self-hosted-v1.3.0-for-kubernetes.md"
+              "hc/en-us/articles/360014670040-Self-hosted-v1-3-0-for-Kubernetes.md": "release-notes/self-hosted/self-hosted-v1.3.0-for-kubernetes.md"
+              "hc/en-us/articles/360014670140.md": "release-notes/self-hosted/self-hosted-v1.4.0-for-kubernetes.md"
+              "hc/en-us/articles/360014670140-Self-hosted-v1-4-0-for-Kubernetes.md": "release-notes/self-hosted/self-hosted-v1.4.0-for-kubernetes.md"
+
 
 nav:
     - "Documentation home": "index.md"
@@ -484,6 +489,8 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
           - "Self-hosted release notes":
+                - release-notes/self-hosted/self-hosted-v1.4.0-for-kubernetes.md
+                - release-notes/self-hosted/self-hosted-v1.3.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.2.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.1.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.0.1-for-kubernetes.md
