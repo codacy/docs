@@ -85,7 +85,7 @@ jobs:
   deploy:
     name: deploy
     runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
+    if: github.ref == 'refs/heads/fix/fetch-gh-pages'
     steps:
       - name: Checkout master
         uses: actions/checkout@v2
