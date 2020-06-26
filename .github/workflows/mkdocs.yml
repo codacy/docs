@@ -42,7 +42,7 @@ jobs:
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/heads/release/v')
     steps:
-      - name: Checkout master
+      - name: Checkout release branch
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.GH_PERSONAL_ACC_TOK }}
