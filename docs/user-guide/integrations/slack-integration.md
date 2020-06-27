@@ -1,11 +1,10 @@
-# Slack
+# Slack integration
 
 After adding a repository, you may want to enable Slack integration. Codacy integrates with Slack by sending messages to a channel when new issues are found.
 
-To enable the Slack integration access the **Integrations** tab of your repository **Settings**, click on "Add integration" and select "Slack" from the list.
+To enable the Slack integration access the **Integrations** tab of your repository **Settings**, click **Add integration** and select **Slack** from the list.
 
- <img src="/images/Jan-06-2017_15-36-45.gif" width="673" height="310" />
-Enabling Slack integration
+![Enabling Slack integration](/images/Jan-06-2017_15-36-45.gif)
 
 ## Configuration
 
@@ -17,7 +16,7 @@ To set up a new WebHook:
 2.  Select the channel where you want to be notified and click "Add Incoming WebHooks Integration"
 3.  Copy the generated URL and use it on Codacy.
 
-![](/images/slack-webhook_2.png)
+    ![](/images/slack-webhook_2.png)
 
 4.  Save Settings on Slack
 
@@ -34,4 +33,4 @@ Refresh Codacy page to see the green light.
 
 After configuring your Slack integration with your server settings, Codacy will start commenting on Slack whenever it finds new issues.
 
-![Slack test notification](/images/Screen_Shot_2015-09-08_at_09.17.35.png)
+![Slack test notification](/images/Screen Shot 2015-09-08 at 09.17.35.png)
