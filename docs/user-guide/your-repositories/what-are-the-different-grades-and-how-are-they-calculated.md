@@ -18,8 +18,7 @@ Issue classification is as follows:
 -   Security
 -   Unused Code
 
-Every issue impacts the grade of its category.
-Category grading ranges from 0% - 100%, 100% being the highest grade.
+Every issue impacts the grade of its category. Category grading ranges from 0% - 100%, 100% being the highest grade.
 
 ## 3. File Grades
 

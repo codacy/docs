@@ -1,9 +1,6 @@
 # Files View
 
-## 1. File List
-
-The file list shows all the files in your repository, sortable by six different columns:
-[grade](/hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-"), filename, number of issues, code duplication, [complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity), and code coverage. There is also a search filter available.
+The file list shows all the files in your repository, sortable by six different columns: [grade](/hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-"), filename, number of issues, code duplication, [complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity), and code coverage. There is also a search filter available.
 
 This allows you to keep track or focus some of your time on files with low coverage, high complexity, too many issues, or simply a lot of duplication that could be refactored.
 

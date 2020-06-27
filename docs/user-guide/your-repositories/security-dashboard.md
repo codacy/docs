@@ -33,24 +33,16 @@ The security monitor is built using security patterns from:
 -   [Bandit](https://bandit.readthedocs.io/en/latest/plugins/index.html#complete-test-plugin-listing)
 -   [Brakeman](http://brakemanscanner.org/docs/warning_types/)
 -   [Codacy Scalameta Pro](https://github.com/codacy/codacy-scalameta/tree/master/patterns-base/src/main/scala/codacy/patterns)
--   [ESLint](https://www.npmjs.com/package/eslint-plugin-security) (also:
-      [1](https://www.npmjs.com/package/eslint-config-nodesecurity),
-      [2](https://www.npmjs.com/package/eslint-plugin-scanjs-rules),
-      [3](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml) and [4](https://www.npmjs.com/package/eslint-config-secure))
--   [FindBugs](http://findbugs.sourceforge.net/bugDescriptions.html) (Codacy
-      Self-hosted only)
--   [FindBugsSecurity](https://find-sec-bugs.github.io/bugs.htm) (Codacy
-      Self-hosted only)
--   [SpotBugs](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html) (Codacy
-      Self-hosted only)
+-   [ESLint](https://www.npmjs.com/package/eslint-plugin-security) (also: [1](https://www.npmjs.com/package/eslint-config-nodesecurity), [2](https://www.npmjs.com/package/eslint-plugin-scanjs-rules), [3](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml) and [4](https://www.npmjs.com/package/eslint-config-secure))
+-   [FindBugs](http://findbugs.sourceforge.net/bugDescriptions.html) (Codacy Self-hosted only)
+-   [FindBugsSecurity](https://find-sec-bugs.github.io/bugs.htm) (Codacy Self-hosted only)
+-   [SpotBugs](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html) (Codacy Self-hosted only)
 -   [Sonar C#](https://rules.sonarsource.com/csharp/type/Vulnerability)
 -   [Sonar VB.NET](https://rules.sonarsource.com/vbnet)
 -   [PMD](https://pmd.github.io/pmd-6.21.0/)
 -   [PHP Mess Detector](https://phpmd.org/rules/)
--   [Pylint](http://pylint.pycqa.org/en/1.9/technical_reference/features.html)
-      (Python 2)
--   [Pylint](http://pylint.pycqa.org/en/stable/technical_reference/features.html)
-      (Python 3)
+-   [Pylint](http://pylint.pycqa.org/en/1.9/technical_reference/features.html) (Python 2)
+-   [Pylint](http://pylint.pycqa.org/en/stable/technical_reference/features.html) (Python 3)
 -   [RuboCop](https://rubocop.readthedocs.io/en/latest/cops/)
 -   [Cppcheck](http://cppcheck.sourceforge.net/)
 -   [Shellcheck](https://github.com/koalaman/shellcheck/wiki/Checks)
@@ -69,7 +61,7 @@ The security monitor is built using security patterns from:
 -   **XSS:** XSS enables attackers to inject client-side scripts into web pages viewed by other users.
 -   **Input validation:** Input not validated may originate SQL Injection attacks for instance.
 -   **File access:** An attacker may use special paths to access files that should not be accessible.
--   **HTTP&#x3A;** HTTP headers are a common attack vector for malign users.
+-   **HTTP:** HTTP headers are a common attack vector for malign users.
 -   **Cookies:** An HTTP cookie is a small piece of data sent from a website and stored on the user's computer by the browser while the user is browsing.
 -   **Unexpected behaviour:** Assigning values to private APIs might lead to unexpected behaviour.
 -   **Mass assignment:** Mass assignment is a feature of Rails which allows an application to create a record from the values of a hash.
@@ -110,4 +102,4 @@ On the Security dashboard view you can also:
 
 You just have to go to your repository's Security Tab, click on <img src="/images/morebutton.png" width="80" height="32" alt="morebutton.png" /> and select the relevant option.
 
-![downloadpatternscsv.gif](/images/downloadpatternscsv.gif)
+![](/images/downloadpatternscsv.gif)
