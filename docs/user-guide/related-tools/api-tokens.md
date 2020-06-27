@@ -8,6 +8,8 @@ To generate an API Token, go to your **Account Settings** and click on the tab *
 
 To revoke access to the Codacy API, you must remove the corresponding API Token from the list. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the following error reply:
 
-    {"error":"not found"}
+```text
+{"error":"not found"}
+```
 
 To send coverage for your repository, you need the [Project API token](/hc/en-us/articles/207279819-Coverage).
