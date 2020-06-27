@@ -1,6 +1,6 @@
-# Tool Developer Guide
+# Tool developer guide
 
-Integrate an external tool on Codacy
+## Integrate an external tool on Codacy
 
 By creating a docker and writing code to handle the tool invocation and output, you can integrate the tool of your choice on Codacy!
 
@@ -10,7 +10,7 @@ We use external tools at Codacy; in this tutorial, we explain how you can integr
 
 You can check the code of an already implemented tool and, if you wish, fork it to start yours. You are free to modify it and use it for your integration.
 
-We also have a <a href="/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala" class="doc-link">tutorial to integrate your tool using our Scala templates</a>.
+We also have a [tutorial to integrate your tool using our Scala templates](/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala).
 
 ## Requirements
 
@@ -36,25 +36,25 @@ We also have a <a href="/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-
 [.codacy.json](https://docs.codacy.com/docs/tool-developer-guide)
 
 ```json
+{
+  "files" : ["foo/bar/baz.js", "foo2/bar/baz.php"],
+  "tools":[
     {
-      "files" : ["foo/bar/baz.js", "foo2/bar/baz.php"],
-      "tools":[
+      "name":"jshint",
+      "patterns":[
         {
-          "name":"jshint",
-          "patterns":[
+          "patternId":"latedef",
+          "parameters":[
             {
-              "patternId":"latedef",
-              "parameters":[
-                {
-                  "name":"latedef",
-                  "value":"vars"
-                }
-              ]
+              "name":"latedef",
+              "value":"vars"
             }
           ]
         }
       ]
     }
+  ]
+}
 ```
 
 If **/src/.codacy.json** does not exist or any of its contents (files or patterns) is not available, you should invoke the tool for all files from **/src** (files should be searched recursively for all folders in **/src**) and check them with the default patterns.
@@ -63,92 +63,84 @@ If **/src/.codacy.json** does not exist or any of its contents (files or pattern
 
 ## Setup
 
-**1. Write the docker file that will run the tool.**
-It must have a binary entry point without any parameters. 
+1.  Write the docker file that will run the tool.
 
-**2. Write a _patterns.json_ with the configuration of your tool.**
-This file must be located on **/docs/patterns.json**.
+    It must have a binary entry point without any parameters. 
 
--   **name:** Unique identifier of the tool (lower-case letters without
-      spaces)
+2.  Write a _patterns.json_ with the configuration of your tool.
 
--   **patterns:** The patterns that the tool provides
+    This file must be located on **/docs/patterns.json**.
 
-    -   **patternId:** Unique identifier of the pattern (lower-case
-          letters without spaces)
+    -   **name:** Unique identifier of the tool (lower-case letters without
+          spaces)
 
-    -   **level:** Severity level of the issue \*
+    -   **patterns:** The patterns that the tool provides
 
-    -   **category:** Category of the issue \*
-
-    -   **parameters:** Parameters received by the pattern
-
-        -   **name:** Unique identifier of the parameter (lower-case
+        -   **patternId:** Unique identifier of the pattern (lower-case
               letters without spaces)
-        -   **default:** Default value of the parameter
 
-[patterns.json](https://docs.codacy.com/docs/tool-developer-guide)
+        -   **level:** Severity level of the issue, one of **Error**, **Warning**, **Info**
 
-```json
-    {
-      "name":"jshint",
-      "patterns":[
+        -   **category:** Category of the issue, one of **ErrorProne**, **CodeStyle**, **UnusedCode**, **Security**, **Compatibility**, **Performance**, **Documentation**
+
+        -   **parameters:** Parameters received by the pattern
+
+            -   **name:** Unique identifier of the parameter (lower-case
+                  letters without spaces)
+            -   **default:** Default value of the parameter
+
+    [patterns.json](https://docs.codacy.com/docs/tool-developer-guide)
+
+    ```json
         {
-          "patternId":"latedef",
-          "level": "Error",
-          "category": "UnusedCode",
-          "parameters":[
+          "name":"jshint",
+          "patterns":[
             {
-              "name":"latedef",
-              "default":"vars"
+              "patternId":"latedef",
+              "level": "Error",
+              "category": "UnusedCode",
+              "parameters":[
+                {
+                  "name":"latedef",
+                  "default":"vars"
+                }
+              ]
             }
           ]
         }
-      ]
-    }
-```
+    ```
 
-### Levels and Categories
+3.  Write the code to run the tool.
 
-For **level** types we have:
+    You are free to write this code in the language you want. Here you have to invoke the tool according to the configuration.
 
--   **Error**, **Warning**, **Info**
+    After you have your results from the tool, you should print them to the standard output in our **Result** format, one result per line.
 
-For **category** types we have:
+    The filename should not include the prefix "/src/"
 
--   **ErrorProne**, **CodeStyle**, **UnusedCode**, **Security**, **Compatibility**, **Performance**, **Documentation**
+    !!! example
+        absolute path: /src/folder/file.js
+        filename path: folder/file.js
 
-**3. Write the code to run the tool.**
+    ```json
+        {
+          "filename":"codacy/core/test.js",
+          "message":"found this in your code",
+          "patternId":"latedef",
+          "line":2
+        }
+    ```
 
-You are free to write this code in the language you want. Here you have to invoke the tool according to the configuration.
+    If you are not able to run the analysis for any of the files requested you should return an error for each one of them to the standard output in our **Error** format.
 
-After you have your results from the tool, you should print them to the standard output in our **Result** format, one result per line.
+    Error
 
-The filename should not include the prefix "/src/"
-
-!!! example
-    absolute path: /src/folder/file.js
-    filename path: folder/file.js
-
-```json
-    {
-      "filename":"codacy/core/test.js",
-      "message":"found this in your code",
-      "patternId":"latedef",
-      "line":2
-    }
-```
-
-If you are not able to run the analysis for any of the files requested you should return an error for each one of them to the standard output in our **Error** format.
-
-Error
-
-```json
-    {
-      "filename":"codacy/core/test.js",
-      "message":"could not parse the file",
-    }
-```
+    ```json
+        {
+          "filename":"codacy/core/test.js",
+          "message":"could not parse the file",
+        }
+    ```
 
 ## Documentation
 
@@ -156,39 +148,39 @@ At Codacy we strive to provide the best value to our users and, to accomplish t
 
 At this point, your tool has everything it needs to run, but there is one other really important thing that you should do before submitting your docker: the documentation for your tool.
 
-Your files for this section should be placed in **/docs/description/**.
+Your files for this section should be placed in `/docs/description/`.
 
 In order to provide more details you can create:
 
--   A single /docs/description/description.json
--   **\[Optional]** A /docs/description/&lt;PATTERN-ID>.md for each pattern
+-   A single `/docs/description/description.json`
+-   Optional: A `/docs/description/<PATTERN-ID>.md` for each pattern
 
-In the **description.json** you define the title for the pattern, brief description, time to fix (in minutes), and also a description of the parameters in the following format:
+In the `description.json` you define the title for the pattern, brief description, time to fix (in minutes), and also a description of the parameters in the following format:
 
 [description.json](https://docs.codacy.com/docs/tool-developer-guide)
 
 ```json
-    [
+[
+  {
+    "patternId":"latedef",
+    "title":"This is a title",
+    "description":"This is a description",
+    "timeToFix": 5,
+    "parameters":[
       {
-        "patternId":"latedef",
-        "title":"This is a title",
-        "description":"This is a description",
-        "timeToFix": 5,
-        "parameters":[
-          {
-            "name":"latedef",
-            "description":"this is a param description"
-          }
-        ]
+        "name":"latedef",
+        "description":"this is a param description"
       }
     ]
+  }
+]
 ```
 
-**\[Optional] **To give a more detailed explanation about the issue, you should define the &lt;PATTERN-ID>.md
+Optional: To give a more detailed explanation about the issue, you should define the `<PATTERN-ID>.md`.
 
 UnusedModifier.md
 
-````markdown
+```markdown
     Fields in interfaces are automatically public static final, and methods are public abstract.
     Classes or interfaces nested in an interface are automatically public and static (all nested interfaces are automatically static).
 
@@ -215,57 +207,53 @@ You should explain the *what* and *why* of the issue. Adding an example
 is always a nice way to help other people understand the problem. For a
 more thorough explanation you can also add a link at the end referring a
 more complete source.
-``` 
+```
 
 ## Tests
 
 After all the docker is prepared you can now test your work.
 
-To do it you should write test files and place them in **/docs/tests**,
-for example for PHP, **/docs/tests/UnusedModifier.php**.
+To do it you should write test files and place them in **/docs/tests**, for example for PHP, **/docs/tests/UnusedModifier.php**.
 
 Each test is composed by two parts.
 
-- Identification of the patterns on the file
-- Identification of the errors on the file
+-   Identification of the patterns on the file
+-   Identification of the errors on the file
 
 The pattern identification is placed in the beginning of the file in the following format:
 
-- &lt;LANGUAGE\_COMMENT&gt;\#Patterns:
-  &lt;PATTERN\_ID&gt;,&lt;PATTERN\_ID&gt;,...
+-   `<LANGUAGE_COMMENT>#Patterns: <PATTERN_ID>,<PATTERN_ID>,...`
 
 The error identification is placed in the line before the error should happen:
 
-- &lt;LANGUAGE\_COMMENT&gt;\#&lt;ERROR\_LEVEL&gt;: &lt;PATTERN\_ID&gt;
+-   `<LANGUAGE_COMMENT>#<ERROR_LEVEL>: <PATTERN_ID>`
 
 Instead of commenting in the line before the error, you can alternatively specify the line of the warning with this syntax:
 
-- &lt;LANGUAGE\_COMMENT&gt;\#Issue: {"severity":
-  "&lt;ERROR\_LEVEL&gt;", "line": &lt;LINE\_NUMBER\_WITH\_ISSUE&gt;,
-  "patternId": "PATTERN\_ID"}
+-   `<LANGUAGE_COMMENT>#Issue: {"severity": "<ERROR_LEVEL>", "line": <LINE_NUMBER_WITH_ISSUE>, "patternId": "PATTERN_ID"}`
 
 
 UnusedModifier.php
 ```php
-    //#Patterns: UnusedModifier
-    public interface Foo {
-       //#Warn: UnusedModifier
-       public abstract void bar();         // both abstract and public are ignored by the compiler
-       //#Warn: UnusedModifier
-       public static final int X = 0;         // public, static, and final all ignored
-       //#Warn: UnusedModifier
-       public static class Bar {}             // public, static ignored
-       //#Warn: UnusedModifier
-       public static interface Baz {}         // ditto
+//#Patterns: UnusedModifier
+public interface Foo {
+    //#Warn: UnusedModifier
+    public abstract void bar();         // both abstract and public are ignored by the compiler
+    //#Warn: UnusedModifier
+    public static final int X = 0;      // public, static, and final all ignored
+    //#Warn: UnusedModifier
+    public static class Bar {}          // public, static ignored
+    //#Warn: UnusedModifier
+    public static interface Baz {}      // ditto
 
-       void foo();
-    }
+    void foo();
+}
 
-    public class Bar {
-       //#Warn: UnusedModifier
-       public static interface Baz {} // static ignored
-    }
-````
+public class Bar {
+    //#Warn: UnusedModifier
+    public static interface Baz {} // static ignored
+}
+```
 
 To run this use our test repository available [here](https://github.com/codacy/codacy-plugins-test).
 
@@ -276,15 +264,15 @@ You just need the docker image built in your local repo and then follow the step
 ### Running the docker
 
 ```sh
-docker run -t \\
---net=none \\
---privileged=false \\
---cap-drop=ALL \\
---user=docker \\
---rm=true \\
--v &lt;PATH-TO-FOLDER-WITH-FILES-TO-CHECK&gt;:/src:ro \\
+docker run -t \
+--net=none \
+--privileged=false \
+--cap-drop=ALL \
+--user=docker \
+--rm=true \
+-v <PATH-TO-FOLDER-WITH-FILES-TO-CHECK>:/src:ro \
 
-&lt;YOUR-DOCKER-NAME&gt;:&lt;YOUR-DOCKER-VERSION&gt;
+<YOUR-DOCKER-NAME>:<YOUR-DOCKER-VERSION>
 ```
 
 ### Docker restrictions
