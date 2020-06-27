@@ -9,7 +9,7 @@
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
       
-        <link rel="canonical" href="http://docs.dev.codacy.org/user-guide/integrations/slack/">
+        <link rel="canonical" href="http://docs.dev.codacy.org/user-guide/integrations/jira-integration/">
       
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
@@ -17,7 +17,7 @@
     
     
       
-        <title>Slack - Codacy docs</title>
+        <title>Jira integration - Codacy docs</title>
       
     
     
@@ -61,7 +61,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#slack" class="md-skip">
+        <a href="#jira-integration" class="md-skip">
           Skip to content
         </a>
       
@@ -406,8 +406,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../your-repositories/quality-settings/" title="Quality Settings" class="md-nav__link">
-      Quality Settings
+    <a href="../../your-repositories/quality-settings/" title="Quality settings" class="md-nav__link">
+      Quality settings
     </a>
   </li>
 
@@ -418,8 +418,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../your-repositories/managing-branches/" title="Managing Branches" class="md-nav__link">
-      Managing Branches
+    <a href="../../your-repositories/managing-branches/" title="Managing branches" class="md-nav__link">
+      Managing branches
     </a>
   </li>
 
@@ -430,8 +430,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../your-repositories/post-commit-hooks/" title="Post-Commit Hooks" class="md-nav__link">
-      Post-Commit Hooks
+    <a href="../../your-repositories/post-commit-hooks/" title="Post-commit hooks" class="md-nav__link">
+      Post-commit hooks
     </a>
   </li>
 
@@ -520,8 +520,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configure-your-repo/generate-coverage/" title="Generate Coverage" class="md-nav__link">
-      Generate Coverage
+    <a href="../../configure-your-repo/generate-coverage/" title="Generate coverage" class="md-nav__link">
+      Generate coverage
     </a>
   </li>
 
@@ -742,8 +742,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configure-your-repo/language-extensions/" title="Language Extensions" class="md-nav__link">
-      Language Extensions
+    <a href="../../configure-your-repo/file-extensions/" title="File extensions" class="md-nav__link">
+      File extensions
     </a>
   </li>
 
@@ -844,8 +844,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../supported-technologies/tool-developer-guide/" title="Tool Developer Guide" class="md-nav__link">
-      Tool Developer Guide
+    <a href="../../supported-technologies/tool-developer-guide/" title="Tool developer guide" class="md-nav__link">
+      Tool developer guide
     </a>
   </li>
 
@@ -1244,8 +1244,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../github-integration/" title="GitHub Integration" class="md-nav__link">
-      GitHub Integration
+    <a href="../github-integration/" title="GitHub integration" class="md-nav__link">
+      GitHub integration
     </a>
   </li>
 
@@ -1256,8 +1256,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../gitlab-integration/" title="GitLab Integration" class="md-nav__link">
-      GitLab Integration
+    <a href="../gitlab-integration/" title="GitLab integration" class="md-nav__link">
+      GitLab integration
     </a>
   </li>
 
@@ -1268,8 +1268,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../bitbucket-cloud-integration/" title="Bitbucket Cloud Integration" class="md-nav__link">
-      Bitbucket Cloud Integration
+    <a href="../bitbucket-cloud-integration/" title="Bitbucket Cloud integration" class="md-nav__link">
+      Bitbucket Cloud integration
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../slack-integration/" title="Slack integration" class="md-nav__link">
+      Slack integration
     </a>
   </li>
 
@@ -1289,14 +1301,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Slack
+        Jira integration
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
         </span>
       </label>
     
-    <a href="./" title="Slack" class="md-nav__link md-nav__link--active">
-      Slack
+    <a href="./" title="Jira integration" class="md-nav__link md-nav__link--active">
+      Jira integration
     </a>
     
       
@@ -1309,8 +1321,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
+  <a href="#creating-an-issue-on-jira" class="md-nav__link">
+    Creating an issue on Jira
   </a>
   
 </li>
@@ -1328,20 +1340,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../jira/" title="JIRA" class="md-nav__link">
-      JIRA
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../youtrack-integration/" title="YouTrack Integration" class="md-nav__link">
-      YouTrack Integration
+    <a href="../youtrack-integration/" title="YouTrack integration" class="md-nav__link">
+      YouTrack integration
     </a>
   </li>
 
@@ -1364,8 +1364,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../webhook-notifications/" title="WebHook Notifications" class="md-nav__link">
-      WebHook Notifications
+    <a href="../webhook-notifications/" title="WebHook notifications" class="md-nav__link">
+      WebHook notifications
     </a>
   </li>
 
@@ -1464,8 +1464,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../other/special-thanks/" title="Special Thanks" class="md-nav__link">
-      Special Thanks
+    <a href="../../other/special-thanks/" title="Special thanks" class="md-nav__link">
+      Special thanks
     </a>
   </li>
 
@@ -3333,31 +3333,16 @@
                   
                 
                 
-                <h1 id="slack">Slack<a class="headerlink" href="#slack" title="Permanent link">&para;</a></h1>
-<p>After adding a repository, you may want to enable Slack integration. Codacy integrates with Slack by sending messages to a channel when new issues are found.</p>
-<p>To enable the Slack integration access the <strong>Integrations</strong> tab of your repository <strong>Settings</strong>, click on "Add integration" and select "Slack" from the list.</p>
-<p><img src="/images/Jan-06-2017_15-36-45.gif" width="673" height="310" />
-Enabling Slack integration</p>
-<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">&para;</a></h2>
-<p><strong>Incoming WebHook</strong></p>
-<p>To set up a new WebHook:</p>
-<ol>
-<li>Access the "Incoming WebHooks" page on the App Directory of your Slack account.</li>
-<li>Select the channel where you want to be notified and click "Add Incoming WebHooks Integration"</li>
-<li>Copy the generated URL and use it on Codacy.</li>
-</ol>
-<p><img alt="" src="/images/slack-webhook_2.png" /></p>
-<ol>
-<li>Save Settings on Slack</li>
-</ol>
-<p><strong>Channel</strong></p>
-<p>The name of the channel where the notifications will be sent. This value is optional and it will override the default channel of the WebHook.</p>
-<p>After filling both fields you need to click the Save button and everything should be setup correctly.
-You can use the Test button to send a test notification to your Slack channel.</p>
-<p>Refresh Codacy page to see the green light.</p>
-<p><img alt="" src="/images/Screen_Shot_2016-12-02_at_14.52.45.png" /></p>
-<p>After configuring your Slack integration with your server settings, Codacy will start commenting on Slack whenever it finds new issues.</p>
-<p><img alt="Slack test notification" src="/images/Screen_Shot_2015-09-08_at_09.17.35.png" /></p>
+                <h1 id="jira-integration">Jira integration<a class="headerlink" href="#jira-integration" title="Permanent link">&para;</a></h1>
+<p>After adding a repository, you may want to enable the Jira integration to manually create issues on your Jira board. </p>
+<p>To set up, navigate to your repository's <strong>Settings</strong>, tab <strong>Integrations</strong>, click <strong>Add integration</strong>, select <strong>Jira</strong>, fill in all the fields, and click <strong>Save</strong>.</p>
+<p>The integration only support the Basic authentication method. Use your email address as username and an API token as the password. Follow the instructions to <a href="https://confluence.atlassian.com/x/Vo71Nw">generate a Jira API token</a>.</p>
+<p><img alt="Enabling Jira integration" src="/images/Sep-04-2019_10-40-19.gif" /></p>
+<p>Once the Jira integration is set up, browse to <strong>Settings</strong>, tab <strong>Integrations</strong>, select <strong>Advanced</strong>, and make sure to fill in all the fields, including the Labels.</p>
+<p><img alt="" src="/images/test3.gif" /></p>
+<h2 id="creating-an-issue-on-jira">Creating an issue on Jira<a class="headerlink" href="#creating-an-issue-on-jira" title="Permanent link">&para;</a></h2>
+<p>After configuring your Jira integration with your server settings, you will have additional options when browsing the existing issues on the repository that allow you to create Jira issues for results found on Codacy:</p>
+<p><img alt="Jira integration" src="/images/Jira_issue.gif" /></p>
                 
                   
                     
@@ -3365,7 +3350,7 @@ You can use the Test button to send a test notification to your Slack channel.</
 <div class="md-source-date">
   <small>
     
-      Last update: April 2, 2020
+      Last update: June 27, 2020
     
   </small>
 </div>
