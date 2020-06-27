@@ -1,14 +1,10 @@
 # Issues View
 
-Here you get an overview of all issues raised by Codacy in your repository. We arrange them in six categories. For every issue, we present information on why is this an issue, how you could solve it, and the related code pattern&lt;.
+Here you get an overview of all issues raised by Codacy in your repository. We arrange them in six categories. For every issue, we present information on why is this an issue, how you could solve it, and the related code pattern.
 
-![](/images/image-0.png)
+![The Issues View](/images/image-0.png)
 
-The Issues View
-
-![](/images/image-1.gif)
-
-An issue expanded
+![An issue expanded](/images/image-1.gif)
 
 ## 1. Issue Categories
 
@@ -29,7 +25,7 @@ Each pattern has a pre-defined severity level and at the moment, it’s not poss
 
 ## 3. Ignoring an issue
 
-For an issue you disagree with or false positives, you can either ignore that instance or disable the pattern across the whole repository. To do so, click on <img src="/images/image-2.png" width="45" height="27" /> and select the desired option.
+For an issue you disagree with or false positives, you can either ignore that instance or disable the pattern across the whole repository. To do so, click on cog wheel and select the desired option:
 
 ![](/images/image-3.gif)
 
@@ -41,7 +37,7 @@ To reinstate ignored issues, click on the **Current Issues** box, and select�
 
 ## 4. Removing a pattern
 
-When you want to remove a pattern altogether from your repository's analysis, expand the issue you’re aiming to disable the pattern for, click on <img src="/images/image-2.png" width="45" height="27" />, select **Remove pattern** and confirm your choice.
+When you want to remove a pattern altogether from your repository's analysis, expand the issue you’re aiming to disable the pattern for, click on the cog wheel, select **Remove pattern** and confirm your choice.
 
 ![](/images/image-5.gif)
 
@@ -50,16 +46,16 @@ When you want to remove a pattern altogether from your repository's analysis, ex
 
 ### 4.1. Restoring a removed pattern
 
-To restore a removed pattern, go to your repository's **Code Pattern** settings, choose the tool you’d like to enable the pattern for, find the pattern and click on the check box to enable.
+To restore a removed pattern, go to your repository's **Code Pattern** settings, choose the tool you'd like to enable the pattern for, find the pattern and click on the check box to enable.
 
 ![](/images/image-6.gif)
 
 !!! note
-    If you’re using a custom pattern configuration file, have to restore the line manually.
+    If you're using a custom pattern configuration file, have to restore the line manually.
 
 ## 5. Ignoring files
 
-You can cherry-pick files to be ignored for further analysis. To ignore a file, expand the issue, click on <img src="/images/360012544353/image-2.png" width="45" height="27" />, select **Ignore file** from the menu, and confirm.
+You can cherry-pick files to be ignored for further analysis. To ignore a file, expand the issue, click on the cog wheel, select **Ignore file** from the menu, and confirm.
 
 !!! warning
     This file is now ignored across the entire repository and for all patterns.
@@ -68,7 +64,7 @@ You can cherry-pick files to be ignored for further analysis. To ignore a f
 
 ### 5.1. Managing ignored files
 
-Ignored files are managed through **Settings > Ignore Files**.
+Ignored files are managed through **Settings**, **Ignore Files**.
 
 ![](/images/image-8.gif)
 

@@ -1,10 +1,13 @@
 # Run SpotBugs
 
-[SpotBugs](https://spotbugs.github.io/) is available for Codacy Cloud and Codacy Self-hosted, with the following plugins: [Find Security Bugs](https://find-sec-bugs.github.io/) and [FBContrib](https://github.com/mebigfatguy/fb-contrib).
+[SpotBugs](https://spotbugs.github.io/) is available for Codacy Cloud and Codacy Self-hosted, with the following plugins:
+
+-   [Find Security Bugs](https://find-sec-bugs.github.io/)
+-   [FBContrib](https://github.com/mebigfatguy/fb-contrib)
 
 To run this tool:
 
-1.  Enable the setting "Run analysis through build server" under your repository **Settings** > **General** > **Repository analysis**
+1.  Enable the setting **Run analysis through build server** under your repository **Settings** > **General** > **Repository analysis**
 2.  Compile your Java or Scala repository on your build server, as you would normally do
 3.  Invoke [`codacy-analysis-cli`](/hc/en-us/articles/360008254833-Run-local-analysis) on the root of the repository specifying the tool SpotBugs
 

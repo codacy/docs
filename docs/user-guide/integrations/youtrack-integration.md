@@ -1,4 +1,4 @@
-# YouTrack Integration
+# YouTrack integration
 
 After adding a repository, you may want to enable YouTrack integration, in order to be able to comment or to create issues.
 
@@ -8,5 +8,4 @@ To do so, navigate to your **Repository Settings**, and select the tab **Integra
 
 After configuring your YouTrack integration with your server settings, you will have additional options when browsing the existing issues on the repository:
 
-![](/images/blobid0.png) 
-YouTrack integration
+![YouTrack integration](/images/blobid0.png) 

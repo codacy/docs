@@ -1,6 +1,6 @@
 # Coverage
 
-## **How to set coverage up**
+## How to set up coverage
 
 For the next steps, we assume you already have tests and coverage for your repository. If you don't have coverage and need help, take a look at our [article](/hc/en-us/articles/207312879-Generate-Coverage) on how to generate coverage.
 
@@ -10,17 +10,17 @@ Repositories can be configured to show code coverage reports directly in Codacy.
 
 To set up coverage reporting you'll need a Project API token. You can find it in your repository settings 'Integrations' tab.
 
-<figure>
-<img src="/images/Jun-06-2017_14-30-02.gif" width="599" height="264" alt="" />
-</figure>
+<img src="/images/Jun-06-2017_14-30-02.gif" width="650" />
 
-### Token Security
+### Token security
 
 You should keep your API token well protected, as it grants owner permissions to your repositories. If you use CircleCI or Travis CI, you should use your token as an environment variable. **Don't put your keys in your configuration files**, check your service settings on how to set environment variables.
 
 ### Setting token as environment variable
 
+```bash
 export CODACY_PROJECT_TOKEN=%Project_Token%
+```
 
 (replacing %Project_Token% with your token)
 

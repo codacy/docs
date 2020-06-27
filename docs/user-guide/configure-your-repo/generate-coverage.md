@@ -1,4 +1,4 @@
-# Generate Coverage
+# Generate coverage
 
 Code coverage is a metric used to describe the degree to which the source code of a program is tested.
 

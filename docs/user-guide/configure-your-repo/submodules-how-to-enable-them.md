@@ -9,8 +9,7 @@ Codacy supports this workflow for GitHub, Bitbucket (including Bitbucket Server)
 
 ## Enabling submodules for Codacy Self-hosted
 
-By default we do normal git clones which will not clone submodules, this is to ensure that we only clone necessary repos. However if you're already using submodules this feature
-can be enabled by contacting our [Support Team](mailto:support@codacy.com).
+By default we do normal git clones which will not clone submodules, this is to ensure that we only clone necessary repos. However if you're already using submodules this feature can be enabled by contacting our [Support Team](mailto:support@codacy.com).
 
 After the submodules have been enabled, [you will need to update the license](/hc/en-us/articles/207280529-Frequently-Asked-Questions-FAQ-#How-to-update-the-license). If your submodules are public repositories, please make sure your URL is using the HTTPS protocol. If your submodules are private, make sure your URL is using the SSH protocol.
 
@@ -40,7 +39,7 @@ By default we do normal git clones that will not clone submodules, this is to en
 If you already have repositories added on Codacy that have submodules:
 
 1.  Navigate to the Repository Settings tab
-2.  Click the 'Generate New User Key' button for each repository
+2.  Click the **Generate New User Key** button for each repository
 
 ![](/images/Screenshot_2019-05-16_at_15.52.00.png)
 

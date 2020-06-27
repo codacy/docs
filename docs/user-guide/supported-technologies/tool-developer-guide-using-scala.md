@@ -1,12 +1,16 @@
 # Tool Developer Guide - Using Scala
 
-Scala template to integrate an external tool on Codacy
+## Scala template to integrate an external tool on Codacy
 
 We use external tools at Codacy, in this tutorial we provide our own template written in Scala to help you integrate the tool of your choice.
-You can also fork the code of one of our tools, and modify it; here are some examples:
-[codacy-phpmd](https://github.com/codacy/codacy-phpmd), [codacy-jshint](https://github.com/codacy/codacy-jshint), [codacy-pmdJava](https://github.com/codacy/codacy-pmdJava).
 
-This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the <a href="/hc/en-us/articles/207994725-Tool-Developer-Guide" class="doc-link">Tool Developer Guide</a>.
+You can also fork the code of one of our tools, and modify it; here are some examples:
+
+-   [codacy-phpmd](https://github.com/codacy/codacy-phpmd)
+-   [codacy-jshint](https://github.com/codacy/codacy-jshint)
+-   [codacy-pmdJava](https://github.com/codacy/codacy-pmdJava).
+
+This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the [Tool Developer Guide](/hc/en-us/articles/207994725-Tool-Developer-Guide).
 
 ## Scala Engine Template
 
@@ -17,7 +21,7 @@ We use Scala to integrate our tools at Codacy. In this template, you only need t
 
 ## Configuring build.sbt
 
-Our Scala template is built using sbt, which already has a great plugin to generate dockers, [**sbt-native-packager**](https://github.com/sbt/sbt-native-packager).
+Our Scala template is built using sbt, which already has a great plugin to generate dockers, [sbt-native-packager](https://github.com/sbt/sbt-native-packager).
 
 To configure a docker, you should edit the build.sbt in the root directory of our template.
 
@@ -32,26 +36,26 @@ When a client runs your tool, the **apply** method of our template is invoked. H
 [Scala](https://docs.codacy.com/docs/tool-developer-guide-using-scala)
 
 ```scala
-    package codacy.mytool
+package codacy.mytool
 
-    import scala.sys.process._
-    import codacy.dockerApi._
+import scala.sys.process._
+import codacy.dockerApi._
 
-    object MyTool extends Tool{
+object MyTool extends Tool{
 
-      override def apply(path: Path, conf: Option[Seq[PatternDef]], files: Option[Set[Path]])(implicit spec: Spec): Try[Iterable[Result]] = {
+    override def apply(path: Path, conf: Option[Seq[PatternDef]], files: Option[Set[Path]])(implicit spec: Spec): Try[Iterable[Result]] = {
 
-          //TODO: Your code goes here
+        //TODO: Your code goes here
 
-      }
     }
+}
 ```
 
-**path:** The root path where the files to test are located (usually "/src")
-**conf:** Patterns to run (optional)
-**files:** Files to test (optional), their path is relative to the
-**path** received
-**spec:** Tool configuration based on your patterns.json
+-   **path:** The root path where the files to test are located (usually `/src`)
+-   **conf:** Patterns to run (optional)
+-   **files:** Files to test (optional), their path is relative to the
+-   **path** received
+-   **spec:** Tool configuration based on your patterns.json
 
 The behavior of your application method should vary depending on the optional parameters. If you receive no **files**, you should invoke the tool for all files from **path** (path is the root directory, files are searched recursively for all folders in **path**). If you receive no **conf**, you should test with the default patterns.
 
@@ -64,11 +68,11 @@ The used types like **PatternDef** and **Result** are defined as case classes. T
 [dockerApi/package.scala](https://docs.codacy.com/docs/tool-developer-guide-using-scala)
 
 ```scala
-    case class PatternDef(patternId: PatternId, parameters: Option[Set[ParameterDef]])
+case class PatternDef(patternId: PatternId, parameters: Option[Set[ParameterDef]])
 
-    case class Result(filename: SourcePath, message: ResultMessage, patternId: PatternId, line: ResultLine)
+case class Result(filename: SourcePath, message: ResultMessage, patternId: PatternId, line: ResultLine)
 
-    //...
+//...
 ```
 
 ## Code details of our template
@@ -78,7 +82,7 @@ The entry point of our template for you is the **Engine** object. In the **coda
 [Engine.scala](/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala)
 
 ```scala
-    object Engine extends DockerEngine(MyTool)
+object Engine extends DockerEngine(MyTool)
 ```
 
 Your tool must extend **Tool**, (as shown before, MyTemplate already extends it), and override the **apply** method.
@@ -88,17 +92,17 @@ When you want to execute a command, we recommend you generate the sequence you w
 [Scala](/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala)
 
 ```scala
-    import scala.sys.process._
+import scala.sys.process._
 
-    //...
+//...
 
-    //The sequence of strings to run
-    val cmd = Seq("pmd", "-d", "/src/", "-f", "xml")
+//The sequence of strings to run
+val cmd = Seq("pmd", "-d", "/src/", "-f", "xml")
 
-    //run the command > pmd -d /src/ -f xml
-    val cmdResponse = cmd.!
+//run the command > pmd -d /src/ -f xml
+val cmdResponse = cmd.!
 
-    //...
+//...
 ```
 
 As a final note, you may write the code to run the tool in any way you want. Simply return the results from the external tool at the end of the **apply** method, and our code will take care of the rest.
