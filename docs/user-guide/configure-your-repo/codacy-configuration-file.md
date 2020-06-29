@@ -4,7 +4,7 @@ Codacy supports configuring certain advanced features through a configuration fi
 
 You can exclude files using glob patterns and add custom extensions to languages.
 
-You can ignore files globally, for certain categories (duplication, metrics or coverage) or for a specific tool (e.g.: Rubocop). The category metrics refers to the information you find under [File details](/hc/en-us/articles/207279849#2-file-detail) such as Size, Structure and Complexity.
+You can ignore files globally, for certain categories (duplication or metrics) or for a specific tool (e.g.: Rubocop). The category metrics refers to the information you find under [File details](/hc/en-us/articles/207279849#2-file-detail) such as Size, Structure and Complexity.
 
 To add custom extensions to a language you can also add an entry in this file, but keep in mind that some tools might not work out of the box with those extensions and might need changes.
 
@@ -13,30 +13,29 @@ If you want to disable an engine that needs to be done directly in the [Code Pat
 The configuration file name must be **".codacy.yaml"** or **".codacy.yml"** and should be placed in the root of
 your repository.
 
-    ---
-    engines:
-     rubocop:
-       exclude_paths:
-         - config/engines.yml
-     duplication:
-       exclude_paths:
-         - config/engines.yml
-     metric:
-       exclude_paths:
-         - config/engines.yml
-     coverage:
-       exclude_paths:
-         - config/engines.yml
-    languages:
-      css:
-        extensions:
-          - '-css.resource'
+```yaml
+---
+engines:
+  rubocop:
     exclude_paths:
-      - '.bundle/**'
-      - 'spec/**/*'
-      - 'benchmarks/**/*'
-      - '**.min.js'
-      - '**/tests/**' 
+      - config/engines.yml
+  duplication:
+    exclude_paths:
+      - config/engines.yml
+  metric:
+    exclude_paths:
+      - config/engines.yml
+languages:
+  css:
+    extensions:
+      - '-css.resource'
+exclude_paths:
+  - '.bundle/**'
+  - 'spec/**/*'
+  - 'benchmarks/**/*'
+  - '**.min.js'
+  - '**/tests/**' 
+```
 
 You must use the following [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29) to configure your 'exclude_paths' to ignore files: 
 
