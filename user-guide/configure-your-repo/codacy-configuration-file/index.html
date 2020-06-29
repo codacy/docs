@@ -3343,60 +3343,33 @@
                 <h1 id="codacy-configuration-file">Codacy Configuration File<a class="headerlink" href="#codacy-configuration-file" title="Permanent link">&para;</a></h1>
 <p>Codacy supports configuring certain advanced features through a configuration file.</p>
 <p>You can exclude files using glob patterns and add custom extensions to languages.</p>
-<p>You can ignore files globally, for certain categories (duplication, metrics or coverage) or for a specific tool (e.g.: Rubocop). The category metrics refers to the information you find under <a href="/hc/en-us/articles/207279849#2-file-detail">File details</a> such as Size, Structure and Complexity.</p>
+<p>You can ignore files globally, for certain categories (duplication or metrics) or for a specific tool (e.g.: Rubocop). The category metrics refers to the information you find under <a href="/hc/en-us/articles/207279849#2-file-detail">File details</a> such as Size, Structure and Complexity.</p>
 <p>To add custom extensions to a language you can also add an entry in this file, but keep in mind that some tools might not work out of the box with those extensions and might need changes.</p>
 <p>If you want to disable an engine that needs to be done directly in the <a href="/hc/en-us/articles/207994335-Code-Patterns">Code Patterns</a> page.</p>
 <p>The configuration file name must be <strong>".codacy.yaml"</strong> or <strong>".codacy.yml"</strong> and should be placed in the root of
 your repository.</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre> 1
- 2
- 3
- 4
- 5
- 6
- 7
- 8
- 9
-10
-11
-12
-13
-14
-15
-16
-17
-18
-19
-20
-21
-22
-23
-24</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>---
-engines:
- rubocop:
-   exclude_paths:
-     - config/engines.yml
- duplication:
-   exclude_paths:
-     - config/engines.yml
- metric:
-   exclude_paths:
-     - config/engines.yml
- coverage:
-   exclude_paths:
-     - config/engines.yml
-languages:
-  css:
-    extensions:
-      - &#39;-css.resource&#39;
-exclude_paths:
-  - &#39;.bundle/**&#39;
-  - &#39;spec/**/*&#39;
-  - &#39;benchmarks/**/*&#39;
-  - &#39;**.min.js&#39;
-  - &#39;**/tests/**&#39;
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">engines</span><span class="p">:</span>
+  <span class="nt">rubocop</span><span class="p">:</span>
+    <span class="nt">exclude_paths</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">config/engines.yml</span>
+  <span class="nt">duplication</span><span class="p">:</span>
+    <span class="nt">exclude_paths</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">config/engines.yml</span>
+  <span class="nt">metric</span><span class="p">:</span>
+    <span class="nt">exclude_paths</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">config/engines.yml</span>
+<span class="nt">languages</span><span class="p">:</span>
+  <span class="nt">css</span><span class="p">:</span>
+    <span class="nt">extensions</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="s">&#39;-css.resource&#39;</span>
+<span class="nt">exclude_paths</span><span class="p">:</span>
+  <span class="p p-Indicator">-</span> <span class="s">&#39;.bundle/**&#39;</span>
+  <span class="p p-Indicator">-</span> <span class="s">&#39;spec/**/*&#39;</span>
+  <span class="p p-Indicator">-</span> <span class="s">&#39;benchmarks/**/*&#39;</span>
+  <span class="p p-Indicator">-</span> <span class="s">&#39;**.min.js&#39;</span>
+  <span class="p p-Indicator">-</span> <span class="s">&#39;**/tests/**&#39;</span> 
 </code></pre></div>
-</td></tr></table>
 
 <p>You must use the following <a href="https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29">Java glob syntax</a> to configure your 'exclude_paths' to ignore files: </p>
 <ul>
@@ -3467,7 +3440,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last update: June 26, 2020
+      Last update: June 29, 2020
     
   </small>
 </div>
