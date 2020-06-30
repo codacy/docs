@@ -153,8 +153,8 @@ plugins:
               "hc/en-us/articles/208243169-Managing-team-repositories.md": "user-guide/manual-organizations/managing-team-repositories.md"
               "hc/en-us/articles/208942125.md": "user-guide/your-account/notifications.md"
               "hc/en-us/articles/208942125-Notifications.md": "user-guide/your-account/notifications.md"
-              "hc/en-us/articles/208942945.md": "user-guide/general/plans-billing.md"
-              "hc/en-us/articles/208942945-plans-billing.md": "user-guide/general/plans-billing.md"
+              "hc/en-us/articles/208942945.md": "user-guide/general/plan-billing.md"
+              "hc/en-us/articles/208942945-plans-billing.md": "user-guide/general/plan-billing.md"
               "hc/en-us/articles/208953205.md": "user-guide/your-account/profile-manage.md"
               "hc/en-us/articles/208953205-Changing-your-username-and-avatar.md": "user-guide/your-account/profile-manage.md"
               "hc/en-us/articles/212622529.md": "faq/repositories/why-can't-i-see-or-add-my-organization's-repositories.md"
@@ -335,8 +335,8 @@ plugins:
               "hc/en-us/articles/360034116533-Cloud-Release-Notes-07-Aug-2019.md": "release-notes/cloud/cloud-release-notes-|-07-aug-2019.md"
               "hc/en-us/articles/360035276553.md": "release-notes/cloud/cloud-release-notes-|-05-set-2019.md"
               "hc/en-us/articles/360035276553-Cloud-Release-Notes-05-Set-2019.md": "release-notes/cloud/cloud-release-notes-|-05-set-2019.md"
-              "hc/en-us/articles/360012861999.md": "user-guide/general/plans-billing.md"
-              "hc/en-us/articles/360012861999-Cancelling-your-plan.md": "user-guide/general/plans-billing.md"
+              "hc/en-us/articles/360012861999.md": "user-guide/general/plan-billing.md"
+              "hc/en-us/articles/360012861999-Cancelling-your-plan.md": "user-guide/general/plan-billing.md"
               "hc/en-us/articles/360012948120.md": "release-notes/cloud/deprecating-http-headers-for-api-tokens.md"
               "hc/en-us/articles/360012948120-Deprecating-HTTP-headers-for-API-tokens-01-April-2020.md": "release-notes/cloud/deprecating-http-headers-for-api-tokens.md"
               "hc/en-us/articles/360012973060.md": "faq/general/how-does-codacy-support-bitbucket-cloud.md"
@@ -414,7 +414,7 @@ nav:
                 - General:
                       - user-guide/general/updates-to-codacy’s-privacy-policy.md
                       - user-guide/general/upgrading-your-codacy-account.md
-                      - user-guide/general/plans-billing.md
+                      - user-guide/general/plan-billing.md
                 - "Your account":
                       - user-guide/your-account/profile-manage.md
                       - user-guide/your-account/default-patterns.md
