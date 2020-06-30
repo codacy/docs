@@ -2,7 +2,7 @@
 
 To manage your profile information such as your name and avatar, click on your avatar on the top right-hand corner and select **Your account**.
 
-![](images/profile.png)
+![Managing your profile](images/profile.png)
 
 ## Changing your name or username
 
