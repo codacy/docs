@@ -422,9 +422,9 @@ nav:
                 - "Synced organizations":
                       - user-guide/synced-organizations/what-are-synced-organizations.md
                       - user-guide/synced-organizations/roles-and-permissions-for-synced-organizations.md
+                      - user-guide/synced-organizations/authors-vs-members.md
                       - user-guide/synced-organizations/adding-and-managing-authors.md
                       - user-guide/synced-organizations/why-can't-i-see-my-organization.md
-                      - user-guide/synced-organizations/authors-vs-members.md
                       - user-guide/synced-organizations/how-to-configure-which-users-can-ignore-issues.md
                 - "Manual organizations":
                       - user-guide/manual-organizations/creating-and-renaming-an-organization.md
