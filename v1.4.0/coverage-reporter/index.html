@@ -13,7 +13,7 @@
       
       
       <link rel="shortcut icon" href="../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
     
     
       
@@ -21,9 +21,9 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.94f3d141.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.741df068.min.css">
       
-        <link rel="stylesheet" href="../assets/stylesheets/palette.a603216b.min.css">
+        <link rel="stylesheet" href="../assets/stylesheets/palette.97583bbe.min.css">
       
       
         
@@ -782,8 +782,8 @@
 
 
   <li class="md-nav__item">
-    <a href="troubleshooting/commit-detection/" title="Commit SHA hash detection" class="md-nav__link">
-      Commit SHA hash detection
+    <a href="troubleshooting/commit-detection/" title="Commit detection" class="md-nav__link">
+      Commit detection
     </a>
   </li>
 
@@ -3406,27 +3406,27 @@
                 <h1 id="getting-started">Getting started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h1>
 <h2 id="authentication">Authentication<a class="headerlink" href="#authentication" title="Permanent link">&para;</a></h2>
 <ol>
-<li>
-<p>Find and copy a <em>Project API Token</em>. You can find the token within a repository <em>Settings</em> → <em>Integrations</em> → <em>Project API</em>.</p>
+<li>Find and copy a <em>Project API Token</em>. You can find the token within a repository <em>Settings</em> → <em>Integrations</em> → <em>Project API</em>.</li>
+<li>Set the <em>Project API Token</em> in your terminal, replacing <code>%Project_Token%</code> with your own:</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>%Project_Token%
+</code></pre></div>
+
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>You should keep your API token well protected, as it grants owner permissions to your projects.</p>
 </div>
-</li>
-<li>
-<p>Set the <em>Project API Token</em> in your terminal, replacing <code>%Project_Token%</code> with your token:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>%Project_Token%
-</code></pre></div>
-
-<p>To upload coverage to a self-hosted installation of Codacy you also need to set your installation URL, replacing <code>%Codacy_instance_URL%</code> with your URL:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>%Codacy_instance_URL%:16006
-</code></pre></div>
-
-</li>
-</ol>
 <div class="admonition hint">
 <p class="admonition-title">Hint</p>
 <p>If you'd like to automate this process for multiple repositories you can <a href="advanced/authenticating-using-account-token/">authenticate using an Account API Token</a>.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To upload coverage to a self-hosted installation of Codacy you need to set your installation URL:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>&lt;Codacy_instance_URL&gt;:16006
+</code></pre></div>
+
+<p>Or use the flag: <code>--codacy-api-base-url &lt;Codacy_instance_URL&gt;:16006</code>.</p>
 </div>
 <h2 id="running-codacy-coverage-reporter">Running Codacy Coverage Reporter<a class="headerlink" href="#running-codacy-coverage-reporter" title="Permanent link">&para;</a></h2>
 <p>The easiest way to get starting is by using the self-contained script that downloads and runs the reporter:</p>
@@ -3520,10 +3520,11 @@
                   
                     
 
+<hr>
 <div class="md-source-date">
   <small>
     
-      Last update: June 25, 2020
+      Last update: June 30, 2020
     
   </small>
 </div>
