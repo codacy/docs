@@ -26,9 +26,9 @@ Learn [how to invite team members to your organization](../manual-organizations/
 
 ## Do you offer student and non-profit plans?
 
-If you are a student or a non-profit organization and have a team of up to 4 users you can benefit from our Startup plan for free.
+If you are a student or a non-profit organization you are eligible to either a free plan or a discount depending on the size of your team.
 
-Bigger teams will be eligible for a discount, so if your team has 5 users or more, please send us from your school or work email address. Please provide copies of documentation to verify your eligibility. We'll evaluate your request and get back to you.
+[Get in touch with us](mailto:support@codacy.com) from your school or work email address, providing copies of documentation to verify your eligibility. We'll evaluate your request and get back to you.
 
 ## Can I change or cancel my plan?
 
