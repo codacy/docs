@@ -41,6 +41,9 @@ Yes, you can change or cancel your plan at any time. If you choose to cancel yo
 
 ![](images/plan-billing.png)
 
+!!! note
+    If you're using GitHub Marketplace, manage your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).
+
 **If you're using Codacy Self-hosted**, we kindly ask that you send us a message and we'll swiftly process the cancellation.
 
 We value feedback and thank you in advance for letting us know the primary reason behind your decision to leave, whether budgetary constraints or missing deal-breaker functionality.
