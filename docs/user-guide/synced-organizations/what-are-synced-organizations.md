@@ -16,11 +16,13 @@ If you can't see the organization you are looking for, [find out what could be t
 
 ## Managing people in an organization
 
-You can see and manage who joined your organization on Codacy in the **People** section:
+You can see and manage who joined your organization on Codacy in the **People** page.
+
+Members can remove themselves from organizations, while owners can remove themselves as well as other users, even other owners. Organizations must have at least one owner.
 
 ![Managing people in an organization](images/organization-people.png)
 
-Under **Plan and Billing**, there are different ways to control who can join your organization:
+In the **Plan and Billing** page there are different ways to control who can join your organization:
 
 -   **Allow new people to join**: team members with access on the Git provider will be able to join Codacy automatically and your billing will be updated accordingly.
 -   **New people request to join**: team members need to request access in order to be able to join Codacy. In can override this setting for organization owners.
