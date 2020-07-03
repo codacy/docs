@@ -34,15 +34,22 @@ Bigger teams will be eligible for a discount, so if your team has 5 users or mor
 
 Yes, you can change or cancel your plan at any time. If you choose to cancel your annual subscription before the conclusion of the 12 months, your account will continue to work for the remainder of the annual billing period.
 
-**If you're using Codacy Cloud** you can make changes to your plan yourself:
+**If you're using Codacy Cloud** you can make changes to your plan yourself.
 
--   Manage the billing details or change the plan on the **Plan and billing** page of either your single account (click on your avatar, select **Your Account**, and open **Plan and billing**) or of your organization (click on your avatar, select **Organizations**, select your organization, and open **Plan and billing**)
--   Cancel your plan by [deleting your single account](../your-account/profile-manage.md#deleting-your-account) or [deleting your organization](../synced-organizations/what-are-synced-organizations.md#deleting-an-organization).
+For single accounts:
+
+-   To change the billing details or the plan of your account click on your avatar, select **Your Account**, and open **Plan and billing**
+-   To cancel your plan, [delete your account](../your-account/profile-manage.md#deleting-your-account)
+
+For organizations:
+
+-   To change the billing details or the plan of your organization click on your avatar, select **Organizations**, select your organization, and open **Plan and billing**
+-   To cancel your plan, [delete your organization](../synced-organizations/what-are-synced-organizations.md#deleting-an-organization)
 
 ![](images/plan-billing.png)
 
 !!! note
-    If you're using GitHub Marketplace, manage your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).
+    If you're using GitHub Marketplace, make changes to your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).
 
 **If you're using Codacy Self-hosted**, we kindly ask that you send us a message and we'll swiftly process the cancellation.
 
