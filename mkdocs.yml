@@ -65,8 +65,8 @@ plugins:
               "hc/en-us/articles/115000947569-Code-Standards.md": "user-guide/configure-your-repo/code-standards.md"
               "hc/en-us/articles/115001853565.md": "user-guide/general/upgrading-your-codacy-account.md"
               "hc/en-us/articles/115001853565-Upgrading-your-Codacy-account.md": "user-guide/general/upgrading-your-codacy-account.md"
-              "hc/en-us/articles/115001959985.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
-              "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
+              "hc/en-us/articles/115001959985.md": 'faq/troubleshooting/why-do-i-get-a-not-a-member-of-the-organization-message.md'
+              "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": 'faq/troubleshooting/why-do-i-get-a-not-a-member-of-the-organization-message.md'
               "hc/en-us/articles/115002130625.md": "user-guide/configure-your-repo/codacy-configuration-file.md"
               "hc/en-us/articles/115002130625-Codacy-Configuration-File.md": "user-guide/configure-your-repo/codacy-configuration-file.md"
               "hc/en-us/articles/115002330985.md": "user-guide/configure-your-repo/specifying-your-python-version.md"
@@ -137,8 +137,8 @@ plugins:
               "hc/en-us/articles/207994895-How-long-does-it-take-for-my-repository-to-be-analysed-.md": "faq/repositories/how-long-does-it-take-for-my-repository-to-be-analysed.md"
               "hc/en-us/articles/207994905.md": "self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise.md"
               "hc/en-us/articles/207994905-How-do-I-install-Codacy-webhooks-on-GitHub-Enterprise-.md": "self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise.md"
-              "hc/en-us/articles/207994935.md": "faq/troubleshooting/why-isn't-my-public-repository-being-analysed.md"
-              "hc/en-us/articles/207994935-Why-isn-t-my-public-repository-being-analysed-.md": "faq/troubleshooting/why-isn't-my-public-repository-being-analysed.md"
+              "hc/en-us/articles/207994935.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
+              "hc/en-us/articles/207994935-Why-isn-t-my-public-repository-being-analysed-.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
               "hc/en-us/articles/207994955.md": "self-hosted/installing-postgres-for-codacy-self-hosted-using-a-docker-container.md"
               "hc/en-us/articles/207994955-Installing-postgres-for-Codacy-Self-hosted-Using-a-Docker-container.md": "self-hosted/installing-postgres-for-codacy-self-hosted-using-a-docker-container.md"
               "hc/en-us/articles/207994975.md": "self-hosted/configuring-gitlab-enterprise-with-codacy-self-hosted.md"
@@ -161,8 +161,8 @@ plugins:
               "hc/en-us/articles/212622529-Why-can-t-I-see-or-add-my-organization-s-repositories-.md": "faq/repositories/why-can't-i-see-or-add-my-organization's-repositories.md"
               "hc/en-us/articles/212799365.md": "user-guide/your-repositories/badges.md"
               "hc/en-us/articles/212799365-Badges.md": "user-guide/your-repositories/badges.md"
-              "hc/en-us/articles/213149905.md": "faq/troubleshooting/email-address-change.md"
-              "hc/en-us/articles/213149905-email-address-change.md": "faq/troubleshooting/email-address-change.md"
+              "hc/en-us/articles/213149905.md": "faq/general/how-do-i-change-my-email-address-in-codacy.md"
+              "hc/en-us/articles/213149905-email-address-change.md": "faq/general/how-do-i-change-my-email-address-in-codacy.md"
               "hc/en-us/articles/213211825.md": "faq/engines/do-you-check-for-dependencies-.md"
               "hc/en-us/articles/213211825-Do-you-check-for-dependencies-.md": "faq/engines/do-you-check-for-dependencies-.md"
               "hc/en-us/articles/213217965.md": "faq/general/which-version-control-systems-do-you-support.md"
@@ -233,8 +233,8 @@ plugins:
               "hc/en-us/articles/360009345493-How-to-download-logs.md": "self-hosted/how-to-download-logs.md"
               "hc/en-us/articles/360009384980.md": "release-notes/self-hosted/enterprise-v2.0.371.md"
               "hc/en-us/articles/360009384980-Enterprise-v2-0-371.md": "release-notes/self-hosted/enterprise-v2.0.371.md"
-              "hc/en-us/articles/360009411934.md": "faq/troubleshooting/no-comments-on-prs.md"
-              "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-my-PRs-anymore-.md": "faq/troubleshooting/no-comments-on-prs.md"
+              "hc/en-us/articles/360009411934.md": "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md"
+              "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-my-PRs-anymore-.md": "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md"
               "hc/en-us/articles/360010035840.md": "release-notes/self-hosted/enterprise-v2.0.372.md"
               "hc/en-us/articles/360010035840-Enterprise-v2-0-372.md": "release-notes/self-hosted/enterprise-v2.0.372.md"
               "hc/en-us/articles/360010263540.md": "getting-started/getting-started-with-codacy.md"
@@ -325,10 +325,10 @@ plugins:
               "hc/en-us/articles/360025014373-Cloud-Release-Notes-18-Jun-2019.md": "release-notes/cloud/cloud-release-notes-|-18-jun-2019.md"
               "hc/en-us/articles/360025654573.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md"
               "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md"
-              "hc/en-us/articles/360025964333.md": "faq/troubleshooting/file-missing.md"
-              "hc/en-us/articles/360025964333-File-size-limitation.md": "faq/troubleshooting/file-missing.md"
-              "hc/en-us/articles/360025964853.md": "faq/troubleshooting/file-missing.md"
-              "hc/en-us/articles/360025964853-Why-is-my-file-missing-.md": "faq/troubleshooting/file-missing.md"
+              "hc/en-us/articles/360025964333.md": "faq/troubleshooting/why-is-my-file-missing.md"
+              "hc/en-us/articles/360025964333-File-size-limitation.md": "faq/troubleshooting/why-is-my-file-missing.md"
+              "hc/en-us/articles/360025964853.md": "faq/troubleshooting/why-is-my-file-missing.md"
+              "hc/en-us/articles/360025964853-Why-is-my-file-missing-.md": "faq/troubleshooting/why-is-my-file-missing.md"
               "hc/en-us/articles/360034116413.md": "release-notes/self-hosted/enterprise-v2.0.369.md"
               "hc/en-us/articles/360034116413-Enterprise-v2-0-369.md": "release-notes/self-hosted/enterprise-v2.0.369.md"
               "hc/en-us/articles/360034116533.md": "release-notes/cloud/cloud-release-notes-|-07-aug-2019.md"
@@ -351,8 +351,8 @@ plugins:
               "hc/en-us/articles/360013423040-Bitbucket-Server-integration-Codacy-Self-hosted.md": "self-hosted/bitbucket-server-integration-codacy-self-hosted.md"
               "hc/en-us/articles/360013560819.md": "faq/repositories/i-moved-my-repository-on-the-git-provider.md"
               "hc/en-us/articles/360013560819-I-moved-my-repository-on-the-Git-provider.md": "faq/repositories/i-moved-my-repository-on-the-git-provider.md"
-              "hc/en-us/articles/360013926899.md": "faq/troubleshooting/duplication-metrics-not-calculated.md"
-              "hc/en-us/articles/360013926899-Why-aren-t-duplication-metrics-being-calculated-.md": "faq/troubleshooting/duplication-metrics-not-calculated.md"
+              "hc/en-us/articles/360013926899.md": "faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md"
+              "hc/en-us/articles/360013926899-Why-aren-t-duplication-metrics-being-calculated-.md": "faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md"
               "hc/en-us/articles/360013810379.md": "release-notes/self-hosted/self-hosted-v2.0.380.md"
               "hc/en-us/articles/360013810379-Self-hosted-v2-0-380.md": "release-notes/self-hosted/self-hosted-v2.0.380.md"
               "hc/en-us/articles/360013910000.md": "release-notes/self-hosted/self-hosted-v1.0.0-for-kubernetes.md"
@@ -524,6 +524,7 @@ nav:
                 - faq/general/how-does-codacy-support-bitbucket-cloud.md
                 - faq/general/how-does-codacy-support-bitbucket-server.md
                 - faq/general/how-does-codacy-keep-my-data-secure.md
+                - faq/general/how-do-i-change-my-email-address-in-codacy.md
                 - faq/general/cancelling-your-plan.md
           - Engines:
                 - faq/engines/do-you-check-for-dependencies-.md
@@ -544,9 +545,8 @@ nav:
                 - faq/repositories/how-long-does-it-take-for-my-repository-to-be-analysed.md
                 - faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md
           - Troubleshooting:
-                - faq/troubleshooting/file-missing.md
-                - faq/troubleshooting/no-comments-on-prs.md
-                - faq/troubleshooting/duplication-metrics-not-calculated.md
-                - faq/troubleshooting/not-a-member-of-the-organization.md
-                - faq/troubleshooting/email-address-change.md
-                - faq/troubleshooting/why-isn't-my-public-repository-being-analysed.md
+                - faq/troubleshooting/why-is-my-file-missing.md
+                - faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md
+                - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
+                - faq/troubleshooting/why-do-i-get-a-not-a-member-of-the-organization-message.md
+                - faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md
