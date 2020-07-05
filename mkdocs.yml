@@ -527,15 +527,15 @@ nav:
                 - faq/general/how-do-i-change-my-email-address-in-codacy.md
                 - faq/general/cancelling-your-plan.md
           - Repositories:
+                - faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md
                 - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md
+                - faq/repositories/how-do-i-manually-force-a-repository-update.md
+                - faq/repositories/how-do-i-reanalyze-my-repository.md
                 - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
                 - faq/repositories/i-moved-my-repository-on-the-git-provider.md
-                - faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md
-                - faq/repositories/how-do-i-manually-force-a-repository-update.md
-                - faq/repositories/what-are-logs.md
-                - faq/repositories/hotspots-how-does-it-work.md
-                - faq/repositories/how-do-i-reanalyze-my-repository.md
                 - faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md
+                - faq/repositories/hotspots-how-does-it-work.md
+                - faq/repositories/what-are-logs.md
           - Code analysis:
                 - faq/code-analysis/do-you-check-for-dependencies.md
                 - faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md
