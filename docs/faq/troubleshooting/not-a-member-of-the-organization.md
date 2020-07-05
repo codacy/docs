@@ -1,4 +1,4 @@
-# Why do I get a "Not a member of the organization" message?
+# Not a member of the organization
 
 When you see this message, it means that the email that is being used to make the commit is not from a repository collaborator, and we cannot analyze the commit.
 
