@@ -325,10 +325,10 @@ plugins:
               "hc/en-us/articles/360025014373-Cloud-Release-Notes-18-Jun-2019.md": "release-notes/cloud/cloud-release-notes-|-18-jun-2019.md"
               "hc/en-us/articles/360025654573.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md"
               "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md"
-              "hc/en-us/articles/360025964333.md": "faq/troubleshooting/why-is-my-file-missing.md"
-              "hc/en-us/articles/360025964333-File-size-limitation.md": "faq/troubleshooting/why-is-my-file-missing.md"
-              "hc/en-us/articles/360025964853.md": "faq/troubleshooting/why-is-my-file-missing.md"
-              "hc/en-us/articles/360025964853-Why-is-my-file-missing-.md": "faq/troubleshooting/why-is-my-file-missing.md"
+              "hc/en-us/articles/360025964333.md": "faq/troubleshooting/file-missing.md"
+              "hc/en-us/articles/360025964333-File-size-limitation.md": "faq/troubleshooting/file-missing.md"
+              "hc/en-us/articles/360025964853.md": "faq/troubleshooting/file-missing.md"
+              "hc/en-us/articles/360025964853-Why-is-my-file-missing-.md": "faq/troubleshooting/file-missing.md"
               "hc/en-us/articles/360034116413.md": "release-notes/self-hosted/enterprise-v2.0.369.md"
               "hc/en-us/articles/360034116413-Enterprise-v2-0-369.md": "release-notes/self-hosted/enterprise-v2.0.369.md"
               "hc/en-us/articles/360034116533.md": "release-notes/cloud/cloud-release-notes-|-07-aug-2019.md"
@@ -544,9 +544,9 @@ nav:
                 - faq/repositories/how-long-does-it-take-for-my-repository-to-be-analysed.md
                 - faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md
           - Troubleshooting:
-                - faq/troubleshooting/duplication-metrics-not-calculated.md
+                - faq/troubleshooting/file-missing.md
                 - faq/troubleshooting/no-comments-on-prs.md
+                - faq/troubleshooting/duplication-metrics-not-calculated.md
                 - faq/troubleshooting/not-a-member-of-the-organization.md
-                - faq/troubleshooting/why-is-my-file-missing.md
                 - faq/troubleshooting/how-do-i-change-my-email-address-in-codacy-.md
                 - faq/troubleshooting/why-isn't-my-public-repository-being-analysed.md
