@@ -1,4 +1,4 @@
-# Repository failed to clone? Generating a new SSH key
+# Failed to clone the repository, generate a new SSH key
 
 SSH keys are used for repository cloning and exclusively used for these repositories. Depending on the level of access the user configuring the repository on Codacy has on the remote Git provider, the key can be added either directly to the repository itself, because the user has Write or Admin access; or to the user, with Read or Commit-only access.
 For that reason, some changes on the remote Git provider can cause Codacy to stop communicating with the repository.
