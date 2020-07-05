@@ -327,8 +327,8 @@ plugins:
               "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md"
               "hc/en-us/articles/360025964333.md": "faq/general/file-size-limitation.md"
               "hc/en-us/articles/360025964333-File-size-limitation.md": "faq/general/file-size-limitation.md"
-              "hc/en-us/articles/360025964853.md": "faq/general/why-is-my-file-missing.md"
-              "hc/en-us/articles/360025964853-Why-is-my-file-missing-.md": "faq/general/why-is-my-file-missing.md"
+              "hc/en-us/articles/360025964853.md": "faq/troubleshooting/why-is-my-file-missing.md"
+              "hc/en-us/articles/360025964853-Why-is-my-file-missing-.md": "faq/troubleshooting/why-is-my-file-missing.md"
               "hc/en-us/articles/360034116413.md": "release-notes/self-hosted/enterprise-v2.0.369.md"
               "hc/en-us/articles/360034116413-Enterprise-v2-0-369.md": "release-notes/self-hosted/enterprise-v2.0.369.md"
               "hc/en-us/articles/360034116533.md": "release-notes/cloud/cloud-release-notes-|-07-aug-2019.md"
@@ -523,7 +523,6 @@ nav:
                 - faq/general/how-does-codacy-support-gitlab-cloud.md
                 - faq/general/how-does-codacy-support-bitbucket-cloud.md
                 - faq/general/how-does-codacy-support-bitbucket-server.md
-                - faq/general/why-is-my-file-missing.md
                 - faq/general/file-size-limitation.md
                 - faq/general/cancelling-your-plan.md
           - Engines:
@@ -550,5 +549,6 @@ nav:
                 - faq/troubleshooting/why-aren’t-duplication-metrics-being-calculated.md
                 - faq/troubleshooting/why-isn’t-codacy-commenting-on-my-prs-anymore.md
                 - faq/troubleshooting/why-do-i-get-a-"not-a-member-of-the-organization"-message-.md
+                - faq/troubleshooting/why-is-my-file-missing.md
                 - faq/troubleshooting/how-do-i-change-my-email-address-in-codacy-.md
                 - faq/troubleshooting/why-isn't-my-public-repository-being-analysed.md
