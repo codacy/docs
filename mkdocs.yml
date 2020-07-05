@@ -55,8 +55,8 @@ plugins:
               "hc/en-us/articles/115000254665-Managing-authentication-for-the-Control-Panel.md": "self-hosted/managing-authentication-for-the-control-panel.md"
               "hc/en-us/articles/115000255385.md": "user-guide/related-tools/api-tokens.md"
               "hc/en-us/articles/115000255385-API-Tokens.md": "user-guide/related-tools/api-tokens.md"
-              "hc/en-us/articles/115000282129.md": "faq/repositories/why-can't-i-configure-post-commit-hooks-and-integrations.md"
-              "hc/en-us/articles/115000282129-Why-can-t-I-configure-post-commit-hooks-and-integrations-.md": "faq/repositories/why-can't-i-configure-post-commit-hooks-and-integrations.md"
+              "hc/en-us/articles/115000282129.md": "faq/repositories/why-cant-i-configure-post-commit-hooks-and-integrations.md"
+              "hc/en-us/articles/115000282129-Why-can-t-I-configure-post-commit-hooks-and-integrations-.md": "faq/repositories/why-cant-i-configure-post-commit-hooks-and-integrations.md"
               "hc/en-us/articles/115000488285.md": "user-guide/integrations/slack-integration.md"
               "hc/en-us/articles/115000488285-Slack.md": "user-guide/integrations/slack-integration.md"
               "hc/en-us/articles/115000723329.md": "user-guide/your-repositories/security-dashboard.md"
@@ -133,8 +133,8 @@ plugins:
               "hc/en-us/articles/207994865-Can-you-add-repos-from-other-Git-providers-.md": "faq/general/which-version-control-systems-do-you-support.md"
               "hc/en-us/articles/207994885.md": "faq/general/which-browsers-do-you-support.md"
               "hc/en-us/articles/207994885-Which-browsers-do-you-support-.md": "faq/general/which-browsers-do-you-support.md"
-              "hc/en-us/articles/207994895.md": "faq/repositories/how-long-does-it-take-for-my-repository-to-be-analysed.md"
-              "hc/en-us/articles/207994895-How-long-does-it-take-for-my-repository-to-be-analysed-.md": "faq/repositories/how-long-does-it-take-for-my-repository-to-be-analysed.md"
+              "hc/en-us/articles/207994895.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
+              "hc/en-us/articles/207994895-How-long-does-it-take-for-my-repository-to-be-analysed-.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
               "hc/en-us/articles/207994905.md": "self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise.md"
               "hc/en-us/articles/207994905-How-do-I-install-Codacy-webhooks-on-GitHub-Enterprise-.md": "self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise.md"
               "hc/en-us/articles/207994935.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
@@ -163,8 +163,8 @@ plugins:
               "hc/en-us/articles/212799365-Badges.md": "user-guide/your-repositories/badges.md"
               "hc/en-us/articles/213149905.md": "faq/general/how-do-i-change-my-email-address-in-codacy.md"
               "hc/en-us/articles/213149905-email-address-change.md": "faq/general/how-do-i-change-my-email-address-in-codacy.md"
-              "hc/en-us/articles/213211825.md": "faq/code-analysis/do-you-check-for-dependencies-.md"
-              "hc/en-us/articles/213211825-Do-you-check-for-dependencies-.md": "faq/code-analysis/do-you-check-for-dependencies-.md"
+              "hc/en-us/articles/213211825.md": "faq/code-analysis/do-you-check-for-dependencies.md"
+              "hc/en-us/articles/213211825-Do-you-check-for-dependencies-.md": "faq/code-analysis/do-you-check-for-dependencies.md"
               "hc/en-us/articles/213217965.md": "faq/general/which-version-control-systems-do-you-support.md"
               "hc/en-us/articles/213217965-Which-version-control-systems-do-you-support-.md": "faq/general/which-version-control-systems-do-you-support.md"
               "hc/en-us/articles/213280129.md": "user-guide/integrations/jira-integration.md"
@@ -175,8 +175,8 @@ plugins:
               "hc/en-us/articles/213840489-How-do-I-reanalyze-my-repository-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/214085885.md": "user-guide/your-repositories/post-commit-hooks.md"
               "hc/en-us/articles/214085885-Post-Commit-Hooks.md": "user-guide/your-repositories/post-commit-hooks.md"
-              "hc/en-us/articles/214377225.md": "faq/repositories/does-codacy-automatically-analyse-all-pull-requests-.md"
-              "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "faq/repositories/does-codacy-automatically-analyse-all-pull-requests-.md"
+              "hc/en-us/articles/214377225.md": "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md"
+              "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md"
               "hc/en-us/articles/360001207234.md": "user-guide/configure-your-repo/specifying-language.md"
               "hc/en-us/articles/360001207234-Specifying-language.md": "user-guide/configure-your-repo/specifying-language.md"
               "hc/en-us/articles/360002902573.md": "self-hosted/installing-postgres-for-codacy-self-hosted.md"
@@ -195,8 +195,8 @@ plugins:
               "hc/en-us/articles/360005097654-Ignore-files-from-Codacy-analysis.md": "user-guide/configure-your-repo/ignore-files-from-codacy-analysis.md"
               "hc/en-us/articles/360005239394.md": "user-guide/configure-your-repo/submodules-how-to-enable-them.md"
               "hc/en-us/articles/360005239394-Submodules-How-to-enable-them.md": "user-guide/configure-your-repo/submodules-how-to-enable-them.md"
-              "hc/en-us/articles/360005839053.md": "faq/repositories/skipping-an-analysis.md"
-              "hc/en-us/articles/360005839053-Skipping-an-analysis.md": "faq/repositories/skipping-an-analysis.md"
+              "hc/en-us/articles/360005839053.md": "faq/code-analysis/skipping-an-analysis.md"
+              "hc/en-us/articles/360005839053-Skipping-an-analysis.md": "faq/code-analysis/skipping-an-analysis.md"
               "hc/en-us/articles/360006036934.md": "user-guide/configure-your-repo/php_codesniffer-specifying-your-php-version.md"
               "hc/en-us/articles/360006036934-PHP-CodeSniffer-Specifying-your-PHP-version.md": "user-guide/configure-your-repo/php_codesniffer-specifying-your-php-version.md"
               "hc/en-us/articles/360006415313.md": "release-notes/self-hosted/enterprise-v2.0.333-.md"
@@ -305,8 +305,8 @@ plugins:
               "hc/en-us/articles/360020553894-Cloud-Release-Notes-29-March-2019.md": "release-notes/cloud/cloud-release-notes-|-29-march-2019.md"
               "hc/en-us/articles/360020569254.md": "release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt).md"
               "hc/en-us/articles/360020569254-Scheduled-Maintenance-Saturday-30th-Mar-05-00-GMT-01-00-EDT-.md": "release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt).md"
-              "hc/en-us/articles/360021260713.md": "faq/repositories/how-does-codacy-measure-complexity-in-my-repository-.md"
-              "hc/en-us/articles/360021260713-How-does-Codacy-measure-complexity-in-my-repository-.md": "faq/repositories/how-does-codacy-measure-complexity-in-my-repository-.md"
+              "hc/en-us/articles/360021260713.md": "faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md"
+              "hc/en-us/articles/360021260713-How-does-Codacy-measure-complexity-in-my-repository-.md": "faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md"
               "hc/en-us/articles/360021378573.md": "release-notes/cloud/cloud-release-notes-|-08-april-2019.md"
               "hc/en-us/articles/360021378573-Cloud-Release-Notes-08-April-2019.md": "release-notes/cloud/cloud-release-notes-|-08-april-2019.md"
               "hc/en-us/articles/360021584573.md": "release-notes/self-hosted/enterprise-v2.0.366.md"
@@ -528,21 +528,21 @@ nav:
                 - faq/general/cancelling-your-plan.md
           - Code analysis:
                 - faq/code-analysis/do-you-check-for-dependencies.md
+                - faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md
+                - faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md
+                - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
+                - faq/code-analysis/skipping-an-analysis.md
           - Repositories:
                 - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md
-                - faq/repositories/how-does-codacy-measure-complexity-in-my-repository-.md
                 - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
                 - faq/repositories/i-moved-my-repository-on-the-git-provider.md
                 - faq/repositories/repository-failed-to-clone-generating-a-new-ssh-key.md
                 - faq/repositories/why-can't-i-see-or-add-my-organization's-repositories.md
-                - faq/repositories/skipping-an-analysis.md
                 - faq/repositories/how-do-i-manually-force-a-repository-update.md
                 - faq/repositories/what-are-logs.md
                 - faq/repositories/hotspots-how-does-it-work.md
-                - faq/repositories/why-can't-i-configure-post-commit-hooks-and-integrations.md
-                - faq/repositories/does-codacy-automatically-analyse-all-pull-requests-.md
+                - faq/repositories/why-cant-i-configure-post-commit-hooks-and-integrations.md
                 - faq/repositories/how-do-i-reanalyze-my-repository.md
-                - faq/repositories/how-long-does-it-take-for-my-repository-to-be-analysed.md
                 - faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md
           - Troubleshooting:
                 - faq/troubleshooting/why-is-my-file-missing.md

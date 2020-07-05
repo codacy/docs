@@ -1,17 +1,17 @@
 # Repository failed to clone? Generating a new SSH key
 
-SSH keys are used for repository cloning and exclusively used for these repositories. Depending on the level of access the user configuring the repository on Codacy has on the remote git provider, the key can be added either directly to the repository itself, because the user has Write or Admin access; or to the user, with Read or Commit-only access.
-For that reason, some changes on the remote git provider can cause Codacy to stop communicating with the repository.
+SSH keys are used for repository cloning and exclusively used for these repositories. Depending on the level of access the user configuring the repository on Codacy has on the remote Git provider, the key can be added either directly to the repository itself, because the user has Write or Admin access; or to the user, with Read or Commit-only access.
+For that reason, some changes on the remote Git provider can cause Codacy to stop communicating with the repository.
 
 -   Renaming the repository or moving to a different account:
-    1.  In the Repository Settings view, update the git URL to match the new one
+    1.  In the Repository Settings view, update the Git URL to match the new one
 -   Removing access to the user that configured the repository on Codacy, if the key was added to its account:
-    1.  In the Repository Settings view, recreate the integration with the remote git provider;
+    1.  In the Repository Settings view, recreate the integration with the remote Git provider;
     2.  Then click "Generate New Repository key". See below for details.
 
 ![](/images/Screen_Shot_2018-07-08_at_19.58.46.png)
 
-**Generate New Repository Key** is the recommended option. It will add a new SSH key to your repository deployment keys. However, this is only possible if the user configuring the integration with the remote git provider has write/admin access. Otherwise, this operation will fail.
+**Generate New Repository Key** is the recommended option. It will add a new SSH key to your repository deployment keys. However, this is only possible if the user configuring the integration with the remote Git provider has write/admin access. Otherwise, this operation will fail.
 Alternatively, you can do this process manually by copying the SSH key.
 
 ![](/images/Screen_Shot_2018-07-08_at_19.59.04.png)

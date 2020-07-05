@@ -8,4 +8,4 @@ A complex file is a file with a complexity value bigger than the threshold defin
 
 Code complexity is calculated based on the maximum number of complex methods in a file.
 
-In your [Repository dashboard](/hc/en-us/articles/360003890673-Project-Dashboard-How-does-it-work-), you can see how complexity is evolving for your repository. 
+In your [Repository dashboard](/hc/en-us/articles/360003890673-Project-Dashboard-How-does-it-work-) you can see how complexity is evolving for your repository. 
