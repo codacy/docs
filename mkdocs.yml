@@ -161,8 +161,8 @@ plugins:
               "hc/en-us/articles/212622529-Why-can-t-I-see-or-add-my-organization-s-repositories-.md": "faq/repositories/why-can't-i-see-or-add-my-organization's-repositories.md"
               "hc/en-us/articles/212799365.md": "user-guide/your-repositories/badges.md"
               "hc/en-us/articles/212799365-Badges.md": "user-guide/your-repositories/badges.md"
-              "hc/en-us/articles/213149905.md": "faq/troubleshooting/how-do-i-change-my-email-address-in-codacy-.md"
-              "hc/en-us/articles/213149905-How-do-I-change-my-email-address-in-Codacy-.md": "faq/troubleshooting/how-do-i-change-my-email-address-in-codacy-.md"
+              "hc/en-us/articles/213149905.md": "faq/troubleshooting/email-address-change.md"
+              "hc/en-us/articles/213149905-email-address-change.md": "faq/troubleshooting/email-address-change.md"
               "hc/en-us/articles/213211825.md": "faq/engines/do-you-check-for-dependencies-.md"
               "hc/en-us/articles/213211825-Do-you-check-for-dependencies-.md": "faq/engines/do-you-check-for-dependencies-.md"
               "hc/en-us/articles/213217965.md": "faq/general/which-version-control-systems-do-you-support.md"
@@ -548,5 +548,5 @@ nav:
                 - faq/troubleshooting/no-comments-on-prs.md
                 - faq/troubleshooting/duplication-metrics-not-calculated.md
                 - faq/troubleshooting/not-a-member-of-the-organization.md
-                - faq/troubleshooting/how-do-i-change-my-email-address-in-codacy-.md
+                - faq/troubleshooting/email-address-change.md
                 - faq/troubleshooting/why-isn't-my-public-repository-being-analysed.md
