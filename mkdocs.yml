@@ -516,16 +516,17 @@ nav:
                 - release-notes/self-hosted/enterprise-v2.0.338.md
                 - release-notes/self-hosted/enterprise-v2.0.337.md
                 - release-notes/self-hosted/enterprise-v2.0.333-.md
-    - FAQs:
-          - faq/general/which-version-control-systems-do-you-support.md
-          - faq/general/which-browsers-do-you-support.md
-          - faq/general/how-does-codacy-support-gitlab-cloud.md
-          - faq/general/how-does-codacy-support-bitbucket-cloud.md
-          - faq/general/how-does-codacy-support-bitbucket-server.md
-          - faq/general/can-you-add-repos-from-other-git-providers.md
-          - faq/general/why-is-my-file-missing.md
-          - faq/general/file-size-limitation.md
-          - faq/general/cancelling-your-plan.md
+    - Troubleshooting and FAQs:
+          - General:
+                - faq/general/which-version-control-systems-do-you-support.md
+                - faq/general/which-browsers-do-you-support.md
+                - faq/general/how-does-codacy-support-gitlab-cloud.md
+                - faq/general/how-does-codacy-support-bitbucket-cloud.md
+                - faq/general/how-does-codacy-support-bitbucket-server.md
+                - faq/general/can-you-add-repos-from-other-git-providers.md
+                - faq/general/why-is-my-file-missing.md
+                - faq/general/file-size-limitation.md
+                - faq/general/cancelling-your-plan.md
           - Engines:
                 - faq/engines/do-you-check-for-dependencies-.md
           - Repositories:
