@@ -143,8 +143,8 @@ plugins:
               "hc/en-us/articles/207994955-Installing-postgres-for-Codacy-Self-hosted-Using-a-Docker-container.md": "self-hosted/installing-postgres-for-codacy-self-hosted-using-a-docker-container.md"
               "hc/en-us/articles/207994975.md": "self-hosted/configuring-gitlab-enterprise-with-codacy-self-hosted.md"
               "hc/en-us/articles/207994975-Configuring-GitLab-Enterprise-with-Codacy-Self-hosted.md": "self-hosted/configuring-gitlab-enterprise-with-codacy-self-hosted.md"
-              "hc/en-us/articles/207995005.md": "user-guide/other/special-thanks.md"
-              "hc/en-us/articles/207995005-Special-Thanks.md": "user-guide/other/special-thanks.md"
+              "hc/en-us/articles/207995005.md": "special-thanks.md"
+              "hc/en-us/articles/207995005-Special-Thanks.md": "special-thanks.md"
               "hc/en-us/articles/207995025.md": "self-hosted/installing-codacy-self-hosted.md"
               "hc/en-us/articles/207995025-Installing-Codacy-Self-hosted.md": "self-hosted/installing-codacy-self-hosted.md"
               "hc/en-us/articles/208241349.md": "user-guide/your-account/default-patterns.md"
@@ -445,7 +445,6 @@ nav:
                       - user-guide/related-tools/run-local-analysis.md
                       - user-guide/related-tools/run-spotbugs.md
                       - user-guide/related-tools/api-tokens.md
-          - user-guide/other/special-thanks.md
     - Self-hosted:
           - self-hosted/bitbucket-server-integration-codacy-self-hosted.md
           - self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted.md
@@ -550,3 +549,4 @@ nav:
                 - faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md
                 - faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md
                 - faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md
+    - special-thanks.md
