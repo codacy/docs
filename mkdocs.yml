@@ -65,8 +65,8 @@ plugins:
               "hc/en-us/articles/115000947569-Code-Standards.md": "user-guide/configure-your-repo/code-standards.md"
               "hc/en-us/articles/115001853565.md": "user-guide/general/upgrading-your-codacy-account.md"
               "hc/en-us/articles/115001853565-Upgrading-your-Codacy-account.md": "user-guide/general/upgrading-your-codacy-account.md"
-              "hc/en-us/articles/115001959985.md": 'faq/troubleshooting/why-do-i-get-a-"not-a-member-of-the-organization"-message-.md'
-              "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": 'faq/troubleshooting/why-do-i-get-a-"not-a-member-of-the-organization"-message-.md'
+              "hc/en-us/articles/115001959985.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
+              "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
               "hc/en-us/articles/115002130625.md": "user-guide/configure-your-repo/codacy-configuration-file.md"
               "hc/en-us/articles/115002130625-Codacy-Configuration-File.md": "user-guide/configure-your-repo/codacy-configuration-file.md"
               "hc/en-us/articles/115002330985.md": "user-guide/configure-your-repo/specifying-your-python-version.md"
@@ -546,7 +546,7 @@ nav:
           - Troubleshooting:
                 - faq/troubleshooting/duplication-metrics-not-calculated.md
                 - faq/troubleshooting/no-comments-on-prs.md
-                - faq/troubleshooting/why-do-i-get-a-"not-a-member-of-the-organization"-message-.md
+                - faq/troubleshooting/not-a-member-of-the-organization.md
                 - faq/troubleshooting/why-is-my-file-missing.md
                 - faq/troubleshooting/how-do-i-change-my-email-address-in-codacy-.md
                 - faq/troubleshooting/why-isn't-my-public-repository-being-analysed.md
