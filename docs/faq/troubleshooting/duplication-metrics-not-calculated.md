@@ -1,4 +1,4 @@
-# Why aren’t duplication metrics being calculated?
+# Why aren't duplication metrics being calculated?
 
 For performance reasons, Codacy limits the analysis of code duplication to 5000 files of the same programming language in each repository.
 
@@ -32,6 +32,6 @@ If the analysis finishes but the code duplication metric was not calculated, fol
 
     ![](/images/image3.png)
 
--   **If you are** [**analyzing your repository locally**](/hc/en-us/articles/360008254833-Run-local-analysis) with codacy-analysis-cli, consider using the flag --tool-timeout to specify a larger timeout for the execution of the tool.
+-   **If you are [analyzing your repository locally](/hc/en-us/articles/360008254833-Run-local-analysis)** with `codacy-analysis-cli`, consider using the flag `--tool-timeout` to specify a larger timeout for the execution of the tool.
 
 -   **If you are using Codacy cloud** or if the steps above did not solve the issue, contact <support@codacy.com>.
