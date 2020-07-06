@@ -43,6 +43,6 @@ Check out the [roles and permission mapping from the Git providers](/hc/en-us/ar
 
 Delete an organization to remove that organization and all its repositories from Codacy.
 
-To delete an organization, open the **Profile** page and click the button **Delete organization**. Codacy will ask for your feedback on why you are deleting your organization.
+To delete an organization, open the **Profile** page and click the button **Delete organization**. **If you are using Codacy Cloud**, Codacy will ask for your feedback on why you are deleting your organization.
 
 ![Deleting an organization](images/organization-settings.png)
