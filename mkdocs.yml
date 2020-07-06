@@ -377,75 +377,70 @@ nav:
           - getting-started/setting-up-your-personal-repositories.md
           - getting-started/supported-languages.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
-    - "User guide":
-          - "Working with your repo":
-                - "Your repositories":
-                      - user-guide/your-repositories/organization-dashboard-how-does-it-work.md
-                      - user-guide/your-repositories/repository-dashboard-how-does-it-work.md
-                      - user-guide/your-repositories/what-are-the-different-grades-and-how-are-they-calculated.md
-                      - user-guide/your-repositories/issues-view.md
-                      - user-guide/your-repositories/commits-view.md
-                      - user-guide/your-repositories/files-view.md
-                      - user-guide/your-repositories/security-dashboard.md
-                      - user-guide/your-repositories/badges.md
-                      - user-guide/your-repositories/quality-settings.md
-                      - user-guide/your-repositories/managing-branches.md
-                      - user-guide/your-repositories/post-commit-hooks.md
-                      - user-guide/your-repositories/share-your-repository-with-a-non-codacy-user.md
-                - "Configure your repo":
-                      - user-guide/configure-your-repo/code-patterns.md
-                      - user-guide/configure-your-repo/add-coverage-to-your-repo.md
-                      - user-guide/configure-your-repo/coverage.md
-                      - user-guide/configure-your-repo/generate-coverage.md
-                      - "Add coverage to your repo": "!include ./submodules/codacy-coverage-reporter/mkdocs.yml"
-                      - user-guide/configure-your-repo/codacy-configuration-file.md
-                      - user-guide/configure-your-repo/ignore-files-from-codacy-analysis.md
-                      - user-guide/configure-your-repo/submodules-how-to-enable-them.md
-                      - user-guide/configure-your-repo/file-extensions.md
-                      - user-guide/configure-your-repo/specifying-language.md
-                      - user-guide/configure-your-repo/specifying-your-python-version.md
-                      - user-guide/configure-your-repo/php_codesniffer-specifying-your-php-version.md
-                      - user-guide/configure-your-repo/code-standards.md
-                - "Supported technologies":
-                      - user-guide/supported-technologies/engines.md
-                      - user-guide/supported-technologies/tool-developer-guide.md
-                      - user-guide/supported-technologies/tool-developer-guide-using-scala.md
-          - General:
-                - General:
-                      - user-guide/general/updates-to-codacy’s-privacy-policy.md
-                      - user-guide/general/upgrading-your-codacy-account.md
-                      - user-guide/general/plans-and-billing.md
-                - "Your account":
-                      - user-guide/your-account/default-patterns.md
-                      - user-guide/your-account/changing-your-username-and-avatar.md
-                      - user-guide/your-account/notifications.md
-                - "Synced organizations":
-                      - user-guide/synced-organizations/what-are-synced-organizations.md
-                      - user-guide/synced-organizations/roles-and-permissions-for-synced-organizations.md
-                      - user-guide/synced-organizations/adding-and-managing-authors.md
-                      - user-guide/synced-organizations/why-can't-i-see-my-organization.md
-                      - user-guide/synced-organizations/authors-vs-members.md
-                      - user-guide/synced-organizations/how-to-configure-which-users-can-ignore-issues.md
-                - "Manual organizations":
-                      - user-guide/manual-organizations/creating-and-renaming-an-organization.md
-                      - user-guide/manual-organizations/creating-and-managing-teams.md
-                      - user-guide/manual-organizations/managing-team-repositories.md
-                      - user-guide/manual-organizations/administrative-permissions.md
-                - Integrations:
-                      - user-guide/integrations/github-integration.md
-                      - user-guide/integrations/gitlab-integration.md
-                      - user-guide/integrations/bitbucket-cloud-integration.md
-                      - user-guide/integrations/slack-integration.md
-                      - user-guide/integrations/jira-integration.md
-                      - user-guide/integrations/youtrack-integration.md
-                      - user-guide/integrations/project-api.md
-                      - user-guide/integrations/webhook-notifications.md
-                - "Related tools":
-                      - user-guide/related-tools/client-side-tools.md
-                      - user-guide/related-tools/run-local-analysis.md
-                      - user-guide/related-tools/run-spotbugs.md
-                      - user-guide/related-tools/api-tokens.md
-    - Self-hosted:
+    - "Your repositories":
+          - user-guide/your-repositories/repository-dashboard-how-does-it-work.md
+          - user-guide/your-repositories/what-are-the-different-grades-and-how-are-they-calculated.md
+          - user-guide/your-repositories/issues-view.md
+          - user-guide/your-repositories/commits-view.md
+          - user-guide/your-repositories/files-view.md
+          - user-guide/your-repositories/security-dashboard.md
+          - user-guide/your-repositories/badges.md
+          - user-guide/your-repositories/quality-settings.md
+          - user-guide/your-repositories/managing-branches.md
+          - user-guide/your-repositories/post-commit-hooks.md
+          - user-guide/your-repositories/share-your-repository-with-a-non-codacy-user.md
+    - "Configuring your repositories":
+          - Integrations:
+                - user-guide/integrations/github-integration.md
+                - user-guide/integrations/gitlab-integration.md
+                - user-guide/integrations/bitbucket-cloud-integration.md
+                - user-guide/integrations/slack-integration.md
+                - user-guide/integrations/jira-integration.md
+                - user-guide/integrations/youtrack-integration.md
+                - user-guide/integrations/project-api.md
+                - user-guide/integrations/webhook-notifications.md
+          - user-guide/configure-your-repo/code-patterns.md
+          - user-guide/configure-your-repo/add-coverage-to-your-repo.md
+          - user-guide/configure-your-repo/coverage.md
+          - user-guide/configure-your-repo/generate-coverage.md
+          - "Add coverage to your repo": "!include ./submodules/codacy-coverage-reporter/mkdocs.yml"
+          - user-guide/configure-your-repo/codacy-configuration-file.md
+          - user-guide/configure-your-repo/ignore-files-from-codacy-analysis.md
+          - user-guide/configure-your-repo/submodules-how-to-enable-them.md
+          - user-guide/configure-your-repo/file-extensions.md
+          - user-guide/configure-your-repo/specifying-language.md
+          - user-guide/configure-your-repo/specifying-your-python-version.md
+          - user-guide/configure-your-repo/php_codesniffer-specifying-your-php-version.md
+          - user-guide/configure-your-repo/code-standards.md
+          - user-guide/your-repositories/organization-dashboard-how-does-it-work.md
+    - "Organizations":
+          - user-guide/synced-organizations/what-are-synced-organizations.md
+          - user-guide/synced-organizations/roles-and-permissions-for-synced-organizations.md
+          - user-guide/synced-organizations/adding-and-managing-authors.md
+          - user-guide/synced-organizations/why-can't-i-see-my-organization.md
+          - user-guide/synced-organizations/authors-vs-members.md
+          - user-guide/synced-organizations/how-to-configure-which-users-can-ignore-issues.md
+          - "Manual organizations (legacy)":
+                - user-guide/manual-organizations/creating-and-renaming-an-organization.md
+                - user-guide/manual-organizations/creating-and-managing-teams.md
+                - user-guide/manual-organizations/managing-team-repositories.md
+                - user-guide/manual-organizations/administrative-permissions.md
+    - "Your account":
+          - user-guide/your-account/changing-your-username-and-avatar.md
+          - user-guide/your-account/default-patterns.md
+          - user-guide/your-account/notifications.md
+          - user-guide/general/plans-and-billing.md
+          - user-guide/general/upgrading-your-codacy-account.md
+          - user-guide/general/updates-to-codacy’s-privacy-policy.md
+    - "Related tools":
+          - user-guide/supported-technologies/engines.md
+          - user-guide/related-tools/client-side-tools.md
+          - user-guide/related-tools/run-local-analysis.md
+          - user-guide/related-tools/run-spotbugs.md
+          - user-guide/related-tools/api-tokens.md
+          - user-guide/supported-technologies/tool-developer-guide.md
+          - user-guide/supported-technologies/tool-developer-guide-using-scala.md
+    - "Installing Codacy (legacy)":
           - self-hosted/bitbucket-server-integration-codacy-self-hosted.md
           - self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted.md
           - self-hosted/configuring-github-cloud-with-codacy-self-hosted.md
@@ -464,6 +459,40 @@ nav:
           - self-hosted/managing-authentication-for-the-control-panel.md
           - self-hosted/monitoring-codacy-self-hosted.md
     - "Installing Codacy": "!include ./submodules/chart/mkdocs.yml"
+    - Troubleshooting and FAQs:
+          - General:
+                - faq/general/which-version-control-systems-do-you-support.md
+                - faq/general/which-browsers-do-you-support.md
+                - faq/general/how-does-codacy-support-gitlab-cloud.md
+                - faq/general/how-does-codacy-support-bitbucket-cloud.md
+                - faq/general/how-does-codacy-support-bitbucket-server.md
+                - faq/general/how-does-codacy-keep-my-data-secure.md
+                - faq/general/how-do-i-change-my-email-address-in-codacy.md
+                - faq/general/cancelling-your-plan.md
+          - Repositories:
+                - faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md
+                - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md
+                - faq/repositories/how-do-i-manually-force-a-repository-update.md
+                - faq/repositories/how-do-i-reanalyze-my-repository.md
+                - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
+                - faq/repositories/i-moved-my-repository-on-the-git-provider.md
+                - faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md
+                - faq/repositories/hotspots-how-does-it-work.md
+                - faq/repositories/what-are-logs.md
+          - Code analysis:
+                - faq/code-analysis/do-you-check-for-dependencies.md
+                - faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md
+                - faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md
+                - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
+                - faq/code-analysis/skipping-an-analysis.md
+          - Troubleshooting:
+                - faq/troubleshooting/why-is-my-file-missing.md
+                - faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md
+                - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
+                - faq/troubleshooting/not-a-member-of-the-organization.md
+                - faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md
+                - faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md
+                - faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md
     - "Release notes":
           - "Cloud release notes":
                 - release-notes/cloud/deprecating-http-headers-for-api-tokens.md
@@ -515,38 +544,4 @@ nav:
                 - release-notes/self-hosted/enterprise-v2.0.338.md
                 - release-notes/self-hosted/enterprise-v2.0.337.md
                 - release-notes/self-hosted/enterprise-v2.0.333-.md
-    - Troubleshooting and FAQs:
-          - General:
-                - faq/general/which-version-control-systems-do-you-support.md
-                - faq/general/which-browsers-do-you-support.md
-                - faq/general/how-does-codacy-support-gitlab-cloud.md
-                - faq/general/how-does-codacy-support-bitbucket-cloud.md
-                - faq/general/how-does-codacy-support-bitbucket-server.md
-                - faq/general/how-does-codacy-keep-my-data-secure.md
-                - faq/general/how-do-i-change-my-email-address-in-codacy.md
-                - faq/general/cancelling-your-plan.md
-          - Repositories:
-                - faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md
-                - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md
-                - faq/repositories/how-do-i-manually-force-a-repository-update.md
-                - faq/repositories/how-do-i-reanalyze-my-repository.md
-                - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
-                - faq/repositories/i-moved-my-repository-on-the-git-provider.md
-                - faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md
-                - faq/repositories/hotspots-how-does-it-work.md
-                - faq/repositories/what-are-logs.md
-          - Code analysis:
-                - faq/code-analysis/do-you-check-for-dependencies.md
-                - faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md
-                - faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md
-                - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
-                - faq/code-analysis/skipping-an-analysis.md
-          - Troubleshooting:
-                - faq/troubleshooting/why-is-my-file-missing.md
-                - faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md
-                - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
-                - faq/troubleshooting/not-a-member-of-the-organization.md
-                - faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md
-                - faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md
-                - faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md
     - special-thanks.md
