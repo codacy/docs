@@ -37,7 +37,7 @@ In case you change your organization or repository on the Git provider, they'll 
 -   Changing a repository name
 -   Changing a repository visibility 
 
-Check out the [roles and permission mapping from the GitHub permissions](/hc/en-us/articles/360010373559).
+Check out the [roles and permission mapping from the Git providers](/hc/en-us/articles/360010373559).
 
 ## Deleting an organization
 
