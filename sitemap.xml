@@ -24,6 +24,10 @@
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>http://docs.dev.codacy.org/user-guide/your-repositories/organization-dashboard-how-does-it-work/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>http://docs.dev.codacy.org/user-guide/your-repositories/repository-dashboard-how-does-it-work/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
@@ -65,38 +69,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://docs.dev.codacy.org/user-guide/your-repositories/share-your-repository-with-a-non-codacy-user/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/integrations/github-integration/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/integrations/gitlab-integration/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/integrations/bitbucket-cloud-integration/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/integrations/slack-integration/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/integrations/jira-integration/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/integrations/youtrack-integration/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/integrations/project-api/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/integrations/webhook-notifications/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -176,7 +148,39 @@
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/your-repositories/organization-dashboard-how-does-it-work/</loc>
+     <loc>http://docs.dev.codacy.org/user-guide/supported-technologies/engines/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/user-guide/supported-technologies/tool-developer-guide/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/user-guide/supported-technologies/tool-developer-guide-using-scala/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/user-guide/general/updates-to-codacy%E2%80%99s-privacy-policy/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/user-guide/general/upgrading-your-codacy-account/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/user-guide/general/plan-billing/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/user-guide/your-account/profile-manage/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/user-guide/your-account/default-patterns/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/user-guide/your-account/notifications/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -188,15 +192,15 @@
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>http://docs.dev.codacy.org/user-guide/synced-organizations/authors-vs-members/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>http://docs.dev.codacy.org/user-guide/synced-organizations/adding-and-managing-authors/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://docs.dev.codacy.org/user-guide/synced-organizations/why-can%27t-i-see-my-organization/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/synced-organizations/authors-vs-members/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -220,31 +224,35 @@
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/your-account/changing-your-username-and-avatar/</loc>
+     <loc>http://docs.dev.codacy.org/user-guide/integrations/github-integration/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/your-account/default-patterns/</loc>
+     <loc>http://docs.dev.codacy.org/user-guide/integrations/gitlab-integration/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/your-account/notifications/</loc>
+     <loc>http://docs.dev.codacy.org/user-guide/integrations/bitbucket-cloud-integration/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/general/plans-and-billing/</loc>
+     <loc>http://docs.dev.codacy.org/user-guide/integrations/slack-integration/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/general/upgrading-your-codacy-account/</loc>
+     <loc>http://docs.dev.codacy.org/user-guide/integrations/jira-integration/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/general/updates-to-codacy%E2%80%99s-privacy-policy/</loc>
+     <loc>http://docs.dev.codacy.org/user-guide/integrations/youtrack-integration/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/supported-technologies/engines/</loc>
+     <loc>http://docs.dev.codacy.org/user-guide/integrations/project-api/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/user-guide/integrations/webhook-notifications/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -264,11 +272,7 @@
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/supported-technologies/tool-developer-guide/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/user-guide/supported-technologies/tool-developer-guide-using-scala/</loc>
+     <loc>http://docs.dev.codacy.org/user-guide/other/special-thanks/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -417,122 +421,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://docs.dev.codacy.org/Chart/troubleshoot/k8s-cheatsheet/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/general/which-version-control-systems-do-you-support/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/general/which-browsers-do-you-support/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/general/how-does-codacy-support-gitlab-cloud/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/general/how-does-codacy-support-bitbucket-cloud/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/general/how-does-codacy-support-bitbucket-server/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/general/how-does-codacy-keep-my-data-secure/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/general/how-do-i-change-my-email-address-in-codacy/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/general/cancelling-your-plan/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/repositories/why-cant-i-see-or-add-my-organizations-repositories/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/repositories/how-do-i-manually-force-a-repository-update/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/repositories/how-do-i-reanalyze-my-repository/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/repositories/i-renamed-my-repository-on-the-git-provider/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/repositories/i-moved-my-repository-on-the-git-provider/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/repositories/hotspots-how-does-it-work/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/repositories/what-are-logs/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/code-analysis/do-you-check-for-dependencies/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/code-analysis/skipping-an-analysis/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/troubleshooting/why-is-my-file-missing/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/troubleshooting/why-arent-duplication-metrics-being-calculated/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/troubleshooting/not-a-member-of-the-organization/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/troubleshooting/why-isnt-my-public-repository-being-analysed/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key/</loc>
-     <lastmod>2020-07-06</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -728,7 +616,123 @@
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/special-thanks/</loc>
+     <loc>http://docs.dev.codacy.org/faq/general/which-version-control-systems-do-you-support/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/general/which-browsers-do-you-support/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/general/how-does-codacy-support-gitlab-cloud/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/general/how-does-codacy-support-bitbucket-cloud/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/general/how-does-codacy-support-bitbucket-server/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/general/can-you-add-repos-from-other-git-providers/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/general/why-is-my-file-missing/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/general/file-size-limitation/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/engines/do-you-check-for-dependencies-/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/how-does-codacy-measure-complexity-in-my-repository-/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/i-renamed-my-repository-on-the-git-provider/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/i-moved-my-repository-on-the-git-provider/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/repository-failed-to-clone-generating-a-new-ssh-key/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/why-can%27t-i-see-or-add-my-organization%27s-repositories/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/skipping-an-analysis/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/how-do-i-manually-force-a-repository-update/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/what-are-logs/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/hotspots-how-does-it-work/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/why-can%27t-i-configure-post-commit-hooks-and-integrations/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/does-codacy-automatically-analyse-all-pull-requests-/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/how-do-i-reanalyze-my-repository/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/how-long-does-it-take-for-my-repository-to-be-analysed/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/security/how-does-codacy-keep-my-data-secure/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/troubleshooting/why-aren%E2%80%99t-duplication-metrics-being-calculated/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/troubleshooting/why-isn%E2%80%99t-codacy-commenting-on-my-prs-anymore/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/troubleshooting/why-do-i-get-a-%22not-a-member-of-the-organization%22-message-/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/troubleshooting/how-do-i-change-my-email-address-in-codacy-/</loc>
+     <lastmod>2020-07-06</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.dev.codacy.org/faq/troubleshooting/why-isn%27t-my-public-repository-being-analysed/</loc>
      <lastmod>2020-07-06</lastmod>
      <changefreq>daily</changefreq>
     </url>
