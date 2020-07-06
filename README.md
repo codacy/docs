@@ -15,7 +15,7 @@
     cd docs
     ```
 
-2.  Check that you have [Python 3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/) installed and install them if you don’t:
+2.  Check that you have [Python 3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/) installed and install them if you don't:
 
     ```bash
     python3 --version
