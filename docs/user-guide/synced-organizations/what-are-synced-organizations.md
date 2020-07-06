@@ -25,7 +25,7 @@ Members can remove themselves from organizations, while owners can remove themse
 In the **Plan and Billing** page there are different ways to control who can join your organization:
 
 -   **Allow new people to join**: team members with access on the Git provider will be able to join Codacy automatically and your billing will be updated accordingly.
--   **New people request to join**: team members need to request access in order to be able to join Codacy. In can override this setting for organization owners.
+-   **New people request to join**: team members need to request access in order to be able to join Codacy. You can override this setting for organization owners.
 
 ![Accepting new people to the organization](images/organization-plan-billing.png)
 
