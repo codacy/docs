@@ -340,43 +340,35 @@
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>http://docs.dev.codacy.org/Chart/infrastructure/aks-quickstart/</loc>
+     <lastmod>2020-07-08</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>http://docs.dev.codacy.org/Chart/infrastructure/microk8s-quickstart/</loc>
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/configuration/integrations/github-cloud/</loc>
+     <loc>http://docs.dev.codacy.org/Chart/configuration/git-providers/github-cloud/</loc>
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/configuration/integrations/github-enterprise/</loc>
+     <loc>http://docs.dev.codacy.org/Chart/configuration/git-providers/github-enterprise/</loc>
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/configuration/integrations/github-app-create/</loc>
+     <loc>http://docs.dev.codacy.org/Chart/configuration/git-providers/create-github-app/</loc>
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/configuration/integrations/gitlab-cloud/</loc>
+     <loc>http://docs.dev.codacy.org/Chart/configuration/git-providers/gitlab-cloud/</loc>
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/configuration/integrations/gitlab-enterprise/</loc>
+     <loc>http://docs.dev.codacy.org/Chart/configuration/git-providers/gitlab-enterprise/</loc>
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/configuration/integrations/bitbucket-cloud/</loc>
-     <lastmod>2020-07-08</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/configuration/integrations/bitbucket-server/</loc>
-     <lastmod>2020-07-08</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/configuration/integrations/email/</loc>
-     <lastmod>2020-07-08</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/configuration/tls-ingress/</loc>
+     <loc>http://docs.dev.codacy.org/Chart/configuration/git-providers/bitbucket-enterprise/</loc>
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -384,27 +376,23 @@
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/maintenance/upgrade/</loc>
+     <loc>http://docs.dev.codacy.org/Chart/extra/upgrade/</loc>
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/maintenance/uninstall/</loc>
+     <loc>http://docs.dev.codacy.org/Chart/extra/uninstall/</loc>
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/maintenance/database/</loc>
+     <loc>http://docs.dev.codacy.org/Chart/extra/database/</loc>
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/troubleshoot/troubleshoot/</loc>
+     <loc>http://docs.dev.codacy.org/Chart/extra/k8s-cheatsheet/</loc>
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/troubleshoot/logs-collect/</loc>
-     <lastmod>2020-07-08</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.dev.codacy.org/Chart/troubleshoot/k8s-cheatsheet/</loc>
+     <loc>http://docs.dev.codacy.org/Chart/extra/logs-collect/</loc>
      <lastmod>2020-07-08</lastmod>
      <changefreq>daily</changefreq>
     </url><url>

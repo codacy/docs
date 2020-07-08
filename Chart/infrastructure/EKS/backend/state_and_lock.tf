@@ -3,7 +3,7 @@
 
 resource "aws_s3_bucket" "state" {
   bucket = "${var.project_tag}-terraform-state-${random_string.rand.result}"
-  acl    = "private"
+  acl = "private"
 
   ### To destroy uncomment this:
   #force_destroy = true
@@ -18,14 +18,12 @@ resource "aws_s3_bucket" "state" {
     prevent_destroy = true
   }
   ###########################
-
-  tags = var.custom_tags
 }
 
 resource "aws_dynamodb_table" "lock" {
-  name           = "${var.project_tag}-terraform-lock"
-  hash_key       = "LockID"
-  read_capacity  = 20
+  name = "${var.project_tag}-terraform-lock"
+  hash_key = "LockID"
+  read_capacity = 20
   write_capacity = 20
 
   attribute {
@@ -38,13 +36,11 @@ resource "aws_dynamodb_table" "lock" {
     prevent_destroy = true
   }
   ###########################
-
-  tags = var.custom_tags
 }
 
 resource "random_string" "rand" {
-  length  = 22
+  length = 22
   special = false
-  upper   = false
-  number  = false
+  upper = false
+  number = false
 }
