@@ -61,16 +61,16 @@ plugins:
               "hc/en-us/articles/115000488285-Slack.md": "user-guide/integrations/slack-integration.md"
               "hc/en-us/articles/115000723329.md": "your-repositories/security-dashboard.md"
               "hc/en-us/articles/115000723329-Security-Dashboard.md": "your-repositories/security-dashboard.md"
-              "hc/en-us/articles/115000947569.md": "user-guide/configure-your-repo/code-standards.md"
-              "hc/en-us/articles/115000947569-Code-Standards.md": "user-guide/configure-your-repo/code-standards.md"
+              "hc/en-us/articles/115000947569.md": "configuring-your-repositories/code-standards.md"
+              "hc/en-us/articles/115000947569-Code-Standards.md": "configuring-your-repositories/code-standards.md"
               "hc/en-us/articles/115001853565.md": "user-guide/general/plan-and-billing.md"
               "hc/en-us/articles/115001853565-Upgrading-your-Codacy-account.md": "user-guide/general/plan-and-billing.md"
               "hc/en-us/articles/115001959985.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
               "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
-              "hc/en-us/articles/115002130625.md": "user-guide/configure-your-repo/codacy-configuration-file.md"
-              "hc/en-us/articles/115002130625-Codacy-Configuration-File.md": "user-guide/configure-your-repo/codacy-configuration-file.md"
-              "hc/en-us/articles/115002330985.md": "user-guide/configure-your-repo/specifying-your-python-version.md"
-              "hc/en-us/articles/115002330985-Specifying-your-Python-version.md": "user-guide/configure-your-repo/specifying-your-python-version.md"
+              "hc/en-us/articles/115002130625.md": "configuring-your-repositories/codacy-configuration-file.md"
+              "hc/en-us/articles/115002130625-Codacy-Configuration-File.md": "configuring-your-repositories/codacy-configuration-file.md"
+              "hc/en-us/articles/115002330985.md": "configuring-your-repositories/specifying-your-python-version.md"
+              "hc/en-us/articles/115002330985-Specifying-your-Python-version.md": "configuring-your-repositories/specifying-your-python-version.md"
               "hc/en-us/articles/115002492425.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md"
               "hc/en-us/articles/115002492425-NodeSecurity-Dependencies-Inspection.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md"
               "hc/en-us/articles/115002868829.md": "self-hosted/monitoring-codacy-self-hosted.md"
@@ -81,8 +81,8 @@ plugins:
               "hc/en-us/articles/207278449-Setting-up-your-personal-repositories.md": "getting-started/setting-up-your-personal-repositories.md"
               "hc/en-us/articles/207279599.md": "faq/general/how-does-codacy-keep-my-data-secure.md"
               "hc/en-us/articles/207279599-How-does-Codacy-keep-my-data-secure-.md": "faq/general/how-does-codacy-keep-my-data-secure.md"
-              "hc/en-us/articles/207279819.md": "user-guide/configure-your-repo/coverage.md"
-              "hc/en-us/articles/207279819-Coverage.md": "user-guide/configure-your-repo/coverage.md"
+              "hc/en-us/articles/207279819.md": "configuring-your-repositories/coverage.md"
+              "hc/en-us/articles/207279819-Coverage.md": "configuring-your-repositories/coverage.md"
               "hc/en-us/articles/207279849.md": "your-repositories/files-view.md"
               "hc/en-us/articles/207279849-Files-View.md": "your-repositories/files-view.md"
               "hc/en-us/articles/207280019.md": "your-repositories/managing-branches.md"
@@ -105,18 +105,18 @@ plugins:
               "hc/en-us/articles/207280509-Configuring-Bitbucket-Server-from-Stash-with-Codacy-Self-hosted.md": "self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted.md"
               "hc/en-us/articles/207280529.md": "self-hosted/frequently-asked-questions-(faq).md"
               "hc/en-us/articles/207280529-Frequently-Asked-Questions-faq/.md": "self-hosted/frequently-asked-questions-(faq).md"
-              "hc/en-us/articles/207312879.md": "user-guide/configure-your-repo/generate-coverage.md"
-              "hc/en-us/articles/207312879-Generate-Coverage.md": "user-guide/configure-your-repo/generate-coverage.md"
+              "hc/en-us/articles/207312879.md": "configuring-your-repositories/generate-coverage.md"
+              "hc/en-us/articles/207312879-Generate-Coverage.md": "configuring-your-repositories/generate-coverage.md"
               "hc/en-us/articles/207993605.md": "getting-started/i-added-a-repository.-now-what.md"
               "hc/en-us/articles/207993605-I-added-a-repository-Now-what-.md": "getting-started/i-added-a-repository.-now-what.md"
-              "hc/en-us/articles/207993835.md": "user-guide/configure-your-repo/add-coverage-to-your-repo.md"
-              "hc/en-us/articles/207993835-Add-coverage-to-your-repo.md": "user-guide/configure-your-repo/add-coverage-to-your-repo.md"
+              "hc/en-us/articles/207993835.md": "configuring-your-repositories/add-coverage-to-your-repo.md"
+              "hc/en-us/articles/207993835-Add-coverage-to-your-repo.md": "configuring-your-repositories/add-coverage-to-your-repo.md"
               "hc/en-us/articles/207994025.md": "your-repositories/commits-view.md"
               "hc/en-us/articles/207994025-Commits-View.md": "your-repositories/commits-view.md"
-              "hc/en-us/articles/207994335.md": "user-guide/configure-your-repo/code-patterns.md"
-              "hc/en-us/articles/207994335-Code-Patterns.md": "user-guide/configure-your-repo/code-patterns.md"
-              "hc/en-us/articles/207994395.md": "user-guide/configure-your-repo/file-extensions.md"
-              "hc/en-us/articles/207994395-File-Extensions.md": "user-guide/configure-your-repo/file-extensions.md"
+              "hc/en-us/articles/207994335.md": "configuring-your-repositories/code-patterns.md"
+              "hc/en-us/articles/207994335-Code-Patterns.md": "configuring-your-repositories/code-patterns.md"
+              "hc/en-us/articles/207994395.md": "configuring-your-repositories/file-extensions.md"
+              "hc/en-us/articles/207994395-File-Extensions.md": "configuring-your-repositories/file-extensions.md"
               "hc/en-us/articles/207994675.md": "user-guide/integrations/project-api.md"
               "hc/en-us/articles/207994675-Project-API.md": "user-guide/integrations/project-api.md"
               "hc/en-us/articles/207994725.md": "user-guide/supported-technologies/tool-developer-guide.md"
@@ -177,8 +177,8 @@ plugins:
               "hc/en-us/articles/214085885-Post-Commit-Hooks.md": "your-repositories/post-commit-hooks.md"
               "hc/en-us/articles/214377225.md": "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md"
               "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md"
-              "hc/en-us/articles/360001207234.md": "user-guide/configure-your-repo/specifying-language.md"
-              "hc/en-us/articles/360001207234-Specifying-language.md": "user-guide/configure-your-repo/specifying-language.md"
+              "hc/en-us/articles/360001207234.md": "configuring-your-repositories/specifying-language.md"
+              "hc/en-us/articles/360001207234-Specifying-language.md": "configuring-your-repositories/specifying-language.md"
               "hc/en-us/articles/360002902573.md": "self-hosted/installing-postgres-for-codacy-self-hosted.md"
               "hc/en-us/articles/360002902573-Installing-postgres-for-Codacy-Self-hosted.md": "self-hosted/installing-postgres-for-codacy-self-hosted.md"
               "hc/en-us/articles/360003863274.md": "your-repositories/organization-dashboard-overview.md"
@@ -191,14 +191,14 @@ plugins:
               "hc/en-us/articles/360003890693-What-are-Logs-.md": "faq/repositories/what-are-logs.md"
               "hc/en-us/articles/360004685494.md": "user-guide/general/how-does-codacy-protect-my-privacy.md"
               "hc/en-us/articles/360004685494-Updates-to-Codacy-s-Privacy-Policy.md": "user-guide/general/how-does-codacy-protect-my-privacy.md"
-              "hc/en-us/articles/360005097654.md": "user-guide/configure-your-repo/ignore-files-from-codacy-analysis.md"
-              "hc/en-us/articles/360005097654-Ignore-files-from-Codacy-analysis.md": "user-guide/configure-your-repo/ignore-files-from-codacy-analysis.md"
-              "hc/en-us/articles/360005239394.md": "user-guide/configure-your-repo/submodules-how-to-enable-them.md"
-              "hc/en-us/articles/360005239394-Submodules-How-to-enable-them.md": "user-guide/configure-your-repo/submodules-how-to-enable-them.md"
+              "hc/en-us/articles/360005097654.md": "configuring-your-repositories/ignore-files-from-codacy-analysis.md"
+              "hc/en-us/articles/360005097654-Ignore-files-from-Codacy-analysis.md": "configuring-your-repositories/ignore-files-from-codacy-analysis.md"
+              "hc/en-us/articles/360005239394.md": "configuring-your-repositories/submodules-how-to-enable-them.md"
+              "hc/en-us/articles/360005239394-Submodules-How-to-enable-them.md": "configuring-your-repositories/submodules-how-to-enable-them.md"
               "hc/en-us/articles/360005839053.md": "faq/code-analysis/skipping-an-analysis.md"
               "hc/en-us/articles/360005839053-Skipping-an-analysis.md": "faq/code-analysis/skipping-an-analysis.md"
-              "hc/en-us/articles/360006036934.md": "user-guide/configure-your-repo/php_codesniffer-specifying-your-php-version.md"
-              "hc/en-us/articles/360006036934-PHP-CodeSniffer-Specifying-your-PHP-version.md": "user-guide/configure-your-repo/php_codesniffer-specifying-your-php-version.md"
+              "hc/en-us/articles/360006036934.md": "configuring-your-repositories/php_codesniffer-specifying-your-php-version.md"
+              "hc/en-us/articles/360006036934-PHP-CodeSniffer-Specifying-your-PHP-version.md": "configuring-your-repositories/php_codesniffer-specifying-your-php-version.md"
               "hc/en-us/articles/360006415313.md": "release-notes/self-hosted/enterprise-v2.0.333-.md"
               "hc/en-us/articles/360006415313-Enterprise-v2-0-333-.md": "release-notes/self-hosted/enterprise-v2.0.333-.md"
               "hc/en-us/articles/360006566914.md": "release-notes/self-hosted/enterprise-v2.0.337.md"
@@ -399,19 +399,19 @@ nav:
                 - user-guide/integrations/youtrack-integration.md
                 - user-guide/integrations/project-api.md
                 - user-guide/integrations/webhook-notifications.md
-          - user-guide/configure-your-repo/code-patterns.md
-          - user-guide/configure-your-repo/add-coverage-to-your-repo.md
-          - user-guide/configure-your-repo/coverage.md
-          - user-guide/configure-your-repo/generate-coverage.md
-          - "Add coverage to your repo": "!include ./submodules/codacy-coverage-reporter/mkdocs.yml"
-          - user-guide/configure-your-repo/codacy-configuration-file.md
-          - user-guide/configure-your-repo/ignore-files-from-codacy-analysis.md
-          - user-guide/configure-your-repo/submodules-how-to-enable-them.md
-          - user-guide/configure-your-repo/file-extensions.md
-          - user-guide/configure-your-repo/specifying-language.md
-          - user-guide/configure-your-repo/specifying-your-python-version.md
-          - user-guide/configure-your-repo/php_codesniffer-specifying-your-php-version.md
-          - user-guide/configure-your-repo/code-standards.md
+          - configuring-your-repositories/code-patterns.md
+          - configuring-your-repositories/add-coverage-to-your-repo.md
+          - configuring-your-repositories/coverage.md
+          - configuring-your-repositories/generate-coverage.md
+          - "Add coverage to your repository": "!include ./submodules/codacy-coverage-reporter/mkdocs.yml"
+          - configuring-your-repositories/codacy-configuration-file.md
+          - configuring-your-repositories/ignore-files-from-codacy-analysis.md
+          - configuring-your-repositories/submodules-how-to-enable-them.md
+          - configuring-your-repositories/file-extensions.md
+          - configuring-your-repositories/specifying-language.md
+          - configuring-your-repositories/specifying-your-python-version.md
+          - configuring-your-repositories/php_codesniffer-specifying-your-php-version.md
+          - configuring-your-repositories/code-standards.md
     - "Organizations":
           - user-guide/synced-organizations/what-are-synced-organizations.md
           - your-repositories/organization-dashboard-overview.md
