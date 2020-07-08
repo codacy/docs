@@ -412,9 +412,9 @@ nav:
           - user-guide/configure-your-repo/specifying-your-python-version.md
           - user-guide/configure-your-repo/php_codesniffer-specifying-your-php-version.md
           - user-guide/configure-your-repo/code-standards.md
-          - your-repositories/organization-dashboard-how-does-it-work.md
     - "Organizations":
           - user-guide/synced-organizations/what-are-synced-organizations.md
+          - your-repositories/organization-dashboard-how-does-it-work.md
           - user-guide/synced-organizations/roles-and-permissions-for-synced-organizations.md
           - user-guide/synced-organizations/adding-and-managing-authors.md
           - user-guide/synced-organizations/why-can't-i-see-my-organization.md
