@@ -63,8 +63,8 @@ plugins:
               "hc/en-us/articles/115000723329-Security-Dashboard.md": "user-guide/your-repositories/security-dashboard.md"
               "hc/en-us/articles/115000947569.md": "user-guide/configure-your-repo/code-standards.md"
               "hc/en-us/articles/115000947569-Code-Standards.md": "user-guide/configure-your-repo/code-standards.md"
-              "hc/en-us/articles/115001853565.md": "user-guide/general/upgrading-your-codacy-account.md"
-              "hc/en-us/articles/115001853565-Upgrading-your-Codacy-account.md": "user-guide/general/upgrading-your-codacy-account.md"
+              "hc/en-us/articles/115001853565.md": "user-guide/general/plan-and-billing.md"
+              "hc/en-us/articles/115001853565-Upgrading-your-Codacy-account.md": "user-guide/general/plan-and-billing.md"
               "hc/en-us/articles/115001959985.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
               "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
               "hc/en-us/articles/115002130625.md": "user-guide/configure-your-repo/codacy-configuration-file.md"
@@ -189,8 +189,8 @@ plugins:
               "hc/en-us/articles/360003890673-Repository-Dashboard-How-does-it-work-.md": "user-guide/your-repositories/repository-dashboard-how-does-it-work.md"
               "hc/en-us/articles/360003890693.md": "faq/repositories/what-are-logs.md"
               "hc/en-us/articles/360003890693-What-are-Logs-.md": "faq/repositories/what-are-logs.md"
-              "hc/en-us/articles/360004685494.md": "user-guide/general/updates-to-codacy’s-privacy-policy.md"
-              "hc/en-us/articles/360004685494-Updates-to-Codacy-s-Privacy-Policy.md": "user-guide/general/updates-to-codacy’s-privacy-policy.md"
+              "hc/en-us/articles/360004685494.md": "user-guide/general/how-does-codacy-protect-my-privacy.md"
+              "hc/en-us/articles/360004685494-Updates-to-Codacy-s-Privacy-Policy.md": "user-guide/general/how-does-codacy-protect-my-privacy.md"
               "hc/en-us/articles/360005097654.md": "user-guide/configure-your-repo/ignore-files-from-codacy-analysis.md"
               "hc/en-us/articles/360005097654-Ignore-files-from-Codacy-analysis.md": "user-guide/configure-your-repo/ignore-files-from-codacy-analysis.md"
               "hc/en-us/articles/360005239394.md": "user-guide/configure-your-repo/submodules-how-to-enable-them.md"
@@ -429,9 +429,6 @@ nav:
           - user-guide/your-account/managing-your-profile.md
           - user-guide/your-account/default-patterns.md
           - user-guide/your-account/notifications.md
-          - user-guide/general/plan-and-billing.md
-          - user-guide/general/upgrading-your-codacy-account.md
-          - user-guide/general/updates-to-codacy’s-privacy-policy.md
     - "Related tools":
           - user-guide/supported-technologies/engines.md
           - user-guide/related-tools/client-side-tools.md
@@ -461,6 +458,7 @@ nav:
     - "Installing Codacy": "!include ./submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
+                - user-guide/general/plan-and-billing.md
                 - faq/general/which-version-control-systems-do-you-support.md
                 - faq/general/which-browsers-do-you-support.md
                 - faq/general/how-does-codacy-support-gitlab-cloud.md
@@ -468,6 +466,7 @@ nav:
                 - faq/general/how-does-codacy-support-bitbucket-server.md
                 - faq/general/how-does-codacy-keep-my-data-secure.md
                 - faq/general/how-do-i-change-my-email-address-in-codacy.md
+                - user-guide/general/how-does-codacy-protect-my-privacy.md
           - Repositories:
                 - faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md
                 - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md
