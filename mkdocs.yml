@@ -403,7 +403,7 @@ nav:
           - configuring-your-repositories/add-coverage-to-your-repo.md
           - configuring-your-repositories/coverage.md
           - configuring-your-repositories/generate-coverage.md
-          - "Add coverage to your repository": "!include ./submodules/codacy-coverage-reporter/mkdocs.yml"
+          - "Advanced coverage setup": "!include ./submodules/codacy-coverage-reporter/mkdocs.yml"
           - configuring-your-repositories/codacy-configuration-file.md
           - configuring-your-repositories/ignore-files-from-codacy-analysis.md
           - configuring-your-repositories/submodules-how-to-enable-them.md
