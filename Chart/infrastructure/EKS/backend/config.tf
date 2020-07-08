@@ -8,7 +8,7 @@ provider "aws" {
   # Set your AWS configuration here. For more information see the terraform
   # provider information: https://www.terraform.io/docs/providers/aws/index.html
   # You might need to set AWS_SDK_LOAD_CONFIG=1 to use your aws credentials file
-  region = "eu-west-1"
+  region  = "eu-west-1"
   version = "~> 2.33"
 }
 
