@@ -53,8 +53,8 @@ plugins:
           redirect_maps:
               "hc/en-us/articles/115000254665.md": "self-hosted/managing-authentication-for-the-control-panel.md"
               "hc/en-us/articles/115000254665-Managing-authentication-for-the-Control-Panel.md": "self-hosted/managing-authentication-for-the-control-panel.md"
-              "hc/en-us/articles/115000255385.md": "user-guide/related-tools/api-tokens.md"
-              "hc/en-us/articles/115000255385-API-Tokens.md": "user-guide/related-tools/api-tokens.md"
+              "hc/en-us/articles/115000255385.md": "related-tools/api-tokens.md"
+              "hc/en-us/articles/115000255385-API-Tokens.md": "related-tools/api-tokens.md"
               "hc/en-us/articles/115000282129.md": "faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md"
               "hc/en-us/articles/115000282129-Why-can-t-I-configure-post-commit-hooks-and-integrations-.md": "faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md"
               "hc/en-us/articles/115000488285.md": "configuring-your-repositories/integrations/slack-integration.md"
@@ -97,8 +97,8 @@ plugins:
               "hc/en-us/articles/207280289-YouTrack-Integration.md": "configuring-your-repositories/integrations/youtrack-integration.md"
               "hc/en-us/articles/207280359.md": "configuring-your-repositories/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280359-WebHook-Notifications.md": "configuring-your-repositories/integrations/webhook-notifications.md"
-              "hc/en-us/articles/207280379.md": "user-guide/supported-technologies/tool-developer-guide-using-scala.md"
-              "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "user-guide/supported-technologies/tool-developer-guide-using-scala.md"
+              "hc/en-us/articles/207280379.md": "related-tools/tool-developer-guide-using-scala.md"
+              "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "related-tools/tool-developer-guide-using-scala.md"
               "hc/en-us/articles/207280489.md": "self-hosted/configuring-github-enterprise-with-codacy-self-hosted.md"
               "hc/en-us/articles/207280489-Configuring-GitHub-Enterprise-with-Codacy-Self-hosted.md": "self-hosted/configuring-github-enterprise-with-codacy-self-hosted.md"
               "hc/en-us/articles/207280509.md": "self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted.md"
@@ -119,8 +119,8 @@ plugins:
               "hc/en-us/articles/207994395-File-Extensions.md": "configuring-your-repositories/file-extensions.md"
               "hc/en-us/articles/207994675.md": "configuring-your-repositories/integrations/project-api.md"
               "hc/en-us/articles/207994675-Project-API.md": "configuring-your-repositories/integrations/project-api.md"
-              "hc/en-us/articles/207994725.md": "user-guide/supported-technologies/tool-developer-guide.md"
-              "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "user-guide/supported-technologies/tool-developer-guide.md"
+              "hc/en-us/articles/207994725.md": "related-tools/tool-developer-guide.md"
+              "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "related-tools/tool-developer-guide.md"
               "hc/en-us/articles/207994735.md": "getting-started/supported-languages.md"
               "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages.md"
               "hc/en-us/articles/207994765.md": "your-repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
@@ -169,8 +169,8 @@ plugins:
               "hc/en-us/articles/213217965-Which-version-control-systems-do-you-support-.md": "faq/general/which-version-control-systems-do-you-support.md"
               "hc/en-us/articles/213280129.md": "configuring-your-repositories/integrations/jira-integration.md"
               "hc/en-us/articles/213280129-JIRA.md": "configuring-your-repositories/integrations/jira-integration.md"
-              "hc/en-us/articles/213632009.md": "user-guide/supported-technologies/engines.md"
-              "hc/en-us/articles/213632009-Engines.md": "user-guide/supported-technologies/engines.md"
+              "hc/en-us/articles/213632009.md": "related-tools/engines.md"
+              "hc/en-us/articles/213632009-Engines.md": "related-tools/engines.md"
               "hc/en-us/articles/213840489.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/213840489-How-do-I-reanalyze-my-repository-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/214085885.md": "your-repositories/post-commit-hooks.md"
@@ -217,8 +217,8 @@ plugins:
               "hc/en-us/articles/360007699814-Enterprise-v2-0-338.md": "release-notes/self-hosted/enterprise-v2.0.338.md"
               "hc/en-us/articles/360007846913.md": "self-hosted/gitlab-integration-codacy-self-hosted.md"
               "hc/en-us/articles/360007846913-GitLab-integration-Codacy-Self-hosted.md": "self-hosted/gitlab-integration-codacy-self-hosted.md"
-              "hc/en-us/articles/360008254833.md": "user-guide/related-tools/run-local-analysis.md"
-              "hc/en-us/articles/360008254833-Run-local-analysis.md": "user-guide/related-tools/run-local-analysis.md"
+              "hc/en-us/articles/360008254833.md": "related-tools/run-local-analysis.md"
+              "hc/en-us/articles/360008254833-Run-local-analysis.md": "related-tools/run-local-analysis.md"
               "hc/en-us/articles/360008762954.md": "release-notes/self-hosted/enterprise-v2.0.339.md"
               "hc/en-us/articles/360008762954-Enterprise-v2-0-339.md": "release-notes/self-hosted/enterprise-v2.0.339.md"
               "hc/en-us/articles/360009164573.md": "your-repositories/quality-settings.md"
@@ -317,8 +317,8 @@ plugins:
               "hc/en-us/articles/360022690193-Cloud-Release-Notes-05-May-2019.md": "release-notes/cloud/cloud-release-notes-|-05-may-2019.md"
               "hc/en-us/articles/360023517013.md": "release-notes/cloud/cloud-release-notes-|-20-may-2019.md"
               "hc/en-us/articles/360023517013-Cloud-Release-Notes-20-May-2019.md": "release-notes/cloud/cloud-release-notes-|-20-may-2019.md"
-              "hc/en-us/articles/360023916013.md": "user-guide/related-tools/run-spotbugs.md"
-              "hc/en-us/articles/360023916013-Run-SpotBugs.md": "user-guide/related-tools/run-spotbugs.md"
+              "hc/en-us/articles/360023916013.md": "related-tools/run-spotbugs.md"
+              "hc/en-us/articles/360023916013-Run-SpotBugs.md": "related-tools/run-spotbugs.md"
               "hc/en-us/articles/360024237614.md": "release-notes/self-hosted/enterprise-v2.0.368.md"
               "hc/en-us/articles/360024237614-Enterprise-v2-0-368.md": "release-notes/self-hosted/enterprise-v2.0.368.md"
               "hc/en-us/articles/360025014373.md": "release-notes/cloud/cloud-release-notes-|-18-jun-2019.md"
@@ -343,8 +343,8 @@ plugins:
               "hc/en-us/articles/360012973060-How-does-Codacy-support-Bitbucket-Cloud-.md": "faq/general/how-does-codacy-support-bitbucket-cloud.md"
               "hc/en-us/articles/360013031520.md": "release-notes/self-hosted/self-hosted-v2.0.379.md"
               "hc/en-us/articles/360013031520-Self-hosted-v2-0-379.md": "release-notes/self-hosted/self-hosted-v2.0.379.md"
-              "hc/en-us/articles/360013142699.md": "user-guide/related-tools/client-side-tools.md"
-              "hc/en-us/articles/360013142699-Client-side-tools.md": "user-guide/related-tools/client-side-tools.md"
+              "hc/en-us/articles/360013142699.md": "related-tools/client-side-tools.md"
+              "hc/en-us/articles/360013142699-Client-side-tools.md": "related-tools/client-side-tools.md"
               "hc/en-us/articles/360013240680.md": "release-notes/self-hosted/removal-of-findbugs-and-findbugs-security.md"
               "hc/en-us/articles/360013240680-Removal-of-Findbugs-and-Findbugs-Security.md": "release-notes/self-hosted/removal-of-findbugs-and-findbugs-security.md"
               "hc/en-us/articles/360013423040.md": "self-hosted/bitbucket-server-integration-codacy-self-hosted.md"
@@ -430,13 +430,13 @@ nav:
           - your-account/default-patterns.md
           - your-account/notifications.md
     - "Related tools":
-          - user-guide/supported-technologies/engines.md
-          - user-guide/related-tools/client-side-tools.md
-          - user-guide/related-tools/run-local-analysis.md
-          - user-guide/related-tools/run-spotbugs.md
-          - user-guide/related-tools/api-tokens.md
-          - user-guide/supported-technologies/tool-developer-guide.md
-          - user-guide/supported-technologies/tool-developer-guide-using-scala.md
+          - related-tools/engines.md
+          - related-tools/client-side-tools.md
+          - related-tools/run-local-analysis.md
+          - related-tools/run-spotbugs.md
+          - related-tools/api-tokens.md
+          - related-tools/tool-developer-guide.md
+          - related-tools/tool-developer-guide-using-scala.md
     - "Installing Codacy (legacy)":
           - self-hosted/bitbucket-server-integration-codacy-self-hosted.md
           - self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted.md
