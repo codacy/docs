@@ -147,16 +147,16 @@ plugins:
               "hc/en-us/articles/207995005-Special-Thanks.md": "special-thanks.md"
               "hc/en-us/articles/207995025.md": "self-hosted/installing-codacy-self-hosted.md"
               "hc/en-us/articles/207995025-Installing-Codacy-Self-hosted.md": "self-hosted/installing-codacy-self-hosted.md"
-              "hc/en-us/articles/208241349.md": "user-guide/your-account/default-patterns.md"
-              "hc/en-us/articles/208241349-Default-Patterns.md": "user-guide/your-account/default-patterns.md"
+              "hc/en-us/articles/208241349.md": "your-account/default-patterns.md"
+              "hc/en-us/articles/208241349-Default-Patterns.md": "your-account/default-patterns.md"
               "hc/en-us/articles/208243169.md": "organizations/manual-organizations/managing-team-repositories.md"
               "hc/en-us/articles/208243169-Managing-team-repositories.md": "organizations/manual-organizations/managing-team-repositories.md"
-              "hc/en-us/articles/208942125.md": "user-guide/your-account/notifications.md"
-              "hc/en-us/articles/208942125-Notifications.md": "user-guide/your-account/notifications.md"
+              "hc/en-us/articles/208942125.md": "your-account/notifications.md"
+              "hc/en-us/articles/208942125-Notifications.md": "your-account/notifications.md"
               "hc/en-us/articles/208942945.md": "user-guide/general/plan-and-billing.md"
               "hc/en-us/articles/208942945-Plans-and-Billing.md": "user-guide/general/plan-and-billing.md"
-              "hc/en-us/articles/208953205.md": "user-guide/your-account/managing-your-profile.md"
-              "hc/en-us/articles/208953205-Changing-your-username-and-avatar.md": "user-guide/your-account/managing-your-profile.md"
+              "hc/en-us/articles/208953205.md": "your-account/managing-your-profile.md"
+              "hc/en-us/articles/208953205-Changing-your-username-and-avatar.md": "your-account/managing-your-profile.md"
               "hc/en-us/articles/212622529.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
               "hc/en-us/articles/212622529-Why-can-t-I-see-or-add-my-organization-s-repositories-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
               "hc/en-us/articles/212799365.md": "your-repositories/badges.md"
@@ -426,9 +426,9 @@ nav:
                 - organizations/manual-organizations/managing-team-repositories.md
                 - organizations/manual-organizations/administrative-permissions.md
     - "Your account":
-          - user-guide/your-account/managing-your-profile.md
-          - user-guide/your-account/default-patterns.md
-          - user-guide/your-account/notifications.md
+          - your-account/managing-your-profile.md
+          - your-account/default-patterns.md
+          - your-account/notifications.md
     - "Related tools":
           - user-guide/supported-technologies/engines.md
           - user-guide/related-tools/client-side-tools.md

@@ -39,7 +39,7 @@ Yes, you can change or cancel your plan at any time. If you choose to cancel yo
 For single accounts:
 
 -   To change the billing details or the plan of your account click on your avatar, select **Your Account**, and open **Plan and billing**
--   To cancel your plan, [delete your account](../your-account/managing-your-profile.md#deleting-your-account)
+-   To cancel your plan, [delete your account](../../your-account/managing-your-profile.md#deleting-your-account)
 
 For organizations:
 
