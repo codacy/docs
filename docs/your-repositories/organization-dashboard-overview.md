@@ -1,4 +1,4 @@
-# Organization Dashboard - How does it work?
+# Organization Dashboard overview
 
 Your **Organization Dashboard** offers an overview of repositories that belong to the same team. Here you can compare their statuses and check for items that require your attention. See below for a detailed overview of the dashboard and its functionalities.
 
