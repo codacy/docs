@@ -87,8 +87,8 @@ plugins:
               "hc/en-us/articles/207279849-Files-View.md": "your-repositories/files-view.md"
               "hc/en-us/articles/207280019.md": "your-repositories/managing-branches.md"
               "hc/en-us/articles/207280019-Managing-Branches.md": "your-repositories/managing-branches.md"
-              "hc/en-us/articles/207280189.md": "user-guide/manual-organizations/administrative-permissions.md"
-              "hc/en-us/articles/207280189-Administrative-Permissions.md": "user-guide/manual-organizations/administrative-permissions.md"
+              "hc/en-us/articles/207280189.md": "organizations/manual-organizations/administrative-permissions.md"
+              "hc/en-us/articles/207280189-Administrative-Permissions.md": "organizations/manual-organizations/administrative-permissions.md"
               "hc/en-us/articles/207280219.md": "configuring-your-repositories/integrations/github-integration.md"
               "hc/en-us/articles/207280219-GitHub-Integration.md": "configuring-your-repositories/integrations/github-integration.md"
               "hc/en-us/articles/207280239.md": "configuring-your-repositories/integrations/bitbucket-cloud-integration.md"
@@ -149,8 +149,8 @@ plugins:
               "hc/en-us/articles/207995025-Installing-Codacy-Self-hosted.md": "self-hosted/installing-codacy-self-hosted.md"
               "hc/en-us/articles/208241349.md": "user-guide/your-account/default-patterns.md"
               "hc/en-us/articles/208241349-Default-Patterns.md": "user-guide/your-account/default-patterns.md"
-              "hc/en-us/articles/208243169.md": "user-guide/manual-organizations/managing-team-repositories.md"
-              "hc/en-us/articles/208243169-Managing-team-repositories.md": "user-guide/manual-organizations/managing-team-repositories.md"
+              "hc/en-us/articles/208243169.md": "organizations/manual-organizations/managing-team-repositories.md"
+              "hc/en-us/articles/208243169-Managing-team-repositories.md": "organizations/manual-organizations/managing-team-repositories.md"
               "hc/en-us/articles/208942125.md": "user-guide/your-account/notifications.md"
               "hc/en-us/articles/208942125-Notifications.md": "user-guide/your-account/notifications.md"
               "hc/en-us/articles/208942945.md": "user-guide/general/plan-and-billing.md"
@@ -181,8 +181,8 @@ plugins:
               "hc/en-us/articles/360001207234-Specifying-language.md": "configuring-your-repositories/specifying-language.md"
               "hc/en-us/articles/360002902573.md": "self-hosted/installing-postgres-for-codacy-self-hosted.md"
               "hc/en-us/articles/360002902573-Installing-postgres-for-Codacy-Self-hosted.md": "self-hosted/installing-postgres-for-codacy-self-hosted.md"
-              "hc/en-us/articles/360003863274.md": "your-repositories/organization-dashboard-overview.md"
-              "hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-.md": "your-repositories/organization-dashboard-overview.md"
+              "hc/en-us/articles/360003863274.md": "organizations/organization-dashboard-overview.md"
+              "hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-.md": "organizations/organization-dashboard-overview.md"
               "hc/en-us/articles/360003863594.md": "faq/repositories/hotspots-how-does-it-work.md"
               "hc/en-us/articles/360003863594-Hotspots-How-does-it-work-.md": "faq/repositories/hotspots-how-does-it-work.md"
               "hc/en-us/articles/360003890673.md": "your-repositories/repository-dashboard-how-does-it-work.md"
@@ -225,10 +225,10 @@ plugins:
               "hc/en-us/articles/360009164573-Quality-Settings.md": "your-repositories/quality-settings.md"
               "hc/en-us/articles/360009180134.md": "your-repositories/issues-view.md"
               "hc/en-us/articles/360009180134-Issues-View.md": "your-repositories/issues-view.md"
-              "hc/en-us/articles/360009209594.md": "user-guide/manual-organizations/creating-and-renaming-an-organization.md"
-              "hc/en-us/articles/360009209594-Creating-and-renaming-an-organization.md": "user-guide/manual-organizations/creating-and-renaming-an-organization.md"
-              "hc/en-us/articles/360009340553.md": "user-guide/manual-organizations/creating-and-managing-teams.md"
-              "hc/en-us/articles/360009340553-Creating-and-managing-teams.md": "user-guide/manual-organizations/creating-and-managing-teams.md"
+              "hc/en-us/articles/360009209594.md": "organizations/manual-organizations/creating-and-renaming-an-organization.md"
+              "hc/en-us/articles/360009209594-Creating-and-renaming-an-organization.md": "organizations/manual-organizations/creating-and-renaming-an-organization.md"
+              "hc/en-us/articles/360009340553.md": "organizations/manual-organizations/creating-and-managing-teams.md"
+              "hc/en-us/articles/360009340553-Creating-and-managing-teams.md": "organizations/manual-organizations/creating-and-managing-teams.md"
               "hc/en-us/articles/360009345493.md": "self-hosted/how-to-download-logs.md"
               "hc/en-us/articles/360009345493-How-to-download-logs.md": "self-hosted/how-to-download-logs.md"
               "hc/en-us/articles/360009384980.md": "release-notes/self-hosted/enterprise-v2.0.371.md"
@@ -239,20 +239,20 @@ plugins:
               "hc/en-us/articles/360010035840-Enterprise-v2-0-372.md": "release-notes/self-hosted/enterprise-v2.0.372.md"
               "hc/en-us/articles/360010263540.md": "getting-started/getting-started-with-codacy.md"
               "hc/en-us/articles/360010263540-Getting-started-with-Codacy.md": "getting-started/getting-started-with-codacy.md"
-              "hc/en-us/articles/360010263720.md": "user-guide/synced-organizations/what-are-synced-organizations.md"
-              "hc/en-us/articles/360010263720-What-are-synced-organizations.md": "user-guide/synced-organizations/what-are-synced-organizations.md"
-              "hc/en-us/articles/360010264500.md": "user-guide/synced-organizations/why-can't-i-see-my-organization.md"
-              "hc/en-us/articles/360010264500-Why-can-t-I-see-my-organization-.md": "user-guide/synced-organizations/why-can't-i-see-my-organization.md"
+              "hc/en-us/articles/360010263720.md": "organizations/what-are-synced-organizations.md"
+              "hc/en-us/articles/360010263720-What-are-synced-organizations.md": "organizations/what-are-synced-organizations.md"
+              "hc/en-us/articles/360010264500.md": "organizations/why-can't-i-see-my-organization.md"
+              "hc/en-us/articles/360010264500-Why-can-t-I-see-my-organization-.md": "organizations/why-can't-i-see-my-organization.md"
               "hc/en-us/articles/360010306559.md": "release-notes/cloud/cloud-release-notes-|-30-oct-2019.md"
               "hc/en-us/articles/360010306559-Cloud-Release-Notes-30-Oct-2019.md": "release-notes/cloud/cloud-release-notes-|-30-oct-2019.md"
               "hc/en-us/articles/360010348093.md": "release-notes/self-hosted/enterprise-v2.0.341.md"
               "hc/en-us/articles/360010348093-Enterprise-v2-0-341.md": "release-notes/self-hosted/enterprise-v2.0.341.md"
-              "hc/en-us/articles/360010373559.md": "user-guide/synced-organizations/roles-and-permissions-for-synced-organizations.md"
-              "hc/en-us/articles/360010373559-Roles-and-permissions-for-synced-organizations.md": "user-guide/synced-organizations/roles-and-permissions-for-synced-organizations.md"
+              "hc/en-us/articles/360010373559.md": "organizations/roles-and-permissions-for-synced-organizations.md"
+              "hc/en-us/articles/360010373559-Roles-and-permissions-for-synced-organizations.md": "organizations/roles-and-permissions-for-synced-organizations.md"
               "hc/en-us/articles/360010434280.md": "release-notes/cloud/cloud-release-notes-|-15-nov-2019.md"
               "hc/en-us/articles/360010434280-Cloud-Release-Notes-15-Nov-2019.md": "release-notes/cloud/cloud-release-notes-|-15-nov-2019.md"
-              "hc/en-us/articles/360010922420.md": "user-guide/synced-organizations/adding-and-managing-authors.md"
-              "hc/en-us/articles/360010922420-Adding-and-managing-Authors.md": "user-guide/synced-organizations/adding-and-managing-authors.md"
+              "hc/en-us/articles/360010922420.md": "organizations/adding-and-managing-authors.md"
+              "hc/en-us/articles/360010922420-Adding-and-managing-Authors.md": "organizations/adding-and-managing-authors.md"
               "hc/en-us/articles/360011105534.md": "release-notes/cloud/cloud-release-notes-|-19-october-2018.md"
               "hc/en-us/articles/360011105534-Cloud-Release-Notes-19-October-2018.md": "release-notes/cloud/cloud-release-notes-|-19-october-2018.md"
               "hc/en-us/articles/360011781859.md": "release-notes/self-hosted/enterprise-v2.0.376.md"
@@ -263,14 +263,14 @@ plugins:
               "hc/en-us/articles/360011952634-Enterprise-v2-0-345.md": "release-notes/self-hosted/enterprise-v2.0.345.md"
               "hc/en-us/articles/360012007980.md": "release-notes/cloud/codacy-now-supports-github-apps.md"
               "hc/en-us/articles/360012007980-Codacy-now-supports-GitHub-Apps.md": "release-notes/cloud/codacy-now-supports-github-apps.md"
-              "hc/en-us/articles/360012030340.md": "user-guide/synced-organizations/authors-vs-members.md"
-              "hc/en-us/articles/360012030340-Authors-vs-Members.md": "user-guide/synced-organizations/authors-vs-members.md"
+              "hc/en-us/articles/360012030340.md": "organizations/authors-vs-members.md"
+              "hc/en-us/articles/360012030340-Authors-vs-Members.md": "organizations/authors-vs-members.md"
               "hc/en-us/articles/360012037659.md": "configuring-your-repositories/integrations/gitlab-integration.md"
               "hc/en-us/articles/360012037659-GitLab-Integration.md": "configuring-your-repositories/integrations/gitlab-integration.md"
               "hc/en-us/articles/360012056493.md": "release-notes/cloud/cloud-release-notes-|-02-november-2018.md"
               "hc/en-us/articles/360012056493-Cloud-Release-Notes-02-November-2018.md": "release-notes/cloud/cloud-release-notes-|-02-november-2018.md"
-              "hc/en-us/articles/360012126419.md": "user-guide/synced-organizations/how-to-configure-which-users-can-ignore-issues.md"
-              "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "user-guide/synced-organizations/how-to-configure-which-users-can-ignore-issues.md"
+              "hc/en-us/articles/360012126419.md": "organizations/how-to-configure-which-users-can-ignore-issues.md"
+              "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "organizations/how-to-configure-which-users-can-ignore-issues.md"
               "hc/en-us/articles/360012141513.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md"
               "hc/en-us/articles/360012141513-Scheduled-Maintenance-Saturday-17th-Nov-8-00-GMT-0-00-PST-.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md"
               "hc/en-us/articles/360012267020.md": "release-notes/self-hosted/self-hosted-v2.0.378.md"
@@ -413,18 +413,18 @@ nav:
           - configuring-your-repositories/php_codesniffer-specifying-your-php-version.md
           - configuring-your-repositories/code-standards.md
     - "Organizations":
-          - user-guide/synced-organizations/what-are-synced-organizations.md
-          - your-repositories/organization-dashboard-overview.md
-          - user-guide/synced-organizations/roles-and-permissions-for-synced-organizations.md
-          - user-guide/synced-organizations/adding-and-managing-authors.md
-          - user-guide/synced-organizations/why-can't-i-see-my-organization.md
-          - user-guide/synced-organizations/authors-vs-members.md
-          - user-guide/synced-organizations/how-to-configure-which-users-can-ignore-issues.md
+          - organizations/what-are-synced-organizations.md
+          - organizations/organization-dashboard-overview.md
+          - organizations/roles-and-permissions-for-synced-organizations.md
+          - organizations/adding-and-managing-authors.md
+          - organizations/why-can't-i-see-my-organization.md
+          - organizations/authors-vs-members.md
+          - organizations/how-to-configure-which-users-can-ignore-issues.md
           - "Manual organizations (legacy)":
-                - user-guide/manual-organizations/creating-and-renaming-an-organization.md
-                - user-guide/manual-organizations/creating-and-managing-teams.md
-                - user-guide/manual-organizations/managing-team-repositories.md
-                - user-guide/manual-organizations/administrative-permissions.md
+                - organizations/manual-organizations/creating-and-renaming-an-organization.md
+                - organizations/manual-organizations/creating-and-managing-teams.md
+                - organizations/manual-organizations/managing-team-repositories.md
+                - organizations/manual-organizations/administrative-permissions.md
     - "Your account":
           - user-guide/your-account/managing-your-profile.md
           - user-guide/your-account/default-patterns.md

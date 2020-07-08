@@ -22,7 +22,7 @@ If you are not sure about what plan to choose, tell us about your requirements a
 
 Users are developers contributing to the repository and any team member with access to the code analysis results on the Codacy UI. Your organization should have as many users as your repositories have contributors.
 
-Learn [how to invite team members to your organization](../manual-organizations/creating-and-managing-teams.md).
+Learn [how to invite team members to your organization](../../organizations/manual-organizations/creating-and-managing-teams.md).
 
 ## Do you offer student and non-profit plans?
 
@@ -44,7 +44,7 @@ For single accounts:
 For organizations:
 
 -   To change the billing details or the plan of your organization click on your avatar, select **Organizations**, select your organization, and open **Plan and billing**
--   To cancel your plan, [delete your organization](../synced-organizations/what-are-synced-organizations.md#deleting-an-organization)
+-   To cancel your plan, [delete your organization](../../organizations/what-are-synced-organizations.md#deleting-an-organization)
 
 ![](images/plan-billing.png)
 
