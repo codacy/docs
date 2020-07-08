@@ -1,4 +1,4 @@
-# Repository Dashboard - How does it work?
+# Repository Dashboard overview
 
 On your **Repository Dashboard** you get an overview of the repository and attention points we select for you on relevant items requiring your intervention. Read below for a full description of this dashboard and all the functionalities behind it! 
 
