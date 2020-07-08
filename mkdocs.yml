@@ -183,8 +183,8 @@ plugins:
               "hc/en-us/articles/360002902573-Installing-postgres-for-Codacy-Self-hosted.md": "self-hosted/installing-postgres-for-codacy-self-hosted.md"
               "hc/en-us/articles/360003863274.md": "organizations/organization-dashboard-overview.md"
               "hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-.md": "organizations/organization-dashboard-overview.md"
-              "hc/en-us/articles/360003863594.md": "faq/repositories/hotspots-how-does-it-work.md"
-              "hc/en-us/articles/360003863594-Hotspots-How-does-it-work-.md": "faq/repositories/hotspots-how-does-it-work.md"
+              "hc/en-us/articles/360003863594.md": "faq/repositories/hotspots-overview.md"
+              "hc/en-us/articles/360003863594-Hotspots-How-does-it-work-.md": "faq/repositories/hotspots-overview.md"
               "hc/en-us/articles/360003890673.md": "repositories/repository-dashboard-overview.md"
               "hc/en-us/articles/360003890673-Repository-Dashboard-How-does-it-work-.md": "repositories/repository-dashboard-overview.md"
               "hc/en-us/articles/360003890693.md": "faq/repositories/what-are-logs.md"
@@ -475,7 +475,7 @@ nav:
                 - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
                 - faq/repositories/i-moved-my-repository-on-the-git-provider.md
                 - faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md
-                - faq/repositories/hotspots-how-does-it-work.md
+                - faq/repositories/hotspots-overview.md
                 - faq/repositories/what-are-logs.md
           - Code analysis:
                 - faq/code-analysis/do-you-check-for-dependencies.md
