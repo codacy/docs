@@ -1,25 +1,48 @@
 # Creating and managing teams
 
+You can create and manage teams on the **Teams** page for your organization:
+
+1.  Click your avatar and select **Organizations**
+2.  Select the organization whose teams you want to manage
+3.  Open the organization **Settings**, page **Teams**
+
 ## Creating a team
 
-To create a team, click on your avatar and select **Organizations**. Once on the Organizations page, select the organization you'd like to create the team in. Click on **Create new team**, fill in the **Team name** field, and click on the **Create new team button** or hit enter.
+On the **Teams** page:
 
-![Creating a team](/images/create_team.gif)
+1.  Click **Create new team**
+2.  Enter the name of the team and click **Create new team** or press enter to create the team
+
+![Creating a team](images/team-create.gif)
 
 ## Managing teams
 
-In this section, you can also rename and delete teams. To rename a team, click on **Edit name**. To remove a team click on **Delete team** and confirm.
+On the **Teams** page, click:
 
-![Deleting a team](/images/delete_team.gif)
+-   **Edit name** to rename a team
+-   **Delete team** and confirm the operation to delete a team
+
+![Deleting a team](images/team-delete.gif)
 
 ## Adding team members
 
-To add team members, click on your avatar and select **Organizations**, then select the organization you would like to add members to. Fill in the Email and Team fields, then click on the **Invite members** button. You can add multiple addresses by separating them with a comma.
+On the **Teams** page:
 
-![Adding a team member](/images/add_member.gif)
+1.   Click **Invite members**
+2.   Enter the email address of the user to invite and select the team for the new user
 
-## Managing team members
+     !!! tip
+         You can add multiple email addresses at once by separating them with commas.
 
-You can also remove team members from an organization by clicking the **X** found on the left-hand side of their member row.
+3.   Click **Invite new member**
 
-![Removing a team member](/images/remove_member.gif)
+![Adding a team member](images/team-add-member.gif)
+
+## Removing team members
+
+On the **Teams** page:
+
+1.   Click the name of the team from where you want to remove the team member
+2.   Click the **X** to the left of the team member name
+
+![Removing a team member](images/team-remove-member.gif)
