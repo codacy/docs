@@ -46,7 +46,7 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 <td><a href="https://github.com/codacy/codacy-scalameta" class="in-cell-link">https://github.com/codacy/codacy-scalameta</a></td>
 </tr>
 <tr>
-<td><a href="http://codenarc.sourceforge.net/" class="in-cell-link">CodeNarc</a></td>
+<td><a href="https://codenarc.github.io/CodeNarc/" class="in-cell-link">CodeNarc</a></td>
 <td>Groovy</td>
 <td><a href="https://github.com/codacy/codacy-codenarc" class="in-cell-link">https://github.com/codacy/codacy-codenarc</a></td>
 </tr>
