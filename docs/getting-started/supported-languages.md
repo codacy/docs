@@ -16,6 +16,7 @@ We support the following languages:
 -   Dockerfile
 -   Elixir
 -   Go
+-   Groovy
 -   Java
 -   JavaScript
 -   JSON
