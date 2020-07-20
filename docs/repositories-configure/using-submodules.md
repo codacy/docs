@@ -2,9 +2,6 @@
 
 [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) allow you to keep a Git repository as a subdirectory within another Git repository. Git submodules are helpful in maintaining a shared configuration file for your team, and then applying it to multiple Git repositories.
 
-!!! note
-    Some tools don't search for configuration files recursively. You may need to include a configuration file in the root of your repositories referencing the configuration file in the submodule.
-
 ## Enabling submodules
 
 By default, Codacy does normal Git clones that do not include submodules to ensure that we only clone necessary repositories. However, if your organization needs to use submodules, you can contact <mailto:support@codacy.com> asking to enable submodules on Codacy.
@@ -27,9 +24,13 @@ After we enabled submodules for your organization, do the following:
 
     ![Generate new user key](images/using-submodules-generate-new-user-key.png)
 
+4.  If you're using submodules to share an analysis tool configuration file across your repositories, check if your tool recursively searches the subdirectories of your repositories for configuration files.
+
+    If your tool does not detect the configuration files in the submodule directories, you must include a configuration file directly in the root of your repositories referencing the configuration files in the submodule directories.
+
 ## Using submodules on new repositories
 
-You must repeat steps 2 and 3 to every time you add new repositories with submodules to Codacy.
+You must repeat steps 2 and 4 to every time you add new repositories with submodules to Codacy.
 
 Alternatively, you can make this the default behavior for all new repositories by enabling **Add project key to the user, by default** in **Administration**, page **Settings**.
 
