@@ -27,7 +27,7 @@ If the user that initially configured the repository on Codacy was using a user 
 
     **Generate New Repository Key** is the recommended option. It will add a new SSH key to your repository deployment keys. However, this is only possible if the user configuring the integration with the remote Git provider has permissions to add keys to the repository. Otherwise, this operation will fail. Alternatively, you can also do this process manually by copying the SSH key.
 
-    **Generate New User Key** should only be used if [your repository is using submodules on Codacy](/hc/en-us/articles/360005239394-Submodules-how-to-enable-them-). Adding the SSH key to your user account allows Codacy to access the repository as well as all the submodules without having to create the key on all submodules.
+    **Generate New User Key** should only be used if [your repository is using submodules on Codacy](/hc/en-us/articles/360005239394-Submodules-how-to-enable-them-). When you are using submodules, Codacy needs to clone additional repositories it has no access to. Since there is no way of identifying the submodules of a repository before cloning the repository, Codacy adds the SSH keys to the user account so that it has access to the same repositories as the user.
     
     !!! important
         **If you're using Bitbucket Cloud**, you must manually add the SSH key on your [user account](https://bitbucket.org/account/settings/ssh-keys/).
