@@ -1,4 +1,4 @@
-# Submodules - How to enable them
+# Using submodules
 
 [Git Submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) allow you to keep a git repository as a subdirectory within another git repository. They are helpful in maintaining a shared configuration file for your team, which can then be applied to multiple git repositories.
 
