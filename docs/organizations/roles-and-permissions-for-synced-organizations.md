@@ -19,7 +19,7 @@ Depending on your role on the Git provider you will have different permissions o
 <td rowspan="4">
 <p>GitHub Cloud</p>
 </td>
-<td>Outside collaborator</td>
+<td>Outside Collaborator</td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -49,7 +49,7 @@ Depending on your role on the Git provider you will have different permissions o
 <td>No</td>
 </tr>
 <tr>
-<td>Owner&nbsp;&nbsp;&nbsp;</td>
+<td>Owner</td>
 <td>Configurable<sup>1</sup></td>
 <td>Yes</td>
 <td>Yes</td>
@@ -60,7 +60,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td rowspan="7">GitLab Cloud</td>
-<td><span>Outside collaborator</span></td>
+<td>External User</td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
