@@ -24,7 +24,7 @@ Depending on your role on the Git provider you will have different permissions o
 <td>No</td>
 <td>No</td>
 <td>No</td>
-<td>Yes</td>
+<td>No</td>
 <td>No</td>
 <td>No</td>
 </tr>
@@ -65,7 +65,7 @@ Depending on your role on the Git provider you will have different permissions o
 <td>No</td>
 <td>No</td>
 <td>No</td>
-<td>Yes</td>
+<td>No</td>
 <td>No</td>
 <td>No</td>
 </tr>
