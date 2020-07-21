@@ -26,7 +26,7 @@ export CODACY_PROJECT_TOKEN=%Project_Token%
 
 ## Setup
 
-Check [here](https://github.com/codacy/codacy-coverage-reporter#setup) for detailed instructions on how to set up the coverage reporter plugin.
+Check [here](https://github.com/codacy/codacy-coverage-reporter/blob/master/docs/index.md) for detailed instructions on how to set up the coverage reporter plugin.
 
 ## Submitting coverage for unsupported languages or tools
 
