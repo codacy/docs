@@ -4,28 +4,28 @@
   <div class="content-link-column">
     <div>Getting started</div>
 
-    <a class="content-link" href="http://127.0.0.1:8000/getting-started/getting-started-with-codacy/">
-      <div>Sign up and Authorization</div>
-      <div>Sign up with your Git provider and authorise Codacy to access to your repositories so that Codacy can mirror your permissions there.</div>
+    <a class="content-link" href="/getting-started/getting-started-with-codacy/">
+      <div>Adding your first repository</div>
+      <div>Sign up with your Git provider so that Codacy can have access to your Git provider organizations and members. You can then add any repository you have access to with one click.</div>
     </a>
 
-    <a class="content-link" href="#">
-      <div>Adding the first repository</div>
-      <div>Your Git organizations and members will be automatically import into Codacy. You will be able to add any repository you have access to with one click.</div>
+    <a class="content-link" href="/getting-started/i-added-a-repository-now-what/">
+      <div>Exploring your analysis results</div>
+      <div>Codacy begins an initial analysis as soon as you add a repository. Explore the analysis results on the repository dashboard and configure Codacy for your repository.</div>
     </a>
   </div>
 
   <div class="content-link-column">
     <div>Using Codacy</div>
 
-    <a class="content-link" href="#">
+    <a class="content-link" href="/organizations/what-are-synced-organizations/">
       <div>Creating and managing an organization</div>
-      <div>Sign up with your Git provider and authorise Codacy to access to your repositories and permissions there.</div>
+      <div>Codacy automatically imports your Git provider organizations and members. Changes reflect on Codacy in real time and you can manage people who joined your organization on Codacy.</div>
     </a>
 
-    <a class="content-link" href="#">
+    <a class="content-link" href="/repositories-configure/integrations/github-integration/">
       <div>Setting up integrations</div>
-      <div>Setup integrations to receive status checks in your current workflow.</div>
+      <div>Set up integrations to receive Codacy status checks on your current workflow.</div>
     </a>
   </div>
 </div>
