@@ -367,7 +367,8 @@ plugins:
               "hc/en-us/articles/360014670040-Self-hosted-v1-3-0-for-Kubernetes.md": "release-notes/self-hosted/self-hosted-v1.3.0-for-kubernetes.md"
               "hc/en-us/articles/360014670140.md": "release-notes/self-hosted/self-hosted-v1.4.0-for-kubernetes.md"
               "hc/en-us/articles/360014670140-Self-hosted-v1-4-0-for-Kubernetes.md": "release-notes/self-hosted/self-hosted-v1.4.0-for-kubernetes.md"
-
+              "hc/en-us/articles/360015300100.md": "faq/general/how-does-codacy-support-gitlab-enterprise.md"
+              "hc/en-us/articles/360015300100-How-does-Codacy-support-GitLab-Enterprise-.md": "faq/general/how-does-codacy-support-gitlab-enterprise.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -462,6 +463,7 @@ nav:
                 - faq/general/which-version-control-systems-do-you-support.md
                 - faq/general/which-browsers-do-you-support.md
                 - faq/general/how-does-codacy-support-gitlab-cloud.md
+                - faq/general/how-does-codacy-support-gitlab-enterprise.md
                 - faq/general/how-does-codacy-support-bitbucket-cloud.md
                 - faq/general/how-does-codacy-support-bitbucket-server.md
                 - faq/general/how-does-codacy-keep-my-data-secure.md
