@@ -432,6 +432,8 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
           - "Self-hosted release notes":
+                - release-notes/self-hosted/self-hosted-v1.4.0-for-kubernetes.md
+                - release-notes/self-hosted/self-hosted-v1.3.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.2.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.1.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.0.1-for-kubernetes.md
