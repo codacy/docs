@@ -343,7 +343,8 @@ plugins:
               "hc/en-us/articles/360012948120-Deprecating-HTTP-headers-for-API-tokens-01-April-2020.md": "release-notes/cloud/deprecating-http-headers-for-api-tokens.md"
               "hc/en-us/articles/360013031520.md": "release-notes/self-hosted/self-hosted-v2.0.379.md"
               "hc/en-us/articles/360013031520-Self-hosted-v2-0-379.md": "release-notes/self-hosted/self-hosted-v2.0.379.md"
-
+              "hc/en-us/articles/360013810379.md": "release-notes/self-hosted/self-hosted-v2.0.380.md"
+              "hc/en-us/articles/360013810379-Self-hosted-v2-0-380.md": "release-notes/self-hosted/self-hosted-v2.0.380.md"
 nav:
     - "Documentation home": "index.md"
     - "Getting started":
@@ -463,6 +464,7 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
           - "Self-hosted release notes":
+                - release-notes/self-hosted/self-hosted-v2.0.380.md
                 - release-notes/self-hosted/self-hosted-v2.0.379.md
                 - release-notes/self-hosted/upcoming-changes-to-github-integration-for-codacy-self-hosted.md
                 - release-notes/self-hosted/self-hosted-v2.0.378.md
