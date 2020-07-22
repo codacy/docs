@@ -34,15 +34,9 @@
     mkdocs serve
     ```
 
-## Manually publishing to GitHub Pages
+## Deploying to GitHub Pages
 
-A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows/mkdocs.yml) automatically deploys the generated HTML to GitHub Pages on every push to `master`.
-
-However, you can also [manually deploy](http://www.mkdocs.org/user-guide/deploying-your-docs/) the pages if needed:
-
-```bash
-mkdocs gh-deploy
-```
+A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows/mkdocs.yml) automatically deploys the generated HTML to GitHub Pages on every push to `master` or to the release branches `release/v.*`.
 
 ## What is Codacy
 
@@ -51,7 +45,7 @@ mkdocs gh-deploy
 ### Among Codacy’s features
 
 -   Identify new static analysis issues
--   Commit and pull request analysis with GitHub, BitBucket, GitLab (and also direct Git repositories)
+-   Commit and pull request analysis with GitHub, Bitbucket, and GitLab
 -   Auto-comments on commits and pull requests
 -   Integrations with Slack, Jira
 -   Track issues in code style, security, error proneness, performance, unused code and other categories
