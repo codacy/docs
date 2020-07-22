@@ -421,7 +421,7 @@ nav:
                       - user-guide/supported-technologies/tool-developer-guide.md
                       - user-guide/supported-technologies/tool-developer-guide-using-scala.md
           - user-guide/other/special-thanks.md
-    - Self-hosted:
+    - Self-hosted (deprecated):
           - self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted.md
           - self-hosted/configuring-github-cloud-with-codacy-self-hosted.md
           - self-hosted/configuring-github-enterprise-with-codacy-self-hosted.md
