@@ -439,7 +439,6 @@ nav:
           - self-hosted/managing-authentication-for-the-control-panel.md
           - self-hosted/monitoring-codacy-self-hosted.md
           - self-hosted/run-spotbugs.md
-    - "Installing Codacy": "!include ./submodules/chart/mkdocs.yml"
     - "Release notes":
           - "Cloud release notes":
                 - release-notes/cloud/deprecating-http-headers-for-api-tokens.md
