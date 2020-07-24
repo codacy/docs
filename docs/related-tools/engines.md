@@ -1,10 +1,10 @@
 # Engines
 
-Codacy uses a system of plugin engines to extend the scope of analyses on your repositories, allowing support for new tools and languages every day. To create your own engine, check the [Tool Developer Guide](/hc/en-us/articles/207994725-Tool-Developer-Guide).
+Codacy uses a system of plugin engines to extend the scope of analyses on your repositories, allowing support for new tools and languages every day. To create your own engine, check the [Tool Developer Guide](/hc/en-us/articles/207994725-Tool-Developer-Guide).
 
 ## Analysis Engines
 
-Here are the engines currently used on Codacy. Our GitHub links list the version being used for each engine as well as additional plugins that we support for each tool. 
+Here are the engines currently used on Codacy. Our GitHub links list the version being used for each engine as well as additional plugins that we support for each tool.
 
 <table>
 <thead>
@@ -37,13 +37,23 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 </tr>
 <tr>
 <td><a href="http://checkstyle.sourceforge.net/" class="in-cell-link">Checkstyle</a></td>
-<td> Java</td>
+<td>Java</td>
 <td><a href="https://github.com/codacy/codacy-checkstyle/" class="in-cell-link">https://github.com/codacy/codacy-checkstyle/</a></td>
 </tr>
 <tr>
-<td>Codacy Scalameta Pro</td>
+<td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
+<td>C++</td>
+<td><a href="https://github.com/codacy/codacy-clang-tidy" class="in-cell-link">https://github.com/codacy/codacy-clang-tidy</a></td>
+</tr>
+<tr>
+<td>Codacy Scalameta Pro</td>
 <td>Scala</td>
 <td><a href="https://github.com/codacy/codacy-scalameta" class="in-cell-link">https://github.com/codacy/codacy-scalameta</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/securego/gosec" class="in-cell-link">GoSec</a></td>
+<td>Go</td>
+<td><a href="https://github.com/codacy/codacy-gosec" class="in-cell-link">https://github.com/codacy/codacy-gosec</a></td>
 </tr>
 <tr>
 <td><a href="https://codenarc.github.io/CodeNarc/" class="in-cell-link">CodeNarc</a></td>
@@ -93,7 +103,7 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 <tr>
 <td><a href="https://github.com/hadolint/hadolint">Hadolint</a></td>
 <td>Dockerfile</td>
-<td><a href="https://github.com/codacy/codacy-hadolint"> https://github.com/codacy/codacy-hadolint</a></td>
+<td><a href="https://github.com/codacy/codacy-hadolint">https://github.com/codacy/codacy-hadolint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/codacy/codacy-jackson-linter">Jackson Linter</a></td>
@@ -102,7 +112,7 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 </tr>
 <tr>
 <td><a href="http://jshint.com/">JSHint</a></td>
-<td>JavaScript </td>
+<td>JavaScript</td>
 <td><a href="https://github.com/codacy/codacy-jshint">https://github.com/codacy/codacy-jshint</a></td>
 </tr>
 <tr>
@@ -117,7 +127,7 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 </tr>
 <tr>
 <td><a href="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/index.html" class="in-cell-link">PMD</a></td>
-<td>Java, PLSQL, Apex, Javascript, Velocity, XML, JSP, VisualForce</td>
+<td>Java, PLSQL, Apex, Javascript, Velocity, XML, JSP, VisualForce</td>
 <td><a href="https://github.com/codacy/codacy-pmdjava" class="in-cell-link">https://github.com/codacy/codacy-pmdjava</a></td>
 </tr>
 <tr>
@@ -138,7 +148,7 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 <tr>
 <td><a href="https://github.com/remarkjs/remark-lint">RemarkLint</a></td>
 <td>Markdown</td>
-<td><a href="https://github.com/codacy/codacy-remark-lint"> https://github.com/codacy/codacy-remark-lint</a></td>
+<td><a href="https://github.com/codacy/codacy-remark-lint">https://github.com/codacy/codacy-remark-lint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/bbatsov/rubocop" class="in-cell-link">Rubocop</a></td>
@@ -182,7 +192,7 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 </tr>
 <tr>
 <td><a href="https://stylelint.io/">Stylelint</a></td>
-<td>CSS, LESS, SASS</td>
+<td>CSS, LESS, SASS</td>
 <td><a href="https://github.com/codacy/codacy-stylelint">https://github.com/codacy/codacy-stylelint</a></td>
 </tr>
 <tr>
@@ -198,12 +208,12 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 <tr>
 <td><a href="https://palantir.github.io/tslint/">TSLint</a></td>
 <td>TypeScript</td>
-<td><a href="https://github.com/codacy/codacy-tslint" class="in-cell-link"> https://github.com/codacy/codacy-tslint</a></td>
+<td><a href="https://github.com/codacy/codacy-tslint" class="in-cell-link">https://github.com/codacy/codacy-tslint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
 <td>Transact-SQL</td>
-<td><a href="https://github.com/codacy/codacy-tsqllint" class="in-cell-link"> https://github.com/codacy/codacy-tsqllint</a></td>
+<td><a href="https://github.com/codacy/codacy-tsqllint" class="in-cell-link">https://github.com/codacy/codacy-tsqllint</a></td>
 </tr>
 </tbody>
 </table>
@@ -233,7 +243,7 @@ Although we expect all tools to run within an engine container, some tools are s
 <td><a href="https://github.com/codacy/codacy-duplication-flay" class="in-cell-link">https://github.com/codacy/codacy-duplication-flay</a></td>
 </tr>
 <tr>
-<td>Metrics </td>
+<td>Metrics</td>
 <td><a href="https://pypi.python.org/pypi/metrics">https://pypi.python.org/pypi/metrics</a></td>
 </tr>
 <tr>
@@ -242,7 +252,7 @@ Although we expect all tools to run within an engine container, some tools are s
 </tr>
 <tr>
 <td><a href="https://pmd.github.io/" class="in-cell-link">PMDCPD</a></td>
-<td><a href="https://github.com/codacy/codacy-duplication-pmdcpd" class="in-cell-link">https://github.com/codacy/codacy-duplication-pmdcpd</a> </td>
+<td><a href="https://github.com/codacy/codacy-duplication-pmdcpd" class="in-cell-link">https://github.com/codacy/codacy-duplication-pmdcpd</a></td>
 </tr>
 <tr>
 <td>Radon</td>
