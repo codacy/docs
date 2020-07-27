@@ -128,4 +128,4 @@ jobs:
           git fetch origin gh-pages --verbose
           mike deploy . -t Latest --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
         env:
-          CUSTOM_DOMAIN: docs.dev.codacy.org
+          CUSTOM_DOMAIN: docs.codacy.com
