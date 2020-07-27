@@ -792,8 +792,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../repositories-configure/submodules-how-to-enable-them/" title="Submodules - How to enable them" class="md-nav__link">
-      Submodules - How to enable them
+    <a href="../../../repositories-configure/using-submodules/" title="Using submodules" class="md-nav__link">
+      Using submodules
     </a>
   </li>
 
@@ -2161,9 +2161,43 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Failed to clone the repository, generate a new SSH key
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Failed to clone the repository, generate a new SSH key" class="md-nav__link md-nav__link--active">
       Failed to clone the repository, generate a new SSH key
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#the-repository-was-renamed-or-moved" class="md-nav__link">
+    The repository was renamed or moved
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#the-user-that-configured-the-repository-no-longer-has-access" class="md-nav__link">
+    The user that configured the repository no longer has access
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -2885,23 +2919,38 @@
                 
                 
                 <h1 id="failed-to-clone-the-repository-generate-a-new-ssh-key">Failed to clone the repository, generate a new SSH key<a class="headerlink" href="#failed-to-clone-the-repository-generate-a-new-ssh-key" title="Permanent link">&para;</a></h1>
-<p>SSH keys are used for repository cloning and exclusively used for these repositories. Depending on the level of access the user configuring the repository on Codacy has on the remote Git provider, the key can be added either directly to the repository itself, because the user has Write or Admin access; or to the user, with Read or Commit-only access.
-For that reason, some changes on the remote Git provider can cause Codacy to stop communicating with the repository.</p>
-<p>Renaming the repository or moving to a different account:</p>
+<p>SSH keys are exclusively used for repository cloning.</p>
+<p>Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, the key can be added either:</p>
+<ul>
+<li>Directly to the repository itself, if the user has permissions to add keys to the repository</li>
+<li>To the user account, if the user only has permissions to read or commit to the repository</li>
+</ul>
+<p>For this reason, some changes on the remote Git provider can prevent Codacy from cloning the repository.</p>
+<p><img alt="Failed to clone the repository" src="../images/failed-to-clone-the-repository.png" /></p>
+<h2 id="the-repository-was-renamed-or-moved">The repository was renamed or moved<a class="headerlink" href="#the-repository-was-renamed-or-moved" title="Permanent link">&para;</a></h2>
+<p>If you renamed the repository or moved it to a different account on the Git provider:</p>
 <ol>
-<li>In the Repository Settings view, update the Git URL to match the new one</li>
+<li>On Codacy, open your <strong>Repository Settings</strong>, tab <strong>General</strong>.</li>
+<li>Click the button <strong>Update name</strong>.</li>
 </ol>
-<p>Removing access to the user that configured the repository on Codacy, if the key was added to its account:</p>
+<h2 id="the-user-that-configured-the-repository-no-longer-has-access">The user that configured the repository no longer has access<a class="headerlink" href="#the-user-that-configured-the-repository-no-longer-has-access" title="Permanent link">&para;</a></h2>
+<p>If the user that initially configured the repository on Codacy was using a user account key but no longer has access to the repository on the Git provider:</p>
 <ol>
-<li>In the Repository Settings view, recreate the integration with the remote Git provider;</li>
-<li>Then click <strong>Generate New Repository key</strong>. See below for details.</li>
+<li>On Codacy, open your <strong>Repository Settings</strong>, tab <strong>General</strong>.</li>
+<li>
+<p>Click the button <strong>Generate New Repository Key</strong> (recommended) or <strong>Generate New User Key</strong>:</p>
+<p><strong>Generate New Repository Key</strong> is the recommended option. It will add a new SSH key to your repository deployment keys. However, this is only possible if the user configuring the integration with the remote Git provider has permissions to add keys to the repository. Otherwise, this operation will fail. Alternatively, you can also do this process manually by copying the SSH key.</p>
+<p><strong>Generate New User Key</strong> should only be used if <a href="../../../repositories-configure/using-submodules/">your repository is using submodules on Codacy</a>. When you are using submodules, Codacy needs to clone additional repositories it has no access to. Since there is no way of identifying the submodules of a repository before cloning the repository, Codacy adds the SSH keys to the user account so that it has access to the same repositories as the user.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you're using Bitbucket Cloud</strong>, you must manually add the SSH key on your <a href="https://bitbucket.org/account/settings/ssh-keys/">user account</a>.</p>
+</div>
+<p><img alt="Generate new key" src="../images/failed-to-clone-the-repository-new-key.png" /></p>
+</li>
+<li>
+<p>Open the tab <strong>Integrations</strong>. If you have an integration with your Git provider enabled, remove and re-create the integration.</p>
+</li>
 </ol>
-<p><img alt="" src="/images/Screen_Shot_2018-07-08_at_19.58.46.png" /></p>
-<p><strong>Generate New Repository Key</strong> is the recommended option. It will add a new SSH key to your repository deployment keys. However, this is only possible if the user configuring the integration with the remote Git provider has write/admin access. Otherwise, this operation will fail.
-Alternatively, you can do this process manually by copying the SSH key.</p>
-<p><img alt="" src="/images/Screen_Shot_2018-07-08_at_19.59.04.png" /></p>
-<p><strong>Generate New User Key </strong>should only be used if <a href="/hc/en-us/articles/360005239394-Submodules-how-to-enable-them-">your repository is using submodules on Codacy</a>.
-Adding the SSH key to your account allows Codacy to access the repository and all the submodules, without you adding the key to the repository and then having to copy it to all its submodules.</p>
                 
                   
                     
@@ -2909,7 +2958,7 @@ Adding the SSH key to your account allows Codacy to access the repository and al
 <div class="md-source-date">
   <small>
     
-      Last update: July 5, 2020
+      Last update: July 23, 2020
     
   </small>
 </div>
