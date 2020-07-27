@@ -38,24 +38,25 @@ Substitute the placeholders with your own values:
 
 The Bash script below adds all repositories in a GitHub Cloud organization to Codacy.
 
-1.  Obtains the [list of all repositories](https://docs.github.com/en/rest/reference/repos) in a GitHub Cloud organization.
+1.  Defines a GitHub [personal access token](https://github.com/settings/tokens), the GitHub organization name, and a [Codacy API token](../../related-tools/api-tokens.md).
+2.  Calls the GitHub API to [obtain the list of all repositories](https://docs.github.com/en/rest/reference/repos) in the defined organization.
 2.  Uses [jq](https://github.com/stedolan/jq) to return the value of `full_name` for each repository obtained in the JSON response. The `full_name` already includes the organization and repository names using the format `<organization>/<repository>`.
-3.  For each repository, calls the Codacy API endpoint to add a new repository specifying `gh` as the Git provider and the `full_name` as the full path of the repository.
+3.  For each repository, calls the Codacy API endpoint to add a new repository specifying `gh` as the Git provider and the value of `full_name` as the full path of the repository.
 
 ```bash
-!/bin/bash
+#!/bin/bash
 
 GITHUB_AUTH_TOKEN="<REPLACE_ME>"
 GITHUB_ORG_NAME="<REPLACE_ME>"
 CODACY_API_TOKEN="<REPLACE_ME>"
 
 echo "Obtaining all repositories in the $GITHUB_ORG_NAME organization"
-for repo in $(curl -s -H "Authorization: Bearer $GITHUB_AUTH_TOKEN" "https://api.github.com/orgs/$GITHUB_ORG_NAME/repos" | jq -r '.[] | .full_name'); do
+for repo in $(curl -s https://api.github.com/orgs/$GITHUB_ORG_NAME/repos -H "Authorization: Bearer $GITHUB_AUTH_TOKEN" | jq -r '.[] | .full_name'); do
      echo "Adding $repo to Codacy" 
      curl -X POST https://app.codacy.com/api/v3/repositories \
-          -H 'Content-Type: application/json' \
-          -H 'api-token: $CODACY_API_TOKEN' \
-          -d '{"provider":"gh", "repositoryFullPath":"'$repo'"}'
+       -H "Content-Type: application/json" \
+       -H "api-token: $CODACY_API_TOKEN" \
+       -d '{"provider":"gh", "repositoryFullPath":"'$repo'"}'
      echo # Echo a newline for readability
 done
 ```
