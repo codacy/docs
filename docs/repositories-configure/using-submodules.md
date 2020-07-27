@@ -30,7 +30,7 @@ After we enabled submodules for your organization, do the following:
 
 ## Using submodules on new repositories
 
-You must repeat steps 2 and 4 to every time you add new repositories with submodules to Codacy.
+You must repeat steps 2 to 4 above every time you add new repositories with submodules to Codacy.
 
 Alternatively, you can make this the default behavior for all new repositories by enabling **Add project key to the user, by default** in **Administration**, page **Settings**.
 
