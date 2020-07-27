@@ -38,7 +38,7 @@ Substitute the placeholders with your own values:
 
 The Bash script below adds all repositories in a GitHub Cloud organization to Codacy.
 
-1.  Obtains the [list of all repositories](https://developer.github.com/v3/repos/#list-organization-repositories) in a GitHub Cloud organization.
+1.  Obtains the [list of all repositories](https://docs.github.com/en/rest/reference/repos) in a GitHub Cloud organization.
 2.  Uses [jq](https://github.com/stedolan/jq) to return the value of `full_name` for each repository obtained in the JSON response. The `full_name` already includes the organization and repository names using the format `<organization>/<repository>`.
 3.  For each repository, calls the Codacy API endpoint to add a new repository specifying `gh` as the Git provider and the `full_name` as the full path of the repository.
 
