@@ -1,17 +1,17 @@
 # Project information
 site_name: Codacy docs
-site_url: http://docs.dev.codacy.org/
+site_url: https://docs.codacy.com/
 
 # Configuration
 theme:
-    name: null
+    name: material
     custom_dir: "submodules/mkdocs-codacy-theme/material"
     font: false
     language: en
     favicon: "assets/images/favicon.ico"
     palette:
-      primary: indigo
-      accent: indigo
+        primary: indigo
+        accent: indigo
     logo: "assets/images/codacy-docs-logo.svg"
     features: []
 
@@ -63,8 +63,8 @@ plugins:
               "hc/en-us/articles/115000947569-Code-Standards.md": "repositories-configure/code-standards.md"
               "hc/en-us/articles/115001853565.md": "faq/general/plan-and-billing.md"
               "hc/en-us/articles/115001853565-Upgrading-your-Codacy-account.md": "faq/general/plan-and-billing.md"
-              "hc/en-us/articles/115001959985.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
-              "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
+              "hc/en-us/articles/115001959985.md": "faq/troubleshooting/not-a-member-of-the-organization.md"
+              "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": "faq/troubleshooting/not-a-member-of-the-organization.md"
               "hc/en-us/articles/115002130625.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/115002130625-Codacy-Configuration-File.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/115002330985.md": "repositories-configure/specifying-your-python-version.md"
@@ -171,8 +171,8 @@ plugins:
               "hc/en-us/articles/360004685494-Updates-to-Codacy-s-Privacy-Policy.md": "faq/general/how-does-codacy-protect-my-privacy.md"
               "hc/en-us/articles/360005097654.md": "repositories-configure/ignore-files-from-codacy-analysis.md"
               "hc/en-us/articles/360005097654-Ignore-files-from-Codacy-analysis.md": "repositories-configure/ignore-files-from-codacy-analysis.md"
-              "hc/en-us/articles/360005239394.md": "repositories-configure/submodules-how-to-enable-them.md"
-              "hc/en-us/articles/360005239394-Submodules-How-to-enable-them.md": "repositories-configure/submodules-how-to-enable-them.md"
+              "hc/en-us/articles/360005239394.md": "repositories-configure/using-submodules.md"
+              "hc/en-us/articles/360005239394-using-submodules.md": "repositories-configure/using-submodules.md"
               "hc/en-us/articles/360005839053.md": "faq/code-analysis/skipping-an-analysis.md"
               "hc/en-us/articles/360005839053-Skipping-an-analysis.md": "faq/code-analysis/skipping-an-analysis.md"
               "hc/en-us/articles/360006036934.md": "repositories-configure/php_codesniffer-specifying-your-php-version.md"
@@ -275,7 +275,7 @@ nav:
           - "Advanced coverage setup": "!include ./submodules/codacy-coverage-reporter/mkdocs.yml"
           - repositories-configure/codacy-configuration-file.md
           - repositories-configure/ignore-files-from-codacy-analysis.md
-          - repositories-configure/submodules-how-to-enable-them.md
+          - repositories-configure/using-submodules.md
           - repositories-configure/file-extensions.md
           - repositories-configure/specifying-language.md
           - repositories-configure/specifying-your-python-version.md
