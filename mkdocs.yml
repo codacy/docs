@@ -1,6 +1,6 @@
 # Project information
 site_name: Codacy docs
-site_url: http://docs.dev.codacy.org/
+site_url: https://docs.codacy.com/
 
 # Configuration
 theme:
@@ -10,8 +10,8 @@ theme:
     language: en
     favicon: "assets/images/favicon.ico"
     palette:
-      primary: indigo
-      accent: indigo
+        primary: indigo
+        accent: indigo
     logo: "assets/images/codacy-docs-logo.svg"
     features: []
 
@@ -63,8 +63,8 @@ plugins:
               "hc/en-us/articles/115000947569-Code-Standards.md": "repositories-configure/code-standards.md"
               "hc/en-us/articles/115001853565.md": "faq/general/plan-and-billing.md"
               "hc/en-us/articles/115001853565-Upgrading-your-Codacy-account.md": "faq/general/plan-and-billing.md"
-              "hc/en-us/articles/115001959985.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
-              "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
+              "hc/en-us/articles/115001959985.md": "faq/troubleshooting/not-a-member-of-the-organization.md"
+              "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": "faq/troubleshooting/not-a-member-of-the-organization.md"
               "hc/en-us/articles/115002130625.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/115002130625-Codacy-Configuration-File.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/115002330985.md": "repositories-configure/specifying-your-python-version.md"
