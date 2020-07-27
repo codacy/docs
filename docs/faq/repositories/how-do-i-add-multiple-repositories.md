@@ -60,3 +60,6 @@ for repo in $(curl -s https://api.github.com/orgs/$GITHUB_ORG_NAME/repos -H "Aut
      echo # Echo a newline for readability
 done
 ```
+
+!!! note
+    For the sake of simplicity, this example script does not take into account paginated results obtained from the GitHub API. To ensure that you obtain all the repositories in your organization, learn [how to use pagination](https://docs.github.com/en/rest/guides/traversing-with-pagination) on the GitHub API.
