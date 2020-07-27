@@ -1,23 +1,37 @@
 # Failed to clone the repository, generate a new SSH key
 
-SSH keys are used for repository cloning and exclusively used for these repositories. Depending on the level of access the user configuring the repository on Codacy has on the remote Git provider, the key can be added either directly to the repository itself, because the user has Write or Admin access; or to the user, with Read or Commit-only access.
-For that reason, some changes on the remote Git provider can cause Codacy to stop communicating with the repository.
+SSH keys are exclusively used for repository cloning.
 
-Renaming the repository or moving to a different account:
+Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, the key can be added either:
 
-1.  In the Repository Settings view, update the Git URL to match the new one
+-   Directly to the repository itself, if the user has permissions to add keys to the repository
+-   To the user account, if the user only has permissions to read or commit to the repository
 
-Removing access to the user that configured the repository on Codacy, if the key was added to its account:
+For this reason, some changes on the remote Git provider can prevent Codacy from cloning the repository.
 
-1.  In the Repository Settings view, recreate the integration with the remote Git provider;
-2.  Then click **Generate New Repository key**. See below for details.
+![Failed to clone the repository](images/failed-to-clone-the-repository.png)
 
-![](/images/Screen_Shot_2018-07-08_at_19.58.46.png)
+## The repository was renamed or moved
 
-**Generate New Repository Key** is the recommended option. It will add a new SSH key to your repository deployment keys. However, this is only possible if the user configuring the integration with the remote Git provider has write/admin access. Otherwise, this operation will fail.
-Alternatively, you can do this process manually by copying the SSH key.
+If you renamed the repository or moved it to a different account on the Git provider:
 
-![](/images/Screen_Shot_2018-07-08_at_19.59.04.png)
+1.  On Codacy, open your **Repository Settings**, tab **General**.
+2.  Click the button **Update name**.
 
-**Generate New User Key **should only be used if [your repository is using submodules on Codacy](/hc/en-us/articles/360005239394-Submodules-how-to-enable-them-).
-Adding the SSH key to your account allows Codacy to access the repository and all the submodules, without you adding the key to the repository and then having to copy it to all its submodules.
+## The user that configured the repository no longer has access
+
+If the user that initially configured the repository on Codacy was using a user account key but no longer has access to the repository on the Git provider:
+
+1.  On Codacy, open your **Repository Settings**, tab **General**.
+2.  Click the button **Generate New Repository Key** (recommended) or **Generate New User Key**:
+
+    **Generate New Repository Key** is the recommended option. It will add a new SSH key to your repository deployment keys. However, this is only possible if the user configuring the integration with the remote Git provider has permissions to add keys to the repository. Otherwise, this operation will fail. Alternatively, you can also do this process manually by copying the SSH key.
+
+    **Generate New User Key** should only be used if [your repository is using submodules on Codacy](../../repositories-configure/using-submodules.md). When you are using submodules, Codacy needs to clone additional repositories it has no access to. Since there is no way of identifying the submodules of a repository before cloning the repository, Codacy adds the SSH keys to the user account so that it has access to the same repositories as the user.
+    
+    !!! important
+        **If you're using Bitbucket Cloud**, you must manually add the SSH key on your [user account](https://bitbucket.org/account/settings/ssh-keys/).
+
+    ![Generate new key](images/failed-to-clone-the-repository-new-key.png)
+
+3.  Open the tab **Integrations**. If you have an integration with your Git provider enabled, remove and re-create the integration.
