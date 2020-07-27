@@ -1,6 +1,6 @@
 # Project information
 site_name: Codacy docs
-site_url: http://docs.dev.codacy.org/
+site_url: https://docs.codacy.com/
 
 # Configuration
 theme:
@@ -10,8 +10,8 @@ theme:
     language: en
     favicon: "assets/images/favicon.ico"
     palette:
-      primary: indigo
-      accent: indigo
+        primary: indigo
+        accent: indigo
     logo: "assets/images/codacy-docs-logo.svg"
     features: []
 
@@ -51,8 +51,6 @@ plugins:
     - monorepo
     - redirects:
           redirect_maps:
-              "hc/en-us/articles/115000254665.md": "self-hosted/managing-authentication-for-the-control-panel.md"
-              "hc/en-us/articles/115000254665-Managing-authentication-for-the-Control-Panel.md": "self-hosted/managing-authentication-for-the-control-panel.md"
               "hc/en-us/articles/115000255385.md": "related-tools/api-tokens.md"
               "hc/en-us/articles/115000255385-API-Tokens.md": "related-tools/api-tokens.md"
               "hc/en-us/articles/115000282129.md": "faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md"
@@ -65,16 +63,14 @@ plugins:
               "hc/en-us/articles/115000947569-Code-Standards.md": "repositories-configure/code-standards.md"
               "hc/en-us/articles/115001853565.md": "faq/general/plan-and-billing.md"
               "hc/en-us/articles/115001853565-Upgrading-your-Codacy-account.md": "faq/general/plan-and-billing.md"
-              "hc/en-us/articles/115001959985.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
-              "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": 'faq/troubleshooting/not-a-member-of-the-organization.md'
+              "hc/en-us/articles/115001959985.md": "faq/troubleshooting/not-a-member-of-the-organization.md"
+              "hc/en-us/articles/115001959985-Why-do-I-get-a-Not-a-member-of-the-organization-message-.md": "faq/troubleshooting/not-a-member-of-the-organization.md"
               "hc/en-us/articles/115002130625.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/115002130625-Codacy-Configuration-File.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/115002330985.md": "repositories-configure/specifying-your-python-version.md"
               "hc/en-us/articles/115002330985-Specifying-your-Python-version.md": "repositories-configure/specifying-your-python-version.md"
               "hc/en-us/articles/115002492425.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md"
               "hc/en-us/articles/115002492425-NodeSecurity-Dependencies-Inspection.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md"
-              "hc/en-us/articles/115002868829.md": "self-hosted/monitoring-codacy-self-hosted.md"
-              "hc/en-us/articles/115002868829-Monitoring-Codacy-Self-hosted.md": "self-hosted/monitoring-codacy-self-hosted.md"
               "hc/en-us/articles/115003405529.md": "getting-started/which-permissions-does-codacy-need-from-my-account.md"
               "hc/en-us/articles/115003405529-Which-permissions-does-Codacy-need-from-my-account-.md": "getting-started/which-permissions-does-codacy-need-from-my-account.md"
               "hc/en-us/articles/207278449.md": "getting-started/setting-up-your-personal-repositories.md"
@@ -99,16 +95,10 @@ plugins:
               "hc/en-us/articles/207280359-WebHook-Notifications.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280379.md": "related-tools/tool-developer-guide-using-scala.md"
               "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "related-tools/tool-developer-guide-using-scala.md"
-              "hc/en-us/articles/207280489.md": "self-hosted/configuring-github-enterprise-with-codacy-self-hosted.md"
-              "hc/en-us/articles/207280489-Configuring-GitHub-Enterprise-with-Codacy-Self-hosted.md": "self-hosted/configuring-github-enterprise-with-codacy-self-hosted.md"
-              "hc/en-us/articles/207280509.md": "self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted.md"
-              "hc/en-us/articles/207280509-Configuring-Bitbucket-Server-from-Stash-with-Codacy-Self-hosted.md": "self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted.md"
-              "hc/en-us/articles/207280529.md": "self-hosted/frequently-asked-questions-(faq).md"
-              "hc/en-us/articles/207280529-Frequently-Asked-Questions-faq/.md": "self-hosted/frequently-asked-questions-(faq).md"
               "hc/en-us/articles/207312879.md": "repositories-configure/generate-coverage.md"
               "hc/en-us/articles/207312879-Generate-Coverage.md": "repositories-configure/generate-coverage.md"
-              "hc/en-us/articles/207993605.md": "getting-started/i-added-a-repository.-now-what.md"
-              "hc/en-us/articles/207993605-I-added-a-repository-Now-what-.md": "getting-started/i-added-a-repository.-now-what.md"
+              "hc/en-us/articles/207993605.md": "getting-started/i-added-a-repository-now-what.md"
+              "hc/en-us/articles/207993605-I-added-a-repository-Now-what-.md": "getting-started/i-added-a-repository-now-what.md"
               "hc/en-us/articles/207993835.md": "repositories-configure/add-coverage-to-your-repo.md"
               "hc/en-us/articles/207993835-Add-coverage-to-your-repo.md": "repositories-configure/add-coverage-to-your-repo.md"
               "hc/en-us/articles/207994025.md": "repositories/commits-view.md"
@@ -135,18 +125,10 @@ plugins:
               "hc/en-us/articles/207994885-Which-browsers-do-you-support-.md": "faq/general/which-browsers-do-you-support.md"
               "hc/en-us/articles/207994895.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
               "hc/en-us/articles/207994895-How-long-does-it-take-for-my-repository-to-be-analysed-.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
-              "hc/en-us/articles/207994905.md": "self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise.md"
-              "hc/en-us/articles/207994905-How-do-I-install-Codacy-webhooks-on-GitHub-Enterprise-.md": "self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise.md"
               "hc/en-us/articles/207994935.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
               "hc/en-us/articles/207994935-Why-isn-t-my-public-repository-being-analysed-.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
-              "hc/en-us/articles/207994955.md": "self-hosted/installing-postgres-for-codacy-self-hosted-using-a-docker-container.md"
-              "hc/en-us/articles/207994955-Installing-postgres-for-Codacy-Self-hosted-Using-a-Docker-container.md": "self-hosted/installing-postgres-for-codacy-self-hosted-using-a-docker-container.md"
-              "hc/en-us/articles/207994975.md": "self-hosted/configuring-gitlab-enterprise-with-codacy-self-hosted.md"
-              "hc/en-us/articles/207994975-Configuring-GitLab-Enterprise-with-Codacy-Self-hosted.md": "self-hosted/configuring-gitlab-enterprise-with-codacy-self-hosted.md"
               "hc/en-us/articles/207995005.md": "special-thanks.md"
               "hc/en-us/articles/207995005-Special-Thanks.md": "special-thanks.md"
-              "hc/en-us/articles/207995025.md": "self-hosted/installing-codacy-self-hosted.md"
-              "hc/en-us/articles/207995025-Installing-Codacy-Self-hosted.md": "self-hosted/installing-codacy-self-hosted.md"
               "hc/en-us/articles/208241349.md": "account/default-patterns.md"
               "hc/en-us/articles/208241349-Default-Patterns.md": "account/default-patterns.md"
               "hc/en-us/articles/208243169.md": "organizations/manual-organizations/managing-team-repositories.md"
@@ -179,8 +161,6 @@ plugins:
               "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md"
               "hc/en-us/articles/360001207234.md": "repositories-configure/specifying-language.md"
               "hc/en-us/articles/360001207234-Specifying-language.md": "repositories-configure/specifying-language.md"
-              "hc/en-us/articles/360002902573.md": "self-hosted/installing-postgres-for-codacy-self-hosted.md"
-              "hc/en-us/articles/360002902573-Installing-postgres-for-Codacy-Self-hosted.md": "self-hosted/installing-postgres-for-codacy-self-hosted.md"
               "hc/en-us/articles/360003863274.md": "organizations/organization-dashboard-overview.md"
               "hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-.md": "organizations/organization-dashboard-overview.md"
               "hc/en-us/articles/360003863594.md": "faq/repositories/hotspots-overview.md"
@@ -203,20 +183,14 @@ plugins:
               "hc/en-us/articles/360006415313-Enterprise-v2-0-333-.md": "release-notes/self-hosted/enterprise-v2.0.333-.md"
               "hc/en-us/articles/360006566914.md": "release-notes/self-hosted/enterprise-v2.0.337.md"
               "hc/en-us/articles/360006566914-Enterprise-v2-0-337.md": "release-notes/self-hosted/enterprise-v2.0.337.md"
-              "hc/en-us/articles/360006671054.md": "self-hosted/configuring-github-cloud-with-codacy-self-hosted.md"
-              "hc/en-us/articles/360006671054-Configuring-GitHub-Cloud-with-Codacy-Self-hosted.md": "self-hosted/configuring-github-cloud-with-codacy-self-hosted.md"
               "hc/en-us/articles/360006718454.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
               "hc/en-us/articles/360006718454-Share-your-repository-with-a-non-Codacy-user.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
               "hc/en-us/articles/360006795293.md": "faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md"
               "hc/en-us/articles/360006795293-Repository-failed-to-clone-Generating-a-new-SSH-key.md": "faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md"
-              "hc/en-us/articles/360007262774.md": "self-hosted/configuring-your-email-server-with-codacy-enterprise.md"
-              "hc/en-us/articles/360007262774-Configuring-your-Email-Server-with-Codacy-Enterprise.md": "self-hosted/configuring-your-email-server-with-codacy-enterprise.md"
               "hc/en-us/articles/360007316034.md": "release-notes/cloud/cloud-release-notes-|-23-july-2018.md"
               "hc/en-us/articles/360007316034-Cloud-Release-Notes-23-July-2018.md": "release-notes/cloud/cloud-release-notes-|-23-july-2018.md"
               "hc/en-us/articles/360007699814.md": "release-notes/self-hosted/enterprise-v2.0.338.md"
               "hc/en-us/articles/360007699814-Enterprise-v2-0-338.md": "release-notes/self-hosted/enterprise-v2.0.338.md"
-              "hc/en-us/articles/360007846913.md": "self-hosted/gitlab-integration-codacy-self-hosted.md"
-              "hc/en-us/articles/360007846913-GitLab-integration-Codacy-Self-hosted.md": "self-hosted/gitlab-integration-codacy-self-hosted.md"
               "hc/en-us/articles/360008254833.md": "related-tools/run-local-analysis.md"
               "hc/en-us/articles/360008254833-Run-local-analysis.md": "related-tools/run-local-analysis.md"
               "hc/en-us/articles/360008762954.md": "release-notes/self-hosted/enterprise-v2.0.339.md"
@@ -229,8 +203,6 @@ plugins:
               "hc/en-us/articles/360009209594-Creating-and-renaming-an-organization.md": "organizations/manual-organizations/creating-and-renaming-an-organization.md"
               "hc/en-us/articles/360009340553.md": "organizations/manual-organizations/creating-and-managing-teams.md"
               "hc/en-us/articles/360009340553-Creating-and-managing-teams.md": "organizations/manual-organizations/creating-and-managing-teams.md"
-              "hc/en-us/articles/360009345493.md": "self-hosted/how-to-download-logs.md"
-              "hc/en-us/articles/360009345493-How-to-download-logs.md": "self-hosted/how-to-download-logs.md"
               "hc/en-us/articles/360009384980.md": "release-notes/self-hosted/enterprise-v2.0.371.md"
               "hc/en-us/articles/360009384980-Enterprise-v2-0-371.md": "release-notes/self-hosted/enterprise-v2.0.371.md"
               "hc/en-us/articles/360009411934.md": "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md"
@@ -277,14 +249,10 @@ plugins:
               "hc/en-us/articles/360012267020-Self-hosted-v2-0-378.md": "release-notes/self-hosted/self-hosted-v2.0.378.md"
               "hc/en-us/articles/360012328140.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md"
               "hc/en-us/articles/360012328140-Removal-of-NodeSecurity-GoLint-and-SCSSLint.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md"
-              "hc/en-us/articles/360012368539.md": "self-hosted/configuring-gitlab.com-with-codacy-self-hosted.md"
-              "hc/en-us/articles/360012368539-Configuring-GitLab-com-with-Codacy-Self-hosted.md": "self-hosted/configuring-gitlab.com-with-codacy-self-hosted.md"
               "hc/en-us/articles/360012494113.md": "release-notes/cloud/cloud-release-notes-|-16-november-2018.md"
               "hc/en-us/articles/360012494113-Cloud-Release-Notes-16-November-2018.md": "release-notes/cloud/cloud-release-notes-|-16-november-2018.md"
               "hc/en-us/articles/360012563579.md": "faq/general/how-does-codacy-support-bitbucket-server.md"
               "hc/en-us/articles/360012563579-How-does-Codacy-support-Bitbucket-Server-.md": "faq/general/how-does-codacy-support-bitbucket-server.md"
-              "hc/en-us/articles/360012665460.md": "self-hosted/create-and-configure-a-new-github-app.md"
-              "hc/en-us/articles/360012665460-Create-and-configure-a-new-GitHub-App.md": "self-hosted/create-and-configure-a-new-github-app.md"
               "hc/en-us/articles/360012729599.md": "release-notes/self-hosted/upcoming-changes-to-github-integration-for-codacy-self-hosted.md"
               "hc/en-us/articles/360012729599-Upcoming-changes-to-GitHub-integration-for-Codacy-Self-hosted.md": "release-notes/self-hosted/upcoming-changes-to-github-integration-for-codacy-self-hosted.md"
               "hc/en-us/articles/360012746413.md": "faq/repositories/i-renamed-my-repository-on-the-git-provider.md"
@@ -347,8 +315,6 @@ plugins:
               "hc/en-us/articles/360013142699-Client-side-tools.md": "related-tools/client-side-tools.md"
               "hc/en-us/articles/360013240680.md": "release-notes/self-hosted/removal-of-findbugs-and-findbugs-security.md"
               "hc/en-us/articles/360013240680-Removal-of-Findbugs-and-Findbugs-Security.md": "release-notes/self-hosted/removal-of-findbugs-and-findbugs-security.md"
-              "hc/en-us/articles/360013423040.md": "self-hosted/bitbucket-server-integration-codacy-self-hosted.md"
-              "hc/en-us/articles/360013423040-Bitbucket-Server-integration-Codacy-Self-hosted.md": "self-hosted/bitbucket-server-integration-codacy-self-hosted.md"
               "hc/en-us/articles/360013560819.md": "faq/repositories/i-moved-my-repository-on-the-git-provider.md"
               "hc/en-us/articles/360013560819-I-moved-my-repository-on-the-Git-provider.md": "faq/repositories/i-moved-my-repository-on-the-git-provider.md"
               "hc/en-us/articles/360013926899.md": "faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md"
@@ -367,13 +333,14 @@ plugins:
               "hc/en-us/articles/360014670040-Self-hosted-v1-3-0-for-Kubernetes.md": "release-notes/self-hosted/self-hosted-v1.3.0-for-kubernetes.md"
               "hc/en-us/articles/360014670140.md": "release-notes/self-hosted/self-hosted-v1.4.0-for-kubernetes.md"
               "hc/en-us/articles/360014670140-Self-hosted-v1-4-0-for-Kubernetes.md": "release-notes/self-hosted/self-hosted-v1.4.0-for-kubernetes.md"
-
+              "hc/en-us/articles/360015300100.md": "faq/general/how-does-codacy-support-gitlab-enterprise.md"
+              "hc/en-us/articles/360015300100-How-does-Codacy-support-GitLab-Enterprise-.md": "faq/general/how-does-codacy-support-gitlab-enterprise.md"
 
 nav:
     - "Documentation home": "index.md"
     - "Getting started":
           - getting-started/getting-started-with-codacy.md
-          - getting-started/i-added-a-repository.-now-what.md
+          - getting-started/i-added-a-repository-now-what.md
           - getting-started/setting-up-your-personal-repositories.md
           - getting-started/supported-languages.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
@@ -437,24 +404,6 @@ nav:
           - related-tools/api-tokens.md
           - related-tools/tool-developer-guide.md
           - related-tools/tool-developer-guide-using-scala.md
-    - "Installing Codacy (legacy)":
-          - self-hosted/bitbucket-server-integration-codacy-self-hosted.md
-          - self-hosted/configuring-bitbucket-server-(from-stash)-with-codacy-self-hosted.md
-          - self-hosted/configuring-github-cloud-with-codacy-self-hosted.md
-          - self-hosted/configuring-github-enterprise-with-codacy-self-hosted.md
-          - self-hosted/configuring-gitlab.com-with-codacy-self-hosted.md
-          - self-hosted/configuring-gitlab-enterprise-with-codacy-self-hosted.md
-          - self-hosted/configuring-your-email-server-with-codacy-enterprise.md
-          - self-hosted/create-and-configure-a-new-github-app.md
-          - self-hosted/frequently-asked-questions-(faq).md
-          - self-hosted/gitlab-integration-codacy-self-hosted.md
-          - self-hosted/how-do-i-install-codacy-webhooks-on-github-enterprise.md
-          - self-hosted/how-to-download-logs.md
-          - self-hosted/installing-codacy-self-hosted.md
-          - self-hosted/installing-postgres-for-codacy-self-hosted.md
-          - self-hosted/installing-postgres-for-codacy-self-hosted-using-a-docker-container.md
-          - self-hosted/managing-authentication-for-the-control-panel.md
-          - self-hosted/monitoring-codacy-self-hosted.md
     - "Installing Codacy": "!include ./submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
@@ -462,6 +411,7 @@ nav:
                 - faq/general/which-version-control-systems-do-you-support.md
                 - faq/general/which-browsers-do-you-support.md
                 - faq/general/how-does-codacy-support-gitlab-cloud.md
+                - faq/general/how-does-codacy-support-gitlab-enterprise.md
                 - faq/general/how-does-codacy-support-bitbucket-cloud.md
                 - faq/general/how-does-codacy-support-bitbucket-server.md
                 - faq/general/how-does-codacy-keep-my-data-secure.md

@@ -29,7 +29,7 @@ assist you with the migration.
 -   We now support partial coverage reports so you can now submit
     separate reports for different languages as well as send us partial
     reports without having to merge them before uploading to Codacy.
-    [Here](https://github.com/codacy/codacy-coverage-reporter#updating-codacy)
+    [Here](https://github.com/codacy/codacy-coverage-reporter/blob/master/docs/advanced/multiple-reports.md)
     is an article with steps on how to upload partial coverage to
     Codacy.
 -   We now display errors concerning [Codacy configuration
