@@ -51,6 +51,7 @@ plugins:
     - monorepo
     - redirects:
           redirect_maps:
+              "hc/en-us/requests/new.md": "https://codacy.zendesk.com/hc/en-us/requests/new"
               "hc/en-us/articles/115000255385.md": "related-tools/api-tokens.md"
               "hc/en-us/articles/115000255385-API-Tokens.md": "related-tools/api-tokens.md"
               "hc/en-us/articles/115000282129.md": "faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md"
