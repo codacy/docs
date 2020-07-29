@@ -19,9 +19,9 @@
       
     
     
-      <link rel="stylesheet" href="/assets/stylesheets/main.e87180e5.min.css">
+      <link rel="stylesheet" href="/assets/stylesheets/main.88081b1a.min.css">
       
-        <link rel="stylesheet" href="/assets/stylesheets/palette.a603216b.min.css">
+        <link rel="stylesheet" href="/assets/stylesheets/palette.97583bbe.min.css">
       
       
         
@@ -2195,7 +2195,20 @@
               
 <h1>Oops!</h1>
 <h2>Couldn't find the page you are looking for</h2>
-<p>If this problem continues and you think something is wrong, please <a href="#" onclick='Intercom("show")'>let us know</a> and we will look into it.</p>
+<p id="404message">If this problem continues and you think something is wrong, please <a href="#" onclick='Intercom("show")'>let us know</a> and we will look into it.</p>
+<script>
+  // Forward Support ticket URLs to Zendesk
+  if(window.location.pathname.startsWith("/hc/requests/") ||
+     window.location.pathname.startsWith("/hc/en-us/requests"))
+  {
+    var destinationUrl = "https://codacy.zendesk.com" + window.location.pathname;
+    document.getElementById("notfoundmessage").innerHTML =
+      `You should be redirected to <a href="${destinationUrl}">${destinationUrl}</a> in a few seconds.`;
+    setTimeout(function () {
+      window.location.assign(destinationUrl);
+    }, 5000);
+  }
+</script>
 
               
                 
