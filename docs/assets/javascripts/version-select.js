@@ -34,11 +34,49 @@ window.addEventListener("DOMContentLoaded", function() {
     function makeSelect(options, selected) {
         var select = document.createElement("select");
         select.classList.add("form-control");
-  
+        var versionsArray = new Array();
+        var deprecatedVersionsArray = new Array();
+
         options.forEach(function(i) {
             var option = new Option(i.text, i.value, undefined,
-                                    i.value === selected);
-            select.add(option);
+                                    i.value === selected);       
+
+            if(i.text == "Latest")
+            {
+                // Ensure the Latest option is the first one
+                select.add(option, 0);
+            }
+            else if(i.text.includes("Deprecated"))
+            {
+                // Group deprecated versions
+                deprecatedVersionsArray.push(option);
+            }
+            else
+            {
+                versionsArray.push(option);
+            }
+        });
+
+        function compare(a, b) {
+            let comparison = 0;
+            if (a.value > b.value) {
+                comparison = -1;
+            } else if (a.value < b.value) {
+                comparison = 1;
+            }
+            return comparison;
+        }
+
+        // Ensure supported versions are ordered from latest to oldest
+        versionsArray.sort(compare);
+        versionsArray.forEach(function(i) {
+            select.add(i);
+        });
+
+        // Ensure deprecated versions are the last ones
+        deprecatedVersionsArray.sort(compare);
+        deprecatedVersionsArray.forEach(function(i) {
+            select.add(i);
         });
   
         return select;
