@@ -59,11 +59,16 @@ window.addEventListener("DOMContentLoaded", function() {
         // Place the HTML select element in the DOM
         var container = document.createElement("div");
         container.id = "version-selector";
-        container.className = "md-content__inner version-select-container";
+        container.className = "version-select-container";
+
+        var span = document.createElement("span");
+        span.innerText = 'Version'
+
+        container.appendChild(span);
         container.appendChild(ele);
     
-        var article = document.querySelector(".md-content > article.md-content__inner");
-        article.insertAdjacentElement("beforebegin", container);
+        var article = document.querySelector(".search-cta-top > .md-search");
+        article.insertAdjacentElement("afterend", container);
     }
     
     function generateVersionSwitcher(versionJSON) {
