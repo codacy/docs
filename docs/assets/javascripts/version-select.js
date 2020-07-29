@@ -105,6 +105,8 @@ window.addEventListener("DOMContentLoaded", function() {
                 window.location.href = window.location.origin + targetVersionPath;
             }
         });
+        select.title = "Documentation version\n\nFor Codacy Cloud, select Latest.\nFor Codacy Self-Hosted, select the version of your Codacy installation."
+      
     
         // Place the HTML select element in the DOM
         placeSelectElement(select)
