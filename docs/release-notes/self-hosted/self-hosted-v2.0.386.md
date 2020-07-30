@@ -3,34 +3,33 @@
 ## Product Enhancements
 
 -   **Updated tools:**
-    -   Updated checkstyle to 2.0.0
-    -   Updated eslint to 4.0.13
-    -   Updated pmd to 3.6.0
-    -   Updated phpmd to 2.3.24
-    -   Updated pylint to 3.0.0
-    -   Updated pylint-python3 to 2.0.1
-    -   Updated scalastyle to 2.0.0
-    -   Updated rubocop to 4.0.2
-    -   Updated scalameta-pro to 3.0.1
-    -   Updated bandit to 2.0.0
-    -   Updated cppcheck to 2.6.0
-    -   Updated codesniffer to 2.0.2
-    -   Updated csslint to 3.0.0
-    -   Updated hadolint to 1.3.0
-    -   Updated jackson-linter to 5.0.0
-    -   Updated prospector to 2.0.0
-    -   Updated bundler-audit to 4.0.0
-    -   Updated stylelint to 2.5.35
-    -   Updated sonar-csharp to 4.0.1
-    -   Updated sonar-visual-basic to 2.0.1
-    -   Updated detekt to 2.1.1
-    -   Updated credo to 2.0.58
-    -   Updated remark-lint to 2.2.3
-    -   Updated swiftlint to 2.1.0
-    -   Updated ameba to 2.4.0
-    -   Updated spotbugs to 1.6.1
-    -   Updated tsqllint to 1.0.0
-    -   Updated codenarc to 0.2.0
-    -   Updated gorevive to 1.0.0
-    -   Updated example-tool to 0.1.6
-    -   Updated clang-tidy to 1.0.0
+    -   Updated Checkstyle to 2.0.0
+    -   Updated ESLint to 4.0.13
+    -   Updated PMD to 3.6.0
+    -   Updated PHPMD to 2.3.24
+    -   Updated Pylint to 3.0.0
+    -   Updated Pylint-python3 to 2.0.1
+    -   Updated Scalastyle to 2.0.0
+    -   Updated RuboCop to 4.0.2
+    -   Updated Codacy Scalameta Pro to 3.0.1
+    -   Updated Bandit to 2.0.0
+    -   Updated Cppcheck to 2.6.0
+    -   Updated CodeSniffer to 2.0.2
+    -   Updated CSS Lint to 3.0.0
+    -   Updated Hadolint to 1.3.0
+    -   Updated Jackson Linter to 5.0.0
+    -   Updated Prospector to 2.0.0
+    -   Updated Bundler Audit to 4.0.0
+    -   Updated Stylelint to 2.5.35
+    -   Updated SonarC# to 4.0.1
+    -   Updated SonarVB to 2.0.1
+    -   Updated Detekt to 2.1.1
+    -   Updated Credo to 2.0.58
+    -   Updated RemarkLint to 2.2.3
+    -   Updated SwiftLint to 2.1.0
+    -   Updated Ameba to 2.4.0
+    -   Updated SpotBugs to 1.6.1
+    -   Updated TSQLLint to 1.0.0
+    -   Updated CodeNarc to 0.2.0
+    -   Updated Revive to 1.0.0
+    -   Updated Clang-Tidy to 1.0.0
