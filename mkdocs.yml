@@ -93,9 +93,6 @@ plugins:
               "hc/en-us/articles/207280239.md": "repositories-configure/integrations/bitbucket-cloud-integration.md"
               "hc/en-us/articles/207280239-Bitbucket-Cloud-Integration.md": "repositories-configure/integrations/bitbucket-cloud-integration.md"
               "hc/en-us/articles/207280239-Bitbucket-Integration.md": "repositories-configure/integrations/bitbucket-cloud-integration.md"
-              "hc/en-us/articles/207280289.md": "repositories-configure/integrations/youtrack-integration.md"
-              "hc/en-us/articles/207280289-YouTrack-Integration.md": "repositories-configure/integrations/youtrack-integration.md"
-              "hc/en-us/articles/207280289-YouTrack.md": "repositories-configure/integrations/youtrack-integration.md"
               "hc/en-us/articles/207280359.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280359-WebHook-Notifications.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280379.md": "related-tools/tool-developer-guide-using-scala.md"
@@ -373,7 +370,6 @@ nav:
                 - repositories-configure/integrations/bitbucket-cloud-integration.md
                 - repositories-configure/integrations/slack-integration.md
                 - repositories-configure/integrations/jira-integration.md
-                - repositories-configure/integrations/youtrack-integration.md
                 - repositories-configure/integrations/project-api.md
                 - repositories-configure/integrations/webhook-notifications.md
           - repositories-configure/code-patterns.md
