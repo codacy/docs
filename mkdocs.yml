@@ -146,6 +146,7 @@ plugins:
               "hc/en-us/articles/208953205-Changing-your-username-and-avatar.md": "account/managing-your-profile.md"
               "hc/en-us/articles/212622529.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
               "hc/en-us/articles/212622529-Why-can-t-I-see-or-add-my-organization-s-repositories-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
+              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-projects-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
               "hc/en-us/articles/212799365.md": "repositories/badges.md"
               "hc/en-us/articles/212799365-Badges.md": "repositories/badges.md"
               "hc/en-us/articles/213149905.md": "faq/general/how-do-i-change-my-email-address-in-codacy.md"
