@@ -51,6 +51,7 @@ plugins:
     - monorepo
     - redirects:
           redirect_maps:
+              "hc/en-us.md": "index.md"
               "hc/en-us/requests/new.md": "https://codacy.zendesk.com/hc/en-us/requests/new"
               "hc/en-us/articles/115000255385.md": "related-tools/api-tokens.md"
               "hc/en-us/articles/115000255385-API-Tokens.md": "related-tools/api-tokens.md"
@@ -77,6 +78,7 @@ plugins:
               "hc/en-us/articles/115003405529-Which-permissions-does-Codacy-need-from-my-account-.md": "getting-started/which-permissions-does-codacy-need-from-my-account.md"
               "hc/en-us/articles/207278449.md": "getting-started/setting-up-your-personal-repositories.md"
               "hc/en-us/articles/207278449-Setting-up-your-personal-repositories.md": "getting-started/setting-up-your-personal-repositories.md"
+              "hc/en-us/articles/207278449-Getting-started-with-Codacy.md": "getting-started/getting-started-with-codacy.md"
               "hc/en-us/articles/207279599.md": "faq/general/how-does-codacy-keep-my-data-secure.md"
               "hc/en-us/articles/207279599-How-does-Codacy-keep-my-data-secure-.md": "faq/general/how-does-codacy-keep-my-data-secure.md"
               "hc/en-us/articles/207279819.md": "repositories-configure/coverage.md"
@@ -93,9 +95,6 @@ plugins:
               "hc/en-us/articles/207280239.md": "repositories-configure/integrations/bitbucket-cloud-integration.md"
               "hc/en-us/articles/207280239-Bitbucket-Cloud-Integration.md": "repositories-configure/integrations/bitbucket-cloud-integration.md"
               "hc/en-us/articles/207280239-Bitbucket-Integration.md": "repositories-configure/integrations/bitbucket-cloud-integration.md"
-              "hc/en-us/articles/207280289.md": "repositories-configure/integrations/youtrack-integration.md"
-              "hc/en-us/articles/207280289-YouTrack-Integration.md": "repositories-configure/integrations/youtrack-integration.md"
-              "hc/en-us/articles/207280289-YouTrack.md": "repositories-configure/integrations/youtrack-integration.md"
               "hc/en-us/articles/207280359.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280359-WebHook-Notifications.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280379.md": "related-tools/tool-developer-guide-using-scala.md"
@@ -147,6 +146,7 @@ plugins:
               "hc/en-us/articles/208953205-Changing-your-username-and-avatar.md": "account/managing-your-profile.md"
               "hc/en-us/articles/212622529.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
               "hc/en-us/articles/212622529-Why-can-t-I-see-or-add-my-organization-s-repositories-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
+              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-projects-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
               "hc/en-us/articles/212799365.md": "repositories/badges.md"
               "hc/en-us/articles/212799365-Badges.md": "repositories/badges.md"
               "hc/en-us/articles/213149905.md": "faq/general/how-do-i-change-my-email-address-in-codacy.md"
@@ -373,7 +373,6 @@ nav:
                 - repositories-configure/integrations/bitbucket-cloud-integration.md
                 - repositories-configure/integrations/slack-integration.md
                 - repositories-configure/integrations/jira-integration.md
-                - repositories-configure/integrations/youtrack-integration.md
                 - repositories-configure/integrations/project-api.md
                 - repositories-configure/integrations/webhook-notifications.md
           - repositories-configure/code-patterns.md
