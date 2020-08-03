@@ -6,7 +6,6 @@ These release notes are for [Codacy Self-hosted v1.5.0](https://github.com/codac
 
 -    Added support for Gosec, the Golang Security Checker, as a [client-side tool](../../related-tools/client-side-tools.md)
 -    It's now possible to add repositories to Codacy programmatically with the new API v3 endpoint [addRepository](https://app.codacy.com/api/api-docs#addrepository) (CY-1877)
--    Improved the repositories list page to streamline adding new repositories and display metrics for each repository (CY-1847)
 -    Streamlined the configuration of Git providers and improved the onboarding flow that guides the user while performing the initial Codacy setup. (CY-468)
 -    Added support for GitLab Enterprise synced organizations (CY-68)
 
