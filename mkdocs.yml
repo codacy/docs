@@ -35,6 +35,7 @@ copyright: '© 2020 <a href="https://www.codacy.com">Codacy</a> - Automated code
 # Extensions
 markdown_extensions:
     - admonition
+    - attr_list
     - codehilite:
           guess_lang: false
           linenums: true
