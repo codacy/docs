@@ -35,6 +35,7 @@ copyright: '© 2020 <a href="https://www.codacy.com">Codacy</a> - Automated code
 # Extensions
 markdown_extensions:
     - admonition
+    - attr_list
     - codehilite:
           guess_lang: false
           linenums: true
@@ -51,6 +52,8 @@ plugins:
     - monorepo
     - redirects:
           redirect_maps:
+              "hc.md": "index.md"
+              "hc/en-us.md": "index.md"
               "hc/en-us/requests/new.md": "https://codacy.zendesk.com/hc/en-us/requests/new"
               "hc/en-us/articles/115000255385.md": "related-tools/api-tokens.md"
               "hc/en-us/articles/115000255385-API-Tokens.md": "related-tools/api-tokens.md"
@@ -58,6 +61,8 @@ plugins:
               "hc/en-us/articles/115000282129-Why-can-t-I-configure-post-commit-hooks-and-integrations-.md": "faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md"
               "hc/en-us/articles/115000488285.md": "repositories-configure/integrations/slack-integration.md"
               "hc/en-us/articles/115000488285-Slack.md": "repositories-configure/integrations/slack-integration.md"
+              "hc/en-us/articles/115000566729.md": "repositories-configure/ignore-files-from-codacy-analysis.md"
+              "hc/en-us/articles/115000566729-How-do-I-ignore-files-that-are-not-in-master-branch-.md": "repositories-configure/ignore-files-from-codacy-analysis.md"
               "hc/en-us/articles/115000723329.md": "repositories/security-dashboard.md"
               "hc/en-us/articles/115000723329-Security-Dashboard.md": "repositories/security-dashboard.md"
               "hc/en-us/articles/115000947569.md": "repositories-configure/code-standards.md"
@@ -75,10 +80,16 @@ plugins:
               "hc/en-us/articles/115002492425-NodeSecurity-Dependencies-Inspection.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md"
               "hc/en-us/articles/115003405529.md": "getting-started/which-permissions-does-codacy-need-from-my-account.md"
               "hc/en-us/articles/115003405529-Which-permissions-does-Codacy-need-from-my-account-.md": "getting-started/which-permissions-does-codacy-need-from-my-account.md"
+              "hc/en-us/sections/201760869-Integrations.md": "repositories-configure/integrations/github-integration.md"
+              "hc/en-us/sections/201819605-Working-with-an-organization.md": "organizations/what-are-synced-organizations.md"
               "hc/en-us/articles/207278449.md": "getting-started/setting-up-your-personal-repositories.md"
+              "hc/en-us/articles/207278449-Setting-up-your-repository.md": "getting-started/setting-up-your-personal-repositories.md"
               "hc/en-us/articles/207278449-Setting-up-your-personal-repositories.md": "getting-started/setting-up-your-personal-repositories.md"
+              "hc/en-us/articles/207278449-Getting-started-with-Codacy.md": "getting-started/getting-started-with-codacy.md"
               "hc/en-us/articles/207279599.md": "faq/general/how-does-codacy-keep-my-data-secure.md"
               "hc/en-us/articles/207279599-How-does-Codacy-keep-my-data-secure-.md": "faq/general/how-does-codacy-keep-my-data-secure.md"
+              "hc/en-us/articles/207279599-Is-Codacy-secure.md": "faq/general/how-does-codacy-keep-my-data-secure.md"
+              "hc/en-us/articles/207279599-Is-Codacy-secure-.md": "faq/general/how-does-codacy-keep-my-data-secure.md"
               "hc/en-us/articles/207279819.md": "repositories-configure/coverage.md"
               "hc/en-us/articles/207279819-Coverage.md": "repositories-configure/coverage.md"
               "hc/en-us/articles/207279849.md": "repositories/files-view.md"
@@ -93,9 +104,6 @@ plugins:
               "hc/en-us/articles/207280239.md": "repositories-configure/integrations/bitbucket-cloud-integration.md"
               "hc/en-us/articles/207280239-Bitbucket-Cloud-Integration.md": "repositories-configure/integrations/bitbucket-cloud-integration.md"
               "hc/en-us/articles/207280239-Bitbucket-Integration.md": "repositories-configure/integrations/bitbucket-cloud-integration.md"
-              "hc/en-us/articles/207280289.md": "repositories-configure/integrations/youtrack-integration.md"
-              "hc/en-us/articles/207280289-YouTrack-Integration.md": "repositories-configure/integrations/youtrack-integration.md"
-              "hc/en-us/articles/207280289-YouTrack.md": "repositories-configure/integrations/youtrack-integration.md"
               "hc/en-us/articles/207280359.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280359-WebHook-Notifications.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280379.md": "related-tools/tool-developer-guide-using-scala.md"
@@ -132,6 +140,7 @@ plugins:
               "hc/en-us/articles/207994895-How-long-does-it-take-for-my-repository-to-be-analysed-.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
               "hc/en-us/articles/207994935.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
               "hc/en-us/articles/207994935-Why-isn-t-my-public-repository-being-analysed-.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
+              "hc/en-us/articles/207994935-Why-isn-t-my-project-analysed.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
               "hc/en-us/articles/207994935-Why-isn-t-my-project-analysed-.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
               "hc/en-us/articles/207995005.md": "special-thanks.md"
               "hc/en-us/articles/207995005-Special-Thanks.md": "special-thanks.md"
@@ -145,12 +154,16 @@ plugins:
               "hc/en-us/articles/208942945-Plans-and-Billing.md": "faq/general/plan-and-billing.md"
               "hc/en-us/articles/208953205.md": "account/managing-your-profile.md"
               "hc/en-us/articles/208953205-Changing-your-username-and-avatar.md": "account/managing-your-profile.md"
+              "hc/en-us/articles/208953205-Managing-your-profile.md": "account/managing-your-profile.md"
               "hc/en-us/articles/212622529.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
               "hc/en-us/articles/212622529-Why-can-t-I-see-or-add-my-organization-s-repositories-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
+              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-projects-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
+              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-s-projects-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
               "hc/en-us/articles/212799365.md": "repositories/badges.md"
               "hc/en-us/articles/212799365-Badges.md": "repositories/badges.md"
               "hc/en-us/articles/213149905.md": "faq/general/how-do-i-change-my-email-address-in-codacy.md"
               "hc/en-us/articles/213149905-email-address-change.md": "faq/general/how-do-i-change-my-email-address-in-codacy.md"
+              "hc/en-us/articles/213149905-How-do-I-change-my-email-address-in-Codacy-.md": "faq/general/how-do-i-change-my-email-address-in-codacy.md"
               "hc/en-us/articles/213211825.md": "faq/code-analysis/do-you-check-for-dependencies.md"
               "hc/en-us/articles/213211825-Do-you-check-for-dependencies-.md": "faq/code-analysis/do-you-check-for-dependencies.md"
               "hc/en-us/articles/213217965.md": "faq/general/which-version-control-systems-do-you-support.md"
@@ -161,13 +174,18 @@ plugins:
               "hc/en-us/articles/213632009-Engines.md": "related-tools/engines.md"
               "hc/en-us/articles/213840489.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/213840489-How-do-I-reanalyze-my-repository-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
+              "hc/en-us/articles/213840489-How-do-I-reanalyze-my-project-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
+              "hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/214085885.md": "repositories/post-commit-hooks.md"
               "hc/en-us/articles/214085885-Post-Commit-Hooks.md": "repositories/post-commit-hooks.md"
               "hc/en-us/articles/214377225.md": "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md"
               "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md"
               "hc/en-us/articles/360001207234.md": "repositories-configure/specifying-language.md"
               "hc/en-us/articles/360001207234-Specifying-language.md": "repositories-configure/specifying-language.md"
+              "hc/en-us/categories/360001313954-Getting-Started.md": "getting-started/getting-started-with-codacy.md"
+              "hc/en-us/sections/360003014233-Configure-your-repo.md": "repositories-configure/code-patterns.md"
               "hc/en-us/sections/360003183099.md": "organizations/what-are-synced-organizations.md"
+              "hc/en-us/sections/360003183099-Synced-Organizations.md": "organizations/what-are-synced-organizations.md"
               "hc/en-us/articles/360003863274.md": "organizations/organization-dashboard-overview.md"
               "hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-.md": "organizations/organization-dashboard-overview.md"
               "hc/en-us/articles/360003863594.md": "faq/repositories/hotspots-overview.md"
@@ -195,6 +213,7 @@ plugins:
               "hc/en-us/articles/360006566914-Enterprise-v2-0-337.md": "release-notes/self-hosted/enterprise-v2.0.337.md"
               "hc/en-us/articles/360006718454.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
               "hc/en-us/articles/360006718454-Share-your-repository-with-a-non-Codacy-user.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
+              "hc/en-us/articles/360006718454-Share-your-project-with-a-non-Codacy-user.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
               "hc/en-us/articles/360006795293.md": "faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md"
               "hc/en-us/articles/360006795293-Repository-failed-to-clone-Generating-a-new-SSH-key.md": "faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md"
               "hc/en-us/articles/360007316034.md": "release-notes/cloud/cloud-release-notes-|-23-july-2018.md"
@@ -203,12 +222,15 @@ plugins:
               "hc/en-us/articles/360007699814-Enterprise-v2-0-338.md": "release-notes/self-hosted/enterprise-v2.0.338.md"
               "hc/en-us/articles/360008254833.md": "related-tools/run-local-analysis.md"
               "hc/en-us/articles/360008254833-Run-local-analysis.md": "related-tools/run-local-analysis.md"
+              "hc/en-us/articles/360008254833-Run-local-analysis-before-creating-a-commit.md": "related-tools/run-local-analysis.md"
+              "hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results.md": "related-tools/run-local-analysis.md"
               "hc/en-us/articles/360008762954.md": "release-notes/self-hosted/enterprise-v2.0.339.md"
               "hc/en-us/articles/360008762954-Enterprise-v2-0-339.md": "release-notes/self-hosted/enterprise-v2.0.339.md"
               "hc/en-us/articles/360009164573.md": "repositories/quality-settings.md"
               "hc/en-us/articles/360009164573-Quality-Settings.md": "repositories/quality-settings.md"
               "hc/en-us/articles/360009180134.md": "repositories/issues-view.md"
               "hc/en-us/articles/360009180134-Issues-View.md": "repositories/issues-view.md"
+              "hc/en-us/articles/360009180134-The-Issues-View.md": "repositories/issues-view.md"
               "hc/en-us/articles/360009209594.md": "organizations/manual-organizations/creating-and-renaming-an-organization.md"
               "hc/en-us/articles/360009209594-Creating-and-renaming-an-organization.md": "organizations/manual-organizations/creating-and-renaming-an-organization.md"
               "hc/en-us/articles/360009340553.md": "organizations/manual-organizations/creating-and-managing-teams.md"
@@ -373,7 +395,6 @@ nav:
                 - repositories-configure/integrations/bitbucket-cloud-integration.md
                 - repositories-configure/integrations/slack-integration.md
                 - repositories-configure/integrations/jira-integration.md
-                - repositories-configure/integrations/youtrack-integration.md
                 - repositories-configure/integrations/project-api.md
                 - repositories-configure/integrations/webhook-notifications.md
           - repositories-configure/code-patterns.md
@@ -475,12 +496,14 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
           - "Self-hosted release notes":
+                - release-notes/self-hosted/self-hosted-v1.5.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.4.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.3.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.2.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.1.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.0.1-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.0.0-for-kubernetes.md
+                - release-notes/self-hosted/self-hosted-v2.0.386.md
                 - release-notes/self-hosted/self-hosted-v2.0.380.md
                 - release-notes/self-hosted/removal-of-findbugs-and-findbugs-security.md
                 - release-notes/self-hosted/self-hosted-v2.0.379.md
