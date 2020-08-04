@@ -35,6 +35,7 @@ copyright: '© 2020 <a href="https://www.codacy.com">Codacy</a> - Automated code
 # Extensions
 markdown_extensions:
     - admonition
+    - attr_list
     - codehilite:
           guess_lang: false
           linenums: true
@@ -51,6 +52,7 @@ plugins:
     - monorepo
     - redirects:
           redirect_maps:
+              "hc.md": "index.md"
               "hc/en-us.md": "index.md"
               "hc/en-us/requests/new.md": "https://codacy.zendesk.com/hc/en-us/requests/new"
               "hc/en-us/articles/115000255385.md": "related-tools/api-tokens.md"
