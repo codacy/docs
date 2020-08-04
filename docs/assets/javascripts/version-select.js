@@ -7,7 +7,7 @@ window.addEventListener("DOMContentLoaded", function() {
         var hasPrefix = str.indexOf(prefix) === 0;
         return hasPrefix ? str.substr(prefix.length) : str.toString();
     };
-    
+
     function populateVersionSitemap(version) {
         var versionPath = version === VERSION_LATEST ? "" : "/" + version;
         window.versionPages[version] = []
@@ -36,7 +36,7 @@ window.addEventListener("DOMContentLoaded", function() {
         select.classList.add("select-css");
         var deprecatedVersionsArray = new Array();
         var versionsArray = new Array();
-        
+
         options.forEach(function(i) {
             var option = new Option(i.text, i.value, undefined,
                                     i.value === selected);       
@@ -83,7 +83,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
         return select;
     }
-    
+
     function fetchVersions(callback) {
         var xhr = new XMLHttpRequest();
         // Obtain JSON listing all available versions
@@ -94,7 +94,7 @@ window.addEventListener("DOMContentLoaded", function() {
         };
         xhr.send();
     }
-    
+
     function placeSelectElement(ele) {
         // Place the HTML select element in the DOM
         var container = document.createElement("div");
@@ -106,22 +106,22 @@ window.addEventListener("DOMContentLoaded", function() {
 
         container.appendChild(span);
         container.appendChild(ele);
-    
+
         var article = document.querySelector(".search-cta-top > .md-search");
         article.insertAdjacentElement("afterend", container);
     }
-    
+
     function generateVersionSwitcher(versionJSON) {
         versionJSON.forEach(function(e) {
             populateVersionSitemap(e.version)
         })
-    
+
         // Identify which is the current version
         var currentVersion = versionJSON.find(function(i) {
             return i.version === VERSION ||
                    i.aliases.includes(VERSION)
         });
-    
+
         if(!currentVersion) {
             // If VERSION was not found in the parsed JSON,
             // it means that the version is the latest
@@ -129,21 +129,21 @@ window.addEventListener("DOMContentLoaded", function() {
                 return i.version === VERSION_LATEST;
             });
         }
-    
+
         // Build the HTML select element
         var select = makeSelect(versionJSON.map(function(i) {
             return {text: i.title, value: i.version};
         }), currentVersion.version);
-    
+
         // Navigate to the selected version
         select.addEventListener("change", function(event) {
             var currentPath = window.location.pathname;
             var targetVersionPath = this.value === VERSION_LATEST ? "" : "/" + this.value;
-    
+
             if(currentVersion.version !== VERSION_LATEST) {
                 currentPath = removePrefix(window.location.pathname, "/" + currentVersion.version)
             }
-    
+
             if(window.versionPages[this.value].includes(currentPath)) {
                 window.location.href = window.location.origin + targetVersionPath + currentPath;
             } else {
@@ -151,8 +151,8 @@ window.addEventListener("DOMContentLoaded", function() {
             }
         });
         select.title = "For Codacy Cloud, select Latest.\nFor Codacy Self-Hosted, select the version of your Codacy installation."
-      
-    
+
+
         // Place the HTML select element in the DOM
         placeSelectElement(select)
     }
