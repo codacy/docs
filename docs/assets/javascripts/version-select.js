@@ -34,14 +34,14 @@ window.addEventListener("DOMContentLoaded", function() {
     function makeSelect(options, selected) {
         var select = document.createElement("select");
         select.classList.add("form-control");
-        var versionsArray = new Array();
         var deprecatedVersionsArray = new Array();
+        var versionsArray = new Array();
 
         options.forEach(function(i) {
             var option = new Option(i.text, i.value, undefined,
                                     i.value === selected);       
 
-            if(i.text == "Latest")
+            if(i.text.includes("Latest"))
             {
                 // Ensure the Latest option is the first one
                 select.add(option, 0);
@@ -53,10 +53,12 @@ window.addEventListener("DOMContentLoaded", function() {
             }
             else
             {
+                // Group supported versions
                 versionsArray.push(option);
             }
         });
 
+        // Used to order versions from latest to oldest
         function compare(a, b) {
             let comparison = 0;
             if (a.value > b.value) {
@@ -67,13 +69,13 @@ window.addEventListener("DOMContentLoaded", function() {
             return comparison;
         }
 
-        // Ensure supported versions are ordered from latest to oldest
+        // Add supported versions
         versionsArray.sort(compare);
         versionsArray.forEach(function(i) {
             select.add(i);
         });
 
-        // Ensure deprecated versions are the last ones
+        // Finally, add deprecated versions to ensure they appear last
         deprecatedVersionsArray.sort(compare);
         deprecatedVersionsArray.forEach(function(i) {
             select.add(i);
