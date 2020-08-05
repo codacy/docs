@@ -420,6 +420,7 @@ nav:
           - organizations/why-can't-i-see-my-organization.md
           - organizations/authors-vs-members.md
           - organizations/how-to-configure-which-users-can-ignore-issues.md
+          - organizations/managing-repositories-in-your-organization.md
           - "Manual organizations (legacy)":
                 - organizations/manual-organizations/creating-and-renaming-an-organization.md
                 - organizations/manual-organizations/creating-and-managing-teams.md
