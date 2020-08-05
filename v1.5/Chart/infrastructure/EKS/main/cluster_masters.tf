@@ -8,7 +8,7 @@ resource "aws_eks_cluster" "main" {
 
   vpc_config {
     security_group_ids = [aws_security_group.eks_master.id]
-    subnet_ids         = var.create_network_stack ? [aws_subnet.private1[0].id, aws_subnet.private2[0].id] : [var.subnet1_id, var.subnet2_id]
+    subnet_ids         = var.create_network_stack ? [aws_subnet.private1[0].id, aws_subnet.private2[0].id] : var.subnet_ids
   }
 
   # for more info see: https://docs.aws.amazon.com/eks/latest/userguide/control-plane-logs.html
