@@ -1,0 +1,11 @@
+controller:
+  ingressClass: nginx
+  publishService:
+    enabled: true
+  service:
+    # Use this annotation if you want private load balancers on AWS
+    #annotations:
+    #  service.beta.kubernetes.io/aws-load-balancer-internal: "true"
+    clusterIP: "-"
+  defaultBackend:
+    clusterIP: "-"
