@@ -1727,26 +1727,6 @@
   
 </li>
       
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#codacy-configuration" class="md-nav__link">
-    Codacy configuration
-  </a>
-  
-    <nav class="md-nav md-nav--toc" aria-label="Codacy configuration">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#db-secrets" class="md-nav__link">
-    Lost or changed database secrets
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -2408,37 +2388,6 @@
 <ol>
 <li>Take note of the parameter <code>client_id</code> in the URL of the Bitbucket Cloud error page (for example, <code>r8QJDkkxj8unYfg4Bd</code>)</li>
 <li>Check if the value of the parameter matches the value of the Client ID of your Bitbucket OAuth consumer</li>
-</ol>
-<h2 id="codacy-configuration">Codacy configuration<a class="headerlink" href="#codacy-configuration" title="Permanent link">&para;</a></h2>
-<p>The following sections help you troubleshoot the Codacy configuration.</p>
-<h3 id="db-secrets">Lost or changed database secrets<a class="headerlink" href="#db-secrets" title="Permanent link">&para;</a></h3>
-<p>When you open the Codacy UI, an error message states that the secret used to encrypt sensitive data on the database and the one in your configuration file are different.</p>
-<p>To solve this issue:</p>
-<ol>
-<li>
-<p>Obtain the correct key from the Codacy logs by executing the following command, where <code>&lt;namespace&gt;</code> is the cluster namespace where Codacy is installed:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -fsSL https://raw.githubusercontent.com/codacy/chart/master/docs/troubleshoot/extract-codacy-secrets.sh<span class="o">)</span> <span class="se">\</span>
-    -n &lt;namespace&gt;
-</code></pre></div>
-
-<p>You can also download the script <a href="../extract-codacy-secrets.sh">extract-codacy-secrets.sh</a> to run it manually.</p>
-</li>
-<li>
-<p>Copy the value of the key and update your <code>values-production.yaml</code> file with this value.</p>
-</li>
-<li>
-<p>Apply the new configuration by performing a Helm upgrade. To do so execute the command <a href="../../#helm-upgrade">used to install Codacy</a>:</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>If you are using MicroK8s</strong> you must use the file <code>values-microk8s.yaml</code> together with the file <code>values-production.yaml</code>.</p>
-<p>To do this, uncomment the last line before running the <code>helm upgrade</code> command below.</p>
-</div>
-<div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span> <span class="se">\</span>
-             --values values-production.yaml <span class="se">\</span>
-             <span class="c1"># --values values-microk8s.yaml</span>
-</code></pre></div>
-
-</li>
 </ol>
                 
                   
