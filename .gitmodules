@@ -1,10 +1,10 @@
 [submodule "submodules/chart"]
 	path = submodules/chart
 	url = https://github.com/codacy/chart
+	branch = release-1.5.0
 [submodule "submodules/codacy-coverage-reporter"]
 	path = submodules/codacy-coverage-reporter
 	url = https://github.com/codacy/codacy-coverage-reporter
-	branch = mkdocs
 [submodule "submodules/mkdocs-codacy-theme"]
 	path = submodules/mkdocs-codacy-theme
 	url = git@github.com:codacy/mkdocs-codacy-theme.git
