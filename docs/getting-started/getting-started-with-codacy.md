@@ -8,7 +8,7 @@ To get started, head to [codacy.com](https://www.codacy.com/) and click **Get st
 
 Signing up with a Git provider such as GitHub links your Codacy user with your Git provider user, making it easier to add repositories to Codacy and invite your teammates.
 
-You’ll be prompted to allow Codacy access to your Git provider during the authorization flow. Read more about [the permissions Codacy requires and why](/hc/en-us/articles/115003405529).
+You’ll be prompted to allow Codacy access to your Git provider during the authorization flow. Read more about [the permissions Codacy requires and why](which-permissions-does-codacy-need-from-my-account.md).
 
 ## 2. Account Details
 
@@ -18,9 +18,9 @@ You’ll be asked to fill in a few details about your company so we know a bit m
 
 ![](/images/Screenshot_2020-02-26_at_21.30.45.png)
 
-Now, you’ll need to select the organization that contains your repositories. If you can’t see the organization you are looking for, [read this troubleshooting page](/hc/en-us/articles/360010264500).
+Now, you’ll need to select the organization that contains your repositories. If you can’t see the organization you are looking for, [read this troubleshooting page](../organizations/why-can't-i-see-my-organization.md).
 
-The selected organization will then be synced with Codacy so that managing your team permissions is easy. Read more about [what synced organizations do](/hc/en-us/articles/360010263720).
+The selected organization will then be synced with Codacy so that managing your team permissions is easy. Read more about [what synced organizations do](../organizations/what-are-synced-organizations.md).
 
 ## 4. Add repositories
 
@@ -30,4 +30,4 @@ And as a final step, you can select the repositories that you wish to analyze. C
 
 ## 5. You're all set!  🎉
 
-Read our guide on [what to do with a newly added repository](/hc/en-us/articles/207993605) to explore static analysis issues and continue configuring your repository.
+Read our guide on [what to do with a newly added repository](i-added-a-repository-now-what.md) to explore static analysis issues and continue configuring your repository.

@@ -1,6 +1,6 @@
 # Setting up your personal repositories
 
-The [onboarding wizard](/hc/en-us/articles/360010263540-Getting-started-with-Codacy) guides you through importing repositories from your Git provider to Codacy Organizations. However, you may also want to add your personal repositories that do not belong to any Organization to Codacy.
+The [onboarding wizard](getting-started-with-codacy.md) guides you through importing repositories from your Git provider to Codacy Organizations. However, you may also want to add your personal repositories that do not belong to any Organization to Codacy.
 
 ## Setting up a personal repository
 

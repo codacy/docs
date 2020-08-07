@@ -6,8 +6,8 @@ Codacy begins an initial analysis as soon as you add a repository and sends you 
 
 After the first analysis is complete you can continue to explore and configure Codacy for your repository:
 
--   Check the [Issues page](/hc/en-us/articles/360009180134) for the static analysis results
--   Read about [configuring Code patterns](/hc/en-us/articles/207994335)
--   [Configure your Quality Settings](/hc/en-us/articles/360009164573) for Pull Requests
--   Discover how you can [add coverage reports to Codacy](/hc/en-us/articles/207993835)
--   [Add a Codacy configuration file to your repository](/hc/en-us/articles/115002130625) and version your configurations
+-   Check the [Issues page](../repositories/issues-view.md) for the static analysis results
+-   Read about [configuring Code patterns](../repositories-configure/code-patterns.md)
+-   [Configure your Quality Settings](../repositories/quality-settings.md) for Pull Requests
+-   Discover how you can [add coverage reports to Codacy](../repositories-configure/add-coverage-to-your-repo.md)
+-   [Add a Codacy configuration file to your repository](../repositories-configure/codacy-configuration-file.md) and version your configurations
