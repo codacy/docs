@@ -38,7 +38,7 @@ To configure the patterns used to analyse your repository simply click on the ch
 
 ![](/images/enabled.png)
 
-When you change the enabled patterns you can reanalyse your repository. To do that, just enter the latest commit from your list on the **Commit** view and click to [reanalyse](/hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-).
+When you change the enabled patterns you can reanalyse your repository. To do that, just enter the latest commit from your list on the **Commit** view and click to [reanalyse](../faq/repositories/how-do-i-reanalyze-my-repository.md).
 
 ![](/images/b76fc1f9e8dab5a1db65856b0dd09ce79a156a013573cdef5a700e823dc53547.png)
 
@@ -255,7 +255,7 @@ For performance reasons, if you make changes to pattern settings using configura
 
 ## Configuring the repository root directory for analysis
 
-By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a [Codacy configuration file](/hc/en-us/articles/115002130625-Codacy-Configuration-File). This file needs to be named **".codacy.yaml"** or **".codacy.yml"** and must be placed in the repository's root.
+By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a [Codacy configuration file](codacy-configuration-file.md). This file needs to be named **".codacy.yaml"** or **".codacy.yml"** and must be placed in the repository's root.
 
 See example below:
 

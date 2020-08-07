@@ -2,9 +2,9 @@
 
 ## How to set up coverage
 
-For the next steps, we assume you already have tests and coverage for your repository. If you don't have coverage and need help, take a look at our [article](/hc/en-us/articles/207312879-Generate-Coverage) on how to generate coverage.
+For the next steps, we assume you already have tests and coverage for your repository. If you don't have coverage and need help, take a look at our [article](generate-coverage.md) on how to generate coverage.
 
-Repositories can be configured to show code coverage reports directly in Codacy. Codacy reads the source coverage reports, converts them to a smaller JSON file and uploads them, showing all results integrated into your [repository's dashboard](/hc/en-us/articles/360003890673-Project-Dashboard-How-does-it-work-).
+Repositories can be configured to show code coverage reports directly in Codacy. Codacy reads the source coverage reports, converts them to a smaller JSON file and uploads them, showing all results integrated into your [repository's dashboard](../repositories/repository-dashboard-overview.md).
 
 ## Project API Token
 
@@ -56,5 +56,5 @@ Also, note all _coverable_ lines should be present on the "coverage" variable of
 
 ## See also
 
--   [Add Coverage to your repo](/hc/en-us/articles/207993835-Add-coverage-to-your-repo)
--   [Generate Coverage](/hc/en-us/articles/207312879-Generate-Coverage)
+-   [Add Coverage to your repo](add-coverage-to-your-repo.md)
+-   [Generate Coverage](generate-coverage.md)

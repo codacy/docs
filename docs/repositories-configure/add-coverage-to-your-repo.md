@@ -10,5 +10,5 @@ We also support partial coverage reports. See [here](https://github.com/codacy/c
 
 See also:
 
--   [Coverage](/hc/en-us/articles/207279819-Coverage)
--   [Generate Coverage](/hc/en-us/articles/207312879-Generate-Coverage)
+-   [Coverage](coverage.md)
+-   [Generate Coverage](generate-coverage.md)

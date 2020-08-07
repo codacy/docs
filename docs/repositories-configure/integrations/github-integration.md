@@ -19,7 +19,7 @@ When **Pull Request Status**, **Pull Request Comment**, or **Pull Request Summar
 
 -   **Pull Request Status** will only be added if the user that added the integration has at least write permissions for that repo.
 
-    The status shows whether your PR and coverage are up to standards or not as per the [Pull Request Quality Settings](/hc/en-us/articles/360009164573-Quality-Settings) set up for your repository. To see the coverage status, please make sure the Coverage option is enabled in the PR Quality settings.
+    The status shows whether your PR and coverage are up to standards or not as per the [Pull Request Quality Settings](../../repositories/quality-settings.md) set up for your repository. To see the coverage status, please make sure the Coverage option is enabled in the PR Quality settings.
 
     ![](/images/image.png)
 
