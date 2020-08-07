@@ -930,7 +930,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/why-can%27t-i-see-my-organization/" title="Why can't I see my organization?" class="md-nav__link">
+    <a href="../../organizations/why-cant-i-see-my-organization/" title="Why can't I see my organization?" class="md-nav__link">
       Why can't I see my organization?
     </a>
   </li>
@@ -2970,7 +2970,7 @@
 <li><a href="https://github.com/codacy/codacy-jshint">codacy-jshint</a></li>
 <li><a href="https://github.com/codacy/codacy-pmdJava">codacy-pmdJava</a>.</li>
 </ul>
-<p>This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the <a href="/hc/en-us/articles/207994725-Tool-Developer-Guide">Tool Developer Guide</a>.</p>
+<p>This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the <a href="../tool-developer-guide/">Tool Developer Guide</a>.</p>
 <h2 id="scala-engine-template">Scala Engine Template<a class="headerlink" href="#scala-engine-template" title="Permanent link">&para;</a></h2>
 <p>We use Scala to integrate our tools at Codacy. In this template, you only need to do a couple of things to integrate your tool:</p>
 <ul>
@@ -2984,7 +2984,6 @@
 <h2 id="implementing-tool-trait">Implementing Tool trait<a class="headerlink" href="#implementing-tool-trait" title="Permanent link">&para;</a></h2>
 <p>When extending the <strong>Tool</strong> trait, you have to implement the <strong>apply</strong> method.</p>
 <p>When a client runs your tool, the <strong>apply</strong> method of our template is invoked. Here you have everything you need to invoke the tool. After you have your results from the tool, put them in our <strong>Result</strong> format, and then just return them.</p>
-<p><a href="https://docs.codacy.com/docs/tool-developer-guide-using-scala">Scala</a></p>
 <div class="highlight"><pre><span></span><code><span class="k">package</span> <span class="nn">codacy.mytool</span>
 
 <span class="k">import</span> <span class="nn">scala.sys.process._</span>
@@ -3007,11 +3006,13 @@
 <li><strong>path</strong> received</li>
 <li><strong>spec:</strong> Tool configuration based on your patterns.json</li>
 </ul>
-<p>The behavior of your application method should vary depending on the optional parameters. If you receive no <strong>files</strong>, you should invoke the tool for all files from <strong>path</strong> (path is the root directory, files are searched recursively for all folders in <strong>path</strong>). If you receive no <strong>conf</strong>, you should test with the default patterns.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The behavior of your application method should vary depending on the optional parameters. If you receive no <strong>files</strong>, you should invoke the tool for all files from <strong>path</strong> (path is the root directory, files are searched recursively for all folders in <strong>path</strong>). If you receive no <strong>conf</strong>, you should test with the default patterns.</p>
 <p>When receiving <strong>conf</strong> or <strong>files</strong>, you should only run your tool for the subset of patterns in <strong>conf</strong> and files in <strong>files</strong>.</p>
+</div>
 <p>You must put each result in our <strong>Result</strong> type.</p>
-<p>The used types like <strong>PatternDef</strong> and <strong>Result</strong> are defined as case classes. These and the other types are defined in <strong>dockerApi/package.scala</strong>.</p>
-<p><a href="https://docs.codacy.com/docs/tool-developer-guide-using-scala">dockerApi/package.scala</a></p>
+<p>The used types like <strong>PatternDef</strong> and <strong>Result</strong> are defined as case classes. These and the other types are defined in <strong>dockerApi/package.scala</strong>.</p>
 <div class="highlight"><pre><span></span><code><span class="k">case</span> <span class="k">class</span> <span class="nc">PatternDef</span><span class="o">(</span><span class="n">patternId</span><span class="k">:</span> <span class="kt">PatternId</span><span class="o">,</span> <span class="n">parameters</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Set</span><span class="o">[</span><span class="kt">ParameterDef</span><span class="o">]])</span>
 
 <span class="k">case</span> <span class="k">class</span> <span class="nc">Result</span><span class="o">(</span><span class="n">filename</span><span class="k">:</span> <span class="kt">SourcePath</span><span class="o">,</span> <span class="n">message</span><span class="k">:</span> <span class="kt">ResultMessage</span><span class="o">,</span> <span class="n">patternId</span><span class="k">:</span> <span class="kt">PatternId</span><span class="o">,</span> <span class="n">line</span><span class="k">:</span> <span class="kt">ResultLine</span><span class="o">)</span>
@@ -3020,14 +3021,12 @@
 </code></pre></div>
 
 <h2 id="code-details-of-our-template">Code details of our template<a class="headerlink" href="#code-details-of-our-template" title="Permanent link">&para;</a></h2>
-<p>The entry point of our template for you is the <strong>Engine</strong> object. In the <strong>codacy.Engine</strong>, you can see the object <strong>Engine</strong> extends a DockerEngine that receives a <strong>Tool</strong>.</p>
-<p><a href="/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala">Engine.scala</a></p>
+<p>The entry point of our template for you is the <strong>Engine</strong> object. In the <strong>codacy.Engine</strong>, you can see the object <strong>Engine</strong> extends a DockerEngine that receives a <strong>Tool</strong>.</p>
 <div class="highlight"><pre><span></span><code><span class="k">object</span> <span class="nc">Engine</span> <span class="k">extends</span> <span class="nc">DockerEngine</span><span class="o">(</span><span class="nc">MyTool</span><span class="o">)</span>
 </code></pre></div>
 
-<p>Your tool must extend <strong>Tool</strong>, (as shown before, MyTemplate already extends it), and override the <strong>apply</strong> method.</p>
+<p>Your tool must extend <strong>Tool</strong>, (as shown before, MyTemplate already extends it), and override the <strong>apply</strong> method.</p>
 <p>When you want to execute a command, we recommend you generate the sequence you want to run and use the process API provided by <code>scala.sys.process._</code> to run it and pick up the result.</p>
-<p><a href="/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala">Scala</a></p>
 <div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="nn">scala.sys.process._</span>
 
 <span class="c1">//...</span>
@@ -3041,8 +3040,8 @@
 <span class="c1">//...</span>
 </code></pre></div>
 
-<p>As a final note, you may write the code to run the tool in any way you want. Simply return the results from the external tool at the end of the <strong>apply</strong> method, and our code will take care of the rest.</p>
-<p>If you have any doubts about the template please contact us.</p>
+<p>As a final note, you may write the code to run the tool in any way you want. Simply return the results from the external tool at the end of the <strong>apply</strong> method, and our code will take care of the rest.</p>
+<p>If you have any questions about the template please contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
                 
                   
                     
@@ -3050,7 +3049,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: July 8, 2020
+      Last update: August 7, 2020
     
   </small>
 </div>

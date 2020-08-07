@@ -1003,7 +1003,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/why-can%27t-i-see-my-organization/" title="Why can't I see my organization?" class="md-nav__link">
+    <a href="../../organizations/why-cant-i-see-my-organization/" title="Why can't I see my organization?" class="md-nav__link">
       Why can't I see my organization?
     </a>
   </li>
@@ -2969,7 +2969,7 @@
                 
                 
                 <h1 id="which-permissions-does-codacy-need-from-my-account">Which permissions does Codacy need from my account?<a class="headerlink" href="#which-permissions-does-codacy-need-from-my-account" title="Permanent link">&para;</a></h1>
-<p>Codacy Cloud uses <a href="https://oauth.net/">OAuth</a> to handle logins. We support the following providers:</p>
+<p>Codacy Cloud uses <a href="https://oauth.net/">OAuth</a> to handle logins. We support the following providers:</p>
 <ul>
 <li>GitHub Cloud</li>
 <li>GitLab Cloud</li>
@@ -2980,9 +2980,9 @@
 <h2 id="github-cloud">GitHub Cloud<a class="headerlink" href="#github-cloud" title="Permanent link">&para;</a></h2>
 <p>If you log in with GitHub, Codacy requires the following <a href="https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/about-scopes-for-oauth-apps/">permissions/scopes</a>:</p>
 <ul>
-<li>'user' permissions to access GitHub user info</li>
+<li>'user' permissions to access GitHub user info</li>
 <li>'public_repo' permissions to set PR status on public repositories</li>
-<li>'repo' access to access private repositories</li>
+<li>'repo' access to access private repositories</li>
 <li>'write: public_key' to add SSH keys to the repositories, so that Codacy can have access to the repository</li>
 <li>'write:repo_hook' access to add post-commit hooks</li>
 <li>'read:org': read-only access to organization membership, organization repositories, and team membership</li>
@@ -2993,12 +2993,12 @@
 <p>Repository permissions:</p>
 <ul>
 <li>Checks: Checks on code - Read &amp; Write</li>
-<li>Issues: Issues and related comments, assignees, labels, and milestones - Read &amp; Write</li>
+<li>Issues: Issues and related comments, assignees, labels, and milestones - Read &amp; Write</li>
 <li>Metadata: Search repositories, list collaborators, and access repository metadata - Read Only</li>
 <li>Pull requests: Pull requests and related comments, assignees, labels, milestones, and merges - Read &amp; Write</li>
 <li>Webhooks: Manage the post-receive hooks for a repository - Read &amp; Write</li>
 <li>Commit statuses: Commit statuses - Read &amp; Write</li>
-<li>Administration: Create SSH keys - Read &amp; Write. Codacy creates an SSH key on the repository to allow cloning and integrating with your repository.</li>
+<li>Administration: Create SSH keys - Read &amp; Write. Codacy creates an SSH key on the repository to allow cloning and integrating with your repository.</li>
 </ul>
 <p>Organization permissions:</p>
 <ul>
@@ -3009,7 +3009,7 @@
 <p>These permissions are granted on an individual user basis as part of the User authorization flow. They will be also be displayed during account installation for transparency.</p>
 <ul>
 <li>Email addresses: Manage a user's email addresses - Read Only</li>
-<li>Git SSH keys: Create SSH keys - Read &amp; Write. Codacy may need to create an SSH key in your account:<ul>
+<li>Git SSH keys: Create SSH keys - Read &amp; Write. Codacy may need to create an SSH key in your account:<ul>
 <li>If your repository uses submodules, so that Codacy can clone the repositories for each submodule, or</li>
 <li>If Codacy fails to integrate with a repository using the repository key, so that Codacy can continue to perform analysis.</li>
 </ul>
@@ -3024,7 +3024,7 @@
 <li>‘openid’ to authenticate using <a href="https://docs.gitlab.com/ee/integration/openid_connect_provider.html#shared-information">OpenID Connect</a></li>
 </ul>
 <h2 id="bitbucket-cloud">Bitbucket Cloud<a class="headerlink" href="#bitbucket-cloud" title="Permanent link">&para;</a></h2>
-<p>If you log in with Bitbucket, Codacy requires the following <a href="https://developer.atlassian.com/cloud/bitbucket/bitbucket-cloud-rest-api-scopes/">permissions/scopes</a>:</p>
+<p>If you log in with Bitbucket, Codacy requires the following <a href="https://developer.atlassian.com/cloud/bitbucket/bitbucket-cloud-rest-api-scopes/">permissions/scopes</a>:</p>
 <ul>
 <li>Read and modify your account information</li>
 <li>Read and modify your repositories' issues</li>
@@ -3042,9 +3042,9 @@
 <h2 id="revoking-access-to-integrations">Revoking access to integrations<a class="headerlink" href="#revoking-access-to-integrations" title="Permanent link">&para;</a></h2>
 <p>To revoke the access from Codacy to one or more of the OAuth providers:</p>
 <ol>
-<li>Click on your avatar on the top right-hand corner an select <strong>Your Account</strong>, tab <strong>Access Management</strong>.</li>
+<li>Click on your avatar on the top right-hand corner an select <strong>Your Account</strong>, tab <strong>Access Management</strong>.</li>
 <li>
-<p>The <strong>Access Management</strong> page lists all current integrations with Git providers or Google that you used to sign in or log in to Codacy. To revoke the access to an integration, click the button <strong>Revoke access</strong> for the intended integration.</p>
+<p>The <strong>Access Management</strong> page lists all current integrations with Git providers or Google that you used to sign in or log in to Codacy. To revoke the access to an integration, click the button <strong>Revoke access</strong> for the intended integration.</p>
 <p><img alt="" src="/images/revoke.png" /></p>
 </li>
 <li>
@@ -3057,7 +3057,7 @@
 </ul>
 </li>
 </ol>
-<p>After revoking an integration, Codacy will no longer be able to access or manipulate resources that require API calls, such as detecting new pull requests or adding comments to pull requests. However, Codacy will continue to be able to perform operations that only require using the Git protocol either via SSH or HTTPS, such as detecting new commits and calculating diffs. To unregister your repositories from Codacy and stop the analysis you must <a href="/hc/en-us/articles/207994835-How-do-I-transfer-delete-a-repository-from-my-account-">delete them from your Codacy account</a>.</p>
+<p>After revoking an integration, Codacy will no longer be able to access or manipulate resources that require API calls, such as detecting new pull requests or adding comments to pull requests. However, Codacy will continue to be able to perform operations that only require using the Git protocol either via SSH or HTTPS, such as detecting new commits and calculating diffs. To unregister your repositories from Codacy and stop the analysis you must <a href="../../faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account/">delete them from your Codacy account</a>.</p>
 <p>If you need to use an integration that you have previously revoked, log in again to Codacy with that integration so that Codacy can request the required permissions from the provider.</p>
                 
                   
@@ -3066,7 +3066,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: June 22, 2020
+      Last update: August 7, 2020
     
   </small>
 </div>
