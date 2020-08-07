@@ -2,7 +2,7 @@
 
 If you can't see or add your organization's repositories, or have any problems regarding metrics (e.g. you can't see any issues and your pull requests aren't analyzed), please check if your user account has a duplicated copy of the repository on the organization.
 
-The ideal scenario for your organization's repositories is to have a unique copy of it added to your Codacy organization, by someone with write permissions on the repository. 
+The ideal scenario for your organization's repositories is to have a unique copy of it added to your Codacy organization, by someone with write permissions on the repository.
 
 In case you have a duplicated repository on your account, please delete it and use only the one available in your organization.
 
@@ -18,5 +18,5 @@ Click "Grant" on each organization, to see their repositories on Codacy.
 
 If this didn't solve your issue, be sure to also check out the following pages:
 
--   [I renamed my repository on the Git provider](/hc/en-us/articles/360012746413)
--   [I moved my repository on the Git provider](/hc/en-us/articles/360013560819)
+-   [I renamed my repository on the Git provider](i-renamed-my-repository-on-the-git-provider.md)
+-   [I moved my repository on the Git provider](i-moved-my-repository-on-the-git-provider.md)

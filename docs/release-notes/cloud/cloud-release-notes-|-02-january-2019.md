@@ -4,11 +4,11 @@
 
 -   We have updated the following tools to newer versions:
     -   <span class="il">Eslint</span>-<span
-        class="il">plugin</span>-<span class="il">vue</span> to version
+        class="il">plugin</span>-<span class="il">vue</span> to version
         [5.0.0](https://www.npmjs.com/package/eslint-plugin-vue/v/5.0.0)
-    -   <span class="il">ESLint</span> <span
+    -   <span class="il">ESLint</span> <span
         class="il">eslint</span>-config-react-app to
-        version [3.0.5](https://www.npmjs.com/package/eslint-config-react-app/v/3.0.5-next.c662dfb0)
+        version [3.0.5](https://www.npmjs.com/package/eslint-config-react-app/v/3.0.5-next.c662dfb0)
     -   <span class="il">Eslint</span>-<span
         class="il">plugin</span>-react to version
         [7.11.1](https://www.npmjs.com/package/eslint-plugin-react/v/7.11.1)
@@ -23,7 +23,7 @@
 ## Bug fixes
 
 -   Fixed a bug where it was not possible to select certain projects in
-    the Team Dashboard 
+    the Team Dashboard
 -   Fixed a bug where an issue showed the error message repeated in the
     block of code, instead of the source code line
 -   Fixed a bug that was showing unexisting Stylelint patterns in the UI

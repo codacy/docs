@@ -40,7 +40,7 @@
     <div class="tc-content">
       <div>Adding coverage reports</div>
       <div>Set up your repositories to show code coverage reports directly on Codacy.</div>
-    </div> 
+    </div>
   </a>
   <a class="topic-card"  href="/related-tools/client-side-tools/">
     <div class="tc-icon">
@@ -49,7 +49,7 @@
     <div class="tc-content">
       <div>Client-side tools</div>
       <div>Run any linter tool locally or as part of your CI process and integrate the results with your Codacy workflow.</div>
-    </div> 
+    </div>
   </a>
   <a class="topic-card"  href="/organizations/adding-and-managing-authors/">
     <div class="tc-icon">
@@ -58,6 +58,6 @@
     <div class="tc-content">
       <div>Adding and managing Authors</div>
       <div>Allow Codacy to analyze commits from contributors who are not part of your Codacy organization.</div>
-    </div> 
+    </div>
   </a>
 </div>

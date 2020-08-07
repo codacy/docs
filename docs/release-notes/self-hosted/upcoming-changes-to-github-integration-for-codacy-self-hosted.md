@@ -8,6 +8,6 @@ Using Apps also unlocks access to new APIs, like GitHub Checks for creating bett
 
 Despite the integration with existing repositories continuing to work, the following steps will be required:
 
-1.  Codacy Admin: [Create and configure a new GitHub App](/hc/en-us/articles/360012665460)
+1.  Codacy Admin: [Create and configure a new GitHub App](../../../chart/configuration/integrations/github-app-create/)
 2.  GitHub organization Admin: Install the new App in the organization
 3.  All GitHub users: When signing in, grant access with the new App

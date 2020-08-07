@@ -6,4 +6,4 @@ You can use configuration files to enforce code standards.
 | -------- | ------------- | ---- |
 | PHP      | PSR1 and PSR2 |      |
 
-Learn more about [Setting up configuration files in your repository](/hc/en-us/articles/207994335-Code-Patterns).
+Learn more about [Setting up configuration files in your repository](code-patterns.md).

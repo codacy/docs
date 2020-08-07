@@ -20,7 +20,7 @@ When this happens, Codacy does not display code duplication metrics for the affe
 
 As a workaround, if you are exceeding the maximum number of source code files:
 
-1.  We recommend that you use a [Codacy configuration file](/hc/en-us/articles/115002130625-Codacy-Configuration-File) to exclude source code files of the affected language from your project to decrease the number of files to be analyzed.
+1.  We recommend that you use a [Codacy configuration file](../../repositories-configure/codacy-configuration-file.md) to exclude source code files of the affected language from your project to decrease the number of files to be analyzed.
 
     For example, you may be able to exclude files that are automatically generated from your test suite or files belonging to dependencies that are not maintained by your team, such as the `node_modules` folder for JavaScript projects.
 
@@ -32,6 +32,6 @@ If the analysis finishes but the code duplication metric was not calculated, fol
 
     ![](/images/image3.png)
 
--   **If you are [analyzing your repository locally](/hc/en-us/articles/360008254833-Run-local-analysis)** with `codacy-analysis-cli`, consider using the flag `--tool-timeout` to specify a larger timeout for the execution of the tool.
+-   **If you are [analyzing your repository locally](../../related-tools/run-local-analysis.md)** with `codacy-analysis-cli`, consider using the flag `--tool-timeout` to specify a larger timeout for the execution of the tool.
 
 -   **If you are using Codacy Cloud** or if the steps above did not solve the issue, contact <support@codacy.com>.

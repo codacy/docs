@@ -1,6 +1,6 @@
 # Run SpotBugs
 
-[SpotBugs](https://spotbugs.github.io/) is available for Codacy Cloud and Codacy Self-hosted, with the following plugins:
+[SpotBugs](https://spotbugs.github.io/) is available for Codacy Cloud and Codacy Self-hosted, with the following plugins:
 
 -   [Find Security Bugs](https://find-sec-bugs.github.io/)
 -   [FBContrib](https://github.com/mebigfatguy/fb-contrib)
@@ -9,7 +9,7 @@ To run this tool:
 
 1.  Enable the setting **Run analysis through build server** under your repository **Settings** > **General** > **Repository analysis**
 2.  Compile your Java or Scala repository on your build server, as you would normally do
-3.  Invoke [`codacy-analysis-cli`](/hc/en-us/articles/360008254833-Run-local-analysis) on the root of the repository specifying the tool SpotBugs
+3.  Invoke [`codacy-analysis-cli`](run-local-analysis.md) on the root of the repository specifying the tool SpotBugs
 
 ```bash
 codacy-analysis-cli analyse --tool spotbugs \
@@ -21,13 +21,13 @@ codacy-analysis-cli analyse --tool spotbugs \
                             --verbose
 ```
 
-The Codacy CLI will then run SpotBugs on the compiled classes of your repository and upload these results to Codacy to be used in your workflow.
+The Codacy CLI will then run SpotBugs on the compiled classes of your repository and upload these results to Codacy to be used in your workflow.
 
 ## Detecting sources and compiled classes
 
-Codacy tries to find the classes and map results to the files automatically. If you use Maven, Gradle and SBT then the default layouts are detected automatically as well.
+Codacy tries to find the classes and map results to the files automatically. If you use Maven, Gradle and SBT then the default layouts are detected automatically as well.
 
-You have the option to configure these paths manually if there is an issue with detection. To do so, add [Codacy configuration file](/hc/en-us/articles/115002130625-Codacy-Configuration-File) to the repository root - **.codacy.yml**:
+You have the option to configure these paths manually if there is an issue with detection. To do so, add [Codacy configuration file](../repositories-configure/codacy-configuration-file.md) to the repository root - **.codacy.yml**:
 
 ```yml
 ---

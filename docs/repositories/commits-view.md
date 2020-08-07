@@ -2,13 +2,13 @@
 
 ## 1. Commit list
 
-This list is meant to give you an overview of the repository's commits, providing valuable information about changes and quality improvements. Click on the row to see more details.
+This list is meant to give you an overview of the repository's commits, providing valuable information about changes and quality improvements. Click on the row to see more details.
 
 ![](/images/blobid0.png)
 
 Visualization of the commits defaults to the main branch of the repository. This can be changed by selecting another branch on the combo box.
 
-When viewing the commits list, some commits may still not have been analysed, either because the analysis is still running or belongs to a branch that has not been selected for analysis. These can be easily identified by the status column. Just hover the icon to get some extra info.
+When viewing the commits list, some commits may still not have been analysed, either because the analysis is still running or belongs to a branch that has not been selected for analysis. These can be easily identified by the status column. Just hover the icon to get some extra info.
 
 ![](/images/blobid1.png)
 
@@ -16,7 +16,7 @@ If any commit created or fixed any issue on the repository, that information wil
 
 ## 2. Commit detail
 
-The commit detail will show you an overview of what changed in that particular commit, showing all the differences that were introduced.
+The commit detail will show you an overview of what changed in that particular commit, showing all the differences that were introduced.
 
 ![](/images/blobid2.png)
 

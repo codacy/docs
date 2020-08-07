@@ -2,7 +2,7 @@
 
 If your repository has source files with unrecognized extensions, you can force Codacy to include them in the next analysis:
 
-1.  Go to your repository's **Settings**, **File Extensions**.
+1.  Go to your repository's **Settings**, **File Extensions**.
 
     ![Configuring file extensions](images/file-extensions.png)
 

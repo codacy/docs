@@ -20,4 +20,4 @@
     modules</span>](https://github.com/codacy/codacy-eslint/blob/master/build.sbt#L48)<span
     style="font-weight: 400;"> in your ESLint configuration files</span>
 
-###  
+### 

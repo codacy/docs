@@ -3,7 +3,7 @@
 When you use Bitbucket Server to sign up or log into Codacy, the Bitbucket projects that you belong to will be available to be added as Organizations on Codacy. After adding a project:
 
 -   Codacy displays the list of all repositories that you own in that project so that you can add them to Codacy as repositories to be analyzed
--   The members of the project will be able to [join or request to join Codacy](/hc/en-us/articles/360010263720#settings-to-add-people)
+-   The members of the project will be able to [join or request to join Codacy](../../organizations/what-are-synced-organizations.md#managing-people-in-an-organization)
 
 ## Limitations
 

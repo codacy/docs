@@ -1,6 +1,6 @@
 # Special thanks
 
-We would like to thank everyone who greatly helped us. The names on these lists contributed immensely to what Codacy is today.
+We would like to thank everyone who greatly helped us. The names on these lists contributed immensely to what Codacy is today.
 
 ## Open source tools
 
@@ -61,7 +61,7 @@ In addition to in-house built rules, we use open source tools for many of our st
 
 ## Language support contributions
 
-These are the tools integrated on our website by our own users! Without them, we wouldn't have support for those languages.
+These are the tools integrated on our website by our own users! Without them, we wouldn't have support for those languages.
 
 <table>
 <colgroup>
@@ -109,11 +109,11 @@ These are the tools integrated on our website by our own users! Without them, w
 </tbody>
 </table>
 
-Do you love a language we don't support? Do you want your name and that language on this list? Check [How to add support for a language guide](/hc/en-us/articles/207994725-Tool-Developer-Guide).
+Do you love a language we don't support? Do you want your name and that language on this list? See [how to add support for a language](related-tools/tool-developer-guide.md).
 
 ## Collaborators
 
-For all the people who helped us so much, we want to give a big shout out and thanks!
+For all the people who helped us so much, we want to give a big shout out and thanks!
 
 <table>
 <colgroup>

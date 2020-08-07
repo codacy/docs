@@ -4,7 +4,7 @@
 
 -   <span
     style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">**Improved
-    Security Dashboard** - <span
+    Security Dashboard** - <span
     sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;We have improved our Security Dashboard to ensure that all security issues are displayed and so it now ensures that the status displayed on the Dashboard is correct. We have also ensured that ally a issues that have category \&quot;Security\&quot; but don't have a specified sub-category are displayed under \&quot;Others\&quot;. &quot;}"
     sheets-userformat="{&quot;2&quot;:513,&quot;3&quot;:{&quot;1&quot;:0},&quot;12&quot;:0}">We
     have improved our Security Dashboard to ensure that all security
@@ -22,7 +22,7 @@
         1.5](https://github.com/CodeNarc/CodeNarc/releases/tag/v1.5)
 -   **<span
     style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">Updated
-    tools:</span>**  
+    tools:</span>** 
     -   <span
         style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;">Updated
         [ESLint to
@@ -54,7 +54,7 @@
         8.0](https://github.com/SonarSource/sonar-dotnet/releases/tag/8.0.0.9566)
     -   Updated [Cppcheck to
         1.90](https://sourceforge.net/p/cppcheck/news/2019/12/cppcheck-190/)
--   **Lines of code** - Improved precision of calculation of lines of
+-   **Lines of code** - Improved precision of calculation of lines of
     code for some languages
 
 ## Other news
@@ -62,12 +62,12 @@
 -   **Public Roadmap** - To give more visibility to what are we working
     on and the upcoming planned items we have now our [Roadmap
     public](https://roadmap.codacy.com/)! Feel free to check it and to
-    give us feedback. 
+    give us feedback.
 -   **Barracuda case study** - We have a new published case study, this
     time with Barracuda on [How Codacy lightened the load of Barracuda
     Networks' Product team](https://www.codacy.com/case/barracuda)
 -   **Terms update** - In order to ensure that we have our Contracts
-    matching our terms we have performed an update to our Terms where we
+    matching our terms we have performed an update to our Terms where we
     specify the cancellation notice period to be 30 days.
 
 ## Bug Fixes

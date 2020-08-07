@@ -1,7 +1,7 @@
 # Enterprise v2.0.372
 
 <span style="font-weight: 400;">Includes **critical fix**</span><span
-style="font-weight: 400;">** for Auto-comments not working** for all
+style="font-weight: 400;">** for Auto-comments not working** for all
 repositories and providers.</span>
 
 ## Product Enhancements

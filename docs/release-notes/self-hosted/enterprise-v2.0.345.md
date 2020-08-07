@@ -28,7 +28,7 @@ the list of enhancements and bug fixes available with this update.
 ## Tool Updates
 
 -   Updated plugin <span
-    class="wysiwyg-color-blue90 wysiwyg-underline">[WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)</span> for
+    class="wysiwyg-color-blue90 wysiwyg-underline">[WordPress-Coding-Standards](https://github.com/WordPress-Coding-Standards/WordPress-Coding-Standards)</span> for
     PHP CodeSniffer.
 -   Updated Rubocop to <span
     class="wysiwyg-color-blue90 wysiwyg-underline">[v0.59.2](https://github.com/rubocop-hq/rubocop/blob/master/relnotes/v0.59.2.md)</span>.

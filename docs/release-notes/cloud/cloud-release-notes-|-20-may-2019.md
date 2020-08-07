@@ -6,8 +6,8 @@
     to provide faster analysis, Codacy will no longer check for new
     updates in projects that don’t have </span>[<span
     style="font-weight:400">post-commit
-    hooks</span>](/hc/en-us/articles/214085885-Post-Commit-Hooks)<span
-    style="font-weight:400"> enabled.</span> 
+    hooks</span>](../../repositories/post-commit-hooks.md)<span
+    style="font-weight:400"> enabled.</span>
 
 **Bug fixes**
 
