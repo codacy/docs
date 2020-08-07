@@ -4,7 +4,8 @@
 
 By creating a docker and writing code to handle the tool invocation and output, you can integrate the tool of your choice on Codacy!
 
-To know more about dockers, and how to write a docker file please refer to [https://docs.docker.com/reference/builder/](https://docs.docker.com/engine/reference/builder/)
+!!! note
+    To know more about dockers, and how to write a docker file please refer to [https://docs.docker.com/reference/builder/](https://docs.docker.com/engine/reference/builder/)
 
 We use external tools at Codacy; in this tutorial, we explain how you can integrate the tool of your choice with our platform.
 
@@ -17,9 +18,9 @@ We also have a [tutorial to integrate your tool using our Scala templates](tool-
 -   Docker definition with the tool you want to integrate
 -   Define the documentation for the patterns provided by the tool
 
-## Assumptions and Behaviour
+## Assumptions and behavior
 
--   To run the tool we provide the configuration file, **/src/.codacy.json**, with the files you should analyse and also the patterns you should check.
+-   To run the tool we provide the configuration file, **/src/.codacy.json**, with the files you should analyze and also the patterns you should check.
 -   The files to analyse are located in **/src**, meaning that when provided in the configuration, the paths are relative to **/src**.
 
 **.codacy.json**
@@ -32,8 +33,6 @@ We also have a [tutorial to integrate your tool using our Scala templates](tool-
         -   **parameters:** Parameters of the pattern
             -   **name:** Unique identifier of the parameter
             -   **value:** Value to be used as parameter value
-
-[.codacy.json](https://docs.codacy.com/docs/tool-developer-guide)
 
 ```json
 {
@@ -57,9 +56,10 @@ We also have a [tutorial to integrate your tool using our Scala templates](tool-
 }
 ```
 
-If **/src/.codacy.json** does not exist or any of its contents (files or patterns) is not available, you should invoke the tool for all files from **/src** (files should be searched recursively for all folders in **/src**) and check them with the default patterns.
+!!! important
+    If **/src/.codacy.json** does not exist or any of its contents (files or patterns) is not available, you should invoke the tool for all files from **/src** (files should be searched recursively for all folders in **/src**) and check them with the default patterns.
 
--   When receiving **/src/.codacy.json**, you should only run your tool for the subset of files in **files**, and for the patterns present on **patterns** for your tool **name**.
+    -   When receiving **/src/.codacy.json**, you should only run your tool for the subset of files in **files**, and for the patterns present on **patterns** for your tool **name**.
 
 ## Setup
 
@@ -89,8 +89,6 @@ If **/src/.codacy.json** does not exist or any of its contents (files or pattern
                   letters without spaces)
             -   **default:** Default value of the parameter
 
-    [patterns.json](https://docs.codacy.com/docs/tool-developer-guide)
-
     ```json
         {
           "name":"jshint",
@@ -110,17 +108,28 @@ If **/src/.codacy.json** does not exist or any of its contents (files or pattern
         }
     ```
 
+    !!! note
+        For **level** types we have:
+
+        -   **Error**, **Warning**, **Info**
+
+        For **category** types we have:
+
+        -   **ErrorProne**, **CodeStyle**, **UnusedCode**, **Security**, **Compatibility**, **Performance**, **Documentation**
+
 3.  Write the code to run the tool.
 
     You are free to write this code in the language you want. Here you have to invoke the tool according to the configuration.
 
     After you have your results from the tool, you should print them to the standard output in our **Result** format, one result per line.
 
-    The filename should not include the prefix "/src/"
+    !!! important
+        The filename should not include the prefix "/src/"
 
-    !!! example
-        absolute path: /src/folder/file.js
-        filename path: folder/file.js
+        Example:
+
+        -   absolute path: `/src/folder/file.js`
+        -   filename path: `folder/file.js`
 
     ```json
         {
@@ -132,8 +141,6 @@ If **/src/.codacy.json** does not exist or any of its contents (files or pattern
     ```
 
     If you are not able to run the analysis for any of the files requested you should return an error for each one of them to the standard output in our **Error** format.
-
-    Error
 
     ```json
         {
@@ -157,8 +164,6 @@ In order to provide more details you can create:
 
 In the `description.json` you define the title for the pattern, brief description, time to fix (in minutes), and also a description of the parameters in the following format:
 
-[description.json](https://docs.codacy.com/docs/tool-developer-guide)
-
 ```json
 [
   {
@@ -177,8 +182,6 @@ In the `description.json` you define the title for the pattern, brief descriptio
 ```
 
 Optional: To give a more detailed explanation about the issue, you should define the `<PATTERN-ID>.md`.
-
-UnusedModifier.md
 
 ```markdown
     Fields in interfaces are automatically public static final, and methods are public abstract.
@@ -232,8 +235,6 @@ Instead of commenting in the line before the error, you can alternatively specif
 
 -   `<LANGUAGE_COMMENT>#Issue: {"severity": "<ERROR_LEVEL>", "line": <LINE_NUMBER_WITH_ISSUE>, "patternId": "PATTERN_ID"}`
 
-
-UnusedModifier.php
 ```php
 //#Patterns: UnusedModifier
 public interface Foo {
@@ -288,4 +289,4 @@ docker run -t \
 -   To submit the docker you should send an email to support@codacy.com with the link to the git repository with your docker definition.
 -   The docker will then be subjected to a review by our team and we will then contact you with more details.
 
-If you have any question or suggestion regarding this guide please contact us.
+If you have any question or suggestion regarding this guide please contact us at <support@codacy.com>.
