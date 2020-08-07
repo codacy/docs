@@ -83,7 +83,7 @@ cause the update to take longer than usual.</span>
         sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Fixed issued that prevent Add project view from loading when user has substancial amount of repositories&quot;}"
         sheets-userformat="{&quot;2&quot;:513,&quot;3&quot;:[null,0],&quot;12&quot;:0}">[RemarkLint](https://github.com/codacy/codacy-remark-lint) for
         Markdown. Configuration filenames can be found
-        [here](/hc/en-us/articles/207994335-Code-Patterns#5-existing-tools).</span></span>
+        [here](../../repositories-configure/code-patterns.md#i-have-my-own-tool-configuration-file).</span></span>
 
 **Bug fixes:**
 

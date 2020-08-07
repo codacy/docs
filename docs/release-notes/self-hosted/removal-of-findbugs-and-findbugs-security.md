@@ -8,4 +8,4 @@ We've been working on an alternative: **Spotbugs** support. SpotBugs is the succ
 
 Spotbugs on Codacy now supports both Java and Scala. And you can now run Spotbugs regardless of the build tool you are using.
 
-Read more about [enabling support for Spotbugs](/hc/en-us/articles/360023916013) or find out [why you should be using Spotbugs for your security compliance](https://blog.codacy.com/further-enterprise-security-analysis-for-scala/).
+Read more about [enabling support for Spotbugs](../../related-tools/run-spotbugs.md) or find out [why you should be using Spotbugs for your security compliance](https://blog.codacy.com/further-enterprise-security-analysis-for-scala/).

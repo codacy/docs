@@ -9,21 +9,21 @@ assist you with the migration.
 
 -   Improvements to Admin view: We have revamped our admin view to make
     it easier for admins to manage teams and Codacy settings. Not only
-    does this make for better visualisation but also provides
+    does this make for better visualization but also provides
     information previously not available like no. of licenses.
 -   Quality Status and Coverage Status is now split: Quality results
     such as complexity, issues and duplication will now be available as
-    soon as a Pull Request is analysed instead of having to wait till
+    soon as a Pull Request is analyzed instead of having to wait till
     coverage was available.
 -   New Dashboards: We have improved our existing [Project
-    dashboard](/hc/en-us/articles/360003890673-Project-Dashboard-How-does-it-work-),
+    dashboard](../../repositories/repository-dashboard-overview.md),
     and launched two new ones:
-    [Organization](/hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-)
-    and [Personal
-    dashboard](/hc/en-us/articles/360003863434-Personal-Dashboard-How-does-it-work-).
+    [Organization](../../organizations/organization-dashboard-overview.md)
+    and Personal
+    dashboard.
 -   We now support configuration files in Submodules for GitHub,
     Bitbucket (not Stash/Bitbucket Server) and GitLab. Check our
-    [documentation](/hc/en-us/articles/360005239394)
+    [documentation](../../repositories-configure/using-submodules.md)
     for more information on this.
 -   You can now update build status for commits in BitBucket.
 -   We now support partial coverage reports so you can now submit
@@ -33,7 +33,7 @@ assist you with the migration.
     is an article with steps on how to upload partial coverage to
     Codacy.
 -   We now display errors concerning [Codacy configuration
-    file](/hc/en-us/articles/115002130625-Codacy-Configuration-File)
+    file](../../repositories-configure/codacy-configuration-file.md)
     in the UI.
 -   We have updated the following tools to newer versions:
     -   Scalastyle version 1.0.0

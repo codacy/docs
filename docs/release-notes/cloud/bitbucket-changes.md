@@ -21,7 +21,7 @@ Previously, we were using OAuth 1, which forced us to request all permissions. T
 
 The original user who set up your Bitbucket integration will need to log in to Codacy to confirm the new permissions. **Otherwise, Codacy will no longer be able to detect new Pull Requests, and existing repositories will stop receiving Pull Request status and comments on Bitbucket.**
 
-If the original user who set up your Bitbucket integration is not available, someone who has Admin permissions in both Codacy and Bitbucket to [re-do the integration](/hc/en-us/articles/207280239-Bitbucket-Integration) in Codacy.
+If the original user who set up your Bitbucket integration is not available, someone who has Admin permissions in both Codacy and Bitbucket to [re-do the integration](../../repositories-configure/integrations/bitbucket-cloud-integration.md) in Codacy.
 
 You can login with Bitbucket through <https://www.codacy.com/login-with/bitbucket>.
 

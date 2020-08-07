@@ -18,7 +18,7 @@
 -   Keeping in line with the Git providers, Codacy will now ignore
     branches with names longer than 254 characters
 -   <span style="font-weight: 400;">Added [new list
-    view](/hc/en-us/articles/360009340553-Creating-and-managing-teams)
+    view](../../organizations/manual-organizations/creating-and-managing-teams.md)
     of team members under organizations called "People". </span>
 
 ## <span style="font-weight: 400;">Bug fixes</span>

@@ -9,7 +9,7 @@ list of enhancements and bug fixes available with this update.</span>
 <span style="font-weight: 400;">Improvements</span>
 
 -   <span style="font-weight: 400;">We now Support [Git
-    submodules](/hc/en-us/articles/360005239394-Submodules-How-to-enable-them)
+    submodules](../../repositories-configure/using-submodules.md)
     for Bitbucket Stash: These allow you to keep a git repository as a
     subdirectory within another git repository. They are helpful in
     maintaining a shared configuration file for your team, which can
