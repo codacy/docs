@@ -2,9 +2,9 @@
 
 Organization permissions allow fine-grained control over your organization's members and repositories.
 
-All organizations have an Administrators team. Each member of this team is an administrator of the entire organization, and all repositories in the organization are automatically added to this team.
+All organizations have an Administrators team. Each member of this team is an administrator of the entire organization, and all repositories in the organization are automatically added to this team.
 
-Any member of the Administrators team has full read/write permissions. You can view the actions available per permission level here:
+Any member of the Administrators team has full read/write permissions. You can view the actions available per permission level here:
 
 <table>
 <tbody>
@@ -30,7 +30,7 @@ Any member of the Administrators team has full read/write permissions. You can 
 </tbody>
 </table>
 
-For users that don't have Admin permissions, they will need to be added to a [team](/hc/en-us/articles/360009340553). When adding users to a team, the Administrator can decide the level of permissions each team member should have for the repositories within that team. 
+For users that don't have Admin permissions, they will need to be added to a [team](/hc/en-us/articles/360009340553). When adding users to a team, the Administrator can decide the level of permissions each team member should have for the repositories within that team.
 
 <table>
 <tbody>
@@ -47,7 +47,7 @@ For users that don't have Admin permissions, they will need to be added to a [t
 </tr>
 <tr>
 <td><strong>Write</strong></td>
-<td> Same as Read permissions plus: 
+<td> Same as Read permissions plus:
 <ul>
 <li>Add repositories to specific teams</li>
 <li>Add/Remove integrations of team repositories</li>

@@ -1,6 +1,6 @@
 # Does Codacy automatically analyze all pull requests?
 
-We analyze pull requests automatically as long as the target branch is enabled.
+We analyze pull requests automatically as long as the target branch is enabled.
 
 Learn more about [managing branches](../../repositories/managing-branches.md).
 

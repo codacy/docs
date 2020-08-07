@@ -10,7 +10,7 @@ You can also fork the code of one of our tools, and modify it; here are some exa
 -   [codacy-jshint](https://github.com/codacy/codacy-jshint)
 -   [codacy-pmdJava](https://github.com/codacy/codacy-pmdJava).
 
-This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the [Tool Developer Guide](/hc/en-us/articles/207994725-Tool-Developer-Guide).
+This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the [Tool Developer Guide](/hc/en-us/articles/207994725-Tool-Developer-Guide).
 
 ## Scala Engine Template
 
@@ -57,13 +57,13 @@ object MyTool extends Tool{
 -   **path** received
 -   **spec:** Tool configuration based on your patterns.json
 
-The behavior of your application method should vary depending on the optional parameters. If you receive no **files**, you should invoke the tool for all files from **path** (path is the root directory, files are searched recursively for all folders in **path**). If you receive no **conf**, you should test with the default patterns.
+The behavior of your application method should vary depending on the optional parameters. If you receive no **files**, you should invoke the tool for all files from **path** (path is the root directory, files are searched recursively for all folders in **path**). If you receive no **conf**, you should test with the default patterns.
 
 When receiving **conf** or **files**, you should only run your tool for the subset of patterns in **conf** and files in **files**.
 
 You must put each result in our **Result** type.
 
-The used types like **PatternDef** and **Result** are defined as case classes. These and the other types are defined in **dockerApi/package.scala**.
+The used types like **PatternDef** and **Result** are defined as case classes. These and the other types are defined in **dockerApi/package.scala**.
 
 [dockerApi/package.scala](https://docs.codacy.com/docs/tool-developer-guide-using-scala)
 
@@ -77,7 +77,7 @@ case class Result(filename: SourcePath, message: ResultMessage, patternId: Patte
 
 ## Code details of our template
 
-The entry point of our template for you is the **Engine** object. In the **codacy.Engine**, you can see the object **Engine** extends a DockerEngine that receives a **Tool**.
+The entry point of our template for you is the **Engine** object. In the **codacy.Engine**, you can see the object **Engine** extends a DockerEngine that receives a **Tool**.
 
 [Engine.scala](/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala)
 
@@ -85,7 +85,7 @@ The entry point of our template for you is the **Engine** object. In the **coda
 object Engine extends DockerEngine(MyTool)
 ```
 
-Your tool must extend **Tool**, (as shown before, MyTemplate already extends it), and override the **apply** method.
+Your tool must extend **Tool**, (as shown before, MyTemplate already extends it), and override the **apply** method.
 
 When you want to execute a command, we recommend you generate the sequence you want to run and use the process API provided by `scala.sys.process._` to run it and pick up the result.
 
@@ -105,6 +105,6 @@ val cmdResponse = cmd.!
 //...
 ```
 
-As a final note, you may write the code to run the tool in any way you want. Simply return the results from the external tool at the end of the **apply** method, and our code will take care of the rest.
+As a final note, you may write the code to run the tool in any way you want. Simply return the results from the external tool at the end of the **apply** method, and our code will take care of the rest.
 
 If you have any doubts about the template please contact us.

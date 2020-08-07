@@ -4,7 +4,7 @@ Your **Organization Dashboard** offers an overview of repositories that belong t
 
 ## Overall
 
-On the Organization Dashboard, you have 5 sections that will help you monitor your team's repositories: **1 Overall Quality Chart**, **2 Hotspots**, **3 Open Pull Requests**, **4 Logs** and **5 Last updated repositories**.
+On the Organization Dashboard, you have 5 sections that will help you monitor your team's repositories: **1 Overall Quality Chart**, **2 Hotspots**, **3 Open Pull Requests**, **4 Logs** and **5 Last updated repositories**.
 
 ![](/images/Screen_Shot_2018-05-03_at_22.26.25.png)
 
@@ -16,11 +16,11 @@ You can also select which team(s) you would like to view in the Organization Das
 
 ![](/images/Screen_Shot_2018-05-03_at_21.00.33.png)
 
-You cannot select a team that does not have any repositories to view in the Organization Dashboard.  
+You cannot select a team that does not have any repositories to view in the Organization Dashboard. 
 
 ## What functionalities are available?
 
-### 1. Overall Quality Chart 
+### 1. Overall Quality Chart
 
 The Overall Quality Chart displays your repositories and compares them against the average grade, your defined goal, and across each specific criteria: Issues, Complex Files, Duplication, and Coverage.
 
@@ -33,7 +33,7 @@ The Overall Quality Chart displays your repositories and compares them against t
 
 ![](/images/Screen_Shot_2018-05-03_at_21.07.51.png)
 
-**Other Criteria** 
+**Other Criteria**
 
 -   For each specific criteria (Issues, Complex Files, Duplication, and Coverage), you can click on its tab to compare repositories.
 -   This comparison will display your repositories' current statuses against the average and against your goal for this criteria.
@@ -68,7 +68,7 @@ Under this section you can see two tabs: **Most problematic** pull requests (PR)
 
 **Most problematic**
 
-Here you can see a short list of the most problematic open pull requests in all repositories of the team(s) selected. These pull requests are defined as those not up to your defined standards that have the most potential to negatively affect your code quality.
+Here you can see a short list of the most problematic open pull requests in all repositories of the team(s) selected. These pull requests are defined as those not up to your defined standards that have the most potential to negatively affect your code quality.
 
 You can click directly on each pull request to see more details.
 
@@ -82,14 +82,14 @@ This tab displays a short list of all open pull requests sorted by the date of u
 
 ### 4. Logs
 
-Logs display a list of all relevant activity in your organization. You can read more about them [here](/hc/en-us/articles/360003890693-Logs-How-do-they-work-).
+Logs display a list of all relevant activity in your organization. You can read more about them [here](/hc/en-us/articles/360003890693-Logs-How-do-they-work-).
 
 ### 5. Last updated repositories
 
-This section displays a maximum of 6 repositories by date of last update. Each repository card will display the date of the last update, the current grade, and the status for each criteria. 
+This section displays a maximum of 6 repositories by date of last update. Each repository card will display the date of the last update, the current grade, and the status for each criteria.
 
-You can also See all repositories or Add a repository here. 
+You can also See all repositories or Add a repository here.
 
 ![](/images/Screen_Shot_2018-05-03_at_22.10.29.png)
 
-We would love your feedback on what you think about the Organization Dashboard and how you think it could be improved. Please feel free to reach out!
+We would love your feedback on what you think about the Organization Dashboard and how you think it could be improved. Please feel free to reach out!

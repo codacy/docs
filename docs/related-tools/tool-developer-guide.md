@@ -4,9 +4,9 @@
 
 By creating a docker and writing code to handle the tool invocation and output, you can integrate the tool of your choice on Codacy!
 
-To know more about dockers, and how to write a docker file please refer to [https://docs.docker.com/reference/builder/](https://docs.docker.com/engine/reference/builder/)
+To know more about dockers, and how to write a docker file please refer to [https://docs.docker.com/reference/builder/](https://docs.docker.com/engine/reference/builder/)
 
-We use external tools at Codacy; in this tutorial, we explain how you can integrate the tool of your choice with our platform.
+We use external tools at Codacy; in this tutorial, we explain how you can integrate the tool of your choice with our platform.
 
 You can check the code of an already implemented tool and, if you wish, fork it to start yours. You are free to modify it and use it for your integration.
 
@@ -65,7 +65,7 @@ If **/src/.codacy.json** does not exist or any of its contents (files or pattern
 
 1.  Write the docker file that will run the tool.
 
-    It must have a binary entry point without any parameters. 
+    It must have a binary entry point without any parameters.
 
 2.  Write a _patterns.json_ with the configuration of your tool.
 
@@ -144,7 +144,7 @@ If **/src/.codacy.json** does not exist or any of its contents (files or pattern
 
 ## Documentation
 
-At Codacy we strive to provide the best value to our users and, to accomplish that, we document our patterns so that the user can better understand the problem and fix it.
+At Codacy we strive to provide the best value to our users and, to accomplish that, we document our patterns so that the user can better understand the problem and fix it.
 
 At this point, your tool has everything it needs to run, but there is one other really important thing that you should do before submitting your docker: the documentation for your tool.
 
@@ -203,9 +203,9 @@ UnusedModifier.md
 
     [Source](http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier)
 
-You should explain the *what* and *why* of the issue. Adding an example
+You should explain the *what* and *why* of the issue. Adding an example
 is always a nice way to help other people understand the problem. For a
-more thorough explanation you can also add a link at the end referring a
+more thorough explanation you can also add a link at the end referring a
 more complete source.
 ```
 

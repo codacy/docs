@@ -23,12 +23,12 @@ If you renamed the repository or moved it to a different account on the Git prov
 If the user that initially configured the repository on Codacy was using a user account key but no longer has access to the repository on the Git provider:
 
 1.  On Codacy, open your **Repository Settings**, tab **General**.
-2.  Click the button **Generate New Repository Key** (recommended) or **Generate New User Key**:
+2.  Click the button **Generate New Repository Key** (recommended) or **Generate New User Key**:
 
-    **Generate New Repository Key** is the recommended option. It will add a new SSH key to your repository deployment keys. However, this is only possible if the user configuring the integration with the remote Git provider has permissions to add keys to the repository. Otherwise, this operation will fail. Alternatively, you can also do this process manually by copying the SSH key.
+    **Generate New Repository Key** is the recommended option. It will add a new SSH key to your repository deployment keys. However, this is only possible if the user configuring the integration with the remote Git provider has permissions to add keys to the repository. Otherwise, this operation will fail. Alternatively, you can also do this process manually by copying the SSH key.
 
     **Generate New User Key** should only be used if [your repository is using submodules on Codacy](../../repositories-configure/using-submodules.md). When you are using submodules, Codacy needs to clone additional repositories it has no access to. Since there is no way of identifying the submodules of a repository before cloning the repository, Codacy adds the SSH keys to the user account so that it has access to the same repositories as the user.
-    
+   
     !!! important
         **If you're using Bitbucket Cloud**, you must manually add the SSH key on your [user account](https://bitbucket.org/account/settings/ssh-keys/).
 

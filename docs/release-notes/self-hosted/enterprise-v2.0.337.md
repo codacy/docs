@@ -13,7 +13,7 @@ fixes now available:</span>
 -   <span style="font-weight:400">We now support Elixir language using
     </span>[<span
     style="font-weight:400">Credo</span>](https://github.com/codacy/codacy-credo)<span
-    style="font-weight:400"> tool</span> 
+    style="font-weight:400"> tool</span>
 
 **Bugs**
 

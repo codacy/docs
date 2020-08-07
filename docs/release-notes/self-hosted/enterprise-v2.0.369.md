@@ -4,12 +4,12 @@
 
 -   <span style="font-weight: 400;">Added [new list
     view](/hc/en-us/articles/360009340553-Creating-and-managing-teams)
-    of team members under organizations called "People". </span>
+    of team members under organizations called "People". </span>
 -   <span style="font-weight: 400;">Updated ESLint to
     [v5.16.0](https://eslint.org/blog/2019/03/eslint-v5.16.0-released)</span>
 -   <span style="font-weight: 400;">Updated BundlerAudit to
     [v0.6.1](https://github.com/rubysec/bundler-audit/releases/tag/v0.6.1)</span>
--   <span style="font-weight: 400;">Updated Rubocop to [<span
+-   <span style="font-weight: 400;">Updated Rubocop to [<span
     sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;v0.71.0&quot;}"
     sheets-userformat="{&quot;2&quot;:33555009,&quot;3&quot;:{&quot;1&quot;:1},&quot;9&quot;:2,&quot;12&quot;:0,&quot;28&quot;:1}">v0.71.0</span>](https://github.com/rubocop-hq/rubocop/releases/tag/v0.71.0)</span>
 -   Keeping in line with the Git providers, Codacy will now ignore

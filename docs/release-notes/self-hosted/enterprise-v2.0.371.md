@@ -1,6 +1,6 @@
 # Enterprise v2.0.371
 
-## <span style="font-weight:400">Announcement: </span>
+## <span style="font-weight:400">Announcement: </span>
 
 <span style="font-weight:400">We now have a team dedicated to language
 and tools improvement so we can get updates out to you faster and more
@@ -23,7 +23,7 @@ avoid issues with analysis</span>
 Non-admins will no longer be able to add projects to Codacy to avoid
 setting up integrations that don’t work.</span>
 
-<span style="font-weight:400">Codacy’s Coverage Reporter now supports 
+<span style="font-weight:400">Codacy’s Coverage Reporter now supports
 </span>[<span
 style="font-weight:400">scrutinizer-ci</span>](https://scrutinizer-ci.com/docs/)<span
 style="font-weight:400"> and </span>[<span
@@ -39,7 +39,7 @@ style="font-weight:400">semaphoreci</span>](https://docs.semaphoreci.com/)
     default</span>
 
 <span style="font-weight:400">Updated tools:</span><span
-style="font-weight:400">  
+style="font-weight:400"> 
 
 </span>
 

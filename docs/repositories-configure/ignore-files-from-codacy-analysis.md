@@ -2,7 +2,7 @@
 
 In some situations, you may want to exclude files from Codacy's analyses.
 
-You can exclude files from your repository analysis by opening your repository **Settings**, tab **Ignored Files**, and selecting the files you want to ignore. This view only shows the files on your main branch. 
+You can exclude files from your repository analysis by opening your repository **Settings**, tab **Ignored Files**, and selecting the files you want to ignore. This view only shows the files on your main branch.
 
 ![](/images/mceclip0.png)
 

@@ -46,7 +46,7 @@ plugins:</span>
 -   <span style="font-weight: 400;">Fixed patterns that were causing
     false positives for ScalaMeta Pro</span>
 -   <span style="font-weight: 400;">Fixed broken links in patterns
-    descriptions </span>
+    descriptions </span>
 -   <span style="font-weight: 400;">Fixed a bug causing an intermittent
     error screen when users tried to log out</span>
 -   <span style="font-weight: 400;">Fixed several vulnerabilities
@@ -57,4 +57,4 @@ plugins:</span>
     Checkstyle from returning results if certain patterns were
     enabled</span>
 -   <span style="font-weight: 400;">Fixed bug where Pylint would not
-    analyse Django projects </span>
+    analyse Django projects </span>

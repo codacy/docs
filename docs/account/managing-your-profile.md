@@ -10,7 +10,7 @@ To change your name or username, update the fields **Name** or **Username** and 
 
 ## Changing your avatar
 
-To change your avatar, sign up or login at [Gravatar](http://www.gravatar.com/) using the same email address that you used to log into Codacy. The avatar that you define there will be automatically used as your avatar on Codacy.
+To change your avatar, sign up or login at [Gravatar](http://www.gravatar.com/) using the same email address that you used to log into Codacy. The avatar that you define there will be automatically used as your avatar on Codacy.
 
 !!! note
     Organization avatars are not editable at the moment.

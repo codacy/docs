@@ -1,6 +1,6 @@
 # GitHub integration
 
-After adding a repository, navigate to your repository's **Settings**, tab **Integrations** to enable GitHub integration for comments on pull requests, issue creation, and more.
+After adding a repository, navigate to your repository's **Settings**, tab **Integrations** to enable GitHub integration for comments on pull requests, issue creation, and more.
 
 It installs in just one click but you may need to move back and forth between Codacy and GitHub if it requires additional permissions.
 
@@ -12,14 +12,14 @@ Once the integration is enabled, you will see additional options when browsing t
 
 ![](/images/Screen_Shot_2016-12-27_at_12.11.35.png)
 
-When **Pull Request Status**, **Pull Request Comment**, or **Pull Request Summary** is enabled, Codacy will automatically update pull requests on GitHub with additional information when accepting pull requests.
+When **Pull Request Status**, **Pull Request Comment**, or **Pull Request Summary** is enabled, Codacy will automatically update pull requests on GitHub with additional information when accepting pull requests.
 
 ![](/images/Screen_Shot_2017-11-15_at_17.50.49.png)
- 
+
 
 -   **Pull Request Status** will only be added if the user that added the integration has at least write permissions for that repo.
 
-    The status shows whether your PR and coverage are up to standards or not as per the [Pull Request Quality Settings](/hc/en-us/articles/360009164573-Quality-Settings) set up for your repository. To see the coverage status, please make sure the Coverage option is enabled in the PR Quality settings.
+    The status shows whether your PR and coverage are up to standards or not as per the [Pull Request Quality Settings](/hc/en-us/articles/360009164573-Quality-Settings) set up for your repository. To see the coverage status, please make sure the Coverage option is enabled in the PR Quality settings.
 
     ![](/images/image.png)
 
@@ -28,6 +28,6 @@ When **Pull Request Status**, **Pull Request Comment**, or **Pull Request Summ
     ![](/images/Screen_Shot_2017-11-15_at_18.23.26.png)
 
 
--   **Pull Request Summary** shows an overall view of the changes in the PR. Including newly found issues and other metrics such as complexity and duplication. 
+-   **Pull Request Summary** shows an overall view of the changes in the PR. Including newly found issues and other metrics such as complexity and duplication.
 
     ![](/images/Screen_Shot_2017-11-15_at_18.12.58.png)

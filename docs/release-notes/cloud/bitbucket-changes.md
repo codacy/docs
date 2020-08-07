@@ -1,6 +1,6 @@
 # Bitbucket changes
 
-We are making some changes on the 18th Feb 2019 onwards **that will cause all existing integrations with Bitbucket to stop working**.
+We are making some changes on the 18th Feb 2019 onwards **that will cause all existing integrations with Bitbucket to stop working**.
 
 **What exactly are we doing?**
 

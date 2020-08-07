@@ -20,7 +20,7 @@
 -   <span class="wysiwyg-color-black">Credo version <span
     class="wysiwyg-underline">[0.10.2](https://github.com/rrrene/credo/blob/master/CHANGELOG.md#0102)</span></span>
 -   <span class="wysiwyg-color-black">Checkstyle version <span
-    class="wysiwyg-underline">[8.13](http://checkstyle.sourceforge.net/releasenotes.html#Release_8.13)</span> </span>
+    class="wysiwyg-underline">[8.13](http://checkstyle.sourceforge.net/releasenotes.html#Release_8.13)</span> </span>
 -   <span class="wysiwyg-color-black">Bandit version <span
     class="wysiwyg-underline">[1.5.1](https://github.com/PyCQA/bandit/releases/tag/1.5.1)</span></span>
 -   <span class="wysiwyg-color-black">PHP Code Sniffer version <span
@@ -29,7 +29,7 @@
 ## <span class="wysiwyg-color-black">Bugs</span>
 
 -   <span class="wysiwyg-color-black">Fixed a bug on <span
-    class="wysiwyg-underline"><https://security.codacy.com/></span> that
+    class="wysiwyg-underline"><https://security.codacy.com/></span> that
     highlighted the wrong section on the sidebar when scrolling
     down.</span>
 -   <span class="wysiwyg-color-black">Fixed Pylint broken build.</span>

@@ -6,7 +6,7 @@
     Non-admins will no longer be able to add projects to Codacy to avoid
     setting up integrations that don’t work.</span>
 -   <span style="font-weight: 400;">Codacy’s Coverage Reporter now
-    supports  [scrutinizer-ci](https://scrutinizer-ci.com/docs/) and
+    supports  [scrutinizer-ci](https://scrutinizer-ci.com/docs/) and
     [semaphoreci](https://docs.semaphoreci.com/)</span>
 -   <span style="font-weight: 400;">New tools:</span>
     -   <span style="font-weight: 400;">[Pylint version
@@ -17,7 +17,7 @@
 
 <!-- -->
 
--   <span style="font-weight: 400;">Updated tools:</span>  
+-   <span style="font-weight: 400;">Updated tools:</span> 
     -   <span style="font-weight: 400;">SonarC# has been updated from
         version 5.10.1.1411 to
         [7.16.0.8981](https://github.com/SonarSource/sonar-dotnet/releases/tag/7.16.0.8981)</span>

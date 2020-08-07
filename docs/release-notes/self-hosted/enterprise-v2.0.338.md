@@ -3,7 +3,7 @@
 <span style="font-weight: 400;">These updates won’t be available if you
 are still using Codacy Legacy version. If you want to update Codacy to
 the newest version please contact us, and we will schedule a call to assist you
-with the migration. </span><span style="font-weight: 400;">Below is the
+with the migration. </span><span style="font-weight: 400;">Below is the
 list of enhancements and bug fixes available with this update.</span>
 
 <span style="font-weight: 400;">Improvements</span>
@@ -22,7 +22,7 @@ list of enhancements and bug fixes available with this update.</span>
         versioned, and auditable.</span>
     -   <span style="font-weight: 400;">Reproducible configuration
         allowing you to run Codacy with the same analysis parameters
-        locally and in Codacy. </span>
+        locally and in Codacy. </span>
 -   <span style="font-weight: 400;">Option to remove projects in Admin
     view: We’ve added a new button under </span>**Project details**<span
     style="font-weight: 400;"> that removes the viewed project.</span>
@@ -34,7 +34,7 @@ list of enhancements and bug fixes available with this update.</span>
     </span>[<span
     style="font-weight: 400;">v0.6.0</span>](https://github.com/rubysec/bundler-audit/blob/master/ChangeLog.md)<span
     style="font-weight: 400;">.</span>
--   <span style="font-weight: 400;">Updated SQLint to version
+-   <span style="font-weight: 400;">Updated SQLint to version
     [v0.1.7](https://rubygems.org/gems/sqlint/versions/0.1.7)</span>
 -   <span style="font-weight: 400;">Improvement search bar on Admin -
     Enterprise: Search results are now displayed grouped by
@@ -42,7 +42,7 @@ list of enhancements and bug fixes available with this update.</span>
 -   <span style="font-weight: 400;">View on Codacy - at project list on
     Organization level: Now the link takes you directly to the admin
     view of the project.</span>
--   <span style="font-weight: 400;">Improved our error messages.  For
+-   <span style="font-weight: 400;">Improved our error messages.  For
     example, under Open Pull requests, you’ll now get a clearer message
     as to why there are no pull requests when a project has been added
     through Git URL.</span>

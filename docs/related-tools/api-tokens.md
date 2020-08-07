@@ -2,7 +2,7 @@
 
 API Tokens allow you authenticate when using the Codacy API. You must generate an API Token and include it in the headers of your API calls as described on the [Codacy API documentation](https://api.codacy.com/swagger#authentication).
 
-To generate an API Token, go to your **Account Settings** and click on the tab **Access Management**. Codacy generates a new API token every time you click the button **Create API Token**.
+To generate an API Token, go to your **Account Settings** and click on the tab **Access Management**. Codacy generates a new API token every time you click the button **Create API Token**.
 
 ![](/images/api-tokens.png)
 
@@ -12,4 +12,4 @@ To revoke access to the Codacy API, you must remove the corresponding API Token 
 {"error":"not found"}
 ```
 
-To send coverage for your repository, you need the [Project API token](/hc/en-us/articles/207279819-Coverage).
+To send coverage for your repository, you need the [Project API token](/hc/en-us/articles/207279819-Coverage).

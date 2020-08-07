@@ -20,7 +20,7 @@ assist you with the migration.
     and launched two new ones:
     [Organization](/hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-)
     and [Personal
-    dashboard](/hc/en-us/articles/360003863434-Personal-Dashboard-How-does-it-work-). 
+    dashboard](/hc/en-us/articles/360003863434-Personal-Dashboard-How-does-it-work-).
 -   We now support configuration files in Submodules for GitHub,
     Bitbucket (not Stash/Bitbucket Server) and GitLab. Check our
     [documentation](/hc/en-us/articles/360005239394)

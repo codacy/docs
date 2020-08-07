@@ -2,11 +2,11 @@
 
 If you are a cloud user, you can now share your repository with a non-Codacy user, giving them access to your Repository Dashboard through a link that doesn't require a login.
 
-You can find the option to **Share** in any Repository Dashboard.
+You can find the option to **Share** in any Repository Dashboard.
 
 ![](/images/Screen_Shot_2018-07-09_at_18.41.55.png)
 
-Codacy will generate a link that you can copy and share anywhere.
+Codacy will generate a link that you can copy and share anywhere.
 Alternatively, you can share to Twitter.
 
 ![](/images/Screenshot_2019-03-12_at_10.05.26.png)
@@ -22,4 +22,4 @@ Recipients of the share through email will get the following email:
 
 ![](/images/screen_shot_2018-07-09_at_19.07.25.png)
 
-If you have any questions or comments, please do not hesitate to contact us.
+If you have any questions or comments, please do not hesitate to contact us.
