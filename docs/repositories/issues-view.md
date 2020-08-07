@@ -42,7 +42,7 @@ When you want to remove a pattern altogether from your repository's analysis, ex
 ![](/images/image-5.gif)
 
 !!! note
-    If you’re using a custom [configuration file](/hc/en-us/articles/207994335#4-configuration-files), you have to remove that pattern line manually in your file.
+    If you’re using a custom [configuration file](../repositories-configure/code-patterns.md#i-have-my-own-tool-configuration-file), you have to remove that pattern line manually in your file.
 
 ### 4.1. Restoring a removed pattern
 
@@ -68,8 +68,8 @@ Ignored files are managed through **Settings**, **Ignore Files**.
 
 ![](/images/image-8.gif)
 
-For more information on this topic, have a look at this [article](/hc/en-us/articles/360005097654-Ignore-files-from-Codacy-analysis).
+For more information on this topic, have a look at this [article](../repositories-configure/ignore-files-from-codacy-analysis.md).
 
 ## 6. Create a Comment in your repo
 
-You can also add comments to the code on Codacy, and it will sync in your repository on [GitHub](/hc/en-us/articles/207280219-GitHub-Integration) or [Bitbucket](/hc/en-us/articles/207280239-Bitbucket-Integration).
+You can also add comments to the code on Codacy, and it will sync in your repository on [GitHub](../repositories-configure/integrations/github-integration.md) or [Bitbucket](../repositories-configure/integrations/bitbucket-cloud-integration.md).
