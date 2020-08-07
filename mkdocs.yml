@@ -120,7 +120,7 @@ plugins:
               "hc/en-us/articles/207994335-Code-Patterns.md": "repositories-configure/code-patterns.md"
               "hc/en-us/articles/207994395.md": "repositories-configure/file-extensions.md"
               "hc/en-us/articles/207994395-File-Extensions.md": "repositories-configure/file-extensions.md"
-              "hc/en-us/articles/207994395-Language-Extensions": "repositories-configure/file-extensions.md"
+              "hc/en-us/articles/207994395-Language-Extensions.md": "repositories-configure/file-extensions.md"
               "hc/en-us/articles/207994675.md": "repositories-configure/integrations/project-api.md"
               "hc/en-us/articles/207994675-Project-API.md": "repositories-configure/integrations/project-api.md"
               "hc/en-us/articles/207994725.md": "related-tools/tool-developer-guide.md"
