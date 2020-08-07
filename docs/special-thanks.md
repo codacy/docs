@@ -109,7 +109,7 @@ These are the tools integrated on our website by our own users! Without them, w
 </tbody>
 </table>
 
-Do you love a language we don't support? Do you want your name and that language on this list? Check [How to add support for a language guide](/hc/en-us/articles/207994725-Tool-Developer-Guide).
+Do you love a language we don't support? Do you want your name and that language on this list? See [how to add support for a language](related-tools/tool-developer-guide.md).
 
 ## Collaborators
 

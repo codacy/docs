@@ -18,5 +18,5 @@ Click "Grant" on each organization, to see their repositories on Codacy.
 
 If this didn't solve your issue, be sure to also check out the following pages:
 
--   [I renamed my repository on the Git provider](/hc/en-us/articles/360012746413)
--   [I moved my repository on the Git provider](/hc/en-us/articles/360013560819)
+-   [I renamed my repository on the Git provider](i-renamed-my-repository-on-the-git-provider.md)
+-   [I moved my repository on the Git provider](i-moved-my-repository-on-the-git-provider.md)

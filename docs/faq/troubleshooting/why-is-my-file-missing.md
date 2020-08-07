@@ -12,11 +12,11 @@ While all of the files in your repository should be displayed here, here is a li
 
 -   **The file has an extension that is not on the list of supported extensions**
 
-    Codacy has a default set of extensions that will associate to each language. Any file that has an extension that does not match any of those on the list will not appear in Codacy. You can find detailed information [here](/hc/en-us/articles/207994395-Language-Extensions) on how to configure this list.
+    Codacy has a default set of extensions that will associate to each language. Any file that has an extension that does not match any of those on the list will not appear in Codacy. You can find detailed information [here](../../repositories-configure/file-extensions.md) on how to configure this list.
 
 -   **The file might have been ignored**
 
-    Codacy allows you to ignore files that should not be analyzed. Those files will not be displayed on the UI. You can find more details on how to ignore files [here](/hc/en-us/articles/360005097654-Ignore-files-from-Codacy-analysis).
+    Codacy allows you to ignore files that should not be analyzed. Those files will not be displayed on the UI. You can find more details on how to ignore files [here](../../repositories-configure/ignore-files-from-codacy-analysis.md).
 
 -   **The file might be too big**
 
@@ -34,7 +34,7 @@ As a solution to this problem, we placed a size limit to the files that Codacy w
 
 ### What if I really need a file analyzed that is over this limit?
 
-While Codacy will discard your file by default, you can still have it analyzed using our [CLI](/hc/en-us/articles/360008254833-Run-local-analysis) and running the analysis locally. CLI does not have a set timeout or any limitation on file size, so you will be able to have your files analyzed this way.
+While Codacy will discard your file by default, you can still have it analyzed using our [CLI](../../related-tools/run-local-analysis.md) and running the analysis locally. CLI does not have a set timeout or any limitation on file size, so you will be able to have your files analyzed this way.
 
 ### What about Self-hosted instances?
 
