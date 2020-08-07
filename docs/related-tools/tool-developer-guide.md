@@ -10,7 +10,7 @@ We use external tools at Codacy; in this tutorial, we explain how you can integr
 
 You can check the code of an already implemented tool and, if you wish, fork it to start yours. You are free to modify it and use it for your integration.
 
-We also have a [tutorial to integrate your tool using our Scala templates](/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala).
+We also have a [tutorial to integrate your tool using our Scala templates](tool-developer-guide-using-scala.md).
 
 ## Requirements
 

@@ -10,7 +10,7 @@ You can also fork the code of one of our tools, and modify it; here are some exa
 -   [codacy-jshint](https://github.com/codacy/codacy-jshint)
 -   [codacy-pmdJava](https://github.com/codacy/codacy-pmdJava).
 
-This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the [Tool Developer Guide](/hc/en-us/articles/207994725-Tool-Developer-Guide).
+This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the [Tool Developer Guide](tool-developer-guide.md).
 
 ## Scala Engine Template
 

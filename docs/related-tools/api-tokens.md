@@ -12,4 +12,4 @@ To revoke access to the Codacy API, you must remove the corresponding API Token 
 {"error":"not found"}
 ```
 
-To send coverage for your repository, you need the [Project API token](/hc/en-us/articles/207279819-Coverage).
+To send coverage for your repository, you need the [Project API token](../repositories-configure/coverage.md).
