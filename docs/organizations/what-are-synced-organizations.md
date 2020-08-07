@@ -12,7 +12,7 @@ Organizations that can be added to Codacy show up on the Organizations list.
 
 ![Adding an organization](images/organization-add.png)
 
-If you can't see the organization you are looking for, [find out what could be the possible reasons](/hc/en-us/articles/360010264500).
+If you can't see the organization you are looking for, [find out what could be the possible reasons](why-cant-i-see-my-organization.md).
 
 ## Managing people in an organization
 
@@ -37,7 +37,7 @@ In case you change your organization or repository on the Git provider, they'll 
 -   Changing a repository name
 -   Changing a repository visibility
 
-Check out the [roles and permission mapping from the Git providers](/hc/en-us/articles/360010373559).
+Check out the [roles and permission mapping from the Git providers](roles-and-permissions-for-synced-organizations.md).
 
 ## Deleting an organization
 

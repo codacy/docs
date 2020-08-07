@@ -246,8 +246,8 @@ plugins:
               "hc/en-us/articles/360010263540-Getting-started-with-Codacy.md": "getting-started/getting-started-with-codacy.md"
               "hc/en-us/articles/360010263720.md": "organizations/what-are-synced-organizations.md"
               "hc/en-us/articles/360010263720-What-are-synced-organizations.md": "organizations/what-are-synced-organizations.md"
-              "hc/en-us/articles/360010264500.md": "organizations/why-can't-i-see-my-organization.md"
-              "hc/en-us/articles/360010264500-Why-can-t-I-see-my-organization-.md": "organizations/why-can't-i-see-my-organization.md"
+              "hc/en-us/articles/360010264500.md": "organizations/why-cant-i-see-my-organization.md"
+              "hc/en-us/articles/360010264500-Why-can-t-I-see-my-organization-.md": "organizations/why-cant-i-see-my-organization.md"
               "hc/en-us/articles/360010306559.md": "release-notes/cloud/cloud-release-notes-|-30-oct-2019.md"
               "hc/en-us/articles/360010306559-Cloud-Release-Notes-30-Oct-2019.md": "release-notes/cloud/cloud-release-notes-|-30-oct-2019.md"
               "hc/en-us/articles/360010348093.md": "release-notes/self-hosted/enterprise-v2.0.341.md"
@@ -391,6 +391,7 @@ plugins:
               "Chart/troubleshoot/k8s-cheatsheet.md": "chart/troubleshoot/k8s-cheatsheet.md"
               # Renamed pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
+              "organizations/why-can't-i-see-my-organization.md": "organizations/why-cant-i-see-my-organization.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -439,7 +440,7 @@ nav:
           - organizations/organization-dashboard-overview.md
           - organizations/roles-and-permissions-for-synced-organizations.md
           - organizations/adding-and-managing-authors.md
-          - organizations/why-can't-i-see-my-organization.md
+          - organizations/why-cant-i-see-my-organization.md
           - organizations/authors-vs-members.md
           - organizations/how-to-configure-which-users-can-ignore-issues.md
           - organizations/managing-repositories-in-your-organization.md

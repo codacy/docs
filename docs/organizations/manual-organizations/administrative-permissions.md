@@ -30,7 +30,7 @@ Any member of the Administrators team has full read/write permissions. You can v
 </tbody>
 </table>
 
-For users that don't have Admin permissions, they will need to be added to a [team](/hc/en-us/articles/360009340553). When adding users to a team, the Administrator can decide the level of permissions each team member should have for the repositories within that team.
+For users that don't have Admin permissions, they will need to be added to a [team](creating-and-managing-teams.md). When adding users to a team, the Administrator can decide the level of permissions each team member should have for the repositories within that team.
 
 <table>
 <tbody>

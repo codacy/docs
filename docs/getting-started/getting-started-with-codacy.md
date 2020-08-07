@@ -18,7 +18,7 @@ You’ll be asked to fill in a few details about your company so we know a bit m
 
 ![](/images/Screenshot_2020-02-26_at_21.30.45.png)
 
-Now, you’ll need to select the organization that contains your repositories. If you can’t see the organization you are looking for, [read this troubleshooting page](../organizations/why-can't-i-see-my-organization.md).
+Now, you’ll need to select the organization that contains your repositories. If you can’t see the organization you are looking for, [read this troubleshooting page](../organizations/why-cant-i-see-my-organization.md).
 
 The selected organization will then be synced with Codacy so that managing your team permissions is easy. Read more about [what synced organizations do](../organizations/what-are-synced-organizations.md).
 

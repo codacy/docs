@@ -60,7 +60,7 @@ If you don't have enough enough repositories for comparison, don't worry - we ha
 
 ### 2. Hotspots
 
-Hotspots are items that require your attention. You can click through on each to view the pull requests or dismiss them. This will dismiss the item for everybody in your team. Read more about hotspots [here](/hc/en-us/articles/360003863594-Hotspots-How-they-work-).
+Hotspots are items that require your attention. You can click through on each to view the pull requests or dismiss them. This will dismiss the item for everybody in your team. Read more about hotspots [here](../faq/repositories/hotspots-overview.md).
 
 ### 3. Open pull requests
 
@@ -82,7 +82,7 @@ This tab displays a short list of all open pull requests sorted by the date of u
 
 ### 4. Logs
 
-Logs display a list of all relevant activity in your organization. You can read more about them [here](/hc/en-us/articles/360003890693-Logs-How-do-they-work-).
+Logs display a list of all relevant activity in your organization. You can read more about them [here](../faq/repositories/what-are-logs.md).
 
 ### 5. Last updated repositories
 
