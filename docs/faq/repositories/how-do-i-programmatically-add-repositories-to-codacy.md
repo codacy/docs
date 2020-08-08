@@ -33,7 +33,8 @@ Substitute the placeholders with your own values:
     !!! important
         **If you are using GitLab** you must specify the full group path and the repository using the format `<group>/<subgroup-1>/.../<subgroup-N>/<repository>`.
 
-Currently, Codacy does not provide API endpoints to automate other parts of setting up new repositories, such as configuring the repository settings or the enabled code patterns.
+Currently, Codacy does not provide API endpoints to automate other parts of setting up new repositories, such as configuring the repository settings or the enabled code patterns. However, Codacy automatically applies the [default patterns](../../repositories-configure/code-patterns.md#account-patterns) defined on Codacy API token account to the new repositories, and you can use this to ensure that all new repositories share the same pattern configuration.
+
 
 ## Example: Adding all repositories in a GitHub organization
 
@@ -70,7 +71,7 @@ for repo in $(curl -s https://api.github.com/orgs/$GITHUB_ORG_NAME/repos -H "Aut
 done
 ```
 
-This script:
+The script:
 
 1.  Defines a GitHub [personal access token](https://github.com/settings/tokens){: target="_blank"}, the GitHub organization name, and a [Codacy API token](../../related-tools/api-tokens.md).
 1.  Calls the GitHub API to [obtain the list of all repositories](https://docs.github.com/en/rest/reference/repos#list-organization-repositories){: target="_blank"} in the defined organization.
