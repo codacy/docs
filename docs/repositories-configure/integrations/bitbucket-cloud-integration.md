@@ -1,12 +1,12 @@
 # Bitbucket Cloud integration
 
-If you're seeing a warning about your Bitbucket Cloud integration being disabled you will need to enable it again by going to your repository **Settings** -> **Integrations**. Please note that you need to have Admin permissions in both Codacy and Bitbucket Cloud to do this. 
+If you're seeing a warning about your Bitbucket Cloud integration being disabled you will need to enable it again by going to your repository **Settings** -> **Integrations**. Please note that you need to have Admin permissions in both Codacy and Bitbucket Cloud to do this.
 
 Once the integration is done, Codacy will restart analysing your repository and you can add some other useful feature such as pull request status, comments or summary directly in Bitbucket Cloud.
 
 For private repositories, this user will by default become the Bitbucket Cloud user that Codacy will use to comment and create issues on Bitbucket Cloud. For public repositories, comments made by Codacy will appear as coming from codacy-bot.
 
-![](/images/Feb-14-2019_16-31-44.gif) 
+![](/images/Feb-14-2019_16-31-44.gif)
 
 ## Enabling Bitbucket Cloud integration
 

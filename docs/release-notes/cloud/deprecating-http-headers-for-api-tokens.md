@@ -11,7 +11,7 @@ From this date onwards, use the following HTTP headers instead:
 - `project-token`
 
 ## How does this change impact me?
-We will support the new and old HTTP headers simultaneously for some time. However, we intend to drop the support for the old HTTP headers in the future. 
+We will support the new and old HTTP headers simultaneously for some time. However, we intend to drop the support for the old HTTP headers in the future.
 
 As such, to avoid downtime in your operations, we recommend that you do the following **as soon as possible**:
 

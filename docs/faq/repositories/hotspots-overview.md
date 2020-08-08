@@ -1,6 +1,6 @@
 # Hotspots overview
 
-On the Organization Dashboard and Repository Dashboard you have a section called **Hotspots** where you can see a set of attention points you can click on or dismiss, in case you don't feel they are relevant. See below a full description of this feature and all the functionalities behind it! 
+On the Organization Dashboard and Repository Dashboard you have a section called **Hotspots** where you can see a set of attention points you can click on or dismiss, in case you don't feel they are relevant. See below a full description of this feature and all the functionalities behind it!
 
 ## How does it look like?
 

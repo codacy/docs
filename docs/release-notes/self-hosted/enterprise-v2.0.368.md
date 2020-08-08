@@ -19,7 +19,7 @@
 -   <span style="font-weight: 400;">Updated ESLint to
     [v5.16.0](https://eslint.org/blog/2019/03/eslint-v5.16.0-released)</span>
 -   <span style="font-weight: 400;">Added [Spotbugs and FindBugs
-    Security](/hc/en-us/articles/360023916013-Run-SpotBugs)</span>
+    Security](../../related-tools/run-spotbugs.md)</span>
 -   <span style="font-weight: 400;">Added new Control Panel
     configuration to allow configuring HTTPS when using a third-party
     certificate manager. </span>
@@ -35,11 +35,11 @@
 -   <span style="font-weight: 400;">Fixed bug that prevented Admins from
     viewing their own projects or organizations.</span>
 -   <span style="font-weight: 400;">Fixed bug that prevented listing
-    Bitbucket projects from multiple organisations when there were
-    problems with one of the organisations.</span>
+    Bitbucket projects from multiple organizations when there were
+    problems with one of the organizations.</span>
 -   <span style="font-weight: 400;">Fixed bug where clicking 'Turn on
     all security patterns' in the Security monitor didn't enable all
     security patterns.</span>
 -   <span style="font-weight: 400;">Fixed the bug where user needed to
     login with Bitbucket to link Codacy account to Bitbucket if using
-    another signup method.</span>
+    another sign up method.</span>

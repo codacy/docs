@@ -13,7 +13,7 @@ To create an organization, click on your avatar and select **Organizations**. Ty
 
 ## Renaming your organization
 
-You can always rename an organization but:
+You can always rename an organization but:
 
 -   You won't be able to change it back if someone else registers your original organization name.
 -   This may break all your repository URLs.

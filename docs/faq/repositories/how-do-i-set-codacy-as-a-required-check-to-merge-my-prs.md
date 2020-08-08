@@ -1,6 +1,6 @@
 # How do I set Codacy as a required check to merge my PRs?
 
-Codacy will check each of your Pull Requests using [your quality settings](/hc/en-us/articles/360009164573-Quality-Settings), sending a notification to the Git provider informing if the PR is up to standards or not.
+Codacy will check each of your Pull Requests using [your quality settings](../../repositories/quality-settings.md), sending a notification to the Git provider informing if the PR is up to standards or not.
 
 Each of the Git providers have different options regarding what can be done with this notification that you can set up to make sure you get a notification if the PR fails Codacy checks or block it from being merged.
 

@@ -18,7 +18,7 @@ The list also displays error messages and troubleshooting guidance for repositor
 If you have a large number of repositories, you can use the search field above the list to quickly find a specific repository.
 
 ## Adding a repository
- 
+
 To add a new repository to Codacy, click the button **Add repository** at the top right-hand corner of the page. This opens a window listing the repositories in your Git provider organization that do not belong to your organization on Codacy yet.
 
 ![Adding a repository](images/repositories-add.png)

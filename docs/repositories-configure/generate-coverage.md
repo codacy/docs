@@ -16,5 +16,5 @@ There are many tools to generate coverage. We have a few suggestions:
 
 See also:
 
--   [Add coverage to your repo](/hc/en-us/articles/207993835-Add-coverage-to-your-repo)
--   [Coverage](/hc/en-us/articles/207279819)
+-   [Add coverage to your repo](add-coverage-to-your-repo.md)
+-   [Coverage](coverage.md)

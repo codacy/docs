@@ -6,6 +6,6 @@ Currently, Codacy supports the client-side tools Clang-Tidy, Gosec, and Spotbugs
 
 -   [Clang Tidy](https://github.com/codacy/codacy-clang-tidy#usage)
 -   [Gosec](https://github.com/codacy/codacy-gosec#usage)
--   [Spotbugs](/hc/en-us/articles/360023916013-Run-SpotBugs)
+-   [Spotbugs](run-spotbugs.md)
 
 Keep in mind that before you send analysis information you must enable the setting **Run analysis through build server** in your repository **Settings**, tab **General**, **Repository analysis**.

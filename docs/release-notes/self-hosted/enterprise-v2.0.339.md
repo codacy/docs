@@ -3,7 +3,7 @@
 <span style="font-weight: 400;">These updates won’t be available if you
 are still using Codacy Legacy version. If you want to update Codacy to
 the newest version, please contact us, and we will schedule a call to assist you
-with the migration. </span><span style="font-weight: 400;">Below is the
+with the migration. </span><span style="font-weight: 400;">Below is the
 list of enhancements and bug fixes available with this update.</span>
 
 <span style="font-weight: 400;">Improvements
@@ -19,7 +19,7 @@ list of enhancements and bug fixes available with this update.</span>
     sheets-userformat="{&quot;2&quot;:513,&quot;3&quot;:[null,0],&quot;12&quot;:0}">Introduced
     new optimization when cloning repositories reducing disk space
     usage. This may affect initial analysis performance after the update
-    as the system recaches.</span></span>
+    as the system recaches.</span></span>
 -   <span style="font-weight: 400;"><span
     sheets-value="{&quot;1&quot;:2,&quot;2&quot;:&quot;Update grade and coverage badges look. Example: https://github.com/codacy/node-codacy-coverage#node-codacy-coverage&quot;}"
     sheets-userformat="{&quot;2&quot;:513,&quot;3&quot;:[null,0],&quot;12&quot;:0}">Changed

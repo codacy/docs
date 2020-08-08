@@ -6,7 +6,7 @@ Follow the [installation guide](https://github.com/codacy/codacy-analysis-cli#in
 
 ## Running an analysis with the CLI
 
-At the moment, the CLI still requires to retrieve the configuration from Codacy to perform an analysis. In order to access the repository, you will have to obtain a *Project Token* as explained in the [CLI documentation](https://github.com/codacy/codacy-analysis-cli#project-token). Then, you can invoke the CLI to get a report with all the issues:
+At the moment, the CLI still requires to retrieve the configuration from Codacy to perform an analysis. In order to access the repository, you will have to obtain a *Project Token* as explained in the [CLI documentation](https://github.com/codacy/codacy-analysis-cli#project-token). Then, you can invoke the CLI to get a report with all the issues:
 
 ```bash
 codacy-analysis-cli analyse --directory <SOURCE-CODE-PATH> \
@@ -31,7 +31,7 @@ If you are using Codacy Self-hosted, you must configure the endpoint where Codac
 
 ### Advanced configuration
 
-For advanced configuration details, check all the CLI flags in the [CLI documentation](https://github.com/codacy/codacy-analysis-cli#cli-parameters).
+For advanced configuration details, check all the CLI flags in the [CLI documentation](https://github.com/codacy/codacy-analysis-cli#cli-parameters).
 
 Some flags you might be interested in:
 

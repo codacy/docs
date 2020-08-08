@@ -7,7 +7,7 @@
     your GitLab Merge Requests.
 -   **Improved coverage reporter:** We migrated the existing language
     support to
-    the [codacy-coverage-reporter](https://github.com/codacy/codacy-coverage-reporter)
+    the [codacy-coverage-reporter](https://github.com/codacy/codacy-coverage-reporter)
     and deprecated the remaining reporters. In the new reporter, you'll
     find a streamlined installation process, support for all languages,
     support for common CI environments and partial coverage upload. You
@@ -28,22 +28,22 @@
     -   Updated SpotBugs to 4.0.0
     -   Updated prospector to 1.2.0 (Python 3)
     -   Updated Checkstyle to 8.29
-    -   Updated PHP Mess Detector to 2.8.1
-    -   Updated PyLint to 1.9.5
+    -   Updated PHP Mess Detector to 2.8.1
+    -   Updated PyLint to 1.9.5
     -   Updated PyLint (Python 3) to 2.4.3
-    -   Updated PHP Code Sniffer to 3.5.3
-    -   Updated Sonar C# to 8.4
-    -   Updated Detekt to 1.5.0
-    -   Updated Ameba to 0.11.0
+    -   Updated PHP Code Sniffer to 3.5.3
+    -   Updated Sonar C# to 8.4
+    -   Updated Detekt to 1.5.0
+    -   Updated Ameba to 0.11.0
 -   **Disabled tools:**
     -   Removed govet
 
 ## Other news
 
--   **Public Roadmap** - To give more visibility to what are we working
-    on and the upcoming planned items we have now our [Roadmap
+-   **Public Roadmap** - To give more visibility to what are we working
+    on and the upcoming planned items we have now our [Roadmap
     public](https://roadmap.codacy.com/)! Feel free to check it and to
-    give us feedback. 
+    give us feedback.
 
 ## Bug Fixes
 

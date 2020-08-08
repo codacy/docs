@@ -4,7 +4,7 @@
 
 <span style="font-weight: 400;">We now integrate with </span>[<span
 style="font-weight: 400;">Bitbucket using
-OAuth2</span>](/hc/en-us/articles/360018049713)<span
+OAuth2</span>](../../organizations/what-are-synced-organizations.md)<span
 style="font-weight: 400;">. This has allowed us to reduce the level of
 permissions we require when you integrate Codacy with your Bitbucket
 account</span>

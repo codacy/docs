@@ -1,6 +1,6 @@
 # Engines
 
-Codacy uses a system of plugin engines to extend the scope of analyses on your repositories, allowing support for new tools and languages every day. To create your own engine, check the [Tool Developer Guide](/hc/en-us/articles/207994725-Tool-Developer-Guide).
+Codacy uses a system of plugin engines to extend the scope of analyses on your repositories, allowing support for new tools and languages every day. To create your own engine, check the [Tool Developer Guide](tool-developer-guide.md).
 
 ## Analysis Engines
 

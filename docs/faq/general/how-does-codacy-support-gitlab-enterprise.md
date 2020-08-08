@@ -3,9 +3,9 @@
 When you use GitLab Enterprise to sign up or log into Codacy, the GitLab Groups that you belong to will be available to be added as Organizations on Codacy. After adding a Group:
 
 -   Codacy displays the list of all repositories that you own in that Group and Subgroups so that you can add them to Codacy as repositories to be analyzed
--   The members of the Group will be able to [join or request to join Codacy](/hc/en-us/articles/360010263720#settings-to-add-people)
+-   The members of the Group will be able to [join or request to join Codacy](../../organizations/what-are-synced-organizations.md#managing-people-in-an-organization)
 
-If you have repositories that do not belong to any Group, you can still [add those on Codacy directly under My Repositories](/hc/en-us/articles/207278449-Setting-up-your-repository).
+If you have repositories that do not belong to any Group, you can still [add those on Codacy directly under My Repositories](../../getting-started/setting-up-your-personal-repositories.md).
 
 ## Limitations
 
