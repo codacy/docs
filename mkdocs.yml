@@ -477,7 +477,7 @@ nav:
                 - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md
                 - faq/repositories/how-do-i-manually-force-a-repository-update.md
                 - faq/repositories/how-do-i-reanalyze-my-repository.md
-                - faq/repositories/how-do-i-add-multiple-repositories.md
+                - faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md
                 - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
                 - faq/repositories/i-moved-my-repository-on-the-git-provider.md
                 - faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md

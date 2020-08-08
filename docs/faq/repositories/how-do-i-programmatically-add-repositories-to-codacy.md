@@ -1,10 +1,11 @@
-# How do I add multiple repositories?
+# How do I programmatically add repositories to Codacy?
 
-If you are adding a large number of repositories to Codacy, manually adding each repository on the Codacy UI can be time consuming.
+There are scenarios where manually adding Git repositories on the Codacy UI is inconvenient or time consuming. For example:
 
-To add a batch of repositories in an automated way, you can use Codacy's API v3 endpoint [addRepository](https://app.codacy.com/api/api-docs#addrepository){: target="_blank"}.
+-   You want to add all new repositories to Codacy when they are created on the Git provider
+-   You are adding a large number of repositories to Codacy, such as when initially adding all repositories in your Git provider organization
 
-To add a repository using this endpoint you must perform an HTTP POST request to `/repositories`, specifying the Git provider and the full path of the repository in the body of the request:
+To add repositories programmatically, you can use Codacy's API v3 endpoint [addRepository](https://app.codacy.com/api/api-docs#addrepository){: target="_blank"} by performing an HTTP POST request to `/repositories`, specifying the Git provider and the full path of the repository in the body of the request:
 
 ```bash
 curl -X POST https://app.codacy.com/api/v3/repositories \
@@ -32,14 +33,12 @@ Substitute the placeholders with your own values:
     !!! important
         **If you are using GitLab** you must specify the full group path and the repository using the format `<group>/<subgroup-1>/.../<subgroup-N>/<repository>`.
 
+!!! warning
+    Currently, Codacy does not provide API endpoints to automate other parts of setting up new repositories, such as configuring the repository settings or the enabled code patterns.
+
 ## Example: Adding all repositories in a GitHub organization
 
-The Bash script below adds all repositories in a GitHub Cloud organization to Codacy.
-
-1.  Defines a GitHub [personal access token](https://github.com/settings/tokens), the GitHub organization name, and a [Codacy API token](../../related-tools/api-tokens.md).
-1.  Calls the GitHub API to [obtain the list of all repositories](https://docs.github.com/en/rest/reference/repos) in the defined organization.
-1.  Uses [jq](https://github.com/stedolan/jq) to return the value of `full_name` for each repository obtained in the JSON response. The `full_name` already includes the organization and repository names using the format `<organization>/<repository>`.
-1.  For each repository, calls the Codacy API endpoint to add a new repository specifying `gh` as the Git provider and the value of `full_name` as the full path of the repository.
+The following Bash script adds all repositories in a GitHub Cloud organization to Codacy.
 
 ```bash
 #!/bin/bash
@@ -58,6 +57,13 @@ for repo in $(curl -s https://api.github.com/orgs/$GITHUB_ORG_NAME/repos -H "Aut
      echo # Echo a newline for readability
 done
 ```
+
+This script:
+
+1.  Defines a GitHub [personal access token](https://github.com/settings/tokens), the GitHub organization name, and a [Codacy API token](../../related-tools/api-tokens.md).
+1.  Calls the GitHub API to [obtain the list of all repositories](https://docs.github.com/en/rest/reference/repos) in the defined organization.
+1.  Uses [jq](https://github.com/stedolan/jq) to return the value of `full_name` for each repository obtained in the JSON response. The `full_name` already includes the organization and repository names using the format `<organization>/<repository>`.
+1.  For each repository, calls the Codacy API endpoint to add a new repository specifying `gh` as the Git provider and the value of `full_name` as the full path of the repository.
 
 !!! note
     For the sake of simplicity, this example script does not take into account paginated results obtained from the GitHub API. To ensure that you obtain all the repositories in your organization, learn [how to use pagination](https://docs.github.com/en/rest/guides/traversing-with-pagination) on the GitHub API.
