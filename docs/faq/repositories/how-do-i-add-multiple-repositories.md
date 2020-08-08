@@ -1,10 +1,8 @@
 # How do I add multiple repositories?
 
-If you are adding a large number of repositories to Codacy, manually adding each individual repository on the Codacy UI can be time consuming.
+If you are adding a large number of repositories to Codacy, manually adding each repository on the Codacy UI can be time consuming.
 
-To add a batch of repositories in an automated way, use the endpoint `addRepository`, available on the Codacy API v3:
-
-<https://app.codacy.com/api/api-docs#addrepository>
+To add a batch of repositories in an automated way, you can use Codacy's API v3 endpoint [addRepository](https://app.codacy.com/api/api-docs#addrepository){: target="_blank"}.
 
 To add a repository using this endpoint you must perform an HTTP POST request to `/repositories`, specifying the Git provider and the full path of the repository in the body of the request:
 
@@ -17,8 +15,8 @@ curl -X POST https://app.codacy.com/api/v3/repositories \
 
 Substitute the placeholders with your own values:
 
--   **`API_KEY`**: [API token](../../related-tools/api-tokens.md) used to authenticate on the Codacy API.
--   **`GIT_PROVIDER*`**: Git provider hosting the repository, using one of the values in the table below. For example, `gh` for GitHub Cloud.
+-   **API_KEY**: [API token](../../related-tools/api-tokens.md) used to authenticate on the Codacy API.
+-   **GIT_PROVIDER**: Git provider hosting the repository, using one of the values in the table below. For example, `gh` for GitHub Cloud.
 
     |Value |Git provider |
     |------|-------------|
@@ -29,7 +27,7 @@ Substitute the placeholders with your own values:
     |`bb`  |BitBucket Cloud |
     |`bbe` |BitBucker Enterprise |
 
--   **`REPOSITORY_FULL_PATH`**: Name of the organization and repository on the Git provider, using the format `<organization>/<repository>`. For example, `codacy/docs`.
+-   **REPOSITORY_FULL_PATH**: Name of the organization and repository on the Git provider, using the format `<organization>/<repository>`. For example, `codacy/docs`.
 
     !!! important
         **If you are using GitLab** you must specify the full group path and the repository using the format `<group>/<subgroup-1>/.../<subgroup-N>/<repository>`.
