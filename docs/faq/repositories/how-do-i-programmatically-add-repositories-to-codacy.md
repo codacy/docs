@@ -46,15 +46,20 @@ GITHUB_AUTH_TOKEN="<REPLACE_ME>"
 GITHUB_ORG_NAME="<REPLACE_ME>"
 CODACY_API_TOKEN="<REPLACE_ME>"
 
-echo "Obtaining all repositories in the $GITHUB_ORG_NAME organization"
+printf "Obtaining all repositories in the $GITHUB_ORG_NAME organization\n"
 for repo in $(curl -s https://api.github.com/orgs/$GITHUB_ORG_NAME/repos -H "Authorization: Bearer $GITHUB_AUTH_TOKEN" | jq -r '.[] | .full_name'); do
-  echo "Adding $repo to Codacy" 
-  curl -X POST https://app.codacy.com/api/v3/repositories \
-       -H "Content-Type: application/json" \
-       -H "api-token: $CODACY_API_TOKEN" \
-       -d '{"provider":"gh", "repositoryFullPath":"'$repo'"}'
-  sleep 30 # Wait 30 seconds
-  echo # Print newline for readability
+  printf "Adding $repo to Codacy\n"
+  http_status=$(curl -X POST https://app.codacy.com/api/v3/repositories \
+                     -H "Content-Type: application/json" \
+                     -H "api-token: $CODACY_API_TOKEN" \
+                     -d '{"provider":"gh", "repositoryFullPath":"'$repo'"}' \
+                     -sSo /dev/null -w "%{http_code}")
+  case "$http_status" in
+          200) printf "Repository added successfully\n" ;;
+          401) printf "Error: $http_status Unauthorized, check the Codacy API token\n" ;;
+            *) printf "Error: $http_status HTTP status code\n" ;;
+  esac
+  sleep 10 # Wait 10 seconds
 done
 ```
 
