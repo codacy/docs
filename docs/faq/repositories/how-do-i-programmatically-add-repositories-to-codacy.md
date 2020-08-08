@@ -33,8 +33,7 @@ Substitute the placeholders with your own values:
     !!! important
         **If you are using GitLab** you must specify the full group path and the repository using the format `<group>/<subgroup-1>/.../<subgroup-N>/<repository>`.
 
-!!! warning
-    Currently, Codacy does not provide API endpoints to automate other parts of setting up new repositories, such as configuring the repository settings or the enabled code patterns.
+Currently, Codacy does not provide API endpoints to automate other parts of setting up new repositories, such as configuring the repository settings or the enabled code patterns.
 
 ## Example: Adding all repositories in a GitHub organization
 
@@ -49,12 +48,13 @@ CODACY_API_TOKEN="<REPLACE_ME>"
 
 echo "Obtaining all repositories in the $GITHUB_ORG_NAME organization"
 for repo in $(curl -s https://api.github.com/orgs/$GITHUB_ORG_NAME/repos -H "Authorization: Bearer $GITHUB_AUTH_TOKEN" | jq -r '.[] | .full_name'); do
-     echo "Adding $repo to Codacy" 
-     curl -X POST https://app.codacy.com/api/v3/repositories \
+  echo "Adding $repo to Codacy" 
+  curl -X POST https://app.codacy.com/api/v3/repositories \
        -H "Content-Type: application/json" \
        -H "api-token: $CODACY_API_TOKEN" \
        -d '{"provider":"gh", "repositoryFullPath":"'$repo'"}'
-     echo # Echo a newline for readability
+  sleep 30 # Wait 30 seconds
+  echo # Print newline for readability
 done
 ```
 
