@@ -37,7 +37,7 @@ Currently, Codacy does not provide API endpoints to automate other parts of sett
 
 ## Example: Adding all repositories in a GitHub organization
 
-The following Bash script adds all repositories in a GitHub Cloud organization to Codacy.
+The following Bash script adds all repositories in a GitHub Cloud organization to Codacy. We suggest that you adapt the script to your specific scenario.
 
 ```bash
 #!/bin/bash
@@ -77,6 +77,7 @@ This script:
 1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to return the value of `full_name` for each repository obtained in the JSON response. The `full_name` already includes the organization and repository names using the format `<organization>/<repository>`.
 1.  For each repository, calls the Codacy API endpoint to add a new repository specifying `gh` as the Git provider and the value of `full_name` as the full path of the repository.
 1.  Checks the HTTP status code obtained in the response and performs basic error handling.
+1.  Pauses a few seconds between requests to the Codacy API to avoid rate limiting.
 
 !!! Important
     For the sake of simplicity:
