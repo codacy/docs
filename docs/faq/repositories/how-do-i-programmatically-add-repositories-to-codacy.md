@@ -28,7 +28,7 @@ Substitute the placeholders with your own values:
     |`bb`  |BitBucket Cloud |
     |`bbe` |BitBucker Enterprise |
 
--   **REPOSITORY_FULL_PATH**: Name of the organization and repository on the Git provider, using the format `<organization>/<repository>`. For example, `codacy/docs`.
+-   **REPOSITORY_FULL_PATH**: Name of the organization and repository on the Git provider, using the format `<organization>/<repository>`. For example, `codacy/docs`. You must have admin permissions over the repository on the Git provider.
 
     !!! important
         **If you are using GitLab** you must specify the full group path and the repository using the format `<group>/<subgroup-1>/.../<subgroup-N>/<repository>`.
@@ -72,10 +72,14 @@ done
 
 This script:
 
-1.  Defines a GitHub [personal access token](https://github.com/settings/tokens), the GitHub organization name, and a [Codacy API token](../../related-tools/api-tokens.md).
-1.  Calls the GitHub API to [obtain the list of all repositories](https://docs.github.com/en/rest/reference/repos) in the defined organization.
-1.  Uses [jq](https://github.com/stedolan/jq) to return the value of `full_name` for each repository obtained in the JSON response. The `full_name` already includes the organization and repository names using the format `<organization>/<repository>`.
+1.  Defines a GitHub [personal access token](https://github.com/settings/tokens){: target="_blank"}, the GitHub organization name, and a [Codacy API token](../../related-tools/api-tokens.md).
+1.  Calls the GitHub API to [obtain the list of all repositories](https://docs.github.com/en/rest/reference/repos#list-organization-repositories){: target="_blank"} in the defined organization.
+1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to return the value of `full_name` for each repository obtained in the JSON response. The `full_name` already includes the organization and repository names using the format `<organization>/<repository>`.
 1.  For each repository, calls the Codacy API endpoint to add a new repository specifying `gh` as the Git provider and the value of `full_name` as the full path of the repository.
+1.  Checks the HTTP status code obtained in the response and performs basic error handling.
 
-!!! note
-    For the sake of simplicity, this example script does not take into account paginated results obtained from the GitHub API. To ensure that you obtain all the repositories in your organization, learn [how to use pagination](https://docs.github.com/en/rest/guides/traversing-with-pagination) on the GitHub API.
+!!! Important
+    For the sake of simplicity:
+
+    -   The GitHub API endpoint used by the script obtains all repositories in a GitHub organization. However, you must have admin permissions over the repositories that you add to Codacy. If you are not the owner of all the repositories in your GitHub organization, consider using the GitHub API endpoint [/user/repos](https://docs.github.com/en/rest/reference/repos#list-repositories-for-the-authenticated-user){: target="_blank"} instead.
+    -   The script does not take into account paginated results obtained from the GitHub API. To ensure that you obtain all the repositories in your organization, [learn how to use pagination on the GitHub API](https://docs.github.com/en/rest/guides/traversing-with-pagination){: target="_blank"}.
