@@ -2301,6 +2301,12 @@
 </li>
 <li>
 <p><a href="https://helm.sh/docs/intro/install/">Helm</a> version 3.2</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Helm 3.3 is not supported because there is a known incompatibility with the MinIO chart currently used by Codacy.</p>
+<p>More specifically, <strong>Helm versions compiled with Go 1.14 or later are not supported</strong>. You can check the Go version that was used to compile Helm with <code>helm version</code>.</p>
+<p>This will be fixed in a future version of Codacy Self-hosted.</p>
+</div>
 </li>
 </ul>
 </li>
@@ -2414,7 +2420,7 @@ codacy-worker-manager-656dbf8d6d-n4j7c          <span class="m">1</span>/1     R
 <div class="md-source-date">
   <small>
     
-      Last update: August 5, 2020
+      Last update: August 12, 2020
     
   </small>
 </div>
