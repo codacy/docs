@@ -1,6 +1,6 @@
 # Self-hosted v1.3.0 for Kubernetes
 
-These release notes are for [Codacy Self-hosted v1.3.0](https://github.com/codacy/chart/releases/tag/1.3.0) for Kubernetes.
+These release notes are for [Codacy Self-hosted v1.3.0](https://github.com/codacy/chart/releases/tag/1.3.0) for Kubernetes. [Follow these instructions](https://docs.codacy.com/chart/maintenance/upgrade/) to upgrade Codacy.
 
 # Bug fixes
 
