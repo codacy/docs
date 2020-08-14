@@ -22,46 +22,44 @@ The following sections provide a detailed overview of each dashboard area.
 
 ## 1. Repository certification and quality evolution chart {: id="repository-certification-and-quality-evolution-chart"}
 
-Here you can see the grade of the repository, and you can see the quality evolution of the repository on the **Quality evolution Chart**.
+Here you can see the grade of the repository and the evolution of the code quality. On the chart you can select to see results for the last 7 or 31 days. Use the tabs to see the evolution for each metric: Issues, Complex files, Duplicated code, and Coverage.
 
-On the chart you can select to see results for the "Last 7 days", for the "Last 31 days" or for the "Last 8 commits" if you don't have data from the last 31 days.
+The chart also displays the **trend for the next 31 days** based on the past behavior, the **pull request prediction** (the changes caused by open pull requests if they are not changed) and the **quality standard** (defined on the repository [quality settings](quality-settings.md)).
 
 ![Quality evolution chart](images/repository-dashboard-quality-evolution.png)
 
-You can see, per criterium (Issues, Complex Files, Duplicated code and Coverage), how the repository is behaving on the last x days. You can navigate on the different criterium by clicking on the tabs of the chart.
-
-You can also see, the **trend for the next 31 days** (assuming the past behavior), the **pull request prediction** (the changes caused by open pull requests if they are not changed) and the **quality standard** (defined on the repository [Quality Settings](quality-settings.md)).
-
-In the example you see "Issues" with a red indicator ![](images/repository-dashboard-indicator-red.png) meaning the number of Issues is above what was defined on the quality standards. Also, we can see next to each criterium **a delta** (can be "=", a drop or an increase), representing the changes observed in the period selected. In the example, there was no change of number of Issues on the last 31 days, however there was a decrease of 160% of duplicated code.
+In the example above, "Issues" has a red indicator ![](images/repository-dashboard-indicator-red.png) meaning that the number of Issues is above what was defined on the quality standards. Next to each metric there's a delta (can be "=", a drop, or an increase), representing the changes observed during the selected period. In the example, there was no change of number of Issues on the last 31 days, however there was a decrease of 160% of duplicated code.
 
 You should know for Issues/Complex Files/Duplicated code (the more we have it, the worse we are), being above of the defined standards is considered bad, so the indication will be ![](images/repository-dashboard-indicator-red.png) while for Coverage (the more we have it, the better we are), being above the defined standards will be flagged with ![](images/repository-dashboard-indicator-green.png).
 
 Still with regards to coverage it only shows a value if the most recent commit received a coverage report. We do this as one commit can easily change the size or number of files on the repository and even remove some of the files that had coverage information.
 
-If you don't have recent data, we will display by default an option on your graph - "Last 8 commits", and we display the quality evolution (and all the other metrics) for your last 8 commits analyzed on Codacy.
+If you don't have recent data, Codacy displays the chart and all the metrics for the last 8 analyzed commits instead.
+
 
 ## 2. Issues breakdown {: id="issues-breakdown"}
 
-Here you can see the total of issues on the branch selected.
-
-Additionally, you will see a breakdown of the issues found per category of issue. By clicking on the name of the category, you will be directed to the list of issues filtered by that category.
+This area displays the total number of issues found on the selected branch, as well as a breakdown of the number of issues in each category.
 
 ![Issues breakdown](images/repository-dashboard-issues-breakdown.png)
 
-You can also click on "See all issues" and go to the list of issues with no category selected. In case you don't have issues this component will display 0 issues (in the total and in all categories).
+Click **See all issues** to see the full list of issues found, or click the name of a category to see only the issues in that category.
+
 
 ## 3. Coverage status {: id="coverage-status"}
 
-On this component of the Repository Dashboard you will see the number of files without coverage, the number of files with coverage "not up to standards" and files with coverage "up to standards" based on your [quality settings](quality-settings.md) (defined at the repository level). If you click on "See all files" you will go to the list of files.
+This area displays the number of files without coverage, the number of files with coverage "not up to standards", and files with coverage "up to standards" based on your repository [quality settings](quality-settings.md).
 
 ![Coverage status](images/repository-dashboard-coverage-status.png)
 
-In case you don't have coverage set up for this repository we will let you know on this component, and you can click on "Set up your coverage here" (in case you have "write" permission on the Repository) and go to the repository settings to configure set up coverage.
+Click **See all files** to open the list of files.
+
+In case you don't have coverage set up for this repository we will let you know on this component, and if you have write permission on the repository you can click **Set up your coverage here** to set up coverage.
 
 ## 4. Pull requests status {: id="pull-requests-status"}
 
-Under this section you will see a display of all open pull requests for this repository and their split between "Not up to standards", "Up to standards" and "Analysis failed". If you click on "See all pull requests" you go to the Pull requests page for that repository.
+This area displays the number of open pull requests in the repository and the split between "Not up to standards", "Up to standards", and "Analysis failed".
 
 ![Pull requests status](images/repository-dashboard-pr-status.png)
 
-We would love your feedback, in case you want to let us know what you think about the Repository Dashboard, how it could be improved, etc feel free to reach out!
+Click **See all pull requests** to open the list of pull requests in the repository.
