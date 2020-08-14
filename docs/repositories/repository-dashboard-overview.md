@@ -1,16 +1,17 @@
 # Repository Dashboard overview
 
-On your **Repository Dashboard** you get an overview of the repository and attention points we select for you on relevant items requiring your intervention. Read below for a full description of this dashboard and all the functionalities behind it!
+Your **Repository Dashboard** offers an overview of the repository and attention points we select for you on relevant items requiring your intervention.
 
-## How does it look?
+You can access the Repository Dashboard by selecting a specific repository on the [Organization Dashboard](../organizations/organization-dashboard-overview.md), or by opening a repository on any other page of the platform.
 
-On the Repository Dashboard you can find two main sections: the repository view of a specific branch (on the left side (in white) and the main branch summary view on the right side (in gray). Overall, you will find 3 main sections on the branch specific section: **1 Quality evolution Chart**, **2 Issues breakdown**, **3 Coverage status**; and on the main branch section: **4 Hotspots**, **5 Logs** and **6 Pull requests status** sections.
+On the Repository Dashboard you can find two main sections: the repository view of a specific branch (in white) and the main branch summary view on the right side (in gray). Overall, you will find 3 main sections on the branch specific section:
+
+1.  [Repository certification and quality evolution chart](#repository-certification-and-quality-evolution-chart)
+1.  [Issues breakdown](#issues-breakdown)
+1.  [Coverage status](#coverage-status)
+1.  [Pull requests status](#pull-requests-status)
 
 ![](images/Screen_Shot_2018-05-03_at_22.33.18.png)
-
-## How can I access the Repository Dashboard?
-
-You can access the Repository Dashboard by selecting on the Organization Dashboard a specific repository, or by trying to access a repository URL for any part of our platform.
 
 On the Repository Dashboard you can select which branch you want to see details for. You can do this by selecting (or searching on the search bar) for a specific branch, next to the name of the repository:
 
@@ -20,9 +21,10 @@ At any given moment in time, you can go back to your Organization view by clicki
 
 ![](images/Screen_Shot_2018-05-03_at_22.40.11.png)
 
-## What are the functionalities available?
+The following sections provide a detailed overview of each dashboard area.
 
-### 1. Repository certification and Quality evolution
+
+## 1. Repository certification and quality evolution chart {: id="repository-certification-and-quality-evolution-chart"}
 
 Here you can see the grade of the repository, and you can see the quality evolution of the repository on the **Quality evolution Chart**.
 
@@ -42,7 +44,7 @@ Still with regards to coverage it only shows a value if the most recent commit r
 
 For the case when you don't have recent data, we will display by default an option on your graph - "Last 8 commits", and we display the quality evolution (and all the other metrics) for your last 8 commits analyzed on Codacy.
 
-### 2. Issues breakdown
+## 2. Issues breakdown {: id="issues-breakdown"}
 
 Here you can see the total of issues on the branch selected.
 
@@ -52,7 +54,7 @@ Additionally, you will see a breakdown of the issues found per category of issue
 
 You can also click on "See all issues" and go to the list of issues with no category selected. In case you don't have issues this component will display 0 issues (in the total and in all categories).
 
-### 3. Coverage status
+## 3. Coverage status {: id="coverage-status"}
 
 On this component of the Repository Dashboard you will see the number of files without coverage, the number of files with coverage "not up to standards" and files with coverage "up to standards" based on your [quality settings](quality-settings.md) (defined at the repository level). If you click on "See all files" you will go to the list of files.
 
@@ -60,15 +62,7 @@ On this component of the Repository Dashboard you will see the number of files w
 
 In case you don't have coverage set up for this repository we will let you know on this component, and you can click on "Set up your coverage here" (in case you have "write" permission on the Repository) and go to the repository settings to configure set up coverage.
 
-### 4. Hotspots
-
-You have a section of relevant items that require attention on the Repository. On this section you can see a set of attention points, you can click on them or dismiss them, in case you don't feel they are relevant. We have created a [full article on this](../faq/repositories/hotspots-overview.md), so that you can learn more about it.
-
-### 5. Logs
-
-You have a section of relevant activities that happened on the repository you selected. We have created a [full article on this](../faq/repositories/what-are-logs.md), so you can learn more about it.
-
-### 6. Pull requests status
+## 4. Pull requests status {: id="pull-requests-status"}
 
 Under this section you will see a display of all open pull requests for this repository and their split between "Not up to standards", "Up to standards" and "Analysis failed". If you click on "See all pull requests" you go to the Pull requests page for that repository.
 
