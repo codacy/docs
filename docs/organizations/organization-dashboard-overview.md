@@ -6,15 +6,15 @@ You can access your Organization Dashboard by selecting a specific organization 
 
 On the Organization Dashboard, you have three areas that will help you monitor your team's repositories:
 
--   Overall quality chart (1)
--   Open pull requests (2)
--   Last updated repositories (3).
+1.  [Overall quality chart](#overall-quality-chart)
+1.  [Open pull requests](#open-pull-requests)
+1.  [Last updated repositories](#last-updated-repositories)
 
 ![Organization Dashboard overview](images/organization-dashboard-overview.png)
 
 The following sections provide a detailed overview of each dashboard area.
 
-## Overall quality chart
+## Overall quality chart {: id="overall-quality-chart"}
 
 The Overall Quality Chart displays your repositories and compares them against the average grade, your defined goal, and across each specific criteria: Issues, Complex Files, Duplication, and Coverage.
 
@@ -35,43 +35,24 @@ Hover over each group of repositories to see a summary.
 
 ![Overall quality chart with grouped repositories hover](images/organization-dashboard-overall-quality-grouped-hover.png)
 
-### Other criteria
+For each specific criteria (Issues, Complex Files, Duplication, and Coverage), you can click on its tab to compare repositories. This comparison will display the current statuses of your repositories against the average and against your goal for this criteria.
 
--   For each specific criteria (Issues, Complex Files, Duplication, and Coverage), you can click on its tab to compare repositories.
--   This comparison will display your repositories' current statuses against the average and against your goal for this criteria.
+!!! note
+    The graph will notify you when you click on the Coverage tab if you don't have [Coverage set up](../repositories-configure/coverage.md) for any of your repositories.
 
 ![Other criteria](images/organization-dashboard-other-criteria.png)
-
-### What if you don't have Coverage set up?
-
-The graph will notify you when you click on the Coverage tab if you don't have Coverage set up for any of your repositories.
-
-### What if I don't have enough repositories for comparison?
 
 If you don't have enough repositories for comparison, don't worry - we have included some Open Source repositories for comparison so you can see how you match up.
 
 ![Quality comparison with Open Source projects](images/organization-dashboard-overall-quality-open-source.png)
 
-## Open pull requests
+## Open pull requests {: id="open-pull-requests"}
 
-Under this area you can see two tabs:
-
--   **Most problematic** pull requests
--   **Last updated** pull requests
-
-These represent a short list of the open pull requests on the repositories of the selected team(s).
-
-### Most problematic
-
-Here you can see a short list of the most problematic open pull requests in all repositories of the selected team(s). These pull requests are defined as those not up to your defined standards that have the most potential to negatively affect your code quality.
-
-You can click directly on each pull request to see more details.
+The **Most problematic** tab displays a short list of the open pull requests that are not up to your defined standards and have the most potential to negatively affect your code quality. You can click directly on each pull request to see more details.
 
 ![Most problematic pull requests](images/organization-dashboard-prs-problematic.png)
 
-### Last updated
-
-This tab displays a short list of all open pull requests sorted by the date of update with a status. Pull requests can be:
+The **Last updated** tab displays open pull requests sorted by the date of update with a status. Pull requests can be:
 
 -   Not up to standards
 -   Up to standards
@@ -80,10 +61,10 @@ This tab displays a short list of all open pull requests sorted by the date of u
 
 ![Last updated pull requests](images/organization-dashboard-prs-last-updated.png)
 
-## Last updated repositories
+## Last updated repositories {: id="last-updated-repositories"}
 
 This area displays a maximum of 6 repositories by date of last update. Each repository card will display the date of the last update, the current grade, and the status for each criteria.
 
-You can also See all repositories or Add a repository here.
+You can also see all repositories or add a repository here.
 
 ![Last updated repositories](images/organization-dashboard-repositories-last-updated.png)
