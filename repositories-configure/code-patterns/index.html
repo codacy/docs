@@ -17,7 +17,7 @@
     
     
       
-        <title>Code Patterns - Codacy docs</title>
+        <title>Code patterns - Codacy docs</title>
       
     
     
@@ -545,14 +545,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Code Patterns
+        Code patterns
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
         </span>
       </label>
     
-    <a href="./" title="Code Patterns" class="md-nav__link md-nav__link--active">
-      Code Patterns
+    <a href="./" title="Code patterns" class="md-nav__link md-nav__link--active">
+      Code patterns
     </a>
     
       
@@ -569,24 +569,11 @@
     Pattern details and filters
   </a>
   
-    <nav class="md-nav md-nav--toc" aria-label="Pattern details and filters">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#the-issues-detected-by-codacy-belong-to-one-of-the-following-categories" class="md-nav__link">
-    The issues detected by Codacy belong to one of the following categories:
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#configure-your-repository-patterns" class="md-nav__link">
-    Configure your repository patterns
+  <a href="#configuring-your-repository-patterns" class="md-nav__link">
+    Configuring your repository patterns
   </a>
   
 </li>
@@ -595,26 +582,6 @@
   <a href="#account-vs-repository-patterns" class="md-nav__link">
     Account vs repository patterns
   </a>
-  
-    <nav class="md-nav md-nav--toc" aria-label="Account vs repository patterns">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#account-patterns" class="md-nav__link">
-    Account patterns
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#repository-patterns" class="md-nav__link">
-    Repository patterns
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1197,8 +1164,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../account/default-patterns/" title="Default Patterns" class="md-nav__link">
-      Default Patterns
+    <a href="../../account/default-patterns/" title="Default patterns" class="md-nav__link">
+      Default patterns
     </a>
   </li>
 
@@ -3006,15 +2973,15 @@
                   
                 
                 
-                <h1 id="code-patterns">Code Patterns<a class="headerlink" href="#code-patterns" title="Permanent link">&para;</a></h1>
+                <h1 id="code-patterns">Code patterns<a class="headerlink" href="#code-patterns" title="Permanent link">&para;</a></h1>
 <p>As a wise man once said, "You can't please everyone", and that is true for code patterns. But don't you worry! You can choose from a range of patterns to fit your needs.</p>
 <h2 id="pattern-details-and-filters">Pattern details and filters<a class="headerlink" href="#pattern-details-and-filters" title="Permanent link">&para;</a></h2>
 <p>Each pattern has a title and a short description. To see a detailed explanation you can click on Show Details in the top right corner (mouse over the pattern and the Show Details option will appear):</p>
-<p><img alt="" src="/images/pattern-explanation.png" /> </p>
+<p><img alt="Code pattern details" src="../images/code-pattern-detail.png" /> </p>
 <p>The pattern explanation shows more detail about the issues it can detect and how to fix them.</p>
 <p>You can filter the patterns by category using the side menu:</p>
-<p><img alt="" src="/images/c14f895e0f57610b7fd706e27b31925e785e1a184549e765daf9f1e69ad54602.png" /></p>
-<h3 id="the-issues-detected-by-codacy-belong-to-one-of-the-following-categories">The issues detected by Codacy belong to one of the following categories:<a class="headerlink" href="#the-issues-detected-by-codacy-belong-to-one-of-the-following-categories" title="Permanent link">&para;</a></h3>
+<p><img alt="Filtering code patterns" src="../images/code-pattern-category.png" /></p>
+<p>The issues detected by Codacy belong to one of the following categories:</p>
 <ul>
 <li>
 <p><strong>Code Style:</strong> Code formatting and syntax problems. For example, variable names style, enforcing the use of brackets and quotation marks</p>
@@ -3041,24 +3008,18 @@
 <p><strong>Documentation:</strong> Detects methods and classes that do not have the correct comment annotations</p>
 </li>
 </ul>
-<h2 id="configure-your-repository-patterns">Configure your repository patterns<a class="headerlink" href="#configure-your-repository-patterns" title="Permanent link">&para;</a></h2>
-<p>To configure the patterns used to analyse your repository simply click on the checkbox on the left of the title:</p>
-<p><img alt="" src="/images/enabled.png" /></p>
-<p>When you change the enabled patterns you can reanalyse your repository. To do that, just enter the latest commit from your list on the <strong>Commit</strong> view and click to <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">reanalyse</a>.</p>
-<p><img alt="" src="/images/b76fc1f9e8dab5a1db65856b0dd09ce79a156a013573cdef5a700e823dc53547.png" /></p>
+<h2 id="configuring-your-repository-patterns">Configuring your repository patterns<a class="headerlink" href="#configuring-your-repository-patterns" title="Permanent link">&para;</a></h2>
+<p>To configure the patterns used to analyze your repository click on the checkbox to the left of the title:</p>
+<p><img alt="Enabling code patterns" src="../images/code-pattern-enable.png" /></p>
+<p>When you change the enabled patterns you can reanalyze your repository. To do that, enter the latest commit from your list on the <strong>Commit</strong> view and click <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">reanalyze</a>.</p>
 <h2 id="account-vs-repository-patterns">Account vs repository patterns<a class="headerlink" href="#account-vs-repository-patterns" title="Permanent link">&para;</a></h2>
-<h3 id="account-patterns">Account patterns<a class="headerlink" href="#account-patterns" title="Permanent link">&para;</a></h3>
-<p>Here you can change the default selection of patterns by enabling / disabling  them for all future repositories added by you. Just
-go to <strong>Account Settings</strong> and open <strong>Default Patterns</strong>:</p>
-<p><img alt="" src="/images/Screen_Shot_2018-01-12_at_11.21.22.png" /></p>
-<h3 id="repository-patterns">Repository patterns<a class="headerlink" href="#repository-patterns" title="Permanent link">&para;</a></h3>
-<p>Here you can specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. You can go to <strong>Code patterns</strong>:</p>
-<p><img alt="" src="/images/Screen_Shot_2019-06-18_at_17.57.58.png" /></p>
+<p>Your <strong>account patterns</strong> allow you to change the default selection of patterns by enabling or disabling them for all future repositories added by you. See <a href="../../account/default-patterns/">Default patterns</a> for more details.</p>
+<p>The <strong>repository patterns</strong> specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. Open <strong>Code patterns</strong>:</p>
+<p><img alt="Code patterns configuration page" src="../images/code-pattern-page.png" /></p>
 <h2 id="i-have-my-own-tool-configuration-file">I have my own tool configuration file<a class="headerlink" href="#i-have-my-own-tool-configuration-file" title="Permanent link">&para;</a></h2>
-<p>If you have configuration files for your static analysis tool of choice, just add it to the root of your repository and Codacy will pick it up automatically.</p>
-<p><strong>Supported Configuration files</strong></p>
-<p>Codacy currently supports configuration files for several tools. To have results according to your configuration file, you need to go to the Code Patterns view, select <strong>Configuration file</strong> for the respective tool, and select the option as shown in the example below.</p>
-<p><img alt="" src="/images/Screen_Shot_2017-10-09_at_18.54.12.png" /></p>
+<p>If you have configuration files for your static analysis tool of choice, add it to the root of your repository and Codacy will pick it up automatically.</p>
+<p>Codacy supports configuration files for several tools. To have results according to your configuration file, you need to go to the Code Patterns view, select <strong>Configuration file</strong> for the respective tool, and select the option as shown in the example below.</p>
+<p><img alt="Using a configuration file" src="../images/code-pattern-config-file.png" /></p>
 <p>The known file names for each tool are the following:</p>
 <table>
 <tbody>
@@ -3268,7 +3229,7 @@ engines:
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 7, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 16, 2020</span>
     
   </small>
 </div>
