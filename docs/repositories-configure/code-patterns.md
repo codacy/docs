@@ -1,4 +1,4 @@
-# Code Patterns
+# Code patterns
 
 As a wise man once said, "You can't please everyone", and that is true for code patterns. But don't you worry! You can choose from a range of patterns to fit your needs.
 
@@ -6,15 +6,15 @@ As a wise man once said, "You can't please everyone", and that is true for code 
 
 Each pattern has a title and a short description. To see a detailed explanation you can click on Show Details in the top right corner (mouse over the pattern and the Show Details option will appear):
 
-![](/images/pattern-explanation.png) 
+![Code pattern details](images/code-pattern-detail.png) 
 
 The pattern explanation shows more detail about the issues it can detect and how to fix them.
 
 You can filter the patterns by category using the side menu:
 
-![](/images/c14f895e0f57610b7fd706e27b31925e785e1a184549e765daf9f1e69ad54602.png)
+![Filtering code patterns](images/code-pattern-category.png)
 
-### The issues detected by Codacy belong to one of the following categories:
+The issues detected by Codacy belong to one of the following categories:
 
 -   **Code Style:** Code formatting and syntax problems. For example, variable names style, enforcing the use of brackets and quotation marks
 
@@ -32,40 +32,29 @@ You can filter the patterns by category using the side menu:
 
 -   **Documentation:** Detects methods and classes that do not have the correct comment annotations
 
-## Configure your repository patterns
+## Configuring your repository patterns
 
-To configure the patterns used to analyse your repository simply click on the checkbox on the left of the title:
+To configure the patterns used to analyze your repository click on the checkbox to the left of the title:
 
-![](/images/enabled.png)
+![Enabling code patterns](images/code-pattern-enable.png)
 
-When you change the enabled patterns you can reanalyse your repository. To do that, just enter the latest commit from your list on the **Commit** view and click to [reanalyse](../faq/repositories/how-do-i-reanalyze-my-repository.md).
-
-![](/images/b76fc1f9e8dab5a1db65856b0dd09ce79a156a013573cdef5a700e823dc53547.png)
+When you change the enabled patterns you can reanalyze your repository. To do that, enter the latest commit from your list on the **Commit** view and click [reanalyze](../faq/repositories/how-do-i-reanalyze-my-repository.md).
 
 ## Account vs repository patterns
 
-### Account patterns
+Your **account patterns** allow you to change the default selection of patterns by enabling or disabling them for all future repositories added by you. See [Default patterns](../account/default-patterns.md) for more details.
 
-Here you can change the default selection of patterns by enabling / disabling  them for all future repositories added by you. Just
-go to **Account Settings** and open **Default Patterns**:
+The **repository patterns** specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. Open **Code patterns**:
 
-![](/images/Screen_Shot_2018-01-12_at_11.21.22.png)
-
-### Repository patterns
-
-Here you can specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. You can go to **Code patterns**:
-
-![](/images/Screen_Shot_2019-06-18_at_17.57.58.png)
+![Code patterns configuration page](images/code-pattern-page.png)
  
 ## I have my own tool configuration file
 
-If you have configuration files for your static analysis tool of choice, just add it to the root of your repository and Codacy will pick it up automatically.
+If you have configuration files for your static analysis tool of choice, add it to the root of your repository and Codacy will pick it up automatically.
 
-**Supported Configuration files**
+Codacy supports configuration files for several tools. To have results according to your configuration file, you need to go to the Code Patterns view, select **Configuration file** for the respective tool, and select the option as shown in the example below.
 
-Codacy currently supports configuration files for several tools. To have results according to your configuration file, you need to go to the Code Patterns view, select **Configuration file** for the respective tool, and select the option as shown in the example below.
-
-![](/images/Screen_Shot_2017-10-09_at_18.54.12.png)
+![Using a configuration file](images/code-pattern-config-file.png)
 
 The known file names for each tool are the following:
 

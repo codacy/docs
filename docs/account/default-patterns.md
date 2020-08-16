@@ -1,4 +1,4 @@
-# Default Patterns
+# Default patterns
 
 When you register a repository without having set your own default patterns, Codacy will apply a subset of the existing patterns to the repository. The patterns enabled by default are chosen according to community feedback or previously approved existing coding standards.
 
