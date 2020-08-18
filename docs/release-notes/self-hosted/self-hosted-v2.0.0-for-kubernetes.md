@@ -4,7 +4,62 @@ These release notes are for [Codacy Self-hosted v2.0.0](https://github.com/codac
 
 ## Breaking changes
 
-TODO: List changes to Chart configuration values
+This version of Codacy Self-hosted introduces changes to the file [`values-production.yaml`](/chart/values-files/values-production.yaml){: target="_blank"}. You must update your version of the file to match the structure of the new file:
+
+-   The following analysis workers configuration values moved from:
+
+    ```yaml
+    worker-manager:
+      config:
+        workers:
+            [...]
+        workerResources:
+            [...]
+        pluginResources:
+            [...]
+    ```
+
+    To:
+    
+    ```yaml
+    global:
+      workerManager:
+        workers:
+          config:
+            [...]
+            workerResources:
+                [...]
+            pluginResources:
+                [...]
+    ```
+
+-   The following database configuration values moved from:
+
+    ```yaml
+    hotspots-api:
+      hotspotsdb:
+        [...]
+    
+    activities:
+      activitiesdb:
+        [...]
+    
+    crow:
+      crowdb:
+        [...]
+    ```
+
+    To:
+    
+    ```yaml
+    global:
+      hotspotsdb:
+        [...]
+      activitiesdb:
+        [...]
+      crowdb:
+        [...]
+    ```
 
 ## Product enhancements
 
