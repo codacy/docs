@@ -57,3 +57,5 @@ prometheus:
     replicas: 1
     serviceMonitorSelectorNilUsesHelmValues: false
     walCompression: true
+    ruleSelectorNilUsesHelmValues: false
+    ruleSelector: {}

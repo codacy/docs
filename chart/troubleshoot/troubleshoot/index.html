@@ -1551,6 +1551,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../maintenance/license/" title="Updating your Codacy license" class="md-nav__link">
+      Updating your Codacy license
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../maintenance/upgrade/" title="Upgrading Codacy" class="md-nav__link">
       Upgrading Codacy
     </a>
@@ -1719,6 +1731,26 @@
         
       </ul>
     </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#codacy-configuration" class="md-nav__link">
+    Codacy configuration
+  </a>
+  
+    <nav class="md-nav md-nav--toc" aria-label="Codacy configuration">
+      <ul class="md-nav__list md-nav__list--toc">
+        
+          <li class="md-nav__item md-nav__item--toc">
+  <a href="#accessing-the-rabbitmq-dashboard" class="md-nav__link">
+    Accessing the RabbitMQ dashboard
+  </a>
   
 </li>
         
@@ -3091,6 +3123,31 @@
 <li>Take note of the parameter <code>client_id</code> in the URL of the Bitbucket Cloud error page (for example, <code>r8QJDkkxj8unYfg4Bd</code>)</li>
 <li>Check if the value of the parameter matches the value of the Client ID of your Bitbucket OAuth consumer</li>
 </ol>
+<h2 id="codacy-configuration">Codacy configuration<a class="headerlink" href="#codacy-configuration" title="Permanent link">&para;</a></h2>
+<p>The following sections help you troubleshoot the Codacy configuration.</p>
+<h3 id="accessing-the-rabbitmq-dashboard">Accessing the RabbitMQ dashboard<a class="headerlink" href="#accessing-the-rabbitmq-dashboard" title="Permanent link">&para;</a></h3>
+<p>We use RabbitMQ for the internal message queue between our components.</p>
+<p>If you need to access the RabbitMQ dashboard:</p>
+<ol>
+<li>
+<p>Create a <code>port-forward</code> from the <code>rabbitmq</code> pod to your local machine, replacing <code>&lt;namespace&gt;</code> with the namespace in which Codacy was installed:</p>
+<div class="highlight"><pre><span></span><code>kubectl port-forward codacy-rabbitmq-ha-0 <span class="m">15672</span>:15672 --namespace<span class="o">=</span>&lt;namespace&gt;
+</code></pre></div>
+
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you are using MicroK8s</strong> use <code>microk8s.kubectl</code> instead of <code>kubectl</code>.</p>
+</div>
+</li>
+<li>
+<p>Access the RabbitMQ dashboard on the address <code>localhost:15672</code>, and log in with the configured RabbitMQ credentials.</p>
+<p>The default RabbitMQ credentials are the following:</p>
+<ul>
+<li><strong>Username:</strong> <code>rabbitmq-codacy</code></li>
+<li><strong>Password:</strong> <code>rabbitmq-codacy</code></li>
+</ul>
+</li>
+</ol>
                 
                   
                     
@@ -3098,7 +3155,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 12, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 18, 2020</span>
     
   </small>
 </div>

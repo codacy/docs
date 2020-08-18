@@ -1582,6 +1582,13 @@
   
 </li>
         
+          <li class="md-nav__item md-nav__item--toc">
+  <a href="#5-enable-service-dashboards" class="md-nav__link">
+    5. Enable service dashboards
+  </a>
+  
+</li>
+        
       </ul>
     </nav>
   
@@ -1623,6 +1630,18 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../maintenance/license/" title="Updating your Codacy license" class="md-nav__link">
+      Updating your Codacy license
+    </a>
+  </li>
+
         
           
           
@@ -3006,11 +3025,12 @@
 <p>We highly recommend that you define a custom password for Crow, if you haven't already done it when installing Codacy:</p>
 <ol>
 <li>
-<p>Edit the value of <code>crow.config.passwordAuth.password</code> in the <code>values-production.yaml</code> file that you used to install Codacy:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">crow</span><span class="p">:</span>
-  <span class="nt">config</span><span class="p">:</span>
-    <span class="nt">passwordAuth</span><span class="p">:</span>
-      <span class="nt">password</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">C0dacy123</span>
+<p>Edit the value of <code>global.crow.config.passwordAuth.password</code> in the <code>values-production.yaml</code> file that you used to install Codacy:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
+  <span class="nt">crow</span><span class="p">:</span>
+    <span class="nt">config</span><span class="p">:</span>
+      <span class="nt">passwordAuth</span><span class="p">:</span>
+        <span class="nt">password</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">C0dacy123</span>
 </code></pre></div>
 
 </li>
@@ -3079,6 +3099,33 @@ helm upgrade --install --atomic --timeout 600s loki loki/loki <span class="se">\
 </code></pre></div>
 
 <p>Follow the <a href="https://v1-15.docs.kubernetes.io/docs/tasks/administer-cluster/access-cluster-services/#accessing-services-running-on-the-cluster">Kubernetes documentation</a> to access the Grafana service that is now running on your cluster, using the method that best suits your use case.</p>
+<h3 id="5-enable-service-dashboards">5. Enable service dashboards<a class="headerlink" href="#5-enable-service-dashboards" title="Permanent link">&para;</a></h3>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Currently, the application metrics and information reported by the Codacy components to populate service dashboards are very limited since we are still developing these reporting capabilities.</p>
+<p>As such, we recommend that you skip this configuration.</p>
+</div>
+<p>Now that you have Prometheus and Grafana installed you can enable <code>serviceMonitor</code> and <code>grafana_dashboards</code> for Codacy components.</p>
+<ol>
+<li>
+<p>Create a file named <code>values-monitoring.yaml</code> with the following content:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
+  <span class="nt">metrics</span><span class="p">:</span>
+    <span class="nt">serviceMonitor</span><span class="p">:</span>
+      <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+    <span class="nt">grafana</span><span class="p">:</span>
+      <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+
+</li>
+<li>
+<p>Apply this configuration by performing a Helm upgrade. To do so append <code>--values values-monitoring.yaml</code> to the command <a href="../../#helm-upgrade">used to install Codacy</a>:</p>
+<div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span> <span class="se">\</span>
+             --values values-monitoring.yaml
+</code></pre></div>
+
+</li>
+</ol>
                 
                   
                     
@@ -3086,7 +3133,7 @@ helm upgrade --install --atomic --timeout 600s loki loki/loki <span class="se">\
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 12, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 18, 2020</span>
     
   </small>
 </div>

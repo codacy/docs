@@ -1624,6 +1624,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../maintenance/license/" title="Updating your Codacy license" class="md-nav__link">
+      Updating your Codacy license
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../maintenance/upgrade/" title="Upgrading Codacy" class="md-nav__link">
       Upgrading Codacy
     </a>
@@ -2984,6 +2996,9 @@
                 
                 <h1 id="creating-an-amazon-eks-cluster">Creating an Amazon EKS cluster<a class="headerlink" href="#creating-an-amazon-eks-cluster" title="Permanent link">&para;</a></h1>
 <p>Follow the instructions below to set up an Amazon EKS cluster from scratch, including all the necessary underlying infrastructure, using Terraform.</p>
+<p><img alt="codacy eks quicksart" src="../images/codacy-chart-eks-quickstart.jpg" /></p>
+<p>The image above is a non-exhaustive overview of what you can expect to have
+deployed in your AWS account by using this quickstart.</p>
 <h2 id="1-prepare-your-environment">1. Prepare your environment<a class="headerlink" href="#1-prepare-your-environment" title="Permanent link">&para;</a></h2>
 <p>Prepare your environment to set up the Amazon EKS cluster:</p>
 <ol>
@@ -3116,11 +3131,12 @@ helm repo update
 <ol>
 <li>
 <p>Download the configuration file <a href="../../values-files/values-nginx.yaml"><code>values-nginx.yaml</code></a> for the NGINX Ingress Controller.</p>
-<p>If you wish to use a private load balancer edit the file and enable the required annotation where indicated.</p>
+<p>If you wish to use a private load balancer or restrict the IP range for the provisioned load balancer edit the file and enable the required annotation and/or the corresponding setting where indicated.</p>
 </li>
 <li>
 <p>Install the NGINX Ingress Controller:</p>
-<div class="highlight"><pre><span></span><code>helm upgrade --install --namespace codacy --version <span class="m">1</span>.39.0 codacy-nginx-ingress stable/nginx-ingress -f values-nginx.yaml
+<div class="highlight"><pre><span></span><code>kubectl create namespace codacy
+helm upgrade --install --namespace codacy --version <span class="m">1</span>.39.0 codacy-nginx-ingress stable/nginx-ingress -f values-nginx.yaml
 </code></pre></div>
 
 </li>
@@ -3158,7 +3174,7 @@ then will <code>terraform destroy</code> be able to destroy the backend.</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 12, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 18, 2020</span>
     
   </small>
 </div>

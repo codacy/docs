@@ -114,16 +114,10 @@ variable "vpc_id" {
   default     = null
 }
 
-variable "subnet1_id" {
-  description = "ID of subnet 1 (only used if create_network_stack == false)"
-  type        = string
-  default     = null
-}
-
-variable "subnet2_id" {
-  description = "ID of subnet 2 (only used if create_network_stack == false)"
-  type        = string
-  default     = null
+variable "subnet_ids" {
+  description = "List of subnet IDs to use for the cluster (only used if create_network_stack == false)"
+  type        = list(string)
+  default     = []
 }
 
 ### general

@@ -1601,6 +1601,18 @@
 
 
   <li class="md-nav__item">
+    <a href="maintenance/license/" title="Updating your Codacy license" class="md-nav__link">
+      Updating your Codacy license
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="maintenance/upgrade/" title="Upgrading Codacy" class="md-nav__link">
       Upgrading Codacy
     </a>
@@ -3002,13 +3014,7 @@
 </div>
 </li>
 <li>
-<p><a href="https://helm.sh/docs/intro/install/">Helm</a> version 3.2</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Helm 3.3 is not supported because there is a known incompatibility with the MinIO chart currently used by Codacy.</p>
-<p>More specifically, <strong>Helm versions compiled with Go 1.14 or later are not supported</strong>. You can check the Go version that was used to compile Helm with <code>helm version</code>.</p>
-<p>This will be fixed in a future version of Codacy Self-hosted.</p>
-</div>
+<p><a href="https://helm.sh/docs/intro/install/">Helm</a> version &gt;= 3.2</p>
 </li>
 </ul>
 </li>
@@ -3090,9 +3096,11 @@ codacy-worker-manager-656dbf8d6d-n4j7c          <span class="m">1</span>/1     R
 <p>Use a browser to navigate to the Codacy hostname previously configured on the file <code>values-production.yaml</code>.</p>
 </li>
 <li>
+<p>Log in using your Git provider account. This automatically creates a Codacy administrator account with your credentials.</p>
+</li>
+<li>
 <p>Follow Codacy's onboarding process, which will guide you through the following steps:</p>
 <ul>
-<li>Creating an administrator account</li>
 <li>Configuring one or more of the following supported integrations:<ul>
 <li><a href="configuration/integrations/github-cloud/">GitHub Cloud</a></li>
 <li><a href="configuration/integrations/github-enterprise/">GitHub Enterprise</a></li>
@@ -3122,7 +3130,7 @@ codacy-worker-manager-656dbf8d6d-n4j7c          <span class="m">1</span>/1     R
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 12, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 18, 2020</span>
     
   </small>
 </div>

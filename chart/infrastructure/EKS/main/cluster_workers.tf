@@ -7,7 +7,7 @@ resource "aws_autoscaling_group" "workers" {
   min_size             = var.k8s_worker_min
   max_size             = var.k8s_worker_max
   desired_capacity     = var.k8s_worker_desired
-  vpc_zone_identifier  = var.create_network_stack ? [aws_subnet.private1[0].id, aws_subnet.private2[0].id] : [var.subnet1_id, var.subnet2_id]
+  vpc_zone_identifier  = var.create_network_stack ? [aws_subnet.private1[0].id, aws_subnet.private2[0].id] : var.subnet_ids
 
   tag {
     key                 = "Name"

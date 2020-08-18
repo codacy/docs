@@ -71,6 +71,7 @@ worker-manager:
     workerResources:
       limits:
         memory: "2Gi"
+
 crow:
   resources:
     limits:
@@ -88,4 +89,4 @@ codacy-spa:
   replicaCount: 1
   resources:
     limits:
-      memory: 384Mi
+      memory: 1000Mi

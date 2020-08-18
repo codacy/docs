@@ -3,9 +3,14 @@ controller:
   publishService:
     enabled: true
   service:
-    # Use this annotation if you want private load balancers on AWS
+    ## Use this annotation if you want private load balancers on AWS
     #annotations:
     #  service.beta.kubernetes.io/aws-load-balancer-internal: "true"
+    #
+    ## Use this setting do restrict the load balancer source ip ranges.
+    #loadBalancerSourceRanges:
+    #  - 10.0.0.0/16 # set this for the desired CIDR
+    #
     clusterIP: "-"
   defaultBackend:
     clusterIP: "-"
