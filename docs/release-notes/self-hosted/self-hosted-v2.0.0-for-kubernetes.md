@@ -61,6 +61,10 @@ This version of Codacy Self-hosted introduces changes to the file [`values-produ
         [...]
     ```
 
+## Product enhancements
+
+-   Now, the chart for Codacy Self-hosted also [supports Helm 3.3](/v2.0/chart/#2-installing-codacy).
+
 ## Bug fixes
 
 -    Now, Codacy provides feedback if the Country field is empty while updating the invoice details for an organization. (CY-2600)
