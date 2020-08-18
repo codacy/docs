@@ -76,19 +76,19 @@ This version of Codacy Self-hosted introduces changes to the file [`values-produ
 
 This version of Codacy Self-hosted includes the tool versions below. The tools that were updated on this version are highlighted in bold:
 
--   **Ameba: 0.13.1**
+-   **Ameba: 0.13.1 (updated from 0.12.0)**
 -   Bandit: 1.6.2
 -   Brakeman: 4.3.1
 -   Bundler Audit: 0.6.1
 -   Checkstyle: 8.34
--   **Codenarc: 1.6**
--   **Codesniffer: 3.5.6**
+-   **Codenarc: 1.6 (updated from 1.5)**
+-   **Codesniffer: 3.5.6 (updated from 3.5.5)**
 -   Coffeelint: 2.1.0
--   **Cppcheck: 2.1**
+-   **Cppcheck: 2.1 (updated from 1.90)**
 -   Credo: 1.3.0
 -   Csslint: 1.0.5
--   **Detekt: 1.10.0**
--   **Eslint: 7.6.0**
+-   **Detekt: 1.10.0 (updated from 1.8.0)**
+-   **Eslint: 7.6.0 (updated from 6.8.0)**
 -   Flawfinder: 2.0.11
 -   Gorevive: 1.0.2
 -   Gosec: v2.3.0
@@ -106,13 +106,13 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Rubocop: 0.82.0
 -   Scalastyle: 1.0.0
 -   Shellcheck: v0.7.0
--   **Sonar Csharp: 8.10**
--   **Sonar Visual Basic: 8.10**
--   **Spotbugs: 4.0.1**
+-   **Sonar Csharp: 8.10 (updated from 8.9)**
+-   **Sonar Visual Basic: 8.10 (updated from 8.9)**
+-   **Spotbugs: 4.0.1 (updated from 4.0.0)**
 -   Sqlint: 0.1.9
 -   Staticcheck: 2017.2.2
 -   Stylelint: 13.6.1
--   **Swiftlint: 0.39.2**
+-   **Swiftlint: 0.39.2 (updated from 0.36.0)**
 -   Tailor: 0.12.0
 -   Tslint: 5.14.0
 -   Tsqllint: 1.11.1
