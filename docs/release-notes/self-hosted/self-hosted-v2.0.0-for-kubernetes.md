@@ -63,7 +63,7 @@ This version of Codacy Self-hosted introduces changes to the file [`values-produ
 
 ## Product enhancements
 
--   Now, the chart for Codacy Self-hosted also [supports Helm 3.3](/v2.0/chart/#2-installing-codacy).
+-   The chart for Codacy Self-hosted now [supports Helm 3.3](/v2.0/chart/#2-installing-codacy).
 
 ## Bug fixes
 
