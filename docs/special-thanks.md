@@ -17,7 +17,7 @@ In addition to in-house built rules, we use open source tools for many of our st
 <tr class="odd">
 <td>
 <ul>
-<li><a href="https://github.com/adangel/pmd">pmdjava</a></li>
+<li><a href="https://github.com/pmd/pmd">pmd</a></li>
 <li><a href="https://github.com/presidentbeef/brakeman">brakeman</a></li>
 <li><a href="https://github.com/bbatsov/rubocop">rubocop</a></li>
 <li><a href="https://github.com/colszowka/simplecov">simplecov</a></li>

@@ -100,8 +100,8 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Jackson Linter: 2.10.2
 -   Jshint: 2.10.2
 -   Phpmd: 2.8.1
--   Pmdjava: 5.8.1
--   Pmdjava: 6.25.0
+-   PMD (Legacy): 5.8.1
+-   PMD: 6.25.0
 -   Prospector: 1.2.0
 -   Psscriptanalyzer: 1.18.3
 -   Pylint Python3: 2.5.3
