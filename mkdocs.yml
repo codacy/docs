@@ -82,9 +82,9 @@ plugins:
               "hc/en-us/articles/115003405529-Which-permissions-does-Codacy-need-from-my-account-.md": "getting-started/which-permissions-does-codacy-need-from-my-account.md"
               "hc/en-us/sections/201760869-Integrations.md": "repositories-configure/integrations/github-integration.md"
               "hc/en-us/sections/201819605-Working-with-an-organization.md": "organizations/what-are-synced-organizations.md"
-              "hc/en-us/articles/207278449.md": "getting-started/setting-up-your-personal-repositories.md"
-              "hc/en-us/articles/207278449-Setting-up-your-repository.md": "getting-started/setting-up-your-personal-repositories.md"
-              "hc/en-us/articles/207278449-Setting-up-your-personal-repositories.md": "getting-started/setting-up-your-personal-repositories.md"
+              "hc/en-us/articles/207278449.md": "getting-started/getting-started-with-codacy.md"
+              "hc/en-us/articles/207278449-Setting-up-your-repository.md": "getting-started/getting-started-with-codacy.md"
+              "hc/en-us/articles/207278449-Setting-up-your-personal-repositories.md": "getting-started/getting-started-with-codacy.md"
               "hc/en-us/articles/207278449-Getting-started-with-Codacy.md": "getting-started/getting-started-with-codacy.md"
               "hc/en-us/articles/207279599.md": "faq/general/how-does-codacy-keep-my-data-secure.md"
               "hc/en-us/articles/207279599-How-does-Codacy-keep-my-data-secure-.md": "faq/general/how-does-codacy-keep-my-data-secure.md"
@@ -397,13 +397,14 @@ plugins:
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "organizations/why-cant-i-see-my-organization.md"
               "repositories-configure/integrations/bitbucket-cloud-integration.md": "repositories-configure/integrations/bitbucket-integration.md"
+              # Removed pages
+              "getting-started/setting-up-your-personal-repositories.md": "getting-started/getting-started-with-codacy.md"
 
 nav:
     - "Documentation home": "index.md"
     - "Getting started":
           - getting-started/getting-started-with-codacy.md
           - getting-started/i-added-a-repository-now-what.md
-          - getting-started/setting-up-your-personal-repositories.md
           - getting-started/supported-languages.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
     - "Your repositories":
