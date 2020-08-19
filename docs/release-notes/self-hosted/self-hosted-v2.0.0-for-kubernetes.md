@@ -6,6 +6,7 @@ These release notes are for [Codacy Self-hosted v2.0.0](https://github.com/codac
 
 This version of Codacy Self-hosted introduces the following breaking changes:
 
+-   You must manually delete the existing RabbitMQ PVCs before upgrading Codacy.
 -   The structure of the file [`values-production.yaml`](/chart/values-files/values-production.yaml){: target="_blank"} changed. You must update your version of the file to match the structure of the new file:
 
     -   The following analysis workers configuration values moved from:
