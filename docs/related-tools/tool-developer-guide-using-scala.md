@@ -8,7 +8,7 @@ You can also fork the code of one of our tools, and modify it; here are some exa
 
 -   [codacy-phpmd](https://github.com/codacy/codacy-phpmd)
 -   [codacy-jshint](https://github.com/codacy/codacy-jshint)
--   [codacy-pmdJava](https://github.com/codacy/codacy-pmdJava).
+-   [codacy-pmd](https://github.com/codacy/codacy-pmd).
 
 This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the [Tool Developer Guide](tool-developer-guide.md).
 
