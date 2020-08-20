@@ -3007,7 +3007,31 @@
                 <h1 id="self-hosted-v200-for-kubernetes">Self-hosted v2.0.0 for Kubernetes<a class="headerlink" href="#self-hosted-v200-for-kubernetes" title="Permanent link">&para;</a></h1>
 <p>These release notes are for <a href="https://github.com/codacy/chart/releases/tag/2.0.0" target="_blank">Codacy Self-hosted v2.0.0</a> for Kubernetes. <a href="/chart/maintenance/upgrade/">Follow these instructions</a> to upgrade Codacy.</p>
 <h2 id="breaking-changes">Breaking changes<a class="headerlink" href="#breaking-changes" title="Permanent link">&para;</a></h2>
-<p>This version of Codacy Self-hosted introduces changes to the file <a href="/chart/values-files/values-production.yaml" target="_blank"><code>values-production.yaml</code></a>. You must update your version of the file to match the structure of the new file:</p>
+<p>This version of Codacy Self-hosted introduces the following breaking changes:</p>
+<ul>
+<li>
+<p>You must manually delete the existing RabbitMQ PVCs before upgrading Codacy.</p>
+<p>To do this, start by scaling the statefulset of RabbitMQ to zero replicas:</p>
+<div class="highlight"><pre><span></span><code>kubectl scale --replicas<span class="o">=</span><span class="m">0</span> sts/codacy-rabbitmq-ha -n codacy
+</code></pre></div>
+
+<p>Confirm the name of the PVCs that were created by RabbitMQ:</p>
+<div class="highlight"><pre><span></span><code>kubectl get pvc -n codacy
+</code></pre></div>
+
+<p>Finally, delete all the PVCs related to RabbitMQ. You should have three replicas which was the default for versions older than 2.0.0:</p>
+<div class="highlight"><pre><span></span><code>kubectl delete pvc data-codacy-rabbitmq-ha-0 -n codacy
+kubectl delete pvc data-codacy-rabbitmq-ha-1 -n codacy
+kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
+</code></pre></div>
+
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>After you upgrade Codacy, our chart will install a new version of RabbitMQ with the <strong>new default of one replica</strong>.</p>
+</div>
+</li>
+<li>
+<p>The structure of the file <a href="/chart/values-files/values-production.yaml" target="_blank"><code>values-production.yaml</code></a> changed. You must update your version of the file to match the structure of the new file:</p>
 <ul>
 <li>
 <p>The following analysis workers configuration values moved from:</p>
@@ -3059,6 +3083,8 @@
     <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
 </code></pre></div>
 
+</li>
+</ul>
 </li>
 </ul>
 <h2 id="product-enhancements">Product enhancements<a class="headerlink" href="#product-enhancements" title="Permanent link">&para;</a></h2>
@@ -3129,7 +3155,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 19, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 20, 2020</span>
     
   </small>
 </div>
