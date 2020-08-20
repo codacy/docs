@@ -216,9 +216,9 @@ plugins:
               "hc/en-us/articles/360006415313-Enterprise-v2-0-333-.md": "release-notes/self-hosted/enterprise-v2.0.333-.md"
               "hc/en-us/articles/360006566914.md": "release-notes/self-hosted/enterprise-v2.0.337.md"
               "hc/en-us/articles/360006566914-Enterprise-v2-0-337.md": "release-notes/self-hosted/enterprise-v2.0.337.md"
-              "hc/en-us/articles/360006718454.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
-              "hc/en-us/articles/360006718454-Share-your-repository-with-a-non-Codacy-user.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
-              "hc/en-us/articles/360006718454-Share-your-project-with-a-non-Codacy-user.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
+              "hc/en-us/articles/360006718454.md": "index.md"
+              "hc/en-us/articles/360006718454-Share-your-repository-with-a-non-Codacy-user.md": "index.md"
+              "hc/en-us/articles/360006718454-Share-your-project-with-a-non-Codacy-user.md": "index.md"
               "hc/en-us/articles/360006795293.md": "faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md"
               "hc/en-us/articles/360006795293-Repository-failed-to-clone-Generating-a-new-SSH-key.md": "faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md"
               "hc/en-us/articles/360007316034.md": "release-notes/cloud/cloud-release-notes-|-23-july-2018.md"
@@ -396,6 +396,8 @@ plugins:
               # Renamed pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "organizations/why-cant-i-see-my-organization.md"
+              # Removed pages
+              "repositories/share-your-repository-with-a-non-codacy-user.md": "index.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -416,7 +418,6 @@ nav:
           - repositories/quality-settings.md
           - repositories/managing-branches.md
           - repositories/post-commit-hooks.md
-          - repositories/share-your-repository-with-a-non-codacy-user.md
     - "Configuring your repositories":
           - Integrations:
                 - repositories-configure/integrations/github-integration.md
