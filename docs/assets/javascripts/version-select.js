@@ -1,6 +1,6 @@
 window.addEventListener("DOMContentLoaded", function() {
     window.versionPages = {};
-    var VERSION = window.location.pathname.split('/')[1];
+    var VERSION = window.location.pathname.split("/")[1];
     var VERSION_LATEST = ".";
 
     function removePrefix(str, prefix) {
@@ -16,19 +16,19 @@ window.addEventListener("DOMContentLoaded", function() {
         var sitemapURL = window.location.origin + versionPath + "/sitemap.xml";
         xhrSitemap.open("GET", sitemapURL);
         xhrSitemap.onload = function() {
-            var xmlLoc = this.responseXML.getElementsByTagName('loc');
+            var xmlLoc = this.responseXML.getElementsByTagName("loc");
             var nodeText = [];
     
             for (var index = 0; index < xmlLoc.length; index++) {
                 var element = xmlLoc[index];
-                nodeText.push(element.textContent)
+                nodeText.push(element.textContent);
             }
             var prefix = nodeText[0].slice(0,-1);
             window.versionPages[version] = nodeText.map(function(e) {
-                return removePrefix(e, prefix)
-            })
+                return removePrefix(e, prefix);
+            });
         };
-        xhrSitemap.send()
+        xhrSitemap.send();
     }
 
     function makeSelect(options, selected) {
@@ -38,7 +38,7 @@ window.addEventListener("DOMContentLoaded", function() {
         var versionsArray = new Array();
 
         options.forEach(function(i) {
-            var option = new Option(i.text, i.value, undefined,
+            var option = new Option(i.text, i.value, void(0),
                                     i.value === selected);       
 
             if(i.text.includes("Latest"))
@@ -114,12 +114,12 @@ window.addEventListener("DOMContentLoaded", function() {
     function generateVersionSwitcher(versionJSON) {
         versionJSON.forEach(function(e) {
             populateVersionSitemap(e.version);
-        })
+        });
 
         // Identify which is the current version
         var currentVersion = versionJSON.find(function(i) {
             return i.version === VERSION ||
-                   i.aliases.includes(VERSION)
+                   i.aliases.includes(VERSION);
         });
 
         if(!currentVersion) {
@@ -154,7 +154,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
 
         // Place the HTML select element in the DOM
-        placeSelectElement(select)
+        placeSelectElement(select);
     }
 
     fetchVersions(generateVersionSwitcher);
