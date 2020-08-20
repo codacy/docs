@@ -1,40 +1,39 @@
 .version-select-container > span {
-  color: #4C6083;
+  color: #4c6083;
   font-size: 0.6rem;
   margin-right: 0.6rem;
 }
 
 .version-select-container .select-css {
-	display: inline-block;
+  display: inline-block;
   cursor: pointer;
   height: 2rem;
   font-size: 0.7rem;
-	box-sizing: border-box;
-  
-	color: #354B71;
-  padding: .5rem;
+  box-sizing: border-box;
+  color: #354b71;
+  padding: 0.5rem;
   padding-right: 1.2rem;
-	margin: 0;
-	border: 0;
-	border-radius: .25em;
-	-moz-appearance: none;
-	-webkit-appearance: none;
+  margin: 0;
+  border: 0;
+  border-radius: 0.25em;
+  -moz-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
-  
-	background-color: #E5ECF5;
+  background-color: #e5ecf5;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='451.847' height='451.847'%3E%3Cpath fill='%23354B71' d='M225.923 354.706c-8.098 0-16.195-3.092-22.369-9.263L9.27 151.157c-12.359-12.359-12.359-32.397 0-44.751 12.354-12.354 32.388-12.354 44.748 0l171.905 171.915 171.906-171.909c12.359-12.354 32.391-12.354 44.744 0 12.365 12.354 12.365 32.392 0 44.751L248.292 345.449c-6.177 6.172-14.274 9.257-22.369 9.257z'/%3E%3C/svg%3E");
-	background-repeat: no-repeat, repeat;
-	background-position: right .6em top 50%, 0 0;
-  background-size: .55em auto, 100%;
+  background-repeat: no-repeat, repeat;
+  background-position: right 0.6em top 50%, 0 0;
+  background-size: 0.55em auto, 100%;
 }
+
 .version-select-container .select-css::-ms-expand {
-	display: none;
+  display: none;
 }
 
 .version-select-container .select-css:hover {
-	background-color: #C9D8EF;
+  background-color: #c9d8ef;
 }
 
 .version-select-container .select-css option {
-	font-weight:normal;
+  font-weight: normal;
 }
