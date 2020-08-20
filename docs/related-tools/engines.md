@@ -128,7 +128,7 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 <tr>
 <td><a href="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/index.html" class="in-cell-link">PMD</a></td>
 <td>Java, PLSQL, Apex, Javascript, Velocity, XML, JSP, VisualForce</td>
-<td><a href="https://github.com/codacy/codacy-pmdjava" class="in-cell-link">https://github.com/codacy/codacy-pmdjava</a></td>
+<td><a href="https://github.com/codacy/codacy-pmd" class="in-cell-link">https://github.com/codacy/codacy-pmd</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/landscapeio/prospector">Prospector</a></td>

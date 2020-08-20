@@ -10,7 +10,7 @@
     -   Updated Cppcheck to 2.1
     -   Updated Detekt to 1.10.0
     -   Updated Hadolint to 1.17.5
-    -   Updated Pmdjava to 6.25.0
+    -   Updated PMD to 6.25.0
     -   Updated Pylint Python3 to 2.5.3
     -   Updated Remark Lint to 7.0.0
     -   Updated Rubocop to 0.82.0

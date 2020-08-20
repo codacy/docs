@@ -181,9 +181,13 @@ plugins:
               "hc/en-us/articles/214085885-Post-Commit-Hooks.md": "repositories/post-commit-hooks.md"
               "hc/en-us/articles/214377225.md": "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md"
               "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md"
+              "hc/en-us/sections/360000605573-Self-hosted-Release-Notes.md": "release-notes/index.md"
+              "hc/en-us/sections/360000605573.md": "release-notes/index.md"
               "hc/en-us/articles/360001207234.md": "repositories-configure/specifying-language.md"
               "hc/en-us/articles/360001207234-Specifying-language.md": "repositories-configure/specifying-language.md"
               "hc/en-us/categories/360001313954-Getting-Started.md": "getting-started/getting-started-with-codacy.md"
+              "hc/en-us/sections/360001555694.md": "release-notes/index.md"
+              "hc/en-us/sections/360001555694-Product-updates.md": "release-notes/index.md"
               "hc/en-us/sections/360003014233-Configure-your-repo.md": "repositories-configure/code-patterns.md"
               "hc/en-us/sections/360003183099.md": "organizations/what-are-synced-organizations.md"
               "hc/en-us/sections/360003183099-Synced-Organizations.md": "organizations/what-are-synced-organizations.md"
@@ -500,6 +504,7 @@ nav:
                 - faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md
                 - faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md
     - "Release notes":
+          - release-notes/index.md
           - "Cloud release notes":
                 - release-notes/cloud/deprecating-http-headers-for-api-tokens.md
                 - release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md
@@ -523,6 +528,7 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
           - "Self-hosted release notes":
+                - release-notes/self-hosted/self-hosted-v2.0.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.5.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.4.0-for-kubernetes.md
                 - release-notes/self-hosted/self-hosted-v1.3.0-for-kubernetes.md
