@@ -67,10 +67,10 @@ for repo in $(curl -s https://api.github.com/orgs/$GITHUB_ORG_NAME/repos -H "Aut
   case "$http_status" in
     200) printf "$repo added successfully\n"
          ;;
-    401) printf "Error: $http_status Unauthorized, check the Codacy API token\n"
+    401) printf "Error: 401 Unauthorized, check the Codacy API token\n"
          break
          ;;
-    409) printf "Error: $http_status Conflict, $repo is already added to Codacy\n"
+    409) printf "Error: 409 Conflict, $repo is already added to Codacy\n"
          ;;
       *) printf "Error: $http_status HTTP status code\n"
          break
