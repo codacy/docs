@@ -33,12 +33,22 @@ Substitute the placeholders with your own values:
     !!! important
         **If you are using GitLab** you must specify the full group path and the repository using the format `<group>/<subgroup-1>/.../<subgroup-N>/<repository>`.
 
-Currently, Codacy does not provide API endpoints to automate other parts of setting up new repositories, such as configuring the repository settings or the enabled code patterns. However, Codacy automatically applies the [default patterns](../../repositories-configure/code-patterns.md#account-patterns) defined on Codacy API token account to the new repositories, and you can use this to ensure that all new repositories share the same pattern configuration.
-
+Currently, Codacy does not provide API endpoints to automate other parts of setting up new repositories, such as configuring the repository settings or the enabled code patterns. However, Codacy automatically applies the [default patterns](../../repositories-configure/code-patterns.md#account-patterns) defined on the Codacy API token account to the new repositories, and you can use this to ensure that all new repositories share the same pattern configuration.
 
 ## Example: Adding all repositories in a GitHub organization
 
 We provide an example Bash script that adds all repositories in a GitHub Cloud organization to Codacy. We suggest that you adapt the script to your specific scenario.
+
+!!! warning
+    Since Codacy automatically analyzes new repositories, adding a large number of repositories in a short time frame can cause delays in the analysis of other repositories depending on the size of the repositories, the sizing of the infrastructure, and the concurrent analysis configuration. For example:
+
+    | Repositories added | Expected delay |
+    |--------------------|----------------|
+    | 1 to 10            | Small          |
+    | 11 to 100          | Considerable   |
+    | More than 100      | Extreme        |
+
+    To avoid these delays, we recommend that you add repositories in small batches or that you space out adding new repositories in time.
 
 The example script:
 
