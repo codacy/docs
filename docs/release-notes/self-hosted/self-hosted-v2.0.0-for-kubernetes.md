@@ -7,6 +7,30 @@ These release notes are for [Codacy Self-hosted v2.0.0](https://github.com/codac
 This version of Codacy Self-hosted introduces the following breaking changes:
 
 -   You must manually delete the existing RabbitMQ PVCs before upgrading Codacy.
+
+    To do this, start by scaling the statefulset of RabbitMQ to zero replicas:
+
+    ```bash
+    kubectl scale --replicas=0 sts/codacy-rabbitmq-ha -n codacy
+    ```
+
+    Confirm the name of the PVCs that were created by RabbitMQ:
+
+    ```bash
+    kubectl get pvc -n codacy
+    ```
+
+    Finally, delete all the PVCs related to RabbitMQ. You should have three replicas which was the default for versions older than 2.0.0:
+
+    ```bash
+    kubectl delete pvc data-codacy-rabbitmq-ha-0 -n codacy
+    kubectl delete pvc data-codacy-rabbitmq-ha-1 -n codacy
+    kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
+    ```
+
+    !!! important
+        After you upgrade Codacy, our chart will install a new version of RabbitMQ with the **new default of one replica**.
+
 -   The structure of the file [`values-production.yaml`](/chart/values-files/values-production.yaml){: target="_blank"} changed. You must update your version of the file to match the structure of the new file:
 
     -   The following analysis workers configuration values moved from:
