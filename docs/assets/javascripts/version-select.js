@@ -1,23 +1,23 @@
 window.addEventListener("DOMContentLoaded", function() {
-    window.versionPages = {}
+    window.versionPages = {};
     var VERSION = window.location.pathname.split('/')[1];
     var VERSION_LATEST = ".";
 
     function removePrefix(str, prefix) {
         var hasPrefix = str.indexOf(prefix) === 0;
         return hasPrefix ? str.substr(prefix.length) : str.toString();
-    };
+    }
 
     function populateVersionSitemap(version) {
         var versionPath = version === VERSION_LATEST ? "" : "/" + version;
-        window.versionPages[version] = []
+        window.versionPages[version] = [];
 
         var xhrSitemap = new XMLHttpRequest();
         var sitemapURL = window.location.origin + versionPath + "/sitemap.xml";
         xhrSitemap.open("GET", sitemapURL);
         xhrSitemap.onload = function() {
             var xmlLoc = this.responseXML.getElementsByTagName('loc');
-            nodeText = []
+            var nodeText = [];
     
             for (var index = 0; index < xmlLoc.length; index++) {
                 var element = xmlLoc[index];
@@ -27,7 +27,7 @@ window.addEventListener("DOMContentLoaded", function() {
             window.versionPages[version] = nodeText.map(function(e) {
                 return removePrefix(e, prefix)
             })
-        }
+        };
         xhrSitemap.send()
     }
 
@@ -90,7 +90,7 @@ window.addEventListener("DOMContentLoaded", function() {
         xhr.open("GET", window.location.origin + "/versions.json");
         xhr.onload = function() {
             var versions = JSON.parse(this.responseText);
-            callback(versions)
+            callback(versions);
         };
         xhr.send();
     }
@@ -102,7 +102,7 @@ window.addEventListener("DOMContentLoaded", function() {
         container.className = "version-select-container";
 
         var span = document.createElement("span");
-        span.innerText = 'Version'
+        span.innerText = "Version";
 
         container.appendChild(span);
         container.appendChild(ele);
@@ -113,7 +113,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
     function generateVersionSwitcher(versionJSON) {
         versionJSON.forEach(function(e) {
-            populateVersionSitemap(e.version)
+            populateVersionSitemap(e.version);
         })
 
         // Identify which is the current version
@@ -141,7 +141,7 @@ window.addEventListener("DOMContentLoaded", function() {
             var targetVersionPath = this.value === VERSION_LATEST ? "" : "/" + this.value;
 
             if(currentVersion.version !== VERSION_LATEST) {
-                currentPath = removePrefix(window.location.pathname, "/" + currentVersion.version)
+                currentPath = removePrefix(window.location.pathname, "/" + currentVersion.version);
             }
 
             if(window.versionPages[this.value].includes(currentPath)) {
@@ -150,14 +150,14 @@ window.addEventListener("DOMContentLoaded", function() {
                 window.location.href = window.location.origin + targetVersionPath;
             }
         });
-        select.title = "For Codacy Cloud, select Latest.\nFor Codacy Self-Hosted, select the version of your Codacy installation."
+        select.title = "For Codacy Cloud, select Latest.\nFor Codacy Self-Hosted, select the version of your Codacy installation.";
 
 
         // Place the HTML select element in the DOM
         placeSelectElement(select)
     }
 
-    fetchVersions(generateVersionSwitcher)
+    fetchVersions(generateVersionSwitcher);
     // used to test without mike
     // var staticJSON = [{"version": "v1.4.0", "title": "v1.4.0", "aliases": []}, {"version": ".", "title": "Cloud", "aliases": []}];
     // generateVersionSwitcher(staticJSON)
