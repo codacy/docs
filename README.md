@@ -4,39 +4,15 @@
 
 <https://docs.codacy.com>
 
-## Previewing docs locally
+## Contributing to the documentation
 
-[Build and preview](https://www.mkdocs.org/#getting-started) the generated HTML on your machine to validate your changes:
+Contributions to the documentation are very welcome! 
 
-1.  Clone the codacy/docs repository, including the submodules, and change into the local copy directory:
+See <CONTRIBUTING.md> to:
 
-    ```bash
-    git clone --recursive git@github.com:codacy/docs.git
-    cd docs
-    ```
-
-2.  Check that you have [Python 3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/) installed and install them if you don't:
-
-    ```bash
-    python3 --version
-    pip3 --version
-    ```
-
-3.  Install the requirements for building the static HTML pages using MkDocs:
-
-    ```bash
-    pip3 install -r requirements.txt
-    ```
-
-4.  Build the static HTML pages and launch a local web server that allows you to easily see the generated pages as soon as you make any changes to the Markdown files:
-
-    ```bash
-    mkdocs serve
-    ```
-
-## Deploying to GitHub Pages
-
-A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows/mkdocs.yml) automatically deploys the generated HTML to GitHub Pages on every push to `master` or to the release branches `release/v.*`.
+-   Set up your environment to preview your changes locally
+-   Follow the Markdown conventions used in this repository
+-   Deploy updates to the documentation or release new documentation versions
 
 ## What is Codacy
 
