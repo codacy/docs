@@ -8,7 +8,7 @@
 
 Contributions to the documentation are very welcome! 
 
-See <CONTRIBUTING.md> to:
+See [CONTRIBUTING.md](CONTRIBUTING.md) to:
 
 -   Set up your environment to preview your changes locally
 -   Follow the Markdown conventions used in this repository
