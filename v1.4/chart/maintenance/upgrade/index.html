@@ -2408,6 +2408,13 @@
 <p>To upgrade Codacy to the latest stable version:</p>
 <ol>
 <li>
+<p>Check the <a href="/release-notes/">release notes</a> for all Codacy Self-hosted versions between your current version and the most recent version for breaking changes and follow the instructions provided carefully.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Failing to follow the steps to deal with breaking changes can cause the upgrade to fail or cause problems while Codacy is running.</p>
+</div>
+</li>
+<li>
 <p>Store all your currently defined configuration values in a file:</p>
 <div class="highlight"><pre><span></span><code>helm get values codacy <span class="se">\</span>
                 --namespace codacy <span class="se">\</span>
@@ -2438,7 +2445,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: August 5, 2020
+      Last update: August 21, 2020
     
   </small>
 </div>
