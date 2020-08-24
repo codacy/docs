@@ -8,6 +8,8 @@ After installing it for a repository, it has to be enabled by a user with reposi
 
 ![GitHub integration](images/github-integration.png)
 
+### GitHub integration actions
+
 Once the integration is enabled, you will see additional options when browsing the existing issues on the repository:
 
 ![GitHub integration for issues](images/github-integration-issues.png)
