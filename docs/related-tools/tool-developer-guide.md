@@ -286,7 +286,7 @@ docker run -t \
 
 ### Docker submission
 
--   To submit the docker you should send an email to support@codacy.com with the link to the git repository with your docker definition.
+-   To submit the docker you should send an email to <mailto:support@codacy.com> with the link to the git repository with your docker definition.
 -   The docker will then be subjected to a review by our team and we will then contact you with more details.
 
-If you have any question or suggestion regarding this guide please contact us at <support@codacy.com>.
+If you have any question or suggestion regarding this guide please contact us at <mailto:support@codacy.com>.

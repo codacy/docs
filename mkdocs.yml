@@ -101,9 +101,9 @@ plugins:
               "hc/en-us/articles/207280219.md": "repositories-configure/integrations/github-integration.md"
               "hc/en-us/articles/207280219-GitHub-Integration.md": "repositories-configure/integrations/github-integration.md"
               "hc/en-us/articles/207280219-GitHub.md": "repositories-configure/integrations/github-integration.md"
-              "hc/en-us/articles/207280239.md": "repositories-configure/integrations/bitbucket-cloud-integration.md"
-              "hc/en-us/articles/207280239-Bitbucket-Cloud-Integration.md": "repositories-configure/integrations/bitbucket-cloud-integration.md"
-              "hc/en-us/articles/207280239-Bitbucket-Integration.md": "repositories-configure/integrations/bitbucket-cloud-integration.md"
+              "hc/en-us/articles/207280239.md": "repositories-configure/integrations/bitbucket-integration.md"
+              "hc/en-us/articles/207280239-bitbucket-integration.md": "repositories-configure/integrations/bitbucket-integration.md"
+              "hc/en-us/articles/207280239-Bitbucket-Integration.md": "repositories-configure/integrations/bitbucket-integration.md"
               "hc/en-us/articles/207280359.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280359-WebHook-Notifications.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280379.md": "related-tools/tool-developer-guide-using-scala.md"
@@ -396,6 +396,7 @@ plugins:
               # Renamed pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "organizations/why-cant-i-see-my-organization.md"
+              "repositories-configure/integrations/bitbucket-cloud-integration.md": "repositories-configure/integrations/bitbucket-integration.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -421,7 +422,7 @@ nav:
           - Integrations:
                 - repositories-configure/integrations/github-integration.md
                 - repositories-configure/integrations/gitlab-integration.md
-                - repositories-configure/integrations/bitbucket-cloud-integration.md
+                - repositories-configure/integrations/bitbucket-integration.md
                 - repositories-configure/integrations/slack-integration.md
                 - repositories-configure/integrations/jira-integration.md
                 - repositories-configure/integrations/project-api.md

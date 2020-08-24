@@ -2,7 +2,7 @@
 
 On the security dashboard, you get an overview of all current security alerts.
 
-![security-dashboard.png](/images/security-dashboard.png)
+![Security Dashboard](images/security-dashboard.png)
 
 ## Supported languages
 
@@ -86,20 +86,9 @@ The security monitor is built using security patterns from:
 
 Each security category listed on the left-hand side of the dashboard has one of four states:
 
-|                               |                                                                                                                                                                                                                  |
-| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| ![Green](/images/green.png)   | A green check mark means that **everything is OK** for this category: all the security patterns in this category are enabled, and no security issues have been found.                                            |
-| ![Yellow](/images/yellow.png) | A yellow exclamation mark means that **there are security patterns in this category that are disabled**. You should enable the patterns in this category so it is verified.                                      |
-| ![Red](/images/red.png)       | A red cross means that **there are security issues identified** for this category.                                                                                                                               |
-|                               | A blue info icon means that **Codacy cannot be sure if you have all the security patterns in this category enabled**. This happens when you are using configuration files to control which patterns are enabled. |
-
-## Additional features
-
-On the Security dashboard view you can also:
-
--   Enable all the security patterns for that repository with one click
--   Download all the patterns in a CSV file (this will give you a list of all the patterns considered by Codacy under the security category)
-
-You just have to go to your repository's Security Tab, click on <img src="/images/morebutton.png" width="80" height="32" alt="morebutton.png" /> and select the relevant option.
-
-![](/images/downloadpatternscsv.gif)
+| State                                           | Description |
+| :---------------------------------------------: | ----------- |
+| ![Green](images/security-dashboard-green.png)   | **Everything is OK for this category.** All the security patterns in this category are enabled, and no security issues have been found. |
+| ![Yellow](images/security-dashboard-yellow.png) | **There are security patterns in this category that are disabled.** You should enable the patterns in this category so it is verified.<br/>To enable all security patterns on the repository, click the button **More** and select **Turn on all security patterns**. |
+| ![Red](images/security-dashboard-red.png)       | **There are security issues identified for this category.** |
+|                                                 | A blue info icon means that **Codacy cannot be sure if you have all the security patterns in this category enabled**. This happens when you are using configuration files to control which patterns are enabled. |
