@@ -14,7 +14,7 @@ Once the integration is enabled, you will see additional options when browsing t
 
 When **Pull Request Status**, **Pull Request Comment**, or **Pull Request Summary** is enabled, Codacy will automatically update pull requests on GitHub with additional information when accepting pull requests.
 
--   **Pull Request Status** will only be added if the user that added the integration has at least write permissions for that repo.
+-   **Pull Request Status** will only be added if the user that added the integration has at least write permissions for that repository.
 
     The status shows whether your PR and coverage are up to standards or not as per the [Pull Request Quality Settings](../../repositories/quality-settings.md) set up for your repository. To see the coverage status, please make sure the Coverage option is enabled in the PR Quality settings.
 

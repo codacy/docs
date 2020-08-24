@@ -72,4 +72,4 @@ For more information on this topic, have a look at this [article](../repositorie
 
 ## 6. Create a Comment in your repo
 
-You can also add comments to the code on Codacy, and it will sync in your repository on [GitHub](../repositories-configure/integrations/github-integration.md) or [Bitbucket](../repositories-configure/integrations/bitbucket-cloud-integration.md).
+You can also add comments to the code on Codacy, and it will sync in your repository on [GitHub](../repositories-configure/integrations/github-integration.md) or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md).
