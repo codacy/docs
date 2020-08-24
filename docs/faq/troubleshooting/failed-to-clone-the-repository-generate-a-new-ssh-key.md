@@ -1,15 +1,11 @@
 # Failed to clone the repository, generate a new SSH key
 
-SSH keys are exclusively used for repository cloning.
-
-Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, the key can be added either:
+SSH keys are exclusively used for repository cloning. Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, the key can be added either:
 
 -   Directly to the repository itself, if the user has permissions to add keys to the repository
 -   To the user account, if the user only has permissions to read or commit to the repository
 
-For this reason, some changes on the remote Git provider can prevent Codacy from cloning the repository.
-
-![Failed to clone the repository](images/failed-to-clone-the-repository.png)
+For this reason, some changes on the remote Git provider can prevent Codacy from cloning the repository. When this happens, Codacy displays the error message "Failed to clone the repository" on the Repository Dashboard page.
 
 ## The repository was renamed or moved
 
