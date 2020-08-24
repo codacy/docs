@@ -48,7 +48,7 @@ If you don't have enough repositories for comparison, don't worry - we have incl
 
 ## Open pull requests {: id="open-pull-requests"}
 
-The **Most problematic** tab displays a short list of the open pull requests that are not up to your defined standards and have the most potential to negatively affect your code quality. You can click directly on each pull request to see more details.
+The **Most problematic** tab displays a short list of the open pull requests that are not up to your defined standards and have the most potential to negatively affect your code quality. You can click directly on each pull request to see more details.
 
 ![Most problematic pull requests](images/organization-dashboard-prs-problematic.png)
 
