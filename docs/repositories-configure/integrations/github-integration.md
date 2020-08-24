@@ -4,7 +4,7 @@ After adding a repository, navigate to your repository's **Settings**, tab **Int
 
 It installs in just one click but you may need to move back and forth between Codacy and GitHub if it requires additional permissions.
 
-After installing it for a repository, it has to be enabled by a user with repository access on GitHub. For private repositories, this user will by default become the GitHub user that Codacy will use to comment and create issues on GitHub. For public repositories, comments made by Codacy will appear as coming from codacy-bot.
+After installing the integration for a repository, it has to be enabled by a user with repository access on GitHub. This user will become the GitHub user that Codacy will use to comment and create issues on GitHub.
 
 ![GitHub integration](images/github-integration.png)
 
