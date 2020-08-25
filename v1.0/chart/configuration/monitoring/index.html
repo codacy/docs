@@ -13,7 +13,7 @@
       
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
     
     
       
@@ -1744,6 +1744,54 @@
   
 </li>
       
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#setting-up-monitoring-using-grafana-prometheus-and-loki" class="md-nav__link">
+    Setting up monitoring using Grafana, Prometheus, and Loki
+  </a>
+  
+    <nav class="md-nav md-nav--toc" aria-label="Setting up monitoring using Grafana, Prometheus, and Loki">
+      <ul class="md-nav__list md-nav__list--toc">
+        
+          <li class="md-nav__item md-nav__item--toc">
+  <a href="#1-installing-prometheus" class="md-nav__link">
+    1. Installing Prometheus
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item md-nav__item--toc">
+  <a href="#2-installing-loki" class="md-nav__link">
+    2. Installing Loki
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item md-nav__item--toc">
+  <a href="#3-installing-promtail" class="md-nav__link">
+    3. Installing Promtail
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item md-nav__item--toc">
+  <a href="#4-installing-prometheus-and-grafana" class="md-nav__link">
+    4. Installing Prometheus and Grafana
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item md-nav__item--toc">
+  <a href="#5-enable-service-dashboards" class="md-nav__link">
+    5. Enable Service Dashboards
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2432,17 +2480,12 @@
                 
                 
                 <h1 id="monitoring">Monitoring<a class="headerlink" href="#monitoring" title="Permanent link">&para;</a></h1>
-<!---
-FIXME: Commented out to prevent issues while service monitors are not compatible with helm3
-
-Currently, we support two monitoring solutions:
-
--   **[Crow](#setting-up-monitoring-using-crow):** A simple, lightweight, and built-in monitoring solution, that is enabled by default when you install Codacy.
--   **[Prometheus + Grafana + Loki](#setting-up-monitoring-using-grafana-prometheus-and-loki):** A comprehensive third-party monitoring solution, recommended for more advanced usage.
-
-The sections below provide details on how to set up each monitoring solution.
---->
-
+<p>Currently, we support two monitoring solutions:</p>
+<ul>
+<li><strong><a href="#setting-up-monitoring-using-crow">Crow</a>:</strong> A simple, lightweight, and built-in monitoring solution, that is enabled by default when you install Codacy.</li>
+<li><strong><a href="#setting-up-monitoring-using-grafana-prometheus-and-loki">Prometheus + Grafana + Loki</a>:</strong> A comprehensive third-party monitoring solution, recommended for more advanced usage.</li>
+</ul>
+<p>The sections below provide details on how to set up each monitoring solution.</p>
 <h2 id="setting-up-monitoring-using-crow">Setting up monitoring using Crow<a class="headerlink" href="#setting-up-monitoring-using-crow" title="Permanent link">&para;</a></h2>
 <p>Crow displays information about the projects that are pending analysis and the jobs currently running on Codacy.</p>
 <p>Crow is installed alongside Codacy when the Helm chart is deployed to the cluster. By default, you can access Crow as follows:</p>
@@ -2458,7 +2501,7 @@ The sections below provide details on how to set up each monitoring solution.
 <div class="highlight"><pre><span></span><code><span class="nt">crow</span><span class="p">:</span>
   <span class="nt">config</span><span class="p">:</span>
     <span class="nt">passwordAuth</span><span class="p">:</span>
-      <span class="nt">password</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">C0dacy123</span>
+      <span class="nt">password</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">&lt;--- crow password ---&gt;</span>
 </code></pre></div>
 
 </li>
@@ -2470,33 +2513,25 @@ The sections below provide details on how to set up each monitoring solution.
 <p>To do this, uncomment the last line before running the <code>helm upgrade</code> command below.</p>
 </div>
 <div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span> <span class="se">\</span>
-             --recreate-pods
+             --recreate-pods <span class="se">\</span>
+             --version <span class="m">1</span>.0.1 <span class="se">\</span>
              --values values-production.yaml <span class="se">\</span>
              <span class="c1"># --values values-microk8s.yaml</span>
 </code></pre></div>
 
 </li>
 </ol>
-<!---
-FIXME: service dashboards are currently not compatible with helm3.
-
-## Setting up monitoring using Grafana, Prometheus, and Loki
-
-[Prometheus](https://prometheus.io) is an open-source systems monitoring and alerting toolkit. Logs can be collected using [Loki](https://grafana.com/oss/loki/), which is a horizontally-scalable, highly-available, multi-tenant log aggregation system. Its data can be visualized with [Grafana](https://grafana.com), a widely used open source analytics and monitoring solution.
-
-This solution is considerably more resource demanding than Crow, and is recommended only for more advanced usage. Furthermore, its installation, configuration, and management require a deeper knowledge of Kubernetes as each component must be carefully tweaked to match your specific use case, using as starting point the `.yaml` values files provided by us.
-
-The instructions below cover the basic installation of the components in this monitoring stack.
-
-### 1. Installing Prometheus
-
-The simplest way to set up Prometheus in your cluster is by using the [Prometheus Operator](https://github.com/helm/charts/tree/master/stable/prometheus-operator) bundle.
-
-Add the custom resources required for installing this bundle in your cluster:
-
-!!! important
-    **If you are using MicroK8s** use `microk8s.kubectl` instead of `kubectl`.
-
+<h2 id="setting-up-monitoring-using-grafana-prometheus-and-loki">Setting up monitoring using Grafana, Prometheus, and Loki<a class="headerlink" href="#setting-up-monitoring-using-grafana-prometheus-and-loki" title="Permanent link">&para;</a></h2>
+<p><a href="https://prometheus.io">Prometheus</a> is an open-source systems monitoring and alerting toolkit. Logs can be collected using <a href="https://grafana.com/oss/loki/">Loki</a>, which is a horizontally-scalable, highly-available, multi-tenant log aggregation system. Its data can be visualized with <a href="https://grafana.com">Grafana</a>, a widely used open source analytics and monitoring solution.</p>
+<p>This solution is considerably more resource demanding than Crow, and is recommended only for more advanced usage. Furthermore, its installation, configuration, and management require a deeper knowledge of Kubernetes as each component must be carefully tweaked to match your specific use case, using as starting point the <code>.yaml</code> values files provided by us.</p>
+<p>The instructions below cover the basic installation of the components in this monitoring stack.</p>
+<h3 id="1-installing-prometheus">1. Installing Prometheus<a class="headerlink" href="#1-installing-prometheus" title="Permanent link">&para;</a></h3>
+<p>The simplest way to set up Prometheus in your cluster is by using the <a href="https://github.com/helm/charts/tree/master/stable/prometheus-operator">Prometheus Operator</a> bundle.</p>
+<p>Add the custom resources required for installing this bundle in your cluster:</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you are using MicroK8s</strong> use <code>microk8s.kubectl</code> instead of <code>kubectl</code>.</p>
+</div>
 <div class="highlight"><pre><span></span><code>kubectl apply -f https://raw.githubusercontent.com/coreos/prometheus-operator/release-0.36/example/prometheus-operator-crd/monitoring.coreos.com_alertmanagers.yaml
 kubectl apply -f https://raw.githubusercontent.com/coreos/prometheus-operator/release-0.36/example/prometheus-operator-crd/monitoring.coreos.com_podmonitors.yaml
 kubectl apply -f https://raw.githubusercontent.com/coreos/prometheus-operator/release-0.36/example/prometheus-operator-crd/monitoring.coreos.com_prometheuses.yaml
@@ -2505,46 +2540,41 @@ kubectl apply -f https://raw.githubusercontent.com/coreos/prometheus-operator/re
 kubectl apply -f https://raw.githubusercontent.com/coreos/prometheus-operator/release-0.36/example/prometheus-operator-crd/monitoring.coreos.com_thanosrulers.yaml
 </code></pre></div>
 
-### 2. Installing Loki
-
-Obtain the configuration file for Loki, [`values-loki.yaml`](../values-files/values-loki.yaml), and install it by running the command below. While the default storage class setting for Loki persistence should suit most use cases, you may need to adjust it to your specific Kubernetes installation. For instance, for MicroK8s use `storageClassName: microk8s-hostpath`.
-
+<h3 id="2-installing-loki">2. Installing Loki<a class="headerlink" href="#2-installing-loki" title="Permanent link">&para;</a></h3>
+<p>Obtain the configuration file for Loki, <a href="https://raw.githubusercontent.com/codacy/chart/master/codacy/values-loki.yaml"><code>values-loki.yaml</code></a>, and install it by running the command below. While the default storage class setting for Loki persistence should suit most use cases, you may need to adjust it to your specific Kubernetes installation. For instance, for MicroK8s use <code>storageClassName: microk8s-hostpath</code>.</p>
 <div class="highlight"><pre><span></span><code>helm repo add loki https://grafana.github.io/loki/charts
 helm upgrade --install --atomic loki loki/loki --version <span class="m">0</span>.17.0 <span class="se">\</span>
              --recreate-pods --namespace codacy --values values-loki.yaml
 </code></pre></div>
 
-### 3. Installing Promtail
-
-Promtail is an agent that ships the contents of local logs to a Loki instance.
-
-Obtain the configuration file for Promtail, [`values-promtail.yaml`](../values-files/values-promtail.yaml), and install it by running the command below.
-
+<h3 id="3-installing-promtail">3. Installing Promtail<a class="headerlink" href="#3-installing-promtail" title="Permanent link">&para;</a></h3>
+<p>Promtail is an agent that ships the contents of local logs to a Loki instance.</p>
+<p>Obtain the configuration file for Promtail, <a href="https://raw.githubusercontent.com/codacy/chart/master/codacy/values-promtail.yaml"><code>values-promtail.yaml</code></a>, and install it by running the command below.</p>
 <div class="highlight"><pre><span></span><code>helm upgrade --install --atomic promtail loki/promtail --version <span class="m">0</span>.13.0 <span class="se">\</span>
              --recreate-pods --namespace codacy --values promtail-values.yaml
 </code></pre></div>
 
-### 4. Installing Prometheus and Grafana
-
-Obtain the configuration file for the [Prometheus Operator bundle](https://github.com/helm/charts/tree/master/stable/prometheus-operator), [`values-prometheus-operator.yaml`](../values-files/values-prometheus-operator.yaml). Then:
-
-1.  Edit the Grafana password for the `admin` user in the `values-prometheus-operator.yaml` file.
-
-2.  Install the bundle on your cluster by running the command below.
-
-    <div class="highlight"><pre><span></span><code>helm upgrade --install --atomic monitoring stable/prometheus-operator --version <span class="m">6</span>.9.3 <span class="se">\</span>
+<h3 id="4-installing-prometheus-and-grafana">4. Installing Prometheus and Grafana<a class="headerlink" href="#4-installing-prometheus-and-grafana" title="Permanent link">&para;</a></h3>
+<p>Obtain the configuration file for the <a href="https://github.com/helm/charts/tree/master/stable/prometheus-operator">Prometheus Operator bundle</a>, <a href="https://raw.githubusercontent.com/codacy/chart/master/codacy/values-prometheus-operator.yaml"><code>values-prometheus-operator.yaml</code></a>. Then:</p>
+<ol>
+<li>
+<p>Edit the Grafana password for the <code>admin</code> user in the <code>values-prometheus-operator.yaml</code> file.</p>
+</li>
+<li>
+<p>Install the bundle on your cluster by running the command below.</p>
+<div class="highlight"><pre><span></span><code>helm upgrade --install --atomic monitoring stable/prometheus-operator --version <span class="m">6</span>.9.3 <span class="se">\</span>
              --recreate-pods --namespace codacy --values values-prometheus-operator.yaml
 </code></pre></div>
 
-Follow the [Kubernetes documentation](https://v1-15.docs.kubernetes.io/docs/tasks/administer-cluster/access-cluster-services/#accessing-services-running-on-the-cluster) to access the Grafana service that is now running on your cluster, using the method that best suits your use case.
-
-### 5. Enable Service Dashboards
-
-Now that you have Prometheus and Grafana installed you can enable `serviceMonitors` and `grafana_dashboards` for Codacy components.
-
-1.  Create a file named `values-monitoring.yaml` with the following content:
-
-    <div class="highlight"><pre><span></span><code><span class="nt">codacy-api</span><span class="p">:</span>
+</li>
+</ol>
+<p>Follow the <a href="https://v1-15.docs.kubernetes.io/docs/tasks/administer-cluster/access-cluster-services/#accessing-services-running-on-the-cluster">Kubernetes documentation</a> to access the Grafana service that is now running on your cluster, using the method that best suits your use case.</p>
+<h3 id="5-enable-service-dashboards">5. Enable Service Dashboards<a class="headerlink" href="#5-enable-service-dashboards" title="Permanent link">&para;</a></h3>
+<p>Now that you have Prometheus and Grafana installed you can enable <code>serviceMonitors</code> and <code>grafana_dashboards</code> for Codacy components.</p>
+<ol>
+<li>
+<p>Create a file named <code>values-monitoring.yaml</code> with the following content:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">codacy-api</span><span class="p">:</span>
   <span class="nt">metrics</span><span class="p">:</span>
     <span class="nt">serviceMonitor</span><span class="p">:</span>
       <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
@@ -2558,12 +2588,16 @@ Now that you have Prometheus and Grafana installed you can enable `serviceMonito
       <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 
-2.  Apply this configuration by performing a Helm upgrade. To do so append `--values values-monitoring.yaml --recreate-pods` to the command [used to install Codacy](../index.md#helm-upgrade):
-
-    <div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span> <span class="se">\</span>
+</li>
+<li>
+<p>Apply this configuration by performing a Helm upgrade. To do so append <code>--values values-monitoring.yaml --recreate-pods</code> to the command <a href="../../#helm-upgrade">used to install Codacy</a>:</p>
+<div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span> <span class="se">\</span>
+             --version <span class="m">1</span>.0.1 <span class="se">\</span>
              --values values-monitoring.yaml --recreate-pods
 </code></pre></div>
---->
+
+</li>
+</ol>
                 
                   
                     
@@ -2571,7 +2605,7 @@ Now that you have Prometheus and Grafana installed you can enable `serviceMonito
 <div class="md-source-date">
   <small>
     
-      Last update: August 6, 2020
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 25, 2020</span>
     
   </small>
 </div>
