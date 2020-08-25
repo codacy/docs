@@ -13,7 +13,7 @@
       
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
     
     
       
@@ -2309,7 +2309,8 @@ kubectl apply --validate<span class="o">=</span><span class="nb">false</span> -f
 </li>
 <li>
 <p>Apply the new configuration by performing a Helm upgrade, using the same options you have previously used to install Codacy.</p>
-<div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span>
+<div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span> <span class="se">\</span>
+             --version <span class="m">1</span>.5.0 
 </code></pre></div>
 
 </li>
@@ -2321,7 +2322,7 @@ kubectl apply --validate<span class="o">=</span><span class="nb">false</span> -f
 <div class="md-source-date">
   <small>
     
-      Last update: August 21, 2020
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 25, 2020</span>
     
   </small>
 </div>
