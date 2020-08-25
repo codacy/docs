@@ -33,6 +33,7 @@ We support the following languages:
 -   Scala
 -   Shell Script
 -   Swift
+-   TSQL
 -   TypeScript
 -   Velocity
 -   Visual Basic
