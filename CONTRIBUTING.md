@@ -109,13 +109,15 @@ A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows
 
 ## Releasing a new version of the documentation
 
-We must release a new version of the documentation when there is a new release of the [Codacy Self-hosted chart](https://github.com/codacy/chart).
+We must release a new version of the documentation when there is a new release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the documentation of the chart on the Latest version of the documentation as well as creating a dedicated documentation version for the new release.
 
-This involves updating the documentation of the chart on the Latest version of the documentation as well as creating a dedicated documentation version for the new release:
+### Updating the Latest documentation version
 
-1.  Use a pull request to update the version of the chart submodule on the `master` branch.
+First, update the Latest documentation version with the new chart documentation:
 
-    To do this, edit the file [`.gitmodules`](.gitmodules) and update the branch of the chart submodule to the correct release branch. For example:
+1.  Create a new branch to update the Latest documentation version.
+
+1.  Edit the file [`.gitmodules`](.gitmodules) and update the branch of the chart submodule to the correct release branch. For example:
 
     ```text
     [submodule "submodules/chart"]
@@ -124,7 +126,15 @@ This involves updating the documentation of the chart on the Latest version of t
         branch = release-2.0.0
     ```
 
-    Make sure that you pull the latest changes from this branch of the chart submodule in this pull request.
+    Make sure that you pull the latest changes from this branch of the chart submodule.
+
+1.  Edit the file `mkdocs.yml`(mkdocs.yml) and update the value of the variable `extra.version` to the correct version of the chart.
+
+1.  Open a pull request with this changes and merge the branch into `master`.
+
+### Creating a new documentation version
+
+After updating the Latest documentation version, we're ready to create a new documentation version:
 
 1.  Create a new release branch with the name `release/v<MAJOR>.<MINOR>` from the now updated `master` branch.
 
