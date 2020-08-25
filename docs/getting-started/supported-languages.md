@@ -7,10 +7,11 @@ Our supported languages generally include support for Static Analysis, Code Dupl
 We support the following languages:
 
 -   Apex
+-   Bash
 -   C
--   CPP
--   C#
 -   CoffeeScript
+-   C++
+-   C#
 -   Crystal
 -   CSS
 -   Dockerfile
@@ -31,8 +32,8 @@ We support the following languages:
 -   Ruby
 -   SASS
 -   Scala
--   Shell Script
 -   Swift
+-   TSQL
 -   TypeScript
 -   Velocity
 -   Visual Basic
