@@ -25,6 +25,10 @@ strict: true
 
 google_analytics: ["UA-45639808-4", "auto"]
 
+# Extra variables
+extra:
+  version: 1.3.0
+
 # Repository
 # repo_name: "codacy/docs"
 # repo_url: "https://github.com/codacy/docs"
@@ -50,6 +54,7 @@ plugins:
     - search
     - git-revision-date-localized
     - monorepo
+    - markdownextradata
     - redirects:
           redirect_maps:
               "hc/en-us/articles/115000255385.md": "user-guide/related-tools/api-tokens.md"
