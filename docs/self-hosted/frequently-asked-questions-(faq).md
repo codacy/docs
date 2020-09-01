@@ -48,7 +48,7 @@ Yes, Codacy can run behind a proxy. The installer will configure the applicatio
 
 ## What are the network requirements for Codacy for inbound and outbound traffic ports? 
 
--   You can find our network requirements [here](/hc/en-us/articles/207995025#networking-ports)
+-   You can find our network requirements [here](installing-codacy-self-hosted.md#152-ports-to-open-for-the-codacy-server)
 
 ## Logs show issues on DB connection: "Cannot connect to DB \[results]"
 
