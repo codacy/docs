@@ -113,8 +113,8 @@ plugins:
               "hc/en-us/articles/207280359-WebHook-Notifications.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280379.md": "related-tools/tool-developer-guide-using-scala.md"
               "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "related-tools/tool-developer-guide-using-scala.md"
-              "hc/en-us/articles/207312879.md": "coverage-reporter/index.md"
-              "hc/en-us/articles/207312879-Generate-Coverage.md": "coverage-reporter/index.md"
+              "hc/en-us/articles/207312879.md": "coverage-reporter/generating-coverage-reports.md"
+              "hc/en-us/articles/207312879-Generate-Coverage.md": "coverage-reporter/generating-coverage-reports.md"
               "hc/en-us/articles/207993605.md": "getting-started/i-added-a-repository-now-what.md"
               "hc/en-us/articles/207993605-I-added-a-repository-Now-what-.md": "getting-started/i-added-a-repository-now-what.md"
               "hc/en-us/articles/207993835.md": "coverage-reporter/index.md"
@@ -433,7 +433,7 @@ nav:
                 - repositories-configure/integrations/project-api.md
                 - repositories-configure/integrations/webhook-notifications.md
           - repositories-configure/code-patterns.md
-          - "Setting up coverage": "!include ./submodules/codacy-coverage-reporter/mkdocs.yml"
+          - "Coverage": "!include submodules/codacy-coverage-reporter/mkdocs.yml"
           - repositories-configure/codacy-configuration-file.md
           - repositories-configure/ignore-files-from-codacy-analysis.md
           - repositories-configure/using-submodules.md
@@ -468,7 +468,7 @@ nav:
           - related-tools/api-tokens.md
           - related-tools/tool-developer-guide.md
           - related-tools/tool-developer-guide-using-scala.md
-    - "Installing Codacy": "!include ./submodules/chart/mkdocs.yml"
+    - "Installing Codacy": "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
                 - faq/general/which-version-control-systems-do-you-support.md

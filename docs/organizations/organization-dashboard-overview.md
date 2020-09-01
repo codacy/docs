@@ -38,7 +38,7 @@ Hover over each group of repositories to see a summary.
 For each specific criteria (Issues, Complex Files, Duplication, and Coverage), you can click on its tab to compare repositories. This comparison will display the current statuses of your repositories against the average and against your goal for this criteria.
 
 !!! note
-    The graph will notify you when you click on the Coverage tab if you don't have [Coverage set up](../repositories-configure/coverage.md) for any of your repositories.
+    The graph will notify you when you click on the Coverage tab if you don't have [Coverage set up](/coverage-reporter/) for any of your repositories.
 
 ![Other criteria](images/organization-dashboard-other-criteria.png)
 
