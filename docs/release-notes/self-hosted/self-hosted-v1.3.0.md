@@ -1,8 +1,8 @@
-# Self-hosted v1.3.0 for Kubernetes
+# Self-hosted v1.3.0
 
-These release notes are for [Codacy Self-hosted v1.3.0](https://github.com/codacy/chart/releases/tag/1.3.0){: target="_blank"} for Kubernetes. [Follow these instructions](/chart/maintenance/upgrade/) to upgrade Codacy.
+These release notes are for [Codacy Self-hosted v1.3.0](https://github.com/codacy/chart/releases/tag/1.3.0){: target="_blank"}. To upgrade Codacy, [follow these instructions](/chart/maintenance/upgrade/).
 
-# Bug fixes
+## Bug fixes
 
 -   Fixed misaligned organization cards in the onboarding screen UI. (CY-1864)
 -   Fixed an issue to improve the security of the OAuth 2.0 access token when making calls to the Bitbucket Cloud API. (CY-1856)
