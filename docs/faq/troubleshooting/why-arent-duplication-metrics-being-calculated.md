@@ -8,15 +8,15 @@ When this happens, Codacy does not display code duplication metrics for the affe
 
 -   The **Files** page on your repository displays a blank duplication value for files of the affected language.
 
-    ![](/images/image2.png)
+    ![Files](images/duplication-files.png)
 
 -   The **Commits** and **Pull Request** pages display an empty **New Duplication** tab.
 
-    ![](/images/image4.png)
+    ![Commits](images/duplication-commits.png)
 
 -   The analysis logs for commits will not display a duplication analysis task for the tool corresponding to the affected language.
 
-    ![](/images/image1.png)
+    ![View logs](images/duplication-logs.png)
 
 As a workaround, if you are exceeding the maximum number of source code files:
 
@@ -28,9 +28,9 @@ As a workaround, if you are exceeding the maximum number of source code files:
 
 If the analysis finishes but the code duplication metric was not calculated, follow the next steps:
 
--   **If you are using Codacy Self-hosted**, open the **Admin panel**, **Repositories**, select the repository, and reset the code duplication analysis in **Duplication settings**. Then, reanalyze the last commit in the repository so that Codacy runs the code duplication analysis.
+-   **If you are using Codacy Self-hosted**, open the **Admin panel**, **Repositories**, select the repository, tab **Settings**, and reset the code duplication analysis in **Duplication settings**. Then, reanalyze the last commit in the repository so that Codacy runs the code duplication analysis.
 
-    ![](/images/image3.png)
+    ![Resetting the failed duplication analysis](images/duplication-reset.png)
 
 -   **If you are [analyzing your repository locally](../../related-tools/run-local-analysis.md)** with `codacy-analysis-cli`, consider using the flag `--tool-timeout` to specify a larger timeout for the execution of the tool.
 
