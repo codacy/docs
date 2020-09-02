@@ -1,6 +1,6 @@
 # Why aren't duplication metrics being calculated?
 
-For performance reasons, Codacy limits the analysis of code duplication to 5000 files of the same programming language in each repository.
+For performance reasons, Codacy skips the calculation of code duplication for programming languages that have more than 5000 source code files in a repository.
 
 Besides this, if Codacy fails to calculate code duplication for a specific programming language in a repository three times in a row (for example, because the tool calculating the analysis runs out of memory or times out), Codacy stops trying to analyze the metric for that language and repository.
 
