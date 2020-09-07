@@ -57,6 +57,7 @@ plugins:
     - markdownextradata
     - redirects:
           redirect_maps:
+              # Redirect legacy Zendesk knowledge base pages
               "hc.md": "index.md"
               "hc/en-us.md": "index.md"
               "hc/en-us/requests/new.md": "https://codacy.zendesk.com/hc/en-us/requests/new"
@@ -398,10 +399,20 @@ plugins:
               "Chart/troubleshoot/troubleshoot.md": "chart/troubleshoot/troubleshoot.md"
               "Chart/troubleshoot/logs-collect.md": "chart/troubleshoot/logs-collect.md"
               "Chart/troubleshoot/k8s-cheatsheet.md": "chart/troubleshoot/k8s-cheatsheet.md"
-              # Renamed pages
+              # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "organizations/why-cant-i-see-my-organization.md"
               "repositories-configure/integrations/bitbucket-cloud-integration.md": "repositories-configure/integrations/bitbucket-integration.md"
+              "repositories-configure/add-coverage-to-your-repo.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "repositories-configure/coverage.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "repositories-configure/generate-coverage.md": "coverage-reporter/generating-coverage-reports.md"
+              "coverage-reporter.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/advanced/authenticating-using-account-token.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/advanced/multiple-reports.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/advanced/installation-methods.md": "coverage-reporter/alternative-ways-of-running-coverage-reporter.md"
+              "coverage-reporter/troubleshooting/common-issues.md": "coverage-reporter/troubleshooting-common-issues.md"
+              "coverage-reporter/troubleshooting/commit-detection.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/troubleshooting/swift-objectivec.md": "coverage-reporter/generating-coverage-reports.md"
 
 nav:
     - "Documentation home": "index.md"
