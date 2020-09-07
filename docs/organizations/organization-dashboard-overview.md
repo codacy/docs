@@ -16,55 +16,39 @@ The following sections provide a detailed description of each dashboard area.
 
 ## Overall quality chart {: id="overall-quality-chart"}
 
-The Overall Quality Chart displays your repositories and compares them against the average grade, your defined goal, and across each specific criteria: Issues, Complex Files, Duplication, and Coverage.
+The overall quality chart compares your repositories across grade, issues, complex files, duplication, and coverage. Each tab displays the average value for the corresponding metric.
 
 ![Overall quality chart](images/organization-dashboard-overall-quality.png)
 
--   In the upper left is the average grade (A, in this example).
--   The graph displays how different repositories match up to your goals and the average grade.
--   You can see how each repository is performing by hovering over the bar. If something is not up to standards, you will see it flagged.
--   You can also go directly to each repository by clicking on the name of the repository at the bottom of each column.
+-   Hover over the bars to see the metrics for the corresponding repositories. If a metric is not up to standards, you will see it flagged.
+-   Click the bars to navigate directly to the corresponding repository.
 
-![Overall quality chart hover](images/organization-dashboard-overall-quality-hover.png)
-
-If you have over 8 repositories, you will see your repositories grouped by Grade or by the interval of Issues (number of repositories you have with Issues between 0%-20%, 20%-40%, 40%-60%, 60%-80%, 80%-100%).
+If you have over eight repositories, the chart displays your repositories grouped by grade or percentage intervals:
 
 ![Overall quality chart with grouped repositories](images/organization-dashboard-overall-quality-grouped.png)
 
-Hover over each group of repositories to see a summary.
-
-![Overall quality chart with grouped repositories hover](images/organization-dashboard-overall-quality-grouped-hover.png)
-
-For each specific criteria (Issues, Complex Files, Duplication, and Coverage), you can click on its tab to compare repositories. This comparison will display the current statuses of your repositories against the average and against your goal for this criteria.
-
-!!! note
-    The graph will notify you when you click on the Coverage tab if you don't have [Coverage set up](../repositories-configure/coverage.md) for any of your repositories.
-
-![Other criteria](images/organization-dashboard-other-criteria.png)
-
-If you don't have enough repositories for comparison, don't worry - we have included some Open Source repositories for comparison so you can see how you match up.
-
-![Quality comparison with Open Source projects](images/organization-dashboard-overall-quality-open-source.png)
+!!! tip
+    If you don't have coverage set up for any of your repositories yet, the coverage tab provides you with instructions on [how to add coverage for your repositories](../repositories-configure/coverage.md).
 
 ## Open pull requests {: id="open-pull-requests"}
 
-The **Most problematic** tab displays a short list of the open pull requests that are not up to your defined standards and have the most potential to negatively affect your code quality. You can click directly on each pull request to see more details.
+The **Most problematic** tab displays a short list of the open pull requests that are not up to your defined standards and have the most potential to negatively affect your code quality. Click directly on each pull request to see more details.
 
 ![Most problematic pull requests](images/organization-dashboard-prs-problematic.png)
 
-The **Last updated** tab displays open pull requests sorted by the date of update with a status. Pull requests can be:
+The **Last updated** tab displays open pull requests sorted by the date of update with one of the following status:
 
 -   Not up to standards
 -   Up to standards
--   Analysis failed (in case something went wrong during the analysis)
--   Analyzing (an intermediate status while the pull request is under analysis)
+-   Analysis failed (something went wrong during the analysis)
+-   Analyzing (intermediate status while Codacy is analyzing the pull request)
 
 ![Last updated pull requests](images/organization-dashboard-prs-last-updated.png)
 
 ## Last updated repositories {: id="last-updated-repositories"}
 
-This area displays a maximum of 6 repositories by date of last update. Each repository card will display the date of the last update, the current grade, and the status for each criteria.
+This list displays the last updated repositories, sorted by reverse date of the last update. Each repository card displays the date of the last update and the current grade of the repository.
 
-You can also see all repositories or add a repository here.
+Click **See all** to see all repositories in your organization.
 
 ![Last updated repositories](images/organization-dashboard-repositories-last-updated.png)
