@@ -57,6 +57,7 @@ plugins:
     - markdownextradata
     - redirects:
           redirect_maps:
+              # Redirect legacy Zendesk knowledge base pages
               "hc.md": "index.md"
               "hc/en-us.md": "index.md"
               "hc/en-us/requests/new.md": "https://codacy.zendesk.com/hc/en-us/requests/new"
@@ -95,8 +96,8 @@ plugins:
               "hc/en-us/articles/207279599-How-does-Codacy-keep-my-data-secure-.md": "faq/general/how-does-codacy-keep-my-data-secure.md"
               "hc/en-us/articles/207279599-Is-Codacy-secure.md": "faq/general/how-does-codacy-keep-my-data-secure.md"
               "hc/en-us/articles/207279599-Is-Codacy-secure-.md": "faq/general/how-does-codacy-keep-my-data-secure.md"
-              "hc/en-us/articles/207279819.md": "repositories-configure/coverage.md"
-              "hc/en-us/articles/207279819-Coverage.md": "repositories-configure/coverage.md"
+              "hc/en-us/articles/207279819.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "hc/en-us/articles/207279819-Coverage.md": "coverage-reporter/adding-coverage-to-your-repository.md"
               "hc/en-us/articles/207279849.md": "repositories/files-view.md"
               "hc/en-us/articles/207279849-Files-View.md": "repositories/files-view.md"
               "hc/en-us/articles/207280019.md": "repositories/managing-branches.md"
@@ -113,12 +114,12 @@ plugins:
               "hc/en-us/articles/207280359-WebHook-Notifications.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280379.md": "related-tools/tool-developer-guide-using-scala.md"
               "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "related-tools/tool-developer-guide-using-scala.md"
-              "hc/en-us/articles/207312879.md": "repositories-configure/generate-coverage.md"
-              "hc/en-us/articles/207312879-Generate-Coverage.md": "repositories-configure/generate-coverage.md"
+              "hc/en-us/articles/207312879.md": "coverage-reporter/generating-coverage-reports.md"
+              "hc/en-us/articles/207312879-Generate-Coverage.md": "coverage-reporter/generating-coverage-reports.md"
               "hc/en-us/articles/207993605.md": "getting-started/i-added-a-repository-now-what.md"
               "hc/en-us/articles/207993605-I-added-a-repository-Now-what-.md": "getting-started/i-added-a-repository-now-what.md"
-              "hc/en-us/articles/207993835.md": "repositories-configure/add-coverage-to-your-repo.md"
-              "hc/en-us/articles/207993835-Add-coverage-to-your-repo.md": "repositories-configure/add-coverage-to-your-repo.md"
+              "hc/en-us/articles/207993835.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "hc/en-us/articles/207993835-Add-coverage-to-your-repo.md": "coverage-reporter/adding-coverage-to-your-repository.md"
               "hc/en-us/articles/207994025.md": "repositories/commits-view.md"
               "hc/en-us/articles/207994025-Commits-View.md": "repositories/commits-view.md"
               "hc/en-us/articles/207994335.md": "repositories-configure/code-patterns.md"
@@ -398,10 +399,20 @@ plugins:
               "Chart/troubleshoot/troubleshoot.md": "chart/troubleshoot/troubleshoot.md"
               "Chart/troubleshoot/logs-collect.md": "chart/troubleshoot/logs-collect.md"
               "Chart/troubleshoot/k8s-cheatsheet.md": "chart/troubleshoot/k8s-cheatsheet.md"
-              # Renamed pages
+              # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "organizations/why-cant-i-see-my-organization.md"
               "repositories-configure/integrations/bitbucket-cloud-integration.md": "repositories-configure/integrations/bitbucket-integration.md"
+              "repositories-configure/add-coverage-to-your-repo.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "repositories-configure/coverage.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "repositories-configure/generate-coverage.md": "coverage-reporter/generating-coverage-reports.md"
+              "coverage-reporter.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/advanced/authenticating-using-account-token.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/advanced/multiple-reports.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/advanced/installation-methods.md": "coverage-reporter/alternative-ways-of-running-coverage-reporter.md"
+              "coverage-reporter/troubleshooting/common-issues.md": "coverage-reporter/troubleshooting-common-issues.md"
+              "coverage-reporter/troubleshooting/commit-detection.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/troubleshooting/swift-objectivec.md": "coverage-reporter/generating-coverage-reports.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -433,10 +444,7 @@ nav:
                 - repositories-configure/integrations/project-api.md
                 - repositories-configure/integrations/webhook-notifications.md
           - repositories-configure/code-patterns.md
-          - repositories-configure/add-coverage-to-your-repo.md
-          - repositories-configure/coverage.md
-          - repositories-configure/generate-coverage.md
-          - "Advanced coverage setup": "!include ./submodules/codacy-coverage-reporter/mkdocs.yml"
+          - "Coverage": "!include submodules/codacy-coverage-reporter/mkdocs.yml"
           - repositories-configure/codacy-configuration-file.md
           - repositories-configure/ignore-files-from-codacy-analysis.md
           - repositories-configure/using-submodules.md
@@ -471,7 +479,7 @@ nav:
           - related-tools/api-tokens.md
           - related-tools/tool-developer-guide.md
           - related-tools/tool-developer-guide-using-scala.md
-    - "Installing Codacy": "!include ./submodules/chart/mkdocs.yml"
+    - "Installing Codacy": "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
                 - faq/general/which-version-control-systems-do-you-support.md
