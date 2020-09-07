@@ -1,10 +1,10 @@
 # Organization Dashboard overview
 
-Your **Organization Dashboard** offers an overview of repositories that belong to the same team. Here you can compare their statuses and check for items that require your attention.
+The **Organization Dashboard** offers an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
 
-You can access your Organization Dashboard by selecting a specific organization in the top navigation bar or by selecting an Organization in your Account Menu.
+To access your Organization Dashboard, select an organization from the top navigation bar and click **Overview** on the left navigation sidebar.
 
-On the Organization Dashboard, you have three areas that will help you monitor your team's repositories:
+On the Organization Dashboard, you have three areas to help you monitor your repositories:
 
 1.  [Overall quality chart](#overall-quality-chart)
 1.  [Open pull requests](#open-pull-requests)
@@ -12,7 +12,7 @@ On the Organization Dashboard, you have three areas that will help you monitor y
 
 ![Organization Dashboard overview](images/organization-dashboard-overview.png)
 
-The following sections provide a detailed overview of each dashboard area.
+The following sections provide a detailed description of each dashboard area.
 
 ## Overall quality chart {: id="overall-quality-chart"}
 
