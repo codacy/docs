@@ -2,6 +2,9 @@
 
 The **Organization Dashboard** offers an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
 
+!!! note
+    The Organization Dashboard calculates metrics and displays data only for the repositories that you have access to. This means that depending on their permissions, two users could see different results on their Organization Dashboards.
+
 To access your Organization Dashboard, select an organization from the top navigation bar and click **Overview** on the left navigation sidebar.
 
 On the Organization Dashboard, you have three areas to help you monitor your repositories:
