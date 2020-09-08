@@ -1,4 +1,4 @@
-# Failed to clone the repository, generate a new SSH key
+# We no longer have access to this repository, check your SSH keys
 
 SSH keys are exclusively used for repository cloning. Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, the key can be added either:
 
@@ -28,6 +28,6 @@ If the user that initially configured the repository on Codacy was using a user 
     !!! important
         **If you're using Bitbucket Cloud**, you must manually add the SSH key on your [user account](https://bitbucket.org/account/settings/ssh-keys/).
 
-    ![Generate new key](images/failed-to-clone-the-repository-new-key.png)
+    ![Generate new key](images/we-no-longer-have-access-to-this-repository-new-key.png)
 
 3.  Open the tab **Integrations**. If you have an integration with your Git provider enabled, remove and re-create the integration.

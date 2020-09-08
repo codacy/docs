@@ -225,8 +225,8 @@ plugins:
               "hc/en-us/articles/360006718454.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
               "hc/en-us/articles/360006718454-Share-your-repository-with-a-non-Codacy-user.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
               "hc/en-us/articles/360006718454-Share-your-project-with-a-non-Codacy-user.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
-              "hc/en-us/articles/360006795293.md": "faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md"
-              "hc/en-us/articles/360006795293-Repository-failed-to-clone-Generating-a-new-SSH-key.md": "faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md"
+              "hc/en-us/articles/360006795293.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
+              "hc/en-us/articles/360006795293-Repository-failed-to-clone-Generating-a-new-SSH-key.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
               "hc/en-us/articles/360007316034.md": "release-notes/cloud/cloud-release-notes-|-23-july-2018.md"
               "hc/en-us/articles/360007316034-Cloud-Release-Notes-23-July-2018.md": "release-notes/cloud/cloud-release-notes-|-23-july-2018.md"
               "hc/en-us/articles/360007699814.md": "release-notes/self-hosted/enterprise-v2.0.338.md"
@@ -413,6 +413,7 @@ plugins:
               "coverage-reporter/troubleshooting/common-issues.md": "coverage-reporter/troubleshooting-common-issues.md"
               "coverage-reporter/troubleshooting/commit-detection.md": "coverage-reporter/adding-coverage-to-your-repository.md"
               "coverage-reporter/troubleshooting/swift-objectivec.md": "coverage-reporter/generating-coverage-reports.md"
+              "faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -515,7 +516,7 @@ nav:
                 - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
                 - faq/troubleshooting/not-a-member-of-the-organization.md
                 - faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md
-                - faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md
+                - faq/troubleshooting/we-no-longer-have-access-to-this-repository.md
                 - faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md
     - "Release notes":
           - release-notes/index.md
