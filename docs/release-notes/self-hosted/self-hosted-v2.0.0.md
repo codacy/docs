@@ -96,10 +96,12 @@ This version of Codacy Self-hosted introduces the following breaking changes:
           [...]
         ```
 
-        Run the following command to generate a random Erlang cookie secret and define it in your `production-values.yaml` file:
+        When you previously installed Codacy, this cookie was automatically set to a random value. We recommend that you keep the same cookie to help ensure that the Codacy upgrade runs smoothly.
+
+        Run the following command to retrieve the current cookie value and define it explicitly in the new configuration:
 
         ```bash
-        cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1
+        kubectl get secrets -n codacy codacy-rabbitmq-ha -o jsonpath="{.data.rabbitmq-erlang-cookie}" | base64 --decode
         ```
 
 ## Product enhancements
