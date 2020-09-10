@@ -88,6 +88,22 @@ This version of Codacy Self-hosted introduces the following breaking changes:
             [...]
         ```
 
+    -   The following Erlang cookie configuration was added to the RabbitMQ configuration values:
+
+        ```yaml
+        rabbitmq-ha:
+          rabbitmqErlangCookie:  <--- erlang-cookie --->  # Generate one with `cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
+          [...]
+        ```
+
+        When you previously installed Codacy, this cookie was automatically set to a random value. We recommend that you keep the same cookie to help ensure that the Codacy upgrade runs smoothly.
+
+        Run the following command to retrieve the current cookie value and define it explicitly in the new configuration:
+
+        ```bash
+        kubectl get secrets -n codacy codacy-rabbitmq-ha -o jsonpath="{.data.rabbitmq-erlang-cookie}" | base64 --decode
+        ```
+
 ## Product enhancements
 
 -   The chart for Codacy Self-hosted now [supports Helm 3.3](/v2.0/chart/#2-installing-codacy).
