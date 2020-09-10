@@ -31,7 +31,7 @@ If you have over eight repositories, the chart displays your repositories groupe
 ![Overall quality chart with grouped repositories](images/organization-dashboard-overall-quality-grouped.png)
 
 !!! tip
-    If you don't have coverage set up for any of your repositories yet, the coverage tab provides you with instructions on [how to add coverage for your repositories](../repositories-configure/coverage.md).
+    If you don't have coverage set up for any of your repositories yet, the coverage tab provides you with instructions on [how to add coverage for your repositories](../coverage-reporter/adding-coverage-to-your-repository.md).
 
 ## Open pull requests {: id="open-pull-requests"}
 
