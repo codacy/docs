@@ -2689,6 +2689,19 @@ kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
 </code></pre></div>
 
 </li>
+<li>
+<p>The following Erlang cookie configuration was added to the RabbitMQ configuration values:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">rabbitmq-ha</span><span class="p">:</span>
+  <span class="nt">rabbitmqErlangCookie</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">&lt;--- erlang-cookie ---&gt;</span>  <span class="c1"># Generate one with `cat /dev/urandom | tr -dc &#39;a-zA-Z0-9&#39; | fold -w 32 | head -n 1`</span>
+  <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+</code></pre></div>
+
+<p>When you previously installed Codacy, this cookie was automatically set to a random value. We recommend that you keep the same cookie to help ensure that the Codacy upgrade runs smoothly.</p>
+<p>Run the following command to retrieve the current cookie value and define it explicitly in the new configuration:</p>
+<div class="highlight"><pre><span></span><code>kubectl get secrets -n codacy codacy-rabbitmq-ha -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s2">&quot;{.data.rabbitmq-erlang-cookie}&quot;</span> <span class="p">|</span> base64 --decode
+</code></pre></div>
+
+</li>
 </ul>
 </li>
 </ul>
@@ -2760,7 +2773,7 @@ kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 2, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 10, 2020</span>
     
   </small>
 </div>
