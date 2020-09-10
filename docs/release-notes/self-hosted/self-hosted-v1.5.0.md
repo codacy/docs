@@ -1,6 +1,6 @@
-# Self-hosted v1.5.0 for Kubernetes
+# Self-hosted v1.5.0
 
-These release notes are for [Codacy Self-hosted v1.5.0](https://github.com/codacy/chart/releases/tag/1.5.0){: target="_blank"} for Kubernetes. [Follow these instructions](/chart/maintenance/upgrade/) to upgrade Codacy.
+These release notes are for [Codacy Self-hosted v1.5.0](https://github.com/codacy/chart/releases/tag/1.5.0){: target="_blank"}. To upgrade Codacy, [follow these instructions](/chart/maintenance/upgrade/).
 
 ## Product enhancements
 
