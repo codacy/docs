@@ -1,8 +1,8 @@
-# Repository Dashboard overview
+# Repository Dashboard
 
 Your **Repository Dashboard** offers an overview of the repository and attention points we select for you on relevant items requiring your intervention.
 
-You can access the Repository Dashboard by selecting a specific repository on the [Organization Dashboard](../organizations/organization-dashboard-overview.md), or by opening a repository on any other page of the platform.
+You can access the Repository Dashboard by selecting a specific repository on the [Organization Dashboard](../organizations/organization-overview.md), or by opening a repository on any other page of the platform.
 
 On the Repository Dashboard you can find two main sections: the repository view of a specific branch (in white) and the main branch summary view on the right side (in gray). Overall, you will find 3 main sections on the branch specific section:
 
@@ -11,14 +11,13 @@ On the Repository Dashboard you can find two main sections: the repository view 
 1.  [Coverage status](#coverage-status)
 1.  [Pull requests status](#pull-requests-status)
 
-![Repository Dashboard overview](images/repository-dashboard-overview.png)
+![Repository Dashboard](images/repository-dashboard.png)
 
 On the Repository Dashboard you can select which branch you want to see details for. You can do this by selecting (or searching on the search bar) for a specific branch, next to the name of the repository:
 
 ![Changing the branch](images/repository-dashboard-select-branch.png)
 
 The following sections provide a detailed overview of each dashboard area.
-
 
 ## 1. Repository certification and quality evolution chart {: id="repository-certification-and-quality-evolution-chart"}
 
@@ -36,7 +35,6 @@ Still with regards to coverage it only shows a value if the most recent commit r
 
 If you don't have recent data, Codacy displays the chart and all the metrics for the last 8 analyzed commits instead.
 
-
 ## 2. Issues breakdown {: id="issues-breakdown"}
 
 This area displays the total number of issues found on the selected branch, as well as a breakdown of the number of issues in each category.
@@ -44,7 +42,6 @@ This area displays the total number of issues found on the selected branch, as w
 ![Issues breakdown](images/repository-dashboard-issues-breakdown.png)
 
 Click **See all issues** to see the full list of issues found, or click the name of a category to see only the issues in that category.
-
 
 ## 3. Coverage status {: id="coverage-status"}
 
