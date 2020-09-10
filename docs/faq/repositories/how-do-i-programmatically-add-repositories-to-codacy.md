@@ -19,14 +19,14 @@ Substitute the placeholders with your own values:
 -   **API_KEY**: [API token](../../related-tools/api-tokens.md) used to authenticate on the Codacy API.
 -   **GIT_PROVIDER**: Git provider hosting the repository, using one of the values in the table below. For example, `gh` for GitHub Cloud.
 
-    |Value |Git provider |
-    |------|-------------|
-    |`gh`  |GitHub Cloud | 
-    |`ghe` |GitHub Enterprise |
-    |`gl`  |GitLab Cloud |
-    |`gle` |GitLab Enterprise |
-    |`bb`  |BitBucket Cloud |
-    |`bbe` |BitBucker Enterprise |
+    | Value | Git provider         |
+    |-------|----------------------|
+    | `gh`  | GitHub Cloud         | 
+    | `ghe` | GitHub Enterprise    |
+    | `gl`  | GitLab Cloud         |
+    | `gle` | GitLab Enterprise    |
+    | `bb`  | BitBucket Cloud      |
+    | `bbe` | BitBucker Enterprise |
 
 -   **REPOSITORY_FULL_PATH**: Name of the organization and repository on the Git provider, using the format `<organization>/<repository>`. For example, `codacy/docs`. You must have admin permissions over the repository on the Git provider.
 
