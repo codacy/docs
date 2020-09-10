@@ -1,8 +1,8 @@
-# Self-hosted v1.4.0 for Kubernetes
+# Self-hosted v1.4.0
 
-These release notes are for [Codacy Self-hosted v1.4.0](https://github.com/codacy/chart/releases/tag/1.4.0){: target="_blank"} for Kubernetes. [Follow these instructions](/chart/maintenance/upgrade/) to upgrade Codacy.
+These release notes are for [Codacy Self-hosted v1.4.0](https://github.com/codacy/chart/releases/tag/1.4.0){: target="_blank"}. To upgrade Codacy, [follow these instructions](/chart/maintenance/upgrade/).
 
-# Bug fixes
+## Bug fixes
 
 -   Fixed an issue that could cause the list of repositories in an organization to display the repositories in the incorrect order. (CY-1940)
 -   Fixed an issue that could prevent pull requests from being analyzed if they were created while Codacy was already performing an analysis. (CY-1902)
