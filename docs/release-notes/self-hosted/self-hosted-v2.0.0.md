@@ -1,6 +1,6 @@
-# Self-hosted v2.0.0 for Kubernetes
+# Self-hosted v2.0.0
 
-These release notes are for [Codacy Self-hosted v2.0.0](https://github.com/codacy/chart/releases/tag/2.0.0){: target="_blank"} for Kubernetes. [Follow these instructions](/chart/maintenance/upgrade/) to upgrade Codacy.
+These release notes are for [Codacy Self-hosted v2.0.0](https://github.com/codacy/chart/releases/tag/2.0.0){: target="_blank"}. To upgrade Codacy, [follow these instructions](/chart/maintenance/upgrade/).
 
 ## Breaking changes
 
