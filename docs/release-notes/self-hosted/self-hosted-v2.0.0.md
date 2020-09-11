@@ -11,7 +11,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
     To do this, start by scaling the statefulset of RabbitMQ to zero replicas:
 
     ```bash
-    kubectl scale --replicas=0 sts/codacy-rabbitmq-ha -n codacy
+    kubectl delete sts/codacy-rabbitmq-ha -n codacy
     ```
 
     Confirm the name of the PVCs that were created by RabbitMQ:
