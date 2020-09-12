@@ -49,13 +49,18 @@ Click **See all issues** to see the full list of issues found, or click the name
 
 ## Coverage
 
-This area displays the number of files without coverage, the number of files with coverage "not up to standards", and files with coverage "up to standards" based on your repository [quality settings](quality-settings.md).
+This area displays the percentage of lines of code covered by tests versus the [quality settings](quality-settings.md) defined for the repository, as well as the number of files:
+
+-   Without coverage
+-   With coverage not up to standards (based on your repository quality settings)
+-   With coverage up to standards (based on your repository quality settings)
+
+Click **See all files** to open the [list of files](files-view.md) in the repository.
 
 ![Coverage](images/repository-dashboard-coverage.png)
 
-Click **See all files** to open the list of files.
-
-In case you don't have coverage set up for this repository we will let you know on this component, and if you have write permission on the repository you can click **Set up your coverage here** to set up coverage.
+!!! tip
+    If you don't have coverage set up for your repository yet, the Coverage area provides you with instructions on [how to add coverage for your repository](../coverage-reporter/adding-coverage-to-your-repository.md).
 
 ## Open pull requests
 
