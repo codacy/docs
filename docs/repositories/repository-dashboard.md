@@ -41,15 +41,15 @@ If you don't have recent data, Codacy displays the chart and all the metrics for
 
 ## Issues breakdown
 
-This area displays the total number of issues found on the selected branch, as well as a breakdown of the number of issues in each category.
+The **Issues breakdown** area displays the total number of issues found on the selected branch, as well as the distribution of issues across each code quality issue category.
+
+Click **See all issues** to see the full [list of issues](issues-view.md) found, or click a category to see the issues in that category.
 
 ![Issues breakdown](images/repository-dashboard-issues-breakdown.png)
 
-Click **See all issues** to see the full list of issues found, or click the name of a category to see only the issues in that category.
-
 ## Coverage
 
-This area displays the percentage of lines of code covered by tests versus the [quality settings](quality-settings.md) defined for the repository, as well as the number of files:
+The **Coverage** area displays the percentage of lines of code on the selected branch that are covered by tests versus the [quality settings](quality-settings.md) defined for the repository, as well as the number of files:
 
 -   Without coverage
 -   With coverage not up to standards (based on your repository quality settings)
@@ -64,7 +64,7 @@ Click **See all files** to open the [list of files](files-view.md) in the reposi
 
 ## Open pull requests
 
-This area displays the number of open pull requests in the repository and the split between the following status:
+The **Open pull requests** area displays the number of open pull requests in the repository and the split between the following status:
 
 -   Not up to standards
 -   Up to standards
