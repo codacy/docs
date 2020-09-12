@@ -19,7 +19,7 @@ The following sections provide a detailed description of each dashboard area.
 
 ## Overall quality chart
 
-The overall quality chart compares your repositories across grade, issues, complex files, duplication, and coverage. Each tab displays the average value for the corresponding metric.
+The **Overall quality** chart compares your repositories across grade, issues, complex files, duplication, and coverage. Each tab displays the average value for the corresponding metric.
 
 ![Overall quality chart](images/organization-overview-overall-quality.png)
 
@@ -50,7 +50,7 @@ The **Last updated** tab displays open pull requests sorted by the date of updat
 
 ## Last updated repositories
 
-This list displays the last updated repositories, sorted by reverse date of the last update. Each repository card displays the date of the last update and the current grade of the repository.
+The **Last updated repositories** list displays the last updated repositories, sorted by reverse date of the last update. Each repository card displays the date of the last update and the current grade of the repository.
 
 Click **See all** to see all repositories in your organization.
 
