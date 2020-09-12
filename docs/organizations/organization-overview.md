@@ -1,23 +1,23 @@
 # Organization Overview
 
-The **Organization Overview** offers an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
+The **Organization Overview** provides an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
 
 !!! note
     The Organization Overview calculates metrics and displays data only for the repositories that you have access to. This means that depending on their permissions, two users could see different results on their Organization Overview.
 
-To access your Organization Overview, select an organization from the top navigation bar and click **Overview** on the left navigation sidebar.
+To access your Organization Overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
 
-On the Organization Overview, you have three areas to help you monitor your repositories:
+On the Organization Overview you have three areas to help you monitor your repositories:
 
-1.  [Overall quality chart](#overall-quality-chart)
-1.  [Open pull requests](#open-pull-requests)
-1.  [Last updated repositories](#last-updated-repositories)
+-   [Overall quality chart](#overall-quality-chart)
+-   [Open pull requests](#open-pull-requests)
+-   [Last updated repositories](#last-updated-repositories)
 
 ![Organization Overview](images/organization-overview-overview.png)
 
 The following sections provide a detailed description of each dashboard area.
 
-## Overall quality chart {: id="overall-quality-chart"}
+## Overall quality chart
 
 The overall quality chart compares your repositories across grade, issues, complex files, duplication, and coverage. Each tab displays the average value for the corresponding metric.
 
@@ -33,7 +33,7 @@ If you have over eight repositories, the chart displays your repositories groupe
 !!! tip
     If you don't have coverage set up for any of your repositories yet, the coverage tab provides you with instructions on [how to add coverage for your repositories](../coverage-reporter/adding-coverage-to-your-repository.md).
 
-## Open pull requests {: id="open-pull-requests"}
+## Open pull requests
 
 The **Most problematic** tab displays a short list of the open pull requests that are not up to your defined standards and have the most potential to negatively affect your code quality. Click directly on each pull request to see more details.
 
@@ -48,7 +48,7 @@ The **Last updated** tab displays open pull requests sorted by the date of updat
 
 ![Last updated pull requests](images/organization-overview-prs-last-updated.png)
 
-## Last updated repositories {: id="last-updated-repositories"}
+## Last updated repositories
 
 This list displays the last updated repositories, sorted by reverse date of the last update. Each repository card displays the date of the last update and the current grade of the repository.
 

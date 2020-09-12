@@ -1,25 +1,29 @@
 # Repository Dashboard
 
-Your **Repository Dashboard** offers an overview of the repository and attention points we select for you on relevant items requiring your intervention.
+The **Repository Dashboard** provides an overview of the repository code quality and items that require your attention.
 
-You can access the Repository Dashboard by selecting a specific repository on the [Organization Dashboard](../organizations/organization-overview.md), or by opening a repository on any other page of the platform.
+To access your Repository Dashboard, select a repository from the [Organization Dashboard](../organizations/organization-overview.md) or open a repository on any other page and select **Dashboard** on the left navigation sidebar.
 
-On the Repository Dashboard you can find two main sections: the repository view of a specific branch (in white) and the main branch summary view on the right side (in gray). Overall, you will find 3 main sections on the branch specific section:
+The top of the Repository Dashboard displays:
 
-1.  [Repository certification and quality evolution chart](#quality-evolution-chart)
-1.  [Issues breakdown](#issues-breakdown)
-1.  [Coverage status](#coverage)
-1.  [Pull requests status](#open-pull-requests)
-
-![Repository Dashboard](images/repository-dashboard.png)
-
-On the Repository Dashboard you can select which branch you want to see details for. You can do this by selecting (or searching on the search bar) for a specific branch, next to the name of the repository:
+-   The name and code quality grade of the repository
+-   A drop-down list that selects which branch of your repository to display on the dashboard
+-   The button **Add Badge** that you can use to add a [Codacy code quality badge](./badges.md) to the README of your repository
 
 ![Changing the branch](images/repository-dashboard-select-branch.png)
 
+On the Repository Dashboard you have four areas to help you monitor your repository:
+
+-   [Quality evolution chart](#quality-evolution-chart)
+-   [Issues breakdown](#issues-breakdown)
+-   [Coverage](#coverage)
+-   [Open pull requests](#open-pull-requests)
+
+![Repository Dashboard](images/repository-dashboard.png)
+
 The following sections provide a detailed overview of each dashboard area.
 
-## 1. Repository certification and quality evolution chart {: id="quality-evolution-chart"}
+## Quality evolution chart
 
 Here you can see the grade of the repository and the evolution of the code quality. On the chart you can select to see results for the last 7 or 31 days. Use the tabs to see the evolution for each metric: Issues, Complex files, Duplicated code, and Coverage.
 
@@ -35,7 +39,7 @@ Still with regards to coverage it only shows a value if the most recent commit r
 
 If you don't have recent data, Codacy displays the chart and all the metrics for the last 8 analyzed commits instead.
 
-## 2. Issues breakdown {: id="issues-breakdown"}
+## Issues breakdown
 
 This area displays the total number of issues found on the selected branch, as well as a breakdown of the number of issues in each category.
 
@@ -43,7 +47,7 @@ This area displays the total number of issues found on the selected branch, as w
 
 Click **See all issues** to see the full list of issues found, or click the name of a category to see only the issues in that category.
 
-## 3. Coverage {: id="coverage"}
+## Coverage
 
 This area displays the number of files without coverage, the number of files with coverage "not up to standards", and files with coverage "up to standards" based on your repository [quality settings](quality-settings.md).
 
@@ -53,7 +57,7 @@ Click **See all files** to open the list of files.
 
 In case you don't have coverage set up for this repository we will let you know on this component, and if you have write permission on the repository you can click **Set up your coverage here** to set up coverage.
 
-## 4. Open pull requests {: id="open-pull-requests"}
+## Open pull requests
 
 This area displays the number of open pull requests in the repository and the split between "Not up to standards", "Up to standards", and "Analysis failed".
 
