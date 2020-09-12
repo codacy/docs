@@ -59,8 +59,13 @@ In case you don't have coverage set up for this repository we will let you know 
 
 ## Open pull requests
 
-This area displays the number of open pull requests in the repository and the split between "Not up to standards", "Up to standards", and "Analysis failed".
+This area displays the number of open pull requests in the repository and the split between the following status:
 
-![Open pull requests](images/repository-dashboard-open-pull-requests.png)
+-   Not up to standards
+-   Up to standards
+-   Analysis failed (something went wrong during the analysis)
+-   Analyzing (intermediate status while Codacy is analyzing the pull request)
 
 Click **See all pull requests** to open the list of pull requests in the repository.
+
+![Open pull requests](images/repository-dashboard-open-pull-requests.png)
