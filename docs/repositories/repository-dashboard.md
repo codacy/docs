@@ -6,10 +6,10 @@ You can access the Repository Dashboard by selecting a specific repository on th
 
 On the Repository Dashboard you can find two main sections: the repository view of a specific branch (in white) and the main branch summary view on the right side (in gray). Overall, you will find 3 main sections on the branch specific section:
 
-1.  [Repository certification and quality evolution chart](#repository-certification-and-quality-evolution-chart)
+1.  [Repository certification and quality evolution chart](#quality-evolution-chart)
 1.  [Issues breakdown](#issues-breakdown)
-1.  [Coverage status](#coverage-status)
-1.  [Pull requests status](#pull-requests-status)
+1.  [Coverage status](#coverage)
+1.  [Pull requests status](#open-pull-requests)
 
 ![Repository Dashboard](images/repository-dashboard.png)
 
@@ -19,7 +19,7 @@ On the Repository Dashboard you can select which branch you want to see details 
 
 The following sections provide a detailed overview of each dashboard area.
 
-## 1. Repository certification and quality evolution chart {: id="repository-certification-and-quality-evolution-chart"}
+## 1. Repository certification and quality evolution chart {: id="quality-evolution-chart"}
 
 Here you can see the grade of the repository and the evolution of the code quality. On the chart you can select to see results for the last 7 or 31 days. Use the tabs to see the evolution for each metric: Issues, Complex files, Duplicated code, and Coverage.
 
@@ -43,20 +43,20 @@ This area displays the total number of issues found on the selected branch, as w
 
 Click **See all issues** to see the full list of issues found, or click the name of a category to see only the issues in that category.
 
-## 3. Coverage status {: id="coverage-status"}
+## 3. Coverage {: id="coverage"}
 
 This area displays the number of files without coverage, the number of files with coverage "not up to standards", and files with coverage "up to standards" based on your repository [quality settings](quality-settings.md).
 
-![Coverage status](images/repository-dashboard-coverage-status.png)
+![Coverage](images/repository-dashboard-coverage.png)
 
 Click **See all files** to open the list of files.
 
 In case you don't have coverage set up for this repository we will let you know on this component, and if you have write permission on the repository you can click **Set up your coverage here** to set up coverage.
 
-## 4. Pull requests status {: id="pull-requests-status"}
+## 4. Open pull requests {: id="open-pull-requests"}
 
 This area displays the number of open pull requests in the repository and the split between "Not up to standards", "Up to standards", and "Analysis failed".
 
-![Pull requests status](images/repository-dashboard-pr-status.png)
+![Open pull requests](images/repository-dashboard-open-pull-requests.png)
 
 Click **See all pull requests** to open the list of pull requests in the repository.
