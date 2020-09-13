@@ -25,19 +25,22 @@ The following sections provide a detailed overview of each dashboard area.
 
 ## Quality evolution chart
 
-Here you can see the grade of the repository and the evolution of the code quality. On the chart you can select to see results for the last 7 or 31 days. Use the tabs to see the evolution for each metric: Issues, Complex files, Duplicated code, and Coverage.
+The **Quality evolution** chart displays the evolution of the repository code quality regarding issues, complex files, duplication, and coverage. Click on **Last 3 months**, **Last 31 days**, or **Last 7 days** to select the time interval of the historical data to display on the chart.
 
-The chart also displays the **trend for the next 31 days** based on the past behavior, the **pull request prediction** (the changes caused by open pull requests if they are not changed) and the **quality standard** (defined on the repository [quality settings](quality-settings.md)).
+Each tab displays the following information for the corresponding metric:
+
+-   A green or red indicator depending if the metric is within the acceptable quality level or not
+-   The average value during the selected time interval
+-   The variation of the value during the selected time interval
+
+!!! note
+    The coverage tab only displays a value if Codacy received coverage data for the most recent commit. This is because one commit can easily change the size or number of files on the repository, or even remove some of the files that had coverage information.
+
+The chart also displays the **trendline** based on the past behavior and the **quality standard**  defined on the repository [quality settings](quality-settings.md).
 
 ![Quality evolution chart](images/repository-dashboard-quality-evolution.png)
 
-In the example above, "Issues" has a red indicator ![](images/repository-dashboard-indicator-red.png) meaning that the number of Issues is above what was defined on the quality standards. Next to each metric there's a delta (can be "=", a drop, or an increase), representing the changes observed during the selected period. In the example, there was no change of number of Issues on the last 31 days, however there was a decrease of 160% of duplicated code.
-
-You should know for Issues/Complex Files/Duplicated code (the more we have it, the worse we are), being above of the defined standards is considered bad, so the indication will be ![](images/repository-dashboard-indicator-red.png) while for Coverage (the more we have it, the better we are), being above the defined standards will be flagged with ![](images/repository-dashboard-indicator-green.png).
-
-Still with regards to coverage it only shows a value if the most recent commit received a coverage report. We do this as one commit can easily change the size or number of files on the repository and even remove some of the files that had coverage information.
-
-If you don't have recent data, Codacy displays the chart and all the metrics for the last 8 analyzed commits instead.
+If you don't have recent data, Codacy displays the metrics for the last eight analyzed commits instead.
 
 ## Issues breakdown
 
