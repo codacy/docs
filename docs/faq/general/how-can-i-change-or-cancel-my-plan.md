@@ -7,14 +7,18 @@ You can change or cancel [your plan](https://www.codacy.com/pricing) at any time
 For single accounts:
 
 -   To change the billing details or the plan of your account click on your avatar, select **Your Account**, and open **Plan and billing**
+
+    ![Plan and billing for single accounts](images/plan-billing-single-accounts.png)
+
 -   To cancel your plan, [delete your account](../../account/managing-your-profile.md#deleting-your-account)
 
 For organizations:
 
 -   To change the billing details or the plan of your organization click on your avatar, select **Organizations**, select your organization, and open **Plan and billing**
--   To cancel your plan, [delete your organization](../../organizations/what-are-synced-organizations.md#deleting-an-organization)
 
-![](images/plan-billing.png)
+    ![Plan and billing for organizations](images/plan-billing-organizations.png)
+
+-   To cancel your plan, [delete your organization](../../organizations/what-are-synced-organizations.md#deleting-an-organization)
 
 !!! note
     If you're using GitHub Marketplace, make changes to your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).
