@@ -2,7 +2,7 @@
 
 Codacy begins an initial analysis as soon as you add a repository and sends you an email notification once the first analysis is completed.
 
-![](/images/screencapture-app-dev-codacy-org-manual-Codacy-codacy-scalameta-dashboard-2019-11-04-21_56_19.png)
+![](../repositories/images/repository-dashboard.png)
 
 After the first analysis is complete you can continue to explore and configure Codacy for your repository:
 
