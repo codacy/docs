@@ -8,10 +8,10 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 -   You must manually delete the existing RabbitMQ PVCs before upgrading Codacy.
 
-    To do this, start by scaling the statefulset of RabbitMQ to zero replicas:
+    To do this, start by removing the RabbitMQ statefulset:
 
     ```bash
-    kubectl scale --replicas=0 sts/codacy-rabbitmq-ha -n codacy
+    kubectl delete sts/codacy-rabbitmq-ha -n codacy
     ```
 
     Confirm the name of the PVCs that were created by RabbitMQ:
