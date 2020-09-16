@@ -542,6 +542,7 @@ nav:
                 - faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md
                 - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
                 - faq/code-analysis/skipping-an-analysis.md
+                - faq/code-analysis/diff-failure.md
           - Troubleshooting:
                 - faq/troubleshooting/why-is-my-file-missing.md
                 - faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md
