@@ -85,7 +85,7 @@ Follow these Markdown conventions when editing the documentation:
 
 If you are unsure about the best syntax or way to convey information in Markdown, search for similar examples on the existing Markdown files.
 
-## Making changes to the documentation
+### Making changes to the documentation
 
 Create pull requests to make changes to the documentation:
 
@@ -101,7 +101,7 @@ Create pull requests to make changes to the documentation:
 
 1.  Merge the pull request using the "merge commit" strategy.
 
-## Deploying the documentation to GitHub Pages
+### Deploying the documentation to GitHub Pages
 
 A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows/mkdocs.yml) automatically deploys the generated HTML to GitHub Pages on every push to `master` or to the release branches `release/v*`.
 
@@ -129,6 +129,8 @@ First, update the Latest documentation version with the new chart documentation:
     Make sure that you pull the latest changes from this branch of the chart submodule.
 
 1.  Edit the file `mkdocs.yml`(mkdocs.yml) and update the value of the variable `extra.version` to the correct version of the chart.
+
+1.  Build the documentation and make sure that the changes for the new release of the chart are correct.
 
 1.  Open a pull request with this changes and merge the branch into `master`.
 
