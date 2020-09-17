@@ -19,7 +19,7 @@ The following sections provide a detailed description of each dashboard area.
 
 ## Overall quality chart
 
-The **Overall quality** chart compares your repositories across grade, issues, complex files, duplication, and coverage. Each tab displays the average value for the corresponding metric.
+The **Overall quality** chart compares the repositories in your organization regarding grade, issues, complex files, duplication, and coverage. Each tab displays the average value for the corresponding metric across your repositories.
 
 ![Overall quality chart](images/organization-overview-overall-quality.png)
 
