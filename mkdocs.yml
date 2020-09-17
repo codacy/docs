@@ -575,6 +575,7 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
           - "Codacy Self-hosted":
+                - release-notes/self-hosted/self-hosted-v2.1.0.md
                 - release-notes/self-hosted/self-hosted-v2.0.0.md
                 - release-notes/self-hosted/self-hosted-v1.5.0.md
                 - release-notes/self-hosted/self-hosted-v1.4.0.md
