@@ -27,7 +27,7 @@ google_analytics: ["UA-45639808-4", "auto"]
 
 # Extra variables
 extra:
-  version: 2.0.0
+  version: 2.1.0
 
 # Repository
 # repo_name: "codacy/docs"
@@ -349,7 +349,7 @@ plugins:
               "Chart/configuration/integrations/bitbucket-cloud.md": "chart/configuration/integrations/bitbucket-cloud.md"
               "Chart/configuration/integrations/bitbucket-server.md": "chart/configuration/integrations/bitbucket-server.md"
               "Chart/configuration/integrations/email.md": "chart/configuration/integrations/email.md"
-              "Chart/configuration/tls-ingress.md": "chart/configuration/tls-ingress.md"
+              "Chart/configuration/tls-ingress.md": "index.md"
               "Chart/configuration/monitoring.md": "chart/configuration/monitoring.md"
               "Chart/maintenance/upgrade.md": "chart/maintenance/upgrade.md"
               "Chart/maintenance/uninstall.md": "chart/maintenance/uninstall.md"
@@ -423,6 +423,7 @@ plugins:
               "release-notes/self-hosted/enterprise-v2.0.338.md": "https://docs.codacy.com/v2.0.386-deprecated/release-notes/enterprise-v2.0.338/"
               "release-notes/self-hosted/enterprise-v2.0.337.md": "https://docs.codacy.com/v2.0.386-deprecated/release-notes/enterprise-v2.0.337/"
               "release-notes/self-hosted/enterprise-v2.0.333-.md": "https://docs.codacy.com/v2.0.386-deprecated/release-notes/enterprise-v2.0.333-/"
+              "chart/configuration/tls-ingress.md": "index.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "organizations/why-cant-i-see-my-organization.md"
@@ -576,6 +577,7 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
           - "Codacy Self-hosted":
+                - release-notes/self-hosted/self-hosted-v2.1.0.md
                 - release-notes/self-hosted/self-hosted-v2.0.0.md
                 - release-notes/self-hosted/self-hosted-v1.5.0.md
                 - release-notes/self-hosted/self-hosted-v1.4.0.md
