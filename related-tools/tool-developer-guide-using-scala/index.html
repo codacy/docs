@@ -2486,6 +2486,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../release-notes/self-hosted/self-hosted-v2.1.0/" title="Self-hosted v2.1.0" class="md-nav__link">
+      Self-hosted v2.1.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../release-notes/self-hosted/self-hosted-v2.0.0/" title="Self-hosted v2.0.0" class="md-nav__link">
       Self-hosted v2.0.0
     </a>
@@ -2644,7 +2656,7 @@
 
 <span class="k">object</span> <span class="nc">MyTool</span> <span class="k">extends</span> <span class="nc">Tool</span><span class="o">{</span>
 
-    <span class="k">override</span> <span class="k">def</span> <span class="n">apply</span><span class="o">(</span><span class="n">path</span><span class="k">:</span> <span class="kt">Path</span><span class="o">,</span> <span class="n">conf</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Seq</span><span class="o">[</span><span class="kt">PatternDef</span><span class="o">]],</span> <span class="n">files</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Set</span><span class="o">[</span><span class="kt">Path</span><span class="o">]])(</span><span class="k">implicit</span> <span class="n">spec</span><span class="k">:</span> <span class="kt">Spec</span><span class="o">)</span><span class="k">:</span> <span class="kt">Try</span><span class="o">[</span><span class="kt">Iterable</span><span class="o">[</span><span class="kt">Result</span><span class="o">]]</span> <span class="k">=</span> <span class="o">{</span>
+    <span class="k">override</span> <span class="k">def</span> <span class="n">apply</span><span class="o">(</span><span class="n">path</span><span class="k">:</span> <span class="kt">Path</span><span class="o">,</span> <span class="n">conf</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Seq</span><span class="o">[</span><span class="kt">PatternDef</span><span class="o">]],</span> <span class="n">files</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Set</span><span class="o">[</span><span class="kt">Path</span><span class="o">]])(</span><span class="k">implicit</span> <span class="n">spec</span><span class="k">:</span> <span class="kt">Spec</span><span class="o">)</span><span class="k">:</span> <span class="kt">Try</span><span class="o">[</span><span class="kt">Iterable</span><span class="o">[</span><span class="kt">Result</span><span class="o">]]</span> <span class="o">=</span> <span class="o">{</span>
 
         <span class="c1">//TODO: Your code goes here</span>
 
@@ -2685,10 +2697,10 @@
 <span class="c1">//...</span>
 
 <span class="c1">//The sequence of strings to run</span>
-<span class="k">val</span> <span class="n">cmd</span> <span class="k">=</span> <span class="nc">Seq</span><span class="o">(</span><span class="s">&quot;pmd&quot;</span><span class="o">,</span> <span class="s">&quot;-d&quot;</span><span class="o">,</span> <span class="s">&quot;/src/&quot;</span><span class="o">,</span> <span class="s">&quot;-f&quot;</span><span class="o">,</span> <span class="s">&quot;xml&quot;</span><span class="o">)</span>
+<span class="k">val</span> <span class="n">cmd</span> <span class="o">=</span> <span class="nc">Seq</span><span class="o">(</span><span class="s">&quot;pmd&quot;</span><span class="o">,</span> <span class="s">&quot;-d&quot;</span><span class="o">,</span> <span class="s">&quot;/src/&quot;</span><span class="o">,</span> <span class="s">&quot;-f&quot;</span><span class="o">,</span> <span class="s">&quot;xml&quot;</span><span class="o">)</span>
 
 <span class="c1">//run the command &gt; pmd -d /src/ -f xml</span>
-<span class="k">val</span> <span class="n">cmdResponse</span> <span class="k">=</span> <span class="n">cmd</span><span class="o">.!</span>
+<span class="k">val</span> <span class="n">cmdResponse</span> <span class="o">=</span> <span class="n">cmd</span><span class="o">.!</span>
 
 <span class="c1">//...</span>
 </code></pre></div>
