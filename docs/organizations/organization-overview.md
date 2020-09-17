@@ -26,7 +26,7 @@ The **Overall quality** chart compares the repositories in your organization reg
 -   Hover over the bars to see the metrics for the corresponding repositories. If a metric is not up to standards, you will see it flagged.
 -   Click the bars to navigate directly to the corresponding repository.
 
-If you have over eight repositories, the chart displays your repositories grouped by grade or percentage intervals:
+If you have over 8 repositories, the chart displays your repositories grouped by grade or percentage intervals:
 
 ![Overall quality chart with grouped repositories](images/organization-overview-overall-quality-grouped.png)
 

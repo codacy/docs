@@ -43,7 +43,7 @@ The chart also displays the **trendline** based on the past behavior and the **q
 
 ![Quality evolution chart](images/repository-dashboard-quality-evolution.png)
 
-If you don't have recent data, Codacy displays the metrics for the last eight analyzed commits instead.
+If you don't have recent data, Codacy displays the metrics for the last 8 analyzed commits instead.
 
 ## Issues breakdown
 
