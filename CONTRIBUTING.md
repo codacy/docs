@@ -144,6 +144,10 @@ After updating the Latest documentation version, we're ready to create a new doc
 
     Delete the folder `docs/release-notes` and all references to the files in this folder from the file `mkdocs.yml`.
 
+1.  Delete the existing redirects, since it does not make sense to repeat them under each Codacy Self-hosted version.
+
+    Delete the YAML block `plugins.redirects` from the file `mkdocs.yml`.
+
 1.  Build the documentation and make sure that the changes for the new release of the chart are correct.
 
 1.  Push the new branch and wait until the GitHub workflow deploys the new documentation version under `https://docs.codacy.com/v<MAJOR>.<MINOR>`.
