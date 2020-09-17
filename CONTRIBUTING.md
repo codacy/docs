@@ -128,7 +128,7 @@ First, update the Latest documentation version with the new chart documentation:
 
     Make sure that you pull the latest changes from this branch of the chart submodule.
 
-1.  Edit the file `mkdocs.yml`(mkdocs.yml) and update the value of the variable `extra.version` to the correct version of the chart.
+1.  Edit the file [`mkdocs.yml`](mkdocs.yml) and update the value of the variable `extra.version` to the correct version of the chart.
 
 1.  Build the documentation and make sure that the changes for the new release of the chart are correct.
 
