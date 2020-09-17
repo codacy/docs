@@ -4,7 +4,7 @@ These release notes are for [Codacy Self-hosted v2.1.0](https://github.com/codac
 
 ## Product enhancements
 
--   Improved the [repositories list page](https://docs.codacy.com/organizations/managing-repositories-in-your-organization/) to streamline managing the repositories in an organization and display metrics for each repository (CY-1847)
+-   Improved the [repositories list page](https://docs.codacy.com/organizations/managing-repositories-in-your-organization/) to streamline managing the repositories in an organization and display metrics for each repository. (CY-1847)
 
 ## Bug fixes
 
