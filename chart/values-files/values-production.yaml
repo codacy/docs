@@ -308,15 +308,6 @@ listener:
       requests:
         cpu: 0.5
         memory: 500Mi
-core:
-  replicaCount: 2
-  resources:
-    limits:
-      cpu: 500m
-      memory: 1500Mi
-    requests:
-      cpu: 100m
-      memory: 200Mi
 engine:
   replicaCount: 2
   resources:

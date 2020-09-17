@@ -40,13 +40,6 @@ listener:
     persistence:
       size: 100Gi
 
-core:
-  replicaCount: 1
-  resources:
-    limits:
-      cpu: 300m
-      memory: 500Mi
-
 engine:
   resources:
     limits:
