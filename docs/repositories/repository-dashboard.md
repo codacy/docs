@@ -43,8 +43,6 @@ The chart also displays the **trendline** based on the past behavior and the **q
 
 ![Quality evolution chart](images/repository-dashboard-quality-evolution.png)
 
-If you don't have recent data, Codacy displays the metrics for the last 8 analyzed commits instead.
-
 ## Issues breakdown
 
 The **Issues breakdown** area displays the total number of issues found on the selected branch, as well as the distribution of issues across each code quality issue category.
