@@ -33,8 +33,8 @@ The **Quality evolution** chart displays the evolution of the repository code qu
 Each tab displays the following information for the corresponding metric:
 
 -   A green or red indicator depending if the metric is within the acceptable quality level or not
--   The average value during the selected time interval
--   The variation of the value during the selected time interval
+-   The current value
+-   The variation of the value introduced by the last commit
 
 !!! note
     The coverage tab only displays a value if Codacy received coverage data for the most recent commit. This is because one commit can easily change the size or number of files on the repository, or even remove some of the files that had coverage information.
