@@ -4,6 +4,9 @@ The **Repository Dashboard** provides an overview of the repository code quality
 
 To access your Repository Dashboard, select a repository from the [Organization Dashboard](../organizations/organization-overview.md) or open a repository on any other page and select **Dashboard** on the left navigation sidebar.
 
+!!! tip
+    You can share the URL of the Repository Dashboard for your public repositories to allow other people to see your repository code quality metrics, even if they aren't registered on Codacy.
+
 The top of the Repository Dashboard displays:
 
 -   The name and code quality grade of the repository
