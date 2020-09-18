@@ -4,12 +4,12 @@ on: ["push"]
 
 jobs:
   codacy-analysis-cli:
-    name: codacy-analysis-cli
     runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/master'
+    name: Codacy Analysis CLI
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout code
+        uses: actions/checkout@master
       - name: Run codacy-analysis-cli
-        uses: mrfyda/codacy-analysis-cli-action@master
+        uses: codacy/codacy-analysis-cli-action@master
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
