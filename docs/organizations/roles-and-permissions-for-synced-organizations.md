@@ -130,7 +130,7 @@ Depending on your role on the Git provider you will have different permissions o
 <td>Yes</td>
 </tr>
 <tr>
-<td rowspan="4">Bitbucket Server</td>
+<td rowspan="4">Bitbucket Cloud</td>
 <td>Read</td>
 <td>Configurable<sup>2</sup></td>
 <td>No</td>
