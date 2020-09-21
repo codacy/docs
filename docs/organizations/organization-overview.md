@@ -13,7 +13,7 @@ On the Organization Overview you have three areas to help you monitor your repos
 -   [Open pull requests](#open-pull-requests)
 -   [Last updated repositories](#last-updated-repositories)
 
-![Organization Overview](images/organization-overview-overview.png)
+![Organization Overview](images/organization-overview.png)
 
 The following sections provide a detailed description of each dashboard area.
 
