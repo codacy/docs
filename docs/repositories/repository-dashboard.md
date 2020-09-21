@@ -11,7 +11,7 @@ The top of the Repository Dashboard displays:
 
 -   The name and code quality grade of the repository
 -   A drop-down list that selects which branch of your repository to display on the dashboard
--   The button **Add Badge** that you can use to add a [Codacy code quality badge](./badges.md) to the README of your repository
+-   **For public GitHub repositories**, the button **Add Badge** that you can use to add a [Codacy code quality badge](./badges.md) to the README of your repository
 
 ![Changing the branch](images/repository-dashboard-select-branch.png)
 
@@ -72,7 +72,6 @@ The **Open pull requests** area displays the number of open pull requests in the
 
 -   Not up to standards
 -   Up to standards
--   Analysis failed (something went wrong during the analysis)
 -   Analyzing (intermediate status while Codacy is analyzing the pull request)
 
 Click **See all pull requests** to open the list of pull requests in the repository.

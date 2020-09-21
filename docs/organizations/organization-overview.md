@@ -23,7 +23,7 @@ The **Overall quality** chart compares the repositories in your organization reg
 
 ![Overall quality chart](images/organization-overview-overall-quality.png)
 
--   Hover over the bars to see the metrics for the corresponding repositories. If a metric is not up to standards, you will see it flagged.
+-   Hover the mouse pointer over the bars to see the metrics for the corresponding repositories.
 -   Click the bars to navigate directly to the corresponding repository.
 
 If you have over 8 repositories, the chart displays your repositories grouped by grade or percentage intervals:
@@ -35,7 +35,7 @@ If you have over 8 repositories, the chart displays your repositories grouped by
 
 ## Open pull requests
 
-The **Most problematic** tab displays a short list of the open pull requests that are not up to your defined standards and have the most potential to negatively affect your code quality. Click directly on each pull request to see more details.
+The **Most problematic** tab displays a short list of the open pull requests that are not up to standards and have the most potential to negatively affect your code quality. Click directly on each pull request to see more details.
 
 ![Most problematic pull requests](images/organization-overview-prs-problematic.png)
 
