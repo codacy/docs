@@ -1,15 +1,15 @@
-# Engines
+# Supported languages and tools
 
-Codacy uses a system of plugin engines to extend the scope of analyses on your repositories, allowing support for new tools and languages every day. To create your own engine, check the [Tool Developer Guide](tool-developer-guide.md).
+Codacy generally includes support for Static Analysis, Code Duplication, Code Complexity, and Test Coverage for each supported programming language.
 
-## Analysis Engines
+Codacy uses a system of plugin tools to extend the scope of analyses on your repositories, allowing support for new tools and languages every day. To create your own engine, check the [Tool Developer Guide](tool-developer-guide.md).
 
-Here are the engines currently used on Codacy. Our GitHub links list the version being used for each engine as well as additional plugins that we support for each tool.
+The following is a list of tools currently used on Codacy, and the corresponding supported languages. Our GitHub repositories list the version being used for each tools as well as additional plugins that we support for each tool.
 
 <table>
 <thead>
 <tr>
-<th><strong>Tool Name</strong></th>
+<th><strong>Tool name</strong></th>
 <th><strong>Supported languages</strong></th>
 <th><strong>Source</strong></th>
 </tr>
@@ -220,12 +220,12 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 
 ## Other tools
 
-Although we expect all tools to run within an engine container, some tools are still supported directly as a binary in our analysis servers and are not configurable in the UI:
+Although we expect all tools to run within a container, some tools are still supported directly as a binary in our analysis servers and are not configurable in the UI:
 
 <table>
 <thead>
 <tr>
-<th><strong>Tool Name</strong></th>
+<th><strong>Tool name</strong></th>
 <th><strong>Source</strong></th>
 </tr>
 </thead>
