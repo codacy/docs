@@ -197,17 +197,17 @@ plugins:
               "hc/en-us/sections/360003014233-Configure-your-repo.md": "repositories-configure/code-patterns.md"
               "hc/en-us/sections/360003183099.md": "organizations/what-are-synced-organizations.md"
               "hc/en-us/sections/360003183099-Synced-Organizations.md": "organizations/what-are-synced-organizations.md"
-              "hc/en-us/articles/360003863274.md": "organizations/organization-dashboard-overview.md"
-              "hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-.md": "organizations/organization-dashboard-overview.md"
-              "hc/en-us/articles/360003863594.md": "faq/repositories/hotspots-overview.md"
-              "hc/en-us/articles/360003863594-Hotspots-How-does-it-work-.md": "faq/repositories/hotspots-overview.md"
-              "hc/en-us/articles/360003863594-Hotspots-How-they-work-.md": "faq/repositories/hotspots-overview.md"
-              "hc/en-us/articles/360003890673.md": "repositories/repository-dashboard-overview.md"
-              "hc/en-us/articles/360003890673-Repository-Dashboard-How-does-it-work-.md": "repositories/repository-dashboard-overview.md"
-              "hc/en-us/articles/360003890673-Project-Dashboard-How-does-it-work-.md": "repositories/repository-dashboard-overview.md"
-              "hc/en-us/articles/360003890693.md": "faq/repositories/what-are-logs.md"
-              "hc/en-us/articles/360003890693-What-are-Logs-.md": "faq/repositories/what-are-logs.md"
-              "hc/en-us/articles/360003890693-Logs-How-do-they-work-.md": "faq/repositories/what-are-logs.md"
+              "hc/en-us/articles/360003863274.md": "organizations/organization-overview.md"
+              "hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-.md": "organizations/organization-overview.md"
+              "hc/en-us/articles/360003863594.md": "index.md"
+              "hc/en-us/articles/360003863594-Hotspots-How-does-it-work-.md": "index.md"
+              "hc/en-us/articles/360003863594-Hotspots-How-they-work-.md": "index.md"
+              "hc/en-us/articles/360003890673.md": "repositories/repository-dashboard.md"
+              "hc/en-us/articles/360003890673-Repository-Dashboard-How-does-it-work-.md": "repositories/repository-dashboard.md"
+              "hc/en-us/articles/360003890673-Project-Dashboard-How-does-it-work-.md": "repositories/repository-dashboard.md"
+              "hc/en-us/articles/360003890693.md": "index.md"
+              "hc/en-us/articles/360003890693-What-are-Logs-.md": "index.md"
+              "hc/en-us/articles/360003890693-Logs-How-do-they-work-.md": "index.md"
               "hc/en-us/articles/360004685494.md": "faq/general/how-does-codacy-protect-my-privacy.md"
               "hc/en-us/articles/360004685494-Updates-to-Codacy-s-Privacy-Policy.md": "faq/general/how-does-codacy-protect-my-privacy.md"
               "hc/en-us/articles/360005097654.md": "repositories-configure/ignore-files-from-codacy-analysis.md"
@@ -218,9 +218,9 @@ plugins:
               "hc/en-us/articles/360005839053-Skipping-an-analysis.md": "faq/code-analysis/skipping-an-analysis.md"
               "hc/en-us/articles/360006036934.md": "repositories-configure/php_codesniffer-specifying-your-php-version.md"
               "hc/en-us/articles/360006036934-PHP-CodeSniffer-Specifying-your-PHP-version.md": "repositories-configure/php_codesniffer-specifying-your-php-version.md"
-              "hc/en-us/articles/360006718454.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
-              "hc/en-us/articles/360006718454-Share-your-repository-with-a-non-Codacy-user.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
-              "hc/en-us/articles/360006718454-Share-your-project-with-a-non-Codacy-user.md": "repositories/share-your-repository-with-a-non-codacy-user.md"
+              "hc/en-us/articles/360006718454.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
+              "hc/en-us/articles/360006718454-Share-your-repository-with-a-non-Codacy-user.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
+              "hc/en-us/articles/360006718454-Share-your-project-with-a-non-Codacy-user.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
               "hc/en-us/articles/360006795293.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
               "hc/en-us/articles/360006795293-Repository-failed-to-clone-Generating-a-new-SSH-key.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
               "hc/en-us/articles/360007316034.md": "release-notes/cloud/cloud-release-notes-|-23-july-2018.md"
@@ -423,6 +423,8 @@ plugins:
               "release-notes/self-hosted/enterprise-v2.0.338.md": "https://docs.codacy.com/v2.0.386-deprecated/release-notes/enterprise-v2.0.338/"
               "release-notes/self-hosted/enterprise-v2.0.337.md": "https://docs.codacy.com/v2.0.386-deprecated/release-notes/enterprise-v2.0.337/"
               "release-notes/self-hosted/enterprise-v2.0.333-.md": "https://docs.codacy.com/v2.0.386-deprecated/release-notes/enterprise-v2.0.333-/"
+              "faq/repositories/what-are-logs.md": "index.md"
+              "faq/repositories/hotspots-overview.md": "index.md"
               "chart/configuration/tls-ingress.md": "index.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
@@ -447,6 +449,9 @@ plugins:
               "release-notes/self-hosted/self-hosted-v1.1.0-for-kubernetes.md": "release-notes/self-hosted/self-hosted-v1.1.0.md"
               "release-notes/self-hosted/self-hosted-v1.0.1-for-kubernetes.md": "release-notes/self-hosted/self-hosted-v1.0.1.md"
               "release-notes/self-hosted/self-hosted-v1.0.0-for-kubernetes.md": "release-notes/self-hosted/self-hosted-v1.0.0.md"
+              "organizations/organization-dashboard-overview.md": "organizations/organization-overview.md"
+              "repositories/repository-dashboard-overview.md": "repositories/repository-dashboard.md"
+              "repositories/share-your-repository-with-a-non-codacy-user.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -457,7 +462,7 @@ nav:
           - getting-started/supported-languages.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
     - "Your repositories":
-          - repositories/repository-dashboard-overview.md
+          - repositories/repository-dashboard.md
           - repositories/what-are-the-different-grades-and-how-are-they-calculated.md
           - repositories/issues-view.md
           - repositories/commits-view.md
@@ -467,7 +472,6 @@ nav:
           - repositories/quality-settings.md
           - repositories/managing-branches.md
           - repositories/post-commit-hooks.md
-          - repositories/share-your-repository-with-a-non-codacy-user.md
     - "Configuring your repositories":
           - Integrations:
                 - repositories-configure/integrations/github-integration.md
@@ -489,7 +493,7 @@ nav:
           - repositories-configure/code-standards.md
     - "Organizations":
           - organizations/what-are-synced-organizations.md
-          - organizations/organization-dashboard-overview.md
+          - organizations/organization-overview.md
           - organizations/roles-and-permissions-for-synced-organizations.md
           - organizations/adding-and-managing-authors.md
           - organizations/why-cant-i-see-my-organization.md
@@ -501,6 +505,7 @@ nav:
                 - organizations/manual-organizations/creating-and-managing-teams.md
                 - organizations/manual-organizations/managing-team-repositories.md
                 - organizations/manual-organizations/administrative-permissions.md
+                - organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md
     - "Your account":
           - account/managing-your-profile.md
           - account/default-patterns.md
@@ -535,8 +540,6 @@ nav:
                 - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
                 - faq/repositories/i-moved-my-repository-on-the-git-provider.md
                 - faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md
-                - faq/repositories/hotspots-overview.md
-                - faq/repositories/what-are-logs.md
           - Code analysis:
                 - faq/code-analysis/do-you-check-for-dependencies.md
                 - faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md
