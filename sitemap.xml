@@ -24,7 +24,7 @@
      <lastmod>2020-09-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/repositories/repository-dashboard-overview/</loc>
+     <loc>https://docs.codacy.com/repositories/repository-dashboard/</loc>
      <lastmod>2020-09-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -61,10 +61,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories/post-commit-hooks/</loc>
-     <lastmod>2020-09-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.codacy.com/repositories/share-your-repository-with-a-non-codacy-user/</loc>
      <lastmod>2020-09-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -152,7 +148,7 @@
      <lastmod>2020-09-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/organizations/organization-dashboard-overview/</loc>
+     <loc>https://docs.codacy.com/organizations/organization-overview/</loc>
      <lastmod>2020-09-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -193,6 +189,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/organizations/manual-organizations/administrative-permissions/</loc>
+     <lastmod>2020-09-22</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.codacy.com/organizations/manual-organizations/share-your-repository-with-a-non-codacy-user/</loc>
      <lastmod>2020-09-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -385,14 +385,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account/</loc>
-     <lastmod>2020-09-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.codacy.com/faq/repositories/hotspots-overview/</loc>
-     <lastmod>2020-09-22</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.codacy.com/faq/repositories/what-are-logs/</loc>
      <lastmod>2020-09-22</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
