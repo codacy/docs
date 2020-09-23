@@ -1,42 +1,44 @@
 # Quality settings
 
-Here you can define quality settings for your repository, giving you control over the build status and success/fail of commits and pull requests. This feature enables you to turn off metrics like duplication or complexity.
+Here you can define quality settings for your repository, giving you control over the build status and success/fail of commits and pull requests. This feature also enables you to turn off metrics like duplication or complexity.
 
-To access the quality settings, please browse to **Settings > Quality Settings**. Here you find three sections where you can set specific values on commit, pull request, and repository levels. Below we explain what these settings do and how they work.
+To access the quality settings, open your repository **Settings**, tab **Quality Settings**. On this page there are three sections where you can set specific values at the commit, pull request, and repository levels. Click **Customize** to edit the settings on each section.
 
-![](/images/image-0.png)
+![Quality settings](images/quality-settings.png)
 
-## 1. Commits
+The following sections explain the settings in detail.
 
-![](/images/image-1.png)
+## Commits
 
-To change the settings for commits, click on **Customize**:
+These settings configure quality thresholds for commits, as displayed on the [Commits](commits-view.md) page.
 
--   **New issues are over:** Codacy marks the commit not up to standards if the number of issues introduced is bigger than the set value. The default value is 0.
--   **Complexity is over:** The commit is marked not up to standards if the introduced complexity is bigger than the set value. By default, this setting is off.
--   **Duplication is over:** The commit is marked not up to standards if the number of clones introduced is bigger than the set value. By default, this setting is off.
--   **Coverage variation is under:** The commit is marked not up to standards if the coverage introduced is smaller than the set value. By default, this setting is off.
+![Quality settings for commits](images/quality-settings-commits.png)
 
-## 2. Pull Requests
+-   **New issues are over:** Commits are marked not up to standards if the number of issues introduced is bigger than the set value. The default value is 0.
+-   **Complexity is over:** Commits are marked not up to standards if the introduced complexity is bigger than the set value. By default, this setting is off.
+-   **Duplication is over:** Commits are marked not up to standards if the number of clones introduced is bigger than the set value. By default, this setting is off.
+-   **Coverage variation is under:** Commits are marked not up to standards if the coverage introduced is smaller than the set value. By default, this setting is off.
 
-![](/images/image-2.png)
+## Pull Requests
 
-Upon clicking the pull request **Customize** button, the following settings appear:
+These settings configure quality thresholds for pull requests, as displayed on the Pull Requests page.
 
--   **New issues are over:** Codacy marks the pull request not up to standards if the number of issues introduced is bigger than the set value. The default value is 0.
--   **Complexity is over:** The pull request is marked not up to standards pull request if the introduced complexity is bigger than the set value. By default, this setting is off.
--   **Duplication is over:** The pull request is marked not up to standards if the number of clones introduced is bigger than the set value. By default, this setting is off.
--   **Coverage variation is under:** The pull request is marked not up to standards if the coverage introduced is smaller than the value set here. This value refers to the variation of coverage on your PR, for example, if your repository has 90% coverage and you want to make sure this value doesn't decrease this you should set this to 0%. By default, this setting is off.
+![Quality settings for pull requests](images/quality-settings-pull-requests.png)
 
-## 3. Repository
+-   **New issues are over:** Pull requests are marked not up to standards if the number of issues introduced is bigger than the set value. The default value is 0.
+-   **Complexity is over:** Pull requests are marked not up to standards if the introduced complexity is bigger than the set value. By default, this setting is off.
+-   **Duplication is over:** Pull requests are marked not up to standards if the number of clones introduced is bigger than the set value. By default, this setting is off.
+-   **Coverage variation is under:** Pull requests are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull request. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off.
 
-![](/images/image-3.png)
+## Repository
 
-When you click on the Repository's **Customize** button, Codacy presents you with:
+These settings configure quality thresholds for the repository, as displayed on the [Repository Dashboard](repository-dashboard.md).
 
--   **Issues are over:** This defines the threshold displayed in the dashboard.
--   **File complexity is over:** This defines the threshold represented on the complexity dashboard.
+![Quality settings for the repository](images/quality-settings-repository.png)
+
+-   **Issues are over:** Defines the threshold displayed on the tab **Issues** of the quality evolution chart.
+-   **Complexity of files is over:** Defines the threshold displayed on the tab **Complexity** of the quality evolution chart.
 -   **File is complex when over:** A file is considered complex when its complexity is over this value.
--   **File duplication is over:** This defines the threshold shown on the duplication dashboard.
+-   **Duplication of files is over:** Defines the threshold displayed on the tab **Duplication** of the quality evolution chart.
 -   **File is duplicate when over:** A file is considered duplicated when it has more clones than this value.
--   **Coverage is under:** This defines the threshold represented on the coverage dashboard.
+-   **Coverage is under:** Defines the threshold displayed on the tab **Coverage** of the quality evolution chart.
