@@ -42,4 +42,4 @@ By default, Codacy Self-hosted has the same limit of 150 KB as our Cloud version
 
 The change can be done on the Configuration panel:
 
-![Maximum analysis file size](images/configuration-panel-max-file-size)
+![Maximum analysis file size](images/configuration-panel-max-file-size.png)

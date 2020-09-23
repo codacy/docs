@@ -30,7 +30,7 @@ If the analysis finishes but the code duplication metric was not calculated, fol
 
 -   **If you are using Codacy Self-hosted**, open the **Admin panel**, **Repositories**, select the repository, tab **Settings**, and reset the code duplication analysis in **Duplication settings**. Then, reanalyze the last commit in the repository so that Codacy runs the code duplication analysis.
 
-    ![Resetting the failed duplication analysis](images/duplication-reset.png)
+    ![Resetting the failed duplication analysis](images/duplication-metrics-reset.png)
 
 -   **If you are [analyzing your repository locally](../../related-tools/run-local-analysis.md)** with `codacy-analysis-cli`, consider using the flag `--tool-timeout` to specify a larger timeout for the execution of the tool.
 
