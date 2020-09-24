@@ -1,16 +1,16 @@
 # What are synced organizations
 
-With synced organizations, your Git provider organizations and members will be automatically imported into Codacy. Changes to membership will reflect on Codacy real time and you can add new repositories to Codacy in one click.
+With synced organizations, your Git provider organizations, repositories, and members will be automatically imported into Codacy. Changes to membership will reflect on Codacy in real time and you can add new repositories to Codacy in one click.
 
 ![Organizations list](images/organizations.png)
 
-By setting up a synced organization, you are avoiding having to deal with manual team and repository management, duplicate repositories, stuck repositories created with insufficient permissions and blocked pull request status due to overriding.
+By setting up a synced organization, you avoid having to deal with manual team and repository management, duplicate repositories, stuck repositories created with insufficient permissions and blocked pull request status due to overriding.
 
 ## Adding an organization
 
 Organizations that can be added to Codacy show up on the Organizations list.
 
-![Adding an organization](images/organization-add.png)
+![Adding an organization](images/organizations-add.png)
 
 If you can't see the organization you are looking for, [find out what could be the possible reasons](why-cant-i-see-my-organization.md).
 
