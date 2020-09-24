@@ -137,8 +137,8 @@ plugins:
               "hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-.md": "repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
               "hc/en-us/articles/207994825.md": "faq/repositories/how-do-i-manually-force-a-repository-update.md"
               "hc/en-us/articles/207994825-How-do-I-manually-force-a-repository-update-.md": "faq/repositories/how-do-i-manually-force-a-repository-update.md"
-              "hc/en-us/articles/207994835.md": "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md"
-              "hc/en-us/articles/207994835-How-do-I-transfer-delete-a-repository-from-my-account-.md": "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md"
+              "hc/en-us/articles/207994835.md": "faq/repositories/how-do-i-delete-or-move-a-repository-to-another-organization.md"
+              "hc/en-us/articles/207994835-How-do-I-transfer-delete-a-repository-from-my-account-.md": "faq/repositories/how-do-i-delete-or-move-a-repository-to-another-organization.md"
               "hc/en-us/articles/207994865.md": "faq/general/which-version-control-systems-do-you-support.md"
               "hc/en-us/articles/207994865-Can-you-add-repos-from-other-Git-providers-.md": "faq/general/which-version-control-systems-do-you-support.md"
               "hc/en-us/articles/207994885.md": "faq/general/which-browsers-do-you-support.md"
@@ -452,6 +452,7 @@ plugins:
               "organizations/organization-dashboard-overview.md": "organizations/organization-overview.md"
               "repositories/repository-dashboard-overview.md": "repositories/repository-dashboard.md"
               "repositories/share-your-repository-with-a-non-codacy-user.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
+              "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md": "faq/repositories/how-do-i-delete-or-move-a-repository-to-another-organization.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -539,7 +540,7 @@ nav:
                 - faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md
                 - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
                 - faq/repositories/i-moved-my-repository-on-the-git-provider.md
-                - faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md
+                - faq/repositories/how-do-i-delete-or-move-a-repository-to-another-organization.md
           - Code analysis:
                 - faq/code-analysis/do-you-check-for-dependencies.md
                 - faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md
