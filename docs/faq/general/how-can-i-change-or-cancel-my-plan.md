@@ -6,7 +6,7 @@ You can change or cancel [your plan](https://www.codacy.com/pricing) at any time
 
 For single accounts:
 
--   To change the billing details or the plan of your account click on your avatar, select **Your Account**, and open **Plan and billing**
+-   To change the billing details or the plan of your account click on your avatar, select **Your Account**, and open the page **Plan and billing**
 
     ![Plan and billing for single accounts](images/plan-billing-single-accounts.png)
 
@@ -14,7 +14,7 @@ For single accounts:
 
 For organizations:
 
--   To change the billing details or the plan of your organization click on your avatar, select **Organizations**, select your organization, and open **Plan and billing**
+-   To change the billing details or the plan of your organization click on your avatar, select **Organizations**, select your organization, open the page **Settings**, and open **Plan and billing**
 
     ![Plan and billing for organizations](images/plan-billing-organizations.png)
 
