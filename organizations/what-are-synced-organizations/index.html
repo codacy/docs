@@ -2602,12 +2602,76 @@
 </ul>
 <p><img alt="Accepting new people to the organization" src="../images/organization-plan-billing.png" /></p>
 <h2 id="updates-on-the-git-provider">Updates on the Git provider<a class="headerlink" href="#updates-on-the-git-provider" title="Permanent link">&para;</a></h2>
-<p>In case you change your organization or repository on the Git provider, they'll be reflected on Codacy. The following cases are supported:</p>
-<ul>
-<li>Changing the organization name</li>
-<li>Changing a repository name</li>
-<li>Changing a repository visibility</li>
-</ul>
+<p>In case you change your organization or repository on the Git provider, some changes will be reflected on Codacy. The following cases are supported:</p>
+<table>
+<thead>
+<tr>
+<th>Provider</th>
+<th>Rename repository</th>
+<th>Change repository visibility</th>
+<th>Delete repository</th>
+<th>Rename organization or group</th>
+<th>Remove member from organization or group</th>
+<th>Delete organization or group</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>GitHub Cloud</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>GitHub Enterprise</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>GitLab Cloud</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>GitLab Enterprise</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Bitbucket Cloud</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Bitbucket Server</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
 <p>Check out the <a href="../roles-and-permissions-for-synced-organizations/">roles and permission mapping from the Git providers</a>.</p>
 <h2 id="deleting-an-organization">Deleting an organization<a class="headerlink" href="#deleting-an-organization" title="Permanent link">&para;</a></h2>
 <p>Delete an organization to remove that organization and all its repositories from Codacy.</p>
@@ -2620,7 +2684,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 7, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2020</span>
     
   </small>
 </div>
