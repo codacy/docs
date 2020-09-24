@@ -42,11 +42,16 @@ Members can remove themselves from organizations, while owners can remove themse
 
 ## Updates on the Git provider
 
-In case you change your organization or repository on the Git provider, they'll be reflected on Codacy. The following cases are supported:
+In case you change your organization or repository on the Git provider, some changes will be reflected on Codacy. The following cases are supported:
 
--   Changing the organization name
--   Changing a repository name
--   Changing a repository visibility
+| Provider | Rename repository | Change repository visibility | Delete repository | Rename organization or group | Remove member from organization or group | Delete organization or group |
+|---|---|---|---|---|---|---|
+| GitHub Cloud | Yes | Yes | Yes | Yes | Yes | Yes |
+| GitHub Enterprise | Yes | Yes | Yes | Yes | Yes | Yes |
+| GitLab Cloud | No | No | No | No | No | No |
+| GitLab Enterprise |  Yes | Yes | Yes | Yes | Yes | Yes |
+| Bitbucket Cloud | Yes | Yes | No | No | No | No |
+| Bitbucket Server | Yes | Yes | No | No | No | No |
 
 Check out the [roles and permission mapping from the Git providers](roles-and-permissions-for-synced-organizations.md).
 
