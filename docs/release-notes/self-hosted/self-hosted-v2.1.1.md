@@ -4,7 +4,7 @@ These release notes are for [Codacy Self-hosted v2.1.1](https://github.com/codac
 
 ## Bug fixes
 
--   Fixed an issue that prevented Codacy from detecting and analyzing new commits and pull requests in repositories belonging to synced organizations. (CY-2781)
+-   Fixed an issue that prevented Codacy from detecting and analyzing new commits and pull requests in repositories belonging to synced organizations. This issue only affected repositories that didn't have a post-commit hook enabled and required Codacy to poll for changes. (CY-2781)
 
 ## Tool versions
 
