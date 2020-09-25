@@ -12,6 +12,7 @@ Alternatively, you can also [delete your organization](../../organizations/what-
 
 !!! note
     **For legacy single accounts,** click on your avatar, select **Your Account**, and open the page **Plan and billing**.
+    {: id="single-accounts"}
 
     Alternatively, you can also [delete your account](../../account/managing-your-profile.md#deleting-your-account) to remove all your personal repositories from Codacy and cancel your existing plan.
 
