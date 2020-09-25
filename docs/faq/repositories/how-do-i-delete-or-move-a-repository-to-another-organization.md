@@ -1,12 +1,28 @@
-# How do I delete or move a repository to another organization?
+# How do I delete or migrate a repository to a synced organization?
 
-If you wish to stop analysis and unregister your repository from Codacy, please go to your repository **Settings** -> **General**.
+This page includes instructions on how to delete your repository from Codacy and how to move your legacy repository to a synced organization.
 
-This will not remove your repository from your Git provider. It will only remove data concerning your repository in Codacy.
+!!! important
+    To perform these operations you must have administrator permissions for that repository on the Git provider.
 
-On this page, you can also transfer your repository to another of your organizations.
+## Deleting your repository from Codacy
 
-![](/images/Screen_Shot_2016-12-06_at_16.37.02.png)
+To stop Codacy from analyzing your repository, you must delete the repository from Codacy. This operation only deletes the data related to your repository on Codacy and does not delete the repository from your Git provider.
 
-!!! note
-    To remove a repository you need to have [admin permissions](../../organizations/manual-organizations/administrative-permissions.md) for that repository.
+To delete your repository from Codacy:
+
+1.  Open your repository **Settings**, tab **General**.
+
+1.  Click the button **Remove repository** and confirm that you want to remove the repository.
+
+## Migrating your repository to a synced organization
+
+If you have legacy personal repositories or repositories in legacy manual organizations, you can migrate these repositories together with their configurations to a synced organization.
+
+To migrate your repository to a synced organization:
+
+1.  Open your repository **Settings**, tab **General**.
+
+1.  In the section **Transfer repository**, select the target organization and click the button **Transfer**.
+
+    ![Migrating your repository](images/repository-migrate.png)
