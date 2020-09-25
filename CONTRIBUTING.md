@@ -126,7 +126,14 @@ First, update the Latest documentation version with the new chart documentation:
         branch = release-2.0.0
     ```
 
-    Make sure that you pull the latest changes from this branch of the chart submodule.
+1.  Make sure that you pull the latest changes from this branch of the chart submodule.
+
+    ```bash
+    cd submodules/chart
+    git checkout release-2.0.0
+    git pull
+    cd ../..
+    ```
 
 1.  Edit the file [`mkdocs.yml`](mkdocs.yml) and update the value of the variable `extra.version` to the correct version of the chart.
 
