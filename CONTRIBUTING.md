@@ -109,7 +109,7 @@ A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows
 
 ## Releasing a new version of the documentation
 
-We must release a new version of the documentation when there is a new release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the documentation of the chart on the Latest version of the documentation as well as creating a dedicated documentation version for the new release.
+We must release a new version of the documentation when there is a new **major or minor** release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the documentation of the chart on the Latest version of the documentation as well as creating a dedicated documentation version for the new release.
 
 ### Updating the Latest documentation version
 
@@ -158,3 +158,14 @@ After updating the Latest documentation version, we're ready to create a new doc
 1.  Build the documentation and make sure that the changes for the new release of the chart are correct.
 
 1.  Push the new branch and wait until the GitHub workflow deploys the new documentation version under `https://docs.codacy.com/v<MAJOR>.<MINOR>`.
+
+## Updating an existing version of the documentation
+
+We must update an existing version of the documentation when there is a new **patch release** of the [Codacy Self-hosted chart](https://github.com/codacy/chart).
+
+To do this, you must update the documentation of the chart on the:
+
+-   [Latest version of the documentation](#updating-the-latest-documentation-version)
+-   Corresponding version of the documentation (for example, v2.0)
+
+    Follow the instructions on [updating the Latest documentation version](#updating-the-latest-documentation-version), but when updating the corresponding version of the documentation commit the changes to that release branch instead of `master`. For example, `release/v2.0`.
