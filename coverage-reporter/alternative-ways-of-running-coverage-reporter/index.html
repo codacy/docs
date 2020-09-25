@@ -2670,7 +2670,7 @@
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">java -jar codacy-coverage-reporter-assembly.jar report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml</span>
 </code></pre></div>
 
-<p>Make sure that you also <a href="../adding-coverage-to-your-repository/#2-uploading-coverage-reports-to-codacy">set your project or account API Token</a> as an environment variable in your Travis CI job.</p>
+<p>Make sure that you also <a href="../adding-coverage-to-your-repository/#authenticate">set your project API Token</a> as an environment variable in your Travis CI job.</p>
 <h3 id="gradle-task">Gradle task<a class="headerlink" href="#gradle-task" title="Permanent link">&para;</a></h3>
 <p>A big shout-out to <a href="https://github.com/tompahoward">Tom Howard</a>, who suggested a way to <a href="https://github.com/mountain-pass/hyperstate/commit/857ca93e1c8484c14a5e2da9f0434d3daf3328ce">create a Gradle task</a>.</p>
 <div class="highlight"><pre><span></span><code>task uploadCoverageToCodacy(type: JavaExec, dependsOn : jacocoTestReport) {
@@ -2786,7 +2786,7 @@ sbt assembly
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 9, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 25, 2020</span>
     
   </small>
 </div>
