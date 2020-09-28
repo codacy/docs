@@ -11,6 +11,10 @@ To migrate your legacy repository to a synced organization:
     !!! important
         **If you're migrating a legacy personal repository** you must ensure that the target personal organization for your Git provider is already added on Codacy. This personal organization has the same name as your username on your Git provider.
 
+        For example:
+
+        ![Example personal organization](images/repository-migrate-personal-organization.png)
+
     If the target organization is not added to Codacy yet, [add your organization to Codacy](../../organizations/what-are-synced-organizations/#adding-an-organization) before continuing.
 
 
