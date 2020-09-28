@@ -34,7 +34,7 @@ Members can add themselves to your Codacy organization when they log into Codacy
 The organizations that contain your personal repositories can only have the owner of the repositories as their single member.
 
 !!! important
-    **If you are using Bitbucket Cloud** the organization that contains your personal repositories can have other members, as defined by the [access control on Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/control-access-to-your-private-content/).
+    **If you are using Bitbucket Cloud** the organization that contains your personal repositories can have other members, since Bitbucket Cloud does not have a different type of [workspace](https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/){: target="_blank"} for personal use.
 
 ![Accepting new people to the organization](images/organization-plan-billing.png)
 
