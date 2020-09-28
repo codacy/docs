@@ -12,3 +12,8 @@ To migrate your legacy repository to a synced organization:
 1.  In the section **Transfer repository**, select the target organization and click the button **Transfer**.
 
     ![Migrating your repository](images/repository-migrate.png)
+
+1.  Update the Repository Dashboard URL that you were using for the legacy repository. For example, if you had shared the Repository Dashboard with your team, provide them with the new URL.
+
+    !!! note
+        Although the old URLs for the repository dashboards continue to work, they are deprecated and we recommend that you use the new URLs instead.
