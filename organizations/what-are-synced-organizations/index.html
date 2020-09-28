@@ -193,18 +193,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/setting-up-your-personal-repositories/" title="Setting up your personal repositories" class="md-nav__link">
-      Setting up your personal repositories
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../getting-started/supported-languages/" title="Supported Languages" class="md-nav__link">
       Supported Languages
     </a>
@@ -2608,23 +2596,36 @@
                 
                 
                 <h1 id="what-are-synced-organizations">What are synced organizations<a class="headerlink" href="#what-are-synced-organizations" title="Permanent link">&para;</a></h1>
-<p>With synced organizations, your Git provider organizations and members will be automatically imported into Codacy. Changes to membership will reflect on Codacy real time and you can add new repositories to Codacy in one click.</p>
-<p><img alt="Organizations list" src="../images/organizations.png" /></p>
-<p>By setting up a synced organization, you are avoiding having to deal with manual team and repository management, duplicate repositories, stuck repositories created with insufficient permissions and blocked pull request status due to overriding.</p>
+<p>Synced organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that do not belong to a Git provider organization), and team members into Codacy with a few clicks.</p>
+<p>Changes to the organizations, repositories, and team members are synchronized with Codacy in real time, avoiding the manual management of repositories and teams.</p>
 <h2 id="adding-an-organization">Adding an organization<a class="headerlink" href="#adding-an-organization" title="Permanent link">&para;</a></h2>
-<p>Organizations that can be added to Codacy show up on the Organizations list.</p>
-<p><img alt="Adding an organization" src="../images/organization-add.png" /></p>
-<p>If you can't see the organization you are looking for, <a href="../why-cant-i-see-my-organization/">find out what could be the possible reasons</a>.</p>
-<h2 id="managing-people-in-an-organization">Managing people in an organization<a class="headerlink" href="#managing-people-in-an-organization" title="Permanent link">&para;</a></h2>
-<p>You can see and manage who joined your organization on Codacy in the <strong>People</strong> page.</p>
-<p>Members can remove themselves from organizations, while owners can remove themselves as well as other users, even other owners. Organizations must have at least one owner.</p>
-<p><img alt="Managing people in an organization" src="../images/organization-people.png" /></p>
-<p>In the <strong>Plan and Billing</strong> page there are different ways to control who can join your organization:</p>
+<p>To add a new organization to Codacy, select <strong>Add organization</strong> on the navigation menu.</p>
+<p><img alt="Adding an organization" src="../images/organization-add-menu.png" /></p>
+<p>This opens the list of organizations on your Git providers. The organizations with the same name as your Git provider username contain your personal repositories.</p>
 <ul>
-<li><strong>Allow new people to join</strong>: team members with access on the Git provider will be able to join Codacy automatically and your billing will be updated accordingly.</li>
-<li><strong>New people request to join</strong>: team members need to request access in order to be able to join Codacy. You can override this setting for organization owners.</li>
+<li>To add a new organization to Codacy, click the button <strong>Add</strong> for that organization.</li>
+<li>To add organizations from a Git provider that is not yet listed on this page, click <strong>Add provider</strong> and give the <a href="../../getting-started/which-permissions-does-codacy-need-from-my-account/">necessary permissions</a> for Codacy to sync with the new Git provider and display your organizations.</li>
 </ul>
+<p><img alt="Adding an organization" src="../images/organization-add.png" /></p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you can't see the organization you are looking for, <a href="../why-cant-i-see-my-organization/">find out what could be the possible reasons</a>.</p>
+</div>
+<h2 id="managing-people-in-an-organization">Managing people in an organization<a class="headerlink" href="#managing-people-in-an-organization" title="Permanent link">&para;</a></h2>
+<p>To see and manage who joined your organization on Codacy open your organization <strong>Settings</strong> and open <strong>People</strong>.</p>
+<p><img alt="Managing people in an organization" src="../images/organization-people.png" /></p>
+<p>Members can add themselves to your Codacy organization when they log into Codacy using their Git provider credentials. In the <strong>Plan and Billing</strong> page there are different ways to control who can join your organization:</p>
+<ul>
+<li><strong>Allow new people to join:</strong> team members with access on the Git provider will be able to join the Codacy organization automatically and your billing will be updated accordingly.</li>
+<li><strong>New people need to request access to join:</strong> team members must request access to be able to join the Codacy organization. You can override this setting for organization owners.</li>
+</ul>
+<p>The organizations that contain your personal repositories can only have the owner of the repositories as their single member.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you are using Bitbucket Cloud</strong> the organization that contains your personal repositories can have other members, since Bitbucket Cloud does not have a different type of <a href="https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/" target="_blank">workspace</a> for personal use.</p>
+</div>
 <p><img alt="Accepting new people to the organization" src="../images/organization-plan-billing.png" /></p>
+<p>Members can remove themselves from organizations, while owners can remove themselves as well as other users, even other owners. Organizations must have at least one owner.</p>
 <h2 id="updates-on-the-git-provider">Updates on the Git provider<a class="headerlink" href="#updates-on-the-git-provider" title="Permanent link">&para;</a></h2>
 <p>In case you change your organization or repository on the Git provider, some changes will be reflected on Codacy. The following cases are supported:</p>
 <table>
@@ -2699,8 +2700,12 @@
 <p>Check out the <a href="../roles-and-permissions-for-synced-organizations/">roles and permission mapping from the Git providers</a>.</p>
 <h2 id="deleting-an-organization">Deleting an organization<a class="headerlink" href="#deleting-an-organization" title="Permanent link">&para;</a></h2>
 <p>Delete an organization to remove that organization and all its repositories from Codacy.</p>
-<p>To delete an organization, open the <strong>Profile</strong> page and click the button <strong>Delete organization</strong>. <strong>If you are using Codacy Cloud</strong>, Codacy will ask for your feedback on why you are deleting your organization.</p>
-<p><img alt="Deleting an organization" src="../images/organization-settings.png" /></p>
+<p>To delete an organization, open the <strong>Profile</strong> page and click the button <strong>Delete organization</strong>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you are using Codacy Cloud</strong> we will ask for your feedback on why you are deleting your organization.</p>
+</div>
+<p><img alt="Deleting an organization" src="../images/organization-delete.png" /></p>
                 
                   
                     
@@ -2708,7 +2713,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 28, 2020</span>
     
   </small>
 </div>
