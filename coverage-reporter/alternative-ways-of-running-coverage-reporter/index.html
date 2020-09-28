@@ -2648,6 +2648,11 @@
 <div class="highlight"><pre><span></span><code>wget -qO - https://coverage.codacy.com/get.sh <span class="p">|</span> sh
 </code></pre></div>
 
+<p>The self-contained script is able to cache the binary. To avoid downloading the binary every time that the script runs, add one of the following directories to your CI cached folders:</p>
+<ul>
+<li><code>$HOME/.cache/codacy</code> on Linux</li>
+<li><code>$HOME/Library/Caches/Codacy</code> on Mac OS X</li>
+</ul>
 <p>To use a specific version of the Codacy Coverage Reporter, set the following environment variable to one of the <a href="https://github.com/codacy/codacy-coverage-reporter/releases">released versions</a>:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_REPORTER_VERSION</span><span class="o">=</span>&lt;version&gt;
 </code></pre></div>
@@ -2786,7 +2791,7 @@ sbt assembly
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 25, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 28, 2020</span>
     
   </small>
 </div>
