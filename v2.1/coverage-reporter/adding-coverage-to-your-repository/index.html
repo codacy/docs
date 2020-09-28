@@ -2181,25 +2181,11 @@
 <p>After having coverage reports set up for your repository, you must use Codacy Coverage Reporter to convert the reports to smaller JSON files and upload these files to Codacy:</p>
 <ol>
 <li>
-<p>You must set up an API token to allow Codacy Coverage Reporter to authenticate on Codacy.</p>
-<ul>
-<li>
-<p><strong>If you're setting up coverage for one repository</strong>, obtain the <a href="/repositories-configure/integrations/project-api/">project API Token</a> from the page <strong>Integrations</strong> in your Codacy repository settings.</p>
-<p>Then, set the following environment variable to specify your project API Token:</p>
+<p id="authenticate">You must set up an API token to allow Codacy Coverage Reporter to authenticate on Codacy.</p>
+<p>Obtain the <a href="/repositories-configure/integrations/project-api/">project API Token</a> from the page <strong>Integrations</strong> in your Codacy repository settings. Then, set the following environment variable to specify your project API Token:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>&lt;your project API Token&gt;
 </code></pre></div>
 
-</li>
-<li>
-<p><strong>If you're setting up and automating coverage for multiple repositories</strong>, obtain an <a href="https://docs.codacy.com/related-tools/api-tokens/">account API Token</a> from the page <strong>Access management</strong> in your Codacy account settings.</p>
-<p>Then, set the following environment variables to specify the account API Token, the username associated with the account API token, and the repository for which you're uploading the coverage information:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_TOKEN</span><span class="o">=</span>&lt;your account API Token&gt;
-<span class="nb">export</span> <span class="nv">CODACY_USERNAME</span><span class="o">=</span>&lt;your account username&gt;
-<span class="nb">export</span> <span class="nv">CODACY_PROJECT_NAME</span><span class="o">=</span>&lt;name of your repository&gt;
-</code></pre></div>
-
-</li>
-</ul>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>Never write API Tokens on your configuration files</strong> and keep your API Tokens well protected, as they grant owner permissions to your projects.</p>
@@ -2286,7 +2272,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 9, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 28, 2020</span>
     
   </small>
 </div>

@@ -2172,7 +2172,7 @@
 <p>See the <a href="https://github.com/codacy/codacy-plugins-api/blob/master/src/main/scala/com/codacy/plugins/api/languages/Language.scala#L43">list of languages</a> that you can specify using the flag <code>-l</code>.</p>
 <h2 id="unsupported-report-formats">Submitting coverage from unsupported report formats<a class="headerlink" href="#unsupported-report-formats" title="Permanent link">&para;</a></h2>
 <p>If you are generating a report format that Codacy does not yet support, try using community projects such as <a href="https://github.com/t-yuki/gocover-cobertura">t-yuki/gocover-cobertura</a> and <a href="https://github.com/danielpalme/ReportGenerator">danielpalme/ReportGenerator</a>, or alternatively contribute to our <a href="https://github.com/codacy/coverage-parser">codacy/coverage-parser</a> project.</p>
-<p>As a workaround, you can also send the coverage data directly by calling the Codacy API endpoint <a href="https://api.codacy.com/swagger#savecoverage">saveCoverage</a> (when using a project API Token) or <a href="https://api.codacy.com/swagger#savecoveragewithprojectname">saveCoverageWithProjectName</a> (when using an account API Token).</p>
+<p>As a workaround, you can also send the coverage data directly by calling the Codacy API endpoint <a href="https://api.codacy.com/swagger#savecoverage">saveCoverage</a>.</p>
 <p>The following is an example of the JSON payload:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
   <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
@@ -2220,7 +2220,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 9, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 28, 2020</span>
     
   </small>
 </div>
