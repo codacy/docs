@@ -1,6 +1,6 @@
 # How do I migrate a legacy repository to a synced organization?
 
-If you have legacy personal repositories or repositories in manual organizations, you can migrate these repositories together with their Codacy configurations to a synced organization.
+If you have legacy personal repositories or repositories in manual organizations, you can migrate these repositories to a synced organization while keeping your Codacy configurations and analysis history.
 
 To migrate a legacy repository you must have [admin permissions](../../organizations/manual-organizations/administrative-permissions.md) for that repository.
 
