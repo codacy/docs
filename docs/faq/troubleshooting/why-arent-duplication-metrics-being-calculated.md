@@ -8,15 +8,15 @@ When this happens, Codacy does not display code duplication metrics for the affe
 
 -   The **Files** page on your repository displays a blank duplication value for files of the affected language.
 
-    ![Files](images/duplication-files.png)
+    ![Duplication in the Files page](images/duplication-files.png)
 
 -   The **Commits** and **Pull Request** pages display an empty **New Duplication** tab.
 
-    ![Commits](images/duplication-commits.png)
+    ![New duplication for a commit](images/duplication-commits.png)
 
 -   The analysis logs for commits will not display a duplication analysis task for the tool corresponding to the affected language.
 
-    ![View logs](images/duplication-logs.png)
+    ![Analysis logs for a commit](images/duplication-logs.png)
 
 As a workaround, if you are exceeding the maximum number of source code files:
 
@@ -30,7 +30,7 @@ If the analysis finishes but the code duplication metric was not calculated, fol
 
 -   **If you are using Codacy Self-hosted**, open the **Admin panel**, **Repositories**, select the repository, tab **Settings**, and reset the code duplication analysis in **Duplication settings**. Then, reanalyze the last commit in the repository so that Codacy runs the code duplication analysis.
 
-    ![Resetting the failed duplication analysis](images/duplication-reset.png)
+    ![Resetting the failed duplication analysis](images/duplication-metrics-reset.png)
 
 -   **If you are [analyzing your repository locally](../../related-tools/run-local-analysis.md)** with `codacy-analysis-cli`, consider using the flag `--tool-timeout` to specify a larger timeout for the execution of the tool.
 

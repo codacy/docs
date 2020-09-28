@@ -2,7 +2,7 @@
 
 In your repository's **Files** page you can view all the files that Codacy detected in your repository:
 
-![](/images/Screen_Shot_2019-06-26_at_19.39.19.png)
+![Repository files](images/repository-files.png)
 
 While all of the files in your repository should be displayed here, here is a list of reasons why some files might be missing:
 
@@ -42,4 +42,4 @@ By default, Codacy Self-hosted has the same limit of 150 KB as our Cloud version
 
 The change can be done on the Configuration panel:
 
-![](/images/Screen_Shot_2019-06-27_at_16.47.18.png)
+![Maximum analysis file size](images/configuration-panel-max-file-size.png)
