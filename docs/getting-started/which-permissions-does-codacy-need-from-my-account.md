@@ -64,13 +64,13 @@ If you log in with Bitbucket, Codacy requires the following [permissions/scopes]
 
 -   Read and modify your account information
 -   Read and modify your repositories' issues
--   Read your workspace’s project settings and create repositories<sup>*</sup> contained within your workspace's projects
+-   Read your workspace’s project settings and read repositories<sup>*</sup> contained within your workspace's projects
 -   Read and modify your repositories and their pull requests
 -   Administer your repositories
 -   Read your group membership information
 -   Read and modify your repositories' webhooks
 
-<sup>*</sup>: This is due to an issue open on Bitbucket, as [detailed here](../organizations/roles-and-permissions-for-synced-organizations.md#bitbucket-create-repositories).
+<sup>*</sup>: If the Bitbucket users have access to workspaces through user groups, they need more permissions as [detailed here](../organizations/roles-and-permissions-for-synced-organizations.md#bitbucket-create-repositories).
 
 ## Google Sign-In
 
