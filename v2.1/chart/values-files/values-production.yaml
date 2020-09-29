@@ -193,18 +193,6 @@ codacy-ingress:
       kubernetes.io/ingress.class: "nginx"
       nginx.ingress.kubernetes.io/use-regex: "true"
 
-## Uncomment these annotations and the `tls:` block to use TLS
-## For guidance on how to set up TLS please refer to the documentation on https://codacy.github.io/chart
-#
-#      kubernetes.io/tls-acme: "true"
-#      cert-manager.io/issuer: letsencrypt-codacy
-#    tls:
-#      secretName: codacy-tls
-#      hosts:
-#        - host: <--- codacy.example.com ---> # Codacy application DNS hostname
-#          paths:
-#            - /
-
 codacy-api:
   replicaCount: 2
   resources:
