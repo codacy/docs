@@ -168,8 +168,9 @@ Depending on your role on the Git provider you will have different permissions o
 
 ![](/images/screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-2019-11-04-19_02_28.png)
 
-You can check who joined your organization and their role in the People page on Codacy.
+See [managing people in an organization](what-are-synced-organizations.md#managing-people-in-an-organization) to list your organization members and their role.
 
-💡 If you would like to analyze commits from authors that do not belong to your organization, [read more about Authors here](adding-and-managing-authors.md).
+!!! tip
+    If you would like to analyze commits from authors that do not belong to your organization, [read more about Authors here](adding-and-managing-authors.md).
 
 Please reach out to us if you have any questions.
