@@ -72,7 +72,7 @@ echo "Checking if kubectl is installed..."
 KUBECTL=$(which kubectl || which microk8s.kubectl)
 if [ $? -ne 0 ]; then
     echo "kubectl not installed"
-    echo "Please install kubectl version specified in Codacy's documentation (see here - https://codacy.github.io/chart/install/) or the version used when installing your cluster"
+    echo "Please install kubectl version specified in Codacy's documentation (see here - https://docs.codacy.com/chart/#2-installing-codacy) or the version used when installing your cluster"
     echo "To install kubectl see https://kubernetes.io/docs/tasks/tools/install-kubectl/ (or https://microk8s.io/docs/ if you are running a microk8s kubernetes cluster)"
     exit 4
 fi
