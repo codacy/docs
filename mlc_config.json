@@ -9,8 +9,8 @@
 	],
     "replacementPatterns": [
         {
-            "pattern":"^/",
-            "replacement":"https://docs.codacy.com/"
+            "pattern": "^/",
+            "replacement": "https://docs.codacy.com/"
         }
     ],
     "retryOn429": true,
