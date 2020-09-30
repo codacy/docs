@@ -11,4 +11,3 @@ After the first analysis is complete you can continue to explore and configure C
 -   [Configure your quality settings](../repositories/quality-settings.md) for pull requests
 -   [Add coverage reports to Codacy](/coverage-reporter/)
 -   [Add a Codacy badge to your repository](../repositories/badges.md) displaying the current code quality grade or code coverage
--   [Check which languages and tools Codacy supports](../related-tools/supported-languages-and-tools.md)
