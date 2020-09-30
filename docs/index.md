@@ -33,7 +33,7 @@
 <h2>Most popular topics</h2>
 
 <div class="topic-row">
-  <a class="topic-card" href="coverage-reporterBROKEN/">
+  <a class="topic-card" href="coverage-reporter-404/">
     <div class="tc-icon">
       <img src="/assets/images/icon-checklist.svg">
     </div>
