@@ -4,7 +4,6 @@ on: ["push"]
 
 env:
   URL: https://docs.codacy.com
-  FILENAME: report.yaml
 
 jobs:
   build:
@@ -18,8 +17,3 @@ jobs:
           fetch-depth: 1
       - name: Report broken links
         uses: victoriadrake/link-snitch@master
-      - name: Archive broken link report
-        uses: actions/upload-artifact@v2
-        with:
-          name: link-snitch-report
-          path: report.yaml
