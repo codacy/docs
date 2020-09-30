@@ -1,6 +1,6 @@
 name: mkdocs
 
-on: push
+on: ["push"]
 
 jobs:
   build:
