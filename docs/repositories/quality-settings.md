@@ -32,7 +32,7 @@ These settings configure quality thresholds for pull requests, as displayed on t
 
 ## Repository
 
-These settings configure quality thresholds for the repository, as displayed on the [Repository Dashboard](repository-dashboard-overview.md).
+These settings configure quality thresholds for the repository, as displayed on the [Repository Dashboard](repository-dashboard.md).
 
 ![Quality settings for the repository](images/quality-settings-repository.png)
 
