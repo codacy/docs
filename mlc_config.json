@@ -5,7 +5,7 @@
             "replacement":"https://docs.codacy.com/"
         }
     ],
-    "retryOn429": false,
+    "retryOn429": true,
     "aliveStatusCodes": [
         200,
         206
