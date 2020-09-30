@@ -1,11 +1,13 @@
-name: Broken Link Check
+name: broken-link-check
 
 on: ["push"]
 
 jobs:
   check:
-    name: Broken Link Check
+    name: broken-link-check
     runs-on: ubuntu-latest
     steps:
-      - name: Broken Link Check
+      - name: broken-link-check
         uses: technote-space/broken-link-checker-action@v2
+        env:
+            INPUT_TARGET: https://docs.codacy.com
