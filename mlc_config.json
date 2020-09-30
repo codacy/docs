@@ -1,18 +1,9 @@
 {
     "replacementPatterns": [
         {
-            "pattern":"^/images/",
-            "replacement":"https://docs.codacy.com/images/"
-        },
-        {
-            "pattern":"^/chart/",
-            "replacement":"https://docs.codacy.com/chart/"
-        },
-        {
-            "pattern":"^/coverage-reporter/",
-            "replacement":"https://docs.codacy.com/coverage-reporter/"
+            "pattern":"^/",
+            "replacement":"https://docs.codacy.com/"
         }
-
     ],
     "retryOn429": false,
     "aliveStatusCodes": [
