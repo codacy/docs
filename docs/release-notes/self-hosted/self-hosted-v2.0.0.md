@@ -106,7 +106,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 ## Product enhancements
 
--   The chart for Codacy Self-hosted now [supports Helm 3.3](/v2.0/chart/#2-installing-codacy).
+-   The chart for Codacy Self-hosted now [supports Helm 3.3](https://docs.codacy.com/v2.0/chart/#2-installing-codacy).
 -   Updated the RabbitMQ chart to version 7.5.7 from the Bitnami Helm chart repository.
 -   Updated the MinIO chart to version 5.0.33 from the stable Helm chart repository.
 
