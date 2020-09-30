@@ -1,4 +1,9 @@
 {
+    "ignorePatterns": [
+		{
+			"pattern": "^https://github.com/codacy/docs"
+		}
+	],
     "replacementPatterns": [
         {
             "pattern":"^/",
