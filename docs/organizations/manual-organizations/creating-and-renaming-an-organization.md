@@ -3,7 +3,7 @@
 !!! note
     From April 3rd, 2020 onwards it's no longer possible to create new Manual Organizations on Codacy cloud, although you can continue using your existing Manual Organizations.
 
-    Please use the improved [Synced Organizations](https://support.codacy.com/hc/en-us/articles/360010263720-What-are-synced-organizations) instead, since you will no longer be able to add new repositories under Manual Organizations to avoid duplication of repositories.
+    Please use the improved [Synced Organizations](../what-are-synced-organizations.md) instead, since you will no longer be able to add new repositories under Manual Organizations to avoid duplication of repositories.
 
     This change does not impact Codacy self-hosted.
 
