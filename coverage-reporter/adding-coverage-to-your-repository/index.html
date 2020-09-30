@@ -2589,8 +2589,8 @@
 <table>
 <thead>
 <tr>
-<th>Report formats</th>
-<th>Report file names</th>
+<th>Report format</th>
+<th>Report file name</th>
 </tr>
 </thead>
 <tbody>
@@ -2628,10 +2628,10 @@
 <p class="admonition-title">Note</p>
 <p>If you are generating a report format that Codacy does not yet support, see <a href="../troubleshooting-common-issues/#unsupported-report-formats">submitting coverage from unsupported report formats</a>.</p>
 </div>
-<p>After having coverage reports set up for your repository, you must use Codacy Coverage Reporter to convert the reports to smaller JSON files and upload these files to Codacy:</p>
+<p>After having coverage reports set up for your repository, you must use Codacy Coverage Reporter to convert the reports to smaller JSON files and upload these files to Codacy. The recommended way to do this is using a CI/CD platform that automatically runs tests, generates coverage, and uses Codacy Coverage Reporter to upload the coverage report information for every commit.</p>
 <ol>
 <li>
-<p id="authenticate">You must set up an API token to allow Codacy Coverage Reporter to authenticate on Codacy.</p>
+<p id="authenticate">Set up an API token to allow Codacy Coverage Reporter to authenticate on Codacy.</p>
 <p>Obtain the <a href="/repositories-configure/integrations/project-api/">project API Token</a> from the page <strong>Integrations</strong> in your Codacy repository settings. Then, set the following environment variable to specify your project API Token:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>&lt;your project API Token&gt;
 </code></pre></div>
@@ -2722,7 +2722,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 28, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 30, 2020</span>
     
   </small>
 </div>
