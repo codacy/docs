@@ -165,7 +165,7 @@ Depending on your role on the Git provider you will have different permissions o
 
 <sup>1</sup>: Outside Collaborators and External Users are not supported as Members of organizations on Codacy. However, you can [add them as Authors](adding-and-managing-authors.md) so that their commits are analyzed by Codacy.  
 <sup>2</sup>: Depending on your [setting for accepting new people](what-are-synced-organizations.md#managing-people-in-an-organization).  
-<sup>3</sup>: Due to [an issue open on Bitbucket](https://jira.atlassian.com/browse/BCLOUD-14931?focusedCommentId=2253177&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-2253177), users must have the permission **Create repositories workspace permissions** on the user groups that grant them access to the Bitbucket workspaces to be able to join the corresponding organizations on Codacy.
+<sup>3</sup>: Due to [an issue open on Bitbucket](https://jira.atlassian.com/browse/BCLOUD-14931?focusedCommentId=2253177&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-2253177), users must have **Create repositories** enabled on the user groups that grant them access to Bitbucket workspaces to be able to join the corresponding organizations on Codacy.
 {: id="bitbucket-create-repositories"}
 
 See [managing people in an organization](what-are-synced-organizations.md#managing-people-in-an-organization) to list your organization members and their role.
