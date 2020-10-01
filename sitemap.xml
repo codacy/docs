@@ -160,10 +160,6 @@
      <lastmod>2020-10-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/organizations/why-cant-i-see-my-organization/</loc>
-     <lastmod>2020-10-01</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://docs.codacy.com/organizations/authors-vs-members/</loc>
      <lastmod>2020-10-01</lastmod>
      <changefreq>daily</changefreq>
@@ -344,11 +340,15 @@
      <lastmod>2020-10-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/faq/general/how-do-i-change-my-email-address-in-codacy/</loc>
+     <loc>https://docs.codacy.com/faq/general/how-does-codacy-protect-my-privacy/</loc>
      <lastmod>2020-10-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/faq/general/how-does-codacy-protect-my-privacy/</loc>
+     <loc>https://docs.codacy.com/faq/general/why-cant-i-see-my-organization/</loc>
+     <lastmod>2020-10-01</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.codacy.com/faq/general/how-do-i-change-my-email-address-in-codacy/</loc>
      <lastmod>2020-10-01</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
