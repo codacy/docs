@@ -132,7 +132,7 @@ Depending on your role on the Git provider you will have different permissions o
 <tr>
 <td rowspan="4">Bitbucket Cloud and Bitbucket Server</td>
 <td>Read</td>
-<td>Configurable<sup>2</sup><br/><br/> Users require create repository permissions<sup>3</sup></td>
+<td>Configurable<sup>2</sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -142,7 +142,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td>Write</td>
-<td>Configurable<sup>2</sup><br/><br/> Users require create repository permissions<sup>3</sup></td>
+<td>Configurable<sup>2</sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -152,7 +152,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td>Admin</td>
-<td>Configurable<sup>2</sup><br/><br/> Users require create repository permissions<sup>3</sup></td>
+<td>Configurable<sup>2</sup></td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -164,9 +164,7 @@ Depending on your role on the Git provider you will have different permissions o
 </table>
 
 <sup>1</sup>: Outside Collaborators and External Users are not supported as Members of organizations on Codacy. However, you can [add them as Authors](adding-and-managing-authors.md) so that their commits are analyzed by Codacy.  
-<sup>2</sup>: Depending on your [setting for accepting new people](what-are-synced-organizations.md#managing-people-in-an-organization).  
-<sup>3</sup>: Due to [an issue open on Bitbucket](https://jira.atlassian.com/browse/BCLOUD-14931?focusedCommentId=2253177&page=com.atlassian.jira.plugin.system.issuetabpanels:comment-tabpanel#comment-2253177), users must have **Create repositories** enabled on the user groups that grant them access to Bitbucket workspaces to be able to join the corresponding organizations on Codacy.
-{: id="bitbucket-create-repositories"}
+<sup>2</sup>: Depending on your [setting for accepting new people](what-are-synced-organizations.md#managing-people-in-an-organization).
 
 See [managing people in an organization](what-are-synced-organizations.md#managing-people-in-an-organization) to list your organization members and their role.
 
