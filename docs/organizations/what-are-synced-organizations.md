@@ -18,7 +18,7 @@ This opens the list of organizations on your Git providers. The organizations wi
 ![Adding an organization](images/organization-add.png)
 
 !!! tip
-    If you can't see the organization you are looking for, [find out what could be the possible reasons](why-cant-i-see-my-organization.md).
+    If you can't see the organization you are looking for, [follow these troubleshooting instructions](../faq/general/why-cant-i-see-my-organization.md).
 
 ## Managing people in an organization
 
