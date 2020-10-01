@@ -6,7 +6,7 @@ You can change or cancel [your Codacy plan](https://www.codacy.com/pricing) at a
 
 To make changes to the plan of your organization, open your organization **Settings**, page **Plan and billing**.
 
-![Plan and billing for organizations](images/plan-billing-organizations.png)
+![Plan and billing for organizations](images/organization-plan-billing.png)
 
 Alternatively, you can also [delete your organization](../../organizations/what-are-synced-organizations.md#deleting-an-organization) to remove all its repositories from Codacy and cancel your existing plan.
 
