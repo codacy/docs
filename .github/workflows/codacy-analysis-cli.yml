@@ -1,6 +1,6 @@
 name: codacy-analysis-cli
 
-on: ["push"]
+on: push
 
 jobs:
   codacy-analysis-cli:
@@ -9,8 +9,13 @@ jobs:
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Checkout code
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_PERSONAL_ACC_TOK }}
+          submodules: true
+          fetch-depth: 0
       - name: Run codacy-analysis-cli
         uses: codacy/codacy-analysis-cli-action@master
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          verbose: true

@@ -19,7 +19,7 @@ You'll be asked to fill in a few details about your company so we know a bit mor
 Now, you'll need to join one or more organizations that contain your repositories. The organization with the same name as your Git provider username contains your personal repositories. The selected organizations will then be synced with Codacy so that managing your team permissions is easy. Read more about [what synced organizations do](../organizations/what-are-synced-organizations.md). 
 
 !!! tip
-    If you can't see the organization you are looking for, [read this troubleshooting page](../organizations/why-cant-i-see-my-organization.md).
+    If you can't see the organization you are looking for, [follow these troubleshooting instructions](../faq/general/why-cant-i-see-my-organization.md).
 
 ![Choosing an organization](images/getting-started-choose-organization.png)
 
