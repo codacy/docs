@@ -10,8 +10,10 @@ To add custom extensions to a language you can also add an entry in this file, b
 
 If you want to disable an engine that needs to be done directly in the [Code Patterns](code-patterns.md) page.
 
-The configuration file name must be **".codacy.yaml"** or **".codacy.yml"** and should be placed in the root of
-your repository.
+The configuration file name must be **".codacy.yaml"** or **".codacy.yml"** and should be placed in the root of your repository.
+
+!!! important
+    The configuration file must start with a line containing `---`.
 
 ```yaml
 ---
