@@ -9,7 +9,11 @@ jobs:
     if: github.ref != 'refs/heads/master'
     steps:
       - name: Checkout code
-        uses: actions/checkout@master
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_PERSONAL_ACC_TOK }}
+          submodules: true
+          fetch-depth: 0
       - name: Run codacy-analysis-cli
         uses: codacy/codacy-analysis-cli-action@master
         with:
