@@ -169,3 +169,43 @@ To do this, you must update the documentation of the chart on the:
 -   Corresponding version of the documentation (for example, v2.0)
 
     Follow the instructions on [updating the Latest documentation version](#updating-the-latest-documentation-version), but when updating the corresponding version of the documentation commit the changes to that release branch instead of `master`. For example, `release/v2.0`.
+
+### Applying documentation hotfixes to existing chart releases
+
+Sometimes it may be necessary to apply important documentation fixes to existing chart releases. This is typically done on the latest chart release, but depending on the fix, it may be necessary to apply it to older versions as well.
+
+To apply an hotfix to an existing chart release:
+
+1.  Use a pull request to apply the changes to the `master` branch of the chart. This ensures that the fixes will also be available on the next chart version.
+
+1.  Checkout the chart branch to apply the hotfix and cherry-pick one or more changes:
+
+    ```bash
+    git checkout release-x.x.x
+    git cherry-pick --no-commit -m 1 <commit UUID 1>
+    git cherry-pick --no-commit -m 1 <commit UUID 2>
+    ```
+
+1.  Build the docs and validate the changes locally to ensure everything is OK.
+
+1.  Commit the changes to the release branch but **skip triggering the CircleCI workflow**:
+
+    ```bash
+    git add .
+    git commit -m "Cherry-pick pull request #xxx and #yyy [ci skip]"
+
+    ```
+
+1.  Update the git tag to point to the new commit:
+
+    ```bash
+    git tag -f x.x.x
+    git push --force origin --tags
+    ```
+
+    This ensures that if we perform a bugfix release to the chart, the branch will be sourced from the tag pointing to the most recent commit and all hotfixes are included in the new bugfix release.
+
+1.  Finally, follow the instructions to deploy the updated documentation for the chart version that received the hotfix:
+
+    -   [Updating an existing version of the documentation](#updating-an-existing-version-of-the-documentation)
+    -   [Updating the Latest documentation version](#updating-the-latest-documentation-version)
