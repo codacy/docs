@@ -8,6 +8,10 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_PERSONAL_ACC_TOK }}
+          submodules: true
+          fetch-depth: 0
       - name: Comment on new PR
         uses: brown-ccv/alex-recommends@v1.1.2
         with:
