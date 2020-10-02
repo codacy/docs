@@ -1,41 +1,57 @@
 # What are synced organizations
 
-With synced organizations, your Git provider organizations and members will be automatically imported into Codacy. Changes to membership will reflect on Codacy real time and you can add new repositories to Codacy in one click.
+Synced organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that do not belong to a Git provider organization), and team members into Codacy with a few clicks.
 
-![Organizations list](images/organizations.png)
-
-By setting up a synced organization, you are avoiding having to deal with manual team and repository management, duplicate repositories, stuck repositories created with insufficient permissions and blocked pull request status due to overriding.
+Changes to the organizations, repositories, and team members are synchronized with Codacy in real time, avoiding the manual management of repositories and teams.
 
 ## Adding an organization
 
-Organizations that can be added to Codacy show up on the Organizations list.
+To add a new organization to Codacy, select **Add organization** on the navigation menu.
+
+![Adding an organization](images/organization-add-menu.png)
+
+This opens the list of organizations on your Git providers. The organizations with the same name as your Git provider username contain your personal repositories.
+
+-   To add a new organization to Codacy, click the button **Add** for that organization.
+-   To add organizations from a Git provider that is not yet listed on this page, click **Add provider** and give the [necessary permissions](../getting-started/which-permissions-does-codacy-need-from-my-account.md) for Codacy to sync with the new Git provider and display your organizations.
 
 ![Adding an organization](images/organization-add.png)
 
-If you can't see the organization you are looking for, [find out what could be the possible reasons](why-cant-i-see-my-organization.md).
+!!! tip
+    If you can't see the organization you are looking for, [follow these troubleshooting instructions](../faq/general/why-cant-i-see-my-organization.md).
 
 ## Managing people in an organization
 
-You can see and manage who joined your organization on Codacy in the **People** page.
-
-Members can remove themselves from organizations, while owners can remove themselves as well as other users, even other owners. Organizations must have at least one owner.
+To see and manage who joined your organization on Codacy open your organization **Settings** and open **People**.
 
 ![Managing people in an organization](images/organization-people.png)
 
-In the **Plan and Billing** page there are different ways to control who can join your organization:
+Members can add themselves to your Codacy organization when they log into Codacy using their Git provider credentials. In the **Plan and Billing** page there are different ways to control who can join your organization:
 
--   **Allow new people to join**: team members with access on the Git provider will be able to join Codacy automatically and your billing will be updated accordingly.
--   **New people request to join**: team members need to request access in order to be able to join Codacy. You can override this setting for organization owners.
+-   **Allow new people to join:** team members with access on the Git provider will be able to join the Codacy organization automatically and your billing will be updated accordingly.
+-   **New people need to request access to join:** team members must request access to be able to join the Codacy organization. You can override this setting for organization owners.
+
+The organizations that contain your personal repositories can only have the owner of the repositories as their single member.
+
+!!! important
+    **If you are using Bitbucket Cloud** the organization that contains your personal repositories can have other members, since Bitbucket Cloud does not have a different type of [workspace](https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/){: target="_blank"} for personal use.
 
 ![Accepting new people to the organization](images/organization-plan-billing.png)
 
+Members can remove themselves from organizations, while owners can remove themselves as well as other users, even other owners. Organizations must have at least one owner.
+
 ## Updates on the Git provider
 
-In case you change your organization or repository on the Git provider, they'll be reflected on Codacy. The following cases are supported:
+In case you change your organization or repository on the Git provider, some changes will be reflected on Codacy. The following cases are supported:
 
--   Changing the organization name
--   Changing a repository name
--   Changing a repository visibility
+| Provider | Rename repository | Change repository visibility | Delete repository | Rename organization or group | Remove member from organization or group | Delete organization or group |
+|---|---|---|---|---|---|---|
+| GitHub Cloud | Yes | Yes | Yes | Yes | Yes | Yes |
+| GitHub Enterprise | Yes | Yes | Yes | Yes | Yes | Yes |
+| GitLab Cloud | No | No | No | No | No | No |
+| GitLab Enterprise |  Yes | Yes | Yes | Yes | Yes | Yes |
+| Bitbucket Cloud | Yes | Yes | No | No | No | No |
+| Bitbucket Server | Yes | Yes | No | No | No | No |
 
 Check out the [roles and permission mapping from the Git providers](roles-and-permissions-for-synced-organizations.md).
 
@@ -43,6 +59,9 @@ Check out the [roles and permission mapping from the Git providers](roles-and-pe
 
 Delete an organization to remove that organization and all its repositories from Codacy.
 
-To delete an organization, open the **Profile** page and click the button **Delete organization**. **If you are using Codacy Cloud**, Codacy will ask for your feedback on why you are deleting your organization.
+To delete an organization, open the **Profile** page and click the button **Delete organization**.
 
-![Deleting an organization](images/organization-settings.png)
+!!! important
+    **If you are using Codacy Cloud** we will ask for your feedback on why you are deleting your organization.
+
+![Deleting an organization](images/organization-delete.png)

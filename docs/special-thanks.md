@@ -22,7 +22,7 @@ In addition to in-house built rules, we use open source tools for many of our st
 <li><a href="https://github.com/bbatsov/rubocop">rubocop</a></li>
 <li><a href="https://github.com/colszowka/simplecov">simplecov</a></li>
 <li><a href="https://github.com/clutchski/coffeelint">coffeelint</a></li>
-<li><a href="https://bitbucket.org/logilab/pylint">pylint</a></li>
+<li><a href="https://www.pylint.org/">pylint</a></li>
 </ul>
 </td>
 <td>
@@ -80,7 +80,7 @@ These are the tools integrated on our website by our own users! Without them, we
 <a href="http://coffeescript.org/">CoffeeScript</a>
 </td>
 <td>
-<a href="http://rdel.io/#/home">Ryan Delaney</a>
+<a href="https://github.com/rrdelaney">Ryan Delaney</a>
 </td>
 </tr>
 <tr>

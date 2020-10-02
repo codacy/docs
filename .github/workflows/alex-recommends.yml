@@ -1,0 +1,20 @@
+name: Alex Recommends
+
+on: pull_request
+
+jobs:
+  alex:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GH_PERSONAL_ACC_TOK }}
+          submodules: true
+          fetch-depth: 0
+      - name: Comment on new PR
+        uses: brown-ccv/alex-recommends@v1.1.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          message_id: 'alex'
+          glob_pattern: "**/*.md"
