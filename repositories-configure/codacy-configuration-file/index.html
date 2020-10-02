@@ -17,7 +17,7 @@
     
     
       
-        <title>Codacy Configuration File - Codacy docs</title>
+        <title>Codacy configuration file - Codacy docs</title>
       
     
     
@@ -624,14 +624,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Codacy Configuration File
+        Codacy configuration file
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
         </span>
       </label>
     
-    <a href="./" title="Codacy Configuration File" class="md-nav__link md-nav__link--active">
-      Codacy Configuration File
+    <a href="./" title="Codacy configuration file" class="md-nav__link md-nav__link--active">
+      Codacy configuration file
     </a>
     
       
@@ -2581,14 +2581,17 @@
                   
                 
                 
-                <h1 id="codacy-configuration-file">Codacy Configuration File<a class="headerlink" href="#codacy-configuration-file" title="Permanent link">&para;</a></h1>
+                <h1 id="codacy-configuration-file">Codacy configuration file<a class="headerlink" href="#codacy-configuration-file" title="Permanent link">&para;</a></h1>
 <p>Codacy supports configuring certain advanced features through a configuration file.</p>
 <p>You can exclude files using glob patterns and add custom extensions to languages.</p>
 <p>You can ignore files globally, for certain categories (duplication or metrics) or for a specific tool (e.g.: Rubocop). The category metrics refers to the information you find under <a href="../../repositories/files-view/">File details</a> such as Size, Structure and Complexity.</p>
 <p>To add custom extensions to a language you can also add an entry in this file, but keep in mind that some tools might not work out of the box with those extensions and might need changes.</p>
 <p>If you want to disable an engine that needs to be done directly in the <a href="../code-patterns/">Code Patterns</a> page.</p>
-<p>The configuration file name must be <strong>".codacy.yaml"</strong> or <strong>".codacy.yml"</strong> and should be placed in the root of
-your repository.</p>
+<p>The configuration file name must be <strong>".codacy.yaml"</strong> or <strong>".codacy.yml"</strong> and should be placed in the root of your repository.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The configuration file must start with a line containing <code>---</code>.</p>
+</div>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">engines</span><span class="p">:</span>
   <span class="nt">rubocop</span><span class="p">:</span>
@@ -2673,7 +2676,7 @@ tslint
 tsqllint
 </code></pre></div>
 
-<p>If you have questions about Codacy configuration file, please, contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
+<p>If you have questions about the Codacy configuration file please contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
                 
                   
                     
@@ -2681,7 +2684,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 7, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 2, 2020</span>
     
   </small>
 </div>
