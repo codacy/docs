@@ -170,7 +170,7 @@ To do this, you must update the documentation of the chart on the:
 
     Follow the instructions on [updating the Latest documentation version](#updating-the-latest-documentation-version), but when updating the corresponding version of the documentation commit the changes to that release branch instead of `master`. For example, `release/v2.0`.
 
-### Applying documentation hotfixes to existing chart releases
+## Applying documentation hotfixes to existing chart releases
 
 Sometimes it may be necessary to apply important documentation fixes to existing chart releases. This is typically done on the latest chart release, but depending on the fix, it may be necessary to apply it to older versions as well.
 
