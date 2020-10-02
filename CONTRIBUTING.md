@@ -184,6 +184,7 @@ To apply an hotfix to an existing chart release:
     git checkout release-x.x.x
     git cherry-pick --no-commit -m 1 <commit UUID 1>
     git cherry-pick --no-commit -m 1 <commit UUID 2>
+    ```
 
 1.  Build the docs and validate the changes locally to ensure everything is OK.
 
