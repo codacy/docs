@@ -19,3 +19,4 @@ jobs:
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
           verbose: true
+          force-file-permissions: true
