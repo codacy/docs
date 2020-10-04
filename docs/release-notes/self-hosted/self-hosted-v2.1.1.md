@@ -1,6 +1,8 @@
 # Self-hosted v2.1.1
 
-These release notes are for [Codacy Self-hosted v2.1.1](https://github.com/codacy/chart/releases/tag/2.1.1){: target="_blank"}. To upgrade Codacy, [follow these instructions](/chart/maintenance/upgrade/).
+These release notes are for [Codacy Self-hosted v2.1.1](https://github.com/codacy/chart/releases/tag/2.1.1){: target="_blank"}.
+
+To upgrade Codacy, follow [these instructions](/chart/maintenance/upgrade/).
 
 ## Bug fixes
 
