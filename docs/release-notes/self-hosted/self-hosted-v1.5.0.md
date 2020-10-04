@@ -1,6 +1,6 @@
 # Self-hosted v1.5.0
 
-These release notes are for [Codacy Self-hosted v1.5.0](https://github.com/codacy/chart/releases/tag/1.5.0){: target="_blank"}.
+These release notes are for [Codacy Self-hosted v1.5.0](https://github.com/codacy/chart/releases/tag/1.5.0){: target="_blank"}, released on July 20, 2020.
 
 To upgrade Codacy, follow [these instructions](/chart/maintenance/upgrade/).
 
