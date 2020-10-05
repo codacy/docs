@@ -6,4 +6,4 @@ If you need to make any changes to the emails showing in Codacy, you will need t
 
 If the changes are still not reflected in Codacy, go to your [access management](https://app.codacy.com/account/access-management) page and revoke the relevant Git provider or Google integration. After that, please log out and back into Codacy with that provider.
 
-If you are still having trouble changing your email addresses or have any other question regarding this, reach out to us on <support@codacy.com>.
+If you are still having trouble changing your email addresses or have any other question regarding this, please contact us at <mailto:support@codacy.com>.

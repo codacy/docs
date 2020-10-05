@@ -107,4 +107,4 @@ tslint
 tsqllint
 ```
 
-If you have questions about the Codacy configuration file please contact us at <support@codacy.com>.
+If you have questions about the Codacy configuration file please contact us at <mailto:support@codacy.com>.
