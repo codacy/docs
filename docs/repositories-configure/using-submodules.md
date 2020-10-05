@@ -4,7 +4,7 @@
 
 ## Enabling submodules
 
-By default, Codacy does normal Git clones that do not include submodules to ensure that we only clone necessary repositories. However, if your organization needs to use submodules, you can contact <mailto:support@codacy.com> asking to enable submodules on Codacy.
+By default, Codacy does normal Git clones that do not include submodules to ensure that we only clone necessary repositories. However, if your organization needs to use submodules, please contact us at <mailto:support@codacy.com> asking to enable submodules on Codacy.
 
 After we enabled submodules for your organization, do the following:
 
