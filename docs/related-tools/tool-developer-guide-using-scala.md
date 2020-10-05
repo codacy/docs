@@ -100,4 +100,4 @@ val cmdResponse = cmd.!
 
 As a final note, you may write the code to run the tool in any way you want. Simply return the results from the external tool at the end of the **apply** method, and our code will take care of the rest.
 
-If you have any questions about the template please contact us at <support@codacy.com>.
+If you have any questions about the template please contact us at <mailto:support@codacy.com>.
