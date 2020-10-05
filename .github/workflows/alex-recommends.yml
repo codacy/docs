@@ -4,6 +4,7 @@ on: pull_request
 
 jobs:
   alex:
+    name: Alex Recommends
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -12,7 +13,8 @@ jobs:
           token: ${{ secrets.GH_PERSONAL_ACC_TOK }}
           submodules: true
           fetch-depth: 0
-      - name: Comment on new PR
+
+      - name: Comment on pull request
         uses: brown-ccv/alex-recommends@v1.1.2
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
