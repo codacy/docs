@@ -15,7 +15,7 @@ The CR line end control character was used by older Classic Mac OS systems, and 
 -   LF, if primarily using Unix-like systems such as Linux or the newer macOS operating system
 -   CRLF, if primarily using the Microsoft Windows operating system
 
-## Further reading
+## See also
 
 After converting the line endings in your source code files, you may also want to check the following external resources for help on standardizing the line endings on your repositories and how to configure Git to correctly handle line endings:
 
