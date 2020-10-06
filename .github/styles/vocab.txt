@@ -2,6 +2,7 @@ Codacy
 Ameba
 Bandit
 Brakeman
+Bundler
 Checkstyle
 Clang-Tidy
 Scalameta
