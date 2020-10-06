@@ -51,7 +51,7 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 <td><a href="https://github.com/codacy/codacy-scalameta" class="in-cell-link">https://github.com/codacy/codacy-scalameta</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/securego/gosec" class="in-cell-link">GoSec</a></td>
+<td><a href="https://github.com/securego/gosec" class="in-cell-link">Gosec</a></td>
 <td>Go</td>
 <td><a href="https://github.com/codacy/codacy-gosec" class="in-cell-link">https://github.com/codacy/codacy-gosec</a></td>
 </tr>
