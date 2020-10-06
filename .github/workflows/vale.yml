@@ -4,7 +4,6 @@ on: push
 
 jobs:
   prose:
-    name: Prose
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,7 +17,7 @@ jobs:
         id: file_changes
         uses: trilom/file-changes-action@v1.2.4
 
-      - name: Run Vale
+      - name: Vale
         uses: errata-ai/vale-action@v1.3.0
         with:
           styles: |
