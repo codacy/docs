@@ -22,7 +22,7 @@ This version of Codacy Self-hosted includes the tool versions below.
 - BundlerAudit 0.6.1
 - Checkstyle 8.34
 - Clang-tidy 10.0.1
-- codacy-gosec v2.3.0
+- Gosec v2.3.0
 - CodeNarc 1.6
 - Coffeelint 2.1.0
 - CPPCheck 2.1

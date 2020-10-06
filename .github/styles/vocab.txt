@@ -6,7 +6,7 @@ Bundler
 Checkstyle
 Clang-Tidy
 Scalameta
-GoSec
+Gosec
 CodeNarc
 Coffeelint
 CPPCheck
