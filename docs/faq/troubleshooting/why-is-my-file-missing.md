@@ -20,7 +20,7 @@ While all of the files in your repository should be displayed here, here is a li
 
 -   **The file might be too big**
 
-    Codacy will only display files up to 150 KB. Read about the [file size limitation on Codacy Cloud](#file-size-limitation-on-codacy-cloud) for more information.
+    Codacy only displays files up to 150 KB. Read the section below for more information.
 
 ## File size limitation on Codacy Cloud
 
