@@ -2,8 +2,11 @@ Codacy
 Ameba
 Bandit
 Brakeman
+Bundler
 Checkstyle
 Clang-Tidy
+cloc
+Dockerfile
 Scalameta
 Gosec
 CodeNarc

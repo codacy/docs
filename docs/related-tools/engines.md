@@ -2,9 +2,9 @@
 
 Codacy uses a system of plugin engines to extend the scope of analyses on your repositories, allowing support for new tools and languages every day. To create your own engine, check the [Tool Developer Guide](tool-developer-guide.md).
 
-## Analysis Engines
+## Analysis engines
 
-Here are the engines currently used on Codacy. Our GitHub links list the version being used for each engine as well as additional plugins that we support for each tool.
+Here are the engines currently used on Codacy. The GitHub repositories list the version used by each engine and extra plugins supported for each tool.
 
 <table>
 <thead>
@@ -127,7 +127,7 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 </tr>
 <tr>
 <td><a href="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/index.html" class="in-cell-link">PMD</a></td>
-<td>Java, PLSQL, Apex, Javascript, Velocity, XML, JSP, VisualForce</td>
+<td>Java, PLSQL, Apex, JavaScript, Velocity, XML, JSP, VisualForce</td>
 <td><a href="https://github.com/codacy/codacy-pmd" class="in-cell-link">https://github.com/codacy/codacy-pmd</a></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ Here are the engines currently used on Codacy. Our GitHub links list the version
 
 ## Other tools
 
-Although we expect all tools to run within an engine container, some tools are still supported directly as a binary in our analysis servers and are not configurable in the UI:
+Although we expect all tools to run within an engine container, some tools are still supported directly as a binary in our analysis servers and aren't configurable in the UI:
 
 <table>
 <thead>
@@ -231,7 +231,7 @@ Although we expect all tools to run within an engine container, some tools are s
 </thead>
 <tbody>
 <tr>
-<td>Cloc</td>
+<td>cloc</td>
 <td><a href="https://www.npmjs.com/package/cloc" class="in-cell-link">https://www.npmjs.com/package/cloc</a></td>
 </tr>
 <tr>
