@@ -2593,7 +2593,6 @@
 <p>If you have files in your repository that use the carriage return (CR) as the line end control character, the command <code>git diff</code> doesn't correctly identify line endings in the changed files. Because of this, Codacy is unable to use the output of the command and you will see the following error in the your commit or pull request analysis logs:</p>
 <div class="highlight"><pre><span></span><code>We found an error caused by incompatible line endings while comparing changes with git diff.
 </code></pre></div>
-
 <p><img alt="View analysis logs" src="../images/diff-failure-view-logs.png" /></p>
 <p>The CR line end control character was used by older Classic Mac OS systems, and for the sake of interoperability it's recommended that you <a href="https://en.wikipedia.org/wiki/Newline#Conversion_between_newline_formats">update the line endings in your source code files</a> to use either the control characters:</p>
 <ul>

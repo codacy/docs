@@ -2712,7 +2712,6 @@
   <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>If <strong>/src/.codacy.json</strong> does not exist or any of its contents (files or patterns) is not available, you should invoke the tool for all files from <strong>/src</strong> (files should be searched recursively for all folders in <strong>/src</strong>) and check them with the default patterns.</p>
@@ -2775,7 +2774,6 @@
       <span class="p">]</span>
     <span class="p">}</span>
 </code></pre></div>
-
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>For <strong>level</strong> types we have:</p>
@@ -2808,14 +2806,12 @@
       <span class="nt">&quot;line&quot;</span><span class="p">:</span><span class="mi">2</span>
     <span class="p">}</span>
 </code></pre></div>
-
 <p>If you are not able to run the analysis for any of the files requested you should return an error for each one of them to the standard output in our <strong>Error</strong> format.</p>
 <div class="highlight"><pre><span></span><code>    <span class="p">{</span>
       <span class="nt">&quot;filename&quot;</span><span class="p">:</span><span class="s2">&quot;codacy/core/test.js&quot;</span><span class="p">,</span>
       <span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="s2">&quot;could not parse the file&quot;</span><span class="p">,</span>
     <span class="p">}</span>
 </code></pre></div>
-
 </li>
 </ol>
 <h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
@@ -2843,7 +2839,6 @@
   <span class="p">}</span>
 <span class="p">]</span>
 </code></pre></div>
-
 <p>Optional: To give a more detailed explanation about the issue, you should define the <code>&lt;PATTERN-ID&gt;.md</code>.</p>
 <div class="highlight"><pre><span></span><code>    Fields in interfaces are automatically public static final, and methods are public abstract.
     Classes or interfaces nested in an interface are automatically public and static (all nested interfaces are automatically static).
@@ -2872,7 +2867,6 @@ is always a nice way to help other people understand the problem. For a
 more thorough explanation you can also add a link at the end referring a
 more complete source.
 </code></pre></div>
-
 <h2 id="tests">Tests<a class="headerlink" href="#tests" title="Permanent link">&para;</a></h2>
 <p>After all the docker is prepared you can now test your work.</p>
 <p>To do it you should write test files and place them in <strong>/docs/tests</strong>, for example for PHP, <strong>/docs/tests/UnusedModifier.php</strong>.</p>
@@ -2912,7 +2906,6 @@ more complete source.
 <span class="x">    public static interface Baz {} // static ignored</span>
 <span class="x">}</span>
 </code></pre></div>
-
 <p>To run this use our test repository available <a href="https://github.com/codacy/codacy-plugins-test">here</a>.</p>
 <p>You just need the docker image built in your local repo and then follow the steps to run it.</p>
 <h2 id="submit-the-docker">Submit the Docker<a class="headerlink" href="#submit-the-docker" title="Permanent link">&para;</a></h2>
@@ -2927,7 +2920,6 @@ more complete source.
 
 &lt;YOUR-DOCKER-NAME&gt;:&lt;YOUR-DOCKER-VERSION&gt;
 </code></pre></div>
-
 <h3 id="docker-restrictions">Docker restrictions<a class="headerlink" href="#docker-restrictions" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Docker image size should not exceed 500MB</li>

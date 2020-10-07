@@ -2762,7 +2762,6 @@
 <p>Create a <code>port-forward</code> from the <code>rabbitmq</code> pod to your local machine, replacing <code>&lt;namespace&gt;</code> with the namespace in which Codacy was installed:</p>
 <div class="highlight"><pre><span></span><code>kubectl port-forward codacy-rabbitmq-ha-0 <span class="m">15672</span>:15672 --namespace<span class="o">=</span>&lt;namespace&gt;
 </code></pre></div>
-
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>If you are using MicroK8s</strong> use <code>microk8s.kubectl</code> instead of <code>kubectl</code>.</p>

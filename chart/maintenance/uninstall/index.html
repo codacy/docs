@@ -2579,7 +2579,6 @@ kubectl -n codacy get pvc <span class="p">&amp;</span>
 kubectl -n codacy get pv  <span class="p">&amp;</span>
 kubectl -n codacy get job <span class="p">&amp;</span>
 </code></pre></div>
-
 <p>Note that the deletion of <code>pvc</code>s in the above command has to run in the background
 due to a cyclic dependency in one of the components. If you are unsure of the
 effects of these commands please run each of the <code>bash</code> subcommands and validate their output.</p>

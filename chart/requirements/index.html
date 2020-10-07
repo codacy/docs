@@ -2904,21 +2904,18 @@
 <p>Connect to the PostgreSQL server as a database admin user. For example, using the <code>psql</code> command line client:</p>
 <div class="highlight"><pre><span></span><code>psql -U postgres -h &lt;PostgreSQL server hostname&gt;
 </code></pre></div>
-
 </li>
 <li>
 <p>Create the dedicated user that Codacy will use to connect to PostgreSQL. Make sure that you change the username and password to suit your security needs:</p>
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span> <span class="k">USER</span> <span class="n">codacy</span> <span class="k">WITH</span> <span class="n">PASSWORD</span> <span class="s1">&#39;codacy&#39;</span><span class="p">;</span>
 <span class="k">ALTER</span> <span class="k">ROLE</span> <span class="n">codacy</span> <span class="k">WITH</span> <span class="k">CREATEDB</span><span class="p">;</span>
 </code></pre></div>
-
 <p>Take note of the username and password you define, as you will require them later to configure the connection from Codacy to the PostgreSQL server.</p>
 </li>
 <li>
 <p>Make sure that you can connect to the PostgreSQL database using the newly created user. For example, using the <code>psql</code> command line client:</p>
 <div class="highlight"><pre><span></span><code>psql -U codacy -d postgres -h &lt;PostgreSQL server hostname&gt;
 </code></pre></div>
-
 </li>
 <li>
 <p>Create the databases required by Codacy:</p>
@@ -2933,7 +2930,6 @@
 <span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">listener</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
 <span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">crow</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
 </code></pre></div>
-
 </li>
 </ol>
                 

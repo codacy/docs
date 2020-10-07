@@ -2620,17 +2620,14 @@
 <p>To do this, start by removing the RabbitMQ statefulset:</p>
 <div class="highlight"><pre><span></span><code>kubectl delete sts/codacy-rabbitmq-ha -n codacy
 </code></pre></div>
-
 <p>Confirm the name of the PVCs that were created by RabbitMQ:</p>
 <div class="highlight"><pre><span></span><code>kubectl get pvc -n codacy
 </code></pre></div>
-
 <p>Finally, delete all the PVCs related to RabbitMQ. You should have three replicas which was the default for versions older than 2.0.0:</p>
 <div class="highlight"><pre><span></span><code>kubectl delete pvc data-codacy-rabbitmq-ha-0 -n codacy
 kubectl delete pvc data-codacy-rabbitmq-ha-1 -n codacy
 kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
 </code></pre></div>
-
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>After you upgrade Codacy, our chart will install a new version of RabbitMQ with the <strong>new default of one replica</strong>.</p>
@@ -2650,7 +2647,6 @@ kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
     <span class="nt">pluginResources</span><span class="p">:</span>
         <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
 </code></pre></div>
-
 <p>To:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
   <span class="nt">workerManager</span><span class="p">:</span>
@@ -2662,7 +2658,6 @@ kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
         <span class="nt">pluginResources</span><span class="p">:</span>
             <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
 </code></pre></div>
-
 </li>
 <li>
 <p>The following database configuration values moved from:</p>
@@ -2678,7 +2673,6 @@ kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
   <span class="nt">crowdb</span><span class="p">:</span>
     <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
 </code></pre></div>
-
 <p>To:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
   <span class="nt">hotspotsdb</span><span class="p">:</span>
@@ -2688,7 +2682,6 @@ kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
   <span class="nt">crowdb</span><span class="p">:</span>
     <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
 </code></pre></div>
-
 </li>
 <li>
 <p>The following Erlang cookie configuration was added to the RabbitMQ configuration values:</p>
@@ -2696,12 +2689,10 @@ kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
   <span class="nt">rabbitmqErlangCookie</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">&lt;--- erlang-cookie ---&gt;</span>  <span class="c1"># Generate one with `cat /dev/urandom | tr -dc &#39;a-zA-Z0-9&#39; | fold -w 32 | head -n 1`</span>
   <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
 </code></pre></div>
-
 <p>When you previously installed Codacy, this cookie was automatically set to a random value. We recommend that you keep the same cookie to help ensure that the Codacy upgrade runs smoothly.</p>
 <p>Run the following command to retrieve the current cookie value and define it explicitly in the new configuration:</p>
 <div class="highlight"><pre><span></span><code>kubectl get secrets -n codacy codacy-rabbitmq-ha -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s2">&quot;{.data.rabbitmq-erlang-cookie}&quot;</span> <span class="p">|</span> base64 --decode
 </code></pre></div>
-
 </li>
 </ul>
 </li>
