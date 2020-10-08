@@ -95,7 +95,7 @@ Create pull requests to make changes to the documentation:
 
 1.  When you're ready to ask for a review on your work, open a pull request.
 
-    It really helps if you can provide all the context necessary for the review, or pointers to more information, on the description of the pull request.
+    It really helps if you can give all the context necessary for the review, or pointers to more information, on the description of the pull request.
 
 1.  Make sure that the documentation pages build successfully and that you have an approval from relevant stakeholders.
 
@@ -109,7 +109,7 @@ A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows
 
 ## Releasing a new version of the documentation
 
-We must release a new version of the documentation when there is a new **major or minor** release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the documentation of the chart on the Latest version of the documentation as well as creating a dedicated documentation version for the new release.
+We must release a new version of the documentation when there is a new **major or minor** release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the documentation of the chart on the Latest version of the documentation and creating a dedicated documentation version for the new release.
 
 ### Updating the Latest documentation version
 
@@ -147,13 +147,13 @@ After updating the Latest documentation version, we're ready to create a new doc
 
 1.  Create a new release branch with the name `release/v<MAJOR>.<MINOR>` from the now updated `master` branch.
 
+1.  Delete the existing redirects, since it doesn't make sense to repeat them under each Codacy Self-hosted version.
+
+    Delete the YAML block `plugins.redirects` from the file `mkdocs.yml`.
+
 1.  Delete the release notes from the release branch, since we're only publishing the release notes on the Latest or main version of the documentation.
 
     Delete the folder `docs/release-notes` and all references to the files in this folder from the file `mkdocs.yml`.
-
-1.  Delete the existing redirects, since it does not make sense to repeat them under each Codacy Self-hosted version.
-
-    Delete the YAML block `plugins.redirects` from the file `mkdocs.yml`.
 
 1.  Build the documentation and make sure that the changes for the new release of the chart are correct.
 
@@ -203,7 +203,7 @@ To apply an hotfix to an existing chart release:
     git push --force origin --tags
     ```
 
-    This ensures that if we perform a bugfix release to the chart, the branch will be sourced from the tag pointing to the most recent commit and all hotfixes are included in the new bugfix release.
+    This ensures that if we perform a bug fix release to the chart, the bug fix branch will be sourced from the tag pointing to the most recent commit and it will include all documentation hotfixes.
 
 1.  Finally, follow the instructions to deploy the updated documentation for the chart version that received the hotfix:
 
