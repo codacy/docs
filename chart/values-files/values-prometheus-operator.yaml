@@ -5,7 +5,12 @@ grafana:
     enabled: true
     annotations:
       kubernetes.io/ingress.class: nginx
-  #  hosts: <--- grafana url --->
+      cert-manager.io/cluster-issuer: letsencrypt-codacy
+    tls:
+    - secretName: grafana-ingress-tls-secret
+      hosts:
+        - <--- grafana url --->
+
   sidecar:
     dashboards:
       searchNamespace: ALL
@@ -24,7 +29,7 @@ grafana:
          tlsSkipVerify: true
     - name: Prometheus
       type: prometheus
-      url: http://monitoring-prometheus-oper-prometheus:9090
+      url: http://monitoring-kube-prometheus-prometheus:9090
       version: 1
       orgId: 1
       access: proxy

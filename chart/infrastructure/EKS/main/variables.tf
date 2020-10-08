@@ -23,7 +23,7 @@ variable "custom_tags" {
 variable "k8s_version" {
   description = "Kubernetes version to use in the cluster"
   type        = string
-  default     = "1.14"
+  default     = "1.16"
 }
 
 variable "k8s_worker_type" {

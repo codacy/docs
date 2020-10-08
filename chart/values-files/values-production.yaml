@@ -306,10 +306,10 @@ engine:
       cpu: 200m
       memory: 500Mi
 codacy-tools:
-  replicaCount: 1
+  replicaCount: 2
   resources:
     limits:
-      cpu: 0.5
+      cpu: 1
       memory: 1Gi
     requests:
       cpu: 0.5
