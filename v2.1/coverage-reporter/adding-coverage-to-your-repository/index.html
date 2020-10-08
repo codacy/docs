@@ -2185,7 +2185,6 @@
 <p>Obtain the <a href="/repositories-configure/integrations/project-api/">project API Token</a> from the page <strong>Integrations</strong> in your Codacy repository settings. Then, set the following environment variable to specify your project API Token:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>&lt;your project API Token&gt;
 </code></pre></div>
-
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>Never write API Tokens on your configuration files</strong> and keep your API Tokens well protected, as they grant owner permissions to your projects.</p>
@@ -2196,14 +2195,12 @@
 <p><strong>If you are using Codacy Self-hosted</strong> set the following environment variable to specify your Codacy instance URL:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>&lt;your Codacy instance URL&gt;
 </code></pre></div>
-
 </li>
 <li>
 <p>Run Codacy Coverage Reporter to upload the coverage results to Codacy.</p>
 <p>The recommended way to do this is using a self-contained script that automatically downloads and runs the most recent version of Codacy Coverage Reporter:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report
 </code></pre></div>
-
 <p>See <a href="../alternative-ways-of-running-coverage-reporter/">alternative ways of running Codacy Coverage Reporter</a> for other ways of running Codacy Coverage Reporter, such as when using Circle CI or GitHub actions, or to install the binary manually.</p>
 </li>
 <li>
@@ -2220,7 +2217,6 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
     -l Java -r report2.xml --partial
 bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> final
 </code></pre></div>
-
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>If you are sending reports for a language with the flag <code>--partial</code>, you should use the flag in all reports for that language to ensure the correct calculation of the coverage.</p>

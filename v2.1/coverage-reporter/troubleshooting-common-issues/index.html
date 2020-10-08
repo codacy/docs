@@ -2168,7 +2168,6 @@
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report
   -l Kotlin --force-language
 </code></pre></div>
-
 <p>See the <a href="https://github.com/codacy/codacy-plugins-api/blob/master/src/main/scala/com/codacy/plugins/api/languages/Language.scala#L43">list of languages</a> that you can specify using the flag <code>-l</code>.</p>
 <h2 id="unsupported-report-formats">Submitting coverage from unsupported report formats<a class="headerlink" href="#unsupported-report-formats" title="Permanent link">&para;</a></h2>
 <p>If you are generating a report format that Codacy does not yet support, try using community projects such as <a href="https://github.com/t-yuki/gocover-cobertura">t-yuki/gocover-cobertura</a> and <a href="https://github.com/danielpalme/ReportGenerator">danielpalme/ReportGenerator</a>, or alternatively contribute to our <a href="https://github.com/codacy/coverage-parser">codacy/coverage-parser</a> project.</p>
@@ -2189,7 +2188,6 @@
   <span class="p">]</span>
 <span class="p">}</span>
 </code></pre></div>
-
 <p>Note that all "coverable" lines should be present on the <code>coverage</code> node of the JSON payload. In the example you can see <code>"5": 0</code>, meaning that line 5 is not covered.</p>
 <h2 id="cant-guess-any-report-due-to-no-matching">Can't guess any report due to no matching<a class="headerlink" href="#cant-guess-any-report-due-to-no-matching" title="Permanent link">&para;</a></h2>
 <p>Codacy Coverage Reporter automatically searches for coverage reports matching the <a href="../adding-coverage-to-your-repository/#generating-coverage">file name conventions for supported formats</a>.</p>
@@ -2197,18 +2195,15 @@
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
     -r &lt;my report&gt;
 </code></pre></div>
-
 <h2 id="jsonparseexception-while-uploading-c-coverage-data">JsonParseException while uploading C# coverage data<a class="headerlink" href="#jsonparseexception-while-uploading-c-coverage-data" title="Permanent link">&para;</a></h2>
 <p>If you are using dotCover to generate coverage reports for your C# projects, you should <a href="https://www.jetbrains.com/help/dotcover/Running_Coverage_Analysis_from_the_Command_LIne.html#filters_cmd">exclude xUnit files</a> from the coverage analysis as follows:</p>
 <div class="highlight"><pre><span></span><code>dotCover.exe cover ... /Filters<span class="o">=</span>-:xunit*
 </code></pre></div>
-
 <p>By default, dotCover includes xUnit files in the coverage analysis and this results in larger coverage reports. This filter helps ensure that the resulting coverage data does not exceed the size limit accepted by the Codacy API when uploading the results.</p>
 <h2 id="substratesegfaulthandler-caught-signal-11">SubstrateSegfaultHandler caught signal 11<a class="headerlink" href="#substratesegfaulthandler-caught-signal-11" title="Permanent link">&para;</a></h2>
 <p>If you are experiencing segmentation faults when uploading the coverage results due to <a href="https://github.com/oracle/graal/issues/624">oracle/graal#624</a>, execute the following command before running the reporter, as a workaround:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;</span><span class="k">$(</span>dig +short api.codacy.com <span class="p">|</span> tail -n1<span class="k">)</span><span class="s2"> api.codacy.com&quot;</span> &gt;&gt; /etc/hosts
 </code></pre></div>
-
 <h2 id="coverage-xmlindexxml-generated-an-empty-result">coverage-xml/index.xml generated an empty result<a class="headerlink" href="#coverage-xmlindexxml-generated-an-empty-result" title="Permanent link">&para;</a></h2>
 <p>If you are using PHPUnit version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the PHPUnit XML format only for versions 4 and older.</p>
 <p>To change the output format replace the flag <code>--coverage-xml &lt;dir&gt;</code> with <code>--coverage-clover &lt;file&gt;</code> when executing <code>phpunit</code>.</p>

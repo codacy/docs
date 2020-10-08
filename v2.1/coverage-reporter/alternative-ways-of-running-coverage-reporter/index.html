@@ -2193,11 +2193,9 @@
 <p>On Ubuntu, run:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span>
 </code></pre></div>
-
 <p>On Alpine Linux, run:</p>
 <div class="highlight"><pre><span></span><code>wget -qO - https://coverage.codacy.com/get.sh <span class="p">|</span> sh
 </code></pre></div>
-
 <p>The self-contained script is able to cache the binary. To avoid downloading the binary every time that the script runs, add one of the following directories to your CI cached folders:</p>
 <ul>
 <li><code>$HOME/.cache/codacy</code> on Linux</li>
@@ -2206,7 +2204,6 @@
 <p>To use a specific version of the Codacy Coverage Reporter, set the following environment variable to one of the <a href="https://github.com/codacy/codacy-coverage-reporter/releases">released versions</a>:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_REPORTER_VERSION</span><span class="o">=</span>&lt;version&gt;
 </code></pre></div>
-
 <p>The sections below provide details on alternative ways to run or install Codacy Coverage Reporter.</p>
 <h2 id="circleci-orb">CircleCI orb<a class="headerlink" href="#circleci-orb" title="Permanent link">&para;</a></h2>
 <p>If you are using CircleCI to report coverage, you can use our orb <a href="https://circleci.com/orbs/registry/orb/codacy/coverage-reporter">codacy/coverage-reporter</a>.</p>
@@ -2224,7 +2221,6 @@
 <span class="nt">after_success</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">java -jar codacy-coverage-reporter-assembly.jar report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml</span>
 </code></pre></div>
-
 <p>Make sure that you also <a href="../adding-coverage-to-your-repository/#authenticate">set your project API Token</a> as an environment variable in your Travis CI job.</p>
 <h3 id="gradle-task">Gradle task<a class="headerlink" href="#gradle-task" title="Permanent link">&para;</a></h3>
 <p>A big shout-out to <a href="https://github.com/tompahoward">Tom Howard</a>, who suggested a way to <a href="https://github.com/mountain-pass/hyperstate/commit/857ca93e1c8484c14a5e2da9f0434d3daf3328ce">create a Gradle task</a>.</p>
@@ -2258,7 +2254,6 @@ task (codacyLocs) &lt;&lt; {
     }
 }
 </code></pre></div>
-
 <p>The following Gradle task by <a href="https://github.com/MrRamych">MrRamych</a> was based on the solution above.</p>
 <div class="highlight"><pre><span></span><code>configurations { codacy }
 repositories {
@@ -2279,7 +2274,6 @@ task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
     ]
 }
 </code></pre></div>
-
 <h2 id="manually-downloading-the-native-linux-amd64-binary">Manually downloading the native Linux amd64 binary<a class="headerlink" href="#manually-downloading-the-native-linux-amd64-binary" title="Permanent link">&para;</a></h2>
 <p>If you prefer, you can manually download and run the native <code>codacy-coverage-reporter</code> binary, either for the latest version or a specific one.</p>
 <p>You can use the scripts below to automatically check for the latest version of the binaries, download the binaries from either Bintray or GitHub, and run them.</p>
@@ -2289,13 +2283,11 @@ curl -Ls -o codacy-coverage-reporter <span class="s2">&quot;https://dl.bintray.c
 chmod +x codacy-coverage-reporter
 ./codacy-coverage-reporter report
 </code></pre></div>
-
 <p>Using GitHub:</p>
 <div class="highlight"><pre><span></span><code>curl -Ls -o codacy-coverage-reporter <span class="s2">&quot;</span><span class="k">$(</span>curl -Ls https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest <span class="p">|</span> jq -r <span class="s1">&#39;.assets | map({name, browser_download_url} | select(.name | contains(&quot;codacy-coverage-reporter-linux&quot;))) | .[0].browser_download_url&#39;</span><span class="k">)</span><span class="s2">&quot;</span>
 chmod +x codacy-coverage-reporter
 ./codacy-coverage-reporter report
 </code></pre></div>
-
 <h2 id="manually-downloading-the-java-binary">Manually downloading the Java binary<a class="headerlink" href="#manually-downloading-the-java-binary" title="Permanent link">&para;</a></h2>
 <p>Use the Java binary to run Codacy Coverage reporter on other platforms, such as Linux x86, MacOS, Windows, etc.</p>
 <p>You can use the scripts below to automatically check for the latest version of the Java binaries, download the binaries from either Bintray or GitHub, and run them.</p>
@@ -2304,12 +2296,10 @@ chmod +x codacy-coverage-reporter
 curl -Ls -o codacy-coverage-reporter-assembly.jar <span class="s2">&quot;https://dl.bintray.com/codacy/Binaries/</span><span class="si">${</span><span class="nv">LATEST_VERSION</span><span class="si">}</span><span class="s2">/codacy-coverage-reporter-assembly.jar&quot;</span>
 java -jar codacy-coverage-reporter-assembly.jar report
 </code></pre></div>
-
 <p>Using GitHub:</p>
 <div class="highlight"><pre><span></span><code>curl -LS -o codacy-coverage-reporter-assembly.jar <span class="s2">&quot;</span><span class="k">$(</span>curl -LSs https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest <span class="p">|</span> jq -r <span class="s1">&#39;.assets | map({name, browser_download_url} | select(.name | endswith(&quot;.jar&quot;))) | .[0].browser_download_url&#39;</span><span class="k">)</span><span class="s2">&quot;</span>
 java -jar codacy-coverage-reporter-assembly.jar report
 </code></pre></div>
-
 <h2 id="building-from-source">Building from source<a class="headerlink" href="#building-from-source" title="Permanent link">&para;</a></h2>
 <p>If you are having any issues with your installation, you can also build the coverage reporter from source.</p>
 <ol>
@@ -2317,21 +2307,18 @@ java -jar codacy-coverage-reporter-assembly.jar report
 <p>Clone the Codacy Coverage Reporter repository:</p>
 <div class="highlight"><pre><span></span><code>git clone https://github.com/codacy/codacy-coverage-reporter.git
 </code></pre></div>
-
 </li>
 <li>
 <p>Run the command <code>sbt assembly</code> inside the local repository folder:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span> codacy-coverage-reporter
 sbt assembly
 </code></pre></div>
-
 <p>This will produce a file <code>target/codacy-coverage-reporter-assembly-&lt;version&gt;.jar</code> that you can run.</p>
 </li>
 <li>
 <p>Execute this <code>.jar</code> in the repository where you want to upload the coverage. For example:</p>
 <div class="highlight"><pre><span></span><code>&lt;path&gt;/java-project$ java -jar ../codacy-coverage-reporter/target/codacy-coverage-reporter-assembly-&lt;version&gt;.jar report
 </code></pre></div>
-
 </li>
 </ol>
                 

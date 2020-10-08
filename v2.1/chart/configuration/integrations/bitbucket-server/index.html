@@ -2145,7 +2145,6 @@
 <p>Create a key pair using the RSA algorithm in the PKCS#8 format by executing the command:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -fsSL https://raw.githubusercontent.com/codacy/chart/master/docs/configuration/integrations/generate-bitbucket-server-secrets.sh<span class="o">)</span>
 </code></pre></div>
-
 <p>Store the keys in a safe place for usage in the next steps and as a backup.</p>
 </li>
 <li>
@@ -2196,7 +2195,6 @@
    <span class="nt">consumerPublicKey</span><span class="p">:</span> <span class="s">&quot;&quot;</span> <span class="c1"># Generated when creating the Bitbucket Server application link</span>
    <span class="nt">consumerPrivateKey</span><span class="p">:</span> <span class="s">&quot;&quot;</span> <span class="c1"># Generated when creating the Bitbucket Server application link</span>
 </code></pre></div>
-
 </li>
 <li>
 <p>Apply the new configuration by performing a Helm upgrade. To do so execute the command <a href="../../../#helm-upgrade">used to install Codacy</a>:</p>
@@ -2210,7 +2208,6 @@
              --values values-production.yaml <span class="se">\</span>
              <span class="c1"># --values values-microk8s.yaml</span>
 </code></pre></div>
-
 </li>
 </ol>
 <p>After this is done you will be able to use Bitbucket Server to authenticate to Codacy.</p>
