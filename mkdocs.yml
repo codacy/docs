@@ -27,7 +27,7 @@ google_analytics: ["UA-45639808-4", "auto"]
 
 # Extra variables
 extra:
-  version: 2.1.1
+  version: 2.2.0
 
 # Repository
 # repo_name: "codacy/docs"
