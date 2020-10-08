@@ -6,6 +6,7 @@ Bundler
 Checkstyle
 Clang-Tidy
 cloc
+Cobertura
 Dockerfile
 Scalameta
 Gosec
@@ -38,3 +39,4 @@ SwiftLint
 Tailor
 TSLint
 TSQLLint
+Xcode
