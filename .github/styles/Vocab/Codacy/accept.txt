@@ -1,11 +1,13 @@
 Codacy
+Ctrl
 Ameba
 Bandit
 Brakeman
+Bundler
 Checkstyle
 Clang-Tidy
 Scalameta
-GoSec
+Gosec
 CodeNarc
 Coffeelint
 CPPCheck
@@ -30,6 +32,7 @@ SonarC#
 SonarVB
 SpotBugs
 SQLint
+Staticcheck
 Stylelint
 SwiftLint
 Tailor

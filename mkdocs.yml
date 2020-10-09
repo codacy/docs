@@ -27,7 +27,7 @@ google_analytics: ["UA-45639808-4", "auto"]
 
 # Extra variables
 extra:
-  version: 2.1.1
+  version: 2.2.0
 
 # Repository
 # repo_name: "codacy/docs"
@@ -548,6 +548,7 @@ nav:
                 - faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md
                 - faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md
                 - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
+                - faq/code-analysis/error-line-endings.md
                 - faq/code-analysis/skipping-an-analysis.md
           - Troubleshooting:
                 - faq/troubleshooting/why-is-my-file-missing.md
@@ -582,6 +583,7 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
           - "Codacy Self-hosted":
+                - release-notes/self-hosted/self-hosted-v2.2.0.md
                 - release-notes/self-hosted/self-hosted-v2.1.1.md
                 - release-notes/self-hosted/self-hosted-v2.1.0.md
                 - release-notes/self-hosted/self-hosted-v2.0.0.md

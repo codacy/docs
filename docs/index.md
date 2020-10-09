@@ -42,7 +42,7 @@
       <div>Codacy supports over 30 programming languages out of the box.</div>
     </div>
   </a>
-  <a class="topic-card" href="/coverage-reporter/">
+  <a class="topic-card" href="coverage-reporter/adding-coverage-to-your-repository/">
     <div class="tc-icon">
       <img src="/assets/images/icon-checklist.svg">
     </div>

@@ -4,9 +4,9 @@ on: push
 
 jobs:
   codacy-analysis-cli:
-    runs-on: ubuntu-latest
     name: Codacy Analysis CLI
-    if: github.ref != 'refs/heads/master'
+    runs-on: ubuntu-latest
+    if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
