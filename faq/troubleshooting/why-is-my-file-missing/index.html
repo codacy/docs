@@ -2013,8 +2013,8 @@
 </li>
         
           <li class="md-nav__item md-nav__item--toc">
-  <a href="#what-about-self-hosted-instances" class="md-nav__link">
-    What about Self-hosted instances?
+  <a href="#what-about-codacy-self-hosted" class="md-nav__link">
+    What about Codacy Self-hosted?
   </a>
   
 </li>
@@ -2656,10 +2656,34 @@
 <p>As a solution to this problem, we placed a size limit to the files that Codacy would analyze. This decreased the average analysis time and the number of timeouts hence improving overall performance for our users.</p>
 <h3 id="what-if-i-really-need-a-file-analyzed-that-is-over-this-limit">What if I really need a file analyzed that is over this limit?<a class="headerlink" href="#what-if-i-really-need-a-file-analyzed-that-is-over-this-limit" title="Permanent link">&para;</a></h3>
 <p>While Codacy will discard your file by default, you can still have it analyzed using our <a href="../../../related-tools/run-local-analysis/">CLI</a> and running the analysis locally. CLI does not have a set timeout or any limitation on file size, so you will be able to have your files analyzed this way.</p>
-<h3 id="what-about-self-hosted-instances">What about Self-hosted instances?<a class="headerlink" href="#what-about-self-hosted-instances" title="Permanent link">&para;</a></h3>
-<p>By default, Codacy Self-hosted has the same limit of 150 KB as our Cloud version but it's configurable because the resource allocation for on-premise instances is left up to each organization.</p>
-<p>The change can be done on the Configuration panel:</p>
-<p><img alt="Maximum analysis file size" src="../images/configuration-panel-max-file-size.png" /></p>
+<h3 id="what-about-codacy-self-hosted">What about Codacy Self-hosted?<a class="headerlink" href="#what-about-codacy-self-hosted" title="Permanent link">&para;</a></h3>
+<p>By default, Codacy Self-hosted has the same limit of 150 KB as Codacy Cloud. However, the limit is configurable because the resource allocation for on-premise instances is decided by each organization.</p>
+<p>To update the file size limit:</p>
+<ol>
+<li>
+<p>Edit the value of <code>global.workerManager.workers.config.analysis.maxFileSizeBytes</code> in the <code>values-production.yaml</code> file that you used to install Codacy:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
+  <span class="nt">workerManager</span><span class="p">:</span>
+    <span class="nt">workers</span><span class="p">:</span>
+      <span class="nt">config</span><span class="p">:</span>
+        <span class="nt">analysis</span><span class="p">:</span>
+          <span class="nt">maxFileSizeBytes</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">150000</span>
+</code></pre></div>
+</li>
+<li>
+<p>Apply the new configuration by performing a Helm upgrade and specifying the Codacy Self-hosted version currently installed. To do so execute the command <a href="../../../chart/#helm-upgrade">used to install Codacy</a>:</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you are using MicroK8s</strong> you must use the file <code>values-microk8s.yaml</code> together with the file <code>values-production.yaml</code>.</p>
+<p>To do this, uncomment the last line before running the <code>helm upgrade</code> command below.</p>
+</div>
+<div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span> <span class="se">\</span>
+             --version &lt;current Codacy Self-hosted version&gt; <span class="se">\</span>
+             --values values-production.yaml <span class="se">\</span>
+             <span class="c1"># --values values-microk8s.yaml</span>
+</code></pre></div>
+</li>
+</ol>
                 
                   
                     
@@ -2667,7 +2691,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 8, 2020</span>
     
   </small>
 </div>
