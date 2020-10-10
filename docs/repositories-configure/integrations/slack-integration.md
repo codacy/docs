@@ -1,36 +1,31 @@
 # Slack integration
 
-After adding a repository, you may want to enable Slack integration. Codacy integrates with Slack by sending messages to a channel when new issues are found.
+After adding a repository, you may want to enable Slack integration. Codacy integrates with Slack by sending messages to a channel when it finds new issues.
 
 To enable the Slack integration access the **Integrations** tab of your repository **Settings**, click **Add integration** and select **Slack** from the list.
 
-![Enabling Slack integration](/images/Jan-06-2017_15-36-45.gif)
+![Enabling Slack integration](images/slack-integration.gif)
 
 ## Configuration
 
-**Incoming WebHook**
+Configure the Slack integration as follows:
 
-To set up a new WebHook:
+**Incoming webhook:**
 
-1.  Access the "Incoming WebHooks" page on the App Directory of your Slack account.
-2.  Select the channel where you want to be notified and click "Add Incoming WebHooks Integration"
-3.  Copy the generated URL and use it on Codacy.
+1.  Access the **Incoming Webhooks** page on the App Directory of your Slack account
+2.  Select the channel where you want to receive notifications and click **Add Incoming Webhooks Integration**
+3.  Copy the generated URL and use it on Codacy
 
-    ![](/images/slack-webhook_2.png)
+    ![](images/slack-integration-webhook.png)
 
-4.  Save Settings on Slack
+4.  Save settings on Slack
 
-**Channel**
+**Channel:** The name of the channel where Codacy will send the notifications. This value is optional and it will override the default channel of the webhook.
 
-The name of the channel where the notifications will be sent. This value is optional and it will override the default channel of the WebHook.
+After filling both fields, click the **Save** button. You can also use the **Test** button to send a test notification to your Slack channel and confirm that the integration is working.
 
-After filling both fields you need to click the Save button and everything should be setup correctly.
-You can use the Test button to send a test notification to your Slack channel.
+![Slack integration configuration](images/slack-integration-example.png)
 
-Refresh Codacy page to see the green light.
+After configuring your Slack integration with your server settings, Codacy will send a message on Slack whenever it finds new issues.
 
-![](/images/Screen_Shot_2016-12-02_at_14.52.45.png)
-
-After configuring your Slack integration with your server settings, Codacy will start commenting on Slack whenever it finds new issues.
-
-![Slack test notification](/images/Screen Shot 2015-09-08 at 09.17.35.png)
+![Example Slack notification](images/slack-integration-notification.png)
