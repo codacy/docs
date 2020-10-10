@@ -10,4 +10,4 @@ The updated policy takes effect immediately for all of Codacy's customers and us
 -   Control: Our policy now further explains the control you have over information about you and your online activities. At any time, you can request information, correction, deletion or changes to your personal data or/and make changes yourself
 -   GDPR: We've included additional language to discuss rights for users located in the European Union (EU)
 
-If you have any questions on this, please email us at <privacy@codacy.com> or reach out through our live chat option.
+If you have any questions on this, please email us at <mailto:privacy@codacy.com> or reach out through our live chat option.
