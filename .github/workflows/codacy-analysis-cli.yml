@@ -19,4 +19,5 @@ jobs:
         uses: codacy/codacy-analysis-cli-action@master
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          force-file-permissions: true
           verbose: true
