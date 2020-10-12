@@ -51,7 +51,7 @@ The following is a list of tools currently used on Codacy, and the corresponding
 <td><a href="https://github.com/codacy/codacy-scalameta" class="in-cell-link">https://github.com/codacy/codacy-scalameta</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/securego/gosec" class="in-cell-link">GoSec</a></td>
+<td><a href="https://github.com/securego/gosec" class="in-cell-link">Gosec</a></td>
 <td>Go</td>
 <td><a href="https://github.com/codacy/codacy-gosec" class="in-cell-link">https://github.com/codacy/codacy-gosec</a></td>
 </tr>
@@ -127,7 +127,7 @@ The following is a list of tools currently used on Codacy, and the corresponding
 </tr>
 <tr>
 <td><a href="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/index.html" class="in-cell-link">PMD</a></td>
-<td>Java, PLSQL, Apex, Javascript, Velocity, XML, JSP, VisualForce</td>
+<td>Java, PLSQL, Apex, JavaScript, Velocity, XML, JSP, VisualForce</td>
 <td><a href="https://github.com/codacy/codacy-pmd" class="in-cell-link">https://github.com/codacy/codacy-pmd</a></td>
 </tr>
 <tr>
@@ -220,7 +220,7 @@ The following is a list of tools currently used on Codacy, and the corresponding
 
 ## Other tools
 
-Although we expect all tools to run within a container, some tools are still supported directly as a binary in our analysis servers and are not configurable in the UI:
+Although we expect all tools to run within an engine container, some tools are still supported directly as a binary in our analysis servers and aren't configurable in the UI:
 
 <table>
 <thead>
@@ -231,7 +231,7 @@ Although we expect all tools to run within a container, some tools are still sup
 </thead>
 <tbody>
 <tr>
-<td>Cloc</td>
+<td>cloc</td>
 <td><a href="https://www.npmjs.com/package/cloc" class="in-cell-link">https://www.npmjs.com/package/cloc</a></td>
 </tr>
 <tr>

@@ -6,6 +6,9 @@ Brakeman
 Bundler
 Checkstyle
 Clang-Tidy
+cloc
+Cobertura
+Dockerfile
 Scalameta
 Gosec
 CodeNarc
@@ -18,6 +21,7 @@ ESLint
 Flawfinder
 Revive
 Hadolint
+hotfix
 JSHint
 PMD
 Prospector
@@ -38,3 +42,4 @@ SwiftLint
 Tailor
 TSLint
 TSQLLint
+Xcode
