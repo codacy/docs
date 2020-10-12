@@ -1,4 +1,4 @@
-# Tool Developer Guide - Using Scala
+# Tool developer guide - using Scala
 
 ## Scala template to integrate an external tool on Codacy
 
@@ -10,9 +10,9 @@ You can also fork the code of one of our tools, and modify it; here are some exa
 -   [codacy-jshint](https://github.com/codacy/codacy-jshint)
 -   [codacy-pmd](https://github.com/codacy/codacy-pmd).
 
-This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the [Tool Developer Guide](tool-developer-guide.md).
+This tutorial covers only the template code to write the tool; if you didn't check the full tutorial, please refer to the [tool developer guide](tool-developer-guide.md).
 
-## Scala Engine Template
+## Scala tool template
 
 We use Scala to integrate our tools at Codacy. In this template, you only need to do a couple of things to integrate your tool:
 

@@ -2,7 +2,7 @@
 
 Codacy generally includes support for Static Analysis, Code Duplication, Code Complexity, and Test Coverage for each supported programming language.
 
-Codacy uses a system of plugin tools to extend the scope of analyses on your repositories, allowing support for new tools and languages every day. To create your own engine, check the [Tool Developer Guide](../related-tools/tool-developer-guide.md).
+Codacy uses a system of plugin tools to extend the scope of analyses on your repositories, allowing support for new tools and languages every day. To create your own tool, check the [tool developer guide](../related-tools/tool-developer-guide.md).
 
 The following is a list of tools currently used on Codacy, and the corresponding supported languages. Our GitHub repositories list the version being used for each tool as well as additional plugins that we support for each tool.
 
