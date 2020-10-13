@@ -302,30 +302,30 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#1-issue-categories" class="md-nav__link">
-    1. Issue Categories
+  <a href="#issue-categories" class="md-nav__link">
+    Issue categories
   </a>
   
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#2-issue-level" class="md-nav__link">
-    2. Issue Level
+  <a href="#issue-level" class="md-nav__link">
+    Issue level
   </a>
   
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#3-ignoring-an-issue" class="md-nav__link">
-    3. Ignoring an issue
+  <a href="#ignoring-an-issue" class="md-nav__link">
+    Ignoring an issue
   </a>
   
-    <nav class="md-nav md-nav--toc" aria-label="3. Ignoring an issue">
+    <nav class="md-nav md-nav--toc" aria-label="Ignoring an issue">
       <ul class="md-nav__list md-nav__list--toc">
         
           <li class="md-nav__item md-nav__item--toc">
-  <a href="#31-reinstating-ignored-issues" class="md-nav__link">
-    3.1. Reinstating ignored issues
+  <a href="#reinstating-ignored-issues" class="md-nav__link">
+    Reinstating ignored issues
   </a>
   
 </li>
@@ -336,16 +336,16 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#4-removing-a-pattern" class="md-nav__link">
-    4. Removing a pattern
+  <a href="#removing-a-pattern" class="md-nav__link">
+    Removing a pattern
   </a>
   
-    <nav class="md-nav md-nav--toc" aria-label="4. Removing a pattern">
+    <nav class="md-nav md-nav--toc" aria-label="Removing a pattern">
       <ul class="md-nav__list md-nav__list--toc">
         
           <li class="md-nav__item md-nav__item--toc">
-  <a href="#41-restoring-a-removed-pattern" class="md-nav__link">
-    4.1. Restoring a removed pattern
+  <a href="#restoring-a-removed-pattern" class="md-nav__link">
+    Restoring a removed pattern
   </a>
   
 </li>
@@ -356,28 +356,15 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#5-ignoring-files" class="md-nav__link">
-    5. Ignoring files
+  <a href="#ignoring-files" class="md-nav__link">
+    Ignoring files
   </a>
-  
-    <nav class="md-nav md-nav--toc" aria-label="5. Ignoring files">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#51-managing-ignored-files" class="md-nav__link">
-    5.1. Managing ignored files
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#6-create-a-comment-in-your-repo" class="md-nav__link">
-    6. Create a Comment in your repo
+  <a href="#create-a-comment-in-your-repository" class="md-nav__link">
+    Create a comment in your repository
   </a>
   
 </li>
@@ -2673,57 +2660,53 @@
                 
                 
                 <h1 id="issues-view">Issues View<a class="headerlink" href="#issues-view" title="Permanent link">&para;</a></h1>
-<p>Here you get an overview of all issues raised by Codacy in your repository. We arrange them in six categories. For every issue, we present information on why is this an issue, how you could solve it, and the related code pattern.</p>
-<p><img alt="The Issues View" src="/images/image-0.png" /></p>
-<p><img alt="An issue expanded" src="/images/image-1.gif" /></p>
-<h2 id="1-issue-categories">1. Issue Categories<a class="headerlink" href="#1-issue-categories" title="Permanent link">&para;</a></h2>
+<p>This page displays an overview of all issues raised by Codacy in your repository. For every issue, Codacy presents information on why it considers the issue, how you could solve it, and the related code pattern.</p>
+<p><img alt="Issues View" src="../images/issues-view.png" /></p>
+<h2 id="issue-categories">Issue categories<a class="headerlink" href="#issue-categories" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Security:</strong> security issues, potential vulnerabilities, unsafe dependencies.</li>
 <li><strong>Error</strong> <strong>Prone:</strong> bad practices/patterns that cause code to fail/prone to bugs.</li>
 <li><strong>Code Style:</strong> related to the style of the code, line length, tabs vs spaces.</li>
 <li><strong>Compatibility:</strong> identifies code that has problems with older systems or cross platform support.</li>
-<li><strong>Unused Code:</strong> unnecessary code not being used.</li>
+<li><strong>Unused Code:</strong> unnecessary code not in use.</li>
 <li><strong>Performance:</strong> inefficiently written code.</li>
 </ul>
-<h2 id="2-issue-level">2. Issue Level<a class="headerlink" href="#2-issue-level" title="Permanent link">&para;</a></h2>
+<h2 id="issue-level">Issue level<a class="headerlink" href="#issue-level" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>Info:</strong> The least critical issue type will appear as blue; for example code style issues are shown this way.</li>
-<li><strong>Warning:</strong> This issue type will appear as yellow. You should be careful with these ones, they are based on code standards and conventions.</li>
-<li><strong>Error:</strong> The more dangerous types of issues will show as red. Take your time to fix these, although the code may run, these issues show the code that is very susceptible to problems. These issues are bug-prone, and/or can have serious problems regarding security and compatibility.</li>
+<li><strong>Info:</strong> The least critical issue type will appear in blue. For example, code style issues.</li>
+<li><strong>Warning:</strong> This issue type will appear in yellow. You should be careful with these ones, they're based on code standards and conventions.</li>
+<li><strong>Error:</strong> The more dangerous issue type will show in red. Take your time to fix these, although the code may run, these issues show the code that's very susceptible to problems. These issues are bug-prone, and can have serious problems regarding security and compatibility.</li>
 </ul>
-<p>Each pattern has a pre-defined severity level and at the moment, it’s not possible to customize that information.</p>
-<h2 id="3-ignoring-an-issue">3. Ignoring an issue<a class="headerlink" href="#3-ignoring-an-issue" title="Permanent link">&para;</a></h2>
+<p>Each pattern has a pre-defined severity level and at the moment, it's not possible to customize that information.</p>
+<h2 id="ignoring-an-issue">Ignoring an issue<a class="headerlink" href="#ignoring-an-issue" title="Permanent link">&para;</a></h2>
 <p>For an issue you disagree with or false positives, you can either ignore that instance or disable the pattern across the whole repository. To do so, click on cog wheel and select the desired option:</p>
-<p><img alt="" src="/images/image-3.gif" /></p>
-<h3 id="31-reinstating-ignored-issues">3.1. Reinstating ignored issues<a class="headerlink" href="#31-reinstating-ignored-issues" title="Permanent link">&para;</a></h3>
+<p><img alt="Ignoring an issue" src="../images/issues-view-ignore.gif" /></p>
+<h3 id="reinstating-ignored-issues">Reinstating ignored issues<a class="headerlink" href="#reinstating-ignored-issues" title="Permanent link">&para;</a></h3>
 <p>To reinstate ignored issues, click on the <strong>Current Issues</strong> box, and select <strong>Ignored Issues</strong> from the drop-down menu.</p>
-<p><img alt="" src="/images/image-4.gif" /></p>
-<h2 id="4-removing-a-pattern">4. Removing a pattern<a class="headerlink" href="#4-removing-a-pattern" title="Permanent link">&para;</a></h2>
-<p>When you want to remove a pattern altogether from your repository's analysis, expand the issue you’re aiming to disable the pattern for, click on the cog wheel, select <strong>Remove pattern</strong> and confirm your choice.</p>
-<p><img alt="" src="/images/image-5.gif" /></p>
+<p><img alt="Reinstating an issue" src="../images/issues-view-reinstate.gif" /></p>
+<h2 id="removing-a-pattern">Removing a pattern<a class="headerlink" href="#removing-a-pattern" title="Permanent link">&para;</a></h2>
+<p>When you want to remove a pattern altogether from your repository's analysis, expand the issue you're aiming to disable the pattern for, click on the cog wheel, select <strong>Remove pattern</strong> and confirm your choice.</p>
+<p><img alt="Removing a pattern" src="../images/issues-view-remove-pattern.gif" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you’re using a custom <a href="../../repositories-configure/code-patterns/#i-have-my-own-tool-configuration-file">configuration file</a>, you have to remove that pattern line manually in your file.</p>
+<p>If you're using a custom <a href="../../repositories-configure/code-patterns/#i-have-my-own-tool-configuration-file">configuration file</a>, you have to remove that pattern line manually in your file.</p>
 </div>
-<h3 id="41-restoring-a-removed-pattern">4.1. Restoring a removed pattern<a class="headerlink" href="#41-restoring-a-removed-pattern" title="Permanent link">&para;</a></h3>
+<h3 id="restoring-a-removed-pattern">Restoring a removed pattern<a class="headerlink" href="#restoring-a-removed-pattern" title="Permanent link">&para;</a></h3>
 <p>To restore a removed pattern, go to your repository's <strong>Code Pattern</strong> settings, choose the tool you'd like to enable the pattern for, find the pattern and click on the check box to enable.</p>
-<p><img alt="" src="/images/image-6.gif" /></p>
+<p><img alt="Restoring a removed pattern" src="../images/issues-view-restore-pattern.gif" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If you're using a custom pattern configuration file, have to restore the line manually.</p>
 </div>
-<h2 id="5-ignoring-files">5. Ignoring files<a class="headerlink" href="#5-ignoring-files" title="Permanent link">&para;</a></h2>
-<p>You can cherry-pick files to be ignored for further analysis. To ignore a file, expand the issue, click on the cog wheel, select <strong>Ignore file</strong> from the menu, and confirm.</p>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>This file is now ignored across the entire repository and for all patterns.</p>
+<h2 id="ignoring-files">Ignoring files<a class="headerlink" href="#ignoring-files" title="Permanent link">&para;</a></h2>
+<p>You can cherry-pick files that Codacy will ignore on later analysis. To ignore a file, expand the issue, click on the cog wheel, select <strong>Ignore file</strong> from the menu, and confirm.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This operation ignores the file across the entire repository and for all patterns.</p>
 </div>
-<p><img alt="" src="/images/image-7.gif" /></p>
-<h3 id="51-managing-ignored-files">5.1. Managing ignored files<a class="headerlink" href="#51-managing-ignored-files" title="Permanent link">&para;</a></h3>
-<p>Ignored files are managed through <strong>Settings</strong>, <strong>Ignore Files</strong>.</p>
-<p><img alt="" src="/images/image-8.gif" /></p>
-<p>For more information on this topic, have a look at this <a href="../../repositories-configure/ignore-files-from-codacy-analysis/">article</a>.</p>
-<h2 id="6-create-a-comment-in-your-repo">6. Create a Comment in your repo<a class="headerlink" href="#6-create-a-comment-in-your-repo" title="Permanent link">&para;</a></h2>
+<p><img alt="Ignoring files" src="../images/issues-view-ignoring-files.gif" /></p>
+<p>See <a href="../../repositories-configure/ignore-files-from-codacy-analysis/">more information on managing ignored files</a>.</p>
+<h2 id="create-a-comment-in-your-repository">Create a comment in your repository<a class="headerlink" href="#create-a-comment-in-your-repository" title="Permanent link">&para;</a></h2>
 <p>You can also add comments to the code on Codacy, and it will sync in your repository on <a href="../../repositories-configure/integrations/github-integration/">GitHub</a> or <a href="../../repositories-configure/integrations/bitbucket-integration/">Bitbucket</a>.</p>
                 
                   
@@ -2732,7 +2715,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 24, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 13, 2020</span>
     
   </small>
 </div>
