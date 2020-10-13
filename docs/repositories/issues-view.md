@@ -1,23 +1,23 @@
 # Issues View
 
-This page displays an overview of all issues raised by Codacy in your repository. For every issue, Codacy presents information on why is this an issue, how you could solve it, and the related code pattern.
+This page displays an overview of all issues raised by Codacy in your repository. For every issue, Codacy presents information on why it considers the issue, how you could solve it, and the related code pattern.
 
 ![Issues View](images/issues-view.png)
 
-## Issue Categories
+## Issue categories
 
 -   **Security:** security issues, potential vulnerabilities, unsafe dependencies.
 -   **Error** **Prone:** bad practices/patterns that cause code to fail/prone to bugs.
 -   **Code Style:** related to the style of the code, line length, tabs vs spaces.
 -   **Compatibility:** identifies code that has problems with older systems or cross platform support.
--   **Unused Code:** unnecessary code not being used.
+-   **Unused Code:** unnecessary code not in use.
 -   **Performance:** inefficiently written code.
 
-## Issue Level
+## Issue level
 
--   **Info:** The least critical issue type will appear as blue; for example code style issues are shown this way.
--   **Warning:** This issue type will appear as yellow. You should be careful with these ones, they're based on code standards and conventions.
--   **Error:** The more dangerous types of issues will show as red. Take your time to fix these, although the code may run, these issues show the code that's very susceptible to problems. These issues are bug-prone, and can have serious problems regarding security and compatibility.
+-   **Info:** The least critical issue type will appear in blue. For example, code style issues.
+-   **Warning:** This issue type will appear in yellow. You should be careful with these ones, they're based on code standards and conventions.
+-   **Error:** The more dangerous issue type will show in red. Take your time to fix these, although the code may run, these issues show the code that's very susceptible to problems. These issues are bug-prone, and can have serious problems regarding security and compatibility.
 
 Each pattern has a pre-defined severity level and at the moment, it's not possible to customize that information.
 
