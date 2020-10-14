@@ -16,7 +16,7 @@ Depending on your role on the Git provider you will have different permissions o
 <td><strong>Modify billing</strong></td>
 </tr>
 <tr>
-<td rowspan="4">
+<td rowspan="5">
 <p>GitHub Cloud</p>
 </td>
 <td>Outside Collaborator<sup>1</sup></td>
@@ -29,11 +29,21 @@ Depending on your role on the Git provider you will have different permissions o
 <td>No</td>
 </tr>
 <tr>
-<td>Member</td>
+<td>Read, Triage</td>
 <td>Configurable<sup>2</sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Write, Maintain</td>
+<td>Configurable<sup>2</sup></td>
+<td>Yes</td>
+<td>No</td>
+<td>Yes</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -49,7 +59,7 @@ Depending on your role on the Git provider you will have different permissions o
 <td>No</td>
 </tr>
 <tr>
-<td>Owner</td>
+<td>Organization Owner</td>
 <td>Configurable<sup>2</sup></td>
 <td>Yes</td>
 <td>Yes</td>
