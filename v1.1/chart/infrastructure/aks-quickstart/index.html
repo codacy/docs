@@ -2459,11 +2459,9 @@
 <p>for mac</p>
 <div class="highlight"><pre><span></span><code>brew install azure-cli
 </code></pre></div>
-
 <p>login with:</p>
 <div class="highlight"><pre><span></span><code>az login --use-device-code
 </code></pre></div>
-
 <p>this is more stable than not using device code.</p>
 <h2 id="create-the-backend-for-terraform">Create the backend for Terraform<a class="headerlink" href="#create-the-backend-for-terraform" title="Permanent link">&para;</a></h2>
 <p><a href="https://www.terraform.io/docs/backends/index.html">https://www.terraform.io/docs/backends/index.html</a></p>
@@ -2471,7 +2469,6 @@
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span> backend/
 terraform init <span class="o">&amp;&amp;</span> terraform apply
 </code></pre></div>
-
 <p>Save the output data and use it to configure the backends of the <code>main/</code>
 and <code>setup/</code> stacks (in <code>config.tf</code>).</p>
 <h2 id="create-a-cluster">Create a cluster<a class="headerlink" href="#create-a-cluster" title="Permanent link">&para;</a></h2>
@@ -2479,11 +2476,9 @@ and <code>setup/</code> stacks (in <code>config.tf</code>).</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span> backend/
 terraform init <span class="o">&amp;&amp;</span> terraform apply
 </code></pre></div>
-
 <p>get kubeconfig:</p>
 <div class="highlight"><pre><span></span><code>az aks get-credentials --resource-group codacy-cluster --name codacy-aks-cluster
 </code></pre></div>
-
 <h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
 <p>To create run:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">cd</span> setup/
@@ -2496,7 +2491,7 @@ terraform init <span class="o">&amp;&amp;</span> terraform apply
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 25, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 15, 2020</span>
     
   </small>
 </div>

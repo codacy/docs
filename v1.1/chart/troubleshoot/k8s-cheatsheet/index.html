@@ -1898,26 +1898,6 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#clean-the-namespace" class="md-nav__link">
-    Clean the namespace
-  </a>
-  
-    <nav class="md-nav md-nav--toc" aria-label="Clean the namespace">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#check-uninstall-was-successful" class="md-nav__link">
-    Check uninstall was successful
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
   <a href="#edit-configmap" class="md-nav__link">
     Edit configmap
   </a>
@@ -2567,84 +2547,49 @@
 helm dep build ./chart/codacy
 helm upgrade --install codacy ./chart/codacy/ --namespace codacy --atomic --timeout<span class="o">=</span><span class="m">300</span> --values ./&lt;YOUR-VALUES-FILE&gt;
 </code></pre></div>
-
 <h3 id="upgrade">Upgrade<a class="headerlink" href="#upgrade" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="o">(</span><span class="nb">cd</span> chart<span class="p">;</span> sudo git fetch --all --prune --tags<span class="p">;</span> sudo git reset --hard origin/&lt;YOUR-BRANCH&gt;<span class="p">;</span><span class="o">)</span>
 helm dep build ./chart/codacy
 helm upgrade --install codacy ./chart/codacy/ --namespace codacy --atomic --timeout<span class="o">=</span><span class="m">300</span> --values ./&lt;YOUR-VALUES-FILE&gt;
 </code></pre></div>
-
-<h2 id="clean-the-namespace">Clean the namespace<a class="headerlink" href="#clean-the-namespace" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>helm -n codacy uninstall codacy
-kubectl -n codacy delete --all pod <span class="p">&amp;</span>
-kubectl -n codacy delete --all pvc <span class="p">&amp;</span>
-kubectl -n codacy delete --all pv  <span class="p">&amp;</span>
-kubectl -n codacy delete --all job <span class="p">&amp;</span>
-sleep <span class="m">5</span>
-kubectl -n codacy patch pvc -p <span class="s1">&#39;{&quot;metadata&quot;:{&quot;finalizers&quot;:null}}&#39;</span> <span class="k">$(</span>kubectl -n codacy get pvc -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[*].metadata.name}&#39;</span><span class="k">)</span>
-kubectl -n codacy patch pv -p <span class="s1">&#39;{&quot;metadata&quot;:{&quot;finalizers&quot;:null}}&#39;</span> <span class="k">$(</span>kubectl -n codacy get pv -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[*].metadata.name}&#39;</span><span class="k">)</span>
-sleep <span class="m">5</span>
-kubectl -n codacy delete pod <span class="k">$(</span>kubectl -n codacy get pod -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[*].metadata.name}&#39;</span><span class="k">)</span> --force --grace-period<span class="o">=</span><span class="m">0</span>
-kubectl -n codacy get pod <span class="p">&amp;</span>
-kubectl -n codacy get pvc <span class="p">&amp;</span>
-kubectl -n codacy get pv  <span class="p">&amp;</span>
-kubectl -n codacy get job <span class="p">&amp;</span>
-</code></pre></div>
-
-<h3 id="check-uninstall-was-successful">Check uninstall was successful<a class="headerlink" href="#check-uninstall-was-successful" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>ps aux <span class="p">|</span> grep -i kubectl
-</code></pre></div>
-
 <h2 id="edit-configmap">Edit configmap<a class="headerlink" href="#edit-configmap" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>kubectl get configmaps
 </code></pre></div>
-
 <p><strong>and</strong></p>
 <div class="highlight"><pre><span></span><code>kubectl edit configmap &lt;configmap-name&gt;
 </code></pre></div>
-
 <h2 id="restart-deployment-of-daemonset">Restart deployment of daemonset<a class="headerlink" href="#restart-deployment-of-daemonset" title="Permanent link">&para;</a></h2>
 <h3 id="daemonsets">daemonsets<a class="headerlink" href="#daemonsets" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>kubectl get daemonsets
 </code></pre></div>
-
 <p><strong>and</strong></p>
 <div class="highlight"><pre><span></span><code>kubectl rollout restart daemonset/&lt;daemonset-name&gt;
 </code></pre></div>
-
 <h3 id="deployment">deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>kubectl get deployment
 </code></pre></div>
-
 <p><strong>and</strong></p>
 <div class="highlight"><pre><span></span><code>kubectl rollout restart deployment/&lt;deployment-name&gt;
 </code></pre></div>
-
 <p><strong>and</strong></p>
 <div class="highlight"><pre><span></span><code>kubectl rollout status deployment/&lt;deployment-name&gt; -w
 </code></pre></div>
-
 <h2 id="read-logs">Read logs<a class="headerlink" href="#read-logs" title="Permanent link">&para;</a></h2>
 <h3 id="daemonset-with-multiple-containers">daemonset with multiple containers<a class="headerlink" href="#daemonset-with-multiple-containers" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>kubectl logs daemonset/&lt;daemonset-name&gt; &lt;container-name&gt; -f
 </code></pre></div>
-
 <h3 id="service">service<a class="headerlink" href="#service" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>kubectl get svc
 </code></pre></div>
-
 <p><strong>and</strong></p>
 <div class="highlight"><pre><span></span><code>kubectl logs -l <span class="k">$(</span>kubectl get svc/&lt;service-name&gt; -o<span class="o">=</span>json <span class="p">|</span> jq <span class="s2">&quot;.spec.selector&quot;</span> <span class="p">|</span> jq -r <span class="s1">&#39;to_entries|map(&quot;\(.key)=\(.value|tostring)&quot;)|.[]&#39;</span> <span class="p">|</span> sed -e <span class="s1">&#39;H;${x;s/\n/,/g;s/^,//;p;};d&#39;</span><span class="k">)</span> -f
 </code></pre></div>
-
 <h2 id="open-shell-inside-container">Open shell inside container<a class="headerlink" href="#open-shell-inside-container" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it daemonset/&lt;daemonset-name&gt; -c &lt;container-name&gt; sh
 </code></pre></div>
-
 <p><strong>or</strong></p>
 <div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it deployment/&lt;deployment-name&gt; sh
 </code></pre></div>
-
 <h2 id="microk8s">MicroK8s<a class="headerlink" href="#microk8s" title="Permanent link">&para;</a></h2>
 <h3 id="session-manager-ssh">Session Manager SSH<a class="headerlink" href="#session-manager-ssh" title="Permanent link">&para;</a></h3>
 <p>When using AWS Session Manager, to connect to the instance where you installed microk8s,
@@ -2659,7 +2604,7 @@ since the CLI is very limited you will benefit from using these aliases:</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 25, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 15, 2020</span>
     
   </small>
 </div>

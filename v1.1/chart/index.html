@@ -2496,7 +2496,6 @@
 <p>Create a cluster namespace called <code>codacy</code> that will group all resources related to Codacy.</p>
 <div class="highlight"><pre><span></span><code>kubectl create namespace codacy
 </code></pre></div>
-
 </li>
 <li>
 <p>Add the Docker registry credentials provided by Codacy together with your license to a cluster Secret. This is necessary because some Codacy Docker images are currently private.</p>
@@ -2506,7 +2505,6 @@
     --docker-password<span class="o">=</span>&lt;docker_password&gt; <span class="se">\</span>
     --namespace codacy
 </code></pre></div>
-
 </li>
 <li>
 <p>Download the template file <a href="values-files/values-production.yaml" target="_blank"><code>values-production.yaml</code></a> and use a text editor of your choice to edit the value placeholders as described in the comments.</p>
@@ -2532,7 +2530,6 @@ helm upgrade --install codacy codacy-stable/codacy <span class="se">\</span>
              --values values-production.yaml
              <span class="c1"># --values values-microk8s.yaml</span>
 </code></pre></div>
-
 </li>
 <li>
 <p>By now all the Codacy pods should be starting in the cluster. Run the following command <strong>and wait for all the pods to have the status Running</strong>, which can take several minutes:</p>
@@ -2561,7 +2558,6 @@ codacy-ragnaros-69459775b5-hmj4d                <span class="m">1</span>/1     R
 codacy-remote-provider-service-8fb8556b-rr4ws   <span class="m">1</span>/1     Running   <span class="m">0</span>          8m56s
 codacy-worker-manager-656dbf8d6d-n4j7c          <span class="m">1</span>/1     Running   <span class="m">0</span>          8m57s
 </code></pre></div>
-
 </li>
 </ol>
 <h2 id="3-configuring-codacy">3. Configuring Codacy<a class="headerlink" href="#3-configuring-codacy" title="Permanent link">&para;</a></h2>
@@ -2600,7 +2596,7 @@ codacy-worker-manager-656dbf8d6d-n4j7c          <span class="m">1</span>/1     R
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 25, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 15, 2020</span>
     
   </small>
 </div>
