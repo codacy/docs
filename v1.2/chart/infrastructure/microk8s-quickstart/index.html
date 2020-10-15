@@ -2478,7 +2478,6 @@
 <p>Make sure that the package <code>nfs-common</code> is installed:</p>
 <div class="highlight"><pre><span></span><code>sudo apt update <span class="o">&amp;&amp;</span> sudo apt install nfs-common -y
 </code></pre></div>
-
 </li>
 <li>
 <p>Install MicroK8s from the <code>1.15/stable</code> channel:</p>
@@ -2486,13 +2485,11 @@
 sudo usermod -a -G microk8s <span class="nv">$USER</span>
 sudo su - <span class="nv">$USER</span>
 </code></pre></div>
-
 </li>
 <li>
 <p>Check that MicroK8s is running:</p>
 <div class="highlight"><pre><span></span><code>microk8s.status --wait-ready
 </code></pre></div>
-
 </li>
 </ol>
 <h2 id="3-configuring-microk8s">3. Configuring MicroK8s<a class="headerlink" href="#3-configuring-microk8s" title="Permanent link">&para;</a></h2>
@@ -2504,7 +2501,6 @@ sudo su - <span class="nv">$USER</span>
 sudo <span class="nb">echo</span> <span class="s2">&quot;--allow-privileged=true&quot;</span> &gt;&gt; /var/snap/microk8s/current/args/kube-apiserver
 microk8s.status --wait-ready
 </code></pre></div>
-
 </li>
 <li>
 <p>Enable the following MicroK8s addons:</p>
@@ -2515,7 +2511,6 @@ microk8s.status --wait-ready
 microk8s.enable ingress
 microk8s.status --wait-ready
 </code></pre></div>
-
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Check the output of the commands to make sure that all the addons are enabled correctly.</p>
@@ -2528,13 +2523,11 @@ microk8s.status --wait-ready
 microk8s.start
 microk8s.status --wait-ready
 </code></pre></div>
-
 </li>
 <li>
 <p>Export your kubeconfig so that Helm knows on which cluster to install the charts:</p>
 <div class="highlight"><pre><span></span><code>microk8s.config &gt; ~/.kube/config
 </code></pre></div>
-
 </li>
 <li>
 <p>The addons are now enabled and the MicroK8s instance bootstrapped. However, we must wait for some MicroK8s pods to be ready, as failing to do so can result in the pods entering a <code>CrashLoopBackoff</code> state:</p>
@@ -2543,13 +2536,11 @@ microk8s.kubectl <span class="nb">wait</span> -n kube-system --for<span class="o
 <span class="c1"># If the following command fails, you probably installed the wrong MicroK8s version</span>
 microk8s.kubectl <span class="nb">wait</span> --all-namespaces --for<span class="o">=</span><span class="nv">condition</span><span class="o">=</span>Ready pod -l <span class="nv">name</span><span class="o">=</span>nginx-ingress-microk8s
 </code></pre></div>
-
 </li>
 <li>
 <p>Verify that the MicroK8s configuration was successful:</p>
 <div class="highlight"><pre><span></span><code>microk8s.status --wait-ready
 </code></pre></div>
-
 <p>The output of the command should be the following:</p>
 <div class="highlight"><pre><span></span><code>microk8s is running
 addons:
@@ -2569,7 +2560,6 @@ prometheus: disabled
 istio: disabled
 dashboard: disabled
 </code></pre></div>
-
 </li>
 </ol>
 <p>After these steps you have ensured that DNS, HTTP, and NGINX Ingress are enabled and working properly inside the MicroK8s instance.</p>
@@ -2581,7 +2571,6 @@ dashboard: disabled
 <p>To simplify this, we suggest that you create an alias so that you can run the commands directly as provided on the instructions:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">alias</span> <span class="nv">kubectl</span><span class="o">=</span>microk8s.kubectl
 </code></pre></div>
-
 </li>
 <li>
 <p>When running the <code>helm upgrade</code> command that installs the Codacy chart, you will be instructed to also use the file <a href="../../values-files/values-microk8s.yaml"><code>values-microk8s.yaml</code></a> that downsizes some component limits, making it easier to fit Codacy in the lightweight MicroK8s solution.</p>
@@ -2594,7 +2583,7 @@ dashboard: disabled
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 25, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 15, 2020</span>
     
   </small>
 </div>
