@@ -2283,7 +2283,6 @@
                             --upload <span class="se">\</span>
                             --verbose
 </code></pre></div>
-
 <p>The Codacy CLI will then run SpotBugs on the compiled classes of your repository and upload these results to Codacy to be used in your workflow.</p>
 <h2 id="detecting-sources-and-compiled-classes">Detecting sources and compiled classes<a class="headerlink" href="#detecting-sources-and-compiled-classes" title="Permanent link">&para;</a></h2>
 <p>Codacy tries to find the classes and map results to the files automatically. If you use Maven, Gradle and SBT then the default layouts are detected automatically as well.</p>
@@ -2298,7 +2297,6 @@ engines:
       - classesDirectories: [ &quot;api/target/classes&quot; ]
         sourceDirectories:  [ &quot;api/src/main&quot; ]
 </code></pre></div>
-
 <h2 id="increasing-the-timeout-to-run-spotbugs">Increasing the timeout to run SpotBugs<a class="headerlink" href="#increasing-the-timeout-to-run-spotbugs" title="Permanent link">&para;</a></h2>
 <p>When running SpotBugs on the compiled classes of larger projects, the <a href="https://github.com/codacy/codacy-analysis-cli/blob/master/README.md#commands-and-configuration">default execution timeout of 15 minutes</a> may not be enough for SpotBugs to complete the analysis.</p>
 <p>To increase the timeout that each tool has to execute, use the option <code>--tool-timeout</code> when invoking the <code>codacy-analysis-cli</code> command.</p>

@@ -2314,14 +2314,13 @@
 
 <span class="k">object</span> <span class="nc">MyTool</span> <span class="k">extends</span> <span class="nc">Tool</span><span class="o">{</span>
 
-    <span class="k">override</span> <span class="k">def</span> <span class="n">apply</span><span class="o">(</span><span class="n">path</span><span class="k">:</span> <span class="kt">Path</span><span class="o">,</span> <span class="n">conf</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Seq</span><span class="o">[</span><span class="kt">PatternDef</span><span class="o">]],</span> <span class="n">files</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Set</span><span class="o">[</span><span class="kt">Path</span><span class="o">]])(</span><span class="k">implicit</span> <span class="n">spec</span><span class="k">:</span> <span class="kt">Spec</span><span class="o">)</span><span class="k">:</span> <span class="kt">Try</span><span class="o">[</span><span class="kt">Iterable</span><span class="o">[</span><span class="kt">Result</span><span class="o">]]</span> <span class="k">=</span> <span class="o">{</span>
+    <span class="k">override</span> <span class="k">def</span> <span class="n">apply</span><span class="o">(</span><span class="n">path</span><span class="k">:</span> <span class="kt">Path</span><span class="o">,</span> <span class="n">conf</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Seq</span><span class="o">[</span><span class="kt">PatternDef</span><span class="o">]],</span> <span class="n">files</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Set</span><span class="o">[</span><span class="kt">Path</span><span class="o">]])(</span><span class="k">implicit</span> <span class="n">spec</span><span class="k">:</span> <span class="kt">Spec</span><span class="o">)</span><span class="k">:</span> <span class="kt">Try</span><span class="o">[</span><span class="kt">Iterable</span><span class="o">[</span><span class="kt">Result</span><span class="o">]]</span> <span class="o">=</span> <span class="o">{</span>
 
         <span class="c1">//TODO: Your code goes here</span>
 
     <span class="o">}</span>
 <span class="o">}</span>
 </code></pre></div>
-
 <ul>
 <li><strong>path:</strong> The root path where the files to test are located (usually <code>/src</code>)</li>
 <li><strong>conf:</strong> Patterns to run (optional)</li>
@@ -2342,12 +2341,10 @@
 
 <span class="c1">//...</span>
 </code></pre></div>
-
 <h2 id="code-details-of-our-template">Code details of our template<a class="headerlink" href="#code-details-of-our-template" title="Permanent link">&para;</a></h2>
 <p>The entry point of our template for you is the <strong>Engine</strong> object. In the <strong>codacy.Engine</strong>, you can see the object <strong>Engine</strong> extends a DockerEngine that receives a <strong>Tool</strong>.</p>
 <div class="highlight"><pre><span></span><code><span class="k">object</span> <span class="nc">Engine</span> <span class="k">extends</span> <span class="nc">DockerEngine</span><span class="o">(</span><span class="nc">MyTool</span><span class="o">)</span>
 </code></pre></div>
-
 <p>Your tool must extend <strong>Tool</strong>, (as shown before, MyTemplate already extends it), and override the <strong>apply</strong> method.</p>
 <p>When you want to execute a command, we recommend you generate the sequence you want to run and use the process API provided by <code>scala.sys.process._</code> to run it and pick up the result.</p>
 <div class="highlight"><pre><span></span><code><span class="k">import</span> <span class="nn">scala.sys.process._</span>
@@ -2355,14 +2352,13 @@
 <span class="c1">//...</span>
 
 <span class="c1">//The sequence of strings to run</span>
-<span class="k">val</span> <span class="n">cmd</span> <span class="k">=</span> <span class="nc">Seq</span><span class="o">(</span><span class="s">&quot;pmd&quot;</span><span class="o">,</span> <span class="s">&quot;-d&quot;</span><span class="o">,</span> <span class="s">&quot;/src/&quot;</span><span class="o">,</span> <span class="s">&quot;-f&quot;</span><span class="o">,</span> <span class="s">&quot;xml&quot;</span><span class="o">)</span>
+<span class="k">val</span> <span class="n">cmd</span> <span class="o">=</span> <span class="nc">Seq</span><span class="o">(</span><span class="s">&quot;pmd&quot;</span><span class="o">,</span> <span class="s">&quot;-d&quot;</span><span class="o">,</span> <span class="s">&quot;/src/&quot;</span><span class="o">,</span> <span class="s">&quot;-f&quot;</span><span class="o">,</span> <span class="s">&quot;xml&quot;</span><span class="o">)</span>
 
 <span class="c1">//run the command &gt; pmd -d /src/ -f xml</span>
-<span class="k">val</span> <span class="n">cmdResponse</span> <span class="k">=</span> <span class="n">cmd</span><span class="o">.!</span>
+<span class="k">val</span> <span class="n">cmdResponse</span> <span class="o">=</span> <span class="n">cmd</span><span class="o">.!</span>
 
 <span class="c1">//...</span>
 </code></pre></div>
-
 <p>As a final note, you may write the code to run the tool in any way you want. Simply return the results from the external tool at the end of the <strong>apply</strong> method, and our code will take care of the rest.</p>
 <p>If you have any questions about the template please contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
                 
