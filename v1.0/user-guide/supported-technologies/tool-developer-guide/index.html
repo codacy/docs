@@ -2557,7 +2557,6 @@
       <span class="p">]</span>
     <span class="p">}</span>
 </code></pre></div>
-
 <p>If <strong>/src/.codacy.json</strong> does not exist or any of its contents (files or patterns) is not available, you should invoke the tool for all files from <strong>/src</strong> (files should be searched recursively for all folders in <strong>/src</strong>) and check them with the default patterns.</p>
 <ul>
 <li>When receiving <strong>/src/.codacy.json</strong>, you should only run your tool for the subset of files in <strong>files</strong>, and for the patterns present on <strong>patterns</strong> for your tool <strong>name</strong>.</li>
@@ -2614,7 +2613,6 @@ This file must be located on <strong>/docs/patterns.json</strong>.</p>
       <span class="p">]</span>
     <span class="p">}</span>
 </code></pre></div>
-
 <h3 id="levels-and-categories">Levels and Categories<a class="headerlink" href="#levels-and-categories" title="Permanent link">&para;</a></h3>
 <p>For <strong>level</strong> types we have:</p>
 <ul>
@@ -2640,7 +2638,6 @@ filename path: folder/file.js</p>
       <span class="nt">&quot;line&quot;</span><span class="p">:</span><span class="mi">2</span>
     <span class="p">}</span>
 </code></pre></div>
-
 <p>If you are not able to run the analysis for any of the files requested you should return an error for each one of them to the standard output in our <strong>Error</strong> format.</p>
 <p>Error</p>
 <div class="highlight"><pre><span></span><code>    <span class="p">{</span>
@@ -2648,7 +2645,6 @@ filename path: folder/file.js</p>
       <span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="s2">&quot;could not parse the file&quot;</span><span class="p">,</span>
     <span class="p">}</span>
 </code></pre></div>
-
 <h2 id="documentation">Documentation<a class="headerlink" href="#documentation" title="Permanent link">&para;</a></h2>
 <p>At Codacy we strive to provide the best value to our users and, to accomplish that, we document our patterns so that the user can better understand the problem and fix it.</p>
 <p>At this point, your tool has everything it needs to run, but there is one other really important thing that you should do before submitting your docker: the documentation for your tool.</p>
@@ -2675,7 +2671,6 @@ filename path: folder/file.js</p>
       <span class="p">}</span>
     <span class="p">]</span>
 </code></pre></div>
-
 <p><strong>[Optional] </strong>To give a more detailed explanation about the issue, you should define the &lt;PATTERN-ID&gt;.md</p>
 <p>UnusedModifier.md</p>
 <div class="highlight"><pre><span></span><code>    Fields in interfaces are automatically public static final, and methods are public abstract.
@@ -2755,7 +2750,6 @@ UnusedModifier.php
        public static interface Baz {} // static ignored
     }
 </code></pre></div>
-
 <p>To run this use our test repository available <a href="https://github.com/codacy/codacy-plugins-test">here</a>.</p>
 <p>You just need the docker image built in your local repo and then follow the steps to run it.</p>
 <h2 id="submit-the-docker">Submit the Docker<a class="headerlink" href="#submit-the-docker" title="Permanent link">&para;</a></h2>
@@ -2770,7 +2764,6 @@ UnusedModifier.php
 
 <span class="p">&amp;</span>lt<span class="p">;</span>YOUR-DOCKER-NAME<span class="p">&amp;</span>gt<span class="p">;</span>:<span class="p">&amp;</span>lt<span class="p">;</span>YOUR-DOCKER-VERSION<span class="p">&amp;</span>gt<span class="p">;</span>
 </code></pre></div>
-
 <h3 id="docker-restrictions">Docker restrictions<a class="headerlink" href="#docker-restrictions" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Docker image size should not exceed 500MB</li>
