@@ -2579,16 +2579,13 @@ To do so run:</p>
 <div class="highlight"><pre><span></span><code>helm -n codacy uninstall codacy
 kubectl -n codacy delete --all pod <span class="p">&amp;</span>
 kubectl -n codacy delete --all pvc <span class="p">&amp;</span>
-kubectl -n codacy delete --all pv  <span class="p">&amp;</span>
 kubectl -n codacy delete --all job <span class="p">&amp;</span>
 sleep <span class="m">5</span>
 kubectl -n codacy patch pvc -p <span class="s1">&#39;{&quot;metadata&quot;:{&quot;finalizers&quot;:null}}&#39;</span> <span class="k">$(</span>kubectl -n codacy get pvc -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[*].metadata.name}&#39;</span><span class="k">)</span>
-kubectl -n codacy patch pv -p <span class="s1">&#39;{&quot;metadata&quot;:{&quot;finalizers&quot;:null}}&#39;</span> <span class="k">$(</span>kubectl -n codacy get pv -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[*].metadata.name}&#39;</span><span class="k">)</span>
 sleep <span class="m">5</span>
 kubectl -n codacy delete pod <span class="k">$(</span>kubectl -n codacy get pod -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[*].metadata.name}&#39;</span><span class="k">)</span> --force --grace-period<span class="o">=</span><span class="m">0</span>
 kubectl -n codacy get pod <span class="p">&amp;</span>
 kubectl -n codacy get pvc <span class="p">&amp;</span>
-kubectl -n codacy get pv  <span class="p">&amp;</span>
 kubectl -n codacy get job <span class="p">&amp;</span>
 </code></pre></div>
 <p>Note that the deletion of <code>pvc</code>s in the above command has to run in the background
@@ -2606,7 +2603,7 @@ kubectl get pods -n codacy -o <span class="nv">jsonpath</span><span class="o">=<
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 15, 2020</span>
     
   </small>
 </div>
