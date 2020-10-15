@@ -1,18 +1,18 @@
-# How do I set Codacy as a required check to merge my PRs?
+# How do I set Codacy as a required check to merge my pull requests?
 
-Codacy will check each of your Pull Requests using [your quality settings](../../repositories/quality-settings.md), sending a notification to the Git provider informing if the PR is up to standards or not.
+Codacy will check each of your Pull Requests using [your quality settings](../../repositories/quality-settings.md), sending a notification to the Git provider informing if the pull request is up to standards or not.
 
-Each of the Git providers have different options regarding what can be done with this notification that you can set up to make sure you get a notification if the PR fails Codacy checks or block it from being merged.
+Each of the Git providers have different options regarding what can be done with this notification that you can set up to make sure you get a notification if the pull request fails Codacy checks or block it from being merged.
 
 ## GitHub
 
-GitHub allows for a specific check to be mandatory for a PR to be merged. This allows our users to make sure that a PR is only merged when it gets an OK from Codacy.
+GitHub allows for a specific check to be mandatory for a pull request to be merged. This allows our users to make sure that a pull request is only merged when it gets an OK from Codacy.
 
 [Official Documentation](https://help.github.com/en/articles/enabling-required-status-checks)
 
 ## Bitbucket
 
-Bitbucket does not allow for a specific check to be required before merge, but instead, for a minimum number of checks to be performed successfully before the PR can be merged. This number can be zero, all the checks being run in the PR or a number in between. Some of these options are only available for certain pricing plans in Bitbucket.
+Bitbucket does not allow for a specific check to be required before merge, but instead, for a minimum number of checks to be performed successfully before the pull request can be merged. This number can be zero, all the checks being run in the pull request or a number in between. Some of these options are only available for certain pricing plans in Bitbucket.
 
 [Official Documentation](https://confluence.atlassian.com/bitbucket/suggest-or-require-checks-before-a-merge-856691474.html)
 
