@@ -2328,11 +2328,9 @@
 <p>Set the <em>Project API Token</em> in your terminal, replacing <code>%Project_Token%</code> with your token:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>%Project_Token%
 </code></pre></div>
-
 <p>To upload coverage to a self-hosted installation of Codacy you also need to set your installation URL, replacing <code>%Codacy_instance_URL%</code> with your URL:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>%Codacy_instance_URL%:16006
 </code></pre></div>
-
 </li>
 </ol>
 <div class="admonition hint">
@@ -2343,7 +2341,6 @@
 <p>The easiest way to get starting is by using the self-contained script that downloads and runs the reporter:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span>
 </code></pre></div>
-
 <h3 id="choose-a-specific-version">Choose a specific version<a class="headerlink" href="#choose-a-specific-version" title="Permanent link">&para;</a></h3>
 <p>The script uses by default the latest version.</p>
 <p>If you want to specify a coverage reporter version, use <code>CODACY_REPORTER_VERSION</code> environment variable.</p>

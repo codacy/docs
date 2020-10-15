@@ -2228,13 +2228,11 @@
 codacy-coverage-reporter report -l Java -r report2.xml --partial
 codacy-coverage-reporter final
 </code></pre></div>
-
 <p>Using the script:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report -l Java -r report1.xml --partial
 bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report -l Java -r report2.xml --partial
 bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> final
 </code></pre></div>
-
 <p>If you are sending reports with the partial flag for a certain language you should use it in all reports for that language to ensure the correct calculation of the coverage.</p>
 <p>It might also be possible to merge the reports before uploading them to Codacy, since most coverage tools support merge/aggregation, for example: <a href="http://www.eclemma.org/jacoco/trunk/doc/merge-mojo.html">http://www.eclemma.org/jacoco/trunk/doc/merge-mojo.html</a>.</p>
                 
