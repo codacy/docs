@@ -1595,26 +1595,6 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#clean-the-namespace" class="md-nav__link">
-    Clean the namespace
-  </a>
-  
-    <nav class="md-nav md-nav--toc" aria-label="Clean the namespace">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#check-uninstall-was-successful" class="md-nav__link">
-    Check uninstall was successful
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
   <a href="#edit-configmap" class="md-nav__link">
     Edit configmap
   </a>
@@ -2321,25 +2301,6 @@ By looking at them you can see if probes are failing, and other important signal
 <p>Rollback to a specific revision:</p>
 <div class="highlight"><pre><span></span><code>helm -n codacy rollback codacy &lt;REVISION&gt;
 </code></pre></div>
-<h2 id="clean-the-namespace">Clean the namespace<a class="headerlink" href="#clean-the-namespace" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>helm -n codacy uninstall codacy
-kubectl -n codacy delete --all pod <span class="p">&amp;</span>
-kubectl -n codacy delete --all pvc <span class="p">&amp;</span>
-kubectl -n codacy delete --all pv  <span class="p">&amp;</span>
-kubectl -n codacy delete --all job <span class="p">&amp;</span>
-sleep <span class="m">5</span>
-kubectl -n codacy patch pvc -p <span class="s1">&#39;{&quot;metadata&quot;:{&quot;finalizers&quot;:null}}&#39;</span> <span class="k">$(</span>kubectl -n codacy get pvc -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[*].metadata.name}&#39;</span><span class="k">)</span>
-kubectl -n codacy patch pv -p <span class="s1">&#39;{&quot;metadata&quot;:{&quot;finalizers&quot;:null}}&#39;</span> <span class="k">$(</span>kubectl -n codacy get pv -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[*].metadata.name}&#39;</span><span class="k">)</span>
-sleep <span class="m">5</span>
-kubectl -n codacy delete pod <span class="k">$(</span>kubectl -n codacy get pod -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[*].metadata.name}&#39;</span><span class="k">)</span> --force --grace-period<span class="o">=</span><span class="m">0</span>
-kubectl -n codacy get pod <span class="p">&amp;</span>
-kubectl -n codacy get pvc <span class="p">&amp;</span>
-kubectl -n codacy get pv  <span class="p">&amp;</span>
-kubectl -n codacy get job <span class="p">&amp;</span>
-</code></pre></div>
-<h3 id="check-uninstall-was-successful">Check uninstall was successful<a class="headerlink" href="#check-uninstall-was-successful" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>ps aux <span class="p">|</span> grep -i kubectl
-</code></pre></div>
 <h2 id="edit-configmap">Edit configmap<a class="headerlink" href="#edit-configmap" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>kubectl get configmaps
 </code></pre></div>
@@ -2392,7 +2353,7 @@ since the CLI is very limited you will benefit from using these aliases:</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 1, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 15, 2020</span>
     
   </small>
 </div>
