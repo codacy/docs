@@ -30,7 +30,7 @@ This version of Codacy Self-hosted includes the tool versions below.
 -   Clang-tidy 10.0.1
 -   CodeNarc 1.6
 -   Coffeelint 2.1.0
--   **cppcheck 2.1 (updated from 2.2)**
+-   **Cppcheck 2.1 (updated from 2.2)**
 -   Credo 1.4.0
 -   CSSLint 1.0.5
 -   Detekt 1.10.0

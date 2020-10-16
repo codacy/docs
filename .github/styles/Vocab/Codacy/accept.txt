@@ -9,7 +9,7 @@ cloc
 Cobertura
 CodeNarc
 Coffeelint
-CPPCheck
+Cppcheck
 Credo
 CSSLint
 Ctrl
