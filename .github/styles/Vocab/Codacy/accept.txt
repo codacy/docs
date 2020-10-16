@@ -22,6 +22,7 @@ Gosec
 Hadolint
 hotfix
 JSHint
+namespace
 PMD
 Prospector
 PSScriptAnalyser
