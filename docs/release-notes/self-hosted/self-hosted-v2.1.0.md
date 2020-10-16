@@ -2,7 +2,7 @@
 
 These release notes are for [Codacy Self-hosted v2.1.0](https://github.com/codacy/chart/releases/tag/2.1.0){: target="_blank"}, released on September 16, 2020.
 
-To upgrade Codacy, follow [these instructions](/chart/maintenance/upgrade/).
+To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
 ## Product enhancements
 
