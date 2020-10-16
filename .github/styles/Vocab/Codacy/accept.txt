@@ -13,7 +13,7 @@ Scalameta
 Gosec
 CodeNarc
 Coffeelint
-CPPCheck
+Cppcheck
 Credo
 CSSLint
 Detekt
