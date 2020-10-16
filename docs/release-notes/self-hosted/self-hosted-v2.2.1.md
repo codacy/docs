@@ -2,7 +2,13 @@
 
 These release notes are for [Codacy Self-hosted v2.2.1](https://github.com/codacy/chart/releases/tag/2.2.1){: target="_blank"}, released on October ###, 2020.
 
-To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
+To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md). After that, restart the Fluentd pods by running the following command, replacing `<namespace>` with the namespace in which Codacy was installed:
+
+```bash
+daemonset=$(kubectl get daemonsets -n <namespace> -o jsonpath='{.items[*].metadata.name}') && \
+kubectl rollout restart daemonset -n <namespace> $daemonset && \
+kubectl rollout status daemonset $daemonset --namespace <namespace> --watch
+```
 
 ## Bug fixes
 
