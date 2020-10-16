@@ -5,8 +5,8 @@ These release notes are for [Codacy Self-hosted v2.2.1](https://github.com/codac
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md). After that, restart the Fluentd pods by running the following command, replacing `<namespace>` with the namespace in which Codacy was installed:
 
 ```bash
-daemonset=$(kubectl get daemonsets -n <namespace> -o jsonpath='{.items[*].metadata.name}') && \
-kubectl rollout restart daemonset -n <namespace> $daemonset && \
+daemonset=$(kubectl get daemonsets --namespace <namespace> -o jsonpath='{.items[*].metadata.name}') && \
+kubectl rollout restart daemonset $daemonset --namespace <namespace> && \
 kubectl rollout status daemonset $daemonset --namespace <namespace> --watch
 ```
 
