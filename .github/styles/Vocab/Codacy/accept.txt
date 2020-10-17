@@ -21,6 +21,7 @@ Fluentd
 Gosec
 Hadolint
 hotfix
+jq
 JSHint
 namespace
 PMD

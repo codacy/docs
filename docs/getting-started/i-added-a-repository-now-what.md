@@ -9,5 +9,5 @@ After the first analysis is complete you can continue to explore and configure C
 -   [Check the static analysis results](../repositories/issues-view.md) on the Issues page
 -   [Configure the code patterns](../repositories-configure/code-patterns.md) that Codacy uses to analyze your repository
 -   [Configure your quality settings](../repositories/quality-settings.md) for pull requests
--   [Add coverage reports to Codacy](/coverage-reporter/)
+-   [Add coverage reports to Codacy](../coverage-reporter/adding-coverage-to-your-repository.md)
 -   [Add a Codacy badge to your repository](../repositories/badges.md) displaying the current code quality grade or code coverage

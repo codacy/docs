@@ -188,15 +188,15 @@ To apply an hotfix to an existing chart release:
 
 1.  Build the docs and validate the changes locally to ensure everything is OK.
 
-1.  Commit the changes to the release branch but **skip triggering the CircleCI workflow**:
+1.  Commit and push the changes to the release branch but **skip triggering the CircleCI workflow**:
 
     ```bash
     git add .
     git commit -m "Cherry-pick pull request #xxx and #yyy [ci skip]"
-
+    git push
     ```
 
-1.  Update the git tag to point to the new commit:
+1.  Update the release tag to point to the new commit:
 
     ```bash
     git tag -f x.x.x
