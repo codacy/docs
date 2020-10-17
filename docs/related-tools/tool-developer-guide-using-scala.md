@@ -31,7 +31,7 @@ One thing you probably want to change is the _installAll_ value, which contains 
 
 When extending the **Tool** trait, you have to implement the **apply** method.
 
-When a client runs your tool, the **apply** method of our template is invoked. Here you have everything you need to invoke the tool. After you have your results from the tool, put them in our **Result** format, and then just return them.
+When a client runs your tool, the **apply** method of our template is invoked. Here you have everything you need to invoke the tool. After you have your results from the tool, put them in our **Result** format, and then return them.
 
 ```scala
 package codacy.mytool
@@ -98,6 +98,6 @@ val cmdResponse = cmd.!
 //...
 ```
 
-As a final note, you may write the code to run the tool in any way you want. Simply return the results from the external tool at the end of the **apply** method, and our code will take care of the rest.
+As a final note, you may write the code to run the tool in any way you want. As long as you return the results from the external tool at the end of the **apply** method, our code will take care of the rest.
 
 If you have any questions about the template please contact us at <mailto:support@codacy.com>.
