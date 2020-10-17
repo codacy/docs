@@ -136,7 +136,7 @@ window.addEventListener("DOMContentLoaded", function() {
         }), currentVersion.version);
 
         // Navigate to the selected version
-        select.addEventListener("change", function(event) {
+        select.addEventListener("change", function() {
             var currentPath = window.location.pathname;
             var targetVersionPath = this.value === VERSION_LATEST ? "" : "/" + this.value;
 
