@@ -55,9 +55,6 @@ plugins:
     - git-revision-date-localized
     - monorepo
     - markdownextradata
-    - redirects:
-          redirect_maps:
-              "repositories/security-dashboard.md": "repositories/security-monitor.md"
 
 nav:
     - "Documentation home": "index.md"
