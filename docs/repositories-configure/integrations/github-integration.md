@@ -1,30 +1,35 @@
 # GitHub integration
 
-After adding a repository, navigate to your repository's **Settings**, tab **Integrations** to enable GitHub integration for comments on pull requests, issue creation, and more.
-
-It installs in just one click but you may need to move back and forth between Codacy and GitHub if it requires additional permissions.
-
-After installing the integration for a repository, it has to be enabled by a user with repository access on GitHub. This user will become the GitHub user that Codacy will use to comment and create issues on GitHub.
-
-![GitHub integration](images/github-integration.png)
-
-Once the integration is enabled, you will see additional options when browsing the existing issues on the repository:
+<!-- TODO Improve intro -->
+When the integration is enabled, Codacy displays more options when browsing the existing issues on the repository:
 
 ![GitHub integration for issues](images/github-integration-issues.png)
 
-When **Pull Request Status**, **Pull Request Comment**, or **Pull Request Summary** is enabled, Codacy will automatically update pull requests on GitHub with additional information when accepting pull requests.
+## Enabling the GitHub integration
 
--   **Pull Request Status** will only be added if the user that added the integration has at least write permissions for that repository.
+<!-- TODO Improve section -->
+After adding a repository, navigate to your repository **Settings**, tab **Integrations** to enable and configure the GitHub integration for comments on pull requests, issue creation, and more.
 
-    The status shows whether your PR and coverage are up to standards or not as per the [Pull Request Quality Settings](../../repositories/quality-settings.md) set up for your repository. To see the coverage status, please make sure the Coverage option is enabled in the PR Quality settings.
+![GitHub integration](images/github-integration.png)
+
+When you add a new repository, the GitHub integration is enabled by default. However, if you delete the integration you can add it again by clicking the button **Add integration** and selecting **GitHub** on the list.
+
+## Configuring the GitHub integration
+
+When **Pull Request Status**, **Pull Request Comment**, or **Pull Request Summary** are enabled, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests:
+
+-   **Pull Request Status** adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as per the [quality settings](../../repositories/quality-settings.md) configured for your repository. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings.
 
     ![Pull request status on GitHub](images/github-integration-pr-status.png)
 
--   **Pull Request Comment** makes a comment on the Pull Request line when a new issue is found and shows the pattern raising the issue. Click on the Issue link to go to Codacy to see more details about the issue and how to fix it.
+    !!! important
+        Codacy can only add the report if the user that added the integration has at least write permissions for that repository.
+
+-   **Pull Request Comment** adds comments on the lines of the pull request where Codacy finds new issues. Click on the issue links to open Codacy and see more details about the issues and how to fix them.
 
     ![Pull request comment on GitHub](images/github-integration-pr-comment.png)
 
 
--   **Pull Request Summary** shows an overall view of the changes in the PR. Including newly found issues and other metrics such as complexity and duplication.
+-   **Pull Request Summary** shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication.
 
     ![Pull request summary on GitHub](images/github-integration-pr-summary.png)

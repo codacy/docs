@@ -1,19 +1,28 @@
 # Bitbucket integration
 
-After adding a repository, navigate to your repository's **Settings**, tab **Integrations** to enable Bitbucket integration for comments on pull requests, issue creation, and more.
+<!-- TODO Improve intro -->
+When the integration is enabled, Codacy displays more options when browsing the existing issues on the repository:
 
-It installs in just one click but you may need to move back and forth between Codacy and Bitbucket if it requires additional permissions.
+![Bitbucket integration for issues](images/bitbucket-integration-issues.png)
 
-After installing the integration for a repository, it has to be enabled by a user with repository access on Bitbucket. For private repositories, this user will by default become the Bitbucket Cloud user that Codacy will use to comment and create issues on Bitbucket Cloud. For public repositories, comments made by Codacy will appear as coming from codacy-bot.
+## Enabling the Bitbucket integration
 
-![Bitbucket Cloud integration](images/bitbucket-integration.png)
+<!-- TODO Improve section -->
+After adding a repository, navigate to your repository **Settings**, tab **Integrations** to enable and configure the Bitbucket integration for comments on pull requests, issue creation, and more.
 
-Once the integration is enabled, you will see additional options when browsing the existing issues on the repository:
+![Bitbucket integration](images/bitbucket-integration.png)
 
-![Bitbucket Cloud integration for issues](images/bitbucket-integration-issues.png)
+When you add a new repository, the Bitbucket integration is enabled by default. However, if you delete the integration you can add it again by clicking the button **Add integration** and selecting **Bitbucket** on the list.
 
-When **Pull Request Status** or **Pull Request Comment** is enabled, Codacy will automatically update pull requests on Bitbucket with additional information when accepting pull requests.
+After installing the integration for a repository, it has to be enabled by a user with repository access on Bitbucket. For private repositories, this user will by default become the Bitbucket user that Codacy will use to comment and create issues on Bitbucket. For public repositories, comments made by Codacy will appear as coming from codacy-bot.
 
--   **Pull Request Status** adds a report to your merge request showing whether your merge request and coverage are up to standards or not as per the [quality settings](../../repositories/quality-settings.md) configured for your project. To see the coverage status, ensure that the **Coverage** option is enabled in the quality settings. The report will only be added if the user that added the integration has at least write permissions for that project.
+## Configuring the Bitbucket integration
 
--   **Pull Request Comment** makes a comment on the Pull Request line when a new issue is found and shows the pattern raising the issue. Click on the issue link to open Codacy and see more details about the issue and how to fix it.
+When **Pull Request Status** or **Pull Request Comment** are enabled, Codacy will automatically update pull requests on Bitbucket with extra information when accepting pull requests:
+
+-   **Pull Request Status** adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as per the [quality settings](../../repositories/quality-settings.md) configured for your repository. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings. 
+
+    !!! important
+        Codacy can only add the report if the user that added the integration has at least write permissions for that repository.
+
+-    **Pull Request Comment** adds comments on the lines of the pull request where Codacy finds new issues. Click on the issue links to open Codacy and see more details about the issues and how to fix them.
