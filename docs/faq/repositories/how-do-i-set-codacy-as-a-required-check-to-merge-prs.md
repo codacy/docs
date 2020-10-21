@@ -1,4 +1,4 @@
-# How do I set Codacy as a required check to merge my pull requests?
+# How do I set Codacy as a required check to merge pull requests?
 
 Codacy checks each pull request using your [quality settings](../../repositories/quality-settings.md) and sends a notification to the Git provider informing if the pull request is up to standards or not.
 
