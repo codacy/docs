@@ -2539,7 +2539,6 @@
                             --upload <span class="se">\</span>
                             --verbose
 </code></pre></div>
-
 <p>The Codacy CLI will then run SpotBugs on the compiled classes of your repository, parse the results and if you set up the <a href="/hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results#push-results">push results</a> options, these results can be sent to Codacy and used in the analysis for the Self-hosted version.</p>
 <h2 id="detecting-sources-and-compiled-classes">Detecting Sources and Compiled Classes<a class="headerlink" href="#detecting-sources-and-compiled-classes" title="Permanent link">&para;</a></h2>
 <p>Codacy tries to find the classes and map results to the files automatically. If you use Maven, Gradle and SBT then the default layouts are detected automatically as well.</p>
@@ -2554,7 +2553,6 @@
       <span class="p p-Indicator">-</span> <span class="nt">classesDirectories</span><span class="p">:</span> <span class="p p-Indicator">[</span> <span class="s">&quot;api/target/classes&quot;</span> <span class="p p-Indicator">]</span>
         <span class="nt">sourceDirectories</span><span class="p">:</span>  <span class="p p-Indicator">[</span> <span class="s">&quot;api/src/main&quot;</span> <span class="p p-Indicator">]</span>
 </code></pre></div>
-
 <h2 id="increasing-the-timeout-to-run-spotbugs">Increasing the timeout to run SpotBugs<a class="headerlink" href="#increasing-the-timeout-to-run-spotbugs" title="Permanent link">&para;</a></h2>
 <p>When running SpotBugs on the compiled classes of larger projects, the <a href="https://github.com/codacy/codacy-analysis-cli/blob/master/README.md#commands-and-configuration">default execution timeout of 15 minutes</a> may not be enough for SpotBugs to complete the analysis.</p>
 <p>To increase the timeout that each tool has to execute, use the option --tool-timeout when invoking the codacy-analysis-cli command.</p>
@@ -2568,7 +2566,6 @@
                             --upload <span class="se">\</span>
                             --verbose
 </code></pre></div>
-
 <p>Please reach out if you need help with anything.</p>
                 
                   

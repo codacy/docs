@@ -2637,11 +2637,9 @@
 <p>For Ubuntu:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;(curl -Ls https://coverage.codacy.com/get.sh)
 </code></pre></div>
-
 <p>For Alpine Linux:</p>
 <div class="highlight"><pre><span></span><code>wget -qO - https://coverage.codacy.com/get.sh <span class="p">|</span> sh
 </code></pre></div>
-
 <blockquote>
 <p>To specify a coverage reporter version, use <code>CODACY_REPORTER_VERSION</code> environment variable.</p>
 </blockquote>
@@ -2662,7 +2660,6 @@
       <span class="nt">jobs</span><span class="p">:</span>
         <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">send-coverage-report</span>
 </code></pre></div>
-
 <h2 id="github-action">GitHub Action<a class="headerlink" href="#github-action" title="Permanent link">&para;</a></h2>
 <p>If your are using GitHub Actions check out the <a href="https://github.com/codacy/codacy-coverage-reporter-action#codacy-coverage-reporter-action">codacy/coverage-coverage-reporter action</a>.</p>
 <h2 id="community-supported-alternatives">Community supported alternatives<a class="headerlink" href="#community-supported-alternatives" title="Permanent link">&para;</a></h2>
@@ -2678,7 +2675,6 @@
 <span class="nt">after_success</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">java -jar codacy-coverage-reporter-assembly.jar report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml</span>
 </code></pre></div>
-
 <p>Make sure you have set <code>CODACY_PROJECT_TOKEN</code> as an environment variable in your travis job!</p>
 <h3 id="gradle-task">Gradle task<a class="headerlink" href="#gradle-task" title="Permanent link">&para;</a></h3>
 <p>A big shout-out to <a href="https://github.com/tompahoward">tompahoward</a>, you can create a gradle task as suggested in https://github.com/mountain-pass/hyperstate/commit/857ca93e1c8484c14a5e2da9f0434d3daf3328ce</p>
@@ -2712,7 +2708,6 @@ task (codacyLocs) &lt;&lt; {
     }
 }
 </code></pre></div>
-
 <hr />
 <p>Gradle task by <a href="https://github.com/MrRamych">Mr_ramych</a>. Made up from solution above.</p>
 <div class="highlight"><pre><span></span><code>configurations { codacy }
@@ -2734,7 +2729,6 @@ task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
     ]
 }
 </code></pre></div>
-
 <h2 id="manually-downloading-the-native-binary">Manually downloading the native binary<a class="headerlink" href="#manually-downloading-the-native-binary" title="Permanent link">&para;</a></h2>
 <h3 id="linux-amd64">Linux amd64<a class="headerlink" href="#linux-amd64" title="Permanent link">&para;</a></h3>
 <p>Download the latest binary and use it to post the coverage to Codacy</p>
@@ -2744,17 +2738,14 @@ curl -Ls -o codacy-coverage-reporter <span class="s2">&quot;https://dl.bintray.c
 chmod +x codacy-coverage-reporter
 ./codacy-coverage-reporter report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml
 </code></pre></div>
-
 <h4 id="github">GitHub<a class="headerlink" href="#github" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>curl -Ls -o codacy-coverage-reporter <span class="s2">&quot;</span><span class="k">$(</span>curl -Ls https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest <span class="p">|</span> jq -r <span class="s1">&#39;.assets | map({name, browser_download_url} | select(.name | contains(&quot;codacy-coverage-reporter-linux&quot;))) | .[0].browser_download_url&#39;</span><span class="k">)</span><span class="s2">&quot;</span>
 chmod +x codacy-coverage-reporter
 ./codacy-coverage-reporter report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml
 </code></pre></div>
-
 <p>If you are experiencing segmentation faults uploading the coverage (due to <a href="https://github.com/oracle/graal/issues/624">oracle/graal#624</a>), do this before running the reporter, as a workaround:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;</span><span class="k">$(</span>dig +short api.codacy.com <span class="p">|</span> tail -n1<span class="k">)</span><span class="s2"> api.codacy.com&quot;</span> &gt;&gt; /etc/hosts
 </code></pre></div>
-
 <h2 id="manually-downloading-the-java-binary">Manually downloading the Java binary<a class="headerlink" href="#manually-downloading-the-java-binary" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Linux x86, MacOS, Windows, ...</li>
@@ -2765,12 +2756,10 @@ chmod +x codacy-coverage-reporter
 curl -Ls -o codacy-coverage-reporter-assembly.jar <span class="s2">&quot;https://dl.bintray.com/codacy/Binaries/</span><span class="si">${</span><span class="nv">LATEST_VERSION</span><span class="si">}</span><span class="s2">/codacy-coverage-reporter-assembly.jar&quot;</span>
 java -jar codacy-coverage-reporter-assembly.jar report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml
 </code></pre></div>
-
 <h4 id="github_1">GitHub<a class="headerlink" href="#github_1" title="Permanent link">&para;</a></h4>
 <div class="highlight"><pre><span></span><code>curl -LS -o codacy-coverage-reporter-assembly.jar <span class="s2">&quot;</span><span class="k">$(</span>curl -LSs https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest <span class="p">|</span> jq -r <span class="s1">&#39;.assets | map({name, browser_download_url} | select(.name | endswith(&quot;.jar&quot;))) | .[0].browser_download_url&#39;</span><span class="k">)</span><span class="s2">&quot;</span>
 java -jar codacy-coverage-reporter-assembly.jar report -l Java -r jacoco.xml
 </code></pre></div>
-
 <h2 id="build-from-source">Build from source<a class="headerlink" href="#build-from-source" title="Permanent link">&para;</a></h2>
 <p>If you are having any issues with your installation, you can also build the coverage reporter from source.</p>
 <ol>

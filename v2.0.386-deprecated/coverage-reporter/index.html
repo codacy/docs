@@ -2584,7 +2584,6 @@
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>%Project_Token%
 </code></pre></div>
-
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p>You should keep your API token well protected, as it grants owner permissions to your projects.</p>
@@ -2598,14 +2597,12 @@
 <p>To upload coverage to a self-hosted installation of Codacy you need to set your installation URL:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>&lt;Codacy_instance_URL&gt;:16006
 </code></pre></div>
-
 <p>Or use the flag: <code>--codacy-api-base-url &lt;Codacy_instance_URL&gt;:16006</code>.</p>
 </div>
 <h2 id="running-codacy-coverage-reporter">Running Codacy Coverage Reporter<a class="headerlink" href="#running-codacy-coverage-reporter" title="Permanent link">&para;</a></h2>
 <p>The easiest way to get starting is by using the self-contained script that downloads and runs the reporter:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span>
 </code></pre></div>
-
 <h3 id="choose-a-specific-version">Choose a specific version<a class="headerlink" href="#choose-a-specific-version" title="Permanent link">&para;</a></h3>
 <p>The script uses by default the latest version.</p>
 <p>If you want to specify a coverage reporter version, use <code>CODACY_REPORTER_VERSION</code> environment variable.</p>

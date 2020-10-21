@@ -2637,13 +2637,11 @@ Minimum 500 GB+ Hard Drive - this will depend on the number of repositories you 
 listen_addresses = &#39;*&#39;
 max_connections = 300
 </code></pre></div>
-
 <p>Next we're going to edit our <code>pg_hba.conf</code> file and configure it to allow remote connections. At the very end of the file, add the following line:</p>
 <div class="highlight"><pre><span></span><code># /etc/postgresql/9.6/main/pg_hba.conf
 
 host all all  0.0.0.0/0 md5
 </code></pre></div>
-
 <p>This is a rule that basically tells PostgreSQL to allow anyone to access the instance as long as they have proper credentials.</p>
 <p>If you want to whitelist your IP <strong>only,</strong> you can use your network/mask instead of <code>0.0.0.0/0</code> (for example: 34.240.13.75/32).</p>
 <div class="admonition note">
@@ -2663,7 +2661,6 @@ host all all  0.0.0.0/0 md5
 <div class="highlight"><pre><span></span><code><span class="k">CREATE</span> <span class="k">USER</span> <span class="n">codacy</span> <span class="k">WITH</span> <span class="n">PASSWORD</span> <span class="s1">&#39;codacy&#39;</span><span class="p">;</span>
 <span class="k">ALTER</span> <span class="k">ROLE</span> <span class="n">codacy</span> <span class="k">WITH</span> <span class="k">CREATEDB</span><span class="p">;</span>
 </code></pre></div>
-
 <p>You can change the username/password to suit your security needs.</p>
 <p>Make sure that you can connect to the Postgres database using the newly created user. For additional settings, follow the steps in the Postgres documentation.</p>
 <h2 id="additional-topics">Additional topics<a class="headerlink" href="#additional-topics" title="Permanent link">&para;</a></h2>

@@ -2567,7 +2567,6 @@
 <p>At the moment, the CLI still requires to retrieve the configuration from Codacy to perform an analysis. In order to access the repository, you will have to obtain a <em>Project Token</em> as explained in the <a href="https://github.com/codacy/codacy-analysis-cli#project-token">CLI documentation</a>. Then, you can invoke the CLI to get a report with all the issues:</p>
 <div class="highlight"><pre><span></span><code>codacy-analysis-cli analyse --directory &lt;SOURCE-CODE-PATH&gt; --project-token &lt;PROJECT-TOKEN&gt; --allow-network --codacy-api-base-url &lt;API-BASE-URL&gt; --verbose --upload
 </code></pre></div>
-
 <p>If you don't specify the tool, the analysis will run as Codacy does in the backend. For specific results, you can pass it with <em>--tool</em>.</p>
 <p>You can see the available tools with: <code>codacy-analysis-cli analyse --help</code></p>
 <h3 id="codacy-self-hosted">Codacy Self-hosted<a class="headerlink" href="#codacy-self-hosted" title="Permanent link">&para;</a></h3>

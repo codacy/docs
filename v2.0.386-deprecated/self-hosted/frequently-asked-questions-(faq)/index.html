@@ -2643,18 +2643,15 @@
 <p>To update the control panel, simply run on your server terminal:</p>
 <div class="highlight"><pre><span></span><code>bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://getenterprise.codacy.com/get<span class="k">)</span><span class="s2">&quot;</span> -s update
 </code></pre></div>
-
 <p>Note that for <strong>legacy systems (Docker 1.9.1) ONLY</strong>, you may need to remove and install the legacy control panel. To do this, stop Codacy, go to the server terminal and type:</p>
 <div class="highlight"><pre><span></span><code>bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://getenterprise.codacy.com/get<span class="k">)</span><span class="s2">&quot;</span> -s install <span class="nv">$HOME</span> <span class="s2">&quot;legacy&quot;</span>
 </code></pre></div>
-
 <h2 id="how-can-i-reinstall-the-codacy-control-panel">How can I reinstall the Codacy Control Panel?<a class="headerlink" href="#how-can-i-reinstall-the-codacy-control-panel" title="Permanent link">&para;</a></h2>
 <p>If you configured your proxy after the installation you will need to reinstall the control panel. To that run the below command on your server terminal:</p>
 <div class="highlight"><pre><span></span><code>bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://getenterprise.codacy.com/get<span class="k">)</span><span class="s2">&quot;</span> -s rm
 
 bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://getenterprise.codacy.com/get<span class="k">)</span><span class="s2">&quot;</span> -s install
 </code></pre></div>
-
 <h2 id="can-i-run-codacy-behind-a-proxy">Can I run Codacy behind a proxy?<a class="headerlink" href="#can-i-run-codacy-behind-a-proxy" title="Permanent link">&para;</a></h2>
 <p>Yes, Codacy can run behind a proxy. The installer will configure the application to be able to run behind a proxy.  After installation and engine downloads, you will be able to remove internet access from the machine running Codacy, as all analysis will be performed offline. </p>
 <h2 id="what-are-the-network-requirements-for-codacy-for-inbound-and-outbound-traffic-ports">What are the network requirements for Codacy for inbound and outbound traffic ports?<a class="headerlink" href="#what-are-the-network-requirements-for-codacy-for-inbound-and-outbound-traffic-ports" title="Permanent link">&para;</a></h2>
@@ -2672,19 +2669,16 @@ while locating play.api.db.DBApiWhile</em></p>
 2 - Update the control panel:</p>
 <div class="highlight"><pre><span></span><code>bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://getenterprise.codacy.com/get<span class="k">)</span><span class="s2">&quot;</span> -s update
 </code></pre></div>
-
 <p>3 - Reload the application. It should show in the logs that it is running init scripts, and trying to create new DBs.</p>
 <p>As a workaround, you can do the exact same thing the scripts are doing:</p>
 <p>1 - Get a psql connection to the server:</p>
 <div class="highlight"><pre><span></span><code>docker run -it --rm postgres:9.4.5 sh -c <span class="s1">&#39;exec psql -h &quot;172.17.0.1&quot; -p &quot;5432&quot; -U postgres&#39;</span>
 </code></pre></div>
-
 <p>2 - We should have several DBs created for Codacy:</p>
 <p><img alt="" src="https://www.filepicker.io/api/file/IGHS4kXQBOVIePJf5Cek" /></p>
 <p>In the PSQL shell, run:</p>
 <div class="highlight"><pre><span></span><code>    <span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">codacy_results</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
 </code></pre></div>
-
 <h2 id="our-machine-was-restarted-and-our-db-ip-changed-what-now">Our machine was restarted, and our DB IP changed. What now?<a class="headerlink" href="#our-machine-was-restarted-and-our-db-ip-changed-what-now" title="Permanent link">&para;</a></h2>
 <p><em>Please be aware that a Postgres installation using Docker is not advised or supported. We strongly advise using a separate Postgres outside the Codacy machine in order to be able to upgrade/downgrade Docker and Codacy without losing data in the DB. The server should be considered stateless at all times.</em></p>
 <p>If you are using Postgres on Docker, the DB IP may change upon server restart. Although running Postgres in Docker is not supported for a production environment, you can have the system find the new database IP automatically by updating the IP of the DB in the config by setting it to:</p>
@@ -2761,20 +2755,17 @@ We currently support Docker versions 1.7.0 to 1.9.1 To remove an unsupported ver
 </ul>
 <div class="highlight"><pre><span></span><code>sudo apt-get remove docker docker-engine docker.io
 </code></pre></div>
-
 <ul>
 <li>Remove docker data folder</li>
 </ul>
 <div class="highlight"><pre><span></span><code>sudo mv /var/lib/docker/ /tmp
 sudo rm -rf /tmp/docker/
 </code></pre></div>
-
 <ul>
 <li>Run the Codacy script to reinstall Docker and Codacy</li>
 </ul>
 <div class="highlight"><pre><span></span><code>bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://get.codacy.com/<span class="k">)</span><span class="s2">&quot;</span>
 </code></pre></div>
-
 <ul>
 <li>
 <p>Go back to the control panel and hit "Configure." <strong>Make sure that your configuration is correct</strong> (you shouldn't have lost any configurations like DB host URL or https certificates), scroll to the bottom, and press "Save"</p>

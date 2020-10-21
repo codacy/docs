@@ -2551,24 +2551,20 @@
 <p>If you forget your password, you just need to run the installation script, and you will get a prompt for a new username and password.</p>
 <div class="highlight"><pre><span></span><code>bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://getenterprise.codacy.com/get<span class="k">)</span><span class="s2">&quot;</span> -s install
 </code></pre></div>
-
 <p>Note that for <strong>legacy systems (Docker 1.9.1) ONLY</strong>, you need to pass the "legacy" version to the script:</p>
 <div class="highlight"><pre><span></span><code>bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://getenterprise.codacy.com/get<span class="k">)</span><span class="s2">&quot;</span> -s install <span class="nv">$HOME</span> <span class="s2">&quot;legacy&quot;</span>
 </code></pre></div>
-
 <h2 id="my-current-installation-doesnt-have-authentication-yet">My current installation doesn't have authentication yet<a class="headerlink" href="#my-current-installation-doesnt-have-authentication-yet" title="Permanent link">&para;</a></h2>
 <p>If your installation doesn't have authentication yet, you need to export the variables to the host environment and run the update script afterwards:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">DOPLICATED_USERNAME</span><span class="o">=</span>myusername
 <span class="nb">export</span> <span class="nv">DOPLICATED_PASSWORD</span><span class="o">=</span>mypassword
 bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://getenterprise.codacy.com/get<span class="k">)</span><span class="s2">&quot;</span> -s update
 </code></pre></div>
-
 <p>Note that for <strong>legacy systems (Docker 1.9.1) ONLY</strong>, you need to pass the "legacy" version to the script:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">DOPLICATED_USERNAME</span><span class="o">=</span>myusername
 <span class="nb">export</span> <span class="nv">DOPLICATED_PASSWORD</span><span class="o">=</span>mypassword
 bash -c <span class="s2">&quot;</span><span class="k">$(</span>curl -fsSL https://getenterprise.codacy.com/get<span class="k">)</span><span class="s2">&quot;</span> -s update <span class="nv">$HOME</span> <span class="s2">&quot;legacy&quot;</span>
 </code></pre></div>
-
 <h2 id="will-i-lose-any-data-if-i-install-the-control-panel-again">Will I lose any data if I install the Control Panel again?<a class="headerlink" href="#will-i-lose-any-data-if-i-install-the-control-panel-again" title="Permanent link">&para;</a></h2>
 <p>No, you won't lose any data if you reinstall the Control Panel, <strong>except for the username and password</strong>.</p>
 <h2 id="can-i-set-up-a-username-and-password-for-monitoring-crow">Can I set up a username and password for Monitoring (Crow)?<a class="headerlink" href="#can-i-set-up-a-username-and-password-for-monitoring-crow" title="Permanent link">&para;</a></h2>
