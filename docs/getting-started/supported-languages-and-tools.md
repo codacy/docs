@@ -28,7 +28,7 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>C</td>
-      <td><a href="http://cppcheck.sourceforge.net/">CPPCheck</a>,
+      <td><a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
@@ -41,7 +41,7 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>C++</td>
-      <td><a href="http://cppcheck.sourceforge.net/">CPPCheck</a>,
+      <td><a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
           <a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -80,7 +80,7 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>Go</td>
-      <td><a href="https://github.com/securego/gosec">GoSec</a>,
+      <td><a href="https://github.com/securego/gosec">Gosec</a>,
           <a href="https://github.com/mgechev/revive">Revive</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a></td>
@@ -177,7 +177,7 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>Sass</td>
-      <td><a href="https://stylelint.io/">stylelint</a>,
+      <td><a href="https://stylelint.io/">Stylelint</a>,
           <a href="https://github.com/brigade/scss-lint">SCSSLint</a></td>
       <td>-</td>
       <td>-</td>
@@ -258,4 +258,4 @@ Codacy also uses [cloc](https://github.com/kentcdodds/cloc) to calculate the lin
 
 Codacy uses a system of plugin tools to extend the scope of analyses on your repositories, allowing support for new tools and languages every day. To create your own tool, check the [tool developer guide](../related-tools/tool-developer-guide.md).
 
-Our GitHub repositories list the version being used for each tool as well as additional plugins that we support for each tool.
+Our GitHub repositories list the version used for each tool and extra plugins that they support for each tool.
