@@ -11,5 +11,5 @@ data "aws_ssm_parameter" "eks_worker_ami" {
 }
 
 data "aws_eks_cluster_auth" "eks_cluster_auth" {
-  name = "${aws_eks_cluster.main.name}"
+  name = aws_eks_cluster.main.name
 }
