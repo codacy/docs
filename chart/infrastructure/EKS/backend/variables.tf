@@ -11,3 +11,9 @@ variable "custom_tags" {
   type        = map(string)
   default     = {}
 }
+
+variable "aws_region" {
+  description = "AWS region where to deploy the infrastructure"
+  type        = string
+  default     = "eu-west-1"
+}

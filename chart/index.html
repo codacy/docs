@@ -17,7 +17,7 @@
     
     
       
-        <title>Installing Codacy on Kubernetes - Codacy docs</title>
+        <title>Installing Codacy Self-hosted - Codacy docs</title>
       
     
     
@@ -62,7 +62,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#installing-codacy-on-kubernetes" class="md-skip">
+        <a href="#installing-codacy-self-hosted" class="md-skip">
           Skip to content
         </a>
       
@@ -1134,14 +1134,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Installing Codacy on Kubernetes
+        Installing Codacy Self-hosted
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
         </span>
       </label>
     
-    <a href="./" title="Installing Codacy on Kubernetes" class="md-nav__link md-nav__link--active">
-      Installing Codacy on Kubernetes
+    <a href="./" title="Installing Codacy Self-hosted" class="md-nav__link md-nav__link--active">
+      Installing Codacy Self-hosted
     </a>
     
       
@@ -2448,6 +2448,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../release-notes/self-hosted/self-hosted-v2.2.1/" title="Self-hosted v2.2.1" class="md-nav__link">
+      Self-hosted v2.2.1
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../release-notes/self-hosted/self-hosted-v2.2.0/" title="Self-hosted v2.2.0" class="md-nav__link">
       Self-hosted v2.2.0
     </a>
@@ -2612,8 +2624,8 @@
                   
                 
                 
-                <h1 id="installing-codacy-on-kubernetes">Installing Codacy on Kubernetes<a class="headerlink" href="#installing-codacy-on-kubernetes" title="Permanent link">&para;</a></h1>
-<p>This documentation guides you on how to install Codacy on Kubernetes or MicroK8s.</p>
+                <h1 id="installing-codacy-self-hosted">Installing Codacy Self-hosted<a class="headerlink" href="#installing-codacy-self-hosted" title="Permanent link">&para;</a></h1>
+<p>This documentation guides you on how to install Codacy Self-hosted on Kubernetes or MicroK8s.</p>
 <p>To install Codacy you must complete these main steps:</p>
 <ol>
 <li>
@@ -2693,7 +2705,7 @@
 helm repo update
 helm upgrade --install codacy codacy-stable/codacy <span class="se">\</span>
              --namespace codacy <span class="se">\</span>
-             --version <span class="m">2</span>.2.0 <span class="se">\</span>
+             --version <span class="m">2</span>.2.1 <span class="se">\</span>
              --values values-production.yaml
              <span class="c1"># --values values-microk8s.yaml</span>
 </code></pre></div>
@@ -2764,7 +2776,7 @@ codacy-worker-manager-656dbf8d6d-n4j7c          <span class="m">1</span>/1     R
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 14, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 8, 2020</span>
     
   </small>
 </div>

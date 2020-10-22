@@ -1,6 +1,12 @@
 # variables.tf - user settings. For terraform settings see config.tf
 
 ### project
+variable "aws_region" {
+  description = "AWS region where to deploy the infrastructure"
+  type        = string
+  default     = "eu-west-1"
+}
+
 variable "project_name" {
   description = "Base project name, used to tag resources"
   type        = string
