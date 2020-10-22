@@ -46,6 +46,8 @@ markdown_extensions:
     - footnotes
     - meta
     - pymdownx.superfences
+    - pymdownx.striphtml:
+          strip_comments: true
     - toc:
           permalink: true
 
