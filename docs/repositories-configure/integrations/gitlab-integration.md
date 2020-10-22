@@ -1,17 +1,21 @@
 # GitLab integration
 
 <!-- TODO Improve intro -->
+The GitLab integration for merge request status and comments.
 
 ## Enabling the GitLab integration
 
-<!-- TODO Improve and complete section -->
-Open your project **Settings**, tab **Integrations** to enable and configure the GitLab integration for merge request status and comments.
+To enable the GitLab integration, open your project **Settings**, tab **Integrations**.
+
+When you add a new repository, the integration is enabled by default. However, if you remove the integration you can add it again by clicking the button **Add integration** and selecting **GitLab** on the list.
 
 ![GitLab integration](images/gitlab-integration.png)
 
 ## Configuring the GitLab integration
 
-When **Pull Request Status** or **Pull Request Comment** are enabled, Codacy will automatically update merge requests on GitLab with extra information when accepting merge requests:
+To configure the GitLab integration, open your project **Settings**, tab **Integrations**.
+
+Depending on the options that you enable, Codacy will automatically update merge requests on GitLab with extra information when accepting merge requests:
 
 -   **Pull Request Status** adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as per the [quality settings](../../repositories/quality-settings.md) configured for your project. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings. The report will only be added if the user that added the integration has at least write permissions for that project.
 

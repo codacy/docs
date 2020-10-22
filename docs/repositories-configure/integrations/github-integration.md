@@ -3,20 +3,23 @@
 <!-- TODO Improve intro -->
 When the integration is enabled, Codacy displays more options when browsing the existing issues on the repository:
 
+The GitHub integration for comments on pull requests, issue creation, and more.
+
 ![GitHub integration for issues](images/github-integration-issues.png)
 
 ## Enabling the GitHub integration
 
-<!-- TODO Improve section -->
-After adding a repository, navigate to your repository **Settings**, tab **Integrations** to enable and configure the GitHub integration for comments on pull requests, issue creation, and more.
+To enable the GitHub integration, open your project **Settings**, tab **Integrations**.
+
+When you add a new repository, the integration is enabled by default. However, if you remove the integration you can add it again by clicking the button **Add integration** and selecting **GitHub** on the list.
 
 ![GitHub integration](images/github-integration.png)
 
-When you add a new repository, the GitHub integration is enabled by default. However, if you delete the integration you can add it again by clicking the button **Add integration** and selecting **GitHub** on the list.
-
 ## Configuring the GitHub integration
 
-When **Pull Request Status**, **Pull Request Comment**, or **Pull Request Summary** are enabled, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests:
+To configure the GitHub integration, open your project **Settings**, tab **Integrations**.
+
+Depending on the options that you enable, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests:
 
 -   **Pull Request Status** adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as per the [quality settings](../../repositories/quality-settings.md) configured for your repository. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings.
 
