@@ -23,6 +23,7 @@ Gosec
 Hadolint
 hotfix
 jq
+jscpd
 JSHint
 namespace
 PMD

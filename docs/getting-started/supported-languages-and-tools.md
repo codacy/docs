@@ -216,7 +216,7 @@ The table below lists all programming languages currently supported by Codacy an
       <td>TypeScript</td>
       <td><a href="http://eslint.org/">ESLint</a>,
           <a href="https://palantir.github.io/tslint/">TSLint</a></td>
-      <td>-</td>
+      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="http://eslint.org/">ESLint</a></td>
     </tr>
     <tr>
