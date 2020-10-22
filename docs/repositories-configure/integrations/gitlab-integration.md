@@ -17,9 +17,12 @@ To configure the GitLab integration, open your project **Settings**, tab **Integ
 
 Depending on the options that you enable, Codacy will automatically update merge requests on GitLab with extra information when accepting merge requests:
 
--   **Pull Request Status** adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as per the [quality settings](../../repositories/quality-settings.md) configured for your project. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings. The report will only be added if the user that added the integration has at least write permissions for that project.
+-   **Pull Request Status** adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as per the [quality settings](../../repositories/quality-settings.md) configured for your project. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings.
 
     ![Merge request status on GitLab](images/gitlab-integration-pr-status.png)
+
+    !!! important
+        Codacy can only add the report if the user that added the integration has at least write permissions for that repository.
 
 -   **Pull Request Comment** adds comments on the lines of the merge request where Codacy finds new issues. Click on the issue links to open Codacy and see more details about the issues and how to fix them.
 
