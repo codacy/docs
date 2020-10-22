@@ -5,11 +5,15 @@ The GitLab integration for merge request status and comments.
 
 ## Enabling the GitLab integration
 
-To enable the GitLab integration, open your project **Settings**, tab **Integrations**.
-
-When you add a new repository, the integration is enabled by default. However, if you remove the integration you can add it again by clicking the button **Add integration** and selecting **GitLab** on the list.
+To enable the GitLab integration, open your project **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
 
 ![GitLab integration](images/gitlab-integration.png)
+
+If you remove the integration, you can enable it again as follows:
+
+1.  Click the button **Add integration** and select **GitLab** on the list.
+1.  Follow the instructions to install the integration.
+1.  Click the button **Enable**.
 
 ## Configuring the GitLab integration
 

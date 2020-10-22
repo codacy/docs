@@ -9,14 +9,20 @@ The Bitbucket integration for comments on pull requests, issue creation, and mor
 
 ## Enabling the Bitbucket integration
 
-To enable the Bitbucket integration, open your project **Settings**, tab **Integrations**.
-
-When you add a new repository, the integration is enabled by default. However, if you remove the integration you can add it again by clicking the button **Add integration** and selecting **Bitbucket** on the list.
+To enable the Bitbucket integration, open your project **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
 
 ![Bitbucket integration](images/bitbucket-integration.png)
 
-<!-- Check this for every Git provider -->
+If you remove the integration, you can enable it again as follows:
+
+1.  Click the button **Add integration** and select **Bitbucket** on the list.
+1.  Follow the instructions to install the integration.
+1.  Click the button **Enable**.
+
+<!-- TODO Check this for every Git provider
+
 After installing the integration for a repository, it has to be enabled by a user with repository access on Bitbucket. For private repositories, this user will by default become the Bitbucket user that Codacy will use to comment and create issues on Bitbucket. For public repositories, comments made by Codacy will appear as coming from codacy-bot.
+-->
 
 ## Configuring the Bitbucket integration
 

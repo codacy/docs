@@ -9,11 +9,15 @@ The GitHub integration for comments on pull requests, issue creation, and more.
 
 ## Enabling the GitHub integration
 
-To enable the GitHub integration, open your project **Settings**, tab **Integrations**.
-
-When you add a new repository, the integration is enabled by default. However, if you remove the integration you can add it again by clicking the button **Add integration** and selecting **GitHub** on the list.
+To enable the GitHub integration, open your project **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
 
 ![GitHub integration](images/github-integration.png)
+
+If you remove the integration, you can enable it again as follows:
+
+1.  Click the button **Add integration** and select **GitHub** on the list.
+1.  Follow the instructions to install the integration.
+1.  Click the button **Enable**.
 
 ## Configuring the GitHub integration
 
