@@ -1,12 +1,13 @@
-Codacy
 Ameba
 Bandit
+Bitbucket
 Brakeman
 Bundler
 Checkstyle
 Clang-Tidy
 cloc
 Cobertura
+Codacy
 CodeNarc
 Coffeelint
 Cppcheck
@@ -18,6 +19,8 @@ Dockerfile
 ESLint
 Flawfinder
 Fluentd
+GitHub
+GitLab
 Gosec
 Hadolint
 hotfix
