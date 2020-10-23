@@ -33,7 +33,7 @@
 <h2>Most popular topics</h2>
 
 <div class="topic-row">
-  <a class="topic-card"  href="getting-started/supported-languages-and-tools/">
+  <a class="topic-card" href="getting-started/supported-languages-and-tools/">
     <div class="tc-icon">
       <img src="/assets/images/icon-checkmark.svg">
     </div>
