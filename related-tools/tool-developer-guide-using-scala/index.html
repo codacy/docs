@@ -17,7 +17,7 @@
     
     
       
-        <title>Tool Developer Guide - Using Scala - Codacy docs</title>
+        <title>Tool developer guide - using Scala - Codacy docs</title>
       
     
     
@@ -193,8 +193,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../getting-started/supported-languages/" title="Supported Languages" class="md-nav__link">
-      Supported Languages
+    <a href="../../getting-started/supported-languages-and-tools/" title="Supported languages and tools" class="md-nav__link">
+      Supported languages and tools
     </a>
   </li>
 
@@ -1011,8 +1011,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../engines/" title="Engines" class="md-nav__link">
-      Engines
+    <a href="../codacy-plugin-tools/" title="Codacy plugin tools" class="md-nav__link">
+      Codacy plugin tools
     </a>
   </li>
 
@@ -1092,14 +1092,14 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        Tool Developer Guide - Using Scala
+        Tool developer guide - using Scala
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
         </span>
       </label>
     
-    <a href="./" title="Tool Developer Guide - Using Scala" class="md-nav__link md-nav__link--active">
-      Tool Developer Guide - Using Scala
+    <a href="./" title="Tool developer guide - using Scala" class="md-nav__link md-nav__link--active">
+      Tool developer guide - using Scala
     </a>
     
       
@@ -1119,8 +1119,8 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#scala-engine-template" class="md-nav__link">
-    Scala Engine Template
+  <a href="#scala-tool-template" class="md-nav__link">
+    Scala tool template
   </a>
   
 </li>
@@ -2638,7 +2638,7 @@
                   
                 
                 
-                <h1 id="tool-developer-guide-using-scala">Tool Developer Guide - Using Scala<a class="headerlink" href="#tool-developer-guide-using-scala" title="Permanent link">&para;</a></h1>
+                <h1 id="tool-developer-guide-using-scala">Tool developer guide - using Scala<a class="headerlink" href="#tool-developer-guide-using-scala" title="Permanent link">&para;</a></h1>
 <h2 id="scala-template-to-integrate-an-external-tool-on-codacy">Scala template to integrate an external tool on Codacy<a class="headerlink" href="#scala-template-to-integrate-an-external-tool-on-codacy" title="Permanent link">&para;</a></h2>
 <p>We use external tools at Codacy, in this tutorial we provide our own template written in Scala to help you integrate the tool of your choice.</p>
 <p>You can also fork the code of one of our tools, and modify it; here are some examples:</p>
@@ -2647,8 +2647,8 @@
 <li><a href="https://github.com/codacy/codacy-jshint">codacy-jshint</a></li>
 <li><a href="https://github.com/codacy/codacy-pmd">codacy-pmd</a>.</li>
 </ul>
-<p>This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the <a href="../tool-developer-guide/">Tool Developer Guide</a>.</p>
-<h2 id="scala-engine-template">Scala Engine Template<a class="headerlink" href="#scala-engine-template" title="Permanent link">&para;</a></h2>
+<p>This tutorial covers only the template code to write the tool; if you didn't check the full tutorial, please refer to the <a href="../tool-developer-guide/">tool developer guide</a>.</p>
+<h2 id="scala-tool-template">Scala tool template<a class="headerlink" href="#scala-tool-template" title="Permanent link">&para;</a></h2>
 <p>We use Scala to integrate our tools at Codacy. In this template, you only need to do a couple of things to integrate your tool:</p>
 <ul>
 <li>Configure the <strong>build.sbt</strong> so it generates the docker to run your tool</li>
@@ -2660,7 +2660,7 @@
 <p>One thing you probably want to change is the <em>installAll</em> value, which contains the commands to install the tools and all necessary dependencies.</p>
 <h2 id="implementing-tool-trait">Implementing Tool trait<a class="headerlink" href="#implementing-tool-trait" title="Permanent link">&para;</a></h2>
 <p>When extending the <strong>Tool</strong> trait, you have to implement the <strong>apply</strong> method.</p>
-<p>When a client runs your tool, the <strong>apply</strong> method of our template is invoked. Here you have everything you need to invoke the tool. After you have your results from the tool, put them in our <strong>Result</strong> format, and then just return them.</p>
+<p>When a client runs your tool, the <strong>apply</strong> method of our template is invoked. Here you have everything you need to invoke the tool. After you have your results from the tool, put them in our <strong>Result</strong> format, and then return them.</p>
 <div class="highlight"><pre><span></span><code><span class="k">package</span> <span class="nn">codacy.mytool</span>
 
 <span class="k">import</span> <span class="nn">scala.sys.process._</span>
@@ -2713,7 +2713,7 @@
 
 <span class="c1">//...</span>
 </code></pre></div>
-<p>As a final note, you may write the code to run the tool in any way you want. Simply return the results from the external tool at the end of the <strong>apply</strong> method, and our code will take care of the rest.</p>
+<p>As a final note, you may write the code to run the tool in any way you want. As long as you return the results from the external tool at the end of the <strong>apply</strong> method, our code will take care of the rest.</p>
 <p>If you have any questions about the template please contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
                 
                   
@@ -2722,7 +2722,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 2, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 23, 2020</span>
     
   </small>
 </div>
