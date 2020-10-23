@@ -264,4 +264,5 @@ Codacy also uses [cloc](https://github.com/kentcdodds/cloc) to calculate the sou
 
 ## See also
 
+-   [Getting started with Codacy](getting-started-with-codacy.md)
 -   [Codacy plugin tools](../related-tools/codacy-plugin-tools.md)
