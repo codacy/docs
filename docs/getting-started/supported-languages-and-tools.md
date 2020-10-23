@@ -28,7 +28,7 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>C</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a>,
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>*</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -42,7 +42,7 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>C++</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a>,
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>*</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -81,7 +81,7 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>Go</td>
-      <td><a href="https://github.com/securego/gosec">Gosec</a>,
+      <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"><sup>*</sup></a>,
           <a href="https://github.com/mgechev/revive">Revive</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a></td>
@@ -96,7 +96,7 @@ The table below lists all programming languages currently supported by Codacy an
       <td>Java</td>
       <td><a href="http://checkstyle.sourceforge.net/">Checkstyle</a>,
           <a href="https://pmd.github.io/">PMD</a>,
-          <a href="https://spotbugs.github.io/">SpotBugs</a></td>
+          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>*</sup></a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
     </tr>
@@ -193,7 +193,7 @@ The table below lists all programming languages currently supported by Codacy an
       </td>
       <td><a href="https://scalameta.org/">Scalameta</a>,
           <a href="http://www.scalastyle.org/">Scalastyle</a>,
-          <a href="https://spotbugs.github.io/">SpotBugs</a></td>
+          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>*</sup></a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
           <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a></td>
@@ -257,10 +257,10 @@ The table below lists all programming languages currently supported by Codacy an
   </tbody>
 </table>
 
-Codacy also uses [cloc](https://github.com/kentcdodds/cloc) to calculate the lines of source code for all supported languages.
+<sup>*</sup>: Supported as [client-side tools](../related-tools/client-side-tools.md).
 
-## Codacy plugin tools
+Codacy also uses [cloc](https://github.com/kentcdodds/cloc) to calculate the source lines of code for all supported languages.
 
-Codacy uses a system of plugin tools to extend the scope of analyses on your repositories, allowing support for new tools and languages every day. To create your own tool, check the [tool developer guide](../related-tools/tool-developer-guide.md).
+## See also
 
-Our GitHub repositories list the version used for each tool and extra plugins that they support for each tool.
+-   [Codacy plugin tools](../related-tools/codacy-plugin-tools.md)

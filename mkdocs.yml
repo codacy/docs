@@ -517,6 +517,7 @@ nav:
           - account/default-patterns.md
           - account/notifications.md
     - "Related tools":
+          - related-tools/codacy-plugin-tools.md
           - related-tools/client-side-tools.md
           - related-tools/run-local-analysis.md
           - related-tools/run-spotbugs.md
