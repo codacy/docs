@@ -39,7 +39,6 @@ Depending on the options that you enable, Codacy will automatically update pull 
 
     ![Pull request annotation on GitHub](images/github-integration-pr-annotation.png)
 
-
 -   **Summary** shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable **Status checks** first.
 
     ![Pull request summary on GitHub](images/github-integration-pr-summary.png)
