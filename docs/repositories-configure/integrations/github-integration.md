@@ -4,6 +4,11 @@ The GitHub integration incorporates Codacy on your existing Git provider workflo
 
 When the integration is enabled, you can create pull request comments and GitHub issues directly from Codacy when browsing the existing issues on the repository:
 
+<!-- TODO Update screenshot with final version, see:
+
+-   https://www.figma.com/file/xGRU1gH9koQq9BhImKmQ6D/GitHub-Checks?node-id=1%3A170
+-   https://bitbucket.org/qamine/codacy-website/pull-requests/4063/feature-add-github-checks-options-to-ui-cy
+-->
 ![GitHub integration for issues](images/github-integration-issues.png)
 
 Depending on the configuration of the GitHub integration, Codacy can also report and notify you about issues directly on your pull requests.
@@ -26,18 +31,22 @@ To configure the GitHub integration, open your project **Settings**, tab **Integ
 
 Depending on the options that you enable, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests:
 
--   **Pull Request Status** adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories/quality-settings.md) of your repository. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings.
+-   **Status checks** adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories/quality-settings.md) of your repository. To see the coverage status check, ensure that you enable the option **Coverage** in the quality settings.
 
-    ![Pull request status on GitHub](images/github-integration-pr-status.png)
+    !!! tip
+        After enabling this option, you can [set Codacy as a required check](../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md#github) before merging your pull requests.
 
-    !!! important
-        Codacy can only add the report if the user that added the integration has at least write permissions for that repository.
+    ![Pull request status check on GitHub](images/github-integration-pr-status.png)
 
--   **Pull Request Comment** adds comments on the lines of the pull request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them.
+-   **Annotations** adds annotations on the lines of the pull request where Codacy finds new issues.
 
-    ![Pull request comment on GitHub](images/github-integration-pr-comment.png)
+    ![Pull request annotation on GitHub](images/github-integration-pr-annotation.png)
 
 
--   **Pull Request Summary** shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication.
+-   **Summary** shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication.
 
     ![Pull request summary on GitHub](images/github-integration-pr-summary.png)
+
+You can find all the information reported by Codacy on the tab **Checks** of your pull requests:
+
+![Codacy Check](images/github-integration-tab-checks.png)

@@ -22,7 +22,9 @@ If you remove the integration, you can enable it again as follows:
 
 <!-- TODO Check this for every Git provider
 
-After installing the integration for a repository, it has to be enabled by a user with repository access on Bitbucket. For private repositories, this user will by default become the Bitbucket user that Codacy will use to comment and create issues on Bitbucket. For public repositories, comments made by Codacy will appear as coming from codacy-bot.
+After installing the integration for a repository, it has to be enabled by a user with repository access on Bitbucket.
+
+For private repositories, this user will by default become the Bitbucket user that Codacy will use to comment and create issues on Bitbucket. For public repositories, comments made by Codacy will appear as coming from codacy-bot.
 -->
 
 ## Configuring the Bitbucket integration
@@ -33,10 +35,9 @@ Depending on the options that you enable, Codacy will automatically update pull 
 
 -   **Pull Request Status** adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories/quality-settings.md) of your repository. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings. 
 
-    ![Pull request status on Bitbucket](images/bitbucket-integration-pr-status.png)
+    After enabling this option, you can [set Codacy as a required check](../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md#bitbucket) before merging your pull requests.
 
-    !!! important
-        Codacy can only add the report if the user that added the integration has at least write permissions for that repository.
+    ![Pull request status on Bitbucket](images/bitbucket-integration-pr-status.png)
 
 -   **Pull Request Comment** adds comments on the lines of the pull request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them.
 
