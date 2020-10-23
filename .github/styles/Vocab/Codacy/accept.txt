@@ -25,6 +25,7 @@ hotfix
 jq
 jscpd
 JSHint
+JSP
 namespace
 PMD
 Prospector

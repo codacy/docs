@@ -29,7 +29,8 @@ The table below lists all programming languages currently supported by Codacy an
     <tr>
       <td>C</td>
       <td><a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
-          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
+          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
+          <a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
     </tr>
@@ -115,6 +116,12 @@ The table below lists all programming languages currently supported by Codacy an
       <td>-</td>
     </tr>
     <tr>
+      <td>JSP</td>
+      <td><a href="https://pmd.github.io/">PMD</a></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>Kotlin</td>
       <td><a href="https://github.com/arturbosch/detekt">Detekt</a></td>
       <td>-</td>
@@ -140,20 +147,20 @@ The table below lists all programming languages currently supported by Codacy an
       <td><a href="https://github.com/pdepend/pdepend">PHP Depend</a></td>
     </tr>
     <tr>
-      <td>PLSQL</td>
+      <td>PL/SQL</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>PostgreSQL</td>
+      <td><a href="https://github.com/purcell/sqlint">SQLint</a></td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>PowerShell</td>
       <td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>PSQL</td>
-      <td><a href="https://github.com/purcell/sqlint">SQLint</a></td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -177,16 +184,14 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>Sass</td>
-      <td><a href="https://stylelint.io/">Stylelint</a>,
-          <a href="https://github.com/brigade/scss-lint">SCSSLint</a></td>
+      <td><a href="https://stylelint.io/">Stylelint</a>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>Scala
       </td>
-      <td><a href="https://pmd.github.io/">PMD</a>,
-          <a href="https://spotbugs.github.io/">SpotBugs</a>,
+      <td><a href="https://spotbugs.github.io/">SpotBugs</a>,
           <a href="https://scalameta.org/">Scalameta</a>,
           <a href="http://www.scalastyle.org/">Scalastyle</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
