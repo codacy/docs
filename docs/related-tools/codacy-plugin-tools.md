@@ -106,7 +106,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 </tr>
 <tr>
 <td><a href="https://github.com/landscapeio/prospector">Prospector</a></td>
-<td><a href="https://github.com/landscapeio/prospector">https://github.com/landscapeio/prospector</a></td>
+<td><a href="https://github.com/codacy/codacy-prospector">https://github.com/codacy/codacy-prospector</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
@@ -127,10 +127,6 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <tr>
 <td><a href="http://www.scalastyle.org/" class="in-cell-link">Scalastyle</a></td>
 <td><a href="https://github.com/codacy/codacy-scalastyle" class="in-cell-link">https://github.com/codacy/codacy-scalastyle</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/brigade/scss-lint">SCSSLint</a></td>
-<td><a href="https://github.com/brigade/scss-lint">https://github.com/brigade/scss-lint</a></td>
 </tr>
 <tr>
 <td><a href="https://www.shellcheck.net/" class="in-cell-link">ShellCheck</a></td>
