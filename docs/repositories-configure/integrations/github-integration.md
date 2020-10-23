@@ -4,11 +4,6 @@ The GitHub integration incorporates Codacy on your existing Git provider workflo
 
 When the integration is enabled, you can create pull request comments and GitHub issues directly from Codacy when browsing the existing issues on the repository:
 
-<!-- TODO Update screenshot with final version, see:
-
--   https://www.figma.com/file/xGRU1gH9koQq9BhImKmQ6D/GitHub-Checks?node-id=1%3A170
--   https://bitbucket.org/qamine/codacy-website/pull-requests/4063/feature-add-github-checks-options-to-ui-cy
--->
 ![GitHub integration for issues](images/github-integration-issues.png)
 
 Depending on the configuration of the GitHub integration, Codacy can also report and notify you about issues directly on your pull requests.
@@ -22,8 +17,10 @@ To enable the GitHub integration, open your project **Settings**, tab **Integrat
 If you remove the integration, you can enable it again as follows:
 
 1.  Click the button **Add integration** and select **GitHub** on the list.
-1.  Follow the instructions to install the integration.
-1.  Click the button **Enable**.
+1.  Click the button **Enable** and follow the instructions.
+
+    !!! important
+        The user that enables the integration must have administrator access to the repository.
 
 ## Configuring the GitHub integration
 

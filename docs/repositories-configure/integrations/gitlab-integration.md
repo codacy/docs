@@ -13,8 +13,10 @@ To enable the GitLab integration, open your project **Settings**, tab **Integrat
 If you remove the integration, you can enable it again as follows:
 
 1.  Click the button **Add integration** and select **GitLab** on the list.
-1.  Follow the instructions to install the integration.
-1.  Click the button **Enable**.
+1.  Click the button **Enable** and follow the instructions.
+
+    !!! important
+        The user that enables the integration must have administrator access to the repository.
 
 ## Configuring the GitLab integration
 
