@@ -37,7 +37,7 @@ Depending on the options that you enable, Codacy will automatically update pull 
     !!! important
         Codacy can only add the report if the user that added the integration has at least write permissions for that repository.
 
--   **Pull Request Comment** adds comments on the lines of the pull request where Codacy finds new issues. Click on the issue links to open Codacy and see more details about the issues and how to fix them.
+-   **Pull Request Comment** adds comments on the lines of the pull request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them.
 
     ![Pull request comment on Bitbucket](images/bitbucket-integration-pr-comment.png)
 

@@ -28,6 +28,6 @@ Depending on the options that you enable, Codacy will automatically update merge
     !!! important
         Codacy can only add the report if the user that added the integration has at least write permissions for that repository.
 
--   **Pull Request Comment** adds comments on the lines of the merge request where Codacy finds new issues. Click on the issue links to open Codacy and see more details about the issues and how to fix them.
+-   **Pull Request Comment** adds comments on the lines of the merge request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them.
 
     ![Merge request comment on GitLab](images/gitlab-integration-pr-comment.png)
