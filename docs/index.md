@@ -57,7 +57,7 @@
     </div>
     <div class="tc-content">
       <div>Adding and managing Authors</div>
-      <div>Allow Codacy to analyze commits from contributors who are not part of your Codacy organization.</div>
+      <div>Allow Codacy to analyze commits from contributors who aren't part of your Codacy organization.</div>
     </div>
   </a>
 </div>
