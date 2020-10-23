@@ -11,9 +11,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.GH_PERSONAL_ACC_TOK }}
-          submodules: true
-          fetch-depth: 0
+          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
 
       - name: Comment on pull request
         uses: brown-ccv/alex-recommends@v1.1.2

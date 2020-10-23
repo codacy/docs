@@ -1,6 +1,6 @@
 name: Vale
 
-on: push
+on: pull_request
 
 jobs:
   prose:
@@ -10,9 +10,7 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.GH_PERSONAL_ACC_TOK }}
-          submodules: true
-          fetch-depth: 0
+          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
 
       - name: File changes
         id: file_changes
