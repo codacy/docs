@@ -28,9 +28,9 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>C</td>
-      <td><a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
-          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
-          <a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a>,
+          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
+          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
     </tr>
@@ -42,9 +42,9 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>C++</td>
-      <td><a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
-          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
-          <a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a>,
+          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
+          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
     </tr>
@@ -62,8 +62,8 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>CSS</td>
-      <td><a href="https://stylelint.io/">Stylelint</a>,
-         <a href="http://csslint.net/">CSSLint</a></td>
+      <td><a href="http://csslint.net/">CSSLint</a>,
+          <a href="https://stylelint.io/">Stylelint</a></td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -94,17 +94,17 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>Java</td>
-      <td><a href="https://pmd.github.io/">PMD</a>,
-          <a href="http://checkstyle.sourceforge.net/">Checkstyle</a>,
+      <td><a href="http://checkstyle.sourceforge.net/">Checkstyle</a>,
+          <a href="https://pmd.github.io/">PMD</a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
     </tr>
     <tr>
       <td>JavaScript</td>
-      <td><a href="https://pmd.github.io/">PMD</a>,
-          <a href="http://eslint.org/">ESLint</a>,
-          <a href="http://jshint.com/">JSHint</a></td>
+      <td><a href="http://eslint.org/">ESLint</a>,
+          <a href="http://jshint.com/">JSHint</a>,
+          <a href="https://pmd.github.io/">PMD</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="http://eslint.org/">ESLint</a></td>
     </tr>
@@ -191,9 +191,9 @@ The table below lists all programming languages currently supported by Codacy an
     <tr>
       <td>Scala
       </td>
-      <td><a href="https://spotbugs.github.io/">SpotBugs</a>,
-          <a href="https://scalameta.org/">Scalameta</a>,
-          <a href="http://www.scalastyle.org/">Scalastyle</a></td>
+      <td><a href="https://scalameta.org/">Scalameta</a>,
+          <a href="http://www.scalastyle.org/">Scalastyle</a>,
+          <a href="https://spotbugs.github.io/">SpotBugs</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
           <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a></td>
