@@ -258,6 +258,7 @@ The table below lists all programming languages currently supported by Codacy an
 </table>
 
 <sup>*</sup>: Supported as [client-side tools](../related-tools/client-side-tools.md).
+{: id="client-side"}
 
 Codacy also uses [cloc](https://github.com/kentcdodds/cloc) to calculate the source lines of code for all supported languages.
 
