@@ -1,11 +1,12 @@
 # Bitbucket integration
 
-<!-- TODO Improve intro -->
-When the integration is enabled, Codacy displays more options when browsing the existing issues on the repository:
+The Bitbucket integration incorporates Codacy on your existing Git provider workflows.
 
-The Bitbucket integration for comments on pull requests, issue creation, and more.
+When the integration is enabled, you can create pull request comments and Jira issues directly from Codacy when browsing the existing issues on the repository:
 
 ![Bitbucket integration for issues](images/bitbucket-integration-issues.png)
+
+Depending on the configuration of the Bitbucket integration, Codacy can also report and notify you about issues directly on your pull requests.
 
 ## Enabling the Bitbucket integration
 

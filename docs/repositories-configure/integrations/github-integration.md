@@ -1,11 +1,12 @@
 # GitHub integration
 
-<!-- TODO Improve intro -->
-When the integration is enabled, Codacy displays more options when browsing the existing issues on the repository:
+The GitHub integration incorporates Codacy on your existing Git provider workflows.
 
-The GitHub integration for comments on pull requests, issue creation, and more.
+When the integration is enabled, you can create pull request comments and GitHub issues directly from Codacy when browsing the existing issues on the repository:
 
 ![GitHub integration for issues](images/github-integration-issues.png)
+
+Depending on the configuration of the GitHub integration, Codacy can also report and notify you about issues directly on your pull requests.
 
 ## Enabling the GitHub integration
 

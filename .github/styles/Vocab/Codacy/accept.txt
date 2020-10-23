@@ -24,6 +24,7 @@ GitLab
 Gosec
 Hadolint
 hotfix
+Jira
 jq
 JSHint
 namespace
