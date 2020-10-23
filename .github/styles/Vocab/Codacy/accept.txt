@@ -18,11 +18,14 @@ Dockerfile
 ESLint
 Flawfinder
 Fluentd
+Gocyclo
 Gosec
 Hadolint
 hotfix
 jq
+jscpd
 JSHint
+JSP
 namespace
 PMD
 Prospector
@@ -45,4 +48,5 @@ SwiftLint
 Tailor
 TSLint
 TSQLLint
+Visualforce
 Xcode

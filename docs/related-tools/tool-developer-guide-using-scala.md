@@ -1,4 +1,4 @@
-# Tool Developer Guide - Using Scala
+# Tool developer guide - using Scala
 
 ## Scala template to integrate an external tool on Codacy
 
@@ -10,9 +10,9 @@ You can also fork the code of one of our tools, and modify it; here are some exa
 -   [codacy-jshint](https://github.com/codacy/codacy-jshint)
 -   [codacy-pmd](https://github.com/codacy/codacy-pmd).
 
-This tutorial covers only the template code to write the engine; if you didn't check the full tutorial, please refer to the [Tool Developer Guide](tool-developer-guide.md).
+This tutorial covers only the template code to write the tool; if you didn't check the full tutorial, please refer to the [tool developer guide](tool-developer-guide.md).
 
-## Scala Engine Template
+## Scala tool template
 
 We use Scala to integrate our tools at Codacy. In this template, you only need to do a couple of things to integrate your tool:
 
@@ -31,7 +31,7 @@ One thing you probably want to change is the _installAll_ value, which contains 
 
 When extending the **Tool** trait, you have to implement the **apply** method.
 
-When a client runs your tool, the **apply** method of our template is invoked. Here you have everything you need to invoke the tool. After you have your results from the tool, put them in our **Result** format, and then just return them.
+When a client runs your tool, the **apply** method of our template is invoked. Here you have everything you need to invoke the tool. After you have your results from the tool, put them in our **Result** format, and then return them.
 
 ```scala
 package codacy.mytool
@@ -98,6 +98,6 @@ val cmdResponse = cmd.!
 //...
 ```
 
-As a final note, you may write the code to run the tool in any way you want. Simply return the results from the external tool at the end of the **apply** method, and our code will take care of the rest.
+As a final note, you may write the code to run the tool in any way you want. As long as you return the results from the external tool at the end of the **apply** method, our code will take care of the rest.
 
 If you have any questions about the template please contact us at <mailto:support@codacy.com>.
