@@ -35,12 +35,12 @@ Depending on the options that you enable, Codacy will automatically update pull 
 
     ![Pull request status check on GitHub](images/github-integration-pr-status.png)
 
--   **Annotations** adds annotations on the lines of the pull request where Codacy finds new issues.
+-   **Annotations** adds annotations on the lines of the pull request where Codacy finds new issues. To enable this option, you must enable **Status checks** first.
 
     ![Pull request annotation on GitHub](images/github-integration-pr-annotation.png)
 
 
--   **Summary** shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication.
+-   **Summary** shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable **Status checks** first.
 
     ![Pull request summary on GitHub](images/github-integration-pr-summary.png)
 
