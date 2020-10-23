@@ -8,7 +8,7 @@ When the integration is enabled, you can create pull request comments and GitHub
 
 Depending on the configuration of the GitHub integration, Codacy can also report and notify you about issues directly on your pull requests.
 
-## Enabling the GitHub integration
+## Enabling the GitHub integration {: id="enabling"}
 
 To enable the GitHub integration, open your project **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
 

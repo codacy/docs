@@ -8,7 +8,7 @@ When the integration is enabled, you can create pull request comments and Jira i
 
 Depending on the configuration of the Bitbucket integration, Codacy can also report and notify you about issues directly on your pull requests.
 
-## Enabling the Bitbucket integration
+## Enabling the Bitbucket integration {: id="enabling"}
 
 To enable the Bitbucket integration, open your project **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
 

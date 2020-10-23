@@ -240,8 +240,9 @@ plugins:
               "hc/en-us/articles/360009209594-Creating-and-renaming-an-organization.md": "organizations/manual-organizations/creating-and-renaming-an-organization.md"
               "hc/en-us/articles/360009340553.md": "organizations/manual-organizations/creating-and-managing-teams.md"
               "hc/en-us/articles/360009340553-Creating-and-managing-teams.md": "organizations/manual-organizations/creating-and-managing-teams.md"
-              "hc/en-us/articles/360009411934.md": "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md"
-              "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-my-PRs-anymore-.md": "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md"
+              "hc/en-us/articles/360009411934.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
+              "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-my-PRs-anymore-.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
+              "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-pull-requests-anymore-.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
               "hc/en-us/articles/360010263540.md": "getting-started/getting-started-with-codacy.md"
               "hc/en-us/articles/360010263540-Getting-started-with-Codacy.md": "getting-started/getting-started-with-codacy.md"
               "hc/en-us/articles/360010263720.md": "organizations/what-are-synced-organizations.md"
@@ -458,6 +459,7 @@ plugins:
               "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md": "faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md"
               "repositories/security-dashboard.md": "repositories/security-monitor.md"
               "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
+              "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -555,7 +557,7 @@ nav:
                 - faq/code-analysis/skipping-an-analysis.md
           - Troubleshooting:
                 - faq/troubleshooting/why-is-my-file-missing.md
-                - faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md
+                - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
                 - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
                 - faq/troubleshooting/not-a-member-of-the-organization.md
                 - faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md
