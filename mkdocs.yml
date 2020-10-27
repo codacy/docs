@@ -133,8 +133,8 @@ plugins:
               "hc/en-us/articles/207994675-Project-API.md": "repositories-configure/integrations/project-api.md"
               "hc/en-us/articles/207994725.md": "related-tools/tool-developer-guide.md"
               "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "related-tools/tool-developer-guide.md"
-              "hc/en-us/articles/207994735.md": "getting-started/supported-languages.md"
-              "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages.md"
+              "hc/en-us/articles/207994735.md": "getting-started/supported-languages-and-tools.md"
+              "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/207994765.md": "repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
               "hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-.md": "repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
               "hc/en-us/articles/207994825.md": "faq/repositories/how-do-i-manually-force-a-repository-update.md"
@@ -179,8 +179,8 @@ plugins:
               "hc/en-us/articles/213217965-Which-version-control-systems-do-you-support-.md": "faq/general/which-version-control-systems-do-you-support.md"
               "hc/en-us/articles/213280129.md": "repositories-configure/integrations/jira-integration.md"
               "hc/en-us/articles/213280129-JIRA.md": "repositories-configure/integrations/jira-integration.md"
-              "hc/en-us/articles/213632009.md": "related-tools/engines.md"
-              "hc/en-us/articles/213632009-Engines.md": "related-tools/engines.md"
+              "hc/en-us/articles/213632009.md": "getting-started/supported-languages-and-tools.md"
+              "hc/en-us/articles/213632009-Engines.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/213840489.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/213840489-How-do-I-reanalyze-my-repository-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/213840489-How-do-I-reanalyze-my-project-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
@@ -430,6 +430,7 @@ plugins:
               "faq/repositories/hotspots-overview.md": "index.md"
               "chart/configuration/tls-ingress.md": "index.md"
               "getting-started/setting-up-your-personal-repositories.md": "getting-started/getting-started-with-codacy.md"
+              "getting-started/supported-languages.md": "getting-started/supported-languages-and-tools.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
@@ -458,6 +459,7 @@ plugins:
               "repositories/share-your-repository-with-a-non-codacy-user.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
               "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md": "faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md"
               "repositories/security-dashboard.md": "repositories/security-monitor.md"
+              "related-tools/engines.md": "getting-started/supported-languages-and-tools.md"
               "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
               "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
 
@@ -466,7 +468,7 @@ nav:
     - "Getting started":
           - getting-started/getting-started-with-codacy.md
           - getting-started/i-added-a-repository-now-what.md
-          - getting-started/supported-languages.md
+          - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
     - "Your repositories":
           - repositories/repository-dashboard.md
@@ -518,7 +520,7 @@ nav:
           - account/default-patterns.md
           - account/notifications.md
     - "Related tools":
-          - related-tools/engines.md
+          - related-tools/codacy-plugin-tools.md
           - related-tools/client-side-tools.md
           - related-tools/run-local-analysis.md
           - related-tools/run-spotbugs.md

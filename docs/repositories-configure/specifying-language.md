@@ -14,4 +14,4 @@ engines:
 
 Supported languages: C, C++
 
-Supported engines: [codacy-cppcheck](https://github.com/codacy/codacy-cppcheck)
+Supported tools: [codacy-cppcheck](https://github.com/codacy/codacy-cppcheck)

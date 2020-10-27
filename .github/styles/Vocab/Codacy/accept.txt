@@ -21,12 +21,15 @@ Flawfinder
 Fluentd
 GitHub
 GitLab
+Gocyclo
 Gosec
 Hadolint
 hotfix
 Jira
 jq
+jscpd
 JSHint
+JSP
 namespace
 PMD
 Prospector
@@ -49,4 +52,5 @@ SwiftLint
 Tailor
 TSLint
 TSQLLint
+Visualforce
 Xcode
