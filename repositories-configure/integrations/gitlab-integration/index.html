@@ -458,9 +458,43 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        GitLab integration
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
     <a href="./" title="GitLab integration" class="md-nav__link md-nav__link--active">
       GitLab integration
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#enabling" class="md-nav__link">
+    Enabling the GitLab integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#configuring-the-gitlab-integration" class="md-nav__link">
+    Configuring the GitLab integration
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1755,8 +1789,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs/" title="How do I set Codacy as a required check to merge my pull requests?" class="md-nav__link">
-      How do I set Codacy as a required check to merge my pull requests?
+    <a href="../../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/" title="How do I set Codacy as a required check to merge pull requests?" class="md-nav__link">
+      How do I set Codacy as a required check to merge pull requests?
     </a>
   </li>
 
@@ -1983,8 +2017,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore/" title="Why isn't Codacy commenting on pull requests anymore?" class="md-nav__link">
-      Why isn't Codacy commenting on pull requests anymore?
+    <a href="../../../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/" title="Why did Codacy stop commenting on pull requests?" class="md-nav__link">
+      Why did Codacy stop commenting on pull requests?
     </a>
   </li>
 
@@ -2586,16 +2620,32 @@
                 
                 
                 <h1 id="gitlab-integration">GitLab integration<a class="headerlink" href="#gitlab-integration" title="Permanent link">&para;</a></h1>
-<p>After adding a project, navigate to your project's <strong>Settings</strong>, tab <strong>Integrations</strong> to enable the GitLab integration for merge request status and comments.</p>
+<p>The GitLab integration incorporates Codacy on your existing Git provider workflows.</p>
+<p>Depending on the configuration of the GitLab integration, Codacy can report and notify you about issues directly on your merge requests.</p>
+<h2 id="enabling">Enabling the GitLab integration<a class="headerlink" href="#enabling" title="Permanent link">&para;</a></h2>
+<p>To enable the GitLab integration, open your project <strong>Settings</strong>, tab <strong>Integrations</strong>. When you add a new repository, the integration is already enabled by default.</p>
 <p><img alt="GitLab integration" src="../images/gitlab-integration.png" /></p>
-<p>When the option <strong>Pull Request Status</strong> or <strong>Pull Request Comment</strong> is enabled, Codacy will automatically update merge requests on GitLab with additional information when accepting merge requests:</p>
+<p>If you remove the integration, you can enable it again as follows:</p>
+<ol>
+<li>Click the button <strong>Add integration</strong> and select <strong>GitLab</strong> on the list.</li>
+<li>
+<p>Click the button <strong>Enable</strong> and follow the instructions.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The user that enables the integration must have administrator access to the repository.</p>
+</div>
+</li>
+</ol>
+<h2 id="configuring-the-gitlab-integration">Configuring the GitLab integration<a class="headerlink" href="#configuring-the-gitlab-integration" title="Permanent link">&para;</a></h2>
+<p>To configure the GitLab integration, open your project <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
+<p>Depending on the options that you enable, Codacy will automatically update merge requests on GitLab with extra information when accepting merge requests:</p>
 <ul>
 <li>
-<p><strong>Pull Request Status</strong> adds a report to your merge request showing whether your merge request and coverage are up to standards or not as per the <a href="../../../repositories/quality-settings/">quality settings</a> configured for your project. To see the coverage status, ensure that the <strong>Coverage</strong> option is enabled in the quality settings. The report will only be added if the user that added the integration has at least write permissions for that project.</p>
+<p><strong>Pull Request Status</strong> adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the <a href="../../../repositories/quality-settings/">quality settings</a> of your project. To see the coverage status, ensure that you enable the option <strong>Coverage</strong> in the quality settings.</p>
 <p><img alt="Merge request status on GitLab" src="../images/gitlab-integration-pr-status.png" /></p>
 </li>
 <li>
-<p><strong>Pull Request Comment</strong> adds a comment on the merge request line when a new issue is found and shows the pattern raising the issue. Click on the issue link to open Codacy and see more details about the issue and how to fix it.</p>
+<p><strong>Pull Request Comment</strong> adds comments on the lines of the merge request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them.</p>
 <p><img alt="Merge request comment on GitLab" src="../images/gitlab-integration-pr-comment.png" /></p>
 </li>
 </ul>
@@ -2606,7 +2656,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 24, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 23, 2020</span>
     
   </small>
 </div>

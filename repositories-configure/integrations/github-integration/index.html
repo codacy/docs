@@ -446,9 +446,43 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        GitHub integration
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
     <a href="./" title="GitHub integration" class="md-nav__link md-nav__link--active">
       GitHub integration
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#enabling" class="md-nav__link">
+    Enabling the GitHub integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#configuring-the-github-integration" class="md-nav__link">
+    Configuring the GitHub integration
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1755,8 +1789,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs/" title="How do I set Codacy as a required check to merge my pull requests?" class="md-nav__link">
-      How do I set Codacy as a required check to merge my pull requests?
+    <a href="../../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/" title="How do I set Codacy as a required check to merge pull requests?" class="md-nav__link">
+      How do I set Codacy as a required check to merge pull requests?
     </a>
   </li>
 
@@ -1983,8 +2017,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore/" title="Why isn't Codacy commenting on pull requests anymore?" class="md-nav__link">
-      Why isn't Codacy commenting on pull requests anymore?
+    <a href="../../../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/" title="Why did Codacy stop commenting on pull requests?" class="md-nav__link">
+      Why did Codacy stop commenting on pull requests?
     </a>
   </li>
 
@@ -2586,28 +2620,47 @@
                 
                 
                 <h1 id="github-integration">GitHub integration<a class="headerlink" href="#github-integration" title="Permanent link">&para;</a></h1>
-<p>After adding a repository, navigate to your repository's <strong>Settings</strong>, tab <strong>Integrations</strong> to enable GitHub integration for comments on pull requests, issue creation, and more.</p>
-<p>It installs in just one click but you may need to move back and forth between Codacy and GitHub if it requires additional permissions.</p>
-<p>After installing the integration for a repository, it has to be enabled by a user with repository access on GitHub. This user will become the GitHub user that Codacy will use to comment and create issues on GitHub.</p>
-<p><img alt="GitHub integration" src="../images/github-integration.png" /></p>
-<p>Once the integration is enabled, you will see additional options when browsing the existing issues on the repository:</p>
+<p>The GitHub integration incorporates Codacy on your existing Git provider workflows.</p>
+<p>When the integration is enabled, you can create pull request comments and GitHub issues directly from Codacy when browsing the existing issues on the repository:</p>
 <p><img alt="GitHub integration for issues" src="../images/github-integration-issues.png" /></p>
-<p>When <strong>Pull Request Status</strong>, <strong>Pull Request Comment</strong>, or <strong>Pull Request Summary</strong> is enabled, Codacy will automatically update pull requests on GitHub with additional information when accepting pull requests.</p>
+<p>Depending on the configuration of the GitHub integration, Codacy can also report and notify you about issues directly on your pull requests.</p>
+<h2 id="enabling">Enabling the GitHub integration<a class="headerlink" href="#enabling" title="Permanent link">&para;</a></h2>
+<p>To enable the GitHub integration, open your project <strong>Settings</strong>, tab <strong>Integrations</strong>. When you add a new repository, the integration is already enabled by default.</p>
+<p><img alt="GitHub integration" src="../images/github-integration.png" /></p>
+<p>If you remove the integration, you can enable it again as follows:</p>
+<ol>
+<li>Click the button <strong>Add integration</strong> and select <strong>GitHub</strong> on the list.</li>
+<li>
+<p>Click the button <strong>Enable</strong> and follow the instructions.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The user that enables the integration must have administrator access to the repository.</p>
+</div>
+</li>
+</ol>
+<h2 id="configuring-the-github-integration">Configuring the GitHub integration<a class="headerlink" href="#configuring-the-github-integration" title="Permanent link">&para;</a></h2>
+<p>To configure the GitHub integration, open your project <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
+<p>Depending on the options that you enable, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests:</p>
 <ul>
 <li>
-<p><strong>Pull Request Status</strong> will only be added if the user that added the integration has at least write permissions for that repository.</p>
-<p>The status shows whether your PR and coverage are up to standards or not as per the <a href="../../../repositories/quality-settings/">Pull Request Quality Settings</a> set up for your repository. To see the coverage status, please make sure the Coverage option is enabled in the PR Quality settings.</p>
-<p><img alt="Pull request status on GitHub" src="../images/github-integration-pr-status.png" /></p>
+<p><strong>Status checks</strong> adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the <a href="../../../repositories/quality-settings/">quality settings</a> of your repository. To see the coverage status check, ensure that you enable the option <strong>Coverage</strong> in the quality settings.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>After enabling this option, you can <a href="../../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/#github">set Codacy as a required check</a> before merging your pull requests.</p>
+</div>
+<p><img alt="Pull request status check on GitHub" src="../images/github-integration-pr-status.png" /></p>
 </li>
 <li>
-<p><strong>Pull Request Comment</strong> makes a comment on the Pull Request line when a new issue is found and shows the pattern raising the issue. Click on the Issue link to go to Codacy to see more details about the issue and how to fix it.</p>
-<p><img alt="Pull request comment on GitHub" src="../images/github-integration-pr-comment.png" /></p>
+<p><strong>Annotations</strong> adds annotations on the lines of the pull request where Codacy finds new issues. Codacy maps the severity of the issues reported by the tools to the severity levels of the annotations. To enable this option, you must enable <strong>Status checks</strong> first.</p>
+<p><img alt="Pull request annotation on GitHub" src="../images/github-integration-pr-annotation.png" /></p>
 </li>
 <li>
-<p><strong>Pull Request Summary</strong> shows an overall view of the changes in the PR. Including newly found issues and other metrics such as complexity and duplication.</p>
+<p><strong>Summary</strong> shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable <strong>Status checks</strong> first.</p>
 <p><img alt="Pull request summary on GitHub" src="../images/github-integration-pr-summary.png" /></p>
 </li>
 </ul>
+<p>You can find all the information reported by Codacy on the tab <strong>Checks</strong> of your pull requests:</p>
+<p><img alt="Codacy Check" src="../images/github-integration-tab-checks.png" /></p>
                 
                   
                     
@@ -2615,7 +2668,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 24, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 27, 2020</span>
     
   </small>
 </div>
