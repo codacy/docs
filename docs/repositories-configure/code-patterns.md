@@ -4,23 +4,21 @@ As a wise man once said, "You can't please everyone," and that's true for code p
 
 To configure your repository patterns:
 
-1.  Open your repository **Code patterns** page
+1.  Open your repository **Code patterns** page.
 
-1.  Select the tool to configure
+1.  Select the tool to configure.
 
-1.  Click the checkboxes to the left of the pattern names to enable or disable the patterns
+    ![Configuring code patterns](images/code-pattern-configure.png)
 
-![Configuring code patterns](images/code-pattern-configure.png)
+1.  Click the checkboxes to the left of the pattern names to enable or disable the patterns.
 
-After changing the enabled patterns you can [reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to take the changes immediately into account.
+    To see a detailed explanation about the issues that a pattern can detect and how to fix them, click on **Details** on the top right-hand corner of the pattern:
 
-## Pattern details and filters
+    ![Code pattern details](images/code-pattern-detail.png)
 
-Each pattern has a title and a short description.
+1.  Optionally, [manually reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.
 
-To see a detailed explanation about the issues that a pattern can detect and how to fix them, click on **Details** on the top right-hand corner of the pattern:
-
-![Code pattern details](images/code-pattern-detail.png) 
+## Category filters
 
 To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by category:
 
@@ -39,13 +37,18 @@ The issues detected by Codacy belong to one of the following categories:
 
 ## Account vs repository patterns
 
-Your **account patterns** allow you to change the default selection of patterns by enabling or disabling them for all future repositories added by you. See [Default patterns](../index.md) <!-- TODO Solve lack of account default patterns --> for more details.
+<!-- TODO Solve lack of account default patterns -->
+
+Your **account patterns** allow you to change the default selection of patterns by enabling or disabling them for all future repositories added by you. See [Default patterns](../index.md) for more details.
 
 The **repository patterns** specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. Open **Code patterns**:
 
 ![Code patterns configuration page](images/code-pattern-page.png)
  
 ## I have my own tool configuration file
+
+<!-- TODO Refactor and improve this section.
+          Consider including the configuration file names reference somewhere else (see https://github.com/codacy/docs/issues/43) -->
 
 If you have configuration files for your static analysis tool of choice, add it to the root of your repository and Codacy will pick it up automatically.
 
@@ -240,6 +243,8 @@ The known file names for each tool are the following:
 For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
 
 ## Configuring the repository root directory for analysis
+
+<!-- TODO Refactor / move this section somewhere else -->
 
 By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a [Codacy configuration file](codacy-configuration-file.md). This file must be named **".codacy.yaml"** or **".codacy.yml"** and must be placed in the repository's root.
 
