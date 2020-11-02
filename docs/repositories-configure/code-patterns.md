@@ -1,8 +1,8 @@
 # Code patterns
 
-As a wise man once said, "You can't please everyone," and that's true for code patterns. But don't you worry! You can choose from a range of patterns to fit your needs.
+You can configure the tool patterns that Codacy uses to analyze your repositories. This configuration can be different for each repository.
 
-To configure your repository patterns:
+To configure the tool patterns for a repository:
 
 1.  Open your repository **Code patterns** page.
 
