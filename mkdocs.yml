@@ -187,8 +187,8 @@ plugins:
               "hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/214085885.md": "repositories/post-commit-hooks.md"
               "hc/en-us/articles/214085885-Post-Commit-Hooks.md": "repositories/post-commit-hooks.md"
-              "hc/en-us/articles/214377225.md": "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md"
-              "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md"
+              "hc/en-us/articles/214377225.md": "repositories/managing-branches.md"
+              "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "repositories/managing-branches.md"
               "hc/en-us/sections/360000605573-Self-hosted-Release-Notes.md": "release-notes/index.md"
               "hc/en-us/sections/360000605573.md": "release-notes/index.md"
               "hc/en-us/articles/360001207234.md": "repositories-configure/specifying-language.md"
@@ -552,7 +552,6 @@ nav:
                 - faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md
           - Code analysis:
                 - faq/code-analysis/do-you-check-for-dependencies.md
-                - faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md
                 - faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md
                 - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
                 - faq/code-analysis/error-line-endings.md

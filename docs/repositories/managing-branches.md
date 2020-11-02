@@ -8,7 +8,7 @@ You can define the main branch of your repository on the repository **Settings**
 
 ## Pull requests
 
-Upon **pull requests**, Codacy automatically triggers analysis on the corresponding branch to analyze the pull request.
+Upon **pull requests**, Codacy automatically triggers analysis on the corresponding branch to analyze the pull request, **as long as the target branch of the pull request is enabled**.
 
 ## Analyzing other branches
 
