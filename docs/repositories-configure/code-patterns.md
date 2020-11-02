@@ -35,16 +35,30 @@ The issues detected by Codacy belong to one of the following categories:
 -   **Security:** All security problems
 -   **Documentation:** Detects methods and classes that don't have the correct comment annotations
 
-## Account vs repository patterns
+## Setting a default configuration for new repositories {: id="set-default"}
 
-<!-- TODO Solve lack of account default patterns -->
+If you're adding multiple repositories to Codacy that should reuse the same pattern configuration for a tool, you can define that configuration as the default. Codacy automatically applies that default configuration to new repositories.
 
-Your **account patterns** allow you to change the default selection of patterns by enabling or disabling them for all future repositories added by you. See [Default patterns](../index.md) for more details.
+To apply the same pattern configuration to multiple repositories:
 
-The **repository patterns** specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. Open **Code patterns**:
+1.  Add the first repository and configure the patterns on that repository for the relevant tools.
 
-![Code patterns configuration page](images/code-pattern-page.png)
- 
+1.  For each tool, expand the menu at the top of the pattern list and select **Set default**.
+
+    This option sets the current pattern configuration as the default for your account when adding new repositories to Codacy.
+
+    ![Setting a default pattern configuration](images/code-pattern-set-default.png)
+
+1.  Add the remaining repositories to Codacy.
+
+    The new repositories will automatically use the tool pattern configuration that you set as default.
+
+To reset the pattern configuration of a tool back to the default provided by Codacy:
+
+1.  Expand the menu at the top of the pattern list for that tool and select **Reset** to revert the configuration back to the one provided by Codacy.
+
+1.  Select **Set default** on the same menu to reset the default configuration.
+
 ## I have my own tool configuration file
 
 <!-- TODO Refactor and improve this section.
