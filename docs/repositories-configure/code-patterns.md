@@ -76,7 +76,7 @@ The known file names for each tool are the following:
 <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
 <td>Python</td>
 <td>bandit.yml, .bandit </td>
-<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repo containing: skips: \['B101'\]</td>
+<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repository containing: skips: \['B101'\]</td>
 </tr>
 <tr>
 <td>Brakeman</td>
@@ -88,16 +88,16 @@ The known file names for each tool are the following:
 <td>Checkstyle</td>
 <td>Java</td>
 <td>checkstyle.xml </td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
-<td>Codenarc</td>
+<td>CodeNarc</td>
 <td>Groovy</td>
 <td>.codenarcrc</td>
 <td> </td>
 </tr>
 <tr>
-<td>credo</td>
+<td>Credo</td>
 <td>Elixir</td>
 <td>.credo.exs</td>
 <td> </td>
@@ -109,10 +109,10 @@ The known file names for each tool are the following:
 <td> </td>
 </tr>
 <tr>
-<td>detekt</td>
+<td>Detekt</td>
 <td>Kotlin</td>
 <td>default-detekt-config.yml, detekt.yml</td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td><a href="https://eslint.org/docs/user-guide/configuring">ESLint</a></td>
@@ -148,9 +148,9 @@ The known file names for each tool are the following:
 </tr>
 <tr>
 <td>PMD</td>
-<td>Apex, Java, Javascript, JSP, XML, Velocity and Visualforce</td>
+<td>Apex, Java, JavaScript, JSP, XML, Velocity and Visualforce</td>
 <td>ruleset.xml, apex-ruleset.xml</td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td>Prospector</td>
@@ -178,7 +178,7 @@ The known file names for each tool are the following:
 <td> </td>
 </tr>
 <tr>
-<td>ScalaStyle</td>
+<td>Scalastyle</td>
 <td>Scala </td>
 <td>scalastyle_config.xml, scalastyle-config.xml</td>
 <td> </td>
@@ -196,16 +196,16 @@ The known file names for each tool are the following:
 <td> </td>
 </tr>
 <tr>
-<td>Spotbugs</td>
+<td>SpotBugs</td>
 <td>Java, Scala</td>
 <td>findbugs.xml, findbugs-includes.xml, findbugs-excludes.xml</td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td>Stylelint</td>
 <td>LESS, SASS, CSS</td>
 <td>.stylelintrc, stylelint.config.js, .stylelintrc.json, .stylelintrc.yaml, .stylelintrc.js, stylelintrc.yml</td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td>SwiftLint</td>
