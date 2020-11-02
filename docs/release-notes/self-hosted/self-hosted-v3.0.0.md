@@ -4,7 +4,15 @@ These release notes are for [Codacy Self-hosted v3.0.0](https://github.com/codac
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
-<!-- TODO: Mention having to set GitHub checks as required. -->
+## Breaking changes
+
+**If you require Codacy pull request status to pass before merging GitHub pull requests** you must manually re-enable the required status check on your repositories. To do this:
+
+1.  Wait until there is a new status check from Codacy on your repositories using the new GitHub Checks integration:
+
+    ![Codacy pull request status on GitHub](../../repositories-configure/integrations/images/github-integration-pr-status.png)
+
+1.  Follow the instructions to [require the Codacy status check to pass before merging pull requests](https://docs.codacy.com/v3.0/faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/#github) on your GitHub branch protection rules.
 
 ## Product enhancements
 
