@@ -24,7 +24,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Tool versions
 
-This version of Codacy Self-hosted includes the tool versions below.
+This version of Codacy Self-hosted includes the tool versions below. The tools that were updated on this version are highlighted in bold:
 
 -   Ameba 0.13.1
 -   Bandit 1.6.2
