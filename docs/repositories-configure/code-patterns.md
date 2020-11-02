@@ -1,8 +1,8 @@
 # Code patterns
 
-You can configure the tool patterns that Codacy uses to analyze your repositories. This configuration can be different for each repository.
+By default, Codacy uses a subset of the patterns that exist for each tool to analyze your repositories. These default patterns result from community feedback or existing coding standards.
 
-To configure the tool patterns for a repository:
+However, you can create a coding standard adapted to your scenario by configuring the tool patterns that Codacy uses to analyze each repository:
 
 1.  Open your repository **Code patterns** page.
 
