@@ -27,7 +27,7 @@ google_analytics: ["UA-45639808-4", "auto"]
 
 # Extra variables
 extra:
-  version: 2.2.1
+  version: 3.0.0
 
 # Repository
 # repo_name: "codacy/docs"
@@ -589,6 +589,7 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
           - "Codacy Self-hosted":
+                - release-notes/self-hosted/self-hosted-v3.0.0.md
                 - release-notes/self-hosted/self-hosted-v2.2.1.md
                 - release-notes/self-hosted/self-hosted-v2.2.0.md
                 - release-notes/self-hosted/self-hosted-v2.1.1.md
