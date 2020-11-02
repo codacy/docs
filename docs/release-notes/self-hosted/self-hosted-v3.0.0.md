@@ -8,11 +8,9 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
-<!-- TODO -->
+-   Codacy now supports the integration with GitHub Checks.
 
-## Bug fixes
-
-<!-- TODO -->
+    From now on, [all Codacy analysis information on pull requests](https://docs.codacy.com/v3.0/repositories-configure/integrations/github-integration/#configuring-the-github-integration) will show up under the **Checks** tab on the GitHub pull request pages.
 
 ## Tool versions
 
