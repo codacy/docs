@@ -1,44 +1,41 @@
 # Code patterns
 
-As a wise man once said, "You can't please everyone", and that is true for code patterns. But don't you worry! You can choose from a range of patterns to fit your needs.
+As a wise man once said, "You can't please everyone," and that's true for code patterns. But don't you worry! You can choose from a range of patterns to fit your needs.
+
+To configure your repository patterns:
+
+1.  Open your repository **Code patterns** page
+
+1.  Select the tool to configure
+
+1.  Click the checkboxes to the left of the pattern names to enable or disable the patterns
+
+![Configuring code patterns](images/code-pattern-configure.png)
+
+After changing the enabled patterns you can [reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to take the changes immediately into account.
 
 ## Pattern details and filters
 
-Each pattern has a title and a short description. To see a detailed explanation you can click on Show Details in the top right corner (mouse over the pattern and the Show Details option will appear):
+Each pattern has a title and a short description.
+
+To see a detailed explanation about the issues that a pattern can detect and how to fix them, click on **Details** on the top right-hand corner of the pattern:
 
 ![Code pattern details](images/code-pattern-detail.png) 
 
-The pattern explanation shows more detail about the issues it can detect and how to fix them.
-
-You can filter the patterns by category using the side menu:
+To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by category:
 
 ![Filtering code patterns](images/code-pattern-category.png)
 
 The issues detected by Codacy belong to one of the following categories:
 
 -   **Code Style:** Code formatting and syntax problems. For example, variable names style, enforcing the use of brackets and quotation marks
-
--   **Error Prone:** Code that may hide bugs and language keywords that should be used with caution. For example, the operator `==` in Javascript or `Option.get` in Scala
-
+-   **Error Prone:** Code that may hide bugs and language keywords that should be used with caution. For example, the operator `==` in JavaScript or `Option.get` in Scala
 -   **Code Complexity:** High complexity methods and classes that should be refactored
-
 -   **Performance:** Code that could have performance problems
-
 -   **Compatibility:** Used mainly for frontend code, detects compatibility problems across different browser versions
-
 -   **Unused Code:** Unused variables and methods, code that can't be reached
-
 -   **Security:** All security problems
-
--   **Documentation:** Detects methods and classes that do not have the correct comment annotations
-
-## Configuring your repository patterns
-
-To configure the patterns used to analyze your repository click on the checkbox to the left of the title:
-
-![Enabling code patterns](images/code-pattern-enable.png)
-
-When you change the enabled patterns you can reanalyze your repository. To do that, enter the latest commit from your list on the **Commit** view and click [reanalyze](../faq/repositories/how-do-i-reanalyze-my-repository.md).
+-   **Documentation:** Detects methods and classes that don't have the correct comment annotations
 
 ## Account vs repository patterns
 
@@ -244,9 +241,9 @@ For performance reasons, if you make changes to pattern settings using configura
 
 ## Configuring the repository root directory for analysis
 
-By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a [Codacy configuration file](codacy-configuration-file.md). This file needs to be named **".codacy.yaml"** or **".codacy.yml"** and must be placed in the repository's root.
+By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a [Codacy configuration file](codacy-configuration-file.md). This file must be named **".codacy.yaml"** or **".codacy.yml"** and must be placed in the repository's root.
 
-See example below:
+See the example below:
 
     ---
     engines:
