@@ -42,7 +42,7 @@ When you change the enabled patterns you can reanalyze your repository. To do th
 
 ## Account vs repository patterns
 
-Your **account patterns** allow you to change the default selection of patterns by enabling or disabling them for all future repositories added by you. See [Default patterns](../account/default-patterns.md) for more details.
+Your **account patterns** allow you to change the default selection of patterns by enabling or disabling them for all future repositories added by you. See [Default patterns](../index.md) <!-- TODO Solve lack of account default patterns --> for more details.
 
 The **repository patterns** specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. Open **Code patterns**:
 

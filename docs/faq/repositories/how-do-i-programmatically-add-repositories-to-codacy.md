@@ -33,7 +33,7 @@ Substitute the placeholders with your own values:
     !!! important
         **If you are using GitLab** you must specify the full group path and the repository using the format `<group>/<subgroup-1>/.../<subgroup-N>/<repository>`.
 
-Currently, Codacy doesn't provide API endpoints to automate other parts of setting up new repositories, such as configuring the repository settings or the enabled code patterns. However, Codacy automatically applies the [default patterns](../../account/default-patterns.md) defined on the Codacy API token account to the new repositories, and you can use this to ensure that all new repositories share the same pattern configuration.
+Currently, Codacy doesn't provide API endpoints to automate other parts of setting up new repositories, such as configuring the repository settings or the enabled code patterns. However, Codacy automatically applies the [default patterns](../../index.md) <!-- TODO Solve lack of account default patterns --> defined on the Codacy API token account to the new repositories, and you can use this to ensure that all new repositories share the same pattern configuration.
 
 ## Example: Adding all repositories in a GitHub organization
 
