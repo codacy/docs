@@ -157,7 +157,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-swiftlint">https://github.com/codacy/codacy-swiftlint</a></td>
 </tr>
 <tr>
-<td><a href="https://tailor.sh/">Tailor</a></td>
+<td><a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
 <td><a href="https://github.com/codacy/codacy-tailor" class="in-cell-link">https://github.com/codacy/codacy-tailor</a></td>
 </tr>
 <tr>

@@ -207,7 +207,7 @@ The table below lists all programming languages currently supported by Codacy an
     <tr>
       <td>Swift </td>
       <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a>,
-          <a href="https://tailor.sh/">Tailor</a></td>
+          <a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
     </tr>
