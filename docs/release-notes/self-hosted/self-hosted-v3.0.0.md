@@ -4,9 +4,15 @@ These release notes are for [Codacy Self-hosted v3.0.0](https://github.com/codac
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
+<!-- TODO: Mention having to set GitHub checks as required. -->
+
+## Product enhancements
+
+<!-- TODO -->
+
 ## Bug fixes
 
-
+<!-- TODO -->
 
 ## Tool versions
 
