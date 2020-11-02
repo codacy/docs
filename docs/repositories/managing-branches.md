@@ -16,4 +16,4 @@ It's also possible to enable analysis on other branches.
 
 To do this, open the repository **Settings**, tab **Branches** , and enable the branches that Codacy should analyze.
 
-![](/images/Screen_Shot_2016-10-12_at_12.07.47.png)
+![Managing branches](images/managing-branches.png)
