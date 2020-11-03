@@ -1,54 +1,68 @@
 # Code patterns
 
-As a wise man once said, "You can't please everyone", and that is true for code patterns. But don't you worry! You can choose from a range of patterns to fit your needs.
+By default, Codacy uses a subset of the patterns that exist for each tool to analyze your repositories. These default patterns result from community feedback or existing coding standards.
 
-## Pattern details and filters
+However, you can create a coding standard adapted to your scenario by configuring the tool patterns that Codacy uses to analyze each repository:
 
-Each pattern has a title and a short description. To see a detailed explanation you can click on Show Details in the top right corner (mouse over the pattern and the Show Details option will appear):
+1.  Open your repository **Code patterns** page.
 
-![Code pattern details](images/code-pattern-detail.png) 
+1.  Select the tool to configure.
 
-The pattern explanation shows more detail about the issues it can detect and how to fix them.
+    ![Configuring code patterns](images/code-pattern-configure.png)
 
-You can filter the patterns by category using the side menu:
+1.  Click the checkboxes to the left of the pattern names to enable or disable the patterns.
+
+    To see a detailed explanation about the issues that a pattern can detect and how to fix them, click on **Details** on the top right-hand corner of the pattern:
+
+    ![Code pattern details](images/code-pattern-detail.png)
+
+1.  Optionally, [manually reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.
+
+## Category filters
+
+To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by category:
 
 ![Filtering code patterns](images/code-pattern-category.png)
 
 The issues detected by Codacy belong to one of the following categories:
 
 -   **Code Style:** Code formatting and syntax problems. For example, variable names style, enforcing the use of brackets and quotation marks
-
--   **Error Prone:** Code that may hide bugs and language keywords that should be used with caution. For example, the operator `==` in Javascript or `Option.get` in Scala
-
+-   **Error Prone:** Code that may hide bugs and language keywords that should be used with caution. For example, the operator `==` in JavaScript or `Option.get` in Scala
 -   **Code Complexity:** High complexity methods and classes that should be refactored
-
 -   **Performance:** Code that could have performance problems
-
 -   **Compatibility:** Used mainly for frontend code, detects compatibility problems across different browser versions
-
 -   **Unused Code:** Unused variables and methods, code that can't be reached
-
 -   **Security:** All security problems
+-   **Documentation:** Detects methods and classes that don't have the correct comment annotations
 
--   **Documentation:** Detects methods and classes that do not have the correct comment annotations
+## Setting a default configuration for new repositories {: id="set-default"}
 
-## Configuring your repository patterns
+If you're adding multiple repositories to Codacy that should reuse the same pattern configuration for a tool, you can define that configuration as the default. Codacy automatically applies that default configuration to new repositories.
 
-To configure the patterns used to analyze your repository click on the checkbox to the left of the title:
+To apply the same pattern configuration to multiple repositories:
 
-![Enabling code patterns](images/code-pattern-enable.png)
+1.  Add the first repository and configure the patterns on that repository for the relevant tools.
 
-When you change the enabled patterns you can reanalyze your repository. To do that, enter the latest commit from your list on the **Commit** view and click [reanalyze](../faq/repositories/how-do-i-reanalyze-my-repository.md).
+1.  For each tool, expand the menu at the top of the pattern list and select **Set default**.
 
-## Account vs repository patterns
+    This option sets the current pattern configuration as the default for your account when adding new repositories to Codacy.
 
-Your **account patterns** allow you to change the default selection of patterns by enabling or disabling them for all future repositories added by you. See [Default patterns](../account/default-patterns.md) for more details.
+    ![Setting a default pattern configuration](images/code-pattern-set-default.png)
 
-The **repository patterns** specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. Open **Code patterns**:
+1.  Add the remaining repositories to Codacy.
 
-![Code patterns configuration page](images/code-pattern-page.png)
- 
+    The new repositories will automatically use the tool pattern configuration that you set as default.
+
+To reset the pattern configuration of a tool back to the default provided by Codacy:
+
+1.  Expand the menu at the top of the pattern list for that tool and select **Reset** to revert the configuration back to the one provided by Codacy.
+
+1.  Select **Set default** on the same menu to reset the default configuration.
+
 ## I have my own tool configuration file
+
+<!-- TODO Refactor and improve this section.
+          Consider including the configuration file names reference somewhere else (see https://github.com/codacy/docs/issues/43) -->
 
 If you have configuration files for your static analysis tool of choice, add it to the root of your repository and Codacy will pick it up automatically.
 
@@ -76,7 +90,7 @@ The known file names for each tool are the following:
 <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
 <td>Python</td>
 <td>bandit.yml, .bandit </td>
-<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repo containing: skips: \['B101'\]</td>
+<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repository containing: skips: \['B101'\]</td>
 </tr>
 <tr>
 <td>Brakeman</td>
@@ -88,16 +102,16 @@ The known file names for each tool are the following:
 <td>Checkstyle</td>
 <td>Java</td>
 <td>checkstyle.xml </td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
-<td>Codenarc</td>
+<td>CodeNarc</td>
 <td>Groovy</td>
 <td>.codenarcrc</td>
 <td> </td>
 </tr>
 <tr>
-<td>credo</td>
+<td>Credo</td>
 <td>Elixir</td>
 <td>.credo.exs</td>
 <td> </td>
@@ -109,10 +123,10 @@ The known file names for each tool are the following:
 <td> </td>
 </tr>
 <tr>
-<td>detekt</td>
+<td>Detekt</td>
 <td>Kotlin</td>
 <td>default-detekt-config.yml, detekt.yml</td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td><a href="https://eslint.org/docs/user-guide/configuring">ESLint</a></td>
@@ -148,9 +162,9 @@ The known file names for each tool are the following:
 </tr>
 <tr>
 <td>PMD</td>
-<td>Apex, Java, Javascript, JSP, XML, Velocity and Visualforce</td>
+<td>Apex, Java, JavaScript, JSP, XML, Velocity and Visualforce</td>
 <td>ruleset.xml, apex-ruleset.xml</td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td>Prospector</td>
@@ -178,7 +192,7 @@ The known file names for each tool are the following:
 <td> </td>
 </tr>
 <tr>
-<td>ScalaStyle</td>
+<td>Scalastyle</td>
 <td>Scala </td>
 <td>scalastyle_config.xml, scalastyle-config.xml</td>
 <td> </td>
@@ -196,16 +210,16 @@ The known file names for each tool are the following:
 <td> </td>
 </tr>
 <tr>
-<td>Spotbugs</td>
+<td>SpotBugs</td>
 <td>Java, Scala</td>
 <td>findbugs.xml, findbugs-includes.xml, findbugs-excludes.xml</td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td>Stylelint</td>
 <td>LESS, SASS, CSS</td>
 <td>.stylelintrc, stylelint.config.js, .stylelintrc.json, .stylelintrc.yaml, .stylelintrc.js, stylelintrc.yml</td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td>SwiftLint</td>
@@ -244,9 +258,11 @@ For performance reasons, if you make changes to pattern settings using configura
 
 ## Configuring the repository root directory for analysis
 
-By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a [Codacy configuration file](codacy-configuration-file.md). This file needs to be named **".codacy.yaml"** or **".codacy.yml"** and must be placed in the repository's root.
+<!-- TODO Refactor / move this section somewhere else -->
 
-See example below:
+By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a [Codacy configuration file](codacy-configuration-file.md). This file must be named **".codacy.yaml"** or **".codacy.yml"** and must be placed in the repository's root.
+
+See the example below:
 
     ---
     engines:
