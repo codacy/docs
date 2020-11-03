@@ -554,22 +554,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#pattern-details-and-filters" class="md-nav__link">
-    Pattern details and filters
+  <a href="#category-filters" class="md-nav__link">
+    Category filters
   </a>
   
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#configuring-your-repository-patterns" class="md-nav__link">
-    Configuring your repository patterns
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#account-vs-repository-patterns" class="md-nav__link">
-    Account vs repository patterns
+  <a href="#set-default" class="md-nav__link">
+    Setting a default configuration for new repositories
   </a>
   
 </li>
@@ -1011,18 +1004,6 @@
   <li class="md-nav__item">
     <a href="../../account/managing-your-profile/" title="Managing your profile" class="md-nav__link">
       Managing your profile
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../account/default-patterns/" title="Default patterns" class="md-nav__link">
-      Default patterns
     </a>
   </li>
 
@@ -2141,48 +2122,65 @@
                 
                 
                 <h1 id="code-patterns">Code patterns<a class="headerlink" href="#code-patterns" title="Permanent link">&para;</a></h1>
-<p>As a wise man once said, "You can't please everyone", and that is true for code patterns. But don't you worry! You can choose from a range of patterns to fit your needs.</p>
-<h2 id="pattern-details-and-filters">Pattern details and filters<a class="headerlink" href="#pattern-details-and-filters" title="Permanent link">&para;</a></h2>
-<p>Each pattern has a title and a short description. To see a detailed explanation you can click on Show Details in the top right corner (mouse over the pattern and the Show Details option will appear):</p>
-<p><img alt="Code pattern details" src="../images/code-pattern-detail.png" /> </p>
-<p>The pattern explanation shows more detail about the issues it can detect and how to fix them.</p>
-<p>You can filter the patterns by category using the side menu:</p>
+<p>By default, Codacy uses a subset of the patterns that exist for each tool to analyze your repositories. These default patterns result from community feedback or existing coding standards.</p>
+<p>However, you can create a coding standard adapted to your scenario by configuring the tool patterns that Codacy uses to analyze each repository:</p>
+<ol>
+<li>
+<p>Open your repository <strong>Code patterns</strong> page.</p>
+</li>
+<li>
+<p>Select the tool to configure.</p>
+<p><img alt="Configuring code patterns" src="../images/code-pattern-configure.png" /></p>
+</li>
+<li>
+<p>Click the checkboxes to the left of the pattern names to enable or disable the patterns.</p>
+<p>To see a detailed explanation about the issues that a pattern can detect and how to fix them, click on <strong>Details</strong> on the top right-hand corner of the pattern:</p>
+<p><img alt="Code pattern details" src="../images/code-pattern-detail.png" /></p>
+</li>
+<li>
+<p>Optionally, <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">manually reanalyze your repository</a> to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.</p>
+</li>
+</ol>
+<h2 id="category-filters">Category filters<a class="headerlink" href="#category-filters" title="Permanent link">&para;</a></h2>
+<p>To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by category:</p>
 <p><img alt="Filtering code patterns" src="../images/code-pattern-category.png" /></p>
 <p>The issues detected by Codacy belong to one of the following categories:</p>
 <ul>
-<li>
-<p><strong>Code Style:</strong> Code formatting and syntax problems. For example, variable names style, enforcing the use of brackets and quotation marks</p>
-</li>
-<li>
-<p><strong>Error Prone:</strong> Code that may hide bugs and language keywords that should be used with caution. For example, the operator <code>==</code> in Javascript or <code>Option.get</code> in Scala</p>
-</li>
-<li>
-<p><strong>Code Complexity:</strong> High complexity methods and classes that should be refactored</p>
-</li>
-<li>
-<p><strong>Performance:</strong> Code that could have performance problems</p>
-</li>
-<li>
-<p><strong>Compatibility:</strong> Used mainly for frontend code, detects compatibility problems across different browser versions</p>
-</li>
-<li>
-<p><strong>Unused Code:</strong> Unused variables and methods, code that can't be reached</p>
-</li>
-<li>
-<p><strong>Security:</strong> All security problems</p>
-</li>
-<li>
-<p><strong>Documentation:</strong> Detects methods and classes that do not have the correct comment annotations</p>
-</li>
+<li><strong>Code Style:</strong> Code formatting and syntax problems. For example, variable names style, enforcing the use of brackets and quotation marks</li>
+<li><strong>Error Prone:</strong> Code that may hide bugs and language keywords that should be used with caution. For example, the operator <code>==</code> in JavaScript or <code>Option.get</code> in Scala</li>
+<li><strong>Code Complexity:</strong> High complexity methods and classes that should be refactored</li>
+<li><strong>Performance:</strong> Code that could have performance problems</li>
+<li><strong>Compatibility:</strong> Used mainly for frontend code, detects compatibility problems across different browser versions</li>
+<li><strong>Unused Code:</strong> Unused variables and methods, code that can't be reached</li>
+<li><strong>Security:</strong> All security problems</li>
+<li><strong>Documentation:</strong> Detects methods and classes that don't have the correct comment annotations</li>
 </ul>
-<h2 id="configuring-your-repository-patterns">Configuring your repository patterns<a class="headerlink" href="#configuring-your-repository-patterns" title="Permanent link">&para;</a></h2>
-<p>To configure the patterns used to analyze your repository click on the checkbox to the left of the title:</p>
-<p><img alt="Enabling code patterns" src="../images/code-pattern-enable.png" /></p>
-<p>When you change the enabled patterns you can reanalyze your repository. To do that, enter the latest commit from your list on the <strong>Commit</strong> view and click <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">reanalyze</a>.</p>
-<h2 id="account-vs-repository-patterns">Account vs repository patterns<a class="headerlink" href="#account-vs-repository-patterns" title="Permanent link">&para;</a></h2>
-<p>Your <strong>account patterns</strong> allow you to change the default selection of patterns by enabling or disabling them for all future repositories added by you. See <a href="../../account/default-patterns/">Default patterns</a> for more details.</p>
-<p>The <strong>repository patterns</strong> specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. Open <strong>Code patterns</strong>:</p>
-<p><img alt="Code patterns configuration page" src="../images/code-pattern-page.png" /></p>
+<h2 id="set-default">Setting a default configuration for new repositories<a class="headerlink" href="#set-default" title="Permanent link">&para;</a></h2>
+<p>If you're adding multiple repositories to Codacy that should reuse the same pattern configuration for a tool, you can define that configuration as the default. Codacy automatically applies that default configuration to new repositories.</p>
+<p>To apply the same pattern configuration to multiple repositories:</p>
+<ol>
+<li>
+<p>Add the first repository and configure the patterns on that repository for the relevant tools.</p>
+</li>
+<li>
+<p>For each tool, expand the menu at the top of the pattern list and select <strong>Set default</strong>.</p>
+<p>This option sets the current pattern configuration as the default for your account when adding new repositories to Codacy.</p>
+<p><img alt="Setting a default pattern configuration" src="../images/code-pattern-set-default.png" /></p>
+</li>
+<li>
+<p>Add the remaining repositories to Codacy.</p>
+<p>The new repositories will automatically use the tool pattern configuration that you set as default.</p>
+</li>
+</ol>
+<p>To reset the pattern configuration of a tool back to the default provided by Codacy:</p>
+<ol>
+<li>
+<p>Expand the menu at the top of the pattern list for that tool and select <strong>Reset</strong> to revert the configuration back to the one provided by Codacy.</p>
+</li>
+<li>
+<p>Select <strong>Set default</strong> on the same menu to reset the default configuration.</p>
+</li>
+</ol>
 <h2 id="i-have-my-own-tool-configuration-file">I have my own tool configuration file<a class="headerlink" href="#i-have-my-own-tool-configuration-file" title="Permanent link">&para;</a></h2>
 <p>If you have configuration files for your static analysis tool of choice, add it to the root of your repository and Codacy will pick it up automatically.</p>
 <p>Codacy supports configuration files for several tools. To have results according to your configuration file, you need to go to the Code Patterns view, select <strong>Configuration file</strong> for the respective tool, and select the option as shown in the example below.</p>
@@ -2206,7 +2204,7 @@
 <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
 <td>Python</td>
 <td>bandit.yml, .bandit </td>
-<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repo containing: skips: \['B101'\]</td>
+<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repository containing: skips: \['B101'\]</td>
 </tr>
 <tr>
 <td>Brakeman</td>
@@ -2218,16 +2216,16 @@
 <td>Checkstyle</td>
 <td>Java</td>
 <td>checkstyle.xml </td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
-<td>Codenarc</td>
+<td>CodeNarc</td>
 <td>Groovy</td>
 <td>.codenarcrc</td>
 <td> </td>
 </tr>
 <tr>
-<td>credo</td>
+<td>Credo</td>
 <td>Elixir</td>
 <td>.credo.exs</td>
 <td> </td>
@@ -2239,10 +2237,10 @@
 <td> </td>
 </tr>
 <tr>
-<td>detekt</td>
+<td>Detekt</td>
 <td>Kotlin</td>
 <td>default-detekt-config.yml, detekt.yml</td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td><a href="https://eslint.org/docs/user-guide/configuring">ESLint</a></td>
@@ -2278,9 +2276,9 @@
 </tr>
 <tr>
 <td>PMD</td>
-<td>Apex, Java, Javascript, JSP, XML, Velocity and Visualforce</td>
+<td>Apex, Java, JavaScript, JSP, XML, Velocity and Visualforce</td>
 <td>ruleset.xml, apex-ruleset.xml</td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td>Prospector</td>
@@ -2308,7 +2306,7 @@
 <td> </td>
 </tr>
 <tr>
-<td>ScalaStyle</td>
+<td>Scalastyle</td>
 <td>Scala </td>
 <td>scalastyle_config.xml, scalastyle-config.xml</td>
 <td> </td>
@@ -2326,16 +2324,16 @@
 <td> </td>
 </tr>
 <tr>
-<td>Spotbugs</td>
+<td>SpotBugs</td>
 <td>Java, Scala</td>
 <td>findbugs.xml, findbugs-includes.xml, findbugs-excludes.xml</td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td>Stylelint</td>
 <td>LESS, SASS, CSS</td>
 <td>.stylelintrc, stylelint.config.js, .stylelintrc.json, .stylelintrc.yaml, .stylelintrc.js, stylelintrc.yml</td>
-<td>Supports config file in other dirs than root and can search up to 5 dirs into the repository.</td>
+<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td>SwiftLint</td>
@@ -2372,8 +2370,8 @@
 
 <p>For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.</p>
 <h2 id="configuring-the-repository-root-directory-for-analysis">Configuring the repository root directory for analysis<a class="headerlink" href="#configuring-the-repository-root-directory-for-analysis" title="Permanent link">&para;</a></h2>
-<p>By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a <a href="../codacy-configuration-file/">Codacy configuration file</a>. This file needs to be named <strong>".codacy.yaml"</strong> or <strong>".codacy.yml"</strong> and must be placed in the repository's root.</p>
-<p>See example below:</p>
+<p>By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a <a href="../codacy-configuration-file/">Codacy configuration file</a>. This file must be named <strong>".codacy.yaml"</strong> or <strong>".codacy.yml"</strong> and must be placed in the repository's root.</p>
+<p>See the example below:</p>
 <table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
 2
 3
@@ -2396,7 +2394,7 @@ engines:
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 3, 2020</span>
     
   </small>
 </div>
