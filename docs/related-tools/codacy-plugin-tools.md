@@ -21,7 +21,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-bandit" class="in-cell-link">https://github.com/codacy/codacy-bandit</a></td>
 </tr>
 <tr>
-<td><a href="http://brakemanscanner.org/" class="in-cell-link">Brakeman</a></td>
+<td><a href="https://brakemanscanner.org/" class="in-cell-link">Brakeman</a></td>
 <td><a href="https://github.com/codacy/codacy-brakeman" class="in-cell-link">https://github.com/codacy/codacy-brakeman</a></td>
 </tr>
 <tr>
@@ -29,8 +29,8 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-bundler-audit">https://github.com/codacy/codacy-bundler-audit</a></td>
 </tr>
 <tr>
-<td><a href="http://checkstyle.sourceforge.net/" class="in-cell-link">Checkstyle</a></td>
-<td><a href="https://github.com/codacy/codacy-checkstyle/" class="in-cell-link">https://github.com/codacy/codacy-checkstyle/</a></td>
+<td><a href="https://checkstyle.sourceforge.io/" class="in-cell-link">Checkstyle</a></td>
+<td><a href="https://github.com/codacy/codacy-checkstyle" class="in-cell-link">https://github.com/codacy/codacy-checkstyle</a></td>
 </tr>
 <tr>
 <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
@@ -45,7 +45,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-gosec" class="in-cell-link">https://github.com/codacy/codacy-gosec</a></td>
 </tr>
 <tr>
-<td><a href="https://codenarc.github.io/CodeNarc/" class="in-cell-link">CodeNarc</a></td>
+<td><a href="https://codenarc.org/" class="in-cell-link">CodeNarc</a></td>
 <td><a href="https://github.com/codacy/codacy-codenarc" class="in-cell-link">https://github.com/codacy/codacy-codenarc</a></td>
 </tr>
 <tr>
@@ -69,7 +69,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-detekt">https://github.com/codacy/codacy-detekt</a></td>
 </tr>
 <tr>
-<td><a href="http://eslint.org/" class="in-cell-link">ESLint</a></td>
+<td><a href="https://eslint.org/" class="in-cell-link">ESLint</a></td>
 <td><a href="https://github.com/codacy/codacy-eslint" class="in-cell-link">https://github.com/codacy/codacy-eslint</a></td>
 </tr>
 <tr>
@@ -89,7 +89,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-jackson-linter">https://github.com/codacy/codacy-jackson-linter</a></td>
 </tr>
 <tr>
-<td><a href="http://jshint.com/">JSHint</a></td>
+<td><a href="https://jshint.com/">JSHint</a></td>
 <td><a href="https://github.com/codacy/codacy-jshint">https://github.com/codacy/codacy-jshint</a></td>
 </tr>
 <tr>
@@ -101,7 +101,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-phpmd" class="in-cell-link">https://github.com/codacy/codacy-phpmd</a></td>
 </tr>
 <tr>
-<td><a href="http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/index.html" class="in-cell-link">PMD</a></td>
+<td><a href="https://pmd.sourceforge.io/pmd-5.3.2/pmd-java/index.html" class="in-cell-link">PMD</a></td>
 <td><a href="https://github.com/codacy/codacy-pmd" class="in-cell-link">https://github.com/codacy/codacy-pmd</a></td>
 </tr>
 <tr>
@@ -113,7 +113,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-psscriptanalyzer">https://github.com/codacy/codacy-psscriptanalyzer</a></td>
 </tr>
 <tr>
-<td><a href="http://www.pylint.org/" class="in-cell-link">Pylint</a></td>
+<td><a href="https://www.pylint.org/" class="in-cell-link">Pylint</a></td>
 <td><a href="https://github.com/codacy/codacy-pylint" class="in-cell-link">https://github.com/codacy/codacy-pylint</a></td>
 </tr>
 <tr>

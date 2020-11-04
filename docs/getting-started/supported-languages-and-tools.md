@@ -94,7 +94,7 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>Java</td>
-      <td><a href="http://checkstyle.sourceforge.net/">Checkstyle</a>,
+      <td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a>,
           <a href="https://pmd.github.io/">PMD</a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>*</sup></a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -102,15 +102,15 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>JavaScript</td>
-      <td><a href="http://eslint.org/">ESLint</a>,
-          <a href="http://jshint.com/">JSHint</a>,
+      <td><a href="https://eslint.org/">ESLint</a>,
+          <a href="https://jshint.com/">JSHint</a>,
           <a href="https://pmd.github.io/">PMD</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
-      <td><a href="http://eslint.org/">ESLint</a></td>
+      <td><a href="https://eslint.org/">ESLint</a></td>
     </tr>
     <tr>
       <td>JSON</td>
-      <td><a href="http://eslint.org/">ESLint</a>,
+      <td><a href="https://eslint.org/">ESLint</a>,
           <a href="https://github.com/codacy/codacy-jackson-linter">Jackson Linter</a></td>
       <td>-</td>
       <td>-</td>
@@ -169,16 +169,16 @@ The table below lists all programming languages currently supported by Codacy an
       </td>
       <td><a href="https://github.com/openstack/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
-          <a href="http://www.pylint.org/">Pylint</a></td>
+          <a href="https://www.pylint.org/">Pylint</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/rubik/radon">Radon</a></td>
     </tr>
     <tr>
       <td>Ruby
       </td>
-      <td><a href="http://brakemanscanner.org/">Brakeman</a>,
-           <a href="https://github.com/rubysec/bundler-audit">Bundler Audit</a>,
-           <a href="https://github.com/bbatsov/rubocop">Rubocop</a></td>
+      <td><a href="https://brakemanscanner.org/">Brakeman</a>,
+          <a href="https://github.com/rubysec/bundler-audit">Bundler Audit</a>,
+          <a href="https://github.com/bbatsov/rubocop">Rubocop</a></td>
       <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
       <td><a href="https://github.com/bbatsov/rubocop">Rubocop</a></td>
     </tr>
@@ -219,10 +219,10 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>TypeScript</td>
-      <td><a href="http://eslint.org/">ESLint</a>,
+      <td><a href="https://eslint.org/">ESLint</a>,
           <a href="https://palantir.github.io/tslint/">TSLint</a></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="http://eslint.org/">ESLint</a></td>
+      <td><a href="https://eslint.org/">ESLint</a></td>
     </tr>
     <tr>
       <td>Velocity</td>

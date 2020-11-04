@@ -31,7 +31,7 @@ The Security Monitor is available for the following languages:
 The Security Monitor displays issues using security patterns from:
 
 -   [Bandit](https://bandit.readthedocs.io/en/latest/plugins/index.html#complete-test-plugin-listing)
--   [Brakeman](http://brakemanscanner.org/docs/warning_types/)
+-   [Brakeman](https://brakemanscanner.org/docs/warning_types/)
 -   [Codacy Scalameta Pro](https://github.com/codacy/codacy-scalameta/tree/master/patterns-base/src/main/scala/codacy/patterns)
 -   [ESLint](https://www.npmjs.com/package/eslint-plugin-security) (also: [1](https://www.npmjs.com/package/eslint-config-nodesecurity), [2](https://www.npmjs.com/package/eslint-plugin-scanjs-rules), [3](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml) and [4](https://www.npmjs.com/package/eslint-config-secure))
 -   [FindBugs](http://findbugs.sourceforge.net/bugDescriptions.html) (Codacy Self-hosted only)
