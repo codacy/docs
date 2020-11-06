@@ -23,7 +23,7 @@ extra_javascript:
 
 strict: true
 
-google_analytics: ["UA-45639808-4", "auto"]
+segmentProjectWriteKey: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
 
 # Extra variables
 extra:
