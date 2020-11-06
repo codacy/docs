@@ -23,11 +23,10 @@ extra_javascript:
 
 strict: true
 
-segmentProjectWriteKey: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
-
 # Extra variables
 extra:
   version: 3.0.0
+  segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
 
 # Repository
 # repo_name: "codacy/docs"
