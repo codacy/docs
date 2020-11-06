@@ -1,6 +1,11 @@
 # How to contribute
 
-You're welcome to make fixes and changes to the documentation. Here are a few steps to get you going.
+You're welcome to make fixes and changes to the documentation. Here are a few steps to get you going:
+
+-   [Authoring documentation pages](#authoring-documentation-pages)
+-   [Releasing a new version of the documentation](#releasing-a-new-version-of-the-documentation)
+-   [Updating an existing version of the documentation](#updating-an-existing-version-of-the-documentation)
+-   [Applying documentation hotfixes to existing chart releases](#applying-documentation-hotfixes-to-existing-chart-releases)
 
 ## Authoring documentation pages
 
