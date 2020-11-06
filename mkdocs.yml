@@ -23,11 +23,10 @@ extra_javascript:
 
 strict: true
 
-google_analytics: ["UA-45639808-4", "auto"]
-
 # Extra variables
 extra:
   version: 1.3.0
+  segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
 
 # Repository
 # repo_name: "codacy/docs"
