@@ -123,9 +123,9 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>Kotlin</td>
-      <td><a href="https://github.com/arturbosch/detekt">Detekt</a></td>
+      <td><a href="https://github.com/detekt/detekt">Detekt</a></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="https://github.com/arturbosch/detekt">Detekt</a></td>
+      <td><a href="https://github.com/detekt/detekt">Detekt</a></td>
     </tr>
     <tr>
       <td>Less</td>
