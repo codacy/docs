@@ -217,8 +217,8 @@ plugins:
               "hc/en-us/articles/360005239394-using-submodules.md": "repositories-configure/using-submodules.md"
               "hc/en-us/articles/360005839053.md": "faq/code-analysis/skipping-an-analysis.md"
               "hc/en-us/articles/360005839053-Skipping-an-analysis.md": "faq/code-analysis/skipping-an-analysis.md"
-              "hc/en-us/articles/360006036934.md": "repositories-configure/php_codesniffer-specifying-your-php-version.md"
-              "hc/en-us/articles/360006036934-PHP-CodeSniffer-Specifying-your-PHP-version.md": "repositories-configure/php_codesniffer-specifying-your-php-version.md"
+              "hc/en-us/articles/360006036934.md": "repositories-configure/specifying-your-php-version.md"
+              "hc/en-us/articles/360006036934-PHP-CodeSniffer-Specifying-your-PHP-version.md": "repositories-configure/specifying-your-php-version.md"
               "hc/en-us/articles/360006718454.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
               "hc/en-us/articles/360006718454-Share-your-repository-with-a-non-Codacy-user.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
               "hc/en-us/articles/360006718454-Share-your-project-with-a-non-Codacy-user.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
@@ -461,6 +461,7 @@ plugins:
               "related-tools/engines.md": "getting-started/supported-languages-and-tools.md"
               "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
               "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
+              "repositories-configure/php_codesniffer-specifying-your-php-version.md": "repositories-configure/specifying-your-php-version.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -498,7 +499,7 @@ nav:
           - repositories-configure/file-extensions.md
           - repositories-configure/specifying-language.md
           - repositories-configure/specifying-your-python-version.md
-          - repositories-configure/php_codesniffer-specifying-your-php-version.md
+          - repositories-configure/specifying-your-php-version.md
           - repositories-configure/code-standards.md
     - "Organizations":
           - organizations/what-are-synced-organizations.md
