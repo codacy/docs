@@ -23,6 +23,7 @@ GitHub
 GitLab
 Gocyclo
 Gosec
+Gravatar
 Hadolint
 hotfix
 Jira
