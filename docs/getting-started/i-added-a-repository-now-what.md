@@ -1,6 +1,6 @@
 # I added a repository. Now what?
 
-Codacy begins an initial analysis as soon as you add a repository and sends you an email notification once the first analysis is completed.
+Codacy begins an initial analysis as soon as you add a repository, and displays an overview of the code quality of your repository when the analysis is complete.
 
 ![Repository dashboard](../repositories/images/repository-dashboard.png)
 
