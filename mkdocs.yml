@@ -23,11 +23,10 @@ extra_javascript:
 
 strict: true
 
-google_analytics: ["UA-45639808-4", "auto"]
-
 # Extra variables
 extra:
-  version: 2.2.0
+  version: 3.0.0
+  segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
 
 # Repository
 # repo_name: "codacy/docs"
@@ -46,6 +45,8 @@ markdown_extensions:
     - footnotes
     - meta
     - pymdownx.superfences
+    - pymdownx.striphtml:
+          strip_comments: true
     - toc:
           permalink: true
 
@@ -69,8 +70,8 @@ plugins:
               "hc/en-us/articles/115000488285-Slack.md": "repositories-configure/integrations/slack-integration.md"
               "hc/en-us/articles/115000566729.md": "repositories-configure/ignore-files-from-codacy-analysis.md"
               "hc/en-us/articles/115000566729-How-do-I-ignore-files-that-are-not-in-master-branch-.md": "repositories-configure/ignore-files-from-codacy-analysis.md"
-              "hc/en-us/articles/115000723329.md": "repositories/security-dashboard.md"
-              "hc/en-us/articles/115000723329-Security-Dashboard.md": "repositories/security-dashboard.md"
+              "hc/en-us/articles/115000723329.md": "repositories/security-monitor.md"
+              "hc/en-us/articles/115000723329-Security-Dashboard.md": "repositories/security-monitor.md"
               "hc/en-us/articles/115000947569.md": "repositories-configure/code-standards.md"
               "hc/en-us/articles/115000947569-Code-Standards.md": "repositories-configure/code-standards.md"
               "hc/en-us/articles/115001853565.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
@@ -131,8 +132,8 @@ plugins:
               "hc/en-us/articles/207994675-Project-API.md": "repositories-configure/integrations/project-api.md"
               "hc/en-us/articles/207994725.md": "related-tools/tool-developer-guide.md"
               "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "related-tools/tool-developer-guide.md"
-              "hc/en-us/articles/207994735.md": "getting-started/supported-languages.md"
-              "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages.md"
+              "hc/en-us/articles/207994735.md": "getting-started/supported-languages-and-tools.md"
+              "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/207994765.md": "repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
               "hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-.md": "repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
               "hc/en-us/articles/207994825.md": "faq/repositories/how-do-i-manually-force-a-repository-update.md"
@@ -151,8 +152,8 @@ plugins:
               "hc/en-us/articles/207994935-Why-isn-t-my-project-analysed-.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
               "hc/en-us/articles/207995005.md": "special-thanks.md"
               "hc/en-us/articles/207995005-Special-Thanks.md": "special-thanks.md"
-              "hc/en-us/articles/208241349.md": "account/default-patterns.md"
-              "hc/en-us/articles/208241349-Default-Patterns.md": "account/default-patterns.md"
+              "hc/en-us/articles/208241349.md": "repositories-configure/code-patterns.md"
+              "hc/en-us/articles/208241349-Default-Patterns.md": "repositories-configure/code-patterns.md"
               "hc/en-us/articles/208243169.md": "organizations/manual-organizations/managing-team-repositories.md"
               "hc/en-us/articles/208243169-Managing-team-repositories.md": "organizations/manual-organizations/managing-team-repositories.md"
               "hc/en-us/articles/208942125.md": "account/notifications.md"
@@ -177,16 +178,16 @@ plugins:
               "hc/en-us/articles/213217965-Which-version-control-systems-do-you-support-.md": "faq/general/which-version-control-systems-do-you-support.md"
               "hc/en-us/articles/213280129.md": "repositories-configure/integrations/jira-integration.md"
               "hc/en-us/articles/213280129-JIRA.md": "repositories-configure/integrations/jira-integration.md"
-              "hc/en-us/articles/213632009.md": "related-tools/engines.md"
-              "hc/en-us/articles/213632009-Engines.md": "related-tools/engines.md"
+              "hc/en-us/articles/213632009.md": "getting-started/supported-languages-and-tools.md"
+              "hc/en-us/articles/213632009-Engines.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/213840489.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/213840489-How-do-I-reanalyze-my-repository-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/213840489-How-do-I-reanalyze-my-project-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/214085885.md": "repositories/post-commit-hooks.md"
               "hc/en-us/articles/214085885-Post-Commit-Hooks.md": "repositories/post-commit-hooks.md"
-              "hc/en-us/articles/214377225.md": "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md"
-              "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md"
+              "hc/en-us/articles/214377225.md": "repositories/managing-branches.md"
+              "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "repositories/managing-branches.md"
               "hc/en-us/sections/360000605573-Self-hosted-Release-Notes.md": "release-notes/index.md"
               "hc/en-us/sections/360000605573.md": "release-notes/index.md"
               "hc/en-us/articles/360001207234.md": "repositories-configure/specifying-language.md"
@@ -238,8 +239,9 @@ plugins:
               "hc/en-us/articles/360009209594-Creating-and-renaming-an-organization.md": "organizations/manual-organizations/creating-and-renaming-an-organization.md"
               "hc/en-us/articles/360009340553.md": "organizations/manual-organizations/creating-and-managing-teams.md"
               "hc/en-us/articles/360009340553-Creating-and-managing-teams.md": "organizations/manual-organizations/creating-and-managing-teams.md"
-              "hc/en-us/articles/360009411934.md": "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md"
-              "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-my-PRs-anymore-.md": "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md"
+              "hc/en-us/articles/360009411934.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
+              "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-my-PRs-anymore-.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
+              "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-pull-requests-anymore-.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
               "hc/en-us/articles/360010263540.md": "getting-started/getting-started-with-codacy.md"
               "hc/en-us/articles/360010263540-Getting-started-with-Codacy.md": "getting-started/getting-started-with-codacy.md"
               "hc/en-us/articles/360010263720.md": "organizations/what-are-synced-organizations.md"
@@ -300,8 +302,8 @@ plugins:
               "hc/en-us/articles/360023916013-Run-SpotBugs.md": "related-tools/run-spotbugs.md"
               "hc/en-us/articles/360025014373.md": "release-notes/cloud/cloud-release-notes-|-18-jun-2019.md"
               "hc/en-us/articles/360025014373-Cloud-Release-Notes-18-Jun-2019.md": "release-notes/cloud/cloud-release-notes-|-18-jun-2019.md"
-              "hc/en-us/articles/360025654573.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md"
-              "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md"
+              "hc/en-us/articles/360025654573.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
+              "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
               "hc/en-us/articles/360025964333.md": "faq/troubleshooting/why-is-my-file-missing.md"
               "hc/en-us/articles/360025964333-File-size-limitation.md": "faq/troubleshooting/why-is-my-file-missing.md"
               "hc/en-us/articles/360025964853.md": "faq/troubleshooting/why-is-my-file-missing.md"
@@ -427,6 +429,7 @@ plugins:
               "faq/repositories/hotspots-overview.md": "index.md"
               "chart/configuration/tls-ingress.md": "index.md"
               "getting-started/setting-up-your-personal-repositories.md": "getting-started/getting-started-with-codacy.md"
+              "getting-started/supported-languages.md": "getting-started/supported-languages-and-tools.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
@@ -454,13 +457,17 @@ plugins:
               "repositories/repository-dashboard-overview.md": "repositories/repository-dashboard.md"
               "repositories/share-your-repository-with-a-non-codacy-user.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
               "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md": "faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md"
+              "repositories/security-dashboard.md": "repositories/security-monitor.md"
+              "related-tools/engines.md": "getting-started/supported-languages-and-tools.md"
+              "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
+              "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
 
 nav:
     - "Documentation home": "index.md"
     - "Getting started":
           - getting-started/getting-started-with-codacy.md
           - getting-started/i-added-a-repository-now-what.md
-          - getting-started/supported-languages.md
+          - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
     - "Your repositories":
           - repositories/repository-dashboard.md
@@ -468,7 +475,7 @@ nav:
           - repositories/issues-view.md
           - repositories/commits-view.md
           - repositories/files-view.md
-          - repositories/security-dashboard.md
+          - repositories/security-monitor.md
           - repositories/badges.md
           - repositories/quality-settings.md
           - repositories/managing-branches.md
@@ -509,10 +516,9 @@ nav:
                 - organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md
     - "Your account":
           - account/managing-your-profile.md
-          - account/default-patterns.md
           - account/notifications.md
     - "Related tools":
-          - related-tools/engines.md
+          - related-tools/codacy-plugin-tools.md
           - related-tools/client-side-tools.md
           - related-tools/run-local-analysis.md
           - related-tools/run-spotbugs.md
@@ -535,7 +541,7 @@ nav:
                 - faq/general/how-can-i-change-or-cancel-my-plan.md
           - Repositories:
                 - faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md
-                - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md
+                - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md
                 - faq/repositories/how-do-i-manually-force-a-repository-update.md
                 - faq/repositories/how-do-i-reanalyze-my-repository.md
                 - faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md
@@ -544,14 +550,13 @@ nav:
                 - faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md
           - Code analysis:
                 - faq/code-analysis/do-you-check-for-dependencies.md
-                - faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md
                 - faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md
                 - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
                 - faq/code-analysis/error-line-endings.md
                 - faq/code-analysis/skipping-an-analysis.md
           - Troubleshooting:
                 - faq/troubleshooting/why-is-my-file-missing.md
-                - faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md
+                - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
                 - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
                 - faq/troubleshooting/not-a-member-of-the-organization.md
                 - faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md
@@ -582,6 +587,8 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
           - "Codacy Self-hosted":
+                - release-notes/self-hosted/self-hosted-v3.0.0.md
+                - release-notes/self-hosted/self-hosted-v2.2.1.md
                 - release-notes/self-hosted/self-hosted-v2.2.0.md
                 - release-notes/self-hosted/self-hosted-v2.1.1.md
                 - release-notes/self-hosted/self-hosted-v2.1.0.md

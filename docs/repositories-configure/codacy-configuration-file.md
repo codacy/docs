@@ -8,7 +8,7 @@ You can ignore files globally, for certain categories (duplication or metrics) o
 
 To add custom extensions to a language you can also add an entry in this file, but keep in mind that some tools might not work out of the box with those extensions and might need changes.
 
-If you want to disable an engine that needs to be done directly in the [Code Patterns](code-patterns.md) page.
+If you want to disable a tool, you must do it directly on the [Code Patterns](code-patterns.md) page.
 
 The configuration file name must be **".codacy.yaml"** or **".codacy.yml"** and should be placed in the root of your repository.
 

@@ -1,6 +1,11 @@
 # How to contribute
 
-You're welcome to make fixes and changes to the documentation. Here are a few steps to get you going.
+You're welcome to make fixes and changes to the documentation. Here are a few steps to get you going:
+
+-   [Authoring documentation pages](#authoring-documentation-pages)
+-   [Releasing a new version of the documentation](#releasing-a-new-version-of-the-documentation)
+-   [Updating an existing version of the documentation](#updating-an-existing-version-of-the-documentation)
+-   [Applying documentation hotfixes to existing chart releases](#applying-documentation-hotfixes-to-existing-chart-releases)
 
 ## Authoring documentation pages
 
@@ -8,7 +13,7 @@ You're welcome to make fixes and changes to the documentation. Here are a few st
 
 [Build and preview](https://www.mkdocs.org/#getting-started) the generated HTML on your machine to validate your changes:
 
-1.  Clone the codacy/docs repository, including the submodules, and change into the local copy directory:
+1.  Clone the `codacy/docs` repository, including the submodules, and change into the local copy directory:
 
     ```bash
     git clone --recursive git@github.com:codacy/docs.git
@@ -28,7 +33,7 @@ You're welcome to make fixes and changes to the documentation. Here are a few st
     pip3 install -r requirements.txt
     ```
 
-4.  Build the static HTML pages and launch a local web server that allows you to easily see the generated pages as soon as you make any changes to the Markdown files:
+4.  Build the static HTML pages and launch a local web server that allows you to conveniently see the generated pages as soon as you make any changes to the Markdown files:
 
     ```bash
     mkdocs serve
@@ -38,7 +43,7 @@ You're welcome to make fixes and changes to the documentation. Here are a few st
 
 Follow these Markdown conventions when editing the documentation:
 
--   Name new Markdown files based on the title of the page, in lowercase and substituting spaces with hyphens. For example, `getting-started-with-codacy.md` for the page "Getting started with Codacy".
+-   Name new Markdown files based on the title of the page, in lowercase and substituting spaces with hyphens. For example, `getting-started-with-codacy.md` for the page "Getting started with Codacy."
 
     When you create a new markdown file, you must also add it to the `nav` section of the [`mkdocs.yml`](mkdocs.yml) file. This is what places the new page in the correct place of the table of contents of the documentation.
 
@@ -93,9 +98,9 @@ Create pull requests to make changes to the documentation:
 
 1.  Make commits of logical and atomic changes.
 
-1.  When you're ready to ask for a review on your work, open a pull request.
+1.  When you're ready to request a review on your work, open a pull request.
 
-    It really helps if you can give all the context necessary for the review, or pointers to more information, on the description of the pull request.
+    It helps if you can give all the context necessary for the review, or pointers to more information, on the description of the pull request.
 
 1.  Make sure that the documentation pages build successfully and that you have an approval from relevant stakeholders.
 
@@ -139,11 +144,11 @@ First, update the Latest documentation version with the new chart documentation:
 
 1.  Build the documentation and make sure that the changes for the new release of the chart are correct.
 
-1.  Open a pull request with this changes and merge the branch into `master`.
+1.  Open a pull request with these changes and merge the branch into `master`.
 
 ### Creating a new documentation version
 
-After updating the Latest documentation version, we're ready to create a new documentation version:
+After updating the Latest documentation version, you're ready to create a new documentation version:
 
 1.  Create a new release branch with the name `release/v<MAJOR>.<MINOR>` from the now updated `master` branch.
 
@@ -151,7 +156,7 @@ After updating the Latest documentation version, we're ready to create a new doc
 
     Delete the YAML block `plugins.redirects` from the file `mkdocs.yml`.
 
-1.  Delete the release notes from the release branch, since we're only publishing the release notes on the Latest or main version of the documentation.
+1.  Delete the release notes from the release branch, since you're only publishing the release notes on the Latest or main version of the documentation.
 
     Delete the folder `docs/release-notes` and all references to the files in this folder from the file `mkdocs.yml`.
 
@@ -161,7 +166,7 @@ After updating the Latest documentation version, we're ready to create a new doc
 
 ## Updating an existing version of the documentation
 
-We must update an existing version of the documentation when there is a new **patch release** of the [Codacy Self-hosted chart](https://github.com/codacy/chart).
+You must update an existing version of the documentation when there is a new **patch release** of the [Codacy Self-hosted chart](https://github.com/codacy/chart).
 
 To do this, you must update the documentation of the chart on the:
 
@@ -174,7 +179,7 @@ To do this, you must update the documentation of the chart on the:
 
 Sometimes it may be necessary to apply important documentation fixes to existing chart releases. This is typically done on the latest chart release, but depending on the fix, it may be necessary to apply it to older versions as well.
 
-To apply an hotfix to an existing chart release:
+To apply a hotfix to an existing chart release:
 
 1.  Use a pull request to apply the changes to the `master` branch of the chart. This ensures that the fixes will also be available on the next chart version.
 
@@ -203,7 +208,7 @@ To apply an hotfix to an existing chart release:
     git push --force origin --tags
     ```
 
-    This ensures that if we perform a bug fix release to the chart, the bug fix branch will be sourced from the tag pointing to the most recent commit and it will include all documentation hotfixes.
+    If there is a bug fix release to the chart, the bug fix branch will be sourced from the tag pointing to the most recent commit. This ensures that the bug fix branch will include all documentation hotfixes.
 
 1.  Finally, follow the instructions to deploy the updated documentation for the chart version that received the hotfix:
 

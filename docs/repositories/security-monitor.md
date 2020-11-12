@@ -1,12 +1,12 @@
-# Security Dashboard
+# Security Monitor
 
-On the security dashboard, you get an overview of all current security alerts.
+The **Security Monitor** provides an overview of all current security alerts.
 
-![Security Dashboard](images/security-dashboard.png)
+![Security Monitor](images/security-monitor.png)
 
 ## Supported languages
 
-The security monitor is available for the following languages:
+The Security Monitor is available for the following languages:
 
 -   Apex
 -   C#
@@ -28,10 +28,10 @@ The security monitor is available for the following languages:
 
 ## Tools
 
-The security monitor is built using security patterns from:
+The Security Monitor displays issues using security patterns from:
 
 -   [Bandit](https://bandit.readthedocs.io/en/latest/plugins/index.html#complete-test-plugin-listing)
--   [Brakeman](http://brakemanscanner.org/docs/warning_types/)
+-   [Brakeman](https://brakemanscanner.org/docs/warning_types/)
 -   [Codacy Scalameta Pro](https://github.com/codacy/codacy-scalameta/tree/master/patterns-base/src/main/scala/codacy/patterns)
 -   [ESLint](https://www.npmjs.com/package/eslint-plugin-security) (also: [1](https://www.npmjs.com/package/eslint-config-nodesecurity), [2](https://www.npmjs.com/package/eslint-plugin-scanjs-rules), [3](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml) and [4](https://www.npmjs.com/package/eslint-config-secure))
 -   [FindBugs](http://findbugs.sourceforge.net/bugDescriptions.html) (Codacy Self-hosted only)
@@ -43,15 +43,15 @@ The security monitor is built using security patterns from:
 -   [PHP Mess Detector](https://phpmd.org/rules/)
 -   [Pylint](http://pylint.pycqa.org/en/1.9/technical_reference/features.html) (Python 2)
 -   [Pylint](http://pylint.pycqa.org/en/stable/technical_reference/features.html) (Python 3)
--   [RuboCop](https://rubocop.readthedocs.io/en/latest/cops/)
+-   [Rubocop](https://rubocop.readthedocs.io/en/latest/cops/)
 -   [Cppcheck](http://cppcheck.sourceforge.net/)
--   [Shellcheck](https://github.com/koalaman/shellcheck/wiki/Checks)
+-   [ShellCheck](https://github.com/koalaman/shellcheck/wiki/Checks)
 -   [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)
 -   [Hadolint](https://github.com/hadolint/hadolint#rules)
 -   [Prospector](https://github.com/PyCQA/prospector)
 -   [Bundler-audit](https://rubydoc.info/gems/bundler-audit/frames)
 -   [Credo](https://github.com/rrrene/credo/)
--   [FlawFinder](https://dwheeler.com/flawfinder/)
+-   [Flawfinder](https://dwheeler.com/flawfinder/)
 -   [PSScriptAnalyzer](https://dwheeler.com/flawfinder/)
 -   [TSQLLint](https://github.com/tsqllint/tsqllint/)
 -   [CodeNarc](https://codenarc.github.io/CodeNarc/codenarc-rule-index.html)
@@ -60,14 +60,14 @@ The security monitor is built using security patterns from:
 
 -   **XSS:** XSS enables attackers to inject client-side scripts into web pages viewed by other users.
 -   **Input validation:** Input not validated may originate SQL Injection attacks for instance.
--   **File access:** An attacker may use special paths to access files that should not be accessible.
+-   **File access:** An attacker may use special paths to access files that shouldn't be accessible.
 -   **HTTP:** HTTP headers are a common attack vector for malign users.
 -   **Cookies:** An HTTP cookie is a small piece of data sent from a website and stored on the user's computer by the browser while the user is browsing.
 -   **Unexpected behaviour:** Assigning values to private APIs might lead to unexpected behaviour.
 -   **Mass assignment:** Mass assignment is a feature of Rails which allows an application to create a record from the values of a hash.
--   **Insecure storage:** Storing sensitive data using this APIs is not safe.
+-   **Insecure storage:** Storing sensitive data using this APIs isn't safe.
 -   **Insecure modules/libraries:** Consider possible security implications associated with some modules.
--   **Visibility:** Fields should not have public accessibility.
+-   **Visibility:** Fields shouldn't have public accessibility.
 -   **CSRF:** Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated.
 -   **Android:** Android specific issues.
 -   **Malicious code:** Exposed internal APIs can be accessed or change changed by malicious code or by accident from another package.
@@ -86,9 +86,9 @@ The security monitor is built using security patterns from:
 
 Each security category listed on the left-hand side of the dashboard has one of four states:
 
-| State                                           | Description |
-| :---------------------------------------------: | ----------- |
-| ![Green](images/security-dashboard-green.png)   | **Everything is OK for this category.** All the security patterns in this category are enabled, and no security issues have been found. |
-| ![Yellow](images/security-dashboard-yellow.png) | **There are security patterns in this category that are disabled.** You should enable the patterns in this category so it is verified.<br/>To enable all security patterns on the repository, click the button **More** and select **Turn on all security patterns**. |
-| ![Red](images/security-dashboard-red.png)       | **There are security issues identified for this category.** |
-|                                                 | A blue info icon means that **Codacy cannot be sure if you have all the security patterns in this category enabled**. This happens when you are using configuration files to control which patterns are enabled. |
+|                     State                     | Description                                                                                                                                                                                                                                                          |
+| :-------------------------------------------: | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+|  ![Green](images/security-monitor-green.png)  | **Everything is OK for this category.** All the security patterns in this category are enabled, and no security issues have been found.                                                                                                                              |
+| ![Yellow](images/security-monitor-yellow.png) | **There are security patterns in this category that are disabled.** You should enable the patterns in this category so it's verified.<br/>To enable all security patterns on the repository, click the button **More** and select **Turn on all security patterns**. |
+|    ![Red](images/security-monitor-red.png)    | **There are security issues identified for this category.**                                                                                                                                                                                                          |
+|                                               | A blue info icon means that **Codacy cannot be sure if you have all the security patterns in this category enabled**. This happens when you are using configuration files to control which patterns are enabled.                                                     |

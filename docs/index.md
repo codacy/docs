@@ -33,6 +33,15 @@
 <h2>Most popular topics</h2>
 
 <div class="topic-row">
+  <a class="topic-card" href="getting-started/supported-languages-and-tools/">
+    <div class="tc-icon">
+      <img src="/assets/images/icon-checkmark.svg">
+    </div>
+    <div class="tc-content">
+      <div>Supported languages</div>
+      <div>Codacy supports over 30 programming languages out of the box.</div>
+    </div>
+  </a>
   <a class="topic-card" href="coverage-reporter/adding-coverage-to-your-repository/">
     <div class="tc-icon">
       <img src="/assets/images/icon-checklist.svg">
@@ -42,22 +51,13 @@
       <div>Set up your repositories to show code coverage reports directly on Codacy.</div>
     </div>
   </a>
-  <a class="topic-card"  href="related-tools/client-side-tools/">
-    <div class="tc-icon">
-      <img src="/assets/images/icon-checkmark.svg">
-    </div>
-    <div class="tc-content">
-      <div>Client-side tools</div>
-      <div>Run any linter tool locally or as part of your CI process and integrate the results with your Codacy workflow.</div>
-    </div>
-  </a>
   <a class="topic-card"  href="organizations/adding-and-managing-authors/">
     <div class="tc-icon">
       <img src="/assets/images/icon-user-management.svg">
     </div>
     <div class="tc-content">
       <div>Adding and managing Authors</div>
-      <div>Allow Codacy to analyze commits from contributors who are not part of your Codacy organization.</div>
+      <div>Allow Codacy to analyze commits from contributors who aren't part of your Codacy organization.</div>
     </div>
   </a>
 </div>
