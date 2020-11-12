@@ -5,6 +5,9 @@
     "lint-heading-increment",
     [
       "lint-unordered-list-marker-style", "-"
+    ],
+    [
+      "lint-ordered-list-marker-value", "one"
     ]
   ]
 }
