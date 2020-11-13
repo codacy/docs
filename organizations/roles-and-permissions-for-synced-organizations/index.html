@@ -2584,10 +2584,8 @@
 <td><strong>Modify billing</strong></td>
 </tr>
 <tr>
-<td rowspan="4">
-<p>GitHub Cloud</p>
-</td>
-<td>Outside Collaborator<sup>1</sup></td>
+<td rowspan="7">GitHub Cloud and<br/>GitHub Enterprise</td>
+<td>Outside Collaborator<sup><a href="#note-1">1</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -2597,19 +2595,49 @@
 <td>No</td>
 </tr>
 <tr>
-<td>Member</td>
-<td>Configurable<sup>2</sup></td>
+<td>Repository Read</td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
+<td>Configurable<sup><a href="#note-3">3</a></sup></td>
 <td>No</td>
 <td>No</td>
+<td>Yes</td>
 <td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Repository Triage</td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
+<td>Configurable<sup><a href="#note-3">3</a></sup></td>
+<td>No</td>
+<td>No</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Repository Write</td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
+<td>Configurable<sup><a href="#note-3">3</a></sup></td>
+<td>No</td>
+<td>Yes</td>
+<td>Yes</td>
+<td>No</td>
+<td>No</td>
+</tr>
+<tr>
+<td>Repository Maintain</td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
+<td>Configurable<sup><a href="#note-3">3</a></sup></td>
+<td>No</td>
+<td>Yes</td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
 </tr>
 <tr>
 <td>Repository Admin</td>
-<td>Configurable<sup>2</sup></td>
-<td>Yes</td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
+<td>Configurable<sup><a href="#note-3">3</a></sup></td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -2617,8 +2645,8 @@
 <td>No</td>
 </tr>
 <tr>
-<td>Owner</td>
-<td>Configurable<sup>2</sup></td>
+<td>Organization Owner</td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -2628,7 +2656,7 @@
 </tr>
 <tr>
 <td rowspan="7">GitLab Cloud</td>
-<td>External User<sup>1</sup></td>
+<td>External User<sup><a href="#note-1">1</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -2639,7 +2667,7 @@
 </tr>
 <tr>
 <td><span>Guest</span></td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -2649,7 +2677,7 @@
 </tr>
 <tr>
 <td><span>Reporter</span></td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -2659,7 +2687,7 @@
 </tr>
 <tr>
 <td><span>Developer</span></td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -2669,7 +2697,7 @@
 </tr>
 <tr>
 <td><span>Maintainer</span></td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -2679,7 +2707,7 @@
 </tr>
 <tr>
 <td><span>Owner</span></td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -2689,7 +2717,7 @@
 </tr>
 <tr>
 <td><span>Administrator</span></td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -2698,9 +2726,9 @@
 <td>Yes</td>
 </tr>
 <tr>
-<td rowspan="4">Bitbucket Cloud and Bitbucket Server</td>
+<td rowspan="4">Bitbucket Cloud and<br/>Bitbucket Server</td>
 <td>Read</td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -2710,7 +2738,7 @@
 </tr>
 <tr>
 <td>Write</td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -2720,7 +2748,7 @@
 </tr>
 <tr>
 <td>Admin</td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -2731,8 +2759,9 @@
 </tbody>
 </table>
 
-<p><sup>1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can <a href="../adding-and-managing-authors/">add them as Authors</a> so that their commits are analyzed by Codacy.<br />
-<sup>2</sup>: Depending on your <a href="../what-are-synced-organizations/#managing-people-in-an-organization">setting for accepting new people</a>.</p>
+<p><sup id="note-1">1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can <a href="../adding-and-managing-authors/">add them as Authors</a> so that Codacy analyzes their commits.<br />
+<sup id="note-2">2</sup>: Joining an organization may need an approval depending on your setting for <a href="../what-are-synced-organizations/#managing-people-in-an-organization">accepting new people</a>.<br />
+<sup id="note-3">3</sup>: Depending on your setting for <a href="../how-to-configure-which-users-can-ignore-issues/">configuring which users can ignore issues</a>.</p>
 <p>See <a href="../what-are-synced-organizations/#managing-people-in-an-organization">managing people in an organization</a> to list your organization members and their role.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -2746,7 +2775,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 23, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 13, 2020</span>
     
   </small>
 </div>
