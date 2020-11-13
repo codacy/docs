@@ -86,8 +86,8 @@ plugins:
               "hc/en-us/articles/115002130625-Codacy-Configuration-File.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/115002330985.md": "repositories-configure/specifying-your-python-version.md"
               "hc/en-us/articles/115002330985-Specifying-your-Python-version.md": "repositories-configure/specifying-your-python-version.md"
-              "hc/en-us/articles/115002492425.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md"
-              "hc/en-us/articles/115002492425-NodeSecurity-Dependencies-Inspection.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md"
+              "hc/en-us/articles/115002492425.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
+              "hc/en-us/articles/115002492425-NodeSecurity-Dependencies-Inspection.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
               "hc/en-us/articles/115003405529.md": "getting-started/which-permissions-does-codacy-need-from-my-account.md"
               "hc/en-us/articles/115003405529-Which-permissions-does-Codacy-need-from-my-account-.md": "getting-started/which-permissions-does-codacy-need-from-my-account.md"
               "hc/en-us/sections/201760869-Integrations.md": "repositories-configure/integrations/github-integration.md"
@@ -275,8 +275,8 @@ plugins:
               "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "organizations/how-to-configure-which-users-can-ignore-issues.md"
               "hc/en-us/articles/360012141513.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md"
               "hc/en-us/articles/360012141513-Scheduled-Maintenance-Saturday-17th-Nov-8-00-GMT-0-00-PST-.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md"
-              "hc/en-us/articles/360012328140.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md"
-              "hc/en-us/articles/360012328140-Removal-of-NodeSecurity-GoLint-and-SCSSLint.md": "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md"
+              "hc/en-us/articles/360012328140.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
+              "hc/en-us/articles/360012328140-Removal-of-NodeSecurity-GoLint-and-SCSSLint.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
               "hc/en-us/articles/360012494113.md": "release-notes/cloud/cloud-release-notes-|-16-november-2018.md"
               "hc/en-us/articles/360012494113-Cloud-Release-Notes-16-November-2018.md": "release-notes/cloud/cloud-release-notes-|-16-november-2018.md"
               "hc/en-us/articles/360012563579.md": "faq/general/how-does-codacy-support-bitbucket-server.md"
@@ -464,6 +464,7 @@ plugins:
               "related-tools/engines.md": "getting-started/supported-languages-and-tools.md"
               "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
               "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
+              "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -569,7 +570,7 @@ nav:
           - release-notes/index.md
           - "Codacy Cloud":
                 - release-notes/cloud/deprecating-http-headers-for-api-tokens.md
-                - release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md
+                - release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md
                 - release-notes/cloud/codacy-now-supports-github-apps.md
                 - release-notes/cloud/cloud-release-notes-|-15-nov-2019.md
                 - release-notes/cloud/cloud-release-notes-|-30-oct-2019.md

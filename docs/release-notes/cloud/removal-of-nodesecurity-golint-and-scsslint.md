@@ -1,4 +1,4 @@
-# Removal of NodeSecurity, GoLint and SCSSLint
+# Removal of NodeSecurity, GoLint, and SCSSLint
 
 On the week of March 9th 2020, we'll be removing some tools from Codacy.
 
