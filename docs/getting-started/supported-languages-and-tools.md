@@ -83,7 +83,7 @@ The table below lists all programming languages currently supported by Codacy an
       <td>Go</td>
       <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"><sup>*</sup></a>,
           <a href="https://github.com/mgechev/revive">Revive</a>,
-          <a href="https://staticcheck.io/docs">Staticcheck</a><a href="#client-side"><sup>*</sup></a>
+          <a href="https://staticcheck.io/">Staticcheck</a><a href="#client-side"><sup>*</sup></a>
       </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a></td>
