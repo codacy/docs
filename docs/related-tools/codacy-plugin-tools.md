@@ -149,6 +149,10 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-sqlint">https://github.com/codacy/codacy-sqlint</a></td>
 </tr>
 <tr>
+<td><a href="https://st aticcheck.io" class="in-cell-link">Staticcheck</a></td>
+<td><a href="https://github.com/codacy/codacy-staticcheck" class="in-cell-link">https://github.com/codacy/codacy-staticcheck</a></td>
+</tr>
+<tr>
 <td><a href="https://stylelint.io/">Stylelint</a></td>
 <td><a href="https://github.com/codacy/codacy-stylelint">https://github.com/codacy/codacy-stylelint</a></td>
 </tr>
