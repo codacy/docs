@@ -17,7 +17,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td rowspan="7">GitHub Cloud and<br/>GitHub Enterprise</td>
-<td>Outside Collaborator<sup>1</sup></td>
+<td>Outside Collaborator<sup><a href="#note-1">1</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -28,8 +28,8 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td>Repository Read</td>
-<td>Configurable<sup>2</sup></td>
-<td>Configurable<sup>3</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
+<td>Configurable<sup><a href="#note-3">3</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>Yes</td>
@@ -38,8 +38,8 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td>Repository Triage</td>
-<td>Configurable<sup>2</sup></td>
-<td>No</td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
+<td>Configurable<sup><a href="#note-3">3</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>Yes</td>
@@ -48,8 +48,8 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td>Repository Write</td>
-<td>Configurable<sup>2</sup></td>
-<td>Configurable<sup>3</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
+<td>Configurable<sup><a href="#note-3">3</a></sup></td>
 <td>No</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -58,8 +58,8 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td>Repository Maintain</td>
-<td>Configurable<sup>2</sup></td>
-<td>No</td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
+<td>Configurable<sup><a href="#note-3">3</a></sup></td>
 <td>No</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -68,8 +68,8 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td>Repository Admin</td>
-<td>Configurable<sup>2</sup></td>
-<td>Configurable<sup>3</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
+<td>Configurable<sup><a href="#note-3">3</a></sup></td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -78,7 +78,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td>Organization Owner</td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -88,7 +88,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td rowspan="7">GitLab Cloud</td>
-<td>External User<sup>1</sup></td>
+<td>External User<sup><a href="#note-1">1</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -99,7 +99,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td><span>Guest</span></td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -109,7 +109,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td><span>Reporter</span></td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -119,7 +119,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td><span>Developer</span></td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -129,7 +129,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td><span>Maintainer</span></td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>Yes</td>
 <td>No</td>
 <td>No</td>
@@ -139,7 +139,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td><span>Owner</span></td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -149,7 +149,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td><span>Administrator</span></td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -160,7 +160,7 @@ Depending on your role on the Git provider you will have different permissions o
 <tr>
 <td rowspan="4">Bitbucket Cloud and<br/>Bitbucket Server</td>
 <td>Read</td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -170,7 +170,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td>Write</td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>No</td>
 <td>No</td>
 <td>No</td>
@@ -180,7 +180,7 @@ Depending on your role on the Git provider you will have different permissions o
 </tr>
 <tr>
 <td>Admin</td>
-<td>Configurable<sup>2</sup></td>
+<td>Yes<sup><a href="#note-2">2</a></sup></td>
 <td>Yes</td>
 <td>Yes</td>
 <td>Yes</td>
@@ -191,9 +191,9 @@ Depending on your role on the Git provider you will have different permissions o
 </tbody>
 </table>
 
-<sup>1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can [add them as Authors](adding-and-managing-authors.md) so that Codacy analyzes their commits.  
-<sup>2</sup>: Depending on your setting for [accepting new people](what-are-synced-organizations.md#managing-people-in-an-organization).  
-<sup>3</sup>: Depending on your setting for [configuring which users can ignore issues](how-to-configure-which-users-can-ignore-issues.md).
+<sup id="note-1">1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can [add them as Authors](adding-and-managing-authors.md) so that Codacy analyzes their commits.  
+<sup id="note-2">2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](what-are-synced-organizations.md#managing-people-in-an-organization).  
+<sup id="note-3">3</sup>: Depending on your setting for [configuring which users can ignore issues](how-to-configure-which-users-can-ignore-issues.md).
 
 See [managing people in an organization](what-are-synced-organizations.md#managing-people-in-an-organization) to list your organization members and their role.
 
