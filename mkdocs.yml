@@ -1,21 +1,22 @@
 # Project information
-site_name: Codacy docs
-site_url: https://docs.codacy.com/
-site_author: "Codacy - Automated code review"
+site_name: "Codacy docs"
+site_description: "Documentation for the Codacy automated code review tool"
+site_url: "https://docs.codacy.com/"
+site_author: "support@codacy.com"
 
 # Copyright
 copyright: "© 2020 <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
 
 # Configuration
 theme:
-    name: material
+    name: "material"
     custom_dir: "submodules/mkdocs-codacy-theme/material"
     font: false
-    language: en
+    language: "en"
     favicon: "assets/images/favicon.ico"
     palette:
-        primary: indigo
-        accent: indigo
+        primary: "indigo"
+        accent: "indigo"
     logo: "assets/images/codacy-docs-logo.svg"
     features: []
 
@@ -29,7 +30,7 @@ strict: true
 
 # Extra variables
 extra:
-  version: 3.0.0
+  version: "3.0.0"
   segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
 
 # Repository
