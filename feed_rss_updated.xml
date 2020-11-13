@@ -16,8 +16,8 @@
     <language>en</language>
 
     <!-- Timestamps and frequency -->
-    <pubDate>Fri, 13 Nov 2020 15:58:10 -0000</pubDate>
-    <lastBuildDate>Fri, 13 Nov 2020 15:58:10 -0000</lastBuildDate>
+    <pubDate>Fri, 13 Nov 2020 16:02:12 -0000</pubDate>
+    <lastBuildDate>Fri, 13 Nov 2020 16:02:12 -0000</lastBuildDate>
     <ttl>1440</ttl>
 
     <!-- Credits -->
@@ -35,12 +35,24 @@
     <!-- Entries -->
     
     <item>
+      <title>Generating coverage reports</title>
+      <description># Generating coverage reports
+
+Code coverage is a metric used to describe the degree to which the source code of a program is tested. A program with h</description>
+      <link>https://docs.codacy.com/coverage-reporter/generating-coverage-reports/</link>
+      <pubDate>Fri, 13 Nov 2020 16:02:14 -0000</pubDate>
+      <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
+      <guid isPermaLink="true">https://docs.codacy.com/coverage-reporter/generating-coverage-reports/</guid>
+      
+    </item>
+    
+    <item>
       <title>Troubleshooting common issues</title>
       <description># Troubleshooting common issues
 
 The sections below provide instructions or workarounds to overcome common issues while using Codacy Coverage Reporter</description>
       <link>https://docs.codacy.com/coverage-reporter/troubleshooting-common-issues/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:12 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:14 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/coverage-reporter/troubleshooting-common-issues/</guid>
       
@@ -54,7 +66,7 @@ This documentation guides you on how to install Codacy Self-hosted on Kubernetes
 
 To install Codacy you </description>
       <link>https://docs.codacy.com/chart/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/</guid>
       
@@ -68,7 +80,7 @@ Before installing Codacy you must ensure that you have the following infrastruct
 
 -   </description>
       <link>https://docs.codacy.com/chart/requirements/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/requirements/</guid>
       
@@ -82,7 +94,7 @@ Currently, we support two monitoring solutions:
 
 -   **[Crow](#setting-up-monitoring-using-crow):** A simple, lightweight, and built-in </description>
       <link>https://docs.codacy.com/chart/configuration/monitoring/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/configuration/monitoring/</guid>
       
@@ -96,7 +108,7 @@ Follow the instructions below to set up the Codacy integration with Bitbucket Cl
 
 ## Create an OAuth consumer {: id=&#34;create-oau</description>
       <link>https://docs.codacy.com/chart/configuration/integrations/bitbucket-cloud/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/configuration/integrations/bitbucket-cloud/</guid>
       
@@ -110,7 +122,7 @@ Follow the instructions below to set up the Codacy integration with Bitbucket Se
 
 ## Create a Bitbucket Server application li</description>
       <link>https://docs.codacy.com/chart/configuration/integrations/bitbucket-server/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/configuration/integrations/bitbucket-server/</guid>
       
@@ -124,7 +136,7 @@ Follow the instructions below to set up Codacy to send emails using your SMTP se
 
 1.  Edit the file `values-production.yaml` that you [</description>
       <link>https://docs.codacy.com/chart/configuration/integrations/email/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/configuration/integrations/email/</guid>
       
@@ -136,7 +148,7 @@ Follow the instructions below to set up Codacy to send emails using your SMTP se
 
 You must create and correctly set up a [GitHub App](https://developer.github.com/apps/about-apps/) to allow Codacy to integra</description>
       <link>https://docs.codacy.com/chart/configuration/integrations/github-app-create/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/configuration/integrations/github-app-create/</guid>
       
@@ -150,7 +162,7 @@ Follow the instructions below to set up the Codacy integration with GitHub Cloud
 
 1.  Follow the instructions on [creating a GitHub A</description>
       <link>https://docs.codacy.com/chart/configuration/integrations/github-cloud/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/configuration/integrations/github-cloud/</guid>
       
@@ -164,7 +176,7 @@ Follow the instructions below to set up the Codacy integration with GitHub Enter
 
 1.  Follow the instructions on [creating </description>
       <link>https://docs.codacy.com/chart/configuration/integrations/github-enterprise/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/configuration/integrations/github-enterprise/</guid>
       
@@ -178,7 +190,7 @@ Follow the instructions below to set up the Codacy integration with GitLab Cloud
 
 ## Create a GitLab application {: id=&#34;create-applic</description>
       <link>https://docs.codacy.com/chart/configuration/integrations/gitlab-cloud/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/configuration/integrations/gitlab-cloud/</guid>
       
@@ -192,7 +204,7 @@ Follow the instructions below to set up the Codacy integration with GitLab Enter
 
 ## Create a GitLab application {: id=&#34;cre</description>
       <link>https://docs.codacy.com/chart/configuration/integrations/gitlab-enterprise/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/configuration/integrations/gitlab-enterprise/</guid>
       
@@ -204,7 +216,7 @@ Follow the instructions below to set up the Codacy integration with GitLab Enter
 
 Follow the instructions below to set up an Amazon EKS cluster from scratch, including all the necessary underlying i</description>
       <link>https://docs.codacy.com/chart/infrastructure/eks-quickstart/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/infrastructure/eks-quickstart/</guid>
       
@@ -216,7 +228,7 @@ Follow the instructions below to set up an Amazon EKS cluster from scratch, incl
 
 [MicroK8s](https://microk8s.io/) is a lightweight, fully conformant, single-package Kubernetes developed by Canonical. </description>
       <link>https://docs.codacy.com/chart/infrastructure/microk8s-quickstart/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/infrastructure/microk8s-quickstart/</guid>
       
@@ -231,7 +243,7 @@ Migrating databases between pods is a straightforward process with 3 steps:
 1.  Dump the databases to a dump file.
 2.  Ap</description>
       <link>https://docs.codacy.com/chart/maintenance/database/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/maintenance/database/</guid>
       
@@ -243,7 +255,7 @@ Migrating databases between pods is a straightforward process with 3 steps:
 
 Some changes to your Codacy plan require that you update your Codacy license with a new one provided by a Codacy repre</description>
       <link>https://docs.codacy.com/chart/maintenance/license/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/maintenance/license/</guid>
       
@@ -259,7 +271,7 @@ To do so run:
 ```bash
 helm -n codacy unin</description>
       <link>https://docs.codacy.com/chart/maintenance/uninstall/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/maintenance/uninstall/</guid>
       
@@ -273,7 +285,7 @@ To upgrade Codacy to the latest stable version:
 
 1.  Check the [release notes](/release-notes/) for all Codacy Self-hosted version</description>
       <link>https://docs.codacy.com/chart/maintenance/upgrade/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/maintenance/upgrade/</guid>
       
@@ -290,23 +302,9 @@ To upgrade Codacy to the latest stable version:
 ```bash
 sudo git clone git://github.com/codacy/chart -b &lt;YOUR-BRANCH&gt;</description>
       <link>https://docs.codacy.com/chart/troubleshoot/k8s-cheatsheet/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
+      <pubDate>Fri, 13 Nov 2020 16:02:13 -0000</pubDate>
       <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
       <guid isPermaLink="true">https://docs.codacy.com/chart/troubleshoot/k8s-cheatsheet/</guid>
-      
-    </item>
-    
-    <item>
-      <title>Collecting logs for Support</title>
-      <description># Collecting logs for Support
-
-To help troubleshoot issues, obtain the logs from your Codacy instance and send them to Codacy&#39;s Support:
-
-1.  Download</description>
-      <link>https://docs.codacy.com/chart/troubleshoot/logs-collect/</link>
-      <pubDate>Fri, 13 Nov 2020 15:58:11 -0000</pubDate>
-      <source url="https://docs.codacy.com/feed_rss_updated.xml">Codacy docs</source>
-      <guid isPermaLink="true">https://docs.codacy.com/chart/troubleshoot/logs-collect/</guid>
       
     </item>
     
