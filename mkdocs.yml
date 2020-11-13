@@ -1,6 +1,10 @@
 # Project information
 site_name: Codacy docs
 site_url: https://docs.codacy.com/
+site_author: "Codacy - Automated code review"
+
+# Copyright
+copyright: "© 2020 <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
 
 # Configuration
 theme:
@@ -32,9 +36,6 @@ extra:
 # repo_name: "codacy/docs"
 # repo_url: "https://github.com/codacy/docs"
 
-# Copyright
-copyright: '© 2020 <a href="https://www.codacy.com">Codacy</a> - Automated code review'
-
 # Extensions
 markdown_extensions:
     - admonition
@@ -56,6 +57,8 @@ plugins:
     - git-revision-date-localized
     - monorepo
     - markdownextradata
+    - rss:
+          image: "https://docs.codacy.com/assets/images/codacy-logo.png"
     - redirects:
           redirect_maps:
               # Redirect legacy Zendesk knowledge base pages
