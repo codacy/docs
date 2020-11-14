@@ -14,6 +14,12 @@ jobs:
           token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
           submodules: true
           fetch-depth: 0
+      - run: |
+          echo "Running git log"
+          git submodule status
+          echo "---"
+          git log submodules/chart/docs/index.md
+          echo "Finished running git log"
 
       - name: Set up Python
         uses: actions/setup-python@v1
@@ -36,6 +42,7 @@ jobs:
       - name: Build docs
         run: |
           mkdocs build
+          less site/feed_rss_updated.xml
 
   deploy-version:
     name: Deploy version
