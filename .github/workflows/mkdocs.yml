@@ -16,9 +16,15 @@ jobs:
           fetch-depth: 0
       - run: |
           echo "Running git log"
+          git submodule init
+          git submodule update
           git submodule status
           echo "---"
           git log submodules/chart/docs/index.md
+          echo "---"
+          cd submodules/chart
+          git log --date="short" --diff-filter=AR docs/requirements.md
+          cd ../..
           echo "Finished running git log"
 
       - name: Set up Python
