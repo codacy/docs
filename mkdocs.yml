@@ -56,10 +56,12 @@ markdown_extensions:
 plugins:
     - search
     - git-revision-date-localized
+# The RSS plugin is disabled because it doesn't support submodules yet,
+# see https://github.com/Guts/mkdocs-rss-plugin/issues/23
+#   - rss:
+#         image: "https://docs.codacy.com/assets/images/codacy-logo.png"
     - monorepo
     - markdownextradata
-    - rss:
-          image: "https://docs.codacy.com/assets/images/codacy-logo.png"
     - redirects:
           redirect_maps:
               # Redirect legacy Zendesk knowledge base pages
