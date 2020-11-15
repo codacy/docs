@@ -9,9 +9,9 @@
       <div>Sign up with your Git provider so that Codacy can have access to your Git provider organizations and members. You can then add any repository you have access to with one click.</div>
     </a>
 
-    <a class="content-link" href="getting-started/i-added-a-repository-now-what/">
-      <div>Exploring your analysis results</div>
-      <div>Codacy begins an initial analysis as soon as you add a repository. Explore the analysis results on the repository dashboard and configure Codacy for your repository.</div>
+    <a class="content-link" href="getting-started/supported-languages-and-tools/">
+      <div>Supported languages</div>
+      <div>Codacy supports over 30 programming languages out of the box, and regularly adds support for new languages and tools.</div>
     </a>
   </div>
 
@@ -33,13 +33,13 @@
 <h2>Most popular topics</h2>
 
 <div class="topic-row">
-  <a class="topic-card" href="getting-started/supported-languages-and-tools/">
+  <a class="topic-card" href="repositories-configure/code-patterns/">
     <div class="tc-icon">
       <img src="/assets/images/icon-checkmark.svg">
     </div>
     <div class="tc-content">
-      <div>Supported languages</div>
-      <div>Codacy supports over 30 programming languages out of the box.</div>
+      <div>Configuring code patterns</div>
+      <div>Adapt Codacy to your scenario by configuring the code patterns used to analyze your repositories</div>
     </div>
   </a>
   <a class="topic-card" href="coverage-reporter/adding-coverage-to-your-repository/">
