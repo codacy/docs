@@ -30,31 +30,31 @@ The Security Monitor is available for the following languages:
 
 The Security Monitor displays issues using security patterns from:
 
--   [Bandit](https://bandit.readthedocs.io/en/latest/plugins/index.html#complete-test-plugin-listing)
--   [Brakeman](https://brakemanscanner.org/docs/warning_types/)
--   [Codacy Scalameta Pro](https://github.com/codacy/codacy-scalameta/tree/master/patterns-base/src/main/scala/codacy/patterns)
--   [ESLint](https://www.npmjs.com/package/eslint-plugin-security) (also: [1](https://www.npmjs.com/package/eslint-config-nodesecurity), [2](https://www.npmjs.com/package/eslint-plugin-scanjs-rules), [3](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml) and [4](https://www.npmjs.com/package/eslint-config-secure))
--   [FindBugs](http://findbugs.sourceforge.net/bugDescriptions.html) (Codacy Self-hosted only)
--   [FindBugsSecurity](https://find-sec-bugs.github.io/bugs.htm) (Codacy Self-hosted only)
--   [SpotBugs](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html) (Codacy Self-hosted only)
--   [Sonar C#](https://rules.sonarsource.com/csharp/type/Vulnerability)
--   [Sonar VB.NET](https://rules.sonarsource.com/vbnet)
--   [PMD](https://pmd.github.io/pmd-6.21.0/)
--   [PHP Mess Detector](https://phpmd.org/rules/)
--   [Pylint](http://pylint.pycqa.org/en/1.9/technical_reference/features.html) (Python 2)
--   [Pylint](http://pylint.pycqa.org/en/stable/technical_reference/features.html) (Python 3)
--   [Rubocop](https://rubocop.readthedocs.io/en/latest/cops/)
--   [Cppcheck](http://cppcheck.sourceforge.net/)
--   [ShellCheck](https://github.com/koalaman/shellcheck/wiki/Checks)
--   [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer)
--   [Hadolint](https://github.com/hadolint/hadolint#rules)
--   [Prospector](https://github.com/PyCQA/prospector)
--   [Bundler-audit](https://rubydoc.info/gems/bundler-audit/frames)
--   [Credo](https://github.com/rrrene/credo/)
--   [Flawfinder](https://dwheeler.com/flawfinder/)
--   [PSScriptAnalyzer](https://dwheeler.com/flawfinder/)
--   [TSQLLint](https://github.com/tsqllint/tsqllint/)
--   [CodeNarc](https://codenarc.github.io/CodeNarc/codenarc-rule-index.html)
+-   [Bandit](https://bandit.readthedocs.io/en/latest/plugins/index.html#complete-test-plugin-listing){: target="_blank"}
+-   [Brakeman](https://brakemanscanner.org/docs/warning_types/){: target="_blank"}
+-   [Codacy Scalameta Pro](https://github.com/codacy/codacy-scalameta/tree/master/patterns-base/src/main/scala/codacy/patterns){: target="_blank"}
+-   [ESLint](https://www.npmjs.com/package/eslint-plugin-security){: target="_blank"} (also: [1](https://www.npmjs.com/package/eslint-config-nodesecurity){: target="_blank"}, [2](https://www.npmjs.com/package/eslint-plugin-scanjs-rules){: target="_blank"}, [3](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml){: target="_blank"} and [4](https://www.npmjs.com/package/eslint-config-secure){: target="_blank"})
+-   [FindBugs](http://findbugs.sourceforge.net/bugDescriptions.html){: target="_blank"} (Codacy Self-hosted only)
+-   [FindBugsSecurity](https://find-sec-bugs.github.io/bugs.htm){: target="_blank"} (Codacy Self-hosted only)
+-   [SpotBugs](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html){: target="_blank"} (Codacy Self-hosted only)
+-   [Sonar C#](https://rules.sonarsource.com/csharp/type/Vulnerability){: target="_blank"}
+-   [Sonar VB.NET](https://rules.sonarsource.com/vbnet){: target="_blank"}
+-   [PMD](https://pmd.github.io/pmd-6.21.0/){: target="_blank"}
+-   [PHP Mess Detector](https://phpmd.org/rules/){: target="_blank"}
+-   [Pylint](http://pylint.pycqa.org/en/1.9/technical_reference/features.html){: target="_blank"} (Python 2)
+-   [Pylint](http://pylint.pycqa.org/en/stable/technical_reference/features.html){: target="_blank"} (Python 3)
+-   [Rubocop](https://rubocop.readthedocs.io/en/latest/cops/){: target="_blank"}
+-   [Cppcheck](http://cppcheck.sourceforge.net/){: target="_blank"}
+-   [ShellCheck](https://github.com/koalaman/shellcheck/wiki/Checks){: target="_blank"}
+-   [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer){: target="_blank"}
+-   [Hadolint](https://github.com/hadolint/hadolint#rules){: target="_blank"}
+-   [Prospector](https://github.com/PyCQA/prospector){: target="_blank"}
+-   [Bundler-audit](https://rubydoc.info/gems/bundler-audit/frames){: target="_blank"}
+-   [Credo](https://github.com/rrrene/credo/){: target="_blank"}
+-   [Flawfinder](https://dwheeler.com/flawfinder/){: target="_blank"}
+-   [PSScriptAnalyzer](https://dwheeler.com/flawfinder/){: target="_blank"}
+-   [TSQLLint](https://github.com/tsqllint/tsqllint/){: target="_blank"}
+-   [CodeNarc](https://codenarc.github.io/CodeNarc/codenarc-rule-index.html){: target="_blank"}
 
 ## Supported categories
 
