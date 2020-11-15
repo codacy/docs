@@ -63,24 +63,24 @@ The Security Monitor displays issues using security patterns from:
 -   **File access:** An attacker may use special paths to access files that shouldn't be accessible.
 -   **HTTP:** HTTP headers are a common attack vector for malign users.
 -   **Cookies:** An HTTP cookie is a small piece of data sent from a website and stored on the user's computer by the browser while the user is browsing.
--   **Unexpected behaviour:** Assigning values to private APIs might lead to unexpected behaviour.
+-   **Unexpected behaviour:** Assigning values to private APIs might lead to unexpected behavior.
 -   **Mass assignment:** Mass assignment is a feature of Rails which allows an application to create a record from the values of a hash.
--   **Insecure storage:** Storing sensitive data using this APIs isn't safe.
+-   **Insecure storage:** Storing sensitive data using these APIs isn't safe.
 -   **Insecure modules/libraries:** Consider possible security implications associated with some modules.
 -   **Visibility:** Fields shouldn't have public accessibility.
 -   **CSRF:** Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated.
--   **Android:** Android specific issues.
+-   **Android:** Android-specific issues.
 -   **Malicious code:** Exposed internal APIs can be accessed or change changed by malicious code or by accident from another package.
 -   **Cryptography:** Cryptography is a security technique widely used and there are several cryptographic functions, but not all of them are secure.
 -   **Command injection:** Command injection is an attack in which the goal is the execution of arbitrary commands on the host operating system.
 -   **Firefox OS:** Sensitive APIs of Firefox OS.
 -   **Auth:** Authentication is present in almost all web applications nowadays.
 -   **DoS:** The Denial of Service (DoS) attack is focused on making a resource (site, application, server) unavailable for the purpose it was designed.
--   **SQL injection:** A SQL injection attack consists of insertion or 'injection' of a SQL query via the input data from the client to the application.
+-   **SQL injection:** A SQL injection attack consists of insertion or "injection" of a SQL query via the input data from the client to the application.
 -   **Routes:** Badly configured routes can give unintended access to an attacker.
 -   **Regex:** Regex can be used in a Denial of Service attack, that exploits the fact that most Regular Expression implementations may reach heavy computation situations that cause them to work very slowly (exponentially related to input size).
 -   **SSL:** Simply using SSL isn't enough to ensure the data you are sending is secure. Man in the middle attacks are well known and widely used.
--   **Other:** Other language specific security issues.
+-   **Other:** Other language-specific security issues.
 
 ## Category states
 
