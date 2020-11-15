@@ -30,8 +30,8 @@ strict: true
 
 # Extra variables
 extra:
-  version: "3.0.0"
-  segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
+    version: "3.0.0"
+    segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
 
 # Repository
 # repo_name: "codacy/docs"
