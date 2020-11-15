@@ -123,8 +123,8 @@ plugins:
               "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "related-tools/tool-developer-guide-using-scala.md"
               "hc/en-us/articles/207312879.md": "coverage-reporter/generating-coverage-reports.md"
               "hc/en-us/articles/207312879-Generate-Coverage.md": "coverage-reporter/generating-coverage-reports.md"
-              "hc/en-us/articles/207993605.md": "getting-started/i-added-a-repository-now-what.md"
-              "hc/en-us/articles/207993605-I-added-a-repository-Now-what-.md": "getting-started/i-added-a-repository-now-what.md"
+              "hc/en-us/articles/207993605.md": "getting-started/getting-started-with-codacy.md"
+              "hc/en-us/articles/207993605-I-added-a-repository-Now-what-.md": "getting-started/getting-started-with-codacy.md"
               "hc/en-us/articles/207993835.md": "coverage-reporter/adding-coverage-to-your-repository.md"
               "hc/en-us/articles/207993835-Add-coverage-to-your-repo.md": "coverage-reporter/adding-coverage-to-your-repository.md"
               "hc/en-us/articles/207994025.md": "repositories/commits-view.md"
@@ -469,12 +469,12 @@ plugins:
               "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
               "repositories-configure/php_codesniffer-specifying-your-php-version.md": "repositories-configure/specifying-your-php-version.md"
               "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
+              "getting-started/i-added-a-repository-now-what.md": "getting-started/getting-started-with-codacy.md"
 
 nav:
     - "Documentation home": "index.md"
     - "Getting started":
           - getting-started/getting-started-with-codacy.md
-          - getting-started/i-added-a-repository-now-what.md
           - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
     - "Your repositories":
