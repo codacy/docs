@@ -27,10 +27,20 @@ To start adding your repositories, select one of the organizations and click **G
 
 ## 4. Add repositories {: id="add-repositories"}
 
-![Adding repositories](images/getting-started-add-repository.png)
+As a final step, add the repositories that you wish to analyze. Codacy will start the first analysis and set up everything required to ensure your next commits on those repositories are analyzed.
 
-And as a final step, add the repositories that you wish to analyze. Codacy will start the first analysis and set up everything required to ensure your next commits on those repositories are analyzed.
+![Adding repositories](images/getting-started-add-repository.png)
 
 ## You're all set! 🎉 {: id="all-set"}
 
-Read our guide on [what to do with a newly added repository](i-added-a-repository-now-what.md) to explore static analysis issues and continue configuring your repository.
+Codacy begins an initial analysis as soon as you add a repository, and displays an overview of the code quality of your repository when the analysis is complete.
+
+After that, you can continue to explore and configure Codacy for your repository:
+
+-   [Check the static analysis results](../repositories/issues-view.md) on the Issues page
+-   [Configure the code patterns](../repositories-configure/code-patterns.md) that Codacy uses to analyze your repository
+-   [Configure your quality settings](../repositories/quality-settings.md) for pull requests
+-   [Add coverage reports to Codacy](../coverage-reporter/adding-coverage-to-your-repository.md)
+-   [Add a Codacy badge to your repository](../repositories/badges.md) displaying the current code quality grade or code coverage
+
+![Repository dashboard](../repositories/images/repository-dashboard.png)
