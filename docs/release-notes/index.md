@@ -6,7 +6,7 @@ For product updates that are in progress or planned, see Codacy's [public roadma
 
 ## Codacy Cloud release notes
 
-🚧 Regular release notes for Codacy Self-hosted will be available soon.
+🚧 Regular release notes for Codacy Cloud will be available soon.
 
 -   [Deprecating HTTP headers for API tokens](cloud/deprecating-http-headers-for-api-tokens.md) (April 2020)
 -   [Removal of NodeSecurity, GoLint, and SCSSLint](cloud/removal-of-nodesecurity-golint-and-scsslint.md) (March 2020)
