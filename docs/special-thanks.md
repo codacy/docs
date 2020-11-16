@@ -19,7 +19,7 @@ In addition to in-house built rules, we use open source tools for many of our st
 <ul>
 <li><a href="https://github.com/pmd/pmd">pmd</a></li>
 <li><a href="https://github.com/presidentbeef/brakeman">brakeman</a></li>
-<li><a href="https://github.com/bbatsov/rubocop">rubocop</a></li>
+<li><a href="https://github.com/rubocop-hq/rubocop">rubocop</a></li>
 <li><a href="https://github.com/colszowka/simplecov">simplecov</a></li>
 <li><a href="https://github.com/clutchski/coffeelint">coffeelint</a></li>
 <li><a href="https://www.pylint.org/">pylint</a></li>
@@ -52,7 +52,7 @@ In addition to in-house built rules, we use open source tools for many of our st
 <li><a href="https://github.com/brigade/scss-lint">SCSSLint</a></li>
 <li><a href="https://github.com/rrrene/credo">Credo</a></li>
 <li><a href="https://github.com/PowerShell/PSScriptAnalyzer">psscript analyzer</a></li>
-<li><a href="https://github.com/veelenga/ameba">Ameba</a></li>
+<li><a href="https://github.com/crystal-ameba/ameba">Ameba</a></li>
 </ul>
 </td>
 </tr>

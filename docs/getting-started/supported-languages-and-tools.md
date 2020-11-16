@@ -56,7 +56,7 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>Crystal</td>
-      <td><a href="https://github.com/veelenga/ameba">Ameba</a></td>
+      <td><a href="https://github.com/crystal-ameba/ameba">Ameba</a></td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -169,7 +169,7 @@ The table below lists all programming languages currently supported by Codacy an
     <tr>
       <td>Python
       </td>
-      <td><a href="https://github.com/openstack/bandit">Bandit</a>,
+      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://www.pylint.org/">Pylint</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -180,9 +180,9 @@ The table below lists all programming languages currently supported by Codacy an
       </td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a>,
           <a href="https://github.com/rubysec/bundler-audit">Bundler Audit</a>,
-          <a href="https://github.com/bbatsov/rubocop">Rubocop</a></td>
+          <a href="https://github.com/rubocop-hq/rubocop">Rubocop</a></td>
       <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
-      <td><a href="https://github.com/bbatsov/rubocop">Rubocop</a></td>
+      <td><a href="https://github.com/rubocop-hq/rubocop">Rubocop</a></td>
     </tr>
     <tr>
       <td>Sass</td>

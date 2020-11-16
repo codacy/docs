@@ -13,11 +13,11 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/veelenga/ameba">Ameba</a></td>
+<td><a href="https://github.com/crystal-ameba/ameba">Ameba</a></td>
 <td><a href="https://github.com/codacy/codacy-ameba">https://github.com/codacy/codacy-ameba</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/openstack/bandit">Bandit</a></td>
+<td><a href="https://github.com/PyCQA/bandit">Bandit</a></td>
 <td><a href="https://github.com/codacy/codacy-bandit" class="in-cell-link">https://github.com/codacy/codacy-bandit</a></td>
 </tr>
 <tr>
@@ -121,7 +121,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-remark-lint">https://github.com/codacy/codacy-remark-lint</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/bbatsov/rubocop" class="in-cell-link">Rubocop</a></td>
+<td><a href="https://github.com/rubocop-hq/rubocop" class="in-cell-link">Rubocop</a></td>
 <td><a href="https://github.com/codacy/codacy-rubocop">https://github.com/codacy/codacy-rubocop</a></td>
 </tr>
 <tr>
