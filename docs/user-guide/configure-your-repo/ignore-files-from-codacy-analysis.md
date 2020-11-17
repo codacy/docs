@@ -7,7 +7,7 @@ In some situations, you may want to exclude files from Codacy's analyses and th
 You can exclude files from your repository analysis on your Repository Settings -> Ignored files and select the files you want to ignore.
 This view only shows the files on your main branch.
 
-![Screen_Shot_2018-05-29_at_13.51.51.png](/images/Screen_Shot_2018-05-29_at_13.51.51.png)
+![Screen_Shot_2018-05-29_at_13.51.51.png](../../images/Screen_Shot_2018-05-29_at_13.51.51.png)
 
 ## Codacy configuration file
 

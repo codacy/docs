@@ -2,7 +2,7 @@
 
 In your repository’s Files tab you can view all the files that Codacy detected in your repository:
 
-![Screen_Shot_2019-06-26_at_19.39.19.png](/images/Screen_Shot_2019-06-26_at_19.39.19.png)
+![Screen_Shot_2019-06-26_at_19.39.19.png](../../images/Screen_Shot_2019-06-26_at_19.39.19.png)
 
 While all of the files in your repository should be displayed here, here is a list of reasons some might not:
 

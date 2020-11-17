@@ -6,7 +6,7 @@ As a wise man once said, "You can't please everyone", and that is true for code 
 
 Each pattern has a title and a short description. To see a detailed explanation you can click on Show Details in the top right corner (mouse over the pattern and the Show Details option will appear):
 
-![](/images/pattern-explanation.png)
+![](../../images/pattern-explanation.png)
 
 The pattern explanation shows more detail about the issues it can detect and how to fix them.
 
@@ -36,7 +36,7 @@ You can filter the patterns by category using the side menu:
 
 To configure the patterns used to analyse your repository simply click on the checkbox on the left of the title:
 
-![](/images/enabled.png)
+![](../../images/enabled.png)
 
 When you change the enabled patterns you can reanalyse your repository. To do that, just enter the latest commit from your list on the **Commit** view and click to [reanalyse](/hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-).
 
@@ -50,13 +50,13 @@ When you change the enabled patterns you can reanalyse your repository. To do th
 
 Here you can change the default selection of patterns by enabling / disabling  them for all future repositories added by you. Just go to **Account Settings** -> **Default Patterns:**
 
-![Account Patterns](/images/Screen_Shot_2018-01-12_at_11.21.22.png)
+![Account Patterns](../../images/Screen_Shot_2018-01-12_at_11.21.22.png)
 
 ### Repository Patterns
 
 Here you can specify the patterns you want to use for each repository. When you change your account patterns it doesn't affect pattern selection for repositories already added. You can go to **Code patterns**:
 
-![Repository Patterns](/images/Screen_Shot_2019-06-18_at_17.57.58.png)
+![Repository Patterns](../../images/Screen_Shot_2019-06-18_at_17.57.58.png)
 
 ## 4. I have my own tool configuration file
 
@@ -66,7 +66,7 @@ If you have configuration files for your static analysis tool of choice, just ad
 
 Codacy currently supports configuration files for several tools. To have results accordingly to your configuration file, you need to go to the Code Patterns view and select "Configuration file" for the respective tool and select the option as shown in the example below.
 
-![Screen_Shot_2017-10-09_at_18.54.12.png](/images/Screen_Shot_2017-10-09_at_18.54.12.png)
+![Screen_Shot_2017-10-09_at_18.54.12.png](../../images/Screen_Shot_2017-10-09_at_18.54.12.png)
 
 The known file names for each tool are the following:
 
