@@ -43,8 +43,8 @@ resource "aws_route_table" "public" {
 resource "aws_route" "public" {
   count = var.create_network_stack ? 1 : 0
 
-  route_table_id = aws_route_table.public[0].id
-  gateway_id = aws_internet_gateway.main[0].id
+  route_table_id         = aws_route_table.public[0].id
+  gateway_id             = aws_internet_gateway.main[0].id
   destination_cidr_block = "0.0.0.0/0"
 }
 
@@ -52,8 +52,8 @@ resource "aws_route" "public" {
 resource "aws_subnet" "public1" {
   count = var.create_network_stack ? 1 : 0
 
-  vpc_id = aws_vpc.main[0].id
-  cidr_block = var.public_subnet1_cidr
+  vpc_id            = aws_vpc.main[0].id
+  cidr_block        = var.public_subnet1_cidr
   availability_zone = data.aws_availability_zones.AZs.names[0]
 
   map_public_ip_on_launch = true
@@ -66,11 +66,11 @@ resource "aws_subnet" "public1" {
     var.custom_tags
   )
 }
-resource "aws_route_table_association" "public1"{
+resource "aws_route_table_association" "public1" {
   count = var.create_network_stack ? 1 : 0
 
   route_table_id = aws_route_table.public[0].id
-  subnet_id = aws_subnet.public1[0].id
+  subnet_id      = aws_subnet.public1[0].id
 }
 
 
@@ -78,8 +78,8 @@ resource "aws_route_table_association" "public1"{
 resource "aws_subnet" "public2" {
   count = var.create_network_stack ? 1 : 0
 
-  vpc_id = aws_vpc.main[0].id
-  cidr_block = var.public_subnet2_cidr
+  vpc_id            = aws_vpc.main[0].id
+  cidr_block        = var.public_subnet2_cidr
   availability_zone = data.aws_availability_zones.AZs.names[1]
 
   map_public_ip_on_launch = true
@@ -92,19 +92,19 @@ resource "aws_subnet" "public2" {
     var.custom_tags
   )
 }
-resource "aws_route_table_association" "public2"{
+resource "aws_route_table_association" "public2" {
   count = var.create_network_stack ? 1 : 0
 
   route_table_id = aws_route_table.public[0].id
-  subnet_id = aws_subnet.public2[0].id
+  subnet_id      = aws_subnet.public2[0].id
 }
 
 ### private subnet 1
 resource "aws_subnet" "private1" {
   count = var.create_network_stack ? 1 : 0
 
-  vpc_id = aws_vpc.main[0].id
-  cidr_block = var.private_subnet1_cidr
+  vpc_id            = aws_vpc.main[0].id
+  cidr_block        = var.private_subnet1_cidr
   availability_zone = data.aws_availability_zones.AZs.names[0]
 
   tags = merge(
@@ -121,7 +121,7 @@ resource "aws_eip" "public1" {
   count = var.create_network_stack ? 1 : 0
 
   depends_on = [aws_internet_gateway.main[0]]
-  vpc = true
+  vpc        = true
 
   tags = var.custom_tags
 }
@@ -129,7 +129,7 @@ resource "aws_nat_gateway" "public1" {
   count = var.create_network_stack ? 1 : 0
 
   allocation_id = aws_eip.public1[0].id
-  subnet_id = aws_subnet.public1[0].id
+  subnet_id     = aws_subnet.public1[0].id
 
   tags = var.custom_tags
 }
@@ -143,23 +143,23 @@ resource "aws_route_table" "private1" {
 resource "aws_route" "private1" {
   count = var.create_network_stack ? 1 : 0
 
-  route_table_id = aws_route_table.private1[0].id
+  route_table_id         = aws_route_table.private1[0].id
   destination_cidr_block = "0.0.0.0/0"
-  nat_gateway_id = aws_nat_gateway.public1[0].id
+  nat_gateway_id         = aws_nat_gateway.public1[0].id
 }
 resource "aws_route_table_association" "private1" {
   count = var.create_network_stack ? 1 : 0
 
   route_table_id = aws_route_table.private1[0].id
-  subnet_id = aws_subnet.private1[0].id
+  subnet_id      = aws_subnet.private1[0].id
 }
 
 ### private subnet 2
 resource "aws_subnet" "private2" {
   count = var.create_network_stack ? 1 : 0
 
-  vpc_id = aws_vpc.main[0].id
-  cidr_block = var.private_subnet2_cidr
+  vpc_id            = aws_vpc.main[0].id
+  cidr_block        = var.private_subnet2_cidr
   availability_zone = data.aws_availability_zones.AZs.names[1]
 
   tags = merge(
@@ -176,7 +176,7 @@ resource "aws_eip" "public2" {
   count = var.create_network_stack ? 1 : 0
 
   depends_on = [aws_internet_gateway.main[0]]
-  vpc = true
+  vpc        = true
 
   tags = var.custom_tags
 }
@@ -184,7 +184,7 @@ resource "aws_nat_gateway" "public2" {
   count = var.create_network_stack ? 1 : 0
 
   allocation_id = aws_eip.public2[0].id
-  subnet_id = aws_subnet.public2[0].id
+  subnet_id     = aws_subnet.public2[0].id
 
   tags = var.custom_tags
 }
@@ -198,15 +198,15 @@ resource "aws_route_table" "private2" {
 resource "aws_route" "private2" {
   count = var.create_network_stack ? 1 : 0
 
-  route_table_id = aws_route_table.private2[0].id
+  route_table_id         = aws_route_table.private2[0].id
   destination_cidr_block = "0.0.0.0/0"
-  nat_gateway_id = aws_nat_gateway.public2[0].id
+  nat_gateway_id         = aws_nat_gateway.public2[0].id
 }
 resource "aws_route_table_association" "private2" {
   count = var.create_network_stack ? 1 : 0
 
   route_table_id = aws_route_table.private2[0].id
-  subnet_id = aws_subnet.private2[0].id
+  subnet_id      = aws_subnet.private2[0].id
 }
 
 ### vpc endpoints
@@ -215,7 +215,7 @@ data aws_iam_policy_document "allow_all" {
     actions = ["*"]
     principals {
       identifiers = ["*"]
-      type = "AWS"
+      type        = "AWS"
     }
     resources = ["*"]
   }
@@ -225,7 +225,7 @@ resource "aws_vpc_endpoint" "s3" {
   count = var.create_vpc_endpoints && var.create_network_stack ? 1 : 0
 
   service_name = "com.amazonaws.${data.aws_region.current.name}.s3"
-  vpc_id = aws_vpc.main[0].id
+  vpc_id       = aws_vpc.main[0].id
   route_table_ids = [
     aws_route_table.private1[0].id,
     aws_route_table.private2[0].id
@@ -239,7 +239,7 @@ resource "aws_vpc_endpoint" "dynamodb" {
   count = var.create_vpc_endpoints && var.create_network_stack ? 1 : 0
 
   service_name = "com.amazonaws.${data.aws_region.current.name}.dynamodb"
-  vpc_id = aws_vpc.main[0].id
+  vpc_id       = aws_vpc.main[0].id
   route_table_ids = [
     aws_route_table.private1[0].id,
     aws_route_table.private2[0].id

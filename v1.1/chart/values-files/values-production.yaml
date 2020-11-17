@@ -1,5 +1,5 @@
 global:
-
+  # Contact our support to get the docker secrets
   imagePullSecrets:
     - name: docker-credentials
   codacy:
@@ -15,6 +15,32 @@ global:
     contentsSecret: <--- generated-secret ---> # Generate one with `openssl rand -base64 128 | tr -dc 'a-zA-Z0-9'`
     uuidSecret: <--- generated-secret ---> # Generate one with `openssl rand -base64 128 | tr -dc 'a-zA-Z0-9'`
   cacheSecret: <--- generated-secret ---> # Generate one with `openssl rand -base64 128 | tr -dc 'a-zA-Z0-9'`
+
+  workerManager:
+    workers:
+      config:
+        dedicatedMax: 2
+        inactivityTimeout: 20
+        analysis:
+          maxFileSizeBytes: 150000
+          # These values are in seconds
+          pluginTimeout:
+            min: 300
+            max: 900
+        workerResources:
+          limits:
+            cpu: 1
+            memory: "3Gi"
+          requests:
+            cpu: 0.5
+            memory: "1Gi"
+        pluginResources:
+          limits:
+            cpu: 1
+            memory: 2000000000 # 2000Mb
+          requests:
+            cpu: 1
+            memory: 2000000000 # 2000Mb
 
 
   defaultdb:
@@ -65,8 +91,33 @@ global:
     host: <--- codacy-db-host --->
     service:
       port: <--- codacy-db-port --->
+  hotspotsdb:
+    create: false
+    postgresqlUsername: <--- codacy-db-username --->
+    postgresqlDatabase: hotspots # You need to create the DB manually
+    postgresqlPassword: <--- codacy-db-password --->
+    host: <--- codacy-db-host --->
+    service:
+      port: <--- codacy-db-port --->
+  activitiesdb:
+    create: false
+    postgresqlUsername: <--- codacy-db-username --->
+    postgresqlDatabase: activities # You need to create the DB manually
+    postgresqlPassword: <--- codacy-db-password --->
+    host: <--- codacy-db-host --->
+    service:
+      port: <--- codacy-db-port --->
+  crowdb:
+    create: false
+    host: <--- codacy-db-host --->
+    postgresqlUsername: <--- codacy-db-username --->
+    postgresqlDatabase: crow # You need to create the DB manually
+    postgresqlPassword: <--- codacy-db-password --->
+    service:
+      port: <--- codacy-db-port --->
+    fullnameOverride: codacy-crowdb
 
-  github: {}
+    # github:
     # enabled: "false"
     # login: "false" # Show login button for GitHub Cloud
     # clientId: "" # Client ID
@@ -76,7 +127,7 @@ global:
     #   id: "1234" # App ID
     #   privateKey: "" # Contents of the .pem file without newlines
 
-  githubEnterprise: {}
+    # githubEnterprise:
     # enabled: "false"
     # login: "false" # Show login button for GitHub Enterprise
     # hostname: "github.example.com" # Hostname of your GitHub Enterprise instance
@@ -91,13 +142,13 @@ global:
     #   id: "1234" # GitHub App ID
     #   privateKey: "" # Contents of the .pem file without newlines
 
-  gitlab: {}
+    # gitlab:
     # enabled: "false"
     # login: "false" # Show login button for GitLab Cloud
     # clientId: "" # Application ID
     # clientSecret: "" # Secret
 
-  gitlabEnterprise: {}
+    # gitlabEnterprise:
     # enabled: "false"
     # login: "false" # Show login button for GitLab Enterprise
     # hostname: "gitlab.example.com" # Hostname of your GitLab Enterprise instance
@@ -106,13 +157,13 @@ global:
     # clientId: "" # Application ID
     # clientSecret: "" # Secret
 
-  bitbucket: {}
+    # bitbucket:
     # enabled: "false"
     # login: "false" # Show login button for Bitbucket Cloud
     # key: "" # OAuth consumer key
     # secret: "" # OAuth consumer secret
 
-  bitbucketEnterprise: {}
+    # bitbucketEnterprise:
     # enabled: "false"
     # login: "false" # Show login button for Bitbucket Server
     # hostname: "bitbucket.example.com" # Hostname of your Bitbucket Server instance
@@ -122,7 +173,7 @@ global:
     # consumerPublicKey: "" # Generated when creating the Bitbucket Server application link
     # consumerPrivateKey: "" # Generated when creating the Bitbucket Server application link
 
-  email: {}
+    # email:
     # enabled: "false"
     # replyTo: "notifications@codacy.com" # Reply-to field on sent emails
     # smtp:
@@ -131,15 +182,6 @@ global:
     #   # username: "" # Optional username to authenticate on your SMTP server
     #   # password: "" # Optional password to authenticate on your SMTP server
     #   # port: 25 # Optional port of your SMTP server, the default is 25
-
-  config:
-    workers:
-      analysis:
-        maxFileSizeBytes: 150000
-        # These values are in seconds
-        pluginTimeout:
-          min: 300
-          max: 900
 
 codacy-ingress:
   create: true
@@ -160,6 +202,10 @@ codacy-api:
     requests:
       cpu: 500m
       memory: 500Mi
+## By default, Codacy includes a temporary license for a limited number of users.
+## Uncomment these annotations to enter a production license provided by a Codacy representative.
+#  config:
+#    license: <--- insert your Codacy license here --->
 
 portal:
   replicaCount: 2
@@ -187,14 +233,6 @@ activities:
     requests:
       cpu: 100m
       memory: 200Mi
-  activitiesdb:
-    create: false
-    postgresqlUsername: <--- codacy-db-username --->
-    postgresqlDatabase: activities # You need to create the DB manually
-    postgresqlPassword: <--- codacy-db-password --->
-    host: <--- codacy-db-host --->
-    service:
-      port: <--- codacy-db-port --->
 
 remote-provider-service:
   replicaCount: 2
@@ -214,14 +252,7 @@ hotspots-api:
     requests:
       cpu: 100m
       memory: 200Mi
-  hotspotsdb:
-    create: false
-    postgresqlUsername: <--- codacy-db-username --->
-    postgresqlDatabase: hotspots # You need to create the DB manually
-    postgresqlPassword: <--- codacy-db-password --->
-    host: <--- codacy-db-host --->
-    service:
-      port: <--- codacy-db-port --->
+
 hotspots-worker:
   replicaCount: 2
   resources:
@@ -265,15 +296,6 @@ listener:
       requests:
         cpu: 0.5
         memory: 500Mi
-core:
-  replicaCount: 2
-  resources:
-    limits:
-      cpu: 500m
-      memory: 1500Mi
-    requests:
-      cpu: 100m
-      memory: 200Mi
 engine:
   replicaCount: 2
   resources:
@@ -283,6 +305,16 @@ engine:
     requests:
       cpu: 200m
       memory: 500Mi
+codacy-tools:
+  replicaCount: 2
+  resources:
+    limits:
+      cpu: 1
+      memory: 1Gi
+    requests:
+      cpu: 0.5
+      memory: 1Gi
+
 worker-manager:
   replicaCount: 2
   resources:
@@ -292,30 +324,7 @@ worker-manager:
     requests:
       cpu: 200m
       memory: 200Mi
-  config:
-    workers:
-      dedicatedMax: 2
-      inactivityTimeout: 20
-      analysis:
-        maxFileSizeBytes: 150000
-        # These values are in seconds
-        pluginTimeout:
-          min: 300
-          max: 900
-    workerResources:
-      limits:
-        cpu: 1
-        memory: "3Gi"
-      requests:
-        cpu: 0.5
-        memory: "1Gi"
-    pluginResources:
-      limits:
-        cpu: 1
-        memory: 2000000000 # 2000Mb
-      requests:
-        cpu: 1
-        memory: 2000000000 # 2000Mb
+
 crow:
   replicaCount: 1
   resources:
@@ -326,34 +335,24 @@ crow:
       cpu: 0.1
       memory: 100Mi
   fullnameOverride: codacy-crow
-  crowdb:
-    create: false
-    host: <--- codacy-db-host --->
-    postgresqlUsername: <--- codacy-db-username --->
-    postgresqlDatabase: crow # You need to create the DB manually
-    postgresqlPassword: <--- codacy-db-password --->
-    service:
-      port: <--- codacy-db-port --->
-    fullnameOverride: codacy-crowdb
   config:
     play:
       http:
         context: "/monitoring"
-    passwordAuth:
-      password: C0dacy123
 
 codacy-spa:
   replicaCount: 2
   resources:
     limits:
       cpu: 500m
-      memory: 256Mi
+      memory: 1000Mi
     requests:
       cpu: 250m
       memory: 128Mi
 
 rabbitmq-ha:
-  replicaCount: 3
+  replicaCount: 1
+  rabbitmqErlangCookie:  <--- erlang-cookie ---> # Generate one with `cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
   persistentVolume:
     enabled: true
     size: 8Gi
@@ -369,3 +368,6 @@ minio:
   persistence:
     enabled: true
     size: 20Gi
+  resources:
+    requests:
+      memory: 1.5Gi
