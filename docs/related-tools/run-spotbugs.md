@@ -11,6 +11,8 @@ To run this tool:
 2.  Compile your Java or Scala repository on your build server, as you would normally do
 3.  Invoke [`codacy-analysis-cli`](run-local-analysis.md) on the root of the repository specifying the tool SpotBugs
 
+    Obtain the [project API Token](../repositories-configure/integrations/project-api.md) from the page **Integrations** in your Codacy repository settings.
+
 ```bash
 codacy-analysis-cli analyse --tool spotbugs \
                             --directory <SOURCE-CODE-PATH> \
