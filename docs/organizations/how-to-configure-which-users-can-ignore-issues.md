@@ -7,6 +7,6 @@ Sometimes we have patterns on our repository that haven't been configured to be 
 
 By default, [only users with Admin permission on a repository can ignore issues](roles-and-permissions-for-synced-organizations.md), but this can be changed. In your Organization's settings, you can find "Members privileges" where you can define the lowest permission required to ignore issues for your organization.
 
-![](/images/Screenshot_2020-02-25_at_14.32.33.png)
+![](../images/Screenshot_2020-02-25_at_14.32.33.png)
 
 It is not possible to change the role of a user in Codacy, as the roles are mirrored from your Git provider and applied to each repository.
