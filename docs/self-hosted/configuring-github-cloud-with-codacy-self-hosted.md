@@ -22,7 +22,7 @@ Configuring GitHub Cloud allows you to easily add GitHub repositories to your Se
 
 To get started, navigate to the **Integrations** page in the Administration view and select **GitHub Cloud**.
 
-![Screen_Shot_2018-07-08_at_16.39.35.png](/images/Screen_Shot_2018-07-08_at_16.39.35.png)
+![Screen_Shot_2018-07-08_at_16.39.35.png](../images/Screen_Shot_2018-07-08_at_16.39.35.png)
 
 First, you'll have to create a GitHub OAuth application. [Create an application here](https://github.com/settings/applications/new).
 
@@ -44,7 +44,7 @@ Incorrect:
 -   53.43.42.12
 -   53.43.42.12:9000
 
-![Screen_Shot_2018-07-08_at_16.45.35.png](/images/Screen_Shot_2018-07-08_at_16.45.35.png)
+![Screen_Shot_2018-07-08_at_16.45.35.png](../images/Screen_Shot_2018-07-08_at_16.45.35.png)
 
 After the application is created you should copy both the _Client ID_ and the _Client Secret_, paste them in the setup page of your Codacy Self-hosted, and click Test and Save.
 

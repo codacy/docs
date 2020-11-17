@@ -24,4 +24,4 @@ To do so, navigate to your **Repository Settings**, and select the **Integrati
 
 After GitLab has been installed, it needs to be enabled by a user with repository access on GitLab. For private repositories, this user will by default become the GitLab user Codacy uses to comment and create issues on GitLab.
 
-![Screen_Shot_2018-08-07_at_18.30.15.png](/images/Screen_Shot_2018-08-07_at_18.30.15.png)
+![Screen_Shot_2018-08-07_at_18.30.15.png](../images/Screen_Shot_2018-08-07_at_18.30.15.png)

@@ -12,19 +12,19 @@ After installing it for a repository, it has to be enabled by a user with reposi
 
 Once the integration is enabled, you will see additional options when browsing the existing issues on the repository:
 
-![](/images/Screen_Shot_2016-12-27_at_12.11.35.png)
+![](../../images/Screen_Shot_2016-12-27_at_12.11.35.png)
 GitHub integration
 
 Enabling **Pull Request Status**, **Pull Request Comment** or **Pull Request Summary** Codacy will automatically update pull requests on GitHub with additional information when accepting pull requests.
 
-![Additional options](/images/Screen_Shot_2017-11-15_at_17.50.49.png)
+![Additional options](../../images/Screen_Shot_2017-11-15_at_17.50.49.png)
 
 **Pull Request Comment** makes a comment on the Pull Request line when a new issue is found and shows the pattern raising the issue. Click on the Issue link to go to Codacy to see more details about the issue and how to fix it.
 
-![Screen_Shot_2017-11-15_at_18.23.26.png](/images/Screen_Shot_2017-11-15_at_18.23.26.png)
+![Screen_Shot_2017-11-15_at_18.23.26.png](../../images/Screen_Shot_2017-11-15_at_18.23.26.png)
 Pull request comment
 
 **Pull Request Summary** shows an overall view of the changes in the PR. Including newly found issues and other metrics such as complexity and duplication. 
 
-![Screen_Shot_2017-11-15_at_18.12.58.png](/images/Screen_Shot_2017-11-15_at_18.12.58.png)
+![Screen_Shot_2017-11-15_at_18.12.58.png](../../images/Screen_Shot_2017-11-15_at_18.12.58.png)
 Pull request summary
