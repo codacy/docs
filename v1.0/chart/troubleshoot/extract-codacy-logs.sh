@@ -72,7 +72,7 @@ echo "Checking if kubectl is installed..."
 KUBECTL=$(which kubectl || which microk8s.kubectl)
 if [ $? -ne 0 ]; then
     echo "kubectl not installed"
-    echo "Please install kubectl version specified in Codacy's documentation (see here - https://codacy.github.io/chart/install/) or the version used when installing your cluster"
+    echo "Please install kubectl version specified in Codacy's documentation (see here - https://docs.codacy.com/chart/#2-installing-codacy) or the version used when installing your cluster"
     echo "To install kubectl see https://kubernetes.io/docs/tasks/tools/install-kubectl/ (or https://microk8s.io/docs/ if you are running a microk8s kubernetes cluster)"
     exit 4
 fi
@@ -114,6 +114,14 @@ if ! $KUBECTL cp $NAMESPACE/$LOGS_POD_NAME:/export/logs $LOGS_DIR; then
     exit 9
 fi
 
+# Get descriptions for all the pods
+KUBECTL_DESCRIBE_FILE_NAME="describe_pods.txt"
+echo "Getting kubectl describe for all codacy pods..."
+if ! $KUBECTL describe pods -n $NAMESPACE > $LOGS_DIR/$KUBECTL_DESCRIBE_FILE_NAME; then
+    echo "Failed to save the codacy pods description to local directory $LOGS_DIR"
+    echo "Are you sure you are in the right kubernetes cluster context?"
+    exit 10
+fi
 
 echo "Compressing extracted log files..."
 if [ -n "$DAYS" ]; then
@@ -123,13 +131,13 @@ if [ -n "$DAYS" ]; then
         LOGS_DATE=$(date_days_ago $DAYS)
 
         # Find all log files that match the pattern and add them to the ZIP archive (-9 is maximum, slowest, compression)
-        find $LOGS_DIR -iname $LOGS_DATE\* -type f | xargs -L 10 zip -ur9 codacy_logs_$CURRENT_DATE_TIME.zip
+        find $LOGS_DIR -iname $LOGS_DATE\* -o -iname $KUBECTL_DESCRIBE_FILE_NAME -type f | xargs -L 10 zip -ur9 codacy_logs_$CURRENT_DATE_TIME.zip
 
         # Incremental zipping might fail
         if [ $? -ne 0 ]; then
             echo "Failed to compress logs (located in $LOGS_DIR) to a ZIP file"
             echo "If this step continues to fail, you can compress the files manually"
-            exit 10
+            exit 11
         fi
 
         DAYS=$(($DAYS - 1))
@@ -140,7 +148,7 @@ else
     if ! zip -r9 codacy_logs_$CURRENT_DATE_TIME.zip $LOGS_DIR; then
         echo "Failed to compress logs (located in $LOGS_DIR) to a ZIP file"
         echo "If this step continues to fail, you can compress the files manually"
-        exit 10
+        exit 11
     fi
 fi
 
