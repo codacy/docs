@@ -95,7 +95,7 @@ If you are using Postgres on Docker, the DB IP may change upon server restart. A
 
 `{{ conf.doplicated.var.internalhostip }}`
 
-![&lt;span class="wysiwyg-font-size-small">Configuration key&lt;/span>](/images/unnamed-1.png)
+![&lt;span class="wysiwyg-font-size-small">Configuration key&lt;/span>](../images/unnamed-1.png)
 
 If you are not using DNS, you should set Host and Host Docker Ip to:
 
@@ -152,7 +152,7 @@ hidden behind a load balancer.
 
 1.  In the Codacy Control panel, click the option to "update to the latest version"
 
-![image003.png](/images/image003.png)
+![image003.png](../images/image003.png)
 
 2.  Pull Dockers (do not leave this page until this task is completed)
 
@@ -165,7 +165,7 @@ Please see the section above for how to update to the latest version.
 
 1.  Go to control panel home -> Check for updates
 
-![Screen_Shot_2018-07-13_at_15.27.23.png](/images/Screen_Shot_2018-07-13_at_15.27.23.png)
+![Screen_Shot_2018-07-13_at_15.27.23.png](../images/Screen_Shot_2018-07-13_at_15.27.23.png)
 
 2.  Go to control panel home -> Configure -> click Save at the bottom of the page (no need to change any details)
 

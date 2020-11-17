@@ -18,7 +18,7 @@
   </tbody>
 </table>
 
-![](/images/pasted_image_at_2016_10_24_17_27_720.png)
+![](../images/pasted_image_at_2016_10_24_17_27_720.png)
 
 ## Location
 
@@ -69,7 +69,7 @@ To integrate with GitHub we use a GitHub Application.
 
 To create the application in your GitHub Enterprise, visit `settings/applications/new` and create an application pointing to your local Codacy deployment URL.
 
-![](/images/Screenshot_2015-04-16_13.55.59.png)
+![](../images/Screenshot_2015-04-16_13.55.59.png)
 
 You can fill all the fields with the suggested text above or use your own text except for the field `Authorization callback URL` where you must insert your local Codacy deployment url.
 
@@ -93,6 +93,6 @@ The URL should contain the endpoint/ip, the protocol (HTTP or HTTPS), and, if ap
 
 After the application is created, you should copy both the `Client ID` and the `Client Secret` and paste them in the setup page on your Codacy Self-hosted.
 
-![](/images/Screenshot_2015-04-16_14.02.55.png)
+![](../images/Screenshot_2015-04-16_14.02.55.png)
 
 After this is done you will be able to use GitHub Enterprise as an authentication method to add repositories and as an integration in the repository settings.

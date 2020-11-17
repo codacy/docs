@@ -20,7 +20,7 @@
 
 If you have admin permissions on your Codacy self-hosted instance, you can set up or configure your GitLab.com integration by going to the Admin panel on the top navigation bar.
 
-![Kapture_2020-03-04_at_14.49.15.gif](/images/Kapture_2020-03-04_at_14.49.15.gif)
+![Kapture_2020-03-04_at_14.49.15.gif](../images/Kapture_2020-03-04_at_14.49.15.gif)
 
 When you open the GitLab panel, if you haven't created an application yet, this is the first step you need to take. Just follow the link.
 
@@ -30,7 +30,7 @@ When you open the GitLab panel, if you haven't created an application yet, this 
 
 Follow the link to create an application on Gitlab.com
 
-![](/images/new-application-gl.png)
+![](../images/new-application-gl.png)
 
 You need to ensure the "api", "read_user" and "read_repository" scopes are checked. 
 
@@ -43,7 +43,7 @@ https://codacy.example.com/add/addService/GitLab
 https://codacy.example.com/add/addPermissions/GitLab
 ```
 
-![](/images/app-created-gl.png)
+![](../images/app-created-gl.png)
 
 After this, copy the "application ID" and "secret" and paste those to the GitLab integration panel on Codacy.  
 

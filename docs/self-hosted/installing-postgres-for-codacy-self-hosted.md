@@ -102,7 +102,7 @@ If you want to whitelist your IP **only,** you can use your network/mask inste
 !!! note
     This is not recommended, but if you are running postgres on the same machine where Codacy is and want to whitelist just Codacy's IP address, you will have to whitelist a range of IP addresses. This is because Codacy runs inside Docker and won't have always the same IP address inside the Docker network. To do this, you should first obtain the address of the Docker network interface with an `ifconfig` and then whitelist the range ip addresses according to it (for example, `172.17.0.0/16)`.
 
-![Screen_Shot_2018-04-24_at_15.55.58.png](/images/Screen_Shot_2018-04-24_at_15.55.58.png) 
+![Screen_Shot_2018-04-24_at_15.55.58.png](../images/Screen_Shot_2018-04-24_at_15.55.58.png) 
 
 Finally, restart postgres:
 

@@ -8,6 +8,6 @@ If you are logged in to Codacy through a Git provider account, you should be pre
 
 After finding your repositories, click the button **Add** next to each repository that you want to add to Codacy. Your repositories are now imported, and a first analysis will begin.
 
-![add-personal-repositories.png](/images/add-personal-repositories.png)
+![add-personal-repositories.png](../images/add-personal-repositories.png)
 
 Using the links on the sidebar It is also possible to import repositories from other Git providers, or to import private repositories if you’re using GitHub.

@@ -18,11 +18,11 @@
   </tbody>
 </table>
 
-![](/images/bitbucket_server_1.gif)
+![](../images/bitbucket_server_1.gif)
 
-![bitbucket_server_2.gif](/images/bitbucket_server_2.gif)
+![bitbucket_server_2.gif](../images/bitbucket_server_2.gif)
 
-![](/images/Screen_Shot_2017-06-01_at_16.05.41.png)
+![](../images/Screen_Shot_2017-06-01_at_16.05.41.png)
 
 ## Endpoint
 
@@ -50,7 +50,7 @@ Should contain:
 
 The project in Stash that you would like to retrieve repositories from.
 
-![Screen_Shot_2017-06-01_at_16.08.50.png](/images/Screen_Shot_2017-06-01_at_16.08.50.png)
+![Screen_Shot_2017-06-01_at_16.08.50.png](../images/Screen_Shot_2017-06-01_at_16.08.50.png)
 
 ## Stash Application Link
 
@@ -61,7 +61,7 @@ To start you can click on `here` and go to the application links list.
 
 #### Create the link
 
-![](/images/Screen_Shot_2017-06-01_at_16.02.07.png)
+![](../images/Screen_Shot_2017-06-01_at_16.02.07.png)
 
 ##### Application Url
 
@@ -69,7 +69,7 @@ This is your Codacy installation url.
 
 #### Name the link
 
-![](/images/Screen_Shot_2017-06-01_at_16.06.21.png)
+![](../images/Screen_Shot_2017-06-01_at_16.06.21.png)
 
 #### Application Name
 
@@ -85,7 +85,7 @@ After the link is created, click edit to add an incoming connection.
 
 #### Add incoming connection
 
-![](/images/stash5.png)
+![](../images/stash5.png)
 
 ##### Consumer Key
 

@@ -213,7 +213,7 @@ PULL option available
 
 Pressing **Pull** will start an async method that can take up to 30 minutes, depending on your internet connection. This will pull Codacy images from dockerhub, making them available in the local registry for application execution.
 
-![Pulling dockers](/images/Screen_Shot_2015-10-29_at_16.04.41.png)
+![Pulling dockers](../images/Screen_Shot_2015-10-29_at_16.04.41.png)
 
 When done, a success message will show in the logs, and refreshing the page will show a new option **Run** in the toolbar:
 
@@ -222,7 +222,7 @@ Docker pulled and new RUN option
 
 Pressing **RUN** will start the application. At any time, you can check the status of Codacy by navigating to Support:
 
-![](/images/Screen_Shot_2017-02-22_at_16.28.13.png)
+![](../images/Screen_Shot_2017-02-22_at_16.28.13.png)
 Support screen
 
 There, all dockers will show their status. The **download logs** link will create a zip file with all container logs that can be used to debug your installation at any time.
@@ -249,17 +249,17 @@ If the database IP is incorrectly configured, Codacy will try to do an initial c
 
 You can navigate to port 80 (http) or port 443 (https) of your server in order to test your installation of Codacy. Codacy will provide you with a checkup page that will scan for any missed configuration setting.
 
-![Failed settings screen](/images/Screen_Shot_2015-07-28_at_13.02.09.png)
+![Failed settings screen](../images/Screen_Shot_2015-07-28_at_13.02.09.png)
 
 ## 3.6 Registration
 
 When all settings are correct, Codacy will ask you to accept the License Agreement.
 
-![](/images/Screen_Shot_2015-07-29_at_13.23.34.png)
+![](../images/Screen_Shot_2015-07-29_at_13.23.34.png)
 
 After accepting it, you will be redirected to the initial registration screen.
 
-![Registration panel](/images/Screen_Shot_2015-07-29_at_13.26.11-1.png)
+![Registration panel](../images/Screen_Shot_2015-07-29_at_13.26.11-1.png)
 
 The first user to register will automatically be an admin and will be able to administer the platform and create additional users.
 
@@ -273,7 +273,7 @@ At this point as the application has finished downloading all components, intern
 
 We highly suggest you now go to 'Admin > Patterns' to select the default patterns. These defaults will be applied to new repositories.
 
-![Code patterns](/images/Screenshot_2019-05-20_at_11.44.45.png)
+![Code patterns](../images/Screenshot_2019-05-20_at_11.44.45.png)
 
 Codacy is now ready to be used.
 
@@ -292,13 +292,13 @@ bash -c "$(curl -fsSL https://getenterprise.codacy.com/get)" -s update
 To access the control panel with HTTPS, upload your CSR file (without password) and the certificate key to the CSR file in the settings panel.
 By enabling the HTTPS settings, the control panel will be accessible through HTTPS and will use the configured port (9443 by default).  
 
-![Screen_Shot_2018-01-25_at_10.43.15.png](/images/Screen_Shot_2018-01-25_at_10.43.15.png)
+![Screen_Shot_2018-01-25_at_10.43.15.png](../images/Screen_Shot_2018-01-25_at_10.43.15.png)
 
 ### HTTPS - Codacy
 
 To access Codacy with HTTPS, upload your CSR file (without password) and the certificate key to the CSR file in the settings panel. By enabling the HTTPS settings, the control panel will be accessible through HTTPS and will use the configured port (9443 by default).
 
-![](/images/pasted_image_at_2017_02_22_04_16_pm_480.png)
+![](../images/pasted_image_at_2017_02_22_04_16_pm_480.png)
 
 After this is complete, make sure you "Save" and click "Reload".
 

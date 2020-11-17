@@ -4,7 +4,7 @@
 
 To change your name or username, click on your avatar, and select **Your Account**. Once on the account settings page, select the field you'd like to edit, make your adjustments, and click on **Save Changes**.
 
-![](/images/account-settings-change-name.gif)
+![](../../images/account-settings-change-name.gif)
 
 ## Changing your avatar
 
