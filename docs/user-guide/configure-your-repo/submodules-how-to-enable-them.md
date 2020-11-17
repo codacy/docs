@@ -21,11 +21,11 @@ If you already have repositories added on Codacy that have submodules:
 
     **If you're using Bitbucket Cloud**, you must click the link 'Add New User Key' instead and manually copy the SSH key to Bibucket Cloud.
 
-![](/images/Screenshot_2019-05-16_at_15.28.55.png)
+![](../../images/Screenshot_2019-05-16_at_15.28.55.png)
 
 Don't forget to repeat these steps every time you add new repositories containing submodules to Codacy. Alternatively, you can make this the default behavior for all new repositories by turning on 'Add repository key to the user' in the Administration Settings. **If you're using Bitbucket Cloud**, since automatically adding the user keys is not supported this setting must be disabled.
 
-![](/images/Screenshot_2019-05-16_at_14.24.06.png)
+![](../../images/Screenshot_2019-05-16_at_14.24.06.png)
 
 **How does this work?**
 
@@ -42,7 +42,7 @@ If you already have repositories added on Codacy that have submodules:
 1.  Navigate to the Repository Settings tab
 2.  Click the 'Generate New User Key' button for each repository
 
-![](/images/Screenshot_2019-05-16_at_15.52.00.png)
+![](../../images/Screenshot_2019-05-16_at_15.52.00.png)
 
 **How does this work?**
 

@@ -25,7 +25,7 @@ Yes, you can change your plan at any time.
 
 To change the plan for your organization, click on your avatar and go to **Organization**, select the organization, click on Plan and Billing, change the plan, and confirm.
 
-![](/images/plan-and-billing.png)
+![](../../images/plan-and-billing.png)
 
 ## How many users do I need to have in my organization?
 
