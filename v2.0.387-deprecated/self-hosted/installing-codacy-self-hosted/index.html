@@ -2891,12 +2891,12 @@ Mandatory settings to be reviewed</p>
 <p><img src="/images/Screen_Shot_2016-10-31_at_17.07.38.png" width="669" height="239" />
 PULL option available</p>
 <p>Pressing <strong>Pull</strong> will start an async method that can take up to 30 minutes, depending on your internet connection. This will pull Codacy images from dockerhub, making them available in the local registry for application execution.</p>
-<p><img alt="Pulling dockers" src="/images/Screen_Shot_2015-10-29_at_16.04.41.png" /></p>
+<p><img alt="Pulling dockers" src="../../images/Screen_Shot_2015-10-29_at_16.04.41.png" /></p>
 <p>When done, a success message will show in the logs, and refreshing the page will show a new option <strong>Run</strong> in the toolbar:</p>
 <p><img src="/images/Screen_Shot_2016-10-31_at_17.15.06.png" width="584" height="297" />
 Docker pulled and new RUN option</p>
 <p>Pressing <strong>RUN</strong> will start the application. At any time, you can check the status of Codacy by navigating to Support:</p>
-<p><img alt="" src="/images/Screen_Shot_2017-02-22_at_16.28.13.png" />
+<p><img alt="" src="../../images/Screen_Shot_2017-02-22_at_16.28.13.png" />
 Support screen</p>
 <p>There, all dockers will show their status. The <strong>download logs</strong> link will create a zip file with all container logs that can be used to debug your installation at any time.</p>
 <h2 id="341-updating-the-control-panel">3.4.1 - Updating the Control Panel<a class="headerlink" href="#341-updating-the-control-panel" title="Permanent link">&para;</a></h2>
@@ -2910,19 +2910,19 @@ Support screen</p>
 <h3 id="database-ip">Database IP<a class="headerlink" href="#database-ip" title="Permanent link">&para;</a></h3>
 <p>If the database IP is incorrectly configured, Codacy will try to do an initial connection and wait on this before enabling the HTTP server. If the server is inaccessible, this will render Codacy unavailable.</p>
 <p>You can navigate to port 80 (http) or port 443 (https) of your server in order to test your installation of Codacy. Codacy will provide you with a checkup page that will scan for any missed configuration setting.</p>
-<p><img alt="Failed settings screen" src="/images/Screen_Shot_2015-07-28_at_13.02.09.png" /></p>
+<p><img alt="Failed settings screen" src="../../images/Screen_Shot_2015-07-28_at_13.02.09.png" /></p>
 <h2 id="36-registration">3.6 Registration<a class="headerlink" href="#36-registration" title="Permanent link">&para;</a></h2>
 <p>When all settings are correct, Codacy will ask you to accept the License Agreement.</p>
-<p><img alt="" src="/images/Screen_Shot_2015-07-29_at_13.23.34.png" /></p>
+<p><img alt="" src="../../images/Screen_Shot_2015-07-29_at_13.23.34.png" /></p>
 <p>After accepting it, you will be redirected to the initial registration screen.</p>
-<p><img alt="Registration panel" src="/images/Screen_Shot_2015-07-29_at_13.26.11-1.png" /></p>
+<p><img alt="Registration panel" src="../../images/Screen_Shot_2015-07-29_at_13.26.11-1.png" /></p>
 <p>The first user to register will automatically be an admin and will be able to administer the platform and create additional users.</p>
 <h2 id="37-initial-configuration">3.7 Initial configuration<a class="headerlink" href="#37-initial-configuration" title="Permanent link">&para;</a></h2>
 <h3 id="internet-access">Internet access<a class="headerlink" href="#internet-access" title="Permanent link">&para;</a></h3>
 <p>At this point as the application has finished downloading all components, internet access can be removed from the machine if desired.</p>
 <h3 id="default-patterns">Default patterns<a class="headerlink" href="#default-patterns" title="Permanent link">&para;</a></h3>
 <p>We highly suggest you now go to 'Admin &gt; Patterns' to select the default patterns. These defaults will be applied to new repositories.</p>
-<p><img alt="Code patterns" src="/images/Screenshot_2019-05-20_at_11.44.45.png" /></p>
+<p><img alt="Code patterns" src="../../images/Screenshot_2019-05-20_at_11.44.45.png" /></p>
 <p>Codacy is now ready to be used.</p>
 <h2 id="40-additional-configurations">4.0 Additional configurations<a class="headerlink" href="#40-additional-configurations" title="Permanent link">&para;</a></h2>
 <h3 id="http-custom-port">HTTP - Custom Port<a class="headerlink" href="#http-custom-port" title="Permanent link">&para;</a></h3>
@@ -2932,10 +2932,10 @@ Support screen</p>
 <h3 id="https-control-panel">HTTPS - Control Panel<a class="headerlink" href="#https-control-panel" title="Permanent link">&para;</a></h3>
 <p>To access the control panel with HTTPS, upload your CSR file (without password) and the certificate key to the CSR file in the settings panel.
 By enabling the HTTPS settings, the control panel will be accessible through HTTPS and will use the configured port (9443 by default).  </p>
-<p><img alt="Screen_Shot_2018-01-25_at_10.43.15.png" src="/images/Screen_Shot_2018-01-25_at_10.43.15.png" /></p>
+<p><img alt="Screen_Shot_2018-01-25_at_10.43.15.png" src="../../images/Screen_Shot_2018-01-25_at_10.43.15.png" /></p>
 <h3 id="https-codacy">HTTPS - Codacy<a class="headerlink" href="#https-codacy" title="Permanent link">&para;</a></h3>
 <p>To access Codacy with HTTPS, upload your CSR file (without password) and the certificate key to the CSR file in the settings panel. By enabling the HTTPS settings, the control panel will be accessible through HTTPS and will use the configured port (9443 by default).</p>
-<p><img alt="" src="/images/pasted_image_at_2017_02_22_04_16_pm_480.png" /></p>
+<p><img alt="" src="../../images/pasted_image_at_2017_02_22_04_16_pm_480.png" /></p>
 <p>After this is complete, make sure you "Save" and click "Reload".</p>
 <h3 id="https-using-https-with-an-external-load-balancer">HTTPS - Using HTTPS with an external load balancer<a class="headerlink" href="#https-using-https-with-an-external-load-balancer" title="Permanent link">&para;</a></h3>
 <p>If you would prefer to set up HTTPS via an external load balancer (for example: AWS Load balancers), there are
@@ -2952,7 +2952,7 @@ additional steps for setup:</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 4, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2020</span>
     
   </small>
 </div>
