@@ -498,9 +498,36 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Project API
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Project API" class="md-nav__link md-nav__link--active">
       Project API
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#see-also" class="md-nav__link">
+    See also
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -1026,8 +1053,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../related-tools/run-local-analysis/" title="Run local analysis" class="md-nav__link">
-      Run local analysis
+    <a href="../../../related-tools/running-local-analysis/" title="Running local analysis" class="md-nav__link">
+      Running local analysis
     </a>
   </li>
 
@@ -1038,8 +1065,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../related-tools/run-spotbugs/" title="Run SpotBugs" class="md-nav__link">
-      Run SpotBugs
+    <a href="../../../related-tools/running-spotbugs/" title="Running SpotBugs" class="md-nav__link">
+      Running SpotBugs
     </a>
   </li>
 
@@ -1050,8 +1077,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../related-tools/api-tokens/" title="API Tokens" class="md-nav__link">
-      API Tokens
+    <a href="../../../related-tools/codacy-api-tokens/" title="Codacy API Tokens" class="md-nav__link">
+      Codacy API Tokens
     </a>
   </li>
 
@@ -2566,10 +2593,24 @@
                 
                 
                 <h1 id="project-api">Project API<a class="headerlink" href="#project-api" title="Permanent link">&para;</a></h1>
-<p>The Codacy API offers specific methods to manipulate repositories. You access these by using a Project API Token generated for your repository.</p>
+<p>The Codacy API offers specific methods to manipulate repositories. To use these API methods or to <a href="../../../coverage-reporter/adding-coverage-to-your-repository/">send coverage results</a> for your repository, you must use a project API Token generated specifically for your repository. Each project API Token is only valid for one repository.</p>
+<p>To generate an API token:</p>
+<ol>
+<li>
+<p>Open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>, click the button <strong>Add integration</strong>, and add a <strong>Project API</strong> integration.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can create multiple <strong>Project API</strong> integrations to obtain different project API Tokens. This can be useful to have a more flexible control when revoking a specific token.</p>
+</div>
+</li>
+<li>
+<p>Click the button <strong>Settings</strong> for the project API integration to copy the new API Token.</p>
 <p><img alt="Project API Token" src="../images/project-api-token.png" /></p>
-<p>Creating a Project API integration in your repository <strong>Settings</strong> tab will generate an API Token valid for that repository.</p>
-<p>To revoke a Token, remove the integration.</p>
+</li>
+</ol>
+<p>To revoke an API Token, clicking the trash can icon to remove the <strong>Project API</strong> integration.</p>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
+<p>To have access to all repositories, use a <a href="../../../related-tools/codacy-api-tokens/">Codacy API token</a>.</p>
                 
                   
                     
@@ -2577,7 +2618,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2020</span>
     
   </small>
 </div>

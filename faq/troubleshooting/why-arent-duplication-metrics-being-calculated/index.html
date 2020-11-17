@@ -1013,8 +1013,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../related-tools/run-local-analysis/" title="Run local analysis" class="md-nav__link">
-      Run local analysis
+    <a href="../../../related-tools/running-local-analysis/" title="Running local analysis" class="md-nav__link">
+      Running local analysis
     </a>
   </li>
 
@@ -1025,8 +1025,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../related-tools/run-spotbugs/" title="Run SpotBugs" class="md-nav__link">
-      Run SpotBugs
+    <a href="../../../related-tools/running-spotbugs/" title="Running SpotBugs" class="md-nav__link">
+      Running SpotBugs
     </a>
   </li>
 
@@ -1037,8 +1037,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../related-tools/api-tokens/" title="API Tokens" class="md-nav__link">
-      API Tokens
+    <a href="../../../related-tools/codacy-api-tokens/" title="Codacy API Tokens" class="md-nav__link">
+      Codacy API Tokens
     </a>
   </li>
 
@@ -2568,7 +2568,7 @@
                 <h1 id="why-arent-duplication-metrics-being-calculated">Why aren't duplication metrics being calculated?<a class="headerlink" href="#why-arent-duplication-metrics-being-calculated" title="Permanent link">&para;</a></h1>
 <p>For performance reasons, Codacy skips the calculation of code duplication for programming languages that have more than 5000 source code files in a repository.</p>
 <p>Besides this, if Codacy fails to calculate code duplication for a specific programming language in a repository three times in a row (for example, because the tool calculating the analysis runs out of memory or times out), Codacy stops trying to analyze the metric for that language and repository.</p>
-<p>When this happens, Codacy does not display code duplication metrics for the affected language:</p>
+<p>When this happens, Codacy doesn't display code duplication metrics for the affected language:</p>
 <ul>
 <li>
 <p>The <strong>Files</strong> page on your repository displays a blank duplication value for files of the affected language.</p>
@@ -2579,7 +2579,7 @@
 <p><img alt="New duplication for a commit" src="../images/duplication-commits.png" /></p>
 </li>
 <li>
-<p>The analysis logs for commits will not display a duplication analysis task for the tool corresponding to the affected language.</p>
+<p>The analysis logs for commits won't display a duplication analysis task for the tool corresponding to the affected language.</p>
 <p><img alt="Analysis logs for a commit" src="../images/duplication-logs.png" /></p>
 </li>
 </ul>
@@ -2587,23 +2587,23 @@
 <ol>
 <li>
 <p>We recommend that you use a <a href="../../../repositories-configure/codacy-configuration-file/">Codacy configuration file</a> to exclude source code files of the affected language from your project to decrease the number of files to be analyzed.</p>
-<p>For example, you may be able to exclude files that are automatically generated from your test suite or files belonging to dependencies that are not maintained by your team, such as the <code>node_modules</code> folder for JavaScript projects.</p>
+<p>For example, you may be able to exclude files that are automatically generated from your test suite or files belonging to dependencies that aren't maintained by your team, such as the <code>node_modules</code> folder for JavaScript projects.</p>
 </li>
 <li>
 <p>Reanalyze the last commit in the repository so that Codacy runs the code duplication analysis.</p>
 </li>
 </ol>
-<p>If the analysis finishes but the code duplication metric was not calculated, follow the next steps:</p>
+<p>If the analysis finishes but the code duplication metric wasn't calculated, follow the next steps:</p>
 <ul>
 <li>
 <p><strong>If you are using Codacy Self-hosted</strong>, open the <strong>Admin panel</strong>, <strong>Repositories</strong>, select the repository, tab <strong>Settings</strong>, and reset the code duplication analysis in <strong>Duplication settings</strong>. Then, reanalyze the last commit in the repository so that Codacy runs the code duplication analysis.</p>
 <p><img alt="Resetting the failed duplication analysis" src="../images/duplication-metrics-reset.png" /></p>
 </li>
 <li>
-<p><strong>If you are <a href="../../../related-tools/run-local-analysis/">analyzing your repository locally</a></strong> with <code>codacy-analysis-cli</code>, consider using the flag <code>--tool-timeout</code> to specify a larger timeout for the execution of the tool.</p>
+<p><strong>If you are <a href="../../../related-tools/running-local-analysis/">analyzing your repository locally</a></strong> with the Codacy Analysis CLI, consider using the flag <code>--tool-timeout</code> to specify a larger timeout for the execution of the tool.</p>
 </li>
 <li>
-<p><strong>If you are using Codacy Cloud</strong> or if the steps above did not solve the issue, please contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
+<p><strong>If you are using Codacy Cloud</strong> or if the steps above didn't solve the issue, please contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
 </li>
 </ul>
                 
@@ -2613,7 +2613,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 2, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2020</span>
     
   </small>
 </div>
