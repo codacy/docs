@@ -6,7 +6,7 @@ Regarding the analysis of commits, as soon as an [Author is added](/hc/en-us/art
 
 On the other hand, if you are interested on the information available on Codacy's UI, be it regarding issues detected, patterns being used, or the current settings of a repository, you will have to become a Member of the organization. To do so, click "Organizations" on the top right-hand menu under your avatar and you will see a list of organizations that you can join:
 
-![](/images/Screen_Shot_2020-02-25_at_15.58.38.png)
+![](../images/Screen_Shot_2020-02-25_at_15.58.38.png)
 
 As soon as you join the organization you will be added as a Member and removed from the Authors list, if your email was there.
 

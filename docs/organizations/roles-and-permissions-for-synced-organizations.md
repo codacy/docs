@@ -166,7 +166,7 @@ Depending on your role on the Git provider you will have different permissions o
 <sup>1</sup>: Outside Collaborators and External Users are not supported as Members of organizations on Codacy. However, you can [add them as Authors](adding-and-managing-authors.md) so that their commits are analyzed by Codacy.  
 <sup>2</sup>: Depending on your [setting for accepting new people](/hc/en-us/articles/360010263720).
 
-![](/images/screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-2019-11-04-19_02_28.png)
+![](../images/screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-2019-11-04-19_02_28.png)
 
 You can check who joined your organization and their role in the People page on Codacy.
 

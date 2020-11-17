@@ -2,9 +2,9 @@
 
 Here you get an overview of all issues raised by Codacy in your repository. We arrange them in six categories. For every issue, we present information on why is this an issue, how you could solve it, and the related code pattern.
 
-![The Issues View](/images/image-0.png)
+![The Issues View](../images/image-0.png)
 
-![An issue expanded](/images/image-1.gif)
+![An issue expanded](../images/image-1.gif)
 
 ## 1. Issue Categories
 
@@ -27,19 +27,19 @@ Each pattern has a pre-defined severity level and at the moment, it’s not poss
 
 For an issue you disagree with or false positives, you can either ignore that instance or disable the pattern across the whole repository. To do so, click on cog wheel and select the desired option:
 
-![](/images/image-3.gif)
+![](../images/image-3.gif)
 
 ### 3.1. Reinstating ignored issues
 
 To reinstate ignored issues, click on the **Current Issues** box, and select **Ignored Issues** from the drop-down menu.
 
-![](/images/image-4.gif)
+![](../images/image-4.gif)
 
 ## 4. Removing a pattern
 
 When you want to remove a pattern altogether from your repository's analysis, expand the issue you’re aiming to disable the pattern for, click on the cog wheel, select **Remove pattern** and confirm your choice.
 
-![](/images/image-5.gif)
+![](../images/image-5.gif)
 
 !!! note
     If you’re using a custom [configuration file](/hc/en-us/articles/207994335#4-configuration-files), you have to remove that pattern line manually in your file.
@@ -48,7 +48,7 @@ When you want to remove a pattern altogether from your repository's analysis, ex
 
 To restore a removed pattern, go to your repository's **Code Pattern** settings, choose the tool you'd like to enable the pattern for, find the pattern and click on the check box to enable.
 
-![](/images/image-6.gif)
+![](../images/image-6.gif)
 
 !!! note
     If you're using a custom pattern configuration file, have to restore the line manually.
@@ -60,13 +60,13 @@ You can cherry-pick files to be ignored for further analysis. To ignore a f
 !!! warning
     This file is now ignored across the entire repository and for all patterns.
 
-![](/images/image-7.gif)
+![](../images/image-7.gif)
 
 ### 5.1. Managing ignored files
 
 Ignored files are managed through **Settings**, **Ignore Files**.
 
-![](/images/image-8.gif)
+![](../images/image-8.gif)
 
 For more information on this topic, have a look at this [article](/hc/en-us/articles/360005097654-Ignore-files-from-Codacy-analysis).
 

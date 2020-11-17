@@ -16,4 +16,4 @@ Upon **pull requests**, Codacy will automatically trigger analysis on the branch
 
 It is also possible to enable analysis on other branches. To do this, go to the repository **Settings**, open the **Branches** tab, and enable the branches you'd like.
 
-![](/images/Screen_Shot_2016-10-12_at_12.07.47.png)
+![](../images/Screen_Shot_2016-10-12_at_12.07.47.png)
