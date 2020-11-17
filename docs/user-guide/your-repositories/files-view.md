@@ -9,15 +9,15 @@ This allows you to keep track or focus some of your time on files with low cover
 
 When you click in a filename, it opens the File detail.
 
-![](/images/Screen_Shot_2016-10-13_at_12.02.14.png)
+![](../../images/Screen_Shot_2016-10-13_at_12.02.14.png)
 
 The file detail starts with a header where you can see a lot of statistical information on the file:
 
-![](/images/Screen_Shot_2016-10-13_at_17.58.47.png)
+![](../../images/Screen_Shot_2016-10-13_at_17.58.47.png)
 
 Below that header you will find a tab selector for further information on issues, coverage, and duplication. By default you will see the list of issues in the file. On the right-hand side you can toggle between a list view and the annotated source code.
 
-![](/images/Screen_Shot_2016-10-14_at_11.03.11.png)
+![](../../images/Screen_Shot_2016-10-14_at_11.03.11.png)
 
 You can open each issue to get more information on it. For more information about Issues, please check our [Issues view](/hc/en-us/articles/360009180134-Issues-View) page.
 
@@ -25,4 +25,4 @@ The coverage tab shows you which lines are covered by tests and which aren't.
 
 As for the duplication tab, here you can find duplicated code and links to its clones.
 
-![](/images/Screen_Shot_2016-10-14_at_11.07.03.png)
+![](../../images/Screen_Shot_2016-10-14_at_11.07.03.png)

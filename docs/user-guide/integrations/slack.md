@@ -17,7 +17,7 @@ To set up a new WebHook:
 2.  Select the channel where you want to be notified and click "Add Incoming WebHooks Integration"
 3.  Copy the generated URL and use it on Codacy.
 
-![](/images/slack-webhook_2.png)
+![](../../images/slack-webhook_2.png)
 
 4.  Save Settings on Slack
 
@@ -30,8 +30,8 @@ You can use the Test button to send a test notification to your Slack channel.
 
 Refresh Codacy page to see the green light.
 
-![](/images/Screen_Shot_2016-12-02_at_14.52.45.png)
+![](../../images/Screen_Shot_2016-12-02_at_14.52.45.png)
 
 After configuring your Slack integration with your server settings, Codacy will start commenting on Slack whenever it finds new issues.
 
-![Slack test notification](/images/Screen_Shot_2015-09-08_at_09.17.35.png)
+![Slack test notification](../../images/Screen_Shot_2015-09-08_at_09.17.35.png)
