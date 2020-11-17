@@ -83,7 +83,7 @@ To revoke the access from Codacy to one or more of the OAuth providers:
 1.  Click on your avatar on the top right-hand corner an select **Your Account**, tab **Access Management**.
 2.  The **Access Management** page lists all current integrations with Git providers or Google that you used to sign in or log in to Codacy. To revoke the access to an integration, click the button **Revoke access** for the intended integration.
 
-    ![](/images/revoke.png)
+    ![](../images/revoke.png)
 
 3.  To ensure that the integration is removed not only on Codacy but also on the integration side, we recommend that you follow the instructions on how to revoke the Codacy OAuth application on your provider:
 
