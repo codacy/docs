@@ -165,7 +165,7 @@ Depending on your role on the Git provider you will have different permissions o
 
 [^1]&#x3A; Depending on your [setting for accepting new people](/hc/en-us/articles/360010263720).
 
-![screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-2019-11-04-19_02_28.png](/images/screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-2019-11-04-19_02_28.png)
+![screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-2019-11-04-19_02_28.png](../../images/screencapture-app-dev-codacy-org-gh-organizations-mugiwara-nakama-settings-people-2019-11-04-19_02_28.png)
 
 You can check who joined your organization and their role in the People page on Codacy.
 

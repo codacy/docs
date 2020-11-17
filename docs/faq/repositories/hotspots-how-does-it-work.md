@@ -6,7 +6,7 @@ On the Organization Dashboard and Repository Dashboard you have a section called
 
 Each hotspot, depending on the Dashboard, should apply to you on the environment you are in: if you are on the Organization Dashboard (where you can see all the repositories of a specific Organization) you will see Hotspots (attention points) related with the Organization, and if you are on the Repository Dashboard you will see Hotspots related with the repository.
 
-![](/images/Screen_Shot_2018-05-03_at_23.38.47.png)
+![](../../images/Screen_Shot_2018-05-03_at_23.38.47.png)
 
 **Hotspots can be dismissed** by clicking the "x" button on the top right-hand corner. If you dismiss an Hotspot and the situation that generated that Hotspot is not fixed it will show up again 7 days later.
 
