@@ -25,8 +25,8 @@ Substitute the placeholders with your own values:
     | `ghe` | GitHub Enterprise    |
     | `gl`  | GitLab Cloud         |
     | `gle` | GitLab Enterprise    |
-    | `bb`  | BitBucket Cloud      |
-    | `bbe` | BitBucker Enterprise |
+    | `bb`  | Bitbucket Cloud      |
+    | `bbe` | Bitbucket Server     |
 
 -   **REPOSITORY_FULL_PATH**: Name of the organization and repository on the Git provider, using the format `<organization>/<repository>`. For example, `codacy/docs`. You must have admin permissions over the repository on the Git provider.
 
