@@ -1,10 +1,10 @@
-# WebHook notifications
+# Webhook notifications
 
 Codacy integrates with any service by sending a POST message to a defined address.
 
-To add a WebHook, access the **Integrations** tab of your repository **Settings**, click on **Add channel** and select **WebHook** from the list.
+To add a webhook, access the **Integrations** tab of your repository **Settings**, click on **Add channel** and select **Webhook** from the list.
 
-![](../../images/Screen_Shot_2016-12-02_at_17.41.49.png)
+![Adding a webhook](images/webhook-integration.png)
 
 ## Configuration
 
