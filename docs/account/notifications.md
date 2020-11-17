@@ -4,6 +4,6 @@ You can configure which repositories you want to be emailed about and your defau
 
 To change these settings click on your avatar, **Your Account**, and open **Notifications**.
 
-![](../images/Screen_Shot_2016-10-13_at_11.27.20.png)
+![Notification settings](images/notifications.png)
 
-To disable all repository notifications, you can either remove all repositories or remove both commit and pull requests notifications globally.
+To disable all repository notifications, you can either remove all repositories or remove both commit and pull request notifications globally.
