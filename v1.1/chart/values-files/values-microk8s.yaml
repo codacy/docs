@@ -40,20 +40,18 @@ listener:
     persistence:
       size: 100Gi
 
+core:
+  replicaCount: 1
+  resources:
+    limits:
+      cpu: 300m
+      memory: 500Mi
+
 engine:
   resources:
     limits:
       cpu: 1
       memory: 2Gi
-
-codacy-tools:
-  resources:
-    limits:
-      cpu: 500m
-      memory: 1Gi
-    requests:
-      cpu: 200m
-      memory: 512Mi
 
 worker-manager:
   replicaCount: 1
@@ -64,7 +62,6 @@ worker-manager:
     workerResources:
       limits:
         memory: "2Gi"
-
 crow:
   resources:
     limits:
@@ -82,4 +79,4 @@ codacy-spa:
   replicaCount: 1
   resources:
     limits:
-      memory: 1000Mi
+      memory: 128Mi

@@ -88,19 +88,31 @@
      <lastmod>2020-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.codacy.com/coverage-reporter/generating-coverage-reports/</loc>
+     <loc>http://docs.codacy.com/coverage-reporter/</loc>
      <lastmod>2020-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.codacy.com/coverage-reporter/adding-coverage-to-your-repository/</loc>
+     <loc>http://docs.codacy.com/coverage-reporter/advanced/authenticating-using-account-token/</loc>
      <lastmod>2020-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/</loc>
+     <loc>http://docs.codacy.com/coverage-reporter/advanced/multiple-reports/</loc>
      <lastmod>2020-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>http://docs.codacy.com/coverage-reporter/troubleshooting-common-issues/</loc>
+     <loc>http://docs.codacy.com/coverage-reporter/advanced/installation-methods/</loc>
+     <lastmod>2020-11-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.codacy.com/coverage-reporter/troubleshooting/common-issues/</loc>
+     <lastmod>2020-11-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.codacy.com/coverage-reporter/troubleshooting/commit-detection/</loc>
+     <lastmod>2020-11-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>http://docs.codacy.com/coverage-reporter/troubleshooting/swift-objectivec/</loc>
      <lastmod>2020-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -276,6 +288,10 @@
      <lastmod>2020-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>http://docs.codacy.com/chart/infrastructure/aks-quickstart/</loc>
+     <lastmod>2020-11-17</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>http://docs.codacy.com/chart/infrastructure/microk8s-quickstart/</loc>
      <lastmod>2020-11-17</lastmod>
      <changefreq>daily</changefreq>
@@ -313,10 +329,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>http://docs.codacy.com/chart/configuration/monitoring/</loc>
-     <lastmod>2020-11-17</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>http://docs.codacy.com/chart/maintenance/license/</loc>
      <lastmod>2020-11-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
