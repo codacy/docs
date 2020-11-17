@@ -37,50 +37,52 @@ jobs:
         run: |
           mkdocs build
 
-  deploy-version:
-    name: deploy-version
-    runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/heads/release/v')
-    steps:
-      - name: Checkout release branch
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
-          submodules: true
-          fetch-depth: 0
-
-      - name: Set up Python
-        uses: actions/setup-python@v1
-        with:
-          python-version: "3.x"
-
-      - uses: actions/cache@v2
-        id: cache
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip
-          pip install -r requirements.txt
-
-      - name: Setup git author
-        run: |
-          remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git remote rm origin
-          git remote add origin "${remote_repo}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Deploy docs
-        run: |
-          git fetch origin gh-pages --verbose
-          mike deploy ${GITHUB_REF##*/release/} --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
+# The job below is disabled because the version of the documentation in this branch
+# is no longer published.
+#  deploy-version:
+#    name: deploy-version
+#    runs-on: ubuntu-latest
+#    if: startsWith(github.ref, 'refs/heads/release/v')
+#    steps:
+#      - name: Checkout release branch
+#        uses: actions/checkout@v2
+#        with:
+#          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+#          submodules: true
+#          fetch-depth: 0
+#
+#      - name: Set up Python
+#        uses: actions/setup-python@v1
+#        with:
+#          python-version: "3.x"
+#
+#      - uses: actions/cache@v2
+#        id: cache
+#        with:
+#          path: ~/.cache/pip
+#          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+#          restore-keys: |
+#            ${{ runner.os }}-pip-
+#
+#      - name: Install dependencies
+#        run: |
+#          python -m pip install --upgrade pip
+#          pip install -r requirements.txt
+#
+#      - name: Setup git author
+#        run: |
+#          remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+#          git config --global user.name "${GITHUB_ACTOR}"
+#          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
+#          git remote rm origin
+#          git remote add origin "${remote_repo}"
+#        env:
+#          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+#
+#      - name: Deploy docs
+#        run: |
+#          git fetch origin gh-pages --verbose
+#          mike deploy ${GITHUB_REF##*/release/} --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
 
   deploy:
     name: deploy
