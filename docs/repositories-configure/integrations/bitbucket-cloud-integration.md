@@ -6,7 +6,7 @@ Once the integration is done, Codacy will restart analysing your repository and 
 
 For private repositories, this user will by default become the Bitbucket Cloud user that Codacy will use to comment and create issues on Bitbucket Cloud. For public repositories, comments made by Codacy will appear as coming from codacy-bot.
 
-![](/images/Feb-14-2019_16-31-44.gif)
+![](../../images/Feb-14-2019_16-31-44.gif)
 
 ## Enabling Bitbucket Cloud integration
 
@@ -14,4 +14,4 @@ Be aware that when clicking **Enable**, you will be required to move back and fo
 
 After enabling the Bitbucket Cloud integration, you will have additional options when browsing the existing issues on the repository:
 
-![Bitbucket Cloud integration](/images/blobid0.png)
+![Bitbucket Cloud integration](../../images/blobid0.png)
