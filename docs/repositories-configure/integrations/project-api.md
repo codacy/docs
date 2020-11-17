@@ -17,4 +17,4 @@ To revoke an API Token, clicking the trash can icon to remove the **Project API*
 
 ## See also
 
-To have access to all repositories, use a [Codacy API token](../../related-tools/api-tokens.md).
+To have access to all repositories, use a [Codacy API token](../../related-tools/codacy-api-tokens.md).

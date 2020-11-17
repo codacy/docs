@@ -1,4 +1,4 @@
-# Run SpotBugs
+# Running SpotBugs
 
 [SpotBugs](https://spotbugs.github.io/) is available for Codacy Cloud and Codacy Self-hosted, with the following plugins:
 
@@ -9,7 +9,7 @@ To run this tool:
 
 1.  Enable the setting **Run analysis through build server** in your repository **Settings**, tab **General**, **Repository analysis**.
 1.  Compile your Java or Scala repository on your build server, as you would normally do.
-1.  Run the [Codacy Analysis CLI](run-local-analysis.md) on the root of the repository specifying the tool SpotBugs. Obtain the [project API Token](../repositories-configure/integrations/project-api.md) from the page **Integrations** in your Codacy repository settings.
+1.  Run the [Codacy Analysis CLI](running-local-analysis.md) on the root of the repository specifying the tool SpotBugs. Obtain the [project API Token](../repositories-configure/integrations/project-api.md) from the page **Integrations** in your Codacy repository settings.
 
     !!! important
         **If you're using Codacy Self-hosted** you must also specify the endpoint where the Codacy instance is running either by using the flag `--codacy-api-base-url` or the environment variable `CODACY_API_BASE_URL`.

@@ -1,9 +1,9 @@
 # How do I programmatically add repositories to Codacy?
 
-There are scenarios where manually adding Git repositories on the Codacy UI is inconvenient or time consuming. For example:
+There are scenarios where manually adding Git repositories on the Codacy UI is inconvenient or time-consuming. For example:
 
 -   You want to add all new repositories to Codacy when they're created on the Git provider
--   You are adding a large number of repositories to Codacy, such as when initially adding all repositories in your Git provider organization
+-   You're adding a large number of repositories to Codacy, such as when initially adding all repositories in your Git provider organization
 
 To add repositories programmatically, use Codacy's API v3 endpoint [addRepository](https://app.codacy.com/api/api-docs#addrepository){: target="_blank"} by performing an HTTP POST request to `/repositories`, specifying the Git provider and the full path of the repository in the body of the request:
 
@@ -16,7 +16,7 @@ curl -X POST https://app.codacy.com/api/v3/repositories \
 
 Substitute the placeholders with your own values:
 
--   **API_KEY**: [API token](../../related-tools/api-tokens.md) used to authenticate on the Codacy API.
+-   **API_KEY**: [API token](../../related-tools/codacy-api-tokens.md) used to authenticate on the Codacy API.
 -   **GIT_PROVIDER**: Git provider hosting the repository, using one of the values in the table below. For example, `gh` for GitHub Cloud.
 
     | Value | Git provider         |
@@ -52,7 +52,7 @@ We provide an example Bash script that adds all repositories in a GitHub Cloud o
 
 The example script:
 
-1.  Defines a GitHub [personal access token](https://github.com/settings/tokens){: target="_blank"}, the GitHub organization name, and a [Codacy API token](../../related-tools/api-tokens.md).
+1.  Defines a GitHub [personal access token](https://github.com/settings/tokens){: target="_blank"}, the GitHub organization name, and a [Codacy API token](../../related-tools/codacy-api-tokens.md).
 1.  Calls the GitHub API to [obtain the list of all repositories](https://docs.github.com/en/rest/reference/repos#list-organization-repositories){: target="_blank"} in the defined organization.
 1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to return the value of `full_name` for each repository obtained in the JSON response. The `full_name` already includes the organization and repository names using the format `<organization>/<repository>`.
 1.  For each repository, calls the Codacy API endpoint to add a new repository specifying `gh` as the Git provider and the value of `full_name` as the full path of the repository.

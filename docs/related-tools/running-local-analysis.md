@@ -1,4 +1,4 @@
-# Run local analysis
+# Running local analysis
 
 ## Set up the Codacy Analysis CLI
 
