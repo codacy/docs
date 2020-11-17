@@ -1,4 +1,4 @@
-# Run local analysis
+# Running local analysis
 
 ## Set up the Codacy Analysis CLI
 
@@ -8,26 +8,22 @@ Follow the [installation guide](https://github.com/codacy/codacy-analysis-cli#in
 
 At the moment, the CLI still requires to retrieve the configuration from Codacy to perform an analysis. In order to access the repository, you will have to obtain a *Project Token* as explained in the [CLI documentation](https://github.com/codacy/codacy-analysis-cli#project-token). Then, you can invoke the CLI to get a report with all the issues:
 
+!!! important
+    **If you're using Codacy Self-hosted** you must also specify the endpoint where the Codacy instance is running either by using the flag `--codacy-api-base-url` or the environment variable `CODACY_API_BASE_URL`.
+
 ```bash
-codacy-analysis-cli analyse --directory <SOURCE-CODE-PATH> \
+codacy-analysis-cli analyze --directory <SOURCE-CODE-PATH> \
                             --project-token <PROJECT-TOKEN> \
                             --allow-network \
-                            --codacy-api-base-url <API-BASE-URL> \
                             --verbose \
                             --upload
 ```
 
-If you don't specify the tool, the analysis will run as Codacy does in the backend. To obtain results for a particular tool, specify the tool with `--tool`.
-
-You can see the available tools with:
+If you don't specify the tool, the analysis will run as Codacy does in the backend. To obtain results for a particular tool, specify the tool with `--tool`. You can see the available tools with:
 
 ```bash
 codacy-analysis-cli analyse --help
 ```
-
-### Codacy Self-hosted
-
-If you are using Codacy Self-hosted, you must configure the endpoint where Codacy Self-hosted is running either by using the flag `--codacy-api-base-url` or the environment variable `CODACY_API_BASE_URL`.
 
 ### Advanced configuration
 
@@ -41,6 +37,6 @@ Some flags you might be interested in:
 
 ## Notes on ignored issues
 
-If you have ignored issues on Codacy be aware that the CLI will not respect those ignored issues when printing the results locally.
+If you have ignored issues on Codacy be aware that the CLI won't respect those ignored issues when printing the results locally.
 
 When uploading results for Codacy Self-hosted the ignored issues will be reflected on Codacy after the analysis is complete.
