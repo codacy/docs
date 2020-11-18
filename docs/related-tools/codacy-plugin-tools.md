@@ -22,59 +22,59 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 </tr>
 <tr>
 <td><a href="https://github.com/openstack/bandit">Bandit</a></td>
-<td><a href="https://github.com/codacy/codacy-bandit" class="in-cell-link">https://github.com/codacy/codacy-bandit</a></td>
+<td><a href="https://github.com/codacy/codacy-bandit">https://github.com/codacy/codacy-bandit</a></td>
 </tr>
 <tr>
-<td><a href="https://brakemanscanner.org/" class="in-cell-link">Brakeman</a></td>
-<td><a href="https://github.com/codacy/codacy-brakeman" class="in-cell-link">https://github.com/codacy/codacy-brakeman</a></td>
+<td><a href="https://brakemanscanner.org/">Brakeman</a></td>
+<td><a href="https://github.com/codacy/codacy-brakeman">https://github.com/codacy/codacy-brakeman</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/rubysec/bundler-audit">Bundler Audit</a></td>
 <td><a href="https://github.com/codacy/codacy-bundler-audit">https://github.com/codacy/codacy-bundler-audit</a></td>
 </tr>
 <tr>
-<td><a href="https://checkstyle.sourceforge.io/" class="in-cell-link">Checkstyle</a></td>
-<td><a href="https://github.com/codacy/codacy-checkstyle" class="in-cell-link">https://github.com/codacy/codacy-checkstyle</a></td>
+<td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a></td>
+<td><a href="https://github.com/codacy/codacy-checkstyle">https://github.com/codacy/codacy-checkstyle</a></td>
 </tr>
 <tr>
 <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
-<td><a href="https://github.com/codacy/codacy-clang-tidy" class="in-cell-link">https://github.com/codacy/codacy-clang-tidy</a></td>
+<td><a href="https://github.com/codacy/codacy-clang-tidy">https://github.com/codacy/codacy-clang-tidy</a></td>
 </tr>
 <tr>
 <td>Codacy Scalameta Pro</td>
-<td><a href="https://github.com/codacy/codacy-scalameta" class="in-cell-link">https://github.com/codacy/codacy-scalameta</a></td>
+<td><a href="https://github.com/codacy/codacy-scalameta">https://github.com/codacy/codacy-scalameta</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/securego/gosec" class="in-cell-link">Gosec</a></td>
-<td><a href="https://github.com/codacy/codacy-gosec" class="in-cell-link">https://github.com/codacy/codacy-gosec</a></td>
+<td><a href="https://github.com/securego/gosec">Gosec</a></td>
+<td><a href="https://github.com/codacy/codacy-gosec">https://github.com/codacy/codacy-gosec</a></td>
 </tr>
 <tr>
-<td><a href="https://codenarc.org/" class="in-cell-link">CodeNarc</a></td>
-<td><a href="https://github.com/codacy/codacy-codenarc" class="in-cell-link">https://github.com/codacy/codacy-codenarc</a></td>
+<td><a href="https://codenarc.org/">CodeNarc</a></td>
+<td><a href="https://github.com/codacy/codacy-codenarc">https://github.com/codacy/codacy-codenarc</a></td>
 </tr>
 <tr>
-<td><a href="http://www.coffeelint.org/" class="in-cell-link">Coffeelint</a></td>
-<td><a href="https://github.com/codacy/codacy-coffeelint" class="in-cell-link">https://github.com/codacy/codacy-coffeelint</a></td>
+<td><a href="http://www.coffeelint.org/">Coffeelint</a></td>
+<td><a href="https://github.com/codacy/codacy-coffeelint">https://github.com/codacy/codacy-coffeelint</a></td>
 </tr>
 <tr>
-<td><a href="http://cppcheck.sourceforge.net/" class="in-cell-link">CPPCheck</a></td>
-<td><a href="https://github.com/codacy/codacy-cppcheck" class="in-cell-link">https://github.com/codacy/codacy-cppcheck</a></td>
+<td><a href="http://cppcheck.sourceforge.net/">CPPCheck</a></td>
+<td><a href="https://github.com/codacy/codacy-cppcheck">https://github.com/codacy/codacy-cppcheck</a></td>
 </tr>
 <tr>
 <td><span>Credo</span></td>
-<td><a href="https://github.com/codacy/codacy-credo"><span class="wysiwyg-underline">https://github.com/codacy/codacy-credo</span></a></td>
+<td><a href="https://github.com/codacy/codacy-credo">https://github.com/codacy/codacy-credo</a></td>
 </tr>
 <tr>
-<td><a href="http://csslint.net/" class="in-cell-link">CSSLint</a></td>
-<td><a href="https://github.com/codacy/codacy-csslint" class="in-cell-link">https://github.com/codacy/codacy-csslint</a></td>
+<td><a href="http://csslint.net/">CSSLint</a></td>
+<td><a href="https://github.com/codacy/codacy-csslint">https://github.com/codacy/codacy-csslint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/arturbosch/detekt">Detekt</a></td>
 <td><a href="https://github.com/codacy/codacy-detekt">https://github.com/codacy/codacy-detekt</a></td>
 </tr>
 <tr>
-<td><a href="https://eslint.org/" class="in-cell-link">ESLint</a></td>
-<td><a href="https://github.com/codacy/codacy-eslint" class="in-cell-link">https://github.com/codacy/codacy-eslint</a></td>
+<td><a href="https://eslint.org/">ESLint</a></td>
+<td><a href="https://github.com/codacy/codacy-eslint">https://github.com/codacy/codacy-eslint</a></td>
 </tr>
 <tr>
 <td><a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
@@ -82,7 +82,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 </tr>
 <tr>
 <td><a href="https://github.com/mgechev/revive">Revive</a></td>
-<td><a href="https://github.com/codacy/codacy-gorevive" class="c-link">https://github.com/codacy/codacy-gorevive</a></td>
+<td><a href="https://github.com/codacy/codacy-gorevive">https://github.com/codacy/codacy-gorevive</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/hadolint/hadolint">Hadolint</a></td>
@@ -98,15 +98,15 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 </tr>
 <tr>
 <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP Code Sniffer</a></td>
-<td><a href="https://github.com/codacy/codacy-codesniffer" class="in-cell-link">https://github.com/codacy/codacy-codesniffer</a></td>
+<td><a href="https://github.com/codacy/codacy-codesniffer">https://github.com/codacy/codacy-codesniffer</a></td>
 </tr>
 <tr>
-<td><a href="https://phpmd.org/" class="in-cell-link">PHP Mess Detector</a></td>
-<td><a href="https://github.com/codacy/codacy-phpmd" class="in-cell-link">https://github.com/codacy/codacy-phpmd</a></td>
+<td><a href="https://phpmd.org/">PHP Mess Detector</a></td>
+<td><a href="https://github.com/codacy/codacy-phpmd">https://github.com/codacy/codacy-phpmd</a></td>
 </tr>
 <tr>
-<td><a href="https://pmd.sourceforge.io/pmd-5.3.2/pmd-java/index.html" class="in-cell-link">PMD</a></td>
-<td><a href="https://github.com/codacy/codacy-pmd" class="in-cell-link">https://github.com/codacy/codacy-pmd</a></td>
+<td><a href="https://pmd.sourceforge.io/pmd-5.3.2/pmd-java/index.html">PMD</a></td>
+<td><a href="https://github.com/codacy/codacy-pmd">https://github.com/codacy/codacy-pmd</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/landscapeio/prospector">Prospector</a></td>
@@ -117,24 +117,24 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-psscriptanalyzer">https://github.com/codacy/codacy-psscriptanalyzer</a></td>
 </tr>
 <tr>
-<td><a href="https://www.pylint.org/" class="in-cell-link">Pylint</a></td>
-<td><a href="https://github.com/codacy/codacy-pylint" class="in-cell-link">https://github.com/codacy/codacy-pylint</a></td>
+<td><a href="https://www.pylint.org/">Pylint</a></td>
+<td><a href="https://github.com/codacy/codacy-pylint">https://github.com/codacy/codacy-pylint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/remarkjs/remark-lint">RemarkLint</a></td>
 <td><a href="https://github.com/codacy/codacy-remark-lint">https://github.com/codacy/codacy-remark-lint</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/bbatsov/rubocop" class="in-cell-link">Rubocop</a></td>
+<td><a href="https://github.com/bbatsov/rubocop">Rubocop</a></td>
 <td><a href="https://github.com/codacy/codacy-rubocop">https://github.com/codacy/codacy-rubocop</a></td>
 </tr>
 <tr>
-<td><a href="http://www.scalastyle.org/" class="in-cell-link">Scalastyle</a></td>
-<td><a href="https://github.com/codacy/codacy-scalastyle" class="in-cell-link">https://github.com/codacy/codacy-scalastyle</a></td>
+<td><a href="http://www.scalastyle.org/">Scalastyle</a></td>
+<td><a href="https://github.com/codacy/codacy-scalastyle">https://github.com/codacy/codacy-scalastyle</a></td>
 </tr>
 <tr>
-<td><a href="https://www.shellcheck.net/" class="in-cell-link">ShellCheck</a></td>
-<td><a href="https://github.com/codacy/codacy-shellcheck" class="in-cell-link">https://github.com/codacy/codacy-shellcheck</a></td>
+<td><a href="https://www.shellcheck.net/">ShellCheck</a></td>
+<td><a href="https://github.com/codacy/codacy-shellcheck">https://github.com/codacy/codacy-shellcheck</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
@@ -153,8 +153,8 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-sqlint">https://github.com/codacy/codacy-sqlint</a></td>
 </tr>
 <tr>
-<td><a href="https://staticcheck.io" class="in-cell-link">Staticcheck</a></td>
-<td><a href="https://github.com/codacy/codacy-staticcheck" class="in-cell-link">https://github.com/codacy/codacy-staticcheck</a></td>
+<td><a href="https://staticcheck.io">Staticcheck</a></td>
+<td><a href="https://github.com/codacy/codacy-staticcheck">https://github.com/codacy/codacy-staticcheck</a></td>
 </tr>
 <tr>
 <td><a href="https://stylelint.io/">Stylelint</a></td>
@@ -166,15 +166,15 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 </tr>
 <tr>
 <td><a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
-<td><a href="https://github.com/codacy/codacy-tailor" class="in-cell-link">https://github.com/codacy/codacy-tailor</a></td>
+<td><a href="https://github.com/codacy/codacy-tailor">https://github.com/codacy/codacy-tailor</a></td>
 </tr>
 <tr>
 <td><a href="https://palantir.github.io/tslint/">TSLint</a></td>
-<td><a href="https://github.com/codacy/codacy-tslint" class="in-cell-link">https://github.com/codacy/codacy-tslint</a></td>
+<td><a href="https://github.com/codacy/codacy-tslint">https://github.com/codacy/codacy-tslint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
-<td><a href="https://github.com/codacy/codacy-tsqllint" class="in-cell-link">https://github.com/codacy/codacy-tsqllint</a></td>
+<td><a href="https://github.com/codacy/codacy-tsqllint">https://github.com/codacy/codacy-tsqllint</a></td>
 </tr>
 </tbody>
 </table>
