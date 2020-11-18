@@ -530,8 +530,8 @@ nav:
           - account/notifications.md
     - "Related tools":
           - related-tools/codacy-plugin-tools.md
-          - related-tools/client-side-tools.md
           - related-tools/running-local-analysis.md
+          - related-tools/client-side-tools.md
           - related-tools/running-spotbugs.md
           - related-tools/codacy-api-tokens.md
           - related-tools/tool-developer-guide.md
