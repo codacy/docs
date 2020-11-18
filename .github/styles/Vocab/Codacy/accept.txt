@@ -15,6 +15,7 @@ Cppcheck
 Credo
 CSSLint
 Ctrl
+deadcode
 Detekt
 Dockerfile
 ESLint

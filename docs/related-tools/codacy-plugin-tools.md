@@ -49,6 +49,10 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-gosec">https://github.com/codacy/codacy-gosec</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/tsenart/deadcode">deadcode</a></td>
+<td><a href="https://github.com/codacy/codacy-deadcode">https://github.com/codacy/codacy-deadcode</a></td>
+</tr>
+<tr>
 <td><a href="https://codenarc.org/">CodeNarc</a></td>
 <td><a href="https://github.com/codacy/codacy-codenarc">https://github.com/codacy/codacy-codenarc</a></td>
 </tr>
