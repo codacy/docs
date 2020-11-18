@@ -13,6 +13,10 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 </thead>
 <tbody>
 <tr>
+<td><a href="https://gitlab.com/opennota/check">aligncheck</a></td>
+<td><a href="https://github.com/codacy/codacy-aligncheck">https://github.com/codacy/codacy-aligncheck</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/veelenga/ameba">Ameba</a></td>
 <td><a href="https://github.com/codacy/codacy-ameba">https://github.com/codacy/codacy-ameba</a></td>
 </tr>
