@@ -6,7 +6,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
--   Added support for Gosec, the Golang Security Checker, as a [client-side tool](../../related-tools/client-side-tools.md).
+-   Added support for Gosec, the Golang Security Checker, as a [client-side tool](../../related-tools/running-client-side-tools.md).
 -   It's now possible to add repositories to Codacy programmatically with the new API v3 endpoint [addRepository](https://app.codacy.com/api/api-docs#addrepository). (CY-1877)
 -   Streamlined the configuration of Git providers and improved the onboarding flow that guides the user while performing the initial Codacy setup. (CY-468)
 -   Added support for GitLab Enterprise synced organizations. (CY-68)

@@ -1,22 +1,42 @@
-# Client-side tools
+# Running client-side tools
 
 Client-side tools enable you to run any linter either locally or as part of your CI process and integrating the results into your Codacy workflow. This way, Codacy presents the analysis information reported by your linters alongside all other code quality information on the dashboards.
 
-Codacy provides two types of client-side tools: "standalone" and "wrapped".
-<!-- TODO Improve these concept names and add descriptions -->
+Codacy supports client-side in two ways:
 
-Codacy supports the "standalone" client-side tools below. Follow the links to set up "standalone" client-side tools with Codacy:
+-   [Standalone](#standalone-tools)
+-   ["Wrapped"](#wrapped-tools)
 
--   [Clang Tidy](https://github.com/codacy/codacy-clang-tidy#usage){: target="_blank"}
+## Standalone tools
+
+For **standalone tools**, Codacy provides converters that:
+
+1.  Parse the analysis output from tools that you configure and run yourself
+
+    !!! important
+        You can't configure the standalone tools on the Codacy UI, since you manage their configuration locally.
+
+1.  Convert the analysis output to the Codacy format
+
+1.  Send the analysis information to Codacy via an API
+
+Follow the links to set up the supported "standalone" client-side tools with Codacy:
+
+<!-- TODO Make this into a table so that we can have both the link to the original tool and the instructions? -->
+
 -   [Clang-Tidy](https://github.com/codacy/codacy-clang-tidy#usage){: target="_blank"}
--   [Gosec](https://github.com/codacy/codacy-gosec#how-it-works){: target="_blank"}
+-   [Gosec](https://github.com/codacy/codacy-gosec#usage){: target="_blank"}
 -   [Staticcheck](https://github.com/codacy/codacy-staticcheck#usage){: target="_blank"}
 
-Codacy supports the "wrapped" client-side tools below.
+## Wrapped tools
 
--   aligncheck
--   deadcode
--   [SpotBugs](https://spotbugs.github.io/){: target="_blank"}, available with the plugins [Find Security Bugs](https://find-sec-bugs.github.io/){: target="_blank"} and [FBContrib](https://github.com/mebigfatguy/fb-contrib){: target="_blank"}
+For **"wrapped" tools**, Codacy provides a wrapper that runs directly on the Codacy Analysis CLI. The Codacy Analysis CLI applies the code pattern settings that you define on the Codacy UI together with the command-line options you specify to run the tools in a Docker container.
+
+See the next section to set up the supported "wrapped" client-side tools with Codacy Analysis CLI:
+
+-   [aligncheck](https://gitlab.com/opennota/check){: target="_blank"}
+-   [deadcode](https://github.com/tsenart/deadcode){: target="_blank"}
+-   [SpotBugs](https://spotbugs.github.io/){: target="_blank"}, including the plugins [FBContrib](https://github.com/mebigfatguy/fb-contrib){: target="_blank"} and [Find Security Bugs](https://find-sec-bugs.github.io/){: target="_blank"}
 
 ## Setting up "wrapped" client-side tools
 
