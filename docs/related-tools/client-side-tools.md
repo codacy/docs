@@ -5,9 +5,11 @@ Client-side tools enable you to run any linter either locally or as part of your
 Currently, Codacy supports the client-side tools below. Follow the links to set up these client-side tools with Codacy:
 
 -   [Clang Tidy](https://github.com/codacy/codacy-clang-tidy#usage)
--   [Gosec](https://github.com/codacy/codacy-gosec#usage)
--   [SpotBugs](running-spotbugs.md)
+-   [Gosec](https://github.com/codacy/codacy-gosec#how-it-works)
 -   [Staticcheck](https://github.com/codacy/codacy-staticcheck#usage)
+
+-   [SpotBugs](running-spotbugs.md)
+
 
 !!! important
     Before sending analysis information from client-side tools you must enable the setting **Run analysis through build server** in your repository **Settings**, tab **General**, **Repository analysis**.
