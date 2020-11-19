@@ -42,7 +42,7 @@ To set up "wrapped" client-side tools with Codacy:
 
 The Codacy Analysis CLI will run the tool on your repository and upload the results to Codacy so you can use them in your workflow.
 
-See the following sections for specific information about the supported client-side tools.
+The following sections include specific information for the client-side tools that require it.
 
 ## Running SpotBugs
 
