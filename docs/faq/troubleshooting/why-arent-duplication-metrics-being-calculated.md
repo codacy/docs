@@ -32,6 +32,6 @@ If the analysis finishes but the code duplication metric wasn't calculated, foll
 
     ![Resetting the failed duplication analysis](images/duplication-metrics-reset.png)
 
--   **If you are [analyzing your repository locally](../../related-tools/running-local-analysis.md)** with the Codacy Analysis CLI, consider using the flag `--tool-timeout` to specify a larger timeout for the execution of the tool.
+-   **If you are [analyzing your repository locally](../../related-tools/local-analysis/running-local-analysis.md)** with the Codacy Analysis CLI, consider using the flag `--tool-timeout` to specify a larger timeout for the execution of the tool.
 
 -   **If you are using Codacy Cloud** or if the steps above didn't solve the issue, please contact us at <mailto:support@codacy.com>.

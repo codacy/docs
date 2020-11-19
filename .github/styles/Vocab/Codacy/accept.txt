@@ -35,6 +35,7 @@ jscpd
 JSHint
 JSP
 namespace
+onboarding
 PMD
 Prospector
 PSScriptAnalyser

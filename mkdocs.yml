@@ -232,10 +232,10 @@ plugins:
               "hc/en-us/articles/360006795293-Repository-failed-to-clone-Generating-a-new-SSH-key.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
               "hc/en-us/articles/360007316034.md": "release-notes/cloud/cloud-release-notes-|-23-july-2018.md"
               "hc/en-us/articles/360007316034-Cloud-Release-Notes-23-July-2018.md": "release-notes/cloud/cloud-release-notes-|-23-july-2018.md"
-              "hc/en-us/articles/360008254833.md": "related-tools/running-local-analysis.md"
-              "hc/en-us/articles/360008254833-Run-local-analysis.md": "related-tools/running-local-analysis.md"
-              "hc/en-us/articles/360008254833-Run-local-analysis-before-creating-a-commit.md": "related-tools/running-local-analysis.md"
-              "hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results.md": "related-tools/running-local-analysis.md"
+              "hc/en-us/articles/360008254833.md": "related-tools/local-analysis/running-local-analysis.md"
+              "hc/en-us/articles/360008254833-Run-local-analysis.md": "related-tools/local-analysis/running-local-analysis.md"
+              "hc/en-us/articles/360008254833-Run-local-analysis-before-creating-a-commit.md": "related-tools/local-analysis/running-local-analysis.md"
+              "hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results.md": "related-tools/local-analysis/running-local-analysis.md"
               "hc/en-us/articles/360009164573.md": "repositories/quality-settings.md"
               "hc/en-us/articles/360009164573-Quality-Settings.md": "repositories/quality-settings.md"
               "hc/en-us/articles/360009180134.md": "repositories/issues-view.md"
@@ -304,8 +304,8 @@ plugins:
               "hc/en-us/articles/360022690193-Cloud-Release-Notes-05-May-2019.md": "release-notes/cloud/cloud-release-notes-|-05-may-2019.md"
               "hc/en-us/articles/360023517013.md": "release-notes/cloud/cloud-release-notes-|-20-may-2019.md"
               "hc/en-us/articles/360023517013-Cloud-Release-Notes-20-May-2019.md": "release-notes/cloud/cloud-release-notes-|-20-may-2019.md"
-              "hc/en-us/articles/360023916013.md": "related-tools/running-client-side-tools.md"
-              "hc/en-us/articles/360023916013-Run-SpotBugs.md": "related-tools/running-client-side-tools.md"
+              "hc/en-us/articles/360023916013.md": "related-tools/local-analysis/running-spotbugs.md"
+              "hc/en-us/articles/360023916013-Run-SpotBugs.md": "related-tools/local-analysis/running-spotbugs.md"
               "hc/en-us/articles/360025014373.md": "release-notes/cloud/cloud-release-notes-|-18-jun-2019.md"
               "hc/en-us/articles/360025014373-Cloud-Release-Notes-18-Jun-2019.md": "release-notes/cloud/cloud-release-notes-|-18-jun-2019.md"
               "hc/en-us/articles/360025654573.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
@@ -324,8 +324,8 @@ plugins:
               "hc/en-us/articles/360012948120-Deprecating-HTTP-headers-for-API-tokens-01-April-2020.md": "release-notes/cloud/deprecating-http-headers-for-api-tokens.md"
               "hc/en-us/articles/360012973060.md": "faq/general/how-does-codacy-support-bitbucket-cloud.md"
               "hc/en-us/articles/360012973060-How-does-Codacy-support-Bitbucket-Cloud-.md": "faq/general/how-does-codacy-support-bitbucket-cloud.md"
-              "hc/en-us/articles/360013142699.md": "related-tools/running-client-side-tools.md"
-              "hc/en-us/articles/360013142699-Client-side-tools.md": "related-tools/running-client-side-tools.md"
+              "hc/en-us/articles/360013142699.md": "related-tools/local-analysis/client-side-tools.md"
+              "hc/en-us/articles/360013142699-Client-side-tools.md": "related-tools/local-analysis/client-side-tools.md"
               "hc/en-us/articles/360013560819.md": "faq/repositories/i-moved-my-repository-on-the-git-provider.md"
               "hc/en-us/articles/360013560819-I-moved-my-repository-on-the-Git-provider.md": "faq/repositories/i-moved-my-repository-on-the-git-provider.md"
               "hc/en-us/articles/360013926899.md": "faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md"
@@ -470,10 +470,10 @@ plugins:
               "repositories-configure/php_codesniffer-specifying-your-php-version.md": "repositories-configure/specifying-your-php-version.md"
               "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
               "getting-started/i-added-a-repository-now-what.md": "getting-started/getting-started-with-codacy.md"
-              "related-tools/run-local-analysis.md": "related-tools/running-local-analysis.md"
-              "related-tools/run-spotbugs.md": "related-tools/running-client-side-tools.md"
               "related-tools/api-tokens.md": "related-tools/codacy-api-tokens.md"
-              "related-tools/client-side-tools.md": "related-tools/running-client-side-tools.md"
+              "related-tools/run-local-analysis.md": "related-tools/local-analysis/running-local-analysis.md"
+              "related-tools/client-side-tools.md": "related-tools/local-analysis/client-side-tools.md"
+              "related-tools/run-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -530,10 +530,14 @@ nav:
           - account/managing-your-profile.md
           - account/notifications.md
     - "Related tools":
-          - related-tools/codacy-plugin-tools.md
-          - related-tools/running-local-analysis.md
-          - related-tools/running-client-side-tools.md
+          - "Local analysis":
+                - related-tools/local-analysis/running-local-analysis.md
+                - related-tools/local-analysis/client-side-tools.md
+                - related-tools/local-analysis/running-aligncheck.md
+                - related-tools/local-analysis/running-deadcode.md
+                - related-tools/local-analysis/running-spotbugs.md
           - related-tools/codacy-api-tokens.md
+          - related-tools/codacy-plugin-tools.md
           - related-tools/tool-developer-guide.md
           - related-tools/tool-developer-guide-using-scala.md
     - "Installing Codacy": "!include submodules/chart/mkdocs.yml"
