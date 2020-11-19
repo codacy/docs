@@ -2,10 +2,10 @@
 
 Codacy API Tokens allow you to authenticate when using the Codacy API. You must generate a Codacy API Token and include it in the headers of your API calls as described on the [Codacy API documentation](https://api.codacy.com/swagger#authentication).
 
-To generate a Codacy API Token, open your account, tab **Access management**, and click the button **Create API token**.
+!!! warning
+    **Never write API Tokens on your configuration files** and keep your API Tokens well protected, as they grant owner permissions to your Codacy repositories.
 
-!!! tip
-    You can create multiple Codacy API Tokens. This can be useful to have a more flexible control when revoking a specific token.
+To generate a Codacy API Token, open your account, tab **Access management**, and click the button **Create API token**.
 
 ![Creating an API token](images/api-tokens.png)
 
@@ -14,6 +14,9 @@ To revoke access to the Codacy API, you must remove the corresponding Codacy API
 ```text
 {"error":"not found"}
 ```
+
+!!! tip
+    You can create multiple Codacy API Tokens. This can be useful to have a more flexible control by revoking only a specific token.
 
 ## See also
 
