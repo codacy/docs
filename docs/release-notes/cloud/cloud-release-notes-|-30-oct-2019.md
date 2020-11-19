@@ -1,60 +1,33 @@
 # Cloud Release Notes | 30 Oct 2019
 
-## <span style="font-weight: 400;">Product Enhancements</span>
+## Product enhancements
 
-<span style="font-weight: 400;">Improved Coverage support for C# by
-adding a [dedicated tool to upload
-coverage](https://github.com/codacy/csharp-codacy-coverage)</span>
+- Improved Coverage support for C# by adding a [dedicated tool to upload coverage](https://github.com/codacy/csharp-codacy-coverage)
 
-<span style="font-weight: 400;">[Our Coverage
-reporter](https://github.com/codacy/codacy-coverage-reporter) now
-supports [Lcov](https://wiki.documentfoundation.org/Development/Lcov)
-making it easier to upload coverage for Javascript, Typescript and
-C.</span>
+- [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter) now supports [LCOV](https://wiki.documentfoundation.org/Development/Lcov) making it easier to upload coverage for JavaScript, Typescript and C.
 
-<span style="font-weight: 400;">Updated tools:</span>
+Updated tools:
 
--   <span style="font-weight: 400;">Remark-lint has been updated to
-    [6.0.4](https://libraries.io/npm/remark-lint/6.0.4)</span>
--   <span style="font-weight: 400;">Shellcheck has been updated to
-    [0.7.0](https://github.com/koalaman/shellcheck/releases/tag/v0.7.0)</span>
--   <span style="font-weight: 400;">Stylelint has been updated to
-    </span>[<span
-    style="font-weight: 400;">11.1.1</span>](https://www.npmjs.com/package/stylelint/v/11.1.1)
--   <span style="font-weight: 400;">Detekt</span><span
-    style="font-weight: 400;"> has been updated to </span>[<span
-    style="font-weight: 400;">1.0.1</span>](https://github.com/arturbosch/detekt/releases/tag/1.0.1)
--   <span style="font-weight: 400;">Sonar C#</span><span
-    style="font-weight: 400;"> has been updated to </span>[<span
-    style="font-weight: 400;">7.17</span>](https://github.com/SonarSource/sonar-dotnet/releases/tag/7.17.0.9346)
--   <span style="font-weight: 400;">PMD</span><span
-    style="font-weight: 400;"> has been updated to </span>[<span
-    style="font-weight: 400;">6.18.0</span>](https://pmd.github.io/2019/09/15/PMD-6.18.0/)
--   <span style="font-weight: 400;">Default patterns for PMD</span>
+-   Remark-lint has been updated to [6.0.4](https://libraries.io/npm/remark-lint/6.0.4)
+-   ShellCheck has been updated to [0.7.0](https://github.com/koalaman/shellcheck/releases/tag/v0.7.0)
+-   Stylelint has been updated to [11.1.1](https://www.npmjs.com/package/stylelint/v/11.1.1)
+-   Detekt has been updated to [1.0.1](https://github.com/arturbosch/detekt/releases/tag/1.0.1)
+-   Sonar C# has been updated to [7.17](https://github.com/SonarSource/sonar-dotnet/releases/tag/7.17.0.9346)
+-   PMD has been updated to [6.18.0](https://pmd.github.io/2019/09/15/PMD-6.18.0/)
+-   Default patterns for PMD
 
-<span style="font-weight: 400;">Added support for the following
-plugins:</span>
+Added support for the following plugins:
 
--   [<span
-    style="font-weight: 400;">Rubocop-rails</span>](https://github.com/rubocop-hq/rubocop-rails)
+-   [Rubocop-rails](https://github.com/rubocop-hq/rubocop-rails)
 -   [eslint-plugin-wdio](https://www.npmjs.com/package/eslint-plugin-wdio)
--   [<span
-    style="font-weight: 400;">vue-eslint-parser</span>](https://github.com/mysticatea/vue-eslint-parser)
+-   [vue-eslint-parser](https://github.com/mysticatea/vue-eslint-parser)
 
-## <span style="font-weight: 400;">Bug fixes</span>
+## Bug fixes
 
--   <span style="font-weight: 400;">Fixed patterns that were causing
-    false positives for ScalaMeta Pro</span>
--   <span style="font-weight: 400;">Fixed broken links in patterns
-    descriptions </span>
--   <span style="font-weight: 400;">Fixed a bug causing an intermittent
-    error screen when users tried to log out</span>
--   <span style="font-weight: 400;">Fixed several vulnerabilities
-    related to Cross-site Scripting</span>
--   <span style="font-weight: 400;">Fixed bug causing “Error dividing by
-    Zero” error when trying to upload a coverage report</span>
--   <span style="font-weight: 400;">Fixed a bug that was stopping
-    Checkstyle from returning results if certain patterns were
-    enabled</span>
--   <span style="font-weight: 400;">Fixed bug where Pylint would not
-    analyse Django projects </span>
+-   Fixed patterns that were causing false positives for Scalameta Pro
+-   Fixed broken links in patterns descriptions 
+-   Fixed a bug causing an intermittent error screen when users tried to log out
+-   Fixed several vulnerabilities related to Cross-site Scripting
+-   Fixed bug causing “Error dividing by Zero” error when trying to upload a coverage report
+-   Fixed a bug that was stopping Checkstyle from returning results if certain patterns were enabled
+-   Fixed bug where Pylint would not analyze Django projects 
