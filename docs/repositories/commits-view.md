@@ -6,7 +6,7 @@ This list is meant to give you an overview of the repository's commits, providin
 
 Visualization of the commits defaults to the main branch of the repository. This can be changed by selecting another branch on the combo box.
 
-When viewing the commits list, some commits may still not have been analysed, either because the analysis is still running or belongs to a branch that hasn't been selected for analysis. These can be easily identified by the status column. Just hover the icon to get some extra info.
+When viewing the commits list, some commits may still not have been analyzed, either because the analysis is still running or belongs to a branch that hasn't been selected for analysis. These can be easily identified by the status column. Just hover the icon to get some extra info.
 
 ![Commit list](images/commit-list.png)
 

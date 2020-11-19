@@ -152,10 +152,10 @@ plugins:
               "hc/en-us/articles/207994885-Which-browsers-do-you-support-.md": "faq/general/which-browsers-do-you-support.md"
               "hc/en-us/articles/207994895.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
               "hc/en-us/articles/207994895-How-long-does-it-take-for-my-repository-to-be-analysed-.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
-              "hc/en-us/articles/207994935.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
-              "hc/en-us/articles/207994935-Why-isn-t-my-public-repository-being-analysed-.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
-              "hc/en-us/articles/207994935-Why-isn-t-my-project-analysed.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
-              "hc/en-us/articles/207994935-Why-isn-t-my-project-analysed-.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md"
+              "hc/en-us/articles/207994935.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md"
+              "hc/en-us/articles/207994935-Why-isn-t-my-public-repository-being-analysed-.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md"
+              "hc/en-us/articles/207994935-Why-isn-t-my-project-analysed.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md"
+              "hc/en-us/articles/207994935-Why-isn-t-my-project-analysed-.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md"
               "hc/en-us/articles/207995005.md": "special-thanks.md"
               "hc/en-us/articles/207995005-Special-Thanks.md": "special-thanks.md"
               "hc/en-us/articles/208241349.md": "repositories-configure/code-patterns.md"
@@ -473,6 +473,7 @@ plugins:
               "related-tools/run-local-analysis.md": "related-tools/running-local-analysis.md"
               "related-tools/run-spotbugs.md": "related-tools/running-spotbugs.md"
               "related-tools/api-tokens.md": "related-tools/codacy-api-tokens.md"
+              "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -570,7 +571,7 @@ nav:
                 - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
                 - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
                 - faq/troubleshooting/not-a-member-of-the-organization.md
-                - faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md
+                - faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md
                 - faq/troubleshooting/we-no-longer-have-access-to-this-repository.md
                 - faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md
     - "Release notes":
