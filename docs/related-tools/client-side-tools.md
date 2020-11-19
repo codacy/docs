@@ -8,6 +8,7 @@ Codacy provides two types of client-side tools: "standalone" and "wrapped".
 Codacy supports the "standalone" client-side tools below. Follow the links to set up "standalone" client-side tools with Codacy:
 
 -   [Clang Tidy](https://github.com/codacy/codacy-clang-tidy#usage){: target="_blank"}
+-   [Clang-Tidy](https://github.com/codacy/codacy-clang-tidy#usage){: target="_blank"}
 -   [Gosec](https://github.com/codacy/codacy-gosec#how-it-works){: target="_blank"}
 -   [Staticcheck](https://github.com/codacy/codacy-staticcheck#usage){: target="_blank"}
 
