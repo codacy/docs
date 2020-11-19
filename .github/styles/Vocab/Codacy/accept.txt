@@ -25,6 +25,7 @@ GitHub
 GitLab
 Gocyclo
 Gosec
+Gradle
 Gravatar
 Hadolint
 hotfix
@@ -41,6 +42,7 @@ Pylint
 RemarkLint
 Revive
 Rubocop
+sbt
 Scalameta
 Scalastyle
 SCSSLint
