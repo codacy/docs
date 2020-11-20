@@ -6,7 +6,7 @@ Codacy supports client-side tools in two ways:
 
 -   **Standalone tools**
 
-    Codacy provides auxiliary converters that parse the output of third-party tools, convert the output format, and upload the results to Codacy. You must download, configure, and run the third-party tools yourself.
+    Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy using the API. You must download, configure, and run the third-party tools yourself.
 
     You can't configure these tools on the Codacy UI, since you manage their configuration locally.
 
