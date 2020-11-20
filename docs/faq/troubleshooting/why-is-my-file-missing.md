@@ -34,7 +34,7 @@ As a solution to this problem, we placed a size limit to the files that Codacy w
 
 ### What if I need to analyze a file that exceeds this limit?
 
-While Codacy will discard your file by default, you can still have it analyzed using the [Codacy Analysis CLI](../../related-tools/local-analysis/running-local-analysis.md) and running the analysis locally. CLI doesn't have a set timeout or any limitation on file size, so you will be able to have your files analyzed this way.
+While Codacy will discard your file by default, you can still have it analyzed using the [Codacy Analysis CLI](../../related-tools/local-analysis/running-local-analysis.md) and running the analysis locally. CLI doesn't any limitation on file size, so you will be able to have your files analyzed this way.
 
 ### What about Codacy Self-hosted?
 
