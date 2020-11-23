@@ -61,7 +61,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-coffeelint" class="skip-vale">https://github.com/codacy/codacy-coffeelint</a></td>
 </tr>
 <tr>
-<td><a href="http://cppcheck.sourceforge.net/">CPPCheck</a></td>
+<td><a href="http://cppcheck.sourceforge.net/">Cppcheck</a></td>
 <td><a href="https://github.com/codacy/codacy-cppcheck" class="skip-vale">https://github.com/codacy/codacy-cppcheck</a></td>
 </tr>
 <tr>
