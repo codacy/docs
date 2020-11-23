@@ -80,22 +80,22 @@ These are the tools integrated on Codacy by our own users! Without them, we woul
 <a href="http://coffeescript.org/">CoffeeScript</a>
 </td>
 <td>
-<a href="https://github.com/rrdelaney">Ryan Delaney</a>
+<a href="https://github.com/rrdelaney" class="skip-vale">Ryan Delaney</a>
 </td>
 </tr>
 <tr>
 <td><a href="https://elixir-lang.org/">Elixir</a>
 </td>
 <td>
-<a href="https://github.com/gerbal">Grant McLendon</a>
+<a href="https://github.com/gerbal" class="skip-vale">Grant McLendon</a>
 </td>
 </tr>
 <tr>
 <td>
-<a href="https://docs.microsoft.com/en-us/powershell/">Powershell</a>
+<a href="https://docs.microsoft.com/en-us/powershell/">PowerShell</a>
 </td>
 <td>
-<a href="https://github.com/adityapatwardhan">Aditya Patwardhan</a>
+<a href="https://github.com/adityapatwardhan" class="skip-vale">Aditya Patwardhan</a>
 </td>
 </tr>
 <tr>
@@ -103,7 +103,7 @@ These are the tools integrated on Codacy by our own users! Without them, we woul
 <a href="https://crystal-lang.org/">Crystal</a>
 </td>
 <td>
-<a href="https://github.com/veelenga">Vitalii Elenhaupt</a>
+<a href="https://github.com/veelenga" class="skip-vale">Vitalii Elenhaupt</a>
 </td>
 </tr>
 </tbody>
@@ -115,7 +115,7 @@ Do you love a language we don't support yet? Do you want your name and that lang
 
 For all the people who helped us so much, we want to give a big shout out and thanks!
 
-<table>
+<table  class="skip-vale">
 <colgroup>
 <col style="width: 33%" />
 <col style="width: 33%" />
