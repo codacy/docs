@@ -5,7 +5,7 @@
 By creating a docker and writing code to handle the tool invocation and output, you can integrate the tool of your choice on Codacy!
 
 !!! note
-    To know more about dockers, and how to write a docker file please refer to [https://docs.docker.com/reference/builder/](https://docs.docker.com/engine/reference/builder/)
+    To know more about dockers, and how to write a docker file please refer to <https://docs.docker.com/reference/builder/>.
 
 We use external tools at Codacy; in this tutorial, we explain how you can integrate the tool of your choice with our platform.
 
