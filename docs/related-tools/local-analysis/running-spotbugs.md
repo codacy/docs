@@ -52,7 +52,6 @@ If there is an issue with detection, you can configure these paths manually by a
 ---
 engines:
   spotbugs:
-    enabled: true
     modules:
       - classesDirectories: [ "core/target/classes" ]
         sourceDirectories:  [ "core/src/main" ]
