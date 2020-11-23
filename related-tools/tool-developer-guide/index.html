@@ -2081,8 +2081,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/troubleshooting/why-isnt-my-public-repository-being-analysed/" title="Why isn't my public repository being analysed?" class="md-nav__link">
-      Why isn't my public repository being analysed?
+    <a href="../../faq/troubleshooting/why-isnt-my-public-repository-being-analyzed/" title="Why isn't my public repository being analyzed?" class="md-nav__link">
+      Why isn't my public repository being analyzed?
     </a>
   </li>
 
@@ -2664,7 +2664,7 @@
 <p>By creating a docker and writing code to handle the tool invocation and output, you can integrate the tool of your choice on Codacy!</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To know more about dockers, and how to write a docker file please refer to <a href="https://docs.docker.com/engine/reference/builder/">https://docs.docker.com/reference/builder/</a></p>
+<p>To know more about dockers, and how to write a docker file please refer to <a href="https://docs.docker.com/reference/builder/">https://docs.docker.com/reference/builder/</a>.</p>
 </div>
 <p>We use external tools at Codacy; in this tutorial, we explain how you can integrate the tool of your choice with our platform.</p>
 <p>You can check the code of an already implemented tool and, if you wish, fork it to start yours. You are free to modify it and use it for your integration.</p>
@@ -2677,11 +2677,11 @@
 <h2 id="assumptions-and-behavior">Assumptions and behavior<a class="headerlink" href="#assumptions-and-behavior" title="Permanent link">&para;</a></h2>
 <ul>
 <li>To run the tool we provide the configuration file, <strong>/src/.codacy.json</strong>, with the files you should analyze and also the patterns you should check.</li>
-<li>The files to analyse are located in <strong>/src</strong>, meaning that when provided in the configuration, the paths are relative to <strong>/src</strong>.</li>
+<li>The files to analyze are located in <strong>/src</strong>, meaning that when provided in the configuration, the paths are relative to <strong>/src</strong>.</li>
 </ul>
 <p><strong>.codacy.json</strong></p>
 <ul>
-<li><strong>files:</strong> Files to be analysed (their path is relative to /src)</li>
+<li><strong>files:</strong> Files to be analyzed (their path is relative to <code>/src</code>)</li>
 <li><strong>tools:</strong> Array of tools *<ul>
 <li><strong>name:</strong> Unique identifier of the tool</li>
 <li><strong>patterns:</strong> Array of patterns that must be checked<ul>
@@ -2718,7 +2718,7 @@
 </code></pre></div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>If <strong>/src/.codacy.json</strong> does not exist or any of its contents (files or patterns) is not available, you should invoke the tool for all files from <strong>/src</strong> (files should be searched recursively for all folders in <strong>/src</strong>) and check them with the default patterns.</p>
+<p>If <strong>/src/.codacy.json</strong> doesn't exist or any of its contents (files or patterns) isn't available, you should invoke the tool for all files from <strong>/src</strong> (files should be searched recursively for all folders in <strong>/src</strong>) and check them with the default patterns.</p>
 <ul>
 <li>When receiving <strong>/src/.codacy.json</strong>, you should only run your tool for the subset of files in <strong>files</strong>, and for the patterns present on <strong>patterns</strong> for your tool <strong>name</strong>.</li>
 </ul>
@@ -2796,7 +2796,7 @@
 <p>After you have your results from the tool, you should print them to the standard output in our <strong>Result</strong> format, one result per line.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>The filename should not include the prefix "/src/"</p>
+<p>The filename shouldn't include the prefix <code>/src/</code></p>
 <p>Example:</p>
 <ul>
 <li>absolute path: <code>/src/folder/file.js</code></li>
@@ -2810,7 +2810,7 @@
       <span class="nt">&quot;line&quot;</span><span class="p">:</span><span class="mi">2</span>
     <span class="p">}</span>
 </code></pre></div>
-<p>If you are not able to run the analysis for any of the files requested you should return an error for each one of them to the standard output in our <strong>Error</strong> format.</p>
+<p>If you aren't able to run the analysis for any of the files requested you should return an error for each one of them to the standard output in our <strong>Error</strong> format.</p>
 <div class="highlight"><pre><span></span><code>    <span class="p">{</span>
       <span class="nt">&quot;filename&quot;</span><span class="p">:</span><span class="s2">&quot;codacy/core/test.js&quot;</span><span class="p">,</span>
       <span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="s2">&quot;could not parse the file&quot;</span><span class="p">,</span>
@@ -2911,7 +2911,7 @@ more complete source.
 <span class="x">}</span>
 </code></pre></div>
 <p>To run this use our test repository available <a href="https://github.com/codacy/codacy-plugins-test">here</a>.</p>
-<p>You just need the docker image built in your local repo and then follow the steps to run it.</p>
+<p>You just need the docker image built in your local repository and then follow the steps to run it.</p>
 <h2 id="submit-the-docker">Submit the Docker<a class="headerlink" href="#submit-the-docker" title="Permanent link">&para;</a></h2>
 <h3 id="running-the-docker">Running the docker<a class="headerlink" href="#running-the-docker" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>docker run -t <span class="se">\</span>
@@ -2926,7 +2926,7 @@ more complete source.
 </code></pre></div>
 <h3 id="docker-restrictions">Docker restrictions<a class="headerlink" href="#docker-restrictions" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Docker image size should not exceed 500MB</li>
+<li>Docker image size shouldn't exceed 500MB</li>
 <li>Docker should contain a non-root user named docker with UID/GID 2004</li>
 <li>All the source code of the docker must be public</li>
 <li>The docker base must officially be supported on DockerHub</li>
@@ -2945,7 +2945,7 @@ more complete source.
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 2, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 23, 2020</span>
     
   </small>
 </div>
