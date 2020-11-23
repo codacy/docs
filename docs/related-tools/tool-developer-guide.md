@@ -5,7 +5,7 @@
 By creating a docker and writing code to handle the tool invocation and output, you can integrate the tool of your choice on Codacy!
 
 !!! note
-    To know more about dockers, and how to write a docker file please refer to [https://docs.docker.com/reference/builder/](https://docs.docker.com/engine/reference/builder/)
+    To know more about dockers, and how to write a docker file please refer to <https://docs.docker.com/reference/builder/>.
 
 We use external tools at Codacy; in this tutorial, we explain how you can integrate the tool of your choice with our platform.
 
@@ -21,11 +21,11 @@ We also have a [tutorial to integrate your tool using our Scala templates](tool-
 ## Assumptions and behavior
 
 -   To run the tool we provide the configuration file, **/src/.codacy.json**, with the files you should analyze and also the patterns you should check.
--   The files to analyse are located in **/src**, meaning that when provided in the configuration, the paths are relative to **/src**.
+-   The files to analyze are located in **/src**, meaning that when provided in the configuration, the paths are relative to **/src**.
 
 **.codacy.json**
 
--   **files:** Files to be analysed (their path is relative to /src)
+-   **files:** Files to be analyzed (their path is relative to `/src`)
 -   **tools:** Array of tools \*
     -   **name:** Unique identifier of the tool
     -   **patterns:** Array of patterns that must be checked
@@ -57,7 +57,7 @@ We also have a [tutorial to integrate your tool using our Scala templates](tool-
 ```
 
 !!! important
-    If **/src/.codacy.json** does not exist or any of its contents (files or patterns) is not available, you should invoke the tool for all files from **/src** (files should be searched recursively for all folders in **/src**) and check them with the default patterns.
+    If **/src/.codacy.json** doesn't exist or any of its contents (files or patterns) isn't available, you should invoke the tool for all files from **/src** (files should be searched recursively for all folders in **/src**) and check them with the default patterns.
 
     -   When receiving **/src/.codacy.json**, you should only run your tool for the subset of files in **files**, and for the patterns present on **patterns** for your tool **name**.
 
@@ -124,7 +124,7 @@ We also have a [tutorial to integrate your tool using our Scala templates](tool-
     After you have your results from the tool, you should print them to the standard output in our **Result** format, one result per line.
 
     !!! important
-        The filename should not include the prefix "/src/"
+        The filename shouldn't include the prefix `/src/`
 
         Example:
 
@@ -140,7 +140,7 @@ We also have a [tutorial to integrate your tool using our Scala templates](tool-
         }
     ```
 
-    If you are not able to run the analysis for any of the files requested you should return an error for each one of them to the standard output in our **Error** format.
+    If you aren't able to run the analysis for any of the files requested you should return an error for each one of them to the standard output in our **Error** format.
 
     ```json
         {
@@ -258,7 +258,7 @@ public class Bar {
 
 To run this use our test repository available [here](https://github.com/codacy/codacy-plugins-test).
 
-You just need the docker image built in your local repo and then follow the steps to run it.
+You just need the docker image built in your local repository and then follow the steps to run it.
 
 ## Submit the Docker
 
@@ -278,7 +278,7 @@ docker run -t \
 
 ### Docker restrictions
 
--   Docker image size should not exceed 500MB
+-   Docker image size shouldn't exceed 500MB
 -   Docker should contain a non-root user named docker with UID/GID 2004
 -   All the source code of the docker must be public
 -   The docker base must officially be supported on DockerHub
