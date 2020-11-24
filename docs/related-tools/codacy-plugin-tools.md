@@ -13,6 +13,10 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 </thead>
 <tbody>
 <tr>
+<td><a href="https://gitlab.com/opennota/check">aligncheck</a></td>
+<td><a href="https://github.com/codacy/codacy-aligncheck" class="skip-vale">codacy/codacy-aligncheck</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/crystal-ameba/ameba">Ameba</a></td>
 <td><a href="https://github.com/codacy/codacy-ameba" class="skip-vale">https://github.com/codacy/codacy-ameba</a></td>
 </tr>
@@ -45,6 +49,10 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-gosec" class="skip-vale">https://github.com/codacy/codacy-gosec</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/tsenart/deadcode">deadcode</a></td>
+<td><a href="https://github.com/codacy/codacy-deadcode" class="skip-vale">codacy/codacy-deadcode</a></td>
+</tr>
+<tr>
 <td><a href="https://codenarc.org/">CodeNarc</a></td>
 <td><a href="https://github.com/codacy/codacy-codenarc" class="skip-vale">https://github.com/codacy/codacy-codenarc</a></td>
 </tr>
@@ -53,7 +61,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-coffeelint" class="skip-vale">https://github.com/codacy/codacy-coffeelint</a></td>
 </tr>
 <tr>
-<td><a href="http://cppcheck.sourceforge.net/">CPPCheck</a></td>
+<td><a href="http://cppcheck.sourceforge.net/">Cppcheck</a></td>
 <td><a href="https://github.com/codacy/codacy-cppcheck" class="skip-vale">https://github.com/codacy/codacy-cppcheck</a></td>
 </tr>
 <tr>

@@ -1,3 +1,4 @@
+aligncheck
 Ameba
 Bandit
 Bitbucket
@@ -14,6 +15,7 @@ Cppcheck
 Credo
 CSSLint
 Ctrl
+deadcode
 Detekt
 Dockerfile
 ESLint
@@ -23,6 +25,7 @@ GitHub
 GitLab
 Gocyclo
 Gosec
+Gradle
 Gravatar
 Hadolint
 hotfix
@@ -32,6 +35,7 @@ jscpd
 JSHint
 JSP
 namespace
+onboarding
 PMD
 Prospector
 PSScriptAnalyser
@@ -39,6 +43,7 @@ Pylint
 RemarkLint
 Revive
 Rubocop
+sbt
 Scalameta
 Scalastyle
 SCSSLint

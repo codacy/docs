@@ -19,10 +19,10 @@ codacy-analysis-cli analyze --directory <SOURCE-CODE-PATH> \
                             --upload
 ```
 
-If you don't specify the tool, the analysis will run as Codacy does in the backend. To obtain results for a particular tool, specify the tool with `--tool`. You can see the available tools with:
+If you don't specify the tool, the analysis will run as Codacy does in the back end. To obtain results for a particular tool, specify the tool with `--tool`. You can see the available tools with:
 
 ```bash
-codacy-analysis-cli analyse --help
+codacy-analysis-cli analyze --help
 ```
 
 ### Advanced configuration
