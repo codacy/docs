@@ -990,12 +990,25 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../codacy-plugin-tools/" title="Codacy plugin tools" class="md-nav__link">
-      Codacy plugin tools
-    </a>
-  </li>
-
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
+    
+    <label class="md-nav__link" for="nav-7-1">
+      Local analysis
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Local analysis" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        Local analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1003,19 +1016,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../client-side-tools/" title="Client-side tools" class="md-nav__link">
-      Client-side tools
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../running-local-analysis/" title="Running local analysis" class="md-nav__link">
+    <a href="../local-analysis/running-local-analysis/" title="Running local analysis" class="md-nav__link">
       Running local analysis
     </a>
   </li>
@@ -1027,9 +1028,50 @@
 
 
   <li class="md-nav__item">
-    <a href="../running-spotbugs/" title="Running SpotBugs" class="md-nav__link">
+    <a href="../local-analysis/client-side-tools/" title="Client-side tools" class="md-nav__link">
+      Client-side tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../local-analysis/running-aligncheck/" title="Running aligncheck" class="md-nav__link">
+      Running aligncheck
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../local-analysis/running-deadcode/" title="Running deadcode" class="md-nav__link">
+      Running deadcode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../local-analysis/running-spotbugs/" title="Running SpotBugs" class="md-nav__link">
       Running SpotBugs
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -1078,6 +1120,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../codacy-plugin-tools/" title="Codacy plugin tools" class="md-nav__link">
+      Codacy plugin tools
+    </a>
   </li>
 
         
@@ -2592,15 +2646,19 @@
                 
                 <h1 id="codacy-api-tokens">Codacy API Tokens<a class="headerlink" href="#codacy-api-tokens" title="Permanent link">&para;</a></h1>
 <p>Codacy API Tokens allow you to authenticate when using the Codacy API. You must generate a Codacy API Token and include it in the headers of your API calls as described on the <a href="https://api.codacy.com/swagger#authentication">Codacy API documentation</a>.</p>
-<p>To generate a Codacy API Token, open your account, tab <strong>Access management</strong>, and click the button <strong>Create API token</strong>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can create multiple Codacy API Tokens. This can be useful to have a more flexible control when revoking a specific token.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Never write API Tokens on your configuration files</strong> and keep your API Tokens well protected, as they grant owner permissions to your Codacy repositories.</p>
 </div>
+<p>To generate a Codacy API Token, open your account, tab <strong>Access management</strong>, and click the button <strong>Create API token</strong>.</p>
 <p><img alt="Creating an API token" src="../images/api-tokens.png" /></p>
 <p>To revoke access to the Codacy API, you must remove the corresponding Codacy API Token from the list. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the following error reply:</p>
 <div class="highlight"><pre><span></span><code>{&quot;error&quot;:&quot;not found&quot;}
 </code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can create multiple Codacy API Tokens. This can be useful to have a more flexible control by revoking only a specific token.</p>
+</div>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <p>To send coverage results for your repository or to limit the API access to a repository, use a <a href="../../repositories-configure/integrations/project-api/">project API Token</a>.</p>
                 
@@ -2610,7 +2668,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 24, 2020</span>
     
   </small>
 </div>

@@ -1028,12 +1028,25 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../../../related-tools/codacy-plugin-tools/" title="Codacy plugin tools" class="md-nav__link">
-      Codacy plugin tools
-    </a>
-  </li>
-
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
+    
+    <label class="md-nav__link" for="nav-7-1">
+      Local analysis
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Local analysis" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        Local analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1041,19 +1054,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../related-tools/client-side-tools/" title="Client-side tools" class="md-nav__link">
-      Client-side tools
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../related-tools/running-local-analysis/" title="Running local analysis" class="md-nav__link">
+    <a href="../../../related-tools/local-analysis/running-local-analysis/" title="Running local analysis" class="md-nav__link">
       Running local analysis
     </a>
   </li>
@@ -1065,9 +1066,50 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../related-tools/running-spotbugs/" title="Running SpotBugs" class="md-nav__link">
+    <a href="../../../related-tools/local-analysis/client-side-tools/" title="Client-side tools" class="md-nav__link">
+      Client-side tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../related-tools/local-analysis/running-aligncheck/" title="Running aligncheck" class="md-nav__link">
+      Running aligncheck
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../related-tools/local-analysis/running-deadcode/" title="Running deadcode" class="md-nav__link">
+      Running deadcode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../related-tools/local-analysis/running-spotbugs/" title="Running SpotBugs" class="md-nav__link">
       Running SpotBugs
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -1079,6 +1121,18 @@
   <li class="md-nav__item">
     <a href="../../../related-tools/codacy-api-tokens/" title="Codacy API Tokens" class="md-nav__link">
       Codacy API Tokens
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../related-tools/codacy-plugin-tools/" title="Codacy plugin tools" class="md-nav__link">
+      Codacy plugin tools
     </a>
   </li>
 
@@ -2593,15 +2647,15 @@
                 
                 
                 <h1 id="project-api">Project API<a class="headerlink" href="#project-api" title="Permanent link">&para;</a></h1>
-<p>The Codacy API offers specific methods to manipulate repositories. To use these API methods or to <a href="../../../coverage-reporter/adding-coverage-to-your-repository/">send coverage results</a> for your repository, you must use a project API Token generated specifically for your repository. Each project API Token is only valid for one repository.</p>
+<p>The Codacy API offers specific methods to manipulate repositories. To use these API methods, run local analysis, or send coverage results for your repository, you must use a project API Token generated specifically for your repository. Each project API Token is only valid for one repository.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Never write API Tokens on your configuration files</strong> and keep your API Tokens well protected, as they grant owner permissions to your Codacy repositories.</p>
+</div>
 <p>To generate an API token:</p>
 <ol>
 <li>
 <p>Open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>, click the button <strong>Add integration</strong>, and add a <strong>Project API</strong> integration.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can create multiple <strong>Project API</strong> integrations to obtain different project API Tokens. This can be useful to have a more flexible control when revoking a specific token.</p>
-</div>
 </li>
 <li>
 <p>Click the button <strong>Settings</strong> for the project API integration to copy the new API Token.</p>
@@ -2609,8 +2663,17 @@
 </li>
 </ol>
 <p>To revoke an API Token, clicking the trash can icon to remove the <strong>Project API</strong> integration.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can create multiple Codacy API Tokens. This can be useful to have a more flexible control by revoking only a specific token.</p>
+</div>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
-<p>To have access to all repositories, use a <a href="../../../related-tools/codacy-api-tokens/">Codacy API token</a>.</p>
+<ul>
+<li><a href="../../../related-tools/local-analysis/running-local-analysis/">Running local analysis</a></li>
+<li><a href="../../../related-tools/local-analysis/client-side-tools/">Client-side tools</a></li>
+<li><a href="../../../coverage-reporter/adding-coverage-to-your-repository/">Adding coverage to your repository</a></li>
+<li>To have access to all repositories, use a <a href="../../../related-tools/codacy-api-tokens/">Codacy API token</a></li>
+</ul>
                 
                   
                     
@@ -2618,7 +2681,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 24, 2020</span>
     
   </small>
 </div>

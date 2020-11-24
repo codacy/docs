@@ -1026,12 +1026,25 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../../related-tools/codacy-plugin-tools/" title="Codacy plugin tools" class="md-nav__link">
-      Codacy plugin tools
-    </a>
-  </li>
-
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-1" type="checkbox" id="nav-7-1">
+    
+    <label class="md-nav__link" for="nav-7-1">
+      Local analysis
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Local analysis" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-1">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        Local analysis
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
         
           
           
@@ -1039,19 +1052,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../related-tools/client-side-tools/" title="Client-side tools" class="md-nav__link">
-      Client-side tools
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../related-tools/running-local-analysis/" title="Running local analysis" class="md-nav__link">
+    <a href="../../related-tools/local-analysis/running-local-analysis/" title="Running local analysis" class="md-nav__link">
       Running local analysis
     </a>
   </li>
@@ -1063,9 +1064,50 @@
 
 
   <li class="md-nav__item">
-    <a href="../../related-tools/running-spotbugs/" title="Running SpotBugs" class="md-nav__link">
+    <a href="../../related-tools/local-analysis/client-side-tools/" title="Client-side tools" class="md-nav__link">
+      Client-side tools
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../related-tools/local-analysis/running-aligncheck/" title="Running aligncheck" class="md-nav__link">
+      Running aligncheck
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../related-tools/local-analysis/running-deadcode/" title="Running deadcode" class="md-nav__link">
+      Running deadcode
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../related-tools/local-analysis/running-spotbugs/" title="Running SpotBugs" class="md-nav__link">
       Running SpotBugs
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -1077,6 +1119,18 @@
   <li class="md-nav__item">
     <a href="../../related-tools/codacy-api-tokens/" title="Codacy API Tokens" class="md-nav__link">
       Codacy API Tokens
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../related-tools/codacy-plugin-tools/" title="Codacy plugin tools" class="md-nav__link">
+      Codacy plugin tools
     </a>
   </li>
 
@@ -2670,7 +2724,9 @@
     </tr>
     <tr>
       <td>Go</td>
-      <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"><sup>*</sup></a>,
+      <td><a href="https://gitlab.com/opennota/check">aligncheck</a><a href="#client-side"><sup>*</sup></a>,
+          <a href="https://github.com/tsenart/deadcode">deadcode</a><a href="#client-side"><sup>*</sup></a>,
+          <a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"><sup>*</sup></a>,
           <a href="https://github.com/mgechev/revive">Revive</a>,
           <a href="https://staticcheck.io/">Staticcheck</a><a href="#client-side"><sup>*</sup></a>
       </td>
@@ -2848,11 +2904,12 @@
   </tbody>
 </table>
 
-<p id="client-side"><sup>*</sup>: Supported as <a href="../../related-tools/client-side-tools/">client-side tools</a>.</p>
+<p id="client-side"><sup>*</sup>: Supported as a <a href="../../related-tools/local-analysis/client-side-tools/">client-side tool</a>.</p>
 <p>Codacy also uses <a href="https://github.com/kentcdodds/cloc">cloc</a> to calculate the source lines of code for all supported languages.</p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../getting-started-with-codacy/">Getting started with Codacy</a></li>
+<li><a href="../../related-tools/local-analysis/client-side-tools/">Client-side tools</a></li>
 <li><a href="../../related-tools/codacy-plugin-tools/">Codacy plugin tools</a></li>
 </ul>
                 
@@ -2862,7 +2919,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 16, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 24, 2020</span>
     
   </small>
 </div>
