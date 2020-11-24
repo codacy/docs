@@ -4,6 +4,7 @@ on: pull_request
 
 jobs:
   prose:
+    name: Vale
     runs-on: ubuntu-latest
     if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
     steps:
