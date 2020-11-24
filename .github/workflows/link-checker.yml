@@ -41,7 +41,7 @@ jobs:
       - name: Check links
         uses: peter-evans/link-checker@v1.2.2
         with:
-          args: -d site -r -x https:\/\/gitlab\.com\/profile\/applications -c 16 *
+          args: -c 16 -d site -r -x https:\/\/gitlab\.com\/profile\/applications site/*
 
       - name: Create report issue
         uses: peter-evans/create-issue-from-file@v2
