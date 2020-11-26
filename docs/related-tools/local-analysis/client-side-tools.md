@@ -21,6 +21,7 @@ Follow the instructions on how to run the supported client-side tools:
 -   [aligncheck](running-aligncheck.md) (Containerized)
 -   [Clang-Tidy](https://github.com/codacy/codacy-clang-tidy#usage) (Standalone)
 -   [deadcode](running-deadcode.md) (Containerized)
+-   [Faux Pas](https://github.com/codacy/codacy-faux-pas#usage) (Standalone)
 -   [Gosec](https://github.com/codacy/codacy-gosec#usage) (Standalone)
 -   [SpotBugs](running-spotbugs.md) (Containerized)
 -   [Staticcheck](https://github.com/codacy/codacy-staticcheck#usage) (Standalone)
