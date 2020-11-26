@@ -2,9 +2,9 @@
 
 ## Product enhancements
 
-- Improved Coverage support for C# by adding a [dedicated tool to upload coverage](https://github.com/codacy/csharp-codacy-coverage)
+-   Improved Coverage support for C# by adding a [dedicated tool to upload coverage](https://github.com/codacy/csharp-codacy-coverage)
 
-- [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter) now supports [LCOV](https://wiki.documentfoundation.org/Development/Lcov) making it easier to upload coverage for JavaScript, Typescript and C.
+-   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter) now supports [LCOV](https://wiki.documentfoundation.org/Development/Lcov) making it easier to upload coverage for JavaScript, Typescript and C.
 
 Updated tools:
 
