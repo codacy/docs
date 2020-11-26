@@ -144,6 +144,12 @@ The table below lists all programming languages currently supported by Codacy an
       <td>-</td>
     </tr>
     <tr>
+      <td>Objective-C</td>
+      <td><a href="http://fauxpasapp.com/">Faux Pas</a><a href="#client-side"><sup>*</sup></a></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>PHP</td>
       <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP Code Sniffer</a>,
           <a href="https://phpmd.org/">PHP Mess Detector</a></td>
