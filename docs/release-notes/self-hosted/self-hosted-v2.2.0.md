@@ -31,7 +31,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Brakeman 4.3.1
 -   BundlerAudit 0.6.1
 -   Checkstyle 8.34
--   Clang-tidy 10.0.1
+-   Clang-Tidy 10.0.1
 -   CodeNarc 1.6
 -   Coffeelint 2.1.0
 -   Cppcheck 2.1

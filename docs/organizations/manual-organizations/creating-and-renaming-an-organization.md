@@ -9,7 +9,7 @@
 
 To create an organization, click on your avatar and select **Organizations**. Type the name in the **Create new organization** field and click on **Create New**.
 
-![](/images/image-00.gif)
+![](images/image-00.gif)
 
 ## Renaming your organization
 
@@ -20,4 +20,4 @@ You can always rename an organization but:
 
 To ease the migration process, your original URLs will be valid for at least 15 days.
 
-![](/images/rename-org.png)
+![](images/rename-org.png)

@@ -1,19 +1,33 @@
 # Jira integration
 
-After adding a repository, you may want to enable the Jira integration to manually create issues on your Jira board.
+The Jira integration incorporates Codacy on your existing Jira workflows.
 
-To set up, navigate to your repository's **Settings**, tab **Integrations**, click **Add integration**, select **Jira**, fill in all the fields, and click **Save**.
+When the integration is enabled, you can create issues on a Jira project directly from Codacy when browsing the existing issues on the repository:
 
-The integration only support the Basic authentication method. Use your email address as username and an API token as the password. Follow the instructions to [generate a Jira API token](https://confluence.atlassian.com/x/Vo71Nw).
+![Jira integration for issues](images/jira-integration-issues.png)
 
-![Enabling Jira integration](/images/Sep-04-2019_10-40-19.gif)
+## Enabling the Jira integration
 
-Once the Jira integration is set up, browse to **Settings**, tab **Integrations**, select **Advanced**, and make sure to fill in all the fields, including the Labels.
+To enable the Jira integration:
 
-![](/images/test3.gif)
+1.  Open your project **Settings**, tab **Integrations**.
 
-## Creating an issue on Jira
+1.  Click the button **Add integration** and select **Jira** on the list.
 
-After configuring your Jira integration with your server settings, you will have additional options when browsing the existing issues on the repository that allow you to create Jira issues for results found on Codacy:
+1.  Configure the Jira integration fields as follows:
 
-![Jira integration](/images/Jira_issue.gif)
+    ![Enabling the Jira integration](images/jira-integration-enable.png)
+
+    -   **Host URL**: Base URL of your Jira instance, including the protocol. For example, `https://mycompany.atlassian.net/`.
+    -   **Repository ID:** Key of the Jira project where Codacy will create issues. You can obtain the project key from the prefix of Jira issue numbers in that project. For example, `DOCS` for a project with the issue DOCS-42.
+    -   **Email:** Email address of the user account that Codacy will use to create new issues in Jira.
+    -   **API token:** [Jira API Token](https://confluence.atlassian.com/cloud/api-tokens-938839638.html#APItokens-CreateanAPItoken){: target="_blank"} for the user account that Codacy will use to create new issues in Jira. The Jira integration only supports HTTP basic authentication.
+
+    !!! important
+        It's recommended that you use a dedicated Jira account for the integration. Jira issues created by Codacy will appear as being reported by this user account.
+
+1.  Click **Save** and make sure that Codacy can successfully establish a connection with Jira.
+
+1.  Click **Advanced** to configure the issue type and any built-in or custom Jira fields of new issues created by Codacy.
+
+    ![Advanced settings of the Jira integration](images/jira-integration-advanced.png)

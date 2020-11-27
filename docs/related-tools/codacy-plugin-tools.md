@@ -4,6 +4,13 @@ Codacy uses a system of plugin tools to extend the scope of analyses on your rep
 
 The Codacy GitHub repositories list the version and extra plugins supported by each plugin tool. You can also submit GitHub issues on these repositories.
 
+<!--NOTE
+    When adding a new tool, also update:
+
+    docs/getting-started/supported-languages-and-tools.md
+    docs/related-tools/local-analysis/client-side-tools.md (if necessary)
+-->
+
 <table>
 <thead>
 <tr>
@@ -13,164 +20,176 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 </thead>
 <tbody>
 <tr>
-<td><a href="https://github.com/veelenga/ameba">Ameba</a></td>
-<td><a href="https://github.com/codacy/codacy-ameba">https://github.com/codacy/codacy-ameba</a></td>
+<td><a href="https://gitlab.com/opennota/check">aligncheck</a></td>
+<td><a href="https://github.com/codacy/codacy-aligncheck" class="skip-vale">codacy/codacy-aligncheck</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/openstack/bandit">Bandit</a></td>
-<td><a href="https://github.com/codacy/codacy-bandit" class="in-cell-link">https://github.com/codacy/codacy-bandit</a></td>
+<td><a href="https://github.com/crystal-ameba/ameba">Ameba</a></td>
+<td><a href="https://github.com/codacy/codacy-ameba" class="skip-vale">codacy/codacy-ameba</a></td>
 </tr>
 <tr>
-<td><a href="https://brakemanscanner.org/" class="in-cell-link">Brakeman</a></td>
-<td><a href="https://github.com/codacy/codacy-brakeman" class="in-cell-link">https://github.com/codacy/codacy-brakeman</a></td>
+<td><a href="https://github.com/PyCQA/bandit">Bandit</a></td>
+<td><a href="https://github.com/codacy/codacy-bandit" class="skip-vale">codacy/codacy-bandit</a></td>
+</tr>
+<tr>
+<td><a href="https://brakemanscanner.org/">Brakeman</a></td>
+<td><a href="https://github.com/codacy/codacy-brakeman" class="skip-vale">codacy/codacy-brakeman</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/rubysec/bundler-audit">Bundler Audit</a></td>
-<td><a href="https://github.com/codacy/codacy-bundler-audit">https://github.com/codacy/codacy-bundler-audit</a></td>
+<td><a href="https://github.com/codacy/codacy-bundler-audit" class="skip-vale">codacy/codacy-bundler-audit</a></td>
 </tr>
 <tr>
-<td><a href="https://checkstyle.sourceforge.io/" class="in-cell-link">Checkstyle</a></td>
-<td><a href="https://github.com/codacy/codacy-checkstyle" class="in-cell-link">https://github.com/codacy/codacy-checkstyle</a></td>
+<td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a></td>
+<td><a href="https://github.com/codacy/codacy-checkstyle" class="skip-vale">codacy/codacy-checkstyle</a></td>
 </tr>
 <tr>
 <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
-<td><a href="https://github.com/codacy/codacy-clang-tidy" class="in-cell-link">https://github.com/codacy/codacy-clang-tidy</a></td>
+<td><a href="https://github.com/codacy/codacy-clang-tidy" class="skip-vale">codacy/codacy-clang-tidy</a></td>
 </tr>
 <tr>
 <td>Codacy Scalameta Pro</td>
-<td><a href="https://github.com/codacy/codacy-scalameta" class="in-cell-link">https://github.com/codacy/codacy-scalameta</a></td>
+<td><a href="https://github.com/codacy/codacy-scalameta" class="skip-vale">codacy/codacy-scalameta</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/securego/gosec" class="in-cell-link">Gosec</a></td>
-<td><a href="https://github.com/codacy/codacy-gosec" class="in-cell-link">https://github.com/codacy/codacy-gosec</a></td>
+<td><a href="http://fauxpasapp.com/">Faux Pas</a></td>
+<td><a href="https://github.com/codacy/codacy-faux-pas" class="skip-vale">codacy/codacy-faux-pas</a></td>
 </tr>
 <tr>
-<td><a href="https://codenarc.org/" class="in-cell-link">CodeNarc</a></td>
-<td><a href="https://github.com/codacy/codacy-codenarc" class="in-cell-link">https://github.com/codacy/codacy-codenarc</a></td>
+<td><a href="https://github.com/securego/gosec">Gosec</a></td>
+<td><a href="https://github.com/codacy/codacy-gosec" class="skip-vale">codacy/codacy-gosec</a></td>
 </tr>
 <tr>
-<td><a href="http://www.coffeelint.org/" class="in-cell-link">Coffeelint</a></td>
-<td><a href="https://github.com/codacy/codacy-coffeelint" class="in-cell-link">https://github.com/codacy/codacy-coffeelint</a></td>
+<td><a href="https://github.com/tsenart/deadcode">deadcode</a></td>
+<td><a href="https://github.com/codacy/codacy-deadcode" class="skip-vale">codacy/codacy-deadcode</a></td>
 </tr>
 <tr>
-<td><a href="http://cppcheck.sourceforge.net/" class="in-cell-link">CPPCheck</a></td>
-<td><a href="https://github.com/codacy/codacy-cppcheck" class="in-cell-link">https://github.com/codacy/codacy-cppcheck</a></td>
+<td><a href="https://codenarc.org/">CodeNarc</a></td>
+<td><a href="https://github.com/codacy/codacy-codenarc" class="skip-vale">codacy/codacy-codenarc</a></td>
+</tr>
+<tr>
+<td><a href="http://www.coffeelint.org/">Coffeelint</a></td>
+<td><a href="https://github.com/codacy/codacy-coffeelint" class="skip-vale">codacy/codacy-coffeelint</a></td>
+</tr>
+<tr>
+<td><a href="http://cppcheck.sourceforge.net/">Cppcheck</a></td>
+<td><a href="https://github.com/codacy/codacy-cppcheck" class="skip-vale">codacy/codacy-cppcheck</a></td>
 </tr>
 <tr>
 <td><span>Credo</span></td>
-<td><a href="https://github.com/codacy/codacy-credo"><span class="wysiwyg-underline">https://github.com/codacy/codacy-credo</span></a></td>
+<td><a href="https://github.com/codacy/codacy-credo" class="skip-vale">codacy/codacy-credo</a></td>
 </tr>
 <tr>
-<td><a href="http://csslint.net/" class="in-cell-link">CSSLint</a></td>
-<td><a href="https://github.com/codacy/codacy-csslint" class="in-cell-link">https://github.com/codacy/codacy-csslint</a></td>
+<td><a href="http://csslint.net/">CSSLint</a></td>
+<td><a href="https://github.com/codacy/codacy-csslint" class="skip-vale">codacy/codacy-csslint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/arturbosch/detekt">Detekt</a></td>
-<td><a href="https://github.com/codacy/codacy-detekt">https://github.com/codacy/codacy-detekt</a></td>
+<td><a href="https://github.com/codacy/codacy-detekt" class="skip-vale">codacy/codacy-detekt</a></td>
 </tr>
 <tr>
-<td><a href="https://eslint.org/" class="in-cell-link">ESLint</a></td>
-<td><a href="https://github.com/codacy/codacy-eslint" class="in-cell-link">https://github.com/codacy/codacy-eslint</a></td>
+<td><a href="https://eslint.org/">ESLint</a></td>
+<td><a href="https://github.com/codacy/codacy-eslint" class="skip-vale">codacy/codacy-eslint</a></td>
 </tr>
 <tr>
 <td><a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
-<td><a href="https://github.com/codacy/codacy-flawfinder">https://github.com/codacy/codacy-flawfinder</a></td>
+<td><a href="https://github.com/codacy/codacy-flawfinder" class="skip-vale">codacy/codacy-flawfinder</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/mgechev/revive">Revive</a></td>
-<td><a href="https://github.com/codacy/codacy-gorevive" class="c-link">https://github.com/codacy/codacy-gorevive</a></td>
+<td><a href="https://github.com/codacy/codacy-gorevive" class="skip-vale">codacy/codacy-gorevive</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/hadolint/hadolint">Hadolint</a></td>
-<td><a href="https://github.com/codacy/codacy-hadolint">https://github.com/codacy/codacy-hadolint</a></td>
+<td><a href="https://github.com/codacy/codacy-hadolint" class="skip-vale">codacy/codacy-hadolint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/codacy/codacy-jackson-linter">Jackson Linter</a></td>
-<td><a href="https://github.com/codacy/codacy-jackson-linter">https://github.com/codacy/codacy-jackson-linter</a></td>
+<td><a href="https://github.com/codacy/codacy-jackson-linter" class="skip-vale">codacy/codacy-jackson-linter</a></td>
 </tr>
 <tr>
 <td><a href="https://jshint.com/">JSHint</a></td>
-<td><a href="https://github.com/codacy/codacy-jshint">https://github.com/codacy/codacy-jshint</a></td>
+<td><a href="https://github.com/codacy/codacy-jshint" class="skip-vale">codacy/codacy-jshint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP Code Sniffer</a></td>
-<td><a href="https://github.com/codacy/codacy-codesniffer" class="in-cell-link">https://github.com/codacy/codacy-codesniffer</a></td>
+<td><a href="https://github.com/codacy/codacy-codesniffer" class="skip-vale">codacy/codacy-codesniffer</a></td>
 </tr>
 <tr>
-<td><a href="https://phpmd.org/" class="in-cell-link">PHP Mess Detector</a></td>
-<td><a href="https://github.com/codacy/codacy-phpmd" class="in-cell-link">https://github.com/codacy/codacy-phpmd</a></td>
+<td><a href="https://phpmd.org/">PHP Mess Detector</a></td>
+<td><a href="https://github.com/codacy/codacy-phpmd" class="skip-vale">codacy/codacy-phpmd</a></td>
 </tr>
 <tr>
-<td><a href="https://pmd.sourceforge.io/pmd-5.3.2/pmd-java/index.html" class="in-cell-link">PMD</a></td>
-<td><a href="https://github.com/codacy/codacy-pmd" class="in-cell-link">https://github.com/codacy/codacy-pmd</a></td>
+<td><a href="https://pmd.sourceforge.io/pmd-5.3.2/pmd-java/index.html">PMD</a></td>
+<td><a href="https://github.com/codacy/codacy-pmd" class="skip-vale">codacy/codacy-pmd</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/landscapeio/prospector">Prospector</a></td>
-<td><a href="https://github.com/codacy/codacy-prospector">https://github.com/codacy/codacy-prospector</a></td>
+<td><a href="https://github.com/codacy/codacy-prospector" class="skip-vale">codacy/codacy-prospector</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
-<td><a href="https://github.com/codacy/codacy-psscriptanalyzer">https://github.com/codacy/codacy-psscriptanalyzer</a></td>
+<td><a href="https://github.com/codacy/codacy-psscriptanalyzer" class="skip-vale">codacy/codacy-psscriptanalyzer</a></td>
 </tr>
 <tr>
-<td><a href="https://www.pylint.org/" class="in-cell-link">Pylint</a></td>
-<td><a href="https://github.com/codacy/codacy-pylint" class="in-cell-link">https://github.com/codacy/codacy-pylint</a></td>
+<td><a href="https://www.pylint.org/">Pylint</a></td>
+<td><a href="https://github.com/codacy/codacy-pylint" class="skip-vale">codacy/codacy-pylint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/remarkjs/remark-lint">RemarkLint</a></td>
-<td><a href="https://github.com/codacy/codacy-remark-lint">https://github.com/codacy/codacy-remark-lint</a></td>
+<td><a href="https://github.com/codacy/codacy-remark-lint" class="skip-vale">codacy/codacy-remark-lint</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/bbatsov/rubocop" class="in-cell-link">Rubocop</a></td>
-<td><a href="https://github.com/codacy/codacy-rubocop">https://github.com/codacy/codacy-rubocop</a></td>
+<td><a href="https://github.com/rubocop-hq/rubocop">Rubocop</a></td>
+<td><a href="https://github.com/codacy/codacy-rubocop" class="skip-vale">codacy/codacy-rubocop</a></td>
 </tr>
 <tr>
-<td><a href="http://www.scalastyle.org/" class="in-cell-link">Scalastyle</a></td>
-<td><a href="https://github.com/codacy/codacy-scalastyle" class="in-cell-link">https://github.com/codacy/codacy-scalastyle</a></td>
+<td><a href="http://www.scalastyle.org/">Scalastyle</a></td>
+<td><a href="https://github.com/codacy/codacy-scalastyle" class="skip-vale">codacy/codacy-scalastyle</a></td>
 </tr>
 <tr>
-<td><a href="https://www.shellcheck.net/" class="in-cell-link">ShellCheck</a></td>
-<td><a href="https://github.com/codacy/codacy-shellcheck" class="in-cell-link">https://github.com/codacy/codacy-shellcheck</a></td>
+<td><a href="https://www.shellcheck.net/">ShellCheck</a></td>
+<td><a href="https://github.com/codacy/codacy-shellcheck" class="skip-vale">codacy/codacy-shellcheck</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
-<td><a href="https://github.com/codacy/codacy-sonar-csharp">https://github.com/codacy/codacy-sonar-csharp</a></td>
+<td><a href="https://github.com/codacy/codacy-sonar-csharp" class="skip-vale">codacy/codacy-sonar-csharp</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a></td>
-<td><a href="https://github.com/codacy/codacy-sonar-visual-basic">https://github.com/codacy/codacy-sonar-visual-basic</a></td>
+<td><a href="https://github.com/codacy/codacy-sonar-visual-basic" class="skip-vale">codacy/codacy-sonar-visual-basic</a></td>
 </tr>
 <tr>
 <td><a href="https://spotbugs.github.io/">SpotBugs</a></td>
-<td><a href="https://github.com/codacy/codacy-spotbugs">https://github.com/codacy/codacy-spotbugs</a></td>
+<td><a href="https://github.com/codacy/codacy-spotbugs" class="skip-vale">codacy/codacy-spotbugs</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/purcell/sqlint">SQLint</a></td>
-<td><a href="https://github.com/codacy/codacy-sqlint">https://github.com/codacy/codacy-sqlint</a></td>
+<td><a href="https://github.com/codacy/codacy-sqlint" class="skip-vale">codacy/codacy-sqlint</a></td>
 </tr>
 <tr>
-<td><a href="https://staticcheck.io" class="in-cell-link">Staticcheck</a></td>
-<td><a href="https://github.com/codacy/codacy-staticcheck" class="in-cell-link">https://github.com/codacy/codacy-staticcheck</a></td>
+<td><a href="https://staticcheck.io">Staticcheck</a></td>
+<td><a href="https://github.com/codacy/codacy-staticcheck" class="skip-vale">codacy/codacy-staticcheck</a></td>
 </tr>
 <tr>
 <td><a href="https://stylelint.io/">Stylelint</a></td>
-<td><a href="https://github.com/codacy/codacy-stylelint">https://github.com/codacy/codacy-stylelint</a></td>
+<td><a href="https://github.com/codacy/codacy-stylelint" class="skip-vale">codacy/codacy-stylelint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
-<td><a href="https://github.com/codacy/codacy-swiftlint">https://github.com/codacy/codacy-swiftlint</a></td>
+<td><a href="https://github.com/codacy/codacy-swiftlint" class="skip-vale">codacy/codacy-swiftlint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
-<td><a href="https://github.com/codacy/codacy-tailor" class="in-cell-link">https://github.com/codacy/codacy-tailor</a></td>
+<td><a href="https://github.com/codacy/codacy-tailor" class="skip-vale">codacy/codacy-tailor</a></td>
 </tr>
 <tr>
 <td><a href="https://palantir.github.io/tslint/">TSLint</a></td>
-<td><a href="https://github.com/codacy/codacy-tslint" class="in-cell-link">https://github.com/codacy/codacy-tslint</a></td>
+<td><a href="https://github.com/codacy/codacy-tslint" class="skip-vale">codacy/codacy-tslint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
-<td><a href="https://github.com/codacy/codacy-tsqllint" class="in-cell-link">https://github.com/codacy/codacy-tsqllint</a></td>
+<td><a href="https://github.com/codacy/codacy-tsqllint" class="skip-vale">codacy/codacy-tsqllint</a></td>
 </tr>
 </tbody>
 </table>

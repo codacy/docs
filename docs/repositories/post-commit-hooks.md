@@ -6,28 +6,31 @@ There are two ways to do this: **automatically** or **manually**
 
 ## Automatic setup of post-commit hook
 
-If you are using GitHub or Bitbucket you can let Codacy configure the hook for you. Just go to your **repository settings** and click on the **Integrations** tab. This should have a switch button for automatic setup of post-commit hooks.
+If you are using GitHub or Bitbucket you can let Codacy configure the hook for you. Go to your **repository settings** and click on the **Integrations** tab. There should be a switch button for the automatic setup of post-commit hooks.
 
 ### Missing hook automatic setup switch button
 
-It is possible that this switch is not visible for you. If this is your case, go to the **Integrations** tab and add GitHub/Bitbucket. **Make sure you enable it after adding it.**
+If the switch isn't visible, go to the **Integrations** tab and add the GitHub or Bitbucket integration. 
 
-![](/images/Screen_Shot_.png)
+!!! important
+    Make sure that you enable the integration after adding it.
 
-## Manual Setup of Post-Commit Hooks on GitHub
+![Adding an integration](images/webhook-integration-add.png)
+
+## Manual setup of post-commit hooks on GitHub
 
 To turn on post-commit hooks for GitHub:
 
-1.  Copy the Hook URL to your Clipboard.
-2.  Go to Webhooks & Services under your repository settings
-3.  Paste the Hook URL into the **Payload URL** field
-4.  Select "application/json" in the **Content Type** field
-5.  Click **Add Webhook**
+1.  Copy the hook URL to your clipboard.
+1.  Go to **Webhooks & Services** under your repository settings.
+1.  Paste the hook URL into the field **Payload URL**.
+1.  Select `application/json` in the field **Content Type**.
+1.  Click **Add Webhook**.
 
-Here's an example of how to configure your hooks on Github:
+Here's an example of how to configure your hooks on GitHub:
 
-![](/images/YmJy6PV8ge_2.gif)
+![Configuring an hook on GitHub](images/webhook-example-github.gif)
 
 ## Permissions to create post-commit hooks
 
-If you get an error when turning on the post-commit hook, please make sure you have Admin rights on the GitHub repository.
+If you get an error when turning on the post-commit hook, please make sure that you have Admin rights on the GitHub repository.
