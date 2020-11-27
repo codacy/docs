@@ -2,9 +2,9 @@
 
 ## Product enhancements
 
-- Improved Coverage support for C# by adding a [dedicated tool to upload coverage](https://github.com/codacy/csharp-codacy-coverage)
+-   Improved Coverage support for C# by adding a [dedicated tool to upload coverage](https://github.com/codacy/csharp-codacy-coverage)
 
-- [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter) now supports [LCOV](https://wiki.documentfoundation.org/Development/Lcov) making it easier to upload coverage for JavaScript, Typescript and C.
+-   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter) now supports [LCOV](https://wiki.documentfoundation.org/Development/Lcov) making it easier to upload coverage for JavaScript, Typescript and C.
 
 Updated tools:
 
@@ -19,8 +19,8 @@ Updated tools:
 Added support for the following plugins:
 
 -   [Rubocop-rails](https://github.com/rubocop-hq/rubocop-rails)
--   [eslint-plugin-wdio](https://www.npmjs.com/package/eslint-plugin-wdio)
--   [vue-eslint-parser](https://github.com/mysticatea/vue-eslint-parser)
+-   [<span class="skip-vale">eslint-plugin-wdio</span>](https://www.npmjs.com/package/eslint-plugin-wdio)
+-   [<span class="skip-vale">vue-eslint-parser</span>](https://github.com/mysticatea/vue-eslint-parser)
 
 ## Bug fixes
 
@@ -28,6 +28,6 @@ Added support for the following plugins:
 -   Fixed broken links in patterns descriptions 
 -   Fixed a bug causing an intermittent error screen when users tried to log out
 -   Fixed several vulnerabilities related to Cross-site Scripting
--   Fixed bug causing “Error dividing by Zero” error when trying to upload a coverage report
+-   Fixed bug causing "Error dividing by Zero" error when trying to upload a coverage report
 -   Fixed a bug that was stopping Checkstyle from returning results if certain patterns were enabled
 -   Fixed bug where Pylint would not analyze Django projects 
