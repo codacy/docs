@@ -4,6 +4,13 @@ For each supported programming language, Codacy generally provides Static Analys
 
 The table below lists all programming languages currently supported by Codacy and the corresponding tools that Codacy uses to analyze your source code. For Test Coverage, see the [coverage report formats](../coverage-reporter/adding-coverage-to-your-repository.md) that Codacy supports.
 
+<!--NOTE
+    When adding a new tool, also update:
+
+    docs/related-tools/local-analysis/client-side-tools.md (if necessary)
+    docs/related-tools/codacy-plugin-tools.md
+-->
+
 <table>
   <colgroup>
     <col width="20%"/>
