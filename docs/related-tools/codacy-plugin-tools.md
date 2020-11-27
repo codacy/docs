@@ -43,6 +43,11 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <tr>
 <td>Codacy Scalameta Pro</td>
 <td><a href="https://github.com/codacy/codacy-scalameta" class="skip-vale">https://github.com/codacy/codacy-scalameta</a></td>
+<td><a href="https://github.com/codacy/codacy-scalameta" class="skip-vale">codacy/codacy-scalameta</a></td>
+</tr>
+<tr>
+<td><a href="http://fauxpasapp.com/">Faux Pas</a></td>
+<td><a href="https://github.com/codacy/codacy-faux-pas" class="skip-vale">codacy/codacy-faux-pas</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/securego/gosec">Gosec</a></td>
