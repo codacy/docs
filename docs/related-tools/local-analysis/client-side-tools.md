@@ -18,6 +18,13 @@ Codacy supports client-side tools in two ways:
 
 Follow the instructions on how to run the supported client-side tools:
 
+<!--NOTE
+    When adding a new client-side tool, also update:
+
+    docs/getting-started/supported-languages-and-tools.md
+    docs/related-tools/codacy-plugin-tools.md
+-->
+
 -   [aligncheck](running-aligncheck.md) (Containerized)
 -   [Clang-Tidy](https://github.com/codacy/codacy-clang-tidy#usage) (Standalone)
 -   [deadcode](running-deadcode.md) (Containerized)

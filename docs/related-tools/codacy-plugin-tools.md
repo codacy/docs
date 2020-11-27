@@ -4,6 +4,13 @@ Codacy uses a system of plugin tools to extend the scope of analyses on your rep
 
 The Codacy GitHub repositories list the version and extra plugins supported by each plugin tool. You can also submit GitHub issues on these repositories.
 
+<!--NOTE
+    When adding a new tool, also update:
+
+    docs/getting-started/supported-languages-and-tools.md
+    docs/related-tools/local-analysis/client-side-tools.md (if necessary)
+-->
+
 <table>
 <thead>
 <tr>
