@@ -42,7 +42,7 @@ A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows
 
 [Codacy](https://www.codacy.com/) is an automated code review tool that monitors your technical debt, helps you improve your code quality, teaches best practices to your developers, and helps you save time in code reviews.
 
-### Among Codacy’s features
+### Among Codacy's features
 
 -   Identify new static analysis issues
 -   Commit and pull request analysis with GitHub, Bitbucket, and GitLab
