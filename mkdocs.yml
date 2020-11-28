@@ -4,8 +4,8 @@ site_url: https://docs.codacy.com/
 
 # Configuration
 theme:
-    name: null
-    custom_dir: "submodules/mkdocs-codacy-theme/material"
+    name: "material"
+    custom_dir: "submodules/codacy-mkdocs-material/material"
     font: false
     language: en
     favicon: "assets/images/favicon.ico"
