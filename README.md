@@ -14,7 +14,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) to:
 -   Follow the Markdown conventions used in this repository
 -   Deploy updates to the documentation or release new documentation versions
 
-By participating in this project you are expected to adhere to the Contributor Covenant [code of conduct](CODE_OF_CONDUCT.md).
+By participating in this project you are expected to adhere to the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
 ## What is Codacy
 
