@@ -2,7 +2,7 @@
 
 Codacy automatically identifies issues through static code review analysis and notifies you on security issues, code coverage, code duplication, and code complexity in every commit and pull request.
 
-To get started, head to [codacy.com](https://www.codacy.com/) and click **Get started**.
+To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.codacy.com/) and click **Get started**.
 
 ## 1. Sign up {: id="sign-up"}
 
