@@ -1,16 +1,25 @@
 # Self-hosted v3.1.0
 
-These release notes are for [Codacy Self-hosted v3.1.0](https://github.com/codacy/chart/releases/tag/3.1.0){: target="_blank"}, released on December ##, 2020.<!-- TODO Update release date -->
+<!-- TODO Update release date -->
+
+These release notes are for [Codacy Self-hosted v3.1.0](https://github.com/codacy/chart/releases/tag/3.1.0){: target="_blank"}, released on December ##, 2020.
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
 ## Product enhancements
 
-<!-- TODO Add product enhancements -->
+-   Improvements to the [supported languages and tools](../../getting-started/supported-languages-and-tools.md):
+    -   Added static analysis support for **Objective-C** with the tool Faux Pas.
+    -   Expanded static analysis support for **Go** with the [client-side tools](../../related-tools/local-analysis/client-side-tools.md) aligncheck, deadcode, and Staticcheck.
+    -   Added duplication and complexity support for **Kotlin** with the tools jscpd and Detekt. (CY-3003)
+-   You can now use [personal organizations](https://docs.codacy.com/organizations/what-are-synced-organizations/#adding-an-organization) to manage your personal repositories. (CY-1802)
 
 ## Bug fixes
 
-<!-- TODO Add bug fixes -->
+<!-- TODO Add missing issues manually -->
+
+-   Fixed an issue that could cause users to receive emails about the analysis of repositories in organizations they don't belong to. (CY-3228)
+-   Now, Codacy displays an error message if the command `git diff` fails to obtain the deltas for a commit because of [incompatible line endings](https://docs.codacy.com/faq/code-analysis/error-line-endings/). (CY-2799)
 
 ## Tool versions
 
