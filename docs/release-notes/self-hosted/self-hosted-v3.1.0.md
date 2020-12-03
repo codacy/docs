@@ -8,11 +8,11 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
--   Improvements to the [supported languages and tools](../../getting-started/supported-languages-and-tools.md):
-    -   Added static analysis support for **Objective-C** with the tool Faux Pas.
-    -   Expanded static analysis support for **Go** with the [client-side tools](../../related-tools/local-analysis/client-side-tools.md) aligncheck, deadcode, and Staticcheck.
-    -   Added duplication and complexity support for **Kotlin** with the tools jscpd and Detekt. (CY-3003)
--   You can now use [personal organizations](https://docs.codacy.com/organizations/what-are-synced-organizations/#adding-an-organization) to manage your personal repositories. (CY-1802)
+Improvements to the [supported languages and tools](../../getting-started/supported-languages-and-tools.md):
+
+-   Added static analysis support for **Objective-C** with the tool Faux Pas.
+-   Expanded static analysis support for **Go** with the [client-side tools](../../related-tools/local-analysis/client-side-tools.md) aligncheck, deadcode, and Staticcheck.
+-   Added duplication and complexity support for **Kotlin** with the tools jscpd and Detekt. (CY-3003)
 
 ## Bug fixes
 
