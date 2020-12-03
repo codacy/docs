@@ -16,8 +16,8 @@ curl -X POST https://app.codacy.com/api/v3/repositories \
 
 Substitute the placeholders with your own values:
 
--   **API_KEY**: [API token](../../related-tools/codacy-api-tokens.md) used to authenticate on the Codacy API.
--   **GIT_PROVIDER**: Git provider hosting the repository, using one of the values in the table below. For example, `gh` for GitHub Cloud.
+-   **API_KEY:** [API token](../../related-tools/codacy-api-tokens.md) used to authenticate on the Codacy API.
+-   **GIT_PROVIDER:** Git provider hosting the repository, using one of the values in the table below. For example, `gh` for GitHub Cloud.
 
     | Value | Git provider         |
     |-------|----------------------|
@@ -28,7 +28,7 @@ Substitute the placeholders with your own values:
     | `bb`  | Bitbucket Cloud      |
     | `bbe` | Bitbucket Server     |
 
--   **REPOSITORY_FULL_PATH**: Name of the organization and repository on the Git provider, using the format `<organization>/<repository>`. For example, `codacy/docs`. You must have admin permissions over the repository on the Git provider.
+-   **REPOSITORY_FULL_PATH:** Name of the organization and repository on the Git provider, using the format `<organization>/<repository>`. For example, `codacy/docs`. You must have admin permissions over the repository on the Git provider.
 
     !!! important
         **If you are using GitLab** you must specify the full group path and the repository using the format `<group>/<subgroup-1>/.../<subgroup-N>/<repository>`.

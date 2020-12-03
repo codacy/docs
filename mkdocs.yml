@@ -10,7 +10,7 @@ copyright: "© 2020 <a href=\"https://www.codacy.com\">Codacy</a> - Automated co
 # Configuration
 theme:
     name: "material"
-    custom_dir: "submodules/mkdocs-codacy-theme/material"
+    custom_dir: "submodules/codacy-mkdocs-material/material"
     font: false
     language: "en"
     favicon: "assets/images/favicon.ico"
