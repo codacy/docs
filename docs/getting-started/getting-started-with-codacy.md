@@ -2,7 +2,7 @@
 
 Codacy automatically identifies issues through static code review analysis and notifies you on security issues, code coverage, code duplication, and code complexity in every commit and pull request.
 
-To get started, head to [codacy.com](https://www.codacy.com/) and click **Get started**.
+To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.codacy.com/) and click **Get started**.
 
 ## 1. Sign up {: id="sign-up"}
 
@@ -39,6 +39,7 @@ After that, you can continue to explore and configure Codacy for your repository
 
 -   [Check the static analysis results](../repositories/issues-view.md) on the Issues page
 -   [Configure the code patterns](../repositories-configure/code-patterns.md) that Codacy uses to analyze your repository
+-   [Ignore files](../repositories-configure/ignore-files-from-codacy-analysis.md) that you want to exclude from the Codacy analysis
 -   [Configure your quality settings](../repositories/quality-settings.md) for pull requests
 -   [Add coverage reports to Codacy](../coverage-reporter/adding-coverage-to-your-repository.md)
 -   [Add a Codacy badge to your repository](../repositories/badges.md) displaying the current code quality grade or code coverage
