@@ -16,8 +16,8 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Bug fixes
 
-<!-- TODO Add missing issues manually -->
-
+-   Fixed a broken link in the commit page to the corresponding GitLab Enterprise commit. (CY-3285)
+-   Now, Codacy blocks GitLab merge requests until the analysis is complete by displaying a pending pipeline. (CY-3235)
 -   Fixed an issue that could cause users to receive emails about the analysis of repositories in organizations they don't belong to. (CY-3228)
 -   Now, Codacy displays an error message if the command `git diff` fails to obtain the deltas for a commit because of [incompatible line endings](https://docs.codacy.com/faq/code-analysis/error-line-endings/). (CY-2799)
 
