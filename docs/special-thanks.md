@@ -20,7 +20,7 @@ In addition to in-house built rules, we use open source tools for many of our st
 <li><a href="https://github.com/pmd/pmd">PMB</a></li>
 <li><a href="https://github.com/presidentbeef/brakeman">Brakeman</a></li>
 <li><a href="https://github.com/rubocop-hq/rubocop">Rubocop</a></li>
-<li><a href="https://github.com/colszowka/simplecov">SimpleCov</a></li>
+<li><a href="https://github.com/simplecov-ruby/simplecov">SimpleCov</a></li>
 <li><a href="https://github.com/clutchski/coffeelint">Coffeelint</a></li>
 <li><a href="https://www.pylint.org/">Pylint</a></li>
 </ul>
@@ -47,9 +47,9 @@ In addition to in-house built rules, we use open source tools for many of our st
 </td>
 <td>
 <ul>
-<li><a href="https://github.com/lukasmartinelli/hadolint">Hadolint</a></li>
+<li><a href="https://github.com/hadolint/hadolint">Hadolint</a></li>
 <li><a href="https://palantir.github.io/tslint/">TSLint</a></li>
-<li><a href="https://github.com/brigade/scss-lint">SCSSLint</a></li>
+<li><a href="https://github.com/sds/scss-lint">SCSSLint</a></li>
 <li><a href="https://github.com/rrrene/credo">Credo</a></li>
 <li><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyzer</a></li>
 <li><a href="https://github.com/crystal-ameba/ameba">Ameba</a></li>
