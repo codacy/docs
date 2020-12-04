@@ -63,7 +63,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **Sonar Visual Basic 8.15 (updated from 8.14)**
 -   SpotBugs 4.1.2
 -   SQLint 0.1.9
--   **Staticcheck 2020.1.6 (updated from 2017.2.2)**
+-   **Staticcheck 2020.1.6 (new)**
 -   **Stylelint 13.8.0 (updated from 13.7.2)**
 -   SwiftLint 0.39.2
 -   Tailor 0.12.0
