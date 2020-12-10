@@ -1,0 +1,12 @@
+loki:
+  serviceName: loki
+
+config:
+  client:
+    batchwait: 1s
+    batchsize: 10240
+    timeout: 20s
+    backoff_config:
+      minbackoff: 2s
+      maxbackoff: 20s
+      maxretries: 5
