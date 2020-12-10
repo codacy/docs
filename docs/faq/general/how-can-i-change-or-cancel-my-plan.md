@@ -23,6 +23,6 @@ Alternatively, you can also [delete your organization](../../organizations/what-
 
 ## If you're using Codacy Self-hosted
 
+To help you understand how you're consuming your licensed Codacy seats, use [<span class="skip-vale">codacy-usage-report</span>](https://github.com/codacy/codacy-usage-report) to obtain details about the activity of the users in your Codacy Self-hosted instance.
 
-
-We kindly ask that you send us a message and we'll swiftly process the cancellation.
+If you decide to cancel your plan, we kindly ask that you send us a message and we'll swiftly process the cancellation.
