@@ -1563,49 +1563,9 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#how-to-install-a-custom-codacy-version" class="md-nav__link">
-    How to install a custom Codacy version
+  <a href="#debugging-using-events" class="md-nav__link">
+    Debugging using events
   </a>
-  
-    <nav class="md-nav md-nav--toc" aria-label="How to install a custom Codacy version">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#install" class="md-nav__link">
-    Install
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#upgrade" class="md-nav__link">
-    Upgrade
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#debugging" class="md-nav__link">
-    Debugging
-  </a>
-  
-    <nav class="md-nav md-nav--toc" aria-label="Debugging">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#events" class="md-nav__link">
-    Events
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2593,6 +2553,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.1.0/" title="Self-hosted v3.1.0" class="md-nav__link">
+      Self-hosted v3.1.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../release-notes/self-hosted/self-hosted-v3.0.0/" title="Self-hosted v3.0.0" class="md-nav__link">
       Self-hosted v3.0.0
     </a>
@@ -2782,24 +2754,12 @@
                 
                 
                 <h1 id="kubernetes-cheatsheet">Kubernetes cheatsheet<a class="headerlink" href="#kubernetes-cheatsheet" title="Permanent link">&para;</a></h1>
-<h2 id="how-to-install-a-custom-codacy-version">How to install a custom Codacy version<a class="headerlink" href="#how-to-install-a-custom-codacy-version" title="Permanent link">&para;</a></h2>
-<h3 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>sudo git clone git://github.com/codacy/chart -b &lt;YOUR-BRANCH&gt;
-helm dep build ./chart/codacy
-helm upgrade --install codacy ./chart/codacy/ --namespace codacy --atomic --timeout<span class="o">=</span><span class="m">300</span> --values ./&lt;YOUR-VALUES-FILE&gt;
-</code></pre></div>
-<h3 id="upgrade">Upgrade<a class="headerlink" href="#upgrade" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="o">(</span><span class="nb">cd</span> chart<span class="p">;</span> sudo git fetch --all --prune --tags<span class="p">;</span> sudo git reset --hard origin/&lt;YOUR-BRANCH&gt;<span class="p">;</span><span class="o">)</span>
-helm dep build ./chart/codacy
-helm upgrade --install codacy ./chart/codacy/ --namespace codacy --atomic --timeout<span class="o">=</span><span class="m">300</span> --values ./&lt;YOUR-VALUES-FILE&gt;
-</code></pre></div>
-<h2 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h2>
+<h2 id="debugging-using-events">Debugging using events<a class="headerlink" href="#debugging-using-events" title="Permanent link">&para;</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Always check the pods and deployment versions in the namespace
 to make sure you are not debugging an issue in a version that is not the one you would expect</p>
 </div>
-<h3 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
 <p>Events are a great way to understand what is going on under the hood in a Kubernetes cluster.
 By looking at them you can see if probes are failing, and other important signals from your cluster.</p>
 <p>Get events for the whole namespace:</p>
@@ -2873,7 +2833,7 @@ since the CLI is very limited you will benefit from using these aliases:</p>
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 15, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2020</span>
     
   </small>
 </div>
