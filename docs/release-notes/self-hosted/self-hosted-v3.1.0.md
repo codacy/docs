@@ -1,8 +1,6 @@
 # Self-hosted v3.1.0
 
-<!-- TODO Update release date -->
-
-These release notes are for [Codacy Self-hosted v3.1.0](https://github.com/codacy/chart/releases/tag/3.1.0){: target="_blank"}, released on December ##, 2020.
+These release notes are for [Codacy Self-hosted v3.1.0](https://github.com/codacy/chart/releases/tag/3.1.0){: target="_blank"}, released on December 10, 2020.
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
