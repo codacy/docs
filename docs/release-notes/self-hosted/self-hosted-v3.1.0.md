@@ -48,12 +48,12 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   JSHint 2.12.0
 -   PHP Code Sniffer 3.5.8
 -   PHP Mess Detector 2.8.1
--   PMD (Legacy) 5.8.1
 -   PMD 6.28.0
+-   PMD (Legacy) 5.8.1
 -   Prospector 1.2.0
 -   PSScriptAnalyzer 1.18.3
--   Pylint (Python 3) 2.6.0
 -   Pylint 1.9.5
+-   Pylint (Python 3) 2.6.0
 -   RemarkLint 7.0.1
 -   Revive 1.0.2
 -   Rubocop 0.82.0
