@@ -16,9 +16,11 @@ Improvements to the [supported languages and tools](../../getting-started/suppor
 
 ## Bug fixes
 
+-   Fixed onboarding error message while adding a repository on an organization where the GitHub App isn't installed. (CY-3317)
 -   Fixed a broken link in the commit page to the corresponding GitLab Enterprise commit. (CY-3285)
 -   Now, Codacy blocks GitLab merge requests until the analysis is complete by displaying a pending pipeline. (CY-3235)
 -   Fixed an issue that could cause users to receive emails about the analysis of repositories in organizations they don't belong to. (CY-3228)
+-   Fixed building the URLs for the Codacy Self-hosted documentation. (CY-3018)
 -   Now, Codacy displays an error message if the command `git diff` fails to obtain the deltas for a commit because of [incompatible line endings](https://docs.codacy.com/faq/code-analysis/error-line-endings/). (CY-2799)
 
 ## Tool versions
