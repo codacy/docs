@@ -14,3 +14,12 @@ controller:
     clusterIP: "-"
   defaultBackend:
     clusterIP: "-"
+  
+  # resources used by the nginx controller
+  resources:
+    limits:
+      cpu: 200m
+      memory: 500Mi
+    requests:
+      cpu: 100m
+      memory: 300Mi
