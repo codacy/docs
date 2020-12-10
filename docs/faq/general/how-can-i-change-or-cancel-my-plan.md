@@ -2,6 +2,8 @@
 
 You can change or cancel [your Codacy plan](https://www.codacy.com/pricing) at any time. If you choose to cancel your annual subscription before the conclusion of the 12 months, your account will continue to work for the remainder of the annual billing period.
 
+We value feedback and thank you in advance for letting us know the primary reason behind your decision to leave, whether budgetary constraints or missing deal-breaker functionality.
+
 ## If you're using Codacy Cloud
 
 To make changes to the plan of your organization, open your organization **Settings**, page **Plan and billing**.
@@ -21,6 +23,6 @@ Alternatively, you can also [delete your organization](../../organizations/what-
 
 ## If you're using Codacy Self-hosted
 
-We kindly ask that you send us a message and we'll swiftly process the cancellation.
 
-We value feedback and thank you in advance for letting us know the primary reason behind your decision to leave, whether budgetary constraints or missing deal-breaker functionality.
+
+We kindly ask that you send us a message and we'll swiftly process the cancellation.
