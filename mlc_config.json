@@ -1,7 +1,10 @@
 {
     "ignorePatterns": [
         {
-        "pattern": "\\.md$"
+            "pattern": "\\.md$"
+        },
+        {
+            "pattern": "^images\\"
         }
     ]
 }
