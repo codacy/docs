@@ -12,5 +12,8 @@
             "pattern": "^/",
             "replacement": "https://docs.codacy.com/"
         }
-    ]
+    ],
+    "retryOn429": true,
+    "retryCount": 2,
+    "fallbackRetryDelay": "60s"
 }
