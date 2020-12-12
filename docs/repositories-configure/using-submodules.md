@@ -8,7 +8,7 @@ By default, Codacy does normal Git clones that do not include submodules to ensu
 
 After we enabled submodules for your organization, do the following:
 
-1.  **If you are using Codacy Self-hosted**, you must [update the license](/chart/maintenance/license/).
+1.  **If you are using Codacy Self-hosted**, you must [update the license](../chart/maintenance/license.md).
 
 2.  If your submodules are:
 

@@ -7,8 +7,8 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 ## Product enhancements
 
 -   You can now use the Codacy Analysis CLI [GitHub Action](https://github.com/marketplace/actions/codacy-analysis-cli) to analyze each commit and pull request. (CY-2663)
--   You can now use [personal organizations](../../../organizations/what-are-synced-organizations/#adding-an-organization) to manage your personal repositories. (CY-1802)
--   Updated the [Organization](../../../organizations/organization-overview/) and [Repository](../../../repositories/repository-dashboard/) dashboards with a cleaner user experience and better performance. (CY-1733)
+-   You can now use [personal organizations](../../organizations/what-are-synced-organizations.md#adding-an-organization) to manage your personal repositories. (CY-1802)
+-   Updated the [Organization](../../organizations/organization-overview.md) and [Repository](../../repositories/repository-dashboard.md) dashboards with a cleaner user experience and better performance. (CY-1733)
 
 ## Bug fixes
 

@@ -1,6 +1,8 @@
-name: Link Checker
+name: Link Checker (scheduled)
 
-on: pull_request
+on:
+  schedule:
+    - cron: "0 5 * * 1"
 
 jobs:
   markdown-link-check:
@@ -11,4 +13,3 @@ jobs:
       with:
         use-quiet-mode: "no"
         use-verbose-mode: "yes"
-        check-modified-files-only: "yes"
