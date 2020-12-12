@@ -1,10 +1,16 @@
 {
     "ignorePatterns": [
         {
-            "pattern": "\\.md$"
+            "pattern": "^(?!http).+\\.md(#.+)?$"
         },
         {
             "pattern": "^images\\"
+        }
+    ],
+    "replacementPatterns": [
+        {
+            "pattern": "^/",
+            "replacement": "https://docs.codacy.com/"
         }
     ]
 }
