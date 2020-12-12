@@ -33,7 +33,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
     !!! important
         After you upgrade Codacy, our chart will install a new version of RabbitMQ with the **new default of one replica**.
 
--   The structure of the file [`values-production.yaml`](/chart/values-files/values-production.yaml){: target="_blank"} changed. You must update your version of the file to match the structure of the new file:
+-   The structure of the file [`values-production.yaml`](https://docs.codacy.com/v2.0/chart/values-files/values-production.yaml){: target="_blank"} changed. You must update your version of the file to match the structure of the new file:
 
     -   The following analysis workers configuration values moved from:
 
