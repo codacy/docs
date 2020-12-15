@@ -29,7 +29,7 @@ To turn on post-commit hooks for GitHub:
 
 Here's an example of how to configure your hooks on GitHub:
 
-![Configuring an hook on GitHub](images/webhook-example-github.gif)
+![Configuring a hook on GitHub](images/webhook-example-github.gif)
 
 ## Permissions to create post-commit hooks
 
