@@ -2807,46 +2807,47 @@
 <p>The high-level architecture described in the next section is important in understanding how Codacy uses and allocates hardware resources. Below we also provide guidance on <a href="#standard-cluster-provisioning">resource provisioning for typical scenarios</a>.</p>
 <p>For a custom hardware resource recommendation, please contact us at <a href="mailto://support@codacy.com">support@codacy.com</a>.</p>
 <h4 id="codacy-architecture">Codacy architecture<a class="headerlink" href="#codacy-architecture" title="Permanent link">&para;</a></h4>
-<p>You can look at Codacy separately as two parts:</p>
+<p>You can look at Codacy separately as two groups of components:</p>
 <ul>
 <li>The <strong>"Platform"</strong> contains the UI and other components important to treat and show results</li>
 <li>The <strong>"Analysis"</strong> is the swarm of workers that run <strong>between one and four</strong> linters simultaneously, depending on factors such as the number of files or the programming languages used in your projects</li>
 </ul>
-<p><img alt="High-level architecture" src="../images/codacy-architecture.svg" /></p>
-<p>Since all components are running on a cluster, you can increase the number of replicas in every deployment to give you more resilience and throughput, at a cost of increased resource usage.</p>
-<p>The following is a simplified overview of how to calculate resource allocation for the "Platform" and the "Analysis":</p>
+<p><img alt="High-level Codacy architecture" src="../images/codacy-architecture.svg" /></p>
+<p>Since all components are running on a cluster, you can increase the number of pod replicas in every deployment to give you more resilience and throughput, at a cost of increased resource usage.</p>
+<p>The following is a simplified overview of how to calculate resource allocation for the group of components "Platform" and "Analysis":</p>
 <table>
 <thead>
 <tr>
-<th>Component</th>
+<th>Group of components</th>
 <th>vCPU</th>
 <th>Memory</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Platform<br/>(1 replica per component)</td>
+<td>Platform<br/>(1 pod replica per component)</td>
 <td>4</td>
 <td>8 GB</td>
 </tr>
 <tr>
-<td>Analysis<br/>(1 Analysis Worker + <strong>up to</strong> 4 linters)</td>
+<td>Analysis<br/>(1 Analysis Worker pod with <strong>up to</strong> 4 linters)</td>
 <td>5<br/>(per Analysis Worker)</td>
 <td>10 GB<br/>(per Analysis Worker)</td>
 </tr>
 </tbody>
 </table>
 <h4 id="standard-cluster-provisioning">Standard cluster provisioning<a class="headerlink" href="#standard-cluster-provisioning" title="Permanent link">&para;</a></h4>
-<p>The resources recommended on the following table are based on our experience and are also the defaults in the <a href="../values-files/values-production.yaml"><code>values-production.yaml</code></a> file, which you might need to adapt taking into account your use case. As described in the section above, Codacy's architecture allows scaling the "Analysis" part of the platform, meaning that the resources needed for Codacy <strong>depend mainly on the rate of commits</strong> done by your team that Codacy will be analyzing.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
+<p>As described in the section above, Codacy's architecture allows scaling the "Analysis" group of components, meaning that the resources needed for Codacy <strong>depend mainly on the rate of commits</strong> done by your team that Codacy will be analyzing.</p>
+<p>The resources recommended on the following table are based on our experience and are also the defaults in the <a href="../values-files/values-production.yaml"><code>values-production.yaml</code></a> file. You might need to adapt these defaults taking into account your use case. In particular, you should set the value of <code>global.workerManager.workers.config.dedicatedMax</code> to the maximum number of concurrent analysis depending on the available resources and number of replicas per component.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>For MicroK8s clusters we added an extra 1.5 vCPU and 1.5 GB memory to the "Platform" to account for the MicroK8s platform itself running on the same machine.</p>
 </div>
 <table>
 <thead>
 <tr>
 <th>Installation type</th>
-<th>Replicas per component</th>
+<th>Pod replicas per component</th>
 <th>Max. concurrent analysis</th>
 <th>Platform resources</th>
 <th>Analysis resources</th>
@@ -3009,7 +3010,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 25, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 16, 2020</span>
     
   </small>
 </div>
