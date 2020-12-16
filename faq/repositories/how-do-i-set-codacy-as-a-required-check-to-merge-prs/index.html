@@ -2682,7 +2682,11 @@
 <p>Make sure that you <a href="../../../repositories-configure/integrations/github-integration/">enable the option Pull Request Status</a> on the GitHub integration.</p>
 </div>
 <h2 id="gitlab">GitLab<a class="headerlink" href="#gitlab" title="Permanent link">&para;</a></h2>
-<p>GitLab allows <a href="https://docs.gitlab.com/ee/user/project/merge_requests/work_in_progress_merge_requests.html" target="_blank">flagging merge requests as "Draft"</a> to block merging them.</p>
+<p>GitLab allows <a href="https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds" target="_blank">setting that all pipelines must succeed</a> before merging merge requests.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Make sure that you <a href="../../../repositories-configure/integrations/gitlab-integration/">enable the option Pull Request Status</a> on the GitLab integration.</p>
+</div>
 <h2 id="bitbucket">Bitbucket<a class="headerlink" href="#bitbucket" title="Permanent link">&para;</a></h2>
 <p>Bitbucket allows <a href="https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/" target="_blank">setting a minimum number of merge checks that must pass</a> before merging pull requests.</p>
 <div class="admonition important">
@@ -2696,7 +2700,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 29, 2020</span>
+      Last update: <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 16, 2020</span>
     
   </small>
 </div>
