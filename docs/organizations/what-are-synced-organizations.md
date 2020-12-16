@@ -1,8 +1,8 @@
 # What are synced organizations
 
-Synced organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that do not belong to a Git provider organization), and team members into Codacy with a few clicks.
+Synced organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that don't belong to a Git provider organization), and team members into Codacy with a few clicks.
 
-Changes to the organizations, repositories, and team members are synchronized with Codacy in real time, avoiding the manual management of repositories and teams.
+Changes to the organizations, repositories, and team members are synchronized with Codacy in real-time, avoiding the manual management of repositories and teams.
 
 ## Adding an organization
 
@@ -12,13 +12,14 @@ To add a new organization to Codacy, select **Add organization** on the navigati
 
 This opens the list of organizations on your Git providers. The organizations with the same name as your Git provider username contain your personal repositories.
 
--   To add a new organization to Codacy, click the button **Add** for that organization.
--   To add organizations from a Git provider that is not yet listed on this page, click **Add provider** and give the [necessary permissions](../getting-started/which-permissions-does-codacy-need-from-my-account.md) for Codacy to sync with the new Git provider and display your organizations.
+-   To add a new organization to Codacy, click the link **Add** for that organization.
+-   To join an organization that's already on Codacy, click the link **Join** for that organization.
+-   To add organizations from a Git provider not yet listed on this page, click **Add provider** and give the [necessary permissions](../getting-started/which-permissions-does-codacy-need-from-my-account.md) for Codacy to sync with the new Git provider and display your organizations.
 
 ![Adding an organization](images/organization-add.png)
 
-!!! tip
-    If you can't see the organization you are looking for, [follow these troubleshooting instructions](../faq/general/why-cant-i-see-my-organization.md).
+!!! note
+    If you can't see the organization you are looking for, follow the instructions in the card **Adding new organizations** or [these troubleshooting instructions](../faq/general/why-cant-i-see-my-organization.md).
 
 ## Managing people in an organization
 
@@ -34,7 +35,7 @@ Members can add themselves to your Codacy organization when they log into Codacy
 The organizations that contain your personal repositories can only have the owner of the repositories as their single member.
 
 !!! important
-    **If you are using Bitbucket Cloud** the organization that contains your personal repositories can have other members, since Bitbucket Cloud does not have a different type of [workspace](https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/){: target="_blank"} for personal use.
+    **If you are using Bitbucket Cloud** the organization that contains your personal repositories can have other members, since Bitbucket Cloud doesn't have a different type of [workspace](https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/){: target="_blank"} for personal use.
 
 ![Accepting new people to the organization](images/organization-plan-billing.png)
 
