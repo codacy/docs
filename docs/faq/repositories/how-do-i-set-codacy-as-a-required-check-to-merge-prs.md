@@ -13,7 +13,10 @@ GitHub allows [setting a status check as mandatory](https://docs.github.com/en/f
 
 ## GitLab {: id="gitlab"}
 
-GitLab allows [flagging merge requests as "Draft"](https://docs.gitlab.com/ee/user/project/merge_requests/work_in_progress_merge_requests.html){: target="_blank"} to block merging them.
+GitLab allows [setting that all pipelines must succeed](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds){: target="_blank"} before merging merge requests.
+
+!!! important
+    Make sure that you [enable the option Pull Request Status](../../repositories-configure/integrations/gitlab-integration.md) on the GitLab integration.
 
 ## Bitbucket {: id="bitbucket"}
 
