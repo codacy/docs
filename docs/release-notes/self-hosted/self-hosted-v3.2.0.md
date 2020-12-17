@@ -6,10 +6,11 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
-
+-   Now, the list that allows adding organizations is paginated and supports displaying an indefinite number of organizations per Git provider. (CY-1938)
 
 ## Bug fixes
 
+-  <!-- TODO Include bug fixes -->
 
 ## Tool versions
 
