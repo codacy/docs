@@ -6,7 +6,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
--   Now, the repositories list page on Codacy Self-hosted allows limiting how many repositories to load at a time with the configuration `codacy-spa.config.codacy.pagination.repositoriesLimit`. Lower this limit from the default of 100 to overcome timeouts or if the page takes a very long time to load. (CY-3352)
+-   To overcome timeouts when loading the repositories list page on Codacy Self-hosted, it's now possible to configure how many repositories to load at a time. To do this, set a value lower than the default of 100 by configuring `codacy-spa.config.codacy.pagination.repositoriesLimit` on your `values-production.yml` configuration file. (CY-3352)
 -   Now, Codacy has an improved user experience to add and manage organizations that supports displaying an indefinite number of organizations per Git provider. (CY-1938)
 
 ## Tool versions
