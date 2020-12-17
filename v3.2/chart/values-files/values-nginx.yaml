@@ -1,0 +1,25 @@
+controller:
+  ingressClass: nginx
+  publishService:
+    enabled: true
+  service:
+    ## Use this annotation if you want private load balancers on AWS
+    #annotations:
+    #  service.beta.kubernetes.io/aws-load-balancer-internal: "true"
+    #
+    ## Use this setting do restrict the load balancer source ip ranges.
+    #loadBalancerSourceRanges:
+    #  - 10.0.0.0/16 # set this for the desired CIDR
+    #
+    clusterIP: "-"
+  defaultBackend:
+    clusterIP: "-"
+  
+  # resources used by the nginx controller
+  resources:
+    limits:
+      cpu: 200m
+      memory: 500Mi
+    requests:
+      cpu: 100m
+      memory: 300Mi
