@@ -24,8 +24,8 @@ By participating in this project you are expected to adhere to the [CODE_OF_COND
 
 -   Identify new static analysis issues
 -   Commit and pull request analysis with GitHub, Bitbucket, and GitLab
--   Auto-comments on commits and pull requests
--   Integrations with Slack, Jira
+-   Auto comments on commits and pull requests
+-   Integrations with Slack and Jira
 -   Track issues in code style, security, error proneness, performance, unused code and other categories
 
 Codacy also helps keep track of code coverage, code duplication, and code complexity.
