@@ -70,7 +70,7 @@ The Security Monitor displays issues using security patterns from:
 -   **Visibility:** Fields shouldn't have public accessibility.
 -   **CSRF:** Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated.
 -   **Android:** Android-specific issues.
--   **Malicious code:** Exposed internal APIs can be accessed or change changed by malicious code or by accident from another package.
+-   **Malicious code:** Exposed internal APIs can be accessed or changed by malicious code or by accident from another package.
 -   **Cryptography:** Cryptography is a security technique widely used and there are several cryptographic functions, but not all of them are secure.
 -   **Command injection:** Command injection is an attack in which the goal is the execution of arbitrary commands on the host operating system.
 -   **Firefox OS:** Sensitive APIs of Firefox OS.
