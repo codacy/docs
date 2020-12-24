@@ -5,12 +5,13 @@ on: pull_request
 jobs:
   prose:
     runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
     steps:
-      - name: Checkout
+      - name: Checkout code
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          submodules: false
+          fetch-depth: 0
 
       - name: File changes
         id: file_changes

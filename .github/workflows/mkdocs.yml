@@ -4,11 +4,10 @@ on: push
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
     if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
     steps:
-      - name: Checkout branch
+      - name: Checkout code
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
@@ -38,7 +37,6 @@ jobs:
           mkdocs build
 
   deploy-version:
-    name: Deploy version
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/heads/release/v')
     steps:
@@ -67,7 +65,7 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements.txt
 
-      - name: Setup git author
+      - name: Set up git author
         run: |
           remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git config --global user.name "${GITHUB_ACTOR}"
@@ -83,7 +81,6 @@ jobs:
           mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted ${GITHUB_REF##*/release/}" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
 
   deploy:
-    name: Deploy
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
     steps:
@@ -112,7 +109,7 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements.txt
 
-      - name: Setup git author
+      - name: Set up git author
         run: |
           remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git config --global user.name "${GITHUB_ACTOR}"
