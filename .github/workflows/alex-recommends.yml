@@ -4,14 +4,14 @@ on: pull_request
 
 jobs:
   alex:
-    name: Alex Recommends
     runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          submodules: false
+          fetch-depth: 0
 
       - name: Comment on pull request
         uses: brown-ccv/alex-recommends@v1.1.2
