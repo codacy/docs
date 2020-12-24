@@ -16,7 +16,7 @@ You're welcome to make fixes and changes to the documentation. Here are a few st
 1.  Clone the `codacy/docs` repository, including the submodules, and change into the local copy directory:
 
     ```bash
-    git clone --recursive git@github.com:codacy/docs.git
+    git clone --recursive https://github.com/codacy/docs.git
     cd docs
     ```
 
