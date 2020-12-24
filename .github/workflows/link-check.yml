@@ -1,0 +1,26 @@
+name: Broken link check (scheduled)
+
+on:
+  schedule:
+    - cron: "0 5 * * 1"
+
+jobs:
+  broken-link-check:
+    runs-on: ubuntu-latest
+    env:
+      OUTPUT_FILE: ./broken-link-report.txt
+    steps:
+      - name: Check for broken links
+        env:
+          INPUT_URL: https://docs.codacy.com/
+          EXCLUDE_PATTERN: https:\/\/gitlab\.com\/profile\/applications
+        run: |
+          docker run raviqqe/muffet --follow-sitemap-xml --timeout=30 --buffer-size=8192 --exclude=${{ env.EXCLUDE_PATTERN }} ${{ env.INPUT_URL }} > ${{ env.OUTPUT_FILE }}
+
+      - name: Create issue
+        uses: peter-evans/create-issue-from-file@v2
+        if: ${{ failure() }}
+        with:
+          title: Broken link report
+          content-filepath: ${{ env.OUTPUT_FILE }}
+          labels: report, automated issue
