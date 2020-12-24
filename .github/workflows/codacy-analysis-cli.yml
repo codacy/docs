@@ -10,6 +10,9 @@ jobs:
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          submodules: true
+          fetch-depth: 0
+
       - name: Run codacy-analysis-cli
         uses: codacy/codacy-analysis-cli-action@master
         with:

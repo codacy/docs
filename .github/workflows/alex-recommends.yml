@@ -11,6 +11,8 @@ jobs:
         uses: actions/checkout@v2
         with:
           token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          submodules: true
+          fetch-depth: 0
 
       - name: Comment on pull request
         uses: brown-ccv/alex-recommends@v1.1.2
