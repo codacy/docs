@@ -4,7 +4,6 @@ on: pull_request
 
 jobs:
   alex:
-    name: Alex Recommends
     runs-on: ubuntu-latest
     if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
     steps:

@@ -5,7 +5,6 @@ on: push
 jobs:
   codacy-analysis-cli:
     runs-on: ubuntu-latest
-    name: Codacy Analysis CLI
     steps:
       - name: Checkout code
         uses: actions/checkout@v2

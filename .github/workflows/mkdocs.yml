@@ -4,7 +4,6 @@ on: push
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
     if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
     steps:
@@ -38,7 +37,6 @@ jobs:
           mkdocs build
 
   deploy-version:
-    name: Deploy version
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/heads/release/v')
     steps:
@@ -83,7 +81,6 @@ jobs:
           mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted ${GITHUB_REF##*/release/}" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
 
   deploy:
-    name: Deploy
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
     steps:
