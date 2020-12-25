@@ -488,20 +488,18 @@ nav:
     - "Documentation home": "index.md"
     - "Getting started":
           - getting-started/getting-started-with-codacy.md
+          - repositories-configure/ignore-files-from-codacy-analysis.md
+          - repositories-configure/code-patterns.md
+          - repositories/quality-settings.md
+          - repositories/badges.md
           - getting-started/supported-languages-and-tools.md
-          - getting-started/which-permissions-does-codacy-need-from-my-account.md
     - "Your repositories":
           - repositories/repository-dashboard.md
-          - repositories/what-are-the-different-grades-and-how-are-they-calculated.md
           - repositories/commits-view.md
           - repositories/files-view.md
           - repositories/issues-view.md
           - repositories/security-monitor.md
-          - repositories/badges.md
-          - repositories/quality-settings.md
-          - repositories/managing-branches.md
-          - repositories/post-commit-hooks.md
-          - repositories/removing-your-repository.md
+          - repositories/what-are-the-different-grades-and-how-are-they-calculated.md
     - "Configuring your repositories":
           - Integrations:
                 - repositories-configure/integrations/github-integration.md
@@ -512,15 +510,18 @@ nav:
                 - repositories-configure/integrations/project-api.md
                 - repositories-configure/integrations/webhook-notifications.md
           - "Coverage": "!include submodules/codacy-coverage-reporter/mkdocs.yml"
-          - repositories-configure/code-patterns.md
-          - repositories-configure/codacy-configuration-file.md
-          - repositories-configure/ignoring-files.md
-          - repositories-configure/using-submodules.md
+          - repositories/managing-branches.md
           - repositories-configure/file-extensions.md
+          - repositories-configure/codacy-configuration-file.md
+          - repositories-configure/using-submodules.md
+          # TODO: Refactor the pages about specifying the language DOCS-160
           - repositories-configure/specifying-language.md
           - repositories-configure/specifying-your-python-version.md
           - repositories-configure/specifying-your-php-version.md
           - repositories-configure/code-standards.md
+          ### "Extra", more detailed info
+          - repositories/post-commit-hooks.md
+          - repositories/removing-your-repository.md
     - "Organizations":
           - organizations/what-are-synced-organizations.md
           - organizations/organization-overview.md
@@ -551,6 +552,7 @@ nav:
     - Troubleshooting and FAQs:
           - General:
                 - faq/general/which-version-control-systems-do-you-support.md
+                - getting-started/which-permissions-does-codacy-need-from-my-account.md
                 - faq/general/which-browsers-do-you-support.md
                 - faq/general/how-does-codacy-support-gitlab-cloud.md
                 - faq/general/how-does-codacy-support-gitlab-enterprise.md

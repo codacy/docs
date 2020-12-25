@@ -1,4 +1,4 @@
-# Badges
+# Adding a Codacy badge
 
 You can add a Codacy badge to the README of your repository to display the current code quality grade or code coverage.
 

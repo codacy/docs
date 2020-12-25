@@ -1,4 +1,4 @@
-# Quality settings
+# Configuring quality settings
 
 Here you can define quality settings for your repository, giving you control over the build status and success/fail of commits and pull requests. This feature also enables you to turn off metrics like duplication or complexity.
 
