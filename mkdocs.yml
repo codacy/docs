@@ -513,7 +513,6 @@ nav:
           - repositories/managing-branches.md
           - repositories-configure/file-extensions.md
           - repositories-configure/codacy-configuration-file.md
-          - repositories-configure/using-submodules.md
           # TODO: Refactor the pages about specifying the language DOCS-160
           - repositories-configure/specifying-language.md
           - repositories-configure/specifying-your-python-version.md
@@ -521,6 +520,7 @@ nav:
           - repositories-configure/code-standards.md
           ### "Extra", more detailed info
           - repositories/post-commit-hooks.md
+          - repositories-configure/using-submodules.md
           - repositories/removing-your-repository.md
     - "Organizations":
           - organizations/what-are-synced-organizations.md
