@@ -493,9 +493,9 @@ nav:
     - "Your repositories":
           - repositories/repository-dashboard.md
           - repositories/what-are-the-different-grades-and-how-are-they-calculated.md
-          - repositories/issues-view.md
           - repositories/commits-view.md
           - repositories/files-view.md
+          - repositories/issues-view.md
           - repositories/security-monitor.md
           - repositories/badges.md
           - repositories/quality-settings.md
