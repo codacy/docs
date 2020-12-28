@@ -501,7 +501,7 @@ nav:
           - repositories/security-monitor.md
           - repositories/what-are-the-different-grades-and-how-are-they-calculated.md
     - "Configuring your repositories":
-          - Integrations:
+          - "Integrations":
                 - repositories-configure/integrations/github-integration.md
                 - repositories-configure/integrations/gitlab-integration.md
                 - repositories-configure/integrations/bitbucket-integration.md
@@ -510,14 +510,15 @@ nav:
                 - repositories-configure/integrations/project-api.md
                 - repositories-configure/integrations/webhook-notifications.md
           - "Coverage": "!include submodules/codacy-coverage-reporter/mkdocs.yml"
+          - "Codacy configuration file":
+                - repositories-configure/codacy-configuration-file.md
+                # TODO: Refactor the pages about specifying the language DOCS-160
+                - repositories-configure/specifying-language.md
+                - repositories-configure/specifying-your-python-version.md
+                - repositories-configure/specifying-your-php-version.md
+                - repositories-configure/code-standards.md
           - repositories/managing-branches.md
           - repositories-configure/file-extensions.md
-          - repositories-configure/codacy-configuration-file.md
-          # TODO: Refactor the pages about specifying the language DOCS-160
-          - repositories-configure/specifying-language.md
-          - repositories-configure/specifying-your-python-version.md
-          - repositories-configure/specifying-your-php-version.md
-          - repositories-configure/code-standards.md
           ### "Extra", more detailed info
           - repositories/post-commit-hooks.md
           - repositories-configure/using-submodules.md
