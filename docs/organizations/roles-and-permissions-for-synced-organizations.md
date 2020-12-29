@@ -87,7 +87,7 @@ Depending on your role on the Git provider you will have different permissions o
 <td>Yes</td>
 </tr>
 <tr>
-<td rowspan="7">GitLab Cloud</td>
+<td rowspan="7">GitLab Cloud and<br/>GitLab Enterprise</td>
 <td>External User<sup><a href="#note-1">1</a></sup></td>
 <td>No</td>
 <td>No</td>
