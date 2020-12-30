@@ -1540,98 +1540,12 @@
     Git provider integrations
   </a>
   
-    <nav class="md-nav md-nav--toc" aria-label="Git provider integrations">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#github" class="md-nav__link">
-    GitHub Cloud and GitHub Enterprise authentication
-  </a>
-  
-    <nav class="md-nav md-nav--toc" aria-label="GitHub Cloud and GitHub Enterprise authentication">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#404-error" class="md-nav__link">
-    404 error
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#gitlab" class="md-nav__link">
-    GitLab Cloud and GitLab Enterprise authentication
-  </a>
-  
-    <nav class="md-nav md-nav--toc" aria-label="GitLab Cloud and GitLab Enterprise authentication">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#invalid-redirect-uri" class="md-nav__link">
-    Invalid redirect URI
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#unknown-client" class="md-nav__link">
-    Unknown client
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#bitbucket-cloud" class="md-nav__link">
-    Bitbucket Cloud authentication
-  </a>
-  
-    <nav class="md-nav md-nav--toc" aria-label="Bitbucket Cloud authentication">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#invalid-client_id" class="md-nav__link">
-    Invalid client_id
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#codacy-configuration" class="md-nav__link">
     Codacy configuration
   </a>
-  
-    <nav class="md-nav md-nav--toc" aria-label="Codacy configuration">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#accessing-the-rabbitmq-dashboard" class="md-nav__link">
-    Accessing the RabbitMQ dashboard
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2770,8 +2684,8 @@
 </ul>
 <h2 id="git-provider-integrations">Git provider integrations<a class="headerlink" href="#git-provider-integrations" title="Permanent link">&para;</a></h2>
 <p>The following sections help you troubleshoot the integration of Codacy with your Git provider.</p>
-<h3 id="github">GitHub Cloud and GitHub Enterprise authentication<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
-<h4 id="404-error">404 error<a class="headerlink" href="#404-error" title="Permanent link">&para;</a></h4>
+<h3 id="github">GitHub Cloud and GitHub Enterprise authentication</h3>
+<h4>404 error</h4>
 <p>While trying to authenticate on GitHub you get the following error message:</p>
 <p><img alt="Invalid client id" src="../images/github-invalid-client-id.png" /></p>
 <p>This might mean that there is a mismatch in the Client ID that Codacy is using to authenticate on GitHub.</p>
@@ -2785,8 +2699,8 @@
 <li>Take note of the parameter <code>client_id</code> in the URL of the GitHub error page (for example, <code>Iv1.0000000000000000</code>)</li>
 <li>Check if the value of the parameter matches the value of the Client ID of your GitHub App</li>
 </ol>
-<h3 id="gitlab">GitLab Cloud and GitLab Enterprise authentication<a class="headerlink" href="#gitlab" title="Permanent link">&para;</a></h3>
-<h4 id="invalid-redirect-uri">Invalid redirect URI<a class="headerlink" href="#invalid-redirect-uri" title="Permanent link">&para;</a></h4>
+<h3 id="gitlab">GitLab Cloud and GitLab Enterprise authentication</h3>
+<h4>Invalid redirect URI</h4>
 <p>While trying to authenticate on GitLab you get the following error message:</p>
 <p><img alt="Invalid redirect URI" src="../images/gitlab-invalid-redirect-uri.png" /></p>
 <p>This might mean that the redirect URIs are not correct in the GitLab application that Codacy is using to authenticate on GitLab.</p>
@@ -2802,7 +2716,7 @@
 <li>Decode the value of the parameter using a tool such as <a href="https://www.urldecoder.org/">urldecoder.com</a> (for example, <code>https://codacy.example.com/login/GitLab</code> or <code>https://codacy.example.com/login/GitLabEnterprise</code>)</li>
 <li>Check if the decoded value matches one of the redirect URIs of your GitLab application</li>
 </ol>
-<h4 id="unknown-client">Unknown client<a class="headerlink" href="#unknown-client" title="Permanent link">&para;</a></h4>
+<h4>Unknown client</h4>
 <p>While trying to authenticate on GitLab you get the following error message:</p>
 <p><img alt="Invalid application id" src="../images/gitlab-invalid-application-id.png" /></p>
 <p>This might mean that there is a mismatch in the Application ID that Codacy is using to authenticate on GitLab.</p>
@@ -2816,8 +2730,8 @@
 <li>Take note of the parameter <code>client_id</code> in the URL of the GitLab error page (for example, <code>cca35a2a1f9b9b516ac927d82947bd5149b0e57e922c9e5564ac092ea16a3ccd</code>)</li>
 <li>Check if the value of the parameter matches the value of the Application ID of your GitLab application</li>
 </ol>
-<h3 id="bitbucket-cloud">Bitbucket Cloud authentication<a class="headerlink" href="#bitbucket-cloud" title="Permanent link">&para;</a></h3>
-<h4 id="invalid-client_id">Invalid client_id<a class="headerlink" href="#invalid-client_id" title="Permanent link">&para;</a></h4>
+<h3 id="bitbucket-cloud">Bitbucket Cloud authentication</h3>
+<h4>Invalid client_id</h4>
 <p>While trying to authenticate on Bitbucket Cloud you get the following error message:</p>
 <p><img alt="Invalid client_id" src="../images/bitbucket-invalid-client-id.png" /></p>
 <p>This might mean that there is a mismatch in the OAuth consumer Client ID that Codacy is using to authenticate on Bitbucket Cloud.</p>
@@ -2833,7 +2747,7 @@
 </ol>
 <h2 id="codacy-configuration">Codacy configuration<a class="headerlink" href="#codacy-configuration" title="Permanent link">&para;</a></h2>
 <p>The following sections help you troubleshoot the Codacy configuration.</p>
-<h3 id="accessing-the-rabbitmq-dashboard">Accessing the RabbitMQ dashboard<a class="headerlink" href="#accessing-the-rabbitmq-dashboard" title="Permanent link">&para;</a></h3>
+<h3>Accessing the RabbitMQ dashboard</h3>
 <p>We use RabbitMQ for the internal message queue between our components.</p>
 <p>If you need to access the RabbitMQ dashboard:</p>
 <ol>

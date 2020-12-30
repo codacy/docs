@@ -1585,52 +1585,12 @@
     Restart deployment of daemonset
   </a>
   
-    <nav class="md-nav md-nav--toc" aria-label="Restart deployment of daemonset">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#daemonsets" class="md-nav__link">
-    daemonsets
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#deployment" class="md-nav__link">
-    deployment
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#read-logs" class="md-nav__link">
     Read logs
   </a>
-  
-    <nav class="md-nav md-nav--toc" aria-label="Read logs">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#daemonset-with-multiple-containers" class="md-nav__link">
-    daemonset with multiple containers
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#service" class="md-nav__link">
-    service
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -1645,19 +1605,6 @@
   <a href="#microk8s" class="md-nav__link">
     MicroK8s
   </a>
-  
-    <nav class="md-nav md-nav--toc" aria-label="MicroK8s">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#session-manager-ssh" class="md-nav__link">
-    Session Manager SSH
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
@@ -2797,13 +2744,13 @@ By looking at them you can see if probes are failing, and other important signal
 <div class="highlight"><pre><span></span><code>kubectl edit configmap &lt;configmap-name&gt;
 </code></pre></div>
 <h2 id="restart-deployment-of-daemonset">Restart deployment of daemonset<a class="headerlink" href="#restart-deployment-of-daemonset" title="Permanent link">&para;</a></h2>
-<h3 id="daemonsets">daemonsets<a class="headerlink" href="#daemonsets" title="Permanent link">&para;</a></h3>
+<h3>daemonsets</h3>
 <div class="highlight"><pre><span></span><code>kubectl get daemonsets
 </code></pre></div>
 <p><strong>and</strong></p>
 <div class="highlight"><pre><span></span><code>kubectl rollout restart daemonset/&lt;daemonset-name&gt;
 </code></pre></div>
-<h3 id="deployment">deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h3>
+<h3>deployment</h3>
 <div class="highlight"><pre><span></span><code>kubectl get deployment
 </code></pre></div>
 <p><strong>and</strong></p>
@@ -2813,10 +2760,10 @@ By looking at them you can see if probes are failing, and other important signal
 <div class="highlight"><pre><span></span><code>kubectl rollout status deployment/&lt;deployment-name&gt; -w
 </code></pre></div>
 <h2 id="read-logs">Read logs<a class="headerlink" href="#read-logs" title="Permanent link">&para;</a></h2>
-<h3 id="daemonset-with-multiple-containers">daemonset with multiple containers<a class="headerlink" href="#daemonset-with-multiple-containers" title="Permanent link">&para;</a></h3>
+<h3>daemonset with multiple containers</h3>
 <div class="highlight"><pre><span></span><code>kubectl logs daemonset/&lt;daemonset-name&gt; &lt;container-name&gt; -f
 </code></pre></div>
-<h3 id="service">service<a class="headerlink" href="#service" title="Permanent link">&para;</a></h3>
+<h3>service</h3>
 <div class="highlight"><pre><span></span><code>kubectl get svc
 </code></pre></div>
 <p><strong>and</strong></p>
@@ -2829,7 +2776,7 @@ By looking at them you can see if probes are failing, and other important signal
 <div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it deployment/&lt;deployment-name&gt; sh
 </code></pre></div>
 <h2 id="microk8s">MicroK8s<a class="headerlink" href="#microk8s" title="Permanent link">&para;</a></h2>
-<h3 id="session-manager-ssh">Session Manager SSH<a class="headerlink" href="#session-manager-ssh" title="Permanent link">&para;</a></h3>
+<h3>Session Manager SSH</h3>
 <p>When using AWS Session Manager, to connect to the instance where you installed microk8s,
 since the CLI is very limited you will benefit from using these aliases:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">alias</span> <span class="nv">kubectl</span><span class="o">=</span><span class="s1">&#39;sudo microk8s.kubectl -n &lt;namespace-name&gt;&#39;</span>

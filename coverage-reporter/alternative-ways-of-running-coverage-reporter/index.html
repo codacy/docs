@@ -624,33 +624,6 @@
     Community supported alternatives
   </a>
   
-    <nav class="md-nav md-nav--toc" aria-label="Community supported alternatives">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#maven-plugin" class="md-nav__link">
-    Maven plugin
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#travis-ci" class="md-nav__link">
-    Travis CI
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#gradle-task" class="md-nav__link">
-    Gradle task
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
@@ -2751,9 +2724,9 @@
 <h2 id="github-action">GitHub Action<a class="headerlink" href="#github-action" title="Permanent link">&para;</a></h2>
 <p>If you are using GitHub Actions to report coverage, you can use our GitHub Action <a href="https://github.com/codacy/codacy-coverage-reporter-action">codacy/codacy-coverage-reporter-action</a>.</p>
 <h2 id="community-supported-alternatives">Community supported alternatives<a class="headerlink" href="#community-supported-alternatives" title="Permanent link">&para;</a></h2>
-<h3 id="maven-plugin">Maven plugin<a class="headerlink" href="#maven-plugin" title="Permanent link">&para;</a></h3>
+<h3>Maven plugin</h3>
 <p>Thanks to the amazing job of <a href="https://github.com/halkeye">Gavin Mogan</a> you can now send your coverage to Codacy using his Maven plugin <a href="https://github.com/halkeye/codacy-maven-plugin">halkeye/codacy-maven-plugin</a>! Be sure to follow the instructions on his repository.</p>
-<h3 id="travis-ci">Travis CI<a class="headerlink" href="#travis-ci" title="Permanent link">&para;</a></h3>
+<h3>Travis CI</h3>
 <p>If you are using Travis CI to report coverage, update your file <code>.travis.yml</code> to include the following blocks:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">before_install</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">sudo apt-get install jq</span>
@@ -2763,7 +2736,7 @@
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">java -jar codacy-coverage-reporter-assembly.jar report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml</span>
 </code></pre></div>
 <p>Make sure that you also <a href="../adding-coverage-to-your-repository/#authenticate">set your project API Token</a> as an environment variable in your Travis CI job.</p>
-<h3 id="gradle-task">Gradle task<a class="headerlink" href="#gradle-task" title="Permanent link">&para;</a></h3>
+<h3>Gradle task</h3>
 <p>A big shout-out to <a href="https://github.com/tompahoward">Tom Howard</a>, who suggested a way to <a href="https://github.com/mountain-pass/hyperstate/commit/857ca93e1c8484c14a5e2da9f0434d3daf3328ce">create a Gradle task</a>.</p>
 <div class="highlight"><pre><span></span><code>task uploadCoverageToCodacy(type: JavaExec, dependsOn : jacocoTestReport) {
    main = &quot;com.codacy.CodacyCoverageReporter&quot;

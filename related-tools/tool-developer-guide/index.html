@@ -1177,33 +1177,6 @@
     Submit the Docker
   </a>
   
-    <nav class="md-nav md-nav--toc" aria-label="Submit the Docker">
-      <ul class="md-nav__list md-nav__list--toc">
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#running-the-docker" class="md-nav__link">
-    Running the docker
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#docker-restrictions" class="md-nav__link">
-    Docker restrictions
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item md-nav__item--toc">
-  <a href="#docker-submission" class="md-nav__link">
-    Docker submission
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
 </li>
       
     </ul>
@@ -2988,7 +2961,7 @@ more complete source.
 <p>To run this use our test repository available <a href="https://github.com/codacy/codacy-plugins-test">here</a>.</p>
 <p>You just need the docker image built in your local repository and then follow the steps to run it.</p>
 <h2 id="submit-the-docker">Submit the Docker<a class="headerlink" href="#submit-the-docker" title="Permanent link">&para;</a></h2>
-<h3 id="running-the-docker">Running the docker<a class="headerlink" href="#running-the-docker" title="Permanent link">&para;</a></h3>
+<h3>Running the docker</h3>
 <div class="highlight"><pre><span></span><code>docker run -t <span class="se">\</span>
 --net<span class="o">=</span>none <span class="se">\</span>
 --privileged<span class="o">=</span><span class="nb">false</span> <span class="se">\</span>
@@ -2999,7 +2972,7 @@ more complete source.
 
 &lt;YOUR-DOCKER-NAME&gt;:&lt;YOUR-DOCKER-VERSION&gt;
 </code></pre></div>
-<h3 id="docker-restrictions">Docker restrictions<a class="headerlink" href="#docker-restrictions" title="Permanent link">&para;</a></h3>
+<h3>Docker restrictions</h3>
 <ul>
 <li>Docker image size shouldn't exceed 500MB</li>
 <li>Docker should contain a non-root user named docker with UID/GID 2004</li>
@@ -3007,7 +2980,7 @@ more complete source.
 <li>The docker base must officially be supported on DockerHub</li>
 <li>Your docker must be provided in a repository through a public git host (ex: GitHub, Bitbucket, ...)</li>
 </ul>
-<h3 id="docker-submission">Docker submission<a class="headerlink" href="#docker-submission" title="Permanent link">&para;</a></h3>
+<h3>Docker submission</h3>
 <ul>
 <li>To submit the docker you should send an email to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a> with the link to the git repository with your docker definition.</li>
 <li>The docker will then be subjected to a review by our team and we will then contact you with more details.</li>
