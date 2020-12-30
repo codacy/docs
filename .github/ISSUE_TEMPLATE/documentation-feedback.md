@@ -3,7 +3,7 @@ name: Documentation feedback
 about: Provide us with your feedback to help improve Codacy's documentation
 title: ''
 labels: ''
-assignees: pauloribeiro-codacy
+assignees: 
 
 ---
 
@@ -16,17 +16,14 @@ assignees: pauloribeiro-codacy
 
 **Feedback**
 
-
+<!-- Write your feedback here -->
 
 **Affected pages**
 This feedback applies to the following documentation pages / URLs:
 
-
-
-**Priority**
--   [ ] High
--   [ ] Medium
--   [ ] Low
+<!-- Add the URLs of the relevant pages -->
 
 **Additional context**
 If applicable, provide any other context or information that could be useful in updating the documentation:
+
+<!-- Add extra information here -->
