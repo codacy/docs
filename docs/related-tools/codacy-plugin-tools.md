@@ -124,7 +124,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-pmd" class="skip-vale">codacy/codacy-pmd</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/landscapeio/prospector">Prospector</a></td>
+<td><a href="https://github.com/landscapeio/prospector2">Prospector</a></td>
 <td><a href="https://github.com/codacy/codacy-prospector" class="skip-vale">codacy/codacy-prospector</a></td>
 </tr>
 <tr>

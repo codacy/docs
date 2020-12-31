@@ -177,7 +177,7 @@ The known file names for each tool are the following:
 <td>Pylint</td>
 <td>Python</td>
 <td>pylintrc, .pylintrc </td>
-<td><a href="https://github.com/codacy/codacy-pylint/blob/master/build.sbt#L39">Plugins</a> </td>
+<td><a href="https://github.com/codacy/codacy-pylint/blob/master/requirements.txt">Plugins</a> </td>
 </tr>
 <tr>
 <td>RemarkLint</td>
