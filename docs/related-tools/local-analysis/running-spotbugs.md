@@ -61,6 +61,6 @@ engines:
 
 ## Increasing the timeout to run SpotBugs
 
-When running SpotBugs on the compiled classes of larger projects, the [default execution timeout of 15 minutes](https://github.com/codacy/codacy-analysis-cli/blob/master/README.md#commands-and-configuration){: target="_blank"} may not be enough for SpotBugs to complete the analysis.
+When running SpotBugs on the compiled classes of larger projects, the [default execution timeout of 15 minutes](https://github.com/codacy/codacy-analysis-cli#commands-and-configuration){: target="_blank"} may not be enough for SpotBugs to complete the analysis.
 
 To increase the timeout that SpotBugs has to execute, use the option `--tool-timeout` when running the Codacy Analysis CLI. For example, use `--tool-timeout 1hour` to set the timeout to one hour.

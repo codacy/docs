@@ -185,7 +185,7 @@ The table below lists all programming languages currently supported by Codacy an
       <td>Python
       </td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
+          <a href="https://github.com/landscapeio/prospector2">Prospector</a>,
           <a href="https://www.pylint.org/">Pylint</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/rubik/radon">Radon</a></td>

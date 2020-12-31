@@ -27,7 +27,7 @@ codacy-analysis-cli analyze --help
 
 ### Advanced configuration
 
-For advanced configuration details, check all the CLI flags in the [CLI documentation](https://github.com/codacy/codacy-analysis-cli#cli-parameters).
+For advanced configuration details, check all the CLI flags in the [CLI documentation](https://github.com/codacy/codacy-analysis-cli#commands-and-configuration).
 
 Some flags you might be interested in:
 

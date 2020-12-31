@@ -13,9 +13,11 @@ jobs:
       - name: Check for broken links
         env:
           INPUT_URL: https://docs.codacy.com/
-          EXCLUDE_PATTERN: https:\/\/gitlab\.com\/profile\/applications
+          EXCLUDE: |
+            gitlab\.com\/profile\/applications
+            github\.com\/settings\/tokens
         run: |
-          docker run raviqqe/muffet --follow-sitemap-xml --timeout=30 --buffer-size=8192 --exclude=${{ env.EXCLUDE_PATTERN }} ${{ env.INPUT_URL }} > ${{ env.OUTPUT_FILE }}
+          docker run raviqqe/muffet --follow-sitemap-xml --timeout=30 --buffer-size=8192 --skip-tls-verification --exclude=$( echo ${EXCLUDE} | tr ' ' '|' ) ${{ env.INPUT_URL }} > ${{ env.OUTPUT_FILE }}
 
       - name: Create issue
         uses: peter-evans/create-issue-from-file@v2
