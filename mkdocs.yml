@@ -51,7 +51,6 @@ markdown_extensions:
           strip_comments: true
     - toc:
           permalink: true
-          toc_depth: 2
 
 # Plugins
 plugins:
