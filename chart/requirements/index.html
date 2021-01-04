@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.ac3dc039.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.cdd12cd3.min.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/palette.45b0513f.min.css">
       
@@ -1200,14 +1200,12 @@
   <a href="#kubernetes-or-microk8s-cluster-setup" class="md-nav__link">
     Kubernetes or MicroK8s cluster setup
   </a>
-  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#postgresql-server-setup" class="md-nav__link">
     PostgreSQL server setup
   </a>
-  
 </li>
       
     </ul>
@@ -2690,7 +2688,7 @@
 </li>
 <li>The <a href="https://github.com/kubernetes/ingress-nginx">NGINX Ingress controller</a> must be installed and correctly set up in the cluster</li>
 </ul>
-<h3>Cluster networking requirements</h3>
+<h3 id="cluster-networking-requirements">Cluster networking requirements<a class="headerlink" href="#cluster-networking-requirements" title="Permanent link">&para;</a></h3>
 <p>The cluster must be configured to accept and establish connections on the following ports:</p>
 <table>
 <thead>
@@ -2752,10 +2750,10 @@
 </tr>
 </tbody>
 </table>
-<h3>Cluster hardware requirements</h3>
+<h3 id="cluster-hardware-requirements">Cluster hardware requirements<a class="headerlink" href="#cluster-hardware-requirements" title="Permanent link">&para;</a></h3>
 <p>The high-level architecture described in the next section is important in understanding how Codacy uses and allocates hardware resources. Below we also provide guidance on <a href="#standard-cluster-provisioning">resource provisioning for typical scenarios</a>.</p>
 <p>For a custom hardware resource recommendation, please contact us at <a href="mailto://support@codacy.com">support@codacy.com</a>.</p>
-<h4>Codacy architecture</h4>
+<h4 id="codacy-architecture">Codacy architecture<a class="headerlink" href="#codacy-architecture" title="Permanent link">&para;</a></h4>
 <p>You can look at Codacy separately as two groups of components:</p>
 <ul>
 <li>The <strong>"Platform"</strong> contains the UI and other components important to treat and show results</li>
@@ -2785,7 +2783,7 @@
 </tr>
 </tbody>
 </table>
-<h4>Standard cluster provisioning</h4>
+<h4 id="standard-cluster-provisioning">Standard cluster provisioning<a class="headerlink" href="#standard-cluster-provisioning" title="Permanent link">&para;</a></h4>
 <p>As described in the section above, Codacy's architecture allows scaling the "Analysis" group of components, meaning that the resources needed for Codacy <strong>depend mainly on the rate of commits</strong> done by your team that Codacy will be analyzing.</p>
 <p>The resources recommended on the following table are based on our experience and are also the defaults in the <a href="../values-files/values-production.yaml"><code>values-production.yaml</code></a> file. You might need to adapt these defaults taking into account your use case. In particular, you should set the value of <code>global.workerManager.workers.config.dedicatedMax</code> to the maximum number of concurrent analysis depending on the available resources and number of replicas per component.</p>
 <div class="admonition note">
@@ -2897,7 +2895,7 @@
 <li><a href="https://www.digitalocean.com/products/managed-databases-postgresql/">Digital Ocean Managed Databases</a></li>
 </ul>
 </div>
-<h3>PostgreSQL hardware requirements</h3>
+<h3 id="postgresql-hardware-requirements">PostgreSQL hardware requirements<a class="headerlink" href="#postgresql-hardware-requirements" title="Permanent link">&para;</a></h3>
 <p>The following are the minimum specifications recommended for provisioning the PostgreSQL server:</p>
 <table>
 <thead>
@@ -2917,7 +2915,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Preparing PostgreSQL for Codacy</h3>
+<h3 id="preparing-postgresql-for-codacy">Preparing PostgreSQL for Codacy<a class="headerlink" href="#preparing-postgresql-for-codacy" title="Permanent link">&para;</a></h3>
 <p>Before installing Codacy you must create a set of databases that will be used by Codacy to persist data. We also recommend that you create a dedicated user for Codacy, with access permissions only to the databases that are specific to Codacy:</p>
 <ol>
 <li>
