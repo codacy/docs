@@ -16,6 +16,8 @@ jobs:
           EXCLUDE: |
             gitlab\.com\/profile\/applications
             github\.com\/settings\/tokens
+            github\.com\/codacy\/docs\/issues
+            en\.gravatar\.com
         run: |
           docker run raviqqe/muffet --follow-sitemap-xml --timeout=30 --buffer-size=8192 --skip-tls-verification --exclude=$( echo ${EXCLUDE} | tr ' ' '|' ) ${{ env.INPUT_URL }} > ${{ env.OUTPUT_FILE }}
 
