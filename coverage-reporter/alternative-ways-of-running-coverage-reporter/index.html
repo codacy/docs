@@ -619,6 +619,18 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
+  <a href="#manually-downloading-the-binary" class="md-nav__link">
+    Manually downloading the binary
+  </a>
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#building-from-source" class="md-nav__link">
+    Building from source
+  </a>
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
   <a href="#circleci-orb" class="md-nav__link">
     CircleCI orb
   </a>
@@ -633,24 +645,6 @@
         <li class="md-nav__item md-nav__item--toc">
   <a href="#community-supported-alternatives" class="md-nav__link">
     Community supported alternatives
-  </a>
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#manually-downloading-the-native-linux-amd64-binary" class="md-nav__link">
-    Manually downloading the native Linux amd64 binary
-  </a>
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#manually-downloading-the-java-binary" class="md-nav__link">
-    Manually downloading the Java binary
-  </a>
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#building-from-source" class="md-nav__link">
-    Building from source
   </a>
 </li>
       
@@ -2710,14 +2704,24 @@
                 
                 
                 <h1 id="alternative-ways-of-running-coverage-reporter">Alternative ways of running Coverage Reporter<a class="headerlink" href="#alternative-ways-of-running-coverage-reporter" title="Permanent link">&para;</a></h1>
-<p>The recommended way to run Codacy Coverage Reporter is using a self-contained script that automatically downloads and runs the most recent version of Codacy Coverage Reporter.</p>
+<p>The recommended way to run Codacy Coverage Reporter is using a self-contained script that automatically downloads and runs the most recent version of Codacy Coverage Reporter:</p>
+<ul>
+<li>
 <p>On Ubuntu, run:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span>
 </code></pre></div>
+</li>
+<li>
 <p>On Alpine Linux, run:</p>
 <div class="highlight"><pre><span></span><code>wget -qO - https://coverage.codacy.com/get.sh <span class="p">|</span> sh
 </code></pre></div>
-<p>The self-contained script is able to cache the binary. To avoid downloading the binary every time that the script runs, add one of the following directories to your CI cached folders:</p>
+</li>
+</ul>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>If you're using macOS Big Sur</strong> you must <a href="#java">use the Java binary</a> to run Codacy Coverage Reporter. For more details, see the issue <a href="https://github.com/codacy/codacy-coverage-reporter/issues/276">#276</a>.</p>
+</div>
+<p>The self-contained script can cache the binary. To avoid downloading the binary every time that the script runs, add one of the following directories to your CI cached folders:</p>
 <ul>
 <li><code>$HOME/.cache/codacy</code> on Linux</li>
 <li><code>$HOME/Library/Caches/Codacy</code> on Mac OS X</li>
@@ -2726,6 +2730,66 @@
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_REPORTER_VERSION</span><span class="o">=</span>&lt;version&gt;
 </code></pre></div>
 <p>The sections below provide details on alternative ways to run or install Codacy Coverage Reporter.</p>
+<h2 id="manually-downloading-the-binary">Manually downloading the binary<a class="headerlink" href="#manually-downloading-the-binary" title="Permanent link">&para;</a></h2>
+<h3 id="linux-amd64">Linux amd64<a class="headerlink" href="#linux-amd64" title="Permanent link">&para;</a></h3>
+<p>If you prefer, you can manually download and run the native <code>codacy-coverage-reporter</code> binary, either for the latest version or a specific one.</p>
+<p>You can use the scripts below to automatically check for the latest version of the binaries, download the binaries from either Bintray or GitHub, and run them.</p>
+<ul>
+<li>
+<p>Using Bintray:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">LATEST_VERSION</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>curl -Ls https://api.bintray.com/packages/codacy/Binaries/codacy-coverage-reporter/versions/_latest <span class="p">|</span> jq -r .name<span class="k">)</span><span class="s2">&quot;</span>
+curl -Ls -o codacy-coverage-reporter <span class="s2">&quot;https://dl.bintray.com/codacy/Binaries/</span><span class="si">${</span><span class="nv">LATEST_VERSION</span><span class="si">}</span><span class="s2">/codacy-coverage-reporter-linux&quot;</span>
+chmod +x codacy-coverage-reporter
+./codacy-coverage-reporter report
+</code></pre></div>
+</li>
+<li>
+<p>Using GitHub:</p>
+<div class="highlight"><pre><span></span><code>curl -Ls -o codacy-coverage-reporter <span class="s2">&quot;</span><span class="k">$(</span>curl -Ls https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest <span class="p">|</span> jq -r <span class="s1">&#39;.assets | map({name, browser_download_url} | select(.name | contains(&quot;codacy-coverage-reporter-linux&quot;))) | .[0].browser_download_url&#39;</span><span class="k">)</span><span class="s2">&quot;</span>
+chmod +x codacy-coverage-reporter
+./codacy-coverage-reporter report
+</code></pre></div>
+</li>
+</ul>
+<h3 id="java">Java<a class="headerlink" href="#java" title="Permanent link">&para;</a></h3>
+<p>Use the Java binary to run Codacy Coverage reporter on other platforms, such as Linux x86, macOS, Windows, etc.</p>
+<p>You can use the scripts below to automatically check for the latest version of the Java binaries, download the binaries from either Bintray or GitHub, and run them.</p>
+<ul>
+<li>
+<p>Using Bintray:</p>
+<div class="highlight"><pre><span></span><code><span class="nv">LATEST_VERSION</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>curl -Ls https://api.bintray.com/packages/codacy/Binaries/codacy-coverage-reporter/versions/_latest <span class="p">|</span> jq -r .name<span class="k">)</span><span class="s2">&quot;</span>
+curl -Ls -o codacy-coverage-reporter-assembly.jar <span class="s2">&quot;https://dl.bintray.com/codacy/Binaries/</span><span class="si">${</span><span class="nv">LATEST_VERSION</span><span class="si">}</span><span class="s2">/codacy-coverage-reporter-assembly.jar&quot;</span>
+java -jar codacy-coverage-reporter-assembly.jar report
+</code></pre></div>
+</li>
+<li>
+<p>Using GitHub:</p>
+<div class="highlight"><pre><span></span><code>curl -LS -o codacy-coverage-reporter-assembly.jar <span class="s2">&quot;</span><span class="k">$(</span>curl -LSs https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest <span class="p">|</span> jq -r <span class="s1">&#39;.assets | map({name, browser_download_url} | select(.name | endswith(&quot;.jar&quot;))) | .[0].browser_download_url&#39;</span><span class="k">)</span><span class="s2">&quot;</span>
+java -jar codacy-coverage-reporter-assembly.jar report
+</code></pre></div>
+</li>
+</ul>
+<h2 id="building-from-source">Building from source<a class="headerlink" href="#building-from-source" title="Permanent link">&para;</a></h2>
+<p>If you are having any issues with your installation, you can also build the coverage reporter from source.</p>
+<ol>
+<li>
+<p>Clone the Codacy Coverage Reporter repository:</p>
+<div class="highlight"><pre><span></span><code>git clone https://github.com/codacy/codacy-coverage-reporter.git
+</code></pre></div>
+</li>
+<li>
+<p>Run the command <code>sbt assembly</code> inside the local repository folder:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">cd</span> codacy-coverage-reporter
+sbt assembly
+</code></pre></div>
+<p>This will produce a file <code>target/codacy-coverage-reporter-assembly-&lt;version&gt;.jar</code> that you can run.</p>
+</li>
+<li>
+<p>Execute this <code>.jar</code> in the repository where you want to upload the coverage. For example:</p>
+<div class="highlight"><pre><span></span><code>&lt;path&gt;/java-project$ java -jar ../codacy-coverage-reporter/target/codacy-coverage-reporter-assembly-&lt;version&gt;.jar report
+</code></pre></div>
+</li>
+</ol>
 <h2 id="circleci-orb">CircleCI orb<a class="headerlink" href="#circleci-orb" title="Permanent link">&para;</a></h2>
 <p>If you are using CircleCI to report coverage, you can use our orb <a href="https://circleci.com/orbs/registry/orb/codacy/coverage-reporter">codacy/coverage-reporter</a>.</p>
 <h2 id="github-action">GitHub Action<a class="headerlink" href="#github-action" title="Permanent link">&para;</a></h2>
@@ -2795,53 +2859,6 @@ task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
     ]
 }
 </code></pre></div>
-<h2 id="manually-downloading-the-native-linux-amd64-binary">Manually downloading the native Linux amd64 binary<a class="headerlink" href="#manually-downloading-the-native-linux-amd64-binary" title="Permanent link">&para;</a></h2>
-<p>If you prefer, you can manually download and run the native <code>codacy-coverage-reporter</code> binary, either for the latest version or a specific one.</p>
-<p>You can use the scripts below to automatically check for the latest version of the binaries, download the binaries from either Bintray or GitHub, and run them.</p>
-<p>Using Bintray:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">LATEST_VERSION</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>curl -Ls https://api.bintray.com/packages/codacy/Binaries/codacy-coverage-reporter/versions/_latest <span class="p">|</span> jq -r .name<span class="k">)</span><span class="s2">&quot;</span>
-curl -Ls -o codacy-coverage-reporter <span class="s2">&quot;https://dl.bintray.com/codacy/Binaries/</span><span class="si">${</span><span class="nv">LATEST_VERSION</span><span class="si">}</span><span class="s2">/codacy-coverage-reporter-linux&quot;</span>
-chmod +x codacy-coverage-reporter
-./codacy-coverage-reporter report
-</code></pre></div>
-<p>Using GitHub:</p>
-<div class="highlight"><pre><span></span><code>curl -Ls -o codacy-coverage-reporter <span class="s2">&quot;</span><span class="k">$(</span>curl -Ls https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest <span class="p">|</span> jq -r <span class="s1">&#39;.assets | map({name, browser_download_url} | select(.name | contains(&quot;codacy-coverage-reporter-linux&quot;))) | .[0].browser_download_url&#39;</span><span class="k">)</span><span class="s2">&quot;</span>
-chmod +x codacy-coverage-reporter
-./codacy-coverage-reporter report
-</code></pre></div>
-<h2 id="manually-downloading-the-java-binary">Manually downloading the Java binary<a class="headerlink" href="#manually-downloading-the-java-binary" title="Permanent link">&para;</a></h2>
-<p>Use the Java binary to run Codacy Coverage reporter on other platforms, such as Linux x86, MacOS, Windows, etc.</p>
-<p>You can use the scripts below to automatically check for the latest version of the Java binaries, download the binaries from either Bintray or GitHub, and run them.</p>
-<p>Using Bintray:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">LATEST_VERSION</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>curl -Ls https://api.bintray.com/packages/codacy/Binaries/codacy-coverage-reporter/versions/_latest <span class="p">|</span> jq -r .name<span class="k">)</span><span class="s2">&quot;</span>
-curl -Ls -o codacy-coverage-reporter-assembly.jar <span class="s2">&quot;https://dl.bintray.com/codacy/Binaries/</span><span class="si">${</span><span class="nv">LATEST_VERSION</span><span class="si">}</span><span class="s2">/codacy-coverage-reporter-assembly.jar&quot;</span>
-java -jar codacy-coverage-reporter-assembly.jar report
-</code></pre></div>
-<p>Using GitHub:</p>
-<div class="highlight"><pre><span></span><code>curl -LS -o codacy-coverage-reporter-assembly.jar <span class="s2">&quot;</span><span class="k">$(</span>curl -LSs https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest <span class="p">|</span> jq -r <span class="s1">&#39;.assets | map({name, browser_download_url} | select(.name | endswith(&quot;.jar&quot;))) | .[0].browser_download_url&#39;</span><span class="k">)</span><span class="s2">&quot;</span>
-java -jar codacy-coverage-reporter-assembly.jar report
-</code></pre></div>
-<h2 id="building-from-source">Building from source<a class="headerlink" href="#building-from-source" title="Permanent link">&para;</a></h2>
-<p>If you are having any issues with your installation, you can also build the coverage reporter from source.</p>
-<ol>
-<li>
-<p>Clone the Codacy Coverage Reporter repository:</p>
-<div class="highlight"><pre><span></span><code>git clone https://github.com/codacy/codacy-coverage-reporter.git
-</code></pre></div>
-</li>
-<li>
-<p>Run the command <code>sbt assembly</code> inside the local repository folder:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">cd</span> codacy-coverage-reporter
-sbt assembly
-</code></pre></div>
-<p>This will produce a file <code>target/codacy-coverage-reporter-assembly-&lt;version&gt;.jar</code> that you can run.</p>
-</li>
-<li>
-<p>Execute this <code>.jar</code> in the repository where you want to upload the coverage. For example:</p>
-<div class="highlight"><pre><span></span><code>&lt;path&gt;/java-project$ java -jar ../codacy-coverage-reporter/target/codacy-coverage-reporter-assembly-&lt;version&gt;.jar report
-</code></pre></div>
-</li>
-</ol>
               
               
                 
@@ -2910,7 +2927,7 @@ sbt assembly
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 1, 2020</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 6, 2021</span>
     
   </small>
 </div>

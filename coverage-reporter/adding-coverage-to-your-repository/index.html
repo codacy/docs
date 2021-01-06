@@ -2753,7 +2753,11 @@
 <p>The recommended way to do this is using a self-contained script that automatically downloads and runs the most recent version of Codacy Coverage Reporter:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report
 </code></pre></div>
-<p>See <a href="../alternative-ways-of-running-coverage-reporter/">alternative ways of running Codacy Coverage Reporter</a> for other ways of running Codacy Coverage Reporter, such as when using Circle CI or GitHub actions, or to install the binary manually.</p>
+<p>See <a href="../alternative-ways-of-running-coverage-reporter/">alternative ways of running Codacy Coverage Reporter</a> for other ways of running Codacy Coverage Reporter, such as by installing the binary manually or using a CircleCI Orb or GitHub Action.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>If you're using macOS Big Sur</strong> you must <a href="../alternative-ways-of-running-coverage-reporter/#java">use the Java binary</a> to run Codacy Coverage Reporter. For more details, see the issue <a href="https://github.com/codacy/codacy-coverage-reporter/issues/276">#276</a>.</p>
+</div>
 </li>
 <li>
 <p>Optionally, <a href="https://docs.codacy.com/repositories/badges/">add a Codacy badge</a> to the README of your repository to display the current code coverage.</p>
@@ -2882,7 +2886,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2020</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 6, 2021</span>
     
   </small>
 </div>
