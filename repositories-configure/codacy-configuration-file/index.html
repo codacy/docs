@@ -646,8 +646,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#validating-your-configuration-file" class="md-nav__link">
-    Validating your configuration file
+  <a href="#syntax-for-excluding-files" class="md-nav__link">
+    Syntax for excluding files
   </a>
 </li>
       
@@ -2684,21 +2684,43 @@
                 
                 
                 <h1 id="codacy-configuration-file">Codacy configuration file<a class="headerlink" href="#codacy-configuration-file" title="Permanent link">&para;</a></h1>
-<p>Codacy supports configuring certain advanced features through a configuration file.</p>
-<p>You can exclude files using glob patterns and add custom extensions to languages.</p>
-<p>You can ignore files globally, for certain categories (duplication or metrics) or for a specific tool (e.g.: Rubocop). The category metrics refers to the information you find under <a href="../../repositories/files-view/">File details</a> such as Size, Structure and Complexity.</p>
-<p>To add custom extensions to a language you can also add an entry in this file, but keep in mind that some tools might not work out of the box with those extensions and might need changes.</p>
-<p>If you want to disable a tool, you must do it directly on the <a href="../code-patterns/">Code Patterns</a> page.</p>
-<p>The configuration file name must be <strong>".codacy.yaml"</strong> or <strong>".codacy.yml"</strong> and should be placed in the root of your repository.</p>
+<p>Codacy supports configuring certain advanced features through a configuration file:</p>
+<ul>
+<li>
+<p>Ignoring files globally, for certain categories (duplication or metrics) or for a specific tool</p>
+<p>The category metrics refers to the information you find under <a href="../../repositories/files-view/">File details</a> such as Size, Structure and Complexity.</p>
+</li>
+<li>
+<p>Configuring a specific repository directory on which to start the analysis</p>
+</li>
+<li>
+<p>Adding custom extensions to languages, keeping in mind that some tools might not work out of the box with those extensions</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>If a Codacy configuration file exists in your repository, the <a href="../ignore-files-from-codacy-analysis/">Ignored Files</a> settings in the Codacy UI don't apply.</li>
+<li>To disable a tool you must use the <a href="../code-patterns/">Code Patterns</a> page instead.</li>
+</ul>
+</div>
+<p>To use a Codacy configuration file:</p>
+<ol>
+<li>
+<p>Create a text file with the name <code>.codacy.yml</code> or <code>.codacy.yaml</code> on the root of your repository. </p>
+</li>
+<li>
+<p>Add your settings to the configuration file based on the example template below.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>The configuration file must start with a line containing <code>---</code>.</p>
+<p>The configuration file must start with a line containing a triple dash (<code>---</code>).</p>
 </div>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">engines</span><span class="p">:</span>
   <span class="nt">rubocop</span><span class="p">:</span>
     <span class="nt">exclude_paths</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">config/engines.yml</span>
+    <span class="nt">base_sub_dir</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">test/baseDir</span>
   <span class="nt">duplication</span><span class="p">:</span>
     <span class="nt">exclude_paths</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">config/engines.yml</span>
@@ -2716,21 +2738,48 @@
   <span class="p p-Indicator">-</span> <span class="s">&#39;**.min.js&#39;</span>
   <span class="p p-Indicator">-</span> <span class="s">&#39;**/tests/**&#39;</span>
 </code></pre></div>
-<p>You must use the following <a href="https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29">Java glob syntax</a> to configure your 'exclude_paths' to ignore files:</p>
-<ul>
-<li>'**.extension' ignores all files with the same extension across all your repository</li>
-<li>'test/*' ignores all files in the root of test </li>
-<li>'test/**' ignores everything inside test </li>
-<li>'test/**/*' ignores all files inside sub-folder of test </li>
-<li>'**/*.resource' ignores all .resource in all folders and sub-folders</li>
-</ul>
-<p>Please note that if the configuration file exists in your repository, any 'exclude paths' <a href="../ignore-files-from-codacy-analysis/">defined on Codacy's UI</a> will not apply.</p>
-<h2 id="validating-your-configuration-file">Validating your configuration file<a class="headerlink" href="#validating-your-configuration-file" title="Permanent link">&para;</a></h2>
-<p>You can use the <a href="https://github.com/codacy/codacy-analysis-cli#install">codacy-analysis-cli</a> to validate the contents of your configuration file. Run the following command in the folder where the configuration file is located:</p>
+</li>
+<li>
+<p>Optionally, validate the syntax of your configuration file with the <a href="https://github.com/codacy/codacy-analysis-cli#install">Codacy Analysis CLI</a> by running the following command in the same folder as the Codacy configuration file:</p>
 <div class="highlight"><pre><span></span><code>codacy-analysis-cli validate-configuration --directory <span class="sb">`</span><span class="nb">pwd</span><span class="sb">`</span>
 </code></pre></div>
+</li>
+</ol>
+<h2 id="syntax-for-excluding-files">Syntax for excluding files<a class="headerlink" href="#syntax-for-excluding-files" title="Permanent link">&para;</a></h2>
+<p>To ignore files, you must use the following <a href="https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29">Java glob syntax</a> to define one or more <code>exclude_paths</code> patterns:</p>
+<table>
+<thead>
+<tr>
+<th>Pattern</th>
+<th>Ignored files</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>\*\*.extension</code></td>
+<td>All files with the same extension across all your repository</td>
+</tr>
+<tr>
+<td><code>test/\*</code></td>
+<td>All files in the root of test</td>
+</tr>
+<tr>
+<td><code>test/\*\*</code></td>
+<td>All files and directories inside test</td>
+</tr>
+<tr>
+<td><code>test/\*\*/\*</code></td>
+<td>All files inside sub-directories of test</td>
+</tr>
+<tr>
+<td><code>\*\*/\*.resource</code></td>
+<td>All .resource files in all directories and sub-directories</td>
+</tr>
+</tbody>
+</table>
 <h2 id="which-tools-can-be-configured-and-which-name-should-i-use">Which tools can be configured and which name should I use?<a class="headerlink" href="#which-tools-can-be-configured-and-which-name-should-i-use" title="Permanent link">&para;</a></h2>
-<p>All tools that Codacy supports are configurable using our configuration file. The names that should be used for each of them are:</p>
+<p>You can configure all tools supported by Codacy using the configuration file.</p>
+<p>The following are the tool names that must be used in the Codacy configuration file:</p>
 <div class="highlight"><pre><span></span><code>ameba
 bandit
 brakeman
@@ -2844,7 +2893,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 23, 2020</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 7, 2021</span>
     
   </small>
 </div>

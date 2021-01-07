@@ -651,12 +651,6 @@
   </a>
 </li>
       
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#configuring-the-repository-root-directory-for-analysis" class="md-nav__link">
-    Configuring the repository root directory for analysis
-  </a>
-</li>
-      
     </ul>
   
 </nav>
@@ -2950,24 +2944,6 @@
 <p class="admonition-title">Note</p>
 <p>For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.</p>
 </div>
-<h2 id="configuring-the-repository-root-directory-for-analysis">Configuring the repository root directory for analysis<a class="headerlink" href="#configuring-the-repository-root-directory-for-analysis" title="Permanent link">&para;</a></h2>
-<p>By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a <a href="../codacy-configuration-file/">Codacy configuration file</a>. This file must be named <strong>".codacy.yaml"</strong> or <strong>".codacy.yml"</strong> and must be placed in the repository's root.</p>
-<p>See the example below:</p>
-<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
-2
-3
-4
-5
-6
-7</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code>---
-engines:
- rubocop:
- enabled: true
- exclude_paths:
- - config/engines.yml
- base_sub_dir: test/baseDir
-</code></pre></div>
-</td></tr></table>
               
               
                 
