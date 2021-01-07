@@ -11,7 +11,7 @@ Codacy supports configuring certain advanced features through a configuration fi
 -   Adding custom extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
 
 !!! note
-    -   If a Codacy configuration file exists in your repository, the [Ignored Files](ignore-files-from-codacy-analysis.md) settings in the Codacy UI don't apply.
+    -   If a Codacy configuration file exists in your repository, the [Ignored Files](ignoring-files.md) settings in the Codacy UI don't apply.
     -   To disable a tool you must use the [Code Patterns](code-patterns.md) page instead.
 
 To use a Codacy configuration file:
