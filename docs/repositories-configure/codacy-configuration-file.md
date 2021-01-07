@@ -1,65 +1,76 @@
 # Codacy configuration file
 
-Codacy supports configuring certain advanced features through a configuration file.
+Codacy supports configuring certain advanced features through a configuration file:
 
-You can exclude files using glob patterns and add custom extensions to languages.
+-   Ignoring files globally, for certain categories (duplication or metrics) or for a specific tool
 
-You can ignore files globally, for certain categories (duplication or metrics) or for a specific tool (e.g.: Rubocop). The category metrics refers to the information you find under [File details](../repositories/files-view.md) such as Size, Structure and Complexity.
+    The category metrics refers to the information you find under [File details](../repositories/files-view.md) such as Size, Structure and Complexity.
 
-To add custom extensions to a language you can also add an entry in this file, but keep in mind that some tools might not work out of the box with those extensions and might need changes.
+-   Configuring a specific repository directory on which to start the analysis
 
-If you want to disable a tool, you must do it directly on the [Code Patterns](code-patterns.md) page.
+-   Adding custom extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
 
-The configuration file name must be **".codacy.yaml"** or **".codacy.yml"** and should be placed in the root of your repository.
+!!! note
+    -   If a Codacy configuration file exists in your repository, the [Ignored Files](ignore-files-from-codacy-analysis.md) settings in the Codacy UI don't apply.
+    -   To disable a tool you must use the [Code Patterns](code-patterns.md) page instead.
 
-!!! important
-    The configuration file must start with a line containing `---`.
+To use a Codacy configuration file:
 
-```yaml
----
-engines:
-  rubocop:
+1.  Create a text file with the name `.codacy.yml` or `.codacy.yaml` on the root of your repository. 
+
+1.  Add your settings to the configuration file based on the example template below.
+
+    !!! important
+        The configuration file must start with a line containing a triple dash (`---`).
+
+    ```yaml
+    ---
+    engines:
+      rubocop:
+        exclude_paths:
+          - config/engines.yml
+        base_sub_dir: test/baseDir
+      duplication:
+        exclude_paths:
+          - config/engines.yml
+      metric:
+        exclude_paths:
+          - config/engines.yml
+    languages:
+      css:
+        extensions:
+          - '-css.resource'
     exclude_paths:
-      - config/engines.yml
-  duplication:
-    exclude_paths:
-      - config/engines.yml
-  metric:
-    exclude_paths:
-      - config/engines.yml
-languages:
-  css:
-    extensions:
-      - '-css.resource'
-exclude_paths:
-  - '.bundle/**'
-  - 'spec/**/*'
-  - 'benchmarks/**/*'
-  - '**.min.js'
-  - '**/tests/**'
-```
+      - '.bundle/**'
+      - 'spec/**/*'
+      - 'benchmarks/**/*'
+      - '**.min.js'
+      - '**/tests/**'
+    ```
 
-You must use the following [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29) to configure your 'exclude_paths' to ignore files:
+1.  Optionally, validate the syntax of your configuration file with the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#install) by running the following command in the same folder as the Codacy configuration file:
 
--   '\*\*.extension' ignores all files with the same extension across all your repository
--   'test/\*' ignores all files in the root of test 
--   'test/\*\*' ignores everything inside test 
--   'test/\*\*/\*' ignores all files inside sub-folder of test 
--   '\*\*/\*.resource' ignores all .resource in all folders and sub-folders
+    ```bash
+    codacy-analysis-cli validate-configuration --directory `pwd`
+    ```
 
-Please note that if the configuration file exists in your repository, any 'exclude paths' [defined on Codacy's UI](ignore-files-from-codacy-analysis.md) will not apply.
+## Syntax for excluding files
 
-## Validating your configuration file
+To ignore files, you must use the following [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29) to define one or more `exclude_paths` patterns:
 
-You can use the [codacy-analysis-cli](https://github.com/codacy/codacy-analysis-cli#install) to validate the contents of your configuration file. Run the following command in the folder where the configuration file is located:
-
-```bash
-codacy-analysis-cli validate-configuration --directory `pwd`
-```
+| Pattern            | Ignored files                                                |
+| ------------------ | ------------------------------------------------------------ |
+| `\*\*.extension`   | All files with the same extension across all your repository |
+| `test/\*`          | All files in the root of test                                |
+| `test/\*\*`        | All files and directories inside test                        |
+| `test/\*\*/\*`     | All files inside sub-directories of test                     |
+| `\*\*/\*.resource` | All .resource files in all directories and sub-directories   |
 
 ## Which tools can be configured and which name should I use?
 
-All tools that Codacy supports are configurable using our configuration file. The names that should be used for each of them are:
+You can configure all tools supported by Codacy using the configuration file.
+
+The following are the tool names that must be used in the Codacy configuration file:
 
 ```text
 ameba
