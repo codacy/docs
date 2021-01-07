@@ -39,7 +39,7 @@ After that, you can continue to explore and configure Codacy for your repository
 
 -   [Check the static analysis results](../repositories/issues-view.md) on the Issues page
 -   [Configure the code patterns](../repositories-configure/code-patterns.md) that Codacy uses to analyze your repository
--   [Ignore files](../repositories-configure/ignore-files-from-codacy-analysis.md) that you want to exclude from the Codacy analysis
+-   [Ignore files](../repositories-configure/ignoring-files.md) that you want to exclude from the Codacy analysis
 -   [Configure your quality settings](../repositories/quality-settings.md) for pull requests
 -   [Add coverage reports to Codacy](../coverage-reporter/adding-coverage-to-your-repository.md)
 -   [Add a Codacy badge to your repository](../repositories/badges.md) displaying the current code quality grade or code coverage

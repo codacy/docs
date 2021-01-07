@@ -12,7 +12,7 @@ While this page should display all the files in your repository, here is a list 
 
 -   **The file might have been ignored**
 
-    The **Files** page doesn't display [ignored files](../../repositories-configure/ignore-files-from-codacy-analysis.md) that aren't meant to be analyzed.
+    The **Files** page doesn't display [ignored files](../../repositories-configure/ignoring-files.md) that aren't meant to be analyzed.
 
 -   **The file has an extension that is not on the list of supported extensions**
 
