@@ -255,19 +255,3 @@ The known file names for each tool are the following:
 
 !!! note
     For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
-
-## Configuring the repository root directory for analysis
-
-<!-- TODO Refactor / move this section somewhere else -->
-
-By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a [Codacy configuration file](codacy-configuration-file.md). This file must be named **".codacy.yaml"** or **".codacy.yml"** and must be placed in the repository's root.
-
-See the example below:
-
-    ---
-    engines:
-     rubocop:
-     enabled: true
-     exclude_paths:
-     - config/engines.yml
-     base_sub_dir: test/baseDir
