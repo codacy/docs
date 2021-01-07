@@ -83,43 +83,43 @@ The known file names for each tool are the following:
 <td>Ameba</td>
 <td>Crystal</td>
 <td>.ameba.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
 <td>Python</td>
-<td>bandit.yml, .bandit </td>
+<td>bandit.yml, .bandit</td>
 <td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repository containing: <code>skips: \['B101'\]</code></td>
 </tr>
 <tr>
 <td>Brakeman</td>
 <td>Ruby</td>
 <td>config/brakeman.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Checkstyle</td>
 <td>Java</td>
-<td>checkstyle.xml </td>
+<td>checkstyle.xml</td>
 <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td>CodeNarc</td>
 <td>Groovy</td>
 <td>.codenarcrc</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Credo</td>
 <td>Elixir</td>
 <td>.credo.exs</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>CSSLint</td>
 <td>CSS</td>
 <td>.csslintrc</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Detekt</td>
@@ -137,27 +137,27 @@ The known file names for each tool are the following:
 </tr>
 <tr>
 <td>Hadolint</td>
-<td>Docker </td>
+<td>Docker</td>
 <td>.hadolint.yaml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>JSHint</td>
-<td>JavaScript </td>
+<td>JavaScript</td>
 <td>.jshintrc</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP CodeSniffer</a></td>
 <td>PHP</td>
 <td>phpcs.xml, phpcs.xml.dist</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>PHPMD</td>
 <td>PHP</td>
 <td>codesize.xml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>PMD</td>
@@ -170,43 +170,43 @@ The known file names for each tool are the following:
 <td>Python</td>
 <td>.landscape.yml, .landscape.yaml, landscape.yml, landscape.yaml,<br />
 .prospector.yml, .prospector.yaml, prospector.yml, prospector.yaml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Pylint</td>
 <td>Python</td>
-<td>pylintrc, .pylintrc </td>
-<td><a href="https://github.com/codacy/codacy-pylint/blob/master/requirements.txt">Plugins</a> </td>
+<td>pylintrc, .pylintrc</td>
+<td><a href="https://github.com/codacy/codacy-pylint/blob/master/requirements.txt">Plugins</a></td>
 </tr>
 <tr>
 <td>RemarkLint</td>
 <td>Markdown</td>
 <td>.remarkrc, .remarkrc.json, .remarkrc.yaml, .remarkrc.yml, .remarkrc.js</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Rubocop</td>
-<td>Ruby </td>
+<td>Ruby</td>
 <td>.rubocop.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Scalastyle</td>
-<td>Scala </td>
+<td>Scala</td>
 <td>scalastyle_config.xml, scalastyle-config.xml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>SCSSLint</td>
-<td>SASS </td>
+<td>SASS</td>
 <td>.scss-lint.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Sonar C#</td>
 <td>C#</td>
 <td>SonarLint.xml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>SpotBugs</td>
@@ -224,31 +224,31 @@ The known file names for each tool are the following:
 <td>SwiftLint</td>
 <td>Swift</td>
 <td>.swiftlint.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Tailor</td>
 <td>Swift</td>
 <td> .tailor.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>TSLint</td>
 <td>TypeScript</td>
 <td>tslint.json</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>tsqllint</td>
 <td>SQL</td>
 <td>.tsqllintrc</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Revive</td>
 <td>Go</td>
 <td>revive.toml</td>
-<td> </td>
+<td></td>
 </tr>
 </tbody>
 </table>
