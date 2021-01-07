@@ -5,7 +5,7 @@ site_url: "https://docs.codacy.com/"
 site_author: "support@codacy.com"
 
 # Copyright
-copyright: "© 2020 <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
+copyright: "© <script>document.write(new Date().getFullYear())</script> <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
 
 # Configuration
 theme:
