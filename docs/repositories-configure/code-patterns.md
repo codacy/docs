@@ -4,15 +4,13 @@ By default, Codacy uses a subset of the patterns that exist for each tool to ana
 
 However, you can create a coding standard adapted to your scenario by configuring the tool patterns that Codacy uses to analyze each repository:
 
-1.  Open your repository **Code patterns** page.
-
-1.  Select the tool to configure.
+1.  Open your repository **Code patterns** page and select the tool to configure:
 
     ![Configuring code patterns](images/code-pattern-configure.png)
 
-1.  Click the checkboxes to the left of the pattern names to enable or disable the patterns.
+1.  Enable or disable the patterns using the checkbox for each pattern.
 
-    To see a detailed explanation about the issues that a pattern can detect and how to fix them, click on **Details** on the top right-hand corner of the pattern:
+    To see a detailed explanation about the issues that a pattern can detect and how to fix them, click **Details** on the top right-hand corner of the pattern. Some patterns also allow you to configure the rules:
 
     ![Code pattern details](images/code-pattern-detail.png)
 
@@ -59,16 +57,17 @@ To reset the pattern configuration of a tool back to the default provided by Cod
 
 1.  Select **Set default** on the same menu to reset the default configuration.
 
-## I have my own tool configuration file
+## Using your own tool configuration files
 
-<!-- TODO Refactor and improve this section.
-          Consider including the configuration file names reference somewhere else (see https://github.com/codacy/docs/issues/43) -->
+<!-- TODO Consider including the configuration file names reference somewhere else (see https://github.com/codacy/docs/issues/43) -->
 
-If you have configuration files for your static analysis tool of choice, add it to the root of your repository and Codacy will pick it up automatically.
+Codacy supports configuration files for several tools. To use a configuration file for your static analysis tool:
 
-Codacy supports configuration files for several tools. To have results according to your configuration file, you need to go to the Code Patterns view, select **Configuration file** for the respective tool, and select the option as shown in the example below.
+1.  Add the configuration file to the root of your repository.
 
-![Using a configuration file](images/code-pattern-config-file.png)
+1.  Open your repository **Code patterns** page and select **Configuration file** for the respective tool:
+
+    ![Using a configuration file](images/code-pattern-config-file.png)
 
 The known file names for each tool are the following:
 
@@ -84,43 +83,43 @@ The known file names for each tool are the following:
 <td>Ameba</td>
 <td>Crystal</td>
 <td>.ameba.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
 <td>Python</td>
-<td>bandit.yml, .bandit </td>
-<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repository containing: skips: \['B101'\]</td>
+<td>bandit.yml, .bandit</td>
+<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repository containing: <code>skips: \['B101'\]</code></td>
 </tr>
 <tr>
 <td>Brakeman</td>
 <td>Ruby</td>
 <td>config/brakeman.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Checkstyle</td>
 <td>Java</td>
-<td>checkstyle.xml </td>
+<td>checkstyle.xml</td>
 <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td>CodeNarc</td>
 <td>Groovy</td>
 <td>.codenarcrc</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Credo</td>
 <td>Elixir</td>
 <td>.credo.exs</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>CSSLint</td>
 <td>CSS</td>
 <td>.csslintrc</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Detekt</td>
@@ -138,27 +137,27 @@ The known file names for each tool are the following:
 </tr>
 <tr>
 <td>Hadolint</td>
-<td>Docker </td>
+<td>Docker</td>
 <td>.hadolint.yaml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>JSHint</td>
-<td>JavaScript </td>
+<td>JavaScript</td>
 <td>.jshintrc</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP CodeSniffer</a></td>
 <td>PHP</td>
 <td>phpcs.xml, phpcs.xml.dist</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>PHPMD</td>
 <td>PHP</td>
 <td>codesize.xml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>PMD</td>
@@ -171,43 +170,43 @@ The known file names for each tool are the following:
 <td>Python</td>
 <td>.landscape.yml, .landscape.yaml, landscape.yml, landscape.yaml,<br />
 .prospector.yml, .prospector.yaml, prospector.yml, prospector.yaml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Pylint</td>
 <td>Python</td>
-<td>pylintrc, .pylintrc </td>
-<td><a href="https://github.com/codacy/codacy-pylint/blob/master/requirements.txt">Plugins</a> </td>
+<td>pylintrc, .pylintrc</td>
+<td><a href="https://github.com/codacy/codacy-pylint/blob/master/requirements.txt">Plugins</a></td>
 </tr>
 <tr>
 <td>RemarkLint</td>
 <td>Markdown</td>
 <td>.remarkrc, .remarkrc.json, .remarkrc.yaml, .remarkrc.yml, .remarkrc.js</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Rubocop</td>
-<td>Ruby </td>
+<td>Ruby</td>
 <td>.rubocop.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Scalastyle</td>
-<td>Scala </td>
+<td>Scala</td>
 <td>scalastyle_config.xml, scalastyle-config.xml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>SCSSLint</td>
-<td>SASS </td>
+<td>SASS</td>
 <td>.scss-lint.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Sonar C#</td>
 <td>C#</td>
 <td>SonarLint.xml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>SpotBugs</td>
@@ -225,36 +224,37 @@ The known file names for each tool are the following:
 <td>SwiftLint</td>
 <td>Swift</td>
 <td>.swiftlint.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Tailor</td>
 <td>Swift</td>
 <td> .tailor.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>TSLint</td>
 <td>TypeScript</td>
 <td>tslint.json</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>tsqllint</td>
 <td>SQL</td>
 <td>.tsqllintrc</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Revive</td>
 <td>Go</td>
 <td>revive.toml</td>
-<td> </td>
+<td></td>
 </tr>
 </tbody>
 </table>
 
-For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
+!!! note
+    For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
 
 ## Configuring the repository root directory for analysis
 
