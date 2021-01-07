@@ -32,10 +32,12 @@ strict: true
 extra:
     version: "3.1.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
+    user_feedback: "true"
 
 # Repository
-# repo_name: "codacy/docs"
-# repo_url: "https://github.com/codacy/docs"
+repo_name: "codacy/docs"
+repo_url: "https://github.com/codacy/docs"
+edit_uri: "" # Hide the edit button
 
 # Extensions
 markdown_extensions:
