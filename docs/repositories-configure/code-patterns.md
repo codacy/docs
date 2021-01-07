@@ -57,16 +57,17 @@ To reset the pattern configuration of a tool back to the default provided by Cod
 
 1.  Select **Set default** on the same menu to reset the default configuration.
 
-## I have my own tool configuration file
+## Using your own tool configuration files
 
-<!-- TODO Refactor and improve this section.
-          Consider including the configuration file names reference somewhere else (see https://github.com/codacy/docs/issues/43) -->
+<!-- TODO Consider including the configuration file names reference somewhere else (see https://github.com/codacy/docs/issues/43) -->
 
-If you have configuration files for your static analysis tool of choice, add it to the root of your repository and Codacy will pick it up automatically.
+Codacy supports configuration files for several tools. To use a configuration file for your static analysis tool:
 
-Codacy supports configuration files for several tools. To have results according to your configuration file, you need to go to the Code Patterns view, select **Configuration file** for the respective tool, and select the option as shown in the example below.
+1.  Add the configuration file to the root of your repository.
 
-![Using a configuration file](images/code-pattern-config-file.png)
+1.  Open your repository **Code patterns** page and select **Configuration file** for the respective tool:
+
+    ![Using a configuration file](images/code-pattern-config-file.png)
 
 The known file names for each tool are the following:
 
@@ -88,7 +89,7 @@ The known file names for each tool are the following:
 <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
 <td>Python</td>
 <td>bandit.yml, .bandit </td>
-<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repository containing: skips: \['B101'\]</td>
+<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repository containing: <code>skips: \['B101'\]</code></td>
 </tr>
 <tr>
 <td>Brakeman</td>
@@ -252,7 +253,8 @@ The known file names for each tool are the following:
 </tbody>
 </table>
 
-For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
+!!! note
+    For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
 
 ## Configuring the repository root directory for analysis
 
