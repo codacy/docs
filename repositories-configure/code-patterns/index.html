@@ -525,84 +525,19 @@
           
           
 
-  
-
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Code patterns
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Code patterns" class="md-nav__link md-nav__link--active">
-      Code patterns
-    </a>
-    
-      
-<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#category-filters" class="md-nav__link">
-    Category filters
-  </a>
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#set-default" class="md-nav__link">
-    Setting a default configuration for new repositories
-  </a>
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#i-have-my-own-tool-configuration-file" class="md-nav__link">
-    I have my own tool configuration file
-  </a>
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#configuring-the-repository-root-directory-for-analysis" class="md-nav__link">
-    Configuring the repository root directory for analysis
-  </a>
-</li>
-      
-    </ul>
-  
-</nav>
-    
-  </li>
-
-        
-          
-          
-          
-
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-2" type="checkbox" id="nav-4-2">
     
-    <label class="md-nav__link" for="nav-4-3">
+    <label class="md-nav__link" for="nav-4-2">
       Coverage
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Coverage" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-3">
+      <label class="md-nav__title" for="nav-4-2">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -661,6 +596,71 @@
         
       </ul>
     </nav>
+  </li>
+
+        
+          
+          
+          
+
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Code patterns
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Code patterns" class="md-nav__link md-nav__link--active">
+      Code patterns
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#category-filters" class="md-nav__link">
+    Category filters
+  </a>
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#set-default" class="md-nav__link">
+    Setting a default configuration for new repositories
+  </a>
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#using-your-own-tool-configuration-files" class="md-nav__link">
+    Using your own tool configuration files
+  </a>
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#configuring-the-repository-root-directory-for-analysis" class="md-nav__link">
+    Configuring the repository root directory for analysis
+  </a>
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -2700,15 +2700,12 @@
 <p>However, you can create a coding standard adapted to your scenario by configuring the tool patterns that Codacy uses to analyze each repository:</p>
 <ol>
 <li>
-<p>Open your repository <strong>Code patterns</strong> page.</p>
-</li>
-<li>
-<p>Select the tool to configure.</p>
+<p>Open your repository <strong>Code patterns</strong> page and select the tool to configure:</p>
 <p><img alt="Configuring code patterns" src="../images/code-pattern-configure.png" /></p>
 </li>
 <li>
-<p>Click the checkboxes to the left of the pattern names to enable or disable the patterns.</p>
-<p>To see a detailed explanation about the issues that a pattern can detect and how to fix them, click on <strong>Details</strong> on the top right-hand corner of the pattern:</p>
+<p>Enable or disable the patterns using the checkbox for each pattern.</p>
+<p>To see a detailed explanation about the issues that a pattern can detect and how to fix them, click <strong>Details</strong> on the top right-hand corner of the pattern. Some patterns also allow you to configure the rules:</p>
 <p><img alt="Code pattern details" src="../images/code-pattern-detail.png" /></p>
 </li>
 <li>
@@ -2755,10 +2752,17 @@
 <p>Select <strong>Set default</strong> on the same menu to reset the default configuration.</p>
 </li>
 </ol>
-<h2 id="i-have-my-own-tool-configuration-file">I have my own tool configuration file<a class="headerlink" href="#i-have-my-own-tool-configuration-file" title="Permanent link">&para;</a></h2>
-<p>If you have configuration files for your static analysis tool of choice, add it to the root of your repository and Codacy will pick it up automatically.</p>
-<p>Codacy supports configuration files for several tools. To have results according to your configuration file, you need to go to the Code Patterns view, select <strong>Configuration file</strong> for the respective tool, and select the option as shown in the example below.</p>
+<h2 id="using-your-own-tool-configuration-files">Using your own tool configuration files<a class="headerlink" href="#using-your-own-tool-configuration-files" title="Permanent link">&para;</a></h2>
+<p>Codacy supports configuration files for several tools. To use a configuration file for your static analysis tool:</p>
+<ol>
+<li>
+<p>Add the configuration file to the root of your repository.</p>
+</li>
+<li>
+<p>Open your repository <strong>Code patterns</strong> page and select <strong>Configuration file</strong> for the respective tool:</p>
 <p><img alt="Using a configuration file" src="../images/code-pattern-config-file.png" /></p>
+</li>
+</ol>
 <p>The known file names for each tool are the following:</p>
 <table>
 <tbody>
@@ -2772,43 +2776,43 @@
 <td>Ameba</td>
 <td>Crystal</td>
 <td>.ameba.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
 <td>Python</td>
-<td>bandit.yml, .bandit </td>
-<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repository containing: skips: \['B101'\]</td>
+<td>bandit.yml, .bandit</td>
+<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repository containing: <code>skips: \['B101'\]</code></td>
 </tr>
 <tr>
 <td>Brakeman</td>
 <td>Ruby</td>
 <td>config/brakeman.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Checkstyle</td>
 <td>Java</td>
-<td>checkstyle.xml </td>
+<td>checkstyle.xml</td>
 <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
 </tr>
 <tr>
 <td>CodeNarc</td>
 <td>Groovy</td>
 <td>.codenarcrc</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Credo</td>
 <td>Elixir</td>
 <td>.credo.exs</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>CSSLint</td>
 <td>CSS</td>
 <td>.csslintrc</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Detekt</td>
@@ -2826,27 +2830,27 @@
 </tr>
 <tr>
 <td>Hadolint</td>
-<td>Docker </td>
+<td>Docker</td>
 <td>.hadolint.yaml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>JSHint</td>
-<td>JavaScript </td>
+<td>JavaScript</td>
 <td>.jshintrc</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP CodeSniffer</a></td>
 <td>PHP</td>
 <td>phpcs.xml, phpcs.xml.dist</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>PHPMD</td>
 <td>PHP</td>
 <td>codesize.xml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>PMD</td>
@@ -2859,43 +2863,43 @@
 <td>Python</td>
 <td>.landscape.yml, .landscape.yaml, landscape.yml, landscape.yaml,<br />
 .prospector.yml, .prospector.yaml, prospector.yml, prospector.yaml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Pylint</td>
 <td>Python</td>
-<td>pylintrc, .pylintrc </td>
-<td><a href="https://github.com/codacy/codacy-pylint/blob/master/requirements.txt">Plugins</a> </td>
+<td>pylintrc, .pylintrc</td>
+<td><a href="https://github.com/codacy/codacy-pylint/blob/master/requirements.txt">Plugins</a></td>
 </tr>
 <tr>
 <td>RemarkLint</td>
 <td>Markdown</td>
 <td>.remarkrc, .remarkrc.json, .remarkrc.yaml, .remarkrc.yml, .remarkrc.js</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Rubocop</td>
-<td>Ruby </td>
+<td>Ruby</td>
 <td>.rubocop.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Scalastyle</td>
-<td>Scala </td>
+<td>Scala</td>
 <td>scalastyle_config.xml, scalastyle-config.xml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>SCSSLint</td>
-<td>SASS </td>
+<td>SASS</td>
 <td>.scss-lint.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Sonar C#</td>
 <td>C#</td>
 <td>SonarLint.xml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>SpotBugs</td>
@@ -2913,36 +2917,39 @@
 <td>SwiftLint</td>
 <td>Swift</td>
 <td>.swiftlint.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Tailor</td>
 <td>Swift</td>
 <td> .tailor.yml</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>TSLint</td>
 <td>TypeScript</td>
 <td>tslint.json</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>tsqllint</td>
 <td>SQL</td>
 <td>.tsqllintrc</td>
-<td> </td>
+<td></td>
 </tr>
 <tr>
 <td>Revive</td>
 <td>Go</td>
 <td>revive.toml</td>
-<td> </td>
+<td></td>
 </tr>
 </tbody>
 </table>
 
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.</p>
+</div>
 <h2 id="configuring-the-repository-root-directory-for-analysis">Configuring the repository root directory for analysis<a class="headerlink" href="#configuring-the-repository-root-directory-for-analysis" title="Permanent link">&para;</a></h2>
 <p>By default, Codacy starts the analysis on the repository's root. However, you can set up a different repository folder on which to start the analysis using a <a href="../codacy-configuration-file/">Codacy configuration file</a>. This file must be named <strong>".codacy.yaml"</strong> or <strong>".codacy.yml"</strong> and must be placed in the repository's root.</p>
 <p>See the example below:</p>
@@ -3029,7 +3036,7 @@ engines:
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 31, 2020</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 7, 2021</span>
     
   </small>
 </div>
