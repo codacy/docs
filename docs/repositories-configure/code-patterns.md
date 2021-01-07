@@ -4,15 +4,13 @@ By default, Codacy uses a subset of the patterns that exist for each tool to ana
 
 However, you can create a coding standard adapted to your scenario by configuring the tool patterns that Codacy uses to analyze each repository:
 
-1.  Open your repository **Code patterns** page.
-
-1.  Select the tool to configure.
+1.  Open your repository **Code patterns** page and select the tool to configure:
 
     ![Configuring code patterns](images/code-pattern-configure.png)
 
-1.  Click the checkboxes to the left of the pattern names to enable or disable the patterns.
+1.  Enable or disable the patterns using the checkbox for each pattern.
 
-    To see a detailed explanation about the issues that a pattern can detect and how to fix them, click on **Details** on the top right-hand corner of the pattern:
+    To see a detailed explanation about the issues that a pattern can detect and how to fix them, click **Details** on the top right-hand corner of the pattern. Some patterns also allow you to configure the rules:
 
     ![Code pattern details](images/code-pattern-detail.png)
 
