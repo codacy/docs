@@ -505,8 +505,8 @@ nav:
                 - repositories-configure/integrations/jira-integration.md
                 - repositories-configure/integrations/project-api.md
                 - repositories-configure/integrations/webhook-notifications.md
-          - repositories-configure/code-patterns.md
           - "Coverage": "!include submodules/codacy-coverage-reporter/mkdocs.yml"
+          - repositories-configure/code-patterns.md
           - repositories-configure/codacy-configuration-file.md
           - repositories-configure/ignore-files-from-codacy-analysis.md
           - repositories-configure/using-submodules.md
