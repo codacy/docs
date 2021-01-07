@@ -70,7 +70,9 @@ You must use the following [Java glob syntax](https://docs.oracle.com/javase/7/d
 
 ## Which tools can be configured and which name should I use?
 
-You can configure all supported tools using the Codacy configuration file. The names that should be used for each of them are:
+You can configure all tools supported by Codacy using the configuration file.
+
+The following are the tool names that must be used in the Codacy configuration file:
 
 ```text
 ameba
