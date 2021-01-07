@@ -60,13 +60,13 @@ To use a Codacy configuration file:
 
 You must use the following [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29) to configure your 'exclude_paths' to ignore files:
 
-| Pattern | Ignored files |
-|--------------|-------------- |
-|`\*\*.extension` |All files with the same extension across all your repository|
-|`test/\*` |All files in the root of test |
-|`test/\*\*` |All files and folders inside test |
-|`test/\*\*/\*`|All files inside sub-folders of test| 
-|`\*\*/\*.resource`|All .resource files in all folders and sub-folders |
+| Pattern            | Ignored files                                                |
+| ------------------ | ------------------------------------------------------------ |
+| `\*\*.extension`   | All files with the same extension across all your repository |
+| `test/\*`          | All files in the root of test                                |
+| `test/\*\*`        | All files and folders inside test                            |
+| `test/\*\*/\*`     | All files inside sub-folders of test                         |
+| `\*\*/\*.resource` | All .resource files in all folders and sub-folders           |
 
 ## Which tools can be configured and which name should I use?
 
