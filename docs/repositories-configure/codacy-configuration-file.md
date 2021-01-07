@@ -6,7 +6,7 @@ Codacy supports configuring certain advanced features through a configuration fi
 
     The category metrics refers to the information you find under [File details](../repositories/files-view.md) such as Size, Structure and Complexity.
 
--   Configuring a specific repository folder on which to start the analysis
+-   Configuring a specific repository directory on which to start the analysis
 
 -   Adding custom extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
 
@@ -56,15 +56,15 @@ To use a Codacy configuration file:
 
 ## Syntax for excluding files
 
-You must use the following [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29) to configure your 'exclude_paths' to ignore files:
+To ignore files, you must use the following [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29) to define one or more `exclude_paths` patterns:
 
 | Pattern            | Ignored files                                                |
 | ------------------ | ------------------------------------------------------------ |
 | `\*\*.extension`   | All files with the same extension across all your repository |
 | `test/\*`          | All files in the root of test                                |
-| `test/\*\*`        | All files and folders inside test                            |
-| `test/\*\*/\*`     | All files inside sub-folders of test                         |
-| `\*\*/\*.resource` | All .resource files in all folders and sub-folders           |
+| `test/\*\*`        | All files and directories inside test                        |
+| `test/\*\*/\*`     | All files inside sub-directories of test                     |
+| `\*\*/\*.resource` | All .resource files in all directories and sub-directories   |
 
 ## Which tools can be configured and which name should I use?
 
