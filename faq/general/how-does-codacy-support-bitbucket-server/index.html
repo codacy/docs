@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.cdd12cd3.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4f055678.min.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.45b0513f.min.css">
       
@@ -2705,24 +2705,29 @@
               
               
                 
-  <style>.user-feedback-answer{background-color:var(--md-accent-fg-color--transparent);border-radius:.3em;color:var(--codacy-neutral-600);display:inline-block;font:inherit;font-size:.9em;padding:.2em;width:6em}.user-feedback-answer .svg-icon{display:inline-block;margin-right:.5em;vertical-align:top;width:1.3em}.user-feedback-answer:disabled{background-color:var(--md-default-fg-color--lightest)}.user-feedback-answer--no{margin-left:1em}.user-feedback-response{display:none}.user-feedback-response--visible{display:block}</style>  
+  <style>.user-feedback-answer{background-color:var(--md-accent-fg-color--transparent);border-radius:.3em;color:var(--codacy-neutral-600);display:inline-block;font:inherit;font-size:.9em;padding:.2em .5em .2em 0;cursor:pointer;width:6em}.user-feedback-answer:hover{background-color:var(--codacy-neutral-300)}.user-feedback-answer .svg-icon{display:inline-block;margin-right:.5em;vertical-align:top;width:1.3em}.user-feedback-answer:disabled{background-color:var(--md-default-fg-color--lightest)}.user-feedback-answer--no{margin-left:1em}.user-feedback-response{display:none}.user-feedback-response--visible{display:block}</style>  
   <div id="user-feedback">
-    <h2 id="user-feedback-title">Feedback</h2>
+    <h2 id="feedback">Feedback</h2>
     <p>Did this page help you?</p>
     <button class="user-feedback-answer user-feedback-answer--yes md-icon">
     <span class="svg-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg></span> Yes
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg></span> Yes
     </button>
     <button class="user-feedback-answer user-feedback-answer--no md-icon">
     <span class="svg-icon">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></span> No
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></span> No
     </button>
     <p class="user-feedback-response user-feedback-response--yes">
-    Thank you for the feedback!
+      Thank you for the feedback!
     </p>
-    <p class="user-feedback-response user-feedback-response--no">
-    We're sorry to hear that. Please <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22How does Codacy support Bitbucket Server?%22">let us know what we can improve</a>.
-    </p>  
+    <div class="user-feedback-response user-feedback-response--no">
+      <p>
+        We're sorry to hear that. Please <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22How does Codacy support Bitbucket Server?%22">let us know what we can improve</a>.
+      </p>
+      <p>
+        If you have a question, please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20How does Codacy support Bitbucket Server?">support@codacy.com</a>.
+      </p>
+    </div>
   </div>
   <script>
     const yesButton = document.querySelector('.user-feedback-answer--yes');
