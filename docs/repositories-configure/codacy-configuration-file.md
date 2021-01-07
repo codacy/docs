@@ -11,10 +11,8 @@ Codacy supports configuring certain advanced features through a configuration fi
 -   Adding custom extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
 
 !!! note
-    To disable a tool, you must do it on the [Code Patterns](code-patterns.md) page instead.
-
-!!! important
-    If a Codacy configuration file exists in your repository, any "exclude paths" [defined on Codacy's UI](ignore-files-from-codacy-analysis.md) won't apply.
+    -   If a Codacy configuration file exists in your repository, any "exclude paths" [defined on Codacy's UI](ignore-files-from-codacy-analysis.md) won't apply.
+    -   To disable a tool, you must do it on the [Code Patterns](code-patterns.md) page instead.
 
 To use a Codacy configuration file:
 
@@ -23,7 +21,7 @@ To use a Codacy configuration file:
 1.  Add your settings to the configuration file based on the example template below.
 
     !!! important
-        The configuration file must start with a line containing `---`.
+        The configuration file must start with a line containing a triple dash (`---`).
 
     ```yaml
     ---
@@ -50,7 +48,7 @@ To use a Codacy configuration file:
       - '**/tests/**'
     ```
 
-1.  Optionally, use the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli) to validate the syntax of your configuration file by running the following command in the folder where the configuration file is located:
+1.  Optionally, validate the syntax of your configuration file with the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#install) by running the following command in the same folder as the Codacy configuration file:
 
     ```bash
     codacy-analysis-cli validate-configuration --directory `pwd`
