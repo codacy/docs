@@ -438,6 +438,7 @@ plugins:
               "chart/configuration/tls-ingress.md": "index.md"
               "getting-started/setting-up-your-personal-repositories.md": "getting-started/getting-started-with-codacy.md"
               "getting-started/supported-languages.md": "getting-started/supported-languages-and-tools.md"
+              "account/default-patterns.md": "repositories-configure/code-patterns.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
