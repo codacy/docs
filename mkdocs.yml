@@ -5,7 +5,7 @@ site_url: "https://docs.codacy.com/"
 site_author: "support@codacy.com"
 
 # Copyright
-copyright: "© 2020 <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
+copyright: "© <script>document.write(new Date().getFullYear())</script> <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
 
 # Configuration
 theme:
@@ -76,8 +76,8 @@ plugins:
               "hc/en-us/articles/115000282129-Why-can-t-I-configure-post-commit-hooks-and-integrations-.md": "faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md"
               "hc/en-us/articles/115000488285.md": "repositories-configure/integrations/slack-integration.md"
               "hc/en-us/articles/115000488285-Slack.md": "repositories-configure/integrations/slack-integration.md"
-              "hc/en-us/articles/115000566729.md": "repositories-configure/ignore-files-from-codacy-analysis.md"
-              "hc/en-us/articles/115000566729-How-do-I-ignore-files-that-are-not-in-master-branch-.md": "repositories-configure/ignore-files-from-codacy-analysis.md"
+              "hc/en-us/articles/115000566729.md": "repositories-configure/ignoring-files.md"
+              "hc/en-us/articles/115000566729-How-do-I-ignore-files-that-are-not-in-master-branch-.md": "repositories-configure/ignoring-files.md"
               "hc/en-us/articles/115000723329.md": "repositories/security-monitor.md"
               "hc/en-us/articles/115000723329-Security-Dashboard.md": "repositories/security-monitor.md"
               "hc/en-us/articles/115000947569.md": "repositories-configure/code-standards.md"
@@ -219,8 +219,8 @@ plugins:
               "hc/en-us/articles/360003890693-Logs-How-do-they-work-.md": "index.md"
               "hc/en-us/articles/360004685494.md": "faq/general/how-does-codacy-protect-my-privacy.md"
               "hc/en-us/articles/360004685494-Updates-to-Codacy-s-Privacy-Policy.md": "faq/general/how-does-codacy-protect-my-privacy.md"
-              "hc/en-us/articles/360005097654.md": "repositories-configure/ignore-files-from-codacy-analysis.md"
-              "hc/en-us/articles/360005097654-Ignore-files-from-Codacy-analysis.md": "repositories-configure/ignore-files-from-codacy-analysis.md"
+              "hc/en-us/articles/360005097654.md": "repositories-configure/ignoring-files.md"
+              "hc/en-us/articles/360005097654-Ignore-files-from-Codacy-analysis.md": "repositories-configure/ignoring-files.md"
               "hc/en-us/articles/360005239394.md": "repositories-configure/using-submodules.md"
               "hc/en-us/articles/360005239394-using-submodules.md": "repositories-configure/using-submodules.md"
               "hc/en-us/articles/360005839053.md": "faq/code-analysis/skipping-an-analysis.md"
@@ -438,6 +438,7 @@ plugins:
               "chart/configuration/tls-ingress.md": "index.md"
               "getting-started/setting-up-your-personal-repositories.md": "getting-started/getting-started-with-codacy.md"
               "getting-started/supported-languages.md": "getting-started/supported-languages-and-tools.md"
+              "account/default-patterns.md": "repositories-configure/code-patterns.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
@@ -477,6 +478,7 @@ plugins:
               "related-tools/run-local-analysis.md": "related-tools/local-analysis/running-local-analysis.md"
               "related-tools/client-side-tools.md": "related-tools/local-analysis/client-side-tools.md"
               "related-tools/run-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"
+              "repositories-configure/ignore-files-from-codacy-analysis.md": "repositories-configure/ignoring-files.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -505,10 +507,10 @@ nav:
                 - repositories-configure/integrations/jira-integration.md
                 - repositories-configure/integrations/project-api.md
                 - repositories-configure/integrations/webhook-notifications.md
-          - repositories-configure/code-patterns.md
           - "Coverage": "!include submodules/codacy-coverage-reporter/mkdocs.yml"
+          - repositories-configure/code-patterns.md
           - repositories-configure/codacy-configuration-file.md
-          - repositories-configure/ignore-files-from-codacy-analysis.md
+          - repositories-configure/ignoring-files.md
           - repositories-configure/using-submodules.md
           - repositories-configure/file-extensions.md
           - repositories-configure/specifying-language.md

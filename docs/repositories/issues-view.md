@@ -60,7 +60,7 @@ You can cherry-pick files that Codacy will ignore on later analysis. To ignore a
 
 ![Ignoring files](images/issues-view-ignoring-files.gif)
 
-See [more information on managing ignored files](../repositories-configure/ignore-files-from-codacy-analysis.md).
+See [more information on managing ignored files](../repositories-configure/ignoring-files.md).
 
 ## Create a comment in your repository
 
