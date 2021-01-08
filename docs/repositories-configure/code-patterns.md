@@ -57,6 +57,10 @@ To reset the pattern configuration of a tool back to the default provided by Cod
 
 1.  Select **Set default** on the same menu to reset the default configuration.
 
+## Importing pattern configurations from another repository
+
+<!-- TODO -->
+
 ## Using your own tool configuration files
 
 <!-- TODO Consider including the configuration file names reference somewhere else (see https://github.com/codacy/docs/issues/43) -->
