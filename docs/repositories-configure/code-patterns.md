@@ -61,44 +61,40 @@ To reset the pattern configuration of a tool back to the default provided by Cod
 
 <!-- TODO 
 
-== Jira Epic
-
-- This is supposed to work as an import of configuration from one repository to another, with no ties to the parent config.
-This means the configuration from the new repo is independent of the existing repo and therefore can be changed independently.
-
-- So you should be able to find a repo and apply it’s configuration to another repo (as long as you have the necessary permissions on the source repo).
-
-- Configuration present on configuration file will always override this.
-
-- We only target tools that are supported on both repo A and repo B (by supported, it means, that the repos have languages for those tools)
-
-- We want to match the status (on/off) of the tool from repoB
+= Jira Epic =
 
 - We want to import the patterns of the target tools
+  ?? So, only the tools that exist on the target repository are imported?
 
-- We will NOT change the “mode” of the tool, meaning that if a tool runs with configuration file, it keeps running with configuration file, and the same for UI configuration.
+= Figma =
 
-- We will always copy the patterns, independent of the mode that the tool is / will be using
-
-== Figma
-
-Repository A is our origin repo. Repo B is our destiny repo. ESLint is one of the tools.
-1. On repo B if we have a config file for ESLint, and repo A doesn’t. Will we import the patterns anyway? Even if we keep using the config file on repo B. (in case we stop using config file later) - yes
-2. will we change the status (on/off) of the tools?  - yes. 
-3. If on repo A I have ESlint set to use a config file, and on repo B I dont. Will we mirror this option as well? no, we will not change the option to use config file vs ui. 
-4. What happens with submodules? we think it will keep working
-5. If I don’t have permissions on repo A, what happens? Will I see it on the dropdown? no, you wont see repos you dont have permissions
-
-
-== UI Copy 
-
-When importing the pattern selection from another repository, any previously configured patterns here will be overridden. 
-If this repository has different languages and tools from the one you are importing, these will stay as they are.
-Configuration files will not be imported and, if you are using configuration files on this repository, those will stay as they are. 
+- What happens with submodules? we think it will keep working
 
 -->
 
 Importing tool and pattern configurations from another repository can help you bootstrap and standardize the coding standard across your repositories.
+
+<!-- TODO How the feature works and limitations
+
+Permissions:
+-   The user importing the configurations must have the necessary permissions (??) over the source repository to be able to see and select it on the drop-down list.
+
+What the import feature is in practice:
+-   The configuration on the target repository is independent from the one on the source repository, and therefore can be changed independently of one another. (The feature imports the configuration from one repository to another, with no "ties" to the source configuration.)
+
+Matching of tools between source and target repositories:
+-   The import only works for tools that are active (there are languages for those tools) on both the source and the target repositories.
+-   Importing the configurations from another repository may override the existing configurations on the target repository for the tools that exist on the source repository.
+-   Conversely, all the tools that do not exist on the source repository will be left untouched.
+
+
+-   The import doesn't change the "mode" of the tool: tools using UI configurations keep using UI configurations, while tools using configuration files keep using configuration files. However, the import always copies the UI pattern configurations, independent of the mode that source and target tools are using.
+    -   For example, if later on the user changes from configuration file to UI configuration, the imported configurations will be available.
+    -   (Since the import does not copy the configuration files themselves and only the UI configuration, keeping the settings to use configuration files unchanged makes sense and simplifies the process.)
+
+-   The import will copy the on/off status of the tools from the source repository to the target repository.
+
+-->
 
 ![Importing code patterns from another repository](images/code-patterns-import.png)
 
