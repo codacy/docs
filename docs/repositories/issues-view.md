@@ -9,7 +9,7 @@ This page displays an overview of all issues raised by Codacy in your repository
 -   **Security:** security issues, potential vulnerabilities, unsafe dependencies.
 -   **Error** **Prone:** bad practices/patterns that cause code to fail/prone to bugs.
 -   **Code Style:** related to the style of the code, line length, tabs vs spaces.
--   **Compatibility:** identifies code that has problems with older systems or cross platform support.
+-   **Compatibility:** identifies code that has problems with older systems or cross-platform support.
 -   **Unused Code:** unnecessary code not in use.
 -   **Performance:** inefficiently written code.
 
@@ -23,7 +23,7 @@ Each pattern has a pre-defined severity level and at the moment, it's not possib
 
 ## Ignoring an issue
 
-For an issue you disagree with or false positives, you can either ignore that instance or disable the pattern across the whole repository. To do so, click on cog wheel and select the desired option:
+For an issue you disagree with or false positives, you can either ignore that instance or disable the pattern across the whole repository. To do so, click on the cogwheel and select the desired option:
 
 ![Ignoring an issue](images/issues-view-ignore.gif)
 
@@ -35,7 +35,7 @@ To reinstate ignored issues, click on the **Current Issues** box, and select **I
 
 ## Removing a pattern
 
-When you want to remove a pattern altogether from your repository's analysis, expand the issue you're aiming to disable the pattern for, click on the cog wheel, select **Remove pattern** and confirm your choice.
+When you want to remove a pattern altogether from your repository's analysis, expand the issue you're aiming to disable the pattern for, click on the cogwheel, select **Remove pattern** and confirm your choice.
 
 ![Removing a pattern](images/issues-view-remove-pattern.gif)
 
@@ -53,7 +53,7 @@ To restore a removed pattern, go to your repository's **Code Pattern** settings,
 
 ## Ignoring files
 
-You can cherry-pick files that Codacy will ignore on later analysis. To ignore a file, expand the issue, click on the cog wheel, select **Ignore file** from the menu, and confirm.
+You can cherry-pick files that Codacy will ignore on later analysis. To ignore a file, expand the issue, click on the cogwheel, select **Ignore file** from the menu, and confirm.
 
 !!! important
     This operation ignores the file across the entire repository and for all patterns.
