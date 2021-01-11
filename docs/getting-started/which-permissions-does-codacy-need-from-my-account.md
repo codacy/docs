@@ -13,13 +13,13 @@ Depending on the provider, we may request different permissions due to different
 
 If you log in with GitHub, Codacy requires the following [permissions/scopes](https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/about-scopes-for-oauth-apps/):
 
--   'user' permissions to access GitHub user info
--   'public\_repo' permissions to set PR status on public repositories
--   'repo' access to access private repositories
--   'write: public\_key' to add SSH keys to the repositories, so that Codacy can have access to the repository
--   'write:repo\_hook' access to add post-commit hooks
--   'read:org': read-only access to organization membership, organization repositories, and team membership
--   'admin:org\_hook' to access organization hooks
+-   `user` permissions to access GitHub user info
+-   `public_repo` permissions to set PR status on public repositories
+-   `repo` permissions to access private repositories
+-   `write: public_key` permissions to add SSH keys to the repositories, so that Codacy can have access to the repository
+-   `write:repo_hook` permissions to add post-commit hooks
+-   `read:org` permissions to read organization membership, organization repositories, and team membership
+-   `admin:org_hook` permissions to access organization hooks
 
 ## GitHub Cloud using GitHub Apps
 
@@ -53,10 +53,10 @@ These permissions are granted on an individual user basis as part of the User au
 
 If you sign up with GitLab Cloud, Codacy requires the following [permissions/scopes](https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications):
 
--   ‘api’ permissions to access the authenticated user's API
--   ‘read\_user’ permissions to read the authenticated user's personal information
--   ‘read\_repository’ permissions to read the repositories
--   ‘openid’ to authenticate using [OpenID Connect](https://docs.gitlab.com/ee/integration/openid_connect_provider.html#shared-information)
+-   `api` permissions to access the authenticated user's API
+-   `read_user` permissions to read the authenticated user's personal information
+-   `read_repository` permissions to read the repositories
+-   `openid` to authenticate using [OpenID Connect](https://docs.gitlab.com/ee/integration/openid_connect_provider.html#shared-information)
 
 ## Bitbucket Cloud
 
@@ -64,7 +64,7 @@ If you log in with Bitbucket, Codacy requires the following [permissions/scopes]
 
 -   Read and modify your account information
 -   Read and modify your repositories' issues
--   Read your workspace’s project settings and read repositories contained within your workspace's projects
+-   Read your workspace's project settings and read repositories contained within your workspace's projects
 -   Read and modify your repositories and their pull requests
 -   Administer your repositories
 -   Read your group membership information
