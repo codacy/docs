@@ -1,6 +1,6 @@
 # Codacy plugin tools
 
-Codacy uses a system of plugin tools to extend the scope of analyses on your repositories, allowing [support for new languages and tools](../getting-started/supported-languages-and-tools.md) every day. To create your own plugin tool, check the [tool developer guide](tool-developer-guide.md).
+Codacy uses a system of plugin tools to extend the scope of analyses on your repositories, allowing [support for new languages and tools](../getting-started/supported-languages-and-tools.md) every day.
 
 The Codacy GitHub repositories list the version and extra plugins supported by each plugin tool. You can also submit GitHub issues on these repositories.
 
@@ -193,8 +193,3 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 </tr>
 </tbody>
 </table>
-
-## See also
-
--   [Supported languages and tools](../getting-started/supported-languages-and-tools.md)
--   [Tool developer guide](tool-developer-guide.md)

@@ -109,8 +109,6 @@ These are the tools integrated on Codacy by our own users! Without them, we woul
 </tbody>
 </table>
 
-Do you love a language we don't support yet? Do you want your name and that language on this list? See [how to add support for a language](related-tools/tool-developer-guide.md).
-
 ## Collaborators
 
 For all the people who helped us so much, we want to give a big shout out and thanks!
