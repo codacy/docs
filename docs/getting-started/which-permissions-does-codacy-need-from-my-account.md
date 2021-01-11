@@ -33,9 +33,17 @@ User permissions:
 These permissions are granted on an individual user basis as part of the User authorization flow. They will be also be displayed during account installation for transparency.
 
 -   Email addresses: Manage a user's email addresses - Read Only
--   Git SSH keys: Create SSH keys - Read & Write. Codacy may need to create an SSH key in your account:
-    -   If your repository uses submodules, so that Codacy can clone the repositories for each submodule, or
-    -   If Codacy fails to integrate with a repository using the repository key, so that Codacy can continue to perform analysis.
+-   Git SSH keys: Create SSH keys - Read & Write
+
+!!! note
+    Codacy asks for permissions to create SSH keys because it needs to create an SSH key in your account in the following situations:
+
+    -   If your repository uses submodules, so that Codacy can clone the repositories for each submodule
+    -   If Codacy fails to integrate with a repository using the repository key, so that Codacy can continue to perform analysis
+
+    **Codacy only adds read-only SSH keys to be able to clone repositories** and won't have access to any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also [revoke the keys created by Codacy at any time](https://docs.github.com/en/github/authenticating-to-github/reviewing-your-ssh-keys). Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.
+
+    We understand the desire for security and privacy and find that the SSH protocol is preferable to HTTPS as it separates Codacy's access rights from the one of the users.
 
 ## GitLab Cloud
 
