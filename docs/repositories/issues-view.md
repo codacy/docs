@@ -40,7 +40,7 @@ When you want to remove a pattern altogether from your repository's analysis, ex
 ![Removing a pattern](images/issues-view-remove-pattern.gif)
 
 !!! note
-    If you're using a custom [configuration file](../repositories-configure/code-patterns.md#i-have-my-own-tool-configuration-file), you have to remove that pattern line manually in your file.
+    If you're using a custom [configuration file](../repositories-configure/code-patterns.md#using-your-own-tool-configuration-files), you have to remove that pattern line manually in your file.
 
 ### Restoring a removed pattern
 
