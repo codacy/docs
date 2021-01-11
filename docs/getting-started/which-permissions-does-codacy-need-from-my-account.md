@@ -11,18 +11,6 @@ Depending on the provider, we may request different permissions due to different
 
 ## GitHub Cloud
 
-If you log in with GitHub, Codacy requires the following [permissions/scopes](https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/about-scopes-for-oauth-apps/):
-
--   `user` permissions to access GitHub user info
--   `public_repo` permissions to set PR status on public repositories
--   `repo` permissions to access private repositories
--   `write: public_key` permissions to add SSH keys to the repositories, so that Codacy can have access to the repository
--   `write:repo_hook` permissions to add post-commit hooks
--   `read:org` permissions to read organization membership, organization repositories, and team membership
--   `admin:org_hook` permissions to access organization hooks
-
-## GitHub Cloud using GitHub Apps
-
 If you log in with GitHub, Codacy requires the following [app permissions](https://developer.github.com/v3/apps/permissions/):
 
 Repository permissions:
