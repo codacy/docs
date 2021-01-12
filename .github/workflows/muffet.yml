@@ -14,8 +14,8 @@ jobs:
         env:
           INPUT_URL: https://docs.codacy.com/
           EXCLUDE: |
-            gitlab\.com\/profile\/applications
-            github\.com\/settings\/tokens
+            gitlab\.com\/profile
+            github\.com\/settings
             github\.com\/codacy\/docs\/issues
             en\.gravatar\.com
         run: |

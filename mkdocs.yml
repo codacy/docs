@@ -121,8 +121,8 @@ plugins:
               "hc/en-us/articles/207280239-Bitbucket-Integration.md": "repositories-configure/integrations/bitbucket-integration.md"
               "hc/en-us/articles/207280359.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280359-WebHook-Notifications.md": "repositories-configure/integrations/webhook-notifications.md"
-              "hc/en-us/articles/207280379.md": "related-tools/tool-developer-guide-using-scala.md"
-              "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "related-tools/tool-developer-guide-using-scala.md"
+              "hc/en-us/articles/207280379.md": "related-tools/codacy-plugin-tools.md"
+              "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "related-tools/codacy-plugin-tools.md"
               "hc/en-us/articles/207312879.md": "coverage-reporter/generating-coverage-reports.md"
               "hc/en-us/articles/207312879-Generate-Coverage.md": "coverage-reporter/generating-coverage-reports.md"
               "hc/en-us/articles/207993605.md": "getting-started/getting-started-with-codacy.md"
@@ -138,8 +138,8 @@ plugins:
               "hc/en-us/articles/207994395-Language-Extensions.md": "repositories-configure/file-extensions.md"
               "hc/en-us/articles/207994675.md": "repositories-configure/integrations/project-api.md"
               "hc/en-us/articles/207994675-Project-API.md": "repositories-configure/integrations/project-api.md"
-              "hc/en-us/articles/207994725.md": "related-tools/tool-developer-guide.md"
-              "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "related-tools/tool-developer-guide.md"
+              "hc/en-us/articles/207994725.md": "related-tools/codacy-plugin-tools.md"
+              "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "related-tools/codacy-plugin-tools.md"
               "hc/en-us/articles/207994735.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/207994765.md": "repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
@@ -439,6 +439,8 @@ plugins:
               "getting-started/setting-up-your-personal-repositories.md": "getting-started/getting-started-with-codacy.md"
               "getting-started/supported-languages.md": "getting-started/supported-languages-and-tools.md"
               "account/default-patterns.md": "repositories-configure/code-patterns.md"
+              "related-tools/tool-developer-guide.md": "related-tools/codacy-plugin-tools.md"
+              "related-tools/tool-developer-guide-using-scala.md": "related-tools/codacy-plugin-tools.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
@@ -543,8 +545,6 @@ nav:
                 - related-tools/local-analysis/running-spotbugs.md
           - related-tools/codacy-api-tokens.md
           - related-tools/codacy-plugin-tools.md
-          - related-tools/tool-developer-guide.md
-          - related-tools/tool-developer-guide-using-scala.md
     - "Installing Codacy": "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
