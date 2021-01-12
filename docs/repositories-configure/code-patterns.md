@@ -69,9 +69,17 @@ Importing tool and pattern configurations from another repository can help you b
     -   **Toggle status:** Codacy copies the enabled or disabled status of the matching tools from the source to the target repository.
     -   **Configuration files:** Codacy copies the UI configuration of all matching tools, even those set to use configuration files. However, Codacy doesn't change if the tools on the target repository use the UI settings or a configuration file.
 
-To import the tool and pattern configurations from another repository open your repository **Code patterns**, click **Import patterns**, and follow the instructions:
+To import the tool and pattern configurations from another repository:
 
-![Importing code patterns from another repository](images/code-patterns-import.png)
+1.  Open your repository **Code patterns** and click **Import patterns**.
+
+    ![Importing code patterns from another repository](images/code-patterns-import.png)
+
+1.  Follow the instructions to select the source repository and complete the import.
+
+1.  Review and adjust your tool and pattern configurations if necessary.
+
+Codacy will use the updated configurations on the next analysis.
 
 ## Using your own tool configuration files
 
