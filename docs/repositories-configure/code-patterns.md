@@ -61,12 +61,13 @@ To reset the pattern configuration of a tool back to the default provided by Cod
 
 Importing tool and pattern configurations from another repository can help you bootstrap and standardize the coding standard across your repositories. After importing the configurations from another repository, you can then tweak and adapt them without affecting the source repository.
 
-Consider the following when importing tool and pattern configurations:
+!!! important
+    Consider the following when importing tool and pattern configurations:
 
--   You must have admin permissions on the source repository
--   Codacy will only copy settings for tools that are available on both the source and target repositories, overwriting the existing settings for these tools on the target repository
--   Codacy will copy the enabled or disabled status of the tools from the source to the target repository
--   Codacy won't change if the tools on the target repository use the UI settings or a configuration file, although it will copy the UI settings from the source repository
+    -   **Permissions:** You must have admin permissions on the source repository.
+    -   **Tool matching:** Codacy only copies settings for tools that are available on both the source and target repositories, and overwrites the existing settings for these tools on the target repository.
+    -   **Toggle status:** Codacy copies the enabled or disabled status of the matching tools from the source to the target repository.
+    -   **Configuration files:** Codacy copies the UI configuration of all matching tools, even those set to use configuration files. However, Codacy doesn't change if the tools on the target repository use the UI settings or a configuration file.
 
 To import the tool and pattern configurations from another repository open your repository **Code patterns**, click **Import patterns**, and follow the instructions:
 
