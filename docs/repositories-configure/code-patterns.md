@@ -57,7 +57,7 @@ To reset the pattern configuration of a tool back to the default provided by Cod
 
 1.  Select **Set default** on the same menu to reset the default configuration.
 
-## Importing pattern configurations from another repository
+## Importing pattern configurations from another repository {: id="import-patterns"}
 
 Importing tool and pattern configurations from another repository can help you bootstrap and standardize the coding standard across your repositories. After importing the configurations from another repository, you can then tweak and adapt them without affecting the source repository.
 
