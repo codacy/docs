@@ -59,42 +59,16 @@ To reset the pattern configuration of a tool back to the default provided by Cod
 
 ## Importing pattern configurations from another repository
 
-<!-- TODO 
+Importing tool and pattern configurations from another repository can help you bootstrap and standardize the coding standard across your repositories. After importing the configurations from another repository, you can then tweak and adapt them without affecting the source repository.
 
-= Jira Epic =
+Consider the following when importing tool and pattern configurations:
 
-- We want to import the patterns of the target tools
-  ?? So, only the tools that exist on the target repository are imported?
+-   You must have admin permissions on the source repository
+-   Codacy will only copy settings for tools that are available on both the source and target repositories, overwriting the existing settings for these tools on the target repository
+-   Codacy will copy the enabled or disabled status of the tools from the source to the target repository
+-   Codacy won't change if the tools on the target repository use the UI settings or a configuration file, although it will copy the UI settings from the source repository
 
-= Figma =
-
-- What happens with submodules? we think it will keep working
-
--->
-
-Importing tool and pattern configurations from another repository can help you bootstrap and standardize the coding standard across your repositories.
-
-<!-- TODO How the feature works and limitations
-
-Permissions:
--   The user importing the configurations must have the necessary permissions (??) over the source repository to be able to see and select it on the drop-down list.
-
-What the import feature is in practice:
--   The configuration on the target repository is independent from the one on the source repository, and therefore can be changed independently of one another. (The feature imports the configuration from one repository to another, with no "ties" to the source configuration.)
-
-Matching of tools between source and target repositories:
--   The import only works for tools that are active (there are languages for those tools) on both the source and the target repositories.
--   Importing the configurations from another repository may override the existing configurations on the target repository for the tools that exist on the source repository.
--   Conversely, all the tools that do not exist on the source repository will be left untouched.
-
-
--   The import doesn't change the "mode" of the tool: tools using UI configurations keep using UI configurations, while tools using configuration files keep using configuration files. However, the import always copies the UI pattern configurations, independent of the mode that source and target tools are using.
-    -   For example, if later on the user changes from configuration file to UI configuration, the imported configurations will be available.
-    -   (Since the import does not copy the configuration files themselves and only the UI configuration, keeping the settings to use configuration files unchanged makes sense and simplifies the process.)
-
--   The import will copy the on/off status of the tools from the source repository to the target repository.
-
--->
+To import the tool and pattern configurations from another repository open your repository **Code patterns**, click **Import patterns**, and follow the instructions:
 
 ![Importing code patterns from another repository](images/code-patterns-import.png)
 
