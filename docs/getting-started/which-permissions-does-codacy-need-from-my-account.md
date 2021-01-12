@@ -11,18 +11,6 @@ Depending on the provider, we may request different permissions due to different
 
 ## GitHub Cloud
 
-If you log in with GitHub, Codacy requires the following [permissions/scopes](https://developer.github.com/apps/building-integrations/setting-up-and-registering-oauth-apps/about-scopes-for-oauth-apps/):
-
--   'user' permissions to access GitHub user info
--   'public\_repo' permissions to set PR status on public repositories
--   'repo' access to access private repositories
--   'write: public\_key' to add SSH keys to the repositories, so that Codacy can have access to the repository
--   'write:repo\_hook' access to add post-commit hooks
--   'read:org': read-only access to organization membership, organization repositories, and team membership
--   'admin:org\_hook' to access organization hooks
-
-## GitHub Cloud using GitHub Apps
-
 If you log in with GitHub, Codacy requires the following [app permissions](https://developer.github.com/v3/apps/permissions/):
 
 Repository permissions:
@@ -45,18 +33,26 @@ User permissions:
 These permissions are granted on an individual user basis as part of the User authorization flow. They will be also be displayed during account installation for transparency.
 
 -   Email addresses: Manage a user's email addresses - Read Only
--   Git SSH keys: Create SSH keys - Read & Write. Codacy may need to create an SSH key in your account:
-    -   If your repository uses submodules, so that Codacy can clone the repositories for each submodule, or
-    -   If Codacy fails to integrate with a repository using the repository key, so that Codacy can continue to perform analysis.
+-   Git SSH keys: Create SSH keys - Read & Write
+
+!!! note
+    Codacy asks for permissions to create SSH keys because it needs to create an SSH key in your account in the following situations:
+
+    -   If your repository uses submodules, so that Codacy can clone the repositories for each submodule
+    -   If Codacy fails to integrate with a repository using the repository key, so that Codacy can continue to perform analysis
+
+    **Codacy only adds read-only SSH keys to be able to clone repositories** and won't have access to any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also [revoke the keys created by Codacy at any time](https://docs.github.com/en/github/authenticating-to-github/reviewing-your-ssh-keys). Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.
+
+    We understand the desire for security and privacy and find that the SSH protocol is preferable to HTTPS as it separates Codacy's access rights from the one of the users.
 
 ## GitLab Cloud
 
 If you sign up with GitLab Cloud, Codacy requires the following [permissions/scopes](https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications):
 
--   ‘api’ permissions to access the authenticated user's API
--   ‘read\_user’ permissions to read the authenticated user's personal information
--   ‘read\_repository’ permissions to read the repositories
--   ‘openid’ to authenticate using [OpenID Connect](https://docs.gitlab.com/ee/integration/openid_connect_provider.html#shared-information)
+-   `api` permissions to access the authenticated user's API
+-   `read_user` permissions to read the authenticated user's personal information
+-   `read_repository` permissions to read the repositories
+-   `openid` to authenticate using [OpenID Connect](https://docs.gitlab.com/ee/integration/openid_connect_provider.html#shared-information)
 
 ## Bitbucket Cloud
 
@@ -64,7 +60,7 @@ If you log in with Bitbucket, Codacy requires the following [permissions/scopes]
 
 -   Read and modify your account information
 -   Read and modify your repositories' issues
--   Read your workspace’s project settings and read repositories contained within your workspace's projects
+-   Read your workspace's project settings and read repositories contained within your workspace's projects
 -   Read and modify your repositories and their pull requests
 -   Administer your repositories
 -   Read your group membership information
@@ -92,6 +88,6 @@ To revoke the access from Codacy to one or more of the OAuth providers:
     -   [Bitbucket Cloud](https://support.atlassian.com/bitbucket-cloud/docs/bitbucket-cloud-apps-overview/#OAuth-consumer-permissions)
     -   [Google Sign-in](https://support.google.com/accounts/answer/3466521#remove-access)
 
-After revoking an integration, Codacy will no longer be able to access or manipulate resources that require API calls, such as detecting new pull requests or adding comments to pull requests. However, Codacy will continue to be able to perform operations that only require using the Git protocol either via SSH or HTTPS, such as detecting new commits and calculating diffs. To unregister your repositories from Codacy and stop the analysis you must [delete them from your Codacy account](../repositories/removing-your-repository.md).
+After revoking an integration, Codacy will no longer be able to access or manipulate resources that require API calls, such as detecting new pull requests or adding comments to pull requests. However, Codacy will continue to be able to perform operations that only require using the Git protocol either via SSH or HTTPS, such as detecting new commits and calculating diffs. To remove your repositories from Codacy and stop the analysis you must [delete them from your Codacy account](../repositories/removing-your-repository.md).
 
 If you need to use an integration that you have previously revoked, log in again to Codacy with that integration so that Codacy can request the required permissions from the provider.
