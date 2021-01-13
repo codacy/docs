@@ -95,185 +95,185 @@ Codacy supports configuration files for several tools. To use a configuration fi
 The known file names for each tool are the following:
 
 <table>
-<tbody>
-<tr>
-<td>Tool name</td>
-<td>Language</td>
-<td>Files detected</td>
-<td>Other info</td>
-</tr>
-<tr>
-<td>Ameba</td>
-<td>Crystal</td>
-<td>.ameba.yml</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
-<td>Python</td>
-<td>bandit.yml, .bandit</td>
-<td>To solve flagged valid Python "assert" statements, create a bandit.yml in the root of the repository containing: <code>skips: \['B101'\]</code></td>
-</tr>
-<tr>
-<td>Brakeman</td>
-<td>Ruby</td>
-<td>config/brakeman.yml</td>
-<td></td>
-</tr>
-<tr>
-<td>Checkstyle</td>
-<td>Java</td>
-<td>checkstyle.xml</td>
-<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
-</tr>
-<tr>
-<td>CodeNarc</td>
-<td>Groovy</td>
-<td>.codenarcrc</td>
-<td></td>
-</tr>
-<tr>
-<td>Credo</td>
-<td>Elixir</td>
-<td>.credo.exs</td>
-<td></td>
-</tr>
-<tr>
-<td>CSSLint</td>
-<td>CSS</td>
-<td>.csslintrc</td>
-<td></td>
-</tr>
-<tr>
-<td>Detekt</td>
-<td>Kotlin</td>
-<td>default-detekt-config.yml, detekt.yml</td>
-<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
-</tr>
-<tr>
-<td><a href="https://eslint.org/docs/user-guide/configuring">ESLint</a></td>
-<td>JavaScript, Typescript, JSON</td>
-<td>.eslintrc.js, .eslintrc.yaml,.eslintrc.yml, .eslintrc.json,<br />
-.eslintrc</td>
-<td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintDefaultOptions.ts#L26">Plugins in the UI</a><br />
- <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L119">Other Plugins</a></td>
-</tr>
-<tr>
-<td>Hadolint</td>
-<td>Docker</td>
-<td>.hadolint.yaml</td>
-<td></td>
-</tr>
-<tr>
-<td>JSHint</td>
-<td>JavaScript</td>
-<td>.jshintrc</td>
-<td></td>
-</tr>
-<tr>
-<td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP CodeSniffer</a></td>
-<td>PHP</td>
-<td>phpcs.xml, phpcs.xml.dist</td>
-<td></td>
-</tr>
-<tr>
-<td>PHPMD</td>
-<td>PHP</td>
-<td>codesize.xml</td>
-<td></td>
-</tr>
-<tr>
-<td>PMD</td>
-<td>Apex, Java, JavaScript, JSP, XML, Velocity and Visualforce</td>
-<td>ruleset.xml, apex-ruleset.xml</td>
-<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
-</tr>
-<tr>
-<td>Prospector</td>
-<td>Python</td>
-<td>.landscape.yml, .landscape.yaml, landscape.yml, landscape.yaml,<br />
-.prospector.yml, .prospector.yaml, prospector.yml, prospector.yaml</td>
-<td></td>
-</tr>
-<tr>
-<td>Pylint</td>
-<td>Python</td>
-<td>pylintrc, .pylintrc</td>
-<td><a href="https://github.com/codacy/codacy-pylint/blob/master/requirements.txt">Plugins</a></td>
-</tr>
-<tr>
-<td>RemarkLint</td>
-<td>Markdown</td>
-<td>.remarkrc, .remarkrc.json, .remarkrc.yaml, .remarkrc.yml, .remarkrc.js</td>
-<td></td>
-</tr>
-<tr>
-<td>Rubocop</td>
-<td>Ruby</td>
-<td>.rubocop.yml</td>
-<td></td>
-</tr>
-<tr>
-<td>Scalastyle</td>
-<td>Scala</td>
-<td>scalastyle_config.xml, scalastyle-config.xml</td>
-<td></td>
-</tr>
-<tr>
-<td>SCSSLint</td>
-<td>SASS</td>
-<td>.scss-lint.yml</td>
-<td></td>
-</tr>
-<tr>
-<td>Sonar C#</td>
-<td>C#</td>
-<td>SonarLint.xml</td>
-<td></td>
-</tr>
-<tr>
-<td>SpotBugs</td>
-<td>Java, Scala</td>
-<td>findbugs.xml, findbugs-includes.xml, findbugs-excludes.xml</td>
-<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
-</tr>
-<tr>
-<td>Stylelint</td>
-<td>LESS, SASS, CSS</td>
-<td>.stylelintrc, stylelint.config.js, .stylelintrc.json, .stylelintrc.yaml, .stylelintrc.js, stylelintrc.yml</td>
-<td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
-</tr>
-<tr>
-<td>SwiftLint</td>
-<td>Swift</td>
-<td>.swiftlint.yml</td>
-<td></td>
-</tr>
-<tr>
-<td>Tailor</td>
-<td>Swift</td>
-<td> .tailor.yml</td>
-<td></td>
-</tr>
-<tr>
-<td>TSLint</td>
-<td>TypeScript</td>
-<td>tslint.json</td>
-<td></td>
-</tr>
-<tr>
-<td>tsqllint</td>
-<td>SQL</td>
-<td>.tsqllintrc</td>
-<td></td>
-</tr>
-<tr>
-<td>Revive</td>
-<td>Go</td>
-<td>revive.toml</td>
-<td></td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>Tool name</th>
+      <th>Language</th>
+      <th>Files detected</th>
+      <th>Other info</th>
+    <tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Ameba</td>
+    <td>Crystal</td>
+    <td><code>.ameba.yml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
+    <td>Python</td>
+    <td><code>bandit.yml</code>, <code>.bandit<code></td>
+    <td>To solve flagged valid Python "assert" statements, create a <code>bandit.yml</code> in the root of the repository containing: <code>skips: \['B101'\]</code></td>
+  </tr>
+  <tr>
+    <td>Brakeman</td>
+    <td>Ruby</td>
+    <td><code>config/brakeman.yml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Checkstyle</td>
+    <td>Java</td>
+    <td><code>checkstyle.xml</code></td>
+    <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
+  </tr>
+  <tr>
+    <td>CodeNarc</td>
+    <td>Groovy</td>
+    <td><code>.codenarcrc</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Credo</td>
+    <td>Elixir</td>
+    <td><code>.credo.exs</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>CSSLint</td>
+    <td>CSS</td>
+    <td><code>.csslintrc</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Detekt</td>
+    <td>Kotlin</td>
+    <td><code>default-detekt-config.yml</code>, <code>detekt.yml</code></td>
+    <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
+  </tr>
+  <tr>
+    <td><a href="https://eslint.org/docs/user-guide/configuring">ESLint</a></td>
+    <td>JavaScript, Typescript, JSON</td>
+    <td><code>.eslintrc.js</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code>, <code>.eslintrc</td>
+    <td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintDefaultOptions.ts#L26">Plugins in the UI</a><br />
+        <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L119">Other Plugins</a></td>
+  </tr>
+  <tr>
+    <td>Hadolint</td>
+    <td>Docker</td>
+    <td><code>.hadolint.yaml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>JSHint</td>
+    <td>JavaScript</td>
+    <td><code>.jshintrc</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP CodeSniffer</a></td>
+    <td>PHP</td>
+    <td><code>phpcs.xml</code>, <code>phpcs.xml.dist</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PHPMD</td>
+    <td>PHP</td>
+    <td><code>codesize.xml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PMD</td>
+    <td>Apex, Java, JavaScript, JSP, XML, Velocity and Visualforce</td>
+    <td><code>ruleset.xml</code>, <code>apex-ruleset.xml</code></td>
+    <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
+  </tr>
+  <tr>
+    <td>Prospector</td>
+    <td>Python</td>
+    <td><code>.landscape.yml</code>, <code>.landscape.yaml</code>, <code>landscape.yml</code>, <code>landscape.yaml</code>, <code>.prospector.yml</code>, <code>.prospector.yaml</code>, <code>prospector.yml</code>, <code>prospector.yaml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Pylint</td>
+    <td>Python</td>
+    <td><code>pylintrc</code>, <code>.pylintrc</code></td>
+    <td><a href="https://github.com/codacy/codacy-pylint/blob/master/requirements.txt">Plugins</a></td>
+  </tr>
+  <tr>
+    <td>RemarkLint</td>
+    <td>Markdown</td>
+    <td><code>.remarkrc</code>, <code>.remarkrc.json</code>, <code>.remarkrc.yaml</code>, <code>.remarkrc.yml</code>, <code>.remarkrc.js</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Rubocop</td>
+    <td>Ruby</td>
+    <td><code>.rubocop.yml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Scalastyle</td>
+    <td>Scala</td>
+    <td><code>scalastyle_config.xml</code>, <code>scalastyle-config.xml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SCSSLint</td>
+    <td>SASS</td>
+    <td><code>.scss-lint.yml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Sonar C#</td>
+    <td>C#</td>
+    <td><code>SonarLint.xml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SpotBugs</td>
+    <td>Java, Scala</td>
+    <td><code>findbugs.xml</code>, <code>findbugs-includes.xml</code>, <code>findbugs-excludes.xml</code></td>
+    <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
+  </tr>
+  <tr>
+    <td>Stylelint</td>
+    <td>LESS, SASS, CSS</td>
+    <td><code>.stylelintrc</code>, <code>stylelint.config.js</code>, <code>.stylelintrc.json</code>, <code>.stylelintrc.yaml</code>, <code>.stylelintrc.js</code>, <code>stylelintrc.yml</code></td>
+    <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
+  </tr>
+  <tr>
+    <td>SwiftLint</td>
+    <td>Swift</td>
+    <td><code>.swiftlint.yml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Tailor</td>
+    <td>Swift</td>
+    <td><code>.tailor.yml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TSLint</td>
+    <td>TypeScript</td>
+    <td><code>tslint.json</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TSQLLint</td>
+    <td>SQL</td>
+    <td><code>.tsqllintrc</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Revive</td>
+    <td>Go</td>
+    <td><code>revive.toml</code></td>
+    <td></td>
+  </tr>
+  </tbody>
 </table>
 
 !!! note
