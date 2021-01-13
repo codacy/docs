@@ -64,7 +64,6 @@ Importing tool and pattern configurations from another repository can help you b
 !!! important
     Consider the following when importing tool and pattern configurations:
 
-    -   **Permissions:** You must have admin permissions on the source repository.
     -   **Tool matching:** Codacy only copies settings for tools that are available on both the source and target repositories, and overwrites the existing settings for these tools on the target repository.
     -   **Toggle status:** Codacy copies the enabled or disabled status of the matching tools from the source to the target repository.
     -   **Configuration files:** Codacy copies the UI configuration of all matching tools, even those set to use configuration files. However, Codacy doesn't change if the tools on the target repository use the UI settings or a configuration file.
