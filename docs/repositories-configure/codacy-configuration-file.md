@@ -60,11 +60,11 @@ To ignore files, you must use the following [Java glob syntax](https://docs.orac
 
 | Pattern            | Ignored files                                                |
 | ------------------ | ------------------------------------------------------------ |
-| `\*\*.extension`   | All files with the same extension across all your repository |
-| `test/\*`          | All files in the root of test                                |
-| `test/\*\*`        | All files and directories inside test                        |
-| `test/\*\*/\*`     | All files inside sub-directories of test                     |
-| `\*\*/\*.resource` | All .resource files in all directories and sub-directories   |
+| `**.extension`     | All files with the same extension across all your repository |
+| `test/*`           | All files in the root of test                                |
+| `test/**`          | All files and directories inside test                        |
+| `test/**/*`        | All files inside sub-directories of test                     |
+| `**/*.resource`    | All .resource files in all directories and sub-directories   |
 
 ## Which tools can be configured and which name should I use?
 
