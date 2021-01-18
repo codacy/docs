@@ -56,9 +56,9 @@ To use a Codacy configuration file:
 
 ## Syntax for excluding files
 
-To ignore files, you must use the following [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29) to define one or more `exclude_paths` patterns:
+To ignore files, you must use the [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29) to define one or more `exclude_paths` patterns. For example:
 
-| Pattern            | Ignored files                                                |
+| Example pattern    | Ignored files                                                |
 | ------------------ | ------------------------------------------------------------ |
 | `**.extension`     | All files with the same extension across all your repository |
 | `test/*`           | All files in the root of test                                |
