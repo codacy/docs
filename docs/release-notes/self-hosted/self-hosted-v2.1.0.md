@@ -6,7 +6,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
--   Improved the [repositories list page](../../organizations/managing-repositories-in-your-organization.md) to streamline managing the repositories in an organization and display metrics for each repository. (CY-1847)
+-   Improved the [repositories list page](../../organizations/managing-repositories.md) to streamline managing the repositories in an organization and display metrics for each repository. (CY-1847)
 
 ## Bug fixes
 

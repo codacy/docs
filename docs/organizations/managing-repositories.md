@@ -1,4 +1,4 @@
-# Managing repositories in your organization
+# Managing repositories
 
 To see a list of the repositories that Codacy is monitoring, open the page **Repositories** under your organization.
 
