@@ -17,5 +17,5 @@ There may be different reasons for this to happen:
     ![Email addresses associated with a user account](images/not-a-member-of-the-organization-account.png)
 
 
-!!! note
-    Please note that Codacy doesn't allow adding email addresses ending with `.local`. In this case, please use the email address that's associated with your Codacy account instead.
+    !!! note
+        Please note that Codacy doesn't allow adding email addresses ending with `.local`. In this case, please use the email address that's associated with your Codacy account instead.
