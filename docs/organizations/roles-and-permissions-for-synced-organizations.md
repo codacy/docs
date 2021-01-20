@@ -9,9 +9,9 @@ Depending on your role on the Git provider you will have different permissions o
       <th>Role</th>
       <th>Join organization</th>
       <th>Ignore issues</th>
-      <th>Add repo</th>
-      <th>Configure repo</th>
-      <th>View repo</th>
+      <th>Add repository</th>
+      <th>Configure repository</th>
+      <th>View repository</th>
       <th>Invite and accept members</th>
       <th>Modify billing</th>
     </tr>
@@ -201,5 +201,3 @@ See [managing people in an organization](what-are-synced-organizations.md#managi
 
 !!! tip
     If you would like to analyze commits from authors that don't belong to your organization, [read more about Authors here](adding-and-managing-authors.md).
-
-Please reach out to us if you have any questions.
