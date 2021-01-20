@@ -276,8 +276,8 @@ plugins:
               "hc/en-us/articles/360012037659-GitLab-Integration.md": "repositories-configure/integrations/gitlab-integration.md"
               "hc/en-us/articles/360012056493.md": "release-notes/cloud/cloud-release-notes-|-02-november-2018.md"
               "hc/en-us/articles/360012056493-Cloud-Release-Notes-02-November-2018.md": "release-notes/cloud/cloud-release-notes-|-02-november-2018.md"
-              "hc/en-us/articles/360012126419.md": "organizations/how-to-configure-which-users-can-ignore-issues.md"
-              "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "organizations/how-to-configure-which-users-can-ignore-issues.md"
+              "hc/en-us/articles/360012126419.md": "organizations/configuring-which-users-can-ignore-issues.md"
+              "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "organizations/configuring-which-users-can-ignore-issues.md"
               "hc/en-us/articles/360012141513.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md"
               "hc/en-us/articles/360012141513-Scheduled-Maintenance-Saturday-17th-Nov-8-00-GMT-0-00-PST-.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md"
               "hc/en-us/articles/360012328140.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
@@ -483,6 +483,7 @@ plugins:
               "related-tools/client-side-tools.md": "related-tools/local-analysis/client-side-tools.md"
               "related-tools/run-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"
               "repositories-configure/ignore-files-from-codacy-analysis.md": "repositories-configure/ignoring-files.md"
+              "organizations/how-to-configure-which-users-can-ignore-issues.md": "organizations/configuring-which-users-can-ignore-issues.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -527,7 +528,7 @@ nav:
           - organizations/managing-repositories.md
           - organizations/managing-people.md
           - organizations/roles-and-permissions-for-synced-organizations.md
-          - organizations/how-to-configure-which-users-can-ignore-issues.md
+          - organizations/configuring-which-users-can-ignore-issues.md
           - "Manual organizations (legacy)":
                 - organizations/manual-organizations/creating-and-renaming-an-organization.md
                 - organizations/manual-organizations/creating-and-managing-teams.md
