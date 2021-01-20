@@ -12,7 +12,7 @@ There may be different reasons for this to happen:
 
     ![Checking the email address for a commit](images/not-a-member-of-the-organization-commit.png)
 
-    To verify which email addresses are associated with your Codacy account, click on your avatar on the top right-hand corner, select **Your account**, and open the page **Emails**:
+    To verify which email addresses are associated with the Codacy account, the user must click on their avatar on the top right-hand corner, select **Your account**, and open the page **Emails**:
 
     ![Email addresses associated with a user account](images/not-a-member-of-the-organization-account.png)
 
