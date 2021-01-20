@@ -193,7 +193,7 @@ Depending on your role on the Git provider you will have different permissions o
 
 <sup id="note-1">1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can [add them as Authors](adding-and-managing-authors.md) so that Codacy analyzes their commits.  
 <sup id="note-2">2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](what-are-synced-organizations.md#managing-people-in-an-organization).  
-<sup id="note-3">3</sup>: Depending on your setting for [configuring which users can ignore issues](how-to-configure-which-users-can-ignore-issues.md).
+<sup id="note-3">3</sup>: Depending on your setting for [configuring which users can ignore issues](configuring-which-users-can-ignore-issues.md).
 
 See [managing people in an organization](what-are-synced-organizations.md#managing-people-in-an-organization) to list your organization members and their role.
 
