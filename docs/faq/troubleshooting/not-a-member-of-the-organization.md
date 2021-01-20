@@ -8,5 +8,14 @@ There may be different reasons for this to happen:
 
 -   **The commit email address isn't associated with the account of a Codacy user.** Codacy automatically associates the email addresses from the Git provider accounts to the Codacy accounts when users sign in to Codacy. Make sure that the user configures the missing email address on their Git provider account, and that the user logs in again on Codacy for the change to take effect.
 
+    You can check which email address is associated with a commit by hovering the cursor on the name of the contributor on the page for the commit:
+
+    ![Checking the email address for a commit](images/not-a-member-of-the-organization-commit.png)
+
+    To verify which email addresses are associated with your Codacy account, click on your avatar on the top right-hand corner, select **Your account**, and open the page **Emails**:
+
+    ![Email addresses associated with a user account](images/not-a-member-of-the-organization-account.png)
+
+
 !!! note
     Please note that Codacy doesn't allow adding email addresses ending with `.local`. In this case, please use the email address that's associated with your Codacy account instead.
