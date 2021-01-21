@@ -28,6 +28,7 @@ Gosec
 Gradle
 Gravatar
 Hadolint
+hostname
 hotfix
 Jira
 jq
