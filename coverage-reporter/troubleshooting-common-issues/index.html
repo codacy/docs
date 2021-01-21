@@ -637,6 +637,12 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
+  <a href="#report-generated-an-empty-result-while-uploading-c-coverage-data" class="md-nav__link">
+    Report generated an empty result while uploading C# coverage data
+  </a>
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
   <a href="#jsonparseexception-while-uploading-c-coverage-data" class="md-nav__link">
     JsonParseException while uploading C# coverage data
   </a>
@@ -2719,6 +2725,10 @@
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
     -r &lt;my report&gt;
 </code></pre></div>
+<h2 id="report-generated-an-empty-result-while-uploading-c-coverage-data">Report generated an empty result while uploading C# coverage data<a class="headerlink" href="#report-generated-an-empty-result-while-uploading-c-coverage-data" title="Permanent link">&para;</a></h2>
+<p>If you are using dotCover to generate coverage reports for your C# projects, you must use the dotCover detailedXML report format as follows:</p>
+<div class="highlight"><pre><span></span><code>dotCover.exe cover ... --reportType<span class="o">=</span>DetailedXml
+</code></pre></div>
 <h2 id="jsonparseexception-while-uploading-c-coverage-data">JsonParseException while uploading C# coverage data<a class="headerlink" href="#jsonparseexception-while-uploading-c-coverage-data" title="Permanent link">&para;</a></h2>
 <p>If you are using dotCover to generate coverage reports for your C# projects, you should <a href="https://www.jetbrains.com/help/dotcover/Running_Coverage_Analysis_from_the_Command_LIne.html#filters_cmd">exclude xUnit files</a> from the coverage analysis as follows:</p>
 <div class="highlight"><pre><span></span><code>dotCover.exe cover ... /Filters<span class="o">=</span>-:xunit*
@@ -2805,7 +2815,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 31, 2020</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 21, 2021</span>
     
   </small>
 </div>
