@@ -13,14 +13,10 @@ jobs:
           submodules: false
           fetch-depth: 0
 
-      - name: File changes
-        id: file_changes
-        uses: trilom/file-changes-action@v1.2.4
-
       - name: Vale
-        uses: errata-ai/vale-action@v1.3.0
+        uses: errata-ai/vale-action@master
         with:
-          files: '${{ steps.file_changes.outputs.files_modified }}'
+          files: __onlyModified
         env:
           # Required
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
