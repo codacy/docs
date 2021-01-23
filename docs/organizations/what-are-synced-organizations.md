@@ -62,10 +62,10 @@ Delete an organization to remove that organization and all its repositories from
 
 To delete an organization, open the **Profile** page and click the button **Delete organization**.
 
-!!! important
-    **If you are using Codacy Cloud** we will ask for your feedback on why you are deleting your organization.
-
 ![Deleting an organization](images/organization-delete.png)
+
+!!! note
+    **If you're using Codacy Cloud** we will ask for your feedback on why you are deleting your organization.
 
 ## See also
 
