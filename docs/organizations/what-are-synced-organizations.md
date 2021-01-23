@@ -66,3 +66,10 @@ To delete an organization, open the **Profile** page and click the button **Dele
     **If you are using Codacy Cloud** we will ask for your feedback on why you are deleting your organization.
 
 ![Deleting an organization](images/organization-delete.png)
+
+## See also
+
+-   [How does Codacy support GitLab Cloud?](../faq/general/how-does-codacy-support-gitlab-cloud.md)
+-   [How does Codacy support GitLab Enterprise?](../faq/general/how-does-codacy-support-gitlab-enterprise.md)
+-   [How does Codacy support Bitbucket Cloud?](../faq/general/how-does-codacy-support-bitbucket-cloud.md)
+-   [How does Codacy support Bitbucket Server?](../faq/general/how-does-codacy-support-bitbucket-server.md)
