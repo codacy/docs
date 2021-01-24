@@ -5,6 +5,11 @@ Members of an organization can see the details of the repositories in that organ
 !!! important
     Make sure that your team members join your organization on Codacy so that Codacy analyzes their commits in the repositories of that organization.
 
+!!! note
+    The organizations on Codacy that contain your personal repositories can only have the owner of the repositories as their single member.
+
+    **If you're using Bitbucket Cloud** the organization that contains your personal repositories can have other members since Bitbucket Cloud doesn't have a different type of [workspace](https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/){: target="_blank"} for personal use.
+
 To list and manage the members of your organization open your organization **Settings**, page **People**:
 
 ![People in an organization](images/organization-people.png)
@@ -59,14 +64,3 @@ When a member leaves an organization:
 To remove members from your organization open your organization **Settings**, page **People**, and click the icon next to the members you wish to remove:
 
 ![Removing people from you organization](images/organization-removing-people.png)
-
-## WIP Notes
-
-<!-- Details about personal organizations
-
-     TODO: Move to "What are synced organizations"? Or does it make more sense to mention this here? -->
-
-The organizations that contain your personal repositories can only have the owner of the repositories as their single member.
-
-!!! important
-    **If you are using Bitbucket Cloud** the organization that contains your personal repositories can have other members since Bitbucket Cloud doesn't have a different type of [workspace](https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/){: target="_blank"} for personal use.
