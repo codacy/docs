@@ -5,8 +5,6 @@
      What does it mean to be a member of an organization?
      Codacy only analyzes commits in repositories from people who are members of the respective organization -->
 
-To become a member of an organization on Codacy you must [sign up to Codacy](../getting-started/getting-started-with-codacy.md) and either join an existing organization or add a new one.
-
 Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, **Codacy only analyzes commits to repositories from contributors who are members of the corresponding organization on Codacy**.
 
 !!! important
@@ -25,22 +23,27 @@ On this page you can see the list of members of your organization and when they 
 
 ## Joining an organization
 
-<!-- Concept: Process for joining an organization -->
+To become a member of an organization on Codacy you must [sign up to Codacy](../getting-started/getting-started-with-codacy.md) using your Git provider and follow the instructions to either join an existing organization or add a new one.
+
+To join or add an organization after completing the sign up process, click **Organizations** on the top right-hand menu under your avatar:
+
+![Joining an organization](images/organization-join.png)
+
+<!-- Concept: Controlling how people join an organization -->
+
+Organization owners can control who joins their organization by choosing one of the following options on the page **Plan and Billing** of the organization:
+
+-   **Allow new people to join:** team members with access to the organization on the Git provider are able to join the Codacy organization automatically. Your billing is updated accordingly.
+-   **New people need to request access to join:** team members with access to the organization on the Git provider must be approved before joining the Codacy organization. You can override this setting for organization owners.
+
+![Accepting new people to the organization](images/organization-accepting-new-people.png)
+
+## Adding members to your organization
 
 <!-- Task: Adding people to an organization
 
      Using either the list of recent contributors and pending requests, or using email addresses -->
 
-Click **Organizations** on the top right-hand menu under your avatar and you will see a list of organizations that you can join:
-
-![Joining an organization](images/organization-join.png)
-
-Members can add themselves to your Codacy organization when they log into Codacy using their Git provider credentials. On the **Plan and Billing** page there are different ways to control who can join your organization:
-
--   **Allow new people to join:** team members with access on the Git provider will be able to join the Codacy organization automatically and your billing will be updated accordingly.
--   **New people need to request access to join:** team members must request access to be able to join the Codacy organization. You can override this setting for organization owners.
-
-![Accepting new people to the organization](images/organization-plan-billing.png)
 
 ## Leaving an organization
 
