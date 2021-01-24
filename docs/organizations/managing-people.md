@@ -34,7 +34,7 @@ To join or add an organization after completing the sign up process, click **Org
 Organization owners can control who joins their organization by choosing one of the following options on the page **Plan and Billing** of the organization:
 
 -   **Allow new people to join:** team members with access to the organization on the Git provider are able to join the Codacy organization automatically. Your billing is updated accordingly.
--   **New people need to request access to join:** team members with access to the organization on the Git provider must be approved before joining the Codacy organization. You can override this setting for organization owners.
+-   **New people need to request access to join:** when team members with access to the organization on the Git provider join the Codacy organization, an organization owner must manually approve their requests on the page **People**. You can override this setting for organization owners.
 
 ![Accepting new people to the organization](images/organization-accepting-new-people.png)
 
