@@ -46,15 +46,19 @@ To add members to your organization:
 
 1.  Confirm the updated billing details displayed at the bottom of the window and click the button **Add people**.
 
-## Leaving an organization
+## Removing people from your organization
 
-<!-- Task: Leaving an organization, Removing people from an organization
+Members of an organization on Codacy can remove themselves from the organization, and organization owners can also remove other members.
 
-     Users leave an organization themselves and removing other users from an organization
+When a member leaves an organization:
 
-     What happens when different types of users leave an organization (stop having access to the organization, stop analyzing repositories added by the user, delete the organization if last remaining organization owner) -->
+-   Codacy stops analyzing commits to repositories in the organization from contributors who are no longer members of the organization on Codacy
+-   Codacy stops analyzing repositories that were added by the member
+-   Organizations must have at least one owner, so when the last organization owner leaves the organization they must also delete the organization
 
-Members can remove themselves from organizations, while owners can remove themselves as well as other users, even other owners. Organizations must have at least one owner.
+To remove members from your organization open your organization **Settings**, page **People**, and click the icon next to the members you wish to remove:
+
+![Removing people from you organization](images/organization-removing-people.png)
 
 ## WIP Notes
 
