@@ -40,10 +40,19 @@ Organization owners can control who joins their organization by choosing one of 
 
 ## Adding members to your organization
 
-<!-- Task: Adding people to an organization
+Organization owners can add other team members to their organization on Codacy. This is useful to allow Codacy to analyze commits by contributors who haven't signed up for Codacy yet.
 
-     Using either the list of recent contributors and pending requests, or using email addresses -->
+To add members to your organization on Codacy:
 
+1.  Open your organization **Settings**, page **People**, and click the button **Add people**.
+
+    <!-- TODO Consider adding another screenshot to show the UI path -->
+
+    ![Adding members to your organization](images/organization-add-people.png)
+
+1.  Select people from the list of recent contributors to the repositories in your organization. Alternatively, click **Add people using email addresses** to manually enter the list of email addresses of the people you wish to add.
+
+1.  Confirm the updated billing details displayed at the bottom of the window and click the button **Add people**.
 
 ## Leaving an organization
 
