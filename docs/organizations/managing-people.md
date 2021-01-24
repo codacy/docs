@@ -5,7 +5,7 @@ Members of an organization can see the details of the repositories in that organ
 !!! important
     Make sure that your team members join your organization on Codacy so that Codacy analyzes their commits in the repositories of that organization.
 
-To list and manage the members of your organization on Codacy open your organization **Settings**, page **People**:
+To list and manage the members of your organization open your organization **Settings**, page **People**:
 
 ![People in an organization](images/organization-people.png)
 
@@ -25,8 +25,8 @@ To join or add an organization after completing the sign up process, click **Org
 
 Organization owners can control who joins their organization by choosing one of the following options on the page **Plan and Billing** of the organization:
 
--   **Allow new people to join:** team members with access to the organization on the Git provider are able to join the Codacy organization automatically. Your billing is updated accordingly.
--   **New people need to request access to join:** when team members with access to the organization on the Git provider join the Codacy organization, an organization owner must manually approve their requests on the page **People**. You can override this setting for organization owners.
+-   **Allow new people to join:** team members with access to the organization on the Git provider are able to join the organization on Codacy automatically. Your billing is updated accordingly.
+-   **New people need to request access to join:** when team members with access to the organization on the Git provider join the organization on Codacy, an organization owner must manually approve their requests on the page **People**. You can override this setting for organization owners.
 
 ![Accepting new people to the organization](images/organization-accepting-new-people.png)
 
@@ -34,7 +34,7 @@ Organization owners can control who joins their organization by choosing one of 
 
 Organization owners can add other team members to their organization on Codacy. This is useful to allow Codacy to analyze commits by contributors who haven't signed up for Codacy yet.
 
-To add members to your organization on Codacy:
+To add members to your organization:
 
 1.  Open your organization **Settings**, page **People**, and click the button **Add people**.
 
