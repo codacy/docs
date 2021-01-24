@@ -17,9 +17,11 @@ Members of an organization can see the details of the repositories in that organ
      Codacy only analyzes commits from users on the People page
      Can be used to check the last login date of the users -->
 
-To see and manage the members of your organization on Codacy open your organization **Settings** and open **People**.
+To list and manage the members of your organization on Codacy open your organization **Settings**, page **People**:
 
-![Managing people in an organization](images/organization-people.png)
+![People in an organization](images/organization-people.png)
+
+On this page you can see the list of members of your organization and when they last logged in to Codacy.
 
 ## Joining an organization
 
