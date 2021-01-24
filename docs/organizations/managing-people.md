@@ -10,7 +10,7 @@ To become a member of an organization on Codacy you must [sign up to Codacy](../
 Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, **Codacy only analyzes commits to repositories from contributors who are members of the corresponding organization on Codacy**.
 
 !!! important
-    Make sure that your team members join your organization on Codacy to allow Codacy to analyze their commits in the repositories of that organization.
+    Make sure that your team members join your organization on Codacy so that Codacy analyzes their commits in the repositories of that organization.
 
 <!-- Task: Listing people in an organization
 
