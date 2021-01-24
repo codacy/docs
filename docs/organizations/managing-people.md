@@ -5,7 +5,12 @@
      What does it mean to be a member of an organization?
      Codacy only analyzes commits in repositories from people who are members of the respective organization -->
 
-As a member, you will be able to see the organization's repositories on Codacy, add new ones to be analyzed, and check each the details of each repository.
+To become a member of an organization on Codacy you must [sign up to Codacy](../getting-started/getting-started-with-codacy.md) and either join an existing organization or add a new one.
+
+Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, **Codacy only analyzes commits to repositories from contributors who are members of the corresponding organization on Codacy**.
+
+!!! important
+    Make sure that your team members join your organization on Codacy to allow Codacy to analyze their commits in the repositories of that organization.
 
 <!-- Task: Listing people in an organization
 
