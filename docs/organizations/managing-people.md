@@ -1,25 +1,17 @@
 # Managing people
 
-<!-- Concept: Member of an organization
-
-     What does it mean to be a member of an organization?
-     Codacy only analyzes commits in repositories from people who are members of the respective organization -->
-
 Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, **Codacy only analyzes commits to repositories from contributors who are members of the corresponding organization on Codacy**.
 
 !!! important
     Make sure that your team members join your organization on Codacy so that Codacy analyzes their commits in the repositories of that organization.
-
-<!-- Task: Listing people in an organization
-
-     Codacy only analyzes commits from users on the People page
-     Can be used to check the last login date of the users -->
 
 To list and manage the members of your organization on Codacy open your organization **Settings**, page **People**:
 
 ![People in an organization](images/organization-people.png)
 
 On this page you can see the list of members of your organization and when they last logged in to Codacy.
+
+<!-- TODO How to see if members are "regular members" or organization owners? -->
 
 ## Joining an organization
 
