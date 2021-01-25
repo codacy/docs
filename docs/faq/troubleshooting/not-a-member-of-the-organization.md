@@ -18,13 +18,13 @@ There may be different reasons for this issue to happen:
 
 -   **Git isn't configured with your correct email address.** Unless you explicitly [configure your email address](https://git-scm.com/docs/git-config#Documentation/git-config.txt-useremail), Git automatically uses an email address based on the username and hostname of your workstation, and associates this email address with your commits.
 
-    To check which email address is configured on your local Git installation, run:
+    To check which email address your local Git installation is using, run the following command on your workstation:
 
     ```bash
     git config user.email
     ```
 
-    If the value is incorrect, configure Git to use the same email address as the one associated with your Codacy account:
+    If the returned email address isn't one of the email addresses associated with your Git provider account, configure Git to use one of those email addresses instead:
 
     ```bash
     git config --global user.email you@example.com
