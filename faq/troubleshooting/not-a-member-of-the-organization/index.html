@@ -2631,19 +2631,32 @@
                 
                 <h1 id="not-a-member-of-the-organization">Not a member of the organization<a class="headerlink" href="#not-a-member-of-the-organization" title="Permanent link">&para;</a></h1>
 <p>When you see this message, it means that Codacy can't analyze a commit because the associated email address doesn't belong to any Codacy member or author.</p>
-<p>There may be different reasons for this to happen:</p>
+<p>You can check which email address is associated with a commit by hovering the cursor on the name of the contributor on the page for the commit:</p>
+<p><img alt="Checking the email address for a commit" src="../images/not-a-member-of-the-organization-commit.png" /></p>
+<p>To verify which email addresses are associated with the Codacy account, the user must click on their avatar on the top right-hand corner, select <strong>Your account</strong>, and open the page <strong>Emails</strong>:</p>
+<p><img alt="Email addresses associated with a user account" src="../images/not-a-member-of-the-organization-account.png" /></p>
+<p>There may be different reasons for this issue to happen:</p>
 <ul>
 <li>
-<p>The user making the commit hasn't <a href="../../../getting-started/getting-started-with-codacy/">signed in to Codacy and joined the organization</a> yet. Or, if the user doesn't belong to your organization, <a href="../../../organizations/adding-and-managing-authors/">add the user as an author</a> instead.</p>
+<p><strong>The user making the commit hasn't <a href="../../../getting-started/getting-started-with-codacy/">signed in to Codacy and joined the organization</a> yet.</strong> Or, if the user doesn't belong to your organization, an organization owner must <a href="../../../organizations/adding-and-managing-authors/">add the user as an author</a> instead.</p>
 </li>
 <li>
-<p>The commit email address isn't associated with the account of a Codacy user. Codacy automatically associates the email addresses from the Git provider accounts to the Codacy accounts when users sign in to Codacy. Make sure that the user configures the missing email address on their Git provider account, and that the user logs in again on Codacy for the change to take effect.</p>
+<p><strong>The commit email address isn't associated with the account of a Codacy user.</strong> Codacy automatically associates the email addresses from the Git provider accounts to the Codacy accounts when users sign in to Codacy. Make sure that the user configures the missing email address on their Git provider account, and that the user logs in again on Codacy for the change to take effect.</p>
+</li>
+<li>
+<p><strong>Git isn't configured with your correct email address.</strong> Unless you explicitly <a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-useremail">configure your email address</a>, Git automatically uses an email address based on the username and hostname of your workstation, and associates this email address with your commits.</p>
+<p>To check which email address your local Git installation is using, run the following command on your workstation:</p>
+<div class="highlight"><pre><span></span><code>git config user.email
+</code></pre></div>
+<p>If the returned email address isn't one of the email addresses associated with your Git provider account, configure Git to use one of those email addresses instead:</p>
+<div class="highlight"><pre><span></span><code>git config --global user.email you@example.com
+</code></pre></div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Make sure that your email address doesn't include any extra characters such as quotes (<code>""</code> or <code>''</code>).</p>
+</div>
 </li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Please note that Codacy doesn't allow adding email addresses ending with <code>.local</code>. In this case, please use the email address that's associated with your Codacy account instead.</p>
-</div>
               
               
                 
@@ -2717,7 +2730,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 19, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2021</span>
     
   </small>
 </div>
