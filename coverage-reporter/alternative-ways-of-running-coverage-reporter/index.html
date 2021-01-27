@@ -2699,10 +2699,6 @@
 </code></pre></div>
 </li>
 </ul>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p><strong>If you're using macOS Big Sur</strong> you must <a href="#java">use the Java binary</a> to run Codacy Coverage Reporter. For more details, see the issue <a href="https://github.com/codacy/codacy-coverage-reporter/issues/276">#276</a>.</p>
-</div>
 <p>The self-contained script can cache the binary. To avoid downloading the binary every time that the script runs, add one of the following directories to your CI cached folders:</p>
 <ul>
 <li><code>$HOME/.cache/codacy</code> on Linux</li>
@@ -2918,7 +2914,7 @@ task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 15, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 27, 2021</span>
     
   </small>
 </div>
