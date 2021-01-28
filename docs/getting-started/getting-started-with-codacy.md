@@ -31,9 +31,11 @@ Codacy begins an initial analysis as soon as you add a repository, and displays 
 
 ![Repository dashboard](../repositories/images/repository-dashboard.png)
 
-## 4. Tweak your repositories
+## 4. Tweak your repository settings {: id="tweak-settings"}
 
- [Check the static analysis results](../repositories/issues-view.md) on the Issues page to explore the initial analysis results, and tweak the Codacy configurations for your repositories:
+ [Check the static analysis results](../repositories/issues-view.md) on the Issues page to explore the initial analysis results.
+ 
+ The first analysis is based on Codacy **default configurations**, so you should tweak and adapt the following configurations to match your preferences and specific scenario:
 
 -   [Ignore files](../repositories-configure/ignoring-files.md) that you want to exclude from the Codacy analysis
 -   [Configure the code patterns](../repositories-configure/code-patterns.md) that Codacy uses to analyze your repository
