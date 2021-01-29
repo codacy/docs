@@ -18,7 +18,7 @@ On this page you can see the list of members of your organization and when they 
 
 <!-- TODO How to see if members are "regular members" or organization owners? -->
 
-## Joining an organization
+## Joining an organization {: id="joining"}
 
 To become a member of an organization on Codacy you must [sign up to Codacy](../getting-started/getting-started-with-codacy.md) using your Git provider and follow the instructions to either join an existing organization or add a new one.
 
@@ -35,7 +35,7 @@ Organization owners can control who joins their organization by choosing one of 
 
 ![Accepting new people to the organization](images/organization-accepting-new-people.png)
 
-## Adding members to your organization
+## Adding people to your organization {: id="adding-people"}
 
 Organization owners can add other team members to their organization on Codacy. This is useful to allow Codacy to analyze commits by contributors who haven't signed up for Codacy yet.
 
@@ -51,7 +51,7 @@ To add members to your organization:
 
 1.  Confirm the updated billing details displayed at the bottom of the window and click the button **Add people**.
 
-## Removing people from your organization
+## Removing people from your organization {: id="removing-people"}
 
 Members of an organization on Codacy can remove themselves from the organization, and organization owners can also remove other members.
 
@@ -63,4 +63,4 @@ When a member leaves an organization:
 
 To remove members from your organization open your organization **Settings**, page **People**, and click the icon next to the members you wish to remove:
 
-![Removing people from you organization](images/organization-removing-people.png)
+![Removing people from your organization](images/organization-removing-people.png)
