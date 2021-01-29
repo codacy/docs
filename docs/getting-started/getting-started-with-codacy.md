@@ -8,13 +8,9 @@ To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.
 
 Signing up with a Git provider such as GitHub, GitLab, or Bitbucket links your Codacy user with your Git provider user, making it easier to add repositories to Codacy and invite your teammates.
 
-Codacy will ask you to have access to your Git provider during the authorization flow. [Check the permissions that Codacy requires and why](which-permissions-does-codacy-need-from-my-account.md).
+Codacy will ask you to have access to your Git provider during the authorization flow. [Check the permissions that Codacy requires and why](which-permissions-does-codacy-need-from-my-account.md). Codacy will also ask you to fill in a few details about your company so we know a bit more about your use case.
 
-## 2. Account details {: id="account-details"}
-
-You'll be asked to fill in a few details about your company so we know a bit more about your use case.
-
-## 3. Choose an organization {: id="choose-organization"}
+## 2. Choose an organization {: id="choose-organization"}
 
 Now, you'll need to join one or more organizations that contain your repositories. The organization with the same name as your Git provider username contains your personal repositories. The selected organizations will then be synced with Codacy so that managing your team permissions is easy. Read more about [what synced organizations do](../organizations/what-are-synced-organizations.md). 
 
@@ -25,23 +21,34 @@ Now, you'll need to join one or more organizations that contain your repositorie
 
 To start adding your repositories, select one of the organizations and click **Go to add repositories**.
 
-## 4. Add repositories {: id="add-repositories"}
+## 3. Add repositories {: id="add-repositories"}
 
 As a final step, add the repositories that you wish to analyze. Codacy will start the first analysis and set up everything required to ensure your next commits on those repositories are analyzed.
 
-![Adding repositories](images/getting-started-add-repository.png)
+!!! tip
+    You can only add repositories on Codacy if you have the [necessary permissions on your Git provider](../organizations/roles-and-permissions-for-synced-organizations.md).
 
-## You're all set! 🎉 {: id="all-set"}
+![Adding repositories](images/getting-started-add-repository.png)
 
 Codacy begins an initial analysis as soon as you add a repository, and displays an overview of the code quality of your repository when the analysis is complete.
 
-After that, you can continue to explore and configure Codacy for your repository:
-
--   [Check the static analysis results](../repositories/issues-view.md) on the Issues page
--   [Configure the code patterns](../repositories-configure/code-patterns.md) that Codacy uses to analyze your repository
--   [Ignore files](../repositories-configure/ignoring-files.md) that you want to exclude from the Codacy analysis
--   [Configure your quality settings](../repositories/quality-settings.md) for pull requests
--   [Add coverage reports to Codacy](../coverage-reporter/adding-coverage-to-your-repository.md)
--   [Add a Codacy badge to your repository](../repositories/badges.md) displaying the current code quality grade or code coverage
-
 ![Repository dashboard](../repositories/images/repository-dashboard.png)
+
+## 4. Tweak your repository settings {: id="tweak-settings"}
+
+ [Check the static analysis results](../repositories/issues-view.md) on the Issues page to explore the initial analysis results.
+ 
+ The first analysis is based on Codacy **default configurations**, so you should tweak and adapt the following configurations to match your preferences and specific scenario:
+
+-   [Ignore files](../repositories-configure/ignoring-files.md) that you want to exclude from the Codacy analysis
+-   [Configure the code patterns](../repositories-configure/code-patterns.md) that Codacy uses to analyze your repository
+-   [Configure your quality settings](../repositories/quality-settings.md) for pull requests
+
+## You're all set! 🎉 {: id="all-set"}
+
+Congratulations, your new repository is ready!
+
+Optionally, you can also:
+
+-   [Add a Codacy badge to your repository](../repositories/badges.md) displaying the current code quality grade or code coverage
+-   [Add coverage reports to Codacy](../coverage-reporter/adding-coverage-to-your-repository.md).
