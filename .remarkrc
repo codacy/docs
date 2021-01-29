@@ -11,6 +11,9 @@
     ],
     [
       "lint-ordered-list-marker-value", "one"
+    ],
+    [
+      "lint-code-block-style", "consistent"
     ]
   ]
 }
