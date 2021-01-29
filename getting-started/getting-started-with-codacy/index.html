@@ -220,20 +220,20 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#account-details" class="md-nav__link">
-    2. Account details
-  </a>
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
   <a href="#choose-organization" class="md-nav__link">
-    3. Choose an organization
+    2. Choose an organization
   </a>
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#add-repositories" class="md-nav__link">
-    4. Add repositories
+    3. Add repositories
+  </a>
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#tweak-settings" class="md-nav__link">
+    4. Tweak your repository settings
   </a>
 </li>
       
@@ -2682,10 +2682,8 @@
 <p>To get started, head to <a href="https://www.codacy.com/"><span class="skip-vale">codacy.com</span></a> and click <strong>Get started</strong>.</p>
 <h2 id="sign-up">1. Sign up<a class="headerlink" href="#sign-up" title="Permanent link">&para;</a></h2>
 <p>Signing up with a Git provider such as GitHub, GitLab, or Bitbucket links your Codacy user with your Git provider user, making it easier to add repositories to Codacy and invite your teammates.</p>
-<p>Codacy will ask you to have access to your Git provider during the authorization flow. <a href="../which-permissions-does-codacy-need-from-my-account/">Check the permissions that Codacy requires and why</a>.</p>
-<h2 id="account-details">2. Account details<a class="headerlink" href="#account-details" title="Permanent link">&para;</a></h2>
-<p>You'll be asked to fill in a few details about your company so we know a bit more about your use case.</p>
-<h2 id="choose-organization">3. Choose an organization<a class="headerlink" href="#choose-organization" title="Permanent link">&para;</a></h2>
+<p>Codacy will ask you to have access to your Git provider during the authorization flow. <a href="../which-permissions-does-codacy-need-from-my-account/">Check the permissions that Codacy requires and why</a>. Codacy will also ask you to fill in a few details about your company so we know a bit more about your use case.</p>
+<h2 id="choose-organization">2. Choose an organization<a class="headerlink" href="#choose-organization" title="Permanent link">&para;</a></h2>
 <p>Now, you'll need to join one or more organizations that contain your repositories. The organization with the same name as your Git provider username contains your personal repositories. The selected organizations will then be synced with Codacy so that managing your team permissions is easy. Read more about <a href="../../organizations/what-are-synced-organizations/">what synced organizations do</a>. </p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -2693,21 +2691,30 @@
 </div>
 <p><img alt="Choosing an organization" src="../images/getting-started-choose-organization.png" /></p>
 <p>To start adding your repositories, select one of the organizations and click <strong>Go to add repositories</strong>.</p>
-<h2 id="add-repositories">4. Add repositories<a class="headerlink" href="#add-repositories" title="Permanent link">&para;</a></h2>
+<h2 id="add-repositories">3. Add repositories<a class="headerlink" href="#add-repositories" title="Permanent link">&para;</a></h2>
 <p>As a final step, add the repositories that you wish to analyze. Codacy will start the first analysis and set up everything required to ensure your next commits on those repositories are analyzed.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can only add repositories on Codacy if you have the <a href="../../organizations/roles-and-permissions-for-synced-organizations/">necessary permissions on your Git provider</a>.</p>
+</div>
 <p><img alt="Adding repositories" src="../images/getting-started-add-repository.png" /></p>
-<h2 id="all-set">You're all set! 🎉<a class="headerlink" href="#all-set" title="Permanent link">&para;</a></h2>
 <p>Codacy begins an initial analysis as soon as you add a repository, and displays an overview of the code quality of your repository when the analysis is complete.</p>
-<p>After that, you can continue to explore and configure Codacy for your repository:</p>
-<ul>
-<li><a href="../../repositories/issues-view/">Check the static analysis results</a> on the Issues page</li>
-<li><a href="../../repositories-configure/code-patterns/">Configure the code patterns</a> that Codacy uses to analyze your repository</li>
-<li><a href="../../repositories-configure/ignoring-files/">Ignore files</a> that you want to exclude from the Codacy analysis</li>
-<li><a href="../../repositories/quality-settings/">Configure your quality settings</a> for pull requests</li>
-<li><a href="../../coverage-reporter/adding-coverage-to-your-repository/">Add coverage reports to Codacy</a></li>
-<li><a href="../../repositories/badges/">Add a Codacy badge to your repository</a> displaying the current code quality grade or code coverage</li>
-</ul>
 <p><img alt="Repository dashboard" src="../../repositories/images/repository-dashboard.png" /></p>
+<h2 id="tweak-settings">4. Tweak your repository settings<a class="headerlink" href="#tweak-settings" title="Permanent link">&para;</a></h2>
+<p><a href="../../repositories/issues-view/">Check the static analysis results</a> on the Issues page to explore the initial analysis results.</p>
+<p>The first analysis is based on Codacy <strong>default configurations</strong>, so you should tweak and adapt the following configurations to match your preferences and specific scenario:</p>
+<ul>
+<li><a href="../../repositories-configure/ignoring-files/">Ignore files</a> that you want to exclude from the Codacy analysis</li>
+<li><a href="../../repositories-configure/code-patterns/">Configure the code patterns</a> that Codacy uses to analyze your repository</li>
+<li><a href="../../repositories/quality-settings/">Configure your quality settings</a> for pull requests</li>
+</ul>
+<h2 id="all-set">You're all set! 🎉<a class="headerlink" href="#all-set" title="Permanent link">&para;</a></h2>
+<p>Congratulations, your new repository is ready!</p>
+<p>Optionally, you can also:</p>
+<ul>
+<li><a href="../../repositories/badges/">Add a Codacy badge to your repository</a> displaying the current code quality grade or code coverage</li>
+<li><a href="../../coverage-reporter/adding-coverage-to-your-repository/">Add coverage reports to Codacy</a>.</li>
+</ul>
               
               
                 
@@ -2781,7 +2788,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 7, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 29, 2021</span>
     
   </small>
 </div>
