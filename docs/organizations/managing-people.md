@@ -5,28 +5,19 @@ Members of an organization can see the details of the repositories in that organ
 !!! important
     Make sure that your team members join your organization on Codacy so that Codacy analyzes their commits in the repositories of that organization.
 
-!!! note
-    The organizations on Codacy that contain your personal repositories can only have the owner of the repositories as their single member.
-
-    **If you're using Bitbucket Cloud** the organization that contains your personal repositories can have other members since Bitbucket Cloud doesn't have a different type of [workspace](https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/){: target="_blank"} for personal use.
-
 To list and manage the members of your organization open your organization **Settings**, page **People**:
 
 ![People in an organization](images/organization-people.png)
 
 On this page you can see the list of members of your organization and when they last logged in to Codacy.
 
-<!-- TODO How to see if members are "regular members" or organization owners? -->
-
 ## Joining an organization {: id="joining"}
 
 To become a member of an organization on Codacy you must [sign up to Codacy](../getting-started/getting-started-with-codacy.md) using your Git provider and follow the instructions to either join an existing organization or add a new one.
 
-To join or add an organization after completing the sign up process, click **Organizations** on the top right-hand menu under your avatar:
+To join or add an organization after completing the signup process, click **Organizations** on the top right-hand menu under your avatar:
 
 ![Joining an organization](images/organization-join.png)
-
-<!-- Concept: Controlling how people join an organization -->
 
 Organization owners can control who joins their organization by choosing one of the following options on the page **Plan and Billing** of the organization:
 
