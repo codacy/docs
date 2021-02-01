@@ -20,7 +20,7 @@ Added support for the following plugins:
 
 -   [Rubocop-rails](https://github.com/rubocop-hq/rubocop-rails)
 -   [<span class="skip-vale">eslint-plugin-wdio</span>](https://www.npmjs.com/package/eslint-plugin-wdio)
--   [<span class="skip-vale">vue-eslint-parser</span>](https://github.com/mysticatea/vue-eslint-parser)
+-   [<span class="skip-vale">vue-eslint-parser</span>](https://github.com/vuejs/vue-eslint-parser)
 
 ## Bug fixes
 
