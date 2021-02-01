@@ -8,4 +8,4 @@ mkdocs-git-revision-date-localized-plugin==0.8
 mkdocs-monorepo-plugin==0.4.11
 mkdocs-markdownextradata-plugin==0.2.0
 mkdocs-redirects==1.0.1
-mkdocs-rss-plugin==0.10.0
+mkdocs-rss-plugin==0.12.0
