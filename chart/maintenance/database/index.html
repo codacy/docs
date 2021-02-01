@@ -2716,7 +2716,7 @@
 <span class="nv">DB_PASSWORD</span><span class="o">=</span><span class="nv">$6</span>
 
 <span class="nb">declare</span> -a <span class="nv">dbs</span><span class="o">=(</span>accounts analysis filestore <span class="nb">jobs</span> metrics results<span class="o">)</span>
-<span class="k">for</span> db in <span class="si">${</span><span class="nv">dbs</span><span class="p">[@]</span><span class="si">}</span>
+<span class="k">for</span> db <span class="k">in</span> <span class="si">${</span><span class="nv">dbs</span><span class="p">[@]</span><span class="si">}</span>
 <span class="k">do</span>
   <span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span> pg_dump -h <span class="nv">$SRC_HOSTNAME</span> -p <span class="nv">$SRC_HOSTPORT</span> -U <span class="nv">$DB_USER</span> --clean -Fc <span class="nv">$db</span> &gt; /tmp/<span class="nv">$db</span>.dump
   <span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span> pg_restore -h <span class="nv">$DEST_HOSTNAME</span> -p <span class="nv">$DEST_HOSTPORT</span> -U <span class="nv">$DB_USER</span> -d <span class="nv">$db</span> -n public --clean <span class="nv">$db</span>.dump

@@ -2761,14 +2761,14 @@
 <span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;REPLACE_ME&gt;&quot;</span>
 
 <span class="nb">printf</span> <span class="s2">&quot;Obtaining all repositories in the </span><span class="nv">$GITHUB_ORG_NAME</span><span class="s2"> organization\n&quot;</span>
-<span class="k">for</span> repo in <span class="k">$(</span>curl -s https://api.github.com/orgs/<span class="nv">$GITHUB_ORG_NAME</span>/repos -H <span class="s2">&quot;Authorization: Bearer </span><span class="nv">$GITHUB_AUTH_TOKEN</span><span class="s2">&quot;</span> <span class="p">|</span> jq -r <span class="s1">&#39;.[] | .full_name&#39;</span><span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+<span class="k">for</span> repo <span class="k">in</span> <span class="k">$(</span>curl -s https://api.github.com/orgs/<span class="nv">$GITHUB_ORG_NAME</span>/repos -H <span class="s2">&quot;Authorization: Bearer </span><span class="nv">$GITHUB_AUTH_TOKEN</span><span class="s2">&quot;</span> <span class="p">|</span> jq -r <span class="s1">&#39;.[] | .full_name&#39;</span><span class="k">)</span><span class="p">;</span> <span class="k">do</span>
   <span class="nb">printf</span> <span class="s2">&quot;Adding </span><span class="nv">$repo</span><span class="s2"> to Codacy\n&quot;</span>
   <span class="nv">http_status</span><span class="o">=</span><span class="k">$(</span>curl -X POST https://app.codacy.com/api/v3/repositories <span class="se">\</span>
                      -H <span class="s2">&quot;Content-Type: application/json&quot;</span> <span class="se">\</span>
                      -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
                      -d <span class="s1">&#39;{&quot;provider&quot;:&quot;gh&quot;, &quot;repositoryFullPath&quot;:&quot;&#39;</span><span class="nv">$repo</span><span class="s1">&#39;&quot;}&#39;</span> <span class="se">\</span>
                      -sSo /dev/null -w <span class="s2">&quot;%{http_code}&quot;</span><span class="k">)</span>
-  <span class="k">case</span> <span class="s2">&quot;</span><span class="nv">$http_status</span><span class="s2">&quot;</span> in
+  <span class="k">case</span> <span class="s2">&quot;</span><span class="nv">$http_status</span><span class="s2">&quot;</span> <span class="k">in</span>
     <span class="m">200</span><span class="o">)</span> <span class="nb">printf</span> <span class="s2">&quot;</span><span class="nv">$repo</span><span class="s2"> added successfully\n&quot;</span>
          <span class="p">;;</span>
     <span class="m">401</span><span class="o">)</span> <span class="nb">printf</span> <span class="s2">&quot;Error: 401 Unauthorized, check the Codacy API token\n&quot;</span>
