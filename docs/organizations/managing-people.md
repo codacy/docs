@@ -5,17 +5,15 @@ Members of an organization can see the details of the repositories in that organ
 !!! important
     Make sure that your team members join your organization on Codacy so that Codacy analyzes their commits in the repositories of that organization.
 
-To list and manage the members of your organization open your organization **Settings**, page **People**:
+To list and manage the members of your organization, open your organization **Settings**, page **People**. This page also shows when the organization members last logged in to Codacy:
 
 ![People in an organization](images/organization-people.png)
-
-On this page you can see the list of members of your organization and when they last logged in to Codacy.
 
 ## Joining an organization {: id="joining"}
 
 To become a member of an organization on Codacy you must [sign up to Codacy](../getting-started/getting-started-with-codacy.md) using your Git provider and follow the instructions to either join an existing organization or add a new one.
 
-To join or add an organization after completing the signup process, click **Organizations** on the top right-hand menu under your avatar:
+To join or add an organization after having complete the signup process, click **Organizations** on the top right-hand menu under your avatar:
 
 ![Joining an organization](images/organization-join.png)
 
