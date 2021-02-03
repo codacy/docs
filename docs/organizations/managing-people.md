@@ -1,9 +1,9 @@
 # Managing people
 
-Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, **Codacy only analyzes commits to repositories from contributors who are members of the corresponding organization on Codacy**.
+Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, Codacy only analyzes commits to **private repositories** from contributors who are members of the corresponding organization on Codacy.
 
 !!! important
-    Make sure that your team members join your organization on Codacy so that Codacy analyzes their commits in the repositories of that organization.
+    Make sure that your team members join your organization on Codacy so that Codacy analyzes their commits in the private repositories of that organization.
 
 To list and manage the members of your organization, open your organization **Settings**, page **People**. This page also shows when the organization members last logged in to Codacy:
 
@@ -26,7 +26,7 @@ Organization owners can control who joins their organization by choosing one of 
 
 ## Adding people to your organization {: id="adding-people"}
 
-Organization owners can add other team members to their organization on Codacy. This is useful to allow Codacy to analyze commits by contributors who haven't signed up for Codacy yet.
+Organization owners can add other team members to their organization on Codacy. This is useful to allow Codacy to analyze commits in private repositories by contributors who haven't signed up for Codacy yet.
 
 To add members to your organization:
 
