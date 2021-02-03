@@ -22,7 +22,7 @@ Organization owners can control who joins their organization by choosing one of 
 -   **Allow new people to join:** team members with access to the organization on the Git provider can join the organization on Codacy automatically. Your billing is updated accordingly.
 -   **New people need to request access to join:** when team members with access to the organization on the Git provider join the organization on Codacy, an organization owner must manually approve their requests on the page **People**. You can override this setting for organization owners.
 
-![Accepting new people to the organization](images/organization-accepting-new-people.png)
+![Accepting new people to the organization](images/organization-people-accept.png)
 
 ## Adding people to your organization {: id="adding-people"}
 
@@ -32,11 +32,11 @@ To add members to your organization:
 
 1.  Open your organization **Settings**, page **People**, and click the button **Add people**.
 
-    <!-- TODO Consider adding another screenshot to show the UI path -->
-
-    ![Adding members to your organization](images/organization-add-people.png)
+    ![Adding members to your organization](images/organization-people-add-button.png)
 
 1.  Select people from the list of recent contributors to the repositories in your organization. Alternatively, click **Add people using email addresses** to manually enter the list of email addresses of the people you wish to add.
+
+    ![Adding members to your organization](images/organization-people-add-modal.png)
 
 1.  Confirm the updated billing details displayed at the bottom of the window and click the button **Add people**.
 
@@ -52,4 +52,4 @@ When a member leaves an organization:
 
 To remove members from your organization open your organization **Settings**, page **People**, and click the icon next to the members you wish to remove:
 
-![Removing people from your organization](images/organization-removing-people.png)
+![Removing people from your organization](images/organization-people-remove.png)
