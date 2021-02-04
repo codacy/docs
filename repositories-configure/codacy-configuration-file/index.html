@@ -2663,8 +2663,8 @@
 <p>Codacy supports configuring certain advanced features through a configuration file:</p>
 <ul>
 <li>
-<p>Ignoring files globally, for certain categories (duplication or metrics) or for a specific tool</p>
-<p>The category metrics refers to the information you find under <a href="../../repositories/files-view/">File details</a> such as Size, Structure and Complexity.</p>
+<p>Ignoring files globally, for certain analysis categories or a specific tool</p>
+<p>The available analysis categories are <strong>Duplication</strong>, <strong>Metrics</strong>, and <strong>Coverage</strong>. The category <strong>Metrics</strong> refers to the information you find under <a href="../../repositories/files-view/">File details</a> such as Size, Structure, and Complexity.</p>
 </li>
 <li>
 <p>Configuring a specific repository directory on which to start the analysis</p>
@@ -2694,25 +2694,31 @@
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">engines</span><span class="p">:</span>
   <span class="nt">rubocop</span><span class="p">:</span>
+    <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
     <span class="nt">exclude_paths</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">config/engines.yml</span>
-    <span class="nt">base_sub_dir</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">test/baseDir</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;config/test.yml&quot;</span>
+    <span class="nt">base_sub_dir</span><span class="p">:</span> <span class="s">&quot;test/baseDir&quot;</span>
   <span class="nt">duplication</span><span class="p">:</span>
+    <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
     <span class="nt">exclude_paths</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">config/engines.yml</span>
-  <span class="nt">metric</span><span class="p">:</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;config/test.yml&quot;</span>
+    <span class="nt">config</span><span class="p">:</span>
+      <span class="nt">languages</span><span class="p">:</span>
+        <span class="p p-Indicator">-</span> <span class="s">&quot;ruby&quot;</span>
+  <span class="nt">metrics</span><span class="p">:</span>
+    <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
     <span class="nt">exclude_paths</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">config/engines.yml</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;config/test.yml&quot;</span>
 <span class="nt">languages</span><span class="p">:</span>
   <span class="nt">css</span><span class="p">:</span>
     <span class="nt">extensions</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&#39;-css.resource&#39;</span>
+      <span class="p p-Indicator">-</span> <span class="s">&quot;-css.resource&quot;</span>
 <span class="nt">exclude_paths</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&#39;.bundle/**&#39;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&#39;spec/**/*&#39;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&#39;benchmarks/**/*&#39;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&#39;**.min.js&#39;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&#39;**/tests/**&#39;</span>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;.bundle/**&quot;</span>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;spec/**/*&quot;</span>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;benchmarks/**/*&quot;</span>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;**.min.js&quot;</span>
+  <span class="p p-Indicator">-</span> <span class="s">&quot;**/tests/**&quot;</span>
 </code></pre></div>
 </li>
 <li>
@@ -2732,8 +2738,8 @@
 </thead>
 <tbody>
 <tr>
-<td><code>**.extension</code></td>
-<td>All files with the same extension across all your repository</td>
+<td><code>test/README.md</code></td>
+<td>The file <code>test/README.md</code></td>
 </tr>
 <tr>
 <td><code>test/*</code></td>
@@ -2748,8 +2754,12 @@
 <td>All files inside sub-directories of test</td>
 </tr>
 <tr>
+<td><code>**.resource</code></td>
+<td>All <code>.resource</code> files across all your repository</td>
+</tr>
+<tr>
 <td><code>**/*.resource</code></td>
-<td>All .resource files in all directories and sub-directories</td>
+<td>All <code>.resource</code> files in all directories and sub-directories</td>
 </tr>
 </tbody>
 </table>
@@ -2874,7 +2884,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 18, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 4, 2021</span>
     
   </small>
 </div>
