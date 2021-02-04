@@ -1,10 +1,19 @@
 # Files View
 
-The file list shows all the files in your repository, sortable by six different columns: [grade](what-are-the-different-grades-and-how-are-they-calculated.md), filename, number of issues, code duplication, [complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity), and code coverage. There is also a search filter available.
+The file list shows all the files in your repository, sortable by six different columns:
+
+-   [Grade](what-are-the-different-grades-and-how-are-they-calculated.md)
+-   Filename
+-   Number of issues
+-   Code duplication
+-   [Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
+-   Code coverage
+
+There is also a search filter available.
 
 This allows you to keep track or focus some of your time on files with low coverage, high complexity, too many issues, or simply a lot of duplication that could be refactored.
 
-When you click in a filename, it opens the File detail.
+Clicking on a filename opens the File detail.
 
 ![Files list](images/file-list.png)
 
