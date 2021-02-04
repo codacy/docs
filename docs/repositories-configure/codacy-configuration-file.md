@@ -66,11 +66,12 @@ To ignore files, you must use the [Java glob syntax](https://docs.oracle.com/jav
 
 | Example pattern    | Ignored files                                                |
 | ------------------ | ------------------------------------------------------------ |
-| `**.extension`     | All files with the same extension across all your repository |
+| `test/README.md`   | The file `test/README.md`                                    |
 | `test/*`           | All files in the root of test                                |
 | `test/**`          | All files and directories inside test                        |
 | `test/**/*`        | All files inside sub-directories of test                     |
-| `**/*.resource`    | All .resource files in all directories and sub-directories   |
+| `**.resource`      | All `.resource` files across all your repository             |
+| `**/*.resource`    | All `.resource` files in all directories and sub-directories |
 
 ## Which tools can be configured and which name should I use?
 
