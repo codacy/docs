@@ -33,7 +33,7 @@ To use a Codacy configuration file:
       duplication:
         exclude_paths:
           - config/engines.yml
-      metric:
+      metrics:
         exclude_paths:
           - config/engines.yml
     languages:
