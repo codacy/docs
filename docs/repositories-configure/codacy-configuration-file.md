@@ -2,9 +2,9 @@
 
 Codacy supports configuring certain advanced features through a configuration file:
 
--   Ignoring files globally, for certain categories (duplication or metrics) or for a specific tool
+-   Ignoring files globally, for certain analysis categories or a specific tool
 
-    The category metrics refers to the information you find under [File details](../repositories/files-view.md) such as Size, Structure and Complexity.
+    The available analysis categories are **Duplication**, **Metrics**, and **Coverage**. The category **Metrics** refers to the information you find under [File details](../repositories/files-view.md) such as Size, Structure, and Complexity.
 
 -   Configuring a specific repository directory on which to start the analysis
 
@@ -27,25 +27,31 @@ To use a Codacy configuration file:
     ---
     engines:
       rubocop:
+        enabled: true
         exclude_paths:
-          - config/engines.yml
-        base_sub_dir: test/baseDir
+          - "config/test.yml"
+        base_sub_dir: "test/baseDir"
       duplication:
+        enabled: true
         exclude_paths:
-          - config/engines.yml
-      metric:
+          - "config/test.yml"
+        config:
+          languages:
+            - "ruby"
+      metrics:
+        enabled: true
         exclude_paths:
-          - config/engines.yml
+          - "config/test.yml"
     languages:
       css:
         extensions:
-          - '-css.resource'
+          - "-css.resource"
     exclude_paths:
-      - '.bundle/**'
-      - 'spec/**/*'
-      - 'benchmarks/**/*'
-      - '**.min.js'
-      - '**/tests/**'
+      - ".bundle/**"
+      - "spec/**/*"
+      - "benchmarks/**/*"
+      - "**.min.js"
+      - "**/tests/**"
     ```
 
 1.  Optionally, validate the syntax of your configuration file with the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#install) by running the following command in the same folder as the Codacy configuration file:
@@ -60,11 +66,12 @@ To ignore files, you must use the [Java glob syntax](https://docs.oracle.com/jav
 
 | Example pattern    | Ignored files                                                |
 | ------------------ | ------------------------------------------------------------ |
-| `**.extension`     | All files with the same extension across all your repository |
+| `test/README.md`   | The file `test/README.md`                                    |
 | `test/*`           | All files in the root of test                                |
 | `test/**`          | All files and directories inside test                        |
 | `test/**/*`        | All files inside sub-directories of test                     |
-| `**/*.resource`    | All .resource files in all directories and sub-directories   |
+| `**.resource`      | All `.resource` files across all your repository             |
+| `**/*.resource`    | All `.resource` files in all directories and sub-directories |
 
 ## Which tools can be configured and which name should I use?
 
