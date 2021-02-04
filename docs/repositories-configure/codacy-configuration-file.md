@@ -27,25 +27,31 @@ To use a Codacy configuration file:
     ---
     engines:
       rubocop:
+        enabled: true
         exclude_paths:
-          - config/engines.yml
-        base_sub_dir: test/baseDir
+          - "config/test.yml"
+        base_sub_dir: "test/baseDir"
       duplication:
+        enabled: true
         exclude_paths:
-          - config/engines.yml
+          - "config/test.yml"
+        config:
+          languages:
+            - "ruby"
       metrics:
+        enabled: true
         exclude_paths:
-          - config/engines.yml
+          - "config/test.yml"
     languages:
       css:
         extensions:
-          - '-css.resource'
+          - "-css.resource"
     exclude_paths:
-      - '.bundle/**'
-      - 'spec/**/*'
-      - 'benchmarks/**/*'
-      - '**.min.js'
-      - '**/tests/**'
+      - ".bundle/**"
+      - "spec/**/*"
+      - "benchmarks/**/*"
+      - "**.min.js"
+      - "**/tests/**"
     ```
 
 1.  Optionally, validate the syntax of your configuration file with the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#install) by running the following command in the same folder as the Codacy configuration file:
