@@ -4,7 +4,11 @@ Codacy supports configuring certain advanced features through a configuration fi
 
 -   Ignoring files globally, for certain analysis categories or a specific tool
 
-    The available analysis categories are **Duplication**, **Metrics**, and **Coverage**. The category **Metrics** refers to the information you find under [File details](../repositories/files-view.md) such as Size, Structure, and Complexity.
+    The available analysis categories are **Duplication** and **Metrics**. The category **Metrics** refers to the information you find under [File details](../repositories/files-view.md) such as Size, Structure, and Complexity.
+
+    <!-- NOTE 2021-02-05 paulo.ribeiro
+         The metrics category Coverage is not supported by the Codacy configuration file.
+         See https://github.com/codacy/docs/pull/70 for more information. -->
 
 -   Configuring a specific repository directory on which to start the analysis
 
