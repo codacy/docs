@@ -488,7 +488,7 @@ nav:
     - "Documentation home": "index.md"
     - "Getting started":
           - getting-started/getting-started-with-codacy.md
-          - repositories-configure/ignore-files-from-codacy-analysis.md
+          - repositories-configure/ignoring-files.md
           - repositories-configure/code-patterns.md
           - repositories/quality-settings.md
           - repositories/badges.md
