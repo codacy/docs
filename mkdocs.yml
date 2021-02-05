@@ -488,18 +488,17 @@ nav:
     - "Documentation home": "index.md"
     - "Getting started":
           - getting-started/getting-started-with-codacy.md
-          - repositories-configure/ignoring-files.md
-          - repositories-configure/code-patterns.md
-          - repositories/quality-settings.md
-          - repositories/badges.md
           - getting-started/supported-languages-and-tools.md
+          - getting-started/which-permissions-does-codacy-need-from-my-account.md
     - "Your repositories":
           - repositories/repository-dashboard.md
+          - repositories/what-are-the-different-grades-and-how-are-they-calculated.md
           - repositories/commits-view.md
           - repositories/files-view.md
           - repositories/issues-view.md
           - repositories/security-monitor.md
-          - repositories/what-are-the-different-grades-and-how-are-they-calculated.md
+          - repositories/badges.md
+          - repositories/quality-settings.md
     - "Configuring your repositories":
           - "Integrations":
                 - repositories-configure/integrations/github-integration.md
@@ -518,6 +517,8 @@ nav:
                 - repositories-configure/specifying-your-php-version.md
                 - repositories-configure/code-standards.md
           - repositories/managing-branches.md
+          - repositories-configure/ignoring-files.md
+          - repositories-configure/code-patterns.md
           - repositories-configure/file-extensions.md
           ### "Extra", more detailed info
           - repositories/post-commit-hooks.md
@@ -553,7 +554,6 @@ nav:
     - Troubleshooting and FAQs:
           - General:
                 - faq/general/which-version-control-systems-do-you-support.md
-                - getting-started/which-permissions-does-codacy-need-from-my-account.md
                 - faq/general/which-browsers-do-you-support.md
                 - faq/general/how-does-codacy-support-gitlab-cloud.md
                 - faq/general/how-does-codacy-support-gitlab-enterprise.md
