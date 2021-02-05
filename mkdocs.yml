@@ -33,6 +33,7 @@ extra:
     version: "3.2.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
+    community_url: "https://community.codacy.com/"
 
 # Repository
 repo_name: "codacy/docs"
