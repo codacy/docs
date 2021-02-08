@@ -12,6 +12,8 @@ Depending on the configuration of the GitHub integration, Codacy can also report
 
 To enable the GitHub integration, open your project **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
 
+<!-- TODO Update screenshot -->
+
 ![GitHub integration](images/github-integration.png)
 
 If you remove the integration, you can enable it again as follows:
