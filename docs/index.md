@@ -51,13 +51,13 @@
       <div>Set up your repositories to show code coverage reports directly on Codacy.</div>
     </div>
   </a>
-  <a class="topic-card"  href="organizations/adding-and-managing-authors/">
+  <a class="topic-card"  href="organizations/managing-people/">
     <div class="tc-icon">
       <img src="/assets/images/icon-user-management.svg">
     </div>
     <div class="tc-content">
-      <div>Adding and managing Authors</div>
-      <div>Allow Codacy to analyze commits from contributors who aren't part of your Codacy organization.</div>
+      <div>Managing people in organizations</div>
+      <div>Invite your team members to join your organization on Codacy so that Codacy analyzes their commits on private repositories.</div>
     </div>
   </a>
 </div>
