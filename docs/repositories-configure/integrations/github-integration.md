@@ -28,21 +28,23 @@ To configure the GitHub integration, open your project **Settings**, tab **Integ
 
 Depending on the options that you enable, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests:
 
--   **Status checks** adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories/quality-settings.md) of your repository. To see the coverage status check, ensure that you enable the option **Coverage** in the quality settings.
+### Status checks
 
-    !!! tip
-        After enabling this option, you can [set Codacy as a required check](../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md#github) before merging your pull requests.
+Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories/quality-settings.md) of your repository. To see the coverage status check, ensure that you enable the option **Coverage** in the quality settings.
 
-    ![Pull request status check on GitHub](images/github-integration-pr-status.png)
+!!! tip
+    After enabling this option, you can [set Codacy as a required check](../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md#github) before merging your pull requests.
 
--   **Annotations** adds annotations on the lines of the pull request where Codacy finds new issues. Codacy maps the severity of the issues reported by the tools to the severity levels of the annotations. To enable this option, you must enable **Status checks** first.
+![Pull request status check on GitHub](images/github-integration-pr-status.png)
 
-    ![Pull request annotation on GitHub](images/github-integration-pr-annotation.png)
+### Annotations
 
--   **Summary** shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable **Status checks** first.
+Adds annotations on the lines of the pull request where Codacy finds new issues. Codacy maps the severity of the issues reported by the tools to the severity levels of the annotations. To enable this option, you must enable **Status checks** first.
 
-    ![Pull request summary on GitHub](images/github-integration-pr-summary.png)
+![Pull request annotation on GitHub](images/github-integration-pr-annotation.png)
 
-You can find all the information reported by Codacy on the tab **Checks** of your pull requests:
+### Summary
 
-![Codacy Check](images/github-integration-tab-checks.png)
+Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable **Status checks** first.
+
+![Pull request summary on GitHub](images/github-integration-pr-summary.png)
