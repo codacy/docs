@@ -25,4 +25,4 @@ If the original user who set up your Bitbucket integration isn't available, some
 
 You can log in with Bitbucket through <https://www.codacy.com/login-with/bitbucket>.
 
-![](images/Screenshot_2019-02-14_at_12.00.41.png)
+![Logging in using Bitbucket](images/Screenshot_2019-02-14_at_12.00.41.png)
