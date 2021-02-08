@@ -44,6 +44,7 @@ Depending on the options that you enable, Codacy will automatically update pull 
     ![Pull request summary on GitHub](images/github-integration-pr-summary.png)
 
 -   **Suggest fixes** adds comments on the lines of the pull request where Codacy finds new issues with suggestions on how to fix the issues. Codacy doesn't make any changes automatically. To apply the changes, manually review and accept the suggestions.
+{: id="suggest-fixes"}
 
     <!-- TODO Add screenshot -->
 
