@@ -35,7 +35,7 @@
 <div class="topic-row">
   <a class="topic-card" href="repositories-configure/code-patterns/">
     <div class="tc-icon">
-      <img src="/assets/images/icon-checkmark.svg">
+      <img alt="Configuring code patterns" src="/assets/images/icon-checkmark.svg">
     </div>
     <div class="tc-content">
       <div>Configuring code patterns</div>
@@ -44,7 +44,7 @@
   </a>
   <a class="topic-card" href="coverage-reporter/adding-coverage-to-your-repository/">
     <div class="tc-icon">
-      <img src="/assets/images/icon-checklist.svg">
+      <img alt="Adding coverage reports" src="/assets/images/icon-checklist.svg">
     </div>
     <div class="tc-content">
       <div>Adding coverage reports</div>
@@ -53,7 +53,7 @@
   </a>
   <a class="topic-card"  href="organizations/adding-and-managing-authors/">
     <div class="tc-icon">
-      <img src="/assets/images/icon-user-management.svg">
+      <img alt="Adding and managing Authors" src="/assets/images/icon-user-management.svg">
     </div>
     <div class="tc-content">
       <div>Adding and managing Authors</div>
