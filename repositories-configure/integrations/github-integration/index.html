@@ -2683,26 +2683,19 @@
 <h2 id="configuring-the-github-integration">Configuring the GitHub integration<a class="headerlink" href="#configuring-the-github-integration" title="Permanent link">&para;</a></h2>
 <p>To configure the GitHub integration, open your project <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
 <p>Depending on the options that you enable, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests:</p>
-<ul>
-<li>
-<p><strong>Status checks</strong> adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the <a href="../../../repositories/quality-settings/">quality settings</a> of your repository. To see the coverage status check, ensure that you enable the option <strong>Coverage</strong> in the quality settings.</p>
+<h3 id="status-checks">Status checks<a class="headerlink" href="#status-checks" title="Permanent link">&para;</a></h3>
+<p>Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the <a href="../../../repositories/quality-settings/">quality settings</a> of your repository. To see the coverage status check, ensure that you enable the option <strong>Coverage</strong> in the quality settings.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>After enabling this option, you can <a href="../../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/#github">set Codacy as a required check</a> before merging your pull requests.</p>
 </div>
 <p><img alt="Pull request status check on GitHub" src="../images/github-integration-pr-status.png" /></p>
-</li>
-<li>
-<p><strong>Annotations</strong> adds annotations on the lines of the pull request where Codacy finds new issues. Codacy maps the severity of the issues reported by the tools to the severity levels of the annotations. To enable this option, you must enable <strong>Status checks</strong> first.</p>
+<h3 id="annotations">Annotations<a class="headerlink" href="#annotations" title="Permanent link">&para;</a></h3>
+<p>Adds annotations on the lines of the pull request where Codacy finds new issues. Codacy maps the severity of the issues reported by the tools to the severity levels of the annotations. To enable this option, you must enable <strong>Status checks</strong> first.</p>
 <p><img alt="Pull request annotation on GitHub" src="../images/github-integration-pr-annotation.png" /></p>
-</li>
-<li>
-<p><strong>Summary</strong> shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable <strong>Status checks</strong> first.</p>
+<h3 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h3>
+<p>Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable <strong>Status checks</strong> first.</p>
 <p><img alt="Pull request summary on GitHub" src="../images/github-integration-pr-summary.png" /></p>
-</li>
-</ul>
-<p>You can find all the information reported by Codacy on the tab <strong>Checks</strong> of your pull requests:</p>
-<p><img alt="Codacy Check" src="../images/github-integration-tab-checks.png" /></p>
               
               
                 
@@ -2774,7 +2767,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 27, 2020</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2021</span>
     
   </small>
 </div>
