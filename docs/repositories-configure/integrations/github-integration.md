@@ -43,6 +43,19 @@ Depending on the options that you enable, Codacy will automatically update pull 
 
     ![Pull request summary on GitHub](images/github-integration-pr-summary.png)
 
-You can find all the information reported by Codacy on the tab **Checks** of your pull requests:
+-   **Suggest fixes** adds comments on the lines of the pull request where Codacy finds new issues with suggestions on how to fix the issues. Codacy doesn't make any changes automatically. To apply the changes, manually review and accept the suggestions.
+
+    <!-- TODO Add screenshot -->
+
+    !!! note
+        This feature is in early access and has the following limitations:
+
+        -   The only supported Git providers are GitHub Cloud and GitHub Enterprise
+        -   The only tool that suggests fixes is ESLint for JavaScript
+        -   The author of the comments is the user that enabled the GitHub integration for the Codacy repository
+
+        📢 [Let us know](mailto:support@codacy.com?subject=Feedback on Suggest fixes) what you think about this feature!
+
+You can also find the information reported by Codacy on the tab **Checks** of your pull requests:
 
 ![Codacy Check](images/github-integration-tab-checks.png)
