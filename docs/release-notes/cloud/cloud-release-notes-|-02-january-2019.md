@@ -1,8 +1,8 @@
-# Cloud Release Notes | 02 January 2019
+# Cloud Release Notes | January 2, 2019
 
 ## Product Enhancements
 
--   We have updated the following tools to newer versions:
+-   We updated the following tools to newer versions:
     -   <span class="il">Eslint</span>-<span
         class="il">plugin</span>-<span class="il">vue</span> to version
         [5.0.0](https://www.npmjs.com/package/eslint-plugin-vue/v/5.0.0)
@@ -22,8 +22,8 @@
 
 ## Bug fixes
 
--   Fixed a bug where it was not possible to select certain projects in
+-   Fixed a bug where it wasn't possible to select certain projects in
     the Team Dashboard
 -   Fixed a bug where an issue showed the error message repeated in the
     block of code, instead of the source code line
--   Fixed a bug that was showing unexisting Stylelint patterns in the UI
+-   Fixed a bug that was showing nonexistent Stylelint patterns in the UI

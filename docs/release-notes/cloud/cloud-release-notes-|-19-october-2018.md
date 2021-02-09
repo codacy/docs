@@ -1,4 +1,4 @@
-# Cloud Release Notes | 19 October 2018
+# Cloud Release Notes | October 19, 2018
 
 ## <span class="wysiwyg-color-black">Product Enhancements</span>
 
@@ -13,7 +13,7 @@
     -   <span class="wysiwyg-color-black">Added tooltip explanations for
         issues related to coverage.</span>
 
-## <span class="wysiwyg-color-black">We have updated the following tools:</span>
+## <span class="wysiwyg-color-black">We updated the following tools:</span>
 
 -   <span class="wysiwyg-color-black">Scalameta now supports Scala
     2.12</span>

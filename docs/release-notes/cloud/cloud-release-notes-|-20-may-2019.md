@@ -1,4 +1,4 @@
-# Cloud Release Notes | 20 May 2019
+# Cloud Release Notes | May 20, 2019
 
 **Product Enhancements**
 

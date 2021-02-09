@@ -7,7 +7,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 ## Product enhancements
 
 -   The Profile and Access Management pages are now built using the React framework. (CY-83)
--   It is now possible to define custom values for the analysis inactivity timeout, analysis task timeout, and maximum analysis file size. (CY-1298)
+-   It's now possible to define custom values for the analysis inactivity timeout, analysis task timeout, and maximum analysis file size. (CY-1298)
 
 ## Bug fixes
 

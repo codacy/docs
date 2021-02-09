@@ -1,4 +1,4 @@
-# Cloud Release Notes | 05 Set 2019
+# Cloud Release Notes | September 5, 2019
 
 ## <span style="font-weight: 400;">Product Enhancements</span>
 
@@ -30,7 +30,7 @@
     -   <span style="font-weight: 400;">Checkstyle has been updated to
         [8.23](https://checkstyle.sourceforge.io/releasenotes.html#Release_8.23)</span>
     -   <span style="font-weight: 400;">Added new patterns to
-        ScalaStyle</span>
+        Scalastyle</span>
 -   <span style="font-weight: 400;">Added support for the following
     plugins:</span>
     -   <span
@@ -50,10 +50,10 @@
     copying the API token while using Firefox</span>
 -   <span style="font-weight: 400;">Fixed a bug that kept PR page from
     loading at times</span>
--   <span style="font-weight: 400;">Fixed a bug that stopped Hotspots
+-   <span style="font-weight: 400;">Fixed a bug that stopped <span class="skip-vale">Hotspots</span>
     from loading on the PR screen if there were too many changes</span>
 -   <span style="font-weight: 400;">Fixed a bug that caused the coverage
     upload to sometimes give a timeout error</span>
 -   <span style="font-weight: 400;">Fixed a bug where Complexity
-    reported by ESlint would not be displayed correctly in the
+    reported by ESLint would not be displayed correctly in the
     dashboard</span>

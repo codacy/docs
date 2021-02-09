@@ -2,6 +2,7 @@ aligncheck
 Ameba
 Bandit
 Bitbucket
+Bitnami
 Brakeman
 Bundler
 Checkstyle
@@ -15,6 +16,7 @@ Cppcheck
 Credo
 CSSLint
 Ctrl
+[Cc]yclomatic
 deadcode
 Detekt
 Dockerfile
@@ -57,6 +59,7 @@ Staticcheck
 Stylelint
 SwiftLint
 Tailor
+tooltip
 TSLint
 TSQLLint
 Visualforce

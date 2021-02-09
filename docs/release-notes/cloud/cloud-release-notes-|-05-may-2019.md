@@ -1,4 +1,4 @@
-# Cloud Release Notes | 05 May 2019
+# Cloud Release Notes | May 5, 2019
 
 **Product Enhancements**
 
@@ -16,6 +16,6 @@
     any projects from a Bitbucket organization if there were problems
     with one team </span>
 -   <span style="font-weight: 400;">Fixed a bug that forced the user to
-    login with Bitbucket to be able to see the Bitbucket projects. Now
+    log in with Bitbucket to be able to see the Bitbucket projects. Now
     the user can log in with Bitbucket or GitHub and still be able to
     add projects from the other provider.  </span>

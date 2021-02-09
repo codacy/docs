@@ -1,4 +1,4 @@
-# Cloud Release Notes | 07 Aug 2019
+# Cloud Release Notes | August 7, 2019
 
 ## <span style="font-weight: 400;">Product Enhancements</span>
 
@@ -19,7 +19,7 @@
     branches with names longer than 254 characters
 -   <span style="font-weight: 400;">Added [new list
     view](../../organizations/manual-organizations/creating-and-managing-teams.md)
-    of team members under organizations called "People". </span>
+    of team members under organizations called **People**. </span>
 
 ## <span style="font-weight: 400;">Bug fixes</span>
 

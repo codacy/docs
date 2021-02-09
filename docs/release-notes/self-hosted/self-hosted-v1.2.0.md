@@ -7,7 +7,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 ## Product enhancements
 
 -   To avoid downtime, Codacy now automatically rolls the deployment when performing an Help upgrade. (CY-1420)
--   Now, Codacy does not allow the last Codacy administrator to delete its own account. (CY-1768)
+-   Now, Codacy doesn't allow the last Codacy administrator to delete its own account. (CY-1768)
 
 ## Bug fixes
 
