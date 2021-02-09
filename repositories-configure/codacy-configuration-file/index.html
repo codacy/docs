@@ -2663,8 +2663,15 @@
 <p>Codacy supports configuring certain advanced features through a configuration file:</p>
 <ul>
 <li>
-<p>Ignoring files globally, for certain analysis categories or a specific tool</p>
-<p>The available analysis categories are <strong>Duplication</strong> and <strong>Metrics</strong>. The category <strong>Metrics</strong> refers to the information you find under <a href="../../repositories/files-view/">File details</a> such as Size, Structure, and Complexity.</p>
+<p>Ignoring files globally, for duplication, or a specific tool</p>
+<p>&lt;!-- NOTE 2021-02-05 paulo.ribeiro
+     The category Coverage is not supported by the Codacy configuration file.
+     See https://github.com/codacy/docs/pull/70 for more information.</p>
+<table class="codehilitetable"><tr><td class="linenos"><div class="linenodiv"><pre>1
+2</pre></div></td><td class="code"><div class="codehilite"><pre><span></span><code> NOTE 2021-02-09 paulo.ribeiro
+ We concluded that the category Metrics and the key &quot;enabled&quot; weren&#39;t working on the Codacy configuration file and opened the issue https://codacy.atlassian.net/browse/CY-3679 to look further into this. --&gt;
+</code></pre></div>
+</td></tr></table>
 </li>
 <li>
 <p>Configuring a specific repository directory on which to start the analysis</p>
@@ -2694,21 +2701,15 @@
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">engines</span><span class="p">:</span>
   <span class="nt">rubocop</span><span class="p">:</span>
-    <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
     <span class="nt">exclude_paths</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="s">&quot;config/test.yml&quot;</span>
     <span class="nt">base_sub_dir</span><span class="p">:</span> <span class="s">&quot;test/baseDir&quot;</span>
   <span class="nt">duplication</span><span class="p">:</span>
-    <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
     <span class="nt">exclude_paths</span><span class="p">:</span>
       <span class="p p-Indicator">-</span> <span class="s">&quot;config/test.yml&quot;</span>
     <span class="nt">config</span><span class="p">:</span>
       <span class="nt">languages</span><span class="p">:</span>
         <span class="p p-Indicator">-</span> <span class="s">&quot;ruby&quot;</span>
-  <span class="nt">metrics</span><span class="p">:</span>
-    <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-    <span class="nt">exclude_paths</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;config/test.yml&quot;</span>
 <span class="nt">languages</span><span class="p">:</span>
   <span class="nt">css</span><span class="p">:</span>
     <span class="nt">extensions</span><span class="p">:</span>
@@ -2882,7 +2883,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 5, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 9, 2021</span>
     
   </small>
 </div>
