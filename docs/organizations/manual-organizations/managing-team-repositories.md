@@ -8,7 +8,7 @@ First, import a repository from your Git provider into your own account.
 
 Go to your organization menu, select the team, then select the repository from the drop-down menu, and click on **Add repository**. This will make your organization the owner of this repository.
 
-![](images/add-project-team.gif)
+![Adding a repository to your team](images/add-project-team.gif)
 
 ## Removing a repository from your team
 

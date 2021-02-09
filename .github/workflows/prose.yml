@@ -1,4 +1,4 @@
-name: Vale
+name: Prose
 
 on: pull_request
 
@@ -12,6 +12,13 @@ jobs:
           token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
           submodules: false
           fetch-depth: 0
+
+      - name: Alex
+        uses: brown-ccv/alex-recommends@v1.1.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          message_id: 'alex'
+          glob_pattern: "**/*.md"
 
       - name: Vale
         uses: errata-ai/vale-action@master
