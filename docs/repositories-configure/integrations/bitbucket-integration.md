@@ -30,16 +30,22 @@ To configure the Bitbucket integration, open your project **Settings**, tab **In
 
 Depending on the options that you enable, Codacy will automatically update pull requests on Bitbucket with extra information when accepting pull requests:
 
--   **Pull Request Status** adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories/quality-settings.md) of your repository. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings. 
+### Pull Request Status
 
-    After enabling this option, you can [set Codacy as a required check](../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md#bitbucket) before merging your pull requests.
+Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories/quality-settings.md) of your repository. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings. 
 
-    ![Pull request status on Bitbucket](images/bitbucket-integration-pr-status.png)
+After enabling this option, you can [set Codacy as a required check](../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md#bitbucket) before merging your pull requests.
 
--   **Pull Request Comment** adds comments on the lines of the pull request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them.
+![Pull request status on Bitbucket](images/bitbucket-integration-pr-status.png)
 
-    ![Pull request comment on Bitbucket](images/bitbucket-integration-pr-comment.png)
+### Pull Request Comment
 
--   **Pull Request Summary** shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication.
+Adds comments on the lines of the pull request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them.
 
-    ![Pull request summary on Bitbucket](images/bitbucket-integration-pr-summary.png)
+![Pull request comment on Bitbucket](images/bitbucket-integration-pr-comment.png)
+
+### Pull Request Summary
+
+Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication.
+
+![Pull request summary on Bitbucket](images/bitbucket-integration-pr-summary.png)
