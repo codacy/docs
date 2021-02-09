@@ -5,7 +5,7 @@ On April 1st, 2020 we're deprecating the following HTTP headers used to authenti
 -   `api_token`
 -   `project_token`
 
-From this date onwards, use the following HTTP headers instead:
+From this date onward, use the following HTTP headers instead:
 
 -   `api-token`
 -   `project-token`

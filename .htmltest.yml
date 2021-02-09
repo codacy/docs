@@ -1,0 +1,3 @@
+DirectoryPath: "site/"
+CheckExternal: false
+IgnoreDirectoryMissingTrailingSlash: true
