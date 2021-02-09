@@ -55,7 +55,9 @@ Shows an overall view of the changes in the pull request, including new issues a
 
 Adds comments on the lines of the pull request where Codacy finds new issues with suggestions on how to fix the issues. Codacy doesn't apply any changes automatically. To apply the changes, manually review and accept the suggestions.
 
-<!-- TODO Add screenshot -->
+<!-- TODO Update screenshot with final version -->
+
+![Comment suggesting a fix on GitHub](images/github-integration-suggest-fixes.png)
 
 !!! note
     This feature is in early access and has the following limitations:
