@@ -121,8 +121,7 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>JSON</td>
-      <td><a href="https://eslint.org/">ESLint</a>,
-          <a href="https://github.com/codacy/codacy-jackson-linter">Jackson Linter</a></td>
+      <td><a href="https://github.com/codacy/codacy-jackson-linter">Jackson Linter</a></td>
       <td>-</td>
       <td>-</td>
     </tr>
