@@ -25,9 +25,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.68666d21.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.4f055678.min.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.328cd531.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.45b0513f.min.css">
       
       
         
@@ -2290,9 +2290,47 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Bitbucket changes
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Bitbucket changes" class="md-nav__link md-nav__link--active">
       Bitbucket changes
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#what-exactly-are-we-doing" class="md-nav__link">
+    What exactly are we doing?
+  </a>
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#why" class="md-nav__link">
+    Why?
+  </a>
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#what-do-you-need-to-do-if-you-have-bitbucket-repositories" class="md-nav__link">
+    What do you need to do if you have Bitbucket repositories?
+  </a>
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -2630,23 +2668,23 @@
                 
                 
                 <h1 id="bitbucket-changes">Bitbucket changes<a class="headerlink" href="#bitbucket-changes" title="Permanent link">&para;</a></h1>
-<p>We are making some changes on the 18th Feb 2019 onwards <strong>that will cause all existing integrations with Bitbucket to stop working</strong>.</p>
-<p><strong>What exactly are we doing?</strong></p>
-<p>We are reducing the permissions requested when authenticating with Bitbucket.</p>
+<p>We're making some changes on 18th Feb 2019 <strong>that will cause all existing integrations with Bitbucket to stop working</strong>.</p>
+<h2 id="what-exactly-are-we-doing">What exactly are we doing?<a class="headerlink" href="#what-exactly-are-we-doing" title="Permanent link">&para;</a></h2>
+<p>We're reducing the permissions requested when authenticating with Bitbucket.</p>
 <p>While we currently ask for all permissions, after this we will no longer require:</p>
 <ul>
 <li>Write access for Teams</li>
 <li>Write access for Projects</li>
 <li>Delete access for Repositories</li>
-<li>Full access to Wikis, Snippets and Pipelines</li>
+<li>Full access to Wikis, Snippets, and Pipelines</li>
 </ul>
-<p><strong>Why?</strong></p>
-<p>Previously, we were using OAuth 1, which forced us to request all permissions. This level of permissions requested to integrate with Bitbucket has been flagged as a concern by several of our users. We have now migrated to OAuth 2, which allows us to reduce the level of permissions required.</p>
-<p><strong>What do you need to do if you have Bitbucket repositories?</strong></p>
+<h2 id="why">Why?<a class="headerlink" href="#why" title="Permanent link">&para;</a></h2>
+<p>Previously, we were using OAuth 1, which forced us to request all permissions. This level of permissions requested to integrate with Bitbucket has been flagged as a concern by several of our users. We've now migrated to OAuth 2, which allows us to reduce the level of permissions required.</p>
+<h2 id="what-do-you-need-to-do-if-you-have-bitbucket-repositories">What do you need to do if you have Bitbucket repositories?<a class="headerlink" href="#what-do-you-need-to-do-if-you-have-bitbucket-repositories" title="Permanent link">&para;</a></h2>
 <p>The original user who set up your Bitbucket integration will need to log in to Codacy to confirm the new permissions. <strong>Otherwise, Codacy will no longer be able to detect new Pull Requests, and existing repositories will stop receiving Pull Request status and comments on Bitbucket.</strong></p>
-<p>If the original user who set up your Bitbucket integration is not available, someone who has Admin permissions in both Codacy and Bitbucket to <a href="../../../repositories-configure/integrations/bitbucket-integration/">re-do the integration</a> in Codacy.</p>
-<p>You can login with Bitbucket through <a href="https://www.codacy.com/login-with/bitbucket">https://www.codacy.com/login-with/bitbucket</a>.</p>
-<p><img alt="" src="../images/Screenshot_2019-02-14_at_12.00.41.png" /></p>
+<p>If the original user who set up your Bitbucket integration isn't available, someone who has Admin permissions in both Codacy and Bitbucket to <a href="../../../repositories-configure/integrations/bitbucket-integration/">re-do the integration</a> in Codacy.</p>
+<p>You can log in with Bitbucket through <a href="https://www.codacy.com/login-with/bitbucket">https://www.codacy.com/login-with/bitbucket</a>.</p>
+<p><img alt="Logging in using Bitbucket" src="../images/Screenshot_2019-02-14_at_12.00.41.png" /></p>
               
               
                 
@@ -2718,7 +2756,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2020</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 9, 2021</span>
     
   </small>
 </div>
@@ -2779,8 +2817,8 @@
       </main>
     </div>
     
-      <script src="../../../assets/javascripts/vendor.e99337eb.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.bfbe466e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/vendor.8a62c8c7.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.fb712d40.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
