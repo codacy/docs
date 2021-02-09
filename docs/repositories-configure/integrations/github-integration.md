@@ -60,10 +60,10 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
 ![Comment suggesting a fix on GitHub](images/github-integration-suggest-fixes.png)
 
 !!! note
-    This feature is in early access and has the following limitations:
+    This feature is in early access and has the following limitations for now:
 
-    -   The only supported Git providers are GitHub Cloud and GitHub Enterprise
-    -   The only tool that suggests fixes is ESLint for JavaScript
-    -   The author of the comments is the user that enabled the GitHub integration for the Codacy repository
+    -   The only supported Git providers are GitHub Cloud and GitHub Enterprise.
+    -   The only tool that suggests fixes is ESLint for JavaScript. However, we're planning to support suggestions from more tools.
+    -   Because of a limitation from GitHub, the author of the comments is the user that enabled the GitHub integration and not Codacy.
 
     📢 [Let us know](mailto:support@codacy.com?subject=Feedback on Suggest fixes) what you think about this feature!
