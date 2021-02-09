@@ -26,7 +26,7 @@ Organization owners can control who joins their organization by choosing one of 
 
 ## Adding people to your organization {: id="adding-people"}
 
-Organization owners can invite team members to their organization on Codacy. This is useful to allow Codacy to analyze commits in private repositories by contributors who haven't signed up to Codacy or joined the organization yet.
+**On Codacy Cloud**, organization owners can also invite team members to their organization on Codacy. This is useful to allow Codacy to analyze commits in private repositories by contributors who haven't signed up to Codacy or joined the organization yet.
 
 To add members to your organization:
 
