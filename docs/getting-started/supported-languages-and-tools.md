@@ -1,6 +1,6 @@
 # Supported languages and tools
 
-For each supported programming language, Codacy generally provides:
+For each supported programming language, Codacy provides:
 - Static Analysis
 - Code Duplication
 - Code Complexity
