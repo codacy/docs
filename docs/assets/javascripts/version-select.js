@@ -3,11 +3,6 @@ window.addEventListener("DOMContentLoaded", function() {
     var VERSION = window.location.pathname.split("/")[1];
     var VERSION_LATEST = ".";
 
-    function removePrefix(str, prefix) {
-        var hasPrefix = str.indexOf(prefix) === 0;
-        return hasPrefix ? str.substr(prefix.length) : str.toString();
-    }
-
     function populateVersionSitemap(version) {
         var versionPath = version === VERSION_LATEST ? "" : "/" + version;
         window.versionPages[version] = [];
@@ -29,6 +24,11 @@ window.addEventListener("DOMContentLoaded", function() {
             });
         };
         xhrSitemap.send();
+    }
+
+    function removePrefix(str, prefix) {
+        var hasPrefix = str.indexOf(prefix) === 0;
+        return hasPrefix ? str.substr(prefix.length) : str.toString();
     }
 
     function makeSelect(options, selected) {
