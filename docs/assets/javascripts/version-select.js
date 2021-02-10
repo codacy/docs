@@ -13,7 +13,7 @@ window.addEventListener("DOMContentLoaded", function() {
         window.versionPages[version] = [];
 
         var xhrSitemap = new XMLHttpRequest();
-        var sitemapURL = window.location.origin + versionPath + "/sitemap.xml";
+        var sitemapURL = window.location.origin + versionPath + '/sitemap.xml';
         xhrSitemap.open("GET", sitemapURL);
         xhrSitemap.onload = function() {
             var xmlLoc = this.responseXML.getElementsByTagName("loc");
