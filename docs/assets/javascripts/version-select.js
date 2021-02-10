@@ -112,12 +112,15 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 
     function generateVersionSwitcher(versionJSON) {
+        var select = undefined;
+        var currentVersion = undefined;
+
         versionJSON.forEach(function(e) {
             populateVersionSitemap(e.version);
         });
 
         // Identify which is the current version
-        var currentVersion = versionJSON.find(function(i) {
+        currentVersion = versionJSON.find(function(i) {
             return i.version === VERSION ||
                    i.aliases.includes(VERSION);
         });
@@ -131,7 +134,7 @@ window.addEventListener("DOMContentLoaded", function() {
         }
 
         // Build the HTML select element
-        var select = makeSelect(versionJSON.map(function(i) {
+        select = makeSelect(versionJSON.map(function(i) {
             return {text: i.title, value: i.version};
         }), currentVersion.version);
 
