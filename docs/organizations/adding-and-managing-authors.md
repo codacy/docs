@@ -8,7 +8,7 @@ Under **Authors**, you will see people whose commits are being analyzed, in addi
 
 ## Adding authors
 
-You can add authors in the People section of your organization settings or directly on a pull request page.
+You can add authors in the **People** section of your organization settings or directly on a pull request page.
 
 ![Adding authors](images/authors-add.png)
 
