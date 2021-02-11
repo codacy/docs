@@ -1,12 +1,9 @@
-# Cloud Release Notes | 18 Jun 2019
+# Cloud Release Notes | June 18, 2019
 
-**Product Enhancements**
+## Product enhancements
 
--   <span style="font-weight: 400;">New plugin available for ESLint:
-    </span>[<span style="font-weight: 400;">eslint-config-kentcdodds
-    </span>](https://github.com/kentcdodds/eslint-config-kentcdodds)
+-   New plugin available for ESLint: [<span class="skip-vale">eslint-config-kentcdodds</span>](https://github.com/kentcdodds/eslint-config-kentcdodds)
 
-**Bug fixes**
+## Bug fixes
 
--   <span style="font-weight: 400;">Fixed bug where Duplication would
-    show incorrect values if the branch was changed</span>
+-   Fixed bug where Duplication would show incorrect values if the branch was changed

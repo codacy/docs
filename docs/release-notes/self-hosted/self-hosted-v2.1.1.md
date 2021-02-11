@@ -17,38 +17,38 @@ This version of Codacy Self-hosted includes the tool versions below.
 -   Brakeman 4.3.1
 -   Bundler Audit 0.6.1
 -   Checkstyle 8.34
--   Codenarc 1.6
--   Codesniffer 3.5.6
+-   CodeNarc 1.6
+-   CodeSniffer 3.5.6
 -   Coffeelint 2.1.0
 -   Cppcheck 2.1
 -   Credo 1.3.0
--   Csslint 1.0.5
+-   CSSLint 1.0.5
 -   Detekt 1.10.0
--   Eslint 7.8.1
+-   ESLint 7.8.1
 -   Flawfinder 2.0.11
 -   Gorevive 1.0.2
 -   Gosec v2.3.0
 -   Hadolint 1.17.5
 -   Jackson Linter 2.10.2
--   Jshint 2.10.2
+-   JSHint 2.10.2
 -   Phpmd 2.8.1
--   Pmd 6.27.0
+-   PMD 6.27.0
 -   Pmdjava 5.8.1
 -   Prospector 1.2.0
--   Psscriptanalyzer 1.18.3
+-   PSScriptAnalyser 1.18.3
 -   Pylint 1.9.5
 -   Pylint Python3 2.6.0
 -   Remark Lint 7.0.0
 -   Rubocop 0.82.0
 -   Scalastyle 1.0.0
--   Shellcheck v0.7.1
--   Sonar Csharp 8.12
+-   ShellCheck v0.7.1
+-   Sonar C# 8.12
 -   Sonar Visual Basic 8.12
--   Spotbugs 4.1.2
--   Sqlint 0.1.9
+-   SpotBugs 4.1.2
+-   SQLint 0.1.9
 -   Staticcheck 2017.2.2
 -   Stylelint 13.7.0
--   Swiftlint 0.39.2
+-   SwiftLint 0.39.2
 -   Tailor 0.12.0
--   Tslint 5.14.0
--   Tsqllint 1.11.1
+-   TSLint 5.14.0
+-   TSQLLint 1.11.1

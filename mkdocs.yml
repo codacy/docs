@@ -279,8 +279,8 @@ plugins:
               "hc/en-us/articles/360012056493-Cloud-Release-Notes-02-November-2018.md": "release-notes/cloud/cloud-release-notes-|-02-november-2018.md"
               "hc/en-us/articles/360012126419.md": "organizations/configuring-which-users-can-ignore-issues.md"
               "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "organizations/configuring-which-users-can-ignore-issues.md"
-              "hc/en-us/articles/360012141513.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md"
-              "hc/en-us/articles/360012141513-Scheduled-Maintenance-Saturday-17th-Nov-8-00-GMT-0-00-PST-.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md"
+              "hc/en-us/articles/360012141513.md": "index.md"
+              "hc/en-us/articles/360012141513-Scheduled-Maintenance-Saturday-17th-Nov-8-00-GMT-0-00-PST-.md": "index.md"
               "hc/en-us/articles/360012328140.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
               "hc/en-us/articles/360012328140-Removal-of-NodeSecurity-GoLint-and-SCSSLint.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
               "hc/en-us/articles/360012494113.md": "release-notes/cloud/cloud-release-notes-|-16-november-2018.md"
@@ -291,14 +291,14 @@ plugins:
               "hc/en-us/articles/360012746413-I-renamed-my-repository-on-the-Git-provider.md": "faq/repositories/i-renamed-my-repository-on-the-git-provider.md"
               "hc/en-us/articles/360015220333.md": "release-notes/cloud/cloud-release-notes-|-02-january-2019.md"
               "hc/en-us/articles/360015220333-Cloud-Release-Notes-02-January-2019.md": "release-notes/cloud/cloud-release-notes-|-02-january-2019.md"
-              "hc/en-us/articles/360015221174.md": "release-notes/cloud/scheduled-maintenance-saturday,-5th-jan@05:30-gmt-(21:30-pst).md"
-              "hc/en-us/articles/360015221174-Scheduled-Maintenance-Saturday-5th-Jan-05-30-GMT-21-30-PST-.md": "release-notes/cloud/scheduled-maintenance-saturday,-5th-jan@05:30-gmt-(21:30-pst).md"
+              "hc/en-us/articles/360015221174.md": "index.md"
+              "hc/en-us/articles/360015221174-Scheduled-Maintenance-Saturday-5th-Jan-05-30-GMT-21-30-PST-.md": "index.md"
               "hc/en-us/articles/360018049713.md": "release-notes/cloud/bitbucket-changes.md"
               "hc/en-us/articles/360018049713-Bitbucket-changes.md": "release-notes/cloud/bitbucket-changes.md"
               "hc/en-us/articles/360020553894.md": "release-notes/cloud/cloud-release-notes-|-29-march-2019.md"
               "hc/en-us/articles/360020553894-Cloud-Release-Notes-29-March-2019.md": "release-notes/cloud/cloud-release-notes-|-29-march-2019.md"
-              "hc/en-us/articles/360020569254.md": "release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt).md"
-              "hc/en-us/articles/360020569254-Scheduled-Maintenance-Saturday-30th-Mar-05-00-GMT-01-00-EDT-.md": "release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt).md"
+              "hc/en-us/articles/360020569254.md": "index.md"
+              "hc/en-us/articles/360020569254-Scheduled-Maintenance-Saturday-30th-Mar-05-00-GMT-01-00-EDT-.md": "index.md"
               "hc/en-us/articles/360021260713.md": "faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md"
               "hc/en-us/articles/360021260713-How-does-Codacy-measure-complexity-in-my-repository-.md": "faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md"
               "hc/en-us/articles/360021378573.md": "release-notes/cloud/cloud-release-notes-|-08-april-2019.md"
@@ -599,13 +599,10 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-20-may-2019.md
                 - release-notes/cloud/cloud-release-notes-|-05-may-2019.md
                 - release-notes/cloud/cloud-release-notes-|-08-april-2019.md
-                - release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt).md
                 - release-notes/cloud/cloud-release-notes-|-29-march-2019.md
                 - release-notes/cloud/bitbucket-changes.md
-                - release-notes/cloud/scheduled-maintenance-saturday,-5th-jan@05:30-gmt-(21:30-pst).md
                 - release-notes/cloud/cloud-release-notes-|-02-january-2019.md
                 - release-notes/cloud/cloud-release-notes-|-16-november-2018.md
-                - release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md
                 - release-notes/cloud/cloud-release-notes-|-02-november-2018.md
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
