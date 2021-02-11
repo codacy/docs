@@ -19,6 +19,7 @@ To change your avatar, sign up or log in at [Gravatar](https://en.gravatar.com/)
 
 When you delete your account on Codacy, your profile and information about your personal repositories will be completely removed from Codacy.
 
-If you are the last user with administrator permissions on any of your organizations, you must either add someone else as an administrator or [delete those organizations](../organizations/what-are-synced-organizations.md#deleting-an-organization) before you can delete your account.
-
 To delete your account, click the button **Delete account** and confirm that you really want to proceed.
+
+!!! note
+    If you're the last organization owner of any of your organizations, you must either add someone else as an owner or [delete those organizations](../organizations/what-are-synced-organizations.md#deleting-an-organization) before you can delete your account.
