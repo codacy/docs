@@ -20,19 +20,15 @@
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/repositories/what-are-the-different-grades-and-how-are-they-calculated/</loc>
-     <lastmod>2021-02-11</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.codacy.com/repositories/issues-view/</loc>
-     <lastmod>2021-02-11</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://docs.codacy.com/repositories/commits-view/</loc>
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories/files-view/</loc>
+     <lastmod>2021-02-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.codacy.com/repositories/issues-view/</loc>
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -44,19 +40,11 @@
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/repositories/quality-settings/</loc>
+     <loc>https://docs.codacy.com/repositories-configure/code-patterns/</loc>
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/repositories/managing-branches/</loc>
-     <lastmod>2021-02-11</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.codacy.com/repositories/post-commit-hooks/</loc>
-     <lastmod>2021-02-11</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.codacy.com/repositories/removing-your-repository/</loc>
+     <loc>https://docs.codacy.com/repositories-configure/managing-branches/</loc>
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -88,27 +76,7 @@
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/coverage-reporter/generating-coverage-reports/</loc>
-     <lastmod>2021-02-11</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.codacy.com/coverage-reporter/adding-coverage-to-your-repository/</loc>
-     <lastmod>2021-02-11</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/</loc>
-     <lastmod>2021-02-11</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.codacy.com/coverage-reporter/troubleshooting-common-issues/</loc>
-     <lastmod>2021-02-11</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.codacy.com/repositories-configure/code-patterns/</loc>
-     <lastmod>2021-02-11</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.codacy.com/repositories-configure/codacy-configuration-file/</loc>
+     <loc>https://docs.codacy.com/repositories-configure/integrations/post-commit-hooks/</loc>
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -116,11 +84,19 @@
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
+     <loc>https://docs.codacy.com/repositories-configure/file-extensions/</loc>
+     <lastmod>2021-02-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.codacy.com/repositories-configure/quality-settings/</loc>
+     <lastmod>2021-02-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
      <loc>https://docs.codacy.com/repositories-configure/using-submodules/</loc>
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/repositories-configure/file-extensions/</loc>
+     <loc>https://docs.codacy.com/repositories-configure/codacy-configuration-file/</loc>
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -137,6 +113,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/code-standards/</loc>
+     <lastmod>2021-02-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.codacy.com/repositories-configure/removing-your-repository/</loc>
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -189,6 +169,22 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/account/notifications/</loc>
+     <lastmod>2021-02-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.codacy.com/coverage-reporter/generating-coverage-reports/</loc>
+     <lastmod>2021-02-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.codacy.com/coverage-reporter/adding-coverage-to-your-repository/</loc>
+     <lastmod>2021-02-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/</loc>
+     <lastmod>2021-02-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.codacy.com/coverage-reporter/troubleshooting-common-issues/</loc>
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -341,6 +337,10 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/general/how-can-i-change-or-cancel-my-plan/</loc>
+     <lastmod>2021-02-11</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.codacy.com/faq/repositories/what-are-the-different-grades-and-how-are-they-calculated/</loc>
      <lastmod>2021-02-11</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
