@@ -6,9 +6,9 @@
 
 -   We updated TSLint to version [5.14.0](https://www.npmjs.com/package/tslint/v/5.14.0).
 
--   As a way of improving performance, we've stopped analysis for inactive, free and open-source accounts and we've communicated to those impacted by this measure. This was done so we could allocate more resources to people that are actively using Codacy.
+-   As a way of improving performance, we've stopped analysis for inactive, free, and open-source accounts and we've communicated to those impacted by this measure. This was done so we could allocate more resources to people that are actively using Codacy.
 
--   We removed the option to add projects using a Git URL. Projects that were added before the 12th Feb 2019 will continue to be analyzed as usual.
+-   We removed the option to add projects using a Git URL. Projects that were added before February 12, 2019, will continue to be analyzed as usual.
 
 -   As part of our performance improvement measures, we've implemented an upper limit of 150 Kb for file sizes that should be considered for analysis. This means that:
 
