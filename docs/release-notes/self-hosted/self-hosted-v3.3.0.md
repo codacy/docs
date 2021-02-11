@@ -7,21 +7,17 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 ## Product enhancements
 
 -   Now, Codacy has an improved user experience to add and manage organizations that supports displaying an indefinite number of organizations per Git provider. (CY-1938)
--   🚧 CY-3540
--   🚧 CY-3498
--   🚧 CY-3488
--   🚧 CY-3468
--   🚧 CY-3462
--   🚧 CY-3439
--   🚧 CY-3414
--   🚧 CY-3364
--   🚧 CY-3162
+-   🚧 CY-3498 <!-- Files API -->
+-   🚧 CY-3468 <!-- Current Issues API -->
+-   🚧 CY-3462 <!-- Links to our community website -->
+-   🚧 CY-3439 <!-- Suggest fixes, DO NOT INCLUDE -->
+-   🚧 CY-3414 <!-- Auto-join for Users previously added as authors -->
+-   🚧 CY-3162 <!-- Import patterns -->
 
 ## Bug fixes
 
 -   Fixed an issue while fetching groups from GitLab if the user owned more than 100 groups with similar names. (CY-3506)
--   🚧 CY-3500
--   🚧 CY-3471
+-   🚧 CY-3471 <!-- Check permissions endpoint should not give 404 when asking for permissions for an author -->
 
 ## Tool versions
 
