@@ -110,8 +110,8 @@ plugins:
               "hc/en-us/articles/207279819-Coverage.md": "coverage-reporter/adding-coverage-to-your-repository.md"
               "hc/en-us/articles/207279849.md": "repositories/files-view.md"
               "hc/en-us/articles/207279849-Files-View.md": "repositories/files-view.md"
-              "hc/en-us/articles/207280019.md": "repositories/managing-branches.md"
-              "hc/en-us/articles/207280019-Managing-Branches.md": "repositories/managing-branches.md"
+              "hc/en-us/articles/207280019.md": "repositories-configure/managing-branches.md"
+              "hc/en-us/articles/207280019-Managing-Branches.md": "repositories-configure/managing-branches.md"
               "hc/en-us/articles/207280189.md": "organizations/manual-organizations/administrative-permissions.md"
               "hc/en-us/articles/207280189-Administrative-Permissions.md": "organizations/manual-organizations/administrative-permissions.md"
               "hc/en-us/articles/207280219.md": "repositories-configure/integrations/github-integration.md"
@@ -143,8 +143,8 @@ plugins:
               "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "related-tools/codacy-plugin-tools.md"
               "hc/en-us/articles/207994735.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages-and-tools.md"
-              "hc/en-us/articles/207994765.md": "repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
-              "hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-.md": "repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
+              "hc/en-us/articles/207994765.md": "faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
+              "hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-.md": "faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
               "hc/en-us/articles/207994825.md": "faq/repositories/how-do-i-manually-force-a-repository-update.md"
               "hc/en-us/articles/207994825-How-do-I-manually-force-a-repository-update-.md": "faq/repositories/how-do-i-manually-force-a-repository-update.md"
               "hc/en-us/articles/207994835.md": "faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md"
@@ -193,10 +193,10 @@ plugins:
               "hc/en-us/articles/213840489-How-do-I-reanalyze-my-repository-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/213840489-How-do-I-reanalyze-my-project-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
-              "hc/en-us/articles/214085885.md": "repositories/post-commit-hooks.md"
-              "hc/en-us/articles/214085885-Post-Commit-Hooks.md": "repositories/post-commit-hooks.md"
-              "hc/en-us/articles/214377225.md": "repositories/managing-branches.md"
-              "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "repositories/managing-branches.md"
+              "hc/en-us/articles/214085885.md": "repositories-configure/integrations/post-commit-hooks.md"
+              "hc/en-us/articles/214085885-Post-Commit-Hooks.md": "repositories-configure/integrations/post-commit-hooks.md"
+              "hc/en-us/articles/214377225.md": "repositories-configure/managing-branches.md"
+              "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "repositories-configure/managing-branches.md"
               "hc/en-us/sections/360000605573-Self-hosted-Release-Notes.md": "release-notes/index.md"
               "hc/en-us/sections/360000605573.md": "release-notes/index.md"
               "hc/en-us/articles/360001207234.md": "repositories-configure/specifying-language.md"
@@ -239,8 +239,8 @@ plugins:
               "hc/en-us/articles/360008254833-Run-local-analysis.md": "related-tools/local-analysis/running-local-analysis.md"
               "hc/en-us/articles/360008254833-Run-local-analysis-before-creating-a-commit.md": "related-tools/local-analysis/running-local-analysis.md"
               "hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results.md": "related-tools/local-analysis/running-local-analysis.md"
-              "hc/en-us/articles/360009164573.md": "repositories/quality-settings.md"
-              "hc/en-us/articles/360009164573-Quality-Settings.md": "repositories/quality-settings.md"
+              "hc/en-us/articles/360009164573.md": "repositories-configure/quality-settings.md"
+              "hc/en-us/articles/360009164573-Quality-Settings.md": "repositories-configure/quality-settings.md"
               "hc/en-us/articles/360009180134.md": "repositories/issues-view.md"
               "hc/en-us/articles/360009180134-Issues-View.md": "repositories/issues-view.md"
               "hc/en-us/articles/360009180134-The-Issues-View.md": "repositories/issues-view.md"
@@ -485,6 +485,11 @@ plugins:
               "related-tools/run-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"
               "repositories-configure/ignore-files-from-codacy-analysis.md": "repositories-configure/ignoring-files.md"
               "organizations/how-to-configure-which-users-can-ignore-issues.md": "organizations/configuring-which-users-can-ignore-issues.md"
+              "repositories/what-are-the-different-grades-and-how-are-they-calculated.md": "faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
+              "repositories/managing-branches.md": "repositories-configure/managing-branches.md"
+              "repositories/quality-settings.md": "repositories-configure/quality-settings.md"
+              "repositories/removing-your-repository.md": "repositories-configure/removing-your-repository.md"
+              "repositories/post-commit-hooks.md": "repositories-configure/integrations/post-commit-hooks.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -501,7 +506,7 @@ nav:
           - repositories/badges.md
     - "Configuring your repositories":
           - repositories-configure/code-patterns.md
-          - repositories/managing-branches.md
+          - repositories-configure/managing-branches.md
           - "Integrations":
                 - repositories-configure/integrations/github-integration.md
                 - repositories-configure/integrations/gitlab-integration.md
@@ -510,10 +515,10 @@ nav:
                 - repositories-configure/integrations/jira-integration.md
                 - repositories-configure/integrations/project-api.md
                 - repositories-configure/integrations/webhook-notifications.md
-                - repositories/post-commit-hooks.md
+                - repositories-configure/integrations/post-commit-hooks.md
           - repositories-configure/ignoring-files.md
           - repositories-configure/file-extensions.md
-          - repositories/quality-settings.md
+          - repositories-configure/quality-settings.md
           - repositories-configure/using-submodules.md
           - repositories-configure/codacy-configuration-file.md
           # "Extra details" when configuring repositories
@@ -521,7 +526,7 @@ nav:
           - repositories-configure/specifying-your-python-version.md
           - repositories-configure/specifying-your-php-version.md
           - repositories-configure/code-standards.md
-          - repositories/removing-your-repository.md
+          - repositories-configure/removing-your-repository.md
     - "Organizations":
           - organizations/what-are-synced-organizations.md
           - organizations/organization-overview.md
@@ -563,7 +568,7 @@ nav:
                 - faq/general/how-do-i-change-my-email-address-in-codacy.md
                 - faq/general/how-can-i-change-or-cancel-my-plan.md
           - Repositories:
-                - repositories/what-are-the-different-grades-and-how-are-they-calculated.md
+                - faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md
                 - faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md
                 - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md
                 - faq/repositories/how-do-i-manually-force-a-repository-update.md

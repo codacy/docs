@@ -2,7 +2,7 @@
 
 ## Product enhancements
 
--   As a way of improving performance and provide faster analysis, Codacy will no longer check for new updates in projects that don't have [post-commit hooks](../../repositories/post-commit-hooks.md) enabled.
+-   As a way of improving performance and provide faster analysis, Codacy will no longer check for new updates in projects that don't have [post-commit hooks](../../repositories-configure/integrations/post-commit-hooks.md) enabled.
 
 ## Bug fixes
 
