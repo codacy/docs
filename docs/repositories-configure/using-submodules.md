@@ -4,7 +4,7 @@
 
 ## Enabling submodules
 
-By default, Codacy does normal Git clones that do not include submodules to ensure that we only clone necessary repositories. However, if your organization needs to use submodules, please contact us at <mailto:support@codacy.com> asking to enable submodules on Codacy.
+By default, Codacy does normal Git clones that don't include submodules to ensure that we only clone necessary repositories. However, if your organization needs to use submodules, please contact us at <mailto:support@codacy.com> asking to enable submodules on Codacy.
 
 After we enabled submodules for your organization, do the following:
 
@@ -26,7 +26,7 @@ After we enabled submodules for your organization, do the following:
 
 4.  If you're using submodules to share an analysis tool configuration file across your repositories, check if your tool recursively searches the subdirectories of your repositories for configuration files.
 
-    If your tool does not detect the configuration files in the submodule directories, you must include a configuration file directly in the root of your repositories referencing the configuration files in the submodule directories.
+    If your tool doesn't detect the configuration files in the submodule directories, you must include a configuration file directly in the root of your repositories referencing the configuration files in the submodule directories.
 
 ## Using submodules on new repositories
 
@@ -35,6 +35,6 @@ You must repeat steps 2 to 4 above every time you add new repositories with subm
 Alternatively, you can make this the default behavior for all new repositories by enabling **Add project key to the user, by default** in **Administration**, page **Settings**.
 
 !!! important
-    **If you're using Bitbucket Cloud** this setting must be disabled since automatically adding the user keys is not supported.
+    **If you're using Bitbucket Cloud** this setting must be disabled since automatically adding the user keys isn't supported.
 
 ![Add project key to the user by default](images/using-submodules-default-add-user-key.png)

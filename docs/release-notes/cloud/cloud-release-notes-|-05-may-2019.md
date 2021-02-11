@@ -1,21 +1,14 @@
-# Cloud Release Notes | 05 May 2019
+# Cloud Release Notes | May 5, 2019
 
-**Product Enhancements**
+## Product enhancements
 
--   We added the below plugins for ESLint:
-    -   [<span
-        style="font-weight: 400;">typescript-eslint/eslint-plugin</span>](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
-    -   [<span
-        style="font-weight: 400;">eslint-plugin-relay</span>](https://www.npmjs.com/package/eslint-plugin-relay)
+We added the following plugins for ESLint:
 
-**Bug fixes**
+-   [<span class="skip-vale">typescript-eslint/eslint-plugin</span>](https://www.npmjs.com/package/@typescript-eslint/eslint-plugin)
+-   [<span class="skip-vale">eslint-plugin-relay</span>](https://www.npmjs.com/package/eslint-plugin-relay)
 
--   <span style="font-weight: 400;">Fixed a bug that was preventing
-    accounts from being reactivated</span>
--   <span style="font-weight: 400;">Fixed a bug where we couldn’t import
-    any projects from a Bitbucket organization if there were problems
-    with one team </span>
--   <span style="font-weight: 400;">Fixed a bug that forced the user to
-    login with Bitbucket to be able to see the Bitbucket projects. Now
-    the user can log in with Bitbucket or GitHub and still be able to
-    add projects from the other provider.  </span>
+## Bug fixes
+
+-   Fixed a bug that was preventing accounts from being reactivated
+-   Fixed a bug where we couldn't import any projects from a Bitbucket organization if there were problems with one team
+-   Fixed a bug that forced the user to log in with Bitbucket to be able to see the Bitbucket projects. Now the user can log in with Bitbucket or GitHub and still be able to add projects from the other provider.

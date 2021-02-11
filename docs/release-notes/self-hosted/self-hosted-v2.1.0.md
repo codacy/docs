@@ -38,7 +38,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Credo 1.3.0
 -   CSSLint 1.0.5
 -   Detekt 1.10.0
--   **Eslint 7.8.1 (updated from 7.6.0)**
+-   **ESLint 7.8.1 (updated from 7.6.0)**
 -   Flawfinder 2.0.11
 -   Gorevive 1.0.2
 -   Gosec v2.3.0
@@ -56,10 +56,10 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Remark Lint 7.0.0
 -   Rubocop 0.82.0
 -   Scalastyle 1.0.0
--   **Shellcheck v0.7.1 (updated from v0.7.0)**
--   **Sonar Csharp 8.12 (updated from 8.10)**
+-   **ShellCheck v0.7.1 (updated from v0.7.0)**
+-   **Sonar C# 8.12 (updated from 8.10)**
 -   **Sonar Visual Basic 8.12 (updated from 8.10)**
--   **Spotbugs 4.1.2 (updated from 4.0.1)**
+-   **SpotBugs 4.1.2 (updated from 4.0.1)**
 -   SQLint 0.1.9
 -   Staticcheck 2017.2.2
 -   **Stylelint 13.7.0 (updated from 13.6.1)**
