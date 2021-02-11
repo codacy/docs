@@ -113,7 +113,7 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>JavaScript</td>
-      <td><a href="https://eslint.org/">ESLint</a>,
+      <td><a href="https://eslint.org/">ESLint</a><sup><a href="#suggest-fixes">🔧</a></sup>,
           <a href="https://jshint.com/">JSHint</a>,
           <a href="https://pmd.github.io/">PMD</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -235,7 +235,7 @@ The table below lists all programming languages currently supported by Codacy an
     </tr>
     <tr>
       <td>TypeScript</td>
-      <td><a href="https://eslint.org/">ESLint</a>,
+      <td><a href="https://eslint.org/">ESLint</a><sup><a href="#suggest-fixes">🔧</a></sup>,
           <a href="https://palantir.github.io/tslint/">TSLint</a></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://eslint.org/">ESLint</a></td>
@@ -275,6 +275,9 @@ The table below lists all programming languages currently supported by Codacy an
 
 <sup>*</sup>: Supported as a [client-side tool](../related-tools/local-analysis/client-side-tools.md).
 {: id="client-side"}
+
+<sup>🔧</sup>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
+{: id="suggest-fixes"}
 
 Codacy also uses [cloc](https://github.com/kentcdodds/cloc) to calculate the source lines of code for all supported languages.
 
