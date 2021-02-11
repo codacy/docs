@@ -26,7 +26,7 @@ Depending on the options that you enable, Codacy will automatically update merge
 
 ### Pull Request Status
 
-Adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the [quality settings](../../repositories/quality-settings.md) of your project. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings.
+Adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/quality-settings.md) of your project. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings.
 
 ![Merge request status on GitLab](images/gitlab-integration-pr-status.png)
 

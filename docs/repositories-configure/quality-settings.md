@@ -10,7 +10,7 @@ The following sections explain the settings in detail.
 
 ## Commits
 
-These settings configure quality thresholds for commits, as displayed on the [Commits](commits-view.md) page.
+These settings configure quality thresholds for commits, as displayed on the [Commits](../repositories/commits-view.md) page.
 
 ![Quality settings for commits](images/quality-settings-commits.png)
 
@@ -32,7 +32,7 @@ These settings configure quality thresholds for pull requests, as displayed on t
 
 ## Repository
 
-These settings configure quality thresholds for the repository, as displayed on the [Repository Dashboard](repository-dashboard.md).
+These settings configure quality thresholds for the repository, as displayed on the [Repository Dashboard](../repositories/repository-dashboard.md).
 
 ![Quality settings for the repository](images/quality-settings-repository.png)
 

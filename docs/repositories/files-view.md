@@ -2,7 +2,7 @@
 
 The file list shows all the files in your repository, sortable by six different columns:
 
--   [Grade](what-are-the-different-grades-and-how-are-they-calculated.md)
+-   [Grade](../faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md)
 -   Filename
 -   Number of issues
 -   Code duplication
