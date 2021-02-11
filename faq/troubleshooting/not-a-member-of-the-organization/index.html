@@ -765,32 +765,32 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../organizations/managing-repositories/" title="Managing repositories" class="md-nav__link">
+      Managing repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../organizations/managing-people/" title="Managing people" class="md-nav__link">
+      Managing people
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../organizations/roles-and-permissions-for-synced-organizations/" title="Roles and permissions for synced organizations" class="md-nav__link">
       Roles and permissions for synced organizations
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../organizations/adding-and-managing-authors/" title="Adding and managing authors" class="md-nav__link">
-      Adding and managing authors
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../organizations/authors-vs-members/" title="Authors vs members" class="md-nav__link">
-      Authors vs members
     </a>
   </li>
 
@@ -812,30 +812,18 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../../../organizations/managing-repositories-in-your-organization/" title="Managing repositories in your organization" class="md-nav__link">
-      Managing repositories in your organization
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-8" type="checkbox" id="nav-5-8">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-7" type="checkbox" id="nav-5-7">
     
-    <label class="md-nav__link" for="nav-5-8">
+    <label class="md-nav__link" for="nav-5-7">
       Manual organizations (legacy)
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Manual organizations (legacy)" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-8">
+      <label class="md-nav__title" for="nav-5-7">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -2630,7 +2618,7 @@
                 
                 
                 <h1 id="not-a-member-of-the-organization">Not a member of the organization<a class="headerlink" href="#not-a-member-of-the-organization" title="Permanent link">&para;</a></h1>
-<p>When you see this message, it means that Codacy can't analyze a commit because the associated email address doesn't belong to any Codacy member or author.</p>
+<p>When you see this message, it means that Codacy can't analyze a commit because the associated email address doesn't belong to any Codacy user.</p>
 <p>You can check which email address is associated with a commit by hovering the cursor on the name of the contributor on the page for the commit:</p>
 <p><img alt="Checking the email address for a commit" src="../images/not-a-member-of-the-organization-commit.png" /></p>
 <p>To verify which email addresses are associated with the Codacy account, the user must click on their avatar on the top right-hand corner, select <strong>Your account</strong>, and open the page <strong>Emails</strong>:</p>
@@ -2638,13 +2626,16 @@
 <p>There may be different reasons for this issue to happen:</p>
 <ul>
 <li>
-<p><strong>The user making the commit hasn't <a href="../../../getting-started/getting-started-with-codacy/">signed in to Codacy and joined the organization</a> yet.</strong> Or, if the user doesn't belong to your organization, an organization owner must <a href="../../../organizations/adding-and-managing-authors/">add the user as an author</a> instead.</p>
+<p><strong>The user making the commit hasn't signed in to Codacy and joined the organization yet</strong></p>
+<p>The user must <a href="../../../organizations/managing-people/#joining">join the organization</a> or, if you're the organization owner, you can <a href="../../../organizations/managing-people/#adding-people">add the user</a> instead.</p>
 </li>
 <li>
-<p><strong>The commit email address isn't associated with the account of a Codacy user.</strong> Codacy automatically associates the email addresses from the Git provider accounts to the Codacy accounts when users sign in to Codacy. Make sure that the user configures the missing email address on their Git provider account, and that the user logs in again on Codacy for the change to take effect.</p>
+<p><strong>The commit email address isn't associated with the account of a Codacy user</strong></p>
+<p>Codacy automatically associates the email addresses from the Git provider accounts to the Codacy accounts when users sign in to Codacy. Make sure that the user configures the missing email address on their Git provider account, and that the user logs in again on Codacy for the change to take effect.</p>
 </li>
 <li>
-<p><strong>Git isn't configured with your correct email address.</strong> Unless you explicitly <a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-useremail">configure your email address</a>, Git automatically uses an email address based on the username and hostname of your workstation, and associates this email address with your commits.</p>
+<p><strong>Git isn't configured with your correct email address</strong></p>
+<p>Unless you explicitly <a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-useremail">configure your email address</a>, Git automatically uses an email address based on the username and hostname of your workstation, and associates this email address with your commits.</p>
 <p>To check which email address your local Git installation is using, run the following command on your workstation:</p>
 <div class="highlight"><pre><span></span><code>git config user.email
 </code></pre></div>
@@ -2728,7 +2719,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 11, 2021</span>
     
   </small>
 </div>
