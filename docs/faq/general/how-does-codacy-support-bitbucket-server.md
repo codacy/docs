@@ -15,8 +15,8 @@ Currently, the integration between Codacy and Bitbucket Server has the following
 -   **Repositories that are moved between teams are not automatically transferred between Organizations on Codacy.** You must manually delete these repositories from their source Organization and add them to their new Organization.
 -   **Personal repositories are not supported.** You can only add repositories to Codacy if they belong to a project.
 -   **Codacy only sends commit and pull request notification emails to the authors of the commits and pull requests.**
--   **The Repositories screen does not include the "last updated" timestamp for each repository.** As such, the repositories are sorted alphabetically.
--   **Codacy does not analyze pull requests submitted from forked repositories.**
+-   **The Repositories screen doesn't include the "last updated" timestamp for each repository.** As such, the repositories are sorted alphabetically.
+-   **Codacy doesn't analyze pull requests submitted from forked repositories.**
 
 ## See also
 

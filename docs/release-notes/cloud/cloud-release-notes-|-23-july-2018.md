@@ -1,6 +1,6 @@
-# Cloud Release Notes | 23 July 2018
+# Cloud Release Notes | July 23, 2018
 
-## New Release
+## New release
 
 -   Added ability to copy project badge from the project dashboard
 
@@ -12,5 +12,5 @@ Added new documentation on:
 
 ## Bug fixes
 
--   Fixed PyLint pattern 'Enforce naming conventions' stopped providing results
+-   Fixed Pylint pattern `Enforce naming conventions` that had stopped providing results
 -   You can import certain modules in your ESLint configuration files

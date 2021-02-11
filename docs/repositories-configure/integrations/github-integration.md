@@ -30,7 +30,7 @@ Depending on the options that you enable, Codacy will automatically update pull 
 
 ### Status checks
 
-Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories/quality-settings.md) of your repository. To see the coverage status check, ensure that you enable the option **Coverage** in the quality settings.
+Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/quality-settings.md) of your repository. To see the coverage status check, ensure that you enable the option **Coverage** in the quality settings.
 
 !!! tip
     After enabling this option, you can [set Codacy as a required check](../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md#github) before merging your pull requests.

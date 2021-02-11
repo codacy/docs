@@ -1,15 +1,9 @@
-# Cloud Release Notes | 20 May 2019
+# Cloud Release Notes | May 20, 2019
 
-**Product Enhancements**
+## Product enhancements
 
--   <span style="font-weight:400">As a way of improving performance and
-    to provide faster analysis, Codacy will no longer check for new
-    updates in projects that don’t have </span>[<span
-    style="font-weight:400">post-commit
-    hooks</span>](../../repositories/post-commit-hooks.md)<span
-    style="font-weight:400"> enabled.</span>
+-   As a way of improving performance and provide faster analysis, Codacy will no longer check for new updates in projects that don't have [post-commit hooks](../../repositories-configure/integrations/post-commit-hooks.md) enabled.
 
-**Bug fixes**
+## Bug fixes
 
--   <span style="font-weight:400">Fixed a bug where Go tools weren’t
-    reporting any issues in the first analysis</span>
+-   Fixed a bug where Go tools weren't reporting any issues in the first analysis.

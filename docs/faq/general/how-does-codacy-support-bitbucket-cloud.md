@@ -16,7 +16,7 @@ Currently, the integration between Codacy and Bitbucket Cloud has the following 
 -   **Renamed Team [workspace IDs](https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/#How-to-change-a-workspace-ID) aren't automatically renamed on Codacy, causing Codacy to stop analyzing the repositories in those teams.** You must click the button **Synchronize** in the settings of the corresponding Organization on Codacy to synchronize the workspace ID and resume the analysis of the repositories.
 -   **Repositories that are moved between teams are not automatically transferred between Organizations on Codacy.** You must manually delete these repositories from their source Organization and add them to their new Organization.
 -   **Codacy only sends commit and pull request notification emails to the authors of the commits and pull requests.**
--   **Codacy does not analyze pull requests submitted from forked repositories.**
+-   **Codacy doesn't analyze pull requests submitted from forked repositories.**
 
 ## See also
 

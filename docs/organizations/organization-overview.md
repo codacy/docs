@@ -35,7 +35,7 @@ If you have over 8 repositories, the chart displays your repositories grouped by
 
 ## Open pull requests
 
-The **Most problematic** tab displays a short list of the open pull requests that are not up to standards and have the most potential to negatively affect your code quality. Click directly on each pull request to see more details.
+The **Most problematic** tab displays a short list of the open pull requests that aren't up to standards and have the most potential to negatively affect your code quality. Click directly on each pull request to see more details.
 
 ![Most problematic pull requests](images/organization-overview-prs-problematic.png)
 
@@ -57,4 +57,4 @@ Click **See all** to see all repositories in your organization.
 ![Last updated repositories](images/organization-overview-repositories-last-updated.png)
 
 !!! important
-    **If you are using Bitbucket Server** the list displays the repositories in alphabetical order because Codacy cannot obtain the information on when the repositories were last updated from this Git provider.
+    **If you are using Bitbucket Server** the list displays the repositories in alphabetical order because Codacy can't obtain the information on when the repositories were last updated from this Git provider.

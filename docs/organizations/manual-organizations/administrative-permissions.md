@@ -42,7 +42,7 @@ For users that don't have Admin permissions, they will need to be added to a [te
 <td><strong>Read</strong></td>
 <td><ul>
 <li>See repository issues and metrics</li>
-<li>Add repositories to the Administrators team (to add repo to a specific team needs to have write permissions)</li>
+<li>Add repositories to the Administrators team (to add repository to a specific team needs to have write permissions)</li>
 </ul></td>
 </tr>
 <tr>

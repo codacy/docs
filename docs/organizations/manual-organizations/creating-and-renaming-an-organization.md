@@ -5,7 +5,7 @@
 
     Please use the improved [Synced Organizations](../what-are-synced-organizations.md) instead, since you will no longer be able to add new repositories under Manual Organizations to avoid duplication of repositories.
 
-    This change does not impact Codacy self-hosted.
+    This change doesn't impact Codacy self-hosted.
 
 To create an organization, click on your avatar and select **Organizations**. Type the name in the **Create new organization** field and click on **Create New**.
 

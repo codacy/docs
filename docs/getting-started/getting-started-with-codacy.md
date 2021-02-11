@@ -42,7 +42,7 @@ Codacy begins an initial analysis as soon as you add a repository, and displays 
 
 -   [Ignore files](../repositories-configure/ignoring-files.md) that you want to exclude from the Codacy analysis
 -   [Configure the code patterns](../repositories-configure/code-patterns.md) that Codacy uses to analyze your repository
--   [Configure your quality settings](../repositories/quality-settings.md) for pull requests
+-   [Configure your quality settings](../repositories-configure/quality-settings.md) for pull requests
 
 ## You're all set! 🎉 {: id="all-set"}
 
