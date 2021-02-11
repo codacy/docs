@@ -21,26 +21,6 @@ This opens the list of organizations on your Git providers. The organizations wi
 !!! note
     If you can't see the organization you are looking for, follow the instructions in the card **Adding new organizations** or [these troubleshooting instructions](../faq/general/why-cant-i-see-my-organization.md).
 
-## Managing people in an organization
-
-To see and manage who joined your organization on Codacy open your organization **Settings** and open **People**.
-
-![Managing people in an organization](images/organization-people.png)
-
-Members can add themselves to your Codacy organization when they log into Codacy using their Git provider credentials. In the **Plan and Billing** page there are different ways to control who can join your organization:
-
--   **Allow new people to join:** team members with access on the Git provider will be able to join the Codacy organization automatically and your billing will be updated accordingly.
--   **New people need to request access to join:** team members must request access to be able to join the Codacy organization. You can override this setting for organization owners.
-
-The organizations that contain your personal repositories can only have the owner of the repositories as their single member.
-
-!!! important
-    **If you are using Bitbucket Cloud** the organization that contains your personal repositories can have other members, since Bitbucket Cloud doesn't have a different type of [workspace](https://support.atlassian.com/bitbucket-cloud/docs/what-is-a-workspace/){: target="_blank"} for personal use.
-
-![Accepting new people to the organization](images/organization-plan-billing.png)
-
-Members can remove themselves from organizations, while owners can remove themselves as well as other users, even other owners. Organizations must have at least one owner.
-
 ## Updates on the Git provider
 
 In case you change your organization or repository on the Git provider, some changes will be reflected on Codacy. The following cases are supported:
