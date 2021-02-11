@@ -1,6 +1,6 @@
 # Not a member of the organization
 
-When you see this message, it means that Codacy can't analyze a commit because the associated email address doesn't belong to any Codacy member or author.
+When you see this message, it means that Codacy can't analyze a commit because the associated email address doesn't belong to any Codacy user.
 
 You can check which email address is associated with a commit by hovering the cursor on the name of the contributor on the page for the commit:
 
@@ -12,11 +12,17 @@ To verify which email addresses are associated with the Codacy account, the user
 
 There may be different reasons for this issue to happen:
 
--   **The user making the commit hasn't [signed in to Codacy and joined the organization](../../getting-started/getting-started-with-codacy.md) yet.** Or, if the user doesn't belong to your organization, an organization owner must [add the user as an author](../../organizations/adding-and-managing-authors.md) instead.
+-   **The user making the commit hasn't signed in to Codacy and joined the organization yet**
 
--   **The commit email address isn't associated with the account of a Codacy user.** Codacy automatically associates the email addresses from the Git provider accounts to the Codacy accounts when users sign in to Codacy. Make sure that the user configures the missing email address on their Git provider account, and that the user logs in again on Codacy for the change to take effect.
+    The user must [join the organization](../../organizations/managing-people.md#joining) or, if you're the organization owner, you can [add the user](../../organizations/managing-people.md#adding-people) instead.
 
--   **Git isn't configured with your correct email address.** Unless you explicitly [configure your email address](https://git-scm.com/docs/git-config#Documentation/git-config.txt-useremail), Git automatically uses an email address based on the username and hostname of your workstation, and associates this email address with your commits.
+-   **The commit email address isn't associated with the account of a Codacy user**
+
+    Codacy automatically associates the email addresses from the Git provider accounts to the Codacy accounts when users sign in to Codacy. Make sure that the user configures the missing email address on their Git provider account, and that the user logs in again on Codacy for the change to take effect.
+
+-   **Git isn't configured with your correct email address**
+
+    Unless you explicitly [configure your email address](https://git-scm.com/docs/git-config#Documentation/git-config.txt-useremail), Git automatically uses an email address based on the username and hostname of your workstation, and associates this email address with your commits.
 
     To check which email address your local Git installation is using, run the following command on your workstation:
 

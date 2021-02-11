@@ -49,6 +49,7 @@ Scalameta
 Scalastyle
 SCSSLint
 ShellCheck
+signup
 SonarC#
 SonarVB
 SpotBugs
