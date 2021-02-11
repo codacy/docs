@@ -6,7 +6,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
--   Improved the [repositories list page](../../organizations/managing-repositories-in-your-organization.md) to streamline managing the repositories in an organization and display metrics for each repository. (CY-1847)
+-   Improved the [repositories list page](../../organizations/managing-repositories.md) to streamline managing the repositories in an organization and display metrics for each repository. (CY-1847)
 
 ## Bug fixes
 
@@ -33,7 +33,6 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Bundler Audit 0.6.1
 -   Checkstyle 8.34
 -   CodeNarc 1.6
--   CodeSniffer 3.5.6
 -   Coffeelint 2.1.0
 -   Cppcheck 2.1
 -   Credo 1.3.0
@@ -46,11 +45,12 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Hadolint 1.17.5
 -   Jackson Linter 2.10.2
 -   JSHint 2.10.2
--   Phpmd 2.8.1
--   **PMD 6.27.0 (updated from 6.25.0)**
+-   PHP Code Sniffer 3.5.6
+-   PHP Mess Detector 2.8.1
+-   **Pmd 6.27.0 (updated from 6.25.0)**
 -   Pmdjava 5.8.1
 -   Prospector 1.2.0
--   PSScriptAnalyser 1.18.3
+-   PSScriptAnalyzer 1.18.3
 -   Pylint 1.9.5
 -   **Pylint Python3 2.6.0 (updated from 2.5.3)**
 -   Remark Lint 7.0.0

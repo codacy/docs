@@ -4,13 +4,6 @@ Codacy supports configuring certain advanced features through a configuration fi
 
 -   Ignoring files globally, for duplication, or a specific tool
 
-    <!-- NOTE 2021-02-05 paulo.ribeiro
-         The category Coverage is not supported by the Codacy configuration file.
-         See pull request #70 for more information.
-         
-         NOTE 2021-02-09 paulo.ribeiro
-         We concluded that the category Metrics and the key "enabled" weren't working on the Codacy configuration file and opened the issue CY-3679 to look further into this. -->
-
 -   Configuring a specific repository directory on which to start the analysis
 
 -   Adding custom extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
