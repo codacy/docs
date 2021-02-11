@@ -5,7 +5,7 @@ By default, Codacy automatically analyzes a repository whenever you push changes
 If you later decide to analyze a skipped commit, you can override any skip tags by reanalyzing the commit.
 
 !!! note
-    This feature is not supported for pull requests.
+    This feature isn't supported for pull requests.
 
 ## Example commit message
 
@@ -19,4 +19,4 @@ Date:   Wed Jan 31 10:01:47 2019 +0000
     Add eslint-plugin-chai-expect version 1.1.1 [ci skip]
 ```
 
-When pushed, Codacy will not analyze this commit because of the `[ci skip]` in the commit message.
+When pushed, Codacy won't analyze this commit because of the `[ci skip]` in the commit message.

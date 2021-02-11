@@ -1,4 +1,7 @@
-# What are the different Grades and how are they calculated?
+# What are the different grades and how are they calculated?
+
+<!-- TODO
+     Improve this information to make it more useful and compact, and move it to a single section at the end of the page "Repository Dashboard". -->
 
 ## 1. Overall Grade
 
@@ -33,6 +36,6 @@ Grading every file occurs according to the weighted average of the following cat
 
 ## 4. Grade Calculation
 
-Codacy grades based on the number of issues for every thousand lines of code (KLOC). Steve McConnell, in his book 'Code Complete,' wrote about average bugs per LOC:
+Codacy calculates grades based on the number of issues for every thousand lines of code (KLOC). Steve McConnell, in his book 'Code Complete,' wrote about average bugs per LOC:
 
-(a) Industry Average: "about 15 - 50 errors per 1000 lines of delivered code." He further states this is usually representative of code that has some level of structured programming behind it but probably includes a mix of coding techniques.
+(a) Industry Average: "about 15–50 errors per 1000 lines of delivered code." He further states this is usually representative of code that has some level of structured programming behind it but probably includes a mix of coding techniques.

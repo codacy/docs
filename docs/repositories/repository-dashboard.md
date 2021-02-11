@@ -39,7 +39,7 @@ Each tab displays the following information for the corresponding metric:
 !!! note
     The coverage tab only displays a value if Codacy received coverage data for the most recent commit. This is because one commit can easily change the size or number of files on the repository, or even remove some of the files that had coverage information.
 
-The chart also displays the **trendline** based on the past behavior and the **quality standard**  defined on the repository [quality settings](quality-settings.md).
+The chart also displays the **trendline** based on the past behavior and the **quality standard**  defined on the repository [quality settings](../repositories-configure/quality-settings.md).
 
 ![Quality evolution chart](images/repository-dashboard-quality-evolution.png)
 
@@ -53,7 +53,7 @@ Click **See all issues** to see the full [list of issues](issues-view.md) found,
 
 ## Coverage
 
-The **Coverage** area displays the percentage of lines of code on the selected branch that are covered by tests versus the [quality settings](quality-settings.md) defined for the repository, as well as the number of files:
+The **Coverage** area displays the percentage of lines of code on the selected branch that are covered by tests versus the [quality settings](../repositories-configure/quality-settings.md) defined for the repository, as well as the number of files:
 
 -   Without coverage
 -   With coverage not up to standards (based on your repository quality settings)

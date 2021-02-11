@@ -110,8 +110,8 @@ plugins:
               "hc/en-us/articles/207279819-Coverage.md": "coverage-reporter/adding-coverage-to-your-repository.md"
               "hc/en-us/articles/207279849.md": "repositories/files-view.md"
               "hc/en-us/articles/207279849-Files-View.md": "repositories/files-view.md"
-              "hc/en-us/articles/207280019.md": "repositories/managing-branches.md"
-              "hc/en-us/articles/207280019-Managing-Branches.md": "repositories/managing-branches.md"
+              "hc/en-us/articles/207280019.md": "repositories-configure/managing-branches.md"
+              "hc/en-us/articles/207280019-Managing-Branches.md": "repositories-configure/managing-branches.md"
               "hc/en-us/articles/207280189.md": "organizations/manual-organizations/administrative-permissions.md"
               "hc/en-us/articles/207280189-Administrative-Permissions.md": "organizations/manual-organizations/administrative-permissions.md"
               "hc/en-us/articles/207280219.md": "repositories-configure/integrations/github-integration.md"
@@ -143,8 +143,8 @@ plugins:
               "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "related-tools/codacy-plugin-tools.md"
               "hc/en-us/articles/207994735.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages-and-tools.md"
-              "hc/en-us/articles/207994765.md": "repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
-              "hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-.md": "repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
+              "hc/en-us/articles/207994765.md": "faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
+              "hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-.md": "faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
               "hc/en-us/articles/207994825.md": "faq/repositories/how-do-i-manually-force-a-repository-update.md"
               "hc/en-us/articles/207994825-How-do-I-manually-force-a-repository-update-.md": "faq/repositories/how-do-i-manually-force-a-repository-update.md"
               "hc/en-us/articles/207994835.md": "faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md"
@@ -193,10 +193,10 @@ plugins:
               "hc/en-us/articles/213840489-How-do-I-reanalyze-my-repository-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/213840489-How-do-I-reanalyze-my-project-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
               "hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-.md": "faq/repositories/how-do-i-reanalyze-my-repository.md"
-              "hc/en-us/articles/214085885.md": "repositories/post-commit-hooks.md"
-              "hc/en-us/articles/214085885-Post-Commit-Hooks.md": "repositories/post-commit-hooks.md"
-              "hc/en-us/articles/214377225.md": "repositories/managing-branches.md"
-              "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "repositories/managing-branches.md"
+              "hc/en-us/articles/214085885.md": "repositories-configure/integrations/post-commit-hooks.md"
+              "hc/en-us/articles/214085885-Post-Commit-Hooks.md": "repositories-configure/integrations/post-commit-hooks.md"
+              "hc/en-us/articles/214377225.md": "repositories-configure/managing-branches.md"
+              "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "repositories-configure/managing-branches.md"
               "hc/en-us/sections/360000605573-Self-hosted-Release-Notes.md": "release-notes/index.md"
               "hc/en-us/sections/360000605573.md": "release-notes/index.md"
               "hc/en-us/articles/360001207234.md": "repositories-configure/specifying-language.md"
@@ -239,8 +239,8 @@ plugins:
               "hc/en-us/articles/360008254833-Run-local-analysis.md": "related-tools/local-analysis/running-local-analysis.md"
               "hc/en-us/articles/360008254833-Run-local-analysis-before-creating-a-commit.md": "related-tools/local-analysis/running-local-analysis.md"
               "hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results.md": "related-tools/local-analysis/running-local-analysis.md"
-              "hc/en-us/articles/360009164573.md": "repositories/quality-settings.md"
-              "hc/en-us/articles/360009164573-Quality-Settings.md": "repositories/quality-settings.md"
+              "hc/en-us/articles/360009164573.md": "repositories-configure/quality-settings.md"
+              "hc/en-us/articles/360009164573-Quality-Settings.md": "repositories-configure/quality-settings.md"
               "hc/en-us/articles/360009180134.md": "repositories/issues-view.md"
               "hc/en-us/articles/360009180134-Issues-View.md": "repositories/issues-view.md"
               "hc/en-us/articles/360009180134-The-Issues-View.md": "repositories/issues-view.md"
@@ -263,24 +263,24 @@ plugins:
               "hc/en-us/articles/360010373559-Roles-and-permissions-for-synced-organizations.md": "organizations/roles-and-permissions-for-synced-organizations.md"
               "hc/en-us/articles/360010434280.md": "release-notes/cloud/cloud-release-notes-|-15-nov-2019.md"
               "hc/en-us/articles/360010434280-Cloud-Release-Notes-15-Nov-2019.md": "release-notes/cloud/cloud-release-notes-|-15-nov-2019.md"
-              "hc/en-us/articles/360010922420.md": "organizations/adding-and-managing-authors.md"
-              "hc/en-us/articles/360010922420-Adding-and-managing-Authors.md": "organizations/adding-and-managing-authors.md"
+              "hc/en-us/articles/360010922420.md": "organizations/managing-people.md"
+              "hc/en-us/articles/360010922420-Adding-and-managing-Authors.md": "organizations/managing-people.md"
               "hc/en-us/articles/360011105534.md": "release-notes/cloud/cloud-release-notes-|-19-october-2018.md"
               "hc/en-us/articles/360011105534-Cloud-Release-Notes-19-October-2018.md": "release-notes/cloud/cloud-release-notes-|-19-october-2018.md"
               "hc/en-us/articles/360011935900.md": "faq/general/how-does-codacy-support-gitlab-cloud.md"
               "hc/en-us/articles/360011935900-How-does-Codacy-support-GitLab-Cloud-.md": "faq/general/how-does-codacy-support-gitlab-cloud.md"
               "hc/en-us/articles/360012007980.md": "release-notes/cloud/codacy-now-supports-github-apps.md"
               "hc/en-us/articles/360012007980-Codacy-now-supports-GitHub-Apps.md": "release-notes/cloud/codacy-now-supports-github-apps.md"
-              "hc/en-us/articles/360012030340.md": "organizations/authors-vs-members.md"
-              "hc/en-us/articles/360012030340-Authors-vs-Members.md": "organizations/authors-vs-members.md"
+              "hc/en-us/articles/360012030340.md": "organizations/managing-people.md"
+              "hc/en-us/articles/360012030340-Authors-vs-Members.md": "organizations/managing-people.md"
               "hc/en-us/articles/360012037659.md": "repositories-configure/integrations/gitlab-integration.md"
               "hc/en-us/articles/360012037659-GitLab-Integration.md": "repositories-configure/integrations/gitlab-integration.md"
               "hc/en-us/articles/360012056493.md": "release-notes/cloud/cloud-release-notes-|-02-november-2018.md"
               "hc/en-us/articles/360012056493-Cloud-Release-Notes-02-November-2018.md": "release-notes/cloud/cloud-release-notes-|-02-november-2018.md"
               "hc/en-us/articles/360012126419.md": "organizations/configuring-which-users-can-ignore-issues.md"
               "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "organizations/configuring-which-users-can-ignore-issues.md"
-              "hc/en-us/articles/360012141513.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md"
-              "hc/en-us/articles/360012141513-Scheduled-Maintenance-Saturday-17th-Nov-8-00-GMT-0-00-PST-.md": "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md"
+              "hc/en-us/articles/360012141513.md": "index.md"
+              "hc/en-us/articles/360012141513-Scheduled-Maintenance-Saturday-17th-Nov-8-00-GMT-0-00-PST-.md": "index.md"
               "hc/en-us/articles/360012328140.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
               "hc/en-us/articles/360012328140-Removal-of-NodeSecurity-GoLint-and-SCSSLint.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
               "hc/en-us/articles/360012494113.md": "release-notes/cloud/cloud-release-notes-|-16-november-2018.md"
@@ -291,14 +291,14 @@ plugins:
               "hc/en-us/articles/360012746413-I-renamed-my-repository-on-the-Git-provider.md": "faq/repositories/i-renamed-my-repository-on-the-git-provider.md"
               "hc/en-us/articles/360015220333.md": "release-notes/cloud/cloud-release-notes-|-02-january-2019.md"
               "hc/en-us/articles/360015220333-Cloud-Release-Notes-02-January-2019.md": "release-notes/cloud/cloud-release-notes-|-02-january-2019.md"
-              "hc/en-us/articles/360015221174.md": "release-notes/cloud/scheduled-maintenance-saturday,-5th-jan@05:30-gmt-(21:30-pst).md"
-              "hc/en-us/articles/360015221174-Scheduled-Maintenance-Saturday-5th-Jan-05-30-GMT-21-30-PST-.md": "release-notes/cloud/scheduled-maintenance-saturday,-5th-jan@05:30-gmt-(21:30-pst).md"
+              "hc/en-us/articles/360015221174.md": "index.md"
+              "hc/en-us/articles/360015221174-Scheduled-Maintenance-Saturday-5th-Jan-05-30-GMT-21-30-PST-.md": "index.md"
               "hc/en-us/articles/360018049713.md": "release-notes/cloud/bitbucket-changes.md"
               "hc/en-us/articles/360018049713-Bitbucket-changes.md": "release-notes/cloud/bitbucket-changes.md"
               "hc/en-us/articles/360020553894.md": "release-notes/cloud/cloud-release-notes-|-29-march-2019.md"
               "hc/en-us/articles/360020553894-Cloud-Release-Notes-29-March-2019.md": "release-notes/cloud/cloud-release-notes-|-29-march-2019.md"
-              "hc/en-us/articles/360020569254.md": "release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt).md"
-              "hc/en-us/articles/360020569254-Scheduled-Maintenance-Saturday-30th-Mar-05-00-GMT-01-00-EDT-.md": "release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt).md"
+              "hc/en-us/articles/360020569254.md": "index.md"
+              "hc/en-us/articles/360020569254-Scheduled-Maintenance-Saturday-30th-Mar-05-00-GMT-01-00-EDT-.md": "index.md"
               "hc/en-us/articles/360021260713.md": "faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md"
               "hc/en-us/articles/360021260713-How-does-Codacy-measure-complexity-in-my-repository-.md": "faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md"
               "hc/en-us/articles/360021378573.md": "release-notes/cloud/cloud-release-notes-|-08-april-2019.md"
@@ -442,6 +442,8 @@ plugins:
               "account/default-patterns.md": "repositories-configure/code-patterns.md"
               "related-tools/tool-developer-guide.md": "related-tools/codacy-plugin-tools.md"
               "related-tools/tool-developer-guide-using-scala.md": "related-tools/codacy-plugin-tools.md"
+              "organizations/adding-and-managing-authors.md": "organizations/managing-people.md"
+              "organizations/authors-vs-members.md": "organizations/managing-people.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
@@ -483,6 +485,11 @@ plugins:
               "related-tools/run-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"
               "repositories-configure/ignore-files-from-codacy-analysis.md": "repositories-configure/ignoring-files.md"
               "organizations/how-to-configure-which-users-can-ignore-issues.md": "organizations/configuring-which-users-can-ignore-issues.md"
+              "repositories/what-are-the-different-grades-and-how-are-they-calculated.md": "faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
+              "repositories/managing-branches.md": "repositories-configure/managing-branches.md"
+              "repositories/quality-settings.md": "repositories-configure/quality-settings.md"
+              "repositories/removing-your-repository.md": "repositories-configure/removing-your-repository.md"
+              "repositories/post-commit-hooks.md": "repositories-configure/integrations/post-commit-hooks.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -492,18 +499,15 @@ nav:
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
     - "Your repositories":
           - repositories/repository-dashboard.md
-          - repositories/what-are-the-different-grades-and-how-are-they-calculated.md
-          - repositories/issues-view.md
           - repositories/commits-view.md
           - repositories/files-view.md
+          - repositories/issues-view.md
           - repositories/security-monitor.md
           - repositories/badges.md
-          - repositories/quality-settings.md
-          - repositories/managing-branches.md
-          - repositories/post-commit-hooks.md
-          - repositories/removing-your-repository.md
     - "Configuring your repositories":
-          - Integrations:
+          - repositories-configure/code-patterns.md
+          - repositories-configure/managing-branches.md
+          - "Integrations":
                 - repositories-configure/integrations/github-integration.md
                 - repositories-configure/integrations/gitlab-integration.md
                 - repositories-configure/integrations/bitbucket-integration.md
@@ -511,24 +515,25 @@ nav:
                 - repositories-configure/integrations/jira-integration.md
                 - repositories-configure/integrations/project-api.md
                 - repositories-configure/integrations/webhook-notifications.md
-          - "Coverage": "!include submodules/codacy-coverage-reporter/mkdocs.yml"
-          - repositories-configure/code-patterns.md
-          - repositories-configure/codacy-configuration-file.md
+                - repositories-configure/integrations/post-commit-hooks.md
           - repositories-configure/ignoring-files.md
-          - repositories-configure/using-submodules.md
           - repositories-configure/file-extensions.md
+          - repositories-configure/quality-settings.md
+          - repositories-configure/using-submodules.md
+          - repositories-configure/codacy-configuration-file.md
+          # "Extra details" when configuring repositories
           - repositories-configure/specifying-language.md
           - repositories-configure/specifying-your-python-version.md
           - repositories-configure/specifying-your-php-version.md
           - repositories-configure/code-standards.md
+          - repositories-configure/removing-your-repository.md
     - "Organizations":
           - organizations/what-are-synced-organizations.md
           - organizations/organization-overview.md
+          - organizations/managing-repositories.md
+          - organizations/managing-people.md
           - organizations/roles-and-permissions-for-synced-organizations.md
-          - organizations/adding-and-managing-authors.md
-          - organizations/authors-vs-members.md
           - organizations/configuring-which-users-can-ignore-issues.md
-          - organizations/managing-repositories-in-your-organization.md
           - "Manual organizations (legacy)":
                 - organizations/manual-organizations/creating-and-renaming-an-organization.md
                 - organizations/manual-organizations/creating-and-managing-teams.md
@@ -539,6 +544,7 @@ nav:
           - account/managing-your-profile.md
           - account/notifications.md
     - "Related tools":
+          - "Coverage": "!include submodules/codacy-coverage-reporter/mkdocs.yml"
           - "Local analysis":
                 - related-tools/local-analysis/running-local-analysis.md
                 - related-tools/local-analysis/client-side-tools.md
@@ -562,6 +568,7 @@ nav:
                 - faq/general/how-do-i-change-my-email-address-in-codacy.md
                 - faq/general/how-can-i-change-or-cancel-my-plan.md
           - Repositories:
+                - faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md
                 - faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md
                 - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md
                 - faq/repositories/how-do-i-manually-force-a-repository-update.md
@@ -598,13 +605,10 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-20-may-2019.md
                 - release-notes/cloud/cloud-release-notes-|-05-may-2019.md
                 - release-notes/cloud/cloud-release-notes-|-08-april-2019.md
-                - release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt).md
                 - release-notes/cloud/cloud-release-notes-|-29-march-2019.md
                 - release-notes/cloud/bitbucket-changes.md
-                - release-notes/cloud/scheduled-maintenance-saturday,-5th-jan@05:30-gmt-(21:30-pst).md
                 - release-notes/cloud/cloud-release-notes-|-02-january-2019.md
                 - release-notes/cloud/cloud-release-notes-|-16-november-2018.md
-                - release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md
                 - release-notes/cloud/cloud-release-notes-|-02-november-2018.md
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
