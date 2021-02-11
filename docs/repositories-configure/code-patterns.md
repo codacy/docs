@@ -68,7 +68,7 @@ For example, when adding a new repository on Codacy you can copy the tool and pa
 
     -   **Tool matching:** Codacy only copies settings for tools that are available on both the source and target repositories, and overwrites the existing settings for these tools on the target repository.
     -   **Toggle status:** Codacy copies the enabled or disabled status of the matching tools from the source to the target repository.
-    -   **Configuration files:** Codacy copies the UI configuration of all matching tools, even those set to use configuration files. However, the import does not include the configuration mode itself.
+    -   **Configuration files:** Codacy copies the UI configuration of all matching tools, even those set to use configuration files. However, the import doesn't include the configuration mode itself.
 
     The following example illustrates the points above:
 
@@ -162,7 +162,7 @@ The known file names for each tool are the following:
   </tr>
   <tr>
     <td><a href="https://eslint.org/docs/user-guide/configuring">ESLint</a></td>
-    <td>JavaScript, Typescript, JSON</td>
+    <td>JavaScript, Typescript</td>
     <td><code>.eslintrc.js</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code>, <code>.eslintrc</td>
     <td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintDefaultOptions.ts#L26">Plugins in the UI</a><br />
         <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L119">Other Plugins</a></td>

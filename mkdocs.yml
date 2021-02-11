@@ -263,16 +263,16 @@ plugins:
               "hc/en-us/articles/360010373559-Roles-and-permissions-for-synced-organizations.md": "organizations/roles-and-permissions-for-synced-organizations.md"
               "hc/en-us/articles/360010434280.md": "release-notes/cloud/cloud-release-notes-|-15-nov-2019.md"
               "hc/en-us/articles/360010434280-Cloud-Release-Notes-15-Nov-2019.md": "release-notes/cloud/cloud-release-notes-|-15-nov-2019.md"
-              "hc/en-us/articles/360010922420.md": "organizations/adding-and-managing-authors.md"
-              "hc/en-us/articles/360010922420-Adding-and-managing-Authors.md": "organizations/adding-and-managing-authors.md"
+              "hc/en-us/articles/360010922420.md": "organizations/managing-people.md"
+              "hc/en-us/articles/360010922420-Adding-and-managing-Authors.md": "organizations/managing-people.md"
               "hc/en-us/articles/360011105534.md": "release-notes/cloud/cloud-release-notes-|-19-october-2018.md"
               "hc/en-us/articles/360011105534-Cloud-Release-Notes-19-October-2018.md": "release-notes/cloud/cloud-release-notes-|-19-october-2018.md"
               "hc/en-us/articles/360011935900.md": "faq/general/how-does-codacy-support-gitlab-cloud.md"
               "hc/en-us/articles/360011935900-How-does-Codacy-support-GitLab-Cloud-.md": "faq/general/how-does-codacy-support-gitlab-cloud.md"
               "hc/en-us/articles/360012007980.md": "release-notes/cloud/codacy-now-supports-github-apps.md"
               "hc/en-us/articles/360012007980-Codacy-now-supports-GitHub-Apps.md": "release-notes/cloud/codacy-now-supports-github-apps.md"
-              "hc/en-us/articles/360012030340.md": "organizations/authors-vs-members.md"
-              "hc/en-us/articles/360012030340-Authors-vs-Members.md": "organizations/authors-vs-members.md"
+              "hc/en-us/articles/360012030340.md": "organizations/managing-people.md"
+              "hc/en-us/articles/360012030340-Authors-vs-Members.md": "organizations/managing-people.md"
               "hc/en-us/articles/360012037659.md": "repositories-configure/integrations/gitlab-integration.md"
               "hc/en-us/articles/360012037659-GitLab-Integration.md": "repositories-configure/integrations/gitlab-integration.md"
               "hc/en-us/articles/360012056493.md": "release-notes/cloud/cloud-release-notes-|-02-november-2018.md"
@@ -442,6 +442,8 @@ plugins:
               "account/default-patterns.md": "repositories-configure/code-patterns.md"
               "related-tools/tool-developer-guide.md": "related-tools/codacy-plugin-tools.md"
               "related-tools/tool-developer-guide-using-scala.md": "related-tools/codacy-plugin-tools.md"
+              "organizations/adding-and-managing-authors.md": "organizations/managing-people.md"
+              "organizations/authors-vs-members.md": "organizations/managing-people.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
@@ -523,11 +525,10 @@ nav:
     - "Organizations":
           - organizations/what-are-synced-organizations.md
           - organizations/organization-overview.md
+          - organizations/managing-repositories.md
+          - organizations/managing-people.md
           - organizations/roles-and-permissions-for-synced-organizations.md
-          - organizations/adding-and-managing-authors.md
-          - organizations/authors-vs-members.md
           - organizations/configuring-which-users-can-ignore-issues.md
-          - organizations/managing-repositories-in-your-organization.md
           - "Manual organizations (legacy)":
                 - organizations/manual-organizations/creating-and-renaming-an-organization.md
                 - organizations/manual-organizations/creating-and-managing-teams.md

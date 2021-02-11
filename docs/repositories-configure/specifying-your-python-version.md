@@ -14,4 +14,4 @@ engines:
 
 Supported versions: 2, 3
 
-Supported tools: [codacy-pylint](https://github.com/codacy/codacy-pylint)
+Supported tools: [<span class="skip-vale">codacy-pylint</span>](https://github.com/codacy/codacy-pylint)

@@ -2,13 +2,7 @@
 
 Codacy supports configuring certain advanced features through a configuration file:
 
--   Ignoring files globally, for certain analysis categories or a specific tool
-
-    The available analysis categories are **Duplication** and **Metrics**. The category **Metrics** refers to the information you find under [File details](../repositories/files-view.md) such as Size, Structure, and Complexity.
-
-    <!-- NOTE 2021-02-05 paulo.ribeiro
-         The metrics category Coverage is not supported by the Codacy configuration file.
-         See https://github.com/codacy/docs/pull/70 for more information. -->
+-   Ignoring files globally, for duplication, or a specific tool
 
 -   Configuring a specific repository directory on which to start the analysis
 
@@ -31,21 +25,15 @@ To use a Codacy configuration file:
     ---
     engines:
       rubocop:
-        enabled: true
         exclude_paths:
           - "config/test.yml"
         base_sub_dir: "test/baseDir"
       duplication:
-        enabled: true
         exclude_paths:
           - "config/test.yml"
         config:
           languages:
             - "ruby"
-      metrics:
-        enabled: true
-        exclude_paths:
-          - "config/test.yml"
     languages:
       css:
         extensions:
