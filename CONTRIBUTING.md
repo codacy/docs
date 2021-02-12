@@ -197,7 +197,7 @@ To apply a hotfix to an existing chart release:
 
     ```bash
     git add .
-    git commit -m "Cherry-pick pull request #xxx and #yyy [ci skip]"
+    git commit -m "doc: Cherry-pick pull request #xxx and #yyy [ci skip]"
     git push
     ```
 
