@@ -14,9 +14,10 @@ The table below lists all programming languages currently supported by Codacy an
 <table>
   <colgroup>
     <col width="20%"/>
-    <col width="30%"/>
     <col width="25%"/>
-    <col width="25%"/>
+    <col width="15%"/>
+    <col width="20%"/>
+    <col width="20%"/>
   </colgroup>
   <thead>
     <tr>
