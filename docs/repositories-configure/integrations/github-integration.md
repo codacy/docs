@@ -48,3 +48,18 @@ Adds annotations on the lines of the pull request where Codacy finds new issues.
 Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable **Status checks** first.
 
 ![Pull request summary on GitHub](images/github-integration-pr-summary.png)
+
+### Suggest fixes
+
+Adds comments on the lines of the pull request where Codacy finds new issues with suggestions on how to fix the issues. Codacy doesn't apply any changes automatically. To apply the changes, [manually review and accept the suggestions](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request#applying-suggested-changes).
+
+![Comment suggesting a fix on GitHub](images/github-integration-suggest-fixes.png)
+
+!!! note
+    This feature is in early access and has the following limitations for now:
+
+    -   The only supported Git providers are GitHub Cloud and GitHub Enterprise.
+    -   The only tool that suggests fixes is [ESLint](https://eslint.org/docs/rules/). However, we're planning to support suggestions from more tools.
+    -   Because of a limitation from GitHub, the author of the comments is the user that enabled the GitHub integration and not Codacy.
+
+    📢 [Let us know](mailto:support@codacy.com?subject=Feedback on Suggest fixes) what you think about this feature!
