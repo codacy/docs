@@ -6,18 +6,17 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
+-   The Codacy top navigation bar now includes a link to the recently launched [Codacy Community](https://community.codacy.com/). Join us! (CY-3462)
+-   It's now possible to [import tool and pattern configurations](https://docs.codacy.com/repositories-configure/code-patterns/#import-patterns) from another repository to make it easier to set up new repositories and have consistent rules across repositories. (CY-3162)
 -   Now, Codacy has an improved user experience to add and manage organizations that supports displaying an indefinite number of organizations per Git provider. (CY-1938)
--   🚧 CY-3498 <!-- Files API -->
--   🚧 CY-3468 <!-- Current Issues API -->
--   🚧 CY-3462 <!-- Links to our community website -->
--   🚧 CY-3439 <!-- Suggest fixes, DO NOT INCLUDE -->
--   🚧 CY-3414 <!-- Auto-join for Users previously added as authors -->
--   🚧 CY-3162 <!-- Import patterns -->
+
+<!-- TODO CY-3498 Files API, include or not? -->
+<!-- TODO CY-3468 Current Issues API, include or not? -->
 
 ## Bug fixes
 
 -   Fixed an issue while fetching groups from GitLab if the user owned more than 100 groups with similar names. (CY-3506)
--   🚧 CY-3471 <!-- Check permissions endpoint should not give 404 when asking for permissions for an author -->
+-   The Codacy API endpoint getUserPermissionOnOrganization now correctly returns the permission `author` for people who have been invited to an organization. (CY-3471)
 
 ## Tool versions
 
