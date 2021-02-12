@@ -52,7 +52,7 @@ If you sign up with GitLab Cloud, Codacy requires the following [permissions/sco
 -   `api` permissions to access the authenticated user's API.
 -   `read_user` permissions to read the authenticated user's personal information.
 -   `read_repository` permissions to read the repositories.
--   `openid` to authenticate using [OpenID Connect].(https://docs.gitlab.com/ee/integration/openid_connect_provider.html#shared-information)
+-   `openid` to authenticate using [OpenID Connect](https://docs.gitlab.com/ee/integration/openid_connect_provider.html#shared-information).
 
 ## Bitbucket Cloud
 
