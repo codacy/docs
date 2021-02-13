@@ -9,6 +9,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
+          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
           submodules: false
           fetch-depth: 0
 
