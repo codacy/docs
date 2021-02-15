@@ -1,14 +1,14 @@
 # Getting started with Codacy
 
-Codacy automatically identifies issues through static code review analysis and notifies you on security issues, code coverage, code duplication, and code complexity in every commit and pull request.
+Codacy automatically analyzes your source code and identifies issues as you go, helping you develop software more efficiently with fewer issues down the line. Through static code review analysis, Codacy notifies you of security issues, code coverage, code duplication, and code complexity in every commit and pull request.
 
 To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.codacy.com/) and click **Get started**.
 
 ## 1. Sign up {: id="sign-up"}
 
-Signing up with a Git provider such as GitHub, GitLab, or Bitbucket links your Codacy user with your Git provider user, making it easier to add repositories to Codacy and invite your teammates.
+Sign up with a Git provider such as GitHub, GitLab, or Bitbucket. This links your Codacy user with your Git provider user, making it easier to add repositories to Codacy and invite your teammates.
 
-Codacy will ask you to have access to your Git provider during the authorization flow. [Check the permissions that Codacy requires and why](which-permissions-does-codacy-need-from-my-account.md). Codacy will also ask you to fill in a few details about your company so we know a bit more about your use case.
+Codacy will request access to your Git provider during the authorization flow. [Check the permissions that Codacy requires and why](which-permissions-does-codacy-need-from-my-account.md). Codacy will also ask you to fill in a few details about your company so we know a bit more about your use case.
 
 ## 2. Choose an organization {: id="choose-organization"}
 
@@ -30,13 +30,13 @@ As a final step, add the repositories that you wish to analyze. Codacy will star
 
 ![Adding repositories](images/getting-started-add-repository.png)
 
-Codacy begins an initial analysis as soon as you add a repository, and displays an overview of the code quality of your repository when the analysis is complete.
+Codacy begins an initial analysis as soon as you add a repository and displays an overview of the code quality of your repository when the analysis is complete.
 
 ![Repository dashboard](../repositories/images/repository-dashboard.png)
 
 ## 4. Tweak your repository settings {: id="tweak-settings"}
 
- [Check the static analysis results](../repositories/issues-view.md) on the Issues page to explore the initial analysis results.
+ [Check the static analysis results](../repositories/issues-view.md) on the **Issues** page to explore the initial analysis results.
  
  The first analysis is based on Codacy **default configurations**, so you should tweak and adapt the following configurations to match your preferences and specific scenario:
 
@@ -51,4 +51,4 @@ Congratulations, your new repository is ready!
 Optionally, you can also:
 
 -   [Add a Codacy badge to your repository](../repositories/badges.md) displaying the current code quality grade or code coverage
--   [Add coverage reports to Codacy](../coverage-reporter/adding-coverage-to-your-repository.md).
+-   [Add coverage reports to Codacy](../coverage-reporter/adding-coverage-to-your-repository.md)
