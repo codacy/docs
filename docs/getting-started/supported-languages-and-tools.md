@@ -1,8 +1,13 @@
 # Supported languages and tools
 
-For each supported programming language, Codacy generally provides Static Analysis, Code Duplication, Code Complexity, and Test Coverage.
+For each supported programming language, Codacy generally provides:
 
-The table below lists all programming languages that Codacy currently supports and the corresponding tools that Codacy uses to analyze your source code. Codacy also uses [cloc](https://github.com/kentcdodds/cloc) to calculate the source lines of code for all supported languages, and supports multiple [test coverage report formats](../coverage-reporter/adding-coverage-to-your-repository.md).
+-   Static Analysis
+-   Code Duplication
+-   Code Complexity
+-   Test Coverage
+
+The table below lists all programming languages that Codacy supports and the corresponding tools that Codacy uses to analyze your source code. Besides this, Codacy uses [cloc](https://github.com/kentcdodds/cloc) to calculate the source lines of code for all supported languages, and supports multiple [test coverage report formats](../coverage-reporter/adding-coverage-to-your-repository.md).
 
 <!--NOTE
     When adding a new tool, also update:
