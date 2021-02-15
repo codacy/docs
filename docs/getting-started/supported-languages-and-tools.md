@@ -23,7 +23,7 @@ The table below lists all programming languages that Codacy currently supports a
     <tr>
       <th>Language</th>
       <th>Static Analysis</th>
-      <th><a style="color: white;" href="#suggest-fixes">Suggest fixes</a></th>
+      <th><a style="color: white;" href="#suggested-fixes">Suggested fixes</a></th>
       <th>Duplication</th>
       <th>Complexity</th>
     </tr>
@@ -129,7 +129,7 @@ The table below lists all programming languages that Codacy currently supports a
       <td><a href="https://eslint.org/">ESLint</a>,
           <a href="https://jshint.com/">JSHint</a>,
           <a href="https://pmd.github.io/">PMD</a></td>
-      <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggested-fixes">🔧</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://eslint.org/">ESLint</a></td>
     </tr>
@@ -268,7 +268,7 @@ The table below lists all programming languages that Codacy currently supports a
       <td>TypeScript</td>
       <td><a href="https://eslint.org/">ESLint</a>,
           <a href="https://palantir.github.io/tslint/">TSLint</a></td>
-      <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggested-fixes">🔧</a></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://eslint.org/">ESLint</a></td>
     </tr>
@@ -314,7 +314,7 @@ The table below lists all programming languages that Codacy currently supports a
 {: id="client-side"}
 
 🔧: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
-{: id="suggest-fixes"}
+{: id="suggested-fixes"}
 
 ## See also
 
