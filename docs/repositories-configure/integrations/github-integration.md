@@ -62,4 +62,4 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
     -   The only tool that suggests fixes is [ESLint](https://eslint.org/docs/rules/). However, we're planning to support suggestions from more tools.
     -   Because of a limitation from GitHub, the author of the comments is the user that enabled the GitHub integration and not Codacy.
 
-    📢 [Let us know](mailto:support@codacy.com?subject=Feedback on Suggest fixes) what you think about this feature!
+    📢 [Activate suggested fixes now](#enabling) and [let us know](mailto:support@codacy.com?subject=Feedback on Suggest fixes) what you think!
