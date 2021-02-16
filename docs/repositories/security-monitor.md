@@ -34,9 +34,7 @@ The Security Monitor displays issues using security patterns from:
 -   [Brakeman](https://brakemanscanner.org/docs/warning_types/){: target="_blank"}
 -   [Codacy Scalameta Pro](https://github.com/codacy/codacy-scalameta/tree/master/patterns-base/src/main/scala/codacy/patterns){: target="_blank"}
 -   [ESLint](https://www.npmjs.com/package/eslint-plugin-security){: target="_blank"} (also: [1](https://www.npmjs.com/package/eslint-config-nodesecurity){: target="_blank"}, [2](https://www.npmjs.com/package/eslint-plugin-scanjs-rules){: target="_blank"}, [3](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml){: target="_blank"} and [4](https://www.npmjs.com/package/eslint-config-secure){: target="_blank"})
--   [FindBugs](http://findbugs.sourceforge.net/bugDescriptions.html){: target="_blank"} (Codacy Self-hosted only)
--   [FindBugsSecurity](https://find-sec-bugs.github.io/bugs.htm){: target="_blank"} (Codacy Self-hosted only)
--   [SpotBugs](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html){: target="_blank"} (Codacy Self-hosted only)
+-   [SpotBugs](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html){: target="_blank"} (includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/bugs.htm){: target="_blank"})
 -   [Sonar C#](https://rules.sonarsource.com/csharp/type/Vulnerability){: target="_blank"}
 -   [Sonar VB.NET](https://rules.sonarsource.com/vbnet){: target="_blank"}
 -   [PMD](https://pmd.github.io/pmd-6.21.0/){: target="_blank"}
