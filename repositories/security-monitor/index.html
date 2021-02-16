@@ -2717,30 +2717,33 @@
 <h2 id="category-states">Category states<a class="headerlink" href="#category-states" title="Permanent link">&para;</a></h2>
 <p>Each security category listed on the left-hand side of the dashboard has one of four states:</p>
 <table>
-<thead>
-<tr>
-<th align="center">State</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td align="center"><img alt="Green" src="../images/security-monitor-green.png" /></td>
-<td><strong>Everything is OK for this category.</strong> All the security patterns in this category are enabled, and no security issues have been found.</td>
-</tr>
-<tr>
-<td align="center"><img alt="Yellow" src="../images/security-monitor-yellow.png" /></td>
-<td><strong>There are security patterns in this category that are disabled.</strong> You should enable the patterns in this category so it's verified.<br/>To enable all security patterns on the repository, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>.<br/>If you're using configuration files, you must manually enable the listed patterns on your configuration files.</td>
-</tr>
-<tr>
-<td align="center"><img alt="Red" src="../images/security-monitor-red.png" /></td>
-<td><strong>There are security issues identified for this category.</strong></td>
-</tr>
-<tr>
-<td align="center"><img alt="Yellow" src="../images/security-monitor-yellow.png" /></td>
-<td><strong>Codacy can't determine if all the security patterns in this category are enabled or not</strong>. This happens when you're using configuration files to control which patterns are enabled.<br/>Ensure that you manually enable the listed patterns on your configuration files.</td>
-</tr>
-</tbody>
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="../images/security-monitor-green.png" alt="Green"></td>
+      <td><p><strong>Everything is OK for this category</strong></p>
+          <p>All the security patterns in this category are enabled, and no security issues have been found.</p></td>
+    </tr>
+    <tr>
+      <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
+      <td><p><strong>There are security patterns in this category that are disabled</strong></p>
+          <p>You should enable the patterns in this category so it's verified. To enable all security patterns on the repository, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>. If you're using configuration files, you must manually enable the listed patterns on your configuration files.</p>
+    </tr>
+    <tr>
+      <td><img src="../images/security-monitor-red.png" alt="Red"></td>
+      <td><p><strong>There are security issues identified for this category</strong></p></td>
+    </tr>
+    <tr>
+      <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
+      <td><p><strong>Codacy can't determine if all the security patterns in this category are enabled or not</strong></p>
+          <p>This happens when you're using configuration files to control which patterns are enabled. Ensure that you manually enable the listed patterns on your configuration files.</p></td>
+    </tr>
+  </tbody>
 </table>
               
               
