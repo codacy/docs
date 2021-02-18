@@ -1,4 +1,4 @@
-# Which version control systems do you support?
+# Which version control systems does Codacy support?
 
 We only support Git repositories from the providers listed below.
 

@@ -149,10 +149,10 @@ plugins:
               "hc/en-us/articles/207994825-How-do-I-manually-force-a-repository-update-.md": "faq/repositories/how-do-i-manually-force-a-repository-update.md"
               "hc/en-us/articles/207994835.md": "faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md"
               "hc/en-us/articles/207994835-How-do-I-transfer-delete-a-repository-from-my-account-.md": "faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md"
-              "hc/en-us/articles/207994865.md": "faq/general/which-version-control-systems-do-you-support.md"
-              "hc/en-us/articles/207994865-Can-you-add-repos-from-other-Git-providers-.md": "faq/general/which-version-control-systems-do-you-support.md"
-              "hc/en-us/articles/207994885.md": "faq/general/which-browsers-do-you-support.md"
-              "hc/en-us/articles/207994885-Which-browsers-do-you-support-.md": "faq/general/which-browsers-do-you-support.md"
+              "hc/en-us/articles/207994865.md": "faq/general/which-version-control-systems-does-codacy-support.md"
+              "hc/en-us/articles/207994865-Can-you-add-repos-from-other-Git-providers-.md": "faq/general/which-version-control-systems-does-codacy-support.md"
+              "hc/en-us/articles/207994885.md": "faq/general/which-browsers-does-codacy-support.md"
+              "hc/en-us/articles/207994885-Which-browsers-does-codacy-support-.md": "faq/general/which-browsers-does-codacy-support.md"
               "hc/en-us/articles/207994895.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
               "hc/en-us/articles/207994895-How-long-does-it-take-for-my-repository-to-be-analysed-.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
               "hc/en-us/articles/207994935.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md"
@@ -183,8 +183,8 @@ plugins:
               "hc/en-us/articles/213149905-How-do-I-change-my-email-address-in-Codacy-.md": "faq/general/how-do-i-change-my-email-address-in-codacy.md"
               "hc/en-us/articles/213211825.md": "faq/code-analysis/do-you-check-for-dependencies.md"
               "hc/en-us/articles/213211825-Do-you-check-for-dependencies-.md": "faq/code-analysis/do-you-check-for-dependencies.md"
-              "hc/en-us/articles/213217965.md": "faq/general/which-version-control-systems-do-you-support.md"
-              "hc/en-us/articles/213217965-Which-version-control-systems-do-you-support-.md": "faq/general/which-version-control-systems-do-you-support.md"
+              "hc/en-us/articles/213217965.md": "faq/general/which-version-control-systems-does-codacy-support.md"
+              "hc/en-us/articles/213217965-Which-version-control-systems-do-you-support-.md": "faq/general/which-version-control-systems-does-codacy-support.md"
               "hc/en-us/articles/213280129.md": "repositories-configure/integrations/jira-integration.md"
               "hc/en-us/articles/213280129-JIRA.md": "repositories-configure/integrations/jira-integration.md"
               "hc/en-us/articles/213632009.md": "getting-started/supported-languages-and-tools.md"
@@ -490,6 +490,8 @@ plugins:
               "repositories/quality-settings.md": "repositories-configure/quality-settings.md"
               "repositories/removing-your-repository.md": "repositories-configure/removing-your-repository.md"
               "repositories/post-commit-hooks.md": "repositories-configure/integrations/post-commit-hooks.md"
+              "faq/general/which-version-control-systems-do-you-support.md": "faq/general/which-version-control-systems-does-codacy-support.md"
+              "faq/general/which-browsers-do-you-support.md": "faq/general/which-browsers-does-codacy-support.md"
 
 nav:
     - "Documentation home": "index.md"
@@ -556,8 +558,8 @@ nav:
     - "Installing Codacy": "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
-                - faq/general/which-version-control-systems-do-you-support.md
-                - faq/general/which-browsers-do-you-support.md
+                - faq/general/which-version-control-systems-does-codacy-support.md
+                - faq/general/which-browsers-does-codacy-support.md
                 - faq/general/how-does-codacy-support-gitlab-cloud.md
                 - faq/general/how-does-codacy-support-gitlab-enterprise.md
                 - faq/general/how-does-codacy-support-bitbucket-cloud.md
