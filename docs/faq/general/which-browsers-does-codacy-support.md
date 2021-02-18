@@ -1,6 +1,6 @@
-# Which browsers do you support?
+# Which browsers does Codacy support?
 
-Codacy runs on every modern browser supporting HTML5 and CSS3.
+Codacy runs on every modern browser supporting HTML5 and CSS3:
 
 -   Chrome 67+
 -   Firefox 45+
