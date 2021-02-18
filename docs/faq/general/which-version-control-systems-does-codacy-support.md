@@ -5,7 +5,7 @@ Codacy supports repositories from the following Git providers:
 <table>
   <thead>
     <td></td>
-    <th>Hosting</th>
+    <th>Hosting model</th>
     <th>Name used on Codacy</th>
     <th>Required Codacy version</th>
   </thead>
