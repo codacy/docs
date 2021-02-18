@@ -100,7 +100,7 @@ Codacy supports configuration files for several tools. To use a configuration fi
 
     ![Using a configuration file](images/code-pattern-config-file.png)
 
-The known file names for each tool are the following:
+The known file names for the tools that support configuration files are the following:
 
 <table>
   <thead>
