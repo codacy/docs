@@ -1,6 +1,6 @@
 # Which version control systems does Codacy support?
 
-Codacy only supports Git repositories from the providers listed below.
+Codacy supports repositories from the Git providers listed below.
 
 Codacy Cloud supports the following Git providers:
 
