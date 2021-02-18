@@ -102,7 +102,7 @@ prospector
 psscriptanalyzer
 pylint
 pylintpython3
-remark-int
+remark-lint
 rubocop
 scalastyle
 scsslint
