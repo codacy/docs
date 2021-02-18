@@ -3,9 +3,15 @@
 Codacy supports repositories from the following Git providers:
 
 <table>
+  <thead>
+    <td></td>
+    <th><a target="_blank" style="color: white;" href="https://github.com">GitHub</a></th>
+    <th><a target="_blank" style="color: white;" href="https://about.gitlab.com">GitLab</a></th>
+    <th><a target="_blank" style="color: white;" href="https://bitbucket.org">Bitbucket</a></th>
+  </thead>
   <tbody>
     <tr>
-      <th><strong>Codacy Cloud</strong></th>
+      <th>Codacy Cloud</th>
       <td title="Called GitHub Cloud on the Codacy platform">
         <strong>GitHub.com</strong>
       </td>
@@ -17,7 +23,7 @@ Codacy supports repositories from the following Git providers:
       </td>
     </tr>
     <tr>
-      <th><strong><a target="_blank" style="color: white;" href="https://www.codacy.com/self-hosted">Codacy Self-hosted</a></strong></th>
+      <th><a target="_blank" style="color: white;" href="https://www.codacy.com/self-hosted">Codacy Self-hosted</a></th>
       <td title="Called GitHub Enterprise on the Codacy platform">
         <strong>GitHub Enterprise Server</strong><br/>(version 2.20.3 or later)
       </td>
