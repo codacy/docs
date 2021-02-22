@@ -62,7 +62,7 @@ jobs:
 
       - name: Tag GitHub issue
         uses: actions/github-script@v3.1
-        if: startsWith("Feedback on", ${{ process.env.GITHUB_ORIGINAL_TITLE }})
+        if: startsWith("Feedback on", ${{ github.event.issue.title }})
         with:
           github-token: ${{secrets.GITHUB_TOKEN}}
           script: |
