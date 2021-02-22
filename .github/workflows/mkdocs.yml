@@ -41,6 +41,7 @@ jobs:
           docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
 
   deploy-version:
+    needs: build
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/heads/release/v')
     steps:
@@ -85,6 +86,7 @@ jobs:
           mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted ${GITHUB_REF##*/release/}" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
 
   deploy:
+    needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
     steps:
