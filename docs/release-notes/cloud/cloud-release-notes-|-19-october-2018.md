@@ -7,7 +7,7 @@
     -   Added color scheme dependent on project quality settings: from red to green depending on your settings, and blue if your coverage is set to be ignored.
     -   Added tooltip explanations for issues related to coverage.
 
--  We updated the following tools:
+-   We updated the following tools:
     -   Scalameta now supports Scala 2.12
     -   Credo version [0.10.2](https://github.com/rrrene/credo/blob/master/CHANGELOG.md#0102)
     -   Checkstyle version [8.13](http://checkstyle.sourceforge.net/releasenotes.html#Release_8.13) 
