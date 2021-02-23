@@ -10,13 +10,13 @@ To add a new organization to Codacy, select **Add organization** on the navigati
 
 ![Adding an organization](images/organization-add-menu.png)
 
-This opens the list of organizations on your Git providers. The organizations with the same name as your Git provider username contain your personal repositories.
+This opens the list of organizations on your Git providers. The organization with the same name as your Git provider username contains your personal repositories.
+
+![Adding an organization](images/organization-add.png)
 
 -   To add a new organization to Codacy, click the link **Add** for that organization.
 -   To join an organization that's already on Codacy, click the link **Join** for that organization.
 -   To add organizations from a Git provider not yet listed on this page, click **Add provider** and give the [necessary permissions](../getting-started/which-permissions-does-codacy-need-from-my-account.md) for Codacy to sync with the new Git provider and display your organizations.
-
-![Adding an organization](images/organization-add.png)
 
 !!! note
     If you can't see the organization you are looking for, follow the instructions in the card **Adding new organizations** or [these troubleshooting instructions](../faq/general/why-cant-i-see-my-organization.md).
