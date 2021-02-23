@@ -36,7 +36,7 @@ Click the link **Go to repository** to see the code quality overview of your rep
 
 ## 4. Tweak your repository settings {: id="tweak-settings"}
 
- [Check the static analysis results](../repositories/issues-view.md) on the **Issues** page to explore the initial analysis results.
+ Check the static analysis results on the **Issues** page to [explore the initial analysis results](../repositories/issues-view.md).
  
  The first analysis is based on Codacy **default configurations**, so you should tweak and adapt the following configurations to match your preferences and specific scenario:
 
