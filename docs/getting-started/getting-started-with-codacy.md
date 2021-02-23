@@ -23,14 +23,14 @@ To start adding your repositories, select one of the organizations.
 
 ## 3. Add repositories {: id="add-repositories"}
 
-As a final step, add the repositories that you wish to analyze. Codacy will start the first analysis and set up everything required to ensure your next commits on those repositories are analyzed.
+Next, add the repositories that you wish to analyze. Codacy begins an initial analysis as soon as you add a repository and sets everything up to ensure your next commits on that repository are analyzed.
+
+![Adding repositories](../organizations/images/repositories-add.png)
 
 !!! tip
     You can only add repositories on Codacy if you have the [necessary permissions on your Git provider](../organizations/roles-and-permissions-for-synced-organizations.md).
 
-![Adding repositories](images/getting-started-add-repository.png)
-
-Codacy begins an initial analysis as soon as you add a repository and displays an overview of the code quality of your repository when the analysis is complete.
+Click the link **Go to repository** to see the code quality overview of your repository as soon as the initial analysis is complete:
 
 ![Repository dashboard](../repositories/images/repository-dashboard.png)
 
