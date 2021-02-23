@@ -12,14 +12,14 @@ Codacy will request access to your Git provider during the authorization flow. [
 
 ## 2. Choose an organization {: id="choose-organization"}
 
-Now, you'll need to add or join one or more organizations that contain your repositories. The organization with the same name as your Git provider username contains your personal repositories. The selected organizations will then be synced with Codacy so that managing your team permissions is easy. Read more about [what synced organizations do](../organizations/what-are-synced-organizations.md). 
+Now, you'll need to add or join the organizations that contain your repositories. The organization with the same name as your Git provider username contains your personal repositories. Read more about [organizations on Codacy](../organizations/what-are-synced-organizations.md).
+
+![Choosing an organization](../organizations/images/organization-add.png)  
+
+To start adding your repositories, select one of the organizations.
 
 !!! tip
-    If you can't see the organization you are looking for, [follow these troubleshooting instructions](../faq/general/why-cant-i-see-my-organization.md).
-
-![Choosing an organization](../organizations/images/organization-add.png)
-
-To start adding your repositories, select one of the organizations and click **Go to add repositories**.
+    If you can't see the organization you're looking for, [follow these troubleshooting instructions](../faq/general/why-cant-i-see-my-organization.md).
 
 ## 3. Add repositories {: id="add-repositories"}
 
