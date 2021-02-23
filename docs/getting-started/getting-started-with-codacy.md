@@ -30,7 +30,7 @@ Next, add the repositories that you wish to analyze. Codacy begins an initial an
 !!! tip
     You can only add repositories on Codacy if you have the [necessary permissions on your Git provider](../organizations/roles-and-permissions-for-synced-organizations.md).
 
-Click the link **Go to repository** to see the code quality overview of your repository as soon as the initial analysis is complete:
+Click the link **Go to repository** to see the [code quality overview of your repository](../repositories/repository-dashboard.md) as soon as the initial analysis is complete:
 
 ![Repository dashboard](../repositories/images/repository-dashboard.png)
 
