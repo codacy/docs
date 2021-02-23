@@ -11,7 +11,6 @@ The top of the Repository Dashboard displays:
 
 -   The name and code quality grade of the repository
 -   A drop-down list that selects which branch of your repository to display on the dashboard
--   **For public GitHub repositories**, the button **Add Badge** that you can use to add a [Codacy code quality badge](./badges.md) to the README of your repository
 
 ![Changing the branch](images/repository-dashboard-select-branch.png)
 
