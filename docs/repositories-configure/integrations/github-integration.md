@@ -51,6 +51,12 @@ Shows an overall view of the changes in the pull request, including new issues a
 
 ### Suggested fixes {: id="suggest-fixes"}
 
+{%
+    include "../../assets/includes/paid.txt"
+    start="<!--start-paid-->"
+    end="<!--end-paid-->"
+%}
+
 Adds comments on the lines of the pull request where Codacy finds new issues with suggestions on how to fix the issues. Codacy doesn't apply any changes automatically. To apply the changes, [manually review and accept the suggestions](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/incorporating-feedback-in-your-pull-request#applying-suggested-changes).
 
 ![Comment suggesting a fix on GitHub](images/github-integration-suggest-fixes.png)

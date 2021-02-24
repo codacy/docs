@@ -19,6 +19,12 @@ If you have many repositories, you can use the search field above the list to qu
 
 ## Adding a repository
 
+{%
+    include "../assets/includes/paid.txt"
+    start="<!--start-paid-private-repositories-->"
+    end="<!--end-paid-private-repositories-->"
+%}
+
 To add a new repository to Codacy, click the button **Add repository** at the top right-hand corner of the page. This opens a window listing the repositories in your Git provider organization that don't belong to your organization on Codacy yet.
 
 ![Adding a repository](images/repositories-add.png)

@@ -1,5 +1,11 @@
 # Security Monitor
 
+{%
+    include "../assets/includes/paid.txt"
+    start="<!--start-paid-->"
+    end="<!--end-paid-->"
+%}
+
 The **Security Monitor** provides an overview of all current security alerts.
 
 ![Security Monitor](images/security-monitor.png)
