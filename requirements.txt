@@ -9,3 +9,4 @@ mkdocs-monorepo-plugin==0.4.11
 mkdocs-markdownextradata-plugin==0.2.1
 mkdocs-redirects==1.0.1
 mkdocs-rss-plugin==0.12.0
+mkdocs-include-markdown-plugin==2.8.0

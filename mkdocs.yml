@@ -58,6 +58,7 @@ markdown_extensions:
 # Plugins
 plugins:
     - search
+    - include-markdown
     - git-revision-date-localized
 # The RSS plugin is disabled because it doesn't support submodules yet,
 # see https://github.com/Guts/mkdocs-rss-plugin/issues/23
