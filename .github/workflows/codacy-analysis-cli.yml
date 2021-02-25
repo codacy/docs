@@ -1,15 +1,21 @@
-name: codacy-analysis-cli
+name: Codacy Analysis CLI
 
-on: ["push"]
+on: push
 
 jobs:
   codacy-analysis-cli:
-    name: codacy-analysis-cli
     runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/master'
     steps:
-      - uses: actions/checkout@master
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          submodules: false
+          fetch-depth: 0
+
       - name: Run codacy-analysis-cli
-        uses: mrfyda/codacy-analysis-cli-action@master
+        uses: codacy/codacy-analysis-cli-action@master
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          upload: true
+          max-allowed-issues: 2147483647
