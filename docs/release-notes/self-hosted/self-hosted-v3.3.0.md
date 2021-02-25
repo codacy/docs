@@ -35,7 +35,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **ESLint 7.18.0 (updated from 7.15.0)**
 -   Faux-Pas 1.7.2
 -   Flawfinder 2.0.11
--   **Gosec 2.3.0 (updated from v2.3.0)**
+-   Gosec 2.3.0
 -   Hadolint 1.18.2
 -   JacksonLinter 2.10.2
 -   JSHint 2.12.0
