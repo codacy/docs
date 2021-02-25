@@ -5,8 +5,7 @@
     <tr>
       <td style="background-color: #ffc4ad;">
         <p>
-          Codacy Self-hosted running on Docker is deprecated since April 2020 and will <strong>stop being supported on February 16, 2021</strong>.<br/>
-          Codacy will continue to provide critical bug fixes and tool updates for this version (but no more feature enhancements) until the end of support.
+          Codacy Self-hosted running on Docker <strong>stopped being supported on February 16, 2021</strong>.
         </p>
         <p>
           <a href="/chart/" target="_self">Click here for updated documentation on how to install and configure Codacy Self-hosted on Kubernetes or MicroK8s.</a>
