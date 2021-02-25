@@ -1,6 +1,6 @@
 # Deprecating HTTP headers for API tokens | April 1, 2020
 
-On April 1st, 2020 we're deprecating the following HTTP headers used to authenticate to the [Codacy API](https://api.codacy.com/swagger) using either an API token or project token:
+On April 1st, 2020 we're deprecating the following HTTP headers used to authenticate to the [Codacy API](https://api.codacy.com/api/api-docs) using either an API token or project token:
 
 -   `api_token`
 -   `project_token`
