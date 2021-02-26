@@ -22,6 +22,11 @@ To make it easier to find relevant patterns, you can use the sidebar to filter t
 
 ![Filtering code patterns](images/code-pattern-category.png)
 
+!!! tip
+    To enable all patterns inside a Category, you can use the filter to list all patterns inside that Category and then use the **Enable all** button.
+    
+    As an example, if you want to enable **all** Security patterns of a tool, instead of filtering and then enabling all the patterns one by one, you can simply add the filter and then click on the **Enable all** button.
+
 The issues detected by Codacy belong to one of the following categories:
 
 -   **Code Style:** Code formatting and syntax problems. For example, variable names style, enforcing the use of brackets and quotation marks
