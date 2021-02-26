@@ -20,7 +20,7 @@ However, you can create a coding standard adapted to your scenario by configurin
 
 To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by language (only for some tools), category, or status:
 
-![Filtering code patterns](images/code-pattern-category.png)
+![Filtering code patterns](images/code-pattern-filter.png)
 
 !!! tip
     To enable all patterns inside a Category, you can use the filter to list all patterns inside that Category and click **Enable all**.
