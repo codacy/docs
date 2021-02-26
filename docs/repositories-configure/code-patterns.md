@@ -18,7 +18,7 @@ However, you can create a coding standard adapted to your scenario by configurin
 
 ## Pattern filters
 
-To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by language (only for some tools), category, or status:
+To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), category, or status:
 
 ![Filtering code patterns](images/code-pattern-filter.png)
 
@@ -29,7 +29,7 @@ To make it easier to find relevant patterns, you can use the sidebar to filter t
 
 Issues detected by Codacy belong to one of the following categories:
 
--   **Code Style:** Code formatting and syntax problems, such as variable names style, enforcing the use of brackets and quotation marks
+-   **Code Style:** Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks
 -   **Error Prone:** Code that may hide bugs and language keywords that should be used with caution, such as the operator `==` in JavaScript or `Option.get` in Scala
 -   **Code Complexity:** High complexity methods and classes that should be refactored
 -   **Performance:** Code that can have performance problems
