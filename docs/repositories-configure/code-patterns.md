@@ -16,27 +16,27 @@ However, you can create a coding standard adapted to your scenario by configurin
 
 1.  Optionally, [manually reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.
 
-## Category filters
+## Pattern filters
 
-To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by category:
+To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), category, or status:
 
-![Filtering code patterns](images/code-pattern-category.png)
+![Filtering code patterns](images/code-pattern-filter.png)
 
 !!! tip
     To enable all patterns inside a Category, you can use the filter to list all patterns inside that Category and click **Enable all**.
     
     As an example, if you want to enable **all** Security patterns of a tool, instead of filtering and then enabling all the patterns one by one, you can add the filter and click **Enable all**.
 
-The issues detected by Codacy belong to one of the following categories:
+Issues detected by Codacy belong to one of the following categories:
 
--   **Code Style:** Code formatting and syntax problems. For example, variable names style, enforcing the use of brackets and quotation marks
--   **Error Prone:** Code that may hide bugs and language keywords that should be used with caution. For example, the operator `==` in JavaScript or `Option.get` in Scala
+-   **Code Style:** Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks
+-   **Error Prone:** Code that may hide bugs and language keywords that should be used with caution, such as the operator `==` in JavaScript or `Option.get` in Scala
 -   **Code Complexity:** High complexity methods and classes that should be refactored
--   **Performance:** Code that could have performance problems
--   **Compatibility:** Used mainly for frontend code, detects compatibility problems across different browser versions
+-   **Performance:** Code that can have performance problems
+-   **Compatibility:** Mainly for frontend code, compatibility problems across different browser versions
 -   **Unused Code:** Unused variables and methods, code that can't be reached
 -   **Security:** All security problems
--   **Documentation:** Detects methods and classes that don't have the correct comment annotations
+-   **Documentation:** Methods and classes that don't have the correct comment annotations
 
 ## Setting a default configuration for new repositories {: id="set-default"}
 
