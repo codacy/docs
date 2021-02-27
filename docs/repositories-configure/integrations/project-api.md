@@ -2,8 +2,7 @@
 
 The Codacy API offers specific methods to manipulate repositories. To use these API methods, run local analysis, or send coverage results for your repository, you must use a project API Token generated specifically for your repository. Each project API Token is only valid for one repository.
 
-!!! warning
-    **Never write API Tokens on your configuration files** and keep your API Tokens well protected, as they grant owner permissions to your Codacy repositories.
+{% include "../../assets/includes/api-token-warning.txt" %}
 
 To generate an API token:
 
