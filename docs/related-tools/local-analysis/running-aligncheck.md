@@ -18,10 +18,7 @@ To run aligncheck as a [client-side tool](client-side-tools.md):
     export CODACY_PROJECT_TOKEN=<your project API Token>
     ```
 
-    !!! warning
-        **Never write API Tokens on your configuration files** and keep your API Tokens well protected, as they grant owner permissions to your projects.
-
-        We recommend that you set the API Tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.
+    {% include "../../assets/includes/api-token-warning.txt" %}
 
 1.  **If you are using Codacy Self-hosted** set the following environment variable to specify your Codacy instance URL:
 
