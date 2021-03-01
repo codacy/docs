@@ -2609,7 +2609,7 @@
   </thead>
   <tbody>
     <tr>
-      <td rowspan="7">GitHub Cloud and<br/>GitHub Enterprise</td>
+      <td rowspan="7">GitHub Cloud and GitHub Enterprise</td>
       <td>Outside Collaborator<sup><a href="#note-1">1</a></sup></td>
       <td>No</td>
       <td>No</td>
@@ -2680,7 +2680,7 @@
       <td>Yes</td>
     </tr>
     <tr>
-      <td rowspan="7">GitLab Cloud and<br/>GitLab Enterprise</td>
+      <td rowspan="7">GitLab Cloud and GitLab Enterprise</td>
       <td>External User<sup><a href="#note-1">1</a></sup></td>
       <td>No</td>
       <td>No</td>
@@ -2751,18 +2751,8 @@
       <td>Yes</td>
     </tr>
     <tr>
-      <td rowspan="4">Bitbucket Cloud and<br/>Bitbucket Server</td>
-      <td>Read</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>Yes</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>Write</td>
+      <td rowspan="2">Bitbucket Cloud and Bitbucket Server</td>
+      <td>Read, Write<sup><a href="#note-4">4</a></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>No</td>
       <td>No</td>
@@ -2784,9 +2774,10 @@
   </tbody>
 </table>
 
-<p><sup id="note-1">1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can <a href="../managing-people/#adding-people">add them</a> so that Codacy analyzes their commits to private repositories.<br />
-<sup id="note-2">2</sup>: Joining an organization may need an approval depending on your setting for <a href="../managing-people/#joining">accepting new people</a>.<br />
-<sup id="note-3">3</sup>: Depending on your setting for <a href="../configuring-which-users-can-ignore-issues/">configuring which users can ignore issues</a>.</p>
+<p><sup id="note-1">1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can <a href="../managing-people/#adding-people">add them</a> so that Codacy analyzes their commits to private repositories.<br/>
+<sup id="note-2">2</sup>: Joining an organization may need an approval depending on your setting for <a href="../managing-people/#joining">accepting new people</a>.<br/>
+<sup id="note-3">3</sup>: Depending on your setting for <a href="../configuring-which-users-can-ignore-issues/">configuring which users can ignore issues</a>.<br/>
+<sup id="note-4">4</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.</p>
 <p>See <a href="../managing-people/">managing people</a> to list and manage the members of your organization.</p>
               
               
@@ -2859,7 +2850,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 11, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 1, 2021</span>
     
   </small>
 </div>
