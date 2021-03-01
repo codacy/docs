@@ -18,7 +18,7 @@ Depending on your role on the Git provider you will have different permissions o
   </thead>
   <tbody>
     <tr>
-      <td rowspan="7">GitHub Cloud and<br/>GitHub Enterprise</td>
+      <td rowspan="7">GitHub Cloud and GitHub Enterprise</td>
       <td>Outside Collaborator<sup><a href="#note-1">1</a></sup></td>
       <td>No</td>
       <td>No</td>
@@ -89,7 +89,7 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
     </tr>
     <tr>
-      <td rowspan="7">GitLab Cloud and<br/>GitLab Enterprise</td>
+      <td rowspan="7">GitLab Cloud and GitLab Enterprise</td>
       <td>External User<sup><a href="#note-1">1</a></sup></td>
       <td>No</td>
       <td>No</td>
@@ -160,18 +160,8 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
     </tr>
     <tr>
-      <td rowspan="4">Bitbucket Cloud and<br/>Bitbucket Server</td>
-      <td>Read</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>Yes</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>Write</td>
+      <td rowspan="2">Bitbucket Cloud and Bitbucket Server</td>
+      <td>Read, Write<sup><a href="#note-4">4</a></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>No</td>
       <td>No</td>
@@ -193,8 +183,9 @@ Depending on your role on the Git provider you will have different permissions o
   </tbody>
 </table>
 
-<sup id="note-1">1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can [add them](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories.  
-<sup id="note-2">2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](managing-people.md#joining).  
-<sup id="note-3">3</sup>: Depending on your setting for [configuring which users can ignore issues](configuring-which-users-can-ignore-issues.md).
+<sup id="note-1">1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can [add them](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories.<br/>
+<sup id="note-2">2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](managing-people.md#joining).<br/>
+<sup id="note-3">3</sup>: Depending on your setting for [configuring which users can ignore issues](configuring-which-users-can-ignore-issues.md).<br/>
+<sup id="note-4">4</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.
 
 See [managing people](managing-people.md) to list and manage the members of your organization.
