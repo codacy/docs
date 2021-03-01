@@ -189,7 +189,7 @@ Depending on your role on the Git provider you will have different permissions o
 
 See [managing people](managing-people.md) to list and manage the members of your organization.
 
-# Configuring who can ignore issues {: id="configure-ignore-issues"}
+## Configuring who can ignore issues {: id="configure-ignore-issues"}
 
 !!! info "Applies only to GitHub Cloud and GitHub Enterprise"
 
