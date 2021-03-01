@@ -161,7 +161,7 @@ Depending on your role on the Git provider you will have different permissions o
     </tr>
     <tr>
       <td rowspan="2">Bitbucket Cloud and Bitbucket Server</td>
-      <td>Read, Write<sup><a href="#note-3">4</a></td>
+      <td>Read, Write<sup><a href="#note-3">3</a></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>No</td>
       <td>No</td>
