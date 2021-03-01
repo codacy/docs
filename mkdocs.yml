@@ -278,8 +278,8 @@ plugins:
               "hc/en-us/articles/360012037659-GitLab-Integration.md": "repositories-configure/integrations/gitlab-integration.md"
               "hc/en-us/articles/360012056493.md": "release-notes/cloud/cloud-release-notes-|-02-november-2018.md"
               "hc/en-us/articles/360012056493-Cloud-Release-Notes-02-November-2018.md": "release-notes/cloud/cloud-release-notes-|-02-november-2018.md"
-              "hc/en-us/articles/360012126419.md": "organizations/configuring-which-users-can-ignore-issues.md"
-              "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "organizations/configuring-which-users-can-ignore-issues.md"
+              "hc/en-us/articles/360012126419.md": "organizations/roles-and-permissions-for-synced-organizations.md"
+              "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-synced-organizations.md"
               "hc/en-us/articles/360012141513.md": "index.md"
               "hc/en-us/articles/360012141513-Scheduled-Maintenance-Saturday-17th-Nov-8-00-GMT-0-00-PST-.md": "index.md"
               "hc/en-us/articles/360012328140.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
@@ -445,6 +445,7 @@ plugins:
               "related-tools/tool-developer-guide-using-scala.md": "related-tools/codacy-plugin-tools.md"
               "organizations/adding-and-managing-authors.md": "organizations/managing-people.md"
               "organizations/authors-vs-members.md": "organizations/managing-people.md"
+              "organizations/configuring-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-synced-organizations.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
@@ -485,7 +486,7 @@ plugins:
               "related-tools/client-side-tools.md": "related-tools/local-analysis/client-side-tools.md"
               "related-tools/run-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"
               "repositories-configure/ignore-files-from-codacy-analysis.md": "repositories-configure/ignoring-files.md"
-              "organizations/how-to-configure-which-users-can-ignore-issues.md": "organizations/configuring-which-users-can-ignore-issues.md"
+              "organizations/how-to-configure-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-synced-organizations.md"
               "repositories/what-are-the-different-grades-and-how-are-they-calculated.md": "faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
               "repositories/managing-branches.md": "repositories-configure/managing-branches.md"
               "repositories/quality-settings.md": "repositories-configure/quality-settings.md"
@@ -536,7 +537,6 @@ nav:
           - organizations/managing-repositories.md
           - organizations/managing-people.md
           - organizations/roles-and-permissions-for-synced-organizations.md
-          - organizations/configuring-which-users-can-ignore-issues.md
           - "Manual organizations (legacy)":
                 - organizations/manual-organizations/creating-and-renaming-an-organization.md
                 - organizations/manual-organizations/creating-and-managing-teams.md
