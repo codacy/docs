@@ -18,7 +18,7 @@ Depending on your role on the Git provider you will have different permissions o
   </thead>
   <tbody>
     <tr>
-      <td rowspan="7">GitHub Cloud and<br/>GitHub Enterprise</td>
+      <td rowspan="7">GitHub Cloud and GitHub Enterprise</td>
       <td>Outside Collaborator<sup><a href="#note-1">1</a></sup></td>
       <td>No</td>
       <td>No</td>
@@ -89,7 +89,7 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
     </tr>
     <tr>
-      <td rowspan="7">GitLab Cloud and<br/>GitLab Enterprise</td>
+      <td rowspan="7">GitLab Cloud and GitLab Enterprise</td>
       <td>External User<sup><a href="#note-1">1</a></sup></td>
       <td>No</td>
       <td>No</td>
@@ -160,18 +160,8 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
     </tr>
     <tr>
-      <td rowspan="4">Bitbucket Cloud and<br/>Bitbucket Server</td>
-      <td>Read</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>Yes</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>Write</td>
+      <td rowspan="2">Bitbucket Cloud and Bitbucket Server</td>
+      <td>Read, Write</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>No</td>
       <td>No</td>
