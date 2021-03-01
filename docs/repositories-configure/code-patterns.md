@@ -6,13 +6,13 @@ However, you can create a coding standard adapted to your scenario by configurin
 
 1.  Open your repository **Code patterns** page and select the tool to configure:
 
-    ![Configuring code patterns](images/code-pattern-configure.png)
+    ![Configuring code patterns](images/code-patterns-configure.png)
 
 1.  Enable or disable the patterns using the checkbox for each pattern.
 
     To see a detailed explanation about the issues that a pattern can detect and how to fix them, click **Details** on the top right-hand corner of the pattern. Some patterns also allow you to configure the rules:
 
-    ![Code pattern details](images/code-pattern-detail.png)
+    ![Code pattern details](images/code-patterns-detail.png)
 
 1.  Optionally, [manually reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.
 
@@ -20,7 +20,7 @@ However, you can create a coding standard adapted to your scenario by configurin
 
 To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), category, or status:
 
-![Filtering code patterns](images/code-pattern-filter.png)
+![Filtering code patterns](images/code-patterns-filter.png)
 
 !!! tip
     To enable all patterns inside a Category, you can use the filter to list all patterns inside that Category and click **Enable all**.
@@ -50,7 +50,7 @@ To apply the same pattern configuration to multiple repositories:
 
     This option sets the current pattern configuration as the default for your account when adding new repositories to Codacy.
 
-    ![Setting a default pattern configuration](images/code-pattern-set-default.png)
+    ![Setting a default pattern configuration](images/code-patterns-set-default.png)
 
 1.  Add the remaining repositories to Codacy.
 
@@ -103,7 +103,7 @@ Codacy supports configuration files for several tools. To use a configuration fi
 
 1.  Open your repository **Code patterns** page and select **Configuration file** for the respective tool:
 
-    ![Using a configuration file](images/code-pattern-config-file.png)
+    ![Using a configuration file](images/code-patterns-config-file.png)
 
 The known file names for the tools that support configuration files are the following:
 
