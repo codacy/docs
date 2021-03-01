@@ -23,9 +23,14 @@ Each pattern has a pre-defined severity level and at the moment, it's not possib
 
 ## Ignoring an issue
 
-For an issue you disagree with or false positives, you can either ignore that instance or disable the pattern across the whole repository. To do so, click on the cogwheel and select the desired option:
+You can ignore issues that you disagree with, either because they're not relevant or because you won't tackle them in the immediate future. 
+
+To do so, click on the cogwheel and select the desired option:
 
 ![Ignoring an issue](images/issues-view-ignore.gif)
+
+!!! tip
+    Organization owners can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-synced-organizations.md#configure-ignore-issues). 
 
 ### Reinstating ignored issues
 
