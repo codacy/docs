@@ -191,8 +191,7 @@ See [managing people](managing-people.md) to list and manage the members of your
 
 # Configuring who can ignore issues {: id="configure-ignore-issues"}
 
-!!! note
-    Applies only to GitHub Cloud and GitHub Enterprise
+!!! info "Applies only to GitHub Cloud and GitHub Enterprise"
 
 Sometimes there are patterns on your repository that haven't been configured to be the perfect fit for a particular standard; or you do have the correct patterns but won't tackle some issues immediately. On those and other cases the best way to proceed is to ignore the issues, either because they're not relevant or because you won't tackle them in the immediate future.
 
