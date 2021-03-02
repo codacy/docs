@@ -496,22 +496,22 @@ plugins:
               "faq/general/which-browsers-do-you-support.md": "faq/general/which-browsers-does-codacy-support.md"
 
 nav:
-    - "Documentation home": "index.md"
-    - "Getting started":
+    - Documentation home: "index.md"
+    - Getting started:
           - getting-started/getting-started-with-codacy.md
           - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
-    - "Your repositories":
+    - Your repositories:
           - repositories/repository-dashboard.md
           - repositories/commits-view.md
           - repositories/files-view.md
           - repositories/issues-view.md
           - repositories/security-monitor.md
           - repositories/badges.md
-    - "Configuring your repositories":
+    - Configuring your repositories:
           - repositories-configure/code-patterns.md
           - repositories-configure/managing-branches.md
-          - "Integrations":
+          - Integrations:
                 - repositories-configure/integrations/github-integration.md
                 - repositories-configure/integrations/gitlab-integration.md
                 - repositories-configure/integrations/bitbucket-integration.md
@@ -531,24 +531,24 @@ nav:
           - repositories-configure/specifying-your-php-version.md
           - repositories-configure/code-standards.md
           - repositories-configure/removing-your-repository.md
-    - "Organizations":
+    - Organizations:
           - organizations/what-are-synced-organizations.md
           - organizations/organization-overview.md
           - organizations/managing-repositories.md
           - organizations/managing-people.md
           - organizations/roles-and-permissions-for-synced-organizations.md
-          - "Manual organizations (legacy)":
+          - Manual organizations (legacy):
                 - organizations/manual-organizations/creating-and-renaming-an-organization.md
                 - organizations/manual-organizations/creating-and-managing-teams.md
                 - organizations/manual-organizations/managing-team-repositories.md
                 - organizations/manual-organizations/administrative-permissions.md
                 - organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md
-    - "Your account":
+    - Your account:
           - account/managing-your-profile.md
           - account/notifications.md
-    - "Related tools":
-          - "Coverage": "!include submodules/codacy-coverage-reporter/mkdocs.yml"
-          - "Local analysis":
+    - Related tools:
+          - Coverage: "!include submodules/codacy-coverage-reporter/mkdocs.yml"
+          - Local analysis:
                 - related-tools/local-analysis/running-local-analysis.md
                 - related-tools/local-analysis/client-side-tools.md
                 - related-tools/local-analysis/running-aligncheck.md
@@ -556,7 +556,7 @@ nav:
                 - related-tools/local-analysis/running-spotbugs.md
           - related-tools/codacy-api-tokens.md
           - related-tools/codacy-plugin-tools.md
-    - "Installing Codacy": "!include submodules/chart/mkdocs.yml"
+    - Installing Codacy: "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
                 - faq/general/which-version-control-systems-does-codacy-support.md
@@ -594,9 +594,9 @@ nav:
                 - faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md
                 - faq/troubleshooting/we-no-longer-have-access-to-this-repository.md
                 - faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md
-    - "Release notes":
+    - Release notes:
           - release-notes/index.md
-          - "Codacy Cloud":
+          - Codacy Cloud:
                 - release-notes/cloud/deprecating-http-headers-for-api-tokens.md
                 - release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md
                 - release-notes/cloud/codacy-now-supports-github-apps.md
@@ -615,7 +615,7 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-02-november-2018.md
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
-          - "Codacy Self-hosted":
+          - Codacy Self-hosted:
                 - release-notes/self-hosted/self-hosted-v3.3.0.md
                 - release-notes/self-hosted/self-hosted-v3.2.0.md
                 - release-notes/self-hosted/self-hosted-v3.1.0.md
