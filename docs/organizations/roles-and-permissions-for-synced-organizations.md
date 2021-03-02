@@ -31,7 +31,7 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td>Repository Read</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Configurable<sup><a href="#note-3">3</a></sup></td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>Yes</td>
@@ -41,7 +41,7 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td>Repository Triage</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Configurable<sup><a href="#note-3">3</a></sup></td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>Yes</td>
@@ -51,7 +51,7 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td>Repository Write</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Configurable<sup><a href="#note-3">3</a></sup></td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -61,7 +61,7 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td>Repository Maintain</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Configurable<sup><a href="#note-3">3</a></sup></td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -71,7 +71,7 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td>Repository Admin</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Configurable<sup><a href="#note-3">3</a></sup></td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -161,7 +161,7 @@ Depending on your role on the Git provider you will have different permissions o
     </tr>
     <tr>
       <td rowspan="2">Bitbucket Cloud and Bitbucket Server</td>
-      <td>Read, Write<sup><a href="#note-4">4</a></td>
+      <td>Read, Write<sup><a href="#note-3">3</a></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>No</td>
       <td>No</td>
@@ -185,7 +185,16 @@ Depending on your role on the Git provider you will have different permissions o
 
 <sup id="note-1">1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can [add them](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories.<br/>
 <sup id="note-2">2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](managing-people.md#joining).<br/>
-<sup id="note-3">3</sup>: Depending on your setting for [configuring which users can ignore issues](configuring-which-users-can-ignore-issues.md).<br/>
-<sup id="note-4">4</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.
+<sup id="note-3">3</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.
 
 See [managing people](managing-people.md) to list and manage the members of your organization.
+
+## Configuring who can ignore issues {: id="configure-ignore-issues"}
+
+!!! info "Applies only to GitHub Cloud and GitHub Enterprise"
+
+By default, only users with Admin permission on a repository can [ignore issues](../repositories/issues-view.md#ignoring-an-issue), but you can change this. In your Organization's settings, you can find **Members privileges** where you can define the lowest permission required to ignore issues for your organization.
+
+![Configuring who can ignore issues](images/ignore-issues.png)
+
+Codacy doesn't allow changing the role of a user, as the roles on Codacy are mirrored from your Git provider and applied to each repository.
