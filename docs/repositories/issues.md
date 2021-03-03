@@ -48,13 +48,13 @@ You can define one or more of the following filters:
 
 Ignoring an issue hides the issue from the list of issues and helps you focus on the issues that your team should tackle.
 
-You can ignore issues that you disagree with because, for example:
+For example, you can ignore issues that you disagree with because:
 
 -   Your team won't tackle the issues in the immediate feature
 -   The issue isn't relevant in the specific context of your code
 -   The issue is a false positive
 
-To ignore an issue, click the issue title, click the cogwheel, and select **Ignore issue**:
+To ignore an issue, click the issue title and select **Ignore issue** on the cogwheel menu:
 
 ![Ignoring an issue](images/issues-ignore.png)
 
@@ -65,23 +65,18 @@ To see the list of ignored issues or restore ignored issues, click **Current Iss
 !!! tip
     Organization owners can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-synced-organizations.md#configure-ignore-issues).
 
-## Removing a pattern
+## Disabling patterns
 
-When you want to remove a pattern altogether from your repository's analysis, expand the issue you're aiming to disable the pattern for, click on the cogwheel, select **Remove pattern** and confirm your choice.
+Disabling the pattern that triggered an issue means that Codacy will stop using that pattern in the next analysis of your repository, so be sure that you're no longer interested in identifying similar issues.
 
-![Removing a pattern](images/issues-remove-pattern.gif)
+To disable the pattern that triggered an issue, click the issue title and select **Remove pattern** on the cogwheel menu:
 
-!!! note
-    If you're using a custom [configuration file](../repositories-configure/code-patterns.md#using-your-own-tool-configuration-files), you have to remove that pattern line manually in your file.
+![Disabling a pattern](images/issues-disable-pattern.png)
 
-### Restoring a removed pattern
-
-To restore a removed pattern, go to your repository's **Code Pattern** settings, choose the tool you'd like to enable the pattern for, find the pattern and click on the check box to enable.
-
-![Restoring a removed pattern](images/issues-restore-pattern.gif)
+To re-enable patterns use the [Code patterns page](../repositories-configure/code-patterns.md).
 
 !!! note
-    If you're using a custom pattern configuration file, have to restore the line manually.
+    If you're using a [custom configuration file](../repositories-configure/code-patterns.md#using-your-own-tool-configuration-files) you must manage patterns manually on your configuration file.
 
 ## Ignoring files
 
