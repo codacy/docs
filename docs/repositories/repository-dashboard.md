@@ -46,7 +46,7 @@ The chart also displays the **trendline** based on the past behavior and the **q
 
 The **Issues breakdown** area displays the total number of issues found on the selected branch, as well as the distribution of issues across each code quality issue category.
 
-Click **See all issues** to see the full [list of issues](issues-view.md) found, or click a category to see the issues in that category.
+Click **See all issues** to see the full [list of issues](issues.md) found, or click a category to see the issues in that category.
 
 ![Issues breakdown](images/repository-dashboard-issues-breakdown.png)
 
@@ -58,7 +58,7 @@ The **Coverage** area displays the percentage of lines of code on the selected b
 -   With coverage not up to standards (based on your repository quality settings)
 -   With coverage up to standards (based on your repository quality settings)
 
-Click **See all files** to open the [list of files](files-view.md) in the repository.
+Click **See all files** to open the [list of files](files.md) in the repository.
 
 ![Coverage](images/repository-dashboard-coverage.png)
 

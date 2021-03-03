@@ -1,8 +1,8 @@
-# Issues View
+# Issues page
 
 This page displays an overview of all issues raised by Codacy in your repository. For every issue, Codacy presents information on why it considers the issue, how you could solve it, and the related code pattern.
 
-![Issues View](images/issues-view.png)
+![Issues page](images/issues.png)
 
 ## Issue categories
 
@@ -27,7 +27,7 @@ You can ignore issues that you disagree with, either because they're not relevan
 
 To do so, click on the cogwheel and select the desired option:
 
-![Ignoring an issue](images/issues-view-ignore.gif)
+![Ignoring an issue](images/issues-ignore.gif)
 
 !!! tip
     Organization owners can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-synced-organizations.md#configure-ignore-issues). 
@@ -36,13 +36,13 @@ To do so, click on the cogwheel and select the desired option:
 
 To reinstate ignored issues, click on the **Current Issues** box, and select **Ignored Issues** from the drop-down menu.
 
-![Reinstating an issue](images/issues-view-reinstate.gif)
+![Reinstating an issue](images/issues-reinstate.gif)
 
 ## Removing a pattern
 
 When you want to remove a pattern altogether from your repository's analysis, expand the issue you're aiming to disable the pattern for, click on the cogwheel, select **Remove pattern** and confirm your choice.
 
-![Removing a pattern](images/issues-view-remove-pattern.gif)
+![Removing a pattern](images/issues-remove-pattern.gif)
 
 !!! note
     If you're using a custom [configuration file](../repositories-configure/code-patterns.md#using-your-own-tool-configuration-files), you have to remove that pattern line manually in your file.
@@ -51,7 +51,7 @@ When you want to remove a pattern altogether from your repository's analysis, ex
 
 To restore a removed pattern, go to your repository's **Code Pattern** settings, choose the tool you'd like to enable the pattern for, find the pattern and click on the check box to enable.
 
-![Restoring a removed pattern](images/issues-view-restore-pattern.gif)
+![Restoring a removed pattern](images/issues-restore-pattern.gif)
 
 !!! note
     If you're using a custom pattern configuration file, have to restore the line manually.
@@ -63,7 +63,7 @@ You can cherry-pick files that Codacy will ignore on later analysis. To ignore a
 !!! important
     This operation ignores the file across the entire repository and for all patterns.
 
-![Ignoring files](images/issues-view-ignoring-files.gif)
+![Ignoring files](images/issues-ignoring-files.gif)
 
 See [more information on managing ignored files](../repositories-configure/ignoring-files.md).
 

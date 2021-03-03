@@ -10,7 +10,7 @@ The following sections explain the settings in detail.
 
 ## Commits
 
-These settings configure quality thresholds for commits, as displayed on the [Commits](../repositories/commits-view.md) page.
+These settings configure quality thresholds for commits, as displayed on the [Commits page](../repositories/commits.md).
 
 ![Quality settings for commits](images/quality-settings-commits.png)
 
