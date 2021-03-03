@@ -1,4 +1,4 @@
-# Files View
+# Files page
 
 The file list shows all the files in your repository, sortable by six different columns:
 
@@ -25,7 +25,7 @@ Below that header you will find a tab selector for further information on issues
 
 ![File filters](images/file-filters.png)
 
-You can open each issue to get more information on it. For more information about Issues, please check the [Issues view](issues-view.md) page.
+You can open each issue to get more information on it. For more information about Issues, please check the [Issues page](issues.md).
 
 The coverage tab shows you which lines are covered by tests and which aren't.
 

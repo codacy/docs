@@ -1,4 +1,4 @@
-# Commits View
+# Commits page
 
 ## 1. Commit list
 
