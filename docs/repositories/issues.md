@@ -80,14 +80,11 @@ To re-enable patterns use the [Code patterns page](../repositories-configure/cod
 
 ## Ignoring files
 
-You can cherry-pick files that Codacy will ignore on later analysis. To ignore a file, expand the issue, click on the cogwheel, select **Ignore file** from the menu, and confirm.
+[Ignoring a file](../repositories-configure/ignoring-files.md) means that Codacy will no longer analyze that file on your repository, so be sure that you're no longer interested in identifying any type of issues on that file.
 
-!!! important
-    This operation ignores the file across the entire repository and for all patterns.
+To ignore the file that contains an issue, click the issue title and select **Ignore file** on the cogwheel menu:
 
-![Ignoring files](images/issues-ignoring-files.gif)
-
-See [more information on managing ignored files](../repositories-configure/ignoring-files.md).
+![Ignoring files](images/issues-ignore-file.png)
 
 ## Create a comment in your repository
 
