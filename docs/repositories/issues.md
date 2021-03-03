@@ -44,7 +44,22 @@ You can define one or more of the following filters:
 !!! note
     Each code pattern has a pre-defined severity level and at the moment Codacy doesn't support customizing that information.
 
-## Ignoring issues
+## Issue actions
+
+Use the actions in the cogwheel menu of each issue to:
+
+-   [Ignore the issue](#ignoring-issues)
+-   [Disable the code pattern](#disabling-patterns) that detected the issue
+-   [Ignore the file](#ignoring-files) where the issue was detected 
+
+The menu can include more actions depending on the features that you enable on your GitHub and Bitbucket integration:
+
+-   [GitHub integration](../repositories-configure/integrations/github-integration.md)
+-   [Bitbucket integration](../repositories-configure/integrations/bitbucket-integration.md)
+
+![Issue shortcuts menu](images/issues-menu.png)
+
+### Ignoring issues
 
 Ignoring an issue hides the issue from the list of issues and helps you focus on the issues that your team should tackle.
 
@@ -54,38 +69,26 @@ For example, you can ignore issues that you disagree with because:
 -   The issue isn't relevant in the specific context of your code
 -   The issue is a false positive
 
-To ignore an issue, click the issue title and select **Ignore issue** on the cogwheel menu:
-
-![Ignoring an issue](images/issues-ignore.png)
-
-To see the list of ignored issues or restore ignored issues, click **Current Issues** and select **Ignored Issues**:
+To ignore an issue, click the issue title and select **Ignore issue** on the cogwheel menu. To see the list of ignored issues or restore ignored issues, click **Current Issues** and select **Ignored Issues**:
 
 ![Restoring an ignored issue](images/issues-unignore.png)
 
 !!! tip
     Organization owners can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-synced-organizations.md#configure-ignore-issues).
 
-## Disabling patterns
+### Disabling patterns
 
-Disabling the pattern that triggered an issue means that Codacy will stop using that pattern in the next analysis of your repository, so be sure that you're no longer interested in identifying similar issues.
+To disable the pattern that detected an issue, click the issue title and select **Remove pattern** on the cogwheel menu. To re-enable patterns you must use the [Code patterns page](../repositories-configure/code-patterns.md).
 
-To disable the pattern that triggered an issue, click the issue title and select **Remove pattern** on the cogwheel menu:
-
-![Disabling a pattern](images/issues-disable-pattern.png)
-
-To re-enable patterns use the [Code patterns page](../repositories-configure/code-patterns.md).
+!!! important
+    Disabling the pattern that detected an issue means that Codacy will stop using that pattern in the next analysis of your repository, so be sure that you're no longer interested in identifying similar issues.
 
 !!! note
     If you're using a [custom configuration file](../repositories-configure/code-patterns.md#using-your-own-tool-configuration-files), you must manage patterns manually on your configuration file.
 
-## Ignoring files
+### Ignoring files
 
-[Ignoring a file](../repositories-configure/ignoring-files.md) means that Codacy will no longer analyze that file on your repository, so be sure that you're no longer interested in identifying any type of issues on that file.
+To [ignore the file](../repositories-configure/ignoring-files.md) that contains an issue, click the issue title and select **Ignore file** on the cogwheel menu.
 
-To ignore the file that contains an issue, click the issue title and select **Ignore file** on the cogwheel menu:
-
-![Ignoring files](images/issues-ignore-file.png)
-
-## Create a comment in your repository
-
-You can also add comments to the code on Codacy, and it will sync in your repository on [GitHub](../repositories-configure/integrations/github-integration.md) or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md).
+!!! important
+    Ignoring a file means that Codacy will no longer analyze that file on your repository, so be sure that you're no longer interested in identifying any type of issues on that file.
