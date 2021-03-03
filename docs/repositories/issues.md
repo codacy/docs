@@ -13,22 +13,36 @@ Click the title of an issue to see the following information:
 
 ![Issue details](images/issues-detail.png)
 
-## Issue categories
+## Filtering issues
 
--   **Security:** security issues, potential vulnerabilities, unsafe dependencies.
--   **Error** **Prone:** bad practices/patterns that cause code to fail/prone to bugs.
--   **Code Style:** related to the style of the code, line length, tabs vs spaces.
--   **Compatibility:** identifies code that has problems with older systems or cross-platform support.
--   **Unused Code:** unnecessary code not in use.
--   **Performance:** inefficiently written code.
+Filter the list of issues to find particular issues, such as the issues with the highest severity or security issues:
 
-## Issue level
+![Filtering issues](images/issues-filter.png)
 
--   **Info:** The least critical issue type will appear in blue. For example, code style issues.
--   **Warning:** This issue type will appear in yellow. You should be careful with these ones, they're based on code standards and conventions.
--   **Error:** The more dangerous issue type will show in red. Take your time to fix these, although the code may run, these issues show the code that's very susceptible to problems. These issues are bug-prone, and can have serious problems regarding security and compatibility.
+You can define one or more of the following filters:
 
-Each pattern has a pre-defined severity level and at the moment, it's not possible to customize that information.
+-   **Language**: Programming language of the file where the issues were detected
+
+-   **Issue category**: One of the following types of issue:
+
+    {%
+        include-markdown "../repositories-configure/code-patterns.md"
+        start="<!--categories-start-->"
+        end="<!--categories-end-->"
+    %}
+
+-   **Severity level**: Potential impact of the issues:
+
+    -   **Error (red):** The most dangerous issues that you should prioritize fixing since they identify code that's susceptible to serious problems regarding security and compatibility
+    -   **Warning (yellow):** You should check out these issues, as they're based on code standards and conventions
+    -   **Info (blue):** The least critical issues, such as code style issues
+
+-   **Pattern**: [Code pattern](../repositories-configure/code-patterns.md) that detected the issue
+
+-   **Author**: Commit author that introduced the issue on the code
+
+!!! note
+    Each code pattern has a pre-defined severity level and at the moment Codacy doesn't support customizing that information.
 
 ## Ignoring an issue
 
