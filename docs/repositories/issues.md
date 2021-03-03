@@ -76,7 +76,7 @@ To disable the pattern that triggered an issue, click the issue title and select
 To re-enable patterns use the [Code patterns page](../repositories-configure/code-patterns.md).
 
 !!! note
-    If you're using a [custom configuration file](../repositories-configure/code-patterns.md#using-your-own-tool-configuration-files) you must manage patterns manually on your configuration file.
+    If you're using a [custom configuration file](../repositories-configure/code-patterns.md#using-your-own-tool-configuration-files), you must manage patterns manually on your configuration file.
 
 ## Ignoring files
 
