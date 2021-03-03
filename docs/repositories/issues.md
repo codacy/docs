@@ -2,6 +2,8 @@
 
 The **Issues page** lists all the issues that Codacy detected in your repository.
 
+By default, the page lists the issues on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display issues on other branches.
+
 ![Issues page](images/issues.png)
 
 Click the title of an issue to see the following information:
