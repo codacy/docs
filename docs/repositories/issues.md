@@ -1,8 +1,15 @@
 # Issues page
 
-This page displays an overview of all issues raised by Codacy in your repository. For every issue, Codacy presents information on why it considers the issue, how you could solve it, and the related code pattern.
+The **Issues page** lists all the issues that Codacy detected in your repository.
 
 ![Issues page](images/issues.png)
+
+Click the title of an issue to see the following information:
+
+-   What's the issue and how to solve it
+-   Details about the code pattern that detected the issue
+
+![Issue details](images/issues-detail.png)
 
 ## Issue categories
 
