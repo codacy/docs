@@ -44,22 +44,26 @@ You can define one or more of the following filters:
 !!! note
     Each code pattern has a pre-defined severity level and at the moment Codacy doesn't support customizing that information.
 
-## Ignoring an issue
+## Ignoring issues
 
-You can ignore issues that you disagree with, either because they're not relevant or because you won't tackle them in the immediate future. 
+Ignoring an issue hides the issue from the list of issues and helps you focus on the issues that your team should tackle.
 
-To do so, click on the cogwheel and select the desired option:
+You can ignore issues that you disagree with because, for example:
 
-![Ignoring an issue](images/issues-ignore.gif)
+-   Your team won't tackle the issues in the immediate feature
+-   The issue isn't relevant in the specific context of your code
+-   The issue is a false positive
+
+To ignore an issue, click the issue title, click the cogwheel, and select **Ignore issue**:
+
+![Ignoring an issue](images/issues-ignore.png)
+
+To see the list of ignored issues or restore ignored issues, click **Current Issues** and select **Ignored Issues**:
+
+![Restoring an ignored issue](images/issues-unignore.png)
 
 !!! tip
-    Organization owners can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-synced-organizations.md#configure-ignore-issues). 
-
-### Reinstating ignored issues
-
-To reinstate ignored issues, click on the **Current Issues** box, and select **Ignored Issues** from the drop-down menu.
-
-![Reinstating an issue](images/issues-reinstate.gif)
+    Organization owners can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-synced-organizations.md#configure-ignore-issues).
 
 ## Removing a pattern
 
