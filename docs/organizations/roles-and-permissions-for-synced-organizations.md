@@ -193,7 +193,7 @@ See [managing people](managing-people.md) to list and manage the members of your
 
 !!! info "Applies only to GitHub Cloud and GitHub Enterprise"
 
-By default, only users with Admin permission on a repository can [ignore issues](../repositories/issues.md#managing-issues), but you can change this. In your Organization's settings, you can find **Members privileges** where you can define the lowest permission required to ignore issues for your organization.
+By default, only users with Admin permission on a repository can [ignore issues](../repositories/issues.md#ignoring-and-managing-issues), but you can change this. In your Organization's settings, you can find **Members privileges** where you can define the lowest permission required to ignore issues for your organization.
 
 ![Configuring who can ignore issues](images/ignore-issues.png)
 

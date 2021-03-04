@@ -44,7 +44,7 @@ You can define one or more of the following filters:
 !!! note
     Each code pattern has a pre-defined severity level and at the moment Codacy doesn't support customizing that information.
 
-## Managing issues
+## Ignoring and managing issues
 
 Use the options in the cogwheel menu of each issue to:
 
