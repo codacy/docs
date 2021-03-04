@@ -316,38 +316,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#issue-categories" class="md-nav__link">
-    Issue categories
+  <a href="#filtering-issues" class="md-nav__link">
+    Filtering issues
   </a>
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#issue-level" class="md-nav__link">
-    Issue level
+  <a href="#ignoring-and-managing-issues" class="md-nav__link">
+    Ignoring and managing issues
   </a>
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#ignoring-an-issue" class="md-nav__link">
-    Ignoring an issue
-  </a>
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#removing-a-pattern" class="md-nav__link">
-    Removing a pattern
-  </a>
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#ignoring-files" class="md-nav__link">
-    Ignoring files
-  </a>
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#create-a-comment-in-your-repository" class="md-nav__link">
-    Create a comment in your repository
+  <a href="#restoring-ignored-issues" class="md-nav__link">
+    Restoring ignored issues
   </a>
 </li>
       
@@ -2636,59 +2618,94 @@
                 
                 
                 <h1 id="issues-page">Issues page<a class="headerlink" href="#issues-page" title="Permanent link">&para;</a></h1>
-<p>This page displays an overview of all issues raised by Codacy in your repository. For every issue, Codacy presents information on why it considers the issue, how you could solve it, and the related code pattern.</p>
+<p>The <strong>Issues page</strong> lists all the issues that Codacy detected in your repository.</p>
+<p>By default, the page lists the issues on the main branch of your repository but if you have <a href="../../repositories-configure/managing-branches/">more than one branch enabled</a> you can use the drop-down list at the top of the page to display issues on other branches.</p>
 <p><img alt="Issues page" src="../images/issues.png" /></p>
-<h2 id="issue-categories">Issue categories<a class="headerlink" href="#issue-categories" title="Permanent link">&para;</a></h2>
+<p>Click the title of an issue to see the following information:</p>
 <ul>
-<li><strong>Security:</strong> security issues, potential vulnerabilities, unsafe dependencies.</li>
-<li><strong>Error</strong> <strong>Prone:</strong> bad practices/patterns that cause code to fail/prone to bugs.</li>
-<li><strong>Code Style:</strong> related to the style of the code, line length, tabs vs spaces.</li>
-<li><strong>Compatibility:</strong> identifies code that has problems with older systems or cross-platform support.</li>
-<li><strong>Unused Code:</strong> unnecessary code not in use.</li>
-<li><strong>Performance:</strong> inefficiently written code.</li>
+<li>What's the issue and how to solve it</li>
+<li>Details about the code pattern that detected the issue</li>
 </ul>
-<h2 id="issue-level">Issue level<a class="headerlink" href="#issue-level" title="Permanent link">&para;</a></h2>
+<p><img alt="Issue details" src="../images/issues-detail.png" /></p>
+<h2 id="filtering-issues">Filtering issues<a class="headerlink" href="#filtering-issues" title="Permanent link">&para;</a></h2>
+<p>Filter the list of issues to find particular issues, such as the issues with the highest severity or security issues:</p>
+<p><img alt="Filtering issues" src="../images/issues-filter.png" /></p>
+<p>You can define one or more of the following filters:</p>
 <ul>
-<li><strong>Info:</strong> The least critical issue type will appear in blue. For example, code style issues.</li>
-<li><strong>Warning:</strong> This issue type will appear in yellow. You should be careful with these ones, they're based on code standards and conventions.</li>
-<li><strong>Error:</strong> The more dangerous issue type will show in red. Take your time to fix these, although the code may run, these issues show the code that's very susceptible to problems. These issues are bug-prone, and can have serious problems regarding security and compatibility.</li>
+<li>
+<p><strong>Language</strong>: Programming language of the file where the issues were detected</p>
+</li>
+<li>
+<p><strong>Issue category</strong>: One of the following types of issue:</p>
+<ul>
+<li><strong>Code Style:</strong> Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks</li>
+<li><strong>Error Prone:</strong> Code that may hide bugs and language keywords that should be used with caution, such as the operator <code>==</code> in JavaScript or <code>Option.get</code> in Scala</li>
+<li><strong>Code Complexity:</strong> High complexity methods and classes that should be refactored</li>
+<li><strong>Performance:</strong> Code that can have performance problems</li>
+<li><strong>Compatibility:</strong> Mainly for frontend code, compatibility problems across different browser versions</li>
+<li><strong>Unused Code:</strong> Unused variables and methods, code that can't be reached</li>
+<li><strong>Security:</strong> All security problems</li>
+<li><strong>Documentation:</strong> Methods and classes that don't have the correct comment annotations</li>
 </ul>
-<p>Each pattern has a pre-defined severity level and at the moment, it's not possible to customize that information.</p>
-<h2 id="ignoring-an-issue">Ignoring an issue<a class="headerlink" href="#ignoring-an-issue" title="Permanent link">&para;</a></h2>
-<p>You can ignore issues that you disagree with, either because they're not relevant or because you won't tackle them in the immediate future. </p>
-<p>To do so, click on the cogwheel and select the desired option:</p>
-<p><img alt="Ignoring an issue" src="../images/issues-ignore.gif" /></p>
+</li>
+<li>
+<p><strong>Severity level</strong>: Potential impact of the issues:</p>
+<ul>
+<li><strong>Error (red):</strong> The most dangerous issues that you should prioritize fixing since they identify code that's susceptible to serious problems regarding security and compatibility</li>
+<li><strong>Warning (yellow):</strong> You should check out these issues, as they're based on code standards and conventions</li>
+<li><strong>Info (blue):</strong> The least critical issues, such as code style issues</li>
+</ul>
+</li>
+<li>
+<p><strong>Pattern</strong>: <a href="../../repositories-configure/code-patterns/">Code pattern</a> that detected the issue</p>
+</li>
+<li>
+<p><strong>Author</strong>: Commit author that introduced the issue on the code</p>
+</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Each code pattern has a pre-defined severity level and at the moment Codacy doesn't support customizing that information.</p>
+</div>
+<h2 id="ignoring-and-managing-issues">Ignoring and managing issues<a class="headerlink" href="#ignoring-and-managing-issues" title="Permanent link">&para;</a></h2>
+<p>Use the options in the cogwheel menu of each issue to:</p>
+<ul>
+<li>
+<p><strong>Ignore the issue</strong> and hide it from the list.</p>
+<p>For example, you can ignore issues that you disagree with because:</p>
+<ul>
+<li>Your team won't tackle the issues in the immediate future</li>
+<li>The issue isn't relevant in the specific context of your code</li>
+<li>The issue is a false positive</li>
+</ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Organization owners can <a href="../../organizations/roles-and-permissions-for-synced-organizations/#configure-ignore-issues">configure who is allowed to ignore issues</a>. </p>
+<p>Organization owners can <a href="../../organizations/roles-and-permissions-for-synced-organizations/#configure-ignore-issues">configure who is allowed to ignore issues</a>.</p>
 </div>
-<h3 id="reinstating-ignored-issues">Reinstating ignored issues<a class="headerlink" href="#reinstating-ignored-issues" title="Permanent link">&para;</a></h3>
-<p>To reinstate ignored issues, click on the <strong>Current Issues</strong> box, and select <strong>Ignored Issues</strong> from the drop-down menu.</p>
-<p><img alt="Reinstating an issue" src="../images/issues-reinstate.gif" /></p>
-<h2 id="removing-a-pattern">Removing a pattern<a class="headerlink" href="#removing-a-pattern" title="Permanent link">&para;</a></h2>
-<p>When you want to remove a pattern altogether from your repository's analysis, expand the issue you're aiming to disable the pattern for, click on the cogwheel, select <strong>Remove pattern</strong> and confirm your choice.</p>
-<p><img alt="Removing a pattern" src="../images/issues-remove-pattern.gif" /></p>
+</li>
+<li>
+<p><strong>Disable the code pattern</strong> that detected the issue.</p>
+<p>Codacy will stop using that pattern in the next analysis of your repository, so be sure that you're no longer interested in identifying similar issues. To re-enable patterns use the <a href="../../repositories-configure/code-patterns/"><strong>Code patterns</strong> page</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you're using a custom <a href="../../repositories-configure/code-patterns/#using-your-own-tool-configuration-files">configuration file</a>, you have to remove that pattern line manually in your file.</p>
+<p>If you're using a <a href="../../repositories-configure/code-patterns/#using-your-own-tool-configuration-files">custom configuration file</a>, you must manage patterns manually on your configuration file.</p>
 </div>
-<h3 id="restoring-a-removed-pattern">Restoring a removed pattern<a class="headerlink" href="#restoring-a-removed-pattern" title="Permanent link">&para;</a></h3>
-<p>To restore a removed pattern, go to your repository's <strong>Code Pattern</strong> settings, choose the tool you'd like to enable the pattern for, find the pattern and click on the check box to enable.</p>
-<p><img alt="Restoring a removed pattern" src="../images/issues-restore-pattern.gif" /></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you're using a custom pattern configuration file, have to restore the line manually.</p>
-</div>
-<h2 id="ignoring-files">Ignoring files<a class="headerlink" href="#ignoring-files" title="Permanent link">&para;</a></h2>
-<p>You can cherry-pick files that Codacy will ignore on later analysis. To ignore a file, expand the issue, click on the cogwheel, select <strong>Ignore file</strong> from the menu, and confirm.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>This operation ignores the file across the entire repository and for all patterns.</p>
-</div>
-<p><img alt="Ignoring files" src="../images/issues-ignoring-files.gif" /></p>
-<p>See <a href="../../repositories-configure/ignoring-files/">more information on managing ignored files</a>.</p>
-<h2 id="create-a-comment-in-your-repository">Create a comment in your repository<a class="headerlink" href="#create-a-comment-in-your-repository" title="Permanent link">&para;</a></h2>
-<p>You can also add comments to the code on Codacy, and it will sync in your repository on <a href="../../repositories-configure/integrations/github-integration/">GitHub</a> or <a href="../../repositories-configure/integrations/bitbucket-integration/">Bitbucket</a>.</p>
+</li>
+<li>
+<p><strong>Ignore the file</strong> where the issue was detected.</p>
+<p>Codacy will no longer analyze that file on your repository, so be sure that you're no longer interested in identifying any type of issues on that file. To remove an ignored file use the <a href="../../repositories-configure/ignoring-files/"><strong>Ignored Files</strong> tab</a> in your repository settings.</p>
+</li>
+</ul>
+<p><img alt="Issue shortcuts menu" src="../images/issues-menu.png" /></p>
+<p>The menu can include more options depending on the features that you enable on your GitHub or Bitbucket integration:</p>
+<ul>
+<li><a href="../../repositories-configure/integrations/github-integration/">GitHub integration</a></li>
+<li><a href="../../repositories-configure/integrations/bitbucket-integration/">Bitbucket integration</a></li>
+</ul>
+<h2 id="restoring-ignored-issues">Restoring ignored issues<a class="headerlink" href="#restoring-ignored-issues" title="Permanent link">&para;</a></h2>
+<p>To see the list of ignored issues, click <strong>Current Issues</strong> and select <strong>Ignored Issues</strong>.</p>
+<p>To restore an ignored issue, click the button <strong>Unignore</strong> next to the issue title:</p>
+<p><img alt="Restoring an ignored issue" src="../images/issues-unignore.png" /></p>
               
               
                 
@@ -2760,7 +2777,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 3, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 4, 2021</span>
     
   </small>
 </div>
