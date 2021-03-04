@@ -72,7 +72,7 @@ Use the options in the cogwheel menu of each issue to:
 
 ![Issue shortcuts menu](images/issues-menu.png)
 
-The menu can include more options depending on the features that you enable on your GitHub and Bitbucket integration:
+The menu can include more options depending on the features that you enable on your GitHub or Bitbucket integration:
 
 -   [GitHub integration](../repositories-configure/integrations/github-integration.md)
 -   [Bitbucket integration](../repositories-configure/integrations/bitbucket-integration.md)
