@@ -37,6 +37,7 @@ jq
 jscpd
 JSHint
 JSP
+md
 namespace
 onboarding
 PMD

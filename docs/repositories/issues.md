@@ -1,72 +1,86 @@
 # Issues page
 
-This page displays an overview of all issues raised by Codacy in your repository. For every issue, Codacy presents information on why it considers the issue, how you could solve it, and the related code pattern.
+The **Issues page** lists all the issues that Codacy detected in your repository.
+
+By default, the page lists the issues on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display issues on other branches.
 
 ![Issues page](images/issues.png)
 
-## Issue categories
+Click the title of an issue to see the following information:
 
--   **Security:** security issues, potential vulnerabilities, unsafe dependencies.
--   **Error** **Prone:** bad practices/patterns that cause code to fail/prone to bugs.
--   **Code Style:** related to the style of the code, line length, tabs vs spaces.
--   **Compatibility:** identifies code that has problems with older systems or cross-platform support.
--   **Unused Code:** unnecessary code not in use.
--   **Performance:** inefficiently written code.
+-   What's the issue and how to solve it
+-   Details about the code pattern that detected the issue
 
-## Issue level
+![Issue details](images/issues-detail.png)
 
--   **Info:** The least critical issue type will appear in blue. For example, code style issues.
--   **Warning:** This issue type will appear in yellow. You should be careful with these ones, they're based on code standards and conventions.
--   **Error:** The more dangerous issue type will show in red. Take your time to fix these, although the code may run, these issues show the code that's very susceptible to problems. These issues are bug-prone, and can have serious problems regarding security and compatibility.
+## Filtering issues
 
-Each pattern has a pre-defined severity level and at the moment, it's not possible to customize that information.
+Filter the list of issues to find particular issues, such as the issues with the highest severity or security issues:
 
-## Ignoring an issue
+![Filtering issues](images/issues-filter.png)
 
-You can ignore issues that you disagree with, either because they're not relevant or because you won't tackle them in the immediate future. 
+You can define one or more of the following filters:
 
-To do so, click on the cogwheel and select the desired option:
+-   **Language**: Programming language of the file where the issues were detected
 
-![Ignoring an issue](images/issues-ignore.gif)
+-   **Issue category**: One of the following types of issue:
 
-!!! tip
-    Organization owners can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-synced-organizations.md#configure-ignore-issues). 
+    {%
+        include-markdown "../repositories-configure/code-patterns.md"
+        start="<!--categories-start-->"
+        end="<!--categories-end-->"
+    %}
 
-### Reinstating ignored issues
+-   **Severity level**: Potential impact of the issues:
 
-To reinstate ignored issues, click on the **Current Issues** box, and select **Ignored Issues** from the drop-down menu.
+    -   **Error (red):** The most dangerous issues that you should prioritize fixing since they identify code that's susceptible to serious problems regarding security and compatibility
+    -   **Warning (yellow):** You should check out these issues, as they're based on code standards and conventions
+    -   **Info (blue):** The least critical issues, such as code style issues
 
-![Reinstating an issue](images/issues-reinstate.gif)
+-   **Pattern**: [Code pattern](../repositories-configure/code-patterns.md) that detected the issue
 
-## Removing a pattern
-
-When you want to remove a pattern altogether from your repository's analysis, expand the issue you're aiming to disable the pattern for, click on the cogwheel, select **Remove pattern** and confirm your choice.
-
-![Removing a pattern](images/issues-remove-pattern.gif)
+-   **Author**: Commit author that introduced the issue on the code
 
 !!! note
-    If you're using a custom [configuration file](../repositories-configure/code-patterns.md#using-your-own-tool-configuration-files), you have to remove that pattern line manually in your file.
+    Each code pattern has a pre-defined severity level and at the moment Codacy doesn't support customizing that information.
 
-### Restoring a removed pattern
+## Ignoring and managing issues
 
-To restore a removed pattern, go to your repository's **Code Pattern** settings, choose the tool you'd like to enable the pattern for, find the pattern and click on the check box to enable.
+Use the options in the cogwheel menu of each issue to:
 
-![Restoring a removed pattern](images/issues-restore-pattern.gif)
+-   **Ignore the issue** and hide it from the list.
 
-!!! note
-    If you're using a custom pattern configuration file, have to restore the line manually.
+    For example, you can ignore issues that you disagree with because:
 
-## Ignoring files
+    -   Your team won't tackle the issues in the immediate future
+    -   The issue isn't relevant in the specific context of your code
+    -   The issue is a false positive
 
-You can cherry-pick files that Codacy will ignore on later analysis. To ignore a file, expand the issue, click on the cogwheel, select **Ignore file** from the menu, and confirm.
+    !!! tip
+        Organization owners can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-synced-organizations.md#configure-ignore-issues).
 
-!!! important
-    This operation ignores the file across the entire repository and for all patterns.
+-   **Disable the code pattern** that detected the issue.
 
-![Ignoring files](images/issues-ignoring-files.gif)
+    Codacy will stop using that pattern in the next analysis of your repository, so be sure that you're no longer interested in identifying similar issues. To re-enable patterns use the [**Code patterns** page](../repositories-configure/code-patterns.md).
 
-See [more information on managing ignored files](../repositories-configure/ignoring-files.md).
+    !!! note
+        If you're using a [custom configuration file](../repositories-configure/code-patterns.md#using-your-own-tool-configuration-files), you must manage patterns manually on your configuration file.
 
-## Create a comment in your repository
+-   **Ignore the file** where the issue was detected.
 
-You can also add comments to the code on Codacy, and it will sync in your repository on [GitHub](../repositories-configure/integrations/github-integration.md) or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md).
+    Codacy will no longer analyze that file on your repository, so be sure that you're no longer interested in identifying any type of issues on that file. To remove an ignored file use the [**Ignored Files** tab](../repositories-configure/ignoring-files.md) in your repository settings.
+
+![Issue shortcuts menu](images/issues-menu.png)
+
+The menu can include more options depending on the features that you enable on your GitHub or Bitbucket integration:
+
+-   [GitHub integration](../repositories-configure/integrations/github-integration.md)
+-   [Bitbucket integration](../repositories-configure/integrations/bitbucket-integration.md)
+
+## Restoring ignored issues
+
+To see the list of ignored issues, click **Current Issues** and select **Ignored Issues**.
+
+To restore an ignored issue, click the button **Unignore** next to the issue title:
+
+![Restoring an ignored issue](images/issues-unignore.png)
