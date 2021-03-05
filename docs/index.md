@@ -42,7 +42,7 @@
       <div>Adapt Codacy to your scenario by configuring the code patterns used to analyze your repositories</div>
     </div>
   </a>
-  <a class="topic-card" href="coverage-reporter/adding-coverage-to-your-repository/">
+  <a class="topic-card" href="coverage-reporter/">
     <div class="tc-icon">
       <img alt="Adding coverage reports" src="/assets/images/icon-checklist.svg">
     </div>

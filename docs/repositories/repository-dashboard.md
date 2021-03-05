@@ -63,7 +63,7 @@ Click **See all files** to open the [list of files](files.md) in the repository.
 ![Coverage](images/repository-dashboard-coverage.png)
 
 !!! tip
-    If you don't have coverage set up for your repository yet, the Coverage area provides you with instructions on [how to add coverage for your repository](../coverage-reporter/adding-coverage-to-your-repository.md).
+    If you don't have coverage set up for your repository yet, the Coverage area provides you with instructions on [how to add coverage for your repository](../coverage-reporter/index.md).
 
 ## Open pull requests
 

@@ -21,5 +21,5 @@ To revoke an API Token, clicking the trash can icon to remove the **Project API*
 
 -   [Running local analysis](../../related-tools/local-analysis/running-local-analysis.md)
 -   [Client-side tools](../../related-tools/local-analysis/client-side-tools.md)
--   [Adding coverage to your repository](../../coverage-reporter/adding-coverage-to-your-repository.md)
+-   [Adding coverage to your repository](../../coverage-reporter/index.md)
 -   To have access to all repositories, use a [Codacy API token](../../related-tools/codacy-api-tokens.md)
