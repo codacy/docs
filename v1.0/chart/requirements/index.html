@@ -25,9 +25,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.68666d21.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f6f54201.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.328cd531.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.45b0513f.min.css">
       
       
         
@@ -1525,12 +1525,14 @@
   <a href="#kubernetes-or-microk8s-cluster-setup" class="md-nav__link">
     Kubernetes or MicroK8s cluster setup
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#postgresql-server-setup" class="md-nav__link">
     PostgreSQL server setup
   </a>
+  
 </li>
       
     </ul>
@@ -2467,7 +2469,7 @@
 </li>
 <li>The <a href="https://github.com/kubernetes/ingress-nginx">NGINX Ingress controller</a> must be installed and correctly set up in the cluster</li>
 </ul>
-<h3 id="cluster-networking-requirements">Cluster networking requirements<a class="headerlink" href="#cluster-networking-requirements" title="Permanent link">&para;</a></h3>
+<h3>Cluster networking requirements</h3>
 <p>The cluster must be configured to accept and establish connections on the following ports:</p>
 <table>
 <thead>
@@ -2529,10 +2531,10 @@
 </tr>
 </tbody>
 </table>
-<h3 id="cluster-hardware-requirements">Cluster hardware requirements<a class="headerlink" href="#cluster-hardware-requirements" title="Permanent link">&para;</a></h3>
+<h3>Cluster hardware requirements</h3>
 <p>The high-level architecture described in the next section is important in understanding how Codacy uses and allocates hardware resources. Below we also provide guidance on <a href="#standard-cluster-provisioning">resource provisioning for typical scenarios</a>.</p>
 <p>For a custom hardware resource recommendation, please contact us at <a href="mailto://support@codacy.com">support@codacy.com</a>.</p>
-<h4 id="codacy-architecture">Codacy architecture<a class="headerlink" href="#codacy-architecture" title="Permanent link">&para;</a></h4>
+<h4>Codacy architecture</h4>
 <p>You can look at Codacy separately as two parts:</p>
 <ul>
 <li>The <strong>"Platform"</strong> contains the UI and other components important to treat and show results</li>
@@ -2562,7 +2564,7 @@
 </tr>
 </tbody>
 </table>
-<h4 id="standard-cluster-provisioning">Standard cluster provisioning<a class="headerlink" href="#standard-cluster-provisioning" title="Permanent link">&para;</a></h4>
+<h4>Standard cluster provisioning</h4>
 <p>The resources recommended on the following table are based on our experience and are also the defaults in the <a href="https://raw.githubusercontent.com/codacy/chart/master/codacy/values-production.yaml"><code>values-production.yaml</code></a> file, which you might need to adapt taking into account your use case. As described in the section above, Codacy's architecture allows scaling the "Analysis" part of the platform, meaning that the resources needed for Codacy <strong>depend mainly on the rate of commits</strong> done by your team that Codacy will be analyzing.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -2673,7 +2675,7 @@
 <li><a href="https://www.digitalocean.com/products/managed-databases-postgresql/">Digital Ocean Managed Databases</a></li>
 </ul>
 </div>
-<h3 id="postgresql-hardware-requirements">PostgreSQL hardware requirements<a class="headerlink" href="#postgresql-hardware-requirements" title="Permanent link">&para;</a></h3>
+<h3>PostgreSQL hardware requirements</h3>
 <p>The following are the minimum specifications recommended for provisioning the PostgreSQL server:</p>
 <table>
 <thead>
@@ -2693,7 +2695,7 @@
 </tr>
 </tbody>
 </table>
-<h3 id="preparing-postgresql-for-codacy">Preparing PostgreSQL for Codacy<a class="headerlink" href="#preparing-postgresql-for-codacy" title="Permanent link">&para;</a></h3>
+<h3>Preparing PostgreSQL for Codacy</h3>
 <p>Before installing Codacy you must create a set of databases that will be used by Codacy to persist data. We also recommend that you create a dedicated user for Codacy, with access permissions only to the databases that are specific to Codacy:</p>
 <ol>
 <li>
@@ -2832,7 +2834,7 @@
       </ul>
       <ul>
         <li>Help</li>
-        <li><a href="https://community.codacy.com/">Codacy Community</a></li>
+        <li><a href="https://community.codacy.com/">Join our community</a></li>
         <li><a href="https://www.codacy.com/self-hosted">Request a demo</a></li>
         <li><a href="https://www.codacy.com/privacy">Privacy policy</a></li>
         <li><a href="https://www.codacy.com/cookies">Cookies policy</a></li>
@@ -2860,8 +2862,8 @@
       </main>
     </div>
     
-      <script src="../../assets/javascripts/vendor.e99337eb.min.js"></script>
-      <script src="../../assets/javascripts/bundle.bfbe466e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../assets/javascripts/vendor.8a62c8c7.min.js"></script>
+      <script src="../../assets/javascripts/bundle.fb712d40.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
