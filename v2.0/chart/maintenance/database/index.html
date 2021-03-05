@@ -25,9 +25,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.68666d21.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f6f54201.min.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.328cd531.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.45b0513f.min.css">
       
       
         
@@ -1636,18 +1636,21 @@
   <a href="#requirements" class="md-nav__link">
     Requirements
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#dumping-your-current-data-out-of-a-running-postgres" class="md-nav__link">
     Dumping your current data out of a running Postgres
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#sample-script" class="md-nav__link">
     Sample script
   </a>
+  
 </li>
       
     </ul>
@@ -2309,13 +2312,13 @@
 <li><code>$DB</code> - the database that you would like to export.</li>
 <li><code>$DB_PASSWORD</code> - the database password.</li>
 </ul>
-<h3 id="pg_dump">pg_dump<a class="headerlink" href="#pg_dump" title="Permanent link">&para;</a></h3>
+<h3>pg_dump</h3>
 <p>The following command lets you extract a given database into a dump file:</p>
 <div class="highlight"><pre><span></span><code><span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span> pg_dump -h <span class="nv">$SRC_HOSTNAME</span> -p <span class="nv">$SRC_HOSTPORT</span> -U <span class="nv">$DB_USER</span> --clean -Fc <span class="nv">$db</span> &gt; /tmp/<span class="nv">$db</span>.dump
 </code></pre></div>
 <p>This will dump the file with the <code>.dump</code> extension into the <code>/tmp</code> folder.</p>
 <p><a href="https://www.postgresql.org/docs/10/app-pgdump.html">For more information and additional options, please check the official documentation.</a></p>
-<h3 id="pg_restore">pg_restore<a class="headerlink" href="#pg_restore" title="Permanent link">&para;</a></h3>
+<h3>pg_restore</h3>
 <p>To restore a database, you can run a <code>pg_restore</code> command to consume the dump file and replicate the data onto Postgres:</p>
 <div class="highlight"><pre><span></span><code><span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span> pg_restore -h <span class="nv">$DEST_HOSTNAME</span> -p <span class="nv">$DEST_HOSTPORT</span> -U <span class="nv">$DB_USER</span> -j <span class="m">8</span> -d <span class="nv">$db</span> -n public --clean <span class="nv">$db</span>.dump
 </code></pre></div>
@@ -2445,7 +2448,7 @@
       </ul>
       <ul>
         <li>Help</li>
-        <li><a href="https://community.codacy.com/">Codacy Community</a></li>
+        <li><a href="https://community.codacy.com/">Join our community</a></li>
         <li><a href="https://www.codacy.com/self-hosted">Request a demo</a></li>
         <li><a href="https://www.codacy.com/privacy">Privacy policy</a></li>
         <li><a href="https://www.codacy.com/cookies">Cookies policy</a></li>
@@ -2473,8 +2476,8 @@
       </main>
     </div>
     
-      <script src="../../../assets/javascripts/vendor.e99337eb.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.bfbe466e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/vendor.8a62c8c7.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.fb712d40.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
