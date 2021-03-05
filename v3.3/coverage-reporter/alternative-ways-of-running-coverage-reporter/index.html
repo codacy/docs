@@ -25,9 +25,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.5cf97ce1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f6f54201.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.84c9b78b.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.45b0513f.min.css">
       
       
         
@@ -994,36 +994,42 @@
   <a href="#docker" class="md-nav__link">
     Docker
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#manually-downloading-the-binary" class="md-nav__link">
     Manually downloading the binary
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#building-from-source" class="md-nav__link">
     Building from source
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#circleci-orb" class="md-nav__link">
     CircleCI orb
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#github-action" class="md-nav__link">
     GitHub Action
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#community-supported-alternatives" class="md-nav__link">
     Community supported alternatives
   </a>
+  
 </li>
       
     </ul>
@@ -2179,7 +2185,7 @@
 <div class="highlight"><pre><span></span><code>docker run -v <span class="nv">$PWD</span>:/code codacy/codacy-coverage-reporter:&lt;version&gt; report
 </code></pre></div>
 <h2 id="manually-downloading-the-binary">Manually downloading the binary<a class="headerlink" href="#manually-downloading-the-binary" title="Permanent link">&para;</a></h2>
-<h3 id="linux-amd64">Linux amd64<a class="headerlink" href="#linux-amd64" title="Permanent link">&para;</a></h3>
+<h3>Linux amd64</h3>
 <p>If you prefer, you can manually download and run the native <code>codacy-coverage-reporter</code> binary, either for the latest version or a specific one.</p>
 <p>You can use the scripts below to automatically check for the latest version of the binaries, download the binaries from either Bintray or GitHub, and run them.</p>
 <ul>
@@ -2199,7 +2205,7 @@ chmod +x codacy-coverage-reporter
 </code></pre></div>
 </li>
 </ul>
-<h3 id="java">Java<a class="headerlink" href="#java" title="Permanent link">&para;</a></h3>
+<h3>Java</h3>
 <p>Use the Java binary to run Codacy Coverage reporter on other platforms, such as Linux x86, macOS, Windows, etc.</p>
 <p>You can use the scripts below to automatically check for the latest version of the Java binaries, download the binaries from either Bintray or GitHub, and run them.</p>
 <ul>
@@ -2243,9 +2249,9 @@ sbt assembly
 <h2 id="github-action">GitHub Action<a class="headerlink" href="#github-action" title="Permanent link">&para;</a></h2>
 <p>If you are using GitHub Actions to report coverage, you can use our GitHub Action <a href="https://github.com/codacy/codacy-coverage-reporter-action">codacy/codacy-coverage-reporter-action</a>.</p>
 <h2 id="community-supported-alternatives">Community supported alternatives<a class="headerlink" href="#community-supported-alternatives" title="Permanent link">&para;</a></h2>
-<h3 id="maven-plugin">Maven plugin<a class="headerlink" href="#maven-plugin" title="Permanent link">&para;</a></h3>
+<h3>Maven plugin</h3>
 <p>Thanks to the amazing job of <a href="https://github.com/halkeye">Gavin Mogan</a> you can now send your coverage to Codacy using his Maven plugin <a href="https://github.com/halkeye/codacy-maven-plugin">halkeye/codacy-maven-plugin</a>! Be sure to follow the instructions on his repository.</p>
-<h3 id="travis-ci">Travis CI<a class="headerlink" href="#travis-ci" title="Permanent link">&para;</a></h3>
+<h3>Travis CI</h3>
 <p>If you are using Travis CI to report coverage, update your file <code>.travis.yml</code> to include the following blocks:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">before_script</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">bash &lt;(curl -Ls https://coverage.codacy.com/get.sh) download</span>
@@ -2254,7 +2260,7 @@ sbt assembly
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">bash &lt;(curl -Ls https://coverage.codacy.com/get.sh)</span>
 </code></pre></div>
 <p>Make sure that you also <a href="../adding-coverage-to-your-repository/#authenticate">set your project API Token</a> as an environment variable in your Travis CI job.</p>
-<h3 id="gradle-task">Gradle task<a class="headerlink" href="#gradle-task" title="Permanent link">&para;</a></h3>
+<h3>Gradle task</h3>
 <p>A big shout-out to <a href="https://github.com/tompahoward">Tom Howard</a>, who suggested a way to <a href="https://github.com/mountain-pass/hyperstate/commit/857ca93e1c8484c14a5e2da9f0434d3daf3328ce">create a Gradle task</a>.</p>
 <div class="highlight"><pre><span></span><code>task uploadCoverageToCodacy(type: JavaExec, dependsOn : jacocoTestReport) {
    main = &quot;com.codacy.CodacyCoverageReporter&quot;
