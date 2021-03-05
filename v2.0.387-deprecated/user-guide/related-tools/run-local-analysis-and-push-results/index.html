@@ -25,9 +25,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.5cf97ce1.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f6f54201.min.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.84c9b78b.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.45b0513f.min.css">
       
       
         
@@ -823,30 +823,35 @@
   <a href="#setup-the-codacy-analysis-cli" class="md-nav__link">
     Setup the Codacy Analysis CLI
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#running-an-analysis-with-the-cli" class="md-nav__link">
     Running an analysis with the CLI
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#docs" class="md-nav__link">
     Docs
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#push-results" class="md-nav__link">
     Push results
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#notes" class="md-nav__link">
     Notes
   </a>
+  
 </li>
       
     </ul>
@@ -2564,7 +2569,7 @@
 </code></pre></div>
 <p>If you don't specify the tool, the analysis will run as Codacy does in the backend. For specific results, you can pass it with <em>--tool</em>.</p>
 <p>You can see the available tools with: <code>codacy-analysis-cli analyse --help</code></p>
-<h3 id="codacy-self-hosted">Codacy Self-hosted<a class="headerlink" href="#codacy-self-hosted" title="Permanent link">&para;</a></h3>
+<h3>Codacy Self-hosted</h3>
 <p>There is an additional step to go through if you are using Codacy Self-hosted.
 Please configure the endpoint where Codacy Self-hosted is running either by using the flag <code>--codacy-api-base-url</code> or the environment variable <code>CODACY_API_BASE_URL</code>.</p>
 <h2 id="docs">Docs<a class="headerlink" href="#docs" title="Permanent link">&para;</a></h2>
@@ -2579,7 +2584,7 @@ Please configure the endpoint where Codacy Self-hosted is running either by usin
 <li>Add <code>--upload</code> flag, <code>--project-token "PROJECT-TOKEN"</code> and <code>--codacy-api-base-url "API-BASE-URL"</code> to the codacy-analysis-cli command.</li>
 </ol>
 <h2 id="notes">Notes<a class="headerlink" href="#notes" title="Permanent link">&para;</a></h2>
-<h3 id="ignored-issues">Ignored Issues<a class="headerlink" href="#ignored-issues" title="Permanent link">&para;</a></h3>
+<h3>Ignored Issues</h3>
 <p>If you have ignored issues on Codacy be aware that the CLI will not respect those ignores when printing the results locally.</p>
 <p>When uploading results for Codacy Self-hosted the ignores will be reflected on Codacy after the analysis is complete.</p>
 <p>If you run into issues or have any questions, please don't hesitate to reach out.</p>

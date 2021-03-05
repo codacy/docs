@@ -25,9 +25,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.5cf97ce1.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.f6f54201.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.84c9b78b.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.45b0513f.min.css">
       
       
         
@@ -1585,96 +1585,112 @@
   <a href="#how-can-i-update-the-codacy-control-panel" class="md-nav__link">
     How can I update the Codacy control panel?
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#how-can-i-reinstall-the-codacy-control-panel" class="md-nav__link">
     How can I reinstall the Codacy Control Panel?
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#can-i-run-codacy-behind-a-proxy" class="md-nav__link">
     Can I run Codacy behind a proxy?
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#what-are-the-network-requirements-for-codacy-for-inbound-and-outbound-traffic-ports" class="md-nav__link">
     What are the network requirements for Codacy for inbound and outbound traffic ports?
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#logs-show-issues-on-db-connection-cannot-connect-to-db-results" class="md-nav__link">
     Logs show issues on DB connection: "Cannot connect to DB [results]"
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#our-machine-was-restarted-and-our-db-ip-changed-what-now" class="md-nav__link">
     Our machine was restarted, and our DB IP changed. What now?
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#our-machine-was-restarted-and-now-our-configuration-checks-fail" class="md-nav__link">
     Our machine was restarted, and now our configuration checks fail.
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#i-get-a-page-not-found-error-after-uploading-the-application-license" class="md-nav__link">
     I get a "Page not found" error after uploading the application license.
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#my-analyses-are-taking-too-long-why" class="md-nav__link">
     My analyses are taking too long. Why?
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#codacy-doesnt-seem-to-be-analysing-and-the-container-count-is-increasing" class="md-nav__link">
     Codacy doesn't seem to be analysing, and the container count is increasing.
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#the-codacy-configuration-panel-shows-an-error-related-to-my-application-secret" class="md-nav__link">
     The Codacy configuration panel shows an error related to my application secret.
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#can-we-set-up-codacy-in-a-high-availability-or-disaster-recovery-topology" class="md-nav__link">
     Can we set up Codacy in a high availability or disaster recovery topology?
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#how-do-i-update-codacy-to-the-latest-version" class="md-nav__link">
     How do I update Codacy to the latest version?
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#how-do-i-update-my-license" class="md-nav__link">
     How do I update my license?
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#i-updated-my-docker-version-and-codacy-stopped-working" class="md-nav__link">
     I updated my Docker version and Codacy stopped working.
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#my-question-still-isnt-answered-what-do-i-do" class="md-nav__link">
     My question still isn't answered. What do I do?
   </a>
+  
 </li>
       
     </ul>
@@ -2695,7 +2711,7 @@ If the database is running on a Docker, its IP may have changed.</p>
 <p>Currently, Codacy requires 2 different licenses: one is a .dlk file used in the installer, and another is .key file used in Codacy. If the dlk file is imported, it will fail to parse and throw an exception.</p>
 <p>Please navigate to URL <a href="http://your_server/license">http://YOUR_SERVER/license</a>, where you should be able to introduce the correct file.</p>
 <h2 id="my-analyses-are-taking-too-long-why">My analyses are taking too long. Why?<a class="headerlink" href="#my-analyses-are-taking-too-long-why" title="Permanent link">&para;</a></h2>
-<h3 id="docker-version">Docker version<a class="headerlink" href="#docker-version" title="Permanent link">&para;</a></h3>
+<h3>Docker version</h3>
 <p>Please make sure you are running a supported version of Docker. Codacy currently supports versions 1.7.0 to 1.9.1. Version 1.10 is currently not supported and thus will not perform any analysis.</p>
 <p>Initial analysis on a repository may take a bit longer than usual. For a large repository, this may take up to 1 hour, depending on your server hardware. Even so, we find that over 90% of repositories are analysed in less than 5 minutes. If you find your repository taking longer than what would be expected for its size, there may be some issues with the Docker engine.</p>
 <p>If you find your analyses taking longer than expected, please reach out to us with your logs at <a href="mailto:support@codacy.com">support@codacy.com</a>.</p>
