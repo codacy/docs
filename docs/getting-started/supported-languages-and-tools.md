@@ -7,7 +7,7 @@ For each supported programming language, Codacy generally provides:
 -   Code Complexity
 -   Test Coverage
 
-The table below lists all programming languages that Codacy supports and the corresponding tools that Codacy uses to analyze your source code. Besides this, Codacy uses [cloc](https://github.com/kentcdodds/cloc) to calculate the source lines of code for all supported languages, and supports multiple [test coverage report formats](../coverage-reporter/index.md#generating-coverage-reports).
+The table below lists all programming languages that Codacy supports and the corresponding tools that Codacy uses to analyze your source code. Besides this, Codacy uses [cloc](https://github.com/kentcdodds/cloc) to calculate the source lines of code for all supported languages, and supports multiple [test coverage report formats](../coverage-reporter/index.md#generating-coverage).
 
 <!--NOTE
     When adding a new tool, also update:
