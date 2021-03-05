@@ -914,19 +914,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../generating-coverage-reports/" title="Generating coverage reports" class="md-nav__link">
-      Generating coverage reports
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../adding-coverage-to-your-repository/" title="Adding coverage to your repository" class="md-nav__link">
+    <a href="../" title="Adding coverage to your repository" class="md-nav__link">
       Adding coverage to your repository
     </a>
   </li>
@@ -2678,7 +2666,7 @@
 </code></pre></div>
 <p>Note that all "coverable" lines should be present on the <code>coverage</code> node of the JSON payload. In the example you can see <code>"5": 0</code>, meaning that line 5 is not covered.</p>
 <h2 id="cant-guess-any-report-due-to-no-matching">Can't guess any report due to no matching<a class="headerlink" href="#cant-guess-any-report-due-to-no-matching" title="Permanent link">&para;</a></h2>
-<p>Codacy Coverage Reporter automatically searches for coverage reports matching the <a href="../generating-coverage-reports/">file name conventions for supported formats</a>.</p>
+<p>Codacy Coverage Reporter automatically searches for coverage reports matching the <a href="../#generating-coverage">file name conventions for supported formats</a>.</p>
 <p>However, if Codacy Coverage Reporter does not find your coverage report, you can explicitly define the report file name with the flag <code>-r</code>. For example:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
     -r &lt;my report&gt;
