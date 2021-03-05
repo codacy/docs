@@ -23,7 +23,7 @@ To make it easier to find relevant patterns, you can use the sidebar to filter t
 ![Filtering code patterns](images/code-patterns-filter.png)
 
 !!! tip
-    To enable all patterns inside a Category, you can use the filter to list all patterns inside that Category and click **Enable all**.
+    To enable all patterns inside a category, use the filter to list all patterns inside that category and click **Enable all**.
     
     As an example, if you want to enable **all** Security patterns of a tool, instead of filtering and then enabling all the patterns one by one, you can add the filter and click **Enable all**.
 
