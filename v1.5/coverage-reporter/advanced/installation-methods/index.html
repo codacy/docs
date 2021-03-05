@@ -25,9 +25,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.68666d21.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f6f54201.min.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.328cd531.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.45b0513f.min.css">
       
       
         
@@ -733,42 +733,49 @@
   <a href="#automatic-script-recommended" class="md-nav__link">
     Automatic script (recommended)
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#circleci-orb" class="md-nav__link">
     CircleCI orb
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#github-action" class="md-nav__link">
     GitHub Action
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#community-supported-alternatives" class="md-nav__link">
     Community supported alternatives
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#manually-downloading-the-native-binary" class="md-nav__link">
     Manually downloading the native binary
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#manually-downloading-the-java-binary" class="md-nav__link">
     Manually downloading the Java binary
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#build-from-source" class="md-nav__link">
     Build from source
   </a>
+  
 </li>
       
     </ul>
@@ -2328,10 +2335,10 @@
 <h2 id="github-action">GitHub Action<a class="headerlink" href="#github-action" title="Permanent link">&para;</a></h2>
 <p>If your are using GitHub Actions check out the <a href="https://github.com/codacy/codacy-coverage-reporter-action#codacy-coverage-reporter-action">codacy/coverage-coverage-reporter action</a>.</p>
 <h2 id="community-supported-alternatives">Community supported alternatives<a class="headerlink" href="#community-supported-alternatives" title="Permanent link">&para;</a></h2>
-<h3 id="maven-plugin">Maven plugin<a class="headerlink" href="#maven-plugin" title="Permanent link">&para;</a></h3>
+<h3>Maven plugin</h3>
 <p>Thanks to the amazing job of <a href="https://github.com/halkeye">halkeye</a> you can now send your coverage to Codacy using a <a href="https://github.com/halkeye/codacy-maven-plugin">maven plugin</a>!</p>
 <p>Just follow the <a href="https://github.com/halkeye/codacy-maven-plugin/blob/master/README.md#usage">instructions on his repository</a>.</p>
-<h3 id="travis-ci">Travis CI<a class="headerlink" href="#travis-ci" title="Permanent link">&para;</a></h3>
+<h3>Travis CI</h3>
 <p>If you want to use codacy with Travis CI and report coverage generated from your tests run in Travis, update your .travis.yml to include the following blocks:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">before_install</span><span class="p">:</span>
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">sudo apt-get install jq</span>
@@ -2341,7 +2348,7 @@
   <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">java -jar codacy-coverage-reporter-assembly.jar report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml</span>
 </code></pre></div>
 <p>Make sure you have set <code>CODACY_PROJECT_TOKEN</code> as an environment variable in your travis job!</p>
-<h3 id="gradle-task">Gradle task<a class="headerlink" href="#gradle-task" title="Permanent link">&para;</a></h3>
+<h3>Gradle task</h3>
 <p>A big shout-out to <a href="https://github.com/tompahoward">tompahoward</a>, you can create a gradle task as suggested in https://github.com/mountain-pass/hyperstate/commit/857ca93e1c8484c14a5e2da9f0434d3daf3328ce</p>
 <div class="highlight"><pre><span></span><code>task uploadCoverageToCodacy(type: JavaExec, dependsOn : jacocoTestReport) {
    main = &quot;com.codacy.CodacyCoverageReporter&quot;
@@ -2397,15 +2404,15 @@ task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
 <h2 id="manually-downloading-the-native-binary">Manually downloading the native binary<a class="headerlink" href="#manually-downloading-the-native-binary" title="Permanent link">&para;</a></h2>
 <p>If you prefer, you can manually download and run the native <code>codacy-coverage-reporter</code> binary, either for the latest version or a specific one.</p>
 <p>You can use the scripts below to automatically check for the latest version of the binaries, download the binaries from either Bintray or GitHub, and run them.</p>
-<h3 id="linux-amd64">Linux amd64<a class="headerlink" href="#linux-amd64" title="Permanent link">&para;</a></h3>
+<h3>Linux amd64</h3>
 <p>Download the latest binary and use it to post the coverage to Codacy</p>
-<h4 id="bintray">Bintray<a class="headerlink" href="#bintray" title="Permanent link">&para;</a></h4>
+<h4>Bintray</h4>
 <div class="highlight"><pre><span></span><code><span class="nv">LATEST_VERSION</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>curl -Ls https://api.bintray.com/packages/codacy/Binaries/codacy-coverage-reporter/versions/_latest <span class="p">|</span> jq -r .name<span class="k">)</span><span class="s2">&quot;</span>
 curl -Ls -o codacy-coverage-reporter <span class="s2">&quot;https://dl.bintray.com/codacy/Binaries/</span><span class="si">${</span><span class="nv">LATEST_VERSION</span><span class="si">}</span><span class="s2">/codacy-coverage-reporter-linux&quot;</span>
 chmod +x codacy-coverage-reporter
 ./codacy-coverage-reporter report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml
 </code></pre></div>
-<h4 id="github">GitHub<a class="headerlink" href="#github" title="Permanent link">&para;</a></h4>
+<h4>GitHub</h4>
 <div class="highlight"><pre><span></span><code>curl -Ls -o codacy-coverage-reporter <span class="s2">&quot;</span><span class="k">$(</span>curl -Ls https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest <span class="p">|</span> jq -r <span class="s1">&#39;.assets | map({name, browser_download_url} | select(.name | contains(&quot;codacy-coverage-reporter-linux&quot;))) | .[0].browser_download_url&#39;</span><span class="k">)</span><span class="s2">&quot;</span>
 chmod +x codacy-coverage-reporter
 ./codacy-coverage-reporter report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml
@@ -2418,12 +2425,12 @@ chmod +x codacy-coverage-reporter
 <li>Linux x86, MacOS, Windows, ...</li>
 </ul>
 <p>Download the latest jar and use it to post the coverage to Codacy</p>
-<h4 id="bintray_1">Bintray<a class="headerlink" href="#bintray_1" title="Permanent link">&para;</a></h4>
+<h4>Bintray</h4>
 <div class="highlight"><pre><span></span><code><span class="nv">LATEST_VERSION</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>curl -Ls https://api.bintray.com/packages/codacy/Binaries/codacy-coverage-reporter/versions/_latest <span class="p">|</span> jq -r .name<span class="k">)</span><span class="s2">&quot;</span>
 curl -Ls -o codacy-coverage-reporter-assembly.jar <span class="s2">&quot;https://dl.bintray.com/codacy/Binaries/</span><span class="si">${</span><span class="nv">LATEST_VERSION</span><span class="si">}</span><span class="s2">/codacy-coverage-reporter-assembly.jar&quot;</span>
 java -jar codacy-coverage-reporter-assembly.jar report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml
 </code></pre></div>
-<h4 id="github_1">GitHub<a class="headerlink" href="#github_1" title="Permanent link">&para;</a></h4>
+<h4>GitHub</h4>
 <div class="highlight"><pre><span></span><code>curl -LS -o codacy-coverage-reporter-assembly.jar <span class="s2">&quot;</span><span class="k">$(</span>curl -LSs https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest <span class="p">|</span> jq -r <span class="s1">&#39;.assets | map({name, browser_download_url} | select(.name | endswith(&quot;.jar&quot;))) | .[0].browser_download_url&#39;</span><span class="k">)</span><span class="s2">&quot;</span>
 java -jar codacy-coverage-reporter-assembly.jar report -l Java -r jacoco.xml
 </code></pre></div>
@@ -2546,7 +2553,7 @@ java -jar codacy-coverage-reporter-assembly.jar report -l Java -r jacoco.xml
       </ul>
       <ul>
         <li>Help</li>
-        <li><a href="https://community.codacy.com/">Codacy Community</a></li>
+        <li><a href="https://community.codacy.com/">Join our community</a></li>
         <li><a href="https://www.codacy.com/self-hosted">Request a demo</a></li>
         <li><a href="https://www.codacy.com/privacy">Privacy policy</a></li>
         <li><a href="https://www.codacy.com/cookies">Cookies policy</a></li>
@@ -2574,8 +2581,8 @@ java -jar codacy-coverage-reporter-assembly.jar report -l Java -r jacoco.xml
       </main>
     </div>
     
-      <script src="../../../assets/javascripts/vendor.e99337eb.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.bfbe466e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/vendor.8a62c8c7.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.fb712d40.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({

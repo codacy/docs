@@ -25,9 +25,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.68666d21.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f6f54201.min.css">
       
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.328cd531.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.45b0513f.min.css">
       
       
         
@@ -1558,12 +1558,14 @@
   <a href="#setting-up-monitoring-using-crow" class="md-nav__link">
     Setting up monitoring using Crow
   </a>
+  
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
   <a href="#setting-up-monitoring-using-grafana-prometheus-and-loki" class="md-nav__link">
     Setting up monitoring using Grafana, Prometheus, and Loki
   </a>
+  
 </li>
       
     </ul>
@@ -2308,7 +2310,7 @@
 <p><a href="https://prometheus.io">Prometheus</a> is an open-source systems monitoring and alerting toolkit. Logs can be collected using <a href="https://grafana.com/oss/loki/">Loki</a>, which is a horizontally-scalable, highly-available, multi-tenant log aggregation system. Its data can be visualized with <a href="https://grafana.com">Grafana</a>, a widely used open source analytics and monitoring solution.</p>
 <p>This solution is considerably more resource demanding than Crow, and is recommended only for more advanced usage. Furthermore, its installation, configuration, and management require a deeper knowledge of Kubernetes as each component must be carefully tweaked to match your specific use case, using as starting point the <code>.yaml</code> values files provided by us.</p>
 <p>The instructions below cover the basic installation of the components in this monitoring stack.</p>
-<h3 id="1-installing-prometheus">1. Installing Prometheus<a class="headerlink" href="#1-installing-prometheus" title="Permanent link">&para;</a></h3>
+<h3>1. Installing Prometheus</h3>
 <p>The simplest way to set up Prometheus in your cluster is by using the <a href="https://github.com/helm/charts/tree/master/stable/prometheus-operator">Prometheus Operator</a> bundle.</p>
 <p>Add the custom resources required for installing this bundle in your cluster:</p>
 <div class="admonition important">
@@ -2322,7 +2324,7 @@ kubectl apply -f <span class="s2">&quot;https://raw.githubusercontent.com/coreos
 kubectl apply -f <span class="s2">&quot;https://raw.githubusercontent.com/coreos/prometheus-operator/release-0.38/example/prometheus-operator-crd/monitoring.coreos.com_servicemonitors.yaml&quot;</span>
 kubectl apply -f <span class="s2">&quot;https://raw.githubusercontent.com/coreos/prometheus-operator/release-0.38/example/prometheus-operator-crd/monitoring.coreos.com_thanosrulers.yaml&quot;</span>
 </code></pre></div>
-<h3 id="2-installing-loki">2. Installing Loki<a class="headerlink" href="#2-installing-loki" title="Permanent link">&para;</a></h3>
+<h3>2. Installing Loki</h3>
 <p>Obtain the configuration file for Loki, <a href="../../values-files/values-loki.yaml"><code>values-loki.yaml</code></a>, and install it by running the command below. While the default storage class setting for Loki persistence should suit most use cases, you may need to adjust it to your specific Kubernetes installation. For instance, for MicroK8s use <code>storageClassName: microk8s-hostpath</code>.</p>
 <div class="highlight"><pre><span></span><code>helm repo add loki https://grafana.github.io/loki/charts
 
@@ -2331,13 +2333,13 @@ kubectl create namespace monitoring
 helm upgrade --install --atomic --timeout 600s loki loki/loki <span class="se">\</span>
   --version <span class="m">0</span>.28.1 --namespace monitoring --values values-loki.yaml
 </code></pre></div>
-<h3 id="3-installing-promtail">3. Installing Promtail<a class="headerlink" href="#3-installing-promtail" title="Permanent link">&para;</a></h3>
+<h3>3. Installing Promtail</h3>
 <p>Promtail is an agent that ships the contents of local logs to a Loki instance.</p>
 <p>Obtain the configuration file for Promtail, <a href="../../values-files/values-promtail.yaml"><code>values-promtail.yaml</code></a>, and install it by running the command below.</p>
 <div class="highlight"><pre><span></span><code>helm upgrade --install --atomic --timeout 600s promtail loki/promtail <span class="se">\</span>
   --version <span class="m">0</span>.22.2 --namespace monitoring --values values-promtail.yaml
 </code></pre></div>
-<h3 id="4-installing-prometheus-and-grafana">4. Installing Prometheus and Grafana<a class="headerlink" href="#4-installing-prometheus-and-grafana" title="Permanent link">&para;</a></h3>
+<h3>4. Installing Prometheus and Grafana</h3>
 <p>Obtain the configuration file for the <a href="https://github.com/helm/charts/tree/master/stable/prometheus-operator">Prometheus Operator bundle</a>, <a href="../../values-files/values-prometheus-operator.yaml"><code>values-prometheus-operator.yaml</code></a>. Then:</p>
 <ol>
 <li>
@@ -2455,7 +2457,7 @@ helm upgrade --install --atomic --timeout 600s loki loki/loki <span class="se">\
       </ul>
       <ul>
         <li>Help</li>
-        <li><a href="https://community.codacy.com/">Codacy Community</a></li>
+        <li><a href="https://community.codacy.com/">Join our community</a></li>
         <li><a href="https://www.codacy.com/self-hosted">Request a demo</a></li>
         <li><a href="https://www.codacy.com/privacy">Privacy policy</a></li>
         <li><a href="https://www.codacy.com/cookies">Cookies policy</a></li>
@@ -2483,8 +2485,8 @@ helm upgrade --install --atomic --timeout 600s loki loki/loki <span class="se">\
       </main>
     </div>
     
-      <script src="../../../assets/javascripts/vendor.e99337eb.min.js"></script>
-      <script src="../../../assets/javascripts/bundle.bfbe466e.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
+      <script src="../../../assets/javascripts/vendor.8a62c8c7.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.fb712d40.min.js"></script><script id="__lang" type="application/json">{"clipboard.copy": "Copy to clipboard", "clipboard.copied": "Copied to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.placeholder": "Type to start searching", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents"}</script>
       
       <script>
         app = initialize({
