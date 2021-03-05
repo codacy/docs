@@ -1009,6 +1009,12 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
+  <a href="#malformedinputexception-while-parsing-report" class="md-nav__link">
+    MalformedInputException while parsing report
+  </a>
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
   <a href="#substratesegfaulthandler-caught-signal-11" class="md-nav__link">
     SubstrateSegfaultHandler caught signal 11
   </a>
@@ -2686,6 +2692,9 @@
 <div class="highlight"><pre><span></span><code>dotCover.exe cover ... /Filters<span class="o">=</span>-:xunit*
 </code></pre></div>
 <p>By default, dotCover includes xUnit files in the coverage analysis and this results in larger coverage reports. This filter helps ensure that the resulting coverage data does not exceed the size limit accepted by the Codacy API when uploading the results.</p>
+<h2 id="malformedinputexception-while-parsing-report">MalformedInputException while parsing report<a class="headerlink" href="#malformedinputexception-while-parsing-report" title="Permanent link">&para;</a></h2>
+<p>If you get a <code>java.nio.charset.MalformedInputException</code> when running the Codacy Coverage Reporter it means that the coverage report includes an unsupported character, perhaps on one of your source code file names.</p>
+<p>For maximum compatibility of your coverage reports with the Codacy Coverage Reporter, make sure that your coverage reports use UTF-8 encoding or remove any special characters from the reports.</p>
 <h2 id="substratesegfaulthandler-caught-signal-11">SubstrateSegfaultHandler caught signal 11<a class="headerlink" href="#substratesegfaulthandler-caught-signal-11" title="Permanent link">&para;</a></h2>
 <p>If you are experiencing segmentation faults when uploading the coverage results due to <a href="https://github.com/oracle/graal/issues/624">oracle/graal#624</a>, execute the following command before running the reporter, as a workaround:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;</span><span class="k">$(</span>dig +short api.codacy.com <span class="p">|</span> tail -n1<span class="k">)</span><span class="s2"> api.codacy.com&quot;</span> &gt;&gt; /etc/hosts
@@ -2765,7 +2774,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 26, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 5, 2021</span>
     
   </small>
 </div>
