@@ -2,7 +2,7 @@
 
 Codacy executes the `git diff` command when analyzing new commits and pull requests to identify the lines of code that were changed. Codacy then uses this information to display the issues that were caused by the changes introduced by the commits or pull requests.
 
-If you have files in your repository that use the carriage return (CR) as the line end control character, the command `git diff` doesn't correctly identify line endings in the changed files. Because of this, Codacy is unable to use the output of the command and you will see an error in the your commit or pull request analysis logs for the Diff step:
+If you have files in your repository that use the carriage return (CR) as the line end control character, the command `git diff` doesn't correctly identify line endings in the changed files. Because of this, Codacy is unable to use the output of the command and you'll see an error in the **Diff** step of your commit or pull request analysis logs:
 
 ![View analysis logs](images/diff-failure-view-logs.png)
 
