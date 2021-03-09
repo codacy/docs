@@ -143,7 +143,7 @@ engines:
     php_version: 5.5
 ```
 
-### Pylint 1.9.*
+### Legacy Pylint 1.9.*
 
 If you're using the legacy Pylint 1.9.* to analyze Python source code files, add the following configuration to your Codacy configuration file to define the Python version used on your source code files. The supported versions are `2` and `3`:
 
@@ -155,6 +155,6 @@ engines:
 ```
 
 !!! tip
-    If you're using Python 3 as your programming language, we recommend that you disable the tool **PyLint 1.9.\*** and enable the tool **PyLint (Python 3) 2.\*** on your repository [Code patterns page](code-patterns.md) instead. For more information see [What's New in Pylint 2.0](http://pylint.pycqa.org/en/latest/whatsnew/2.0.html).
+    If you're using Python 3.4.\* or later as your programming language, we recommend that you disable the tool **PyLint** and enable the tool **PyLint (Python 3)** on your repository [Code patterns page](code-patterns.md) instead. For more information see [What's New in Pylint 2.0](http://pylint.pycqa.org/en/latest/whatsnew/2.0.html).
 
 If you have questions about the Codacy configuration file please contact us at <mailto:support@codacy.com>.
