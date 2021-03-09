@@ -155,8 +155,6 @@ engines:
 ```
 
 !!! tip
-    If you're using exclusively Python 3 as your programming language, we recommend that you disable the tool **PyLint 1.9.\*** and enable the tool **PyLint (Python 3) 2.\*** on your repository [Code patterns page](code-patterns.md).
-    
-    See [What's new in Pylint 2.0](http://pylint.pycqa.org/en/latest/whatsnew/2.0.html) for more information.
+    If you're using Python 3 as your programming language, we recommend that you disable the tool **PyLint 1.9.\*** and enable the tool **PyLint (Python 3) 2.\*** on your repository [Code patterns page](code-patterns.md) instead. For more information see [What's New in Pylint 2.0](http://pylint.pycqa.org/en/latest/whatsnew/2.0.html).
 
 If you have questions about the Codacy configuration file please contact us at <mailto:support@codacy.com>.
