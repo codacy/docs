@@ -145,7 +145,7 @@ engines:
 
 ### Pylint 1.9.*
 
-If you're using Pylint 1.9.* to analyze Python source code files, add the following configuration to your Codacy configuration file to define the Python version used on your source code files. The supported versions are `2` and `3`:
+If you're using the legacy Pylint 1.9.* to analyze Python source code files, add the following configuration to your Codacy configuration file to define the Python version used on your source code files. The supported versions are `2` and `3`:
 
 ```yaml
 ---
