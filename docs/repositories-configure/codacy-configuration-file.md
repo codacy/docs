@@ -123,7 +123,7 @@ Although Codacy tries to detect which language is used on each source code file,
 
 ### Cppcheck
 
-If you're using Cppcheck to analyze your repository, add the following configuration to your Codacy configuration file to define the programming language of your source code files. The supported languages are `c` and `c++`:
+If you're using Cppcheck to analyze C or C++ source code files, add the following configuration to your Codacy configuration file to define the programming language you're using. The supported languages are `c` and `c++`:
 
 ```yaml
 ---
@@ -134,7 +134,7 @@ engines:
 
 ### PHP CodeSniffer
 
-If you're using the [PHP Compatibility](https://github.com/PHPCompatibility/PHPCompatibility) coding standard for PHP CodeSniffer, add the following configuration to your Codacy configuration file to [define the PHP version](https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions) you'd like to use:
+If you're using the [PHP Compatibility](https://github.com/PHPCompatibility/PHPCompatibility) coding standard for PHP CodeSniffer, add the following configuration to your Codacy configuration file to [define the PHP version](https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions) you're using:
 
 ```yaml
 ---
@@ -145,7 +145,7 @@ engines:
 
 ### Legacy Pylint 1.9.*
 
-If you're using the legacy Pylint 1.9.* to analyze Python source code files, add the following configuration to your Codacy configuration file to define the Python version used on your source code files. The supported versions are `2` and `3`:
+If you're using the legacy Pylint 1.9.* to analyze Python source code files, add the following configuration to your Codacy configuration file to define the Python language version you're using. The supported versions are `2` and `3`:
 
 ```yaml
 ---
