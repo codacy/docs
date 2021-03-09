@@ -117,54 +117,46 @@ tslint
 tsqllint
 ```
 
-### Specifying language
+## Tool-specific configurations
 
-Although our tools try to detect which language is used on each file, some false positives may occur.
+Although Codacy tries to detect which language is used on each source code file, some false positives may occur. The tools below support specific configurations to specify the language or language version used in the source code files that you're analyzing.
 
-To instruct which language you want Codacy to use, you can define the following in a [Codacy configuration file](codacy-configuration-file.md) - `.codacy.yml`:
+### Cppcheck
+
+If you're using Cppcheck to analyze your repository, add the following configuration to your Codacy configuration file to define the programming language of your source code files. The supported languages are `c` and `c++`:
 
 ```yaml
 ---
 engines:
   cppcheck:
-    enabled: true
     language: c++
 ```
 
-Supported languages: C, C++
+### PHP CodeSniffer
 
-Supported tools: [<span class="skip-vale">codacy-cppcheck</span>](https://github.com/codacy/codacy-cppcheck)
-
-### Specifying your PHP version
-
-If you are using the PHP Compatibility Coding Standard for PHP CodeSniffer, you can specify the PHP version you'd like to use from the [supported versions](https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions).
-
-To instruct which PHP version you want Codacy to use, you can define the following in a [Codacy configuration file](codacy-configuration-file.md) - ```.codacy.yml```:
+If you're using the [PHP Compatibility](https://github.com/PHPCompatibility/PHPCompatibility) coding standard for PHP CodeSniffer, add the following configuration to your Codacy configuration file to [define the PHP version](https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions) you'd like to use:
 
 ```yaml
 ---
 engines:
   phpcs:
-    enabled: true
     php_version: 5.5
 ```
 
-### Specifying your Python version
+### Pylint 1.9.*
 
-Although our tools try to detect which Python version your repository uses, some false positives may occur.
-
-To instruct which Python version you want Codacy to use, you can define the following in a [Codacy configuration file](codacy-configuration-file.md) added in the root of your repository - `.codacy.yml`:
+If you're using Pylint 1.9.* to analyze Python source code files, add the following configuration to your Codacy configuration file to define the Python version used on your source code files. The supported versions are `2` and `3`:
 
 ```yaml
 ---
 engines:
   pylint:
-    enabled: true
     python_version: 2
 ```
 
-Supported versions: 2, 3
-
-Supported tools: [<span class="skip-vale">codacy-pylint</span>](https://github.com/codacy/codacy-pylint)
+!!! tip
+    If you're using exclusively Python 3 as your programming language, we recommend that you disable the tool **PyLint 1.9.\*** and enable the tool **PyLint (Python 3) 2.\*** on your repository [Code patterns page](code-patterns.md).
+    
+    See [What's new in Pylint 2.0](http://pylint.pycqa.org/en/latest/whatsnew/2.0.html) for more information.
 
 If you have questions about the Codacy configuration file please contact us at <mailto:support@codacy.com>.
