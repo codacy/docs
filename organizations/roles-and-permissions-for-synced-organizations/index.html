@@ -2696,7 +2696,7 @@
     <tr>
       <td><span>Guest</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>No</td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>Yes</td>
@@ -2706,7 +2706,7 @@
     <tr>
       <td><span>Reporter</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>No</td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>Yes</td>
@@ -2716,7 +2716,7 @@
     <tr>
       <td><span>Developer</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>Yes</td>
@@ -2726,7 +2726,7 @@
     <tr>
       <td><span>Maintainer</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>Yes</td>
@@ -2757,7 +2757,7 @@
       <td rowspan="2">Bitbucket Cloud and Bitbucket Server</td>
       <td>Read, Write<sup><a href="#note-3">3</a></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>No</td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>Yes</td>
@@ -2782,10 +2782,7 @@
 <sup id="note-3">3</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.</p>
 <p>See <a href="../managing-people/">managing people</a> to list and manage the members of your organization.</p>
 <h2 id="configure-ignore-issues">Configuring who can ignore issues<a class="headerlink" href="#configure-ignore-issues" title="Permanent link">&para;</a></h2>
-<div class="admonition info">
-<p class="admonition-title">Applies only to GitHub Cloud and GitHub Enterprise</p>
-</div>
-<p>By default, only users with Admin permission on a repository can <a href="../../repositories/issues/#ignoring-and-managing-issues">ignore issues</a>, but you can change this. In your Organization's settings, you can find <strong>Members privileges</strong> where you can define the lowest permission required to ignore issues for your organization.</p>
+<p>By default, only users with Write permission on a repository can <a href="../../repositories/issues/#ignoring-and-managing-issues">ignore issues</a>, but you can change this. In your Organization's settings, you can find <strong>Members privileges</strong> where you can define the lowest permission required to ignore issues for your organization.</p>
 <p><img alt="Configuring who can ignore issues" src="../images/ignore-issues.png" /></p>
 <p>Codacy doesn't allow changing the role of a user, as the roles on Codacy are mirrored from your Git provider and applied to each repository.</p>
               
@@ -2859,7 +2856,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 4, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 10, 2021</span>
     
   </small>
 </div>
