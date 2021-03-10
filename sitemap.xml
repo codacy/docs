@@ -380,10 +380,6 @@
      <lastmod>2021-03-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/faq/code-analysis/error-line-endings/</loc>
-     <lastmod>2021-03-10</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
      <loc>https://docs.codacy.com/faq/code-analysis/skipping-an-analysis/</loc>
      <lastmod>2021-03-10</lastmod>
      <changefreq>daily</changefreq>
@@ -400,11 +396,15 @@
      <lastmod>2021-03-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/faq/troubleshooting/not-a-member-of-the-organization/</loc>
+     <loc>https://docs.codacy.com/faq/troubleshooting/why-isnt-my-public-repository-being-analyzed/</loc>
      <lastmod>2021-03-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/faq/troubleshooting/why-isnt-my-public-repository-being-analyzed/</loc>
+     <loc>https://docs.codacy.com/faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations/</loc>
+     <lastmod>2021-03-10</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.codacy.com/faq/troubleshooting/not-a-member-of-the-organization/</loc>
      <lastmod>2021-03-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -412,7 +412,7 @@
      <lastmod>2021-03-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations/</loc>
+     <loc>https://docs.codacy.com/faq/troubleshooting/error-line-endings/</loc>
      <lastmod>2021-03-10</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
