@@ -54,6 +54,7 @@ markdown_extensions:
           strip_comments: true
     - toc:
           permalink: true
+          toc_depth: 2
 
 # Plugins
 plugins:
@@ -481,6 +482,7 @@ plugins:
               "getting-started/i-added-a-repository-now-what.md": "getting-started/getting-started-with-codacy.md"
               "related-tools/api-tokens.md": "related-tools/codacy-api-tokens.md"
               "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md"
+              "related-tools/running-local-analysis.md": "related-tools/local-analysis/running-local-analysis.md"
               "related-tools/run-local-analysis.md": "related-tools/local-analysis/running-local-analysis.md"
               "related-tools/client-side-tools.md": "related-tools/local-analysis/client-side-tools.md"
               "related-tools/run-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"

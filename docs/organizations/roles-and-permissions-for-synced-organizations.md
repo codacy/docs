@@ -102,7 +102,7 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td><span>Guest</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>No</td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>Yes</td>
@@ -112,7 +112,7 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td><span>Reporter</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>No</td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>Yes</td>
@@ -122,7 +122,7 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td><span>Developer</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>Yes</td>
@@ -132,7 +132,7 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td><span>Maintainer</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>Yes</td>
@@ -163,7 +163,7 @@ Depending on your role on the Git provider you will have different permissions o
       <td rowspan="2">Bitbucket Cloud and Bitbucket Server</td>
       <td>Read, Write<sup><a href="#note-3">3</a></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>No</td>
+      <td><a href="#configure-ignore-issues">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>Yes</td>
@@ -191,9 +191,7 @@ See [managing people](managing-people.md) to list and manage the members of your
 
 ## Configuring who can ignore issues {: id="configure-ignore-issues"}
 
-!!! info "Applies only to GitHub Cloud and GitHub Enterprise"
-
-By default, only users with Admin permission on a repository can [ignore issues](../repositories/issues.md#ignoring-and-managing-issues), but you can change this. In your Organization's settings, you can find **Members privileges** where you can define the lowest permission required to ignore issues for your organization.
+By default, only users with Write permission on a repository can [ignore issues](../repositories/issues.md#ignoring-and-managing-issues), but you can change this. In your Organization's settings, you can find **Members privileges** where you can define the lowest permission required to ignore issues for your organization.
 
 ![Configuring who can ignore issues](images/ignore-issues.png)
 
