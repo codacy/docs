@@ -48,15 +48,15 @@ To apply the same pattern configuration to multiple repositories:
 
 1.  Add the first repository and configure the patterns on that repository for the relevant tools.
 
-1.  For each tool, expand the menu at the top of the pattern list and select **Set default**.
+1.  Expand the menu at the top of the pattern list and select **Set default**.
 
-    This option sets the current pattern configuration as the default for your account.
+    This option sets the current pattern configurations for all tools as the default for your account.
 
     ![Setting a default pattern configuration](images/code-patterns-set-default.png)
 
-After defining the default pattern configuration for your account, the new repositories that you add will automatically use those pattern configurations.
+After defining the default pattern configuration for your account, the new repositories that you add will automatically use those pattern configurations for all tools.
 
-Alternatively, you can also manually update the pattern configuration of a tool to use your account configurations by expanding the menu at the top of the pattern list and selecting **Reset**.
+Alternatively, you can also manually apply your account configurations as the pattern configurations for all tools by expanding the menu at the top of the pattern list and selecting **Reset**.
 
 ## Importing pattern configurations from another repository {: id="import-patterns"}
 
