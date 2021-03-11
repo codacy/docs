@@ -27,8 +27,8 @@
 -   Fixed a bug where the "<span class="skip-vale">Unignore</span> issue" button wasn't working
 -   Fixed a bug where webhook notifications were being sent with incomplete information
 -   Fixed a bug that prevented users to save changes in project Settings when using Firefox 61
--   Fixed a bug with PHP Code Sniffer "PHPCS_Internal" pattern that was generating false positives
--   Fixed a bug with PHP Code Sniffer deprecated parameters `customSanitizingFunctions property` and `WordPress.CSRF.NonceVerification` that were generating false positives
+-   Fixed a bug with PHP_CodeSniffer "PHPCS_Internal" pattern that was generating false positives
+-   Fixed a bug with PHP_CodeSniffer deprecated parameters `customSanitizingFunctions property` and `WordPress.CSRF.NonceVerification` that were generating false positives
 -   Fixed a bug that was causing Cppcheck to fail analysis
 -   Fixed a bug where the Merged Pull Requests view was showing a blank page
 -   Fixed a bug where it wasn't possible to invite new team members from the Commit page

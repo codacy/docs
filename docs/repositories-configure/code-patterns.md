@@ -181,7 +181,7 @@ The known file names for the tools that support configuration files are the foll
     <td></td>
   </tr>
   <tr>
-    <td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP CodeSniffer</a></td>
+    <td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP_CodeSniffer</a></td>
     <td>PHP</td>
     <td><code>phpcs.xml</code>, <code>phpcs.xml.dist</code></td>
     <td></td>
