@@ -593,46 +593,17 @@
   
 </li>
       
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#tool-specific-configurations" class="md-nav__link">
+    Tool-specific configurations
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
     
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../specifying-language/" title="Specifying language" class="md-nav__link">
-      Specifying language
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../specifying-your-python-version/" title="Specifying your Python version" class="md-nav__link">
-      Specifying your Python version
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../specifying-your-php-version/" title="Specifying your PHP version" class="md-nav__link">
-      Specifying your PHP version
-    </a>
   </li>
 
         
@@ -2745,7 +2716,34 @@ tailor
 tslint
 tsqllint
 </code></pre></div>
-<p>If you have questions about the Codacy configuration file please contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
+<h2 id="tool-specific-configurations">Tool-specific configurations<a class="headerlink" href="#tool-specific-configurations" title="Permanent link">&para;</a></h2>
+<p>Although Codacy tries to detect which language is used on each source code file, some false positives may occur. The tools below support specific configurations to specify the language or language version used in the source code files that you're analyzing.</p>
+<h3 id="cppcheck">Cppcheck<a class="headerlink" href="#cppcheck" title="Permanent link">&para;</a></h3>
+<p>If you're using Cppcheck to analyze C or C++ source code files, add the following configuration to your Codacy configuration file to define the programming language you're using. The supported languages are <code>c</code> and <code>c++</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">engines</span><span class="p">:</span>
+  <span class="nt">cppcheck</span><span class="p">:</span>
+    <span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">c++</span>
+</code></pre></div>
+<h3 id="php-codesniffer">PHP CodeSniffer<a class="headerlink" href="#php-codesniffer" title="Permanent link">&para;</a></h3>
+<p>If you're using the <a href="https://github.com/PHPCompatibility/PHPCompatibility">PHP Compatibility</a> coding standard for PHP_CodeSniffer, add the following configuration to your Codacy configuration file to <a href="https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions">define the PHP version</a> you're using:</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">engines</span><span class="p">:</span>
+  <span class="nt">phpcs</span><span class="p">:</span>
+    <span class="nt">php_version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5.5</span>
+</code></pre></div>
+<h3 id="legacy-pylint-19">Legacy Pylint 1.9.*<a class="headerlink" href="#legacy-pylint-19" title="Permanent link">&para;</a></h3>
+<p>If you're using the legacy Pylint 1.9.* to analyze Python source code files, add the following configuration to your Codacy configuration file to define the Python language version you're using. The supported versions are <code>2</code> and <code>3</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">engines</span><span class="p">:</span>
+  <span class="nt">pylint</span><span class="p">:</span>
+    <span class="nt">python_version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+</code></pre></div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If you're using Python 3.4.* or later as your programming language, we recommend that you disable the tool <strong>Pylint</strong> and enable the tool <strong>Pylint (Python 3)</strong> on your repository <a href="../code-patterns/">Code patterns page</a> instead. For more information see <a href="http://pylint.pycqa.org/en/latest/whatsnew/2.0.html">What's New in Pylint 2.0</a>.</p>
+</div>
+<p>If you have questions about the Codacy configuration file, please contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
               
               
                 
@@ -2817,7 +2815,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 18, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 11, 2021</span>
     
   </small>
 </div>
