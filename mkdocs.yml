@@ -500,6 +500,7 @@ plugins:
               "repositories/issues-view.md": "repositories/issues.md"
               "coverage-reporter/generating-coverage-reports.md": "coverage-reporter/index.md"
               "coverage-reporter/adding-coverage-to-your-repository.md": "coverage-reporter/index.md"
+              "faq/code-analysis/error-line-endings.md": "faq/troubleshooting/error-line-endings.md"
 
 nav:
     - Documentation home: "index.md"
@@ -590,16 +591,16 @@ nav:
                 - faq/code-analysis/do-you-check-for-dependencies.md
                 - faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md
                 - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
-                - faq/code-analysis/error-line-endings.md
                 - faq/code-analysis/skipping-an-analysis.md
           - Troubleshooting:
                 - faq/troubleshooting/why-is-my-file-missing.md
                 - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
                 - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
-                - faq/troubleshooting/not-a-member-of-the-organization.md
                 - faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md
-                - faq/troubleshooting/we-no-longer-have-access-to-this-repository.md
                 - faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md
+                - faq/troubleshooting/not-a-member-of-the-organization.md
+                - faq/troubleshooting/we-no-longer-have-access-to-this-repository.md
+                - faq/troubleshooting/error-line-endings.md
     - Release notes:
           - release-notes/index.md
           - Codacy Cloud:
