@@ -117,4 +117,44 @@ tslint
 tsqllint
 ```
 
-If you have questions about the Codacy configuration file please contact us at <mailto:support@codacy.com>.
+## Tool-specific configurations
+
+Although Codacy tries to detect which language is used on each source code file, some false positives may occur. The tools below support specific configurations to specify the language or language version used in the source code files that you're analyzing.
+
+### Cppcheck
+
+If you're using Cppcheck to analyze C or C++ source code files, add the following configuration to your Codacy configuration file to define the programming language you're using. The supported languages are `c` and `c++`:
+
+```yaml
+---
+engines:
+  cppcheck:
+    language: c++
+```
+
+### PHP CodeSniffer
+
+If you're using the [PHP Compatibility](https://github.com/PHPCompatibility/PHPCompatibility) coding standard for PHP_CodeSniffer, add the following configuration to your Codacy configuration file to [define the PHP version](https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions) you're using:
+
+```yaml
+---
+engines:
+  phpcs:
+    php_version: 5.5
+```
+
+### Legacy Pylint 1.9.*
+
+If you're using the legacy Pylint 1.9.* to analyze Python source code files, add the following configuration to your Codacy configuration file to define the Python language version you're using. The supported versions are `2` and `3`:
+
+```yaml
+---
+engines:
+  pylint:
+    python_version: 2
+```
+
+!!! tip
+    If you're using Python 3.4.\* or later as your programming language, we recommend that you disable the tool **Pylint** and enable the tool **Pylint (Python 3)** on your repository [Code patterns page](code-patterns.md) instead. For more information see [What's New in Pylint 2.0](http://pylint.pycqa.org/en/latest/whatsnew/2.0.html).
+
+If you have questions about the Codacy configuration file, please contact us at <mailto:support@codacy.com>.
