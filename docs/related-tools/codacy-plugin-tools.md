@@ -112,7 +112,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-jshint" class="skip-vale">codacy/codacy-jshint</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP Code Sniffer</a></td>
+<td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a></td>
 <td><a href="https://github.com/codacy/codacy-codesniffer" class="skip-vale">codacy/codacy-codesniffer</a></td>
 </tr>
 <tr>
