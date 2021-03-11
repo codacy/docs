@@ -134,7 +134,7 @@ engines:
 
 ### PHP CodeSniffer
 
-If you're using the [PHP Compatibility](https://github.com/PHPCompatibility/PHPCompatibility) coding standard for PHP CodeSniffer, add the following configuration to your Codacy configuration file to [define the PHP version](https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions) you're using:
+If you're using the [PHP Compatibility](https://github.com/PHPCompatibility/PHPCompatibility) coding standard for PHP_CodeSniffer, add the following configuration to your Codacy configuration file to [define the PHP version](https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions) you're using:
 
 ```yaml
 ---
