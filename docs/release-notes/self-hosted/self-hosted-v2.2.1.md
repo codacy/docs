@@ -40,7 +40,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Hadolint 1.17.5
 -   JacksonLinter 2.10.2
 -   JSHint 2.12.0
--   PHP Code Sniffer 3.5.6
+-   PHP_CodeSniffer 3.5.6
 -   PHP Mess Detector 2.8.1
 -   PMD (Legacy) 5.8.1
 -   PMD 6.27.0

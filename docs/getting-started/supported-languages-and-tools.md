@@ -182,7 +182,7 @@ The table below lists all programming languages that Codacy supports and the cor
     </tr>
     <tr>
       <td>PHP</td>
-      <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP Code Sniffer</a>,
+      <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
           <a href="https://phpmd.org/">PHP Mess Detector</a></td>
       <td></td>
       <td><a href="https://github.com/sebastianbergmann/phpcpd">PHPCPD</a></td>

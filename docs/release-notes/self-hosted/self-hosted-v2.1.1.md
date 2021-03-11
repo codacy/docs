@@ -18,7 +18,6 @@ This version of Codacy Self-hosted includes the tool versions below.
 -   Bundler Audit 0.6.1
 -   Checkstyle 8.34
 -   CodeNarc 1.6
--   CodeSniffer 3.5.6
 -   Coffeelint 2.1.0
 -   Cppcheck 2.1
 -   Credo 1.3.0
@@ -31,6 +30,7 @@ This version of Codacy Self-hosted includes the tool versions below.
 -   Hadolint 1.17.5
 -   Jackson Linter 2.10.2
 -   JSHint 2.10.2
+-   PHP_CodeSniffer 3.5.6
 -   Phpmd 2.8.1
 -   PMD 6.27.0
 -   Pmdjava 5.8.1
