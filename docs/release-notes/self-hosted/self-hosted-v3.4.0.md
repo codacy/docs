@@ -31,10 +31,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Bug fixes
 
--   New users will now be correctly redirected to the organizations page (CY-3807)
--   Fix wrong message when removing patterns from the Issues view (CY-3745)
--   Fixed an issue while fetching groups from GitLab if the user owned more than 100 groups with similar names. (CY-3506)
--   The Codacy API endpoint getUserPermissionOnOrganization now correctly returns the permission `author` for people who have been invited to an organization. (CY-3471)
+-   Fixed wrong message when disabling patterns on the Issues page. (CY-3745)
 
 ## Tool versions
 
