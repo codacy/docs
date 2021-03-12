@@ -81,7 +81,7 @@ Follow these Markdown conventions when editing the documentation:
     See our [public roadmap](https://roadmap.codacy.com/){: target="_blank"}.
     ```
 
--   Use the [Admonitions syntax](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#usage) to include notes and warnings, or to highlight important information. For example:
+-   Use the [Admonitions syntax](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#usage) to include **notes** and **warnings**, or to highlight **important** information. For example:
 
     ```markdown
     !!! note
@@ -152,17 +152,13 @@ After updating the Latest documentation version, you're ready to create a new do
 
 1.  Create a new release branch with the name `release/v<MAJOR>.<MINOR>` from the now updated `master` branch.
 
-1.  Delete the existing redirects, since it doesn't make sense to repeat them under each Codacy Self-hosted version.
-
-    Delete the YAML block `plugins.redirects` from the file `mkdocs.yml`.
-
 1.  Delete the release notes from the release branch, since you're only publishing the release notes on the Latest or main version of the documentation.
 
-    Delete the folder `docs/release-notes` and all references to the files in this folder from the file `mkdocs.yml`.
+    Delete the folder `docs/release-notes` and all lines on `mkdocs.yml` that reference the removed files.
 
 1.  Build the documentation and make sure that the changes for the new release of the chart are correct.
 
-1.  Push the new branch and wait until the GitHub workflow deploys the new documentation version under `https://docs.codacy.com/v<MAJOR>.<MINOR>`.
+1.  Push the new branch and check that the GitHub workflow deploys the new documentation version under `https://docs.codacy.com/v<MAJOR>.<MINOR>`.
 
 ## Updating an existing version of the documentation
 
