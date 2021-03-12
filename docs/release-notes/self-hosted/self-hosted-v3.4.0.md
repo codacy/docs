@@ -32,6 +32,9 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 ## Bug fixes
 
 -   Fixed wrong message when disabling patterns on the Issues page. (CY-3745)
+-   Fixed an issue that caused the configuration value containing the username of the metrics database to be used as the username for <span class="skip-vale">jobsdb</span>. (CY-3697)
+-   Fixed an issue that caused the security dashboard to allow enabling patterns for tools using a configuration file. (CY-3684)
+-   Fixed an issue that caused Sonar C# to detect issues related to patterns not enabled in the configuration. (CY-3607)
 
 ## Tool versions
 
