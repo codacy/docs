@@ -35,10 +35,9 @@ jobs:
         run: |
           mkdocs build
 
-      # Commented this step because it was preventing the docs from being deployed
-      # - name: Validate generated HTML files
-      #   run: |
-      #     docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
+      - name: Validate generated HTML files
+        run: |
+          docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
 
   deploy-version:
     needs: build
