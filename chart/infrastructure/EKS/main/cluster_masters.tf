@@ -78,7 +78,7 @@ resource "aws_iam_role_policy_attachment" "eks_cluster" {
 
 ### cloudwatch control plane logs
 resource "aws_cloudwatch_log_group" "eks" {
-  name              = "/aws/eks/${var.project_slug}/cluster"
+  name              = "/aws/eks/${var.project_slug}-cluster/cluster"
   retention_in_days = 7
   tags              = var.custom_tags
 }

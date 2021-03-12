@@ -30,6 +30,10 @@ provider "kubernetes" {
   host                   = aws_eks_cluster.main.endpoint
   cluster_ca_certificate = base64decode(aws_eks_cluster.main.certificate_authority.0.data)
   token                  = data.aws_eks_cluster_auth.eks_cluster_auth.token
+  # Change `load_config_file` to `true` if,  when reapplying, you obtain an error with content similar to:
+  #
+  # Error: configmaps "aws-auth" is forbidden: User "system:anonymous" cannot get resource "configmaps" in API group "" in the namespace "kube-system"
+  #
   load_config_file       = false
   version                = "~> 1.5"
 }
