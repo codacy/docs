@@ -17,7 +17,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 -   Now, the [Repository Dashboard](https://docs.codacy.com/v3.4/repositories/repository-dashboard/) and [Issues page](https://docs.codacy.com/v3.4/repositories/issues/) include links to the corresponding documentation to help you make the most from the code quality information provided by Codacy and to assist you in configuring your repository settings. (CY-3303)
 -   Now, Codacy has an improved user experience to manage people in organizations. (CY-2954)
 -   Now, the Repositories list automatically suggests repositories that you haven't added to Codacy yet when you [search for a repository](https://docs.codacy.com/v3.4/organizations/managing-repositories/#adding-a-repository). (CY-2363)
--   Codacy Self-hosted now [supports MicroK8s version 1.20.\*](https://docs.codacy.com/v3.4/chart/requirements.md#kubernetes-or-microk8s-cluster-setup).
+-   Codacy Self-hosted now [supports MicroK8s version 1.20.\*](https://docs.codacy.com/v3.4/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
 
 ## Bug fixes
 
