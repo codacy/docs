@@ -1,18 +1,8 @@
 # Self-hosted v3.4.0
 
-These release notes are for [Codacy Self-hosted v3.4.0](https://github.com/codacy/chart/releases/tag/3.4.0){: target="_blank"}, released on March <!-- TODO Add release date -->, 2021.
+These release notes are for [Codacy Self-hosted v3.4.0](https://github.com/codacy/chart/releases/tag/3.4.0){: target="_blank"}, released on March 12, 2021.
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
-
-<!-- NOTE Issues without release notes:
-
-## Product enhancements
-
--   CY-3822: [RPP] Disable patterns for all Providers, don't announce yet (not released)
--   CY-3581: [RPP] Ignore issues for Missing Providers, don't announce yet
--   CY-3560: Commit Statistics API, don't announce yet (not released)
-
--->
 
 ## Product enhancements
 
