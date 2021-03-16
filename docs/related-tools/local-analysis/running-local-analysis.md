@@ -35,4 +35,4 @@ Some flags you might be interested in:
 
 If you have ignored issues on Codacy be aware that the CLI won't respect those ignored issues when printing the results locally.
 
-When uploading results for Codacy Self-hosted the ignored issues will be reflected on Codacy after the analysis is complete.
+However, if you upload the results, the ignored issues will be reflected on the Codacy UI after the analysis is complete.
