@@ -52,7 +52,7 @@ Use the options in the cogwheel menu of each issue to:
 
 -   **Ignore the issue** and hide it from the list.
 
-    For example, you can ignore issues that you disagree with because:
+    Codacy will no longer report the issue after the next analysis of your repository. For example, you can ignore issues that you disagree with because:
 
     -   Your team won't tackle the issues in the immediate future
     -   The issue isn't relevant in the specific context of your code
@@ -65,7 +65,7 @@ Use the options in the cogwheel menu of each issue to:
 
 -   **Disable the code pattern** that detected the issue.
 
-    Codacy will stop using that pattern in the next analysis of your repository, so be sure that you're no longer interested in identifying similar issues. To re-enable patterns use the [Code patterns page](../repositories-configure/code-patterns.md).
+    Codacy will stop using that pattern after the next analysis of your repository, so be sure that you're no longer interested in identifying similar issues. To re-enable patterns use the [Code patterns page](../repositories-configure/code-patterns.md).
 
     !!! note
         If you're using a [custom configuration file](../repositories-configure/code-patterns.md#using-your-own-tool-configuration-files), you must manage patterns manually on your configuration file.
