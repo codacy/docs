@@ -43,7 +43,7 @@ The table below lists all programming languages that Codacy supports and the cor
     </tr>
     <tr>
       <td>C</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>*</sup></a>,
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
       <td></td>
@@ -59,7 +59,7 @@ The table below lists all programming languages that Codacy supports and the cor
     </tr>
     <tr>
       <td>C++</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>*</sup></a>,
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
       <td></td>
@@ -104,11 +104,11 @@ The table below lists all programming languages that Codacy supports and the cor
     </tr>
     <tr>
       <td>Go</td>
-      <td><a href="https://gitlab.com/opennota/check">aligncheck</a><a href="#client-side"><sup>*</sup></a>,
-          <a href="https://github.com/tsenart/deadcode">deadcode</a><a href="#client-side"><sup>*</sup></a>,
-          <a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"><sup>*</sup></a>,
+      <td><a href="https://gitlab.com/opennota/check">aligncheck</a><a href="#client-side"><sup>1</sup></a>,
+          <a href="https://github.com/tsenart/deadcode">deadcode</a><a href="#client-side"><sup>1</sup></a>,
+          <a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"><sup>1</sup></a>,
           <a href="https://github.com/mgechev/revive">Revive</a>,
-          <a href="https://staticcheck.io/">Staticcheck</a><a href="#client-side"><sup>*</sup></a></td>
+          <a href="https://staticcheck.io/">Staticcheck</a><a href="#client-side"><sup>1</sup></a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a></td>
@@ -124,7 +124,7 @@ The table below lists all programming languages that Codacy supports and the cor
       <td>Java</td>
       <td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a>,
           <a href="https://pmd.github.io/">PMD</a>,
-          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>*</sup></a></td>
+          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>1</sup></a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
@@ -175,7 +175,7 @@ The table below lists all programming languages that Codacy supports and the cor
     </tr>
     <tr>
       <td>Objective-C</td>
-      <td><a href="http://fauxpasapp.com/">Faux Pas</a><a href="#client-side"><sup>*</sup></a></td>
+      <td><a href="http://fauxpasapp.com/">Faux Pas</a><a href="#client-side"><sup>1</sup></a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
@@ -241,7 +241,7 @@ The table below lists all programming languages that Codacy supports and the cor
       </td>
       <td><a href="https://scalameta.org/">Scalameta</a>,
           <a href="http://www.scalastyle.org/">Scalastyle</a>,
-          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>*</sup></a></td>
+          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>1</sup></a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
@@ -260,7 +260,7 @@ The table below lists all programming languages that Codacy supports and the cor
           <a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
-      <td>-</td>
+      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#swiftlint-complexity"><sup>2</sup></a></td>
     </tr>
     <tr>
       <td>Transact-SQL</td>
@@ -315,11 +315,9 @@ The table below lists all programming languages that Codacy supports and the cor
   </tbody>
 </table>
 
-<sup>*</sup>: Supported as a [client-side tool](../related-tools/local-analysis/client-side-tools.md).
-{: id="client-side"}
-
-🔧: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
-{: id="suggested-fixes"}
+<span id="client-side">1</span>: Supported as a [client-side tool](../related-tools/local-analysis/client-side-tools.md).  
+<span id="swiftlint-complexity">2</span>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html){: target="_blank"} on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code Patterns page](../repositories-configure/code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration){: target="_blank"} to customize the thresholds.  
+<span id="suggested-fixes">🔧</span>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
 
 ## See also
 
