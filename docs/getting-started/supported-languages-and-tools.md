@@ -260,7 +260,7 @@ The table below lists all programming languages that Codacy supports and the cor
           <a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
-      <td>-</td>
+      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#swiftlint-complexity"><sup>2</sup></a></td>
     </tr>
     <tr>
       <td>Transact-SQL</td>
@@ -316,6 +316,7 @@ The table below lists all programming languages that Codacy supports and the cor
 </table>
 
 <span id="client-side">1</span>: Supported as a [client-side tool](../related-tools/local-analysis/client-side-tools.md).  
+<span id="swiftlint-complexity">2</span>: Reports issues for complex functions if you enable the rule [Cyclomatic Complexity](https://realm.github.io/SwiftLint/cyclomatic_complexity.html){: target="_blank"} on the [Code Patterns page](../repositories-configure/code-patterns.md).  
 <span id="suggested-fixes">🔧</span>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
 
 ## See also
