@@ -316,7 +316,7 @@ The table below lists all programming languages that Codacy supports and the cor
 </table>
 
 <span id="client-side">1</span>: Supported as a [client-side tool](../related-tools/local-analysis/client-side-tools.md).  
-<span id="swiftlint-complexity">2</span>: Reports issues for complex functions if you enable the rule [Cyclomatic Complexity](https://realm.github.io/SwiftLint/cyclomatic_complexity.html){: target="_blank"} on the [Code Patterns page](../repositories-configure/code-patterns.md).  
+<span id="swiftlint-complexity">2</span>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html){: target="_blank"} on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code Patterns page](../repositories-configure/code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration){: target="_blank"} to customize the thresholds.  
 <span id="suggested-fixes">🔧</span>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
 
 ## See also
