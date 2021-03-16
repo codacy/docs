@@ -58,6 +58,8 @@ Use the options in the cogwheel menu of each issue to:
     -   The issue isn't relevant in the specific context of your code
     -   The issue is a false positive
 
+    See [how to restore ignored issues](#restoring-ignored-issues).
+
     !!! tip
         Organization owners can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-synced-organizations.md#configure-ignore-issues).
 
