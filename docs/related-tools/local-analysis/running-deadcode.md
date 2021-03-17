@@ -8,7 +8,7 @@ To run deadcode as a [client-side tool](client-side-tools.md):
 
     ![Run analysis through build server](images/run-analysis-through-build-server.png)
 
-1.  Obtain a [project API Token](../codacy-api-tokens.md) <!-- TODO Update link --> for your repository.
+1.  Obtain a [project API token](../codacy-api-tokens.md#project-api-tokens) for your repository.
 
     You need the project API Token to allow the Codacy Analysis CLI to authenticate to Codacy when reporting the analysis results.
 
