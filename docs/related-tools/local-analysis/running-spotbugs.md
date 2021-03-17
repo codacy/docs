@@ -10,12 +10,12 @@ To run SpotBugs as a [client-side tool](client-side-tools.md):
 
 1.  Obtain a [project API token](../codacy-api-tokens.md#project-api-tokens) for your repository.
 
-    You need the project API Token to allow the Codacy Analysis CLI to authenticate to Codacy when reporting the analysis results.
+    You need the project API token to allow the Codacy Analysis CLI to authenticate to Codacy when reporting the analysis results.
 
-1.  Set the following environment variable to specify your project API Token:
+1.  Set the following environment variable to specify your project API token:
 
     ```bash
-    export CODACY_PROJECT_TOKEN=<your project API Token>
+    export CODACY_PROJECT_TOKEN=<your project API token>
     ```
 
     {% include "../../assets/includes/api-token-warning.txt" %}
