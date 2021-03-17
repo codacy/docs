@@ -12,7 +12,7 @@ To send coverage results for your repository or to limit the API access to a rep
 
 To generate a Codacy API token, open your account, tab **Access management**, and click the button **Create API token**.
 
-![Creating an API token](images/api-tokens.png)
+![Creating an API token](images/codacy-api-tokens-account.png)
 
 To revoke access to the Codacy API, you must remove the corresponding Codacy API token from the list. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the following error reply:
 
@@ -31,7 +31,7 @@ To generate an API token:
 
 1.  Click the button **Settings** for the project API integration to copy the new API token.
 
-    ![Project API token](images/project-api-token.png)
+    ![Project API token](images/codacy-api-tokens-project.png)
 
 To revoke an API token, clicking the trash can icon to remove the **Project API** integration.
 
