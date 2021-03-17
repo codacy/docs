@@ -1,10 +1,16 @@
 # Codacy API tokens
 
-Codacy API tokens allow you to authenticate when using the Codacy API. You must generate a Codacy API token and include it in the headers of your API calls as described on the [Codacy API documentation](https://api.codacy.com/api/api-docs#authentication).
+API tokens allow you to authenticate when using the Codacy API by including them in the headers of your API calls. See how to authenticate using the Codacy [API v2](https://api.codacy.com/swagger#authentication) and [API v3](https://api.codacy.com/api/api-docs#authentication).
 
-The Codacy API offers specific methods to manipulate repositories. To use these API methods, run local analysis, or send coverage results for your repository, you must use a project API token generated specifically for your repository. Each project API token is only valid for one repository.
+You also need an API token when [uploading coverage data to Codacy](../coverage-reporter/index.md) or [uploading the results of running local analysis](local-analysis/running-local-analysis.md).
 
-To send coverage results for your repository or to limit the API access to a repository, use a [project API token](#).
+Codacy provides two types of API tokens:
+
+-   **Account API tokens** are defined at the Codacy user account level. Each account API token authorizes access to the same organizations and repositories as the owner of the account.
+
+-   **Project API tokens** are defined on individual repositories. Each project API token only authorizes access to the corresponding repository.
+
+The sections below provide detailed instructions on how to generate and revoke API tokens.
 
 {% include "../assets/includes/api-token-warning.txt" %}
 
