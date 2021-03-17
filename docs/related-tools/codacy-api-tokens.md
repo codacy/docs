@@ -1,30 +1,30 @@
-# Codacy API Tokens
+# Codacy API tokens
 
-Codacy API Tokens allow you to authenticate when using the Codacy API. You must generate a Codacy API Token and include it in the headers of your API calls as described on the [Codacy API documentation](https://api.codacy.com/api/api-docs#authentication).
+Codacy API tokens allow you to authenticate when using the Codacy API. You must generate a Codacy API token and include it in the headers of your API calls as described on the [Codacy API documentation](https://api.codacy.com/api/api-docs#authentication).
 
 {% include "../assets/includes/api-token-warning.txt" %}
 
-To generate a Codacy API Token, open your account, tab **Access management**, and click the button **Create API token**.
+To generate a Codacy API token, open your account, tab **Access management**, and click the button **Create API token**.
 
 ![Creating an API token](images/api-tokens.png)
 
-To revoke access to the Codacy API, you must remove the corresponding Codacy API Token from the list. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the following error reply:
+To revoke access to the Codacy API, you must remove the corresponding Codacy API token from the list. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the following error reply:
 
 ```text
 {"error":"not found"}
 ```
 
 !!! tip
-    You can create multiple Codacy API Tokens. This can be useful to have a more flexible control by revoking only a specific token.
+    You can create multiple Codacy API tokens. This can be useful to have a more flexible control by revoking only a specific token.
 
 ## See also
 
-To send coverage results for your repository or to limit the API access to a repository, use a [project API Token](#).
+To send coverage results for your repository or to limit the API access to a repository, use a [project API token](#).
 
 
 # Project API
 
-The Codacy API offers specific methods to manipulate repositories. To use these API methods, run local analysis, or send coverage results for your repository, you must use a project API Token generated specifically for your repository. Each project API Token is only valid for one repository.
+The Codacy API offers specific methods to manipulate repositories. To use these API methods, run local analysis, or send coverage results for your repository, you must use a project API token generated specifically for your repository. Each project API token is only valid for one repository.
 
 {% include "../assets/includes/api-token-warning.txt" %}
 
@@ -32,14 +32,14 @@ To generate an API token:
 
 1.  Open your repository **Settings**, tab **Integrations**, click the button **Add integration**, and add a **Project API** integration.
 
-1.  Click the button **Settings** for the project API integration to copy the new API Token.
+1.  Click the button **Settings** for the project API integration to copy the new API token.
 
-    ![Project API Token](images/project-api-token.png)
+    ![Project API token](images/project-api-token.png)
 
-To revoke an API Token, clicking the trash can icon to remove the **Project API** integration.
+To revoke an API token, clicking the trash can icon to remove the **Project API** integration.
 
 !!! tip
-    You can create multiple Codacy API Tokens. This can be useful to have a more flexible control by revoking only a specific token.
+    You can create multiple Codacy API tokens. This can be useful to have a more flexible control by revoking only a specific token.
 
 ## See also
 
