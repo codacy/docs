@@ -139,8 +139,8 @@ plugins:
               "hc/en-us/articles/207994395.md": "repositories-configure/file-extensions.md"
               "hc/en-us/articles/207994395-File-Extensions.md": "repositories-configure/file-extensions.md"
               "hc/en-us/articles/207994395-Language-Extensions.md": "repositories-configure/file-extensions.md"
-              "hc/en-us/articles/207994675.md": "repositories-configure/integrations/project-api.md"
-              "hc/en-us/articles/207994675-Project-API.md": "repositories-configure/integrations/project-api.md"
+              "hc/en-us/articles/207994675.md": "related-tools/codacy-api-tokens.md"
+              "hc/en-us/articles/207994675-Project-API.md": "related-tools/codacy-api-tokens.md"
               "hc/en-us/articles/207994725.md": "related-tools/codacy-plugin-tools.md"
               "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "related-tools/codacy-plugin-tools.md"
               "hc/en-us/articles/207994735.md": "getting-started/supported-languages-and-tools.md"
@@ -504,6 +504,7 @@ plugins:
               "coverage-reporter/generating-coverage-reports.md": "coverage-reporter/index.md"
               "coverage-reporter/adding-coverage-to-your-repository.md": "coverage-reporter/index.md"
               "faq/code-analysis/error-line-endings.md": "faq/troubleshooting/error-line-endings.md"
+              "repositories-configure/integrations/project-api.md": "related-tools/codacy-api-tokens.md"
 
 nav:
     - Documentation home: "index.md"
@@ -527,7 +528,6 @@ nav:
                 - repositories-configure/integrations/bitbucket-integration.md
                 - repositories-configure/integrations/slack-integration.md
                 - repositories-configure/integrations/jira-integration.md
-                - repositories-configure/integrations/project-api.md
                 - repositories-configure/integrations/webhook-notifications.md
                 - repositories-configure/integrations/post-commit-hooks.md
           - repositories-configure/ignoring-files.md
