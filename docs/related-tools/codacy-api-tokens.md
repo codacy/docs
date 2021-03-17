@@ -10,33 +10,35 @@ To send coverage results for your repository or to limit the API access to a rep
 
 ## Account API tokens
 
-To generate a Codacy API token, open your account, tab **Access management**, and click the button **Create API token**.
+To generate an account API token:
+
+1.  Open your account, tab **Access management**.
+
+1.  Click the button **Create API token**:
 
 ![Creating an API token](images/codacy-api-tokens-account.png)
 
-To revoke access to the Codacy API, you must remove the corresponding Codacy API token from the list. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the following error reply:
-
-```text
-{"error":"not found"}
-```
+To revoke an account API token, click the cross next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
 
 !!! tip
-    You can create multiple Codacy API tokens. This can be useful to have a more flexible control by revoking only a specific token.
+    You can create multiple account API tokens. This can be useful to have a more flexible control by revoking only a specific token.
 
 ## Project API tokens
 
-To generate an API token:
+To generate a project API token:
 
-1.  Open your repository **Settings**, tab **Integrations**, click the button **Add integration**, and add a **Project API** integration.
+1.  Open your repository **Settings**, tab **Integrations**.
 
-1.  Click the button **Settings** for the project API integration to copy the new API token.
+1.  Click the button **Add integration** and add a **Project API** integration.
+
+1.  Click the button **Settings** on the **Project API** integration and copy the project API token.
 
     ![Project API token](images/codacy-api-tokens-project.png)
 
-To revoke an API token, clicking the trash can icon to remove the **Project API** integration.
+To revoke a project API token, click the trash can icon for the corresponding **Project API** integration. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
 
 !!! tip
-    You can create multiple Codacy API tokens. This can be useful to have a more flexible control by revoking only a specific token.
+    You can create multiple project API tokens. This can be useful to have a more flexible control by revoking only a specific token.
 
 ## See also
 
