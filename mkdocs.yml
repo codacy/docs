@@ -561,7 +561,10 @@ nav:
                 - related-tools/local-analysis/running-aligncheck.md
                 - related-tools/local-analysis/running-deadcode.md
                 - related-tools/local-analysis/running-spotbugs.md
-          - related-tools/codacy-api-tokens.md
+          - Codacy API:
+                - related-tools/codacy-api/codacy-api-overview.md
+                - related-tools/codacy-api-tokens.md
+                - faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md
           - related-tools/codacy-plugin-tools.md
     - Installing Codacy: "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
@@ -583,7 +586,6 @@ nav:
                 - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md
                 - faq/repositories/how-do-i-manually-force-a-repository-update.md
                 - faq/repositories/how-do-i-reanalyze-my-repository.md
-                - faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md
                 - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
                 - faq/repositories/i-moved-my-repository-on-the-git-provider.md
                 - faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md
