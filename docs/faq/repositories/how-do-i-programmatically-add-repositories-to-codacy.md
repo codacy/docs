@@ -16,7 +16,7 @@ curl -X POST https://app.codacy.com/api/v3/repositories \
 
 Substitute the placeholders with your own values:
 
--   **API_KEY:** [Account API token](../../related-tools/codacy-api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
+-   **API_KEY:** [Account API token](../../related-tools/codacy-api/api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
 -   **GIT_PROVIDER:** Git provider hosting the repository, using one of the values in the table below. For example, `gh` for GitHub Cloud.
 
     | Value | Git provider         |
@@ -52,7 +52,7 @@ We provide an example Bash script that adds all repositories in a GitHub Cloud o
 
 The example script:
 
-1.  Defines a GitHub [personal access token](https://github.com/settings/tokens){: target="_blank"}, the GitHub organization name, and an [account API token](../../related-tools/codacy-api-tokens.md#account-api-tokens).
+1.  Defines a GitHub [personal access token](https://github.com/settings/tokens){: target="_blank"}, the GitHub organization name, and an [account API token](../../related-tools/codacy-api/api-tokens.md#account-api-tokens).
 1.  Calls the GitHub API to [obtain the list of all repositories](https://docs.github.com/en/rest/reference/repos#list-organization-repositories){: target="_blank"} in the defined organization.
 1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to return the value of `full_name` for each repository obtained in the JSON response. The `full_name` already includes the organization and repository names using the format `<organization>/<repository>`.
 1.  For each repository, calls the Codacy API endpoint to add a new repository specifying `gh` as the Git provider and the value of `full_name` as the full path of the repository.

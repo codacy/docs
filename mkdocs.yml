@@ -73,8 +73,8 @@ plugins:
               "hc.md": "index.md"
               "hc/en-us.md": "index.md"
               "hc/en-us/requests/new.md": "https://codacy.zendesk.com/hc/en-us/requests/new"
-              "hc/en-us/articles/115000255385.md": "related-tools/codacy-api-tokens.md"
-              "hc/en-us/articles/115000255385-API-Tokens.md": "related-tools/codacy-api-tokens.md"
+              "hc/en-us/articles/115000255385.md": "related-tools/codacy-api/api-tokens.md"
+              "hc/en-us/articles/115000255385-API-Tokens.md": "related-tools/codacy-api/api-tokens.md"
               "hc/en-us/articles/115000282129.md": "faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md"
               "hc/en-us/articles/115000282129-Why-can-t-I-configure-post-commit-hooks-and-integrations-.md": "faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md"
               "hc/en-us/articles/115000488285.md": "repositories-configure/integrations/slack-integration.md"
@@ -139,8 +139,8 @@ plugins:
               "hc/en-us/articles/207994395.md": "repositories-configure/file-extensions.md"
               "hc/en-us/articles/207994395-File-Extensions.md": "repositories-configure/file-extensions.md"
               "hc/en-us/articles/207994395-Language-Extensions.md": "repositories-configure/file-extensions.md"
-              "hc/en-us/articles/207994675.md": "related-tools/codacy-api-tokens.md"
-              "hc/en-us/articles/207994675-Project-API.md": "related-tools/codacy-api-tokens.md"
+              "hc/en-us/articles/207994675.md": "related-tools/codacy-api/api-tokens.md"
+              "hc/en-us/articles/207994675-Project-API.md": "related-tools/codacy-api/api-tokens.md"
               "hc/en-us/articles/207994725.md": "related-tools/codacy-plugin-tools.md"
               "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "related-tools/codacy-plugin-tools.md"
               "hc/en-us/articles/207994735.md": "getting-started/supported-languages-and-tools.md"
@@ -483,7 +483,7 @@ plugins:
               "repositories-configure/php_codesniffer-specifying-your-php-version.md": "repositories-configure/codacy-configuration-file.md"
               "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
               "getting-started/i-added-a-repository-now-what.md": "getting-started/getting-started-with-codacy.md"
-              "related-tools/api-tokens.md": "related-tools/codacy-api-tokens.md"
+              "related-tools/api-tokens.md": "related-tools/codacy-api/api-tokens.md"
               "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md"
               "related-tools/running-local-analysis.md": "related-tools/local-analysis/running-local-analysis.md"
               "related-tools/run-local-analysis.md": "related-tools/local-analysis/running-local-analysis.md"
@@ -504,7 +504,7 @@ plugins:
               "coverage-reporter/generating-coverage-reports.md": "coverage-reporter/index.md"
               "coverage-reporter/adding-coverage-to-your-repository.md": "coverage-reporter/index.md"
               "faq/code-analysis/error-line-endings.md": "faq/troubleshooting/error-line-endings.md"
-              "repositories-configure/integrations/project-api.md": "related-tools/codacy-api-tokens.md"
+              "repositories-configure/integrations/project-api.md": "related-tools/codacy-api/api-tokens.md"
 
 nav:
     - Documentation home: "index.md"
@@ -563,7 +563,7 @@ nav:
                 - related-tools/local-analysis/running-spotbugs.md
           - Codacy API:
                 - related-tools/codacy-api/codacy-api-overview.md
-                - related-tools/codacy-api-tokens.md
+                - related-tools/codacy-api/api-tokens.md
                 - faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md
           - related-tools/codacy-plugin-tools.md
     - Installing Codacy: "!include submodules/chart/mkdocs.yml"
