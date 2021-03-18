@@ -460,18 +460,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../repositories-configure/integrations/project-api/" title="Project API" class="md-nav__link">
-      Project API
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../../repositories-configure/integrations/webhook-notifications/" title="Webhook notifications" class="md-nav__link">
       Webhook notifications
     </a>
@@ -1005,8 +993,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../related-tools/codacy-api-tokens/" title="Codacy API Tokens" class="md-nav__link">
-      Codacy API Tokens
+    <a href="../../../related-tools/codacy-api-tokens/" title="Codacy API tokens" class="md-nav__link">
+      Codacy API tokens
     </a>
   </li>
 
@@ -2586,7 +2574,7 @@
 </code></pre></div>
 <p>Substitute the placeholders with your own values:</p>
 <ul>
-<li><strong>API_KEY:</strong> <a href="../../../related-tools/codacy-api-tokens/">API token</a> used to authenticate on the Codacy API.</li>
+<li><strong>API_KEY:</strong> <a href="../../../related-tools/codacy-api-tokens/#account-api-tokens">Account API token</a> used to authenticate on the Codacy API.</li>
 <li>
 <p><strong>GIT_PROVIDER:</strong> Git provider hosting the repository, using one of the values in the table below. For example, <code>gh</code> for GitHub Cloud.</p>
 <table>
@@ -2664,7 +2652,7 @@
 </div>
 <p>The example script:</p>
 <ol>
-<li>Defines a GitHub <a href="https://github.com/settings/tokens" target="_blank">personal access token</a>, the GitHub organization name, and a <a href="../../../related-tools/codacy-api-tokens/">Codacy API token</a>.</li>
+<li>Defines a GitHub <a href="https://github.com/settings/tokens" target="_blank">personal access token</a>, the GitHub organization name, and an <a href="../../../related-tools/codacy-api-tokens/#account-api-tokens">account API token</a>.</li>
 <li>Calls the GitHub API to <a href="https://docs.github.com/en/rest/reference/repos#list-organization-repositories" target="_blank">obtain the list of all repositories</a> in the defined organization.</li>
 <li>Uses <a href="https://github.com/stedolan/jq" target="_blank">jq</a> to return the value of <code>full_name</code> for each repository obtained in the JSON response. The <code>full_name</code> already includes the organization and repository names using the format <code>&lt;organization&gt;/&lt;repository&gt;</code>.</li>
 <li>For each repository, calls the Codacy API endpoint to add a new repository specifying <code>gh</code> as the Git provider and the value of <code>full_name</code> as the full path of the repository.</li>
@@ -2779,7 +2767,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 26, 2020</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 18, 2021</span>
     
   </small>
 </div>
