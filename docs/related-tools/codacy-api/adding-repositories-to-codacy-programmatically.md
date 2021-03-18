@@ -1,4 +1,4 @@
-# How do I programmatically add repositories to Codacy?
+# Adding repositories to Codacy programmatically
 
 There are scenarios where manually adding Git repositories on the Codacy UI is inconvenient or time-consuming. For example:
 

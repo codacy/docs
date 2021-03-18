@@ -505,6 +505,7 @@ plugins:
               "coverage-reporter/adding-coverage-to-your-repository.md": "coverage-reporter/index.md"
               "faq/code-analysis/error-line-endings.md": "faq/troubleshooting/error-line-endings.md"
               "repositories-configure/integrations/project-api.md": "related-tools/codacy-api/api-tokens.md"
+              "faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md": "related-tools/codacy-api/adding-repositories-to-codacy-programmatically.md"
 
 nav:
     - Documentation home: "index.md"
@@ -564,7 +565,7 @@ nav:
           - Codacy API:
                 - related-tools/codacy-api/codacy-api-overview.md
                 - related-tools/codacy-api/api-tokens.md
-                - faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md
+                - related-tools/codacy-api/adding-repositories-to-codacy-programmatically.md
           - related-tools/codacy-plugin-tools.md
     - Installing Codacy: "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
