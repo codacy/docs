@@ -11,7 +11,7 @@ The CR line end control character was used by older Classic Mac OS systems, and 
 1.  Find the files in your repository that include CR line endings.
 
     !!! tip
-        On *nix operating systems, including macOS, you can use the utility `file` to detect files in your repository that use CR line endings. For example, run the following command on the root of your repository:
+        On *nix operating systems including macOS, you can use the command `file` to detect files in your repository that use CR line endings. For example, run the following command on the root of your repository:
 
         ```bash
         find . -type f -exec file {} \; | grep "CR line"
