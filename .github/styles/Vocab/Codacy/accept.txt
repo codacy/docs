@@ -6,6 +6,7 @@ Bitnami
 Brakeman
 Bundler
 Checkstyle
+Checkov
 Clang-Tidy
 cloc
 Cobertura
