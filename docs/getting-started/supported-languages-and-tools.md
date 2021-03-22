@@ -43,14 +43,14 @@ The table below lists all programming languages that Codacy supports and the cor
     </tr>
     <tr>
       <td>AWS Cloud​Formation</td>
-      <td><a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>Azure Resource Manager Templates</td>
-      <td><a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
@@ -175,7 +175,7 @@ The table below lists all programming languages that Codacy supports and the cor
     </tr>
     <tr>
       <td>Kubernetes</td>
-      <td><a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
@@ -270,7 +270,7 @@ The table below lists all programming languages that Codacy supports and the cor
     </tr>
     <tr>
       <td>Serverless Framework</td>
-      <td><a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
@@ -292,7 +292,7 @@ The table below lists all programming languages that Codacy supports and the cor
     </tr>
     <tr>
       <td>Terraform</td>
-      <td><a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
