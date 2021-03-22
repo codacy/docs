@@ -140,8 +140,7 @@ The table below lists all programming languages that Codacy supports and the cor
     </tr>
     <tr>
       <td>JSON</td>
-      <td><a href="https://github.com/codacy/codacy-jackson-linter">Jackson Linter</a>,
-          <a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
+      <td><a href="https://github.com/codacy/codacy-jackson-linter">Jackson Linter</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
@@ -316,13 +315,6 @@ The table below lists all programming languages that Codacy supports and the cor
     <tr>
       <td>XSL</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td></td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>YAML</td>
-      <td><a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
