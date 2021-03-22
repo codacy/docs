@@ -42,6 +42,20 @@ The table below lists all programming languages that Codacy supports and the cor
       <td>-</td>
     </tr>
     <tr>
+      <td>AWS Cloud​Formation</td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Azure Resource Manager Templates</td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>C</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
@@ -140,8 +154,7 @@ The table below lists all programming languages that Codacy supports and the cor
     </tr>
     <tr>
       <td>JSON</td>
-      <td><a href="https://github.com/codacy/codacy-jackson-linter">Jackson Linter</a>,
-          <a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
+      <td><a href="https://github.com/codacy/codacy-jackson-linter">Jackson Linter</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
@@ -159,6 +172,13 @@ The table below lists all programming languages that Codacy supports and the cor
       <td></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/detekt/detekt">Detekt</a></td>
+    </tr>
+    <tr>
+      <td>Kubernetes</td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Less</td>
@@ -249,6 +269,13 @@ The table below lists all programming languages that Codacy supports and the cor
           <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a></td>
     </tr>
     <tr>
+      <td>Serverless Framework</td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>Shell</td>
       <td><a href="https://www.shellcheck.net/">ShellCheck</a></td>
       <td></td>
@@ -265,7 +292,7 @@ The table below lists all programming languages that Codacy supports and the cor
     </tr>
     <tr>
       <td>Terraform</td>
-      <td><a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
@@ -316,13 +343,6 @@ The table below lists all programming languages that Codacy supports and the cor
     <tr>
       <td>XSL</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td></td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>YAML</td>
-      <td><a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
