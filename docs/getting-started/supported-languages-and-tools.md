@@ -42,6 +42,20 @@ The table below lists all programming languages that Codacy supports and the cor
       <td>-</td>
     </tr>
     <tr>
+      <td>AWS Cloud​Formation</td>
+      <td><a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Azure Resource Manager Templates</td>
+      <td><a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>C</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
@@ -160,6 +174,13 @@ The table below lists all programming languages that Codacy supports and the cor
       <td><a href="https://github.com/detekt/detekt">Detekt</a></td>
     </tr>
     <tr>
+      <td>Kubernetes</td>
+      <td><a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>Less</td>
       <td><a href="https://stylelint.io/">Stylelint</a></td>
       <td></td>
@@ -246,6 +267,13 @@ The table below lists all programming languages that Codacy supports and the cor
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
           <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a></td>
+    </tr>
+    <tr>
+      <td>Serverless Framework</td>
+      <td><a href="https://github.com/codacy/codacy-checkov">Checkov</a></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Shell</td>
