@@ -44,6 +44,10 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-checkstyle" class="skip-vale">codacy/codacy-checkstyle</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
+<td><a href="https://github.com/codacy/codacy-checkov" class="skip-vale">codacy/codacy-checkov</a></td>
+</tr>
+<tr>
 <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
 <td><a href="https://github.com/codacy/codacy-clang-tidy" class="skip-vale">codacy/codacy-clang-tidy</a></td>
 </tr>
