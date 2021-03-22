@@ -563,7 +563,7 @@ nav:
                 - related-tools/local-analysis/running-deadcode.md
                 - related-tools/local-analysis/running-spotbugs.md
           - Codacy API:
-                - related-tools/codacy-api/codacy-api-overview.md
+                - related-tools/codacy-api/using-the-codacy-api.md
                 - related-tools/codacy-api/api-tokens.md
                 - related-tools/codacy-api/adding-repositories-to-codacy-programmatically.md
           - related-tools/codacy-plugin-tools.md
