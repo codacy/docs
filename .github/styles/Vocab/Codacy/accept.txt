@@ -5,8 +5,8 @@ Bitbucket
 Bitnami
 Brakeman
 Bundler
-Checkstyle
 Checkov
+Checkstyle
 Clang-Tidy
 cloc
 Cobertura
@@ -52,6 +52,7 @@ sbt
 Scalameta
 Scalastyle
 SCSSLint
+Serverless
 ShellCheck
 signup
 SonarC#
