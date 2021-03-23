@@ -1,4 +1,4 @@
-# Code Standards
+# How to configure PHP_CodeSniffer code standards?
 
 You can use configuration files to enforce code standards.
 
@@ -6,4 +6,4 @@ You can use configuration files to enforce code standards.
 | -------- | ------------- | ---- |
 | PHP      | PSR1 and PSR2 |      |
 
-Learn more about [Setting up configuration files in your repository](code-patterns.md).
+Learn more about [Setting up configuration files in your repository](../../repositories-configure/code-patterns.md).
