@@ -30,7 +30,7 @@ strict: true
 
 # Extra variables
 extra:
-    version: "3.3.0"
+    version: "3.4.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
@@ -92,8 +92,8 @@ plugins:
               "hc/en-us/articles/115001959985-Why-do-i-get-a-Not-a-member-of-the-organization-message-.md": "faq/troubleshooting/not-a-member-of-the-organization.md"
               "hc/en-us/articles/115002130625.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/115002130625-Codacy-Configuration-File.md": "repositories-configure/codacy-configuration-file.md"
-              "hc/en-us/articles/115002330985.md": "repositories-configure/specifying-your-python-version.md"
-              "hc/en-us/articles/115002330985-Specifying-your-Python-version.md": "repositories-configure/specifying-your-python-version.md"
+              "hc/en-us/articles/115002330985.md": "repositories-configure/codacy-configuration-file.md"
+              "hc/en-us/articles/115002330985-Specifying-your-Python-version.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/115002492425.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
               "hc/en-us/articles/115002492425-NodeSecurity-Dependencies-Inspection.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
               "hc/en-us/articles/115003405529.md": "getting-started/which-permissions-does-codacy-need-from-my-account.md"
@@ -139,8 +139,8 @@ plugins:
               "hc/en-us/articles/207994395.md": "repositories-configure/file-extensions.md"
               "hc/en-us/articles/207994395-File-Extensions.md": "repositories-configure/file-extensions.md"
               "hc/en-us/articles/207994395-Language-Extensions.md": "repositories-configure/file-extensions.md"
-              "hc/en-us/articles/207994675.md": "repositories-configure/integrations/project-api.md"
-              "hc/en-us/articles/207994675-Project-API.md": "repositories-configure/integrations/project-api.md"
+              "hc/en-us/articles/207994675.md": "related-tools/codacy-api-tokens.md"
+              "hc/en-us/articles/207994675-Project-API.md": "related-tools/codacy-api-tokens.md"
               "hc/en-us/articles/207994725.md": "related-tools/codacy-plugin-tools.md"
               "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "related-tools/codacy-plugin-tools.md"
               "hc/en-us/articles/207994735.md": "getting-started/supported-languages-and-tools.md"
@@ -201,8 +201,8 @@ plugins:
               "hc/en-us/articles/214377225-Does-Codacy-automatically-analyse-all-pull-requests-.md": "repositories-configure/managing-branches.md"
               "hc/en-us/sections/360000605573-Self-hosted-Release-Notes.md": "release-notes/index.md"
               "hc/en-us/sections/360000605573.md": "release-notes/index.md"
-              "hc/en-us/articles/360001207234.md": "repositories-configure/specifying-language.md"
-              "hc/en-us/articles/360001207234-Specifying-language.md": "repositories-configure/specifying-language.md"
+              "hc/en-us/articles/360001207234.md": "repositories-configure/codacy-configuration-file.md"
+              "hc/en-us/articles/360001207234-Specifying-language.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/categories/360001313954-Getting-Started.md": "getting-started/getting-started-with-codacy.md"
               "hc/en-us/sections/360001555694.md": "release-notes/index.md"
               "hc/en-us/sections/360001555694-Product-updates.md": "release-notes/index.md"
@@ -228,8 +228,8 @@ plugins:
               "hc/en-us/articles/360005239394-using-submodules.md": "repositories-configure/using-submodules.md"
               "hc/en-us/articles/360005839053.md": "faq/code-analysis/skipping-an-analysis.md"
               "hc/en-us/articles/360005839053-Skipping-an-analysis.md": "faq/code-analysis/skipping-an-analysis.md"
-              "hc/en-us/articles/360006036934.md": "repositories-configure/specifying-your-php-version.md"
-              "hc/en-us/articles/360006036934-PHP-CodeSniffer-Specifying-your-PHP-version.md": "repositories-configure/specifying-your-php-version.md"
+              "hc/en-us/articles/360006036934.md": "repositories-configure/codacy-configuration-file.md"
+              "hc/en-us/articles/360006036934-PHP-CodeSniffer-Specifying-your-PHP-version.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/360006718454.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
               "hc/en-us/articles/360006718454-Share-your-repository-with-a-non-Codacy-user.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
               "hc/en-us/articles/360006718454-Share-your-project-with-a-non-Codacy-user.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
@@ -447,6 +447,9 @@ plugins:
               "organizations/adding-and-managing-authors.md": "organizations/managing-people.md"
               "organizations/authors-vs-members.md": "organizations/managing-people.md"
               "organizations/configuring-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-synced-organizations.md"
+              "repositories-configure/specifying-language.md": "repositories-configure/codacy-configuration-file.md"
+              "repositories-configure/specifying-your-python-version.md": "repositories-configure/codacy-configuration-file.md"
+              "repositories-configure/specifying-your-php-version.md": "repositories-configure/codacy-configuration-file.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
@@ -477,7 +480,7 @@ plugins:
               "related-tools/engines.md": "getting-started/supported-languages-and-tools.md"
               "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
               "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
-              "repositories-configure/php_codesniffer-specifying-your-php-version.md": "repositories-configure/specifying-your-php-version.md"
+              "repositories-configure/php_codesniffer-specifying-your-php-version.md": "repositories-configure/codacy-configuration-file.md"
               "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md": "release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md"
               "getting-started/i-added-a-repository-now-what.md": "getting-started/getting-started-with-codacy.md"
               "related-tools/api-tokens.md": "related-tools/codacy-api-tokens.md"
@@ -501,6 +504,7 @@ plugins:
               "coverage-reporter/generating-coverage-reports.md": "coverage-reporter/index.md"
               "coverage-reporter/adding-coverage-to-your-repository.md": "coverage-reporter/index.md"
               "faq/code-analysis/error-line-endings.md": "faq/troubleshooting/error-line-endings.md"
+              "repositories-configure/integrations/project-api.md": "related-tools/codacy-api-tokens.md"
               "repositories-configure/code-standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md"
 
 nav:
@@ -525,7 +529,6 @@ nav:
                 - repositories-configure/integrations/bitbucket-integration.md
                 - repositories-configure/integrations/slack-integration.md
                 - repositories-configure/integrations/jira-integration.md
-                - repositories-configure/integrations/project-api.md
                 - repositories-configure/integrations/webhook-notifications.md
                 - repositories-configure/integrations/post-commit-hooks.md
           - repositories-configure/ignoring-files.md
@@ -533,10 +536,6 @@ nav:
           - repositories-configure/quality-settings.md
           - repositories-configure/using-submodules.md
           - repositories-configure/codacy-configuration-file.md
-          # "Extra details" when configuring repositories
-          - repositories-configure/specifying-language.md
-          - repositories-configure/specifying-your-python-version.md
-          - repositories-configure/specifying-your-php-version.md
           - repositories-configure/removing-your-repository.md
     - Organizations:
           - organizations/what-are-synced-organizations.md
@@ -624,6 +623,7 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
           - Codacy Self-hosted:
+                - release-notes/self-hosted/self-hosted-v3.4.0.md
                 - release-notes/self-hosted/self-hosted-v3.3.0.md
                 - release-notes/self-hosted/self-hosted-v3.2.0.md
                 - release-notes/self-hosted/self-hosted-v3.1.0.md
