@@ -2618,7 +2618,12 @@
 </code></pre></div>
 <p>See the <a href="https://github.com/codacy/codacy-plugins-api/blob/master/src/main/scala/com/codacy/plugins/api/languages/Language.scala#L43">list of languages</a> that you can specify using the flag <code>-l</code>.</p>
 <h2 id="unsupported-report-formats">Submitting coverage from unsupported report formats<a class="headerlink" href="#unsupported-report-formats" title="Permanent link">&para;</a></h2>
-<p>If you are generating a report format that Codacy does not yet support, try using community projects such as <a href="https://github.com/t-yuki/gocover-cobertura">t-yuki/gocover-cobertura</a> and <a href="https://github.com/danielpalme/ReportGenerator">danielpalme/ReportGenerator</a>, or alternatively contribute to our <a href="https://github.com/codacy/coverage-parser">codacy/coverage-parser</a> project.</p>
+<p>If you are generating a report format that Codacy does not yet support, try using the community projects below or contribute to our <a href="https://github.com/codacy/coverage-parser">codacy/coverage-parser</a> project:</p>
+<ul>
+<li><a href="https://github.com/danielpalme/ReportGenerator">danielpalme/ReportGenerator</a>: convert between different report formats </li>
+<li><a href="https://github.com/dariodf/lcov_ex">dariodf/lcov_ex</a>: generate LCOV reports for Elixir projects</li>
+<li><a href="https://github.com/t-yuki/gocover-cobertura">t-yuki/gocover-cobertura</a>: generate Cobertura reports from <a href="https://golang.org/pkg/cmd/cover/">Go cover</a> reports</li>
+</ul>
 <p>As a workaround, you can also send the coverage data directly by calling the Codacy API endpoint <a href="https://api.codacy.com/swagger#savecoverage">saveCoverage</a>.</p>
 <p>The following is an example of the JSON payload:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -2734,7 +2739,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 5, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 24, 2021</span>
     
   </small>
 </div>
