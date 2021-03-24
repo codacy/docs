@@ -46,3 +46,21 @@ Currently, Codacy supports two API versions. We recommend that you use API v3 wh
     </tr>
   </tbody>
 </table>
+
+## Authenticating requests to the Codacy API
+
+Most API endpoints require that you provide either a [project or account API token](api-tokens.md). After obtaining the necessary tokens, include them in your request headers using the format `api-token: <token key>` or `project-token: <token key>`.
+
+For example, to make a request to an API v3 endpoint that requires an **account API token**:
+
+```bash
+curl -X GET https://api.codacy.com/api/v3/user/organizations/gh \
+     -H "api-token: SjE9y7ekgKdpaCofsAhd"
+```
+
+Or to make a request to an API v2 endpoint that requires a **project API token**:
+
+```bash
+curl -X GET https://api.codacy.com/2.0/commit/da275c14ffab6e402dcc6009828067ffa44b7ee0 \
+     -H "project-token: c9f2feb28e780acc8dc40754978b8bd9"
+```

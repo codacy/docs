@@ -1,8 +1,10 @@
 # API tokens
 
-API tokens allow you to authenticate when using the Codacy API by including them in the headers of your API calls. See how to authenticate using the Codacy [API v2](https://api.codacy.com/swagger#authentication) and [API v3](https://api.codacy.com/api/api-docs#authentication).
+The Codacy API tokens allow you to:
 
-You also need an API token when [uploading coverage data to Codacy](../../coverage-reporter/index.md) or [uploading the results of running local analysis](../local-analysis/running-local-analysis.md).
+-   [Authenticate when using the Codacy API](using-the-codacy-api.md#authenticating-requests-to-the-codacy-api)
+
+-   [Upload coverage data](../../coverage-reporter/index.md) or [upload the results of running local analysis](../local-analysis/running-local-analysis.md) to Codacy
 
 Codacy provides two types of API tokens:
 
