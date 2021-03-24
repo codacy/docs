@@ -2619,7 +2619,7 @@
 <tr>
     <td rowspan="2">Java</td>
     <td><a href="http://eclemma.org/jacoco/">JaCoCo</a></td>
-    <td><code>jacoco\*.xml</code> (JaCoCo)</td>
+    <td><code>jacoco*.xml</code> (JaCoCo)</td>
 </tr>
 <tr>
     <td><a href="http://cobertura.github.io/cobertura/">Cobertura</a></td>
@@ -2629,8 +2629,8 @@
     <td>JavaScript</td>
     <td><a href="https://github.com/gotwarlost/istanbul">Istanbul</a><br/>
         <a href="https://github.com/deepsweet/poncho">Poncho</a><br/>
-        <a href="http://mochajs.org/">Mocha</a> + <a href="https://github.com/alex-seville/blanket">Blanket.js</a></td>
-    <td><code>lcov.info</code>, <code>lcov.dat</code>, <code>\*.lcov</code> (LCOV)</td>
+        <a href="https://mochajs.org/">Mocha</a> + <a href="https://github.com/alex-seville/blanket">Blanket.js</a></td>
+    <td><code>lcov.info</code>, <code>lcov.dat</code>, <code>*.lcov</code> (LCOV)</td>
 </tr>
 <tr>
     <td>PHP</td>
@@ -2647,12 +2647,12 @@
     <td>Ruby</td>
     <td><a href="https://github.com/simplecov-ruby/simplecov">SimpleCov</a></td>
     <td><code>cobertura.xml</code> (Cobertura)<br/>
-        <code>lcov.info</code>, <code>lcov.dat</code>, <code>\*.lcov</code> (LCOV)</td>
+        <code>lcov.info</code>, <code>lcov.dat</code>, <code>*.lcov</code> (LCOV)</td>
 </tr>
 <tr>
     <td  rowspan="2">Scala</td>
     <td><a href="https://www.scala-sbt.org/sbt-jacoco/">sbt-jacoco</a></td>
-    <td><code>jacoco\*.xml</code> (JaCoCo)</td>
+    <td><code>jacoco*.xml</code> (JaCoCo)</td>
 </tr>
 <tr>
     <td><a href="http://scoverage.org/">scoverage</a></td>
@@ -2714,30 +2714,25 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </ol>
 <p>See the sections below for more advanced functionality, or <a href="troubleshooting-common-issues/">check the troubleshooting page</a> if you found an issue during the setup process.</p>
 <h2 id="multiple-reports">Uploading multiple coverage reports for the same language<a class="headerlink" href="#multiple-reports" title="Permanent link">&para;</a></h2>
-<p>If your test suite is split on different modules or runs in parallel, you will need to upload multiple coverage reports for the same language:</p>
-<ol>
-<li>
-<p>Upload each separate report with the following flags:</p>
-<ul>
-<li><code>--partial</code></li>
-<li><code>-l &lt;language&gt;</code></li>
-<li><code>-r &lt;partial report&gt;</code></li>
-</ul>
-</li>
-<li>
-<p>After uploading all reports, notify Codacy with the <code>final</code> command.</p>
-</li>
-</ol>
-<p>For example:</p>
+<p>If your test suite is split on different modules or runs in parallel, you will need to upload multiple coverage reports for the same language.</p>
+<p>To do this, specify multiple reports by repeating the flag <code>-r</code>. For example:</p>
+<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
+    -l Java -r report1.xml -r report2.xml -r report3.xml
+</code></pre></div>
+<p>You can also upload all your reports dynamically using the command <code>find</code>. For example:</p>
+<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
+    -l Java <span class="k">$(</span>find **/jacoco*.xml -printf <span class="s1">&#39;-r %p &#39;</span><span class="k">)</span>
+</code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Altenatively, you can upload each report separately with the flag <code>--partial</code> and notify Codacy with the <code>final</code> command after uploading all reports. For example:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
     --partial -l Java -r report1.xml
 bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
     --partial -l Java -r report2.xml
 bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> final
 </code></pre></div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>If you are sending reports for a language with the flag <code>--partial</code>, you should use the flag in all reports for that language to ensure the correct calculation of the coverage.</p>
+<p>If you're sending reports for a language with the flag <code>--partial</code>, you should use the flag in all reports for that language to ensure the correct calculation of the coverage.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -2843,7 +2838,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 5, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 24, 2021</span>
     
   </small>
 </div>
