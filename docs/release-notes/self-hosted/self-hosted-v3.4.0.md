@@ -7,6 +7,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 ## Product enhancements
 
 -   It's now possible to [see the current Codacy Self-hosted version](https://docs.codacy.com/v3.4/chart/troubleshoot/troubleshoot/) under the avatar menu. (CY-3767)
+-   Now, Codacy allows [configuring who is allowed to ignore issues](https://docs.codacy.com/v3.4/organizations/roles-and-permissions-for-synced-organizations/#configure-ignore-issues) on all supported Git providers. (CY-3581)
 -   Now, the **Code patterns** page allows you to [enable or disable all code patterns in a category](https://docs.codacy.com/v3.4/repositories-configure/code-patterns/#pattern-filters) with a single click. (CY-3527)
 -   Added the following Codacy API endpoints:
     -   **[listFiles](https://api.codacy.com/api/api-docs#listfiles)** returns the most recent analysis information for the files in a repository as available on the [Files page](https://docs.codacy.com/v3.4/repositories/files-view/). (CY-3540)
