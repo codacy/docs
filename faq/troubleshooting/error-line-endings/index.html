@@ -1966,36 +1966,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Error caused by incompatible line endings
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
-        </span>
-      </label>
-    
     <a href="./" title="Error caused by incompatible line endings" class="md-nav__link md-nav__link--active">
       Error caused by incompatible line endings
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#see-also" class="md-nav__link">
-    See also
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -2564,19 +2537,38 @@
 <p>Codacy executes the <code>git diff</code> command when analyzing new commits and pull requests to identify the lines of code that were changed. Codacy then uses this information to display the issues that were caused by the changes introduced by the commits or pull requests.</p>
 <p>If you have files in your repository that use the carriage return (CR) as the line end control character, the command <code>git diff</code> doesn't correctly identify line endings in the changed files. Because of this, Codacy is unable to use the output of the command and you'll see an error in the <strong>Diff</strong> step of your commit or pull request analysis logs:</p>
 <p><img alt="Viewing the analysis logs" src="../images/error-line-endings.png" /></p>
-<p>The CR line end control character was used by older Classic Mac OS systems, and for the sake of interoperability it's recommended that you <a href="https://en.wikipedia.org/wiki/Newline#Conversion_between_newline_formats">update the line endings in your source code files</a> to use either the control characters:</p>
+<p>The CR line end control character was used by older Classic Mac OS systems, and for the sake of interoperability it's recommended that you:</p>
+<ol>
+<li>
+<p>Find the files in your repository that include CR line endings.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>On *nix operating systems including macOS, you can use the command <code>file</code> to detect files in your repository that use CR line endings. For example, run the following command on the root of your repository:</p>
+<div class="highlight"><pre><span></span><code>find . -type f -exec file <span class="o">{}</span> <span class="se">\;</span> <span class="p">|</span> grep <span class="s2">&quot;CR line&quot;</span>
+</code></pre></div>
+</div>
+</li>
+<li>
+<p>Update the line endings in your source code files to use either the control characters:</p>
 <ul>
 <li>LF, if primarily using Unix-like systems such as Linux or the newer macOS operating system</li>
 <li>CRLF, if primarily using the Microsoft Windows operating system</li>
 </ul>
-<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
-<p>After converting the line endings in your source code files, you may also want to check the following external resources for help on standardizing the line endings on your repositories and how to configure Git to correctly handle line endings:</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><a href="https://en.wikipedia.org/wiki/Newline#Conversion_between_newline_formats">This article on Wikipedia</a> includes examples on how to convert the line endings in your files.</p>
+</div>
+</li>
+<li>
+<p>After converting the line endings in your source code files, you may also want to check the following resources for help on standardizing the line endings on your repositories and how to configure Git to correctly handle line endings:</p>
 <ul>
 <li><a href="https://git-scm.com/docs/gitfaq#Documentation/gitfaq.txt-What8217stherecommendedwaytostorefilesinGit">What's the recommended way to store files in Git?</a></li>
 <li><a href="https://git-scm.com/book/en/Customizing-Git-Git-Configuration#_formatting_and_whitespace">Customizing Git - Formatting and Whitespace</a></li>
 <li><a href="https://docs.github.com/en/github/using-git/configuring-git-to-handle-line-endings">Configuring Git to handle line endings</a></li>
 <li><a href="https://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/">Mind the End of Your Line</a></li>
 </ul>
+</li>
+</ol>
               
               
                 
@@ -2648,7 +2640,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 10, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 24, 2021</span>
     
   </small>
 </div>
