@@ -8,5 +8,6 @@ mkdocs-git-revision-date-localized-plugin==0.8
 mkdocs-monorepo-plugin==0.4.12
 mkdocs-markdownextradata-plugin==0.2.4
 mkdocs-redirects==1.0.1
-mkdocs-rss-plugin==0.13.0
 mkdocs-include-markdown-plugin==2.8.0
+# mkdocs-rss-plugin==0.13.0
+git+https://github.com/pauloribeiro-codacy/mkdocs-rss-plugin.git@fix/filter-match-path#egg=mkdocs-rss-plugin
