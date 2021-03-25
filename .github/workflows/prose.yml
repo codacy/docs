@@ -21,7 +21,7 @@ jobs:
           glob_pattern: "**/*.md"
 
       - name: Vale
-        uses: errata-ai/vale-action@master
+        uses: errata-ai/vale-action@v1.3.0
         with:
           files: __onlyModified
         env:
