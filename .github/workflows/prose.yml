@@ -21,7 +21,8 @@ jobs:
           glob_pattern: "**/*.md"
 
       - name: Vale
-        uses: errata-ai/vale-action@v1.3.0
+        # The option files: __onlyModified requires the master version
+        uses: errata-ai/vale-action@master
         with:
           files: __onlyModified
         env:
