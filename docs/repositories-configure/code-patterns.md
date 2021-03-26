@@ -16,6 +16,9 @@ However, you can create a coding standard adapted to your scenario by configurin
 
 1.  Optionally, [manually reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.
 
+!!! tip
+    Organization owners can [configure who is allowed to configure code patterns](../organizations/roles-and-permissions-for-synced-organizations.md#change-analysis-configuration).
+
 ## Pattern filters
 
 To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), category, or status:
