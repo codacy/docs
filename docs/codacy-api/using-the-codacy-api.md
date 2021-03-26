@@ -47,6 +47,13 @@ Codacy supports two API versions but prefer the new API v3 when possible since i
   </tbody>
 </table>
 
+!!! important
+    **If you're using Codacy Self-hosted** you must update the base URL of the APIs to include your Codacy instance domain name. For example:
+
+    ```
+    https://codacy.example.com/api/v3	
+    ```
+
 ## Authenticating requests to the Codacy API
 
 Most API endpoints require that you provide either a [project or account API token](api-tokens.md). After obtaining the necessary tokens, include them in your request headers using the format `api-token: <token key>` or `project-token: <token key>`.
