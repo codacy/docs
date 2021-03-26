@@ -8,7 +8,7 @@ Depending on your role on the Git provider you will have different permissions o
       <th>Provider</th>
       <th>Role</th>
       <th>Join organization</th>
-      <th>Ignore issues</th>
+      <th>Ignore issues and files</th>
       <th>Add repository</th>
       <th>Configure repository</th>
       <th>Configure patterns</th>
@@ -208,7 +208,7 @@ See [managing people](managing-people.md) to list and manage the members of your
 
 ## Configuring who can change analysis configurations {: id="change-analysis-configuration"}
 
-By default, only users with Write permission on a repository can change analysis configurations. In your Organization's settings, you can find **Members privileges** where you can define the lowest permission required to [ignore issues for your organization](../repositories/issues.md#ignoring-and-managing-issues) and [configure your code patterns](../repositories-configure/code-patterns.md) on your organization.
+By default, only users with Write permission on a repository can change analysis configurations. In your Organization's settings, you can find **Members privileges** where you can define the lowest permission required to [ignore issues](../repositories/issues.md#ignoring-and-managing-issues) for your organization, [ignore files](../repositories-configure/ignoring-files.md) and [configure your code patterns](../repositories-configure/code-patterns.md) on your organization.
 
 ![Configuring who can change analysis configurations](images/analysis-configuration.png)
 
