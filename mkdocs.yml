@@ -61,10 +61,11 @@ plugins:
     - search
     - include-markdown
     - git-revision-date-localized
-# The RSS plugin is disabled because it doesn't support submodules yet,
-# see https://github.com/Guts/mkdocs-rss-plugin/issues/23
-#   - rss:
-#         image: "https://docs.codacy.com/assets/images/codacy-logo.png"
+# Update requirements.txt for mkdocs-rss-plugin when
+# https://github.com/Guts/mkdocs-rss-plugin/pull/49 is merged
+    - rss:
+          image: "https://docs.codacy.com/assets/images/codacy-logo.png"
+          match_path: "release-notes/.*"
     - monorepo
     - markdownextradata
     - redirects:
