@@ -180,11 +180,19 @@
      <lastmod>2021-03-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/related-tools/codacy-api-tokens/</loc>
+     <loc>https://docs.codacy.com/related-tools/codacy-plugin-tools/</loc>
      <lastmod>2021-03-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
-     <loc>https://docs.codacy.com/related-tools/codacy-plugin-tools/</loc>
+     <loc>https://docs.codacy.com/codacy-api/using-the-codacy-api/</loc>
+     <lastmod>2021-03-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.codacy.com/codacy-api/api-tokens/</loc>
+     <lastmod>2021-03-26</lastmod>
+     <changefreq>daily</changefreq>
+    </url><url>
+     <loc>https://docs.codacy.com/codacy-api/adding-repositories-to-codacy-programmatically/</loc>
      <lastmod>2021-03-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
@@ -329,10 +337,6 @@
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/repositories/how-do-i-reanalyze-my-repository/</loc>
-     <lastmod>2021-03-26</lastmod>
-     <changefreq>daily</changefreq>
-    </url><url>
-     <loc>https://docs.codacy.com/faq/repositories/how-do-i-programmatically-add-repositories-to-codacy/</loc>
      <lastmod>2021-03-26</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
