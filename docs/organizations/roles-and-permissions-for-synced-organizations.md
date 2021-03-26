@@ -11,6 +11,7 @@ Depending on your role on the Git provider you will have different permissions o
       <th>Ignore issues</th>
       <th>Add repository</th>
       <th>Configure repository</th>
+      <th>Configure patterns</th>
       <th>View repository</th>
       <th>Invite and accept members</th>
       <th>Modify billing</th>
@@ -27,13 +28,15 @@ Depending on your role on the Git provider you will have different permissions o
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Repository Read</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#configure-ignore-issues">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -41,9 +44,10 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td>Repository Triage</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#configure-ignore-issues">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -51,9 +55,10 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td>Repository Write</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#configure-ignore-issues">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>Yes</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -61,9 +66,10 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td>Repository Maintain</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#configure-ignore-issues">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>Yes</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -71,9 +77,10 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td>Repository Admin</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#configure-ignore-issues">Configurable</a></td>
+      <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -84,6 +91,7 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -98,13 +106,15 @@ Depending on your role on the Git provider you will have different permissions o
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td><span>Guest</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#configure-ignore-issues">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -112,9 +122,10 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td><span>Reporter</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#configure-ignore-issues">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -122,9 +133,10 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td><span>Developer</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#configure-ignore-issues">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -132,9 +144,10 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td><span>Maintainer</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#configure-ignore-issues">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -145,6 +158,7 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -155,6 +169,7 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -163,9 +178,10 @@ Depending on your role on the Git provider you will have different permissions o
       <td rowspan="2">Bitbucket Cloud and Bitbucket Server</td>
       <td>Read, Write<sup><a href="#note-3">3</a></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#configure-ignore-issues">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -176,6 +192,7 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -189,10 +206,10 @@ Depending on your role on the Git provider you will have different permissions o
 
 See [managing people](managing-people.md) to list and manage the members of your organization.
 
-## Configuring who can ignore issues {: id="configure-ignore-issues"}
+## Configuring who can change analysis configurations {: id="change-analysis-configuration"}
 
-By default, only users with Write permission on a repository can [ignore issues](../repositories/issues.md#ignoring-and-managing-issues), but you can change this. In your Organization's settings, you can find **Members privileges** where you can define the lowest permission required to ignore issues for your organization.
+By default, only users with Write permission on a repository can change analysis configurations. In your Organization's settings, you can find **Members privileges** where you can define the lowest permission required to [ignore issues for your organization](../repositories/issues.md#ignoring-and-managing-issues) and [configure your code patterns](../repositories-configure/code-patterns.md) on your organization.
 
-![Configuring who can ignore issues](images/ignore-issues.png)
+![Configuring who can change analysis configurations](images/analysis-configuration.png)
 
 Codacy doesn't allow changing the role of a user, as the roles on Codacy are mirrored from your Git provider and applied to each repository.
