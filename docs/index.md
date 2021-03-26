@@ -33,15 +33,6 @@
 <h2>Most popular topics</h2>
 
 <div class="topic-row">
-  <a class="topic-card" href="repositories-configure/code-patterns/">
-    <div class="tc-icon">
-      <img alt="Configuring code patterns" src="/assets/images/icon-checkmark.svg">
-    </div>
-    <div class="tc-content">
-      <div>Configuring code patterns</div>
-      <div>Adapt Codacy to your scenario by configuring the code patterns used to analyze your repositories</div>
-    </div>
-  </a>
   <a class="topic-card" href="coverage-reporter/">
     <div class="tc-icon">
       <img alt="Adding coverage reports" src="/assets/images/icon-checklist.svg">
@@ -57,7 +48,16 @@
     </div>
     <div class="tc-content">
       <div>Managing people in organizations</div>
-      <div>Invite your team members to join your organization on Codacy so that Codacy analyzes their commits on private repositories.</div>
+      <div>Invite your team members to join Codacy to analyze their commits on private repositories.</div>
+    </div>
+  </a>
+  <a class="topic-card" href="codacy-api/using-the-codacy-api/">
+    <div class="tc-icon">
+      <img alt="Using the Codacy API" src="/assets/images/icon-code.svg">
+    </div>
+    <div class="tc-content">
+      <div>Using the Codacy API</div>
+      <div>Programmatically retrieve and analyze data from Codacy and perform configuration changes</div>
     </div>
   </a>
 </div>
