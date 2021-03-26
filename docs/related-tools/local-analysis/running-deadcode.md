@@ -20,7 +20,7 @@ To run deadcode as a [client-side tool](client-side-tools.md):
 
     {% include "../../assets/includes/api-token-warning.txt" %}
 
-1.  **If you are using Codacy Self-hosted** set the following environment variable to specify your Codacy instance URL:
+1.  **If you're using Codacy Self-hosted** set the following environment variable to specify your Codacy instance URL:
 
     ```bash
     export CODACY_API_BASE_URL=<your Codacy instance URL>

@@ -6,7 +6,7 @@ In your repository's **Files** page you can view all the files that Codacy detec
 
 While this page should display all the files in your repository, here is a list of reasons why some files might be missing:
 
--   **You are viewing the incorrect branch**
+-   **You're viewing the incorrect branch**
 
     On the **Files** page you can select which branch to display, and sometimes not all files exist in all branches.
 
@@ -56,7 +56,7 @@ To update the file size limit:
 1.  Apply the new configuration by performing a Helm upgrade and specifying the Codacy Self-hosted version currently installed. To do so execute the command [used to install Codacy](../../chart/index.md#helm-upgrade):
 
     !!! important
-        **If you are using MicroK8s** you must use the file `values-microk8s.yaml` together with the file `values-production.yaml`.
+        **If you're using MicroK8s** you must use the file `values-microk8s.yaml` together with the file `values-production.yaml`.
 
         To do this, uncomment the last line before running the `helm upgrade` command below.
 

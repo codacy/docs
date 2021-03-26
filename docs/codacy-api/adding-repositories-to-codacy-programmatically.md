@@ -31,7 +31,7 @@ Substitute the placeholders with your own values:
 -   **REPOSITORY_FULL_PATH:** Name of the organization and repository on the Git provider, using the format `<organization>/<repository>`. For example, `codacy/docs`. You must have admin permissions over the repository on the Git provider.
 
     !!! important
-        **If you are using GitLab** you must specify the full group path and the repository using the format `<group>/<subgroup-1>/.../<subgroup-N>/<repository>`.
+        **If you're using GitLab** you must specify the full group path and the repository using the format `<group>/<subgroup-1>/.../<subgroup-N>/<repository>`.
 
 Currently, Codacy doesn't provide API endpoints to automate other parts of setting up new repositories, such as configuring the repository settings or the enabled code patterns. However, Codacy automatically applies the [default patterns](../repositories-configure/code-patterns.md#set-default) defined on the Codacy API token account to the new repositories, and you can use this to ensure that all new repositories share the same pattern configuration.
 
@@ -93,5 +93,5 @@ done
 !!! important
     For the sake of simplicity:
 
-    -   The GitHub API endpoint used by the script obtains all repositories in a GitHub organization. However, you must have admin permissions over the repositories that you add to Codacy. If you are not the owner of all the repositories in your GitHub organization, consider using the GitHub API endpoint [/user/repos](https://docs.github.com/en/rest/reference/repos#list-repositories-for-the-authenticated-user){: target="_blank"} instead.
+    -   The GitHub API endpoint used by the script obtains all repositories in a GitHub organization. However, you must have admin permissions over the repositories that you add to Codacy. If you're not the owner of all the repositories in your GitHub organization, consider using the GitHub API endpoint [/user/repos](https://docs.github.com/en/rest/reference/repos#list-repositories-for-the-authenticated-user){: target="_blank"} instead.
     -   The script doesn't take into account paginated results obtained from the GitHub API. To ensure that you obtain all the repositories in your organization, [learn how to use pagination on the GitHub API](https://docs.github.com/en/rest/guides/traversing-with-pagination){: target="_blank"}.
