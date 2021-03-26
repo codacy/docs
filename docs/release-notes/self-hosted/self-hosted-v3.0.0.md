@@ -6,7 +6,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Breaking changes
 
-**If you are using GitHub and require Codacy pull request status to pass before merging pull requests** you must manually re-enable the required status check on your repositories. To do this:
+**If you're using GitHub and require Codacy pull request status to pass before merging pull requests** you must manually re-enable the required status check on your repositories. To do this:
 
 1.  Wait until there is a new status check from Codacy on your repositories using the new GitHub Checks integration:
 

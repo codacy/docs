@@ -6,7 +6,7 @@ There are two ways to do this: **automatically** or **manually**
 
 ## Automatic setup of post-commit hook
 
-If you are using GitHub or Bitbucket you can let Codacy configure the hook for you. Go to your **repository settings** and click on the **Integrations** tab. There should be a switch button for the automatic setup of post-commit hooks.
+If you're using GitHub or Bitbucket you can let Codacy configure the hook for you. Go to your **repository settings** and click on the **Integrations** tab. There should be a switch button for the automatic setup of post-commit hooks.
 
 ### Missing hook automatic setup switch button
 

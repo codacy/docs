@@ -18,7 +18,7 @@ When this happens, Codacy doesn't display code duplication metrics for the affec
 
     ![Analysis logs for a commit](images/duplication-logs.png)
 
-As a workaround, if you are exceeding the maximum number of source code files:
+As a workaround, if you're exceeding the maximum number of source code files:
 
 1.  We recommend that you use a [Codacy configuration file](../../repositories-configure/codacy-configuration-file.md) to exclude source code files of the affected language from your project to decrease the number of files to be analyzed.
 
@@ -28,10 +28,10 @@ As a workaround, if you are exceeding the maximum number of source code files:
 
 If the analysis finishes but the code duplication metric wasn't calculated, follow the next steps:
 
--   **If you are using Codacy Self-hosted**, open the **Admin panel**, **Repositories**, select the repository, tab **Settings**, and reset the code duplication analysis in **Duplication settings**. Then, reanalyze the last commit in the repository so that Codacy runs the code duplication analysis.
+-   **If you're using Codacy Self-hosted**, open the **Admin panel**, **Repositories**, select the repository, tab **Settings**, and reset the code duplication analysis in **Duplication settings**. Then, reanalyze the last commit in the repository so that Codacy runs the code duplication analysis.
 
     ![Resetting the failed duplication analysis](images/duplication-metrics-reset.png)
 
--   **If you are [analyzing your repository locally](../../related-tools/local-analysis/running-local-analysis.md)** with the Codacy Analysis CLI, consider using the flag `--tool-timeout` to specify a larger timeout for the execution of the tool.
+-   **If you're [analyzing your repository locally](../../related-tools/local-analysis/running-local-analysis.md)** with the Codacy Analysis CLI, consider using the flag `--tool-timeout` to specify a larger timeout for the execution of the tool.
 
--   **If you are using Codacy Cloud** or if the steps above didn't solve the issue, please contact us at <mailto:support@codacy.com>.
+-   **If you're using Codacy Cloud** or if the steps above didn't solve the issue, please contact us at <mailto:support@codacy.com>.

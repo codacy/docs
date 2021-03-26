@@ -2,4 +2,4 @@
 
 Have you added your repository manually (via URL)? In that case, Codacy won't allow the integration to be added, causing the issue with post-commit hooks. To get this sorted, you will have to remove your repository and re-add it via our wizard page. 
 
-If you are still unable to configure the integration, please contact us at <mailto:support@codacy.com>.
+If you're still unable to configure the integration, please contact us at <mailto:support@codacy.com>.

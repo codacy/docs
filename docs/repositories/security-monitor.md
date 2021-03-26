@@ -83,7 +83,7 @@ The Security Monitor displays issues using security patterns from:
 -   **SQL injection:** A SQL injection attack consists of insertion or "injection" of a SQL query via the input data from the client to the application.
 -   **Routes:** Badly configured routes can give unintended access to an attacker.
 -   **Regex:** Regex can be used in a Denial of Service attack, that exploits the fact that most Regular Expression implementations may reach heavy computation situations that cause them to work very slowly (exponentially related to input size).
--   **SSL:** Simply using SSL isn't enough to ensure the data you are sending is secure. Man in the middle attacks are well known and widely used.
+-   **SSL:** Simply using SSL isn't enough to ensure the data you're sending is secure. Man in the middle attacks are well known and widely used.
 -   **Other:** Other language-specific security issues.
 
 ## Category states

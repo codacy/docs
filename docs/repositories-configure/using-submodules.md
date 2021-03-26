@@ -8,7 +8,7 @@ By default, Codacy does normal Git clones that don't include submodules to ensur
 
 After we enabled submodules for your organization, do the following:
 
-1.  **If you are using Codacy Self-hosted**, you must [update the license](../chart/maintenance/license.md).
+1.  **If you're using Codacy Self-hosted**, you must [update the license](../chart/maintenance/license.md).
 
 2.  If your submodules are:
 
@@ -20,7 +20,7 @@ After we enabled submodules for your organization, do the following:
     !!! important
         **If you're using Bitbucket Cloud**, you must manually add the SSH key on your [user account](https://bitbucket.org/account/settings/ssh-keys/).
 
-    When you add a repository to Codacy, Codacy adds a new SSH key to your repository using an integration with your Git provider. Codacy uses this SSH key every time it needs to clone that repository. When you are using submodules, Codacy needs to clone additional repositories it has no access to. Since there is no way of identifying the submodules of a repository before cloning the repository, Codacy adds the SSH keys to the user account so that it has access to the same repositories as the user.
+    When you add a repository to Codacy, Codacy adds a new SSH key to your repository using an integration with your Git provider. Codacy uses this SSH key every time it needs to clone that repository. When you're using submodules, Codacy needs to clone additional repositories it has no access to. Since there is no way of identifying the submodules of a repository before cloning the repository, Codacy adds the SSH keys to the user account so that it has access to the same repositories as the user.
 
     ![Generate new user key](images/using-submodules-generate-new-user-key.png)
 
