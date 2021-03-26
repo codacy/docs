@@ -2,14 +2,14 @@
 
 The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.
 
-Currently, Codacy supports two API versions. We recommend that you use API v3 whenever possible since it's the version being actively developed:
+Codacy supports two API versions but prefer the new API v3 when possible since it's the version being actively developed:
 
 <table>
   <thead>
     <tr>
       <td></td>
-      <th><strong>API v3 (active development)</strong></th>
-      <th><strong>API v2 (legacy)</strong></th>
+      <th><strong>API v3 (preferred)</strong></th>
+      <th><strong>API v2</strong></th>
     </tr>
   </thead>
   <tbody>
