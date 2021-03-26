@@ -11,7 +11,7 @@ Depending on your role on the Git provider you will have different permissions o
       <th>Ignore issues and files</th>
       <th>Add repository</th>
       <th>Configure repository</th>
-      <th>Configure patterns</th>
+      <th>Configure tools and patterns</th>
       <th>View repository</th>
       <th>Invite and accept members</th>
       <th>Modify billing</th>
