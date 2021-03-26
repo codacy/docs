@@ -4,7 +4,7 @@ The Codacy API tokens allow you to:
 
 -   [Authenticate when using the Codacy API](using-the-codacy-api.md#authenticating-requests-to-the-codacy-api)
 
--   [Upload coverage data](../../coverage-reporter/index.md) or [upload the results of running local analysis](../local-analysis/running-local-analysis.md) to Codacy
+-   [Upload coverage data](../coverage-reporter/index.md) or [upload the results of running local analysis](../related-tools/local-analysis/running-local-analysis.md) to Codacy
 
 Codacy provides two types of API tokens:
 
@@ -14,7 +14,7 @@ Codacy provides two types of API tokens:
 
 The sections below provide detailed instructions on how to generate and revoke API tokens.
 
-{% include "../../assets/includes/api-token-warning.txt" %}
+{% include "../assets/includes/api-token-warning.txt" %}
 
 ## Account API tokens
 
@@ -50,7 +50,7 @@ To revoke a project API token, click the trash can icon for the corresponding **
 
 ## See also
 
--   [Adding coverage to your repository](../../coverage-reporter/index.md)
--   [Running local analysis](../local-analysis/running-local-analysis.md)
--   [Client-side tools](../local-analysis/client-side-tools.md)
+-   [Adding coverage to your repository](../coverage-reporter/index.md)
+-   [Running local analysis](../related-tools/local-analysis/running-local-analysis.md)
+-   [Client-side tools](../related-tools/local-analysis/client-side-tools.md)
 
