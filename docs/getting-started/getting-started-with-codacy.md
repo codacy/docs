@@ -18,7 +18,7 @@ Now, you'll need to add or join the organizations that contain your repositories
 
 To start adding your repositories, select one of the organizations.
 
-!!! tip
+!!! note
     If you can't see the organization you're looking for, [follow these troubleshooting instructions](../faq/general/why-cant-i-see-my-organization.md).
 
 ## 3. Add repositories {: id="add-repositories"}
@@ -27,7 +27,7 @@ Next, add the repositories that you wish to analyze. Codacy begins an initial an
 
 ![Adding repositories](../organizations/images/repositories-add.png)
 
-!!! tip
+!!! note
     You can only add repositories on Codacy if you have the [necessary permissions on your Git provider](../organizations/roles-and-permissions-for-synced-organizations.md).
 
 Click the link **Go to repository** to see the [code quality overview of your repository](../repositories/repository-dashboard.md) as soon as the initial analysis is complete:
