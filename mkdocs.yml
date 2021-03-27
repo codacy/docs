@@ -61,8 +61,6 @@ plugins:
     - search
     - include-markdown
     - git-revision-date-localized
-# Update requirements.txt for mkdocs-rss-plugin when
-# https://github.com/Guts/mkdocs-rss-plugin/pull/49 is merged
     - rss:
           image: "https://docs.codacy.com/assets/images/codacy-logo.png"
           match_path: "release-notes/.*"
