@@ -84,6 +84,17 @@ jobs:
           git fetch origin gh-pages --verbose
           mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted ${GITHUB_REF##*/release/}" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
 
+      - name: Push deployment to Pulse
+        run: |
+          curl -fsSL -o pulse-event-cli https://dl.bintray.com/codacy/pulse/event-cli/1.8.0/pulse-event-cli_linux_amd64/pulse-event-cli && \
+          chmod +x pulse-event-cli && \
+          ./pulse-event-cli push git deployment \
+              --api-key "${{ secrets.PULSE_TOKEN }}" \
+              --previous-deployment-ref "$(git rev-parse @~)" \
+              --identifier "${GITHUB_SHA}" \
+              --timestamp "$(date +%s)" \
+              --system "docs"
+
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -132,3 +143,14 @@ jobs:
           mike deploy . -t "Cloud (Latest)" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
         env:
           CUSTOM_DOMAIN: docs.codacy.com
+
+      - name: Push deployment to Pulse
+        run: |
+          curl -fsSL -o pulse-event-cli https://dl.bintray.com/codacy/pulse/event-cli/1.8.0/pulse-event-cli_linux_amd64/pulse-event-cli && \
+          chmod +x pulse-event-cli && \
+          ./pulse-event-cli push git deployment \
+              --api-key "${{ secrets.PULSE_TOKEN }}" \
+              --previous-deployment-ref "$(git rev-parse @~)" \
+              --identifier "${GITHUB_SHA}" \
+              --timestamp "$(date +%s)" \
+              --system "docs"
