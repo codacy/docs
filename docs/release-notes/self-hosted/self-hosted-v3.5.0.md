@@ -10,14 +10,14 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 -   Now, Codacy has [Checkov support](https://github.com/bridgecrewio/checkov), extending analysis to infrastructure-as-code like Terraform, Cloudformation and Kubernetes  (CY-3830)
 -   Improved visibility on the tool that reported an issue, bringing that information to the top of an issue detail. (CY-3768)
 -   Added the following Codacy API endpoints:
-    - **[getcommitdeltastatistics](https://api.codacy.com/api/api-docs#getcommitdeltastatistics)** - Returns the quality metric deltas introduced by a commit. (CY-3560)
-    - **[listcommitdeltaissues](https://api.codacy.com/api/api-docs#listcommitdeltaissues)** - Returns the list of issues that were introduced or fixed by a commit.  (CY-3560)
--   Continuos improvements on our public API documentation (DOCS-42)
+    - **[getCommitDeltaStatistics](https://api.codacy.com/api/api-docs#getcommitdeltastatistics)** - Returns the quality metric deltas introduced by a commit. (CY-3560)
+    - **[listCommitDeltaIssues](https://api.codacy.com/api/api-docs#listcommitdeltaissues)** - Returns the list of issues that were introduced or fixed by a commit.  (CY-3560)
+-   Continuous improvements on Codacy API documentation (DOCS-42)
 
 ## Bug fixes
 
 -   Fixed an issue that caused the default page size to be 10 instead of 100 when calling the listOrganizationRepositories API endpoint for a Bitbucket organization. (CY-3976)
--   Fixed an issue where Cppcheck was not respecting the minimum timeout provided by the Codacy application. (CY-3790)
+-   Fixed an issue where Cppcheck wasn't respecting the minimum timeout provided by the Codacy application. (CY-3790)
 
 ## Tool versions
 
@@ -32,7 +32,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Clang-tidy 10.0.1
 -   CodeNarc 1.6
 -   Coffeelint 2.1.0
--   cppcheck 2.2
+-   Cppcheck 2.2
 -   Credo 1.4.0
 -   CSSLint 1.0.5
 -   Detekt 1.14.2
@@ -49,13 +49,13 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   PMD (Legacy) 5.8.1
 -   Prospector 1.3.1
 -   PSScriptAnalyzer 1.18.3
--   PyLint 1.9.5
--   **PyLint (Python 3) 2.7.2 (updated from 2.6.0)**
+-   Pylint 1.9.5
+-   **Pylint (Python 3) 2.7.2 (updated from 2.6.0)**
 -   RemarkLint 7.0.1
 -   Revive 1.0.2
 -   **Rubocop 1.12.0 (updated from 1.11.0)**
 -   ScalaStyle 1.5.0
--   shellcheck v0.7.1
+-   ShellCheck v0.7.1
 -   **Sonar C# 8.15 (updated from 8.13)**
 -   Sonar Visual Basic 8.15
 -   SpotBugs 4.1.2
