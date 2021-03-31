@@ -18,8 +18,6 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 -   Fixed an issue that caused the default page size to be 10 instead of 100 when calling the listOrganizationRepositories API endpoint for a Bitbucket organization. (CY-3976)
 -   Fixed an issue where Cppcheck was not respecting the minimum timeout provided by the Codacy application. (CY-3790)
--   Use full space for chart when there are no suggestions on dashboard. (CY-3715)
-
 
 ## Tool versions
 
