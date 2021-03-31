@@ -14,6 +14,7 @@ For product updates that are in progress or planned, see Codacy's [public roadma
 
 ## Codacy Self-hosted release notes
 
+-   [v3.5.0](self-hosted/self-hosted-v3.5.0.md) (March 31, 2021)
 -   [v3.4.0](self-hosted/self-hosted-v3.4.0.md) (March 12, 2021)
 -   [v3.3.0](self-hosted/self-hosted-v3.3.0.md) (February 12, 2021)
 -   [v3.2.0](self-hosted/self-hosted-v3.2.0.md) (December 17, 2020)
