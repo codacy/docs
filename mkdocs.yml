@@ -30,7 +30,7 @@ strict: true
 
 # Extra variables
 extra:
-    version: "3.4.0"
+    version: "3.5.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
@@ -627,6 +627,7 @@ nav:
                 - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
                 - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
           - Codacy Self-hosted:
+                - release-notes/self-hosted/self-hosted-v3.5.0.md
                 - release-notes/self-hosted/self-hosted-v3.4.0.md
                 - release-notes/self-hosted/self-hosted-v3.3.0.md
                 - release-notes/self-hosted/self-hosted-v3.2.0.md

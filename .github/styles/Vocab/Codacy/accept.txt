@@ -8,6 +8,7 @@ Bundler
 Checkov
 Checkstyle
 Clang-Tidy
+Cloudformation
 cloc
 Cobertura
 Codacy
