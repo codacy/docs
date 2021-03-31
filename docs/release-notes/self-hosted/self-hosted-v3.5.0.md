@@ -6,8 +6,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
--   Now, Codacy allows [configuring who is allowed to ignore files](https://docs.codacy.com/organizations/roles-and-permissions-for-synced-organizations/#change-analysis-configuration) on all supported Git providers. (CY-3883)
--   Now, Codacy allows [configuring who is allowed to manage patterns](https://docs.codacy.com/organizations/roles-and-permissions-for-synced-organizations/#change-analysis-configuration) on all supported Git providers.  (CY-3822)
+-   Now, Codacy allows [configuring who is allowed to manage patterns and ignore files](https://docs.codacy.com/organizations/roles-and-permissions-for-synced-organizations/#change-analysis-configuration) on all supported Git providers. (CY-3883)
 -   Now, Codacy has [Checkov support](https://github.com/bridgecrewio/checkov), extending analysis to infrastructure-as-code like Terraform, Cloudformation and Kubernetes  (CY-3830)
 -   Improved visibility on the tool that reported an issue, bringing that information to the top of an issue detail. (CY-3768)
 -   Added the following Codacy API endpoints:
@@ -69,4 +68,3 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Tailor 0.12.0
 -   TSLint 6.1.3
 -   TSQLLint 1.11.1
-
