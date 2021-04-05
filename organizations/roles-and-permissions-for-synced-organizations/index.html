@@ -2647,7 +2647,8 @@
       <th>Ignore issues and files</th>
       <th>Add repository</th>
       <th>Configure repository</th>
-      <th>Configure tools and patterns</th>
+      <th>Configure tools, patterns and file extensions</th>
+      <th>Manage branches</th>
       <th>View repository</th>
       <th>Invite and accept members</th>
       <th>Modify billing</th>
@@ -2665,6 +2666,7 @@
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Repository Read</td>
@@ -2672,6 +2674,7 @@
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
@@ -2684,6 +2687,7 @@
       <td>No</td>
       <td>No</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -2694,6 +2698,7 @@
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>Yes</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
@@ -2706,6 +2711,7 @@
       <td>No</td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -2717,6 +2723,7 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -2727,6 +2734,7 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td>Yes</td>
@@ -2743,6 +2751,7 @@
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td><span>Guest</span></td>
@@ -2750,6 +2759,7 @@
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
@@ -2762,6 +2772,7 @@
       <td>No</td>
       <td>No</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -2772,6 +2783,7 @@
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
@@ -2784,6 +2796,7 @@
       <td>No</td>
       <td>No</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -2795,6 +2808,7 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -2805,6 +2819,7 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td>Yes</td>
@@ -2818,6 +2833,7 @@
       <td>No</td>
       <td>No</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -2828,6 +2844,7 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td>Yes</td>
@@ -2841,7 +2858,7 @@
 <sup id="note-3">3</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.</p>
 <p>See <a href="../managing-people/">managing people</a> to list and manage the members of your organization.</p>
 <h2 id="change-analysis-configuration">Configuring who can change analysis configurations<a class="headerlink" href="#change-analysis-configuration" title="Permanent link">&para;</a></h2>
-<p>By default, only users with Write permission on a repository can change analysis configurations. In your Organization's settings, you can find <strong>Members privileges</strong> where you can define the lowest permission required to <a href="../../repositories/issues/#ignoring-and-managing-issues">ignore issues</a> for your organization, <a href="../../repositories-configure/ignoring-files/">ignore files</a> and <a href="../../repositories-configure/code-patterns/">configure your code patterns</a> on your organization.</p>
+<p>By default, only users with Write permission on a repository can change analysis configurations. In your Organization's settings, you can find <strong>Members privileges</strong> where you can define the lowest permission required to <a href="../../repositories/issues/#ignoring-and-managing-issues">ignore issues</a> for your organization, <a href="../../repositories-configure/ignoring-files/">ignore files</a>, <a href="../../repositories-configure/code-patterns/">configure your code patterns</a>, <a href="../../repositories-configure/file-extensions/">configure file extensions</a> and <a href="../../repositories-configure/managing-branches/">manage your branches</a> on your organization.</p>
 <p><img alt="Configuring who can change analysis configurations" src="../images/analysis-configuration.png" /></p>
 <p>Codacy doesn't allow changing the role of a user, as the roles on Codacy are mirrored from your Git provider and applied to each repository.</p>
               
@@ -2915,7 +2932,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 26, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 5, 2021</span>
     
   </small>
 </div>
