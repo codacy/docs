@@ -11,7 +11,7 @@ Depending on your role on the Git provider you will have different permissions o
       <th>Ignore issues and files</th>
       <th>Add repository</th>
       <th>Configure repository</th>
-      <th>Configure tools and patterns</th>
+      <th>Configure tools, patterns and file extensions</th>
       <th>Manage branches</th>
       <th>View repository</th>
       <th>Invite and accept members</th>
@@ -22,6 +22,7 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td rowspan="7">GitHub Cloud and GitHub Enterprise</td>
       <td>Outside Collaborator<sup><a href="#note-1">1</a></sup></td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -224,7 +225,7 @@ See [managing people](managing-people.md) to list and manage the members of your
 
 ## Configuring who can change analysis configurations {: id="change-analysis-configuration"}
 
-By default, only users with Write permission on a repository can change analysis configurations. In your Organization's settings, you can find **Members privileges** where you can define the lowest permission required to [ignore issues](../repositories/issues.md#ignoring-and-managing-issues) for your organization, [ignore files](../repositories-configure/ignoring-files.md), [configure your code patterns](../repositories-configure/code-patterns.md) and [manage your branches](../repositories-configure/managing-branches.md) on your organization.
+By default, only users with Write permission on a repository can change analysis configurations. In your Organization's settings, you can find **Members privileges** where you can define the lowest permission required to [ignore issues](../repositories/issues.md#ignoring-and-managing-issues) for your organization, [ignore files](../repositories-configure/ignoring-files.md), [configure your code patterns](../repositories-configure/code-patterns.md), [configure file extensions](../repositories-configure/file-extensions.md) and [manage your branches](../repositories-configure/managing-branches.md) on your organization.
 
 ![Configuring who can change analysis configurations](images/analysis-configuration.png)
 
