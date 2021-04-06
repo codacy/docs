@@ -66,6 +66,7 @@ plugins:
           match_path: "release-notes/.*"
     - monorepo
     - markdownextradata
+    - meta-descriptions
     - redirects:
           redirect_maps:
               # Redirect legacy Zendesk knowledge base pages
