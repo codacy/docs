@@ -43,7 +43,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Hadolint 1.18.2
 -   JacksonLinter 2.10.2
 -   JSHint 2.12.0
--   PHP Code Sniffer 3.5.8
+-   PHP_CodeSniffer 3.5.8
 -   PHP Mess Detector 2.8.1
 -   PMD 6.28.0
 -   PMD (Legacy) 5.8.1
@@ -54,7 +54,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   RemarkLint 7.0.1
 -   Revive 1.0.2
 -   **Rubocop 1.12.0 (updated from 1.11.0)**
--   ScalaStyle 1.5.0
+-   Scalastyle 1.5.0
 -   ShellCheck v0.7.1
 -   **Sonar C# 8.15 (updated from 8.13)**
 -   Sonar Visual Basic 8.15
