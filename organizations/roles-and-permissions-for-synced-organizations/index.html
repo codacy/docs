@@ -2858,8 +2858,16 @@
 <sup id="note-3">3</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.</p>
 <p>See <a href="../managing-people/">managing people</a> to list and manage the members of your organization.</p>
 <h2 id="change-analysis-configuration">Configuring who can change analysis configurations<a class="headerlink" href="#change-analysis-configuration" title="Permanent link">&para;</a></h2>
-<p>By default, only users with Write permission on a repository can change analysis configurations. In your Organization's settings, you can find <strong>Members privileges</strong> where you can define the lowest permission required to <a href="../../repositories/issues/#ignoring-and-managing-issues">ignore issues</a> for your organization, <a href="../../repositories-configure/ignoring-files/">ignore files</a>, <a href="../../repositories-configure/code-patterns/">configure your code patterns</a>, <a href="../../repositories-configure/file-extensions/">configure file extensions</a> and <a href="../../repositories-configure/managing-branches/">manage your branches</a> on your organization.</p>
-<p><img alt="Configuring who can change analysis configurations" src="../images/analysis-configuration.png" /></p>
+<p>By default, only users with <strong>Write</strong> permission on a repository can change analysis configurations.</p>
+<p>To change this, open your organization <strong>Settings</strong>, page <strong>Plan and billing</strong>, and  define the lowest permission required to perform the following operations on the repositories of your organization:</p>
+<ul>
+<li><a href="../../repositories/issues/#ignoring-and-managing-issues">Ignore issues</a></li>
+<li><a href="../../repositories-configure/ignoring-files/">Ignore files</a></li>
+<li><a href="../../repositories-configure/code-patterns/">Configure code patterns</a></li>
+<li><a href="../../repositories-configure/file-extensions/">Configure file extensions</a></li>
+<li><a href="../../repositories-configure/managing-branches/">Manage branches</a></li>
+</ul>
+<p><img alt="Configuring who can change analysis configurations" src="../images/organization-analysis-configuration.png" /></p>
 <p>Codacy doesn't allow changing the role of a user, as the roles on Codacy are mirrored from your Git provider and applied to each repository.</p>
               
               
@@ -2932,7 +2940,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 5, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 7, 2021</span>
     
   </small>
 </div>
