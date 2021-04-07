@@ -225,9 +225,16 @@ See [managing people](managing-people.md) to list and manage the members of your
 
 ## Configuring who can change analysis configurations {: id="change-analysis-configuration"}
 
-By default, only users with Write permission on a repository can change analysis configurations. In your Organization's settings, you can find **Members privileges** where you can define the lowest permission required to [ignore issues](../repositories/issues.md#ignoring-and-managing-issues) for your organization, [ignore files](../repositories-configure/ignoring-files.md), [configure your code patterns](../repositories-configure/code-patterns.md), [configure file extensions](../repositories-configure/file-extensions.md) and [manage your branches](../repositories-configure/managing-branches.md) on your organization.
+By default, only users with **Write** permission on a repository can change analysis configurations.
 
-![Configuring who can change analysis configurations](images/analysis-configuration.png)
+To change this, open your organization **Settings**, page **Plan and billing**, and  define the lowest permission required to perform the following operations on the repositories of your organization:
+
+-   [Ignore issues](../repositories/issues.md#ignoring-and-managing-issues)
+-   [Ignore files](../repositories-configure/ignoring-files.md)
+-   [Configure code patterns](../repositories-configure/code-patterns.md)
+-   [Configure file extensions](../repositories-configure/file-extensions.md)
+-   [Manage branches](../repositories-configure/managing-branches.md)
+
 ![Configuring who can change analysis configurations](images/organization-analysis-configuration.png)
 
 Codacy doesn't allow changing the role of a user, as the roles on Codacy are mirrored from your Git provider and applied to each repository.
