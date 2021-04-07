@@ -2657,19 +2657,19 @@
 <p>To upgrade Codacy, follow <a href="../../../chart/maintenance/upgrade/">these instructions</a>.</p>
 <h2 id="product-enhancements">Product enhancements<a class="headerlink" href="#product-enhancements" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Now, Codacy allows <a href="https://docs.codacy.com/organizations/roles-and-permissions-for-synced-organizations/#change-analysis-configuration">configuring who is allowed to manage patterns and ignore files</a> on all supported Git providers. (CY-3883)</li>
-<li>Improved visibility on the tool that reported an issue, bringing that information to the top of an issue detail. (CY-3768)</li>
+<li>Now, Codacy allows <a href="https://docs.codacy.com/v3.5/organizations/roles-and-permissions-for-synced-organizations/#change-analysis-configuration">configuring who is allowed to manage patterns and ignore files</a> on all supported Git providers. (CY-3883)</li>
+<li>Codacy now runs <a href="https://github.com/bridgecrewio/checkov">Checkov</a>, extending the analysis support for infrastructure-as-code: Terraform, Terraform Plan, Cloudformation, Kubernetes, Serverless framework, and ARM Templates. This new type of analysis contains more than 500 rules, covering compliance and security best practices for AWS, Azure, and Google Cloud. (CY-3830)</li>
+<li>Improved visibility of the tool that reports each issue, bringing that information to the top of the issue details. (CY-3768)</li>
 <li>Added the following Codacy API endpoints:<ul>
-<li><strong><a href="https://api.codacy.com/api/api-docs#getcommitdeltastatistics">getCommitDeltaStatistics</a></strong> - Returns the quality metric deltas introduced by a commit. (CY-3560)</li>
-<li><strong><a href="https://api.codacy.com/api/api-docs#listcommitdeltaissues">listCommitDeltaIssues</a></strong> - Returns the list of issues that were introduced or fixed by a commit.  (CY-3560)</li>
+<li><strong><a href="https://api.codacy.com/api/api-docs#getcommitdeltastatistics">getCommitDeltaStatistics</a></strong> returns the quality metric deltas introduced by a commit. (CY-3560)</li>
+<li><strong><a href="https://api.codacy.com/api/api-docs#listcommitdeltaissues">listCommitDeltaIssues</a></strong> returns the list of issues that were introduced or fixed by a commit. (CY-3560)</li>
 </ul>
 </li>
-<li>Continuous improvements on Codacy API documentation (DOCS-42)</li>
-<li>Codacy is now running <a href="https://github.com/bridgecrewio/checkov">Checkov</a>, which extends our analysis for infrastructure-as-code: Terraform, Terraform Plan, Cloudformation, Kubernetes, Serverless framework, and ARM Templates are now supported. This new type of analysis contains more than 500 rules, covering compliance and security best practices for AWS, Azure and Google Cloud.  (CY-3830)</li>
+<li>Continuous improvements on the <a href="https://docs.codacy.com/v3.5/codacy-api/using-the-codacy-api/">Codacy API documentation</a>. (DOCS-42)</li>
 </ul>
 <h2 id="bug-fixes">Bug fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Fixed an issue that caused the default page size to be 10 instead of 100 when calling the listOrganizationRepositories API endpoint for a Bitbucket organization. (CY-3976)</li>
+<li>Fixed an issue that caused the default page size to be 10 instead of 100 when calling the <a href="https://api.codacy.com/api/api-docs#listorganizationrepositories">listOrganizationRepositories</a> API endpoint for a Bitbucket organization. (CY-3976)</li>
 <li>Fixed an issue where Cppcheck wasn't respecting the minimum timeout provided by the Codacy application. (CY-3790)</li>
 </ul>
 <h2 id="tool-versions">Tool versions<a class="headerlink" href="#tool-versions" title="Permanent link">&para;</a></h2>
@@ -2695,7 +2695,7 @@
 <li>Hadolint 1.18.2</li>
 <li>JacksonLinter 2.10.2</li>
 <li>JSHint 2.12.0</li>
-<li>PHP Code Sniffer 3.5.8</li>
+<li>PHP_CodeSniffer 3.5.8</li>
 <li>PHP Mess Detector 2.8.1</li>
 <li>PMD 6.28.0</li>
 <li>PMD (Legacy) 5.8.1</li>
@@ -2706,7 +2706,7 @@
 <li>RemarkLint 7.0.1</li>
 <li>Revive 1.0.2</li>
 <li><strong>Rubocop 1.12.0 (updated from 1.11.0)</strong></li>
-<li>ScalaStyle 1.5.0</li>
+<li>Scalastyle 1.5.0</li>
 <li>ShellCheck v0.7.1</li>
 <li><strong>Sonar C# 8.15 (updated from 8.13)</strong></li>
 <li>Sonar Visual Basic 8.15</li>
@@ -2790,7 +2790,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 31, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 7, 2021</span>
     
   </small>
 </div>
