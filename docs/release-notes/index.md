@@ -9,6 +9,9 @@ This section contains the release notes for Codacy Cloud and Codacy Self-hosted.
 
 For product updates that are in progress or planned, see Codacy's [public roadmap](https://roadmap.codacy.com/tabs/1-in-progress){: target="_blank"} instead.
 
+!!! tip
+    Receive a notification when there are new Codacy release notes by subscribing to this [<img style="height: 1em;" src="../assets/images/icon-rss-feed.svg"/> RSS feed](/feed_rss_created.xml).
+
 ## Codacy Cloud release notes
 
 🚧 Regular release notes for Codacy Cloud will be available soon.
