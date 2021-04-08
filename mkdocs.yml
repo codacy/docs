@@ -566,7 +566,7 @@ nav:
           - codacy-api/using-the-codacy-api.md
           - codacy-api/api-tokens.md
           - codacy-api/adding-repositories-to-codacy-programmatically.md
-          - API v3 reference (preferred): https://api.codacy.com/api/api-docs
+          - API v3 reference (recommended): https://api.codacy.com/api/api-docs
           - API v2 reference: https://api.codacy.com/swagger
     - Installing Codacy: "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
