@@ -1,3 +1,8 @@
+---
+rss_title: Codacy release notes RSS feed
+rss_href: /feed_rss_created.xml
+---
+
 # Release notes
 
 This section contains the release notes for Codacy Cloud and Codacy Self-hosted.

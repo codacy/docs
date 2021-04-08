@@ -1,3 +1,8 @@
+---
+rss_title: Codacy release notes RSS feed
+rss_href: /feed_rss_created.xml
+---
+
 # Codacy now supports GitHub Apps
 
 We're changing the way you authenticate to Codacy with GitHub: Starting February 2020, when you sign in, you'll be prompted to use GitHub Apps.

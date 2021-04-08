@@ -1,3 +1,8 @@
+---
+rss_title: Codacy release notes RSS feed
+rss_href: /feed_rss_created.xml
+---
+
 # Cloud Release Notes | November 2, 2018
 
 ## Product enhancements

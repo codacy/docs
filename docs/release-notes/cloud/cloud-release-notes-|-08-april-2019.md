@@ -1,3 +1,8 @@
+---
+rss_title: Codacy release notes RSS feed
+rss_href: /feed_rss_created.xml
+---
+
 # Cloud Release Notes | April 8, 2019
 
 ## Bug fixes
