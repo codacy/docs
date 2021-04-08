@@ -34,6 +34,7 @@ extra:
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
+    support_contact: "support@codacy.com"
 
 # Repository
 repo_name: "codacy/docs"
