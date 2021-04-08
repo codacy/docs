@@ -2,7 +2,7 @@
 site_name: "Codacy docs"
 site_description: "Documentation for the Codacy automated code review tool"
 site_url: "https://docs.codacy.com/"
-site_author: "support@codacy.com"
+site_author: "support@codacy.com (Codacy Support)"
 
 # Copyright
 copyright: "© <script>document.write(new Date().getFullYear())</script> <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
@@ -34,6 +34,7 @@ extra:
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
+    support_contact: "support@codacy.com"
 
 # Repository
 repo_name: "codacy/docs"
