@@ -1,6 +1,6 @@
 # Tools
 
-This folder includes the auxiliary tools below to support authoring and maintaining the Codacy documentation.
+This directory includes the auxiliary tools below to support authoring and maintaining the Codacy documentation.
 
 ## export-meta-descriptions
 
