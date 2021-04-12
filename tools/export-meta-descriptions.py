@@ -1,9 +1,9 @@
 import argh
 from bs4 import BeautifulSoup
-import urllib.parse
 
 import os
 import re
+from urllib.parse import unquote
 
 SITE_URL = r"https://docs\.codacy\.com"
 
@@ -24,7 +24,7 @@ def read_descriptions(sitemap, sitemap_root):
         # Transform URLs in local file names
         page_path = re.sub(SITE_URL + r"/(.*)",
                            r"\1index.html",
-                           urllib.parse.unquote(loc.text))
+                           unquote(loc.text))
         with open(sitemap_root + "/" + page_path) as page_file:
             sitemap = BeautifulSoup(page_file, features="lxml")
             meta_element = sitemap.select_one("meta[name=\"description\"]")
@@ -41,11 +41,14 @@ def write_csv(data, output_file):
             f.write(f"{key}\t{data[key]}\n")
 
 
-def main(sitemap_path, output_path="descriptions.csv"):
+def main(sitemap_path: "Path of a local sitemap.xml file.",
+         output_path: "Path of the output CSV file." ="descriptions.csv"):
+    """Exports meta descriptions from all pages referenced in a local sitemap.xml file to a CSV file."""
     sitemap = parse_sitemap(sitemap_path)
     sitemap_root = os.path.dirname(sitemap_path)
     pages = read_descriptions(sitemap, sitemap_root)
     write_csv(pages, output_path)
 
 
-argh.dispatch_command(main)
+if __name__ == '__main__':
+    argh.dispatch_command(main)
