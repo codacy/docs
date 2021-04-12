@@ -1,26 +1,33 @@
 import argh
 from bs4 import BeautifulSoup
+from tqdm import tqdm
 
 import os
 import re
+import logging
 from urllib.parse import unquote
 
 SITE_URL = r"https://docs\.codacy\.com"
 
+logging.basicConfig(format="%(message)s", level=logging.INFO)
+
 
 def parse_sitemap(sitemap_path):
     if not os.path.isfile(sitemap_path):
-        print("Can't open sitemap file.")
+        print("Can't open sitemap file")
         return 1
 
+    logging.info(f"Reading {sitemap_path}")
     with open(sitemap_path) as f:
         soup = BeautifulSoup(f.read(), features="lxml")
+    logging.info(f"Sitemap references {len(soup.find_all('loc'))} pages")
     return soup
 
 
 def read_descriptions(sitemap, sitemap_root):
     pages = {}
-    for loc in sitemap.find_all("loc"):
+    logging.info("Reading meta descriptions from pages:")
+    for loc in tqdm(sitemap.find_all("loc")):
         # Transform URLs in local file names
         page_path = re.sub(SITE_URL + r"/(.*)",
                            r"\1index.html",
@@ -36,6 +43,7 @@ def read_descriptions(sitemap, sitemap_root):
 
 
 def write_csv(data, output_file):
+    logging.info(f"Writing {output_file}")
     with open(output_file, "w") as f:
         for key in data.keys():
             f.write(f"{key}\t{data[key]}\n")
