@@ -1,3 +1,5 @@
+#!/usr/bin/env python3
+
 import argh
 from bs4 import BeautifulSoup
 from tqdm import tqdm
