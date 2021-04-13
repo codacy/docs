@@ -17,27 +17,87 @@ Depending on the provider, we may request different permissions due to different
 
 If you log in with GitHub, Codacy requires the following [app permissions](https://developer.github.com/v3/apps/permissions/):
 
-Repository permissions:
-
--   Checks - Read & Write. Codacy creates and updates check runs with the results of code analysis.
--   Issues - Read & Write. Codacy can create GitHub issues from issues found during code analysis.
--   Metadata - Read Only. Codacy retrieves repository metadata, such as name, languages, collaborators and commit information.
--   Pull requests - Read & Write. Codacy retrieves pull request information to display on its side. Codacy might also create comments and suggestions on the pull request, according to the results of code analysis.
--   Webhooks - Read & Write. Codacy creates webhooks for code pushes and pull request events (created, merged, etc.). These events might trigger code analysis.
--   Commit statuses - Read & Write. Codacy sets the status of commits according to the result of code analysis.
--   Administration - Read & Write. [Codacy creates an SSH key](#why-does-codacy-ask-for-permission-to-create-ssh-keys) on the repository to allow cloning and integrating with your repository.
-
-Organization permissions:
-
--   Webhooks - Read & Write. Codacy creates webhooks for organization and repository events (creation, deletion, member added, etc.) to enable [synced organizations](../organizations/what-are-synced-organizations.md).
--   Members - Read Only. Codacy retrieves information about organization members and teams to enforce permissions, enable synced organizations and user management.
-
-User permissions:
-
-These permissions are granted on an individual user basis as part of the user authorization flow. They will be also be displayed during account installation for transparency.
-
--   Email addresses - Read Only. Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.
--   Git SSH keys - Read & Write. [Codacy creates an SSH key](#why-does-codacy-ask-for-permission-to-create-ssh-keys) on the repository to allow cloning and integrating with your repository.
+<table>
+  <thead>
+    <tr>
+      <th>Scope</th>
+      <th>Permissions</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3">Repository permissions:</td>
+      <td></td>
+      <td></td>
+    <tr>
+      <td>Checks</td>
+      <td>Read & Write</td>
+      <td>Codacy creates and updates check runs with the results of code analysis.</td>
+    </tr>
+    <tr>
+      <td>Issues</td>
+      <td>Read & Write</td>
+      <td>Codacy can create GitHub issues from issues found during code analysis.</td>
+    </tr>
+    <tr>
+      <td>Metadata</td>
+      <td>Read Only</td>
+      <td>Codacy retrieves repository metadata, such as name, languages, collaborators and commit information.</td>
+    </tr>
+    <tr>
+      <td>Pull requests</td>
+      <td>Read & Write</td>
+      <td>Codacy retrieves pull request information to display on its side. Codacy might also create comments and suggestions on the pull request, according to the results of code analysis.</td>
+    </tr>
+    <tr>
+      <td>Webhooks</td>
+      <td>Read & Write</td>
+      <td>Codacy creates webhooks for code pushes and pull request events (created, merged, etc.). These events might trigger code analysis.</td>
+    </tr>
+    <tr>
+      <td>Commit statuses</td>
+      <td>Read & Write</td>
+      <td>Codacy sets the status of commits according to the result of code analysis.</td>
+    </tr>
+    <tr>
+      <td>Administration</td>
+      <td>Read & Write</td>
+      <td><a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
+    </tr>
+    <tr>
+      <td colspan="3">Organization permissions:</td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Webhooks</td>
+      <td>Read & Write</td>
+      <td>Codacy creates webhooks for organization and repository events (creation, deletion, member added, etc.) to enable <a href="../organizations/what-are-synced-organizations/">synced organizations</a>.</td>
+    </tr>
+    <tr>
+      <td>Members</td>
+      <td>Read Only</td>
+      <td>Codacy retrieves information about organization members and teams to enforce permissions, enable synced organizations and user management.</td>
+    </tr>
+    <tr>
+      <td colspan="3"><p>User permissions:</p>
+                      <p>These permissions are granted on an individual user basis as part of the user authorization flow. They will be also be displayed during account installation for transparency.</p></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>Email addresses</td>
+      <td>Read Only</td>
+      <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</td>
+    </tr>
+    <tr>
+      <td>Git SSH keys</td>
+      <td>Read & Write</td>
+      <td><a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## GitLab Cloud
 
