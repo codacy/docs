@@ -1,3 +1,7 @@
+---
+description: Codacy runs on every modern browser supporting HTML5 and CSS3.
+---
+
 # Which browsers does Codacy support?
 
 Codacy runs on every modern browser supporting HTML5 and CSS3:

@@ -1,3 +1,7 @@
+---
+description: Some changes on the remote Git provider can prevent Codacy from cloning the repository. When this happens, Codacy displays the error message Failed to clone the repository on the Repository Dashboard page.
+---
+
 # We no longer have access to this repository, check your SSH keys
 
 SSH keys are exclusively used for repository cloning. Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, the key can be added either:

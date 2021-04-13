@@ -1,6 +1,10 @@
+---
+description: If your repository has source files with unrecognized extensions, you can configure Codacy to include them in the next analysis.
+---
+
 # Configuring file extensions
 
-If your repository has source files with unrecognized extensions, you can force Codacy to include them in the next analysis:
+If your repository has source files with unrecognized extensions, you can configure Codacy to include them in the next analysis:
 
 1.  Go to your repository's **Settings**, **File Extensions**.
 

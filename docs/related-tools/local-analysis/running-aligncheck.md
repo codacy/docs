@@ -1,3 +1,7 @@
+---
+description: Instructions on how to run aligncheck as a client-side tool on Codacy.
+---
+
 # Running aligncheck
 
 To run aligncheck as a [client-side tool](client-side-tools.md):

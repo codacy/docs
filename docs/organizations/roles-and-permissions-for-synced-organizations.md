@@ -1,3 +1,7 @@
+---
+description: List of operations that users can perform on Codacy depending on their permissions on the Git provider, and how to configure who can change analysis configurations.
+---
+
 # Roles and permissions for synced organizations
 
 Depending on your role on the Git provider you will have different permissions on Codacy:

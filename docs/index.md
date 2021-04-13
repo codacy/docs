@@ -1,3 +1,7 @@
+---
+description: Documentation for the Codacy automated code review tool.
+---
+
 # Documentation home
 
 <div class="content-columns-wrapper">
