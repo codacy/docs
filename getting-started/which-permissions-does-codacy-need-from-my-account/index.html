@@ -273,6 +273,13 @@
   
 </li>
       
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys" class="md-nav__link">
+    Why does Codacy ask for permission to create SSH keys?
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2678,53 +2685,43 @@
 <p>If you log in with GitHub, Codacy requires the following <a href="https://developer.github.com/v3/apps/permissions/">app permissions</a>:</p>
 <p>Repository permissions:</p>
 <ul>
-<li>Checks: Checks on code - Read &amp; Write</li>
-<li>Issues: Issues and related comments, assignees, labels, and milestones - Read &amp; Write</li>
-<li>Metadata: Search repositories, list collaborators, and access repository metadata - Read Only</li>
-<li>Pull requests: Pull requests and related comments, assignees, labels, milestones, and merges - Read &amp; Write</li>
-<li>Webhooks: Manage the post-receive hooks for a repository - Read &amp; Write</li>
-<li>Commit statuses: Commit statuses - Read &amp; Write</li>
-<li>Administration: Create SSH keys - Read &amp; Write. Codacy creates an SSH key on the repository to allow cloning and integrating with your repository.</li>
+<li>Checks - Read &amp; Write. Codacy creates and updates check runs with the results of code analysis.</li>
+<li>Issues - Read &amp; Write. Codacy can create GitHub issues from issues found during code analysis.</li>
+<li>Metadata - Read Only. Codacy retrieves repository metadata, such as name, languages, collaborators and commit information.</li>
+<li>Pull requests - Read &amp; Write. Codacy retrieves pull request information to display on its side. Codacy might also create comments and suggestions on the pull request, according to the results of code analysis.</li>
+<li>Webhooks - Read &amp; Write. Codacy creates webhooks for code pushes and pull request events (created, merged, etc.). These events might trigger code analysis.</li>
+<li>Commit statuses - Read &amp; Write. Codacy sets the status of commits according to the result of code analysis.</li>
+<li>Administration - Read &amp; Write. <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</li>
 </ul>
 <p>Organization permissions:</p>
 <ul>
-<li>Members: Organization members and teams - Read Only</li>
-<li>Webhooks: Manage the post-receive hooks for an organization - Read &amp; Write</li>
+<li>Webhooks - Read &amp; Write. Codacy creates webhooks for organization and repository events (creation, deletion, member added, etc.) to enable <a href="../../organizations/what-are-synced-organizations/">synced organizations</a>.</li>
+<li>Members - Read Only. Codacy retrieves information about organization members and teams to enforce permissions, enable synced organizations and user management.</li>
 </ul>
 <p>User permissions:</p>
 <p>These permissions are granted on an individual user basis as part of the user authorization flow. They will be also be displayed during account installation for transparency.</p>
 <ul>
-<li>Email addresses: Manage a user's email addresses - Read Only</li>
-<li>Git SSH keys: Create SSH keys - Read &amp; Write</li>
+<li>Email addresses - Read Only. Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</li>
+<li>Git SSH keys - Read &amp; Write. <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Codacy asks for permissions to create SSH keys because it needs to create an SSH key in your account in the following situations:</p>
-<ul>
-<li>If your repository uses submodules, so that Codacy can clone the repositories for each submodule</li>
-<li>If Codacy fails to integrate with a repository using the repository key, so that Codacy can continue to perform analysis</li>
-</ul>
-<p><strong>Codacy only adds read-only SSH keys to be able to clone repositories</strong> and won't have access to any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also <a href="https://docs.github.com/en/github/authenticating-to-github/reviewing-your-ssh-keys">revoke the keys created by Codacy at any time</a>. Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.</p>
-<p>We understand the desire for security and privacy and find that the SSH protocol is preferable to HTTPS as it separates Codacy's access rights from the one of the users.</p>
-</div>
 <h2 id="gitlab-cloud">GitLab Cloud<a class="headerlink" href="#gitlab-cloud" title="Permanent link">&para;</a></h2>
 <p>If you sign up with GitLab Cloud, Codacy requires the following <a href="https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications">permissions/scopes</a>:</p>
 <ul>
-<li><code>api</code> permissions to access the authenticated user's API</li>
-<li><code>read_user</code> permissions to read the authenticated user's personal information</li>
-<li><code>read_repository</code> permissions to read the repositories</li>
-<li><code>openid</code> to authenticate using <a href="https://docs.gitlab.com/ee/integration/openid_connect_provider.html#shared-information">OpenID Connect</a></li>
+<li><code>api</code> - Codacy uses GitLab's API to read and update pull requests, create webhooks for code push events, list commits, repositories, groups, members and permissions.</li>
+<li><code>read_user</code> - Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</li>
+<li><code>read_repository</code> - Codacy retrieves repository metadata, such as name, languages and collaborators.</li>
+<li><code>openid</code> - Codacy uses this permission for authentication using <a href="https://docs.gitlab.com/ee/integration/openid_connect_provider.html#shared-information">OpenID Connect</a></li>
 </ul>
 <h2 id="bitbucket-cloud">Bitbucket Cloud<a class="headerlink" href="#bitbucket-cloud" title="Permanent link">&para;</a></h2>
 <p>If you log in with Bitbucket, Codacy requires the following <a href="https://developer.atlassian.com/cloud/bitbucket/bitbucket-cloud-rest-api-scopes/">permissions/scopes</a>:</p>
 <ul>
-<li>Read and modify your account information</li>
-<li>Read and modify your repositories' issues</li>
+<li><code>account:write</code> - Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis. Furthermore, <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</li>
+<li><code>repository:admin</code> - Codacy retrieves repository metadata, such as name, languages and collaborators, and commit information. <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository (see box above).</li>
+<li><code>pullrequest:write</code> - Codacy retrieves pull request information to display on its side. Codacy might also create comments on the pull request, according to the results of code analysis.</li>
+<li><code>issue:write</code> - Codacy can create Bitbucket issues from issues found during code analysis.</li>
+<li><code>webhook</code> - Codacy creates webhooks for code pushes and pull request events (created, merged, etc.). These events might trigger code analysis. Codacy also creates repository webhooks to enable <a href="../../organizations/what-are-synced-organizations/">synced organizations</a>.</li>
+<li><code>team</code> - Codacy uses your group/team membership information to enforce permissions. </li>
 <li>Read your workspace's project settings and read repositories contained within your workspace's projects</li>
-<li>Read and modify your repositories and their pull requests</li>
-<li>Administer your repositories</li>
-<li>Read your group membership information</li>
-<li>Read and modify your repositories' webhooks</li>
 </ul>
 <h2 id="google-sign-in">Google Sign-In<a class="headerlink" href="#google-sign-in" title="Permanent link">&para;</a></h2>
 <p>If you log in with Google, Codacy requires the following <a href="https://developers.google.com/identity/protocols/oauth2/scopes#google-sign-in">permissions/scopes</a>:</p>
@@ -2751,6 +2748,14 @@
 </ol>
 <p>After revoking an integration, Codacy will no longer be able to access or manipulate resources that require API calls, such as detecting new pull requests or adding comments to pull requests. However, Codacy will still be able to perform operations that only require using the Git protocol either via SSH or HTTPS, such as detecting new commits and calculating diffs. To remove your repositories from Codacy and stop the analysis you must <a href="../../repositories-configure/removing-your-repository/">delete them from your Codacy account</a>.</p>
 <p>If you need to use an integration that you have previously revoked, log in again to Codacy with that integration so that Codacy can request the required permissions from the provider.</p>
+<h2 id="why-does-codacy-ask-for-permission-to-create-ssh-keys">Why does Codacy ask for permission to create SSH keys?<a class="headerlink" href="#why-does-codacy-ask-for-permission-to-create-ssh-keys" title="Permanent link">&para;</a></h2>
+<p>Codacy asks for permission to create SSH keys because it needs to create an SSH key in your account in the following situations:</p>
+<ul>
+<li>If your repository uses submodules, so that Codacy can clone the repositories for each submodule</li>
+<li>If Codacy fails to integrate with a repository using the repository key, so that Codacy can continue to perform analysis</li>
+</ul>
+<p><strong>Codacy only adds read-only SSH keys to be able to clone repositories</strong> and won't have access to any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also <a href="https://docs.github.com/en/github/authenticating-to-github/reviewing-your-ssh-keys">revoke the keys created by Codacy at any time</a>. Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.</p>
+<p>We understand the desire for security and privacy and find that the SSH protocol is preferable to HTTPS as it separates Codacy's access rights from the one of the users.</p>
               
               
                 
