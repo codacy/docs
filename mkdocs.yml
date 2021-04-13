@@ -1,6 +1,6 @@
 # Project information
 site_name: "Codacy docs"
-site_description: "Documentation for the Codacy automated code review tool"
+site_description: "Documentation for the Codacy automated code review tool."
 site_url: "https://docs.codacy.com/"
 site_author: "support@codacy.com (Codacy Support)"
 

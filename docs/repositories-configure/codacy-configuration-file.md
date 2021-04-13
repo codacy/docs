@@ -1,3 +1,7 @@
+---
+description: The Codacy configuration file supports configuring certain advanced features on Codacy.
+---
+
 # Codacy configuration file
 
 Codacy supports configuring certain advanced features through a configuration file:
