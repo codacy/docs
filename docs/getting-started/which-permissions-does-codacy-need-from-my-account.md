@@ -189,9 +189,7 @@ If you log in with Bitbucket, Codacy requires the following [permissions/scopes]
 
 ## Google Sign-In
 
-If you log in with Google, Codacy requires the following [permissions/scopes](https://developers.google.com/identity/protocols/oauth2/scopes#google-sign-in):
-
--   Email permission
+If you log in with Google, Codacy requires the `email` [scope](https://developers.google.com/identity/protocols/oauth2/scopes#google-sign-in).
 
 ## Revoking access to integrations
 
