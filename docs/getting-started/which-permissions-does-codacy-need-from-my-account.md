@@ -103,10 +103,33 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
 
 If you sign up with GitLab Cloud, Codacy requires the following [permissions/scopes](https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications):
 
--   `api` - Codacy uses GitLab's API to read and update pull requests, create webhooks for code push events, list commits, repositories, groups, members and permissions.
--   `read_user` - Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.
--   `read_repository` - Codacy retrieves repository metadata, such as name, languages and collaborators.
--   `openid` - Codacy uses this permission for authentication using [OpenID Connect](https://docs.gitlab.com/ee/integration/openid_connect_provider.html#shared-information)
+
+<table>
+  <thead>
+    <tr>
+      <th>Scope</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>api</code></td>
+      <td>Codacy uses GitLab's API to read and update pull requests, create webhooks for code push events, list commits, repositories, groups, members and permissions.</td>
+    </tr>
+    <tr>
+      <td><code>read_user</code></td>
+      <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</td>
+    </tr>
+    <tr>
+      <td><code>read_repository</code></td>
+      <td>Codacy retrieves repository metadata, such as name, languages and collaborators.</td>
+    </tr>
+    <tr>
+      <td><code>openid</code></td>
+      <td>Codacy uses this permission for authentication using <a href="https://docs.gitlab.com/ee/integration/openid_connect_provider.html#shared-information">OpenID Connect</a>.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Bitbucket Cloud
 
