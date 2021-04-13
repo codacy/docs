@@ -18,6 +18,11 @@ Depending on the provider, we may request different permissions due to different
 If you log in with GitHub, Codacy requires the following [app permissions](https://developer.github.com/v3/apps/permissions/):
 
 <table>
+  <colgroup>
+    <col width="20%"/>
+    <col width="20%"/>
+    <cel width="60%"/>
+  </colgroup>
   <thead>
     <tr>
       <th>Scope</th>
@@ -105,6 +110,10 @@ If you sign up with GitLab Cloud, Codacy requires the following [permissions/sco
 
 
 <table>
+  <colgroup>
+    <col width="25%"/>
+    <col width="75%"/>
+  </colgroup>
   <thead>
     <tr>
       <th>Scope</th>
@@ -135,13 +144,48 @@ If you sign up with GitLab Cloud, Codacy requires the following [permissions/sco
 
 If you log in with Bitbucket, Codacy requires the following [permissions/scopes](https://developer.atlassian.com/cloud/bitbucket/bitbucket-cloud-rest-api-scopes/):
 
--   `account:write` - Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis. Furthermore, [Codacy creates an SSH key](#why-does-codacy-ask-for-permission-to-create-ssh-keys) on the repository to allow cloning and integrating with your repository.
--   `repository:admin` - Codacy retrieves repository metadata, such as name, languages and collaborators, and commit information. [Codacy creates an SSH key](#why-does-codacy-ask-for-permission-to-create-ssh-keys) on the repository to allow cloning and integrating with your repository (see box above).
--   `pullrequest:write` - Codacy retrieves pull request information to display on its side. Codacy might also create comments on the pull request, according to the results of code analysis.
--   `issue:write` - Codacy can create Bitbucket issues from issues found during code analysis.
--   `webhook` - Codacy creates webhooks for code pushes and pull request events (created, merged, etc.). These events might trigger code analysis. Codacy also creates repository webhooks to enable [synced organizations](../organizations/what-are-synced-organizations.md).
--   `team` - Codacy uses your group/team membership information to enforce permissions. 
--   Read your workspace's project settings and read repositories contained within your workspace's projects
+<table>
+  <colgroup>
+    <col width="25%"/>
+    <col width="75%"/>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Scope and permissions</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>account:write</code></td>
+      <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis. Furthermore, <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
+    </tr>
+    <tr>
+      <td><code>repository:admin</code></td>
+      <td>Codacy retrieves repository metadata, such as name, languages and collaborators, and commit information. <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository (see box above).</td>
+    </tr>
+    <tr>
+      <td><code>pullrequest:write</code></td>
+      <td>Codacy retrieves pull request information to display on its side. Codacy might also create comments on the pull request, according to the results of code analysis.</td>
+    </tr>
+    <tr>
+      <td><code>issue:write</code></td>
+      <td>Codacy can create Bitbucket issues from issues found during code analysis.</td>
+    </tr>
+    <tr>
+      <td><code>webhook</code></td>
+      <td>Codacy creates webhooks for code pushes and pull request events (created, merged, etc.). These events might trigger code analysis. Codacy also creates repository webhooks to enable <a href="../organizations/what-are-synced-organizations/">synced organizations</a>.</td>
+    </tr>
+    <tr>
+      <td><code>team</code></td>
+      <td>Codacy uses your group/team membership information to enforce permissions.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Read your workspace's project settings and read repositories contained within your workspace's projects.</td>
+    </tr>
+  </tbody>
+</table>
 
 ## Google Sign-In
 
