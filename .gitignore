@@ -13,3 +13,6 @@ site/
 *.bak
 *.tmp
 *~
+
+# Auxiliary tool outputs
+tools/*.csv

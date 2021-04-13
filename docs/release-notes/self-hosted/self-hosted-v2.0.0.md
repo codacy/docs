@@ -1,7 +1,7 @@
 ---
 rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
-description: Release notes for Codacy Self-hosted v2.0.0
+description: Release notes for Codacy Self-hosted v2.0.0.
 ---
 
 # Self-hosted v2.0.0

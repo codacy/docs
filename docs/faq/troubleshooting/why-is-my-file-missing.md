@@ -1,6 +1,10 @@
+---
+description: In your repository Files page you can view all the files that Codacy detected in your repository. While this page should display all the files in your repository, there are some reasons why some files might be missing.
+---
+
 # Why is my file missing?
 
-In your repository's **Files** page you can view all the files that Codacy detected in your repository:
+In your repository [Files page](../../repositories/files.md) you can view all the files that Codacy detected in your repository:
 
 ![Repository files](images/repository-files.png)
 

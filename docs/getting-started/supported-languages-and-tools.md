@@ -1,3 +1,7 @@
+---
+description: List of all the programming languages that Codacy supports and the corresponding tools that Codacy uses to analyze your source code.
+---
+
 # Supported languages and tools
 
 For each supported programming language, Codacy generally provides:

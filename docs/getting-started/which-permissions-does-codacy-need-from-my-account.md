@@ -1,3 +1,7 @@
+---
+description: Codacy requests only the necessary permissions to integrate with your Git provider.
+---
+
 # Which permissions does Codacy need from my account?
 
 Codacy Cloud uses [OAuth](https://oauth.net/) to handle logins. We support the following providers:

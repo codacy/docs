@@ -1,6 +1,6 @@
 # Slack integration
 
-After adding a repository, you may want to enable Slack integration. Codacy integrates with Slack by sending messages to a channel when it finds new issues.
+Enable the Slack integration to integrate Codacy with Slack by sending messages to a channel when it finds new issues.
 
 To enable the Slack integration access the **Integrations** tab of your repository **Settings**, click **Add integration** and select **Slack** from the list.
 

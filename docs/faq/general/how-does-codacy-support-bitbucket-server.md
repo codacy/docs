@@ -1,6 +1,8 @@
 # How does Codacy support Bitbucket Server?
 
-When you use Bitbucket Server to sign up or log into Codacy, the Bitbucket projects that you belong to will be available to be added as Organizations on Codacy. After adding a project:
+When you use Bitbucket Server to sign up or log into Codacy, the Bitbucket projects that you belong to will be available to be added as Organizations on Codacy.
+
+After adding a project:
 
 -   Codacy displays the list of all repositories that you own in that project so that you can add them to Codacy as repositories to be analyzed
 -   The members of the project will be able to [join or request to join Codacy](../../organizations/managing-people.md#joining)

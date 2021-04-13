@@ -1,6 +1,6 @@
 # Not a member of the organization
 
-When you see this message, it means that Codacy can't analyze a commit because the associated email address doesn't belong to any Codacy user.
+When you see the message **Not a member of the organization** it means that Codacy can't analyze a commit because the associated email address doesn't belong to any Codacy user.
 
 You can check which email address is associated with a commit by hovering the cursor on the name of the contributor on the page for the commit:
 
