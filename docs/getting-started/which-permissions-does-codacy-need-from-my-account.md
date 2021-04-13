@@ -32,7 +32,7 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
   </thead>
   <tbody>
     <tr>
-      <td colspan="3">Repository permissions:</td>
+      <td colspan="3"><strong>Repository permissions:</strong></td>
       <td></td>
       <td></td>
     <tr>
@@ -71,7 +71,7 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
       <td><a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
     </tr>
     <tr>
-      <td colspan="3">Organization permissions:</td>
+      <td colspan="3"><strong>Organization permissions:</strong></td>
       <td></td>
       <td></td>
     </tr>
@@ -86,7 +86,7 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
       <td>Codacy retrieves information about organization members and teams to enforce permissions, enable synced organizations and user management.</td>
     </tr>
     <tr>
-      <td colspan="3"><p>User permissions:</p>
+      <td colspan="3"><p><strong>User permissions:</strong></p>
                       <p>These permissions are granted on an individual user basis as part of the user authorization flow. They will be also be displayed during account installation for transparency.</p></td>
       <td></td>
       <td></td>
