@@ -7,6 +7,9 @@
     "preset-lint-recommended",
     "lint-heading-increment",
     [
+      "lint-heading-style", "atx"
+    ],
+    [
       "lint-unordered-list-marker-style", "-"
     ],
     [
