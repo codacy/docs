@@ -25,7 +25,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.f6f54201.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.a735eda7.min.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.45b0513f.min.css">
       
@@ -44,9 +44,10 @@
       <link rel="stylesheet" href="../../../assets/stylesheets/version-select.css">
     
     
+    
       
         
-<script>!function(){var o=window.analytics=window.analytics||[];if(!o.initialize)if(o.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{o.invoked=!0,o.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"],o.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);return e.unshift(t),o.push(e),o}};for(var e=0;e<o.methods.length;e++){var t=o.methods[e];o[t]=o.factory(t)}o.load=function(e,t){var n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a),o._loadOptions=t},o.SNIPPET_VERSION="4.13.1",o.load("4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL")}}()</script>
+<script>!function(){var o=window.analytics=window.analytics||[];if(!o.initialize)if(o.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{o.invoked=!0,o.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on","addSourceMiddleware","addIntegrationMiddleware","setAnonymousId","addDestinationMiddleware"],o.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);return e.unshift(t),o.push(e),o}};for(var e=0;e<o.methods.length;e++){var t=o.methods[e];o[t]=o.factory(t)}o.load=function(e,t){var n=document.createElement("script");n.type="text/javascript",n.async=!0,n.src="https://cdn.segment.com/analytics.js/v1/"+e+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a),o._loadOptions=t},o.SNIPPET_VERSION="4.13.1",o.load("4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"),o.page()}}()</script>
       
     
     
@@ -2615,16 +2616,13 @@ then will <code>terraform destroy</code> be able to destroy the backend.</p>
       noButton.disabled = true;
     };
     const sendFeedback = (value) => {
-      if (typeof ga !== "function" || ga.getAll().length === 0 ) return;
-      const args = {
-        category: "User Feedback",
-        action: "click",
-        label: window.location.pathname,
-        value: value
-      };
-      // Send an event to Google Analytics using the default Tracker object
-      // https://developers.google.com/analytics/devguides/collection/analyticsjs/tracker-object-reference#send
-      ga.getAll()[0].send("event", args.category, args.action, args.label, args.value);
+      if (typeof analytics === "object") {
+        // Send an event to Segment
+        analytics.track("User Feedback Sent", {
+          url: window.location.href,
+          value: value
+        });
+      }
     };
     yesButton.addEventListener('click', () => {
       yesResponse.classList.add('user-feedback-response--visible');
