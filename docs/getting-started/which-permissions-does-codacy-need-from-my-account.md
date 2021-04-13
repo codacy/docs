@@ -33,8 +33,6 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
   <tbody>
     <tr>
       <td colspan="3"><strong>Repository permissions:</strong></td>
-      <td></td>
-      <td></td>
     <tr>
       <td>Checks</td>
       <td>Read & Write</td>
@@ -72,8 +70,6 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
     </tr>
     <tr>
       <td colspan="3"><strong>Organization permissions:</strong></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td>Webhooks</td>
@@ -88,8 +84,6 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
     <tr>
       <td colspan="3"><p><strong>User permissions:</strong></p>
                       <p>These permissions are granted on an individual user basis as part of the user authorization flow. They will be also be displayed during account installation for transparency.</p></td>
-      <td></td>
-      <td></td>
     </tr>
     <tr>
       <td>Email addresses</td>
