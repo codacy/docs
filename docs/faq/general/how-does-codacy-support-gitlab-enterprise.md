@@ -1,6 +1,8 @@
 # How does Codacy support GitLab Enterprise?
 
-When you use GitLab Enterprise to sign up or log into Codacy, the GitLab Groups that you belong to will be available to be added as Organizations on Codacy. After adding a Group:
+When you use GitLab Enterprise to sign up or log into Codacy, the GitLab Groups that you belong to will be available to be added as Organizations on Codacy.
+
+After adding a Group:
 
 -   Codacy displays the list of all repositories that you own in that Group and Subgroups so that you can add them to Codacy as repositories to be analyzed
 -   The members of the Group will be able to [join or request to join Codacy](../../organizations/managing-people.md#joining)
