@@ -25,9 +25,9 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.04f57cfe.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.a735eda7.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.84c9b78b.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.45b0513f.min.css">
       
       
         
@@ -2657,18 +2657,13 @@
       noButton.disabled = true;
     };
     const sendFeedback = (value) => {
-      if (typeof ga !== "function" || ga.getAll().length === 0 ) return;
-      const args = {
-        category: "User Feedback",
-        action: "click",
-        label: window.location.pathname,
-        value: value
-      };
-      // Send an event to Google Analytics using the default Tracker object
-      // https://developers.google.com/analytics/devguides/collection/analyticsjs/tracker-object-reference#send
-      ga.getAll()[0].send("event", args.category, args.action, args.label, args.value);
-      // Send an event to Segment
-      analytics.track("User Feedback Sent", {url: window.location.href, value: value});
+      if (typeof analytics === "object") {
+        // Send an event to Segment
+        analytics.track("User Feedback Sent", {
+          url: window.location.href,
+          value: value
+        });
+      }
     };
     yesButton.addEventListener('click', () => {
       yesResponse.classList.add('user-feedback-response--visible');
