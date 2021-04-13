@@ -1,3 +1,7 @@
+---
+description: The Files page lists all the files in your repository and allows you to keep track of files with low coverage, high complexity, too many issues, or a lot of duplication that could be refactored.
+---
+
 # Files page
 
 The file list shows all the files in your repository, sortable by six different columns:
@@ -11,7 +15,7 @@ The file list shows all the files in your repository, sortable by six different 
 
 There is also a search filter available.
 
-This allows you to keep track or focus some of your time on files with low coverage, high complexity, too many issues, or simply a lot of duplication that could be refactored.
+This allows you to keep track or focus some of your time on files with low coverage, high complexity, too many issues, or a lot of duplication that could be refactored.
 
 Clicking on a filename opens the File detail.
 

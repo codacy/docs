@@ -1,3 +1,7 @@
+---
+description: Example of how to add multiple repositories programmatically using Codacy's API v3 endpoint addRepository.
+---
+
 # Adding repositories to Codacy programmatically
 
 There are scenarios where manually adding Git repositories on the Codacy UI is inconvenient or time-consuming. For example:

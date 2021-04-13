@@ -1,3 +1,7 @@
+---
+description: Instructions on how to run deadcode as a client-side tool on Codacy.
+---
+
 # Running deadcode
 
 To run deadcode as a [client-side tool](client-side-tools.md):
