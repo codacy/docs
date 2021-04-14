@@ -2683,51 +2683,167 @@
 <p>Depending on the provider, we may request different permissions due to different OAuth implementations. We strive to request only the necessary permissions.</p>
 <h2 id="github-cloud">GitHub Cloud<a class="headerlink" href="#github-cloud" title="Permanent link">&para;</a></h2>
 <p>If you log in with GitHub, Codacy requires the following <a href="https://developer.github.com/v3/apps/permissions/">app permissions</a>:</p>
-<p>Repository permissions:</p>
-<ul>
-<li>Checks - Read &amp; Write. Codacy creates and updates check runs with the results of code analysis.</li>
-<li>Issues - Read &amp; Write. Codacy can create GitHub issues from issues found during code analysis.</li>
-<li>Metadata - Read Only. Codacy retrieves repository metadata, such as name, languages, collaborators and commit information.</li>
-<li>Pull requests - Read &amp; Write. Codacy retrieves pull request information to display on its side. Codacy might also create comments and suggestions on the pull request, according to the results of code analysis.</li>
-<li>Webhooks - Read &amp; Write. Codacy creates webhooks for code pushes and pull request events (created, merged, etc.). These events might trigger code analysis.</li>
-<li>Commit statuses - Read &amp; Write. Codacy sets the status of commits according to the result of code analysis.</li>
-<li>Administration - Read &amp; Write. <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</li>
-</ul>
-<p>Organization permissions:</p>
-<ul>
-<li>Webhooks - Read &amp; Write. Codacy creates webhooks for organization and repository events (creation, deletion, member added, etc.) to enable <a href="../../organizations/what-are-synced-organizations/">synced organizations</a>.</li>
-<li>Members - Read Only. Codacy retrieves information about organization members and teams to enforce permissions, enable synced organizations and user management.</li>
-</ul>
-<p>User permissions:</p>
-<p>These permissions are granted on an individual user basis as part of the user authorization flow. They will be also be displayed during account installation for transparency.</p>
-<ul>
-<li>Email addresses - Read Only. Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</li>
-<li>Git SSH keys - Read &amp; Write. <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</li>
-</ul>
+<table>
+  <colgroup>
+    <col width="20%"/>
+    <col width="20%"/>
+    <cel width="60%"/>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Scope</th>
+      <th>Permissions</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td colspan="3"><strong>Repository permissions:</strong></td>
+    <tr>
+      <td>Checks</td>
+      <td>Read & Write</td>
+      <td>Codacy creates and updates check runs with the results of code analysis.</td>
+    </tr>
+    <tr>
+      <td>Issues</td>
+      <td>Read & Write</td>
+      <td>Codacy can create GitHub issues from issues found during code analysis.</td>
+    </tr>
+    <tr>
+      <td>Metadata</td>
+      <td>Read Only</td>
+      <td>Codacy retrieves repository metadata, such as name, languages, collaborators and commit information.</td>
+    </tr>
+    <tr>
+      <td>Pull requests</td>
+      <td>Read & Write</td>
+      <td>Codacy retrieves pull request information to display on its side. Codacy might also create comments and suggestions on the pull request, according to the results of code analysis.</td>
+    </tr>
+    <tr>
+      <td>Webhooks</td>
+      <td>Read & Write</td>
+      <td>Codacy creates webhooks for code pushes and pull request events (created, merged, etc.). These events might trigger code analysis.</td>
+    </tr>
+    <tr>
+      <td>Commit statuses</td>
+      <td>Read & Write</td>
+      <td>Codacy sets the status of commits according to the result of code analysis.</td>
+    </tr>
+    <tr>
+      <td>Administration</td>
+      <td>Read & Write</td>
+      <td><a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
+    </tr>
+    <tr>
+      <td colspan="3"><strong>Organization permissions:</strong></td>
+    </tr>
+    <tr>
+      <td>Webhooks</td>
+      <td>Read & Write</td>
+      <td>Codacy creates webhooks for organization and repository events (creation, deletion, member added, etc.) to enable <a href="../../organizations/what-are-synced-organizations/">synced organizations</a>.</td>
+    </tr>
+    <tr>
+      <td>Members</td>
+      <td>Read Only</td>
+      <td>Codacy retrieves information about organization members and teams to enforce permissions, enable synced organizations and user management.</td>
+    </tr>
+    <tr>
+      <td colspan="3"><p><strong>User permissions:</strong></p>
+                      <p>These permissions are granted on an individual user basis as part of the user authorization flow. They will be also be displayed during account installation for transparency.</p></td>
+    </tr>
+    <tr>
+      <td>Email addresses</td>
+      <td>Read Only</td>
+      <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</td>
+    </tr>
+    <tr>
+      <td>Git SSH keys</td>
+      <td>Read & Write</td>
+      <td><a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
+    </tr>
+  </tbody>
+</table>
+
 <h2 id="gitlab-cloud">GitLab Cloud<a class="headerlink" href="#gitlab-cloud" title="Permanent link">&para;</a></h2>
 <p>If you sign up with GitLab Cloud, Codacy requires the following <a href="https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications">permissions/scopes</a>:</p>
-<ul>
-<li><code>api</code> - Codacy uses GitLab's API to read and update pull requests, create webhooks for code push events, list commits, repositories, groups, members and permissions.</li>
-<li><code>read_user</code> - Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</li>
-<li><code>read_repository</code> - Codacy retrieves repository metadata, such as name, languages and collaborators.</li>
-<li><code>openid</code> - Codacy uses this permission for authentication using <a href="https://docs.gitlab.com/ee/integration/openid_connect_provider.html#shared-information">OpenID Connect</a></li>
-</ul>
+<table>
+  <colgroup>
+    <col width="25%"/>
+    <col width="75%"/>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Scope</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>api</code></td>
+      <td>Codacy uses GitLab's API to read and update pull requests, create webhooks for code push events, list commits, repositories, groups, members and permissions.</td>
+    </tr>
+    <tr>
+      <td><code>read_user</code></td>
+      <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</td>
+    </tr>
+    <tr>
+      <td><code>read_repository</code></td>
+      <td>Codacy retrieves repository metadata, such as name, languages and collaborators.</td>
+    </tr>
+    <tr>
+      <td><code>openid</code></td>
+      <td>Codacy uses this permission for authentication using <a href="https://docs.gitlab.com/ee/integration/openid_connect_provider.html#shared-information">OpenID Connect</a>.</td>
+    </tr>
+  </tbody>
+</table>
+
 <h2 id="bitbucket-cloud">Bitbucket Cloud<a class="headerlink" href="#bitbucket-cloud" title="Permanent link">&para;</a></h2>
 <p>If you log in with Bitbucket, Codacy requires the following <a href="https://developer.atlassian.com/cloud/bitbucket/bitbucket-cloud-rest-api-scopes/">permissions/scopes</a>:</p>
-<ul>
-<li><code>account:write</code> - Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis. Furthermore, <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</li>
-<li><code>repository:admin</code> - Codacy retrieves repository metadata, such as name, languages and collaborators, and commit information. <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository (see box above).</li>
-<li><code>pullrequest:write</code> - Codacy retrieves pull request information to display on its side. Codacy might also create comments on the pull request, according to the results of code analysis.</li>
-<li><code>issue:write</code> - Codacy can create Bitbucket issues from issues found during code analysis.</li>
-<li><code>webhook</code> - Codacy creates webhooks for code pushes and pull request events (created, merged, etc.). These events might trigger code analysis. Codacy also creates repository webhooks to enable <a href="../../organizations/what-are-synced-organizations/">synced organizations</a>.</li>
-<li><code>team</code> - Codacy uses your group/team membership information to enforce permissions. </li>
-<li>Read your workspace's project settings and read repositories contained within your workspace's projects</li>
-</ul>
+<table>
+  <colgroup>
+    <col width="25%"/>
+    <col width="75%"/>
+  </colgroup>
+  <thead>
+    <tr>
+      <th>Scope and permissions</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><code>account:write</code></td>
+      <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis. Furthermore, <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
+    </tr>
+    <tr>
+      <td><code>repository:admin</code></td>
+      <td>Codacy retrieves repository metadata, such as name, languages and collaborators, and commit information. <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository (see box above).</td>
+    </tr>
+    <tr>
+      <td><code>pullrequest:write</code></td>
+      <td>Codacy retrieves pull request information to display on its side. Codacy might also create comments on the pull request, according to the results of code analysis.</td>
+    </tr>
+    <tr>
+      <td><code>issue:write</code></td>
+      <td>Codacy can create Bitbucket issues from issues found during code analysis.</td>
+    </tr>
+    <tr>
+      <td><code>webhook</code></td>
+      <td>Codacy creates webhooks for code pushes and pull request events (created, merged, etc.). These events might trigger code analysis. Codacy also creates repository webhooks to enable <a href="../../organizations/what-are-synced-organizations/">synced organizations</a>.</td>
+    </tr>
+    <tr>
+      <td><code>team</code></td>
+      <td>Codacy uses your group/team membership information to enforce permissions.</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Read your workspace's project settings and read repositories contained within your workspace's projects.</td>
+    </tr>
+  </tbody>
+</table>
+
 <h2 id="google-sign-in">Google Sign-In<a class="headerlink" href="#google-sign-in" title="Permanent link">&para;</a></h2>
-<p>If you log in with Google, Codacy requires the following <a href="https://developers.google.com/identity/protocols/oauth2/scopes#google-sign-in">permissions/scopes</a>:</p>
-<ul>
-<li>Email permission</li>
-</ul>
+<p>If you log in with Google, Codacy requires the <code>email</code> <a href="https://developers.google.com/identity/protocols/oauth2/scopes#google-sign-in">scope</a>.</p>
 <h2 id="revoking-access-to-integrations">Revoking access to integrations<a class="headerlink" href="#revoking-access-to-integrations" title="Permanent link">&para;</a></h2>
 <p>To revoke the access from Codacy to one or more of the OAuth providers:</p>
 <ol>
@@ -2824,7 +2940,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 13, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
     
   </small>
 </div>
