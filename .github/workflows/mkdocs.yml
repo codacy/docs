@@ -9,7 +9,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           submodules: true
           fetch-depth: 0
 
@@ -47,7 +47,7 @@ jobs:
       - name: Checkout release branch
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           submodules: true
           fetch-depth: 0
 
@@ -103,7 +103,7 @@ jobs:
       - name: Checkout master
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           submodules: true
           fetch-depth: 0
 

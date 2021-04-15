@@ -1,3 +1,7 @@
+---
+description: You can create and manage teams on the Teams page for your legacy manual organization on Codacy.
+---
+
 # Creating and managing teams
 
 You can create and manage teams on the **Teams** page for your organization:

@@ -1,3 +1,8 @@
+---
+rss_title: Codacy release notes RSS feed
+rss_href: /feed_rss_created.xml
+---
+
 # Bitbucket changes
 
 We're making some changes on February 18, 2019 **that will cause all existing integrations with Bitbucket to stop working**.

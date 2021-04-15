@@ -1,3 +1,9 @@
+---
+rss_title: Codacy release notes RSS feed
+rss_href: /feed_rss_created.xml
+description: Release notes for Codacy Self-hosted v3.4.0.
+---
+
 # Self-hosted v3.4.0
 
 These release notes are for [Codacy Self-hosted v3.4.0](https://github.com/codacy/chart/releases/tag/3.4.0){: target="_blank"}, released on March 12, 2021.
@@ -61,7 +67,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   RemarkLint 7.0.1
 -   Revive 1.0.2
 -   **Rubocop 1.11.0 (updated from 1.9.1)**
--   **ScalaStyle 1.5.0 (updated from 1.0.0, adds support for Scala 2.13)**
+-   **Scalastyle 1.5.0 (updated from 1.0.0, adds support for Scala 2.13)**
 -   ShellCheck v0.7.1
 -   **Sonar C# 8.13 (updated from 8.15)**
 -   Sonar Visual Basic 8.15

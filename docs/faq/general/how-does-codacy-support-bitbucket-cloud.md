@@ -1,6 +1,8 @@
 # How does Codacy support Bitbucket Cloud?
 
-When you use Bitbucket Cloud to sign up or log into Codacy, the Bitbucket teams that you belong to will be available to be added as Organizations on Codacy. After adding a team:
+When you use Bitbucket Cloud to sign up or log into Codacy, the Bitbucket teams that you belong to will be available to be added as Organizations on Codacy.
+
+After adding a team:
 
 -   Codacy displays the list of all repositories in that team so that you can add them to Codacy as repositories to be analyzed
 -   The members of the team will be able to join or request to join Codacy

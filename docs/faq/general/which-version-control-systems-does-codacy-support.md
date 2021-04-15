@@ -1,3 +1,7 @@
+---
+description: Codacy supports the cloud and self-hosted versions of GitHub, GitLab, and Bitbucket.
+---
+
 # Which version control systems does Codacy support?
 
 Codacy supports repositories from the following Git providers:

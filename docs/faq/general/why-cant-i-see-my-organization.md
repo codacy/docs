@@ -1,3 +1,7 @@
+---
+description: Try these steps if you don't see your organization when adding your organization on Codacy.
+---
+
 # Why can't I see my organization?
 
 If you don't see your organization when [adding your organization on Codacy](../../organizations/what-are-synced-organizations.md#adding-an-organization), try the following steps:

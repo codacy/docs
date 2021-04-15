@@ -1,3 +1,9 @@
+---
+rss_title: Codacy release notes RSS feed
+rss_href: /feed_rss_created.xml
+description: On April 1st, 2020 we're deprecating the api_token and project_token HTTP headers used to authenticate to the Codacy API.
+---
+
 # Deprecating HTTP headers for API tokens | April 1, 2020
 
 On April 1st, 2020 we're deprecating the following HTTP headers used to authenticate to the [Codacy API](https://api.codacy.com/api/api-docs) using either an API token or project token:
