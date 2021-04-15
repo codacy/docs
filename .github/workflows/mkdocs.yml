@@ -77,7 +77,7 @@ jobs:
           git remote rm origin
           git remote add origin "${remote_repo}"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.DEPLOYMENT_PERSONAL_ACCOUNT_TOKEN }}
 
       - name: Deploy docs
         run: |
@@ -133,7 +133,7 @@ jobs:
           git remote rm origin
           git remote add origin "${remote_repo}"
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.DEPLOYMENT_PERSONAL_ACCOUNT_TOKEN }}
 
       - name: Deploy docs
         run: |
