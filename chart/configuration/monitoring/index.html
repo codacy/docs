@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation for the Codacy automated code review tool.">
+        <meta name="description" content="Instructions on how to set up monitoring for your Codacy Self-hosted instance.">
       
       
         <link rel="canonical" href="https://docs.codacy.com/chart/configuration/monitoring/">
@@ -2647,12 +2647,12 @@
                 
                 
                 <h1 id="monitoring">Monitoring<a class="headerlink" href="#monitoring" title="Permanent link">&para;</a></h1>
-<p>Currently, we support two monitoring solutions:</p>
+<p>Currently, Codacy Self-hosted supports two monitoring solutions:</p>
 <ul>
-<li><strong><a href="#setting-up-monitoring-using-crow">Crow</a>:</strong> A simple, lightweight, and built-in monitoring solution, that is enabled by default when you install Codacy.</li>
+<li><strong><a href="#setting-up-monitoring-using-crow">Crow</a>:</strong> A simple, lightweight, and built-in monitoring solution, enabled by default when you install Codacy.</li>
 <li><strong><a href="#setting-up-monitoring-using-grafana-prometheus-and-loki">Prometheus + Grafana + Loki</a>:</strong> A comprehensive third-party monitoring solution, recommended for more advanced usage.</li>
 </ul>
-<p>The sections below provide details on how to set up each monitoring solution.</p>
+<p>The sections below provide instructions on how to set up each monitoring solution.</p>
 <h2 id="setting-up-monitoring-using-crow">Setting up monitoring using Crow<a class="headerlink" href="#setting-up-monitoring-using-crow" title="Permanent link">&para;</a></h2>
 <p>Crow displays information about the projects that are pending analysis and the jobs currently running on Codacy.</p>
 <p>Crow is installed alongside Codacy when the Helm chart is deployed to the cluster. By default, you can access Crow as follows:</p>
@@ -2676,7 +2676,7 @@
 <p>Apply the new configuration by performing a Helm upgrade. To do so execute the command <a href="../../#helm-upgrade">used to install Codacy</a>:</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>If you are using MicroK8s</strong> you must use the file <code>values-microk8s.yaml</code> together with the file <code>values-production.yaml</code>.</p>
+<p><strong>If you're using MicroK8s</strong> you must use the file <code>values-microk8s.yaml</code> together with the file <code>values-production.yaml</code>.</p>
 <p>To do this, uncomment the last line before running the <code>helm upgrade</code> command below.</p>
 </div>
 <div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span> <span class="se">\</span>
@@ -2695,7 +2695,7 @@
 <p>Add the custom resources required for installing this bundle in your cluster:</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>If you are using MicroK8s</strong> use <code>microk8s.kubectl</code> instead of <code>kubectl</code>.</p>
+<p><strong>If you're using MicroK8s</strong> use <code>microk8s.kubectl</code> instead of <code>kubectl</code>.</p>
 </div>
 <div class="highlight"><pre><span></span><code>kubectl apply -f <span class="s2">&quot;https://raw.githubusercontent.com/coreos/prometheus-operator/release-0.38/example/prometheus-operator-crd/monitoring.coreos.com_alertmanagers.yaml&quot;</span>
 kubectl apply -f <span class="s2">&quot;https://raw.githubusercontent.com/coreos/prometheus-operator/release-0.38/example/prometheus-operator-crd/monitoring.coreos.com_podmonitors.yaml&quot;</span>
@@ -2723,7 +2723,7 @@ helm upgrade --install --atomic --timeout 600s loki loki/loki <span class="se">\
 <p>Obtain the configuration file for the <a href="https://github.com/helm/charts/tree/master/stable/prometheus-operator">Prometheus Operator bundle</a>, <a href="../../values-files/values-prometheus-operator.yaml"><code>values-prometheus-operator.yaml</code></a>. Then:</p>
 <ol>
 <li>
-<p>Edit the Grafana password for the <code>admin</code> user and the hostname for grafana in the <code>values-prometheus-operator.yaml</code> file.</p>
+<p>Edit the Grafana password for the <code>admin</code> user and the hostname for Grafana in the <code>values-prometheus-operator.yaml</code> file.</p>
 </li>
 <li>
 <p>Install the bundle on your cluster by running the command below.</p>
@@ -2732,11 +2732,11 @@ helm upgrade --install --atomic --timeout 600s loki loki/loki <span class="se">\
 <div class="highlight"><pre><span></span><code>helm upgrade --install --atomic --timeout 600s monitoring stable/prometheus-operator <span class="se">\</span>
   --version <span class="m">8</span>.13.8 --namespace monitoring --values values-prometheus-operator.yaml
 </code></pre></div>
-<p>Follow the <a href="https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-services/#accessing-services-running-on-the-cluster">Kubernetes documentation</a> to access the Grafana service that is now running on your cluster, using the method that best suits your use case.</p>
+<p>Follow the <a href="https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-services/#accessing-services-running-on-the-cluster">Kubernetes documentation</a> to access the Grafana service that's now running on your cluster, using the method that best suits your use case.</p>
 <h3 id="5-enable-service-dashboards">5. Enable service dashboards<a class="headerlink" href="#5-enable-service-dashboards" title="Permanent link">&para;</a></h3>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>Currently, the application metrics and information reported by the Codacy components to populate service dashboards are very limited since we are still developing these reporting capabilities.</p>
+<p>Currently, the application metrics and information reported by the Codacy components to populate service dashboards are very limited since we're still developing these reporting capabilities.</p>
 <p>As such, we recommend that you skip this configuration.</p>
 </div>
 <p>Now that you have Prometheus and Grafana installed you can enable <code>serviceMonitor</code> and <code>grafana_dashboards</code> for Codacy components.</p>
@@ -2827,7 +2827,7 @@ helm upgrade --install --atomic --timeout 600s loki loki/loki <span class="se">\
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 4, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
     
   </small>
 </div>

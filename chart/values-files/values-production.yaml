@@ -117,71 +117,71 @@ global:
       port: <--- codacy-db-port --->
     fullnameOverride: codacy-crowdb
 
-    # github:
-    # enabled: "false"
-    # login: "false" # Show login button for GitHub Cloud
-    # clientId: "" # Client ID
-    # clientSecret: "" # Client secret
-    # app:
-    #   name: "codacy" # GitHub App name
-    #   id: "1234" # App ID
-    #   privateKey: "" # Contents of the .pem file without newlines
+  # github:
+  #   enabled: "false"
+  #   login: "false" # Show login button for GitHub Cloud
+  #   clientId: "" # Client ID
+  #   clientSecret: "" # Client secret
+  #   app:
+  #     name: "codacy" # GitHub App name
+  #     id: "1234" # App ID
+  #     privateKey: "" # Contents of the .pem file without newlines
 
-    # githubEnterprise:
-    # enabled: "false"
-    # login: "false" # Show login button for GitHub Enterprise
-    # hostname: "github.example.com" # Hostname of your GitHub Enterprise instance
-    # protocol: "https" # Protocol of your GitHub Enterprise instance
-    # port: 443 # Port of your GitHub Enterprise instance
-    # disableSSL: "false" # Disable certificate validation
-    # isPrivateMode: "true" # Status of private mode on your GitHub Enterprise instance
-    # clientId: "" # GitHub App Client ID
-    # clientSecret: "" # GitHub App Client secret
-    # app:
-    #   name: "codacy" # GitHub App name
-    #   id: "1234" # GitHub App ID
-    #   privateKey: "" # Contents of the .pem file without newlines
+  # githubEnterprise:
+  #   enabled: "false"
+  #   login: "false" # Show login button for GitHub Enterprise
+  #   hostname: "github.example.com" # Hostname of your GitHub Enterprise instance
+  #   protocol: "https" # Protocol of your GitHub Enterprise instance
+  #   port: 443 # Port of your GitHub Enterprise instance
+  #   disableSSL: "false" # Disable certificate validation
+  #   isPrivateMode: "true" # Status of private mode on your GitHub Enterprise instance
+  #   clientId: "" # GitHub App Client ID
+  #   clientSecret: "" # GitHub App Client secret
+  #   app:
+  #     name: "codacy" # GitHub App name
+  #     id: "1234" # GitHub App ID
+  #     privateKey: "" # Contents of the .pem file without newlines
 
-    # gitlab:
-    # enabled: "false"
-    # login: "false" # Show login button for GitLab Cloud
-    # clientId: "" # Application ID
-    # clientSecret: "" # Secret
+  # gitlab:
+  #   enabled: "false"
+  #   login: "false" # Show login button for GitLab Cloud
+  #   clientId: "" # Application ID
+  #   clientSecret: "" # Secret
 
-    # gitlabEnterprise:
-    # enabled: "false"
-    # login: "false" # Show login button for GitLab Enterprise
-    # hostname: "gitlab.example.com" # Hostname of your GitLab Enterprise instance
-    # protocol: "https" # Protocol of your GitLab Enterprise instance
-    # port: 443 # Port of your GitLab Enterprise instance
-    # clientId: "" # Application ID
-    # clientSecret: "" # Secret
+  # gitlabEnterprise:
+  #   enabled: "false"
+  #   login: "false" # Show login button for GitLab Enterprise
+  #   hostname: "gitlab.example.com" # Hostname of your GitLab Enterprise instance
+  #   protocol: "https" # Protocol of your GitLab Enterprise instance
+  #   port: 443 # Port of your GitLab Enterprise instance
+  #   clientId: "" # Application ID
+  #   clientSecret: "" # Secret
 
-    # bitbucket:
-    # enabled: "false"
-    # login: "false" # Show login button for Bitbucket Cloud
-    # key: "" # OAuth consumer key
-    # secret: "" # OAuth consumer secret
+  # bitbucket:
+  #   enabled: "false"
+  #   login: "false" # Show login button for Bitbucket Cloud
+  #   key: "" # OAuth consumer key
+  #   secret: "" # OAuth consumer secret
 
-    # bitbucketEnterprise:
-    # enabled: "false"
-    # login: "false" # Show login button for Bitbucket Server
-    # hostname: "bitbucket.example.com" # Hostname of your Bitbucket Server instance
-    # protocol: "http" # Protocol of your Bitbucket Server instance
-    # port: 7990 # Port of your Bitbucket Server instance
-    # consumerKey: "" # Generated when creating the Bitbucket Server application link
-    # consumerPublicKey: "" # Generated when creating the Bitbucket Server application link
-    # consumerPrivateKey: "" # Generated when creating the Bitbucket Server application link
+  # bitbucketEnterprise:
+  #   enabled: "false"
+  #   login: "false" # Show login button for Bitbucket Server
+  #   hostname: "bitbucket.example.com" # Hostname of your Bitbucket Server instance
+  #   protocol: "http" # Protocol of your Bitbucket Server instance
+  #   port: 7990 # Port of your Bitbucket Server instance
+  #   consumerKey: "" # Generated when creating the Bitbucket Server application link
+  #   consumerPublicKey: "" # Generated when creating the Bitbucket Server application link
+  #   consumerPrivateKey: "" # Generated when creating the Bitbucket Server application link
 
-    # email:
-    # enabled: "false"
-    # replyTo: "notifications@codacy.com" # Reply-to field on sent emails
-    # smtp:
-    #   protocol: "smtp" # SMTP protocol to use, either smtps or smtp
-    #   hostname: "smtp.example.com" # Hostname of your SMTP server
-    #   # username: "" # Optional username to authenticate on your SMTP server
-    #   # password: "" # Optional password to authenticate on your SMTP server
-    #   # port: 25 # Optional port of your SMTP server, the default is 25
+  # email:
+  #   enabled: "false"
+  #   replyTo: "notifications@codacy.com" # Reply-to field on sent emails
+  #   smtp:
+  #     protocol: "smtp" # SMTP protocol to use, either smtps or smtp
+  #     hostname: "smtp.example.com" # Hostname of your SMTP server
+  #     # username: "" # Optional username to authenticate on your SMTP server
+  #     # password: "" # Optional password to authenticate on your SMTP server
+  #     # port: 25 # Optional port of your SMTP server, the default is 25
 
 codacy-ingress:
   create: true
@@ -204,8 +204,8 @@ codacy-api:
       memory: 500Mi
 ## By default, Codacy includes a temporary license for a limited number of users.
 ## Uncomment these annotations to enter a production license provided by a Codacy representative.
-#  config:
-#    license: <--- insert your Codacy license here --->
+# config:
+#   license: <--- insert your Codacy license here --->
 
 portal:
   replicaCount: 2

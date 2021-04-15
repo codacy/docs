@@ -2613,8 +2613,8 @@
                 
                 
                 <h1 id="uninstalling-codacy">Uninstalling Codacy<a class="headerlink" href="#uninstalling-codacy" title="Permanent link">&para;</a></h1>
-<p>To ensure a clean removal you should uninstall Codacy before destroying the cluster.
-To do so run:</p>
+<p>To ensure a clean removal you should uninstall Codacy Self-hosted before destroying the cluster.</p>
+<p>To do so run:</p>
 <div class="highlight"><pre><span></span><code>helm -n codacy uninstall codacy
 kubectl -n codacy delete --all pod <span class="p">&amp;</span>
 kubectl -n codacy delete --all pvc <span class="p">&amp;</span>
@@ -2627,9 +2627,7 @@ kubectl -n codacy get pod <span class="p">&amp;</span>
 kubectl -n codacy get pvc <span class="p">&amp;</span>
 kubectl -n codacy get job <span class="p">&amp;</span>
 </code></pre></div>
-<p>Note that the deletion of <code>pvc</code>s in the above command has to run in the background
-due to a cyclic dependency in one of the components. If you are unsure of the
-effects of these commands please run each of the <code>bash</code> subcommands and validate their output.</p>
+<p>Note that the deletion of <code>pvc</code>s in the above command has to run in the background due to a cyclic dependency in one of the components. If you're unsure of the effects of these commands please run each of the <code>bash</code> subcommands and validate their output:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;PVCs to delete:&quot;</span>
 kubectl get pvc -n codacy -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[*].metadata.name}&#39;</span>
 <span class="nb">echo</span> <span class="s2">&quot;PODS to delete:&quot;</span>
@@ -2703,7 +2701,7 @@ kubectl get pods -n codacy -o <span class="nv">jsonpath</span><span class="o">=<
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 15, 2020</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
     
   </small>
 </div>

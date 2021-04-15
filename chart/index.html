@@ -2690,7 +2690,7 @@
 <p><a href="https://kubernetes.io/docs/tasks/tools/install-kubectl/">kubectl</a> within one minor version difference of your cluster</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>If you are using MicroK8s</strong> you don't need to install kubectl because you will execute all <code>kubectl</code> commands as <code>microk8s.kubectl</code> commands instead. To simplify this, <a href="infrastructure/microk8s-quickstart/#notes-on-installing-codacy">check how to create an alias</a> for <code>kubectl</code>.</p>
+<p><strong>If you're using MicroK8s</strong> you don't need to install kubectl because you will execute all <code>kubectl</code> commands as <code>microk8s.kubectl</code> commands instead. To simplify this, <a href="infrastructure/microk8s-quickstart/#notes-on-installing-codacy">check how to create an alias</a> for <code>kubectl</code>.</p>
 </div>
 </li>
 <li>
@@ -2719,14 +2719,14 @@
 <p>Create an address record on your DNS provider mapping the hostname you used in the previous step to the IP address of your Ingress controller.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>If you are using MicroK8s</strong> you must map the hostname to the public IP address of the machine running MicroK8s.</p>
+<p><strong>If you're using MicroK8s</strong> you must map the hostname to the public IP address of the machine running MicroK8s.</p>
 </div>
 </li>
 <li>
 <p><span id="helm-upgrade">Add Codacy's chart repository to your Helm client and install the Codacy chart using the file <code>values-production.yaml</code> created previously.</span></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>If you are using MicroK8s</strong> you must download and use the file <a href="values-files/values-microk8s.yaml"><code>values-microk8s.yaml</code></a> together with the file <code>values-production.yaml</code> by uncommenting the last line in the <code>helm upgrade</code> command below.</p>
+<p><strong>If you're using MicroK8s</strong> you must download and use the file <a href="values-files/values-microk8s.yaml"><code>values-microk8s.yaml</code></a> together with the file <code>values-production.yaml</code> by uncommenting the last line in the <code>helm upgrade</code> command below.</p>
 </div>
 <div class="highlight"><pre><span></span><code>helm repo add codacy-stable https://charts.codacy.com/stable/
 helm repo update
@@ -2766,7 +2766,7 @@ codacy-worker-manager-656dbf8d6d-n4j7c          <span class="m">1</span>/1     R
 </li>
 </ol>
 <h2 id="3-configuring-codacy">3. Configuring Codacy<a class="headerlink" href="#3-configuring-codacy" title="Permanent link">&para;</a></h2>
-<p>After successfully installing Codacy on your cluster, you are now ready to perform the post-install configuration steps:</p>
+<p>After successfully installing Codacy on your cluster, you're now ready to perform the post-install configuration steps:</p>
 <ol>
 <li>
 <p>Use a browser to navigate to the Codacy hostname previously configured on the file <code>values-production.yaml</code>.</p>
@@ -2864,7 +2864,7 @@ codacy-worker-manager-656dbf8d6d-n4j7c          <span class="m">1</span>/1     R
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
     
   </small>
 </div>

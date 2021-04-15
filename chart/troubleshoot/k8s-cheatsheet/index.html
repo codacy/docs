@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation for the Codacy automated code review tool.">
+        <meta name="description" content="Useful helm and kubectl commands to help troubleshoot your Codacy Self-hosted instance.">
       
       
         <link rel="canonical" href="https://docs.codacy.com/chart/troubleshoot/k8s-cheatsheet/">
@@ -2686,9 +2686,9 @@
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Always check the pods and deployment versions in the namespace
-to make sure you are not debugging an issue in a version that is not the one you would expect</p>
+to make sure you aren't debugging an issue in a version that's not the one you would expect</p>
 </div>
-<p>Events are a great way to understand what is going on under the hood in a Kubernetes cluster.
+<p>Events are a great way to understand what's going on under the hood in a Kubernetes cluster.
 By looking at them you can see if probes are failing, and other important signals from your cluster.</p>
 <p>Get events for the whole namespace:</p>
 <div class="highlight"><pre><span></span><code>kubectl -n codacy get events --sort-by<span class="o">=</span>.metadata.creationTimestamp
@@ -2822,7 +2822,7 @@ since the CLI is very limited you will benefit from using these aliases:</p>
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2020</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
     
   </small>
 </div>

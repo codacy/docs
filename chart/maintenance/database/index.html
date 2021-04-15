@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation for the Codacy automated code review tool.">
+        <meta name="description" content="Instructions on how to migrate your Codacy Self-hosted database.">
       
       
         <link rel="canonical" href="https://docs.codacy.com/chart/maintenance/database/">
@@ -2690,10 +2690,13 @@
 <div class="highlight"><pre><span></span><code><span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span> pg_restore -h <span class="nv">$DEST_HOSTNAME</span> -p <span class="nv">$DEST_HOSTPORT</span> -U <span class="nv">$DB_USER</span> -j <span class="m">8</span> -d <span class="nv">$db</span> -n public --clean <span class="nv">$db</span>.dump
 </code></pre></div>
 <p>With the custom format from <code>pg_dump</code> (by using <code>-Fc</code>) we can now invoke <code>pg_restore</code> with multiple parallel jobs. This should make the restoration of the databases quicker, depending on which value you provide for the number of parallel jobs to execute. We provide a value of 8 parallel jobs in the example above (<code>-j 8</code>).</p>
-<p><em>NOTE: If you run into any problems while restoring, make sure that you have the database created in that postgres instance (e.g. before restoring the jobs database the postgres instance should have an empty database called <code>jobs</code> created there)</em></p>
-<p><a href="https://www.postgresql.org/docs/9.6/app-pgrestore.html">For more information and additional options, please check the official documentation.</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you run into any problems while restoring, make sure that you have the database created in that Postgres instance (e.g. before restoring the jobs database the Postgres instance should have an empty database called <code>jobs</code> created there).</p>
+</div>
+<p>For more information and additional options, please check the <a href="https://www.postgresql.org/docs/9.6/app-pgrestore.html">official documentation</a>.</p>
 <h2 id="sample-script">Sample script<a class="headerlink" href="#sample-script" title="Permanent link">&para;</a></h2>
-<p>Assuming you have the same <code>$DB_USER</code> and <code>$DB_PASSWORD</code>, and that you want to migrate all the databases from the same hostname to the same destination hostname, you could easily migrate your databases with the following sample script:</p>
+<p>Assuming you have the same <code>$DB_USER</code> and <code>$DB_PASSWORD</code>, and that you want to migrate all the databases from the same hostname to the same destination hostname, you could migrate your databases with the following sample script:</p>
 <div class="highlight"><pre><span></span><code><span class="nv">SRC_HOSTNAME</span><span class="o">=</span><span class="nv">$1</span>
 <span class="nv">SRC_HOSTPORT</span><span class="o">=</span><span class="nv">$2</span>
 <span class="nv">DEST_HOSTNAME</span><span class="o">=</span><span class="nv">$3</span>
@@ -2708,7 +2711,7 @@
   <span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span> pg_restore -h <span class="nv">$DEST_HOSTNAME</span> -p <span class="nv">$DEST_HOSTPORT</span> -U <span class="nv">$DB_USER</span> -d <span class="nv">$db</span> -n public --clean <span class="nv">$db</span>.dump
 <span class="k">done</span>
 </code></pre></div>
-<p>You could simply invoke it with:</p>
+<p>As an example, you could run the script as follows:</p>
 <div class="highlight"><pre><span></span><code>migrateDBs.sh postgres–instance1.us-east-1.rds.amazonaws.com <span class="m">25060</span> postgres–instance1.eu-west-1.rds.amazonaws.com <span class="m">25060</span> super_user secret_password
 </code></pre></div>
               
@@ -2779,7 +2782,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 6, 2020</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
     
   </small>
 </div>
