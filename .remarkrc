@@ -3,6 +3,7 @@
     "incrementListMarker": false
   },
   "plugins": [
+    "remark-frontmatter",
     "preset-lint-consistent",
     "preset-lint-recommended",
     "lint-heading-increment",
