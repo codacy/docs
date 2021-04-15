@@ -2703,7 +2703,8 @@
 <li><a href="https://github.com/dariodf/lcov_ex">dariodf/lcov_ex</a>: generate LCOV reports for Elixir projects</li>
 <li><a href="https://github.com/t-yuki/gocover-cobertura">t-yuki/gocover-cobertura</a>: generate Cobertura reports from <a href="https://golang.org/pkg/cmd/cover/">Go cover</a> reports</li>
 </ul>
-<p>As a workaround, you can also send the coverage data directly by calling the Codacy API endpoint <a href="https://api.codacy.com/swagger#savecoverage">saveCoverage</a>.</p>
+<p>As a workaround, you can also send the coverage data directly by calling the Codacy API endpoint <a href="https://api.codacy.com/swagger#savecoverage">saveCoverage</a> (when using a project API Token)
+or <a href="https://api.codacy.com/swagger#savecoveragewithaccounttoken">saveCoverageWithAccountToken</a> (when using an account API Token).</p>
 <p>The following is an example of the JSON payload:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
   <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
@@ -2815,7 +2816,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 15, 2021</span>
     
   </small>
 </div>
