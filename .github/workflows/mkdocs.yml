@@ -89,11 +89,13 @@ jobs:
           curl -fsSL -o pulse-event-cli https://dl.bintray.com/codacy/pulse/event-cli/1.8.0/pulse-event-cli_linux_amd64/pulse-event-cli && \
           chmod +x pulse-event-cli && \
           ./pulse-event-cli push git deployment \
-              --api-key "${{ secrets.PULSE_TOKEN }}" \
+              --api-key "${PULSE_TOKEN}" \
               --previous-deployment-ref "$(git rev-parse @~)" \
               --identifier "${GITHUB_SHA}" \
               --timestamp "$(date +%s)" \
               --system "docs"
+        env:
+          PULSE_TOKEN: ${{ secrets.PULSE_TOKEN }}
 
   deploy:
     needs: build
@@ -149,8 +151,10 @@ jobs:
           curl -fsSL -o pulse-event-cli https://dl.bintray.com/codacy/pulse/event-cli/1.8.0/pulse-event-cli_linux_amd64/pulse-event-cli && \
           chmod +x pulse-event-cli && \
           ./pulse-event-cli push git deployment \
-              --api-key "${{ secrets.PULSE_TOKEN }}" \
+              --api-key "${PULSE_TOKEN}" \
               --previous-deployment-ref "$(git rev-parse @~)" \
               --identifier "${GITHUB_SHA}" \
               --timestamp "$(date +%s)" \
               --system "docs"
+        env:
+          PULSE_TOKEN: ${{ secrets.PULSE_TOKEN }}
