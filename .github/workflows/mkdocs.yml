@@ -138,7 +138,7 @@ jobs:
       - name: Deploy docs
         run: |
           echo "${CUSTOM_DOMAIN}" > "${GITHUB_WORKSPACE}/docs/CNAME"
-          echo -e "User-agent: *\nDisallow: /v*.*" > "${GITHUB_WORKSPACE}/docs/robots.txt"
+          echo -e "user-agent: *\ndisallow: /v*.*/\nsitemap: https://${CUSTOM_DOMAIN}/sitemap.xml" > "${GITHUB_WORKSPACE}/docs/robots.txt"
           git fetch origin gh-pages --verbose
           mike deploy . -t "Cloud (Latest)" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
         env:
