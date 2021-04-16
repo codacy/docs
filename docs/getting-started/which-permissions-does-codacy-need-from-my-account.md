@@ -4,7 +4,7 @@ description: List of permissions that Codacy requires from your Git provider to 
 
 # Which permissions does Codacy need from my account?
 
-Codacy Cloud uses [OAuth](https://oauth.net/) to handle logins and supports the following providers:
+Codacy Cloud uses the OAuth protocol to handle logins and supports the following providers:
 
 -   [GitHub Cloud](#github-cloud)
 -   [GitLab Cloud](#gitlab-cloud)
