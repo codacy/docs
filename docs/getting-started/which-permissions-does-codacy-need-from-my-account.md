@@ -1,5 +1,5 @@
 ---
-description: Codacy requests only the necessary permissions to integrate with your Git provider.
+description: List of permissions that Codacy requires from your Git provider to analyze your code.
 ---
 
 # Which permissions does Codacy need from my account?
