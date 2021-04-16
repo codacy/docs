@@ -1,12 +1,12 @@
 ---
-description: List of all the programming languages and frameworks that Codacy supports and the corresponding tools that Codacy uses to analyze your source code.
+description: List of tools that Codacy uses to analyze the supported programming languages and frameworks. Codacy generally provides static analysis as well as code duplication, code complexity, and test coverage metrics for each programming language. For cloud infrastructure-as-code frameworks, Codacy provides static analysis to enforce security and compliance best practices.
 ---
 
 # Supported languages and tools
 
-The table below lists all programming languages and frameworks that Codacy supports and the corresponding tools that Codacy uses to analyze your source code. Besides this, Codacy uses [cloc](https://github.com/kentcdodds/cloc) to calculate the source lines of code for all supported languages, and supports multiple [test coverage report formats](../coverage-reporter/index.md#generating-coverage).
+The table below lists all programming and cloud infrastructure-as-code frameworks that Codacy supports and the corresponding tools that Codacy uses to analyze your source code. Besides this, Codacy uses [cloc](https://github.com/kentcdodds/cloc) to calculate the source lines of code for all supported languages, and supports multiple [test coverage report formats](../coverage-reporter/index.md#generating-coverage).
 
-Codacy generally provides Static Analysis and Code Duplication, Code Complexity, and Test Coverage metrics for each programming language.
+Codacy generally provides **static analysis** as well as **code duplication**, **code complexity**, and **test coverage** metrics for each programming language. For cloud infrastructure-as-code frameworks, Codacy provides **static analysis** to enforce security and compliance best practices.
 
 <!--NOTE
     When adding a new tool, also update:
@@ -25,7 +25,7 @@ Codacy generally provides Static Analysis and Code Duplication, Code Complexity,
   </colgroup>
   <thead>
     <tr>
-      <th>Language</th>
+      <th>Language or framework</th>
       <th>Static Analysis</th>
       <th><a style="color: white;" href="#suggested-fixes">Suggested fixes</a></th>
       <th>Duplication</th>
