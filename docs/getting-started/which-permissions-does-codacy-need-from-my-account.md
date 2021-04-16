@@ -1,17 +1,17 @@
 ---
-description: Codacy requests only the necessary permissions to integrate with your Git provider.
+description: List of permissions that Codacy requires from your Git provider to analyze your code.
 ---
 
 # Which permissions does Codacy need from my account?
 
-Codacy Cloud uses [OAuth](https://oauth.net/) to handle logins. We support the following providers:
+Codacy Cloud uses the OAuth protocol to handle logins and supports the following providers:
 
--   GitHub Cloud
--   GitLab Cloud
--   Bitbucket Cloud
--   Google Sign-In
+-   [GitHub Cloud](#github-cloud)
+-   [GitLab Cloud](#gitlab-cloud)
+-   [Bitbucket Cloud](#bitbucket-cloud)
+-   [Google Sign-In](#google-sign-in)
 
-Depending on the provider, we may request different permissions due to different OAuth implementations. We strive to request only the necessary permissions.
+Codacy requests only the necessary permissions from your Git provider to analyze your code and [keeps your information secure](https://security.codacy.com/). See the sections below for the detailed list of permissions that Codacy asks for depending on the provider.
 
 ## GitHub Cloud
 
