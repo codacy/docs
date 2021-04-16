@@ -179,8 +179,8 @@ plugins:
               "hc/en-us/articles/212622529-Why-can-t-I-see-or-add-my-organization-s-repositories-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
               "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-projects-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
               "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-s-projects-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
-              "hc/en-us/articles/212799365.md": "getting-started/adding-a-codacy-badge-to-your-repository.md"
-              "hc/en-us/articles/212799365-Badges.md": "getting-started/adding-a-codacy-badge-to-your-repository.md"
+              "hc/en-us/articles/212799365.md": "getting-started/adding-a-codacy-badge.md"
+              "hc/en-us/articles/212799365-Badges.md": "getting-started/adding-a-codacy-badge.md"
               "hc/en-us/articles/213149905.md": "faq/general/how-do-i-change-my-email-address-in-codacy.md"
               "hc/en-us/articles/213149905-email-address-change.md": "faq/general/how-do-i-change-my-email-address-in-codacy.md"
               "hc/en-us/articles/213149905-How-do-I-change-my-email-address-in-Codacy-.md": "faq/general/how-do-i-change-my-email-address-in-codacy.md"
@@ -508,7 +508,7 @@ plugins:
               "repositories-configure/code-standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md"
               "repositories-configure/integrations/project-api.md": "codacy-api/api-tokens.md"
               "faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md": "codacy-api/adding-repositories-to-codacy-programmatically.md"
-              "repositories/badges.md": "getting-started/adding-a-codacy-badge-to-your-repository.md"
+              "repositories/badges.md": "getting-started/adding-a-codacy-badge.md"
 
 nav:
     - Documentation home: "index.md"
@@ -516,7 +516,7 @@ nav:
           - getting-started/getting-started-with-codacy.md
           - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
-          - getting-started/adding-a-codacy-badge-to-your-repository.md
+          - getting-started/adding-a-codacy-badge.md
     - Your repositories:
           - repositories/repository-dashboard.md
           - repositories/commits.md

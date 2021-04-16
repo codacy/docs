@@ -51,4 +51,4 @@ Congratulations, your new repository is ready!
 Optionally, you can also:
 
 -   [Add coverage reports to Codacy](../coverage-reporter/index.md)
--   [Add a Codacy badge to your repository](adding-a-codacy-badge-to-your-repository.md) displaying the current code quality grade or code coverage
+-   [Add a Codacy badge to your repository](adding-a-codacy-badge.md) displaying the current code quality grade or code coverage
