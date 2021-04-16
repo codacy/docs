@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Codacy requests only the necessary permissions to integrate with your Git provider.">
+        <meta name="description" content="List of permissions that Codacy requires from your Git provider to analyze your code.">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/which-permissions-does-codacy-need-from-my-account/">
@@ -2673,14 +2673,14 @@
                 
                 
                 <h1 id="which-permissions-does-codacy-need-from-my-account">Which permissions does Codacy need from my account?<a class="headerlink" href="#which-permissions-does-codacy-need-from-my-account" title="Permanent link">&para;</a></h1>
-<p>Codacy Cloud uses <a href="https://oauth.net/">OAuth</a> to handle logins. We support the following providers:</p>
+<p>Codacy Cloud uses the OAuth protocol to handle logins and supports the following providers:</p>
 <ul>
-<li>GitHub Cloud</li>
-<li>GitLab Cloud</li>
-<li>Bitbucket Cloud</li>
-<li>Google Sign-In</li>
+<li><a href="#github-cloud">GitHub Cloud</a></li>
+<li><a href="#gitlab-cloud">GitLab Cloud</a></li>
+<li><a href="#bitbucket-cloud">Bitbucket Cloud</a></li>
+<li><a href="#google-sign-in">Google Sign-In</a></li>
 </ul>
-<p>Depending on the provider, we may request different permissions due to different OAuth implementations. We strive to request only the necessary permissions.</p>
+<p>Codacy requests only the necessary permissions from your Git provider to analyze your code and <a href="https://security.codacy.com/">keeps your information secure</a>. See the sections below for the detailed list of permissions that Codacy asks for depending on the provider.</p>
 <h2 id="github-cloud">GitHub Cloud<a class="headerlink" href="#github-cloud" title="Permanent link">&para;</a></h2>
 <p>If you log in with GitHub, Codacy requires the following <a href="https://developer.github.com/v3/apps/permissions/">app permissions</a>:</p>
 <table>
@@ -2940,7 +2940,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 16, 2021</span>
     
   </small>
 </div>
