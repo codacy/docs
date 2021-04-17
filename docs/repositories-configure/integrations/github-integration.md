@@ -1,3 +1,7 @@
+---
+description: Enable the GitHub integration to have status checks, annotations, analysis summaries, and suggested fixes from Codacy directly on pull requests.
+---
+
 # GitHub integration
 
 The GitHub integration incorporates Codacy on your existing Git provider workflows.

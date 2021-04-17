@@ -1,5 +1,5 @@
 ---
-description: List of permissions that Codacy requires from your Git provider to analyze your code.
+description: Review the list of permissions that Codacy requires from your Git provider to analyze your code.
 ---
 
 # Which permissions does Codacy need from my account?

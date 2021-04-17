@@ -1,3 +1,7 @@
+---
+description: Ignore or exclude files from the Codacy analysis and see the list of files that Codacy already ignores by default.
+---
+
 # Ignoring files
 
 In some situations, you may want to ignore or exclude files from the Codacy analysis.

@@ -1,3 +1,7 @@
+---
+description: Enable the Bitbucket integration to have pull request status, comments, and analysis summaries from Codacy directly on pull requests.
+---
+
 # Bitbucket integration
 
 The Bitbucket integration incorporates Codacy on your existing Git provider workflows.
