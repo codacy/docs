@@ -20,7 +20,7 @@ The sections below provide detailed instructions on how to generate and revoke A
 
 {% include "../assets/includes/api-token-warning.txt" %}
 
-## Account API tokens
+## Generating and revoking account API tokens  {: id="account-api-tokens"}
 
 To generate an account API token:
 
@@ -35,7 +35,7 @@ To revoke an account API token, click the cross next to the token. After this, a
 !!! tip
     You can create multiple account API tokens. This can be useful to have a more flexible control by revoking only a specific token.
 
-## Project API tokens
+## Generating and revoking project API tokens {: id="project-api-tokens"}
 
 To generate a project API token:
 
