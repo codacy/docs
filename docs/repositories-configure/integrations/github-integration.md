@@ -52,7 +52,7 @@ Shows an overall view of the changes in the pull request, including new issues a
 ### Suggested fixes {: id="suggest-fixes"}
 
 {%
-    include "../../assets/includes/paid.txt"
+    include-markdown "../../assets/includes/paid.md"
     start="<!--start-paid-->"
     end="<!--end-paid-->"
 %}

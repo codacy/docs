@@ -68,6 +68,8 @@ plugins:
     - monorepo
     - markdownextradata
     - meta-descriptions
+    - exclude:
+          glob: "assets/includes/*.md"
     - redirects:
           redirect_maps:
               # Redirect legacy Zendesk knowledge base pages

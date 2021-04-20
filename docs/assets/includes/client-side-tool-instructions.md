@@ -2,7 +2,7 @@
 
     This setting enables Codacy to wait for the results of the local analysis before resuming the analysis of your commits.
 
-    ![Run analysis through build server](images/run-analysis-through-build-server.png)
+    ![Run analysis through build server](./images/run-analysis-through-build-server.png)
 
 1.  Set up an API token to authenticate on Codacy:
 
@@ -21,7 +21,7 @@
         export CODACY_PROJECT_NAME=<the repository name>
         ```
 
-    {% include "api-token-warning.txt" %}
+    {% include-markdown "api-token-warning.md" %}
 
 1.  **If you're using Codacy Self-hosted** set the following environment variable to specify your Codacy instance URL:
 

@@ -20,7 +20,7 @@ If you have many repositories, you can use the search field above the list to qu
 ## Adding a repository
 
 {%
-    include "../assets/includes/paid.txt"
+    include-markdown "../assets/includes/paid.md"
     start="<!--start-paid-private-repositories-->"
     end="<!--end-paid-private-repositories-->"
 %}
