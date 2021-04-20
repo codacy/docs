@@ -1,7 +1,7 @@
 # Organization Overview
 
 {%
-    include "../assets/includes/paid.txt"
+    include-markdown "../assets/includes/paid.md"
     start="<!--start-paid-->"
     end="<!--end-paid-->"
 %}

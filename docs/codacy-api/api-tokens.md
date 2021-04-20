@@ -18,7 +18,7 @@ Codacy provides two types of API tokens:
 
 The sections below provide detailed instructions on how to generate and revoke API tokens.
 
-{% include "../assets/includes/api-token-warning.txt" %}
+{% include-markdown "../assets/includes/api-token-warning.md" %}
 
 ## Generating and revoking account API tokens  {: id="account-api-tokens"}
 
