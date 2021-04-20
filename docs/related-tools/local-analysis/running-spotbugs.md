@@ -6,19 +6,7 @@ description: Instructions on how to run SpotBugs as a client-side tool on Codacy
 
 To run SpotBugs as a [client-side tool](client-side-tools.md):
 
-1.  Enable **Run analysis through build server** in your repository **Settings**, tab **General**, **Repository analysis**.
-
-    This setting enables Codacy to wait for the results of the local analysis before resuming the analysis of your commits.
-
-    ![Run analysis through build server](images/run-analysis-through-build-server.png)
-
-{% include "../../assets/includes/api-token-setup.txt" %}
-
-1.  **If you're using Codacy Self-hosted** set the following environment variable to specify your Codacy instance URL:
-
-    ```bash
-    export CODACY_API_BASE_URL=<your Codacy instance URL>
-    ```
+{% include "../../assets/includes/client-side-tool-instructions.txt" %}
 
 1.  Compile your Java or Scala repository on your build server, as you would normally do.
 
