@@ -511,6 +511,7 @@ plugins:
               "repositories-configure/integrations/project-api.md": "codacy-api/api-tokens.md"
               "faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md": "codacy-api/adding-repositories-to-codacy-programmatically.md"
               "repositories/badges.md": "getting-started/adding-a-codacy-badge.md"
+              "related-tools/codacy-api-tokens.md": "codacy-api/api-tokens.md"
 
 nav:
     - Documentation home: "index.md"
