@@ -16,6 +16,11 @@ Codacy supports client-side tools in two ways:
 
     The Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running these tools.
 
+## Running the client-side tools
+
+!!! tip
+    **If you're using GitHub** we recommend that you use the [Codacy Analysis CLI GitHub Action](https://github.com/codacy/codacy-analysis-cli-action#integration-with-codacy-for-client-side-tools) to run the client-side tools and upload the results to Codacy.
+
 Follow the instructions on how to run the supported client-side tools:
 
 <!--NOTE
