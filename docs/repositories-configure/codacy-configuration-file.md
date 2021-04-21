@@ -1,5 +1,5 @@
 ---
-description: Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom extensions to languages.
+description: Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages.
 ---
 
 # Codacy configuration file
@@ -10,7 +10,7 @@ Codacy supports configuring certain advanced features through a configuration fi
 
 -   Configuring a specific repository directory on which to start the analysis
 
--   Adding custom extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
+-   Adding custom file extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
 
 !!! note
     -   If a Codacy configuration file exists in your repository, the [Ignored Files](ignoring-files.md) settings in the Codacy UI don't apply.
