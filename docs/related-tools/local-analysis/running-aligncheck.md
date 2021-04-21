@@ -6,7 +6,9 @@ description: Instructions on how to run aligncheck as a client-side tool on Coda
 
 To run aligncheck as a [client-side tool](client-side-tools.md):
 
-{% include-markdown "../../assets/includes/client-side-tool-instructions.md" rewrite_relative_urls=false %}
+<!-- NOTE
+     include-markdown breaks the final list in two, use include instead. -->
+{% include "../../assets/includes/client-side-tool-instructions.md" %}
 
 1.  Download and run the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#install){: target="_blank"} on the root of the repository, specifying the tool aligncheck.
 
