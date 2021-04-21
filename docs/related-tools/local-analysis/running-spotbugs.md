@@ -6,7 +6,9 @@ description: Instructions on how to run SpotBugs as a client-side tool on Codacy
 
 To run SpotBugs as a [client-side tool](client-side-tools.md):
 
-{% include-markdown "../../assets/includes/client-side-tool-instructions.md" rewrite_relative_urls=false %}
+<!-- NOTE
+     include-markdown breaks the final list in two, use include instead. -->
+{% include "../../assets/includes/client-side-tool-instructions.md" %}
 
 1.  Compile your Java or Scala repository on your build server, as you would normally do.
 
