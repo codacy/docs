@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="To set up coverage on Codacy you must generate coverage reports in a supported format and upload them to Codacy.">
+        <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the test coverage of your repositories on Codacy.">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
@@ -2662,7 +2662,7 @@
                 
                 <h1 id="adding-coverage-to-your-repository">Adding coverage to your repository<a class="headerlink" href="#adding-coverage-to-your-repository" title="Permanent link">&para;</a></h1>
 <p>Code coverage is a metric used to describe the degree to which the source code of a program is tested. A program with high code coverage has been more thoroughly tested and has a lower chance of containing software bugs than a program with low code coverage. You can read more about the <a href="https://blog.codacy.com/a-guide-to-code-coverage-part-1-code-coverage-explained/">basics of code coverage</a> on Codacy's blog.</p>
-<p>To set up coverage on Codacy you must complete these main steps:</p>
+<p>Complete these main steps to start monitoring the test coverage of your repositories on Codacy:</p>
 <ol>
 <li>
 <p><strong>Generating coverage reports</strong></p>
@@ -2756,24 +2756,22 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you're generating a report format that Codacy does not support yet, see <a href="troubleshooting-common-issues/#unsupported-report-formats">submitting coverage from unsupported report formats</a>.</p>
+<p>If you're generating a report format that Codacy doesn't support yet, see <a href="troubleshooting-common-issues/#unsupported-report-formats">submitting coverage from unsupported report formats</a>.</p>
 </div>
 <h2 id="uploading-coverage">2. Uploading coverage data to Codacy<a class="headerlink" href="#uploading-coverage" title="Permanent link">&para;</a></h2>
 <p>After having coverage reports set up for your repository, you must use Codacy Coverage Reporter to convert the reports to smaller JSON files and upload these files to Codacy. The recommended way to do this is using a CI/CD platform that automatically runs tests, generates coverage, and uses Codacy Coverage Reporter to upload the coverage report information for every push to your repository.</p>
 <ol>
 <li>
-<p id="authenticate">Set up an API token to allow Codacy Coverage Reporter to authenticate on Codacy.</p>
+<p id="authenticate">Set up an API token to allow Codacy Coverage Reporter to authenticate on Codacy:</p>
 <ul>
 <li>
-<p><strong>If you're setting up coverage for one repository</strong>, obtain the <a href="../codacy-api/api-tokens/#project-api-tokens">project API Token</a> from the page <strong>Integrations</strong> in your Codacy repository settings.</p>
-<p>Then, set the following environment variable to specify your project API Token:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>&lt;your project API Token&gt;
+<p><strong>If you're setting up coverage for one repository</strong>, <a href="../codacy-api/api-tokens/#project-api-tokens">obtain a project API token</a> and set the following environment variable to specify your project API token:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>&lt;your project API token&gt;
 </code></pre></div>
 </li>
 <li>
-<p><strong>If you're setting up and automating coverage for multiple repositories</strong>, obtain an <a href="../codacy-api/api-tokens/#account-api-tokens">account API Token</a> from the page <strong>Access management</strong> in your Codacy account settings.</p>
-<p>Then, set the following environment variables to specify the account API Token, the username associated with the account API token, and the repository for which you're uploading the coverage information:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_TOKEN</span><span class="o">=</span>&lt;your account API Token&gt;
+<p><strong>If you're setting up and automating coverage for multiple repositories</strong>, <a href="../codacy-api/api-tokens/#account-api-tokens">obtain an account API Token</a> and set the following environment variables to specify the account API token, the username associated with the account API token, and the repository for which you're uploading the coverage information:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_TOKEN</span><span class="o">=</span>&lt;your account API token&gt;
 <span class="nb">export</span> <span class="nv">CODACY_ORGANIZATION_PROVIDER</span><span class="o">=</span>&lt;the repository provider&gt;
 <span class="nb">export</span> <span class="nv">CODACY_USERNAME</span><span class="o">=</span>&lt;the repository owner username&gt;
 <span class="nb">export</span> <span class="nv">CODACY_PROJECT_NAME</span><span class="o">=</span>&lt;the repository name&gt;
@@ -2787,7 +2785,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </div>
 </li>
 <li>
-<p><strong>If you are using Codacy Self-hosted</strong> set the following environment variable to specify your Codacy instance URL:</p>
+<p><strong>If you're using Codacy Self-hosted</strong> set the following environment variable to specify your Codacy instance URL:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>&lt;your Codacy instance URL&gt;
 </code></pre></div>
 </li>
@@ -2928,7 +2926,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 15, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 21, 2021</span>
     
   </small>
 </div>
