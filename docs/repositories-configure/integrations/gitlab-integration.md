@@ -1,3 +1,7 @@
+---
+description: Enable the GitLab integration to have merge request status and merge request comments from Codacy directly on merge requests.
+---
+
 # GitLab integration
 
 The GitLab integration incorporates Codacy on your existing Git provider workflows.

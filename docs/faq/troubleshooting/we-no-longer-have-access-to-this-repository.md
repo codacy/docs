@@ -1,5 +1,5 @@
 ---
-description: Some changes on the remote Git provider can prevent Codacy from cloning the repository. When this happens, Codacy displays the error message Failed to clone the repository on the Repository Dashboard page.
+description: Troubleshoot and fix issues that prevent Codacy from cloning your repository, such as moving the repository or changing the permissions of the user that added the repository to Codacy.
 ---
 
 # We no longer have access to this repository, check your SSH keys
@@ -9,21 +9,21 @@ SSH keys are exclusively used for repository cloning. Depending on the level of 
 -   Directly to the repository itself, if the user has permissions to add keys to the repository
 -   To the user account, if the user only has permissions to read or commit to the repository
 
-For this reason, some changes on the remote Git provider can prevent Codacy from cloning the repository. When this happens, Codacy displays the error message "Failed to clone the repository" on the Repository Dashboard page.
+For this reason, some changes on your Git provider can prevent Codacy from cloning the repository. When this happens, Codacy displays the error message "We no longer have access to this repository" on the Repository Dashboard page.
 
 ## The repository was renamed or moved
 
 If you renamed the repository or moved it to a different account on the Git provider:
 
 1.  On Codacy, open your **Repository Settings**, tab **General**.
-2.  Click the button **Update name**.
+1.  Click the button **Update name**.
 
 ## The user that configured the repository no longer has access
 
 If the user that initially configured the repository on Codacy was using a user account key but no longer has access to the repository on the Git provider:
 
 1.  On Codacy, open your **Repository Settings**, tab **General**.
-2.  Click the button **Generate New Repository Key** (recommended) or **Generate New User Key**:
+1.  Click the button **Generate New Repository Key** (recommended) or **Generate New User Key**:
 
     **Generate New Repository Key** is the recommended option. It will add a new SSH key to your repository deployment keys. However, this is only possible if the user configuring the integration with the remote Git provider has permissions to add keys to the repository. Otherwise, this operation will fail. Alternatively, you can also do this process manually by copying the SSH key.
 
@@ -34,4 +34,4 @@ If the user that initially configured the repository on Codacy was using a user 
 
     ![Generate new key](images/we-no-longer-have-access-to-this-repository-new-key.png)
 
-3.  Open the tab **Integrations**. If you have an integration with your Git provider enabled, remove and re-create the integration.
+1.  Open the tab **Integrations**. If you have an integration with your Git provider enabled, remove and re-create the integration.

@@ -1,5 +1,5 @@
 # How do I reanalyze my repository?
 
-Click on the latest commit from your list in the **Commit** view and click to reanalyze as the latest commit includes all the code of all the PRs.
+Open the latest commit on the [Commits page](../../repositories/commits.md) and click the button next to **Analyzed**, as the latest commit includes all the code from all the pull requests.
 
 ![Reanalyzing a commit](images/reanalize-repository.png)

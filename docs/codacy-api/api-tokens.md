@@ -1,5 +1,5 @@
 ---
-description: Codacy provides account API tokens defined at the Codacy user account level, and project API tokens defined on individual repositories.
+description: Create an account API token to authorize access to all the repositories that you have access to, or a project API token to authorize access only to a specific repository.
 ---
 
 # API tokens
