@@ -453,6 +453,7 @@ plugins:
               "repositories-configure/specifying-language.md": "repositories-configure/codacy-configuration-file.md"
               "repositories-configure/specifying-your-python-version.md": "repositories-configure/codacy-configuration-file.md"
               "repositories-configure/specifying-your-php-version.md": "repositories-configure/codacy-configuration-file.md"
+              "faq/code-analysis/does-codacy-automatically-analyze-all-pull-requests.md": "repositories-configure/managing-branches.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
@@ -512,6 +513,11 @@ plugins:
               "faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md": "codacy-api/adding-repositories-to-codacy-programmatically.md"
               "repositories/badges.md": "getting-started/adding-a-codacy-badge.md"
               "related-tools/codacy-api-tokens.md": "codacy-api/api-tokens.md"
+              "hc/en-us/articles/207280239-Bitbucket-Cloud-Integration.md": "repositories-configure/integrations/bitbucket-integration.md"
+              "hc/en-us/articles/207994885-Which-browsers-do-you-support-.md": "faq/general/which-browsers-does-codacy-support.md"
+              "organizations/managing-repositories-in-your-organization.md": "organizations/managing-repositories.md"
+              "organizations/why-cant-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
+              "related-tools/running-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"
 
 nav:
     - Documentation home: "index.md"
