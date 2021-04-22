@@ -4,23 +4,21 @@ on: push
 
 jobs:
   build:
-    name: Build
     runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
     steps:
-      - name: Checkout branch
+      - name: Checkout code
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           submodules: true
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2.2.2
         with:
           python-version: "3.x"
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v2.1.5
         id: cache
         with:
           path: ~/.cache/pip
@@ -37,24 +35,29 @@ jobs:
         run: |
           mkdocs build
 
+      # Commented this step because it was preventing the docs from being deployed
+      # - name: Validate generated HTML files
+      #   run: |
+      #     docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
+
   deploy-version:
-    name: Deploy version
+    needs: build
     runs-on: ubuntu-latest
     if: startsWith(github.ref, 'refs/heads/release/v')
     steps:
       - name: Checkout release branch
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
           submodules: true
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2.2.2
         with:
           python-version: "3.x"
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v2.1.5
         id: cache
         with:
           path: ~/.cache/pip
@@ -67,9 +70,9 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements.txt
 
-      - name: Setup git author
+      - name: Set up git author
         run: |
-          remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git remote rm origin
@@ -83,23 +86,23 @@ jobs:
           mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted ${GITHUB_REF##*/release/}" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
 
   deploy:
-    name: Deploy
+    needs: build
     runs-on: ubuntu-latest
     if: github.ref == 'refs/heads/master'
     steps:
       - name: Checkout master
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
           submodules: true
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v1
+        uses: actions/setup-python@v2.2.2
         with:
           python-version: "3.x"
 
-      - uses: actions/cache@v2
+      - uses: actions/cache@v2.1.5
         id: cache
         with:
           path: ~/.cache/pip
@@ -112,9 +115,9 @@ jobs:
           python -m pip install --upgrade pip setuptools wheel
           python -m pip install -r requirements.txt
 
-      - name: Setup git author
+      - name: Set up git author
         run: |
-          remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git remote rm origin
@@ -125,7 +128,7 @@ jobs:
       - name: Deploy docs
         run: |
           echo "${CUSTOM_DOMAIN}" > "${GITHUB_WORKSPACE}/docs/CNAME"
-          echo -e "User-agent: *\nDisallow: /v*.*" > "${GITHUB_WORKSPACE}/docs/robots.txt"
+          echo -e "User-agent: *\nDisallow: /v*.*/\nSitemap: https://${CUSTOM_DOMAIN}/sitemap.xml" > "${GITHUB_WORKSPACE}/docs/robots.txt"
           git fetch origin gh-pages --verbose
           mike deploy . -t "Cloud (Latest)" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
         env:
