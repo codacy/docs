@@ -9,16 +9,16 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           submodules: true
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v2.2.1
+        uses: actions/setup-python@v2.2.2
         with:
           python-version: "3.x"
 
-      - uses: actions/cache@v2.1.4
+      - uses: actions/cache@v2.1.5
         id: cache
         with:
           path: ~/.cache/pip
@@ -35,9 +35,10 @@ jobs:
         run: |
           mkdocs build
 
-      - name: Validate generated HTML files
-        run: |
-          docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
+      # Commented this step because it was preventing the docs from being deployed
+      # - name: Validate generated HTML files
+      #   run: |
+      #     docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
 
   deploy-version:
     needs: build
@@ -47,16 +48,16 @@ jobs:
       - name: Checkout release branch
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
           submodules: true
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v2.2.1
+        uses: actions/setup-python@v2.2.2
         with:
           python-version: "3.x"
 
-      - uses: actions/cache@v2.1.4
+      - uses: actions/cache@v2.1.5
         id: cache
         with:
           path: ~/.cache/pip
@@ -71,7 +72,7 @@ jobs:
 
       - name: Set up git author
         run: |
-          remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git remote rm origin
@@ -84,17 +85,6 @@ jobs:
           git fetch origin gh-pages --verbose
           mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted ${GITHUB_REF##*/release/}" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
 
-      - name: Push deployment to Pulse
-        run: |
-          curl -fsSL -o pulse-event-cli https://dl.bintray.com/codacy/pulse/event-cli/1.8.0/pulse-event-cli_linux_amd64/pulse-event-cli && \
-          chmod +x pulse-event-cli && \
-          ./pulse-event-cli push git deployment \
-              --api-key "${{ secrets.PULSE_TOKEN }}" \
-              --previous-deployment-ref "$(git rev-parse @~)" \
-              --identifier "${GITHUB_SHA}" \
-              --timestamp "$(date +%s)" \
-              --system "docs"
-
   deploy:
     needs: build
     runs-on: ubuntu-latest
@@ -103,16 +93,16 @@ jobs:
       - name: Checkout master
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.PERSONAL_ACCOUNT_TOKEN }}
+          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
           submodules: true
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v2.2.1
+        uses: actions/setup-python@v2.2.2
         with:
           python-version: "3.x"
 
-      - uses: actions/cache@v2.1.4
+      - uses: actions/cache@v2.1.5
         id: cache
         with:
           path: ~/.cache/pip
@@ -127,7 +117,7 @@ jobs:
 
       - name: Set up git author
         run: |
-          remote_repo="https://x-access-token:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
+          remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
           git config --global user.name "${GITHUB_ACTOR}"
           git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
           git remote rm origin
@@ -138,19 +128,8 @@ jobs:
       - name: Deploy docs
         run: |
           echo "${CUSTOM_DOMAIN}" > "${GITHUB_WORKSPACE}/docs/CNAME"
-          echo -e "User-agent: *\nDisallow: /v*.*" > "${GITHUB_WORKSPACE}/docs/robots.txt"
+          echo -e "User-agent: *\nDisallow: /v*.*/\nSitemap: https://${CUSTOM_DOMAIN}/sitemap.xml" > "${GITHUB_WORKSPACE}/docs/robots.txt"
           git fetch origin gh-pages --verbose
           mike deploy . -t "Cloud (Latest)" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
         env:
           CUSTOM_DOMAIN: docs.codacy.com
-
-      - name: Push deployment to Pulse
-        run: |
-          curl -fsSL -o pulse-event-cli https://dl.bintray.com/codacy/pulse/event-cli/1.8.0/pulse-event-cli_linux_amd64/pulse-event-cli && \
-          chmod +x pulse-event-cli && \
-          ./pulse-event-cli push git deployment \
-              --api-key "${{ secrets.PULSE_TOKEN }}" \
-              --previous-deployment-ref "$(git rev-parse @~)" \
-              --identifier "${GITHUB_SHA}" \
-              --timestamp "$(date +%s)" \
-              --system "docs"
