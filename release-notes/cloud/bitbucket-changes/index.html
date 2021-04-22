@@ -2655,9 +2655,9 @@
                   
                 
                 
-                <h1 id="bitbucket-changes">Bitbucket changes<a class="headerlink" href="#bitbucket-changes" title="Permanent link">&para;</a></h1>
+                <h1 id="bitbucket-changes">Bitbucket changes<a class="headerlink" href="#bitbucket-changes" title="Permanent link">#</a></h1>
 <p>We're making some changes on February 18, 2019 <strong>that will cause all existing integrations with Bitbucket to stop working</strong>.</p>
-<h2 id="what-exactly-are-we-doing">What exactly are we doing?<a class="headerlink" href="#what-exactly-are-we-doing" title="Permanent link">&para;</a></h2>
+<h2 id="what-exactly-are-we-doing">What exactly are we doing?<a class="headerlink" href="#what-exactly-are-we-doing" title="Permanent link">#</a></h2>
 <p>We're reducing the permissions requested when authenticating with Bitbucket.</p>
 <p>While we currently ask for all permissions, after this we will no longer require:</p>
 <ul>
@@ -2666,9 +2666,9 @@
 <li>Delete access for Repositories</li>
 <li>Full access to Wikis, Snippets, and Pipelines</li>
 </ul>
-<h2 id="why">Why?<a class="headerlink" href="#why" title="Permanent link">&para;</a></h2>
+<h2 id="why">Why?<a class="headerlink" href="#why" title="Permanent link">#</a></h2>
 <p>Previously, we were using OAuth 1, which forced us to request all permissions. This level of permissions requested to integrate with Bitbucket has been flagged as a concern by several of our users. We've now migrated to OAuth 2, which allows us to reduce the level of permissions required.</p>
-<h2 id="what-do-you-need-to-do-if-you-have-bitbucket-repositories">What do you need to do if you have Bitbucket repositories?<a class="headerlink" href="#what-do-you-need-to-do-if-you-have-bitbucket-repositories" title="Permanent link">&para;</a></h2>
+<h2 id="what-do-you-need-to-do-if-you-have-bitbucket-repositories">What do you need to do if you have Bitbucket repositories?<a class="headerlink" href="#what-do-you-need-to-do-if-you-have-bitbucket-repositories" title="Permanent link">#</a></h2>
 <p>The original user who set up your Bitbucket integration will need to log in to Codacy to confirm the new permissions. <strong>Otherwise, Codacy will no longer be able to detect new Pull Requests, and existing repositories will stop receiving Pull Request status and comments on Bitbucket.</strong></p>
 <p>If the original user who set up your Bitbucket integration isn't available, someone who has Admin permissions in both Codacy and Bitbucket to <a href="../../../repositories-configure/integrations/bitbucket-integration/">re-do the integration</a> in Codacy.</p>
 <p>You can log in with Bitbucket through <a href="https://www.codacy.com/login-with/bitbucket">https://www.codacy.com/login-with/bitbucket</a>.</p>

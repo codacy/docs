@@ -2646,7 +2646,7 @@
                   
                 
                 
-                <h1 id="running-spotbugs">Running SpotBugs<a class="headerlink" href="#running-spotbugs" title="Permanent link">&para;</a></h1>
+                <h1 id="running-spotbugs">Running SpotBugs<a class="headerlink" href="#running-spotbugs" title="Permanent link">#</a></h1>
 <p>To run SpotBugs as a <a href="../client-side-tools/">client-side tool</a>:</p>
 <ol>
 <li>
@@ -2695,7 +2695,7 @@
 </li>
 </ol>
 <p>The Codacy Analysis CLI runs SpotBugs on the compiled classes of your repository and uploads the results to Codacy so you can use them in your workflow.</p>
-<h2 id="detecting-sources-and-compiled-classes">Detecting sources and compiled classes<a class="headerlink" href="#detecting-sources-and-compiled-classes" title="Permanent link">&para;</a></h2>
+<h2 id="detecting-sources-and-compiled-classes">Detecting sources and compiled classes<a class="headerlink" href="#detecting-sources-and-compiled-classes" title="Permanent link">#</a></h2>
 <p>The Codacy Analysis CLI tries to find the compiled classes and map results to the source files automatically. If you use Maven, Gradle, or sbt the Codacy Analysis CLI also detects the default layouts automatically.</p>
 <p>If there is an issue with detection, you can configure these paths manually by adding a <code>.codacy.yml</code> <a href="../../../repositories-configure/codacy-configuration-file/">Codacy configuration file</a> to the root of the repository:</p>
 <div class="highlight"><pre><span></span><code>---
@@ -2707,7 +2707,7 @@ engines:
       - classesDirectories: [ &quot;api/target/classes&quot; ]
         sourceDirectories:  [ &quot;api/src/main&quot; ]
 </code></pre></div>
-<h2 id="increasing-the-timeout-to-run-spotbugs">Increasing the timeout to run SpotBugs<a class="headerlink" href="#increasing-the-timeout-to-run-spotbugs" title="Permanent link">&para;</a></h2>
+<h2 id="increasing-the-timeout-to-run-spotbugs">Increasing the timeout to run SpotBugs<a class="headerlink" href="#increasing-the-timeout-to-run-spotbugs" title="Permanent link">#</a></h2>
 <p>When running SpotBugs on the compiled classes of larger projects, the <a href="https://github.com/codacy/codacy-analysis-cli#commands-and-configuration" target="_blank">default execution timeout of 15 minutes</a> may not be enough for SpotBugs to complete the analysis.</p>
 <p>To increase the timeout that SpotBugs has to execute, use the option <code>--tool-timeout</code> when running the Codacy Analysis CLI. For example, use <code>--tool-timeout 1hour</code> to set the timeout to one hour.</p>
               

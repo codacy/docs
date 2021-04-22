@@ -2674,11 +2674,11 @@
                   
                 
                 
-                <h1 id="creating-an-amazon-eks-cluster">Creating an Amazon EKS cluster<a class="headerlink" href="#creating-an-amazon-eks-cluster" title="Permanent link">&para;</a></h1>
+                <h1 id="creating-an-amazon-eks-cluster">Creating an Amazon EKS cluster<a class="headerlink" href="#creating-an-amazon-eks-cluster" title="Permanent link">#</a></h1>
 <p>Follow the instructions below to set up an Amazon EKS cluster from scratch, including the necessary underlying infrastructure, using Terraform.</p>
 <p>The following diagram is a non-exhaustive overview of what you can expect to have deployed in your AWS account by using this quickstart guide.</p>
 <p><img alt="Codacy Amazon EKS quickstart" src="../images/codacy-chart-eks-quickstart.jpg" width="1024" /></p>
-<h2 id="1-prepare-your-environment">1. Prepare your environment<a class="headerlink" href="#1-prepare-your-environment" title="Permanent link">&para;</a></h2>
+<h2 id="1-prepare-your-environment">1. Prepare your environment<a class="headerlink" href="#1-prepare-your-environment" title="Permanent link">#</a></h2>
 <p>Prepare your environment to set up the Amazon EKS cluster:</p>
 <ol>
 <li>
@@ -2709,7 +2709,7 @@
 <p>You must have administration privileges on AWS to deploy (and eventually destroy) this infrastructure. The policy file <a href="../EKS/aws-terraform-minimum-admin-policy.json">aws-terraform-minimum-admin-policy.json</a> lists the minimum privileges that are required.</p>
 </li>
 </ol>
-<h2 id="2-set-up-the-terraform-state-storage-backend">2. Set up the Terraform state storage backend<a class="headerlink" href="#2-set-up-the-terraform-state-storage-backend" title="Permanent link">&para;</a></h2>
+<h2 id="2-set-up-the-terraform-state-storage-backend">2. Set up the Terraform state storage backend<a class="headerlink" href="#2-set-up-the-terraform-state-storage-backend" title="Permanent link">#</a></h2>
 <p>The <a href="https://www.terraform.io/docs/backends/index.html">backend</a> stores the current and historical state of your infrastructure.</p>
 <p>Although using the backend is optional, we recommend that you deploy it, particularly if you're planning to use these Terraform templates to make modifications to the cluster in the future:</p>
 <ol>
@@ -2727,7 +2727,7 @@ terraform init <span class="o">&amp;&amp;</span> terraform apply
 <p>Edit the <code>main/config.tf</code> file and follow the instructions included in the comments to set the name of the Amazon S3 bucket created above and enable the use of the backend in those infrastructure stacks.</p>
 </li>
 </ol>
-<h2 id="3-create-a-vanilla-amazon-eks-cluster">3. Create a vanilla Amazon EKS cluster<a class="headerlink" href="#3-create-a-vanilla-amazon-eks-cluster" title="Permanent link">&para;</a></h2>
+<h2 id="3-create-a-vanilla-amazon-eks-cluster">3. Create a vanilla Amazon EKS cluster<a class="headerlink" href="#3-create-a-vanilla-amazon-eks-cluster" title="Permanent link">#</a></h2>
 <p>Create a cluster that includes all the required network and node setup:</p>
 <ol>
 <li>
@@ -2760,7 +2760,7 @@ someting_else = true
 </code></pre></div>
 </li>
 </ol>
-<h2 id="4-prepare-to-set-up-the-ingress-controller">4. Prepare to set up the Ingress Controller<a class="headerlink" href="#4-prepare-to-set-up-the-ingress-controller" title="Permanent link">&para;</a></h2>
+<h2 id="4-prepare-to-set-up-the-ingress-controller">4. Prepare to set up the Ingress Controller<a class="headerlink" href="#4-prepare-to-set-up-the-ingress-controller" title="Permanent link">#</a></h2>
 <p>Prepare your infrastructure for the Ingress Controller setup, which is performed later during the installation process:</p>
 <ol>
 <li>
@@ -2796,7 +2796,7 @@ helm repo update
 </code></pre></div>
 </li>
 </ol>
-<h2 id="5-install-the-nginx-ingress-controller">5. Install the NGINX Ingress Controller<a class="headerlink" href="#5-install-the-nginx-ingress-controller" title="Permanent link">&para;</a></h2>
+<h2 id="5-install-the-nginx-ingress-controller">5. Install the NGINX Ingress Controller<a class="headerlink" href="#5-install-the-nginx-ingress-controller" title="Permanent link">#</a></h2>
 <p>Install the NGINX Ingress Controller:</p>
 <ol>
 <li>
@@ -2810,7 +2810,7 @@ helm upgrade --install --namespace codacy --version <span class="m">1</span>.39.
 </code></pre></div>
 </li>
 </ol>
-<h2 id="uninstalling-the-amazon-eks-cluster">Uninstalling the Amazon EKS cluster<a class="headerlink" href="#uninstalling-the-amazon-eks-cluster" title="Permanent link">&para;</a></h2>
+<h2 id="uninstalling-the-amazon-eks-cluster">Uninstalling the Amazon EKS cluster<a class="headerlink" href="#uninstalling-the-amazon-eks-cluster" title="Permanent link">#</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 </div>

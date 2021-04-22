@@ -2648,14 +2648,14 @@
                   
                 
                 
-                <h1 id="self-hosted-v221">Self-hosted v2.2.1<a class="headerlink" href="#self-hosted-v221" title="Permanent link">&para;</a></h1>
+                <h1 id="self-hosted-v221">Self-hosted v2.2.1<a class="headerlink" href="#self-hosted-v221" title="Permanent link">#</a></h1>
 <p>These release notes are for <a href="https://github.com/codacy/chart/releases/tag/2.2.1" target="_blank">Codacy Self-hosted v2.2.1</a>, released on October 22, 2020.</p>
 <p>To upgrade Codacy, follow <a href="../../../chart/maintenance/upgrade/">these instructions</a>. After that, restart the Fluentd pods by running the following command, replacing <code>&lt;namespace&gt;</code> with the namespace in which Codacy was installed:</p>
 <div class="highlight"><pre><span></span><code><span class="nv">daemonset</span><span class="o">=</span><span class="k">$(</span>kubectl get daemonsets --namespace &lt;namespace&gt; -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[*].metadata.name}&#39;</span><span class="k">)</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
 kubectl rollout restart daemonset <span class="nv">$daemonset</span> --namespace &lt;namespace&gt; <span class="o">&amp;&amp;</span> <span class="se">\</span>
 kubectl rollout status daemonset <span class="nv">$daemonset</span> --namespace &lt;namespace&gt; --watch
 </code></pre></div>
-<h2 id="bug-fixes">Bug fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">&para;</a></h2>
+<h2 id="bug-fixes">Bug fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">#</a></h2>
 <ul>
 <li>Fixed an issue that caused the <a href="../../../chart/troubleshoot/logs-collect/">script that collects logs from a Codacy instance</a> to return an empty archive. (CY-3068)</li>
 <li>Fixed a UI glitch that prevented enabling Git provider integrations in the repository settings. (CY-3049)</li>
@@ -2663,7 +2663,7 @@ kubectl rollout status daemonset <span class="nv">$daemonset</span> --namespace 
 <li>Fixed an issue that prevented Codacy from displaying repositories in GitHub organizations. (CY-3002)</li>
 <li>Fixed an issue that caused deployments of the <code>codacy-tools</code> pod to fail. (CY-2990)</li>
 </ul>
-<h2 id="tool-versions">Tool versions<a class="headerlink" href="#tool-versions" title="Permanent link">&para;</a></h2>
+<h2 id="tool-versions">Tool versions<a class="headerlink" href="#tool-versions" title="Permanent link">#</a></h2>
 <p>This version of Codacy Self-hosted includes the tool versions below. The tools that were updated on this version are highlighted in bold:</p>
 <ul>
 <li>Ameba 0.13.1</li>

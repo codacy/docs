@@ -2672,7 +2672,7 @@
                   
                 
                 
-                <h1 id="which-permissions-does-codacy-need-from-my-account">Which permissions does Codacy need from my account?<a class="headerlink" href="#which-permissions-does-codacy-need-from-my-account" title="Permanent link">&para;</a></h1>
+                <h1 id="which-permissions-does-codacy-need-from-my-account">Which permissions does Codacy need from my account?<a class="headerlink" href="#which-permissions-does-codacy-need-from-my-account" title="Permanent link">#</a></h1>
 <p>Codacy Cloud uses the OAuth protocol to handle logins and supports the following providers:</p>
 <ul>
 <li><a href="#github-cloud">GitHub Cloud</a></li>
@@ -2681,7 +2681,7 @@
 <li><a href="#google-sign-in">Google Sign-In</a></li>
 </ul>
 <p>Codacy requests only the necessary permissions from your Git provider to analyze your code and <a href="https://security.codacy.com/">keeps your information secure</a>. See the sections below for the detailed list of permissions that Codacy asks for depending on the provider.</p>
-<h2 id="github-cloud">GitHub Cloud<a class="headerlink" href="#github-cloud" title="Permanent link">&para;</a></h2>
+<h2 id="github-cloud">GitHub Cloud<a class="headerlink" href="#github-cloud" title="Permanent link">#</a></h2>
 <p>If you log in with GitHub, Codacy requires the following <a href="https://developer.github.com/v3/apps/permissions/">app permissions</a>:</p>
 <table>
   <colgroup>
@@ -2764,7 +2764,7 @@
   </tbody>
 </table>
 
-<h2 id="gitlab-cloud">GitLab Cloud<a class="headerlink" href="#gitlab-cloud" title="Permanent link">&para;</a></h2>
+<h2 id="gitlab-cloud">GitLab Cloud<a class="headerlink" href="#gitlab-cloud" title="Permanent link">#</a></h2>
 <p>If you sign up with GitLab Cloud, Codacy requires the following <a href="https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications">permissions/scopes</a>:</p>
 <table>
   <colgroup>
@@ -2797,7 +2797,7 @@
   </tbody>
 </table>
 
-<h2 id="bitbucket-cloud">Bitbucket Cloud<a class="headerlink" href="#bitbucket-cloud" title="Permanent link">&para;</a></h2>
+<h2 id="bitbucket-cloud">Bitbucket Cloud<a class="headerlink" href="#bitbucket-cloud" title="Permanent link">#</a></h2>
 <p>If you log in with Bitbucket, Codacy requires the following <a href="https://developer.atlassian.com/cloud/bitbucket/bitbucket-cloud-rest-api-scopes/">permissions/scopes</a>:</p>
 <table>
   <colgroup>
@@ -2842,9 +2842,9 @@
   </tbody>
 </table>
 
-<h2 id="google-sign-in">Google Sign-In<a class="headerlink" href="#google-sign-in" title="Permanent link">&para;</a></h2>
+<h2 id="google-sign-in">Google Sign-In<a class="headerlink" href="#google-sign-in" title="Permanent link">#</a></h2>
 <p>If you log in with Google, Codacy requires the <code>email</code> <a href="https://developers.google.com/identity/protocols/oauth2/scopes#google-sign-in">scope</a>.</p>
-<h2 id="revoking-access-to-integrations">Revoking access to integrations<a class="headerlink" href="#revoking-access-to-integrations" title="Permanent link">&para;</a></h2>
+<h2 id="revoking-access-to-integrations">Revoking access to integrations<a class="headerlink" href="#revoking-access-to-integrations" title="Permanent link">#</a></h2>
 <p>To revoke the access from Codacy to one or more of the OAuth providers:</p>
 <ol>
 <li>Click on your avatar on the top right-hand corner and select <strong>Your Account</strong>, tab <strong>Access Management</strong>.</li>
@@ -2864,7 +2864,7 @@
 </ol>
 <p>After revoking an integration, Codacy will no longer be able to access or manipulate resources that require API calls, such as detecting new pull requests or adding comments to pull requests. However, Codacy will still be able to perform operations that only require using the Git protocol either via SSH or HTTPS, such as detecting new commits and calculating diffs. To remove your repositories from Codacy and stop the analysis you must <a href="../../repositories-configure/removing-your-repository/">delete them from your Codacy account</a>.</p>
 <p>If you need to use an integration that you have previously revoked, log in again to Codacy with that integration so that Codacy can request the required permissions from the provider.</p>
-<h2 id="why-does-codacy-ask-for-permission-to-create-ssh-keys">Why does Codacy ask for permission to create SSH keys?<a class="headerlink" href="#why-does-codacy-ask-for-permission-to-create-ssh-keys" title="Permanent link">&para;</a></h2>
+<h2 id="why-does-codacy-ask-for-permission-to-create-ssh-keys">Why does Codacy ask for permission to create SSH keys?<a class="headerlink" href="#why-does-codacy-ask-for-permission-to-create-ssh-keys" title="Permanent link">#</a></h2>
 <p>Codacy asks for permission to create SSH keys because it needs to create an SSH key in your account in the following situations:</p>
 <ul>
 <li>If your repository uses submodules, so that Codacy can clone the repositories for each submodule</li>

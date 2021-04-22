@@ -2648,7 +2648,7 @@
                   
                 
                 
-                <h1 id="deprecating-http-headers-for-api-tokens-april-1-2020">Deprecating HTTP headers for API tokens | April 1, 2020<a class="headerlink" href="#deprecating-http-headers-for-api-tokens-april-1-2020" title="Permanent link">&para;</a></h1>
+                <h1 id="deprecating-http-headers-for-api-tokens-april-1-2020">Deprecating HTTP headers for API tokens | April 1, 2020<a class="headerlink" href="#deprecating-http-headers-for-api-tokens-april-1-2020" title="Permanent link">#</a></h1>
 <p>On April 1st, 2020 we're deprecating the following HTTP headers used to authenticate to the <a href="https://api.codacy.com/api/api-docs">Codacy API</a> using either an API token or project token:</p>
 <ul>
 <li><code>api_token</code></li>
@@ -2659,7 +2659,7 @@
 <li><code>api-token</code></li>
 <li><code>project-token</code></li>
 </ul>
-<h2 id="how-does-this-change-impact-me">How does this change impact me?<a class="headerlink" href="#how-does-this-change-impact-me" title="Permanent link">&para;</a></h2>
+<h2 id="how-does-this-change-impact-me">How does this change impact me?<a class="headerlink" href="#how-does-this-change-impact-me" title="Permanent link">#</a></h2>
 <p>We will support the new and old HTTP headers simultaneously for some time. However, we intend to drop the support for the old HTTP headers in the future.</p>
 <p>As such, to avoid downtime in your operations, we recommend that you do the following <strong>as soon as possible</strong>:</p>
 <ul>
@@ -2667,7 +2667,7 @@
 <li>Update the <a href="https://github.com/codacy/codacy-analysis-cli">Codacy Analysis CLI</a> to version 3.0.0 or later</li>
 <li>If you have any custom tools or scripts that integrate with the Codacy API, update them to use the new HTTP headers.</li>
 </ul>
-<h2 id="background-information">Background information<a class="headerlink" href="#background-information" title="Permanent link">&para;</a></h2>
+<h2 id="background-information">Background information<a class="headerlink" href="#background-information" title="Permanent link">#</a></h2>
 <p>By default, <a href="https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/#missing-disappearing-http-headers">NGINX silently drops HTTP headers containing underscores</a>. With the old HTTP headers, this would require an extra configuration step during the Codacy installation process.</p>
 <p>We decided to avoid this extra complexity by changing to the new HTTP headers that don't include underscores.</p>
               

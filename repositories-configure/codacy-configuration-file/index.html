@@ -2651,7 +2651,7 @@
                   
                 
                 
-                <h1 id="codacy-configuration-file">Codacy configuration file<a class="headerlink" href="#codacy-configuration-file" title="Permanent link">&para;</a></h1>
+                <h1 id="codacy-configuration-file">Codacy configuration file<a class="headerlink" href="#codacy-configuration-file" title="Permanent link">#</a></h1>
 <p>Codacy supports configuring certain advanced features through a configuration file:</p>
 <ul>
 <li>
@@ -2712,7 +2712,7 @@
 </code></pre></div>
 </li>
 </ol>
-<h2 id="syntax-for-excluding-files">Syntax for excluding files<a class="headerlink" href="#syntax-for-excluding-files" title="Permanent link">&para;</a></h2>
+<h2 id="syntax-for-excluding-files">Syntax for excluding files<a class="headerlink" href="#syntax-for-excluding-files" title="Permanent link">#</a></h2>
 <p>To ignore files, you must use the <a href="https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29">Java glob syntax</a> to define one or more <code>exclude_paths</code> patterns. For example:</p>
 <table>
 <thead>
@@ -2748,7 +2748,7 @@
 </tr>
 </tbody>
 </table>
-<h2 id="which-tools-can-be-configured-and-which-name-should-i-use">Which tools can be configured and which name should I use?<a class="headerlink" href="#which-tools-can-be-configured-and-which-name-should-i-use" title="Permanent link">&para;</a></h2>
+<h2 id="which-tools-can-be-configured-and-which-name-should-i-use">Which tools can be configured and which name should I use?<a class="headerlink" href="#which-tools-can-be-configured-and-which-name-should-i-use" title="Permanent link">#</a></h2>
 <p>You can configure all tools supported by Codacy using the configuration file.</p>
 <p>The following are the tool names that must be used in the Codacy configuration file:</p>
 <div class="highlight"><pre><span></span><code>ameba
@@ -2795,23 +2795,23 @@ tailor
 tslint
 tsqllint
 </code></pre></div>
-<h2 id="tool-specific-configurations">Tool-specific configurations<a class="headerlink" href="#tool-specific-configurations" title="Permanent link">&para;</a></h2>
+<h2 id="tool-specific-configurations">Tool-specific configurations<a class="headerlink" href="#tool-specific-configurations" title="Permanent link">#</a></h2>
 <p>Although Codacy tries to detect which language is used on each source code file, some false positives may occur. The tools below support specific configurations to specify the language or language version used in the source code files that you're analyzing.</p>
-<h3 id="cppcheck">Cppcheck<a class="headerlink" href="#cppcheck" title="Permanent link">&para;</a></h3>
+<h3 id="cppcheck">Cppcheck<a class="headerlink" href="#cppcheck" title="Permanent link">#</a></h3>
 <p>If you're using Cppcheck to analyze C or C++ source code files, add the following configuration to your Codacy configuration file to define the programming language you're using. The supported languages are <code>c</code> and <code>c++</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">engines</span><span class="p">:</span>
   <span class="nt">cppcheck</span><span class="p">:</span>
     <span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">c++</span>
 </code></pre></div>
-<h3 id="php-codesniffer">PHP CodeSniffer<a class="headerlink" href="#php-codesniffer" title="Permanent link">&para;</a></h3>
+<h3 id="php-codesniffer">PHP CodeSniffer<a class="headerlink" href="#php-codesniffer" title="Permanent link">#</a></h3>
 <p>If you're using the <a href="https://github.com/PHPCompatibility/PHPCompatibility">PHP Compatibility</a> coding standard for PHP_CodeSniffer, add the following configuration to your Codacy configuration file to <a href="https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions">define the PHP version</a> you're using:</p>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">engines</span><span class="p">:</span>
   <span class="nt">phpcs</span><span class="p">:</span>
     <span class="nt">php_version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5.5</span>
 </code></pre></div>
-<h3 id="legacy-pylint-19">Legacy Pylint 1.9.*<a class="headerlink" href="#legacy-pylint-19" title="Permanent link">&para;</a></h3>
+<h3 id="legacy-pylint-19">Legacy Pylint 1.9.*<a class="headerlink" href="#legacy-pylint-19" title="Permanent link">#</a></h3>
 <p>If you're using the legacy Pylint 1.9.* to analyze Python source code files, add the following configuration to your Codacy configuration file to define the Python language version you're using. The supported versions are <code>2</code> and <code>3</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">engines</span><span class="p">:</span>

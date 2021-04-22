@@ -2637,7 +2637,7 @@
                   
                 
                 
-                <h1 id="using-the-codacy-api">Using the Codacy API<a class="headerlink" href="#using-the-codacy-api" title="Permanent link">&para;</a></h1>
+                <h1 id="using-the-codacy-api">Using the Codacy API<a class="headerlink" href="#using-the-codacy-api" title="Permanent link">#</a></h1>
 <p>The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.</p>
 <p>Codacy supports two API versions but we strongly recommend using the new API v3 when possible since it's the version being actively developed:</p>
 <table>
@@ -2689,7 +2689,7 @@
 <div class="highlight"><pre><span></span><code>https://codacy.example.com/api/v3   
 </code></pre></div>
 </div>
-<h2 id="authenticating-requests-to-the-codacy-api">Authenticating requests to the Codacy API<a class="headerlink" href="#authenticating-requests-to-the-codacy-api" title="Permanent link">&para;</a></h2>
+<h2 id="authenticating-requests-to-the-codacy-api">Authenticating requests to the Codacy API<a class="headerlink" href="#authenticating-requests-to-the-codacy-api" title="Permanent link">#</a></h2>
 <p>Most API endpoints require that you provide either a <a href="../api-tokens/">project or account API token</a>. After obtaining the necessary tokens, include them in your request headers using the format <code>api-token: &lt;token key&gt;</code> or <code>project-token: &lt;token key&gt;</code>.</p>
 <p>For example, to make a request to an API v3 endpoint that requires an <strong>account API token</strong>:</p>
 <div class="highlight"><pre><span></span><code>curl -X GET https://api.codacy.com/api/v3/user/organizations/gh <span class="se">\</span>

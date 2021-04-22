@@ -2653,10 +2653,10 @@
                   
                 
                 
-                <h1 id="running-local-analysis">Running local analysis<a class="headerlink" href="#running-local-analysis" title="Permanent link">&para;</a></h1>
-<h2 id="set-up-the-codacy-analysis-cli">Set up the Codacy Analysis CLI<a class="headerlink" href="#set-up-the-codacy-analysis-cli" title="Permanent link">&para;</a></h2>
+                <h1 id="running-local-analysis">Running local analysis<a class="headerlink" href="#running-local-analysis" title="Permanent link">#</a></h1>
+<h2 id="set-up-the-codacy-analysis-cli">Set up the Codacy Analysis CLI<a class="headerlink" href="#set-up-the-codacy-analysis-cli" title="Permanent link">#</a></h2>
 <p>Follow the <a href="https://github.com/codacy/codacy-analysis-cli#install">installation guide</a> to get the <code>codacy-analysis-cli</code> executable running on your build server.</p>
-<h2 id="running-an-analysis-with-the-cli">Running an analysis with the CLI<a class="headerlink" href="#running-an-analysis-with-the-cli" title="Permanent link">&para;</a></h2>
+<h2 id="running-an-analysis-with-the-cli">Running an analysis with the CLI<a class="headerlink" href="#running-an-analysis-with-the-cli" title="Permanent link">#</a></h2>
 <p>At the moment, the CLI still requires to retrieve the configuration from Codacy to perform an analysis. In order to access the repository, you will have to obtain a <em>Project Token</em> as explained in the <a href="https://github.com/codacy/codacy-analysis-cli#project-token">CLI documentation</a>. Then, you can invoke the CLI to get a report with all the issues:</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -2669,7 +2669,7 @@
                             --upload
 </code></pre></div>
 <p>If you don't specify the tool, the analysis will run as Codacy does in the backend. To obtain results for <a href="../../../repositories-configure/codacy-configuration-file/#which-tools-can-be-configured-and-which-name-should-i-use">a particular tool</a>, specify the tool with <code>--tool</code>.</p>
-<h3 id="advanced-configuration">Advanced configuration<a class="headerlink" href="#advanced-configuration" title="Permanent link">&para;</a></h3>
+<h3 id="advanced-configuration">Advanced configuration<a class="headerlink" href="#advanced-configuration" title="Permanent link">#</a></h3>
 <p>For advanced configuration details, check all the CLI flags in the <a href="https://github.com/codacy/codacy-analysis-cli#commands-and-configuration">CLI documentation</a>.</p>
 <p>Some flags you might be interested in:</p>
 <ul>
@@ -2677,7 +2677,7 @@
 <li><code>--max-allowed-issues</code> - returns a non-zero exit code when a certain number of issues is exceeded</li>
 <li><code>--fail-if-incomplete</code> - to return a non-zero exit code when any tool fails to run successfully</li>
 </ul>
-<h2 id="notes-on-ignored-issues">Notes on ignored issues<a class="headerlink" href="#notes-on-ignored-issues" title="Permanent link">&para;</a></h2>
+<h2 id="notes-on-ignored-issues">Notes on ignored issues<a class="headerlink" href="#notes-on-ignored-issues" title="Permanent link">#</a></h2>
 <p>If you have ignored issues on Codacy be aware that the CLI won't respect those ignored issues when printing the results locally.</p>
 <p>However, if you upload the results, the ignored issues will be reflected on the Codacy UI after the analysis is complete.</p>
               

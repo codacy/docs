@@ -2660,7 +2660,7 @@
                   
                 
                 
-                <h1 id="adding-coverage-to-your-repository">Adding coverage to your repository<a class="headerlink" href="#adding-coverage-to-your-repository" title="Permanent link">&para;</a></h1>
+                <h1 id="adding-coverage-to-your-repository">Adding coverage to your repository<a class="headerlink" href="#adding-coverage-to-your-repository" title="Permanent link">#</a></h1>
 <p>Code coverage is a metric used to describe the degree to which the source code of a program is tested. A program with high code coverage has been more thoroughly tested and has a lower chance of containing software bugs than a program with low code coverage. You can read more about the <a href="https://blog.codacy.com/a-guide-to-code-coverage-part-1-code-coverage-explained/">basics of code coverage</a> on Codacy's blog.</p>
 <p>Complete these main steps to start monitoring the test coverage of your repositories on Codacy:</p>
 <ol>
@@ -2674,7 +2674,7 @@
 </li>
 </ol>
 <p>The next sections include detailed instructions on how to complete each step of the setup process.</p>
-<h2 id="generating-coverage">1. Generating coverage reports<a class="headerlink" href="#generating-coverage" title="Permanent link">&para;</a></h2>
+<h2 id="generating-coverage">1. Generating coverage reports<a class="headerlink" href="#generating-coverage" title="Permanent link">#</a></h2>
 <p>Before setting up Codacy to display code coverage metrics for your repository you must have tests and use tools to generate coverage reports for the languages in your repositories.</p>
 <p>There are many tools that you can use to generate coverage reports for the languages used in your repositories. The following table contains example coverage tools that generate reports in formats that Codacy supports:</p>
 <table>
@@ -2758,7 +2758,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <p class="admonition-title">Note</p>
 <p>If you're generating a report format that Codacy doesn't support yet, see <a href="troubleshooting-common-issues/#unsupported-report-formats">submitting coverage from unsupported report formats</a>.</p>
 </div>
-<h2 id="uploading-coverage">2. Uploading coverage data to Codacy<a class="headerlink" href="#uploading-coverage" title="Permanent link">&para;</a></h2>
+<h2 id="uploading-coverage">2. Uploading coverage data to Codacy<a class="headerlink" href="#uploading-coverage" title="Permanent link">#</a></h2>
 <p>After having coverage reports set up for your repository, you must use Codacy Coverage Reporter to convert the reports to smaller JSON files and upload these files to Codacy. The recommended way to do this is using a CI/CD platform that automatically runs tests, generates coverage, and uses Codacy Coverage Reporter to upload the coverage report information for every push to your repository.</p>
 <ol>
 <li>
@@ -2804,7 +2804,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </li>
 </ol>
 <p>See the sections below for more advanced functionality, or <a href="troubleshooting-common-issues/">check the troubleshooting page</a> if you found an issue during the setup process.</p>
-<h2 id="multiple-reports">Uploading multiple coverage reports for the same language<a class="headerlink" href="#multiple-reports" title="Permanent link">&para;</a></h2>
+<h2 id="multiple-reports">Uploading multiple coverage reports for the same language<a class="headerlink" href="#multiple-reports" title="Permanent link">#</a></h2>
 <p>If your test suite is split on different modules or runs in parallel, you will need to upload multiple coverage reports for the same language.</p>
 <p>To do this, specify multiple reports by repeating the flag <code>-r</code>. For example:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
@@ -2829,7 +2829,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <p class="admonition-title">Tip</p>
 <p>It might also be possible to merge the reports before uploading them to Codacy, since most coverage tools support merge/aggregation. For example, <a href="http://www.eclemma.org/jacoco/trunk/doc/merge-mojo.html">http://www.eclemma.org/jacoco/trunk/doc/merge-mojo.html</a>.</p>
 </div>
-<h2 id="commit-detection">Commit SHA hash detection<a class="headerlink" href="#commit-detection" title="Permanent link">&para;</a></h2>
+<h2 id="commit-detection">Commit SHA hash detection<a class="headerlink" href="#commit-detection" title="Permanent link">#</a></h2>
 <p>The Codacy Coverage Reporter automatically detects the commit SHA hash to associate with the coverage data from the following CI/CD platforms:</p>
 <ul>
 <li>Appveyor</li>

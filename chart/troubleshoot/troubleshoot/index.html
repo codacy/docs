@@ -2646,7 +2646,7 @@
                   
                 
                 
-                <h1 id="troubleshooting-codacy">Troubleshooting Codacy<a class="headerlink" href="#troubleshooting-codacy" title="Permanent link">&para;</a></h1>
+                <h1 id="troubleshooting-codacy">Troubleshooting Codacy<a class="headerlink" href="#troubleshooting-codacy" title="Permanent link">#</a></h1>
 <p>This page includes information to help you troubleshoot issues that you may come across while installing, configuring, and operating Codacy Self-hosted.</p>
 <p>If the information provided on this page isn't enough to solve your issue, contact <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a> providing:</p>
 <ul>
@@ -2662,10 +2662,10 @@
 </div>
 </li>
 </ul>
-<h2 id="git-provider-integrations">Git provider integrations<a class="headerlink" href="#git-provider-integrations" title="Permanent link">&para;</a></h2>
+<h2 id="git-provider-integrations">Git provider integrations<a class="headerlink" href="#git-provider-integrations" title="Permanent link">#</a></h2>
 <p>The following sections help you troubleshoot the integration of Codacy with your Git provider.</p>
-<h3 id="github">GitHub Cloud and GitHub Enterprise authentication<a class="headerlink" href="#github" title="Permanent link">&para;</a></h3>
-<h4 id="404-error">404 error<a class="headerlink" href="#404-error" title="Permanent link">&para;</a></h4>
+<h3 id="github">GitHub Cloud and GitHub Enterprise authentication<a class="headerlink" href="#github" title="Permanent link">#</a></h3>
+<h4 id="404-error">404 error<a class="headerlink" href="#404-error" title="Permanent link">#</a></h4>
 <p>While trying to authenticate on GitHub you get the following error message:</p>
 <p><img alt="Invalid client id" src="../images/github-invalid-client-id.png" /></p>
 <p>This might mean that there is a mismatch in the Client ID that Codacy is using to authenticate on GitHub.</p>
@@ -2679,8 +2679,8 @@
 <li>Take note of the parameter <code>client_id</code> in the URL of the GitHub error page (for example, <code>Iv1.0000000000000000</code>)</li>
 <li>Check if the value of the parameter matches the value of the Client ID of your GitHub App</li>
 </ol>
-<h3 id="gitlab">GitLab Cloud and GitLab Enterprise authentication<a class="headerlink" href="#gitlab" title="Permanent link">&para;</a></h3>
-<h4 id="invalid-redirect-uri">Invalid redirect URI<a class="headerlink" href="#invalid-redirect-uri" title="Permanent link">&para;</a></h4>
+<h3 id="gitlab">GitLab Cloud and GitLab Enterprise authentication<a class="headerlink" href="#gitlab" title="Permanent link">#</a></h3>
+<h4 id="invalid-redirect-uri">Invalid redirect URI<a class="headerlink" href="#invalid-redirect-uri" title="Permanent link">#</a></h4>
 <p>While trying to authenticate on GitLab you get the following error message:</p>
 <p><img alt="Invalid redirect URI" src="../images/gitlab-invalid-redirect-uri.png" /></p>
 <p>This might mean that the redirect URIs are not correct in the GitLab application that Codacy is using to authenticate on GitLab.</p>
@@ -2696,7 +2696,7 @@
 <li>Decode the value of the parameter using a tool such as <a href="https://www.urldecoder.org/">urldecoder.com</a> (for example, <code>https://codacy.example.com/login/GitLab</code> or <code>https://codacy.example.com/login/GitLabEnterprise</code>)</li>
 <li>Check if the decoded value matches one of the redirect URIs of your GitLab application</li>
 </ol>
-<h4 id="unknown-client">Unknown client<a class="headerlink" href="#unknown-client" title="Permanent link">&para;</a></h4>
+<h4 id="unknown-client">Unknown client<a class="headerlink" href="#unknown-client" title="Permanent link">#</a></h4>
 <p>While trying to authenticate on GitLab you get the following error message:</p>
 <p><img alt="Invalid application id" src="../images/gitlab-invalid-application-id.png" /></p>
 <p>This might mean that there is a mismatch in the Application ID that Codacy is using to authenticate on GitLab.</p>
@@ -2710,8 +2710,8 @@
 <li>Take note of the parameter <code>client_id</code> in the URL of the GitLab error page (for example, <code>cca35a2a1f9b9b516ac927d82947bd5149b0e57e922c9e5564ac092ea16a3ccd</code>)</li>
 <li>Check if the value of the parameter matches the value of the Application ID of your GitLab application</li>
 </ol>
-<h3 id="bitbucket-cloud">Bitbucket Cloud authentication<a class="headerlink" href="#bitbucket-cloud" title="Permanent link">&para;</a></h3>
-<h4 id="invalid-client_id">Invalid client_id<a class="headerlink" href="#invalid-client_id" title="Permanent link">&para;</a></h4>
+<h3 id="bitbucket-cloud">Bitbucket Cloud authentication<a class="headerlink" href="#bitbucket-cloud" title="Permanent link">#</a></h3>
+<h4 id="invalid-client_id">Invalid client_id<a class="headerlink" href="#invalid-client_id" title="Permanent link">#</a></h4>
 <p>While trying to authenticate on Bitbucket Cloud you get the following error message:</p>
 <p><img alt="Invalid client_id" src="../images/bitbucket-invalid-client-id.png" /></p>
 <p>This might mean that there is a mismatch in the OAuth consumer Client ID that Codacy is using to authenticate on Bitbucket Cloud.</p>
@@ -2725,9 +2725,9 @@
 <li>Take note of the parameter <code>client_id</code> in the URL of the Bitbucket Cloud error page (for example, <code>r8QJDkkxj8unYfg4Bd</code>)</li>
 <li>Check if the value of the parameter matches the value of the Client ID of your Bitbucket OAuth consumer</li>
 </ol>
-<h2 id="codacy-configuration">Codacy configuration<a class="headerlink" href="#codacy-configuration" title="Permanent link">&para;</a></h2>
+<h2 id="codacy-configuration">Codacy configuration<a class="headerlink" href="#codacy-configuration" title="Permanent link">#</a></h2>
 <p>The following sections help you troubleshoot the Codacy configuration.</p>
-<h3 id="accessing-the-rabbitmq-dashboard">Accessing the RabbitMQ dashboard<a class="headerlink" href="#accessing-the-rabbitmq-dashboard" title="Permanent link">&para;</a></h3>
+<h3 id="accessing-the-rabbitmq-dashboard">Accessing the RabbitMQ dashboard<a class="headerlink" href="#accessing-the-rabbitmq-dashboard" title="Permanent link">#</a></h3>
 <p>We use RabbitMQ for the internal message queue between our components.</p>
 <p>If you need to access the RabbitMQ dashboard:</p>
 <ol>
