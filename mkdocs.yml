@@ -61,6 +61,25 @@ plugins:
     - git-revision-date-localized
     - monorepo
     - markdownextradata
+    - redirects:
+          redirect_maps:
+              # Deleted pages
+              "chart/configuration/tls-ingress.md": "index.md"
+              # Moved pages
+              "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
+              "organizations/why-can't-i-see-my-organization.md": "organizations/why-cant-i-see-my-organization.md"
+              "repositories-configure/integrations/bitbucket-cloud-integration.md": "repositories-configure/integrations/bitbucket-integration.md"
+              "repositories-configure/add-coverage-to-your-repo.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "repositories-configure/coverage.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "repositories-configure/generate-coverage.md": "coverage-reporter/generating-coverage-reports.md"
+              "coverage-reporter.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/advanced/authenticating-using-account-token.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/advanced/multiple-reports.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/advanced/installation-methods.md": "coverage-reporter/alternative-ways-of-running-coverage-reporter.md"
+              "coverage-reporter/troubleshooting/common-issues.md": "coverage-reporter/troubleshooting-common-issues.md"
+              "coverage-reporter/troubleshooting/commit-detection.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/troubleshooting/swift-objectivec.md": "coverage-reporter/generating-coverage-reports.md"
+              "faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
 
 nav:
     - "Documentation home": "index.md"
