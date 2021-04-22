@@ -4,19 +4,18 @@ on: push
 
 jobs:
   codacy-analysis-cli:
-    name: Codacy Analysis CLI
     runs-on: ubuntu-latest
-    if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.GH_PERSONAL_ACC_TOK }}
-          submodules: true
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: false
           fetch-depth: 0
 
       - name: Run codacy-analysis-cli
         uses: codacy/codacy-analysis-cli-action@master
         with:
           project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
-          verbose: true
+          upload: true
+          max-allowed-issues: 2147483647
