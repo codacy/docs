@@ -61,6 +61,32 @@ plugins:
     - git-revision-date-localized
     - monorepo
     - markdownextradata
+    - redirects:
+          redirect_maps:
+              # Deleted pages
+              "faq/repositories/what-are-logs.md": "index.md"
+              "faq/repositories/hotspots-overview.md": "index.md"
+              "chart/configuration/tls-ingress.md": "index.md"
+              "getting-started/setting-up-your-personal-repositories.md": "getting-started/getting-started-with-codacy.md"
+              # Moved pages
+              "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
+              "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
+              "repositories-configure/integrations/bitbucket-cloud-integration.md": "repositories-configure/integrations/bitbucket-integration.md"
+              "repositories-configure/add-coverage-to-your-repo.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "repositories-configure/coverage.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "repositories-configure/generate-coverage.md": "coverage-reporter/generating-coverage-reports.md"
+              "coverage-reporter.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/advanced/authenticating-using-account-token.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/advanced/multiple-reports.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/advanced/installation-methods.md": "coverage-reporter/alternative-ways-of-running-coverage-reporter.md"
+              "coverage-reporter/troubleshooting/common-issues.md": "coverage-reporter/troubleshooting-common-issues.md"
+              "coverage-reporter/troubleshooting/commit-detection.md": "coverage-reporter/adding-coverage-to-your-repository.md"
+              "coverage-reporter/troubleshooting/swift-objectivec.md": "coverage-reporter/generating-coverage-reports.md"
+              "faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
+              "organizations/organization-dashboard-overview.md": "organizations/organization-overview.md"
+              "repositories/repository-dashboard-overview.md": "repositories/repository-dashboard.md"
+              "repositories/share-your-repository-with-a-non-codacy-user.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
+              "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md": "faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md"
 
 nav:
     - "Documentation home": "index.md"
