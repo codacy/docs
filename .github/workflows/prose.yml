@@ -1,0 +1,30 @@
+name: Prose
+
+on: pull_request
+
+jobs:
+  prose:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: false
+          fetch-depth: 0
+
+      - name: Alex
+        uses: brown-ccv/alex-recommends@v1.1.2
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          message_id: 'alex'
+          glob_pattern: "**/*.md"
+
+      - name: Vale
+        # The option files: __onlyModified requires the master version
+        uses: errata-ai/vale-action@master
+        with:
+          files: __onlyModified
+        env:
+          # Required
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
