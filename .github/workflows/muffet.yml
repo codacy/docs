@@ -22,7 +22,7 @@ jobs:
           docker run raviqqe/muffet --follow-sitemap-xml --timeout=30 --buffer-size=8192 --rate-limit=4 --skip-tls-verification --exclude=$( echo ${EXCLUDE} | tr ' ' '|' ) ${{ env.INPUT_URL }} > ${{ env.OUTPUT_FILE }}
 
       - name: Create issue
-        uses: peter-evans/create-issue-from-file@v2
+        uses: peter-evans/create-issue-from-file@v3
         if: ${{ failure() }}
         with:
           title: Broken link report
