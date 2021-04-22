@@ -1,0 +1,21 @@
+name: Codacy Analysis CLI
+
+on: push
+
+jobs:
+  codacy-analysis-cli:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: false
+          fetch-depth: 0
+
+      - name: Run codacy-analysis-cli
+        uses: codacy/codacy-analysis-cli-action@master
+        with:
+          project-token: ${{ secrets.CODACY_PROJECT_TOKEN }}
+          upload: true
+          max-allowed-issues: 2147483647
