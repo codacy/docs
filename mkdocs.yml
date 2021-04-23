@@ -272,6 +272,7 @@ plugins:
               "hc/en-us/articles/360025964853-Why-is-my-file-missing-.md": "faq/general/why-is-my-file-missing.md"
               "hc/en-us/articles/360012861999.md": "faq/troubleshooting/cancelling-your-plan.md"
               "hc/en-us/articles/360012861999-Cancelling-your-plan.md": "faq/troubleshooting/cancelling-your-plan.md"
+
 nav:
     - "Documentation home": "index.md"
     - "Getting started":
