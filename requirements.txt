@@ -7,4 +7,4 @@ mkdocs-material-extensions==1.0.1
 mkdocs-git-revision-date-localized-plugin==0.7.3
 mkdocs-monorepo-plugin==0.4.10
 mkdocs-markdownextradata-plugin==0.1.7
-git+git://github.com/plannigan/mkdocs-redirects@relative_redirects#egg=mkdocs_redirects
+mkdocs-redirects==1.0.2
