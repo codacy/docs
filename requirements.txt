@@ -8,7 +8,7 @@ mkdocs-git-revision-date-localized-plugin==0.9
 mkdocs-monorepo-plugin==0.4.14
 mkdocs-markdownextradata-plugin==0.2.4
 mkdocs-include-markdown-plugin==2.8.0
-mkdocs-rss-plugin==0.14.0
+mkdocs-rss-plugin==0.15.0
 mkdocs-meta-descriptions-plugin==0.0.4
 mkdocs-exclude==1.0.2
 # Temporary fix until https://github.com/datarobot/mkdocs-redirects/pull/21 is merged
