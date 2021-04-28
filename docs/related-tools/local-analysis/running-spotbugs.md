@@ -21,7 +21,7 @@ To run SpotBugs as a [client-side tool](client-side-tools.md):
                                 --verbose
     ```
 
-    If you're using an account API token, you must also provide the flags `--provider`, `--username`, and `--project`. You can obtain the values for these flags from the URL of your repository dashboard on Codacy:
+    **If you're using an account API token**, you must also provide the flags `--provider`, `--username`, and `--project`. You can obtain the values for these flags from the URL of your repository dashboard on Codacy:
 
     ```bash
     codacy-analysis-cli analyze --provider <gh, ghe, gl, gle, bb, or bbe> \
