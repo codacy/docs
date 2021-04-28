@@ -2624,16 +2624,13 @@
 <p>Set up an API token to authenticate on Codacy:</p>
 <ul>
 <li>
-<p><strong>If you're setting up coverage for one repository</strong>, <a href="../../../codacy-api/api-tokens/#project-api-tokens">obtain a project API token</a> and set the following environment variable to specify your project API token:</p>
+<p><strong>If you're setting up one repository</strong>, <a href="../../../codacy-api/api-tokens/#project-api-tokens">obtain a project API token</a> and set the following environment variable to specify your project API token:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>&lt;your project API token&gt;
 </code></pre></div>
 </li>
 <li>
-<p><strong>If you're setting up and automating coverage for multiple repositories</strong>, <a href="../../../codacy-api/api-tokens/#account-api-tokens">obtain an account API Token</a> and set the following environment variables to specify the account API token, the username associated with the account API token, and the repository for which you're uploading the coverage information:</p>
+<p><strong>If you're setting up multiple repositories</strong>, <a href="../../../codacy-api/api-tokens/#account-api-tokens">obtain an account API Token</a> and set the following environment variable to specify the account API token:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_TOKEN</span><span class="o">=</span>&lt;your account API token&gt;
-<span class="nb">export</span> <span class="nv">CODACY_ORGANIZATION_PROVIDER</span><span class="o">=</span>&lt;the repository provider&gt;
-<span class="nb">export</span> <span class="nv">CODACY_USERNAME</span><span class="o">=</span>&lt;the repository owner username&gt;
-<span class="nb">export</span> <span class="nv">CODACY_PROJECT_NAME</span><span class="o">=</span>&lt;the repository name&gt;
 </code></pre></div>
 </li>
 </ul>
@@ -2651,6 +2648,15 @@
 <li>
 <p>Download and run the <a href="https://github.com/codacy/codacy-analysis-cli#install" target="_blank">Codacy Analysis CLI</a> on the root of the repository, specifying the tool deadcode.</p>
 <div class="highlight"><pre><span></span><code>codacy-analysis-cli analyze --tool deadcode <span class="se">\</span>
+                            --allow-network <span class="se">\</span>
+                            --upload <span class="se">\</span>
+                            --verbose
+</code></pre></div>
+<p><strong>If you're using an account API token</strong>, you must also provide the flags <code>--provider</code>, <code>--username</code>, and <code>--project</code>. You can obtain the values for these flags from the URL of your repository dashboard on Codacy:</p>
+<div class="highlight"><pre><span></span><code>codacy-analysis-cli analyze --provider &lt;gh, ghe, gl, gle, bb, or bbe&gt; <span class="se">\</span>
+                            --username &lt;name of your Codacy organization&gt; <span class="se">\</span>
+                            --project &lt;name of your repository&gt; <span class="se">\</span>
+                            --tool deadcode <span class="se">\</span>
                             --allow-network <span class="se">\</span>
                             --upload <span class="se">\</span>
                             --verbose
@@ -2726,7 +2732,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 21, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 28, 2021</span>
     
   </small>
 </div>
