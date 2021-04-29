@@ -11,6 +11,8 @@ jobs:
         with:
           token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
           submodules: true
+          # git-revision-date-localized-plugin and mkdocs-rss-plugin need full git history depth
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v2.2.2
