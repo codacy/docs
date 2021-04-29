@@ -21,6 +21,18 @@ To run SpotBugs as a [client-side tool](client-side-tools.md):
                                 --verbose
     ```
 
+    **If you're using an account API token**, you must also provide the flags `--provider`, `--username`, and `--project`. You can obtain the values for these flags from the URL of your repository dashboard on Codacy:
+
+    ```bash
+    codacy-analysis-cli analyze --provider <gh, ghe, gl, gle, bb, or bbe> \
+                                --username <name of your Codacy organization> \
+                                --project <name of your repository> \
+                                --tool spotbugs \
+                                --allow-network \
+                                --upload \
+                                --verbose
+    ```
+
 The Codacy Analysis CLI runs SpotBugs on the compiled classes of your repository and uploads the results to Codacy so you can use them in your workflow.
 
 ## Detecting sources and compiled classes

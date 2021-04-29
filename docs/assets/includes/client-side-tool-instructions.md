@@ -6,19 +6,16 @@
 
 1.  Set up an API token to authenticate on Codacy:
 
-    -   **If you're setting up coverage for one repository**, [obtain a project API token](../../codacy-api/api-tokens.md#project-api-tokens) and set the following environment variable to specify your project API token:
+    -   **If you're setting up one repository**, [obtain a project API token](../../codacy-api/api-tokens.md#project-api-tokens) and set the following environment variable to specify your project API token:
 
         ```bash
         export CODACY_PROJECT_TOKEN=<your project API token>
         ```
 
-    -   **If you're setting up and automating coverage for multiple repositories**, [obtain an account API Token](../../codacy-api/api-tokens.md#account-api-tokens) and set the following environment variables to specify the account API token, the username associated with the account API token, and the repository for which you're uploading the coverage information:
+    -   **If you're setting up multiple repositories**, [obtain an account API Token](../../codacy-api/api-tokens.md#account-api-tokens) and set the following environment variable to specify the account API token:
 
         ```bash
         export CODACY_API_TOKEN=<your account API token>
-        export CODACY_ORGANIZATION_PROVIDER=<the repository provider>
-        export CODACY_USERNAME=<the repository owner username>
-        export CODACY_PROJECT_NAME=<the repository name>
         ```
 
     {% include-markdown "api-token-warning.md" %}
