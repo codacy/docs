@@ -156,7 +156,7 @@ If you log in with Bitbucket, Codacy requires the following [permissions/scopes]
     </tr>
     <tr>
       <td><code>repository:admin</code></td>
-      <td>Codacy retrieves repository metadata, such as name, languages and collaborators, and commit information. <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository (see box above).</td>
+      <td>Codacy retrieves repository metadata, such as name, languages and collaborators, and commit information. <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
     </tr>
     <tr>
       <td><code>pullrequest:write</code></td>
