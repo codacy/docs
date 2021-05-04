@@ -3,11 +3,14 @@ site_name: "Codacy docs"
 site_description: "Documentation for the Codacy automated code review tool."
 site_url: "https://docs.codacy.com/"
 site_author: "support@codacy.com (Codacy Support)"
-
-# Copyright
 copyright: "© <script>document.write(new Date().getFullYear())</script> <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
 
-# Configuration
+# Repository information
+repo_name: "codacy/docs"
+repo_url: "https://github.com/codacy/docs"
+edit_uri: "" # Hide the edit button
+
+# Theme configuration
 theme:
     name: "material"
     custom_dir: "submodules/codacy-mkdocs-material/material"
@@ -19,16 +22,14 @@ theme:
         accent: "indigo"
     logo: "assets/images/codacy-docs-logo.svg"
     features: []
-
 extra_css:
     - "assets/stylesheets/version-select.css"
 extra_javascript:
     - "assets/javascripts/extra.js"
     - "assets/javascripts/version-select.js"
 
-strict: true
-
 # Extra variables
+# https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
     version: "3.5.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
@@ -36,10 +37,8 @@ extra:
     community_url: "https://community.codacy.com/"
     support_email: "support@codacy.com"
 
-# Repository
-repo_name: "codacy/docs"
-repo_url: "https://github.com/codacy/docs"
-edit_uri: "" # Hide the edit button
+# Stop build on warnings
+strict: true
 
 # Extensions
 markdown_extensions:
@@ -49,24 +48,21 @@ markdown_extensions:
     # Add attributes to the generated HTML elements, such as explicit ids for section titles
     # https://python-markdown.github.io/extensions/attr_list/
     - attr_list
-    # Add syntax highlighting to code blocks
-    # https://python-markdown.github.io/extensions/code_hilite/
-    - codehilite:
-          guess_lang: false
-          linenums: true
     # Allow defining footnotes
     # https://python-markdown.github.io/extensions/footnotes/
     - footnotes
     # Allow defining meta-data for each page
     # https://python-markdown.github.io/extensions/meta_data/
     - meta
+    # Add syntax highlighting to code blocks
+    # https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
+    - pymdownx.highlight
     # Extended syntax for fenced code blocks
     # https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
     - pymdownx.superfences
     # Strip comments from the generated HTML
     # https://facelessuser.github.io/pymdown-extensions/extensions/striphtml/
-    - pymdownx.striphtml:
-          strip_comments: true
+    - pymdownx.striphtml
     # Generate table of contents for each page
     # https://python-markdown.github.io/extensions/toc/
     - toc:
