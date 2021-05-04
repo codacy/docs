@@ -48,9 +48,6 @@ markdown_extensions:
     # Add attributes to the generated HTML elements, such as explicit ids for section titles
     # https://python-markdown.github.io/extensions/attr_list/
     - attr_list
-    # Allow defining footnotes
-    # https://python-markdown.github.io/extensions/footnotes/
-    - footnotes
     # Allow defining meta-data for each page
     # https://python-markdown.github.io/extensions/meta_data/
     - meta
