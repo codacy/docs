@@ -65,8 +65,7 @@ markdown_extensions:
     - pymdownx.superfences
     # Strip comments from the generated HTML
     # https://facelessuser.github.io/pymdown-extensions/extensions/striphtml/
-    - pymdownx.striphtml:
-          strip_comments: true
+    - pymdownx.striphtml
     # Generate table of contents for each page
     # https://python-markdown.github.io/extensions/toc/
     - toc:
