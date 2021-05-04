@@ -43,33 +43,67 @@ edit_uri: "" # Hide the edit button
 
 # Extensions
 markdown_extensions:
+    # Add cards such as tips, notes, and warnings
+    # https://python-markdown.github.io/extensions/admonition/
     - admonition
+    # Add attributes to the generated HTML elements, such as explicit ids for section titles
+    # https://python-markdown.github.io/extensions/attr_list/
     - attr_list
+    # Add syntax highlighting to code blocks
+    # https://python-markdown.github.io/extensions/code_hilite/
     - codehilite:
           guess_lang: false
           linenums: true
+    # Allow defining footnotes
+    # https://python-markdown.github.io/extensions/footnotes/
     - footnotes
+    # Allow defining meta-data for each page
+    # https://python-markdown.github.io/extensions/meta_data/
     - meta
+    # Extended syntax for fenced code blocks
+    # https://facelessuser.github.io/pymdown-extensions/extensions/superfences/
     - pymdownx.superfences
+    # Strip comments from the generated HTML
+    # https://facelessuser.github.io/pymdown-extensions/extensions/striphtml/
     - pymdownx.striphtml:
           strip_comments: true
+    # Generate table of contents for each page
+    # https://python-markdown.github.io/extensions/toc/
     - toc:
           permalink: "#"
           toc_depth: 2
 
 # Plugins
 plugins:
+    # Built-in plugin to activate the search
+    # https://www.mkdocs.org/user-guide/configuration/#search
     - search
-    - include-markdown
+    # Exclude files to avoid warnings during the MkDocs build
+    # https://github.com/apenwarr/mkdocs-exclude
+    - exclude:
+          glob: "assets/includes/*.md"
+    # Include the last modified date at the bottom of each page
+    # https://github.com/timvink/mkdocs-git-revision-date-localized-plugin
     - git-revision-date-localized
+    # Include content from other Markdown files
+    # https://github.com/mondeja/mkdocs-include-markdown-plugin
+    - include-markdown
+    # Use the values from the "extra" variables defined above
+    # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
+    - markdownextradata
+    # Generate meta descriptions from introductory paragraphs
+    # https://github.com/prcr/mkdocs-meta-descriptions-plugin
+    - meta-descriptions
+    # Build documentation in submodules
+    # https://github.com/backstage/mkdocs-monorepo-plugin
+    - monorepo
+    # Create RSS feeds for release notes
+    # https://github.com/Guts/mkdocs-rss-plugin
     - rss:
           image: "https://docs.codacy.com/assets/images/codacy-logo.png"
           match_path: "release-notes/.*"
-    - monorepo
-    - markdownextradata
-    - meta-descriptions
-    - exclude:
-          glob: "assets/includes/*.md"
+    # Generate redirects for moved or deleted pages
+    # https://github.com/datarobot/mkdocs-redirects
     - redirects:
           redirect_maps:
               # Redirect legacy Zendesk knowledge base pages
