@@ -58,7 +58,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Clang-tidy 10.0.1
 -   CodeNarc 1.6
 -   Coffeelint 2.1.0
--   cppcheck 2.2
+-   Cppcheck 2.2
 -   Credo 1.4.0
 -   CSSLint 1.0.5
 -   Detekt 1.14.2
@@ -75,13 +75,13 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   PMD (Legacy) 5.8.1
 -   Prospector 1.3.1
 -   PSScriptAnalyzer 1.18.3
--   PyLint 1.9.5
+-   Pylint 1.9.5
 -   **PyLint (Python 3) 2.7.4 (updated from 2.7.2)**
 -   RemarkLint 7.0.1
 -   Revive 1.0.2
 -   **Rubocop 1.14.0 (updated from 1.12.0)**
--   ScalaStyle 1.5.0
--   shellcheck v0.7.1
+-   Scalastyle 1.5.0
+-   ShellCheck v0.7.1
 -   **Sonar C# 8.22 (updated from 8.15)**
 -   Sonar Visual Basic 8.15
 -   SpotBugs 4.1.2
@@ -92,4 +92,3 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Tailor 0.12.0
 -   TSLint 6.1.3
 -   TSQLLint 1.11.1
-
