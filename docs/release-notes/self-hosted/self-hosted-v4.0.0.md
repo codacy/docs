@@ -31,6 +31,16 @@ Bugs:
 
 -->
 
+## Breaking changes
+
+This version of Codacy Self-hosted requires [PostgreSQL version 10.15](https://docs.codacy.com/v4.0/chart/requirements/#postgresql-server-setup) since the previous major version [will reach end-of-life (EOL) later this year](https://www.postgresql.org/support/versioning/).
+
+To upgrade PostgreSQL:
+
+1.  Follow the instructions on [how to upgrade a PostgreSQL cluster](https://www.postgresql.org/docs/10/upgrading.html).
+
+1.  After the upgrade, clean the Codacy databases with [vacuumdb](https://www.postgresql.org/docs/10/app-vacuumdb.html) to prevent the <span class="skip-vale">autovacuum</a> feature from momentarily affecting the performance of the databases at a later time.
+
 ## Product enhancements
 
 -   Added the following Codacy API endpoints:
