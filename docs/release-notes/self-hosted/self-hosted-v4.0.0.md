@@ -43,17 +43,14 @@ To upgrade PostgreSQL:
 
 ## Product enhancements
 
--   Added the following Codacy API endpoints:
-    -   **[getCommitDeltaStatistics](https://api.codacy.com/api/api-docs#getcommitdeltastatistics)** returns the quality metric deltas introduced by a commit.
-    -   **[listCommitDeltaIssues](https://api.codacy.com/api/api-docs#listcommitdeltaissues)** returns the list of issues that were introduced or fixed by a commit. (CY-3560)
--   It's now possible to [import tool and pattern configurations](https://docs.codacy.com/repositories-configure/code-patterns/#import-patterns) from another repository to make it easier to set up new repositories and have consistent rules across repositories. (CY-3162)
+
 
 ## Bug fixes
 
--   Fixes an issue where it could fail to show repositories for organizations with more than 1000 repositories on GitHub (Cloud and Self-hosted) (CY-4193)
--   Fixed an issue that caused some cookies to be passed plainly when accessing app.codacy.com through HTTP with Firefox (CY-4143)
--   Fixed a bug where repositories added to Codacy would have the GitHub status turned off. Now is turned on by default for newly added repositories as intended (CY-4110)
--   *.Designer.cs files are now ignored from the analysis (CY-4102)
+-   Fixed an issue where Codacy could fail to show repositories for organizations with more than 1000 repositories on GitHub. (CY-4193)
+-   Fixed an issue that caused some cookies to be transmitted in plaintext when accessing `app.codacy.com` via HTTP with Firefox. (CY-4143)
+-   Fixed a bug where repositories added to Codacy would have the GitHub status turned off. Now it's turned on by default for newly added repositories. (CY-4110)
+-   Now, Codacy automatically ignores `*.Designer.cs` files from the analysis. (CY-4102)
 
 ## Tool versions
 
