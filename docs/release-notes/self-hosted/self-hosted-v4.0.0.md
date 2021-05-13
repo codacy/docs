@@ -24,6 +24,7 @@ To upgrade PostgreSQL:
 -   Fixed wrong feedback message that mentioned disabling tools when toggling between the UI settings and configuration file for a tool on the Code patterns page. (CY-4276)
 -   Fixed an issue where Codacy could fail to show repositories for organizations with more than 1000 repositories on GitHub. (CY-4193)
 -   Fixed an issue that prevented users from ignoring issues even if they had the correct permissions. (CY-4161)
+-   Now, you can use `.eslintrc.cjs` files to configure ESLint in your project. (CY-4146)
 -   Fixed an issue that caused some cookies to be transmitted in plaintext when accessing `app.codacy.com` via HTTP with Firefox. (CY-4143)
 -   Fixed an issue where repositories added to Codacy would have the GitHub status turned off. Now it's turned on by default for newly added repositories. (CY-4110)
 -   Now, Codacy automatically ignores `*.Designer.cs` files from the analysis. (CY-4102)
