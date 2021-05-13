@@ -6,12 +6,6 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 <!-- TODO Check these issues
 
-Check the following Jira Epics without release notes:
-
--   https://codacy.atlassian.net/browse/CY-4084
--   https://codacy.atlassian.net/browse/CY-3887
--   https://codacy.atlassian.net/browse/CY-3886
-
 Check the following Jira Bugs with disabled release notes:
 
 -   https://codacy.atlassian.net/browse/CY-4276
@@ -32,7 +26,8 @@ To upgrade PostgreSQL:
 
 ## Product enhancements
 
-
+-   Improved the loading time of the [repositories list](https://docs.codacy.com/v4.0/organizations/managing-repositories/) page when an organization has many repositories. (CY-4084)
+-   Now, Codacy allows [configuring who is allowed to manage file extensions and branches](https://docs.codacy.com/v4.0/organizations/roles-and-permissions-for-synced-organizations/#change-analysis-configuration). (CY-3886, CY-3887)
 
 ## Bug fixes
 
