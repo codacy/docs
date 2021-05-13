@@ -8,9 +8,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 Check the following Jira Bugs with disabled release notes:
 
--   https://codacy.atlassian.net/browse/CY-4276
 -   https://codacy.atlassian.net/browse/CY-4161
--   https://codacy.atlassian.net/browse/CY-4140
 
 -->
 
@@ -31,6 +29,7 @@ To upgrade PostgreSQL:
 
 ## Bug fixes
 
+-   Fixed wrong feedback message that mentioned disabling tools when toggling between the UI settings and configuration file for a tool on the Code patterns page. (CY-4276)
 -   Fixed an issue where Codacy could fail to show repositories for organizations with more than 1000 repositories on GitHub. (CY-4193)
 -   Fixed an issue that caused some cookies to be transmitted in plaintext when accessing `app.codacy.com` via HTTP with Firefox. (CY-4143)
 -   Fixed a bug where repositories added to Codacy would have the GitHub status turned off. Now it's turned on by default for newly added repositories. (CY-4110)
