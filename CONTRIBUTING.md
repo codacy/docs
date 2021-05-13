@@ -114,7 +114,7 @@ A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows
 
 ## Releasing a new version of the documentation
 
-We must release a new version of the documentation when there is a new **major or minor** release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the documentation of the chart on the Latest version of the documentation and creating a dedicated documentation version for the new release.
+We must release a new version of the documentation when there is a new **major or minor** version release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the chart submodule documentation on the Latest version of the documentation and creating a dedicated documentation version for the new release.
 
 ### Updating the Latest documentation version
 
@@ -152,9 +152,11 @@ After updating the Latest documentation version, you're ready to create a new do
 
 1.  Create a new release branch with the name `release/v<MAJOR>.<MINOR>` from the now updated `master` branch.
 
-1.  Delete the release notes from the release branch, since you're only publishing the release notes on the Latest or main version of the documentation.
+1.  Delete the release notes from the release branch, since we only publish the release notes on the Latest or main version of the documentation:
 
-    Delete the folder `docs/release-notes` and all lines on `mkdocs.yml` that reference the removed files.
+    -   Delete the folder `docs/release-notes`
+
+    -   Delete all lines on `mkdocs.yml` that reference the removed files
 
 1.  Build the documentation and make sure that the changes for the new release of the chart are correct.
 
