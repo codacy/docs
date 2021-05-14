@@ -197,8 +197,8 @@ plugins:
               "hc/en-us/articles/208241349-Default-Patterns.md": "repositories-configure/code-patterns.md"
               "hc/en-us/articles/208243169.md": "organizations/manual-organizations/managing-team-repositories.md"
               "hc/en-us/articles/208243169-Managing-team-repositories.md": "organizations/manual-organizations/managing-team-repositories.md"
-              "hc/en-us/articles/208942125.md": "account/notifications.md"
-              "hc/en-us/articles/208942125-Notifications.md": "account/notifications.md"
+              "hc/en-us/articles/208942125.md": "account/emails.md"
+              "hc/en-us/articles/208942125-Notifications.md": "account/emails.md"
               "hc/en-us/articles/208942945.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "hc/en-us/articles/208942945-Plans-and-Billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "hc/en-us/articles/208953205.md": "account/managing-your-profile.md"
@@ -545,6 +545,7 @@ plugins:
               "organizations/managing-repositories-in-your-organization.md": "organizations/managing-repositories.md"
               "organizations/why-cant-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
               "related-tools/running-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"
+              "account/notifications.md": "account/emails.md"
 
 nav:
     - Documentation home: "index.md"
@@ -590,7 +591,7 @@ nav:
                 - organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md
     - Your account:
           - account/managing-your-profile.md
-          - account/notifications.md
+          - account/emails.md
     - Related tools:
           - Coverage: "!include submodules/codacy-coverage-reporter/mkdocs.yml"
           - Local analysis:
