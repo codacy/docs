@@ -26,7 +26,7 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
     <tr>
       <th>Overview</th>
       <td>
-        <p>The new endpoints allow you to access and manipulate the following resources, among others:<p>
+        <p>Use the new endpoints to access and manipulate the following resources, among others:<p>
         <ul>
           <li><a target="_blank" href="https://api.codacy.com/api/api-docs#codacy-api-analysis">Analysis</a> details, issue and ignored issue details, repository quality settings</li>
           <li><a target="_blank" href="https://api.codacy.com/api/api-docs#codacy-api-account">Account</a> details and API token management</li>
@@ -37,7 +37,7 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
         </ul>
       </td>
       <td>
-        <p>The legacy endpoints allow you to access and manipulate the following resources:</p>
+        <p>Use the legacy endpoints to access and manipulate the following resources:</p>
           <ul>
             <li><a target="_blank" href="https://api.codacy.com/swagger#codacy-api-commit">Commit</a> code quality details and deltas</li>
             <li><a target="_blank" href="https://api.codacy.com/swagger#codacy-api-project">Project</a> details and configurations, file code quality and issue details</li>
