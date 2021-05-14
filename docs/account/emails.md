@@ -1,9 +1,27 @@
 # Emails
 
-You can configure which repositories you want to be emailed about and your default email address to receive the notifications. When new results are found, Codacy will email you regarding the issues found and the changes that created them.
+To manage the email addresses associated with your account and your email notifications, click on your avatar on the top right-hand corner, select **Your account**, and open the **Emails** page.
 
-To change these settings click on your avatar, **Your Account**, and open **Emails**.
+## Managing your email notifications
 
-![Notification settings](images/notifications.png)
+Codacy can send you an email whenever there are new analysis results on your repositories with the list of found issues and the changes that created them. Codacy sends all email notifications to your default email address, and you can change your default email address by clicking **make default** next to another email address.
 
-To disable all repository notifications, you can either remove all repositories or remove both commit and pull request notifications globally.
+Configure the notifications that you wish to receive under **Repository notifications**:
+
+-   **Per commit:** Codacy will send you an email for each analyzed commit.
+
+-   **Per pull request:** Codacy will send you an email for each analyzed pull request.
+
+-   **Only my activity:** By default, Codacy will only sends you emails about your own commits and pull requests. Turn off this setting to receive emails for commits and pull requests made by other people as well.
+
+To further customize these settings for a specific repository, select the repository and configure which notifications to receive for commits and pull requests made in that repository.
+
+![Email settings](images/emails-notifications.png)
+
+The example above enables notifications for:
+
+-   Pull requests in all repositories
+-   Commit notifications in the repository scala-tests only
+
+!!! tip
+    To turn off all email notifications, disable the global settings **Per commit** and **Per pull request** and remove all custom settings for specific repositories.
