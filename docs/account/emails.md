@@ -20,8 +20,8 @@ To further customize these settings for a specific repository, select the reposi
 
 The example above enables notifications for:
 
--   Pull requests in all repositories
--   Commit notifications in the repository scala-tests only
+-   My pull requests in all repositories
+-   Everyone's commits in the repository scala-tests only
 
 !!! tip
     To turn off all email notifications, disable the global settings **Per commit** and **Per pull request** and remove all custom settings for specific repositories.
