@@ -62,12 +62,41 @@ For example, to make a request to an API v3 endpoint that requires an **account 
 
 ```bash
 curl -X GET https://api.codacy.com/api/v3/user/organizations/gh \
-     -H "api-token: SjE9y7ekgKdpaCofsAhd"
+     -H 'api-token: SjE9y7ekgKdpaCofsAhd'
 ```
 
 Or to make a request to an API v2 endpoint that requires a **project API token**:
 
 ```bash
 curl -X GET https://api.codacy.com/2.0/commit/da275c14ffab6e402dcc6009828067ffa44b7ee0 \
-     -H "project-token: c9f2feb28e780acc8dc40754978b8bd9"
+     -H 'project-token: c9f2feb28e780acc8dc40754978b8bd9'
+```
+
+## Using parameters in requests
+
+Most API endpoints require that you specify parameters.
+
+**For `GET` requests**, specify parameters directly as path segments of the endpoint URLs. Some endpoints also accept optional query string parameters.
+
+For example, to call the endpoint [getRepositoryWithAnalysis](https://api.codacy.com/api/api-docs#getrepositorywithanalysis) with the parameters:
+
+-   provider: `gh`
+-   remoteOrganizationName: `codacy`
+-   repositoryName: `docs`
+-   branch (query string): `api-overview`
+
+```bash
+curl -X GET https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs?branch=api-overview \
+     -H 'api-token: SjE9y7ekgKdpaCofsAhd'
+```
+
+**For `POST`, `PATCH`, and `DELETE` requests**, besides the parameters included in the URL you may also need to include a JSON body.
+
+For example, to call the endpoint [searchRepositoryIssues](https://api.codacy.com/api/api-docs#searchrepositoryissues) specifying the issue levels `Error` and `Warning` in the body:
+
+```bash
+curl -X POST https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs/issues/search \
+     -H 'api-token: SjE9y7ekgKdpaCofsAhd' \
+     -H 'Content-Type: application/json' \
+     -d '{"levels": ["Error", "Warning"]}'
 ```
