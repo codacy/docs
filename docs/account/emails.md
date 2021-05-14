@@ -25,3 +25,7 @@ The example above enables notifications for:
 
 !!! tip
     To turn off all email notifications, disable the global settings **Per commit** and **Per pull request** and remove all custom settings for specific repositories.
+
+## See also
+
+-   [How do I change my email address on Codacy?](../faq/general/how-do-i-change-my-email-address-on-codacy.md)

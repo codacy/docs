@@ -38,3 +38,7 @@ There may be different reasons for this issue to happen:
 
     !!! important
         Make sure that your email address doesn't include any extra characters such as quotes (`""` or `''`).
+
+## See also
+
+-   [How do I change my email address on Codacy?](../general/how-do-i-change-my-email-address-on-codacy.md)

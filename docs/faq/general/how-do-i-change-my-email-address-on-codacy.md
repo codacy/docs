@@ -10,4 +10,4 @@ If you're still having trouble changing your email addresses or have any other q
 
 ## See also
 
--   [Emails](../../account/emails.md)
+-   [Managing your email notifications](../../account/emails.md)
