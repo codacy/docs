@@ -1,3 +1,0 @@
-argh==0.26.2
-beautifulsoup4==4.9.3
-tqdm==4.60.0
