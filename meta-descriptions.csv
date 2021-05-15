@@ -1,0 +1,140 @@
+Page,Meta description
+,Documentation homepage for the Codacy automated code review tool.
+special-thanks/,We would like to thank everyone who helped us greatly. The names on these lists contributed immensely to what Codacy is today.
+account/emails/,"To manage the email addresses associated with your account and your email notifications, click on your avatar on the top right-hand corner, select Your account, and open the Emails page."
+account/managing-your-profile/,"To manage your profile information such as your name and avatar, click on your avatar on the top right-hand corner and select Your account."
+chart/,Install and configure Codacy Self-hosted on Kubernetes or MicroK8s.
+chart/requirements/,Before installing Codacy Self-hosted you must ensure that you have your infrastructure correctly provisioned and configured.
+chart/configuration/monitoring/,Instructions on how to set up monitoring for your Codacy Self-hosted instance.
+chart/configuration/integrations/bitbucket-cloud/,Instructions on how to set up the Codacy Self-hosted integration with Bitbucket Cloud.
+chart/configuration/integrations/bitbucket-server/,Instructions on how to set up the Codacy Self-hosted integration with Bitbucket Server.
+chart/configuration/integrations/email/,Instructions on how to set up Codacy Self-hosted to send emails using your SMTP server.
+chart/configuration/integrations/github-app-create/,You must create and correctly set up a GitHub App to allow Codacy Self-hosted to integrate with GitHub.
+chart/configuration/integrations/github-cloud/,Instructions on how to set up the Codacy Self-hosted integration with GitHub Cloud.
+chart/configuration/integrations/github-enterprise/,Instructions on how to set up the Codacy Self-hosted integration with GitHub Enterprise.
+chart/configuration/integrations/gitlab-cloud/,Instructions on how to set up the Codacy Self-hosted integration with GitLab Cloud.
+chart/configuration/integrations/gitlab-enterprise/,Instructions on how to set up the Codacy Self-hosted integration with GitLab Enterprise.
+chart/infrastructure/eks-quickstart/,"Follow the instructions below to set up an Amazon EKS cluster from scratch, including the necessary underlying infrastructure, using Terraform."
+chart/infrastructure/microk8s-quickstart/,"Follow the instructions below to set up a MicroK8s instance from scratch, including all the necessary dependencies and configurations."
+chart/maintenance/database/,Instructions on how to migrate your Codacy Self-hosted database.
+chart/maintenance/license/,Some changes to your Codacy plan require that you update your Codacy Self-hosted license with a new one provided by a Codacy representative.
+chart/maintenance/uninstall/,To ensure a clean removal you should uninstall Codacy Self-hosted before destroying the cluster.
+chart/maintenance/upgrade/,Instructions on how to upgrade Codacy Self-hosted to the latest stable version.
+chart/troubleshoot/k8s-cheatsheet/,Useful helm and kubectl commands to help troubleshoot your Codacy Self-hosted instance.
+chart/troubleshoot/logs-collect/,"To help troubleshoot issues, obtain the logs from your Codacy Self-hosted instance and send them to Codacy's Support."
+chart/troubleshoot/troubleshoot/,"This page includes information to help you troubleshoot issues that you may come across while installing, configuring, and operating Codacy Self-hosted."
+codacy-api/adding-repositories-to-codacy-programmatically/,Example of how to add multiple repositories programmatically using Codacy's API v3 endpoint addRepository.
+codacy-api/api-tokens/,"Create an account API token to authorize access to all the repositories that you have access to, or a project API token to authorize access only to a specific repository."
+codacy-api/using-the-codacy-api/,The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.
+coverage-reporter/,Generate coverage reports in a supported format and upload them to Codacy to monitor the test coverage of your repositories on Codacy.
+coverage-reporter/alternative-ways-of-running-coverage-reporter/,"There are alternative ways of running or installing Codacy Coverage Reporter, such as running a Docker image, downloading a binary for your operating system, or building the binary from source."
+coverage-reporter/troubleshooting-common-issues/,Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter.
+faq/code-analysis/do-you-check-for-dependencies/,"We don't check for dependencies. We do static code analysis on the source code, and that allows us to check code style, security duplication, complexity, and coverage."
+faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository/,Codacy uses cyclomatic complexity to identify complex files in your repository.
+faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed/,"Codacy usually takes under 5 minutes to analyze your repository, however it may take longer as this depends on the size of your repository."
+faq/code-analysis/how-to-configure-php-codesniffer-code-standards/,To enforce a specific PHP_CodeSniffer code standard on Codacy you must create a configuration file on the root of your repository that references one or more code standards.
+faq/code-analysis/skipping-an-analysis/,"By default, Codacy automatically analyzes a repository whenever you push changes. However, you can override this behavior by adding the tag [ci skip] or [skip ci] anywhere in the subject or body of the commit message."
+faq/general/how-can-i-change-or-cancel-my-plan/,"You can change or cancel your Codacy plan at any time. If you choose to cancel your annual subscription before the conclusion of the 12 months, your account will continue to work for the remainder of the annual billing period."
+faq/general/how-do-i-change-my-email-address-on-codacy/,Codacy will always pull email addresses from your current session in your Git provider. Your account email addresses are visible on your Emails page.
+faq/general/how-does-codacy-keep-my-data-secure/,Keeping our customers' data protected at all times is our highest priority. This security overview provides a high-level overview of the security practices put in place to achieve that objective.
+faq/general/how-does-codacy-protect-my-privacy/,"At Codacy, keeping your personal data safe has always been a top priority and we look at GDPR as another opportunity for us to strengthen this commitment to you."
+faq/general/how-does-codacy-support-bitbucket-cloud/,"When you use Bitbucket Cloud to sign up or log into Codacy, the Bitbucket teams that you belong to will be available to be added as Organizations on Codacy."
+faq/general/how-does-codacy-support-bitbucket-server/,"When you use Bitbucket Server to sign up or log into Codacy, the Bitbucket projects that you belong to will be available to be added as Organizations on Codacy."
+faq/general/how-does-codacy-support-gitlab-cloud/,"When you use GitLab Cloud to sign up or log into Codacy, the GitLab Groups that you belong to will be available to be added as Organizations on Codacy."
+faq/general/how-does-codacy-support-gitlab-enterprise/,"When you use GitLab Enterprise to sign up or log into Codacy, the GitLab Groups that you belong to will be available to be added as Organizations on Codacy."
+faq/general/which-browsers-does-codacy-support/,Codacy runs on every modern browser supporting HTML5 and CSS3.
+faq/general/which-version-control-systems-does-codacy-support/,"Codacy supports the cloud and self-hosted versions of GitHub, GitLab, and Bitbucket."
+faq/general/why-cant-i-see-my-organization/,Try these steps if you don't see your organization when adding your organization on Codacy.
+faq/repositories/how-do-i-manually-force-a-repository-update/,Codacy relies on post-commit hooks to trigger analysis. To re-trigger the analysis you can re-send the hook on the Git provider.
+faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization/,"If you have legacy personal repositories or repositories in manual organizations, you can migrate these repositories to a synced organization while keeping your Codacy configurations and analysis history."
+faq/repositories/how-do-i-reanalyze-my-repository/,"To reflect the most recent configurations for your repository on the Codacy analysis results without waiting for a new commit to trigger the analysis, reanalyze the last commit in your branch or pull request."
+faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/,Configure your Git provider to block merging pull requests until they pass the Codacy analysis check.
+faq/repositories/i-moved-my-repository-on-the-git-provider/,"Currently, Codacy doesn't automatically detect moves of repositories between two organizations."
+faq/repositories/i-renamed-my-repository-on-the-git-provider/,"If you changed the name or URL of your repository on your Git provider, you can update the name and URL of the repository on Codacy to point to the new location. This ensures that you won't lose historical data about your repository on Codacy."
+faq/repositories/what-are-the-different-grades-and-how-are-they-calculated/,Documentation for the Codacy automated code review tool.
+faq/repositories/why-cant-i-see-or-add-my-organizations-repositories/,"If you can't see or add your organization's repositories, or have any problems regarding metrics (for example, you can't see any issues and your pull requests aren't analyzed), please check if your user account has a duplicated copy of the repository on the organization."
+faq/troubleshooting/error-line-endings/,Codacy executes the git diff command when analyzing new commits and pull requests to identify the lines of code that were changed. Codacy then uses this information to display the issues that were caused by the changes introduced by the commits or pull requests.
+faq/troubleshooting/not-a-member-of-the-organization/,When you see the message Not a member of the organization it means that Codacy can't analyze a commit because the associated email address doesn't belong to any Codacy user.
+faq/troubleshooting/we-no-longer-have-access-to-this-repository/,"Troubleshoot and fix issues that prevent Codacy from cloning your repository, such as moving the repository or changing the permissions of the user that added the repository to Codacy."
+faq/troubleshooting/why-arent-duplication-metrics-being-calculated/,"For performance reasons, Codacy skips the calculation of code duplication for programming languages that have more than 5000 source code files in a repository."
+faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations/,"Have you added your repository manually (via URL)? In that case, Codacy won't allow the integration to be added, causing the issue with post-commit hooks. To get this sorted, you will have to remove your repository and re-add it via our wizard page."
+faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/,Various reasons can cause Codacy to stop commenting on pull requests. The most common is that the user who enabled the integration no longer has permissions on the repository or that the SSH key is no longer valid.
+faq/troubleshooting/why-is-my-file-missing/,"In your repository Files page you can view all the files that Codacy detected in your repository. While this page should display all the files in your repository, there are some reasons why some files might be missing."
+faq/troubleshooting/why-isnt-my-public-repository-being-analyzed/,Codacy only analyzes open-source repositories if the owner of the repository is a committer to that repository.
+getting-started/adding-a-codacy-badge/,Add a Codacy badge to the README of your repository to display the current code quality grade or code coverage of your code.
+getting-started/getting-started-with-codacy/,"Set up Codacy to automatically analyze your source code and identify issues as you go, helping you develop software more efficiently with fewer issues down the line. Codacy notifies you of security issues, code coverage, duplication, and complexity in every commit and pull request."
+getting-started/supported-languages-and-tools/,"List of tools that Codacy uses to analyze over 40 supported languages and frameworks. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code frameworks as well as code duplication, code complexity, and test coverage metrics for most programming languages."
+getting-started/which-permissions-does-codacy-need-from-my-account/,Review the list of permissions that Codacy requires from your Git provider to analyze your code.
+organizations/managing-people/,"Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, Codacy only analyzes commits to private repositories from contributors who are members of the corresponding organization on Codacy."
+organizations/managing-repositories/,"To see a list of the repositories that Codacy is monitoring, open the page Repositories under your organization."
+organizations/organization-overview/,The Organization Overview provides an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
+organizations/roles-and-permissions-for-synced-organizations/,"List of operations that users can perform on Codacy depending on their permissions on the Git provider, and how to configure who can change analysis configurations."
+organizations/what-are-synced-organizations/,"Synced organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that don't belong to a Git provider organization), and team members into Codacy with a few clicks."
+organizations/manual-organizations/administrative-permissions/,Organization permissions allow fine-grained control over your organization's members and repositories.
+organizations/manual-organizations/creating-and-managing-teams/,You can create and manage teams on the Teams page for your legacy manual organization on Codacy.
+organizations/manual-organizations/creating-and-renaming-an-organization/,"To create an organization, click on your avatar and select Organizations. Type the name in the Create new organization field and click on Create New."
+organizations/manual-organizations/managing-team-repositories/,You will be able to add and remove repositories from a team after it has been added to your organization.
+organizations/manual-organizations/share-your-repository-with-a-non-codacy-user/,"If you're a Codacy Cloud user, you can share your Repository Dashboard with a non-Codacy user by using a link that doesn't require a login."
+related-tools/codacy-plugin-tools/,"Codacy uses a system of plugin tools to extend the scope of analyses on your repositories, allowing support for new languages and tools every day."
+related-tools/local-analysis/client-side-tools/,"Client-side tools enable you to run analysis either locally or as part of your CI process and integrating the results into your Codacy workflow. This way, Codacy presents the analysis information reported by your local tools alongside all other code quality information on the Codacy dashboards."
+related-tools/local-analysis/running-aligncheck/,Instructions on how to run aligncheck as a client-side tool on Codacy.
+related-tools/local-analysis/running-deadcode/,Instructions on how to run deadcode as a client-side tool on Codacy.
+related-tools/local-analysis/running-local-analysis/,Documentation for the Codacy automated code review tool.
+related-tools/local-analysis/running-spotbugs/,Instructions on how to run SpotBugs as a client-side tool on Codacy.
+release-notes/,Index of release notes for Codacy Cloud and Codacy Self-hosted.
+release-notes/cloud/bitbucket-changes/,"We're making some changes on February 18, 2019 that will cause all existing integrations with Bitbucket to stop working."
+release-notes/cloud/cloud-release-notes-%7C-02-january-2019/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/cloud-release-notes-%7C-02-november-2018/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/cloud-release-notes-%7C-05-may-2019/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/cloud-release-notes-%7C-05-set-2019/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/cloud-release-notes-%7C-07-aug-2019/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/cloud-release-notes-%7C-08-april-2019/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/cloud-release-notes-%7C-15-nov-2019/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/cloud-release-notes-%7C-16-november-2018/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/cloud-release-notes-%7C-18-jun-2019/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/cloud-release-notes-%7C-19-october-2018/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/cloud-release-notes-%7C-20-may-2019/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/cloud-release-notes-%7C-23-july-2018/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/cloud-release-notes-%7C-29-march-2019/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/cloud-release-notes-%7C-30-oct-2019/,Documentation for the Codacy automated code review tool.
+release-notes/cloud/codacy-now-supports-github-apps/,"We're changing the way you authenticate to Codacy with GitHub: Starting February 2020, when you sign in, you'll be prompted to use GitHub Apps."
+release-notes/cloud/deprecating-http-headers-for-api-tokens/,"On April 1st, 2020 we're deprecating the api_token and project_token HTTP headers used to authenticate to the Codacy API."
+release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint/,"On the week of March 9th 2020, we'll be removing some tools from Codacy."
+release-notes/self-hosted/self-hosted-v1.0.0/,Release notes for Codacy Self-hosted v1.0.0.
+release-notes/self-hosted/self-hosted-v1.0.1/,Release notes for Codacy Self-hosted v1.0.1.
+release-notes/self-hosted/self-hosted-v1.1.0/,Release notes for Codacy Self-hosted v1.1.0.
+release-notes/self-hosted/self-hosted-v1.2.0/,Release notes for Codacy Self-hosted v1.2.0.
+release-notes/self-hosted/self-hosted-v1.3.0/,Release notes for Codacy Self-hosted v1.3.0.
+release-notes/self-hosted/self-hosted-v1.4.0/,Release notes for Codacy Self-hosted v1.4.0.
+release-notes/self-hosted/self-hosted-v1.5.0/,Release notes for Codacy Self-hosted v1.5.0.
+release-notes/self-hosted/self-hosted-v2.0.0/,Release notes for Codacy Self-hosted v2.0.0.
+release-notes/self-hosted/self-hosted-v2.1.0/,Release notes for Codacy Self-hosted v2.1.0.
+release-notes/self-hosted/self-hosted-v2.1.1/,Release notes for Codacy Self-hosted v2.1.1.
+release-notes/self-hosted/self-hosted-v2.2.0/,Release notes for Codacy Self-hosted v2.2.0.
+release-notes/self-hosted/self-hosted-v2.2.1/,Release notes for Codacy Self-hosted v2.2.1.
+release-notes/self-hosted/self-hosted-v3.0.0/,Release notes for Codacy Self-hosted v3.0.0.
+release-notes/self-hosted/self-hosted-v3.1.0/,Release notes for Codacy Self-hosted v3.1.0.
+release-notes/self-hosted/self-hosted-v3.2.0/,Release notes for Codacy Self-hosted v3.2.0.
+release-notes/self-hosted/self-hosted-v3.3.0/,Release notes for Codacy Self-hosted v3.3.0.
+release-notes/self-hosted/self-hosted-v3.4.0/,Release notes for Codacy Self-hosted v3.4.0.
+release-notes/self-hosted/self-hosted-v3.5.0/,Release notes for Codacy Self-hosted v3.5.0.
+repositories/commits/,Documentation for the Codacy automated code review tool.
+repositories/files/,"The Files page lists all the files in your repository and allows you to keep track of files with low coverage, high complexity, too many issues, or a lot of duplication that could be refactored."
+repositories/issues/,The Issues page lists all the issues that Codacy detected in your repository.
+repositories/repository-dashboard/,The Repository Dashboard provides an overview of the repository code quality and items that require your attention.
+repositories/security-monitor/,The Security Monitor provides an overview of all current security alerts.
+repositories-configure/codacy-configuration-file/,"Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages."
+repositories-configure/code-patterns/,Configure the tool patterns that Codacy uses to analyze your repositories to create a coding standard adapted to your scenario.
+repositories-configure/file-extensions/,"If your repository has source files with unrecognized extensions, you can configure Codacy to include them in the next analysis."
+repositories-configure/ignoring-files/,Ignore or exclude files from the Codacy analysis and see the list of files that Codacy already ignores by default.
+repositories-configure/managing-branches/,Codacy supports analysis on multiple branches on your Git repositories.
+repositories-configure/quality-settings/,"Here you can define quality settings for your repository, giving you control over the build status and success/fail of commits and pull requests. This feature also enables you to turn off metrics like duplication or complexity."
+repositories-configure/removing-your-repository/,"To stop Codacy from analyzing your repository, you must remove the repository from Codacy. This operation deletes the configurations and data related to your repository on Codacy but doesn't remove the repository from your Git provider."
+repositories-configure/using-submodules/,"Git submodules allow you to keep a Git repository as a subdirectory within another Git repository. Git submodules are helpful in maintaining a shared configuration file for your team, and then applying it to multiple Git repositories."
+repositories-configure/integrations/bitbucket-integration/,"Enable the Bitbucket integration to have pull request status, comments, and analysis summaries from Codacy directly on pull requests."
+repositories-configure/integrations/github-integration/,"Enable the GitHub integration to have status checks, annotations, analysis summaries, and suggested fixes from Codacy directly on pull requests."
+repositories-configure/integrations/gitlab-integration/,Enable the GitLab integration to have merge request status and merge request comments from Codacy directly on merge requests.
+repositories-configure/integrations/jira-integration/,The Jira integration incorporates Codacy on your existing Jira workflows.
+repositories-configure/integrations/post-commit-hooks/,For Codacy to check updates in your repository (new commits and pull requests) you must have post-commit hooks enabled.
+repositories-configure/integrations/slack-integration/,Enable the Slack integration to integrate Codacy with Slack by sending messages to a channel when it finds new issues.
+repositories-configure/integrations/webhook-notifications/,Codacy integrates with any service by sending a POST message to a defined address.
