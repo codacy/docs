@@ -86,7 +86,8 @@ plugins:
     - markdownextradata
     # Generate meta descriptions from introductory paragraphs
     # https://github.com/prcr/mkdocs-meta-descriptions-plugin
-    - meta-descriptions
+    - meta-descriptions:
+          export_csv: true
     # Build documentation in submodules
     # https://github.com/backstage/mkdocs-monorepo-plugin
     - monorepo
