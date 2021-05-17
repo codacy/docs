@@ -1061,6 +1061,13 @@
   
 </li>
       
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#using-parameters-in-requests" class="md-nav__link">
+    Using parameters in requests
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -2662,7 +2669,7 @@
     <tr>
       <th>Overview</th>
       <td>
-        <p>The new endpoints allow you to access and manipulate the following resources, among others:<p>
+        <p>Use the new endpoints to access and manipulate the following resources, among others:<p>
         <ul>
           <li><a target="_blank" href="https://api.codacy.com/api/api-docs#codacy-api-analysis">Analysis</a> details, issue and ignored issue details, repository quality settings</li>
           <li><a target="_blank" href="https://api.codacy.com/api/api-docs#codacy-api-account">Account</a> details and API token management</li>
@@ -2673,7 +2680,7 @@
         </ul>
       </td>
       <td>
-        <p>The legacy endpoints allow you to access and manipulate the following resources:</p>
+        <p>Use the legacy endpoints to access and manipulate the following resources:</p>
           <ul>
             <li><a target="_blank" href="https://api.codacy.com/swagger#codacy-api-commit">Commit</a> code quality details and deltas</li>
             <li><a target="_blank" href="https://api.codacy.com/swagger#codacy-api-project">Project</a> details and configurations, file code quality and issue details</li>
@@ -2693,11 +2700,31 @@
 <p>Most API endpoints require that you provide either a <a href="../api-tokens/">project or account API token</a>. After obtaining the necessary tokens, include them in your request headers using the format <code>api-token: &lt;token key&gt;</code> or <code>project-token: &lt;token key&gt;</code>.</p>
 <p>For example, to make a request to an API v3 endpoint that requires an <strong>account API token</strong>:</p>
 <div class="highlight"><pre><span></span><code>curl -X GET https://api.codacy.com/api/v3/user/organizations/gh <span class="se">\</span>
-     -H <span class="s2">&quot;api-token: SjE9y7ekgKdpaCofsAhd&quot;</span>
+     -H <span class="s1">&#39;api-token: SjE9y7ekgKdpaCofsAhd&#39;</span>
 </code></pre></div>
 <p>Or to make a request to an API v2 endpoint that requires a <strong>project API token</strong>:</p>
 <div class="highlight"><pre><span></span><code>curl -X GET https://api.codacy.com/2.0/commit/da275c14ffab6e402dcc6009828067ffa44b7ee0 <span class="se">\</span>
-     -H <span class="s2">&quot;project-token: c9f2feb28e780acc8dc40754978b8bd9&quot;</span>
+     -H <span class="s1">&#39;project-token: c9f2feb28e780acc8dc40754978b8bd9&#39;</span>
+</code></pre></div>
+<h2 id="using-parameters-in-requests">Using parameters in requests<a class="headerlink" href="#using-parameters-in-requests" title="Permanent link">#</a></h2>
+<p>Most API endpoints require that you specify parameters.</p>
+<p><strong>For <code>GET</code> requests</strong>, specify parameters directly as path segments of the endpoint URLs. Some endpoints also accept optional query string parameters.</p>
+<p>For example, to call the endpoint <a href="https://api.codacy.com/api/api-docs#getrepositorywithanalysis">getRepositoryWithAnalysis</a> with the parameters:</p>
+<ul>
+<li>provider: <code>gh</code></li>
+<li>remoteOrganizationName: <code>codacy</code></li>
+<li>repositoryName: <code>docs</code></li>
+<li>branch (query string): <code>api-overview</code></li>
+</ul>
+<div class="highlight"><pre><span></span><code>curl -X GET https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs?branch<span class="o">=</span>api-overview <span class="se">\</span>
+     -H <span class="s1">&#39;api-token: SjE9y7ekgKdpaCofsAhd&#39;</span>
+</code></pre></div>
+<p><strong>For <code>POST</code>, <code>PATCH</code>, and <code>DELETE</code> requests</strong>, besides the parameters included in the URL you may also need to include a JSON body.</p>
+<p>For example, to call the endpoint <a href="https://api.codacy.com/api/api-docs#searchrepositoryissues">searchRepositoryIssues</a> specifying the issue levels <code>Error</code> and <code>Warning</code> in the body:</p>
+<div class="highlight"><pre><span></span><code>curl -X POST https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs/issues/search <span class="se">\</span>
+     -H <span class="s1">&#39;api-token: SjE9y7ekgKdpaCofsAhd&#39;</span> <span class="se">\</span>
+     -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
+     -d <span class="s1">&#39;{&quot;levels&quot;: [&quot;Error&quot;, &quot;Warning&quot;]}&#39;</span>
 </code></pre></div>
               
               
@@ -2767,7 +2794,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 8, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 17, 2021</span>
     
   </small>
 </div>
