@@ -61,14 +61,14 @@ Most API endpoints require that you provide either a [project or account API tok
 For example, to make a request to an API v3 endpoint that requires an **account API token**:
 
 ```bash
-curl -X GET https://api.codacy.com/api/v3/user/organizations/gh \
+curl -X GET 'https://api.codacy.com/api/v3/user/organizations/gh' \
      -H 'api-token: SjE9y7ekgKdpaCofsAhd'
 ```
 
 Or to make a request to an API v2 endpoint that requires a **project API token**:
 
 ```bash
-curl -X GET https://api.codacy.com/2.0/commit/da275c14ffab6e402dcc6009828067ffa44b7ee0 \
+curl -X GET 'https://api.codacy.com/2.0/commit/da275c14ffab6e402dcc6009828067ffa44b7ee0' \
      -H 'project-token: c9f2feb28e780acc8dc40754978b8bd9'
 ```
 
@@ -86,7 +86,7 @@ For example, to call the endpoint [getRepositoryWithAnalysis](https://api.codacy
 -   branch (query string): `api-overview`
 
 ```bash
-curl -X GET https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs?branch=api-overview \
+curl -X GET 'https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs?branch=api-overview' \
      -H 'api-token: SjE9y7ekgKdpaCofsAhd'
 ```
 
@@ -95,7 +95,7 @@ curl -X GET https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repos
 For example, to call the endpoint [searchRepositoryIssues](https://api.codacy.com/api/api-docs#searchrepositoryissues) specifying the issue levels `Error` and `Warning` in the body:
 
 ```bash
-curl -X POST https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs/issues/search \
+curl -X POST 'https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs/issues/search' \
      -H 'api-token: SjE9y7ekgKdpaCofsAhd' \
      -H 'Content-Type: application/json' \
      -d '{"levels": ["Error", "Warning"]}'
