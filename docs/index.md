@@ -15,7 +15,7 @@ description: Documentation homepage for the Codacy automated code review tool.
 
     <a class="content-link" href="getting-started/supported-languages-and-tools/">
       <div>Supported languages</div>
-      <div>Codacy supports over 30 programming languages out of the box, and regularly adds support for new languages and tools.</div>
+      <div>Codacy supports over 40 programming languages and frameworks out of the box, and regularly adds support for new languages and tools.</div>
     </a>
   </div>
 
