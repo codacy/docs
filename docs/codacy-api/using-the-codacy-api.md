@@ -100,3 +100,76 @@ curl -X POST 'https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/rep
      -H 'Content-Type: application/json' \
      -d '{"levels": ["Error", "Warning"]}'
 ```
+
+## Using pagination
+
+Endpoints that return lists containing a potential large number of results use cursor-based pagination to return the results in small batches:
+
+-   When you call an endpoint that uses pagination it replies with the first page of results, together with a `pagination` object. For example:
+
+    ```bash
+    curl -X GET 'https://app.codacy.com/api/v3/tools/cf05f3aa-fd23-4586-8cce-5368917ec3e5/patterns' \
+         -H 'api-token: SjE9y7ekgKdpaCofsAhd'
+    ```
+
+    ```json
+    {
+      "data": [
+        ...
+      ],
+      "pagination": {
+          "cursor": "MTAw",
+          "limit": 100,
+          "total": 1510
+      }
+    }
+    ```
+
+-   To obtain the next page of results, call the endpoint again using the `cursor` from the previous response as a parameter. For example:
+
+    ```bash
+    curl -X GET 'https://app.codacy.com/api/v3/tools/cf05f3aa-fd23-4586-8cce-5368917ec3e5/patterns?cursor=MTAw' \
+         -H 'api-token: SjE9y7ekgKdpaCofsAhd'
+    ```
+
+-   If the response doesn't include a token, it means that the endpoint returned the last page of results. For example:
+
+    ```bash
+    curl -X GET 'https://app.codacy.com/api/v3/tools/cf05f3aa-fd23-4586-8cce-5368917ec3e5/patterns?cursor=MTAw' \
+         -H 'api-token: SjE9y7ekgKdpaCofsAhd'
+    ```
+
+    ```json
+    {
+      "data": [
+        ...
+      ],
+      "pagination": {
+          "limit": 100,
+          "total": 1510
+      }
+    }
+    ```
+
+-   Use the parameter `limit` to configure the number of results that the endpoint returns in each page. For example:
+
+    ```bash
+    curl -X GET 'https://app.codacy.com/api/v3/tools/cf05f3aa-fd23-4586-8cce-5368917ec3e5/patterns?limit=25' \
+         -H 'api-token: SjE9y7ekgKdpaCofsAhd'
+    ```
+
+    ```json
+    {
+      "data": [
+        ...
+      ],
+      "pagination": {
+          "cursor": "MjU=",
+          "limit": 25,
+          "total": 1510
+      }
+    }
+    ```
+
+!!! note
+    To make sure that you receive all results when calling a paginated endpoint, repeat the process above until the response doesn't include the token to obtain a next page.
