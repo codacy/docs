@@ -108,7 +108,7 @@ Endpoints that return lists containing a potential large number of results use c
 -   Calling endpoints that use pagination returns the first page of results together with a `pagination` object that includes a `cursor`.
 -   To obtain the next page of results, call the endpoint again using the `cursor` from the previous response as a parameter.
 -   If the response doesn't include a `cursor` it means that the endpoint returned the last page of results.
--   Use the parameter `limit` to configure the number of results that the endpoint returns in each page. The maximum value for `limit` is 1000.
+-   Use the parameter `limit` to configure the number of results that the endpoint returns in each page. The maximum `limit` is 1000 and the default is 100.
 
 !!! note
     To make sure that you receive all results when calling an endpoint with pagination, repeat the process above until the response doesn't include the cursor to obtain another page of results.
