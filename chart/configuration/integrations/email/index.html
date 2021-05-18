@@ -21,7 +21,7 @@
     
     
       
-        <title>Emails - Codacy docs</title>
+        <title>SMTP server - Codacy docs</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#emails" class="md-skip">
+        <a href="#smtp-server" class="md-skip">
           Skip to content
         </a>
       
@@ -1340,8 +1340,8 @@
       
     
     
-    <a href="./" title="Emails" class="md-nav__link md-nav__link--active">
-      Emails
+    <a href="./" title="SMTP server" class="md-nav__link md-nav__link--active">
+      SMTP server
     </a>
     
   </li>
@@ -2366,6 +2366,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../../../release-notes/self-hosted/self-hosted-v4.0.0/" title="Self-hosted v4.0.0" class="md-nav__link">
+      Self-hosted v4.0.0
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../../../release-notes/self-hosted/self-hosted-v3.5.0/" title="Self-hosted v3.5.0" class="md-nav__link">
       Self-hosted v3.5.0
     </a>
@@ -2614,7 +2626,7 @@
                   
                 
                 
-                <h1 id="emails">Emails<a class="headerlink" href="#emails" title="Permanent link">#</a></h1>
+                <h1 id="smtp-server">SMTP server<a class="headerlink" href="#smtp-server" title="Permanent link">#</a></h1>
 <p>Follow the instructions below to set up Codacy Self-hosted to send emails using your SMTP server:</p>
 <ol>
 <li>
@@ -2641,7 +2653,7 @@
 <p>To do this, uncomment the last line before running the <code>helm upgrade</code> command below.</p>
 </div>
 <div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span> <span class="se">\</span>
-             --version <span class="m">3</span>.5.0 <span class="se">\</span>
+             --version <span class="m">4</span>.0.0 <span class="se">\</span>
              --values values-production.yaml <span class="se">\</span>
              <span class="c1"># --values values-microk8s.yaml</span>
 </code></pre></div>
@@ -2676,10 +2688,10 @@
       Thank you for the feedback!
     </p>
     <p class="user-feedback-response user-feedback-response--no">
-      We're sorry to hear that. Please <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Emails%22">let us know what we can improve</a>.
+      We're sorry to hear that. Please <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22SMTP server%22">let us know what we can improve</a>.
     </p>
     <p>
-      If you have a question, please <a href="https://community.codacy.com/">ask our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Emails">support@codacy.com</a>.
+      If you have a question, please <a href="https://community.codacy.com/">ask our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20SMTP server">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -2720,7 +2732,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 14, 2021</span>
     
   </small>
 </div>
