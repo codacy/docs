@@ -105,7 +105,7 @@ curl -X POST 'https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/rep
 
 Endpoints that return lists containing a potential large number of results use cursor-based pagination to return the results in small batches:
 
--   Calling endpoints that use pagination returns the first page of results together with a `pagination` object that includes a `cursor`.
+-   These endpoints return the results together with a `pagination` object that includes a `cursor`.
 -   To obtain the next page of results, call the endpoint again using the `cursor` from the previous response as a parameter.
 -   If the response doesn't include a `cursor` it means that the endpoint returned the last page of results.
 -   Use the parameter `limit` to configure the number of results that the endpoint returns in each page. The maximum `limit` is 1000 and the default is 100.
