@@ -42,6 +42,7 @@ JSP
 md
 namespace
 onboarding
+plaintext
 PMD
 Prospector
 PSScriptAnalyser
