@@ -113,14 +113,14 @@ Endpoints that return lists containing a potential large number of results use c
 !!! note
     To make sure that you receive all results when calling an endpoint with pagination, repeat the process above until the response doesn't include the cursor to obtain another page of results.
 
-For example, the following command returns the first 25 patterns for the tool ESLint:
+For example, the following command requests the first 10 repositories in the Codacy GitHub organization:
 
 ```bash
-curl -X GET 'https://app.codacy.com/api/v3/tools/cf05f3aa-fd23-4586-8cce-5368917ec3e5/patterns?limit=250' \
+curl -X GET 'https://app.codacy.com/api/v3/organizations/gh/codacy/repositories?limit=10'
      -H 'api-token: SjE9y7ekgKdpaCofsAhd'
 ```
 
-The response includes the first 250 results, as well as the cursor to obtain the next page of results:
+The response includes the first 10 results, as well as the cursor to obtain the next page of results:
 
 ```json
 {
@@ -128,9 +128,9 @@ The response includes the first 250 results, as well as the cursor to obtain the
     ...
   ],
   "pagination": {
-      "cursor": "MjUw",
-      "limit": 250,
-      "total": 1510
+      "cursor": "codacy_2",
+      "limit": 10,
+      "total": 156
   }
 }
 ```
@@ -138,7 +138,7 @@ The response includes the first 250 results, as well as the cursor to obtain the
 To obtain the next page of results, it's necessary to include the `cursor` from the previous page as a parameter:
 
 ```bash
-curl -X GET 'https://app.codacy.com/api/v3/tools/cf05f3aa-fd23-4586-8cce-5368917ec3e5/patterns?limit=250&cursor=MjUw' \
+curl -X GET 'https://app.codacy.com/api/v3/organizations/gh/codacy/repositories?limit=10&cursor=codacy_2'
      -H 'api-token: SjE9y7ekgKdpaCofsAhd'
 ```
 
@@ -150,8 +150,8 @@ If you continue requesting more pages the endpoint will eventually return a `pag
     ...
   ],
   "pagination": {
-      "limit": 250,
-      "total": 1510
+      "limit": 10,
+      "total": 156
   }
 }
 ```
