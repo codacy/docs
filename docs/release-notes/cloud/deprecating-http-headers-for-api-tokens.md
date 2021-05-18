@@ -28,6 +28,6 @@ As such, to avoid downtime in your operations, we recommend that you do the foll
 
 ## Background information
 
-By default, [NGINX silently drops HTTP headers containing underscores](https://www.nginx.com/resources/wiki/start/topics/tutorials/config_pitfalls/#missing-disappearing-http-headers). With the old HTTP headers, this would require an extra configuration step during the Codacy installation process.
+By default, [NGINX silently drops HTTP headers containing underscores](https://www.nginx.com/nginx-wiki/build/dirhtml/start/topics/tutorials/config_pitfalls/#missing-disappearing-http-headers). With the old HTTP headers, this would require an extra configuration step during the Codacy installation process.
 
 We decided to avoid this extra complexity by changing to the new HTTP headers that don't include underscores.
