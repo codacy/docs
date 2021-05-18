@@ -106,7 +106,7 @@ Each security category listed on the left-hand side of the dashboard has one of 
     <tr>
       <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
       <td><p><strong>There are security patterns in this category that are disabled</strong></p>
-          <p>You should enable the patterns in this category so it's verified. To enable all security patterns on the repository, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>. If you're using configuration files, you must manually enable the listed patterns on your configuration files.</p>
+          <p>You should enable the patterns in this category so it's verified. To enable all security patterns on the repository, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>.</p>
     </tr>
     <tr>
       <td><img src="../images/security-monitor-red.png" alt="Red"></td>
