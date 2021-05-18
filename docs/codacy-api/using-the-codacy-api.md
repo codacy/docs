@@ -105,71 +105,53 @@ curl -X POST 'https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/rep
 
 Endpoints that return lists containing a potential large number of results use cursor-based pagination to return the results in small batches:
 
--   When you call an endpoint that uses pagination it replies with the first page of results, together with a `pagination` object. For example:
-
-    ```bash
-    curl -X GET 'https://app.codacy.com/api/v3/tools/cf05f3aa-fd23-4586-8cce-5368917ec3e5/patterns' \
-         -H 'api-token: SjE9y7ekgKdpaCofsAhd'
-    ```
-
-    ```json
-    {
-      "data": [
-        ...
-      ],
-      "pagination": {
-          "cursor": "MTAw",
-          "limit": 100,
-          "total": 1510
-      }
-    }
-    ```
-
--   To obtain the next page of results, call the endpoint again using the `cursor` from the previous response as a parameter. For example:
-
-    ```bash
-    curl -X GET 'https://app.codacy.com/api/v3/tools/cf05f3aa-fd23-4586-8cce-5368917ec3e5/patterns?cursor=MTAw' \
-         -H 'api-token: SjE9y7ekgKdpaCofsAhd'
-    ```
-
--   If the response doesn't include a token, it means that the endpoint returned the last page of results. For example:
-
-    ```bash
-    curl -X GET 'https://app.codacy.com/api/v3/tools/cf05f3aa-fd23-4586-8cce-5368917ec3e5/patterns?cursor=MTAw' \
-         -H 'api-token: SjE9y7ekgKdpaCofsAhd'
-    ```
-
-    ```json
-    {
-      "data": [
-        ...
-      ],
-      "pagination": {
-          "limit": 100,
-          "total": 1510
-      }
-    }
-    ```
-
--   Use the parameter `limit` to configure the number of results that the endpoint returns in each page. For example:
-
-    ```bash
-    curl -X GET 'https://app.codacy.com/api/v3/tools/cf05f3aa-fd23-4586-8cce-5368917ec3e5/patterns?limit=25' \
-         -H 'api-token: SjE9y7ekgKdpaCofsAhd'
-    ```
-
-    ```json
-    {
-      "data": [
-        ...
-      ],
-      "pagination": {
-          "cursor": "MjU=",
-          "limit": 25,
-          "total": 1510
-      }
-    }
-    ```
+-   Calling endpoints that use pagination returns the first page of results together with a `pagination` object that includes a `cursor`.
+-   To obtain the next page of results, call the endpoint again using the `cursor` from the previous response as a parameter.
+-   If the response doesn't include a `cursor` it means that the endpoint returned the last page of results.
+-   Use the parameter `limit` to configure the number of results that the endpoint returns in each page. The maximum value for `limit` is 1000.
 
 !!! note
-    To make sure that you receive all results when calling a paginated endpoint, repeat the process above until the response doesn't include the token to obtain a next page.
+    To make sure that you receive all results when calling an endpoint with pagination, repeat the process above until the response doesn't include the cursor to obtain another page of results.
+
+For example, the following command returns the first 25 patterns for the tool ESLint:
+
+```bash
+curl -X GET 'https://app.codacy.com/api/v3/tools/cf05f3aa-fd23-4586-8cce-5368917ec3e5/patterns?limit=250' \
+     -H 'api-token: SjE9y7ekgKdpaCofsAhd'
+```
+
+The response includes the first 250 results, as well as the cursor to obtain the next page of results:
+
+```json
+{
+  "data": [
+    ...
+  ],
+  "pagination": {
+      "cursor": "MjUw",
+      "limit": 250,
+      "total": 1510
+  }
+}
+```
+
+To obtain the next page of results, it's necessary to include the `cursor` from the previous page as a parameter:
+
+```bash
+curl -X GET 'https://app.codacy.com/api/v3/tools/cf05f3aa-fd23-4586-8cce-5368917ec3e5/patterns?limit=250&cursor=MjUw' \
+     -H 'api-token: SjE9y7ekgKdpaCofsAhd'
+```
+
+If you continue requesting more pages the endpoint will eventually return a `pagination` object that doens't include a `cursor`. This means that you've reached the last page of results:
+
+```json
+{
+  "data": [
+    ...
+  ],
+  "pagination": {
+      "limit": 250,
+      "total": 1510
+  }
+}
+```
