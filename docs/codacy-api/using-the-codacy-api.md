@@ -61,14 +61,14 @@ Most API endpoints require that you provide either a [project or account API tok
 For example, to make a request to an API v3 endpoint that requires an **account API token**:
 
 ```bash
-curl -X GET https://api.codacy.com/api/v3/user/organizations/gh \
+curl -X GET 'https://api.codacy.com/api/v3/user/organizations/gh' \
      -H 'api-token: SjE9y7ekgKdpaCofsAhd'
 ```
 
 Or to make a request to an API v2 endpoint that requires a **project API token**:
 
 ```bash
-curl -X GET https://api.codacy.com/2.0/commit/da275c14ffab6e402dcc6009828067ffa44b7ee0 \
+curl -X GET 'https://api.codacy.com/2.0/commit/da275c14ffab6e402dcc6009828067ffa44b7ee0' \
      -H 'project-token: c9f2feb28e780acc8dc40754978b8bd9'
 ```
 
@@ -86,7 +86,7 @@ For example, to call the endpoint [getRepositoryWithAnalysis](https://api.codacy
 -   branch (query string): `api-overview`
 
 ```bash
-curl -X GET https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs?branch=api-overview \
+curl -X GET 'https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs?branch=api-overview' \
      -H 'api-token: SjE9y7ekgKdpaCofsAhd'
 ```
 
@@ -95,8 +95,63 @@ curl -X GET https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repos
 For example, to call the endpoint [searchRepositoryIssues](https://api.codacy.com/api/api-docs#searchrepositoryissues) specifying the issue levels `Error` and `Warning` in the body:
 
 ```bash
-curl -X POST https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs/issues/search \
+curl -X POST 'https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs/issues/search' \
      -H 'api-token: SjE9y7ekgKdpaCofsAhd' \
      -H 'Content-Type: application/json' \
      -d '{"levels": ["Error", "Warning"]}'
+```
+
+## Using pagination
+
+Endpoints that return lists containing a potential large number of results use cursor-based pagination to return the results in small batches:
+
+-   These endpoints return the results together with a `pagination` object that includes a `cursor`.
+-   To obtain the next page of results, call the endpoint again using the `cursor` from the previous response as a parameter.
+-   If the response doesn't include a `cursor` it means that the endpoint returned the last page of results.
+-   Use the parameter `limit` to configure the number of results that the endpoint returns in each page. The maximum `limit` is 1000 and the default is 100.
+
+!!! note
+    To make sure that you receive all results when calling an endpoint with pagination, repeat the process above until the response doesn't include the cursor to obtain another page of results.
+
+For example, the following command requests the first 10 repositories in the Codacy GitHub organization:
+
+```bash
+curl -X GET 'https://app.codacy.com/api/v3/organizations/gh/codacy/repositories?limit=10'
+     -H 'api-token: SjE9y7ekgKdpaCofsAhd'
+```
+
+The response includes the first 10 results, as well as the cursor to obtain the next page of results:
+
+```json
+{
+  "data": [
+    ...
+  ],
+  "pagination": {
+      "cursor": "codacy_2",
+      "limit": 10,
+      "total": 156
+  }
+}
+```
+
+To obtain the next page of results, it's necessary to include the `cursor` from the previous page as a parameter:
+
+```bash
+curl -X GET 'https://app.codacy.com/api/v3/organizations/gh/codacy/repositories?limit=10&cursor=codacy_2'
+     -H 'api-token: SjE9y7ekgKdpaCofsAhd'
+```
+
+If you continue requesting more pages the endpoint will eventually return a `pagination` object that doens't include a `cursor`. This means that you've reached the last page of results:
+
+```json
+{
+  "data": [
+    ...
+  ],
+  "pagination": {
+      "limit": 10,
+      "total": 156
+  }
+}
 ```
