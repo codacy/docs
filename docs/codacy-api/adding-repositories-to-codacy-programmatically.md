@@ -98,4 +98,4 @@ done
     For the sake of simplicity:
 
     -   The GitHub API endpoint used by the script obtains all repositories in a GitHub organization. However, you must have admin permissions over the repositories that you add to Codacy. If you're not the owner of all the repositories in your GitHub organization, consider using the GitHub API endpoint [/user/repos](https://docs.github.com/en/rest/reference/repos#list-repositories-for-the-authenticated-user){: target="_blank"} instead.
-    -   The script doesn't take into account paginated results obtained from the GitHub API. To ensure that you obtain all the repositories in your organization, [learn how to use pagination on the GitHub API](https://docs.github.com/en/rest/guides/traversing-with-pagination){: target="_blank"}.
+    -   The script doesn't consider paginated results obtained from the GitHub API. [Learn how to use pagination on the GitHub API](https://docs.github.com/en/rest/guides/traversing-with-pagination){: target="_blank"} to ensure that you obtain all the repositories in your organization.
