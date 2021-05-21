@@ -39,7 +39,7 @@ Codacy supports repositories from the following Git providers:
       <td><p>Codacy Cloud or<br/><a target="_blank" href="https://www.codacy.com/self-hosted">Codacy Self-hosted</a></p>
     </tr>
     <tr>
-      <td><p><strong>GitLab Self-managed</strong><br/>version 12.6.2-ee or later</p></td>
+      <td><p><strong>GitLab Self-managed</strong><br/>version 13.11.4-ee or later</p></td>
       <td><p>GitLab Enterprise</p></td>
       <td><p><a target="_blank" href="https://www.codacy.com/self-hosted">Codacy Self-hosted</a></p></td>
     </tr>
