@@ -1,5 +1,5 @@
 ---
-description: Enable the GitLab integration to have merge request status and merge request comments from Codacy directly on merge requests.
+description: Enable the GitLab integration to have merge request status, comments, and analysis summaries from Codacy directly on merge requests.
 ---
 
 # GitLab integration
@@ -39,3 +39,9 @@ Adds a report to your merge requests showing whether your merge requests and cov
 Adds comments on the lines of the merge request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them.
 
 ![Merge request comment on GitLab](images/gitlab-integration-pr-comment.png)
+
+### Pull Request Summary
+
+Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication.
+
+![Merge request summary on Bitbucket](images/gitlab-integration-pr-summary.png)
