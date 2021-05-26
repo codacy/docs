@@ -17,7 +17,7 @@ These settings configure quality thresholds for commits, as displayed on the [Co
 -   **New issues are over:** Commits are marked not up to standards if the number of issues introduced is bigger than the set value. The default value is 0.
 -   **Complexity is over:** Commits are marked not up to standards if the introduced complexity is bigger than the set value. By default, this setting is off.
 -   **Duplication is over:** Commits are marked not up to standards if the number of clones introduced is bigger than the set value. By default, this setting is off.
--   **Coverage variation is under:** Commits are marked not up to standards if the coverage introduced is smaller than the set value. By default, this setting is off.
+-   **Coverage variation is under:** Commits are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your commit. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.
 
 ## Pull Requests
 
@@ -28,7 +28,7 @@ These settings configure quality thresholds for pull requests, as displayed on t
 -   **New issues are over:** Pull requests are marked not up to standards if the number of issues introduced is bigger than the set value. The default value is 0.
 -   **Complexity is over:** Pull requests are marked not up to standards if the introduced complexity is bigger than the set value. By default, this setting is off.
 -   **Duplication is over:** Pull requests are marked not up to standards if the number of clones introduced is bigger than the set value. By default, this setting is off.
--   **Coverage variation is under:** Pull requests are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull request. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off.
+-   **Coverage variation is under:** Pull requests are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull request. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.
 
 ## Repository
 
