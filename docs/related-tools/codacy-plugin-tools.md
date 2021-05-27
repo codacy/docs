@@ -140,7 +140,11 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-pylint" class="skip-vale">codacy/codacy-pylint</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/remarkjs/remark-lint">RemarkLint</a></td>
+<td><a href="https://github.com/markdownlint/markdownlint">RemarkLint</a></td>
+<td><a href="https://github.com/codacy/codacy-markdownlint" class="skip-vale">codacy/codacy-markdownlint</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/remarkjs/remark-lint">MarkdownLint</a></td>
 <td><a href="https://github.com/codacy/codacy-remark-lint" class="skip-vale">codacy/codacy-remark-lint</a></td>
 </tr>
 <tr>

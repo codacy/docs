@@ -193,7 +193,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Markdown</td>
       <td><a href="https://github.com/remarkjs/remark-lint">RemarkLint</a></td>
-      <td></td>
+      <td><a href="https://github.com/markdownlint/markdownlint">MarkdownLint</a></td>
       <td>-</td>
       <td>-</td>
     </tr>
