@@ -1,8 +1,8 @@
 ---
-description: Example of how to obtain code quality metrics for a subset of files in a repository.
+description: Example of how to obtain code quality metrics for a subset of the files in a repository.
 ---
 
-# Obtaining code quality metrics for a subset of files
+# Obtaining code quality metrics for files
 
 If you're managing your source code using a monorepo strategy you may want to generate separate code quality reports for the files that belong to each component or project in your repository.
 
