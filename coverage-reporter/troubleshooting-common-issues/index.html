@@ -908,20 +908,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#submitting-coverage-for-unsupported-languages" class="md-nav__link">
-    Submitting coverage for unsupported languages
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#unsupported-report-formats" class="md-nav__link">
-    Submitting coverage from unsupported report formats
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
   <a href="#cant-guess-any-report-due-to-no-matching" class="md-nav__link">
     Can't guess any report due to no matching
   </a>
@@ -2702,38 +2688,6 @@
                 
                 <h1 id="troubleshooting-common-issues">Troubleshooting common issues<a class="headerlink" href="#troubleshooting-common-issues" title="Permanent link">#</a></h1>
 <p>The sections below provide instructions or workarounds to overcome common issues while using Codacy Coverage Reporter.</p>
-<h2 id="submitting-coverage-for-unsupported-languages">Submitting coverage for unsupported languages<a class="headerlink" href="#submitting-coverage-for-unsupported-languages" title="Permanent link">#</a></h2>
-<p>If your language is not in the list of supported languages, you can still send coverage to Codacy. You can do it by providing the correct language name with the flag <code>-l</code>, together with <code>--force-language</code>. For example:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report
-  -l Kotlin --force-language
-</code></pre></div>
-<p>See the <a href="https://github.com/codacy/codacy-plugins-api/blob/master/src/main/scala/com/codacy/plugins/api/languages/Language.scala#L43">list of languages</a> that you can specify using the flag <code>-l</code>.</p>
-<h2 id="unsupported-report-formats">Submitting coverage from unsupported report formats<a class="headerlink" href="#unsupported-report-formats" title="Permanent link">#</a></h2>
-<p>If you are generating a report format that Codacy does not yet support, try using the community projects below or contribute to our <a href="https://github.com/codacy/coverage-parser">codacy/coverage-parser</a> project:</p>
-<ul>
-<li><a href="https://github.com/danielpalme/ReportGenerator">danielpalme/ReportGenerator</a>: convert between different report formats </li>
-<li><a href="https://github.com/dariodf/lcov_ex">dariodf/lcov_ex</a>: generate LCOV reports for Elixir projects</li>
-<li><a href="https://github.com/t-yuki/gocover-cobertura">t-yuki/gocover-cobertura</a>: generate Cobertura reports from <a href="https://golang.org/pkg/cmd/cover/">Go cover</a> reports</li>
-</ul>
-<p>As a workaround, you can also send the coverage data directly by calling the Codacy API endpoint <a href="https://api.codacy.com/swagger#savecoverage">saveCoverage</a> (when using a project API Token)
-or <a href="https://api.codacy.com/swagger#savecoveragewithaccounttoken">saveCoverageWithAccountToken</a> (when using an account API Token).</p>
-<p>The following is an example of the JSON payload:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
-  <span class="nt">&quot;fileReports&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;src/Codacy/Coverage/Parser/CloverParser.php&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">54</span><span class="p">,</span>
-      <span class="nt">&quot;coverage&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;3&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-        <span class="nt">&quot;5&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;7&quot;</span><span class="p">:</span> <span class="mi">1</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
-</code></pre></div>
-<p>Note that all "coverable" lines should be present on the <code>coverage</code> node of the JSON payload. In the example you can see <code>"5": 0</code>, meaning that line 5 is not covered.</p>
 <h2 id="cant-guess-any-report-due-to-no-matching">Can't guess any report due to no matching<a class="headerlink" href="#cant-guess-any-report-due-to-no-matching" title="Permanent link">#</a></h2>
 <p>Codacy Coverage Reporter automatically searches for coverage reports matching the <a href="../#generating-coverage">file name conventions for supported formats</a>.</p>
 <p>However, if Codacy Coverage Reporter does not find your coverage report, you can explicitly define the report file name with the flag <code>-r</code>. For example:</p>
@@ -2828,7 +2782,7 @@ or <a href="https://api.codacy.com/swagger#savecoveragewithaccounttoken">saveCov
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 15, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 25, 2021</span>
     
   </small>
 </div>
