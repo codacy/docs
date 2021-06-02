@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Release notes for Codacy Self-hosted v3.0.0.">
+        <meta name="description" content="Release notes for Codacy Self-hosted v3.5.1.">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/release-notes/self-hosted/self-hosted-v3.0.0/">
+        <link rel="canonical" href="https://docs.codacy.com/release-notes/self-hosted/self-hosted-v3.5.1/">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Self-hosted v3.0.0 - Codacy docs</title>
+        <title>Self-hosted v3.5.1 - Codacy docs</title>
       
     
     
@@ -66,7 +66,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#self-hosted-v300" class="md-skip">
+        <a href="#self-hosted-v351" class="md-skip">
           Skip to content
         </a>
       
@@ -2379,11 +2379,47 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../self-hosted-v3.5.1/" title="Self-hosted v3.5.1" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Self-hosted v3.5.1
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Self-hosted v3.5.1" class="md-nav__link md-nav__link--active">
       Self-hosted v3.5.1
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#bug-fixes" class="md-nav__link">
+    Bug fixes
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -2451,61 +2487,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Self-hosted v3.0.0
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Self-hosted v3.0.0" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../self-hosted-v3.0.0/" title="Self-hosted v3.0.0" class="md-nav__link">
       Self-hosted v3.0.0
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#breaking-changes" class="md-nav__link">
-    Breaking changes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#product-enhancements" class="md-nav__link">
-    Product enhancements
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#tool-versions" class="md-nav__link">
-    Tool versions
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -2691,67 +2677,12 @@
                   
                 
                 
-                <h1 id="self-hosted-v300">Self-hosted v3.0.0<a class="headerlink" href="#self-hosted-v300" title="Permanent link">#</a></h1>
-<p>These release notes are for <a href="https://github.com/codacy/chart/releases/tag/3.0.0" target="_blank">Codacy Self-hosted v3.0.0</a>, released on November 2, 2020.</p>
+                <h1 id="self-hosted-v351">Self-hosted v3.5.1<a class="headerlink" href="#self-hosted-v351" title="Permanent link">#</a></h1>
+<p>These release notes are for <a href="https://github.com/codacy/chart/releases/tag/3.5.1" target="_blank">Codacy Self-hosted v3.5.1</a>, released on June 1, 2021.</p>
 <p>To upgrade Codacy, follow <a href="../../../chart/maintenance/upgrade/">these instructions</a>.</p>
-<h2 id="breaking-changes">Breaking changes<a class="headerlink" href="#breaking-changes" title="Permanent link">#</a></h2>
-<p><strong>If you're using GitHub and require Codacy pull request status to pass before merging pull requests</strong> you must manually re-enable the required status check on your repositories. To do this:</p>
-<ol>
-<li>
-<p>Wait until there is a new status check from Codacy on your repositories using the new GitHub Checks integration:</p>
-<p><img alt="Codacy pull request status on GitHub" src="../../../repositories-configure/integrations/images/github-integration-pr-status.png" /></p>
-</li>
-<li>
-<p>Follow the instructions to <a href="https://docs.codacy.com/v3.0/faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/#github">require the Codacy status check to pass before merging pull requests</a> on your GitHub branch protection rules.</p>
-</li>
-</ol>
-<h2 id="product-enhancements">Product enhancements<a class="headerlink" href="#product-enhancements" title="Permanent link">#</a></h2>
+<h2 id="bug-fixes">Bug fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">#</a></h2>
 <ul>
-<li>Codacy now supports the integration with GitHub Checks. From now on, <a href="https://docs.codacy.com/v3.0/repositories-configure/integrations/github-integration/#configuring-the-github-integration">all Codacy analysis information on pull requests</a> will show up under the <strong>Checks</strong> tab on the GitHub pull request pages. For private repositories, the annotations will appear as authored by Codacy instead of the user who configured the integration. (CY-46)</li>
-</ul>
-<h2 id="tool-versions">Tool versions<a class="headerlink" href="#tool-versions" title="Permanent link">#</a></h2>
-<p>This version of Codacy Self-hosted includes the tool versions below. The tools that were updated on this version are highlighted in bold:</p>
-<ul>
-<li>Ameba 0.13.1</li>
-<li>Bandit 1.6.2</li>
-<li>Brakeman 4.3.1</li>
-<li>BundlerAudit 0.6.1</li>
-<li>Checkstyle 8.34</li>
-<li>Clang-Tidy 10.0.1</li>
-<li>CodeNarc 1.6</li>
-<li>Coffeelint 2.1.0</li>
-<li>Cppcheck 2.2</li>
-<li>Credo 1.4.0</li>
-<li>CSSLint 1.0.5</li>
-<li>Detekt 1.10.0</li>
-<li>Flawfinder 2.0.11</li>
-<li>Gosec v2.3.0</li>
-<li><strong>Hadolint 1.18.2 (updated from 1.17.5)</strong></li>
-<li>JacksonLinter 2.10.2</li>
-<li>JSHint 2.12.0</li>
-<li><strong>PHP_CodeSniffer 3.5.8 (updated from 3.5.6)</strong></li>
-<li>PHP Mess Detector 2.8.1</li>
-<li>PMD (Legacy) 5.8.1</li>
-<li><strong>PMD 6.28.0 (updated from 6.27.0)</strong></li>
-<li>Prospector 1.2.0</li>
-<li>PSScriptAnalyzer 1.18.3</li>
-<li>Pylint (Python 3) 2.6.0</li>
-<li>Pylint 1.9.5</li>
-<li>RemarkLint 7.0.1</li>
-<li>Revive 1.0.2</li>
-<li>Rubocop 0.82.0</li>
-<li>Scalastyle 1.0.0</li>
-<li>ShellCheck v0.7.1</li>
-<li><strong>Sonar C# 8.14 (updated from 8.13)</strong></li>
-<li><strong>Sonar Visual Basic 8.14 (updated from 8.13)</strong></li>
-<li>SpotBugs 4.1.2</li>
-<li>SQLint 0.1.9</li>
-<li>Staticcheck 2017.2.2</li>
-<li>Stylelint 13.7.2</li>
-<li>SwiftLint 0.39.2</li>
-<li>Tailor 0.12.0</li>
-<li>TSLint 5.14.0</li>
-<li>TSQLLint 1.11.1</li>
+<li>Fixed an issue that could allow reading information on Codacy related to unauthorized public repositories hosted on GitHub Enterprise Server. CVSS v3.1 score: 4.4 (Medium). (CY-4416)</li>
 </ul>
               
               
@@ -2777,10 +2708,10 @@
       Thank you for the feedback!
     </p>
     <p class="user-feedback-response user-feedback-response--no">
-      We're sorry to hear that. Please <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Self-hosted v3.0.0%22">let us know what we can improve</a>.
+      We're sorry to hear that. Please <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Self-hosted v3.5.1%22">let us know what we can improve</a>.
     </p>
     <p>
-      If you have a question, please <a href="https://community.codacy.com/">ask our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Self-hosted v3.0.0">support@codacy.com</a>.
+      If you have a question, please <a href="https://community.codacy.com/">ask our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Self-hosted v3.5.1">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -2821,7 +2752,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 13, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 2, 2021</span>
     
   </small>
 </div>
