@@ -2109,7 +2109,9 @@
 </li>
 <li>
 <p>Perform the upgrade using the values stored in the file:</p>
-<div class="highlight"><pre><span></span><code>helm upgrade codacy codacy-stable/codacy <span class="se">\</span>
+<div class="highlight"><pre><span></span><code>helm repo update
+helm upgrade codacy codacy-stable/codacy <span class="se">\</span>
+             --version <span class="m">4</span>.0.1 <span class="se">\</span>
              --namespace codacy <span class="se">\</span>
              --values codacy.yaml
 </code></pre></div>
@@ -2183,7 +2185,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 2, 2021</span>
     
   </small>
 </div>
