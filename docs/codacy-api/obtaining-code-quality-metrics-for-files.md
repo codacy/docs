@@ -6,57 +6,34 @@ description: Example of how to obtain code quality metrics for a subset of the f
 
 If you're managing your source code using a monorepo strategy you may want to generate separate code quality reports for the files that belong to each component or project in your repository.
 
-To obtain the code quality information for your files in a flexible way, use the Codacy API v3 endpoint [listFiles](https://app.codacy.com/api/api-docs#listfiles){: target="_blank"} by performing an HTTP GET request to `/organizations/<GIT_PROVIDER>/<GIT_ORGANIZATION>/repositories/<GIT_REPOSITORY>/files`, specifying the Git provider, Git organization, and the repository in the URL of the request:
+To obtain the code quality information for your files in a flexible way, use the Codacy API v3 endpoint [listFiles](https://app.codacy.com/api/api-docs#listfiles){: target="_blank"}.
 
-```bash
-curl -X GET "https://app.codacy.com/api/v3/organizations/<GIT_PROVIDER>/<ORGANIZATION>/repositories/<REPOSITORY>/files?search=<PATTERN>" \
-     -H "api-token: $ACCOUNT_API_TOKEN"
-```
+## Example: Obtaining code quality metrics for a subdirectory of your repository
 
-Substitute the placeholders with your own values:
-
--   **ACCOUNT_API_TOKEN:** [Account API token](api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
--   **GIT_PROVIDER:** Git provider hosting the repository, using one of the values in the table below. For example, `gh` for GitHub Cloud.
-
-    | Value | Git provider         |
-    |-------|----------------------|
-    | `gh`  | GitHub Cloud         | 
-    | `ghe` | GitHub Enterprise    |
-    | `gl`  | GitLab Cloud         |
-    | `gle` | GitLab Enterprise    |
-    | `bb`  | Bitbucket Cloud      |
-    | `bbe` | Bitbucket Server     |
-
--   **ORGANIZATION:** Name of the organization on the Git provider
--   **REPOSITORY:** Name of the repository on the Git provider
--   **PATTERN:** String that the files in the repository must match to filter the returned the results
-
-## Example: Obtaining the current code quality metrics for all files in a directory
-
-This example exports the total issues, grade, complexity, coverage, and duplication in CSV format for all files in the directory `src/components/router`.
+This example exports the grade, total issues, complexity, coverage, and duplication in CSV format for all files in the directory `src/router` of the GitHub repository `codacy/website`.
 
 The example script:
 
 1.  Defines an [account API token](api-tokens.md#account-api-tokens).
-1.  Calls the Codacy API endpoint to retrieve the code quality metrics, filtering the results by retrieving only data for the files that include `src/components/router/` in the path.
-1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to select only the necessary information and convert the results to a CSV list.
+1.  Calls the Codacy API endpoint to retrieve the code quality metrics, filtering the results by retrieving only data for the files that include `src/router/` in the path.
+1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to select only the necessary data fields and convert the results to the CSV format.
 
 ```bash
 export CODACY_API_TOKEN="SjE9y7ekgKdpaCofsAhd"
 
-curl -X GET "https://app.codacy.com/api/v3/organizations/gh/codacy/repositories/codacy/files?search=src/components/router/" \
+curl -X GET "https://app.codacy.com/api/v3/organizations/gh/codacy/repositories/website/files?search=src/router/" \
      -H "api-token: $CODACY_API_TOKEN" \
-| jq ".data[] | [.path, .totalIssues, .gradeLetter, .complexity, .coverage, .duplication] | @csv"
+| jq ".data[] | [.path, .gradeLetter, .totalIssues, .complexity, .coverage, .duplication] | @csv"
 ```
 
 Output:
 
 ```text
-"\"src/components/router/index.ts\",0,\"A\",8,70,0"
-"\"src/components/router/Link.tsx\",0,\"A\",5,100,0"
-"\"src/components/router/Redirect.tsx\",0,\"B\",2,14,0"
-"\"src/components/router/routes/account.ts\",0,\"A\",0,100,0"
-...
+"\"src/components/router/index.ts\",\"A\",0,8,70,0"
+"\"src/components/router/Link.tsx\",\"A\",0,5,100,0"
+"\"src/components/router/Redirect.tsx\",\"B\",0,2,14,0"
+"\"src/components/router/routes/account.ts\",\"A\",0,0,100,0"
+[...]
 ```
 
 !!! important
