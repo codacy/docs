@@ -1,12 +1,12 @@
 ---
-description: Example of how to obtain code quality metrics for files in a repository programmatically using Codacy's API v3 endpoint listFiles.
+description: Example of how to obtain code quality metrics for files in a repository programmatically using the Codacy API endpoint listFiles.
 ---
 
 # Obtaining code quality metrics for files
 
-If you're managing your source code using a monorepo strategy you may want to generate separate code quality reports for the files that belong to each component or project in your repository.
+To obtain the code quality information for your files in a flexible way, use the Codacy API endpoint [listFiles](https://app.codacy.com/api/api-docs#listfiles){: target="_blank"}.
 
-To obtain the code quality information for your files in a flexible way, use the Codacy API v3 endpoint [listFiles](https://app.codacy.com/api/api-docs#listfiles){: target="_blank"}.
+For example, if you're managing your source code using a monorepo strategy you may want to generate separate code quality reports for the subset of files that belong to each component or project in your repository.
 
 ## Example: Obtaining code quality metrics for a subdirectory of your repository
 
