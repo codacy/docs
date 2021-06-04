@@ -584,6 +584,7 @@ nav:
           - organizations/organization-overview.md
           - organizations/managing-repositories.md
           - organizations/managing-people.md
+          - organizations/changing-your-plan-and-billing.md
           - organizations/roles-and-permissions-for-synced-organizations.md
           - Manual organizations (legacy):
                 - organizations/manual-organizations/creating-and-renaming-an-organization.md
