@@ -15,7 +15,9 @@ Each organization on Codacy has a dedicated plan and associated billing. To make
 
 ## Accepting new people to your organization
 
-**On Codacy Cloud**, organization owners can control how team members join their organization by choosing one of the following options on their organization **Settings**, page **Plan and billing**:
+**On Codacy Cloud**, organization owners control if team members need an approval before joining their organization. Codacy updates the billing automatically when new users join an organization.
+
+Choose one of the following options in your organization **Settings**, page **Plan and billing**:
 
 -   **Allow new people to join immediately:** team members with access to the organization on the Git provider can join the organization on Codacy immediately.
 -   **Review join requests from new people:** when team members with access to the organization on the Git provider join the organization on Codacy, an organization owner must manually approve their requests to join on the page **People**.
