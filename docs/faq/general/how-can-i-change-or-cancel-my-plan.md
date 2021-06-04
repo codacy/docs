@@ -26,7 +26,7 @@ Alternatively, [delete your organization](../../organizations/what-are-synced-or
 
 To help you understand how you're consuming your licensed Codacy seats, use [<span class="skip-vale">codacy-usage-report</span>](https://github.com/codacy/codacy-usage-report) to obtain details about the activity of the users in your Codacy Self-hosted instance.
 
-If you decide to cancel your plan, please contact <support@codacy.com> and we'll swiftly process the cancellation.
+If you decide to cancel your plan, please contact <mailto:support@codacy.com> and we'll swiftly process the cancellation.
 
 ## See also
 
