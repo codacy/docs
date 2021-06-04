@@ -6,9 +6,8 @@ We value feedback and thank you in advance for letting us know the primary reaso
 
 ## If you're using Codacy Cloud
 
-To make changes to the plan of your organization, open your organization **Settings**, page **Plan and billing**.
+If you're using Codacy Cloud see [how to change the plan and billing of your Codacy organization](../../organizations/changing-your-plan-and-billing.md).
 
-![Plan and billing for organizations](images/organization-plan-billing.png)
 
 Alternatively, you can also [delete your organization](../../organizations/what-are-synced-organizations.md#deleting-an-organization) to remove all its repositories from Codacy and cancel your existing plan.
 
