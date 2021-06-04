@@ -6,7 +6,7 @@ Each organization on Codacy has a dedicated plan and associated billing. To make
 
 -   To upgrade to the **Pro** plan, click **Choose plan**. Codacy will ask you to choose between monthly or yearly billing, as well as to provide your payment and invoicing details.
 
--   To change your **Pro** plan, please contact <support@codacy.com>.
+-   To change your **Pro** plan, please contact <mailto:support@codacy.com>.
 
 <!--start-github-marketplace-->
 !!! note
