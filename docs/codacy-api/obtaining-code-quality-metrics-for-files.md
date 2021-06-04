@@ -1,5 +1,5 @@
 ---
-description: Example of how to obtain code quality metrics for a subset of the files in a repository.
+description: Example of how to obtain code quality metrics for files in a repository programmatically using Codacy's API v3 endpoint listFiles.
 ---
 
 # Obtaining code quality metrics for files
