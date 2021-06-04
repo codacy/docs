@@ -8,5 +8,7 @@ Each organization on Codacy has a dedicated plan and associated billing. To make
 
 -   To change your **Pro** plan, please contact <support@codacy.com>.
 
+<!--start-github-marketplace-->
 !!! note
-    **If you're using GitHub Marketplace,** make changes to your billing details directly on your [GitHub Billing page](https://github.com/settings/billing).
+    **If you're using GitHub Marketplace,** make changes to your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).
+<!--end-github-marketplace-->

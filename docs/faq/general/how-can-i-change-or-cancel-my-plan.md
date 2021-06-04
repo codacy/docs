@@ -10,8 +10,11 @@ If you're using Codacy Cloud see [how to change the plan and billing of your Cod
 
 Alternatively, [delete your organization](../../organizations/what-are-synced-organizations.md#deleting-an-organization) to remove all its repositories from Codacy and cancel your existing plan.
 
-!!! note
-    **If you're using GitHub Marketplace,** make changes to your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).
+{%
+    include-markdown "../../organizations/changing-your-plan-and-billing.md"
+    start="<!--start-github-marketplace-->"
+    end="<!--end-github-marketplaces-->"
+%}
 
 !!! note
     **For legacy single accounts,** click on your avatar, select **Your Account**, and open the page **Plan and billing**.
