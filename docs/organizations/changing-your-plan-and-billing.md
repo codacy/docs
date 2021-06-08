@@ -9,9 +9,11 @@ Each organization on Codacy has a dedicated plan and associated billing. To make
 
 ![Plan and billing for a Codacy organization](images/organization-plan-billing.png)
 
--   To upgrade to the **Pro** plan, click **Choose plan**. Codacy will ask you to choose between monthly or yearly billing, as well as to provide your payment and invoicing details.
+-   **To upgrade** to the Pro plan click **Choose plan**, choose between monthly or yearly billing, and provide your payment and invoice details
 
--   To change your **Pro** plan, please contact <mailto:support@codacy.com>.
+-   **To make changes** to your Pro plan or invoice details click **Edit plan details** or click **Edit invoice details**
+
+If you have any questions or need help with your account, please contact <mailto:support@codacy.com>.
 
 ## Accepting new people to your organization
 
