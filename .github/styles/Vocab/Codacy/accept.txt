@@ -39,6 +39,7 @@ jq
 jscpd
 JSHint
 JSP
+markdownlint
 md
 namespace
 onboarding
