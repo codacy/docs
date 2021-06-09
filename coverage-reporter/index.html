@@ -2730,6 +2730,11 @@
     <td><code>dotcover.xml</code> (dotCover <a href="troubleshooting-common-issues/#detailedxml">detailedXML</a>)</td>
 </tr>
 <tr>
+    <td>Go</td>
+    <td><a href="https://blog.golang.org/cover">Golang</a> Code Coverage</td>
+    <td>Golang report files don't have a specific name. Because of this, later in the setup process you must follow <a href="#submitting-coverage-for-golang">specific instructions</a> while submitting coverage to Codacy.</td>
+</tr>
+<tr>
     <td rowspan="2">Java</td>
     <td><a href="http://eclemma.org/jacoco/">JaCoCo</a></td>
     <td><code>jacoco*.xml</code> (JaCoCo)</td>
@@ -2780,7 +2785,7 @@
 </table>
 
 <h3 id="submitting-coverage-from-unsupported-report-formats">Submitting coverage from unsupported report formats<a class="headerlink" href="#submitting-coverage-from-unsupported-report-formats" title="Permanent link">#</a></h3>
-<p>If you're generating a report format that Codacy doesn't support yet, use one of the community projects below to generate coverage reports in a supported format or contribute to our <a href="https://github.com/codacy/coverage-parser">codacy/coverage-parser</a> project:</p>
+<p>If you're generating a report format that Codacy doesn't support yet, <a href="https://github.com/codacy/codacy-coverage-reporter/tree/master/coverage-parser/src/main/scala/com/codacy/parsers/implementation">contribute with a parser implementation</a> yourself or use one of the community projects below to generate coverage reports in a supported format:</p>
 <ul>
 <li>
 <p><a href="https://github.com/SlatherOrg/slather">SlatherOrg/slather</a>: generate Cobertura reports from Xcode coverage reports:</p>
@@ -2792,9 +2797,8 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <li>
 <p><a href="https://github.com/dariodf/lcov_ex">dariodf/lcov_ex</a>: generate LCOV reports for Elixir projects</p>
 </li>
-<li><a href="https://github.com/t-yuki/gocover-cobertura">t-yuki/gocover-cobertura</a>: generate Cobertura reports from <a href="https://golang.org/pkg/cmd/cover/">Go cover</a> reports</li>
 <li><a href="https://github.com/chrisgit/sfdx-plugins_apex_coverage_report">chrisgit/sfdx-plugins_apex_coverage_report</a>: generate LCOV or Cobertura reports from <a href="https://help.salesforce.com/articleView?id=sf.code_apex_dev_guide_tools.htm&amp;type=5">Apex</a> test coverage data</li>
-<li><a href="https://github.com/danielpalme/ReportGenerator">danielpalme/ReportGenerator</a>: convert between different report formats </li>
+<li><a href="https://github.com/danielpalme/ReportGenerator">danielpalme/ReportGenerator</a>: convert between different report formats</li>
 </ul>
 <p>As a last resort, you can also send the coverage data directly by calling one of the following Codacy API endpoints:</p>
 <ul>
@@ -2872,9 +2876,15 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <p class="admonition-title">Tip</p>
 <p>It might also be possible to merge the reports before uploading them to Codacy, since most coverage tools support merge/aggregation. For example, <a href="http://www.eclemma.org/jacoco/trunk/doc/merge-mojo.html">http://www.eclemma.org/jacoco/trunk/doc/merge-mojo.html</a>.</p>
 </div>
+<h3 id="submitting-coverage-for-golang">Submitting coverage for Golang<a class="headerlink" href="#submitting-coverage-for-golang" title="Permanent link">#</a></h3>
+<p>Codacy can't automatically detect Golang coverage report files because they don't have specific file names.</p>
+<p>If you're uploading a Golang coverage report, you must also specify the report type:</p>
+<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
+    --force-coverage-parser go -r &lt;your project coverage file name&gt;
+</code></pre></div>
 <h3 id="submitting-coverage-for-unsupported-languages">Submitting coverage for unsupported languages<a class="headerlink" href="#submitting-coverage-for-unsupported-languages" title="Permanent link">#</a></h3>
 <p>If your language is not in the list of supported languages, you can still send coverage to Codacy. You can do it by providing the correct language name with the flag <code>-l</code>, together with <code>--force-language</code>. For example:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report
+<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
   -l Kotlin --force-language
 </code></pre></div>
 <p>See the <a href="https://github.com/codacy/codacy-plugins-api/blob/master/src/main/scala/com/codacy/plugins/api/languages/Language.scala#L43">list of languages</a> that you can specify using the flag <code>-l</code>.</p>
@@ -2975,7 +2985,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 26, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 9, 2021</span>
     
   </small>
 </div>
