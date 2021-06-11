@@ -25,7 +25,7 @@ Substitute the placeholders with your own values:
 
     | Value | Git provider         |
     |-------|----------------------|
-    | `gh`  | GitHub Cloud         | 
+    | `gh`  | GitHub Cloud         |
     | `ghe` | GitHub Enterprise    |
     | `gl`  | GitLab Cloud         |
     | `gle` | GitLab Enterprise    |
