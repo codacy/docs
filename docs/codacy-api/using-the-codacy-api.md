@@ -56,20 +56,20 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
 
 ## Authenticating requests to the Codacy API
 
-Most API endpoints require that you provide either a [project or account API token](api-tokens.md). After obtaining the necessary tokens, include them in your request headers using the format `api-token: <token key>` or `project-token: <token key>`.
+Most API endpoints require that you provide either a [project or account API token](api-tokens.md). After obtaining the necessary tokens, include them in your request headers using the format `api-token: <your account API token>` or `project-token: <your project API token>`.
 
 For example, to make a request to an API v3 endpoint that requires an **account API token**:
 
 ```bash
 curl -X GET 'https://api.codacy.com/api/v3/user/organizations/gh' \
-     -H 'api-token: SjE9y7ekgKdpaCofsAhd'
+     -H 'api-token: <your account API token>'
 ```
 
 Or to make a request to an API v2 endpoint that requires a **project API token**:
 
 ```bash
 curl -X GET 'https://api.codacy.com/2.0/commit/da275c14ffab6e402dcc6009828067ffa44b7ee0' \
-     -H 'project-token: c9f2feb28e780acc8dc40754978b8bd9'
+     -H 'project-token: <your project API token>'
 ```
 
 ## Using parameters in requests
@@ -87,7 +87,7 @@ For example, to call the endpoint [getRepositoryWithAnalysis](https://api.codacy
 
 ```bash
 curl -X GET 'https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs?branch=api-overview' \
-     -H 'api-token: SjE9y7ekgKdpaCofsAhd'
+     -H 'api-token: <your account API token>'
 ```
 
 **For `POST`, `PATCH`, and `DELETE` requests**, besides the parameters included in the URL you may also need to include a JSON body.
@@ -96,7 +96,7 @@ For example, to call the endpoint [searchRepositoryIssues](https://api.codacy.co
 
 ```bash
 curl -X POST 'https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs/issues/search' \
-     -H 'api-token: SjE9y7ekgKdpaCofsAhd' \
+     -H 'api-token: <your account API token>' \
      -H 'Content-Type: application/json' \
      -d '{"levels": ["Error", "Warning"]}'
 ```
@@ -117,7 +117,7 @@ For example, the following command requests the first 10 repositories in the Cod
 
 ```bash
 curl -X GET 'https://app.codacy.com/api/v3/organizations/gh/codacy/repositories?limit=10'
-     -H 'api-token: SjE9y7ekgKdpaCofsAhd'
+     -H 'api-token: <your account API token>'
 ```
 
 The response includes the first 10 results, as well as the cursor to obtain the next page of results:
@@ -139,7 +139,7 @@ To obtain the next page of results, it's necessary to include the `cursor` from 
 
 ```bash
 curl -X GET 'https://app.codacy.com/api/v3/organizations/gh/codacy/repositories?limit=10&cursor=codacy_2'
-     -H 'api-token: SjE9y7ekgKdpaCofsAhd'
+     -H 'api-token: <your account API token>'
 ```
 
 If you continue requesting more pages the endpoint will eventually return a `pagination` object that doens't include a `cursor`. This means that you've reached the last page of results:
