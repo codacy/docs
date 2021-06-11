@@ -14,7 +14,7 @@ This example exports the grade, total issues, complexity, coverage, and duplicat
 
 The example script:
 
-1.  Defines an [account API token](api-tokens.md#account-api-tokens).
+1.  Defines an [account API token](../api-tokens.md#account-api-tokens).
 1.  Calls the Codacy API endpoint to retrieve the code quality metrics, filtering the results by retrieving only data for the files that include `src/router/` in the path.
 1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to select only the necessary data fields and convert the results to the CSV format.
 
@@ -37,4 +37,4 @@ Output:
 ```
 
 !!! important
-    For the sake of simplicity, the example doesn't consider paginated results obtained from the Codacy API. [Learn how to use pagination](using-the-codacy-api.md#using-pagination) to ensure that you obtain all the results returned by the API.
+    For the sake of simplicity, the example doesn't consider paginated results obtained from the Codacy API. [Learn how to use pagination](../using-the-codacy-api.md#using-pagination) to ensure that you obtain all the results returned by the API.
