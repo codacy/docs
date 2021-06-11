@@ -96,6 +96,11 @@ plugins:
     - rss:
           image: "https://docs.codacy.com/assets/images/codacy-logo.png"
           match_path: "release-notes/.*"
+    # Generate TOCs in index pages containing all pages in the same directory
+    # https://github.com/lukasgeiter/mkdocs-awesome-pages-plugin
+    # https://github.com/Andre601/mkdocs-pagenav-generator
+    - awesome-pages
+    - pagenav-generator
     # Generate redirects for moved or deleted pages
     # https://github.com/datarobot/mkdocs-redirects
     - redirects:
@@ -652,47 +657,5 @@ nav:
                 - faq/troubleshooting/not-a-member-of-the-organization.md
                 - faq/troubleshooting/we-no-longer-have-access-to-this-repository.md
                 - faq/troubleshooting/error-line-endings.md
-    - Release notes:
-          - release-notes/index.md
-          - Codacy Cloud:
-                - release-notes/cloud/deprecating-http-headers-for-api-tokens.md
-                - release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md
-                - release-notes/cloud/codacy-now-supports-github-apps.md
-                - release-notes/cloud/cloud-release-notes-|-15-nov-2019.md
-                - release-notes/cloud/cloud-release-notes-|-30-oct-2019.md
-                - release-notes/cloud/cloud-release-notes-|-05-set-2019.md
-                - release-notes/cloud/cloud-release-notes-|-07-aug-2019.md
-                - release-notes/cloud/cloud-release-notes-|-18-jun-2019.md
-                - release-notes/cloud/cloud-release-notes-|-20-may-2019.md
-                - release-notes/cloud/cloud-release-notes-|-05-may-2019.md
-                - release-notes/cloud/cloud-release-notes-|-08-april-2019.md
-                - release-notes/cloud/cloud-release-notes-|-29-march-2019.md
-                - release-notes/cloud/bitbucket-changes.md
-                - release-notes/cloud/cloud-release-notes-|-02-january-2019.md
-                - release-notes/cloud/cloud-release-notes-|-16-november-2018.md
-                - release-notes/cloud/cloud-release-notes-|-02-november-2018.md
-                - release-notes/cloud/cloud-release-notes-|-19-october-2018.md
-                - release-notes/cloud/cloud-release-notes-|-23-july-2018.md
-          - Codacy Self-hosted:
-                - release-notes/self-hosted/self-hosted-v4.0.1.md
-                - release-notes/self-hosted/self-hosted-v4.0.0.md
-                - release-notes/self-hosted/self-hosted-v3.5.1.md
-                - release-notes/self-hosted/self-hosted-v3.5.0.md
-                - release-notes/self-hosted/self-hosted-v3.4.0.md
-                - release-notes/self-hosted/self-hosted-v3.3.0.md
-                - release-notes/self-hosted/self-hosted-v3.2.0.md
-                - release-notes/self-hosted/self-hosted-v3.1.0.md
-                - release-notes/self-hosted/self-hosted-v3.0.0.md
-                - release-notes/self-hosted/self-hosted-v2.2.1.md
-                - release-notes/self-hosted/self-hosted-v2.2.0.md
-                - release-notes/self-hosted/self-hosted-v2.1.1.md
-                - release-notes/self-hosted/self-hosted-v2.1.0.md
-                - release-notes/self-hosted/self-hosted-v2.0.0.md
-                - release-notes/self-hosted/self-hosted-v1.5.0.md
-                - release-notes/self-hosted/self-hosted-v1.4.0.md
-                - release-notes/self-hosted/self-hosted-v1.3.0.md
-                - release-notes/self-hosted/self-hosted-v1.2.0.md
-                - release-notes/self-hosted/self-hosted-v1.1.0.md
-                - release-notes/self-hosted/self-hosted-v1.0.1.md
-                - release-notes/self-hosted/self-hosted-v1.0.0.md
+    - ... | release-notes/**
     - special-thanks.md

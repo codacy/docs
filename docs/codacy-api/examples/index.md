@@ -6,8 +6,7 @@ description: Collection of examples of how to perform common use cases using the
 
 This section contains examples of how to perform common use cases using the Codacy API.
 
--   [Adding repositories to Codacy programmatically](adding-repositories-to-codacy-programmatically.md)
--   [Obtaining code quality metrics for files](obtaining-code-quality-metrics-for-files.md)
+{nav}
 
 ## See also
 
