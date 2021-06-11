@@ -6,9 +6,9 @@ description: List of tools that Codacy uses to analyze over 40 supported languag
 
 Codacy uses industry-leading tools to perform automatic static code analysis over 40 supported languages and frameworks:
 
--   **For programming languages** Codacy provides Static Analysis as well as Code Duplication, Code Complexity, and Test Coverage metrics for key languages.
+-   **For programming languages** Codacy provides static analysis as well as code duplication, code complexity, and test coverage metrics for key languages.
 
--   **For cloud infrastructure-as-code frameworks** Codacy provides Static Analysis to enforce security and compliance best practices.
+-   **For cloud infrastructure-as-code frameworks** Codacy provides static analysis to enforce security and compliance best practices.
 
 The table below lists all languages and frameworks that Codacy supports and the corresponding tools that Codacy uses to analyze your source code. Besides this, Codacy uses [cloc](https://github.com/kentcdodds/cloc) to calculate the source lines of code for all supported languages and supports multiple [test coverage report formats](../coverage-reporter/index.md#generating-coverage).
 
@@ -30,7 +30,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
   <thead>
     <tr>
       <th>Language or framework</th>
-      <th>Static Analysis</th>
+      <th>Static analysis</th>
       <th><a style="color: white;" href="#suggested-fixes">Suggested fixes</a></th>
       <th>Duplication</th>
       <th>Complexity</th>
@@ -192,8 +192,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Markdown</td>
-      <td><a href="https://github.com/remarkjs/remark-lint">RemarkLint</a></td>
-      <td></td>
+      <td><a href="https://github.com/remarkjs/remark-lint">RemarkLint</a>, <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
+      <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> <a href="#suggested-fixes">🔧</a></td>
       <td>-</td>
       <td>-</td>
     </tr>

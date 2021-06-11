@@ -18,14 +18,7 @@ To join or add an organization after having complete the signup process, click *
 ![Joining an organization](images/organization-join.png)
 
 !!! note
-    **On Codacy Cloud**, organization owners can control how team members join their organization by choosing one of the following options on their organization **Settings**, page **Plan and billing**:
-
-    -   **Allow new people to join immediately:** team members with access to the organization on the Git provider can join the organization on Codacy immediately.
-    -   **Review join requests from new people:** when team members with access to the organization on the Git provider join the organization on Codacy, an organization owner must manually approve their requests to join on the page **People**.
-
-        Team members that have already been invited to join the organization are automatically approved, and you can also skip the approval process for organization owners.
-
-    ![Accepting new people to the organization](images/organization-people-accept.png)
+    **On Codacy Cloud**, organization owners [control if team members need an approval](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization) before joining their organizations.
 
 ## Adding people to your organization {: id="adding-people"}
 

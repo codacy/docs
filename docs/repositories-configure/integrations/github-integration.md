@@ -69,7 +69,7 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
     This feature is in early access and has the following limitations for now:
 
     -   The only supported Git providers are GitHub Cloud and GitHub Enterprise.
-    -   The only tool that suggests fixes is [ESLint](https://eslint.org/docs/rules/). However, we're planning to support suggestions from more tools.
+    -   The only two tools that suggest fixes are [ESLint](https://eslint.org/docs/rules/) and [markdownlint](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md). However, we're planning to support suggestions from more tools.
     -   Because of a limitation from GitHub, the author of the comments is the user that enabled the GitHub integration and not Codacy.
 
     📢 [Activate suggested fixes now](#enabling) and [let us know](mailto:support@codacy.com?subject=Feedback on Suggest fixes) what you think!
