@@ -1087,6 +1087,13 @@
   
 </li>
       
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#see-also" class="md-nav__link">
+    See also
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1112,18 +1119,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../adding-repositories-to-codacy-programmatically/" title="Adding repositories to Codacy programmatically" class="md-nav__link">
-      Adding repositories to Codacy programmatically
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="https://api.codacy.com/api/api-docs" title="API v3 reference (recommended)" class="md-nav__link">
       API v3 reference (recommended)
     </a>
@@ -1139,6 +1134,72 @@
     <a href="https://api.codacy.com/swagger" title="API v2 reference" class="md-nav__link">
       API v2 reference
     </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5">
+    
+    <label class="md-nav__link" for="nav-8-5">
+      Examples
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Examples" data-md-level="2">
+      <label class="md-nav__title" for="nav-8-5">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        Examples
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../examples/" title="API usage examples" class="md-nav__link">
+      API usage examples
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../examples/adding-repositories-to-codacy-programmatically/" title="Adding repositories to Codacy programmatically" class="md-nav__link">
+      Adding repositories to Codacy programmatically
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../examples/obtaining-code-quality-metrics-for-files/" title="Obtaining code quality metrics for files" class="md-nav__link">
+      Obtaining code quality metrics for files
+    </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -2752,14 +2813,14 @@
 </code></pre></div>
 </div>
 <h2 id="authenticating-requests-to-the-codacy-api">Authenticating requests to the Codacy API<a class="headerlink" href="#authenticating-requests-to-the-codacy-api" title="Permanent link">#</a></h2>
-<p>Most API endpoints require that you provide either a <a href="../api-tokens/">project or account API token</a>. After obtaining the necessary tokens, include them in your request headers using the format <code>api-token: &lt;token key&gt;</code> or <code>project-token: &lt;token key&gt;</code>.</p>
+<p>Most API endpoints require that you provide either a <a href="../api-tokens/">project or account API token</a>. After obtaining the necessary tokens, include them in your request headers using the format <code>api-token: &lt;your account API token&gt;</code> or <code>project-token: &lt;your project API token&gt;</code>.</p>
 <p>For example, to make a request to an API v3 endpoint that requires an <strong>account API token</strong>:</p>
 <div class="highlight"><pre><span></span><code>curl -X GET <span class="s1">&#39;https://api.codacy.com/api/v3/user/organizations/gh&#39;</span> <span class="se">\</span>
-     -H <span class="s1">&#39;api-token: SjE9y7ekgKdpaCofsAhd&#39;</span>
+     -H <span class="s1">&#39;api-token: &lt;your account API token&gt;&#39;</span>
 </code></pre></div>
 <p>Or to make a request to an API v2 endpoint that requires a <strong>project API token</strong>:</p>
 <div class="highlight"><pre><span></span><code>curl -X GET <span class="s1">&#39;https://api.codacy.com/2.0/commit/da275c14ffab6e402dcc6009828067ffa44b7ee0&#39;</span> <span class="se">\</span>
-     -H <span class="s1">&#39;project-token: c9f2feb28e780acc8dc40754978b8bd9&#39;</span>
+     -H <span class="s1">&#39;project-token: &lt;your project API token&gt;&#39;</span>
 </code></pre></div>
 <h2 id="using-parameters-in-requests">Using parameters in requests<a class="headerlink" href="#using-parameters-in-requests" title="Permanent link">#</a></h2>
 <p>Most API endpoints require that you specify parameters.</p>
@@ -2772,12 +2833,12 @@
 <li>branch (query string): <code>api-overview</code></li>
 </ul>
 <div class="highlight"><pre><span></span><code>curl -X GET <span class="s1">&#39;https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs?branch=api-overview&#39;</span> <span class="se">\</span>
-     -H <span class="s1">&#39;api-token: SjE9y7ekgKdpaCofsAhd&#39;</span>
+     -H <span class="s1">&#39;api-token: &lt;your account API token&gt;&#39;</span>
 </code></pre></div>
 <p><strong>For <code>POST</code>, <code>PATCH</code>, and <code>DELETE</code> requests</strong>, besides the parameters included in the URL you may also need to include a JSON body.</p>
 <p>For example, to call the endpoint <a href="https://api.codacy.com/api/api-docs#searchrepositoryissues">searchRepositoryIssues</a> specifying the issue levels <code>Error</code> and <code>Warning</code> in the body:</p>
 <div class="highlight"><pre><span></span><code>curl -X POST <span class="s1">&#39;https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/docs/issues/search&#39;</span> <span class="se">\</span>
-     -H <span class="s1">&#39;api-token: SjE9y7ekgKdpaCofsAhd&#39;</span> <span class="se">\</span>
+     -H <span class="s1">&#39;api-token: &lt;your account API token&gt;&#39;</span> <span class="se">\</span>
      -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
      -d <span class="s1">&#39;{&quot;levels&quot;: [&quot;Error&quot;, &quot;Warning&quot;]}&#39;</span>
 </code></pre></div>
@@ -2795,7 +2856,7 @@
 </div>
 <p>For example, the following command requests the first 10 repositories in the Codacy GitHub organization:</p>
 <div class="highlight"><pre><span></span><code>curl -X GET <span class="s1">&#39;https://app.codacy.com/api/v3/organizations/gh/codacy/repositories?limit=10&#39;</span>
-     -H <span class="s1">&#39;api-token: SjE9y7ekgKdpaCofsAhd&#39;</span>
+     -H <span class="s1">&#39;api-token: &lt;your account API token&gt;&#39;</span>
 </code></pre></div>
 <p>The response includes the first 10 results, as well as the cursor to obtain the next page of results:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -2811,7 +2872,7 @@
 </code></pre></div>
 <p>To obtain the next page of results, it's necessary to include the <code>cursor</code> from the previous page as a parameter:</p>
 <div class="highlight"><pre><span></span><code>curl -X GET <span class="s1">&#39;https://app.codacy.com/api/v3/organizations/gh/codacy/repositories?limit=10&amp;cursor=codacy_2&#39;</span>
-     -H <span class="s1">&#39;api-token: SjE9y7ekgKdpaCofsAhd&#39;</span>
+     -H <span class="s1">&#39;api-token: &lt;your account API token&gt;&#39;</span>
 </code></pre></div>
 <p>If you continue requesting more pages the endpoint will eventually return a <code>pagination</code> object that doens't include a <code>cursor</code>. This means that you've reached the last page of results:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
@@ -2824,6 +2885,10 @@
   <span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="../examples/">API usage examples</a></li>
+</ul>
               
               
                 
@@ -2892,7 +2957,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 19, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 11, 2021</span>
     
   </small>
 </div>
