@@ -51,7 +51,7 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
     **If you're using Codacy Self-hosted** you must update the base URL of the APIs to include your Codacy instance domain name. For example:
 
     ```
-    https://codacy.example.com/api/v3	
+    https://codacy.example.com/api/v3
     ```
 
 ## Authenticating requests to the Codacy API
