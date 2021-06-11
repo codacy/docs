@@ -57,4 +57,3 @@ To revoke a project API token, click the trash can icon for the corresponding **
 -   [Adding coverage to your repository](../coverage-reporter/index.md)
 -   [Running local analysis](../related-tools/local-analysis/running-local-analysis.md)
 -   [Client-side tools](../related-tools/local-analysis/client-side-tools.md)
-
