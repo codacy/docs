@@ -20,15 +20,15 @@ The sections below provide detailed instructions on how to generate and revoke A
 
 {% include-markdown "../assets/includes/api-token-warning.md" %}
 
-## Generating and revoking account API tokens  {: id="account-api-tokens"}
+## Generating and revoking account API tokens {: id="account-api-tokens"}
 
 To generate an account API token:
 
 1.  Open your account, tab **Access management**.
 
-1.  Click the button **Create API token**:
+1.  Click the button **Create API token**.
 
-![Creating an API token](images/codacy-api-tokens-account.png)
+    ![Creating an API token](images/codacy-api-tokens-account.png)
 
 To revoke an account API token, click the cross next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
 
