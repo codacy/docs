@@ -76,26 +76,21 @@ You can configure all tools supported by Codacy using the configuration file.
 The following are the tool names that must be used in the Codacy configuration file:
 
 ```text
-aligncheck
 ameba
 bandit
 brakeman
 bundleraudit
 checkov
 checkstyle
-clang-tidy
 codacy-scalameta-pro
 codenarc
 coffeelint
 cppcheck
 credo
 csslint
-deadcode
 detekt
 eslint
-faux-pas
 flawfinder
-gosec
 hadolint
 jacksonlinter
 jshint
@@ -115,9 +110,7 @@ scalastyle
 shellcheck
 sonarscharp
 sonarvb
-spotbugs
 SQLint
-staticcheck
 stylelint
 swiftlint
 tailor
