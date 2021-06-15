@@ -108,7 +108,7 @@ Codacy supports configuration files for several tools. To use a configuration fi
 
     ![Using a configuration file](images/code-patterns-config-file.png)
 
-The table below lists the supported configuration file names for each tool.
+The table below lists the supported configuration files for each tool.
 
 !!! note
     The following tools don't support configuration files:
