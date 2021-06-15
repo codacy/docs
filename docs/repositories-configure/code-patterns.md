@@ -108,7 +108,13 @@ Codacy supports configuration files for several tools. To use a configuration fi
 
     ![Using a configuration file](images/code-patterns-config-file.png)
 
-The known file names for the tools that support configuration files are the following:
+The table below lists the supported configuration file names for each tool.
+
+!!! note
+    The following tools don't support configuration files:
+
+    -   Checkov
+    -   Codacy ScalaMeta Pro
 
 <table>
   <thead>
