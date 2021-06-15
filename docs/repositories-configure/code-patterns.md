@@ -194,6 +194,12 @@ The table below lists the supported configuration file names for each tool.
     <td></td>
   </tr>
   <tr>
+    <td>markdownlint</td>
+    <td>Markdown</td>
+    <td><code>.markdownlint.json</code></td>
+    <td></td>
+  </tr>
+  <tr>
     <td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP_CodeSniffer</a></td>
     <td>PHP</td>
     <td><code>phpcs.xml</code>, <code>phpcs.xml.dist</code></td>
