@@ -104,7 +104,7 @@ Codacy supports configuration files for several tools. To use a configuration fi
 
 1.  Push the configuration file to the root of your [main branch](managing-branches.md).
 
-1.  Open your repository **Code patterns** page and select **Configuration file** for the respective tool:
+1.  Open your repository **Code patterns** page, select the tool that will use a configuration file, and click **Configuration file**:
 
     ![Using a configuration file](images/code-patterns-config-file.png)
 
