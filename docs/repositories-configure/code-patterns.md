@@ -171,7 +171,7 @@ The known file names for the tools that support configuration files are the foll
   <tr>
     <td><a href="https://eslint.org/docs/user-guide/configuring">ESLint</a></td>
     <td>JavaScript, Typescript</td>
-    <td><code>.eslintrc.js</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code>, <code>.eslintrc</td>
+    <td><code>.eslintrc.js</code>, <code>.eslintrc.cjs</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code>, <code>.eslintrc</td>
     <td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintDefaultOptions.ts#L26">Plugins in the UI</a><br />
         <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L119">Other Plugins</a></td>
   </tr>
