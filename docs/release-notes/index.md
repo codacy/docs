@@ -17,7 +17,7 @@ For product updates that are in progress or planned, see Codacy's [public roadma
 
 🚧 Regular release notes for Codacy Cloud will be available soon.
 
--   [Performing scheduled database maintenance](cloud/cloud-2021-07-03.md) (July 3, 2021)
+-   [Performing scheduled database maintenance](cloud/scheduled-db-maintenance.md) (July 3, 2021)
 -   [Deprecating HTTP headers for API tokens](cloud/deprecating-http-headers-for-api-tokens.md) (April 2020)
 -   [Removal of NodeSecurity, GoLint, and SCSSLint](cloud/removal-of-nodesecurity-golint-and-scsslint.md) (March 2020)
 -   [Codacy now supports GitHub Apps](cloud/codacy-now-supports-github-apps.md) (February 2020)

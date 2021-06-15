@@ -655,7 +655,7 @@ nav:
     - Release notes:
           - release-notes/index.md
           - Codacy Cloud:
-                - release-notes/cloud/cloud-2021-07-03.md
+                - release-notes/cloud/scheduled-db-maintenance.md
                 - release-notes/cloud/deprecating-http-headers-for-api-tokens.md
                 - release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md
                 - release-notes/cloud/codacy-now-supports-github-apps.md
