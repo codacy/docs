@@ -102,7 +102,7 @@ Codacy will use the updated configurations on the next analysis.
 
 Codacy supports configuration files for several tools. To use a configuration file for your static analysis tool:
 
-1.  Add the configuration file to the root of your repository.
+1.  Push the configuration file to the root of your [main branch](managing-branches.md).
 
 1.  Open your repository **Code patterns** page and select **Configuration file** for the respective tool:
 
