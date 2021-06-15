@@ -23,16 +23,16 @@ export CODACY_API_TOKEN="<your account API token>"
 
 curl -X GET "https://app.codacy.com/api/v3/organizations/gh/codacy/repositories/website/files?search=src/router/" \
      -H "api-token: $CODACY_API_TOKEN" \
-| jq ".data[] | [.path, .gradeLetter, .totalIssues, .complexity, .coverage, .duplication] | @csv"
+| jq -r ".data[] | [.path, .gradeLetter, .totalIssues, .complexity, .coverage, .duplication] | @csv"
 ```
 
 Output:
 
 ```text
-"\"src/components/router/index.ts\",\"A\",0,8,70,0"
-"\"src/components/router/Link.tsx\",\"A\",0,5,100,0"
-"\"src/components/router/Redirect.tsx\",\"B\",0,2,14,0"
-"\"src/components/router/routes/account.ts\",\"A\",0,0,100,0"
+"src/components/router/index.ts","A",0,8,70,0"
+"src/components/router/Link.tsx","A",0,5,100,0"
+"src/components/router/Redirect.tsx","B",0,2,14,0"
+"src/components/router/routes/account.ts","A",0,0,100,0"
 [...]
 ```
 
