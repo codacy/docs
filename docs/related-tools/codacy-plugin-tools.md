@@ -9,6 +9,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 
     docs/getting-started/supported-languages-and-tools.md
     docs/related-tools/local-analysis/client-side-tools.md (if necessary)
+    docs/repositories-configure/code-patterns.md (supported configuration files table)
 -->
 
 <table>
