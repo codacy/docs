@@ -108,13 +108,7 @@ Codacy supports configuration files for several tools. To use a configuration fi
 
     ![Using a configuration file](images/code-patterns-config-file.png)
 
-The table below lists the supported configuration files for each tool.
-
-!!! note
-    The following tools don't support configuration files:
-
-    -   Checkov
-    -   Codacy ScalaMeta Pro
+The table below lists the configuration file names that Codacy detects and supports for each tool:
 
 <table>
   <thead>
@@ -305,4 +299,23 @@ The table below lists the supported configuration files for each tool.
 </table>
 
 !!! note
+    Codacy doesn't support configuration files for the following tools:
+
+    -   Cppcheck
+    -   Clang-Tidy
+    -   deadcode
+    -   Checkov
+    -   Staticcheck
+    -   ShellCheck
+    -   SQLint
+    -   BundlerAudit
+    -   JacksonLinter
+    -   Codacy ScalaMeta Pro
+    -   Coffeelint
+    -   aligncheck
+    -   Flawfinder
+    -   PSScriptAnalyzer
+    -   Faux Pas
+    -   Gosec
+
     For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
