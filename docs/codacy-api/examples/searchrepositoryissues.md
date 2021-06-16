@@ -2,7 +2,11 @@
 description: Example of how to obtain information about issues in a repository programmatically using the Codacy API endpoint searchRepositoryIssues.
 ---
 
-# searchRepositoryIssues
+# Obtaining current issues in repositories
+
+To obtain information about the current issues in your repositories in a flexible way, use the Codacy API endpoint [searchRepositoryIssues](https://app.codacy.com/api/api-docs#searchrepositoryissues){: target="_blank"}.
+
+For example, you may want to generate a report that includes only issues that belong to specific categories (such as security issues), or that have a minimum severity level.
 
 ## Example
 
