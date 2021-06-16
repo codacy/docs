@@ -37,5 +37,4 @@ Output:
 [...]
 ```
 
-!!! important
-    For the sake of simplicity, the example doesn't consider paginated results obtained from the Codacy API. [Learn how to use pagination](../using-the-codacy-api.md#using-pagination) to ensure that you obtain all the results returned by the API.
+{% include-markdown "../../assets/includes/api-example-pagination-important.md" %}
