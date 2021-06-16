@@ -10,7 +10,7 @@ For example, you may want to generate a report that includes only issues that be
 
 ## Example: Obtaining security issues with level Error and Warning
 
-This example exports the pattern ID, issue level, file path, and timestamp for all security issues that have the severity level Warning or Error in the GitHub repository `codacy/website`.
+This example exports the pattern ID, issue level, file path, and timestamp for all security issues that have the severity level `Warning` or `Error` in the GitHub repository `codacy/website`.
 
 The example script:
 
