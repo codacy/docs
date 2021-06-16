@@ -8,7 +8,15 @@ To obtain information about the current issues in your repositories in a flexibl
 
 For example, you may want to generate a report that includes only issues that belong to specific categories (such as security issues), or that have a minimum severity level.
 
-## Example
+## Example: Obtaining security issues with level Error and Warning
+
+This example exports the pattern ID, issue level, file path, and timestamp for all security issues that have the severity level Warning or Error in the GitHub repository `codacy/website`.
+
+The example script:
+
+1.  Defines an [account API token](../api-tokens.md#account-api-tokens).
+1.  Calls the Codacy API endpoint to retrieve information about the issues, filtering the results by security issues with the relevant severity levels.
+1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to select only the necessary data fields and convert the results to the CSV format.
 
 ```bash
 export CODACY_API_TOKEN="<your account API token>"
@@ -35,3 +43,6 @@ Output:
 "BundlerAudit_Insecure Dependency","Error","Gemfile.lock","2019-10-17T14:09:24Z"
 [...]
 ```
+
+!!! important
+    For the sake of simplicity, the example doesn't consider paginated results obtained from the Codacy API. [Learn how to use pagination](../using-the-codacy-api.md#using-pagination) to ensure that you obtain all the results returned by the API.
