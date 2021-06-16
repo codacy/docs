@@ -21,26 +21,19 @@ The example script:
 ```bash
 export CODACY_API_TOKEN="<your account API token>"
 
-curl -X POST "https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/codacy-metrics-rubocop/issues/search" \
+curl -X POST "https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/website/issues/search" \
      -H "api-token: $CODACY_API_TOKEN" \
      -H "Content-Type: application/json" \
-     -d '{
-            "levels": [
-                "Error",
-                "Warning",
-                "Info"
-            ],
-            "categories": [
-                "Security"
-            ]
-        }' \
+     -d '{ "levels": ["Error", "Warning"], "categories": ["Security"] }' \
 | jq -r ".data[] | [.patternInfo.id, .patternInfo.level, .filePath, .commitInfo.timestamp] | @csv"
 ```
 
 Output:
 
 ```text
-"BundlerAudit_Insecure Dependency","Error","Gemfile.lock","2019-10-17T14:09:24Z"
+"BundlerAudit_Insecure Dependency","Error","Gemfile.lock","2021-06-16T11:46:24Z"
+"Custom_Scala_PredictableRandom","Warning","src/test/database/SpecsHelper.scala","2021-05-21T16:20:15Z"
+"Custom_Scala_PlayUntrustedHttpRequestParameter","Warning","app/RedirectController.scala","2021-04-26T15:06:33Z"
 [...]
 ```
 
