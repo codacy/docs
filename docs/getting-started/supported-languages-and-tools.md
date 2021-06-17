@@ -17,6 +17,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
 
     docs/related-tools/local-analysis/client-side-tools.md (if necessary)
     docs/related-tools/codacy-plugin-tools.md
+    docs/repositories-configure/code-patterns.md (supported configuration files table)
 -->
 
 <table>

@@ -102,13 +102,13 @@ Codacy will use the updated configurations on the next analysis.
 
 Codacy supports configuration files for several tools. To use a configuration file for your static analysis tool:
 
-1.  Add the configuration file to the root of your repository.
+1.  Push the configuration file to the root of your [main branch](managing-branches.md).
 
-1.  Open your repository **Code patterns** page and select **Configuration file** for the respective tool:
+1.  Open your repository **Code patterns** page, select the tool that will use a configuration file, and click **Configuration file**:
 
     ![Using a configuration file](images/code-patterns-config-file.png)
 
-The known file names for the tools that support configuration files are the following:
+The table below lists the configuration file names that Codacy detects and supports for each tool:
 
 <table>
   <thead>
@@ -129,7 +129,7 @@ The known file names for the tools that support configuration files are the foll
   <tr>
     <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
     <td>Python</td>
-    <td><code>bandit.yml</code>, <code>.bandit<code></td>
+    <td><code>bandit.yml</code>, <code>.bandit</code></td>
     <td>To solve flagged valid Python "assert" statements, create a <code>bandit.yml</code> in the root of the repository containing: <code>skips: \['B101'\]</code></td>
   </tr>
   <tr>
@@ -153,7 +153,7 @@ The known file names for the tools that support configuration files are the foll
   <tr>
     <td>Credo</td>
     <td>Elixir</td>
-    <td><code>.credo.exs</code></td>
+    <td><code>.credo.exs</code>, <code>config/.credo.exs</code></td>
     <td></td>
   </tr>
   <tr>
@@ -171,13 +171,14 @@ The known file names for the tools that support configuration files are the foll
   <tr>
     <td><a href="https://eslint.org/docs/user-guide/configuring">ESLint</a></td>
     <td>JavaScript, Typescript</td>
-    <td><code>.eslintrc.js</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code>, <code>.eslintrc</td>
+    <td><code>.eslintrc.js</code>, <code>.eslintrc.cjs</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code>, <code>.eslintrc</code>,
+        <code>.prettierrc</code>, <code>.prettierrc.yaml</code>, <code>.prettierrc.yml</code>, <code>.prettierrc.json</code>, <code>prettier.config.js</code>, <code>.prettierrc.js</code></td>
     <td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintDefaultOptions.ts#L26">Plugins in the UI</a><br />
         <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L119">Other Plugins</a></td>
   </tr>
   <tr>
     <td>Hadolint</td>
-    <td>Docker</td>
+    <td>Dockerfile</td>
     <td><code>.hadolint.yaml</code></td>
     <td></td>
   </tr>
@@ -188,27 +189,33 @@ The known file names for the tools that support configuration files are the foll
     <td></td>
   </tr>
   <tr>
+    <td>markdownlint</td>
+    <td>Markdown</td>
+    <td><code>.markdownlint.yaml</code>, <code>.markdownlint.jsonc</code>, <code>.markdownlint.json</code></td>
+    <td></td>
+  </tr>
+  <tr>
     <td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP_CodeSniffer</a></td>
     <td>PHP</td>
     <td><code>phpcs.xml</code>, <code>phpcs.xml.dist</code></td>
     <td></td>
   </tr>
   <tr>
-    <td>PHPMD</td>
+    <td>PHP Mess Detector</td>
     <td>PHP</td>
-    <td><code>codesize.xml</code></td>
+    <td><code>codesize.xml</code>, <code>phpmd.xml</code>, <code>phpmd.xml.dist</code></td>
     <td></td>
   </tr>
   <tr>
     <td>PMD</td>
-    <td>Apex, Java, JavaScript, JSP, XML, Velocity and Visualforce</td>
+    <td>Apex, Java, JavaScript, JSP, PL/SQL, XML, Velocity and Visualforce</td>
     <td><code>ruleset.xml</code>, <code>apex-ruleset.xml</code></td>
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
   </tr>
   <tr>
     <td>Prospector</td>
     <td>Python</td>
-    <td><code>.landscape.yml</code>, <code>.landscape.yaml</code>, <code>landscape.yml</code>, <code>landscape.yaml</code>, <code>.prospector.yml</code>, <code>.prospector.yaml</code>, <code>prospector.yml</code>, <code>prospector.yaml</code></td>
+    <td><code>.prospector.yml</code>, <code>.prospector.yaml</code>, <code>prospector.yml</code>, <code>prospector.yaml</code>, <code>.landscape.yml</code>, <code>.landscape.yaml</code>, <code>landscape.yml</code>, <code>landscape.yaml</code></td>
     <td></td>
   </tr>
   <tr>
@@ -224,6 +231,12 @@ The known file names for the tools that support configuration files are the foll
     <td></td>
   </tr>
   <tr>
+    <td>Revive</td>
+    <td>Go</td>
+    <td><code>revive.toml</code></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>Rubocop</td>
     <td>Ruby</td>
     <td><code>.rubocop.yml</code></td>
@@ -232,13 +245,7 @@ The known file names for the tools that support configuration files are the foll
   <tr>
     <td>Scalastyle</td>
     <td>Scala</td>
-    <td><code>scalastyle_config.xml</code>, <code>scalastyle-config.xml</code></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>SCSSLint</td>
-    <td>SASS</td>
-    <td><code>.scss-lint.yml</code></td>
+    <td><code>scalastyle-config.xml</code>, <code>scalastyle_config.xml</code></td>
     <td></td>
   </tr>
   <tr>
@@ -248,15 +255,21 @@ The known file names for the tools that support configuration files are the foll
     <td></td>
   </tr>
   <tr>
+    <td>Sonar VB</td>
+    <td>Visual Basic</td>
+    <td><code>SonarLint.xml</code></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>SpotBugs</td>
     <td>Java, Scala</td>
-    <td><code>findbugs.xml</code>, <code>findbugs-includes.xml</code>, <code>findbugs-excludes.xml</code></td>
+    <td><code>findbugs.xml</code>, <code>findbugs-includes.xml</code>, <code>findbugs-excludes.xml</code>, <code>spotbugs.xml</code>, <code>spotbugs-includes.xml</code>, <code>spotbugs-excludes.xml</code></td>
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
   </tr>
   <tr>
     <td>Stylelint</td>
-    <td>LESS, SASS, CSS</td>
-    <td><code>.stylelintrc</code>, <code>stylelint.config.js</code>, <code>.stylelintrc.json</code>, <code>.stylelintrc.yaml</code>, <code>.stylelintrc.js</code>, <code>stylelintrc.yml</code></td>
+    <td>CSS, LESS, SASS</td>
+    <td><code>.stylelintrc</code>, <code>stylelint.config.js</code>, <code>.stylelintrc.json</code>, <code>.stylelintrc.yaml</code>, <code>.stylelintrc.yml</code>, <code>.stylelintrc.js</code></td>
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
   </tr>
   <tr>
@@ -279,18 +292,31 @@ The known file names for the tools that support configuration files are the foll
   </tr>
   <tr>
     <td>TSQLLint</td>
-    <td>SQL</td>
+    <td>Transact-SQL</td>
     <td><code>.tsqllintrc</code></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>Revive</td>
-    <td>Go</td>
-    <td><code>revive.toml</code></td>
     <td></td>
   </tr>
   </tbody>
 </table>
 
 !!! note
+    Codacy doesn't support configuration files for the following tools:
+
+    -   Cppcheck
+    -   Clang-Tidy
+    -   deadcode
+    -   Checkov
+    -   Staticcheck
+    -   ShellCheck
+    -   SQLint
+    -   BundlerAudit
+    -   JacksonLinter
+    -   Codacy ScalaMeta Pro
+    -   Coffeelint
+    -   aligncheck
+    -   Flawfinder
+    -   PSScriptAnalyzer
+    -   Faux Pas
+    -   Gosec
+
     For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
