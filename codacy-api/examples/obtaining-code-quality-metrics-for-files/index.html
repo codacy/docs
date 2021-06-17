@@ -1179,6 +1179,18 @@
   </li>
 
         
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../obtaining-current-issues-in-repositories/" title="Obtaining current issues in repositories" class="md-nav__link">
+      Obtaining current issues in repositories
+    </a>
+  </li>
+
+        
       </ul>
     </nav>
   </li>
@@ -2749,20 +2761,20 @@
 <p>The example script:</p>
 <ol>
 <li>Defines an <a href="../../api-tokens/#account-api-tokens">account API token</a>.</li>
-<li>Calls the Codacy API endpoint to retrieve the code quality metrics, filtering the results by retrieving only data for the files that include <code>src/router/</code> in the path.</li>
+<li>Calls the Codacy API endpoint to retrieve the code quality metrics, filtering the results by files that include <code>src/router/</code> in the path.</li>
 <li>Uses <a href="https://github.com/stedolan/jq" target="_blank">jq</a> to select only the necessary data fields and convert the results to the CSV format.</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
 
 curl -X GET <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/gh/codacy/repositories/website/files?search=src/router/&quot;</span> <span class="se">\</span>
      -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
-<span class="p">|</span> jq <span class="s2">&quot;.data[] | [.path, .gradeLetter, .totalIssues, .complexity, .coverage, .duplication] | @csv&quot;</span>
+<span class="p">|</span> jq -r <span class="s2">&quot;.data[] | [.path, .gradeLetter, .totalIssues, .complexity, .coverage, .duplication] | @csv&quot;</span>
 </code></pre></div>
 <p>Output:</p>
-<div class="highlight"><pre><span></span><code>&quot;\&quot;src/components/router/index.ts\&quot;,\&quot;A\&quot;,0,8,70,0&quot;
-&quot;\&quot;src/components/router/Link.tsx\&quot;,\&quot;A\&quot;,0,5,100,0&quot;
-&quot;\&quot;src/components/router/Redirect.tsx\&quot;,\&quot;B\&quot;,0,2,14,0&quot;
-&quot;\&quot;src/components/router/routes/account.ts\&quot;,\&quot;A\&quot;,0,0,100,0&quot;
+<div class="highlight"><pre><span></span><code>&quot;src/components/router/index.ts&quot;,&quot;A&quot;,0,8,70,0&quot;
+&quot;src/components/router/Link.tsx&quot;,&quot;A&quot;,0,5,100,0&quot;
+&quot;src/components/router/Redirect.tsx&quot;,&quot;B&quot;,0,2,14,0&quot;
+&quot;src/components/router/routes/account.ts&quot;,&quot;A&quot;,0,0,100,0&quot;
 [...]
 </code></pre></div>
 <div class="admonition important">
@@ -2837,7 +2849,7 @@ curl -X GET <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/g
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 11, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 17, 2021</span>
     
   </small>
 </div>

@@ -28,6 +28,7 @@ https://docs.codacy.com/codacy-api/using-the-codacy-api/,The Codacy API allows y
 https://docs.codacy.com/codacy-api/examples/,Collection of examples of how to perform common use cases using the Codacy API.
 https://docs.codacy.com/codacy-api/examples/adding-repositories-to-codacy-programmatically/,Example of how to add multiple repositories programmatically using Codacy's API v3 endpoint addRepository.
 https://docs.codacy.com/codacy-api/examples/obtaining-code-quality-metrics-for-files/,Example of how to obtain code quality metrics for files in a repository programmatically using the Codacy API endpoint listFiles.
+https://docs.codacy.com/codacy-api/examples/obtaining-current-issues-in-repositories/,Example of how to obtain information about issues in a repository programmatically using the Codacy API endpoint searchRepositoryIssues.
 https://docs.codacy.com/coverage-reporter/,Generate coverage reports in a supported format and upload them to Codacy to monitor the test coverage of your repositories on Codacy.
 https://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/,"There are alternative ways of running or installing Codacy Coverage Reporter, such as running a Docker image, downloading a binary for your operating system, or building the binary from source."
 https://docs.codacy.com/coverage-reporter/troubleshooting-common-issues/,Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter.
