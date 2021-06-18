@@ -104,6 +104,7 @@ https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-30-oct-2019/
 https://docs.codacy.com/release-notes/cloud/codacy-now-supports-github-apps/,"We're changing the way you authenticate to Codacy with GitHub: Starting February 2020, when you sign in, you'll be prompted to use GitHub Apps."
 https://docs.codacy.com/release-notes/cloud/deprecating-http-headers-for-api-tokens/,"On April 1st, 2020 we're deprecating the api_token and project_token HTTP headers used to authenticate to the Codacy API."
 https://docs.codacy.com/release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint/,"On the week of March 9th 2020, we'll be removing some tools from Codacy."
+https://docs.codacy.com/release-notes/cloud/scheduled-db-maintenance/,"On July 3, 2021, starting at 08:00 UTC we'll perform scheduled database maintenance to improve the performance and scalability of Codacy Cloud."
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.0/,Release notes for Codacy Self-hosted v1.0.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.1/,Release notes for Codacy Self-hosted v1.0.1.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.1.0/,Release notes for Codacy Self-hosted v1.1.0.
