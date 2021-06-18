@@ -20,3 +20,20 @@ optional arguments:
   -h, --help     show this help message and exit
   -v, --verbose  False
 ```
+
+## list-tool-short-names.sh
+
+Outputs the list of short names for all supported tools as returned by the Codacy API endpoint [tools](https://api.codacy.com/api/v3/tools). Useful to update and synchronize the list of tools in [Which tools can be configured and which name should I use?](https://docs.codacy.com/repositories-configure/codacy-configuration-file/#which-tools-can-be-configured-and-which-name-should-i-use).
+
+```bash
+$ ./list-tool-short-names.sh
+aligncheck
+ameba
+bandit
+brakeman
+bundleraudit
+checkov
+checkstyle
+clang-tidy
+...
+```

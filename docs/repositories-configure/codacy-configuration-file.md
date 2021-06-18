@@ -71,7 +71,7 @@ To ignore files, you must use the [Java glob syntax](https://docs.oracle.com/jav
 
 ## Which tools can be configured and which name should I use?
 
-You can configure all tools supported by Codacy using the configuration file.
+You can use the Codacy configuration file to configure all tools supported by Codacy except the [client-side tools](../related-tools/local-analysis/client-side-tools.md).
 
 The following are the tool names that must be used in the Codacy configuration file:
 
@@ -80,6 +80,7 @@ ameba
 bandit
 brakeman
 bundleraudit
+checkov
 checkstyle
 codacy-scalameta-pro
 codenarc
@@ -89,30 +90,26 @@ credo
 csslint
 detekt
 eslint
-findbugs
-findbugssec
 flawfinder
-golint
-govet
 hadolint
 jacksonlinter
 jshint
-nsp
+markdownlint
 phpcs
 phpmd
-pmd-legacy
 pmd
+pmd-legacy
 prospector
 psscriptanalyzer
 pylint
 pylintpython3
 remark-lint
+revive
 rubocop
 scalastyle
-scsslint
 shellcheck
 sonarscharp
-spotbugs
+sonarvb
 SQLint
 stylelint
 swiftlint
