@@ -26,7 +26,7 @@ The following is the expected impact during the maintenance operation:
 
 The following is the expected impact after the maintenance operation is complete:
 
--   Historical static code analysis information will be missing for all existing commits and pull requests, except for the ones that we re-analyze as part of the maintenance operation
+-   Historical static code analysis information will be missing for any commits and pull requests that we don't re-analyze as part of the maintenance operation
 -   The static code analysis information for re-analyzed commits and pull requests can be different from the original if you made changes to the tool and code pattern settings since the original commit date
 
 ## What to do if you're missing information on your repositories?
