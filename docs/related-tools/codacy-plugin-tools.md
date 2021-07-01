@@ -9,6 +9,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 
     docs/getting-started/supported-languages-and-tools.md
     docs/related-tools/local-analysis/client-side-tools.md (if necessary)
+    docs/repositories-configure/code-patterns.md (supported configuration files table)
 -->
 
 <table>
@@ -138,6 +139,10 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <tr>
 <td><a href="https://www.pylint.org/">Pylint</a></td>
 <td><a href="https://github.com/codacy/codacy-pylint" class="skip-vale">codacy/codacy-pylint</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
+<td><a href="https://github.com/codacy/codacy-markdownlint" class="skip-vale">codacy/codacy-markdownlint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/remarkjs/remark-lint">RemarkLint</a></td>

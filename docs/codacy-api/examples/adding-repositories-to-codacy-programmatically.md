@@ -20,12 +20,12 @@ curl -X POST https://app.codacy.com/api/v3/repositories \
 
 Substitute the placeholders with your own values:
 
--   **API_KEY:** [Account API token](api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
+-   **API_KEY:** [Account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
 -   **GIT_PROVIDER:** Git provider hosting the repository, using one of the values in the table below. For example, `gh` for GitHub Cloud.
 
     | Value | Git provider         |
     |-------|----------------------|
-    | `gh`  | GitHub Cloud         | 
+    | `gh`  | GitHub Cloud         |
     | `ghe` | GitHub Enterprise    |
     | `gl`  | GitLab Cloud         |
     | `gle` | GitLab Enterprise    |
@@ -37,7 +37,7 @@ Substitute the placeholders with your own values:
     !!! important
         **If you're using GitLab** you must specify the full group path and the repository using the format `<group>/<subgroup-1>/.../<subgroup-N>/<repository>`.
 
-Currently, Codacy doesn't provide API endpoints to automate other parts of setting up new repositories, such as configuring the repository settings or the enabled code patterns. However, Codacy automatically applies the [default patterns](../repositories-configure/code-patterns.md#set-default) defined on the Codacy API token account to the new repositories, and you can use this to ensure that all new repositories share the same pattern configuration.
+Currently, Codacy doesn't provide API endpoints to automate other parts of setting up new repositories, such as configuring the repository settings or the enabled code patterns. However, Codacy automatically applies the [default patterns](../../repositories-configure/code-patterns.md#set-default) defined on the Codacy API token account to the new repositories, and you can use this to ensure that all new repositories share the same pattern configuration.
 
 ## Example: Adding all repositories in a GitHub organization
 
@@ -56,7 +56,7 @@ We provide an example Bash script that adds all repositories in a GitHub Cloud o
 
 The example script:
 
-1.  Defines a GitHub [personal access token](https://github.com/settings/tokens){: target="_blank"}, the GitHub organization name, and an [account API token](api-tokens.md#account-api-tokens).
+1.  Defines a GitHub [personal access token](https://github.com/settings/tokens){: target="_blank"}, the GitHub organization name, and an [account API token](../api-tokens.md#account-api-tokens).
 1.  Calls the GitHub API to [obtain the list of all repositories](https://docs.github.com/en/rest/reference/repos#list-organization-repositories){: target="_blank"} in the defined organization.
 1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to return the value of `full_name` for each repository obtained in the JSON response. The `full_name` already includes the organization and repository names using the format `<organization>/<repository>`.
 1.  For each repository, calls the Codacy API endpoint to add a new repository specifying `gh` as the Git provider and the value of `full_name` as the full path of the repository.
@@ -94,8 +94,6 @@ for repo in $(curl -s https://api.github.com/orgs/$GITHUB_ORG_NAME/repos -H "Aut
 done
 ```
 
-!!! important
-    For the sake of simplicity:
+{% include "../../assets/includes/api-example-pagination-important.md" %}
 
-    -   The GitHub API endpoint used by the script obtains all repositories in a GitHub organization. However, you must have admin permissions over the repositories that you add to Codacy. If you're not the owner of all the repositories in your GitHub organization, consider using the GitHub API endpoint [/user/repos](https://docs.github.com/en/rest/reference/repos#list-repositories-for-the-authenticated-user){: target="_blank"} instead.
-    -   The script doesn't take into account paginated results obtained from the GitHub API. To ensure that you obtain all the repositories in your organization, [learn how to use pagination on the GitHub API](https://docs.github.com/en/rest/guides/traversing-with-pagination){: target="_blank"}.
+    Besides this, the script doesn't consider paginated results obtained from the GitHub API. [Learn how to use pagination on the GitHub API](https://docs.github.com/en/rest/guides/traversing-with-pagination){: target="_blank"} to ensure that you obtain all the repositories in your organization.

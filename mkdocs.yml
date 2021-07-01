@@ -538,7 +538,7 @@ plugins:
               "faq/code-analysis/error-line-endings.md": "faq/troubleshooting/error-line-endings.md"
               "repositories-configure/code-standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md"
               "repositories-configure/integrations/project-api.md": "codacy-api/api-tokens.md"
-              "faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md": "codacy-api/adding-repositories-to-codacy-programmatically.md"
+              "faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md": "codacy-api/examples/adding-repositories-to-codacy-programmatically.md"
               "repositories/badges.md": "getting-started/adding-a-codacy-badge.md"
               "related-tools/codacy-api-tokens.md": "codacy-api/api-tokens.md"
               "hc/en-us/articles/207280239-Bitbucket-Cloud-Integration.md": "repositories-configure/integrations/bitbucket-integration.md"
@@ -548,6 +548,7 @@ plugins:
               "related-tools/running-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"
               "account/notifications.md": "account/emails.md"
               "faq/general/how-do-i-change-my-email-address-in-codacy.md": "faq/general/how-do-i-change-my-email-address-on-codacy.md"
+              "codacy-api/adding-repositories-to-codacy-programmatically.md": "codacy-api/examples/adding-repositories-to-codacy-programmatically.md"
 
 nav:
     - Documentation home: "index.md"
@@ -585,6 +586,7 @@ nav:
           - organizations/managing-repositories.md
           - organizations/copying-code-patterns-between-repositories.md
           - organizations/managing-people.md
+          - organizations/changing-your-plan-and-billing.md
           - organizations/roles-and-permissions-for-synced-organizations.md
           - Manual organizations (legacy):
                 - organizations/manual-organizations/creating-and-renaming-an-organization.md
@@ -607,9 +609,13 @@ nav:
     - Codacy API:
           - codacy-api/using-the-codacy-api.md
           - codacy-api/api-tokens.md
-          - codacy-api/adding-repositories-to-codacy-programmatically.md
           - API v3 reference (recommended): https://api.codacy.com/api/api-docs
           - API v2 reference: https://api.codacy.com/swagger
+          - Examples:
+                - codacy-api/examples/index.md
+                - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
+                - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
+                - codacy-api/examples/obtaining-current-issues-in-repositories.md
     - Installing Codacy: "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
@@ -651,6 +657,7 @@ nav:
     - Release notes:
           - release-notes/index.md
           - Codacy Cloud:
+                - release-notes/cloud/scheduled-db-maintenance.md
                 - release-notes/cloud/deprecating-http-headers-for-api-tokens.md
                 - release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint.md
                 - release-notes/cloud/codacy-now-supports-github-apps.md
