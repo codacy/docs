@@ -584,6 +584,7 @@ nav:
           - organizations/what-are-synced-organizations.md
           - organizations/organization-overview.md
           - organizations/managing-repositories.md
+          - organizations/copying-code-patterns-between-repositories.md
           - organizations/managing-people.md
           - organizations/changing-your-plan-and-billing.md
           - organizations/roles-and-permissions-for-synced-organizations.md

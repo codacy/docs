@@ -71,8 +71,12 @@ Importing tool and pattern configurations from another repository can help you b
 
 For example, when adding a new repository on Codacy you can copy the tool and pattern configurations from an existing repository that's already configured, and then tweak and adapt the settings for your new repository.
 
+!!! tip
+    You can also copy the tool and pattern configurations [from one repository to multiple target repositories](../organizations/copying-code-patterns-between-repositories.md).
+
+<!--code-patterns-copy-start-->
 !!! important
-    Consider the following when importing tool and pattern configurations:
+    Consider the following when using this feature:
 
     -   **Tool matching:** Codacy only copies settings for tools that are available on both the source and target repositories, and overwrites the existing settings for these tools on the target repository.
     -   **Toggle status:** Codacy copies the enabled or disabled status of the matching tools from the source to the target repository.
@@ -83,6 +87,7 @@ For example, when adding a new repository on Codacy you can copy the tool and pa
     | Source repository | Target repository | Target repository after import |
     |-------------------|-------------------|--------------------------------|
     | ![Source repository](images/code-patterns-import-example-source.svg) | ![Target repository](images/code-patterns-import-example-target.svg) | ![Target repository after import](images/code-patterns-import-example-final.svg) |
+<!--code-patterns-copy-end-->
 
 To import the tool and pattern configurations from another repository:
 
@@ -320,3 +325,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     -   Gosec
 
     For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
+
+## See also
+
+-   [Copying code patterns between repositories](../organizations/copying-code-patterns-between-repositories.md)
