@@ -50,17 +50,22 @@ Bugs:
 -   https://codacy.atlassian.net/browse/CY-4149
 -   https://codacy.atlassian.net/browse/CY-4111
 
+
+Jira issues that have already been released:
+
+-   https://codacy.atlassian.net/browse/CY-4084
+-   https://codacy.atlassian.net/browse/CY-4416
+
 -->
 
 ## Product enhancements
 
--   Improved the loading time of the [repositories list](https://docs.codacy.com/v4.0/organizations/managing-repositories/) page when an organization has many repositories. (CY-4084)
+
 
 ## Bug fixes
 
 -   Fixed an issue that caused people suggestions to be generated for empty emails and for people with empty emails to be able to be added to an organization. (CY-4454)
 -   Fixed an issue that cause the public SSH key to not be displayed for public repositories in GitHub Enterprise with private mode enabled (CY-4442)
--   Fixed an issue that could allow reading information on Codacy related to unauthorized public repositories hosted on GitHub Enterprise Server. CVSS v3.1 score: 4.4 (Medium). (CY-4416)
 -   Fixed an issue where it would show "Enable All" for non configurable Client-side tools on the code patterns view (CY-4323)
 
 ## Tool versions
