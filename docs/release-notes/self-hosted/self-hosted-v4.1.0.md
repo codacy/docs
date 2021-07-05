@@ -10,36 +10,6 @@ These release notes are for [Codacy Self-hosted v4.1.0](https://github.com/codac
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
-<!--TODO Check these issues
-
-Jira issues with disabled release notes:
-
-Epics:
-
-Bugs:
--   https://codacy.atlassian.net/browse/CY-4556
--   https://codacy.atlassian.net/browse/CY-4452
--   https://codacy.atlassian.net/browse/CY-4441
--   https://codacy.atlassian.net/browse/CY-4407
--   https://codacy.atlassian.net/browse/CY-4364
--   https://codacy.atlassian.net/browse/CY-4361
--   https://codacy.atlassian.net/browse/CY-4332
--   https://codacy.atlassian.net/browse/CY-4324
--   https://codacy.atlassian.net/browse/CY-4286
--   https://codacy.atlassian.net/browse/CY-4282
--   https://codacy.atlassian.net/browse/CY-4206
--   https://codacy.atlassian.net/browse/CY-4170
--   https://codacy.atlassian.net/browse/CY-4149
--   https://codacy.atlassian.net/browse/CY-4111
-
-
-Jira issues that have already been released:
-
--   https://codacy.atlassian.net/browse/CY-4084
--   https://codacy.atlassian.net/browse/CY-4416
-
--->
-
 ## Product enhancements
 
 -   The GitLab integration now supports [merge request summaries](https://docs.codacy.com/v4.1/repositories-configure/integrations/gitlab-integration/#enabling) for both GitLab Cloud and GitLab Enterprise. (CY-4310)
