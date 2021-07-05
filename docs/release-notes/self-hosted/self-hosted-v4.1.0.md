@@ -25,7 +25,7 @@ Epics:
 Bugs:
 -   https://codacy.atlassian.net/browse/CY-4545
 -   https://codacy.atlassian.net/browse/CY-4494
--   https://codacy.atlassian.net/browse/CY-4396
+-   https://codacy.atlassian.net/browse/CY-4396 #
 -   https://codacy.atlassian.net/browse/CY-4142
 
 
@@ -35,7 +35,6 @@ Epics:
 
 Bugs:
 -   https://codacy.atlassian.net/browse/CY-4556
--   https://codacy.atlassian.net/browse/CY-4529
 -   https://codacy.atlassian.net/browse/CY-4452
 -   https://codacy.atlassian.net/browse/CY-4441
 -   https://codacy.atlassian.net/browse/CY-4407
@@ -64,6 +63,7 @@ Jira issues that have already been released:
 
 ## Bug fixes
 
+-   Fixed an issue that prevented Codacy from listing all available GitLab groups on the Organizations page. (CY-4529)
 -   Fixed an issue that caused people suggestions to be generated for empty emails and for people with empty emails to be able to be added to an organization. (CY-4454)
 -   Fixed an issue that cause the public SSH key to not be displayed for public repositories in GitHub Enterprise with private mode enabled (CY-4442)
 -   Fixed an issue where it would show "Enable All" for non configurable Client-side tools on the code patterns view (CY-4323)
