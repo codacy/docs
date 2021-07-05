@@ -122,25 +122,16 @@ First, update the Latest documentation version with the new chart documentation:
 
 1.  Create a new branch to update the Latest documentation version.
 
-1.  Edit the file [`.gitmodules`](.gitmodules) and update the branch of the chart submodule to the correct release branch. For example:
-
-    ```text
-    [submodule "submodules/chart"]
-        path = submodules/chart
-        url = https://github.com/codacy/chart
-        branch = release-2.0.0
-    ```
-
-1.  Make sure that you pull the latest changes from this branch of the chart submodule.
+1.  Pull the latest changes from the `master` branch of the chart submodule.
 
     ```bash
     cd submodules/chart
-    git checkout release-2.0.0
+    git checkout master
     git pull
     cd ../..
     ```
 
-1.  Edit the file [`mkdocs.yml`](mkdocs.yml) and update the value of the variable `extra.version` to the correct version of the chart.
+1.  Edit the file [`mkdocs.yml`](mkdocs.yml) and update the value of the variable `extra.version` to the new version of the chart.
 
 1.  Build the documentation and make sure that the changes for the new release of the chart are correct.
 
@@ -151,6 +142,26 @@ First, update the Latest documentation version with the new chart documentation:
 After updating the Latest documentation version, you're ready to create a new documentation version:
 
 1.  Create a new release branch with the name `release/v<MAJOR>.<MINOR>` from the now updated `master` branch.
+
+1.  Edit the file [`.gitmodules`](.gitmodules) and update the branch of the chart submodule to the correct release branch. For example:
+
+    ```text
+    [submodule "submodules/chart"]
+        path = submodules/chart
+        url = https://github.com/codacy/chart
+        branch = release-2.0.0
+    ```
+
+1.  Pull the latest changes from this branch of the chart submodule.
+
+    ```bash
+    cd submodules/chart
+    git checkout release-2.0.0
+    git pull
+    cd ../..
+    ```
+
+1.  Edit the file [`mkdocs.yml`](mkdocs.yml) and make sure that the value of the variable `extra.version` is set to the new version of the chart.
 
 1.  Delete the release notes from the release branch, since we only publish the release notes on the Latest or main version of the documentation:
 
