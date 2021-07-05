@@ -410,6 +410,13 @@
   
 </li>
       
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#see-also" class="md-nav__link">
+    See also
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -687,6 +694,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../organizations/copying-code-patterns-between-repositories/" title="Copying code patterns between repositories" class="md-nav__link">
+      Copying code patterns between repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../organizations/managing-people/" title="Managing people" class="md-nav__link">
       Managing people
     </a>
@@ -724,16 +743,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-7" type="checkbox" id="nav-5-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-8" type="checkbox" id="nav-5-8">
     
-    <label class="md-nav__link" for="nav-5-7">
+    <label class="md-nav__link" for="nav-5-8">
       Manual organizations (legacy)
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Manual organizations (legacy)" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-7">
+      <label class="md-nav__title" for="nav-5-8">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -2842,9 +2861,13 @@
 <h2 id="import-patterns">Importing pattern configurations from another repository<a class="headerlink" href="#import-patterns" title="Permanent link">#</a></h2>
 <p>Importing tool and pattern configurations from another repository can help you bootstrap and standardize the coding standard across your repositories.</p>
 <p>For example, when adding a new repository on Codacy you can copy the tool and pattern configurations from an existing repository that's already configured, and then tweak and adapt the settings for your new repository.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can also copy the tool and pattern configurations <a href="../../organizations/copying-code-patterns-between-repositories/">from one repository to multiple target repositories</a>.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Consider the following when importing tool and pattern configurations:</p>
+<p>Consider the following when using this feature:</p>
 <ul>
 <li><strong>Tool matching:</strong> Codacy only copies settings for tools that are available on both the source and target repositories, and overwrites the existing settings for these tools on the target repository.</li>
 <li><strong>Toggle status:</strong> Codacy copies the enabled or disabled status of the matching tools from the source to the target repository.</li>
@@ -3106,6 +3129,10 @@
 </ul>
 <p>For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.</p>
 </div>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="../../organizations/copying-code-patterns-between-repositories/">Copying code patterns between repositories</a></li>
+</ul>
               
               
                 
@@ -3174,7 +3201,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 17, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 5, 2021</span>
     
   </small>
 </div>
