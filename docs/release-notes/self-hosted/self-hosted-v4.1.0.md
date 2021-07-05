@@ -20,8 +20,8 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 -   Fixed an issue that prevented Codacy from listing all available GitLab groups on the **Organizations** page. (CY-4529)
 -   Fixed an issue that caused Codacy to suggest and allow people with an empty email address to join organizations. (CY-4454)
 -   Fixed an issue that could allow malicious websites to read sensitive information or perform privileged actions on Codacy. CVSS v3.1 score: 3.3 (Low). (CY-4396)
--   Fixed an issue where Codacy would show "Enable all" for non-configurable client-side tools on the **Code patterns** page. (CY-4323)
--   Now, the link "View more details on Codacy Production" at the bottom of GitHub checks opens the **New Issues** tab instead of the **Fixed Issues** tab of the corresponding pull request on Codacy. (CY-4170)
+-   Fixed an issue where Codacy would show "Enable/Disable all" for non-configurable client-side tools on the **Code patterns** page. (CY-4323)
+-   Now, Codacy shows the **New Issues** tab by default when opening a commit or pull request page. (CY-4170)
 -   The total time to fix all issues in a file is now correctly calculated as the sum of the time to fix all individual issues in that file. (CY-4142)
 
 ## Tool versions
