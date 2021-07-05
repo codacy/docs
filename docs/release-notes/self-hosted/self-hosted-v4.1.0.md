@@ -14,14 +14,6 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 Jira issues without release notes:
 
-Epics:
--   https://codacy.atlassian.net/browse/CY-4310
--   https://codacy.atlassian.net/browse/CY-4216
--   https://codacy.atlassian.net/browse/CY-4196
--   https://codacy.atlassian.net/browse/CY-4082
--   https://codacy.atlassian.net/browse/CY-4077
--   https://codacy.atlassian.net/browse/CY-3717
-
 Bugs:
 -   https://codacy.atlassian.net/browse/CY-4545
 -   https://codacy.atlassian.net/browse/CY-4494
@@ -59,7 +51,8 @@ Jira issues that have already been released:
 
 ## Product enhancements
 
-
+-   The GitLab integration now supports [merge request summaries](https://docs.codacy.com/v4.1/repositories-configure/integrations/gitlab-integration/#enabling) for both GitLab Cloud and GitLab Enterprise. (CY-4310)
+-   You can now use markdownlint to provide [suggested fixes](https://docs.codacy.com/v4.1/repositories-configure/integrations/github-integration/#suggest-fixes) for Markdown issues. (CY-3717)
 
 ## Bug fixes
 
