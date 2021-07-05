@@ -56,10 +56,9 @@ Jira issues that have already been released:
 
 ## Bug fixes
 
--   Fixed an issue that prevented Codacy from listing all available GitLab groups on the Organizations page. (CY-4529)
--   Fixed an issue that caused people suggestions to be generated for empty emails and for people with empty emails to be able to be added to an organization. (CY-4454)
--   Fixed an issue that cause the public SSH key to not be displayed for public repositories in GitHub Enterprise with private mode enabled (CY-4442)
--   Fixed an issue where it would show "Enable All" for non configurable Client-side tools on the code patterns view (CY-4323)
+-   Fixed an issue that prevented Codacy from listing all available GitLab groups on the **Organizations** page. (CY-4529)
+-   Fixed an issue that caused Codacy to suggest and allow people with an empty email address to join organizations. (CY-4454)
+-   Fixed an issue where Codacy would show "Enable all" for non-configurable client-side tools on the **Code patterns** page. (CY-4323)
 
 ## Tool versions
 
