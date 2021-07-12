@@ -23,6 +23,9 @@ These settings configure quality thresholds for commits, as displayed on the [Co
 
 These settings configure quality thresholds for pull requests, as displayed on the Pull Requests page.
 
+!!! tip
+    After enabling these settings you can [set Codacy as a required check](../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md) before merging your pull requests.
+
 ![Quality settings for pull requests](images/quality-settings-pull-requests.png)
 
 -   **New issues are over:** Pull requests are marked not up to standards if the number of issues introduced is bigger than the set value. The default value is 0.
