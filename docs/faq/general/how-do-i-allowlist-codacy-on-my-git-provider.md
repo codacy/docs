@@ -14,7 +14,7 @@ If you require an additional layer of security and control on your Git provider,
 
 To allowlist Codacy Cloud on your Git provider:
 
-1.  Send an email to <span class="skip-vale">[support@codacy.com](mailto:support@codacy.com?subject=Enabling static IP addresses)</span> asking us to enable static IP addresses for your organization.
+1.  Send an email to <span class="skip-vale">[success@codacy.com](mailto:support@codacy.com?subject=Enabling static IP addresses)</span> or directly to your CSM asking us to enable static IP addresses for your organization.
 
 1.  After receiving a confirmation that static IP addresses are active for your Codacy Cloud organization, add the following IP addresses to the allowlist on your Git provider:
 
