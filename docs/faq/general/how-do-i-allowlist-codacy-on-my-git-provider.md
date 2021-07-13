@@ -1,5 +1,5 @@
 ---
-description: Enable static IP addresses for your Codacy Cloud organization so that you can allowlist Codacy on your Git provider.
+description: Enable static IP addresses for your Codacy organization so that you can allowlist Codacy Cloud on your Git provider.
 ---
 
 # How do I allowlist Codacy on my Git provider?
