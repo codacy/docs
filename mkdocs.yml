@@ -629,6 +629,7 @@ nav:
                 - faq/general/how-does-codacy-protect-my-privacy.md
                 - faq/general/why-cant-i-see-my-organization.md
                 - faq/general/how-do-i-change-my-email-address-on-codacy.md
+                - faq/general/how-do-i-allowlist-codacy-on-my-git-provider.md
                 - faq/general/how-can-i-change-or-cancel-my-plan.md
           - Repositories:
                 - faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md

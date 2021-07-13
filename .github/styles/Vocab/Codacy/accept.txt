@@ -1,4 +1,5 @@
 aligncheck
+allowlist
 Ameba
 Bandit
 Bitbucket
