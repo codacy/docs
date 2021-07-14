@@ -6,19 +6,59 @@ description: Release notes for Codacy Self-hosted v4.1.0.
 
 # Self-hosted v4.1.0
 
-These release notes are for [Codacy Self-hosted v4.1.0](https://github.com/codacy/chart/releases/tag/4.1.0){: target="_blank"}, released on July 6, 2021.
+These release notes are for [Codacy Self-hosted v4.1.0](https://github.com/codacy/chart/releases/tag/4.1.0){: target="_blank"}, released on July 14, 2021. <!-- TODO Update release date -->
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
+
+<!--TODO Check these issues
+
+Jira issues without release notes:
+
+Epics:
+-   https://codacy.atlassian.net/browse/CY-4216
+-   https://codacy.atlassian.net/browse/CY-4196
+-   https://codacy.atlassian.net/browse/CY-4082
+
+Bugs:
+
+
+Jira issues with disabled release notes:
+
+Epics:
+
+Bugs:
+-   https://codacy.atlassian.net/browse/CY-4631
+-   https://codacy.atlassian.net/browse/CY-4556
+-   https://codacy.atlassian.net/browse/CY-4545
+-   https://codacy.atlassian.net/browse/CY-4494
+-   https://codacy.atlassian.net/browse/CY-4452
+-   https://codacy.atlassian.net/browse/CY-4442
+-   https://codacy.atlassian.net/browse/CY-4441
+-   https://codacy.atlassian.net/browse/CY-4407
+-   https://codacy.atlassian.net/browse/CY-4364
+-   https://codacy.atlassian.net/browse/CY-4361
+-   https://codacy.atlassian.net/browse/CY-4332
+-   https://codacy.atlassian.net/browse/CY-4324
+-   https://codacy.atlassian.net/browse/CY-4286
+-   https://codacy.atlassian.net/browse/CY-4282
+-   https://codacy.atlassian.net/browse/CY-4206
+-   https://codacy.atlassian.net/browse/CY-4149
+-   https://codacy.atlassian.net/browse/CY-4111
+
+-->
 
 ## Product enhancements
 
 -   The GitLab integration now supports [merge request summaries](https://docs.codacy.com/v4.1/repositories-configure/integrations/gitlab-integration/#enabling) for both GitLab Cloud and GitLab Enterprise. (CY-4310)
+-   Improved the loading time of the [repositories list](https://docs.codacy.com/v4.0/organizations/managing-repositories/) page when an organization has many repositories. (CY-4084)
+-   Added support for [copying code pattern configurations across repositories](https://docs.codacy.com/organizations/copying-code-patterns-between-repositories/). (CY-4077)
 -   You can now use markdownlint to provide [suggested fixes](https://docs.codacy.com/v4.1/repositories-configure/integrations/github-integration/#suggest-fixes) for Markdown issues. (CY-3717)
 
 ## Bug fixes
 
 -   Fixed an issue that prevented Codacy from listing all available GitLab groups on the **Organizations** page. (CY-4529)
 -   Fixed an issue that caused Codacy to suggest and allow people with an empty email address to join organizations. (CY-4454)
+-   Fixed an issue that could allow reading information on Codacy related to unauthorized public repositories hosted on GitHub Enterprise Server. CVSS v3.1 score: 4.4 (Medium). (CY-4416)
 -   Fixed an issue that could allow malicious websites to read sensitive information or perform privileged actions on Codacy. CVSS v3.1 score: 3.3 (Low). (CY-4396)
 -   Fixed an issue where Codacy would show "Enable/Disable all" for non-configurable client-side tools on the **Code patterns** page. (CY-4323)
 -   Now, Codacy shows the **New Issues** tab by default when opening a commit or pull request page. (CY-4170)
@@ -37,7 +77,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Clang-tidy 10.0.1
 -   CodeNarc 1.6
 -   Coffeelint 2.1.0
--   Cppcheck 2.2
+-   cppcheck 2.2
 -   Credo 1.4.0
 -   CSSLint 1.0.5
 -   **Detekt 1.17.1 (updated from 1.14.2)**
@@ -55,13 +95,13 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   PMD (Legacy) 5.8.1
 -   Prospector 1.3.1
 -   PSScriptAnalyzer 1.18.3
--   Pylint 1.9.5
--   Pylint (Python 3) 2.7.4
+-   PyLint 1.9.5
+-   PyLint (Python 3) 2.7.4
 -   RemarkLint 7.0.1
 -   Revive 1.0.2
 -   **Rubocop 1.16.0 (updated from 1.14.0)**
--   Scalastyle 1.5.0
--   ShellCheck v0.7.1
+-   ScalaStyle 1.5.0
+-   shellcheck v0.7.1
 -   **Sonar C# 8.24 (updated from 8.22)**
 -   Sonar Visual Basic 8.15
 -   SpotBugs 4.1.2
