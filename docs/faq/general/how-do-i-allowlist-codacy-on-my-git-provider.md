@@ -21,8 +21,8 @@ To allowlist Codacy Cloud on your Git provider:
 
 1.  After receiving a confirmation that static IP addresses are active for your Codacy Cloud organization, add the following IP addresses to the allowlist on your Git provider:
 
-    -   0.0.0.0
-    -   0.0.0.0
+    -   34.254.123.99
+    -   18.203.76.9
 
     The following are the instructions on how to allow IP addresses to access resources on each Git provider:
 
