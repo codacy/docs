@@ -72,7 +72,7 @@ https://docs.codacy.com/organizations/changing-your-plan-and-billing/,"Each orga
 https://docs.codacy.com/organizations/copying-code-patterns-between-repositories/,Copy tool and pattern configurations in bulk between your repositories to help you bootstrap and standardize the coding standards in your organization.
 https://docs.codacy.com/organizations/managing-people/,"Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, Codacy only analyzes commits to private repositories from contributors who are members of the corresponding organization on Codacy."
 https://docs.codacy.com/organizations/managing-repositories/,"To see a list of the repositories that Codacy is monitoring, open the page Repositories under your organization."
-https://docs.codacy.com/organizations/organization-overview/,This feature is only available on paid plans
+https://docs.codacy.com/organizations/organization-overview/,The Organization Overview provides an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
 https://docs.codacy.com/organizations/roles-and-permissions-for-synced-organizations/,"List of operations that users can perform on Codacy depending on their permissions on the Git provider, and how to configure who can change analysis configurations."
 https://docs.codacy.com/organizations/what-are-synced-organizations/,"Synced organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that don't belong to a Git provider organization), and team members into Codacy with a few clicks."
 https://docs.codacy.com/organizations/manual-organizations/administrative-permissions/,Organization permissions allow fine-grained control over your organization's members and repositories.
@@ -132,7 +132,7 @@ https://docs.codacy.com/repositories/commits/,Documentation for the Codacy autom
 https://docs.codacy.com/repositories/files/,"The Files page lists all the files in your repository and allows you to keep track of files with low coverage, high complexity, too many issues, or a lot of duplication that could be refactored."
 https://docs.codacy.com/repositories/issues/,The Issues page lists all the issues that Codacy detected in your repository.
 https://docs.codacy.com/repositories/repository-dashboard/,The Repository Dashboard provides an overview of the repository code quality and items that require your attention.
-https://docs.codacy.com/repositories/security-monitor/,This feature is only available on paid plans
+https://docs.codacy.com/repositories/security-monitor/,The Security Monitor provides an overview of all current security issues.
 https://docs.codacy.com/repositories-configure/codacy-configuration-file/,"Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages."
 https://docs.codacy.com/repositories-configure/code-patterns/,Configure the tool patterns that Codacy uses to analyze your repositories to create a coding standard adapted to your scenario.
 https://docs.codacy.com/repositories-configure/file-extensions/,"If your repository has source files with unrecognized extensions, you can configure Codacy to include them in the next analysis."
