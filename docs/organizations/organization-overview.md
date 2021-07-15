@@ -1,3 +1,7 @@
+---
+description: The Organization Overview provides an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
+---
+
 # Organization Overview
 
 {%
