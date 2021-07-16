@@ -1,3 +1,7 @@
+---
+description: The Security Monitor provides an overview of all current security issues.
+---
+
 # Security Monitor
 
 {%
@@ -6,7 +10,7 @@
     end="<!--end-paid-->"
 %}
 
-The **Security Monitor** provides an overview of all current security alerts.
+The **Security Monitor** provides an overview of all current security issues.
 
 ![Security Monitor](images/security-monitor.png)
 
