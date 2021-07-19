@@ -155,7 +155,3 @@ If you continue requesting more pages the endpoint will eventually return a `pag
   }
 }
 ```
-
-## See also
-
--   [API usage examples](examples/index.md)
