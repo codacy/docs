@@ -25,7 +25,6 @@ https://docs.codacy.com/chart/troubleshoot/logs-collect/,"To help troubleshoot i
 https://docs.codacy.com/chart/troubleshoot/troubleshoot/,"This page includes information to help you troubleshoot issues that you may come across while installing, configuring, and operating Codacy Self-hosted."
 https://docs.codacy.com/codacy-api/api-tokens/,"Create an account API token to authorize access to all the repositories that you have access to, or a project API token to authorize access only to a specific repository."
 https://docs.codacy.com/codacy-api/using-the-codacy-api/,The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.
-https://docs.codacy.com/codacy-api/examples/,Collection of examples of how to perform common use cases using the Codacy API.
 https://docs.codacy.com/codacy-api/examples/adding-repositories-to-codacy-programmatically/,Example of how to add multiple repositories programmatically using Codacy's API v3 endpoint addRepository.
 https://docs.codacy.com/codacy-api/examples/obtaining-code-quality-metrics-for-files/,Example of how to obtain code quality metrics for files in a repository programmatically using the Codacy API endpoint listFiles.
 https://docs.codacy.com/codacy-api/examples/obtaining-current-issues-in-repositories/,Example of how to obtain information about issues in a repository programmatically using the Codacy API endpoint searchRepositoryIssues.
