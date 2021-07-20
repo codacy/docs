@@ -549,6 +549,7 @@ plugins:
               "account/notifications.md": "account/emails.md"
               "faq/general/how-do-i-change-my-email-address-in-codacy.md": "faq/general/how-do-i-change-my-email-address-on-codacy.md"
               "codacy-api/adding-repositories-to-codacy-programmatically.md": "codacy-api/examples/adding-repositories-to-codacy-programmatically.md"
+              "codacy-api/examples/index.md": "codacy-api/examples/adding-repositories-to-codacy-programmatically.md"
 
 nav:
     - Documentation home: "index.md"
@@ -612,7 +613,6 @@ nav:
           - API v3 reference (recommended): https://api.codacy.com/api/api-docs
           - API v2 reference: https://api.codacy.com/swagger
           - Examples:
-                - codacy-api/examples/index.md
                 - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
                 - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
                 - codacy-api/examples/obtaining-current-issues-in-repositories.md
