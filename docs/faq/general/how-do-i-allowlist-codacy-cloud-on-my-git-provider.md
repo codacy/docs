@@ -2,7 +2,7 @@
 description: Enable static IP addresses for your Codacy organization so that you can allowlist Codacy Cloud on your Git provider.
 ---
 
-# How do I allowlist Codacy on my Git provider?
+# How do I allowlist Codacy Cloud on my Git provider?
 
 {%
     include-markdown "../../assets/includes/paid.md"
