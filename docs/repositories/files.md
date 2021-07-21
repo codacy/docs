@@ -38,7 +38,6 @@ If you have more than one branch enabled on Codacy, use the drop-down list next 
 
         Codacy doesn't analyze or display files that are over a certain size. [Read more details](../faq/troubleshooting/why-is-my-file-over-150-kb-missing.md) for informatio on how to overcome this limit.
 
-
 ## File details
 
 Select a file to see more detailed analysis information for that file, including statistics on:
@@ -64,7 +63,7 @@ Depending on the available analysis information for the file, Codacy displays on
 
 -   **Duplication:** Shows all duplicated blocks in the file with links to the clones of each block.
 
-    Toggle between the list and annotated source code views using the icon on the right-hand side. 
+    Toggle between the list and annotated source code views using the icon on the right-hand side.
 
     ![Duplicated blocks for a file](images/files-duplication.png)
 
