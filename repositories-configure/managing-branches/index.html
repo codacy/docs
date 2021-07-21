@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Codacy supports analysis on multiple branches on your Git repositories.">
+        <meta name="description" content="Codacy automatically triggers analysis on the main branch of your repository (typically master or main), and also supports analyzing multiple branches.">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/managing-branches/">
@@ -395,15 +395,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#pull-requests" class="md-nav__link">
-    Pull requests
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#analyzing-other-branches" class="md-nav__link">
-    Analyzing other branches
+  <a href="#analyzing-pull-request-branches" class="md-nav__link">
+    Analyzing pull request branches
   </a>
   
 </li>
@@ -2795,15 +2788,11 @@
                 
                 
                 <h1 id="managing-branches">Managing branches<a class="headerlink" href="#managing-branches" title="Permanent link">#</a></h1>
-<p>Codacy supports analysis on multiple branches on your Git repositories.</p>
-<p>By default, Codacy automatically triggers analysis on the <code>master</code> branch only.</p>
-<p>You can define the main branch of your repository on the repository <strong>Settings</strong>, tab <strong>Branches</strong>.</p>
-<h2 id="pull-requests">Pull requests<a class="headerlink" href="#pull-requests" title="Permanent link">#</a></h2>
-<p>Upon <strong>pull requests</strong>, Codacy automatically triggers analysis on the corresponding branch to analyze the pull request, <strong>as long as the target branch of the pull request is enabled</strong>.</p>
-<h2 id="analyzing-other-branches">Analyzing other branches<a class="headerlink" href="#analyzing-other-branches" title="Permanent link">#</a></h2>
-<p>It's also possible to enable analysis on other branches.</p>
-<p>To do this, open the repository <strong>Settings</strong>, tab <strong>Branches</strong> , and enable the branches that Codacy should analyze.</p>
+<p>Codacy automatically triggers analysis on the main branch of your repository (typically <code>master</code> or <code>main</code>), and also supports analyzing multiple branches.</p>
+<p>To change the main branch of your repository or enable analysis on other branches, open your repository <strong>Settings</strong>, tab <strong>Branches</strong>:</p>
 <p><img alt="Managing branches" src="../images/managing-branches.png" /></p>
+<h2 id="analyzing-pull-request-branches">Analyzing pull request branches<a class="headerlink" href="#analyzing-pull-request-branches" title="Permanent link">#</a></h2>
+<p>When you create new pull requests Codacy automatically triggers analysis on the corresponding branches to analyze the pull requests <strong>as long as the target branch of the pull request is enabled</strong>.</p>
               
               
                 
@@ -2872,7 +2861,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 11, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 21, 2021</span>
     
   </small>
 </div>
