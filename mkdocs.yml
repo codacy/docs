@@ -346,10 +346,10 @@ plugins:
               "hc/en-us/articles/360025014373-Cloud-Release-Notes-18-Jun-2019.md": "release-notes/cloud/cloud-release-notes-|-18-jun-2019.md"
               "hc/en-us/articles/360025654573.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
               "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
-              "hc/en-us/articles/360025964333.md": "faq/troubleshooting/why-is-my-file-missing.md"
-              "hc/en-us/articles/360025964333-File-size-limitation.md": "faq/troubleshooting/why-is-my-file-missing.md"
-              "hc/en-us/articles/360025964853.md": "faq/troubleshooting/why-is-my-file-missing.md"
-              "hc/en-us/articles/360025964853-Why-is-my-file-missing-.md": "faq/troubleshooting/why-is-my-file-missing.md"
+              "hc/en-us/articles/360025964333.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
+              "hc/en-us/articles/360025964333-File-size-limitation.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
+              "hc/en-us/articles/360025964853.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
+              "hc/en-us/articles/360025964853-Why-is-my-file-missing-.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
               "hc/en-us/articles/360034116533.md": "release-notes/cloud/cloud-release-notes-|-07-aug-2019.md"
               "hc/en-us/articles/360034116533-Cloud-Release-Notes-07-Aug-2019.md": "release-notes/cloud/cloud-release-notes-|-07-aug-2019.md"
               "hc/en-us/articles/360035276553.md": "release-notes/cloud/cloud-release-notes-|-05-set-2019.md"
@@ -550,6 +550,7 @@ plugins:
               "faq/general/how-do-i-change-my-email-address-in-codacy.md": "faq/general/how-do-i-change-my-email-address-on-codacy.md"
               "codacy-api/adding-repositories-to-codacy-programmatically.md": "codacy-api/examples/adding-repositories-to-codacy-programmatically.md"
               "codacy-api/examples/index.md": "codacy-api/examples/adding-repositories-to-codacy-programmatically.md"
+              "faq/troubleshooting/why-is-my-file-missing.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
 
 nav:
     - Documentation home: "index.md"
@@ -647,13 +648,13 @@ nav:
                 - faq/code-analysis/skipping-an-analysis.md
                 - faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md
           - Troubleshooting:
-                - faq/troubleshooting/why-is-my-file-missing.md
                 - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
                 - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
                 - faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md
                 - faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md
                 - faq/troubleshooting/not-a-member-of-the-organization.md
                 - faq/troubleshooting/we-no-longer-have-access-to-this-repository.md
+                - faq/troubleshooting/why-is-my-file-over-150-kb-missing.md
                 - faq/troubleshooting/error-line-endings.md
     - Release notes:
           - release-notes/index.md

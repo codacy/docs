@@ -32,11 +32,11 @@ If you have more than one branch enabled on Codacy, use the drop-down list next 
 
     -   **The file has an extension that is not on the list of supported extensions**
 
-        Codacy has a [list of file extensions](../repositories-configure/file-extensions.md) associated with each language. Codacy doesn't display files with extensions that aren't associated with a language.
+        Codacy has a [list of file extensions](../repositories-configure/file-extensions.md) associated with each language. Codacy doesn't analyze or display files with extensions that aren't associated with a language.
 
     -   **The file might be too big**
 
-        Codacy only displays files up to 150 KB. See <!--TODO Add link--> for more information.
+        Codacy doesn't analyze or display files that are over a certain size. [Read more details](../faq/troubleshooting/why-is-my-file-over-150-kb-missing.md) for informatio on how to overcome this limit.
 
 
 ## File details
