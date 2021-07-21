@@ -23,20 +23,33 @@ If you have more than one branch enabled on Codacy, use the drop-down list next 
 
 ## File details
 
-Select a file to open the details for that file.
+Select a file to see more detailed analysis information for that file, including statistics on:
 
-The file detail starts with a header where you can see a lot of statistical information on the file.
+-   **File size:** Lines of code, source lines of code, commented lines of code
+-   **Structure:** Number of methods, ratio between source lines of code and number of methods
+-   **Complexity:** Complexity, complexity per method
+-   **Duplication:** Number of clones, duplicated lines of code
 
-![File detail](images/files-detail.png)
+The button **Ignore File** allows you to ignore the selected file on future Codacy analysis.
 
-Below that header you will find a tab selector for further information on issues, coverage, and duplication. By default you will see the list of issues in the file. On the right-hand side you can toggle between a list view and the annotated source code. <!-- TODO Also mention the filters -->
+![File detail](images/files-details.png)
 
-![File detail](images/files-detail-tabs.png)
+Depending on the available analysis information for the file, Codacy displays one or more of the following tabs:
 
--   You can open each issue to get more information on it. For more information about Issues, please check the [Issues page](issues.md).
+-   **Issues:** Shows all issues in the file.
 
--   The coverage tab shows you which lines are covered by tests and which aren't.
+    Toggle between the list and annotated source code views using the icon on the right-hand side. When using the list view, you can use filters to help you find specific issues in the file. Select an issue to see more information about the issue.
 
--   As for the duplication tab, here you can find duplicated code and links to its clones. <!--TODO Important mentioning the links to clones -->
+    For more information about the available filters and information for each issue see the [Issues page](issues.md).
 
-    ![File duplication](images/files-detail-duplication.png)
+    ![Issues for a file](images/files-issues.png)
+
+-   **Duplication:** Shows all duplicated blocks in the file with links to the clones of each block.
+
+    Toggle between the list and annotated source code views using the icon on the right-hand side. 
+
+    ![Duplicated blocks for a file](images/files-duplication.png)
+
+-   **Coverage:** Shows which lines of code are covered by tests or not.
+
+    ![Coverage information for a file](images/files-coverage.png)
