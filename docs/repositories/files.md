@@ -25,10 +25,10 @@ If you have more than one branch enabled on Codacy, use the drop-down list next 
 
 Select a file to see more detailed analysis information for that file, including statistics on:
 
--   **File size:** Lines of code, source lines of code, commented lines of code
--   **Structure:** Number of methods, ratio between source lines of code and number of methods
--   **Complexity:** Complexity, complexity per method
--   **Duplication:** Number of clones, duplicated lines of code
+-   **Size:** Lines of code, source lines of code, and commented lines of code
+-   **Structure:** Number of methods and ratio of source lines of code per number of methods
+-   **Complexity:** Complexity and complexity per method
+-   **Duplication:** Number of clones and duplicated lines of code
 
 The button **Ignore File** allows you to ignore the selected file on future Codacy analysis.
 
