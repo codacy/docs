@@ -4,28 +4,6 @@ description: In your repository Files page you can view all the files that Codac
 
 # Why is my file missing?
 
-In your repository [Files page](../../repositories/files.md) you can view all the files that Codacy detected in your repository:
-
-![Repository files](images/repository-files.png)
-
-While this page should display all the files in your repository, here is a list of reasons why some files might be missing:
-
--   **You're viewing the incorrect branch**
-
-    On the **Files** page you can select which branch to display, and sometimes not all files exist in all branches.
-
--   **The file might have been ignored**
-
-    The **Files** page doesn't display [ignored files](../../repositories-configure/ignoring-files.md) that aren't meant to be analyzed.
-
--   **The file has an extension that is not on the list of supported extensions**
-
-    Codacy has a default [list of file extensions](../../repositories-configure/file-extensions.md) that it associates to each language. Files with extensions that aren't on the list don't appear on the **Files** page.
-
--   **The file might be too big**
-
-    Codacy only displays files up to 150 KB. Read the section below for more information.
-
 ## File size limitation on Codacy Cloud
 
 Codacy Cloud currently doesn't analyze files that are above 150 KB in size. Larger files aren't displayed on Codacy nor taken into account when grading your repository.

@@ -18,8 +18,26 @@ If you have more than one branch enabled on Codacy, use the drop-down list next 
 
 ![Changing the branch on the Files page](images/files-select-branch.png)
 
-<!--TODO
-    Move information about the files that aren't displayed on the list here. -->
+!!! note
+    The Files page only displays files in your repository that were analyzed by Codacy. This means that some of your files may be missing from the list, for example: <!--TODO Fix anchor link-->
+    {: id="missing-files"}
+
+    -   **You're viewing the incorrect branch**
+
+        Not all files may exist in all branches of your repositories. Make sure that you're displaying files for the correct branch.
+
+    -   **The file might have been ignored**
+
+        The Files page doesn't display [ignored files](../repositories-configure/ignoring-files.md) that aren't meant to be analyzed.
+
+    -   **The file has an extension that is not on the list of supported extensions**
+
+        Codacy has a [list of file extensions](../repositories-configure/file-extensions.md) associated with each language. Codacy doesn't display files with extensions that aren't associated with a language.
+
+    -   **The file might be too big**
+
+        Codacy only displays files up to 150 KB. See <!--TODO Add link--> for more information.
+
 
 ## File details
 
