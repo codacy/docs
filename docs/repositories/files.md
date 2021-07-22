@@ -1,6 +1,6 @@
 # Files page
 
-The **Files page** displays the current code quality information for the individual files in your [active repository branches](../repositories-configure/managing-branches.md).
+The **Files page** displays the current code quality information for each analyzed file in your [active repository branches](../repositories-configure/managing-branches.md).
 
 Codacy displays the following information for each file, if available:
 
@@ -17,26 +17,6 @@ You can sort the list by each column to help you identify which files you should
 If you have more than one branch enabled on Codacy, use the drop-down list next to the page title to select the branch that contains the files to display on the list. Use the search box to filter the list and find specific files.
 
 ![Changing the branch on the Files page](images/files-select-branch.png)
-
-!!! note
-    The Files page only displays files in your repository that were analyzed by Codacy. This means that some of your files may be missing from the list, for example: <!--TODO Fix anchor link-->
-    {: id="missing-files"}
-
-    -   **You're viewing the incorrect branch**
-
-        Not all files may exist in all branches of your repositories. Make sure that you're displaying files for the correct branch.
-
-    -   **The file might have been ignored**
-
-        The Files page doesn't display [ignored files](../repositories-configure/ignoring-files.md) that aren't meant to be analyzed.
-
-    -   **The file has an extension that is not on the list of supported extensions**
-
-        Codacy has a [list of file extensions](../repositories-configure/file-extensions.md) associated with each language. Codacy doesn't analyze or display files with extensions that aren't associated with a language.
-
-    -   **The file might be too big**
-
-        Codacy doesn't analyze or display files that are over a certain size. [Read more details](../faq/troubleshooting/why-is-my-file-over-150-kb-missing.md) for informatio on how to overcome this limit.
 
 ## File details
 
@@ -70,3 +50,23 @@ Depending on the available analysis information for the file, Codacy displays on
 -   **Coverage:** Shows which lines of code are covered by tests or not.
 
     ![Coverage information for a file](images/files-coverage.png)
+
+## Why are some files missing? {: id="missing-files"}
+
+The Files page only displays files in your repository that were analyzed by Codacy. This means that some of your files may be missing from the list, for example:
+
+-   **You're viewing the incorrect branch**
+
+    Not all files may exist in all branches of your repositories. Make sure that you're displaying files for the correct branch.
+
+-   **The file might have been ignored**
+
+    The Files page doesn't display [ignored files](../repositories-configure/ignoring-files.md) that aren't meant to be analyzed.
+
+-   **The file has an extension that is not on the list of supported extensions**
+
+    Codacy has a [list of file extensions](../repositories-configure/file-extensions.md) associated with each language. Codacy doesn't analyze or display files with extensions that aren't associated with a language.
+
+-   **The file might be too big**
+
+    Codacy doesn't analyze or display files that are over a certain size. [Read more details](../faq/troubleshooting/why-is-my-file-over-150-kb-missing.md) for information on how to overcome this limit.
