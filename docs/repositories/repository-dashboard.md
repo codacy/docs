@@ -7,6 +7,8 @@ To access your Repository Dashboard, select a repository from the [Organization 
 !!! tip
     You can share the URL of the Repository Dashboard for your public repositories to allow other people to see your repository code quality metrics, even if they aren't registered on Codacy.
 
+![Repository Dashboard](images/repository-dashboard.png)
+
 The top of the Repository Dashboard displays:
 
 -   The name and code quality grade of the repository
@@ -20,8 +22,6 @@ On the Repository Dashboard you have four areas to help you monitor your reposit
 -   [Issues breakdown](#issues-breakdown)
 -   [Coverage](#coverage)
 -   [Open pull requests](#open-pull-requests)
-
-![Repository Dashboard](images/repository-dashboard.png)
 
 The following sections provide a detailed overview of each dashboard area.
 
