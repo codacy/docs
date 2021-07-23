@@ -23,9 +23,9 @@ Filter the list of issues to find particular issues, such as the issues with the
 
 You can define one or more of the following filters:
 
--   **Language**: Programming language of the file where the issues were detected
+-   **Language:** Programming language of the file where the issues were detected
 
--   **Issue category**: One of the following types of issue:
+-   **Issue category:** One of the following types of issue:
 
     {%
         include-markdown "../repositories-configure/code-patterns.md"
@@ -33,15 +33,15 @@ You can define one or more of the following filters:
         end="<!--categories-end-->"
     %}
 
--   **Severity level**: Potential impact of the issues:
+-   **Severity level:** Potential impact of the issues:
 
     -   **Critical (red):** The most dangerous issues that you should prioritize fixing since they identify code that's susceptible to serious problems regarding security and compatibility
     -   **Medium (yellow):** You should check out these issues, as they're based on code standards and conventions
     -   **Minor (blue):** The least critical issues, such as code style issues
 
--   **Pattern**: [Code pattern](../repositories-configure/code-patterns.md) that detected the issue
+-   **Pattern:** [Code pattern](../repositories-configure/code-patterns.md) that detected the issue
 
--   **Author**: Commit author that introduced the issue on the code
+-   **Author:** Commit author that introduced the issue on the code
 
 !!! note
     Each code pattern has a pre-defined severity level and at the moment Codacy doesn't support customizing that information.
