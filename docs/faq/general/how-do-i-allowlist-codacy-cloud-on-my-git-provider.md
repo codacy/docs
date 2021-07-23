@@ -26,6 +26,6 @@ To allowlist Codacy Cloud on your Git provider:
 
     The following are the instructions on how to allow IP addresses to access resources on each Git provider:
 
-    -   **GitHub Cloud**: [Managing allowed IP addresses for your organization](https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-allowed-ip-addresses-for-your-organization)
-    -   **GitLab Cloud**: [Restrict group access by IP address](https://docs.gitlab.com/ee/user/group/#restrict-group-access-by-ip-address)
-    -   **Bitbucket Cloud**: [Allowlisting IP addresses](https://support.atlassian.com/bitbucket-cloud/docs/control-access-to-your-private-content/#Allowlisting-IP-addresses)
+    -   **GitHub Cloud:** [Managing allowed IP addresses for your organization](https://docs.github.com/en/organizations/keeping-your-organization-secure/managing-allowed-ip-addresses-for-your-organization)
+    -   **GitLab Cloud:** [Restrict group access by IP address](https://docs.gitlab.com/ee/user/group/#restrict-group-access-by-ip-address)
+    -   **Bitbucket Cloud:** [Allowlisting IP addresses](https://support.atlassian.com/bitbucket-cloud/docs/control-access-to-your-private-content/#Allowlisting-IP-addresses)

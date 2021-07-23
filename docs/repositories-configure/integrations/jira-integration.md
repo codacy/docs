@@ -18,7 +18,7 @@ To enable the Jira integration:
 
     ![Enabling the Jira integration](images/jira-integration-enable.png)
 
-    -   **Host URL**: Base URL of your Jira instance, including the protocol. For example, `https://mycompany.atlassian.net/`.
+    -   **Host URL:** Base URL of your Jira instance, including the protocol. For example, `https://mycompany.atlassian.net/`.
     -   **Repository ID:** Key of the Jira project where Codacy will create issues. You can obtain the project key from the prefix of Jira issue numbers in that project. For example, `DOCS` for a project with the issue DOCS-42.
     -   **Email:** Email address of the user account that Codacy will use to create new issues in Jira.
     -   **API token:** [Jira API token](https://confluence.atlassian.com/cloud/api-tokens-938839638.html#APItokens-CreateanAPItoken){: target="_blank"} for the user account that Codacy will use to create new issues in Jira. The Jira integration only supports HTTP basic authentication.
