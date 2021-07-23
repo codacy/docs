@@ -1,38 +1,72 @@
----
-description: The Files page lists all the files in your repository and allows you to keep track of files with low coverage, high complexity, too many issues, or a lot of duplication that could be refactored.
----
-
 # Files page
 
-The file list shows all the files in your repository, sortable by six different columns:
+The **Files page** displays the current code quality information for each analyzed file in your [active repository branches](../repositories-configure/managing-branches.md).
 
--   [Grade](../faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md)
--   Filename
+Codacy displays the following information for each file, if available:
+
+-   Grade
 -   Number of issues
--   Code duplication
--   [Complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity)
+-   Duplication
+-   Complexity
 -   Code coverage
 
-There is also a search filter available.
+You can sort the list by each column to help you identify which files you should improve or refactor next.
 
-This allows you to keep track or focus some of your time on files with low coverage, high complexity, too many issues, or a lot of duplication that could be refactored.
+![Files list](images/files.png)
 
-Clicking on a filename opens the File detail.
+If you have more than one branch enabled on Codacy, use the drop-down list next to the page title to select the branch that contains the files to display on the list. Use the search box to filter the list and find specific files.
 
-![Files list](images/file-list.png)
+![Changing the branch on the Files page](images/files-select-branch.png)
 
-The file detail starts with a header where you can see a lot of statistical information on the file:
+## File details
 
-![File detail](images/file-detail.png)
+Select a file to see more detailed analysis information for that file, including statistics on:
 
-Below that header you will find a tab selector for further information on issues, coverage, and duplication. By default you will see the list of issues in the file. On the right-hand side you can toggle between a list view and the annotated source code.
+-   **Size:** Lines of code, source lines of code, and commented lines of code
+-   **Structure:** Number of methods and ratio of source lines of code per number of methods
+-   **Complexity:** Complexity and complexity per method
+-   **Duplication:** Number of clones and duplicated lines of code
 
-![File filters](images/file-filters.png)
+The button **Ignore File** allows you to ignore the selected file on future Codacy analysis.
 
-You can open each issue to get more information on it. For more information about Issues, please check the [Issues page](issues.md).
+![File detail](images/files-details.png)
 
-The coverage tab shows you which lines are covered by tests and which aren't.
+Depending on the available analysis information for the file, Codacy displays one or more of the following tabs:
 
-As for the duplication tab, here you can find duplicated code and links to its clones.
+-   **Issues:** Shows all issues in the file.
 
-![File duplication](images/file-duplication.png)
+    Toggle between the list and annotated source code views using the icon on the right-hand side. When using the list view, you can use filters to help you find specific issues in the file. Select an issue to see more information about the issue.
+
+    For more information about the available filters and information for each issue see the [Issues page](issues.md).
+
+    ![Issues for a file](images/files-issues.png)
+
+-   **Duplication:** Shows all duplicated blocks in the file with links to the clones of each block.
+
+    Toggle between the list and annotated source code views using the icon on the right-hand side.
+
+    ![Duplicated blocks for a file](images/files-duplication.png)
+
+-   **Coverage:** Shows which lines of code are covered by tests or not.
+
+    ![Coverage information for a file](images/files-coverage.png)
+
+## Why are some files missing? {: id="missing-files"}
+
+The Files page only displays files in your repository that were analyzed by Codacy. This means that some of your files may be missing from the list, for example:
+
+-   **You're viewing the incorrect branch**
+
+    Not all files may exist in all branches of your repositories. Make sure that you're displaying files for the correct branch.
+
+-   **The file might have been ignored**
+
+    The Files page doesn't display [ignored files](../repositories-configure/ignoring-files.md) that aren't meant to be analyzed.
+
+-   **The file has an extension that is not on the list of supported extensions**
+
+    Codacy has a [list of file extensions](../repositories-configure/file-extensions.md) associated with each language. Codacy doesn't analyze or display files with extensions that aren't associated with a language.
+
+-   **The file might be too big**
+
+    Codacy doesn't analyze or display files that are over a certain size. [Read more details](../faq/troubleshooting/why-is-my-file-over-150-kb-missing.md) for information on how to overcome this limit.
