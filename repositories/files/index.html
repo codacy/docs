@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The Files page lists all the files in your repository and allows you to keep track of files with low coverage, high complexity, too many issues, or a lot of duplication that could be refactored.">
+        <meta name="description" content="The Files page displays the current code quality information for each analyzed file in your active repository branches.">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/files/">
@@ -296,9 +296,43 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Files page
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Files page" class="md-nav__link md-nav__link--active">
       Files page
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#file-details" class="md-nav__link">
+    File details
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#missing-files" class="md-nav__link">
+    Why are some files missing?
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -2038,18 +2072,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/troubleshooting/why-is-my-file-missing/" title="Why is my file missing?" class="md-nav__link">
-      Why is my file missing?
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/" title="Why did Codacy stop commenting on pull requests?" class="md-nav__link">
       Why did Codacy stop commenting on pull requests?
     </a>
@@ -2112,6 +2134,18 @@
   <li class="md-nav__item">
     <a href="../../faq/troubleshooting/we-no-longer-have-access-to-this-repository/" title="We no longer have access to this repository, check your SSH keys" class="md-nav__link">
       We no longer have access to this repository, check your SSH keys
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faq/troubleshooting/why-is-my-file-over-150-kb-missing/" title="Why is my file over 150 KB missing?" class="md-nav__link">
+      Why is my file over 150 KB missing?
     </a>
   </li>
 
@@ -2761,27 +2795,67 @@
                 
                 
                 <h1 id="files-page">Files page<a class="headerlink" href="#files-page" title="Permanent link">#</a></h1>
-<p>The file list shows all the files in your repository, sortable by six different columns:</p>
+<p>The <strong>Files page</strong> displays the current code quality information for each analyzed file in your <a href="../../repositories-configure/managing-branches/">active repository branches</a>.</p>
+<p>Codacy displays the following information for each file, if available:</p>
 <ul>
-<li><a href="../../faq/repositories/what-are-the-different-grades-and-how-are-they-calculated/">Grade</a></li>
-<li>Filename</li>
+<li>Grade</li>
 <li>Number of issues</li>
-<li>Code duplication</li>
-<li><a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity">Complexity</a></li>
+<li>Duplication</li>
+<li>Complexity</li>
 <li>Code coverage</li>
 </ul>
-<p>There is also a search filter available.</p>
-<p>This allows you to keep track or focus some of your time on files with low coverage, high complexity, too many issues, or a lot of duplication that could be refactored.</p>
-<p>Clicking on a filename opens the File detail.</p>
-<p><img alt="Files list" src="../images/file-list.png" /></p>
-<p>The file detail starts with a header where you can see a lot of statistical information on the file:</p>
-<p><img alt="File detail" src="../images/file-detail.png" /></p>
-<p>Below that header you will find a tab selector for further information on issues, coverage, and duplication. By default you will see the list of issues in the file. On the right-hand side you can toggle between a list view and the annotated source code.</p>
-<p><img alt="File filters" src="../images/file-filters.png" /></p>
-<p>You can open each issue to get more information on it. For more information about Issues, please check the <a href="../issues/">Issues page</a>.</p>
-<p>The coverage tab shows you which lines are covered by tests and which aren't.</p>
-<p>As for the duplication tab, here you can find duplicated code and links to its clones.</p>
-<p><img alt="File duplication" src="../images/file-duplication.png" /></p>
+<p>You can sort the list by each column to help you identify which files you should improve or refactor next.</p>
+<p><img alt="Files list" src="../images/files.png" /></p>
+<p>If you have more than one branch enabled on Codacy, use the drop-down list next to the page title to select the branch that contains the files to display on the list. Use the search box to filter the list and find specific files.</p>
+<p><img alt="Changing the branch on the Files page" src="../images/files-select-branch.png" /></p>
+<h2 id="file-details">File details<a class="headerlink" href="#file-details" title="Permanent link">#</a></h2>
+<p>Select a file to see more detailed analysis information for that file, including statistics on:</p>
+<ul>
+<li><strong>Size:</strong> Lines of code, source lines of code, and commented lines of code</li>
+<li><strong>Structure:</strong> Number of methods and ratio of source lines of code per number of methods</li>
+<li><strong>Complexity:</strong> Complexity and complexity per method</li>
+<li><strong>Duplication:</strong> Number of clones and duplicated lines of code</li>
+</ul>
+<p>The button <strong>Ignore File</strong> allows you to ignore the selected file on future Codacy analysis.</p>
+<p><img alt="File detail" src="../images/files-details.png" /></p>
+<p>Depending on the available analysis information for the file, Codacy displays one or more of the following tabs:</p>
+<ul>
+<li>
+<p><strong>Issues:</strong> Shows all issues in the file.</p>
+<p>Toggle between the list and annotated source code views using the icon on the right-hand side. When using the list view, you can use filters to help you find specific issues in the file. Select an issue to see more information about the issue.</p>
+<p>For more information about the available filters and information for each issue see the <a href="../issues/">Issues page</a>.</p>
+<p><img alt="Issues for a file" src="../images/files-issues.png" /></p>
+</li>
+<li>
+<p><strong>Duplication:</strong> Shows all duplicated blocks in the file with links to the clones of each block.</p>
+<p>Toggle between the list and annotated source code views using the icon on the right-hand side.</p>
+<p><img alt="Duplicated blocks for a file" src="../images/files-duplication.png" /></p>
+</li>
+<li>
+<p><strong>Coverage:</strong> Shows which lines of code are covered by tests or not.</p>
+<p><img alt="Coverage information for a file" src="../images/files-coverage.png" /></p>
+</li>
+</ul>
+<h2 id="missing-files">Why are some files missing?<a class="headerlink" href="#missing-files" title="Permanent link">#</a></h2>
+<p>The Files page only displays files in your repository that were analyzed by Codacy. This means that some of your files may be missing from the list, for example:</p>
+<ul>
+<li>
+<p><strong>You're viewing the incorrect branch</strong></p>
+<p>Not all files may exist in all branches of your repositories. Make sure that you're displaying files for the correct branch.</p>
+</li>
+<li>
+<p><strong>The file might have been ignored</strong></p>
+<p>The Files page doesn't display <a href="../../repositories-configure/ignoring-files/">ignored files</a> that aren't meant to be analyzed.</p>
+</li>
+<li>
+<p><strong>The file has an extension that is not on the list of supported extensions</strong></p>
+<p>Codacy has a <a href="../../repositories-configure/file-extensions/">list of file extensions</a> associated with each language. Codacy doesn't analyze or display files with extensions that aren't associated with a language.</p>
+</li>
+<li>
+<p><strong>The file might be too big</strong></p>
+<p>Codacy doesn't analyze or display files that are over a certain size. <a href="../../faq/troubleshooting/why-is-my-file-over-150-kb-missing/">Read more details</a> for information on how to overcome this limit.</p>
+</li>
+</ul>
               
               
                 
@@ -2850,7 +2924,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 13, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 23, 2021</span>
     
   </small>
 </div>
