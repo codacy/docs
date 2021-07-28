@@ -37,7 +37,7 @@ Depending on the available analysis information for the file, Codacy displays on
 
     Toggle between the list and annotated source code views using the icon on the right-hand side. When using the list view, you can use filters to help you find specific issues in the file. Select an issue to see more information about the issue.
 
-    For more information about the available filters and information for each issue see the [Issues page](issues.md).
+    For more information about the available information and filters and for each issue see the [Issues page](issues.md).
 
     ![Issues for a file](images/files-issues.png)
 
