@@ -2858,8 +2858,8 @@
 <ul>
 <li>
 <p>Using Codacy's public S3:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">LATEST_VERSION</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>curl -Ls https://artifacts.codacy.com/binaries/codacy-coverage-reporter/latest<span class="k">)</span><span class="s2">&quot;</span>
-curl -Ls -o codacy-coverage-reporter <span class="s2">&quot;https://artifacts.codacy.com/binaries/codacy-coverage-reporter/</span><span class="si">${</span><span class="nv">LATEST_VERSION</span><span class="si">}</span><span class="s2">/codacy-coverage-reporter-linux&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nv">LATEST_VERSION</span><span class="o">=</span><span class="s2">&quot;</span><span class="k">$(</span>curl -Ls https://artifacts.codacy.com/bin/codacy-coverage-reporter/latest<span class="k">)</span><span class="s2">&quot;</span>
+curl -Ls -o codacy-coverage-reporter <span class="s2">&quot;https://artifacts.codacy.com/bin/codacy-coverage-reporter/</span><span class="si">${</span><span class="nv">LATEST_VERSION</span><span class="si">}</span><span class="s2">/codacy-coverage-reporter-linux&quot;</span>
 chmod +x codacy-coverage-reporter
 ./codacy-coverage-reporter report
 </code></pre></div>
@@ -3047,7 +3047,7 @@ task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 17, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2021</span>
     
   </small>
 </div>
