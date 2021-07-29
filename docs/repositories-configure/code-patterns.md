@@ -25,12 +25,12 @@ However, you can create a coding standard adapted to your scenario by configurin
 
 ## Pattern filters
 
-To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), severity level, category, or status: <!--TODO Check position of new filter -->
+To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), category, or status:
 
 ![Filtering code patterns](images/code-patterns-filter.png)
 
 !!! tip
-    To enable **all patterns** matching a specific severity level or category, use the filter to select the relevant patterns and click **Enable all**.
+    To enable **all patterns** matching a specific category, use the filter to select the relevant patterns and click **Enable all**.
     
     For example, to enable all Security patterns of a tool, you can use the **Security** filter and click **Enable all**.
 
