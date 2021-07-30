@@ -14,14 +14,14 @@ However, you can create a coding standard adapted to your scenario by configurin
 
 1.  Enable or disable the patterns using the checkbox for each pattern.
 
-    To see a detailed explanation about the issues that a pattern can detect and how to fix them, click **Details** on the top right-hand corner of the pattern. Some patterns also allow you to configure the rules:
+    To see a detailed explanation about the issues that a pattern can detect and how to fix them, click **Show details**. Some patterns also allow you to configure the rules:
 
     ![Code pattern details](images/code-patterns-detail.png)
 
 1.  Optionally, [manually reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.
 
 !!! tip
-    Organization owners can [configure who is allowed to configure code patterns](../organizations/roles-and-permissions-for-synced-organizations.md#change-analysis-configuration).
+    Organization owners can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-synced-organizations.md#change-analysis-configuration).
 
 ## Pattern filters
 
