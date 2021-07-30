@@ -14,7 +14,7 @@ However, you can create a coding standard adapted to your scenario by configurin
 
 1.  Enable or disable the patterns using the checkbox for each pattern.
 
-    To see a detailed explanation about the issues that a pattern can detect and how to fix them, click **Show details**. Some patterns also allow you to configure the rules:
+    To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues:
 
     ![Code pattern details](images/code-patterns-detail.png)
 
