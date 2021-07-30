@@ -17,7 +17,7 @@ Click the title of an issue to see the following information:
 
 ## Filtering issues
 
-Filter the list of issues to find particular issues, such as the issues with the highest severity or security issues:
+Filter the list of issues to find specific issues, such as the issues with the highest severity or security issues:
 
 ![Filtering issues](images/issues-filter.png)
 
