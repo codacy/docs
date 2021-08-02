@@ -57,7 +57,7 @@ The Security Monitor displays issues using security patterns from:
 -   [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer){: target="_blank"}
 -   [Hadolint](https://github.com/hadolint/hadolint#rules){: target="_blank"}
 -   [Prospector](https://github.com/PyCQA/prospector){: target="_blank"}
--   [Bundler-audit](https://rubydoc.info/gems/bundler-audit/frames){: target="_blank"}
+-   [Bundler-audit](https://github.com/rubysec/bundler-audit){: target="_blank"}
 -   [Credo](https://github.com/rrrene/credo/){: target="_blank"}
 -   [Flawfinder](https://dwheeler.com/flawfinder/){: target="_blank"}
 -   [PSScriptAnalyzer](https://dwheeler.com/flawfinder/){: target="_blank"}
