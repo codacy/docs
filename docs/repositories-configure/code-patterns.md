@@ -107,11 +107,16 @@ Alternatively, you can also manually apply the default pattern configuration for
 
 Codacy supports configuration files for several tools. To use a configuration file for your static analysis tool:
 
-1.  Push the configuration file to the root of your [main branch](managing-branches.md).
+1.  Push the configuration file to the root of the branch [configured as the main branch on Codacy](managing-branches.md).
 
-1.  Open your repository **Code patterns** page, select the tool that will use a configuration file, and click **Configuration file**:
+1.  Open your repository **Code patterns** page, select the tool that will use the configuration file, and select the option **Configuration file**:
 
     ![Using a configuration file](images/code-patterns-config-file.png)
+
+After activating the option to use the configuration file:
+
+-   Codacy will use the version of the configuration file in the branch being analyzed. For example, if you open a pull request that includes changes to the configuration file, the analysis results will take those changes into account.
+-   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.
 
 The table below lists the configuration file names that Codacy detects and supports for each tool:
 
