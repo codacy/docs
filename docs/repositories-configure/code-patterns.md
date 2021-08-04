@@ -14,14 +14,14 @@ However, you can create a coding standard adapted to your scenario by configurin
 
 1.  Enable or disable the patterns using the checkbox for each pattern.
 
-    To see a detailed explanation about the issues that a pattern can detect and how to fix them, click **Details** on the top right-hand corner of the pattern. Some patterns also allow you to configure the rules:
+    To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues:
 
     ![Code pattern details](images/code-patterns-detail.png)
 
 1.  Optionally, [manually reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.
 
 !!! tip
-    Organization owners can [configure who is allowed to configure code patterns](../organizations/roles-and-permissions-for-synced-organizations.md#change-analysis-configuration).
+    Organization owners can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-synced-organizations.md#change-analysis-configuration).
 
 ## Pattern filters
 
@@ -30,9 +30,9 @@ To make it easier to find relevant patterns, you can use the sidebar to filter t
 ![Filtering code patterns](images/code-patterns-filter.png)
 
 !!! tip
-    To enable all patterns inside a category, use the filter to list all patterns inside that category and click **Enable all**.
+    To enable **all patterns** matching a specific category, use the filter to select the relevant patterns and click **Enable all**.
     
-    As an example, if you want to enable **all** Security patterns of a tool, instead of filtering and then enabling all the patterns one by one, you can add the filter and click **Enable all**.
+    For example, to enable all Security patterns of a tool, you can use the **Security** filter and click **Enable all**.
 
 Issues detected by Codacy belong to one of the following categories:
 
@@ -46,24 +46,6 @@ Issues detected by Codacy belong to one of the following categories:
 -   **Security:** All security problems
 -   **Documentation:** Methods and classes that don't have the correct comment annotations
 <!--categories-end-->
-
-## Setting a default configuration for new repositories {: id="set-default"}
-
-If you're adding multiple repositories to Codacy that should reuse the same pattern configuration for a tool, you can define that configuration as the default. Codacy automatically applies that default configuration to new repositories.
-
-To apply the same pattern configuration to multiple repositories:
-
-1.  Add the first repository and configure the patterns on that repository for the relevant tools.
-
-1.  Expand the menu at the top of the pattern list and select **Set default**.
-
-    This option sets the current pattern configuration of all tools as the default for your account.
-
-    ![Setting a default pattern configuration](images/code-patterns-set-default.png)
-
-After defining the default pattern configuration for your account, the tools in the new repositories that you add will automatically use those pattern configurations.
-
-Alternatively, you can also manually apply the default pattern configuration for your account to all tools by expanding the menu at the top of the pattern list and selecting **Reset**.
 
 ## Importing pattern configurations from another repository {: id="import-patterns"}
 
@@ -101,17 +83,40 @@ To import the tool and pattern configurations from another repository:
 
 Codacy will use the updated configurations on the next analysis.
 
+## Setting a default configuration for new repositories {: id="set-default"}
+
+If you're adding multiple repositories to Codacy that should reuse the same pattern configuration for a tool, you can define that configuration as the default. Codacy automatically applies that default configuration to new repositories.
+
+To apply the same pattern configuration to multiple repositories:
+
+1.  Add the first repository and configure the patterns on that repository for the relevant tools.
+
+1.  Expand the menu at the top of the pattern list and select **Set default**.
+
+    This option sets the current pattern configuration of all tools as the default for your account.
+
+    ![Setting a default pattern configuration](images/code-patterns-set-default.png)
+
+After defining the default pattern configuration for your account, the tools in the new repositories that you add will automatically use those pattern configurations.
+
+Alternatively, you can also manually apply the default pattern configuration for your account to all tools by expanding the menu at the top of the pattern list and selecting **Reset**.
+
 ## Using your own tool configuration files
 
 <!-- TODO Consider including the configuration file names reference somewhere else (see https://github.com/codacy/docs/issues/43) -->
 
 Codacy supports configuration files for several tools. To use a configuration file for your static analysis tool:
 
-1.  Push the configuration file to the root of your [main branch](managing-branches.md).
+1.  Push the configuration file to the root of the branch [configured as the main branch on Codacy](managing-branches.md).
 
-1.  Open your repository **Code patterns** page, select the tool that will use a configuration file, and click **Configuration file**:
+1.  Open your repository **Code patterns** page, select the tool that will use the configuration file, and select the option **Configuration file**:
 
     ![Using a configuration file](images/code-patterns-config-file.png)
+
+After activating the option to use the configuration file:
+
+-   Codacy will use the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results will take those changes into account.
+-   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.
 
 The table below lists the configuration file names that Codacy detects and supports for each tool:
 

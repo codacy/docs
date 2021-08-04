@@ -1,3 +1,4 @@
+Jinja2==2.11.3
 mkdocs==1.1.2
 mike==0.5.5
 markdown==3.3.4
