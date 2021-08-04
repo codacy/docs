@@ -14,14 +14,14 @@ However, you can create a coding standard adapted to your scenario by configurin
 
 1.  Enable or disable the patterns using the checkbox for each pattern.
 
-    To see a detailed explanation about the issues that a pattern can detect and how to fix them, click **Details** on the top right-hand corner of the pattern. Some patterns also allow you to configure the rules:
+    To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues:
 
     ![Code pattern details](images/code-patterns-detail.png)
 
 1.  Optionally, [manually reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.
 
 !!! tip
-    Organization owners can [configure who is allowed to configure code patterns](../organizations/roles-and-permissions-for-synced-organizations.md#change-analysis-configuration).
+    Organization owners can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-synced-organizations.md#change-analysis-configuration).
 
 ## Pattern filters
 
@@ -30,9 +30,9 @@ To make it easier to find relevant patterns, you can use the sidebar to filter t
 ![Filtering code patterns](images/code-patterns-filter.png)
 
 !!! tip
-    To enable all patterns inside a category, use the filter to list all patterns inside that category and click **Enable all**.
+    To enable **all patterns** matching a specific category, use the filter to select the relevant patterns and click **Enable all**.
     
-    As an example, if you want to enable **all** Security patterns of a tool, instead of filtering and then enabling all the patterns one by one, you can add the filter and click **Enable all**.
+    For example, to enable all Security patterns of a tool, you can use the **Security** filter and click **Enable all**.
 
 Issues detected by Codacy belong to one of the following categories:
 
