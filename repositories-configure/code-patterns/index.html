@@ -2921,13 +2921,18 @@
 <p>Codacy supports configuration files for several tools. To use a configuration file for your static analysis tool:</p>
 <ol>
 <li>
-<p>Push the configuration file to the root of your <a href="../managing-branches/">main branch</a>.</p>
+<p>Push the configuration file to the root of the branch <a href="../managing-branches/">configured as the main branch on Codacy</a>.</p>
 </li>
 <li>
-<p>Open your repository <strong>Code patterns</strong> page, select the tool that will use a configuration file, and click <strong>Configuration file</strong>:</p>
+<p>Open your repository <strong>Code patterns</strong> page, select the tool that will use the configuration file, and select the option <strong>Configuration file</strong>:</p>
 <p><img alt="Using a configuration file" src="../images/code-patterns-config-file.png" /></p>
 </li>
 </ol>
+<p>After activating the option to use the configuration file:</p>
+<ul>
+<li>Codacy will use the version of the configuration file <strong>in the branch being analyzed</strong>. For example, if you open a pull request that includes changes to the configuration file, the analysis results will take those changes into account.</li>
+<li>If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option <strong>Configuration file</strong> on the Code patterns page.</li>
+</ul>
 <p>The table below lists the configuration file names that Codacy detects and supports for each tool:</p>
 <table>
   <thead>
@@ -3213,7 +3218,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 3, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 4, 2021</span>
     
   </small>
 </div>
