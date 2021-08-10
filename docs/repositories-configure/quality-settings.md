@@ -1,8 +1,8 @@
 # Quality settings
 
-Here you can define quality settings for your repository, giving you control over the build status and success/fail of commits and pull requests. This feature also enables you to turn off metrics like duplication or complexity.
+The **Quality settings** give you control over the status of analyzed commits and pull requests, as well as the quality level thresholds in your repository dashboard. This feature also allows you to turn off metrics like duplication or complexity.
 
-To access the quality settings, open your repository **Settings**, tab **Quality Settings**. On this page there are three sections where you can set specific values at the commit, pull request, and repository levels. Click **Customize** to edit the settings on each section.
+To access the quality settings, open your repository **Settings**, tab **Quality Settings**. On this page there are three sections where you can set specific values at the commit, pull request, and repository levels. Click **Edit settings** to edit the settings on each section.
 
 ![Quality settings](images/quality-settings.png)
 
@@ -14,7 +14,8 @@ These settings configure quality thresholds for commits, as displayed on the [Co
 
 ![Quality settings for commits](images/quality-settings-commits.png)
 
--   **New issues are over:** Commits are marked not up to standards if the number of issues introduced is bigger than the set value. The default value is 0.
+-   **New issues are over:** Commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is bigger than the set value. The default value is 0.
+-   **New security issues are over:** Commits are marked not up to standards if the number of security issues introduced is bigger than the set value. By default, this setting is off.
 -   **Complexity is over:** Commits are marked not up to standards if the introduced complexity is bigger than the set value. By default, this setting is off.
 -   **Duplication is over:** Commits are marked not up to standards if the number of clones introduced is bigger than the set value. By default, this setting is off.
 -   **Coverage variation is under:** Commits are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your commit. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.
@@ -28,7 +29,8 @@ These settings configure quality thresholds for pull requests, as displayed on t
 
 ![Quality settings for pull requests](images/quality-settings-pull-requests.png)
 
--   **New issues are over:** Pull requests are marked not up to standards if the number of issues introduced is bigger than the set value. The default value is 0.
+-   **New issues are over:** Pull requests are marked not up to standards if the number of issues introduced that have at least the specified severity level is bigger than the set value. The default value is 0.
+-   **New security issues are over:** Pull requests are marked not up to standards if the number of security issues introduced is bigger than the set value. By default, this setting is off.
 -   **Complexity is over:** Pull requests are marked not up to standards if the introduced complexity is bigger than the set value. By default, this setting is off.
 -   **Duplication is over:** Pull requests are marked not up to standards if the number of clones introduced is bigger than the set value. By default, this setting is off.
 -   **Coverage variation is under:** Pull requests are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull request. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.
