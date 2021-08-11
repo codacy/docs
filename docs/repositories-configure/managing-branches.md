@@ -6,6 +6,14 @@ To change the main branch of your repository or enable analysis on other branche
 
 ![Managing branches](images/managing-branches.png)
 
-## Analyzing pull request branches
+Codacy manages pull request branches and inactive branches as follows:
 
-When you create new pull requests Codacy automatically triggers analysis on the corresponding branches to analyze the pull requests **as long as the target branch of the pull request is enabled**.
+-   **Pull request branches**
+
+    Codacy automatically analyzes branches corresponding to new pull requests, **as long as the target branches of the pull requests are enabled**.
+
+    Codacy stops analyzing these branches when the pull requests are merged or closed.
+
+-   **Inactive branches**
+
+    Codacy automatically disables analysis for branches that don't have any commits for more than 2 weeks.
