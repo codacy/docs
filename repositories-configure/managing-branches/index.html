@@ -374,36 +374,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Managing branches
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
-        </span>
-      </label>
-    
     <a href="./" title="Managing branches" class="md-nav__link md-nav__link--active">
       Managing branches
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#analyzing-pull-request-branches" class="md-nav__link">
-    Analyzing pull request branches
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -2791,8 +2764,18 @@
 <p>Codacy automatically triggers analysis on the main branch of your repository (typically <code>master</code> or <code>main</code>), and also supports analyzing multiple branches.</p>
 <p>To change the main branch of your repository or enable analysis on other branches, open your repository <strong>Settings</strong>, tab <strong>Branches</strong>:</p>
 <p><img alt="Managing branches" src="../images/managing-branches.png" /></p>
-<h2 id="analyzing-pull-request-branches">Analyzing pull request branches<a class="headerlink" href="#analyzing-pull-request-branches" title="Permanent link">#</a></h2>
-<p>When you create new pull requests Codacy automatically triggers analysis on the corresponding branches to analyze the pull requests <strong>as long as the target branch of the pull request is enabled</strong>.</p>
+<p>Codacy manages pull request branches and inactive branches as follows:</p>
+<ul>
+<li>
+<p><strong>Pull request branches</strong></p>
+<p>Codacy automatically analyzes branches corresponding to new pull requests, <strong>as long as the target branches of the pull requests are enabled</strong>.</p>
+<p>Codacy stops analyzing these branches when the pull requests are merged or closed.</p>
+</li>
+<li>
+<p><strong>Inactive branches</strong></p>
+<p>Codacy automatically disables analysis for branches that don't have any commits for more than 2 weeks, except for the main branch and pull request branches that are analyzed automatically.</p>
+</li>
+</ul>
               
               
                 
@@ -2861,7 +2844,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 21, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 13, 2021</span>
     
   </small>
 </div>
