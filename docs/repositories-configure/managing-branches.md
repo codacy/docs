@@ -16,4 +16,4 @@ Codacy manages pull request branches and inactive branches as follows:
 
 -   **Inactive branches**
 
-    Codacy automatically disables analysis for branches that don't have any commits for more than 2 weeks.
+    Codacy automatically disables analysis for branches that don't have any commits for more than 2 weeks, except for the main branch and pull request branches that are analyzed automatically.
