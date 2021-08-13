@@ -360,6 +360,6 @@ The table below lists all languages and frameworks that Codacy supports and the 
 
 ## See also
 
--   [Getting started with Codacy](getting-started-with-codacy.md)
+-   [Codacy quickstart (5 min)](codacy-quickstart.md)
 -   [Client-side tools](../related-tools/local-analysis/client-side-tools.md)
 -   [Codacy plugin tools](../related-tools/codacy-plugin-tools.md)
