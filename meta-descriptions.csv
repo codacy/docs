@@ -134,7 +134,7 @@ https://docs.codacy.com/repositories/issues/,"The Issues page lists all the issu
 https://docs.codacy.com/repositories/repository-dashboard/,The Repository Dashboard provides an overview of the repository code quality and items that require your attention.
 https://docs.codacy.com/repositories/security-monitor/,The Security Monitor provides an overview of all current security issues.
 https://docs.codacy.com/repositories-configure/codacy-configuration-file/,"Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages."
-https://docs.codacy.com/repositories-configure/code-patterns/,Configure the tool patterns that Codacy uses to analyze your repositories to create a coding standard adapted to your scenario.
+https://docs.codacy.com/repositories-configure/configuring-code-patterns/,Configure the tools and code patterns that Codacy uses to analyze your repositories to create a coding standard adapted to your scenario.
 https://docs.codacy.com/repositories-configure/file-extensions/,"If your repository has source files with unrecognized extensions, you can configure Codacy to include them in the next analysis."
 https://docs.codacy.com/repositories-configure/ignoring-files/,Ignore or exclude files from the Codacy analysis and see the list of files that Codacy already ignores by default.
 https://docs.codacy.com/repositories-configure/managing-branches/,"Codacy automatically triggers analysis on the main branch of your repository (typically master or main), and also supports analyzing multiple branches."
