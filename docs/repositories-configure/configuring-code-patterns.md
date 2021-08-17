@@ -1,18 +1,18 @@
 ---
-description: Configure the tool patterns that Codacy uses to analyze your repositories to create a coding standard adapted to your scenario.
+description: Configure the tools and code patterns that Codacy uses to analyze your repositories to create a coding standard adapted to your scenario.
 ---
 
-# Code patterns
+# Configuring code patterns
 
-By default, Codacy uses a subset of the patterns that exist for each tool to analyze your repositories. These default patterns result from community feedback or existing coding standards.
+By default, Codacy uses a subset of the code patterns that exist for each tool to analyze your repositories. These default code patterns result from community feedback or existing coding standards.
 
-However, you can create a coding standard adapted to your scenario by configuring the tool patterns that Codacy uses to analyze each repository:
+However, you can create a coding standard adapted to your scenario by configuring the tools and code patterns that Codacy uses to analyze each repository:
 
 1.  Open your repository **Code patterns** page and select the tool to configure:
 
     ![Configuring code patterns](images/code-patterns-configure.png)
 
-1.  Enable or disable the patterns using the checkbox for each pattern.
+1.  Enable or disable the code patterns using the checkbox for each pattern.
 
     To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues:
 
@@ -25,12 +25,12 @@ However, you can create a coding standard adapted to your scenario by configurin
 
 ## Pattern filters
 
-To make it easier to find relevant patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), category, or status:
+To make it easier to find relevant code patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), category, or status:
 
 ![Filtering code patterns](images/code-patterns-filter.png)
 
 !!! tip
-    To enable **all patterns** matching a specific category, use the filter to select the relevant patterns and click **Enable all**.
+    To enable **all code patterns** matching a specific category, use the filter to select the relevant patterns and click **Enable all**.
     
     For example, to enable all Security patterns of a tool, you can use the **Security** filter and click **Enable all**.
 
@@ -49,12 +49,12 @@ Issues detected by Codacy belong to one of the following categories:
 
 ## Importing pattern configurations from another repository {: id="import-patterns"}
 
-Importing tool and pattern configurations from another repository can help you bootstrap and standardize the coding standard across your repositories.
+Importing tool and code pattern configurations from another repository can help you bootstrap and standardize the coding standard across your repositories.
 
-For example, when adding a new repository on Codacy you can copy the tool and pattern configurations from an existing repository that's already configured, and then tweak and adapt the settings for your new repository.
+For example, when adding a new repository on Codacy you can copy the tool and code pattern configurations from an existing repository that's already configured, and then tweak and adapt the settings for your new repository.
 
 !!! tip
-    You can also copy the tool and pattern configurations [from one repository to multiple target repositories](../organizations/copying-code-patterns-between-repositories.md).
+    You can also copy the tool and code pattern configurations [from one repository to multiple target repositories](../organizations/copying-code-patterns-between-repositories.md).
 
 <!--code-patterns-copy-start-->
 !!! important
@@ -71,7 +71,7 @@ For example, when adding a new repository on Codacy you can copy the tool and pa
     | ![Source repository](images/code-patterns-import-example-source.svg) | ![Target repository](images/code-patterns-import-example-target.svg) | ![Target repository after import](images/code-patterns-import-example-final.svg) |
 <!--code-patterns-copy-end-->
 
-To import the tool and pattern configurations from another repository:
+To import the tool and code pattern configurations from another repository:
 
 1.  Open your repository **Code patterns** and click **Import patterns**.
 
@@ -79,7 +79,7 @@ To import the tool and pattern configurations from another repository:
 
 1.  Follow the instructions to select the source repository and complete the import.
 
-1.  Review and adjust your tool and pattern configurations if necessary.
+1.  Review and adjust your tool and code pattern configurations if necessary.
 
 Codacy will use the updated configurations on the next analysis.
 
@@ -87,19 +87,19 @@ Codacy will use the updated configurations on the next analysis.
 
 If you're adding multiple repositories to Codacy that should reuse the same pattern configuration for a tool, you can define that configuration as the default. Codacy automatically applies that default configuration to new repositories.
 
-To apply the same pattern configuration to multiple repositories:
+To apply the same code pattern configuration to multiple repositories:
 
-1.  Add the first repository and configure the patterns on that repository for the relevant tools.
+1.  Add the first repository and configure the code patterns on that repository for the relevant tools.
 
 1.  Expand the menu at the top of the pattern list and select **Set default**.
 
     This option sets the current pattern configuration of all tools as the default for your account.
 
-    ![Setting a default pattern configuration](images/code-patterns-set-default.png)
+    ![Setting a default code pattern configuration](images/code-patterns-set-default.png)
 
-After defining the default pattern configuration for your account, the tools in the new repositories that you add will automatically use those pattern configurations.
+After defining the default code pattern configuration for your account, the tools in the new repositories that you add will automatically use those configurations.
 
-Alternatively, you can also manually apply the default pattern configuration for your account to all tools by expanding the menu at the top of the pattern list and selecting **Reset**.
+Alternatively, you can also manually apply the default code pattern configuration for your account to all tools by expanding the menu at the top of the pattern list and selecting **Reset**.
 
 ## Using your own tool configuration files
 

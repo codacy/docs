@@ -17,7 +17,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
 
     docs/related-tools/local-analysis/client-side-tools.md (if necessary)
     docs/related-tools/codacy-plugin-tools.md
-    docs/repositories-configure/code-patterns.md (supported configuration files table)
+    docs/repositories-configure/configuring-code-patterns.md (supported configuration files table)
 -->
 
 <table>
@@ -355,7 +355,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
 </table>
 
 <span id="client-side">1</span>: Supported as a [client-side tool](../related-tools/local-analysis/client-side-tools.md).  
-<span id="swiftlint-complexity">2</span>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html){: target="_blank"} on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code Patterns page](../repositories-configure/code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration){: target="_blank"} to customize the thresholds.  
+<span id="swiftlint-complexity">2</span>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html){: target="_blank"} on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code patterns page](../repositories-configure/configuring-code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration){: target="_blank"} to customize the thresholds.  
 <span id="suggested-fixes">🔧</span>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
 
 ## See also

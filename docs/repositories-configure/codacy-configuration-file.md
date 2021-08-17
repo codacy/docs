@@ -13,8 +13,8 @@ Codacy supports configuring certain advanced features through a configuration fi
 -   Adding custom file extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
 
 !!! note
-    -   If a Codacy configuration file exists in your repository, the [Ignored Files](ignoring-files.md) settings defined on the Codacy UI don't apply.
-    -   To disable a tool you must use the [Code Patterns](code-patterns.md) page instead.
+    -   If a Codacy configuration file exists in your repository, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply.
+    -   To disable a tool you must use the [Code patterns page](configuring-code-patterns.md) instead.
 
 To use a Codacy configuration file:
 
@@ -156,6 +156,6 @@ engines:
 ```
 
 !!! tip
-    If you're using Python 3.4.\* or later as your programming language, we recommend that you disable the tool **Pylint** and enable the tool **Pylint (Python 3)** on your repository [Code patterns page](code-patterns.md) instead. For more information see [What's New in Pylint 2.0](http://pylint.pycqa.org/en/latest/whatsnew/2.0.html).
+    If you're using Python 3.4.\* or later as your programming language, we recommend that you disable the tool **Pylint** and enable the tool **Pylint (Python 3)** on your repository [Code patterns page](configuring-code-patterns.md) instead. For more information see [What's New in Pylint 2.0](http://pylint.pycqa.org/en/latest/whatsnew/2.0.html).
 
 If you have questions about the Codacy configuration file, please contact us at <mailto:support@codacy.com>.

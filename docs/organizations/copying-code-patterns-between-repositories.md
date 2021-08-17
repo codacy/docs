@@ -1,11 +1,11 @@
 # Copying code patterns between repositories
 
-Copy [tool and pattern configurations](../repositories-configure/code-patterns.md) in bulk between your repositories to help you bootstrap and standardize the coding standards in your organization.
+Copy [tool and pattern configurations](../repositories-configure/configuring-code-patterns.md) in bulk between your repositories to help you bootstrap and standardize the coding standards in your organization.
 
 For example, when adding new repositories on Codacy you can copy the tool and pattern configurations from an existing repository that's already configured, and then tweak and adapt the settings for your new repositories.
 
 {%
-    include-markdown "../repositories-configure/code-patterns.md"
+    include-markdown "../repositories-configure/configuring-code-patterns.md"
     start="<!--code-patterns-copy-start-->"
     end="<!--code-patterns-copy-end-->"
 %}
@@ -30,5 +30,5 @@ Codacy will use the updated configurations on the next analysis in each target r
 
 ## See also
 
--   [Code patterns](../repositories-configure/code-patterns.md)
--   [Importing pattern configurations from another repository](../repositories-configure/code-patterns.md#import-patterns)
+-   [Configuring code patterns](../repositories-configure/configuring-code-patterns.md)
+-   [Importing pattern configurations from another repository](../repositories-configure/configuring-code-patterns.md#import-patterns)
