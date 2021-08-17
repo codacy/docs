@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Synced organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that don&#x27;t belong to a Git provider organization), and team members into Codacy with a few clicks.">
+        <meta name="description" content="The Quality settings give you control over the status of analyzed commits and pull requests, as well as the quality level thresholds in your repository dashboard. This feature also allows you to turn off metrics like duplication or complexity.">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/organizations/what-are-synced-organizations/">
+        <link rel="canonical" href="https://docs.codacy.com/repositories-configure/adjusting-quality-settings/">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
@@ -21,7 +21,7 @@
     
     
       
-        <title>What are synced organizations - Codacy docs</title>
+        <title>Adjusting quality settings - Codacy docs</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#what-are-synced-organizations" class="md-skip">
+        <a href="#adjusting-quality-settings" class="md-skip">
           Skip to content
         </a>
       
@@ -325,10 +325,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Configuring your repositories
@@ -352,7 +354,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/configuring-code-patterns/" title="Configuring code patterns" class="md-nav__link">
+    <a href="../configuring-code-patterns/" title="Configuring code patterns" class="md-nav__link">
       Configuring code patterns
     </a>
   </li>
@@ -364,7 +366,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/managing-branches/" title="Managing branches" class="md-nav__link">
+    <a href="../managing-branches/" title="Managing branches" class="md-nav__link">
       Managing branches
     </a>
   </li>
@@ -401,7 +403,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/github-integration/" title="GitHub integration" class="md-nav__link">
+    <a href="../integrations/github-integration/" title="GitHub integration" class="md-nav__link">
       GitHub integration
     </a>
   </li>
@@ -413,7 +415,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/gitlab-integration/" title="GitLab integration" class="md-nav__link">
+    <a href="../integrations/gitlab-integration/" title="GitLab integration" class="md-nav__link">
       GitLab integration
     </a>
   </li>
@@ -425,7 +427,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/bitbucket-integration/" title="Bitbucket integration" class="md-nav__link">
+    <a href="../integrations/bitbucket-integration/" title="Bitbucket integration" class="md-nav__link">
       Bitbucket integration
     </a>
   </li>
@@ -437,7 +439,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/slack-integration/" title="Slack integration" class="md-nav__link">
+    <a href="../integrations/slack-integration/" title="Slack integration" class="md-nav__link">
       Slack integration
     </a>
   </li>
@@ -449,7 +451,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/jira-integration/" title="Jira integration" class="md-nav__link">
+    <a href="../integrations/jira-integration/" title="Jira integration" class="md-nav__link">
       Jira integration
     </a>
   </li>
@@ -461,7 +463,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/webhook-notifications/" title="Webhook notifications" class="md-nav__link">
+    <a href="../integrations/webhook-notifications/" title="Webhook notifications" class="md-nav__link">
       Webhook notifications
     </a>
   </li>
@@ -473,7 +475,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/post-commit-hooks/" title="Post-commit hooks" class="md-nav__link">
+    <a href="../integrations/post-commit-hooks/" title="Post-commit hooks" class="md-nav__link">
       Post-commit hooks
     </a>
   </li>
@@ -490,7 +492,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/ignoring-files/" title="Ignoring files" class="md-nav__link">
+    <a href="../ignoring-files/" title="Ignoring files" class="md-nav__link">
       Ignoring files
     </a>
   </li>
@@ -502,7 +504,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/file-extensions/" title="Configuring file extensions" class="md-nav__link">
+    <a href="../file-extensions/" title="Configuring file extensions" class="md-nav__link">
       Configuring file extensions
     </a>
   </li>
@@ -512,11 +514,61 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../repositories-configure/adjusting-quality-settings/" title="Adjusting quality settings" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Adjusting quality settings
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Adjusting quality settings" class="md-nav__link md-nav__link--active">
       Adjusting quality settings
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#commits" class="md-nav__link">
+    Commits
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#pull-requests" class="md-nav__link">
+    Pull Requests
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#repository" class="md-nav__link">
+    Repository
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -526,7 +578,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/using-submodules/" title="Using submodules" class="md-nav__link">
+    <a href="../using-submodules/" title="Using submodules" class="md-nav__link">
       Using submodules
     </a>
   </li>
@@ -538,7 +590,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/codacy-configuration-file/" title="Codacy configuration file" class="md-nav__link">
+    <a href="../codacy-configuration-file/" title="Codacy configuration file" class="md-nav__link">
       Codacy configuration file
     </a>
   </li>
@@ -550,7 +602,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/removing-your-repository/" title="Removing your repository" class="md-nav__link">
+    <a href="../removing-your-repository/" title="Removing your repository" class="md-nav__link">
       Removing your repository
     </a>
   </li>
@@ -565,12 +617,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Organizations
@@ -592,68 +642,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        What are synced organizations
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="What are synced organizations" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../organizations/what-are-synced-organizations/" title="What are synced organizations" class="md-nav__link">
       What are synced organizations
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#adding-an-organization" class="md-nav__link">
-    Adding an organization
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#updates-on-the-git-provider" class="md-nav__link">
-    Updates on the Git provider
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#deleting-an-organization" class="md-nav__link">
-    Deleting an organization
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#see-also" class="md-nav__link">
-    See also
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -663,7 +656,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../organization-overview/" title="Organization Overview" class="md-nav__link">
+    <a href="../../organizations/organization-overview/" title="Organization Overview" class="md-nav__link">
       Organization Overview
     </a>
   </li>
@@ -675,7 +668,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../managing-repositories/" title="Managing repositories" class="md-nav__link">
+    <a href="../../organizations/managing-repositories/" title="Managing repositories" class="md-nav__link">
       Managing repositories
     </a>
   </li>
@@ -687,7 +680,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../copying-code-patterns-between-repositories/" title="Copying code patterns between repositories" class="md-nav__link">
+    <a href="../../organizations/copying-code-patterns-between-repositories/" title="Copying code patterns between repositories" class="md-nav__link">
       Copying code patterns between repositories
     </a>
   </li>
@@ -699,7 +692,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../managing-people/" title="Managing people" class="md-nav__link">
+    <a href="../../organizations/managing-people/" title="Managing people" class="md-nav__link">
       Managing people
     </a>
   </li>
@@ -711,7 +704,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../changing-your-plan-and-billing/" title="Changing your plan and billing" class="md-nav__link">
+    <a href="../../organizations/changing-your-plan-and-billing/" title="Changing your plan and billing" class="md-nav__link">
       Changing your plan and billing
     </a>
   </li>
@@ -723,7 +716,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../roles-and-permissions-for-synced-organizations/" title="Roles and permissions for synced organizations" class="md-nav__link">
+    <a href="../../organizations/roles-and-permissions-for-synced-organizations/" title="Roles and permissions for synced organizations" class="md-nav__link">
       Roles and permissions for synced organizations
     </a>
   </li>
@@ -760,7 +753,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../manual-organizations/creating-and-renaming-an-organization/" title="Creating and renaming an organization" class="md-nav__link">
+    <a href="../../organizations/manual-organizations/creating-and-renaming-an-organization/" title="Creating and renaming an organization" class="md-nav__link">
       Creating and renaming an organization
     </a>
   </li>
@@ -772,7 +765,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../manual-organizations/creating-and-managing-teams/" title="Creating and managing teams" class="md-nav__link">
+    <a href="../../organizations/manual-organizations/creating-and-managing-teams/" title="Creating and managing teams" class="md-nav__link">
       Creating and managing teams
     </a>
   </li>
@@ -784,7 +777,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../manual-organizations/managing-team-repositories/" title="Managing team repositories" class="md-nav__link">
+    <a href="../../organizations/manual-organizations/managing-team-repositories/" title="Managing team repositories" class="md-nav__link">
       Managing team repositories
     </a>
   </li>
@@ -796,7 +789,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../manual-organizations/administrative-permissions/" title="Administrative permissions" class="md-nav__link">
+    <a href="../../organizations/manual-organizations/administrative-permissions/" title="Administrative permissions" class="md-nav__link">
       Administrative permissions
     </a>
   </li>
@@ -808,7 +801,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../manual-organizations/share-your-repository-with-a-non-codacy-user/" title="Share your repository with a non-Codacy user" class="md-nav__link">
+    <a href="../../organizations/manual-organizations/share-your-repository-with-a-non-codacy-user/" title="Share your repository with a non-Codacy user" class="md-nav__link">
       Share your repository with a non-Codacy user
     </a>
   </li>
@@ -2808,109 +2801,45 @@
                   
                 
                 
-                <h1 id="what-are-synced-organizations">What are synced organizations<a class="headerlink" href="#what-are-synced-organizations" title="Permanent link">#</a></h1>
-<p>Synced organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that don't belong to a Git provider organization), and team members into Codacy with a few clicks.</p>
-<p>Changes to the organizations, repositories, and team members are synchronized with Codacy in real-time, avoiding the manual management of repositories and teams.</p>
-<h2 id="adding-an-organization">Adding an organization<a class="headerlink" href="#adding-an-organization" title="Permanent link">#</a></h2>
-<p>To add a new organization to Codacy, select <strong>Add organization</strong> on the navigation menu.</p>
-<p><img alt="Adding an organization" src="../images/organization-add-menu.png" /></p>
-<p>This opens the list of organizations on your Git providers. The organization with the same name as your Git provider username contains your personal repositories.</p>
-<p><img alt="Adding an organization" src="../images/organization-add.png" /></p>
+                <h1 id="adjusting-quality-settings">Adjusting quality settings<a class="headerlink" href="#adjusting-quality-settings" title="Permanent link">#</a></h1>
+<p>The <strong>Quality settings</strong> give you control over the status of analyzed commits and pull requests, as well as the quality level thresholds in your repository dashboard. This feature also allows you to turn off metrics like duplication or complexity.</p>
+<p>To access the quality settings, open your repository <strong>Settings</strong>, tab <strong>Quality Settings</strong>. On this page there are three sections where you can set specific values at the commit, pull request, and repository levels. Click <strong>Edit settings</strong> to edit the settings on each section.</p>
+<p><img alt="Quality settings" src="../images/quality-settings.png" /></p>
+<p>The following sections explain the settings in detail.</p>
+<h2 id="commits">Commits<a class="headerlink" href="#commits" title="Permanent link">#</a></h2>
+<p>These settings configure quality thresholds for commits, as displayed on the <a href="../../repositories/commits/">Commits page</a>.</p>
+<p><img alt="Quality settings for commits" src="../images/quality-settings-commits.png" /></p>
 <ul>
-<li>To add a new organization to Codacy, click the link <strong>Add</strong> for that organization.</li>
-<li>To join an organization that's already on Codacy, click the link <strong>Join</strong> for that organization.</li>
-<li>To add organizations from a Git provider not yet listed on this page, click <strong>Add provider</strong> and give the <a href="../../getting-started/which-permissions-does-codacy-need-from-my-account/">necessary permissions</a> for Codacy to sync with the new Git provider and display your organizations.</li>
+<li><strong>New issues are over:</strong> Commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is bigger than the set value. The default value is 0.</li>
+<li><strong>New security issues are over:</strong> Commits are marked not up to standards if the number of security issues introduced is bigger than the set value. By default, this setting is off.</li>
+<li><strong>Complexity is over:</strong> Commits are marked not up to standards if the introduced complexity is bigger than the set value. By default, this setting is off.</li>
+<li><strong>Duplication is over:</strong> Commits are marked not up to standards if the number of clones introduced is bigger than the set value. By default, this setting is off.</li>
+<li><strong>Coverage variation is under:</strong> Commits are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your commit. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you can't see the organization you're looking for, follow the instructions in the card <strong>Adding new organizations</strong> or <a href="../../faq/general/why-cant-i-see-my-organization/">these troubleshooting instructions</a>.</p>
+<h2 id="pull-requests">Pull Requests<a class="headerlink" href="#pull-requests" title="Permanent link">#</a></h2>
+<p>These settings configure quality thresholds for pull requests, as displayed on the Pull Requests page.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>After enabling these settings you can <a href="../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/">set Codacy as a required check</a> before merging your pull requests.</p>
 </div>
-<h2 id="updates-on-the-git-provider">Updates on the Git provider<a class="headerlink" href="#updates-on-the-git-provider" title="Permanent link">#</a></h2>
-<p>In case you change your organization or repository on the Git provider, some changes will be reflected on Codacy. The following cases are supported:</p>
-<table>
-<thead>
-<tr>
-<th>Provider</th>
-<th>Rename repository</th>
-<th>Change repository visibility</th>
-<th>Delete repository</th>
-<th>Rename organization or group</th>
-<th>Remove member from organization or group</th>
-<th>Delete organization or group</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>GitHub Cloud</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>GitHub Enterprise</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>GitLab Cloud</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<td>GitLab Enterprise</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Bitbucket Cloud</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-<tr>
-<td>Bitbucket Server</td>
-<td>Yes</td>
-<td>Yes</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-<p>Check out the <a href="../roles-and-permissions-for-synced-organizations/">roles and permission mapping from the Git providers</a>.</p>
-<h2 id="deleting-an-organization">Deleting an organization<a class="headerlink" href="#deleting-an-organization" title="Permanent link">#</a></h2>
-<p>Delete an organization to remove that organization and all its repositories from Codacy.</p>
-<p>To delete an organization, open the <strong>Profile</strong> page and click the button <strong>Delete organization</strong>.</p>
-<p><img alt="Deleting an organization" src="../images/organization-delete.png" /></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>If you're using Codacy Cloud</strong> we will ask for your feedback on why you're deleting your organization.</p>
-</div>
-<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
+<p><img alt="Quality settings for pull requests" src="../images/quality-settings-pull-requests.png" /></p>
 <ul>
-<li><a href="../../faq/general/how-does-codacy-support-gitlab-cloud/">How does Codacy support GitLab Cloud?</a></li>
-<li><a href="../../faq/general/how-does-codacy-support-gitlab-enterprise/">How does Codacy support GitLab Enterprise?</a></li>
-<li><a href="../../faq/general/how-does-codacy-support-bitbucket-cloud/">How does Codacy support Bitbucket Cloud?</a></li>
-<li><a href="../../faq/general/how-does-codacy-support-bitbucket-server/">How does Codacy support Bitbucket Server?</a></li>
+<li><strong>New issues are over:</strong> Pull requests are marked not up to standards if the number of issues introduced that have at least the specified severity level is bigger than the set value. The default value is 0.</li>
+<li><strong>New security issues are over:</strong> Pull requests are marked not up to standards if the number of security issues introduced is bigger than the set value. By default, this setting is off.</li>
+<li><strong>Complexity is over:</strong> Pull requests are marked not up to standards if the introduced complexity is bigger than the set value. By default, this setting is off.</li>
+<li><strong>Duplication is over:</strong> Pull requests are marked not up to standards if the number of clones introduced is bigger than the set value. By default, this setting is off.</li>
+<li><strong>Coverage variation is under:</strong> Pull requests are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull request. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.</li>
+</ul>
+<h2 id="repository">Repository<a class="headerlink" href="#repository" title="Permanent link">#</a></h2>
+<p>These settings configure quality thresholds for the repository, as displayed on the <a href="../../repositories/repository-dashboard/">Repository Dashboard</a>.</p>
+<p><img alt="Quality settings for the repository" src="../images/quality-settings-repository.png" /></p>
+<ul>
+<li><strong>Issues are over:</strong> Defines the threshold displayed on the tab <strong>Issues</strong> of the quality evolution chart.</li>
+<li><strong>Complexity of files is over:</strong> Defines the threshold displayed on the tab <strong>Complexity</strong> of the quality evolution chart.</li>
+<li><strong>File is complex when over:</strong> A file is considered complex when its complexity is over this value.</li>
+<li><strong>Duplication of files is over:</strong> Defines the threshold displayed on the tab <strong>Duplication</strong> of the quality evolution chart.</li>
+<li><strong>File is duplicate when over:</strong> A file is considered duplicated when it has more clones than this value.</li>
+<li><strong>Coverage is under:</strong> Defines the threshold displayed on the tab <strong>Coverage</strong> of the quality evolution chart.</li>
 </ul>
               
               
@@ -2936,10 +2865,10 @@
       Thank you for the feedback!
     </p>
     <p class="user-feedback-response user-feedback-response--no">
-      We're sorry to hear that. Please <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22What are synced organizations%22">let us know what we can improve</a>.
+      We're sorry to hear that. Please <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Adjusting quality settings%22">let us know what we can improve</a>.
     </p>
     <p>
-      If you have a question, please <a href="https://community.codacy.com/">ask our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20What are synced organizations">support@codacy.com</a>.
+      If you have a question, please <a href="https://community.codacy.com/">ask our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Adjusting quality settings">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -2980,7 +2909,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 26, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2021</span>
     
   </small>
 </div>
