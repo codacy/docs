@@ -2846,6 +2846,12 @@
 <p>To use a specific version of the Codacy Coverage Reporter, set the following environment variable to one of the <a href="https://github.com/codacy/codacy-coverage-reporter/releases">released versions</a>:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_REPORTER_VERSION</span><span class="o">=</span>&lt;version&gt;
 </code></pre></div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Starting on version <code>13.0.0</code> the script automatically validates the checksum of the downloaded binary. To skip the checksum validation, define the following environment variable:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_REPORTER_SKIP_CHECKSUM</span><span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
+</div>
 <p>The sections below provide details on alternative ways to run or install Codacy Coverage Reporter.</p>
 <h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">#</a></h2>
 <p>You can use Docker to run Codacy Coverage Reporter:</p>
@@ -2890,6 +2896,12 @@ java -jar codacy-coverage-reporter-assembly.jar report
 </code></pre></div>
 </li>
 </ul>
+<h3 id="validating-the-checksum-of-the-binaries">Validating the checksum of the binaries<a class="headerlink" href="#validating-the-checksum-of-the-binaries" title="Permanent link">#</a></h3>
+<p>You can use the checksums <a href="https://github.com/codacy/codacy-coverage-reporter/releases">available for each release</a> to validate the binaries that you download manually. You can use any tool of your choice to validate the checksum, as long as it uses the <code>SHA512</code> algorithm.</p>
+<p>For example, run the commands below to download and validate the checksum for the 13.0.0 Linux binary. Note that the command <code>sha512sum</code> expects to find the binary on the same directory and with the original name <code>codacy-coverage-reporter-linux</code>.</p>
+<div class="highlight"><pre><span></span><code>curl -Ls -O https://github.com/codacy/codacy-coverage-reporter/releases/download/13.0.0/codacy-coverage-reporter-linux.SHA512SUM
+sha512sum -c codacy-coverage-reporter-linux.SHA512SUM
+</code></pre></div>
 <h2 id="building-from-source">Building from source<a class="headerlink" href="#building-from-source" title="Permanent link">#</a></h2>
 <p>If you are having any issues with your installation, you can also build the coverage reporter from source.</p>
 <ol>
@@ -3047,7 +3059,7 @@ task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 2, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2021</span>
     
   </small>
 </div>
