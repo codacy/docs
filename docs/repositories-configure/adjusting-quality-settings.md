@@ -1,4 +1,4 @@
-# Quality settings
+# Adjusting quality settings
 
 The **Quality settings** give you control over the status of analyzed commits and pull requests, as well as the quality level thresholds in your repository dashboard. This feature also allows you to turn off metrics like duplication or complexity.
 
