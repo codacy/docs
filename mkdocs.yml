@@ -272,8 +272,8 @@ plugins:
               "hc/en-us/articles/360008254833-Run-local-analysis.md": "related-tools/local-analysis/running-local-analysis.md"
               "hc/en-us/articles/360008254833-Run-local-analysis-before-creating-a-commit.md": "related-tools/local-analysis/running-local-analysis.md"
               "hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results.md": "related-tools/local-analysis/running-local-analysis.md"
-              "hc/en-us/articles/360009164573.md": "repositories-configure/quality-settings.md"
-              "hc/en-us/articles/360009164573-Quality-Settings.md": "repositories-configure/quality-settings.md"
+              "hc/en-us/articles/360009164573.md": "repositories-configure/adjusting-quality-settings.md"
+              "hc/en-us/articles/360009164573-Quality-Settings.md": "repositories-configure/adjusting-quality-settings.md"
               "hc/en-us/articles/360009180134.md": "repositories/issues.md"
               "hc/en-us/articles/360009180134-Issues-View.md": "repositories/issues.md"
               "hc/en-us/articles/360009180134-The-Issues-View.md": "repositories/issues.md"
@@ -525,7 +525,7 @@ plugins:
               "organizations/how-to-configure-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-synced-organizations.md"
               "repositories/what-are-the-different-grades-and-how-are-they-calculated.md": "faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
               "repositories/managing-branches.md": "repositories-configure/managing-branches.md"
-              "repositories/quality-settings.md": "repositories-configure/quality-settings.md"
+              "repositories/quality-settings.md": "repositories-configure/adjusting-quality-settings.md"
               "repositories/removing-your-repository.md": "repositories-configure/removing-your-repository.md"
               "repositories/post-commit-hooks.md": "repositories-configure/integrations/post-commit-hooks.md"
               "faq/general/which-version-control-systems-do-you-support.md": "faq/general/which-version-control-systems-does-codacy-support.md"
@@ -552,6 +552,7 @@ plugins:
               "codacy-api/examples/index.md": "codacy-api/examples/adding-repositories-to-codacy-programmatically.md"
               "faq/troubleshooting/why-is-my-file-missing.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
               "repositories-configure/code-patterns.md": "repositories-configure/configuring-code-patterns.md"
+              "repositories-configure/quality-settings.md": "repositories-configure/adjusting-quality-settings.md"
 
 nav:
     - Documentation home: "index.md"
@@ -579,7 +580,7 @@ nav:
                 - repositories-configure/integrations/post-commit-hooks.md
           - repositories-configure/ignoring-files.md
           - repositories-configure/file-extensions.md
-          - repositories-configure/quality-settings.md
+          - repositories-configure/adjusting-quality-settings.md
           - repositories-configure/using-submodules.md
           - repositories-configure/codacy-configuration-file.md
           - repositories-configure/removing-your-repository.md

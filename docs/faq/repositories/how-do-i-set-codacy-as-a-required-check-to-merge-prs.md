@@ -4,7 +4,7 @@ description: Configure your Git provider to block merging pull requests until th
 
 # How do I set Codacy as a required check to merge pull requests?
 
-Codacy checks each pull request using your [quality settings](../../repositories-configure/quality-settings.md) and sends a notification to the Git provider informing if the pull request is up to standards or not.
+Codacy checks each pull request using your [quality settings](../../repositories-configure/adjusting-quality-settings.md) and sends a notification to the Git provider informing if the pull request is up to standards or not.
 
 Each Git provider has different options to set up notifications or block merging pull requests until they pass the Codacy check:
 
