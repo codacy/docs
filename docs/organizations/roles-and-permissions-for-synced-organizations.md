@@ -235,7 +235,7 @@ To change this, open your organization **Settings**, page **Plan and billing**, 
 
 -   [Ignore issues](../repositories/issues.md#ignoring-and-managing-issues)
 -   [Ignore files](../repositories-configure/ignoring-files.md)
--   [Configure code patterns](../repositories-configure/code-patterns.md)
+-   [Configure code patterns](../repositories-configure/configuring-code-patterns.md)
 -   [Configure file extensions](../repositories-configure/file-extensions.md)
 -   [Manage branches](../repositories-configure/managing-branches.md)
 

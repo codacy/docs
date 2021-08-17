@@ -45,7 +45,7 @@ Click the link **Go to repository** to see the [code quality overview of your re
  The first analysis is based on Codacy **default configurations**, so you should tweak and adapt the following configurations to match your preferences and specific scenario:
 
 -   [Ignore files](../repositories-configure/ignoring-files.md) that you want to exclude from the Codacy analysis
--   [Configure the code patterns](../repositories-configure/code-patterns.md) that Codacy uses to analyze your repository
+-   [Configure the code patterns](../repositories-configure/configuring-code-patterns.md) that Codacy uses to analyze your repository
 -   [Configure the quality settings](../repositories-configure/quality-settings.md) for your repository
 
 ## You're all set! 🎉 {: id="all-set"}

@@ -28,7 +28,7 @@ You can define one or more of the following filters:
 -   **Issue category:** One of the following types of issue:
 
     {%
-        include-markdown "../repositories-configure/code-patterns.md"
+        include-markdown "../repositories-configure/configuring-code-patterns.md"
         start="<!--categories-start-->"
         end="<!--categories-end-->"
     %}
@@ -39,7 +39,7 @@ You can define one or more of the following filters:
     -   **Medium (yellow):** You should check out these issues, as they're based on code standards and conventions
     -   **Minor (blue):** The least critical issues, such as code style issues
 
--   **Pattern:** [Code pattern](../repositories-configure/code-patterns.md) that detected the issue
+-   **Pattern:** [Code pattern](../repositories-configure/configuring-code-patterns.md) that detected the issue
 
 -   **Author:** Commit author that introduced the issue on the code
 
@@ -65,10 +65,10 @@ Use the options in the cogwheel menu of each issue to:
 
 -   **Disable the code pattern** that detected the issue.
 
-    Codacy will stop using that pattern after the next analysis of your repository, so be sure that you're no longer interested in identifying similar issues. To re-enable patterns use the [Code patterns page](../repositories-configure/code-patterns.md).
+    Codacy will stop using that pattern after the next analysis of your repository, so be sure that you're no longer interested in identifying similar issues. To re-enable patterns use the [Code patterns page](../repositories-configure/configuring-code-patterns.md).
 
     !!! note
-        If you're using a [custom configuration file](../repositories-configure/code-patterns.md#using-your-own-tool-configuration-files), you must manage patterns manually on your configuration file.
+        If you're using a [custom configuration file](../repositories-configure/configuring-code-patterns.md#using-your-own-tool-configuration-files), you must manage patterns manually on your configuration file.
 
 -   **Ignore the file** where the issue was detected.
 
