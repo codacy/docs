@@ -43,7 +43,7 @@ You're welcome to make fixes and changes to the documentation. Here are a few st
 
 Follow these Markdown conventions when editing the documentation:
 
--   Name new Markdown files based on the title of the page, in lowercase and substituting spaces with hyphens. For example, `getting-started-with-codacy.md` for the page "Getting started with Codacy."
+-   Name new Markdown files based on the title of the page, in lowercase and substituting spaces with hyphens. For example, `adding-a-codacy-badge.md` for the page "Adding a Codacy badge."
 
     When you create a new markdown file, you must also add it to the `nav` section of the [`mkdocs.yml`](mkdocs.yml) file. This is what places the new page in the correct place of the table of contents of the documentation.
 

@@ -7,7 +7,7 @@ After adding a Group:
 -   Codacy displays the list of all repositories that you own in that Group and Subgroups so that you can add them to Codacy as repositories to be analyzed
 -   The members of the Group will be able to [join or request to join Codacy](../../organizations/managing-people.md#joining)
 
-If you have repositories that don't belong to any Group, you can still [add those on Codacy by choosing your "personal" organization](../../getting-started/getting-started-with-codacy.md#choose-organization).
+If you have repositories that don't belong to any Group, you can still [add those on Codacy by choosing your "personal" organization](../../getting-started/codacy-quickstart.md#choose-organization).
 
 ## Limitations
 

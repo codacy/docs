@@ -11,7 +11,7 @@ To list and manage the members of your organization, open your organization **Se
 
 ## Joining an organization {: id="joining"}
 
-To become a member of an organization on Codacy you must [sign up to Codacy](../getting-started/getting-started-with-codacy.md) using your Git provider and follow the instructions to either join an existing organization or add a new one.
+To become a member of an organization on Codacy you must [sign up to Codacy](../getting-started/codacy-quickstart.md) using your Git provider and follow the instructions to either join an existing organization or add a new one.
 
 To join or add an organization after having complete the signup process, click **Organizations** on the top right-hand menu under your avatar:
 
