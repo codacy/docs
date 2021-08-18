@@ -946,8 +946,8 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#jsonparseexception-while-uploading-c-coverage-data" class="md-nav__link">
-    JsonParseException while uploading C# coverage data
+  <a href="#jsonparseexception-while-uploading-coverage-data" class="md-nav__link">
+    JsonParseException while uploading coverage data
   </a>
   
 </li>
@@ -2829,27 +2829,35 @@
 <h2 id="cant-guess-any-report-due-to-no-matching">Can't guess any report due to no matching<a class="headerlink" href="#cant-guess-any-report-due-to-no-matching" title="Permanent link">#</a></h2>
 <p>Codacy Coverage Reporter automatically searches for coverage reports matching the <a href="../#generating-coverage">file name conventions for supported formats</a>.</p>
 <p>However, if Codacy Coverage Reporter does not find your coverage report, you can explicitly define the report file name with the flag <code>-r</code>. For example:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-    -r &lt;my report&gt;
+<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report -r &lt;coverage report file&gt;
 </code></pre></div>
 <h2 id="detailedxml">Report generated an empty result while uploading C# coverage data<a class="headerlink" href="#detailedxml" title="Permanent link">#</a></h2>
-<p>If you are using dotCover to generate coverage reports for your C# projects, you must use the dotCover detailedXML report format as follows:</p>
+<p>If you're using dotCover to generate coverage reports for your C# projects, you must use the dotCover detailedXML report format as follows:</p>
 <div class="highlight"><pre><span></span><code>dotCover.exe cover ... --reportType<span class="o">=</span>DetailedXml
 </code></pre></div>
-<h2 id="jsonparseexception-while-uploading-c-coverage-data">JsonParseException while uploading C# coverage data<a class="headerlink" href="#jsonparseexception-while-uploading-c-coverage-data" title="Permanent link">#</a></h2>
-<p>If you are using dotCover to generate coverage reports for your C# projects, you should <a href="https://www.jetbrains.com/help/dotcover/Running_Coverage_Analysis_from_the_Command_LIne.html#filters_cmd">exclude xUnit files</a> from the coverage analysis as follows:</p>
+<h2 id="jsonparseexception-while-uploading-coverage-data">JsonParseException while uploading coverage data<a class="headerlink" href="#jsonparseexception-while-uploading-coverage-data" title="Permanent link">#</a></h2>
+<p>If you're getting a <code>com.fasterxml.jackson.core.JsonParseException</code> error while uploading your coverage data to Codacy it means that your coverage report is too big and that Codacy Coverage Reporter hit a limit of 10 MB when uploading the coverage data to Codacy.</p>
+<p>There are some ways you can solve this:</p>
+<ul>
+<li>
+<p>Split your coverage reports into smaller files and <a href="../#multiple-reports">upload them to Codacy one at a time</a>.</p>
+</li>
+<li>
+<p><strong>If you're using dotCover to generate coverage reports for your C# projects</strong>, you should <a href="https://www.jetbrains.com/help/dotcover/Running_Coverage_Analysis_from_the_Command_LIne.html#filters_cmd">exclude xUnit files</a> from the coverage analysis as follows:</p>
 <div class="highlight"><pre><span></span><code>dotCover.exe cover ... /Filters<span class="o">=</span>-:xunit*
 </code></pre></div>
 <p>By default, dotCover includes xUnit files in the coverage analysis and this results in larger coverage reports. This filter helps ensure that the resulting coverage data does not exceed the size limit accepted by the Codacy API when uploading the results.</p>
+</li>
+</ul>
 <h2 id="malformedinputexception-while-parsing-report">MalformedInputException while parsing report<a class="headerlink" href="#malformedinputexception-while-parsing-report" title="Permanent link">#</a></h2>
 <p>If you get a <code>java.nio.charset.MalformedInputException</code> when running the Codacy Coverage Reporter it means that the coverage report includes an unsupported character, perhaps on one of your source code file names.</p>
 <p>For maximum compatibility of your coverage reports with the Codacy Coverage Reporter, make sure that your coverage reports use UTF-8 encoding or remove any special characters from the reports.</p>
 <h2 id="substratesegfaulthandler-caught-signal-11">SubstrateSegfaultHandler caught signal 11<a class="headerlink" href="#substratesegfaulthandler-caught-signal-11" title="Permanent link">#</a></h2>
-<p>If you are experiencing segmentation faults when uploading the coverage results due to <a href="https://github.com/oracle/graal/issues/624">oracle/graal#624</a>, execute the following command before running the reporter, as a workaround:</p>
+<p>If you're experiencing segmentation faults when uploading the coverage results due to <a href="https://github.com/oracle/graal/issues/624">oracle/graal#624</a>, execute the following command before running the reporter, as a workaround:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;</span><span class="k">$(</span>dig +short api.codacy.com <span class="p">|</span> tail -n1<span class="k">)</span><span class="s2"> api.codacy.com&quot;</span> &gt;&gt; /etc/hosts
 </code></pre></div>
 <h2 id="coverage-xmlindexxml-generated-an-empty-result">coverage-xml/index.xml generated an empty result<a class="headerlink" href="#coverage-xmlindexxml-generated-an-empty-result" title="Permanent link">#</a></h2>
-<p>If you are using PHPUnit version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the PHPUnit XML format only for versions 4 and older.</p>
+<p>If you're using PHPUnit version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the PHPUnit XML format only for versions 4 and older.</p>
 <p>To change the output format replace the flag <code>--coverage-xml &lt;dir&gt;</code> with <code>--coverage-clover &lt;file&gt;</code> when executing <code>phpunit</code>.</p>
 <p>See <a href="https://phpunit.readthedocs.io/en/latest/textui.html">PHPUnit command-line documentation</a> for more information.</p>
               
@@ -2920,7 +2928,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 25, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 18, 2021</span>
     
   </small>
 </div>
