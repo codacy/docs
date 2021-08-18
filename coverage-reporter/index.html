@@ -2955,7 +2955,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </li>
 <li>
 <p>Run Codacy Coverage Reporter <strong>on the root of the locally checked out branch of your Git repository</strong>, specifying the relative path to the coverage report to upload:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report -r &lt;coverage report file&gt;
+<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report -r &lt;coverage report file name&gt;
 </code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -2997,12 +2997,12 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <p>Codacy can't automatically detect Golang coverage report files because they don't have specific file names.</p>
 <p>If you're uploading a Golang coverage report, you must also specify the report type:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-    --force-coverage-parser go -r &lt;your project coverage file name&gt;
+    --force-coverage-parser go -r &lt;coverage report file name&gt;
 </code></pre></div>
 <h3 id="submitting-coverage-for-unsupported-languages">Submitting coverage for unsupported languages<a class="headerlink" href="#submitting-coverage-for-unsupported-languages" title="Permanent link">#</a></h3>
 <p>If your language is not in the list of supported languages, you can still send coverage to Codacy. You can do it by providing the correct language name with the flag <code>-l</code>, together with <code>--force-language</code>. For example:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-  -l Kotlin --force-language
+  -l Kotlin --force-language -r &lt;coverage report file name&gt;
 </code></pre></div>
 <p>See the <a href="https://github.com/codacy/codacy-plugins-api/blob/master/src/main/scala/com/codacy/plugins/api/languages/Language.scala#L43">list of languages</a> that you can specify using the flag <code>-l</code>.</p>
 <h3 id="commit-detection">Commit SHA hash detection<a class="headerlink" href="#commit-detection" title="Permanent link">#</a></h3>
@@ -3102,7 +3102,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 18, 2021</span>
     
   </small>
 </div>
