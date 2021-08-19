@@ -1,4 +1,4 @@
-# Do you check for dependencies?
+# Does Codacy check for dependencies?
 
 Codacy doesn't check for dependencies. Codacy performs static code analysis on the source code and checks for code style and security issues, duplication, complexity, and coverage.
 

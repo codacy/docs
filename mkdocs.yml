@@ -214,8 +214,8 @@ plugins:
               "hc/en-us/articles/213149905.md": "faq/general/how-do-i-change-my-email-address-on-codacy.md"
               "hc/en-us/articles/213149905-email-address-change.md": "faq/general/how-do-i-change-my-email-address-on-codacy.md"
               "hc/en-us/articles/213149905-How-do-I-change-my-email-address-in-Codacy-.md": "faq/general/how-do-i-change-my-email-address-on-codacy.md"
-              "hc/en-us/articles/213211825.md": "faq/code-analysis/do-you-check-for-dependencies.md"
-              "hc/en-us/articles/213211825-Do-you-check-for-dependencies-.md": "faq/code-analysis/do-you-check-for-dependencies.md"
+              "hc/en-us/articles/213211825.md": "faq/code-analysis/does-codacy-check-for-dependencies.md"
+              "hc/en-us/articles/213211825-Do-you-check-for-dependencies-.md": "faq/code-analysis/does-codacy-check-for-dependencies.md"
               "hc/en-us/articles/213217965.md": "faq/general/which-version-control-systems-does-codacy-support.md"
               "hc/en-us/articles/213217965-Which-version-control-systems-do-you-support-.md": "faq/general/which-version-control-systems-does-codacy-support.md"
               "hc/en-us/articles/213280129.md": "repositories-configure/integrations/jira-integration.md"
@@ -555,6 +555,7 @@ plugins:
               "repositories-configure/code-patterns.md": "repositories-configure/configuring-code-patterns.md"
               "repositories-configure/quality-settings.md": "repositories-configure/adjusting-quality-settings.md"
               "faq/code-analysis/skipping-an-analysis.md": "faq/code-analysis/how-to-skip-an-analysis.md"
+              "faq/code-analysis/do-you-check-for-dependencies.md": "faq/code-analysis/does-codacy-check-for-dependencies.md"
 
 nav:
     - Documentation home: "index.md"
@@ -646,7 +647,7 @@ nav:
                 - faq/repositories/i-moved-my-repository-on-the-git-provider.md
                 - faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md
           - Code analysis:
-                - faq/code-analysis/do-you-check-for-dependencies.md
+                - faq/code-analysis/does-codacy-check-for-dependencies.md
                 - faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md
                 - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
                 - faq/code-analysis/how-to-skip-an-analysis.md
