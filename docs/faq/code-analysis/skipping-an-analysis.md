@@ -1,22 +1,12 @@
 # Skipping an analysis
 
-By default, Codacy automatically analyzes a repository whenever you push changes. However, you can override this behavior by adding the tag `[ci skip]` or `[skip ci]` anywhere in the subject or body of the commit message.
+By default, Codacy automatically analyzes a repository whenever you push changes. However, you can override this behavior by adding the tag `[ci skip]` or `[skip ci]` anywhere in the subject or body of the commit message. For example:
 
-If you later decide to analyze a skipped commit, you can override any skip tags by reanalyzing the commit.
+```bash
+$ git commit -a -m "Add eslint-plugin-chai-expect version 1.1.1 [ci skip]"
+```
+
+If you later decide to analyze a skipped commit, you can override any skip tags by [reanalyzing the commit](../repositories/how-do-i-reanalyze-my-repository.md).
 
 !!! note
     This feature isn't supported for pull requests.
-
-## Example commit message
-
-```bash
-$ git log origin/master..HEAD
-
-commit 96121bec2f36b406d694ed4e03126483ad1baad6
-Author: Rodrigo Fernandes
-Date:   Wed Jan 31 10:01:47 2019 +0000
-
-    Add eslint-plugin-chai-expect version 1.1.1 [ci skip]
-```
-
-When pushed, Codacy won't analyze this commit because of the `[ci skip]` in the commit message.
