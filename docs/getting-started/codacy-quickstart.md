@@ -46,7 +46,7 @@ Click the link **Go to repository** to see the [code quality overview of your re
 
 -   [Ignore files](../repositories-configure/ignoring-files.md) that you want to exclude from the Codacy analysis
 -   [Configure the code patterns](../repositories-configure/configuring-code-patterns.md) that Codacy uses to analyze your repository
--   [Adjust the quality settings](../repositories-configure/adjusting-quality-settings.md) for your repository
+-   [Adjust the quality settings](../repositories-configure/adjusting-quality-settings.md) to control quality gate that Codacy applies to your commits and pull requests
 
 ## You're all set! 🎉 {: id="all-set"}
 
