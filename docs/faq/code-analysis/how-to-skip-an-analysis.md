@@ -1,4 +1,4 @@
-# Skipping an analysis
+# How to skip an analysis?
 
 By default, Codacy automatically analyzes a repository whenever you push changes. However, you can override this behavior by adding the tag `[ci skip]` or `[skip ci]` anywhere in the subject or body of the commit message. For example:
 

@@ -257,8 +257,8 @@ plugins:
               "hc/en-us/articles/360005097654-Ignore-files-from-Codacy-analysis.md": "repositories-configure/ignoring-files.md"
               "hc/en-us/articles/360005239394.md": "repositories-configure/using-submodules.md"
               "hc/en-us/articles/360005239394-using-submodules.md": "repositories-configure/using-submodules.md"
-              "hc/en-us/articles/360005839053.md": "faq/code-analysis/skipping-an-analysis.md"
-              "hc/en-us/articles/360005839053-Skipping-an-analysis.md": "faq/code-analysis/skipping-an-analysis.md"
+              "hc/en-us/articles/360005839053.md": "faq/code-analysis/how-to-skip-an-analysis.md"
+              "hc/en-us/articles/360005839053-Skipping-an-analysis.md": "faq/code-analysis/how-to-skip-an-analysis.md"
               "hc/en-us/articles/360006036934.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/360006036934-PHP-CodeSniffer-Specifying-your-PHP-version.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/360006718454.md": "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md"
@@ -554,6 +554,7 @@ plugins:
               "getting-started/getting-started-with-codacy.md": "getting-started/codacy-quickstart.md"
               "repositories-configure/code-patterns.md": "repositories-configure/configuring-code-patterns.md"
               "repositories-configure/quality-settings.md": "repositories-configure/adjusting-quality-settings.md"
+              "faq/code-analysis/skipping-an-analysis.md": "faq/code-analysis/how-to-skip-an-analysis.md"
 
 nav:
     - Documentation home: "index.md"
@@ -648,7 +649,7 @@ nav:
                 - faq/code-analysis/do-you-check-for-dependencies.md
                 - faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md
                 - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
-                - faq/code-analysis/skipping-an-analysis.md
+                - faq/code-analysis/how-to-skip-an-analysis.md
                 - faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md
           - Troubleshooting:
                 - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
