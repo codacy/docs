@@ -48,7 +48,7 @@ This means that in some situations Codacy could report more issues after a push 
 <td>Number of comments on the Git provider</td>
 <td>25</td>
 <td>
-Codacy limits the number of comments for reporting found issues on pull requests.
+Codacy limits the number of comments for reporting found issues on pull requests to avoid triggering too many notification emails and to guard against hitting API rate limits.
 </td>
 </tr>
 </table>
