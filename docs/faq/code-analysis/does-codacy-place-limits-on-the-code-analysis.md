@@ -25,7 +25,8 @@ See <a href="../../troubleshooting/why-is-my-file-over-150-kb-missing/">Why is m
 <td>File size for coverage reports</td>
 <td>10 MB</td>
 <td>
-Codacy doesn't parse code coverage reports that are over the file size limit. See <a href="../../../coverage-reporter/troubleshooting-common-issues/#jsonparseexception-while-uploading-coverage-data">JsonParseException while uploading coverage data</a>.
+Codacy doesn't parse code coverage reports that are over the file size limit.<br/><br/>
+See <a href="../../../coverage-reporter/troubleshooting-common-issues/#jsonparseexception-while-uploading-coverage-data">JsonParseException while uploading coverage data</a>
 </td>
 </tr>
 <tr>
@@ -40,8 +41,7 @@ See <a href="../../troubleshooting/why-arent-duplication-metrics-being-calculate
 <td>Number of issues per file and per tool</td>
 <td>50</td>
 <td>
-Codacy limits the number of issues returned on each file by individual tools as a safeguard against degradation of performance on large or unexpected use cases.<br/><br/>
-This means that in some situations Codacy could report more issues after a push that includes fixes for the currently reported issues.
+Codacy limits the number of issues returned on each file by individual tools as a safeguard against degradation of performance on large or unexpected use cases. This means that in some situations Codacy could report more issues after a push that includes fixes for the currently reported issues.
 </td>
 </tr>
 <tr>
