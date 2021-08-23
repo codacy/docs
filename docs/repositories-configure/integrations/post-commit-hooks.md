@@ -10,7 +10,7 @@ If you're using GitHub or Bitbucket you can let Codacy configure the hook for yo
 
 ### Missing hook automatic setup switch button
 
-If the switch isn't visible, go to the **Integrations** tab and add the GitHub or Bitbucket integration. 
+If the switch isn't visible, go to the **Integrations** tab and add the GitHub or Bitbucket integration.
 
 !!! important
     Make sure that you enable the integration after adding it.

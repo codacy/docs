@@ -10,12 +10,12 @@ After we enabled submodules for your organization, do the following:
 
 1.  **If you're using Codacy Self-hosted**, you must [update the license](../chart/maintenance/license.md).
 
-2.  If your submodules are:
+1.  If your submodules are:
 
     -   **Public repositories**, make sure that your Git URL uses the HTTPS protocol
     -   **Private repositories**, make sure that your Git URL uses the SSH protocol.
 
-3.  If you already have repositories on Codacy where you want to use submodules, navigate to the page **Settings** and click the button **Generate New User Key** for each of these repositories.
+1.  If you already have repositories on Codacy where you want to use submodules, navigate to the page **Settings** and click the button **Generate New User Key** for each of these repositories.
 
     !!! important
         **If you're using Bitbucket Cloud**, you must manually add the SSH key on your [user account](https://bitbucket.org/account/settings/ssh-keys/).
@@ -24,7 +24,7 @@ After we enabled submodules for your organization, do the following:
 
     ![Generate new user key](images/using-submodules-generate-new-user-key.png)
 
-4.  If you're using submodules to share an analysis tool configuration file across your repositories, check if your tool recursively searches the subdirectories of your repositories for configuration files.
+1.  If you're using submodules to share an analysis tool configuration file across your repositories, check if your tool recursively searches the subdirectories of your repositories for configuration files.
 
     If your tool doesn't detect the configuration files in the submodule directories, you must include a configuration file directly in the root of your repositories referencing the configuration files in the submodule directories.
 

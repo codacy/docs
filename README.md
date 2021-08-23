@@ -6,7 +6,7 @@
 
 ## Contributing to the documentation
 
-Contributions to the documentation are very welcome! 
+Contributions to the documentation are very welcome!
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) to:
 

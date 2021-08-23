@@ -55,7 +55,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
         ```
 
         To:
-        
+
         ```yaml
         global:
           workerManager:
