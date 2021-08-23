@@ -14,7 +14,7 @@ Depending on the configuration of the Bitbucket integration, Codacy can also rep
 
 ## Enabling the Bitbucket integration {: id="enabling"}
 
-To enable the Bitbucket integration, open your project **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
+To enable the Bitbucket integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
 
 ![Bitbucket integration](images/bitbucket-integration.png)
 
@@ -30,7 +30,7 @@ If you remove the integration, you can enable it again as follows:
 
 ## Configuring the Bitbucket integration
 
-To configure the Bitbucket integration, open your project **Settings**, tab **Integrations**.
+To configure the Bitbucket integration, open your repository **Settings**, tab **Integrations**.
 
 Depending on the options that you enable, Codacy will automatically update pull requests on Bitbucket with extra information when accepting pull requests:
 

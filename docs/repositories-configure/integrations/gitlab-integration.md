@@ -10,7 +10,7 @@ Depending on the configuration of the GitLab integration, Codacy can report and 
 
 ## Enabling the GitLab integration {: id="enabling"}
 
-To enable the GitLab integration, open your project **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
+To enable the GitLab integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
 
 ![GitLab integration](images/gitlab-integration.png)
 
@@ -24,7 +24,7 @@ If you remove the integration, you can enable it again as follows:
 
 ## Configuring the GitLab integration
 
-To configure the GitLab integration, open your project **Settings**, tab **Integrations**.
+To configure the GitLab integration, open your repository **Settings**, tab **Integrations**.
 
 Depending on the options that you enable, Codacy will automatically update merge requests on GitLab with extra information when accepting merge requests:
 
