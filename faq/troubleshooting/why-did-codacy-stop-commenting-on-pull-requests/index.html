@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Various reasons can cause Codacy to stop commenting on pull requests. The most common is that the user who enabled the integration no longer has permissions on the repository or that the SSH key is no longer valid.">
+        <meta name="description" content="Different reasons can cause Codacy to stop commenting on pull requests, but the most common is that the user who initially enabled the Git provider integration no longer has permissions on the repository or that the SSH key is no longer valid.">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/">
@@ -2763,8 +2763,15 @@
                 
                 
                 <h1 id="why-did-codacy-stop-commenting-on-pull-requests">Why did Codacy stop commenting on pull requests?<a class="headerlink" href="#why-did-codacy-stop-commenting-on-pull-requests" title="Permanent link">#</a></h1>
-<p>Various reasons can cause Codacy to stop commenting on pull requests. The most common is that the user who enabled the integration no longer has permissions on the repository or that the SSH key is no longer valid.</p>
-<p>To fix the issue, we recommend that a user with administrator permissions on the repository recreates the Git provider integration on Codacy:</p>
+<p>Different reasons can cause Codacy to stop commenting on pull requests, but the most common is that the user who initially enabled the Git provider integration no longer has permissions on the repository or that the SSH key is no longer valid.</p>
+<p>To fix this issue, we recommend that a user <strong>with administrator permissions on the repository</strong> re-enables the Git provider integration on Codacy:</p>
+<ol>
+<li>
+<p>Open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>, and click the trash can icon to remove the existing Git provider integration:</p>
+<p><img alt="Removing the old Git provider integration" src="../images/git-provider-integration-remove.png" /></p>
+</li>
+<li>
+<p>Re-enable the integration by following the instructions for your Git provider:</p>
 <ul>
 <li>
 <p><a href="../../../repositories-configure/integrations/github-integration/#enabling">Enabling the GitHub integration</a></p>
@@ -2776,7 +2783,8 @@
 <p><a href="../../../repositories-configure/integrations/bitbucket-integration/#enabling">Enabling the Bitbucket integration</a></p>
 </li>
 </ul>
-<p>If after recreating the Git provider integration you still have any issues, please contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
+</li>
+</ol>
               
               
                 
@@ -2845,7 +2853,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 23, 2020</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 23, 2021</span>
     
   </small>
 </div>
