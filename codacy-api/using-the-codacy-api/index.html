@@ -2861,8 +2861,11 @@
 
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>If you're using Codacy Self-hosted</strong> you must update the base URL of the APIs to include your Codacy instance domain name. For example:</p>
-<div class="highlight"><pre><span></span><code>https://codacy.example.com/api/v3
+<p><strong>If you're using Codacy Self-hosted</strong> you must use your own Codacy instance domain name in the API URLs to access the endpoint documentation matching your Codacy Self-hosted version and to call the endpoints on your Codacy instance.</p>
+<p>For example, use the following URLs for the API v3 endpoint documentation and endpoints:</p>
+<div class="highlight"><pre><span></span><code>https://&lt;your Codacy instance domain name&gt;/api/api-docs
+
+https://&lt;your Codacy instance domain name&gt;/api/v3
 </code></pre></div>
 </div>
 <h2 id="authenticating-requests-to-the-codacy-api">Authenticating requests to the Codacy API<a class="headerlink" href="#authenticating-requests-to-the-codacy-api" title="Permanent link">#</a></h2>
@@ -3006,7 +3009,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 19, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 24, 2021</span>
     
   </small>
 </div>
