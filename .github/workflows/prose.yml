@@ -1,9 +1,9 @@
-name: Prose
+name: Vale
 
 on: pull_request
 
 jobs:
-  prose:
+  vale:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -12,13 +12,6 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: false
           fetch-depth: 0
-
-      - name: Alex
-        uses: brown-ccv/alex-recommends@v1.2.1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          message_id: 'alex'
-          glob_pattern: "**/*.md"
 
       - name: Vale
         # The option files: __onlyModified requires the master version
