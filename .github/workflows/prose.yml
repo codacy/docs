@@ -1,9 +1,9 @@
-name: Prose
+name: Vale
 
 on: pull_request
 
 jobs:
-  prose:
+  vale:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
