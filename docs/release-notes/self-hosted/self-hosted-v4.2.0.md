@@ -16,28 +16,8 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 Jira issues without release notes:
 
-Epics:
--   https://codacy.atlassian.net/browse/CY-4617
-
 Bugs:
 -   https://codacy.atlassian.net/browse/CY-4618
--   https://codacy.atlassian.net/browse/CY-4461
-
-
-Jira issues with disabled release notes:
-
-Epics:
--   https://codacy.atlassian.net/browse/CY-4844
--   https://codacy.atlassian.net/browse/CY-4654
--   https://codacy.atlassian.net/browse/CY-4365
-
-Bugs:
--   https://codacy.atlassian.net/browse/CY-4847
--   https://codacy.atlassian.net/browse/CY-4846
--   https://codacy.atlassian.net/browse/CY-4759
--   https://codacy.atlassian.net/browse/CY-4622
--   https://codacy.atlassian.net/browse/CY-4570
--   https://codacy.atlassian.net/browse/CY-4442
 
 -->
 
