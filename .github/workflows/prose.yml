@@ -13,13 +13,6 @@ jobs:
           submodules: false
           fetch-depth: 0
 
-      - name: Alex
-        uses: brown-ccv/alex-recommends@v1.2.1
-        with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          message_id: 'alex'
-          glob_pattern: "**/*.md"
-
       - name: Vale
         # The option files: __onlyModified requires the master version
         uses: errata-ai/vale-action@master
