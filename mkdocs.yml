@@ -666,6 +666,7 @@ nav:
                 - faq/repositories/i-moved-my-repository-on-the-git-provider.md
                 - faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md
           - Code analysis:
+                - faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md
                 - faq/code-analysis/does-codacy-check-for-dependencies.md
                 - faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md
                 - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md

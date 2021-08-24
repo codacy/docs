@@ -8,6 +8,7 @@ assignees:
 ---
 
 **Type of feedback**
+
 -   [ ] Bug or incorrect information
 -   [ ] Missing information
 -   [ ] Outdated information

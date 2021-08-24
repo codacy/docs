@@ -14,7 +14,7 @@ Depending on the configuration of the Bitbucket integration, Codacy can also rep
 
 ## Enabling the Bitbucket integration {: id="enabling"}
 
-To enable the Bitbucket integration, open your project **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
+To enable the Bitbucket integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
 
 ![Bitbucket integration](images/bitbucket-integration.png)
 
@@ -25,18 +25,18 @@ If you remove the integration, you can enable it again as follows:
 
     !!! important
         The user that enables the integration must have administrator access to the repository.
-        
+
         Codacy uses this Bitbucket user to create comments on Bitbucket.
 
 ## Configuring the Bitbucket integration
 
-To configure the Bitbucket integration, open your project **Settings**, tab **Integrations**.
+To configure the Bitbucket integration, open your repository **Settings**, tab **Integrations**.
 
 Depending on the options that you enable, Codacy will automatically update pull requests on Bitbucket with extra information when accepting pull requests:
 
 ### Pull Request Status
 
-Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings. 
+Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings.
 
 After enabling this option, you can [set Codacy as a required check](../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md#bitbucket) before merging your pull requests.
 

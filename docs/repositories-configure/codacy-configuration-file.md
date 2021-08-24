@@ -18,7 +18,7 @@ Codacy supports configuring certain advanced features through a configuration fi
 
 To use a Codacy configuration file:
 
-1.  Create a text file with the name `.codacy.yml` or `.codacy.yaml` on the root of your repository. 
+1.  Create a text file with the name `.codacy.yml` or `.codacy.yaml` on the root of your repository.
 
 1.  Add your settings to the configuration file based on the example template below.
 

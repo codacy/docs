@@ -14,7 +14,7 @@ Depending on the configuration of the GitHub integration, Codacy can also report
 
 ## Enabling the GitHub integration {: id="enabling"}
 
-To enable the GitHub integration, open your project **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
+To enable the GitHub integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
 
 ![GitHub integration](images/github-integration.png)
 
@@ -28,7 +28,7 @@ If you remove the integration, you can enable it again as follows:
 
 ## Configuring the GitHub integration
 
-To configure the GitHub integration, open your project **Settings**, tab **Integrations**.
+To configure the GitHub integration, open your repository **Settings**, tab **Integrations**.
 
 Depending on the options that you enable, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests:
 

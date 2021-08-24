@@ -102,7 +102,6 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
 
 If you sign up with GitLab Cloud, Codacy requires the following [permissions/scopes](https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications):
 
-
 <table>
   <colgroup>
     <col width="25%"/>
@@ -190,11 +189,11 @@ If you log in with Google, Codacy requires the `email` [scope](https://developer
 To revoke the access from Codacy to one or more of the OAuth providers:
 
 1.  Click on your avatar on the top right-hand corner and select **Your Account**, tab **Access Management**.
-2.  The **Access Management** page lists all current integrations with Git providers or Google that you used to sign in or log in to Codacy. To revoke access to an integration, click the button **Revoke access** for the intended integration.
+1.  The **Access Management** page lists all current integrations with Git providers or Google that you used to sign in or log in to Codacy. To revoke access to an integration, click the button **Revoke access** for the intended integration.
 
     ![Revoking access to an integration](images/revoke-integration.png)
 
-3.  To ensure that the integration is removed not only on Codacy but also on the integration side, we recommend that you follow the instructions on how to revoke the Codacy OAuth application on your provider:
+1.  To ensure that the integration is removed not only on Codacy but also on the integration side, we recommend that you follow the instructions on how to revoke the Codacy OAuth application on your provider:
 
     -   [GitHub Cloud](https://help.github.com/en/github/authenticating-to-github/reviewing-your-authorized-integrations)
     -   [GitLab Cloud](https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications)
