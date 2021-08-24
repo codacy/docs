@@ -12,15 +12,6 @@ These release notes are for [Codacy Self-hosted v4.2.0](https://github.com/codac
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
-<!--TODO Check these issues
-
-Jira issues without release notes:
-
-Bugs:
--   https://codacy.atlassian.net/browse/CY-4618
-
--->
-
 ## Product enhancements
 
 -   It's now possible to [configure the Codacy quality settings](https://docs.codacy.com/v4.2/repositories-configure/adjusting-quality-settings/) with the minimum severity level of new issues and a maximum number of new security issues. The status reported by Codacy on pull requests now includes more information on why the validation passed or failed. (CY-4216)
@@ -29,6 +20,7 @@ Bugs:
 ## Bug fixes
 
 -   Fixed an issue that prevented administrators from removing users from Bitbucket Server organizations on Codacy. Besides this, Codacy Self-hosted administrators can now remove users from Codacy even if they're the last administrator in an organization. (CY-4724)
+-   Fixed an issue that could allow an attacker to enable/disable analysis of branches on repositories that they didn't have permissions to access. CVSS v3.1 score: 2.9 (Low) (CY-4618)
 -   Fixed an issue that caused the API endpoint `listOrganizationRepositories` to fail if it received both a cursor and an empty search string. (CY-4359)
 
 ## Tool versions
