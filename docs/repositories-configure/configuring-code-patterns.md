@@ -31,7 +31,7 @@ To make it easier to find relevant code patterns, you can use the sidebar to fil
 
 !!! tip
     To enable **all code patterns** matching a specific category, use the filter to select the relevant patterns and click **Enable all**.
-    
+
     For example, to enable all Security patterns of a tool, you can use the **Security** filter and click **Enable all**.
 
 Issues detected by Codacy belong to one of the following categories:

@@ -24,7 +24,7 @@ As a workaround, if you're exceeding the maximum number of source code files:
 
     For example, you may be able to exclude files that are automatically generated from your test suite or files belonging to dependencies that aren't maintained by your team, such as the `node_modules` folder for JavaScript projects.
 
-2.  Reanalyze the last commit in the repository so that Codacy runs the code duplication analysis.
+1.  Reanalyze the last commit in the repository so that Codacy runs the code duplication analysis.
 
 If the analysis finishes but the code duplication metric wasn't calculated, follow the next steps:
 
