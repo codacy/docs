@@ -15,8 +15,6 @@ For product updates that are in progress or planned, see Codacy's [public roadma
 
 ## Codacy Cloud release notes
 
-🚧 Regular release notes for Codacy Cloud will be available soon.
-
 -   [Performing scheduled database maintenance](cloud/cloud-2021-07-03-scheduled-db-maintenance.md) (July 3, 2021)
 -   [Deprecating HTTP headers for API tokens](cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens.md) (April 1, 2020)
 -   [Removal of NodeSecurity, GoLint, and SCSSLint](cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal.md) (March 9, 2020)
