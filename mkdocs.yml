@@ -684,7 +684,8 @@ nav:
     - Release notes:
           - release-notes/index.md
           - Codacy Cloud:
-                - release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance.md
+                - 2021:
+                      - release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance.md
                 - 2020:
                       - release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens.md
                       - release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal.md
@@ -707,9 +708,10 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Codacy Self-hosted:
-                - release-notes/self-hosted/self-hosted-v4.1.0.md
-                - release-notes/self-hosted/self-hosted-v4.0.1.md
-                - release-notes/self-hosted/self-hosted-v4.0.0.md
+                - v4:
+                      - release-notes/self-hosted/self-hosted-v4.1.0.md
+                      - release-notes/self-hosted/self-hosted-v4.0.1.md
+                      - release-notes/self-hosted/self-hosted-v4.0.0.md
                 - v3:
                       - release-notes/self-hosted/self-hosted-v3.5.1.md
                       - release-notes/self-hosted/self-hosted-v3.5.0.md
