@@ -11,6 +11,6 @@ GitHub Apps are the new preferred way of building products that work with GitHub
 
 Using Apps also unlocks access to new APIs, like GitHub Checks for creating better pull request reviews.
 
-![Installing the Codacy GitHub app](images/ghapps.gif)
+![Installing the Codacy GitHub app](../images/2020-02-github-apps.gif)
 
 To migrate to Apps all you have to do is sign out, sign in to Codacy and follow the wizard requesting the new permissions. Existing integrations will continue to work.
