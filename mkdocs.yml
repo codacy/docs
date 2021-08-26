@@ -622,7 +622,7 @@ nav:
                 - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
                 - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
                 - codacy-api/examples/obtaining-current-issues-in-repositories.md
-    - Installing Codacy: "!include submodules/chart/mkdocs.yml"
+    - Managing Codacy Self-hosted: "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
                 - faq/general/which-version-control-systems-does-codacy-support.md
