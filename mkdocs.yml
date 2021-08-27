@@ -95,7 +95,9 @@ plugins:
     # https://github.com/Guts/mkdocs-rss-plugin
     - rss:
           image: "https://docs.codacy.com/assets/images/codacy-logo.png"
-          match_path: "release-notes/.*"
+          # TODO Simplify regex below when possible,
+          #      see https://github.com/codacy/docs/pull/797#issuecomment-907325214
+          match_path: "release-notes\/(self-hosted.*|cloud\/cloud-202[^0](?!-07-03).*)"
     # Generate redirects for moved or deleted pages
     # https://github.com/datarobot/mkdocs-redirects
     - redirects:
