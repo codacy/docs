@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Codacy Cloud currently doesn&#x27;t analyze files that are larger than 150 KB. Codacy doesn&#x27;t display these files on the Files page, and doesn&#x27;t take them into account when grading your repository.">
+        <meta name="description" content="To enforce a specific PHP_CodeSniffer coding standard on Codacy you must create a configuration file on the root of your repository that references one or more coding standards.">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/faq/troubleshooting/why-is-my-file-over-150-kb-missing/">
+        <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/how-to-configure-php-codesniffer-coding-standards/">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
@@ -21,7 +21,7 @@
     
     
       
-        <title>Why is my file over 150 KB missing? - Codacy docs</title>
+        <title>How to configure PHP_CodeSniffer coding standards? - Codacy docs</title>
       
     
     
@@ -64,7 +64,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#why-is-my-file-over-150-kb-missing" class="md-skip">
+        <a href="#how-to-configure-php_codesniffer-coding-standards" class="md-skip">
           Skip to content
         </a>
       
@@ -1912,10 +1912,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10-3" type="checkbox" id="nav-10-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10-3" type="checkbox" id="nav-10-3" checked>
     
     <label class="md-nav__link" for="nav-10-3">
       Code analysis
@@ -1939,7 +1941,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../code-analysis/does-codacy-place-limits-on-the-code-analysis/" title="Does Codacy place limits on the code analysis?" class="md-nav__link">
+    <a href="../does-codacy-place-limits-on-the-code-analysis/" title="Does Codacy place limits on the code analysis?" class="md-nav__link">
       Does Codacy place limits on the code analysis?
     </a>
   </li>
@@ -1951,7 +1953,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../code-analysis/does-codacy-check-for-dependencies/" title="Does Codacy check for dependencies?" class="md-nav__link">
+    <a href="../does-codacy-check-for-dependencies/" title="Does Codacy check for dependencies?" class="md-nav__link">
       Does Codacy check for dependencies?
     </a>
   </li>
@@ -1963,7 +1965,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../code-analysis/how-does-codacy-measure-complexity-in-my-repository/" title="How does Codacy measure complexity in my repository?" class="md-nav__link">
+    <a href="../how-does-codacy-measure-complexity-in-my-repository/" title="How does Codacy measure complexity in my repository?" class="md-nav__link">
       How does Codacy measure complexity in my repository?
     </a>
   </li>
@@ -1975,7 +1977,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed/" title="How long does it take for my repository to be analyzed?" class="md-nav__link">
+    <a href="../how-long-does-it-take-for-my-repository-to-be-analyzed/" title="How long does it take for my repository to be analyzed?" class="md-nav__link">
       How long does it take for my repository to be analyzed?
     </a>
   </li>
@@ -1987,7 +1989,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../code-analysis/how-to-skip-an-analysis/" title="How to skip an analysis?" class="md-nav__link">
+    <a href="../how-to-skip-an-analysis/" title="How to skip an analysis?" class="md-nav__link">
       How to skip an analysis?
     </a>
   </li>
@@ -1997,11 +1999,47 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../code-analysis/how-to-configure-php-codesniffer-coding-standards/" title="How to configure PHP_CodeSniffer coding standards?" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        How to configure PHP_CodeSniffer coding standards?
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="How to configure PHP_CodeSniffer coding standards?" class="md-nav__link md-nav__link--active">
       How to configure PHP_CodeSniffer coding standards?
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#see-also" class="md-nav__link">
+    See also
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -2014,12 +2052,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10-4" type="checkbox" id="nav-10-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10-4" type="checkbox" id="nav-10-4">
     
     <label class="md-nav__link" for="nav-10-4">
       Troubleshooting
@@ -2043,7 +2079,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../why-did-codacy-stop-commenting-on-pull-requests/" title="Why did Codacy stop commenting on pull requests?" class="md-nav__link">
+    <a href="../../troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/" title="Why did Codacy stop commenting on pull requests?" class="md-nav__link">
       Why did Codacy stop commenting on pull requests?
     </a>
   </li>
@@ -2055,7 +2091,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../why-arent-duplication-metrics-being-calculated/" title="Why aren't duplication metrics being calculated?" class="md-nav__link">
+    <a href="../../troubleshooting/why-arent-duplication-metrics-being-calculated/" title="Why aren't duplication metrics being calculated?" class="md-nav__link">
       Why aren't duplication metrics being calculated?
     </a>
   </li>
@@ -2067,7 +2103,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../why-isnt-my-public-repository-being-analyzed/" title="Why isn't my public repository being analyzed?" class="md-nav__link">
+    <a href="../../troubleshooting/why-isnt-my-public-repository-being-analyzed/" title="Why isn't my public repository being analyzed?" class="md-nav__link">
       Why isn't my public repository being analyzed?
     </a>
   </li>
@@ -2079,7 +2115,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../why-cant-i-configure-post-commit-hooks-and-integrations/" title="Why can't I configure post-commit hooks and integrations?" class="md-nav__link">
+    <a href="../../troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations/" title="Why can't I configure post-commit hooks and integrations?" class="md-nav__link">
       Why can't I configure post-commit hooks and integrations?
     </a>
   </li>
@@ -2091,7 +2127,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../not-a-member-of-the-organization/" title="Not a member of the organization" class="md-nav__link">
+    <a href="../../troubleshooting/not-a-member-of-the-organization/" title="Not a member of the organization" class="md-nav__link">
       Not a member of the organization
     </a>
   </li>
@@ -2103,7 +2139,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../we-no-longer-have-access-to-this-repository/" title="We no longer have access to this repository, check your SSH keys" class="md-nav__link">
+    <a href="../../troubleshooting/we-no-longer-have-access-to-this-repository/" title="We no longer have access to this repository, check your SSH keys" class="md-nav__link">
       We no longer have access to this repository, check your SSH keys
     </a>
   </li>
@@ -2113,61 +2149,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Why is my file over 150 KB missing?
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Why is my file over 150 KB missing?" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../troubleshooting/why-is-my-file-over-150-kb-missing/" title="Why is my file over 150 KB missing?" class="md-nav__link">
       Why is my file over 150 KB missing?
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#why-is-there-a-limit" class="md-nav__link">
-    Why is there a limit?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#what-if-i-need-to-analyze-a-file-that-exceeds-this-limit" class="md-nav__link">
-    What if I need to analyze a file that exceeds this limit?
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#what-about-codacy-self-hosted" class="md-nav__link">
-    What about Codacy Self-hosted?
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -2177,7 +2163,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../error-line-endings/" title="Error caused by incompatible line endings" class="md-nav__link">
+    <a href="../../troubleshooting/error-line-endings/" title="Error caused by incompatible line endings" class="md-nav__link">
       Error caused by incompatible line endings
     </a>
   </li>
@@ -3055,41 +3041,35 @@
                   
                 
                 
-                <h1 id="why-is-my-file-over-150-kb-missing">Why is my file over 150 KB missing?<a class="headerlink" href="#why-is-my-file-over-150-kb-missing" title="Permanent link">#</a></h1>
-<p>Codacy Cloud currently doesn't analyze files that are larger than 150 KB. Codacy doesn't display these files on the <a href="../../../repositories/files/">Files page</a>, and doesn't take them into account when grading your repository.</p>
-<h2 id="why-is-there-a-limit">Why is there a limit?<a class="headerlink" href="#why-is-there-a-limit" title="Permanent link">#</a></h2>
-<p>As part of our performance improvement measures, we spent time breaking down the total time it takes to analyze a repository and found that a large percentage of time was spent on files that didn't add value to our users. Those files tend to be the biggest in the repository and are typically generated by or dependent on a third-party. It increased analysis time significantly due to the file size and even resulted in time-outs at some point, preventing the flagging of real issues.</p>
-<p>As a solution to this problem, we placed a size limit to the files that Codacy would analyze. This decreased the average analysis time and the number of timeouts, thus improving the overall performance for our users.</p>
-<h2 id="what-if-i-need-to-analyze-a-file-that-exceeds-this-limit">What if I need to analyze a file that exceeds this limit?<a class="headerlink" href="#what-if-i-need-to-analyze-a-file-that-exceeds-this-limit" title="Permanent link">#</a></h2>
-<p>While Codacy will ignore your file by default, you can still analyze it by running the analysis locally using the <a href="../../../related-tools/local-analysis/running-local-analysis/">Codacy Analysis CLI</a>. The Codacy Analysis CLI doesn't have any limitation on file size.</p>
-<h2 id="what-about-codacy-self-hosted">What about Codacy Self-hosted?<a class="headerlink" href="#what-about-codacy-self-hosted" title="Permanent link">#</a></h2>
-<p>By default, Codacy Self-hosted has the same limit of 150 KB as Codacy Cloud. However, in this case the limit is configurable because the resource allocation for on-premise instances is decided by each organization.</p>
-<p>To update the file size limit:</p>
-<ol>
+                <h1 id="how-to-configure-php_codesniffer-coding-standards">How to configure PHP_CodeSniffer coding standards?<a class="headerlink" href="#how-to-configure-php_codesniffer-coding-standards" title="Permanent link">#</a></h1>
+<p>By default, Codacy uses the PHP_CodeSniffer configuration on the <a href="../../../repositories-configure/configuring-code-patterns/">Code patterns</a> page when analyzing your repositories.</p>
+<p>To enforce a specific PHP_CodeSniffer coding standard you must <a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage#using-a-default-configuration-file">create a configuration file</a> on the root of your repository that references one or more of the following coding standards:</p>
+<ul>
 <li>
-<p>Edit the value of <code>global.workerManager.workers.config.analysis.maxFileSizeBytes</code> in the <code>values-production.yaml</code> file that you used to install Codacy:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
-  <span class="nt">workerManager</span><span class="p">:</span>
-    <span class="nt">workers</span><span class="p">:</span>
-      <span class="nt">config</span><span class="p">:</span>
-        <span class="nt">analysis</span><span class="p">:</span>
-          <span class="nt">maxFileSizeBytes</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">150000</span>
-</code></pre></div>
+<p>Default coding standards packaged together with PHP_CodeSniffer:</p>
+<p><a href="https://github.com/squizlabs/PHP_CodeSniffer/tree/master/src/Standards">https://github.com/squizlabs/PHP_CodeSniffer/tree/master/src/Standards</a></p>
 </li>
 <li>
-<p>Apply the new configuration by performing a Helm upgrade and specifying the Codacy Self-hosted version currently installed. To do so execute the command <a href="../../../chart/#helm-upgrade">used to install Codacy</a>:</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>If you're using MicroK8s</strong> you must use the file <code>values-microk8s.yaml</code> together with the file <code>values-production.yaml</code>.</p>
-<p>To do this, uncomment the last line before running the <code>helm upgrade</code> command below.</p>
-</div>
-<div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span> <span class="se">\</span>
-             --version &lt;current Codacy Self-hosted version&gt; <span class="se">\</span>
-             --values values-production.yaml <span class="se">\</span>
-             <span class="c1"># --values values-microk8s.yaml</span>
-</code></pre></div>
+<p>Additional coding standards that Codacy packages on the PHP_CodeSniffer tool plugin. Check the repository the additional coding standards to learn how you can reference them in your configuration files:</p>
+<p><a href="https://github.com/codacy/codacy-codesniffer/blob/master/composer.json">https://github.com/codacy/codacy-codesniffer/blob/master/composer.json</a></p>
 </li>
-</ol>
+</ul>
+<p>For example, create a text file with the name <code>.phpcs.xml</code> to use the PSR12 coding standard but excluding the sniffs <code>Generic.WhiteSpace.DisallowTabIndent</code> and <code>PSR12.Operators.OperatorSpacing</code>:</p>
+<div class="highlight"><pre><span></span><code><span class="cp">&lt;?xml version=&quot;1.0&quot;?&gt;</span>
+<span class="nt">&lt;ruleset</span> <span class="na">name=</span><span class="s">&quot;PHP_CodeSniffer&quot;</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;description&gt;</span>PHP_CodeSniffer configuration<span class="nt">&lt;/description&gt;</span>
+  <span class="nt">&lt;rule</span> <span class="na">ref=</span><span class="s">&quot;PSR12&quot;</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;exclude</span> <span class="na">name=</span><span class="s">&quot;Generic.WhiteSpace.DisallowTabIndent&quot;</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;exclude</span> <span class="na">name=</span><span class="s">&quot;PSR12.Operators.OperatorSpacing&quot;</span><span class="nt">/&gt;</span>
+  <span class="nt">&lt;/rule&gt;</span>
+<span class="nt">&lt;/ruleset&gt;</span>
+</code></pre></div>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
+<p>Check these external resources for more help on customizing your PHP_CodeSniffer configuration:</p>
+<ul>
+<li><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Annotated-Ruleset">PHP_CodeSniffer configuration file syntax</a></li>
+<li><a href="https://edorian.github.io/php-coding-standard-generator/#phpcs">PHP Coding Standard Generator</a></li>
+</ul>
               
               
                 
@@ -3114,10 +3094,10 @@
       Thank you for the feedback!
     </p>
     <p class="user-feedback-response user-feedback-response--no">
-      We're sorry to hear that. Please <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Why is my file over 150 KB missing?%22">let us know what we can improve</a>.
+      We're sorry to hear that. Please <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22How to configure PHP_CodeSniffer coding standards?%22">let us know what we can improve</a>.
     </p>
     <p>
-      If you have a question, please <a href="https://community.codacy.com/">ask our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Why is my file over 150 KB missing?">support@codacy.com</a>.
+      If you have a question, please <a href="https://community.codacy.com/">ask our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20How to configure PHP_CodeSniffer coding standards?">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -3158,7 +3138,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 23, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 27, 2021</span>
     
   </small>
 </div>
