@@ -683,7 +683,7 @@ nav:
                 - faq/troubleshooting/error-line-endings.md
     - Release notes:
           - release-notes/index.md
-          - Codacy Cloud:
+          - Cloud:
                 - 2021:
                       - release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance.md
                 - 2020:
@@ -707,7 +707,7 @@ nav:
                       - release-notes/cloud/cloud-2018-11-02.md
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
-          - Codacy Self-hosted:
+          - Self-hosted:
                 - v4:
                       - release-notes/self-hosted/self-hosted-v4.1.0.md
                       - release-notes/self-hosted/self-hosted-v4.0.1.md
