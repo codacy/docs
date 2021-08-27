@@ -88,25 +88,25 @@ https://docs.codacy.com/related-tools/local-analysis/running-deadcode/,Instructi
 https://docs.codacy.com/related-tools/local-analysis/running-local-analysis/,Documentation for the Codacy automated code review tool.
 https://docs.codacy.com/related-tools/local-analysis/running-spotbugs/,Instructions on how to run SpotBugs as a client-side tool on Codacy.
 https://docs.codacy.com/release-notes/,Index of release notes for Codacy Cloud and Codacy Self-hosted.
-https://docs.codacy.com/release-notes/cloud/bitbucket-changes/,"We're making some changes on February 18, 2019 that will cause all existing integrations with Bitbucket to stop working."
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-02-january-2019/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-02-november-2018/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-05-may-2019/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-05-set-2019/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-07-aug-2019/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-08-april-2019/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-15-nov-2019/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-16-november-2018/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-18-jun-2019/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-19-october-2018/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-20-may-2019/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-23-july-2018/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-29-march-2019/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/cloud-release-notes-%7C-30-oct-2019/,Documentation for the Codacy automated code review tool.
-https://docs.codacy.com/release-notes/cloud/codacy-now-supports-github-apps/,"We're changing the way you authenticate to Codacy with GitHub: Starting February 2020, when you sign in, you'll be prompted to use GitHub Apps."
-https://docs.codacy.com/release-notes/cloud/deprecating-http-headers-for-api-tokens/,"On April 1st, 2020 we're deprecating the api_token and project_token HTTP headers used to authenticate to the Codacy API."
-https://docs.codacy.com/release-notes/cloud/removal-of-nodesecurity-golint-and-scsslint/,"On the week of March 9th 2020, we'll be removing some tools from Codacy."
-https://docs.codacy.com/release-notes/cloud/scheduled-db-maintenance/,"On July 3, 2021, starting at 08:00 UTC we'll perform scheduled database maintenance to improve the performance and scalability of Codacy Cloud."
+https://docs.codacy.com/release-notes/cloud/cloud-2018-07-23/,"Release notes for Codacy Cloud July 23, 2018."
+https://docs.codacy.com/release-notes/cloud/cloud-2018-10-19/,"Release notes for Codacy Cloud October 19, 2018."
+https://docs.codacy.com/release-notes/cloud/cloud-2018-11-02/,"Release notes for Codacy Cloud November 2, 2018."
+https://docs.codacy.com/release-notes/cloud/cloud-2018-11-16/,"Release notes for Codacy Cloud November 16, 2018."
+https://docs.codacy.com/release-notes/cloud/cloud-2019-01-02/,"Release notes for Codacy Cloud January 2, 2019."
+https://docs.codacy.com/release-notes/cloud/cloud-2019-02-18-bitbucket-changes/,"We're making some changes on February 18, 2019 that will cause all existing integrations with Bitbucket to stop working."
+https://docs.codacy.com/release-notes/cloud/cloud-2019-03-29/,"Release notes for Codacy Cloud March 29, 2019."
+https://docs.codacy.com/release-notes/cloud/cloud-2019-04-08/,"Release notes for Codacy Cloud April 8, 2019."
+https://docs.codacy.com/release-notes/cloud/cloud-2019-05-05/,"Release notes for Codacy Cloud May 5, 2019."
+https://docs.codacy.com/release-notes/cloud/cloud-2019-05-20/,"Release notes for Codacy Cloud May 20, 2019."
+https://docs.codacy.com/release-notes/cloud/cloud-2019-06-18/,"Release notes for Codacy Cloud June 18, 2019."
+https://docs.codacy.com/release-notes/cloud/cloud-2019-08-07/,"Release notes for Codacy Cloud August 7, 2019."
+https://docs.codacy.com/release-notes/cloud/cloud-2019-09-05/,"Release notes for Codacy Cloud September 5, 2019."
+https://docs.codacy.com/release-notes/cloud/cloud-2019-10-30/,"Release notes for Codacy Cloud October 30, 2019."
+https://docs.codacy.com/release-notes/cloud/cloud-2019-11-15/,"Release notes for Codacy Cloud November 15, 2019."
+https://docs.codacy.com/release-notes/cloud/cloud-2020-02-github-apps/,"We're changing the way you authenticate to Codacy with GitHub: Starting February 2020, when you sign in, you'll be prompted to use GitHub Apps."
+https://docs.codacy.com/release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal/,"On the week of March 9th 2020, we'll be removing some tools from Codacy."
+https://docs.codacy.com/release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens/,"On April 1st, 2020 we're deprecating the api_token and project_token HTTP headers used to authenticate to the Codacy API."
+https://docs.codacy.com/release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance/,"On July 3, 2021, starting at 08:00 UTC we'll perform scheduled database maintenance to improve the performance and scalability of Codacy Cloud."
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.0/,Release notes for Codacy Self-hosted v1.0.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.1/,Release notes for Codacy Self-hosted v1.0.1.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.1.0/,Release notes for Codacy Self-hosted v1.1.0.
