@@ -3,7 +3,7 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Performing scheduled database maintenance | July 3, 2021
+# Performing scheduled database maintenance July 3, 2021
 
 On July 3, 2021, starting at 08:00 UTC we'll perform scheduled database maintenance to improve the performance and scalability of Codacy Cloud.
 

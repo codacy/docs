@@ -3,7 +3,7 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Bitbucket changes
+# Bitbucket changes February 18, 2019
 
 We're making some changes on February 18, 2019 **that will cause all existing integrations with Bitbucket to stop working**.
 
@@ -30,4 +30,4 @@ If the original user who set up your Bitbucket integration isn't available, some
 
 You can log in with Bitbucket through <https://www.codacy.com/login-with/bitbucket>.
 
-![Logging in using Bitbucket](images/Screenshot_2019-02-14_at_12.00.41.png)
+![Logging in using Bitbucket](../images/2019-02-18-bitbucket-changes.png)
