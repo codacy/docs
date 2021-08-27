@@ -1,18 +1,18 @@
 ---
-description: To enforce a specific PHP_CodeSniffer code standard on Codacy you must create a configuration file on the root of your repository that references one or more code standards.
+description: To enforce a specific PHP_CodeSniffer coding standard on Codacy you must create a configuration file on the root of your repository that references one or more coding standards.
 ---
 
-# How to configure PHP_CodeSniffer code standards?
+# How to configure PHP_CodeSniffer coding standards?
 
 By default, Codacy uses the PHP_CodeSniffer configuration on the [Code patterns](../../repositories-configure/configuring-code-patterns.md) page when analyzing your repositories.
 
-To enforce a specific PHP_CodeSniffer code standard you must [create a configuration file](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage#using-a-default-configuration-file) on the root of your repository that references one or more of the following code standards:
+To enforce a specific PHP_CodeSniffer coding standard you must [create a configuration file](https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage#using-a-default-configuration-file) on the root of your repository that references one or more of the following coding standards:
 
--   Default code standards packaged together with PHP_CodeSniffer:
+-   Default coding standards packaged together with PHP_CodeSniffer:
 
     <https://github.com/squizlabs/PHP_CodeSniffer/tree/master/src/Standards>
 
--   Additional code standards that Codacy packages on the PHP_CodeSniffer tool plugin. Check the repository the additional code standards to learn how you can reference them in your configuration files:
+-   Additional coding standards that Codacy packages on the PHP_CodeSniffer tool plugin. Check the repository the additional coding standards to learn how you can reference them in your configuration files:
 
     <https://github.com/codacy/codacy-codesniffer/blob/master/composer.json>
 

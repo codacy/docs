@@ -114,8 +114,8 @@ plugins:
               "hc/en-us/articles/115000566729-How-do-I-ignore-files-that-are-not-in-master-branch-.md": "repositories-configure/ignoring-files.md"
               "hc/en-us/articles/115000723329.md": "repositories/security-monitor.md"
               "hc/en-us/articles/115000723329-Security-Dashboard.md": "repositories/security-monitor.md"
-              "hc/en-us/articles/115000947569.md": "faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md"
-              "hc/en-us/articles/115000947569-Code-Standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md"
+              "hc/en-us/articles/115000947569.md": "faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md"
+              "hc/en-us/articles/115000947569-Code-Standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md"
               "hc/en-us/articles/115001853565.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "hc/en-us/articles/115001853565-Upgrading-your-Codacy-account.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "hc/en-us/articles/115001959985.md": "faq/troubleshooting/not-a-member-of-the-organization.md"
@@ -536,7 +536,7 @@ plugins:
               "coverage-reporter/generating-coverage-reports.md": "coverage-reporter/index.md"
               "coverage-reporter/adding-coverage-to-your-repository.md": "coverage-reporter/index.md"
               "faq/code-analysis/error-line-endings.md": "faq/troubleshooting/error-line-endings.md"
-              "repositories-configure/code-standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md"
+              "repositories-configure/code-standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md"
               "repositories-configure/integrations/project-api.md": "codacy-api/api-tokens.md"
               "faq/repositories/how-do-i-programmatically-add-repositories-to-codacy.md": "codacy-api/examples/adding-repositories-to-codacy-programmatically.md"
               "repositories/badges.md": "getting-started/adding-a-codacy-badge.md"
@@ -556,6 +556,7 @@ plugins:
               "repositories-configure/quality-settings.md": "repositories-configure/adjusting-quality-settings.md"
               "faq/code-analysis/skipping-an-analysis.md": "faq/code-analysis/how-to-skip-an-analysis.md"
               "faq/code-analysis/do-you-check-for-dependencies.md": "faq/code-analysis/does-codacy-check-for-dependencies.md"
+              "faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md"
 
 nav:
     - Documentation home: "index.md"
@@ -652,7 +653,7 @@ nav:
                 - faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md
                 - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
                 - faq/code-analysis/how-to-skip-an-analysis.md
-                - faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md
+                - faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md
           - Troubleshooting:
                 - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
                 - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md

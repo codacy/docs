@@ -36,7 +36,7 @@ You can define one or more of the following filters:
 -   **Severity level:** Potential impact of the issues:
 
     -   **Critical (red):** The most dangerous issues that you should prioritize fixing since they identify code that's susceptible to serious problems regarding security and compatibility
-    -   **Medium (yellow):** You should check out these issues, as they're based on code standards and conventions
+    -   **Medium (yellow):** You should check out these issues, as they're based on coding standards and conventions
     -   **Minor (blue):** The least critical issues, such as code style issues
 
 -   **Pattern:** [Code pattern](../repositories-configure/configuring-code-patterns.md) that detected the issue
