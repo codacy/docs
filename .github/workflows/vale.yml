@@ -11,11 +11,9 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: false
-          fetch-depth: 0
 
       - name: Vale
-        # The option files: __onlyModified requires the master version
-        uses: errata-ai/vale-action@master
+        uses: errata-ai/vale-action@v1.4.2
         with:
           files: __onlyModified
         env:
