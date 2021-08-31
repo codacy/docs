@@ -4,6 +4,8 @@ description: Documentation homepage for the Codacy automated code review tool.
 
 # Documentation home
 
+Triggering a Vale issue is not trivial.
+
 <div class="content-columns-wrapper">
   <div class="content-link-column">
     <div>Getting started</div>
