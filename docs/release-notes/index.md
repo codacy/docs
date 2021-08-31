@@ -51,7 +51,7 @@ For product updates that are in progress or planned, see [Codacy's public roadma
 
 v4
 
--   [v4.2.0](self-hosted/self-hosted-v4.2.0.md) (August 24, 2021) <!-- TODO Update release date -->
+-   [v4.2.0](self-hosted/self-hosted-v4.2.0.md) (August 31, 2021)
 -   [v4.1.0](self-hosted/self-hosted-v4.1.0.md) (July 6, 2021)
 -   [v4.0.1](self-hosted/self-hosted-v4.0.1.md) (June 2, 2021)
 -   [v4.0.0](self-hosted/self-hosted-v4.0.0.md) (May 18, 2021)
