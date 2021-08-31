@@ -2,6 +2,8 @@
 
 We would like to thank everyone who helped us greatly. The names on these lists contributed immensely to what Codacy is today.
 
+This is a new line with a Vale issue, and cannot pass the pull request test.
+
 ## Open source tools
 
 In addition to in-house built rules, we use open source tools for many of our static analysis. We want to express our gratitude to everyone who contributed to those tools.
