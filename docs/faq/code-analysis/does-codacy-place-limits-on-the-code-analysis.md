@@ -4,6 +4,12 @@ Codacy uses limits when performing the analysis of your repositories to ensure g
 
 The following table describes these limits and includes links to more information and workarounds, if available:
 
+<!--NOTE
+    See the comments in this Jira task for more background information on the limits listed on this page:
+
+    https://codacy.atlassian.net/browse/CY-3232
+-->
+
 <table>
 <thead>
 <tr>
