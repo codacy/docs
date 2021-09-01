@@ -80,3 +80,14 @@ To edit an existing coding standard or change the repositories that follow that 
 
 Optionally, you can configure new repositories in your organization to follow the coding standard by default:
 
+## Setting a coding standard as default {: id="set-default"}
+
+New repositories in your organization will automatically follow the default coding standard.
+
+To set a coding standard as default:
+
+1.  Open your organization **Coding standards** page, tab **Coding standards**.
+
+1.  Toggle **Make default** on the coding standard card.
+
+    ![Setting a coding standard as the default](images/coding-standard-set-default.png)
