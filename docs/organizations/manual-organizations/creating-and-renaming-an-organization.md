@@ -1,3 +1,7 @@
+---
+description: "From April 3rd, 2020 onward it's no longer possible to create new Manual Organizations on Codacy cloud, although you can continue using your existing Manual Organizations."
+---
+
 # Creating and renaming an organization
 
 !!! note
