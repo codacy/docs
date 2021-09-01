@@ -693,6 +693,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2021:
+                      - release-notes/cloud/cloud-2021-08.md
                       - release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance.md
                 - 2020:
                       - release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens.md

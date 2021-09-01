@@ -18,34 +18,35 @@ For product updates that are in progress or planned, see [Codacy's public roadma
 
 2021
 
-- [Performing scheduled database maintenance July 3, 2021](cloud/cloud-2021-07-03-scheduled-db-maintenance.md)
+-   [Cloud August 2021](cloud/cloud-2021-08.md)
+-   [Performing scheduled database maintenance July 3, 2021](cloud/cloud-2021-07-03-scheduled-db-maintenance.md)
 
 2020
 
-- [Deprecating HTTP headers for API tokens April 1, 2020](cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens.md)
-- [Removal of NodeSecurity, GoLint, and SCSS Lint March 9, 2020](cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal.md)
-- [Codacy now supports GitHub Apps February 2, 2020](cloud/cloud-2020-02-github-apps.md)
+-   [Deprecating HTTP headers for API tokens April 1, 2020](cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens.md)
+-   [Removal of NodeSecurity, GoLint, and SCSS Lint March 9, 2020](cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal.md)
+-   [Codacy now supports GitHub Apps February 2, 2020](cloud/cloud-2020-02-github-apps.md)
 
 2019
 
-- [Cloud November 15, 2019](cloud/cloud-2019-11-15.md)
-- [Cloud October 30, 2019](cloud/cloud-2019-10-30.md)
-- [Cloud September 5, 2019](cloud/cloud-2019-09-05.md)
-- [Cloud August 7, 2019](cloud/cloud-2019-08-07.md)
-- [Cloud June 18, 2019](cloud/cloud-2019-06-18.md)
-- [Cloud May 20, 2019](cloud/cloud-2019-05-20.md)
-- [Cloud May 5, 2019](cloud/cloud-2019-05-05.md)
-- [Cloud April 8, 2019](cloud/cloud-2019-04-08.md)
-- [Cloud March 29, 2019](cloud/cloud-2019-03-29.md)
-- [Bitbucket changes February 18, 2019](cloud/cloud-2019-02-18-bitbucket-changes.md)
-- [Cloud January 2, 2019](cloud/cloud-2019-01-02.md)
+-   [Cloud November 15, 2019](cloud/cloud-2019-11-15.md)
+-   [Cloud October 30, 2019](cloud/cloud-2019-10-30.md)
+-   [Cloud September 5, 2019](cloud/cloud-2019-09-05.md)
+-   [Cloud August 7, 2019](cloud/cloud-2019-08-07.md)
+-   [Cloud June 18, 2019](cloud/cloud-2019-06-18.md)
+-   [Cloud May 20, 2019](cloud/cloud-2019-05-20.md)
+-   [Cloud May 5, 2019](cloud/cloud-2019-05-05.md)
+-   [Cloud April 8, 2019](cloud/cloud-2019-04-08.md)
+-   [Cloud March 29, 2019](cloud/cloud-2019-03-29.md)
+-   [Bitbucket changes February 18, 2019](cloud/cloud-2019-02-18-bitbucket-changes.md)
+-   [Cloud January 2, 2019](cloud/cloud-2019-01-02.md)
 
 2018
 
-- [Cloud November 16, 2018](cloud/cloud-2018-11-16.md)
-- [Cloud November 2, 2018](cloud/cloud-2018-11-02.md)
-- [Cloud October 19, 2018](cloud/cloud-2018-10-19.md)
-- [Cloud July 23, 2018](cloud/cloud-2018-07-23.md)
+-   [Cloud November 16, 2018](cloud/cloud-2018-11-16.md)
+-   [Cloud November 2, 2018](cloud/cloud-2018-11-02.md)
+-   [Cloud October 19, 2018](cloud/cloud-2018-10-19.md)
+-   [Cloud July 23, 2018](cloud/cloud-2018-07-23.md)
 
 ## Codacy Self-hosted release notes
 
