@@ -14,7 +14,7 @@ Configure the notifications that you wish to receive under **Repository notifica
 
 -   **Only my activity:** By default, Codacy will only sends you emails about your own commits and pull requests. Turn off this setting to receive emails for commits and pull requests made by other people as well.
 
-To further customize these settings for a specific repository, select the repository and configure which notifications to receive for commits and pull requests made in that repository.
+-   To further customize these settings for a specific repository, select the repository and configure which notifications to receive for commits and pull requests made in that repository **(only available for repositories in [legacy manual organizations](../organizations/manual-organizations/creating-and-renaming-an-organization.md))**.
 
 ![Email settings](images/emails-notifications.png)
 
