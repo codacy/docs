@@ -1,0 +1,2 @@
+[build]
+  ignore = "if [ $(git rev-parse --abbrev-ref HEAD) == 'master' ]; then exit 0; else exit 1; fi"
