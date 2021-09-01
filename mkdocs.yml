@@ -244,6 +244,8 @@ plugins:
               "hc/en-us/sections/360003183099-Synced-Organizations.md": "organizations/what-are-synced-organizations.md"
               "hc/en-us/articles/360003863274.md": "organizations/organization-overview.md"
               "hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-.md": "organizations/organization-overview.md"
+              "hc/en-us/articles/360003863434.md": "repositories/repository-dashboard.md"
+              "hc/en-us/articles/360003863434-Personal-Dashboard-How-does-it-work-.md": "repositories/repository-dashboard.md"
               "hc/en-us/articles/360003863594.md": "index.md"
               "hc/en-us/articles/360003863594-Hotspots-How-does-it-work-.md": "index.md"
               "hc/en-us/articles/360003863594-Hotspots-How-they-work-.md": "index.md"
