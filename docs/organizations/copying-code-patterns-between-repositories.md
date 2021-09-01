@@ -12,7 +12,7 @@ For example, when adding new repositories on Codacy you can copy the tool and pa
 
 To copy the tool and pattern configurations from one repository to other repositories:
 
-1.  Open your organization **Patterns** page.
+1.  Open your organization **Coding standards** page, tab **Bulk copy code patterns**.
 
 1.  Follow the instructions to select:
 
