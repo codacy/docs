@@ -932,6 +932,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
+  <a href="#checksum" class="md-nav__link">
+    Can't validate checksum
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
   <a href="#cant-guess-any-report-due-to-no-matching" class="md-nav__link">
     Can't guess any report due to no matching
   </a>
@@ -3090,6 +3097,12 @@
                 
                 <h1 id="troubleshooting-common-issues">Troubleshooting common issues<a class="headerlink" href="#troubleshooting-common-issues" title="Permanent link">#</a></h1>
 <p>The sections below provide instructions or workarounds to overcome common issues while using Codacy Coverage Reporter.</p>
+<h2 id="checksum">Can't validate checksum<a class="headerlink" href="#checksum" title="Permanent link">#</a></h2>
+<p>Starting on version <a href="https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.0.0">13.0.0</a> the <code>get.sh</code> script automatically validates the checksum of the downloaded Codacy Coverage Reporter binary. This requires having either the <code>sha512sum</code> or <code>shasum</code> command on the operating system where you're running the script.</p>
+<p>If you're getting this error while uploading your coverage data to Codacy, install the correct version of <code>sha512sum</code> or <code>shasum</code> for the operating system that you're using.</p>
+<p>You can also skip validating the checksum of the binary by defining the following environment variable, however, Codacy doesn't recommend this:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_REPORTER_SKIP_CHECKSUM</span><span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
 <h2 id="cant-guess-any-report-due-to-no-matching">Can't guess any report due to no matching<a class="headerlink" href="#cant-guess-any-report-due-to-no-matching" title="Permanent link">#</a></h2>
 <p>Codacy Coverage Reporter automatically searches for coverage reports matching the <a href="../#generating-coverage">file name conventions for supported formats</a>.</p>
 <p>However, if Codacy Coverage Reporter does not find your coverage report, you can explicitly define the report file name with the flag <code>-r</code>. For example:</p>
@@ -3192,7 +3205,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 18, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 2, 2021</span>
     
   </small>
 </div>
