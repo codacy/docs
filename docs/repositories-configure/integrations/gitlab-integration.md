@@ -22,6 +22,8 @@ If you remove the integration, you can enable it again as follows:
     !!! important
         The user that enables the integration must have administrator access to the repository. Codacy uses this GitLab user to create comments on merge requests.
 
+    {% include-markdown "../../assets/includes/service-account-integration.md" %}
+
 ## Configuring the GitLab integration
 
 To configure the GitLab integration, open your repository **Settings**, tab **Integrations**.
