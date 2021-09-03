@@ -15,3 +15,7 @@ To fix this issue, we recommend that a user **with administrator permissions on 
     -   [Enabling the GitLab integration](../../repositories-configure/integrations/gitlab-integration.md#enabling)
 
     -   [Enabling the Bitbucket integration](../../repositories-configure/integrations/bitbucket-integration.md#enabling)
+
+## See also
+
+-   [We no longer have access to this repository, check your SSH keys](we-no-longer-have-access-to-this-repository.md)
