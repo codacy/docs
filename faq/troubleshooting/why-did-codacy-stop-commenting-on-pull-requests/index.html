@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Different reasons can cause Codacy to stop commenting on pull requests, but the most common is that the user who initially enabled the Git provider integration no longer has permissions on the repository or that the SSH key is no longer valid.">
+        <meta name="description" content="Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the Git provider integration no longer has permissions on the repository or that the SSH key is no longer valid.">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/">
@@ -2051,9 +2051,36 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Why did Codacy stop commenting on pull requests?
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Why did Codacy stop commenting on pull requests?" class="md-nav__link md-nav__link--active">
       Why did Codacy stop commenting on pull requests?
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#see-also" class="md-nav__link">
+    See also
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -3039,9 +3066,27 @@
                 
                 
                 <h1 id="why-did-codacy-stop-commenting-on-pull-requests">Why did Codacy stop commenting on pull requests?<a class="headerlink" href="#why-did-codacy-stop-commenting-on-pull-requests" title="Permanent link">#</a></h1>
-<p>Different reasons can cause Codacy to stop commenting on pull requests, but the most common is that the user who initially enabled the Git provider integration no longer has permissions on the repository or that the SSH key is no longer valid.</p>
-<p>To fix this issue, we recommend that a user <strong>with administrator permissions on the repository</strong> re-enables the Git provider integration on Codacy:</p>
+<p>Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the Git provider integration no longer has permissions on the repository or that the SSH key is no longer valid.</p>
+<p>To fix this issue and also avoid future disruptions, Codacy recommends that you re-enable the Git provider integration on Codacy using a dedicated service account on your Git provider:</p>
 <ol>
+<li>
+<p>Create a service account on your Git provider exclusively dedicated to integrating Codacy with your repositories.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The service account must have <strong>administrator permissions</strong> on the repositories to integrate with Codacy and <strong>must not be shared by other systems</strong> to ensure that Codacy doesn't hit the API rate limits of the Git provider when using this account.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Using a dedicated service account also has the advantage of any pull request comments made by Codacy appearing as authored by the service account instead of by a regular organization member. You can name this account "Codacy" and use <a href="https://avatars.githubusercontent.com/u/1834093" target="_blank">this Codacy logo</a> as the account picture so that your pull request comments look like the following example:</p>
+<p><img alt="Suggest fix comment on GitHub" src="../../../repositories-configure/integrations/images/github-integration-suggest-fixes.png" /></p>
+</div>
+</li>
+<li>
+<p>Log out of both your Git provider and of Codacy.</p>
+</li>
+<li>
+<p>Log in to Codacy using the new service account.</p>
+</li>
 <li>
 <p>Open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>, and click the trash can icon to remove the existing Git provider integration:</p>
 <p><img alt="Removing the old Git provider integration" src="../images/git-provider-integration-remove.png" /></p>
@@ -3061,6 +3106,10 @@
 </ul>
 </li>
 </ol>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="../we-no-longer-have-access-to-this-repository/">We no longer have access to this repository, check your SSH keys</a></li>
+</ul>
               
               
                 
@@ -3129,7 +3178,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 23, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 6, 2021</span>
     
   </small>
 </div>

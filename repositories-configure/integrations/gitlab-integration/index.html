@@ -3085,7 +3085,12 @@
 <p>Click the button <strong>Enable</strong> and follow the instructions.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>The user that enables the integration must have administrator access to the repository.</p>
+<p>The user that enables the integration must have administrator access to the repository. Codacy uses this GitLab user to create comments on merge requests.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>We recommend that you use a dedicated service account for integrating Codacy with your repositories. This will avoid disruption of service if the user who originally enabled the integration stops having access to the repository, such as when the user leaves the team or the organization.</p>
+<p>For more information and instructions on how to set up a dedicated service account see <a href="../../../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/">Why did Codacy stop commenting on pull requests?</a></p>
 </div>
 </li>
 </ol>
@@ -3169,7 +3174,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 23, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 6, 2021</span>
     
   </small>
 </div>
