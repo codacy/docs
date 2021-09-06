@@ -24,9 +24,9 @@ If you remove the integration, you can enable it again as follows:
 1.  Click the button **Enable** and follow the instructions.
 
     !!! important
-        The user that enables the integration must have administrator access to the repository.
+        The user that enables the integration must have administrator access to the repository. Codacy uses this Bitbucket user to create comments on pull requests.
 
-        Codacy uses this Bitbucket user to create comments on Bitbucket.
+    {% include-markdown "../../assets/includes/service-account-integration.md" %}
 
 ## Configuring the Bitbucket integration
 

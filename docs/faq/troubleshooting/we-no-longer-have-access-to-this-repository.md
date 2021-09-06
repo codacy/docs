@@ -34,4 +34,4 @@ If the user that initially configured the repository on Codacy was using a user 
 
     ![Generate new key](images/we-no-longer-have-access-to-this-repository-new-key.png)
 
-1.  Open the tab **Integrations**. If you have an integration with your Git provider enabled, remove and re-create the integration.
+1.  Open the tab **Integrations**. If you have an integration with your Git provider enabled, [remove and re-create the integration](why-did-codacy-stop-commenting-on-pull-requests.md).
