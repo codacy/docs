@@ -16,7 +16,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 -   Improvements to the [supported languages and tools](../../getting-started/supported-languages-and-tools.md):
     -   Added static analysis support for **Objective-C** with the tool Faux Pas.
     -   Expanded static analysis support for **Go** with the [client-side tools](../../related-tools/local-analysis/client-side-tools.md) aligncheck, deadcode, and Staticcheck.
-    -   Added duplication and complexity support for **Kotlin** with the tools jscpd and Detekt. (CY-3003)
+    -   Added duplication and complexity support for **Kotlin** with the tools jscpd and detekt. (CY-3003)
 
 ## Bug fixes
 
@@ -35,22 +35,22 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Ameba 0.13.1
 -   Bandit 1.6.2
 -   Brakeman 4.3.1
--   BundlerAudit 0.6.1
+-   bundler-audit 0.6.1
 -   **Checkstyle 8.37 (updated from 8.34)**
 -   Clang-Tidy 10.0.1
 -   CodeNarc 1.6
--   Coffeelint 2.1.0
+-   CoffeeLint 2.1.0
 -   Cppcheck 2.2
 -   Credo 1.4.0
 -   CSSLint 1.0.5
 -   **deadcode (new)**
--   **Detekt 1.14.2 (updated from 1.10.0)**
+-   **detekt 1.14.2 (updated from 1.10.0)**
 -   **ESLint 7.14.0 (updated from 7.11.0)**
 -   **Faux Pas 1.7.2 (new)**
 -   Flawfinder 2.0.11
 -   Gosec v2.3.0
 -   Hadolint 1.18.2
--   JacksonLinter 2.10.2
+-   Jackson Linter 2.10.2
 -   JSHint 2.12.0
 -   PHP_CodeSniffer 3.5.8
 -   PHP Mess Detector 2.8.1
@@ -60,9 +60,9 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   PSScriptAnalyzer 1.18.3
 -   Pylint 1.9.5
 -   Pylint (Python 3) 2.6.0
--   RemarkLint 7.0.1
+-   remark-lint 7.0.1
 -   Revive 1.0.2
--   Rubocop 0.82.0
+-   RuboCop 0.82.0
 -   Scalastyle 1.0.0
 -   ShellCheck v0.7.1
 -   **Sonar C# 8.15 (updated from 8.14)**

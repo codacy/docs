@@ -35,25 +35,25 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Ameba 0.13.1
 -   Bandit 1.7.0
 -   Brakeman 4.3.1
--   BundlerAudit 0.6.1
+-   bundler-audit 0.6.1
 -   **Checkov 2.0.283 (updated from 1.0.838)**
 -   **Checkstyle 8.44 (updated from 8.37)**
--   Clang-tidy 10.0.1
+-   Clang-Tidy 10.0.1
 -   CodeNarc 1.6
--   Coffeelint 2.1.0
+-   CoffeeLint 2.1.0
 -   Cppcheck 2.2
 -   Credo 1.4.0
 -   CSSLint 1.0.5
--   Detekt 1.17.1
+-   detekt 1.17.1
 -   **ESLint 7.30.0 (updated from 7.29.0)**
 -   Faux-Pas 1.7.2
 -   Flawfinder 2.0.11
 -   Gosec 2.3.0
 -   Hadolint 1.18.2
--   JacksonLinter 2.10.2
+-   Jackson Linter 2.10.2
 -   JSHint 2.12.0
 -   markdownlint 0.23.1
--   PHP Code Sniffer 3.6.0
+-   PHP_CodeSniffer 3.6.0
 -   PHP Mess Detector 2.8.1
 -   **PMD 6.36.0 (updated from 6.33.0)**
 -   PMD (Legacy) 5.8.1
@@ -61,9 +61,9 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   PSScriptAnalyzer 1.18.3
 -   Pylint 1.9.5
 -   Pylint (Python 3) 2.7.4
--   RemarkLint 7.0.1
+-   remark-lint 7.0.1
 -   Revive 1.0.2
--   **Rubocop 1.18.4 (updated from 1.16.0)**
+-   **RuboCop 1.18.4 (updated from 1.16.0)**
 -   Scalastyle 1.5.0
 -   ShellCheck v0.7.1
 -   **Sonar C# 8.25 (updated from 8.24)**

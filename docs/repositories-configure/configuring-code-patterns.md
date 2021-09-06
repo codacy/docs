@@ -173,7 +173,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
-    <td>Detekt</td>
+    <td>detekt</td>
     <td>Kotlin</td>
     <td><code>default-detekt-config.yml</code>, <code>detekt.yml</code></td>
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
@@ -235,7 +235,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td><a href="https://github.com/codacy/codacy-pylint/blob/master/requirements.txt">Plugins</a></td>
   </tr>
   <tr>
-    <td>RemarkLint</td>
+    <td>remark-lint</td>
     <td>Markdown</td>
     <td><code>.remarkrc</code>, <code>.remarkrc.json</code>, <code>.remarkrc.yaml</code>, <code>.remarkrc.yml</code>, <code>.remarkrc.js</code></td>
     <td></td>
@@ -247,7 +247,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
-    <td>Rubocop</td>
+    <td>RuboCop</td>
     <td>Ruby</td>
     <td><code>.rubocop.yml</code></td>
     <td></td>
@@ -319,10 +319,10 @@ The table below lists the configuration file names that Codacy detects and suppo
     -   Staticcheck
     -   ShellCheck
     -   SQLint
-    -   BundlerAudit
-    -   JacksonLinter
+    -   bundler-audit
+    -   Jackson Linter
     -   Codacy ScalaMeta Pro
-    -   Coffeelint
+    -   CoffeeLint
     -   aligncheck
     -   Flawfinder
     -   PSScriptAnalyzer
