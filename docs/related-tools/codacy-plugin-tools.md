@@ -37,7 +37,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-brakeman" class="skip-vale">codacy/codacy-brakeman</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/rubysec/bundler-audit">Bundler Audit</a></td>
+<td><a href="https://github.com/rubysec/bundler-audit">bundler-audit</a></td>
 <td><a href="https://github.com/codacy/codacy-bundler-audit" class="skip-vale">codacy/codacy-bundler-audit</a></td>
 </tr>
 <tr>
@@ -73,7 +73,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-codenarc" class="skip-vale">codacy/codacy-codenarc</a></td>
 </tr>
 <tr>
-<td><a href="http://www.coffeelint.org/">Coffeelint</a></td>
+<td><a href="http://www.coffeelint.org/">CoffeeLint</a></td>
 <td><a href="https://github.com/codacy/codacy-coffeelint" class="skip-vale">codacy/codacy-coffeelint</a></td>
 </tr>
 <tr>
@@ -89,7 +89,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-csslint" class="skip-vale">codacy/codacy-csslint</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/arturbosch/detekt">Detekt</a></td>
+<td><a href="https://github.com/arturbosch/detekt">detekt</a></td>
 <td><a href="https://github.com/codacy/codacy-detekt" class="skip-vale">codacy/codacy-detekt</a></td>
 </tr>
 <tr>
@@ -145,11 +145,11 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-markdownlint" class="skip-vale">codacy/codacy-markdownlint</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/remarkjs/remark-lint">RemarkLint</a></td>
+<td><a href="https://github.com/remarkjs/remark-lint">remark-lint</a></td>
 <td><a href="https://github.com/codacy/codacy-remark-lint" class="skip-vale">codacy/codacy-remark-lint</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/rubocop-hq/rubocop">Rubocop</a></td>
+<td><a href="https://github.com/rubocop-hq/rubocop">RuboCop</a></td>
 <td><a href="https://github.com/codacy/codacy-rubocop" class="skip-vale">codacy/codacy-rubocop</a></td>
 </tr>
 <tr>

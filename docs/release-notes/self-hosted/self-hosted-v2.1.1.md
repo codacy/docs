@@ -21,14 +21,14 @@ This version of Codacy Self-hosted includes the tool versions below.
 -   Ameba 0.13.1
 -   Bandit 1.6.2
 -   Brakeman 4.3.1
--   Bundler Audit 0.6.1
+-   bundler-audit 0.6.1
 -   Checkstyle 8.34
 -   CodeNarc 1.6
--   Coffeelint 2.1.0
+-   CoffeeLint 2.1.0
 -   Cppcheck 2.1
 -   Credo 1.3.0
 -   CSSLint 1.0.5
--   Detekt 1.10.0
+-   detekt 1.10.0
 -   ESLint 7.8.1
 -   Flawfinder 2.0.11
 -   Gorevive 1.0.2
@@ -45,7 +45,7 @@ This version of Codacy Self-hosted includes the tool versions below.
 -   Pylint 1.9.5
 -   Pylint Python3 2.6.0
 -   Remark Lint 7.0.0
--   Rubocop 0.82.0
+-   RuboCop 0.82.0
 -   Scalastyle 1.0.0
 -   ShellCheck v0.7.1
 -   Sonar C# 8.12

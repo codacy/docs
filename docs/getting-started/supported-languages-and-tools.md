@@ -86,7 +86,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>CoffeeScript</td>
-      <td><a href="http://www.coffeelint.org/">Coffeelint</a></td>
+      <td><a href="http://www.coffeelint.org/">CoffeeLint</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
@@ -172,10 +172,10 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Kotlin</td>
-      <td><a href="https://github.com/detekt/detekt">Detekt</a></td>
+      <td><a href="https://github.com/detekt/detekt">detekt</a></td>
       <td></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="https://github.com/detekt/detekt">Detekt</a></td>
+      <td><a href="https://github.com/detekt/detekt">detekt</a></td>
     </tr>
     <tr>
       <td>Kubernetes</td>
@@ -193,7 +193,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Markdown</td>
-      <td><a href="https://github.com/remarkjs/remark-lint">RemarkLint</a>, <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
+      <td><a href="https://github.com/remarkjs/remark-lint">remark-lint</a>, <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
       <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> <a href="#suggested-fixes">🔧</a></td>
       <td>-</td>
       <td>-</td>
@@ -248,11 +248,11 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>Ruby
       </td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a>,
-          <a href="https://github.com/rubysec/bundler-audit">Bundler Audit</a>,
-          <a href="https://github.com/rubocop-hq/rubocop">Rubocop</a></td>
+          <a href="https://github.com/rubysec/bundler-audit">bundler-audit</a>,
+          <a href="https://github.com/rubocop-hq/rubocop">RuboCop</a></td>
       <td></td>
       <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
-      <td><a href="https://github.com/rubocop-hq/rubocop">Rubocop</a></td>
+      <td><a href="https://github.com/rubocop-hq/rubocop">RuboCop</a></td>
     </tr>
     <tr>
       <td>Sass</td>
