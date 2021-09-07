@@ -30,5 +30,6 @@ Codacy will use the updated configurations on the next analysis in each target r
 
 ## See also
 
+-   [Using a coding standard across multiple repositories](using-a-coding-standard.md)
 -   [Configuring code patterns](../repositories-configure/configuring-code-patterns.md)
 -   [Importing pattern configurations from another repository](../repositories-configure/configuring-code-patterns.md#import-patterns)

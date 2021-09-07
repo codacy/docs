@@ -100,3 +100,8 @@ To set a coding standard as default:
 1.  Toggle **Make default** on the coding standard card.
 
     ![Setting a coding standard as the default](images/coding-standard-set-default.png)
+
+## See also
+
+-   [Configuring code patterns on each repository](../repositories-configure/configuring-code-patterns.md)
+-   [Copying code patterns between repositories](copying-code-patterns-between-repositories.md)
