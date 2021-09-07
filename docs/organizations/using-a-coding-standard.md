@@ -1,6 +1,6 @@
 # Using a coding standard
 
-Create a coding standard on your organization to define and apply tool and code pattern configurations consistently across your repositories. You can also apply the coding standard to new repositories automatically by defining the coding standard as default.
+Create a coding standard on your organization to define and apply global tool and code pattern configurations consistently across your repositories. You can also apply the coding standard to new repositories automatically by defining the coding standard as default.
 
 Use the organization coding standard to ensure that Codacy analyzes all your repositories with the same tool and code pattern settings. For example, configure the organization coding standard to ensure that all your repositories and teams are following the same global security rules or coding conventions.
 
