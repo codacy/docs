@@ -333,5 +333,5 @@ The table below lists the configuration file names that Codacy detects and suppo
 
 ## See also
 
--   [Using a coding standard across multiple repositories](../organizations/using-a-coding-standard.md)
+-   [Applying a coding standard across multiple repositories](../organizations/using-a-coding-standard.md)
 -   [Copying code patterns between repositories](../organizations/copying-code-patterns-between-repositories.md)
