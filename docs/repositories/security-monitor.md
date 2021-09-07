@@ -51,13 +51,13 @@ The Security Monitor displays issues using security patterns from:
 -   [PHP Mess Detector](https://phpmd.org/rules/){: target="_blank"}
 -   [Pylint](http://pylint.pycqa.org/en/1.9/technical_reference/features.html){: target="_blank"} (Python 2)
 -   [Pylint](http://pylint.pycqa.org/en/stable/technical_reference/features.html){: target="_blank"} (Python 3)
--   [Rubocop](https://rubocop.readthedocs.io/en/latest/cops/){: target="_blank"}
+-   [RuboCop](https://rubocop.readthedocs.io/en/latest/cops/){: target="_blank"}
 -   [Cppcheck](http://cppcheck.sourceforge.net/){: target="_blank"}
 -   [ShellCheck](https://github.com/koalaman/shellcheck/wiki/Checks){: target="_blank"}
--   [PHP CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer){: target="_blank"}
+-   [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer){: target="_blank"}
 -   [Hadolint](https://github.com/hadolint/hadolint#rules){: target="_blank"}
 -   [Prospector](https://github.com/PyCQA/prospector){: target="_blank"}
--   [Bundler-audit](https://github.com/rubysec/bundler-audit){: target="_blank"}
+-   [bundler-audit](https://github.com/rubysec/bundler-audit){: target="_blank"}
 -   [Credo](https://github.com/rrrene/credo/){: target="_blank"}
 -   [Flawfinder](https://dwheeler.com/flawfinder/){: target="_blank"}
 -   [PSScriptAnalyzer](https://dwheeler.com/flawfinder/){: target="_blank"}

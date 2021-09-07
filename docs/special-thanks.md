@@ -19,9 +19,9 @@ In addition to in-house built rules, we use open source tools for many of our st
 <ul>
 <li><a href="https://github.com/pmd/pmd">PMB</a></li>
 <li><a href="https://github.com/presidentbeef/brakeman">Brakeman</a></li>
-<li><a href="https://github.com/rubocop-hq/rubocop">Rubocop</a></li>
+<li><a href="https://github.com/rubocop-hq/rubocop">RuboCop</a></li>
 <li><a href="https://github.com/simplecov-ruby/simplecov">SimpleCov</a></li>
-<li><a href="https://github.com/clutchski/coffeelint">Coffeelint</a></li>
+<li><a href="https://github.com/clutchski/coffeelint">CoffeeLint</a></li>
 <li><a href="https://www.pylint.org/">Pylint</a></li>
 </ul>
 </td>
