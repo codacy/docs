@@ -1,4 +1,4 @@
-# Using coding standards
+# Using a coding standard
 
 <!--TODO
 
@@ -10,11 +10,20 @@ Concept:
 
 -->
 
+[Productboard](https://roadmap.codacy.com/c/71-patterns-add-an-organizational-standard) We are taking another step forward to making it easier to apply and manage code patterns to multiple repositories at the same time.
+This work will introduce the possibility to create one code standard at the organization level and apply it to any or all your repositories in one single action.
+It's also possible to set the standard as default, meaning all repositories added in the future will take the standard from the beginning - leaving you to focus on what matters.
+
+
+Coding standards define tool and pa
+
+
+
 ## Creating a coding standard {: id="creating"}
 
 <!--TODO
 
--   Isn't it possible to configure the coding standard as the default while creating it?
+-   Isn't it possible to configure the coding standard as the default while creating it? https://www.figma.com/file/Od7PrP0rpI2vvycq0iOvzI?node-id=904:2732#106911296
 
 -->
 
@@ -56,7 +65,7 @@ Organizations on Codacy can have one coding standard. To create a coding standar
 <!--TODO
 
 Editing a coding standard (include applying to other repositories)
--   Not possible to delete a coding standard once it's created?
+-   Not possible to delete a coding standard once it's created? https://www.figma.com/file/Od7PrP0rpI2vvycq0iOvzI?node-id=904:2732#106911633
 
 -->
 
