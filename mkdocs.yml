@@ -108,8 +108,8 @@ plugins:
               "hc/en-us/requests/new.md": "https://codacy.zendesk.com/hc/en-us/requests/new"
               "hc/en-us/articles/115000255385.md": "codacy-api/api-tokens.md"
               "hc/en-us/articles/115000255385-API-Tokens.md": "codacy-api/api-tokens.md"
-              "hc/en-us/articles/115000282129.md": "faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md"
-              "hc/en-us/articles/115000282129-Why-can-t-I-configure-post-commit-hooks-and-integrations-.md": "faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md"
+              "hc/en-us/articles/115000282129.md": "repositories-configure/integrations/post-commit-hooks.md"
+              "hc/en-us/articles/115000282129-Why-can-t-I-configure-post-commit-hooks-and-integrations-.md": "repositories-configure/integrations/post-commit-hooks.md"
               "hc/en-us/articles/115000488285.md": "repositories-configure/integrations/slack-integration.md"
               "hc/en-us/articles/115000488285-Slack.md": "repositories-configure/integrations/slack-integration.md"
               "hc/en-us/articles/115000566729.md": "repositories-configure/ignoring-files.md"
@@ -684,7 +684,6 @@ nav:
                 - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
                 - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
                 - faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md
-                - faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md
                 - faq/troubleshooting/not-a-member-of-the-organization.md
                 - faq/troubleshooting/we-no-longer-have-access-to-this-repository.md
                 - faq/troubleshooting/why-is-my-file-over-150-kb-missing.md

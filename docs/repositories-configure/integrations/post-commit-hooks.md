@@ -31,6 +31,15 @@ Here's an example of how to configure your hooks on GitHub:
 
 ![Configuring a hook on GitHub](images/webhook-example-github.gif)
 
-## Permissions to create post-commit hooks
+## Why can't I configure post-commit hooks and integrations?
+
+<!--NOTE
+    Most info in this section was moved from the page "Why can't I configure post-commit hooks and integrations?" so that the outdated troubleshooting page could be removed.
+    Make sure to clean up this section and the entire topic after the legacy manual organizations are fully discontinued.
+-->
+
+Have you added your repository manually (via URL)? In that case, Codacy won't allow the integration to be added, causing the issue with post-commit hooks. To get this sorted, you will have to remove your repository and re-add it via our wizard page.
 
 If you get an error when turning on the post-commit hook, please make sure that you have Admin rights on the GitHub repository.
+
+If you're still unable to configure the integration, please contact us at <mailto:support@codacy.com>.
