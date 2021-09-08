@@ -2,4 +2,4 @@
 
 Codacy usually takes under 5 minutes to analyze your repository, however it may take longer as this depends on the size of your repository.
 
-If your analysis is taking a lot of time, you can [manually force a repository update](../repositories/how-do-i-manually-force-a-repository-update.md).
+Codacy relies on post-commit hooks sent by your Git provider to trigger the analysis after each push to the repository, so if your analysis is taking a lot of time to start [check that the Post-Commit Hook integration for your repository is enabled](../../repositories-configure/integrations/post-commit-hooks.md).

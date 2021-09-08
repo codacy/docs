@@ -180,8 +180,8 @@ plugins:
               "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/207994765.md": "faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
               "hc/en-us/articles/207994765-What-are-the-different-Grades-and-how-are-they-calculated-.md": "faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md"
-              "hc/en-us/articles/207994825.md": "faq/repositories/how-do-i-manually-force-a-repository-update.md"
-              "hc/en-us/articles/207994825-How-do-I-manually-force-a-repository-update-.md": "faq/repositories/how-do-i-manually-force-a-repository-update.md"
+              "hc/en-us/articles/207994825.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
+              "hc/en-us/articles/207994825-How-do-I-manually-force-a-repository-update-.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
               "hc/en-us/articles/207994835.md": "faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md"
               "hc/en-us/articles/207994835-How-do-I-transfer-delete-a-repository-from-my-account-.md": "faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md"
               "hc/en-us/articles/207994865.md": "faq/general/which-version-control-systems-does-codacy-support.md"
@@ -583,6 +583,7 @@ plugins:
               "release-notes/cloud/cloud-release-notes-|-19-october-2018.md": "release-notes/cloud/cloud-2018-10-19.md"
               "release-notes/cloud/cloud-release-notes-|-23-july-2018.md": "release-notes/cloud/cloud-2018-07-23.md"
               "faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md"
+              "faq/repositories/how-do-i-manually-force-a-repository-update.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
 
 nav:
     - Documentation home: "index.md"
@@ -668,7 +669,6 @@ nav:
                 - faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md
                 - faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md
                 - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md
-                - faq/repositories/how-do-i-manually-force-a-repository-update.md
                 - faq/repositories/how-do-i-reanalyze-my-repository.md
                 - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
                 - faq/repositories/i-moved-my-repository-on-the-git-provider.md
