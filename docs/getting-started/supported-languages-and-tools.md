@@ -200,7 +200,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Objective-C</td>
-      <td><a href="http://fauxpasapp.com/">Faux Pas</a><a href="#client-side"><sup>1</sup></a></td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>, <a href="http://fauxpasapp.com/">Faux Pas</a><a href="#client-side"><sup>1</sup></a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
