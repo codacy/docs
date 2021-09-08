@@ -38,7 +38,7 @@ Here's an example of how to configure your hooks on GitHub:
     Make sure to clean up this section and the entire topic after the legacy manual organizations are fully discontinued.
 -->
 
-Have you added your repository manually (via URL)? In that case, Codacy won't allow the integration to be added, causing the issue with post-commit hooks. To get this sorted, you will have to remove your repository and re-add it via our wizard page.
+Have you added your repository manually (via URL)? In that case, Codacy won't allow the integration to be added, causing the issue with post-commit hooks. To get this sorted, you will have to [remove your repository and re-add it under a synced organization](../../faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md).
 
 If you get an error when turning on the post-commit hook, please make sure that you have Admin rights on the GitHub repository.
 
