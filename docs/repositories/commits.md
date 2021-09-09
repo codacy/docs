@@ -4,7 +4,7 @@ The **Commits page** displays an overview of the commits in your repository, suc
 
 By default, the page lists the commits on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display issues on other branches.
 
-![Commits page](images/commit-list.png)
+![Commits page](images/commits.png)
 
 ## Commit detail
 
@@ -17,7 +17,7 @@ The commit detail displays:
 * The list of issues and duplication blocks that the commit created or fixed
 * The list of files and the lines of code changed in the commit
 
-![New issues in the commit detail](images/commit-detail.png)
+![New issues in the commit detail](images/commits-detail.png)
 
 {%
     include-markdown "issues.md"
@@ -27,8 +27,8 @@ The commit detail displays:
 
 Use the options in the cogwheel menu of each issue to [ignore and manage issues](issues.md#ignoring-and-managing-issues).
 
-![Expanded issue view](images/commit-detail-issue-actions.png)
+![Expanded issue view](images/commits-detail-issue-actions.png)
 
 The commit differences view allows you to review the lines of code changed in the commit.
 
-![Commit differences view](images/commit-detail-diff.png)
+![Commit differences view](images/commits-differences.png)
