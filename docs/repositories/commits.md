@@ -12,10 +12,10 @@ Click a specific commit to see detailed information about the quality changes in
 
 The commit detail displays:
 
-* The status and logs of the analysis of the commit
-* An overview of the code quality changes introduced by the commit
-* The list of issues and duplication blocks that the commit created or fixed
-* The list of files and the lines of code changed in the commit
+-   The status and logs of the analysis of the commit
+-   An overview of the code quality changes introduced by the commit
+-   The list of issues and duplication blocks that the commit created or fixed
+-   The list of files and the lines of code changed in the commit
 
 ![New issues in the commit detail](images/commits-detail.png)
 
