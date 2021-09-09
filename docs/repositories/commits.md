@@ -1,30 +1,34 @@
 # Commits page
 
-The commits page gives you an overview of the repository's commits, providing valuable information about changes and quality improvements. Click on the row of a commit to see more details.
+The **Commits page** displays an overview of the commits in your repository, such as the analysis status and the number of new and fixed issues for each commit. This allows you to monitor the evolution of the code quality in your repository per commit.
 
-Visualization of the commits defaults to the main branch of the repository. This can be changed by selecting another branch on the combo box.
+By default, the page lists the commits on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display issues on other branches.
 
-When viewing the commits list, some commits may still not have been analyzed, either because the analysis is still running or belongs to a branch that hasn't been selected for analysis. These can be identified by the status column. Just hover the icon to get some extra info.
-
-![Commit list](images/commit-list.png)
-
-If any commit created or fixed any issue on the repository, that information will be displayed on the right-hand side of the list, allowing for a quick overview of the repository quality evolutions.
+![Commits page](images/commit-list.png)
 
 ## Commit detail
 
-The commit detail will show you an overview of what changed in that particular commit, showing all the differences that were introduced.
+Click a specific commit to see detailed information about the quality changes in that commit.
 
-![Commit detail](images/commit-detail.png)
+The commit detail displays:
 
-A detailed issue delta information is always available, showing exactly which issues were fixed or created in each commit.
+* The status and logs of the analysis of the commit
+* An overview of the code quality changes introduced by the commit
+* The list of issues and duplication blocks that the commit created or fixed
+* The list of files and the lines of code changed in the commit
 
-![New issues](images/commit-detail-new-issues.png)
+![New issues in the commit detail](images/commit-detail.png)
 
-By expanding an issue, you can find information on why it's an issue, the severity level and category, how to solve the issue, and links to community sources on the problem found.
-You will also find a few additional options, including **Ignore issue**, **Remove pattern**, **Ignore file**, and also integrations you may have enabled.
+{%
+    include-markdown "issues.md"
+    start="<!--issue-detail-start-->"
+    end="<!--issue-detail-end-->"
+%}
 
-![Issue actions](images/commit-detail-issue-actions.png)
+Use the options in the cogwheel menu of each issue to [ignore and manage issues](issues.md#ignoring-and-managing-issues).
 
-The changed files can also be reviewed using a diff visualizer, helping achieve a quick and easy code review.
+![Expanded issue view](images/commit-detail-issue-actions.png)
 
-![Commit diff](images/commit-detail-diff.png)
+The commit differences view allows you to review the lines of code changed in the commit.
+
+![Commit differences view](images/commit-detail-diff.png)
