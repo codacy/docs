@@ -32,3 +32,9 @@ Use the options in the cogwheel menu of each issue to [ignore and manage issues]
 The commit differences view allows you to review the lines of code changed in the commit.
 
 ![Commit differences view](images/commits-differences.png)
+
+## Possible issues
+
+In some situations, Codacy may report either new or fixed **possible** issues on a commit or pull request. This means that the code analysis detected new or fixed issues in lines of code that weren't changed by that commit or pull request.
+
+![Possible fixed issue in a commit](images/commits-possible-issues.png)
