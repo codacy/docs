@@ -6,12 +6,14 @@ By default, the page lists the issues on the main branch of your repository but 
 
 ![Issues page](images/issues.png)
 
+<!--issue-detail-start-->
 Click the title of an issue to see the following information:
 
 -   The contributor and date of the commit that introduced the issue
 -   The [tool that reported the issue](../getting-started/supported-languages-and-tools.md) and the estimated time to fix it
 -   What's the issue and how to solve it
 -   The programming language and category of the issue
+<!--issue-detail-end-->
 
 ![Issue details](images/issues-detail.png)
 
