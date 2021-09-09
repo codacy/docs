@@ -35,6 +35,12 @@ The commit differences view allows you to review the lines of code changed in th
 
 ## Possible issues
 
-In some situations, Codacy may report either new or fixed **possible** issues on a commit or pull request. This means that the code analysis detected new or fixed issues in lines of code that weren't changed by that commit or pull request.
+In some situations, Codacy may report either new or fixed **possible** issues on a commit or pull request, which means that the code analysis detected these issues in lines of code that weren't changed by that commit or pull request. This gives you awareness to how your changes may be affecting other parts of your code.
 
 ![Possible fixed issue in a commit](images/commits-possible-issues.png)
+
+The following are example situations that can lead to possible issues:
+
+-   The issue was either created or fixed in the current commit, but the static code analysis tools reported the issue on a line that didn't change in the commit. For example, if you remove the line containing the declaration of a variable you may get an "undeclared variable" issue in other lines that use that variable.
+
+-   If a file had [more than 50 issues reported by the same tool](../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md) and you push a new commit that fixes some of these issues, Codacy will report more issues until the limit of 50 issues. These issues will be possible issues if they're outside the lines of code changed in the current commit.
