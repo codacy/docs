@@ -12,10 +12,10 @@ Click a specific commit to see detailed information about the quality changes in
 
 The commit detail displays:
 
-* The status and logs of the analysis of the commit
-* An overview of the code quality changes introduced by the commit
-* The list of issues and duplication blocks that the commit created or fixed
-* The list of files and the lines of code changed in the commit
+-   The status and logs of the analysis of the commit
+-   An overview of the code quality changes introduced by the commit
+-   The list of issues and duplication blocks that the commit created or fixed
+-   The list of files and the lines of code changed in the commit
 
 ![New issues in the commit detail](images/commits-detail.png)
 
@@ -32,3 +32,15 @@ Use the options in the cogwheel menu of each issue to [ignore and manage issues]
 The commit differences view allows you to review the lines of code changed in the commit.
 
 ![Commit differences view](images/commits-differences.png)
+
+## Possible issues
+
+In some situations, Codacy may report either new or fixed **possible** issues on a commit or pull request, which means that the code analysis detected these issues in lines of code that weren't changed by that commit or pull request. This gives you awareness to how your changes may be affecting other parts of your code.
+
+![Possible fixed issue in a commit](images/commits-possible-issues.png)
+
+The following are example situations that can lead to possible issues:
+
+-   The issue was either created or fixed in the current commit, but the static code analysis tools reported the issue on a line that didn't change in the commit. For example, if you remove the line containing the declaration of a variable you may get an "undeclared variable" issue in other lines that use that variable.
+
+-   If a file had [more than 50 issues reported by the same tool](../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md) and you push a new commit that fixes some of these issues, Codacy will report more issues until the limit of 50 issues. These issues will be possible issues if they're outside the lines of code changed in the current commit.
