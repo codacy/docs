@@ -7,7 +7,7 @@ mkdocs-git-revision-date-localized-plugin==0.9.3
 mkdocs-monorepo-plugin==0.4.16
 mkdocs-markdownextradata-plugin==0.2.4
 mkdocs-redirects==1.0.3
-mkdocs-include-markdown-plugin==3.2.2
+mkdocs-include-markdown-plugin==3.2.3
 mkdocs-rss-plugin==0.17.0
 mkdocs-meta-descriptions-plugin==1.0.1
 mkdocs-exclude==1.0.2
