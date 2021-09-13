@@ -3070,6 +3070,16 @@
 </li>
 <li>
 <p>You can now <a href="https://docs.codacy.com/v4.2/organizations/copying-code-patterns-between-repositories/">copy tool and pattern configurations in bulk</a> between your repositories to help you bootstrap and standardize the coding standards in your organization. (CY-4196)</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>On September 10, 2021 we noticed that the feature flag for this feature was turned off in Codacy Self-hosted v4.2.0 by mistake.</p>
+<p>If you're using this version of Codacy Self-hosted and want to use this feature, we ask that you please activate the feature manually by adding the following configuration to your <code>values.yml</code> file and then <a href="https://docs.codacy.com/v4.2/chart/#helm-upgrade">performing a Helm upgrade</a>:</p>
+<div class="highlight"><pre><span></span><code>global:
+    features:
+        bulkCopyPatterns: true
+</code></pre></div>
+<p>We apologize for the trouble. The next release of Codacy Self-hosted will include this feature activated by default, and we've added tests to validate all feature flags during the release process to avoid future issues.</p>
+</div>
 <p><img alt="Copying code patterns in bulk across repositories" src="../../images/cy-4196.png" /></p>
 </li>
 </ul>
@@ -3195,7 +3205,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 6, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 13, 2021</span>
     
   </small>
 </div>
