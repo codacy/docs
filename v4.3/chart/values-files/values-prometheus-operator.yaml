@@ -1,0 +1,66 @@
+grafana:
+  enabled: true
+  #adminPassword: <--- admin user password --->
+  ingress:
+    enabled: true
+    annotations:
+      kubernetes.io/ingress.class: nginx
+      cert-manager.io/cluster-issuer: letsencrypt-codacy
+    tls:
+    - secretName: grafana-ingress-tls-secret
+      hosts:
+        - <--- grafana url --->
+
+  sidecar:
+    dashboards:
+      searchNamespace: ALL
+    datasources:
+      defaultDatasourceEnabled: false
+  additionalDataSources:
+    - name: Loki
+      type: loki
+      url: http://loki:3100
+      version: 1
+      orgId: 1
+      access: proxy
+      basicAuth: false
+      editable: true
+      jsonData:
+         tlsSkipVerify: true
+    - name: Prometheus
+      type: prometheus
+      url: http://monitoring-kube-prometheus-prometheus:9090
+      version: 1
+      orgId: 1
+      access: proxy
+      basicAuth: false
+      editable: true
+      jsonData:
+         tlsSkipVerify: true
+
+prometheusOperator:
+  createCustomResource: false
+  tlsProxy:
+    enabled: false
+  admissionWebhooks:
+    enabled: false
+    patch:
+      enabled: false
+    tlsProxy:
+      enabled: false
+
+prometheus:
+  ingressPerReplica:
+    tlsSecretPerReplica:
+      enabled: false
+  thanos:
+    service:
+      enabled: false
+  service:
+    sessionAffinity: "ClientIP"
+  prometheusSpec:
+    replicas: 1
+    serviceMonitorSelectorNilUsesHelmValues: false
+    walCompression: true
+    ruleSelectorNilUsesHelmValues: false
+    ruleSelector: {}
