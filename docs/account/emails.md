@@ -12,7 +12,7 @@ Configure the notifications that you wish to receive under **Repository notifica
 
 -   **Per pull request:** Codacy will send you an email for each analyzed pull request.
 
--   **Only my activity:** By default, Codacy will only sends you emails about your own commits and pull requests. Turn off this setting to receive emails for commits and pull requests made by other people as well.
+-   **Only my activity:** By default, Codacy will only send you emails about your own commits and pull requests. Turn off this setting to receive emails for commits and pull requests made by other people as well.
 
 ![Email settings](images/emails-notifications.png)
 
