@@ -16,13 +16,13 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
--   The previously released feature to [copy tool and pattern configurations in bulk](https://docs.codacy.com/v4.2/organizations/copying-code-patterns-between-repositories/) between your repositories is now available by default.
+-   The previously released feature to [copy tool and pattern configurations in bulk](https://docs.codacy.com/v4.3/organizations/copying-code-patterns-between-repositories/) between your repositories is now available by default.
 
 ## Bug fixes
 
 -   Added support to configure the values of timeouts used in internal operations to list branches and pull requests. (CY-4914)
--   Fixed an issue where the repository list in the Admin panel may become misformatted. (CY-4862)
--   Fixed an issue where inline exclusions for Bandit weren't being correctly applied.  (CY-4843)
+-   Fixed an issue where the repository list in the Admin panel may become <span class="skip-vale">misformatted</span>. (CY-4862)
+-   Fixed an issue where inline exclusions for Bandit weren't being correctly applied. (CY-4843)
 
 ## Tool versions
 
