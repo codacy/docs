@@ -12,19 +12,12 @@ Configure the notifications that you wish to receive under **Repository notifica
 
 -   **Per pull request:** Codacy will send you an email for each analyzed pull request.
 
--   **Only my activity:** By default, Codacy will only sends you emails about your own commits and pull requests. Turn off this setting to receive emails for commits and pull requests made by other people as well.
-
--   To further customize these settings for a specific repository, select the repository and configure which notifications to receive for commits and pull requests made in that repository **(only available for repositories in [legacy manual organizations](../organizations/manual-organizations/creating-and-renaming-an-organization.md))**.
+-   **Only my activity:** By default, Codacy will only send you emails about your own commits and pull requests. Turn off this setting to receive emails for commits and pull requests made by other people as well.
 
 ![Email settings](images/emails-notifications.png)
 
-The example above enables notifications for:
-
--   My pull requests in all repositories
--   Everyone's commits in the repository scala-tests only
-
 !!! tip
-    To turn off all email notifications, disable the global settings **Per commit** and **Per pull request** and remove all custom settings for specific repositories.
+    To turn off all email notifications, disable the settings **Per commit** and **Per pull request**.
 
 ## See also
 
