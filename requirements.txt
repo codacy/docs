@@ -9,7 +9,7 @@ mkdocs-markdownextradata-plugin==0.2.4
 mkdocs-redirects==1.0.3
 mkdocs-include-markdown-plugin==3.2.2
 mkdocs-rss-plugin==0.17.0
-mkdocs-meta-descriptions-plugin==1.0.1
+mkdocs-meta-descriptions-plugin==1.0.2
 mkdocs-exclude==1.0.2
 
 # The requirements below are fixed for compatibility
