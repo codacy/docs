@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="When you see the message Not a member of the organization it means that Codacy can&#x27;t analyze a commit because the associated email address doesn&#x27;t belong to any Codacy user.">
+        <meta name="description" content="When you see the message Not a member of the organization it means that Codacy Cloud can&#x27;t analyze a commit because the associated email address doesn&#x27;t belong to any Codacy user.">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/troubleshooting/not-a-member-of-the-organization/">
@@ -3054,19 +3054,22 @@
                 
                 
                 <h1 id="not-a-member-of-the-organization">Not a member of the organization<a class="headerlink" href="#not-a-member-of-the-organization" title="Permanent link">#</a></h1>
-<p>When you see the message <strong>Not a member of the organization</strong> it means that Codacy can't analyze a commit because the associated email address doesn't belong to any Codacy user.</p>
+<div class="admonition info">
+<p class="admonition-title">This page applies only to Codacy Cloud</p>
+</div>
+<p>When you see the message <strong>Not a member of the organization</strong> it means that Codacy Cloud can't analyze a commit because the associated email address doesn't belong to any Codacy user.</p>
 <p>You can check which email address is associated with a commit by hovering the cursor on the name of the contributor on the page for the commit:</p>
 <p><img alt="Checking the email address for a commit" src="../images/not-a-member-of-the-organization-commit.png" /></p>
-<p>To verify which email addresses are associated with the Codacy account, the user must click on their avatar on the top right-hand corner, select <strong>Your account</strong>, and open the page <strong>Emails</strong>:</p>
+<p>To verify which email addresses are associated with the Codacy Cloud account, the user must click on their avatar on the top right-hand corner, select <strong>Your account</strong>, and open the page <strong>Emails</strong>:</p>
 <p><img alt="Email addresses associated with a user account" src="../images/not-a-member-of-the-organization-account.png" /></p>
 <p>There may be different reasons for this issue to happen:</p>
 <ul>
 <li>
-<p><strong>The user making the commit hasn't signed in to Codacy and joined the organization yet</strong></p>
+<p><strong>The user making the commit hasn't signed in to Codacy Cloud and joined the organization yet</strong></p>
 <p>The user must <a href="../../../organizations/managing-people/#joining">join the organization</a> or, if you're the organization owner, you can <a href="../../../organizations/managing-people/#adding-people">add the user</a> instead.</p>
 </li>
 <li>
-<p><strong>The commit email address isn't associated with the account of a Codacy user</strong></p>
+<p><strong>The commit email address isn't associated with the account of a Codacy Cloud user</strong></p>
 <p>Codacy automatically associates the email addresses from the Git provider accounts to the Codacy accounts when users sign in to Codacy. Make sure that the user configures the missing email address on their Git provider account, and that the user logs in again on Codacy for the change to take effect.</p>
 </li>
 <li>
@@ -3156,7 +3159,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 14, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 20, 2021</span>
     
   </small>
 </div>
