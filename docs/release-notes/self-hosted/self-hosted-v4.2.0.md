@@ -31,7 +31,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
                 bulkCopyPatterns: true
         ```
 
-        We apologize for the trouble. The next release of Codacy Self-hosted will include this feature activated by default, and we've added tests to validate all feature flags during the release process to avoid future issues.
+        We apologize for the trouble. [Codacy Self-hosted 4.3.0](self-hosted-v4.3.0.md) already includes this feature activated by default, and we've added tests to validate all feature flags during the release process to avoid future issues.
 
     ![Copying code patterns in bulk across repositories](../images/cy-4196.png)
 
