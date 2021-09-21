@@ -180,7 +180,7 @@ See [managing people](managing-people.md) to list and manage the members of your
 
 By default, only users with **Write** permission on a repository can change analysis configurations.
 
-To change this, open your organization **Settings**, page **Plan and billing**, and  define the lowest permission required to perform the following operations on the repositories of your organization:
+To change this, open your organization **Settings**, page **Member privileges**, and  define the lowest permission required to perform the following operations on the repositories of your organization:
 
 -   [Ignore issues](../repositories/issues.md#ignoring-and-managing-issues)
 -   [Ignore files](../repositories-configure/ignoring-files.md)
