@@ -12,12 +12,12 @@ Depending on your role on the Git provider you will have different permissions o
       <th>Provider</th>
       <th>Role</th>
       <th>Join organization</th>
+      <th>View repository</th>
       <th>Ignore issues and files</th>
       <th>Add repository</th>
       <th>Configure repository</th>
       <th>Configure tools, patterns and file extensions</th>
       <th>Manage branches</th>
-      <th>View repository</th>
       <th>Invite and accept members or modify billing</th>
     </tr>
   </thead>
@@ -37,45 +37,45 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td>Repository Read</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
+      <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
     </tr>
     <tr>
       <td>Repository Triage</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
+      <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
     </tr>
     <tr>
       <td>Repository Write</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>Yes</td>
       <td>No</td>
     </tr>
     <tr>
       <td>Repository Maintain</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>Yes</td>
       <td>No</td>
     </tr>
     <tr>
@@ -115,45 +115,45 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td><span>Guest</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
+      <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
     </tr>
     <tr>
       <td><span>Reporter</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
+      <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
     </tr>
     <tr>
       <td><span>Developer</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
+      <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
     </tr>
     <tr>
       <td><span>Maintainer</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
+      <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
     </tr>
     <tr>
@@ -182,12 +182,12 @@ Depending on your role on the Git provider you will have different permissions o
       <td rowspan="2">Bitbucket Cloud and Bitbucket Server</td>
       <td>Read, Write<sup><a href="#note-3">3</a></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
+      <td>No</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
     </tr>
     <tr>
