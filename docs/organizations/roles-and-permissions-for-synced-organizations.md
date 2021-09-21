@@ -14,8 +14,8 @@ Depending on your role on the Git provider you will have different permissions o
       <th>Join organization</th>
       <th>View repository</th>
       <th>Change analysis configurations</th>
-      <th>Add repository</th>
       <th>Configure repository</th>
+      <th>Add repository</th>
       <th>Invite and accept members or modify billing</th>
     </tr>
   </thead>
@@ -53,8 +53,8 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
       <td>Yes</td>
+      <td>No</td>
       <td>No</td>
     </tr>
     <tr>
@@ -62,8 +62,8 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
       <td>Yes</td>
+      <td>No</td>
       <td>No</td>
     </tr>
     <tr>
