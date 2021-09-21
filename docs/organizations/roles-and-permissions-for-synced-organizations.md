@@ -87,11 +87,11 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td>Repository Admin</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -102,8 +102,8 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -175,8 +175,8 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -187,8 +187,8 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -212,8 +212,8 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
