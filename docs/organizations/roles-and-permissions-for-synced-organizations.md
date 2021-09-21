@@ -13,10 +13,10 @@ Depending on your role on the Git provider you will have different permissions o
       <th>Role</th>
       <th>Join organization</th>
       <th>View private repository</th>
-      <th>Change analysis configurations</th>
+      <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
       <th>Configure repository</th>
       <th>Add repository</th>
-      <th>Invite and accept members or modify billing</th>
+      <th>Invite and accept members,<br/>modify billing</th>
     </tr>
   </thead>
   <tbody>
