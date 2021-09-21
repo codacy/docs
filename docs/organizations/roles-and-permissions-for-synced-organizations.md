@@ -12,7 +12,7 @@ Depending on your role on the Git provider you will have different permissions o
       <th>Provider</th>
       <th>Role</th>
       <th>Join organization</th>
-      <th>View repository</th>
+      <th>View private repository</th>
       <th>Change analysis configurations</th>
       <th>Configure repository</th>
       <th>Add repository</th>
