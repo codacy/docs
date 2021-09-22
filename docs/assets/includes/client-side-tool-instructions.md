@@ -1,4 +1,4 @@
-1.  Enable **Run analysis through build server** in your repository **Settings**, tab **General**, **Repository analysis**.
+1.  Enable **Run analysis on your build server** in your repository **Settings**, tab **General**, **Repository analysis**.
 
     This setting enables Codacy to wait for the results of the local analysis before resuming the analysis of your commits.
 
