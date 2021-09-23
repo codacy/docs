@@ -980,6 +980,13 @@
   
 </li>
       
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#no-coverage-data-is-visible-on-the-codacy-ui" class="md-nav__link">
+    No coverage data is visible on the Codacy UI
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3137,6 +3144,12 @@
 <p>If you're using PHPUnit version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the PHPUnit XML format only for versions 4 and older.</p>
 <p>To change the output format replace the flag <code>--coverage-xml &lt;dir&gt;</code> with <code>--coverage-clover &lt;file&gt;</code> when executing <code>phpunit</code>.</p>
 <p>See <a href="https://phpunit.readthedocs.io/en/latest/textui.html">PHPUnit command-line documentation</a> for more information.</p>
+<h2 id="no-coverage-data-is-visible-on-the-codacy-ui">No coverage data is visible on the Codacy UI<a class="headerlink" href="#no-coverage-data-is-visible-on-the-codacy-ui" title="Permanent link">#</a></h2>
+<p>If the Codacy Coverage Reporter correctly uploaded your coverage report but the coverage data doesn't show up on the Codacy UI, please validate the following:</p>
+<ul>
+<li>Make sure that the file paths included in your coverage reports are relative to the root directory of your repository. For example, <code>src/index.js</code>.</li>
+<li>Verify that the Codacy Coverage Reporter is uploading the coverage data for the <a href="../#commit-detection">correct commit in the correct branch</a>.</li>
+</ul>
               
               
                 
@@ -3205,7 +3218,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 2, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2021</span>
     
   </small>
 </div>
