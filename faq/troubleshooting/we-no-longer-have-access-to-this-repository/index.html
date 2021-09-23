@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Troubleshoot and fix issues that prevent Codacy from cloning your repository, such as moving the repository or changing the permissions of the user that added the repository to Codacy.">
+        <meta name="description" content="Troubleshoot and fix issues that prevent Codacy from cloning your private repository, such as moving the repository or changing the permissions of the user that added the repository to Codacy.">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/troubleshooting/we-no-longer-have-access-to-this-repository/">
@@ -3061,12 +3061,12 @@
                 
                 
                 <h1 id="we-no-longer-have-access-to-this-repository-check-your-ssh-keys">We no longer have access to this repository, check your SSH keys<a class="headerlink" href="#we-no-longer-have-access-to-this-repository-check-your-ssh-keys" title="Permanent link">#</a></h1>
-<p>SSH keys are exclusively used for repository cloning. Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, the key can be added either:</p>
+<p>Codacy uses SSH keys to clone your private repositories. Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, an SSH key can be added either:</p>
 <ul>
-<li>Directly to the repository itself, if the user has permissions to add keys to the repository</li>
-<li>To the user account, if the user only has permissions to read or commit to the repository</li>
+<li>Directly to the repository itself, if the user has permissions to add SSH keys to the repository</li>
+<li>To the user account, if the user only has read or commit permissions on the repository</li>
 </ul>
-<p>For this reason, some changes on your Git provider can prevent Codacy from cloning the repository. When this happens, Codacy displays the error message "We no longer have access to this repository" on the Repository Dashboard page.</p>
+<p>For this reason, some changes on your Git provider can prevent Codacy from cloning your private repository. When this happens, Codacy displays the error message "We no longer have access to this repository" on the Repository Dashboard page.</p>
 <h2 id="the-repository-was-renamed-or-moved">The repository was renamed or moved<a class="headerlink" href="#the-repository-was-renamed-or-moved" title="Permanent link">#</a></h2>
 <p>If you renamed the repository or moved it to a different account on the Git provider:</p>
 <ol>
@@ -3074,7 +3074,7 @@
 <li>Click the button <strong>Update name</strong>.</li>
 </ol>
 <h2 id="the-user-that-configured-the-repository-no-longer-has-access">The user that configured the repository no longer has access<a class="headerlink" href="#the-user-that-configured-the-repository-no-longer-has-access" title="Permanent link">#</a></h2>
-<p>If the user that initially configured the repository on Codacy was using a user account key but no longer has access to the repository on the Git provider:</p>
+<p>If the user that initially configured the repository on Codacy was using a user account SSH key but no longer has access to the repository on the Git provider:</p>
 <ol>
 <li>On Codacy, open your <strong>Repository Settings</strong>, tab <strong>General</strong>.</li>
 <li>
@@ -3159,7 +3159,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 6, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2021</span>
     
   </small>
 </div>
