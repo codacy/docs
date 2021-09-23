@@ -1,15 +1,15 @@
 ---
-description: Troubleshoot and fix issues that prevent Codacy from cloning your repository, such as moving the repository or changing the permissions of the user that added the repository to Codacy.
+description: Troubleshoot and fix issues that prevent Codacy from cloning your private repository, such as moving the repository or changing the permissions of the user that added the repository to Codacy.
 ---
 
 # We no longer have access to this repository, check your SSH keys
 
-SSH keys are exclusively used for repository cloning. Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, the key can be added either:
+Codacy uses SSH keys to clone your private repositories. Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, an SSH key can be added either:
 
--   Directly to the repository itself, if the user has permissions to add keys to the repository
--   To the user account, if the user only has permissions to read or commit to the repository
+-   Directly to the repository itself, if the user has permissions to add SSH keys to the repository
+-   To the user account, if the user only has read or commit permissions on the repository
 
-For this reason, some changes on your Git provider can prevent Codacy from cloning the repository. When this happens, Codacy displays the error message "We no longer have access to this repository" on the Repository Dashboard page.
+For this reason, some changes on your Git provider can prevent Codacy from cloning your private repository. When this happens, Codacy displays the error message "We no longer have access to this repository" on the Repository Dashboard page.
 
 ## The repository was renamed or moved
 
@@ -20,7 +20,7 @@ If you renamed the repository or moved it to a different account on the Git prov
 
 ## The user that configured the repository no longer has access
 
-If the user that initially configured the repository on Codacy was using a user account key but no longer has access to the repository on the Git provider:
+If the user that initially configured the repository on Codacy was using a user account SSH key but no longer has access to the repository on the Git provider:
 
 1.  On Codacy, open your **Repository Settings**, tab **General**.
 1.  Click the button **Generate New Repository Key** (recommended) or **Generate New User Key**:
