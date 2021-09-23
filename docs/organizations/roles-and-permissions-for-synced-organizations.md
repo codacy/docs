@@ -16,6 +16,7 @@ Depending on your role on the Git provider you will have different permissions o
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
       <th>Configure repository</th>
       <th>Add repository</th>
+      <th>Bulk copy patterns</th>
       <th>Invite and accept members,<br/>modify billing</th>
     </tr>
   </thead>
@@ -23,6 +24,7 @@ Depending on your role on the Git provider you will have different permissions o
     <tr>
       <td rowspan="7">GitHub Cloud and GitHub Enterprise</td>
       <td>Outside Collaborator<sup><a href="#note-1">1</a></sup></td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -38,12 +40,14 @@ Depending on your role on the Git provider you will have different permissions o
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Repository Triage</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -56,6 +60,7 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Repository Maintain</td>
@@ -63,6 +68,7 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Yes</td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
     </tr>
@@ -74,10 +80,12 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td>Yes</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Organization Owner</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -93,12 +101,14 @@ Depending on your role on the Git provider you will have different permissions o
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td><span>Guest</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -111,12 +121,14 @@ Depending on your role on the Git provider you will have different permissions o
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td><span>Developer</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -129,6 +141,7 @@ Depending on your role on the Git provider you will have different permissions o
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td><span>Owner</span></td>
@@ -138,10 +151,12 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Yes</td>
     </tr>
     <tr>
       <td><span>Administrator</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -157,10 +172,12 @@ Depending on your role on the Git provider you will have different permissions o
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Admin</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
