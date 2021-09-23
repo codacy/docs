@@ -230,9 +230,36 @@
       
     
     
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Adding a Codacy badge
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
     <a href="./" title="Adding a Codacy badge" class="md-nav__link md-nav__link--active">
       Adding a Codacy badge
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#fixing-your-codacy-badge" class="md-nav__link">
+    Fixing your Codacy badge
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
     
   </li>
 
@@ -3032,6 +3059,15 @@
 <p>To display the grade or code coverage information of a <a href="../../repositories-configure/managing-branches/">different branch</a> analyzed by Codacy, append <code>?branch=&lt;branch_name&gt;</code> to the URL of the badge. For example:</p>
 <div class="highlight"><pre><span></span><code>https://app.codacy.com/project/badge/Grade/cba8fd0874ac4f569f4f880e473cbac9?branch=dev
 </code></pre></div>
+<h2 id="fixing-your-codacy-badge">Fixing your Codacy badge<a class="headerlink" href="#fixing-your-codacy-badge" title="Permanent link">#</a></h2>
+<p>The Codacy badges for your repository may become unavailable or grayed out if the analysis or code coverage information for the last commit isn't available, or if you renamed or re-added your repository on Codacy:</p>
+<p><img alt="Greyed out Codacy badge" src="../images/codacy-badge-gray.png" /></p>
+<p>To fix each badge:</p>
+<ul>
+<li><a href="../../faq/repositories/how-do-i-reanalyze-my-repository/#reanalyzing-a-branch">Reanalyze the branch</a> associated with the <strong>code quality badge</strong></li>
+<li>Make sure that you're <a href="../../coverage-reporter/">generating and uploading code coverage reports</a> for all the commits in the branch associated with the <strong>coverage badge</strong></li>
+</ul>
+<p>If these steps don't fix your Codacy badges it can mean that the badges are no longer valid. In this case, <a href="#adding-a-codacy-badge">repeat the steps above</a> to replace the existing badges with new ones.</p>
               
               
                 
@@ -3100,7 +3136,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 16, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2021</span>
     
   </small>
 </div>
