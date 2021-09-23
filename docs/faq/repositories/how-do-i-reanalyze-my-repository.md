@@ -3,7 +3,7 @@
 To reflect the most recent configurations for your repository on the Codacy analysis results without waiting for a new commit to trigger the analysis, reanalyze the last commit in your branch or pull request.
 
 !!! important
-    If you have the setting **Run analysis through build server** enabled in your repository **Settings** page so that you can run client-side tools you can't trigger a new analysis from the Codacy UI.
+    If you have the setting **Run analysis on your build server** enabled in your repository **Settings** page so that you can run client-side tools you can't trigger a new analysis from the Codacy UI.
 
     Instead, you must manually run the client-side tools or wait for them to report the results for a new commit.
 
