@@ -1,15 +1,6 @@
----
-description: "From April 3rd, 2020 onward it's no longer possible to create new Manual Organizations on Codacy cloud, although you can continue using your existing Manual Organizations."
----
-
 # Creating and renaming an organization
 
-!!! note
-    From April 3rd, 2020 onward it's no longer possible to create new Manual Organizations on Codacy cloud, although you can continue using your existing Manual Organizations.
-
-    Please use the improved [Synced Organizations](../what-are-synced-organizations.md) instead, since you will no longer be able to add new repositories under Manual Organizations to avoid duplication of repositories.
-
-    This change doesn't impact Codacy self-hosted.
+{% include "../../assets/includes/legacy-organizations-important.md" %}
 
 To create an organization, click on your avatar and select **Organizations**. Type the name in the **Create new organization** field and click on **Create New**.
 

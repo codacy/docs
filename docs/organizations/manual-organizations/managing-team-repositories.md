@@ -1,5 +1,7 @@
 # Managing team repositories
 
+{% include "../../assets/includes/legacy-organizations-important.md" %}
+
 You will be able to add and remove repositories from a team after it has been added to your organization.
 
 ## Adding a repository to your team

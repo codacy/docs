@@ -1,5 +1,7 @@
 # Share your repository with a non-Codacy user
 
+{% include "../../assets/includes/legacy-organizations-important.md" %}
+
 If you're a Codacy Cloud user, you can share your Repository Dashboard with a non-Codacy user by using a link that doesn't require a login.
 
 To do this, click **Share** at the top of your Repository Dashboard.

@@ -1,5 +1,7 @@
 # Administrative permissions
 
+{% include "../../assets/includes/legacy-organizations-important.md" %}
+
 Organization permissions allow fine-grained control over your organization's members and repositories.
 
 All organizations have an Administrators team. Each member of this team is an administrator of the entire organization, and all repositories in the organization are automatically added to this team.
