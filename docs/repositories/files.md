@@ -61,7 +61,7 @@ The Files page only displays files in your repository that were analyzed by Coda
 
 -   **The file might be ignored**
 
-    The Files page doesn't display [ignored files](../repositories-configure/ignoring-files.md) that aren't meant to be analyzed. Also notice that Codacy [ignores some files by default](../repositories-configure/ignoring-files.md#default-ignored-files).
+    The Files page doesn't display [ignored files](../repositories-configure/ignoring-files.md) that aren't meant to be analyzed, including the [files that Codacy ignores by default](../repositories-configure/ignoring-files.md#default-ignored-files).
 
 -   **The file has an extension that is not on the list of supported extensions**
 
