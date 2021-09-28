@@ -4,7 +4,7 @@ On November 2, 2021, as part of our efforts to improve Codacy Cloud and allow al
 
 To make sure that Codacy will continue to analyze your repositories please perform the following steps before November 2, 2021:
 
-1.  **If you're using GitHub** you must [install the Codacy GitHub App](https://github.com/apps/codacy-production/installations/new) on the GitHub organizations that contain your repositories so that Codacy has the [necessary permissions](../../getting-started/which-permissions-does-codacy-need-from-my-account.md) to analyze your code.
+1.  **If you're using GitHub** you must [install the Codacy GitHub App](https://github.com/apps/codacy-production/installations/new){: target="_blank"} on the GitHub organizations that contain your repositories so that Codacy has the [necessary permissions](../../getting-started/which-permissions-does-codacy-need-from-my-account.md) to analyze your code.
 
 1.  Make sure that your Git provider organization owners [belong to the **Administrators** team](../../organizations/manual-organizations/creating-and-managing-teams.md) of your legacy organization on Codacy.
 
