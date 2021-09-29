@@ -20,6 +20,19 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 -   You can now [copy tool and pattern configurations in bulk](https://docs.codacy.com/v4.2/organizations/copying-code-patterns-between-repositories/) between your repositories to help you bootstrap and standardize the coding standards in your organization. (CY-4196)
 
+    !!! important
+        On September 10, 2021 we noticed that the feature flag for this feature was turned off in Codacy Self-hosted v4.2.0 by mistake.
+
+        If you're using this version of Codacy Self-hosted and want to use this feature, we ask that you please activate the feature manually by adding the following configuration to your `values.yml` file and then [performing a Helm upgrade](https://docs.codacy.com/v4.2/chart/#helm-upgrade):
+
+        ```yml
+        global:
+            features:
+                bulkCopyPatterns: true
+        ```
+
+        We apologize for the trouble. [Codacy Self-hosted 4.3.0](self-hosted-v4.3.0.md) already includes this feature activated by default, and we've added tests to validate all feature flags during the release process to avoid future issues.
+
     ![Copying code patterns in bulk across repositories](../images/cy-4196.png)
 
 ## Bug fixes

@@ -12,7 +12,7 @@ This section contains the release notes for Codacy Cloud and Codacy Self-hosted.
 For product updates that are in progress or planned [visit the Codacy public roadmap instead](https://roadmap.codacy.com).
 
 !!! tip
-    Subscribe to this [<img style="height: 1em;" src="../assets/images/icon-rss-feed.svg" alt="Codacy release notes RSS feed"/> RSS feed](/feed_rss_created.xml) to receive notifications when there are new Codacy release notes.
+    Subscribe to this [<img style="height: 1em;" src="../assets/images/icon-rss-feed.svg" alt="Codacy release notes RSS feed"/> RSS feed](/feed_rss_created.xml) using your favorite news aggregator to receive notifications when there are new Codacy release notes.
 
 ## Codacy Cloud release notes
 
@@ -52,6 +52,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 v4
 
+-   [v4.3.0](self-hosted/self-hosted-v4.3.0.md) (September 16, 2021)
 -   [v4.2.0](self-hosted/self-hosted-v4.2.0.md) (August 31, 2021)
 -   [v4.1.0](self-hosted/self-hosted-v4.1.0.md) (July 6, 2021)
 -   [v4.0.1](self-hosted/self-hosted-v4.0.1.md) (June 2, 2021)
