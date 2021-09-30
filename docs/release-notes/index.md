@@ -18,6 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2021
 
+-   [End of support for legacy manual organizations November 2, 2021](cloud/cloud-2021-11-02-legacy-organizations.md)
 -   [Cloud August 2021](cloud/cloud-2021-08.md)
 -   [Performing scheduled database maintenance July 3, 2021](cloud/cloud-2021-07-03-scheduled-db-maintenance.md)
 

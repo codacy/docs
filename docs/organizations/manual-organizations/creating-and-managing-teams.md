@@ -4,6 +4,8 @@ description: You can create and manage teams on the Teams page for your legacy m
 
 # Creating and managing teams
 
+{% include "../../assets/includes/legacy-organizations-important.md" %}
+
 You can create and manage teams on the **Teams** page for your organization:
 
 1.  Click your avatar and select **Organizations**
