@@ -76,7 +76,7 @@ https://docs.codacy.com/organizations/roles-and-permissions-for-synced-organizat
 https://docs.codacy.com/organizations/what-are-synced-organizations/,"Synced organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that don't belong to a Git provider organization), and team members into Codacy with a few clicks."
 https://docs.codacy.com/organizations/manual-organizations/administrative-permissions/,Organization permissions allow fine-grained control over your organization's members and repositories.
 https://docs.codacy.com/organizations/manual-organizations/creating-and-managing-teams/,You can create and manage teams on the Teams page for your legacy manual organization on Codacy.
-https://docs.codacy.com/organizations/manual-organizations/creating-and-renaming-an-organization/,"From April 3rd, 2020 onward it's no longer possible to create new Manual Organizations on Codacy cloud, although you can continue using your existing Manual Organizations."
+https://docs.codacy.com/organizations/manual-organizations/creating-and-renaming-an-organization/,"To create an organization, click on your avatar and select Organizations. Type the name in the Create new organization field and click on Create New."
 https://docs.codacy.com/organizations/manual-organizations/managing-team-repositories/,You will be able to add and remove repositories from a team after it has been added to your organization.
 https://docs.codacy.com/organizations/manual-organizations/share-your-repository-with-a-non-codacy-user/,"If you're a Codacy Cloud user, you can share your Repository Dashboard with a non-Codacy user by using a link that doesn't require a login."
 https://docs.codacy.com/related-tools/codacy-plugin-tools/,"Codacy uses a system of plugin tools to extend the scope of analyses on your repositories, allowing support for new languages and tools every day."
@@ -106,6 +106,7 @@ https://docs.codacy.com/release-notes/cloud/cloud-2020-03-09-nodesecurity-golint
 https://docs.codacy.com/release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens/,"On April 1st, 2020 we're deprecating the api_token and project_token HTTP headers used to authenticate to the Codacy API."
 https://docs.codacy.com/release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance/,"On July 3, 2021, starting at 08:00 UTC we'll perform scheduled database maintenance to improve the performance and scalability of Codacy Cloud."
 https://docs.codacy.com/release-notes/cloud/cloud-2021-08/,Release notes for Codacy Cloud August 2021.
+https://docs.codacy.com/release-notes/cloud/cloud-2021-11-02-legacy-organizations/,"On November 2, 2021, as part of our efforts to improve Codacy Cloud and allow all our customers to benefit from a more seamless experience, we’re removing the support for legacy manual organizations. As part of this process, we'll automatically migrate your legacy organization to a new synced organization."
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.0/,Release notes for Codacy Self-hosted v1.0.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.1/,Release notes for Codacy Self-hosted v1.0.1.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.1.0/,Release notes for Codacy Self-hosted v1.1.0.
