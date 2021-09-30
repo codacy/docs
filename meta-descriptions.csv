@@ -49,7 +49,6 @@ https://docs.codacy.com/faq/general/how-does-codacy-support-gitlab-enterprise/,"
 https://docs.codacy.com/faq/general/which-browsers-does-codacy-support/,Codacy runs on every modern browser supporting HTML5 and CSS3.
 https://docs.codacy.com/faq/general/which-version-control-systems-does-codacy-support/,"Codacy supports the cloud and self-hosted versions of GitHub, GitLab, and Bitbucket."
 https://docs.codacy.com/faq/general/why-cant-i-see-my-organization/,Try these steps if you don't see your organization when adding your organization on Codacy.
-https://docs.codacy.com/faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization/,"If you have legacy personal repositories or repositories in manual organizations, you can migrate these repositories to a synced organization while keeping your Codacy configurations and analysis history."
 https://docs.codacy.com/faq/repositories/how-do-i-reanalyze-my-repository/,"To reflect the most recent configurations for your repository on the Codacy analysis results without waiting for a new commit to trigger the analysis, reanalyze the last commit in your branch or pull request."
 https://docs.codacy.com/faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/,Configure your Git provider to block merging pull requests until they pass the Codacy analysis check.
 https://docs.codacy.com/faq/repositories/i-moved-my-repository-on-the-git-provider/,"Currently, Codacy doesn't automatically detect moves of repositories between two organizations."
