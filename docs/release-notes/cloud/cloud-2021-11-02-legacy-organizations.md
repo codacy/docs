@@ -19,7 +19,7 @@ Synced organizations have several advantages, such as keeping the repositories a
 
 However, the following scenarios may impact you:
 
--   **If your legacy organization is using the Open source plan** then Codacy has already stopped analyzing your repositories. To restore the analysis of your repositories you can wait until Codacy attempts to migrate your organization, or restore the analysis immediately by [performing the migration yourself](../../faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md).
+-   **If your legacy organization is using the Open source plan** then Codacy has already stopped analyzing your repositories. Codacy will attempt to migrate your organization and restore the analysis of your repositories.
 
 -   **If we can't automatically migrate your legacy organization** Codacy will stop analyzing your repositories, and you'll lose access to your existing repositories on Codacy. Please make sure that you follow the steps above to guarantee that the migration is successful.
 
