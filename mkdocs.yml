@@ -489,7 +489,7 @@ plugins:
               "release-notes/cloud/scheduled-maintenance-saturday,-5th-jan@05:30-gmt-(21:30-pst).md": "index.md"
               "release-notes/cloud/scheduled-maintenance-saturday,-30th-mar@-05:00-gmt-(01:00-edt).md": "index.md"
               "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md": "index.md"
-              "faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md": "index.md"
+              "faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization.md": "release-notes/cloud/cloud-2021-11-02-legacy-organizations.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
