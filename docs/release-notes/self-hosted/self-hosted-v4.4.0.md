@@ -42,7 +42,6 @@ Bugs and Community Issues:
 
 ## Bug fixes
 
--   Fix an issue on Cloud that made some features that depended on the payment plan miss-behave on rare cases. Like GitHub suggestions not being available after start paying for an organization (CY-5107)
 -   Added @next/eslint-plugin-next to ESLint when using configuration file (CY-5071)
 -   Fixed an issue that caused a redirect to different repository settings when enabling the GitHub integration for a repository. (CY-5056)
 -   Added the plugin eslint-plugin-i18n-json to ESLint. (CY-5029)
