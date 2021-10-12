@@ -54,6 +54,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 v4
 
+-   [v4.4.0](self-hosted/self-hosted-v4.4.0.md) (October 12, 2021) <!--TODO Update release date -->
 -   [v4.3.0](self-hosted/self-hosted-v4.3.0.md) (September 16, 2021)
 -   [v4.2.0](self-hosted/self-hosted-v4.2.0.md) (August 31, 2021)
 -   [v4.1.0](self-hosted/self-hosted-v4.1.0.md) (July 6, 2021)
