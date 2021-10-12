@@ -14,29 +14,6 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
-<!--TODO Check these issues
-
-Jira issues without release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/CY-4617
--   https://codacy.atlassian.net/browse/CY-4408
--   https://codacy.atlassian.net/browse/DOCS-209
--   https://codacy.atlassian.net/browse/DOCS-42
-
-Bugs and Community Issues:
-
-Jira issues with disabled release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/CY-4844
--   https://codacy.atlassian.net/browse/CY-4654
--   https://codacy.atlassian.net/browse/CY-4082
-
-Bugs and Community Issues:
--   https://codacy.atlassian.net/browse/CY-3810
--->
-
 ## Product enhancements
 
 -   Added the following plugins to [<span class="skip-vale">codacy-eslint</span>](https://github.com/codacy/codacy-eslint):
