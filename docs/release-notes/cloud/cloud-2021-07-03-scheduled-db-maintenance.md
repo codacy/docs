@@ -31,4 +31,4 @@ The following is the expected impact after the maintenance operation is complete
 
 ## What to do if you're missing information on your repositories?
 
-You can wait for Codacy to analyze new pushes to your repositories or manually trigger the re-analysis of any commits and pull requests to re-populate the pages.
+You can wait for Codacy to analyze new pushes to your repositories or [manually trigger the re-analysis](../../faq/repositories/how-do-i-reanalyze-my-repository.md) of any commits and pull requests to re-populate the pages.

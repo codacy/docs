@@ -18,6 +18,8 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2021
 
+-   [Cloud September 2021](cloud/cloud-2021-09.md)
+-   [End of support for legacy manual organizations November 2, 2021](cloud/cloud-2021-11-02-legacy-organizations.md)
 -   [Cloud August 2021](cloud/cloud-2021-08.md)
 -   [Performing scheduled database maintenance July 3, 2021](cloud/cloud-2021-07-03-scheduled-db-maintenance.md)
 
@@ -52,6 +54,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 v4
 
+-   [v4.4.0](self-hosted/self-hosted-v4.4.0.md) (October 12, 2021)
 -   [v4.3.0](self-hosted/self-hosted-v4.3.0.md) (September 16, 2021)
 -   [v4.2.0](self-hosted/self-hosted-v4.2.0.md) (August 31, 2021)
 -   [v4.1.0](self-hosted/self-hosted-v4.1.0.md) (July 6, 2021)

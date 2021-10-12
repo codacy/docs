@@ -17,12 +17,14 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 ## Product enhancements
 
 -   The previously released feature to [copy tool and pattern configurations in bulk](https://docs.codacy.com/v4.3/organizations/copying-code-patterns-between-repositories/) between your repositories is now available by default.
+-   Now, Codacy also supports analyzing Objective-C using Clang-Tidy as a [client-side tool](https://docs.codacy.com/v4.3/related-tools/local-analysis/client-side-tools/). (CY-4795)
 
 ## Bug fixes
 
 -   Added support to configure the values of timeouts used in internal operations to list branches and pull requests. (CY-4914)
 -   Fixed an issue where the repository list in the Admin panel may become <span class="skip-vale">misformatted</span>. (CY-4862)
 -   Fixed an issue where inline exclusions for Bandit weren't being correctly applied. (CY-4843)
+-   Fixed Checkov failing the analysis with some Terraform files. (CY-4744)
 
 ## Tool versions
 
