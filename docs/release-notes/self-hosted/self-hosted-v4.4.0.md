@@ -39,12 +39,13 @@ Bugs and Community Issues:
 
 ## Product enhancements
 
+-   Added the following plugins to [<span class="skip-vale">codacy-eslint</span>](https://github.com/codacy/codacy-eslint):
+    -   [<span class="skip-vale">@next/eslint-plugin-next</span>](https://www.npmjs.com/package/@next/eslint-plugin-next) (CY-5071)
+    -   [<span class="skip-vale">eslint-plugin-i18n-json</span>](https://www.npmjs.com/package/eslint-plugin-i18n-json) (CY-5029)
 
 ## Bug fixes
 
--   Added @next/eslint-plugin-next to ESLint when using configuration file (CY-5071)
 -   Fixed an issue that caused a redirect to different repository settings when enabling the GitHub integration for a repository. (CY-5056)
--   Added the plugin eslint-plugin-i18n-json to ESLint. (CY-5029)
 -   Fixed an issue that caused the error `Failed to analyze file` when CodeNarc identified issues using code patterns that had no associated message. (CY-4974)
 -   Allow users to re-analyze a commit or PR according to our analysis limitations. They can re-analyze  (CY-4336)
 
