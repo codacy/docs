@@ -31,7 +31,7 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    version: "4.3.0"
+    version: "4.4.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
