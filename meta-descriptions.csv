@@ -131,6 +131,7 @@ https://docs.codacy.com/release-notes/self-hosted/self-hosted-v4.0.1/,Release no
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v4.1.0/,Release notes for Codacy Self-hosted v4.1.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v4.2.0/,Release notes for Codacy Self-hosted v4.2.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v4.3.0/,Release notes for Codacy Self-hosted v4.3.0.
+https://docs.codacy.com/release-notes/self-hosted/self-hosted-v4.4.0/,Release notes for Codacy Self-hosted v4.4.0.
 https://docs.codacy.com/repositories/commits/,"The Commits page displays an overview of the commits in your repository, such as the analysis status and the number of new and fixed issues for each commit. This allows you to monitor the evolution of the code quality in your repository per commit."
 https://docs.codacy.com/repositories/files/,The Files page displays the current code quality information for each analyzed file in your active repository branches.
 https://docs.codacy.com/repositories/issues/,"The Issues page lists all the issues that Codacy detected in your repository, including the severity level and category of each issue."
