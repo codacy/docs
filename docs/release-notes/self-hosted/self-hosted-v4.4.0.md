@@ -23,6 +23,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 ## Bug fixes
 
 -   Fixed an issue that caused a redirect to different repository settings when enabling the GitHub integration for a repository. (CY-5056)
+-   Fixed an issue that blocked re-analyzing commits made by non-authors on Codacy Self-hosted. (CY-5012)
 -   Fixed an issue that caused the error `Failed to analyze file` when CodeNarc identified issues using code patterns that had no associated message. (CY-4974)
 -   Allow users to re-analyze a commit or PR according to our analysis limitations. They can re-analyze  (CY-4336)
 
