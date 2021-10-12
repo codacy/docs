@@ -8,7 +8,7 @@ codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/3.
 
 # Self-hosted v4.4.0
 
-These release notes are for [Codacy Self-hosted v4.4.0](https://github.com/codacy/chart/releases/tag/4.4.0){: target="_blank"}, released on October 12, 2021. <!-- TODO Update release date -->
+These release notes are for [Codacy Self-hosted v4.4.0](https://github.com/codacy/chart/releases/tag/4.4.0){: target="_blank"}, released on October 12, 2021.
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
