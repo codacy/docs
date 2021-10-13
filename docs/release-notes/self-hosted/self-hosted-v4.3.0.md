@@ -22,6 +22,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 ## Bug fixes
 
 -   Added support to configure the values of timeouts used in internal operations to list branches and pull requests. (CY-4914)
+-   Improved the code pattern names for Cppcheck. (CY-4887)
 -   Fixed an issue where the repository list in the Admin panel may become <span class="skip-vale">misformatted</span>. (CY-4862)
 -   Fixed an issue where inline exclusions for Bandit weren't being correctly applied. (CY-4843)
 -   Fixed Checkov failing the analysis with some Terraform files. (CY-4744)
