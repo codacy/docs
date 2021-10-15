@@ -932,8 +932,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#checksum" class="md-nav__link">
-    Can't validate checksum
+  <a href="#no-coverage-visible" class="md-nav__link">
+    No coverage data is visible on the Codacy UI
   </a>
   
 </li>
@@ -981,8 +981,8 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#no-coverage-data-is-visible-on-the-codacy-ui" class="md-nav__link">
-    No coverage data is visible on the Codacy UI
+  <a href="#checksum" class="md-nav__link">
+    Can't validate checksum
   </a>
   
 </li>
@@ -3128,11 +3128,40 @@
                 
                 <h1 id="troubleshooting-common-issues">Troubleshooting common issues<a class="headerlink" href="#troubleshooting-common-issues" title="Permanent link">#</a></h1>
 <p>The sections below provide instructions or workarounds to overcome common issues while using Codacy Coverage Reporter.</p>
-<h2 id="checksum">Can't validate checksum<a class="headerlink" href="#checksum" title="Permanent link">#</a></h2>
-<p>Starting on version <a href="https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.0.0">13.0.0</a> the <code>get.sh</code> script automatically validates the checksum of the downloaded Codacy Coverage Reporter binary. This requires having either the <code>sha512sum</code> or <code>shasum</code> command on the operating system where you're running the script.</p>
-<p>If you're getting this error while uploading your coverage data to Codacy, install the correct version of <code>sha512sum</code> or <code>shasum</code> for the operating system that you're using.</p>
-<p>You can also skip validating the checksum of the binary by defining the following environment variable, however, Codacy doesn't recommend this:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_REPORTER_SKIP_CHECKSUM</span><span class="o">=</span><span class="nb">true</span>
+<h2 id="no-coverage-visible">No coverage data is visible on the Codacy UI<a class="headerlink" href="#no-coverage-visible" title="Permanent link">#</a></h2>
+<p>If the Codacy Coverage Reporter correctly uploaded your coverage report but the coverage data doesn't show up on the Codacy UI, please validate the following:</p>
+<ul>
+<li>Make sure that the file paths included in your coverage reports are relative to the root directory of your repository. For example, <code>src/index.js</code>.</li>
+<li>Verify that the Codacy Coverage Reporter is uploading the coverage data for the <a href="#commit-detection">correct commit in the correct branch</a>.</li>
+</ul>
+<h3 id="commit-detection">Commit SHA hash detection<a class="headerlink" href="#commit-detection" title="Permanent link">#</a></h3>
+<p>The Codacy Coverage Reporter automatically detects the commit SHA hash to associate with the coverage data from the following CI/CD platforms:</p>
+<ul>
+<li>Appveyor</li>
+<li>Azure Pipelines</li>
+<li>Bitrise</li>
+<li>Buildkite</li>
+<li>Circle CI</li>
+<li>Codefresh</li>
+<li>Codeship</li>
+<li>Docker</li>
+<li>GitLab</li>
+<li>Greenhouse CI</li>
+<li>Heroku CI</li>
+<li>Jenkins</li>
+<li>Magnum CI</li>
+<li>Semaphore CI</li>
+<li>Shippable CI</li>
+<li>Solano CI</li>
+<li>TeamCity CI</li>
+<li>Travis CI</li>
+<li>Wercker CI</li>
+</ul>
+<p>If the Codacy Coverage Reporter fails to detect the current commit from the CI workflow context, it will use the current commit from the local Git repository instead.</p>
+<p>However, you can also force using a specific commit SHA hash with the flag <code>--commit-uuid</code>. For example:</p>
+<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
+    -r report.xml <span class="se">\</span>
+    --commit-uuid cd4d000083a744cf1617d46af4ec108b79e06bed
 </code></pre></div>
 <h2 id="cant-guess-any-report-due-to-no-matching">Can't guess any report due to no matching<a class="headerlink" href="#cant-guess-any-report-due-to-no-matching" title="Permanent link">#</a></h2>
 <p>Codacy Coverage Reporter automatically searches for coverage reports matching the <a href="../#generating-coverage">file name conventions for supported formats</a>.</p>
@@ -3168,12 +3197,12 @@
 <p>If you're using PHPUnit version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the PHPUnit XML format only for versions 4 and older.</p>
 <p>To change the output format replace the flag <code>--coverage-xml &lt;dir&gt;</code> with <code>--coverage-clover &lt;file&gt;</code> when executing <code>phpunit</code>.</p>
 <p>See <a href="https://phpunit.readthedocs.io/en/latest/textui.html">PHPUnit command-line documentation</a> for more information.</p>
-<h2 id="no-coverage-data-is-visible-on-the-codacy-ui">No coverage data is visible on the Codacy UI<a class="headerlink" href="#no-coverage-data-is-visible-on-the-codacy-ui" title="Permanent link">#</a></h2>
-<p>If the Codacy Coverage Reporter correctly uploaded your coverage report but the coverage data doesn't show up on the Codacy UI, please validate the following:</p>
-<ul>
-<li>Make sure that the file paths included in your coverage reports are relative to the root directory of your repository. For example, <code>src/index.js</code>.</li>
-<li>Verify that the Codacy Coverage Reporter is uploading the coverage data for the <a href="../#commit-detection">correct commit in the correct branch</a>.</li>
-</ul>
+<h2 id="checksum">Can't validate checksum<a class="headerlink" href="#checksum" title="Permanent link">#</a></h2>
+<p>Starting on version <a href="https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.0.0">13.0.0</a> the <code>get.sh</code> script automatically validates the checksum of the downloaded Codacy Coverage Reporter binary. This requires having either the <code>sha512sum</code> or <code>shasum</code> command on the operating system where you're running the script.</p>
+<p>If you're getting this error while uploading your coverage data to Codacy, install the correct version of <code>sha512sum</code> or <code>shasum</code> for the operating system that you're using.</p>
+<p>You can also skip validating the checksum of the binary by defining the following environment variable, however, Codacy doesn't recommend this:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_REPORTER_SKIP_CHECKSUM</span><span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
               
               
                 
@@ -3242,7 +3271,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 13, 2021</span>
     
   </small>
 </div>

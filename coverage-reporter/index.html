@@ -3245,17 +3245,26 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <p>Run Codacy Coverage Reporter <strong>on the root of the locally checked out branch of your Git repository</strong>, specifying the relative path to the coverage report to upload:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report -r &lt;coverage report file name&gt;
 </code></pre></div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Check the console output to validate that the Codacy Coverage Reporter <strong>detected the correct commit UUID</strong> and <strong>successfully uploaded</strong> the coverage data to Codacy. If you need help, <a href="troubleshooting-common-issues/">check the troubleshooting page</a> for solutions to the most common setup issues.</p>
+<p>Be sure to also check the sections below for more advanced functionality while uploading the coverage data to Codacy.</p>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>The recommended self-contained script automatically downloads and runs the most recent version of Codacy Coverage Reporter.</p>
+<p>The self-contained script <code>get.sh</code> automatically downloads and runs the most recent version of Codacy Coverage Reporter.</p>
 <p>See <a href="alternative-ways-of-running-coverage-reporter/">alternative ways of running Codacy Coverage Reporter</a> for other ways of running Codacy Coverage Reporter, such as by installing the binary manually or using a GitHub Action or CircleCI Orb.</p>
 </div>
+</li>
+<li>
+<p>Validate that the uploaded coverage data was successfully read by Codacy. To do this, check that Codacy displays the coverage information on your next commit or pull request, either as a positive, negative, or no variation (repesented by <code>=</code>) of the coverage percentage:</p>
+<p><img alt="Coverage data displayed on Codacy" src="images/coverage-codacy-ui.png" /></p>
+<p>Follow <a href="troubleshooting-common-issues/#no-coverage-visible">these troubleshooting steps</a> if Codacy doesn't display the coverage data for your commit or pull request (repesented by <code>-</code>).</p>
 </li>
 <li>
 <p>Optionally, <a href="https://docs.codacy.com/repositories/badges/">add a Codacy badge</a> to the README of your repository to display the current code coverage.</p>
 </li>
 </ol>
-<p>See the sections below for more advanced functionality, or <a href="troubleshooting-common-issues/">check the troubleshooting page</a> if you found an issue during the setup process.</p>
 <h3 id="multiple-reports">Uploading multiple coverage reports for the same language<a class="headerlink" href="#multiple-reports" title="Permanent link">#</a></h3>
 <p>If your test suite is split on different modules or runs in parallel, you must upload multiple coverage reports for the same language.</p>
 <p>To do this, specify multiple reports by repeating the flag <code>-r</code>. For example:</p>
@@ -3302,35 +3311,6 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
   -l Kotlin --force-language -r &lt;coverage report file name&gt;
 </code></pre></div>
 <p>See the <a href="https://github.com/codacy/codacy-plugins-api/blob/master/src/main/scala/com/codacy/plugins/api/languages/Language.scala#L43">list of languages</a> that you can specify using the flag <code>-l</code>.</p>
-<h3 id="commit-detection">Commit SHA hash detection<a class="headerlink" href="#commit-detection" title="Permanent link">#</a></h3>
-<p>The Codacy Coverage Reporter automatically detects the commit SHA hash to associate with the coverage data from the following CI/CD platforms:</p>
-<ul>
-<li>Appveyor</li>
-<li>Azure Pipelines</li>
-<li>Bitrise</li>
-<li>Buildkite</li>
-<li>Circle CI</li>
-<li>Codefresh</li>
-<li>Codeship</li>
-<li>Docker</li>
-<li>GitLab</li>
-<li>Greenhouse CI</li>
-<li>Heroku CI</li>
-<li>Jenkins</li>
-<li>Magnum CI</li>
-<li>Semaphore CI</li>
-<li>Shippable CI</li>
-<li>Solano CI</li>
-<li>TeamCity CI</li>
-<li>Travis CI</li>
-<li>Wercker CI</li>
-</ul>
-<p>If the Codacy Coverage Reporter fails to detect the current commit from the CI workflow context, it will use the current commit from the local Git repository instead.</p>
-<p>However, you can also force using a specific commit SHA hash with the flag <code>--commit-uuid</code>. For example:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-    -r report.xml <span class="se">\</span>
-    --commit-uuid cd4d000083a744cf1617d46af4ec108b79e06bed
-</code></pre></div>
               
               
                 
@@ -3399,7 +3379,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 2, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 13, 2021</span>
     
   </small>
 </div>
