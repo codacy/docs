@@ -6,8 +6,8 @@ Codacy displays the following information for each file, if available:
 
 -   Grade
 -   Number of issues
--   Duplication
 -   Complexity
+-   Duplication
 -   Code coverage
 
 <!--NOTE Removed in CY-5028 >
