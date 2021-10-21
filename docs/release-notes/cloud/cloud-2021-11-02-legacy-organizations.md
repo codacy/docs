@@ -6,7 +6,7 @@ To make sure that Codacy will continue to analyze your repositories **please per
 
 1.  **If you're using GitHub** you must [install the Codacy GitHub App](https://github.com/apps/codacy-production/installations/new){: target="_blank"} on the GitHub organizations that contain your repositories so that Codacy has the [necessary permissions](../../getting-started/which-permissions-does-codacy-need-from-my-account.md) to analyze your code.
 
-1.  Make sure that your Git provider organization owners [belong to the **Administrators** team](../../organizations/manual-organizations/creating-and-managing-teams.md) of your legacy organization on Codacy.
+1.  Make sure that your Git provider organization owners [belong to the **Administrators** team](../../organizations/manual-organizations/creating-and-managing-teams.md#adding-team-members) of your legacy organization on Codacy.
 
 If you already have any synced organizations on Codacy, the migration process won't overwrite any data on those synced organizations, nor copy any repositories that you have in your legacy organization.
 

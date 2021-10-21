@@ -6,11 +6,13 @@ Codacy displays the following information for each file, if available:
 
 -   Grade
 -   Number of issues
--   Duplication
 -   Complexity
+-   Duplication
 -   Code coverage
 
+<!--NOTE Removed in CY-5028 >
 You can sort the list by each column to help you identify which files you should improve or refactor next.
+--->
 
 ![Files list](images/files.png)
 
@@ -20,7 +22,7 @@ If you have more than one branch enabled on Codacy, use the drop-down list next 
 
 ## File details
 
-Select a file to see more detailed analysis information for that file, including statistics on:
+Click on a file to see more detailed analysis information for that file, including statistics on:
 
 -   **Size:** Lines of code, source lines of code, and commented lines of code
 -   **Structure:** Number of methods and ratio of source lines of code per number of methods
