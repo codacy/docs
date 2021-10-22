@@ -158,4 +158,51 @@ engines:
 !!! tip
     If you're using Python 3.4.\* or later as your programming language, we recommend that you disable the tool **Pylint** and enable the tool **Pylint (Python 3)** on your repository [Code patterns page](configuring-code-patterns.md) instead. For more information see [What's New in Pylint 2.0](http://pylint.pycqa.org/en/latest/whatsnew/2.0.html).
 
+### PMDCPD (Duplication)
+
+<!--
+Reference for all options:
+https://github.com/codacy/codacy-duplication-pmdcpd/blob/c799cb3a80d1f3b3a8eb9868f63abee13e3e81c4/src/main/scala/com/codacy/duplication/pmd/Cpd.scala#L128
+-->
+
+Codacy uses PMDCPD to identify duplicated blocks of code. Add the following configuration to your Codacy configuration file to define the minimum number of tokens to be considered a duplicated block:
+
+```yaml
+---
+engines:
+  duplication:
+    minTokenMatch: 20
+```
+
+| Language   | Default number of tokens |
+| ---------- | ------------------------ |
+| C#         | 50                       |
+| C/C++      | 50                       |
+| Javascript | 40                       |
+| Go         | 40                       |
+| Java       | 100                      |
+| SQL        | 100                      |
+| Python     | 50                       |
+| Ruby       | 50                       |
+| Swift      | 50                       |
+| Scala      | 50                       |
+
+
+    !!! important
+        If configure this option the same value will be used for all languages.
+
+You can also configure the following PMDCPD options:
+- ignoreAnnotations
+- skipLexicalErrors
+- ignoreIdentifiers
+- ignoreLiterals
+- ignoreUsings
+
+```yaml
+---
+engines:
+  duplication:
+    ignoreUsings: false
+```
+
 If you have questions about the Codacy configuration file, please contact us at <mailto:support@codacy.com>.
