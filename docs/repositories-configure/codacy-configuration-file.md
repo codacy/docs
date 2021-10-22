@@ -163,49 +163,51 @@ engines:
 ### PMD CPD (Duplication)
 
 <!--NOTE
-Reference for all options:
-https://github.com/codacy/codacy-duplication-pmdcpd/blob/c799cb3a80d1f3b3a8eb9868f63abee13e3e81c4/src/main/scala/com/codacy/duplication/pmd/Cpd.scala#L128
+    Reference for all options:
+
+    https://github.com/codacy/codacy-duplication-pmdcpd/blob/c799cb3a80d1f3b3a8eb9868f63abee13e3e81c4/src/main/scala/com/codacy/duplication/pmd/Cpd.scala#L128
 -->
 
-Codacy uses [PMD's Copy/Paste Detector (CPD)](https://pmd.github.io/latest/pmd_userdocs_cpd.html) to identify duplicated blocks of code. Add the following configuration to your Codacy configuration file to define the minimum token length that should be reported as a duplicate:
+Codacy uses [PMD's Copy/Paste Detector (CPD)](https://pmd.github.io/latest/pmd_userdocs_cpd.html) to identify duplicated blocks of code.
+
+By default, Codacy only reports duplicate code blocks that have the following minimum token length, depending on the language:
+
+| Language   | Default minimum token length |
+| ---------- | ---------------------------- |
+| C#         | 50                           |
+| C/C++      | 50                           |
+| Go         | 40                           |
+| Java       | 100                          |
+| JavaScript | 40                           |
+| Python     | 50                           |
+| Ruby       | 50                           |
+| SQL        | 100                          |
+| Scala      | 50                           |
+| Swift      | 50                           |
+
+Besides this, Codacy runs PMD CPD with the following options enabled by default:
+
+-   Skip lexical errors
+-   Ignore literals
+-   Ignore identifiers
+-   Ignore annotations
+-   Ignore <span class="skip-vale">usings</span>
+
+To overwrite the defaults options add your settings to the Codacy configuration file based on the example template below:
 
 ```yaml
 ---
 engines:
   duplication:
     minTokenMatch: 20
-```
-
-| Language   | Default number of tokens |
-| ---------- | ------------------------ |
-| C#         | 50                       |
-| C/C++      | 50                       |
-| JavaScript | 40                       |
-| Go         | 40                       |
-| Java       | 100                      |
-| SQL        | 100                      |
-| Python     | 50                       |
-| Ruby       | 50                       |
-| Swift      | 50                       |
-| Scala      | 50                       |
-
-
-!!! important
-    If you configure this option, the same value will be used for all languages.
-
-You can also configure the following PMDCPD options:
-
--   ignoreAnnotations
--   skipLexicalErrors
--   ignoreIdentifiers
--   ignoreLiterals
--   ignoreUsings
-
-```yaml
----
-engines:
-  duplication:
+    skipLexicalErrors: false
+    ignoreLiterals: false
+    ignoreIdentifiers: false
+    ignoreAnnotations: false
     ignoreUsings: false
 ```
+
+!!! important
+    If you configure `minTokenMatch` on the Codacy configuration file Codacy will use that value for all languages.
 
 If you have questions about the Codacy configuration file, please contact us at <mailto:support@codacy.com>.
