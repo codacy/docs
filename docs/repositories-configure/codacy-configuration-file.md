@@ -165,7 +165,7 @@ Reference for all options:
 https://github.com/codacy/codacy-duplication-pmdcpd/blob/c799cb3a80d1f3b3a8eb9868f63abee13e3e81c4/src/main/scala/com/codacy/duplication/pmd/Cpd.scala#L128
 -->
 
-Codacy uses PMDCPD to identify duplicated blocks of code. Add the following configuration to your Codacy configuration file to define the minimum number of tokens to be considered a duplicated block:
+Codacy uses [PMD's Copy/Paste Detector (CPD)](https://pmd.github.io/latest/pmd_userdocs_cpd.html) to identify duplicated blocks of code. Add the following configuration to your Codacy configuration file to define the minimum token length that should be reported as a duplicate:
 
 ```yaml
 ---
