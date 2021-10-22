@@ -209,5 +209,3 @@ engines:
 
 !!! important
     If you configure `minTokenMatch` on the Codacy configuration file Codacy will use that value for all languages.
-
-If you have questions about the Codacy configuration file, please contact us at <mailto:support@codacy.com>.
