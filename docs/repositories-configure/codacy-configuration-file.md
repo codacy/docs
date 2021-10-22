@@ -120,9 +120,9 @@ tsqllint
 
 ## Tool-specific configurations
 
-By default, Codacy tries to detect which language is used on each source code file, and uses a default minimum token length for identifying duplicate blocks of code. However, some false positives may occur.
+By default, Codacy tries to detect which language is used on each source code file, and uses a set of default options for identifying duplicate blocks of code. However, some false positives may occur.
 
-The tools below support specifying the language or language version used in the source code files that you're analyzing, or tuning the code duplication detection strategy.
+The tools below support specifying the language or language version used in the source code files that you're analyzing, or tuning the duplication detection.
 
 ### Cppcheck
 
