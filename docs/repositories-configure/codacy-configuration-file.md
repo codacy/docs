@@ -208,4 +208,4 @@ engines:
 ```
 
 !!! important
-    If you configure `minTokenMatch` on the Codacy configuration file Codacy will use that value for all languages.
+    If you configure `minTokenMatch` on the Codacy configuration file, Codacy will use that value for all languages.
