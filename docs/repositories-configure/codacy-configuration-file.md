@@ -187,11 +187,11 @@ By default, Codacy only reports duplicate code blocks that have the following mi
 
 Besides this, Codacy runs PMD CPD with the following options enabled by default:
 
--   Skip lexical errors
--   Ignore literals
--   Ignore identifiers
--   Ignore annotations
--   Ignore <span class="skip-vale">usings</span>
+-   **Skip lexical errors:** Skip files which can't be tokenized due to invalid characters instead of aborting CPD
+-   **Ignore literals:** Ignore number values and string contents when comparing text
+-   **Ignore identifiers:** Ignore constant and variable names when comparing text
+-   **Ignore annotations:** Ignore language annotations when comparing text
+-   **Ignore <span class="skip-vale">usings</span>:** Ignore `using` directives in C# when comparing text
 
 To overwrite the default options add your settings to the Codacy configuration file based on the example template below:
 
