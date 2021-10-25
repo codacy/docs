@@ -193,7 +193,7 @@ Besides this, Codacy runs PMD CPD with the following options enabled by default:
 -   **Ignore annotations:** Ignore language annotations when comparing text
 -   **Ignore <span class="skip-vale">usings</span>:** Ignore `using` directives in C# when comparing text
 
-To overwrite the default options add your settings to the Codacy configuration file based on the example template below:
+To use a different minimum token length or disable any of the default options, add your settings to the Codacy configuration file based on the example template below:
 
 ```yaml
 ---
