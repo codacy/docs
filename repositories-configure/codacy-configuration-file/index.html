@@ -3231,8 +3231,7 @@ tslint
 tsqllint
 </code></pre></div>
 <h2 id="tool-specific-configurations">Tool-specific configurations<a class="headerlink" href="#tool-specific-configurations" title="Permanent link">#</a></h2>
-<p>By default, Codacy tries to detect which language is used on each source code file, and uses a set of default options for identifying duplicate blocks of code. However, some false positives may occur.</p>
-<p>The tools below support specifying the language or language version used in the source code files that you're analyzing, or tuning the duplication detection.</p>
+<p>Although Codacy tries to detect which language is used on each source code file, some false positives may occur. The tools below support specific configurations to specify the language or language version used in the source code files that you're analyzing.</p>
 <h3 id="cppcheck">Cppcheck<a class="headerlink" href="#cppcheck" title="Permanent link">#</a></h3>
 <p>If you're using Cppcheck to analyze C or C++ source code files, add the following configuration to your Codacy configuration file to define the programming language you're using. The supported languages are <code>c</code> and <code>c++</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
@@ -3257,82 +3256,6 @@ tsqllint
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>If you're using Python 3.4.* or later as your programming language, we recommend that you disable the tool <strong>Pylint</strong> and enable the tool <strong>Pylint (Python 3)</strong> on your repository <a href="../configuring-code-patterns/">Code patterns page</a> instead. For more information see <a href="http://pylint.pycqa.org/en/latest/whatsnew/2.0.html">What's New in Pylint 2.0</a>.</p>
-</div>
-<h3 id="pmd-cpd-duplication">PMD CPD (Duplication)<a class="headerlink" href="#pmd-cpd-duplication" title="Permanent link">#</a></h3>
-<p>Codacy uses <a href="https://pmd.github.io/latest/pmd_userdocs_cpd.html">PMD's Copy/Paste Detector (CPD)</a> to identify duplicated blocks of code.</p>
-<p>By default, Codacy only reports duplicate code blocks that have the following minimum token length, depending on the language:</p>
-<table>
-<thead>
-<tr>
-<th>Language</th>
-<th>Default minimum token length</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>C#</td>
-<td>50</td>
-</tr>
-<tr>
-<td>C/C++</td>
-<td>50</td>
-</tr>
-<tr>
-<td>Go</td>
-<td>40</td>
-</tr>
-<tr>
-<td>Java</td>
-<td>100</td>
-</tr>
-<tr>
-<td>JavaScript</td>
-<td>40</td>
-</tr>
-<tr>
-<td>Python</td>
-<td>50</td>
-</tr>
-<tr>
-<td>Ruby</td>
-<td>50</td>
-</tr>
-<tr>
-<td>SQL</td>
-<td>100</td>
-</tr>
-<tr>
-<td>Scala</td>
-<td>50</td>
-</tr>
-<tr>
-<td>Swift</td>
-<td>50</td>
-</tr>
-</tbody>
-</table>
-<p>Besides this, Codacy runs PMD CPD with the following options enabled by default:</p>
-<ul>
-<li><strong>Skip lexical errors:</strong> Skip files which can't be tokenized due to invalid characters instead of aborting CPD</li>
-<li><strong>Ignore literals:</strong> Ignore number values and string contents when comparing text</li>
-<li><strong>Ignore identifiers:</strong> Ignore constant and variable names when comparing text</li>
-<li><strong>Ignore annotations:</strong> Ignore language annotations when comparing text</li>
-<li><strong>Ignore <span class="skip-vale">usings</span>:</strong> Ignore <code>using</code> directives in C# when comparing text</li>
-</ul>
-<p>To use a different minimum token length or disable any of the default options, add your settings to the Codacy configuration file based on the example template below:</p>
-<div class="highlight"><pre><span></span><code><span class="nn">---</span>
-<span class="nt">engines</span><span class="p">:</span>
-  <span class="nt">duplication</span><span class="p">:</span>
-    <span class="nt">minTokenMatch</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">20</span>
-    <span class="nt">skipLexicalErrors</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-    <span class="nt">ignoreLiterals</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-    <span class="nt">ignoreIdentifiers</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-    <span class="nt">ignoreAnnotations</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-    <span class="nt">ignoreUsings</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">false</span>
-</code></pre></div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>If you configure <code>minTokenMatch</code> on the Codacy configuration file, Codacy will use that value for all languages.</p>
 </div>
               
               
@@ -3402,7 +3325,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 26, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 28, 2021</span>
     
   </small>
 </div>
