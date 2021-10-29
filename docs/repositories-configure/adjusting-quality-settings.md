@@ -23,11 +23,11 @@ These settings configure the quality gates for pull requests and commits.
 -   **Duplication is over:** Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value. By default, this setting is off.
 -   **Coverage variation is under:** Pull requests or commits are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull requests or commits. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.
 
-## Repository
+## Goals
 
-These settings configure quality thresholds for the repository, as displayed on the [Repository Dashboard](../repositories/repository-dashboard.md).
+These settings configure the quality standard thresholds for your repository that's displayed as a dashed line on the [quality evolution chart](../repositories/repository-dashboard.md#quality-evolution-chart), and which files Codacy considers complex and duplicated.
 
-![Quality settings for the repository](images/quality-settings-repository.png)
+![Quality settings for the repository](images/quality-settings-goals.png)
 
 -   **Issues are over:** Defines the threshold displayed on the tab **Issues** of the quality evolution chart.
 -   **Complexity of files is over:** Defines the threshold displayed on the tab **Complexity** of the quality evolution chart.
