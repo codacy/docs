@@ -1,6 +1,6 @@
 # Adjusting quality settings
 
-The **Quality settings** give you control over how Codacy reports the status of analyzed pull requests and commits, as well as the quality standard thresholds in the [quality evolution chart](../repositories/repository-dashboard.md#quality-evolution-chart) of your repository.
+The **Quality settings** allow you to configure quality gates for your pull requests and commits, and define quality goals that help you monitor the progress of the code quality in your repository dashboard.
 
 To access the quality settings, open your repository **Settings**, tab **Quality Settings**:
 
@@ -10,7 +10,7 @@ The following sections explain the settings in detail.
 
 ## Gates
 
-These settings configure the quality gates for pull requests and commits.
+These settings configure which pull requests and commits Codacy reports as up to standards.
 
 !!! tip
     After enabling these settings you can [set Codacy as a required check](../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md) before merging your pull requests.
