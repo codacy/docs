@@ -1,8 +1,8 @@
 # Adjusting quality settings
 
-The **Quality settings** give you control over the status of analyzed commits and pull requests, as well as the quality level thresholds in your repository dashboard. This feature also allows you to turn off metrics like duplication or complexity.
+The **Quality settings** give you control over how Codacy reports the status of analyzed pull requests and commits, as well as the quality standard thresholds in the [quality evolution chart](../repositories/repository-dashboard.md#quality-evolution-chart) of your repository.
 
-To access the quality settings, open your repository **Settings**, tab **Quality Settings**. On this page there are three sections where you can set specific values at the commit, pull request, and repository levels. Click **Edit settings** to edit the settings on each section.
+To access the quality settings, open your repository **Settings**, tab **Quality Settings**:
 
 ![Quality settings](images/quality-settings.png)
 
