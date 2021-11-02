@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The Quality settings give you control over the status of analyzed commits and pull requests, as well as the quality level thresholds in your repository dashboard. This feature also allows you to turn off metrics like duplication or complexity.">
+        <meta name="description" content="The Quality settings allow you to configure quality gates for your pull requests and commits, and define quality goals that help you monitor the progress of the code quality in your repository dashboard.">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/adjusting-quality-settings/">
@@ -545,22 +545,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#commits" class="md-nav__link">
-    Commits
+  <a href="#gates" class="md-nav__link">
+    Gates
   </a>
   
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#pull-requests" class="md-nav__link">
-    Pull Requests
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#repository" class="md-nav__link">
-    Repository
+  <a href="#goals" class="md-nav__link">
+    Goals
   </a>
   
 </li>
@@ -3090,37 +3083,27 @@
                 
                 
                 <h1 id="adjusting-quality-settings">Adjusting quality settings<a class="headerlink" href="#adjusting-quality-settings" title="Permanent link">#</a></h1>
-<p>The <strong>Quality settings</strong> give you control over the status of analyzed commits and pull requests, as well as the quality level thresholds in your repository dashboard. This feature also allows you to turn off metrics like duplication or complexity.</p>
-<p>To access the quality settings, open your repository <strong>Settings</strong>, tab <strong>Quality Settings</strong>. On this page there are three sections where you can set specific values at the commit, pull request, and repository levels. Click <strong>Edit settings</strong> to edit the settings on each section.</p>
+<p>The <strong>Quality settings</strong> allow you to configure quality gates for your pull requests and commits, and define quality goals that help you monitor the progress of the code quality in your repository dashboard.</p>
+<p>To access the quality settings, open your repository <strong>Settings</strong>, tab <strong>Quality Settings</strong>:</p>
 <p><img alt="Quality settings" src="../images/quality-settings.png" /></p>
 <p>The following sections explain the settings in detail.</p>
-<h2 id="commits">Commits<a class="headerlink" href="#commits" title="Permanent link">#</a></h2>
-<p>These settings configure quality thresholds for commits, as displayed on the <a href="../../repositories/commits/">Commits page</a>.</p>
-<p><img alt="Quality settings for commits" src="../images/quality-settings-commits.png" /></p>
-<ul>
-<li><strong>New issues are over:</strong> Commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is bigger than the set value. The default value is 0.</li>
-<li><strong>New security issues are over:</strong> Commits are marked not up to standards if the number of security issues introduced is bigger than the set value. By default, this setting is off.</li>
-<li><strong>Complexity is over:</strong> Commits are marked not up to standards if the introduced complexity is bigger than the set value. By default, this setting is off.</li>
-<li><strong>Duplication is over:</strong> Commits are marked not up to standards if the number of clones introduced is bigger than the set value. By default, this setting is off.</li>
-<li><strong>Coverage variation is under:</strong> Commits are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your commit. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.</li>
-</ul>
-<h2 id="pull-requests">Pull Requests<a class="headerlink" href="#pull-requests" title="Permanent link">#</a></h2>
-<p>These settings configure quality thresholds for pull requests, as displayed on the Pull Requests page.</p>
+<h2 id="gates">Gates<a class="headerlink" href="#gates" title="Permanent link">#</a></h2>
+<p>These settings configure which pull requests and commits Codacy reports as up to standards.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>After enabling these settings you can <a href="../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/">set Codacy as a required check</a> before merging your pull requests.</p>
 </div>
-<p><img alt="Quality settings for pull requests" src="../images/quality-settings-pull-requests.png" /></p>
+<p><img alt="Quality gates" src="../images/quality-settings-gates.png" /></p>
 <ul>
-<li><strong>New issues are over:</strong> Pull requests are marked not up to standards if the number of issues introduced that have at least the specified severity level is bigger than the set value. The default value is 0.</li>
-<li><strong>New security issues are over:</strong> Pull requests are marked not up to standards if the number of security issues introduced is bigger than the set value. By default, this setting is off.</li>
-<li><strong>Complexity is over:</strong> Pull requests are marked not up to standards if the introduced complexity is bigger than the set value. By default, this setting is off.</li>
-<li><strong>Duplication is over:</strong> Pull requests are marked not up to standards if the number of clones introduced is bigger than the set value. By default, this setting is off.</li>
-<li><strong>Coverage variation is under:</strong> Pull requests are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull request. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.</li>
+<li><strong>New issues are over:</strong> Pull requests or commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is higher than the set value. The default value is 0.</li>
+<li><strong>New security issues are over:</strong> Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value. By default, this setting is off.</li>
+<li><strong>Complexity is over:</strong> Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value. By default, this setting is off.</li>
+<li><strong>Duplication is over:</strong> Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value. By default, this setting is off.</li>
+<li><strong>Coverage variation is under:</strong> Pull requests or commits are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull requests or commits. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.</li>
 </ul>
-<h2 id="repository">Repository<a class="headerlink" href="#repository" title="Permanent link">#</a></h2>
-<p>These settings configure quality thresholds for the repository, as displayed on the <a href="../../repositories/repository-dashboard/">Repository Dashboard</a>.</p>
-<p><img alt="Quality settings for the repository" src="../images/quality-settings-repository.png" /></p>
+<h2 id="goals">Goals<a class="headerlink" href="#goals" title="Permanent link">#</a></h2>
+<p>These settings configure the quality standard thresholds for your repository that's displayed as a dashed line on the <a href="../../repositories/repository-dashboard/#quality-evolution-chart">quality evolution chart</a>, and which files Codacy considers complex and duplicated.</p>
+<p><img alt="Quality settings for the repository" src="../images/quality-settings-goals.png" /></p>
 <ul>
 <li><strong>Issues are over:</strong> Defines the threshold displayed on the tab <strong>Issues</strong> of the quality evolution chart.</li>
 <li><strong>Complexity of files is over:</strong> Defines the threshold displayed on the tab <strong>Complexity</strong> of the quality evolution chart.</li>
@@ -3197,7 +3180,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 2, 2021</span>
     
   </small>
 </div>
