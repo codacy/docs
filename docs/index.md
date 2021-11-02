@@ -39,10 +39,10 @@ description: Documentation homepage for the Codacy automated code review tool.
 <div class="topic-row">
   <a class="topic-card" href="coverage-reporter/">
     <div class="tc-icon">
-      <img alt="Adding coverage reports" src="/assets/images/icon-checklist.svg">
+      <img alt="Adding coverage to your repository" src="/assets/images/icon-checklist.svg">
     </div>
     <div class="tc-content">
-      <div>Adding coverage reports</div>
+      <div>Adding coverage to your repository</div>
       <div>Set up your repositories to show code coverage reports directly on Codacy.</div>
     </div>
   </a>
