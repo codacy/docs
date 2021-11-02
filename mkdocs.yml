@@ -692,6 +692,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2021:
+                      - release-notes/cloud/cloud-2021-10.md
                       - release-notes/cloud/cloud-2021-09.md
                       - release-notes/cloud/cloud-2021-11-02-legacy-organizations.md
                       - release-notes/cloud/cloud-2021-08.md
