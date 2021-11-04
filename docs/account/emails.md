@@ -1,6 +1,6 @@
 # Emails
 
-To manage the email addresses associated with your account and your email notifications, click on your avatar on the top right-hand corner, select **Your account**, and open the **Emails** page.
+To manage the email addresses associated with your account and your email notifications, click on your avatar on the top right-hand corner and open **Your account**, page **Emails**.
 
 ## Managing your email notifications
 
