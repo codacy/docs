@@ -25,7 +25,9 @@ These settings configure when Codacy reports pull requests and commits as not up
 
 ## Goals
 
-These settings configure the quality standard thresholds for your repository that's displayed as a dashed line on the [quality evolution chart](../repositories/repository-dashboard.md#quality-evolution-chart), and which files Codacy considers complex and duplicated.
+These settings configure the quality goals for your repository, and which files Codacy considers complex or duplicated.
+
+Codacy displays the quality goals as dashed lines on the [quality evolution chart](../repositories/repository-dashboard.md#quality-evolution-chart) to help you monitor the progress and overall quality status of your repository.
 
 ![Quality settings for the repository](images/quality-settings-goals.png)
 
