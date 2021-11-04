@@ -30,7 +30,7 @@ By participating in this project you are expected to adhere to the [CODE_OF_COND
 
 Codacy also helps keep track of code coverage, code duplication, and code complexity.
 
-Codacy supports PHP, Python, Ruby, Java, JavaScript, and Scala, among others.
+Codacy supports PHP, Python, Ruby, Java, JavaScript, and Scala, [among others](https://docs.codacy.com/getting-started/supported-languages-and-tools/).
 
 ### Free for Open Source
 
