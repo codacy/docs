@@ -1,7 +1,7 @@
 Page,Meta description
 https://docs.codacy.com/,Documentation homepage for the Codacy automated code review tool.
 https://docs.codacy.com/special-thanks/,We would like to thank everyone who helped us greatly. The names on these lists contributed immensely to what Codacy is today.
-https://docs.codacy.com/account/emails/,"To manage the email addresses associated with your account and your email notifications, click on your avatar on the top right-hand corner, select Your account, and open the Emails page."
+https://docs.codacy.com/account/emails/,"To manage the email addresses associated with your account and your email notifications, click on your avatar on the top right-hand corner and open Your account, page Emails."
 https://docs.codacy.com/account/managing-your-profile/,"To manage your profile information such as your name and avatar, click on your avatar on the top right-hand corner and select Your account."
 https://docs.codacy.com/chart/,Install and configure Codacy Self-hosted on Kubernetes or MicroK8s.
 https://docs.codacy.com/chart/requirements/,Before installing Codacy Self-hosted you must ensure that you have your infrastructure correctly provisioned and configured.
