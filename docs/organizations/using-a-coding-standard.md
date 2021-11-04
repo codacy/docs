@@ -1,6 +1,12 @@
 # Using a coding standard
 
-Create a coding standard on your organization to define and apply global tool and code pattern configurations consistently across your repositories. You can also apply the coding standard to new repositories automatically by defining the coding standard as default.
+Create a coding standard on your organization to define and apply global tool and code pattern configurations consistently across your repositories.
+
+<!--NOTE
+    Add this sentence to the paragraph above when CY-5181 is complete.
+
+You can also apply the coding standard to new repositories automatically by defining the coding standard as default.
+ --->
 
 Use the organization coding standard to ensure that Codacy analyzes all your repositories with the same tool and code pattern settings. For example, configure the organization coding standard to ensure that all your repositories and teams are following the same global security rules or coding conventions.
 
@@ -41,6 +47,9 @@ Organizations on Codacy can have one coding standard. To create a coding standar
 
     ![Applying the coding standard to repositories](images/coding-standard-apply.png)
 
+<!--NOTE
+    Add this section when CY-5181 is complete.
+
 ## Setting a coding standard as default {: id="set-default"}
 
 New repositories in your organization will automatically follow the default coding standard.
@@ -52,6 +61,7 @@ To set a coding standard as default:
 1.  Toggle **Make default** on the coding standard card.
 
     ![Setting a coding standard as the default](images/coding-standard-set-default.png)
+-->
 
 ## Editing a coding standard {: id="editing"}
 
@@ -73,8 +83,12 @@ To edit an existing coding standard or change the repositories that follow that 
 
     Codacy will use the updated coding standard when analyzing the next commit on each selected repository.
 
+<!--NOTE
+    Add this tip card when CY-5181 is complete.
+
 !!! tip
     To ensure that all new repositories automatically follow the coding standard, [set the coding standard as default](#set-default).
+-->
 
 ## See also
 
