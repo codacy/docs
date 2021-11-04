@@ -10,7 +10,7 @@ The following sections explain the settings in detail.
 
 ## Gates
 
-These settings configure which pull requests and commits Codacy reports as up to standards.
+These settings configure when Codacy reports pull requests and commits as not up to standards.
 
 !!! tip
     After enabling these settings you can [set Codacy as a required check](../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md) before merging your pull requests.
