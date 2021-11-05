@@ -56,7 +56,7 @@ To use a Codacy configuration file:
     codacy-analysis-cli validate-configuration --directory `pwd`
     ```
 
-## Syntax for excluding files
+## Syntax for ignoring files
 
 To ignore files, you must use the [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29) to define one or more `exclude_paths` patterns. For example:
 
