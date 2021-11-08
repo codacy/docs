@@ -19,7 +19,7 @@ The commit detail displays:
 
     !!! note
         The changes in the number of issues and code quality metrics introduced by the commit are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`).
-    
+
         Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), **some metrics may be missing** (represented by `-`).
 
 ![New issues in the commit detail](images/commits-detail.png)
