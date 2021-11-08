@@ -312,23 +312,23 @@ The table below lists the configuration file names that Codacy detects and suppo
 !!! note
     Codacy doesn't support configuration files for the following tools:
 
-    -   Cppcheck
-    -   Clang-Tidy
-    -   deadcode
-    -   Checkov
-    -   Staticcheck
-    -   ShellCheck
-    -   SQLint
+    -   aligncheck
     -   bundler-audit
-    -   Jackson Linter
+    -   Checkov
+    -   Clang-Tidy
     -   Codacy ScalaMeta Pro
     -   CoffeeLint
-    -   aligncheck
-    -   Flawfinder
-    -   PSScriptAnalyzer
+    -   Cppcheck
+    -   deadcode
     -   Faux Pas
+    -   Flawfinder
     -   Gosec
+    -   Jackson Linter
+    -   PSScriptAnalyzer
+    -   ShellCheck
     -   Spectral
+    -   SQLint
+    -   Staticcheck
 
     For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
 
