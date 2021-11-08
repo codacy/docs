@@ -13,11 +13,14 @@ Codacy uses industry-leading tools to perform automatic static code analysis ove
 The table below lists all languages and frameworks that Codacy supports and the corresponding tools that Codacy uses to analyze your source code. Besides this, Codacy uses [cloc](https://github.com/kentcdodds/cloc) to calculate the source lines of code for all supported languages and supports multiple [test coverage report formats](../coverage-reporter/index.md#generating-coverage).
 
 <!--NOTE
-    When adding a new tool, also update:
+    When adding a new supported tool, make sure that you update the following pages:
 
-    docs/related-tools/local-analysis/client-side-tools.md (if necessary)
+    docs/getting-started/supported-languages-and-tools.md
     docs/related-tools/codacy-plugin-tools.md
-    docs/repositories-configure/configuring-code-patterns.md (supported configuration files table)
+    docs/related-tools/local-analysis/client-side-tools.md (if the tool runs client-side)
+    docs/repositories/security-monitor.md (if the tool reports security issues)
+    docs/repositories-configure/configuring-code-patterns.md (supported configuration files table, or list of tools that don't support configuration files)
+    docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
 <table>
