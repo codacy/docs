@@ -103,7 +103,16 @@ Alternatively, you can also manually apply the default code pattern configuratio
 
 ## Using your own tool configuration files
 
-<!-- TODO Consider including the configuration file names reference somewhere else (see https://github.com/codacy/docs/issues/43) -->
+<!--NOTE
+    When adding a new supported tool, make sure that you update the following pages:
+
+    docs/getting-started/supported-languages-and-tools.md
+    docs/related-tools/codacy-plugin-tools.md
+    docs/related-tools/local-analysis/client-side-tools.md (if the tool runs client-side)
+    docs/repositories/security-monitor.md (if the tool reports security issues)
+    docs/repositories-configure/configuring-code-patterns.md (supported configuration files table, or list of tools that don't support configuration files)
+    docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
+-->
 
 Codacy supports configuration files for several tools. To use a configuration file for your static analysis tool:
 
