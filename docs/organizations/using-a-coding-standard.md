@@ -73,7 +73,7 @@ To edit an existing coding standard or change the repositories that follow that 
 
 1.  Make your changes to the current coding standard configurations and click the button **Next** to advance between the following pages:
 
-    -   The programming languages that the coding standard applies to 
+    -   The programming languages that the coding standard applies to
     -   The tool and code pattern configurations of the coding standard
     -   The repositories that follow the coding standard
 
