@@ -111,6 +111,7 @@ shellcheck
 sonarscharp
 sonarvb
 SQLint
+spectral
 stylelint
 swiftlint
 tailor
