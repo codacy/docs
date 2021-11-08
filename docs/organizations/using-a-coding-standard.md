@@ -90,5 +90,6 @@ To edit an existing coding standard or change the repositories that follow that 
 
 ## See also
 
--   [Configuring code patterns on each repository](../repositories-configure/configuring-code-patterns.md)
 -   [Copying code patterns between repositories](copying-code-patterns-between-repositories.md)
+-   [Configuring code patterns on each repository](../repositories-configure/configuring-code-patterns.md)
+-   [Importing pattern configurations from another repository](../repositories-configure/configuring-code-patterns.md#import-patterns)
