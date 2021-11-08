@@ -3100,7 +3100,7 @@
 <p><img alt="Quality settings" src="../images/quality-settings.png" /></p>
 <p>The following sections explain the settings in detail.</p>
 <h2 id="gates">Gates<a class="headerlink" href="#gates" title="Permanent link">#</a></h2>
-<p>These settings configure which pull requests and commits Codacy reports as up to standards.</p>
+<p>These settings configure when Codacy reports pull requests and commits as not up to standards.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>After enabling these settings you can <a href="../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/">set Codacy as a required check</a> before merging your pull requests.</p>
@@ -3114,7 +3114,8 @@
 <li><strong>Coverage variation is under:</strong> Pull requests or commits are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull requests or commits. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.</li>
 </ul>
 <h2 id="goals">Goals<a class="headerlink" href="#goals" title="Permanent link">#</a></h2>
-<p>These settings configure the quality standard thresholds for your repository that's displayed as a dashed line on the <a href="../../repositories/repository-dashboard/#quality-evolution-chart">quality evolution chart</a>, and which files Codacy considers complex and duplicated.</p>
+<p>These settings configure the quality goals for your repository, and which files Codacy considers complex or duplicated.</p>
+<p>Codacy displays the quality goals as dashed lines on the <a href="../../repositories/repository-dashboard/#quality-evolution-chart">quality evolution chart</a> to help you monitor the progress and overall quality status of your repository.</p>
 <p><img alt="Quality settings for the repository" src="../images/quality-settings-goals.png" /></p>
 <ul>
 <li><strong>Issues are over:</strong> Defines the threshold displayed on the tab <strong>Issues</strong> of the quality evolution chart.</li>
@@ -3192,7 +3193,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 2, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 8, 2021</span>
     
   </small>
 </div>
