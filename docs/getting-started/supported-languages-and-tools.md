@@ -49,6 +49,13 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
+      <td>AsyncAPI</td>
+      <td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>AWS Cloud​Formation</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td></td>
@@ -204,6 +211,13 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Objective-C</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>, <a href="http://fauxpasapp.com/">Faux Pas</a><a href="#client-side"><sup>1</sup></a></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>OpenAPI</td>
+      <td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
