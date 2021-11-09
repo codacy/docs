@@ -172,6 +172,10 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-sonar-visual-basic" class="skip-vale">codacy/codacy-sonar-visual-basic</a></td>
 </tr>
 <tr>
+<td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
+<td><a href="https://github.com/codacy/codacy-spectral" class="skip-vale">codacy/codacy-spectral</a></td>
+</tr>
+<tr>
 <td><a href="https://spotbugs.github.io/">SpotBugs</a></td>
 <td><a href="https://github.com/codacy/codacy-spotbugs" class="skip-vale">codacy/codacy-spotbugs</a></td>
 </tr>
