@@ -5,7 +5,7 @@ Copy [tool and pattern configurations](../repositories-configure/configuring-cod
 For example, when adding new repositories on Codacy you can copy the tool and pattern configurations from an existing repository that's already configured, and then tweak and adapt the settings for your new repositories.
 
 !!! tip
-    To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, [use an organization coding standard](../organizations/using-a-coding-standard.md) instead.
+    To ensure that multiple repositories consistently follow the same tool and code pattern configurations throughout your organization, [use a coding standard](../organizations/using-a-coding-standard.md) instead.
 
 {%
     include-markdown "../repositories-configure/configuring-code-patterns.md"
