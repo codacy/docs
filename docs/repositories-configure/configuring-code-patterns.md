@@ -1,10 +1,10 @@
 ---
-description: Configure the tools and code patterns that Codacy uses to analyze your repositories to create a coding standard adapted to your scenario.
+description: Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to create a coding standard adapted to your scenario.
 ---
 
 # Configuring code patterns
 
-By default, Codacy uses a subset of the code patterns that exist for each tool to analyze your repositories. These default settings result from community feedback or existing coding standards.
+By default, Codacy uses a subset of the supported static analysis tools and code patterns to analyze your repositories. These default settings result from community feedback or existing coding standards.
 
 However, you can create a coding standard adapted to your scenario by configuring the tools and code patterns that Codacy uses to analyze your repository:
 
