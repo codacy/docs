@@ -8,13 +8,19 @@ By default, Codacy uses a subset of the code patterns that exist for each tool t
 
 However, you can create a coding standard adapted to your scenario by configuring the tools and code patterns that Codacy uses to analyze each repository:
 
-1.  Open your repository **Code patterns** page and select the tool to configure:
+1.  Open your repository **Code patterns** page.
+
+    ![Code patterns page](images/code-patterns.png)
+
+1.  Toggle the tools that Codacy will use to analyze your repository.
+
+    ![Toggling tools](images/code-patterns-toggle-tools.png)
+
+1.  Select each tool to configure and enable or disable the corresponding code patterns using the checkbox next to each pattern.
 
     ![Configuring code patterns](images/code-patterns-configure.png)
 
-1.  Enable or disable the code patterns using the checkbox for each pattern.
-
-    To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues:
+    To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues.
 
     ![Code pattern details](images/code-patterns-detail.png)
 
@@ -118,7 +124,7 @@ Codacy supports configuration files for several tools. To use a configuration fi
 
 1.  Push the configuration file to the root of the branch [configured as the main branch on Codacy](managing-branches.md).
 
-1.  Open your repository **Code patterns** page, select the tool that will use the configuration file, and select the option **Configuration file**:
+1.  Open your repository **Code patterns** page, select the tool that will use the configuration file, and select the option **Configuration file**.
 
     ![Using a configuration file](images/code-patterns-config-file.png)
 
