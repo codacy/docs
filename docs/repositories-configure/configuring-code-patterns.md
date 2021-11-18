@@ -66,8 +66,8 @@ For example, when adding a new repository on Codacy you can copy the tool and co
 
     The following example illustrates the points above:
 
-    | Source repository | Target repository | Target repository after import |
-    |-------------------|-------------------|--------------------------------|
+    | Source repository                                                    | Target repository                                                    | Target repository after import                                                   |
+    | -------------------------------------------------------------------- | -------------------------------------------------------------------- | -------------------------------------------------------------------------------- |
     | ![Source repository](images/code-patterns-import-example-source.svg) | ![Target repository](images/code-patterns-import-example-target.svg) | ![Target repository after import](images/code-patterns-import-example-final.svg) |
 <!--code-patterns-copy-end-->
 
@@ -135,6 +135,7 @@ The table below lists the configuration file names that Codacy detects and suppo
       <th>Tool name</th>
       <th>Language</th>
       <th>Files detected</th>
+      <th>Configurable?</th>
       <th>Other info</th>
     <tr>
   </thead>
@@ -143,48 +144,56 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>Ameba</td>
     <td>Crystal</td>
     <td><code>.ameba.yml</code></td>
+    <td>❌</td>
     <td></td>
   </tr>
   <tr>
     <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
     <td>Python</td>
     <td><code>bandit.yml</code>, <code>.bandit</code></td>
+    <td>❌</td>
     <td>To solve flagged valid Python "assert" statements, create a <code>bandit.yml</code> in the root of the repository containing: <code>skips: \['B101'\]</code></td>
   </tr>
   <tr>
     <td>Brakeman</td>
     <td>Ruby</td>
     <td><code>config/brakeman.yml</code></td>
+    <td>❌</td>
     <td></td>
   </tr>
   <tr>
     <td>Checkstyle</td>
     <td>Java</td>
     <td><code>checkstyle.xml</code></td>
+    <td>✅</td>
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
   </tr>
   <tr>
     <td>CodeNarc</td>
     <td>Groovy</td>
     <td><code>.codenarcrc</code></td>
+    <td>✅</td>
     <td></td>
   </tr>
   <tr>
     <td>Credo</td>
     <td>Elixir</td>
     <td><code>.credo.exs</code>, <code>config/.credo.exs</code></td>
+    <td>✅</td>
     <td></td>
   </tr>
   <tr>
     <td>CSSLint</td>
     <td>CSS</td>
     <td><code>.csslintrc</code></td>
+    <td>❌</td>
     <td></td>
   </tr>
   <tr>
     <td>detekt</td>
     <td>Kotlin</td>
     <td><code>default-detekt-config.yml</code>, <code>detekt.yml</code></td>
+    <td>❌</td>
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
   </tr>
   <tr>
@@ -192,6 +201,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>JavaScript, Typescript</td>
     <td><code>.eslintrc.js</code>, <code>.eslintrc.cjs</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code>, <code>.eslintrc</code>,
         <code>.prettierrc</code>, <code>.prettierrc.yaml</code>, <code>.prettierrc.yml</code>, <code>.prettierrc.json</code>, <code>prettier.config.js</code>, <code>.prettierrc.js</code></td>
+    <td>✅</td>
     <td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintDefaultOptions.ts#L26">Plugins in the UI</a><br />
         <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L119">Other Plugins</a></td>
   </tr>
@@ -199,120 +209,140 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>Hadolint</td>
     <td>Dockerfile</td>
     <td><code>.hadolint.yaml</code></td>
+    <td>❌</td>
     <td></td>
   </tr>
   <tr>
     <td>JSHint</td>
     <td>JavaScript</td>
     <td><code>.jshintrc</code></td>
+    <td>✅</td>
     <td></td>
   </tr>
   <tr>
     <td>markdownlint</td>
     <td>Markdown</td>
     <td><code>.markdownlint.yaml</code>, <code>.markdownlint.jsonc</code>, <code>.markdownlint.json</code></td>
+    <td>✅</td>
     <td></td>
   </tr>
   <tr>
     <td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP_CodeSniffer</a></td>
     <td>PHP</td>
     <td><code>phpcs.xml</code>, <code>phpcs.xml.dist</code></td>
+    <td>✅</td>
     <td></td>
   </tr>
   <tr>
     <td>PHP Mess Detector</td>
     <td>PHP</td>
     <td><code>codesize.xml</code>, <code>phpmd.xml</code>, <code>phpmd.xml.dist</code></td>
+    <td>✅</td>
     <td></td>
   </tr>
   <tr>
     <td>PMD</td>
     <td>Apex, Java, JavaScript, JSP, PL/SQL, XML, Velocity and Visualforce</td>
     <td><code>ruleset.xml</code>, <code>apex-ruleset.xml</code></td>
+    <td>✅</td>
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
   </tr>
   <tr>
     <td>Prospector</td>
     <td>Python</td>
     <td><code>.prospector.yml</code>, <code>.prospector.yaml</code>, <code>prospector.yml</code>, <code>prospector.yaml</code>, <code>.landscape.yml</code>, <code>.landscape.yaml</code>, <code>landscape.yml</code>, <code>landscape.yaml</code></td>
+    <td>❌</td>
     <td></td>
   </tr>
   <tr>
     <td>Pylint</td>
     <td>Python</td>
     <td><code>pylintrc</code>, <code>.pylintrc</code></td>
+    <td>✅</td>
     <td><a href="https://github.com/codacy/codacy-pylint/blob/master/requirements.txt">Plugins</a></td>
   </tr>
   <tr>
     <td>remark-lint</td>
     <td>Markdown</td>
     <td><code>.remarkrc</code>, <code>.remarkrc.json</code>, <code>.remarkrc.yaml</code>, <code>.remarkrc.yml</code>, <code>.remarkrc.js</code></td>
+    <td>✅</td>
     <td></td>
   </tr>
   <tr>
     <td>Revive</td>
     <td>Go</td>
     <td><code>revive.toml</code></td>
+    <td>✅</td>
     <td></td>
   </tr>
   <tr>
     <td>RuboCop</td>
     <td>Ruby</td>
     <td><code>.rubocop.yml</code></td>
+    <td>✅</td>
     <td></td>
   </tr>
   <tr>
     <td>Scalastyle</td>
     <td>Scala</td>
     <td><code>scalastyle-config.xml</code>, <code>scalastyle_config.xml</code></td>
+    <td>✅</td>
     <td></td>
   </tr>
   <tr>
     <td>Sonar C#</td>
     <td>C#</td>
     <td><code>SonarLint.xml</code></td>
+    <td>✅</td>
     <td></td>
   </tr>
   <tr>
     <td>Sonar VB</td>
     <td>Visual Basic</td>
     <td><code>SonarLint.xml</code></td>
+    <td>✅</td>
     <td></td>
   </tr>
   <tr>
     <td>SpotBugs</td>
     <td>Java, Scala</td>
     <td><code>findbugs.xml</code>, <code>findbugs-includes.xml</code>, <code>findbugs-excludes.xml</code>, <code>spotbugs.xml</code>, <code>spotbugs-includes.xml</code>, <code>spotbugs-excludes.xml</code></td>
+    <td>❌</td>
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
   </tr>
   <tr>
     <td>Stylelint</td>
     <td>CSS, LESS, SASS</td>
     <td><code>.stylelintrc</code>, <code>stylelint.config.js</code>, <code>.stylelintrc.json</code>, <code>.stylelintrc.yaml</code>, <code>.stylelintrc.yml</code>, <code>.stylelintrc.js</code></td>
+    <td>✅</td>
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
   </tr>
   <tr>
     <td>SwiftLint</td>
     <td>Swift</td>
     <td><code>.swiftlint.yml</code></td>
+    <td>❌</td>
     <td></td>
   </tr>
   <tr>
     <td>Tailor</td>
     <td>Swift</td>
     <td><code>.tailor.yml</code></td>
+    <td>✅</td>
     <td></td>
   </tr>
   <tr>
     <td>TSLint</td>
     <td>TypeScript</td>
     <td><code>tslint.json</code></td>
+    <td>?</td>
     <td></td>
   </tr>
   <tr>
     <td>TSQLLint</td>
     <td>Transact-SQL</td>
     <td><code>.tsqllintrc</code></td>
+    <td>❌</td>
     <td></td>
   </tr>
   </tbody>
@@ -321,23 +351,23 @@ The table below lists the configuration file names that Codacy detects and suppo
 !!! note
     Codacy doesn't support configuration files for the following tools:
 
-    -   aligncheck
-    -   bundler-audit
-    -   Checkov
-    -   Clang-Tidy
-    -   Codacy ScalaMeta Pro
-    -   CoffeeLint
-    -   Cppcheck
-    -   deadcode
-    -   Faux Pas
-    -   Flawfinder
-    -   Gosec
-    -   Jackson Linter
-    -   PSScriptAnalyzer
-    -   ShellCheck
-    -   Spectral
-    -   SQLint
-    -   Staticcheck
+    -   aligncheck ❌
+    -   bundler-audit ❌
+    -   Checkov ❌
+    -   Clang-Tidy ❌
+    -   Codacy ScalaMeta Pro ❌
+    -   CoffeeLint ✅
+    -   Cppcheck ❌
+    -   deadcode ❌
+    -   Faux Pas ❌
+    -   Flawfinder ❌
+    -   Gosec ❌
+    -   Jackson Linter ❌
+    -   PSScriptAnalyzer ❌
+    -   ShellCheck ❌
+    -   Spectral ❌
+    -   SQLint ❌
+    -   Staticcheck ❌
 
     For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
 
