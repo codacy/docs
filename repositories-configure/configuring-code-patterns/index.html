@@ -8,7 +8,7 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Configure the tools and code patterns that Codacy uses to analyze your repositories to create a coding standard adapted to your scenario.">
+        <meta name="description" content="Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results are adapted to your scenario.">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/configuring-code-patterns/">
@@ -694,6 +694,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../organizations/using-a-coding-standard/" title="Using a coding standard" class="md-nav__link">
+      Using a coding standard
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../organizations/copying-code-patterns-between-repositories/" title="Copying code patterns between repositories" class="md-nav__link">
       Copying code patterns between repositories
     </a>
@@ -743,16 +755,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-8" type="checkbox" id="nav-5-8">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-9" type="checkbox" id="nav-5-9">
     
-    <label class="md-nav__link" for="nav-5-8">
+    <label class="md-nav__link" for="nav-5-9">
       Manual organizations (legacy)
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Manual organizations (legacy)" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-8">
+      <label class="md-nav__title" for="nav-5-9">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -3116,8 +3128,12 @@
                 
                 
                 <h1 id="configuring-code-patterns">Configuring code patterns<a class="headerlink" href="#configuring-code-patterns" title="Permanent link">#</a></h1>
-<p>By default, Codacy uses a subset of the code patterns that exist for each tool to analyze your repositories. These default code patterns result from community feedback or existing coding standards.</p>
-<p>However, you can create a coding standard adapted to your scenario by configuring the tools and code patterns that Codacy uses to analyze each repository:</p>
+<p>By default, Codacy uses a subset of the supported static analysis tools and code patterns to analyze your repositories. These default settings result from community feedback or existing coding standards. However, you can adapt the default settings to your scenario by configuring the tools and code patterns that Codacy uses to analyze your repository.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If your repository is following an <a href="../../organizations/using-a-coding-standard/">organization coding standard</a>, changes made to any tool or code pattern cause the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes.</p>
+</div>
+<p>To configure the tools and code patterns for your repository:</p>
 <ol>
 <li>
 <p>Open your repository <strong>Code patterns</strong> page.</p>
@@ -3161,11 +3177,12 @@
 <li><strong>Documentation:</strong> Methods and classes that don't have the correct comment annotations</li>
 </ul>
 <h2 id="import-patterns">Importing pattern configurations from another repository<a class="headerlink" href="#import-patterns" title="Permanent link">#</a></h2>
-<p>Importing tool and code pattern configurations from another repository can help you bootstrap and standardize the coding standard across your repositories.</p>
+<p>Importing tool and code pattern configurations from another repository can help you bootstrap and standardize the tool and code pattern configurations across your repositories.</p>
 <p>For example, when adding a new repository on Codacy you can copy the tool and code pattern configurations from an existing repository that's already configured, and then tweak and adapt the settings for your new repository.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You can also copy the tool and code pattern configurations <a href="../../organizations/copying-code-patterns-between-repositories/">from one repository to multiple target repositories</a>.</p>
+<p>To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, <a href="../../organizations/using-a-coding-standard/">use an organization coding standard</a> instead.</p>
+<p>Alternatively, you can also copy the tool and code pattern configurations <a href="../../organizations/copying-code-patterns-between-repositories/">from one repository to multiple target repositories</a>.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -3454,6 +3471,7 @@
 </div>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
+<li><a href="../../organizations/using-a-coding-standard/">Applying a coding standard across multiple repositories</a></li>
 <li><a href="../../organizations/copying-code-patterns-between-repositories/">Copying code patterns between repositories</a></li>
 </ul>
               
@@ -3604,7 +3622,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 18, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 19, 2021</span>
     
   </small>
 </div>
