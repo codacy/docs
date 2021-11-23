@@ -10,9 +10,7 @@ Codacy displays the following information for each file, if available:
 -   Duplication
 -   Code coverage
 
-<!--NOTE Removed in CY-5028 >
 You can sort the list by each column to help you identify which files you should improve or refactor next.
---->
 
 ![Files list](images/files.png)
 
