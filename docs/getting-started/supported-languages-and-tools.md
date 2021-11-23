@@ -266,10 +266,10 @@ The table below lists all languages and frameworks that Codacy supports and the 
       </td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a>,
           <a href="https://github.com/rubysec/bundler-audit">bundler-audit</a>,
-          <a href="https://github.com/rubocop-hq/rubocop">RuboCop</a></td>
+          <a href="https://github.com/rubocop/rubocop">RuboCop</a></td>
       <td></td>
       <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
-      <td><a href="https://github.com/rubocop-hq/rubocop">RuboCop</a></td>
+      <td><a href="https://github.com/rubocop/rubocop">RuboCop</a></td>
     </tr>
     <tr>
       <td>Sass</td>
