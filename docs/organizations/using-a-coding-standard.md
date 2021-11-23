@@ -1,5 +1,8 @@
 # Using a coding standard
 
+!!! tip
+    [Watch this demo (3 min)](https://www.loom.com/share/19642d09662e40f2820bf2be6bdf3660){: target="_blank"} to learn how to create a coding standard for your organization.
+
 Create a coding standard on your organization to define and apply shared tool and code pattern configurations consistently across your repositories.
 
 <!--NOTE
