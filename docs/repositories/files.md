@@ -10,7 +10,7 @@ Codacy displays the following information for each file, if available:
 -   Duplication
 -   Code coverage
 
-You can sort the list by each column to help you identify which files you should improve or refactor next.
+By default, Codacy displays the files in alphabetical order but you can sort the list by each column to help you identify which files you should improve or refactor next.
 
 ![Files list](images/files.png)
 
