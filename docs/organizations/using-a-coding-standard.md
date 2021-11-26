@@ -4,7 +4,6 @@
     This is a new Codacy feature and <span class="skip-vale">we're</span> working to release the following improvements soon:
 
     -   Deleting and renaming coding standards
-    -   Being able to create multiple coding standards per organization
     -   Applying a coding standard by default to new repositories
 
     [Watch this demo (3 min)](https://www.loom.com/share/19642d09662e40f2820bf2be6bdf3660){: target="_blank"} to learn how to create a coding standard for your organization.
