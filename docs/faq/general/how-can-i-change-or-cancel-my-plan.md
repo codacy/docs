@@ -16,12 +16,6 @@ Alternatively, [delete your organization](../../organizations/what-are-synced-or
     end="<!--end-github-marketplaces-->"
 %}
 
-!!! note
-    **For legacy single accounts,** click on your avatar, select **Your Account**, and open the page **Plan and billing**.
-    {: id="single-accounts"}
-
-    Alternatively, you can also [delete your account](../../account/managing-your-profile.md#deleting-your-account) to remove all your personal repositories from Codacy and cancel your existing plan.
-
 ## If you're using Codacy Self-hosted
 
 To help you understand how you're consuming your licensed Codacy seats, use [<span class="skip-vale">codacy-usage-report</span>](https://github.com/codacy/codacy-usage-report) to obtain details about the activity of the users in your Codacy Self-hosted instance.
