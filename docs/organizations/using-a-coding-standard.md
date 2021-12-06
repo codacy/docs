@@ -10,11 +10,7 @@
 
 Create a coding standard on your organization to define and apply shared tool and code pattern configurations consistently across your repositories.
 
-<!--NOTE
-    Add this sentence to the paragraph above when CY-5181 is complete.
-
 You can also apply the coding standard to new repositories automatically by defining the coding standard as default.
- --->
 
 The organization coding standard helps you ensure that Codacy analyzes multiple repositories with the same tool and code pattern settings. For example, you can use the organization coding standard to ensure that all your repositories and teams are following the same security rules or coding conventions.
 
@@ -55,9 +51,6 @@ To create a coding standard for your organization:
 
     ![Applying the coding standard to repositories](images/coding-standard-apply.png)
 
-<!--NOTE
-    Add this section when CY-5181 is complete.
-
 ## Setting a coding standard as default {: id="set-default"}
 
 New repositories in your organization will automatically follow the default coding standard.
@@ -68,8 +61,9 @@ To set a coding standard as default:
 
 1.  Toggle **Make default** on the coding standard card.
 
+    <!--TODO Add screenshot
     ![Setting a coding standard as the default](images/coding-standard-set-default.png)
--->
+    -->
 
 ## Editing a coding standard {: id="editing"}
 
@@ -93,12 +87,8 @@ To edit an existing coding standard or change the repositories that follow that 
 
     Codacy will start using the updated coding standard on the next analysis of each selected repository.
 
-<!--NOTE
-    Add this tip card when CY-5181 is complete.
-
 !!! tip
     To ensure that all new repositories automatically follow the coding standard, [set the coding standard as default](#set-default).
--->
 
 ## See also
 
