@@ -87,6 +87,10 @@ To edit an existing coding standard or change the repositories that follow that 
     -   The tool and code pattern configurations of the coding standard
     -   The repositories that follow the coding standard
 
+    You can also rename the coding standard using the input at the bottom of the first page of the wizard:
+
+    ![Renaming a coding standard](images/coding-standard-rename.png)
+
 1.  Click the button **Save and apply standard** on the repository selection page to save your changes to the coding standard.
 
     {% include "../assets/includes/coding-standard-apply-important.md" %}
