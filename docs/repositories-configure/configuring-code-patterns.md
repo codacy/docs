@@ -292,7 +292,7 @@ The table below lists the configuration file names that Codacy detects and suppo
   </tr>
  <tr>
     <td>Spectral</td>
-    <td>YAML, JSON</td>
+    <td>AsyncAPI, OpenAPI</td>
     <td><code>.spectral.yaml</code>, <code>.spectral.yml</code>, <code>.spectral.json</code></td>
     <td></td>
   </tr>
