@@ -61,9 +61,7 @@ To set a coding standard as default:
 
 1.  Toggle **Make default** on the coding standard card.
 
-    <!--TODO Add screenshot
     ![Setting a coding standard as the default](images/coding-standard-set-default.png)
-    -->
 
 ## Editing a coding standard {: id="editing"}
 
