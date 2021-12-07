@@ -77,7 +77,7 @@ To edit an existing coding standard or change the repositories that follow that 
 
 1.  Open your organization **Coding standards** page, tab **Coding standards**.
 
-1.  Click the edit icon on the coding standard card.
+1.  Click the edit icon on the coding standard card or, if you only want to apply an existing coding standard to a different set of repositories, click the link **Apply coding standard to your repositories** to navigate directly to the repository selection step.
 
     ![Editing an existing coding standard](images/coding-standard-edit.png)
 
@@ -86,6 +86,10 @@ To edit an existing coding standard or change the repositories that follow that 
     -   The programming languages that the coding standard applies to
     -   The tool and code pattern configurations of the coding standard
     -   The repositories that follow the coding standard
+
+    You can also rename the coding standard using the input at the bottom of the first page of the wizard:
+
+    ![Renaming a coding standard](images/coding-standard-rename.png)
 
 1.  Click the button **Save and apply standard** on the repository selection page to save your changes to the coding standard.
 
