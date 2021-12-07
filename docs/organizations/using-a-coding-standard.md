@@ -3,8 +3,8 @@
 !!! info "This is a beta feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> working to release the following improvements soon:
 
-    -   Deleting and renaming a coding standard
     -   Applying a coding standard by default to new repositories
+    -   Deleting a coding standard
 
     For more information [read the release announcement](https://blog.codacy.com/organization-coding-standards/){: target="_blank"} or [watch a demo (3 min)](https://www.loom.com/share/19642d09662e40f2820bf2be6bdf3660){: target="_blank"} to learn how to create a coding standard for your organization.
 
@@ -71,7 +71,7 @@ To edit an existing coding standard or change the repositories that follow that 
 
 1.  Open your organization **Coding standards** page, tab **Coding standards**.
 
-1.  Click the edit icon on the coding standard card.
+1.  Click the edit icon on the coding standard card or, if you only want to apply an existing coding standard to a different set of repositories, click the link **Apply coding standard to your repositories** to navigate directly to the repository selection step.
 
     ![Editing an existing coding standard](images/coding-standard-edit.png)
 
@@ -80,6 +80,10 @@ To edit an existing coding standard or change the repositories that follow that 
     -   The programming languages that the coding standard applies to
     -   The tool and code pattern configurations of the coding standard
     -   The repositories that follow the coding standard
+
+    You can also rename the coding standard using the input at the bottom of the first page of the wizard:
+
+    ![Renaming a coding standard](images/coding-standard-rename.png)
 
 1.  Click the button **Save and apply standard** on the repository selection page to save your changes to the coding standard.
 
