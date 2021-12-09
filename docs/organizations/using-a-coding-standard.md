@@ -1,20 +1,13 @@
 # Using a coding standard
 
 !!! info "This is a beta feature"
-    This is a new Codacy feature and <span class="skip-vale">we're</span> working to release the following improvements soon:
-
-    -   Deleting and renaming a coding standard
-    -   Applying a coding standard by default to new repositories
+    This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
     For more information [read the release announcement](https://blog.codacy.com/organization-coding-standards/){: target="_blank"} or [watch a demo (3 min)](https://www.loom.com/share/19642d09662e40f2820bf2be6bdf3660){: target="_blank"} to learn how to create a coding standard for your organization.
 
 Create a coding standard on your organization to define and apply shared tool and code pattern configurations consistently across your repositories.
 
-<!--NOTE
-    Add this sentence to the paragraph above when CY-5181 is complete.
-
 You can also apply the coding standard to new repositories automatically by defining the coding standard as default.
- --->
 
 The organization coding standard helps you ensure that Codacy analyzes multiple repositories with the same tool and code pattern settings. For example, you can use the organization coding standard to ensure that all your repositories and teams are following the same security rules or coding conventions.
 
@@ -55,9 +48,6 @@ To create a coding standard for your organization:
 
     ![Applying the coding standard to repositories](images/coding-standard-apply.png)
 
-<!--NOTE
-    Add this section when CY-5181 is complete.
-
 ## Setting a coding standard as default {: id="set-default"}
 
 New repositories in your organization will automatically follow the default coding standard.
@@ -69,7 +59,6 @@ To set a coding standard as default:
 1.  Toggle **Make default** on the coding standard card.
 
     ![Setting a coding standard as the default](images/coding-standard-set-default.png)
--->
 
 ## Editing a coding standard {: id="editing"}
 
@@ -77,7 +66,7 @@ To edit an existing coding standard or change the repositories that follow that 
 
 1.  Open your organization **Coding standards** page, tab **Coding standards**.
 
-1.  Click the edit icon on the coding standard card.
+1.  Click the edit icon on the coding standard card or, if you only want to apply an existing coding standard to a different set of repositories, click the link **Apply coding standard to your repositories** to navigate directly to the repository selection step.
 
     ![Editing an existing coding standard](images/coding-standard-edit.png)
 
@@ -87,18 +76,18 @@ To edit an existing coding standard or change the repositories that follow that 
     -   The tool and code pattern configurations of the coding standard
     -   The repositories that follow the coding standard
 
+    You can also rename the coding standard using the input at the bottom of the first page of the wizard:
+
+    ![Renaming a coding standard](images/coding-standard-rename.png)
+
 1.  Click the button **Save and apply standard** on the repository selection page to save your changes to the coding standard.
 
     {% include "../assets/includes/coding-standard-apply-important.md" %}
 
     Codacy will start using the updated coding standard on the next analysis of each selected repository.
 
-<!--NOTE
-    Add this tip card when CY-5181 is complete.
-
 !!! tip
     To ensure that all new repositories automatically follow the coding standard, [set the coding standard as default](#set-default).
--->
 
 ## See also
 
