@@ -3106,17 +3106,16 @@ helm upgrade --install --atomic --timeout 600s loki loki/loki <span class="se">\
 </code></pre></div>
 <p>Follow the <a href="https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-services/#accessing-services-running-on-the-cluster">Kubernetes documentation</a> to access the Grafana service that's now running on your cluster, using the method that best suits your use case.</p>
 <h3 id="5-enable-service-dashboards">5. Enable service dashboards<a class="headerlink" href="#5-enable-service-dashboards" title="Permanent link">#</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>Currently, the application metrics and information reported by the Codacy components to populate service dashboards are very limited since we're still developing these reporting capabilities.</p>
-<p>As such, we recommend that you skip this configuration.</p>
-</div>
-<p>Now that you have Prometheus and Grafana installed you can enable <code>serviceMonitor</code> and <code>grafana_dashboards</code> for Codacy components.</p>
+<p>Now that you have Prometheus and Grafana installed you can enable metrics reporting for Codacy components.</p>
 <ol>
 <li>
 <p>Create a file named <code>values-monitoring.yaml</code> with the following content:</p>
 <div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
   <span class="nt">metrics</span><span class="p">:</span>
+    <span class="nt">kamon</span><span class="p">:</span>
+      <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
+      <span class="nt">prometheusReporter</span><span class="p">:</span>
+        <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
     <span class="nt">serviceMonitor</span><span class="p">:</span>
       <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
     <span class="nt">grafana</span><span class="p">:</span>
@@ -3279,7 +3278,7 @@ helm upgrade --install --atomic --timeout 600s loki loki/loki <span class="se">\
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 6, 2021</span>
     
   </small>
 </div>

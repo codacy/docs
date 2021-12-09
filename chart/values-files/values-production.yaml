@@ -192,6 +192,19 @@ codacy-ingress:
     annotations:
       kubernetes.io/ingress.class: "nginx"
       nginx.ingress.kubernetes.io/use-regex: "true"
+##
+##  If using TLS uncomment this section and create the required secret.
+##  For instance, if you'll be using a self-signed certificate this can be done running:
+##
+##   openssl req -x509 -nodes -days 10000 -newkey rsa:2048 -keyout k8s-tls.key -out k8s-tls.crt -subj "/CN=YOUR_CODACY_DNS_HOSTNAME"
+##   kubectl create secret tls codacy-ingress-tls-secret --namespace codacy --key k8s-tls.key --cert k8s-tls.crt
+##
+##  For further information please see https://kubernetes.io/docs/tasks/administer-cluster/certificates/
+##
+#    tls:
+#      secretName: codacy-ingress-tls-secret
+#      hosts:
+#        - host: <--- codacy.example.com ---> # Codacy application and API DNS hostname
 
 codacy-api:
   replicaCount: 2
@@ -352,7 +365,7 @@ codacy-spa:
 
 rabbitmq-ha:
   replicaCount: 1
-  rabbitmqErlangCookie:  <--- erlang-cookie ---> # Generate one with `cat /dev/urandom | tr -dc 'a-zA-Z0-9' | fold -w 32 | head -n 1`
+  rabbitmqErlangCookie:  <--- erlang-cookie ---> # Generate one with `openssl rand -base64 32 | tr -dc 'a-zA-Z0-9'`
   persistentVolume:
     enabled: true
     size: 8Gi
