@@ -8,7 +8,7 @@ description: Documentation homepage for the Codacy automated code review tool.
   <div class="content-link-column">
     <div>Getting started</div>
 
-    <a class="content-link" href="getting-started/getting-started-with-codacy/">
+    <a class="content-link" href="getting-started/codacy-quickstart/">
       <div>Adding your first repository (5 min)</div>
       <div>Sign up with your Git provider so that Codacy can have access to your Git provider organizations and members. You can then add any repository you have access to with one click.</div>
     </a>
