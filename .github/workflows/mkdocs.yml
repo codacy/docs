@@ -80,6 +80,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Set up yq
+        uses: chrisdickinson/setup-yq@latest
+        if: startsWith(github.ref, 'refs/heads/release/v')        
+
+      - name: Update mkdocs.yml
+        if: startsWith(github.ref, 'refs/heads/release/v')        
+        run: |
+          yq write --inplace mkdocs.yml "extra.noindex" true
+
       - name: Deploy docs
         run: |
           git fetch origin gh-pages --verbose
