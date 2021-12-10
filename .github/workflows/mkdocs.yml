@@ -80,6 +80,15 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
+      - name: Set up yq
+        uses: chrisdickinson/setup-yq@latest
+        if: startsWith(github.ref, 'refs/heads/release/v')        
+
+      - name: Update mkdocs.yml
+        if: startsWith(github.ref, 'refs/heads/release/v')        
+        run: |
+          yq write --inplace mkdocs.yml "extra.noindex" true
+
       - name: Deploy docs
         run: |
           git fetch origin gh-pages --verbose
@@ -128,7 +137,7 @@ jobs:
       - name: Deploy docs
         run: |
           echo "${CUSTOM_DOMAIN}" > "${GITHUB_WORKSPACE}/docs/CNAME"
-          echo -e "User-agent: *\nDisallow: /v*.*/\nSitemap: https://${CUSTOM_DOMAIN}/sitemap.xml" > "${GITHUB_WORKSPACE}/docs/robots.txt"
+          echo -e "User-agent: *\nSitemap: https://${CUSTOM_DOMAIN}/sitemap.xml" > "${GITHUB_WORKSPACE}/docs/robots.txt"
           git fetch origin gh-pages --verbose
           mike deploy . -t "Cloud (Latest)" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
         env:
