@@ -1,3 +1,2 @@
 User-agent: *
-Disallow: /v*.*/
 Sitemap: https://docs.codacy.com/sitemap.xml
