@@ -30,7 +30,6 @@ strict: true
 
 # Extra variables
 extra:
-    version: 3.0.0
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
