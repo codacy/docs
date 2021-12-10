@@ -18,6 +18,9 @@
       
       <link rel="shortcut icon" href="../../../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      
+        <meta property="robots" content="index, follow">
+      
     
     
       
@@ -25,9 +28,9 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.a735eda7.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.71c91d94.min.css">
       
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.45b0513f.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.d932a83f.min.css">
       
       
         
@@ -90,7 +93,7 @@
   <label class="md-search__overlay" for="__search"></label>
   <div class="md-search__inner" role="search">
     <form class="md-search__form" name="search">
-      <input type="text" class="md-search__input" name="query" aria-label="Search documentation" placeholder="Search documentation" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active">
+      <input type="text" class="md-search__input" name="query" aria-label="Search documentation" placeholder="Search documentation" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" data-md-state="active" data-hj-allow>
       <label class="md-search__icon md-icon" for="__search">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z" /></svg>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
@@ -2288,55 +2291,135 @@
               
               
                 
-  <style>.user-feedback-answer{background-color:var(--md-accent-fg-color--transparent);border-radius:.3em;color:var(--codacy-neutral-600);display:inline-block;font:inherit;font-size:.9em;padding:.2em .5em .2em 0;cursor:pointer;width:6em}.user-feedback-answer:hover{background-color:var(--codacy-neutral-300)}.user-feedback-answer .svg-icon{display:inline-block;margin-right:.5em;vertical-align:top;width:1.3em}.user-feedback-answer:disabled{background-color:var(--md-default-fg-color--lightest)}.user-feedback-answer--no{margin-left:1em}.user-feedback-response{display:none}.user-feedback-response--visible{display:block}</style>  
-  <div id="user-feedback">
-    <h2 id="feedback">Feedback</h2>
-    <p>Did this page help you?</p>
-    <button class="user-feedback-answer user-feedback-answer--yes md-icon">
-    <span class="svg-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg></span> Yes
-    </button>
-    <button class="user-feedback-answer user-feedback-answer--no md-icon">
-    <span class="svg-icon">
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></span> No
-    </button>
-    <p class="user-feedback-response user-feedback-response--yes">
-      Thank you for the feedback!
-    </p>
-    <p class="user-feedback-response user-feedback-response--no">
-      We're sorry to hear that. Please <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Bitbucket Server%22">let us know what we can improve</a>.
+  <style>#feedback-block{margin-top:3em;padding:1em;background-color:var(--codacy-neutral-50)}#feedback-block h3{margin-top:unset}#feedback-block button{background-color:var(--md-accent-fg-color--transparent);border-radius:.3em;color:var(--codacy-neutral-600);display:inline-block;font:inherit;font-size:.9em;padding:.2em .5em .2em 0;cursor:pointer;width:6em}#feedback-block button .svg-icon{display:inline-block;margin-right:.5em;vertical-align:top;width:1.3em}#feedback-block button:hover{background-color:var(--codacy-neutral-300)}#feedback-block button:disabled{background-color:var(--md-default-fg-color--lightest)}#feedback-block .feedback-button-no{margin-left:1em}#feedback-block #feedback-prompt-no,#feedback-block #feedback-prompt-yes{display:none}#feedback-block .feedback-form{width:100%;max-width:550px}#feedback-block textarea{border:1px solid var(--md-accent-fg-color--transparent);border-radius:.3em;padding:.75rem .5rem .75rem .75rem;line-height:1.1rem;width:100%;max-width:550px}#feedback-block .feedback-button-send{float:left}#feedback-block .character-count{font-size:.8em;float:right}#feedback-block #feedback-thanks{display:none}#feedback-block .feedback-visible{display:block!important}#feedback-block .feedback-invisible{display:none!important}</style>  
+  <div id="feedback-block">
+    <h3>Share your feedback 📢</h3>
+    <div id="feedback-form">
+      <p>Did this page help you?</p>
+      <button id="feedback-button-yes" class="md-icon">
+        <span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" /></svg></span> Yes
+      </button>
+      <button id="feedback-button-no" class="md-icon">
+        <span class="svg-icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z" /></svg></span> No
+      </button>
+      <div id="feedback-prompt-yes">
+        <p>
+          Thanks for the feedback! Is there anything else you'd like to tell us about this page?
+        </p>
+        <div class="feedback-form">
+          <textarea rows="5" maxlength="255"></textarea>
+          <br>
+          <button class="feedback-button-send" type="button">Send</button>
+          <span class="character-count">255 characters left</span>
+          <br>
+        </div>
+      </div>
+      <div id="feedback-prompt-no">
+        <p>
+          We're sorry to hear that. Please let us know what we can improve:
+        </p>
+        <div class="feedback-form">
+          <textarea rows="5" maxlength="255"></textarea>
+          <br>
+          <button class="feedback-button-send" type="button">Send</button>
+          <span class="character-count">255 characters left</span>
+          <br>
+        </div>
+        <p>
+          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Bitbucket Server%22">create a more detailed issue on our GitHub repository</a>.
+        </p>
+      </div>
+    </div>
+    <p id="feedback-thanks">
+      Thanks for helping improve the Codacy documentation.
     </p>
     <p>
-      If you have a question, please <a href="https://community.codacy.com/">ask our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Bitbucket Server">support@codacy.com</a>.
+      If you have a question or need help, please <a href="https://community.codacy.com/">ask our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Bitbucket Server">support@codacy.com</a>.
     </p>
   </div>
   <script>
-    const yesButton = document.querySelector('.user-feedback-answer--yes');
-    const noButton = document.querySelector('.user-feedback-answer--no');
-    const yesResponse = document.querySelector('.user-feedback-response--yes');
-    const noResponse = document.querySelector('.user-feedback-response--no');
-    const disableButtons = () => {
-      yesButton.disabled = true;
-      noButton.disabled = true;
-    };
-    const sendFeedback = (value) => {
+    // Obtain relevant elements
+    const feedbackForm = document.querySelector('#feedback-block #feedback-form')
+    const yesButton = document.querySelector('#feedback-block #feedback-button-yes');
+    const noButton = document.querySelector('#feedback-block #feedback-button-no');
+    const yesFeedbackPrompt = document.querySelector('#feedback-block #feedback-prompt-yes');
+    const yesTextArea = document.querySelector('#feedback-block #feedback-prompt-yes textarea');
+    const yesSendButton = document.querySelector('#feedback-block #feedback-prompt-yes .feedback-button-send');
+    const yesRemainingCharacters = document.querySelector('#feedback-block #feedback-prompt-yes .character-count');
+    const noFeedbackPrompt = document.querySelector('#feedback-block #feedback-prompt-no');
+    const noTextArea = document.querySelector('#feedback-block #feedback-prompt-no textarea');
+    const noSendButton = document.querySelector('#feedback-block #feedback-prompt-no .feedback-button-send');
+    const noRemainingCharacters = document.querySelector('#feedback-block #feedback-prompt-no .character-count');
+    const userFeedbackThanks = document.querySelector('#feedback-block #feedback-thanks');
+    // Define helper functions
+    function sendQuantitativeFeedback(value) {
       if (typeof analytics === "object") {
-        // Send an event to Segment
+        // Send event to Segment
         analytics.track("User Feedback Sent", {
           url: window.location.href,
           value: value
         });
       }
     };
+    function disableFeedbackButtons() {
+      yesButton.disabled = true;
+      noButton.disabled = true;
+    }
+    function openYesFeedbackPrompt() {
+      disableFeedbackButtons();
+      yesFeedbackPrompt.classList.add('feedback-visible');
+    };
+    function openNoFeedbackPrompt() {
+      disableFeedbackButtons();
+      noFeedbackPrompt.classList.add('feedback-visible');
+    };
+    function updateRemainingCharacters(textArea, remainingCharacters) {
+      maximum_length = textArea.getAttribute('maxlength')
+      remaining_length = maximum_length - textArea.value.length
+      if (textArea.value.length > maximum_length) {
+          return false;
+      }
+      if (remaining_length == 1) {
+        remainingCharacters.innerHTML = remaining_length + " character left";
+      } else {
+        remainingCharacters.innerHTML = remaining_length + " characters left";
+      }
+    }
+    function sendQualitativeFeedback(value, text) {
+      feedbackForm.classList.add('feedback-invisible');
+      userFeedbackThanks.classList.add('feedback-visible');
+      if (typeof analytics === "object") {
+        // Send event to Segment
+        analytics.track("User Qualitative Feedback Sent", {
+          url: window.location.href,
+          value: value,
+          text: text
+        });
+      }
+    };
+    // Add event listeners
+    // Clicking on the Yes/No buttons
     yesButton.addEventListener('click', () => {
-      yesResponse.classList.add('user-feedback-response--visible');
-      disableButtons();
-      sendFeedback(1);
+      sendQuantitativeFeedback(1);
+      openYesFeedbackPrompt();
     });
     noButton.addEventListener('click', () => {
-      noResponse.classList.add('user-feedback-response--visible');
-      disableButtons();
-      sendFeedback(0);
+      sendQuantitativeFeedback(0);
+      openNoFeedbackPrompt();
+    });
+    // Updating the remaining character count
+    yesTextArea.addEventListener('keyup', () => {
+      updateRemainingCharacters(yesTextArea, yesRemainingCharacters);
+    });
+    noTextArea.addEventListener('keyup', () => {
+      updateRemainingCharacters(noTextArea, noRemainingCharacters);
+    });
+    // Clicking on the Send buttons
+    yesSendButton.addEventListener('click', () => {
+      sendQualitativeFeedback(1, yesTextArea.value);
+    });
+    noSendButton.addEventListener('click', () => {
+      sendQualitativeFeedback(0, noTextArea.value);
     });
   </script>
 
@@ -2391,7 +2474,7 @@
     </nav>
   </div>
   <div class="md-footer-meta md-typeset">
-    <div class="md-footer-meta__inner md-grid">
+    <div class="md-footer-meta__inner">
       <div class="md-footer-copyright">
         
           <div class="md-footer-copyright__highlight">
