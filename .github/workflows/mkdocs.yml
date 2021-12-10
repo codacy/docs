@@ -62,6 +62,15 @@ jobs:
         env:
           CUSTOM_DOMAIN: docs.codacy.com
 
+      - name: Set up yq
+        uses: chrisdickinson/setup-yq@latest
+        if: startsWith(github.ref, 'refs/heads/release/v')        
+
+      - name: Update mkdocs.yml
+        if: startsWith(github.ref, 'refs/heads/release/v')        
+        run: |
+          yq write --inplace mkdocs.yml "extra.noindex" false
+
       - name: Deploy docs (Self-hosted)
         if: startsWith(github.ref, 'refs/heads/release/v')        
         run: |
