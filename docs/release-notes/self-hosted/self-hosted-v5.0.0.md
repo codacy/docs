@@ -18,6 +18,9 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 This version of Codacy Self-hosted no longer includes support for legacy manual organizations.
 
+!!! important
+    **If you're using legacy manual organizations** please contact <mailto:support@codacy.com> before upgrading to Codacy Self-hosted 5.0.0 or above so that <span class="skip-vale">we</span> can assist you with migrating your legacy organizations.
+
 ## Product enhancements
 
 -   Now, Codacy supports linting OpenAPI and AsyncAPI descriptions in either YAML or JSON files using [Spectral](https://stoplight.io/open-source/spectral/){: target="_blank"}. (CY-5088)
