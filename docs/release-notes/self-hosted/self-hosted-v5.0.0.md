@@ -16,6 +16,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Product enhancements
 
+-   Now, Codacy supports linting OpenAPI and AsyncAPI descriptions in either YAML or JSON files using Spectral. (CY-5088)
 -   You can now [use an organization coding standard](https://docs.codacy.com/v5.0/organizations/using-a-coding-standard/) to apply the same coding best practices, conventions, or security rules to a group of repositories. ![Organization coding standard](../images/cy-4654.png) (CY-4654)
 
 ## Bug fixes
@@ -74,7 +75,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **ShellCheck v0.7.2 (updated from v0.7.1)**
 -   **Sonar C# 8.30 (updated from 8.25)**
 -   Sonar Visual Basic 8.15
--   **spectral-rulesets 1.2.7 (new)**
+-   **Spectral (new)**
 -   SpotBugs 4.1.2
 -   SQLint 0.1.9
 -   Staticcheck 2020.1.6
