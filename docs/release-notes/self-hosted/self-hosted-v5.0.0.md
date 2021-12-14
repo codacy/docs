@@ -94,3 +94,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Tailor 0.12.0
 -   TSLint 6.1.3
 -   TSQLLint 1.11.1
+
+## See also
+
+-   Announcement for the [end of support for legacy manual organizations on Codacy Cloud](../cloud/cloud-2021-11-02-legacy-organizations.md)
