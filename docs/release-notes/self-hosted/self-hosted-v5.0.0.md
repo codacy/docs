@@ -17,7 +17,10 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 ## Product enhancements
 
 -   Now, Codacy supports linting OpenAPI and AsyncAPI descriptions in either YAML or JSON files using Spectral. (CY-5088)
--   You can now [use an organization coding standard](https://docs.codacy.com/v5.0/organizations/using-a-coding-standard/) to apply the same coding best practices, conventions, or security rules to a group of repositories. ![Organization coding standard](../images/cy-4654.png) (CY-4654)
+
+-   You can now [use an organization coding standard](https://docs.codacy.com/v5.0/organizations/using-a-coding-standard/) to apply the same coding best practices, conventions, or security rules to a group of repositories. (CY-4654)
+
+    ![Organization coding standard](../images/cy-4654.png)
 
 ## Bug fixes
 
