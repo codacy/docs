@@ -14,6 +14,10 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
+## Breaking changes
+
+This version of Codacy Self-hosted no longer includes support for legacy manual organizations.
+
 ## Product enhancements
 
 -   Now, Codacy supports linting OpenAPI and AsyncAPI descriptions in either YAML or JSON files using [Spectral](https://stoplight.io/open-source/spectral/){: target="_blank"}. (CY-5088)
