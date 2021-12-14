@@ -14,46 +14,6 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
-<!--TODO Check these issues manually
-
-Jira issues without release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/DOCS-301
--   https://codacy.atlassian.net/browse/DOCS-209
-Bugs and Community Issues:
-Others:
--   https://codacy.atlassian.net/browse/CY-5214
--   https://codacy.atlassian.net/browse/CY-5129
--   https://codacy.atlassian.net/browse/CY-5089
--   https://codacy.atlassian.net/browse/CY-5088
--   https://codacy.atlassian.net/browse/CY-5047
--   https://codacy.atlassian.net/browse/CY-5046
--   https://codacy.atlassian.net/browse/CY-5004
-
-Jira issues with disabled release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/CY-5263
--   https://codacy.atlassian.net/browse/CY-4995
--   https://codacy.atlassian.net/browse/CY-4617
--   https://codacy.atlassian.net/browse/CY-4408
--   https://codacy.atlassian.net/browse/CY-3595
-Bugs and Community Issues:
--   https://codacy.atlassian.net/browse/CY-5369
--   https://codacy.atlassian.net/browse/CY-5257
--   https://codacy.atlassian.net/browse/CY-5178
--   https://codacy.atlassian.net/browse/CY-5154
--   https://codacy.atlassian.net/browse/CY-5153
--   https://codacy.atlassian.net/browse/CY-5152
--   https://codacy.atlassian.net/browse/CY-5151
--   https://codacy.atlassian.net/browse/CY-5150
--   https://codacy.atlassian.net/browse/CY-5149
--   https://codacy.atlassian.net/browse/CY-5148
--   https://codacy.atlassian.net/browse/CY-5141
--   https://codacy.atlassian.net/browse/CY-5133
--->
-
 ## Product enhancements
 
 -   You can now [use an organization coding standard](https://docs.codacy.com/v5.0/organizations/using-a-coding-standard/) to apply the same coding best practices, conventions, or security rules to a group of repositories. ![Organization coding standard](../images/cy-4654.png) (CY-4654)
