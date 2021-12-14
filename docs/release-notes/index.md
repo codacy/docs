@@ -56,6 +56,10 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 v5
 
+<!--NOTE
+    Link v5.m.p release notes to the breaking changes in v5.0.0,
+    see https://codacy.atlassian.net/browse/CY-5281?focusedCommentId=48556 -->
+
 -   [v5.0.0](self-hosted/self-hosted-v5.0.0.md) (December 14, 2021) <!--TODO Update release date -->
 
 v4
