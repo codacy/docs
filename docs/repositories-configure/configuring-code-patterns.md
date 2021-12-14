@@ -94,24 +94,6 @@ To import the tool and code pattern configurations from another repository:
 
 Codacy will use the updated configurations on the next analysis.
 
-## Setting a default configuration for new repositories {: id="set-default"}
-
-If you're adding multiple repositories to Codacy that should reuse the same pattern configuration for a tool, you can define that configuration as the default. Codacy automatically applies that default configuration to new repositories.
-
-To apply the same code pattern configuration to multiple repositories:
-
-1.  Add the first repository and configure the code patterns on that repository for the relevant tools.
-
-1.  Expand the menu at the top of the pattern list and select **Set default**.
-
-    This option sets the current pattern configuration of all tools as the default for your account.
-
-    ![Setting a default code pattern configuration](images/code-patterns-set-default.png)
-
-After defining the default code pattern configuration for your account, the tools in the new repositories that you add will automatically use those configurations.
-
-Alternatively, you can also manually apply the default code pattern configuration for your account to all tools by expanding the menu at the top of the pattern list and selecting **Reset**.
-
 ## Using your own tool configuration files
 
 <!--NOTE
