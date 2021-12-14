@@ -37,7 +37,7 @@ This version of Codacy Self-hosted no longer includes support for legacy manual 
 -   Fixed an issue that could allow triggering requests from the Codacy instance servers by injecting a URL into the cursor parameter of the API endpoint to list organization repositories. (CY-5139)
 -   Added protection against CSRF attacks targeting the Codacy API v3. In the case of phishing, even if the victim opens a malicious link, the attack won't work. CVSS v3.1 score: 6.4 (Medium) (CY-5131)
 -   Fixed an issue that prevented Codacy from displaying secondary email addresses from GitLab accounts. (CY-5130)
--   Fixed the issue cards in file lists that didn't display the issue category. (CY-5125)
+-   Fixed the issue cards in the context of a file to display the issue category. (CY-5125)
 -   Fixed an issue that was causing organizations using a legacy plan to get wrong messages about missing members and to not be able to reanalyze commits and PRs. (CY-5112)
 -   Added support for the JavaScript extension `.mjs`. (CY-5086)
 -   [<span class="skip-vale">codacy-clang-tidy</span>](https://github.com/codacy/codacy-clang-tidy) is now also published as a macOS binary. (CY-5053)
