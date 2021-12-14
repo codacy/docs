@@ -24,19 +24,19 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Bug fixes
 
--   Fix an issue that prevented non-logged in users to see the file list of an open source repository (CY-5298)
--   Improve visual feedback on status of Jira integration. (CY-5190)
+-   Fixed an issue that prevented non-logged users to see the file list of open-source repositories. (CY-5298)
+-   Improved the visual feedback for the Jira integration status. (CY-5190)
 -   Fixed an issue that prevented the message "Refresh the page to see the results" from being displayed on the commit and pull request pages after a re-analysis was completed. (CY-5187)
--   Fixed some default regular expressions on [codacy-checkstyle](https://github.com/codacy/codacy-checkstyle) that could cause the code pattern PackageName to report false positives when configured using the Codacy UI. (CY-5185)
+-   Fixed some default regular expressions on [<span class="skip-vale">codacy-checkstyle</span>](https://github.com/codacy/codacy-checkstyle){: target="_blank"} that could cause the code pattern PackageName to report false positives when configured using the Codacy UI. (CY-5185)
 -   Fixed an issue that caused ESLint to report false positive issues regarding import statement organization if prettier was enabled. (CY-5143)
--   Fixed security vulnerabilities in the underlying docker images for analysis workers. (CY-5140)
+-   Fixed security vulnerabilities in the underlying Docker images for analysis workers. (CY-5140)
 -   Fixed an issue that could allow triggering requests from the Codacy instance servers by injecting a URL into the cursor parameter of the API endpoint to list organization repositories. (CY-5139)
 -   Added protection against CSRF attacks targeting the Codacy API v3. In the case of phishing, even if the victim opens a malicious link, the attack won't work. CVSS v3.1 score: 6.4 (Medium) (CY-5131)
 -   Fixed an issue that prevented Codacy from displaying secondary email addresses from GitLab accounts. (CY-5130)
 -   Fixed the issue cards in file lists that didn't display the issue category. (CY-5125)
 -   Fixed an issue that was causing organizations using a legacy plan to get wrong messages about missing members and to not be able to reanalyze commits and PRs. (CY-5112)
 -   Added support for the JavaScript extension `.mjs`. (CY-5086)
--   [codacy-clang-tidy](https://github.com/codacy/codacy-clang-tidy) is now also published as a macOS binary. (CY-5053)
+-   [<span class="skip-vale">codacy-clang-tidy</span>](https://github.com/codacy/codacy-clang-tidy) is now also published as a macOS binary. (CY-5053)
 
 ## Tool versions
 
