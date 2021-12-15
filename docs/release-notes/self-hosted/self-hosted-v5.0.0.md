@@ -31,6 +31,7 @@ This version of Codacy Self-hosted no longer includes support for legacy manual 
 
 ## Bug fixes
 
+-   Fixed an issue that could sometimes cause repository quality settings to be saved only <span class="skip-vale">partially</span>. (CY-5380)
 -   Fixed an issue that prevented non-logged users to see the file list of open-source repositories. (CY-5298)
 -   Improved the visual feedback for the Jira integration status. (CY-5190)
 -   Fixed an issue that prevented the message "Refresh the page to see the results" from being displayed on the commit and pull request pages after a re-analysis was completed. (CY-5187)
