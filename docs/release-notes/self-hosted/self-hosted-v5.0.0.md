@@ -16,10 +16,32 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 ## Breaking changes
 
-This version of Codacy Self-hosted no longer includes support for legacy manual organizations.
+This version of Codacy Self-hosted introduces the following breaking changes:
 
-!!! important
-    **If you're using legacy manual organizations** please contact <mailto:support@codacy.com> before upgrading to Codacy Self-hosted 5.0.0 or above so that <span class="skip-vale">we</span> can assist you with migrating your legacy organizations.
+-   Dropped support for legacy manual organizations.
+
+    !!! important
+        **If you're using legacy manual organizations** please contact <mailto:support@codacy.com> before upgrading to Codacy Self-hosted 5.0.0 or above so that <span class="skip-vale">we</span> can assist you with migrating your legacy organizations.
+
+-   The following Codacy components are no longer needed and were removed:
+
+    -   `codacy-activities`
+    -   `hotspots-api`
+    -   `hotspots-worker`
+    
+    Although the update process handles this change automatically by deleting the redundant pods from your cluster, it's recommended that after updating Codacy you manually delete:
+
+    -   The databases `codacy-activities` and `hotspots` since they're no longer used.
+
+    -   The following configuration file keys related to these components and their databases:
+
+        ```text
+        activities.*
+        hotspots-api.*
+        hotspots-worker.*
+        global.activitiesdb.*
+        global.hotspotsdb.*
+        ```
 
 ## Product enhancements
 
