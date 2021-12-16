@@ -54,7 +54,6 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 -   Fixed an issue that prevented the message "Refresh the page to see the results" from being displayed on the commit and pull request pages after a re-analysis was completed. (CY-5187)
 -   Fixed some default regular expressions on [<span class="skip-vale">codacy-checkstyle</span>](https://github.com/codacy/codacy-checkstyle){: target="_blank"} that could cause the code pattern PackageName to report false positives when configured using the Codacy UI. (CY-5185)
 -   Fixed an issue that caused ESLint to report false positive issues regarding import statement organization if prettier was enabled. (CY-5143)
--   Fixed security vulnerabilities in the underlying Docker images for analysis workers. (CY-5140)
 -   Fixed an issue that could allow triggering requests from the Codacy instance servers by injecting a URL into the cursor parameter of the API endpoint to list organization repositories. (CY-5139)
 -   Added protection against CSRF attacks targeting the Codacy API v3. In the case of phishing, even if the victim opens a malicious link, the attack won't work. CVSS v3.1 score: 6.4 (Medium) (CY-5131)
 -   Fixed an issue that prevented Codacy from displaying secondary email addresses from GitLab accounts. (CY-5130)
