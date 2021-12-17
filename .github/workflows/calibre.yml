@@ -25,7 +25,7 @@ jobs:
           compressOnly: true
 
       - name: Create pull request
-        if: steps.calibre.outputs.markdown != ""
+        if: steps.calibre.outputs.markdown != ''
         uses: peter-evans/create-pull-request@v3
         with:
           title: Compressed images
