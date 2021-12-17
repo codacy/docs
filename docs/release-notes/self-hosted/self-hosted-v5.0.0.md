@@ -50,6 +50,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 ## Bug fixes
 
 -   Fixed an issue that could sometimes cause repository quality settings to be saved only <span class="skip-vale">partially</span>. (CY-5380)
+-   Fixed an issue that could cause Sonar Visual Basic to time out independently of how many files are analyzed. (CY-5204)
 -   Improved the visual feedback for the Jira integration status. (CY-5190)
 -   Fixed an issue that prevented the message "Refresh the page to see the results" from being displayed on the commit and pull request pages after a re-analysis was completed. (CY-5187)
 -   Fixed some default regular expressions on [<span class="skip-vale">codacy-checkstyle</span>](https://github.com/codacy/codacy-checkstyle){: target="_blank"} that could cause the code pattern PackageName to report false positives when configured using the Codacy UI. (CY-5185)
