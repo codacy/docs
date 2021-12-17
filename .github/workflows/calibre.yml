@@ -1,0 +1,34 @@
+name: Compress images (scheduled)
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "00 23 * * 0"
+
+jobs:
+  build:
+    name: calibreapp/image-actions
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: false
+
+      - name: Compress images
+        id: calibre
+        uses: calibreapp/image-actions@main
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          compressOnly: true
+
+      - name: Create pull request
+        if: steps.calibre.outputs.markdown != ""
+        uses: peter-evans/create-pull-request@v3
+        with:
+          title: Compressed images
+          branch-suffix: timestamp
+          commit-message: Compressed images
+          body: ${{ steps.calibre.outputs.markdown }}
