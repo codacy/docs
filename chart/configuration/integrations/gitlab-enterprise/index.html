@@ -3122,6 +3122,12 @@ https://codacy.example.com/add/addPermissions/GitLabEnterprise
 <p>Click <strong>Save application</strong> and take note of the generated Application Id and Secret.</p>
 </li>
 </ol>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can ignore the following error that GitLab Enterprise may display when you test or save the new GitLab application:</p>
+<p><img alt="GitLab Enterprise appplication test error" src="../images/gitlab-application-test-error.png" /></p>
+<p>This happens because GitLab Enterprise tests the new application by calling an endpoint that Codacy doesn't implement.</p>
+</div>
 <h2 id="configure">Configure GitLab Enterprise on Codacy<a class="headerlink" href="#configure" title="Permanent link">#</a></h2>
 <p>After creating the GitLab application, you must configure it on Codacy:</p>
 <ol>
@@ -3336,7 +3342,7 @@ https://codacy.example.com/add/addPermissions/GitLabEnterprise
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 17, 2021</span>
     
   </small>
 </div>
