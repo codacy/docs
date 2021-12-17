@@ -54,6 +54,14 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Self-hosted release notes
 
+v5
+
+<!--NOTE
+    Link v5.m.p release notes to the breaking changes in v5.0.0,
+    see https://codacy.atlassian.net/browse/CY-5281?focusedCommentId=48556 -->
+
+-   [v5.0.0](self-hosted/self-hosted-v5.0.0.md) (December 16, 2021)
+
 v4
 
 -   [v4.4.0](self-hosted/self-hosted-v4.4.0.md) (October 12, 2021)

@@ -24,3 +24,7 @@ However, the following scenarios may impact you:
 -   **If we can't automatically migrate your legacy organization** Codacy will stop analyzing your repositories, and you'll lose access to your existing repositories on Codacy. Please make sure that you follow the steps above to guarantee that the migration is successful.
 
 Codacy appreciates your continued support through this time of growth and change. If you have any questions, please don’t hesitate to reach out by sending an email to <mailto:support@codacy.com> or by using the in-app chat.
+
+## See also
+
+-   **On Codacy Self-hosted,** legacy manual organizations stopped being supported on [version 5.0.0](../self-hosted/self-hosted-v5.0.0.md)
