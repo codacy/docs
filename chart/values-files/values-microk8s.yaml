@@ -4,25 +4,7 @@ portal:
     limits:
       memory: 500Mi
 
-activities:
-  replicaCount: 1
-  resources:
-    limits:
-      memory: 750Mi
-
 remote-provider-service:
-  replicaCount: 1
-  resources:
-    limits:
-      memory: 500Mi
-
-hotspots-api:
-  replicaCount: 1
-  resources:
-    limits:
-      memory: 500Mi
-
-hotspots-worker:
   replicaCount: 1
   resources:
     limits:

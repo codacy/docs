@@ -91,22 +91,6 @@ global:
     host: <--- codacy-db-host --->
     service:
       port: <--- codacy-db-port --->
-  hotspotsdb:
-    create: false
-    postgresqlUsername: <--- codacy-db-username --->
-    postgresqlDatabase: hotspots # You need to create the DB manually
-    postgresqlPassword: <--- codacy-db-password --->
-    host: <--- codacy-db-host --->
-    service:
-      port: <--- codacy-db-port --->
-  activitiesdb:
-    create: false
-    postgresqlUsername: <--- codacy-db-username --->
-    postgresqlDatabase: activities # You need to create the DB manually
-    postgresqlPassword: <--- codacy-db-password --->
-    host: <--- codacy-db-host --->
-    service:
-      port: <--- codacy-db-port --->
   crowdb:
     create: false
     host: <--- codacy-db-host --->
@@ -230,23 +214,6 @@ portal:
       cpu: 200m
       memory: 200Mi
 
-activities:
-  replicaCount: 2
-  readinessProbe:
-    initialDelaySeconds: 10
-    periodSeconds: 3
-  livenessProbe:
-    initialDelaySeconds: 10
-    periodSeconds: 5
-    failureThreshold: 5
-  resources:
-    limits:
-      cpu: 500m
-      memory: 1Gi
-    requests:
-      cpu: 100m
-      memory: 200Mi
-
 remote-provider-service:
   replicaCount: 2
   resources:
@@ -255,25 +222,6 @@ remote-provider-service:
       memory: 750Mi
     requests:
       cpu: 200m
-      memory: 200Mi
-hotspots-api:
-  replicaCount: 2
-  resources:
-    limits:
-      cpu: 500m
-      memory: 1Gi
-    requests:
-      cpu: 100m
-      memory: 200Mi
-
-hotspots-worker:
-  replicaCount: 2
-  resources:
-    limits:
-      cpu: 500m
-      memory: 1Gi
-    requests:
-      cpu: 100m
       memory: 200Mi
 
 listener:
