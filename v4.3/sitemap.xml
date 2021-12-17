@@ -1,427 +1,427 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"><url>
      <loc>https://docs.codacy.com/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/getting-started/codacy-quickstart/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/getting-started/supported-languages-and-tools/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/getting-started/which-permissions-does-codacy-need-from-my-account/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/getting-started/adding-a-codacy-badge/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories/repository-dashboard/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories/commits/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories/files/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories/issues/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories/security-monitor/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/configuring-code-patterns/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/managing-branches/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/integrations/github-integration/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/integrations/gitlab-integration/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/integrations/bitbucket-integration/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/integrations/slack-integration/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/integrations/jira-integration/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/integrations/webhook-notifications/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/integrations/post-commit-hooks/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/ignoring-files/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/file-extensions/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/adjusting-quality-settings/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/using-submodules/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/codacy-configuration-file/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/repositories-configure/removing-your-repository/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/organizations/what-are-synced-organizations/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/organizations/organization-overview/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/organizations/managing-repositories/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/organizations/copying-code-patterns-between-repositories/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/organizations/managing-people/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/organizations/changing-your-plan-and-billing/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/organizations/roles-and-permissions-for-synced-organizations/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/organizations/manual-organizations/creating-and-renaming-an-organization/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/organizations/manual-organizations/creating-and-managing-teams/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/organizations/manual-organizations/managing-team-repositories/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/organizations/manual-organizations/administrative-permissions/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/organizations/manual-organizations/share-your-repository-with-a-non-codacy-user/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/account/managing-your-profile/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/account/emails/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/coverage-reporter/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/coverage-reporter/troubleshooting-common-issues/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/related-tools/local-analysis/running-local-analysis/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/related-tools/local-analysis/client-side-tools/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/related-tools/local-analysis/running-aligncheck/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/related-tools/local-analysis/running-deadcode/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/related-tools/local-analysis/running-spotbugs/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/related-tools/codacy-plugin-tools/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/codacy-api/using-the-codacy-api/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/codacy-api/api-tokens/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/codacy-api/examples/adding-repositories-to-codacy-programmatically/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/codacy-api/examples/obtaining-code-quality-metrics-for-files/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/codacy-api/examples/obtaining-current-issues-in-repositories/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/requirements/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/infrastructure/eks-quickstart/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/infrastructure/microk8s-quickstart/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/configuration/integrations/github-cloud/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/configuration/integrations/github-enterprise/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/configuration/integrations/github-app-create/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/configuration/integrations/gitlab-cloud/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/configuration/integrations/gitlab-enterprise/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/configuration/integrations/bitbucket-cloud/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/configuration/integrations/bitbucket-server/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/configuration/integrations/email/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/configuration/monitoring/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/maintenance/license/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/maintenance/upgrade/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/maintenance/uninstall/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/maintenance/database/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/troubleshoot/troubleshoot/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/troubleshoot/logs-collect/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/chart/troubleshoot/k8s-cheatsheet/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/general/which-version-control-systems-does-codacy-support/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/general/which-browsers-does-codacy-support/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/general/how-does-codacy-support-gitlab-cloud/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/general/how-does-codacy-support-gitlab-enterprise/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/general/how-does-codacy-support-bitbucket-cloud/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/general/how-does-codacy-support-bitbucket-server/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/general/how-does-codacy-keep-my-data-secure/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/general/how-does-codacy-protect-my-privacy/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/general/why-cant-i-see-my-organization/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/general/how-do-i-change-my-email-address-on-codacy/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/general/how-can-i-change-or-cancel-my-plan/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/repositories/what-are-the-different-grades-and-how-are-they-calculated/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/repositories/why-cant-i-see-or-add-my-organizations-repositories/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/repositories/how-do-i-reanalyze-my-repository/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/repositories/i-renamed-my-repository-on-the-git-provider/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/repositories/i-moved-my-repository-on-the-git-provider/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/repositories/how-do-i-migrate-a-legacy-repository-to-a-synced-organization/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/code-analysis/does-codacy-check-for-dependencies/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/code-analysis/how-to-skip-an-analysis/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/code-analysis/how-to-configure-php-codesniffer-coding-standards/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/troubleshooting/why-arent-duplication-metrics-being-calculated/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/troubleshooting/why-isnt-my-public-repository-being-analyzed/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/troubleshooting/not-a-member-of-the-organization/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/troubleshooting/we-no-longer-have-access-to-this-repository/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/troubleshooting/why-is-my-file-over-150-kb-missing/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/faq/troubleshooting/error-line-endings/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url><url>
      <loc>https://docs.codacy.com/special-thanks/</loc>
-     <lastmod>2021-12-13</lastmod>
+     <lastmod>2021-12-17</lastmod>
      <changefreq>daily</changefreq>
     </url>
 </urlset>
