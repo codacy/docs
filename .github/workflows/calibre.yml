@@ -32,3 +32,5 @@ jobs:
           branch-suffix: timestamp
           commit-message: "clean: Compress images"
           body: ${{ steps.calibre.outputs.markdown }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.COMPRESS_IMAGES_PERSONAL_ACCESS_TOKEN }}
