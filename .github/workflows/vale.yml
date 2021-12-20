@@ -13,7 +13,7 @@ jobs:
           submodules: false
 
       - name: Vale
-        uses: errata-ai/vale-action@v1.4.2
+        uses: errata-ai/vale-action@v1.4.3
         with:
           files: __onlyModified
           onlyAnnotateModifiedLines: true
