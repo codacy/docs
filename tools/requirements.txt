@@ -1,4 +1,6 @@
 argh
+beautifulsoup4
 emoji
 requests
-
+tqdm
+xmltodict
