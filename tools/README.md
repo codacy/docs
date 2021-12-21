@@ -16,6 +16,12 @@ Validates if the source file for the page [Supported languages and tools](https:
 ./check-supported-tools.py
 ```
 
+## list-last-modified
+
+Outputs the date and time when each documentation page was last modified. This can be used to help assess which pages could be outdated and in need of review.
+
+```bash
+./list-last-modified.py
 ```
 
 ## list-tool-short-names
