@@ -15,8 +15,8 @@ OUTPUT_FILE = "last-modified.csv"
 def list_last_modified():
     # Parse sitemap to obtain list of page URLs
     print(f"Parsing {SITEMAP_URL}...")
-    xml = requests.get(SITEMAP_URL)
-    sitemap = xmltodict.parse(xml.text)
+    xml = requests.get(SITEMAP_URL).text
+    sitemap = xmltodict.parse(xml)
     urls = [r["loc"] for r in sitemap["urlset"]["url"]]
 
     # Obtain last modified date for each page
