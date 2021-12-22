@@ -495,6 +495,7 @@ plugins:
               "organizations/manual-organizations/managing-team-repositories.md": "release-notes/cloud/cloud-2021-11-02-legacy-organizations.md"
               "organizations/manual-organizations/administrative-permissions.md": "release-notes/cloud/cloud-2021-11-02-legacy-organizations.md"
               "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md": "release-notes/cloud/cloud-2021-11-02-legacy-organizations.md"
+              "faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md": "release-notes/cloud/cloud-2021-11-02-legacy-organizations.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
