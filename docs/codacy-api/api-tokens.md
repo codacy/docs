@@ -28,12 +28,12 @@ To generate an account API token:
 
 1.  Click the button **Create API token** under **Account API tokens**.
 
+    !!! tip
+        You can create multiple account API tokens. This can be useful to have a more flexible control by revoking only a specific token.
+
     ![Creating an account API token](images/codacy-api-tokens-account.png)
 
 To revoke an account API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
-
-!!! tip
-    You can create multiple account API tokens. This can be useful to have a more flexible control by revoking only a specific token.
 
 ## Generating and revoking project API tokens {: id="project-api-tokens"}
 
@@ -45,12 +45,12 @@ To generate a project API token:
 
 1.  Click the button **Settings** on the **Project API** integration and copy the project API token.
 
+    !!! tip
+        You can create multiple project API tokens. This can be useful to have a more flexible control by revoking only a specific token.
+
     ![Creating a project API token](images/codacy-api-tokens-project.png)
 
 To revoke a project API token, click the trash can icon for the corresponding **Project API** integration. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
-
-!!! tip
-    You can create multiple project API tokens. This can be useful to have a more flexible control by revoking only a specific token.
 
 ## See also
 
