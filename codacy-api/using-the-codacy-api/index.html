@@ -11,7 +11,7 @@
         <meta name="description" content="The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.">
       
       
-        <meta http-equiv="last-modified" content="2021-08-24 09:31:28">  
+        <meta http-equiv="last-modified" content="2021-12-22 10:38:07">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/using-the-codacy-api/">
@@ -3139,12 +3139,16 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
 </code></pre></div>
 </div>
 <h2 id="authenticating-requests-to-the-codacy-api">Authenticating requests to the Codacy API<a class="headerlink" href="#authenticating-requests-to-the-codacy-api" title="Permanent link">#</a></h2>
-<p>Most API endpoints require that you provide either a <a href="../api-tokens/">project or account API token</a>. After obtaining the necessary tokens, include them in your request headers using the format <code>api-token: &lt;your account API token&gt;</code> or <code>project-token: &lt;your project API token&gt;</code>.</p>
-<p>For example, to make a request to an API v3 endpoint that requires an <strong>account API token</strong>:</p>
+<p>Most API endpoints require that you authenticate using an API token. After <a href="../api-tokens/">obtaining the necessary tokens</a>, include them in your request headers using the format <code>api-token: &lt;your account API token&gt;</code> or <code>project-token: &lt;your project API token&gt;</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently, all API v3 endpoints that require authentication must use <strong>account API tokens</strong>, while the API v2 endpoints require either <strong>account or project API tokens</strong>.</p>
+</div>
+<p>For example, to make a request to an API v3 endpoint that requires an account API token:</p>
 <div class="highlight"><pre><span></span><code>curl -X GET <span class="s1">&#39;https://api.codacy.com/api/v3/user/organizations/gh&#39;</span> <span class="se">\</span>
      -H <span class="s1">&#39;api-token: &lt;your account API token&gt;&#39;</span>
 </code></pre></div>
-<p>Or to make a request to an API v2 endpoint that requires a <strong>project API token</strong>:</p>
+<p>Or to make a request to an API v2 endpoint that requires a project API token:</p>
 <div class="highlight"><pre><span></span><code>curl -X GET <span class="s1">&#39;https://api.codacy.com/2.0/commit/da275c14ffab6e402dcc6009828067ffa44b7ee0&#39;</span> <span class="se">\</span>
      -H <span class="s1">&#39;project-token: &lt;your project API token&gt;&#39;</span>
 </code></pre></div>
@@ -3359,7 +3363,7 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 24, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 22, 2021</span>
     
   </small>
 </div>
