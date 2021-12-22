@@ -22,7 +22,7 @@ The sections below provide detailed instructions on how to generate and revoke A
 
 ## Generating and revoking account API tokens {: id="account-api-tokens"}
 
-To generate an account API token:
+You can create new account API tokens programmatically using the Codacy API endpoint [createUserApiToken](https://api.codacy.com/api/api-docs#createuserapitoken){: target="_blank"} or using the Codacy UI:
 
 1.  Open your account, tab **Access management**.
 
@@ -37,7 +37,7 @@ To revoke an account API token, click the "X" next to the token. After this, all
 
 ## Generating and revoking project API tokens {: id="project-api-tokens"}
 
-To generate a project API token:
+You can create new account API tokens programmatically using the Codacy API endpoint [createProjectApiToken](https://api.codacy.com/api/api-docs#createprojectapitoken){: target="_blank"} or using the Codacy UI:
 
 1.  Open your repository **Settings**, tab **Integrations**.
 
