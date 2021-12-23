@@ -11,7 +11,7 @@
         <meta name="description" content="Create an account API token to authorize access to all the repositories that you have access to, or a project API token to authorize access only to a specific repository.">
       
       
-        <meta http-equiv="last-modified" content="2021-12-16 11:29:47">  
+        <meta http-equiv="last-modified" content="2021-12-23 17:20:08">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/api-tokens/">
@@ -3109,23 +3109,23 @@
 <p>We recommend that you set API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.</p>
 </div>
 <h2 id="account-api-tokens">Generating and revoking account API tokens<a class="headerlink" href="#account-api-tokens" title="Permanent link">#</a></h2>
-<p>To generate an account API token:</p>
+<p>You can create new account API tokens programmatically using the Codacy API endpoint <a href="https://api.codacy.com/api/api-docs#createuserapitoken" target="_blank">createUserApiToken</a> or using the Codacy UI:</p>
 <ol>
 <li>
 <p>Open your account, tab <strong>Access management</strong>.</p>
 </li>
 <li>
 <p>Click the button <strong>Create API token</strong> under <strong>Account API tokens</strong>.</p>
-<p><img alt="Creating an account API token" src="../images/codacy-api-tokens-account.png" /></p>
-</li>
-</ol>
-<p>To revoke an account API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can create multiple account API tokens. This can be useful to have a more flexible control by revoking only a specific token.</p>
 </div>
+<p><img alt="Creating an account API token" src="../images/codacy-api-tokens-account.png" /></p>
+</li>
+</ol>
+<p>To revoke an account API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
 <h2 id="project-api-tokens">Generating and revoking project API tokens<a class="headerlink" href="#project-api-tokens" title="Permanent link">#</a></h2>
-<p>To generate a project API token:</p>
+<p>You can create new project API tokens programmatically using the Codacy API endpoint <a href="https://api.codacy.com/api/api-docs#createrepositoryapitoken" target="_blank">createRepositoryApiToken</a> or using the Codacy UI:</p>
 <ol>
 <li>
 <p>Open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
@@ -3135,14 +3135,14 @@
 </li>
 <li>
 <p>Click the button <strong>Settings</strong> on the <strong>Project API</strong> integration and copy the project API token.</p>
-<p><img alt="Creating a project API token" src="../images/codacy-api-tokens-project.png" /></p>
-</li>
-</ol>
-<p>To revoke a project API token, click the trash can icon for the corresponding <strong>Project API</strong> integration. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can create multiple project API tokens. This can be useful to have a more flexible control by revoking only a specific token.</p>
 </div>
+<p><img alt="Creating a project API token" src="../images/codacy-api-tokens-project.png" /></p>
+</li>
+</ol>
+<p>To revoke a project API token, click the trash can icon for the corresponding <strong>Project API</strong> integration. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../coverage-reporter/">Adding coverage to your repository</a></li>
@@ -3297,7 +3297,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 16, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 23, 2021</span>
     
   </small>
 </div>
