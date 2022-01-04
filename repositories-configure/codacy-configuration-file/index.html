@@ -3114,28 +3114,28 @@
 <p class="admonition-title">Important</p>
 <p>The configuration file must start with a line containing a triple dash (<code>---</code>).</p>
 </div>
-<div class="highlight"><pre><span></span><code><span class="nn">---</span>
-<span class="nt">engines</span><span class="p">:</span>
-  <span class="nt">rubocop</span><span class="p">:</span>
-    <span class="nt">exclude_paths</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;config/test.yml&quot;</span>
-    <span class="nt">base_sub_dir</span><span class="p">:</span> <span class="s">&quot;test/baseDir&quot;</span>
-  <span class="nt">duplication</span><span class="p">:</span>
-    <span class="nt">exclude_paths</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;config/test.yml&quot;</span>
-    <span class="nt">config</span><span class="p">:</span>
-      <span class="nt">languages</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span> <span class="s">&quot;ruby&quot;</span>
-<span class="nt">languages</span><span class="p">:</span>
-  <span class="nt">css</span><span class="p">:</span>
-    <span class="nt">extensions</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;-css.resource&quot;</span>
-<span class="nt">exclude_paths</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;.bundle/**&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;spec/**/*&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;benchmarks/**/*&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;**.min.js&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;**/tests/**&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
+<span class="nt">engines</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">rubocop</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">exclude_paths</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;config/test.yml&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">base_sub_dir</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;test/baseDir&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">duplication</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">exclude_paths</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;config/test.yml&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">config</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">languages</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;ruby&quot;</span><span class="w"></span>
+<span class="nt">languages</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">css</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">extensions</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;-css.resource&quot;</span><span class="w"></span>
+<span class="nt">exclude_paths</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;.bundle/**&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;spec/**/*&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;benchmarks/**/*&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**.min.js&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**/tests/**&quot;</span><span class="w"></span>
 </code></pre></div>
 </li>
 <li>
@@ -3229,24 +3229,24 @@ tsqllint
 <p>Although Codacy tries to detect which language is used on each source code file, some false positives may occur. The tools below support specific configurations to specify the language or language version used in the source code files that you're analyzing.</p>
 <h3 id="cppcheck">Cppcheck<a class="headerlink" href="#cppcheck" title="Permanent link">#</a></h3>
 <p>If you're using Cppcheck to analyze C or C++ source code files, add the following configuration to your Codacy configuration file to define the programming language you're using. The supported languages are <code>c</code> and <code>c++</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nn">---</span>
-<span class="nt">engines</span><span class="p">:</span>
-  <span class="nt">cppcheck</span><span class="p">:</span>
-    <span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">c++</span>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
+<span class="nt">engines</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">cppcheck</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c++</span><span class="w"></span>
 </code></pre></div>
 <h3 id="php_codesniffer">PHP_CodeSniffer<a class="headerlink" href="#php_codesniffer" title="Permanent link">#</a></h3>
 <p>If you're using the <a href="https://github.com/PHPCompatibility/PHPCompatibility">PHP Compatibility</a> coding standard for PHP_CodeSniffer, add the following configuration to your Codacy configuration file to <a href="https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions">define the PHP version</a> you're using:</p>
-<div class="highlight"><pre><span></span><code><span class="nn">---</span>
-<span class="nt">engines</span><span class="p">:</span>
-  <span class="nt">phpcs</span><span class="p">:</span>
-    <span class="nt">php_version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">5.5</span>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
+<span class="nt">engines</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">phpcs</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">php_version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5.5</span><span class="w"></span>
 </code></pre></div>
 <h3 id="legacy-pylint-19">Legacy Pylint 1.9.*<a class="headerlink" href="#legacy-pylint-19" title="Permanent link">#</a></h3>
 <p>If you're using the legacy Pylint 1.9.* to analyze Python source code files, add the following configuration to your Codacy configuration file to define the Python language version you're using. The supported versions are <code>2</code> and <code>3</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nn">---</span>
-<span class="nt">engines</span><span class="p">:</span>
-  <span class="nt">pylint</span><span class="p">:</span>
-    <span class="nt">python_version</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">2</span>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
+<span class="nt">engines</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">pylint</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">python_version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w"></span>
 </code></pre></div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>

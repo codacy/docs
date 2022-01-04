@@ -3125,56 +3125,56 @@ kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
 <ul>
 <li>
 <p>The following analysis workers configuration values moved from:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">worker-manager</span><span class="p">:</span>
-  <span class="nt">config</span><span class="p">:</span>
-    <span class="nt">workers</span><span class="p">:</span>
-        <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
-    <span class="nt">workerResources</span><span class="p">:</span>
-        <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
-    <span class="nt">pluginResources</span><span class="p">:</span>
-        <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+<div class="highlight"><pre><span></span><code><span class="nt">worker-manager</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">config</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">workers</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">    </span><span class="nt">workerResources</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">    </span><span class="nt">pluginResources</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
 </code></pre></div>
 <p>To:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
-  <span class="nt">workerManager</span><span class="p">:</span>
-    <span class="nt">workers</span><span class="p">:</span>
-      <span class="nt">config</span><span class="p">:</span>
-        <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
-        <span class="nt">workerResources</span><span class="p">:</span>
-            <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
-        <span class="nt">pluginResources</span><span class="p">:</span>
-            <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">workerManager</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">workers</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">config</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">        </span><span class="nt">workerResources</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">        </span><span class="nt">pluginResources</span><span class="p">:</span><span class="w"></span>
+<span class="w">            </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
 </code></pre></div>
 </li>
 <li>
 <p>The following database configuration values moved from:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">hotspots-api</span><span class="p">:</span>
-  <span class="nt">hotspotsdb</span><span class="p">:</span>
-    <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+<div class="highlight"><pre><span></span><code><span class="nt">hotspots-api</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">hotspotsdb</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
 
-<span class="nt">activities</span><span class="p">:</span>
-  <span class="nt">activitiesdb</span><span class="p">:</span>
-    <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+<span class="nt">activities</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">activitiesdb</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
 
-<span class="nt">crow</span><span class="p">:</span>
-  <span class="nt">crowdb</span><span class="p">:</span>
-    <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+<span class="nt">crow</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">crowdb</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
 </code></pre></div>
 <p>To:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
-  <span class="nt">hotspotsdb</span><span class="p">:</span>
-    <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
-  <span class="nt">activitiesdb</span><span class="p">:</span>
-    <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
-  <span class="nt">crowdb</span><span class="p">:</span>
-    <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">hotspotsdb</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">  </span><span class="nt">activitiesdb</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="w">  </span><span class="nt">crowdb</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
 </code></pre></div>
 </li>
 <li>
 <p>The following Erlang cookie configuration was added to the RabbitMQ configuration values:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">rabbitmq-ha</span><span class="p">:</span>
-  <span class="nt">rabbitmqErlangCookie</span><span class="p">:</span>  <span class="l l-Scalar l-Scalar-Plain">&lt;--- erlang-cookie ---&gt;</span>  <span class="c1"># Generate one with `cat /dev/urandom | tr -dc &#39;a-zA-Z0-9&#39; | fold -w 32 | head -n 1`</span>
-  <span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+<div class="highlight"><pre><span></span><code><span class="nt">rabbitmq-ha</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">rabbitmqErlangCookie</span><span class="p">:</span><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">&lt;--- erlang-cookie ---&gt;</span><span class="w">  </span><span class="c1"># Generate one with `cat /dev/urandom | tr -dc &#39;a-zA-Z0-9&#39; | fold -w 32 | head -n 1`</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
 </code></pre></div>
 <p>When you previously installed Codacy, this cookie was automatically set to a random value. We recommend that you keep the same cookie to help ensure that the Codacy upgrade runs smoothly.</p>
 <p>Run the following command to retrieve the current cookie value and define it explicitly in the new configuration:</p>

@@ -3214,11 +3214,11 @@ sbt assembly
 <p>Thanks to the amazing job of <a href="https://github.com/halkeye">Gavin Mogan</a> you can now send your coverage to Codacy using his Maven plugin <a href="https://github.com/halkeye/codacy-maven-plugin">halkeye/codacy-maven-plugin</a>! Be sure to follow the instructions on his repository.</p>
 <h3 id="travis-ci">Travis CI<a class="headerlink" href="#travis-ci" title="Permanent link">#</a></h3>
 <p>If you are using Travis CI to report coverage, update your file <code>.travis.yml</code> to include the following blocks:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">before_script</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">bash &lt;(curl -Ls https://coverage.codacy.com/get.sh) download</span>
+<div class="highlight"><pre><span></span><code><span class="nt">before_script</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash &lt;(curl -Ls https://coverage.codacy.com/get.sh) download</span><span class="w"></span>
 
-<span class="nt">after_success</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">bash &lt;(curl -Ls https://coverage.codacy.com/get.sh)</span>
+<span class="nt">after_success</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash &lt;(curl -Ls https://coverage.codacy.com/get.sh)</span><span class="w"></span>
 </code></pre></div>
 <p>Make sure that you also <a href="../#authenticate">set your project or account API Token</a> as an environment variable in your Travis CI job.</p>
 <h3 id="gradle-task">Gradle task<a class="headerlink" href="#gradle-task" title="Permanent link">#</a></h3>

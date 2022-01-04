@@ -3189,31 +3189,31 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
      -H <span class="s1">&#39;api-token: &lt;your account API token&gt;&#39;</span>
 </code></pre></div>
 <p>The response includes the first 10 results, as well as the cursor to obtain the next page of results:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="err">...</span>
-  <span class="p">],</span>
-  <span class="nt">&quot;pagination&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;cursor&quot;</span><span class="p">:</span> <span class="s2">&quot;codacy_2&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;limit&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-      <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">156</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="err">...</span><span class="w"></span>
+<span class="w">  </span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;pagination&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;cursor&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;codacy_2&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;limit&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;total&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">156</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>To obtain the next page of results, it's necessary to include the <code>cursor</code> from the previous page as a parameter:</p>
 <div class="highlight"><pre><span></span><code>curl -X GET <span class="s1">&#39;https://app.codacy.com/api/v3/organizations/gh/codacy/repositories?limit=10&amp;cursor=codacy_2&#39;</span>
      -H <span class="s1">&#39;api-token: &lt;your account API token&gt;&#39;</span>
 </code></pre></div>
 <p>If you continue requesting more pages the endpoint will eventually return a <code>pagination</code> object that doens't include a <code>cursor</code>. This means that you've reached the last page of results:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;data&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="err">...</span>
-  <span class="p">],</span>
-  <span class="nt">&quot;pagination&quot;</span><span class="p">:</span> <span class="p">{</span>
-      <span class="nt">&quot;limit&quot;</span><span class="p">:</span> <span class="mi">10</span><span class="p">,</span>
-      <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">156</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="err">...</span><span class="w"></span>
+<span class="w">  </span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;pagination&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;limit&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">10</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;total&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">156</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
               
               
