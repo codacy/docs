@@ -46,7 +46,7 @@ You can create new project API tokens programmatically using the Codacy API endp
 1.  Click the button **Settings** on the **Project API** integration and copy the project API token.
 
     !!! tip
-        You can create up to 100 project API tokens per repository. This can be useful to have a more flexible control by revoking only a specific token.
+        You can create multiple (up to 100) project API tokens per repository. This can be useful to have a more flexible control by revoking only a specific token.
 
     ![Creating a project API token](images/codacy-api-tokens-project.png)
 
