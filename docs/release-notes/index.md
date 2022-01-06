@@ -61,7 +61,7 @@ v5
     Link v5.m.p release notes to the breaking changes in v5.0.0,
     see https://codacy.atlassian.net/browse/CY-5281?focusedCommentId=48556 -->
 
--   [v5.1.0](self-hosted/self-hosted-v5.1.0.md) (January 6, 2022) <!--TODO Update release date -->
+-   [v5.1.0](self-hosted/self-hosted-v5.1.0.md) (January 6, 2022)
 -   [v5.0.0](self-hosted/self-hosted-v5.0.0.md) (December 17, 2021)
 
 v4
