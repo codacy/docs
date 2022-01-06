@@ -18,7 +18,7 @@ Our [status page](https://status.codacy.com/) will always include the most up-to
 To mitigate the impact, as part of the maintenance operation we'll re-analyze the pull requests and the last commit in the default branch of each repository according to the following retention periods:
 
 -   6 months for **Pro and Trial plans**
--   15 days for **Open Source plans**
+-   15 days for **Open source plans**
 
 The following is the expected impact during the maintenance operation:
 
