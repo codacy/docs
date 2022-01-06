@@ -29,6 +29,7 @@ Others:
 
 -   When connecting to email servers over SMTPS, Codacy now prefers to rely on TLSv1.2 over the deprecated TLSv1 or TLSv1.1 if the SMTP server allows it. (CY-5394)
 -   It's now possible to [assign a coding standard automatically to new repositories](https://docs.codacy.com/v5.1/organizations/using-a-coding-standard/#set-default). (CY-5263)
+-   The Codacy API now includes endpoints that allow you to [create and manage project API tokens programmatically](https://api.codacy.com/api/api-docs#createrepositoryapitoken). This feature can be used to automate setting up coverage for either new repositories or for all your existing repositories. (CY-5090)
 
 ## Bug fixes
 
