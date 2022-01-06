@@ -1,0 +1,77 @@
+grafana:
+  enabled: true
+  adminPassword: <--- grafana-admin-password ---> # password for the `admin` user. You can generate one using, for instance, `openssl rand -base64 24 | tr -dc 'a-zA-Z0-9'`
+  ingress:
+    enabled: true
+    annotations:
+      kubernetes.io/ingress.class: nginx
+    hosts:
+      - <--- grafana.codacy.example.com ---> # Codacy grafana DNS hostname. You'll need to add a record for this domain pointing to your ingress
+##
+##  If using TLS uncomment this section and create the required secret.
+##  For instance, if you'll be using a self-signed certificate this can be done running:
+##
+##   openssl req -x509 -nodes -days 10000 -newkey rsa:2048 -keyout grafana-tls.key -out grafana-tls.crt -subj "/CN=YOUR_CODACY_GRAFANA_DNS_HOSTNAME"
+##   kubectl create secret tls grafana-ingress-tls-secret --namespace monitoring --key grafana-tls.key --cert grafana-tls.crt
+##
+##  For further information please see https://kubernetes.io/docs/tasks/administer-cluster/certificates/
+##
+#    tls:
+#    - secretName: grafana-ingress-tls-secret
+#      hosts:
+#        - <--- grafana.codacy.example.com ---> # this must match the url used above
+
+
+  sidecar:
+    dashboards:
+      searchNamespace: ALL
+    datasources:
+      defaultDatasourceEnabled: false
+  additionalDataSources:
+    - name: Loki
+      type: loki
+      url: http://loki:3100
+      version: 1
+      orgId: 1
+      access: proxy
+      basicAuth: false
+      editable: true
+      jsonData:
+         tlsSkipVerify: true
+    - name: Prometheus
+      type: prometheus
+      url: http://monitoring-prometheus-oper-prometheus:9090
+      version: 1
+      orgId: 1
+      access: proxy
+      basicAuth: false
+      editable: true
+      jsonData:
+         tlsSkipVerify: true
+
+prometheusOperator:
+  createCustomResource: false
+  tlsProxy:
+    enabled: false
+  admissionWebhooks:
+    enabled: false
+    patch:
+      enabled: false
+    tlsProxy:
+      enabled: false
+
+prometheus:
+  ingressPerReplica:
+    tlsSecretPerReplica:
+      enabled: false
+  thanos:
+    service:
+      enabled: false
+  service:
+    sessionAffinity: "ClientIP"
+  prometheusSpec:
+    replicas: 1
+    serviceMonitorSelectorNilUsesHelmValues: false
+    walCompression: true
+    ruleSelectorNilUsesHelmValues: false
+    ruleSelector: {}
