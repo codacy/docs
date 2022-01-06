@@ -17,19 +17,12 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
-<!--TODO Check these issues manually
-
-Jira issues without release notes
-
-Others:
--   https://codacy.atlassian.net/browse/CY-3275
--->
-
 ## Product enhancements
 
 -   When connecting to email servers over SMTPS, Codacy now prefers to rely on TLSv1.2 over the deprecated TLSv1 or TLSv1.1 if the SMTP server allows it. (CY-5394)
 -   It's now possible to [assign a coding standard automatically to new repositories](https://docs.codacy.com/v5.1/organizations/using-a-coding-standard/#set-default). (CY-5263)
 -   The Codacy API now includes endpoints that allow you to [create and manage project API tokens programmatically](https://api.codacy.com/api/api-docs#createrepositoryapitoken). This feature can be used to automate setting up coverage for either new repositories or for all your existing repositories. (CY-5090)
+-   Now, all configurable Stylelint code patterns have [default values set to the recommended settings](https://github.com/codacy/codacy-stylelint/pull/240/files){: target="_blank"}, ensuring that they're ready to be used as soon as you enable them. (CY-3275)
 
 ## Bug fixes
 
