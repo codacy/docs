@@ -12,6 +12,9 @@ These release notes are for [Codacy Self-hosted v5.1.0](https://github.com/codac
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
+!!! warning
+    **Codacy Self-hosted v5.0.0 dropped the support for legacy manual organizations.** Please be sure to [review the breaking changes](self-hosted-v5.0.0.md#breaking-changes) introduced in that version before upgrading.
+
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
 <!--TODO Check these issues manually
