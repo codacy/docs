@@ -27,11 +27,11 @@ Others:
 
 ## Product enhancements
 
+-   When connecting to email servers over SMTPS, Codacy now prefers to rely on TLSv1.2 over the deprecated TLSv1 or TLSv1.1 if the SMTP server allows it. (CY-5394)
 -   It's now possible to [assign a coding standard automatically to new repositories](https://docs.codacy.com/v5.1/organizations/using-a-coding-standard/#set-default). (CY-5263)
 
 ## Bug fixes
 
--   When connecting to email servers over SMTPS, Codacy now prefers to rely on TLSv1.2 over the deprecated TLSv1 or TLSv1.1 if the SMTP server allows it. (CY-5394)
 -   Fixed an issue that prevented merge commits from displaying any information regarding files, duplication, and complexity. (CY-5364)
 -   Fixed a scenario where the number of applied repositories on a coding standard didn't update when deleting a repository. (CY-5363)
 -   Fixed a popup that overlapped the list on the People page. (CY-5282)
