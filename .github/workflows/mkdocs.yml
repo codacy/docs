@@ -70,6 +70,7 @@ jobs:
         if: startsWith(github.ref, 'refs/heads/release/v')        
         run: |
           yq write --inplace mkdocs.yml "extra.noindex" false
+          yq write --inplace mkdocs.yml "plugins.rss.enabled" false
 
       - name: Deploy docs (Self-hosted)
         if: startsWith(github.ref, 'refs/heads/release/v')        
