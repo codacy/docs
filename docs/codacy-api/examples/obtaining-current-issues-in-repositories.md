@@ -14,7 +14,7 @@ This example exports the pattern ID, issue level, file path, and timestamp for a
 
 The example script:
 
-1.  Defines an [account API token](../api-tokens.md#account-api-tokens).
+1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
 1.  Calls the Codacy API endpoint to retrieve information about the issues, filtering the results by security issues with the relevant severity levels.
 1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to select only the necessary data fields and convert the results to the CSV format.
 
