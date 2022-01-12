@@ -64,9 +64,9 @@ The example script:
 ```bash
 #!/bin/bash
 
-GITHUB_AUTH_TOKEN="<REPLACE_ME>"
-GITHUB_ORG_NAME="<REPLACE_ME>"
-CODACY_API_TOKEN="<REPLACE_ME>"
+GITHUB_AUTH_TOKEN="<your GitHub personal access token>"
+GITHUB_ORG_NAME="<your GitHub organization name>"
+CODACY_API_TOKEN="<your account API token>"
 
 printf "Obtaining all repositories in the $GITHUB_ORG_NAME organization\n"
 for repo in $(curl -s https://api.github.com/orgs/$GITHUB_ORG_NAME/repos -H "Authorization: Bearer $GITHUB_AUTH_TOKEN" | jq -r '.[] | .full_name'); do
