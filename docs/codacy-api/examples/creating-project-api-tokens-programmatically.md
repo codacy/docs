@@ -48,3 +48,5 @@ else
 	echo "No changes made.";
 fi
 ```
+
+{% include-markdown "../../assets/includes/api-example-pagination-important.md" %}
