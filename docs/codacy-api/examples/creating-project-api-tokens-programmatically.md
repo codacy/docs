@@ -26,9 +26,9 @@ The example script:
 ```bash
 #!/bin/bash
 
-export CODACY_API_TOKEN="<your account API token>"
-export GIT_PROVIDER="<your Git provider>" # gh, ghe, gl, gle, bb, or bbe
-export ORGANIZATION="<your organization name>"
+CODACY_API_TOKEN="<your account API token>"
+GIT_PROVIDER="<your Git provider>" # gh, ghe, gl, gle, bb, or bbe
+ORGANIZATION="<your organization name>"
 
 repositories=$(curl -sX GET "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/repositories" \
                     -H "api-token: $CODACY_API_TOKEN" \

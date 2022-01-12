@@ -19,7 +19,7 @@ The example script:
 1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to select only the necessary data fields and convert the results to the CSV format.
 
 ```bash
-export CODACY_API_TOKEN="<your account API token>"
+CODACY_API_TOKEN="<your account API token>"
 
 curl -X POST "https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/website/issues/search" \
      -H "api-token: $CODACY_API_TOKEN" \
