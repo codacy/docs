@@ -37,15 +37,15 @@ repositories=$(curl -sX GET "https://app.codacy.com/api/v3/organizations/$GIT_PR
 count=$(echo "$repositories" | wc -l)
 read -p "Create project tokens for $count repositories? (y/n) " choice
 if [ "$choice" = "y" ]; then
-	echo "$repositories" | while read repository; do
-		echo -n "$repository,"
-		curl -sX POST "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/repositories/$repository/tokens" \
-	         -H "api-token: $CODACY_API_TOKEN" \
-	   	| jq -r ".data | .token"
+    echo "$repositories" | while read repository; do
+        echo -n "$repository,"
+        curl -sX POST "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/repositories/$repository/tokens" \
+             -H "api-token: $CODACY_API_TOKEN" \
+        | jq -r ".data | .token"
         sleep 2 # Wait 2 seconds
-	done
+    done
 else
-	echo "No changes made.";
+    echo "No changes made.";
 fi
 ```
 
