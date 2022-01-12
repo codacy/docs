@@ -49,4 +49,13 @@ else
 fi
 ```
 
+Example output:
+
+```text
+chart,<new project API token>
+docs,<new project API token>
+website,<new project API token>
+[...]
+```
+
 {% include-markdown "../../assets/includes/api-example-pagination-important.md" %}
