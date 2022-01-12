@@ -11,12 +11,12 @@ For example, if you're [setting up coverage](../../coverage-reporter/index.md) f
 
 ## Example: Creating project API tokens for all repositories in an organization
 
-This example creates new project API tokens for all the repositories in the GitHub organization `codacy` and outputs a comma-separated list of repository names and corresponding token strings.
+This example creates new project API tokens for all the repositories in an organization and outputs a comma-separated list of repository names and corresponding token strings.
 
 The example script:
 
-1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
-1.  Calls the Codacy API endpoint to retrieve the list of repositories in the GitHub organization `codacy`.
+1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API, the Git provider, and the organization name.
+1.  Calls the Codacy API endpoint to retrieve the list of repositories in the organization.
 1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to select only the name of the repositories.
 1.  Asks for confirmation from the user before making any changes.
 1.  For each repository, calls the Codacy API endpoint to create a new project API token and uses jq to obtain only the created token string.
@@ -27,8 +27,10 @@ The example script:
 #!/bin/bash
 
 export CODACY_API_TOKEN="<your account API token>"
+export GIT_PROVIDER="<your Git provider>" # gh, ghe, gl, gle, bb, or bbe
+export ORGANIZATION="<your organization name>"
 
-repositories=$(curl -sX GET "https://app.codacy.com/api/v3/organizations/gh/codacy/repositories" \
+repositories=$(curl -sX GET "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/repositories" \
                     -H "api-token: $CODACY_API_TOKEN" \
                | jq -r ".data[] | .name")
 
@@ -37,7 +39,7 @@ read -p "Create project tokens for $count repositories? (y/n) " choice
 if [ "$choice" = "y" ]; then
 	echo "$repositories" | while read repository; do
 		echo -n "$repository,"
-		curl -sX POST "https://app.codacy.com/api/v3/organizations/gh/codacy/repositories/$repository/tokens" \
+		curl -sX POST "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/repositories/$repository/tokens" \
 	         -H "api-token: $CODACY_API_TOKEN" \
 	   	| jq -r ".data | .token"
         sleep 2 # Wait 2 seconds
