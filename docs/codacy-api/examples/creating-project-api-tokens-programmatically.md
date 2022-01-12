@@ -59,3 +59,7 @@ website,<new project API token>
 ```
 
 {% include-markdown "../../assets/includes/api-example-pagination-important.md" %}
+
+## See also
+
+- [API tokens](../api-tokens.md)
