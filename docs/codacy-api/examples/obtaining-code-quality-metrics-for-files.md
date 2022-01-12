@@ -26,7 +26,7 @@ curl -X GET "https://app.codacy.com/api/v3/organizations/gh/codacy/repositories/
 | jq -r ".data[] | [.path, .gradeLetter, .totalIssues, .complexity, .coverage, .duplication] | @csv"
 ```
 
-Output:
+Example output:
 
 ```text
 "src/components/router/index.ts","A",0,8,70,0

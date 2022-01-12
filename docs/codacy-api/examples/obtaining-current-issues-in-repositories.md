@@ -28,7 +28,7 @@ curl -X POST "https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/rep
 | jq -r ".data[] | [.patternInfo.id, .patternInfo.level, .filePath, .commitInfo.timestamp] | @csv"
 ```
 
-Output:
+Example output:
 
 ```text
 "BundlerAudit_Insecure Dependency","Error","Gemfile.lock","2021-06-16T11:46:24Z"
