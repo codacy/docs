@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to obtain information about issues in a repository programmatically using the Codacy API endpoint searchRepositoryIssues.">
       
       
-        <meta http-equiv="last-modified" content="2021-06-17 17:01:10">  
+        <meta http-equiv="last-modified" content="2022-01-14 11:52:04">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/obtaining-current-issues-in-repositories/">
@@ -1065,6 +1065,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../creating-project-api-tokens-programmatically/" title="Creating project API tokens programmatically" class="md-nav__link">
+      Creating project API tokens programmatically
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../obtaining-code-quality-metrics-for-files/" title="Obtaining code quality metrics for files" class="md-nav__link">
       Obtaining code quality metrics for files
     </a>
@@ -2106,11 +2118,11 @@
 <p>This example exports the pattern ID, issue level, file path, and timestamp for all security issues that have the severity level <code>Warning</code> or <code>Error</code> in the GitHub repository <code>codacy/website</code>.</p>
 <p>The example script:</p>
 <ol>
-<li>Defines an <a href="../../api-tokens/#account-api-tokens">account API token</a>.</li>
-<li>Calls the Codacy API endpoint to retrieve information about the issues, filtering the results by security issues with the relevant severity levels.</li>
+<li>Defines the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API.</li>
+<li>Calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#searchrepositoryissues" target="_blank">searchRepositoryIssues</a> to retrieve information about the issues, filtering the results by security issues with the relevant severity levels.</li>
 <li>Uses <a href="https://github.com/stedolan/jq" target="_blank">jq</a> to select only the necessary data fields and convert the results to the CSV format.</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
 
 curl -X POST <span class="s2">&quot;https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/website/issues/search&quot;</span> <span class="se">\</span>
      -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
@@ -2118,7 +2130,7 @@ curl -X POST <span class="s2">&quot;https://app.codacy.com/api/v3/analysis/organ
      -d <span class="s1">&#39;{ &quot;levels&quot;: [&quot;Error&quot;, &quot;Warning&quot;], &quot;categories&quot;: [&quot;Security&quot;] }&#39;</span> <span class="se">\</span>
 <span class="p">|</span> jq -r <span class="s2">&quot;.data[] | [.patternInfo.id, .patternInfo.level, .filePath, .commitInfo.timestamp] | @csv&quot;</span>
 </code></pre></div>
-<p>Output:</p>
+<p>Example output:</p>
 <div class="highlight"><pre><span></span><code>&quot;BundlerAudit_Insecure Dependency&quot;,&quot;Error&quot;,&quot;Gemfile.lock&quot;,&quot;2021-06-16T11:46:24Z&quot;
 &quot;Custom_Scala_PredictableRandom&quot;,&quot;Warning&quot;,&quot;src/test/database/SpecsHelper.scala&quot;,&quot;2021-05-21T16:20:15Z&quot;
 &quot;Custom_Scala_PlayUntrustedHttpRequestParameter&quot;,&quot;Warning&quot;,&quot;app/RedirectController.scala&quot;,&quot;2021-04-26T15:06:33Z&quot;
@@ -2126,7 +2138,7 @@ curl -X POST <span class="s2">&quot;https://app.codacy.com/api/v3/analysis/organ
 </code></pre></div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>For the sake of simplicity, the example doesn't consider paginated results obtained from the Codacy API. <a href="../../using-the-codacy-api/#using-pagination">Learn how to use pagination</a> to ensure that you obtain all the results returned by the API.</p>
+<p>For the sake of simplicity, the example doesn't consider paginated results obtained from the Codacy API. <a href="../../using-the-codacy-api/#using-pagination">Learn how to use pagination</a> to ensure that you process all results returned by the API.</p>
 </div>
               
               
@@ -2276,7 +2288,7 @@ curl -X POST <span class="s2">&quot;https://app.codacy.com/api/v3/analysis/organ
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 17, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 14, 2022</span>
     
   </small>
 </div>

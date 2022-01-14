@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to obtain code quality metrics for files in a repository programmatically using the Codacy API endpoint listFiles.">
       
       
-        <meta http-equiv="last-modified" content="2021-06-17 17:01:10">  
+        <meta http-equiv="last-modified" content="2022-01-14 11:52:04">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/obtaining-code-quality-metrics-for-files/">
@@ -1063,6 +1063,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../creating-project-api-tokens-programmatically/" title="Creating project API tokens programmatically" class="md-nav__link">
+      Creating project API tokens programmatically
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -2106,26 +2118,26 @@
 <p>This example exports the grade, total issues, complexity, coverage, and duplication in CSV format for all files in the directory <code>src/router</code> of the GitHub repository <code>codacy/website</code>.</p>
 <p>The example script:</p>
 <ol>
-<li>Defines an <a href="../../api-tokens/#account-api-tokens">account API token</a>.</li>
-<li>Calls the Codacy API endpoint to retrieve the code quality metrics, filtering the results by files that include <code>src/router/</code> in the path.</li>
+<li>Defines the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API.</li>
+<li>Calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#listfiles" target="_blank">listFiles</a> to retrieve the code quality metrics, filtering the results by files that include <code>src/router/</code> in the path.</li>
 <li>Uses <a href="https://github.com/stedolan/jq" target="_blank">jq</a> to select only the necessary data fields and convert the results to the CSV format.</li>
 </ol>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
 
 curl -X GET <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/gh/codacy/repositories/website/files?search=src/router/&quot;</span> <span class="se">\</span>
      -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
 <span class="p">|</span> jq -r <span class="s2">&quot;.data[] | [.path, .gradeLetter, .totalIssues, .complexity, .coverage, .duplication] | @csv&quot;</span>
 </code></pre></div>
-<p>Output:</p>
-<div class="highlight"><pre><span></span><code>&quot;src/components/router/index.ts&quot;,&quot;A&quot;,0,8,70,0&quot;
-&quot;src/components/router/Link.tsx&quot;,&quot;A&quot;,0,5,100,0&quot;
-&quot;src/components/router/Redirect.tsx&quot;,&quot;B&quot;,0,2,14,0&quot;
-&quot;src/components/router/routes/account.ts&quot;,&quot;A&quot;,0,0,100,0&quot;
+<p>Example output:</p>
+<div class="highlight"><pre><span></span><code>&quot;src/components/router/index.ts&quot;,&quot;A&quot;,0,8,70,0
+&quot;src/components/router/Link.tsx&quot;,&quot;A&quot;,0,5,100,0
+&quot;src/components/router/Redirect.tsx&quot;,&quot;B&quot;,0,2,14,0
+&quot;src/components/router/routes/account.ts&quot;,&quot;A&quot;,0,0,100,0
 [...]
 </code></pre></div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>For the sake of simplicity, the example doesn't consider paginated results obtained from the Codacy API. <a href="../../using-the-codacy-api/#using-pagination">Learn how to use pagination</a> to ensure that you obtain all the results returned by the API.</p>
+<p>For the sake of simplicity, the example doesn't consider paginated results obtained from the Codacy API. <a href="../../using-the-codacy-api/#using-pagination">Learn how to use pagination</a> to ensure that you process all results returned by the API.</p>
 </div>
               
               
@@ -2275,7 +2287,7 @@ curl -X GET <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/g
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 17, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 14, 2022</span>
     
   </small>
 </div>

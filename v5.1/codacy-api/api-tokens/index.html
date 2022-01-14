@@ -11,7 +11,7 @@
         <meta name="description" content="Create an account API token to authorize access to all the repositories that you have access to, or a project API token to authorize access only to a specific repository.">
       
       
-        <meta http-equiv="last-modified" content="2022-01-04 18:25:56">  
+        <meta http-equiv="last-modified" content="2022-01-14 11:52:04">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/api-tokens/">
@@ -1113,6 +1113,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../examples/creating-project-api-tokens-programmatically/" title="Creating project API tokens programmatically" class="md-nav__link">
+      Creating project API tokens programmatically
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../examples/obtaining-code-quality-metrics-for-files/" title="Obtaining code quality metrics for files" class="md-nav__link">
       Obtaining code quality metrics for files
     </a>
@@ -2137,7 +2149,7 @@
 <p>We recommend that you set API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.</p>
 </div>
 <h2 id="account-api-tokens">Generating and revoking account API tokens<a class="headerlink" href="#account-api-tokens" title="Permanent link">#</a></h2>
-<p>You can create new account API tokens programmatically using the Codacy API endpoint <a href="https://api.codacy.com/api/api-docs#createuserapitoken" target="_blank">createUserApiToken</a> or using the Codacy UI:</p>
+<p>You can create new account API tokens programmatically <a href="../examples/creating-project-api-tokens-programmatically/">using the Codacy API</a> or using the Codacy UI:</p>
 <ol>
 <li>
 <p>Open your account, tab <strong>Access management</strong>.</p>
@@ -2153,7 +2165,7 @@
 </ol>
 <p>To revoke an account API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
 <h2 id="project-api-tokens">Generating and revoking project API tokens<a class="headerlink" href="#project-api-tokens" title="Permanent link">#</a></h2>
-<p>You can create new project API tokens programmatically using the Codacy API endpoint <a href="https://api.codacy.com/api/api-docs#createrepositoryapitoken" target="_blank">createRepositoryApiToken</a> or using the Codacy UI:</p>
+<p>You can create new project API tokens programmatically <a href="../examples/creating-project-api-tokens-programmatically/">using the Codacy API</a> or using the Codacy UI:</p>
 <ol>
 <li>
 <p>Open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
@@ -2176,6 +2188,7 @@
 <li><a href="../../coverage-reporter/">Adding coverage to your repository</a></li>
 <li><a href="../../related-tools/local-analysis/running-local-analysis/">Running local analysis</a></li>
 <li><a href="../../related-tools/local-analysis/client-side-tools/">Client-side tools</a></li>
+<li><a href="../examples/creating-project-api-tokens-programmatically/">Creating project API tokens programmatically</a></li>
 </ul>
               
               
@@ -2325,7 +2338,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 4, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 14, 2022</span>
     
   </small>
 </div>
