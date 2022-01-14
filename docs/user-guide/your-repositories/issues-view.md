@@ -29,7 +29,7 @@ Each pattern has a pre-defined severity level and at the moment, it’s not poss
 
 ## 3. Ignoring an issue
 
-For an issue you disagree with or false positives, you can either ignore that instance or disable the pattern across the whole repository. To do so, click on <img src="/images/image-2.png" width="45" height="27" /> and select the desired option.
+For an issue you disagree with or false positives, you can either ignore that instance or disable the pattern across the whole repository. To do so, click on <img src="/v1.0/images/image-2.png" width="45" height="27" /> and select the desired option.
 
 ![](../../images/image-3.gif)
 
@@ -41,7 +41,7 @@ To reinstate ignored issues, click on the **Current Issues** box, and select�
 
 ## 4. Removing a pattern
 
-When you want to remove a pattern altogether from your repository's analysis, expand the issue you’re aiming to disable the pattern for, click on <img src="/images/image-2.png" width="45" height="27" />, select **Remove pattern** and confirm your choice.
+When you want to remove a pattern altogether from your repository's analysis, expand the issue you’re aiming to disable the pattern for, click on <img src="/v1.0/images/image-2.png" width="45" height="27" />, select **Remove pattern** and confirm your choice.
 
 ![](../../images/image-5.gif)
 
@@ -59,7 +59,7 @@ To restore a removed pattern, go to your repository's **Code Pattern** settin
 
 ## 5. Ignoring files
 
-You can cherry-pick files to be ignored for further analysis. To ignore a file, expand the issue, click on <img src="/images/360012544353/image-2.png" width="45" height="27" />, select **Ignore file** from the menu, and confirm.
+You can cherry-pick files to be ignored for further analysis. To ignore a file, expand the issue, click on <img src="/v1.0/images/360012544353/image-2.png" width="45" height="27" />, select **Ignore file** from the menu, and confirm.
 
 !!! warning
     This file is now ignored across the entire repository and for all patterns.
