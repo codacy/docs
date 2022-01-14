@@ -4,7 +4,7 @@ After adding a repository, you may want to enable Slack integration. Codacy in
 
 To enable the Slack integration access the **Integrations** tab of your repository **Settings**, click on "Add integration" and select "Slack" from the list.
 
- <img src="/images/Jan-06-2017_15-36-45.gif" width="673" height="310" />
+ <img src="/v1.4/images/Jan-06-2017_15-36-45.gif" width="673" height="310" />
 Enabling Slack integration
 
 ## Configuration

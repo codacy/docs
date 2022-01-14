@@ -108,6 +108,6 @@ On the Security dashboard view you can also:
 -   Enable all the security patterns for that repository with one click 
 -   Download all the patterns in a CSV file (this will give you a list of all the patterns considered by Codacy under the security category)
 
-You just have to go to your repository's Security Tab, click on <img src="/images/morebutton.png" width="80" height="32" alt="morebutton.png" /> and select the relevant option.
+You just have to go to your repository's Security Tab, click on <img src="/v1.4/images/morebutton.png" width="80" height="32" alt="morebutton.png" /> and select the relevant option.
 
 ![downloadpatternscsv.gif](../../images/downloadpatternscsv.gif)
