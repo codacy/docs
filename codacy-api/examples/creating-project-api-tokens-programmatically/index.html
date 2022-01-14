@@ -8,13 +8,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="On the week of March 9th 2020, we&#x27;ll be removing some tools from Codacy.">
+        <meta name="description" content="Example of how to create new project API tokens for all repositories in an organization using the Codacy API endpoint createRepositoryApiToken.">
       
       
-        <meta http-equiv="last-modified" content="2021-08-27 16:39:02">  
+        <meta http-equiv="last-modified" content="2022-01-14 11:47:51">  
       
       
-        <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal/">
+        <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/creating-project-api-tokens-programmatically/">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020 - Codacy docs</title>
+        <title>Creating project API tokens programmatically - Codacy docs</title>
       
     
     
@@ -50,8 +50,6 @@
       <link rel="stylesheet" href="../../../assets/stylesheets/version-select.css">
     
     
-      <link rel="alternate" type="application/rss+xml" title="Codacy release notes RSS feed" href="/feed_rss_created.xml">
-    
     
       
         
@@ -72,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#removal-of-nodesecurity-golint-and-scsslint-march-9-2020" class="md-skip">
+        <a href="#creating-project-api-tokens-programmatically" class="md-skip">
           Skip to content
         </a>
       
@@ -951,10 +949,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" checked>
     
     <label class="md-nav__link" for="nav-8">
       Codacy API
@@ -978,7 +978,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/using-the-codacy-api/" title="Using the Codacy API" class="md-nav__link">
+    <a href="../../using-the-codacy-api/" title="Using the Codacy API" class="md-nav__link">
       Using the Codacy API
     </a>
   </li>
@@ -990,7 +990,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/api-tokens/" title="API tokens" class="md-nav__link">
+    <a href="../../api-tokens/" title="API tokens" class="md-nav__link">
       API tokens
     </a>
   </li>
@@ -1024,10 +1024,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5" checked>
     
     <label class="md-nav__link" for="nav-8-5">
       Examples
@@ -1051,7 +1053,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/adding-repositories-to-codacy-programmatically/" title="Adding repositories to Codacy programmatically" class="md-nav__link">
+    <a href="../adding-repositories-to-codacy-programmatically/" title="Adding repositories to Codacy programmatically" class="md-nav__link">
       Adding repositories to Codacy programmatically
     </a>
   </li>
@@ -1061,11 +1063,54 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/creating-project-api-tokens-programmatically/" title="Creating project API tokens programmatically" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Creating project API tokens programmatically
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Creating project API tokens programmatically" class="md-nav__link md-nav__link--active">
       Creating project API tokens programmatically
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#example-creating-project-api-tokens-for-all-repositories-in-an-organization" class="md-nav__link">
+    Example: Creating project API tokens for all repositories in an organization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#see-also" class="md-nav__link">
+    See also
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1075,7 +1120,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/obtaining-code-quality-metrics-for-files/" title="Obtaining code quality metrics for files" class="md-nav__link">
+    <a href="../obtaining-code-quality-metrics-for-files/" title="Obtaining code quality metrics for files" class="md-nav__link">
       Obtaining code quality metrics for files
     </a>
   </li>
@@ -1087,7 +1132,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/obtaining-current-issues-in-repositories/" title="Obtaining current issues in repositories" class="md-nav__link">
+    <a href="../obtaining-current-issues-in-repositories/" title="Obtaining current issues in repositories" class="md-nav__link">
       Obtaining current issues in repositories
     </a>
   </li>
@@ -2049,12 +2094,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
     <label class="md-nav__link" for="nav-11">
       Release notes
@@ -2078,7 +2121,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../" title="Codacy release notes" class="md-nav__link">
+    <a href="../../../release-notes/" title="Codacy release notes" class="md-nav__link">
       Codacy release notes
     </a>
   </li>
@@ -2088,12 +2131,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-2" type="checkbox" id="nav-11-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-2" type="checkbox" id="nav-11-2">
     
     <label class="md-nav__link" for="nav-11-2">
       Cloud
@@ -2142,7 +2183,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2021-12/" title="Cloud December 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-12/" title="Cloud December 2021" class="md-nav__link">
       Cloud December 2021
     </a>
   </li>
@@ -2154,7 +2195,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2021-11/" title="Cloud November 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-11/" title="Cloud November 2021" class="md-nav__link">
       Cloud November 2021
     </a>
   </li>
@@ -2166,7 +2207,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2021-10/" title="Cloud October 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-10/" title="Cloud October 2021" class="md-nav__link">
       Cloud October 2021
     </a>
   </li>
@@ -2178,7 +2219,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2021-09/" title="Cloud September 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-09/" title="Cloud September 2021" class="md-nav__link">
       Cloud September 2021
     </a>
   </li>
@@ -2190,7 +2231,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2021-11-02-legacy-organizations/" title="End of support for legacy manual organizations November 2, 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-11-02-legacy-organizations/" title="End of support for legacy manual organizations November 2, 2021" class="md-nav__link">
       End of support for legacy manual organizations November 2, 2021
     </a>
   </li>
@@ -2202,7 +2243,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2021-08/" title="Cloud August 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-08/" title="Cloud August 2021" class="md-nav__link">
       Cloud August 2021
     </a>
   </li>
@@ -2214,7 +2255,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2021-07-03-scheduled-db-maintenance/" title="Performing scheduled database maintenance July 3, 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance/" title="Performing scheduled database maintenance July 3, 2021" class="md-nav__link">
       Performing scheduled database maintenance July 3, 2021
     </a>
   </li>
@@ -2229,12 +2270,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-2-2" type="checkbox" id="nav-11-2-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-2-2" type="checkbox" id="nav-11-2-2">
     
     <label class="md-nav__link" for="nav-11-2-2">
       2020
@@ -2258,7 +2297,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2020-04-01-deprecating-http-headers-for-api-tokens/" title="Deprecating HTTP headers for API tokens April 1, 2020" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens/" title="Deprecating HTTP headers for API tokens April 1, 2020" class="md-nav__link">
       Deprecating HTTP headers for API tokens April 1, 2020
     </a>
   </li>
@@ -2268,20 +2307,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-    <a href="./" title="Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal/" title="Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020" class="md-nav__link">
       Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020
     </a>
-    
   </li>
 
         
@@ -2291,7 +2321,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2020-02-github-apps/" title="Codacy now supports GitHub Apps February 2020" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2020-02-github-apps/" title="Codacy now supports GitHub Apps February 2020" class="md-nav__link">
       Codacy now supports GitHub Apps February 2020
     </a>
   </li>
@@ -2333,7 +2363,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2019-11-15/" title="Cloud November 15, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-11-15/" title="Cloud November 15, 2019" class="md-nav__link">
       Cloud November 15, 2019
     </a>
   </li>
@@ -2345,7 +2375,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2019-10-30/" title="Cloud October 30, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-10-30/" title="Cloud October 30, 2019" class="md-nav__link">
       Cloud October 30, 2019
     </a>
   </li>
@@ -2357,7 +2387,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2019-09-05/" title="Cloud September 5, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-09-05/" title="Cloud September 5, 2019" class="md-nav__link">
       Cloud September 5, 2019
     </a>
   </li>
@@ -2369,7 +2399,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2019-08-07/" title="Cloud August 7, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-08-07/" title="Cloud August 7, 2019" class="md-nav__link">
       Cloud August 7, 2019
     </a>
   </li>
@@ -2381,7 +2411,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2019-06-18/" title="Cloud June 18, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-06-18/" title="Cloud June 18, 2019" class="md-nav__link">
       Cloud June 18, 2019
     </a>
   </li>
@@ -2393,7 +2423,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2019-05-20/" title="Cloud May 20, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-05-20/" title="Cloud May 20, 2019" class="md-nav__link">
       Cloud May 20, 2019
     </a>
   </li>
@@ -2405,7 +2435,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2019-05-05/" title="Cloud May 5, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-05-05/" title="Cloud May 5, 2019" class="md-nav__link">
       Cloud May 5, 2019
     </a>
   </li>
@@ -2417,7 +2447,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2019-04-08/" title="Cloud April 8, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-04-08/" title="Cloud April 8, 2019" class="md-nav__link">
       Cloud April 8, 2019
     </a>
   </li>
@@ -2429,7 +2459,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2019-03-29/" title="Cloud March 29, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-03-29/" title="Cloud March 29, 2019" class="md-nav__link">
       Cloud March 29, 2019
     </a>
   </li>
@@ -2441,7 +2471,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2019-02-18-bitbucket-changes/" title="Bitbucket changes February 18, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-02-18-bitbucket-changes/" title="Bitbucket changes February 18, 2019" class="md-nav__link">
       Bitbucket changes February 18, 2019
     </a>
   </li>
@@ -2453,7 +2483,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2019-01-02/" title="Cloud January 2, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-01-02/" title="Cloud January 2, 2019" class="md-nav__link">
       Cloud January 2, 2019
     </a>
   </li>
@@ -2495,7 +2525,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2018-11-16/" title="Cloud November 16, 2018" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2018-11-16/" title="Cloud November 16, 2018" class="md-nav__link">
       Cloud November 16, 2018
     </a>
   </li>
@@ -2507,7 +2537,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2018-11-02/" title="Cloud November 2, 2018" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2018-11-02/" title="Cloud November 2, 2018" class="md-nav__link">
       Cloud November 2, 2018
     </a>
   </li>
@@ -2519,7 +2549,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2018-10-19/" title="Cloud October 19, 2018" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2018-10-19/" title="Cloud October 19, 2018" class="md-nav__link">
       Cloud October 19, 2018
     </a>
   </li>
@@ -2531,7 +2561,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../cloud-2018-07-23/" title="Cloud July 23, 2018" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2018-07-23/" title="Cloud July 23, 2018" class="md-nav__link">
       Cloud July 23, 2018
     </a>
   </li>
@@ -2603,7 +2633,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v5.1.0/" title="Self-hosted v5.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v5.1.0/" title="Self-hosted v5.1.0" class="md-nav__link">
       Self-hosted v5.1.0
     </a>
   </li>
@@ -2615,7 +2645,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v5.0.0/" title="Self-hosted v5.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v5.0.0/" title="Self-hosted v5.0.0" class="md-nav__link">
       Self-hosted v5.0.0
     </a>
   </li>
@@ -2657,7 +2687,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v4.4.0/" title="Self-hosted v4.4.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.4.0/" title="Self-hosted v4.4.0" class="md-nav__link">
       Self-hosted v4.4.0
     </a>
   </li>
@@ -2669,7 +2699,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v4.3.0/" title="Self-hosted v4.3.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.3.0/" title="Self-hosted v4.3.0" class="md-nav__link">
       Self-hosted v4.3.0
     </a>
   </li>
@@ -2681,7 +2711,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v4.2.0/" title="Self-hosted v4.2.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.2.0/" title="Self-hosted v4.2.0" class="md-nav__link">
       Self-hosted v4.2.0
     </a>
   </li>
@@ -2693,7 +2723,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v4.1.0/" title="Self-hosted v4.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.1.0/" title="Self-hosted v4.1.0" class="md-nav__link">
       Self-hosted v4.1.0
     </a>
   </li>
@@ -2705,7 +2735,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v4.0.1/" title="Self-hosted v4.0.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.0.1/" title="Self-hosted v4.0.1" class="md-nav__link">
       Self-hosted v4.0.1
     </a>
   </li>
@@ -2717,7 +2747,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v4.0.0/" title="Self-hosted v4.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.0.0/" title="Self-hosted v4.0.0" class="md-nav__link">
       Self-hosted v4.0.0
     </a>
   </li>
@@ -2759,7 +2789,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v3.5.1/" title="Self-hosted v3.5.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.5.1/" title="Self-hosted v3.5.1" class="md-nav__link">
       Self-hosted v3.5.1
     </a>
   </li>
@@ -2771,7 +2801,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v3.5.0/" title="Self-hosted v3.5.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.5.0/" title="Self-hosted v3.5.0" class="md-nav__link">
       Self-hosted v3.5.0
     </a>
   </li>
@@ -2783,7 +2813,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v3.4.0/" title="Self-hosted v3.4.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.4.0/" title="Self-hosted v3.4.0" class="md-nav__link">
       Self-hosted v3.4.0
     </a>
   </li>
@@ -2795,7 +2825,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v3.3.0/" title="Self-hosted v3.3.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.3.0/" title="Self-hosted v3.3.0" class="md-nav__link">
       Self-hosted v3.3.0
     </a>
   </li>
@@ -2807,7 +2837,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v3.2.0/" title="Self-hosted v3.2.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.2.0/" title="Self-hosted v3.2.0" class="md-nav__link">
       Self-hosted v3.2.0
     </a>
   </li>
@@ -2819,7 +2849,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v3.1.0/" title="Self-hosted v3.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.1.0/" title="Self-hosted v3.1.0" class="md-nav__link">
       Self-hosted v3.1.0
     </a>
   </li>
@@ -2831,7 +2861,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v3.0.0/" title="Self-hosted v3.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.0.0/" title="Self-hosted v3.0.0" class="md-nav__link">
       Self-hosted v3.0.0
     </a>
   </li>
@@ -2873,7 +2903,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v2.2.1/" title="Self-hosted v2.2.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.2.1/" title="Self-hosted v2.2.1" class="md-nav__link">
       Self-hosted v2.2.1
     </a>
   </li>
@@ -2885,7 +2915,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v2.2.0/" title="Self-hosted v2.2.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.2.0/" title="Self-hosted v2.2.0" class="md-nav__link">
       Self-hosted v2.2.0
     </a>
   </li>
@@ -2897,7 +2927,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v2.1.1/" title="Self-hosted v2.1.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.1.1/" title="Self-hosted v2.1.1" class="md-nav__link">
       Self-hosted v2.1.1
     </a>
   </li>
@@ -2909,7 +2939,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v2.1.0/" title="Self-hosted v2.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.1.0/" title="Self-hosted v2.1.0" class="md-nav__link">
       Self-hosted v2.1.0
     </a>
   </li>
@@ -2921,7 +2951,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v2.0.0/" title="Self-hosted v2.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.0.0/" title="Self-hosted v2.0.0" class="md-nav__link">
       Self-hosted v2.0.0
     </a>
   </li>
@@ -2963,7 +2993,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v1.5.0/" title="Self-hosted v1.5.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.5.0/" title="Self-hosted v1.5.0" class="md-nav__link">
       Self-hosted v1.5.0
     </a>
   </li>
@@ -2975,7 +3005,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v1.4.0/" title="Self-hosted v1.4.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.4.0/" title="Self-hosted v1.4.0" class="md-nav__link">
       Self-hosted v1.4.0
     </a>
   </li>
@@ -2987,7 +3017,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v1.3.0/" title="Self-hosted v1.3.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.3.0/" title="Self-hosted v1.3.0" class="md-nav__link">
       Self-hosted v1.3.0
     </a>
   </li>
@@ -2999,7 +3029,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v1.2.0/" title="Self-hosted v1.2.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.2.0/" title="Self-hosted v1.2.0" class="md-nav__link">
       Self-hosted v1.2.0
     </a>
   </li>
@@ -3011,7 +3041,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v1.1.0/" title="Self-hosted v1.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.1.0/" title="Self-hosted v1.1.0" class="md-nav__link">
       Self-hosted v1.1.0
     </a>
   </li>
@@ -3023,7 +3053,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v1.0.1/" title="Self-hosted v1.0.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.0.1/" title="Self-hosted v1.0.1" class="md-nav__link">
       Self-hosted v1.0.1
     </a>
   </li>
@@ -3035,7 +3065,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../self-hosted/self-hosted-v1.0.0/" title="Self-hosted v1.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.0.0/" title="Self-hosted v1.0.0" class="md-nav__link">
       Self-hosted v1.0.0
     </a>
   </li>
@@ -3084,15 +3114,58 @@
                   
                 
                 
-                <h1 id="removal-of-nodesecurity-golint-and-scsslint-march-9-2020">Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020<a class="headerlink" href="#removal-of-nodesecurity-golint-and-scsslint-march-9-2020" title="Permanent link">#</a></h1>
-<p>On the week of March 9th 2020, we'll be removing some tools from Codacy.</p>
-<p>Those tools are NodeSecurity, GoLint, and SCSSLint.</p>
-<p>These tools have become deprecated or stopped being updated by their maintainers and started providing a bad experience for Codacy users either by reporting false positives or causing other unexpected issues.</p>
-<p>We've been working on alternatives for each tool. Continue reading to find out how you can replace each of the removed tools:</p>
+                <h1 id="creating-project-api-tokens-programmatically">Creating project API tokens programmatically<a class="headerlink" href="#creating-project-api-tokens-programmatically" title="Permanent link">#</a></h1>
+<p>To create new <a href="../../api-tokens/">project API tokens</a> for your Codacy repositories programmatically, use the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#createrepositoryapitoken" target="_blank">createRepositoryApiToken</a>.</p>
+<p>For example, if you're <a href="../../../coverage-reporter/">setting up coverage</a> for all your repositories and prefer not to use a single account API token that grants the same permissions as an administrator, you need to create an individual project API token for each repository.</p>
+<h2 id="example-creating-project-api-tokens-for-all-repositories-in-an-organization">Example: Creating project API tokens for all repositories in an organization<a class="headerlink" href="#example-creating-project-api-tokens-for-all-repositories-in-an-organization" title="Permanent link">#</a></h2>
+<p>This example creates new project API tokens for all the repositories in an organization and outputs a comma-separated list of repository names and corresponding token strings.</p>
+<p>The example script:</p>
+<ol>
+<li>Defines the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API, the Git provider, and the organization name.</li>
+<li>Calls the Codacy API endpoint <a href="https://api.codacy.com/api/api-docs#listorganizationrepositories" target="_blank">listOrganizationRepositories</a> to retrieve the list of repositories in the organization.</li>
+<li>Uses <a href="https://github.com/stedolan/jq" target="_blank">jq</a> to select only the name of the repositories.</li>
+<li>Asks for confirmation from the user before making any changes.</li>
+<li>For each repository, calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#createrepositoryapitoken" target="_blank">createRepositoryApiToken</a> to create a new project API token and uses jq to obtain only the created token string.</li>
+<li>Outputs a comma-separated list of the repository names and the corresponding new token strings.</li>
+<li>Pauses a few seconds between requests to the Codacy API to avoid rate limiting.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+
+<span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
+<span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span> <span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
+<span class="nv">ORGANIZATION</span><span class="o">=</span><span class="s2">&quot;&lt;your organization name&gt;&quot;</span>
+
+<span class="nv">repositories</span><span class="o">=</span><span class="k">$(</span>curl -sX GET <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/repositories&quot;</span> <span class="se">\</span>
+                    -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
+               <span class="p">|</span> jq -r <span class="s2">&quot;.data[] | .name&quot;</span><span class="k">)</span>
+
+<span class="nv">count</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$repositories</span><span class="s2">&quot;</span> <span class="p">|</span> wc -l<span class="k">)</span>
+<span class="nb">read</span> -p <span class="s2">&quot;Create project tokens for </span><span class="nv">$count</span><span class="s2"> repositories? (y/n) &quot;</span> choice
+<span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$choice</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;y&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
+    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$repositories</span><span class="s2">&quot;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> repository<span class="p">;</span> <span class="k">do</span>
+        <span class="nb">echo</span> -n <span class="s2">&quot;</span><span class="nv">$repository</span><span class="s2">,&quot;</span>
+        curl -sX POST <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/repositories/</span><span class="nv">$repository</span><span class="s2">/tokens&quot;</span> <span class="se">\</span>
+             -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
+        <span class="p">|</span> jq -r <span class="s2">&quot;.data | .token&quot;</span>
+        sleep <span class="m">2</span> <span class="c1"># Wait 2 seconds</span>
+    <span class="k">done</span>
+<span class="k">else</span>
+    <span class="nb">echo</span> <span class="s2">&quot;No changes made.&quot;</span><span class="p">;</span>
+<span class="k">fi</span>
+</code></pre></div>
+<p>Example output:</p>
+<div class="highlight"><pre><span></span><code>chart,&lt;new project API token&gt;
+docs,&lt;new project API token&gt;
+website,&lt;new project API token&gt;
+[...]
+</code></pre></div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>For the sake of simplicity, the example doesn't consider paginated results obtained from the Codacy API. <a href="../../using-the-codacy-api/#using-pagination">Learn how to use pagination</a> to ensure that you process all results returned by the API.</p>
+</div>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
-<li><strong>NodeSecurity:</strong> This tool detects outdated NPM dependencies. It stopped being maintained two years ago when <a href="https://github.com/nodesecurity/nsp#the-node-security-platform-has-been-acquired-by-npm-inc">it was acquired and replaced by NPM</a> itself. Since it stopped being updated it will no longer find new vulnerabilities, thus becoming useless and only providing a false sense of security. <em>Recommendation: If you have an NPM repository you now have this functionality out-of-the-box.</em></li>
-<li><strong>GoLint:</strong> Last month we launched a new Go tool - <a href="https://github.com/mgechev/revive">Revive</a> - which is a drop-in replacement for GoLint supporting all of its rules and even more. <em>Recommendation: Revive was enabled by default for your Go repositories with GoLint's. Check that the default patterns make sense for your team.</em></li>
-<li><strong>SCSSLint:</strong> <a href="https://github.com/sds/scss-lint#notice-consider-other-tools-before-adopting-scss-lint">This tool is now unmaintained</a> for four years with the old maintainers suggesting that users migrate to Stylelint which is already supported by Codacy for quite some time. <em>Recommendation: Check that the Stylelint is enabled and its default patterns make sense for your team.</em></li>
+<li><a href="../../api-tokens/">API tokens</a></li>
 </ul>
               
               
@@ -3137,7 +3210,7 @@
           <br>
         </div>
         <p>
-          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020%22">create a more detailed issue on our GitHub repository</a>.
+          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Creating project API tokens programmatically%22">create a more detailed issue on our GitHub repository</a>.
         </p>
       </div>
     </div>
@@ -3145,7 +3218,7 @@
       Thanks for helping improve the Codacy documentation.
     </p>
     <p>
-      If you have a question or need help, you can <a href="https://community.codacy.com/">try looking for answers on our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020">support@codacy.com</a>.
+      If you have a question or need help, you can <a href="https://community.codacy.com/">try looking for answers on our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Creating project API tokens programmatically">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -3242,7 +3315,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 27, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 14, 2022</span>
     
   </small>
 </div>

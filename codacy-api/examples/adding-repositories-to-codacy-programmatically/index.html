@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to add multiple repositories programmatically using Codacy's API v3 endpoint addRepository.">
       
       
-        <meta http-equiv="last-modified" content="2021-12-14 15:06:46">  
+        <meta http-equiv="last-modified" content="2022-01-14 11:47:51">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/adding-repositories-to-codacy-programmatically/">
@@ -1092,6 +1092,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../creating-project-api-tokens-programmatically/" title="Creating project API tokens programmatically" class="md-nav__link">
+      Creating project API tokens programmatically
+    </a>
   </li>
 
         
@@ -3186,18 +3198,18 @@
 </div>
 <p>The example script:</p>
 <ol>
-<li>Defines a GitHub <a href="https://github.com/settings/tokens" target="_blank">personal access token</a>, the GitHub organization name, and an <a href="../../api-tokens/#account-api-tokens">account API token</a>.</li>
+<li>Defines a GitHub <a href="https://github.com/settings/tokens" target="_blank">personal access token</a>, the GitHub organization name, and the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API.</li>
 <li>Calls the GitHub API to <a href="https://docs.github.com/en/rest/reference/repos#list-organization-repositories" target="_blank">obtain the list of all repositories</a> in the defined organization.</li>
 <li>Uses <a href="https://github.com/stedolan/jq" target="_blank">jq</a> to return the value of <code>full_name</code> for each repository obtained in the JSON response. The <code>full_name</code> already includes the organization and repository names using the format <code>&lt;organization&gt;/&lt;repository&gt;</code>.</li>
-<li>For each repository, calls the Codacy API endpoint to add a new repository specifying <code>gh</code> as the Git provider and the value of <code>full_name</code> as the full path of the repository.</li>
+<li>For each repository, calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#addrepository" target="_blank">addRepository</a> to add a new repository specifying <code>gh</code> as the Git provider and the value of <code>full_name</code> as the full path of the repository.</li>
 <li>Checks the HTTP status code obtained in the response and performs basic error handling.</li>
 <li>Pauses a few seconds between requests to the Codacy API to avoid rate limiting.</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
 
-<span class="nv">GITHUB_AUTH_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;REPLACE_ME&gt;&quot;</span>
-<span class="nv">GITHUB_ORG_NAME</span><span class="o">=</span><span class="s2">&quot;&lt;REPLACE_ME&gt;&quot;</span>
-<span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;REPLACE_ME&gt;&quot;</span>
+<span class="nv">GITHUB_AUTH_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your GitHub personal access token&gt;&quot;</span>
+<span class="nv">GITHUB_ORG_NAME</span><span class="o">=</span><span class="s2">&quot;&lt;your GitHub organization name&gt;&quot;</span>
+<span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
 
 <span class="nb">printf</span> <span class="s2">&quot;Obtaining all repositories in the </span><span class="nv">$GITHUB_ORG_NAME</span><span class="s2"> organization\n&quot;</span>
 <span class="k">for</span> repo <span class="k">in</span> <span class="k">$(</span>curl -s https://api.github.com/orgs/<span class="nv">$GITHUB_ORG_NAME</span>/repos -H <span class="s2">&quot;Authorization: Bearer </span><span class="nv">$GITHUB_AUTH_TOKEN</span><span class="s2">&quot;</span> <span class="p">|</span> jq -r <span class="s1">&#39;.[] | .full_name&#39;</span><span class="k">)</span><span class="p">;</span> <span class="k">do</span>
@@ -3224,7 +3236,7 @@
 </code></pre></div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>For the sake of simplicity, the example doesn't consider paginated results obtained from the Codacy API. <a href="../../using-the-codacy-api/#using-pagination">Learn how to use pagination</a> to ensure that you obtain all the results returned by the API.</p>
+<p>For the sake of simplicity, the example doesn't consider paginated results obtained from the Codacy API. <a href="../../using-the-codacy-api/#using-pagination">Learn how to use pagination</a> to ensure that you process all results returned by the API.</p>
 <p>Besides this, the script doesn't consider paginated results obtained from the GitHub API. <a href="https://docs.github.com/en/rest/guides/traversing-with-pagination" target="_blank">Learn how to use pagination on the GitHub API</a> to ensure that you obtain all the repositories in your organization.</p>
 </div>
               
@@ -3375,7 +3387,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 14, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 14, 2022</span>
     
   </small>
 </div>
