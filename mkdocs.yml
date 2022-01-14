@@ -549,6 +549,7 @@ nav:
           - API v2 reference: https://api.codacy.com/swagger
           - Examples:
                 - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
+                - codacy-api/examples/creating-project-api-tokens-programmatically.md
                 - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
                 - codacy-api/examples/obtaining-current-issues-in-repositories.md
     - Managing Codacy Self-hosted: "!include submodules/chart/mkdocs.yml"

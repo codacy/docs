@@ -14,12 +14,12 @@ This example exports the pattern ID, issue level, file path, and timestamp for a
 
 The example script:
 
-1.  Defines an [account API token](../api-tokens.md#account-api-tokens).
-1.  Calls the Codacy API endpoint to retrieve information about the issues, filtering the results by security issues with the relevant severity levels.
+1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
+1.  Calls the Codacy API endpoint [searchRepositoryIssues](https://app.codacy.com/api/api-docs#searchrepositoryissues){: target="_blank"} to retrieve information about the issues, filtering the results by security issues with the relevant severity levels.
 1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to select only the necessary data fields and convert the results to the CSV format.
 
 ```bash
-export CODACY_API_TOKEN="<your account API token>"
+CODACY_API_TOKEN="<your account API token>"
 
 curl -X POST "https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/website/issues/search" \
      -H "api-token: $CODACY_API_TOKEN" \
@@ -28,7 +28,7 @@ curl -X POST "https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/rep
 | jq -r ".data[] | [.patternInfo.id, .patternInfo.level, .filePath, .commitInfo.timestamp] | @csv"
 ```
 
-Output:
+Example output:
 
 ```text
 "BundlerAudit_Insecure Dependency","Error","Gemfile.lock","2021-06-16T11:46:24Z"
