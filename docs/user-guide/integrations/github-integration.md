@@ -7,7 +7,7 @@ It installs in just one click but you may need to move back and forth between Co
 After installing it for a repository, it has to be enabled by a user with repository access on GitHub. For private repositories, this user will by default become the GitHub user that Codacy will use to comment and create issues on GitHub. For public repositories, comments made by Codacy will appear as coming from codacy-bot.
 
 <figure>
-<img src="/images/Aug-10-2017_17-47-06.gif" width="669" height="283" alt="" /><figcaption><span class="wysiwyg-font-size-small">Enabling GitHub integration</span></figcaption>
+<img src="/v2.0.387-deprecated/images/Aug-10-2017_17-47-06.gif" width="669" height="283" alt="" /><figcaption><span class="wysiwyg-font-size-small">Enabling GitHub integration</span></figcaption>
 </figure>
 
 Once the integration is enabled, you will see additional options when browsing the existing issues on the repository:

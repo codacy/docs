@@ -6,7 +6,7 @@ On the Organization Dashboard, Repository Dashboard and Personal Dashboard you 
 
 Each hotspot, depending on the Dashboard, should apply to you on the environment you are in: if you are on the Organization Dashboard (where you can see all the repositories of a specific Organization) you will see Hotspots (attention points) related with the Organization, if you are on the Repository Dashboard you will see Hotspots related with the repository, and if you are on a Personal Dashboard for a specific Organization, you will see Hotspots related with your work for a specific Organization. 
 
-<img src="/images/Screen_Shot_2018-05-03_at_23.38.47.png" width="290" height="292" alt="Screen_Shot_2018-05-03_at_23.38.47.png" /> 
+<img src="/v2.0.387-deprecated/images/Screen_Shot_2018-05-03_at_23.38.47.png" width="290" height="292" alt="Screen_Shot_2018-05-03_at_23.38.47.png" /> 
 
 **Hotspots can be dismissed** by clicking on "x" on the top right corner. If you dismiss an Hotspot and the situation that generate that Hotspot it not fixed it will show up again 7 days after. 
 

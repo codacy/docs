@@ -114,4 +114,4 @@ After you add a repository on Codacy go to Settings -> Integrations and add Stas
 
 Below is an example of a Codacy comment:
 
-<img src="/images/screenshot-codacy-stash-westeurope-cloudapp-azure-com-7990-projects-yap-repos-yet-another-repo-pull-requests-1-overview-1490808958032.png" width="499" height="474" alt="screenshot-codacy-stash-westeurope-cloudapp-azure-com-7990-projects-yap-repos-yet-another-repo-pull-requests-1-overview-1490808958032.png" />
+<img src="/v2.0.387-deprecated/images/screenshot-codacy-stash-westeurope-cloudapp-azure-com-7990-projects-yap-repos-yet-another-repo-pull-requests-1-overview-1490808958032.png" width="499" height="474" alt="screenshot-codacy-stash-westeurope-cloudapp-azure-com-7990-projects-yap-repos-yet-another-repo-pull-requests-1-overview-1490808958032.png" />

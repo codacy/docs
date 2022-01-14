@@ -12,7 +12,7 @@ The pattern explanation shows more detail about the issues it can detect and how
 
 You can filter the patterns by category using the side menu:
 
-<img src="/images/c14f895e0f57610b7fd706e27b31925e785e1a184549e765daf9f1e69ad54602.png" width="693" height="177" />
+<img src="/v2.0.387-deprecated/images/c14f895e0f57610b7fd706e27b31925e785e1a184549e765daf9f1e69ad54602.png" width="693" height="177" />
 
 ### The issues detected by Codacy belong to one of the following categories:
 
@@ -41,7 +41,7 @@ To configure the patterns used to analyse your repository simply click on the c
 When you change the enabled patterns you can reanalyse your repository. To do that, just enter the latest commit from your list on the **Commit** view and click to [reanalyse](/hc/en-us/articles/213840489-How-do-I-reanalyse-my-commit-).
 
 <figure>
-<img src="/images/b76fc1f9e8dab5a1db65856b0dd09ce79a156a013573cdef5a700e823dc53547.png" width="637" height="450" alt="" />
+<img src="/v2.0.387-deprecated/images/b76fc1f9e8dab5a1db65856b0dd09ce79a156a013573cdef5a700e823dc53547.png" width="637" height="450" alt="" />
 </figure>
 
 ## 3. Account vs Repository Patterns

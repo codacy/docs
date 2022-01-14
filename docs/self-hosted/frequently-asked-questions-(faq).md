@@ -103,7 +103,7 @@ If you are not using DNS, you should set Host and Host Docker Ip to:
 
 `{{ conf.doplicated.var.internalhostip }}`
 
-<img src="/images/Pasted_image_at_2016_05_19_11_21.png" width="822" height="181" />
+<img src="/v2.0.387-deprecated/images/Pasted_image_at_2016_05_19_11_21.png" width="822" height="181" />
 
 The changes will be applied after you save and reload the application.
 

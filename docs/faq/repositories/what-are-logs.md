@@ -6,7 +6,7 @@ On the Organization Dashboard and Repository Dashboard you have a section called
 
 On the Organization and Repository Dashboards you can see a section with the 10 most recent activities. It's not possible to dismiss these logs.
 
-<img src="/images/Screen_Shot_2018-05-04_at_01.15.33.png" width="313" height="321" alt="Screen_Shot_2018-05-04_at_01.15.33.png" /> 
+<img src="/v2.0.387-deprecated/images/Screen_Shot_2018-05-04_at_01.15.33.png" width="313" height="321" alt="Screen_Shot_2018-05-04_at_01.15.33.png" /> 
 
 ## What types of Logs can you find?
 

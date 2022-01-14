@@ -24,7 +24,7 @@ If you have admin permissions on your Codacy self-hosted instance, you can set u
 
 When you open the GitLab panel, if you haven't created an application yet, this is the first step you need to take. Just follow the link.
 
-<img src="/images/Screenshot_2020-03-04_at_14.52.42.png" width="449" height="318" alt="Screenshot_2020-03-04_at_14.52.42.png" />
+<img src="/v2.0.387-deprecated/images/Screenshot_2020-03-04_at_14.52.42.png" width="449" height="318" alt="Screenshot_2020-03-04_at_14.52.42.png" />
 
 ## Creating a GitLab Application
 
@@ -47,6 +47,6 @@ https://codacy.example.com/add/addPermissions/GitLab
 
 After this, copy the "application ID" and "secret" and paste those to the GitLab integration panel on Codacy.  
 
-<img src="/images/Screenshot_2020-03-04_at_15.02.46.png" width="426" height="303" alt="Screenshot_2020-03-04_at_15.02.46.png" /> 
+<img src="/v2.0.387-deprecated/images/Screenshot_2020-03-04_at_15.02.46.png" width="426" height="303" alt="Screenshot_2020-03-04_at_15.02.46.png" /> 
 
 Hit "Test & Save" and you should be good to go! 👍

@@ -172,7 +172,7 @@ The configuration interface is web-based and can be accessed via **port 9000 ove
 
 The first screen will ask you for a license to be installed to access the application web UI. This will be a file with the extension _.dlk_. This will provide you with access to download a custom-built virtual infrastructure of Codacy that run in your own infrastructure.
 
-<img src="/images/Screen_Shot_2016-10-31_at_16.59.32.png" width="592" height="220" />
+<img src="/v2.0.387-deprecated/images/Screen_Shot_2016-10-31_at_16.59.32.png" width="592" height="220" />
 
 The license should be provided by a Codacy representative.
 
@@ -180,7 +180,7 @@ The license should be provided by a Codacy representative.
 
 After validating the license, you will be presented with the Codacy Control Panel, used to configure and update the application.
 
-<img src="/images/Screen_Shot_2016-10-31_at_17.01.07.png" width="722" height="220" />
+<img src="/v2.0.387-deprecated/images/Screen_Shot_2016-10-31_at_17.01.07.png" width="722" height="220" />
 Codacy Control Panel
 
 This console provides access to configuration keys and allows Codacy to be updated. We strongly advise that this console is secured against unwanted access.
@@ -189,26 +189,26 @@ This console provides access to configuration keys and allows Codacy to be updat
 
 For your initial application installation or future Codacy updates, click the button **Check for Updates** in the top right corner. If a new update is available, a new option will appear:
 
- <img src="/images/Screen_Shot_2016-10-31_at_17.07.38.png" width="655" height="234" />
+ <img src="/v2.0.387-deprecated/images/Screen_Shot_2016-10-31_at_17.07.38.png" width="655" height="234" />
 New version available
 
 Before any new version is ready to start running, a manual check of configurations is required. To configure the new version, click on the **Configure** link in the upper right hand corner. This will open a new screen with every configuration key required to run Codacy.
 
- <img src="/images/Screen_Shot_2016-10-31_at_17.11.35.png" width="460" height="496" />
+ <img src="/v2.0.387-deprecated/images/Screen_Shot_2016-10-31_at_17.11.35.png" width="460" height="496" />
 Application configuration
 
 Codacy will run with the default settings, so if you are just evaluating the product with the default database there is no need to change anything.
 
 If you would like to configure an external database, change the following settings:
 
-<img src="/images/Screen_Shot_2016-10-31_at_17.13.10.png" width="406" height="325" />
+<img src="/v2.0.387-deprecated/images/Screen_Shot_2016-10-31_at_17.13.10.png" width="406" height="325" />
 Mandatory settings to be reviewed
 
 _Host IP_ and _Host Docker IP_ are automatically evaluated, and secret keys to cipher database contents are created randomly per installation so no change is required.
 
 After configuring the application, hitting save will return you to the update screen. A new option to pull the version will be presented in the upper left corner:
 
-<img src="/images/Screen_Shot_2016-10-31_at_17.07.38.png" width="669" height="239" />
+<img src="/v2.0.387-deprecated/images/Screen_Shot_2016-10-31_at_17.07.38.png" width="669" height="239" />
 PULL option available
 
 Pressing **Pull** will start an async method that can take up to 30 minutes, depending on your internet connection. This will pull Codacy images from dockerhub, making them available in the local registry for application execution.
@@ -217,7 +217,7 @@ Pressing **Pull** will start an async method that can take up to 30 minutes, dep
 
 When done, a success message will show in the logs, and refreshing the page will show a new option **Run** in the toolbar:
 
-<img src="/images/Screen_Shot_2016-10-31_at_17.15.06.png" width="584" height="297" />
+<img src="/v2.0.387-deprecated/images/Screen_Shot_2016-10-31_at_17.15.06.png" width="584" height="297" />
 Docker pulled and new RUN option
 
 Pressing **RUN** will start the application. At any time, you can check the status of Codacy by navigating to Support:

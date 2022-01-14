@@ -52,4 +52,4 @@ After the application is created you should copy both the _Client ID_ and the _C
 
 If you only have the GitHub cloud integration enabled the only way you will have to login in Codacy is through Username + Password.
 
-<img src="/images/Screen_Shot_2019-08-08_at_15.36.56.png" width="479" height="231" alt="Screen_Shot_2019-08-08_at_15.36.56.png" /> 
+<img src="/v2.0.387-deprecated/images/Screen_Shot_2019-08-08_at_15.36.56.png" width="479" height="231" alt="Screen_Shot_2019-08-08_at_15.36.56.png" /> 
