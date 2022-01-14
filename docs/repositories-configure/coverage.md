@@ -10,7 +10,7 @@ Repositories can be configured to show code coverage reports directly in Codacy.
 
 To set up coverage reporting you'll need a Project API token. You can find it in your repository settings 'Integrations' tab.
 
-<img src="/images/Jun-06-2017_14-30-02.gif" width="650" />
+<img src="/v1.5/images/Jun-06-2017_14-30-02.gif" width="650" />
 
 ### Token security
 
