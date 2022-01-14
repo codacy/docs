@@ -11,7 +11,7 @@ token](https://confluence.atlassian.com/x/Vo71Nw).
 
 Once the JIRA Integration is set up, browse to **Settings**, select Advanced, and make sure to fill in all the fields, including the Labels.  
 
-<img src="/images/test3.gif" width="669" height="387" />
+<img src="/v1.3/images/test3.gif" width="669" height="387" />
 Create an issue on JIRA
 
 After configuring your JIRA integration with your server settings, you will have additional options when browsing the existing issues on the repository that allow you to create JIRA issues for results found on Codacy:
