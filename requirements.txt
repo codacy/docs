@@ -4,7 +4,7 @@ markdown==3.3.6
 Pygments==2.11.2
 pymdown-extensions==9.1
 mkdocs-git-revision-date-localized-plugin==0.11.1
-mkdocs-monorepo-plugin==0.5.1
+mkdocs-monorepo-plugin==0.5.2
 mkdocs-markdownextradata-plugin==0.2.5
 mkdocs-redirects==1.0.3
 mkdocs-include-markdown-plugin==3.2.3
