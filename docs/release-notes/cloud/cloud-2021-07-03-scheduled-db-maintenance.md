@@ -7,7 +7,7 @@ rss_href: /feed_rss_created.xml
 
 On July 3, 2021, starting at 08:00 UTC we'll perform scheduled database maintenance to improve the performance and scalability of Codacy Cloud.
 
-To ensure an adequate performance level and scalability of our product, we'll be cleaning historical static code analysis data from our databases. Test coverage data or any other data or settings related to your account, organizations, and repositories won't be affected.
+To ensure an adequate performance level and scalability of our product, we'll be cleaning historical static code analysis data from our databases. Code coverage data or any other data or settings related to your account, organizations, and repositories won't be affected.
 
 This operation will include around 2 hours of initial downtime, followed by 8 hours of degraded analysis performance for all users and an additional 5 hours for open source users. We expect to finish the maintenance operation at around July 3, 2021 23:00 UTC.
 
