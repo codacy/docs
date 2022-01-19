@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the test coverage of your repositories on Codacy.">
+        <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2021-11-08 17:29:18">  
+        <meta http-equiv="last-modified" content="2022-01-11 11:31:49">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
@@ -3116,11 +3116,11 @@
                 
                 <h1 id="adding-coverage-to-your-repository">Adding coverage to your repository<a class="headerlink" href="#adding-coverage-to-your-repository" title="Permanent link">#</a></h1>
 <p>Code coverage is a metric used to describe the degree to which the source code of a program is tested. A program with high code coverage has been more thoroughly tested and has a lower chance of containing software bugs than a program with low code coverage. You can read more about the <a href="https://blog.codacy.com/a-guide-to-code-coverage-part-1-code-coverage-explained/">basics of code coverage</a> on Codacy's blog.</p>
-<p>Complete these main steps to start monitoring the test coverage of your repositories on Codacy:</p>
+<p>Complete these main steps to start monitoring the code coverage of your repositories on Codacy:</p>
 <ol>
 <li>
 <p><strong>Generating coverage reports</strong></p>
-<p>Ensure that you're generating one of the test coverage report formats supported by Codacy on each push to your repository.</p>
+<p>Ensure that you're generating one of the code coverage report formats supported by Codacy on each push to your repository.</p>
 </li>
 <li>
 <p><strong>Uploading coverage data to Codacy</strong></p>
@@ -3217,7 +3217,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <li>
 <p><a href="https://github.com/dariodf/lcov_ex">dariodf/lcov_ex</a>: generate LCOV reports for Elixir projects</p>
 </li>
-<li><a href="https://github.com/chrisgit/sfdx-plugins_apex_coverage_report">chrisgit/sfdx-plugins_apex_coverage_report</a>: generate LCOV or Cobertura reports from <a href="https://help.salesforce.com/articleView?id=sf.code_apex_dev_guide_tools.htm&amp;type=5">Apex</a> test coverage data</li>
+<li><a href="https://github.com/chrisgit/sfdx-plugins_apex_coverage_report">chrisgit/sfdx-plugins_apex_coverage_report</a>: generate LCOV or Cobertura reports from <a href="https://help.salesforce.com/articleView?id=sf.code_apex_dev_guide_tools.htm&amp;type=5">Apex</a> code coverage data</li>
 <li><a href="https://github.com/danielpalme/ReportGenerator">danielpalme/ReportGenerator</a>: convert between different report formats</li>
 </ul>
 <p>As a last resort, you can also send the coverage data directly by calling one of the following Codacy API endpoints:</p>
@@ -3487,7 +3487,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 8, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 11, 2022</span>
     
   </small>
 </div>
