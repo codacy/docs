@@ -54,19 +54,19 @@ We provide an example Bash script that adds all repositories in a GitHub Cloud o
 
 The example script:
 
-1.  Defines a GitHub [personal access token](https://github.com/settings/tokens){: target="_blank"}, the GitHub organization name, and an [account API token](../api-tokens.md#account-api-tokens).
+1.  Defines a GitHub [personal access token](https://github.com/settings/tokens){: target="_blank"}, the GitHub organization name, and the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
 1.  Calls the GitHub API to [obtain the list of all repositories](https://docs.github.com/en/rest/reference/repos#list-organization-repositories){: target="_blank"} in the defined organization.
 1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to return the value of `full_name` for each repository obtained in the JSON response. The `full_name` already includes the organization and repository names using the format `<organization>/<repository>`.
-1.  For each repository, calls the Codacy API endpoint to add a new repository specifying `gh` as the Git provider and the value of `full_name` as the full path of the repository.
+1.  For each repository, calls the Codacy API endpoint [addRepository](https://app.codacy.com/api/api-docs#addrepository){: target="_blank"} to add a new repository specifying `gh` as the Git provider and the value of `full_name` as the full path of the repository.
 1.  Checks the HTTP status code obtained in the response and performs basic error handling.
 1.  Pauses a few seconds between requests to the Codacy API to avoid rate limiting.
 
 ```bash
 #!/bin/bash
 
-GITHUB_AUTH_TOKEN="<REPLACE_ME>"
-GITHUB_ORG_NAME="<REPLACE_ME>"
-CODACY_API_TOKEN="<REPLACE_ME>"
+GITHUB_AUTH_TOKEN="<your GitHub personal access token>"
+GITHUB_ORG_NAME="<your GitHub organization name>"
+CODACY_API_TOKEN="<your account API token>"
 
 printf "Obtaining all repositories in the $GITHUB_ORG_NAME organization\n"
 for repo in $(curl -s https://api.github.com/orgs/$GITHUB_ORG_NAME/repos -H "Authorization: Bearer $GITHUB_AUTH_TOKEN" | jq -r '.[] | .full_name'); do
