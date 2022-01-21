@@ -8,7 +8,7 @@ If you don't see your organization when [adding your organization on Codacy](../
 
 1.  Make sure you have access to the organization with the account you're logged in.
 
-1.  **If you're using GitHub Apps,** [install and authorize Codacy on your organization](https://github.com/apps/codacy-production/installations/new).
+1.  **If you're using GitHub** [install and authorize Codacy on your organization](https://github.com/apps/codacy-production/installations/new).
 
 1.  Refresh the list of organizations on Codacy by clicking **refresh this list** on the Organizations page:
 
