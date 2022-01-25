@@ -46,4 +46,4 @@ Adds comments on the lines of the merge request where Codacy finds new issues. C
 
 Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication.
 
-![Merge request summary on Bitbucket](images/gitlab-integration-pr-summary.png)
+![Merge request summary on GitLab](images/gitlab-integration-pr-summary.png)
