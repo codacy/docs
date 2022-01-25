@@ -38,7 +38,8 @@ Depending on the options that you enable, Codacy will automatically update pull 
 
 Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings.
 
-After enabling this option, you can [set Codacy as a required check](../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md#bitbucket) before merging your pull requests.
+!!! important
+    If you want Codacy to block merging pull requests that aren't up to standards, you must also [configure Bitbucket to prevent a merge with unresolved merge checks](https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/){: target="_blank"}.
 
 ![Pull request status on Bitbucket](images/bitbucket-integration-pr-status.png)
 
