@@ -12,8 +12,8 @@ The following sections explain the settings in detail.
 
 These settings configure when Codacy reports pull requests and commits as not up to standards.
 
-!!! tip
-    After enabling these settings you can [set Codacy as a required check](../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md) before merging your pull requests.
+!!! important
+    If you want Codacy to block merging pull requests that aren't up to standards see [How do I set Codacy as a required check to merge pull requests?](../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md)
 
 ![Quality gates](images/quality-settings-gates.png)
 
