@@ -32,7 +32,9 @@ Depending on the options that you enable, Codacy will automatically update merge
 
 ### Pull Request Status
 
-Adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your project. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings.
+Adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your project.
+
+To get the coverage status you must [set up coverage on your repository](../../coverage-reporter/index.md) and enable the coverage rule on the quality settings.
 
 !!! important
     **If you want to block merging merge requests** that aren't up to standards you must also [configure GitLab to only allow merge requests to be merged if the pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds){: target="_blank"}.

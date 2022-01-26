@@ -36,7 +36,9 @@ Depending on the options that you enable, Codacy will automatically update pull 
 
 ### Status checks
 
-Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository. To see the coverage status check, ensure that you enable the option **Coverage** in the quality settings.
+Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository.
+
+To get the coverage status you must [set up coverage on your repository](../../coverage-reporter/index.md) and enable the coverage rule on the quality settings.
 
 !!! important
     **If you want to block merging pull requests** that aren't up to standards you must also [set Codacy as a required status check on GitHub](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule){: target="_blank"}.
