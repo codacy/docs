@@ -13,6 +13,6 @@ To configure Codacy to block merging pull requests that don't meet your quality 
     -   **Codacy** reports status checks for pull requests on your Git provider
     -   **Your Git provider** blocks merging pull requests if they don't pass the Codacy status check
 
-    Depending on your Git provider, follow the instructions that apply to [GitHub](../../repositories-configure/integrations/github-integration.md#configuring-the-github-integration), [GitLab](../../repositories-configure/integrations/gitlab-integration.md#configuring-the-gitlab-integration), or [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#configuring-the-bitbucket-integration).
+    To do this, follow the instructions that apply to [GitHub](../../repositories-configure/integrations/github-integration.md#configuring-the-github-integration), [GitLab](../../repositories-configure/integrations/gitlab-integration.md#configuring-the-gitlab-integration), or [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#configuring-the-bitbucket-integration), depending on your Git provider.
 
 1.  [Review and adjust your repository quality settings](../../repositories-configure/adjusting-quality-settings.md) to decide which pull requests don't pass the Codacy quality gate.
