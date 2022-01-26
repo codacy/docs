@@ -1,30 +1,20 @@
 ---
-description: Configure your Git provider to block merging pull requests until they pass the Codacy checks.
+description: Configure your Git provider to block merging pull requests until they pass the Codacy analysis.
 ---
 
 # How do I set Codacy as a required check to merge pull requests?
 
-Codacy checks each pull request using your [quality settings](../../repositories-configure/adjusting-quality-settings.md) and sends a notification to the Git provider informing if the pull request is up to standards or not.
+You can block merging pull requests until they pass the Codacy quality gates:
 
-Each Git provider has different options to set up notifications or block merging pull requests until they pass the Codacy check:
+1.  Set up your repository so that:
+    
+    -   **Codacy** reports status checks for pull requests on your Git provider
+    -   **Your Git provider** blocks merging pull requests if they don't pass the Codacy status check
 
-## GitHub
+    To do this, follow the instructions that apply to your Git provider:
 
-GitHub allows [setting a status check as mandatory](https://docs.github.com/en/free-pro-team@latest/github/administering-a-repository/enabling-required-status-checks){: target="_blank"} before merging pull requests.
+    -   [GitHub](../../repositories-configure/integrations/github-integration.md#configuring-the-github-integration)
+    -   [GitLab](../../repositories-configure/integrations/gitlab-integration.md#configuring-the-gitlab-integration)
+    -   [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#configuring-the-bitbucket-integration)
 
-!!! important
-    Make sure that you [enable the option Pull Request Status](../../repositories-configure/integrations/github-integration.md) on the GitHub integration.
-
-## GitLab
-
-GitLab allows [setting that all pipelines must succeed](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds){: target="_blank"} before merging merge requests.
-
-!!! important
-    Make sure that you [enable the option Pull Request Status](../../repositories-configure/integrations/gitlab-integration.md) on the GitLab integration.
-
-## Bitbucket
-
-Bitbucket allows [setting a minimum number of merge checks that must pass](https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/){: target="_blank"} before merging pull requests.
-
-!!! important
-    Make sure that you [enable the option Pull Request Status](../../repositories-configure/integrations/bitbucket-integration.md) on the Bitbucket integration.
+2.  [Review and adjust your repository quality settings](../../repositories-configure/adjusting-quality-settings.md) to decide which pull requests don't pass the Codacy quality gate.
