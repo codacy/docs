@@ -175,6 +175,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
+    <td>dartanalyzer</td>
+    <td>Dart</td>
+    <td><code>analysis_options.yml</code></td>
+    <td><a href="https://dart.dev/guides/language/analysis-options">Customizing static analysis</a></td>
+  </tr>
+  <tr>
     <td>detekt</td>
     <td>Kotlin</td>
     <td><code>default-detekt-config.yml</code>, <code>detekt.yml</code></td>
