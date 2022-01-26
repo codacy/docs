@@ -4,7 +4,9 @@ description: Configure Codacy to block merging pull requests that don't meet you
 
 # How do I set Codacy as a required check to merge pull requests?
 
-You can block merging pull requests until they pass the Codacy quality gates:
+You can block merging pull requests until they pass the Codacy quality gate. This ensures the quality of the changes to your codebase, such as to prevent introducing security issues or adding code that isn't covered by tests.
+
+To configure Codacy to block merging pull requests that don't meet your quality standards:
 
 1.  Set up your repository so that:
     
