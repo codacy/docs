@@ -348,8 +348,8 @@ plugins:
               "hc/en-us/articles/360023916013-Run-SpotBugs.md": "related-tools/local-analysis/running-spotbugs.md"
               "hc/en-us/articles/360025014373.md": "release-notes/cloud/cloud-2019-06-18.md"
               "hc/en-us/articles/360025014373-Cloud-Release-Notes-18-Jun-2019.md": "release-notes/cloud/cloud-2019-06-18.md"
-              "hc/en-us/articles/360025654573.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
-              "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
+              "hc/en-us/articles/360025654573.md": "faq/repositories/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
+              "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "faq/repositories/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
               "hc/en-us/articles/360025964333.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
               "hc/en-us/articles/360025964333-File-size-limitation.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
               "hc/en-us/articles/360025964853.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
@@ -524,7 +524,7 @@ plugins:
               "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md": "index.md"
               "repositories/security-dashboard.md": "repositories/security-monitor.md"
               "related-tools/engines.md": "getting-started/supported-languages-and-tools.md"
-              "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md": "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md"
+              "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md": "faq/repositories/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
               "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
               "repositories-configure/php_codesniffer-specifying-your-php-version.md": "repositories-configure/codacy-configuration-file.md"
               "release-notes/cloud/removal-of-nodesecurity,-golint-and-scsslint.md": "release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal.md"
@@ -591,6 +591,7 @@ plugins:
               "release-notes/cloud/cloud-release-notes-|-23-july-2018.md": "release-notes/cloud/cloud-2018-07-23.md"
               "faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md"
               "faq/repositories/how-do-i-manually-force-a-repository-update.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
+              "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md": "faq/repositories/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
 
 nav:
     - Documentation home: "index.md"
@@ -671,7 +672,7 @@ nav:
           - Repositories:
                 - faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md
                 - faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md
-                - faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md
+                - faq/repositories/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md
                 - faq/repositories/how-do-i-reanalyze-my-repository.md
                 - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
                 - faq/repositories/i-moved-my-repository-on-the-git-provider.md
