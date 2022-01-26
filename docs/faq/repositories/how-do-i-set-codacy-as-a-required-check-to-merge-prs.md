@@ -1,5 +1,5 @@
 ---
-description: Configure your Git provider to block merging pull requests until they pass the Codacy analysis.
+description: Configure Codacy to block merging pull requests that don't meet your quality standards.
 ---
 
 # How do I set Codacy as a required check to merge pull requests?
