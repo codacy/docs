@@ -118,7 +118,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Dart</td>
-      <td><a href="https://github.com/dart-lang/sdk/tree/master/pkg/analyzer_cli#dartanalyzer">dartanalyzer</a></td>
+      <td><a href="https://github.com/dart-lang/sdk/tree/master/pkg/analyzer_cli">dartanalyzer</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
