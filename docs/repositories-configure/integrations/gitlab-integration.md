@@ -34,10 +34,14 @@ Depending on the options that you enable, Codacy will automatically update merge
 
 Adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your project.
 
-To get the coverage status you must [set up coverage on your repository](../../coverage-reporter/index.md) and enable the coverage rule on the quality settings.
-
+<!--NOTE Keep this admonition synced across all Git provider integrations -->
 !!! important
-    **If you want to block merging merge requests** that aren't up to standards you must also [configure GitLab to only allow merge requests to be merged if the pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds){: target="_blank"}.
+    **To get a status for coverage** you must also:
+    
+    -   [Add coverage to your repository](../../coverage-reporter/index.md)
+    -   Enable the rule **Coverage variation is under** on the [merge request quality gate](../../repositories-configure/adjusting-quality-settings.md#gates).
+
+    **To block merging merge requests** that aren't up to standards you must [configure GitLab to only allow merge requests to be merged if the pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds){: target="_blank"}.
 
 ![Merge request status on GitLab](images/gitlab-integration-pr-status.png)
 

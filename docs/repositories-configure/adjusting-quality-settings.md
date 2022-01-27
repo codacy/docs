@@ -23,6 +23,11 @@ These settings configure when Codacy reports pull requests and commits as not up
 -   **Duplication is over:** Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value. By default, this setting is off.
 -   **Coverage variation is under:** Pull requests or commits are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull requests or commits. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.
 
+    !!! note
+        Turn on the rule **Coverage variation is under** for Codacy to report the coverage status directly on your pull requests.
+        
+        For more details on how to enable pull request status, see [GitHub](../repositories-configure/integrations/github-integration.md#configuring-the-github-integration), [GitLab](../repositories-configure/integrations/gitlab-integration.md#configuring-the-gitlab-integration), or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#configuring-the-bitbucket-integration), depending on your Git provider.
+
 ## Goals
 
 These settings configure the quality goals for your repository, and which files Codacy considers complex or duplicated.
