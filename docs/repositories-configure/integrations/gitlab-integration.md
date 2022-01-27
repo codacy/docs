@@ -37,7 +37,7 @@ Adds a report to your merge requests showing whether your merge requests and cov
 <!--NOTE Keep this admonition synced across all Git provider integrations -->
 !!! important
     **To get a status for coverage** you must also:
-    
+
     -   [Add coverage to your repository](../../coverage-reporter/index.md)
     -   Enable the rule **Coverage variation is under** on the [merge request quality gate](../../repositories-configure/adjusting-quality-settings.md#gates).
 

@@ -12,7 +12,7 @@ To configure Codacy to block merging pull requests that don't meet your quality 
 
     !!! important
         **If you want to use code coverage data** to block merging pull requests that don't meet your standards, make sure that you:
-        
+
         -   [Add coverage to your repository](../../coverage-reporter/index.md)
         -   Enable the rule **Coverage variation is under** on the [pull request quality gate](../../repositories-configure/adjusting-quality-settings.md#gates)
 

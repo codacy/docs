@@ -41,7 +41,7 @@ Adds a report to your pull requests showing whether your pull requests and cover
 <!--NOTE Keep this admonition synced across all Git provider integrations -->
 !!! important
     **To get a status for coverage** you must also:
-    
+
     -   [Add coverage to your repository](../../coverage-reporter/index.md)
     -   Enable the rule **Coverage variation is under** on the [pull request quality gate](../../repositories-configure/adjusting-quality-settings.md#gates).
 

@@ -25,7 +25,7 @@ These settings configure when Codacy reports pull requests and commits as not up
 
     !!! note
         Turn on the rule **Coverage variation is under** for Codacy to report the coverage status directly on your pull requests.
-        
+
         For more details on how to enable pull request status, see [GitHub](../repositories-configure/integrations/github-integration.md#configuring-the-github-integration), [GitLab](../repositories-configure/integrations/gitlab-integration.md#configuring-the-gitlab-integration), or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#configuring-the-bitbucket-integration), depending on your Git provider.
 
 ## Goals
