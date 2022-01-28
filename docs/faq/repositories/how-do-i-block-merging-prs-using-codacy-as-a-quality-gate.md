@@ -48,14 +48,14 @@ To do this, follow the instructions for [GitHub](../../repositories-configure/in
 
 !!! important
     At this stage we recommend that you:
-    
+
     -   Validate that Codacy is reporting the intended status on your pull requests
     -   Double check you repository's [tool and code pattern settings](../../repositories-configure/configuring-code-patterns.md) and [quality gate settings](../../repositories-configure/adjusting-quality-settings.md)
-    
+
     This is important to eliminate any false positives that could inadvertently block the work of your team.
 
 Finally, follow the instructions from your Git provider to block merging pull requests if they don't pass the Codacy status check:
 
--  **GitHub:** [Set Codacy as a required status check](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule){: target="_blank"}
--  **GitLab:** [Only allow merge requests to be merged if the pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds){: target="_blank"}
-- **Bitbucket:** [configure Bitbucket to prevent a merge with unresolved merge checks](https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/){: target="_blank"}
+-   **GitHub:** [Set Codacy as a required status check](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule){: target="_blank"}
+-   **GitLab:** [Only allow merge requests to be merged if the pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds){: target="_blank"}
+-   **Bitbucket:** [configure Bitbucket to prevent a merge with unresolved merge checks](https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/){: target="_blank"}
