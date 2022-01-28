@@ -53,3 +53,7 @@ Adds comments on the lines of the merge request where Codacy finds new issues. C
 Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication.
 
 ![Merge request summary on GitLab](images/gitlab-integration-pr-summary.png)
+
+## See also
+
+-   [How do I block merging pull requests using Codacy as a quality gate?](../../faq/repositories/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)

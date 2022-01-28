@@ -42,3 +42,7 @@ Codacy displays the quality goals as dashed lines on the [quality evolution char
 -   **Duplication of files is over:** Defines the threshold displayed on the tab **Duplication** of the quality evolution chart.
 -   **File is duplicate when over:** A file is considered duplicated when it has more clones than this value.
 -   **Coverage is under:** Defines the threshold displayed on the tab **Coverage** of the quality evolution chart.
+
+## See also
+
+-   [How do I block merging pull requests using Codacy as a quality gate?](../faq/repositories/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)

@@ -343,3 +343,4 @@ The table below lists the configuration file names that Codacy detects and suppo
 
 -   [Applying a coding standard across multiple repositories](../organizations/using-a-coding-standard.md)
 -   [Copying code patterns between repositories](../organizations/copying-code-patterns-between-repositories.md)
+-   [How do I block merging pull requests using Codacy as a quality gate?](../faq/repositories/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)

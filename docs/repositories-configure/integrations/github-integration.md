@@ -78,3 +78,7 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
     -   Because of a limitation from GitHub, the author of the comments suggesting fixes is the user that enabled the GitHub integration and not Codacy.
 
     📢 [Activate suggested fixes now](#enabling) and [let us know](mailto:support@codacy.com?subject=Feedback on Suggest fixes) what you think!
+
+## See also
+
+-   [How do I block merging pull requests using Codacy as a quality gate?](../../faq/repositories/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
