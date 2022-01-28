@@ -39,7 +39,7 @@ We recommend that you spend some time reviewing the Codacy analysis settings to 
 
 Set up your repository so that Codacy reports the results of the analysis directly on your pull requests as status checks:
 
-To do this, follow the instructions for [GitHub](../../repositories-configure/integrations/github-integration.md#enabling), [GitLab](../../repositories-configure/integrations/gitlab-integration.md#enabled), or [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#enabled) depending on your Git provider, and make sure that you:
+To do this, follow the instructions for [GitHub](../../repositories-configure/integrations/github-integration.md#enabling), [GitLab](../../repositories-configure/integrations/gitlab-integration.md#enabling), or [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#enabling) depending on your Git provider, and make sure that you:
 
 1.  Enable the Git provider integration
 1.  Enable the option **Status checks** (GitHub) or **Pull request status** (GitLab and Bitbucket)
