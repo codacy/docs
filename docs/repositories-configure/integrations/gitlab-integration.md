@@ -34,7 +34,8 @@ Depending on the options that you enable, Codacy will automatically update merge
 
 Adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your project.
 
-<!--NOTE Keep this admonition synced across all Git provider integrations -->
+<!--NOTE
+    Keep the admonition below synced across all Git provider integrations-->
 !!! important
     **To get a status for coverage** you must also:
 
