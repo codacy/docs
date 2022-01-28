@@ -68,7 +68,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-gosec" class="skip-vale">codacy/codacy-gosec</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/dart-lang/sdk/tree/master/pkg/analyzer_cli#dartanalyzer">dartanalyzer</a></td>
+<td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a></td>
 <td><a href="https://github.com/codacy/codacy-dartanalyzer" class="skip-vale">codacy/codacy-dartanalyzer</a></td>
 </tr>
 <tr>
