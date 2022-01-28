@@ -99,6 +99,7 @@ coffeelint
 cppcheck
 credo
 csslint
+dartanalyzer
 detekt
 eslint
 flawfinder
