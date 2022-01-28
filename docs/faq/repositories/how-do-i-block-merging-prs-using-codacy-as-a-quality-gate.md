@@ -6,31 +6,56 @@ description: Configure Codacy to block merging pull requests that don't meet you
 
 You can block merging pull requests until they pass the Codacy quality gate. This ensures the quality of the changes to your codebase, such as to prevent introducing security issues or adding code that isn't covered by tests.
 
-To configure Codacy to block merging pull requests that don't meet your quality standards:
+To block merging pull requests that don't meet the quality standards of your team you must complete these main steps:
 
-1.  [Review and adjust your repository quality settings](../../repositories-configure/adjusting-quality-settings.md) to decide which pull requests won't pass the Codacy quality gate.
+1.  Adding coverage to your repository (optional)
+1.  Reviewing and adjusting the Codacy analysis settings
+1.  Enabling the Codacy pull request status checks
+1.  Configuring your Git provider to block merging pull requests
+
+The next sections include detailed instructions on how to complete each step.
+
+## 1. Adding coverage to your repository (optional) {: id="adding-coverage"}
+
+If you want to use code coverage to block merging pull requests that don't meet your quality standards, make sure that you [add coverage to your repository](../../coverage-reporter/index.md).
+
+It's important that you set up coverage beforehand because Codacy can only report the coverage status for pull requests after receiving reports for the last commits **on both the pull request branch and the target branch**.
+
+## 2. Reviewing and adjusting the Codacy analysis settings {: id="adjusting-analysis-settings"}
+
+We recommend that you spend some time reviewing the Codacy analysis settings to focus on the tools and code patterns that bring more value to your team. Importantly, this eliminates the risk of having false positives block the work of your team once you start using Codacy as a quality gate.
+
+1.  [Configure the tools and code patterns](../../repositories-configure/configuring-code-patterns.md) that Codacy uses to analyze your repository.
+
+    !!! tip
+        To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, [use an organization coding standard](../../organizations/using-a-coding-standard.md) instead.
+
+1.  [Review and adjust the quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository to decide which pull requests should fail the Codacy quality gate.
 
     !!! important
-        **If you want to use code coverage data** to block merging pull requests that don't meet your standards, make sure that you:
+        **If you want to use code coverage** to block merging pull requests that don't meet your standards, make sure that you enable the rule **Coverage variation is under**. This is required for Codacy to report the coverage status directly on your pull requests.
 
-        -   [Add coverage to your repository](../../coverage-reporter/index.md)
-        -   Enable the rule **Coverage variation is under** on the [pull request quality gate](../../repositories-configure/adjusting-quality-settings.md#gates)
+## 3. Enabling the Codacy pull request status checks {: id="enabling-status-checks"}
 
-1.  Set up your repository so that Codacy reports status checks for pull requests on your Git provider.
+Set up your repository so that Codacy reports the results of the analysis directly on your pull requests as status checks:
 
-    To do this, follow the instructions that apply to [GitHub](../../repositories-configure/integrations/github-integration.md#configuring-the-github-integration), [GitLab](../../repositories-configure/integrations/gitlab-integration.md#configuring-the-gitlab-integration), or [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#configuring-the-bitbucket-integration), depending on your Git provider.
+To do this, follow the instructions for [GitHub](../../repositories-configure/integrations/github-integration.md#enabling), [GitLab](../../repositories-configure/integrations/gitlab-integration.md#enabled), or [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#enabled) depending on your Git provider, and make sure that you:
 
-1.  Finally, configure **your Git provider** to block merging pull requests if they don't pass the Codacy status check:
+1.  Enable the Git provider integration
+1.  Enable the option **Status checks** (GitHub) or **Pull request status** (GitLab and Bitbucket)
 
-    | Git provider  | Instructions |
-    | ------------- | ------------ |
-    | **GitHub**    | [Set Codacy as a required status check](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule){: target="_blank"} |
-    | **GitLab**    | [Only allow merge requests to be merged if the pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds){: target="_blank"} |
-    | **Bitbucket** | [configure Bitbucket to prevent a merge with unresolved merge checks](https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/){: target="_blank"} |
+## 4. Configuring your Git provider to block merging pull requests {: id="configuring-git-provider"}
 
-<!--TODO
-    Add relevant pages here?
-    Or add links back to this page coming from the pages mentioned here?
+!!! important
+    At this stage we recommend that you:
+    
+    -   Validate that Codacy is reporting the intended status on your pull requests
+    -   Double check you repository's [tool and code pattern settings](../../repositories-configure/configuring-code-patterns.md) and [quality gate settings](../../repositories-configure/adjusting-quality-settings.md)
+    
+    This is important to eliminate any false positives that could inadvertently block the work of your team.
 
-## See also
--->
+Finally, follow the instructions from your Git provider to block merging pull requests if they don't pass the Codacy status check:
+
+-  **GitHub:** [Set Codacy as a required status check](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule){: target="_blank"}
+-  **GitLab:** [Only allow merge requests to be merged if the pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds){: target="_blank"}
+- **Bitbucket:** [configure Bitbucket to prevent a merge with unresolved merge checks](https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/){: target="_blank"}
