@@ -11,7 +11,7 @@
         <meta name="description" content="The Commits page displays an overview of the commits in your repository, such as the analysis status and the number of new and fixed issues for each commit. This allows you to monitor the evolution of the code quality in your repository per commit.">
       
       
-        <meta http-equiv="last-modified" content="2021-11-09 10:01:14">  
+        <meta http-equiv="last-modified" content="2022-02-01 13:29:39">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/commits/">
@@ -3156,6 +3156,11 @@
 <p>If a file had <a href="../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/">more than 50 issues reported by the same tool</a> and you push a new commit that fixes some of these issues, Codacy will report more issues until the limit of 50 issues. These issues will be possible issues if they're outside the lines of code changed in the current commit.</p>
 </li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>If you're using GitHub</strong> you may see <a href="../../repositories-configure/integrations/github-integration/#annotations">annotations</a>  for possible issues reported under <strong>Unchanged files with check annotations</strong> on the <strong>Files changed</strong> tab of your pull requests.</p>
+<p>This happens when Codacy reports possible issues in files that weren't changed in your pull request. <a href="https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/" target="_blank">Read more about this GitHub feature</a>.</p>
+</div>
               
               
                 
@@ -3304,7 +3309,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2022</span>
     
   </small>
 </div>
