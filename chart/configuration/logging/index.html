@@ -8,13 +8,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the Git provider integration no longer has permissions on the repository or that the SSH key is no longer valid.">
+        <meta name="description" content="Configure log levels and log retention periods for your Codacy Self-hosted instance.">
       
       
-        <meta http-equiv="last-modified" content="2021-09-06 10:23:24">  
+        <meta http-equiv="last-modified" content="2022-02-01 17:56:42">  
       
       
-        <link rel="canonical" href="https://docs.codacy.com/faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/">
+        <link rel="canonical" href="https://docs.codacy.com/chart/configuration/logging/">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Why did Codacy stop commenting on pull requests? - Codacy docs</title>
+        <title>Logging - Codacy docs</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#why-did-codacy-stop-commenting-on-pull-requests" class="md-skip">
+        <a href="#logging" class="md-skip">
           Skip to content
         </a>
       
@@ -1105,10 +1105,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" checked>
     
     <label class="md-nav__link" for="nav-9">
       Managing Codacy Self-hosted
@@ -1132,7 +1134,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/" title="Installing Codacy Self-hosted" class="md-nav__link">
+    <a href="../../" title="Installing Codacy Self-hosted" class="md-nav__link">
       Installing Codacy Self-hosted
     </a>
   </li>
@@ -1144,7 +1146,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/requirements/" title="System requirements" class="md-nav__link">
+    <a href="../../requirements/" title="System requirements" class="md-nav__link">
       System requirements
     </a>
   </li>
@@ -1181,7 +1183,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/infrastructure/eks-quickstart/" title="Creating an Amazon EKS cluster" class="md-nav__link">
+    <a href="../../infrastructure/eks-quickstart/" title="Creating an Amazon EKS cluster" class="md-nav__link">
       Creating an Amazon EKS cluster
     </a>
   </li>
@@ -1193,7 +1195,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/infrastructure/microk8s-quickstart/" title="Creating a MicroK8s cluster" class="md-nav__link">
+    <a href="../../infrastructure/microk8s-quickstart/" title="Creating a MicroK8s cluster" class="md-nav__link">
       Creating a MicroK8s cluster
     </a>
   </li>
@@ -1208,10 +1210,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9-4" type="checkbox" id="nav-9-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9-4" type="checkbox" id="nav-9-4" checked>
     
     <label class="md-nav__link" for="nav-9-4">
       Configuring Codacy
@@ -1260,7 +1264,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/configuration/integrations/github-cloud/" title="GitHub Cloud" class="md-nav__link">
+    <a href="../integrations/github-cloud/" title="GitHub Cloud" class="md-nav__link">
       GitHub Cloud
     </a>
   </li>
@@ -1272,7 +1276,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/configuration/integrations/github-enterprise/" title="GitHub Enterprise" class="md-nav__link">
+    <a href="../integrations/github-enterprise/" title="GitHub Enterprise" class="md-nav__link">
       GitHub Enterprise
     </a>
   </li>
@@ -1284,7 +1288,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/configuration/integrations/github-app-create/" title="Creating a GitHub App" class="md-nav__link">
+    <a href="../integrations/github-app-create/" title="Creating a GitHub App" class="md-nav__link">
       Creating a GitHub App
     </a>
   </li>
@@ -1296,7 +1300,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/configuration/integrations/gitlab-cloud/" title="GitLab Cloud" class="md-nav__link">
+    <a href="../integrations/gitlab-cloud/" title="GitLab Cloud" class="md-nav__link">
       GitLab Cloud
     </a>
   </li>
@@ -1308,7 +1312,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/configuration/integrations/gitlab-enterprise/" title="GitLab Enterprise" class="md-nav__link">
+    <a href="../integrations/gitlab-enterprise/" title="GitLab Enterprise" class="md-nav__link">
       GitLab Enterprise
     </a>
   </li>
@@ -1320,7 +1324,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/configuration/integrations/bitbucket-cloud/" title="Bitbucket Cloud" class="md-nav__link">
+    <a href="../integrations/bitbucket-cloud/" title="Bitbucket Cloud" class="md-nav__link">
       Bitbucket Cloud
     </a>
   </li>
@@ -1332,7 +1336,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/configuration/integrations/bitbucket-server/" title="Bitbucket Server" class="md-nav__link">
+    <a href="../integrations/bitbucket-server/" title="Bitbucket Server" class="md-nav__link">
       Bitbucket Server
     </a>
   </li>
@@ -1344,7 +1348,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/configuration/integrations/email/" title="SMTP server" class="md-nav__link">
+    <a href="../integrations/email/" title="SMTP server" class="md-nav__link">
       SMTP server
     </a>
   </li>
@@ -1361,7 +1365,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/configuration/monitoring/" title="Monitoring" class="md-nav__link">
+    <a href="../monitoring/" title="Monitoring" class="md-nav__link">
       Monitoring
     </a>
   </li>
@@ -1371,11 +1375,54 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../chart/configuration/logging/" title="Logging" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Logging
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Logging" class="md-nav__link md-nav__link--active">
       Logging
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#configuring-the-log-level" class="md-nav__link">
+    Configuring the log level
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#configuring-the-log-retention-period" class="md-nav__link">
+    Configuring the log retention period
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1415,7 +1462,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/maintenance/license/" title="Updating your Codacy license" class="md-nav__link">
+    <a href="../../maintenance/license/" title="Updating your Codacy license" class="md-nav__link">
       Updating your Codacy license
     </a>
   </li>
@@ -1427,7 +1474,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/maintenance/upgrade/" title="Upgrading Codacy" class="md-nav__link">
+    <a href="../../maintenance/upgrade/" title="Upgrading Codacy" class="md-nav__link">
       Upgrading Codacy
     </a>
   </li>
@@ -1439,7 +1486,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/maintenance/uninstall/" title="Uninstalling Codacy" class="md-nav__link">
+    <a href="../../maintenance/uninstall/" title="Uninstalling Codacy" class="md-nav__link">
       Uninstalling Codacy
     </a>
   </li>
@@ -1451,7 +1498,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/maintenance/database/" title="Database migration guide" class="md-nav__link">
+    <a href="../../maintenance/database/" title="Database migration guide" class="md-nav__link">
       Database migration guide
     </a>
   </li>
@@ -1493,7 +1540,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/troubleshoot/troubleshoot/" title="Troubleshooting Codacy" class="md-nav__link">
+    <a href="../../troubleshoot/troubleshoot/" title="Troubleshooting Codacy" class="md-nav__link">
       Troubleshooting Codacy
     </a>
   </li>
@@ -1505,7 +1552,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/troubleshoot/logs-collect/" title="Collecting logs for Support" class="md-nav__link">
+    <a href="../../troubleshoot/logs-collect/" title="Collecting logs for Support" class="md-nav__link">
       Collecting logs for Support
     </a>
   </li>
@@ -1517,7 +1564,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../chart/troubleshoot/k8s-cheatsheet/" title="Kubernetes cheatsheet" class="md-nav__link">
+    <a href="../../troubleshoot/k8s-cheatsheet/" title="Kubernetes cheatsheet" class="md-nav__link">
       Kubernetes cheatsheet
     </a>
   </li>
@@ -1537,12 +1584,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10" type="checkbox" id="nav-10">
     
     <label class="md-nav__link" for="nav-10">
       Troubleshooting and FAQs
@@ -1591,7 +1636,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/which-version-control-systems-does-codacy-support/" title="Which version control systems does Codacy support?" class="md-nav__link">
+    <a href="../../../faq/general/which-version-control-systems-does-codacy-support/" title="Which version control systems does Codacy support?" class="md-nav__link">
       Which version control systems does Codacy support?
     </a>
   </li>
@@ -1603,7 +1648,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/which-browsers-does-codacy-support/" title="Which browsers does Codacy support?" class="md-nav__link">
+    <a href="../../../faq/general/which-browsers-does-codacy-support/" title="Which browsers does Codacy support?" class="md-nav__link">
       Which browsers does Codacy support?
     </a>
   </li>
@@ -1615,7 +1660,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/how-does-codacy-support-gitlab-cloud/" title="How does Codacy support GitLab Cloud?" class="md-nav__link">
+    <a href="../../../faq/general/how-does-codacy-support-gitlab-cloud/" title="How does Codacy support GitLab Cloud?" class="md-nav__link">
       How does Codacy support GitLab Cloud?
     </a>
   </li>
@@ -1627,7 +1672,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/how-does-codacy-support-gitlab-enterprise/" title="How does Codacy support GitLab Enterprise?" class="md-nav__link">
+    <a href="../../../faq/general/how-does-codacy-support-gitlab-enterprise/" title="How does Codacy support GitLab Enterprise?" class="md-nav__link">
       How does Codacy support GitLab Enterprise?
     </a>
   </li>
@@ -1639,7 +1684,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/how-does-codacy-support-bitbucket-cloud/" title="How does Codacy support Bitbucket Cloud?" class="md-nav__link">
+    <a href="../../../faq/general/how-does-codacy-support-bitbucket-cloud/" title="How does Codacy support Bitbucket Cloud?" class="md-nav__link">
       How does Codacy support Bitbucket Cloud?
     </a>
   </li>
@@ -1651,7 +1696,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/how-does-codacy-support-bitbucket-server/" title="How does Codacy support Bitbucket Server?" class="md-nav__link">
+    <a href="../../../faq/general/how-does-codacy-support-bitbucket-server/" title="How does Codacy support Bitbucket Server?" class="md-nav__link">
       How does Codacy support Bitbucket Server?
     </a>
   </li>
@@ -1663,7 +1708,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/how-does-codacy-keep-my-data-secure/" title="How does Codacy keep my data secure?" class="md-nav__link">
+    <a href="../../../faq/general/how-does-codacy-keep-my-data-secure/" title="How does Codacy keep my data secure?" class="md-nav__link">
       How does Codacy keep my data secure?
     </a>
   </li>
@@ -1675,7 +1720,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/how-does-codacy-protect-my-privacy/" title="How does Codacy protect my privacy?" class="md-nav__link">
+    <a href="../../../faq/general/how-does-codacy-protect-my-privacy/" title="How does Codacy protect my privacy?" class="md-nav__link">
       How does Codacy protect my privacy?
     </a>
   </li>
@@ -1687,7 +1732,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/why-cant-i-see-my-organization/" title="Why can't I see my organization?" class="md-nav__link">
+    <a href="../../../faq/general/why-cant-i-see-my-organization/" title="Why can't I see my organization?" class="md-nav__link">
       Why can't I see my organization?
     </a>
   </li>
@@ -1699,7 +1744,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/" title="How do I block merging pull requests using Codacy as a quality gate?" class="md-nav__link">
+    <a href="../../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/" title="How do I block merging pull requests using Codacy as a quality gate?" class="md-nav__link">
       How do I block merging pull requests using Codacy as a quality gate?
     </a>
   </li>
@@ -1711,7 +1756,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/how-do-i-allowlist-codacy-cloud-on-my-git-provider/" title="How do I allowlist Codacy Cloud on my Git provider?" class="md-nav__link">
+    <a href="../../../faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider/" title="How do I allowlist Codacy Cloud on my Git provider?" class="md-nav__link">
       How do I allowlist Codacy Cloud on my Git provider?
     </a>
   </li>
@@ -1723,7 +1768,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/how-do-i-change-my-email-address-on-codacy/" title="How do I change my email address on Codacy?" class="md-nav__link">
+    <a href="../../../faq/general/how-do-i-change-my-email-address-on-codacy/" title="How do I change my email address on Codacy?" class="md-nav__link">
       How do I change my email address on Codacy?
     </a>
   </li>
@@ -1735,7 +1780,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../general/how-can-i-change-or-cancel-my-plan/" title="How can I change or cancel my plan?" class="md-nav__link">
+    <a href="../../../faq/general/how-can-i-change-or-cancel-my-plan/" title="How can I change or cancel my plan?" class="md-nav__link">
       How can I change or cancel my plan?
     </a>
   </li>
@@ -1777,7 +1822,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories/what-are-the-different-grades-and-how-are-they-calculated/" title="What are the different grades and how are they calculated?" class="md-nav__link">
+    <a href="../../../faq/repositories/what-are-the-different-grades-and-how-are-they-calculated/" title="What are the different grades and how are they calculated?" class="md-nav__link">
       What are the different grades and how are they calculated?
     </a>
   </li>
@@ -1789,7 +1834,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories/why-cant-i-see-or-add-my-organizations-repositories/" title="Why can't I see or add my organization's repositories?" class="md-nav__link">
+    <a href="../../../faq/repositories/why-cant-i-see-or-add-my-organizations-repositories/" title="Why can't I see or add my organization's repositories?" class="md-nav__link">
       Why can't I see or add my organization's repositories?
     </a>
   </li>
@@ -1801,7 +1846,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories/how-do-i-reanalyze-my-repository/" title="How do I reanalyze my repository?" class="md-nav__link">
+    <a href="../../../faq/repositories/how-do-i-reanalyze-my-repository/" title="How do I reanalyze my repository?" class="md-nav__link">
       How do I reanalyze my repository?
     </a>
   </li>
@@ -1813,7 +1858,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories/i-renamed-my-repository-on-the-git-provider/" title="I renamed my repository on the Git provider" class="md-nav__link">
+    <a href="../../../faq/repositories/i-renamed-my-repository-on-the-git-provider/" title="I renamed my repository on the Git provider" class="md-nav__link">
       I renamed my repository on the Git provider
     </a>
   </li>
@@ -1825,7 +1870,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories/i-moved-my-repository-on-the-git-provider/" title="I moved my repository on the Git provider" class="md-nav__link">
+    <a href="../../../faq/repositories/i-moved-my-repository-on-the-git-provider/" title="I moved my repository on the Git provider" class="md-nav__link">
       I moved my repository on the Git provider
     </a>
   </li>
@@ -1867,7 +1912,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../code-analysis/does-codacy-place-limits-on-the-code-analysis/" title="Does Codacy place limits on the code analysis?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/" title="Does Codacy place limits on the code analysis?" class="md-nav__link">
       Does Codacy place limits on the code analysis?
     </a>
   </li>
@@ -1879,7 +1924,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../code-analysis/does-codacy-check-for-dependencies/" title="Does Codacy check for dependencies?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/does-codacy-check-for-dependencies/" title="Does Codacy check for dependencies?" class="md-nav__link">
       Does Codacy check for dependencies?
     </a>
   </li>
@@ -1891,7 +1936,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../code-analysis/how-does-codacy-measure-complexity-in-my-repository/" title="How does Codacy measure complexity in my repository?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository/" title="How does Codacy measure complexity in my repository?" class="md-nav__link">
       How does Codacy measure complexity in my repository?
     </a>
   </li>
@@ -1903,7 +1948,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed/" title="How long does it take for my repository to be analyzed?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed/" title="How long does it take for my repository to be analyzed?" class="md-nav__link">
       How long does it take for my repository to be analyzed?
     </a>
   </li>
@@ -1915,7 +1960,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../code-analysis/how-to-skip-an-analysis/" title="How to skip an analysis?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/how-to-skip-an-analysis/" title="How to skip an analysis?" class="md-nav__link">
       How to skip an analysis?
     </a>
   </li>
@@ -1927,7 +1972,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../code-analysis/how-to-configure-php-codesniffer-coding-standards/" title="How to configure PHP_CodeSniffer coding standards?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/how-to-configure-php-codesniffer-coding-standards/" title="How to configure PHP_CodeSniffer coding standards?" class="md-nav__link">
       How to configure PHP_CodeSniffer coding standards?
     </a>
   </li>
@@ -1942,12 +1987,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10-4" type="checkbox" id="nav-10-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-10-4" type="checkbox" id="nav-10-4">
     
     <label class="md-nav__link" for="nav-10-4">
       Troubleshooting
@@ -1969,47 +2012,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Why did Codacy stop commenting on pull requests?
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Why did Codacy stop commenting on pull requests?" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/" title="Why did Codacy stop commenting on pull requests?" class="md-nav__link">
       Why did Codacy stop commenting on pull requests?
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#see-also" class="md-nav__link">
-    See also
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -2019,7 +2026,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../why-arent-duplication-metrics-being-calculated/" title="Why aren't duplication metrics being calculated?" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/why-arent-duplication-metrics-being-calculated/" title="Why aren't duplication metrics being calculated?" class="md-nav__link">
       Why aren't duplication metrics being calculated?
     </a>
   </li>
@@ -2031,7 +2038,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../why-isnt-my-public-repository-being-analyzed/" title="Why isn't my public repository being analyzed?" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/why-isnt-my-public-repository-being-analyzed/" title="Why isn't my public repository being analyzed?" class="md-nav__link">
       Why isn't my public repository being analyzed?
     </a>
   </li>
@@ -2043,7 +2050,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../not-a-member-of-the-organization/" title="Not a member of the organization" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/not-a-member-of-the-organization/" title="Not a member of the organization" class="md-nav__link">
       Not a member of the organization
     </a>
   </li>
@@ -2055,7 +2062,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../we-no-longer-have-access-to-this-repository/" title="We no longer have access to this repository, check your SSH keys" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/we-no-longer-have-access-to-this-repository/" title="We no longer have access to this repository, check your SSH keys" class="md-nav__link">
       We no longer have access to this repository, check your SSH keys
     </a>
   </li>
@@ -2067,7 +2074,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../why-is-my-file-over-150-kb-missing/" title="Why is my file over 150 KB missing?" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/why-is-my-file-over-150-kb-missing/" title="Why is my file over 150 KB missing?" class="md-nav__link">
       Why is my file over 150 KB missing?
     </a>
   </li>
@@ -2079,7 +2086,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../error-line-endings/" title="Error caused by incompatible line endings" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/error-line-endings/" title="Error caused by incompatible line endings" class="md-nav__link">
       Error caused by incompatible line endings
     </a>
   </li>
@@ -3119,51 +3126,91 @@
                   
                 
                 
-                <h1 id="why-did-codacy-stop-commenting-on-pull-requests">Why did Codacy stop commenting on pull requests?<a class="headerlink" href="#why-did-codacy-stop-commenting-on-pull-requests" title="Permanent link">#</a></h1>
-<p>Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the Git provider integration no longer has permissions on the repository or that the SSH key is no longer valid.</p>
-<p>To fix this issue and also avoid future disruptions, Codacy recommends that you re-enable the Git provider integration on Codacy using a dedicated service account on your Git provider:</p>
+                <h1 id="logging">Logging<a class="headerlink" href="#logging" title="Permanent link">#</a></h1>
+<p>Currently, Codacy Self-hosted supports two types of log configurations:</p>
+<ul>
+<li><strong><a href="#configuring-the-log-level">Log level</a>:</strong> The severity of the messages that will be shown in logs.</li>
+<li><strong><a href="#configuring-the-log-retention-period">Log retention period</a>:</strong> The period during which logs will be stored, before being removed by the cleanup job specified in the configuration.</li>
+</ul>
+<p>The sections below provide instructions on how to configure each logging configuration.</p>
+<h2 id="configuring-the-log-level">Configuring the log level<a class="headerlink" href="#configuring-the-log-level" title="Permanent link">#</a></h2>
+<p>The log level defines the minimum severity of the events contained in the logs, and affects the necessary storage space in MinIO.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>We recommend that you don't use a log level lower than WARN, as the logs are useful to troubleshoot any issues in your Codacy Self-hosted instance.</p>
+</div>
+<p>Codacy supports configuring the log level of the following components:</p>
+<ul>
+<li><code>codacy-api</code></li>
+<li><code>engine</code></li>
+<li><code>listener</code></li>
+<li><code>worker-manager</code></li>
+</ul>
+<p>Follow these instructions to configure the log level: </p>
 <ol>
 <li>
-<p>Create a service account on your Git provider exclusively dedicated to integrating Codacy with your repositories.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The service account must have <strong>administrator permissions</strong> on the repositories to integrate with Codacy and <strong>must not be shared by other systems</strong> to ensure that Codacy doesn't hit the API rate limits of the Git provider when using this account.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Using a dedicated service account also has the advantage of any pull request comments made by Codacy appearing as authored by the service account instead of by a regular organization member. You can name this account "Codacy" and use <a href="https://avatars.githubusercontent.com/u/1834093" target="_blank">this Codacy logo</a> as the account picture so that your pull request comments look like the following example:</p>
-<p><img alt="Suggest fix comment on GitHub" src="../../../repositories-configure/integrations/images/github-integration-suggest-fixes.png" /></p>
-</div>
-</li>
-<li>
-<p>Log out of both your Git provider and of Codacy.</p>
-</li>
-<li>
-<p>Log in to Codacy using the new service account.</p>
-</li>
-<li>
-<p>Open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>, and click the trash can icon to remove the existing Git provider integration:</p>
-<p><img alt="Removing the old Git provider integration" src="../images/git-provider-integration-remove.png" /></p>
-</li>
-<li>
-<p>Re-enable the integration by following the instructions for your Git provider:</p>
+<p>Edit the value of <code>&lt;COMPONENT&gt;.config.logLevel</code> in the <code>values-production.yaml</code> file that is used to install Codacy, as shown in the example below.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">worker-manager</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">replicaCount</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">2</span><span class="w"></span>
+<span class="w">  </span><span class="nt">config</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">logLevel</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">WARN</span><span class="w"></span>
+<span class="w">  </span><span class="nt">resources</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">limits</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">cpu</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">500m</span><span class="w"></span>
+<span class="w">      </span><span class="nt">memory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">1000Mi</span><span class="w"></span>
+<span class="w">    </span><span class="nt">requests</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">cpu</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">200m</span><span class="w"></span>
+<span class="w">      </span><span class="nt">memory</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">200Mi</span><span class="w"></span>
+</code></pre></div>
+<p>The list of supported values for <code>logLevel</code> is shown below. Note that each level also prints the information of the levels higher than it:</p>
 <ul>
-<li>
-<p><a href="../../../repositories-configure/integrations/github-integration/#enabling">Enabling the GitHub integration</a></p>
-</li>
-<li>
-<p><a href="../../../repositories-configure/integrations/gitlab-integration/#enabling">Enabling the GitLab integration</a></p>
-</li>
-<li>
-<p><a href="../../../repositories-configure/integrations/bitbucket-integration/#enabling">Enabling the Bitbucket integration</a></p>
-</li>
+<li><strong>DEBUG (default):</strong> Logs detailed information on the flow through the system. <strong>This is the most verbose level</strong>.</li>
+<li><strong>INFO:</strong> Logs interesting events such as application startup and shutdown, important events on the flow of the system, or behavior that is skipped for expected reasons.</li>
+<li><strong>WARN:</strong> Logs runtime events that are unexpected, or undesirable, but not necessarily wrong such as the use of deprecated APIs.</li>
+<li><strong>ERROR:</strong> Only logs runtime errors, or unexpected conditions that prevent the expected behavior from happening. <strong>This is the least verbose level</strong>.</li>
 </ul>
+</li>
+<li>
+<p>Apply the new configuration by performing a Helm upgrade. To do so execute the command <a href="../../#helm-upgrade">used to install Codacy</a>:</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you're using MicroK8s</strong> you must use the file <code>values-microk8s.yaml</code> together with the file <code>values-production.yaml</code>.</p>
+<p>To do this, uncomment the last line before running the <code>helm upgrade</code> command below.</p>
+</div>
+<div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span> <span class="se">\</span>
+             --version <span class="m">5</span>.1.0 <span class="se">\</span>
+             --values values-production.yaml <span class="se">\</span>
+             <span class="c1"># --values values-microk8s.yaml</span>
+</code></pre></div>
 </li>
 </ol>
-<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
-<ul>
-<li><a href="../we-no-longer-have-access-to-this-repository/">We no longer have access to this repository, check your SSH keys</a></li>
-</ul>
+<h2 id="configuring-the-log-retention-period">Configuring the log retention period<a class="headerlink" href="#configuring-the-log-retention-period" title="Permanent link">#</a></h2>
+<p>The log retention period is the number of days during which logs will be stored before being removed by the <a href="https://docs.min.io/docs/minio-bucket-lifecycle-guide.html" target="_blank">MinIO bucket lifecycle configuration policy</a> that we provide in the template <a href="https://github.com/codacy/chart/blob/master/codacy/templates/fluentd/lifecycle-police-job.yaml">lifecycle-police-job.yaml</a>.</p>
+<p>Follow these instructions to configure the log retention period:</p>
+<ol>
+<li>
+<p>Adjust the retention period of your logs by editing the value of <code>fluentdoperator.expirationDays</code> in the <code>values.yaml</code> file, as shown in the example below.</p>
+<div class="highlight"><pre><span></span><code><span class="nt">fluentdoperator</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">  </span><span class="nt">defaultConfigmap</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">codacy-fluentd-config</span><span class="w"></span>
+<span class="w">  </span><span class="nt">bucketName</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">logs</span><span class="w"></span>
+<span class="w">  </span><span class="nt">expirationDays</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7</span><span class="w"></span>
+</code></pre></div>
+</li>
+<li>
+<p>Apply the new configuration by performing a Helm upgrade. To do so execute the command <a href="../../#helm-upgrade">used to install Codacy</a>:</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you're using MicroK8s</strong> you must use the file <code>values-microk8s.yaml</code> together with the file <code>values-production.yaml</code>.</p>
+<p>To do this, uncomment the last line before running the <code>helm upgrade</code> command below.</p>
+</div>
+<div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span> <span class="se">\</span>
+             --version <span class="m">5</span>.1.0 <span class="se">\</span>
+             --values values-production.yaml <span class="se">\</span>
+             <span class="c1"># --values values-microk8s.yaml</span>
+</code></pre></div>
+</li>
+</ol>
               
               
                 
@@ -3207,7 +3254,7 @@
           <br>
         </div>
         <p>
-          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Why did Codacy stop commenting on pull requests?%22">create a more detailed issue on our GitHub repository</a>.
+          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Logging%22">create a more detailed issue on our GitHub repository</a>.
         </p>
       </div>
     </div>
@@ -3215,7 +3262,7 @@
       Thanks for helping improve the Codacy documentation.
     </p>
     <p>
-      If you have a question or need help, you can <a href="https://community.codacy.com/">try looking for answers on our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Why did Codacy stop commenting on pull requests?">support@codacy.com</a>.
+      If you have a question or need help, you can <a href="https://community.codacy.com/">try looking for answers on our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Logging">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -3312,7 +3359,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 6, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2022</span>
     
   </small>
 </div>

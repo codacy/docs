@@ -5,6 +5,7 @@ https://docs.codacy.com/account/emails/,"To manage the email addresses associate
 https://docs.codacy.com/account/managing-your-profile/,"To manage your profile information such as your name and avatar, click on your avatar on the top right-hand corner and select Your account."
 https://docs.codacy.com/chart/,Install and configure Codacy Self-hosted on Kubernetes or MicroK8s.
 https://docs.codacy.com/chart/requirements/,Before installing Codacy Self-hosted you must ensure that you have your infrastructure correctly provisioned and configured.
+https://docs.codacy.com/chart/configuration/logging/,Configure log levels and log retention periods for your Codacy Self-hosted instance.
 https://docs.codacy.com/chart/configuration/monitoring/,Instructions on how to set up monitoring for your Codacy Self-hosted instance.
 https://docs.codacy.com/chart/configuration/integrations/bitbucket-cloud/,Instructions on how to set up the Codacy Self-hosted integration with Bitbucket Cloud.
 https://docs.codacy.com/chart/configuration/integrations/bitbucket-server/,Instructions on how to set up the Codacy Self-hosted integration with Bitbucket Server.
