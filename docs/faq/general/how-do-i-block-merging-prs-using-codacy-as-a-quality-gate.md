@@ -39,7 +39,7 @@ We recommend that you spend some time reviewing the Codacy analysis settings to 
     !!! important
         **If you want to use code coverage** to block merging pull requests that don't meet your standards, make sure that you enable the rule **Coverage variation is under**. This is required for Codacy to report the coverage status directly on your pull requests.
 
-    ![Adjusting the quality settings](../../repositories-configure/images/quality-settings.png)    
+    ![Adjusting the quality settings](../../repositories-configure/images/quality-settings.png)
 
 ## 3. Enabling the Codacy pull request status checks {: id="enabling-status-checks"}
 
