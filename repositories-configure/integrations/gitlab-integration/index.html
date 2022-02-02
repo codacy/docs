@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the GitLab integration to have merge request status, comments, and analysis summaries from Codacy directly on merge requests.">
       
       
-        <meta http-equiv="last-modified" content="2021-09-06 10:23:24">  
+        <meta http-equiv="last-modified" content="2022-02-02 11:56:45">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/gitlab-integration/">
@@ -461,6 +461,13 @@
         <li class="md-nav__item md-nav__item--toc">
   <a href="#configuring-the-gitlab-integration" class="md-nav__link">
     Configuring the GitLab integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#see-also" class="md-nav__link">
+    See also
   </a>
   
 </li>
@@ -1732,8 +1739,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../faq/general/how-do-i-change-my-email-address-on-codacy/" title="How do I change my email address on Codacy?" class="md-nav__link">
-      How do I change my email address on Codacy?
+    <a href="../../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/" title="How do I block merging pull requests using Codacy as a quality gate?" class="md-nav__link">
+      How do I block merging pull requests using Codacy as a quality gate?
     </a>
   </li>
 
@@ -1746,6 +1753,18 @@
   <li class="md-nav__item">
     <a href="../../../faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider/" title="How do I allowlist Codacy Cloud on my Git provider?" class="md-nav__link">
       How do I allowlist Codacy Cloud on my Git provider?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../faq/general/how-do-i-change-my-email-address-on-codacy/" title="How do I change my email address on Codacy?" class="md-nav__link">
+      How do I change my email address on Codacy?
     </a>
   </li>
 
@@ -1812,18 +1831,6 @@
   <li class="md-nav__item">
     <a href="../../../faq/repositories/why-cant-i-see-or-add-my-organizations-repositories/" title="Why can't I see or add my organization's repositories?" class="md-nav__link">
       Why can't I see or add my organization's repositories?
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/" title="How do I set Codacy as a required check to merge pull requests?" class="md-nav__link">
-      How do I set Codacy as a required check to merge pull requests?
     </a>
   </li>
 
@@ -3140,14 +3147,27 @@
 <p>To configure the GitLab integration, open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
 <p>Depending on the options that you enable, Codacy will automatically update merge requests on GitLab with extra information when accepting merge requests:</p>
 <h3 id="pull-request-status">Pull Request Status<a class="headerlink" href="#pull-request-status" title="Permanent link">#</a></h3>
-<p>Adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the <a href="../../adjusting-quality-settings/">quality settings</a> of your project. To see the coverage status, ensure that you enable the option <strong>Coverage</strong> in the quality settings.</p>
+<p>Adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the <a href="../../adjusting-quality-settings/">quality settings</a> of your project.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>To get a status for coverage</strong> you must also:</p>
+<ul>
+<li><a href="../../../coverage-reporter/">Add coverage to your repository</a></li>
+<li>Enable the rule <strong>Coverage variation is under</strong> on the <a href="../../adjusting-quality-settings/#gates">pull request quality gate</a>.</li>
+</ul>
+<p><strong>To block merging merge requests</strong> that aren't up to standards see <a href="../../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/">How do I block merging pull requests using Codacy as a quality gate?</a></p>
+</div>
 <p><img alt="Merge request status on GitLab" src="../images/gitlab-integration-pr-status.png" /></p>
 <h3 id="pull-request-comment">Pull Request Comment<a class="headerlink" href="#pull-request-comment" title="Permanent link">#</a></h3>
 <p>Adds comments on the lines of the merge request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them.</p>
 <p><img alt="Merge request comment on GitLab" src="../images/gitlab-integration-pr-comment.png" /></p>
 <h3 id="pull-request-summary">Pull Request Summary<a class="headerlink" href="#pull-request-summary" title="Permanent link">#</a></h3>
 <p>Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication.</p>
-<p><img alt="Merge request summary on Bitbucket" src="../images/gitlab-integration-pr-summary.png" /></p>
+<p><img alt="Merge request summary on GitLab" src="../images/gitlab-integration-pr-summary.png" /></p>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="../../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/">How do I block merging pull requests using Codacy as a quality gate?</a></li>
+</ul>
               
               
                 
@@ -3296,7 +3316,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 6, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 2, 2022</span>
     
   </small>
 </div>

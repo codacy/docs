@@ -11,7 +11,7 @@
         <meta name="description" content="The Quality settings allow you to configure quality gates for your pull requests and commits, and define quality goals that help you monitor the progress of the code quality in your repository dashboard.">
       
       
-        <meta http-equiv="last-modified" content="2021-11-08 09:23:16">  
+        <meta http-equiv="last-modified" content="2022-02-02 11:56:45">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/adjusting-quality-settings/">
@@ -560,6 +560,13 @@
         <li class="md-nav__item md-nav__item--toc">
   <a href="#goals" class="md-nav__link">
     Goals
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#see-also" class="md-nav__link">
+    See also
   </a>
   
 </li>
@@ -1730,8 +1737,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/general/how-do-i-change-my-email-address-on-codacy/" title="How do I change my email address on Codacy?" class="md-nav__link">
-      How do I change my email address on Codacy?
+    <a href="../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/" title="How do I block merging pull requests using Codacy as a quality gate?" class="md-nav__link">
+      How do I block merging pull requests using Codacy as a quality gate?
     </a>
   </li>
 
@@ -1744,6 +1751,18 @@
   <li class="md-nav__item">
     <a href="../../faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider/" title="How do I allowlist Codacy Cloud on my Git provider?" class="md-nav__link">
       How do I allowlist Codacy Cloud on my Git provider?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faq/general/how-do-i-change-my-email-address-on-codacy/" title="How do I change my email address on Codacy?" class="md-nav__link">
+      How do I change my email address on Codacy?
     </a>
   </li>
 
@@ -1810,18 +1829,6 @@
   <li class="md-nav__item">
     <a href="../../faq/repositories/why-cant-i-see-or-add-my-organizations-repositories/" title="Why can't I see or add my organization's repositories?" class="md-nav__link">
       Why can't I see or add my organization's repositories?
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/" title="How do I set Codacy as a required check to merge pull requests?" class="md-nav__link">
-      How do I set Codacy as a required check to merge pull requests?
     </a>
   </li>
 
@@ -3119,9 +3126,9 @@
 <p>The following sections explain the settings in detail.</p>
 <h2 id="gates">Gates<a class="headerlink" href="#gates" title="Permanent link">#</a></h2>
 <p>These settings configure when Codacy reports pull requests and commits as not up to standards.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>After enabling these settings you can <a href="../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/">set Codacy as a required check</a> before merging your pull requests.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you want to block merging pull requests</strong> that aren't up to standards see <a href="../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/">How do I block merging pull requests using Codacy as a quality gate?</a></p>
 </div>
 <p><img alt="Quality gates" src="../images/quality-settings-gates.png" /></p>
 <ul>
@@ -3129,7 +3136,14 @@
 <li><strong>New security issues are over:</strong> Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value. By default, this setting is off.</li>
 <li><strong>Complexity is over:</strong> Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value. By default, this setting is off.</li>
 <li><strong>Duplication is over:</strong> Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value. By default, this setting is off.</li>
-<li><strong>Coverage variation is under:</strong> Pull requests or commits are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull requests or commits. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.</li>
+<li>
+<p><strong>Coverage variation is under:</strong> Pull requests or commits are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull requests or commits. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Turn on the rule <strong>Coverage variation is under</strong> for Codacy to report the coverage status directly on your pull requests.</p>
+<p>For more details on how to enable pull request status, see <a href="../integrations/github-integration/#configuring-the-github-integration">GitHub</a>, <a href="../integrations/gitlab-integration/#configuring-the-gitlab-integration">GitLab</a>, or <a href="../integrations/bitbucket-integration/#configuring-the-bitbucket-integration">Bitbucket</a>, depending on your Git provider.</p>
+</div>
+</li>
 </ul>
 <h2 id="goals">Goals<a class="headerlink" href="#goals" title="Permanent link">#</a></h2>
 <p>These settings configure the quality goals for your repository, and which files Codacy considers complex or duplicated.</p>
@@ -3142,6 +3156,10 @@
 <li><strong>Duplication of files is over:</strong> Defines the threshold displayed on the tab <strong>Duplication</strong> of the quality evolution chart.</li>
 <li><strong>File is duplicate when over:</strong> A file is considered duplicated when it has more clones than this value.</li>
 <li><strong>Coverage is under:</strong> Defines the threshold displayed on the tab <strong>Coverage</strong> of the quality evolution chart.</li>
+</ul>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/">How do I block merging pull requests using Codacy as a quality gate?</a></li>
 </ul>
               
               
@@ -3291,7 +3309,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 8, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 2, 2022</span>
     
   </small>
 </div>
