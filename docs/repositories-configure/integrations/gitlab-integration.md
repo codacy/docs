@@ -32,7 +32,13 @@ Depending on the options that you enable, Codacy will automatically update merge
 
 ### Pull Request Status
 
-Adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your project. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings.
+Adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your project.
+
+{%
+    include-markdown "../../assets/includes/status-checks-important.md"
+    start="<!--start-gitlab-->"
+    end="<!--end-gitlab-->"
+%}
 
 ![Merge request status on GitLab](images/gitlab-integration-pr-status.png)
 
@@ -46,4 +52,8 @@ Adds comments on the lines of the merge request where Codacy finds new issues. C
 
 Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication.
 
-![Merge request summary on Bitbucket](images/gitlab-integration-pr-summary.png)
+![Merge request summary on GitLab](images/gitlab-integration-pr-summary.png)
+
+## See also
+
+-   [How do I block merging pull requests using Codacy as a quality gate?](../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
