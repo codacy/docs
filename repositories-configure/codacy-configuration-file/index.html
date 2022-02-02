@@ -11,7 +11,7 @@
         <meta name="description" content="Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages.">
       
       
-        <meta http-equiv="last-modified" content="2022-02-02 15:28:45">  
+        <meta http-equiv="last-modified" content="2022-02-02 19:22:37">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/codacy-configuration-file/">
@@ -3366,7 +3366,11 @@ tsqllint
 <li><strong>Ignore annotations:</strong> Ignore language annotations when comparing text</li>
 <li><strong>Ignore <span class="skip-vale">usings</span>:</strong> Ignore <code>using</code> directives in C# when comparing text</li>
 </ul>
-<p>To use a different minimum token length or disable any of the default options, add your settings to the Codacy configuration file based on the example template below:</p>
+<p>To use a different minimum token length or disable any of the default options, add your settings to the Codacy configuration file based on the example template below.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you configure <code>minTokenMatch</code> on the Codacy configuration file, Codacy will use that value for all languages.</p>
+</div>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
 <span class="nt">engines</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="nt">duplication</span><span class="p">:</span><span class="w"></span>
@@ -3377,10 +3381,6 @@ tsqllint
 <span class="w">    </span><span class="nt">ignoreAnnotations</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
 <span class="w">    </span><span class="nt">ignoreUsings</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span><span class="w"></span>
 </code></pre></div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>If you configure <code>minTokenMatch</code> on the Codacy configuration file, Codacy will use that value for all languages.</p>
-</div>
               
               
                 
