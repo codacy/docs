@@ -13,7 +13,7 @@ The following sections explain the settings in detail.
 These settings configure when Codacy reports pull requests and commits as not up to standards.
 
 !!! important
-    **If you want to block merging pull requests** that aren't up to standards see [How do I block merging pull requests using Codacy as a quality gate?](../faq/repositories/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
+    **If you want to block merging pull requests** that aren't up to standards see [How do I block merging pull requests using Codacy as a quality gate?](../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
 
 ![Quality gates](images/quality-settings-gates.png)
 
@@ -45,4 +45,4 @@ Codacy displays the quality goals as dashed lines on the [quality evolution char
 
 ## See also
 
--   [How do I block merging pull requests using Codacy as a quality gate?](../faq/repositories/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
+-   [How do I block merging pull requests using Codacy as a quality gate?](../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
