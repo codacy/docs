@@ -61,7 +61,7 @@ description: Documentation homepage for the Codacy automated code review tool.
     </div>
     <div class="tc-content">
       <div>Using the Codacy API</div>
-      <div>Programmatically retrieve and analyze data from Codacy and perform configuration changes</div>
+      <div>Retrieve and analyze data from Codacy and perform configuration changes programmatically</div>
     </div>
   </a>
 </div>
