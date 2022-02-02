@@ -399,7 +399,6 @@ plugins:
               "Chart/configuration/integrations/email.md": "chart/configuration/integrations/email.md"
               "Chart/configuration/tls-ingress.md": "index.md"
               "Chart/configuration/monitoring.md": "chart/configuration/monitoring.md"
-              "Chart/configuration/logging.md": "chart/configuration/logging.md"
               "Chart/maintenance/upgrade.md": "chart/maintenance/upgrade.md"
               "Chart/maintenance/uninstall.md": "chart/maintenance/uninstall.md"
               "Chart/maintenance/database.md": "chart/maintenance/database.md"
