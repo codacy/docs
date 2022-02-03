@@ -36,10 +36,13 @@ Depending on the options that you enable, Codacy will automatically update pull 
 
 ### Status checks
 
-Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository. To see the coverage status check, ensure that you enable the option **Coverage** in the quality settings.
+Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository.
 
-!!! tip
-    After enabling this option, you can [set Codacy as a required check](../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md#github) before merging your pull requests.
+{%
+    include-markdown "../../assets/includes/status-checks-important.md"
+    start="<!--start-->"
+    end="<!--end-->"
+%}
 
 ![Pull request status check on GitHub](images/github-integration-pr-status.png)
 
@@ -75,3 +78,7 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
     -   Because of a limitation from GitHub, the author of the comments suggesting fixes is the user that enabled the GitHub integration and not Codacy.
 
     📢 [Activate suggested fixes now](#enabling) and [let us know](mailto:support@codacy.com?subject=Feedback on Suggest fixes) what you think!
+
+## See also
+
+-   [How do I block merging pull requests using Codacy as a quality gate?](../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)

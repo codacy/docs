@@ -36,9 +36,13 @@ Depending on the options that you enable, Codacy will automatically update pull 
 
 ### Pull Request Status
 
-Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository. To see the coverage status, ensure that you enable the option **Coverage** in the quality settings.
+Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository.
 
-After enabling this option, you can [set Codacy as a required check](../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md#bitbucket) before merging your pull requests.
+{%
+    include-markdown "../../assets/includes/status-checks-important.md"
+    start="<!--start-->"
+    end="<!--end-->"
+%}
 
 ![Pull request status on Bitbucket](images/bitbucket-integration-pr-status.png)
 
@@ -53,3 +57,7 @@ Adds comments on the lines of the pull request where Codacy finds new issues. Cl
 Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication.
 
 ![Pull request summary on Bitbucket](images/bitbucket-integration-pr-summary.png)
+
+## See also
+
+-   [How do I block merging pull requests using Codacy as a quality gate?](../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)

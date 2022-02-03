@@ -12,8 +12,8 @@ The following sections explain the settings in detail.
 
 These settings configure when Codacy reports pull requests and commits as not up to standards.
 
-!!! tip
-    After enabling these settings you can [set Codacy as a required check](../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md) before merging your pull requests.
+!!! important
+    **If you want to block merging pull requests** that aren't up to standards see [How do I block merging pull requests using Codacy as a quality gate?](../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
 
 ![Quality gates](images/quality-settings-gates.png)
 
@@ -22,6 +22,11 @@ These settings configure when Codacy reports pull requests and commits as not up
 -   **Complexity is over:** Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value. By default, this setting is off.
 -   **Duplication is over:** Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value. By default, this setting is off.
 -   **Coverage variation is under:** Pull requests or commits are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull requests or commits. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.
+
+    !!! note
+        Turn on the rule **Coverage variation is under** for Codacy to report the coverage status directly on your pull requests.
+
+        For more details on how to enable pull request status, see [GitHub](../repositories-configure/integrations/github-integration.md#configuring-the-github-integration), [GitLab](../repositories-configure/integrations/gitlab-integration.md#configuring-the-gitlab-integration), or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#configuring-the-bitbucket-integration), depending on your Git provider.
 
 ## Goals
 
@@ -37,3 +42,7 @@ Codacy displays the quality goals as dashed lines on the [quality evolution char
 -   **Duplication of files is over:** Defines the threshold displayed on the tab **Duplication** of the quality evolution chart.
 -   **File is duplicate when over:** A file is considered duplicated when it has more clones than this value.
 -   **Coverage is under:** Defines the threshold displayed on the tab **Coverage** of the quality evolution chart.
+
+## See also
+
+-   [How do I block merging pull requests using Codacy as a quality gate?](../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
