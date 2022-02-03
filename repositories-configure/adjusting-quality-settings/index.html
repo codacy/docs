@@ -11,7 +11,7 @@
         <meta name="description" content="The Quality settings allow you to configure quality gates for your pull requests and commits, and define quality goals that help you monitor the progress of the code quality in your repository dashboard.">
       
       
-        <meta http-equiv="last-modified" content="2022-02-02 11:56:45">  
+        <meta http-equiv="last-modified" content="2022-02-03 15:43:03">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/adjusting-quality-settings/">
@@ -3149,7 +3149,16 @@
 <li><strong>Complexity is over:</strong> Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value. By default, this setting is off.</li>
 <li><strong>Duplication is over:</strong> Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value. By default, this setting is off.</li>
 <li>
-<p><strong>Coverage variation is under:</strong> Pull requests or commits are marked not up to standards if the coverage introduced is smaller than the set value. This value refers to the variation of coverage on your pull requests or commits. For example, if your repository has 90% coverage and you want to make sure that this value doesn't decrease, set the value to 0%. By default, this setting is off. The maximum value is 1%.</p>
+<p><strong>Coverage variation is under:</strong> Pull requests or commits are marked not up to standards if they introduce a variation to coverage below the set value. The maximum value is 1%. By default, this setting is off.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To ensure that commits and pull requests:</p>
+<ul>
+<li><strong>Can decrease</strong> the coverage, set the value to a negative percentage</li>
+<li><strong>Cannot decrease</strong> the coverage, set the value to 0%</li>
+<li><strong>Must improve</strong> the coverage, set the value to 1%</li>
+</ul>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Turn on the rule <strong>Coverage variation is under</strong> for Codacy to report the coverage status directly on your pull requests.</p>
@@ -3321,7 +3330,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 2, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 3, 2022</span>
     
   </small>
 </div>
