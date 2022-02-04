@@ -38,14 +38,16 @@ We recommend that you spend some time reviewing the Codacy analysis settings to 
 
     ![Configuring the tools and code patterns](../../repositories-configure/images/code-patterns.png)
 
-1.  [Review and adjust the quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository to decide which pull requests should fail the Codacy quality gate.
+## 3. Configuring the quality gate rules {: id="configuring-gate"}
 
-    !!! important
-        **If you want to use code coverage** to block merging pull requests that don't meet your standards, make sure that you enable the rule **Coverage variation is under**. This is required for Codacy to report the coverage status directly on your pull requests.
+[Review and adjust the quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository to decide which pull requests should fail the Codacy quality gate.
 
-    ![Adjusting the quality settings](../../repositories-configure/images/quality-settings.png)
+!!! important
+    **If you want to use code coverage** to block merging pull requests that don't meet your standards, make sure that you enable the rule **Coverage variation is under**. This is required for Codacy to report the coverage status directly on your pull requests.
 
-## 3. Enabling the Codacy pull request status checks {: id="enabling-status-checks"}
+![Adjusting the quality settings](../../repositories-configure/images/quality-settings.png)
+
+## 4. Enabling the Codacy pull request status checks {: id="enabling-status-checks"}
 
 Set up your repository so that Codacy reports the results of the analysis directly on your pull requests as status checks:
 
@@ -56,7 +58,7 @@ To do this, follow the instructions for [GitHub](../../repositories-configure/in
 
 ![Enabling your Git provider integration](../../repositories-configure/integrations/images/github-integration.png)
 
-## 4. Configuring your Git provider to block merging pull requests {: id="configuring-git-provider"}
+## 5. Configuring your Git provider to block merging pull requests {: id="configuring-git-provider"}
 
 !!! important
     At this stage we recommend that you:
