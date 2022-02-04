@@ -26,12 +26,16 @@ This area displays:
 
 ### Commit quality overview
 
--   An overview of the code quality metrics for the commit
+This area displays the overview of the code quality metrics for the commit:
 
-    !!! note
-        The changes in the number of issues and code quality metrics introduced by the commit are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`).
+-   The changes in the number of issues and code quality metrics introduced by the commit are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`).
+-   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) that are configured on your repository quality settings:
+    -   **Green:** The metric passes the quality gate
+    -   **Red:** The metric fails the quality gate
+    -   **Gray:** There aren't quality gate rules configured for the metric
+-   Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), **some metrics may not be calculated** (represented by `-`).
 
-        Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), **some metrics may be missing** (represented by `-`).
+![Commit quality overview](images/commits-detail-quality-overview.png)
 
 ### New issues and fixed issues tabs
 
