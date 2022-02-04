@@ -27,6 +27,10 @@ It's important that you set up coverage beforehand because Codacy can only repor
 
 We recommend that you spend some time reviewing the Codacy analysis settings to focus on the tools and code patterns that bring more value to your team. Importantly, this eliminates the risk of having false positives block the work of your team once you start using Codacy as a quality gate.
 
+1.  [Ignore any files and directories](../../repositories-configure/ignoring-files.md) that aren't relevant for the Codacy analysis, such as generated code or any third-party libraries included in your repositories.
+
+    ![Ignoring files](../../repositories-configure/images/ignored-files.png)
+
 1.  [Configure the tools and code patterns](../../repositories-configure/configuring-code-patterns.md) that Codacy uses to analyze your repository.
 
     !!! tip
