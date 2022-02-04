@@ -10,19 +10,25 @@ By default, the page lists the commits on the main branch of your repository but
 
 Click a specific commit to see detailed information about the code quality changes introduced by that commit.
 
-The commit detail displays:
+![Commit detail](images/commits-detail.png)
 
--   The status and logs of the analysis of the commit
--   An overview of the code quality changes introduced by the commit
--   The list of issues and duplication blocks that the commit created or fixed
--   The list of files and the lines of code changed in the commit
+The next sections include more details about each area of the commit detail page.
+
+### Commit status
+
+-   The details identifying the commit, such as the date and 
+-   The analysis status and a link to the analysis logs
+
+### Commit quality overview
+
+-   An overview of the code quality metrics for the commit
 
     !!! note
         The changes in the number of issues and code quality metrics introduced by the commit are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`).
 
         Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), **some metrics may be missing** (represented by `-`).
 
-![New issues in the commit detail](images/commits-detail.png)
+### New issues and fixed issues tabs
 
 {%
     include-markdown "issues.md"
@@ -33,6 +39,15 @@ The commit detail displays:
 Use the options in the cogwheel menu of each issue to [ignore and manage issues](issues.md#ignoring-and-managing-issues).
 
 ![Expanded issue view](images/commits-detail-issue-actions.png)
+
+### New duplication and fixed duplication tabs
+
+-   The list of duplication blocks that the commit created or fixed
+
+### Files and diff tabs
+
+-   The list of issues that the commit created or fixed
+-   The list of files and the lines of code changed in the commit
 
 The commit differences view allows you to review the lines of code changed in the commit.
 
