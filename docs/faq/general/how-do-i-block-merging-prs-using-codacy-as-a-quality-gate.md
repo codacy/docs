@@ -8,10 +8,11 @@ You can block merging pull requests until they pass the Codacy quality gate. Thi
 
 To block merging pull requests that don't meet the quality standards of your team you must complete these main steps:
 
-1.  Adding coverage to your repository (optional)
-1.  Reviewing and adjusting the Codacy analysis settings
-1.  Enabling the Codacy pull request status checks
-1.  Configuring your Git provider to block merging pull requests
+1.  [Adding coverage to your repository](#adding-coverage) (optional)
+1.  [Reviewing and adjusting the Codacy analysis settings](#adjusting-analysis-settings)
+1.  [Deciding which pull requests fail the Codacy quality gate](#configuring-gate)
+1.  [Enabling the Codacy pull request status checks](#enabling-status-checks)
+1.  [Configuring your Git provider to block merging pull requests](#configuring-git-provider)
 
 The next sections include detailed instructions on how to complete each step.
 
