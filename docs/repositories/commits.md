@@ -8,7 +8,7 @@ By default, the page lists the commits on the main branch of your repository but
 
 ## Commit detail
 
-Click a specific commit to see detailed information about the quality changes in that commit.
+Click a specific commit to see detailed information about the code quality changes introduced by that commit.
 
 The commit detail displays:
 
