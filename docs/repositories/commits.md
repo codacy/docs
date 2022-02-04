@@ -16,8 +16,13 @@ The next sections include more details about each area of the commit detail page
 
 ### Commit status
 
--   The details identifying the commit, such as the date and 
+This area displays:
+
+-   The information that identifies the commit, such as the SHA hash, the commit message, and the date
 -   The analysis status and a link to the analysis logs
+-   A link to the commit on your Git provider
+
+![Commit status](images/commits-detail-status.png)
 
 ### Commit quality overview
 
