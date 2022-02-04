@@ -81,9 +81,9 @@ plugins:
     # Include content from other Markdown files
     # https://github.com/mondeja/mkdocs-include-markdown-plugin
     - include-markdown
-    # Use the values from the "extra" variables defined above
-    # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
-    - markdownextradata
+    # Allow using variables, macros, and filters
+    # https://github.com/fralau/mkdocs_macros_plugin
+    - macros
     # Generate meta descriptions from introductory paragraphs
     # https://github.com/prcr/mkdocs-meta-descriptions-plugin
     - meta-descriptions:
