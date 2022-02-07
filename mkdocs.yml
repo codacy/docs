@@ -75,6 +75,12 @@ plugins:
     # https://github.com/apenwarr/mkdocs-exclude
     - exclude:
           glob: "assets/includes/*.md"
+    # Exclude files from search index to improve quality of search results
+    # https://github.com/chrieke/mkdocs-exclude-search
+    - exclude-search:
+          exclude:
+              - release-notes/cloud/*
+              - release-notes/self-hosted/*
     # Include the last modified date at the bottom of each page
     # https://github.com/timvink/mkdocs-git-revision-date-localized-plugin
     - git-revision-date-localized
