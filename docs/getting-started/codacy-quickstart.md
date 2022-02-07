@@ -55,4 +55,5 @@ Congratulations, your new repository is ready!
 Optionally, you can also:
 
 -   [Add coverage reports to Codacy](../coverage-reporter/index.md)
+-   [Use Codacy as a quality gate](../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md) to block merging pull requests that don't meet your quality standards.
 -   [Add a Codacy badge to your repository](adding-a-codacy-badge.md) displaying the current code quality grade or code coverage
