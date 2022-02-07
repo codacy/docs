@@ -81,7 +81,6 @@ plugins:
           exclude:
               - release-notes/cloud/*
               - release-notes/self-hosted/*
-              - special-thanks.md
     # Include the last modified date at the bottom of each page
     # https://github.com/timvink/mkdocs-git-revision-date-localized-plugin
     - git-revision-date-localized
