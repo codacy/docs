@@ -43,7 +43,7 @@ We recommend that you spend some time reviewing the Codacy analysis settings to 
 
 [Review and adjust the quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository to decide which pull requests should fail the Codacy quality gate.
 
-Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of blocking or delaying the progress of development. For this reason, Codacy generally recommends that on a first stage you configure rules that focus on stopping new critical issues from entering your code base, such as:
+Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of delaying or blocking the development progress. For this reason, Codacy generally recommends that on a first stage you configure rules that focus on stopping new critical issues from entering your code base, such as:
 
 -   High severity issues
 -   Security issues
