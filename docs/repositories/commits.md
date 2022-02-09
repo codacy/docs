@@ -61,7 +61,7 @@ The **New Duplication** and **Fixed Duplication** tabs display the list of dupli
 
 ## Files tab
 
-The **Files** tab display the list of files changed in the commit.
+The **Files** tab displays the list of files changed in the commit.
 
 <!--TODO Describe information displayed on the tab-->
 
@@ -69,7 +69,7 @@ The **Files** tab display the list of files changed in the commit.
 
 ## Diff tab
 
-The **Diff** tab display the lines of code changed in the commit.
+The **Diff** tab displays the lines of code changed in the commit.
 
 <!--TODO Describe information displayed on the tab-->
 
