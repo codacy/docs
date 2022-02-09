@@ -39,9 +39,7 @@ This area displays the overview of the code quality metrics for the commit:
 
 The **New Issues** and **Fixed Issues** tabs display the list of issues that the commit created or fixed.
 
-<!--TODO
-    - Include screenshot of tabs
--->
+![New Issues and Fixed Issues tabs](images/commits-tab-issues.png)
 
 {%
     include-markdown "issues.md"
