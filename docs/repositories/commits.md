@@ -6,15 +6,13 @@ By default, the page lists the commits on the main branch of your repository but
 
 ![Commits page](images/commits.png)
 
-## Commit detail
-
 Click a specific commit to see detailed information about the code quality changes introduced by that commit.
 
 ![Commit detail](images/commits-detail.png)
 
-The next sections include more details about each area of the commit detail page.
+The next sections describe each area of the commit detail page.
 
-### Commit status
+## Commit status
 
 This area displays:
 
@@ -24,7 +22,7 @@ This area displays:
 
 ![Commit status](images/commits-detail-status.png)
 
-### Commit quality overview
+## Commit quality overview
 
 This area displays the overview of the code quality metrics for the commit:
 
@@ -37,7 +35,13 @@ This area displays the overview of the code quality metrics for the commit:
 
 ![Commit quality overview](images/commits-detail-quality-overview.png)
 
-### New issues and fixed issues tabs
+## Issues tabs
+
+The **New Issues** and **Fixed Issues** tabs display the list of issues that the commit created or fixed.
+
+<!--TODO
+    - Include screenshot of tabs
+-->
 
 {%
     include-markdown "issues.md"
@@ -49,20 +53,30 @@ Use the options in the cogwheel menu of each issue to [ignore and manage issues]
 
 ![Expanded issue view](images/commits-detail-issue-actions.png)
 
-### New duplication and fixed duplication tabs
+## Duplication tabs
 
--   The list of duplication blocks that the commit created or fixed
+The **New Duplication** and **Fixed Duplication** tabs display the list of duplication blocks that the commit created or fixed.
 
-### Files and diff tabs
+<!--TODO
+    - Describe information displayed by tabs
+    - Include screenshot of tabs
+-->
 
--   The list of issues that the commit created or fixed
--   The list of files and the lines of code changed in the commit
+## Files and diff tabs
 
-The commit differences view allows you to review the lines of code changed in the commit.
+The **Files** and **Diff** tabs display the list of files and the lines of code changed in the commit.
+
+<!--TODO
+    - Describe information displayed by tabs
+    - Improve screenshot of tabs
+-->
 
 ![Commit differences view](images/commits-differences.png)
 
 ## Possible issues
+
+<!--NOTE
+    Consider moving this section to a dedicated page under the FAQs-->
 
 In some situations, Codacy may report either new or fixed **possible** issues on a commit or pull request, which means that the code analysis detected these issues in lines of code that weren't changed by that commit or pull request. This gives you awareness to how your changes may be affecting other parts of your code.
 
