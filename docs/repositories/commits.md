@@ -39,7 +39,7 @@ This area displays the overview of the code quality metrics for the commit:
 
 The **New Issues** and **Fixed Issues** tabs display the list of issues that the commit created or fixed.
 
-![New Issues and Fixed Issues tabs](images/commits-tab-issues.png)<!--TODO Replace screenshot?-->
+![New Issues and Fixed Issues tabs](images/commits-tab-issues.png)
 
 {%
     include-markdown "issues.md"
@@ -61,13 +61,13 @@ The **New Duplication** and **Fixed Duplication** tabs display the list of dupli
 
 The **Files** tab displays an overview of the code quality changes introduced by each file that was changed in the commit.
 
-![Files tab](images/commits-tab-files.png)<!--TODO Replace screenshot?-->
+![Files tab](images/commits-tab-files.png)
 
 ## Diff tab
 
 The **Diff** tab displays the line differences in each file that was changed in the commit.
 
-![Diff tab](images/commits-tab-diff.png)<!--TODO Replace screenshot?-->
+![Diff tab](images/commits-tab-diff.png)
 
 ## Possible issues
 
