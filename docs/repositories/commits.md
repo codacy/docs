@@ -51,7 +51,7 @@ The **New Issues** and **Fixed Issues** tabs display the list of issues that the
 
 Use the options in the cogwheel menu of each issue to [ignore and manage issues](issues.md#ignoring-and-managing-issues).
 
-![Expanded issue view](images/commits-detail-issue-actions.png)
+![Expanded issue view](images/issues-menu.png)
 
 ## Duplication tabs
 
