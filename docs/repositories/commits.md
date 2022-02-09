@@ -53,11 +53,9 @@ Use the options in the cogwheel menu of each issue to [ignore and manage issues]
 
 ## Duplication tabs
 
-The **New Duplication** and **Fixed Duplication** tabs display the list of duplication blocks that the commit created or fixed.
+The **New Duplication** and **Fixed Duplication** tabs display the list of duplicated blocks that the commit created or fixed.
 
-<!--TODO Describe information displayed on the tab-->
-
-![New Duplication and Fixed Duplication tabs](images/commits-tab-duplication.png)<!--TODO Replace screenshot-->
+![New Duplication and Fixed Duplication tabs](images/commits-tab-duplication.png)
 
 ## Files tab
 
