@@ -88,7 +88,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>C++</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>,
-          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
+          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a><a href="#cppcheck-misra"><sup>2</sup></a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -316,7 +316,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
-      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#swiftlint-complexity"><sup>2</sup></a></td>
+      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#swiftlint-complexity"><sup>3</sup></a></td>
     </tr>
     <tr>
       <td>Terraform</td>
@@ -379,7 +379,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
 </table>
 
 <sup><span id="client-side">1</span></sup>: Supported as a [client-side tool](../related-tools/local-analysis/client-side-tools.md).  
-<sup><span id="swiftlint-complexity">2</span></sup>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html){: target="_blank"} on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code patterns page](../repositories-configure/configuring-code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration){: target="_blank"} to customize the thresholds.  
+<sup><span id="cppcheck-misra">2</span></sup>: Currently, Cppcheck only supports [checking the MISRA guidelines for C](https://cppcheck.sourceforge.io/misra.php){: target="_blank"}.  
+<sup><span id="swiftlint-complexity">3</span></sup>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html){: target="_blank"} on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code patterns page](../repositories-configure/configuring-code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration){: target="_blank"} to customize the thresholds.  
 <sup><span id="suggested-fixes">🔧</span></sup>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
 
 ## See also
