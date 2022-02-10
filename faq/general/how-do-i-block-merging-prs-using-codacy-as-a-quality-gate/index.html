@@ -11,7 +11,7 @@
         <meta name="description" content="Configure Codacy to block merging pull requests that don't meet your quality standards.">
       
       
-        <meta http-equiv="last-modified" content="2022-02-04 16:16:47">  
+        <meta http-equiv="last-modified" content="2022-02-10 16:14:00">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/">
@@ -3222,6 +3222,17 @@
 </ol>
 <h2 id="configuring-gate">3. Configuring the quality gate rules<a class="headerlink" href="#configuring-gate" title="Permanent link">#</a></h2>
 <p><a href="../../../repositories-configure/adjusting-quality-settings/">Review and adjust the quality settings</a> of your repository to decide which pull requests should fail the Codacy quality gate.</p>
+<p>Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of delaying or blocking the development progress.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The default values of the quality gate rules are designed to help maintain the current code quality of your repository. In particular, the default value for the coverage rule might be demanding.</p>
+<p>Because of this, Codacy generally recommends that on a first stage you configure rules that focus on stopping new critical issues from entering your code base, such as:</p>
+<ul>
+<li>High severity issues</li>
+<li>Security issues</li>
+<li>Considerable drops in code coverage</li>
+</ul>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>If you want to use code coverage</strong> to block merging pull requests that don't meet your standards, make sure that you enable the rule <strong>Coverage variation is under</strong>. This is required for Codacy to report the coverage status directly on your pull requests.</p>
@@ -3399,7 +3410,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 4, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2022</span>
     
   </small>
 </div>
