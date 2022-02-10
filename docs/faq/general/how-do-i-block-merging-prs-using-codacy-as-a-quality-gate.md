@@ -43,6 +43,17 @@ We recommend that you spend some time reviewing the Codacy analysis settings to 
 
 [Review and adjust the quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository to decide which pull requests should fail the Codacy quality gate.
 
+Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of delaying or blocking the development progress.
+
+!!! tip
+    The default values of the quality gate rules are designed to help maintain the current code quality of your repository. In particular, the default value for the coverage rule might be demanding.
+
+    Because of this, Codacy generally recommends that on a first stage you configure rules that focus on stopping new critical issues from entering your code base, such as:
+
+    -   High severity issues
+    -   Security issues
+    -   Considerable drops in code coverage
+
 !!! important
     **If you want to use code coverage** to block merging pull requests that don't meet your standards, make sure that you enable the rule **Coverage variation is under**. This is required for Codacy to report the coverage status directly on your pull requests.
 
