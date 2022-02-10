@@ -6,23 +6,41 @@ By default, the page lists the commits on the main branch of your repository but
 
 ![Commits page](images/commits.png)
 
-## Commit detail
+Click a specific commit to see detailed information about the code quality changes introduced by that commit.
 
-Click a specific commit to see detailed information about the quality changes in that commit.
+![Commit detail](images/commits-detail.png)
 
-The commit detail displays:
+The next sections describe each area of the commit detail page.
 
--   The status and logs of the analysis of the commit
--   An overview of the code quality changes introduced by the commit
--   The list of issues and duplication blocks that the commit created or fixed
--   The list of files and the lines of code changed in the commit
+## Commit status
 
-    !!! note
-        The changes in the number of issues and code quality metrics introduced by the commit are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`).
+This area displays:
 
-        Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), **some metrics may be missing** (represented by `-`).
+-   The information that identifies the commit, such as the SHA hash, the commit message, and the date
+-   The analysis status and a button to re-analyze the commit
+-   A link to the analysis logs
+-   A link to the commit on your Git provider
 
-![New issues in the commit detail](images/commits-detail.png)
+![Commit status](images/commits-detail-status.png)
+
+## Commit quality overview
+
+This area displays the overview of the code quality metrics for the commit:
+
+-   The changes in the number of issues and code quality metrics introduced by the commit are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`).
+-   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) that are configured on your repository quality settings:
+    -   **Green:** The metric passes the quality gate
+    -   **Red:** The metric fails the quality gate
+    -   **Gray:** There aren't quality gate rules configured for the metric
+-   Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), **some metrics may not be calculated** (represented by `-`).
+
+![Commit quality overview](images/commits-detail-quality-overview.png)
+
+## Issues tabs
+
+The **New Issues** and **Fixed Issues** tabs display the list of issues that the commit created or fixed.
+
+![New Issues and Fixed Issues tabs](images/commits-tab-issues.png)
 
 {%
     include-markdown "issues.md"
@@ -32,17 +50,13 @@ The commit detail displays:
 
 Use the options in the cogwheel menu of each issue to [ignore and manage issues](issues.md#ignoring-and-managing-issues).
 
-![Expanded issue view](images/commits-detail-issue-actions.png)
+![Expanded issue view](images/issues-menu.png)<!--TODO Add a screenshot that includes the full issue details, so it shows the tool name at the bottom-->
 
-The commit differences view allows you to review the lines of code changed in the commit.
+### Possible issues
 
-![Commit differences view](images/commits-differences.png)
+In some situations, Codacy may report either new or fixed **possible** issues on a commit, which means that the code analysis detected these issues in lines of code that weren't changed by that commit. This gives you awareness to how your changes may be affecting other parts of your code.
 
-## Possible issues
-
-In some situations, Codacy may report either new or fixed **possible** issues on a commit or pull request, which means that the code analysis detected these issues in lines of code that weren't changed by that commit or pull request. This gives you awareness to how your changes may be affecting other parts of your code.
-
-![Possible fixed issue in a commit](images/commits-possible-issues.png)
+![Possible fixed issue on a commit](images/commits-possible-issues.png)<!--TODO Review screenshot for Commits page-->
 
 The following are example situations that can lead to possible issues:
 
@@ -54,3 +68,21 @@ The following are example situations that can lead to possible issues:
     **If you're using GitHub** you may see [annotations](../repositories-configure/integrations/github-integration.md#annotations)  for possible issues reported under **Unchanged files with check annotations** on the **Files changed** tab of your pull requests.
 
     This happens when Codacy reports possible issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/){: target="_blank"}.
+
+## Duplication tabs
+
+The **New Duplication** and **Fixed Duplication** tabs display the list of duplicated blocks that the commit created or fixed.
+
+![New Duplication and Fixed Duplication tabs](images/commits-tab-duplication.png)
+
+## Files tab
+
+The **Files** tab displays an overview of the code quality changes introduced by each file that was changed in the commit.
+
+![Files tab](images/commits-tab-files.png)
+
+## Diff tab
+
+The **Diff** tab displays the line differences in each file that was changed in the commit.
+
+![Diff tab](images/commits-tab-diff.png)
