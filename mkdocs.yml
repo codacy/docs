@@ -611,6 +611,7 @@ nav:
           - repositories/commits.md
           - repositories/files.md
           - repositories/issues.md
+          - repositories/pull-requests.md
           - repositories/security-monitor.md
     - Configuring your repositories:
           - repositories-configure/configuring-code-patterns.md
