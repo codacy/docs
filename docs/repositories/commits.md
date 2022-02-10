@@ -17,7 +17,8 @@ The next sections describe each area of the commit detail page.
 This area displays:
 
 -   The information that identifies the commit, such as the SHA hash, the commit message, and the date
--   The analysis status and a link to the analysis logs
+-   The analysis status and a button to re-analyze the commit
+-   A link to the analysis logs
 -   A link to the commit on your Git provider
 
 ![Commit status](images/commits-detail-status.png)
