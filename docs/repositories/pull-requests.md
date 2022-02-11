@@ -9,11 +9,11 @@ The **Pull requests page** displays an overview of the pull requests in your rep
 
 By default, the page lists open pull requests but you can use the drop-down list at the top of the page to display the merged pull requests.
 
-![Pull requests page](images/pull-requests.png)<!--TODO Review screenshot, highlight open/merged pull requests selector-->
+![Pull requests page](images/pull-requests.png)
 
 Click a specific pull request to see detailed information about the code quality changes introduced by that pull request.
 
-![Pull request detail](images/pull-requests-detail.png)<!--TODO Include navigation context-->
+![Pull request detail](images/pull-requests-detail.png)
 
 The next sections describe each area of the pull request detail page.
 
@@ -25,7 +25,7 @@ This area displays the information that identifies the pull request (head and ba
 -   A link to the analysis logs
 -   A link to the pull request on your Git provider
 
-![Pull request status](images/pull-requests-detail-status.png)<!--TODO Replace screenshot-->
+![Pull request status](images/pull-requests-detail-status.png)
 
 {%
     include-markdown "commits.md"
