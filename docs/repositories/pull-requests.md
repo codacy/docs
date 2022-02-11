@@ -19,7 +19,7 @@ The next sections describe each area of the pull request detail page.
 
 ## Pull request status
 
-This area displays the information that identifies the pull request (branch, date, and name) as well as:
+This area displays the information that identifies the pull request (head and base branches, date, and name), as well as:
 
 -   The analysis status and a button to re-analyze the last commit on the pull request branch
 -   A link to the analysis logs
