@@ -24,6 +24,7 @@ dartanalyzer
 deadcode
 detekt
 Dockerfile
+endif
 ESLint
 Flawfinder
 Fluentd
