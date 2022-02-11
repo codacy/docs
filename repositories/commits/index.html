@@ -11,7 +11,7 @@
         <meta name="description" content="The Commits page displays an overview of the commits in your repository, such as the analysis status and the number of new and fixed issues for each commit. This allows you to monitor the evolution of the code quality in your repository per commit.">
       
       
-        <meta http-equiv="last-modified" content="2022-02-10 16:12:28">  
+        <meta http-equiv="last-modified" content="2022-02-11 12:49:46">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/commits/">
@@ -3202,9 +3202,8 @@
 <p><img alt="Commit detail" src="../images/commits-detail.png" /></p>
 <p>The next sections describe each area of the commit detail page.</p>
 <h2 id="commit-status">Commit status<a class="headerlink" href="#commit-status" title="Permanent link">#</a></h2>
-<p>This area displays:</p>
+<p>This area displays the information that identifies the commit (SHA hash, date, and commit message), as well as:</p>
 <ul>
-<li>The information that identifies the commit, such as the SHA hash, the commit message, and the date</li>
 <li>The analysis status and a button to re-analyze the commit</li>
 <li>A link to the analysis logs</li>
 <li>A link to the commit on your Git provider</li>
@@ -3225,7 +3224,6 @@
 <p><img alt="Commit quality overview" src="../images/commits-detail-quality-overview.png" /></p>
 <h2 id="issues-tabs">Issues tabs<a class="headerlink" href="#issues-tabs" title="Permanent link">#</a></h2>
 <p>The <strong>New Issues</strong> and <strong>Fixed Issues</strong> tabs display the list of issues that the commit created or fixed.</p>
-<p><img alt="New Issues and Fixed Issues tabs" src="../images/commits-tab-issues.png" /></p>
 <p>Click the title of an issue to see the following information:</p>
 <ul>
 <li>The contributor and date of the commit that introduced the issue</li>
@@ -3234,17 +3232,16 @@
 <li>The programming language and category of the issue</li>
 </ul>
 <p>Use the options in the cogwheel menu of each issue to <a href="../issues/#ignoring-and-managing-issues">ignore and manage issues</a>.</p>
-<p><img alt="Expanded issue view" src="../images/issues-menu.png" /></p>
+<p><img alt="New Issues and Fixed Issues tabs" src="../images/commits-tab-issues.png" /></p>
 <h3 id="possible-issues">Possible issues<a class="headerlink" href="#possible-issues" title="Permanent link">#</a></h3>
 <p>In some situations, Codacy may report either new or fixed <strong>possible</strong> issues on a commit, which means that the code analysis detected these issues in lines of code that weren't changed by that commit. This gives you awareness to how your changes may be affecting other parts of your code.</p>
-<p><img alt="Possible fixed issue on a commit" src="../images/commits-possible-issues.png" /></p>
 <p>The following are example situations that can lead to possible issues:</p>
 <ul>
 <li>
 <p>The issue was either created or fixed in the current commit, but the static code analysis tools reported the issue on a line that didn't change in the commit. For example, if you remove the line containing the declaration of a variable you may get an "undeclared variable" issue in other lines that use that variable.</p>
 </li>
 <li>
-<p>If a file had <a href="../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/">more than 50 issues reported by the same tool</a> and you push a new commit that fixes some of these issues, Codacy will report more issues until the limit of 50 issues. These issues will be possible issues if they're outside the lines of code changed in the current commit.</p>
+<p>If a file had <a href="../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/">more than 50 issues reported by the same tool</a> and you push a new commit that fixes some of these issues, Codacy will report more issues until the limit of 50 issues. These issues will be possible issues if they're outside the lines of code changed in the new commit.</p>
 </li>
 </ul>
 <div class="admonition note">
@@ -3409,7 +3406,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 11, 2022</span>
     
   </small>
 </div>
