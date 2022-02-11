@@ -32,7 +32,17 @@ This area displays the information that identifies the commit (SHA hash, date, a
 
 This area displays the overview of the code quality metrics for the {{ page.meta.page_name }}:
 
--   The changes in the number of issues and code quality metrics introduced by the {{ page.meta.page_name }} are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`).
+-   The changes to the following code quality metrics introduced by the {{ page.meta.page_name }} are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
+    -   **Issues:** Number of new or fixed issues
+    -   **Duplication:** Number of new or fixed duplicated code blocks
+    -   **Complexity:** Variation of complexity
+{% if page.meta.page_name == "commit" %}
+    -   **Coverage:** Variation of code coverage percentage relative to the parent commit
+{% endif %}
+{% if page.meta.page_name == "pull request" %}
+    -   **Coverage variation:** Variation of code coverage relative to the target branch
+    -   **Diff coverage:** Code coverage of the lines added or changed by the pull request
+{% endif %}
 -   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) that are configured on your repository quality settings:
     -   **Green:** The metric passes the quality gate
     -   **Red:** The metric fails the quality gate
