@@ -3,13 +3,13 @@ page_name: "pull request"
 file_name: "pull-requests"
 ---
 
-# Pull requests page
+# Pull Requests page
 
-The **Pull requests page** displays an overview of the pull requests in your repository, such as the analysis status and the number of new and fixed issues for each pull request. This allows you to monitor the code quality of the work in progress in your repository.
+The **Pull Requests page** displays an overview of the pull requests in your repository, such as the analysis status and the number of new and fixed issues for each pull request. This allows you to monitor the code quality of the work in progress in your repository.
 
 By default, the page lists open pull requests but you can use the drop-down list at the top of the page to display the merged pull requests.
 
-![Pull requests page](images/pull-requests.png)
+![Pull Requests page](images/pull-requests.png)
 
 Click a specific pull request to see detailed information about the code quality changes introduced by that pull request.
 
