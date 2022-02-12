@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2.3.2
         with:
-          python-version: "3.9.7"
+          python-version: "3.x"
 
       - uses: actions/cache@v2.1.7
         id: cache
