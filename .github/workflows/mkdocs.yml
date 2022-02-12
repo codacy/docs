@@ -64,17 +64,11 @@ jobs:
           CUSTOM_DOMAIN: docs.codacy.com
 
       # Deploy Self-hosted docs on push to release/vM.m branch
-      - name: Set up yq
-        uses: chrisdickinson/setup-yq@latest
-        if: startsWith(github.ref, 'refs/heads/release/v')
-
-      - name: Update mkdocs.yml
-        if: startsWith(github.ref, 'refs/heads/release/v')
-        run: |
-          yq write --inplace mkdocs.yml "extra.noindex" false
-
       - name: Deploy docs (Self-hosted)
         if: startsWith(github.ref, 'refs/heads/release/v')
         run: |
           git fetch origin gh-pages --verbose
           mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted ${GITHUB_REF##*/release/}" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
+        env:
+          # Disable indexing Self-hosted versions
+          MKDOCS_NOINDEX: true
