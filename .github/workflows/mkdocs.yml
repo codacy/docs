@@ -19,7 +19,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v2.3.2
         with:
-          python-version: "3.9.7"
+          python-version: "3.x"
 
       - uses: actions/cache@v2.1.7
         id: cache
@@ -42,39 +42,33 @@ jobs:
         run: |
           docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
 
-      # On push to master or release branch, deploy docs
-      - name: Set up git author
-        if: github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/heads/release/v')
-        run: |
-          remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git remote rm origin
-          git remote add origin "${remote_repo}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Deploy docs (Latest)
+      # Deploy Latest docs on push to master
+      - name: Set up environment variables
         if: github.ref == 'refs/heads/master'
         run: |
-          echo "${CUSTOM_DOMAIN}" > "${GITHUB_WORKSPACE}/docs/CNAME"
-          echo -e "User-agent: *\nSitemap: https://${CUSTOM_DOMAIN}/sitemap.xml" > "${GITHUB_WORKSPACE}/docs/robots.txt"
-          git fetch origin gh-pages --verbose
-          mike deploy . -t "Cloud (Latest)" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
+          echo "MKDOCS_VERSION=$(mkdocs --version | cut -d " " -f 3)" >> $GITHUB_ENV
+          echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-9`" >> $GITHUB_ENV
+
+      - name: Deploy docs (Latest)
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/master'
+        with:
+          personal_token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
+          publish_dir: ./site
+          destination_dir: ./
+          keep_files: true
+          cname: ${{ env.CUSTOM_DOMAIN }}
+          allow_empty_commit: true
+          full_commit_message: Deployed ${{ env.SHORT_SHA }} to . with MkDocs ${{ env.MKDOCS_VERSION }}
         env:
           CUSTOM_DOMAIN: docs.codacy.com
 
-      - name: Set up yq
-        uses: chrisdickinson/setup-yq@latest
-        if: startsWith(github.ref, 'refs/heads/release/v')        
-
-      - name: Update mkdocs.yml
-        if: startsWith(github.ref, 'refs/heads/release/v')        
-        run: |
-          yq write --inplace mkdocs.yml "extra.noindex" false
-
+      # Deploy Self-hosted docs on push to release/vM.m branch
       - name: Deploy docs (Self-hosted)
-        if: startsWith(github.ref, 'refs/heads/release/v')        
+        if: startsWith(github.ref, 'refs/heads/release/v')
         run: |
           git fetch origin gh-pages --verbose
           mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted ${GITHUB_REF##*/release/}" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
+        env:
+          # Disable indexing Self-hosted versions
+          MKDOCS_NOINDEX: true
