@@ -2,6 +2,8 @@ name: MkDocs
 
 on: push
 
+concurrency: ${{ github.workflow }}
+
 jobs:
   mkdocs:
     runs-on: ubuntu-latest
