@@ -37,13 +37,18 @@ jobs:
       - name: Build docs
         run: |
           mkdocs -v build
-          echo "MKDOCS_VERSION=$(mkdocs --version | cut -d " " -f 3)" >> $GITHUB_ENV
 
       - name: Validate generated HTML files
         run: |
           docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
 
       # Deploy Latest docs on push to master
+      - name: Set up environment variables
+        if: github.ref == 'refs/heads/master'
+        run: |
+          echo "MKDOCS_VERSION=$(mkdocs --version | cut -d " " -f 3)" >> $GITHUB_ENV
+          echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-9`" >> $GITHUB_ENV
+
       - name: Deploy docs (Latest)
         uses: peaceiris/actions-gh-pages@v3
         if: github.ref == 'refs/heads/master'
@@ -54,7 +59,7 @@ jobs:
           keep_files: true
           cname: ${{ env.CUSTOM_DOMAIN }}
           allow_empty_commit: true
-          full_commit_message: Deployed ${{ github.sha }} to . with MkDocs ${{ env.MKDOCS_VERSION }}
+          full_commit_message: Deployed ${{ env.SHORT_SHA }} to . with MkDocs ${{ env.MKDOCS_VERSION }}
         env:
           CUSTOM_DOMAIN: docs.codacy.com
 
