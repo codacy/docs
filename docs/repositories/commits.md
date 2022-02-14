@@ -43,7 +43,7 @@ This area displays the overview of the code quality metrics for the {{ page.meta
     -   **Coverage variation:** Variation of code coverage relative to the target branch
     -   **Diff coverage:** Code coverage of the lines added or changed by the pull request
 {% endif %}
--   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) that are configured on your repository quality settings:
+-   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) that are currently configured on your repository quality settings:
     -   **Green:** The metric passes the quality gate
     -   **Red:** The metric fails the quality gate
     -   **Gray:** There aren't quality gate rules configured for the metric
