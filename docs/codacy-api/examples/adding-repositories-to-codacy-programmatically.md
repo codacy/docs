@@ -15,7 +15,7 @@ To add repositories programmatically, use Codacy's API v3 endpoint [addRepositor
 curl -X POST https://app.codacy.com/api/v3/repositories \
   -H 'Content-Type: application/json' \
   -H 'api-token: <API_KEY>' \
-  -d '{"provider":"<GIT_PROVIDER>", "repositoryFullPath":"<REPOSITORY_FULL_PATH>"}
+  -d '{"provider":"<GIT_PROVIDER>", "repositoryFullPath":"<REPOSITORY_FULL_PATH>"}'
 ```
 
 Substitute the placeholders with your own values:
