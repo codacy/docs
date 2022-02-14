@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to add multiple repositories programmatically using Codacy's API v3 endpoint addRepository.">
       
       
-        <meta http-equiv="last-modified" content="2022-01-14 11:47:51">  
+        <meta http-equiv="last-modified" content="2022-02-14 12:11:39">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/adding-repositories-to-codacy-programmatically/">
@@ -3183,7 +3183,7 @@
 <div class="highlight"><pre><span></span><code>curl -X POST https://app.codacy.com/api/v3/repositories <span class="se">\</span>
   -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
   -H <span class="s1">&#39;api-token: &lt;API_KEY&gt;&#39;</span> <span class="se">\</span>
-  -d <span class="err">&#39;</span><span class="o">{</span><span class="s2">&quot;provider&quot;</span>:<span class="s2">&quot;&lt;GIT_PROVIDER&gt;&quot;</span>, <span class="s2">&quot;repositoryFullPath&quot;</span>:<span class="s2">&quot;&lt;REPOSITORY_FULL_PATH&gt;&quot;</span><span class="o">}</span>
+  -d <span class="s1">&#39;{&quot;provider&quot;:&quot;&lt;GIT_PROVIDER&gt;&quot;, &quot;repositoryFullPath&quot;:&quot;&lt;REPOSITORY_FULL_PATH&gt;&quot;}&#39;</span>
 </code></pre></div>
 <p>Substitute the placeholders with your own values:</p>
 <ul>
@@ -3453,7 +3453,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 14, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 14, 2022</span>
     
   </small>
 </div>
