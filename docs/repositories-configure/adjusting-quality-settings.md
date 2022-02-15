@@ -15,12 +15,17 @@ These settings configure when Codacy reports pull requests and commits as not up
 !!! important
     **If you want to block merging pull requests** that aren't up to standards see [How do I block merging pull requests using Codacy as a quality gate?](../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
 
-![Quality gates](images/quality-settings-gates.png)
+![Quality gates](images/quality-settings-gates.png)<!--TODO Update screenshot-->
 
 -   **New issues are over:** Pull requests or commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is higher than the set value. The default value is 0.
 -   **New security issues are over:** Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value. By default, this setting is off.
 -   **Complexity is over:** Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value. By default, this setting is off.
 -   **Duplication is over:** Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value. By default, this setting is off.
+-   **Diff coverage is under:** Pull requests are marked not up to standards if the code coverage of the lines added or changed by the pull request is below the set value.
+
+    !!! note
+        The rule **Diff coverage is under** is only available for pull requests.
+
 -   **Coverage variation is under:** Pull requests or commits are marked not up to standards if they introduce a variation to coverage below the set value. The maximum value is 1%. By default, this setting is off.
 
     !!! tip
