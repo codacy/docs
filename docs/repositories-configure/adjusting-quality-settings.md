@@ -27,7 +27,7 @@ These settings configure when Codacy reports pull requests and commits as not up
         To ensure that commits and pull requests:
 
         -   **Can decrease** the coverage, set the value to a negative percentage
-        -   **Cannot decrease** the coverage, set the value to 0%
+        -   **Can't decrease** the coverage, set the value to 0%
         -   **Must improve** the coverage, set the value to 1%
 
     !!! note
