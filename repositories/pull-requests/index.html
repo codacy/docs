@@ -3244,16 +3244,20 @@
 </li>
 <li><strong>Diff coverage:</strong> Code coverage of the lines added or changed by the pull request</li>
 </ul>
+<p>Depending on the languages being analyzed or if you haven't <a href="../../coverage-reporter/">set up coverage for your repository</a>, some metrics <strong>may not be calculated</strong> (represented by <code>-</code>).</p>
 </li>
 <li>
-<p>The <strong>colors</strong> depend on the <a href="../../repositories-configure/adjusting-quality-settings/">quality gate rules</a> that are currently configured on your repository quality settings:</p>
+<p>The <strong>colors</strong> depend on the <a href="../../repositories-configure/adjusting-quality-settings/">quality gate rules</a> that are configured on your repository quality settings:</p>
 <ul>
 <li><strong>Green:</strong> The metric passes the quality gate</li>
 <li><strong>Red:</strong> The metric fails the quality gate</li>
 <li><strong>Gray:</strong> There aren't quality gate rules configured for the metric</li>
 </ul>
+<div class="admonition notes">
+<p class="admonition-title">Notes</p>
+<p>If you change the quality gate rules you must reanalyze the pull request to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.</p>
+</div>
 </li>
-<li>Depending on the languages being analyzed or if you haven't <a href="../../coverage-reporter/">set up coverage for your repository</a>, <strong>some metrics may not be calculated</strong> (represented by <code>-</code>).</li>
 </ul>
 <p><img alt="Pull request quality overview" src="../images/pull-requests-detail-quality-overview.png" /></p>
 <h2 id="issues-tabs">Issues tabs<a class="headerlink" href="#issues-tabs" title="Permanent link">#</a></h2>

@@ -11,7 +11,7 @@
         <meta name="description" content="The Commits page displays an overview of the commits in your repository, such as the analysis status and the number of new and fixed issues for each commit. This allows you to monitor the evolution of the code quality in your repository per commit.">
       
       
-        <meta http-equiv="last-modified" content="2022-02-14 16:05:06">  
+        <meta http-equiv="last-modified" content="2022-02-15 18:46:34">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/commits/">
@@ -3236,16 +3236,20 @@
 <p><strong>Coverage:</strong> Variation of code coverage percentage relative to the parent commit</p>
 </li>
 </ul>
+<p>Depending on the languages being analyzed or if you haven't <a href="../../coverage-reporter/">set up coverage for your repository</a>, some metrics <strong>may not be calculated</strong> (represented by <code>-</code>).</p>
 </li>
 <li>
-<p>The <strong>colors</strong> depend on the <a href="../../repositories-configure/adjusting-quality-settings/">quality gate rules</a> that are currently configured on your repository quality settings:</p>
+<p>The <strong>colors</strong> depend on the <a href="../../repositories-configure/adjusting-quality-settings/">quality gate rules</a> that are configured on your repository quality settings:</p>
 <ul>
 <li><strong>Green:</strong> The metric passes the quality gate</li>
 <li><strong>Red:</strong> The metric fails the quality gate</li>
 <li><strong>Gray:</strong> There aren't quality gate rules configured for the metric</li>
 </ul>
+<div class="admonition notes">
+<p class="admonition-title">Notes</p>
+<p>If you change the quality gate rules you must reanalyze the commit to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.</p>
+</div>
 </li>
-<li>Depending on the languages being analyzed or if you haven't <a href="../../coverage-reporter/">set up coverage for your repository</a>, <strong>some metrics may not be calculated</strong> (represented by <code>-</code>).</li>
 </ul>
 <p><img alt="Commit quality overview" src="../images/commits-detail-quality-overview.png" /></p>
 <h2 id="issues-tabs">Issues tabs<a class="headerlink" href="#issues-tabs" title="Permanent link">#</a></h2>
@@ -3432,7 +3436,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 14, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 15, 2022</span>
     
   </small>
 </div>
