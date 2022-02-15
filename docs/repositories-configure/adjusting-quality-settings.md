@@ -4,7 +4,7 @@ The **Quality settings** allow you to configure quality gates for your pull requ
 
 To access the quality settings, open your repository **Settings**, tab **Quality Settings**:
 
-![Quality settings](images/quality-settings.png)<!--TODO Update screenshot-->
+![Quality settings](images/quality-settings.png)
 
 The following sections explain the settings in detail.
 
@@ -17,7 +17,7 @@ These settings configure when Codacy reports pull requests and commits as not up
 
     **If you want to block merging pull requests** that aren't up to standards see [How do I block merging pull requests using Codacy as a quality gate?](../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
 
-![Quality gates](images/quality-settings-gates.png)<!--TODO Update screenshot-->
+![Quality gates](images/quality-settings-gates.png)
 
 -   **New issues are over:** Pull requests or commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is higher than the set value. The default value is 0.
 -   **New security issues are over:** Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value. By default, this setting is off.
