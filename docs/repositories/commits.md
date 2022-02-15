@@ -33,6 +33,7 @@ This area displays the information that identifies the commit (SHA hash, date, a
 This area displays the overview of the code quality metrics for the {{ page.meta.page_name }}:
 
 -   The changes to the following code quality metrics introduced by the {{ page.meta.page_name }} are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
+
     -   **Issues:** Number of new or fixed issues
     -   **Duplication:** Number of new or fixed duplicated code blocks
     -   **Complexity:** Variation of complexity
@@ -43,11 +44,17 @@ This area displays the overview of the code quality metrics for the {{ page.meta
     -   **Coverage variation:** Variation of code coverage relative to the target branch
     -   **Diff coverage:** Code coverage of the lines added or changed by the pull request
 {% endif %}
--   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) that are currently configured on your repository quality settings:
+
+    Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
+
+-   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) that are configured on your repository quality settings:
+
     -   **Green:** The metric passes the quality gate
     -   **Red:** The metric fails the quality gate
     -   **Gray:** There aren't quality gate rules configured for the metric
--   Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), **some metrics may not be calculated** (represented by `-`).
+
+    !!! notes
+        If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.
 
 ![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)<!--TODO Replace screenshot with crop from screenshot above-->
 <!--quality-overview-end-->
