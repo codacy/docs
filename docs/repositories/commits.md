@@ -54,7 +54,7 @@ This area displays the overview of the code quality metrics for the {{ page.meta
     -   **Gray:** There aren't quality gate rules configured for the metric
 
     !!! notes
-        If you make change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the **Issues**, while the color of the remaining metrics update as soon as you save the quality gate rules.
+        If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.
 
 ![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)<!--TODO Replace screenshot with crop from screenshot above-->
 <!--quality-overview-end-->
