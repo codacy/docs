@@ -5,15 +5,12 @@ rss_href: /feed_rss_created.xml
 
 # Removal of PMD (Legacy) February 16, 2022
 
-On the week of February 16th 2022, we'll be removing a tool from Codacy.
+On the week of February 16th 2022 we'll be removing the tool **PMD (Legacy)** from Codacy.
 
-The tool is PMD (Legacy).
+The **PMD (Legacy)** tool runs [PMD 5.8.1](https://github.com/pmd/pmd/releases/tag/pmd_releases%2F5.8.1){: target="_blank"}, and was introduced to allow a smoother migration to PMD 6.
 
-This tool is an old version of PMD which was introduced to allow a smoother migration to PMD 6.
-
-Since PMD 6 is now very stable and is better than PMD 5 in every aspect we're removing it from the platform.
+However, the legacy version of PMD is almost five years old and is no longer being maintained by the tool developers, while PMD 6 is now very stable and provides newer features.
 
 ## If you were using PMD (Legacy)
 
-If you want to continue to use PMD, we suggest to enable the PMD tool.
-Check our [Configuring Code Patterns](../../repositories-configure/configuring-code-patterns.md) page to know how to enable PMD.
+To continue using PMD to analyze your repositories, [enable the **PMD** tool](../../repositories-configure/configuring-code-patterns.md) on the **Code patterns** page of your repositories.
