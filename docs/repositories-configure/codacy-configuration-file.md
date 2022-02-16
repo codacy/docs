@@ -112,7 +112,6 @@ markdownlint
 phpcs
 phpmd
 pmd
-pmd-legacy
 prospector
 psscriptanalyzer
 pylint
