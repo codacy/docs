@@ -25,6 +25,8 @@ On the Organization Overview you have three areas to help you monitor your repos
 -   [Open pull requests](#open-pull-requests)
 -   [Last updated repositories](#last-updated-repositories)
 
+Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams, or to ignore legacy repositories that are no longer maintained.
+
 ![Organization Overview](images/organization-overview.png)<!--TODO Update screenshot, must include the filter-->
 
 The following sections provide a detailed description of each dashboard area.
