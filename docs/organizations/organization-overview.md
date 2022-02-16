@@ -25,7 +25,7 @@ On the Organization Overview you have three areas to help you monitor your repos
 -   [Open pull requests](#open-pull-requests)
 -   [Last updated repositories](#last-updated-repositories)
 
-![Organization Overview](images/organization-overview.png)
+![Organization Overview](images/organization-overview.png)<!--TODO Update screenshot, must include the filter-->
 
 The following sections provide a detailed description of each dashboard area.
 
@@ -33,7 +33,7 @@ The following sections provide a detailed description of each dashboard area.
 
 The **Overall quality** chart compares the repositories in your organization regarding grade, issues, complex files, duplication, and coverage. Each tab displays the average value for the corresponding metric across your repositories.
 
-![Overall quality chart](images/organization-overview-overall-quality.png)
+![Overall quality chart](images/organization-overview-overall-quality.png)<!--TODO Update screenshot-->
 
 -   Hover the mouse pointer over the bars to see the metrics for the corresponding repositories.
 -   Click the bars to navigate directly to the corresponding repository.
@@ -45,7 +45,7 @@ If you have over 8 repositories, the chart displays your repositories grouped by
 
     Read more about this feature and share your feedback on our [public roadmap](https://roadmap.codacy.com/c/86-know-which-repositories-require-more-attention){: target="_blank"}.
 
-![Overall quality chart with grouped repositories](images/organization-overview-overall-quality-grouped.png)
+![Overall quality chart with grouped repositories](images/organization-overview-overall-quality-grouped.png)<!--TODO Update screenshot-->
 
 !!! tip
     If you don't have coverage set up for any of your repositories yet, the coverage tab provides you with instructions on [how to add coverage for your repositories](../coverage-reporter/index.md).
