@@ -27,7 +27,7 @@ On the Organization Overview you have three areas to help you monitor your repos
 
 Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams, or to ignore legacy repositories that are no longer maintained.
 
-![Organization Overview](images/organization-overview.png)<!--TODO Update screenshot, must include the filter-->
+![Organization Overview](images/organization-overview.png)
 
 The following sections provide a detailed description of each dashboard area.
 
@@ -35,7 +35,7 @@ The following sections provide a detailed description of each dashboard area.
 
 The **Overall quality** chart compares the repositories in your organization regarding grade, issues, complex files, duplication, and coverage. Each tab displays the average value for the corresponding metric across your repositories.
 
-![Overall quality chart](images/organization-overview-overall-quality.png)<!--TODO Update screenshot-->
+![Overall quality chart](images/organization-overview-overall-quality.png)
 
 -   Hover the mouse pointer over the bars to see the metrics for the corresponding repositories.
 -   Click the bars to navigate directly to the corresponding repository.
@@ -47,7 +47,7 @@ If you have over 8 repositories, the chart displays your repositories grouped by
 
     Read more about this feature and share your feedback on our [public roadmap](https://roadmap.codacy.com/c/86-know-which-repositories-require-more-attention){: target="_blank"}.
 
-![Overall quality chart with grouped repositories](images/organization-overview-overall-quality-grouped.png)<!--TODO Update screenshot-->
+![Overall quality chart with grouped repositories](images/organization-overview-overall-quality-grouped.png)
 
 !!! tip
     If you don't have coverage set up for any of your repositories yet, the coverage tab provides you with instructions on [how to add coverage for your repositories](../coverage-reporter/index.md).
@@ -69,7 +69,7 @@ The **Last updated** tab displays open pull requests sorted by the date of updat
 
 ## Last updated repositories
 
-The **Last updated repositories** list displays the last updated repositories, sorted by reverse date of the last update. Each card displays the date of the last update and the current grade of the repository.
+The **Last updated repositories** list displays the last updated repositories, sorted by reverse date of the last update. Each item displays the date of the last update and the current grade of the repository.
 
 Click **See all** to see all repositories in your organization.
 
