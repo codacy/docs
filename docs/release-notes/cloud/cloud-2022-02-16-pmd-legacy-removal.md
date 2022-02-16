@@ -14,3 +14,5 @@ However, the legacy version of PMD is almost five years old and is no longer bei
 ## If you were using PMD (Legacy)
 
 To continue using PMD to analyze your repositories, [enable the **PMD** tool](../../repositories-configure/configuring-code-patterns.md) on the **Code patterns** page of your repositories.
+
+If you have any questions or need help, please contact <mailto:support@codacy.com>.
