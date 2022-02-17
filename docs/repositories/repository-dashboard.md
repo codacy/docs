@@ -58,10 +58,10 @@ The **Coverage** area displays the percentage of lines of code on the selected b
 
 Click **See all files** to open the [list of files](files.md) in the repository.
 
-![Coverage](images/repository-dashboard-coverage.png)
-
 !!! tip
     If you don't have coverage set up for your repository yet, the Coverage area provides you with instructions on [how to add coverage for your repository](../coverage-reporter/index.md).
+
+![Coverage](images/repository-dashboard-coverage.png)
 
 ## Open pull requests
 
