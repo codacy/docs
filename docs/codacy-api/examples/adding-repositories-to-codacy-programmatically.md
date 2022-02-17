@@ -88,7 +88,7 @@ for repo in $(curl -s https://api.github.com/orgs/$GITHUB_ORG_NAME/repos -H "Aut
          break
          ;;
   esac
-  sleep 10 # Wait 10 seconds
+  sleep 60 # Pause between repositories
 done
 ```
 
