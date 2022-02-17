@@ -136,6 +136,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.codacy.com/codacy-api/examples/adding-people-to-codacy-programmatically/</loc>
+         <lastmod>2022-02-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.codacy.com/codacy-api/examples/adding-repositories-to-codacy-programmatically/</loc>
          <lastmod>2022-02-17</lastmod>
          <changefreq>daily</changefreq>

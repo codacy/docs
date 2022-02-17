@@ -8,13 +8,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Release notes for Codacy Self-hosted v3.4.0.">
+        <meta name="description" content="Example of how to add people programmatically using Codacy's API v3 endpoint addPeopleToOrganization.">
       
       
-        <meta http-equiv="last-modified" content="2021-09-06 17:20:35">  
+        <meta http-equiv="last-modified" content="2022-02-17 19:00:37">  
       
       
-        <link rel="canonical" href="https://docs.codacy.com/release-notes/self-hosted/self-hosted-v3.4.0/">
+        <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/adding-people-to-codacy-programmatically/">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Self-hosted v3.4.0 - Codacy docs</title>
+        <title>Adding people to Codacy programmatically - Codacy docs</title>
       
     
     
@@ -50,8 +50,6 @@
       <link rel="stylesheet" href="../../../assets/stylesheets/version-select.css">
     
     
-      <link rel="alternate" type="application/rss+xml" title="Codacy release notes RSS feed" href="/feed_rss_created.xml">
-    
     
       
         
@@ -72,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#self-hosted-v340" class="md-skip">
+        <a href="#adding-people-to-codacy-programmatically" class="md-skip">
           Skip to content
         </a>
       
@@ -963,10 +961,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" checked>
     
     <label class="md-nav__link" for="nav-8">
       Codacy API
@@ -990,7 +990,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/using-the-codacy-api/" title="Using the Codacy API" class="md-nav__link">
+    <a href="../../using-the-codacy-api/" title="Using the Codacy API" class="md-nav__link">
       Using the Codacy API
     </a>
   </li>
@@ -1002,7 +1002,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/api-tokens/" title="API tokens" class="md-nav__link">
+    <a href="../../api-tokens/" title="API tokens" class="md-nav__link">
       API tokens
     </a>
   </li>
@@ -1036,10 +1036,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5" checked>
     
     <label class="md-nav__link" for="nav-8-5">
       Examples
@@ -1061,11 +1063,54 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/adding-people-to-codacy-programmatically/" title="Adding people to Codacy programmatically" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Adding people to Codacy programmatically
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Adding people to Codacy programmatically" class="md-nav__link md-nav__link--active">
       Adding people to Codacy programmatically
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#example-adding-people-from-a-file-containing-emails" class="md-nav__link">
+    Example: Adding people from a file containing emails
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#see-also" class="md-nav__link">
+    See also
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -1075,7 +1120,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/adding-repositories-to-codacy-programmatically/" title="Adding repositories to Codacy programmatically" class="md-nav__link">
+    <a href="../adding-repositories-to-codacy-programmatically/" title="Adding repositories to Codacy programmatically" class="md-nav__link">
       Adding repositories to Codacy programmatically
     </a>
   </li>
@@ -1087,7 +1132,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/creating-project-api-tokens-programmatically/" title="Creating project API tokens programmatically" class="md-nav__link">
+    <a href="../creating-project-api-tokens-programmatically/" title="Creating project API tokens programmatically" class="md-nav__link">
       Creating project API tokens programmatically
     </a>
   </li>
@@ -1099,7 +1144,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/obtaining-code-quality-metrics-for-files/" title="Obtaining code quality metrics for files" class="md-nav__link">
+    <a href="../obtaining-code-quality-metrics-for-files/" title="Obtaining code quality metrics for files" class="md-nav__link">
       Obtaining code quality metrics for files
     </a>
   </li>
@@ -1111,7 +1156,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/obtaining-current-issues-in-repositories/" title="Obtaining current issues in repositories" class="md-nav__link">
+    <a href="../obtaining-current-issues-in-repositories/" title="Obtaining current issues in repositories" class="md-nav__link">
       Obtaining current issues in repositories
     </a>
   </li>
@@ -2085,12 +2130,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
     
     <label class="md-nav__link" for="nav-11">
       Release notes
@@ -2114,7 +2157,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../" title="Codacy release notes" class="md-nav__link">
+    <a href="../../../release-notes/" title="Codacy release notes" class="md-nav__link">
       Codacy release notes
     </a>
   </li>
@@ -2176,7 +2219,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2022-02-16-pmd-legacy-removal/" title="Removal of PMD (Legacy) February 16, 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal/" title="Removal of PMD (Legacy) February 16, 2022" class="md-nav__link">
       Removal of PMD (Legacy) February 16, 2022
     </a>
   </li>
@@ -2188,7 +2231,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2022-01/" title="Cloud January 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-01/" title="Cloud January 2022" class="md-nav__link">
       Cloud January 2022
     </a>
   </li>
@@ -2230,7 +2273,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2021-12/" title="Cloud December 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-12/" title="Cloud December 2021" class="md-nav__link">
       Cloud December 2021
     </a>
   </li>
@@ -2242,7 +2285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2021-11/" title="Cloud November 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-11/" title="Cloud November 2021" class="md-nav__link">
       Cloud November 2021
     </a>
   </li>
@@ -2254,7 +2297,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2021-10/" title="Cloud October 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-10/" title="Cloud October 2021" class="md-nav__link">
       Cloud October 2021
     </a>
   </li>
@@ -2266,7 +2309,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2021-09/" title="Cloud September 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-09/" title="Cloud September 2021" class="md-nav__link">
       Cloud September 2021
     </a>
   </li>
@@ -2278,7 +2321,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2021-11-02-legacy-organizations/" title="End of support for legacy manual organizations November 2, 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-11-02-legacy-organizations/" title="End of support for legacy manual organizations November 2, 2021" class="md-nav__link">
       End of support for legacy manual organizations November 2, 2021
     </a>
   </li>
@@ -2290,7 +2333,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2021-08/" title="Cloud August 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-08/" title="Cloud August 2021" class="md-nav__link">
       Cloud August 2021
     </a>
   </li>
@@ -2302,7 +2345,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2021-07-03-scheduled-db-maintenance/" title="Performing scheduled database maintenance July 3, 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance/" title="Performing scheduled database maintenance July 3, 2021" class="md-nav__link">
       Performing scheduled database maintenance July 3, 2021
     </a>
   </li>
@@ -2344,7 +2387,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens/" title="Deprecating HTTP headers for API tokens April 1, 2020" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens/" title="Deprecating HTTP headers for API tokens April 1, 2020" class="md-nav__link">
       Deprecating HTTP headers for API tokens April 1, 2020
     </a>
   </li>
@@ -2356,7 +2399,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal/" title="Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal/" title="Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020" class="md-nav__link">
       Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020
     </a>
   </li>
@@ -2368,7 +2411,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2020-02-github-apps/" title="Codacy now supports GitHub Apps February 2020" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2020-02-github-apps/" title="Codacy now supports GitHub Apps February 2020" class="md-nav__link">
       Codacy now supports GitHub Apps February 2020
     </a>
   </li>
@@ -2410,7 +2453,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2019-11-15/" title="Cloud November 15, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-11-15/" title="Cloud November 15, 2019" class="md-nav__link">
       Cloud November 15, 2019
     </a>
   </li>
@@ -2422,7 +2465,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2019-10-30/" title="Cloud October 30, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-10-30/" title="Cloud October 30, 2019" class="md-nav__link">
       Cloud October 30, 2019
     </a>
   </li>
@@ -2434,7 +2477,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2019-09-05/" title="Cloud September 5, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-09-05/" title="Cloud September 5, 2019" class="md-nav__link">
       Cloud September 5, 2019
     </a>
   </li>
@@ -2446,7 +2489,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2019-08-07/" title="Cloud August 7, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-08-07/" title="Cloud August 7, 2019" class="md-nav__link">
       Cloud August 7, 2019
     </a>
   </li>
@@ -2458,7 +2501,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2019-06-18/" title="Cloud June 18, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-06-18/" title="Cloud June 18, 2019" class="md-nav__link">
       Cloud June 18, 2019
     </a>
   </li>
@@ -2470,7 +2513,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2019-05-20/" title="Cloud May 20, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-05-20/" title="Cloud May 20, 2019" class="md-nav__link">
       Cloud May 20, 2019
     </a>
   </li>
@@ -2482,7 +2525,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2019-05-05/" title="Cloud May 5, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-05-05/" title="Cloud May 5, 2019" class="md-nav__link">
       Cloud May 5, 2019
     </a>
   </li>
@@ -2494,7 +2537,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2019-04-08/" title="Cloud April 8, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-04-08/" title="Cloud April 8, 2019" class="md-nav__link">
       Cloud April 8, 2019
     </a>
   </li>
@@ -2506,7 +2549,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2019-03-29/" title="Cloud March 29, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-03-29/" title="Cloud March 29, 2019" class="md-nav__link">
       Cloud March 29, 2019
     </a>
   </li>
@@ -2518,7 +2561,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2019-02-18-bitbucket-changes/" title="Bitbucket changes February 18, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-02-18-bitbucket-changes/" title="Bitbucket changes February 18, 2019" class="md-nav__link">
       Bitbucket changes February 18, 2019
     </a>
   </li>
@@ -2530,7 +2573,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2019-01-02/" title="Cloud January 2, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-01-02/" title="Cloud January 2, 2019" class="md-nav__link">
       Cloud January 2, 2019
     </a>
   </li>
@@ -2572,7 +2615,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2018-11-16/" title="Cloud November 16, 2018" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2018-11-16/" title="Cloud November 16, 2018" class="md-nav__link">
       Cloud November 16, 2018
     </a>
   </li>
@@ -2584,7 +2627,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2018-11-02/" title="Cloud November 2, 2018" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2018-11-02/" title="Cloud November 2, 2018" class="md-nav__link">
       Cloud November 2, 2018
     </a>
   </li>
@@ -2596,7 +2639,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2018-10-19/" title="Cloud October 19, 2018" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2018-10-19/" title="Cloud October 19, 2018" class="md-nav__link">
       Cloud October 19, 2018
     </a>
   </li>
@@ -2608,7 +2651,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../cloud/cloud-2018-07-23/" title="Cloud July 23, 2018" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2018-07-23/" title="Cloud July 23, 2018" class="md-nav__link">
       Cloud July 23, 2018
     </a>
   </li>
@@ -2628,12 +2671,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-3" type="checkbox" id="nav-11-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-3" type="checkbox" id="nav-11-3">
     
     <label class="md-nav__link" for="nav-11-3">
       Self-hosted
@@ -2682,7 +2723,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v5.1.0/" title="Self-hosted v5.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v5.1.0/" title="Self-hosted v5.1.0" class="md-nav__link">
       Self-hosted v5.1.0
     </a>
   </li>
@@ -2694,7 +2735,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v5.0.0/" title="Self-hosted v5.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v5.0.0/" title="Self-hosted v5.0.0" class="md-nav__link">
       Self-hosted v5.0.0
     </a>
   </li>
@@ -2736,7 +2777,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v4.4.0/" title="Self-hosted v4.4.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.4.0/" title="Self-hosted v4.4.0" class="md-nav__link">
       Self-hosted v4.4.0
     </a>
   </li>
@@ -2748,7 +2789,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v4.3.0/" title="Self-hosted v4.3.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.3.0/" title="Self-hosted v4.3.0" class="md-nav__link">
       Self-hosted v4.3.0
     </a>
   </li>
@@ -2760,7 +2801,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v4.2.0/" title="Self-hosted v4.2.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.2.0/" title="Self-hosted v4.2.0" class="md-nav__link">
       Self-hosted v4.2.0
     </a>
   </li>
@@ -2772,7 +2813,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v4.1.0/" title="Self-hosted v4.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.1.0/" title="Self-hosted v4.1.0" class="md-nav__link">
       Self-hosted v4.1.0
     </a>
   </li>
@@ -2784,7 +2825,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v4.0.1/" title="Self-hosted v4.0.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.0.1/" title="Self-hosted v4.0.1" class="md-nav__link">
       Self-hosted v4.0.1
     </a>
   </li>
@@ -2796,7 +2837,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v4.0.0/" title="Self-hosted v4.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.0.0/" title="Self-hosted v4.0.0" class="md-nav__link">
       Self-hosted v4.0.0
     </a>
   </li>
@@ -2811,12 +2852,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-3-3" type="checkbox" id="nav-11-3-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-3-3" type="checkbox" id="nav-11-3-3">
     
     <label class="md-nav__link" for="nav-11-3-3">
       v3
@@ -2840,7 +2879,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v3.5.1/" title="Self-hosted v3.5.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.5.1/" title="Self-hosted v3.5.1" class="md-nav__link">
       Self-hosted v3.5.1
     </a>
   </li>
@@ -2852,7 +2891,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v3.5.0/" title="Self-hosted v3.5.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.5.0/" title="Self-hosted v3.5.0" class="md-nav__link">
       Self-hosted v3.5.0
     </a>
   </li>
@@ -2862,61 +2901,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Self-hosted v3.4.0
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Self-hosted v3.4.0" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.4.0/" title="Self-hosted v3.4.0" class="md-nav__link">
       Self-hosted v3.4.0
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#product-enhancements" class="md-nav__link">
-    Product enhancements
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#bug-fixes" class="md-nav__link">
-    Bug fixes
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#tool-versions" class="md-nav__link">
-    Tool versions
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -2926,7 +2915,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v3.3.0/" title="Self-hosted v3.3.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.3.0/" title="Self-hosted v3.3.0" class="md-nav__link">
       Self-hosted v3.3.0
     </a>
   </li>
@@ -2938,7 +2927,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v3.2.0/" title="Self-hosted v3.2.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.2.0/" title="Self-hosted v3.2.0" class="md-nav__link">
       Self-hosted v3.2.0
     </a>
   </li>
@@ -2950,7 +2939,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v3.1.0/" title="Self-hosted v3.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.1.0/" title="Self-hosted v3.1.0" class="md-nav__link">
       Self-hosted v3.1.0
     </a>
   </li>
@@ -2962,7 +2951,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v3.0.0/" title="Self-hosted v3.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.0.0/" title="Self-hosted v3.0.0" class="md-nav__link">
       Self-hosted v3.0.0
     </a>
   </li>
@@ -3004,7 +2993,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v2.2.1/" title="Self-hosted v2.2.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.2.1/" title="Self-hosted v2.2.1" class="md-nav__link">
       Self-hosted v2.2.1
     </a>
   </li>
@@ -3016,7 +3005,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v2.2.0/" title="Self-hosted v2.2.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.2.0/" title="Self-hosted v2.2.0" class="md-nav__link">
       Self-hosted v2.2.0
     </a>
   </li>
@@ -3028,7 +3017,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v2.1.1/" title="Self-hosted v2.1.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.1.1/" title="Self-hosted v2.1.1" class="md-nav__link">
       Self-hosted v2.1.1
     </a>
   </li>
@@ -3040,7 +3029,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v2.1.0/" title="Self-hosted v2.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.1.0/" title="Self-hosted v2.1.0" class="md-nav__link">
       Self-hosted v2.1.0
     </a>
   </li>
@@ -3052,7 +3041,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v2.0.0/" title="Self-hosted v2.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.0.0/" title="Self-hosted v2.0.0" class="md-nav__link">
       Self-hosted v2.0.0
     </a>
   </li>
@@ -3094,7 +3083,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v1.5.0/" title="Self-hosted v1.5.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.5.0/" title="Self-hosted v1.5.0" class="md-nav__link">
       Self-hosted v1.5.0
     </a>
   </li>
@@ -3106,7 +3095,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v1.4.0/" title="Self-hosted v1.4.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.4.0/" title="Self-hosted v1.4.0" class="md-nav__link">
       Self-hosted v1.4.0
     </a>
   </li>
@@ -3118,7 +3107,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v1.3.0/" title="Self-hosted v1.3.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.3.0/" title="Self-hosted v1.3.0" class="md-nav__link">
       Self-hosted v1.3.0
     </a>
   </li>
@@ -3130,7 +3119,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v1.2.0/" title="Self-hosted v1.2.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.2.0/" title="Self-hosted v1.2.0" class="md-nav__link">
       Self-hosted v1.2.0
     </a>
   </li>
@@ -3142,7 +3131,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v1.1.0/" title="Self-hosted v1.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.1.0/" title="Self-hosted v1.1.0" class="md-nav__link">
       Self-hosted v1.1.0
     </a>
   </li>
@@ -3154,7 +3143,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v1.0.1/" title="Self-hosted v1.0.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.0.1/" title="Self-hosted v1.0.1" class="md-nav__link">
       Self-hosted v1.0.1
     </a>
   </li>
@@ -3166,7 +3155,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../self-hosted-v1.0.0/" title="Self-hosted v1.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.0.0/" title="Self-hosted v1.0.0" class="md-nav__link">
       Self-hosted v1.0.0
     </a>
   </li>
@@ -3215,79 +3204,91 @@
                   
                 
                 
-                <h1 id="self-hosted-v340">Self-hosted v3.4.0<a class="headerlink" href="#self-hosted-v340" title="Permanent link">#</a></h1>
-<p>These release notes are for <a href="https://github.com/codacy/chart/releases/tag/3.4.0" target="_blank">Codacy Self-hosted v3.4.0</a>, released on March 12, 2021.</p>
-<p>To upgrade Codacy, follow <a href="../../../chart/maintenance/upgrade/">these instructions</a>.</p>
-<h2 id="product-enhancements">Product enhancements<a class="headerlink" href="#product-enhancements" title="Permanent link">#</a></h2>
+                <h1 id="adding-people-to-codacy-programmatically">Adding people to Codacy programmatically<a class="headerlink" href="#adding-people-to-codacy-programmatically" title="Permanent link">#</a></h1>
+<p>There are scenarios where manually adding people on the Codacy UI is inconvenient or time-consuming. For example, you're adding a large number of people to Codacy, such as when initially onboarding all developers within a team.</p>
+<p>To add people programmatically, use Codacy's API v3 endpoint <a href="https://app.codacy.com/api/api-docs#addpeopletoorganization" target="_blank">addPeopleToOrganization</a> by performing an HTTP POST request to <code>/people</code>, specifying a list of email addresses in the body of the request:</p>
+<div class="highlight"><pre><span></span><code>curl -X POST https://app.codacy.com/api/v3/organizations/&lt;GIT_PROVIDER&gt;/&lt;ORGANIZATION&gt;/people <span class="se">\</span>
+  -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
+  -H <span class="s1">&#39;api-token: &lt;API_KEY&gt;&#39;</span> <span class="se">\</span>
+  -d <span class="s1">&#39;[&quot;&lt;EMAIL#1&gt;&quot;, &quot;&lt;EMAIL#2&gt;&quot;]&#39;</span>
+</code></pre></div>
+<p>Substitute the placeholders with your own values:</p>
 <ul>
-<li>It's now possible to <a href="https://docs.codacy.com/v3.4/chart/troubleshoot/troubleshoot/">see the current Codacy Self-hosted version</a> under the avatar menu. (CY-3767)</li>
-<li>Now, Codacy allows <a href="https://docs.codacy.com/v3.4/organizations/roles-and-permissions-for-synced-organizations/#configure-ignore-issues">configuring who is allowed to ignore issues</a> on all supported Git providers. (CY-3581)</li>
-<li>Now, the <strong>Code patterns</strong> page allows you to <a href="https://docs.codacy.com/v3.4/repositories-configure/code-patterns/#pattern-filters">enable or disable all code patterns in a category</a> with a single click. (CY-3527)</li>
-<li>Added the following Codacy API endpoints:<ul>
-<li><strong><a href="https://api.codacy.com/api/api-docs#listfiles">listFiles</a></strong> returns the most recent analysis information for the files in a repository as available on the <a href="https://docs.codacy.com/v3.4/repositories/files-view/">Files page</a>. (CY-3540)</li>
-<li><strong><a href="https://api.codacy.com/api/api-docs#searchrepositoryissues">searchRepositoryIssues</a></strong> returns information about the issues that Codacy found in a repository as available on the <a href="https://docs.codacy.com/repositories/issues-view/">Issues page</a>. (CY-3468)</li>
-<li><strong><a href="https://api.codacy.com/api/api-docs#searchrepositoryignoredissues">searchRepositoryIgnoredIssues</a></strong> returns information about the issues that Codacy found in a repository and were <a href="https://docs.codacy.com/v3.4/repositories/issues/#restoring-ignored-issues">ignored on the Codacy UI</a>. (CY-3498)</li>
-</ul>
+<li><strong>API_KEY:</strong> <a href="../../api-tokens/#account-api-tokens">Account API token</a> used to authenticate on the Codacy API.</li>
+<li>
+<p><strong>GIT_PROVIDER:</strong> Git provider hosting of the organization, using one of the values in the table below. For example, <code>gh</code> for GitHub Cloud.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Git provider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gh</code></td>
+<td>GitHub Cloud</td>
+</tr>
+<tr>
+<td><code>ghe</code></td>
+<td>GitHub Enterprise</td>
+</tr>
+<tr>
+<td><code>gl</code></td>
+<td>GitLab Cloud</td>
+</tr>
+<tr>
+<td><code>gle</code></td>
+<td>GitLab Enterprise</td>
+</tr>
+<tr>
+<td><code>bb</code></td>
+<td>Bitbucket Cloud</td>
+</tr>
+<tr>
+<td><code>bbe</code></td>
+<td>Bitbucket Server</td>
+</tr>
+</tbody>
+</table>
 </li>
-<li>You can now activate automatic <a href="https://docs.codacy.com/repositories-configure/integrations/github-integration/#suggest-fixes">GitHub fix suggestions</a> to issues identified by ESLint. This way, instead of having to do most fixes by themselves, your team members can save time by approving the suggestion to have the code automatically updated and merged. (CY-3439)</li>
-<li>Improved the <a href="https://docs.codacy.com/v3.4/getting-started/getting-started-with-codacy/">onboarding flow for new users</a> to simplify adding organizations and repositories and help troubleshoot common issues. (CY-3405)</li>
-<li>Now, the <a href="https://docs.codacy.com/v3.4/repositories/repository-dashboard/">Repository Dashboard</a> and <a href="https://docs.codacy.com/v3.4/repositories/issues/">Issues page</a> include links to the corresponding documentation to help you make the most from the code quality information provided by Codacy and to assist you in configuring your repository settings. (CY-3303)</li>
-<li>Now, Codacy has an improved user experience to manage people in organizations. (CY-2954)</li>
-<li>Now, the Repositories list automatically suggests repositories that you haven't added to Codacy yet when you <a href="https://docs.codacy.com/v3.4/organizations/managing-repositories/#adding-a-repository">search for a repository</a>. (CY-2363)</li>
-<li>Codacy Self-hosted now <a href="https://docs.codacy.com/v3.4/chart/requirements/#kubernetes-or-microk8s-cluster-setup">supports MicroK8s version 1.20.*</a>.</li>
+<li>
+<p><strong>ORGANIZATION:</strong> Name of the organization on the Git provider. For example, <code>codacy</code>. You must have admin permissions over the organization on the Git provider.</p>
+</li>
+<li>
+<p><strong>EMAIL#1...N:</strong> Email addresses of the people to be added. For example, <code>no-reply@codacy.com</code>.</p>
+</li>
 </ul>
-<h2 id="bug-fixes">Bug fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">#</a></h2>
+<h2 id="example-adding-people-from-a-file-containing-emails">Example: Adding people from a file containing emails<a class="headerlink" href="#example-adding-people-from-a-file-containing-emails" title="Permanent link">#</a></h2>
+<p>We provide an example Bash script that adds all emails in a text file to Codacy. We suggest that you adapt the script to your specific scenario.</p>
+<p>The example script:</p>
+<ol>
+<li>Defines the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API.</li>
+<li>Defines the path and filename of the file containing the email addresses list.</li>
+<li>Uses <a href="https://github.com/stedolan/jq" target="_blank">jq</a> to read the email addresses list from a file.</li>
+<li>Calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#addpeopletoorganization" target="_blank">addPeopleToOrganization</a> to add a list of email addresses to Codacy.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
+<span class="nv">FILENAME</span><span class="o">=</span><span class="s2">&quot;emails.txt&quot;</span>
+
+<span class="nv">EMAILS</span><span class="o">=</span><span class="sb">`</span>cat <span class="nv">$FILENAME</span> <span class="p">|</span> jq --raw-input <span class="s1">&#39;[inputs | select(length&gt;0)]&#39;</span><span class="sb">`</span>
+
+curl -X POST <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/gh/codacy/people&quot;</span> <span class="se">\</span>
+     -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
+     -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
+     -d <span class="nv">$EMAILS</span>
+</code></pre></div>
+<p>Expected format of the file containing the email addresses list:</p>
+<div class="highlight"><pre><span></span><code>$ cat emails.txt
+email1@codacy.com
+email2@codacy.com
+email3@codacy.com
+
+email4@codacy.com
+</code></pre></div>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
-<li>Fixed wrong message when disabling patterns on the Issues page. (CY-3745)</li>
-<li>Fixed an issue that caused the configuration value containing the username of the metrics database to be used as the username for <span class="skip-vale">jobsdb</span>. (CY-3697)</li>
-<li>Fixed an issue that caused the security dashboard to allow enabling patterns for tools using a configuration file. (CY-3684)</li>
-<li>Fixed an issue that caused Sonar C# to detect issues related to patterns not enabled in the configuration. (CY-3607)</li>
-</ul>
-<h2 id="tool-versions">Tool versions<a class="headerlink" href="#tool-versions" title="Permanent link">#</a></h2>
-<p>This version of Codacy Self-hosted includes the tool versions below. The tools that were updated on this version are highlighted in bold:</p>
-<ul>
-<li>Ameba 0.13.1</li>
-<li>Bandit 1.7.0</li>
-<li>Brakeman 4.3.1</li>
-<li>bundler-audit 0.6.1</li>
-<li>Checkstyle 8.37</li>
-<li>Clang-Tidy 10.0.1</li>
-<li>CodeNarc 1.6</li>
-<li>CoffeeLint 2.1.0</li>
-<li>Cppcheck 2.2</li>
-<li>Credo 1.4.0</li>
-<li>CSSLint 1.0.5</li>
-<li>detekt 1.14.2</li>
-<li>ESLint 7.18.0</li>
-<li>Faux-Pas 1.7.2</li>
-<li>Flawfinder 2.0.11</li>
-<li>Gosec 2.3.0</li>
-<li>Hadolint 1.18.2</li>
-<li>Jackson Linter 2.10.2</li>
-<li>JSHint 2.12.0</li>
-<li>PHP_CodeSniffer 3.5.8</li>
-<li>PHP Mess Detector 2.8.1</li>
-<li>PMD 6.28.0</li>
-<li>PMD (Legacy) 5.8.1</li>
-<li><strong>Prospector 1.3.1 (updated from 1.2.0)</strong></li>
-<li>PSScriptAnalyzer 1.18.3</li>
-<li>Pylint 1.9.5</li>
-<li>Pylint (Python 3) 2.6.0</li>
-<li>remark-lint 7.0.1</li>
-<li>Revive 1.0.2</li>
-<li><strong>RuboCop 1.11.0 (updated from 1.9.1)</strong></li>
-<li><strong>Scalastyle 1.5.0 (updated from 1.0.0, adds support for Scala 2.13)</strong></li>
-<li>ShellCheck v0.7.1</li>
-<li><strong>Sonar C# 8.13 (updated from 8.15)</strong></li>
-<li>Sonar Visual Basic 8.15</li>
-<li>SpotBugs 4.1.2</li>
-<li>SQLint 0.1.9</li>
-<li>Staticcheck 2020.1.6</li>
-<li><strong>Stylelint 13.11.0 (updated from 13.8.0)</strong></li>
-<li>SwiftLint 0.39.2</li>
-<li>Tailor 0.12.0</li>
-<li>TSLint 6.1.3</li>
-<li>TSQLLint 1.11.1</li>
+<li><a href="../../api-tokens/">API tokens</a></li>
 </ul>
               
               
@@ -3332,7 +3333,7 @@
           <br>
         </div>
         <p>
-          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Self-hosted v3.4.0%22">create a more detailed issue on our GitHub repository</a>.
+          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Adding people to Codacy programmatically%22">create a more detailed issue on our GitHub repository</a>.
         </p>
       </div>
     </div>
@@ -3340,7 +3341,7 @@
       Thanks for helping improve the Codacy documentation.
     </p>
     <p>
-      If you have a question or need help, you can <a href="https://community.codacy.com/">try looking for answers on our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Self-hosted v3.4.0">support@codacy.com</a>.
+      If you have a question or need help, you can <a href="https://community.codacy.com/">try looking for answers on our community</a> or contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Adding people to Codacy programmatically">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -3437,7 +3438,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 6, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 17, 2022</span>
     
   </small>
 </div>
