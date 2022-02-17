@@ -705,6 +705,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2022:
+                      - release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal.md
                       - release-notes/cloud/cloud-2022-01.md
                 - 2021:
                       - release-notes/cloud/cloud-2021-12.md
