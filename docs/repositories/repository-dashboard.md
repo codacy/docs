@@ -14,8 +14,6 @@ The top of the Repository Dashboard displays:
 -   The name and code quality grade of the repository
 -   A drop-down list that selects which branch of your repository to display on the dashboard
 
-![Changing the branch](images/repository-dashboard-select-branch.png)
-
 On the Repository Dashboard you have four areas to help you monitor your repository:
 
 -   [Quality evolution chart](#quality-evolution-chart)
