@@ -46,7 +46,7 @@ The example script:
 
 ```bash
 CODACY_API_TOKEN="<your account API token>"
-FILENAME="emails.text"
+FILENAME="emails.txt"
 
 EMAILS=`cat $FILENAME | jq --raw-input '[inputs | select(length>0)]'`
 
