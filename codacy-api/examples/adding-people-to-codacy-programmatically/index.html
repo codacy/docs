@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to add people programmatically using Codacy's API v3 endpoint addPeopleToOrganization.">
       
       
-        <meta http-equiv="last-modified" content="2022-02-18 10:57:02">  
+        <meta http-equiv="last-modified" content="2022-02-18 12:43:14">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/adding-people-to-codacy-programmatically/">
@@ -3265,18 +3265,18 @@
 <ol>
 <li>Defines the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API.</li>
 <li>Defines the path and filename of the file containing the email addresses list.</li>
-<li>Uses <a href="https://github.com/stedolan/jq" target="_blank">jq</a> to read the email addresses list from a file.</li>
+<li>Uses <code>awk</code> and <code>sed</code> to read the email addresses list from a file.</li>
 <li>Calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#addpeopletoorganization" target="_blank">addPeopleToOrganization</a> to add a list of email addresses to Codacy.</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
 <span class="nv">FILENAME</span><span class="o">=</span><span class="s2">&quot;emails.txt&quot;</span>
 
-<span class="nv">EMAILS</span><span class="o">=</span><span class="sb">`</span>cat <span class="nv">$FILENAME</span> <span class="p">|</span> jq --raw-input <span class="s1">&#39;[inputs | select(length&gt;0)]&#39;</span><span class="sb">`</span>
+<span class="nv">EMAILS</span><span class="o">=</span><span class="sb">`</span>awk -vORS<span class="o">=</span>, <span class="s1">&#39;{if(length($1)&gt;0) printf(&quot;\&quot;%s\&quot;,&quot;, $1)}&#39;</span> <span class="nv">$FILENAME</span> <span class="p">|</span> sed <span class="s1">&#39;s/,$//&#39;</span><span class="sb">`</span>
 
 curl -X POST <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/gh/codacy/people&quot;</span> <span class="se">\</span>
      -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
      -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
-     -d <span class="nv">$EMAILS</span>
+     -d <span class="s2">&quot;[</span><span class="nv">$EMAILS</span><span class="s2">]&quot;</span>
 </code></pre></div>
 <p>Expected format of the file containing the email addresses list:</p>
 <div class="highlight"><pre><span></span><code>$ cat emails.txt
