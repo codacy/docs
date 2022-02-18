@@ -41,19 +41,19 @@ The example script:
 
 1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
 1.  Defines the path and filename of the file containing the email addresses list.
-1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to read the email addresses list from a file.
+1.  Uses `awk` and `sed` to read the email addresses list from a file.
 1.  Calls the Codacy API endpoint [addPeopleToOrganization](https://app.codacy.com/api/api-docs#addpeopletoorganization){: target="_blank"} to add a list of email addresses to Codacy.
 
 ```bash
 CODACY_API_TOKEN="<your account API token>"
 FILENAME="emails.txt"
 
-EMAILS=`cat $FILENAME | jq --raw-input '[inputs | select(length>0)]'`
+EMAILS=`awk -vORS=, 'length($1)>0' $FILENAME | sed 's/,$//'`
 
 curl -X POST "https://app.codacy.com/api/v3/organizations/gh/codacy/people" \
      -H 'Content-Type: application/json' \
      -H "api-token: $CODACY_API_TOKEN" \
-     -d $EMAILS
+     -d "[$EMAILS]"
 ```
 
 Expected format of the file containing the email addresses list:
