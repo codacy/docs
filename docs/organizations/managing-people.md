@@ -24,6 +24,9 @@ To join or add an organization after having complete the signup process, click *
 
 **On Codacy Cloud**, organization owners can also invite team members to their organization on Codacy. This is useful to allow Codacy to analyze commits in private repositories by contributors who haven't signed up to Codacy or joined the organization yet.
 
+!!! tip
+    You can also use the Codacy API to [add people to your Codacy organization](../codacy-api/examples/adding-people-to-codacy-programmatically.md). This is useful while adding a large amount of people or to automatically add new members of your Git provider organization to Codacy.
+
 To add members to your organization:
 
 1.  Open your organization **Settings**, page **People**, and click the button **Add people**.
