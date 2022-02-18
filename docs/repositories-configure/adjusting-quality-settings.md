@@ -23,11 +23,7 @@ These settings configure when Codacy reports pull requests and commits as not up
 -   **New security issues are over:** Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value. By default, this setting is off.
 -   **Complexity is over:** Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value. By default, this setting is off.
 -   **Duplication is over:** Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value. By default, this setting is off.
--   **Diff coverage is under:** Pull requests are marked not up to standards if the code coverage of the lines added or changed by the pull request is lower than the set value. By default, this setting is off.
-
-    !!! note
-        The rule **Diff coverage is under** is only available for pull requests.
-
+-   **Diff coverage is under:** Pull requests are marked not up to standards if the diff coverage of the pull request is lower than the set value. By default, this setting is off. This rule is only available for pull requests.
 -   **Coverage variation is under:** Pull requests or commits are marked not up to standards if they introduce a variation to coverage lower than the set value. The maximum value is 1%. By default, this setting is off.
 
     !!! tip
