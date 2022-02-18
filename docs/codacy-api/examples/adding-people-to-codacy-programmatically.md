@@ -48,7 +48,7 @@ The example script:
 CODACY_API_TOKEN="<your account API token>"
 FILENAME="emails.txt"
 
-EMAILS=`awk -vORS=, 'length($1)>0' $FILENAME | sed 's/,$//'`
+EMAILS=`awk -vORS=, '{if(length($1)>0) printf("\"%s\",", $1)}' $FILENAME | sed 's/,$//'`
 
 curl -X POST "https://app.codacy.com/api/v3/organizations/gh/codacy/people" \
      -H 'Content-Type: application/json' \
