@@ -21,16 +21,16 @@ curl -X POST https://app.codacy.com/api/v3/repositories \
 Substitute the placeholders with your own values:
 
 -   **API_KEY:** [Account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
--   **GIT_PROVIDER:** Git provider hosting the repository, using one of the values in the table below. For example, `gh` for GitHub Cloud.
+-   **GIT_PROVIDER:** Git provider hosting of the repository, using one of the values in the table below. For example, `gh` for GitHub Cloud.
 
-    | Value | Git provider         |
-    |-------|----------------------|
-    | `gh`  | GitHub Cloud         |
-    | `ghe` | GitHub Enterprise    |
-    | `gl`  | GitLab Cloud         |
-    | `gle` | GitLab Enterprise    |
-    | `bb`  | Bitbucket Cloud      |
-    | `bbe` | Bitbucket Server     |
+    | Value | Git provider      |
+    | ----- | ----------------- |
+    | `gh`  | GitHub Cloud      |
+    | `ghe` | GitHub Enterprise |
+    | `gl`  | GitLab Cloud      |
+    | `gle` | GitLab Enterprise |
+    | `bb`  | Bitbucket Cloud   |
+    | `bbe` | Bitbucket Server  |
 
 -   **REPOSITORY_FULL_PATH:** Name of the organization and repository on the Git provider, using the format `<organization>/<repository>`. For example, `codacy/docs`. You must have admin permissions over the repository on the Git provider.
 
@@ -45,7 +45,7 @@ We provide an example Bash script that adds all repositories in a GitHub Cloud o
     Since Codacy automatically analyzes new repositories, adding many repositories in a short time can cause delays in the analysis of other repositories depending on the size of the repositories, the sizing of the infrastructure, and the concurrent analysis configuration. For example:
 
     | Repositories added | Expected delay |
-    |--------------------|----------------|
+    | ------------------ | -------------- |
     | 1 to 10            | Small          |
     | 11 to 100          | Considerable   |
     | More than 100      | Extreme        |
