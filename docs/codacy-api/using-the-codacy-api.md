@@ -16,7 +16,7 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
     <tr>
       <th>Endpoint documentation</th>
       <td><a target="_blank" href="https://api.codacy.com/api/api-docs">https://api.codacy.com/api/api-docs</a></td>
-      <td><a target="_blank" href="https://api.codacy.com/swagger">https://api.codacy.com/swagger</a></td>
+      <td><a target="_blank" href="https://api.codacy.com/api-docs">https://api.codacy.com/api-docs</a></td>
     </tr>
     <tr>
       <th>OpenAPI definition</th>
