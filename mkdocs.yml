@@ -660,6 +660,7 @@ nav:
           - API v3 reference (recommended): https://api.codacy.com/api/api-docs
           - API v2 reference: https://api.codacy.com/swagger
           - Examples:
+                - codacy-api/examples/adding-people-to-codacy-programmatically.md
                 - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
                 - codacy-api/examples/creating-project-api-tokens-programmatically.md
                 - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
@@ -705,6 +706,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2022:
+                      - release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal.md
                       - release-notes/cloud/cloud-2022-01.md
                 - 2021:
                       - release-notes/cloud/cloud-2021-12.md
