@@ -51,3 +51,7 @@ When a member leaves an organization:
 To remove members from your organization open your organization **Settings**, page **People**, and click the icon next to the members you wish to remove:
 
 ![Removing people from your organization](images/organization-people-remove.png)
+
+## See also
+
+-   [Adding people to Codacy programmatically](../codacy-api/examples/adding-people-to-codacy-programmatically.md)
