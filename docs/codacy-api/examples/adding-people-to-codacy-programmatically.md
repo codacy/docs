@@ -69,4 +69,4 @@ email4@codacy.com
 
 ## See also
 
--   [API tokens](../api-tokens.md)
+-   [Adding people to your organization](../../organizations/managing-people.md#adding-people)
