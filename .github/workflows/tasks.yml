@@ -1,4 +1,4 @@
-name: Tasks completed check
+name: Tasks completed
 on: 
   pull_request:
     types: [opened, edited]
