@@ -30,7 +30,11 @@ This area displays the information that identifies the commit (SHA hash, date, a
 <!--quality-overview-start-->
 ## {{ page.meta.page_name.capitalize() }} quality overview
 
-This area displays the overview of the code quality metrics for the {{ page.meta.page_name }}:
+This area displays the quality gate status and an overview of the code quality metrics for the {{ page.meta.page_name }}:
+
+-   The quality gate status is either **Not up to standards** or **Up to standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) for your repository.
+
+    If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to standards**.
 
 -   The changes to the following code quality metrics introduced by the {{ page.meta.page_name }} are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
 
@@ -47,7 +51,7 @@ This area displays the overview of the code quality metrics for the {{ page.meta
 
     Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
 
--   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) that are configured on your repository quality settings:
+-   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) for your repository:
 
     -   **Green:** The metric passes the quality gate
     -   **Red:** The metric fails the quality gate
