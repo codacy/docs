@@ -11,7 +11,7 @@
         <meta name="description" content="Release notes for Codacy Self-hosted v5.0.0.">
       
       
-        <meta http-equiv="last-modified" content="2021-12-17 17:55:12">  
+        <meta http-equiv="last-modified" content="2022-02-23 15:30:28">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/self-hosted/self-hosted-v5.0.0/">
@@ -2725,6 +2725,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
+  <a href="#upgrading-codacy-self-hosted" class="md-nav__link">
+    Upgrading Codacy Self-hosted
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
   <a href="#breaking-changes" class="md-nav__link">
     Breaking changes
   </a>
@@ -3231,8 +3238,28 @@
                 
                 <h1 id="self-hosted-v500">Self-hosted v5.0.0<a class="headerlink" href="#self-hosted-v500" title="Permanent link">#</a></h1>
 <p>These release notes are for <a href="https://github.com/codacy/chart/releases/tag/5.0.0" target="_blank">Codacy Self-hosted v5.0.0</a>, released on December 17, 2021.</p>
-<p>To upgrade Codacy, follow <a href="../../../chart/maintenance/upgrade/">these instructions</a>.</p>
 <p>📢 <a href="https://roadmap.codacy.com">Visit the Codacy roadmap</a> and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!</p>
+<h2 id="upgrading-codacy-self-hosted">Upgrading Codacy Self-hosted<a class="headerlink" href="#upgrading-codacy-self-hosted" title="Permanent link">#</a></h2>
+<p>Follow the steps below to upgrade to Codacy Self-hosted v5.0.0:</p>
+<ol>
+<li>
+<p><a href="../../#self-hosted">Check the release notes</a> for all Codacy Self-hosted versions between your current version and the most recent version for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>This version drops the support for legacy manual organizations.</strong> Please be sure to <a href="#breaking-changes">review the breaking changes</a> introduced in this version before upgrading.</p>
+</div>
+</li>
+<li>
+<p>Follow the instructions to <a href="../../../chart/maintenance/upgrade/">upgrade your Codacy Self-hosted instance</a>.</p>
+</li>
+<li>
+<p>Update your Codacy command-line tools to the versions with the Git tag <code>self-hosted-5.0.0</code>:</p>
+<ul>
+<li><a href="https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-5.0.0">Codacy Analysis CLI</a></li>
+<li><a href="https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-5.0.0">Codacy Coverage Reporter</a></li>
+</ul>
+</li>
+</ol>
 <h2 id="breaking-changes">Breaking changes<a class="headerlink" href="#breaking-changes" title="Permanent link">#</a></h2>
 <p>This version of Codacy Self-hosted introduces the following breaking changes:</p>
 <ul>
@@ -3489,7 +3516,7 @@ global.hotspotsdb.*
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 17, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 23, 2022</span>
     
   </small>
 </div>
