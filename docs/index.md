@@ -8,10 +8,7 @@
           Codacy Self-hosted running on Docker <strong>stopped being supported on February 16, 2021</strong>.
         </p>
         <p>
-          <a href="/chart/" target="_self">Click here for updated documentation on how to install and configure Codacy Self-hosted on Kubernetes or MicroK8s.</a>
-        </p>
-        <p>
-          If you are a current customer and have any questions regarding the migration process, please reach out to your CSM or <a href="mailto:success@codacy.com" target="_blank">success@codacy.com</a> for more information.
+          If you're running this version of Codacy Self-hosted please contact <a href="mailto:support@codacy.com" target="_blank">support@codacy.com</a> so that we can assist you with the migration to <a href="/chart/" target="_self">Codacy Self-hosted running on Kubernetes or MicroK8s</a>.
         </p>
       </td>
     </tr>
