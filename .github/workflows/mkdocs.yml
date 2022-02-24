@@ -91,10 +91,14 @@ jobs:
         run: |
           yq write --inplace mkdocs.yml "extra.noindex" true
 
+      - name: Get version from branch name
+        id: get_version
+        run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -c 21-27)
+
       - name: Deploy docs
         run: |
           git fetch origin gh-pages --verbose
-          mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted ${GITHUB_REF##*/release/}" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
+          mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted v${{ steps.get_version.outputs.VERSION }} (Deprecated)" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
 
   deploy:
     needs: build
