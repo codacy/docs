@@ -658,7 +658,7 @@ nav:
           - codacy-api/using-the-codacy-api.md
           - codacy-api/api-tokens.md
           - API v3 reference (recommended): https://api.codacy.com/api/api-docs
-          - API v2 reference: https://api.codacy.com/swagger
+          - API v2 reference: https://api.codacy.com/api-docs
           - Examples:
                 - codacy-api/examples/adding-people-to-codacy-programmatically.md
                 - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
