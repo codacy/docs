@@ -195,7 +195,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://github.com/detekt/detekt">detekt</a></td>
     </tr>
     <tr>
-      <td>Kubernetes</td>
+      <td>Kubernetes manifest and Helm chart</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td></td>
       <td>-</td>
