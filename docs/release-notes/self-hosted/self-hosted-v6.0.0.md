@@ -88,22 +88,23 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 ## Product enhancements
 
+
+-   Updated the [<span class="skip-vale">codacy-rubocop</span>](https://github.com/codacy/codacy-rubocop) plugins listed below. (CY-5550)
+
+    -   [<span class="skip-vale">rubocop-shopify 2.4.0</span>](https://rubygems.org/gems/rubocop-shopify/versions/2.4.0)
+    -   [<span class="skip-vale">rubocop-sorbet 0.6.5</span>](https://rubygems.org/gems/rubocop-sorbet/versions/0.6.5)
+    -   [<span class="skip-vale">rubocop-rails 2.13.2</span>](https://rubygems.org/gems/rubocop-rails/versions/2.13.2)
+    -   [<span class="skip-vale">rubocop-performance 1.13.2</span>](https://rubygems.org/gems/rubocop-performance/versions/1.13.2)
+    -   [<span class="skip-vale">rubocop-graphql 0.12.3</span>](https://rubygems.org/gems/rubocop-graphql/versions/0.12.3)
+    -   [<span class="skip-vale">rubocop-ast 1.15.1</span>](https://rubygems.org/gems/rubocop-ast/versions/1.15.1)
+
 -   Now, Codacy supports static code analysis for Dart/Flutter projects using [dartanalyzer](https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli){: target="_blank"}. The new tool checks your code for errors and warnings that are specified in the [Dart language specification](https://dart.dev/guides/language/spec){: target="_blank"}. (CY-4314)
 
 ## Bug fixes
 
--   Removed tools patterns were appearing in the admin panel default patterns. Now they are removed correctly when a tool gets removed. (CY-5681)
--   Fixed an issue where applying a standard to more than 100 repositories through the UI or API was failing. (CY-5654)
--   Fixed a bug now making it possible to complete the payment when country was "Serbia and Montenegro"
-Now it is possible to specify separately if the country is Serbia or Montenegro (CY-5645)
--   Update rubocop to 1.25.0
-Update rubocop-shopify to 2.4.0
-Update rubocop-sorbet to 0.6.5
-Update rubocop-rails to 2.13.2
-Update rubocop-performance to 1.13.2
-Update rubocop-graphql to 0.12.3
-Update rubocop-ast to 1.15.1 (CY-5550)
--   Coverage column will always appear even when there is no data for it. Avoiding a jump in the view.  (CY-5518)
+-   Fixed an issue where applying a coding standard to more than 100 repositories using either the Codacy UI or API was failing. (CY-5654)
+-   CNow, the **Coverage** column always appears on the Files page even when there's no coverage data, avoiding a jump in the view. (CY-5518)
+<!--TODO Continue reviewing here-->
 -   Disabled custom rules in PHP Mess Detector
 Now the custom rules are filtered out from the configuration file before analysis (CY-5509)
 -   Updated the Git URL used to clone public repositories to comply with the recent [GitHub protocol changes](https://github.blog/2021-09-01-improving-git-protocol-security-github/){: target="_blank"}. (CY-5436)
