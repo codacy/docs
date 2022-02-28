@@ -15,6 +15,7 @@ Cobertura
 Codacy
 CodeNarc
 CoffeeLint
+config
 Cppcheck
 Credo
 CSSLint
