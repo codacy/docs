@@ -40,6 +40,16 @@ Follow the steps below to upgrade to Codacy Self-hosted v6.0.0:
     -   [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-6.0.0)
     -   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-6.0.0)
 
+## Breaking changes
+
+<!--TODO Review and expand breaking changes-->
+
+This version of Codacy Self-hosted introduces the following breaking changes:
+
+-   Dropped support for Kubernetes 1.14
+
+-   Dropped the tool PMD (Legacy)
+
 ## Product enhancements
 
 
