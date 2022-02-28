@@ -70,13 +70,21 @@ Follow the steps below to upgrade to Codacy Self-hosted v6.0.0:
 
 ## Breaking changes
 
-<!--TODO Review and expand breaking changes-->
-
 This version of Codacy Self-hosted introduces the following breaking changes:
 
--   Dropped support for Kubernetes 1.14
+-   [Dropped support for Kubernetes 1.14 and MicroK8s 1.14](https://docs.codacy.com/v6.0/chart/requirements/)
 
--   Dropped the tool PMD (Legacy)
+    Kubernetes 1.14 is an [old version first released in 2019](https://kubernetes.io/blog/2019/03/25/kubernetes-1-14-release-announcement/){: target="_blank"} that's no longer being maintained.
+
+-   [Removed the tool **PMD (Legacy)**](../cloud/cloud-2022-02-16-pmd-legacy-removal.md)
+
+    This Codacy Self-hosted version will stop using the tool **PMD (Legacy)** to analyze your repositories. If you're currently using **PMD (Legacy)**, follow the next steps **before upgrading to this Codacy Self-hosted version**:
+
+    1.  Take note of the code patterns that you have enabled on **PMD (Legacy)** and enable the corresponding code patterns on the new tool PMD.
+
+        The new version of the tool includes different code patterns, so it's possible that not all code patterns will have a direct match on the new tool.
+
+    1.  Disable **PMD (Legacy)** and enable **PMD**.
 
 ## Product enhancements
 
