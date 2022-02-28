@@ -102,7 +102,6 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 ## Bug fixes
 
--   Fixed an issue where applying a coding standard to more than 100 repositories using either the Codacy UI or API was failing. (CY-5654)
 -   CNow, the **Coverage** column always appears on the Files page even when there's no coverage data, avoiding a jump in the view. (CY-5518)
 <!--TODO Continue reviewing here-->
 -   Disabled custom rules in PHP Mess Detector
