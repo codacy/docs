@@ -88,8 +88,6 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 ## Product enhancements
 
--   It's now possible to click on the organization overview chart to drill down on the information and understand which repositories require attention to improve the organization's code quality. (CY-5580)
--   The Codacy API now includes endpoints that allow you to [create and manage project API tokens programmatically](https://docs.codacy.com/v6.0/codacy-api/examples/creating-project-api-tokens-programmatically/). This feature can be used to automate setting up coverage for either new repositories or for all your existing repositories. (CY-5090)
 -   Now, Codacy supports static code analysis for Dart/Flutter projects using [dartanalyzer](https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli){: target="_blank"}. The new tool checks your code for errors and warnings that are specified in the [Dart language specification](https://dart.dev/guides/language/spec){: target="_blank"}. (CY-4314)
 
 ## Bug fixes
