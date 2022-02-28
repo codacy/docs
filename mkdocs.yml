@@ -738,6 +738,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v6:
+                      - release-notes/self-hosted/self-hosted-v6.0.0.md
                 - v5:
                       - release-notes/self-hosted/self-hosted-v5.1.0.md
                       - release-notes/self-hosted/self-hosted-v5.0.0.md
