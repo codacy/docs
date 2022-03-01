@@ -45,7 +45,7 @@ If you have over 8 repositories, the chart displays your repositories grouped by
 
     Read more about this feature and share your feedback on our [public roadmap](https://roadmap.codacy.com/c/86-know-which-repositories-require-more-attention){: target="_blank"}.
 
-![Overall quality chart with grouped repositories](images/organization-overview-overall-quality-grouped.png)
+![Overall quality chart with grouped repositories](images/organization-overview-overall-quality-grouped-beta.png)
 {% endif %}
 
 !!! tip
