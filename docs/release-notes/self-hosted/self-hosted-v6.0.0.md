@@ -68,6 +68,8 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 -   Now, Codacy supports static code analysis for Dart/Flutter projects using [dartanalyzer](https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli){: target="_blank"}. The new tool checks your code for errors and warnings that are specified in the [Dart language specification](https://dart.dev/guides/language/spec){: target="_blank"}. (CY-4314)
 
+-   Added documentation on [how to configure the log level and log retention period](https://docs.codacy.com/v6.0/chart/configuration/logging/) of the Codacy components running on your Kubernetes or MicroK8s cluster. (CY-2768)
+
 ## Bug fixes
 
 -   Now, the **Coverage** column always appears on the Files page even when there's no coverage data, avoiding a jump in the view. (CY-5518)
