@@ -37,22 +37,6 @@ Others:
 -   https://codacy.atlassian.net/browse/CY-4374
 -   https://codacy.atlassian.net/browse/CY-3957
 -   https://codacy.atlassian.net/browse/CY-1462
-
-Jira issues with disabled release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/CY-5391
--   https://codacy.atlassian.net/browse/CY-4844
-Bugs and Community Issues:
--   https://codacy.atlassian.net/browse/CY-5678
--   https://codacy.atlassian.net/browse/CY-5657
--   https://codacy.atlassian.net/browse/CY-5567
--   https://codacy.atlassian.net/browse/CY-5498
--   https://codacy.atlassian.net/browse/CY-5474
--   https://codacy.atlassian.net/browse/CY-5427
--   https://codacy.atlassian.net/browse/CY-5390
--   https://codacy.atlassian.net/browse/CY-5292
--   https://codacy.atlassian.net/browse/CY-5144
 -->
 
 ## Upgrading Codacy Self-hosted
