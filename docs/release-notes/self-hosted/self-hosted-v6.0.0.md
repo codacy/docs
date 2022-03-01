@@ -86,6 +86,10 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
     1.  Disable **PMD (Legacy)** and enable **PMD**.
 
+-   Dropped support for custom rules in PHP Mess Detector configuration files
+
+    Now, any custom rules are filtered out from PHP Mess Detector configuration files before running the tool. This was done to protect Codacy's infrastructure against potential arbitrary code <span class="skip-vale">execution</span> vulnerabilities.
+
 ## Product enhancements
 
 
@@ -98,21 +102,17 @@ This version of Codacy Self-hosted introduces the following breaking changes:
     -   [<span class="skip-vale">rubocop-graphql 0.12.3</span>](https://rubygems.org/gems/rubocop-graphql/versions/0.12.3)
     -   [<span class="skip-vale">rubocop-ast 1.15.1</span>](https://rubygems.org/gems/rubocop-ast/versions/1.15.1)
 
+-   You can now use the Codacy configuration file to [adjust how PMD CPD detects duplicated code](https://docs.codacy.com/v6.0/repositories-configure/codacy-configuration-file/#pmd-cpd-duplication), giving you more flexibility to eliminate false positives. (CY-5184)
+
 -   Now, Codacy supports static code analysis for Dart/Flutter projects using [dartanalyzer](https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli){: target="_blank"}. The new tool checks your code for errors and warnings that are specified in the [Dart language specification](https://dart.dev/guides/language/spec){: target="_blank"}. (CY-4314)
 
 ## Bug fixes
 
 -   Now, the **Coverage** column always appears on the Files page even when there's no coverage data, avoiding a jump in the view. (CY-5518)
-<!--TODO Continue reviewing here-->
--   Disabled custom rules in PHP Mess Detector
-Now the custom rules are filtered out from the configuration file before analysis (CY-5509)
 -   Updated the Git URL used to clone public repositories to comply with the recent [GitHub protocol changes](https://github.blog/2021-09-01-improving-git-protocol-security-github/){: target="_blank"}. (CY-5436)
 -   Fixed an issue that could prevent users from using the Codacy app website temporarily if they were exposed to a phishing attack. CVSS v3.1 score: 3.1 (Low) (CY-5420)
 -   Fixed a security issue that, under rare circumstances, could allow an attacker to run arbitrary code on the **Ignored files** settings page. CVSS v3.1 score: 3.8 (Low) (CY-5419)
 -   Added the plugin [<span class="skip-vale">eslint-plugin-storybook</span>](https://www.npmjs.com/package/eslint-plugin-storybook) to [<span class="skip-vale">codacy-eslint</span>](https://github.com/codacy/codacy-eslint). (CY-5406)
--   You can now use the Codacy configuration file to [adjust how PMD CPD detects duplicated code](https://docs.codacy.com/v6.0/repositories-configure/codacy-configuration-file/#pmd-cpd-duplication), giving you more flexibility to eliminate false positives. (CY-5184)
--   Fixed an issue that could allow triggering requests from the Codacy instance servers by injecting a URL into the cursor parameter of the API endpoint to list organization repositories. (CY-5139)
--   Fixed an issue that prevented administrators from removing users from Bitbucket Server organizations on Codacy. Besides this, Codacy Self-hosted administrators can now remove users from Codacy even if they're the last administrator in an organization. (CY-4724)
 
 ## Tool versions
 
