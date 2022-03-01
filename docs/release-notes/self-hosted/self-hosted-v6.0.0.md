@@ -17,26 +17,8 @@ These release notes are for [Codacy Self-hosted v6.0.0](https://github.com/codac
 Jira issues without release notes
 
 Epics:
--   https://codacy.atlassian.net/browse/CY-5761
--   https://codacy.atlassian.net/browse/CY-5747
--   https://codacy.atlassian.net/browse/CY-5560
--   https://codacy.atlassian.net/browse/CY-5534
--   https://codacy.atlassian.net/browse/CY-5533
--   https://codacy.atlassian.net/browse/CY-5522
--   https://codacy.atlassian.net/browse/CY-5399
--   https://codacy.atlassian.net/browse/DOCS-42
-Bugs and Community Issues:
-Others:
--   https://codacy.atlassian.net/browse/CY-5702
--   https://codacy.atlassian.net/browse/CY-5695
--   https://codacy.atlassian.net/browse/CY-5649
--   https://codacy.atlassian.net/browse/CY-5554
--   https://codacy.atlassian.net/browse/CY-5464
--   https://codacy.atlassian.net/browse/CY-5440
--   https://codacy.atlassian.net/browse/CY-5203
--   https://codacy.atlassian.net/browse/CY-4374
--   https://codacy.atlassian.net/browse/CY-3957
--   https://codacy.atlassian.net/browse/CY-1462
+-   https://codacy.atlassian.net/browse/CY-5534 Set up gates for PR diff coverage
+-   https://codacy.atlassian.net/browse/CY-5533 Show coverage diff number on PR overview
 -->
 
 ## Upgrading Codacy Self-hosted
