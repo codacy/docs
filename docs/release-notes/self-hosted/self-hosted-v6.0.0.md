@@ -12,15 +12,6 @@ These release notes are for [Codacy Self-hosted v6.0.0](https://github.com/codac
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
-<!--TODO Check these issues manually
-
-Jira issues without release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/CY-5534 Set up gates for PR diff coverage
--   https://codacy.atlassian.net/browse/CY-5533 Show coverage diff number on PR overview
--->
-
 ## Upgrading Codacy Self-hosted
 
 Follow the steps below to upgrade to Codacy Self-hosted v6.0.0:
@@ -58,6 +49,13 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 ## Product enhancements
 
+-   Now, Codacy calculates the new metric [diff coverage for pull requests](https://docs.codacy.com/v6.0/repositories/pull-requests/#pull-request-quality-overview). (CY-5533)
+
+    ![Diff coverage for a pull request](../images/cy-5533.png)
+
+    It's also possible to [set up a quality gate rule](https://docs.codacy.com/v6.0/repositories-configure/adjusting-quality-settings/#gates) for diff coverage. (CY-5534)
+
+    ![Quality gate rule for diff coverage](../images/cy-5534.png)
 
 -   Updated the [<span class="skip-vale">codacy-rubocop</span>](https://github.com/codacy/codacy-rubocop) plugins listed below. (CY-5550)
 
