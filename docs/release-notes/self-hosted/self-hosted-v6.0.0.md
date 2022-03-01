@@ -35,9 +35,9 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 -   [Removed the tool **PMD (Legacy)**](../cloud/cloud-2022-02-16-pmd-legacy-removal.md)
 
-    This Codacy Self-hosted version no longer includes the tool **PMD (Legacy)**. If you're currently using **PMD (Legacy)** to analyze your repositories, we recommend that you follow the next steps **before upgrading to this Codacy Self-hosted version**:
+    If you're currently using this tool to analyze your repositories and want to start using **PMD** instead, we recommend that you follow the next steps **before upgrading to this Codacy Self-hosted version**:
 
-    1.  Take note of the code patterns that you have enabled on **PMD (Legacy)** and enable the corresponding code patterns on the new tool PMD.
+    1.  Take note of the code patterns that you have enabled on **PMD (Legacy)** and enable the corresponding code patterns on the new tool **PMD**.
 
         The new version of the tool includes different code patterns, so it's possible that not all code patterns will have a direct match on the new tool.
 
