@@ -43,10 +43,6 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
     1.  Disable **PMD (Legacy)** and enable **PMD**.
 
--   Dropped support for custom rules in PHP Mess Detector configuration files
-
-    Now, any custom rules are filtered out from PHP Mess Detector configuration files before running the tool. This was done to protect Codacy's infrastructure against potential arbitrary code <span class="skip-vale">execution</span> vulnerabilities.
-
 ## Product enhancements
 
 -   Now, Codacy calculates the new metric [diff coverage for pull requests](https://docs.codacy.com/v6.0/repositories/pull-requests/#pull-request-quality-overview). (CY-5533)
