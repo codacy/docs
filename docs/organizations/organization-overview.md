@@ -13,9 +13,7 @@ description: The Organization Overview provides an overview of repositories that
 The **Organization Overview** provides an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
 
 !!! important
-    -   The Organization Overview calculates metrics and displays data only for the repositories that you have access to. This means that depending on their permissions, two users could see different results on their Organization Overview.
-
-    -   The Organization Overview displays information for **at most the last 100 updated repositories**.
+    The Organization Overview calculates metrics and displays data only for the repositories that you have access to. This means that depending on their permissions, two users could see different results on their Organization Overview.
 
 To access your Organization Overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
 
