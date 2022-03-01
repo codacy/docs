@@ -53,14 +53,14 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
     ![Quality gate rule for diff coverage](../images/cy-5534.png)
 
--   Updated the [<span class="skip-vale">codacy-rubocop</span>](https://github.com/codacy/codacy-rubocop) plugins listed below. (CY-5550)
+-   Updated the [<span class="skip-vale">codacy-rubocop</span>](https://github.com/codacy/codacy-rubocop){: target="_blank"} plugins listed below. (CY-5550)
 
-    -   [<span class="skip-vale">rubocop-shopify 2.4.0</span>](https://rubygems.org/gems/rubocop-shopify/versions/2.4.0)
-    -   [<span class="skip-vale">rubocop-sorbet 0.6.5</span>](https://rubygems.org/gems/rubocop-sorbet/versions/0.6.5)
-    -   [<span class="skip-vale">rubocop-rails 2.13.2</span>](https://rubygems.org/gems/rubocop-rails/versions/2.13.2)
-    -   [<span class="skip-vale">rubocop-performance 1.13.2</span>](https://rubygems.org/gems/rubocop-performance/versions/1.13.2)
-    -   [<span class="skip-vale">rubocop-graphql 0.12.3</span>](https://rubygems.org/gems/rubocop-graphql/versions/0.12.3)
-    -   [<span class="skip-vale">rubocop-ast 1.15.1</span>](https://rubygems.org/gems/rubocop-ast/versions/1.15.1)
+    -   [<span class="skip-vale">rubocop-shopify 2.4.0</span>](https://rubygems.org/gems/rubocop-shopify/versions/2.4.0){: target="_blank"}
+    -   [<span class="skip-vale">rubocop-sorbet 0.6.5</span>](https://rubygems.org/gems/rubocop-sorbet/versions/0.6.5){: target="_blank"}
+    -   [<span class="skip-vale">rubocop-rails 2.13.2</span>](https://rubygems.org/gems/rubocop-rails/versions/2.13.2){: target="_blank"}
+    -   [<span class="skip-vale">rubocop-performance 1.13.2</span>](https://rubygems.org/gems/rubocop-performance/versions/1.13.2){: target="_blank"}
+    -   [<span class="skip-vale">rubocop-graphql 0.12.3</span>](https://rubygems.org/gems/rubocop-graphql/versions/0.12.3){: target="_blank"}
+    -   [<span class="skip-vale">rubocop-ast 1.15.1</span>](https://rubygems.org/gems/rubocop-ast/versions/1.15.1){: target="_blank"}
 
 -   Now, the [**Issues breakdown** area on the Repository Dashboard](https://docs.codacy.com/v6.0/repositories/repository-dashboard/#issues-breakdown) displays all issue categories, including **Code complexity**. (CY-5463)
 
@@ -74,7 +74,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 -   Updated the Git URL used to clone public repositories to comply with the recent [GitHub protocol changes](https://github.blog/2021-09-01-improving-git-protocol-security-github/){: target="_blank"}. (CY-5436)
 -   Fixed an issue that could prevent users from using the Codacy app website temporarily if they were exposed to a phishing attack. CVSS v3.1 score: 3.1 (Low) (CY-5420)
 -   Fixed a security issue that, under rare circumstances, could allow an attacker to run arbitrary code on the **Ignored files** settings page. CVSS v3.1 score: 3.8 (Low) (CY-5419)
--   Added the plugin [<span class="skip-vale">eslint-plugin-storybook</span>](https://www.npmjs.com/package/eslint-plugin-storybook) to [<span class="skip-vale">codacy-eslint</span>](https://github.com/codacy/codacy-eslint). (CY-5406)
+-   Added the plugin [<span class="skip-vale">eslint-plugin-storybook</span>](https://www.npmjs.com/package/eslint-plugin-storybook){: target="_blank"} to [<span class="skip-vale">codacy-eslint</span>](https://github.com/codacy/codacy-eslint){: target="_blank"}. (CY-5406)
 
 ## Tool versions
 
