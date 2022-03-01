@@ -47,9 +47,9 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 -   Now, Codacy calculates the new metric [diff coverage for pull requests](https://docs.codacy.com/v6.0/repositories/pull-requests/#pull-request-quality-overview). (CY-5533)
 
-    ![Diff coverage for a pull request](../images/cy-5533.png)
-
     It's also possible to [set up a quality gate rule](https://docs.codacy.com/v6.0/repositories-configure/adjusting-quality-settings/#gates) for diff coverage. (CY-5534)
+    
+    ![Diff coverage for a pull request](../images/cy-5533.png)
 
     ![Quality gate rule for diff coverage](../images/cy-5534.png)
 
