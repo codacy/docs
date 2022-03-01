@@ -2,7 +2,7 @@
 rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 description: Release notes for Codacy Self-hosted v6.0.0.
-codacy_tools_version_old: https://github.com/codacy/codacy-tools/releases/tag/5.2.1
+codacy_tools_version_old: https://github.com/codacy/codacy-tools/releases/tag/4.0.40
 codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/5.2.1
 ---
 
