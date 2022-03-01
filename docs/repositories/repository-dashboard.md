@@ -14,8 +14,6 @@ The top of the Repository Dashboard displays:
 -   The name and code quality grade of the repository
 -   A drop-down list that selects which branch of your repository to display on the dashboard
 
-![Changing the branch](images/repository-dashboard-select-branch.png)
-
 On the Repository Dashboard you have four areas to help you monitor your repository:
 
 -   [Quality evolution chart](#quality-evolution-chart)
@@ -60,10 +58,10 @@ The **Coverage** area displays the percentage of lines of code on the selected b
 
 Click **See all files** to open the [list of files](files.md) in the repository.
 
-![Coverage](images/repository-dashboard-coverage.png)
-
 !!! tip
     If you don't have coverage set up for your repository yet, the Coverage area provides you with instructions on [how to add coverage for your repository](../coverage-reporter/index.md).
+
+![Coverage](images/repository-dashboard-coverage.png)
 
 ## Open pull requests
 

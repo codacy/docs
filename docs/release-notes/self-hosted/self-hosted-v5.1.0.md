@@ -10,12 +10,23 @@ codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/4.
 
 These release notes are for [Codacy Self-hosted v5.1.0](https://github.com/codacy/chart/releases/tag/5.1.0){: target="_blank"}, released on January 06, 2022.
 
-To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
-
-!!! warning
-    **Codacy Self-hosted v5.0.0 dropped the support for legacy manual organizations.** Please be sure to [review the breaking changes](self-hosted-v5.0.0.md#breaking-changes) introduced in that version before upgrading.
-
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
+
+## Upgrading Codacy Self-hosted
+
+Follow the steps below to upgrade to Codacy Self-hosted v5.1.0:
+
+1.  [Check the release notes](../index.md#self-hosted) for all Codacy Self-hosted versions between your current version and the most recent version for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
+
+    !!! warning
+        **Codacy Self-hosted v5.0.0 dropped the support for legacy manual organizations.** Please be sure to [review the breaking changes](self-hosted-v5.0.0.md#breaking-changes) introduced in that version before upgrading.
+
+1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](../../chart/maintenance/upgrade.md).
+
+1.  Update your Codacy command-line tools to the versions with the Git tag `self-hosted-5.1.0`:
+
+    -   [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-5.1.0)
+    -   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-5.1.0)
 
 ## Product enhancements
 
