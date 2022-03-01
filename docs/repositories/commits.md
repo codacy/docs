@@ -9,11 +9,11 @@ The **Commits page** displays an overview of the commits in your repository, suc
 
 By default, the page lists the commits on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display issues on other branches.
 
-![Commits page](images/commits.png)<!--TODO Review screenshot, highlight branch selector-->
+![Commits page](images/commits.png)
 
 Click a specific commit to see detailed information about the code quality changes introduced by that commit.
 
-![Commit detail](images/commits-detail.png)<!--TODO Replace screenshot to use one of the commits from the list above-->
+![Commit detail](images/commits-detail.png)
 
 The next sections describe each area of the commit detail page.
 
@@ -25,12 +25,16 @@ This area displays the information that identifies the commit (SHA hash, date, a
 -   A link to the analysis logs
 -   A link to the commit on your Git provider
 
-![Commit status](images/commits-detail-status.png)<!--TODO Replace screenshot with crop from screenshot above-->
+![Commit status](images/commits-detail-status.png)
 
 <!--quality-overview-start-->
 ## {{ page.meta.page_name.capitalize() }} quality overview
 
-This area displays the overview of the code quality metrics for the {{ page.meta.page_name }}:
+This area displays the quality gate status and an overview of the code quality metrics for the {{ page.meta.page_name }}:
+
+-   The quality gate status is either **Not up to standards** or **Up to standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) for your repository.
+
+    If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to standards**.
 
 -   The changes to the following code quality metrics introduced by the {{ page.meta.page_name }} are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
 
@@ -47,7 +51,7 @@ This area displays the overview of the code quality metrics for the {{ page.meta
 
     Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
 
--   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) that are configured on your repository quality settings:
+-   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) for your repository:
 
     -   **Green:** The metric passes the quality gate
     -   **Red:** The metric fails the quality gate
@@ -56,7 +60,7 @@ This area displays the overview of the code quality metrics for the {{ page.meta
     !!! notes
         If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.
 
-![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)<!--TODO Replace screenshot with crop from screenshot above-->
+![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)
 <!--quality-overview-end-->
 
 <!--tabs-start-->
@@ -72,7 +76,7 @@ The **New Issues** and **Fixed Issues** tabs display the list of issues that the
 
 Use the options in the cogwheel menu of each issue to [ignore and manage issues](issues.md#ignoring-and-managing-issues).
 
-![New Issues and Fixed Issues tabs](images/{{ page.meta.file_name }}-tab-issues.png)<!--TODO Review screenshot, include expanded issue view and highlight cogwheel-->
+![New Issues and Fixed Issues tabs](images/{{ page.meta.file_name }}-tab-issues.png)
 
 ### Possible issues
 
@@ -93,17 +97,17 @@ The following are example situations that can lead to possible issues:
 
 The **New Duplication** and **Fixed Duplication** tabs display the list of duplicated blocks that the {{ page.meta.page_name }} created or fixed.
 
-![New Duplication and Fixed Duplication tabs](images/{{ page.meta.file_name }}-tab-duplication.png)<!--TODO Review screenshot, specific screenshot for pull requests-->
+![New Duplication and Fixed Duplication tabs](images/{{ page.meta.file_name }}-tab-duplication.png)
 
 ## Files tab
 
 The **Files** tab displays an overview of the code quality changes introduced by each file that was changed in the {{ page.meta.page_name }}.
 
-![Files tab](images/{{ page.meta.file_name }}-tab-files.png)<!--TODO Review screenshot-->
+![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
 
 ## Diff tab
 
 The **Diff** tab displays the line differences in each file that was changed in the {{ page.meta.page_name }}.
 
-![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)<!--TODO Review screenshot-->
+![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)
 <!--tabs-end-->

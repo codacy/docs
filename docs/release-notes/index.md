@@ -14,7 +14,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 !!! tip
     Subscribe to this [<img style="height: 1em;" src="../assets/images/icon-rss-feed.svg" alt="Codacy release notes RSS feed"/> RSS feed](/feed_rss_created.xml) using your favorite news aggregator to receive notifications when there are new Codacy release notes.
 
-## Codacy Cloud release notes
+## Codacy Cloud release notes {: id="cloud"}
 
 2022
 
@@ -58,7 +58,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Cloud October 19, 2018](cloud/cloud-2018-10-19.md)
 -   [Cloud July 23, 2018](cloud/cloud-2018-07-23.md)
 
-## Codacy Self-hosted release notes
+## Codacy Self-hosted release notes {: id="self-hosted"}
 
 v5
 
