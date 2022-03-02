@@ -13,6 +13,7 @@ mkdocs-exclude==1.0.2
 mkdocs-git-revision-date-localized-plugin==1.0.0
 mkdocs-include-markdown-plugin==3.3.0
 mkdocs-macros-plugin==0.6.4
+mkdocs-markdownextradata-plugin==0.2.5
 mkdocs-meta-descriptions-plugin==1.0.2
 mkdocs-monorepo-plugin==0.5.3
 mkdocs-redirects==1.0.3
