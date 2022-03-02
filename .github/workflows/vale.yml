@@ -1,0 +1,22 @@
+name: Vale
+
+on: pull_request
+
+jobs:
+  vale:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          submodules: false
+
+      - name: Vale
+        uses: errata-ai/vale-action@v1.5.0
+        with:
+          onlyAnnotateModifiedLines: true
+          debug: true
+        env:
+          # Required
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
