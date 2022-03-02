@@ -30,3 +30,8 @@ To reanalyze a pull request in your repository:
 1.  Click the icon next to the **Current status** of the pull request to trigger a reanalysis. Codacy will display a message when the analysis is complete.
 
     ![Reanalyzing a pull request](images/reanalyze-pull-request.png)
+
+## See also
+
+-   [Commit status](../../repositories/commits.md#commit-status)
+-   [Pull request status](../../repositories/pull-requests.md#pull-request-status)
