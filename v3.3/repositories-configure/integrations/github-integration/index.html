@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/github-integration/">
+        <meta http-equiv="last-modified" content="2021-02-11 17:48:06">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v3.3/repositories-configure/integrations/github-integration/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v3.3" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2155,17 +2158,17 @@
 <h2 id="configuring-the-github-integration">Configuring the GitHub integration<a class="headerlink" href="#configuring-the-github-integration" title="Permanent link">&para;</a></h2>
 <p>To configure the GitHub integration, open your project <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
 <p>Depending on the options that you enable, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests:</p>
-<h3>Status checks</h3>
+<h3 id="status-checks">Status checks<a class="headerlink" href="#status-checks" title="Permanent link">&para;</a></h3>
 <p>Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the <a href="../../quality-settings/">quality settings</a> of your repository. To see the coverage status check, ensure that you enable the option <strong>Coverage</strong> in the quality settings.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>After enabling this option, you can <a href="../../../faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs/#github">set Codacy as a required check</a> before merging your pull requests.</p>
 </div>
 <p><img alt="Pull request status check on GitHub" src="../images/github-integration-pr-status.png" /></p>
-<h3>Annotations</h3>
+<h3 id="annotations">Annotations<a class="headerlink" href="#annotations" title="Permanent link">&para;</a></h3>
 <p>Adds annotations on the lines of the pull request where Codacy finds new issues. Codacy maps the severity of the issues reported by the tools to the severity levels of the annotations. To enable this option, you must enable <strong>Status checks</strong> first.</p>
 <p><img alt="Pull request annotation on GitHub" src="../images/github-integration-pr-annotation.png" /></p>
-<h3>Summary</h3>
+<h3 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">&para;</a></h3>
 <p>Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable <strong>Status checks</strong> first.</p>
 <p><img alt="Pull request summary on GitHub" src="../images/github-integration-pr-summary.png" /></p>
               

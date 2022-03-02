@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/repositories-configure/codacy-configuration-file/">
+        <meta http-equiv="last-modified" content="2021-02-11 17:48:06">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v3.3/repositories-configure/codacy-configuration-file/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v3.3" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2162,28 +2165,28 @@
 <p class="admonition-title">Important</p>
 <p>The configuration file must start with a line containing a triple dash (<code>---</code>).</p>
 </div>
-<div class="highlight"><pre><span></span><code><span class="nn">---</span>
-<span class="nt">engines</span><span class="p">:</span>
-  <span class="nt">rubocop</span><span class="p">:</span>
-    <span class="nt">exclude_paths</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;config/test.yml&quot;</span>
-    <span class="nt">base_sub_dir</span><span class="p">:</span> <span class="s">&quot;test/baseDir&quot;</span>
-  <span class="nt">duplication</span><span class="p">:</span>
-    <span class="nt">exclude_paths</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;config/test.yml&quot;</span>
-    <span class="nt">config</span><span class="p">:</span>
-      <span class="nt">languages</span><span class="p">:</span>
-        <span class="p p-Indicator">-</span> <span class="s">&quot;ruby&quot;</span>
-<span class="nt">languages</span><span class="p">:</span>
-  <span class="nt">css</span><span class="p">:</span>
-    <span class="nt">extensions</span><span class="p">:</span>
-      <span class="p p-Indicator">-</span> <span class="s">&quot;-css.resource&quot;</span>
-<span class="nt">exclude_paths</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;.bundle/**&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;spec/**/*&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;benchmarks/**/*&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;**.min.js&quot;</span>
-  <span class="p p-Indicator">-</span> <span class="s">&quot;**/tests/**&quot;</span>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
+<span class="nt">engines</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">rubocop</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">exclude_paths</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;config/test.yml&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">base_sub_dir</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;test/baseDir&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="nt">duplication</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">exclude_paths</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;config/test.yml&quot;</span><span class="w"></span>
+<span class="w">    </span><span class="nt">config</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="nt">languages</span><span class="p">:</span><span class="w"></span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;ruby&quot;</span><span class="w"></span>
+<span class="nt">languages</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">css</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">extensions</span><span class="p">:</span><span class="w"></span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;-css.resource&quot;</span><span class="w"></span>
+<span class="nt">exclude_paths</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;.bundle/**&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;spec/**/*&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;benchmarks/**/*&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**.min.js&quot;</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**/tests/**&quot;</span><span class="w"></span>
 </code></pre></div>
 </li>
 <li>
