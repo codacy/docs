@@ -18,7 +18,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v6.0.0:
 
 1.  [Check the release notes](../index.md#self-hosted) for all Codacy Self-hosted versions between your current version and the most recent version for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
-1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](../../chart/maintenance/upgrade.md).
+1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v6.0/chart/maintenance/upgrade/).
 
 1.  Update your Codacy command-line tools to the versions with the Git tag `self-hosted-6.0.0`:
 
