@@ -11,15 +11,18 @@
         <meta name="description" content="There are alternative ways of running or installing Codacy Coverage Reporter, such as running a Docker image, downloading a binary for your operating system, or building the binary from source.">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/">
+        <meta http-equiv="last-modified" content="2021-08-17 15:13:44">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v4.3/coverage-reporter/alternative-ways-of-running-coverage-reporter/">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v4.3" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2329,11 +2332,11 @@ sbt assembly
 <p>Thanks to the amazing job of <a href="https://github.com/halkeye">Gavin Mogan</a> you can now send your coverage to Codacy using his Maven plugin <a href="https://github.com/halkeye/codacy-maven-plugin">halkeye/codacy-maven-plugin</a>! Be sure to follow the instructions on his repository.</p>
 <h3 id="travis-ci">Travis CI<a class="headerlink" href="#travis-ci" title="Permanent link">#</a></h3>
 <p>If you are using Travis CI to report coverage, update your file <code>.travis.yml</code> to include the following blocks:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">before_script</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">bash &lt;(curl -Ls https://coverage.codacy.com/get.sh) download</span>
+<div class="highlight"><pre><span></span><code><span class="nt">before_script</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash &lt;(curl -Ls https://coverage.codacy.com/get.sh) download</span><span class="w"></span>
 
-<span class="nt">after_success</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">bash &lt;(curl -Ls https://coverage.codacy.com/get.sh)</span>
+<span class="nt">after_success</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash &lt;(curl -Ls https://coverage.codacy.com/get.sh)</span><span class="w"></span>
 </code></pre></div>
 <p>Make sure that you also <a href="../#authenticate">set your project or account API Token</a> as an environment variable in your Travis CI job.</p>
 <h3 id="gradle-task">Gradle task<a class="headerlink" href="#gradle-task" title="Permanent link">#</a></h3>
