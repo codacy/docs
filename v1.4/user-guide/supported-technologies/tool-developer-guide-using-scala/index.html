@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/user-guide/supported-technologies/tool-developer-guide-using-scala/">
+        <meta http-equiv="last-modified" content="2020-04-02 08:38:45">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v1.4/user-guide/supported-technologies/tool-developer-guide-using-scala/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v1.4" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2493,19 +2496,19 @@ You can also fork the code of one of our tools, and modify it; here are some exa
 <p>When extending the <strong>Tool</strong> trait, you have to implement the <strong>apply</strong> method.</p>
 <p>When a client runs your tool, the <strong>apply</strong> method of our template is invoked. Here you have everything you need to invoke the tool. After you have your results from the tool, put them in our <strong>Result</strong> format, and then just return them.</p>
 <p><a href="https://docs.codacy.com/docs/tool-developer-guide-using-scala">Scala</a></p>
-<div class="highlight"><pre><span></span><code>    <span class="k">package</span> <span class="nn">codacy.mytool</span>
+<div class="highlight"><pre><span></span><code>    <span class="k">package</span> <span class="nn">codacy</span><span class="p">.</span><span class="n">mytool</span>
 
-    <span class="k">import</span> <span class="nn">scala.sys.process._</span>
-    <span class="k">import</span> <span class="nn">codacy.dockerApi._</span>
+    <span class="k">import</span> <span class="nn">scala</span><span class="p">.</span><span class="nn">sys</span><span class="p">.</span><span class="nn">process</span><span class="p">.</span><span class="n">_</span>
+    <span class="k">import</span> <span class="nn">codacy</span><span class="p">.</span><span class="nn">dockerApi</span><span class="p">.</span><span class="n">_</span>
 
-    <span class="k">object</span> <span class="nc">MyTool</span> <span class="k">extends</span> <span class="nc">Tool</span><span class="o">{</span>
+    <span class="k">object</span> <span class="nc">MyTool</span> <span class="k">extends</span> <span class="nc">Tool</span><span class="p">{</span>
 
-      <span class="k">override</span> <span class="k">def</span> <span class="n">apply</span><span class="o">(</span><span class="n">path</span><span class="k">:</span> <span class="kt">Path</span><span class="o">,</span> <span class="n">conf</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Seq</span><span class="o">[</span><span class="kt">PatternDef</span><span class="o">]],</span> <span class="n">files</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Set</span><span class="o">[</span><span class="kt">Path</span><span class="o">]])(</span><span class="k">implicit</span> <span class="n">spec</span><span class="k">:</span> <span class="kt">Spec</span><span class="o">)</span><span class="k">:</span> <span class="kt">Try</span><span class="o">[</span><span class="kt">Iterable</span><span class="o">[</span><span class="kt">Result</span><span class="o">]]</span> <span class="o">=</span> <span class="o">{</span>
+      <span class="k">override</span> <span class="k">def</span> <span class="nf">apply</span><span class="p">(</span><span class="n">path</span><span class="p">:</span> <span class="nc">Path</span><span class="p">,</span> <span class="n">conf</span><span class="p">:</span> <span class="nc">Option</span><span class="p">[</span><span class="nc">Seq</span><span class="p">[</span><span class="nc">PatternDef</span><span class="p">]],</span> <span class="n">files</span><span class="p">:</span> <span class="nc">Option</span><span class="p">[</span><span class="nc">Set</span><span class="p">[</span><span class="nc">Path</span><span class="p">]])(</span><span class="k">implicit</span> <span class="n">spec</span><span class="p">:</span> <span class="nc">Spec</span><span class="p">):</span> <span class="nc">Try</span><span class="p">[</span><span class="nc">Iterable</span><span class="p">[</span><span class="nc">Result</span><span class="p">]]</span> <span class="o">=</span> <span class="p">{</span>
 
           <span class="c1">//TODO: Your code goes here</span>
 
-      <span class="o">}</span>
-    <span class="o">}</span>
+      <span class="p">}</span>
+    <span class="p">}</span>
 </code></pre></div>
 <p><strong>path:</strong> The root path where the files to test are located (usually "/src")
 <strong>conf:</strong> Patterns to run (optional)
@@ -2517,29 +2520,29 @@ You can also fork the code of one of our tools, and modify it; here are some exa
 <p>You must put each result in our <strong>Result</strong> type.</p>
 <p>The used types like <strong>PatternDef</strong> and <strong>Result</strong> are defined as case classes. These and the other types are defined in <strong>dockerApi/package.scala</strong>.</p>
 <p><a href="https://docs.codacy.com/docs/tool-developer-guide-using-scala">dockerApi/package.scala</a></p>
-<div class="highlight"><pre><span></span><code>    <span class="k">case</span> <span class="k">class</span> <span class="nc">PatternDef</span><span class="o">(</span><span class="n">patternId</span><span class="k">:</span> <span class="kt">PatternId</span><span class="o">,</span> <span class="n">parameters</span><span class="k">:</span> <span class="kt">Option</span><span class="o">[</span><span class="kt">Set</span><span class="o">[</span><span class="kt">ParameterDef</span><span class="o">]])</span>
+<div class="highlight"><pre><span></span><code>    <span class="k">case</span> <span class="k">class</span> <span class="nc">PatternDef</span><span class="p">(</span><span class="n">patternId</span><span class="p">:</span> <span class="nc">PatternId</span><span class="p">,</span> <span class="n">parameters</span><span class="p">:</span> <span class="nc">Option</span><span class="p">[</span><span class="nc">Set</span><span class="p">[</span><span class="nc">ParameterDef</span><span class="p">]])</span>
 
-    <span class="k">case</span> <span class="k">class</span> <span class="nc">Result</span><span class="o">(</span><span class="n">filename</span><span class="k">:</span> <span class="kt">SourcePath</span><span class="o">,</span> <span class="n">message</span><span class="k">:</span> <span class="kt">ResultMessage</span><span class="o">,</span> <span class="n">patternId</span><span class="k">:</span> <span class="kt">PatternId</span><span class="o">,</span> <span class="n">line</span><span class="k">:</span> <span class="kt">ResultLine</span><span class="o">)</span>
+    <span class="k">case</span> <span class="k">class</span> <span class="nc">Result</span><span class="p">(</span><span class="n">filename</span><span class="p">:</span> <span class="nc">SourcePath</span><span class="p">,</span> <span class="n">message</span><span class="p">:</span> <span class="nc">ResultMessage</span><span class="p">,</span> <span class="n">patternId</span><span class="p">:</span> <span class="nc">PatternId</span><span class="p">,</span> <span class="n">line</span><span class="p">:</span> <span class="nc">ResultLine</span><span class="p">)</span>
 
     <span class="c1">//...</span>
 </code></pre></div>
 <h2 id="code-details-of-our-template">Code details of our template<a class="headerlink" href="#code-details-of-our-template" title="Permanent link">&para;</a></h2>
 <p>The entry point of our template for you is the <strong>Engine</strong> object. In the <strong>codacy.Engine</strong>, you can see the object <strong>Engine</strong> extends a DockerEngine that receives a <strong>Tool</strong>.</p>
 <p><a href="/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala">Engine.scala</a></p>
-<div class="highlight"><pre><span></span><code>    <span class="k">object</span> <span class="nc">Engine</span> <span class="k">extends</span> <span class="nc">DockerEngine</span><span class="o">(</span><span class="nc">MyTool</span><span class="o">)</span>
+<div class="highlight"><pre><span></span><code>    <span class="k">object</span> <span class="nc">Engine</span> <span class="k">extends</span> <span class="nc">DockerEngine</span><span class="p">(</span><span class="nc">MyTool</span><span class="p">)</span>
 </code></pre></div>
 <p>Your tool must extend <strong>Tool</strong>, (as shown before, MyTemplate already extends it), and override the <strong>apply</strong> method.</p>
 <p>When you want to execute a command, we recommend you generate the sequence you want to run and use the process API provided by <code>scala.sys.process._</code> to run it and pick up the result.</p>
 <p><a href="/hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala">Scala</a></p>
-<div class="highlight"><pre><span></span><code>    <span class="k">import</span> <span class="nn">scala.sys.process._</span>
+<div class="highlight"><pre><span></span><code>    <span class="k">import</span> <span class="nn">scala</span><span class="p">.</span><span class="nn">sys</span><span class="p">.</span><span class="nn">process</span><span class="p">.</span><span class="n">_</span>
 
     <span class="c1">//...</span>
 
     <span class="c1">//The sequence of strings to run</span>
-    <span class="k">val</span> <span class="n">cmd</span> <span class="o">=</span> <span class="nc">Seq</span><span class="o">(</span><span class="s">&quot;pmd&quot;</span><span class="o">,</span> <span class="s">&quot;-d&quot;</span><span class="o">,</span> <span class="s">&quot;/src/&quot;</span><span class="o">,</span> <span class="s">&quot;-f&quot;</span><span class="o">,</span> <span class="s">&quot;xml&quot;</span><span class="o">)</span>
+    <span class="kd">val</span> <span class="n">cmd</span> <span class="o">=</span> <span class="nc">Seq</span><span class="p">(</span><span class="s">&quot;pmd&quot;</span><span class="p">,</span> <span class="s">&quot;-d&quot;</span><span class="p">,</span> <span class="s">&quot;/src/&quot;</span><span class="p">,</span> <span class="s">&quot;-f&quot;</span><span class="p">,</span> <span class="s">&quot;xml&quot;</span><span class="p">)</span>
 
     <span class="c1">//run the command &gt; pmd -d /src/ -f xml</span>
-    <span class="k">val</span> <span class="n">cmdResponse</span> <span class="o">=</span> <span class="n">cmd</span><span class="o">.!</span>
+    <span class="kd">val</span> <span class="n">cmdResponse</span> <span class="o">=</span> <span class="n">cmd</span><span class="p">.</span><span class="o">!</span>
 
     <span class="c1">//...</span>
 </code></pre></div>

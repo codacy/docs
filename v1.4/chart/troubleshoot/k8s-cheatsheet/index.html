@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/chart/troubleshoot/k8s-cheatsheet/">
+        <meta http-equiv="last-modified" content="2020-10-15 09:30:02">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v1.4/chart/troubleshoot/k8s-cheatsheet/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v1.4" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2501,12 +2504,12 @@
                 
                 <h1 id="kubernetes-cheatsheet">Kubernetes cheatsheet<a class="headerlink" href="#kubernetes-cheatsheet" title="Permanent link">&para;</a></h1>
 <h2 id="how-to-install-a-custom-codacy-version">How to install a custom Codacy version<a class="headerlink" href="#how-to-install-a-custom-codacy-version" title="Permanent link">&para;</a></h2>
-<h3>Install</h3>
+<h3 id="install">Install<a class="headerlink" href="#install" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>sudo git clone git://github.com/codacy/chart -b &lt;YOUR-BRANCH&gt;
 helm dep build ./chart/codacy
 helm upgrade --install codacy ./chart/codacy/ --namespace codacy --atomic --timeout<span class="o">=</span><span class="m">300</span> --values ./&lt;YOUR-VALUES-FILE&gt;
 </code></pre></div>
-<h3>Upgrade</h3>
+<h3 id="upgrade">Upgrade<a class="headerlink" href="#upgrade" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code><span class="o">(</span><span class="nb">cd</span> chart<span class="p">;</span> sudo git fetch --all --prune --tags<span class="p">;</span> sudo git reset --hard origin/&lt;YOUR-BRANCH&gt;<span class="p">;</span><span class="o">)</span>
 helm dep build ./chart/codacy
 helm upgrade --install codacy ./chart/codacy/ --namespace codacy --atomic --timeout<span class="o">=</span><span class="m">300</span> --values ./&lt;YOUR-VALUES-FILE&gt;
@@ -2517,7 +2520,7 @@ helm upgrade --install codacy ./chart/codacy/ --namespace codacy --atomic --time
 <p>Always check the pods and deployment versions in the namespace
 to make sure you are not debugging an issue in a version that is not the one you would expect</p>
 </div>
-<h3>Events</h3>
+<h3 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
 <p>Events are a great way to understand what is going on under the hood in a Kubernetes cluster.
 By looking at them you can see if probes are failing, and other important signals from your cluster.</p>
 <p>Get events for the whole namespace:</p>
@@ -2546,13 +2549,13 @@ By looking at them you can see if probes are failing, and other important signal
 <div class="highlight"><pre><span></span><code>kubectl edit configmap &lt;configmap-name&gt;
 </code></pre></div>
 <h2 id="restart-deployment-of-daemonset">Restart deployment of daemonset<a class="headerlink" href="#restart-deployment-of-daemonset" title="Permanent link">&para;</a></h2>
-<h3>daemonsets</h3>
+<h3 id="daemonsets">daemonsets<a class="headerlink" href="#daemonsets" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>kubectl get daemonsets
 </code></pre></div>
 <p><strong>and</strong></p>
 <div class="highlight"><pre><span></span><code>kubectl rollout restart daemonset/&lt;daemonset-name&gt;
 </code></pre></div>
-<h3>deployment</h3>
+<h3 id="deployment">deployment<a class="headerlink" href="#deployment" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>kubectl get deployment
 </code></pre></div>
 <p><strong>and</strong></p>
@@ -2562,10 +2565,10 @@ By looking at them you can see if probes are failing, and other important signal
 <div class="highlight"><pre><span></span><code>kubectl rollout status deployment/&lt;deployment-name&gt; -w
 </code></pre></div>
 <h2 id="read-logs">Read logs<a class="headerlink" href="#read-logs" title="Permanent link">&para;</a></h2>
-<h3>daemonset with multiple containers</h3>
+<h3 id="daemonset-with-multiple-containers">daemonset with multiple containers<a class="headerlink" href="#daemonset-with-multiple-containers" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>kubectl logs daemonset/&lt;daemonset-name&gt; &lt;container-name&gt; -f
 </code></pre></div>
-<h3>service</h3>
+<h3 id="service">service<a class="headerlink" href="#service" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>kubectl get svc
 </code></pre></div>
 <p><strong>and</strong></p>
@@ -2578,7 +2581,7 @@ By looking at them you can see if probes are failing, and other important signal
 <div class="highlight"><pre><span></span><code>kubectl <span class="nb">exec</span> -it deployment/&lt;deployment-name&gt; sh
 </code></pre></div>
 <h2 id="microk8s">MicroK8s<a class="headerlink" href="#microk8s" title="Permanent link">&para;</a></h2>
-<h3>Session Manager SSH</h3>
+<h3 id="session-manager-ssh">Session Manager SSH<a class="headerlink" href="#session-manager-ssh" title="Permanent link">&para;</a></h3>
 <p>When using AWS Session Manager, to connect to the instance where you installed microk8s,
 since the CLI is very limited you will benefit from using these aliases:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">alias</span> <span class="nv">kubectl</span><span class="o">=</span><span class="s1">&#39;sudo microk8s.kubectl -n &lt;namespace-name&gt;&#39;</span>

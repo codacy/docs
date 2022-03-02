@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
+        <meta http-equiv="last-modified" content="2020-04-17 11:14:08">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v1.4/coverage-reporter/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v1.4" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2516,11 +2519,11 @@
 <p>The easiest way to get starting is by using the self-contained script that downloads and runs the reporter:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span>
 </code></pre></div>
-<h3>Choose a specific version</h3>
+<h3 id="choose-a-specific-version">Choose a specific version<a class="headerlink" href="#choose-a-specific-version" title="Permanent link">&para;</a></h3>
 <p>The script uses by default the latest version.</p>
 <p>If you want to specify a coverage reporter version, use <code>CODACY_REPORTER_VERSION</code> environment variable.</p>
 <p>You can find all versions in the <a href="https://github.com/codacy/codacy-coverage-reporter/releases">Releases tab</a>.</p>
-<h3>Manual Installation</h3>
+<h3 id="manual-installation">Manual Installation<a class="headerlink" href="#manual-installation" title="Permanent link">&para;</a></h3>
 <p>Using CircleCI? Check out the <a href="advanced/installation-methods/#circleci-orb">codacy/coverage-reporter orb</a>.</p>
 <p>Using GitHub Actions? Check out the <a href="https://github.com/codacy/codacy-coverage-reporter-action#codacy-coverage-reporter-action">codacy/coverage-coverage-reporter action</a>.</p>
 <p>If the automated script does not cover your use case, <a href="advanced/installation-methods/#manually-downloading-the-native-binary">check the manual installation methods</a>.</p>
@@ -2591,7 +2594,7 @@
 <p class="admonition-title">Note</p>
 <p>If your coverage reports are in a different format you can use a format converter, such as <a href="https://danielpalme.github.io/ReportGenerator/">ReportGenerator</a>, to generate a supported format.</p>
 </div>
-<h3>Unsuported Languages</h3>
+<h3 id="unsuported-languages">Unsuported Languages<a class="headerlink" href="#unsuported-languages" title="Permanent link">&para;</a></h3>
 <p>If your language is not in the list of supported languages, you can still send coverage to Codacy. You can do it by providing the correct <code>--language</code> name and then add the <code>--force-language</code> flag.</p>
 <h2 id="commit-sha-hash-detection">Commit SHA hash detection<a class="headerlink" href="#commit-sha-hash-detection" title="Permanent link">&para;</a></h2>
 <p>Codacy automatically detects a commit SHA hash from CI workflows, the git repository or command line arguments. See <a href="troubleshooting/commit-detection/">all supported environments</a>.</p>
