@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/chart/maintenance/database/">
+        <meta http-equiv="last-modified" content="2020-05-06 08:33:30">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v3.2/chart/maintenance/database/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v3.2" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2190,13 +2193,13 @@
 <li><code>$DB</code> - the database that you would like to export.</li>
 <li><code>$DB_PASSWORD</code> - the database password.</li>
 </ul>
-<h3>pg_dump</h3>
+<h3 id="pg_dump">pg_dump<a class="headerlink" href="#pg_dump" title="Permanent link">&para;</a></h3>
 <p>The following command lets you extract a given database into a dump file:</p>
 <div class="highlight"><pre><span></span><code><span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span> pg_dump -h <span class="nv">$SRC_HOSTNAME</span> -p <span class="nv">$SRC_HOSTPORT</span> -U <span class="nv">$DB_USER</span> --clean -Fc <span class="nv">$db</span> &gt; /tmp/<span class="nv">$db</span>.dump
 </code></pre></div>
 <p>This will dump the file with the <code>.dump</code> extension into the <code>/tmp</code> folder.</p>
 <p><a href="https://www.postgresql.org/docs/10/app-pgdump.html">For more information and additional options, please check the official documentation.</a></p>
-<h3>pg_restore</h3>
+<h3 id="pg_restore">pg_restore<a class="headerlink" href="#pg_restore" title="Permanent link">&para;</a></h3>
 <p>To restore a database, you can run a <code>pg_restore</code> command to consume the dump file and replicate the data onto Postgres:</p>
 <div class="highlight"><pre><span></span><code><span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span> pg_restore -h <span class="nv">$DEST_HOSTNAME</span> -p <span class="nv">$DEST_HOSTPORT</span> -U <span class="nv">$DB_USER</span> -j <span class="m">8</span> -d <span class="nv">$db</span> -n public --clean <span class="nv">$db</span>.dump
 </code></pre></div>
@@ -2213,7 +2216,7 @@
 <span class="nv">DB_PASSWORD</span><span class="o">=</span><span class="nv">$6</span>
 
 <span class="nb">declare</span> -a <span class="nv">dbs</span><span class="o">=(</span>accounts analysis filestore <span class="nb">jobs</span> metrics results<span class="o">)</span>
-<span class="k">for</span> db in <span class="si">${</span><span class="nv">dbs</span><span class="p">[@]</span><span class="si">}</span>
+<span class="k">for</span> db <span class="k">in</span> <span class="si">${</span><span class="nv">dbs</span><span class="p">[@]</span><span class="si">}</span>
 <span class="k">do</span>
   <span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span> pg_dump -h <span class="nv">$SRC_HOSTNAME</span> -p <span class="nv">$SRC_HOSTPORT</span> -U <span class="nv">$DB_USER</span> --clean -Fc <span class="nv">$db</span> &gt; /tmp/<span class="nv">$db</span>.dump
   <span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span> pg_restore -h <span class="nv">$DEST_HOSTNAME</span> -p <span class="nv">$DEST_HOSTPORT</span> -U <span class="nv">$DB_USER</span> -d <span class="nv">$db</span> -n public --clean <span class="nv">$db</span>.dump
