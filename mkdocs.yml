@@ -35,6 +35,8 @@ extra:
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
     support_email: "support@codacy.com"
+    # Control search engine indexing, the default (false) allows indexing
+    noindex: !ENV [MKDOCS_NOINDEX, false]
 
 # Repository
 repo_name: "codacy/docs"
