@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/repositories-configure/specifying-language/">
+        <meta http-equiv="last-modified" content="2020-10-23 20:28:02">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v3.1/repositories-configure/specifying-language/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v3.1" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2124,11 +2127,11 @@
                 <h1 id="specifying-language">Specifying language<a class="headerlink" href="#specifying-language" title="Permanent link">&para;</a></h1>
 <p>Although our tools try to detect which language is used on each file, some false positives may occur.</p>
 <p>To instruct which language you want Codacy to use, you can define the following in a <a href="../codacy-configuration-file/">Codacy configuration file</a> - <code>.codacy.yml</code>:</p>
-<div class="highlight"><pre><span></span><code><span class="nn">---</span>
-<span class="nt">engines</span><span class="p">:</span>
-  <span class="nt">cppcheck</span><span class="p">:</span>
-    <span class="nt">enabled</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">true</span>
-    <span class="nt">language</span><span class="p">:</span> <span class="l l-Scalar l-Scalar-Plain">c++</span>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span><span class="w"></span>
+<span class="nt">engines</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="nt">cppcheck</span><span class="p">:</span><span class="w"></span>
+<span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span><span class="w"></span>
+<span class="w">    </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c++</span><span class="w"></span>
 </code></pre></div>
 <p>Supported languages: C, C++</p>
 <p>Supported tools: <a href="https://github.com/codacy/codacy-cppcheck">codacy-cppcheck</a></p>

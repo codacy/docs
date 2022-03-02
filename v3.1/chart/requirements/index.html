@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/chart/requirements/">
+        <meta http-equiv="last-modified" content="2020-12-16 10:35:12">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v3.1/chart/requirements/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v3.1" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2173,7 +2176,7 @@
 </li>
 <li>The <a href="https://github.com/kubernetes/ingress-nginx">NGINX Ingress controller</a> must be installed and correctly set up in the cluster</li>
 </ul>
-<h3>Cluster networking requirements</h3>
+<h3 id="cluster-networking-requirements">Cluster networking requirements<a class="headerlink" href="#cluster-networking-requirements" title="Permanent link">&para;</a></h3>
 <p>The cluster must be configured to accept and establish connections on the following ports:</p>
 <table>
 <thead>
@@ -2235,10 +2238,10 @@
 </tr>
 </tbody>
 </table>
-<h3>Cluster hardware requirements</h3>
+<h3 id="cluster-hardware-requirements">Cluster hardware requirements<a class="headerlink" href="#cluster-hardware-requirements" title="Permanent link">&para;</a></h3>
 <p>The high-level architecture described in the next section is important in understanding how Codacy uses and allocates hardware resources. Below we also provide guidance on <a href="#standard-cluster-provisioning">resource provisioning for typical scenarios</a>.</p>
 <p>For a custom hardware resource recommendation, please contact us at <a href="mailto://support@codacy.com">support@codacy.com</a>.</p>
-<h4>Codacy architecture</h4>
+<h4 id="codacy-architecture">Codacy architecture<a class="headerlink" href="#codacy-architecture" title="Permanent link">&para;</a></h4>
 <p>You can look at Codacy separately as two groups of components:</p>
 <ul>
 <li>The <strong>"Platform"</strong> contains the UI and other components important to treat and show results</li>
@@ -2268,7 +2271,7 @@
 </tr>
 </tbody>
 </table>
-<h4>Standard cluster provisioning</h4>
+<h4 id="standard-cluster-provisioning">Standard cluster provisioning<a class="headerlink" href="#standard-cluster-provisioning" title="Permanent link">&para;</a></h4>
 <p>As described in the section above, Codacy's architecture allows scaling the "Analysis" group of components, meaning that the resources needed for Codacy <strong>depend mainly on the rate of commits</strong> done by your team that Codacy will be analyzing.</p>
 <p>The resources recommended on the following table are based on our experience and are also the defaults in the <a href="../values-files/values-production.yaml"><code>values-production.yaml</code></a> file. You might need to adapt these defaults taking into account your use case. In particular, you should set the value of <code>global.workerManager.workers.config.dedicatedMax</code> to the maximum number of concurrent analysis depending on the available resources and number of replicas per component.</p>
 <div class="admonition note">
@@ -2380,7 +2383,7 @@
 <li><a href="https://www.digitalocean.com/products/managed-databases-postgresql/">Digital Ocean Managed Databases</a></li>
 </ul>
 </div>
-<h3>PostgreSQL hardware requirements</h3>
+<h3 id="postgresql-hardware-requirements">PostgreSQL hardware requirements<a class="headerlink" href="#postgresql-hardware-requirements" title="Permanent link">&para;</a></h3>
 <p>The following are the minimum specifications recommended for provisioning the PostgreSQL server:</p>
 <table>
 <thead>
@@ -2400,7 +2403,7 @@
 </tr>
 </tbody>
 </table>
-<h3>Preparing PostgreSQL for Codacy</h3>
+<h3 id="preparing-postgresql-for-codacy">Preparing PostgreSQL for Codacy<a class="headerlink" href="#preparing-postgresql-for-codacy" title="Permanent link">&para;</a></h3>
 <p>Before installing Codacy you must create a set of databases that will be used by Codacy to persist data. We also recommend that you create a dedicated user for Codacy, with access permissions only to the databases that are specific to Codacy:</p>
 <ol>
 <li>
@@ -2410,8 +2413,8 @@
 </li>
 <li>
 <p>Create the dedicated user that Codacy will use to connect to PostgreSQL. Make sure that you change the username and password to suit your security needs:</p>
-<div class="highlight"><pre><span></span><code><span class="k">CREATE</span> <span class="k">USER</span> <span class="n">codacy</span> <span class="k">WITH</span> <span class="n">PASSWORD</span> <span class="s1">&#39;codacy&#39;</span><span class="p">;</span>
-<span class="k">ALTER</span> <span class="k">ROLE</span> <span class="n">codacy</span> <span class="k">WITH</span> <span class="k">CREATEDB</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="n">codacy</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="n">PASSWORD</span><span class="w"> </span><span class="s1">&#39;codacy&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">ALTER</span><span class="w"> </span><span class="k">ROLE</span><span class="w"> </span><span class="n">codacy</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">CREATEDB</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>Take note of the username and password you define, as you will require them later to configure the connection from Codacy to the PostgreSQL server.</p>
 </li>
@@ -2422,16 +2425,16 @@
 </li>
 <li>
 <p>Create the databases required by Codacy:</p>
-<div class="highlight"><pre><span></span><code><span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">accounts</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
-<span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">analysis</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
-<span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">results</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
-<span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">metrics</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
-<span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">filestore</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
-<span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">jobs</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
-<span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">activities</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
-<span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">hotspots</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
-<span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">listener</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
-<span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">crow</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">accounts</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span><span class="w"></span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">analysis</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span><span class="w"></span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">results</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span><span class="w"></span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">metrics</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span><span class="w"></span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">filestore</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span><span class="w"></span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">jobs</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span><span class="w"></span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">activities</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span><span class="w"></span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">hotspots</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span><span class="w"></span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">listener</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span><span class="w"></span>
+<span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">crow</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 </li>
 </ol>
