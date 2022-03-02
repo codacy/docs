@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/user-guide/configure-your-repo/coverage/">
+        <meta http-equiv="last-modified" content="2022-01-14 19:31:10">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v1.1/user-guide/configure-your-repo/coverage/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v1.1" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2490,29 +2493,29 @@
 <img src="/v1.1/images/Jun-06-2017_14-30-02.gif" width="599" height="264" alt="" />
 </figure>
 
-<h3>Token Security</h3>
+<h3 id="token-security">Token Security<a class="headerlink" href="#token-security" title="Permanent link">&para;</a></h3>
 <p>You should keep your API token well protected, as it grants owner permissions to your repositories. If you use CircleCI or Travis CI, you should use your token as an environment variable. <strong>Don't put your keys in your configuration files</strong>, check your service settings on how to set environment variables.</p>
-<h3>Setting token as environment variable</h3>
+<h3 id="setting-token-as-environment-variable">Setting token as environment variable<a class="headerlink" href="#setting-token-as-environment-variable" title="Permanent link">&para;</a></h3>
 <p>export CODACY_PROJECT_TOKEN=%Project_Token%</p>
 <p>(replacing %Project_Token% with your token)</p>
 <h2 id="setup">Setup<a class="headerlink" href="#setup" title="Permanent link">&para;</a></h2>
 <p>Check <a href="https://github.com/codacy/codacy-coverage-reporter#setup">here</a> for detailed instructions on how to set up the coverage reporter plugin.</p>
 <h2 id="submitting-coverage-for-unsupported-languages-or-tools">Submitting coverage for unsupported languages or tools<a class="headerlink" href="#submitting-coverage-for-unsupported-languages-or-tools" title="Permanent link">&para;</a></h2>
 <p>If your language or build tool isn't supported yet, you can send the coverage data directly through the Codacy API. You can check the endpoint in the <a href="https://api.codacy.com/swagger#savecoverage">API documentation</a> and an example of the JSON payload below.</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">23</span><span class="p">,</span>
-  <span class="nt">&quot;fileReports&quot;</span><span class="p">:</span> <span class="p">[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;filename&quot;</span><span class="p">:</span> <span class="s2">&quot;src/Codacy/Coverage/Parser/CloverParser.php&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;total&quot;</span><span class="p">:</span> <span class="mi">54</span><span class="p">,</span>
-      <span class="nt">&quot;coverage&quot;</span><span class="p">:</span> <span class="p">{</span>
-        <span class="nt">&quot;3&quot;</span><span class="p">:</span> <span class="mi">3</span><span class="p">,</span>
-        <span class="nt">&quot;5&quot;</span><span class="p">:</span> <span class="mi">0</span><span class="p">,</span>
-        <span class="nt">&quot;7&quot;</span><span class="p">:</span> <span class="mi">1</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;total&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">23</span><span class="p">,</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;fileReports&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;filename&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;src/Codacy/Coverage/Parser/CloverParser.php&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;total&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">54</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;coverage&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;3&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">3</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;5&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;7&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
