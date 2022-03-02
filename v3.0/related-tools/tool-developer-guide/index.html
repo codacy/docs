@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/related-tools/tool-developer-guide/">
+        <meta http-equiv="last-modified" content="2020-10-02 14:53:15">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v3.0/related-tools/tool-developer-guide/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v3.0" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2197,25 +2200,25 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;files&quot;</span> <span class="p">:</span> <span class="p">[</span><span class="s2">&quot;foo/bar/baz.js&quot;</span><span class="p">,</span> <span class="s2">&quot;foo2/bar/baz.php&quot;</span><span class="p">],</span>
-  <span class="nt">&quot;tools&quot;</span><span class="p">:[</span>
-    <span class="p">{</span>
-      <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;jshint&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;patterns&quot;</span><span class="p">:[</span>
-        <span class="p">{</span>
-          <span class="nt">&quot;patternId&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;parameters&quot;</span><span class="p">:[</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="s2">&quot;vars&quot;</span>
-            <span class="p">}</span>
-          <span class="p">]</span>
-        <span class="p">}</span>
-      <span class="p">]</span>
-    <span class="p">}</span>
-  <span class="p">]</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;files&quot;</span><span class="w"> </span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">&quot;foo/bar/baz.js&quot;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;foo2/bar/baz.php&quot;</span><span class="p">],</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;tools&quot;</span><span class="p">:[</span><span class="w"></span>
+<span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;jshint&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;patterns&quot;</span><span class="p">:[</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;patternId&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;parameters&quot;</span><span class="p">:[</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;value&quot;</span><span class="p">:</span><span class="s2">&quot;vars&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">          </span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">      </span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">]</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -2262,22 +2265,22 @@
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>    <span class="p">{</span>
-      <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;jshint&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;patterns&quot;</span><span class="p">:[</span>
-        <span class="p">{</span>
-          <span class="nt">&quot;patternId&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;level&quot;</span><span class="p">:</span> <span class="s2">&quot;Error&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;category&quot;</span><span class="p">:</span> <span class="s2">&quot;UnusedCode&quot;</span><span class="p">,</span>
-          <span class="nt">&quot;parameters&quot;</span><span class="p">:[</span>
-            <span class="p">{</span>
-              <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span>
-              <span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="s2">&quot;vars&quot;</span>
-            <span class="p">}</span>
-          <span class="p">]</span>
-        <span class="p">}</span>
-      <span class="p">]</span>
-    <span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;jshint&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;patterns&quot;</span><span class="p">:[</span><span class="w"></span>
+<span class="w">        </span><span class="p">{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;patternId&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;level&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;Error&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;category&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;UnusedCode&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;parameters&quot;</span><span class="p">:[</span><span class="w"></span>
+<span class="w">            </span><span class="p">{</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">              </span><span class="nt">&quot;default&quot;</span><span class="p">:</span><span class="s2">&quot;vars&quot;</span><span class="w"></span>
+<span class="w">            </span><span class="p">}</span><span class="w"></span>
+<span class="w">          </span><span class="p">]</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">      </span><span class="p">]</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -2304,18 +2307,18 @@
 <li>filename path: <code>folder/file.js</code></li>
 </ul>
 </div>
-<div class="highlight"><pre><span></span><code>    <span class="p">{</span>
-      <span class="nt">&quot;filename&quot;</span><span class="p">:</span><span class="s2">&quot;codacy/core/test.js&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="s2">&quot;found this in your code&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;patternId&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;line&quot;</span><span class="p">:</span><span class="mi">2</span>
-    <span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;filename&quot;</span><span class="p">:</span><span class="s2">&quot;codacy/core/test.js&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="s2">&quot;found this in your code&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;patternId&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;line&quot;</span><span class="p">:</span><span class="mi">2</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 <p>If you are not able to run the analysis for any of the files requested you should return an error for each one of them to the standard output in our <strong>Error</strong> format.</p>
-<div class="highlight"><pre><span></span><code>    <span class="p">{</span>
-      <span class="nt">&quot;filename&quot;</span><span class="p">:</span><span class="s2">&quot;codacy/core/test.js&quot;</span><span class="p">,</span>
-      <span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="s2">&quot;could not parse the file&quot;</span><span class="p">,</span>
-    <span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="p">{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;filename&quot;</span><span class="p">:</span><span class="s2">&quot;codacy/core/test.js&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;message&quot;</span><span class="p">:</span><span class="s2">&quot;could not parse the file&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="p">}</span><span class="w"></span>
 </code></pre></div>
 </li>
 </ol>
@@ -2329,20 +2332,20 @@
 <li>Optional: A <code>/docs/description/&lt;PATTERN-ID&gt;.md</code> for each pattern</li>
 </ul>
 <p>In the <code>description.json</code> you define the title for the pattern, brief description, time to fix (in minutes), and also a description of the parameters in the following format:</p>
-<div class="highlight"><pre><span></span><code><span class="p">[</span>
-  <span class="p">{</span>
-    <span class="nt">&quot;patternId&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;This is a title&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;This is a description&quot;</span><span class="p">,</span>
-    <span class="nt">&quot;timeToFix&quot;</span><span class="p">:</span> <span class="mi">5</span><span class="p">,</span>
-    <span class="nt">&quot;parameters&quot;</span><span class="p">:[</span>
-      <span class="p">{</span>
-        <span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;this is a param description&quot;</span>
-      <span class="p">}</span>
-    <span class="p">]</span>
-  <span class="p">}</span>
-<span class="p">]</span>
+<div class="highlight"><pre><span></span><code><span class="p">[</span><span class="w"></span>
+<span class="w">  </span><span class="p">{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;patternId&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;title&quot;</span><span class="p">:</span><span class="s2">&quot;This is a title&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;This is a description&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;timeToFix&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;parameters&quot;</span><span class="p">:[</span><span class="w"></span>
+<span class="w">      </span><span class="p">{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;name&quot;</span><span class="p">:</span><span class="s2">&quot;latedef&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;description&quot;</span><span class="p">:</span><span class="s2">&quot;this is a param description&quot;</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">]</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">]</span><span class="w"></span>
 </code></pre></div>
 <p>Optional: To give a more detailed explanation about the issue, you should define the <code>&lt;PATTERN-ID&gt;.md</code>.</p>
 <div class="highlight"><pre><span></span><code>    Fields in interfaces are automatically public static final, and methods are public abstract.
@@ -2365,9 +2368,9 @@
             public static interface Baz {} // static ignored
         }
 
-    [Source](http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier)
+    [<span class="nt">Source</span>](<span class="na">http://pmd.sourceforge.net/pmd-5.3.2/pmd-java/rules/java/unusedcode.html#UnusedModifier</span>)
 
-You should explain the *what* and *why* of the issue. Adding an example
+You should explain the <span class="ge">*what*</span> and <span class="ge">*why*</span> of the issue. Adding an example
 is always a nice way to help other people understand the problem. For a
 more thorough explanation you can also add a link at the end referring a
 more complete source.
@@ -2414,7 +2417,7 @@ more complete source.
 <p>To run this use our test repository available <a href="https://github.com/codacy/codacy-plugins-test">here</a>.</p>
 <p>You just need the docker image built in your local repo and then follow the steps to run it.</p>
 <h2 id="submit-the-docker">Submit the Docker<a class="headerlink" href="#submit-the-docker" title="Permanent link">&para;</a></h2>
-<h3>Running the docker</h3>
+<h3 id="running-the-docker">Running the docker<a class="headerlink" href="#running-the-docker" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>docker run -t <span class="se">\</span>
 --net<span class="o">=</span>none <span class="se">\</span>
 --privileged<span class="o">=</span><span class="nb">false</span> <span class="se">\</span>
@@ -2425,7 +2428,7 @@ more complete source.
 
 &lt;YOUR-DOCKER-NAME&gt;:&lt;YOUR-DOCKER-VERSION&gt;
 </code></pre></div>
-<h3>Docker restrictions</h3>
+<h3 id="docker-restrictions">Docker restrictions<a class="headerlink" href="#docker-restrictions" title="Permanent link">&para;</a></h3>
 <ul>
 <li>Docker image size should not exceed 500MB</li>
 <li>Docker should contain a non-root user named docker with UID/GID 2004</li>
@@ -2433,7 +2436,7 @@ more complete source.
 <li>The docker base must officially be supported on DockerHub</li>
 <li>Your docker must be provided in a repository through a public git host (ex: GitHub, Bitbucket, ...)</li>
 </ul>
-<h3>Docker submission</h3>
+<h3 id="docker-submission">Docker submission<a class="headerlink" href="#docker-submission" title="Permanent link">&para;</a></h3>
 <ul>
 <li>To submit the docker you should send an email to <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a> with the link to the git repository with your docker definition.</li>
 <li>The docker will then be subjected to a review by our team and we will then contact you with more details.</li>
