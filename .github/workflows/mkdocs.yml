@@ -5,146 +5,73 @@ on: push
 concurrency: ${{ github.workflow }}
 
 jobs:
-  build:
+  mkdocs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
           submodules: true
+          # git-revision-date-localized-plugin and mkdocs-rss-plugin need full git history depth
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v2.2.2
+        uses: actions/setup-python@v2
         with:
-          python-version: "3.9.7"
-
-      - uses: actions/cache@v2.1.5
-        id: cache
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          python-version: "3.x"
+          cache: 'pip'
 
       - name: Install dependencies
         run: |
-          python -m pip install --upgrade pip setuptools wheel
-          python -m pip install -r requirements.txt
+          pip install -r requirements.txt
 
       - name: Build docs
         run: |
-          mkdocs build
+          mkdocs -v build
 
-      # Commented this step because it was preventing the docs from being deployed
-      # - name: Validate generated HTML files
-      #   run: |
-      #     docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
+      # This step is commented because it fails on older Self-hosted versions
+      #- name: Validate generated HTML files
+      #  run: |
+      #    docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
 
-  deploy-version:
-    needs: build
-    runs-on: ubuntu-latest
-    if: startsWith(github.ref, 'refs/heads/release/v')
-    steps:
-      - name: Checkout release branch
-        uses: actions/checkout@v2
+      # Deploy Latest docs on push to master
+      - name: Set up environment variables
+        if: github.ref == 'refs/heads/master'
+        run: |
+          echo "MKDOCS_VERSION=$(mkdocs --version | cut -d " " -f 3)" >> $GITHUB_ENV
+          echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-9`" >> $GITHUB_ENV
+
+      - name: Deploy docs (Latest)
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == 'refs/heads/master'
         with:
-          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
-          submodules: true
-          fetch-depth: 0
-
-      - name: Set up Python
-        uses: actions/setup-python@v2.2.2
-        with:
-          python-version: "3.9.7"
-
-      - uses: actions/cache@v2.1.5
-        id: cache
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip setuptools wheel
-          python -m pip install -r requirements.txt
-
-      - name: Set up git author
-        run: |
-          remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git remote rm origin
-          git remote add origin "${remote_repo}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Set up yq
-        uses: chrisdickinson/setup-yq@latest
-        if: startsWith(github.ref, 'refs/heads/release/v')        
-
-      - name: Update mkdocs.yml
-        if: startsWith(github.ref, 'refs/heads/release/v')        
-        run: |
-          yq write --inplace mkdocs.yml "extra.noindex" true
-
-      - name: Get version from branch name
-        id: get_version
-        run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -c 21-27)
-
-      - name: Deploy docs
-        run: |
-          git fetch origin gh-pages --verbose
-          mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted v${{ steps.get_version.outputs.VERSION }} (Deprecated)" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
-
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-    if: github.ref == 'refs/heads/master'
-    steps:
-      - name: Checkout master
-        uses: actions/checkout@v2
-        with:
-          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
-          submodules: true
-          fetch-depth: 0
-
-      - name: Set up Python
-        uses: actions/setup-python@v2.2.2
-        with:
-          python-version: "3.9.7"
-
-      - uses: actions/cache@v2.1.5
-        id: cache
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
-
-      - name: Install dependencies
-        run: |
-          python -m pip install --upgrade pip setuptools wheel
-          python -m pip install -r requirements.txt
-
-      - name: Set up git author
-        run: |
-          remote_repo="https://${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git"
-          git config --global user.name "${GITHUB_ACTOR}"
-          git config --global user.email "${GITHUB_ACTOR}@users.noreply.github.com"
-          git remote rm origin
-          git remote add origin "${remote_repo}"
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: Deploy docs
-        run: |
-          echo "${CUSTOM_DOMAIN}" > "${GITHUB_WORKSPACE}/docs/CNAME"
-          echo -e "User-agent: *\nSitemap: https://${CUSTOM_DOMAIN}/sitemap.xml" > "${GITHUB_WORKSPACE}/docs/robots.txt"
-          git fetch origin gh-pages --verbose
-          mike deploy . -t "Cloud (Latest)" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
+          personal_token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
+          publish_dir: ./site
+          destination_dir: ./
+          keep_files: true
+          cname: ${{ env.CUSTOM_DOMAIN }}
+          allow_empty_commit: true
+          full_commit_message: Deployed ${{ env.SHORT_SHA }} to . with MkDocs ${{ env.MKDOCS_VERSION }}
         env:
           CUSTOM_DOMAIN: docs.codacy.com
+
+      # Deploy Self-hosted docs on push to release/vM.m branch
+      - name: Set up git author
+        uses: oleksiyrudenko/gha-git-credentials@v2
+        if: startsWith(github.ref, 'refs/heads/release/v')
+        with:
+          name: ${{ github.actor }}
+          email: ${{ github.actor }}@users.noreply.github.com
+          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
+
+      - name: Deploy docs (Self-hosted)
+        if: startsWith(github.ref, 'refs/heads/release/v')
+        run: |
+          git fetch origin gh-pages --verbose
+          mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted ${GITHUB_REF##*/release/}" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
+        env:
+          # Disable search engine indexing on Self-hosted version pages
+          MKDOCS_NOINDEX: true
+          # Disable showing Beta features on Self-hosted versions
+          MKDOCS_SHOW_BETA: false
