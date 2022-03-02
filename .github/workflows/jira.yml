@@ -33,7 +33,7 @@ jobs:
           fields: '{"customfield_10009": "DOCS-162"}'
 
       - name: Update title of GitHub issue
-        uses: actions/github-script@v3.1
+        uses: actions/github-script@v6
         env:
           JIRA_ISSUE_NUMBER: ${{ steps.create_jira_issue.outputs.issue }}
           GITHUB_ORIGINAL_TITLE: ${{ github.event.issue.title }}
@@ -41,7 +41,7 @@ jobs:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
             const newTitle = `[${process.env.JIRA_ISSUE_NUMBER}] ${process.env.GITHUB_ORIGINAL_TITLE}`
-            github.issues.update({
+            github.rest.issues.update({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
@@ -49,11 +49,11 @@ jobs:
             })
 
       - name: Add comment to GitHub issue
-        uses: actions/github-script@v3.1
+        uses: actions/github-script@v6
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            github.issues.createComment({
+            github.rest.issues.createComment({
               issue_number: context.issue.number,
               owner: context.repo.owner,
               repo: context.repo.repo,
