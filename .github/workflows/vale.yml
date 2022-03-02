@@ -15,7 +15,6 @@ jobs:
       - name: Vale
         uses: errata-ai/vale-action@v1.5.0
         with:
-          files: __onlyModified
           onlyAnnotateModifiedLines: true
           debug: true
         env:
