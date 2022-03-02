@@ -62,7 +62,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 v6
 
--   [v6.0.0](self-hosted/self-hosted-v6.0.0.md) (March 1, 2022)
+-   [v6.0.0](self-hosted/self-hosted-v6.0.0.md) (March 2, 2022)
 
 v5
 
