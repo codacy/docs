@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/user-guide/integrations/webhook-notifications/">
+        <meta http-equiv="last-modified" content="2020-11-17 17:05:06">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v2.0.387-deprecated/user-guide/integrations/webhook-notifications/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v2.0.387-deprecated" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2546,20 +2549,20 @@
 <p>After filling the field you have to click the Save button and everything should be setup correctly.
 You can use the Test button to send a test notification to the address.</p>
 <p>When Codacy sends the POST to the address the message is in JSON format. Below, you can see an example message:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
-  <span class="nt">&quot;commit&quot;</span><span class="p">:{</span>
-    <span class="nt">&quot;data&quot;</span><span class="p">:{</span>
-      <span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="s2">&quot;4cbf02df84dbcaa44b75a64ed832f7dbff2231dd&quot;</span><span class="p">,</span>
-        <span class="nt">&quot;urls&quot;</span><span class="p">:{</span>
-          <span class="nt">&quot;delta&quot;</span><span class="p">:</span><span class="s2">&quot;https://www.codacy.com/public/jquery/jquery.git/commit?bid=21776&amp;cid=6037089&quot;</span>
-        <span class="p">}</span>
-    <span class="p">},</span>
-      <span class="nt">&quot;results&quot;</span><span class="p">:{</span>
-        <span class="nt">&quot;fixed_count&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
-        <span class="nt">&quot;new_count&quot;</span><span class="p">:</span><span class="mi">0</span>
-      <span class="p">}</span>
-  <span class="p">}</span>
-<span class="p">}</span>
+<div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
+<span class="w">  </span><span class="nt">&quot;commit&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="s2">&quot;4cbf02df84dbcaa44b75a64ed832f7dbff2231dd&quot;</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;urls&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">          </span><span class="nt">&quot;delta&quot;</span><span class="p">:</span><span class="s2">&quot;https://www.codacy.com/public/jquery/jquery.git/commit?bid=21776&amp;cid=6037089&quot;</span><span class="w"></span>
+<span class="w">        </span><span class="p">}</span><span class="w"></span>
+<span class="w">    </span><span class="p">},</span><span class="w"></span>
+<span class="w">      </span><span class="nt">&quot;results&quot;</span><span class="p">:{</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;fixed_count&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span><span class="w"></span>
+<span class="w">        </span><span class="nt">&quot;new_count&quot;</span><span class="p">:</span><span class="mi">0</span><span class="w"></span>
+<span class="w">      </span><span class="p">}</span><span class="w"></span>
+<span class="w">  </span><span class="p">}</span><span class="w"></span>
+<span class="p">}</span><span class="w"></span>
 </code></pre></div>
               
               

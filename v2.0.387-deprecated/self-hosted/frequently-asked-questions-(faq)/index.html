@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/self-hosted/frequently-asked-questions-%28faq%29/">
+        <meta http-equiv="last-modified" content="2022-01-14 19:29:28">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v2.0.387-deprecated/self-hosted/frequently-asked-questions-%28faq%29/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v2.0.387-deprecated" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2694,7 +2697,7 @@ while locating play.api.db.DBApiWhile</em></p>
 <p>2 - We should have several DBs created for Codacy:</p>
 <p><img alt="" src="https://www.filepicker.io/api/file/IGHS4kXQBOVIePJf5Cek" /></p>
 <p>In the PSQL shell, run:</p>
-<div class="highlight"><pre><span></span><code>    <span class="k">CREATE</span> <span class="k">DATABASE</span> <span class="n">codacy_results</span> <span class="k">WITH</span> <span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="w">    </span><span class="k">CREATE</span><span class="w"> </span><span class="k">DATABASE</span><span class="w"> </span><span class="n">codacy_results</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">OWNER</span><span class="o">=</span><span class="n">codacy</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <h2 id="our-machine-was-restarted-and-our-db-ip-changed-what-now">Our machine was restarted, and our DB IP changed. What now?<a class="headerlink" href="#our-machine-was-restarted-and-our-db-ip-changed-what-now" title="Permanent link">&para;</a></h2>
 <p><em>Please be aware that a Postgres installation using Docker is not advised or supported. We strongly advise using a separate Postgres outside the Codacy machine in order to be able to upgrade/downgrade Docker and Codacy without losing data in the DB. The server should be considered stateless at all times.</em></p>
@@ -2715,7 +2718,7 @@ If the database is running on a Docker, its IP may have changed.</p>
 <p>Currently, Codacy requires 2 different licenses: one is a .dlk file used in the installer, and another is .key file used in Codacy. If the dlk file is imported, it will fail to parse and throw an exception.</p>
 <p>Please navigate to URL <a href="http://your_server/license">http://YOUR_SERVER/license</a>, where you should be able to introduce the correct file.</p>
 <h2 id="my-analyses-are-taking-too-long-why">My analyses are taking too long. Why?<a class="headerlink" href="#my-analyses-are-taking-too-long-why" title="Permanent link">&para;</a></h2>
-<h3>Docker version</h3>
+<h3 id="docker-version">Docker version<a class="headerlink" href="#docker-version" title="Permanent link">&para;</a></h3>
 <p>Please make sure you are running a supported version of Docker. Codacy currently supports versions 1.7.0 to 1.9.1. Version 1.10 is currently not supported and thus will not perform any analysis.</p>
 <p>Initial analysis on a repository may take a bit longer than usual. For a large repository, this may take up to 1 hour, depending on your server hardware. Even so, we find that over 90% of repositories are analysed in less than 5 minutes. If you find your repository taking longer than what would be expected for its size, there may be some issues with the Docker engine.</p>
 <p>If you find your analyses taking longer than expected, please reach out to us with your logs at <a href="mailto:support@codacy.com">support@codacy.com</a>.</p>

@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/self-hosted/configuring-bitbucket-server-%28from-stash%29-with-codacy-self-hosted/">
+        <meta http-equiv="last-modified" content="2022-01-14 19:29:28">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v2.0.387-deprecated/self-hosted/configuring-bitbucket-server-%28from-stash%29-with-codacy-self-hosted/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v2.0.387-deprecated" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2569,50 +2572,50 @@
 <p><img alt="bitbucket_server_2.gif" src="../../images/bitbucket_server_2.gif" /></p>
 <p><img alt="" src="../../images/Screen_Shot_2017-06-01_at_16.05.41.png" /></p>
 <h2 id="endpoint">Endpoint<a class="headerlink" href="#endpoint" title="Permanent link">&para;</a></h2>
-<h3>Url <strong><em>[required]</em></strong></h3>
+<h3 id="url-required">Url <strong><em>[required]</em></strong><a class="headerlink" href="#url-required" title="Permanent link">&para;</a></h3>
 <p>The URL where the Stash application is deployed.</p>
 <p>Should contain:</p>
 <ul>
 <li>Protocol (ex: http, https)</li>
 <li>Port (if other than 80) (ex: 9000)</li>
 </ul>
-<h5>Correct:</h5>
+<h5 id="correct">Correct:<a class="headerlink" href="#correct" title="Permanent link">&para;</a></h5>
 <ul>
 <li><code>http://my.stash.example.com:7990</code></li>
 </ul>
-<h5>Incorrect:</h5>
+<h5 id="incorrect">Incorrect:<a class="headerlink" href="#incorrect" title="Permanent link">&para;</a></h5>
 <ul>
 <li><code>my.stash.example.com</code></li>
 <li><code>my.stash.example.com/</code></li>
 <li><code>my.stash.example.com:7990</code></li>
 <li><code>my.stash.example.com:7990/</code></li>
 </ul>
-<h3>Project Keys <strong><em>[required]</em></strong></h3>
+<h3 id="project-keys-required">Project Keys <strong><em>[required]</em></strong><a class="headerlink" href="#project-keys-required" title="Permanent link">&para;</a></h3>
 <p>The project in Stash that you would like to retrieve repositories from.</p>
 <p><img alt="Screen_Shot_2017-06-01_at_16.08.50.png" src="../../images/Screen_Shot_2017-06-01_at_16.08.50.png" /></p>
 <h2 id="stash-application-link">Stash Application Link<a class="headerlink" href="#stash-application-link" title="Permanent link">&para;</a></h2>
 <p>To set up Stash you need to create an application link on your Stash installation.
 To start you can click on <code>here</code> and go to the application links list.</p>
-<h3>Application Link Creation <strong><em>[required]</em></strong></h3>
-<h4>Create the link</h4>
+<h3 id="application-link-creation-required">Application Link Creation <strong><em>[required]</em></strong><a class="headerlink" href="#application-link-creation-required" title="Permanent link">&para;</a></h3>
+<h4 id="create-the-link">Create the link<a class="headerlink" href="#create-the-link" title="Permanent link">&para;</a></h4>
 <p><img alt="" src="../../images/Screen_Shot_2017-06-01_at_16.02.07.png" /></p>
-<h5>Application Url</h5>
+<h5 id="application-url">Application Url<a class="headerlink" href="#application-url" title="Permanent link">&para;</a></h5>
 <p>This is your Codacy installation url.</p>
-<h4>Name the link</h4>
+<h4 id="name-the-link">Name the link<a class="headerlink" href="#name-the-link" title="Permanent link">&para;</a></h4>
 <p><img alt="" src="../../images/Screen_Shot_2017-06-01_at_16.06.21.png" /></p>
-<h4>Application Name</h4>
+<h4 id="application-name">Application Name<a class="headerlink" href="#application-name" title="Permanent link">&para;</a></h4>
 <p>You can name the application (ex: Codacy)</p>
-<h4>Application Type</h4>
+<h4 id="application-type">Application Type<a class="headerlink" href="#application-type" title="Permanent link">&para;</a></h4>
 <p>The application type is <code>Generic Application</code></p>
 <p>The rest of the configuration should be left blank.</p>
 <p>After the link is created, click edit to add an incoming connection.</p>
-<h4>Add incoming connection</h4>
+<h4 id="add-incoming-connection">Add incoming connection<a class="headerlink" href="#add-incoming-connection" title="Permanent link">&para;</a></h4>
 <p><img alt="" src="../../images/stash5.png" /></p>
-<h5>Consumer Key</h5>
+<h5 id="consumer-key">Consumer Key<a class="headerlink" href="#consumer-key" title="Permanent link">&para;</a></h5>
 <p>This value should be copied from the "Client ID" field in the Codacy setup page.</p>
-<h5>Consumer Name</h5>
+<h5 id="consumer-name">Consumer Name<a class="headerlink" href="#consumer-name" title="Permanent link">&para;</a></h5>
 <p>You can choose any name (ex: Codacy).</p>
-<h5>Public Key</h5>
+<h5 id="public-key">Public Key<a class="headerlink" href="#public-key" title="Permanent link">&para;</a></h5>
 <p>This value should be copied from the "Client Secret" field on the Codacy setup page.</p>
 <p>The rest of the fields can be left blank.</p>
 <p>After the application link is created, you will be able to add Bitbucket Server as an integration in the repository settings.</p>

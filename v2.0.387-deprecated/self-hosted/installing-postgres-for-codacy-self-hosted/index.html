@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/self-hosted/installing-postgres-for-codacy-self-hosted/">
+        <meta http-equiv="last-modified" content="2021-02-25 16:25:12">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v2.0.387-deprecated/self-hosted/installing-postgres-for-codacy-self-hosted/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v2.0.387-deprecated" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2607,7 +2610,7 @@
 8 GB RAM
 Minimum 500 GB+ Hard Drive - this will depend on the number of repositories you have. For a custom recommendation, please contact us.</p>
 <p>If you already have a Postgres installation, jump directly to step 1.3.</p>
-<h3>Postgres Version</h3>
+<h3 id="postgres-version">Postgres Version<a class="headerlink" href="#postgres-version" title="Permanent link">&para;</a></h3>
 <p>Codacy officially supports Postgres version 9.6. Codacy requires 'UTF-8' encoding. Make sure that your database character set is correctly configured. For more information see
 <a href="https://www.postgresql.org/docs/9.4/static/multibyte.html">https://www.postgresql.org/docs/9.4/static/multibyte.html</a></p>
 <h2 id="1-postgres">1 - Postgres<a class="headerlink" href="#1-postgres" title="Permanent link">&para;</a></h2>
@@ -2662,13 +2665,13 @@ host all all  0.0.0.0/0 md5
 <h2 id="15-creating-a-user">1.5 - Creating a user<a class="headerlink" href="#15-creating-a-user" title="Permanent link">&para;</a></h2>
 <p>It is advised that you create a unique user that will only be able to access Codacy-specific databases. To do so, using the <code>psql</code> shell, create a user:</p>
 <p><code>sudo -u postgres psql</code></p>
-<div class="highlight"><pre><span></span><code><span class="k">CREATE</span> <span class="k">USER</span> <span class="n">codacy</span> <span class="k">WITH</span> <span class="n">PASSWORD</span> <span class="s1">&#39;codacy&#39;</span><span class="p">;</span>
-<span class="k">ALTER</span> <span class="k">ROLE</span> <span class="n">codacy</span> <span class="k">WITH</span> <span class="k">CREATEDB</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><code><span class="k">CREATE</span><span class="w"> </span><span class="k">USER</span><span class="w"> </span><span class="n">codacy</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="n">PASSWORD</span><span class="w"> </span><span class="s1">&#39;codacy&#39;</span><span class="p">;</span><span class="w"></span>
+<span class="k">ALTER</span><span class="w"> </span><span class="k">ROLE</span><span class="w"> </span><span class="n">codacy</span><span class="w"> </span><span class="k">WITH</span><span class="w"> </span><span class="k">CREATEDB</span><span class="p">;</span><span class="w"></span>
 </code></pre></div>
 <p>You can change the username/password to suit your security needs.</p>
 <p>Make sure that you can connect to the Postgres database using the newly created user. For additional settings, follow the steps in the Postgres documentation.</p>
 <h2 id="additional-topics">Additional topics<a class="headerlink" href="#additional-topics" title="Permanent link">&para;</a></h2>
-<h3>Connecting psql Client Using the Google Cloud SQL Proxy Docker Image</h3>
+<h3 id="connecting-psql-client-using-the-google-cloud-sql-proxy-docker-image">Connecting psql Client Using the Google Cloud SQL Proxy Docker Image<a class="headerlink" href="#connecting-psql-client-using-the-google-cloud-sql-proxy-docker-image" title="Permanent link">&para;</a></h3>
 <p>If you are connecting to your postgres instance through a <a href="https://cloud.google.com/sql/docs/postgres/connect-docker">docker container proxy</a>, we recommend that you configure the following:</p>
 <ul>
 <li>Make sure your postgres docker container is configured with --restart always</li>
