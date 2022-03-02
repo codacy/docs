@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/faq/repositories/how-do-i-programmatically-add-repositories-to-codacy/">
+        <meta http-equiv="last-modified" content="2020-09-10 17:46:17">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v2.1/faq/repositories/how-do-i-programmatically-add-repositories-to-codacy/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v2.1" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2250,14 +2253,14 @@
 <span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;REPLACE_ME&gt;&quot;</span>
 
 <span class="nb">printf</span> <span class="s2">&quot;Obtaining all repositories in the </span><span class="nv">$GITHUB_ORG_NAME</span><span class="s2"> organization\n&quot;</span>
-<span class="k">for</span> repo in <span class="k">$(</span>curl -s https://api.github.com/orgs/<span class="nv">$GITHUB_ORG_NAME</span>/repos -H <span class="s2">&quot;Authorization: Bearer </span><span class="nv">$GITHUB_AUTH_TOKEN</span><span class="s2">&quot;</span> <span class="p">|</span> jq -r <span class="s1">&#39;.[] | .full_name&#39;</span><span class="k">)</span><span class="p">;</span> <span class="k">do</span>
+<span class="k">for</span> repo <span class="k">in</span> <span class="k">$(</span>curl -s https://api.github.com/orgs/<span class="nv">$GITHUB_ORG_NAME</span>/repos -H <span class="s2">&quot;Authorization: Bearer </span><span class="nv">$GITHUB_AUTH_TOKEN</span><span class="s2">&quot;</span> <span class="p">|</span> jq -r <span class="s1">&#39;.[] | .full_name&#39;</span><span class="k">)</span><span class="p">;</span> <span class="k">do</span>
   <span class="nb">printf</span> <span class="s2">&quot;Adding </span><span class="nv">$repo</span><span class="s2"> to Codacy\n&quot;</span>
   <span class="nv">http_status</span><span class="o">=</span><span class="k">$(</span>curl -X POST https://app.codacy.com/api/v3/repositories <span class="se">\</span>
                      -H <span class="s2">&quot;Content-Type: application/json&quot;</span> <span class="se">\</span>
                      -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
                      -d <span class="s1">&#39;{&quot;provider&quot;:&quot;gh&quot;, &quot;repositoryFullPath&quot;:&quot;&#39;</span><span class="nv">$repo</span><span class="s1">&#39;&quot;}&#39;</span> <span class="se">\</span>
                      -sSo /dev/null -w <span class="s2">&quot;%{http_code}&quot;</span><span class="k">)</span>
-  <span class="k">case</span> <span class="s2">&quot;</span><span class="nv">$http_status</span><span class="s2">&quot;</span> in
+  <span class="k">case</span> <span class="s2">&quot;</span><span class="nv">$http_status</span><span class="s2">&quot;</span> <span class="k">in</span>
     <span class="m">200</span><span class="o">)</span> <span class="nb">printf</span> <span class="s2">&quot;</span><span class="nv">$repo</span><span class="s2"> added successfully\n&quot;</span>
          <span class="p">;;</span>
     <span class="m">401</span><span class="o">)</span> <span class="nb">printf</span> <span class="s2">&quot;Error: 401 Unauthorized, check the Codacy API token\n&quot;</span>

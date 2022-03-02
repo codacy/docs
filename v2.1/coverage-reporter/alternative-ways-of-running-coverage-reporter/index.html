@@ -11,15 +11,18 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/">
+        <meta http-equiv="last-modified" content="2020-09-25 16:10:00">  
+      
+      
+        <link rel="canonical" href="https://docs.codacy.com/v2.1/coverage-reporter/alternative-ways-of-running-coverage-reporter/">
       
       
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.1.2, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
       
-        <meta property="robots" content="noindex">
+        <meta property="robots" content="index, follow">
       
     
     
@@ -28,7 +31,7 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.71c91d94.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.b0218524.min.css">
       
         <link rel="stylesheet" href="../../assets/stylesheets/palette.d932a83f.min.css">
       
@@ -75,7 +78,7 @@
     
       <header class="md-header" data-md-component="header">
   <nav class="md-header-nav" aria-label="Header">
-    <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
+    <a href="https://docs.codacy.com/v2.1" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
   <img src="../../assets/images/codacy-docs-logo.svg" alt="logo">
 
@@ -2201,19 +2204,19 @@
 <h2 id="github-action">GitHub Action<a class="headerlink" href="#github-action" title="Permanent link">&para;</a></h2>
 <p>If you are using GitHub Actions to report coverage, you can use our GitHub Action <a href="https://github.com/codacy/codacy-coverage-reporter-action">codacy/codacy-coverage-reporter-action</a>.</p>
 <h2 id="community-supported-alternatives">Community supported alternatives<a class="headerlink" href="#community-supported-alternatives" title="Permanent link">&para;</a></h2>
-<h3>Maven plugin</h3>
+<h3 id="maven-plugin">Maven plugin<a class="headerlink" href="#maven-plugin" title="Permanent link">&para;</a></h3>
 <p>Thanks to the amazing job of <a href="https://github.com/halkeye">Gavin Mogan</a> you can now send your coverage to Codacy using his Maven plugin <a href="https://github.com/halkeye/codacy-maven-plugin">halkeye/codacy-maven-plugin</a>! Be sure to follow the instructions on his repository.</p>
-<h3>Travis CI</h3>
+<h3 id="travis-ci">Travis CI<a class="headerlink" href="#travis-ci" title="Permanent link">&para;</a></h3>
 <p>If you are using Travis CI to report coverage, update your file <code>.travis.yml</code> to include the following blocks:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">before_install</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">sudo apt-get install jq</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">curl -LSs &quot;$(curl -LSs https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest | jq -r &#39;.assets | map({name, browser_download_url} | select(.name | endswith(&quot;.jar&quot;))) | .[0].browser_download_url&#39;)&quot; -o codacy-coverage-reporter-assembly.jar</span>
+<div class="highlight"><pre><span></span><code><span class="nt">before_install</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">sudo apt-get install jq</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">curl -LSs &quot;$(curl -LSs https://api.github.com/repos/codacy/codacy-coverage-reporter/releases/latest | jq -r &#39;.assets | map({name, browser_download_url} | select(.name | endswith(&quot;.jar&quot;))) | .[0].browser_download_url&#39;)&quot; -o codacy-coverage-reporter-assembly.jar</span><span class="w"></span>
 
-<span class="nt">after_success</span><span class="p">:</span>
-  <span class="p p-Indicator">-</span> <span class="l l-Scalar l-Scalar-Plain">java -jar codacy-coverage-reporter-assembly.jar report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml</span>
+<span class="nt">after_success</span><span class="p">:</span><span class="w"></span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">java -jar codacy-coverage-reporter-assembly.jar report -l Java -r build/reports/jacoco/test/jacocoTestReport.xml</span><span class="w"></span>
 </code></pre></div>
 <p>Make sure that you also <a href="../adding-coverage-to-your-repository/#authenticate">set your project API Token</a> as an environment variable in your Travis CI job.</p>
-<h3>Gradle task</h3>
+<h3 id="gradle-task">Gradle task<a class="headerlink" href="#gradle-task" title="Permanent link">&para;</a></h3>
 <p>A big shout-out to <a href="https://github.com/tompahoward">Tom Howard</a>, who suggested a way to <a href="https://github.com/mountain-pass/hyperstate/commit/857ca93e1c8484c14a5e2da9f0434d3daf3328ce">create a Gradle task</a>.</p>
 <div class="highlight"><pre><span></span><code>task uploadCoverageToCodacy(type: JavaExec, dependsOn : jacocoTestReport) {
    main = &quot;com.codacy.CodacyCoverageReporter&quot;
