@@ -33,7 +33,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
     Kubernetes 1.14 is an old version [first released in 2019](https://kubernetes.io/blog/2019/03/25/kubernetes-1-14-release-announcement/){: target="_blank"} that's no longer being maintained.
 
-    For the current supported versions, see the [chart requirements page](https://docs.codacy.com/v6.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
+    If you're using Kubernetes 1.14 or MicroK8s 1.14, make sure that you upgrade your cluster before upgrading Codacy. For the current supported versions, see the [chart requirements page](https://docs.codacy.com/v6.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
 
 -   Removed the tool **PMD (Legacy)**
 
