@@ -12,8 +12,3 @@ mkdocs-include-markdown-plugin==3.3.0
 mkdocs-rss-plugin==0.21.0
 mkdocs-meta-descriptions-plugin==1.0.2
 mkdocs-exclude==1.0.2
-
-# The requirements below are fixed for compatibility
-Jinja2==2.11.3
-mkdocs-material<=7.2.3
-MarkupSafe==2.0.1
