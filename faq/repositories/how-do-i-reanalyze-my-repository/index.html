@@ -11,7 +11,7 @@
         <meta name="description" content="To reflect the most recent configurations for your repository on the Codacy analysis results without waiting for a new commit to trigger the analysis, reanalyze the last commit in your branch or pull request.">
       
       
-        <meta http-equiv="last-modified" content="2021-09-23 16:49:10">  
+        <meta http-equiv="last-modified" content="2022-03-02 11:52:46">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/repositories/how-do-i-reanalyze-my-repository/">
@@ -1869,6 +1869,13 @@
   
 </li>
       
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#see-also" class="md-nav__link">
+    See also
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -3208,7 +3215,7 @@
 <p>To reflect the most recent configurations for your repository on the Codacy analysis results without waiting for a new commit to trigger the analysis, reanalyze the last commit in your branch or pull request.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>If you have the setting <strong>Run analysis on your build server</strong> enabled in your repository <strong>Settings</strong> page so that you can run client-side tools you can't trigger a new analysis from the Codacy UI.</p>
+<p>If you have the setting <strong>Run analysis on your build server</strong> enabled in your repository <strong>Settings</strong> page so that you can <a href="../../../related-tools/local-analysis/client-side-tools/">run client-side tools</a>, you can't trigger a new analysis from the Codacy UI.</p>
 <p>Instead, you must manually run the client-side tools or wait for them to report the results for a new commit.</p>
 </div>
 <h2 id="reanalyzing-a-branch">Reanalyzing a branch<a class="headerlink" href="#reanalyzing-a-branch" title="Permanent link">#</a></h2>
@@ -3229,12 +3236,18 @@
 <ol>
 <li>
 <p>Open the <strong>Pull Requests</strong> page for your repository and select the pull request that you want to reanalyze.</p>
+<p><img alt="Selecting a pull request" src="../images/reanalyze-repository-prs-list.png" /></p>
 </li>
 <li>
 <p>Click the icon next to the <strong>Current status</strong> of the pull request to trigger a reanalysis. Codacy will display a message when the analysis is complete.</p>
-<p><img alt="Reanalyzing a pull request" src="../images/reanalyze-pull-request.png" /></p>
+<p><img alt="Reanalyzing a pull request" src="../images/reanalyze-repository-pr.png" /></p>
 </li>
 </ol>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="../../../repositories/commits/#commit-status">Commit status</a></li>
+<li><a href="../../../repositories/pull-requests/#pull-request-status">Pull request status</a></li>
+</ul>
               
               
                 
@@ -3383,7 +3396,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 2, 2022</span>
     
   </small>
 </div>
