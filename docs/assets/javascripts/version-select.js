@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", function() {
     window.versionPages = {}
     var VERSION = window.location.pathname.split('/')[1];
-    var VERSION_LATEST = ".";
+    var VERSION_LATEST = "latest";
 
     function removePrefix(str, prefix) {
         var hasPrefix = str.indexOf(prefix) === 0;
