@@ -1,7 +1,7 @@
 window.addEventListener("DOMContentLoaded", function() {
     window.versionPages = {};
     var VERSION = window.location.pathname.split("/")[1];
-    var VERSION_LATEST = ".";
+    var VERSION_LATEST = "latest";
 
     function removePrefix(str, prefix) {
         var hasPrefix = str.indexOf(prefix) === 0;
@@ -136,7 +136,7 @@ window.addEventListener("DOMContentLoaded", function() {
         }), currentVersion.version);
 
         // Navigate to the selected version
-        select.addEventListener("change", function(event) {
+        select.addEventListener("change", function() {
             var currentPath = window.location.pathname;
             var targetVersionPath = this.value === VERSION_LATEST ? "" : "/" + this.value;
 
