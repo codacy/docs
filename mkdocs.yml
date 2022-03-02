@@ -36,8 +36,10 @@ extra:
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
     support_email: "support@codacy.com"
-    # Disable indexing Self-hosted versions
+    # Control search engine indexing, the default (false) allows indexing
     noindex: !ENV [MKDOCS_NOINDEX, false]
+    # Control visibility of Beta features, the default (true) shows beta features
+    show_beta: !ENV [MKDOCS_SHOW_BETA, true]
 
 # Stop build on warnings
 # To disable while developing locally set MKDOCS_STRICT to false
