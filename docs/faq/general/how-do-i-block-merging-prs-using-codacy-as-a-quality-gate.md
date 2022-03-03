@@ -55,7 +55,7 @@ Depending on factors such as the current code quality of your repository and the
     -   Considerable drops in code coverage
 
 !!! important
-    **If you want to use code coverage** to block merging pull requests that don't meet your standards, make sure that you enable the rule **Coverage variation is under**. This is required for Codacy to report the coverage status directly on your pull requests.
+    **If you want to use code coverage** to block merging pull requests that don't meet your standards, make sure that you enable the rule **Diff coverage is under** or **Coverage variation is under**. This is required for Codacy to report the coverage status directly on your pull requests.
 
 ![Adjusting the quality settings](../../repositories-configure/images/quality-settings.png)
 

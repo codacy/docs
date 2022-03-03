@@ -31,13 +31,15 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    version: "5.1.0"
+    version: "6.0.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
     support_email: "support@codacy.com"
-    # Disable indexing Self-hosted versions
+    # Control search engine indexing, the default (false) allows indexing
     noindex: !ENV [MKDOCS_NOINDEX, false]
+    # Control visibility of Beta features, the default (true) shows beta features
+    show_beta: !ENV [MKDOCS_SHOW_BETA, true]
 
 # Stop build on warnings
 # To disable while developing locally set MKDOCS_STRICT to false
@@ -658,7 +660,7 @@ nav:
           - codacy-api/using-the-codacy-api.md
           - codacy-api/api-tokens.md
           - API v3 reference (recommended): https://api.codacy.com/api/api-docs
-          - API v2 reference: https://api.codacy.com/swagger
+          - API v2 reference: https://api.codacy.com/api-docs
           - Examples:
                 - codacy-api/examples/adding-people-to-codacy-programmatically.md
                 - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
@@ -738,6 +740,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v6:
+                      - release-notes/self-hosted/self-hosted-v6.0.0.md
                 - v5:
                       - release-notes/self-hosted/self-hosted-v5.1.0.md
                       - release-notes/self-hosted/self-hosted-v5.0.0.md

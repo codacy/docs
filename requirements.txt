@@ -1,19 +1,19 @@
 mkdocs==1.2.3
 mike==1.1.2
 markdown==3.3.6
+mkdocs-material==8.2.3
+
+# Markdown extensions
 Pygments==2.11.2
 pymdown-extensions==9.2
-mkdocs-exclude-search==0.6.4
-mkdocs-git-revision-date-localized-plugin==0.12.1
-mkdocs-monorepo-plugin==0.5.3
-mkdocs-macros-plugin==0.6.4
-mkdocs-redirects==1.0.3
-mkdocs-include-markdown-plugin==3.2.3
-mkdocs-rss-plugin==0.21.0
-mkdocs-meta-descriptions-plugin==1.0.2
-mkdocs-exclude==1.0.2
 
-# The requirements below are fixed for compatibility
-Jinja2==2.11.3
-mkdocs-material<=7.2.3
-MarkupSafe==2.0.1
+# MkDocs plugins
+mkdocs-exclude-search==0.6.4
+mkdocs-exclude==1.0.2
+mkdocs-git-revision-date-localized-plugin==1.0.0
+mkdocs-include-markdown-plugin==3.3.0
+mkdocs-macros-plugin==0.6.4
+mkdocs-meta-descriptions-plugin==1.0.2
+mkdocs-monorepo-plugin==0.5.3
+mkdocs-redirects==1.0.3
+mkdocs-rss-plugin==0.21.0
