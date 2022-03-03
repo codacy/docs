@@ -61,11 +61,11 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
 
-v5
+v6
 
-<!--NOTE
-    Link v5.m.p release notes to the breaking changes in v5.0.0,
-    see https://codacy.atlassian.net/browse/CY-5281?focusedCommentId=48556 -->
+-   [v6.0.0](self-hosted/self-hosted-v6.0.0.md) (March 2, 2022)
+
+v5
 
 -   [v5.1.0](self-hosted/self-hosted-v5.1.0.md) (January 6, 2022)
 -   [v5.0.0](self-hosted/self-hosted-v5.0.0.md) (December 17, 2021)
