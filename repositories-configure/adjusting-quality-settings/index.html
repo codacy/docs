@@ -11,7 +11,7 @@
         <meta name="description" content="The Quality settings allow you to configure quality gates for your pull requests and commits, and define quality goals that help you monitor the progress of the code quality in your repository dashboard.">
       
       
-        <meta http-equiv="last-modified" content="2022-02-03 15:43:03">  
+        <meta http-equiv="last-modified" content="2022-03-03 10:48:26">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/adjusting-quality-settings/">
@@ -3258,31 +3258,29 @@
 <p>The following sections explain the settings in detail.</p>
 <h2 id="gates">Gates<a class="headerlink" href="#gates" title="Permanent link">#</a></h2>
 <p>These settings configure when Codacy reports pull requests and commits as not up to standards.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
+<p>Depending on the result of applying the quality gate rules, Codacy updates the color of the metrics on the <a href="../../repositories/pull-requests/#pull-request-quality-overview">pull request or commit quality overview</a> and reports the corresponding pull request or commit status on your Git provider, if enabled.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>To enable pull request status</strong> directly on your Git provider pull requests, see <a href="../integrations/github-integration/#configuring-the-github-integration">GitHub</a>, <a href="../integrations/gitlab-integration/#configuring-the-gitlab-integration">GitLab</a>, or <a href="../integrations/bitbucket-integration/#configuring-the-bitbucket-integration">Bitbucket</a>, depending on your Git provider. For Codacy to report the coverage status on your pull requests you must also turn on the rule <strong>Diff coverage is under</strong> or <strong>Coverage variation is under</strong>.</p>
 <p><strong>If you want to block merging pull requests</strong> that aren't up to standards see <a href="../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/">How do I block merging pull requests using Codacy as a quality gate?</a></p>
 </div>
 <p><img alt="Quality gates" src="../images/quality-settings-gates.png" /></p>
 <ul>
-<li><strong>New issues are over:</strong> Pull requests or commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is higher than the set value. The default value is 0.</li>
-<li><strong>New security issues are over:</strong> Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value. By default, this setting is off.</li>
-<li><strong>Complexity is over:</strong> Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value. By default, this setting is off.</li>
-<li><strong>Duplication is over:</strong> Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value. By default, this setting is off.</li>
+<li><strong>New issues are over:</strong> Pull requests or commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is higher than the set value. This rule is enabled with a value of 0 by default.</li>
+<li><strong>New security issues are over:</strong> Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value.</li>
+<li><strong>Complexity is over:</strong> Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value.</li>
+<li><strong>Duplication is over:</strong> Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value.</li>
+<li><strong>Diff coverage is under:</strong> Pull requests are marked not up to standards if the diff coverage of the pull request is lower than the set value. This rule is only available for pull requests.</li>
 <li>
-<p><strong>Coverage variation is under:</strong> Pull requests or commits are marked not up to standards if they introduce a variation to coverage below the set value. The maximum value is 1%. By default, this setting is off.</p>
+<p><strong>Coverage variation is under:</strong> Pull requests or commits are marked not up to standards if they introduce a variation to coverage lower than the set value. The maximum value is 1%.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>To ensure that commits and pull requests:</p>
 <ul>
-<li><strong>Can decrease</strong> the coverage, set the value to a negative percentage</li>
-<li><strong>Cannot decrease</strong> the coverage, set the value to 0%</li>
 <li><strong>Must improve</strong> the coverage, set the value to 1%</li>
+<li><strong>Can't decrease</strong> the coverage, set the value to 0%</li>
+<li><strong>Can decrease</strong> the coverage, set the value to a negative percentage</li>
 </ul>
-</div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Turn on the rule <strong>Coverage variation is under</strong> for Codacy to report the coverage status directly on your pull requests.</p>
-<p>For more details on how to enable pull request status, see <a href="../integrations/github-integration/#configuring-the-github-integration">GitHub</a>, <a href="../integrations/gitlab-integration/#configuring-the-gitlab-integration">GitLab</a>, or <a href="../integrations/bitbucket-integration/#configuring-the-bitbucket-integration">Bitbucket</a>, depending on your Git provider.</p>
 </div>
 </li>
 </ul>
@@ -3450,7 +3448,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 3, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 3, 2022</span>
     
   </small>
 </div>
