@@ -11,7 +11,7 @@
         <meta name="description" content="There are alternative ways of running or installing Codacy Coverage Reporter, such as running a Docker image, downloading a binary for your operating system, or building the binary from source.">
       
       
-        <meta http-equiv="last-modified" content="2021-11-18 08:42:01">  
+        <meta http-equiv="last-modified" content="2022-02-09 17:36:33">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/">
@@ -867,15 +867,8 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#manually-downloading-the-binary" class="md-nav__link">
-    Manually downloading the binary
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#building-from-source" class="md-nav__link">
-    Building from source
+  <a href="#github-action" class="md-nav__link">
+    GitHub Action
   </a>
   
 </li>
@@ -888,8 +881,15 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#github-action" class="md-nav__link">
-    GitHub Action
+  <a href="#manually-downloading-the-binary" class="md-nav__link">
+    Manually downloading the binary
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#building-from-source" class="md-nav__link">
+    Building from source
   </a>
   
 </li>
@@ -3307,6 +3307,10 @@
 <p>You can use Docker to run Codacy Coverage Reporter:</p>
 <div class="highlight"><pre><span></span><code>docker run -v <span class="nv">$PWD</span>:/code codacy/codacy-coverage-reporter:&lt;version&gt; report
 </code></pre></div>
+<h2 id="github-action">GitHub Action<a class="headerlink" href="#github-action" title="Permanent link">#</a></h2>
+<p>If you're using GitHub Actions to report coverage, you can use our GitHub Action <a href="https://github.com/codacy/codacy-coverage-reporter-action">codacy/codacy-coverage-reporter-action</a>.</p>
+<h2 id="circleci-orb">CircleCI orb<a class="headerlink" href="#circleci-orb" title="Permanent link">#</a></h2>
+<p>If you're using CircleCI to report coverage, you can use our orb <a href="https://circleci.com/orbs/registry/orb/codacy/coverage-reporter">codacy/coverage-reporter</a>.</p>
 <h2 id="manually-downloading-the-binary">Manually downloading the binary<a class="headerlink" href="#manually-downloading-the-binary" title="Permanent link">#</a></h2>
 <h3 id="linux-amd64">Linux amd64<a class="headerlink" href="#linux-amd64" title="Permanent link">#</a></h3>
 <p>If you prefer, you can manually download and run the native <code>codacy-coverage-reporter</code> binary, either for the latest version or a specific one.</p>
@@ -3373,10 +3377,6 @@ sbt assembly
 </code></pre></div>
 </li>
 </ol>
-<h2 id="circleci-orb">CircleCI orb<a class="headerlink" href="#circleci-orb" title="Permanent link">#</a></h2>
-<p>If you are using CircleCI to report coverage, you can use our orb <a href="https://circleci.com/orbs/registry/orb/codacy/coverage-reporter">codacy/coverage-reporter</a>.</p>
-<h2 id="github-action">GitHub Action<a class="headerlink" href="#github-action" title="Permanent link">#</a></h2>
-<p>If you are using GitHub Actions to report coverage, you can use our GitHub Action <a href="https://github.com/codacy/codacy-coverage-reporter-action">codacy/codacy-coverage-reporter-action</a>.</p>
 <h2 id="community-supported-alternatives">Community supported alternatives<a class="headerlink" href="#community-supported-alternatives" title="Permanent link">#</a></h2>
 <h3 id="maven-plugin">Maven plugin<a class="headerlink" href="#maven-plugin" title="Permanent link">#</a></h3>
 <p>Thanks to the amazing job of <a href="https://github.com/halkeye">Gavin Mogan</a> you can now send your coverage to Codacy using his Maven plugin <a href="https://github.com/halkeye/codacy-maven-plugin">halkeye/codacy-maven-plugin</a>! Be sure to follow the instructions on his repository.</p>
@@ -3589,7 +3589,7 @@ task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 18, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 9, 2022</span>
     
   </small>
 </div>
