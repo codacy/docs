@@ -7,7 +7,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: false
@@ -15,7 +15,6 @@ jobs:
       - name: Vale
         uses: errata-ai/vale-action@v1.5.0
         with:
-          files: __onlyModified
           onlyAnnotateModifiedLines: true
           debug: true
         env:
