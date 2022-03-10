@@ -11,7 +11,7 @@ This page lists the repositories that already belong to your organization on Cod
 -   Complexity metric
 -   Duplication metric
 -   Coverage metric
--   Last updated time
+-   Date of the last commit
 
 The list also displays error messages and troubleshooting guidance for repositories that have an issue, such as when there are no committers added to the organization or when Codacy stopped having access to the repository.
 

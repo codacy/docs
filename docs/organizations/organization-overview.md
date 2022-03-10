@@ -68,11 +68,11 @@ The **Last updated** tab displays open pull requests sorted by the date of updat
 
 ## Last updated repositories
 
-The **Last updated repositories** list displays the last updated repositories, sorted by reverse date of the last update. Each card displays the date of the last update and the current grade of the repository.
+The **Last updated repositories** list displays the repositories with recent commits, sorted by reverse date of the last commit. Each card displays the date of the last commit and the current grade of the repository.
 
 Click **See all** to see all repositories in your organization.
 
 ![Last updated repositories](images/organization-overview-repositories-last-updated.png)
 
 !!! important
-    **If you're using Bitbucket Server** the list displays the repositories in alphabetical order because Codacy can't obtain the information on when the repositories were last updated from this Git provider.
+    **If you're using Bitbucket Server** the list displays the repositories in alphabetical order because Codacy can't obtain the date of the last commit on each repository from this Git provider.
