@@ -31,7 +31,7 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    version: "5.1.0"
+    version: "6.0.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
@@ -708,6 +708,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2022:
+                      - release-notes/cloud/cloud-2022-02.md
                       - release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal.md
                       - release-notes/cloud/cloud-2022-01.md
                 - 2021:
@@ -740,6 +741,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v6:
+                      - release-notes/self-hosted/self-hosted-v6.0.0.md
                 - v5:
                       - release-notes/self-hosted/self-hosted-v5.1.0.md
                       - release-notes/self-hosted/self-hosted-v5.0.0.md
