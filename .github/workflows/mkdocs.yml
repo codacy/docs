@@ -70,7 +70,4 @@ jobs:
           git fetch origin gh-pages --verbose
           mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted ${GITHUB_REF##*/release/}" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
         env:
-          # Disable search engine indexing on Self-hosted version pages
-          MKDOCS_NOINDEX: true
-          # Disable showing Beta features on Self-hosted versions
-          MKDOCS_SHOW_BETA: false
+          MKDOCS_SELF_HOSTED: true
