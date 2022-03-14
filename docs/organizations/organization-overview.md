@@ -29,7 +29,7 @@ On the Organization Overview you have three areas to help you monitor your repos
 Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams, or to ignore legacy repositories that are no longer maintained.
 
 !!! tip
-    If you have many repositories, use the language filter to help you narrow down the list of repositories in the drop-down list:
+    Use the language filter to help you narrow down the list of repositories in the drop-down list:
 
     ![Using the language filter to narrow down the list of repositories](images/organization-overview-filter-language-beta.png)
 
