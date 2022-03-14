@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
         with:
           token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
           submodules: true
@@ -17,10 +17,10 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v2
+        uses: actions/setup-python@v3
         with:
           python-version: "3.x"
-          cache: 'pip'
+          cache: "pip"
 
       - name: Install dependencies
         run: |
@@ -56,13 +56,18 @@ jobs:
           CUSTOM_DOMAIN: docs.codacy.com
 
       # Deploy Self-hosted docs on push to release/vM.m branch
+      - name: Set up git author
+        uses: oleksiyrudenko/gha-git-credentials@v2
+        if: startsWith(github.ref, 'refs/heads/release/v')
+        with:
+          name: ${{ github.actor }}
+          email: ${{ github.actor }}@users.noreply.github.com
+          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
+
       - name: Deploy docs (Self-hosted)
         if: startsWith(github.ref, 'refs/heads/release/v')
         run: |
           git fetch origin gh-pages --verbose
           mike deploy ${GITHUB_REF##*/release/} -t "Self-hosted ${GITHUB_REF##*/release/}" --config-file "${GITHUB_WORKSPACE}/mkdocs.yml" --push --rebase
         env:
-          # Disable search engine indexing on Self-hosted version pages
-          MKDOCS_NOINDEX: true
-          # Disable showing Beta features on Self-hosted versions
-          MKDOCS_SHOW_BETA: false
+          MKDOCS_SELF_HOSTED: true

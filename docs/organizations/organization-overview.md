@@ -25,7 +25,7 @@ On the Organization Overview you have three areas to help you monitor your repos
 -   [Open pull requests](#open-pull-requests)
 -   [Last updated repositories](#last-updated-repositories)
 
-{% if config.extra.show_beta %}
+{% if not config.extra.self_hosted %}
 Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams, or to ignore legacy repositories that are no longer maintained.
 
 !!! tip
@@ -49,14 +49,14 @@ The **Overall quality** chart compares the repositories in your organization reg
 -   Hover the mouse pointer over the bars to see the metrics for the corresponding repositories.
 -   Click the bars to navigate directly to the corresponding repository.
 
-If you have over 8 repositories, the chart displays your repositories grouped by grade or percentage intervals.{% if config.extra.show_beta %} Click the bars to see and navigate directly to the corresponding repositories.
+If you have over 8 repositories, the chart displays your repositories grouped by grade or percentage intervals.{% if not config.extra.self_hosted %} Click the bars to see and navigate directly to the corresponding repositories.
 
 !!! info "This is a beta feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
     Read more about this feature and share your feedback on our [public roadmap](https://roadmap.codacy.com/c/86-know-which-repositories-require-more-attention){: target="_blank"}.
 
-![Overall quality chart with grouped repositories](images/organization-overview-overall-quality-grouped.png)
+![Overall quality chart with grouped repositories](images/organization-overview-overall-quality-grouped-beta.png)
 {% endif %}
 
 !!! tip

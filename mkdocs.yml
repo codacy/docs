@@ -31,15 +31,13 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    version: "5.1.0"
+    version: "6.0.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
     support_email: "support@codacy.com"
-    # Control search engine indexing, the default (false) allows indexing
-    noindex: !ENV [MKDOCS_NOINDEX, false]
-    # Control visibility of Beta features, the default (true) shows beta features
-    show_beta: !ENV [MKDOCS_SHOW_BETA, true]
+    # Control search engine indexing and the visibility of features on Codacy Self-hosted documentation pages
+    self_hosted: !ENV [MKDOCS_SELF_HOSTED, false]
 
 # Stop build on warnings
 # To disable while developing locally set MKDOCS_STRICT to false
@@ -708,6 +706,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2022:
+                      - release-notes/cloud/cloud-2022-02.md
                       - release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal.md
                       - release-notes/cloud/cloud-2022-01.md
                 - 2021:
@@ -740,6 +739,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v6:
+                      - release-notes/self-hosted/self-hosted-v6.0.0.md
                 - v5:
                       - release-notes/self-hosted/self-hosted-v5.1.0.md
                       - release-notes/self-hosted/self-hosted-v5.0.0.md
