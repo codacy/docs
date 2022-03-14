@@ -12,7 +12,7 @@ The Codacy API tokens allow you to:
 
 Codacy provides two types of API tokens:
 
--   **Account API tokens** are defined at the Codacy user account level. Each account API token authorizes access to the same organizations, repositories, and operations as the [roles and permissions of the owner of the account](../organization/roles-and-permissions-for-synced-organizations.md).
+-   **Account API tokens** are defined at the Codacy user account level. Each account API token authorizes access to the same organizations, repositories, and operations as the [roles and permissions of the owner of the account](../organizations/roles-and-permissions-for-synced-organizations.md).
 
 -   **Project API tokens** are defined on individual repositories. Each project API token only authorizes access to the corresponding repository.
 
