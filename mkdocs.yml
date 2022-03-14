@@ -34,8 +34,8 @@ extra:
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
     support_email: "support@codacy.com"
-    # Control search engine indexing, the default (false) allows indexing
-    noindex: !ENV [MKDOCS_NOINDEX, false]
+    # Control search engine indexing and the visibility of features on Codacy Self-hosted documentation pages
+    self_hosted: !ENV [MKDOCS_SELF_HOSTED, false]
 
 # Repository
 repo_name: "codacy/docs"
