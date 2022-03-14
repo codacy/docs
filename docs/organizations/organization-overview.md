@@ -44,7 +44,7 @@ The **Overall quality** chart compares the repositories in your organization reg
 -   Hover the mouse pointer over the bars to see the metrics for the corresponding repositories.
 -   Click the bars to navigate directly to the corresponding repository.
 
-If you have over 8 repositories, the chart displays your repositories grouped by grade or percentage intervals.{% if config.extra.show_beta %} Click the bars to see and navigate directly to the corresponding repositories.
+If you have over 8 repositories, the chart displays your repositories grouped by grade or percentage intervals.{% if not config.extra.self_hosted %} Click the bars to see and navigate directly to the corresponding repositories.
 
 !!! info "This is a beta feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
