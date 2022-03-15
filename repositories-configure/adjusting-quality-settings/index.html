@@ -11,7 +11,7 @@
         <meta name="description" content="The Quality settings allow you to configure quality gates for your pull requests and commits, and define quality goals that help you monitor the progress of the code quality in your repository dashboard.">
       
       
-        <meta http-equiv="last-modified" content="2022-03-03 10:48:26">  
+        <meta http-equiv="last-modified" content="2022-03-15 19:01:24">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/adjusting-quality-settings/">
@@ -3276,9 +3276,10 @@
 <p><strong>To enable pull request status</strong> directly on your Git provider pull requests, see <a href="../integrations/github-integration/#configuring-the-github-integration">GitHub</a>, <a href="../integrations/gitlab-integration/#configuring-the-gitlab-integration">GitLab</a>, or <a href="../integrations/bitbucket-integration/#configuring-the-bitbucket-integration">Bitbucket</a>, depending on your Git provider. For Codacy to report the coverage status on your pull requests you must also turn on the rule <strong>Diff coverage is under</strong> or <strong>Coverage variation is under</strong>.</p>
 <p><strong>If you want to block merging pull requests</strong> that aren't up to standards see <a href="../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/">How do I block merging pull requests using Codacy as a quality gate?</a></p>
 </div>
+<p>The following screenshot displays the default configuration values:</p>
 <p><img alt="Quality gates" src="../images/quality-settings-gates.png" /></p>
 <ul>
-<li><strong>New issues are over:</strong> Pull requests or commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is higher than the set value. This rule is enabled with a value of 0 by default.</li>
+<li><strong>New issues are over:</strong> Pull requests or commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is higher than the set value.</li>
 <li><strong>New security issues are over:</strong> Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value.</li>
 <li><strong>Complexity is over:</strong> Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value.</li>
 <li><strong>Duplication is over:</strong> Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value.</li>
@@ -3299,6 +3300,7 @@
 <h2 id="goals">Goals<a class="headerlink" href="#goals" title="Permanent link">#</a></h2>
 <p>These settings configure the quality goals for your repository, and which files Codacy considers complex or duplicated.</p>
 <p>Codacy displays the quality goals as dashed lines on the <a href="../../repositories/repository-dashboard/#quality-evolution-chart">quality evolution chart</a> to help you monitor the progress and overall quality status of your repository.</p>
+<p>The following screenshot displays the default configuration values:</p>
 <p><img alt="Quality settings for the repository" src="../images/quality-settings-goals.png" /></p>
 <ul>
 <li><strong>Issues are over:</strong> Defines the threshold displayed on the tab <strong>Issues</strong> of the quality evolution chart.</li>
@@ -3460,7 +3462,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 3, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 15, 2022</span>
     
   </small>
 </div>
