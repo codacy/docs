@@ -17,29 +17,20 @@ We compare the number of issues with the industry average. File size and severit
 
 ## Complexity
 
-### How does Codacy measure complexity in my repository?
+Codacy uses [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity){: target="_blank"} to identify files with complex methods in your repository. Cyclomatic complexity is the number of linearly independent paths through the source code of a method: the more control flow statements used in a method, the higher the value. Methods with a high cyclomatic complexity are harder to test and are more likely to have defects.
 
-Codacy uses [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) to identify complex files in your repository.
+Codacy calculates complexity as follows:
 
-Cyclomatic complexity is a software metric used to indicate the complexity of a program. It's a quantitative measure of the number of linearly independent paths through a program's source code.
+-   **The complexity value for each file** is the highest complexity of the methods in that file
+-   **A file is considered complex** if its complexity value is higher than the threshold [**File is complex when over**](../../repositories-configure/adjusting-quality-settings.md#goals)
+-   **The complexity of a commit or pull request** is the sum of the complexity of the files that were changed in the commit or pull request and that have complexity higher than 4
 
-A complex file is a file with a complexity value bigger than the threshold defined on the [repository quality settings](../../repositories-configure/adjusting-quality-settings.md).
+Codacy displays complexity on the following pages:
 
-Code complexity is calculated based on the maximum number of complex methods in a file.
-
-In your [Repository Dashboard](../../repositories/repository-dashboard.md) you can see how complexity is evolving for your repository.
-
-<!--NOTE https://codacy.atlassian.net/browse/CY-2086?focusedCommentId=42198
-
-We calculate cyclomatic complexity - this concept doesn’t exit at file level, only at method level.
-
--   We attribute the highest level of complexity of a method to the file itself.
--   We sum the complexity of the files to define the complexity of the commit.
-    -   Here we have a rule that we only files with absolute values higher than 4 are accounted for that sum.
--   On the quality settings the user can define at repository level how much complexity is allowed - a file is complex if the complexity is above the value of the quality settings.
--   At repository level we display the % of files that are complex within that repository.
--   At organization level we display the repositories organized per intervals of complexity.
--->
+-   [Commits page](../../repositories/commits.md) and [Pull requests page](../../repositories/pull-requests.md): display the variation of the complexity value introduced by the commit or pull request
+-   [Files page](../../repositories/files.md): displays the complexity value of each file
+-   [Repository Dashboard](../../repositories/repository-dashboard.md): displays the percentage of complex files in your repository and how the percentage of complex files is evolving over time
+-   [Organization Overview](../../organizations/organization-overview.md): displays the repositories in intervals of complex file percentages
 
 ## Duplication
 
