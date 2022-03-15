@@ -24,29 +24,37 @@ Codacy uses [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_com
 
 Codacy calculates complexity as follows:
 
--   **The complexity value for each file** is the highest complexity of the methods in that file
+-   **The complexity value for each file** is the highest complexity of the methods in the file
 -   **A file is considered complex** if its complexity value is higher than the threshold [**File is complex when over**](../../repositories-configure/adjusting-quality-settings.md#goals)
--   **The complexity of a commit or pull request** is the sum of the complexity of the files that were changed in the commit or pull request and that have complexity higher than 4
+-   **The complexity value of a commit or pull request** is the sum of the complexity of the files that were changed in the commit or pull request and that have complexity higher than 4
 
 Codacy displays complexity on the following pages:
 
--   [Commits page](../../repositories/commits.md) and [Pull requests page](../../repositories/pull-requests.md): display the variation of the complexity value introduced by the commit or pull request
--   [Files page](../../repositories/files.md): displays the complexity value of each file
--   [Repository Dashboard](../../repositories/repository-dashboard.md): displays the percentage of complex files in your repository and how the percentage of complex files is evolving over time
--   [Organization Overview](../../organizations/organization-overview.md): displays the repositories in intervals of complex file percentages
+-   **[Commits page](../../repositories/commits.md) and [Pull requests page](../../repositories/pull-requests.md):** display the variation of the complexity value introduced by the commit or pull request
+-   **[Files page](../../repositories/files.md):** displays the complexity value of each file
+-   **[Repository Dashboard](../../repositories/repository-dashboard.md):** displays the percentage of complex files in your repository and how the percentage of complex files is evolving over time
+-   **[Organization Overview](../../organizations/organization-overview.md):** displays the repositories in intervals of complex file percentages
 
 ## Duplication
 
-<!--NOTE https://codacy.atlassian.net/browse/CY-2086?focusedCommentId=42198
+Codacy identifies clones or [sequences of duplicate code](https://en.wikipedia.org/wiki/Duplicate_code){: target="_blank"} that exist in at least two different places of the source code of your repository. Clones typically indicate deeper code quality issues and should be eliminated through abstraction when possible.
 
-Duplication unit is a block of duplicated code in 2 or more places. We check for duplicated units.
+Codacy calculates duplication as follows:
 
--   On the quality settings the user can define at repository level how many cloned blocks he wants to accept before saying if the file has duplication.
--   At commit level we check the number of clones and the delta of number of clones.
--   At repository level we check the % of files that have duplicated code.
--   At organization level we display the repositories organized per intervals of duplication.
+-   **The duplication value for each file** is the number of clones in the file
+-   **A file is considered duplicated** if the number of clones in the file is higher than the threshold [**File is duplicated when over**](../../repositories-configure/adjusting-quality-settings.md#goals)
+-   **The duplication value of a commit or pull request** is the number of clones introduced by the commit or pull request
 
--->
+<!--TODO
+    How to tweak how Codacy identifies clones when using PMD CPD
+    https://docs.codacy.com/repositories-configure/codacy-configuration-file/#pmd-cpd-duplication-->
+
+Codacy displays duplication on the following pages:
+
+-   **[Commits page](../../repositories/commits.md) and [Pull requests page](../../repositories/pull-requests.md):** display the number of clones and the actual sequences of duplicated code introduced or fixed by the commit or pull request
+-   **[Files page](../../repositories/files.md):** displays the duplication value of each file
+-   **[Repository Dashboard](../../repositories/repository-dashboard.md):** displays the percentage of duplicated files in your repository and how the percentage of duplicated files is evolving over time
+-   **[Organization Overview](../../organizations/organization-overview.md):** displays the repositories in intervals of duplicated file percentages
 
 ## Coverage
 
