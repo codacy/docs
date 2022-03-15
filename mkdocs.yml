@@ -345,8 +345,8 @@ plugins:
               "hc/en-us/articles/360020553894-Cloud-Release-Notes-29-March-2019.md": "release-notes/cloud/cloud-2019-03-29.md"
               "hc/en-us/articles/360020569254.md": "index.md"
               "hc/en-us/articles/360020569254-Scheduled-Maintenance-Saturday-30th-Mar-05-00-GMT-01-00-EDT-.md": "index.md"
-              "hc/en-us/articles/360021260713.md": "faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md"
-              "hc/en-us/articles/360021260713-How-does-Codacy-measure-complexity-in-my-repository-.md": "faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md"
+              "hc/en-us/articles/360021260713.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
+              "hc/en-us/articles/360021260713-How-does-Codacy-measure-complexity-in-my-repository-.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
               "hc/en-us/articles/360021378573.md": "release-notes/cloud/cloud-2019-04-08.md"
               "hc/en-us/articles/360021378573-Cloud-Release-Notes-08-April-2019.md": "release-notes/cloud/cloud-2019-04-08.md"
               "hc/en-us/articles/360022690193.md": "release-notes/cloud/cloud-2019-05-05.md"
@@ -505,6 +505,7 @@ plugins:
               "organizations/manual-organizations/administrative-permissions.md": "release-notes/cloud/cloud-2021-11-02-legacy-organizations.md"
               "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md": "release-notes/cloud/cloud-2021-11-02-legacy-organizations.md"
               "faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md": "release-notes/cloud/cloud-2021-11-02-legacy-organizations.md"
+              "faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
@@ -691,7 +692,6 @@ nav:
                 - faq/code-analysis/which-metrics-does-codacy-calculate.md
                 - faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md
                 - faq/code-analysis/does-codacy-check-for-dependencies.md
-                - faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md
                 - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
                 - faq/code-analysis/how-to-skip-an-analysis.md
                 - faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md
