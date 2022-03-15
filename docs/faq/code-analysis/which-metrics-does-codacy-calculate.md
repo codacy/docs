@@ -4,6 +4,9 @@ description: Codacy scans your code for issues and calculates the metrics code c
 
 # Which metrics does Codacy calculate?
 
+<!--TODO
+    Include link to https://docs.codacy.com/getting-started/supported-languages-and-tools/ since Codacy doesn't calculate all metrics for all languages-->
+
 ## Issues
 
 <!--NOTE https://codacy.atlassian.net/browse/CY-2086?focusedCommentId=42198
