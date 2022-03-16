@@ -28,7 +28,7 @@ Codacy supports repositories from the following Git providers:
       <td><p>GitHub Enterprise</p></td>
       <td><p><a target="_blank" href="https://www.codacy.com/self-hosted">Codacy Self-hosted</a></p></td>
     </tr>
-    <tr><td></td><td></td><td></td><td></td><tr>
+    <tr><td colspan="100%"><tr>
     <!-- GitLab -->
     <tr>
       <th rowspan="2" style="vertical-align: middle;">
@@ -43,7 +43,7 @@ Codacy supports repositories from the following Git providers:
       <td><p>GitLab Enterprise</p></td>
       <td><p><a target="_blank" href="https://www.codacy.com/self-hosted">Codacy Self-hosted</a></p></td>
     </tr>
-    <tr><td></td><td></td><td></td><td></td><tr>
+    <tr><td colspan="100%"><tr>
     <!-- Bitbucket -->
     <tr>
       <th rowspan="2" style="vertical-align: middle;">
