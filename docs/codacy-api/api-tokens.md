@@ -35,6 +35,9 @@ You can create new account API tokens programmatically [using the Codacy API](ex
 
 To revoke an account API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
 
+!!! important
+    **If you're using an account API token to upload coverage** be sure to check the roles that your Git provider account must have to [authorize uploading coverage to Codacy](../organizations/roles-and-permissions-for-synced-organizations.md).
+
 ## Generating and revoking project API tokens {: id="project-api-tokens"}
 
 You can create new project API tokens programmatically [using the Codacy API](examples/creating-project-api-tokens-programmatically.md) or using the Codacy UI:
