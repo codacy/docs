@@ -94,4 +94,4 @@ To edit an existing coding standard or change the repositories that follow that 
 -   [Copying code patterns between repositories](copying-code-patterns-between-repositories.md)
 -   [Importing pattern configurations from another repository](../repositories-configure/configuring-code-patterns.md#import-patterns)
 -   [Configuring code patterns on each repository](../repositories-configure/configuring-code-patterns.md)
--   [How do I block merging pull requests using Codacy as a quality gate?](../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
+-   [How to implement Google JavaScript style guide with Codacy](https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/)
