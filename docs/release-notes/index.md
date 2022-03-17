@@ -18,6 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2022
 
+-   [Major Update of ESLint March 17, 2022](cloud/cloud-2022-03-17-eslint-8-update.md)
 -   [Cloud February 2022](cloud/cloud-2022-02.md)
 -   [Removal of PMD (Legacy) February 16, 2022](cloud/cloud-2022-02-16-pmd-legacy-removal.md)
 -   [Cloud January 2022](cloud/cloud-2022-01.md)
