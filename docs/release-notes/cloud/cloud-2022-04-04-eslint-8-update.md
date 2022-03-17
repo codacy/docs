@@ -3,11 +3,11 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Major Update of ESLint April 4th, 2022
+# Update of ESLint to version 8 with breaking changes April 4, 2022
 
-On April 4th 2022 we'll be updating the tool **ESLint** to version 8.10.0.
+On April 4 2022 we'll be updating the tool **ESLint** to version 8.10.0.
 
-ESLint 8 introduces some breaking changes that may affect your repositories, especially if you use a configuration file.
+ESLint 8 [introduces breaking changes](https://github.com/eslint/eslint/releases/tag/v8.0.0){: target="_blank"} that may affect your repositories, especially if you use a configuration file.
 
 ## If you were using the `babel-eslint` parser
 
