@@ -11,7 +11,7 @@
         <meta name="description" content="List of operations that users can perform on Codacy depending on their permissions on the Git provider, and how to configure who can change analysis configurations.">
       
       
-        <meta http-equiv="last-modified" content="2021-11-19 10:18:01">  
+        <meta http-equiv="last-modified" content="2022-03-17 15:43:37">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/roles-and-permissions-for-synced-organizations/">
@@ -3259,6 +3259,7 @@
       <th>Join organization</th>
       <th>View private repository</th>
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
+      <th>Upload coverage<br/>using an account API token</th>
       <th>Configure repository</th>
       <th>Add repository</th>
       <th>Manage coding standards,<br/>Bulk copy patterns</th>
@@ -3276,12 +3277,14 @@
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Repository Read</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -3296,12 +3299,14 @@
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Repository Write</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -3312,6 +3317,7 @@
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -3324,12 +3330,14 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Yes</td>
       <td>No</td>
       <td>No</td>
     </tr>
     <tr>
       <td>Organization Owner</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -3347,12 +3355,14 @@
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td><span>Guest</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -3367,12 +3377,14 @@
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td><span>Developer</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>Yes</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -3383,6 +3395,7 @@
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>Yes</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -3397,10 +3410,12 @@
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Yes</td>
     </tr>
     <tr>
       <td><span>Administrator</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -3418,10 +3433,12 @@
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Admin</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -3596,7 +3613,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 19, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 17, 2022</span>
     
   </small>
 </div>

@@ -11,7 +11,7 @@
         <meta name="description" content="Create an account API token to authorize access to all the repositories that you have access to, or a project API token to authorize access only to a specific repository.">
       
       
-        <meta http-equiv="last-modified" content="2022-01-14 11:47:51">  
+        <meta http-equiv="last-modified" content="2022-03-17 15:43:37">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/api-tokens/">
@@ -3276,7 +3276,7 @@
 <p>Codacy provides two types of API tokens:</p>
 <ul>
 <li>
-<p><strong>Account API tokens</strong> are defined at the Codacy user account level. Each account API token authorizes access to the same organizations and repositories as the owner of the account.</p>
+<p><strong>Account API tokens</strong> are defined at the Codacy user account level. Each account API token authorizes access to the same organizations, repositories, and operations as the <a href="../../organizations/roles-and-permissions-for-synced-organizations/">roles and permissions of the owner of the account</a>.</p>
 </li>
 <li>
 <p><strong>Project API tokens</strong> are defined on individual repositories. Each project API token only authorizes access to the corresponding repository.</p>
@@ -3304,6 +3304,10 @@
 </li>
 </ol>
 <p>To revoke an account API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you're using an account API token to upload coverage</strong> be sure to check the roles that your Git provider account must have to <a href="../../organizations/roles-and-permissions-for-synced-organizations/">authorize uploading coverage to Codacy</a>.</p>
+</div>
 <h2 id="project-api-tokens">Generating and revoking project API tokens<a class="headerlink" href="#project-api-tokens" title="Permanent link">#</a></h2>
 <p>You can create new project API tokens programmatically <a href="../examples/creating-project-api-tokens-programmatically/">using the Codacy API</a> or using the Codacy UI:</p>
 <ol>
@@ -3478,7 +3482,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 14, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 17, 2022</span>
     
   </small>
 </div>
