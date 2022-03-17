@@ -14,6 +14,7 @@ Depending on your role on the Git provider you will have different permissions o
       <th>Join organization</th>
       <th>View private repository</th>
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
+      <th>Upload coverage<br/>using an account API token</th>
       <th>Configure repository</th>
       <th>Add repository</th>
       <th>Manage coding standards,<br/>Bulk copy patterns</th>
@@ -31,12 +32,14 @@ Depending on your role on the Git provider you will have different permissions o
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Repository Read</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -51,12 +54,14 @@ Depending on your role on the Git provider you will have different permissions o
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Repository Write</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -67,6 +72,7 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>No</td>
       <td>No</td>
@@ -79,12 +85,14 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Yes</td>
       <td>No</td>
       <td>No</td>
     </tr>
     <tr>
       <td>Organization Owner</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -102,12 +110,14 @@ Depending on your role on the Git provider you will have different permissions o
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td><span>Guest</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -122,12 +132,14 @@ Depending on your role on the Git provider you will have different permissions o
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td><span>Developer</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>Yes</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -138,6 +150,7 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
       <td>Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>Yes</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -152,10 +165,12 @@ Depending on your role on the Git provider you will have different permissions o
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
+      <td>Yes</td>
     </tr>
     <tr>
       <td><span>Administrator</span></td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
@@ -173,10 +188,12 @@ Depending on your role on the Git provider you will have different permissions o
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
       <td>Admin</td>
       <td>Yes<sup><a href="#note-2">2</a></sup></td>
+      <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>
       <td>Yes</td>

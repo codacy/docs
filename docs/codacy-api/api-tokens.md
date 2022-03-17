@@ -12,7 +12,7 @@ The Codacy API tokens allow you to:
 
 Codacy provides two types of API tokens:
 
--   **Account API tokens** are defined at the Codacy user account level. Each account API token authorizes access to the same organizations and repositories as the owner of the account.
+-   **Account API tokens** are defined at the Codacy user account level. Each account API token authorizes access to the same organizations, repositories, and operations as the [roles and permissions of the owner of the account](../organizations/roles-and-permissions-for-synced-organizations.md).
 
 -   **Project API tokens** are defined on individual repositories. Each project API token only authorizes access to the corresponding repository.
 
@@ -34,6 +34,9 @@ You can create new account API tokens programmatically [using the Codacy API](ex
     ![Creating an account API token](images/codacy-api-tokens-account.png)
 
 To revoke an account API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
+
+!!! important
+    **If you're using an account API token to upload coverage** be sure to check the roles that your Git provider account must have to [authorize uploading coverage to Codacy](../organizations/roles-and-permissions-for-synced-organizations.md).
 
 ## Generating and revoking project API tokens {: id="project-api-tokens"}
 
