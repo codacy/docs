@@ -28,7 +28,7 @@ If you remove the integration, you can enable it again as follows:
 
     {% include-markdown "../../assets/includes/service-account-integration.md" %}
 
-## Configuring the Bitbucket integration
+## Configuring the Bitbucket integration {: id="configuring"}
 
 To configure the Bitbucket integration, open your repository **Settings**, tab **Integrations**.
 

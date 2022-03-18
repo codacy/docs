@@ -28,7 +28,7 @@ If you remove the integration, you can enable it again as follows:
 
     {% include-markdown "../../assets/includes/service-account-integration.md" %}
 
-## Configuring the GitHub integration
+## Configuring the GitHub integration {: id="configuring"}
 
 To configure the GitHub integration, open your repository **Settings**, tab **Integrations**.
 
