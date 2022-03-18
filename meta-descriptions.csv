@@ -112,6 +112,7 @@ https://docs.codacy.com/release-notes/cloud/cloud-2021-12/,Release notes for Cod
 https://docs.codacy.com/release-notes/cloud/cloud-2022-01/,Release notes for Codacy Cloud January 2022.
 https://docs.codacy.com/release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal/,On the week of February 16th 2022 we'll be removing the tool PMD (Legacy) from Codacy.
 https://docs.codacy.com/release-notes/cloud/cloud-2022-02/,Release notes for Codacy Cloud February 2022.
+https://docs.codacy.com/release-notes/cloud/cloud-2022-04-04-eslint-8-update/,"On April 4, 2022 Codacy will be updating the tool ESLint to version 8.10.0. ESLint 8 introduces breaking changes that may affect the analysis of your repositories if you use an ESLint configuration file."
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.0/,Release notes for Codacy Self-hosted v1.0.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.1/,Release notes for Codacy Self-hosted v1.0.1.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.1.0/,Release notes for Codacy Self-hosted v1.1.0.
