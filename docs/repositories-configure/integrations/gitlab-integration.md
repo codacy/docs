@@ -24,7 +24,7 @@ If you remove the integration, you can enable it again as follows:
 
     {% include-markdown "../../assets/includes/service-account-integration.md" %}
 
-## Configuring the GitLab integration
+## Configuring the GitLab integration {: id="configuring"}
 
 To configure the GitLab integration, open your repository **Settings**, tab **Integrations**.
 
