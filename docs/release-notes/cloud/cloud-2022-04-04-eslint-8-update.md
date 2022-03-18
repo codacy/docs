@@ -11,7 +11,7 @@ ESLint 8 [introduces breaking changes](https://github.com/eslint/eslint/releases
 
 If you're using ESLint in the scenarios described below, you must update your ESLint configuration file after April 4, 2022 for Codacy to continue analyzing your code using this tool:
 
-## If you're using the `babel-eslint` parser
+## If you're using the parser `babel-eslint`
 
 The `babel-eslint` parser was renamed to `@babel/eslint-parser` and has now stricter requirements compared to its predecessor.
 
@@ -39,7 +39,7 @@ If you have `.jsx` files in your repository, you must select the Babel React pre
    },
 ```
 
-## If you're using the `m6web-i18n` plugin
+## If you're using the plugin `m6web-i18n`
 
 The plugin `m6web-i18n` was renamed to `@m6web/eslint-plugin-i18n`.
 
