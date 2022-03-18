@@ -41,7 +41,7 @@ If you have `.jsx` files in your repository, you must select the Babel React pre
 
 ## If you're using the `m6web-i18n` plugin
 
-The plugin `m6web-i18n` was renamed to `@m6web/i18n`.
+The plugin `m6web-i18n` was renamed to `@m6web/eslint-plugin-i18n`.
 
 If you're using this plugin, you must update it:
 
