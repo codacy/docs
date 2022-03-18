@@ -160,8 +160,8 @@ Depending on your role on the Git provider you will have different permissions o
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
-      <td>No</td>
-      <td>No</td>
+      <td style="background-color: forestgreen;">Yes</td>
+      <td style="background-color: forestgreen;">Yes</td>
       <td>No</td>
       <td>No</td>
     </tr>
