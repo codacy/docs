@@ -630,7 +630,7 @@ nav:
           - repositories-configure/ignoring-files.md
           - repositories-configure/file-extensions.md
           - repositories-configure/adjusting-quality-settings.md
-          - Setting up coverage: "!include submodules/codacy-coverage-reporter/mkdocs.yml"
+          - Setting up code coverage: "!include submodules/codacy-coverage-reporter/mkdocs.yml"
           - repositories-configure/using-submodules.md
           - repositories-configure/codacy-configuration-file.md
           - repositories-configure/removing-your-repository.md
