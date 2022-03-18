@@ -630,6 +630,7 @@ nav:
           - repositories-configure/ignoring-files.md
           - repositories-configure/file-extensions.md
           - repositories-configure/adjusting-quality-settings.md
+          - Setting up coverage: "!include submodules/codacy-coverage-reporter/mkdocs.yml"
           - repositories-configure/using-submodules.md
           - repositories-configure/codacy-configuration-file.md
           - repositories-configure/removing-your-repository.md
@@ -646,7 +647,6 @@ nav:
           - account/managing-your-profile.md
           - account/emails.md
     - Related tools:
-          - Coverage: "!include submodules/codacy-coverage-reporter/mkdocs.yml"
           - Local analysis:
                 - related-tools/local-analysis/running-local-analysis.md
                 - related-tools/local-analysis/client-side-tools.md
