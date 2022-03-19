@@ -67,8 +67,8 @@ Click **See all files** to open the [list of files](files.md) in the repository.
 
 The **Open pull requests** area displays the number of open pull requests in the repository and the split between the following status:
 
--   Not up to standards
 -   Up to standards
+-   Not up to standards
 -   Analyzing (intermediate status while Codacy is analyzing the pull request)
 
 Click **See all pull requests** to open the list of pull requests in the repository.
