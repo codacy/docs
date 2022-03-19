@@ -65,12 +65,12 @@ Click **See all files** to open the [list of files](files.md) in the repository.
 
 ## Open pull requests
 
-The **Open pull requests** area displays the number of open pull requests in the repository and the split between the following status:
+The **Open pull requests** area displays the last updated pull requests and the split between the following status:
 
--   Up to standards
--   Not up to standards
--   Analyzing (intermediate status while Codacy is analyzing the pull request)
+-   **Up to standards:** The pull request meets the minimum quality levels
+-   **Not up to standards:** The pull request failed to meet at least one of the [quality gate rules defined for the repository](../repositories-configure/adjusting-quality-settings.md#gates)
+-   **Analyzing:** temporary status while Codacy is analyzing the pull request
 
-Click **See all pull requests** to open the list of pull requests in the repository.
+Click a pull request to see the details of that pull request, or click **See all pull requests** to open the [list of pull requests](pull-requests.md) in the repository.
 
 ![Open pull requests](images/repository-dashboard-open-pull-requests.png)
