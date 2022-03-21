@@ -15,13 +15,15 @@ These settings configure when Codacy reports pull requests and commits as not up
 Depending on the result of applying the quality gate rules, Codacy updates the color of the metrics on the [pull request or commit quality overview](../repositories/pull-requests.md#pull-request-quality-overview) and reports the corresponding pull request or commit status on your Git provider, if enabled.
 
 !!! note
-    **To enable pull request status** directly on your Git provider pull requests, see [GitHub](../repositories-configure/integrations/github-integration.md#configuring-the-github-integration), [GitLab](../repositories-configure/integrations/gitlab-integration.md#configuring-the-gitlab-integration), or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#configuring-the-bitbucket-integration), depending on your Git provider. For Codacy to report the coverage status on your pull requests you must also turn on the rule **Diff coverage is under** or **Coverage variation is under**.
+    **To enable pull request status** directly on your Git provider pull requests, see [GitHub](../repositories-configure/integrations/github-integration.md#configuring), [GitLab](../repositories-configure/integrations/gitlab-integration.md#configuring), or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#configuring), depending on your Git provider. For Codacy to report the coverage status on your pull requests you must also turn on the rule **Diff coverage is under** or **Coverage variation is under**.
 
     **If you want to block merging pull requests** that aren't up to standards see [How do I block merging pull requests using Codacy as a quality gate?](../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
 
+The following screenshot displays the default configuration values:
+
 ![Quality gates](images/quality-settings-gates.png)
 
--   **New issues are over:** Pull requests or commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is higher than the set value. This rule is enabled with a value of 0 by default.
+-   **New issues are over:** Pull requests or commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is higher than the set value.
 -   **New security issues are over:** Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value.
 -   **Complexity is over:** Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value.
 -   **Duplication is over:** Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value.
@@ -40,6 +42,8 @@ Depending on the result of applying the quality gate rules, Codacy updates the c
 These settings configure the quality goals for your repository, and which files Codacy considers complex or duplicated.
 
 Codacy displays the quality goals as dashed lines on the [quality evolution chart](../repositories/repository-dashboard.md#quality-evolution-chart) to help you monitor the progress and overall quality status of your repository.
+
+The following screenshot displays the default configuration values:
 
 ![Quality settings for the repository](images/quality-settings-goals.png)
 
