@@ -5,7 +5,7 @@ mkdocs-material==8.2.3
 
 # Markdown extensions
 Pygments==2.11.2
-pymdown-extensions==9.2
+pymdown-extensions==9.3
 
 # MkDocs plugins
 mkdocs-exclude-search==0.6.4
