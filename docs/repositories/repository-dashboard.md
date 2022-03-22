@@ -73,6 +73,6 @@ The **Open pull requests** area displays the last updated pull requests and the 
 
 Click a bar segment to display only pull requests with the corresponding status.
 
-To see the pull request details either click a pull request from the list or click **See all pull requests** to open the [list of pull requests](pull-requests.md) in the repository.
+To see the details of pull requests, click a pull request from the list or click **See all pull requests** to open the [list of pull requests](pull-requests.md) in the repository.
 
 ![Open pull requests](images/repository-dashboard-open-pull-requests.png)
