@@ -11,7 +11,7 @@
         <meta name="description" content="List of tools that Codacy uses to analyze over 40 supported languages and frameworks. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code frameworks as well as code duplication, code complexity, and code coverage metrics for most programming languages.">
       
       
-        <meta http-equiv="last-modified" content="2022-03-21 11:46:13">  
+        <meta http-equiv="last-modified" content="2022-03-22 15:58:52">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/supported-languages-and-tools/">
@@ -3367,7 +3367,7 @@
     </tr>
     <tr>
       <td>Dart</td>
-      <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a></td>
+      <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a><a href="#dart-limitations"><sup>3</sup></a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
@@ -3518,7 +3518,7 @@
       <td><a href="https://github.com/rubik/radon">Radon</a></td>
     </tr>
     <tr>
-      <td>Ruby<a href="#ruby-31"><sup>3</sup></a>
+      <td>Ruby<a href="#ruby-31"><sup>4</sup></a>
       </td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a>,
           <a href="https://github.com/rubysec/bundler-audit">bundler-audit</a>,
@@ -3565,7 +3565,7 @@
           <a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
-      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#swiftlint-complexity"><sup>4</sup></a></td>
+      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#swiftlint-complexity"><sup>5</sup></a></td>
     </tr>
     <tr>
       <td>Terraform</td>
@@ -3629,9 +3629,10 @@
 
 <p><sup><span id="client-side">1</span></sup>: Supported as a <a href="../../related-tools/local-analysis/client-side-tools/">client-side tool</a>.<br />
 <sup><span id="cppcheck-misra">2</span></sup>: Currently, Cppcheck only supports <a href="https://cppcheck.sourceforge.io/misra.php" target="_blank">checking the MISRA guidelines for C</a>.<br />
-<sup><span id="ruby-31">3</span></sup>: Currently, Codacy doesn't support any static code analysis tool for <a href="https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/" target="_blank">Ruby 3.1</a>.<br />
-<sup><span id="swiftlint-complexity">4</span></sup>: Supports <a href="https://realm.github.io/SwiftLint/cyclomatic_complexity.html" target="_blank">reporting warnings or errors</a> on functions above specific complexity thresholds. Enable the rule <strong>Cyclomatic Complexity</strong> on the <a href="../../repositories-configure/configuring-code-patterns/">Code patterns page</a>, or use a <a href="https://realm.github.io/SwiftLint/index.html#configuration" target="_blank">configuration file</a> to customize the thresholds.<br />
-<sup><span id="suggested-fixes">🔧</span></sup>: Supports <a href="../../repositories-configure/integrations/github-integration/#suggest-fixes">suggesting fixes</a> for identified issues.</p>
+<sup><span id="dart-limitations">3</span></sup>: Currently, Codacy doesn't support <code>include</code> statements in dartanalyzer configuration files, but you can <a href="https://github.com/codacy/codacy-dartanalyzer#include-not-working-on-analysis_optionsyaml">user a workaround to overcome this limitation</a>.<br />
+<sup><span id="ruby-31">4</span></sup>: Currently, Codacy doesn't support any static code analysis tool for <a href="https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/" target="_blank">Ruby 3.1</a>.<br />
+<sup><span id="swiftlint-complexity">5</span></sup>: Supports <a href="https://realm.github.io/SwiftLint/cyclomatic_complexity.html" target="_blank">reporting warnings or errors</a> on functions above specific complexity thresholds. Enable the rule <strong>Cyclomatic Complexity</strong> on the <a href="../../repositories-configure/configuring-code-patterns/">Code patterns page</a>, or use a <a href="https://realm.github.io/SwiftLint/index.html#configuration" target="_blank">configuration file</a> to customize the thresholds.</p>
+<p><sup><span id="suggested-fixes">🔧</span></sup>: Supports <a href="../../repositories-configure/integrations/github-integration/#suggest-fixes">suggesting fixes</a> for identified issues.</p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../codacy-quickstart/">Codacy quickstart (5 min)</a></li>
@@ -3786,7 +3787,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 21, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 22, 2022</span>
     
   </small>
 </div>
