@@ -29,7 +29,7 @@ description: Documentation homepage for the Codacy automated code review tool.
 
     <a class="content-link" href="repositories-configure/integrations/github-integration/">
       <div>Setting up integrations</div>
-      <div>Set up integrations to receive Codacy status checks on your current workflow.</div>
+      <div>Configure Codacy to provide analysis feedback and status checks directly on your pull requests.</div>
     </a>
   </div>
 </div>
