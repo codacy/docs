@@ -641,8 +641,8 @@ nav:
           - organizations/using-a-coding-standard.md
           - organizations/copying-code-patterns-between-repositories.md
           - organizations/managing-people.md
-          - organizations/changing-your-plan-and-billing.md
           - organizations/roles-and-permissions-for-synced-organizations.md
+          - organizations/changing-your-plan-and-billing.md
     - Your account:
           - account/managing-your-profile.md
           - account/emails.md
@@ -706,6 +706,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2022:
+                      - release-notes/cloud/cloud-2022-04-04-eslint-8-update.md
                       - release-notes/cloud/cloud-2022-02.md
                       - release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal.md
                       - release-notes/cloud/cloud-2022-01.md
