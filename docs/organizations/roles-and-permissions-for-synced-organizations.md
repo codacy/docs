@@ -190,8 +190,19 @@ Depending on your role on the Git provider you will have different permissions o
     <tr><td colspan="100%"><tr>
     <!-- Bitbucket -->
     <tr>
-      <th rowspan="2">Bitbucket Cloud and Bitbucket Server</th>
-      <td><strong>Read, Write</strong><sup><a href="#note-3">3</a></td>
+      <th rowspan="3">Bitbucket Cloud and Bitbucket Server</th>
+      <td><strong>Read</strong><sup><a href="#note-3">3</a></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><strong>Write</strong><sup><a href="#note-3">3</a></td>
       <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
