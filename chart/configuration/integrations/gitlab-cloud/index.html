@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to set up the Codacy Self-hosted integration with GitLab Cloud.">
       
       
-        <meta http-equiv="last-modified" content="2021-12-17 16:10:36">  
+        <meta http-equiv="last-modified" content="2022-03-23 15:50:38">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/chart/configuration/integrations/gitlab-cloud/">
@@ -3266,7 +3266,7 @@
 <p>To integrate Codacy with GitLab Cloud, you must create a GitLab application:</p>
 <ol>
 <li>
-<p>Open <a href="https://gitlab.com/profile/applications">https://gitlab.com/profile/applications</a>.</p>
+<p>Open <a href="https://gitlab.com/-/profile/applications">https://gitlab.com/-/profile/applications</a>.</p>
 </li>
 <li>
 <p>Fill in the fields to register your Codacy instance on GitLab:</p>
@@ -3281,6 +3281,13 @@ https://codacy.example.com/add/addProvider/GitLab
 https://codacy.example.com/add/addService/GitLab
 https://codacy.example.com/add/addPermissions/GitLab
 </code></pre></div>
+</li>
+<li>
+<p><strong>Expire access tokens:</strong> Disable the option so that tokens don't expire.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently, Codacy doesn't support <a href="https://gitlab.com/help/integration/oauth_provider.md#expiring-access-tokens" target="_blank">expiring access tokens</a>. Make sure that this option is turned off.</p>
+</div>
 </li>
 <li>
 <p><strong>Scopes:</strong> Enable the scopes:</p>
@@ -3482,7 +3489,7 @@ https://codacy.example.com/add/addPermissions/GitLab
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 17, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 23, 2022</span>
     
   </small>
 </div>
