@@ -151,7 +151,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Guest</th>
+      <th>Project Guest</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -162,7 +162,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Reporter</th>
+      <th>Project Reporter</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -173,7 +173,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Developer</th>
+      <th>Project Developer</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -184,7 +184,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Maintainer</th>
+      <th>Project Maintainer</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -195,7 +195,18 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Owner</th>
+      <th>Project Owner</th>
+      <td class="yes">Yes<sup>2</sup></td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <th>Group Owner</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
