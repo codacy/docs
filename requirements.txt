@@ -5,7 +5,7 @@ mkdocs-material==8.2.3
 
 # Markdown extensions
 Pygments==2.11.2
-pymdown-extensions==9.2
+pymdown-extensions==9.3
 
 # MkDocs plugins
 mkdocs-exclude-search==0.6.4
@@ -14,6 +14,10 @@ mkdocs-git-revision-date-localized-plugin==1.0.0
 mkdocs-include-markdown-plugin==3.3.0
 mkdocs-macros-plugin==0.6.4
 mkdocs-meta-descriptions-plugin==1.0.2
-mkdocs-monorepo-plugin==0.5.3
+mkdocs-monorepo-plugin==1.0.0
 mkdocs-redirects==1.0.3
 mkdocs-rss-plugin==0.21.0
+
+# Pinned dependencies
+# Jinja2 3.1.0 (https://github.com/pallets/jinja/releases/tag/3.1.0) breaks the MkDocs build
+Jinja2==3.0.3
