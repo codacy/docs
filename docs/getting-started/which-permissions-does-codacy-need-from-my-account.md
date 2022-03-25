@@ -21,7 +21,7 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
   <colgroup>
     <col width="20%"/>
     <col width="20%"/>
-    <cel width="60%"/>
+    <col width="60%"/>
   </colgroup>
   <thead>
     <tr>
