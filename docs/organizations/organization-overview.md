@@ -75,7 +75,7 @@ Click **See all** to see all repositories in your organization.
 ![Last updated repositories](images/organization-overview-repositories-last-updated.png)
 
 !!! note
-    The exact value of the last update date of the repositories depends on your Git provider:
+    The exact value of the last updated date of the repositories depends on your Git provider:
 
     -   **GitHub:** date of the last commit to any branch of the repository (value of `pushed_at` from the [GitHub Repositories API](https://docs.github.com/en/rest/reference/repos){: target=_"blank"}).
     -   **GitLab:** date when the project was last updated (value of `last_activity_at` from the [GitLab Groups API](https://docs.gitlab.com/ee/api/groups.html){: target="_blank"}). Note that this value is only updated [at most once per hour](https://gitlab.com/gitlab-org/gitlab/-/issues/20952){: target="_blank"}).
