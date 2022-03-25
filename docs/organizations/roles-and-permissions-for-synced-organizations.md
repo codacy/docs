@@ -6,14 +6,21 @@ description: List of operations that users can perform on Codacy depending on th
 
 Depending on your role on the Git provider you will have different permissions on Codacy:
 
+<style>
+.yes {
+  background-color: rgb(208, 247, 229);
+}
+</style>
+
 <table>
   <thead>
     <tr>
-      <th>Provider</th>
+      <td></td>
       <th>Role</th>
       <th>Join organization</th>
       <th>View private repository</th>
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
+      <th>Upload coverage<br/>using an account API token</th>
       <th>Configure repository</th>
       <th>Add repository</th>
       <th>Manage coding standards,<br/>Bulk copy patterns</th>
@@ -21,9 +28,11 @@ Depending on your role on the Git provider you will have different permissions o
     </tr>
   </thead>
   <tbody>
+    <!-- GitHub -->
     <tr>
-      <td rowspan="7">GitHub Cloud and GitHub Enterprise</td>
-      <td>Outside Collaborator<sup><a href="#note-1">1</a></sup></td>
+      <th rowspan="7">GitHub Cloud and GitHub Enterprise</th>
+      <td><strong>Outside Collaborator</strong><sup><a href="#note-1">1</a></sup></td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -33,156 +42,186 @@ Depending on your role on the Git provider you will have different permissions o
       <td>No</td>
     </tr>
     <tr>
-      <td>Repository Read</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
+      <td><strong>Repository Read</strong></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td>Repository Triage</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
+      <td><strong>Repository Triage</strong></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td>Repository Write</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
+      <td><strong>Repository Write</strong></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
     </tr>
     <tr>
-      <td>Repository Maintain</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
+      <td><strong>Repository Maintain</strong></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
     </tr>
     <tr>
-      <td>Repository Admin</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
+      <td><strong>Repository Admin</strong></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
       <td>No</td>
       <td>No</td>
     </tr>
     <tr>
-      <td>Organization Owner</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
+      <td><strong>Organization Owner</strong></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
     </tr>
+    <tr><td colspan="100%"><tr>
+    <!-- GitLab -->
     <tr>
-      <td rowspan="7">GitLab Cloud and GitLab Enterprise</td>
-      <td>External User<sup><a href="#note-1">1</a></sup></td>
+      <th rowspan="7">GitLab Cloud and GitLab Enterprise</th>
+      <td><strong>External User</strong><sup><a href="#note-1">1</a></sup></td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td><span>Guest</span></td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
     </tr>
     <tr>
-      <td><span>Reporter</span></td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
+      <td><strong>Guest</strong></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td><span>Developer</span></td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
+      <td><strong>Reporter</strong></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td><span>Maintainer</span></td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
+      <td><strong>Developer</strong></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td class="yes">Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><strong>Maintainer</strong></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
+      <td><a href="#change-analysis-configuration">Configurable</a></td>
+      <td class="yes">Yes</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td><strong>Owner</strong></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td><strong>Administrator</strong></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr><td colspan="100%"><tr>
+    <!-- Bitbucket -->
+    <tr>
+      <th rowspan="3">Bitbucket Cloud and Bitbucket Server</th>
+      <td><strong>Read</strong><sup><a href="#note-3">3</a></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td><span>Owner</span></td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td><span>Administrator</span></td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-    </tr>
-    <tr>
-      <td rowspan="2">Bitbucket Cloud and Bitbucket Server</td>
-      <td>Read, Write<sup><a href="#note-3">3</a></td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
+      <td><strong>Write</strong><sup><a href="#note-3">3</a></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
+      <td>No</td>
     </tr>
     <tr>
-      <td>Admin</td>
-      <td>Yes<sup><a href="#note-2">2</a></sup></td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
-      <td>Yes</td>
+      <td><strong>Admin</strong></td>
+      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
     </tr>
   </tbody>
 </table>
