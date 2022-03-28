@@ -8,7 +8,6 @@ copyright: "© <script>document.write(new Date().getFullYear())</script> <a href
 # Repository information
 repo_name: "codacy/docs"
 repo_url: "https://github.com/codacy/docs"
-edit_uri: "" # Hide the edit button
 
 # Theme configuration
 theme:
