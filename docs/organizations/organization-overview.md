@@ -38,15 +38,9 @@ The **Overall quality** chart compares the repositories in your organization reg
 -   Hover the mouse pointer over the bars to see the metrics for the corresponding repositories.
 -   Click the bars to navigate directly to the corresponding repository.
 
-If you have over 8 repositories, the chart displays your repositories grouped by grade or percentage intervals.{% if not config.extra.self_hosted %} Click the bars to see and navigate directly to the corresponding repositories.
+If you have over 8 repositories, the chart displays your repositories grouped by grade or percentage intervals. Click the bars to see and navigate directly to the corresponding repositories.
 
-!!! info "This is a beta feature"
-    This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
-
-    Read more about this feature and share your feedback on our [public roadmap](https://roadmap.codacy.com/c/86-know-which-repositories-require-more-attention){: target="_blank"}.
-
-![Overall quality chart with grouped repositories](images/organization-overview-overall-quality-grouped-beta.png)
-{% endif %}
+![Overall quality chart with grouped repositories](images/organization-overview-overall-quality-grouped.png)
 
 !!! tip
     If you don't have coverage set up for any of your repositories yet, the coverage tab provides you with instructions on [how to add coverage for your repositories](../coverage-reporter/index.md).
@@ -74,5 +68,9 @@ Click **See all** to see all repositories in your organization.
 
 ![Last updated repositories](images/organization-overview-repositories-last-updated.png)
 
-!!! important
-    **If you're using Bitbucket Server** the list displays the repositories in alphabetical order because Codacy can't obtain the information on when the repositories were last updated from this Git provider.
+!!! note
+    The exact value of the last updated date of the repositories depends on your Git provider:
+
+    -   **GitHub:** date of the last commit to any branch of the repository (value of `pushed_at` from the [GitHub Repositories API](https://docs.github.com/en/rest/reference/repos){: target=_"blank"}).
+    -   **GitLab:** date when the project was last updated (value of `last_activity_at` from the [GitLab Groups API](https://docs.gitlab.com/ee/api/groups.html){: target="_blank"}). Note that this value is only updated [at most once per hour](https://gitlab.com/gitlab-org/gitlab/-/issues/20952){: target="_blank"}).
+    -   **Bitbucket:** date when the repository was last updated (value of `updated_on` from the [Bitbucket Repositories API](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/#api-group-repositories){: target="_blank"}). **On Bitbucket Server** Codacy can't obtain this information and the list displays the repositories in alphabetical order.
