@@ -27,25 +27,23 @@ Follow the steps below to upgrade to Codacy Self-hosted v7.0.0:
 
 ## Breaking changes
 
-This version of Codacy Self-hosted includes changes to the permission model for the **GitLab Maintainer role**.
-
-GitLab defines Maintainers as super-developers: "they're able to push to <span class="skip-vale">master</span>, deploy to production. This role is often held by maintainers and engineering managers." However, until now the Codacy permissions for this role were limited to the same as a Developer.
-
-As part of our efforts to address customer feedback towards having a more seamless integration between Codacy and GitLab, we adjusted the operations that GitLab project members with the Maintainer role can perform on Codacy to include:
-
--   Adding the project
--   Configuring the project
--   Changing the following analysis settings:
-    -   Ignoring issues and files
-    -   Configuring code patterns
-    -   Configuring file extensions
-    -   Managing branches
-
 **If you're using GitLab** please review the roles of your team on GitLab [considering the new permissions for project Maintainers](http://docs.codacy.com/v7.0/organizations/roles-and-permissions-for-synced-organizations/).
+
+GitLab defines Maintainers as [super-developers](https://about.gitlab.com/handbook/product/gitlab-the-product/#permissions-in-gitlab){: target="_blank"}:
+
+> They're able to push to <span class="skip-vale">master</span>, deploy to production. This role is often held by maintainers and engineering managers.
+
+However, until now the Codacy permissions for this role were limited to the same as a Developer. This change addresses customer feedback towards having a more seamless integration between Codacy and GitLab.
 
 ## Product enhancements
 
-<!--TODO Add release note for https://codacy.atlassian.net/browse/CY-5876-->
+-   GitLab project members with the Maintainer role can now perform the following operations on Codacy:
+
+    -   Adding the project
+    -   Configuring the project
+    -   Changing the following analysis settings: ignoring issues and files, configuring code patterns, configuring file extensions, and managing branches
+    
+    [See the updated permissions](https://docs.codacy.com/v7.0/organizations/roles-and-permissions-for-synced-organizations/) for all GitLab roles. (CY-5876)
 
 -   Released ESLint 8 as a new tool and deprecated ESLint 7. For now, all repositories will continue to use ESLint 7 by default. (CY-5848)
 
