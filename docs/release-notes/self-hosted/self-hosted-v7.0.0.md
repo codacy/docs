@@ -35,6 +35,24 @@ Follow the steps below to upgrade to Codacy Self-hosted v7.0.0:
     -   [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-7.0.0)
     -   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-7.0.0)
 
+## Breaking changes
+
+This version of Codacy Self-hosted includes changes to the permission model for the **GitLab Maintainer role**.
+
+GitLab defines Maintainers as super-developers: "they're able to push to <span class="skip-vale">master</span>, deploy to production. This role is often held by maintainers and engineering managers." However, until now the Codacy permissions for this role were limited to the same as a Developer.
+
+As part of our efforts to address customer feedback towards having a more seamless integration between Codacy and GitLab, we adjusted the operations that GitLab project members with the Maintainer role can perform on Codacy to include:
+
+-   Adding the project
+-   Configuring the project
+-   Changing the following analysis settings:
+    -   Ignoring issues and files
+    -   Configuring code patterns
+    -   Configuring file extensions
+    -   Managing branches
+
+**If you're using GitLab** please review the roles of your team on GitLab [considering the new permissions for project Maintainers](http://docs.codacy.com/v7.0/organizations/roles-and-permissions-for-synced-organizations/).
+
 ## Product enhancements
 
 -   Released ESLint 8 as a new tool and deprecated ESLint 7. For now, all repositories will continue to use ESLint 7 by default. (CY-5848)
