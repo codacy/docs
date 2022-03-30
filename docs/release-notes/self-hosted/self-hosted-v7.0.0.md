@@ -63,8 +63,8 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   CSSLint 1.0.5
 -   **dartanalyzer 2.16.1 (updated from 2.15.1)**
 -   detekt 1.19.0
--   **ESLint 8.10.0 (updated from 7.32.0)**
--   **ESLint (deprecated) 7.32.0 (new)**
+-   **ESLint 8.10.0 (new)**
+-   ESLint (deprecated) 7.32.0
 -   Faux-Pas 1.7.2
 -   Flawfinder 2.0.11
 -   Gosec 2.8.1
