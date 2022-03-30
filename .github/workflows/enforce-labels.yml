@@ -9,4 +9,4 @@ jobs:
     steps:
     - uses: yogevbd/enforce-label-action@2.2.2
       with:
-        BANNED_LABELS: "pending release"
+        BANNED_LABELS: "don't merge"
