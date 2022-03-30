@@ -35,6 +35,11 @@ GitLab defines Maintainers as [super-developers](https://about.gitlab.com/handbo
 
 However, until now the Codacy permissions for this role were limited to the same as a Developer. This change addresses customer feedback towards having a more seamless integration between Codacy and GitLab.
 
+!!! important
+    After upgrading Codacy, clean your browser cache and refresh the list of repositories on the **Repositories list** page to make sure that you're using the updated permissions:
+
+    ![Refreshing the list of repositories on Codacy](../images/cy-5876.png)
+
 ## Product enhancements
 
 -   GitLab project members with the Maintainer role can now perform the following operations on Codacy:
