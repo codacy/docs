@@ -12,13 +12,6 @@ These release notes are for [Codacy Self-hosted v7.0.0](https://github.com/codac
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
-<!--TODO Check these issues manually
-
-Jira issues without release notes
-
--   https://codacy.atlassian.net/browse/CY-5797
--->
-
 ## Upgrading Codacy Self-hosted
 
 Follow the steps below to upgrade to Codacy Self-hosted v7.0.0:
@@ -53,6 +46,10 @@ As part of our efforts to address customer feedback towards having a more seamle
 ## Product enhancements
 
 -   Released ESLint 8 as a new tool and deprecated ESLint 7. For now, all repositories will continue to use ESLint 7 by default. (CY-5848)
+-   Now, the [**Repositories list** page](https://docs.codacy.com/v7.0/organizations/managing-repositories/) displays a warning icon to improve the visibility of warnings and errors affecting the repositories. (CY-5797)
+
+    ![Repositories with warnings on the Repositories list page](../images/cy-5797.png)
+
 -   Now, the [**Open pull requests** area](https://docs.codacy.com/v7.0/repositories/repository-dashboard/#open-pull-requests) on the Repository Dashboard displays more details about the open pull requests. (CY-5796)
 
     ![Open pull requests area on the Repository Dashboard](../images/cy-5796.png)
