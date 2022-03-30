@@ -42,7 +42,7 @@ However, until now the Codacy permissions for this role were limited to the same
     -   Adding the project
     -   Configuring the project
     -   Changing the following analysis settings: ignoring issues and files, configuring code patterns, configuring file extensions, and managing branches
-    
+
     [See the updated permissions](https://docs.codacy.com/v7.0/organizations/roles-and-permissions-for-synced-organizations/) for all GitLab roles. (CY-5876)
 
 -   Included ESLint 8 as a new supported tool and deprecated ESLint 7. For now, all repositories will continue to use ESLint 7 by default. (CY-5848)
