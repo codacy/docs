@@ -17,7 +17,6 @@ These release notes are for [Codacy Self-hosted v7.0.0](https://github.com/codac
 Jira issues without release notes
 
 -   https://codacy.atlassian.net/browse/CY-5797
--   https://codacy.atlassian.net/browse/CY-5796
 -->
 
 ## Upgrading Codacy Self-hosted
@@ -54,7 +53,11 @@ As part of our efforts to address customer feedback towards having a more seamle
 ## Product enhancements
 
 -   Released ESLint 8 as a new tool and deprecated ESLint 7. For now, all repositories will continue to use ESLint 7 by default. (CY-5848)
--   Now, the **Access management** page under your account settings also allows adding new Git providers. (CY-5795)
+-   Now, the [**Open pull requests** area](https://docs.codacy.com/v7.0/repositories/repository-dashboard/#open-pull-requests) on the Repository Dashboard displays more details about the open pull requests. (CY-5796)
+
+    ![Open pull requests area on the Repository Dashboard](../images/cy-5796.png)
+
+-   Now, the [**Access management** page](https://docs.codacy.com/v7.0/getting-started/which-permissions-does-codacy-need-from-my-account/#revoking-access-to-integrations) under your account settings also allows adding new Git providers. (CY-5795)
 -   Improved the loading times of the Organization Overview and Repositories list pages using a short-lived cache in the user's browser. (CY-5793)
 
 ## Bug fixes
