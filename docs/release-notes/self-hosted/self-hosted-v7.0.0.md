@@ -45,7 +45,7 @@ However, until now the Codacy permissions for this role were limited to the same
     
     [See the updated permissions](https://docs.codacy.com/v7.0/organizations/roles-and-permissions-for-synced-organizations/) for all GitLab roles. (CY-5876)
 
--   Released ESLint 8 as a new tool and deprecated ESLint 7. For now, all repositories will continue to use ESLint 7 by default. (CY-5848)
+-   Included ESLint 8 as a new supported tool and deprecated ESLint 7. For now, all repositories will continue to use ESLint 7 by default. (CY-5848)
 
 -   The [**Repositories list** page](https://docs.codacy.com/v7.0/organizations/managing-repositories/) now displays a warning icon to improve the visibility of warnings and errors affecting the repositories. (CY-5797)
 
