@@ -45,6 +45,8 @@ As part of our efforts to address customer feedback towards having a more seamle
 
 ## Product enhancements
 
+<!--TODO Add release note for https://codacy.atlassian.net/browse/CY-5876-->
+
 -   Released ESLint 8 as a new tool and deprecated ESLint 7. For now, all repositories will continue to use ESLint 7 by default. (CY-5848)
 
 -   The [**Repositories list** page](https://docs.codacy.com/v7.0/organizations/managing-repositories/) now displays a warning icon to improve the visibility of warnings and errors affecting the repositories. (CY-5797)
