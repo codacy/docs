@@ -18,7 +18,6 @@ Jira issues without release notes
 
 -   https://codacy.atlassian.net/browse/CY-5797
 -   https://codacy.atlassian.net/browse/CY-5796
--   https://codacy.atlassian.net/browse/CY-5795
 -->
 
 ## Upgrading Codacy Self-hosted
@@ -55,6 +54,7 @@ As part of our efforts to address customer feedback towards having a more seamle
 ## Product enhancements
 
 -   Released ESLint 8 as a new tool and deprecated ESLint 7. For now, all repositories will continue to use ESLint 7 by default. (CY-5848)
+-   Now, the **Access management** page under your account settings also allows adding new Git providers. (CY-5795)
 -   Improved the loading times of the Organization Overview and Repositories list pages using a short-lived cache in the user's browser. (CY-5793)
 
 ## Bug fixes
