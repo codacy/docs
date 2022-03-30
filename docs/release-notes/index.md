@@ -67,7 +67,7 @@ v7
     The next Codacy Self-hosted version should be a major version
     See the breaking changes introduced in https://codacy.atlassian.net/browse/CY-5848-->
 
--   [v7.0.0](self-hosted/self-hosted-v7.0.0.md) (March 30, 2022) <!--TODO Update release date-->
+-   [v7.0.0](self-hosted/self-hosted-v7.0.0.md) (April 4, 2022) <!--TODO Update release date-->
 
 v6
 
