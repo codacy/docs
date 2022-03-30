@@ -37,13 +37,13 @@ Follow the steps below to upgrade to Codacy Self-hosted v7.0.0:
 
 ## Product enhancements
 
+-   Released ESLint 8 as a new tool and deprecated ESLint 7. For now, all repositories will continue to use ESLint 7 by default. (CY-5848)
 
 ## Bug fixes
 
--   Released a new tool. ESLint 8 and deprecated ESLint 7. (CY-5848)
 -   Fixed an issue that caused inconsistencies on the last updated date when listing GitHub repositories. Now, the last updated date is the [date of the last push to the repositories](https://docs.codacy.com/v7.0/organizations/organization-overview/#last-updated-repositories). (CY-5784)
 -   dartanalyzer now supports including the packages [lints](https://pub.dev/packages/lints){: target="_blank"} and [flutter_lints](https://pub.dev/packages/flutter_lints){: target="_blank"} in the `analysis_option.yaml` configuration file. (CY-5626)
--   Hide re-analyze button for repositories that are running analysis through a build server (CY-4205)
+-   The re-analyze button is now hidden on repositories that are running analysis through a build server. (CY-4205)
 
 ## Tool versions
 
