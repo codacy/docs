@@ -26,7 +26,7 @@ jobs:
 
       - name: Create pull request
         if: steps.calibre.outputs.markdown != ''
-        uses: peter-evans/create-pull-request@v3
+        uses: peter-evans/create-pull-request@v4
         with:
           title: "clean: Compress images"
           branch-suffix: timestamp

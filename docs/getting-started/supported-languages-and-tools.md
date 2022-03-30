@@ -380,7 +380,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
 
 <sup><span id="client-side">1</span></sup>: Supported as a [client-side tool](../related-tools/local-analysis/client-side-tools.md).  
 <sup><span id="cppcheck-misra">2</span></sup>: Currently, Cppcheck only supports [checking the MISRA guidelines for C](https://cppcheck.sourceforge.io/misra.php){: target="_blank"}.  
-<sup><span id="dart-limitations">3</span></sup>: Currently, Codacy doesn't support `include` statements in dartanalyzer configuration files, but you can [use a workaround to overcome this limitation](https://github.com/codacy/codacy-dartanalyzer#include-not-working-on-analysis_optionsyaml).  
+<sup><span id="dart-limitations">3</span></sup>: Currently, Codacy only supports including the packages [lints](https://pub.dev/packages/lints){: target="_blank"} and [flutter_lints](https://pub.dev/packages/flutter_lints){: target="_blank"} on dartanalyzer configuration files.  
 <sup><span id="ruby-31">4</span></sup>: Currently, Codacy doesn't support any static code analysis tool for [Ruby 3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/){: target="_blank"}.  
 <sup><span id="swiftlint-complexity">5</span></sup>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html){: target="_blank"} on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code patterns page](../repositories-configure/configuring-code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration){: target="_blank"} to customize the thresholds.
 
