@@ -11,7 +11,7 @@
         <meta name="description" content="This page includes information to help you troubleshoot issues that you may come across while installing, configuring, and operating Codacy Self-hosted.">
       
       
-        <meta http-equiv="last-modified" content="2021-04-14 15:27:38">  
+        <meta http-equiv="last-modified" content="2022-03-31 16:08:47">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/chart/troubleshoot/troubleshoot/">
@@ -1559,6 +1559,13 @@
         <li class="md-nav__item md-nav__item--toc">
   <a href="#codacy-configuration" class="md-nav__link">
     Codacy configuration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#missing-new-tools" class="md-nav__link">
+    Missing new tools
   </a>
   
 </li>
@@ -3360,6 +3367,10 @@
 </ul>
 </li>
 </ol>
+<h2 id="missing-new-tools">Missing new tools<a class="headerlink" href="#missing-new-tools" title="Permanent link">#</a></h2>
+<p>If the <strong>Code patterns</strong> page of your repositories doesn't list a new tool that was included in a new Codacy version, force the list of available tools to refresh by running the following command on any <code>codacy-engine-*</code> pod:</p>
+<div class="highlight"><pre><span></span><code>curl -X POST localhost:9000/api/v1/engine/initialize
+</code></pre></div>
               
               
                 
@@ -3516,7 +3527,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 31, 2022</span>
     
   </small>
 </div>
