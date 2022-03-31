@@ -50,7 +50,9 @@ However, until now the Codacy permissions for this role were limited to the same
 
     [See the updated permissions](https://docs.codacy.com/v7.0/organizations/roles-and-permissions-for-synced-organizations/) for all GitLab roles. (CY-5876)
 
--   Included ESLint 8 as a new supported tool and deprecated ESLint 7. For now, all repositories will continue to use ESLint 7 by default. (CY-5848)
+-   Included ESLint 8 as a new supported tool and deprecated ESLint 7.
+
+    New repositories will use ESLint 7 by default, but Codacy won't provide more updates for ESLint 7 and will remove ESLint 7 on April 4, 2023. (CY-5848)
 
 -   The [**Repositories list** page](https://docs.codacy.com/v7.0/organizations/managing-repositories/) now displays a warning icon to improve the visibility of warnings and errors affecting the repositories. (CY-5797)
 
@@ -95,7 +97,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **dartanalyzer 2.16.1 (updated from 2.15.1)**
 -   detekt 1.19.0
 -   **ESLint 8.10.0 (new)**
--   ESLint (deprecated) 7.32.0
+-   **ESLint 7.32.0 (<span style="color: red;">deprecated</span>)**
 -   Faux-Pas 1.7.2
 -   Flawfinder 2.0.11
 -   Gosec 2.8.1
