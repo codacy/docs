@@ -64,6 +64,10 @@ However, until now the Codacy permissions for this role were limited to the same
 
 -   Improved the loading times of the Organization Overview and Repositories list pages using a short-lived cache in the user's browser. (CY-5793)
 
+-   It's now possible to click on the organization overview chart to drill down on the information and understand which repositories require attention to improve the organization's code quality. (CY-5580)
+
+    ![Drilling down on the Overall quality chart](../images/cy-5580.png)
+
 ## Bug fixes
 
 -   Fixed an issue that caused inconsistencies on the last updated date when listing GitHub repositories. Now, the last updated date is the [date of the last push to the repositories](https://docs.codacy.com/v7.0/organizations/organization-overview/#last-updated-repositories). (CY-5784)
