@@ -62,7 +62,7 @@ However, until now the Codacy permissions for this role were limited to the same
 
 -   The [**Access management** page](https://docs.codacy.com/v7.0/getting-started/which-permissions-does-codacy-need-from-my-account/#revoking-access-to-integrations) under your account settings now also allows adding new Git providers. (CY-5795)
 
--   Improved the loading times of the Organization Overview and Repositories list pages using a short-lived cache in the user's browser. (CY-5793)
+-   The **Organization Overview** and **Repositories list** pages have improved loading times using a short-lived cache in the user's browser. (CY-5793)
 
 -   The [**Repositories list** page](https://docs.codacy.com/v7.0/organizations/managing-repositories/) now allows sorting the list of repositories using the available columns in organizations with less than 100 repositories. (CY-5695)
 
