@@ -54,6 +54,9 @@ However, until now the Codacy permissions for this role were limited to the same
 
     New repositories will use ESLint 7 by default, but **Codacy won't provide more updates for ESLint 7 and will remove ESLint 7 on April 4, 2023**. (CY-5848)
 
+    !!! note
+        Please [follow these troubleshooting instructions](https://docs.codacy.com/v7.0/chart/troubleshoot/troubleshoot/#missing-new-tools) if the new tool ESLint 8 doesn't appear on the **Code patterns** page of your repositories after upgrading to this Codacy Self-hosted version.
+
 -   The [**Repositories list** page](https://docs.codacy.com/v7.0/organizations/managing-repositories/) now displays a warning icon to improve the visibility of warnings and errors affecting the repositories. (CY-5797)
 
     ![Repositories with warnings on the Repositories list page](../images/cy-5797.png)
