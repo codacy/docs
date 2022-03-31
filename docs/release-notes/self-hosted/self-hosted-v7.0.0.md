@@ -64,7 +64,7 @@ However, until now the Codacy permissions for this role were limited to the same
 
 -   Improved the loading times of the Organization Overview and Repositories list pages using a short-lived cache in the user's browser. (CY-5793)
 
--   Now, if your organization has **less than 100 repositories** it's possible to sort the [**Repositories list** page](https://docs.codacy.com/v7.0/organizations/managing-repositories/) using the available columns. (CY-5695)
+-   If your organization has **less than 100 repositories** it's now possible to sort the [**Repositories list** page](https://docs.codacy.com/v7.0/organizations/managing-repositories/) using the available columns. (CY-5695)
 
 -   It's now possible to click on the organization overview chart to drill down on the information and understand which repositories require attention to improve the organization's code quality. (CY-5580)
 
