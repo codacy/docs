@@ -22,7 +22,7 @@ Depending on your role on the Git provider you will have different permissions o
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
       <th>Upload coverage<br/>using an account API token</th>
       <th>Configure repository</th>
-      <th>Add repository</th>
+      <th>Add and remove repository</th>
       <th>Manage coding standards,<br/>Bulk copy patterns</th>
       <th>Invite and accept members,<br/>modify billing</th>
     </tr>
