@@ -16,5 +16,5 @@ mkdocs-include-markdown-plugin==3.3.0
 mkdocs-macros-plugin==0.6.4
 mkdocs-meta-descriptions-plugin==1.0.2
 mkdocs-monorepo-plugin==1.0.1
-mkdocs-redirects==1.0.3
+mkdocs-redirects==1.0.4
 mkdocs-rss-plugin==0.21.0
