@@ -158,10 +158,10 @@ Depending on your role on the Git provider you will have different permissions o
       <td><strong>Maintainer</strong></td>
       <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
       <td class="yes">Yes</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
-      <td>No</td>
-      <td>No</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
       <td>No</td>
       <td>No</td>
     </tr>
