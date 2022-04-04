@@ -706,6 +706,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.codacy.com/release-notes/self-hosted/self-hosted-v7.0.0/</loc>
+         <lastmod>2022-04-04</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.codacy.com/repositories/commits/</loc>
          <lastmod>2022-04-04</lastmod>
          <changefreq>daily</changefreq>
