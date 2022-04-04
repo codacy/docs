@@ -91,7 +91,8 @@ plugins:
     - include-markdown
     # Allow using variables, macros, and filters
     # https://github.com/fralau/mkdocs_macros_plugin
-    - macros
+    - macros:
+          on_error_fail: !ENV [MKDOCS_STRICT, true]
     # Generate meta descriptions from introductory paragraphs
     # https://github.com/prcr/mkdocs-meta-descriptions-plugin
     - meta-descriptions:
