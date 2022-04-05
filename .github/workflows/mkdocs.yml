@@ -35,6 +35,10 @@ jobs:
           docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
 
       # Deploy branch previews
+      - name: Determine branch name
+        id: branches
+        uses: transferwise/sanitize-branch-name@v1
+
       - name: Deploy docs (preview)
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
         uses: nwtgck/actions-netlify@v1.2
@@ -47,7 +51,7 @@ jobs:
           enable-commit-comment: false
           overwrites-pull-request-comment: true
           netlify-config-path: ./netlify.toml
-          # alias: ${{ github.ref_name }}
+          alias: ${{ steps.branches.outputs.sanitized-branch-name }}
           github-deployment-environment: Netlify
           github-deployment-description: Branch deployment preview
         env:
