@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to set up monitoring for your Codacy Self-hosted instance.">
       
       
-        <meta http-equiv="last-modified" content="2021-12-06 16:54:17">  
+        <meta http-equiv="last-modified" content="2022-04-05 13:50:54">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/chart/configuration/monitoring/">
@@ -3354,14 +3354,13 @@
 <h2 id="setting-up-monitoring-using-grafana-prometheus-and-loki">Setting up monitoring using Grafana, Prometheus, and Loki<a class="headerlink" href="#setting-up-monitoring-using-grafana-prometheus-and-loki" title="Permanent link">#</a></h2>
 <p><a href="https://prometheus.io">Prometheus</a> is an open-source systems monitoring and alerting toolkit. Logs can be collected using <a href="https://grafana.com/oss/loki/">Loki</a>, which is a horizontally-scalable, highly-available, multi-tenant log aggregation system. Its data can be visualized with <a href="https://grafana.com">Grafana</a>, a widely used open source analytics and monitoring solution.</p>
 <p>This solution is considerably more resource demanding than Crow, and is recommended only for more advanced usage. Furthermore, its installation, configuration, and management require a deeper knowledge of Kubernetes as each component must be carefully tweaked to match your specific use case, using as starting point the <code>.yaml</code> values files provided by us.</p>
-<p>The instructions below cover the basic installation of the components in this monitoring stack.</p>
-<h3 id="1-installing-prometheus">1. Installing Prometheus<a class="headerlink" href="#1-installing-prometheus" title="Permanent link">#</a></h3>
-<p>The simplest way to set up Prometheus in your cluster is by using the <a href="https://github.com/helm/charts/tree/master/stable/prometheus-operator">Prometheus Operator</a> bundle.</p>
-<p>Add the custom resources required for installing this bundle in your cluster:</p>
+<p>The instructions below cover the basic installation of these monitoring services using the <a href="https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack">Kube Prometheus Stack</a>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>If you're using MicroK8s</strong> use <code>microk8s.kubectl</code> instead of <code>kubectl</code>.</p>
+<p><strong>If you're using MicroK8s</strong> run <code>alias kubectl=microk8s.kubectl</code>.</p>
 </div>
+<h3 id="1-install-custom-resources">1. Install custom resources<a class="headerlink" href="#1-install-custom-resources" title="Permanent link">#</a></h3>
+<p>Add the custom resources required for installing the monitoring bundle in your cluster:</p>
 <div class="highlight"><pre><span></span><code>kubectl apply -f <span class="s2">&quot;https://raw.githubusercontent.com/coreos/prometheus-operator/release-0.38/example/prometheus-operator-crd/monitoring.coreos.com_alertmanagers.yaml&quot;</span>
 kubectl apply -f <span class="s2">&quot;https://raw.githubusercontent.com/coreos/prometheus-operator/release-0.38/example/prometheus-operator-crd/monitoring.coreos.com_podmonitors.yaml&quot;</span>
 kubectl apply -f <span class="s2">&quot;https://raw.githubusercontent.com/coreos/prometheus-operator/release-0.38/example/prometheus-operator-crd/monitoring.coreos.com_prometheuses.yaml&quot;</span>
@@ -3385,7 +3384,7 @@ helm upgrade --install --atomic --timeout 600s loki loki/loki <span class="se">\
   --version <span class="m">0</span>.22.2 --namespace monitoring --values values-promtail.yaml
 </code></pre></div>
 <h3 id="4-installing-prometheus-and-grafana">4. Installing Prometheus and Grafana<a class="headerlink" href="#4-installing-prometheus-and-grafana" title="Permanent link">#</a></h3>
-<p>Obtain the configuration file for the <a href="https://github.com/helm/charts/tree/master/stable/prometheus-operator">Prometheus Operator bundle</a>, <a href="../../values-files/values-prometheus-operator.yaml"><code>values-prometheus-operator.yaml</code></a>. Then:</p>
+<p>Obtain the configuration file for the <a href="https://github.com/prometheus-community/helm-charts/tree/main/charts/kube-prometheus-stack">Kube Prometheus Stack</a>, <a href="../../values-files/values-prometheus-operator.yaml"><code>values-prometheus-operator.yaml</code></a>. Then:</p>
 <ol>
 <li>
 <p>Edit the Grafana password for the <code>admin</code> user and the hostname for Grafana in the <code>values-prometheus-operator.yaml</code> file.</p>
@@ -3394,10 +3393,13 @@ helm upgrade --install --atomic --timeout 600s loki loki/loki <span class="se">\
 <p>Install the bundle on your cluster by running the command below.</p>
 </li>
 </ol>
-<div class="highlight"><pre><span></span><code>helm upgrade --install --atomic --timeout 600s monitoring stable/prometheus-operator <span class="se">\</span>
-  --version <span class="m">8</span>.13.8 --namespace monitoring --values values-prometheus-operator.yaml
+<div class="highlight"><pre><span></span><code>helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo update
+
+helm upgrade --install --atomic --timeout 600s monitoring  prometheus-community/kube-prometheus-stack <span class="se">\</span>
+  --version <span class="m">9</span>.4.3 --namespace monitoring --values values-prometheus-operator.yaml
 </code></pre></div>
-<p>Follow the <a href="https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-services/#accessing-services-running-on-the-cluster">Kubernetes documentation</a> to access the Grafana service that's now running on your cluster, using the method that best suits your use case.</p>
+<p>Grafana will be available on the domain you configured in your <code>values-prometheus-operator.yaml</code> file, with Prometheus and Loki configured as datasources. Follow the <a href="https://kubernetes.io/docs/tasks/administer-cluster/access-cluster-services/#accessing-services-running-on-the-cluster">Kubernetes documentation</a> if you need to access other monitoring services that are now running on your cluster, using the method that best suits your use case.</p>
 <h3 id="5-enable-service-dashboards">5. Enable service dashboards<a class="headerlink" href="#5-enable-service-dashboards" title="Permanent link">#</a></h3>
 <p>Now that you have Prometheus and Grafana installed you can enable metrics reporting for Codacy components.</p>
 <ol>
@@ -3579,7 +3581,7 @@ helm upgrade --install --atomic --timeout 600s loki loki/loki <span class="se">\
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 6, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 5, 2022</span>
     
   </small>
 </div>

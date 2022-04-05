@@ -40,7 +40,7 @@ grafana:
          tlsSkipVerify: true
     - name: Prometheus
       type: prometheus
-      url: http://monitoring-prometheus-oper-prometheus:9090
+      url: http://monitoring-kube-prometheus-prometheus:9090
       version: 1
       orgId: 1
       access: proxy
