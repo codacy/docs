@@ -47,7 +47,7 @@ jobs:
           enable-commit-comment: false
           overwrites-pull-request-comment: true
           netlify-config-path: ./netlify.toml
-          alias: ${{ github.ref_name }}
+          # alias: ${{ github.ref_name }}
           github-deployment-environment: Netlify
           github-deployment-description: Branch deployment preview
         env:
