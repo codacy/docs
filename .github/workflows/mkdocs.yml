@@ -51,7 +51,6 @@ jobs:
           enable-commit-comment: false
           enable-commit-status: false
           overwrites-pull-request-comment: false
-          netlify-config-path: ./netlify.toml
           alias: ${{ steps.branches.outputs.sanitized-branch-name }}
           github-deployment-environment: Netlify
           github-deployment-description: Branch deployment preview
