@@ -91,7 +91,8 @@ plugins:
     - include-markdown
     # Allow using variables, macros, and filters
     # https://github.com/fralau/mkdocs_macros_plugin
-    - macros
+    - macros:
+          on_error_fail: !ENV [MKDOCS_STRICT, true]
     # Generate meta descriptions from introductory paragraphs
     # https://github.com/prcr/mkdocs-meta-descriptions-plugin
     - meta-descriptions:
@@ -439,7 +440,7 @@ plugins:
               "organizations/manual-organizations/administrative-permissions.md": "release-notes/cloud/cloud-2021-11-02-legacy-organizations.md"
               "organizations/manual-organizations/share-your-repository-with-a-non-codacy-user.md": "release-notes/cloud/cloud-2021-11-02-legacy-organizations.md"
               "faq/troubleshooting/why-cant-i-configure-post-commit-hooks-and-integrations.md": "release-notes/cloud/cloud-2021-11-02-legacy-organizations.md"
-              "release-notes/cloud/cloud-2022-04-04-eslint-8-update.md": "release-notes/index.md"
+              "release-notes/cloud/cloud-2022-04-04-eslint-8-update.md": "release-notes/cloud/cloud-2022-03-31-adding-eslint8.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
@@ -642,6 +643,7 @@ nav:
           - Cloud:
                 - 2022:
                       - release-notes/cloud/cloud-2022-03.md
+                      - release-notes/cloud/cloud-2022-03-31-adding-eslint8.md
                       - release-notes/cloud/cloud-2022-02.md
                       - release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal.md
                       - release-notes/cloud/cloud-2022-01.md
