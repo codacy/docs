@@ -46,7 +46,7 @@ jobs:
           publish-dir: ./site
           production-branch: master
           github-token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
-          deploy-message: Deploy from GitHub Actions
+          deploy-message: Deploy for branch ${{ github.ref_name }}
           enable-pull-request-comment: false
           enable-commit-comment: false
           enable-commit-status: false
