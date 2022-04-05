@@ -40,7 +40,7 @@ jobs:
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
         uses: transferwise/sanitize-branch-name@v1
 
-      - name: Deploy docs (preview)
+      - name: Deploy docs (branch preview)
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
         uses: nwtgck/actions-netlify@v1.2
         with:
