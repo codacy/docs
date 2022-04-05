@@ -34,6 +34,26 @@ jobs:
         run: |
           docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
 
+      # Deploy branch previews
+      - name: Deploy docs (preview)
+        if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
+        uses: nwtgck/actions-netlify@v1.2
+        with:
+          publish-dir: ./site
+          production-branch: master
+          github-token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
+          deploy-message: Deploy from GitHub Actions
+          enable-pull-request-comment: true
+          enable-commit-comment: false
+          overwrites-pull-request-comment: true
+          netlify-config-path: ./netlify.toml
+          alias: ${{ github.ref_name }}
+          github-deployment-environment: Netlify
+          github-deployment-description: Branch deployment preview
+        env:
+          NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_PERSONAL_ACCESS_TOKEN }}
+          NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
+
       # Deploy Latest docs on push to master
       - name: Set up environment variables
         if: github.ref == 'refs/heads/master'
