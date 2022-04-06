@@ -25,7 +25,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
 <table>
   <thead>
     <tr>
-      <th>Role</th>
+      <td></td>
       <th>Join organization</th>
       <th>View private repository</th>
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
@@ -38,7 +38,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
   </thead>
   <tbody>
     <tr>
-      <td><strong>Outside Collaborator</strong><sup>1</sup></td>
+      <th>Outside Collaborator<sup>1</sup></th>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -49,7 +49,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Repository Read</strong></td>
+      <th>Repository Read</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -60,7 +60,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Repository Triage</strong></td>
+      <th>Repository Triage</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -71,7 +71,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Repository Write</strong></td>
+      <th>Repository Write</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -82,7 +82,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Repository Maintain</strong></td>
+      <th>Repository Maintain</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -93,7 +93,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Repository Admin</strong></td>
+      <th>Repository Admin</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -104,7 +104,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Organization Owner</strong></td>
+      <th>Organization Owner</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -127,7 +127,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
 <table>
   <thead>
     <tr>
-      <th>Role</th>
+      <td></td>
       <th>Join organization</th>
       <th>View private repository</th>
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
@@ -140,7 +140,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
   </thead>
   <tbody>
     <tr>
-      <td><strong>External User</strong><sup>1</sup></td>
+      <th>External User<sup>1</sup></th>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -151,7 +151,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Guest</strong></td>
+      <th>Guest</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -162,7 +162,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Reporter</strong></td>
+      <th>Reporter</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -173,7 +173,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Developer</strong></td>
+      <th>Developer</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -184,7 +184,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Maintainer</strong></td>
+      <th>Maintainer</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -195,7 +195,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Owner</strong></td>
+      <th>Owner</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -206,7 +206,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td><strong>Administrator</strong></td>
+      <th>Administrator</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -229,7 +229,7 @@ The table below maps the Codacy operations to the Bitbucket Cloud and Bitbucket 
 <table>
   <thead>
     <tr>
-      <th>Role</th>
+      <td></td>
       <th>Join organization</th>
       <th>View private repository</th>
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
@@ -242,7 +242,7 @@ The table below maps the Codacy operations to the Bitbucket Cloud and Bitbucket 
   </thead>
   <tbody>
     <tr>
-      <td><strong>Read</strong><sup>1</sup></td>
+      <th>Read<sup>1</sup></th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -253,7 +253,7 @@ The table below maps the Codacy operations to the Bitbucket Cloud and Bitbucket 
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Write</strong><sup>1</sup></td>
+      <th>Write<sup>1</sup></th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -264,7 +264,7 @@ The table below maps the Codacy operations to the Bitbucket Cloud and Bitbucket 
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Admin</strong></td>
+      <th>Admin</th>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
