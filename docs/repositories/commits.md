@@ -101,7 +101,7 @@ The **New Duplication** and **Fixed Duplication** tabs display the list of dupli
 
 ## Files tab
 
-The **Files** tab displays an overview of the code quality changes introduced by each file that was changed in the {{ page.meta.page_name }}, together with all files with code coverage data reported in the {{ page.meta.page_name }}.<!--NOTE See https://codacy.atlassian.net/browse/CY-5946 for a discussion around changing this behavior in the future-->
+The **Files** tab displays an overview of the code quality changes introduced by each file that was either changed in the {{ page.meta.page_name }} or that had code coverage data reported.<!--NOTE See https://codacy.atlassian.net/browse/CY-5946 for a discussion around changing this behavior in the future-->
 
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
 
