@@ -40,7 +40,8 @@ jobs:
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
         uses: transferwise/sanitize-branch-name@v1
 
-      - id: string
+      - name: Convert branch name to lowercase
+        id: string
         uses: ASzc/change-string-case-action@v2
         with:
           string: ${{ steps.branches.outputs.sanitized-branch-name }}
