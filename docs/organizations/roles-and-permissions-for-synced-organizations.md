@@ -22,7 +22,7 @@ Depending on your role on the Git provider you will have different permissions o
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
       <th>Upload coverage<br/>using an account API token</th>
       <th>Configure repository</th>
-      <th>Add repository</th>
+      <th>Add and remove repository</th>
       <th>Manage coding standards,<br/>Bulk copy patterns</th>
       <th>Invite and accept members,<br/>modify billing</th>
     </tr>
@@ -158,10 +158,10 @@ Depending on your role on the Git provider you will have different permissions o
       <td><strong>Maintainer</strong></td>
       <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
       <td class="yes">Yes</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
-      <td>No</td>
-      <td>No</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
       <td>No</td>
       <td>No</td>
     </tr>
