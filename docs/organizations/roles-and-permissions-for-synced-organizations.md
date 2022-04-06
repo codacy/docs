@@ -38,7 +38,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
   </thead>
   <tbody>
     <tr>
-      <td><strong>Outside Collaborator</strong><sup><a href="#note-1">1</a></sup></td>
+      <td><strong>Outside Collaborator</strong><sup>1</sup></td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -50,7 +50,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
     </tr>
     <tr>
       <td><strong>Repository Read</strong></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
@@ -61,7 +61,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
     </tr>
     <tr>
       <td><strong>Repository Triage</strong></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
@@ -72,7 +72,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
     </tr>
     <tr>
       <td><strong>Repository Write</strong></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
@@ -83,7 +83,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
     </tr>
     <tr>
       <td><strong>Repository Maintain</strong></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
@@ -94,7 +94,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
     </tr>
     <tr>
       <td><strong>Repository Admin</strong></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -105,7 +105,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
     </tr>
     <tr>
       <td><strong>Organization Owner</strong></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -117,9 +117,9 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
   </tbody>
 </table>
 
-<sup id="note-1">1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can [add them](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories.<br/>
-<sup id="note-2">2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](managing-people.md#joining).<br/>
-<sup id="note-3">3</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.
+<sup>1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can [add them](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories.<br/>
+<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](managing-people.md#joining).<br/>
+<sup>3</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.
 
 ## Permissions for GitLab
 
@@ -141,7 +141,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
   </thead>
   <tbody>
     <tr>
-      <td><strong>External User</strong><sup><a href="#note-1">1</a></sup></td>
+      <td><strong>External User</strong><sup>1</sup></td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -153,7 +153,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
     </tr>
     <tr>
       <td><strong>Guest</strong></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
@@ -164,7 +164,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
     </tr>
     <tr>
       <td><strong>Reporter</strong></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
@@ -175,7 +175,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
     </tr>
     <tr>
       <td><strong>Developer</strong></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
@@ -186,7 +186,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
     </tr>
     <tr>
       <td><strong>Maintainer</strong></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -197,7 +197,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
     </tr>
     <tr>
       <td><strong>Owner</strong></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -208,7 +208,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
     </tr>
     <tr>
       <td><strong>Administrator</strong></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -240,8 +240,8 @@ The table below maps the Codacy operations to the Bitbucket Cloud and Bitbucket 
   </thead>
   <tbody>
     <tr>
-      <td><strong>Read</strong><sup><a href="#note-3">3</a></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td><strong>Read</strong><sup>3</sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
@@ -251,8 +251,8 @@ The table below maps the Codacy operations to the Bitbucket Cloud and Bitbucket 
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Write</strong><sup><a href="#note-3">3</a></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td><strong>Write</strong><sup>3</sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td>No</td>
@@ -263,7 +263,7 @@ The table below maps the Codacy operations to the Bitbucket Cloud and Bitbucket 
     </tr>
     <tr>
       <td><strong>Admin</strong></td>
-      <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
+      <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
