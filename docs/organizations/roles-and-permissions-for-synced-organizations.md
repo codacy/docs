@@ -295,3 +295,8 @@ To change this, open your organization **Settings**, page **Member privileges**,
 ![Configuring who can change analysis configurations](images/organization-analysis-configuration.png)
 
 Codacy doesn't allow changing the role of a user, as the roles on Codacy are mirrored from your Git provider and applied to each repository.
+
+## See also
+
+-   [Managing people](managing-people.md)
+-   [Accepting new people to your organization](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization)

@@ -58,3 +58,4 @@ To remove members from your organization open your organization **Settings**, pa
 ## See also
 
 -   [Adding people to Codacy programmatically](../codacy-api/examples/adding-people-to-codacy-programmatically.md)
+-   [Roles and permissions for synced organizations](roles-and-permissions-for-synced-organizations.md)
