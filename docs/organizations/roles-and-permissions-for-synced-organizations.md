@@ -117,9 +117,8 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
   </tbody>
 </table>
 
-<sup>1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can [add them](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories.<br/>
-<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](managing-people.md#joining).<br/>
-<sup>3</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.
+<sup>1</sup>: Outside Collaborators aren't supported as members of organizations on Codacy. However, you can [add them](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories.  
+<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](managing-people.md#joining).
 
 ## Permissions for GitLab
 
@@ -220,6 +219,9 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
   </tbody>
 </table>
 
+<sup>1</sup>: External Users aren't supported as members of organizations on Codacy. However, you can [add them](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories.  
+<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](managing-people.md#joining).
+
 ## Permissions for Bitbucket
 
 The table below maps the Codacy operations to the Bitbucket Cloud and Bitbucket Server roles that allow performing them:
@@ -240,7 +242,7 @@ The table below maps the Codacy operations to the Bitbucket Cloud and Bitbucket 
   </thead>
   <tbody>
     <tr>
-      <td><strong>Read</strong><sup>3</sup></td>
+      <td><strong>Read</strong><sup>1</sup></td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -251,7 +253,7 @@ The table below maps the Codacy operations to the Bitbucket Cloud and Bitbucket 
       <td>No</td>
     </tr>
     <tr>
-      <td><strong>Write</strong><sup>3</sup></td>
+      <td><strong>Write</strong><sup>1</sup></td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -274,6 +276,9 @@ The table below maps the Codacy operations to the Bitbucket Cloud and Bitbucket 
     </tr>
   </tbody>
 </table>
+
+<sup>1</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.  
+<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](managing-people.md#joining).
 
 ## Configuring who can change analysis configurations {: id="change-analysis-configuration"}
 
