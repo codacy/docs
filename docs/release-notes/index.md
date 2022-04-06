@@ -18,6 +18,8 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2022
 
+-   [Cloud March 2022](cloud/cloud-2022-03.md)
+-   [Adding ESLint 8 as a supported tool March 31, 2022](cloud/cloud-2022-03-31-adding-eslint8.md)
 -   [Cloud February 2022](cloud/cloud-2022-02.md)
 -   [Removal of PMD (Legacy) February 16, 2022](cloud/cloud-2022-02-16-pmd-legacy-removal.md)
 -   [Cloud January 2022](cloud/cloud-2022-01.md)
@@ -61,11 +63,16 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
 
-v6
+v7
 
-<!--REMINDER
+<!--NOTE
     The next Codacy Self-hosted version should be a major version
     See the breaking changes introduced in https://codacy.atlassian.net/browse/CY-5848-->
+
+-   [v7.0.0](self-hosted/self-hosted-v7.0.0.md) (April 4, 2022)
+
+v6
+
 -   [v6.0.0](self-hosted/self-hosted-v6.0.0.md) (March 2, 2022)
 
 v5
