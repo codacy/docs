@@ -18,10 +18,11 @@ You'll have different permissions on Codacy depending on your role on the Git pr
 
 ## Permissions for GitHub
 
+The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterprise roles that allow performing them:
+
 <table>
   <thead>
     <tr>
-      <td></td>
       <th>Role</th>
       <th>Join organization</th>
       <th>View private repository</th>
@@ -35,7 +36,6 @@ You'll have different permissions on Codacy depending on your role on the Git pr
   </thead>
   <tbody>
     <tr>
-      <th rowspan="7">GitHub Cloud and GitHub Enterprise</th>
       <td><strong>Outside Collaborator</strong><sup><a href="#note-1">1</a></sup></td>
       <td>No</td>
       <td>No</td>
@@ -123,10 +123,11 @@ See [managing people](managing-people.md) to list and manage the members of your
 
 ## Permissions for GitLab
 
+The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterprise roles that allow performing them:
+
 <table>
   <thead>
     <tr>
-      <td></td>
       <th>Role</th>
       <th>Join organization</th>
       <th>View private repository</th>
@@ -140,7 +141,6 @@ See [managing people](managing-people.md) to list and manage the members of your
   </thead>
   <tbody>
     <tr>
-      <th rowspan="7">GitLab Cloud and GitLab Enterprise</th>
       <td><strong>External User</strong><sup><a href="#note-1">1</a></sup></td>
       <td>No</td>
       <td>No</td>
@@ -222,10 +222,11 @@ See [managing people](managing-people.md) to list and manage the members of your
 
 ## Permissions for Bitbucket
 
+The table below maps the Codacy operations to the Bitbucket Cloud and Bitbucket Server roles that allow performing them:
+
 <table>
   <thead>
     <tr>
-      <td></td>
       <th>Role</th>
       <th>Join organization</th>
       <th>View private repository</th>
@@ -239,7 +240,6 @@ See [managing people](managing-people.md) to list and manage the members of your
   </thead>
   <tbody>
     <tr>
-      <th rowspan="3">Bitbucket Cloud and Bitbucket Server</th>
       <td><strong>Read</strong><sup><a href="#note-3">3</a></td>
       <td class="yes">Yes<sup><a href="#note-2">2</a></sup></td>
       <td class="yes">Yes</td>
