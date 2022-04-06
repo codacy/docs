@@ -20,7 +20,7 @@ See [managing people](managing-people.md) to list and manage the members of your
 
 ## Permissions for GitHub
 
-The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterprise roles that allow performing them:
+The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy operations that they're allowed to perform:
 
 <table>
   <thead>
@@ -122,7 +122,7 @@ The table below maps the Codacy operations to the GitHub Cloud and GitHub Enterp
 
 ## Permissions for GitLab
 
-The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterprise roles that allow performing them:
+The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy operations that they're allowed to perform:
 
 <table>
   <thead>
@@ -224,7 +224,7 @@ The table below maps the Codacy operations to the GitLab Cloud and GitLab Enterp
 
 ## Permissions for Bitbucket
 
-The table below maps the Codacy operations to the Bitbucket Cloud and Bitbucket Server roles that allow performing them:
+The table below maps the Bitbucket Cloud and Bitbucket Server roles to the Codacy operations that they're allowed to perform:
 
 <table>
   <thead>
