@@ -4,13 +4,19 @@ description: List of operations that users can perform on Codacy depending on th
 
 # Roles and permissions for synced organizations
 
-Depending on your role on the Git provider you will have different permissions on Codacy:
+You'll have different permissions on Codacy depending on your role on the Git provider:
+
+-   [GitHub](#github)
+-   [GitLab](gitlab)
+-   [Bitbucket](bitbucket)
 
 <style>
 .yes {
   background-color: rgb(208, 247, 229);
 }
 </style>
+
+## Permissions for GitHub
 
 <table>
   <thead>
@@ -28,7 +34,6 @@ Depending on your role on the Git provider you will have different permissions o
     </tr>
   </thead>
   <tbody>
-    <!-- GitHub -->
     <tr>
       <th rowspan="7">GitHub Cloud and GitHub Enterprise</th>
       <td><strong>Outside Collaborator</strong><sup><a href="#note-1">1</a></sup></td>
@@ -107,8 +112,33 @@ Depending on your role on the Git provider you will have different permissions o
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
-    <tr><td colspan="100%"><tr>
-    <!-- GitLab -->
+  </tbody>
+</table>
+
+<sup id="note-1">1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can [add them](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories.<br/>
+<sup id="note-2">2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](managing-people.md#joining).<br/>
+<sup id="note-3">3</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.
+
+See [managing people](managing-people.md) to list and manage the members of your organization.
+
+## Permissions for GitLab
+
+<table>
+  <thead>
+    <tr>
+      <td></td>
+      <th>Role</th>
+      <th>Join organization</th>
+      <th>View private repository</th>
+      <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
+      <th>Upload coverage<br/>using an account API token</th>
+      <th>Configure repository</th>
+      <th>Add repository</th>
+      <th>Manage coding standards,<br/>Bulk copy patterns</th>
+      <th>Invite and accept members,<br/>modify billing</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <th rowspan="7">GitLab Cloud and GitLab Enterprise</th>
       <td><strong>External User</strong><sup><a href="#note-1">1</a></sup></td>
@@ -187,8 +217,27 @@ Depending on your role on the Git provider you will have different permissions o
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
-    <tr><td colspan="100%"><tr>
-    <!-- Bitbucket -->
+  </tbody>
+</table>
+
+## Permissions for Bitbucket
+
+<table>
+  <thead>
+    <tr>
+      <td></td>
+      <th>Role</th>
+      <th>Join organization</th>
+      <th>View private repository</th>
+      <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
+      <th>Upload coverage<br/>using an account API token</th>
+      <th>Configure repository</th>
+      <th>Add repository</th>
+      <th>Manage coding standards,<br/>Bulk copy patterns</th>
+      <th>Invite and accept members,<br/>modify billing</th>
+    </tr>
+  </thead>
+  <tbody>
     <tr>
       <th rowspan="3">Bitbucket Cloud and Bitbucket Server</th>
       <td><strong>Read</strong><sup><a href="#note-3">3</a></td>
@@ -225,12 +274,6 @@ Depending on your role on the Git provider you will have different permissions o
     </tr>
   </tbody>
 </table>
-
-<sup id="note-1">1</sup>: Outside Collaborators and External Users aren't supported as Members of organizations on Codacy. However, you can [add them](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories.<br/>
-<sup id="note-2">2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](managing-people.md#joining).<br/>
-<sup id="note-3">3</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.
-
-See [managing people](managing-people.md) to list and manage the members of your organization.
 
 ## Configuring who can change analysis configurations {: id="change-analysis-configuration"}
 
