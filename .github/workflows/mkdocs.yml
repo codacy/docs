@@ -50,7 +50,7 @@ jobs:
       - name: Truncate branch name
         id: truncatedString
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
-        uses: 2428392/gh-truncate-string-action@v1
+        uses: 2428392/gh-truncate-string-action@v1.0.0
         with:
           stringToTruncate: ${{ steps.string.outputs.lowercase }}
           maxLength: 37
