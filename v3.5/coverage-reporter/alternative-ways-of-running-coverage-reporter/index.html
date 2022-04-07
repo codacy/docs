@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Documentation for the Codacy automated code review tool">
+        <meta name="description" content="There are alternative ways of running or installing Codacy Coverage Reporter, such as running a Docker image, downloading a binary for your operating system, or building the binary from source.">
       
       
-        <meta http-equiv="last-modified" content="2021-03-05 12:36:56">  
+        <meta http-equiv="last-modified" content="2021-04-17 17:30:54">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/v3.5/coverage-reporter/alternative-ways-of-running-coverage-reporter/">
@@ -20,7 +20,7 @@
         <meta name="author" content="support@codacy.com">
       
       <link rel="shortcut icon" href="../../assets/images/favicon.ico">
-      <meta name="generator" content="mkdocs-1.2.3, mkdocs-material-5.1.1">
+      <meta name="generator" content="mkdocs-1.2.4, mkdocs-material-5.1.1">
       
         <meta property="robots" content="noindex">
       
@@ -2248,7 +2248,7 @@ sbt assembly
 <span class="nt">after_success</span><span class="p">:</span><span class="w"></span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">bash &lt;(curl -Ls https://coverage.codacy.com/get.sh)</span><span class="w"></span>
 </code></pre></div>
-<p>Make sure that you also <a href="../#authenticate">set your project API Token</a> as an environment variable in your Travis CI job.</p>
+<p>Make sure that you also <a href="../#authenticate">set your project or account API Token</a> as an environment variable in your Travis CI job.</p>
 <h3 id="gradle-task">Gradle task<a class="headerlink" href="#gradle-task" title="Permanent link">&para;</a></h3>
 <p>A big shout-out to <a href="https://github.com/tompahoward">Tom Howard</a>, who suggested a way to <a href="https://github.com/mountain-pass/hyperstate/commit/857ca93e1c8484c14a5e2da9f0434d3daf3328ce">create a Gradle task</a>.</p>
 <div class="highlight"><pre><span></span><code>task uploadCoverageToCodacy(type: JavaExec, dependsOn : jacocoTestReport) {
@@ -2449,7 +2449,7 @@ task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 5, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 17, 2021</span>
     
   </small>
 </div>
