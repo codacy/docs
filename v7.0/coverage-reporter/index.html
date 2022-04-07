@@ -11,7 +11,7 @@
         <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2022-03-28 17:15:02">  
+        <meta http-equiv="last-modified" content="2022-03-16 17:38:27">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/v7.0/coverage-reporter/">
@@ -2314,17 +2314,19 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <p>Run Codacy Coverage Reporter <strong>on the root of the locally checked out branch of your Git repository</strong>, specifying the relative path to the coverage report to upload:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report -r &lt;coverage report file name&gt;
 </code></pre></div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p>Check the console output to validate that the Codacy Coverage Reporter <strong>detected the correct commit UUID</strong> and <strong>successfully uploaded</strong> the coverage data to Codacy. If you need help, <a href="troubleshooting-common-issues/">check the troubleshooting page</a> for solutions to the most common setup issues.</p>
+<p>Be sure to also check the sections below for more advanced functionality while uploading the coverage data to Codacy.</p>
+</div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>The self-contained script <code>get.sh</code> automatically downloads and runs the most recent version of Codacy Coverage Reporter. See <a href="alternative-ways-of-running-coverage-reporter/">alternative ways of running Codacy Coverage Reporter</a> for other ways of running Codacy Coverage Reporter, such as by installing the binary manually or using a GitHub Action or CircleCI Orb.</p>
-<p>Be sure to also check the sections below for more advanced functionality while uploading the coverage data to Codacy.</p>
+<p>The self-contained script <code>get.sh</code> automatically downloads and runs the most recent version of Codacy Coverage Reporter.</p>
+<p>See <a href="alternative-ways-of-running-coverage-reporter/">alternative ways of running Codacy Coverage Reporter</a> for other ways of running Codacy Coverage Reporter, such as by installing the binary manually or using a GitHub Action or CircleCI Orb.</p>
 </div>
 </li>
 <li>
-<p>Make sure that Codacy received the coverage data successfully for the <strong>correct commit UUID and branch</strong>. On Codacy, open your <strong>Repository Settings</strong>, tab <strong>Coverage</strong>, and expand the list of recent coverage reports in the section <strong>Test your integration</strong>:</p>
-<p><img alt="Testing the coverage integration" src="images/coverage-test-integration.png" /></p>
-<p>If you make adjustments to your setup and upload new coverage data, click the button <strong>Test integration</strong> to refresh the table.</p>
+<p>Optionally, <a href="https://docs.codacy.com/repositories/badges/">add a Codacy badge</a> to the README of your repository to display the current code coverage.</p>
 </li>
 </ol>
 <p>To validate that the coverage setup is complete, <strong>wait until your repository has at least two new commits</strong> and check that Codacy displays the coverage information on the last commit or in subsequent pull requests, either as a positive, negative, or no variation (represented by <code>=</code>) of the coverage percentage:</p>
@@ -2524,7 +2526,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 28, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 16, 2022</span>
     
   </small>
 </div>
