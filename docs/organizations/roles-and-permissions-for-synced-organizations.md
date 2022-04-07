@@ -76,7 +76,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -87,7 +87,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
