@@ -55,17 +55,23 @@ Codacy displays duplication on the following pages:
 -   **[Repository Dashboard](../../repositories/repository-dashboard.md):** displays the percentage of duplicated files in your repository and how the percentage of duplicated files is evolving over time
 -   **[Organization Overview](../../organizations/organization-overview.md):** displays the repositories in intervals of duplicated file percentages
 
-## Coverage
+## Code coverage
 
-<!--NOTE https://codacy.atlassian.net/browse/CY-2086?focusedCommentId=42198
+You must set up your CI/CD pipeline to [upload code coverage data to Codacy](../../coverage-reporter/index.md). Because of this, the tool that you use to generate the coverage reports is responsible for creating the data that Codacy then uses to calculate code coverage.
 
-We display the % of lines of code covered, out of those that can be covered.
+Codacy calculates code coverage as follows:
 
--   On the quality settings the user can define what is the coverage threshold acceptable for that repository.
--   At commit level we display he % of lines of code that are indeed covered, and the delta of that percentage.
--   At repository level we display the % of lines of code that are indeed covered.
--   At organization level we display the repositories organized per intervals of coverage.
--->
+-   **The coverage value for each file** is the percentage of coverable lines that are covered by tests in the file
+-   **A repository is considered to have acceptable coverage** if the average coverage value for the files in the repository is higher than the threshold [**Coverage is under**](../../repositories-configure/adjusting-quality-settings.md#goals)
+-   **The coverage variation value of a commit or pull request** is the number of percentage points that the coverage value for the file increased or dropped in the commit or pull request
+-   **The diff coverage of a pull request** is the percentage of coverable lines that were added or modified in the pull request that are covered by tests
+
+Once the coverage setup is complete, Codacy displays coverage data on the following pages:
+
+-   **[Commits page](../../repositories/commits.md) and [Pull requests page](../../repositories/pull-requests.md):** display the variation in percentage points of the coverage value for all files in the corresponding branch, and pull requests also display the diff coverage
+-   **[Files page](../../repositories/files.md):** displays the coverage percentage of each file
+-   **[Repository Dashboard](../../repositories/repository-dashboard.md):** displays the average coverage value for the files in the repository and how coverage is evolving over time
+-   **[Organization Overview](../../organizations/organization-overview.md):** displays the repositories in intervals of coverage percentages
 
 ## Grade
 
