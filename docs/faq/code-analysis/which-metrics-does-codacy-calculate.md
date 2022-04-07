@@ -45,9 +45,8 @@ Codacy calculates duplication as follows:
 -   **A file is considered duplicated** if the number of clones in the file is higher than the threshold [**File is duplicated when over**](../../repositories-configure/adjusting-quality-settings.md#goals)
 -   **The duplication value of a commit or pull request** is the number of clones introduced by the commit or pull request
 
-<!--TODO
-    How to tweak how Codacy identifies clones when using PMD CPD
-    https://docs.codacy.com/repositories-configure/codacy-configuration-file/#pmd-cpd-duplication-->
+!!! note
+    You can [customize the rules for identifying duplicated blocks of code](../../repositories-configure/codacy-configuration-file.md#pmd-cpd-duplication) when using PMD CPD to analyze the source code of your repository.
 
 Codacy displays duplication on the following pages:
 
