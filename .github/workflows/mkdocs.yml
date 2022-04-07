@@ -54,7 +54,7 @@ jobs:
         uses: 2428392/gh-truncate-string-action@v1.0.0
         with:
           stringToTruncate: ${{ steps.string.outputs.lowercase }}
-          maxLength: 37
+          maxLength: 35
 
       - name: Deploy docs (branch preview)
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
