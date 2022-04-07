@@ -76,7 +76,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
-      <td style="background-color: forestgreen;">No</td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -87,7 +87,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
-      <td style="background-color: forestgreen;">No</td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -257,7 +257,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the Codac
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td style="background-color: orange;">No</td>
+      <td>No</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
