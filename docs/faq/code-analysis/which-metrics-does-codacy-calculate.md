@@ -46,23 +46,26 @@ Grading every file occurs according to the weighted average of the following cat
 -   complexity
 -   coverage (optional)
 
-#### 4. Grade Calculation
-
-Codacy calculates grades based on the number of issues for every thousand lines of code (KLOC). Steve McConnell, in his book 'Code Complete,' wrote about average bugs per LOC:
-
-(a) Industry Average: "about 15–50 errors per 1000 lines of delivered code." He further states this is usually representative of code that has some level of structured programming behind it but probably includes a mix of coding techniques.
 -->
 
 ## Issues
 
-<!--NOTE https://codacy.atlassian.net/browse/CY-2086?focusedCommentId=42198
+Codacy calculates both the number of issues and the percentage of issues in your repository when compared to an industry average, taking into account the severity of each issue:
 
-We compare the number of issues with the industry average. File size and severity of the issues are two relevant concepts here
+-   Each issue has a cost depending on its severity: error = 10, warning = 5, info = 1
 
--   Issue cost - depends on the severity of issue: Error = 10, Warning = 5, Info = 1
-    -   Per tool we attribute a severity per issue category - when we don’t have any attribution defined we attribute “Info” level.
--   Per 1000 lines of code, we expect 100 errors, with an cost of 10.
--->
+-   Codacy expects 100 issues with an average cost of 10 per 1000 lines of code (KLOC) in your repository, based on the following industry average mentioned in Steve McConnell's book [Code Complete](https://en.wikipedia.org/wiki/Code_Complete){: target="_blank"}:
+
+    > Industry Average: about <span class="skip-vale">15 – 50</span> errors per 1000 lines of delivered code.
+    
+    The author further states that this is usually representative of code that has some level of structured programming but probably includes a mix of coding techniques.
+
+Codacy displays issues on the following pages:
+
+-   [**Commits page**](../../repositories/commits.md) and [**Pull requests page**](../../repositories/pull-requests.md): display the variation in the number of issues introduced by the commit or pull request
+-   [**Files page**](../../repositories/files.md): displays the number of issues in each file
+-   [**Repository Dashboard**](../../repositories/repository-dashboard.md): displays the percentage of issues compared to the industry average and how the percentage of issues is evolving over time
+-   [**Organization Overview**](../../organizations/organization-overview.md): displays the repositories in intervals of issue percentages
 
 ## Complexity
 
