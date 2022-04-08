@@ -26,6 +26,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
   <thead>
     <tr>
       <td></td>
+      <th>Codacy role</th>
       <th>Join organization</th>
       <th>View private repository</th>
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
@@ -39,6 +40,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
   <tbody>
     <tr>
       <th>Outside Collaborator<sup>1</sup></th>
+      <td>-</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -50,6 +52,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
     </tr>
     <tr>
       <th>Repository Read</th>
+      <td rowspan="2">Repository Read</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -72,6 +75,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
     </tr>
     <tr>
       <th>Repository Write</th>
+      <td rowspan="2">Repository Write</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -94,6 +98,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
     </tr>
     <tr>
       <th>Repository Admin</th>
+      <td>Repository Admin</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -105,6 +110,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
     </tr>
     <tr>
       <th>Organization Owner</th>
+      <td>Organization Admin</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -128,6 +134,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
   <thead>
     <tr>
       <td></td>
+      <th>Codacy role</th>
       <th>Join organization</th>
       <th>View private repository</th>
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
@@ -141,6 +148,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
   <tbody>
     <tr>
       <th>External User<sup>1</sup></th>
+      <td>-</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -152,6 +160,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
     </tr>
     <tr>
       <th>Project Guest</th>
+      <td rowspan="2">Repository Read</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -174,6 +183,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
     </tr>
     <tr>
       <th>Project Developer</th>
+      <td>Repository Write</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -185,6 +195,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
     </tr>
     <tr>
       <th>Project Maintainer</th>
+      <td rowspan="2">Repository Admin</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -207,6 +218,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
     </tr>
     <tr>
       <th>Group Owner</th>
+      <td rowspan="2">Organization Admin</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -241,6 +253,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the Codac
   <thead>
     <tr>
       <td></td>
+      <th>Codacy role</th>
       <th>Join organization</th>
       <th>View private repository</th>
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
@@ -254,6 +267,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the Codac
   <tbody>
     <tr>
       <th>Read<sup>1</sup></th>
+      <td rowspan="2">Repository Read</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -276,6 +290,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the Codac
     </tr>
     <tr>
       <th>Admin</th>
+      <td>Organization Admin</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
