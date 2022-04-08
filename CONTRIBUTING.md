@@ -110,17 +110,17 @@ Create pull requests to make changes to the documentation:
 
 A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows/mkdocs.yml) automatically deploys the generated HTML to GitHub Pages on every push to `master` or to the release branches `release/v*`.
 
-**Never use mkdocs directly to deploy the documentation**, since that would overwrite the contents of the `gh-pages` branch and we would lose the multiple versions of the documentation.
+**Never use mkdocs directly to deploy the documentation**, since that would overwrite the contents of the `gh-pages` branch and remove the multiple versions of the documentation.
 
 ## Releasing a new Codacy Self-hosted documentation version
 
-We must release a new version of the documentation when there is a new **major or minor** version release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the chart and codacy-coverage-reporter submodule documentation on the Latest version of the documentation and creating a dedicated documentation version for the new release.
+It's necessary to release a new version of the documentation when there is a new **major or minor** version release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the chart and <span class="skip-vale">codacy-coverage-reporter</span> submodule documentation on the Latest version of the documentation and creating a dedicated documentation version for the new release.
 
 ### Updating the Latest documentation version
 
-First, update the Latest documentation version with the latest chart and codacy-coverage-reporter documentation:
+First, update the Latest documentation version with the latest chart and <span class="skip-vale">codacy-coverage-reporter</span> documentation:
 
-1.  Create a new branch and pull the latest changes from the `master` branch of the chart and codacy-coverage-reporter submodules.
+1.  Create a new branch and pull the latest changes from the `master` branch of the chart and <span class="skip-vale">codacy-coverage-reporter</span> submodules.
 
     ```bash
     git checkout -b feature/update-submodules
@@ -135,7 +135,7 @@ First, update the Latest documentation version with the latest chart and codacy-
 
 1.  Edit the file [`mkdocs.yml`](mkdocs.yml) and update the value of the variable `extra.version` to the new version of the chart.
 
-1.  Build the documentation and make sure that the changes for the new chart and codacy-coverage-reporter versions are correct.
+1.  Build the documentation and make sure that the changes for the new chart and <span class="skip-vale">codacy-coverage-reporter</span> versions are correct.
 
 1.  Open a pull request with the changes and merge the branch into `master`.
 
@@ -163,7 +163,7 @@ After updating the Latest documentation version, you're ready to create a new Co
     cd ../..
     ```
 
-1.  Pull the correct codacy-coverage-reporter tag for this Codacy Self-hosted version.
+1.  Pull the correct <span class="skip-vale">codacy-coverage-reporter</span> tag for this Codacy Self-hosted version.
 
     ```bash
     cd submodules/codacy-coverage-reporter
@@ -173,13 +173,13 @@ After updating the Latest documentation version, you're ready to create a new Co
 
 1.  Edit the file `mkdocs.yml` and make sure that the value of the variable `extra.version` is set to the new version of the chart.
 
-1.  Delete the release notes from the release branch, since we only publish the release notes on the Latest or main version of the documentation:
+1.  Delete the release notes from the release branch, since it's only necessary to publish the release notes on the Latest or main version of the documentation:
 
     -   Delete the folder `docs/release-notes`
 
     -   Delete all lines on `mkdocs.yml` that reference the removed files
 
-1.  Build the documentation and make sure that the changes for the new chart and codacy-coverage-reporter versions are correct.
+1.  Build the documentation and make sure that the changes for the new chart and <span class="skip-vale">codacy-coverage-reporter</span> versions are correct.
 
 1.  Push the new branch and check that the GitHub workflow deploys the new documentation version under `https://docs.codacy.com/v<MAJOR>.<MINOR>`.
 

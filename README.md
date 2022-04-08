@@ -2,11 +2,11 @@
 
 [![MkDocs](https://github.com/codacy/docs/actions/workflows/mkdocs.yml/badge.svg)](https://github.com/codacy/docs/actions/workflows/mkdocs.yml) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5e8bce49e0df4be8a880f2df02759d88)](https://app.codacy.com/gh/codacy/docs/dashboard?utm_source=github.com&utm_medium=referral&utm_content=codacy/docs&utm_campaign=Badge_Grade)
 
-<https://docs.codacy.com>
+[<span class="skip-vale">https://docs.codacy.com</span>](https://docs.codacy.com)
 
 ## Contributing to the documentation
 
-Contributions to the documentation are very welcome!
+Contributions to the documentation are <span class="skip-vale">very</span> welcome!
 
 See [CONTRIBUTING.md](CONTRIBUTING.md) to:
 
@@ -16,7 +16,7 @@ See [CONTRIBUTING.md](CONTRIBUTING.md) to:
 
 By participating in this project you are expected to adhere to the [CODE_OF_CONDUCT.md](CODE_OF_CONDUCT.md).
 
-## What is Codacy
+## <span class="skip-vale">What is</span> Codacy
 
 [Codacy](https://www.codacy.com/) is an automated code review tool that monitors your technical debt, helps you improve your code quality, teaches best practices to your developers, and helps you save time in code reviews.
 
