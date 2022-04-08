@@ -14,6 +14,9 @@ The following sections describe how Codacy calculates each supported metric and 
 -   [Duplication](#duplication)
 -   [Code coverage](#code-coverage)
 
+!!! note
+    Depending on certain characteristics of your repository, such as the number of source code files and their number, Codacy may [apply limits to the code analysis](does-codacy-place-limits-on-the-code-analysis.md) that impact the calculation of the supported metrics.
+
 ## Grade
 
 Codacy assigns an overall grade to your repository branches and to individual files to help you understand the code quality of your repository. Grades depend on a score that takes into account a weighted average of all supported code quality metrics, and range from **A** (highest grade) to **F** (lowest grade):
@@ -114,3 +117,7 @@ Once the coverage setup is complete, Codacy displays coverage data on the follow
 -   [**Repository Dashboard**](../../repositories/repository-dashboard.md): displays the average coverage value for the files in the repository and how coverage is evolving over time
 -   [**Organization Overview**](../../organizations/organization-overview.md): displays the repositories in intervals of coverage percentages
 -   [**Repositories list page**](../../organizations/managing-repositories.md): displays the code coverage in each repository in your organization
+
+## See also
+
+-   [Does Codacy place limits on the code analysis?](does-codacy-place-limits-on-the-code-analysis.md)
