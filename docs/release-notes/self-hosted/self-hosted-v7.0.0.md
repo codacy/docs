@@ -27,7 +27,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v7.0.0:
 
 ## Breaking changes
 
-**If you're using GitLab** please review the roles of your team on GitLab [considering the new permissions for project Maintainers](http://docs.codacy.com/v7.0/organizations/roles-and-permissions-for-synced-organizations/).
+**If you're using GitLab** please review the roles of your team on GitLab [considering the new permissions for project Maintainers](http://docs.codacy.com/v7.0/organizations/roles-and-permissions-for-synced-organizations/#permissions-for-gitlab).
 
 GitLab defines Maintainers as [super-developers](https://about.gitlab.com/handbook/product/gitlab-the-product/#permissions-in-gitlab){: target="_blank"}:
 
