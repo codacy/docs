@@ -2,7 +2,8 @@ name: MkDocs
 
 on: push
 
-concurrency: ${{ github.workflow }}
+# Set concurrency group to either "dev" or "prod"
+concurrency: ${{ fromJSON('{"false":"dev","true":"prod"}')[github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/heads/release/v')] }}
 
 jobs:
   mkdocs:
@@ -42,9 +43,18 @@ jobs:
 
       - name: Convert branch name to lowercase
         id: string
+        if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
         uses: ASzc/change-string-case-action@v2
         with:
           string: ${{ steps.branches.outputs.sanitized-branch-name }}
+
+      - name: Truncate branch name
+        id: truncatedString
+        if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
+        uses: 2428392/gh-truncate-string-action@v1.0.0
+        with:
+          stringToTruncate: ${{ steps.string.outputs.lowercase }}
+          maxLength: 35
 
       - name: Deploy docs (branch preview)
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
@@ -58,7 +68,7 @@ jobs:
           enable-commit-comment: false
           enable-commit-status: false
           overwrites-pull-request-comment: false
-          alias: ${{ steps.string.outputs.lowercase }}
+          alias: ${{ steps.truncatedString.outputs.string }}
           github-deployment-environment: Netlify
           github-deployment-description: Branch deployment preview
         env:
