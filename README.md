@@ -2,9 +2,7 @@
 
 [![MkDocs](https://github.com/codacy/docs/actions/workflows/mkdocs.yml/badge.svg)](https://github.com/codacy/docs/actions/workflows/mkdocs.yml) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/5e8bce49e0df4be8a880f2df02759d88)](https://app.codacy.com/gh/codacy/docs/dashboard?utm_source=github.com&utm_medium=referral&utm_content=codacy/docs&utm_campaign=Badge_Grade)
 
-<span class="skip-vale">
-<https://docs.codacy.com>
-</span>
+[<span class="skip-vale">https://docs.codacy.com</span>](https://docs.codacy.com)
 
 ## Contributing to the documentation
 
