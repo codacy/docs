@@ -37,7 +37,7 @@ Codacy calculates both the number of issues and the percentage of issues in your
 -   Codacy expects 100 issues with an average cost of 10 per 1000 lines of code (KLOC) in your repository, based on the following industry average mentioned in Steve McConnell's book [Code Complete](https://en.wikipedia.org/wiki/Code_Complete){: target="_blank"}:
 
     > Industry Average: about <span class="skip-vale">15 – 50</span> errors per 1000 lines of delivered code.
-    
+
     The author further states that this is usually representative of code that has some level of structured programming but probably includes a mix of coding techniques.
 
 Codacy displays issues on the following pages:
