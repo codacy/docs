@@ -121,3 +121,4 @@ Once the coverage setup is complete, Codacy displays coverage data on the follow
 ## See also
 
 -   [Does Codacy place limits on the code analysis?](does-codacy-place-limits-on-the-code-analysis.md)
+-   [Diff coverage: <span class="skip-vale">we have</span> a new metric and quality gate rule for PRs](https://blog.codacy.com/diff-coverage/)
