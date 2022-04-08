@@ -96,6 +96,8 @@ Codacy displays duplication on the following pages:
 
 ## Code coverage
 
+Code coverage describes the degree to which the source code of a program is tested. There are several types of coverage, but Codacy uses line coverage, which measures the percentage of coverable lines of code that are covered by automated tests.
+
 You must set up your CI/CD pipeline to [upload code coverage data to Codacy](../../coverage-reporter/index.md). Because of this, the tool that you use to generate the coverage reports is responsible for creating the data that Codacy then uses to calculate code coverage.
 
 Codacy calculates code coverage as follows:
