@@ -51,8 +51,8 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Repository Read</th>
-      <td rowspan="2">Repository Read</td>
+      <th>Repository Read<br/><br/>Repository Triage</th>
+      <td>Repository Read</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -63,30 +63,8 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Repository Triage</th>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>Repository Write</th>
-      <td rowspan="2">Repository Write</td>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td class="yes">Yes</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>Repository Maintain</th>
+      <th>Repository Write<br/><br/>Repository Maintain</th>
+      <td>Repository Write</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -159,19 +137,8 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Project Guest</th>
-      <td rowspan="2">Repository Read</td>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>Project Reporter</th>
+      <th>Project Guest<br/><br/>Project Reporter</th>
+      <td>Repository Read</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -194,8 +161,8 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Project Maintainer</th>
-      <td rowspan="2">Repository Admin</td>
+      <th>Project Maintainer<br/><br/>Project Owner</th>
+      <td>Repository Admin</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -206,30 +173,8 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Project Owner</th>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>Group Owner</th>
-      <td rowspan="2">Organization Admin</td>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <th>Administrator</th>
+      <th>Group Owner<br/><br/>Administrator</th>
+      <td>Organization Admin</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -266,19 +211,8 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the Codac
   </thead>
   <tbody>
     <tr>
-      <th>Read<sup>1</sup></th>
-      <td rowspan="2">Repository Read</td>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>Write<sup>1</sup></th>
+      <th>Read<br/><br/>Write<sup>1</sup></th>
+      <td>Repository Read</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
