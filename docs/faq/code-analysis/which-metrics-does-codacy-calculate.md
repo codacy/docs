@@ -9,44 +9,24 @@ description: Codacy scans your code for issues and calculates the metrics code c
 
 ## Grade
 
-<!--TODO
-    Improve this information to make it more useful and compact, and move it to a single section at the end of the page "Repository Dashboard". -->
+Codacy assigns an overall grade to your repository branches and to individual files to help you understand the code quality of your repository. Grades depend on a score that takes into account a weighted average of all supported code quality metrics, and range from **A** (highest grade) to **F** (lowest grade):
 
-<!--
-### What are the different grades and how are they calculated?
+|Grade                          |Score     |
+|-------------------------------|----------|
+|![Grade A](images/grade_a.png) |91 to 100 |
+|![Grade B](images/grade_b.png) |71 to 90  |
+|![Grade C](images/grade_c.png) |51 to 70  |
+|![Grade D](images/grade_d.png) |31 to 50  |
+|![Grade E](images/grade_e.png) |11 to 30  |
+|![Grade F](images/grade_f.png) |0 to 10   |
 
-#### 1. Overall Grade
+Codacy displays grades on the following pages:
 
-Codacy gives an overall grade to help you better understand the quality of your repository.
-Grades range from **A** to **F**, **A** being the highest grade.
-
-Note the grading is performed on a branch level, to give a better understanding of the code quality on a branch basis.
-
-#### 2. Category Grades
-
-Issue classification is as follows:
-
--   Code Style
--   Compatibility
--   Error Prone
--   Performance
--   Security
--   Unused Code
-
-Every issue impacts the grade of its category. Category grading ranges from 0% - 100%, 100% being the highest grade.
-
-#### 3. File Grades
-
-File grades range from **A** to **F**, **A** being the highest grade.
-
-Grading every file occurs according to the weighted average of the following categories:
-
--   issues
--   clones
--   complexity
--   coverage (optional)
-
--->
+-   [**Files page**](../../repositories/files.md): displays the grade for each file in your repository
+-   [**Branches page**](../../repositories-configure/managing-branches.md): displays the grade for each analyzed branch in your repository
+-   [**Repository Dashboard**](../../repositories/repository-dashboard.md): displays the overall grade of your repository
+-   [**Organization Overview**](../../organizations/organization-overview.md): displays which repositories have each grade
+-   [**Repositories list page**](../../organizations/managing-repositories.md): displays the grade of each repository in your organization
 
 ## Issues
 
@@ -66,6 +46,7 @@ Codacy displays issues on the following pages:
 -   [**Files page**](../../repositories/files.md): displays the number of issues in each file
 -   [**Repository Dashboard**](../../repositories/repository-dashboard.md): displays the percentage of issues compared to the industry average and how the percentage of issues is evolving over time
 -   [**Organization Overview**](../../organizations/organization-overview.md): displays the repositories in intervals of issue percentages
+-   [**Repositories list page**](../../organizations/managing-repositories.md): displays the issue percentage in each repository in your organization
 
 ## Complexity
 
@@ -83,6 +64,7 @@ Codacy displays complexity on the following pages:
 -   [**Files page**](../../repositories/files.md): displays the complexity value of each file
 -   [**Repository Dashboard**](../../repositories/repository-dashboard.md): displays the percentage of complex files in your repository and how the percentage of complex files is evolving over time
 -   [**Organization Overview**](../../organizations/organization-overview.md): displays the repositories in intervals of complex file percentages
+-   [**Repositories list page**](../../organizations/managing-repositories.md): displays the percentage of complex files in each repository in your organization
 
 ## Duplication
 
@@ -103,6 +85,7 @@ Codacy displays duplication on the following pages:
 -   [**Files page**](../../repositories/files.md): displays the duplication value of each file
 -   [**Repository Dashboard**](../../repositories/repository-dashboard.md): displays the percentage of duplicated files in your repository and how the percentage of duplicated files is evolving over time
 -   [**Organization Overview**](../../organizations/organization-overview.md): displays the repositories in intervals of duplicated file percentages
+-   [**Repositories list page**](../../organizations/managing-repositories.md): displays the percentage of duplicated files in each repository in your organization
 
 ## Code coverage
 
@@ -121,3 +104,4 @@ Once the coverage setup is complete, Codacy displays coverage data on the follow
 -   [**Files page**](../../repositories/files.md): displays the coverage percentage of each file
 -   [**Repository Dashboard**](../../repositories/repository-dashboard.md): displays the average coverage value for the files in the repository and how coverage is evolving over time
 -   [**Organization Overview**](../../organizations/organization-overview.md): displays the repositories in intervals of coverage percentages
+-   [**Repositories list page**](../../organizations/managing-repositories.md): displays the code coverage in each repository in your organization
