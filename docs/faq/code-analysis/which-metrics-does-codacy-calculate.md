@@ -4,8 +4,15 @@ description: Codacy scans your code for issues and calculates the metrics code c
 
 # Which metrics does Codacy calculate?
 
-<!--TODO
-    Include link to https://docs.codacy.com/getting-started/supported-languages-and-tools/ since Codacy doesn't calculate all metrics for all languages-->
+Codacy performs static code analysis and calculates code duplication, code complexity, and code coverage metrics for [most supported programming languages](../../getting-started/supported-languages-and-tools.md).
+
+The following sections describe how Codacy calculates each supported metric and where you can see each metric on the Codacy UI:
+
+-   [Grade](#grade)
+-   [Issues](#issues)
+-   [Complexity](#complexity)
+-   [Duplication](#duplication)
+-   [Code coverage](#code-coverage)
 
 ## Grade
 
