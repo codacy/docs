@@ -43,7 +43,7 @@ Codacy displays grades on the following pages:
 
 Codacy calculates both the number of issues and the percentage of issues in your repository when compared to an industry average, taking into account the severity of each issue:
 
--   Each issue has a cost depending on its severity: error = 10, warning = 5, info = 1
+-   Each issue has a cost depending on its severity: Critical = 10, Medium = 5, Minor = 1
 
 -   Codacy expects 100 issues with an average cost of 10 per 1000 lines of code (KLOC) in your repository, based on the following industry average mentioned in Steve McConnell's book [Code Complete](https://en.wikipedia.org/wiki/Code_Complete){: target="_blank"}:
 
