@@ -19,16 +19,17 @@ The following sections describe how Codacy calculates each supported metric and 
 
 ## Grade
 
-Codacy assigns an overall grade to your repository branches and to individual files to help you understand the code quality of your repository. Grades depend on a score that takes into account a weighted average of all supported code quality metrics, and range from **A** (highest grade) to **F** (lowest grade):
+Codacy assigns an overall grade to your repository branches and to individual files to help you assess the code quality of your repository. Grades depend on a score that takes into account a weighted average of all supported code quality metrics, and range from **A** (highest grade) to **F** (lowest grade):
 
-|Grade                          |Score     |
-|-------------------------------|----------|
-|![Grade A](images/grade_a.png) |91 to 100 |
-|![Grade B](images/grade_b.png) |71 to 90  |
-|![Grade C](images/grade_c.png) |51 to 70  |
-|![Grade D](images/grade_d.png) |31 to 50  |
-|![Grade E](images/grade_e.png) |11 to 30  |
-|![Grade F](images/grade_f.png) |0 to 10   |
+|Grade                                                 |Score     |
+|------------------------------------------------------|----------|
+|![Grade A](images/grade_a.png)                        |91 to 100 |
+|![Grade B](images/grade_b.png)                        |71 to 90  |
+|![Grade C](images/grade_c.png)                        |51 to 70  |
+|![Grade D](images/grade_d.png)                        |31 to 50  |
+|![Grade E](images/grade_e.png)                        |11 to 30  |
+|![Grade F](images/grade_f.png)                        |0 to 10   |
+|![Grade is unavailable](images/grade_unavailable.png) |Unavailable (try [reanalyzing your repository](../repositories/how-do-i-reanalyze-my-repository.md)) |
 
 Codacy displays grades on the following pages:
 
