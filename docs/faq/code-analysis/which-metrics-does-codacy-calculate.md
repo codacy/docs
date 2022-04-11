@@ -15,7 +15,7 @@ The following sections describe how Codacy calculates each supported metric and 
 -   [Code coverage](#code-coverage)
 
 !!! note
-    Depending on certain characteristics of your repository, such as the number of source code files and their number, Codacy may [apply limits to the code analysis](does-codacy-place-limits-on-the-code-analysis.md) that impact the calculation of the supported metrics.
+    Depending on certain characteristics of your repository, such as the number of source code files and their size, Codacy may [apply limits to the code analysis](does-codacy-place-limits-on-the-code-analysis.md) that impact the calculation of the supported metrics.
 
 ## Grade
 
