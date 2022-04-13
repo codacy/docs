@@ -36,7 +36,7 @@ This area displays the quality gate status and an overview of the code quality m
 
     If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to standards**.
 
--   The changes to the following code quality metrics introduced by the {{ page.meta.page_name }} are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
+-   The changes to the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) introduced by the {{ page.meta.page_name }} are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
 
     -   **Issues:** Number of new or fixed issues
     -   **Duplication:** Number of new or fixed duplicated code blocks
@@ -111,3 +111,7 @@ The **Diff** tab displays the line differences in each file that was changed in 
 
 ![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)
 <!--tabs-end-->
+
+## See also
+
+-   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
