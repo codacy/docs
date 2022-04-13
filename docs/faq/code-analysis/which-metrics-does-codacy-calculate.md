@@ -34,25 +34,29 @@ Codacy assigns an overall grade to your repository branches and to individual fi
   </tr>
 </table>
 
-Codacy displays grades on the following pages:
+Codacy displays grades on the following places:
 
--   [**Files page**](../../repositories/files.md): displays the grade for each file in your repository
--   [**Branches page**](../../repositories-configure/managing-branches.md): displays the grade for each analyzed branch in your repository
--   [**Repository Dashboard**](../../repositories/repository-dashboard.md), [**Codacy badge**](../../getting-started/adding-a-codacy-badge.md), and [**email notifications**](../../account/emails.md#managing-your-email-notifications): display the overall grade of your repository
--   [**Organization Overview**](../../organizations/organization-overview.md): displays which repositories have each grade
--   [**Repositories list page**](../../organizations/managing-repositories.md): displays the grade of each repository in your organization
+|Place|Metric|
+|-----|------|
+|[Files page](../../repositories/files.md)|Grade for each file in your repository|
+|[Repository Dashboard](../../repositories/repository-dashboard.md)<br/>[Branches page](../../repositories-configure/managing-branches.md)<br/>[Codacy badge](../../getting-started/adding-a-codacy-badge.md)|Grade of each analyzed branch in your repository|
+|[Email notifications](../../account/emails.md#managing-your-email-notifications)|Grade of your repository|
+|[Organization Overview](../../organizations/organization-overview.md)|Which repositories have each grade|
+|[Repositories list](../../organizations/managing-repositories.md)|Grade of each repository in your organization|
 
 ## Issues
 
 Codacy calculates the number of issues in each static code analysis category. Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the **percentage of issues relative to an expected baseline** of 100 issues with an average cost of 10 per 1000 lines of code, where the cost of each issue depends on its severity: Critical = 10, Medium = 5, Minor = 1.
 
-Codacy displays issues on the following pages:
+Codacy displays issues on the following places:
 
--   [**Commits page**](../../repositories/commits.md), [**Pull requests page**](../../repositories/pull-requests.md), and [**email notifications**](../../account/emails.md#managing-your-email-notifications): display the variation in the number of issues introduced by the commit or pull request
--   [**Files page**](../../repositories/files.md): displays the number of issues in each file
--   [**Repository Dashboard**](../../repositories/repository-dashboard.md): displays the percentage of issues compared to the industry average and how the percentage of issues is evolving over time
--   [**Organization Overview**](../../organizations/organization-overview.md): displays the repositories in intervals of issue percentages
--   [**Repositories list page**](../../organizations/managing-repositories.md): displays the issue percentage in each repository in your organization
+|Place|Metric|
+|-----|------|
+|[Commits page](../../repositories/commits.md)<br/>[Pull requests page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of new and fixed issues introduced by the commit or pull request|
+|[Files page](../../repositories/files.md)|Number of issues in each file|
+|[Repository Dashboard](../../repositories/repository-dashboard.md)|Issue percentage and how the metric is evolving over time|
+|[Organization Overview](../../organizations/organization-overview.md)|Repositories in intervals of issue percentages|
+|[Repositories list page](../../organizations/managing-repositories.md)|Issue percentage in each repository in your organization|
 
 ## Complexity
 
@@ -64,13 +68,15 @@ Codacy calculates complexity as follows:
 -   A file is considered complex if its complexity value is higher than the threshold [**File is complex when over**](../../repositories-configure/adjusting-quality-settings.md#goals)
 -   The complexity value of a commit or pull request is the sum of the complexity of the files that were changed in the commit or pull request and that have complexity higher than 4
 
-Codacy displays complexity on the following pages:
+Codacy displays complexity on the following places:
 
--   [**Commits page**](../../repositories/commits.md), [**Pull requests page**](../../repositories/pull-requests.md), and [**email notifications**](../../account/emails.md#managing-your-email-notifications): display the variation of the complexity value introduced by the commit or pull request
--   [**Files page**](../../repositories/files.md): displays the complexity value of each file
--   [**Repository Dashboard**](../../repositories/repository-dashboard.md): displays the percentage of complex files in your repository and how the percentage of complex files is evolving over time
--   [**Organization Overview**](../../organizations/organization-overview.md): displays the repositories in intervals of complex file percentages
--   [**Repositories list page**](../../organizations/managing-repositories.md): displays the percentage of complex files in each repository in your organization
+|Place|Metric|
+|-----|------|
+|[Commits page](../../repositories/commits.md)<br/>[Pull requests page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Variation of the complexity value introduced by the commit or pull request|
+|[Files page](../../repositories/files.md)|Complexity value of each file|
+|[Repository Dashboard](../../repositories/repository-dashboard.md)|Percentage of complex files in your repository and how the metric is evolving over time|
+|[Organization Overview](../../organizations/organization-overview.md)|Repositories in intervals of complex file percentages|
+|[Repositories list page](../../organizations/managing-repositories.md)|Percentage of complex files in each repository in your organization|
 
 ## Duplication
 
@@ -85,13 +91,15 @@ Codacy calculates duplication as follows:
 !!! note
     You can [customize the rules for identifying duplicated blocks of code](../../repositories-configure/codacy-configuration-file.md#pmd-cpd-duplication) when using PMD CPD to analyze the source code of your repository.
 
-Codacy displays duplication on the following pages:
+Codacy displays duplication on the following places:
 
--   [**Commits page**](../../repositories/commits.md), [**Pull requests page**](../../repositories/pull-requests.md), and [**email notifications**](../../account/emails.md#managing-your-email-notifications): display the number of clones and the actual sequences of duplicated code introduced or fixed by the commit or pull request
--   [**Files page**](../../repositories/files.md): displays the duplication value of each file
--   [**Repository Dashboard**](../../repositories/repository-dashboard.md): displays the percentage of duplicated files in your repository and how the percentage of duplicated files is evolving over time
--   [**Organization Overview**](../../organizations/organization-overview.md): displays the repositories in intervals of duplicated file percentages
--   [**Repositories list page**](../../organizations/managing-repositories.md): displays the percentage of duplicated files in each repository in your organization
+|Place|Metric|
+|-----|------|
+|[Commits page](../../repositories/commits.md)<br/>[Pull requests page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of clones added or fixed by a commit or pull request|
+|[Files page](../../repositories/files.md)|Duplication value of each file|
+|[Repository Dashboard](../../repositories/repository-dashboard.md)|Percentage of duplicated files in your repository and how the metric is evolving over time|
+|[Organization Overview](../../organizations/organization-overview.md)|Repositories in intervals of duplicated file percentages|
+|[Repositories list page](../../organizations/managing-repositories.md)|Percentage of duplicated files in each repository in your organization|
 
 ## Code coverage
 
@@ -106,14 +114,17 @@ Codacy calculates code coverage as follows:
 -   The coverage variation value of a commit or pull request is the number of percentage points that the coverage value for the file increased or dropped in the commit or pull request
 -   The diff coverage of a pull request is the percentage of coverable lines that were added or modified in the pull request that are covered by tests
 
-Once the coverage setup is complete, Codacy displays coverage data on the following pages:
+Once the coverage setup is complete, Codacy displays coverage data on the following places:
 
--   [**Commits page**](../../repositories/commits.md), [**Pull requests page**](../../repositories/pull-requests.md) and [**email notifications**](../../account/emails.md#managing-your-email-notifications): display the variation in percentage points of the coverage value for all files in the corresponding branch, and pull requests also display the diff coverage
--   [**Files page**](../../repositories/files.md): displays the coverage percentage of each file
--   [**Repository Dashboard**](../../repositories/repository-dashboard.md): displays the average coverage value for the files in the repository and how coverage is evolving over time
--   [**Codacy badge**](../../getting-started/adding-a-codacy-badge.md): displays the average coverage value for the files in your repository
--   [**Organization Overview**](../../organizations/organization-overview.md): displays the repositories in intervals of coverage percentages
--   [**Repositories list page**](../../organizations/managing-repositories.md): displays the code coverage in each repository in your organization
+|Place|Metric|
+|-----|------|
+|[Commits page](../../repositories/commits.md)<br/>[Pull requests page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Variation in percentage points of the coverage value for all files in the commit or pull request|
+|[Pull requests page](../../repositories/pull-requests.md)|Diff coverage for the changes included in the pull request|
+|[Files page](../../repositories/files.md)|Coverage percentage of each file|
+|[Repository Dashboard](../../repositories/repository-dashboard.md)|Average coverage value for the files in the repository and how the metric is evolving over time|
+|[Codacy badge](../../getting-started/adding-a-codacy-badge.md)|Average coverage value for the files in your repository|
+|[Organization Overview](../../organizations/organization-overview.md)|Repositories in intervals of coverage percentages|
+|[Repositories list page](../../organizations/managing-repositories.md)|Coverage of each repository in your organization|
 
 ## See also
 
