@@ -34,10 +34,10 @@ The table below lists all languages and frameworks that Codacy supports and the 
   <thead>
     <tr>
       <th>Language or framework</th>
-      <th>Static analysis</th>
+      <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Static analysis</a></th>
       <th><a style="color: white;" href="#suggested-fixes">Suggested fixes</a></th>
-      <th>Duplication</th>
-      <th>Complexity</th>
+      <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">Duplication</a></th>
+      <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">Complexity</a></th>
     </tr>
   </thead>
   <tbody>
@@ -391,3 +391,4 @@ The table below lists all languages and frameworks that Codacy supports and the 
 -   [Codacy quickstart (5 min)](codacy-quickstart.md)
 -   [Client-side tools](../related-tools/local-analysis/client-side-tools.md)
 -   [Codacy plugin tools](../related-tools/codacy-plugin-tools.md)
+-   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
