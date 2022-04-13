@@ -1,6 +1,10 @@
 name: Vale
 
-on: pull_request
+on:
+  push:
+    branches-ignore:
+      - "master"
+      - "release/v*"
 
 jobs:
   vale:
