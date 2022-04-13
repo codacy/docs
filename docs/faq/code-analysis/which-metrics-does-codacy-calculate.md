@@ -19,16 +19,20 @@ The following sections describe how Codacy calculates each supported metric and 
 
 ## Grade
 
-Codacy assigns an overall grade to your repository branches and to individual files to help you assess the code quality of your repository. Grades depend on a score that takes into account a weighted average of all supported code quality metrics, and range from **A** (highest grade) to **F** (lowest grade):
+Codacy assigns an overall grade to your repository branches and to individual files to help you assess the code quality of your repository. Grades reflect a weighted average of the available code quality metrics (issues, complexity, duplication, and coverage), and range from **A** to **F**:
 
-|Grade                                                 |Score     |
-|------------------------------------------------------|----------|
-|![Grade A](images/grade_a.png)                        |91 to 100 |
-|![Grade B](images/grade_b.png)                        |71 to 90  |
-|![Grade C](images/grade_c.png)                        |51 to 70  |
-|![Grade D](images/grade_d.png)                        |31 to 50  |
-|![Grade E](images/grade_e.png)                        |11 to 30  |
-|![Grade F](images/grade_f.png)                        |0 to 10   |
+<table>
+  <tr>
+    <td>Highest grade</td>
+    <td><img src="../images/grade_a.png" alt="Grade A"></td>
+    <td><img src="../images/grade_b.png" alt="Grade B"></td>
+    <td><img src="../images/grade_c.png" alt="Grade C"></td>
+    <td><img src="../images/grade_d.png" alt="Grade D"></td>
+    <td><img src="../images/grade_e.png" alt="Grade E"></td>
+    <td><img src="../images/grade_f.png" alt="Grade F"></td>
+    <td>Lowest grade</td>
+  </tr>
+</table>
 
 Codacy displays grades on the following pages:
 
