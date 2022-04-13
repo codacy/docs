@@ -29,7 +29,6 @@ Codacy assigns an overall grade to your repository branches and to individual fi
 |![Grade D](images/grade_d.png)                        |31 to 50  |
 |![Grade E](images/grade_e.png)                        |11 to 30  |
 |![Grade F](images/grade_f.png)                        |0 to 10   |
-|![Grade is unavailable](images/grade_unavailable.png) |Unavailable (try [reanalyzing your repository](../repositories/how-do-i-reanalyze-my-repository.md)) |
 
 Codacy displays grades on the following pages:
 
