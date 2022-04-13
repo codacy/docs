@@ -2,7 +2,7 @@
 
 The **Files page** displays the current code quality information for each analyzed file in your [active repository branches](../repositories-configure/managing-branches.md).
 
-Codacy displays the following information for each file, if available:
+Codacy displays the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) for each file, if available:
 
 -   Grade
 -   Number of issues
@@ -70,3 +70,7 @@ The Files page only displays files in your repository that were analyzed by Coda
 -   **The file might be too big**
 
     Codacy doesn't analyze or display files that are over a certain size. [Read more details](../faq/troubleshooting/why-is-my-file-over-150-kb-missing.md) for information on how to overcome this limit.
+
+## See also
+
+-   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
