@@ -186,11 +186,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.codacy.com/faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository/</loc>
-         <lastmod>2022-04-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.codacy.com/faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed/</loc>
          <lastmod>2022-04-13</lastmod>
          <changefreq>daily</changefreq>
@@ -202,6 +197,11 @@
     </url>
     <url>
          <loc>https://docs.codacy.com/faq/code-analysis/how-to-skip-an-analysis/</loc>
+         <lastmod>2022-04-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.codacy.com/faq/code-analysis/which-metrics-does-codacy-calculate/</loc>
          <lastmod>2022-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -282,11 +282,6 @@
     </url>
     <url>
          <loc>https://docs.codacy.com/faq/repositories/i-renamed-my-repository-on-the-git-provider/</loc>
-         <lastmod>2022-04-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.codacy.com/faq/repositories/what-are-the-different-grades-and-how-are-they-calculated/</loc>
          <lastmod>2022-04-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
