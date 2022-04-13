@@ -3,7 +3,7 @@
 Reanalyze the last commit in your branch or pull request:
 
 -   To update the Codacy analysis results taking into account the most recent configurations for your repository without waiting for a new commit to trigger the analysis
--   If the grade or [Codacy badge](../../getting-started/adding-a-codacy-badge.md) for your branch is greyed out and displays an exclamation mark:
+-   If the grade or [Codacy badge](../../getting-started/adding-a-codacy-badge.md) for your branch is greyed out and displays an exclamation mark, which means that the analysis information isn't available for the last commit of the branch:
 
     ![Greyed-out Codacy badge and repository grade](images/codacy-badge-grade-gray.png)
 
