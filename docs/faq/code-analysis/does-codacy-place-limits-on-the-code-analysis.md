@@ -60,3 +60,7 @@ Codacy limits the number of comments for reporting found issues on pull requests
 </table>
 
 If you believe that you may have hit any of these limits and need help to overcome them, please contact us at <mailto:support@codacy.com>.
+
+## See also
+
+-   [Which metrics does Codacy calculate?](which-metrics-does-codacy-calculate.md)
