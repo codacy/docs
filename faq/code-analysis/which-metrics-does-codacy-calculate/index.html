@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy scans your code for issues and calculates code complexity, duplication, and coverage metrics. Besides this, Codacy also calculates a grade for your repository and files based on all calculated code quality metrics.">
       
       
-        <meta http-equiv="last-modified" content="2022-04-13 16:46:43">  
+        <meta http-equiv="last-modified" content="2022-04-14 10:19:35">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/which-metrics-does-codacy-calculate/">
@@ -3433,7 +3433,7 @@
 </tbody>
 </table>
 <h2 id="complexity">Complexity<a class="headerlink" href="#complexity" title="Permanent link">#</a></h2>
-<p>Codacy uses <a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity" target="_blank">cyclomatic complexity</a> to identify files with complex methods in your repository. Cyclomatic complexity is the number of linearly independent paths through the source code of a method: the more control flow statements used in a method, the higher the value. Methods with a high cyclomatic complexity are more difficult to test and more likely to have defects.</p>
+<p>Codacy uses <a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity" target="_blank">cyclomatic complexity</a> to identify files with complex methods in your repository. Cyclomatic complexity is the number of linearly independent paths through the source code of a method: the more control flow statements used in a method, the higher the value. Methods with a high cyclomatic complexity are more difficult to test and more likely to have defects. <a href="https://blog.codacy.com/an-in-depth-explanation-of-code-complexity/">Learn more about code complexity</a> on Codacy's blog.</p>
 <p>Codacy calculates complexity as follows:</p>
 <ul>
 <li>The complexity value for each file is the highest complexity of the methods in the file</li>
@@ -3515,7 +3515,7 @@
 </tbody>
 </table>
 <h2 id="code-coverage">Code coverage<a class="headerlink" href="#code-coverage" title="Permanent link">#</a></h2>
-<p>Code coverage describes the degree to which the source code of a program is tested. There are several types of coverage, but Codacy uses line coverage, which measures the percentage of coverable lines of code that are covered by automated tests. You can read more about the <a href="https://blog.codacy.com/a-guide-to-code-coverage-part-1-code-coverage-explained/">basics of code coverage</a> on Codacy's blog.</p>
+<p>Code coverage describes the degree to which the source code of a program is tested. There are several types of coverage, but Codacy uses line coverage, which measures the percentage of coverable lines of code that are covered by automated tests. <a href="https://blog.codacy.com/a-guide-to-code-coverage-part-1-code-coverage-explained/">Learn more about code coverage</a> on Codacy's blog.</p>
 <p>You must set up your CI/CD pipeline to <a href="../../../coverage-reporter/">upload code coverage data to Codacy</a>. Because of this, the tool that you use to generate the coverage reports is responsible for creating the data that Codacy then uses to calculate code coverage.</p>
 <p>Codacy calculates code coverage as follows:</p>
 <ul>
@@ -3724,7 +3724,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 13, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2022</span>
     
   </small>
 </div>
