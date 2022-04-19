@@ -19,7 +19,7 @@ The following sections describe how Codacy calculates each supported metric and 
 
 ## Grade
 
-Codacy assigns an overall grade to your repository branches and to individual files to help you assess the code quality of your repository. Grades reflect a weighted average of the available code quality metrics (issues, complexity, duplication, and coverage), and range from **A** to **F**:
+Codacy assigns an overall grade to your repository branches and to individual files to help you assess the code quality of your repository. Grades represent a weighted average of the available code quality metrics (issues, complexity, duplication, and coverage), and range from **A** to **F**:
 
 <table>
   <tr>
