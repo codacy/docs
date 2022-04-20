@@ -19,7 +19,7 @@ The following sections describe how Codacy calculates each supported metric and 
 
 ## Grade
 
-Codacy assigns an overall grade to your repository branches and to individual files to help you assess the code quality of your repository. Grades reflect a weighted average of the available code quality metrics (issues, complexity, duplication, and coverage), and range from **A** to **F**:
+Codacy assigns an overall grade to your repository branches and to individual files to help you assess the code quality of your repository. Grades represent a weighted average of the available code quality metrics (issues, complexity, duplication, and coverage), and range from **A** to **F**:
 
 <table>
   <tr>
@@ -64,9 +64,9 @@ Codacy uses [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_com
 
 Codacy calculates complexity as follows:
 
--   The complexity value for each file is the highest complexity of the methods in the file
--   A file is considered complex if its complexity value is higher than the threshold [**File is complex when over**](../../repositories-configure/adjusting-quality-settings.md#goals)
--   The complexity value of a commit or pull request is the sum of the complexity of the files that were changed in the commit or pull request and that have complexity higher than 4
+-   The complexity value for each file is the highest cyclomatic complexity of the methods in the file
+-   A file is considered complex if its cyclomatic complexity value is higher than the threshold [**File is complex when over**](../../repositories-configure/adjusting-quality-settings.md#goals)
+-   The complexity value of a commit or pull request is the sum of the cyclomatic complexity of the files that were changed in the commit or pull request and that have complexity higher than 4
 
 Codacy displays complexity on the following places:
 
