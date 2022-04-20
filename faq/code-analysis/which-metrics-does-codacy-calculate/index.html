@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy scans your code for issues and calculates code complexity, duplication, and coverage metrics. Besides this, Codacy also calculates a grade for your repository and files based on all calculated code quality metrics.">
       
       
-        <meta http-equiv="last-modified" content="2022-04-14 10:19:35">  
+        <meta http-equiv="last-modified" content="2022-04-20 15:02:49">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/which-metrics-does-codacy-calculate/">
@@ -3354,7 +3354,7 @@
 <p>Depending on certain characteristics of your repository, such as the number of source code files and their size, Codacy may <a href="../does-codacy-place-limits-on-the-code-analysis/">apply limits to the code analysis</a> that impact the calculation of the supported metrics.</p>
 </div>
 <h2 id="grade">Grade<a class="headerlink" href="#grade" title="Permanent link">#</a></h2>
-<p>Codacy assigns an overall grade to your repository branches and to individual files to help you assess the code quality of your repository. Grades reflect a weighted average of the available code quality metrics (issues, complexity, duplication, and coverage), and range from <strong>A</strong> to <strong>F</strong>:</p>
+<p>Codacy assigns an overall grade to your repository branches and to individual files to help you assess the code quality of your repository. Grades represent a weighted average of the available code quality metrics (issues, complexity, duplication, and coverage), and range from <strong>A</strong> to <strong>F</strong>:</p>
 <table>
   <tr>
     <td>Highest grade</td>
@@ -3436,9 +3436,9 @@
 <p>Codacy uses <a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity" target="_blank">cyclomatic complexity</a> to identify files with complex methods in your repository. Cyclomatic complexity is the number of linearly independent paths through the source code of a method: the more control flow statements used in a method, the higher the value. Methods with a high cyclomatic complexity are more difficult to test and more likely to have defects. <a href="https://blog.codacy.com/an-in-depth-explanation-of-code-complexity/">Learn more about code complexity</a> on Codacy's blog.</p>
 <p>Codacy calculates complexity as follows:</p>
 <ul>
-<li>The complexity value for each file is the highest complexity of the methods in the file</li>
-<li>A file is considered complex if its complexity value is higher than the threshold <a href="../../../repositories-configure/adjusting-quality-settings/#goals"><strong>File is complex when over</strong></a></li>
-<li>The complexity value of a commit or pull request is the sum of the complexity of the files that were changed in the commit or pull request and that have complexity higher than 4</li>
+<li>The complexity value for each file is the highest cyclomatic complexity of the methods in the file</li>
+<li>A file is considered complex if its cyclomatic complexity value is higher than the threshold <a href="../../../repositories-configure/adjusting-quality-settings/#goals"><strong>File is complex when over</strong></a></li>
+<li>The complexity value of a commit or pull request is the sum of the cyclomatic complexity of the files that were changed in the commit or pull request and that have complexity higher than 4</li>
 </ul>
 <p>Codacy displays complexity on the following places:</p>
 <table>
@@ -3724,7 +3724,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 20, 2022</span>
     
   </small>
 </div>
