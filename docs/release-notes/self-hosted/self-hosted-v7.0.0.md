@@ -101,7 +101,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **[dartanalyzer 2.16.1](https://github.com/dart-lang/sdk/blob/main/CHANGELOG.md#2161---2022-02-09){: target="_blank"} (updated from 2.15.1)**
 -   detekt 1.19.0
 -   **[ESLint 8.10.0](https://github.com/eslint/eslint/releases/tag/v8.10.0){: target="_blank"} (new)**
--   **ESLint 7.32.0 (<span style="color: red;">deprecated</span>)**
+-   ESLint 7.32.0 (<span style="color: red;">deprecated</span>)
 -   Faux-Pas 1.7.2
 -   Flawfinder 2.0.11
 -   Gosec 2.8.1
