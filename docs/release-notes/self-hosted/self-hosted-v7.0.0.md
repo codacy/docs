@@ -98,9 +98,9 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Cppcheck 2.2
 -   Credo 1.4.0
 -   CSSLint 1.0.5
--   **dartanalyzer 2.16.1 (updated from 2.15.1)**
+-   **[dartanalyzer 2.16.1 (updated from 2.15.1)](https://github.com/dart-lang/sdk/blob/main/CHANGELOG.md){: target="_blank"}**
 -   detekt 1.19.0
--   **ESLint 8.10.0 (new)**
+-   **[ESLint 8.10.0 (new)](https://github.com/eslint/eslint/blob/main/CHANGELOG.md){: target="_blank"}**
 -   **ESLint 7.32.0 (<span style="color: red;">deprecated</span>)**
 -   Faux-Pas 1.7.2
 -   Flawfinder 2.0.11
@@ -118,7 +118,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Pylint (Python 3) 2.7.4
 -   remark-lint 7.0.1
 -   Revive 1.0.2
--   **RuboCop 1.26.1 (updated from 1.25.1)**
+-   **[RuboCop 1.26.1 (updated from 1.25.1)](https://github.com/rubocop/rubocop/blob/master/CHANGELOG.md){: target="_blank"}**
 -   Scalastyle 1.5.0
 -   ShellCheck v0.7.2
 -   Sonar C# 8.30
