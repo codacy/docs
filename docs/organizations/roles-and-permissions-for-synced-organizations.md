@@ -31,77 +31,87 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
 <table>
   <thead>
     <tr>
-      <td></td>
-      <th>Codacy permission level</th>
-      <th>Join organization</th>
-      <th>View private repository</th>
-      <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
-      <th>Upload coverage<br/>using an account API token</th>
-      <th>Configure repository</th>
-      <th>Add and remove repository</th>
-      <th>Manage coding standards,<br/>Bulk copy patterns</th>
-      <th>Invite and accept members,<br/>modify billing</th>
+      <th>Git provider role</th>
+      <th>Outside<br/>Collaborator<sup>1</sup></th>
+      <th>Repository<br/>Read</th>
+      <th>Repository<br/>Triage</th>
+      <th>Repository<br/>Write</th>
+      <th>Repository<br/>Maintain</th>
+      <th>Repository<br/>Admin</th>
+      <th>Organization<br/>Owner</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>Outside Collaborator<sup>1</sup></th>
+      <td class="codacy">Codacy permission level</td>
       <td class="codacy">-</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
+      <td colspan="2" class="codacy">Repository<br/>Read</td>
+      <td colspan="2" class="codacy">Repository<br/>Write</td>
+      <td class="codacy">Repository<br/>Admin</td>
+      <td class="codacy">Organization<br/>Admin</td>
     </tr>
     <tr>
-      <th>Repository Read<br/><br/>Repository Triage</th>
-      <td class="codacy">Repository Read</td>
+      <td>Join organization</td>
+      <td>No</td>
+      <td colspan="2" class="yes">Yes<sup>2</sup></td>
+      <td colspan="2" class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
+      <td class="yes">Yes<sup>2</sup></td>
     </tr>
     <tr>
-      <th>Repository Write<br/><br/>Repository Maintain</th>
-      <td class="codacy">Repository Write</td>
-      <td class="yes">Yes<sup>2</sup></td>
+      <td>View private repository</td>
+      <td>No</td>
+      <td colspan="2" class="yes">Yes</td>
+      <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
     </tr>
     <tr>
-      <th>Repository Admin</th>
-      <td class="codacy">Repository Admin</td>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
+      <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</td>
       <td>No</td>
-      <td>No</td>
+      <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
+      <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
     </tr>
     <tr>
-      <th>Organization Owner</th>
-      <td class="codacy">Organization Admin</td>
-      <td class="yes">Yes<sup>2</sup></td>
+      <td>Upload coverage<br/>using an account API token</td>
+      <td>No</td>
+      <td colspan="2">No</td>
+      <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Configure repository</td>
+      <td>No</td>
+      <td colspan="2">No</td>
+      <td colspan="2">No</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Add and remove repository</td>
+      <td>No</td>
+      <td colspan="2">No</td>
+      <td colspan="2">No</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Manage coding standards,<br/>bulk copy patterns</td>
+      <td>No</td>
+      <td colspan="2">No</td>
+      <td colspan="2">No</td>
+      <td>No</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Invite and accept members,<br/>modify billing"</td>
+      <td>No</td>
+      <td colspan="2">No</td>
+      <td colspan="2">No</td>
+      <td>No</td>
       <td class="yes">Yes</td>
     </tr>
   </tbody>
