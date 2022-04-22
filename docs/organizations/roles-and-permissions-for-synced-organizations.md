@@ -21,7 +21,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
 <table>
   <thead>
     <tr>
-      <th>Git provider role</th>
+      <th>GitHub role</th>
       <th>Outside<br/>Collaborator<sup>1</sup></th>
       <th>Repository<br/>Read</th>
       <th>Repository<br/>Triage</th>
@@ -117,7 +117,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
 <table>
   <thead>
     <tr>
-      <th>Git provider role</th>
+      <th>GitLab role</th>
       <th>External<br/>User<sup>1</sup></th>
       <th>Project<br/>Guest</th>
       <th>Project<br/>Reporter</th>
@@ -214,7 +214,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
 <table>
   <thead>
     <tr>
-      <th>Git provider role</th>
+      <th>Bitbucket role</th>
       <th>Read</th>
       <th>Write<sup>1</sup></th>
       <th>Admin</th>
