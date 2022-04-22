@@ -15,16 +15,16 @@ See the Codacy permission levels that correspond to each role on your Git provid
 See [managing people](managing-people.md) to list and manage the members of your Codacy organization.
 
 <style>
-.yes {
-  background-color: #E6F4EA;
-}
-
 td:not(:first-child), th:not(:first-child) {
   text-align: center !important;
 }
 
-.codacy {
+tr:nth-child(1) {
   background-color: #EBF1FF;
+}
+
+.yes {
+  background-color: #E6F4EA;
 }
 </style>
 
@@ -47,12 +47,12 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
   </thead>
   <tbody>
     <tr>
-      <td class="codacy">Codacy permission level</td>
-      <td class="codacy">-</td>
-      <td colspan="2" class="codacy">Repository<br/>Read</td>
-      <td colspan="2" class="codacy">Repository<br/>Write</td>
-      <td class="codacy">Repository<br/>Admin</td>
-      <td class="codacy">Organization<br/>Admin</td>
+      <td>Codacy permission level</td>
+      <td>-</td>
+      <td colspan="2">Repository<br/>Read</td>
+      <td colspan="2">Repository<br/>Write</td>
+      <td>Repository<br/>Admin</td>
+      <td>Organization<br/>Admin</td>
     </tr>
     <tr>
       <td>Join organization</td>
@@ -144,12 +144,12 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
   </thead>
   <tbody>
     <tr>
-      <td class="codacy">Codacy permission level</td>
-      <td class="codacy">-</td>
-      <td colspan="2" class="codacy">Repository<br/>Read</td>
-      <td class="codacy">Repository<br/>Write</td>
-      <td colspan="2" class="codacy">Repository<br/>Admin</td>
-      <td colspan="2" class="codacy">Organization<br/>Admin</td>
+      <td>Codacy permission level</td>
+      <td>-</td>
+      <td colspan="2">Repository<br/>Read</td>
+      <td>Repository<br/>Write</td>
+      <td colspan="2">Repository<br/>Admin</td>
+      <td colspan="2">Organization<br/>Admin</td>
     </tr>
     <tr>
       <td>Join organization</td>
@@ -236,9 +236,9 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
   </thead>
   <tbody>
     <tr>
-      <td class="codacy">Codacy permission level</td>
-      <td colspan="2" class="codacy">Repository<br/>Read</td>
-      <td class="codacy">Organization<br/>Admin</td>
+      <td>Codacy permission level</td>
+      <td colspan="2">Repository<br/>Read</td>
+      <td>Organization<br/>Admin</td>
     </tr>
     <tr>
       <td>Join organization</td>
