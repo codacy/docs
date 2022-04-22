@@ -40,7 +40,7 @@ jobs:
         id: netlify-alias
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
         run: |
-          echo "::set-output name=alias::$(echo -n clean/transpose-permissions-tables-DOCS-368 | tr "/" "-" | tr "[:upper:]" "[:lower:]" | cut -c -35 | sed "s/-$//")"
+          echo "::set-output name=alias::$(echo ${GITHUB_REF#refs/heads/} | tr "/" "-" | tr "[:upper:]" "[:lower:]" | cut -c -35 | sed "s/-$//")"
 
       - name: Deploy docs (branch preview)
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
