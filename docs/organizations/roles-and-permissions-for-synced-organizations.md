@@ -97,7 +97,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Invite and accept members,<br/>modify billing"</td>
+      <td>Invite and accept members,<br/>modify billing</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td colspan="2">No</td>
