@@ -132,13 +132,13 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
   <thead>
     <tr>
       <th>Git provider role</th>
-      <th>External User<sup>1</sup></th>
-      <th>Project Guest</th>
-      <th>Project Reporter</th>
-      <th>Project Developer</th>
-      <th>Project Maintainer</th>
-      <th>Project Owner</th>
-      <th>Group Owner</th>
+      <th>External<br/>User<sup>1</sup></th>
+      <th>Project<br/>Guest</th>
+      <th>Project<br/>Reporter</th>
+      <th>Project<br/>Developer</th>
+      <th>Project<br/>Maintainer</th>
+      <th>Project<br/>Owner</th>
+      <th>Group<br/>Owner</th>
       <th>Administrator</th>
     </tr>
   </thead>
