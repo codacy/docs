@@ -4,7 +4,9 @@ description: List of operations that users can perform on Codacy depending on th
 
 # Roles and permissions for synced organizations
 
-Your team members have different permissions on Codacy depending on their role on your Git provider:
+Your team members have different permission levels on Codacy depending on their role on your Git provider. To change the permission level of a user on Codacy, you must adjust their role directly on your Git provider so that Codacy will use the corresponding permission level on the next time that the user logs in to Codacy.
+
+See the Codacy permission levels that correspond to each role on your Git provider:
 
 -   [GitHub](#permissions-for-github)
 -   [GitLab](#permissions-for-gitlab)
@@ -24,7 +26,7 @@ See [managing people](managing-people.md) to list and manage the members of your
 
 ## Permissions for GitHub
 
-The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy operations that they're allowed to perform:
+The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresponding Codacy permission levels and the operations that they're allowed to perform:
 
 <table>
   <thead>
@@ -110,7 +112,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
 
 ## Permissions for GitLab
 
-The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy operations that they're allowed to perform:
+The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresponding Codacy permission levels and the operations that they're allowed to perform:
 
 <table>
   <thead>
@@ -196,7 +198,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
 
 ## Permissions for Bitbucket
 
-The table below maps the Bitbucket Cloud and Bitbucket Server roles to the Codacy operations that they're allowed to perform:
+The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corresponding Codacy permission levels and the operations that they're allowed to perform:
 
 <table>
   <thead>
