@@ -19,6 +19,10 @@ See [managing people](managing-people.md) to list and manage the members of your
   background-color: #E6F4EA;
 }
 
+td:not(:first-child), th:not(:first-child) {
+  text-align: center !important;
+}
+
 .codacy {
   background-color: #EBF1FF;
 }
