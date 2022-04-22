@@ -14,20 +14,6 @@ See the Codacy permission levels that correspond to each role on your Git provid
 
 See [managing people](managing-people.md) to list and manage the members of your Codacy organization.
 
-<style>
-td:not(:first-child), th:not(:first-child) {
-  text-align: center !important;
-}
-
-tr:nth-child(1) {
-  background-color: #EBF1FF;
-}
-
-.yes {
-  background-color: #E6F4EA;
-}
-</style>
-
 ## Permissions for GitHub
 
 The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresponding Codacy permission levels and the operations that they're allowed to perform:
@@ -311,3 +297,29 @@ To change this, open your organization **Settings**, page **Member privileges**,
 
 -   [Managing people](managing-people.md)
 -   [Accepting new people to your organization](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization)
+
+<style>
+/* Center text in all cells except the first column */
+td:not(:first-child), th:not(:first-child) {
+  text-align: center !important;
+}
+
+/* Background color for row containing the Codacy permission levels */
+tr:nth-child(1) td {
+  background-color: #EBF1FF;
+}
+
+/* Add vertical borders and disable horizontal borders */
+td {
+  border-left: 1px solid var(--md-default-fg-color--lightest);
+  border-top: 0 !important;
+}
+td:nth-child(1) {
+  border-left: 0;
+}
+
+/* Background for cells marking the allowed operations */
+.yes {
+  background-color: #E6F4EA;
+}
+</style>
