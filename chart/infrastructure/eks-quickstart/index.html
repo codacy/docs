@@ -11,7 +11,7 @@
         <meta name="description" content="Follow the instructions below to set up an Amazon EKS cluster from scratch, including the necessary underlying infrastructure, using Terraform.">
       
       
-        <meta http-equiv="last-modified" content="2022-02-16 09:43:34">  
+        <meta http-equiv="last-modified" content="2022-04-20 10:07:28">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/chart/infrastructure/eks-quickstart/">
@@ -3357,7 +3357,7 @@
 </li>
 <li>
 <p>Set up the AWS CLI credentials for your AWS account using the <a href="https://docs.aws.amazon.com/polly/latest/dg/setup-aws-cli.html">AWS CLI</a> and <a href="https://www.terraform.io/docs/providers/aws/index.html">Terraform</a> documentation as reference.</p>
-<p>Note that, as stated on the <a href="https://registry.terraform.io/providers/hashicorp/aws/latest/docs#profiles-with-shared-credentials-and-configuration-files">Terraform documentation</a>, if your <code>.aws/credentials</code> are more complex you might need to set <code>AWS_SDK_LOAD_CONFIG=1</code> for Terraform to work correctly:</p>
+<p>Note that, as stated on the <a href="https://registry.terraform.io/providers/hashicorp/aws/2.70.1/docs#shared-credentials-file">Terraform documentation</a>, if your <code>.aws/credentials</code> are more complex you might need to set <code>AWS_SDK_LOAD_CONFIG=1</code> for Terraform to work correctly:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">AWS_SDK_LOAD_CONFIG</span><span class="o">=</span><span class="m">1</span>
 </code></pre></div>
 </li>
@@ -3655,7 +3655,7 @@ then will <code>terraform destroy</code> be able to destroy the backend.</p>
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 16, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 20, 2022</span>
     
   </small>
 </div>
