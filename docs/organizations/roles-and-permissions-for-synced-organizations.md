@@ -4,7 +4,9 @@ description: List of operations that users can perform on Codacy depending on th
 
 # Roles and permissions for synced organizations
 
-Your team members have different permissions on Codacy depending on their role on your Git provider:
+Your team members have different permission levels on Codacy depending on their role on your Git provider. To change the permission level of a user on Codacy, you must adjust their role directly on your Git provider so that Codacy will use the corresponding permission level on the next time that the user logs in to Codacy.
+
+See the Codacy permission levels that correspond to each role on your Git provider:
 
 -   [GitHub](#permissions-for-github)
 -   [GitLab](#permissions-for-gitlab)
@@ -14,18 +16,23 @@ See [managing people](managing-people.md) to list and manage the members of your
 
 <style>
 .yes {
-  background-color: rgb(208, 247, 229);
+  background-color: #E6F4EA;
+}
+
+.codacy {
+  background-color: #EBF1FF;
 }
 </style>
 
 ## Permissions for GitHub
 
-The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy operations that they're allowed to perform:
+The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresponding Codacy permission levels and the operations that they're allowed to perform:
 
 <table>
   <thead>
     <tr>
       <td></td>
+      <th>Codacy permission level</th>
       <th>Join organization</th>
       <th>View private repository</th>
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
@@ -39,6 +46,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
   <tbody>
     <tr>
       <th>Outside Collaborator<sup>1</sup></th>
+      <td class="codacy">-</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -49,7 +57,8 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Repository Read</th>
+      <th>Repository Read<br/><br/>Repository Triage</th>
+      <td class="codacy">Repository Read</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -60,29 +69,8 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Repository Triage</th>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>Repository Write</th>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td class="yes">Yes</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>Repository Maintain</th>
+      <th>Repository Write<br/><br/>Repository Maintain</th>
+      <td class="codacy">Repository Write</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -94,6 +82,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
     </tr>
     <tr>
       <th>Repository Admin</th>
+      <td class="codacy">Repository Admin</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -105,6 +94,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
     </tr>
     <tr>
       <th>Organization Owner</th>
+      <td class="codacy">Organization Admin</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -122,12 +112,13 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the Codacy 
 
 ## Permissions for GitLab
 
-The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy operations that they're allowed to perform:
+The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresponding Codacy permission levels and the operations that they're allowed to perform:
 
 <table>
   <thead>
     <tr>
       <td></td>
+      <th>Codacy permission level</th>
       <th>Join organization</th>
       <th>View private repository</th>
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
@@ -141,6 +132,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
   <tbody>
     <tr>
       <th>External User<sup>1</sup></th>
+      <td class="codacy">-</td>
       <td>No</td>
       <td>No</td>
       <td>No</td>
@@ -151,18 +143,8 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Project Guest</th>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>Project Reporter</th>
+      <th>Project Guest<br/><br/>Project Reporter</th>
+      <td class="codacy">Repository Read</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -174,6 +156,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
     </tr>
     <tr>
       <th>Project Developer</th>
+      <td class="codacy">Repository Write</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -184,7 +167,8 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Project Maintainer</th>
+      <th>Project Maintainer<br/><br/>Project Owner</th>
+      <td class="codacy">Repository Admin</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -195,29 +179,8 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
       <td>No</td>
     </tr>
     <tr>
-      <th>Project Owner</th>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>Group Owner</th>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <th>Administrator</th>
+      <th>Group Owner<br/><br/>Administrator</th>
+      <td class="codacy">Organization Admin</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -235,12 +198,13 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the Codacy 
 
 ## Permissions for Bitbucket
 
-The table below maps the Bitbucket Cloud and Bitbucket Server roles to the Codacy operations that they're allowed to perform:
+The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corresponding Codacy permission levels and the operations that they're allowed to perform:
 
 <table>
   <thead>
     <tr>
       <td></td>
+      <th>Codacy permission level</th>
       <th>Join organization</th>
       <th>View private repository</th>
       <th>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</th>
@@ -253,18 +217,8 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the Codac
   </thead>
   <tbody>
     <tr>
-      <th>Read<sup>1</sup></th>
-      <td class="yes">Yes<sup>2</sup></td>
-      <td class="yes">Yes</td>
-      <td><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <th>Write<sup>1</sup></th>
+      <th>Read<br/><br/>Write<sup>1</sup></th>
+      <td class="codacy">Repository Read</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td><a href="#change-analysis-configuration">Configurable</a></td>
@@ -276,6 +230,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the Codac
     </tr>
     <tr>
       <th>Admin</th>
+      <td class="codacy">Organization Admin</td>
       <td class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -291,11 +246,11 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the Codac
 <sup>1</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.  
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization).
 
-## Configuring who can change analysis configurations {: id="change-analysis-configuration"}
+## Configuring who can change the analysis configuration {: id="change-analysis-configuration"}
 
-By default, only users with **Write** permission on a repository can change analysis configurations.
+By default, only users with the Codacy permission level **Repository Write** can change analysis configurations.
 
-To change this, open your organization **Settings**, page **Member privileges**, and  define the lowest permission required to perform the following operations on the repositories of your organization:
+To change this, open your organization **Settings**, page **Member privileges**, and define the lowest Codacy permission level required to perform the following operations on the repositories of your organization:
 
 -   [Ignore issues](../repositories/issues.md#ignoring-and-managing-issues)
 -   [Ignore files](../repositories-configure/ignoring-files.md)
@@ -305,7 +260,12 @@ To change this, open your organization **Settings**, page **Member privileges**,
 
 ![Configuring who can change analysis configurations](images/organization-analysis-configuration.png)
 
-Codacy doesn't allow changing the role of a user, as the roles on Codacy are mirrored from your Git provider and applied to each repository.
+!!! note
+    Codacy determines the permission level of each user from the role that each user has on your Git provider:
+
+    -   [GitHub](#permissions-for-github)
+    -   [GitLab](#permissions-for-gitlab)
+    -   [Bitbucket](#permissions-for-bitbucket)
 
 ## See also
 
