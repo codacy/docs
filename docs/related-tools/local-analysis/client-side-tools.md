@@ -44,4 +44,4 @@ Follow the instructions on how to run the supported client-side tools:
 
 ## See also
 
-See the full list of [supported languages and tools](../../getting-started/supported-languages-and-tools.md) to check the programming languages that the client-side tools can analyze.
+See the full list of [supported languages and tools](../../getting-started/supported-languages-and-tools.md) to check the programming languages that each client-side tool can analyze.
