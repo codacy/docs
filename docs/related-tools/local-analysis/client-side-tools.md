@@ -4,15 +4,11 @@ Client-side tools enable you to run analysis either locally or as part of your C
 
 Codacy supports client-side tools in two ways:
 
--   **Standalone tools**
-
-    Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy using the API. You must download, configure, and run the third-party tools yourself.
+-   **Standalone tools:** Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy. You must download, configure, and run the third-party tools yourself.
 
     You can't configure these tools on the Codacy UI, since you manage their configuration locally.
 
--   **Containerized tools**
-
-    Codacy provides a Docker image for the tools, and you run the images using the [Codacy Analysis CLI](running-local-analysis.md).
+-   **Containerized tools:** Codacy provides a Docker image for the tools, and you run the images using the [Codacy Analysis CLI](running-local-analysis.md).
 
     The Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running these tools.
 
@@ -34,13 +30,13 @@ Follow the instructions on how to run the supported client-side tools:
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
--   [aligncheck](running-aligncheck.md) (Containerized)
--   [Clang-Tidy](https://github.com/codacy/codacy-clang-tidy#usage) (Standalone)
--   [deadcode](running-deadcode.md) (Containerized)
--   [Faux Pas](https://github.com/codacy/codacy-faux-pas#usage) (Standalone)
--   [Gosec](https://github.com/codacy/codacy-gosec#usage) (Standalone)
--   [SpotBugs](running-spotbugs.md) (Containerized)
--   [Staticcheck](https://github.com/codacy/codacy-staticcheck#usage) (Standalone)
+-   [aligncheck](running-aligncheck.md) (containerized)
+-   [Clang-Tidy](https://github.com/codacy/codacy-clang-tidy#usage) (standalone)
+-   [deadcode](running-deadcode.md) (containerized)
+-   [Faux Pas](https://github.com/codacy/codacy-faux-pas#usage) (standalone)
+-   [Gosec](https://github.com/codacy/codacy-gosec#usage) (standalone)
+-   [SpotBugs](running-spotbugs.md) (containerized)
+-   [Staticcheck](https://github.com/codacy/codacy-staticcheck#usage) (standalone)
 
 ## See also
 
