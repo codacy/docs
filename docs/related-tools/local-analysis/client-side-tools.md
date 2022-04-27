@@ -4,13 +4,13 @@ Client-side tools enable you to run analysis either locally or as part of your C
 
 Codacy supports client-side tools in two ways:
 
--   **Standalone tools:** Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy. You must download, configure, and run the third-party tools yourself.
-
-    You can't configure these tools on the Codacy UI, since you manage their configuration locally.
-
 -   **Containerized tools:** Codacy provides a Docker image for the tools, and you run the images using the [Codacy Analysis CLI](running-local-analysis.md).
 
     The Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running these tools.
+
+-   **Standalone tools:** Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy. You must download, configure, and run the third-party tools yourself.
+
+    You can't configure these tools on the Codacy UI, since you manage their configuration locally.
 
 ## Running the client-side tools
 
