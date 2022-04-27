@@ -1,6 +1,6 @@
 # Client-side tools
 
-Client-side tools enable you to run analysis either locally or as part of your CI process and integrating the results into your Codacy workflow. This way, Codacy presents the analysis information reported by your local tools alongside all other code quality information on the Codacy dashboards.
+Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools alongside all other code quality information on the Codacy dashboards.
 
 Codacy supports client-side tools in two ways:
 
