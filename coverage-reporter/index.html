@@ -11,7 +11,7 @@
         <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2022-03-28 17:15:02">  
+        <meta http-equiv="last-modified" content="2022-04-27 10:53:36">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
@@ -3495,7 +3495,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </code></pre></div>
 <p>You can also upload all your reports dynamically using the command <code>find</code>. For example:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-    -l Java <span class="k">$(</span>find **/jacoco*.xml -printf <span class="s1">&#39;-r %p &#39;</span><span class="k">)</span>
+    -l Java <span class="k">$(</span>find -name <span class="s1">&#39;jacoco*.xml&#39;</span> -printf <span class="s1">&#39;-r %p &#39;</span><span class="k">)</span>
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3689,7 +3689,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 28, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 27, 2022</span>
     
   </small>
 </div>
