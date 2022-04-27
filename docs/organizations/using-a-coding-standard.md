@@ -12,7 +12,7 @@ The organization coding standard helps you ensure that Codacy analyzes multiple 
 When you customize the tools or code patterns of a repository that follows the coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.
 
 !!! important
-    The coding standard enables or disables any tools that are using configuration files on the applied repositories, but these tools will keep using configuration files instead of the code pattern settings defined by the coding standard.
+    The coding standard enables or disables any tools that are using configuration files on the repositories following the coding standard, but these tools will keep using configuration files instead of the code pattern settings of the coding standard.
 
 ## Creating a coding standard {: id="creating"}
 
