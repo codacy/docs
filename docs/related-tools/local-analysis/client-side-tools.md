@@ -4,6 +4,25 @@ Client-side tools enable you to run analysis either locally or as part of your C
 
 Codacy supports client-side tools in two ways:
 
+-   **Standalone tools**
+
+    Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy using the API. You must download, configure, and run the third-party tools yourself.
+
+    You can't configure these tools on the Codacy UI, since you manage their configuration locally.
+
+-   **Containerized tools**
+
+    Codacy provides a Docker image for the tools, and you run the images using the [Codacy Analysis CLI](running-local-analysis.md).
+
+    The Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running these tools.
+
+## Running the client-side tools
+
+!!! tip
+    **If you're using GitHub** we recommend that you use the [Codacy Analysis CLI GitHub Action](https://github.com/codacy/codacy-analysis-cli-action#integration-with-codacy-for-client-side-tools) to run the client-side tools and upload the results to Codacy.
+
+Follow the instructions on how to run the supported client-side tools:
+
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
 
@@ -15,37 +34,13 @@ Codacy supports client-side tools in two ways:
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
-## Containerized tools
-
-Codacy provides a Docker image for the tools, and you run the images using the [Codacy Analysis CLI](running-local-analysis.md).
-
-The Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running these tools.
-
-Follow the instructions on how to run the supported client-side tools:
-
--   [aligncheck](running-aligncheck.md)
--   [deadcode](running-deadcode.md)
--   [SpotBugs](running-spotbugs.md)
-
-!!! tip
-    **If you're using GitHub** we recommend that you use the [Codacy Analysis CLI GitHub Action](https://github.com/codacy/codacy-analysis-cli-action#integration-with-codacy-for-client-side-tools) to run the client-side tools and upload the results to Codacy.
-
-## Standalone tools
-
-Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy using the API. You must download, configure, and run the third-party tools yourself.
-
-You can't configure these tools on the Codacy UI, since you manage their configuration locally.
-
-Follow the instructions on how to run the supported client-side tools:
-
-
--   [Clang-Tidy](https://github.com/codacy/codacy-clang-tidy#usage)
--   [Faux Pas](https://github.com/codacy/codacy-faux-pas#usage)
--   [Gosec](https://github.com/codacy/codacy-gosec#usage)
--   [Staticcheck](https://github.com/codacy/codacy-staticcheck#usage)
-
-!!! tip
-    **If you're using GitHub** we recommend that you use the [Codacy Analysis CLI GitHub Action](https://github.com/codacy/codacy-analysis-cli-action#integration-with-codacy-for-client-side-tools) to run the client-side tools and upload the results to Codacy.
+-   [aligncheck](running-aligncheck.md) (Containerized)
+-   [Clang-Tidy](https://github.com/codacy/codacy-clang-tidy#usage) (Standalone)
+-   [deadcode](running-deadcode.md) (Containerized)
+-   [Faux Pas](https://github.com/codacy/codacy-faux-pas#usage) (Standalone)
+-   [Gosec](https://github.com/codacy/codacy-gosec#usage) (Standalone)
+-   [SpotBugs](running-spotbugs.md) (Containerized)
+-   [Staticcheck](https://github.com/codacy/codacy-staticcheck#usage) (Standalone)
 
 ## See also
 
