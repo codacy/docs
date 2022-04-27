@@ -50,6 +50,10 @@ jobs:
           production-branch: master
           github-token: ${{ secrets.GITHUB_TOKEN }}
           deploy-message: Deploy for branch ${{ github.ref_name }}
+          enable-pull-request-comment: true
+          enable-commit-comment: false
+          enable-commit-status: false
+          overwrites-pull-request-comment: true
           alias: ${{ steps.netlify-alias.outputs.alias }}
           github-deployment-environment: Netlify
           github-deployment-description: Branch deployment preview
