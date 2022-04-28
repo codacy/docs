@@ -21,7 +21,7 @@ The left-hand side of the dashboard lists the status of each security category t
 <table>
   <thead>
     <tr>
-      <th>State</th>
+      <th>Status</th>
       <th>Description</th>
     </tr>
   </thead>
