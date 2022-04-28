@@ -7,9 +7,8 @@
 %}
 
 <!--TODO
-    - Improve intro and meta description
-    - Describe all UI elements, namely the branch selector and the filters
-    - Different behavior when a category has identified issues versus when code patterns are disabled versus when "everything's OK" -->
+    - Different behavior when a category has identified issues versus when code patterns are disabled versus when "everything's OK
+    - Describe all UI elements, namely the issue details-->
 
 The **Security Monitor** provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns for the tools that analyze your repository are currently turned off.
 
@@ -17,7 +16,10 @@ By default, the page displays the overview for the main branch of your repositor
 
 ![Security Monitor](images/security-monitor.png)
 
-The left-hand side of the dashboard lists the status of each security category that's supported by the tools that can analyze the programming languages in your repository:
+The left-hand side of the dashboard lists the status of each security category that's supported by the tools that can analyze the programming languages in your repository.
+
+!!! tip
+    You can use the **Warnings** drop-down list to display only security categories that have found issues or categories that have code patterns turned off.
 
 <table>
   <thead>
