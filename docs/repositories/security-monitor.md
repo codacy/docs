@@ -153,3 +153,8 @@ The Security Monitor displays issues using security patterns from:
 -   **Regex:** Regex can be used in a Denial of Service attack, that exploits the fact that most Regular Expression implementations may reach heavy computation situations that cause them to work very slowly (exponentially related to input size).
 -   **SSL:** Simply using SSL isn't enough to ensure the data you're sending is secure. Man in the middle attacks are well known and widely used.
 -   **Other:** Other language-specific security issues.
+
+## See also
+
+-   [Issues page](issues.md)
+-   [Configuring code patterns](../repositories-configure/configuring-code-patterns.md)
