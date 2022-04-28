@@ -1,7 +1,3 @@
----
-description: The Security Monitor provides an overview of all current security issues.
----
-
 # Security Monitor
 
 {%
@@ -15,7 +11,9 @@ description: The Security Monitor provides an overview of all current security i
     - Describe all UI elements, namely the branch selector and the filters
     - Different behavior when a category has identified issues versus when code patterns are disabled versus when "everything's OK" -->
 
-The **Security Monitor** provides an overview of all current security issues.
+The **Security Monitor** provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are disabled on the tools that analyze your repository.
+
+By default, the page displays the overview for the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display information for other branches.
 
 ![Security Monitor](images/security-monitor.png)
 
