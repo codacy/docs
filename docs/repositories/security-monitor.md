@@ -10,11 +10,19 @@ description: The Security Monitor provides an overview of all current security i
     end="<!--end-paid-->"
 %}
 
+<!--TODO
+    - Improve intro and meta description
+    - Describe all UI elements, namely the branch selector and the filters
+    - Different behavior when a category has identified issues versus when code patterns are disabled versus when "everything's OK" -->
+
 The **Security Monitor** provides an overview of all current security issues.
 
 ![Security Monitor](images/security-monitor.png)
 
 ## Supported languages
+
+<!--TODO
+    Merge supported languages and tools using a table?-->
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
@@ -77,6 +85,10 @@ The Security Monitor displays issues using security patterns from:
 
 ## Supported categories
 
+<!--TODO
+    - Add intro
+    - Review description of each category, and also update the Codacy UI copy-->
+
 -   **XSS:** XSS enables attackers to inject client-side scripts into web pages viewed by other users.
 -   **Input validation:** Input not validated may originate SQL Injection attacks for instance.
 -   **File access:** An attacker may use special paths to access files that shouldn't be accessible.
@@ -102,6 +114,9 @@ The Security Monitor displays issues using security patterns from:
 -   **Other:** Other language-specific security issues.
 
 ## Category states
+
+<!--TODO
+    The explanation of the possible states needs to appear much earlier, perhaps even in the introduction, since it is key to understanding the value of the Security Monitor page-->
 
 Each security category listed on the left-hand side of the dashboard has one of four states:
 
