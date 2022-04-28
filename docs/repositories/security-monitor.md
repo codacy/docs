@@ -18,9 +18,6 @@ By default, the page displays the overview for the main branch of your repositor
 
 The left-hand side of the dashboard lists the status of each security category that's supported by the tools that can analyze the programming languages in your repository.
 
-!!! tip
-    You can use the **Warnings** drop-down list to display only security categories that have found issues or categories that have code patterns turned off.
-
 <table>
   <thead>
     <tr>
@@ -51,6 +48,9 @@ The left-hand side of the dashboard lists the status of each security category t
     </tr>
   </tbody>
 </table>
+
+!!! tip
+    You can use the **Warnings** drop-down list to display only security categories that have found issues or categories that have code patterns turned off.
 
 ## Supported languages
 
