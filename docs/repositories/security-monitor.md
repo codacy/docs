@@ -17,6 +17,38 @@ By default, the page displays the overview for the main branch of your repositor
 
 ![Security Monitor](images/security-monitor.png)
 
+The left-hand side of the dashboard lists the status of each security category supported by the tools that can analyze the programming languages in your repository:
+
+<table>
+  <thead>
+    <tr>
+      <th>State</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="../images/security-monitor-green.png" alt="Green"></td>
+      <td><p><strong>Everything is OK for this category</strong></p>
+          <p>All the security patterns in this category are enabled, and no security issues have been found.</p></td>
+    </tr>
+    <tr>
+      <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
+      <td><p><strong>There are security patterns in this category that are disabled</strong></p>
+          <p>You should enable the patterns in this category so it's verified. To enable all security patterns on the repository, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>.</p>
+    </tr>
+    <tr>
+      <td><img src="../images/security-monitor-red.png" alt="Red"></td>
+      <td><p><strong>There are security issues identified for this category</strong></p></td>
+    </tr>
+    <tr>
+      <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
+      <td><p><strong>Codacy can't determine if all the security patterns in this category are enabled or not</strong></p>
+          <p>This happens when you're using configuration files to control which patterns are enabled. Ensure that you manually enable the listed patterns on your configuration files.</p></td>
+    </tr>
+  </tbody>
+</table>
+
 ## Supported languages
 
 <!--TODO
@@ -110,40 +142,3 @@ The Security Monitor displays issues using security patterns from:
 -   **Regex:** Regex can be used in a Denial of Service attack, that exploits the fact that most Regular Expression implementations may reach heavy computation situations that cause them to work very slowly (exponentially related to input size).
 -   **SSL:** Simply using SSL isn't enough to ensure the data you're sending is secure. Man in the middle attacks are well known and widely used.
 -   **Other:** Other language-specific security issues.
-
-## Category states
-
-<!--TODO
-    The explanation of the possible states needs to appear much earlier, perhaps even in the introduction, since it is key to understanding the value of the Security Monitor page-->
-
-Each security category listed on the left-hand side of the dashboard has one of four states:
-
-<table>
-  <thead>
-    <tr>
-      <th>State</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="../images/security-monitor-green.png" alt="Green"></td>
-      <td><p><strong>Everything is OK for this category</strong></p>
-          <p>All the security patterns in this category are enabled, and no security issues have been found.</p></td>
-    </tr>
-    <tr>
-      <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
-      <td><p><strong>There are security patterns in this category that are disabled</strong></p>
-          <p>You should enable the patterns in this category so it's verified. To enable all security patterns on the repository, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>.</p>
-    </tr>
-    <tr>
-      <td><img src="../images/security-monitor-red.png" alt="Red"></td>
-      <td><p><strong>There are security issues identified for this category</strong></p></td>
-    </tr>
-    <tr>
-      <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
-      <td><p><strong>Codacy can't determine if all the security patterns in this category are enabled or not</strong></p>
-          <p>This happens when you're using configuration files to control which patterns are enabled. Ensure that you manually enable the listed patterns on your configuration files.</p></td>
-    </tr>
-  </tbody>
-</table>
