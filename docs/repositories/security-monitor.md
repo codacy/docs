@@ -35,12 +35,11 @@ The left-hand side of the dashboard lists the status of each security category t
           <p>Click the category name to see the list of found issues.</p></td>
     </tr>
     <tr>
-      <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
+      <td rowspan="2"><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
       <td><p><strong>There are security code patterns in this category that are disabled</strong></p>
           <p>You should enable the code patterns in this category so that Codacy can find issues in this category. To enable all security code patterns on the repository, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>.</p>
     </tr>
     <tr>
-      <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
       <td><p><strong>Codacy can't determine if all security code patterns in this category are enabled or not</strong></p>
           <p>This happens when you're using configuration files to control which code patterns are enabled. Ensure that you manually enable the listed code patterns on your configuration files.</p></td>
     </tr>
