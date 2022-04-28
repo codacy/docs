@@ -30,9 +30,9 @@ The left-hand side of the dashboard lists the status of each security category t
   </thead>
   <tbody>
     <tr>
-      <td><img src="../images/security-monitor-green.png" alt="Green"></td>
-      <td><p><strong>Everything is OK for this category</strong></p>
-          <p>All security code patterns in this category are enabled, and Codacy didn't find security issues in this category.</p></td>
+      <td><img src="../images/security-monitor-red.png" alt="Red"></td>
+      <td><p><strong>Codacy found security issues in this category</strong></p>
+          <p>Click the category name to see the list of found issues.</p></td>
     </tr>
     <tr>
       <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
@@ -40,13 +40,14 @@ The left-hand side of the dashboard lists the status of each security category t
           <p>You should enable the code patterns in this category so that Codacy can find issues in this category. To enable all security code patterns on the repository, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>.</p>
     </tr>
     <tr>
-      <td><img src="../images/security-monitor-red.png" alt="Red"></td>
-      <td><p><strong>Codacy found security issues in this category</strong></p></td>
-    </tr>
-    <tr>
       <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
       <td><p><strong>Codacy can't determine if all security code patterns in this category are enabled or not</strong></p>
           <p>This happens when you're using configuration files to control which code patterns are enabled. Ensure that you manually enable the listed code patterns on your configuration files.</p></td>
+    </tr>
+    <tr>
+      <td><img src="../images/security-monitor-green.png" alt="Green"></td>
+      <td><p><strong>Everything is OK for this category</strong></p>
+          <p>All security code patterns in this category are enabled, and Codacy didn't find security issues in this category.</p></td>
     </tr>
   </tbody>
 </table>
