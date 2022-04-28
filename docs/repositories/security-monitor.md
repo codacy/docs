@@ -18,6 +18,13 @@ By default, the page displays the overview for the main branch of your repositor
 
 The left-hand side of the dashboard lists the status of each security category that's supported by the tools that can analyze the programming languages in your repository.
 
+<style>
+/* Center text in the first column */
+th:first-child, td:first-child {
+  text-align: center !important;
+}
+</style>
+
 <table>
   <thead>
     <tr>
@@ -38,6 +45,7 @@ The left-hand side of the dashboard lists the status of each security category t
           To enable all security code patterns on the repository, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>.</td>
     </tr>
     <tr>
+      <td style="display: none;"></td>
       <td><strong>Codacy can't determine if all security code patterns in this category are enabled or not</strong><br/><br/>
           This happens when you're using configuration files to control which code patterns are enabled. Ensure that you manually enable the listed code patterns on your configuration files.</td>
     </tr>
