@@ -19,13 +19,16 @@ def check_security_tools():
     for tool in tools:
         tool_name = tool["name"].split(" ")[0]
         tool_short_name = tool["shortName"]
+        tool_languages = tool["languages"]
         code_patterns = requests.get(ENDPOINT_URL_CODE_PATTERNS.substitute(toolUuid=tool["uuid"])).json()["data"]
         for code_pattern in code_patterns:
             if code_pattern["category"] == "Security":
                 if tool_name.lower() in documentation or tool_short_name.lower() in documentation:
-                    print(emoji.emojize(f":check_mark_button: {tool_name} is included"))
+                    print(emoji.emojize(f":check_mark_button: {tool_name} is included "
+                                        f"({', '.join(map(str, tool_languages))})"))
                 else:
-                    print(emoji.emojize(f":cross_mark: {tool_name} ISN'T included"))
+                    print(emoji.emojize(f":cross_mark: {tool_name} ISN'T included "
+                                        f"({', '.join(map(str, tool_languages))})"))
                     count += 1
                 break
     if count:
