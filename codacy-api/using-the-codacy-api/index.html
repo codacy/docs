@@ -11,7 +11,7 @@
         <meta name="description" content="The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.">
       
       
-        <meta http-equiv="last-modified" content="2022-02-24 11:11:54">  
+        <meta http-equiv="last-modified" content="2022-04-29 09:29:29">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/using-the-codacy-api/">
@@ -3382,6 +3382,7 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Currently, all API v3 endpoints that require authentication must use <strong>account API tokens</strong>, while the API v2 endpoints require either <strong>account or project API tokens</strong>.</p>
+<p>Performing <code>GET</code> requests for public repositories doesn't require authentication.</p>
 </div>
 <p>For example, to make a request to an API v3 endpoint that requires an account API token:</p>
 <div class="highlight"><pre><span></span><code>curl -X GET <span class="s1">&#39;https://api.codacy.com/api/v3/user/organizations/gh&#39;</span> <span class="se">\</span>
@@ -3610,7 +3611,7 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 29, 2022</span>
     
   </small>
 </div>
