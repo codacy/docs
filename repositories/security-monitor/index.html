@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The Security Monitor provides an overview of all current security issues.">
+        <meta name="description" content="The Security Monitor provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.">
       
       
-        <meta http-equiv="last-modified" content="2021-11-08 16:49:38">  
+        <meta http-equiv="last-modified" content="2022-04-29 15:25:53">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/security-monitor/">
@@ -380,8 +380,8 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#category-states" class="md-nav__link">
-    Category states
+  <a href="#see-also" class="md-nav__link">
+    See also
   </a>
   
 </li>
@@ -3327,8 +3327,53 @@
 <div class="admonition info">
 <p class="admonition-title">This feature is <a href="https://www.codacy.com/pricing" target="_blank">only available on paid plans</a></p>
 </div>
-<p>The <strong>Security Monitor</strong> provides an overview of all current security issues.</p>
+<p>The <strong>Security Monitor</strong> provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.</p>
+<p>By default, the page displays the overview for the main branch of your repository but if you have <a href="../../repositories-configure/managing-branches/">more than one branch enabled</a> you can use the drop-down list at the top of the page to display information for other branches.</p>
 <p><img alt="Security Monitor" src="../images/security-monitor.png" /></p>
+<p>The left-hand side of the dashboard lists the status of each security category that the tools that can analyze the programming languages in your repository support:</p>
+<style>
+/* Center text in the first column */
+th:first-child, td:first-child {
+  text-align: center !important;
+}
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="../images/security-monitor-red.png" alt="Red"></td>
+      <td><strong>Codacy found security issues in this category</strong><br/><br/>
+          Click the category name to see the list of security issues in this category, and click the title of the issues to see more information about the issue.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
+      <td><strong>There are security code patterns in this category that are turned off</strong><br/><br/>
+          You should turn on the code patterns in this category so that Codacy can find the corresponding security issues. Click the category name to see the code patterns that are turned off, and click the check box next to each code pattern to turn it on.<br/><br/>
+          To turn on all security code patterns on the repository regardless of their category, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>.</td>
+    </tr>
+    <tr>
+      <td style="display: none;"></td>
+      <td><strong>Codacy can't determine if all security code patterns in this category are turned on or not</strong><br/><br/>
+          This happens when you're using configuration files to control which code patterns are turned on. Ensure that you manually turn on the listed code patterns on your configuration files.</td>
+    </tr>
+    <tr>
+      <td><img src="../images/security-monitor-green.png" alt="Green"></td>
+      <td><strong>Everything is OK for this category</strong><br/><br/>
+          All security code patterns in this category are turned on, and Codacy didn't find security issues in this category.</td>
+    </tr>
+  </tbody>
+</table>
+
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can use the <strong>Warnings</strong> drop-down list to display only security categories that have found issues or categories that have code patterns turned off.</p>
+</div>
 <h2 id="supported-languages">Supported languages<a class="headerlink" href="#supported-languages" title="Permanent link">#</a></h2>
 <p>The Security Monitor is available for the following languages:</p>
 <ul>
@@ -3403,37 +3448,11 @@
 <li><strong>SSL:</strong> Simply using SSL isn't enough to ensure the data you're sending is secure. Man in the middle attacks are well known and widely used.</li>
 <li><strong>Other:</strong> Other language-specific security issues.</li>
 </ul>
-<h2 id="category-states">Category states<a class="headerlink" href="#category-states" title="Permanent link">#</a></h2>
-<p>Each security category listed on the left-hand side of the dashboard has one of four states:</p>
-<table>
-  <thead>
-    <tr>
-      <th>State</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="../images/security-monitor-green.png" alt="Green"></td>
-      <td><p><strong>Everything is OK for this category</strong></p>
-          <p>All the security patterns in this category are enabled, and no security issues have been found.</p></td>
-    </tr>
-    <tr>
-      <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
-      <td><p><strong>There are security patterns in this category that are disabled</strong></p>
-          <p>You should enable the patterns in this category so it's verified. To enable all security patterns on the repository, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>.</p>
-    </tr>
-    <tr>
-      <td><img src="../images/security-monitor-red.png" alt="Red"></td>
-      <td><p><strong>There are security issues identified for this category</strong></p></td>
-    </tr>
-    <tr>
-      <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
-      <td><p><strong>Codacy can't determine if all the security patterns in this category are enabled or not</strong></p>
-          <p>This happens when you're using configuration files to control which patterns are enabled. Ensure that you manually enable the listed patterns on your configuration files.</p></td>
-    </tr>
-  </tbody>
-</table>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="../issues/">Issues page</a></li>
+<li><a href="../../repositories-configure/configuring-code-patterns/">Configuring code patterns</a></li>
+</ul>
               
               
                 
@@ -3590,7 +3609,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 8, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 29, 2022</span>
     
   </small>
 </div>
