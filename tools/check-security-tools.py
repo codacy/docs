@@ -33,6 +33,10 @@ def check_security_tools():
                 break
     if count:
         print(f"\nFound {count} tools that aren't included in the documentation.")
+        exit(1)
+    else:
+        print(emoji.emojize("\nAll tools are included in the documentation! :party_popper:"))
+        exit(0)
 
 
 argh.dispatch_command(check_security_tools)
