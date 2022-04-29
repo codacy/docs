@@ -63,3 +63,37 @@ jobs:
           title: Missing supported tools report
           content-filepath: ${{ env.OUTPUT_FILE }}
           labels: report, automated issue
+
+  check-security-tools:
+    runs-on: ubuntu-latest
+    env:
+      OUTPUT_FILE: ${{ github.workspace }}/security-tools-report.txt
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
+          submodules: true
+
+      - name: Set up Python
+        uses: actions/setup-python@v3
+        with:
+          python-version: "3.x"
+          cache: "pip"
+
+      - name: Install dependencies
+        run: |
+          pip install -r tools/requirements.txt
+
+      - name: Check if security tools are up to date
+        run: |
+          cd tools
+          python ./check-security-tools.py > ${{ env.OUTPUT_FILE }}
+
+      - name: Create issue
+        uses: peter-evans/create-issue-from-file@v4
+        if: ${{ failure() }}
+        with:
+          title: Missing security tools report
+          content-filepath: ${{ env.OUTPUT_FILE }}
+          labels: report, automated issue
