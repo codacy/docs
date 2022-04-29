@@ -23,10 +23,10 @@ def check_supported_tools():
         tool_short_name = tool["shortName"]
         tool_languages = tool["languages"]
         if tool_name.lower() in documentation or tool_short_name.lower() in documentation:
-            print(emoji.emojize(f":check_mark_button: {tool_name} is included"
+            print(emoji.emojize(f":check_mark_button: {tool_name} is included "
                                 f"({', '.join(map(str, tool_languages))})"))
         else:
-            print(emoji.emojize(f":cross_mark: {tool_name} ISN'T included"
+            print(emoji.emojize(f":cross_mark: {tool_name} ISN'T included "
                                 f"({', '.join(map(str, tool_languages))})"))
             count += 1
     if count:
