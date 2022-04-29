@@ -46,13 +46,13 @@ th:first-child, td:first-child {
     </tr>
     <tr>
       <td style="display: none;"></td>
-      <td><strong>Codacy can't determine if all security code patterns in this category are enabled or not</strong><br/><br/>
-          This happens when you're using configuration files to control which code patterns are enabled. Ensure that you manually enable the listed code patterns on your configuration files.</td>
+      <td><strong>Codacy can't determine if all security code patterns in this category are turned on or not</strong><br/><br/>
+          This happens when you're using configuration files to control which code patterns are turned on. Ensure that you manually turn on the listed code patterns on your configuration files.</td>
     </tr>
     <tr>
       <td><img src="../images/security-monitor-green.png" alt="Green"></td>
       <td><strong>Everything is OK for this category</strong><br/><br/>
-          All security code patterns in this category are enabled, and Codacy didn't find security issues in this category.</td>
+          All security code patterns in this category are turned on, and Codacy didn't find security issues in this category.</td>
     </tr>
   </tbody>
 </table>
