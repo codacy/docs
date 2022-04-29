@@ -40,9 +40,9 @@ th:first-child, td:first-child {
     </tr>
     <tr>
       <td rowspan="2"><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
-      <td><strong>There are security code patterns in this category that are disabled</strong><br/><br/>
-          You should enable the code patterns in this category so that Codacy can find issues in this category.<br/>
-          To enable all security code patterns on the repository, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>.</td>
+      <td><strong>There are security code patterns in this category that are turned off</strong><br/><br/>
+          You should turn on the code patterns in this category so that Codacy can find security issues in this category. Click the category name to see the security code patterns that are turned off and click the check box next to the code patterns to turn them on.<br/><br/>
+          To turn on all security code patterns on the repository regardless of their category, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>.</td>
     </tr>
     <tr>
       <td style="display: none;"></td>
