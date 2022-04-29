@@ -1,34 +1,33 @@
 name: Scheduled checks
 
 on:
-  push
-  #schedule:
-  # - cron: "0 5 15 * *"
+  schedule:
+   - cron: "0 5 15 * *"
 
 jobs:
-#  check-broken-links:
-#    runs-on: ubuntu-latest
-#    env:
-#      OUTPUT_FILE: ${{ github.workspace }}/broken-link-report.txt
-#    steps:
-#      - name: Check for broken links
-#        env:
-#          INPUT_URL: https://docs.codacy.com/
-#          EXCLUDE: |
-#            gitlab\.com\/profile
-#            github\.com\/settings
-#            github\.com\/codacy\/docs\/issues
-#            en\.gravatar\.com
-#        run: |
-#          docker run raviqqe/muffet --follow-sitemap-xml --timeout=30 --buffer-size=8192 --rate-limit=1 --skip-tls-verification --exclude=$( echo ${EXCLUDE} | tr ' ' '|' ) ${{ env.INPUT_URL }} > ${{ env.OUTPUT_FILE }}
-#
-#      - name: Create issue
-#        uses: peter-evans/create-issue-from-file@v4
-#        if: ${{ failure() }}
-#        with:
-#          title: Broken link report
-#          content-filepath: ${{ env.OUTPUT_FILE }}
-#          labels: report, automated issue
+  check-broken-links:
+    runs-on: ubuntu-latest
+    env:
+      OUTPUT_FILE: ${{ github.workspace }}/broken-link-report.txt
+    steps:
+      - name: Check for broken links
+        env:
+          INPUT_URL: https://docs.codacy.com/
+          EXCLUDE: |
+            gitlab\.com\/profile
+            github\.com\/settings
+            github\.com\/codacy\/docs\/issues
+            en\.gravatar\.com
+        run: |
+          docker run raviqqe/muffet --follow-sitemap-xml --timeout=30 --buffer-size=8192 --rate-limit=1 --skip-tls-verification --exclude=$( echo ${EXCLUDE} | tr ' ' '|' ) ${{ env.INPUT_URL }} > ${{ env.OUTPUT_FILE }}
+
+      - name: Create issue
+        uses: peter-evans/create-issue-from-file@v4
+        if: ${{ failure() }}
+        with:
+          title: Broken link report
+          content-filepath: ${{ env.OUTPUT_FILE }}
+          labels: report, automated issue
 
   check-supported-tools:
     runs-on: ubuntu-latest
@@ -51,7 +50,7 @@ jobs:
         run: |
           pip install -r tools/requirements.txt
 
-      - name: Check if supported tools are up to date
+      - name: Check supported tools
         run: |
           cd tools
           python ./check-supported-tools.py > ${{ env.OUTPUT_FILE }}
@@ -85,7 +84,7 @@ jobs:
         run: |
           pip install -r tools/requirements.txt
 
-      - name: Check if security tools are up to date
+      - name: Check tools that report security issues
         run: |
           cd tools
           python ./check-security-tools.py > ${{ env.OUTPUT_FILE }}
