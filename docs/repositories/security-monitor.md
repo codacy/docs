@@ -14,10 +14,6 @@ By default, the page displays the overview for the main branch of your repositor
 
 The left-hand side of the dashboard lists the status of each security category that's supported by the tools that can analyze the programming languages in your repository.
 
-<!--TODO
-    - Different behavior when a category has identified issues versus when code patterns are disabled versus when "everything's OK
-    - Describe all UI elements, namely the issue details-->
-
 <style>
 /* Center text in the first column */
 th:first-child, td:first-child {
@@ -36,7 +32,7 @@ th:first-child, td:first-child {
     <tr>
       <td><img src="../images/security-monitor-red.png" alt="Red"></td>
       <td><strong>Codacy found security issues in this category</strong><br/><br/>
-          Click the category name to see the list of found issues.</td>
+          Click the category name to see the list of security issues in this category, and click the title of the issues to see more information about the issue.</td>
     </tr>
     <tr>
       <td rowspan="2"><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
