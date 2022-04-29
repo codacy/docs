@@ -74,6 +74,8 @@ Most API endpoints require that you authenticate using an API token. After [obta
 !!! note
     Currently, all API v3 endpoints that require authentication must use **account API tokens**, while the API v2 endpoints require either **account or project API tokens**.
 
+    Performing `GET` requests for public repositories doesn't require authentication.
+
 For example, to make a request to an API v3 endpoint that requires an account API token:
 
 ```bash
