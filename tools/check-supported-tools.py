@@ -24,7 +24,7 @@ def check_supported_tools():
     if count:
         print(f"\nFound {count} tools that aren't included in the documentation.")
     else:
-        print(emoji.emojize(f"\nAll tools are included in the documentation! :party_popper:"))
+        print(emoji.emojize("\nAll tools are included in the documentation! :party_popper:"))
 
 
 argh.dispatch_command(check_supported_tools)
