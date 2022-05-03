@@ -643,6 +643,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2022:
+                      - release-notes/cloud/cloud-2022-04.md
                       - release-notes/cloud/cloud-2022-03.md
                       - release-notes/cloud/cloud-2022-03-31-adding-eslint8.md
                       - release-notes/cloud/cloud-2022-02.md
