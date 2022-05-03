@@ -203,11 +203,10 @@ Besides this, Codacy runs PMD CPD with the following options enabled by default:
 
 -   **Skip lexical errors:** Skip files which can't be tokenized due to invalid characters instead of aborting CPD
 -   **Ignore literals:** Ignore number values and string contents when comparing text
--   **Ignore identifiers:** Ignore constant and variable names when comparing text
 -   **Ignore annotations:** Ignore language annotations when comparing text
 -   **Ignore <span class="skip-vale">usings</span>:** Ignore `using` directives in C# when comparing text
 
-To use a different minimum token length or disable any of the default options, add your settings to the Codacy configuration file based on the example template below.
+To use a different minimum token length or change any of the default options, add your settings to the Codacy configuration file based on the example template below.
 
 !!! important
     If you configure `minTokenMatch` on the Codacy configuration file, Codacy will use that value for all languages.
@@ -219,7 +218,7 @@ engines:
     minTokenMatch: 20
     skipLexicalErrors: false
     ignoreLiterals: false
-    ignoreIdentifiers: false
+    ignoreIdentifiers: true
     ignoreAnnotations: false
     ignoreUsings: false
 ```
