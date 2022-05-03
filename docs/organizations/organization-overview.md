@@ -60,7 +60,7 @@ The **Last updated** tab displays open pull requests sorted by the date of updat
 
 ![Last updated pull requests](images/organization-overview-prs-last-updated.png)
 
-Click a pull request to see the [details of the pull request](../repositories/pull-requests.md#pull-request-status).
+Click a pull request to see the [details of that pull request](../repositories/pull-requests.md#pull-request-status).
 
 ## Last updated repositories
 
