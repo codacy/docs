@@ -36,6 +36,14 @@ Outputs a list of images that aren't included in any Markdown file.
 ./find-orphan-images.sh
 ```
 
+## get-tool-descriptions
+
+Outputs the name and description of each supported tool.
+
+```bash
+./get-tool-descriptions.py
+```
+
 ## list-last-modified
 
 Outputs the date and time when each documentation page was last modified. This can be used to help assess which pages could be outdated and in need of review.
