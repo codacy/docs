@@ -47,7 +47,7 @@ If you have over 8 repositories, the chart displays your repositories grouped by
 
 ## Open pull requests
 
-The **Most problematic** tab displays a short list of the open pull requests that aren't up to standards and have the most potential to negatively affect your code quality. Click directly on each pull request to see more details.
+The **Most problematic** tab displays a short list of the open pull requests that aren't up to standards and have the most potential to negatively affect your code quality.
 
 ![Most problematic pull requests](images/organization-overview-prs-problematic.png)
 
@@ -59,6 +59,8 @@ The **Last updated** tab displays open pull requests sorted by the date of updat
 -   Analyzing (intermediate status while Codacy is analyzing the pull request)
 
 ![Last updated pull requests](images/organization-overview-prs-last-updated.png)
+
+Click a pull request to see the [details of that pull request](../repositories/pull-requests.md#pull-request-status).
 
 ## Last updated repositories
 
