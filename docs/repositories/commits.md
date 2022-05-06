@@ -36,7 +36,7 @@ This area displays the quality gate status and an overview of the code quality m
 
     If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to standards**.
 
--   The changes to the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) introduced by the {{ page.meta.page_name }} are displayed either as a **positive or negative variation**, **no variation** (represented by `=`), or **not applicable** (represented by `∅`):
+-   The changes to the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) introduced by the {{ page.meta.page_name }} are displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %}:
 
     -   **Issues:** Number of new or fixed issues
     -   **Duplication:** Number of new or fixed duplicated code blocks
