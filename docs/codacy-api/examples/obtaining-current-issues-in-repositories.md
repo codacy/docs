@@ -21,7 +21,7 @@ The example script:
 ```bash
 CODACY_API_TOKEN="<your account API token>"
 
-curl -X POST "https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/website/issues/search" \
+curl -X POST "https://app.codacy.com/api/v3/analysis/organizations/{provider}/{remoteOrganizationName}/repositories/{repositoryName}/issues/search" \
      -H "api-token: $CODACY_API_TOKEN" \
      -H "Content-Type: application/json" \
      -d '{ "levels": ["Error", "Warning"], "categories": ["Security"] }' \
