@@ -43,7 +43,7 @@ To use a Codacy configuration file:
     languages:
       css:
         extensions:
-          - "-css.resource"
+          - ".scss"
     exclude_paths:
       - ".bundle/**"
       - "spec/**/*"
