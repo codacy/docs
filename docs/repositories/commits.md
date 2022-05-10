@@ -46,7 +46,7 @@ This area displays the quality gate status and an overview of the code quality m
 {% endif %}
 {% if page.meta.page_name == "pull request" %}
     -   **Coverage variation:** Variation of code coverage relative to the target branch
-    -   **Diff coverage:** Code coverage of the coverable lines added or changed by the pull request, or `∅` if no coverable lines were changed
+    -   **Diff coverage:** Code coverage of the coverable lines added or changed by the pull request, or `∅` (not applicable) if there aren't any coverable lines added or changed
 {% endif %}
 
     Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
