@@ -64,9 +64,9 @@ Codacy uses [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_com
 
 Codacy calculates complexity as follows:
 
--   The complexity value for each file is the highest cyclomatic complexity of the methods in the file
--   A file is considered complex if its cyclomatic complexity value is higher than the threshold [**File is complex when over**](../../repositories-configure/adjusting-quality-settings.md#goals)
--   The complexity value of a commit or pull request is the sum of the cyclomatic complexity of the files that were changed in the commit or pull request and that have complexity higher than 4
+-   The complexity value for each file is the highest cyclomatic complexity of the methods in the file.
+-   A file is considered complex if its cyclomatic complexity value is higher than the threshold [**File is complex when over**](../../repositories-configure/adjusting-quality-settings.md#goals).
+-   The complexity value of a commit or pull request is the sum of the cyclomatic complexity of the files that were changed in the commit or pull request and that have complexity higher than 4.
 
 Codacy displays complexity on the following places:
 
@@ -84,9 +84,9 @@ Codacy identifies clones or [sequences of duplicate code](https://en.wikipedia.o
 
 Codacy calculates duplication as follows:
 
--   The duplication value for each file is the number of clones in the file
--   A file is considered duplicated if the number of clones in the file is higher than the threshold [**File is duplicated when over**](../../repositories-configure/adjusting-quality-settings.md#goals)
--   The duplication value of a commit or pull request is the number of clones introduced by the commit or pull request
+-   The duplication value for each file is the number of clones in the file.
+-   A file is considered duplicated if the number of clones in the file is higher than the threshold [**File is duplicated when over**](../../repositories-configure/adjusting-quality-settings.md#goals).
+-   The duplication value of a commit or pull request is the number of clones introduced by the commit or pull request.
 
 !!! note
     You can [customize the rules for identifying duplicated blocks of code](../../repositories-configure/codacy-configuration-file.md#pmd-cpd-duplication) when using PMD CPD to analyze the source code of your repository.
@@ -109,10 +109,12 @@ You must set up your CI/CD pipeline to [upload code coverage data to Codacy](../
 
 Codacy calculates code coverage as follows:
 
--   The coverage value for each file is the percentage of coverable lines that are covered by tests in the file
--   A repository is considered to have acceptable coverage if the average coverage value for the files in the repository is higher than the threshold [**Coverage is under**](../../repositories-configure/adjusting-quality-settings.md#goals)
--   The coverage variation value of a commit or pull request is the number of percentage points that the coverage value for the file increased or dropped in the commit or pull request
--   The diff coverage of a pull request is the percentage of coverable lines added or modified in the pull request that are covered by tests, or `∅` (not applicable) if no coverable lines were changed
+-   The coverage value for each file is the percentage of coverable lines that are covered by tests in the file.
+-   A repository is considered to have acceptable coverage if the average coverage value for the files in the repository is higher than the threshold [**Coverage is under**](../../repositories-configure/adjusting-quality-settings.md#goals).
+-   The coverage variation value of a commit or pull request is the number of percentage points that the coverage value for the file increased or dropped in the commit or pull request.
+-   The diff coverage of a pull request is the percentage of coverable lines added or modified in the pull request that are covered by tests.
+
+    If a pull request doesn't add or modify any coverable lines, the diff coverage is `∅` (not applicable).
 
 Once the coverage setup is complete, Codacy displays coverage data on the following places:
 
