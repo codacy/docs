@@ -47,7 +47,7 @@ See [how to migrate your configuration files to use ESLint 8](../cloud/cloud-202
 
 ## Bug fixes
 
--   Fixed the vulnerability of external redirection after login. (CY-6052)
+-   Fixed an issue that could be used by an attacker to redirect Codacy users to a malicious URL. CVSS v3.1 score: 6.5 (Medium) (CY-6052)
 -   Fixed a broken link in the notification emails sent to organization admins when new members ask to join an organization. (CY-5979)
 -   Fixed an issue that prevented Codacy from listing GitHub repositories on the Repositories list. (CY-5935)
 -   Fixed an issue that could cause the **Organization Overview** page to display pull requests with the wrong status under the **Most problematic** open pull requests tab. (CY-5872)
