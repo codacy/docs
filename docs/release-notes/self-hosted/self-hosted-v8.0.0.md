@@ -31,6 +31,14 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.0.0:
     -   [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-8.0.0)
     -   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-8.0.0)
 
+## Breaking changes
+
+ESLint 8 will be enabled by default on new repositories starting on this version of Codacy Self-hosted.
+
+The previous Codacy Self-hosted version [already included ESLint 8 as a new supported tool and deprecated ESLint 7](self-hosted-v7.0.0.md#product-enhancements), and Codacy recommends that you migrate to the new version of the tool to benefit from the new features and fixes of ESLint.
+
+See [how to migrate your configuration files to use ESLint 8](../cloud/cloud-2022-03-31-adding-eslint8.md#migrating-your-configuration-files-to-use-eslint-8). (CY-5848)
+
 ## Product enhancements
 
 -   Updated the design of the **Code patterns** page to make the currently selected tool more noticeable. (CY-6021)
