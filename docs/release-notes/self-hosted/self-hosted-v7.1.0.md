@@ -40,7 +40,6 @@ Follow the steps below to upgrade to Codacy Self-hosted v7.1.0:
 ## Product enhancements
 
 -   Moved the code coverage setup page under the repository **Settings**, tab **Coverage**. The new page includes a list of the most recent coverage reports uploaded to Codacy to [help you troubleshoot your coverage setup](../../coverage-reporter/index.md#uploading-coverage). (CY-5399)
--   You can now [use an organization coding standard](https://docs.codacy.com/v7.1/organizations/using-a-coding-standard/) to apply the same coding best practices, conventions, or security rules to a group of repositories. ![Organization coding standard](../images/cy-4654.png) (CY-4654)
 
 ## Bug fixes
 
