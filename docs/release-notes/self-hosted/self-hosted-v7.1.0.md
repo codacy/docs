@@ -14,10 +14,6 @@ These release notes are for [Codacy Self-hosted v7.1.0](https://github.com/codac
 
 <!--TODO Check these issues manually
 
-Jira issues without release notes
-
--   https://codacy.atlassian.net/browse/CY-5555
-
 Jira issues with disabled release notes
 -   https://codacy.atlassian.net/browse/CY-5932
 -->
@@ -47,6 +43,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v7.1.0:
 -   Fixed a broken link in the notification emails sent to organization admins when new members ask to join an organization. (CY-5979)
 -   Fixed an issue that prevented Codacy from listing GitHub repositories on the Repositories list. (CY-5935)
 -   Fixed an issue that could cause the **Organization Overview** page to display pull requests with the wrong status under the **Most problematic** open pull requests tab. (CY-5872)
+-   Now, the **Files** page always displays the **Coverage** column on repositories that have coverage set up, even if there's no coverage data for any of the displayed files. (CY-5555)
 
 ## Tool versions
 
