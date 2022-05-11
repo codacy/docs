@@ -16,25 +16,11 @@ These release notes are for [Codacy Self-hosted v7.1.0](https://github.com/codac
 
 Jira issues without release notes
 
-Epics:
--   https://codacy.atlassian.net/browse/CY-5746
--   https://codacy.atlassian.net/browse/DOCS-209
-Bugs and Community Issues:
 Others:
 -   https://codacy.atlassian.net/browse/CY-6021
--   https://codacy.atlassian.net/browse/CY-5945
--   https://codacy.atlassian.net/browse/CY-5924
--   https://codacy.atlassian.net/browse/CY-5838
 -   https://codacy.atlassian.net/browse/CY-5555
 
 Jira issues with disabled release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/CY-5391
--   https://codacy.atlassian.net/browse/CY-4844
-Bugs and Community Issues:
--   https://codacy.atlassian.net/browse/CY-6026
--   https://codacy.atlassian.net/browse/CY-5951
 -   https://codacy.atlassian.net/browse/CY-5932
 -->
 
