@@ -39,13 +39,13 @@ Follow the steps below to upgrade to Codacy Self-hosted v7.1.0:
 
 ## Product enhancements
 
+-   Added support for the ESLint plugin [<span class="skip-vale">eslint-plugin-es</span>](https://github.com/mysticatea/eslint-plugin-es){: target="_blank"} to disallow the syntax of specific ECMAScript versions. (CY-5968)
 -   Moved the code coverage setup page under the repository **Settings**, tab **Coverage**. The new page includes a list of the most recent coverage reports uploaded to Codacy to [help you troubleshoot your coverage setup](../../coverage-reporter/index.md#uploading-coverage). (CY-5399)
 
 ## Bug fixes
 
 -   Fixed the vulnerability of external redirection after login. (CY-6052)
 -   Fixed a broken link in the notification emails sent to organization admins when new members ask to join an organization. (CY-5979)
--   Added the `es` plugin to ESLint (CY-5968)
 -   Fixed an issue that prevented Codacy from listing GitHub repositories on the Repositories list. (CY-5935)
 -   Fixed an issue that could cause the **Organization Overview** page to display pull requests with the wrong status under the **Most problematic** open pull requests tab. (CY-5872)
 
