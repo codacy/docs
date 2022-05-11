@@ -64,13 +64,12 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
 
+v8
+
+-   [v8.0.0](self-hosted/self-hosted-v8.0.0.md) (May 11, 2022)<!--TODO Update release date-->
+
 v7
 
-<!--NOTE
-    The next Codacy Self-hosted version should be a major version
-    See the breaking changes introduced in https://codacy.atlassian.net/browse/CY-5848-->
-
--   [v7.1.0](self-hosted/self-hosted-v7.1.0.md) (May 11, 2022)<!--TODO Update release date-->
 -   [v7.0.0](self-hosted/self-hosted-v7.0.0.md) (April 4, 2022)
 
 v6

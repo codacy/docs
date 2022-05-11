@@ -1,14 +1,14 @@
 ---
 rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
-description: Release notes for Codacy Self-hosted v7.1.0.
+description: Release notes for Codacy Self-hosted v8.0.0.
 codacy_tools_version_old: https://github.com/codacy/codacy-tools/releases/tag/5.5.6
 codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/5.7.38
 ---
 
-# Self-hosted v7.1.0
+# Self-hosted v8.0.0
 
-These release notes are for [Codacy Self-hosted v7.1.0](https://github.com/codacy/chart/releases/tag/7.1.0){: target="_blank"}, released on May 11, 2022. <!-- TODO Update release date -->
+These release notes are for [Codacy Self-hosted v8.0.0](https://github.com/codacy/chart/releases/tag/8.0.0){: target="_blank"}, released on May 11, 2022. <!-- TODO Update release date -->
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
@@ -20,16 +20,16 @@ Jira issues with disabled release notes
 
 ## Upgrading Codacy Self-hosted
 
-Follow the steps below to upgrade to Codacy Self-hosted v7.1.0:
+Follow the steps below to upgrade to Codacy Self-hosted v8.0.0:
 
 1.  Check the [release notes for all Codacy Self-hosted versions](../index.md#self-hosted) **between your current version and the most recent version** for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
 1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v7.1/chart/maintenance/upgrade/).
 
-1.  Update your Codacy command-line tools to the versions with the Git tag `self-hosted-7.1.0`:
+1.  Update your Codacy command-line tools to the versions with the Git tag `self-hosted-8.0.0`:
 
-    -   [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-7.1.0)
-    -   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-7.1.0)
+    -   [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-8.0.0)
+    -   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-8.0.0)
 
 ## Product enhancements
 
