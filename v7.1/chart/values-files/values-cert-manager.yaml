@@ -1,9 +1,0 @@
-webhook:
-  enabled: true
-ingressShim:
-  defaultIssuerName: letsencrypt-codacy
-  defaultIssuerKind: Issuer
-  defaultIssuerGroup: cert-manager.io
-global:
-  leaderElection:
-    namespace: codacy
