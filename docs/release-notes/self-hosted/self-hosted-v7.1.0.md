@@ -80,7 +80,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Cppcheck 2.2
 -   Credo 1.4.0
 -   CSSLint 1.0.5
--   **[dartanalyzer 2.16.2](https://github.com/dart-lang/sdk/blob/main/CHANGELOG.md){: target="_blank"} (updated from 2.16.1)**
+-   **[dartanalyzer 2.16.2](https://github.com/dart-lang/sdk/blob/main/CHANGELOG.md#2162---2022-03-24){: target="_blank"} (updated from 2.16.1)**
 -   detekt 1.19.0
 -   **[ESLint 8.14.0](https://github.com/eslint/eslint/releases/tag/v8.14.0){: target="_blank"} (updated from 8.10.0)**
 -   ESLint (deprecated) 7.32.0
@@ -103,7 +103,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **[RuboCop 1.28.2](https://github.com/rubocop/rubocop/releases/tag/v1.28.2){: target="_blank"} (updated from 1.26.1)**
 -   Scalastyle 1.5.0
 -   ShellCheck v0.7.2
--   **[Sonar C# 8.33](https://github.com/SonarSource/sonar-dotnet/releases/tag/v8.33){: target="_blank"} (updated from 8.30)**
+-   **[Sonar C# 8.33](https://github.com/SonarSource/sonar-dotnet/releases/tag/8.33.0.40503){: target="_blank"} (updated from 8.30)**
 -   Sonar Visual Basic 8.15
 -   spectral-rulesets 1.2.7
 -   SpotBugs 4.5.3
