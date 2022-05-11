@@ -33,7 +33,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.0.0:
 
 ## Breaking changes
 
-ESLint 8 will be enabled by default on new repositories starting on this version of Codacy Self-hosted.
+ESLint 8 will be **enabled by default on new repositories** starting on this version of Codacy Self-hosted.
 
 The previous Codacy Self-hosted version [already included ESLint 8 as a new supported tool and deprecated ESLint 7](self-hosted-v7.0.0.md#product-enhancements), and Codacy recommends that you migrate to the new version of the tool to benefit from the new features and fixes of ESLint.
 
