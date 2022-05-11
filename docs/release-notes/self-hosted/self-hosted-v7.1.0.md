@@ -16,8 +16,6 @@ These release notes are for [Codacy Self-hosted v7.1.0](https://github.com/codac
 
 Jira issues without release notes
 
-Others:
--   https://codacy.atlassian.net/browse/CY-6021
 -   https://codacy.atlassian.net/browse/CY-5555
 
 Jira issues with disabled release notes
@@ -39,6 +37,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v7.1.0:
 
 ## Product enhancements
 
+-   Updated the design of the **Code patterns** page to make the currently selected tool more noticeable. (CY-6021)
 -   Added support for the ESLint plugin [<span class="skip-vale">eslint-plugin-es</span>](https://github.com/mysticatea/eslint-plugin-es){: target="_blank"} to disallow the syntax of specific ECMAScript versions. (CY-5968)
 -   Moved the code coverage setup page under the repository **Settings**, tab **Coverage**. The new page includes a list of the most recent coverage reports uploaded to Codacy to [help you troubleshoot your coverage setup](../../coverage-reporter/index.md#uploading-coverage). (CY-5399)
 
