@@ -8,13 +8,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="For Codacy to check updates in your repository (new commits and pull requests) you must have post-commit hooks enabled.">
+        <meta name="description" content="Release notes for Codacy Self-hosted v8.0.0.">
       
       
-        <meta http-equiv="last-modified" content="2021-09-30 16:22:06">  
+        <meta http-equiv="last-modified" content="2022-05-12 14:40:53">  
       
       
-        <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/post-commit-hooks/">
+        <link rel="canonical" href="https://docs.codacy.com/release-notes/self-hosted/self-hosted-v8.0.0/">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Post-commit hooks - Codacy docs</title>
+        <title>Self-hosted v8.0.0 - Codacy docs</title>
       
     
     
@@ -50,6 +50,8 @@
       <link rel="stylesheet" href="../../../assets/stylesheets/version-select.css">
     
     
+      <link rel="alternate" type="application/rss+xml" title="Codacy release notes RSS feed" href="/feed_rss_created.xml">
+    
     
       
         
@@ -70,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#post-commit-hooks" class="md-skip">
+        <a href="#self-hosted-v800" class="md-skip">
           Skip to content
         </a>
       
@@ -343,12 +345,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
     
     <label class="md-nav__link" for="nav-4">
       Configuring your repositories
@@ -372,7 +372,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuring-code-patterns/" title="Configuring code patterns" class="md-nav__link">
+    <a href="../../../repositories-configure/configuring-code-patterns/" title="Configuring code patterns" class="md-nav__link">
       Configuring code patterns
     </a>
   </li>
@@ -384,7 +384,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../managing-branches/" title="Managing branches" class="md-nav__link">
+    <a href="../../../repositories-configure/managing-branches/" title="Managing branches" class="md-nav__link">
       Managing branches
     </a>
   </li>
@@ -394,12 +394,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-3" type="checkbox" id="nav-4-3">
     
     <label class="md-nav__link" for="nav-4-3">
       Integrations
@@ -423,7 +421,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../github-integration/" title="GitHub integration" class="md-nav__link">
+    <a href="../../../repositories-configure/integrations/github-integration/" title="GitHub integration" class="md-nav__link">
       GitHub integration
     </a>
   </li>
@@ -435,7 +433,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../gitlab-integration/" title="GitLab integration" class="md-nav__link">
+    <a href="../../../repositories-configure/integrations/gitlab-integration/" title="GitLab integration" class="md-nav__link">
       GitLab integration
     </a>
   </li>
@@ -447,7 +445,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../bitbucket-integration/" title="Bitbucket integration" class="md-nav__link">
+    <a href="../../../repositories-configure/integrations/bitbucket-integration/" title="Bitbucket integration" class="md-nav__link">
       Bitbucket integration
     </a>
   </li>
@@ -459,7 +457,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../slack-integration/" title="Slack integration" class="md-nav__link">
+    <a href="../../../repositories-configure/integrations/slack-integration/" title="Slack integration" class="md-nav__link">
       Slack integration
     </a>
   </li>
@@ -471,7 +469,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../jira-integration/" title="Jira integration" class="md-nav__link">
+    <a href="../../../repositories-configure/integrations/jira-integration/" title="Jira integration" class="md-nav__link">
       Jira integration
     </a>
   </li>
@@ -483,7 +481,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../webhook-notifications/" title="Webhook notifications" class="md-nav__link">
+    <a href="../../../repositories-configure/integrations/webhook-notifications/" title="Webhook notifications" class="md-nav__link">
       Webhook notifications
     </a>
   </li>
@@ -493,54 +491,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Post-commit hooks
-        <span class="md-nav__icon md-icon">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
-        </span>
-      </label>
-    
-    <a href="./" title="Post-commit hooks" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../repositories-configure/integrations/post-commit-hooks/" title="Post-commit hooks" class="md-nav__link">
       Post-commit hooks
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#automatic-setup-of-post-commit-hook" class="md-nav__link">
-    Automatic setup of post-commit hook
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#manual-setup-of-post-commit-hooks-on-github" class="md-nav__link">
-    Manual setup of post-commit hooks on GitHub
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -555,7 +510,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../ignoring-files/" title="Ignoring files" class="md-nav__link">
+    <a href="../../../repositories-configure/ignoring-files/" title="Ignoring files" class="md-nav__link">
       Ignoring files
     </a>
   </li>
@@ -567,7 +522,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../file-extensions/" title="Configuring file extensions" class="md-nav__link">
+    <a href="../../../repositories-configure/file-extensions/" title="Configuring file extensions" class="md-nav__link">
       Configuring file extensions
     </a>
   </li>
@@ -579,7 +534,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../adjusting-quality-settings/" title="Adjusting quality settings" class="md-nav__link">
+    <a href="../../../repositories-configure/adjusting-quality-settings/" title="Adjusting quality settings" class="md-nav__link">
       Adjusting quality settings
     </a>
   </li>
@@ -657,7 +612,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../using-submodules/" title="Using submodules" class="md-nav__link">
+    <a href="../../../repositories-configure/using-submodules/" title="Using submodules" class="md-nav__link">
       Using submodules
     </a>
   </li>
@@ -669,7 +624,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../codacy-configuration-file/" title="Codacy configuration file" class="md-nav__link">
+    <a href="../../../repositories-configure/codacy-configuration-file/" title="Codacy configuration file" class="md-nav__link">
       Codacy configuration file
     </a>
   </li>
@@ -681,7 +636,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../removing-your-repository/" title="Removing your repository" class="md-nav__link">
+    <a href="../../../repositories-configure/removing-your-repository/" title="Removing your repository" class="md-nav__link">
       Removing your repository
     </a>
   </li>
@@ -2118,10 +2073,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11" type="checkbox" id="nav-11" checked>
     
     <label class="md-nav__link" for="nav-11">
       Release notes
@@ -2145,7 +2102,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/" title="Codacy release notes" class="md-nav__link">
+    <a href="../../" title="Codacy release notes" class="md-nav__link">
       Codacy release notes
     </a>
   </li>
@@ -2207,7 +2164,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2022-04/" title="Cloud April 2022" class="md-nav__link">
+    <a href="../../cloud/cloud-2022-04/" title="Cloud April 2022" class="md-nav__link">
       Cloud April 2022
     </a>
   </li>
@@ -2219,7 +2176,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2022-03/" title="Cloud March 2022" class="md-nav__link">
+    <a href="../../cloud/cloud-2022-03/" title="Cloud March 2022" class="md-nav__link">
       Cloud March 2022
     </a>
   </li>
@@ -2231,7 +2188,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2022-03-31-adding-eslint8/" title="Adding ESLint 8 as a supported tool March 31, 2022" class="md-nav__link">
+    <a href="../../cloud/cloud-2022-03-31-adding-eslint8/" title="Adding ESLint 8 as a supported tool March 31, 2022" class="md-nav__link">
       Adding ESLint 8 as a supported tool March 31, 2022
     </a>
   </li>
@@ -2243,7 +2200,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2022-02/" title="Cloud February 2022" class="md-nav__link">
+    <a href="../../cloud/cloud-2022-02/" title="Cloud February 2022" class="md-nav__link">
       Cloud February 2022
     </a>
   </li>
@@ -2255,7 +2212,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal/" title="Removal of PMD (Legacy) February 16, 2022" class="md-nav__link">
+    <a href="../../cloud/cloud-2022-02-16-pmd-legacy-removal/" title="Removal of PMD (Legacy) February 16, 2022" class="md-nav__link">
       Removal of PMD (Legacy) February 16, 2022
     </a>
   </li>
@@ -2267,7 +2224,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2022-01/" title="Cloud January 2022" class="md-nav__link">
+    <a href="../../cloud/cloud-2022-01/" title="Cloud January 2022" class="md-nav__link">
       Cloud January 2022
     </a>
   </li>
@@ -2309,7 +2266,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2021-12/" title="Cloud December 2021" class="md-nav__link">
+    <a href="../../cloud/cloud-2021-12/" title="Cloud December 2021" class="md-nav__link">
       Cloud December 2021
     </a>
   </li>
@@ -2321,7 +2278,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2021-11/" title="Cloud November 2021" class="md-nav__link">
+    <a href="../../cloud/cloud-2021-11/" title="Cloud November 2021" class="md-nav__link">
       Cloud November 2021
     </a>
   </li>
@@ -2333,7 +2290,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2021-10/" title="Cloud October 2021" class="md-nav__link">
+    <a href="../../cloud/cloud-2021-10/" title="Cloud October 2021" class="md-nav__link">
       Cloud October 2021
     </a>
   </li>
@@ -2345,7 +2302,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2021-09/" title="Cloud September 2021" class="md-nav__link">
+    <a href="../../cloud/cloud-2021-09/" title="Cloud September 2021" class="md-nav__link">
       Cloud September 2021
     </a>
   </li>
@@ -2357,7 +2314,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2021-11-02-legacy-organizations/" title="End of support for legacy manual organizations November 2, 2021" class="md-nav__link">
+    <a href="../../cloud/cloud-2021-11-02-legacy-organizations/" title="End of support for legacy manual organizations November 2, 2021" class="md-nav__link">
       End of support for legacy manual organizations November 2, 2021
     </a>
   </li>
@@ -2369,7 +2326,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2021-08/" title="Cloud August 2021" class="md-nav__link">
+    <a href="../../cloud/cloud-2021-08/" title="Cloud August 2021" class="md-nav__link">
       Cloud August 2021
     </a>
   </li>
@@ -2381,7 +2338,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance/" title="Performing scheduled database maintenance July 3, 2021" class="md-nav__link">
+    <a href="../../cloud/cloud-2021-07-03-scheduled-db-maintenance/" title="Performing scheduled database maintenance July 3, 2021" class="md-nav__link">
       Performing scheduled database maintenance July 3, 2021
     </a>
   </li>
@@ -2423,7 +2380,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens/" title="Deprecating HTTP headers for API tokens April 1, 2020" class="md-nav__link">
+    <a href="../../cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens/" title="Deprecating HTTP headers for API tokens April 1, 2020" class="md-nav__link">
       Deprecating HTTP headers for API tokens April 1, 2020
     </a>
   </li>
@@ -2435,7 +2392,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal/" title="Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020" class="md-nav__link">
+    <a href="../../cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal/" title="Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020" class="md-nav__link">
       Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020
     </a>
   </li>
@@ -2447,7 +2404,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2020-02-github-apps/" title="Codacy now supports GitHub Apps February 2020" class="md-nav__link">
+    <a href="../../cloud/cloud-2020-02-github-apps/" title="Codacy now supports GitHub Apps February 2020" class="md-nav__link">
       Codacy now supports GitHub Apps February 2020
     </a>
   </li>
@@ -2489,7 +2446,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2019-11-15/" title="Cloud November 15, 2019" class="md-nav__link">
+    <a href="../../cloud/cloud-2019-11-15/" title="Cloud November 15, 2019" class="md-nav__link">
       Cloud November 15, 2019
     </a>
   </li>
@@ -2501,7 +2458,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2019-10-30/" title="Cloud October 30, 2019" class="md-nav__link">
+    <a href="../../cloud/cloud-2019-10-30/" title="Cloud October 30, 2019" class="md-nav__link">
       Cloud October 30, 2019
     </a>
   </li>
@@ -2513,7 +2470,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2019-09-05/" title="Cloud September 5, 2019" class="md-nav__link">
+    <a href="../../cloud/cloud-2019-09-05/" title="Cloud September 5, 2019" class="md-nav__link">
       Cloud September 5, 2019
     </a>
   </li>
@@ -2525,7 +2482,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2019-08-07/" title="Cloud August 7, 2019" class="md-nav__link">
+    <a href="../../cloud/cloud-2019-08-07/" title="Cloud August 7, 2019" class="md-nav__link">
       Cloud August 7, 2019
     </a>
   </li>
@@ -2537,7 +2494,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2019-06-18/" title="Cloud June 18, 2019" class="md-nav__link">
+    <a href="../../cloud/cloud-2019-06-18/" title="Cloud June 18, 2019" class="md-nav__link">
       Cloud June 18, 2019
     </a>
   </li>
@@ -2549,7 +2506,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2019-05-20/" title="Cloud May 20, 2019" class="md-nav__link">
+    <a href="../../cloud/cloud-2019-05-20/" title="Cloud May 20, 2019" class="md-nav__link">
       Cloud May 20, 2019
     </a>
   </li>
@@ -2561,7 +2518,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2019-05-05/" title="Cloud May 5, 2019" class="md-nav__link">
+    <a href="../../cloud/cloud-2019-05-05/" title="Cloud May 5, 2019" class="md-nav__link">
       Cloud May 5, 2019
     </a>
   </li>
@@ -2573,7 +2530,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2019-04-08/" title="Cloud April 8, 2019" class="md-nav__link">
+    <a href="../../cloud/cloud-2019-04-08/" title="Cloud April 8, 2019" class="md-nav__link">
       Cloud April 8, 2019
     </a>
   </li>
@@ -2585,7 +2542,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2019-03-29/" title="Cloud March 29, 2019" class="md-nav__link">
+    <a href="../../cloud/cloud-2019-03-29/" title="Cloud March 29, 2019" class="md-nav__link">
       Cloud March 29, 2019
     </a>
   </li>
@@ -2597,7 +2554,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2019-02-18-bitbucket-changes/" title="Bitbucket changes February 18, 2019" class="md-nav__link">
+    <a href="../../cloud/cloud-2019-02-18-bitbucket-changes/" title="Bitbucket changes February 18, 2019" class="md-nav__link">
       Bitbucket changes February 18, 2019
     </a>
   </li>
@@ -2609,7 +2566,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2019-01-02/" title="Cloud January 2, 2019" class="md-nav__link">
+    <a href="../../cloud/cloud-2019-01-02/" title="Cloud January 2, 2019" class="md-nav__link">
       Cloud January 2, 2019
     </a>
   </li>
@@ -2651,7 +2608,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2018-11-16/" title="Cloud November 16, 2018" class="md-nav__link">
+    <a href="../../cloud/cloud-2018-11-16/" title="Cloud November 16, 2018" class="md-nav__link">
       Cloud November 16, 2018
     </a>
   </li>
@@ -2663,7 +2620,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2018-11-02/" title="Cloud November 2, 2018" class="md-nav__link">
+    <a href="../../cloud/cloud-2018-11-02/" title="Cloud November 2, 2018" class="md-nav__link">
       Cloud November 2, 2018
     </a>
   </li>
@@ -2675,7 +2632,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2018-10-19/" title="Cloud October 19, 2018" class="md-nav__link">
+    <a href="../../cloud/cloud-2018-10-19/" title="Cloud October 19, 2018" class="md-nav__link">
       Cloud October 19, 2018
     </a>
   </li>
@@ -2687,7 +2644,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/cloud/cloud-2018-07-23/" title="Cloud July 23, 2018" class="md-nav__link">
+    <a href="../../cloud/cloud-2018-07-23/" title="Cloud July 23, 2018" class="md-nav__link">
       Cloud July 23, 2018
     </a>
   </li>
@@ -2707,10 +2664,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-3" type="checkbox" id="nav-11-3">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-3" type="checkbox" id="nav-11-3" checked>
     
     <label class="md-nav__link" for="nav-11-3">
       Self-hosted
@@ -2732,10 +2691,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-3-1" type="checkbox" id="nav-11-3-1">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-11-3-1" type="checkbox" id="nav-11-3-1" checked>
     
     <label class="md-nav__link" for="nav-11-3-1">
       v8
@@ -2757,11 +2718,75 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v8.0.0/" title="Self-hosted v8.0.0" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Self-hosted v8.0.0
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3,9H17V7H3V9M3,13H17V11H3V13M3,17H17V15H3V17M19,17H21V15H19V17M19,7V9H21V7H19M19,13H21V11H19V13Z" /></svg>
+        </span>
+      </label>
+    
+    <a href="./" title="Self-hosted v8.0.0" class="md-nav__link md-nav__link--active">
       Self-hosted v8.0.0
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary md-nav--toc" data-md-component="toc" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#upgrading-codacy-self-hosted" class="md-nav__link">
+    Upgrading Codacy Self-hosted
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#breaking-changes" class="md-nav__link">
+    Breaking changes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#product-enhancements" class="md-nav__link">
+    Product enhancements
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#bug-fixes" class="md-nav__link">
+    Bug fixes
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#tool-versions" class="md-nav__link">
+    Tool versions
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -2801,7 +2826,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v7.0.0/" title="Self-hosted v7.0.0" class="md-nav__link">
+    <a href="../self-hosted-v7.0.0/" title="Self-hosted v7.0.0" class="md-nav__link">
       Self-hosted v7.0.0
     </a>
   </li>
@@ -2843,7 +2868,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v6.0.0/" title="Self-hosted v6.0.0" class="md-nav__link">
+    <a href="../self-hosted-v6.0.0/" title="Self-hosted v6.0.0" class="md-nav__link">
       Self-hosted v6.0.0
     </a>
   </li>
@@ -2885,7 +2910,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v5.1.0/" title="Self-hosted v5.1.0" class="md-nav__link">
+    <a href="../self-hosted-v5.1.0/" title="Self-hosted v5.1.0" class="md-nav__link">
       Self-hosted v5.1.0
     </a>
   </li>
@@ -2897,7 +2922,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v5.0.0/" title="Self-hosted v5.0.0" class="md-nav__link">
+    <a href="../self-hosted-v5.0.0/" title="Self-hosted v5.0.0" class="md-nav__link">
       Self-hosted v5.0.0
     </a>
   </li>
@@ -2939,7 +2964,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v4.4.0/" title="Self-hosted v4.4.0" class="md-nav__link">
+    <a href="../self-hosted-v4.4.0/" title="Self-hosted v4.4.0" class="md-nav__link">
       Self-hosted v4.4.0
     </a>
   </li>
@@ -2951,7 +2976,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v4.3.0/" title="Self-hosted v4.3.0" class="md-nav__link">
+    <a href="../self-hosted-v4.3.0/" title="Self-hosted v4.3.0" class="md-nav__link">
       Self-hosted v4.3.0
     </a>
   </li>
@@ -2963,7 +2988,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v4.2.0/" title="Self-hosted v4.2.0" class="md-nav__link">
+    <a href="../self-hosted-v4.2.0/" title="Self-hosted v4.2.0" class="md-nav__link">
       Self-hosted v4.2.0
     </a>
   </li>
@@ -2975,7 +3000,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v4.1.0/" title="Self-hosted v4.1.0" class="md-nav__link">
+    <a href="../self-hosted-v4.1.0/" title="Self-hosted v4.1.0" class="md-nav__link">
       Self-hosted v4.1.0
     </a>
   </li>
@@ -2987,7 +3012,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v4.0.1/" title="Self-hosted v4.0.1" class="md-nav__link">
+    <a href="../self-hosted-v4.0.1/" title="Self-hosted v4.0.1" class="md-nav__link">
       Self-hosted v4.0.1
     </a>
   </li>
@@ -2999,7 +3024,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v4.0.0/" title="Self-hosted v4.0.0" class="md-nav__link">
+    <a href="../self-hosted-v4.0.0/" title="Self-hosted v4.0.0" class="md-nav__link">
       Self-hosted v4.0.0
     </a>
   </li>
@@ -3041,7 +3066,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v3.5.1/" title="Self-hosted v3.5.1" class="md-nav__link">
+    <a href="../self-hosted-v3.5.1/" title="Self-hosted v3.5.1" class="md-nav__link">
       Self-hosted v3.5.1
     </a>
   </li>
@@ -3053,7 +3078,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v3.5.0/" title="Self-hosted v3.5.0" class="md-nav__link">
+    <a href="../self-hosted-v3.5.0/" title="Self-hosted v3.5.0" class="md-nav__link">
       Self-hosted v3.5.0
     </a>
   </li>
@@ -3065,7 +3090,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v3.4.0/" title="Self-hosted v3.4.0" class="md-nav__link">
+    <a href="../self-hosted-v3.4.0/" title="Self-hosted v3.4.0" class="md-nav__link">
       Self-hosted v3.4.0
     </a>
   </li>
@@ -3077,7 +3102,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v3.3.0/" title="Self-hosted v3.3.0" class="md-nav__link">
+    <a href="../self-hosted-v3.3.0/" title="Self-hosted v3.3.0" class="md-nav__link">
       Self-hosted v3.3.0
     </a>
   </li>
@@ -3089,7 +3114,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v3.2.0/" title="Self-hosted v3.2.0" class="md-nav__link">
+    <a href="../self-hosted-v3.2.0/" title="Self-hosted v3.2.0" class="md-nav__link">
       Self-hosted v3.2.0
     </a>
   </li>
@@ -3101,7 +3126,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v3.1.0/" title="Self-hosted v3.1.0" class="md-nav__link">
+    <a href="../self-hosted-v3.1.0/" title="Self-hosted v3.1.0" class="md-nav__link">
       Self-hosted v3.1.0
     </a>
   </li>
@@ -3113,7 +3138,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v3.0.0/" title="Self-hosted v3.0.0" class="md-nav__link">
+    <a href="../self-hosted-v3.0.0/" title="Self-hosted v3.0.0" class="md-nav__link">
       Self-hosted v3.0.0
     </a>
   </li>
@@ -3155,7 +3180,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v2.2.1/" title="Self-hosted v2.2.1" class="md-nav__link">
+    <a href="../self-hosted-v2.2.1/" title="Self-hosted v2.2.1" class="md-nav__link">
       Self-hosted v2.2.1
     </a>
   </li>
@@ -3167,7 +3192,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v2.2.0/" title="Self-hosted v2.2.0" class="md-nav__link">
+    <a href="../self-hosted-v2.2.0/" title="Self-hosted v2.2.0" class="md-nav__link">
       Self-hosted v2.2.0
     </a>
   </li>
@@ -3179,7 +3204,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v2.1.1/" title="Self-hosted v2.1.1" class="md-nav__link">
+    <a href="../self-hosted-v2.1.1/" title="Self-hosted v2.1.1" class="md-nav__link">
       Self-hosted v2.1.1
     </a>
   </li>
@@ -3191,7 +3216,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v2.1.0/" title="Self-hosted v2.1.0" class="md-nav__link">
+    <a href="../self-hosted-v2.1.0/" title="Self-hosted v2.1.0" class="md-nav__link">
       Self-hosted v2.1.0
     </a>
   </li>
@@ -3203,7 +3228,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v2.0.0/" title="Self-hosted v2.0.0" class="md-nav__link">
+    <a href="../self-hosted-v2.0.0/" title="Self-hosted v2.0.0" class="md-nav__link">
       Self-hosted v2.0.0
     </a>
   </li>
@@ -3245,7 +3270,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v1.5.0/" title="Self-hosted v1.5.0" class="md-nav__link">
+    <a href="../self-hosted-v1.5.0/" title="Self-hosted v1.5.0" class="md-nav__link">
       Self-hosted v1.5.0
     </a>
   </li>
@@ -3257,7 +3282,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v1.4.0/" title="Self-hosted v1.4.0" class="md-nav__link">
+    <a href="../self-hosted-v1.4.0/" title="Self-hosted v1.4.0" class="md-nav__link">
       Self-hosted v1.4.0
     </a>
   </li>
@@ -3269,7 +3294,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v1.3.0/" title="Self-hosted v1.3.0" class="md-nav__link">
+    <a href="../self-hosted-v1.3.0/" title="Self-hosted v1.3.0" class="md-nav__link">
       Self-hosted v1.3.0
     </a>
   </li>
@@ -3281,7 +3306,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v1.2.0/" title="Self-hosted v1.2.0" class="md-nav__link">
+    <a href="../self-hosted-v1.2.0/" title="Self-hosted v1.2.0" class="md-nav__link">
       Self-hosted v1.2.0
     </a>
   </li>
@@ -3293,7 +3318,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v1.1.0/" title="Self-hosted v1.1.0" class="md-nav__link">
+    <a href="../self-hosted-v1.1.0/" title="Self-hosted v1.1.0" class="md-nav__link">
       Self-hosted v1.1.0
     </a>
   </li>
@@ -3305,7 +3330,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v1.0.1/" title="Self-hosted v1.0.1" class="md-nav__link">
+    <a href="../self-hosted-v1.0.1/" title="Self-hosted v1.0.1" class="md-nav__link">
       Self-hosted v1.0.1
     </a>
   </li>
@@ -3317,7 +3342,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../release-notes/self-hosted/self-hosted-v1.0.0/" title="Self-hosted v1.0.0" class="md-nav__link">
+    <a href="../self-hosted-v1.0.0/" title="Self-hosted v1.0.0" class="md-nav__link">
       Self-hosted v1.0.0
     </a>
   </li>
@@ -3365,29 +3390,94 @@
                   
                 
                 
-                <h1 id="post-commit-hooks">Post-commit hooks<a class="headerlink" href="#post-commit-hooks" title="Permanent link">#</a></h1>
-<p>For Codacy to check updates in your repository (new commits and pull requests) you must have post-commit hooks enabled.</p>
-<p>There are two ways to do this: <strong>automatically</strong> or <strong>manually</strong></p>
-<h2 id="automatic-setup-of-post-commit-hook">Automatic setup of post-commit hook<a class="headerlink" href="#automatic-setup-of-post-commit-hook" title="Permanent link">#</a></h2>
-<p>If you're using GitHub or Bitbucket you can let Codacy configure the hook for you. Go to your <strong>repository settings</strong> and click on the <strong>Integrations</strong> tab. There should be a switch button for the automatic setup of post-commit hooks.</p>
-<h3 id="missing-hook-automatic-setup-switch-button">Missing hook automatic setup switch button<a class="headerlink" href="#missing-hook-automatic-setup-switch-button" title="Permanent link">#</a></h3>
-<p>If the switch isn't visible, go to the <strong>Integrations</strong> tab and add the GitHub or Bitbucket integration.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Make sure that you enable the integration after adding it.</p>
-</div>
-<p><img alt="Adding an integration" src="../images/webhook-integration-add.png" /></p>
-<h2 id="manual-setup-of-post-commit-hooks-on-github">Manual setup of post-commit hooks on GitHub<a class="headerlink" href="#manual-setup-of-post-commit-hooks-on-github" title="Permanent link">#</a></h2>
-<p>To turn on post-commit hooks for GitHub:</p>
+                <h1 id="self-hosted-v800">Self-hosted v8.0.0<a class="headerlink" href="#self-hosted-v800" title="Permanent link">#</a></h1>
+<p>These release notes are for <a href="https://github.com/codacy/chart/releases/tag/8.0.0" target="_blank">Codacy Self-hosted v8.0.0</a>, released on May 12, 2022.</p>
+<p>📢 <a href="https://roadmap.codacy.com">Visit the Codacy roadmap</a> and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!</p>
+<h2 id="upgrading-codacy-self-hosted">Upgrading Codacy Self-hosted<a class="headerlink" href="#upgrading-codacy-self-hosted" title="Permanent link">#</a></h2>
+<p>Follow the steps below to upgrade to Codacy Self-hosted v8.0.0:</p>
 <ol>
-<li>Copy the hook URL to your clipboard.</li>
-<li>Go to <strong>Webhooks &amp; Services</strong> under your repository settings.</li>
-<li>Paste the hook URL into the field <strong>Payload URL</strong>.</li>
-<li>Select <code>application/json</code> in the field <strong>Content Type</strong>.</li>
-<li>Click <strong>Add Webhook</strong>.</li>
+<li>
+<p>Check the <a href="../../#self-hosted">release notes for all Codacy Self-hosted versions</a> <strong>between your current version and the most recent version</strong> for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.</p>
+</li>
+<li>
+<p>Follow the instructions to <a href="https://docs.codacy.com/v8.0/chart/maintenance/upgrade/">upgrade your Codacy Self-hosted instance</a>.</p>
+</li>
+<li>
+<p>Update your Codacy command-line tools to the versions with the Git tag <code>self-hosted-8.0.0</code>:</p>
+<ul>
+<li><a href="https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-8.0.0">Codacy Analysis CLI</a></li>
+<li><a href="https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-8.0.0">Codacy Coverage Reporter</a></li>
+</ul>
+</li>
 </ol>
-<p>Here's an example of how to configure your hooks on GitHub:</p>
-<p><img alt="Configuring a hook on GitHub" src="../images/webhook-example-github.gif" /></p>
+<h2 id="breaking-changes">Breaking changes<a class="headerlink" href="#breaking-changes" title="Permanent link">#</a></h2>
+<p>ESLint 8 will be <strong>enabled by default on new repositories</strong> starting on this version of Codacy Self-hosted.</p>
+<p>The previous Codacy Self-hosted version <a href="../self-hosted-v7.0.0/#product-enhancements">already included ESLint 8 as a new supported tool and deprecated ESLint 7</a>, and Codacy recommends that you migrate to the new version of the tool to benefit from the new features and fixes of ESLint.</p>
+<p>See <a href="../../cloud/cloud-2022-03-31-adding-eslint8/#migrating-your-configuration-files-to-use-eslint-8">how to migrate your configuration files to use ESLint 8</a>. (CY-5848)</p>
+<h2 id="product-enhancements">Product enhancements<a class="headerlink" href="#product-enhancements" title="Permanent link">#</a></h2>
+<ul>
+<li>Updated the design of the <strong>Code patterns</strong> page to make the currently selected tool more noticeable. (CY-6021)</li>
+<li>Added support for the ESLint plugin <a href="https://github.com/mysticatea/eslint-plugin-es" target="_blank"><span class="skip-vale">eslint-plugin-es</span></a> to disallow the syntax of specific ECMAScript versions. (CY-5968)</li>
+<li>Moved the code coverage setup page under the repository <strong>Settings</strong>, tab <strong>Coverage</strong>. The new page includes a list of the most recent coverage reports uploaded to Codacy to <a href="http://docs.codacy.com/v8.0/coverage-reporter/#uploading-coverage">help you troubleshoot your coverage setup</a>. (CY-5399)</li>
+</ul>
+<h2 id="bug-fixes">Bug fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">#</a></h2>
+<ul>
+<li>Fixed an issue that could be used by an attacker to redirect Codacy users to a malicious URL. CVSS v3.1 score: 6.5 (Medium) (CY-6052)</li>
+<li>Fixed a broken link in the notification emails sent to organization admins when new members ask to join an organization. (CY-5979)</li>
+<li>Fixed an issue that prevented Codacy from listing GitHub repositories on the Repositories list. (CY-5935)</li>
+<li>Fixed an issue that could cause the <strong>Organization Overview</strong> page to display pull requests with the wrong status under the <strong>Most problematic</strong> open pull requests tab. (CY-5872)</li>
+<li>Now, the <strong>Files</strong> page always displays the <strong>Coverage</strong> column on repositories that have coverage set up, even if there's no coverage data for any of the displayed files. (CY-5555)</li>
+</ul>
+<h2 id="tool-versions">Tool versions<a class="headerlink" href="#tool-versions" title="Permanent link">#</a></h2>
+<p>This version of Codacy Self-hosted includes the tool versions below. The tools that were updated on this version are highlighted in bold:</p>
+<ul>
+<li>Ameba 0.13.1</li>
+<li>Bandit 1.7.0</li>
+<li>Brakeman 4.3.1</li>
+<li>bundler-audit 0.6.1</li>
+<li>Checkov 2.0.399</li>
+<li>Checkstyle 8.44</li>
+<li>Clang-Tidy 10.0.1</li>
+<li>CodeNarc 2.2.0</li>
+<li>CoffeeLint 2.1.0</li>
+<li>Cppcheck 2.2</li>
+<li>Credo 1.4.0</li>
+<li>CSSLint 1.0.5</li>
+<li><strong><a href="https://github.com/dart-lang/sdk/blob/main/CHANGELOG.md#2162---2022-03-24" target="_blank">dartanalyzer 2.16.2</a> (updated from 2.16.1)</strong></li>
+<li>detekt 1.19.0</li>
+<li><strong><a href="https://github.com/eslint/eslint/releases/tag/v8.14.0" target="_blank">ESLint 8.14.0</a> (updated from 8.10.0)</strong></li>
+<li>ESLint (deprecated) 7.32.0</li>
+<li>Faux-Pas 1.7.2</li>
+<li><strong><a href="https://github.com/david-a-wheeler/flawfinder/blob/master/ChangeLog" target="_blank">Flawfinder 2.0.19</a> (updated from 2.0.11)</strong></li>
+<li>Gosec 2.8.1</li>
+<li>Hadolint 1.18.2</li>
+<li>Jackson Linter 2.10.2</li>
+<li>JSHint 2.12.0</li>
+<li>markdownlint 0.23.1</li>
+<li>PHP Mess Detector 2.10.1</li>
+<li>PHP_CodeSniffer 3.6.2</li>
+<li>PMD 6.36.0</li>
+<li>Prospector 1.3.1</li>
+<li>PSScriptAnalyzer 1.18.3</li>
+<li>Pylint 1.9.5</li>
+<li>Pylint (Python 3) 2.7.4</li>
+<li>remark-lint 7.0.1</li>
+<li>Revive 1.0.2</li>
+<li><strong><a href="https://github.com/rubocop/rubocop/releases/tag/v1.28.2" target="_blank">RuboCop 1.28.2</a> (updated from 1.26.1)</strong></li>
+<li>Scalastyle 1.5.0</li>
+<li>ShellCheck v0.7.2</li>
+<li><strong><a href="https://github.com/SonarSource/sonar-dotnet/releases/tag/8.33.0.40503" target="_blank">Sonar C# 8.33</a> (updated from 8.30)</strong></li>
+<li>Sonar Visual Basic 8.15</li>
+<li>spectral-rulesets 1.2.7</li>
+<li>SpotBugs 4.5.3</li>
+<li>SQLint 0.2.1</li>
+<li>Staticcheck 2020.1.6</li>
+<li>Stylelint 14.2.0</li>
+<li>SwiftLint 0.43.1</li>
+<li>Tailor 0.12.0</li>
+<li>TSLint 6.1.3</li>
+<li>TSQLLint 1.11.1</li>
+</ul>
               
               
                 
@@ -3431,7 +3521,7 @@
           <br>
         </div>
         <p>
-          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Post-commit hooks%22">create a more detailed issue on our GitHub repository</a>.
+          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Self-hosted v8.0.0%22">create a more detailed issue on our GitHub repository</a>.
         </p>
       </div>
     </div>
@@ -3440,14 +3530,14 @@
     </p>
     
     <p>
-      <a href="https://github.com/codacy/docs/edit/master/docs/repositories-configure/integrations/post-commit-hooks.md" title="Edit this page">
+      <a href="https://github.com/codacy/docs/edit/master/docs/release-notes/self-hosted/self-hosted-v8.0.0.md" title="Edit this page">
         Edit this page on GitHub
       </a>
       if you notice something wrong or missing.
     </p>
     
     <p>
-      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Post-commit hooks">support@codacy.com</a>.
+      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Self-hosted v8.0.0">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -3544,7 +3634,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 30, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 12, 2022</span>
     
   </small>
 </div>
