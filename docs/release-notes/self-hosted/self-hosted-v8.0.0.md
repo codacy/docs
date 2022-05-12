@@ -18,7 +18,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.0.0:
 
 1.  Check the [release notes for all Codacy Self-hosted versions](../index.md#self-hosted) **between your current version and the most recent version** for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
-1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v7.1/chart/maintenance/upgrade/).
+1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v8.0/chart/maintenance/upgrade/).
 
 1.  Update your Codacy command-line tools to the versions with the Git tag `self-hosted-8.0.0`:
 
@@ -37,7 +37,7 @@ See [how to migrate your configuration files to use ESLint 8](../cloud/cloud-202
 
 -   Updated the design of the **Code patterns** page to make the currently selected tool more noticeable. (CY-6021)
 -   Added support for the ESLint plugin [<span class="skip-vale">eslint-plugin-es</span>](https://github.com/mysticatea/eslint-plugin-es){: target="_blank"} to disallow the syntax of specific ECMAScript versions. (CY-5968)
--   Moved the code coverage setup page under the repository **Settings**, tab **Coverage**. The new page includes a list of the most recent coverage reports uploaded to Codacy to [help you troubleshoot your coverage setup](http://docs.codacy.com/v7.1/coverage-reporter/#uploading-coverage). (CY-5399)
+-   Moved the code coverage setup page under the repository **Settings**, tab **Coverage**. The new page includes a list of the most recent coverage reports uploaded to Codacy to [help you troubleshoot your coverage setup](http://docs.codacy.com/v8.0/coverage-reporter/#uploading-coverage). (CY-5399)
 
 ## Bug fixes
 
