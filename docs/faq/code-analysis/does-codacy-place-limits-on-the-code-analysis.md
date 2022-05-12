@@ -50,11 +50,19 @@ See <a href="../../troubleshooting/why-arent-duplication-metrics-being-calculate
 Codacy limits the number of issues returned on each file by individual tools as a safeguard against degradation of performance on large or unexpected use cases. This means that in some situations Codacy could report more issues after a push that includes fixes for the currently reported issues.
 </td>
 </tr>
+    
 <tr>
 <td>Number of comments on the Git provider</td>
 <td>25</td>
 <td>
 Codacy limits the number of comments for reporting found issues on pull requests to avoid triggering too many notification emails and to guard against hitting API rate limits.
+</td>
+</tr>
+<tr>
+<td>Showing issues on duplicated lines</td>
+<td>-</td>
+<td>
+For now, Codacy only shows the first code issue when there are issues on duplicated lines over the same file. 
 </td>
 </tr>
 </table>
