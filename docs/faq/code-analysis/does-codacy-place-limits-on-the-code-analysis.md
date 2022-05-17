@@ -66,7 +66,7 @@ Codacy limits the number of comments for reporting found issues on pull requests
 <td>Showing issues on duplicated lines</td>
 <td>-</td>
 <td>
-For now, Codacy only shows the first code issue when there are issues on duplicated lines over the same file. 
+For now, Codacy only reports the first code issue when there are issues on duplicated lines on the same file. 
 </td>
 </tr>
 </table>
