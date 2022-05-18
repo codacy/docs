@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           submodules: true
           # git-revision-date-localized-plugin and mkdocs-rss-plugin need full git history depth
           fetch-depth: 0
