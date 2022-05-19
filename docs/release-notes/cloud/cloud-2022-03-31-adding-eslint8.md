@@ -9,7 +9,7 @@ On March 31, 2022 Codacy is adding ESLint 8 as a new supported tool and deprecat
 
 -   ESLint 8 will be enabled by default on new repositories and Codacy recommends that you migrate to this version of the tool to benefit from the new features and fixes of ESLint
 
--   ESLint 7 will still be available but Codacy will stop providing updates for this version of the tool, and will remove it completely on April 4, 2023.
+-   ESLint 7 will still be available but Codacy will stop providing updates for this version of the tool, and will remove it completely on April 4, 2023
 
 [See this post on the Codacy Community](https://community.codacy.com/t/introducing-eslint-version-8-on-our-platform/868) for more details on this update.
 
