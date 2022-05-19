@@ -11,7 +11,7 @@
         <meta name="description" content="Review the list of permissions that Codacy requires from your Git provider to analyze your code.">
       
       
-        <meta http-equiv="last-modified" content="2022-03-25 17:31:18">  
+        <meta http-equiv="last-modified" content="2022-05-19 13:53:50">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/which-permissions-does-codacy-need-from-my-account/">
@@ -3401,7 +3401,7 @@
 </ul>
 <p>Codacy requests only the necessary permissions from your Git provider to analyze your code and <a href="https://security.codacy.com/">keeps your information secure</a>. See the sections below for the detailed list of permissions that Codacy asks for depending on the provider.</p>
 <h2 id="github-cloud">GitHub Cloud<a class="headerlink" href="#github-cloud" title="Permanent link">#</a></h2>
-<p>If you log in with GitHub, Codacy requires the following <a href="https://developer.github.com/v3/apps/permissions/">app permissions</a>:</p>
+<p>If you log in with GitHub, Codacy requires the following <a href="https://docs.github.com/en/rest/overview/permissions-required-for-github-apps">app permissions</a>:</p>
 <table>
   <colgroup>
     <col width="20%"/>
@@ -3574,7 +3574,7 @@
 <li>
 <p>To ensure that the integration is removed not only on Codacy but also on the integration side, we recommend that you follow the instructions on how to revoke the Codacy OAuth application on your provider:</p>
 <ul>
-<li><a href="https://help.github.com/en/github/authenticating-to-github/reviewing-your-authorized-integrations">GitHub Cloud</a></li>
+<li><a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations">GitHub Cloud</a></li>
 <li><a href="https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications">GitLab Cloud</a></li>
 <li><a href="https://support.atlassian.com/bitbucket-cloud/docs/bitbucket-cloud-apps-overview/#OAuth-consumer-permissions">Bitbucket Cloud</a></li>
 <li><a href="https://support.google.com/accounts/answer/3466521#remove-access">Google Sign-in</a></li>
@@ -3589,7 +3589,7 @@
 <li>If your repository uses submodules, so that Codacy can clone the repositories for each submodule</li>
 <li>If Codacy fails to integrate with a repository using the repository key, so that Codacy can continue to perform analysis</li>
 </ul>
-<p><strong>Codacy only adds read-only SSH keys to be able to clone repositories</strong> and won't have access to any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also <a href="https://docs.github.com/en/github/authenticating-to-github/reviewing-your-ssh-keys">revoke the keys created by Codacy at any time</a>. Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.</p>
+<p><strong>Codacy only adds read-only SSH keys to be able to clone repositories</strong> and won't have access to any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-ssh-keys">revoke the keys created by Codacy at any time</a>. Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.</p>
 <p>We understand the desire for security and privacy and find that the SSH protocol is preferable to HTTPS as it separates Codacy's access rights from the one of the users.</p>
               
               
@@ -3747,7 +3747,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 25, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 19, 2022</span>
     
   </small>
 </div>
