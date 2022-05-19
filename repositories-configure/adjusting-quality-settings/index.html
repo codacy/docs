@@ -11,7 +11,7 @@
         <meta name="description" content="The Quality settings allow you to configure quality gates for your pull requests and commits, and define quality goals that help you monitor the progress of the code quality in your repository dashboard.">
       
       
-        <meta http-equiv="last-modified" content="2022-04-13 16:21:28">  
+        <meta http-equiv="last-modified" content="2022-05-19 15:16:55">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/adjusting-quality-settings/">
@@ -3390,7 +3390,7 @@
 <li><strong>New security issues are over:</strong> Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value.</li>
 <li><strong>Complexity is over:</strong> Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value.</li>
 <li><strong>Duplication is over:</strong> Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value.</li>
-<li><strong>Diff coverage is under:</strong> Pull requests are marked not up to standards if the diff coverage of the pull request is lower than the set value. This rule is only available for pull requests.</li>
+<li><strong>Diff coverage is under:</strong> Pull requests are marked not up to standards if the diff coverage of the pull request is lower than the set value or <code>∅</code> (<a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#code-coverage">not applicable</a>). This rule is only available for pull requests.</li>
 <li>
 <p><strong>Coverage variation is under:</strong> Pull requests or commits are marked not up to standards if they introduce a variation to coverage lower than the set value. The maximum value is 1%.</p>
 <div class="admonition tip">
@@ -3579,7 +3579,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 13, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 19, 2022</span>
     
   </small>
 </div>

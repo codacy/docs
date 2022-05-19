@@ -3428,7 +3428,7 @@
 <p>If you don't have any rules enabled for pull requests, the status is always <strong>Up to standards</strong>.</p>
 </li>
 <li>
-<p>The changes to the following <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">code quality metrics</a> introduced by the pull request are displayed either as a <strong>positive or negative variation</strong>, or <strong>no variation</strong> (represented by <code>=</code>):</p>
+<p>The changes to the following <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">code quality metrics</a> introduced by the pull request are displayed either as a <strong>positive or negative variation</strong>, <strong>no variation</strong> (represented by <code>=</code>), or <strong>not applicable</strong> (represented by <code>∅</code>):</p>
 <ul>
 <li><strong>Issues:</strong> Number of new or fixed issues</li>
 <li><strong>Duplication:</strong> Number of new or fixed duplicated code blocks</li>
@@ -3438,7 +3438,7 @@
 <li>
 <p><strong>Coverage variation:</strong> Variation of code coverage relative to the target branch</p>
 </li>
-<li><strong>Diff coverage:</strong> Code coverage of the lines added or changed by the pull request</li>
+<li><strong>Diff coverage:</strong> Code coverage of the coverable lines added or changed by the pull request, or <code>∅</code> (not applicable) if there aren't any coverable lines added or changed</li>
 </ul>
 <p>Depending on the languages being analyzed or if you haven't <a href="../../coverage-reporter/">set up coverage for your repository</a>, some metrics <strong>may not be calculated</strong> (represented by <code>-</code>).</p>
 </li>
