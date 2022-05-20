@@ -173,3 +173,12 @@ If you continue requesting more pages the endpoint will eventually return a `pag
   }
 }
 ```
+
+## API request rate limits
+
+Codacy limits the number of requests that you can perform to the Codacy API to help us provide a reliable service:
+
+-   The limit is **2500 requests per 5 minutes and per source IP address**
+-   When a request is rate limited, Codacy responds with an HTTP 503 or 504 error code and you should wait before attempting the request again
+
+Although it's possible for you to perform short bursts of requests to the Codacy API, you should always use a delay between requests to ensure that your API client doesn't hit the rate limits.
