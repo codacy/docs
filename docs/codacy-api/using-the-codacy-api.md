@@ -67,7 +67,7 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
     https://<your Codacy instance domain name>/api/v3
     ```
 
-## Authenticating requests to the Codacy API
+## Authenticating requests
 
 Most API endpoints require that you authenticate using an API token. After [obtaining the necessary tokens](api-tokens.md), include them in your request headers using the format `api-token: <your account API token>` or `project-token: <your project API token>`.
 
@@ -174,7 +174,7 @@ If you continue requesting more pages the endpoint will eventually return a `pag
 }
 ```
 
-## API request rate limits
+## Request rate limit
 
 Codacy limits the number of requests that you can perform to the Codacy API to help us provide a reliable service:
 
