@@ -11,7 +11,7 @@
         <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2022-04-28 10:26:08">  
+        <meta http-equiv="last-modified" content="2022-05-19 15:33:48">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
@@ -3561,7 +3561,12 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Alternatively, you can upload each report separately with the flag <code>--partial</code> and notify Codacy with the <code>final</code> command after uploading all reports. For example:</p>
+<p>Alternatively, you can:</p>
+<ol>
+<li>Upload each report separately with the flag <code>--partial</code></li>
+<li>Notify Codacy with the <code>final</code> command after uploading all reports</li>
+</ol>
+<p>For example:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
     --partial -l Java -r report1.xml
 bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
@@ -3751,7 +3756,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 28, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 19, 2022</span>
     
   </small>
 </div>

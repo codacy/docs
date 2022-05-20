@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter.">
       
       
-        <meta http-equiv="last-modified" content="2022-04-01 16:41:30">  
+        <meta http-equiv="last-modified" content="2022-05-20 10:49:12">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/troubleshooting-common-issues/">
@@ -3414,6 +3414,15 @@
 <ul>
 <li>Make sure that the file paths included in your coverage reports are relative to the root directory of your repository. For example, <code>src/index.js</code>.</li>
 <li>Verify that the Codacy Coverage Reporter is uploading the coverage data for the <a href="#commit-detection">correct commit in the correct branch</a>.</li>
+<li>
+<p>For pull requests, make sure that you have uploaded the coverage data for both:</p>
+<ul>
+<li>The commit that is the common ancestor of the pull request branch and the target branch</li>
+<li>The last commit in the pull request branch</li>
+</ul>
+<p>The following diagram highlights the commits that must have received coverage data for Codacy to display coverage information on a pull request:</p>
+<p><img alt="Commits that must have coverage data" src="../images/coverage-pr-commits.png" /></p>
+</li>
 </ul>
 <h3 id="commit-detection">Commit SHA hash detection<a class="headerlink" href="#commit-detection" title="Permanent link">#</a></h3>
 <p>The Codacy Coverage Reporter automatically detects the commit SHA hash to associate with the coverage data from the following CI/CD platforms:</p>
@@ -3641,7 +3650,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 1, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 20, 2022</span>
     
   </small>
 </div>
