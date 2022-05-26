@@ -21,6 +21,9 @@ def check_supported_tools():
             continue
         tool_name = tool["name"]
         tool_short_name = tool["shortName"]
+        # Hack to ensure that Pylint is detected
+        if tool_short_name == "pylintpython3":
+            tool_name = "Pylint"
         tool_languages = tool["languages"]
         if tool_name.lower() in documentation or tool_short_name.lower() in documentation:
             print(emoji.emojize(f":check_mark_button: {tool_name} is included "

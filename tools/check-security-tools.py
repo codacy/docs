@@ -23,6 +23,9 @@ def check_security_tools():
             continue
         tool_name = tool["name"]
         tool_short_name = tool["shortName"]
+        # Hack to ensure that Pylint is detected
+        if tool_short_name == "pylintpython3":
+            tool_name = "Pylint"
         tool_languages = tool["languages"]
         r = requests.get(ENDPOINT_URL_CODE_PATTERNS.substitute(toolUuid=tool["uuid"]))
         code_patterns = r.json()["data"]
