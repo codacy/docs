@@ -24,15 +24,21 @@ def check_security_tools():
         tool_name = tool["name"]
         tool_short_name = tool["shortName"]
         tool_languages = tool["languages"]
-        code_patterns = requests.get(ENDPOINT_URL_CODE_PATTERNS.substitute(toolUuid=tool["uuid"])).json()["data"]
+        r = requests.get(ENDPOINT_URL_CODE_PATTERNS.substitute(toolUuid=tool["uuid"]))
+        code_patterns = r.json()["data"]
+        cursor = r.json()["pagination"].get("cursor", False)
+        while cursor:
+            r = requests.get(ENDPOINT_URL_CODE_PATTERNS.substitute(toolUuid=tool["uuid"]) + f"?cursor={cursor}")
+            code_patterns += r.json()["data"]
+            cursor = r.json()["pagination"].get("cursor", False)
         for code_pattern in code_patterns:
             if code_pattern["category"] == "Security":
                 if tool_name.lower() in documentation or tool_short_name.lower() in documentation:
-                    print(emoji.emojize(f":check_mark_button: {tool_name} is included "
-                                        f"({', '.join(map(str, tool_languages))})"))
+                    print(emoji.emojize(f":check_mark_button: {tool_name} ({', '.join(map(str, tool_languages))}) "
+                                        f"is included, checked {len(code_patterns)} patterns"))
                 else:
-                    print(emoji.emojize(f":cross_mark: {tool_name} ISN'T included "
-                                        f"({', '.join(map(str, tool_languages))})"))
+                    print(emoji.emojize(f":cross_mark: {tool_name} ({', '.join(map(str, tool_languages))}) "
+                                        f"ISN'T included, checked {len(code_patterns)} patterns"))
                     count += 1
                 break
     if count:
