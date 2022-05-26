@@ -107,7 +107,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
   </tbody>
 </table>
 
-<sup>1</sup>: Outside Collaborators aren't supported as members of organizations on Codacy. However, you can [add them](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories.  
+<sup>1</sup>: Outside Collaborators aren't supported as members of organizations on Codacy. You can still [add Outside Collaborators to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.  
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization).
 
 ## Permissions for GitLab
@@ -204,7 +204,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
   </tbody>
 </table>
 
-<sup>1</sup>: External Users aren't supported as members of organizations on Codacy. However, you can [add them](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories.  
+<sup>1</sup>: External Users aren't supported as members of organizations on Codacy. You can still [add External Users to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.  
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization).
 
 ## Permissions for Bitbucket
