@@ -35,7 +35,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <th>Language or framework</th>
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Static analysis</a></th>
-      <th><a style="color: white;" href="#suggested-fixes">Suggested fixes</a></th>
+      <th><a style="color: white;" href="#suggest-fixes">Suggested fixes</a></th>
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">Duplication</a></th>
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">Complexity</a></th>
     </tr>
@@ -169,7 +169,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://eslint.org/">ESLint</a>,
           <a href="https://jshint.com/">JSHint</a>,
           <a href="https://pmd.github.io/">PMD</a></td>
-      <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggested-fixes">🔧</a></td>
+      <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://eslint.org/">ESLint</a></td>
     </tr>
@@ -211,7 +211,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Markdown</td>
       <td><a href="https://github.com/remarkjs/remark-lint">remark-lint</a>, <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
-      <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> <a href="#suggested-fixes">🔧</a></td>
+      <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> <a href="#suggest-fixes">🔧</a></td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -336,7 +336,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>TypeScript</td>
       <td><a href="https://eslint.org/">ESLint</a>,
           <a href="https://palantir.github.io/tslint/">TSLint</a></td>
-      <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggested-fixes">🔧</a></td>
+      <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://eslint.org/">ESLint</a></td>
     </tr>
@@ -382,9 +382,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
 <sup><span id="cppcheck-misra">2</span></sup>: Currently, Cppcheck only supports [checking the MISRA guidelines for C](https://cppcheck.sourceforge.io/misra.php){: target="_blank"}.  
 <sup><span id="dart-limitations">3</span></sup>: Currently, Codacy only supports including the packages [lints](https://pub.dev/packages/lints){: target="_blank"} and [flutter_lints](https://pub.dev/packages/flutter_lints){: target="_blank"} on dartanalyzer configuration files.  
 <sup><span id="ruby-31">4</span></sup>: Currently, Codacy doesn't support any static code analysis tool for [Ruby 3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/){: target="_blank"}.  
-<sup><span id="swiftlint-complexity">5</span></sup>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html){: target="_blank"} on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code patterns page](../repositories-configure/configuring-code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration){: target="_blank"} to customize the thresholds.
-
-<sup><span id="suggested-fixes">🔧</span></sup>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
+<sup><span id="swiftlint-complexity">5</span></sup>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html){: target="_blank"} on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code patterns page](../repositories-configure/configuring-code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration){: target="_blank"} to customize the thresholds.  
+<sup><span id="suggest-fixes">🔧</span></sup>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
 
 ## See also
 
