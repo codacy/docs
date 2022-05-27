@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter.">
       
       
-        <meta http-equiv="last-modified" content="2022-05-20 10:49:12">  
+        <meta http-equiv="last-modified" content="2022-05-25 17:43:57">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/troubleshooting-common-issues/">
@@ -3478,8 +3478,8 @@
 </li>
 </ul>
 <h2 id="malformedinputexception-while-parsing-report">MalformedInputException while parsing report<a class="headerlink" href="#malformedinputexception-while-parsing-report" title="Permanent link">#</a></h2>
-<p>If you get a <code>java.nio.charset.MalformedInputException</code> when running the Codacy Coverage Reporter it means that the coverage report includes an unsupported character, perhaps on one of your source code file names.</p>
-<p>For maximum compatibility of your coverage reports with the Codacy Coverage Reporter, make sure that your coverage reports use UTF-8 encoding or remove any special characters from the reports.</p>
+<p>If you get a <code>java.nio.charset.MalformedInputException</code> when running the Codacy Coverage Reporter it means that the coverage report includes a character that is not encoded in UTF-8. The invalid character can belong to the file name of one of your source code files, or even a class or method name.</p>
+<p>For maximum compatibility of your coverage reports with the Codacy Coverage Reporter, make sure that your coverage reports use UTF-8 encoding and that they only include UTF-8 characters.</p>
 <h2 id="substratesegfaulthandler-caught-signal-11">SubstrateSegfaultHandler caught signal 11<a class="headerlink" href="#substratesegfaulthandler-caught-signal-11" title="Permanent link">#</a></h2>
 <p>If you're experiencing segmentation faults when uploading the coverage results due to <a href="https://github.com/oracle/graal/issues/624">oracle/graal#624</a>, execute the following command before running the reporter, as a workaround:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;</span><span class="k">$(</span>dig +short api.codacy.com <span class="p">|</span> tail -n1<span class="k">)</span><span class="s2"> api.codacy.com&quot;</span> &gt;&gt; /etc/hosts
@@ -3650,7 +3650,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 20, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 25, 2022</span>
     
   </small>
 </div>
