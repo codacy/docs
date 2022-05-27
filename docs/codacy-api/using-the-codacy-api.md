@@ -67,7 +67,7 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
     https://<your Codacy instance domain name>/api/v3
     ```
 
-## Authenticating requests to the Codacy API
+## Authenticating requests
 
 Most API endpoints require that you authenticate using an API token. After [obtaining the necessary tokens](api-tokens.md), include them in your request headers using the format `api-token: <your account API token>` or `project-token: <your project API token>`.
 
@@ -177,3 +177,14 @@ If you continue requesting more pages the endpoint will eventually return a `pag
   }
 }
 ```
+
+## Request rate limit
+
+**On Codacy Cloud** the number of requests that you can perform to the Codacy API is rate limited to help us provide a reliable service:
+
+-   The limit is **2500 requests per 5 minutes and per source IP address**
+-   When a request is rate limited, Codacy responds with an HTTP 503 or 504 error code and you should wait before attempting the request again
+
+Although it's possible for you to perform short bursts of requests to the Codacy API, you should always use a delay between requests to ensure that your API client doesn't hit the rate limits.
+
+The request rate limit doesn't apply to Codacy Self-hosted.

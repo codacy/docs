@@ -6,7 +6,7 @@ description: Create an account API token to authorize access to all the reposito
 
 The Codacy API tokens allow you to:
 
--   [Authenticate when using the Codacy API](using-the-codacy-api.md#authenticating-requests-to-the-codacy-api)
+-   [Authenticate when using the Codacy API](using-the-codacy-api.md#authenticating-requests)
 
 -   [Upload coverage data](../coverage-reporter/index.md) or [upload the results of running local analysis](../related-tools/local-analysis/running-local-analysis.md) to Codacy
 
