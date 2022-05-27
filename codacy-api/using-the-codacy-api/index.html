@@ -11,7 +11,7 @@
         <meta name="description" content="The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.">
       
       
-        <meta http-equiv="last-modified" content="2022-05-27 09:53:50">  
+        <meta http-equiv="last-modified" content="2022-05-27 10:49:49">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/using-the-codacy-api/">
@@ -1019,8 +1019,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#authenticating-requests-to-the-codacy-api" class="md-nav__link">
-    Authenticating requests to the Codacy API
+  <a href="#authenticating-requests" class="md-nav__link">
+    Authenticating requests
   </a>
   
 </li>
@@ -1035,6 +1035,13 @@
         <li class="md-nav__item md-nav__item--toc">
   <a href="#using-pagination" class="md-nav__link">
     Using pagination
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#request-rate-limit" class="md-nav__link">
+    Request rate limit
   </a>
   
 </li>
@@ -3431,7 +3438,7 @@
 https://&lt;your Codacy instance domain name&gt;/api/v3
 </code></pre></div>
 </div>
-<h2 id="authenticating-requests-to-the-codacy-api">Authenticating requests to the Codacy API<a class="headerlink" href="#authenticating-requests-to-the-codacy-api" title="Permanent link">#</a></h2>
+<h2 id="authenticating-requests">Authenticating requests<a class="headerlink" href="#authenticating-requests" title="Permanent link">#</a></h2>
 <p>Most API endpoints require that you authenticate using an API token. After <a href="../api-tokens/">obtaining the necessary tokens</a>, include them in your request headers using the format <code>api-token: &lt;your account API token&gt;</code> or <code>project-token: &lt;your project API token&gt;</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3514,6 +3521,14 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
 <span class="w">  </span><span class="p">}</span><span class="w"></span>
 <span class="p">}</span><span class="w"></span>
 </code></pre></div>
+<h2 id="request-rate-limit">Request rate limit<a class="headerlink" href="#request-rate-limit" title="Permanent link">#</a></h2>
+<p><strong>On Codacy Cloud</strong> the number of requests that you can perform to the Codacy API is rate limited to help us provide a reliable service:</p>
+<ul>
+<li>The limit is <strong>2500 requests per 5 minutes and per source IP address</strong></li>
+<li>When a request is rate limited, Codacy responds with an HTTP 503 or 504 error code and you should wait before attempting the request again</li>
+</ul>
+<p>Although it's possible for you to perform short bursts of requests to the Codacy API, you should always use a delay between requests to ensure that your API client doesn't hit the rate limits.</p>
+<p>The request rate limit doesn't apply to Codacy Self-hosted.</p>
               
               
                 
