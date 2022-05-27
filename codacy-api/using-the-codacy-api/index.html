@@ -11,7 +11,7 @@
         <meta name="description" content="The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.">
       
       
-        <meta http-equiv="last-modified" content="2022-04-29 09:29:29">  
+        <meta http-equiv="last-modified" content="2022-05-27 09:53:50">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/using-the-codacy-api/">
@@ -3467,12 +3467,17 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
      -d <span class="s1">&#39;{&quot;levels&quot;: [&quot;Error&quot;, &quot;Warning&quot;]}&#39;</span>
 </code></pre></div>
 <h2 id="using-pagination">Using pagination<a class="headerlink" href="#using-pagination" title="Permanent link">#</a></h2>
-<p>Endpoints that return lists containing a potential large number of results use cursor-based pagination to return the results in small batches:</p>
+<p>Endpoints that return lists containing a potential large number of results use cursor-based pagination to return the results in small batches.</p>
+<p>These endpoints return the results together with a <code>pagination</code> object:</p>
 <ul>
-<li>These endpoints return the results together with a <code>pagination</code> object that includes a <code>cursor</code>.</li>
-<li>To obtain the next page of results, call the endpoint again using the <code>cursor</code> from the previous response as a parameter.</li>
-<li>If the response doesn't include a <code>cursor</code> it means that the endpoint returned the last page of results.</li>
-<li>Use the parameter <code>limit</code> to configure the number of results that the endpoint returns in each page. The maximum <code>limit</code> is 1000 and the default is 100.</li>
+<li>
+<p>If the <code>pagination</code> object <strong>includes</strong> a <code>cursor</code>, obtain the next page of results by calling the endpoint again using the <code>cursor</code> from the previous response as a query string parameter</p>
+<p>If the <code>pagination</code> object <strong>doesn't include</strong> a <code>cursor</code>, the endpoint returned the last page of results</p>
+</li>
+<li>
+<p>Use the query string parameter <code>limit</code> to configure the number of results that the endpoint returns in each page. The maximum <code>limit</code> is 1000 and the default is 100</p>
+</li>
+<li>The <code>total</code> is the total number of results that the endpoint can return</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3665,7 +3670,7 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 29, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 27, 2022</span>
     
   </small>
 </div>
