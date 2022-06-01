@@ -56,10 +56,9 @@ The left-hand side of the dashboard lists the status of each security category t
 !!! tip
     You can use the **Warnings** drop-down list to display only security categories that have found issues or categories that have code patterns turned off.
 
-## Supported languages
+## Languages checked for security issues
 
-<!--TODO
-    Review section title and add intro-->
+The Security Monitor supports checking the languages and frameworks below for any security issues reported by the corresponding tools:
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
@@ -76,7 +75,7 @@ The left-hand side of the dashboard lists the status of each security category t
   <thead>
     <tr>
       <th>Language or framework</th>
-      <th>Tools</th>
+      <th>Tools that report security issues</th>
     </tr>
   </thead>
   <tbody>
