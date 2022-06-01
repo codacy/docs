@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to obtain information about issues in a repository programmatically using the Codacy API endpoint searchRepositoryIssues.">
       
       
-        <meta http-equiv="last-modified" content="2022-06-01 10:08:54">  
+        <meta http-equiv="last-modified" content="2022-01-14 11:47:51">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/obtaining-current-issues-in-repositories/">
@@ -3370,11 +3370,8 @@
 <li>Uses <a href="https://github.com/stedolan/jq" target="_blank">jq</a> to select only the necessary data fields and convert the results to the CSV format.</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
-<span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span> <span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
-<span class="nv">ORGANIZATION</span><span class="o">=</span><span class="s2">&quot;&lt;your organization name&gt;&quot;</span>
-<span class="nv">REPOSITORY</span><span class="o">=</span><span class="s2">&quot;&lt;your repository name&gt;&quot;</span>
 
-curl -X POST <span class="s2">&quot;https://app.codacy.com/api/v3/analysis/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/repositories/</span><span class="nv">$REPOSITORY</span><span class="s2">/issues/search&quot;</span> <span class="se">\</span>
+curl -X POST <span class="s2">&quot;https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/website/issues/search&quot;</span> <span class="se">\</span>
      -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
      -H <span class="s2">&quot;Content-Type: application/json&quot;</span> <span class="se">\</span>
      -d <span class="s1">&#39;{ &quot;levels&quot;: [&quot;Error&quot;, &quot;Warning&quot;], &quot;categories&quot;: [&quot;Security&quot;] }&#39;</span> <span class="se">\</span>
@@ -3546,7 +3543,7 @@ curl -X POST <span class="s2">&quot;https://app.codacy.com/api/v3/analysis/organ
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 1, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 14, 2022</span>
     
   </small>
 </div>

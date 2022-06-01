@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to obtain code quality metrics for files in a repository programmatically using the Codacy API endpoint listFiles.">
       
       
-        <meta http-equiv="last-modified" content="2022-06-01 10:08:54">  
+        <meta http-equiv="last-modified" content="2022-05-05 09:42:37">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/obtaining-code-quality-metrics-for-files/">
@@ -3377,11 +3377,8 @@
 <li>Uses <a href="https://github.com/stedolan/jq" target="_blank">jq</a> to select only the necessary data fields and convert the results to the CSV format.</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
-<span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span> <span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
-<span class="nv">ORGANIZATION</span><span class="o">=</span><span class="s2">&quot;&lt;your organization name&gt;&quot;</span>
-<span class="nv">REPOSITORY</span><span class="o">=</span><span class="s2">&quot;&lt;your repository name&gt;&quot;</span>
 
-curl -X GET <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/repositories/</span><span class="nv">$REPOSITORY</span><span class="s2">/files?search=src/router/&quot;</span> <span class="se">\</span>
+curl -X GET <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/gh/codacy/repositories/website/files?search=src/router/&quot;</span> <span class="se">\</span>
      -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
 <span class="p">|</span> jq -r <span class="s2">&quot;.data[] | [.path, .gradeLetter, .totalIssues, .complexity, .coverage, .duplication] | @csv&quot;</span>
 </code></pre></div>
@@ -3556,7 +3553,7 @@ curl -X GET <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/<
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 1, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 5, 2022</span>
     
   </small>
 </div>
