@@ -46,11 +46,13 @@ The example script:
 
 ```bash
 CODACY_API_TOKEN="<your account API token>"
+GIT_PROVIDER="<your Git provider>" # gh, ghe, gl, gle, bb, or bbe
+ORGANIZATION="<your organization name>"
 FILENAME="emails.txt"
 
 EMAILS=`awk -vORS=, '{if(length($1)>0) printf("\"%s\",", $1)}' $FILENAME | sed 's/,$//'`
 
-curl -X POST "https://app.codacy.com/api/v3/organizations/gh/codacy/people" \
+curl -X POST "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/people" \
      -H 'Content-Type: application/json' \
      -H "api-token: $CODACY_API_TOKEN" \
      -d "[$EMAILS]"

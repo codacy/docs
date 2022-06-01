@@ -5,6 +5,8 @@ Members of an organization can see the details of the repositories in that organ
 !!! important
     Make sure that you invite or ask your team members to join your organization on Codacy so that Codacy analyzes their commits on private repositories.
 
+    Contributors who aren't part of your Git provider organization can't join your Codacy organization, but you should still add them to Codacy to analyze their commits on private repositories.
+
 To list and manage the members of your organization, open your organization **Settings**, page **People**. This page also shows when the organization members last logged in to Codacy:
 
 ![People in an organization](images/organization-people.png)
@@ -58,3 +60,4 @@ To remove members from your organization open your organization **Settings**, pa
 ## See also
 
 -   [Adding people to Codacy programmatically](../codacy-api/examples/adding-people-to-codacy-programmatically.md)
+-   [Roles and permissions for synced organizations](roles-and-permissions-for-synced-organizations.md)

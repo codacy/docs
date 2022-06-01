@@ -3,8 +3,8 @@
 You're welcome to make fixes and changes to the documentation. Here are a few steps to get you going:
 
 -   [Authoring documentation pages](#authoring-documentation-pages)
--   [Releasing a new version of the documentation](#releasing-a-new-version-of-the-documentation)
--   [Updating an existing version of the documentation](#updating-an-existing-version-of-the-documentation)
+-   [Releasing a new Codacy Self-hosted documentation version](#releasing-a-new-codacy-self-hosted-documentation-version)
+-   [Updating an existing Codacy Self-hosted documentation version](#updating-an-existing-codacy-self-hosted-documentation-version)
 -   [Applying documentation hotfixes to existing chart releases](#applying-documentation-hotfixes-to-existing-chart-releases)
 
 ## Authoring documentation pages
@@ -110,22 +110,24 @@ Create pull requests to make changes to the documentation:
 
 A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows/mkdocs.yml) automatically deploys the generated HTML to GitHub Pages on every push to `master` or to the release branches `release/v*`.
 
-**Never use mkdocs directly to deploy the documentation**, since that would overwrite the contents of the `gh-pages` branch and we would lose the multiple versions of the documentation.
+**Never use mkdocs directly to deploy the documentation**, since that would overwrite the contents of the `gh-pages` branch and remove the multiple versions of the documentation.
 
-## Releasing a new version of the documentation
+## Releasing a new Codacy Self-hosted documentation version
 
-We must release a new version of the documentation when there is a new **major or minor** version release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the chart submodule documentation on the Latest version of the documentation and creating a dedicated documentation version for the new release.
+It's necessary to release a new version of the documentation when there is a new **major or minor** version release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the chart and <span class="skip-vale">codacy-coverage-reporter</span> submodule documentation on the Latest version of the documentation and creating a dedicated documentation version for the new release.
 
 ### Updating the Latest documentation version
 
-First, update the Latest documentation version with the new chart documentation:
+First, update the Latest documentation version with the latest chart and <span class="skip-vale">codacy-coverage-reporter</span> documentation:
 
-1.  Create a new branch to update the Latest documentation version.
-
-1.  Pull the latest changes from the `master` branch of the chart submodule.
+1.  Create a new branch and pull the latest changes from the `master` branch of the chart and <span class="skip-vale">codacy-coverage-reporter</span> submodules.
 
     ```bash
+    git checkout -b feature/update-submodules
     cd submodules/chart
+    git checkout master
+    git pull
+    cd ../codacy-coverage-reporter
     git checkout master
     git pull
     cd ../..
@@ -133,13 +135,13 @@ First, update the Latest documentation version with the new chart documentation:
 
 1.  Edit the file [`mkdocs.yml`](mkdocs.yml) and update the value of the variable `extra.version` to the new version of the chart.
 
-1.  Build the documentation and make sure that the changes for the new release of the chart are correct.
+1.  Build the documentation and make sure that the changes for the new chart and <span class="skip-vale">codacy-coverage-reporter</span> versions are correct.
 
-1.  Open a pull request with these changes and merge the branch into `master`.
+1.  Open a pull request with the changes and merge the branch into `master`.
 
-### Creating a new documentation version
+### Creating a new Codacy Self-hosted documentation version
 
-After updating the Latest documentation version, you're ready to create a new documentation version:
+After updating the Latest documentation version, you're ready to create a new Codacy Self-hosted documentation version:
 
 1.  Create a new release branch with the name `release/v<MAJOR>.<MINOR>` from the now updated `master` branch.
 
@@ -161,21 +163,29 @@ After updating the Latest documentation version, you're ready to create a new do
     cd ../..
     ```
 
-1.  Edit the file [`mkdocs.yml`](mkdocs.yml) and make sure that the value of the variable `extra.version` is set to the new version of the chart.
+1.  Pull the correct <span class="skip-vale">codacy-coverage-reporter</span> tag for this Codacy Self-hosted version.
 
-1.  Delete the release notes from the release branch, since we only publish the release notes on the Latest or main version of the documentation:
+    ```bash
+    cd submodules/codacy-coverage-reporter
+    git checkout self-hosted-2.0.0
+    cd ../..
+    ```
+
+1.  Edit the file `mkdocs.yml` and make sure that the value of the variable `extra.version` is set to the new version of the chart.
+
+1.  Delete the release notes from the release branch, since it's only necessary to publish the release notes on the Latest or main version of the documentation:
 
     -   Delete the folder `docs/release-notes`
 
     -   Delete all lines on `mkdocs.yml` that reference the removed files
 
-1.  Build the documentation and make sure that the changes for the new release of the chart are correct.
+1.  Build the documentation and make sure that the changes for the new chart and <span class="skip-vale">codacy-coverage-reporter</span> versions are correct.
 
 1.  Push the new branch and check that the GitHub workflow deploys the new documentation version under `https://docs.codacy.com/v<MAJOR>.<MINOR>`.
 
-## Updating an existing version of the documentation
+## Updating an existing Codacy Self-hosted documentation version
 
-You must update an existing version of the documentation when there is a new **patch release** of the [Codacy Self-hosted chart](https://github.com/codacy/chart).
+You must update an existing Codacy Self-hosted documentation version when there is a new **patch release** of the [Codacy Self-hosted chart](https://github.com/codacy/chart).
 
 To do this, you must update the documentation of the chart on the:
 
@@ -221,5 +231,5 @@ To apply a hotfix to an existing chart release:
 
 1.  Finally, follow the instructions to deploy the updated documentation for the chart version that received the hotfix:
 
-    -   [Updating an existing version of the documentation](#updating-an-existing-version-of-the-documentation)
+    -   [Updating an existing Codacy Self-hosted documentation version](#updating-an-existing-codacy-self-hosted-documentation-version)
     -   [Updating the Latest documentation version](#updating-the-latest-documentation-version)

@@ -11,7 +11,7 @@ To access your Repository Dashboard, select a repository from the [Organization 
 
 The top of the Repository Dashboard displays:
 
--   The name and code quality grade of the repository
+-   The name and [code quality grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade) of the repository
 -   A drop-down list that selects which branch of your repository to display on the dashboard
 
 On the Repository Dashboard you have four areas to help you monitor your repository:
@@ -25,7 +25,7 @@ The following sections provide a detailed overview of each dashboard area.
 
 ## Quality evolution chart
 
-The **Quality evolution** chart displays the evolution of the repository code quality regarding issues, complex files, duplication, and coverage. Click on **Last 3 months**, **Last 31 days**, or **Last 7 days** to select the time interval of the historical data to display on the chart.
+The **Quality evolution** chart displays the evolution of the repository code quality regarding [issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Click on **Last 3 months**, **Last 31 days**, or **Last 7 days** to select the time interval of the historical data to display on the chart.
 
 Each tab displays the following information for the corresponding metric:
 
@@ -76,3 +76,7 @@ Click a bar segment to display only pull requests with the corresponding status.
 To see the details of pull requests, click a pull request from the list or click **See all pull requests** to open the [list of pull requests](pull-requests.md) in the repository.
 
 ![Open pull requests](images/repository-dashboard-open-pull-requests.png)
+
+## See also
+
+-   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)

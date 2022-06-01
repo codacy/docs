@@ -36,7 +36,7 @@ This area displays the quality gate status and an overview of the code quality m
 
     If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to standards**.
 
--   The changes to the following code quality metrics introduced by the {{ page.meta.page_name }} are displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
+-   The changes to the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) introduced by the {{ page.meta.page_name }} are displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %}:
 
     -   **Issues:** Number of new or fixed issues
     -   **Duplication:** Number of new or fixed duplicated code blocks
@@ -46,7 +46,7 @@ This area displays the quality gate status and an overview of the code quality m
 {% endif %}
 {% if page.meta.page_name == "pull request" %}
     -   **Coverage variation:** Variation of code coverage relative to the target branch
-    -   **Diff coverage:** Code coverage of the lines added or changed by the pull request
+    -   **Diff coverage:** Code coverage of the coverable lines added or changed by the pull request, or `∅` (not applicable) if there aren't any coverable lines added or changed
 {% endif %}
 
     Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
@@ -101,7 +101,7 @@ The **New Duplication** and **Fixed Duplication** tabs display the list of dupli
 
 ## Files tab
 
-The **Files** tab displays an overview of the code quality changes introduced by each file that was changed in the {{ page.meta.page_name }}, together with all files with code coverage data reported in the {{ page.meta.page_name }}.<!--NOTE See https://codacy.atlassian.net/browse/CY-5946 for a discussion around changing this behavior in the future-->
+The **Files** tab displays an overview of the code quality changes introduced by each file that was either changed in the {{ page.meta.page_name }} or that had code coverage data reported.<!--NOTE See https://codacy.atlassian.net/browse/CY-5946 for a discussion around changing this behavior in the future-->
 
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
 
@@ -111,3 +111,7 @@ The **Diff** tab displays the line differences in each file that was changed in 
 
 ![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)
 <!--tabs-end-->
+
+## See also
+
+-   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)

@@ -1,6 +1,6 @@
 # Adding a Codacy badge
 
-Add a Codacy badge to the README of your repository to display the current code quality grade or code coverage of your code.
+Add a Codacy badge to the README of your repository to display the current [code quality grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade) or [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage) of your repository.
 
 ![Codacy badge on the codacy/docs README](images/codacy-badge-example.png)
 

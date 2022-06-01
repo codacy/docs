@@ -209,7 +209,7 @@ The table below lists the configuration file names that Codacy detects and suppo
   <tr>
     <td>markdownlint</td>
     <td>Markdown</td>
-    <td><code>.markdownlint.yaml</code>, <code>.markdownlint.jsonc</code>, <code>.markdownlint.json</code></td>
+    <td><code>.markdownlint.json</code></td>
     <td></td>
   </tr>
   <tr>

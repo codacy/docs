@@ -1,7 +1,3 @@
----
-description: The Security Monitor provides an overview of all current security issues.
----
-
 # Security Monitor
 
 {%
@@ -10,11 +6,60 @@ description: The Security Monitor provides an overview of all current security i
     end="<!--end-paid-->"
 %}
 
-The **Security Monitor** provides an overview of all current security issues.
+The **Security Monitor** provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.
+
+By default, the page displays the overview for the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display information for other branches.
 
 ![Security Monitor](images/security-monitor.png)
 
+The left-hand side of the dashboard lists the status of each security category that the tools that can analyze the programming languages in your repository support:
+
+<style>
+/* Center text in the first column */
+th:first-child, td:first-child {
+  text-align: center !important;
+}
+</style>
+
+<table>
+  <thead>
+    <tr>
+      <th>Status</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td><img src="../images/security-monitor-red.png" alt="Red"></td>
+      <td><strong>Codacy found security issues in this category</strong><br/><br/>
+          Click the category name to see the list of security issues in this category, and click the title of the issues to see more information about the issue.</td>
+    </tr>
+    <tr>
+      <td rowspan="2"><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
+      <td><strong>There are security code patterns in this category that are turned off</strong><br/><br/>
+          You should turn on the code patterns in this category so that Codacy can find the corresponding security issues. Click the category name to see the code patterns that are turned off, and click the check box next to each code pattern to turn it on.<br/><br/>
+          To turn on all security code patterns on the repository regardless of their category, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>.</td>
+    </tr>
+    <tr>
+      <td style="display: none;"></td>
+      <td><strong>Codacy can't determine if all security code patterns in this category are turned on or not</strong><br/><br/>
+          This happens when you're using configuration files to control which code patterns are turned on. Ensure that you manually turn on the listed code patterns on your configuration files.</td>
+    </tr>
+    <tr>
+      <td><img src="../images/security-monitor-green.png" alt="Green"></td>
+      <td><strong>Everything is OK for this category</strong><br/><br/>
+          All security code patterns in this category are turned on, and Codacy didn't find security issues in this category.</td>
+    </tr>
+  </tbody>
+</table>
+
+!!! tip
+    You can use the **Warnings** drop-down list to display only security categories that have found issues or categories that have code patterns turned off.
+
 ## Supported languages
+
+<!--TODO
+    Merge supported languages and tools using a table?-->
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
@@ -77,6 +122,10 @@ The Security Monitor displays issues using security patterns from:
 
 ## Supported categories
 
+<!--TODO
+    - Add intro
+    - Review description of each category, and also update the Codacy UI copy-->
+
 -   **XSS:** XSS enables attackers to inject client-side scripts into web pages viewed by other users.
 -   **Input validation:** Input not validated may originate SQL Injection attacks for instance.
 -   **File access:** An attacker may use special paths to access files that shouldn't be accessible.
@@ -101,36 +150,7 @@ The Security Monitor displays issues using security patterns from:
 -   **SSL:** Simply using SSL isn't enough to ensure the data you're sending is secure. Man in the middle attacks are well known and widely used.
 -   **Other:** Other language-specific security issues.
 
-## Category states
+## See also
 
-Each security category listed on the left-hand side of the dashboard has one of four states:
-
-<table>
-  <thead>
-    <tr>
-      <th>State</th>
-      <th>Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td><img src="../images/security-monitor-green.png" alt="Green"></td>
-      <td><p><strong>Everything is OK for this category</strong></p>
-          <p>All the security patterns in this category are enabled, and no security issues have been found.</p></td>
-    </tr>
-    <tr>
-      <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
-      <td><p><strong>There are security patterns in this category that are disabled</strong></p>
-          <p>You should enable the patterns in this category so it's verified. To enable all security patterns on the repository, click the button <strong>More</strong> and select <strong>Turn on all security patterns</strong>.</p>
-    </tr>
-    <tr>
-      <td><img src="../images/security-monitor-red.png" alt="Red"></td>
-      <td><p><strong>There are security issues identified for this category</strong></p></td>
-    </tr>
-    <tr>
-      <td><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
-      <td><p><strong>Codacy can't determine if all the security patterns in this category are enabled or not</strong></p>
-          <p>This happens when you're using configuration files to control which patterns are enabled. Ensure that you manually enable the listed patterns on your configuration files.</p></td>
-    </tr>
-  </tbody>
-</table>
+-   [Issues page](issues.md)
+-   [Configuring code patterns](../repositories-configure/configuring-code-patterns.md)

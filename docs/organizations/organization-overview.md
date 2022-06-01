@@ -31,7 +31,7 @@ The following sections provide a detailed description of each dashboard area.
 
 ## Overall quality chart
 
-The **Overall quality** chart compares the repositories in your organization regarding grade, issues, complex files, duplication, and coverage. Each tab displays the average value for the corresponding metric across your repositories.
+The **Overall quality** chart compares the repositories in your organization regarding [grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade), [issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Each tab displays the average value for the corresponding metric across your repositories.
 
 ![Overall quality chart](images/organization-overview-overall-quality.png)
 
@@ -47,7 +47,7 @@ If you have over 8 repositories, the chart displays your repositories grouped by
 
 ## Open pull requests
 
-The **Most problematic** tab displays a short list of the open pull requests that aren't up to standards and have the most potential to negatively affect your code quality. Click directly on each pull request to see more details.
+The **Most problematic** tab displays a short list of the open pull requests that aren't up to standards and have the most potential to negatively affect your code quality.
 
 ![Most problematic pull requests](images/organization-overview-prs-problematic.png)
 
@@ -60,6 +60,8 @@ The **Last updated** tab displays open pull requests sorted by the date of updat
 
 ![Last updated pull requests](images/organization-overview-prs-last-updated.png)
 
+Click a pull request to see the [details of that pull request](../repositories/pull-requests.md#pull-request-status).
+
 ## Last updated repositories
 
 The **Last updated repositories** list displays the last updated repositories, sorted by reverse date of the last update. Each card displays the date of the last update and the current grade of the repository.
@@ -71,6 +73,10 @@ Click **See all** to see all repositories in your organization.
 !!! note
     The exact value of the last updated date of the repositories depends on your Git provider:
 
-    -   **GitHub:** date of the last commit to any branch of the repository (value of `pushed_at` from the [GitHub Repositories API](https://docs.github.com/en/rest/reference/repos){: target=_"blank"}).
+    -   **GitHub:** date of the last commit to any branch of the repository (value of `pushed_at` from the [GitHub Repositories API](https://docs.github.com/en/rest/repos/repos#list-organization-repositories){: target=_"blank"}).
     -   **GitLab:** date when the project was last updated (value of `last_activity_at` from the [GitLab Groups API](https://docs.gitlab.com/ee/api/groups.html){: target="_blank"}). Note that this value is only updated [at most once per hour](https://gitlab.com/gitlab-org/gitlab/-/issues/20952){: target="_blank"}).
     -   **Bitbucket:** date when the repository was last updated (value of `updated_on` from the [Bitbucket Repositories API](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/#api-group-repositories){: target="_blank"}). **On Bitbucket Server** Codacy can't obtain this information and the list displays the repositories in alphabetical order.
+
+## See also
+
+-   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)

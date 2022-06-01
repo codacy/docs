@@ -15,7 +15,7 @@ Codacy requests only the necessary permissions from your Git provider to analyze
 
 ## GitHub Cloud
 
-If you log in with GitHub, Codacy requires the following [app permissions](https://developer.github.com/v3/apps/permissions/):
+If you log in with GitHub, Codacy requires the following [app permissions](https://docs.github.com/en/rest/overview/permissions-required-for-github-apps):
 
 <table>
   <colgroup>
@@ -195,7 +195,7 @@ To revoke the access from Codacy to one or more of the OAuth providers:
 
 1.  To ensure that the integration is removed not only on Codacy but also on the integration side, we recommend that you follow the instructions on how to revoke the Codacy OAuth application on your provider:
 
-    -   [GitHub Cloud](https://help.github.com/en/github/authenticating-to-github/reviewing-your-authorized-integrations)
+    -   [GitHub Cloud](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations)
     -   [GitLab Cloud](https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications)
     -   [Bitbucket Cloud](https://support.atlassian.com/bitbucket-cloud/docs/bitbucket-cloud-apps-overview/#OAuth-consumer-permissions)
     -   [Google Sign-in](https://support.google.com/accounts/answer/3466521#remove-access)
@@ -211,6 +211,6 @@ Codacy asks for permission to create SSH keys because it needs to create an SSH 
 -   If your repository uses submodules, so that Codacy can clone the repositories for each submodule
 -   If Codacy fails to integrate with a repository using the repository key, so that Codacy can continue to perform analysis
 
-**Codacy only adds read-only SSH keys to be able to clone repositories** and won't have access to any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also [revoke the keys created by Codacy at any time](https://docs.github.com/en/github/authenticating-to-github/reviewing-your-ssh-keys). Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.
+**Codacy only adds read-only SSH keys to be able to clone repositories** and won't have access to any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also [revoke the keys created by Codacy at any time](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-ssh-keys). Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.
 
 We understand the desire for security and privacy and find that the SSH protocol is preferable to HTTPS as it separates Codacy's access rights from the one of the users.

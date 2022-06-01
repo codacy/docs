@@ -27,7 +27,7 @@ The following screenshot displays the default configuration values:
 -   **New security issues are over:** Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value.
 -   **Complexity is over:** Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value.
 -   **Duplication is over:** Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value.
--   **Diff coverage is under:** Pull requests are marked not up to standards if the diff coverage of the pull request is lower than the set value. This rule is only available for pull requests.
+-   **Diff coverage is under:** Pull requests are marked not up to standards if the diff coverage of the pull request is lower than the set value or `∅` ([not applicable](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage)). This rule is only available for pull requests.
 -   **Coverage variation is under:** Pull requests or commits are marked not up to standards if they introduce a variation to coverage lower than the set value. The maximum value is 1%.
 
     !!! tip
@@ -56,5 +56,6 @@ The following screenshot displays the default configuration values:
 
 ## See also
 
+-   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
 -   [How do I block merging pull requests using Codacy as a quality gate?](../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
 -   [Diff coverage: <span class="skip-vale">we have</span> a new metric and quality gate rule for PRs](https://blog.codacy.com/diff-coverage/)

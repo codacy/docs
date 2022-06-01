@@ -43,7 +43,7 @@ To use a Codacy configuration file:
     languages:
       css:
         extensions:
-          - "-css.resource"
+          - ".scss"
     exclude_paths:
       - ".bundle/**"
       - "spec/**/*"
@@ -182,7 +182,7 @@ engines:
     https://github.com/codacy/codacy-duplication-pmdcpd/blob/c799cb3a80d1f3b3a8eb9868f63abee13e3e81c4/src/main/scala/com/codacy/duplication/pmd/Cpd.scala#L128
 -->
 
-Codacy uses [PMD's Copy/Paste Detector (CPD)](https://pmd.github.io/latest/pmd_userdocs_cpd.html) to identify duplicated blocks of code.
+Codacy uses [PMD's Copy/Paste Detector (CPD)](https://pmd.github.io/latest/pmd_userdocs_cpd.html) to identify duplicated blocks of code [on the supported languages](../getting-started/supported-languages-and-tools.md).
 
 By default, Codacy only reports duplicate code blocks that have the following minimum token length, depending on the language:
 
@@ -203,11 +203,10 @@ Besides this, Codacy runs PMD CPD with the following options enabled by default:
 
 -   **Skip lexical errors:** Skip files which can't be tokenized due to invalid characters instead of aborting CPD
 -   **Ignore literals:** Ignore number values and string contents when comparing text
--   **Ignore identifiers:** Ignore constant and variable names when comparing text
 -   **Ignore annotations:** Ignore language annotations when comparing text
 -   **Ignore <span class="skip-vale">usings</span>:** Ignore `using` directives in C# when comparing text
 
-To use a different minimum token length or disable any of the default options, add your settings to the Codacy configuration file based on the example template below.
+To use a different minimum token length or change any of the default options, add your settings to the Codacy configuration file based on the example template below.
 
 !!! important
     If you configure `minTokenMatch` on the Codacy configuration file, Codacy will use that value for all languages.
@@ -219,7 +218,7 @@ engines:
     minTokenMatch: 20
     skipLexicalErrors: false
     ignoreLiterals: false
-    ignoreIdentifiers: false
+    ignoreIdentifiers: true
     ignoreAnnotations: false
     ignoreUsings: false
 ```
