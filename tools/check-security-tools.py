@@ -27,11 +27,11 @@ def check_security_tools():
         if tool_short_name == "pylintpython3":
             tool_name = "Pylint"
         tool_languages = tool["languages"]
-        r = requests.get(ENDPOINT_URL_CODE_PATTERNS.substitute(toolUuid=tool["uuid"]))
-        code_patterns = r.json()["data"]
-        cursor = r.json()["pagination"].get("cursor", False)
+        cursor = True
+        code_patterns = []
         while cursor:
-            r = requests.get(ENDPOINT_URL_CODE_PATTERNS.substitute(toolUuid=tool["uuid"]) + f"?cursor={cursor}")
+            r = requests.get(ENDPOINT_URL_CODE_PATTERNS.substitute(toolUuid=tool["uuid"]) +
+                             ("" if cursor == True else f"?cursor={cursor}"))
             code_patterns += r.json()["data"]
             cursor = r.json()["pagination"].get("cursor", False)
         for code_pattern in code_patterns:
