@@ -56,7 +56,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
-      <td>AWS Cloud​Formation</td>
+      <td>AWS CloudFormation</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td></td>
       <td>-</td>
