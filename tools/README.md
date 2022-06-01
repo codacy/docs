@@ -8,6 +8,16 @@ Install the Python requirements before using the tools:
 pip3 install -r requirements.txt
 ```
 
+## check-security-tools
+
+Validates if the source file for the page [Security Monitor](https://docs.codacy.com/repositories/security-monitor/) mentions the tools returned by the Codacy API endpoint [listTools](https://api.codacy.com/api/api-docs#codacy-api-tools) that include security code patterns.
+
+```bash
+./check-security-tools.py
+```
+
+This script is scheduled to [run periodically as a GitHub Action](https://github.com/codacy/docs/actions/workflows/checks.yml).
+
 ## check-supported-tools
 
 Validates if the source file for the page [Supported languages and tools](https://docs.codacy.com/getting-started/supported-languages-and-tools/) mentions the tools returned by the Codacy API endpoint [listTools](https://api.codacy.com/api/api-docs#codacy-api-tools).
@@ -16,12 +26,22 @@ Validates if the source file for the page [Supported languages and tools](https:
 ./check-supported-tools.py
 ```
 
+This script is scheduled to [run periodically as a GitHub Action](https://github.com/codacy/docs/actions/workflows/checks.yml).
+
 ## find-orphan-images.sh
 
 Outputs a list of images that aren't included in any Markdown file.
 
 ```bash
 ./find-orphan-images.sh
+```
+
+## get-tool-descriptions
+
+Outputs the name and description of each supported tool.
+
+```bash
+./get-tool-descriptions.py
 ```
 
 ## list-last-modified

@@ -20,8 +20,11 @@ The example script:
 
 ```bash
 CODACY_API_TOKEN="<your account API token>"
+GIT_PROVIDER="<your Git provider>" # gh, ghe, gl, gle, bb, or bbe
+ORGANIZATION="<your organization name>"
+REPOSITORY="<your repository name>"
 
-curl -X POST "https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/repositories/website/issues/search" \
+curl -X POST "https://app.codacy.com/api/v3/analysis/organizations/$GIT_PROVIDER/$ORGANIZATION/repositories/$REPOSITORY/issues/search" \
      -H "api-token: $CODACY_API_TOKEN" \
      -H "Content-Type: application/json" \
      -d '{ "levels": ["Error", "Warning"], "categories": ["Security"] }' \

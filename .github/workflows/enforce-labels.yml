@@ -3,6 +3,7 @@ name: Enforce labels
 on:
   pull_request:
     types: [opened, reopened, synchronize, labeled, unlabeled]
+
 jobs:
   enforce-label:
     runs-on: ubuntu-latest

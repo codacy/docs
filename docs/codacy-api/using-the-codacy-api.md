@@ -67,12 +67,14 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
     https://<your Codacy instance domain name>/api/v3
     ```
 
-## Authenticating requests to the Codacy API
+## Authenticating requests
 
 Most API endpoints require that you authenticate using an API token. After [obtaining the necessary tokens](api-tokens.md), include them in your request headers using the format `api-token: <your account API token>` or `project-token: <your project API token>`.
 
 !!! note
     Currently, all API v3 endpoints that require authentication must use **account API tokens**, while the API v2 endpoints require either **account or project API tokens**.
+
+    Performing `GET` requests for public repositories doesn't require authentication.
 
 For example, to make a request to an API v3 endpoint that requires an account API token:
 
@@ -119,12 +121,16 @@ curl -X POST 'https://app.codacy.com/api/v3/analysis/organizations/gh/codacy/rep
 
 ## Using pagination
 
-Endpoints that return lists containing a potential large number of results use cursor-based pagination to return the results in small batches:
+Endpoints that return lists containing a potential large number of results use cursor-based pagination to return the results in small batches.
 
--   These endpoints return the results together with a `pagination` object that includes a `cursor`.
--   To obtain the next page of results, call the endpoint again using the `cursor` from the previous response as a parameter.
--   If the response doesn't include a `cursor` it means that the endpoint returned the last page of results.
--   Use the parameter `limit` to configure the number of results that the endpoint returns in each page. The maximum `limit` is 1000 and the default is 100.
+These endpoints return the results together with a `pagination` object:
+
+-   If the `pagination` object **includes** a `cursor`, obtain the next page of results by calling the endpoint again using the `cursor` from the previous response as a query string parameter
+
+    If the `pagination` object **doesn't include** a `cursor`, the endpoint returned the last page of results
+
+-   Use the query string parameter `limit` to configure the number of results that the endpoint returns in each page. The maximum `limit` is 1000 and the default is 100
+-   The `total` is the total number of results that the endpoint can return
 
 !!! note
     To make sure that you receive all results when calling an endpoint with pagination, repeat the process above until the response doesn't include the cursor to obtain another page of results.
@@ -171,3 +177,14 @@ If you continue requesting more pages the endpoint will eventually return a `pag
   }
 }
 ```
+
+## Request rate limit
+
+**On Codacy Cloud** the number of requests that you can perform to the Codacy API is rate limited to help us provide a reliable service:
+
+-   The limit is **2500 requests per 5 minutes and per source IP address**
+-   When a request is rate limited, Codacy responds with an HTTP 503 or 504 error code and you should wait before attempting the request again
+
+Although it's possible for you to perform short bursts of requests to the Codacy API, you should always use a delay between requests to ensure that your API client doesn't hit the rate limits.
+
+The request rate limit doesn't apply to Codacy Self-hosted.

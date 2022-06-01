@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
+          token: ${{ secrets.GITHUB_TOKEN }}
           submodules: true
           # git-revision-date-localized-plugin and mkdocs-rss-plugin need full git history depth
           fetch-depth: 0
@@ -36,25 +36,11 @@ jobs:
           docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
 
       # Deploy branch previews
-      - name: Determine branch name
-        id: branches
+      - name: Obtain Netlify alias from branch name
+        id: netlify-alias
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
-        uses: transferwise/sanitize-branch-name@v1
-
-      - name: Convert branch name to lowercase
-        id: string
-        if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
-        uses: ASzc/change-string-case-action@v2
-        with:
-          string: ${{ steps.branches.outputs.sanitized-branch-name }}
-
-      - name: Truncate branch name
-        id: truncatedString
-        if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
-        uses: 2428392/gh-truncate-string-action@v1.0.0
-        with:
-          stringToTruncate: ${{ steps.string.outputs.lowercase }}
-          maxLength: 35
+        run: |
+          echo "::set-output name=alias::$(echo ${GITHUB_REF#refs/heads/} | tr -c -s "[:alnum:]" "-" | tr "[:upper:]" "[:lower:]" | cut -c -35 | sed "s/-*$//")"
 
       - name: Deploy docs (branch preview)
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
@@ -68,7 +54,7 @@ jobs:
           enable-commit-comment: false
           enable-commit-status: false
           overwrites-pull-request-comment: false
-          alias: ${{ steps.truncatedString.outputs.string }}
+          alias: ${{ steps.netlify-alias.outputs.alias }}
           github-deployment-environment: Netlify
           github-deployment-description: Branch deployment preview
         env:

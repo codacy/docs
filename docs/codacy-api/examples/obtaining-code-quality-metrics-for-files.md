@@ -20,8 +20,11 @@ The example script:
 
 ```bash
 CODACY_API_TOKEN="<your account API token>"
+GIT_PROVIDER="<your Git provider>" # gh, ghe, gl, gle, bb, or bbe
+ORGANIZATION="<your organization name>"
+REPOSITORY="<your repository name>"
 
-curl -X GET "https://app.codacy.com/api/v3/organizations/gh/codacy/repositories/website/files?search=src/router/" \
+curl -X GET "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/repositories/$REPOSITORY/files?search=src/router/" \
      -H "api-token: $CODACY_API_TOKEN" \
 | jq -r ".data[] | [.path, .gradeLetter, .totalIssues, .complexity, .coverage, .duplication] | @csv"
 ```
@@ -37,3 +40,7 @@ Example output:
 ```
 
 {% include-markdown "../../assets/includes/api-example-pagination-important.md" %}
+
+## See also
+
+-   [Which metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md)
