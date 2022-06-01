@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to add people programmatically using Codacy's API v3 endpoint addPeopleToOrganization.">
       
       
-        <meta http-equiv="last-modified" content="2022-02-18 12:43:14">  
+        <meta http-equiv="last-modified" content="2022-06-01 10:08:54">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/adding-people-to-codacy-programmatically/">
@@ -3430,11 +3430,13 @@
 <li>Calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#addpeopletoorganization" target="_blank">addPeopleToOrganization</a> to add a list of email addresses to Codacy.</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
+<span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span> <span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
+<span class="nv">ORGANIZATION</span><span class="o">=</span><span class="s2">&quot;&lt;your organization name&gt;&quot;</span>
 <span class="nv">FILENAME</span><span class="o">=</span><span class="s2">&quot;emails.txt&quot;</span>
 
 <span class="nv">EMAILS</span><span class="o">=</span><span class="sb">`</span>awk -vORS<span class="o">=</span>, <span class="s1">&#39;{if(length($1)&gt;0) printf(&quot;\&quot;%s\&quot;,&quot;, $1)}&#39;</span> <span class="nv">$FILENAME</span> <span class="p">|</span> sed <span class="s1">&#39;s/,$//&#39;</span><span class="sb">`</span>
 
-curl -X POST <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/gh/codacy/people&quot;</span> <span class="se">\</span>
+curl -X POST <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/people&quot;</span> <span class="se">\</span>
      -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
      -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
      -d <span class="s2">&quot;[</span><span class="nv">$EMAILS</span><span class="s2">]&quot;</span>
@@ -3607,7 +3609,7 @@ email4@codacy.com
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 18, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 1, 2022</span>
     
   </small>
 </div>
