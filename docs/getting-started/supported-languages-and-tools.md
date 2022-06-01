@@ -262,7 +262,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>Python
       </td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/landscapeio/prospector2">Prospector</a>,
+          <a href="https://github.com/PyCQA/prospector">Prospector</a>,
           <a href="https://www.pylint.org/">Pylint</a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
