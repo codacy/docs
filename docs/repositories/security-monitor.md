@@ -155,7 +155,7 @@ The Security Monitor supports checking the languages and frameworks below for an
     </tr>
     <tr>
       <td>Scala</td>
-      <td><a href="https://scalameta.org/">Scalameta</a>,
+      <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>1</sup></a><a href="#spotbugs-plugin"><sup>2</sup></a></td>
     </tr>
     <tr>
