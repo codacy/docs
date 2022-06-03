@@ -330,7 +330,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     -   bundler-audit
     -   Checkov
     -   Clang-Tidy
-    -   Codacy ScalaMeta Pro
+    -   Codacy Scalameta Pro
     -   CoffeeLint
     -   Cppcheck
     -   deadcode

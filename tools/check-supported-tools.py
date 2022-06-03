@@ -5,8 +5,7 @@ import requests
 
 DOCUMENTATION_PATH = "../docs/getting-started/supported-languages-and-tools.md"
 ENDPOINT_URL = "https://api.codacy.com/api/v3/tools"
-IGNORED_TOOL_UUIDS = ["647dddc1-17c4-4840-acea-4c2c2bbecb45",  # Codacy Scalameta Pro
-                      "34225275-f79e-4b85-8126-c7512c987c0d",  # Pylint 1.9 (legacy)
+IGNORED_TOOL_UUIDS = ["34225275-f79e-4b85-8126-c7512c987c0d",  # Pylint 1.9 (legacy)
                       "cf05f3aa-fd23-4586-8cce-5368917ec3e5"]  # ESLint 7 (deprecated)
 
 

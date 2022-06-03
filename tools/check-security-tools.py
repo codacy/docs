@@ -17,7 +17,7 @@ def check_security_tools():
     with open(DOCUMENTATION_PATH, "r") as file:
         documentation = file.read().lower()
     tools = requests.get(ENDPOINT_URL_TOOLS).json()["data"]
-    count = 0
+    count_missing = 0
     for tool in tools:
         if tool["uuid"] in IGNORED_TOOL_UUIDS:
             continue
@@ -27,25 +27,24 @@ def check_security_tools():
         if tool_short_name == "pylintpython3":
             tool_name = "Pylint"
         tool_languages = tool["languages"]
-        r = requests.get(ENDPOINT_URL_CODE_PATTERNS.substitute(toolUuid=tool["uuid"]))
-        code_patterns = r.json()["data"]
-        cursor = r.json()["pagination"].get("cursor", False)
+        cursor = True
+        code_patterns = []
         while cursor:
-            r = requests.get(ENDPOINT_URL_CODE_PATTERNS.substitute(toolUuid=tool["uuid"]) + f"?cursor={cursor}")
+            r = requests.get(ENDPOINT_URL_CODE_PATTERNS.substitute(toolUuid=tool["uuid"]) + "?limit=1000" +
+                             ("" if cursor == True else f"&cursor={cursor}"))
             code_patterns += r.json()["data"]
             cursor = r.json()["pagination"].get("cursor", False)
-        for code_pattern in code_patterns:
-            if code_pattern["category"] == "Security":
-                if tool_name.lower() in documentation or tool_short_name.lower() in documentation:
-                    print(emoji.emojize(f":check_mark_button: {tool_name} ({', '.join(map(str, tool_languages))}) "
-                                        f"is included, checked {len(code_patterns)} patterns"))
-                else:
-                    print(emoji.emojize(f":cross_mark: {tool_name} ({', '.join(map(str, tool_languages))}) "
-                                        f"ISN'T included, checked {len(code_patterns)} patterns"))
-                    count += 1
-                break
-    if count:
-        print(f"\nFound {count} tools that aren't included in the documentation.")
+        security_code_patterns = [cp for cp in code_patterns if cp["category"] == "Security"]
+        if len(security_code_patterns) > 0:
+            if tool_name.lower() in documentation or tool_short_name.lower() in documentation:
+                print(emoji.emojize(f":check_mark_button: {tool_name} ({', '.join(map(str, tool_languages))}) "
+                                    f"is included, supports {len(security_code_patterns)} security code patterns"))
+            else:
+                print(emoji.emojize(f":cross_mark: {tool_name} ({', '.join(map(str, tool_languages))}) "
+                                    f"ISN'T included, supports {len(security_code_patterns)} security code patterns"))
+                count_missing += 1
+    if count_missing:
+        print(f"\nFound {count_missing} tools that aren't included in the documentation.")
         exit(1)
     else:
         print(emoji.emojize("\nAll tools are included in the documentation! :party_popper:"))
