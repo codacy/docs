@@ -12,7 +12,7 @@ By default, the page displays the overview for the main branch of your repositor
 
 ![Security Monitor](images/security-monitor.png)
 
-The left-hand side of the dashboard lists the status of each security category that the tools that can analyze the programming languages in your repository support:
+The left-hand side of the dashboard lists the status for each security category that the tools that can analyze the programming languages in your repository support:
 
 <style>
 /* Center text in the first column */
@@ -122,8 +122,9 @@ The Security Monitor displays issues using security patterns from:
 
 ## Supported categories
 
+Each issue reported on the Security Monitor belongs to one of the following security categories:
+
 <!--TODO
-    - Add intro
     - Review description of each category, and also update the Codacy UI copy-->
 
 -   **XSS:** XSS enables attackers to inject client-side scripts into web pages viewed by other users.
