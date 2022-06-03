@@ -120,7 +120,7 @@ The Security Monitor displays issues using security patterns from:
 -   [TSQLLint](https://github.com/tsqllint/tsqllint/){: target="_blank"}
 -   [CodeNarc](https://codenarc.github.io/CodeNarc/codenarc-rule-index.html){: target="_blank"}
 
-## Supported categories
+## Supported security categories
 
 Each issue reported on the Security Monitor belongs to one of the following security categories:
 
