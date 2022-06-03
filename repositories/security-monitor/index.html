@@ -11,7 +11,7 @@
         <meta name="description" content="The Security Monitor provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.">
       
       
-        <meta http-equiv="last-modified" content="2022-04-29 15:25:53">  
+        <meta http-equiv="last-modified" content="2022-06-03 10:32:15">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/security-monitor/">
@@ -373,8 +373,8 @@
 </li>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#supported-categories" class="md-nav__link">
-    Supported categories
+  <a href="#supported-security-categories" class="md-nav__link">
+    Supported security categories
   </a>
   
 </li>
@@ -3396,15 +3396,15 @@
 <p>The <strong>Security Monitor</strong> provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.</p>
 <p>By default, the page displays the overview for the main branch of your repository but if you have <a href="../../repositories-configure/managing-branches/">more than one branch enabled</a> you can use the drop-down list at the top of the page to display information for other branches.</p>
 <p><img alt="Security Monitor" src="../images/security-monitor.png" /></p>
-<p>The left-hand side of the dashboard lists the status of each security category that the tools that can analyze the programming languages in your repository support:</p>
+<p>The left-hand side of the dashboard lists the status for each security category that the tools that can analyze the programming languages in your repository support:</p>
 <style>
 /* Center text in the first column */
-th:first-child, td:first-child {
+#status th:first-child, #status td:first-child {
   text-align: center !important;
 }
 </style>
 
-<table>
+<table id="status">
   <thead>
     <tr>
       <th>Status</th>
@@ -3488,32 +3488,110 @@ th:first-child, td:first-child {
 <li><a href="https://github.com/tsqllint/tsqllint/" target="_blank">TSQLLint</a></li>
 <li><a href="https://codenarc.github.io/CodeNarc/codenarc-rule-index.html" target="_blank">CodeNarc</a></li>
 </ul>
-<h2 id="supported-categories">Supported categories<a class="headerlink" href="#supported-categories" title="Permanent link">#</a></h2>
-<ul>
-<li><strong>XSS:</strong> XSS enables attackers to inject client-side scripts into web pages viewed by other users.</li>
-<li><strong>Input validation:</strong> Input not validated may originate SQL Injection attacks for instance.</li>
-<li><strong>File access:</strong> An attacker may use special paths to access files that shouldn't be accessible.</li>
-<li><strong>HTTP:</strong> HTTP headers are a common attack vector for malign users.</li>
-<li><strong>Cookies:</strong> An HTTP cookie is a small piece of data sent from a website and stored on the user's computer by the browser while the user is browsing.</li>
-<li><strong>Unexpected behaviour:</strong> Assigning values to private APIs might lead to unexpected behavior.</li>
-<li><strong>Mass assignment:</strong> Mass assignment is a feature of Rails which allows an application to create a record from the values of a hash.</li>
-<li><strong>Insecure storage:</strong> Storing sensitive data using these APIs isn't safe.</li>
-<li><strong>Insecure modules/libraries:</strong> Consider possible security implications associated with some modules.</li>
-<li><strong>Visibility:</strong> Fields shouldn't have public accessibility.</li>
-<li><strong>CSRF:</strong> Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated.</li>
-<li><strong>Android:</strong> Android-specific issues.</li>
-<li><strong>Malicious code:</strong> Exposed internal APIs can be accessed or changed by malicious code or by accident from another package.</li>
-<li><strong>Cryptography:</strong> Cryptography is a security technique widely used and there are several cryptographic functions, but not all of them are secure.</li>
-<li><strong>Command injection:</strong> Command injection is an attack in which the goal is the execution of arbitrary commands on the host operating system.</li>
-<li><strong>Firefox OS:</strong> Sensitive APIs of Firefox OS.</li>
-<li><strong>Auth:</strong> Authentication is present in almost all web applications nowadays.</li>
-<li><strong>DoS:</strong> The Denial of Service (DoS) attack is focused on making a resource (site, application, server) unavailable for the purpose it was designed.</li>
-<li><strong>SQL injection:</strong> A SQL injection attack consists of insertion or "injection" of a SQL query via the input data from the client to the application.</li>
-<li><strong>Routes:</strong> Badly configured routes can give unintended access to an attacker.</li>
-<li><strong>Regex:</strong> Regex can be used in a Denial of Service attack, that exploits the fact that most Regular Expression implementations may reach heavy computation situations that cause them to work very slowly (exponentially related to input size).</li>
-<li><strong>SSL:</strong> Simply using SSL isn't enough to ensure the data you're sending is secure. Man in the middle attacks are well known and widely used.</li>
-<li><strong>Other:</strong> Other language-specific security issues.</li>
-</ul>
+<h2 id="supported-security-categories">Supported security categories<a class="headerlink" href="#supported-security-categories" title="Permanent link">#</a></h2>
+<p>Each issue reported on the Security Monitor belongs to one of the following security categories:</p>
+<table>
+<thead>
+<tr>
+<th>Security category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Android</strong></td>
+<td>Android-specific issues.</td>
+</tr>
+<tr>
+<td><strong>Auth</strong></td>
+<td>Authentication is present in almost all web applications nowadays.</td>
+</tr>
+<tr>
+<td><strong>Command injection</strong></td>
+<td>Command injection is an attack in which the goal is the execution of arbitrary commands on the host operating system.</td>
+</tr>
+<tr>
+<td><strong>Cookies</strong></td>
+<td>An HTTP cookie is a small piece of data sent from a website and stored on the user's computer by the browser while the user is browsing.</td>
+</tr>
+<tr>
+<td><strong>Cryptography</strong></td>
+<td>Cryptography is a security technique widely used and there are several cryptographic functions, but not all of them are secure.</td>
+</tr>
+<tr>
+<td><strong>CSRF</strong></td>
+<td>Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated.</td>
+</tr>
+<tr>
+<td><strong>DoS</strong></td>
+<td>The Denial of Service (DoS) attack is focused on making a resource (site, application, server) unavailable for the purpose it was designed.</td>
+</tr>
+<tr>
+<td><strong>File access</strong></td>
+<td>An attacker may use special paths to access files that shouldn't be accessible.</td>
+</tr>
+<tr>
+<td><strong>Firefox OS</strong></td>
+<td>Sensitive APIs of Firefox OS.</td>
+</tr>
+<tr>
+<td><strong>HTTP</strong></td>
+<td>HTTP headers are a common attack vector for malign users.</td>
+</tr>
+<tr>
+<td><strong>Input validation</strong></td>
+<td>Input not validated may originate SQL Injection attacks for instance.</td>
+</tr>
+<tr>
+<td><strong>Insecure modules/libraries</strong></td>
+<td>Consider possible security implications associated with some modules.</td>
+</tr>
+<tr>
+<td><strong>Insecure storage</strong></td>
+<td>Storing sensitive data using these APIs isn't safe.</td>
+</tr>
+<tr>
+<td><strong>Malicious code</strong></td>
+<td>Exposed internal APIs can be accessed or changed by malicious code or by accident from another package.</td>
+</tr>
+<tr>
+<td><strong>Mass assignment</strong></td>
+<td>Mass assignment is a feature of Rails which allows an application to create a record from the values of a hash.</td>
+</tr>
+<tr>
+<td><strong>Regex</strong></td>
+<td>Regex can be used in a Denial of Service attack, that exploits the fact that most Regular Expression implementations may reach heavy computation situations that cause them to work very slowly (exponentially related to input size).</td>
+</tr>
+<tr>
+<td><strong>Routes</strong></td>
+<td>Badly configured routes can give unintended access to an attacker.</td>
+</tr>
+<tr>
+<td><strong>SQL injection</strong></td>
+<td>A SQL injection attack consists of insertion or "injection" of a SQL query via the input data from the client to the application.</td>
+</tr>
+<tr>
+<td><strong>SSL</strong></td>
+<td>Simply using SSL isn't enough to ensure the data you're sending is secure. Man in the middle attacks are well known and widely used.</td>
+</tr>
+<tr>
+<td><strong>Unexpected behaviour</strong></td>
+<td>Assigning values to private APIs might lead to unexpected behavior.</td>
+</tr>
+<tr>
+<td><strong>Visibility</strong></td>
+<td>Fields shouldn't have public accessibility.</td>
+</tr>
+<tr>
+<td><strong>XSS</strong></td>
+<td>XSS enables attackers to inject client-side scripts into web pages viewed by other users.</td>
+</tr>
+<tr>
+<td><strong>Other</strong></td>
+<td>Other language-specific security issues.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../issues/">Issues page</a></li>
@@ -3675,7 +3753,7 @@ th:first-child, td:first-child {
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 29, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 3, 2022</span>
     
   </small>
 </div>
