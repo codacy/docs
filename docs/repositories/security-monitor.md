@@ -16,12 +16,12 @@ The left-hand side of the dashboard lists the status for each security category 
 
 <style>
 /* Center text in the first column */
-th:first-child, td:first-child {
+#status th:first-child, #status td:first-child {
   text-align: center !important;
 }
 </style>
 
-<table>
+<table id="status">
   <thead>
     <tr>
       <th>Status</th>
