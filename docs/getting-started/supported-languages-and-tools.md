@@ -56,7 +56,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
-      <td>AWS Cloud​Formation</td>
+      <td>AWS CloudFormation</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td></td>
       <td>-</td>
@@ -262,7 +262,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>Python
       </td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/landscapeio/prospector2">Prospector</a>,
+          <a href="https://github.com/PyCQA/prospector">Prospector</a>,
           <a href="https://www.pylint.org/">Pylint</a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -288,7 +288,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Scala
       </td>
-      <td><a href="https://scalameta.org/">Scalameta</a>,
+      <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
           <a href="http://www.scalastyle.org/">Scalastyle</a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>1</sup></a></td>
       <td></td>

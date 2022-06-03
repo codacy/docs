@@ -30,8 +30,8 @@ def check_security_tools():
         cursor = True
         code_patterns = []
         while cursor:
-            r = requests.get(ENDPOINT_URL_CODE_PATTERNS.substitute(toolUuid=tool["uuid"]) +
-                             ("" if cursor == True else f"?cursor={cursor}"))
+            r = requests.get(ENDPOINT_URL_CODE_PATTERNS.substitute(toolUuid=tool["uuid"]) + "?limit=1000" +
+                             ("" if cursor == True else f"&cursor={cursor}"))
             code_patterns += r.json()["data"]
             cursor = r.json()["pagination"].get("cursor", False)
         security_code_patterns = [cp for cp in code_patterns if cp["category"] == "Security"]

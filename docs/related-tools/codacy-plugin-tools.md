@@ -56,7 +56,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-clang-tidy" class="skip-vale">codacy/codacy-clang-tidy</a></td>
 </tr>
 <tr>
-<td>Codacy Scalameta Pro</td>
+<td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a></td>
 <td><a href="https://github.com/codacy/codacy-scalameta" class="skip-vale">codacy/codacy-scalameta</a></td>
 </tr>
 <tr>
