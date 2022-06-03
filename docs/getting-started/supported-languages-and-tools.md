@@ -288,7 +288,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Scala
       </td>
-      <td><a href="https://scalameta.org/">Scalameta</a>,
+      <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
           <a href="http://www.scalastyle.org/">Scalastyle</a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>1</sup></a></td>
       <td></td>
