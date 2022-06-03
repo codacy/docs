@@ -12,16 +12,16 @@ By default, the page displays the overview for the main branch of your repositor
 
 ![Security Monitor](images/security-monitor.png)
 
-The left-hand side of the dashboard lists the status of each security category that the tools that can analyze the programming languages in your repository support:
+The left-hand side of the dashboard lists the status for each security category that the tools that can analyze the programming languages in your repository support:
 
 <style>
 /* Center text in the first column */
-th:first-child, td:first-child {
+#status th:first-child, #status td:first-child {
   text-align: center !important;
 }
 </style>
 
-<table>
+<table id="status">
   <thead>
     <tr>
       <th>Status</th>
@@ -120,35 +120,38 @@ The Security Monitor displays issues using security patterns from:
 -   [TSQLLint](https://github.com/tsqllint/tsqllint/){: target="_blank"}
 -   [CodeNarc](https://codenarc.github.io/CodeNarc/codenarc-rule-index.html){: target="_blank"}
 
-## Supported categories
+## Supported security categories
+
+Each issue reported on the Security Monitor belongs to one of the following security categories:
 
 <!--TODO
-    - Add intro
     - Review description of each category, and also update the Codacy UI copy-->
 
--   **XSS:** XSS enables attackers to inject client-side scripts into web pages viewed by other users.
--   **Input validation:** Input not validated may originate SQL Injection attacks for instance.
--   **File access:** An attacker may use special paths to access files that shouldn't be accessible.
--   **HTTP:** HTTP headers are a common attack vector for malign users.
--   **Cookies:** An HTTP cookie is a small piece of data sent from a website and stored on the user's computer by the browser while the user is browsing.
--   **Unexpected behaviour:** Assigning values to private APIs might lead to unexpected behavior.
--   **Mass assignment:** Mass assignment is a feature of Rails which allows an application to create a record from the values of a hash.
--   **Insecure storage:** Storing sensitive data using these APIs isn't safe.
--   **Insecure modules/libraries:** Consider possible security implications associated with some modules.
--   **Visibility:** Fields shouldn't have public accessibility.
--   **CSRF:** Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated.
--   **Android:** Android-specific issues.
--   **Malicious code:** Exposed internal APIs can be accessed or changed by malicious code or by accident from another package.
--   **Cryptography:** Cryptography is a security technique widely used and there are several cryptographic functions, but not all of them are secure.
--   **Command injection:** Command injection is an attack in which the goal is the execution of arbitrary commands on the host operating system.
--   **Firefox OS:** Sensitive APIs of Firefox OS.
--   **Auth:** Authentication is present in almost all web applications nowadays.
--   **DoS:** The Denial of Service (DoS) attack is focused on making a resource (site, application, server) unavailable for the purpose it was designed.
--   **SQL injection:** A SQL injection attack consists of insertion or "injection" of a SQL query via the input data from the client to the application.
--   **Routes:** Badly configured routes can give unintended access to an attacker.
--   **Regex:** Regex can be used in a Denial of Service attack, that exploits the fact that most Regular Expression implementations may reach heavy computation situations that cause them to work very slowly (exponentially related to input size).
--   **SSL:** Simply using SSL isn't enough to ensure the data you're sending is secure. Man in the middle attacks are well known and widely used.
--   **Other:** Other language-specific security issues.
+|Security category|Description|
+|-----------------|-----------|
+|**Android**|Android-specific issues.|
+|**Auth**|Authentication is present in almost all web applications nowadays.|
+|**Command injection**|Command injection is an attack in which the goal is the execution of arbitrary commands on the host operating system.|
+|**Cookies**|An HTTP cookie is a small piece of data sent from a website and stored on the user's computer by the browser while the user is browsing.|
+|**Cryptography**|Cryptography is a security technique widely used and there are several cryptographic functions, but not all of them are secure.|
+|**CSRF**|Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated.|
+|**DoS**|The Denial of Service (DoS) attack is focused on making a resource (site, application, server) unavailable for the purpose it was designed.|
+|**File access**|An attacker may use special paths to access files that shouldn't be accessible.|
+|**Firefox OS**|Sensitive APIs of Firefox OS.|
+|**HTTP**|HTTP headers are a common attack vector for malign users.|
+|**Input validation**|Input not validated may originate SQL Injection attacks for instance.|
+|**Insecure modules/libraries**|Consider possible security implications associated with some modules.|
+|**Insecure storage**|Storing sensitive data using these APIs isn't safe.|
+|**Malicious code**|Exposed internal APIs can be accessed or changed by malicious code or by accident from another package.|
+|**Mass assignment**|Mass assignment is a feature of Rails which allows an application to create a record from the values of a hash.|
+|**Regex**|Regex can be used in a Denial of Service attack, that exploits the fact that most Regular Expression implementations may reach heavy computation situations that cause them to work very slowly (exponentially related to input size).|
+|**Routes**|Badly configured routes can give unintended access to an attacker.|
+|**SQL injection**|A SQL injection attack consists of insertion or "injection" of a SQL query via the input data from the client to the application.|
+|**SSL**|Simply using SSL isn't enough to ensure the data you're sending is secure. Man in the middle attacks are well known and widely used.|
+|**Unexpected behaviour**|Assigning values to private APIs might lead to unexpected behavior.|
+|**Visibility**|Fields shouldn't have public accessibility.|
+|**XSS**|XSS enables attackers to inject client-side scripts into web pages viewed by other users.|
+|**Other**|Other language-specific security issues.|
 
 ## See also
 
