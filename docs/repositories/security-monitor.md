@@ -124,9 +124,6 @@ The Security Monitor displays issues using security patterns from:
 
 Each issue reported on the Security Monitor belongs to one of the following security categories:
 
-<!--TODO
-    - Review description of each category, and also update the Codacy UI copy-->
-
 |Security category|Description|
 |-----------------|-----------|
 |**Android**|Android-specific issues.|
