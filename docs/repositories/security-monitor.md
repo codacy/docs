@@ -124,30 +124,36 @@ The Security Monitor displays issues using security patterns from:
 
 Each issue reported on the Security Monitor belongs to one of the following security categories:
 
+<!--NOTE
+    Currently, this category doesn't include any security issues
+    https://github.com/codacy/codacy-tools/pull/496#discussion_r892437164
+
+|**Firefox OS**|Security issues related to sensitive APIs of Firefox OS.|
+-->
+
 |Security category|Description|
 |-----------------|-----------|
-|**Android**|Android-specific issues.|
-|**Auth**|Authentication is present in almost all web applications nowadays.|
-|**Command injection**|Command injection is an attack in which the goal is the execution of arbitrary commands on the host operating system.|
-|**Cookies**|An HTTP cookie is a small piece of data sent from a website and stored on the user's computer by the browser while the user is browsing.|
-|**Cryptography**|Cryptography is a security technique widely used and there are several cryptographic functions, but not all of them are secure.|
-|**CSRF**|Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated.|
-|**DoS**|The Denial of Service (DoS) attack is focused on making a resource (site, application, server) unavailable for the purpose it was designed.|
-|**File access**|An attacker may use special paths to access files that shouldn't be accessible.|
-|**Firefox OS**|Sensitive APIs of Firefox OS.|
-|**HTTP**|HTTP headers are a common attack vector for malign users.|
-|**Input validation**|Input not validated may originate SQL Injection attacks for instance.|
-|**Insecure modules/libraries**|Consider possible security implications associated with some modules.|
-|**Insecure storage**|Storing sensitive data using these APIs isn't safe.|
-|**Malicious code**|Exposed internal APIs can be accessed or changed by malicious code or by accident from another package.|
-|**Mass assignment**|Mass assignment is a feature of Rails which allows an application to create a record from the values of a hash.|
-|**Regex**|Regex can be used in a Denial of Service attack, that exploits the fact that most Regular Expression implementations may reach heavy computation situations that cause them to work very slowly (exponentially related to input size).|
+|**Android**|Android-specific security issues.|
+|**Authentication**|Broken authentication and authorization attacks consist in gaining access to accounts that allow disclosing sensitive information or performing operations that could compromise the system.|
+|**Command Injection**|Command injection attacks aim to execute arbitrary commands on the host operating system.|
+|**Cookies**|Security issues related to insecure cookies.|
+|**Cryptography**|Cryptography attacks exploit failures related to cryptography (or lack thereof), potentially leading to exposure of sensitive data.|
+|**CSRF**|Cross-Site Request Forgery (CSRF) attacks force an end user to execute unwanted actions on a web application in which they're currently authenticated.|
+|**Denial of Service**|Denial of Service (DoS) attacks make a resource (site, application, server) unavailable for legitimate users, typically by flooding the resource with requests or exploiting a vulnerability to trigger a crash.|
+|**File Access**|File access security issues may allow an attacker to access arbitrary files and directories stored on the file system such as application source code, configuration, and critical system files.|
+|**HTTP Headers**|Insecure HTTP headers are a common attack vector for malicious users.|
+|**Input Validation**|Client input should always be validated to prevent malformed or malicious data from entering the workflow of an information system.|
+|**Insecure Modules and Libraries**|Security issues related to modules or libraries that can potentially include vulnerabilities.|
+|**Insecure Storage**|Security issues related to insecure storage of sensitive data.|
+|**Malicious Code**|Security issues related to code patterns that are potentially unsafe.|
+|**Mass Assignment**|Unprotected mass assignments are a Rails feature that could allow an attacker to update sensitive model attributes.|
+|**Regex**|Regular expressions can be used in Denial of Service attacks, exploiting the fact that in most regular expression implementations thecomputational load grows exponentially with input size.|
 |**Routes**|Badly configured routes can give unintended access to an attacker.|
-|**SQL injection**|A SQL injection attack consists of insertion or "injection" of a SQL query via the input data from the client to the application.|
-|**SSL**|Simply using SSL isn't enough to ensure the data you're sending is secure. Man in the middle attacks are well known and widely used.|
-|**Unexpected behaviour**|Assigning values to private APIs might lead to unexpected behavior.|
-|**Visibility**|Fields shouldn't have public accessibility.|
-|**XSS**|XSS enables attackers to inject client-side scripts into web pages viewed by other users.|
+|**SQL Injection**|SQL injection attacks insert or \"inject\" malicious SQL queries into the application via the client input data.|
+|**SSL**|Security issues related with old SSL versions or configurations that have known cryptographic weaknesses and should no longer be used.|
+|**Unexpected Behaviour**|Security issues related to potentially insecure system API calls.|
+|**Visibility**|Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.|
+|**XSS**|Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into otherwise benign and trusted websites that are visited by the end users.|
 |**Other**|Other language-specific security issues.|
 
 ## See also
