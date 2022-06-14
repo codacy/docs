@@ -27,6 +27,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.1.0:
 
 ## Product enhancements
 
+-   Codacy now supports using [expiring access tokens](https://docs.gitlab.com/ee/integration/oauth_provider.html#expiring-access-tokens){: target="_blank"} to integrate with GitLab. Users affected by issues connecting to GitLab should re-login on the Codacy UI with their GitLab accounts or revoke and recreate the GitLab integrations on affected repositories. (CY-6117)
 -   The Codacy Coverage Reporter now prints a more explicit error message when using an account API token from a user that [doesn't have permission to upload coverage data](https://docs.codacy.com/v8.1/organizations/roles-and-permissions-for-synced-organizations/). (CY-6084)
 -   Codacy now [displays diff coverage as not applicable](https://docs.codacy.com/v8.1/repositories/pull-requests/#pull-request-quality-overview) (represented by `∅`) when there are no coverable lines included in a pull request, and correctly reports the pull request status on your Git provider in this scenario. (CY-5960)
 
@@ -36,17 +37,15 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.1.0:
 
 ## Bug fixes
 
--   Fix: Save coverage for the first commit of a repo (CY-6196)
+-   Fixed an issue to allow saving coverage data for the first commit in a repository. (CY-6196)
 -   Fixed a problem where an attacker could join a **public organization** and know the emails of members. This did not allow the attacker to see or change any repositories information. (Overall CVSS Score: 5.1)
 
 Fixed a problem where an attacker could do destructive actions on a **Personal Organization** (related with the other linked tickets) like removing members or deleting the organization. This did not allow the attacker to see or change any repositories information. (Overall CVSS Score: 7.9)
 
 (All the attacks are referring to information and actions on Codacy side, meaning as example, the attacker could NOT remove an organization from the Provider, only from Codacy) (CY-6174)
--   Removed the username field from the UI and API endpoints, as it is no longer used and could be used to leak which emails are already in use in Codacy.  (CY-6173)
+-   Removed the username field from the Codacy UI and relevant API endpoints since it's no longer used and could be exploited to leak email addresses that are already in use on Codacy. (CY-6173)
 -   Fixed an issue that caused commits to be in the "Analyzing" state indefinitely if the setting **Run the repository analysis on your build server** was off and a client-side result was uploaded to the repository. (CY-6136)
--   Tokens used to access GitLab will now be refreshed when they expire. Users that are affected by issues connecting to GitLab will need to re-login with their GitLab accounts via the UI, or revoke and recreate GitLab integrations.  (CY-6117)
--   fix: fixed parsing of tool results when returning too much issues
-bump: bumped dartanalyzer to 2.17.0 (CY-6067)
+-   Fixed the parsing of dartanalyzer results containing many issues. (CY-6067)
 
 ## Tool versions
 
