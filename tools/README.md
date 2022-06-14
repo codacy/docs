@@ -36,6 +36,14 @@ Outputs a list of images that aren't included in any Markdown file.
 ./find-orphan-images.sh
 ```
 
+## get-security-patterns
+
+Outputs the details of all supported security code patterns as a CSV file.
+
+```bash
+./get-security-patterns.py
+```
+
 ## get-tool-descriptions
 
 Outputs the name and description of each supported tool.
@@ -46,7 +54,7 @@ Outputs the name and description of each supported tool.
 
 ## list-last-modified
 
-Outputs the date and time when each documentation page was last modified. This can be used to help assess which pages could be outdated and in need of review.
+Outputs the date and time when each documentation page was last modified as a CSV file. This can be used to help assess which pages could be outdated and in need of review.
 
 ```bash
 ./list-last-modified.py

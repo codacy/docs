@@ -4,16 +4,14 @@ To manage your profile information such as your name and avatar, click on your a
 
 ![Managing your profile](images/profile.png)
 
-## Changing your name or username
+## Changing your name or avatar
 
-To change your name or username, update the fields **Name** or **Username** and click the button **Update profile**.
+-   To change your avatar, sign up or log in at [Gravatar](https://en.gravatar.com/) using the same email address that you used to log into Codacy. The avatar that you define there will be automatically used as your avatar on Codacy.
 
-## Changing your avatar
+    !!! note
+        Organization avatars aren't editable at the moment.
 
-To change your avatar, sign up or log in at [Gravatar](https://en.gravatar.com/) using the same email address that you used to log into Codacy. The avatar that you define there will be automatically used as your avatar on Codacy.
-
-!!! note
-    Organization avatars aren't editable at the moment.
+-   To change your name, update the field **Name** and click the button **Update profile**.
 
 ## Deleting your account
 
