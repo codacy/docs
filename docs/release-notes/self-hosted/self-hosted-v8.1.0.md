@@ -14,16 +14,6 @@ These release notes are for [Codacy Self-hosted v8.1.0](https://github.com/codac
 
 <!--TODO Check these issues manually
 
-Jira issues without release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/CY-5700
-Bugs and Community Issues:
-Others:
--   https://codacy.atlassian.net/browse/CY-6097
--   https://codacy.atlassian.net/browse/CY-6095
--   https://codacy.atlassian.net/browse/CY-2763
-
 Jira issues with disabled release notes
 
 Epics:
@@ -53,6 +43,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.1.0:
 ## Product enhancements
 
 -   Now, Codacy [displays diff coverage as not applicable](https://docs.codacy.com/v8.1/repositories/pull-requests/#pull-request-quality-overview) (represented by `∅`) when there are no coverable lines included in a pull request, and correctly reports the pull request status on your Git provider in this scenario. ![Not applicable diff coverage](../images/cy-5960.png) (CY-5960)
+-   [Pull request notification emails](https://docs.codacy.com/v8.1/account/emails/#managing-your-email-notifications) now display the diff coverage metric. (CY-5700) <!--TODO Add screenshot?-->
 
 ## Bug fixes
 
