@@ -12,21 +12,6 @@ These release notes are for [Codacy Self-hosted v8.1.0](https://github.com/codac
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
-<!--TODO Check these issues manually
-
-Jira issues with disabled release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/CY-5746
--   https://codacy.atlassian.net/browse/CY-4844
-Bugs and Community Issues:
--   https://codacy.atlassian.net/browse/CY-6120
--   https://codacy.atlassian.net/browse/CY-6094
--   https://codacy.atlassian.net/browse/CY-6084
--   https://codacy.atlassian.net/browse/CY-6033
--   https://codacy.atlassian.net/browse/CY-4143
--->
-
 ## Upgrading Codacy Self-hosted
 
 Follow the steps below to upgrade to Codacy Self-hosted v8.1.0:
@@ -42,6 +27,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.1.0:
 
 ## Product enhancements
 
+-   The Codacy Coverage Reporter now prints a more explicit error message when using an account API token from a user that [doesn't have permission to upload coverage data](https://docs.codacy.com/v8.1/organizations/roles-and-permissions-for-synced-organizations/). (CY-6084)
 -   Now, Codacy [displays diff coverage as not applicable](https://docs.codacy.com/v8.1/repositories/pull-requests/#pull-request-quality-overview) (represented by `∅`) when there are no coverable lines included in a pull request, and correctly reports the pull request status on your Git provider in this scenario. ![Not applicable diff coverage](../images/cy-5960.png) (CY-5960)
 -   [Pull request notification emails](https://docs.codacy.com/v8.1/account/emails/#managing-your-email-notifications) now display the diff coverage metric. (CY-5700) <!--TODO Add screenshot?-->
 
