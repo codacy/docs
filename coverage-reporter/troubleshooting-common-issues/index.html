@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter.">
       
       
-        <meta http-equiv="last-modified" content="2022-05-25 17:43:57">  
+        <meta http-equiv="last-modified" content="2022-06-08 16:37:07">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/troubleshooting-common-issues/">
@@ -649,6 +649,13 @@
         <li class="md-nav__item md-nav__item--toc">
   <a href="#jsonparseexception-while-uploading-coverage-data" class="md-nav__link">
     JsonParseException while uploading coverage data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
+  <a href="#connect-timed-out-while-uploading-coverage-data" class="md-nav__link">
+    Connect timed out while uploading coverage data
   </a>
   
 </li>
@@ -3476,7 +3483,7 @@
 <div class="highlight"><pre><span></span><code>dotCover.exe cover ... --reportType<span class="o">=</span>DetailedXml
 </code></pre></div>
 <h2 id="jsonparseexception-while-uploading-coverage-data">JsonParseException while uploading coverage data<a class="headerlink" href="#jsonparseexception-while-uploading-coverage-data" title="Permanent link">#</a></h2>
-<p>If you're getting a <code>com.fasterxml.jackson.core.JsonParseException</code> error while uploading your coverage data to Codacy it means that your coverage report is too big and that Codacy Coverage Reporter hit a limit of 10 MB when uploading the coverage data to Codacy.</p>
+<p>If you get a <code>com.fasterxml.jackson.core.JsonParseException</code> error while uploading your coverage data to Codacy it means that your coverage report is too big and that Codacy Coverage Reporter hit a limit of 10 MB when uploading the coverage data to Codacy.</p>
 <p>There are some ways you can solve this:</p>
 <ul>
 <li>
@@ -3489,6 +3496,13 @@
 <p>By default, dotCover includes xUnit files in the coverage analysis and this results in larger coverage reports. This filter helps ensure that the resulting coverage data does not exceed the size limit accepted by the Codacy API when uploading the results.</p>
 </li>
 </ul>
+<h2 id="connect-timed-out-while-uploading-coverage-data">Connect timed out while uploading coverage data<a class="headerlink" href="#connect-timed-out-while-uploading-coverage-data" title="Permanent link">#</a></h2>
+<p>If you get a <code>Error doing a post to ... connect timed out</code> error while uploading your coverage data to Codacy it means that the Codacy Coverage Reporter is timing out while connecting to the Codacy API. This typically happens if you're uploading coverage data for larger repositories.</p>
+<p>To increase the default timeout while connecting to the Codacy API, use the flag <code>--http-timeout</code> to set a value larger than 10000 miliseconds. For example, to set the timeout to 30 seconds:</p>
+<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
+    -r report.xml <span class="se">\</span>
+    --http-timeout <span class="m">30000</span>
+</code></pre></div>
 <h2 id="malformedinputexception-while-parsing-report">MalformedInputException while parsing report<a class="headerlink" href="#malformedinputexception-while-parsing-report" title="Permanent link">#</a></h2>
 <p>If you get a <code>java.nio.charset.MalformedInputException</code> when running the Codacy Coverage Reporter it means that the coverage report includes a character that is not encoded in UTF-8. The invalid character can belong to the file name of one of your source code files, or even a class or method name.</p>
 <p>For maximum compatibility of your coverage reports with the Codacy Coverage Reporter, make sure that your coverage reports use UTF-8 encoding and that they only include UTF-8 characters.</p>
@@ -3662,7 +3676,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 25, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 8, 2022</span>
     
   </small>
 </div>

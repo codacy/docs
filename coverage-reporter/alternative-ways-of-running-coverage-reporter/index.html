@@ -11,7 +11,7 @@
         <meta name="description" content="There are alternative ways of running or installing Codacy Coverage Reporter, such as running a Docker image, downloading a binary for your operating system, or building the binary from source.">
       
       
-        <meta http-equiv="last-modified" content="2022-02-09 17:36:33">  
+        <meta http-equiv="last-modified" content="2022-06-14 10:09:43">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/">
@@ -3435,7 +3435,8 @@
 </div>
 <p>The sections below provide details on alternative ways to run or install Codacy Coverage Reporter.</p>
 <h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">#</a></h2>
-<p>You can use Docker to run Codacy Coverage Reporter:</p>
+<p>You can use Docker to run Codacy Coverage Reporter.</p>
+<p>Use the following command where <code>&lt;version&gt;</code> is either one of the <a href="https://github.com/codacy/codacy-coverage-reporter/releases">released versions</a>, or <code>latest</code> to use the most recent version:</p>
 <div class="highlight"><pre><span></span><code>docker run -v <span class="nv">$PWD</span>:/code codacy/codacy-coverage-reporter:&lt;version&gt; report
 </code></pre></div>
 <h2 id="github-action">GitHub Action<a class="headerlink" href="#github-action" title="Permanent link">#</a></h2>
@@ -3521,56 +3522,11 @@ sbt assembly
 </code></pre></div>
 <p>Make sure that you also <a href="../#authenticate">set your project or account API Token</a> as an environment variable in your Travis CI job.</p>
 <h3 id="gradle-task">Gradle task<a class="headerlink" href="#gradle-task" title="Permanent link">#</a></h3>
-<p>A big shout-out to <a href="https://github.com/tompahoward">Tom Howard</a>, who suggested a way to <a href="https://github.com/mountain-pass/hyperstate/commit/857ca93e1c8484c14a5e2da9f0434d3daf3328ce">create a Gradle task</a>.</p>
-<div class="highlight"><pre><span></span><code>task uploadCoverageToCodacy(type: JavaExec, dependsOn : jacocoTestReport) {
-   main = &quot;com.codacy.CodacyCoverageReporter&quot;
-   classpath = configurations.codacy
-   args = [
-            &quot;report&quot;,
-            &quot;-l&quot;,
-            &quot;Java&quot;,
-            &quot;-r&quot;,
-            &quot;${buildDir}/test-results/jacoco/${archivesBaseName}.xml&quot;
-           ]
-}
-
-task (codacyDepsize) &lt;&lt; {
-def size = 0;
-configurations.codacy.collect { it.length() / (1024 * 1024) }.each { size += it }
-println &quot;Total dependencies size: ${Math.round(size * 100) / 100} Mb&quot;
-
-configurations
-        .codacy
-        .sort { -it.length() }
-        .each { println &quot;${it.name} : ${Math.round(it.length() / (1024) * 100) / 100} kb&quot; }
-}
-
-task (codacyLocs) &lt;&lt; {
-    configurations.codacy.each {
-        String jarName = it
-        println jarName
-    }
-}
-</code></pre></div>
-<p>The following Gradle task by <a href="https://github.com/Ram042">Ramil Khamitov</a> was based on the solution above.</p>
-<div class="highlight"><pre><span></span><code>configurations { codacy }
-repositories {
-    jcenter()
-}
-dependencies {
-    codacy &#39;com.codacy:codacy-coverage-reporter:latest.release&#39;
-}
-task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
-    main = &quot;com.codacy.CodacyCoverageReporter&quot;
-    classpath = configurations.codacy
-    args = [
-            &quot;report&quot;,
-            &quot;-l&quot;,
-            &quot;Java&quot;,
-            &quot;-r&quot;,
-            &quot;${buildDir}/reports/jacoco/test/jacocoTestReport.xml&quot;
-    ]
-}
+<p>If you're using Gradle to automate your CI/CD you can add use the following example task, where <code>&lt;COVERAGE_REPORT_TASK&gt;</code> is the name of the task that generates your coverage report:</p>
+<div class="highlight"><pre><span></span><code><span class="n">task</span><span class="w"> </span><span class="nf">uploadCoverage</span><span class="o">(</span><span class="nl">type:</span><span class="n">Exec</span><span class="o">,</span><span class="w"> </span><span class="nl">dependsOn:</span><span class="w"> </span><span class="o">&lt;</span><span class="n">COVERAGE_REPORT_TASK</span><span class="o">&gt;)</span><span class="w"> </span><span class="o">{</span><span class="w"></span>
+<span class="w">    </span><span class="n">description</span><span class="w"> </span><span class="s1">&#39;Uploads coverage data to Codacy.&#39;</span><span class="w"></span>
+<span class="w">    </span><span class="n">commandLine</span><span class="w"> </span><span class="s1">&#39;bash&#39;</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;-c&#39;</span><span class="o">,</span><span class="w"> </span><span class="s1">&#39;bash &lt;(curl -Ls https://coverage.codacy.com/get.sh) report&#39;</span><span class="w"></span>
+<span class="o">}</span><span class="w"></span>
 </code></pre></div>
               
               
@@ -3728,7 +3684,7 @@ task sendCoverageToCodacy(type: JavaExec, dependsOn: jacocoTestReport) {
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 9, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 14, 2022</span>
     
   </small>
 </div>
