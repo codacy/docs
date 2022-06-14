@@ -28,7 +28,10 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.1.0:
 ## Product enhancements
 
 -   The Codacy Coverage Reporter now prints a more explicit error message when using an account API token from a user that [doesn't have permission to upload coverage data](https://docs.codacy.com/v8.1/organizations/roles-and-permissions-for-synced-organizations/). (CY-6084)
--   Now, Codacy [displays diff coverage as not applicable](https://docs.codacy.com/v8.1/repositories/pull-requests/#pull-request-quality-overview) (represented by `∅`) when there are no coverable lines included in a pull request, and correctly reports the pull request status on your Git provider in this scenario. ![Not applicable diff coverage](../images/cy-5960.png) (CY-5960)
+-   Codacy now [displays diff coverage as not applicable](https://docs.codacy.com/v8.1/repositories/pull-requests/#pull-request-quality-overview) (represented by `∅`) when there are no coverable lines included in a pull request, and correctly reports the pull request status on your Git provider in this scenario. (CY-5960)
+
+    ![Not applicable diff coverage](../images/cy-5960.png)
+
 -   [Pull request notification emails](https://docs.codacy.com/v8.1/account/emails/#managing-your-email-notifications) now display the diff coverage metric. (CY-5700) <!--TODO Add screenshot?-->
 
 ## Bug fixes
