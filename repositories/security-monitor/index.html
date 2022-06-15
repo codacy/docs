@@ -11,7 +11,7 @@
         <meta name="description" content="The Security Monitor provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.">
       
       
-        <meta http-equiv="last-modified" content="2022-06-15 15:01:35">  
+        <meta http-equiv="last-modified" content="2022-06-15 15:03:44">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/security-monitor/">
@@ -3557,91 +3557,87 @@
 <tbody>
 <tr>
 <td><strong>Android</strong></td>
-<td>Android-specific issues.</td>
+<td>Android-specific security issues.</td>
 </tr>
 <tr>
-<td><strong>Auth</strong></td>
-<td>Authentication is present in almost all web applications nowadays.</td>
+<td><strong>Authentication</strong></td>
+<td>Broken authentication and authorization attacks consist in gaining access to accounts that allow disclosing sensitive information or performing operations that could compromise the system.</td>
 </tr>
 <tr>
-<td><strong>Command injection</strong></td>
-<td>Command injection is an attack in which the goal is the execution of arbitrary commands on the host operating system.</td>
+<td><strong>Command Injection</strong></td>
+<td>Command injection attacks aim to execute arbitrary commands on the host operating system.</td>
 </tr>
 <tr>
 <td><strong>Cookies</strong></td>
-<td>An HTTP cookie is a small piece of data sent from a website and stored on the user's computer by the browser while the user is browsing.</td>
+<td>Security issues related to insecure cookies.</td>
 </tr>
 <tr>
 <td><strong>Cryptography</strong></td>
-<td>Cryptography is a security technique widely used and there are several cryptographic functions, but not all of them are secure.</td>
+<td>Cryptography attacks exploit failures related to cryptography (or lack thereof), potentially leading to exposure of sensitive data.</td>
 </tr>
 <tr>
 <td><strong>CSRF</strong></td>
-<td>Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated.</td>
+<td>Cross-Site Request Forgery (CSRF) attacks force an end user to execute unwanted actions on a web application in which they're currently authenticated.</td>
 </tr>
 <tr>
-<td><strong>DoS</strong></td>
-<td>The Denial of Service (DoS) attack is focused on making a resource (site, application, server) unavailable for the purpose it was designed.</td>
+<td><strong>Denial of Service</strong></td>
+<td>Denial of Service (DoS) attacks make a resource (site, application, server) unavailable for legitimate users, typically by flooding the resource with requests or exploiting a vulnerability to trigger a crash.</td>
 </tr>
 <tr>
-<td><strong>File access</strong></td>
-<td>An attacker may use special paths to access files that shouldn't be accessible.</td>
+<td><strong>File Access</strong></td>
+<td>File access security issues may allow an attacker to access arbitrary files and directories stored on the file system such as application source code, configuration, and critical system files.</td>
 </tr>
 <tr>
-<td><strong>Firefox OS</strong></td>
-<td>Sensitive APIs of Firefox OS.</td>
+<td><strong>HTTP Headers</strong></td>
+<td>Insecure HTTP headers are a common attack vector for malicious users.</td>
 </tr>
 <tr>
-<td><strong>HTTP</strong></td>
-<td>HTTP headers are a common attack vector for malign users.</td>
+<td><strong>Input Validation</strong></td>
+<td>Client input should always be validated to prevent malformed or malicious data from entering the workflow of an information system.</td>
 </tr>
 <tr>
-<td><strong>Input validation</strong></td>
-<td>Input not validated may originate SQL Injection attacks for instance.</td>
+<td><strong>Insecure Modules and Libraries</strong></td>
+<td>Security issues related to modules or libraries that can potentially include vulnerabilities.</td>
 </tr>
 <tr>
-<td><strong>Insecure modules/libraries</strong></td>
-<td>Consider possible security implications associated with some modules.</td>
+<td><strong>Insecure Storage</strong></td>
+<td>Security issues related to insecure storage of sensitive data.</td>
 </tr>
 <tr>
-<td><strong>Insecure storage</strong></td>
-<td>Storing sensitive data using these APIs isn't safe.</td>
+<td><strong>Malicious Code</strong></td>
+<td>Security issues related to code patterns that are potentially unsafe.</td>
 </tr>
 <tr>
-<td><strong>Malicious code</strong></td>
-<td>Exposed internal APIs can be accessed or changed by malicious code or by accident from another package.</td>
-</tr>
-<tr>
-<td><strong>Mass assignment</strong></td>
-<td>Mass assignment is a feature of Rails which allows an application to create a record from the values of a hash.</td>
+<td><strong>Mass Assignment</strong></td>
+<td>Unprotected mass assignments are a Rails feature that could allow an attacker to update sensitive model attributes.</td>
 </tr>
 <tr>
 <td><strong>Regex</strong></td>
-<td>Regex can be used in a Denial of Service attack, that exploits the fact that most Regular Expression implementations may reach heavy computation situations that cause them to work very slowly (exponentially related to input size).</td>
+<td>Regular expressions can be used in Denial of Service attacks, exploiting the fact that in most regular expression implementations thecomputational load grows exponentially with input size.</td>
 </tr>
 <tr>
 <td><strong>Routes</strong></td>
 <td>Badly configured routes can give unintended access to an attacker.</td>
 </tr>
 <tr>
-<td><strong>SQL injection</strong></td>
-<td>A SQL injection attack consists of insertion or "injection" of a SQL query via the input data from the client to the application.</td>
+<td><strong>SQL Injection</strong></td>
+<td>SQL injection attacks insert or \"inject\" malicious SQL queries into the application via the client input data.</td>
 </tr>
 <tr>
 <td><strong>SSL</strong></td>
-<td>Simply using SSL isn't enough to ensure the data you're sending is secure. Man in the middle attacks are well known and widely used.</td>
+<td>Security issues related with old SSL versions or configurations that have known cryptographic weaknesses and should no longer be used.</td>
 </tr>
 <tr>
-<td><strong>Unexpected behaviour</strong></td>
-<td>Assigning values to private APIs might lead to unexpected behavior.</td>
+<td><strong>Unexpected Behaviour</strong></td>
+<td>Security issues related to potentially insecure system API calls.</td>
 </tr>
 <tr>
 <td><strong>Visibility</strong></td>
-<td>Fields shouldn't have public accessibility.</td>
+<td>Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.</td>
 </tr>
 <tr>
 <td><strong>XSS</strong></td>
-<td>XSS enables attackers to inject client-side scripts into web pages viewed by other users.</td>
+<td>Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into trusted websites that are visited by the end users.</td>
 </tr>
 <tr>
 <td><strong>Other</strong></td>
