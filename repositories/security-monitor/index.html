@@ -11,7 +11,7 @@
         <meta name="description" content="The Security Monitor provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.">
       
       
-        <meta http-equiv="last-modified" content="2022-06-03 10:32:15">  
+        <meta http-equiv="last-modified" content="2022-06-15 15:01:35">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/security-monitor/">
@@ -359,15 +359,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
-  <a href="#supported-languages" class="md-nav__link">
-    Supported languages
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item md-nav__item--toc">
-  <a href="#tools" class="md-nav__link">
-    Tools
+  <a href="#languages-checked-for-security-issues" class="md-nav__link">
+    Languages checked for security issues
   </a>
   
 </li>
@@ -3440,54 +3433,118 @@
 <p class="admonition-title">Tip</p>
 <p>You can use the <strong>Warnings</strong> drop-down list to display only security categories that have found issues or categories that have code patterns turned off.</p>
 </div>
-<h2 id="supported-languages">Supported languages<a class="headerlink" href="#supported-languages" title="Permanent link">#</a></h2>
-<p>The Security Monitor is available for the following languages:</p>
-<ul>
-<li>Apex</li>
-<li>C#</li>
-<li>Java</li>
-<li>JavaScript</li>
-<li>Python</li>
-<li>Ruby</li>
-<li>Scala</li>
-<li>PHP</li>
-<li>C</li>
-<li>C++</li>
-<li>Shell script</li>
-<li>Dockerfile</li>
-<li>Visual Basic</li>
-<li>Elixir</li>
-<li>PowerShell</li>
-<li>TSQL</li>
-<li>Groovy</li>
-</ul>
-<h2 id="tools">Tools<a class="headerlink" href="#tools" title="Permanent link">#</a></h2>
-<p>The Security Monitor displays issues using security patterns from:</p>
-<ul>
-<li><a href="https://bandit.readthedocs.io/en/latest/plugins/index.html#complete-test-plugin-listing" target="_blank">Bandit</a></li>
-<li><a href="https://brakemanscanner.org/docs/warning_types/" target="_blank">Brakeman</a></li>
-<li><a href="https://github.com/codacy/codacy-scalameta/tree/master/patterns-base/src/main/scala/codacy/patterns" target="_blank">Codacy Scalameta Pro</a></li>
-<li><a href="https://www.npmjs.com/package/eslint-plugin-security" target="_blank">ESLint</a> (also: <a href="https://www.npmjs.com/package/eslint-config-nodesecurity" target="_blank">1</a>, <a href="https://www.npmjs.com/package/eslint-plugin-scanjs-rules" target="_blank">2</a>, <a href="https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml" target="_blank">3</a> and <a href="https://www.npmjs.com/package/eslint-config-secure" target="_blank">4</a>)</li>
-<li><a href="https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html" target="_blank">SpotBugs</a> (includes the plugin <a href="https://find-sec-bugs.github.io/bugs.htm" target="_blank">Find Security Bugs</a>)</li>
-<li><a href="https://rules.sonarsource.com/csharp/type/Vulnerability" target="_blank">Sonar C#</a></li>
-<li><a href="https://rules.sonarsource.com/vbnet" target="_blank">Sonar VB.NET</a></li>
-<li><a href="https://pmd.github.io/pmd-6.21.0/" target="_blank">PMD</a></li>
-<li><a href="https://phpmd.org/rules/" target="_blank">PHP Mess Detector</a></li>
-<li><a href="http://pylint.pycqa.org/en/1.9/technical_reference/features.html" target="_blank">Pylint</a> (Python 2)</li>
-<li><a href="http://pylint.pycqa.org/en/stable/technical_reference/features.html" target="_blank">Pylint</a> (Python 3)</li>
-<li><a href="https://rubocop.readthedocs.io/en/latest/cops/" target="_blank">RuboCop</a></li>
-<li><a href="http://cppcheck.sourceforge.net/" target="_blank">Cppcheck</a></li>
-<li><a href="https://github.com/koalaman/shellcheck/wiki/Checks" target="_blank">ShellCheck</a></li>
-<li><a href="https://github.com/squizlabs/PHP_CodeSniffer" target="_blank">PHP_CodeSniffer</a></li>
-<li><a href="https://github.com/hadolint/hadolint#rules" target="_blank">Hadolint</a></li>
-<li><a href="https://github.com/PyCQA/prospector" target="_blank">Prospector</a></li>
-<li><a href="https://github.com/rubysec/bundler-audit" target="_blank">bundler-audit</a></li>
-<li><a href="https://github.com/rrrene/credo/" target="_blank">Credo</a></li>
-<li><a href="https://dwheeler.com/flawfinder/" target="_blank">Flawfinder</a></li>
-<li><a href="https://dwheeler.com/flawfinder/" target="_blank">PSScriptAnalyzer</a></li>
-<li><a href="https://github.com/tsqllint/tsqllint/" target="_blank">TSQLLint</a></li>
-<li><a href="https://codenarc.github.io/CodeNarc/codenarc-rule-index.html" target="_blank">CodeNarc</a></li>
-</ul>
+<h2 id="languages-checked-for-security-issues">Languages checked for security issues<a class="headerlink" href="#languages-checked-for-security-issues" title="Permanent link">#</a></h2>
+<p>The Security Monitor supports checking the languages and frameworks below for any security issues reported by the corresponding tools:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Language or framework</th>
+      <th>Tools that report security issues</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apex</td>
+      <td><a href="https://pmd.github.io/">PMD</a></td>
+    </tr>
+    <tr>
+      <td>AWS CloudFormation</td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>,
+          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
+          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
+    </tr>
+    <tr>
+      <td>C#</td>
+      <td><a href="https://github.com/SonarSource/sonar-dotnet">Sonar C#</a></td>
+    </tr>
+    <tr>
+      <td>C++</td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>,
+          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a></a>,
+          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
+    </tr>
+    <tr>
+      <td>Dockerfile</td>
+      <td><a href="https://github.com/hadolint/hadolint">Hadolint</a></td>
+    </tr>
+    <tr>
+      <td>Elixir</td>
+      <td><a href="https://github.com/rrrene/credo">Credo</a></td>
+    </tr>
+    <tr>
+      <td>Go</td>
+      <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"><sup>1</sup></a></td>
+    </tr>
+    <tr>
+      <td>Groovy</td>
+      <td><a href="https://codenarc.github.io/CodeNarc/">CodeNarc</a></td>
+    </tr>
+    <tr>
+      <td>Java</td>
+      <td><a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>1</sup></a><a href="#spotbugs-plugin"><sup>2</sup></a></td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td><a href="https://eslint.org/">ESLint</a><sup><a href="#eslint-plugin">3</a></sup></td>
+    </tr>
+    <tr>
+      <td>Objective-C</td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a></td>
+    </tr>
+      <td>PHP</td>
+      <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
+          <a href="https://phpmd.org/">PHP Mess Detector</a></td>
+    </tr>
+    <tr>
+      <td>PowerShell</td>
+      <td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
+    </tr>
+    <tr>
+      <td>Python
+      </td>
+      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
+          <a href="https://github.com/PyCQA/prospector">Prospector</a>,
+          <a href="https://www.pylint.org/">Pylint</a></td>
+    </tr>
+    <tr>
+      <td>Ruby<a href="#ruby-31"><sup>4</sup></a>
+      </td>
+      <td><a href="https://brakemanscanner.org/">Brakeman</a>,
+          <a href="https://github.com/rubysec/bundler-audit">bundler-audit</a>,
+          <a href="https://github.com/rubocop/rubocop">RuboCop</a></td>
+    </tr>
+    <tr>
+      <td>Scala</td>
+      <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
+          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>1</sup></a><a href="#spotbugs-plugin"><sup>2</sup></a></td>
+    </tr>
+    <tr>
+      <td>Shell</td>
+      <td><a href="https://www.shellcheck.net/">ShellCheck</a></td>
+    </tr>
+    <tr>
+      <td>Transact-SQL</td>
+      <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
+    </tr>
+    <tr>
+      <td>TypeScript</td>
+      <td><a href="https://eslint.org/">ESLint</a><sup><a href="#eslint-plugin">3</a></sup></td>
+    </tr>
+    <tr>
+      <td>Visual Basic</td>
+      <td><a href="https://github.com/SonarSource/sonar-dotnet">Sonar Visual Basic</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><sup><span id="client-side">1</span></sup>: Supported as a <a href="../../related-tools/local-analysis/client-side-tools/">client-side tool</a>.<br />
+<sup><span id="spotbugs-plugin">2</span></sup>: Includes the plugin <a href="https://find-sec-bugs.github.io/" target="_blank">Find Security Bugs</a>.<br />
+<sup><span id="eslint-plugin">3</sup>: Includes the shareable config <a href="https://www.npmjs.com/package/eslint-config-nodesecurity" target="_blank">nodesecurity</a> and the plugins <a href="https://www.npmjs.com/package/eslint-plugin-angularjs-security-rules" target="_blank">angularjs-security-rules</a>, <a href="https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml" target="_blank">no-unsafe-innerhtml</a>, <a href="https://www.npmjs.com/package/eslint-plugin-no-unsanitized" target="_blank">no-unsanitized</a>, <a href="https://www.npmjs.com/package/eslint-plugin-scanjs-rules" target="_blank">scanjs-rules</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security" target="_blank">security</a>, and <a href="https://www.npmjs.com/package/eslint-plugin-security-node" target="_blank">security-node</a>.<br />
+<sup><span id="ruby-31">4</span></sup>: Currently, Codacy doesn't support any static code analysis tool for <a href="https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/" target="_blank">Ruby 3.1</a>.  </p>
 <h2 id="supported-security-categories">Supported security categories<a class="headerlink" href="#supported-security-categories" title="Permanent link">#</a></h2>
 <p>Each issue reported on the Security Monitor belongs to one of the following security categories:</p>
 <table>
@@ -3753,7 +3810,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 3, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 15, 2022</span>
     
   </small>
 </div>
