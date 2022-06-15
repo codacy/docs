@@ -38,12 +38,8 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.1.0:
 ## Bug fixes
 
 -   Fixed an issue to allow saving coverage data for the first commit in a repository. (CY-6196)
--   Fixed a problem where an attacker could join a **public organization** and know the emails of members. This did not allow the attacker to see or change any repositories information. (Overall CVSS Score: 5.1)
-
-    Fixed a problem where an attacker could do destructive actions on a **Personal Organization** (related with the other linked tickets) like removing members or deleting the organization. This did not allow the attacker to see or change any repositories information. (Overall CVSS Score: 7.9)
-
-    (All the attacks are referring to information and actions on Codacy side, meaning as example, the attacker could NOT remove an organization from the Provider, only from Codacy) (CY-6174)
-
+-   Fixed an issue that could allow an attacker to do destructive actions on a **Codacy personal organization** such as removing members from Codacy or deleting the personal organization on Codacy. The issue didn't allow the attacker to see or change any information on the Git provider organization or repositories. CVSS v3.1 score: 7.9 (High) (CY-6184, CY-6187, CY-6188)
+-   Fixed an issue that could allow an attacker to join a **public Codacy organization** and know the email addresses of the organization members on Codacy. The issue didn't allow the attacker to see or change any information on the Git provider organization or repositories. CVSS v3.1 score: 5.1 (Medium) (CY-6174)
 -   Removed the username field from the Codacy UI and relevant API endpoints since it's no longer used and could be exploited to leak email addresses that are already in use on Codacy. (CY-6173)
 -   Fixed an issue that caused commits to be in the "Analyzing" state indefinitely if the setting **Run the repository analysis on your build server** was off and a client-side result was uploaded to the repository. (CY-6136)
 -   Fixed the parsing of dartanalyzer results containing many issues. (CY-6067)
