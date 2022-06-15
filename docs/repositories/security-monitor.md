@@ -153,7 +153,7 @@ Each issue reported on the Security Monitor belongs to one of the following secu
 |**SSL**|Security issues related with old SSL versions or configurations that have known cryptographic weaknesses and should no longer be used.|
 |**Unexpected Behaviour**|Security issues related to potentially insecure system API calls.|
 |**Visibility**|Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.|
-|**XSS**|Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into otherwise benign and trusted websites that are visited by the end users.|
+|**XSS**|Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into trusted websites that are visited by the end users.|
 |**Other**|Other language-specific security issues.|
 
 ## See also
