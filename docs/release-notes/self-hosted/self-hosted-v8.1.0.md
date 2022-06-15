@@ -38,7 +38,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.1.0:
 ## Bug fixes
 
 -   Fixed an issue to allow saving coverage data for the first commit in a repository. (CY-6196)
--   Fixed an issue that could allow an attacker to do destructive actions on a **Codacy personal organization** such as removing members from Codacy or deleting the personal organization on Codacy. The issue didn't allow the attacker to see or change any information on the Git provider organization or repositories. CVSS v3.1 score: 7.9 (High) (CY-6184, CY-6187, CY-6188)
+-   Fixed an issue that could allow an attacker with an account on both the Codacy Self-hosted instance and on the Git provider to do destructive actions on **Codacy personal organizations**, such as removing members from Codacy or deleting the personal organization on Codacy. The issue didn't allow the attacker to see or change any information on the Git provider organization or repositories. CVSS v3.1 score: 7.3 (High) (CY-6184, CY-6187, CY-6188)
 -   Fixed an issue that could allow an attacker to join a **public Codacy organization** and know the email addresses of the organization members on Codacy. The issue didn't allow the attacker to see or change any information on the Git provider organization or repositories. CVSS v3.1 score: 5.1 (Medium) (CY-6174)
 -   Removed the username field from the Codacy UI and relevant API endpoints since it's no longer used and could be exploited to leak email addresses that are already in use on Codacy. (CY-6173)
 -   Fixed an issue that caused commits to be in the "Analyzing" state indefinitely if the setting **Run the repository analysis on your build server** was off and a client-side result was uploaded to the repository. (CY-6136)
