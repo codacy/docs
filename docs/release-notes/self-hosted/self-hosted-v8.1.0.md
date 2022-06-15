@@ -8,7 +8,7 @@ codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/6.
 
 # Self-hosted v8.1.0
 
-These release notes are for [Codacy Self-hosted v8.1.0](https://github.com/codacy/chart/releases/tag/8.1.0){: target="_blank"}, released on June 14, 2022. <!-- TODO Update release date -->
+These release notes are for [Codacy Self-hosted v8.1.0](https://github.com/codacy/chart/releases/tag/8.1.0){: target="_blank"}, released on June 15, 2022. <!-- TODO Update release date -->
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
@@ -33,7 +33,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.1.0:
 
     ![Not applicable diff coverage](../images/cy-5960.png)
 
--   [Pull request notification emails](https://docs.codacy.com/v8.1/account/emails/#managing-your-email-notifications) now display the diff coverage metric. (CY-5700) <!--TODO Add screenshot?-->
+-   [Pull request notification emails](https://docs.codacy.com/v8.1/account/emails/#managing-your-email-notifications) now display the diff coverage metric. (CY-5700)
 
 ## Bug fixes
 

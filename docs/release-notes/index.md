@@ -67,7 +67,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 v8
 
--   [v8.1.0](self-hosted/self-hosted-v8.0.0.md) (June 14, 2022) <!--TODO Review release date-->
+-   [v8.1.0](self-hosted/self-hosted-v8.0.0.md) (June 15, 2022) <!--TODO Review release date-->
 -   [v8.0.0](self-hosted/self-hosted-v8.0.0.md) (May 12, 2022)
 
 v7
