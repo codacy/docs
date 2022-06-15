@@ -27,7 +27,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.1.0:
 
 ## Product enhancements
 
--   Codacy now supports using [expiring access tokens](https://docs.gitlab.com/ee/integration/oauth_provider.html#expiring-access-tokens){: target="_blank"} to integrate with GitLab. Users affected by issues connecting to GitLab should [revoke the GitLab integration on Codacy](https://docs.codacy.com/v8.1/getting-started/which-permissions-does-codacy-need-from-my-account/#revoking-access-to-integrations) and re-login on the Codacy UI with their GitLab accounts. (CY-6117)
+-   Codacy now supports using [expiring access tokens](https://docs.gitlab.com/ee/integration/oauth_provider.html#expiring-access-tokens){: target="_blank"} to integrate with GitLab. Users affected by issues connecting to GitLab should re-login on the Codacy UI **using their GitLab accounts**, or [revoke the GitLab integration on Codacy](https://docs.codacy.com/v8.1/getting-started/which-permissions-does-codacy-need-from-my-account/#revoking-access-to-integrations) if the issues persist. (CY-6117)
 -   The Codacy Coverage Reporter now prints a more explicit error message when using an account API token from a user that [doesn't have permission to upload coverage data](https://docs.codacy.com/v8.1/organizations/roles-and-permissions-for-synced-organizations/). (CY-6084)
 -   Codacy now [displays diff coverage as not applicable](https://docs.codacy.com/v8.1/repositories/pull-requests/#pull-request-quality-overview) (represented by `∅`) when there are no coverable lines included in a pull request, and correctly reports the pull request status on your Git provider in this scenario. (CY-5960)
 
