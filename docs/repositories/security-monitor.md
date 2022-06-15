@@ -56,10 +56,9 @@ The left-hand side of the dashboard lists the status for each security category 
 !!! tip
     You can use the **Warnings** drop-down list to display only security categories that have found issues or categories that have code patterns turned off.
 
-## Supported languages
+## Languages checked for security issues
 
-<!--TODO
-    Merge supported languages and tools using a table?-->
+The Security Monitor supports checking the languages and frameworks below for any security issues reported by the corresponding tools:
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
@@ -72,53 +71,116 @@ The left-hand side of the dashboard lists the status for each security category 
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
-The Security Monitor is available for the following languages:
+<table>
+  <thead>
+    <tr>
+      <th>Language or framework</th>
+      <th>Tools that report security issues</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apex</td>
+      <td><a href="https://pmd.github.io/">PMD</a></td>
+    </tr>
+    <tr>
+      <td>AWS CloudFormation</td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>,
+          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
+          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
+    </tr>
+    <tr>
+      <td>C#</td>
+      <td><a href="https://github.com/SonarSource/sonar-dotnet">Sonar C#</a></td>
+    </tr>
+    <tr>
+      <td>C++</td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>,
+          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a></a>,
+          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
+    </tr>
+    <tr>
+      <td>Dockerfile</td>
+      <td><a href="https://github.com/hadolint/hadolint">Hadolint</a></td>
+    </tr>
+    <tr>
+      <td>Elixir</td>
+      <td><a href="https://github.com/rrrene/credo">Credo</a></td>
+    </tr>
+    <tr>
+      <td>Go</td>
+      <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"><sup>1</sup></a></td>
+    </tr>
+    <tr>
+      <td>Groovy</td>
+      <td><a href="https://codenarc.github.io/CodeNarc/">CodeNarc</a></td>
+    </tr>
+    <tr>
+      <td>Java</td>
+      <td><a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>1</sup></a><a href="#spotbugs-plugin"><sup>2</sup></a></td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td><a href="https://eslint.org/">ESLint</a><sup><a href="#eslint-plugin">3</a></sup></td>
+    </tr>
+    <tr>
+      <td>Objective-C</td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a></td>
+    </tr>
+      <td>PHP</td>
+      <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
+          <a href="https://phpmd.org/">PHP Mess Detector</a></td>
+    </tr>
+    <tr>
+      <td>PowerShell</td>
+      <td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
+    </tr>
+    <tr>
+      <td>Python
+      </td>
+      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
+          <a href="https://github.com/PyCQA/prospector">Prospector</a>,
+          <a href="https://www.pylint.org/">Pylint</a></td>
+    </tr>
+    <tr>
+      <td>Ruby<a href="#ruby-31"><sup>4</sup></a>
+      </td>
+      <td><a href="https://brakemanscanner.org/">Brakeman</a>,
+          <a href="https://github.com/rubysec/bundler-audit">bundler-audit</a>,
+          <a href="https://github.com/rubocop/rubocop">RuboCop</a></td>
+    </tr>
+    <tr>
+      <td>Scala</td>
+      <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
+          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>1</sup></a><a href="#spotbugs-plugin"><sup>2</sup></a></td>
+    </tr>
+    <tr>
+      <td>Shell</td>
+      <td><a href="https://www.shellcheck.net/">ShellCheck</a></td>
+    </tr>
+    <tr>
+      <td>Transact-SQL</td>
+      <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
+    </tr>
+    <tr>
+      <td>TypeScript</td>
+      <td><a href="https://eslint.org/">ESLint</a><sup><a href="#eslint-plugin">3</a></sup></td>
+    </tr>
+    <tr>
+      <td>Visual Basic</td>
+      <td><a href="https://github.com/SonarSource/sonar-dotnet">Sonar Visual Basic</a></td>
+    </tr>
+  </tbody>
+</table>
 
--   Apex
--   C#
--   Java
--   JavaScript
--   Python
--   Ruby
--   Scala
--   PHP
--   C
--   C++
--   Shell script
--   Dockerfile
--   Visual Basic
--   Elixir
--   PowerShell
--   TSQL
--   Groovy
-
-## Tools
-
-The Security Monitor displays issues using security patterns from:
-
--   [Bandit](https://bandit.readthedocs.io/en/latest/plugins/index.html#complete-test-plugin-listing){: target="_blank"}
--   [Brakeman](https://brakemanscanner.org/docs/warning_types/){: target="_blank"}
--   [Codacy Scalameta Pro](https://github.com/codacy/codacy-scalameta/tree/master/patterns-base/src/main/scala/codacy/patterns){: target="_blank"}
--   [ESLint](https://www.npmjs.com/package/eslint-plugin-security){: target="_blank"} (also: [1](https://www.npmjs.com/package/eslint-config-nodesecurity){: target="_blank"}, [2](https://www.npmjs.com/package/eslint-plugin-scanjs-rules){: target="_blank"}, [3](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml){: target="_blank"} and [4](https://www.npmjs.com/package/eslint-config-secure){: target="_blank"})
--   [SpotBugs](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html){: target="_blank"} (includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/bugs.htm){: target="_blank"})
--   [Sonar C#](https://rules.sonarsource.com/csharp/type/Vulnerability){: target="_blank"}
--   [Sonar VB.NET](https://rules.sonarsource.com/vbnet){: target="_blank"}
--   [PMD](https://pmd.github.io/pmd-6.21.0/){: target="_blank"}
--   [PHP Mess Detector](https://phpmd.org/rules/){: target="_blank"}
--   [Pylint](http://pylint.pycqa.org/en/1.9/technical_reference/features.html){: target="_blank"} (Python 2)
--   [Pylint](http://pylint.pycqa.org/en/stable/technical_reference/features.html){: target="_blank"} (Python 3)
--   [RuboCop](https://rubocop.readthedocs.io/en/latest/cops/){: target="_blank"}
--   [Cppcheck](http://cppcheck.sourceforge.net/){: target="_blank"}
--   [ShellCheck](https://github.com/koalaman/shellcheck/wiki/Checks){: target="_blank"}
--   [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer){: target="_blank"}
--   [Hadolint](https://github.com/hadolint/hadolint#rules){: target="_blank"}
--   [Prospector](https://github.com/PyCQA/prospector){: target="_blank"}
--   [bundler-audit](https://github.com/rubysec/bundler-audit){: target="_blank"}
--   [Credo](https://github.com/rrrene/credo/){: target="_blank"}
--   [Flawfinder](https://dwheeler.com/flawfinder/){: target="_blank"}
--   [PSScriptAnalyzer](https://dwheeler.com/flawfinder/){: target="_blank"}
--   [TSQLLint](https://github.com/tsqllint/tsqllint/){: target="_blank"}
--   [CodeNarc](https://codenarc.github.io/CodeNarc/codenarc-rule-index.html){: target="_blank"}
+<sup><span id="client-side">1</span></sup>: Supported as a [client-side tool](../related-tools/local-analysis/client-side-tools.md).  
+<sup><span id="spotbugs-plugin">2</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/){: target="_blank"}.  
+<sup><span id="eslint-plugin">3</sup>: Includes the shareable config [nodesecurity](https://www.npmjs.com/package/eslint-config-nodesecurity){: target="_blank"} and the plugins [angularjs-security-rules](https://www.npmjs.com/package/eslint-plugin-angularjs-security-rules){: target="_blank"}, [no-unsafe-innerhtml](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml){: target="_blank"}, [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized){: target="_blank"}, [scanjs-rules](https://www.npmjs.com/package/eslint-plugin-scanjs-rules){: target="_blank"}, [security](https://www.npmjs.com/package/eslint-plugin-security){: target="_blank"}, and [security-node](https://www.npmjs.com/package/eslint-plugin-security-node){: target="_blank"}.  
+<sup><span id="ruby-31">4</span></sup>: Currently, Codacy doesn't support any static code analysis tool for [Ruby 3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/){: target="_blank"}.  
 
 ## Supported security categories
 
