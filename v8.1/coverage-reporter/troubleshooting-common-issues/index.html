@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter.">
       
       
-        <meta http-equiv="last-modified" content="2022-06-08 16:37:07">  
+        <meta http-equiv="last-modified" content="2022-06-16 16:22:27">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/v8.1/coverage-reporter/troubleshooting-common-issues/">
@@ -2277,7 +2277,7 @@
 <h2 id="coverage-xmlindexxml-generated-an-empty-result">coverage-xml/index.xml generated an empty result<a class="headerlink" href="#coverage-xmlindexxml-generated-an-empty-result" title="Permanent link">#</a></h2>
 <p>If you're using PHPUnit version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the PHPUnit XML format only for versions 4 and older.</p>
 <p>To change the output format replace the flag <code>--coverage-xml &lt;dir&gt;</code> with <code>--coverage-clover &lt;file&gt;</code> when executing <code>phpunit</code>.</p>
-<p>See <a href="https://phpunit.readthedocs.io/en/latest/textui.html">PHPUnit command-line documentation</a> for more information.</p>
+<p>See <a href="https://phpunit.readthedocs.io/en/9.5/textui.html">PHPUnit command-line documentation</a> for more information.</p>
 <h2 id="checksum">Can't validate checksum<a class="headerlink" href="#checksum" title="Permanent link">#</a></h2>
 <p>Starting on version <a href="https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.0.0">13.0.0</a> the <code>get.sh</code> script automatically validates the checksum of the downloaded Codacy Coverage Reporter binary. This requires having either the <code>sha512sum</code> or <code>shasum</code> command on the operating system where you're running the script.</p>
 <p>If you're getting this error while uploading your coverage data to Codacy, install the correct version of <code>sha512sum</code> or <code>shasum</code> for the operating system that you're using.</p>
@@ -2433,7 +2433,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 8, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2022</span>
     
   </small>
 </div>
