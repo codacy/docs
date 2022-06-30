@@ -391,6 +391,7 @@ plugins:
               "hc/en-us/articles/360014670140-Self-hosted-v1-4-0-for-Kubernetes.md": "release-notes/self-hosted/self-hosted-v1.4.0.md"
               "hc/en-us/articles/360015300100.md": "faq/general/how-does-codacy-support-gitlab-enterprise.md"
               "hc/en-us/articles/360015300100-How-does-Codacy-support-GitLab-Enterprise-.md": "faq/general/how-does-codacy-support-gitlab-enterprise.md"
+              "docs/security.md": "https://security.codacy.com/"
               # Redirect chart documentation pages from /Chart/ to /chart/
               "Chart/index.md": "chart/index.md"
               "Chart/requirements.md": "chart/requirements.md"
