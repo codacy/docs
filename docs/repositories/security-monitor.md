@@ -32,7 +32,8 @@ The left-hand side of the dashboard lists the status for each security category 
     <tr>
       <td><img src="../images/security-monitor-red.png" alt="Red"></td>
       <td><strong>Codacy found security issues in this category</strong><br/><br/>
-          Click the category name to see the list of security issues in this category, and click the title of the issues to see more information about the issue.</td>
+          Click the category name to see the list of security issues in this category, and click the title of the issues to see more information about the issue.<br/><br/>
+          This status takes precedence over the yellow status, meaning that some code patterns in the category may be turned off. Fix the existing security issues to check if there are any code patterns turned off in this category.</td>
     </tr>
     <tr>
       <td rowspan="2"><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
