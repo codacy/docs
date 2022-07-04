@@ -62,7 +62,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Remark Lint 7.0.0
 -   RuboCop 0.82.0
 -   Scalastyle 1.0.0
--   **ShellCheck v0.7.1 (updated from v0.7.0)**
+-   **ShellCheck 0.7.1 (updated from 0.7.0)**
 -   **Sonar C# 8.12 (updated from 8.10)**
 -   **Sonar Visual Basic 8.12 (updated from 8.10)**
 -   **SpotBugs 4.1.2 (updated from 4.0.1)**

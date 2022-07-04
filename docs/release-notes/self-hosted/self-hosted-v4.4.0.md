@@ -63,7 +63,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Revive 1.0.2
 -   **RuboCop 1.21.0 (updated from 1.20.0)**
 -   Scalastyle 1.5.0
--   ShellCheck v0.7.1
+-   ShellCheck 0.7.1
 -   Sonar C# 8.25
 -   Sonar Visual Basic 8.15
 -   SpotBugs 4.1.2
