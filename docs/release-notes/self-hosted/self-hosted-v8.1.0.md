@@ -82,7 +82,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **[Revive 1.2.1](https://github.com/mgechev/revive/releases/tag/v1.2.1){: target="_blank"} (updated from 1.0.2)**
 -   RuboCop 1.28.2
 -   Scalastyle 1.5.0
--   ShellCheck v0.7.2
+-   ShellCheck 0.7.2
 -   **[Sonar C# 8.39](https://github.com/SonarSource/sonar-dotnet/releases/tag/v8.39.0.47922){: target="_blank"} (updated from 8.33)**
 -   Sonar Visual Basic 8.15
 -   spectral-rulesets 1.2.7
