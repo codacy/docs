@@ -18,6 +18,8 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2022
 
+-   [Cloud June 2022](cloud/cloud-2022-06.md)
+-   [Cloud May 2022](cloud/cloud-2022-05.md)
 -   [Cloud April 2022](cloud/cloud-2022-04.md)
 -   [Cloud March 2022](cloud/cloud-2022-03.md)
 -   [Adding ESLint 8 as a supported tool March 31, 2022](cloud/cloud-2022-03-31-adding-eslint8.md)
@@ -66,6 +68,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 v8
 
+-   [v8.1.0](self-hosted/self-hosted-v8.0.0.md) (June 17, 2022)
 -   [v8.0.0](self-hosted/self-hosted-v8.0.0.md) (May 12, 2022)
 
 v7

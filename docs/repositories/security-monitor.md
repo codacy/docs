@@ -12,16 +12,16 @@ By default, the page displays the overview for the main branch of your repositor
 
 ![Security Monitor](images/security-monitor.png)
 
-The left-hand side of the dashboard lists the status of each security category that the tools that can analyze the programming languages in your repository support:
+The left-hand side of the dashboard lists the status for each security category that the tools that can analyze the programming languages in your repository support:
 
 <style>
 /* Center text in the first column */
-th:first-child, td:first-child {
+#status th:first-child, #status td:first-child {
   text-align: center !important;
 }
 </style>
 
-<table>
+<table id="status">
   <thead>
     <tr>
       <th>Status</th>
@@ -32,7 +32,8 @@ th:first-child, td:first-child {
     <tr>
       <td><img src="../images/security-monitor-red.png" alt="Red"></td>
       <td><strong>Codacy found security issues in this category</strong><br/><br/>
-          Click the category name to see the list of security issues in this category, and click the title of the issues to see more information about the issue.</td>
+          Click the category name to see the list of security issues in this category, and click the title of the issues to see more information about the issue.<br/><br/>
+          This status takes precedence over the yellow status, meaning that some code patterns in the category may be turned off. Fix the existing security issues or use the <a href="../../repositories-configure/configuring-code-patterns/"><strong>Code patterns</strong> page</a> to check if there are any code patterns turned off in this category.</td>
     </tr>
     <tr>
       <td rowspan="2"><img src="../images/security-monitor-yellow.png" alt="Yellow"></td>
@@ -56,10 +57,9 @@ th:first-child, td:first-child {
 !!! tip
     You can use the **Warnings** drop-down list to display only security categories that have found issues or categories that have code patterns turned off.
 
-## Supported languages
+## Languages checked for security issues
 
-<!--TODO
-    Merge supported languages and tools using a table?-->
+The Security Monitor supports checking the languages and frameworks below for any security issues reported by the corresponding tools:
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
@@ -72,83 +72,152 @@ th:first-child, td:first-child {
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
-The Security Monitor is available for the following languages:
+<table>
+  <thead>
+    <tr>
+      <th>Language or framework</th>
+      <th>Tools that report security issues</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apex</td>
+      <td><a href="https://pmd.github.io/">PMD</a></td>
+    </tr>
+    <tr>
+      <td>AWS CloudFormation</td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>,
+          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
+          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
+    </tr>
+    <tr>
+      <td>C#</td>
+      <td><a href="https://github.com/SonarSource/sonar-dotnet">Sonar C#</a></td>
+    </tr>
+    <tr>
+      <td>C++</td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>,
+          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a></a>,
+          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
+    </tr>
+    <tr>
+      <td>Dockerfile</td>
+      <td><a href="https://github.com/hadolint/hadolint">Hadolint</a></td>
+    </tr>
+    <tr>
+      <td>Elixir</td>
+      <td><a href="https://github.com/rrrene/credo">Credo</a></td>
+    </tr>
+    <tr>
+      <td>Go</td>
+      <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"><sup>1</sup></a></td>
+    </tr>
+    <tr>
+      <td>Groovy</td>
+      <td><a href="https://codenarc.github.io/CodeNarc/">CodeNarc</a></td>
+    </tr>
+    <tr>
+      <td>Java</td>
+      <td><a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>1</sup></a><a href="#spotbugs-plugin"><sup>2</sup></a></td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td><a href="https://eslint.org/">ESLint</a><sup><a href="#eslint-plugin">3</a></sup></td>
+    </tr>
+    <tr>
+      <td>Objective-C</td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a></td>
+    </tr>
+      <td>PHP</td>
+      <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
+          <a href="https://phpmd.org/">PHP Mess Detector</a></td>
+    </tr>
+    <tr>
+      <td>PowerShell</td>
+      <td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
+    </tr>
+    <tr>
+      <td>Python
+      </td>
+      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
+          <a href="https://github.com/PyCQA/prospector">Prospector</a>,
+          <a href="https://www.pylint.org/">Pylint</a></td>
+    </tr>
+    <tr>
+      <td>Ruby<a href="#ruby-31"><sup>4</sup></a>
+      </td>
+      <td><a href="https://brakemanscanner.org/">Brakeman</a>,
+          <a href="https://github.com/rubysec/bundler-audit">bundler-audit</a>,
+          <a href="https://github.com/rubocop/rubocop">RuboCop</a></td>
+    </tr>
+    <tr>
+      <td>Scala</td>
+      <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
+          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>1</sup></a><a href="#spotbugs-plugin"><sup>2</sup></a></td>
+    </tr>
+    <tr>
+      <td>Shell</td>
+      <td><a href="https://www.shellcheck.net/">ShellCheck</a></td>
+    </tr>
+    <tr>
+      <td>Transact-SQL</td>
+      <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
+    </tr>
+    <tr>
+      <td>TypeScript</td>
+      <td><a href="https://eslint.org/">ESLint</a><sup><a href="#eslint-plugin">3</a></sup></td>
+    </tr>
+    <tr>
+      <td>Visual Basic</td>
+      <td><a href="https://github.com/SonarSource/sonar-dotnet">Sonar Visual Basic</a></td>
+    </tr>
+  </tbody>
+</table>
 
--   Apex
--   C#
--   Java
--   JavaScript
--   Python
--   Ruby
--   Scala
--   PHP
--   C
--   C++
--   Shell script
--   Dockerfile
--   Visual Basic
--   Elixir
--   PowerShell
--   TSQL
--   Groovy
+<sup><span id="client-side">1</span></sup>: Supported as a [client-side tool](../related-tools/local-analysis/client-side-tools.md).  
+<sup><span id="spotbugs-plugin">2</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/){: target="_blank"}.  
+<sup><span id="eslint-plugin">3</sup>: Includes the shareable config [nodesecurity](https://www.npmjs.com/package/eslint-config-nodesecurity){: target="_blank"} and the plugins [angularjs-security-rules](https://www.npmjs.com/package/eslint-plugin-angularjs-security-rules){: target="_blank"}, [no-unsafe-innerhtml](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml){: target="_blank"}, [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized){: target="_blank"}, [scanjs-rules](https://www.npmjs.com/package/eslint-plugin-scanjs-rules){: target="_blank"}, [security](https://www.npmjs.com/package/eslint-plugin-security){: target="_blank"}, and [security-node](https://www.npmjs.com/package/eslint-plugin-security-node){: target="_blank"}.  
+<sup><span id="ruby-31">4</span></sup>: Currently, Codacy doesn't support any static code analysis tool for [Ruby 3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/){: target="_blank"}.  
 
-## Tools
+## Supported security categories
 
-The Security Monitor displays issues using security patterns from:
+Each issue reported on the Security Monitor belongs to one of the following security categories:
 
--   [Bandit](https://bandit.readthedocs.io/en/latest/plugins/index.html#complete-test-plugin-listing){: target="_blank"}
--   [Brakeman](https://brakemanscanner.org/docs/warning_types/){: target="_blank"}
--   [Codacy Scalameta Pro](https://github.com/codacy/codacy-scalameta/tree/master/patterns-base/src/main/scala/codacy/patterns){: target="_blank"}
--   [ESLint](https://www.npmjs.com/package/eslint-plugin-security){: target="_blank"} (also: [1](https://www.npmjs.com/package/eslint-config-nodesecurity){: target="_blank"}, [2](https://www.npmjs.com/package/eslint-plugin-scanjs-rules){: target="_blank"}, [3](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml){: target="_blank"} and [4](https://www.npmjs.com/package/eslint-config-secure){: target="_blank"})
--   [SpotBugs](https://spotbugs.readthedocs.io/en/latest/bugDescriptions.html){: target="_blank"} (includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/bugs.htm){: target="_blank"})
--   [Sonar C#](https://rules.sonarsource.com/csharp/type/Vulnerability){: target="_blank"}
--   [Sonar VB.NET](https://rules.sonarsource.com/vbnet){: target="_blank"}
--   [PMD](https://pmd.github.io/pmd-6.21.0/){: target="_blank"}
--   [PHP Mess Detector](https://phpmd.org/rules/){: target="_blank"}
--   [Pylint](http://pylint.pycqa.org/en/1.9/technical_reference/features.html){: target="_blank"} (Python 2)
--   [Pylint](http://pylint.pycqa.org/en/stable/technical_reference/features.html){: target="_blank"} (Python 3)
--   [RuboCop](https://rubocop.readthedocs.io/en/latest/cops/){: target="_blank"}
--   [Cppcheck](http://cppcheck.sourceforge.net/){: target="_blank"}
--   [ShellCheck](https://github.com/koalaman/shellcheck/wiki/Checks){: target="_blank"}
--   [PHP_CodeSniffer](https://github.com/squizlabs/PHP_CodeSniffer){: target="_blank"}
--   [Hadolint](https://github.com/hadolint/hadolint#rules){: target="_blank"}
--   [Prospector](https://github.com/PyCQA/prospector){: target="_blank"}
--   [bundler-audit](https://github.com/rubysec/bundler-audit){: target="_blank"}
--   [Credo](https://github.com/rrrene/credo/){: target="_blank"}
--   [Flawfinder](https://dwheeler.com/flawfinder/){: target="_blank"}
--   [PSScriptAnalyzer](https://dwheeler.com/flawfinder/){: target="_blank"}
--   [TSQLLint](https://github.com/tsqllint/tsqllint/){: target="_blank"}
--   [CodeNarc](https://codenarc.github.io/CodeNarc/codenarc-rule-index.html){: target="_blank"}
+<!--NOTE
+    Currently, this category doesn't include any security issues
+    https://github.com/codacy/codacy-tools/pull/496#discussion_r892437164
 
-## Supported categories
+|**Firefox OS**|Security issues related to sensitive APIs of Firefox OS.|
+-->
 
-<!--TODO
-    - Add intro
-    - Review description of each category, and also update the Codacy UI copy-->
-
--   **XSS:** XSS enables attackers to inject client-side scripts into web pages viewed by other users.
--   **Input validation:** Input not validated may originate SQL Injection attacks for instance.
--   **File access:** An attacker may use special paths to access files that shouldn't be accessible.
--   **HTTP:** HTTP headers are a common attack vector for malign users.
--   **Cookies:** An HTTP cookie is a small piece of data sent from a website and stored on the user's computer by the browser while the user is browsing.
--   **Unexpected behaviour:** Assigning values to private APIs might lead to unexpected behavior.
--   **Mass assignment:** Mass assignment is a feature of Rails which allows an application to create a record from the values of a hash.
--   **Insecure storage:** Storing sensitive data using these APIs isn't safe.
--   **Insecure modules/libraries:** Consider possible security implications associated with some modules.
--   **Visibility:** Fields shouldn't have public accessibility.
--   **CSRF:** Cross-Site Request Forgery (CSRF) is an attack that forces an end user to execute unwanted actions on a web application in which they're currently authenticated.
--   **Android:** Android-specific issues.
--   **Malicious code:** Exposed internal APIs can be accessed or changed by malicious code or by accident from another package.
--   **Cryptography:** Cryptography is a security technique widely used and there are several cryptographic functions, but not all of them are secure.
--   **Command injection:** Command injection is an attack in which the goal is the execution of arbitrary commands on the host operating system.
--   **Firefox OS:** Sensitive APIs of Firefox OS.
--   **Auth:** Authentication is present in almost all web applications nowadays.
--   **DoS:** The Denial of Service (DoS) attack is focused on making a resource (site, application, server) unavailable for the purpose it was designed.
--   **SQL injection:** A SQL injection attack consists of insertion or "injection" of a SQL query via the input data from the client to the application.
--   **Routes:** Badly configured routes can give unintended access to an attacker.
--   **Regex:** Regex can be used in a Denial of Service attack, that exploits the fact that most Regular Expression implementations may reach heavy computation situations that cause them to work very slowly (exponentially related to input size).
--   **SSL:** Simply using SSL isn't enough to ensure the data you're sending is secure. Man in the middle attacks are well known and widely used.
--   **Other:** Other language-specific security issues.
+|Security category|Description|
+|-----------------|-----------|
+|**Android**|Android-specific security issues.|
+|**Authentication**|Broken authentication and authorization attacks consist in gaining access to accounts that allow disclosing sensitive information or performing operations that could compromise the system.|
+|**Command Injection**|Command injection attacks aim to execute arbitrary commands on the host operating system.|
+|**Cookies**|Security issues related to insecure cookies.|
+|**Cryptography**|Cryptography attacks exploit failures related to cryptography (or lack thereof), potentially leading to exposure of sensitive data.|
+|**CSRF**|Cross-Site Request Forgery (CSRF) attacks force an end user to execute unwanted actions on a web application in which they're currently authenticated.|
+|**Denial of Service**|Denial of Service (DoS) attacks make a resource (site, application, server) unavailable for legitimate users, typically by flooding the resource with requests or exploiting a vulnerability to trigger a crash.|
+|**File Access**|File access security issues may allow an attacker to access arbitrary files and directories stored on the file system such as application source code, configuration, and critical system files.|
+|**HTTP Headers**|Insecure HTTP headers are a common attack vector for malicious users.|
+|**Input Validation**|Client input should always be validated to prevent malformed or malicious data from entering the workflow of an information system.|
+|**Insecure Modules and Libraries**|Security issues related to modules or libraries that can potentially include vulnerabilities.|
+|**Insecure Storage**|Security issues related to insecure storage of sensitive data.|
+|**Malicious Code**|Security issues related to code patterns that are potentially unsafe.|
+|**Mass Assignment**|Unprotected mass assignments are a Rails feature that could allow an attacker to update sensitive model attributes.|
+|**Regex**|Regular expressions can be used in Denial of Service attacks, exploiting the fact that in most regular expression implementations thecomputational load grows exponentially with input size.|
+|**Routes**|Badly configured routes can give unintended access to an attacker.|
+|**SQL Injection**|SQL injection attacks insert or \"inject\" malicious SQL queries into the application via the client input data.|
+|**SSL**|Security issues related with old SSL versions or configurations that have known cryptographic weaknesses and should no longer be used.|
+|**Unexpected Behaviour**|Security issues related to potentially insecure system API calls.|
+|**Visibility**|Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.|
+|**XSS**|Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into trusted websites that are visited by the end users.|
+|**Other**|Other language-specific security issues.|
 
 ## See also
 
