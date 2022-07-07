@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to set up the Codacy Self-hosted integration with Bitbucket Server.">
       
       
-        <meta http-equiv="last-modified" content="2021-04-14 15:27:38">  
+        <meta http-equiv="last-modified" content="2022-07-07 11:52:21">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/chart/configuration/integrations/bitbucket-server/">
@@ -3409,8 +3409,8 @@
 <p>To integrate Codacy with Bitbucket Server, you must create an application link on your Bitbucket Server instance:</p>
 <ol>
 <li>
-<p>Since Bitbucket Server uses OAuth1, you need to create a key pair to sign and validate the requests between Codacy and the Bitbucket Server instance.</p>
-<p>Create a key pair using the RSA algorithm in the PKCS#8 format by executing the command:</p>
+<p>Create a key pair to sign and validate the requests between Codacy and the Bitbucket Server instance.</p>
+<p>Run the following command to create the key pair using the RSA algorithm in the PKCS#8 format:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -fsSL https://raw.githubusercontent.com/codacy/chart/master/docs/configuration/integrations/generate-bitbucket-server-secrets.sh<span class="o">)</span>
 </code></pre></div>
 <p>Store the keys in a safe place for usage in the next steps and as a backup.</p>
@@ -3420,7 +3420,14 @@
 </li>
 <li>
 <p>Create a new application link with the URL of your Codacy instance.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you're using Bitbucket Server 7.20 or later</strong> you must select the application type <strong>Atlassian product</strong> while creating the new application link.</p>
+<p>This <a href="https://confluence.atlassian.com/bitbucketserver/link-to-other-applications-1018764620.html#Linktootherapplications-LinktoAtlassianproductsorexternalapplicationsusingOAuth1.0" target="_blank">forces the integration to use OAuth 1.0</a> and is necessary to ensure the compatibility between Codacy and older versions of Bitbucket that only supported OAuth 1.0.</p>
+</div>
 <p><img alt="Bitbucket Server application link" src="../images/bitbucket-server-application-link.png" /></p>
+<p>If Bitbucket Server may warn you that there was no response from the URL you entered. This is expected, and you can click <strong>Continue</strong> after verifying that the URL is correct.</p>
+<p><img alt="No response from Codacy instance URL" src="../images/bitbucket-server-no-response.png" /></p>
 </li>
 <li>
 <p>Fill in the fields:</p>
@@ -3432,17 +3439,17 @@
 <p><img alt="Bitbucket Server application link naming" src="../images/bitbucket-server-link-naming.png" /></p>
 </li>
 <li>
-<p>After creating the link, click <strong>Edit</strong> to add an incoming authentication.</p>
+<p>After creating the new application link, click <strong>Edit</strong> to add an incoming authentication.</p>
 </li>
 <li>
-<p>Fill in the fields of the incomming authentication:</p>
+<p>Fill in the fields of the incoming authentication:</p>
 <ul>
 <li><strong>Consumer Key:</strong> Enter the <code>consumerKey</code> generated previously.</li>
 <li><strong>Consumer Name:</strong> Name of the consumer. For example, <code>Codacy</code>.</li>
 <li><strong>Public Key:</strong> Enter the <code>consumerPublicKey</code> generated previously.</li>
 </ul>
 <p>The remaining fields should be left blank.</p>
-<p><img alt="Bitbucket Server incomming authentication" src="../images/bitbucket-server-incoming-authentication.png" /></p>
+<p><img alt="Bitbucket Server incoming authentication" src="../images/bitbucket-server-incoming-authentication.png" /></p>
 </li>
 </ol>
 <h2 id="configure-bitbucket-server-on-codacy">Configure Bitbucket Server on Codacy<a class="headerlink" href="#configure-bitbucket-server-on-codacy" title="Permanent link">#</a></h2>
@@ -3462,6 +3469,7 @@
 <span class="w">   </span><span class="nt">consumerKey</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># Generated when creating the Bitbucket Server application link</span><span class="w"></span>
 <span class="w">   </span><span class="nt">consumerPublicKey</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># Generated when creating the Bitbucket Server application link</span><span class="w"></span>
 <span class="w">   </span><span class="nt">consumerPrivateKey</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># Generated when creating the Bitbucket Server application link</span><span class="w"></span>
+<span class="w">   </span><span class="nt">contextPath</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># Context path of your Bitbucket Server, if configured</span><span class="w"></span>
 </code></pre></div>
 </li>
 <li>
@@ -3635,7 +3643,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 14, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 7, 2022</span>
     
   </small>
 </div>
