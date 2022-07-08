@@ -4,13 +4,11 @@ description: Enable the GitHub integration to have status checks, annotations, a
 
 # GitHub integration
 
-The GitHub integration incorporates Codacy on your existing Git provider workflows.
+The GitHub integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your pull requests.
 
-When the integration is enabled, you can create pull request comments and GitHub issues directly from Codacy when browsing the existing issues on the repository:
+When the integration is enabled, you can also create pull request comments and GitHub issues directly from Codacy when browsing the existing issues on the repository:
 
 ![GitHub integration for issues](images/github-integration-issues.png)
-
-Depending on the configuration of the GitHub integration, Codacy can also report and notify you about issues directly on your pull requests.
 
 ## Enabling the GitHub integration {: id="enabling"}
 

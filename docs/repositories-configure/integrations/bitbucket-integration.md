@@ -4,13 +4,11 @@ description: Enable the Bitbucket integration to have pull request status, comme
 
 # Bitbucket integration
 
-The Bitbucket integration incorporates Codacy on your existing Git provider workflows.
+The Bitbucket integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your pull requests.
 
-When the integration is enabled, you can create pull request comments and Jira issues directly from Codacy when browsing the existing issues on the repository:
+When the integration is enabled, you can also create pull request comments and Jira issues directly from Codacy when browsing the existing issues on the repository:
 
 ![Bitbucket integration for issues](images/bitbucket-integration-issues.png)
-
-Depending on the configuration of the Bitbucket integration, Codacy can also report and notify you about issues directly on your pull requests.
 
 ## Enabling the Bitbucket integration {: id="enabling"}
 
