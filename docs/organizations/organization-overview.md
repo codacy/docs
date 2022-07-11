@@ -17,15 +17,15 @@ The **Organization Overview** provides an overview of repositories that belong t
 
     -   The Organization Overview displays information for **at most the last 100 updated repositories**.
 
+![Organization Overview](images/organization-overview.png)
+
 To access your Organization Overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
 
-On the Organization Overview you have three areas to help you monitor your repositories:
+On the Organization Overview you have the following areas to help you monitor your repositories:
 
 -   [Overall quality chart](#overall-quality-chart)
 -   [Open pull requests](#open-pull-requests)
 -   [Last updated repositories](#last-updated-repositories)
-
-![Organization Overview](images/organization-overview.png)
 
 The following sections provide a detailed description of each dashboard area.
 
