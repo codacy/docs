@@ -29,6 +29,14 @@ On the Organization Overview you have the following areas to help you monitor yo
 
 The following sections provide a detailed description of each dashboard area.
 
+!!! tip
+    You can use the Codacy API to generate reports or obtain information about the code quality of your repositories in a more flexible way.
+    
+    For more information see the list of [available API endpoints](https://api.codacy.com/api/api-docs#codacy-api-analysis) and the following examples:
+
+    -   [Obtaining current issues in repositories](../codacy-api/examples/obtaining-current-issues-in-repositories.md)
+    -   [Obtaining code quality metrics for files](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md)
+
 ## Overall quality chart
 
 The **Overall quality** chart compares the repositories in your organization regarding [grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade), [issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Each tab displays the average value for the corresponding metric across your repositories.
@@ -80,3 +88,5 @@ Click **See all** to see all repositories in your organization.
 ## See also
 
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Using the Codacy API to obtain current issues in repositories](../codacy-api/examples/obtaining-current-issues-in-repositories.md)
+-   [Using the Codacy API to obtain code quality metrics for files](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md)
