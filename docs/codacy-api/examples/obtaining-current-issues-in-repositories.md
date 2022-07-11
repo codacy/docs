@@ -41,3 +41,8 @@ Example output:
 ```
 
 {% include-markdown "../../assets/includes/api-example-pagination-important.md" %}
+
+## See also
+
+-   [Which metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Issues page](../../repositories/issues.md)
