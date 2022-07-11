@@ -44,3 +44,4 @@ Example output:
 ## See also
 
 -   [Which metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Files page](../../repositories/files.md)
