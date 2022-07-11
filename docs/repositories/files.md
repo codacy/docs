@@ -14,7 +14,7 @@ Codacy displays the following [code quality metrics](../faq/code-analysis/which-
 
 Codacy displays the files in alphabetical order by default, but you can sort the list by each column to help you identify which files you should improve or refactor next.
 
-!!! tip
+!!! note
     [You can use the Codacy API](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md) to generate reports or obtain code quality metrics for the files in your repositories in a more flexible way.
 
 ![Files list](images/files.png)

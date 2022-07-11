@@ -23,7 +23,7 @@ On the Repository Dashboard you have the following areas to help you monitor you
 
 The following sections provide a detailed overview of each dashboard area.
 
-!!! tip
+!!! note
     You can use the Codacy API to generate reports or obtain information about the code quality of your repository in a more flexible way.
     
     For more information see the list of [available API endpoints](https://api.codacy.com/api/api-docs#codacy-api-analysis) and the following examples:
