@@ -6,7 +6,7 @@ description: Release notes for Codacy Self-hosted v2.0.0.
 
 # Self-hosted v2.0.0
 
-These release notes are for [Codacy Self-hosted v2.0.0](https://github.com/codacy/chart/releases/tag/2.0.0){: target="_blank"}, released on August 18, 2020.
+These release notes are for [Codacy Self-hosted v2.0.0](https://github.com/codacy/chart/releases/tag/2.0.0), released on August 18, 2020.
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
@@ -39,7 +39,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
     !!! important
         After you upgrade Codacy, our chart will install a new version of RabbitMQ with the **new default of one replica**.
 
--   The structure of the file [`values-production.yaml`](https://docs.codacy.com/v2.0/chart/values-files/values-production.yaml){: target="_blank"} changed. You must update your version of the file to match the structure of the new file:
+-   The structure of the file [`values-production.yaml`](https://docs.codacy.com/v2.0/chart/values-files/values-production.yaml) changed. You must update your version of the file to match the structure of the new file:
 
     -   The following analysis workers configuration values moved from:
 

@@ -6,7 +6,7 @@ description: Release notes for Codacy Self-hosted v2.2.1.
 
 # Self-hosted v2.2.1
 
-These release notes are for [Codacy Self-hosted v2.2.1](https://github.com/codacy/chart/releases/tag/2.2.1){: target="_blank"}, released on October 22, 2020.
+These release notes are for [Codacy Self-hosted v2.2.1](https://github.com/codacy/chart/releases/tag/2.2.1), released on October 22, 2020.
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md). After that, restart the Fluentd pods by running the following command, replacing `<namespace>` with the namespace in which Codacy was installed:
 

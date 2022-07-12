@@ -15,16 +15,16 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
   <tbody>
     <tr>
       <th>Endpoint documentation</th>
-      <td><a target="_blank" href="https://api.codacy.com/api/api-docs">https://api.codacy.com/api/api-docs</a></td>
-      <td><a target="_blank" href="https://api.codacy.com/api-docs">https://api.codacy.com/api-docs</a></td>
+      <td><a href="https://api.codacy.com/api/api-docs">https://api.codacy.com/api/api-docs</a></td>
+      <td><a href="https://api.codacy.com/api-docs">https://api.codacy.com/api-docs</a></td>
     </tr>
     <tr>
       <th>OpenAPI 2.0 definition</th>
-      <td><a target="_blank" href="https://api.codacy.com/api/api-docs/swagger.yaml">https://api.codacy.com/api/api-docs/swagger.yaml</a></td>
+      <td><a href="https://api.codacy.com/api/api-docs/swagger.yaml">https://api.codacy.com/api/api-docs/swagger.yaml</a></td>
       <td>-
           <!--NOTE
               See https://github.com/codacy/docs/pull/1058#discussion_r810889139 for why we decided to postpone publishing the definition file URL for the API v2.
-              <a target="_blank" href="https://api.codacy.com/api-docs/swagger.yaml">https://api.codacy.com/api-docs/swagger.yaml</a>
+              <a href="https://api.codacy.com/api-docs/swagger.yaml">https://api.codacy.com/api-docs/swagger.yaml</a>
           --></td>
     </tr>
     <tr>
@@ -37,19 +37,19 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
       <td>
         <p>Use the new endpoints to access and manipulate the following resources, among others:<p>
         <ul>
-          <li><a target="_blank" href="https://api.codacy.com/api/api-docs#codacy-api-analysis">Analysis</a> details, issue and ignored issue details, repository quality settings</li>
-          <li><a target="_blank" href="https://api.codacy.com/api/api-docs#codacy-api-account">Account</a> details and API token management</li>
-          <li><a target="_blank" href="https://api.codacy.com/api/api-docs#codacy-api-organization">Organization</a> details and join request management</li>
-          <li><a target="_blank" href="https://api.codacy.com/api/api-docs#codacy-api-people">People</a> management</li>
-          <li><a target="_blank" href="https://api.codacy.com/api/api-docs#codacy-api-repository">Repository</a> management and file details</li>
-          <li><a target="_blank" href="https://api.codacy.com/api/api-docs#codacy-api-tools">Tool</a> and code pattern details</li>
+          <li><a href="https://api.codacy.com/api/api-docs#codacy-api-analysis">Analysis</a> details, issue and ignored issue details, repository quality settings</li>
+          <li><a href="https://api.codacy.com/api/api-docs#codacy-api-account">Account</a> details and API token management</li>
+          <li><a href="https://api.codacy.com/api/api-docs#codacy-api-organization">Organization</a> details and join request management</li>
+          <li><a href="https://api.codacy.com/api/api-docs#codacy-api-people">People</a> management</li>
+          <li><a href="https://api.codacy.com/api/api-docs#codacy-api-repository">Repository</a> management and file details</li>
+          <li><a href="https://api.codacy.com/api/api-docs#codacy-api-tools">Tool</a> and code pattern details</li>
         </ul>
       </td>
       <td>
         <p>Use the legacy endpoints to access and manipulate the following resources:</p>
           <ul>
-            <li><a target="_blank" href="https://api.codacy.com/swagger#codacy-api-commit">Commit</a> code quality details and deltas</li>
-            <li><a target="_blank" href="https://api.codacy.com/swagger#codacy-api-project">Project</a> details and configurations, file code quality and issue details</li>
+            <li><a href="https://api.codacy.com/swagger#codacy-api-commit">Commit</a> code quality details and deltas</li>
+            <li><a href="https://api.codacy.com/swagger#codacy-api-project">Project</a> details and configurations, file code quality and issue details</li>
           </ul>
       </td>
     </tr>

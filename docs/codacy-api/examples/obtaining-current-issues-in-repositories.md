@@ -4,7 +4,7 @@ description: Example of how to obtain information about issues in a repository p
 
 # Obtaining current issues in repositories
 
-To obtain information about the current issues in your repositories in a flexible way, use the Codacy API endpoint [searchRepositoryIssues](https://app.codacy.com/api/api-docs#searchrepositoryissues){: target="_blank"}.
+To obtain information about the current issues in your repositories in a flexible way, use the Codacy API endpoint [searchRepositoryIssues](https://app.codacy.com/api/api-docs#searchrepositoryissues).
 
 For example, you may want to generate a report that includes only issues that belong to specific categories (such as security issues), or that have a minimum severity level.
 
@@ -15,8 +15,8 @@ This example exports the pattern ID, issue level, file path, and timestamp for a
 The example script:
 
 1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
-1.  Calls the Codacy API endpoint [searchRepositoryIssues](https://app.codacy.com/api/api-docs#searchrepositoryissues){: target="_blank"} to retrieve information about the issues, filtering the results by security issues with the relevant severity levels.
-1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to select only the necessary data fields and convert the results to the CSV format.
+1.  Calls the Codacy API endpoint [searchRepositoryIssues](https://app.codacy.com/api/api-docs#searchrepositoryissues) to retrieve information about the issues, filtering the results by security issues with the relevant severity levels.
+1.  Uses [jq](https://github.com/stedolan/jq) to select only the necessary data fields and convert the results to the CSV format.
 
 ```bash
 CODACY_API_TOKEN="<your account API token>"

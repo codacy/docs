@@ -6,7 +6,7 @@ description: Release notes for Codacy Self-hosted v4.0.1.
 
 # Self-hosted v4.0.1
 
-These release notes are for [Codacy Self-hosted v4.0.1](https://github.com/codacy/chart/releases/tag/4.0.1){: target="_blank"}, released on June 2, 2021.
+These release notes are for [Codacy Self-hosted v4.0.1](https://github.com/codacy/chart/releases/tag/4.0.1), released on June 2, 2021.
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
