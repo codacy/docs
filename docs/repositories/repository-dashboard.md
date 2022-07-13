@@ -23,6 +23,8 @@ On the Repository Dashboard you have the following areas to help you monitor you
 
 The following sections provide a detailed overview of each dashboard area.
 
+{% include-markdown "../assets/includes/dashboard-api-report-note.md" %}
+
 ## Quality evolution chart
 
 The **Quality evolution** chart displays the evolution of the repository code quality regarding [issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Click on **Last 3 months**, **Last 31 days**, or **Last 7 days** to select the time interval of the historical data to display on the chart.
@@ -80,3 +82,5 @@ To see the details of pull requests, click a pull request from the list or click
 ## See also
 
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Using the Codacy API to obtain current issues in repositories](../codacy-api/examples/obtaining-current-issues-in-repositories.md)
+-   [Using the Codacy API to obtain code quality metrics for files](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md)

@@ -29,6 +29,8 @@ On the Organization Overview you have the following areas to help you monitor yo
 
 The following sections provide a detailed description of each dashboard area.
 
+{% include-markdown "../assets/includes/dashboard-api-report-note.md" %}
+
 ## Overall quality chart
 
 The **Overall quality** chart compares the repositories in your organization regarding [grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade), [issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Each tab displays the average value for the corresponding metric across your repositories.
@@ -80,3 +82,5 @@ Click **See all** to see all repositories in your organization.
 ## See also
 
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Using the Codacy API to obtain current issues in repositories](../codacy-api/examples/obtaining-current-issues-in-repositories.md)
+-   [Using the Codacy API to obtain code quality metrics for files](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md)
