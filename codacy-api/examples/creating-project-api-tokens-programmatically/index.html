@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to create new project API tokens for all repositories in an organization using the Codacy API endpoint createRepositoryApiToken.">
       
       
-        <meta http-equiv="last-modified" content="2022-01-14 11:47:51">  
+        <meta http-equiv="last-modified" content="2022-07-13 18:22:28">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/creating-project-api-tokens-programmatically/">
@@ -3402,17 +3402,17 @@
                 
                 
                 <h1 id="creating-project-api-tokens-programmatically">Creating project API tokens programmatically<a class="headerlink" href="#creating-project-api-tokens-programmatically" title="Permanent link">#</a></h1>
-<p>To create new <a href="../../api-tokens/">project API tokens</a> for your Codacy repositories programmatically, use the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#createrepositoryapitoken" target="_blank">createRepositoryApiToken</a>.</p>
+<p>To create new <a href="../../api-tokens/">project API tokens</a> for your Codacy repositories programmatically, use the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#createrepositoryapitoken">createRepositoryApiToken</a>.</p>
 <p>For example, if you're <a href="../../../coverage-reporter/">setting up coverage</a> for all your repositories and prefer not to use a single account API token that grants the same permissions as an administrator, you need to create an individual project API token for each repository.</p>
 <h2 id="example-creating-project-api-tokens-for-all-repositories-in-an-organization">Example: Creating project API tokens for all repositories in an organization<a class="headerlink" href="#example-creating-project-api-tokens-for-all-repositories-in-an-organization" title="Permanent link">#</a></h2>
 <p>This example creates new project API tokens for all the repositories in an organization and outputs a comma-separated list of repository names and corresponding token strings.</p>
 <p>The example script:</p>
 <ol>
 <li>Defines the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API, the Git provider, and the organization name.</li>
-<li>Calls the Codacy API endpoint <a href="https://api.codacy.com/api/api-docs#listorganizationrepositories" target="_blank">listOrganizationRepositories</a> to retrieve the list of repositories in the organization.</li>
-<li>Uses <a href="https://github.com/stedolan/jq" target="_blank">jq</a> to select only the name of the repositories.</li>
+<li>Calls the Codacy API endpoint <a href="https://api.codacy.com/api/api-docs#listorganizationrepositories">listOrganizationRepositories</a> to retrieve the list of repositories in the organization.</li>
+<li>Uses <a href="https://github.com/stedolan/jq">jq</a> to select only the name of the repositories.</li>
 <li>Asks for confirmation from the user before making any changes.</li>
-<li>For each repository, calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#createrepositoryapitoken" target="_blank">createRepositoryApiToken</a> to create a new project API token and uses jq to obtain only the created token string.</li>
+<li>For each repository, calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#createrepositoryapitoken">createRepositoryApiToken</a> to create a new project API token and uses jq to obtain only the created token string.</li>
 <li>Outputs a comma-separated list of the repository names and the corresponding new token strings.</li>
 <li>Pauses a few seconds between requests to the Codacy API to avoid rate limiting.</li>
 </ol>
@@ -3610,7 +3610,7 @@ website,&lt;new project API token&gt;
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 14, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 13, 2022</span>
     
   </small>
 </div>

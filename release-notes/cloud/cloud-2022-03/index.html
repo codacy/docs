@@ -11,7 +11,7 @@
         <meta name="description" content="Release notes for Codacy Cloud March 2022.">
       
       
-        <meta http-equiv="last-modified" content="2022-07-04 11:17:29">  
+        <meta http-equiv="last-modified" content="2022-07-13 18:22:28">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2022-03/">
@@ -3431,13 +3431,13 @@
 <p>New repositories will use ESLint 8 by default, and <strong>Codacy won't provide more updates for ESLint 7 and will remove ESLint 7 on April 4, 2023</strong>. <a href="https://community.codacy.com/t/introducing-eslint-version-8-on-our-platform/868">See this post on the Codacy Community</a> for more details on this update. (CY-5848)</p>
 </li>
 <li>
-<p>The <a href="https://hub.docker.com/r/codacy/codacy-coverage-reporter/tags" target="_blank">Codacy Coverage Reporter Docker image</a> is now published with a stable tag as well. For example, we publish <code>codacy/codacy-coverage-reporter:13.8.0</code> as well as <code>codacy/codacy-coverage-reporter:13</code>. (CY-5837)</p>
+<p>The <a href="https://hub.docker.com/r/codacy/codacy-coverage-reporter/tags">Codacy Coverage Reporter Docker image</a> is now published with a stable tag as well. For example, we publish <code>codacy/codacy-coverage-reporter:13.8.0</code> as well as <code>codacy/codacy-coverage-reporter:13</code>. (CY-5837)</p>
 </li>
 <li>
-<p>Added the plugins <a href="https://www.npmjs.com/package/vue-template-compiler" target="_blank"><span class="skip-vale">vue-template-compiler</span></a> and <a href="https://www.npmjs.com/package/eslint-plugin-vuejs-accessibility" target="_blank"><span class="skip-vale">eslint-plugin-vuejs-accessibility</span></a> to <a href="https://github.com/codacy/codacy-eslint" target="_blank"><span class="skip-vale">codacy-eslint</span></a>. (CY-5821)</p>
+<p>Added the plugins <a href="https://www.npmjs.com/package/vue-template-compiler"><span class="skip-vale">vue-template-compiler</span></a> and <a href="https://www.npmjs.com/package/eslint-plugin-vuejs-accessibility"><span class="skip-vale">eslint-plugin-vuejs-accessibility</span></a> to <a href="https://github.com/codacy/codacy-eslint"><span class="skip-vale">codacy-eslint</span></a>. (CY-5821)</p>
 </li>
 <li>
-<p>RuboCop configuration files can now reference the <a href="https://github.com/DmitryTsepelev/rubocop-graphql" target="_blank">GraphQL extension</a>. (CY-5814)</p>
+<p>RuboCop configuration files can now reference the <a href="https://github.com/DmitryTsepelev/rubocop-graphql">GraphQL extension</a>. (CY-5814)</p>
 </li>
 <li>
 <p>The <a href="https://docs.codacy.com/v7.0/organizations/managing-repositories/"><strong>Repositories list</strong> page</a> now displays a warning icon to improve the visibility of warnings and errors affecting the repositories. (CY-5797)</p>
@@ -3471,7 +3471,7 @@
 <li>Fixed an issue that prevented running <a href="../../../related-tools/local-analysis/client-side-tools/">standalone tools</a> using the Codacy Analysis CLI GitHub Action. (CY-5812)</li>
 <li>Fixed an issue that caused inconsistencies on the last updated date when listing GitHub repositories. Now, the last updated date is the <a href="../../../organizations/organization-overview/#last-updated-repositories">date of the last push to the repositories</a>. (CY-5784)</li>
 <li>Fixed an issue on the API endpoint <a href="https://api.codacy.com/api/api-docs#getrepositorypullrequest">getRepositoryPullRequest</a> where the grades for coverage weren't being taken into account when calculating if the pull request is up to standards. (CY-5716)</li>
-<li>dartanalyzer now supports including the packages <a href="https://pub.dev/packages/lints" target="_blank">lints</a> and <a href="https://pub.dev/packages/flutter_lints" target="_blank">flutter_lints</a> in the <code>analysis_option.yaml</code> configuration file. (CY-5626)</li>
+<li>dartanalyzer now supports including the packages <a href="https://pub.dev/packages/lints">lints</a> and <a href="https://pub.dev/packages/flutter_lints">flutter_lints</a> in the <code>analysis_option.yaml</code> configuration file. (CY-5626)</li>
 <li>The re-analyze button is now hidden on repositories that are running analysis through a build server. (CY-4205)</li>
 </ul>
 <h2 id="tool-versions">Tool versions<a class="headerlink" href="#tool-versions" title="Permanent link">#</a></h2>
@@ -3489,12 +3489,12 @@
 <li>Cppcheck 2.2</li>
 <li>Credo 1.4.0</li>
 <li>CSSLint 1.0.5</li>
-<li><strong><a href="https://github.com/dart-lang/sdk/blob/main/CHANGELOG.md#2161---2022-02-09" target="_blank">dartanalyzer 2.16.1</a> (updated from 2.15.1)</strong></li>
+<li><strong><a href="https://github.com/dart-lang/sdk/blob/main/CHANGELOG.md#2161---2022-02-09">dartanalyzer 2.16.1</a> (updated from 2.15.1)</strong></li>
 <li>detekt 1.19.0</li>
-<li><strong><a href="https://github.com/eslint/eslint/releases/tag/v8.12.0" target="_blank">ESLint 8.12.0</a> (new)</strong></li>
+<li><strong><a href="https://github.com/eslint/eslint/releases/tag/v8.12.0">ESLint 8.12.0</a> (new)</strong></li>
 <li>ESLint 7.32.0 (<span style="color: red;">deprecated</span>)</li>
 <li>Faux-Pas 1.7.2</li>
-<li><strong><a href="https://github.com/david-a-wheeler/flawfinder/blob/master/ChangeLog" target="_blank">Flawfinder 2.0.19</a> (updated from 2.0.11)</strong></li>
+<li><strong><a href="https://github.com/david-a-wheeler/flawfinder/blob/master/ChangeLog">Flawfinder 2.0.19</a> (updated from 2.0.11)</strong></li>
 <li>Gosec 2.8.1</li>
 <li>Hadolint 1.18.2</li>
 <li>Jackson Linter 2.10.2</li>
@@ -3509,7 +3509,7 @@
 <li>Pylint (Python 3) 2.7.4</li>
 <li>remark-lint 7.0.1</li>
 <li>Revive 1.0.2</li>
-<li><strong><a href="https://github.com/rubocop/rubocop/releases/tag/v1.26.1" target="_blank">RuboCop 1.26.1</a> (updated from 1.25.1)</strong></li>
+<li><strong><a href="https://github.com/rubocop/rubocop/releases/tag/v1.26.1">RuboCop 1.26.1</a> (updated from 1.25.1)</strong></li>
 <li>Scalastyle 1.5.0</li>
 <li>ShellCheck 0.7.2</li>
 <li>Sonar C# 8.30</li>
@@ -3680,7 +3680,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 4, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 13, 2022</span>
     
   </small>
 </div>

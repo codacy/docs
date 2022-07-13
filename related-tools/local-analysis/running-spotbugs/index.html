@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to run SpotBugs as a client-side tool on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2021-04-28 18:46:55">  
+        <meta http-equiv="last-modified" content="2022-07-13 18:22:28">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/related-tools/local-analysis/running-spotbugs/">
@@ -3438,7 +3438,7 @@
 <p>Compile your Java or Scala repository on your build server, as you would normally do.</p>
 </li>
 <li>
-<p>Download and run the <a href="https://github.com/codacy/codacy-analysis-cli#install" target="_blank">Codacy Analysis CLI</a> on the root of the repository, specifying the tool SpotBugs.</p>
+<p>Download and run the <a href="https://github.com/codacy/codacy-analysis-cli#install">Codacy Analysis CLI</a> on the root of the repository, specifying the tool SpotBugs.</p>
 <div class="highlight"><pre><span></span><code>codacy-analysis-cli analyze --tool spotbugs <span class="se">\</span>
                             --allow-network <span class="se">\</span>
                             --upload <span class="se">\</span>
@@ -3469,7 +3469,7 @@ engines:
         sourceDirectories:  [ &quot;api/src/main&quot; ]
 </code></pre></div>
 <h2 id="increasing-the-timeout-to-run-spotbugs">Increasing the timeout to run SpotBugs<a class="headerlink" href="#increasing-the-timeout-to-run-spotbugs" title="Permanent link">#</a></h2>
-<p>When running SpotBugs on the compiled classes of larger projects, the <a href="https://github.com/codacy/codacy-analysis-cli#commands-and-configuration" target="_blank">default execution timeout of 15 minutes</a> may not be enough for SpotBugs to complete the analysis.</p>
+<p>When running SpotBugs on the compiled classes of larger projects, the <a href="https://github.com/codacy/codacy-analysis-cli#commands-and-configuration">default execution timeout of 15 minutes</a> may not be enough for SpotBugs to complete the analysis.</p>
 <p>To increase the timeout that SpotBugs has to execute, use the option <code>--tool-timeout</code> when running the Codacy Analysis CLI. For example, use <code>--tool-timeout 1hour</code> to set the timeout to one hour.</p>
               
               
@@ -3627,7 +3627,7 @@ engines:
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 28, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 13, 2022</span>
     
   </small>
 </div>

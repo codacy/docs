@@ -11,7 +11,7 @@
         <meta name="description" content="On March 31, 2022 Codacy is adding ESLint 8 as a new supported tool and deprecating ESLint 7:">
       
       
-        <meta http-equiv="last-modified" content="2022-07-11 11:20:02">  
+        <meta http-equiv="last-modified" content="2022-07-13 18:22:28">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2022-03-31-adding-eslint8/">
@@ -3410,8 +3410,8 @@
 </ul>
 <p><a href="https://community.codacy.com/t/introducing-eslint-version-8-on-our-platform/868">See this post on the Codacy Community</a> for more details on this update.</p>
 <h2 id="migrating-your-configuration-files-to-use-eslint-8">Migrating your configuration files to use ESLint 8<a class="headerlink" href="#migrating-your-configuration-files-to-use-eslint-8" title="Permanent link">#</a></h2>
-<p>ESLint 8 <a href="https://eslint.org/docs/latest/user-guide/migrating-to-8.0.0" target="_blank">introduces breaking changes</a> that may affect the analysis of your repositories.</p>
-<p><strong>If you're using an <a href="https://eslint.org/docs/user-guide/configuring/configuration-files" target="_blank">ESLint configuration file</a> with the parser <code>babel-eslint</code></strong> you must update your configuration file before enabling ESLint 8 on Codacy:</p>
+<p>ESLint 8 <a href="https://eslint.org/docs/latest/user-guide/migrating-to-8.0.0">introduces breaking changes</a> that may affect the analysis of your repositories.</p>
+<p><strong>If you're using an <a href="https://eslint.org/docs/user-guide/configuring/configuration-files">ESLint configuration file</a> with the parser <code>babel-eslint</code></strong> you must update your configuration file before enabling ESLint 8 on Codacy:</p>
 <ul>
 <li>
 <p>The <code>babel-eslint</code> parser was deprecated on February 26, 2020 in favor of <code>@babel/eslint-parser</code> and removed in ESLint 8. <code>@babel/eslint-parser</code> has stricter requirements compared to its predecessor. If you're using <code>babel-eslint</code> you must update it and relax the requirements:</p>
@@ -3591,7 +3591,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 11, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 13, 2022</span>
     
   </small>
 </div>

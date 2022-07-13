@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to obtain information about issues in a repository programmatically using the Codacy API endpoint searchRepositoryIssues.">
       
       
-        <meta http-equiv="last-modified" content="2022-07-13 15:31:47">  
+        <meta http-equiv="last-modified" content="2022-07-13 18:22:28">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/obtaining-current-issues-in-repositories/">
@@ -3402,15 +3402,15 @@
                 
                 
                 <h1 id="obtaining-current-issues-in-repositories">Obtaining current issues in repositories<a class="headerlink" href="#obtaining-current-issues-in-repositories" title="Permanent link">#</a></h1>
-<p>To obtain information about the current issues in your repositories in a flexible way, use the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#searchrepositoryissues" target="_blank">searchRepositoryIssues</a>.</p>
+<p>To obtain information about the current issues in your repositories in a flexible way, use the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#searchrepositoryissues">searchRepositoryIssues</a>.</p>
 <p>For example, you may want to generate a report that includes only issues that belong to specific categories (such as security issues), or that have a minimum severity level.</p>
 <h2 id="example-obtaining-security-issues-with-level-error-and-warning">Example: Obtaining security issues with level Error and Warning<a class="headerlink" href="#example-obtaining-security-issues-with-level-error-and-warning" title="Permanent link">#</a></h2>
 <p>This example exports the pattern ID, issue level, file path, and timestamp for all security issues that have the severity level <code>Warning</code> or <code>Error</code> in the GitHub repository <code>codacy/website</code>.</p>
 <p>The example script:</p>
 <ol>
 <li>Defines the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API.</li>
-<li>Calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#searchrepositoryissues" target="_blank">searchRepositoryIssues</a> to retrieve information about the issues, filtering the results by security issues with the relevant severity levels.</li>
-<li>Uses <a href="https://github.com/stedolan/jq" target="_blank">jq</a> to select only the necessary data fields and convert the results to the CSV format.</li>
+<li>Calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#searchrepositoryissues">searchRepositoryIssues</a> to retrieve information about the issues, filtering the results by security issues with the relevant severity levels.</li>
+<li>Uses <a href="https://github.com/stedolan/jq">jq</a> to select only the necessary data fields and convert the results to the CSV format.</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
 <span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span> <span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
