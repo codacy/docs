@@ -12,7 +12,7 @@ To run SpotBugs as a [client-side tool](client-side-tools.md):
 
 1.  Compile your Java or Scala repository on your build server, as you would normally do.
 
-1.  Download and run the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#install){: target="_blank"} on the root of the repository, specifying the tool SpotBugs.
+1.  Download and run the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#install) on the root of the repository, specifying the tool SpotBugs.
 
     ```bash
     codacy-analysis-cli analyze --tool spotbugs \
@@ -54,6 +54,6 @@ engines:
 
 ## Increasing the timeout to run SpotBugs
 
-When running SpotBugs on the compiled classes of larger projects, the [default execution timeout of 15 minutes](https://github.com/codacy/codacy-analysis-cli#commands-and-configuration){: target="_blank"} may not be enough for SpotBugs to complete the analysis.
+When running SpotBugs on the compiled classes of larger projects, the [default execution timeout of 15 minutes](https://github.com/codacy/codacy-analysis-cli#commands-and-configuration) may not be enough for SpotBugs to complete the analysis.
 
 To increase the timeout that SpotBugs has to execute, use the option `--tool-timeout` when running the Codacy Analysis CLI. For example, use `--tool-timeout 1hour` to set the timeout to one hour.

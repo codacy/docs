@@ -15,9 +15,9 @@ On March 31, 2022 Codacy is adding ESLint 8 as a new supported tool and deprecat
 
 ## Migrating your configuration files to use ESLint 8
 
-ESLint 8 [introduces breaking changes](https://eslint.org/docs/latest/user-guide/migrating-to-8.0.0){: target="_blank"} that may affect the analysis of your repositories.
+ESLint 8 [introduces breaking changes](https://eslint.org/docs/latest/user-guide/migrating-to-8.0.0) that may affect the analysis of your repositories.
 
-**If you're using an [ESLint configuration file](https://eslint.org/docs/user-guide/configuring/configuration-files){: target="_blank"} with the parser `babel-eslint`** you must update your configuration file before enabling ESLint 8 on Codacy:
+**If you're using an [ESLint configuration file](https://eslint.org/docs/user-guide/configuring/configuration-files) with the parser `babel-eslint`** you must update your configuration file before enabling ESLint 8 on Codacy:
 
 -   The `babel-eslint` parser was deprecated on February 26, 2020 in favor of `@babel/eslint-parser` and removed in ESLint 8. `@babel/eslint-parser` has stricter requirements compared to its predecessor. If you're using `babel-eslint` you must update it and relax the requirements:
 

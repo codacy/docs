@@ -75,12 +75,6 @@ Follow these Markdown conventions when editing the documentation:
         1. Item 2.1
     ```
 
--   When adding links to pages outside the documentation, add the attribute `target="_blank"` to open the linked page in a new window. For example:
-
-    ```markdown
-    See our [public roadmap](https://roadmap.codacy.com/){: target="_blank"}.
-    ```
-
 -   Use the [Admonitions syntax](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#usage) to include **notes** and **warnings**, or to highlight **important** information. For example:
 
     ```markdown

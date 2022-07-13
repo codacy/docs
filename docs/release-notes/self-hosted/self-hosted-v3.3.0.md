@@ -6,7 +6,7 @@ description: Release notes for Codacy Self-hosted v3.3.0.
 
 # Self-hosted v3.3.0
 
-These release notes are for [Codacy Self-hosted v3.3.0](https://github.com/codacy/chart/releases/tag/3.3.0){: target="_blank"}, released on February 12, 2021.
+These release notes are for [Codacy Self-hosted v3.3.0](https://github.com/codacy/chart/releases/tag/3.3.0), released on February 12, 2021.
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 

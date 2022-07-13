@@ -3,7 +3,7 @@
 !!! info "This is a beta feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
-    For more information [read the release announcement](https://blog.codacy.com/organization-coding-standards/){: target="_blank"} or [watch a demo (3 min)](https://www.loom.com/share/19642d09662e40f2820bf2be6bdf3660){: target="_blank"} to learn how to create a coding standard for your organization.
+    For more information [read the release announcement](https://blog.codacy.com/organization-coding-standards/) or [watch a demo (3 min)](https://www.loom.com/share/19642d09662e40f2820bf2be6bdf3660) to learn how to create a coding standard for your organization.
 
 Create a coding standard on your organization to define and apply shared tool and code pattern configurations consistently across your repositories. You can also apply the coding standard to new repositories automatically by defining the coding standard as default.
 

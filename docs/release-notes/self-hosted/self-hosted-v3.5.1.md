@@ -6,7 +6,7 @@ description: Release notes for Codacy Self-hosted v3.5.1.
 
 # Self-hosted v3.5.1
 
-These release notes are for [Codacy Self-hosted v3.5.1](https://github.com/codacy/chart/releases/tag/3.5.1){: target="_blank"}, released on June 1, 2021.
+These release notes are for [Codacy Self-hosted v3.5.1](https://github.com/codacy/chart/releases/tag/3.5.1), released on June 1, 2021.
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 

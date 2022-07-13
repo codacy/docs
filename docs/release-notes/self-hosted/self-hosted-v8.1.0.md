@@ -8,7 +8,7 @@ codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/6.
 
 # Self-hosted v8.1.0
 
-These release notes are for [Codacy Self-hosted v8.1.0](https://github.com/codacy/chart/releases/tag/8.1.0){: target="_blank"}, released on June 17, 2022.
+These release notes are for [Codacy Self-hosted v8.1.0](https://github.com/codacy/chart/releases/tag/8.1.0), released on June 17, 2022.
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
@@ -27,7 +27,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.1.0:
 
 ## Product enhancements
 
--   Codacy now supports using [expiring access tokens](https://docs.gitlab.com/ee/integration/oauth_provider.html#expiring-access-tokens){: target="_blank"} to integrate with GitLab. Users affected by issues connecting to GitLab should re-login on the Codacy UI **using their GitLab accounts**, or [revoke the GitLab integration on Codacy](https://docs.codacy.com/v8.1/getting-started/which-permissions-does-codacy-need-from-my-account/#revoking-access-to-integrations) if the issues persist. (CY-6117)
+-   Codacy now supports using [expiring access tokens](https://docs.gitlab.com/ee/integration/oauth_provider.html#expiring-access-tokens) to integrate with GitLab. Users affected by issues connecting to GitLab should re-login on the Codacy UI **using their GitLab accounts**, or [revoke the GitLab integration on Codacy](https://docs.codacy.com/v8.1/getting-started/which-permissions-does-codacy-need-from-my-account/#revoking-access-to-integrations) if the issues persist. (CY-6117)
 -   The Codacy Coverage Reporter now prints a more explicit error message when using an account API token from a user that [doesn't have permission to upload coverage data](https://docs.codacy.com/v8.1/organizations/roles-and-permissions-for-synced-organizations/). (CY-6084)
 -   Codacy now [displays diff coverage as not applicable](https://docs.codacy.com/v8.1/repositories/pull-requests/#pull-request-quality-overview) (represented by `∅`) when there are no coverable lines included in a pull request, and correctly reports the pull request status on your Git provider in this scenario. (CY-5960)
 
@@ -60,9 +60,9 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Cppcheck 2.2
 -   Credo 1.4.0
 -   CSSLint 1.0.5
--   **[dartanalyzer 2.17.0](https://github.com/dart-lang/sdk/blob/main/CHANGELOG.md#2170---2022-05-11){: target="_blank"} (updated from 2.16.2)**
+-   **[dartanalyzer 2.17.0](https://github.com/dart-lang/sdk/blob/main/CHANGELOG.md#2170---2022-05-11) (updated from 2.16.2)**
 -   detekt 1.19.0
--   **[ESLint 8.15.0](https://github.com/eslint/eslint/releases/tag/v8.15.0){: target="_blank"} (updated from 8.14.0)**
+-   **[ESLint 8.15.0](https://github.com/eslint/eslint/releases/tag/v8.15.0) (updated from 8.14.0)**
 -   ESLint (deprecated) 7.32.0
 -   Faux-Pas 1.7.2
 -   Flawfinder 2.0.19
@@ -79,11 +79,11 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Pylint 1.9.5
 -   Pylint (Python 3) 2.7.4
 -   remark-lint 7.0.1
--   **[Revive 1.2.1](https://github.com/mgechev/revive/releases/tag/v1.2.1){: target="_blank"} (updated from 1.0.2)**
+-   **[Revive 1.2.1](https://github.com/mgechev/revive/releases/tag/v1.2.1) (updated from 1.0.2)**
 -   RuboCop 1.28.2
 -   Scalastyle 1.5.0
 -   ShellCheck 0.7.2
--   **[Sonar C# 8.39](https://github.com/SonarSource/sonar-dotnet/releases/tag/v8.39.0.47922){: target="_blank"} (updated from 8.33)**
+-   **[Sonar C# 8.39](https://github.com/SonarSource/sonar-dotnet/releases/tag/v8.39.0.47922) (updated from 8.33)**
 -   Sonar Visual Basic 8.15
 -   spectral-rulesets 1.2.7
 -   SpotBugs 4.5.3

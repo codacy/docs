@@ -4,7 +4,7 @@ description: Example of how to obtain code quality metrics for files in a reposi
 
 # Obtaining code quality metrics for files
 
-To obtain the code quality information for your files in a flexible way, use the Codacy API endpoint [listFiles](https://app.codacy.com/api/api-docs#listfiles){: target="_blank"}.
+To obtain the code quality information for your files in a flexible way, use the Codacy API endpoint [listFiles](https://app.codacy.com/api/api-docs#listfiles).
 
 For example, if you're managing your source code using a monorepo strategy you may want to generate separate code quality reports for the subset of files that belong to each component or project in your repository.
 
@@ -15,8 +15,8 @@ This example exports the grade, total issues, complexity, coverage, and duplicat
 The example script:
 
 1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
-1.  Calls the Codacy API endpoint [listFiles](https://app.codacy.com/api/api-docs#listfiles){: target="_blank"} to retrieve the code quality metrics, filtering the results by files that include `src/router/` in the path.
-1.  Uses [jq](https://github.com/stedolan/jq){: target="_blank"} to select only the necessary data fields and convert the results to the CSV format.
+1.  Calls the Codacy API endpoint [listFiles](https://app.codacy.com/api/api-docs#listfiles) to retrieve the code quality metrics, filtering the results by files that include `src/router/` in the path.
+1.  Uses [jq](https://github.com/stedolan/jq) to select only the necessary data fields and convert the results to the CSV format.
 
 ```bash
 CODACY_API_TOKEN="<your account API token>"
