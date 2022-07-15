@@ -2,7 +2,7 @@ name: Scheduled checks
 
 on:
   schedule:
-   - cron: "0 5 15 * *"
+   - cron: "0 5 */15 * *"
 
 jobs:
   check-broken-links:
