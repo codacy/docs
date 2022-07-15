@@ -145,7 +145,7 @@ The Security Monitor supports checking the languages and frameworks below for an
       </td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/PyCQA/prospector">Prospector</a>,
-          <a href="https://www.pylint.org/">Pylint</a></td>
+          <a href="https://pylint.pycqa.org/">Pylint</a></td>
     </tr>
     <tr>
       <td>Ruby<a href="#ruby-31"><sup>4</sup></a>
@@ -210,7 +210,7 @@ Each issue reported on the Security Monitor belongs to one of the following secu
 |**Insecure Storage**|Security issues related to insecure storage of sensitive data.|
 |**Malicious Code**|Security issues related to code patterns that are potentially unsafe.|
 |**Mass Assignment**|Unprotected mass assignments are a Rails feature that could allow an attacker to update sensitive model attributes.|
-|**Regex**|Regular expressions can be used in Denial of Service attacks, exploiting the fact that in most regular expression implementations thecomputational load grows exponentially with input size.|
+|**Regex**|Regular expressions can be used in Denial of Service attacks, exploiting the fact that in most regular expression implementations the computational load grows exponentially with input size.|
 |**Routes**|Badly configured routes can give unintended access to an attacker.|
 |**SQL Injection**|SQL injection attacks insert or \"inject\" malicious SQL queries into the application via the client input data.|
 |**SSL**|Security issues related with old SSL versions or configurations that have known cryptographic weaknesses and should no longer be used.|
