@@ -26,7 +26,7 @@ Use the drop-down list at the top of the page to filter the information displaye
 !!! tip
     Use the language filter to help you narrow down the list of repositories in the drop-down list:
 
-    ![Using the language filter to narrow down the list of repositories](images/organization-overview-filter-language-beta.png)
+    ![Using the language filter to narrow down the list of repositories](images/organization-overview-filter-language.png)
 
 On the Organization Overview you have the following areas to help you monitor your repositories:
 
