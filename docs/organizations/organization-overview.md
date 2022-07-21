@@ -27,7 +27,6 @@ On the Organization Overview you have the following areas to help you monitor yo
 -   [Open pull requests](#open-pull-requests)
 -   [Last updated repositories](#last-updated-repositories)
 
-{% if not config.extra.self_hosted %}
 Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained.
 
 !!! tip
@@ -35,10 +34,7 @@ Use the drop-down list at the top of the page to filter the information displaye
 
     ![Using the language filter to narrow down the list of repositories](images/organization-overview-filter-language-beta.png)
 
-![Organization Overview](images/organization-overview-beta.png)
-{% else %}
 ![Organization Overview](images/organization-overview.png)
-{% endif %}
 
 The following sections provide a detailed description of each dashboard area.
 
