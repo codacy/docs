@@ -12,20 +12,14 @@ description: The Organization Overview provides an overview of repositories that
 
 The **Organization Overview** provides an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
 
+To access your Organization Overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
+
 !!! important
     -   The Organization Overview calculates metrics and displays data only for the repositories that you have access to. This means that depending on their permissions, two users could see different results on their Organization Overview.
 
     -   The Organization Overview displays information for **at most the last 100 updated repositories**.
 
 ![Organization Overview](images/organization-overview.png)
-
-To access your Organization Overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
-
-On the Organization Overview you have the following areas to help you monitor your repositories:
-
--   [Overall quality chart](#overall-quality-chart)
--   [Open pull requests](#open-pull-requests)
--   [Last updated repositories](#last-updated-repositories)
 
 Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained.
 
@@ -34,7 +28,11 @@ Use the drop-down list at the top of the page to filter the information displaye
 
     ![Using the language filter to narrow down the list of repositories](images/organization-overview-filter-language-beta.png)
 
-![Organization Overview](images/organization-overview.png)
+On the Organization Overview you have the following areas to help you monitor your repositories:
+
+-   [Overall quality chart](#overall-quality-chart)
+-   [Open pull requests](#open-pull-requests)
+-   [Last updated repositories](#last-updated-repositories)
 
 The following sections provide a detailed description of each dashboard area.
 
