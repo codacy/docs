@@ -91,7 +91,7 @@ The following are example situations that can lead to possible issues:
 !!! note
     **If you're using GitHub** you may see [annotations](../repositories-configure/integrations/github-integration.md#annotations)  for possible issues reported under **Unchanged files with check annotations** on the **Files changed** tab of your pull requests.
 
-    This happens when Codacy reports possible issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/){: target="_blank"}.
+    This happens when Codacy reports possible issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/).
 
 ## Duplication tabs
 
@@ -101,7 +101,7 @@ The **New Duplication** and **Fixed Duplication** tabs display the list of dupli
 
 ## Files tab
 
-The **Files** tab displays an overview of the code quality changes introduced by each file that was either changed in the {{ page.meta.page_name }} or that had code coverage data reported.<!--NOTE See https://codacy.atlassian.net/browse/CY-5946 for a discussion around changing this behavior in the future-->
+The **Files** tab displays an overview of the code quality metrics for each file that either changed or had a variation in the code coverage value in the scope of the {{ page.meta.page_name }}. <!--NOTE See https://codacy.atlassian.net/browse/CY-5946 for a discussion around changing this behavior in the future-->
 
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
 

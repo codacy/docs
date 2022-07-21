@@ -8,7 +8,7 @@ codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/5.
 
 # Self-hosted v6.0.0
 
-These release notes are for [Codacy Self-hosted v6.0.0](https://github.com/codacy/chart/releases/tag/6.0.0){: target="_blank"}, released on March 2, 2022.
+These release notes are for [Codacy Self-hosted v6.0.0](https://github.com/codacy/chart/releases/tag/6.0.0), released on March 2, 2022.
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
@@ -31,7 +31,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 -   Dropped support for Kubernetes 1.14 and MicroK8s 1.14
 
-    Kubernetes 1.14 is an old version [first released in 2019](https://kubernetes.io/blog/2019/03/25/kubernetes-1-14-release-announcement/){: target="_blank"} that's no longer being maintained.
+    Kubernetes 1.14 is an old version [first released in 2019](https://kubernetes.io/blog/2019/03/25/kubernetes-1-14-release-announcement/) that's no longer being maintained.
 
     If you're using Kubernetes 1.14 or MicroK8s 1.14, make sure that you upgrade your cluster before upgrading Codacy. For the current supported versions, see the [chart requirements page](https://docs.codacy.com/v6.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
 
@@ -57,30 +57,30 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
     ![Quality gate rule for diff coverage](../images/cy-5534.png)
 
--   Updated the [<span class="skip-vale">codacy-rubocop</span>](https://github.com/codacy/codacy-rubocop){: target="_blank"} plugins listed below. (CY-5550)
+-   Updated the [<span class="skip-vale">codacy-rubocop</span>](https://github.com/codacy/codacy-rubocop) plugins listed below. (CY-5550)
 
-    -   [<span class="skip-vale">rubocop-shopify 2.4.0</span>](https://rubygems.org/gems/rubocop-shopify/versions/2.4.0){: target="_blank"}
-    -   [<span class="skip-vale">rubocop-sorbet 0.6.5</span>](https://rubygems.org/gems/rubocop-sorbet/versions/0.6.5){: target="_blank"}
-    -   [<span class="skip-vale">rubocop-rails 2.13.2</span>](https://rubygems.org/gems/rubocop-rails/versions/2.13.2){: target="_blank"}
-    -   [<span class="skip-vale">rubocop-performance 1.13.2</span>](https://rubygems.org/gems/rubocop-performance/versions/1.13.2){: target="_blank"}
-    -   [<span class="skip-vale">rubocop-graphql 0.12.3</span>](https://rubygems.org/gems/rubocop-graphql/versions/0.12.3){: target="_blank"}
-    -   [<span class="skip-vale">rubocop-ast 1.15.1</span>](https://rubygems.org/gems/rubocop-ast/versions/1.15.1){: target="_blank"}
+    -   [<span class="skip-vale">rubocop-shopify 2.4.0</span>](https://rubygems.org/gems/rubocop-shopify/versions/2.4.0)
+    -   [<span class="skip-vale">rubocop-sorbet 0.6.5</span>](https://rubygems.org/gems/rubocop-sorbet/versions/0.6.5)
+    -   [<span class="skip-vale">rubocop-rails 2.13.2</span>](https://rubygems.org/gems/rubocop-rails/versions/2.13.2)
+    -   [<span class="skip-vale">rubocop-performance 1.13.2</span>](https://rubygems.org/gems/rubocop-performance/versions/1.13.2)
+    -   [<span class="skip-vale">rubocop-graphql 0.12.3</span>](https://rubygems.org/gems/rubocop-graphql/versions/0.12.3)
+    -   [<span class="skip-vale">rubocop-ast 1.15.1</span>](https://rubygems.org/gems/rubocop-ast/versions/1.15.1)
 
 -   Now, the [**Issues breakdown** area on the Repository Dashboard](https://docs.codacy.com/v6.0/repositories/repository-dashboard/#issues-breakdown) displays all issue categories, including **Code complexity**. (CY-5463)
 
 -   You can now use the Codacy configuration file to [adjust how PMD CPD detects duplicated code](https://docs.codacy.com/v6.0/repositories-configure/codacy-configuration-file/#pmd-cpd-duplication), giving you more flexibility to eliminate false positives. (CY-5184)
 
--   Now, Codacy supports static code analysis for Dart/Flutter projects using [dartanalyzer](https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli){: target="_blank"}. The new tool checks your code for errors and warnings that are specified in the [Dart language specification](https://dart.dev/guides/language/spec){: target="_blank"}. (CY-4314)
+-   Now, Codacy supports static code analysis for Dart/Flutter projects using [dartanalyzer](https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli). The new tool checks your code for errors and warnings that are specified in the [Dart language specification](https://dart.dev/guides/language/spec). (CY-4314)
 
 -   Added documentation on [how to configure the log level and log retention period](https://docs.codacy.com/v6.0/chart/configuration/logging/) of the Codacy components running on your Kubernetes or MicroK8s cluster. (CY-2768)
 
 ## Bug fixes
 
 -   Now, the **Coverage** column always appears on the Files page even when there's no coverage data, avoiding a jump in the view. (CY-5518)
--   Updated the Git URL used to clone public repositories to comply with the recent [GitHub protocol changes](https://github.blog/2021-09-01-improving-git-protocol-security-github/){: target="_blank"}. (CY-5436)
+-   Updated the Git URL used to clone public repositories to comply with the recent [GitHub protocol changes](https://github.blog/2021-09-01-improving-git-protocol-security-github/). (CY-5436)
 -   Fixed an issue that could prevent users from using the Codacy app website temporarily if they were exposed to a phishing attack. CVSS v3.1 score: 3.1 (Low) (CY-5420)
 -   Fixed a security issue that, under rare circumstances, could allow an attacker to run arbitrary code on the **Ignored files** settings page. CVSS v3.1 score: 3.8 (Low) (CY-5419)
--   Added the plugin [<span class="skip-vale">eslint-plugin-storybook</span>](https://www.npmjs.com/package/eslint-plugin-storybook){: target="_blank"} to [<span class="skip-vale">codacy-eslint</span>](https://github.com/codacy/codacy-eslint){: target="_blank"}. (CY-5406)
+-   Added the plugin [<span class="skip-vale">eslint-plugin-storybook</span>](https://www.npmjs.com/package/eslint-plugin-storybook) to [<span class="skip-vale">codacy-eslint</span>](https://github.com/codacy/codacy-eslint). (CY-5406)
 
 ## Tool versions
 
@@ -119,7 +119,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Revive 1.0.2
 -   **RuboCop 1.25.1 (updated from 1.23.0)**
 -   Scalastyle 1.5.0
--   ShellCheck v0.7.2
+-   ShellCheck 0.7.2
 -   Sonar C# 8.30
 -   Sonar Visual Basic 8.15
 -   spectral-rulesets 1.2.7

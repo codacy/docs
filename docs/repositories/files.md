@@ -2,6 +2,8 @@
 
 The **Files page** displays the current code quality information for each analyzed file in your [active repository branches](../repositories-configure/managing-branches.md).
 
+By default, the page lists the files on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display files on other branches.
+
 Codacy displays the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) for each file, if available:
 
 -   Grade
@@ -10,13 +12,16 @@ Codacy displays the following [code quality metrics](../faq/code-analysis/which-
 -   Duplication
 -   Code coverage
 
-By default, Codacy displays the files in alphabetical order but you can sort the list by each column to help you identify which files you should improve or refactor next.
+Codacy displays the files in alphabetical order by default, but you can sort the list by each column to help you identify which files you should improve or refactor next.
+
+!!! note
+    [You can use the Codacy API](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md) to generate reports or obtain code quality metrics for the files in your repositories in a more flexible way.
 
 ![Files list](images/files.png)
 
-If you have more than one branch enabled on Codacy, use the drop-down list next to the page title to select the branch that contains the files to display on the list. Use the search box to filter the list and find specific files.
+Use the search box to filter the list and find specific files:
 
-![Changing the branch on the Files page](images/files-select-branch.png)
+![Finding specific files](images/files-search.png)
 
 ## File details
 
@@ -74,3 +79,4 @@ The Files page only displays files in your repository that were analyzed by Coda
 ## See also
 
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Using the Codacy API to obtain code quality metrics for files](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md)

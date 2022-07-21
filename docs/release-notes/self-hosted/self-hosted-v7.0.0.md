@@ -8,7 +8,7 @@ codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/5.
 
 # Self-hosted v7.0.0
 
-These release notes are for [Codacy Self-hosted v7.0.0](https://github.com/codacy/chart/releases/tag/7.0.0){: target="_blank"}, released on April 4, 2022.
+These release notes are for [Codacy Self-hosted v7.0.0](https://github.com/codacy/chart/releases/tag/7.0.0), released on April 4, 2022.
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
@@ -29,7 +29,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v7.0.0:
 
 **If you're using GitLab** please review the roles of your team on GitLab [considering the new permissions for project Maintainers](http://docs.codacy.com/v7.0/organizations/roles-and-permissions-for-synced-organizations/#permissions-for-gitlab).
 
-GitLab defines Maintainers as [super-developers](https://about.gitlab.com/handbook/product/gitlab-the-product/#permissions-in-gitlab){: target="_blank"}:
+GitLab defines Maintainers as [super-developers](https://about.gitlab.com/handbook/product/gitlab-the-product/#permissions-in-gitlab):
 
 > They're able to push to <span class="skip-vale">master</span>, deploy to production. This role is often held by maintainers and engineering managers.
 
@@ -78,7 +78,7 @@ However, until now the Codacy permissions for this role were limited to the same
 ## Bug fixes
 
 -   Fixed an issue that caused inconsistencies on the last updated date when listing GitHub repositories. Now, the last updated date is the [date of the last push to the repositories](https://docs.codacy.com/v7.0/organizations/organization-overview/#last-updated-repositories). (CY-5784)
--   dartanalyzer now supports including the packages [lints](https://pub.dev/packages/lints){: target="_blank"} and [flutter_lints](https://pub.dev/packages/flutter_lints){: target="_blank"} in the `analysis_option.yaml` configuration file. (CY-5626)
+-   dartanalyzer now supports including the packages [lints](https://pub.dev/packages/lints) and [flutter_lints](https://pub.dev/packages/flutter_lints) in the `analysis_option.yaml` configuration file. (CY-5626)
 -   Fixed an issue that blocked re-analyzing commits made by non-authors on Codacy Self-hosted. (CY-5012)
 -   The re-analyze button is now hidden on repositories that are running analysis through a build server. (CY-4205)
 
@@ -98,9 +98,9 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Cppcheck 2.2
 -   Credo 1.4.0
 -   CSSLint 1.0.5
--   **[dartanalyzer 2.16.1](https://github.com/dart-lang/sdk/blob/main/CHANGELOG.md#2161---2022-02-09){: target="_blank"} (updated from 2.15.1)**
+-   **[dartanalyzer 2.16.1](https://github.com/dart-lang/sdk/blob/main/CHANGELOG.md#2161---2022-02-09) (updated from 2.15.1)**
 -   detekt 1.19.0
--   **[ESLint 8.10.0](https://github.com/eslint/eslint/releases/tag/v8.10.0){: target="_blank"} (new)**
+-   **[ESLint 8.10.0](https://github.com/eslint/eslint/releases/tag/v8.10.0) (new)**
 -   ESLint 7.32.0 (<span style="color: red;">deprecated</span>)
 -   Faux-Pas 1.7.2
 -   Flawfinder 2.0.11
@@ -118,9 +118,9 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Pylint (Python 3) 2.7.4
 -   remark-lint 7.0.1
 -   Revive 1.0.2
--   **[RuboCop 1.26.1](https://github.com/rubocop/rubocop/releases/tag/v1.26.1){: target="_blank"} (updated from 1.25.1)**
+-   **[RuboCop 1.26.1](https://github.com/rubocop/rubocop/releases/tag/v1.26.1) (updated from 1.25.1)**
 -   Scalastyle 1.5.0
--   ShellCheck v0.7.2
+-   ShellCheck 0.7.2
 -   Sonar C# 8.30
 -   Sonar Visual Basic 8.15
 -   spectral-rulesets 1.2.7

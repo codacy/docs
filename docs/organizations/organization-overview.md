@@ -17,9 +17,11 @@ The **Organization Overview** provides an overview of repositories that belong t
 
     -   The Organization Overview displays information for **at most the last 100 updated repositories**.
 
+![Organization Overview](images/organization-overview.png)
+
 To access your Organization Overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
 
-On the Organization Overview you have three areas to help you monitor your repositories:
+On the Organization Overview you have the following areas to help you monitor your repositories:
 
 -   [Overall quality chart](#overall-quality-chart)
 -   [Open pull requests](#open-pull-requests)
@@ -39,6 +41,8 @@ Use the drop-down list at the top of the page to filter the information displaye
 {% endif %}
 
 The following sections provide a detailed description of each dashboard area.
+
+{% include-markdown "../assets/includes/dashboard-api-report-note.md" %}
 
 ## Overall quality chart
 
@@ -85,9 +89,11 @@ Click **See all** to see all repositories in your organization.
     The exact value of the last updated date of the repositories depends on your Git provider:
 
     -   **GitHub:** date of the last commit to any branch of the repository (value of `pushed_at` from the [GitHub Repositories API](https://docs.github.com/en/rest/repos/repos#list-organization-repositories){: target=_"blank"}).
-    -   **GitLab:** date when the project was last updated (value of `last_activity_at` from the [GitLab Groups API](https://docs.gitlab.com/ee/api/groups.html){: target="_blank"}). Note that this value is only updated [at most once per hour](https://gitlab.com/gitlab-org/gitlab/-/issues/20952){: target="_blank"}).
-    -   **Bitbucket:** date when the repository was last updated (value of `updated_on` from the [Bitbucket Repositories API](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/#api-group-repositories){: target="_blank"}). **On Bitbucket Server** Codacy can't obtain this information and the list displays the repositories in alphabetical order.
+    -   **GitLab:** date when the project was last updated (value of `last_activity_at` from the [GitLab Groups API](https://docs.gitlab.com/ee/api/groups.html)). Note that this value is only updated [at most once per hour](https://gitlab.com/gitlab-org/gitlab/-/issues/20952)).
+    -   **Bitbucket:** date when the repository was last updated (value of `updated_on` from the [Bitbucket Repositories API](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/#api-group-repositories)). **On Bitbucket Server** Codacy can't obtain this information and the list displays the repositories in alphabetical order.
 
 ## See also
 
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Using the Codacy API to obtain current issues in repositories](../codacy-api/examples/obtaining-current-issues-in-repositories.md)
+-   [Using the Codacy API to obtain code quality metrics for files](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md)

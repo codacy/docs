@@ -5,7 +5,7 @@ The **Repository Dashboard** provides an overview of the repository code quality
 To access your Repository Dashboard, select a repository from the [Organization Dashboard](../organizations/organization-overview.md) or open a repository on any other page and select **Dashboard** on the left navigation sidebar.
 
 !!! tip
-    You can share the URL of the Repository Dashboard for your public repositories to allow other people to see your repository code quality metrics, even if they aren't registered on Codacy.
+    You can share the URL of the Repository Dashboard for your **public repositories** to allow other people to see your repository code quality metrics, even if they aren't registered on Codacy.
 
 ![Repository Dashboard](images/repository-dashboard.png)
 
@@ -14,7 +14,7 @@ The top of the Repository Dashboard displays:
 -   The name and [code quality grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade) of the repository
 -   A drop-down list that selects which branch of your repository to display on the dashboard
 
-On the Repository Dashboard you have four areas to help you monitor your repository:
+On the Repository Dashboard you have the following areas to help you monitor your repository:
 
 -   [Quality evolution chart](#quality-evolution-chart)
 -   [Issues breakdown](#issues-breakdown)
@@ -22,6 +22,8 @@ On the Repository Dashboard you have four areas to help you monitor your reposit
 -   [Open pull requests](#open-pull-requests)
 
 The following sections provide a detailed overview of each dashboard area.
+
+{% include-markdown "../assets/includes/dashboard-api-report-note.md" %}
 
 ## Quality evolution chart
 
@@ -80,3 +82,5 @@ To see the details of pull requests, click a pull request from the list or click
 ## See also
 
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Using the Codacy API to obtain current issues in repositories](../codacy-api/examples/obtaining-current-issues-in-repositories.md)
+-   [Using the Codacy API to obtain code quality metrics for files](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md)

@@ -6,7 +6,7 @@ description: Release notes for Codacy Self-hosted v2.1.1.
 
 # Self-hosted v2.1.1
 
-These release notes are for [Codacy Self-hosted v2.1.1](https://github.com/codacy/chart/releases/tag/2.1.1){: target="_blank"}, released on September 24, 2020.
+These release notes are for [Codacy Self-hosted v2.1.1](https://github.com/codacy/chart/releases/tag/2.1.1), released on September 24, 2020.
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
@@ -47,7 +47,7 @@ This version of Codacy Self-hosted includes the tool versions below.
 -   Remark Lint 7.0.0
 -   RuboCop 0.82.0
 -   Scalastyle 1.0.0
--   ShellCheck v0.7.1
+-   ShellCheck 0.7.1
 -   Sonar C# 8.12
 -   Sonar Visual Basic 8.12
 -   SpotBugs 4.1.2

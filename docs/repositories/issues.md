@@ -4,6 +4,9 @@ The **Issues page** lists all the issues that Codacy detected in your repository
 
 By default, the page lists the issues on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display issues on other branches.
 
+!!! note
+    [You can use the Codacy API](../codacy-api/examples/obtaining-current-issues-in-repositories.md) to generate reports or obtain information about the current issues in your repositories in a more flexible way.
+
 ![Issues page](images/issues.png)
 
 <!--issue-detail-start-->
@@ -90,3 +93,8 @@ To see the list of ignored issues, click **Current Issues** and select **Ignored
 To restore an ignored issue, click the button **Unignore** next to the issue title:
 
 ![Restoring an ignored issue](images/issues-unignore.png)
+
+## See also
+
+-   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Using the Codacy API to obtain current issues in repositories](../codacy-api/examples/obtaining-current-issues-in-repositories.md)

@@ -6,7 +6,7 @@ description: Release notes for Codacy Self-hosted v3.4.0.
 
 # Self-hosted v3.4.0
 
-These release notes are for [Codacy Self-hosted v3.4.0](https://github.com/codacy/chart/releases/tag/3.4.0){: target="_blank"}, released on March 12, 2021.
+These release notes are for [Codacy Self-hosted v3.4.0](https://github.com/codacy/chart/releases/tag/3.4.0), released on March 12, 2021.
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
@@ -68,7 +68,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Revive 1.0.2
 -   **RuboCop 1.11.0 (updated from 1.9.1)**
 -   **Scalastyle 1.5.0 (updated from 1.0.0, adds support for Scala 2.13)**
--   ShellCheck v0.7.1
+-   ShellCheck 0.7.1
 -   **Sonar C# 8.13 (updated from 8.15)**
 -   Sonar Visual Basic 8.15
 -   SpotBugs 4.1.2

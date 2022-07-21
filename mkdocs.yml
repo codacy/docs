@@ -30,7 +30,7 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    version: "8.0.0"
+    version: "8.1.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
@@ -391,6 +391,7 @@ plugins:
               "hc/en-us/articles/360014670140-Self-hosted-v1-4-0-for-Kubernetes.md": "release-notes/self-hosted/self-hosted-v1.4.0.md"
               "hc/en-us/articles/360015300100.md": "faq/general/how-does-codacy-support-gitlab-enterprise.md"
               "hc/en-us/articles/360015300100-How-does-Codacy-support-GitLab-Enterprise-.md": "faq/general/how-does-codacy-support-gitlab-enterprise.md"
+              "docs/security.md": "https://security.codacy.com/"
               # Redirect chart documentation pages from /Chart/ to /chart/
               "Chart/index.md": "chart/index.md"
               "Chart/requirements.md": "chart/requirements.md"
@@ -641,6 +642,8 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2022:
+                      - release-notes/cloud/cloud-2022-06.md
+                      - release-notes/cloud/cloud-2022-05.md
                       - release-notes/cloud/cloud-2022-04.md
                       - release-notes/cloud/cloud-2022-03.md
                       - release-notes/cloud/cloud-2022-03-31-adding-eslint8.md
@@ -678,6 +681,7 @@ nav:
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
                 - v8:
+                      - release-notes/self-hosted/self-hosted-v8.1.0.md
                       - release-notes/self-hosted/self-hosted-v8.0.0.md
                 - v7:
                       - release-notes/self-hosted/self-hosted-v7.0.0.md

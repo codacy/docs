@@ -10,9 +10,9 @@ To fix this issue and also avoid future disruptions, Codacy recommends that you 
         The service account must have **administrator permissions** on the repositories to integrate with Codacy and **must not be shared by other systems** to ensure that Codacy doesn't hit the API rate limits of the Git provider when using this account.
 
     !!! tip
-        Using a dedicated service account also has the advantage of any pull request comments made by Codacy appearing as authored by the service account instead of by a regular organization member. You can name this account "Codacy" and use [this Codacy logo](https://avatars.githubusercontent.com/u/1834093){: target="_blank"} as the account picture so that your pull request comments look like the following example:
+        Using a dedicated service account also has the advantage of any pull request comments made by Codacy appearing as authored by the service account instead of by a regular organization member. You can name this account "Codacy" and use [this Codacy logo](https://avatars.githubusercontent.com/u/1834093) as the account picture so that your pull request comments look like the following example:
 
-        ![Suggest fix comment on GitHub](../../repositories-configure/integrations/images/github-integration-suggest-fixes.png)
+        ![Codacy comment on a GitLab merge request](../../repositories-configure/integrations/images/gitlab-integration-pr-comment.png)
 
 1.  Log out of both your Git provider and of Codacy.
 

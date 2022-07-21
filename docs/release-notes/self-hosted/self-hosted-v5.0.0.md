@@ -8,7 +8,7 @@ codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/4.
 
 # Self-hosted v5.0.0
 
-These release notes are for [Codacy Self-hosted v5.0.0](https://github.com/codacy/chart/releases/tag/5.0.0){: target="_blank"}, released on December 17, 2021.
+These release notes are for [Codacy Self-hosted v5.0.0](https://github.com/codacy/chart/releases/tag/5.0.0), released on December 17, 2021.
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
@@ -55,7 +55,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 ## Product enhancements
 
--   Now, Codacy supports linting OpenAPI and AsyncAPI descriptions in either YAML or JSON files using [Spectral](https://stoplight.io/open-source/spectral/){: target="_blank"}. (CY-5088)
+-   Now, Codacy supports linting OpenAPI and AsyncAPI descriptions in either YAML or JSON files using [Spectral](https://stoplight.io/open-source/spectral/). (CY-5088)
 
 -   You can now [use an organization coding standard](https://docs.codacy.com/v5.0/organizations/using-a-coding-standard/) to apply the same coding best practices, conventions, or security rules to a group of repositories. (CY-4654)
 
@@ -67,7 +67,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 -   Fixed an issue that could cause Sonar Visual Basic to time out independently of how many files are analyzed. (CY-5204)
 -   Improved the visual feedback for the Jira integration status. (CY-5190)
 -   Fixed an issue that prevented the message "Refresh the page to see the results" from being displayed on the commit and pull request pages after a re-analysis was completed. (CY-5187)
--   Fixed some default regular expressions on [<span class="skip-vale">codacy-checkstyle</span>](https://github.com/codacy/codacy-checkstyle){: target="_blank"} that could cause the code pattern PackageName to report false positives when configured using the Codacy UI. (CY-5185)
+-   Fixed some default regular expressions on [<span class="skip-vale">codacy-checkstyle</span>](https://github.com/codacy/codacy-checkstyle) that could cause the code pattern PackageName to report false positives when configured using the Codacy UI. (CY-5185)
 -   Fixed an issue that caused ESLint to report false positive issues regarding import statement organization if prettier was enabled. (CY-5143)
 -   Fixed an issue that could allow triggering requests from the Codacy instance servers by injecting a URL into the cursor parameter of the API endpoint to list organization repositories. (CY-5139)
 -   Added protection against CSRF attacks targeting the Codacy API v3. In the case of phishing, even if the victim opens a malicious link, the attack won't work. CVSS v3.1 score: 6.4 (Medium) (CY-5131)
@@ -114,7 +114,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Revive 1.0.2
 -   **RuboCop 1.23.0 (updated from 1.21.0)**
 -   Scalastyle 1.5.0
--   **ShellCheck v0.7.2 (updated from v0.7.1)**
+-   **ShellCheck 0.7.2 (updated from 0.7.1)**
 -   **Sonar C# 8.30 (updated from 8.25)**
 -   Sonar Visual Basic 8.15
 -   **Spectral (new)**

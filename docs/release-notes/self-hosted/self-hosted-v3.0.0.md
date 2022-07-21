@@ -6,7 +6,7 @@ description: Release notes for Codacy Self-hosted v3.0.0.
 
 # Self-hosted v3.0.0
 
-These release notes are for [Codacy Self-hosted v3.0.0](https://github.com/codacy/chart/releases/tag/3.0.0){: target="_blank"}, released on November 2, 2020.
+These release notes are for [Codacy Self-hosted v3.0.0](https://github.com/codacy/chart/releases/tag/3.0.0), released on November 2, 2020.
 
 To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.md).
 
@@ -57,7 +57,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Revive 1.0.2
 -   RuboCop 0.82.0
 -   Scalastyle 1.0.0
--   ShellCheck v0.7.1
+-   ShellCheck 0.7.1
 -   **Sonar C# 8.14 (updated from 8.13)**
 -   **Sonar Visual Basic 8.14 (updated from 8.13)**
 -   SpotBugs 4.1.2

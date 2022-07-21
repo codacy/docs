@@ -10,7 +10,7 @@ To run deadcode as a [client-side tool](client-side-tools.md):
      include-markdown breaks the final list in two, use include instead. -->
 {% include "../../assets/includes/client-side-tool-instructions.md" %}
 
-1.  Download and run the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#install){: target="_blank"} on the root of the repository, specifying the tool deadcode.
+1.  Download and run the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#install) on the root of the repository, specifying the tool deadcode.
 
     ```bash
     codacy-analysis-cli analyze --tool deadcode \

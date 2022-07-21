@@ -22,7 +22,7 @@ In addition to in-house built rules, we use open source tools for many of our st
 <li><a href="https://github.com/rubocop/rubocop">RuboCop</a></li>
 <li><a href="https://github.com/simplecov-ruby/simplecov">SimpleCov</a></li>
 <li><a href="https://github.com/clutchski/coffeelint">CoffeeLint</a></li>
-<li><a href="https://www.pylint.org/">Pylint</a></li>
+<li><a href="https://pylint.pycqa.org/">Pylint</a></li>
 </ul>
 </td>
 <td>
