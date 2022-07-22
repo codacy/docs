@@ -30,9 +30,10 @@ This script is scheduled to [run periodically as a GitHub Action](https://github
 
 ## find-orphan-images.sh
 
-Outputs a list of images that aren't included in any Markdown file.
+Outputs a list of images that aren't included in any Markdown file. Make sure that you generate the documentation site before running the script.
 
 ```bash
+mkdocs build -f ../mkdocs.yml -d ../site
 ./find-orphan-images.sh
 ```
 
