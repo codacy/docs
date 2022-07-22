@@ -28,12 +28,13 @@ Validates if the source file for the page [Supported languages and tools](https:
 
 This script is scheduled to [run periodically as a GitHub Action](https://github.com/codacy/docs/actions/workflows/checks.yml).
 
-## find-orphan-images.sh
+## find-unused-images.sh
 
-Outputs a list of images that aren't included in any Markdown file.
+Outputs a list of images that aren't included in any Markdown file. Make sure that you generate the documentation site before running the script.
 
 ```bash
-./find-orphan-images.sh
+mkdocs build -f ../mkdocs.yml -d ../site
+./find-unused-images.sh
 ```
 
 ## get-security-patterns
