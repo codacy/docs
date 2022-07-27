@@ -11,7 +11,7 @@
         <meta name="description" content="Create an account API token to authorize access to all the repositories that you have access to, or a project API token to authorize access only to a specific repository.">
       
       
-        <meta http-equiv="last-modified" content="2022-05-27 10:49:49">  
+        <meta http-equiv="last-modified" content="2022-07-27 18:27:03">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/api-tokens/">
@@ -3419,31 +3419,25 @@
                 
                 
                 <h1 id="api-tokens">API tokens<a class="headerlink" href="#api-tokens" title="Permanent link">#</a></h1>
-<p>The Codacy API tokens allow you to:</p>
+<p>Codacy provides <strong>account</strong> and <strong>project</strong>-level API tokens that allow you to:</p>
 <ul>
-<li>
-<p><a href="../using-the-codacy-api/#authenticating-requests">Authenticate when using the Codacy API</a></p>
-</li>
-<li>
-<p><a href="../../coverage-reporter/">Upload coverage data</a> or <a href="../../related-tools/local-analysis/running-local-analysis/">upload the results of running local analysis</a> to Codacy</p>
-</li>
+<li><a href="../../coverage-reporter/">Upload coverage data</a> to Codacy</li>
+<li><a href="../../related-tools/local-analysis/running-local-analysis/">Upload the results of running local analysis</a> to Codacy</li>
+<li><a href="../using-the-codacy-api/#authenticating-requests">Authenticate when using the Codacy API</a></li>
 </ul>
-<p>Codacy provides two types of API tokens:</p>
-<ul>
-<li>
-<p><strong>Account API tokens</strong> are defined at the Codacy user account level. Each account API token authorizes access to the same organizations, repositories, and operations as the <a href="../../organizations/roles-and-permissions-for-synced-organizations/">roles and permissions of the owner of the account</a>.</p>
-</li>
-<li>
-<p><strong>Project API tokens</strong> are defined on individual repositories. Each project API token only authorizes access to the corresponding repository.</p>
-</li>
-</ul>
-<p>The sections below provide detailed instructions on how to generate and revoke API tokens.</p>
+<p>The sections below provide details about the two types of API tokens and instructions on how to generate and revoke them.</p>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
 <p><strong>Never write API tokens on your configuration files</strong> and keep your API tokens well protected, as they grant owner permissions to your projects on Codacy.</p>
 <p>We recommend that you set API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.</p>
 </div>
 <h2 id="account-api-tokens">Generating and revoking account API tokens<a class="headerlink" href="#account-api-tokens" title="Permanent link">#</a></h2>
+<p>Account API tokens are defined at the <strong>Codacy user account level</strong>. Each account API token authorizes access to the same organizations, repositories, and operations as the <a href="../../organizations/roles-and-permissions-for-synced-organizations/">roles and permissions of the owner of the account</a>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you're using an account API token to upload coverage</strong> be sure to <a href="../../organizations/roles-and-permissions-for-synced-organizations/">check the roles</a> that your Git provider account must have to authorize uploading coverage to Codacy.</p>
+<p>We recommend that you use a dedicated service account for integrating Codacy with your repositories. This will avoid disruption of service if the user who originally created an account API token stops having access to the repositories, such as when the user leaves the team or the organization.</p>
+</div>
 <p>You can create new account API tokens programmatically <a href="../examples/creating-project-api-tokens-programmatically/">using the Codacy API</a> or using the Codacy UI:</p>
 <ol>
 <li>
@@ -3459,11 +3453,8 @@
 </li>
 </ol>
 <p>To revoke an account API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>If you're using an account API token to upload coverage</strong> be sure to check the roles that your Git provider account must have to <a href="../../organizations/roles-and-permissions-for-synced-organizations/">authorize uploading coverage to Codacy</a>.</p>
-</div>
 <h2 id="project-api-tokens">Generating and revoking project API tokens<a class="headerlink" href="#project-api-tokens" title="Permanent link">#</a></h2>
+<p>Project API tokens are defined on <strong>individual repositories</strong>. Each project API token only authorizes access to the corresponding repository.</p>
 <p>You can create new project API tokens programmatically <a href="../examples/creating-project-api-tokens-programmatically/">using the Codacy API</a> or using the Codacy UI:</p>
 <ol>
 <li>
@@ -3645,7 +3636,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 27, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 27, 2022</span>
     
   </small>
 </div>
