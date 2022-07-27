@@ -38,7 +38,7 @@ The button **Ignore File** allows you to ignore the selected file on future Coda
 
 Depending on the available analysis information for the file, Codacy displays one or more of the following tabs:
 
--   **Issues:** Shows all issues in the file.
+-   **Issues:** Shows all issues in the file. The tab displays the number of issues in the file.
 
     Toggle between the list and annotated source code views using the icon on the right-hand side. When using the list view, you can use filters to help you find specific issues in the file. Select an issue to see more information about the issue.
 
@@ -46,13 +46,13 @@ Depending on the available analysis information for the file, Codacy displays on
 
     ![Issues for a file](images/files-issues.png)
 
--   **Duplication:** Shows all duplicated blocks in the file with links to the clones of each block.
+-   **Duplication:** Shows all duplicated blocks in the file with links to the clones of each block. The tab displays the number of duplicated blocks in the file.
 
     Toggle between the list and annotated source code views using the icon on the right-hand side.
 
     ![Duplicated blocks for a file](images/files-duplication.png)
 
--   **Coverage:** Shows which lines of code are covered by tests or not.
+-   **Coverage:** Shows which lines of code are covered by tests or not. The tab displays the percentage of coverable lines that are covered by tests in the file.
 
     ![Coverage information for a file](images/files-coverage.png)
 
