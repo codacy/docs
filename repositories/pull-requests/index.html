@@ -3476,10 +3476,10 @@
 <p>If you don't have any rules enabled for pull requests, the status is always <strong>Up to standards</strong>.</p>
 </li>
 <li>
-<p>The changes to the following <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">code quality metrics</a> introduced by the pull request are displayed either as a <strong>positive or negative variation</strong>, <strong>no variation</strong> (represented by <code>=</code>), or <strong>not applicable</strong> (represented by <code>∅</code>):</p>
+<p>The variation of the following <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">code quality metrics</a> introduced by the pull request is displayed either as a <strong>positive or negative variation</strong>, <strong>no variation</strong> (represented by <code>=</code>), or <strong>not applicable</strong> (represented by <code>∅</code>):</p>
 <ul>
 <li><strong>Issues:</strong> Number of new or fixed issues</li>
-<li><strong>Duplication:</strong> Number of new or fixed duplicated code blocks</li>
+<li><strong>Duplication:</strong> Variation of the number of duplicated code blocks</li>
 <li>
 <p><strong>Complexity:</strong> Variation of complexity</p>
 </li>
@@ -3535,7 +3535,19 @@
 <p>The <strong>New Duplication</strong> and <strong>Fixed Duplication</strong> tabs display the list of duplicated blocks that the pull request created or fixed.</p>
 <p><img alt="New Duplication and Fixed Duplication tabs" src="../images/pull-requests-tab-duplication.png" /></p>
 <h2 id="files-tab">Files tab<a class="headerlink" href="#files-tab" title="Permanent link">#</a></h2>
-<p>The <strong>Files</strong> tab displays an overview of the code quality metrics for each file that either changed or had a variation in the code coverage value in the scope of the pull request. </p>
+<p>The <strong>Files</strong> tab displays an overview of the code quality metrics for each file that the pull request updated or caused the code coverage value to change. </p>
+<p>For each file Codacy displays the variation of the following <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">code quality metrics</a> introduced by the pull request, displayed either as a <strong>positive or negative variation</strong>, or <strong>no variation</strong> (represented by <code>=</code>):</p>
+<ul>
+<li><strong>Issues:</strong> Number of new or fixed issues</li>
+<li><strong>Duplication:</strong> Variation of the number of duplicated code blocks</li>
+<li>
+<p><strong>Complexity:</strong> Variation of complexity</p>
+</li>
+<li>
+<p><strong>Coverage variation:</strong> Variation of code coverage relative to the target branch</p>
+</li>
+</ul>
+<p>Depending on the languages being analyzed or if you haven't <a href="../../coverage-reporter/">set up coverage for your repository</a>, some metrics <strong>may not be calculated</strong> (represented by <code>-</code>).</p>
 <p><img alt="Files tab" src="../images/pull-requests-tab-files.png" /></p>
 <h2 id="diff-tab">Diff tab<a class="headerlink" href="#diff-tab" title="Permanent link">#</a></h2>
 <p>The <strong>Diff</strong> tab displays the line differences in each file that was changed in the pull request.</p>
