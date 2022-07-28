@@ -12,6 +12,8 @@ If your repository has source files with unrecognized extensions, you can config
 
 1.  Add the extensions you want to be recognized for each language.
 
-1.  After clicking **Save**, you will be given the opportunity to retry the most recent commit with the new settings by clicking **reanalyze the latest commit of your branches now.** on the message that appears near the footer of the page.
+1.  Click **Save** to update your file extension settings.
+
+    The updated settings will be used on the next analysis, but you can click **reanalyze the latest commit of your branches now** on the notification that appears at the bottom of the page to trigger an analysis immediately.
 
     ![Analyze now](images/file-extensions-analyze.png)
