@@ -2,31 +2,34 @@ name: Scheduled checks
 
 on:
   schedule:
-   - cron: "0 5 */15 * *"
+   - cron: "15 5 * * 1"
 
 jobs:
   check-broken-links:
     runs-on: ubuntu-latest
-    env:
-      OUTPUT_FILE: ${{ github.workspace }}/broken-link-report.txt
     steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
+          submodules: true
+
       - name: Check for broken links
+        id: lychee
+        uses: lycheeverse/lychee-action@v1.5.0
+        with:
+          args: --verbose ./docs/**/*.md ./submodules/codacy-coverage-reporter/docs/**/*.md ./submodules/chart/docs/**/*.md
+          jobSummary: true
+          fail: true
         env:
-          INPUT_URL: https://docs.codacy.com/
-          EXCLUDE: |
-            gitlab\.com\/profile
-            github\.com\/settings
-            github\.com\/codacy\/docs\/issues
-            en\.gravatar\.com
-        run: |
-          docker run raviqqe/muffet --follow-sitemap-xml --timeout=30 --buffer-size=8192 --rate-limit=1 --skip-tls-verification --exclude=$( echo ${EXCLUDE} | tr ' ' '|' ) ${{ env.INPUT_URL }} > ${{ env.OUTPUT_FILE }}
+          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Create issue
-        uses: peter-evans/create-issue-from-file@v4
         if: ${{ failure() }}
+        uses: peter-evans/create-issue-from-file@v4
         with:
           title: Broken link report
-          content-filepath: ${{ env.OUTPUT_FILE }}
+          content-filepath: ./lychee/out.md
           labels: report, automated issue
 
   check-supported-tools:
