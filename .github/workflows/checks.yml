@@ -20,12 +20,11 @@ jobs:
         with:
           args: --verbose ./docs/**/*.md ./submodules/codacy-coverage-reporter/docs/**/*.md ./submodules/chart/docs/**/*.md
           jobSummary: true
-          fail: true
         env:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Create issue
-        if: ${{ failure() }}
+        if: steps.lychee.outputs.exit_code != 0
         uses: peter-evans/create-issue-from-file@v4
         with:
           title: Broken link report
