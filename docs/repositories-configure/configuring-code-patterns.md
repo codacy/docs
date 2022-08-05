@@ -45,16 +45,11 @@ To make it easier to find relevant code patterns, you can use the sidebar to fil
 
 Issues detected by Codacy belong to one of the following categories:
 
-<!--categories-start-->
--   **Code Style:** Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks
--   **Error Prone:** Code that may hide bugs and language keywords that should be used with caution, such as the operator `==` in JavaScript or `Option.get` in Scala
--   **Code Complexity:** High complexity methods and classes that should be refactored
--   **Performance:** Code that can have performance problems
--   **Compatibility:** Mainly for frontend code, compatibility problems across different browser versions
--   **Unused Code:** Unused variables and methods, code that can't be reached
--   **Security:** All security problems
--   **Documentation:** Methods and classes that don't have the correct comment annotations
-<!--categories-end-->
+{%
+    include-markdown "../faq/code-analysis/which-metrics-does-codacy-calculate.md"
+    start="<!--issue-categories-start-->"
+    end="<!--issue-categories-end-->"
+%}
 
 ## Importing pattern configurations from another repository {: id="import-patterns"}
 

@@ -46,7 +46,20 @@ Codacy displays grades on the following places:
 
 ## Issues
 
-Codacy calculates the number of issues in each static code analysis category. Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the **percentage of issues relative to an expected baseline** of 100 issues with an average cost of 10 per 1000 lines of code, where the cost of each issue depends on its severity: Critical = 10, Medium = 5, Minor = 1.
+Codacy calculates the number of issues in the following static code analysis categories:
+
+<!--issue-categories-start-->
+-   **Code Style:** Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks
+-   **Error Prone:** Code that may hide bugs and language keywords that should be used with caution, such as the operator `==` in JavaScript or `Option.get` in Scala
+-   **Code Complexity:** High complexity methods and classes that should be refactored
+-   **Performance:** Code that can have performance problems
+-   **Compatibility:** Mainly for frontend code, compatibility problems across different browser versions
+-   **Unused Code:** Unused variables and methods, code that can't be reached
+-   **Security:** All security problems
+-   **Documentation:** Methods and classes that don't have the correct comment annotations
+<!--issue-categories-end-->
+
+Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the **percentage of issues relative to an expected baseline** of 100 issues with an average cost of 10 per 1000 lines of code, where the cost of each issue depends on its severity: Critical = 10, Medium = 5, Minor = 1.
 
 Codacy displays issues on the following places:
 
