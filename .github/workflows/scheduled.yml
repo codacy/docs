@@ -1,4 +1,4 @@
-name: Scheduled checks
+name: Scheduled jobs
 
 on:
   schedule:
@@ -98,3 +98,30 @@ jobs:
           title: Missing security tools report
           content-filepath: ${{ env.OUTPUT_FILE }}
           labels: report, automated issue
+
+  compress-images:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+        with:
+          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
+          submodules: true
+
+      - name: Compress images
+        id: calibre
+        uses: calibreapp/image-actions@main
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          compressOnly: true
+
+      - name: Create pull request
+        if: steps.calibre.outputs.markdown != ''
+        uses: peter-evans/create-pull-request@v4
+        with:
+          title: "clean: Compress images"
+          branch-suffix: timestamp
+          commit-message: "clean: Compress images"
+          body: ${{ steps.calibre.outputs.markdown }}
+        env:
+          GITHUB_TOKEN: ${{ secrets.COMPRESS_IMAGES_PERSONAL_ACCESS_TOKEN }}
