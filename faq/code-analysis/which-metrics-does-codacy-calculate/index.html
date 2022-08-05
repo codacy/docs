@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy scans your code for issues and calculates code complexity, duplication, and coverage metrics. Besides this, Codacy also calculates a grade for your repository and files based on all calculated code quality metrics.">
       
       
-        <meta http-equiv="last-modified" content="2022-08-05 16:34:15">  
+        <meta http-equiv="last-modified" content="2022-08-05 16:36:01">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/which-metrics-does-codacy-calculate/">
@@ -3514,7 +3514,18 @@
 </tbody>
 </table>
 <h2 id="issues">Issues<a class="headerlink" href="#issues" title="Permanent link">#</a></h2>
-<p>Codacy calculates the number of issues in each static code analysis category. Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the <strong>percentage of issues relative to an expected baseline</strong> of 100 issues with an average cost of 10 per 1000 lines of code, where the cost of each issue depends on its severity: Critical = 10, Medium = 5, Minor = 1.</p>
+<p>Codacy calculates the number of issues in the following static code analysis categories:</p>
+<ul>
+<li><strong>Code Style:</strong> Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks</li>
+<li><strong>Error Prone:</strong> Code that may hide bugs and language keywords that should be used with caution, such as the operator <code>==</code> in JavaScript or <code>Option.get</code> in Scala</li>
+<li><strong>Code Complexity:</strong> High complexity methods and classes that should be refactored</li>
+<li><strong>Performance:</strong> Code that can have performance problems</li>
+<li><strong>Compatibility:</strong> Mainly for frontend code, compatibility problems across different browser versions</li>
+<li><strong>Unused Code:</strong> Unused variables and methods, code that can't be reached</li>
+<li><strong>Security:</strong> All security problems</li>
+<li><strong>Documentation:</strong> Methods and classes that don't have the correct comment annotations</li>
+</ul>
+<p>Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the <strong>percentage of issues relative to an expected baseline</strong> of 100 issues with an average cost of 10 per 1000 lines of code, where the cost of each issue depends on its severity: Critical = 10, Medium = 5, Minor = 1.</p>
 <p>Codacy displays issues on the following places:</p>
 <table>
 <thead>
