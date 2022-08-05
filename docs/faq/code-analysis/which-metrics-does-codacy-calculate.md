@@ -54,6 +54,7 @@ Codacy displays issues on the following places:
 |-----|------|
 |[Commits page](../../repositories/commits.md)<br/>[Pull requests page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of new and fixed issues introduced by the commit or pull request|
 |[Files page](../../repositories/files.md)|Number of issues in each file|
+|[Issues page](../../repositories/issues.md)|List of all issues detected in each branch|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Issue percentage and how the metric is evolving over time|
 |[Organization Overview](../../organizations/organization-overview.md)|Average issue percentage of the repositories in your organization and issue percentage of each repository|
 |[Repositories list page](../../organizations/managing-repositories.md)|Issue percentage in each repository in your organization|
