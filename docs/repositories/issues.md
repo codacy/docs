@@ -33,9 +33,9 @@ You can define one or more of the following filters:
 -   **Issue category:** One of the following types of issue:
 
     {%
-        include-markdown "../repositories-configure/configuring-code-patterns.md"
-        start="<!--categories-start-->"
-        end="<!--categories-end-->"
+        include-markdown "../faq/code-analysis/which-metrics-does-codacy-calculate.md"
+        start="<!--issue-categories-start-->"
+        end="<!--issue-categories-end-->"
     %}
 
 -   **Severity level:** Potential impact of the issues:
