@@ -46,7 +46,15 @@ Codacy displays grades on the following places:
 
 ## Issues
 
-Codacy calculates the number of issues in each static code analysis category. Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the **percentage of issues relative to an expected baseline** of 100 issues with an average cost of 10 per 1000 lines of code, where the cost of each issue depends on its severity: Critical = 10, Medium = 5, Minor = 1.
+Codacy calculates the number of issues in the following static code analysis categories:
+
+{%
+    include-markdown "../../repositories-configure/configuring-code-patterns.md"
+    start="<!--categories-start-->"
+    end="<!--categories-end-->"
+%}
+
+Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the **percentage of issues relative to an expected baseline** of 100 issues with an average cost of 10 per 1000 lines of code, where the cost of each issue depends on its severity: Critical = 10, Medium = 5, Minor = 1.
 
 Codacy displays issues on the following places:
 
