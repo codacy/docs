@@ -15,7 +15,10 @@ To manage your profile information such as your name and avatar, click on your a
 
 ## Deleting your account
 
-When you delete your account on Codacy, your profile and information about your personal repositories will be completely removed from Codacy.
+When you delete your account on Codacy:
+
+-   Your profile and information about your personal repositories will be completely removed from Codacy
+-   Codacy will [stop analyzing any repositories added to Codacy using your account](../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md)
 
 To delete your account, click the button **Delete account** and confirm that you really want to proceed.
 
