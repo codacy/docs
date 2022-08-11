@@ -50,7 +50,7 @@ Members of an organization on Codacy can remove themselves from the organization
 When a member leaves an organization:
 
 -   Codacy stops analyzing commits to private repositories in the organization from contributors who are no longer members of the organization on Codacy
--   Codacy stops analyzing repositories that were added by the member
+-   **On GitLab and Bitbucket organizations** Codacy stops analyzing repositories that were added by the member
 -   Organizations must have at least one owner, so when the last organization owner leaves the organization they must either add someone else as owner or [delete the organization](../organizations/what-are-synced-organizations.md#deleting-an-organization)
 
 To remove members from your organization open your organization **Settings**, page **People**, and click the icon next to the members you wish to remove:
