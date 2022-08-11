@@ -1,4 +1,9 @@
+# Ignore internal links
 ^[^h].*$
-https:\/\/github\.com\/codacy\/codacy-tools\/.*
-https:\/\/github\.com\/codacy\/codacy-analysis-cli\/releases\/tag\/self-hosted-
-https:\/\/github\.com\/codacy\/codacy-coverage-reporter\/releases\/tag\/self-hosted-
+
+# Ignore links to internal repositories (found in comments)
+https:\\/\\/github\.com\\/codacy\\/codacy-tools\\/.*
+
+# Ignore dynamic links
+https:\\/\\/github\.com\\/codacy\\/codacy-analysis-cli\\/releases\\/tag\\/self-hosted-
+https:\\/\\/github\.com\\/codacy\\/codacy-coverage-reporter\\/releases\\/tag\\/self-hosted-
