@@ -45,7 +45,7 @@ To delete an organization, open the **Profile** page and click the button **Dele
 ![Deleting an organization](images/organization-delete.png)
 
 !!! note
-    **If you're using Codacy Cloud** we will ask for your feedback on why you're deleting your organization.
+    **If you're using Codacy Cloud** we'll ask for your feedback on why you're deleting your organization.
 
 ## See also
 
