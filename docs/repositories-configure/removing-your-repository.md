@@ -1,6 +1,6 @@
 # Removing your repository
 
-To stop Codacy from analyzing your repository, you must remove the repository from Codacy. 
+To stop Codacy from analyzing your repository, you must remove the repository from Codacy.
 
 Removing a repository from Codacy completely removes the configurations and all data related to your repository from Codacy. This operation doesn't make any changes on your Git provider.
 
