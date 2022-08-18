@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="There are alternative ways of running or installing Codacy Coverage Reporter, such as running a Docker image, downloading a binary for your operating system, or building the binary from source.">
+        <meta name="description" content="There are alternative ways of running or installing Codacy Coverage Reporter, such as running a Docker image, using a GitHub Action or CircleCI orb, downloading a binary for your operating system, or building the binary from source.">
       
       
-        <meta http-equiv="last-modified" content="2022-06-14 10:09:43">  
+        <meta http-equiv="last-modified" content="2022-08-03 17:00:02">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/">
@@ -614,6 +614,13 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item md-nav__item--toc">
+  <a href="#bash-script" class="md-nav__link">
+    Bash script (recommended)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item md-nav__item--toc">
   <a href="#docker" class="md-nav__link">
     Docker
   </a>
@@ -659,6 +666,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../uploading-coverage-in-advanced-scenarios/" title="Uploading coverage in advanced scenarios" class="md-nav__link">
+      Uploading coverage in advanced scenarios
+    </a>
   </li>
 
         
@@ -3454,7 +3473,9 @@
                 
                 
                 <h1 id="alternative-ways-of-running-coverage-reporter">Alternative ways of running Coverage Reporter<a class="headerlink" href="#alternative-ways-of-running-coverage-reporter" title="Permanent link">#</a></h1>
-<p>The recommended way to run Codacy Coverage Reporter is using a self-contained script that automatically downloads and runs the most recent version of Codacy Coverage Reporter:</p>
+<p>The following sections list the alternative ways of running or installing Codacy Coverage Reporter.</p>
+<h2 id="bash-script">Bash script (recommended)<a class="headerlink" href="#bash-script" title="Permanent link">#</a></h2>
+<p>The recommended way to run the Codacy Coverage Reporter is by using the <a href="https://github.com/codacy/codacy-coverage-reporter/blob/master/get.sh">self-contained bash script <code>get.sh</code></a> that automatically downloads and runs the most recent version of the Codacy Coverage Reporter:</p>
 <ul>
 <li>
 <p>On Ubuntu, run:</p>
@@ -3467,6 +3488,12 @@
 </code></pre></div>
 </li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Starting on version <code>13.0.0</code> the script automatically validates the checksum of the downloaded binary. To skip the checksum validation, define the following environment variable:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_REPORTER_SKIP_CHECKSUM</span><span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
+</div>
 <p>The self-contained script can cache the binary. To avoid downloading the binary every time that the script runs, add one of the following directories to your CI cached folders:</p>
 <ul>
 <li><code>$HOME/.cache/codacy</code> on Linux</li>
@@ -3475,13 +3502,6 @@
 <p>To use a specific version of the Codacy Coverage Reporter, set the following environment variable to one of the <a href="https://github.com/codacy/codacy-coverage-reporter/releases">released versions</a>:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_REPORTER_VERSION</span><span class="o">=</span>&lt;version&gt;
 </code></pre></div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Starting on version <code>13.0.0</code> the script automatically validates the checksum of the downloaded binary. To skip the checksum validation, define the following environment variable:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_REPORTER_SKIP_CHECKSUM</span><span class="o">=</span><span class="nb">true</span>
-</code></pre></div>
-</div>
-<p>The sections below provide details on alternative ways to run or install Codacy Coverage Reporter.</p>
 <h2 id="docker">Docker<a class="headerlink" href="#docker" title="Permanent link">#</a></h2>
 <p>You can use Docker to run Codacy Coverage Reporter.</p>
 <p>Use the following command where <code>&lt;version&gt;</code> is either one of the <a href="https://github.com/codacy/codacy-coverage-reporter/releases">released versions</a>, or <code>latest</code> to use the most recent version:</p>
@@ -3732,7 +3752,7 @@ sbt assembly
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 14, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 3, 2022</span>
     
   </small>
 </div>
