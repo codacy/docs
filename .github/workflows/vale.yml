@@ -1,10 +1,7 @@
 name: Vale
 
 on:
-  push:
-    branches-ignore:
-      - "master"
-      - "release/v*"
+  pull_request
 
 jobs:
   vale:
@@ -19,7 +16,7 @@ jobs:
       - name: Vale
         uses: errata-ai/vale-action@v2.0.1
         with:
-          onlyAnnotateModifiedLines: true
+          filter_mode: added
           debug: true
         env:
           # Required

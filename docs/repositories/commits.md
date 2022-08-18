@@ -36,10 +36,10 @@ This area displays the quality gate status and an overview of the code quality m
 
     If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to standards**.
 
--   The changes to the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) introduced by the {{ page.meta.page_name }} are displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %}:
+-   The variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %}:
 
     -   **Issues:** Number of new or fixed issues
-    -   **Duplication:** Number of new or fixed duplicated code blocks
+    -   **Duplication:** Variation of the number of duplicated code blocks
     -   **Complexity:** Variation of complexity
 {% if page.meta.page_name == "commit" %}
     -   **Coverage:** Variation of code coverage percentage relative to the parent commit
@@ -101,7 +101,21 @@ The **New Duplication** and **Fixed Duplication** tabs display the list of dupli
 
 ## Files tab
 
-The **Files** tab displays an overview of the code quality metrics for each file that either changed or had a variation in the code coverage value in the scope of the {{ page.meta.page_name }}. <!--NOTE See https://codacy.atlassian.net/browse/CY-5946 for a discussion around changing this behavior in the future-->
+The **Files** tab displays an overview of the code quality metrics for each file that the {{ page.meta.page_name }} updated or caused the code coverage value to change. <!--NOTE See https://codacy.atlassian.net/browse/CY-5946 for a discussion around changing this behavior in the future-->
+
+For each file Codacy displays the variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) introduced by the {{ page.meta.page_name }}, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
+
+-   **Issues:** Number of new or fixed issues
+-   **Duplication:** Variation of the number of duplicated code blocks
+-   **Complexity:** Variation of complexity
+{% if page.meta.page_name == "commit" %}
+-   **Coverage:** Variation of code coverage percentage relative to the parent commit
+{% endif %}
+{% if page.meta.page_name == "pull request" %}
+-   **Coverage variation:** Variation of code coverage relative to the target branch
+{% endif %}
+
+Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
 
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
 
