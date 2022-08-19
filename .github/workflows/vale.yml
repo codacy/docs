@@ -1,10 +1,11 @@
-name: Vale
+name: reviewdog
 
 on:
   pull_request
 
 jobs:
   vale:
+    name: runner / vale
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
@@ -13,8 +14,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: false
 
-      - name: Vale linting
-        uses: errata-ai/vale-action@v2.0.1
+      - uses: errata-ai/vale-action@v2.0.1
         with:
           filter_mode: added
           debug: true
