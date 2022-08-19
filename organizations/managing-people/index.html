@@ -11,7 +11,7 @@
         <meta name="description" content="Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, Codacy only analyzes commits to private repositories from contributors who are members of the corresponding organization on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2022-05-26 16:15:21">  
+        <meta http-equiv="last-modified" content="2022-08-19 15:28:33">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-people/">
@@ -3491,8 +3491,8 @@
 <p>Members of an organization on Codacy can remove themselves from the organization, and organization owners can also remove other members.</p>
 <p>When a member leaves an organization:</p>
 <ul>
-<li>Codacy stops analyzing commits to private repositories in the organization from contributors who are no longer members of the organization on Codacy</li>
-<li>Codacy stops analyzing repositories that were added by the member</li>
+<li>Codacy stops analyzing commits from that member to private repositories in the organization</li>
+<li><strong>On GitLab and Bitbucket organizations</strong> Codacy stops analyzing repositories that were added by the member</li>
 <li>Organizations must have at least one owner, so when the last organization owner leaves the organization they must either add someone else as owner or <a href="../what-are-synced-organizations/#deleting-an-organization">delete the organization</a></li>
 </ul>
 <p>To remove members from your organization open your organization <strong>Settings</strong>, page <strong>People</strong>, and click the icon next to the members you wish to remove:</p>
@@ -3658,7 +3658,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 26, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 19, 2022</span>
     
   </small>
 </div>
