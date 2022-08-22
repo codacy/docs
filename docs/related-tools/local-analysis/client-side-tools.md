@@ -1,6 +1,6 @@
 # Client-side tools
 
-Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools alongside all other code quality information on the Codacy dashboards.
+Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools together with all other code quality information on the Codacy dashboards.
 
 Codacy supports client-side tools in two ways:
 
@@ -15,7 +15,7 @@ Codacy supports client-side tools in two ways:
 ## Running the client-side tools
 
 !!! tip
-    **If you're using GitHub** we recommend that you use the [Codacy Analysis CLI GitHub Action](https://github.com/codacy/codacy-analysis-cli-action#integration-with-codacy-for-client-side-tools) to run the client-side tools and upload the results to Codacy.
+    **If you're using GitHub** <span class="skip-vale">we</span> recommend that you use the [Codacy Analysis CLI GitHub Action](https://github.com/codacy/codacy-analysis-cli-action#integration-with-codacy-for-client-side-tools) to run the **containerized** client-side tools and upload the results to Codacy.
 
 Follow the instructions on how to run the supported client-side tools:
 
@@ -79,4 +79,4 @@ Follow the instructions on how to run the supported client-side tools:
 
 ## See also
 
-See the full list of [supported languages and tools](../../getting-started/supported-languages-and-tools.md) to check the programming languages that each client-side tool can analyze.
+-   [Supported languages and tools](../../getting-started/supported-languages-and-tools.md)
