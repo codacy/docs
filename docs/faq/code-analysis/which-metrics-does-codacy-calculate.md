@@ -46,7 +46,20 @@ Codacy displays grades on the following places:
 
 ## Issues
 
-Codacy calculates the number of issues in each static code analysis category. Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the **percentage of issues relative to an expected baseline** of 100 issues with an average cost of 10 per 1000 lines of code, where the cost of each issue depends on its severity: Critical = 10, Medium = 5, Minor = 1.
+Codacy calculates the number of issues in the following static code analysis categories:
+
+<!--issue-categories-start-->
+-   **Code Style:** Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks
+-   **Error Prone:** Code that may hide bugs and language keywords that should be used with caution, such as the operator `==` in JavaScript or `Option.get` in Scala
+-   **Code Complexity:** High complexity methods and classes that should be refactored
+-   **Performance:** Code that can have performance problems
+-   **Compatibility:** Mainly for frontend code, compatibility problems across different browser versions
+-   **Unused Code:** Unused variables and methods, code that can't be reached
+-   **Security:** All security problems
+-   **Documentation:** Methods and classes that don't have the correct comment annotations
+<!--issue-categories-end-->
+
+Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the **percentage of issues relative to an expected baseline** of 100 issues with an average cost of 10 per 1000 lines of code, where the cost of each issue depends on its severity: Critical = 10, Medium = 5, Minor = 1.
 
 Codacy displays issues on the following places:
 
@@ -54,6 +67,7 @@ Codacy displays issues on the following places:
 |-----|------|
 |[Commits page](../../repositories/commits.md)<br/>[Pull requests page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of new and fixed issues introduced by the commit or pull request|
 |[Files page](../../repositories/files.md)|Number of issues in each file|
+|[Issues page](../../repositories/issues.md)|List of all issues detected in each branch|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Issue percentage and how the metric is evolving over time|
 |[Organization Overview](../../organizations/organization-overview.md)|Average issue percentage of the repositories in your organization and issue percentage of each repository|
 |[Repositories list page](../../organizations/managing-repositories.md)|Issue percentage in each repository in your organization|
@@ -111,8 +125,8 @@ Codacy calculates code coverage as follows:
 
 -   The coverage value for each file is the percentage of coverable lines that are covered by tests in the file.
 -   A repository is considered to have acceptable coverage if the average coverage value for the files in the repository is higher than the threshold [**Coverage is under**](../../repositories-configure/adjusting-quality-settings.md#goals).
--   The coverage variation value of a commit or pull request is the number of percentage points that the coverage value for the file increased or dropped in the commit or pull request.
--   The diff coverage of a pull request is the percentage of coverable lines added or modified in the pull request that are covered by tests.
+-   The **coverage variation** value of a commit or pull request is the number of percentage points that the coverage value for the file increased or dropped in the commit or pull request.
+-   The **diff coverage** of a pull request is the percentage of coverable lines added or modified in the pull request that are covered by tests.
 
     If a pull request doesn't add or modify any coverable lines, the diff coverage is `∅` (not applicable).
 

@@ -1,0 +1,9 @@
+# Ignore internal links
+^[^h].*$
+
+# Ignore links to internal repositories (found in comments)
+https:[\\/][\\/]github\.com[\\/]codacy[\\/]codacy-tools[\\/].*
+
+# Ignore dynamic links
+https:[\\/][\\/]github\.com[\\/]codacy[\\/]codacy-analysis-cli[\\/]releases[\\/]tag[\\/]self-hosted-
+https:[\\/][\\/]github\.com[\\/]codacy[\\/]codacy-coverage-reporter[\\/]releases[\\/]tag[\\/]self-hosted-

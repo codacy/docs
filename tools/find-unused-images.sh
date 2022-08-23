@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DOCUMENTATION_PATH="../docs"
+DOCUMENTATION_PATH="../site"
 
 find "$DOCUMENTATION_PATH" -name "*.png" > /tmp/patterns
 find "$DOCUMENTATION_PATH" -name "*.gif" >> /tmp/patterns
