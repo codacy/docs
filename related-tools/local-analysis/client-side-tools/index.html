@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools alongside all other code quality information on the Codacy dashboards.">
+        <meta name="description" content="Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools together with all other code quality information on the Codacy dashboards.">
       
       
-        <meta http-equiv="last-modified" content="2022-04-27 10:05:46">  
+        <meta http-equiv="last-modified" content="2022-08-23 10:27:22">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/related-tools/local-analysis/client-side-tools/">
@@ -3438,7 +3438,7 @@
                 
                 
                 <h1 id="client-side-tools">Client-side tools<a class="headerlink" href="#client-side-tools" title="Permanent link">#</a></h1>
-<p>Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools alongside all other code quality information on the Codacy dashboards.</p>
+<p>Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools together with all other code quality information on the Codacy dashboards.</p>
 <p>Codacy supports client-side tools in two ways:</p>
 <ul>
 <li>
@@ -3453,20 +3453,60 @@
 <h2 id="running-the-client-side-tools">Running the client-side tools<a class="headerlink" href="#running-the-client-side-tools" title="Permanent link">#</a></h2>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p><strong>If you're using GitHub</strong> we recommend that you use the <a href="https://github.com/codacy/codacy-analysis-cli-action#integration-with-codacy-for-client-side-tools">Codacy Analysis CLI GitHub Action</a> to run the client-side tools and upload the results to Codacy.</p>
+<p><strong>If you're using GitHub</strong> <span class="skip-vale">we</span> recommend that you use the <a href="https://github.com/codacy/codacy-analysis-cli-action#integration-with-codacy-for-client-side-tools">Codacy Analysis CLI GitHub Action</a> to run the <strong>containerized</strong> client-side tools and upload the results to Codacy.</p>
 </div>
 <p>Follow the instructions on how to run the supported client-side tools:</p>
-<ul>
-<li><a href="../running-aligncheck/">aligncheck</a> (containerized)</li>
-<li><a href="https://github.com/codacy/codacy-clang-tidy#usage">Clang-Tidy</a> (standalone)</li>
-<li><a href="../running-deadcode/">deadcode</a> (containerized)</li>
-<li><a href="https://github.com/codacy/codacy-faux-pas#usage">Faux Pas</a> (standalone)</li>
-<li><a href="https://github.com/codacy/codacy-gosec#usage">Gosec</a> (standalone)</li>
-<li><a href="../running-spotbugs/">SpotBugs</a> (containerized)</li>
-<li><a href="https://github.com/codacy/codacy-staticcheck#usage">Staticcheck</a> (standalone)</li>
-</ul>
+<table>
+<thead>
+    <tr>
+        <th>Language</th>
+        <th>Client-side tools</th>
+        <th>Usage instructions</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>C, C++</td>
+        <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
+        <td><a href="https://github.com/codacy/codacy-clang-tidy#usage">Running Clang-Tidy</a> (standalone)</td>
+    </tr>
+    <tr>
+        <td rowspan="4">Go</td>
+        <td><a href="https://gitlab.com/opennota/check">aligncheck</a></td>
+        <td><a href="../running-aligncheck/">Running aligncheck</a> (containerized)</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/tsenart/deadcode">deadcode</a></td>
+        <td><a href="../running-deadcode/">Running deadcode</a> (containerized)</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/securego/gosec">Gosec</a></td>
+        <td><a href="https://github.com/codacy/codacy-gosec#usage">Running Gosec</a> (standalone)</td>
+    </tr>
+    <tr>
+        <td><a href="https://staticcheck.io/">Staticcheck</a></td>
+        <td><a href="https://github.com/codacy/codacy-staticcheck#usage">Running Staticcheck</a> (standalone)</td>
+    </tr>
+    <tr>
+        <td>Java, Scala</td>
+        <td><a href="https://spotbugs.github.io/">SpotBugs</a></td>
+        <td><a href="../running-spotbugs/">Running SpotBugs</a> (containerized)</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Objective-C</td>
+        <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
+        <td><a href="https://github.com/codacy/codacy-clang-tidy#usage">Running Clang-Tidy</a> (standalone)</td>
+    </tr>
+    <tr>
+        <td><a href="http://fauxpasapp.com/">Faux Pas</a></td>
+        <td><a href="https://github.com/codacy/codacy-faux-pas#usage">Running Faux Pas</a> (standalone)</td>
+    </tr>
+</table>
+
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
-<p>See the full list of <a href="../../../getting-started/supported-languages-and-tools/">supported languages and tools</a> to check the programming languages that each client-side tool can analyze.</p>
+<ul>
+<li><a href="../../../getting-started/supported-languages-and-tools/">Supported languages and tools</a></li>
+</ul>
               
               
                 
@@ -3623,7 +3663,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 27, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 23, 2022</span>
     
   </small>
 </div>
