@@ -13,7 +13,7 @@ Alternatively, [delete your organization](../../organizations/what-are-synced-or
 {%
     include-markdown "../../organizations/changing-your-plan-and-billing.md"
     start="<!--start-github-marketplace-->"
-    end="<!--end-github-marketplaces-->"
+    end="<!--end-github-marketplace-->"
 %}
 
 ## If you're using Codacy Self-hosted
