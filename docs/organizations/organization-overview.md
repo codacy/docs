@@ -21,6 +21,13 @@ To access your Organization Overview, select an organization from the top naviga
 
 ![Organization Overview](images/organization-overview.png)
 
+Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained.
+
+!!! tip
+    Use the language filter to help you narrow down the list of repositories in the drop-down list:
+
+    ![Using the language filter to narrow down the list of repositories](images/organization-overview-filter-language.png)
+
 On the Organization Overview you have the following areas to help you monitor your repositories:
 
 -   [Overall quality chart](#overall-quality-chart)
@@ -66,7 +73,7 @@ Click a pull request to see the [details of that pull request](../repositories/p
 
 ## Last updated repositories
 
-The **Last updated repositories** list displays the last updated repositories, sorted by reverse date of the last update. Each card displays the date of the last update and the current grade of the repository.
+The **Last updated repositories** list displays the last updated repositories, sorted by reverse date of the last update. Each item displays the date of the last update and the current grade of the repository.
 
 Click **See all** to see all repositories in your organization.
 
