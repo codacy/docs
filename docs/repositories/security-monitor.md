@@ -180,7 +180,7 @@ The Security Monitor supports checking the languages and frameworks below for an
 
 <sup><span id="client-side">1</span></sup>: Supported as a [client-side tool](../related-tools/local-analysis/client-side-tools.md).  
 <sup><span id="spotbugs-plugin">2</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/).  
-<sup><span id="eslint-plugin">3</sup>: Includes the shareable config [nodesecurity](https://www.npmjs.com/package/eslint-config-nodesecurity) and the plugins [angularjs-security-rules](https://www.npmjs.com/package/eslint-plugin-angularjs-security-rules), [no-unsafe-innerhtml](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml), [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [scanjs-rules](https://www.npmjs.com/package/eslint-plugin-scanjs-rules), [security](https://www.npmjs.com/package/eslint-plugin-security), and [security-node](https://www.npmjs.com/package/eslint-plugin-security-node).  
+<sup><span id="eslint-plugin">3</sup>: Includes the shareable config [<span class="skip-vale">nodesecurity</span>](https://www.npmjs.com/package/eslint-config-nodesecurity) and the plugins [angularjs-security-rules](https://www.npmjs.com/package/eslint-plugin-angularjs-security-rules), [no-unsafe-innerhtml](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml), [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [scanjs-rules](https://www.npmjs.com/package/eslint-plugin-scanjs-rules), [security](https://www.npmjs.com/package/eslint-plugin-security), and [security-node](https://www.npmjs.com/package/eslint-plugin-security-node).  
 <sup><span id="ruby-31">4</span></sup>: Currently, Codacy doesn't support any static code analysis tool for [Ruby 3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/).  
 
 ## Supported security categories
@@ -200,21 +200,21 @@ Each issue reported on the Security Monitor belongs to one of the following secu
 |**Authentication**|Broken authentication and authorization attacks consist in gaining access to accounts that allow disclosing sensitive information or performing operations that could compromise the system.|
 |**Command Injection**|Command injection attacks aim to execute arbitrary commands on the host operating system.|
 |**Cookies**|Security issues related to insecure cookies.|
-|**Cryptography**|Cryptography attacks exploit failures related to cryptography (or lack thereof), potentially leading to exposure of sensitive data.|
+|**Cryptography**|Cryptography attacks exploit failures related to cryptography (or lack thereof), <span class="skip-vale">potentially</span> leading to exposure of sensitive data.|
 |**CSRF**|Cross-Site Request Forgery (CSRF) attacks force an end user to execute unwanted actions on a web application in which they're currently authenticated.|
 |**Denial of Service**|Denial of Service (DoS) attacks make a resource (site, application, server) unavailable for legitimate users, typically by flooding the resource with requests or exploiting a vulnerability to trigger a crash.|
 |**File Access**|File access security issues may allow an attacker to access arbitrary files and directories stored on the file system such as application source code, configuration, and critical system files.|
 |**HTTP Headers**|Insecure HTTP headers are a common attack vector for malicious users.|
 |**Input Validation**|Client input should always be validated to prevent malformed or malicious data from entering the workflow of an information system.|
-|**Insecure Modules and Libraries**|Security issues related to modules or libraries that can potentially include vulnerabilities.|
+|**Insecure Modules and Libraries**|Security issues related to modules or libraries that can <span class="skip-vale">potentially</span> include vulnerabilities.|
 |**Insecure Storage**|Security issues related to insecure storage of sensitive data.|
-|**Malicious Code**|Security issues related to code patterns that are potentially unsafe.|
+|**Malicious Code**|Security issues related to code patterns that are <span class="skip-vale">potentially</span> unsafe.|
 |**Mass Assignment**|Unprotected mass assignments are a Rails feature that could allow an attacker to update sensitive model attributes.|
 |**Regex**|Regular expressions can be used in Denial of Service attacks, exploiting the fact that in most regular expression implementations the computational load grows exponentially with input size.|
 |**Routes**|Badly configured routes can give unintended access to an attacker.|
 |**SQL Injection**|SQL injection attacks insert or \"inject\" malicious SQL queries into the application via the client input data.|
 |**SSL**|Security issues related with old SSL versions or configurations that have known cryptographic weaknesses and should no longer be used.|
-|**Unexpected Behaviour**|Security issues related to potentially insecure system API calls.|
+|**Unexpected Behaviour**|Security issues related to <span class="skip-vale">potentially</span> insecure system API calls.|
 |**Visibility**|Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.|
 |**XSS**|Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into trusted websites that are visited by the end users.|
 |**Other**|Other language-specific security issues.|

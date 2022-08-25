@@ -60,7 +60,7 @@ This area displays the quality gate status and an overview of the code quality m
     !!! notes
         If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.
 
-![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)
+<div class="skip-vale">![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)</div>
 <!--quality-overview-end-->
 
 <!--tabs-start-->
@@ -117,13 +117,13 @@ For each file Codacy displays the variation of the following [code quality metri
 
 Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
 
-![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
+<div class="skip-vale">![Files tab](images/{{ page.meta.file_name }}-tab-files.png)</div>
 
 ## Diff tab
 
 The **Diff** tab displays the line differences in each file that was changed in the {{ page.meta.page_name }}.
 
-![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)
+<div class="skip-vale">![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)</div>
 <!--tabs-end-->
 
 ## See also

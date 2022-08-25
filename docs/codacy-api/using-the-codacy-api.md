@@ -15,12 +15,12 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
   <tbody>
     <tr>
       <th>Endpoint documentation</th>
-      <td><a href="https://api.codacy.com/api/api-docs">https://api.codacy.com/api/api-docs</a></td>
-      <td><a href="https://api.codacy.com/api-docs">https://api.codacy.com/api-docs</a></td>
+      <td><a href="https://api.codacy.com/api/api-docs" class="skip-vale">https://api.codacy.com/api/api-docs</a></td>
+      <td><a href="https://api.codacy.com/api-docs" class="skip-vale">https://api.codacy.com/api-docs</a></td>
     </tr>
     <tr>
       <th>OpenAPI 2.0 definition</th>
-      <td><a href="https://api.codacy.com/api/api-docs/swagger.yaml">https://api.codacy.com/api/api-docs/swagger.yaml</a></td>
+      <td><a href="https://api.codacy.com/api/api-docs/swagger.yaml" class="skip-vale">https://api.codacy.com/api/api-docs/swagger.yaml</a></td>
       <td>-
           <!--NOTE
               See https://github.com/codacy/docs/pull/1058#discussion_r810889139 for why we decided to postpone publishing the definition file URL for the API v2.

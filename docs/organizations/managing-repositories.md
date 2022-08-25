@@ -14,7 +14,7 @@ This page lists the repositories that already belong to your organization on Cod
 
 The list also displays error and warning messages for repositories that have issues, such as when there are no committers added to the organization or when Codacy stopped having access to the repository. Hover the mouse cursor over the warning icons or open the repository to see more details.
 
-If you have many repositories, you can use the search field above the list to quickly find a specific repository.
+If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
 ## Adding a repository
 
@@ -31,7 +31,7 @@ To add a new repository to Codacy, click the button **Add repository** at the to
 !!! important
     To see your repositories in this list, make sure that you have admin permissions over the repositories on the Git provider and that [Codacy has permissions to access the repositories](../faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md).
 
-Add one or multiple repositories to your organization by clicking **Add** next to the repositories. If you have many repositories, you can use the search field above the list to quickly find a specific repository.
+Add one or multiple repositories to your organization by clicking **Add** next to the repositories. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
 After adding repositories, close the window to return to the list of repositories in your organization. Although Codacy will immediately start analyzing the new repositories, they will display empty metrics until the first analysis returns results.
 
