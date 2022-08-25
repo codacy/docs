@@ -11,7 +11,7 @@
         <meta name="description" content="Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the Git provider integration no longer has permissions on the repository or that the SSH key is no longer valid.">
       
       
-        <meta http-equiv="last-modified" content="2022-07-13 18:22:28">  
+        <meta http-equiv="last-modified" content="2022-08-25 16:46:18">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/">
@@ -3438,7 +3438,11 @@
 <p>Create a service account on your Git provider exclusively dedicated to integrating Codacy with your repositories.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>The service account must have <strong>administrator permissions</strong> on the repositories to integrate with Codacy and <strong>must not be shared by other systems</strong> to ensure that Codacy doesn't hit the API rate limits of the Git provider when using this account.</p>
+<p>The service account must:</p>
+<ul>
+<li><a href="../../../organizations/roles-and-permissions-for-synced-organizations/">Have administrator permissions</a> on the repositories to integrate with Codacy</li>
+<li>Not be shared by other systems to ensure that Codacy doesn't hit the API rate limits of the Git provider when using this account</li>
+</ul>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -3631,7 +3635,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 13, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 25, 2022</span>
     
   </small>
 </div>
