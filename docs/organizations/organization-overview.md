@@ -21,9 +21,9 @@ To access your Organization Overview, select an organization from the top naviga
 
 ![Organization Overview](images/organization-overview.png)
 
-Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained.
+Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained. The selected repositories are stored in your browser so that the same filter is applied between your visits to the Organization Overview page.
 
-You can use the language filter to help you narrow down the list of repositories in the drop-down list, and the selected repositories are stored in your browser so that the same filter is applied between your visits to the Organization Overview page.
+You can use the language filter to help you narrow down the list of repositories in the drop-down list:
 
 ![Using the language filter to narrow down the list of repositories](images/organization-overview-filter-language.png)
 
