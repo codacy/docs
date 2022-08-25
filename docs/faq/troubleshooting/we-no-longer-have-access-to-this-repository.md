@@ -20,7 +20,9 @@ If you renamed the repository or moved it to a different account on the Git prov
 
 ## The user that configured the repository no longer has access
 
-If the user that initially configured the repository on Codacy was using a user account SSH key but no longer has access to the repository on the Git provider:
+!!! info "This section applies only to GitLab and Bitbucket"
+
+If the user that initially configured the repository on Codacy was using a user account SSH key but no longer has access to the repository on GitLab or Bitbucket:
 
 1.  On Codacy, open your **Repository Settings**, tab **General**.
 1.  Click the button **Generate New Repository Key** (recommended) or **Generate New User Key**:
