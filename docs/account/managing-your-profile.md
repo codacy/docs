@@ -15,9 +15,14 @@ To manage your profile information such as your name and avatar, click on your a
 
 ## Deleting your account
 
-Deleting your account on Codacy completely removes your profile information and all data related to your personal repositories from Codacy. This operation doesn't make any changes on your Git provider.
+When you delete your account on Codacy:
 
-To delete your account, click the button **Delete account** and confirm that you really want to proceed.
+-   Your profile information and all data related to your personal repositories are completely removed from Codacy
+-   Codacy will [stop analyzing any repositories added to Codacy using your account](../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md)<!--NOTE See https://github.com/codacy/docs/pull/1354#discussion_r950190842 for more context -->
+
+This operation doesn't make any changes on your Git provider.
+
+To delete your account, click the button **Delete account** and confirm that you <span class="skip-vale">really</span> want to proceed.
 
 !!! note
     If you're the last organization owner of any of your organizations, you must either add someone else as an owner or [delete those organizations](../organizations/what-are-synced-organizations.md#deleting-an-organization) before you can delete your account.

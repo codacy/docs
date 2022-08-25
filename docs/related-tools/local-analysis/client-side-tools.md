@@ -1,6 +1,6 @@
 # Client-side tools
 
-Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools alongside all other code quality information on the Codacy dashboards.
+Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools together with all other code quality information on the Codacy dashboards.
 
 Codacy supports client-side tools in two ways:
 
@@ -15,7 +15,7 @@ Codacy supports client-side tools in two ways:
 ## Running the client-side tools
 
 !!! tip
-    **If you're using GitHub** we recommend that you use the [Codacy Analysis CLI GitHub Action](https://github.com/codacy/codacy-analysis-cli-action#integration-with-codacy-for-client-side-tools) to run the client-side tools and upload the results to Codacy.
+    **If you're using GitHub** <span class="skip-vale">we</span> recommend that you use the [Codacy Analysis CLI GitHub Action](https://github.com/codacy/codacy-analysis-cli-action#integration-with-codacy-for-client-side-tools) to run the **containerized** client-side tools and upload the results to Codacy.
 
 Follow the instructions on how to run the supported client-side tools:
 
@@ -30,14 +30,53 @@ Follow the instructions on how to run the supported client-side tools:
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
--   [aligncheck](running-aligncheck.md) (containerized)
--   [Clang-Tidy](https://github.com/codacy/codacy-clang-tidy#usage) (standalone)
--   [deadcode](running-deadcode.md) (containerized)
--   [Faux Pas](https://github.com/codacy/codacy-faux-pas#usage) (standalone)
--   [Gosec](https://github.com/codacy/codacy-gosec#usage) (standalone)
--   [SpotBugs](running-spotbugs.md) (containerized)
--   [Staticcheck](https://github.com/codacy/codacy-staticcheck#usage) (standalone)
+<table>
+<thead>
+    <tr>
+        <th>Language</th>
+        <th>Client-side tools</th>
+        <th>Usage instructions</th>
+    </tr>
+</thead>
+<tbody>
+    <tr>
+        <td>C, C++</td>
+        <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
+        <td><a href="https://github.com/codacy/codacy-clang-tidy#usage">Running Clang-Tidy</a> (standalone)</td>
+    </tr>
+    <tr>
+        <td rowspan="4">Go</td>
+        <td><a href="https://gitlab.com/opennota/check">aligncheck</a></td>
+        <td><a href="../running-aligncheck/">Running aligncheck</a> (containerized)</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/tsenart/deadcode">deadcode</a></td>
+        <td><a href="../running-deadcode/">Running deadcode</a> (containerized)</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/securego/gosec">Gosec</a></td>
+        <td><a href="https://github.com/codacy/codacy-gosec#usage">Running Gosec</a> (standalone)</td>
+    </tr>
+    <tr>
+        <td><a href="https://staticcheck.io/">Staticcheck</a></td>
+        <td><a href="https://github.com/codacy/codacy-staticcheck#usage">Running Staticcheck</a> (standalone)</td>
+    </tr>
+    <tr>
+        <td>Java, Scala</td>
+        <td><a href="https://spotbugs.github.io/">SpotBugs</a></td>
+        <td><a href="../running-spotbugs/">Running SpotBugs</a> (containerized)</td>
+    </tr>
+    <tr>
+        <td rowspan="2">Objective-C</td>
+        <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
+        <td><a href="https://github.com/codacy/codacy-clang-tidy#usage">Running Clang-Tidy</a> (standalone)</td>
+    </tr>
+    <tr>
+        <td><a href="http://fauxpasapp.com/">Faux Pas</a></td>
+        <td><a href="https://github.com/codacy/codacy-faux-pas#usage">Running Faux Pas</a> (standalone)</td>
+    </tr>
+</table>
 
 ## See also
 
-See the full list of [supported languages and tools](../../getting-started/supported-languages-and-tools.md) to check the programming languages that each client-side tool can analyze.
+-   [Supported languages and tools](../../getting-started/supported-languages-and-tools.md)
