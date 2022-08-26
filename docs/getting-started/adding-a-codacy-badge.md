@@ -2,7 +2,9 @@
 
 Add a Codacy badge to the README of your repository to display the current [code quality grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade) or [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage) of your repository.
 
+<!-- vale off -->
 ![Codacy badge on the codacy/docs README](images/codacy-badge-example.png)
+<!-- vale on -->
 
 To obtain your Codacy badge, open your repository **Settings**, tab **General**, select the markup language, and copy the generated code to your README file. You can also add a badge for your coverage if you have [set up code coverage](../coverage-reporter/index.md) for your repository.
 

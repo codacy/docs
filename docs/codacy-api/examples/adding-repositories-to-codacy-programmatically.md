@@ -7,7 +7,7 @@ description: Example of how to add multiple repositories programmatically using 
 There are scenarios where manually adding Git repositories on the Codacy UI is inconvenient or time-consuming. For example:
 
 -   You want to add all new repositories to Codacy when they're created on the Git provider
--   You're adding a large number of repositories to Codacy, such as when initially adding all repositories in your Git provider organization
+-   You're adding many repositories to Codacy, such as when initially adding all repositories in your Git provider organization
 
 To add repositories programmatically, use Codacy's API v3 endpoint [addRepository](https://app.codacy.com/api/api-docs#addrepository) by performing an HTTP POST request to `/repositories`, specifying the Git provider and the full path of the repository in the body of the request:
 
