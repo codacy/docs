@@ -12,12 +12,10 @@ Codacy supports client-side tools in two ways:
 
     You can't configure these tools on the Codacy UI, since you manage their configuration locally.
 
-## Running the client-side tools
+The table below describes the supported client-side tools and includes links to specific instructions on how to run each tool.
 
 !!! tip
     **If you're using GitHub** <span class="skip-vale">we</span> recommend that you use the [Codacy Analysis CLI GitHub Action](https://github.com/codacy/codacy-analysis-cli-action#integration-with-codacy-for-client-side-tools) to run the **containerized** client-side tools and upload the results to Codacy.
-
-Follow the instructions on how to run the supported client-side tools:
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
