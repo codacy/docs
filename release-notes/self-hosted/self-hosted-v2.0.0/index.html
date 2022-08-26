@@ -11,7 +11,7 @@
         <meta name="description" content="Release notes for Codacy Self-hosted v2.0.0.">
       
       
-        <meta http-equiv="last-modified" content="2022-07-13 18:22:28">  
+        <meta http-equiv="last-modified" content="2022-08-26 15:48:54">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/self-hosted/self-hosted-v2.0.0/">
@@ -3535,7 +3535,7 @@ kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
 <span class="w">  </span><span class="nt">rabbitmqErlangCookie</span><span class="p">:</span><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">&lt;--- erlang-cookie ---&gt;</span><span class="w">  </span><span class="c1"># Generate one with `cat /dev/urandom | tr -dc &#39;a-zA-Z0-9&#39; | fold -w 32 | head -n 1`</span><span class="w"></span>
 <span class="w">  </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
 </code></pre></div>
-<p>When you previously installed Codacy, this cookie was automatically set to a random value. We recommend that you keep the same cookie to help ensure that the Codacy upgrade runs smoothly.</p>
+<p>When you previously installed Codacy, this cookie was automatically set to a random value. We recommend that you keep the same cookie to help ensure that the Codacy upgrade runs <span class="skip-vale">smoothly</span>.</p>
 <p>Run the following command to retrieve the current cookie value and define it explicitly in the new configuration:</p>
 <div class="highlight"><pre><span></span><code>kubectl get secrets -n codacy codacy-rabbitmq-ha -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s2">&quot;{.data.rabbitmq-erlang-cookie}&quot;</span> <span class="p">|</span> base64 --decode
 </code></pre></div>
@@ -3760,7 +3760,7 @@ kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 13, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 26, 2022</span>
     
   </small>
 </div>

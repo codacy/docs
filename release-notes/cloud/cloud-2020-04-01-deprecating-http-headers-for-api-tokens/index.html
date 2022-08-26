@@ -11,7 +11,7 @@
         <meta name="description" content="On April 1st, 2020 we're deprecating the api_token and project_token HTTP headers used to authenticate to the Codacy API.">
       
       
-        <meta http-equiv="last-modified" content="2021-08-27 16:39:02">  
+        <meta http-equiv="last-modified" content="2022-08-26 15:48:54">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens/">
@@ -3461,7 +3461,7 @@
 <li>If you have any custom tools or scripts that integrate with the Codacy API, update them to use the new HTTP headers.</li>
 </ul>
 <h2 id="background-information">Background information<a class="headerlink" href="#background-information" title="Permanent link">#</a></h2>
-<p>By default, <a href="https://www.nginx.com/nginx-wiki/build/dirhtml/start/topics/tutorials/config_pitfalls/#missing-disappearing-http-headers">NGINX silently drops HTTP headers containing underscores</a>. With the old HTTP headers, this would require an extra configuration step during the Codacy installation process.</p>
+<p>By default, <a href="https://www.nginx.com/nginx-wiki/build/dirhtml/start/topics/tutorials/config_pitfalls/#missing-disappearing-http-headers">NGINX <span class="skip-vale">silently</span> drops HTTP headers containing underscores</a>. With the old HTTP headers, this would require an extra configuration step during the Codacy installation process.</p>
 <p>We decided to avoid this extra complexity by changing to the new HTTP headers that don't include underscores.</p>
               
               
@@ -3619,7 +3619,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 27, 2021</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 26, 2022</span>
     
   </small>
 </div>
