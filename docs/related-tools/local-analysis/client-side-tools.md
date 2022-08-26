@@ -31,6 +31,12 @@ Follow the instructions on how to run the supported client-side tools:
 -->
 
 <table>
+<colgroup>
+<col/>
+<col/>
+<col style="width: 45%" />
+<col/>
+</colgroup>
 <thead>
     <tr>
         <th>Language</th>
