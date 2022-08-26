@@ -34,7 +34,8 @@ Follow the instructions on how to run the supported client-side tools:
 <thead>
     <tr>
         <th>Language</th>
-        <th>Client-side tools</th>
+        <th>Client-side tool</th>
+        <th>Description</th>
         <th>Usage instructions</th>
     </tr>
 </thead>
@@ -42,37 +43,45 @@ Follow the instructions on how to run the supported client-side tools:
     <tr>
         <td>C, C++</td>
         <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
+        <td>Clang-tidy is a clang-based C++ “linter” tool. Its purpose is to provide an extensible framework for diagnosing and fixing typical programming errors, like style violations, interface misuse, or bugs that can be deduced via static analysis. Clang-tidy is modular and provides a convenient interface for writing new checks.</td>
         <td><a href="https://github.com/codacy/codacy-clang-tidy#usage">Running Clang-Tidy</a> (standalone)</td>
     </tr>
     <tr>
         <td rowspan="4">Go</td>
         <td><a href="https://gitlab.com/opennota/check">aligncheck</a></td>
+        <td>aligncheck is a utility for finding unused struct fields in Go source files.</td>
         <td><a href="../running-aligncheck/">Running aligncheck</a> (containerized)</td>
     </tr>
     <tr>
         <td><a href="https://github.com/tsenart/deadcode">deadcode</a></td>
+        <td>deadcode is a <span class="skip-vale">very simple</span> utility which detects unused declarations in Go packages.</td>
         <td><a href="../running-deadcode/">Running deadcode</a> (containerized)</td>
     </tr>
     <tr>
         <td><a href="https://github.com/securego/gosec">Gosec</a></td>
+        <td>Gosec inspects source code for security problems by scanning the Go AST.</td>
         <td><a href="https://github.com/codacy/codacy-gosec#usage">Running Gosec</a> (standalone)</td>
     </tr>
     <tr>
         <td><a href="https://staticcheck.io/">Staticcheck</a></td>
+        <td>Staticcheck is a state of the art linter for the Go programming language. Using static analysis, it finds bugs and performance issues, offers simplifications, and enforces style rules.</td>
         <td><a href="https://github.com/codacy/codacy-staticcheck#usage">Running Staticcheck</a> (standalone)</td>
     </tr>
     <tr>
         <td>Java, Scala</td>
         <td><a href="https://spotbugs.github.io/">SpotBugs</a></td>
+        <td>SpotBugs is a program which uses static analysis to look for bugs in Java code. Together with the <a href="http://find-sec-bugs.github.io/">Find Security Bugs plugin</a> it provides security audits. It has support for Maven, sbt, and Gradle in Java projects.</td>
         <td><a href="../running-spotbugs/">Running SpotBugs</a> (containerized)</td>
     </tr>
     <tr>
         <td rowspan="2">Objective-C</td>
         <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
+        <td>Clang-tidy is a clang-based C++ "linter" tool. Its purpose is to provide an extensible framework for diagnosing and fixing typical programming errors, like style violations, interface misuse, or bugs that can be deduced via static analysis. Clang-tidy is modular and provides a convenient interface for writing new checks.</td>
         <td><a href="https://github.com/codacy/codacy-clang-tidy#usage">Running Clang-Tidy</a> (standalone)</td>
     </tr>
     <tr>
         <td><a href="http://fauxpasapp.com/">Faux Pas</a></td>
+        <td>Faux Pas inspects your iOS or Mac app's Xcode project and warns about possible bugs, as well as about maintainability and style issues.</td>
         <td><a href="https://github.com/codacy/codacy-faux-pas#usage">Running Faux Pas</a> (standalone)</td>
     </tr>
 </table>
