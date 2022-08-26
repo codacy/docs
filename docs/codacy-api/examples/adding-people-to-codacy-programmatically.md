@@ -4,7 +4,7 @@ description: Example of how to add people programmatically using Codacy's API v3
 
 # Adding people to Codacy programmatically
 
-There are scenarios where manually adding people on the Codacy UI is inconvenient or time-consuming. For example, you're adding a large number of people to Codacy, such as when initially onboarding all developers within a team.
+There are scenarios where manually adding people on the Codacy UI is inconvenient or time-consuming. For example, you're adding many people to Codacy, such as when initially onboarding all developers within a team.
 
 To add people programmatically, use Codacy's API v3 endpoint [addPeopleToOrganization](https://app.codacy.com/api/api-docs#addpeopletoorganization) by performing an HTTP POST request to `/people`, specifying a list of email addresses in the body of the request:
 

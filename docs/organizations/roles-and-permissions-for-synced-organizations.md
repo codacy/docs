@@ -299,17 +299,17 @@ To change this, open your organization **Settings**, page **Member privileges**,
 -   [Accepting new people to your organization](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization)
 
 <style>
-/* Center text in all cells except the first column */
+/*Center text in all cells except the first column*/
 td:not(:first-child), th:not(:first-child) {
   text-align: center !important;
 }
 
-/* Background color for row containing the Codacy permission levels */
+/*Background color for row containing the Codacy permission levels*/
 tr:nth-child(1) td {
   background-color: #EBF1FF;
 }
 
-/* Add vertical borders and disable horizontal borders */
+/*Add vertical borders and disable horizontal borders*/
 td {
   border-left: 1px solid var(--md-default-fg-color--lightest);
   border-top: 0 !important;
@@ -318,7 +318,7 @@ td:nth-child(1) {
   border-left: 0;
 }
 
-/* Background for cells marking the allowed operations */
+/*Background for cells marking the allowed operations*/
 .yes {
   background-color: #E6F4EA;
 }

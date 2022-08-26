@@ -35,6 +35,6 @@ You must repeat steps 2 to 4 above every time you add new repositories with subm
 Alternatively, you can make this the default behavior for all new repositories by enabling **Add project key to the user, by default** in **Administration**, page **Settings**.
 
 !!! important
-    **If you're using Bitbucket Cloud** this setting must be disabled since automatically adding the user keys isn't supported.
+    **If you're using Bitbucket Cloud** this setting must be turned off since automatically adding the user keys isn't supported.
 
 ![Add project key to the user by default](images/using-submodules-default-add-user-key.png)

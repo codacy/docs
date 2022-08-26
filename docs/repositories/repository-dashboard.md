@@ -36,7 +36,7 @@ Each tab displays the following information for the corresponding metric:
 -   The variation of the value introduced by the last commit
 
 !!! note
-    The coverage tab only displays a value if Codacy received coverage data for the most recent commit. This is because one commit can easily change the size or number of files on the repository, or even remove some of the files that had coverage information.
+    The coverage tab only displays a value if Codacy received coverage data for the most recent commit. This is because one commit can <span class="skip-vale">easily</span> change the size or number of files on the repository, or even remove some files that had coverage information.
 
 The chart also displays the **trendline** based on the past behavior and the **quality goal** defined on the repository [quality settings](../repositories-configure/adjusting-quality-settings.md).
 
