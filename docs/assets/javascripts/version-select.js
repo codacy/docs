@@ -30,7 +30,6 @@ window.addEventListener("DOMContentLoaded", function() {
             });
         };
         xhrSitemap.send();
-        console.log('Hello, world!');
     }
 
     function makeSelect(options, selected) {
