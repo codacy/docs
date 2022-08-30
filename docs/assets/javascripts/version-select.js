@@ -1,4 +1,5 @@
 window.addEventListener("DOMContentLoaded", function() {
+    console.log('Hello, world!');
     window.versionPages = {};
     var VERSION = window.location.pathname.split("/")[1];
     var VERSION_LATEST = "latest";
