@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the Git provider integration no longer has permissions on the repository or that the SSH key is no longer valid.">
+        <meta name="description" content="Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the GitLab or Bitbucket integration no longer has permissions on the repository or that the SSH key is no longer valid.">
       
       
-        <meta http-equiv="last-modified" content="2022-08-25 16:46:18">  
+        <meta http-equiv="last-modified" content="2022-08-30 09:07:37">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/">
@@ -3431,8 +3431,11 @@
                 
                 
                 <h1 id="why-did-codacy-stop-commenting-on-pull-requests">Why did Codacy stop commenting on pull requests?<a class="headerlink" href="#why-did-codacy-stop-commenting-on-pull-requests" title="Permanent link">#</a></h1>
-<p>Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the Git provider integration no longer has permissions on the repository or that the SSH key is no longer valid.</p>
-<p>To fix this issue and also avoid future disruptions, Codacy recommends that you re-enable the Git provider integration on Codacy using a dedicated service account on your Git provider:</p>
+<div class="admonition info">
+<p class="admonition-title">This page applies only to GitLab and Bitbucket</p>
+</div>
+<p>Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the GitLab or Bitbucket integration no longer has permissions on the repository or that the SSH key is no longer valid.</p>
+<p>To fix this issue and also avoid future disruptions, Codacy recommends that you re-enable the GitLab or Bitbucket integration on Codacy using a dedicated service account on your Git provider:</p>
 <ol>
 <li>
 <p>Create a service account on your Git provider exclusively dedicated to integrating Codacy with your repositories.</p>
@@ -3635,7 +3638,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 25, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 30, 2022</span>
     
   </small>
 </div>

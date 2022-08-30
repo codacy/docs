@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the GitHub integration to have status checks, annotations, analysis summaries, and suggested fixes from Codacy directly on pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2022-08-25 15:50:06">  
+        <meta http-equiv="last-modified" content="2022-08-30 09:07:37">  
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/github-integration/">
@@ -3458,12 +3458,7 @@
 <p>Click the button <strong>Enable</strong> and follow the instructions.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>The user that enables the integration <a href="../../../organizations/roles-and-permissions-for-synced-organizations/#permissions-for-github">must have administrator access to the repository</a>. Codacy uses this GitHub user to <a href="#suggest-fixes">suggest fixes</a> on pull requests.</p>
-</div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>We recommend that you use a dedicated service account for integrating Codacy with your repositories. This will avoid disruption of service if the user who originally enabled the integration stops having access to the repository, such as when the user leaves the team or the organization.</p>
-<p>For more information and instructions on how to set up a dedicated service account see <a href="../../../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/">Why did Codacy stop commenting on pull requests?</a></p>
+<p>The user that enables the integration <a href="../../../organizations/roles-and-permissions-for-synced-organizations/#permissions-for-github">must have administrator access to the repository</a>.</p>
 </div>
 </li>
 </ol>
@@ -3500,7 +3495,6 @@
 <ul>
 <li>The only supported Git providers are GitHub Cloud and GitHub Enterprise.</li>
 <li>The only two tools that suggest fixes are <a href="https://eslint.org/docs/rules/">ESLint</a> and <a href="https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md">markdownlint</a>. However, we're planning to support suggestions from more tools.</li>
-<li>Because of a limitation from GitHub, the author of the comments suggesting fixes is the user that enabled the GitHub integration and not Codacy.</li>
 </ul>
 <p>📢 <a href="#enabling">Activate suggested fixes now</a> and <a href="mailto:support@codacy.com?subject=Feedback on Suggest fixes">let us know</a> what you think!</p>
 </div>
@@ -3664,7 +3658,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 25, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 30, 2022</span>
     
   </small>
 </div>
