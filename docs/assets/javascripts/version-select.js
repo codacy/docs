@@ -16,7 +16,7 @@ window.addEventListener("DOMContentLoaded", function() {
         var sitemapURL = window.location.origin + versionPath + "/sitemap.xml";
         xhrSitemap.open("GET", sitemapURL);
         xhrSitemap.onload = function() {
-            var xmlLoc = this.responseXML.getElementsByTagName("loc");
+            var xmlLoc = this.responseXML.getElementsByTagName('loc');
             var nodeText = [];
     
             for (var index = 0; index < xmlLoc.length; index++) {
@@ -34,6 +34,7 @@ window.addEventListener("DOMContentLoaded", function() {
     function makeSelect(options, selected) {
         var select = document.createElement("select");
         select.classList.add("select-css");
+        select.classList.add("select-css-test");
         var deprecatedVersionsArray = new Array();
         var versionsArray = new Array();
 
@@ -46,7 +47,7 @@ window.addEventListener("DOMContentLoaded", function() {
                 // Ensure the Latest option is the first one
                 select.add(option, 0);
             }
-            else if(i.text.includes("Deprecated"))
+            else if(i.text.includes('Deprecated'))
             {
                 // Group deprecated versions
                 deprecatedVersionsArray.push(option);
