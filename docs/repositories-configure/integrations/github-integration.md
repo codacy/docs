@@ -22,9 +22,7 @@ If you remove the integration, you can enable it again as follows:
 1.  Click the button **Enable** and follow the instructions.
 
     !!! important
-        The user that enables the integration [must have administrator access to the repository](../../organizations/roles-and-permissions-for-synced-organizations.md#permissions-for-github). Codacy uses this GitHub user to [suggest fixes](#suggest-fixes) on pull requests.
-
-    {% include-markdown "../../assets/includes/service-account-integration.md" %}
+        The user that enables the integration [must have administrator access to the repository](../../organizations/roles-and-permissions-for-synced-organizations.md#permissions-for-github).
 
 ## Configuring the GitHub integration {: id="configuring"}
 
@@ -73,7 +71,6 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
 
     -   The only supported Git providers are GitHub Cloud and GitHub Enterprise.
     -   The only two tools that suggest fixes are [ESLint](https://eslint.org/docs/rules/) and [markdownlint](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md). However, we're planning to support suggestions from more tools.
-    -   Because of a limitation from GitHub, the author of the comments suggesting fixes is the user that enabled the GitHub integration and not Codacy.
 
     📢 [Activate suggested fixes now](#enabling) and [let us know](mailto:support@codacy.com?subject=Feedback on Suggest fixes) what you think!
 
