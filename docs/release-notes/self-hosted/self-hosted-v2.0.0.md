@@ -104,7 +104,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
           [...]
         ```
 
-        When you previously installed Codacy, this cookie was automatically set to a random value. We recommend that you keep the same cookie to help ensure that the Codacy upgrade runs smoothly.
+        When you previously installed Codacy, this cookie was automatically set to a random value. We recommend that you keep the same cookie to help ensure that the Codacy upgrade runs <span class="skip-vale">smoothly</span>.
 
         Run the following command to retrieve the current cookie value and define it explicitly in the new configuration:
 

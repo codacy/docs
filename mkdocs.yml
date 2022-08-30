@@ -50,9 +50,6 @@ markdown_extensions:
     # Add attributes to the generated HTML elements, such as explicit ids for section titles
     # https://python-markdown.github.io/extensions/attr_list/
     - attr_list
-    # Allow defining meta-data for each page
-    # https://python-markdown.github.io/extensions/meta_data/
-    - meta
     # Add syntax highlighting to code blocks
     # https://facelessuser.github.io/pymdown-extensions/extensions/highlight/
     - pymdownx.highlight

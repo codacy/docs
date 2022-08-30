@@ -9,7 +9,7 @@ On the week of February 16th 2022 we'll be removing the tool **PMD (Legacy)** fr
 
 The **PMD (Legacy)** tool runs [PMD 5.8.1](https://github.com/pmd/pmd/releases/tag/pmd_releases%2F5.8.1), and was introduced to allow a smoother migration to PMD 6.
 
-However, the legacy version of PMD is almost five years old and is no longer being maintained by the tool developers, while PMD 6 is now very stable and provides newer features.
+However, the legacy version of PMD is almost five years old and is no longer being maintained by the tool developers, while PMD 6 is now <span class="skip-vale">very</span> stable and provides newer features.
 
 ## If you were using PMD (Legacy)
 

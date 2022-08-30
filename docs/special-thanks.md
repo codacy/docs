@@ -1,6 +1,6 @@
 # Special thanks
 
-We would like to thank everyone who helped us greatly. The names on these lists contributed immensely to what Codacy is today.
+We would like to thank everyone who helped us <span class="skip-vale">greatly</span>. The names on these lists contributed immensely to what Codacy is today.
 
 ## Open source tools
 
