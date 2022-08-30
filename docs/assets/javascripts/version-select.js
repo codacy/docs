@@ -38,6 +38,7 @@ window.addEventListener("DOMContentLoaded", function() {
         select.classList.add("select-css-test");
         var deprecatedVersionsArray = new Array();
         var versionsArray = new Array();
+        console.log('Hello, world!');
 
         options.forEach(function(i) {
             var option = new Option(i.text, i.value, void(0),
