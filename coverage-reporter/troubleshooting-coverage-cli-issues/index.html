@@ -8,13 +8,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, Codacy only analyzes commits to private repositories from contributors who are members of the corresponding organization on Codacy.">
+        <meta name="description" content="Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI.">
       
       
-        <meta http-equiv="last-modified" content="2022-08-19 15:28:33">
+        <meta http-equiv="last-modified" content="2022-08-18 11:13:56">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/organizations/managing-people/">
+        <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/troubleshooting-coverage-cli-issues/">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Managing people - Codacy docs</title>
+        <title>Troubleshooting coverage CLI issues - Codacy docs</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#managing-people" class="md-skip">
+        <a href="#troubleshooting-coverage-cli-issues" class="md-skip">
           Skip to content
         </a>
       
@@ -336,10 +336,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4" type="checkbox" id="nav-4" checked>
     
     <label class="md-nav__link" for="nav-4">
       Configuring your repositories
@@ -535,10 +537,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7" checked>
     
     <label class="md-nav__link" for="nav-4-7">
       Setting up code coverage
@@ -562,7 +566,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../coverage-reporter/" title="Adding coverage to your repository" class="md-nav__link">
+    <a href="../" title="Adding coverage to your repository" class="md-nav__link">
       Adding coverage to your repository
     </a>
   </li>
@@ -574,7 +578,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../coverage-reporter/alternative-ways-of-running-coverage-reporter/" title="Alternative ways of running Coverage Reporter" class="md-nav__link">
+    <a href="../alternative-ways-of-running-coverage-reporter/" title="Alternative ways of running Coverage Reporter" class="md-nav__link">
       Alternative ways of running Coverage Reporter
     </a>
   </li>
@@ -586,7 +590,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../coverage-reporter/uploading-coverage-in-advanced-scenarios/" title="Uploading coverage in advanced scenarios" class="md-nav__link">
+    <a href="../uploading-coverage-in-advanced-scenarios/" title="Uploading coverage in advanced scenarios" class="md-nav__link">
       Uploading coverage in advanced scenarios
     </a>
   </li>
@@ -596,11 +600,106 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../coverage-reporter/troubleshooting-coverage-cli-issues/" title="Troubleshooting coverage CLI issues" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Troubleshooting coverage CLI issues
+      </label>
+    
+    <a href="./" title="Troubleshooting coverage CLI issues" class="md-nav__link md-nav__link--active">
       Troubleshooting coverage CLI issues
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#commit-detection" class="md-nav__link">
+    Commit SHA-1 hash detection
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#cant-guess-any-report-due-to-no-matching" class="md-nav__link">
+    Can't guess any report due to no matching
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailedxml" class="md-nav__link">
+    Report generated an empty result while uploading C# coverage data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#jsonparseexception-while-uploading-coverage-data" class="md-nav__link">
+    JsonParseException while uploading coverage data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#connect-timed-out-while-uploading-coverage-data" class="md-nav__link">
+    Connect timed out while uploading coverage data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#malformedinputexception-while-parsing-report" class="md-nav__link">
+    MalformedInputException while parsing report
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#substratesegfaulthandler-caught-signal-11" class="md-nav__link">
+    SubstrateSegfaultHandler caught signal 11
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coverage-xmlindexxml-generated-an-empty-result" class="md-nav__link">
+    coverage-xml/index.xml generated an empty result
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#checksum" class="md-nav__link">
+    Can't validate checksum
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -654,12 +753,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Organizations
@@ -683,7 +780,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../what-are-synced-organizations/" title="What are synced organizations" class="md-nav__link">
+    <a href="../../organizations/what-are-synced-organizations/" title="What are synced organizations" class="md-nav__link">
       What are synced organizations
     </a>
   </li>
@@ -695,7 +792,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../organization-overview/" title="Organization Overview" class="md-nav__link">
+    <a href="../../organizations/organization-overview/" title="Organization Overview" class="md-nav__link">
       Organization Overview
     </a>
   </li>
@@ -707,7 +804,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../managing-repositories/" title="Managing repositories" class="md-nav__link">
+    <a href="../../organizations/managing-repositories/" title="Managing repositories" class="md-nav__link">
       Managing repositories
     </a>
   </li>
@@ -719,7 +816,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../using-a-coding-standard/" title="Using a coding standard" class="md-nav__link">
+    <a href="../../organizations/using-a-coding-standard/" title="Using a coding standard" class="md-nav__link">
       Using a coding standard
     </a>
   </li>
@@ -731,7 +828,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../copying-code-patterns-between-repositories/" title="Copying code patterns between repositories" class="md-nav__link">
+    <a href="../../organizations/copying-code-patterns-between-repositories/" title="Copying code patterns between repositories" class="md-nav__link">
       Copying code patterns between repositories
     </a>
   </li>
@@ -741,71 +838,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Managing people
-      </label>
-    
-    <a href="./" title="Managing people" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../organizations/managing-people/" title="Managing people" class="md-nav__link">
       Managing people
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#joining" class="md-nav__link">
-    Joining an organization
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#adding-people" class="md-nav__link">
-    Adding people to your organization
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#removing-people" class="md-nav__link">
-    Removing people from your organization
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#see-also" class="md-nav__link">
-    See also
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -815,7 +852,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../roles-and-permissions-for-synced-organizations/" title="Roles and permissions for synced organizations" class="md-nav__link">
+    <a href="../../organizations/roles-and-permissions-for-synced-organizations/" title="Roles and permissions for synced organizations" class="md-nav__link">
       Roles and permissions for synced organizations
     </a>
   </li>
@@ -827,7 +864,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../changing-your-plan-and-billing/" title="Changing your plan and billing" class="md-nav__link">
+    <a href="../../organizations/changing-your-plan-and-billing/" title="Changing your plan and billing" class="md-nav__link">
       Changing your plan and billing
     </a>
   </li>
@@ -3445,59 +3482,85 @@
                   
                 
                 
-                <h1 id="managing-people">Managing people<a class="headerlink" href="#managing-people" title="Permanent link">#</a></h1>
-<p>Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, Codacy only analyzes commits to <strong>private repositories</strong> from contributors who are members of the corresponding organization on Codacy.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Make sure that you invite or ask your team members to join your organization on Codacy so that Codacy analyzes their commits on private repositories.</p>
-<p>Contributors who aren't part of your Git provider organization can't join your Codacy organization, but you should still add them to Codacy to analyze their commits on private repositories.</p>
-</div>
-<p>To list and manage the members of your organization, open your organization <strong>Settings</strong>, page <strong>People</strong>. This page also shows when the organization members last logged in to Codacy:</p>
-<p><img alt="People in an organization" src="../images/organization-people.png" /></p>
-<h2 id="joining">Joining an organization<a class="headerlink" href="#joining" title="Permanent link">#</a></h2>
-<p>To become a member of an organization on Codacy you must <a href="../../getting-started/codacy-quickstart/">sign up to Codacy</a> using your Git provider and follow the instructions to either join an existing organization or add a new one.</p>
-<p>To join or add an organization after having complete the signup process, click <strong>Organizations</strong> on the top right-hand menu under your avatar:</p>
-<p><img alt="Joining an organization" src="../images/organization-join.png" /></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p><strong>On Codacy Cloud</strong>, organization owners <a href="../changing-your-plan-and-billing/#accepting-new-people-to-your-organization">control if team members need an approval</a> before joining their organizations.</p>
-</div>
-<h2 id="adding-people">Adding people to your organization<a class="headerlink" href="#adding-people" title="Permanent link">#</a></h2>
-<p><strong>On Codacy Cloud</strong>, organization owners can also invite team members to their organization on Codacy. This is useful to allow Codacy to analyze commits in private repositories by contributors who haven't signed up to Codacy or joined the organization yet.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>You can also use the Codacy API to <a href="../../codacy-api/examples/adding-people-to-codacy-programmatically/">add people to your Codacy organization</a>. This is useful while adding a large amount of people or to automatically add new members of your Git provider organization to Codacy.</p>
-</div>
-<p>To add members to your organization:</p>
-<ol>
-<li>
-<p>Open your organization <strong>Settings</strong>, page <strong>People</strong>, and click the button <strong>Add people</strong>.</p>
-<p><img alt="Adding members to your organization" src="../images/organization-people-add-button.png" /></p>
-</li>
-<li>
-<p>Select people from the list displaying pending requests to join the organization, as well as recent contributors to the private repositories in your organization.</p>
-<p>Alternatively, click <strong>Add people using email addresses</strong> to manually enter the list of email addresses of the people you wish to add.</p>
-<p><img alt="Adding members to your organization" src="../images/organization-people-add-modal.png" /></p>
-</li>
-<li>
-<p>Confirm the updated billing details displayed at the bottom of the window and click the button <strong>Add people</strong>.</p>
-</li>
-</ol>
-<h2 id="removing-people">Removing people from your organization<a class="headerlink" href="#removing-people" title="Permanent link">#</a></h2>
-<p>Members of an organization on Codacy can remove themselves from the organization, and organization owners can also remove other members.</p>
-<p>When a member leaves an organization:</p>
+                <h1 id="troubleshooting-coverage-cli-issues">Troubleshooting coverage CLI issues<a class="headerlink" href="#troubleshooting-coverage-cli-issues" title="Permanent link">#</a></h1>
+<p>The sections below provide instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI.</p>
+<h2 id="commit-detection">Commit SHA-1 hash detection<a class="headerlink" href="#commit-detection" title="Permanent link">#</a></h2>
+<p>The Codacy Coverage Reporter automatically detects the SHA-1 hash of the current commit to associate with the coverage data when you're using one of the following CI/CD platforms:</p>
 <ul>
-<li>Codacy stops analyzing commits from that member to private repositories in the organization</li>
-<li><strong>On GitLab and Bitbucket organizations</strong> Codacy stops analyzing repositories that were added by the member</li>
-<li>Organizations must have at least one owner, so when the last organization owner leaves the organization they must either add someone else as owner or <a href="../what-are-synced-organizations/#deleting-an-organization">delete the organization</a></li>
+<li>Appveyor</li>
+<li>AWS CodeBuild</li>
+<li>Azure Pipelines</li>
+<li>Bitrise</li>
+<li>Buildkite</li>
+<li>Circle CI</li>
+<li>Codefresh</li>
+<li>Codeship</li>
+<li>Docker</li>
+<li>GitLab</li>
+<li>Greenhouse CI</li>
+<li>Heroku CI</li>
+<li>Jenkins</li>
+<li>Magnum CI</li>
+<li>Semaphore CI</li>
+<li>Shippable CI</li>
+<li>Solano CI</li>
+<li>TeamCity CI</li>
+<li>Travis CI</li>
+<li>Wercker CI</li>
 </ul>
-<p>To remove members from your organization open your organization <strong>Settings</strong>, page <strong>People</strong>, and click the icon next to the members you wish to remove:</p>
-<p><img alt="Removing people from your organization" src="../images/organization-people-remove.png" /></p>
-<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
+<p>If the Codacy Coverage Reporter fails to detect the current commit from the CI workflow context, it will use the current commit from the local Git repository instead.</p>
+<p>However, you can also force using a specific commit SHA-1 hash with the flag <code>--commit-uuid</code>. For example:</p>
+<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
+    -r report.xml <span class="se">\</span>
+    --commit-uuid cd4d000083a744cf1617d46af4ec108b79e06bed
+</code></pre></div>
+<h2 id="cant-guess-any-report-due-to-no-matching">Can't guess any report due to no matching<a class="headerlink" href="#cant-guess-any-report-due-to-no-matching" title="Permanent link">#</a></h2>
+<p>Codacy Coverage Reporter automatically searches for coverage reports matching the <a href="../#generating-coverage">file name conventions for supported formats</a>.</p>
+<p>However, if Codacy Coverage Reporter does not find your coverage report, you can explicitly define the report file name with the flag <code>-r</code>. For example:</p>
+<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report -r &lt;coverage report file name&gt;
+</code></pre></div>
+<h2 id="detailedxml">Report generated an empty result while uploading C# coverage data<a class="headerlink" href="#detailedxml" title="Permanent link">#</a></h2>
+<p>If you're using dotCover to generate coverage reports for your C# projects, you must use the dotCover detailedXML report format as follows:</p>
+<div class="highlight"><pre><span></span><code>dotCover.exe cover ... --reportType<span class="o">=</span>DetailedXml
+</code></pre></div>
+<h2 id="jsonparseexception-while-uploading-coverage-data">JsonParseException while uploading coverage data<a class="headerlink" href="#jsonparseexception-while-uploading-coverage-data" title="Permanent link">#</a></h2>
+<p>If you get a <code>com.fasterxml.jackson.core.JsonParseException</code> error while uploading your coverage data to Codacy it means that your coverage report is too big and that Codacy Coverage Reporter hit a limit of 10 MB when uploading the coverage data to Codacy.</p>
+<p>There are some ways you can solve this:</p>
 <ul>
-<li><a href="../../codacy-api/examples/adding-people-to-codacy-programmatically/">Adding people to Codacy programmatically</a></li>
-<li><a href="../roles-and-permissions-for-synced-organizations/">Roles and permissions for synced organizations</a></li>
+<li>
+<p>Split your coverage reports into smaller files and <a href="../uploading-coverage-in-advanced-scenarios/#multiple-reports">upload them to Codacy one at a time</a>.</p>
+</li>
+<li>
+<p><strong>If you're using dotCover to generate coverage reports for your C# projects</strong>, you should <a href="https://www.jetbrains.com/help/dotcover/Running_Coverage_Analysis_from_the_Command_LIne.html#filters_cmd">exclude xUnit files</a> from the coverage analysis as follows:</p>
+<div class="highlight"><pre><span></span><code>dotCover.exe cover ... /Filters<span class="o">=</span>-:xunit*
+</code></pre></div>
+<p>By default, dotCover includes xUnit files in the coverage analysis and this results in larger coverage reports. This filter helps ensure that the resulting coverage data does not exceed the size limit accepted by the Codacy API when uploading the results.</p>
+</li>
 </ul>
+<h2 id="connect-timed-out-while-uploading-coverage-data">Connect timed out while uploading coverage data<a class="headerlink" href="#connect-timed-out-while-uploading-coverage-data" title="Permanent link">#</a></h2>
+<p>If you get a <code>Error doing a post to ... connect timed out</code> error while uploading your coverage data to Codacy it means that the Codacy Coverage Reporter is timing out while connecting to the Codacy API. This typically happens if you're uploading coverage data for larger repositories.</p>
+<p>To increase the default timeout while connecting to the Codacy API, use the flag <code>--http-timeout</code> to set a value larger than 10000 miliseconds. For example, to set the timeout to 30 seconds:</p>
+<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
+    -r report.xml <span class="se">\</span>
+    --http-timeout <span class="m">30000</span>
+</code></pre></div>
+<h2 id="malformedinputexception-while-parsing-report">MalformedInputException while parsing report<a class="headerlink" href="#malformedinputexception-while-parsing-report" title="Permanent link">#</a></h2>
+<p>If you get a <code>java.nio.charset.MalformedInputException</code> when running the Codacy Coverage Reporter it means that the coverage report includes a character that is not encoded in UTF-8. The invalid character can belong to the file name of one of your source code files, or even a class or method name.</p>
+<p>For maximum compatibility of your coverage reports with the Codacy Coverage Reporter, make sure that your coverage reports use UTF-8 encoding and that they only include UTF-8 characters.</p>
+<h2 id="substratesegfaulthandler-caught-signal-11">SubstrateSegfaultHandler caught signal 11<a class="headerlink" href="#substratesegfaulthandler-caught-signal-11" title="Permanent link">#</a></h2>
+<p>If you're experiencing segmentation faults when uploading the coverage results due to <a href="https://github.com/oracle/graal/issues/624">oracle/graal#624</a>, execute the following command before running the reporter, as a workaround:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">echo</span> <span class="s2">&quot;</span><span class="k">$(</span>dig +short api.codacy.com <span class="p">|</span> tail -n1<span class="k">)</span><span class="s2"> api.codacy.com&quot;</span> &gt;&gt; /etc/hosts
+</code></pre></div>
+<h2 id="coverage-xmlindexxml-generated-an-empty-result">coverage-xml/index.xml generated an empty result<a class="headerlink" href="#coverage-xmlindexxml-generated-an-empty-result" title="Permanent link">#</a></h2>
+<p>If you're using PHPUnit version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the PHPUnit XML format only for versions 4 and older.</p>
+<p>To change the output format replace the flag <code>--coverage-xml &lt;dir&gt;</code> with <code>--coverage-clover &lt;file&gt;</code> when executing <code>phpunit</code>.</p>
+<p>See <a href="https://phpunit.readthedocs.io/en/9.5/textui.html">PHPUnit command-line documentation</a> for more information.</p>
+<h2 id="checksum">Can't validate checksum<a class="headerlink" href="#checksum" title="Permanent link">#</a></h2>
+<p>Starting on version <a href="https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.0.0">13.0.0</a> the <code>get.sh</code> script automatically validates the checksum of the downloaded Codacy Coverage Reporter binary. This requires having either the <code>sha512sum</code> or <code>shasum</code> command on the operating system where you're running the script.</p>
+<p>If you're getting this error while uploading your coverage data to Codacy, install the correct version of <code>sha512sum</code> or <code>shasum</code> for the operating system that you're using.</p>
+<p>You can also skip validating the checksum of the binary by defining the following environment variable, however, Codacy doesn't recommend this:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_REPORTER_SKIP_CHECKSUM</span><span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
               
               
                 
@@ -3541,7 +3604,7 @@
           <br>
         </div>
         <p>
-          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Managing people%22">create a more detailed issue on our GitHub repository</a>.
+          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Troubleshooting coverage CLI issues%22">create a more detailed issue on our GitHub repository</a>.
         </p>
       </div>
     </div>
@@ -3550,14 +3613,14 @@
     </p>
     
     <p>
-      <a href="https://github.com/codacy/docs/edit/master/docs/organizations/managing-people.md" title="Edit this page">
+      <a href="https://github.com/codacy/codacy-coverage-reporter/edit/master/docs/troubleshooting-coverage-cli-issues.md" title="Edit this page">
         Edit this page on GitHub
       </a>
       if you notice something wrong or missing.
     </p>
     
     <p>
-      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Managing people">support@codacy.com</a>.
+      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Troubleshooting coverage CLI issues">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -3654,7 +3717,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 19, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 18, 2022</span>
     
   </small>
 </div>

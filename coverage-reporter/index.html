@@ -11,7 +11,7 @@
         <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2022-08-17 16:20:54">
+        <meta http-equiv="last-modified" content="2022-09-01 10:15:38">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
@@ -655,8 +655,8 @@
 
 
   <li class="md-nav__item">
-    <a href="troubleshooting-common-issues/" title="Troubleshooting common issues" class="md-nav__link">
-      Troubleshooting common issues
+    <a href="troubleshooting-coverage-cli-issues/" title="Troubleshooting coverage CLI issues" class="md-nav__link">
+      Troubleshooting coverage CLI issues
     </a>
   </li>
 
@@ -3455,7 +3455,7 @@
 </li>
 <li>
 <p><strong>Validating that the coverage setup is complete</strong></p>
-<p>Check if Codacy displays coverage information for new commits and pull requests and troubleshoot the coverage setup if necessary.</p>
+<p>Check if Codacy displays the coverage metrics for new commits and pull requests and troubleshoot the coverage setup if necessary.</p>
 </li>
 </ol>
 <p>The next sections include detailed instructions on how to complete each step of the setup process.</p>
@@ -3484,7 +3484,7 @@
 </tr>
 <tr>
     <td><a href="https://www.jetbrains.com/help/dotcover/Running_Coverage_Analysis_from_the_Command_LIne.html">dotCover CLI</a></td>
-    <td><code>dotcover.xml</code> (dotCover <a href="troubleshooting-common-issues/#detailedxml">detailedXML</a>)</td>
+    <td><code>dotcover.xml</code> (dotCover <a href="troubleshooting-coverage-cli-issues/#detailedxml">detailedXML</a>)</td>
 </tr>
 <tr>
     <td><a href="https://github.com/coverlet-coverage/coverlet">Coverlet</a></td>
@@ -3604,7 +3604,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <p><strong>CODACY_USERNAME:</strong> Name of your organization on the Git provider, or your username on the Git provider if you're using a personal organization.</p>
 </li>
 <li>
-<p><strong>CODACY_PROJECT_NAME:</strong> Name of the repository for which you're uploading the coverage information.</p>
+<p><strong>CODACY_PROJECT_NAME:</strong> Name of the repository for which you're uploading the coverage data.</p>
 </li>
 </ul>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_TOKEN</span><span class="o">=</span>&lt;your account API token&gt;
@@ -3629,7 +3629,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <p>Run Codacy Coverage Reporter <strong>on the root of the locally checked out branch of your Git repository</strong>, specifying the relative path to the coverage report to upload:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report -r &lt;coverage report file name&gt;
 </code></pre></div>
-<p>Check the console output to validate that the Codacy Coverage Reporter <strong>detected the correct commit SHA-1 hash</strong> and <strong>successfully uploaded</strong> the coverage data to Codacy. If you need help, <a href="troubleshooting-common-issues/">check the troubleshooting page</a> for solutions to the most common setup issues.</p>
+<p>Check the console output to validate that the Codacy Coverage Reporter <strong>detected the correct commit SHA-1 hash</strong> and <strong>successfully uploaded</strong> the coverage data to Codacy. If you need help, <a href="troubleshooting-coverage-cli-issues/">check the troubleshooting page</a> for solutions to the most common issues while running the CLI.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Be sure to also check the <a href="uploading-coverage-in-advanced-scenarios/">instructions for more advanced scenarios</a> while uploading the coverage data to Codacy, such as when running parallel tests, using monorepos, or testing source code in multiple or unsupported languages.</p>
@@ -3655,28 +3655,161 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <p>Follow these instructions to validate that your coverage setup is working correctly:</p>
 <ol>
 <li>
-<p>On Codacy, open your <strong>Repository Settings</strong>, tab <strong>Coverage</strong>, and observe the list of recent coverage reports in the section <strong>Test your integration</strong> to make sure that Codacy received the coverage data successfully for the <strong><a href="troubleshooting-common-issues/#commit-detection">correct commit SHA-1 hash</a> and branch</strong>, and that it processed the coverage data successfully.</p>
+<p>On Codacy, open your <strong>Repository Settings</strong>, tab <strong>Coverage</strong>, and observe the list of recent coverage reports in the section <strong>Test your integration</strong>.</p>
+<p>Make sure that Codacy receives and processes the coverage data successfully for <strong>at least two commits</strong>.</p>
 <p><img alt="Testing the coverage integration" src="images/coverage-test-integration.png" /></p>
-<p>If you make adjustments to your setup and upload new coverage data, click the button <strong>Test integration</strong> to refresh the table.</p>
+<p>If there are commits with a status different from <strong>Processed</strong>, please follow the troubleshooting instructions for the corresponding error status and click the button <strong>Test integration</strong> to display any new coverage reports uploaded to Codacy.</p>
+<p><table>
+<colgroup>
+    <col style="width: 25%;"/>
+    <col style="width: 30%;"/>
+    <col style="width: 45%;"/>
+</colgroup>
+<thead>
+<tr>
+    <th>Error status</th>
+    <th>What causes the error?</th>
+    <th>How to fix the error?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+    <td rowspan="2">
+        <p style="color: #EF5454;"><strong>Commit not found</strong></p>
+        <p>Codacy doesn't have information about the commit associated with the coverage data.</p>
+    </td>
+    <td>
+        Codacy didn't receive the webhook for that commit from the Git provider.
+    </td>
+    <td>
+        <p>Wait a few more minutes until Codacy detects the commit and the status will update automatically.</p>
+        <p>If it takes more than 5 to 10 minutes for Codacy to detect the commit, the webhook call from the Git provider may have been lost. You can wait until you push a new commit or contact <a href="mailto:support@codacy.com">support@codacy.com</a> asking us to sync the commits on Codacy with your Git provider.</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        The commit SHA-1 hash sent while uploading coverage is wrong.
+    </td>
+    <td>
+        Make sure that the Codacy Coverage Reporter <a href="troubleshooting-coverage-cli-issues/#commit-detection">detects the correct commit SHA-1 hash</a> for the uploaded coverage data.
+    </td>
+</tr>
+<tr>
+   <td rowspan="2">
+        <p style="color: #EF5454;"><strong>Branch not enabled</strong></p>
+        <p>The commit associated with the coverage data doesn't belong to any branch that Codacy is analyzing.</p>
+    </td>
+    <td>
+        Coverage was uploaded for a commit that belongs to a branch that isn't analyzed by Codacy.
+    </td>
+    <td>
+        <p>Make sure that the <a href="../repositories-configure/managing-branches/">branch or target branch for pull requests is enabled on Codacy</a>.</p>
+        <p>If Codacy is already analyzing the branch, make sure that the Codacy Coverage Reporter <href="troubleshooting-coverage-cli-issues/#commit-detection">detects the correct commit SHA-1 hash</a> for the uploaded coverage data.</p>
+    </td>
+</tr>
+<tr>
+    <td>
+        Coverage was uploaded for a commit that no longer belongs to any branch on the Git repository, for example after a rebase or squash merge.
+    </td>
+    <td>
+        The error status is expected in this scenario and you can ignore it.
+    </td>
+</tr>
+<tr>
+    <td rowspan="5">
+        <p style="color: #EF5454;"><strong>Commit not analyzed</strong></p>
+        <p>Due to technical limitations, Codacy only reports coverage for a commit after successfully completing the static code analysis of that commit.</p>
+    </td>
+    <td>
+        Codacy hasn't finished analyzing the commit yet.
+    </td>
+    <td>
+        Wait a few more minutes until Codacy completes the static code analysis for the commit and the status will update automatically.
+    </td>
+</tr>
+<tr>
+    <td>
+        Codacy didn't analyze the commit on a private repository because the commit author isn't a member of the Codacy organization.
+    </td>
+    <td>
+        Make sure that you <a href="../organizations/managing-people/#adding-people">add all commit authors as members of the Codacy organization</a>.
+    </td>
+</tr>
+<tr>
+    <td>
+        Codacy skipped analyzing the commit because there are more recent commits in the branch.
+    </td>
+    <td>
+        Upload coverage data for the most recent commit in the branch.
+    </td>
+</tr>
+<tr>
+    <td>
+        The setting <strong>Run analysis on your build server</strong> is on, but your client-side tools didn't upload results to Codacy.
+    </td>
+    <td>
+        Make sure that your <a href="../related-tools/local-analysis/client-side-tools/">client-side tools</a> run successfully and upload the results to Codacy to complete the analysis.
+    </td>
+</tr>
+<tr>
+    <td>
+        Codacy ran into an error while analyzing the commit.
+    </td>
+    <td>
+        Solve the issue that caused the analysis to fail (such as <a href="../faq/troubleshooting/we-no-longer-have-access-to-this-repository/">Codacy losing access to the repository</a>), or contact us at <a href="mailto:support@codacy.com">support@codacy.com</a> asking for help.
+    </td>
+</tr>
+<tr>
+    <td rowspan="3">
+        <p style="color: #2562EA;"><strong>Pending</strong></p>
+        <p>Codacy is waiting to receive more coverage data before reporting the coverage for a commit.</p>
+    </td>
+    <td>
+        Coverage was uploaded with the <code>--partial</code> flag but Codacy didn't receive the <code>final</code> notification.
+    </td>
+    <td>
+        Make sure that after uploading all partial reports you <a href="uploading-coverage-in-advanced-scenarios/#multiple-reports-sequence">send the <code>final</code> notification</a>.
+    </td>
+</tr>
+<tr>
+    <td>
+        The uploaded coverage data only includes information for files that are <a href="../repositories-configure/ignoring-files/">ignored on Codacy</a>.
+    </td>
+    <td>
+        Check <a href="../repositories-configure/ignoring-files/">which files are ignored on Codacy</a> and make sure that you're generating coverage reports for the correct files in your repository.
+    </td>
+</tr>
+<tr>
+    <td>
+        An empty coverage data set (<code>"total": 0</code>) was uploaded using the Codacy API.
+    </td>
+    <td>
+        Codacy must receive coverage data for at least one file to calculate and display coverage.
+    </td>
+</tr>
+</table></p>
 </li>
 <li>
-<p>Make sure that there are <strong>at least two commits</strong> that uploaded coverage data to Codacy and were successfully analyzed by Codacy.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>
-Codacy only takes the uploaded coverage data into account after successfully analyzing each commit.</p>
-<p>Make sure that you <a href="../organizations/managing-people/#adding-people">invite or ask your team members to join your organization on Codacy</a> so that Codacy analyzes their commits on private repositories.</p>
-</div>
-</li>
+<p>Check that Codacy displays the coverage metrics for the latest commits and pull requests.</p>
+<p><img alt="Coverage metrics displayed on Codacy" src="images/coverage-codacy-ui.png" /></p>
+<p>If Codacy doesn't display the coverage metrics for the latest commits or pull requests (represented by <code>-</code>), please validate the following:</p>
+<ul>
+<li>Make sure that the file paths included in your coverage reports are relative to the root directory of your repository. For example, <code>src/index.js</code>.</li>
 <li>
-<p>Check that Codacy displays the coverage information for the latest commits and pull requests.</p>
-<p><img alt="Coverage data displayed on Codacy" src="images/coverage-codacy-ui.png" /></p>
+<p>To display the coverage variation metric in pull requests, make sure that you have uploaded coverage data for both:</p>
+<ul>
+<li>The common ancestor commit of the pull request branch and the target branch</li>
+<li>The last commit in the pull request branch</li>
+</ul>
+<p>The following diagram highlights the commits that must have received coverage data for Codacy to display the coverage variation metric on a pull request:</p>
+<p><img alt="Commits that must have received coverage data" src="images/coverage-pr-commits.png" /></p>
 </li>
-<li>
-<p><strong>If Codacy doesn't display the coverage data</strong> for the latest commits or pull requests (represented by <code>-</code>), please <a href="troubleshooting-common-issues/#no-coverage-visible">follow these troubleshooting instructions</a> or contact us for more help:</p>
+</ul>
+</li>
+</ol>
 <div class="admonition note">
-<p class="admonition-title">Opening a Support ticket</p>
-<p>If you need more help setting up coverage on your repository please contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a> including the following information:</p>
+<p class="admonition-title">Need help?</p>
+<p>If you need help setting up coverage on your repository please contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a> including the following information:</p>
 <ul>
 <li>URL of your repository on Codacy</li>
 <li>Your CI/CD configuration files and the name of your CI/CD platform</li>
@@ -3686,8 +3819,6 @@ Codacy only takes the uploaded coverage data into account after successfully ana
 <li>Any other relevant information or screenshots of your setup</li>
 </ul>
 </div>
-</li>
-</ol>
               
               
                 
@@ -3844,7 +3975,7 @@ Codacy only takes the uploaded coverage data into account after successfully ana
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 1, 2022</span>
     
   </small>
 </div>
