@@ -19,7 +19,7 @@ To configure the tools and code patterns for your repository:
 
     ![Toggling tools](images/code-patterns-toggle-tools.png)
 
-1.  Select each tool to configure and enable or disable the corresponding code patterns using the checkbox next to each pattern.
+1.  Select each tool to configure and toggle the corresponding code patterns using the checkbox next to each pattern.
 
     ![Configuring code patterns](images/code-patterns-configure.png)
 
