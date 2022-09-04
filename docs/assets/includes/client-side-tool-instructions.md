@@ -1,4 +1,4 @@
-1.  [Enable {{ page.meta.tool_name }}](../../repositories-configure/configuring-code-patterns.md) on your repository **Code patterns** page.
+1.  [Enable {{ page.meta.tool_name }}](../../repositories-configure/configuring-code-patterns.md) and configure the corresponding code patterns on your repository **Code patterns** page.
 
 1.  Enable **Run analysis on your build server** on your repository **Settings**, tab **General**, **Repository analysis**.
 
