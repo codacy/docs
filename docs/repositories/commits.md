@@ -43,9 +43,8 @@ This area displays the quality gate status and an overview of the code quality m
     -   **Complexity:** Variation of complexity
 {% if page.meta.page_name == "commit" %}
     -   **Coverage:** Variation of code coverage percentage relative to the parent commit
-{% endif %}
-{% if page.meta.page_name == "pull request" %}
-    -   **Coverage variation:** Variation of code coverage relative to the target branch
+{% else %}
+    -   **Coverage variation:** Variation of code coverage percentage relative to the target branch
     -   **Diff coverage:** Code coverage of the coverable lines added or changed by the pull request, or `∅` (not applicable) if there aren't any coverable lines added or changed
 {% endif %}
 
@@ -110,12 +109,7 @@ For each file Codacy displays the variation of the following [code quality metri
 -   **Issues:** Number of new or fixed issues
 -   **Duplication:** Variation of the number of duplicated code blocks
 -   **Complexity:** Variation of complexity
-{% if page.meta.page_name == "commit" %}
--   **Coverage:** Variation of code coverage percentage relative to the parent commit
-{% endif %}
-{% if page.meta.page_name == "pull request" %}
--   **Coverage variation:** Variation of code coverage relative to the target branch
-{% endif %}
+-   **Coverage variation:** Variation of code coverage percentage relative to the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}
 
 Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
 
