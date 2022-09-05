@@ -1,6 +1,6 @@
 # Managing branches
 
-Codacy automatically triggers analysis on the main branch of your repository (typically `master` or `main`), and also supports analyzing multiple branches.
+Codacy automatically triggers analysis on the main branch of your repository (typically `master` or `main` as configured on your Git provider), and also supports analyzing multiple branches.
 
 !!! note
     We recommend that you set the main branch on Codacy to the default branch of your Git repository. Codacy displays information for the main branch by default on dashboards and the repositories list.
