@@ -33,7 +33,7 @@ See <a href="../../troubleshooting/why-is-my-file-over-150-kb-missing/">Why is m
 <td>10 MB</td>
 <td>
 Codacy doesn't parse code coverage reports that are over the file size limit.<br/><br/>
-See <a href="../../../coverage-reporter/troubleshooting-common-issues/#jsonparseexception-while-uploading-coverage-data">JsonParseException while uploading coverage data</a>
+See <a href="../../../coverage-reporter/troubleshooting-coverage-cli-issues/#jsonparseexception-while-uploading-coverage-data">JsonParseException while uploading coverage data</a>
 </td>
 </tr>
 

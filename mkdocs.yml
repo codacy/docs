@@ -449,7 +449,7 @@ plugins:
               "coverage-reporter/advanced/authenticating-using-account-token.md": "coverage-reporter/index.md"
               "coverage-reporter/advanced/multiple-reports.md": "coverage-reporter/index.md"
               "coverage-reporter/advanced/installation-methods.md": "coverage-reporter/alternative-ways-of-running-coverage-reporter.md"
-              "coverage-reporter/troubleshooting/common-issues.md": "coverage-reporter/troubleshooting-common-issues.md"
+              "coverage-reporter/troubleshooting/common-issues.md": "coverage-reporter/troubleshooting-coverage-cli-issues.md"
               "coverage-reporter/troubleshooting/commit-detection.md": "coverage-reporter/index.md"
               "coverage-reporter/troubleshooting/swift-objectivec.md": "coverage-reporter/index.md"
               "faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
@@ -535,6 +535,7 @@ plugins:
               "faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md"
               "faq/repositories/how-do-i-manually-force-a-repository-update.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
               "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md": "faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
+              "coverage-reporter/troubleshooting-common-issues.md": "coverage-reporter/troubleshooting-coverage-cli-issues.md"
 
 nav:
     - Documentation home: "index.md"

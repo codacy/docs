@@ -89,8 +89,13 @@ window.addEventListener("DOMContentLoaded", function() {
         // Obtain JSON listing all available versions
         xhr.open("GET", window.location.origin + "/versions.json");
         xhr.onload = function() {
-            var versions = JSON.parse(this.responseText);
-            callback(versions);
+            if (this.status === 404) {
+                // Use mock JSON as fallback
+                var staticJSON = [{"version": "latest", "title": "Cloud (Latest)", "aliases": []}];
+                callback(staticJSON)
+            } else {
+                callback(JSON.parse(this.responseText));
+            }
         };
         xhr.send();
     }
@@ -158,7 +163,4 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 
     fetchVersions(generateVersionSwitcher);
-    // used to test without mike
-    // var staticJSON = [{"version": "v1.4.0", "title": "v1.4.0", "aliases": []}, {"version": ".", "title": "Cloud", "aliases": []}];
-    // generateVersionSwitcher(staticJSON)
 });
