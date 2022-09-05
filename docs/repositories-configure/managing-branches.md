@@ -3,7 +3,7 @@
 Codacy automatically triggers analysis on the main branch of your repository (typically `master` or `main`), and also supports analyzing multiple branches.
 
 !!! note
-    We recommend that you set the main branch on Codacy to the default branch of your Git repository. Codacy displays information for the main branch on dashboards and the repositories list by default.
+    We recommend that you set the main branch on Codacy to the default branch of your Git repository. Codacy displays information for the main branch by default on dashboards and the repositories list.
 
 To change the main branch of your repository or enable analysis on other branches, open your repository **Settings**, tab **Branches**. Enabling a new branch triggers an initial analysis of that branch and the analysis results and information for that branch will become available after the analysis is complete.
 
