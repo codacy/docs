@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to run SpotBugs as a client-side tool on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2022-07-13 18:22:28">
+        <meta http-equiv="last-modified" content="2022-09-05 14:48:48">
       
       
         <link rel="canonical" href="https://docs.codacy.com/related-tools/local-analysis/running-spotbugs/">
@@ -3437,7 +3437,10 @@
 <p>To run SpotBugs as a <a href="../client-side-tools/">client-side tool</a>:</p>
 <ol>
 <li>
-<p>Enable <strong>Run analysis on your build server</strong> in your repository <strong>Settings</strong>, tab <strong>General</strong>, <strong>Repository analysis</strong>.</p>
+<p><a href="../../../repositories-configure/configuring-code-patterns/">Enable SpotBugs</a> and configure the corresponding code patterns on your repository <strong>Code patterns</strong> page.</p>
+</li>
+<li>
+<p>Enable <strong>Run analysis on your build server</strong> on your repository <strong>Settings</strong>, tab <strong>General</strong>, <strong>Repository analysis</strong>.</p>
 <p>This setting enables Codacy to wait for the results of the local analysis before resuming the analysis of your commits.</p>
 <p><img alt="Run analysis on your build server" src="../images/run-analysis-through-build-server.png" /></p>
 </li>
@@ -3659,7 +3662,7 @@ engines:
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 13, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 5, 2022</span>
     
   </small>
 </div>
