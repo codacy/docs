@@ -1,5 +1,6 @@
 ---
 description: Instructions on how to run deadcode as a client-side tool on Codacy.
+tool_name: deadcode
 ---
 
 # Running deadcode
