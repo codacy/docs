@@ -640,6 +640,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2022:
+                      - release-notes/cloud/cloud-2022-08.md
                       - release-notes/cloud/cloud-2022-07.md
                       - release-notes/cloud/cloud-2022-06.md
                       - release-notes/cloud/cloud-2022-05.md
