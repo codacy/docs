@@ -43,9 +43,8 @@ This area displays the quality gate status and an overview of the code quality m
     -   **Complexity:** Variation of complexity
 {% if page.meta.page_name == "commit" %}
     -   **Coverage:** Variation of code coverage percentage relative to the parent commit
-{% endif %}
-{% if page.meta.page_name == "pull request" %}
-    -   **Coverage variation:** Variation of code coverage relative to the target branch
+{% else %}
+    -   **Coverage variation:** Variation of code coverage percentage relative to the target branch
     -   **Diff coverage:** Code coverage of the coverable lines added or changed by the pull request, or `∅` (not applicable) if there aren't any coverable lines added or changed
 {% endif %}
 
@@ -103,21 +102,16 @@ The **New Duplication** and **Fixed Duplication** tabs display the list of dupli
 
 ## Files tab
 
-The **Files** tab displays an overview of the code quality metrics for each file that the {{ page.meta.page_name }} updated or caused the code coverage value to change. <!--NOTE See https://codacy.atlassian.net/browse/CY-5946 for a discussion around changing this behavior in the future-->
-
-For each file Codacy displays the variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) introduced by the {{ page.meta.page_name }}, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
+The **Files** tab displays the variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) that the {{ page.meta.page_name }} introduced to the files in your repository, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
 
 -   **Issues:** Number of new or fixed issues
 -   **Duplication:** Variation of the number of duplicated code blocks
 -   **Complexity:** Variation of complexity
-{% if page.meta.page_name == "commit" %}
--   **Coverage:** Variation of code coverage percentage relative to the parent commit
-{% endif %}
-{% if page.meta.page_name == "pull request" %}
--   **Coverage variation:** Variation of code coverage relative to the target branch
-{% endif %}
+-   **Coverage variation:** Variation of code coverage percentage relative to the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}
 
 Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
+
+The option **Show files without code quality changes** allows you to list all files that the {{ page.meta.page_name }} updated, even if their code quality metrics didn't change.
 
 <!-- vale off -->
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
