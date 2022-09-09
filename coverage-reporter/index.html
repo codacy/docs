@@ -11,7 +11,7 @@
         <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2022-09-01 10:15:38">
+        <meta http-equiv="last-modified" content="2022-09-08 14:56:40">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
@@ -3785,6 +3785,14 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </tr>
 <tr>
     <td>
+        The file paths in the coverage report don't match the ones on the repository <strong>Files</strong> page on Codacy.
+    </td>
+    <td>
+        Make sure that the file paths included in your coverage report are relative to the root directory of your repository. For example, <code>src/index.js</code>.
+    </td>
+</tr>
+<tr>
+    <td>
         The uploaded coverage data only includes information for files that are <a href="../repositories-configure/ignoring-files/">ignored on Codacy</a>.
     </td>
     <td>
@@ -3804,19 +3812,13 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <li>
 <p>Check that Codacy displays the coverage metrics for the latest commits and pull requests.</p>
 <p><img alt="Coverage metrics displayed on Codacy" src="images/coverage-codacy-ui.png" /></p>
-<p>If Codacy doesn't display the coverage metrics for the latest commits or pull requests (represented by <code>-</code>), please validate the following:</p>
-<ul>
-<li>Make sure that the file paths included in your coverage reports are relative to the root directory of your repository. For example, <code>src/index.js</code>.</li>
-<li>
-<p>To display the coverage variation metric in pull requests, make sure that you have uploaded coverage data for both:</p>
+<p>If Codacy doesn't display the coverage variation metric in pull requests (represented by <code>-</code>), make sure that you have uploaded coverage data for both:</p>
 <ul>
 <li>The common ancestor commit of the pull request branch and the target branch</li>
 <li>The last commit in the pull request branch</li>
 </ul>
 <p>The following diagram highlights the commits that must have received coverage data for Codacy to display the coverage variation metric on a pull request:</p>
 <p><img alt="Commits that must have received coverage data" src="images/coverage-pr-commits.png" /></p>
-</li>
-</ul>
 </li>
 </ol>
 <div class="admonition note">
@@ -3987,7 +3989,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 1, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 8, 2022</span>
     
   </small>
 </div>
