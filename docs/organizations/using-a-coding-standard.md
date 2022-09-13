@@ -41,6 +41,8 @@ To create a coding standard for your organization:
         -   You can use the filters to help you find the relevant tools and code patterns. The recommended configurations are manually curated by Codacy or based on the default code patterns of the tools and are marked with the icon ![Recommended icon](images/coding-standard-recommended-icon.png).
         -   To toggle multiple code patterns at once, click the checkbox of the first pattern and **shift+click** the checkbox of the last pattern in a range.
 
+            Alternatively, click the checkbox on the header of the code pattern list to toggle all code patterns that are currently visible on the list.
+
     ![Configuring the tools and patterns for the coding standard](images/coding-standard-configure-tools.png)
 
 1.  Select existing repositories that should follow the new coding standard and click **Save and apply standard**.

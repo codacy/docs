@@ -1,5 +1,6 @@
 ---
 description: Instructions on how to run aligncheck as a client-side tool on Codacy.
+tool_name: aligncheck
 ---
 
 # Running aligncheck
