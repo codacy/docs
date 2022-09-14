@@ -35,7 +35,7 @@ The following screenshot displays the default configuration values:
 
         -   **Must improve** the coverage, set the value between 0 and 1%
         -   **Can't decrease** the coverage, set the value to 0%
-        -   **Can decrease** the coverage, set the value between 0 and -100%
+        -   **Can decrease** the coverage, set the value between -100 and 0%
 
 ## Goals
 
