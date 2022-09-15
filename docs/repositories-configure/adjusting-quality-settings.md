@@ -33,9 +33,9 @@ The following screenshot displays the default configuration values:
     !!! tip
         To ensure that commits and pull requests:
 
-        -   **Must improve** the coverage, set the value between 0 and 1%
-        -   **Can't decrease** the coverage, set the value to 0%
-        -   **Can decrease** the coverage, set the value between -100 and 0%
+        -   **Must improve** the coverage, set the value between 0.00 and 1.00%
+        -   **Can't decrease** the coverage, set the value to 0.00%
+        -   **Can decrease** the coverage, set the value between -100.00 and 0.00%
 
 ## Goals
 
