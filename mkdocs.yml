@@ -211,10 +211,10 @@ plugins:
               "hc/en-us/articles/208953205.md": "account/managing-your-profile.md"
               "hc/en-us/articles/208953205-Changing-your-username-and-avatar.md": "account/managing-your-profile.md"
               "hc/en-us/articles/208953205-Managing-your-profile.md": "account/managing-your-profile.md"
-              "hc/en-us/articles/212622529.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
-              "hc/en-us/articles/212622529-Why-can-t-I-see-or-add-my-organization-s-repositories-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
-              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-projects-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
-              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-s-projects-.md": "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md"
+              "hc/en-us/articles/212622529.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
+              "hc/en-us/articles/212622529-Why-can-t-I-see-or-add-my-organization-s-repositories-.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
+              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-projects-.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
+              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-s-projects-.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
               "hc/en-us/articles/212799365.md": "getting-started/adding-a-codacy-badge.md"
               "hc/en-us/articles/212799365-Badges.md": "getting-started/adding-a-codacy-badge.md"
               "hc/en-us/articles/213149905.md": "faq/general/how-do-i-change-my-email-address-on-codacy.md"
@@ -536,6 +536,7 @@ plugins:
               "faq/repositories/how-do-i-manually-force-a-repository-update.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
               "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md": "faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
               "coverage-reporter/troubleshooting-common-issues.md": "coverage-reporter/troubleshooting-coverage-cli-issues.md"
+              "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
 
 nav:
     - Documentation home: "index.md"
@@ -617,7 +618,6 @@ nav:
                 - faq/general/how-do-i-change-my-email-address-on-codacy.md
                 - faq/general/how-can-i-change-or-cancel-my-plan.md
           - Repositories:
-                - faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md
                 - faq/repositories/how-do-i-reanalyze-my-repository.md
                 - faq/repositories/i-renamed-my-repository-on-the-git-provider.md
                 - faq/repositories/i-moved-my-repository-on-the-git-provider.md
@@ -629,6 +629,7 @@ nav:
                 - faq/code-analysis/how-to-skip-an-analysis.md
                 - faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md
           - Troubleshooting:
+                - faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md
                 - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
                 - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
                 - faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md
