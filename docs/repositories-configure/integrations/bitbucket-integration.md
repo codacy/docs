@@ -52,6 +52,8 @@ Adds comments on the lines of the pull request where Codacy finds new issues. Cl
 
 ### Pull Request Summary
 
+!!! note "This feature isn't available for Bitbucket Server."
+
 Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication.
 
 ![Pull request summary on Bitbucket](images/bitbucket-integration-pr-summary.png)
