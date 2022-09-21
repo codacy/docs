@@ -12,12 +12,6 @@ These release notes are for [Codacy Self-hosted v8.2.0](https://github.com/codac
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
-<!--TODO Check these issues manually
-
-Jira issues with disabled release notes
--   https://codacy.atlassian.net/browse/CY-6425
--->
-
 ## Upgrading Codacy Self-hosted
 
 Follow the steps below to upgrade to Codacy Self-hosted v8.2.0:
@@ -71,6 +65,8 @@ To upgrade PostgreSQL:
     You can still list all files that the pull request updated, even if their code quality metrics didn't change, by toggling the new option **Show files without code quality changes**. (CY-6455)
 
     ![Updated Files tab focusing only on files that have a variation in the code quality metrics](../images/cy-6455.png)
+
+-   Added support for the ESLint plugin [<span class="skip-vale">@shopify/eslint-plugin</span>](https://www.npmjs.com/package/@shopify/eslint-plugin). (CY-6425)
 
 -   Codacy Self-hosted now supports [integrating with Bitbucket Server instances](https://docs.codacy.com/v8.2/chart/configuration/integrations/bitbucket-server/) that have been configured with [custom context paths](https://confluence.atlassian.com/bitbucketserver/change-bitbucket-s-context-path-776640153.html). (CY-6251)
 
