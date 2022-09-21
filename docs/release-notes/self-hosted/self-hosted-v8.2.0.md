@@ -15,7 +15,6 @@ These release notes are for [Codacy Self-hosted v8.2.0](https://github.com/codac
 <!--TODO Check these issues manually
 
 Jira issues with disabled release notes
--   https://codacy.atlassian.net/browse/CY-6439
 -   https://codacy.atlassian.net/browse/CY-6425
 -->
 
