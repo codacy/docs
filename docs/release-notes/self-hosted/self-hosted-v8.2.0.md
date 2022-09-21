@@ -15,7 +15,6 @@ These release notes are for [Codacy Self-hosted v8.2.0](https://github.com/codac
 <!--TODO Check these issues manually
 
 Jira issues without release notes
--   https://codacy.atlassian.net/browse/CY-6251
 -   https://codacy.atlassian.net/browse/CY-6166
 -   https://codacy.atlassian.net/browse/CY-3958
 
@@ -79,6 +78,8 @@ To upgrade PostgreSQL:
     You can still list all files that the pull request updated, even if their code quality metrics didn't change, by toggling the new option **Show files without code quality changes**. (CY-6455)
 
     ![Updated Files tab focusing only on files that have a variation in the code quality metrics](../images/cy-6455.png)
+
+-   Codacy Self-hosted now supports [integrating with Bitbucket Server instances](https://docs.codacy.com/v8.2/chart/configuration/integrations/bitbucket-server/) that have been configured with [custom context paths](https://confluence.atlassian.com/bitbucketserver/change-bitbucket-s-context-path-776640153.html). (CY-6251)
 
 -   The [Organization Overview](https://docs.codacy.com/v8.2/organizations/organization-overview/) now allows filtering repositories to help you see and focus on the information for the repositories that matter most to your team. (CY-5573)
 
