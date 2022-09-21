@@ -68,6 +68,10 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.2.0:
 
 -   Improved the error handling for the [Stylelint exit codes](https://stylelint.io/user-guide/usage/cli/#exit-codes). (IO-47)
 
+-   The [Organization Overview](../../organizations/organization-overview.md) now allows filtering repositories to help you see and focus on the information for the repositories that matter most to your team. (CY-5573)
+
+    ![Repository filter on the Organization Overview](../images/cy-5573.png)
+
 ## Bug fixes
 
 -   Codacy now supports user accounts with email addresses containing the special characters specified in [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322#section-3.4.1). (PLUTO-73)
