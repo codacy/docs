@@ -145,13 +145,13 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **[Revive 1.2.3](https://github.com/mgechev/revive/releases/tag/v1.2.3) (updated from 1.2.1)**
 -   **[RuboCop 1.32.0](https://github.com/rubocop/rubocop/releases/tag/v1.32.0) (updated from 1.28.2)**
 -   Scalastyle 1.5.0
--   **[ShellCheck 0.8.0](https://github.com/koalaman/shellcheck/blob/master/CHANGELOG.md) (updated from v0.7.2)**
+-   **[ShellCheck 0.8.0](https://github.com/koalaman/shellcheck/blob/master/CHANGELOG.md#v080---2021-11-06) (updated from v0.7.2)**
 -   Sonar C# 8.39
 -   Sonar Visual Basic 8.15
 -   spectral-rulesets 1.2.7
 -   SpotBugs 4.5.3
 -   SQLint 0.2.1
--   **[Staticcheck 2022.1.3](https://staticcheck.io/changes/2022.1.3/#2022.1.3) (updated from 2020.1.6)**
+-   **[Staticcheck 2022.1.3](https://staticcheck.io/changes/2022.1/#2022.1.3) (updated from 2020.1.6)**
 -   Stylelint 14.2.0
 -   SwiftLint 0.43.1
 -   Tailor 0.12.0
