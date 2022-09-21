@@ -64,17 +64,16 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.2.0:
 
     ![Coverage variation on the Pull request quality overview](../images/io-92.png)
 
+-   Improved the Codacy Analysis CLI output to provide better feedback when tools fail to run. (IO-47)
+
+-   Improved the error handling for the [Stylelint exit codes](https://stylelint.io/user-guide/usage/cli/#exit-codes). (IO-47)
+
 ## Bug fixes
 
 -   Codacy now supports user accounts with email addresses containing the special characters specified in [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322#section-3.4.1). (PLUTO-73)
 -   Fixed an issue that prevented changing code pattern configurations in a coding standard if Codacy added the code patterns only after the coding standard had been created. (PLUTO-37)
--   Improved the Codacy Analysis CLI output to provide better feedback when tools fail to run.
-
-    Improved the error handling for the [Stylelint exit codes](https://stylelint.io/user-guide/usage/cli/#exit-codes).
-
-    Fixed an issue in the Codacy Analysis CLI and the cloc metrics tool that made the tools fail when running for an empty set of files.
-
-    Fixed an issue that caused PMD to fail when called in some modes. (IO-47)
+-   Fixed an issue in the Codacy Analysis CLI and the cloc metrics tool that made the tools fail when running for an empty set of files. (IO-47)
+-   Fixed an issue that caused PMD to fail when called in some modes. (IO-47)
 
 ## Tool versions
 
