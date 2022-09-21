@@ -45,14 +45,17 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.2.0:
 
 ## Product enhancements
 
--   The GitHub integration now uses a GitHub Apps token instead of a personal one so that the following features continue working even if the person who created the integration leaves the Codacy organization:
+-   The [GitHub integration](../../repositories-configure/integrations/github-integration.md) now uses a GitHub Apps token instead of a personal one so that the following features continue working even if the person who created the integration leaves the organization on GitHub:
 
     -   Analyzing new commits and pull requests
     -   Updating the status check of pull requests
     -   Suggesting changes
     -   Creating comments and issues on GitHub for issues detected by Codacy
 
-    Additionally, all activity related to the GitHub integration features now appear as having been performed by Codacy instead of the person who created the integration. ![Suggested fix created by the Codacy GitHub integration](../images/pluto-77.png) (PLUTO-77)
+    Additionally, all activity related to the GitHub integration features now appear as having been performed by Codacy instead of the person who created the integration. (PLUTO-36, PLUTO-77)
+
+    ![Suggested fix created by the Codacy GitHub integration](../images/pluto-77.png)
+
 -   You can now [define the coverage variation threshold](https://codacy.slack.com/archives/C026D0HRG/p1637833293034700) on the **Quality settings** page using a decimal value. (IO-54)
 -   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](https://docs.codacy.com/v8.2/repositories/pull-requests/), [Commit](https://docs.codacy.com/v8.2/repositories/commits/), and [Files](https://docs.codacy.com/v8.2/repositories/files/) page.
 
