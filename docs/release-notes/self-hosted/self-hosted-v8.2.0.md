@@ -58,10 +58,12 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.2.0:
 
 -   Added the new API endpoint [searchOrganizationRepositoriesWithAnalysis](https://api.codacy.com/api/api-docs#searchorganizationrepositorieswithanalysis) to allow searching for repositories in more advanced use cases. For now, it's possible to search for repositories filtered by a list of names. (PLUTO-45)
 
--   You can now [define the coverage variation threshold](https://codacy.slack.com/archives/C026D0HRG/p1637833293034700) on the **Quality settings** page using a decimal value. (IO-54)
--   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](https://docs.codacy.com/v8.2/repositories/pull-requests/), [Commit](https://docs.codacy.com/v8.2/repositories/commits/), and [Files](https://docs.codacy.com/v8.2/repositories/files/) page.
+-   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](../../repositories/pull-requests.md), [Commit](../../repositories/commits.md), and [Files](../../repositories/files.md) page, and you can [define quality gates](../../repositories-configure/adjusting-quality-settings.md#gates) with a coverage variation threshold using the same precision.
 
-    The increased precision of the metric reflects the code coverage changes better by reducing the false changes due to rounding errors. ![Coverage variation on the Pull request quality overview](../images/io-92.png) (IO-92)
+    The increased precision of the metric reflects the code coverage changes better by reducing the false changes due to rounding errors. (IO-54, IO-92, IO-93)
+
+    ![Coverage variation on the Pull request quality overview](../images/io-92.png)
+
 -   Codacy now [displays diff coverage as not applicable](https://docs.codacy.com/v8.2/repositories/pull-requests/#pull-request-quality-overview) (represented by `∅`) when there are no coverable lines included in a pull request, and correctly reports the pull request status on your Git provider in this scenario. ![Not applicable diff coverage](../images/cy-5960.png) (CY-5960)
 
 ## Bug fixes
