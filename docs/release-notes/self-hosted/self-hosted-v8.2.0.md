@@ -8,61 +8,26 @@ codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/6.
 
 # Self-hosted v8.2.0
 
-These release notes are for [Codacy Self-hosted v8.2.0](https://github.com/codacy/chart/releases/tag/8.2.0){: target="_blank"}, released on September 21, 2022. <!-- TODO Update release date -->
+These release notes are for [Codacy Self-hosted v8.2.0](https://github.com/codacy/chart/releases/tag/8.2.0){: target="_blank"}, released on September 21, 2022.<!-- TODO Update release date -->
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
-<!--TODO
-    Mention the change from https://github.com/codacy/chart/pull/744 in the release notes for the next Codacy Self-hosted version.
--->
 <!--TODO Check these issues manually
 
-Jira issues without release notes
+Mention the change from https://github.com/codacy/chart/pull/744 in the release notes for the next Codacy Self-hosted version.
 
-Epics:
--   https://codacy.atlassian.net/browse/CY-6336
-Bugs and Community Issues:
--   https://codacy.atlassian.net/browse/DOCS-340
-Others:
--   https://codacy.atlassian.net/browse/PLUTO-91
+Jira issues without release notes
 -   https://codacy.atlassian.net/browse/CY-6455
--   https://codacy.atlassian.net/browse/PLUTO-80
--   https://codacy.atlassian.net/browse/PLUTO-79
--   https://codacy.atlassian.net/browse/PLUTO-78
--   https://codacy.atlassian.net/browse/CY-6426
--   https://codacy.atlassian.net/browse/CY-6421
--   https://codacy.atlassian.net/browse/CY-6411
 -   https://codacy.atlassian.net/browse/CY-6410
--   https://codacy.atlassian.net/browse/CY-6340
 -   https://codacy.atlassian.net/browse/CY-6251
 -   https://codacy.atlassian.net/browse/CY-6166
 -   https://codacy.atlassian.net/browse/CY-3958
 
 Jira issues with disabled release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/IO-93
--   https://codacy.atlassian.net/browse/IO-95
--   https://codacy.atlassian.net/browse/PLUTO-36
--   https://codacy.atlassian.net/browse/CY-5701
-Bugs and Community Issues:
--   https://codacy.atlassian.net/browse/CY-6468
 -   https://codacy.atlassian.net/browse/CY-6459
--   https://codacy.atlassian.net/browse/CY-6454
--   https://codacy.atlassian.net/browse/CY-6449
 -   https://codacy.atlassian.net/browse/CY-6439
--   https://codacy.atlassian.net/browse/PLUTO-90
 -   https://codacy.atlassian.net/browse/CY-6425
--   https://codacy.atlassian.net/browse/CY-6394
--   https://codacy.atlassian.net/browse/CY-6393
--   https://codacy.atlassian.net/browse/CY-6391
--   https://codacy.atlassian.net/browse/IO-51
--   https://codacy.atlassian.net/browse/CY-6296
--   https://codacy.atlassian.net/browse/CY-6285
--   https://codacy.atlassian.net/browse/CY-6283
--   https://codacy.atlassian.net/browse/CY-6270
 -   https://codacy.atlassian.net/browse/CY-6191
--   https://codacy.atlassian.net/browse/CY-6134
 -->
 
 ## Upgrading Codacy Self-hosted
