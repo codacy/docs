@@ -56,6 +56,8 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.2.0:
 
     ![Suggested fix created by the Codacy GitHub integration](../images/pluto-77.png)
 
+-   Added the new API endpoint [searchOrganizationRepositoriesWithAnalysis](https://api.codacy.com/api/api-docs#searchorganizationrepositorieswithanalysis) to allow searching for repositories in more advanced use cases. For now, it's possible to search for repositories filtered by a list of names. (PLUTO-45)
+
 -   You can now [define the coverage variation threshold](https://codacy.slack.com/archives/C026D0HRG/p1637833293034700) on the **Quality settings** page using a decimal value. (IO-54)
 -   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](https://docs.codacy.com/v8.2/repositories/pull-requests/), [Commit](https://docs.codacy.com/v8.2/repositories/commits/), and [Files](https://docs.codacy.com/v8.2/repositories/files/) page.
 
@@ -72,7 +74,6 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.2.0:
     Fixed an issue in the Codacy Analysis CLI and the cloc metrics tool that made the tools fail when running for an empty set of files.
 
     Fixed an issue that caused PMD to fail when called in some modes. (IO-47)
--   Added the new API endpoint [searchOrganizationRepositoriesWithAnalysis](https://api.codacy.com/api/api-docs#searchorganizationrepositorieswithanalysis) to allow searching for repositories in more advanced use cases. For now, it's possible to search for repositories filtered by a list of names. (PLUTO-45)
 -   Codacy now supports user accounts with email addresses containing the special characters specified in [RFC 5322](https://www.rfc-editor.org/rfc/rfc5322#section-3.4.1). (PLUTO-73)
 
 ## Tool versions
