@@ -15,7 +15,6 @@ These release notes are for [Codacy Self-hosted v8.2.0](https://github.com/codac
 <!--TODO Check these issues manually
 
 Jira issues with disabled release notes
--   https://codacy.atlassian.net/browse/CY-6459
 -   https://codacy.atlassian.net/browse/CY-6439
 -   https://codacy.atlassian.net/browse/CY-6425
 -   https://codacy.atlassian.net/browse/CY-6191
@@ -89,6 +88,7 @@ To upgrade PostgreSQL:
 -   Fixed an issue that prevented changing code pattern configurations in a coding standard if Codacy added the code patterns only after the coding standard had been created. (PLUTO-37)
 -   Fixed an issue in the Codacy Analysis CLI and the cloc metrics tool that made the tools fail when running for an empty set of files. (IO-47)
 -   Fixed an issue that caused PMD to fail when called in some modes. (IO-47)
+-   Fixed a UI issue that caused the metrics displayed on the **Files** tab of pull request and commit pages to overlap the file names on smaller browser windows. (CY-6459)
 -   It's now possible to **Command+click** files on [pull request](https://docs.codacy.com/v8.2/repositories/pull-requests/#files-tab) and [commit](https://docs.codacy.com/v8.2/repositories/commits/#files-tab) pages to open the file details on new browser windows. (CY-6410)
 -   Now, all links to documentation pages on the Codacy UI navigate to the corresponding Codacy Self-hosted documentation version. (CY-3958)
 
