@@ -64,8 +64,6 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.2.0:
 
     ![Coverage variation on the Pull request quality overview](../images/io-92.png)
 
--   Codacy now [displays diff coverage as not applicable](https://docs.codacy.com/v8.2/repositories/pull-requests/#pull-request-quality-overview) (represented by `∅`) when there are no coverable lines included in a pull request, and correctly reports the pull request status on your Git provider in this scenario. ![Not applicable diff coverage](../images/cy-5960.png) (CY-5960)
-
 ## Bug fixes
 
 -   Fixed an issue that prevented changing code pattern configurations in a coding standard if Codacy added the code patterns only after the coding standard had been created. (PLUTO-37)
