@@ -12,6 +12,9 @@ These release notes are for [Codacy Self-hosted v8.2.0](https://github.com/codac
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
+<!--TODO
+    Mention the change from https://github.com/codacy/chart/pull/744 in the release notes for the next Codacy Self-hosted version.
+-->
 <!--TODO Check these issues manually
 
 Jira issues without release notes
