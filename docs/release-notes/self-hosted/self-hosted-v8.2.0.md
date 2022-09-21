@@ -45,7 +45,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.2.0:
 
 ## Product enhancements
 
--   The [GitHub integration](../../repositories-configure/integrations/github-integration.md) now uses a GitHub Apps token instead of a personal one so that the following features continue working even if the person who created the integration leaves the organization on GitHub:
+-   The [GitHub integration](https://docs.codacy.com/v8.2/repositories-configure/integrations/github-integration/) now uses a GitHub Apps token instead of a personal one so that the following features continue working even if the person who created the integration leaves the organization on GitHub:
 
     -   Analyzing new commits and pull requests
     -   Updating the status check of pull requests
@@ -58,7 +58,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.2.0:
 
 -   Added the new API endpoint [searchOrganizationRepositoriesWithAnalysis](https://api.codacy.com/api/api-docs#searchorganizationrepositorieswithanalysis) to allow searching for repositories in more advanced use cases. For now, it's possible to search for repositories filtered by a list of names. (PLUTO-45)
 
--   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](../../repositories/pull-requests.md), [Commit](../../repositories/commits.md), and [Files](../../repositories/files.md) page, and you can [define quality gates](../../repositories-configure/adjusting-quality-settings.md#gates) with a coverage variation threshold using the same precision.
+-   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](https://docs.codacy.com/v8.2/repositories/pull-requests/), [Commit](https://docs.codacy.com/v8.2/repositories/commits/), and [Files](https://docs.codacy.com/v8.2/repositories/files/) page, and you can [define quality gates](https://docs.codacy.com/v8.2/repositories-configure/adjusting-quality-settings/#gates) with a coverage variation threshold using the same precision.
 
     The increased precision of the metric reflects the code coverage changes better by reducing the false changes due to rounding errors. (IO-54, IO-92, IO-93)
 
@@ -68,7 +68,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.2.0:
 
 -   Improved the error handling for the [Stylelint exit codes](https://stylelint.io/user-guide/usage/cli/#exit-codes). (IO-47)
 
--   The [Organization Overview](../../organizations/organization-overview.md) now allows filtering repositories to help you see and focus on the information for the repositories that matter most to your team. (CY-5573)
+-   The [Organization Overview](https://docs.codacy.com/v8.2/organizations/organization-overview/) now allows filtering repositories to help you see and focus on the information for the repositories that matter most to your team. (CY-5573)
 
     ![Repository filter on the Organization Overview](../images/cy-5573.png)
 
