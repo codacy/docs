@@ -15,7 +15,6 @@ These release notes are for [Codacy Self-hosted v8.2.0](https://github.com/codac
 <!--TODO Check these issues manually
 
 Jira issues without release notes
--   https://codacy.atlassian.net/browse/CY-6455
 -   https://codacy.atlassian.net/browse/CY-6410
 -   https://codacy.atlassian.net/browse/CY-6251
 -   https://codacy.atlassian.net/browse/CY-6166
@@ -75,6 +74,12 @@ To upgrade PostgreSQL:
 -   Improved the Codacy Analysis CLI output to provide better feedback when tools fail to run. (IO-47)
 
 -   Improved the error handling for the [Stylelint exit codes](https://stylelint.io/user-guide/usage/cli/#exit-codes). (IO-47)
+
+-   Now, the **Files** tab on [pull request](https://docs.codacy.com/v8.2/repositories/pull-requests/#files-tab) and [commit](https://docs.codacy.com/v8.2/repositories/commits/#files-tab) pages displays only files with a variation of their code quality metrics, to make it more convenient to analyze the impact of your changes on the code quality of the files.
+
+    You can still list all files that the pull request updated, even if their code quality metrics didn't change, by toggling the new option **Show files without code quality changes**. (CY-6455)
+
+    ![Updated Files tab focusing only on files that have a variation in the code quality metrics](../images/cy-6455.png)
 
 -   The [Organization Overview](https://docs.codacy.com/v8.2/organizations/organization-overview/) now allows filtering repositories to help you see and focus on the information for the repositories that matter most to your team. (CY-5573)
 
