@@ -14,8 +14,6 @@ These release notes are for [Codacy Self-hosted v8.2.0](https://github.com/codac
 
 <!--TODO Check these issues manually
 
-Mention the change from https://github.com/codacy/chart/pull/744 in the release notes for the next Codacy Self-hosted version.
-
 Jira issues without release notes
 -   https://codacy.atlassian.net/browse/CY-6455
 -   https://codacy.atlassian.net/browse/CY-6410
@@ -42,6 +40,16 @@ Follow the steps below to upgrade to Codacy Self-hosted v8.2.0:
 
     -   [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-8.2.0)
     -   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-8.2.0)
+
+## Breaking changes
+
+This version of Codacy Self-hosted requires [PostgreSQL version 10.20](https://docs.codacy.com/v8.2/chart/requirements/#postgresql-server-setup) since the previous major version [will reach end-of-life (EOL) later this year](https://www.postgresql.org/support/versioning/).
+
+To upgrade PostgreSQL:
+
+1.  Follow the instructions on [how to upgrade a PostgreSQL cluster](https://www.postgresql.org/docs/10/upgrading.html).
+
+1.  After the upgrade, clean the Codacy databases with [vacuumdb](https://www.postgresql.org/docs/10/app-vacuumdb.html) to prevent the <span class="skip-vale">autovacuum</a> feature from momentarily affecting the performance of the databases at a later time.
 
 ## Product enhancements
 
