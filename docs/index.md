@@ -1,5 +1,5 @@
 ---
-description: Documentation homepage for the Codacy automated code review tool.
+description: Documentation homepage for the Codacy Quality automated code review tool.
 ---
 
 # Documentation home
