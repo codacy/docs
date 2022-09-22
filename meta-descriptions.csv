@@ -1,5 +1,5 @@
 Page,Meta description
-https://docs.codacy.com/,Documentation homepage for the Codacy automated code review tool.
+https://docs.codacy.com/,Documentation homepage for the Codacy Quality automated code review tool.
 https://docs.codacy.com/special-thanks/,We would like to thank everyone who helped us greatly. The names on these lists contributed immensely to what Codacy is today.
 https://docs.codacy.com/account/emails/,"To manage the email addresses associated with your account and your email notifications, click on your avatar on the top right-hand corner and open Your account, page Emails."
 https://docs.codacy.com/account/managing-your-profile/,"To manage your profile information such as your name and avatar, click on your avatar on the top right-hand corner and select Your account."
@@ -82,7 +82,7 @@ https://docs.codacy.com/related-tools/codacy-plugin-tools/,"Codacy uses a system
 https://docs.codacy.com/related-tools/local-analysis/client-side-tools/,"Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools together with all other code quality information on the Codacy dashboards."
 https://docs.codacy.com/related-tools/local-analysis/running-aligncheck/,Instructions on how to run aligncheck as a client-side tool on Codacy.
 https://docs.codacy.com/related-tools/local-analysis/running-deadcode/,Instructions on how to run deadcode as a client-side tool on Codacy.
-https://docs.codacy.com/related-tools/local-analysis/running-local-analysis/,Documentation for the Codacy automated code review tool.
+https://docs.codacy.com/related-tools/local-analysis/running-local-analysis/,Documentation for the Codacy Quality automated code review tool.
 https://docs.codacy.com/related-tools/local-analysis/running-spotbugs/,Instructions on how to run SpotBugs as a client-side tool on Codacy.
 https://docs.codacy.com/release-notes/,Index of release notes for Codacy Cloud and Codacy Self-hosted.
 https://docs.codacy.com/release-notes/cloud/cloud-2018-07-23/,"Release notes for Codacy Cloud July 23, 2018."
