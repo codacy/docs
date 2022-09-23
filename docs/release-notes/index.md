@@ -68,12 +68,13 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
 
-v8
-<!--NOTE
-    Mention the change from https://github.com/codacy/chart/pull/744 in the release notes for the next Codacy Self-hosted version.
--->
+v9
 
--   [v8.1.0](self-hosted/self-hosted-v8.0.0.md) (June 17, 2022)
+-   [v9.0.0](self-hosted/self-hosted-v9.0.0.md) (September 23, 2022)
+
+v8
+
+-   [v8.1.0](self-hosted/self-hosted-v8.1.0.md) (June 17, 2022)
 -   [v8.0.0](self-hosted/self-hosted-v8.0.0.md) (May 12, 2022)
 
 v7

@@ -1,6 +1,6 @@
 # Project information
-site_name: "Codacy docs"
-site_description: "Documentation for the Codacy automated code review tool."
+site_name: "Codacy Quality docs"
+site_description: "Documentation for the Codacy Quality automated code review tool."
 site_url: "https://docs.codacy.com/"
 site_author: "support@codacy.com (Codacy Support)"
 copyright: "© <script>document.write(new Date().getFullYear())</script> <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
@@ -15,11 +15,11 @@ theme:
     custom_dir: "submodules/codacy-mkdocs-material/material"
     font: false
     language: "en"
-    favicon: "assets/images/favicon.ico"
+    favicon: "assets/images/favicon.svg"
     palette:
         primary: "indigo"
         accent: "indigo"
-    logo: "assets/images/codacy-docs-logo.svg"
+    logo: "assets/images/codacy-quality-docs-logo.svg"
     features: []
 extra_css:
     - "assets/stylesheets/version-select.css"
@@ -30,7 +30,7 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    version: "8.1.0"
+    version: "9.0.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
@@ -100,7 +100,7 @@ plugins:
     # Create RSS feeds for release notes
     # https://github.com/Guts/mkdocs-rss-plugin
     - rss:
-          image: "https://docs.codacy.com/assets/images/codacy-logo.png"
+          image: "https://docs.codacy.com/assets/images/quality-logo.png"
           match_path: 'release-notes\/.*'
     # Generate redirects for moved or deleted pages
     # https://github.com/datarobot/mkdocs-redirects
@@ -681,6 +681,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v9:
+                      - release-notes/self-hosted/self-hosted-v9.0.0.md
                 - v8:
                       - release-notes/self-hosted/self-hosted-v8.1.0.md
                       - release-notes/self-hosted/self-hosted-v8.0.0.md
