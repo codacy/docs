@@ -39,7 +39,7 @@ To create a coding standard for your organization:
 
     !!! tip
         -   You can use the filters to help you find the relevant tools and code patterns. The recommended configurations are manually curated by Codacy or based on the default code patterns of the tools and are marked with the icon ![Recommended icon](images/coding-standard-recommended-icon.png).
-        -   To toggle multiple code patterns at once, click the checkbox of the first pattern and **shift+click** the checkbox of the last pattern in a range.
+        -   To toggle multiple code patterns at once, click the checkbox of the first pattern and **Shift+click** the checkbox of the last pattern in a range.
 
             Alternatively, click the checkbox on the header of the code pattern list to toggle all code patterns that are currently visible on the list.
 
