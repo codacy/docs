@@ -37,7 +37,7 @@ To upgrade PostgreSQL:
 
 ## Product enhancements
 
--   The [GitHub integration](https://docs.codacy.com/v9.0/repositories-configure/integrations/github-integration/) now uses a GitHub Apps token instead of a personal one so that the following features continue working even if the person who created the integration leaves the organization on GitHub:
+-   The [integration with GitHub Cloud and GitHub Enterprise](https://docs.codacy.com/v9.0/repositories-configure/integrations/github-integration/) now uses a GitHub Apps token instead of a personal one so that the following features continue working even if the person who created the integration leaves the organization on GitHub:
 
     -   Analyzing new commits and pull requests
     -   Updating the status check of pull requests
