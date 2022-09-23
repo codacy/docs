@@ -1,33 +1,33 @@
 ---
 rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
-description: Release notes for Codacy Self-hosted v8.2.0.
+description: Release notes for Codacy Self-hosted v9.0.0.
 codacy_tools_version_old: https://github.com/codacy/codacy-tools/releases/tag/6.1.25
 codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/6.3.0
 ---
 
-# Self-hosted v8.2.0
+# Self-hosted v9.0.0
 
-These release notes are for [Codacy Self-hosted v8.2.0](https://github.com/codacy/chart/releases/tag/8.2.0){: target="_blank"}, released on September 21, 2022.<!-- TODO Update release date -->
+These release notes are for [Codacy Self-hosted v9.0.0](https://github.com/codacy/chart/releases/tag/9.0.0){: target="_blank"}, released on September 21, 2022.<!-- TODO Update release date -->
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
 ## Upgrading Codacy Self-hosted
 
-Follow the steps below to upgrade to Codacy Self-hosted v8.2.0:
+Follow the steps below to upgrade to Codacy Self-hosted v9.0.0:
 
 1.  Check the [release notes for all Codacy Self-hosted versions](../index.md#self-hosted) **between your current version and the most recent version** for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
-1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v8.2/chart/maintenance/upgrade/).
+1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v9.0/chart/maintenance/upgrade/).
 
-1.  Update your Codacy command-line tools to the versions with the Git tag `self-hosted-8.2.0`:
+1.  Update your Codacy command-line tools to the versions with the Git tag `self-hosted-9.0.0`:
 
-    -   [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-8.2.0)
-    -   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-8.2.0)
+    -   [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-9.0.0)
+    -   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-9.0.0)
 
 ## Breaking changes
 
-This version of Codacy Self-hosted requires [PostgreSQL version 10.20](https://docs.codacy.com/v8.2/chart/requirements/#postgresql-server-setup) since the previous major version [will reach end-of-life (EOL) later this year](https://www.postgresql.org/support/versioning/).
+This version of Codacy Self-hosted requires [PostgreSQL version 10.20](https://docs.codacy.com/v9.0/chart/requirements/#postgresql-server-setup) since the previous major version [will reach end-of-life (EOL) later this year](https://www.postgresql.org/support/versioning/).
 
 To upgrade PostgreSQL:
 
@@ -37,7 +37,7 @@ To upgrade PostgreSQL:
 
 ## Product enhancements
 
--   The [GitHub integration](https://docs.codacy.com/v8.2/repositories-configure/integrations/github-integration/) now uses a GitHub Apps token instead of a personal one so that the following features continue working even if the person who created the integration leaves the organization on GitHub:
+-   The [GitHub integration](https://docs.codacy.com/v9.0/repositories-configure/integrations/github-integration/) now uses a GitHub Apps token instead of a personal one so that the following features continue working even if the person who created the integration leaves the organization on GitHub:
 
     -   Analyzing new commits and pull requests
     -   Updating the status check of pull requests
@@ -50,7 +50,7 @@ To upgrade PostgreSQL:
 
 -   Added the new API endpoint [searchOrganizationRepositoriesWithAnalysis](https://api.codacy.com/api/api-docs#searchorganizationrepositorieswithanalysis) to allow searching for repositories in more advanced use cases. For now, it's possible to search for repositories filtered by a list of names. (PLUTO-45)
 
--   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](https://docs.codacy.com/v8.2/repositories/pull-requests/), [Commit](https://docs.codacy.com/v8.2/repositories/commits/), and [Files](https://docs.codacy.com/v8.2/repositories/files/) page, and you can [define quality gates](https://docs.codacy.com/v8.2/repositories-configure/adjusting-quality-settings/#gates) with a coverage variation threshold using the same precision.
+-   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](https://docs.codacy.com/v9.0/repositories/pull-requests/), [Commit](https://docs.codacy.com/v9.0/repositories/commits/), and [Files](https://docs.codacy.com/v9.0/repositories/files/) page, and you can [define quality gates](https://docs.codacy.com/v9.0/repositories-configure/adjusting-quality-settings/#gates) with a coverage variation threshold using the same precision.
 
     The increased precision of the metric reflects the code coverage changes better by reducing the false changes due to rounding errors. (IO-54, IO-92, IO-93)
 
@@ -60,7 +60,7 @@ To upgrade PostgreSQL:
 
 -   Improved the error handling for the [Stylelint exit codes](https://stylelint.io/user-guide/usage/cli/#exit-codes). (IO-47)
 
--   Now, the **Files** tab on [pull request](https://docs.codacy.com/v8.2/repositories/pull-requests/#files-tab) and [commit](https://docs.codacy.com/v8.2/repositories/commits/#files-tab) pages displays only files with a variation of their code quality metrics, to make it more convenient to analyze the impact of your changes on the code quality of the files.
+-   Now, the **Files** tab on [pull request](https://docs.codacy.com/v9.0/repositories/pull-requests/#files-tab) and [commit](https://docs.codacy.com/v9.0/repositories/commits/#files-tab) pages displays only files with a variation of their code quality metrics, to make it more convenient to analyze the impact of your changes on the code quality of the files.
 
     You can still list all files that the pull request updated, even if their code quality metrics didn't change, by toggling the new option **Show files without code quality changes**. (CY-6455)
 
@@ -68,11 +68,11 @@ To upgrade PostgreSQL:
 
 -   Added support for the ESLint plugin [<span class="skip-vale">@shopify/eslint-plugin</span>](https://www.npmjs.com/package/@shopify/eslint-plugin). (CY-6425)
 
--   Codacy Self-hosted now supports [integrating with Bitbucket Server instances](https://docs.codacy.com/v8.2/chart/configuration/integrations/bitbucket-server/) that have been configured with [custom context paths](https://confluence.atlassian.com/bitbucketserver/change-bitbucket-s-context-path-776640153.html). (CY-6251)
+-   Codacy Self-hosted now supports [integrating with Bitbucket Server instances](https://docs.codacy.com/v9.0/chart/configuration/integrations/bitbucket-server/) that have been configured with [custom context paths](https://confluence.atlassian.com/bitbucketserver/change-bitbucket-s-context-path-776640153.html). (CY-6251)
 
--   After [enabling the analysis for a branch](https://docs.codacy.com/v8.2/repositories-configure/managing-branches/), Codacy now provides improved feedback about the progress of the first analysis of that branch. (CY-6166)
+-   After [enabling the analysis for a branch](https://docs.codacy.com/v9.0/repositories-configure/managing-branches/), Codacy now provides improved feedback about the progress of the first analysis of that branch. (CY-6166)
 
--   The [Organization Overview](https://docs.codacy.com/v8.2/organizations/organization-overview/) now allows filtering repositories to help you see and focus on the information for the repositories that matter most to your team. (CY-5573)
+-   The [Organization Overview](https://docs.codacy.com/v9.0/organizations/organization-overview/) now allows filtering repositories to help you see and focus on the information for the repositories that matter most to your team. (CY-5573)
 
     ![Repository filter on the Organization Overview](../images/cy-5573.png)
 
@@ -83,7 +83,7 @@ To upgrade PostgreSQL:
 -   Fixed an issue in the Codacy Analysis CLI and the cloc metrics tool that made the tools fail when running for an empty set of files. (IO-47)
 -   Fixed an issue that caused PMD to fail when called in some modes. (IO-47)
 -   Fixed a UI issue that caused the metrics displayed on the **Files** tab of pull request and commit pages to overlap the file names on smaller browser windows. (CY-6459)
--   It's now possible to **Command+click** files on [pull request](https://docs.codacy.com/v8.2/repositories/pull-requests/#files-tab) and [commit](https://docs.codacy.com/v8.2/repositories/commits/#files-tab) pages to open the file details on new browser windows. (CY-6410)
+-   It's now possible to **Command+click** files on [pull request](https://docs.codacy.com/v9.0/repositories/pull-requests/#files-tab) and [commit](https://docs.codacy.com/v9.0/repositories/commits/#files-tab) pages to open the file details on new browser windows. (CY-6410)
 -   Fixed a UI issue that caused the metrics displayed on the **Commits** page to overlap on smaller browser windows. (CY-6191)
 -   Now, all links to documentation pages on the Codacy UI navigate to the corresponding Codacy Self-hosted documentation version. (CY-3958)
 
