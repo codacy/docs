@@ -296,8 +296,8 @@ plugins:
               "hc/en-us/articles/360010263540-Getting-started-with-Codacy.md": "getting-started/codacy-quickstart.md"
               "hc/en-us/articles/360010263720.md": "organizations/what-are-synced-organizations.md"
               "hc/en-us/articles/360010263720-What-are-synced-organizations.md": "organizations/what-are-synced-organizations.md"
-              "hc/en-us/articles/360010264500.md": "faq/general/why-cant-i-see-my-organization.md"
-              "hc/en-us/articles/360010264500-Why-can-t-I-see-my-organization-.md": "faq/general/why-cant-i-see-my-organization.md"
+              "hc/en-us/articles/360010264500.md": "faq/troubleshooting/why-cant-i-see-my-organization.md"
+              "hc/en-us/articles/360010264500-Why-can-t-I-see-my-organization-.md": "faq/troubleshooting/why-cant-i-see-my-organization.md"
               "hc/en-us/articles/360010306559.md": "release-notes/cloud/cloud-2019-10-30.md"
               "hc/en-us/articles/360010306559-Cloud-Release-Notes-30-Oct-2019.md": "release-notes/cloud/cloud-2019-10-30.md"
               "hc/en-us/articles/360010373559.md": "organizations/roles-and-permissions-for-synced-organizations.md"
@@ -441,7 +441,7 @@ plugins:
               "faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
-              "organizations/why-can't-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
+              "organizations/why-can't-i-see-my-organization.md": "faq/troubleshooting/why-cant-i-see-my-organization.md"
               "repositories-configure/integrations/bitbucket-cloud-integration.md": "repositories-configure/integrations/bitbucket-integration.md"
               "repositories-configure/add-coverage-to-your-repo.md": "coverage-reporter/index.md"
               "repositories-configure/coverage.md": "coverage-reporter/index.md"
@@ -501,7 +501,7 @@ plugins:
               "hc/en-us/articles/207280239-Bitbucket-Cloud-Integration.md": "repositories-configure/integrations/bitbucket-integration.md"
               "hc/en-us/articles/207994885-Which-browsers-do-you-support-.md": "faq/general/which-browsers-does-codacy-support.md"
               "organizations/managing-repositories-in-your-organization.md": "organizations/managing-repositories.md"
-              "organizations/why-cant-i-see-my-organization.md": "faq/general/why-cant-i-see-my-organization.md"
+              "organizations/why-cant-i-see-my-organization.md": "faq/troubleshooting/why-cant-i-see-my-organization.md"
               "related-tools/running-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"
               "account/notifications.md": "account/emails.md"
               "faq/general/how-do-i-change-my-email-address-in-codacy.md": "faq/general/how-do-i-change-my-email-address-on-codacy.md"
@@ -537,6 +537,7 @@ plugins:
               "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md": "faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
               "coverage-reporter/troubleshooting-common-issues.md": "coverage-reporter/troubleshooting-coverage-cli-issues.md"
               "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
+              "faq/general/why-cant-i-see-my-organization.md": "faq/troubleshooting/why-cant-i-see-my-organization.md"
 
 nav:
     - Documentation home: "index.md"
@@ -612,7 +613,6 @@ nav:
                 - faq/general/how-does-codacy-support-bitbucket-server.md
                 - faq/general/how-does-codacy-keep-my-data-secure.md
                 - faq/general/how-does-codacy-protect-my-privacy.md
-                - faq/general/why-cant-i-see-my-organization.md
                 - faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md
                 - faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider.md
                 - faq/general/how-do-i-change-my-email-address-on-codacy.md
@@ -629,6 +629,7 @@ nav:
                 - faq/code-analysis/how-to-skip-an-analysis.md
                 - faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md
           - Troubleshooting:
+                - faq/troubleshooting/why-cant-i-see-my-organization.md
                 - faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md
                 - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
                 - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
