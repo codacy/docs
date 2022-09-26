@@ -25,7 +25,7 @@ Now, you'll need to add or join the organizations that contain your repositories
 To start adding your repositories, select one of the organizations.
 
 !!! note
-    If you can't see the organization you're looking for, [follow these troubleshooting instructions](../faq/general/why-cant-i-see-my-organization.md).
+    If you can't see the organization you're looking for, [follow these troubleshooting instructions](../faq/troubleshooting/why-cant-i-see-my-organization.md).
 
 ![Choosing an organization](../organizations/images/organization-add.png)  
 

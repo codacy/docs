@@ -19,7 +19,7 @@ This opens the list of organizations on your Git providers. The organization wit
 -   To add organizations from a Git provider not yet listed on this page, click **Add provider** and give the [necessary permissions](../getting-started/which-permissions-does-codacy-need-from-my-account.md) for Codacy to sync with the new Git provider and display your organizations.
 
 !!! note
-    If you can't see the organization you're looking for, follow the instructions in the card **Adding new organizations** or [these troubleshooting instructions](../faq/general/why-cant-i-see-my-organization.md).
+    If you can't see the organization you're looking for, follow the instructions in the card **Adding new organizations** or [these troubleshooting instructions](../faq/troubleshooting/why-cant-i-see-my-organization.md).
 
 ## Updates on the Git provider
 
