@@ -4,7 +4,7 @@ Codacy executes the `git diff` command when analyzing new commits and pull reque
 
 If you have files in your repository that use the carriage return (CR) as the line end control character, the command `git diff` doesn't correctly identify line endings in the changed files. Because of this, Codacy is unable to use the output of the command and you'll see the following error in the **Diff** step of your commit or pull request analysis logs:
 
-> An error ocurred during this step. Please, retry your analysis or contact support.
+> An error occurred during this step. Please, retry your analysis or contact support.
 
 ![Viewing the analysis logs](images/error-line-endings.png)
 
