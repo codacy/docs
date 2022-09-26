@@ -76,3 +76,4 @@ If you believe that you may have hit any of these limits and need help to overco
 ## See also
 
 -   [Which metrics does Codacy calculate?](which-metrics-does-codacy-calculate.md)
+-   [Why is my file over 150 KB missing?](../troubleshooting/why-is-my-file-over-150-kb-missing.md)
