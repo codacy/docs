@@ -126,9 +126,12 @@ Codacy calculates code coverage as follows:
 -   The coverage value for each file is the percentage of coverable lines that are covered by tests in the file.
 -   A repository is considered to have acceptable coverage if the average coverage value for the files in the repository is higher than the threshold [**Coverage is under**](../../repositories-configure/adjusting-quality-settings.md#goals).
 -   The **coverage variation** of a commit or pull request is the number of percentage points that the coverage value for the file increased or dropped in the commit or pull request.
--   The **diff coverage** of a pull request is the percentage of coverable lines added or modified in the pull request that are covered by tests.
+-   The **diff coverage** of a pull request is the percentage of **coverable lines** that the pull request **added or modified** that are covered by tests.
 
-    If a pull request doesn't add or modify any coverable lines, the diff coverage is `∅` (not applicable).
+    If a pull request doesn't add or modify any coverable lines, the diff coverage is `∅` (not applicable). This scenario happens when the only changes in a pull request are:
+
+    -   Deletes lines
+    -   Added or modified lines that aren't coverable
 
 Once the coverage setup is complete, Codacy displays coverage data on the following places:
 
