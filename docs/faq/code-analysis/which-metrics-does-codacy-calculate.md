@@ -130,7 +130,7 @@ Codacy calculates code coverage as follows:
 
     If a pull request doesn't add or modify any coverable lines, the diff coverage is `∅` (not applicable). This scenario happens when the only changes in a pull request are:
 
-    -   Deletes lines
+    -   Deleted lines
     -   Added or modified lines that aren't coverable
 
 Once the coverage setup is complete, Codacy displays coverage data on the following places:
