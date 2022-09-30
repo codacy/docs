@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy scans your code for issues and calculates code complexity, duplication, and coverage metrics. Besides this, Codacy also calculates a grade for your repository and files based on all calculated code quality metrics.">
       
       
-        <meta http-equiv="last-modified" content="2022-09-01 10:28:16">
+        <meta http-equiv="last-modified" content="2022-09-30 07:28:39">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/which-metrics-does-codacy-calculate/">
@@ -3714,8 +3714,12 @@
 <li>A repository is considered to have acceptable coverage if the average coverage value for the files in the repository is higher than the threshold <a href="../../../repositories-configure/adjusting-quality-settings/#goals"><strong>Coverage is under</strong></a>.</li>
 <li>The <strong>coverage variation</strong> of a commit or pull request is the number of percentage points that the coverage value for the file increased or dropped in the commit or pull request.</li>
 <li>
-<p>The <strong>diff coverage</strong> of a pull request is the percentage of coverable lines added or modified in the pull request that are covered by tests.</p>
-<p>If a pull request doesn't add or modify any coverable lines, the diff coverage is <code>∅</code> (not applicable).</p>
+<p>The <strong>diff coverage</strong> of a pull request is the percentage of <strong>coverable lines</strong> that the pull request <strong>added or modified</strong> that are covered by tests.</p>
+<p>If a pull request doesn't add or modify any coverable lines, the diff coverage is <code>∅</code> (not applicable). This scenario happens when the only changes in a pull request are:</p>
+<ul>
+<li>Deleted lines</li>
+<li>Added or modified lines that aren't coverable</li>
+</ul>
 </li>
 </ul>
 <p>Once the coverage setup is complete, Codacy displays coverage data on the following places:</p>
@@ -3918,7 +3922,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 1, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 30, 2022</span>
     
   </small>
 </div>
