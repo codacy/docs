@@ -102,13 +102,13 @@ Create pull requests to make changes to the documentation:
 
 ### Updating documentation from submodules
 
-1. Make the changes directly in the submodule repository
+1.  Make the changes directly in the submodule repository
 
-1. In the `codacy/docs` repository `cd` into the submodule that you want to update (ex: `cd submodules/codacy-coverage-reporter`)
+1.  In the `codacy/docs` repository `cd` into the submodule that you want to update (ex: `cd submodules/codacy-coverage-reporter`)
 
-1. Pull changes in the submodule repository (`git checkout master && git pull origin master`)
+1.  Pull changes in the submodule repository (`git checkout master && git pull origin master`)
 
-1. Commit and push changes in a new Pull Request
+1.  Commit and push changes in a new Pull Request
 
 ### Deploying the documentation to GitHub Pages
 
