@@ -2,7 +2,6 @@
 
 You're welcome to make fixes and changes to the documentation. Here are a few steps to get you going:
 
--   [Making changes to](#setting-up-local-environment)
 -   [Authoring documentation pages](#authoring-documentation-pages)
 -   [Releasing a new Codacy Self-hosted documentation version](#releasing-a-new-codacy-self-hosted-documentation-version)
 -   [Updating an existing Codacy Self-hosted documentation version](#updating-an-existing-codacy-self-hosted-documentation-version)
@@ -103,7 +102,7 @@ Create pull requests to make changes to the documentation:
 
 ### Updating documentation from submodules
 
-1. Make the changes in the submodule repository
+1. Make the changes directly in the submodule repository
 
 1. In the `codacy/docs` repository `cd` into the submodule that you want to update (ex: `cd submodules/codacy-coverage-reporter`)
 
