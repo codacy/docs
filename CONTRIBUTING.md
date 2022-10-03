@@ -2,6 +2,7 @@
 
 You're welcome to make fixes and changes to the documentation. Here are a few steps to get you going:
 
+-   [Making changes to](#setting-up-local-environment)
 -   [Authoring documentation pages](#authoring-documentation-pages)
 -   [Releasing a new Codacy Self-hosted documentation version](#releasing-a-new-codacy-self-hosted-documentation-version)
 -   [Updating an existing Codacy Self-hosted documentation version](#updating-an-existing-codacy-self-hosted-documentation-version)
@@ -99,6 +100,16 @@ Create pull requests to make changes to the documentation:
 1.  Make sure that the documentation pages build successfully and that you have an approval from relevant stakeholders.
 
 1.  Merge the pull request using the "merge commit" strategy.
+
+### Updating documentation from submodules
+
+1. Make the changes in the submodule repository
+
+1. In the `codacy/docs` repository `cd` into the submodule that you want to update (ex: `cd submodules/codacy-coverage-reporter`)
+
+1. Pull changes in the submodule repository (`git checkout master && git pull origin master`)
+
+1. Commit and push changes in a new Pull Request
 
 ### Deploying the documentation to GitHub Pages
 
