@@ -15,6 +15,6 @@ mkdocs-git-revision-date-localized-plugin==1.1.0
 mkdocs-include-markdown-plugin==3.8.1
 mkdocs-macros-plugin==0.7.0
 mkdocs-meta-descriptions-plugin==2.0.0
-mkdocs-monorepo-plugin==1.0.3
+mkdocs-monorepo-plugin==1.0.4
 mkdocs-redirects==1.2.0
 mkdocs-rss-plugin==1.1.0
