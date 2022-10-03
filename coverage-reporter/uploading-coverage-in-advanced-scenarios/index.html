@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to use the Codacy Coverage Reporter to upload coverage data in advanced scenarios such as when running parallel tests, using monorepos, or testing source code in multiple or unsupported languages.">
       
       
-        <meta http-equiv="last-modified" content="2022-08-03 17:21:59">
+        <meta http-equiv="last-modified" content="2022-10-03 15:48:27">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/uploading-coverage-in-advanced-scenarios/">
@@ -3540,9 +3540,10 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <p>If your test suite generates a single coverage report for more than one language, you must upload the same coverage report for each language.</p>
 <p>To do this, upload the same report multiple times, specifying each different language with the flag <code>-l</code>. For example:</p>
 <div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-    -l Javascript -r report.xml
+    --partial -l Javascript -r report.xml
 bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-    -l TypeScript -r report.xml
+    --partial -l TypeScript -r report.xml
+bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> final
 </code></pre></div>
 <h2 id="golang">Uploading coverage for Golang<a class="headerlink" href="#golang" title="Permanent link">#</a></h2>
 <p>Codacy can't automatically detect Golang coverage report files because they don't have specific file names.</p>
@@ -3713,7 +3714,7 @@ bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<spa
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 3, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 3, 2022</span>
     
   </small>
 </div>
