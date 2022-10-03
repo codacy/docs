@@ -12,7 +12,7 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
         with:
-          token: ${{ secrets.GITHUB_TOKEN }}
+          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
           submodules: true
           # git-revision-date-localized-plugin and mkdocs-rss-plugin need full git history depth
           fetch-depth: 0
@@ -84,7 +84,7 @@ jobs:
 
       # Deploy Self-hosted docs on push to release/vM.m branch
       - name: Set up git author
-        uses: oleksiyrudenko/gha-git-credentials@v2
+        uses: oleksiyrudenko/gha-git-credentials@v2.1
         if: startsWith(github.ref, 'refs/heads/release/v')
         with:
           name: ${{ github.actor }}
