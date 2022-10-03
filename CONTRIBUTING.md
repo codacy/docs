@@ -75,7 +75,7 @@ Follow these Markdown conventions when editing the documentation:
         1. Item 2.1
     ```
 
--   Use the [Admonitions syntax](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#usage) to include **notes** and **warnings**, or to highlight **important** information. For example:
+-   Use the [Admonitions syntax](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#usage) to include **notes**, **tips**, and **warnings**, or to highlight **important** information. For example:
 
     ```markdown
     !!! note
