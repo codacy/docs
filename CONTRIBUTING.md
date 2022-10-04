@@ -100,15 +100,29 @@ Create pull requests to make changes to the documentation:
 
 1.  Merge the pull request using the "merge commit" strategy.
 
-### Updating documentation from submodules
+### Making changes to submodules
 
-1.  Make the changes directly in the submodule repository
+To make changes to any of the [repository submodules](https://github.com/codacy/docs/tree/master/submodules), you must first update the original submodule repository and then update the reference to the submodule on this repository:
 
-1.  In the `codacy/docs` repository `cd` into the submodule that you want to update (ex: `cd submodules/codacy-coverage-reporter`)
+1.  Make the changes directly in the submodule repository.
 
-1.  Pull changes in the submodule repository (`git checkout master && git pull origin master`)
+1.  Back in this repository, create a topic branch.
 
-1.  Commit and push changes in a new Pull Request
+1.  Change into the directory of the submodule that includes new changes and pull the new changes. For example:
+
+    ```bash
+    cd submodules/chart
+    git checkout master && git pull origin master
+    ```
+
+1.  Commit the updated submodule reference and open a pull request. For example:
+
+    ```bash
+    cd ../..
+    git add submodules/chart
+    git commit -m "feat: Update chart submodule"
+    git push
+    ```
 
 ### Deploying the documentation to GitHub Pages
 
