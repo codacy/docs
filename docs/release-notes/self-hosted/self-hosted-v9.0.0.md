@@ -60,7 +60,7 @@ To upgrade PostgreSQL:
 
 -   Improved the error handling for the [Stylelint exit codes](https://stylelint.io/user-guide/usage/cli/#exit-codes). (IO-47)
 
--   Now, the **Files** tab on [pull request](https://docs.codacy.com/v9.0/repositories/pull-requests/#files-tab) and [commit](https://docs.codacy.com/v9.0/repositories/commits/#files-tab) pages displays only files with a variation of their code quality metrics, to make it more convenient to analyze the impact of your changes on the code quality of the files.
+-   Now, the **Files** tab on [Pull request](https://docs.codacy.com/v9.0/repositories/pull-requests/#files-tab) and [Commit](https://docs.codacy.com/v9.0/repositories/commits/#files-tab) pages displays only files with a variation of their code quality metrics, to make it more convenient to analyze the impact of your changes on the code quality of the files.
 
     You can still list all files that the pull request updated, even if their code quality metrics didn't change, by toggling the new option **Show files without code quality changes**. (CY-6455)
 
@@ -83,7 +83,7 @@ To upgrade PostgreSQL:
 -   Fixed an issue in the Codacy Analysis CLI and the cloc metrics tool that made the tools fail when running for an empty set of files. (IO-47)
 -   Fixed an issue that caused PMD to fail when called in some modes. (IO-47)
 -   Fixed a UI issue that caused the metrics displayed on the **Files** tab of pull request and commit pages to overlap the file names on smaller browser windows. (CY-6459)
--   It's now possible to **Command+click** files on [pull request](https://docs.codacy.com/v9.0/repositories/pull-requests/#files-tab) and [commit](https://docs.codacy.com/v9.0/repositories/commits/#files-tab) pages to open the file details on new browser windows. (CY-6410)
+-   It's now possible to **Command+click** files on [Pull request](https://docs.codacy.com/v9.0/repositories/pull-requests/#files-tab) and [Commit](https://docs.codacy.com/v9.0/repositories/commits/#files-tab) pages to open the file details on new browser windows. (CY-6410)
 -   Fixed a UI issue that caused the metrics displayed on the **Commits** page to overlap on smaller browser windows. (CY-6191)
 -   Now, all links to documentation pages on the Codacy UI navigate to the corresponding Codacy Self-hosted documentation version. (CY-3958)
 
