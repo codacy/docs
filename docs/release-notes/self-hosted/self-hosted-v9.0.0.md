@@ -52,7 +52,7 @@ To upgrade PostgreSQL:
 
 -   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](https://docs.codacy.com/v9.0/repositories/pull-requests/), [Commit](https://docs.codacy.com/v9.0/repositories/commits/), and [Files](https://docs.codacy.com/v9.0/repositories/files/) page, and you can [define quality gates](https://docs.codacy.com/v9.0/repositories-configure/adjusting-quality-settings/#gates) with a coverage variation threshold using the same precision.
 
-    The increased precision of the metric reflects the code coverage changes better by reducing the false changes due to rounding errors. (IO-54, IO-92, IO-93)
+    The increased precision of the metric reflects the code coverage changes better by reducing issues with rounding errors. (IO-54, IO-92, IO-93)
 
     ![Coverage variation on the Pull request quality overview](../images/io-92.png)
 
