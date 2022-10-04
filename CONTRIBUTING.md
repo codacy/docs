@@ -20,20 +20,20 @@ You're welcome to make fixes and changes to the documentation. Here are a few st
     cd docs
     ```
 
-2.  Check that you have [Python 3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/) installed and install them if you don't:
+1.  Check that you have [Python 3](https://www.python.org/downloads/) and [pip](https://pip.pypa.io/en/stable/) installed and install them if you don't:
 
     ```bash
     python3 --version
     pip3 --version
     ```
 
-3.  Install the requirements for building the static HTML pages using MkDocs:
+1.  Install the requirements for building the static HTML pages using MkDocs:
 
     ```bash
     pip3 install -r requirements.txt
     ```
 
-4.  Build the static HTML pages and launch a local web server that allows you to conveniently see the generated pages as soon as you make any changes to the Markdown files:
+1.  Build the static HTML pages and launch a local web server that allows you to conveniently see the generated pages as soon as you make any changes to the Markdown files:
 
     ```bash
     mkdocs serve
