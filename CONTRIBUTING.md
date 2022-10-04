@@ -75,7 +75,7 @@ Follow these Markdown conventions when editing the documentation:
         1. Item 2.1
     ```
 
--   Use the [Admonitions syntax](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#usage) to include **notes** and **warnings**, or to highlight **important** information. For example:
+-   Use the [Admonitions syntax](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#usage) to include **notes**, **tips**, and **warnings**, or to highlight **important** information. For example:
 
     ```markdown
     !!! note
@@ -99,6 +99,16 @@ Create pull requests to make changes to the documentation:
 1.  Make sure that the documentation pages build successfully and that you have an approval from relevant stakeholders.
 
 1.  Merge the pull request using the "merge commit" strategy.
+
+### Updating documentation from submodules
+
+1.  Make the changes directly in the submodule repository
+
+1.  In the `codacy/docs` repository `cd` into the submodule that you want to update (ex: `cd submodules/codacy-coverage-reporter`)
+
+1.  Pull changes in the submodule repository (`git checkout master && git pull origin master`)
+
+1.  Commit and push changes in a new Pull Request
 
 ### Deploying the documentation to GitHub Pages
 
