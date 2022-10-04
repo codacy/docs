@@ -55,7 +55,7 @@ Follow these Markdown conventions when editing the documentation:
     ![Adding an organization](images/organization-add.png)
     ```
 
--   Use hyphens to generate unordered lists and `1.` to generate ordered lists. Always use 4 spaces to indent list items. For example:
+-   Use hyphens to generate unordered lists and `1.` to generate ordered lists. Always use 4 spaces to indent list items. Indent also by 4 spaces subsequent paragraphs in a list item or nested list items. For example:
 
     ```markdown
     This is an unordered list:
