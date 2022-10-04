@@ -11,7 +11,7 @@
         <meta name="description" content="Release notes for Codacy Self-hosted v9.0.0.">
       
       
-        <meta http-equiv="last-modified" content="2022-09-23 15:19:36">
+        <meta http-equiv="last-modified" content="2022-10-04 11:18:42">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/self-hosted/self-hosted-v9.0.0/">
@@ -2181,6 +2181,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../cloud/cloud-2022-09/" title="Cloud September 2022" class="md-nav__link">
+      Cloud September 2022
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../cloud/cloud-2022-08/" title="Cloud August 2022" class="md-nav__link">
       Cloud August 2022
     </a>
@@ -3561,7 +3573,7 @@
 </li>
 <li>
 <p>Codacy now displays the coverage variation metric with a precision of two decimal places on the <a href="https://docs.codacy.com/v9.0/repositories/pull-requests/">Pull request</a>, <a href="https://docs.codacy.com/v9.0/repositories/commits/">Commit</a>, and <a href="https://docs.codacy.com/v9.0/repositories/files/">Files</a> page, and you can <a href="https://docs.codacy.com/v9.0/repositories-configure/adjusting-quality-settings/#gates">define quality gates</a> with a coverage variation threshold using the same precision.</p>
-<p>The increased precision of the metric reflects the code coverage changes better by reducing the false changes due to rounding errors. (IO-54, IO-92, IO-93)</p>
+<p>The increased precision of the metric reflects the code coverage changes better by reducing issues with rounding errors. (IO-54, IO-92, IO-93)</p>
 <p><img alt="Coverage variation on the Pull request quality overview" src="../../images/io-92.png" /></p>
 </li>
 <li>
@@ -3571,7 +3583,7 @@
 <p>Improved the error handling for the <a href="https://stylelint.io/user-guide/usage/cli/#exit-codes">Stylelint exit codes</a>. (IO-47)</p>
 </li>
 <li>
-<p>Now, the <strong>Files</strong> tab on <a href="https://docs.codacy.com/v9.0/repositories/pull-requests/#files-tab">pull request</a> and <a href="https://docs.codacy.com/v9.0/repositories/commits/#files-tab">commit</a> pages displays only files with a variation of their code quality metrics, to make it more convenient to analyze the impact of your changes on the code quality of the files.</p>
+<p>Now, the <strong>Files</strong> tab on <a href="https://docs.codacy.com/v9.0/repositories/pull-requests/#files-tab">Pull request</a> and <a href="https://docs.codacy.com/v9.0/repositories/commits/#files-tab">Commit</a> pages displays only files with a variation of their code quality metrics, to make it more convenient to analyze the impact of your changes on the code quality of the files.</p>
 <p>You can still list all files that the pull request updated, even if their code quality metrics didn't change, by toggling the new option <strong>Show files without code quality changes</strong>. (CY-6455)</p>
 <p><img alt="Updated Files tab focusing only on files that have a variation in the code quality metrics" src="../../images/cy-6455.png" /></p>
 </li>
@@ -3596,7 +3608,7 @@
 <li>Fixed an issue in the Codacy Analysis CLI and the cloc metrics tool that made the tools fail when running for an empty set of files. (IO-47)</li>
 <li>Fixed an issue that caused PMD to fail when called in some modes. (IO-47)</li>
 <li>Fixed a UI issue that caused the metrics displayed on the <strong>Files</strong> tab of pull request and commit pages to overlap the file names on smaller browser windows. (CY-6459)</li>
-<li>It's now possible to <strong>Command+click</strong> files on <a href="https://docs.codacy.com/v9.0/repositories/pull-requests/#files-tab">pull request</a> and <a href="https://docs.codacy.com/v9.0/repositories/commits/#files-tab">commit</a> pages to open the file details on new browser windows. (CY-6410)</li>
+<li>It's now possible to <strong>Command+click</strong> files on <a href="https://docs.codacy.com/v9.0/repositories/pull-requests/#files-tab">Pull request</a> and <a href="https://docs.codacy.com/v9.0/repositories/commits/#files-tab">Commit</a> pages to open the file details on new browser windows. (CY-6410)</li>
 <li>Fixed a UI issue that caused the metrics displayed on the <strong>Commits</strong> page to overlap on smaller browser windows. (CY-6191)</li>
 <li>Now, all links to documentation pages on the Codacy UI navigate to the corresponding Codacy Self-hosted documentation version. (CY-3958)</li>
 </ul>
@@ -3806,7 +3818,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 4, 2022</span>
     
   </small>
 </div>
