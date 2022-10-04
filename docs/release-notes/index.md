@@ -18,6 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2022
 
+-   [Cloud September 2022](cloud/cloud-2022-09.md)
 -   [Cloud August 2022](cloud/cloud-2022-08.md)
 -   [Cloud July 2022](cloud/cloud-2022-07.md)
 -   [Cloud June 2022](cloud/cloud-2022-06.md)
