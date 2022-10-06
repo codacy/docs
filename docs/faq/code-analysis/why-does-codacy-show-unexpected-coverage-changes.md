@@ -19,7 +19,7 @@ For example, the coverage report represented below includes coverage information
       <th>File</th>
       <th>Line number</th>
       <th>Covered by tests?</th>
-  </tr>
+    </tr>
   </thead>
   <tbody>
     <tr>
@@ -102,6 +102,114 @@ Caused by application logic changes:
 -->
 
 ![Diff coverage is 100% but pull request coverage variation is negative](images/coverage-example-1.png)
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="2" style="text-align: center;">Merge base commit</th>
+      <th colspan="2" style="text-align: center;">HEAD commit</th>
+    </tr>
+    <tr>
+      <th>File</th>
+      <th>Line number</th>
+      <th>Covered by tests?</th>
+      <th>Line number</th>
+      <th>Covered by tests?</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">ClassA.java</td>
+      <td>2</td>
+      <td>Yes</td>
+      <td>2</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Yes</td>
+      <td>4</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td rowspan="3">ClassB.java</td>
+      <td>1</td>
+      <td>Yes</td>
+      <td>1</td>
+      <td style="background-color:  salmon;">No</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>No</td>
+      <td>3</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>No</td>
+      <td>11</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th colspan="3" style="text-align: center;">Merge base commit</th>
+      <th colspan="3" style="text-align: center;">HEAD commit</th>
+      <th colspan="2" style="text-align: center;">Pull request results</th>
+    </tr>
+    <tr>
+      <th>File</th>
+      <th>Coverable lines</th>
+      <th>Covered lines</th>
+      <th>Coverage</th>
+      <th>Coverable lines</th>
+      <th>Covered lines</th>
+      <th>Coverage</th>
+      <th>Coverage variation</th>
+      <th>Diff coverage</td>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>ClassA.java</td>
+      <td>2</td>
+      <td>2</td>
+      <td title="2/2 x 100% = 100%">100%</td>
+      <td>2</td>
+      <td>2</td>
+      <td title="2/2 x 100% = 100%">100%</td>
+      <td title="100% - 100% = 0%">0%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>ClassB.java</td>
+      <td>3</td>
+      <td>1</td>
+      <td title="1/3 x 100% = 33.3(3)%">33.3(3)%</td>
+      <td>3</td>
+      <td>0</td>
+      <td title="0/3 x 100% = 0%">0%</td>
+      <td title="0% - 33.3(3)% = -33.3(3)%">-33.3(3)%</td>
+      <td></td>
+    </tr>
+    <tr>
+      <td><strong>Total</strong></td>
+      <td>5</td>
+      <td>3</td>
+      <td title="3/5 x 100% = 60%">60%</td>
+      <td>5</td>
+      <td>2</td>
+      <td title="2/5 x 100% = 40%">40%</td>
+      <td title="40% - 60% = -20%" style="color: red;">-20%</td>
+      <td>100%<br/>(Assuming that covered lines were modified)</td>
+    </tr>
+  </tbody>
+</table>
 
 ### Pull request coverage variation is negative but no files have coverage variation
 
