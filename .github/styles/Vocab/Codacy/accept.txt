@@ -16,7 +16,7 @@ Codacy
 CodeNarc
 CoffeeLint
 config
-coverable
+[Cc]overable
 Cppcheck
 Credo
 CSSLint
