@@ -133,6 +133,9 @@ Codacy calculates code coverage as follows:
     -   Deleted lines
     -   Added or modified lines that aren't coverable
 
+!!! note
+    If you encounter a situation where Codacy shows an unexpected drop in coverage, learn about [the most common reasons causing those scenarios](why-does-codacy-show-unexpected-coverage-changes.md).
+
 Once the coverage setup is complete, Codacy displays coverage data on the following places:
 
 |Place|Metric|
@@ -147,5 +150,6 @@ Once the coverage setup is complete, Codacy displays coverage data on the follow
 
 ## See also
 
--   [Does Codacy place limits on the code analysis?](does-codacy-place-limits-on-the-code-analysis.md)
 -   [Diff coverage: <span class="skip-vale">we have</span> a new metric and quality gate rule for PRs](https://blog.codacy.com/diff-coverage/)
+-   [Why does Codacy show unexpected coverage changes?](why-does-codacy-show-unexpected-coverage-changes.md)
+-   [Does Codacy place limits on the code analysis?](does-codacy-place-limits-on-the-code-analysis.md)
