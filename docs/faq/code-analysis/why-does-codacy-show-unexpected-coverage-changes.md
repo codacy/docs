@@ -46,6 +46,34 @@ There are several reasons that could cause Codacy to report unexpected coverage 
     -   Tests that are dependent on time, such as running test cases only on specific dates or times of the day
     -   "Flaky" tests caused by any inconsistent or unreliable behavior of your code, infrastructure, or third-party services
 
+## Example scenarios
+
+The following examples describe in more detail how specific changes in your code are reflected on the metrics that Codacy calculates.
+
+### Diff coverage is 100% but pull request coverage variation is negative
+
+<!--TODO
+Caused by removing covered lines or removing tests:
+-   Removed lines don't affect diff coverage so if there are any other changes the diff coverage can be 100%
+-   Removing covered lines or tests means that there are now less coverable lines covered in the repository, causing coverage variation <0%
+
+Caused by application logic changes:
+-   Modified lines are still covered - diff coverage 100%
+-   Different flow of execution can mean that a different number of coverable lines are covered
+-->
+
+![Diff coverage is 100% but pull request coverage variation is negative](images/coverage-example-1.png)
+
+### Pull request coverage variation is negative but no files have coverage variation
+
+<!--TODO
+[Cause] Removing covered lines:
+-   Removing covered lines from files that have 100% coverage continues to result in files with 100% coverage, so no change in total coverage
+-   However, there may now be a lower of higher percentage of covered lines in the repository compared to the total number of coverable lines in the repository
+-->
+
+![Pull request coverage variation is negative but no files have coverage variation](images/coverage-example-2.png)
+
 ## See also
 
 -   [Which metrics does Codacy calculate?](which-metrics-does-codacy-calculate.md#code-coverage)
