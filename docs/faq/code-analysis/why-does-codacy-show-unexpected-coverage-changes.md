@@ -48,4 +48,4 @@ There are several reasons that could cause Codacy to report unexpected coverage 
 
 ## See also
 
--   [Which metrics does Codacy calculate?](which-metrics-does-codacy-calculate.md)
+-   [Which metrics does Codacy calculate?](which-metrics-does-codacy-calculate.md#code-coverage)
