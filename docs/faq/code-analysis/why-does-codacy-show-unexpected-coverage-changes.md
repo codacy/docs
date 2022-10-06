@@ -8,6 +8,45 @@ There are multiple reasons for this, but it's important to understand that each 
 -   **Covered lines** (lines that were tested at least once), by marking those lines as tested or having a number of test hits
 -   **Not coverable lines** (lines that can't be tested), by not listing those lines
 
+For example, the coverage report represented below includes coverage information for two source code files:
+
+-   File `ClassA.java` has two coverable lines and all are covered by tests
+-   File `ClassB.java` has three coverable lines but only line 1 is covered by tests
+
+<table>
+  <thead>
+    <tr>
+      <th>File</th>
+      <th>Line number</th>
+      <th>Covered by tests?</th>
+  </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">ClassA.java</td>
+      <td>2</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td rowspan="3">ClassB.java</td>
+      <td>1</td>
+      <td>Yes</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
 Based on the information obtained from the coverage reports, Codacy calculates code coverage as follows:
 
 -   The **coverage** for a file, commit, or pull request is the percentage of covered lines in the universe of coverable lines for that file, commit, or pull request. For example, a commit with 85 covered lines out of a total of 100 coverable lines has 85% coverage.
