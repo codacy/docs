@@ -96,7 +96,7 @@ Consider an example pull request where Codacy shows the following metrics:
 
 ![Diff coverage is 100% but pull request coverage variation is negative](images/coverage-example-1.png)
 
-There are at least two possible scenarios that could cause this result:
+There are two possible scenarios that could cause this result:
 
 -   **Removing covered lines or tests**
 
@@ -106,7 +106,7 @@ There are at least two possible scenarios that could cause this result:
 
     A change in the flow of execution of your application or tests can mean that a different number of coverable lines in your repository are now covered by tests, causing a drop in coverage. However, if all lines modified in the pull request continue to be covered, the diff coverage metric is 100%.
 
-The table below represents two example coverage reports reflecting a pull request that caused line 1 of the file `ClassB.java` to stop being covered:
+The table below represents two example coverage reports reflecting a pull request that causes line 1 of the file `ClassB.java` to stop being covered:
 
 <table>
   <thead>
@@ -230,11 +230,11 @@ Consider an example pull request where Codacy shows the following metrics:
 
 ![Pull request coverage variation is negative but no files have coverage variation](images/coverage-example-2.png)
 
-<!--TODO
-[Cause] Removing covered lines:
--   Removing covered lines from files that have 100% coverage continues to result in files with 100% coverage, so no change in total coverage
--   However, there may now be a lower of higher percentage of covered lines in the repository compared to the total number of coverable lines in the repository
--->
+**Removing covered lines** from a file that had 100% coverage means that the file will continue to have 100% coverage - all lines in the file continue to be covered, even though there are now less covered lines. As such, there is no coverage variation for the file.
+
+However, since the proportion between the total number of covered and coverable lines across all files in the repository is now different, there can be a drop in the coverage variation for the pull request.
+
+The table below represents two example coverage reports reflecting a pull request that removes lines 5 and 6 of the file `ClassB.java`:
 
 <table>
   <thead>
@@ -298,6 +298,11 @@ Consider an example pull request where Codacy shows the following metrics:
     </tr>
   </tbody>
 </table>
+
+The table below displays the code coverage metrics as calculated by Codacy:
+
+-   Initially, `ClassA.java` was 100% covered and continues to be 100% covered after the pull request, causing the coverage variation for the file to be 0%
+-   However, there were 62.5% lines covered across all files in the repository but after the pull request only 60% of the lines are now covered, causing the coverage variation for the pull request to drop 2.5%
 
 <table>
   <thead>
