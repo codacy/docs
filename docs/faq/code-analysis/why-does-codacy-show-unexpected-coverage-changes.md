@@ -230,11 +230,11 @@ Consider an example pull request where Codacy shows the following metrics:
 
 ![Pull request coverage variation is negative but no files have coverage variation](images/coverage-example-2.png)
 
-**Removing covered lines** from a file that had 100% coverage means that the file will continue to have 100% coverage - all lines in the file continue to be covered, even though there are now less covered lines. As such, there is no coverage variation for the file.
+**Removing covered lines** from a file that had 100% coverage means that the file will continue to have 100% coverage. All lines in the file continue to be covered, even though there are now less covered lines. As such, there is no coverage variation for the file.
 
 However, since the proportion between the total number of covered and coverable lines across all files in the repository is now different, there can be a drop in the coverage variation for the pull request.
 
-The table below represents two example coverage reports reflecting a pull request that removes lines 5 and 6 of the file `ClassB.java`:
+The table below represents two example coverage reports reflecting a pull request that removes lines 5 and 6 of the file `ClassA.java`:
 
 <table>
   <thead>
@@ -302,7 +302,7 @@ The table below represents two example coverage reports reflecting a pull reques
 The table below displays the code coverage metrics as calculated by Codacy:
 
 -   Initially, `ClassA.java` was 100% covered and continues to be 100% covered after the pull request, causing the coverage variation for the file to be 0%
--   However, there were 62.5% lines covered across all files in the repository but after the pull request only 60% of the lines are now covered, causing the coverage variation for the pull request to drop 2.5%
+-   However, there were 62.5% lines covered across all files in the repository but after the pull request only 60% of the lines are now covered, causing the pull request coverage variation to drop 2.5%
 
 <table>
   <thead>
