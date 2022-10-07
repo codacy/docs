@@ -91,8 +91,8 @@ The following examples describe in more detail how specific changes in your code
 
 Consider an example pull request where Codacy shows the following metrics:
 
--   100% **diff coverage**
--   A negative **coverage variation**
+-   100% diff coverage
+-   A negative coverage variation
 
 ![Diff coverage is 100% but pull request coverage variation is negative](images/coverage-example-1.png)
 
@@ -223,13 +223,18 @@ The table below displays the code coverage metrics as calculated by Codacy:
 
 ## Example: Pull request coverage variation is negative but no files have coverage variation
 
+Consider an example pull request where Codacy shows the following metrics:
+
+-   Negative coverage variation
+-   There aren't any files with coverage variation
+
+![Pull request coverage variation is negative but no files have coverage variation](images/coverage-example-2.png)
+
 <!--TODO
 [Cause] Removing covered lines:
 -   Removing covered lines from files that have 100% coverage continues to result in files with 100% coverage, so no change in total coverage
 -   However, there may now be a lower of higher percentage of covered lines in the repository compared to the total number of coverable lines in the repository
 -->
-
-![Pull request coverage variation is negative but no files have coverage variation](images/coverage-example-2.png)
 
 <table>
   <thead>
