@@ -89,17 +89,24 @@ The following examples describe in more detail how specific changes in your code
 
 ## Example: Diff coverage is 100% but pull request coverage variation is negative
 
-<!--TODO
-Caused by removing covered lines or removing tests:
--   Removed lines don't affect diff coverage so if there are any other changes the diff coverage can be 100%
--   Removing covered lines or tests means that there are now less coverable lines covered in the repository, causing coverage variation <0%
+Consider an example pull request where Codacy shows the following metrics:
 
-Caused by application logic changes:
--   Modified lines are still covered - diff coverage 100%
--   Different flow of execution can mean that a different number of coverable lines are covered
--->
+-   100% **diff coverage**
+-   A negative **coverage variation**
 
 ![Diff coverage is 100% but pull request coverage variation is negative](images/coverage-example-1.png)
+
+There are at least two possible scenarios that could cause this result:
+
+-   **Removing covered lines or tests**
+
+    Since diff coverage only applies to covered lines that the pull request added or modified, removed lines don't affect the diff coverage metric. However, removing covered lines or tests means that there are now less covered lines in the repository, causing a drop in coverage.
+
+-   **Application logic changes**
+
+    A change in the flow of execution of your application or tests can mean that a different number of coverable lines in your repository are now covered by tests, causing a drop in coverage. However, if all lines modified in the pull request continue to be covered, the diff coverage metric is 100%.
+
+The table below represents two example coverage reports reflecting a pull request that caused line 1 of the file `ClassB.java` to stop being covered:
 
 <table>
   <thead>
@@ -152,6 +159,11 @@ Caused by application logic changes:
   </tbody>
 </table>
 
+The table below displays the code coverage metrics as calculated by Codacy:
+
+-   Initially, `ClassB.java` was 33.33% covered but after the changes from the pull request the file is now 0% covered, causing the repository coverage to drop 20%
+-   As long as the pull request also modified any covered line that continues to be covered, the diff coverage is 100%
+
 <table>
   <thead>
     <tr>
@@ -188,11 +200,11 @@ Caused by application logic changes:
       <td>ClassB.java</td>
       <td>3</td>
       <td>1</td>
-      <td title="1/3 x 100% = 33.3(3)%">33.3(3)%</td>
+      <td title="1/3 x 100% = 33.33%">33.33%</td>
       <td>3</td>
       <td>0</td>
       <td title="0/3 x 100% = 0%">0%</td>
-      <td title="0% - 33.3(3)% = -33.3(3)%">-33.3(3)%</td>
+      <td title="0% - 33.33% = -33.33%">-33.33%</td>
       <td></td>
     </tr>
     <tr>
@@ -204,7 +216,7 @@ Caused by application logic changes:
       <td>2</td>
       <td title="2/5 x 100% = 40%">40%</td>
       <td title="40% - 60% = -20%" style="color: red;">-20%</td>
-      <td>100%<br/>(Assuming that covered lines were modified)</td>
+      <td style="color: green;">100%</td>
     </tr>
   </tbody>
 </table>
@@ -316,11 +328,11 @@ Caused by application logic changes:
       <td>ClassB.java</td>
       <td>3</td>
       <td>1</td>
-      <td title="1/3 x 100% = 33.3(3)%">33.3(3)%</td>
+      <td title="1/3 x 100% = 33.33%">33.33%</td>
       <td>3</td>
       <td>1</td>
-      <td title="1/3 x 100% = 33.3(3)%">33.3(3)%</td>
-      <td title="33.3(3)% - 33.3(3)% = 0%">0%</td>
+      <td title="1/3 x 100% = 33.33%">33.33%</td>
+      <td title="33.33% - 33.33% = 0%">0%</td>
     </tr>
     <tr>
       <td><strong>Total</strong></td>
