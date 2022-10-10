@@ -112,13 +112,13 @@ The table below represents two example coverage reports reflecting a pull reques
   <thead>
     <tr>
       <th></th>
-      <th colspan="2" class="center">Merge base commit</th>
+      <th colspan="2" class="center border">Merge base commit</th>
       <th colspan="2" class="center">HEAD commit</th>
     </tr>
     <tr>
       <th>File</th>
       <th>Line number</th>
-      <th>Covered by tests?</th>
+      <th class="border">Covered by tests?</th>
       <th>Line number</th>
       <th>Covered by tests?</th>
     </tr>
@@ -127,32 +127,32 @@ The table below represents two example coverage reports reflecting a pull reques
     <tr>
       <td rowspan="2">ClassA.java</td>
       <td>2</td>
-      <td>Yes</td>
+      <td class="border">Yes</td>
       <td>2</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td>4</td>
-      <td>Yes</td>
+      <td class="border">Yes</td>
       <td>4</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td rowspan="3">ClassB.java</td>
       <td>1</td>
-      <td>Yes</td>
+      <td class="border">Yes</td>
       <td>1</td>
       <td class="background-red">No</td>
     </tr>
     <tr>
       <td>3</td>
-      <td>No</td>
+      <td class="border">No</td>
       <td>3</td>
       <td>No</td>
     </tr>
     <tr>
       <td>11</td>
-      <td>No</td>
+      <td class="border">No</td>
       <td>11</td>
       <td>No</td>
     </tr>
@@ -168,18 +168,18 @@ The table below displays the code coverage metrics as calculated by Codacy:
   <thead>
     <tr>
       <th></th>
-      <th colspan="3" class="center">Merge base commit</th>
-      <th colspan="3" class="center">HEAD commit</th>
+      <th colspan="3" class="center border">Merge base commit</th>
+      <th colspan="3" class="center border">HEAD commit</th>
       <th colspan="2" class="center">Pull request results</th>
     </tr>
     <tr>
       <th>File</th>
       <th>Coverable<br/>lines</th>
       <th>Covered<br/>lines</th>
-      <th>Coverage</th>
+      <th class="border">Coverage</th>
       <th>Coverable<br/>lines</th>
       <th>Covered<br/>lines</th>
-      <th>Coverage</th>
+      <th class="border">Coverage</th>
       <th>Coverage variation</th>
       <th>Diff coverage</td>
     </tr>
@@ -189,10 +189,10 @@ The table below displays the code coverage metrics as calculated by Codacy:
       <td>ClassA.java</td>
       <td>2</td>
       <td>2</td>
-      <td title="2/2 x 100% = 100%">100%</td>
+      <td title="2/2 x 100% = 100%" class="border">100%</td>
       <td>2</td>
       <td>2</td>
-      <td title="2/2 x 100% = 100%">100%</td>
+      <td title="2/2 x 100% = 100%" class="border">100%</td>
       <td title="100% - 100% = 0%">0%</td>
       <td></td>
     </tr>
@@ -200,10 +200,10 @@ The table below displays the code coverage metrics as calculated by Codacy:
       <td>ClassB.java</td>
       <td>3</td>
       <td>1</td>
-      <td title="1/3 x 100% = 33.33%">33.33%</td>
+      <td title="1/3 x 100% = 33.33%" class="border">33.33%</td>
       <td>3</td>
       <td>0</td>
-      <td title="0/3 x 100% = 0%">0%</td>
+      <td title="0/3 x 100% = 0%" class="border">0%</td>
       <td title="0% - 33.33% = -33.33%">-33.33%</td>
       <td></td>
     </tr>
@@ -211,10 +211,10 @@ The table below displays the code coverage metrics as calculated by Codacy:
       <td><strong>Total</strong></td>
       <td>5</td>
       <td>3</td>
-      <td title="3/5 x 100% = 60%">60%</td>
+      <td title="3/5 x 100% = 60%" class="border">60%</td>
       <td>5</td>
       <td>2</td>
-      <td title="2/5 x 100% = 40%">40%</td>
+      <td title="2/5 x 100% = 40%" class="border">40%</td>
       <td title="40% - 60% = -20%" class="text-red">-20%</td>
       <td class="text-green">100%</td>
     </tr>
@@ -240,13 +240,13 @@ The table below represents two example coverage reports reflecting a pull reques
   <thead>
     <tr>
       <th></th>
-      <th colspan="2" class="center">Merge base commit</th>
+      <th colspan="2" class="center border">Merge base commit</th>
       <th colspan="2" class="center">HEAD commit</th>
     </tr>
     <tr>
       <th>File</th>
       <th>Line number</th>
-      <th>Covered by tests?</th>
+      <th class="border">Covered by tests?</th>
       <th>Line number</th>
       <th>Covered by tests?</th>
     </tr>
@@ -255,24 +255,24 @@ The table below represents two example coverage reports reflecting a pull reques
     <tr>
       <td rowspan="5">ClassA.java</td>
       <td>2</td>
-      <td>Yes</td>
+      <td class="border">Yes</td>
       <td>2</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td>4</td>
-      <td>Yes</td>
+      <td class="border">Yes</td>
       <td>4</td>
       <td>Yes</td>
     </tr>
       <td>5</td>
-      <td>Yes</td>
+      <td class="border">Yes</td>
       <td class="background-red"></td>
       <td class="background-red"></td>
     <tr>
     </tr>
       <td>6</td>
-      <td>Yes</td>
+      <td class="border">Yes</td>
       <td class="background-red"></td>
       <td class="background-red"></td>
     <tr>
@@ -280,19 +280,19 @@ The table below represents two example coverage reports reflecting a pull reques
     <tr>
       <td rowspan="3">ClassB.java</td>
       <td>1</td>
-      <td>Yes</td>
+      <td class="border">Yes</td>
       <td>1</td>
       <td>Yes</td>
     </tr>
     <tr>
       <td>3</td>
-      <td>No</td>
+      <td class="border">No</td>
       <td>3</td>
       <td>No</td>
     </tr>
     <tr>
       <td>11</td>
-      <td>No</td>
+      <td class="border">No</td>
       <td>11</td>
       <td>No</td>
     </tr>
@@ -308,18 +308,18 @@ The table below displays the code coverage metrics as calculated by Codacy:
   <thead>
     <tr>
       <th></th>
-      <th colspan="3" class="center">Merge base commit</th>
-      <th colspan="3" class="center">HEAD commit</th>
+      <th colspan="3" class="center border">Merge base commit</th>
+      <th colspan="3" class="center border">HEAD commit</th>
       <th class="center">Pull request results</th>
     </tr>
     <tr>
       <th>File</th>
       <th>Coverable<br/>lines</th>
       <th>Covered<br/>lines</th>
-      <th>Coverage</th>
+      <th class="border">Coverage</th>
       <th>Coverable<br/>lines</th>
       <th>Covered<br/>lines</th>
-      <th>Coverage</th>
+      <th class="border">Coverage</th>
       <th>Coverage variation</th>
     </tr>
   </thead>
@@ -328,30 +328,30 @@ The table below displays the code coverage metrics as calculated by Codacy:
       <td>ClassA.java</td>
       <td>4</td>
       <td>4</td>
-      <td title="4/4 x 100% = 100%">100%</td>
+      <td title="4/4 x 100% = 100%" class="border">100%</td>
       <td>2</td>
       <td>2</td>
-      <td title="2/2 x 100% = 100%">100%</td>
+      <td title="2/2 x 100% = 100%" class="border">100%</td>
       <td title="100% - 100% = 0%">0%</td>
     </tr>
     <tr>
       <td>ClassB.java</td>
       <td>3</td>
       <td>1</td>
-      <td title="1/3 x 100% = 33.33%">33.33%</td>
+      <td title="1/3 x 100% = 33.33%" class="border">33.33%</td>
       <td>3</td>
       <td>1</td>
-      <td title="1/3 x 100% = 33.33%">33.33%</td>
+      <td title="1/3 x 100% = 33.33%" class="border">33.33%</td>
       <td title="33.33% - 33.33% = 0%">0%</td>
     </tr>
     <tr>
       <td><strong>Total</strong></td>
       <td>7</td>
       <td>5</td>
-      <td title="5/7 x 100% = 62.5%">62.5%</td>
+      <td title="5/7 x 100% = 62.5%" class="border">62.5%</td>
       <td>5</td>
       <td>3</td>
-      <td title="3/5 x 100% = 60%">60%</td>
+      <td title="3/5 x 100% = 60%" class="border">60%</td>
       <td title="60% - 62.5% = -2.5%" class="text-red">-2.5%</td>
     </tr>
   </tbody>
@@ -365,6 +365,15 @@ The table below displays the code coverage metrics as calculated by Codacy:
 /*Center text*/
 .center {
   text-align: center !important;
+}
+
+/*Right border*/
+th.border {
+  border-right: 1px solid white;
+}
+
+.border {
+  border-right: 1px solid var(--md-default-fg-color--light);
 }
 
 /*Red background*/
