@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy scans your code for issues and calculates code complexity, duplication, and coverage metrics. Besides this, Codacy also calculates a grade for your repository and files based on all calculated code quality metrics.">
       
       
-        <meta http-equiv="last-modified" content="2022-09-30 07:28:39">
+        <meta http-equiv="last-modified" content="2022-10-10 17:32:10">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/which-metrics-does-codacy-calculate/">
@@ -1960,6 +1960,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../why-does-codacy-show-unexpected-coverage-changes/" title="Why does Codacy show unexpected coverage changes?" class="md-nav__link">
+      Why does Codacy show unexpected coverage changes?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../does-codacy-place-limits-on-the-code-analysis/" title="Does Codacy place limits on the code analysis?" class="md-nav__link">
       Does Codacy place limits on the code analysis?
     </a>
@@ -3724,6 +3736,8 @@
 <ul>
 <li>The coverage value for each file is the percentage of coverable lines that are covered by tests in the file.</li>
 <li>A repository is considered to have acceptable coverage if the average coverage value for the files in the repository is higher than the threshold <a href="../../../repositories-configure/adjusting-quality-settings/#goals"><strong>Coverage is under</strong></a>.</li>
+</ul>
+<ul>
 <li>The <strong>coverage variation</strong> of a commit or pull request is the number of percentage points that the coverage value for the file increased or dropped in the commit or pull request.</li>
 <li>
 <p>The <strong>diff coverage</strong> of a pull request is the percentage of <strong>coverable lines</strong> that the pull request <strong>added or modified</strong> that are covered by tests.</p>
@@ -3734,6 +3748,10 @@
 </ul>
 </li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you encounter a situation where Codacy shows an unexpected drop in coverage, learn about <a href="../why-does-codacy-show-unexpected-coverage-changes/">the most common reasons causing those scenarios</a>.</p>
+</div>
 <p>Once the coverage setup is complete, Codacy displays coverage data on the following places:</p>
 <table>
 <thead>
@@ -3775,8 +3793,9 @@
 </table>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
-<li><a href="../does-codacy-place-limits-on-the-code-analysis/">Does Codacy place limits on the code analysis?</a></li>
 <li><a href="https://blog.codacy.com/diff-coverage/">Diff coverage: <span class="skip-vale">we have</span> a new metric and quality gate rule for PRs</a></li>
+<li><a href="../why-does-codacy-show-unexpected-coverage-changes/">Why does Codacy show unexpected coverage changes?</a></li>
+<li><a href="../does-codacy-place-limits-on-the-code-analysis/">Does Codacy place limits on the code analysis?</a></li>
 </ul>
               
               
@@ -3934,7 +3953,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 30, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 10, 2022</span>
     
   </small>
 </div>

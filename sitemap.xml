@@ -216,6 +216,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.codacy.com/faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes/</loc>
+         <lastmod>2022-10-10</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.codacy.com/faq/general/how-can-i-change-or-cancel-my-plan/</loc>
          <lastmod>2022-10-10</lastmod>
          <changefreq>daily</changefreq>
