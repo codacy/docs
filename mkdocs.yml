@@ -626,6 +626,7 @@ nav:
                 - faq/repositories/i-moved-my-repository-on-the-git-provider.md
           - Code analysis:
                 - faq/code-analysis/which-metrics-does-codacy-calculate.md
+                - faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md
                 - faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md
                 - faq/code-analysis/does-codacy-check-for-dependencies.md
                 - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
