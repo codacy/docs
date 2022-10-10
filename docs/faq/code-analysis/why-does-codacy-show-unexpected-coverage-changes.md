@@ -112,8 +112,8 @@ The table below represents two example coverage reports reflecting a pull reques
   <thead>
     <tr>
       <th></th>
-      <th colspan="2" style="text-align: center;">Merge base commit</th>
-      <th colspan="2" style="text-align: center;">HEAD commit</th>
+      <th colspan="2" class="center">Merge base commit</th>
+      <th colspan="2" class="center">HEAD commit</th>
     </tr>
     <tr>
       <th>File</th>
@@ -142,7 +142,7 @@ The table below represents two example coverage reports reflecting a pull reques
       <td>1</td>
       <td>Yes</td>
       <td>1</td>
-      <td style="background-color:  salmon;">No</td>
+      <td class="background-red">No</td>
     </tr>
     <tr>
       <td>3</td>
@@ -168,9 +168,9 @@ The table below displays the code coverage metrics as calculated by Codacy:
   <thead>
     <tr>
       <th></th>
-      <th colspan="3" style="text-align: center;">Merge base commit</th>
-      <th colspan="3" style="text-align: center;">HEAD commit</th>
-      <th colspan="2" style="text-align: center;">Pull request results</th>
+      <th colspan="3" class="center">Merge base commit</th>
+      <th colspan="3" class="center">HEAD commit</th>
+      <th colspan="2" class="center">Pull request results</th>
     </tr>
     <tr>
       <th>File</th>
@@ -215,8 +215,8 @@ The table below displays the code coverage metrics as calculated by Codacy:
       <td>5</td>
       <td>2</td>
       <td title="2/5 x 100% = 40%">40%</td>
-      <td title="40% - 60% = -20%" style="color: red;">-20%</td>
-      <td style="color: green;">100%</td>
+      <td title="40% - 60% = -20%" class="text-red">-20%</td>
+      <td class="text-green">100%</td>
     </tr>
   </tbody>
 </table>
@@ -240,8 +240,8 @@ The table below represents two example coverage reports reflecting a pull reques
   <thead>
     <tr>
       <th></th>
-      <th colspan="2" style="text-align: center;">Merge base commit</th>
-      <th colspan="2" style="text-align: center;">HEAD commit</th>
+      <th colspan="2" class="center">Merge base commit</th>
+      <th colspan="2" class="center">HEAD commit</th>
     </tr>
     <tr>
       <th>File</th>
@@ -267,14 +267,14 @@ The table below represents two example coverage reports reflecting a pull reques
     </tr>
       <td>5</td>
       <td>Yes</td>
-      <td style="background-color:  salmon;"></td>
-      <td style="background-color:  salmon;"></td>
+      <td class="background-red"></td>
+      <td class="background-red"></td>
     <tr>
     </tr>
       <td>6</td>
       <td>Yes</td>
-      <td style="background-color:  salmon;"></td>
-      <td style="background-color:  salmon;"></td>
+      <td class="background-red"></td>
+      <td class="background-red"></td>
     <tr>
     </tr>
     <tr>
@@ -308,9 +308,9 @@ The table below displays the code coverage metrics as calculated by Codacy:
   <thead>
     <tr>
       <th></th>
-      <th colspan="3" style="text-align: center;">Merge base commit</th>
-      <th colspan="3" style="text-align: center;">HEAD commit</th>
-      <th style="text-align: center;">Pull request results</th>
+      <th colspan="3" class="center">Merge base commit</th>
+      <th colspan="3" class="center">HEAD commit</th>
+      <th class="center">Pull request results</th>
     </tr>
     <tr>
       <th>File</th>
@@ -352,7 +352,7 @@ The table below displays the code coverage metrics as calculated by Codacy:
       <td>5</td>
       <td>3</td>
       <td title="3/5 x 100% = 60%">60%</td>
-      <td title="60% - 62.5% = -2.5%" style="color: red;">-2.5%</td>
+      <td title="60% - 62.5% = -2.5%" class="text-red">-2.5%</td>
     </tr>
   </tbody>
 </table>
@@ -360,3 +360,25 @@ The table below displays the code coverage metrics as calculated by Codacy:
 ## See also
 
 -   [Which metrics does Codacy calculate?](which-metrics-does-codacy-calculate.md#code-coverage)
+
+<style>
+/*Center text*/
+.center {
+  text-align: center !important;
+}
+
+/*Red background*/
+.background-red {
+  background-color: #ffe6e6;
+}
+
+/*Green text*/
+.text-green {
+  color: #21c178;
+}
+
+/*Red text*/
+.text-red {
+  color: #ef5454;
+}
+</style>
