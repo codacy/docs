@@ -17,7 +17,7 @@ Click a specific commit to see detailed information about the code quality chang
 
 The next sections describe each area of the commit detail page.
 
-## Commit status
+## Commit status {: id="status"}
 
 This area displays the information that identifies the commit (SHA hash, date, and commit message), as well as:
 
@@ -28,7 +28,7 @@ This area displays the information that identifies the commit (SHA hash, date, a
 ![Commit status](images/commits-detail-status.png)
 
 <!--quality-overview-start-->
-## {{ page.meta.page_name.capitalize() }} quality overview
+## {{ page.meta.page_name.capitalize() }} quality overview {: id="quality-overview"}
 
 This area displays the quality gate status and an overview of the code quality metrics for the {{ page.meta.page_name }}:
 

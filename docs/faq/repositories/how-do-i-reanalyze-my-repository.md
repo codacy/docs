@@ -40,5 +40,5 @@ To reanalyze a pull request in your repository:
 
 ## See also
 
--   [Commit status](../../repositories/commits.md#commit-status)
--   [Pull request status](../../repositories/pull-requests.md#pull-request-status)
+-   [Commit status](../../repositories/commits.md#status)
+-   [Pull request status](../../repositories/pull-requests.md#status)
