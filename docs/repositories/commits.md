@@ -17,7 +17,7 @@ Click a specific commit to see detailed information about the code quality chang
 
 The next sections describe each area of the commit detail page.
 
-## Commit status
+## Commit status {: id="status"}
 
 This area displays the information that identifies the commit (SHA hash, date, and commit message), as well as:
 
