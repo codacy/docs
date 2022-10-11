@@ -85,7 +85,7 @@ There are several reasons that could cause Codacy to report unexpected coverage 
     -   Tests that are dependent on time, such as running test cases only on specific dates or times of the day
     -   "Flaky" tests caused by any inconsistent or unreliable behavior of your code, infrastructure, or third-party services
 
-The examples below describe in more detail how the Codacy code coverage metrics reflect specific changes in your code.
+The examples below describe in more detail how specific changes in your code impact the coverage metrics that Codacy calculates.
 
 ## Example: Diff coverage is 100% but pull request coverage variation is negative
 
