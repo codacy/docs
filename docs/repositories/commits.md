@@ -50,6 +50,12 @@ This area displays the quality gate status and an overview of the code quality m
 
     Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
 
+    !!! note
+        Learn in more detail how Codacy calculates the code quality metrics:
+
+        -   [Which code quality metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+        -   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
+
 -   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) for your repository:
 
     -   **Green:** The metric passes the quality gate
