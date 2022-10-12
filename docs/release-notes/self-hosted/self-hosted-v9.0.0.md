@@ -35,6 +35,11 @@ To upgrade PostgreSQL:
 
 1.  After the upgrade, clean the Codacy databases with [vacuumdb](https://www.postgresql.org/docs/10/app-vacuumdb.html) to prevent the <span class="skip-vale">autovacuum</a> feature from momentarily affecting the performance of the databases at a later time.
 
+!!! important
+    If you download and use an updated `values-production.yaml` file while upgrading to Codacy Self-hosted 9.0.0, the upgrade will fail because the MinIO PVC can't be resized.
+
+    [Please see the troubleshooting instructions](https://docs.codacy.com/chart/troubleshoot/troubleshoot/#upgrade-failed-cannot-patch-codacy-minio) for a workaround.
+
 ## Product enhancements
 
 -   The [integration with GitHub Cloud and GitHub Enterprise](https://docs.codacy.com/v9.0/repositories-configure/integrations/github-integration/) now uses a GitHub Apps token instead of a personal one so that the following features continue working even if the person who created the integration leaves the organization on GitHub:
