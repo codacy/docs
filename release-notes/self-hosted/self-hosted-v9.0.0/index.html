@@ -11,7 +11,7 @@
         <meta name="description" content="Release notes for Codacy Self-hosted v9.0.0.">
       
       
-        <meta http-equiv="last-modified" content="2022-10-04 11:18:42">
+        <meta http-equiv="last-modified" content="2022-10-12 15:29:21">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/self-hosted/self-hosted-v9.0.0/">
@@ -3567,6 +3567,11 @@
 <p>After the upgrade, clean the Codacy databases with <a href="https://www.postgresql.org/docs/10/app-vacuumdb.html">vacuumdb</a> to prevent the <span class="skip-vale">autovacuum</a> feature from momentarily affecting the performance of the databases at a later time.</p>
 </li>
 </ol>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you download and use an updated <code>values-production.yaml</code> file while upgrading to Codacy Self-hosted 9.0.0, the upgrade will fail because the MinIO PVC can't be resized.</p>
+<p><a href="https://docs.codacy.com/chart/troubleshoot/troubleshoot/#upgrade-failed-cannot-patch-codacy-minio">Please see the troubleshooting instructions</a> for a workaround.</p>
+</div>
 <h2 id="product-enhancements">Product enhancements<a class="headerlink" href="#product-enhancements" title="Permanent link">#</a></h2>
 <ul>
 <li>
@@ -3830,7 +3835,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 4, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 12, 2022</span>
     
   </small>
 </div>
