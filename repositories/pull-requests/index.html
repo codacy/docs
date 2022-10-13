@@ -3574,7 +3574,7 @@
 <p>If you don't have any rules enabled for pull requests, the status is always <strong>Up to standards</strong>.</p>
 </li>
 <li>
-<p>The variation of the following <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">code quality metrics</a> introduced by the pull request is displayed either as a <strong>positive or negative variation</strong>, <strong>no variation</strong> (represented by <code>=</code>), or <strong>not applicable</strong> (represented by <code>∅</code>):</p>
+<p>The variation of the following code quality metrics introduced by the pull request is displayed either as a <strong>positive or negative variation</strong>, <strong>no variation</strong> (represented by <code>=</code>), or <strong>not applicable</strong> (represented by <code>∅</code>):</p>
 <ul>
 <li><strong>Issues:</strong> Number of new or fixed issues</li>
 <li><strong>Duplication:</strong> Variation of the number of duplicated code blocks</li>
@@ -3587,6 +3587,14 @@
 <li><strong>Diff coverage:</strong> Code coverage of the coverable lines added or changed by the pull request, or <code>∅</code> (not applicable) if there aren't any coverable lines added or changed</li>
 </ul>
 <p>Depending on the languages being analyzed or if you haven't <a href="../../coverage-reporter/">set up coverage for your repository</a>, some metrics <strong>may not be calculated</strong> (represented by <code>-</code>).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Learn how Codacy calculates the code quality metrics in more detail:</p>
+<ul>
+<li><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">Which code quality metrics does Codacy calculate?</a></li>
+<li><a href="../../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes/">Why does Codacy show unexpected coverage changes?</a></li>
+</ul>
+</div>
 </li>
 <li>
 <p>The <strong>colors</strong> depend on the <a href="../../repositories-configure/adjusting-quality-settings/">quality gate rules</a> for your repository:</p>
