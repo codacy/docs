@@ -12,7 +12,7 @@ pymdown-extensions==9.6
 mkdocs-exclude-search==0.6.4
 mkdocs-exclude==1.0.2
 mkdocs-git-revision-date-localized-plugin==1.1.0
-mkdocs-include-markdown-plugin==3.9.0
+mkdocs-include-markdown-plugin==3.9.1
 mkdocs-macros-plugin==0.7.0
 mkdocs-meta-descriptions-plugin==2.1.0
 mkdocs-monorepo-plugin==1.0.4
