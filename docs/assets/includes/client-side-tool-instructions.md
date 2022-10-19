@@ -30,3 +30,8 @@
     ```
 <!--instructions-end-->
 
+<!--advanced-start-->
+## Advanced configuration
+
+See the available [Codacy Analysis CLI configuration flags](https://github.com/codacy/codacy-analysis-cli#configuration) to configure running {{ page.meta.tool_name }} in more advanced scenarios.
+<!--advanced-end-->

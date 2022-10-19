@@ -37,3 +37,9 @@ To run deadcode as a [client-side tool](client-side-tools.md):
     ```
 
 The Codacy Analysis CLI runs deadcode on your repository and uploads the results to Codacy so you can use them in your workflow.
+
+{%
+    include-markdown "../../assets/includes/client-side-tool-instructions.md"
+    start="<!--advanced-start-->"
+    end="<!--advanced-end-->"
+%}
