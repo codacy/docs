@@ -20,8 +20,8 @@ If you have many repositories, you can use the search field above the list to <s
 
 {%
     include-markdown "../assets/includes/paid.md"
-    start="<!--start-paid-private-repositories-->"
-    end="<!--end-paid-private-repositories-->"
+    start="<!--paid-private-repositories-start-->"
+    end="<!--paid-private-repositories-end-->"
 %}
 
 To add a new repository to Codacy, click the button **Add repository** at the top right-hand corner of the page. This opens a window listing the repositories in your Git provider organization that don't belong to your organization on Codacy yet.

@@ -2,8 +2,8 @@
 
 {%
     include-markdown "../assets/includes/paid.md"
-    start="<!--start-paid-->"
-    end="<!--end-paid-->"
+    start="<!--paid-start-->"
+    end="<!--paid-end-->"
 %}
 
 The **Security Monitor** provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.
