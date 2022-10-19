@@ -1,3 +1,4 @@
+<!--instructions-start-->
 1.  [Enable {{ page.meta.tool_name }}](../../repositories-configure/configuring-code-patterns.md) and configure the corresponding code patterns on your repository **Code patterns** page.
 
 1.  Enable **Run analysis on your build server** on your repository **Settings**, tab **General**, **Repository analysis**.
@@ -27,3 +28,10 @@
     ```bash
     export CODACY_API_BASE_URL=<your Codacy instance URL>
     ```
+<!--instructions-end-->
+
+<!--advanced-start-->
+## Advanced configuration
+
+See the available [Codacy Analysis CLI configuration flags](https://github.com/codacy/codacy-analysis-cli#configuration) to configure running {{ page.meta.tool_name }} in more advanced scenarios.
+<!--advanced-end-->
