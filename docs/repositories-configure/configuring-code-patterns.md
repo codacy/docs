@@ -137,7 +137,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
     <td>Python</td>
     <td><code>bandit.yml</code>, <code>.bandit</code></td>
-    <td>To solve flagged valid Python "assert" statements, create a <code>bandit.yml</code> in the root of the repository containing: <code>skips: \['B101'\]</code></td>
+    <td>To solve flagged valid Python "assert" statements, create a <code>bandit.yml</code> on the root of the repository containing: <code>skips: \['B101'\]</code></td>
   </tr>
   <tr>
     <td>Brakeman</td>
@@ -187,7 +187,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td><code>.eslintrc.js</code>, <code>.eslintrc.cjs</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code>, <code>.eslintrc</code>,
         <code>.prettierrc</code>, <code>.prettierrc.yaml</code>, <code>.prettierrc.yml</code>, <code>.prettierrc.json</code>, <code>prettier.config.js</code>, <code>.prettierrc.js</code></td>
     <td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintPlugins.ts">Plugins configurable on the Codacy UI</a><br />
-        <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L58">Other supported plugins</a></td>
+        <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L58">Other supported plugins</a><br />
+
+        <p>If you're using <a href="https://eslint.org/docs/latest/user-guide/configuring/configuration-files#cascading-and-hierarchy">module-level ESLint configuration files</a>, you must also include a ESLint configuration file <strong>on the root of your repository</strong> for Codacy to detect that you're using configuration files. For example, add the following minimal <code>.eslintrc.json</code> configuration file:</p>
+
+        <pre><code>{ "root": true }</code></pre>
+    </td>
   </tr>
   <tr>
     <td>Hadolint</td>
