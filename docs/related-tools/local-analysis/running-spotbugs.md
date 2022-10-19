@@ -9,7 +9,11 @@ To run SpotBugs as a [client-side tool](client-side-tools.md):
 
 <!-- NOTE
      include-markdown breaks the final list in two, use include instead. -->
-{% include "../../assets/includes/client-side-tool-instructions.md" %}
+{%
+    include "../../assets/includes/client-side-tool-instructions.md"
+    start="<!--instructions-start-->"
+    end="<!--instructions-end-->"
+%}
 
 1.  Compile your Java or Scala repository on your build server, as you would normally do.
 
