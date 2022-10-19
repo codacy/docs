@@ -186,8 +186,8 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>JavaScript, Typescript</td>
     <td><code>.eslintrc.js</code>, <code>.eslintrc.cjs</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code>, <code>.eslintrc</code>,
         <code>.prettierrc</code>, <code>.prettierrc.yaml</code>, <code>.prettierrc.yml</code>, <code>.prettierrc.json</code>, <code>prettier.config.js</code>, <code>.prettierrc.js</code></td>
-    <td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintDefaultOptions.ts#L26">Plugins in the UI</a><br />
-        <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L119">Other Plugins</a></td>
+    <td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintPlugins.ts">Plugins in the UI</a><br />
+        <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L58">Other Plugins</a></td>
   </tr>
   <tr>
     <td>Hadolint</td>
