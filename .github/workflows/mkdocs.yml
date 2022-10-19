@@ -46,7 +46,7 @@ jobs:
         id: netlify-alias
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
         run: |
-          echo "::set-output name=alias::$(echo ${GITHUB_REF#refs/heads/} | tr -c -s "[:alnum:]" "-" | tr "[:upper:]" "[:lower:]" | cut -c -35 | sed "s/-*$//")"
+          echo "alias=$(echo ${GITHUB_REF#refs/heads/} | tr -c -s "[:alnum:]" "-" | tr "[:upper:]" "[:lower:]" | cut -c -35 | sed "s/-*$//")" >> $GITHUB_OUTPUT
 
       - name: Deploy docs (branch preview)
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
