@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to run SpotBugs as a client-side tool on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2022-09-05 14:48:48">
+        <meta http-equiv="last-modified" content="2022-10-19 10:11:23">
       
       
         <link rel="canonical" href="https://docs.codacy.com/related-tools/local-analysis/running-spotbugs/">
@@ -979,6 +979,13 @@
         <li class="md-nav__item">
   <a href="#increasing-the-timeout-to-run-spotbugs" class="md-nav__link">
     Increasing the timeout to run SpotBugs
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#advanced-configuration" class="md-nav__link">
+    Advanced configuration
   </a>
   
 </li>
@@ -3584,6 +3591,8 @@ engines:
 <h2 id="increasing-the-timeout-to-run-spotbugs">Increasing the timeout to run SpotBugs<a class="headerlink" href="#increasing-the-timeout-to-run-spotbugs" title="Permanent link">#</a></h2>
 <p>When running SpotBugs on the compiled classes of larger projects, the <a href="https://github.com/codacy/codacy-analysis-cli#commands-and-configuration">default execution timeout of 15 minutes</a> may not be enough for SpotBugs to complete the analysis.</p>
 <p>To increase the timeout that SpotBugs has to execute, use the option <code>--tool-timeout</code> when running the Codacy Analysis CLI. For example, use <code>--tool-timeout 1hour</code> to set the timeout to one hour.</p>
+<h2 id="advanced-configuration">Advanced configuration<a class="headerlink" href="#advanced-configuration" title="Permanent link">#</a></h2>
+<p>See the available <a href="https://github.com/codacy/codacy-analysis-cli#configuration">Codacy Analysis CLI configuration flags</a> to configure running SpotBugs in more advanced scenarios.</p>
               
               
                 
@@ -3740,7 +3749,7 @@ engines:
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 5, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 19, 2022</span>
     
   </small>
 </div>
