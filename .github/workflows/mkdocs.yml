@@ -31,6 +31,12 @@ jobs:
         run: |
           mkdocs -v build
 
+      - name: Upload meta descriptions artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: meta-descriptions
+          path: ./site/meta-descriptions.csv
+
       - name: Validate generated HTML files
         run: |
           docker run -v $(pwd):/test --rm wjdp/htmltest --conf .htmltest.yml
