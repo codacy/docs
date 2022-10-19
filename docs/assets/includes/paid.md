@@ -1,11 +1,11 @@
-<!--start-paid-->
+<!--paid-start-->
 !!! info "This feature is [only available on paid plans](https://www.codacy.com/pricing)"
-<!--end-paid-->
+<!--paid-end-->
 
-<!--start-paid-private-repositories-->
+<!--paid-private-repositories-start-->
 !!! info "Analyzing private repositories is [only available on paid plans](https://www.codacy.com/pricing)"
-<!--end-paid-private-repositories-->
+<!--paid-private-repositories-end-->
 
-<!--start-paid-feature-->
+<!--paid-feature-start-->
 !!! info "This is a [paid feature](https://www.codacy.com/pricing)"
-<!--end-paid-feature>
+<!--paid-feature-end>

@@ -53,8 +53,8 @@ Based on the information obtained from the coverage reports, Codacy calculates c
 
 {%
     include-markdown "which-metrics-does-codacy-calculate.md"
-    start="<!--start-code-coverage-metrics-->"
-    end="<!--end-code-coverage-metrics-->"
+    start="<!--code-coverage-metrics-start-->"
+    end="<!--code-coverage-metrics-end-->"
 %}
 
 !!! important
