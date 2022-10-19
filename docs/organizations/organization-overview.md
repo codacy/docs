@@ -6,8 +6,8 @@ description: The Organization Overview provides an overview of repositories that
 
 {%
     include-markdown "../assets/includes/paid.md"
-    start="<!--start-paid-->"
-    end="<!--end-paid-->"
+    start="<!--paid-start-->"
+    end="<!--paid-end-->"
 %}
 
 The **Organization Overview** provides an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.

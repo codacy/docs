@@ -36,8 +36,8 @@ Adds a report to your pull requests showing whether your pull requests and cover
 
 {%
     include-markdown "../../assets/includes/status-checks-important.md"
-    start="<!--start-->"
-    end="<!--end-->"
+    start="<!--coverage-status-start-->"
+    end="<!--coverage-status-end-->"
 %}
 
 ![Pull request status check on GitHub](images/github-integration-pr-status.png)
@@ -58,8 +58,8 @@ Shows an overall view of the changes in the pull request, including new issues a
 
 {%
     include-markdown "../../assets/includes/paid.md"
-    start="<!--start-paid-->"
-    end="<!--end-paid-->"
+    start="<!--paid-start-->"
+    end="<!--paid-end-->"
 %}
 
 Adds comments on the lines of the pull request where Codacy finds new issues with suggestions on how to fix the issues. Codacy doesn't apply any changes automatically. To apply the changes, [manually review and accept the suggestions](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request#applying-suggested-changes).

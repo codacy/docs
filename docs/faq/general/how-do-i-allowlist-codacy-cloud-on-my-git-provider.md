@@ -6,8 +6,8 @@ description: Enable static IP addresses for your Codacy organization so that you
 
 {%
     include-markdown "../../assets/includes/paid.md"
-    start="<!--start-paid-feature-->"
-    end="<!--end-paid-feature-->"
+    start="<!--paid-feature-start-->"
+    end="<!--paid-feature-end-->"
 %}
 
 If you require an additional layer of security and control on your Git provider, you can configure an allowlist containing the specific IP addresses that are able to access your Git repositories and resources.

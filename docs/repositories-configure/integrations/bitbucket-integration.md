@@ -38,8 +38,8 @@ Adds a report to your pull requests showing whether your pull requests and cover
 
 {%
     include-markdown "../../assets/includes/status-checks-important.md"
-    start="<!--start-->"
-    end="<!--end-->"
+    start="<!--coverage-status-start-->"
+    end="<!--coverage-status-end-->"
 %}
 
 ![Pull request status on Bitbucket](images/bitbucket-integration-pr-status.png)
