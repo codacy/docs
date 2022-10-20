@@ -341,6 +341,13 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://eslint.org/">ESLint</a></td>
     </tr>
     <tr>
+      <td>Unity</td>
+      <td><a href="https://github.com/dotnet/roslyn-analyzers">Roslyn Analyzers</a><a href="#client-side"><sup>1</sup></a></td>
+      <td></td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>Velocity</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
       <td></td>

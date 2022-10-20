@@ -156,6 +156,10 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-remark-lint" class="skip-vale">codacy/codacy-remark-lint</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/dotnet/roslyn-analyzers">Roslyn Analyzers</a></td>
+<td><a href="https://github.com/codacy/codacy-roslyn" class="skip-vale">codacy/codacy-roslyn</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/rubocop/rubocop">RuboCop</a></td>
 <td><a href="https://github.com/codacy/codacy-rubocop" class="skip-vale">codacy/codacy-rubocop</a></td>
 </tr>
