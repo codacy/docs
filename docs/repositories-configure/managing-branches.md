@@ -4,9 +4,11 @@ Codacy automatically triggers analysis on the default branch of your repository 
 
 To change the default branch of your repository or enable analysis on other branches, open your repository **Settings**, tab **Branches**. Enabling a new branch triggers an initial analysis of that branch and the analysis results and information for that branch will become available after the analysis is complete.
 
-<!--TODO
-    Check if this note is needed. -->
 !!! note
+    We recommend that you set the default branch on Codacy to match the default branch of your Git repository. Codacy displays information for the default branch on dashboards and the repositories list by default.
+
+    <!--TODO
+        Check if this note is needed. -->
     To set a branch as the default branch, you must first enable that branch.
 
 ![Managing branches](images/managing-branches.png)
