@@ -11,7 +11,7 @@
         <meta name="description" content="You must create and correctly set up a GitHub App to allow Codacy Self-hosted to integrate with GitHub.">
       
       
-        <meta http-equiv="last-modified" content="2022-07-12 17:10:46">
+        <meta http-equiv="last-modified" content="2022-10-25 12:56:04">
       
       
         <link rel="canonical" href="https://docs.codacy.com/chart/configuration/integrations/github-app-create/">
@@ -3511,6 +3511,10 @@
 <td>Disabled<br/><br/><strong>⚠️ Note:</strong> Currently, Codacy doesn't support <a href="https://docs.github.com/en/developers/apps/building-github-apps/refreshing-user-to-server-access-tokens">expiring user access tokens</a>. Make sure that this option is turned off.</td>
 </tr>
 <tr>
+<td>Request user authorization (OAuth) during installation</td>
+<td>Enabled<br/><br/>Make sure this option is selected to request that the installing user grants access to their identity during the installation of your Codacy GitHub App.</td>
+</tr>
+<tr>
 <td>Webhook URL</td>
 <td>For GitHub Cloud:<br/><code>https://codacy.example.com/2.0/events/gh/organization</code><br/><br/>For GitHub Enterprise:<br/><code>https://codacy.example.com/2.0/events/ghe/organization</code></td>
 </tr>
@@ -3747,7 +3751,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 12, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 25, 2022</span>
     
   </small>
 </div>
