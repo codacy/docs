@@ -108,9 +108,9 @@ To make changes to any of the [repository submodules](https://github.com/codacy/
 
 1.  Back in this repository, create and checkout a feature branch named `feat/update-<submodule>`. For example:
 
-   ```bash
-   git checkout -b feat/update-chart
-   ```
+    ```bash
+    git checkout -b feat/update-chart
+    ```
 
 1.  Change into the directory of the submodule that includes new changes and pull the new changes. For example:
 
