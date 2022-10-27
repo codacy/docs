@@ -45,6 +45,12 @@ The table below describes the supported client-side tools and includes links to 
 </thead>
 <tbody>
     <tr>
+        <td>C#</td>
+        <td><a href="https://github.com/dotnet/roslyn-analyzers">Roslyn Analyzers</a> (includes <a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Analyzers</a>)</td>
+        <td>Roslyn Analyzers analyze your code for style, quality and maintainability, design, and other issues.</td>
+        <td><a href="https://github.com/codacy/codacy-roslyn#usage">Running Roslyn Analyzers</a> (standalone)</td>
+    </tr>
+    <tr>
         <td>C, C++</td>
         <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
         <td>Clang-tidy is a clang-based C++ “linter” tool. Its purpose is to provide an extensible framework for diagnosing and fixing typical programming errors, like style violations, interface misuse, or bugs that can be deduced via static analysis. Clang-tidy is modular and provides a convenient interface for writing new checks.</td>
@@ -87,12 +93,6 @@ The table below describes the supported client-side tools and includes links to 
         <td><a href="http://fauxpasapp.com/">Faux Pas</a></td>
         <td>Faux Pas inspects your iOS or Mac app's Xcode project and warns about possible bugs, as well as about maintainability and style issues.</td>
         <td><a href="https://github.com/codacy/codacy-faux-pas#usage">Running Faux Pas</a> (standalone)</td>
-    </tr>
-    <tr>
-        <td>Unity</td>
-        <td><a href="https://github.com/dotnet/roslyn-analyzers">Roslyn Analyzers</a></td>
-        <td>Roslyn Analyzers analyze your code for style, quality and maintainability, design, and other issues.</td>
-        <td><a href="https://github.com/codacy/codacy-roslyn#usage">Running Roslyn Analyzers</a> (standalone)</td>
     </tr>
 </table>
 

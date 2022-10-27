@@ -80,7 +80,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>C#</td>
-      <td><a href="https://github.com/SonarSource/sonar-dotnet">Sonar C#</a></td>
+      <td><a href="https://github.com/SonarSource/sonar-dotnet">Sonar C#</a>, <a href="https://github.com/dotnet/roslyn-analyzers">Roslyn Analyzers</a> (includes <a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Analyzers</a>)<a href="#client-side"><sup>1</sup></a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
@@ -339,13 +339,6 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://eslint.org/">ESLint</a></td>
-    </tr>
-    <tr>
-      <td>Unity</td>
-      <td><a href="https://github.com/dotnet/roslyn-analyzers">Roslyn Analyzers</a><a href="#client-side"><sup>1</sup></a></td>
-      <td></td>
-      <td>-</td>
-      <td>-</td>
     </tr>
     <tr>
       <td>Velocity</td>
