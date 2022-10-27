@@ -91,7 +91,7 @@ The table below describes the supported client-side tools and includes links to 
     <tr>
         <td>Unity</td>
         <td><a href="https://github.com/dotnet/roslyn-analyzers">Roslyn Analyzers</a></td>
-        <td><!--TODO Add final description--></td>
+        <td>Roslyn Analyzers analyze your code for style, quality and maintainability, design, and other issues.</td>
         <td><a href="https://github.com/codacy/codacy-roslyn#usage">Running Roslyn Analyzers</a> (standalone)</td>
     </tr>
 </table>
