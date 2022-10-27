@@ -88,7 +88,6 @@ You can use the Codacy configuration file to configure all tools supported by Co
 
 The following are the tool names that must be used in the Codacy configuration file:
 
-<!--TODO Check final short name for the codacy-roslyn tool-->
 ```text
 ameba
 bandit
