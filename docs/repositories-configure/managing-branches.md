@@ -24,6 +24,9 @@ Codacy automatically triggers analysis on the main branch of your repository (ty
 
 To change the main branch of your repository or enable analysis on other branches, open your repository **Settings**, tab **Branches**. Enabling a new branch triggers an initial analysis of that branch and the analysis results and information for that branch will become available after the analysis is complete.
 
+!!! note
+    **If you're using Codacy Self-hosted** you can also configure Codacy to automatically enable all new branches that are pushed to the repository.
+
 This page also displays the [code quality grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md) for each enabled branch.
 
 ![Managing branches](images/managing-branches-sh.png)
