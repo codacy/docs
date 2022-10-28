@@ -27,6 +27,11 @@ To change the main branch of your repository or enable analysis on other branche
 This page also displays the [code quality grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md) for each enabled branch.
 
 ![Managing branches](images/managing-branches-sh.png)
+
+!!! note
+    **If you're using Codacy Self-hosted** you can also configure Codacy to automatically enable all new branches that are pushed to the repository.
+
+    ![Auto-enable new branches](images/managing-branches-auto-enable.png)
 {% endif %}
 
 Codacy manages pull request branches and inactive branches as follows:
