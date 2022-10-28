@@ -16,9 +16,8 @@ To change the default branch of your repository or enable analysis on other bran
 
     Codacy displays information for the default branch on dashboards and the repositories list by default, and we recommend that you set the default branch on Codacy to match the default branch of your Git repository.
 
-    <!--TODO Check if it's important to mention this-->
     !!! note
-        To set a branch as the default branch, you must first enable that branch.
+        You can only set as the default branch an already analyzed branch.
 
 Codacy manages pull request branches and inactive branches as follows:
 
