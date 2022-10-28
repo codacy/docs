@@ -11,7 +11,7 @@
         <meta name="description" content="You may encounter some situations where Codacy shows unexpected drops in coverage, potentially causing your quality gates to fail. Usually, these drops in coverage happen in files that the commit or pull request didn&#x27;t change.">
       
       
-        <meta http-equiv="last-modified" content="2022-10-19 11:38:55">
+        <meta http-equiv="last-modified" content="2022-10-28 12:37:15">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes/">
@@ -3607,6 +3607,10 @@
 <p>This can be caused by a failed step in your CI/CD pipeline, for example. In the case of pull requests, you should make sure that you upload all relevant coverage reports for both the common ancestor commit and the HEAD commit of the pull request branch.</p>
 </li>
 <li>
+<p>Ignoring files on Codacy.</p>
+<p><a href="../../../repositories-configure/ignoring-files/">Updating the list of ignored files</a> can have an impact on the amount of coverable and covered lines of the commits that Codacy compares to calculate the coverage variation metric.</p>
+</li>
+<li>
 <p>External factors affecting the execution of tests.</p>
 <p>A variety of factors that are external to your code can affect the execution of tests and, consequently, the results contained in the coverage reports. A few examples of these external factors are:</p>
 <ul>
@@ -4071,7 +4075,7 @@ th.border {
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 19, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 28, 2022</span>
     
   </small>
 </div>
