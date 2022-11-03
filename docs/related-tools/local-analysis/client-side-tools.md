@@ -51,12 +51,6 @@ The table below describes the supported client-side tools and includes links to 
         <td><a href="https://github.com/codacy/codacy-clang-tidy#usage">Running Clang-Tidy</a> (standalone)</td>
     </tr>
     <tr>
-        <td>C#</td>
-        <td><a href="https://github.com/dotnet/roslyn-analyzers">Roslyn Analyzers</a> (includes <a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Analyzers</a>)</td>
-        <td>Roslyn Analyzers analyze your code for style, quality and maintainability, design, and other issues.</td>
-        <td><a href="https://github.com/codacy/codacy-roslyn#usage">Running Roslyn Analyzers</a> (standalone)</td>
-    </tr>
-    <tr>
         <td rowspan="4">Go</td>
         <td><a href="https://gitlab.com/opennota/check">aligncheck</a></td>
         <td>aligncheck is a utility for finding unused struct fields in Go source files.</td>
@@ -93,6 +87,12 @@ The table below describes the supported client-side tools and includes links to 
         <td><a href="http://fauxpasapp.com/">Faux Pas</a></td>
         <td>Faux Pas inspects your iOS or Mac app's Xcode project and warns about possible bugs, as well as about maintainability and style issues.</td>
         <td><a href="https://github.com/codacy/codacy-faux-pas#usage">Running Faux Pas</a> (standalone)</td>
+    </tr>
+    <tr>
+        <td>Unity</td>
+        <td><a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a></td>
+        <td>Unity-specific diagnostics for CSharp Unity projects.</td>
+        <td><a href="https://github.com/codacy/codacy-roslyn#usage">Running Unity Roslyn Analyzers</a> (standalone)</td>
     </tr>
 </table>
 

@@ -339,7 +339,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     -   Gosec
     -   Jackson Linter
     -   PSScriptAnalyzer
-    -   Roslyn Analyzers
+    -   Unity Roslyn Analyzers
     -   ShellCheck
     -   SQLint
     -   Staticcheck
