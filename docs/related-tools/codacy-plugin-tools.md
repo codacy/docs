@@ -88,7 +88,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-cppcheck" class="skip-vale">codacy/codacy-cppcheck</a></td>
 </tr>
 <tr>
-<td><span>Credo</span></td>
+<td><a href="https://github.com/rrrene/credo">Credo</a></span></td>
 <td><a href="https://github.com/codacy/codacy-credo" class="skip-vale">codacy/codacy-credo</a></td>
 </tr>
 <tr>
