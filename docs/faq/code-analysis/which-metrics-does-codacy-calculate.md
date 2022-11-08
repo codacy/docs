@@ -65,7 +65,7 @@ Codacy displays issues on the following places:
 
 |Place|Metric|
 |-----|------|
-|[Commits page](../../repositories/commits.md)<br/>[Pull requests page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of new and fixed issues introduced by the commit or pull request|
+|[Commit page](../../repositories/commits.md)<br/>[Pull request page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of new and fixed issues introduced by the commit or pull request|
 |[Files page](../../repositories/files.md)|Number of issues in each file|
 |[Issues page](../../repositories/issues.md)|List of all issues detected in each branch|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Issue percentage and how the metric is evolving over time|
@@ -86,7 +86,7 @@ Codacy displays complexity on the following places:
 
 |Place|Metric|
 |-----|------|
-|[Commits page](../../repositories/commits.md)<br/>[Pull requests page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Variation of the complexity value introduced by the commit or pull request|
+|[Commit page](../../repositories/commits.md)<br/>[Pull request page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Variation of the complexity value introduced by the commit or pull request|
 |[Files page](../../repositories/files.md)|Complexity value of each file|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Percentage of complex files in your repository and how the metric is evolving over time|
 |[Organization Overview](../../organizations/organization-overview.md)|Average percentage of complex files in the repositories in your organization and percentage of complex files in each repository|
@@ -109,7 +109,7 @@ Codacy displays duplication on the following places:
 
 |Place|Metric|
 |-----|------|
-|[Commits page](../../repositories/commits.md)<br/>[Pull requests page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of clones added or fixed by a commit or pull request|
+|[Commit page](../../repositories/commits.md)<br/>[Pull request page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of clones added or fixed by a commit or pull request|
 |[Files page](../../repositories/files.md)|Duplication value of each file|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Percentage of duplicated files in your repository and how the metric is evolving over time|
 |[Organization Overview](../../organizations/organization-overview.md)|Average percentage of duplicated files in the repositories in your organization and percentage of complex files in each repository|
@@ -142,8 +142,8 @@ Once the coverage setup is complete, Codacy displays coverage data on the follow
 
 |Place|Metric|
 |-----|------|
-|[Commits page](../../repositories/commits.md)<br/>[Pull requests page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Variation in percentage points of the coverage value for all files in the commit or pull request|
-|[Pull requests page](../../repositories/pull-requests.md)|Diff coverage for the changes included in the pull request|
+|[Commit page](../../repositories/commits.md)<br/>[Pull request page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Variation in percentage points of the coverage value for all files in the commit or pull request|
+|[Pull request page](../../repositories/pull-requests.md)|Diff coverage for the changes included in the pull request|
 |[Files page](../../repositories/files.md)|Coverage percentage of each file|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Average coverage value for the files in the repository and how the metric is evolving over time|
 |[Codacy badge](../../getting-started/adding-a-codacy-badge.md)|Average coverage value for the files in your repository|
