@@ -84,9 +84,10 @@ To edit an existing coding standard or change the repositories that follow that 
 
 1.  Click the button **Save and apply standard** on the repository selection page to save your changes to the coding standard.
 
-    Codacy will start using the updated coding standard on the next analysis of each selected repository.
+    !!! important
+        If you stopped applying the coding standard to any repository, Codacy will restore the previous code pattern configurations for that repository.
 
-If you stopped applying the coding standard to any repository, Codacy will restore the previous code pattern configurations for that repository.
+    Codacy will start using the updated coding standard on the next analysis of each selected repository.
 
 !!! tip
     To ensure that all new repositories automatically follow the coding standard, [set the coding standard as default](#set-default).
