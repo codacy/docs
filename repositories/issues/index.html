@@ -11,7 +11,7 @@
         <meta name="description" content="The Issues page lists all the issues that Codacy detected in your repository, including the severity level and category of each issue.">
       
       
-        <meta http-equiv="last-modified" content="2022-10-11 13:23:10">
+        <meta http-equiv="last-modified" content="2022-11-09 15:00:04">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/issues/">
@@ -3613,7 +3613,10 @@
 <p>Codacy will stop using that pattern after the next analysis of your repository, so be sure that you're no longer interested in identifying similar issues. To re-enable patterns use the <a href="../../repositories-configure/configuring-code-patterns/">Code patterns page</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you're using a <a href="../../repositories-configure/configuring-code-patterns/#using-your-own-tool-configuration-files">custom configuration file</a>, you must manage patterns manually on your configuration file.</p>
+<ul>
+<li>If you're using a <a href="../../repositories-configure/configuring-code-patterns/#using-your-own-tool-configuration-files">custom configuration file</a>, you must manage patterns manually on your configuration file.</li>
+<li>If your repository is following an <a href="../../organizations/using-a-coding-standard/">organization coding standard</a>, disabling the code pattern causes the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.</li>
+</ul>
 </div>
 </li>
 <li>
@@ -3792,7 +3795,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 11, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2022</span>
     
   </small>
 </div>
