@@ -74,7 +74,7 @@ There are several reasons that could cause Codacy to report unexpected coverage 
 
 -   Failing to upload coverage reports, or uploading a different number of reports between commits.
 
-    This can be caused by a failed step in your CI/CD pipeline, for example. In the case of pull requests, you should make sure that you upload all relevant coverage reports for both the common ancestor commit and the HEAD commit of the pull request branch.
+    This can be caused by a failed step in your CI/CD pipeline, for example. In the case of pull requests, you should make sure that you upload all relevant coverage reports for both the **common ancestor commit** and the **head commit** of the pull request branch.
 
 -   Ignoring files on Codacy.
 
@@ -117,7 +117,7 @@ The table below represents two example coverage reports reflecting a pull reques
     <tr>
       <th></th>
       <th colspan="2" class="center border">Common ancestor commit</th>
-      <th colspan="2" class="center">HEAD commit</th>
+      <th colspan="2" class="center">Head commit</th>
     </tr>
     <tr>
       <th>File</th>
@@ -173,7 +173,7 @@ The table below displays the code coverage metrics as calculated by Codacy:
     <tr>
       <th></th>
       <th colspan="3" class="center border">Common ancestor commit</th>
-      <th colspan="3" class="center border">HEAD commit</th>
+      <th colspan="3" class="center border">Head commit</th>
       <th colspan="2" class="center">Pull request results</th>
     </tr>
     <tr>
@@ -245,7 +245,7 @@ The table below represents two example coverage reports reflecting a pull reques
     <tr>
       <th></th>
       <th colspan="2" class="center border">Common ancestor commit</th>
-      <th colspan="2" class="center">HEAD commit</th>
+      <th colspan="2" class="center">Head commit</th>
     </tr>
     <tr>
       <th>File</th>
@@ -313,7 +313,7 @@ The table below displays the code coverage metrics as calculated by Codacy:
     <tr>
       <th></th>
       <th colspan="3" class="center border">Common ancestor commit</th>
-      <th colspan="3" class="center border">HEAD commit</th>
+      <th colspan="3" class="center border">Head commit</th>
       <th class="center">Pull request results</th>
     </tr>
     <tr>
