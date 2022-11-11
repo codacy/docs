@@ -11,7 +11,7 @@
         <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2022-10-20 16:24:23">
+        <meta http-equiv="last-modified" content="2022-11-11 15:06:30">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
@@ -3737,8 +3737,13 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <p class="admonition-title">Example</p>
 <p>The example below shows that after pushing a commit that correctly sets up coverage on the main branch:</p>
 <ul>
-<li>Codacy will report coverage metrics for all subsequent commits and pull requests relative to the main branch</li>
-<li>Codacy won't report coverage metrics for commits and pull requests that are relative to older branches where the coverage setup wasn't performed yet</li>
+<li>
+<p>Codacy will report coverage metrics for all subsequent commits and pull requests relative to the main branch.</p>
+</li>
+<li>
+<p>Codacy won't report coverage metrics for commits and pull requests that are relative to older branches where the coverage setup wasn't performed yet.</p>
+<p>To solve this issue, you can rebase the old feature branch to update the common ancestor commit to one that already has coverage data.</p>
+</li>
 </ul>
 <p><img alt="Setting up coverage on the main branch" src="images/coverage-validate.png" /></p>
 </div>
@@ -3764,8 +3769,8 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </thead>
 <tbody>
 <tr>
-    <td rowspan="2" id="status-commit-not-found">
-        <p style="color: #EF5454;"><strong>Commit not found</strong></p>
+    <td rowspan="2">
+        <p id="status-commit-not-found" style="color: #EF5454;"><strong>Commit not found</strong></p>
         <p>Codacy doesn't have information about the commit associated with the coverage data.</p>
     </td>
     <td>
@@ -3785,8 +3790,8 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
     </td>
 </tr>
 <tr>
-   <td rowspan="2" id="status-branch-not-enabled">
-        <p style="color: #EF5454;"><strong>Branch not enabled</strong></p>
+   <td rowspan="2">
+        <p id="status-branch-not-enabled" style="color: #EF5454;"><strong>Branch not enabled</strong></p>
         <p>The commit associated with the coverage data doesn't belong to any branch that Codacy is analyzing.</p>
     </td>
     <td>
@@ -3806,8 +3811,8 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
     </td>
 </tr>
 <tr>
-    <td rowspan="5" id="status-commit-not-analyzed">
-        <p style="color: #EF5454;"><strong>Commit not analyzed</strong></p>
+    <td rowspan="5">
+        <p id="status-commit-not-analyzed" style="color: #EF5454;"><strong>Commit not analyzed</strong></p>
         <p>Due to technical limitations, Codacy only reports coverage for a commit after successfully completing the static code analysis of that commit.</p>
     </td>
     <td>
@@ -3850,8 +3855,8 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
     </td>
 </tr>
 <tr>
-    <td rowspan="4" id="status-pending">
-        <p style="color: #2562EA;"><strong>Pending</strong></p>
+    <td rowspan="4">
+        <p id="status-pending" style="color: #2562EA;"><strong>Pending</strong></p>
         <p>Codacy is waiting to receive more coverage data before reporting the coverage for a commit.</p>
     </td>
     <td>
@@ -3893,7 +3898,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <p>If Codacy doesn't display the coverage variation metric in pull requests (represented by <code>-</code>), make sure that you have uploaded coverage data for both:</p>
 <ul>
 <li>The common ancestor commit of the pull request branch and the target branch</li>
-<li>The last commit in the pull request branch</li>
+<li>The head commit of the pull request branch</li>
 </ul>
 <p>The following diagram highlights the commits that must have received coverage data for Codacy to display the coverage variation metric on a pull request:</p>
 <p><img alt="Commits that must have received coverage data" src="images/coverage-pr-commits.png" /></p>
@@ -4067,7 +4072,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 20, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 11, 2022</span>
     
   </small>
 </div>
