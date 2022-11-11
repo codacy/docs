@@ -43,10 +43,11 @@ jobs:
 
       # Deploy branch previews
       - name: Obtain Netlify alias from branch name
-        id: netlify-alias
+        id: branch
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
-        run: |
-          echo "alias=$(echo ${GITHUB_REF#refs/heads/} | tr -c -s "[:alnum:]" "-" | tr "[:upper:]" "[:lower:]" | cut -c -35 | sed "s/-*$//")" >> $GITHUB_OUTPUT
+        uses: common-fate/branch-name@v1.1.2
+        with:
+          max-length: 35
 
       - name: Deploy docs (branch preview)
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
@@ -60,7 +61,7 @@ jobs:
           enable-commit-comment: false
           enable-commit-status: false
           overwrites-pull-request-comment: false
-          alias: ${{ steps.netlify-alias.outputs.alias }}
+          alias: ${{ steps.branch.outputs.name }}
           github-deployment-environment: Netlify
           github-deployment-description: Branch deployment preview
         env:

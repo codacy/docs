@@ -88,6 +88,12 @@ The table below describes the supported client-side tools and includes links to 
         <td>Faux Pas inspects your iOS or Mac app's Xcode project and warns about possible bugs, as well as about maintainability and style issues.</td>
         <td><a href="https://github.com/codacy/codacy-faux-pas#usage">Running Faux Pas</a> (standalone)</td>
     </tr>
+    <tr>
+        <td>Unity</td>
+        <td><a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a></td>
+        <td>Unity-specific diagnostics for CSharp Unity projects.</td>
+        <td><a href="https://github.com/codacy/codacy-roslyn#usage">Running Unity Roslyn Analyzers</a> (standalone)</td>
+    </tr>
 </table>
 
 ## See also

@@ -7,7 +7,7 @@ description: Configure the static analysis tools and code patterns that Codacy u
 By default, Codacy uses a subset of the supported static analysis tools and code patterns to analyze your repositories. These default settings result from community feedback or existing coding standards. However, you can adapt the default settings to your scenario by configuring the tools and code patterns that Codacy uses to analyze your repository.
 
 !!! note
-    If your repository is following an [organization coding standard](../organizations/using-a-coding-standard.md), changes made to any tool or code pattern cause the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes.
+    If your repository is following an [organization coding standard](../organizations/using-a-coding-standard.md), changes made to any tool or code pattern cause the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.
 
 To configure the tools and code patterns for your repository:
 
@@ -339,6 +339,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     -   Gosec
     -   Jackson Linter
     -   PSScriptAnalyzer
+    -   Unity Roslyn Analyzers
     -   ShellCheck
     -   SQLint
     -   Staticcheck
