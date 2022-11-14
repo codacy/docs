@@ -11,7 +11,7 @@
         <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2022-11-11 15:06:30">
+        <meta http-equiv="last-modified" content="2022-11-11 17:04:56">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
@@ -3855,8 +3855,8 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
     </td>
 </tr>
 <tr>
-    <td rowspan="4">
-        <p id="status-pending" style="color: #2562EA;"><strong>Pending</strong></p>
+    <td>
+        <p id="status-final-report-not-sent" style="color: #EF5454;"><strong>Final report not sent</strong></p>
         <p>Codacy is waiting to receive more coverage data before reporting the coverage for a commit.</p>
     </td>
     <td>
@@ -3867,6 +3867,10 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
     </td>
 </tr>
 <tr>
+    <td rowspan="3" id="status-pending">
+        <p style="color: #2562EA;"><strong>Pending</strong></p>
+        <p>Codacy is waiting to receive valid coverage data for the files in your repository.</p>
+    </td>
     <td>
         The file paths in the coverage report don't match the ones on the repository <strong>Files</strong> page on Codacy.
     </td>
