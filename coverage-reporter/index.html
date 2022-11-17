@@ -11,7 +11,7 @@
         <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2022-11-14 14:08:17">
+        <meta http-equiv="last-modified" content="2022-11-14 15:44:06">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
@@ -3735,22 +3735,22 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Example</p>
-<p>The example below shows that after pushing a commit that correctly sets up coverage on the main branch:</p>
+<p>The example below shows that after pushing a commit that correctly sets up coverage on the default branch:</p>
 <ul>
 <li>
-<p>Codacy will report coverage metrics for all subsequent commits and pull requests relative to the main branch.</p>
+<p>Codacy will report coverage metrics for all subsequent commits and pull requests relative to the default branch.</p>
 </li>
 <li>
 <p>Codacy won't report coverage metrics for commits and pull requests that are relative to older branches where the coverage setup wasn't performed yet.</p>
 <p>To solve this issue, you can rebase the old feature branch to update the common ancestor commit to one that already has coverage data.</p>
 </li>
 </ul>
-<p><img alt="Setting up coverage on the main branch" src="images/coverage-validate.png" /></p>
+<p><img alt="Setting up coverage on the default branch" src="images/coverage-validate.png" /></p>
 </div>
 <p>Follow these instructions to validate that your coverage setup is working correctly:</p>
 <ol>
 <li>
-<p>On Codacy, open your <strong>Repository Settings</strong>, tab <strong>Coverage</strong>, and observe the list of recent coverage reports in the section <strong>Test your integration</strong>.</p>
+<p>On Codacy, open your <strong>Repository Settings</strong>, tab <strong>Coverage</strong>, and observe the list of the most recent 50 coverage reports in the section <strong>Test your integration</strong>.</p>
 <p>Make sure that Codacy receives and processes the coverage data successfully for <strong>at least two commits</strong>.</p>
 <p><img alt="Testing the coverage integration" src="images/coverage-test-integration.png" /></p>
 <p>If there are commits with a status different from <strong>Processed</strong>, please follow the troubleshooting instructions for the corresponding error status and click the button <strong>Test integration</strong> to display any new coverage reports uploaded to Codacy.</p>
