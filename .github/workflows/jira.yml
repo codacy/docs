@@ -18,7 +18,7 @@ jobs:
 
       - name: Create Jira issue
         id: create_jira_issue
-        uses: atlassian/gajira-create@v2.0.1
+        uses: atlassian/gajira-create@v3.0.0
         with:
           project: DOCS
           issuetype: Bug
