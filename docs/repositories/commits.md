@@ -60,7 +60,7 @@ This area displays the quality gate status and an overview of the code quality m
 
     -   **Green:** The metric passes the quality gate
     -   **Red:** The metric fails the quality gate
-    -   **Gray:** There aren't quality gate rules configured for the metric
+    -   **Gray:** There aren't quality gate rules configured for the metric or the value doesn't impact the quality gate
 
     !!! notes
         If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.
