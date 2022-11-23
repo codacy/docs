@@ -541,6 +541,8 @@ plugins:
               "coverage-reporter/troubleshooting-common-issues.md": "coverage-reporter/troubleshooting-coverage-cli-issues.md"
               "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
               "faq/general/why-cant-i-see-my-organization.md": "faq/troubleshooting/why-cant-i-see-my-organization.md"
+              "organizations/roles-and-permissions-for-synced-organizations.md": "organizations/roles-and-permissions-for-organizations.md"
+              "organizations/what-are-synced-organizations.md": "organizations/what-are-organizations.md"
 
 nav:
     - Documentation home: "index.md"
