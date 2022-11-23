@@ -1,6 +1,6 @@
 # End of support for legacy manual organizations November 2, 2021
 
-On November 2, 2021, as part of our efforts to improve Codacy Cloud and allow all our customers to benefit from a more seamless experience, we’re removing the support for legacy manual organizations. As part of this process, we'll automatically migrate your legacy organization to a new [synced organization](../../organizations/what-are-synced-organizations.md).
+On November 2, 2021, as part of our efforts to improve Codacy Cloud and allow all our customers to benefit from a more seamless experience, we’re removing the support for legacy manual organizations. As part of this process, we'll automatically migrate your legacy organization to a new [organization](../../organizations/what-are-organizations.md).
 
 To make sure that Codacy will continue to analyze your repositories **please perform the following steps before November 2, 2021**:
 
@@ -8,14 +8,14 @@ To make sure that Codacy will continue to analyze your repositories **please per
 
 1.  Make sure that your Git provider organization owners belong to the **Administrators** team of your legacy organization on Codacy.
 
-If you already have any synced organizations on Codacy, the migration process won't overwrite any data on those synced organizations, nor copy any repositories that you have in your legacy organization.
+If you already have any organizations on Codacy, the migration process won't overwrite any data on those organizations, nor copy any repositories that you have in your legacy organization.
 
 !!! important
     After the migration process ends on December 2, 2021, we'll delete any existing legacy organizations that we couldn't migrate.
 
 ## How does this impact me?
 
-Synced organizations have several advantages, such as keeping the repositories and team member permissions in sync with the Git provider. Besides this, Codacy is actively developing new features and improvements for synced organizations only.
+Organizations have several advantages, such as keeping the repositories and team member permissions in sync with the Git provider. Besides this, Codacy is actively developing new features and improvements for organizations only.
 
 However, the following scenarios may impact you:
 
