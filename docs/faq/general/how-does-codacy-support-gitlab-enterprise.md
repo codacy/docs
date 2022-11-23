@@ -20,4 +20,4 @@ Currently, the integration between Codacy and GitLab Enterprise has the followin
 
 ## See also
 
--   [What are synced organizations](../../organizations/what-are-synced-organizations.md)
+-   [What are organizations](../../organizations/what-are-organizations.md)
