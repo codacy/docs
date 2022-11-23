@@ -24,7 +24,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 -   Now, the Repositories list page allows opening repositories in a new browser tab using either Ctrl + Click or right-clicking the repository names. (CY-2604)
 -   Fixed an issue that caused Content Security Policy console errors while opening the Repositories list page. (CY-2494)
 -   Fixed a UI glitch on the Plan and billing page that was visible when upgrading to the Pro plan. (CY-1977)
--   Now, the tab Without Owner on the page Admin / Projects correctly lists projects without an owner for organizations. (CY-224)
+-   Now, the tab Without Owner on the page Admin / Projects correctly lists projects without an owner for synced organizations. (CY-224)
 -   Fixed an issue that caused the button Load More on the page Admin / Search to load random results. (CY-220)
 -   Fixed a UI glitch on the modal window asking for confirmation to ignore a file that was visible for long file names. (CY-92)
 
