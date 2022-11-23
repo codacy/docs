@@ -134,7 +134,7 @@ plugins:
               "hc/en-us/articles/115003405529.md": "getting-started/which-permissions-does-codacy-need-from-my-account.md"
               "hc/en-us/articles/115003405529-Which-permissions-does-Codacy-need-from-my-account-.md": "getting-started/which-permissions-does-codacy-need-from-my-account.md"
               "hc/en-us/sections/201760869-Integrations.md": "repositories-configure/integrations/github-integration.md"
-              "hc/en-us/sections/201819605-Working-with-an-organization.md": "organizations/what-are-synced-organizations.md"
+              "hc/en-us/sections/201819605-Working-with-an-organization.md": "organizations/what-are-organizations.md"
               "hc/en-us/articles/207278449.md": "getting-started/codacy-quickstart.md"
               "hc/en-us/articles/207278449-Setting-up-your-repository.md": "getting-started/codacy-quickstart.md"
               "hc/en-us/articles/207278449-Setting-up-your-personal-repositories.md": "getting-started/codacy-quickstart.md"
@@ -234,8 +234,8 @@ plugins:
               "hc/en-us/articles/360001207234-Specifying-language.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/categories/360001313954-Getting-Started.md": "getting-started/codacy-quickstart.md"
               "hc/en-us/sections/360003014233-Configure-your-repo.md": "repositories-configure/configuring-code-patterns.md"
-              "hc/en-us/sections/360003183099.md": "organizations/what-are-synced-organizations.md"
-              "hc/en-us/sections/360003183099-Synced-Organizations.md": "organizations/what-are-synced-organizations.md"
+              "hc/en-us/sections/360003183099.md": "organizations/what-are-organizations.md"
+              "hc/en-us/sections/360003183099-Synced-Organizations.md": "organizations/what-are-organizations.md"
               "hc/en-us/articles/360003863274.md": "organizations/organization-overview.md"
               "hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-.md": "organizations/organization-overview.md"
               "hc/en-us/articles/360003863434.md": "repositories/repository-dashboard.md"
@@ -275,12 +275,12 @@ plugins:
               "hc/en-us/articles/360009411934-Why-isn-t-Codacy-commenting-on-pull-requests-anymore-.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
               "hc/en-us/articles/360010263540.md": "getting-started/codacy-quickstart.md"
               "hc/en-us/articles/360010263540-Getting-started-with-Codacy.md": "getting-started/codacy-quickstart.md"
-              "hc/en-us/articles/360010263720.md": "organizations/what-are-synced-organizations.md"
-              "hc/en-us/articles/360010263720-What-are-synced-organizations.md": "organizations/what-are-synced-organizations.md"
+              "hc/en-us/articles/360010263720.md": "organizations/what-are-organizations.md"
+              "hc/en-us/articles/360010263720-What-are-synced-organizations.md": "organizations/what-are-organizations.md"
               "hc/en-us/articles/360010264500.md": "faq/troubleshooting/why-cant-i-see-my-organization.md"
               "hc/en-us/articles/360010264500-Why-can-t-I-see-my-organization-.md": "faq/troubleshooting/why-cant-i-see-my-organization.md"
-              "hc/en-us/articles/360010373559.md": "organizations/roles-and-permissions-for-synced-organizations.md"
-              "hc/en-us/articles/360010373559-Roles-and-permissions-for-synced-organizations.md": "organizations/roles-and-permissions-for-synced-organizations.md"
+              "hc/en-us/articles/360010373559.md": "organizations/roles-and-permissions-for-organizations.md"
+              "hc/en-us/articles/360010373559-Roles-and-permissions-for-synced-organizations.md": "organizations/roles-and-permissions-for-organizations.md"
               "hc/en-us/articles/360010922420.md": "organizations/managing-people.md"
               "hc/en-us/articles/360010922420-Adding-and-managing-Authors.md": "organizations/managing-people.md"
               "hc/en-us/articles/360011935900.md": "faq/general/how-does-codacy-support-gitlab-cloud.md"
@@ -289,8 +289,8 @@ plugins:
               "hc/en-us/articles/360012030340-Authors-vs-Members.md": "organizations/managing-people.md"
               "hc/en-us/articles/360012037659.md": "repositories-configure/integrations/gitlab-integration.md"
               "hc/en-us/articles/360012037659-GitLab-Integration.md": "repositories-configure/integrations/gitlab-integration.md"
-              "hc/en-us/articles/360012126419.md": "organizations/roles-and-permissions-for-synced-organizations.md"
-              "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-synced-organizations.md"
+              "hc/en-us/articles/360012126419.md": "organizations/roles-and-permissions-for-organizations.md"
+              "hc/en-us/articles/360012126419-How-to-configure-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-organizations.md"
               "hc/en-us/articles/360012141513.md": "index.md"
               "hc/en-us/articles/360012141513-Scheduled-Maintenance-Saturday-17th-Nov-8-00-GMT-0-00-PST-.md": "index.md"
               "hc/en-us/articles/360012563579.md": "faq/general/how-does-codacy-support-bitbucket-server.md"
@@ -461,7 +461,7 @@ plugins:
               "related-tools/tool-developer-guide-using-scala.md": "related-tools/codacy-plugin-tools.md"
               "organizations/adding-and-managing-authors.md": "organizations/managing-people.md"
               "organizations/authors-vs-members.md": "organizations/managing-people.md"
-              "organizations/configuring-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-synced-organizations.md"
+              "organizations/configuring-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-organizations.md"
               "repositories-configure/specifying-language.md": "repositories-configure/codacy-configuration-file.md"
               "repositories-configure/specifying-your-python-version.md": "repositories-configure/codacy-configuration-file.md"
               "repositories-configure/specifying-your-php-version.md": "repositories-configure/codacy-configuration-file.md"
@@ -501,7 +501,7 @@ plugins:
               "related-tools/client-side-tools.md": "related-tools/local-analysis/client-side-tools.md"
               "related-tools/run-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"
               "repositories-configure/ignore-files-from-codacy-analysis.md": "repositories-configure/ignoring-files.md"
-              "organizations/how-to-configure-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-synced-organizations.md"
+              "organizations/how-to-configure-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-organizations.md"
               "repositories/what-are-the-different-grades-and-how-are-they-calculated.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
               "repositories/managing-branches.md": "repositories-configure/managing-branches.md"
               "repositories/quality-settings.md": "repositories-configure/adjusting-quality-settings.md"
@@ -575,13 +575,13 @@ nav:
           - repositories-configure/codacy-configuration-file.md
           - repositories-configure/removing-your-repository.md
     - Organizations:
-          - organizations/what-are-synced-organizations.md
+          - organizations/what-are-organizations.md
           - organizations/organization-overview.md
           - organizations/managing-repositories.md
           - organizations/using-a-coding-standard.md
           - organizations/copying-code-patterns-between-repositories.md
           - organizations/managing-people.md
-          - organizations/roles-and-permissions-for-synced-organizations.md
+          - organizations/roles-and-permissions-for-organizations.md
           - organizations/changing-your-plan-and-billing.md
     - Your account:
           - account/managing-your-profile.md
