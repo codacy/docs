@@ -74,12 +74,12 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
     <tr>
       <td>Webhooks</td>
       <td>Read & Write</td>
-      <td>Codacy creates webhooks for organization and repository events (creation, deletion, member added, etc.) to enable <a href="../../organizations/what-are-organizations/">organizations</a>.</td>
+      <td>Codacy creates webhooks for organization and repository events (creation, deletion, member added, etc.). </td>
     </tr>
     <tr>
       <td>Members</td>
       <td>Read Only</td>
-      <td>Codacy retrieves information about organization members and teams to enforce permissions, enable organizations and user management.</td>
+      <td>Codacy retrieves information about organization members and teams to enforce permissions and user management.</td>
     </tr>
     <tr>
       <td colspan="3"><p><strong>User permissions:</strong></p>
