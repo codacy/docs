@@ -167,7 +167,7 @@ If you log in with Bitbucket, Codacy requires the following [permissions/scopes]
     </tr>
     <tr>
       <td><code>webhook</code></td>
-      <td>Codacy creates webhooks for code pushes and pull request events (created, merged, etc.). These events might trigger code analysis. Codacy also creates repository webhooks to enable <a href="../../organizations/what-are-organizations/">organizations</a>.</td>
+      <td>Codacy creates webhooks for code pushes and pull request events (created, merged, etc.). These events might trigger code analysis.</td>
     </tr>
     <tr>
       <td><code>team</code></td>
