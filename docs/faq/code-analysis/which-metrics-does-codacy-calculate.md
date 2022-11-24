@@ -39,7 +39,7 @@ Codacy displays grades on the following places:
 |Place|Metric|
 |-----|------|
 |[Files page](../../repositories/files.md)|Grade for each file in your repository|
-|[Repository Dashboard](../../repositories/repository-dashboard.md)<br/>[Branches page](../../repositories-configure/managing-branches.md)<br/>[Codacy badge](../../getting-started/adding-a-codacy-badge.md)|Grade of each analyzed branch in your repository|
+|[Repository Dashboard](../../repositories/repository-dashboard.md)<br/>[Codacy badge](../../getting-started/adding-a-codacy-badge.md)|Grade of each analyzed branch in your repository|
 |[Email notifications](../../account/emails.md#managing-your-email-notifications)|Grade of your repository|
 |[Organization Overview](../../organizations/organization-overview.md)|Average grade of the repositories in your organization and grade of each repository|
 |[Repositories list](../../organizations/managing-repositories.md)|Grade of each repository in your organization|
