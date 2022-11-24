@@ -32,9 +32,9 @@ The following screenshot displays the default configuration values:
 
     To ensure that commits and pull requests:
 
-    -   **Must improve** the coverage, set the value between 0.00 and 1.00%
-    -   **Can't decrease** the coverage, set the value to 0.00%
     -   **Can decrease** the coverage, set the value between -100.00 and 0.00%
+    -   **Can't decrease** the coverage, set the value to 0.00%
+    -   **Must improve** the coverage, set the value between 0.00 and 1.00%
 
 !!! note
     Learn how Codacy calculates the code quality metrics in more detail:
