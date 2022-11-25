@@ -11,7 +11,7 @@
         <meta name="description" content="Create an account API token to authorize access to all the repositories that you have access to, or a project API token to authorize access only to a specific repository.">
       
       
-        <meta http-equiv="last-modified" content="2022-07-27 18:27:03">
+        <meta http-equiv="last-modified" content="2022-11-25 11:59:50">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/api-tokens/">
@@ -681,8 +681,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/what-are-synced-organizations/" title="What are synced organizations" class="md-nav__link">
-      What are synced organizations
+    <a href="../../organizations/what-are-organizations/" title="What are organizations" class="md-nav__link">
+      What are organizations
     </a>
   </li>
 
@@ -753,8 +753,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/roles-and-permissions-for-synced-organizations/" title="Roles and permissions for synced organizations" class="md-nav__link">
-      Roles and permissions for synced organizations
+    <a href="../../organizations/roles-and-permissions-for-organizations/" title="Roles and permissions for organizations" class="md-nav__link">
+      Roles and permissions for organizations
     </a>
   </li>
 
@@ -3542,10 +3542,10 @@
 <p>We recommend that you set API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.</p>
 </div>
 <h2 id="account-api-tokens">Generating and revoking account API tokens<a class="headerlink" href="#account-api-tokens" title="Permanent link">#</a></h2>
-<p>Account API tokens are defined at the <strong>Codacy user account level</strong>. Each account API token authorizes access to the same organizations, repositories, and operations as the <a href="../../organizations/roles-and-permissions-for-synced-organizations/">roles and permissions of the owner of the account</a>.</p>
+<p>Account API tokens are defined at the <strong>Codacy user account level</strong>. Each account API token authorizes access to the same organizations, repositories, and operations as the <a href="../../organizations/roles-and-permissions-for-organizations/">roles and permissions of the owner of the account</a>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>If you're using an account API token to upload coverage</strong> be sure to <a href="../../organizations/roles-and-permissions-for-synced-organizations/">check the roles</a> that your Git provider account must have to authorize uploading coverage to Codacy.</p>
+<p><strong>If you're using an account API token to upload coverage</strong> be sure to <a href="../../organizations/roles-and-permissions-for-organizations/">check the roles</a> that your Git provider account must have to authorize uploading coverage to Codacy.</p>
 <p>We recommend that you use a dedicated service account for integrating Codacy with your repositories. This will avoid disruption of service if the user who originally created an account API token stops having access to the repositories, such as when the user leaves the team or the organization.</p>
 </div>
 <p>You can create new account API tokens programmatically <a href="../examples/creating-project-api-tokens-programmatically/">using the Codacy API</a> or using the Codacy UI:</p>
@@ -3746,7 +3746,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 27, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 25, 2022</span>
     
   </small>
 </div>
