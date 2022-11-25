@@ -688,6 +688,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v10:
+                      - release-notes/self-hosted/self-hosted-v10.0.0.md
                 - v9:
                       - release-notes/self-hosted/self-hosted-v9.0.0.md
                 - v8:
