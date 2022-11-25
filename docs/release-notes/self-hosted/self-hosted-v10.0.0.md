@@ -76,7 +76,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v10.0.0:
 -   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](https://docs.codacy.com/v10.0/repositories/pull-requests/), [Commit](https://docs.codacy.com/v10.0/repositories/commits/), and [Files](https://docs.codacy.com/v10.0/repositories/files/) page, and you can [define quality gates](https://docs.codacy.com/v10.0/repositories-configure/adjusting-quality-settings/#gates) with a coverage variation threshold using the same precision.
 
     The increased precision of the metric reflects the code coverage changes better by reducing issues with rounding errors. ![Coverage variation on the Pull request quality overview](../images/io-92.png) (IO-92)
--   Codacy now supports the new [client-side tool Unity Roslyn Analyzers](https://docs.codacy.com/v10.0/related-tools/local-analysis/client-side-tools/) for reporting error-prone and performance issues on C# projects that use the Unity framework. (IO-96)
+-   Codacy now supports the [client-side tool Unity Roslyn Analyzers](https://docs.codacy.com/v10.0/related-tools/local-analysis/client-side-tools/) for reporting error-prone and performance issues on C# projects that use the Unity framework. (IO-96)
 
 ## Bug fixes
 
