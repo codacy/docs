@@ -17,35 +17,7 @@ These release notes are for [Codacy Self-hosted v10.0.0](https://github.com/coda
 Jira issues without release notes
 
 Epics:
--   https://codacy.atlassian.net/browse/IO-151
--   https://codacy.atlassian.net/browse/PLUTO-83
-Bugs and Community Issues:
--   https://codacy.atlassian.net/browse/DOCS-461
-Others:
--   https://codacy.atlassian.net/browse/PLUTO-128
--   https://codacy.atlassian.net/browse/IO-164
--   https://codacy.atlassian.net/browse/IO-163
--   https://codacy.atlassian.net/browse/IO-154
--   https://codacy.atlassian.net/browse/IO-148
--   https://codacy.atlassian.net/browse/PLUTO-105
--   https://codacy.atlassian.net/browse/CY-6533
--   https://codacy.atlassian.net/browse/IO-115
--   https://codacy.atlassian.net/browse/IO-107
--   https://codacy.atlassian.net/browse/IO-4
-
-Jira issues with disabled release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/PLUTO-106
--   https://codacy.atlassian.net/browse/CY-5953
--   https://codacy.atlassian.net/browse/CY-4844
-Bugs and Community Issues:
--   https://codacy.atlassian.net/browse/CY-6584
--   https://codacy.atlassian.net/browse/CY-6574
--   https://codacy.atlassian.net/browse/CY-6547
--   https://codacy.atlassian.net/browse/IO-129
--   https://codacy.atlassian.net/browse/CY-6496
--   https://codacy.atlassian.net/browse/CY-6429
+-   https://codacy.atlassian.net/browse/PLUTO-83 (Coding standards improvements)
 -->
 
 ## Upgrading Codacy Self-hosted
@@ -81,6 +53,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v10.0.0:
 ## Bug fixes
 
 -   Fix an issue where changing a parameter on a repository following a standard would not display a confirmation warning.  (PLUTO-149)
+-   Fixed an issue that could cause the commit pages to display an empty **Diff** tab. (IO-129)
 -   Added support for the ESLint plugin [prettier-plugin-tailwindcss](https://www.npmjs.com/package/prettier-plugin-tailwindcss). (CY-6570)
 -   Added support for the ESLint plugin [eslint-plugin-typescript-sort-keys](https://www.npmjs.com/package/eslint-plugin-typescript-sort-keys). (CY-6561)
 -   Codacy-remark-lint uses now the plugin remark-gfm (CY-6513)
