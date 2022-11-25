@@ -135,4 +135,4 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Tailor 0.12.0
 -   TSLint 6.1.3
 -   TSQLLint 1.11.1
--   **Unity Roslyn Analyzers 1.14.0 (new)**
+-   **[Unity Roslyn Analyzers 1.14.0](https://github.com/microsoft/Microsoft.Unity.Analyzers/releases/tag/1.14.0) (new)**
