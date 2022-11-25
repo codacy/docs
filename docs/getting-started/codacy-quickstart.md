@@ -20,7 +20,7 @@ Codacy will request access to your Git provider during the authorization flow. [
 
 ## 2. Choose an organization {: id="choose-organization"}
 
-Now, you'll need to add or join the organizations that contain your repositories. The organization with the same name as your Git provider username contains your personal repositories. Read more about [organizations on Codacy](../organizations/what-are-synced-organizations.md).
+Now, you'll need to add or join the organizations that contain your repositories. The organization with the same name as your Git provider username contains your personal repositories. Read more about [organizations on Codacy](../organizations/what-are-organizations.md).
 
 To start adding your repositories, select one of the organizations.
 
@@ -34,7 +34,7 @@ To start adding your repositories, select one of the organizations.
 Next, add the repositories that you wish to analyze. Codacy begins an initial analysis as soon as you add a repository and sets everything up to ensure your next commits on that repository are analyzed.
 
 !!! note
-    You can only add repositories on Codacy if you have the [necessary permissions on your Git provider](../organizations/roles-and-permissions-for-synced-organizations.md).
+    You can only add repositories on Codacy if you have the [necessary permissions on your Git provider](../organizations/roles-and-permissions-for-organizations.md).
 
 ![Adding repositories](../organizations/images/repositories-add.png)
 

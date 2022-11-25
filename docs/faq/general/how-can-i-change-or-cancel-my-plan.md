@@ -8,7 +8,7 @@ Codacy values feedback and we thank you in advance for letting us know the prima
 
 If you're using Codacy Cloud see [how to change the plan and billing of your Codacy organization](../../organizations/changing-your-plan-and-billing.md).
 
-Alternatively, [delete your organization](../../organizations/what-are-synced-organizations.md#deleting-an-organization) to remove all its repositories from Codacy and cancel your existing plan.
+Alternatively, [delete your organization](../../organizations/what-are-organizations.md#deleting-an-organization) to remove all its repositories from Codacy and cancel your existing plan.
 
 {%
     include-markdown "../../organizations/changing-your-plan-and-billing.md"

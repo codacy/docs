@@ -22,7 +22,7 @@ description: Documentation homepage for the Codacy Quality automated code review
   <div class="content-link-column">
     <div>Using Codacy Quality</div>
 
-    <a class="content-link" href="organizations/what-are-synced-organizations/">
+    <a class="content-link" href="organizations/what-are-organizations/">
       <div>Creating and managing an organization</div>
       <div>Codacy automatically imports your Git provider organizations and members. Changes reflect on Codacy in real time and you can manage people who joined your organization on Codacy.</div>
     </a>
