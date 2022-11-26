@@ -12,14 +12,6 @@ These release notes are for [Codacy Self-hosted v10.0.0](https://github.com/coda
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
-<!--TODO Check these issues manually
-
-Jira issues without release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/PLUTO-83 (Coding standards improvements)
--->
-
 ## Upgrading Codacy Self-hosted
 
 Follow the steps below to upgrade to Codacy Self-hosted v10.0.0:
@@ -36,19 +28,19 @@ Follow the steps below to upgrade to Codacy Self-hosted v10.0.0:
 ## Product enhancements
 
 -   You can now configure your Codacy GitHub App to use [expiring user access tokens](https://docs.github.com/en/developers/apps/building-github-apps/refreshing-user-to-server-access-tokens). (PLUTO-133)
--   The Status column of the [coverage reports list](https://docs.codacy.com/v10.0/coverage-reporter/#validating-coverage) now includes direct links to troubleshooting instructions when there are coverage errors. (IO-155)
+-   Improved the performance of applying coding standards to repositories to avoid timeouts when updating hundreds of repositories. (PLUTO-83)
+-   The **Status** column of the [coverage reports list](https://docs.codacy.com/v10.0/coverage-reporter/#validating-coverage) now includes direct links to troubleshooting instructions when there are coverage errors. (IO-155)
 -   Improved the performance and error handling of retrieving many open pull requests from the Git providers while populating the [**Pull requests** page](https://docs.codacy.com/v10.0/repositories/pull-requests/). (IO-133)
--   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Repository Dashboard](../../repositories/repository-dashboard.md) and [Organization Overview](../../organizations/organization-overview.md), and you can [define quality gates](../../repositories-configure/adjusting-quality-settings.md#gates) with a coverage variation threshold using the same precision.
-
-    The increased precision of the metric reflects the code coverage changes better by reducing issues with rounding errors.
-
-    ![Coverage threshold with two decimal places on the Quality settings page](../images/io-56.png) (IO-56)
--   While [configuring a coding standard](../../organizations/using-a-coding-standard.md), you can now toggle all code patterns that are currently visible on the list using the new checkbox on the header. This allows you to conveniently toggle code patterns in bulk, for example, to enable all security code patterns. ![Selecting all code patterns while configuring a coding standard](../images/cy-6336.png) (CY-6336)
--   While [configuring a coding standard](../../organizations/using-a-coding-standard.md), you can now click the link **Enable/Disable all &lt;N&gt; patterns** to toggle all patterns matching the current filters, including the code patterns that weren't loaded on the list yet. (CY-6255)
--   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](https://docs.codacy.com/v10.0/repositories/pull-requests/), [Commit](https://docs.codacy.com/v10.0/repositories/commits/), and [Files](https://docs.codacy.com/v10.0/repositories/files/) page, and you can [define quality gates](https://docs.codacy.com/v10.0/repositories-configure/adjusting-quality-settings/#gates) with a coverage variation threshold using the same precision.
-
-    The increased precision of the metric reflects the code coverage changes better by reducing issues with rounding errors. ![Coverage variation on the Pull request quality overview](../images/io-92.png) (IO-92)
 -   Codacy now supports the [client-side tool Unity Roslyn Analyzers](https://docs.codacy.com/v10.0/related-tools/local-analysis/client-side-tools/) for reporting error-prone and performance issues on C# projects that use the Unity framework. (IO-96)
+-   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Repository Dashboard](https://docs.codacy.com/v10.0/repositories/repository-dashboard.md) and [Organization Overview](https://docs.codacy.com/v10.0/organizations/organization-overview.md), and you can [define quality gates](https://docs.codacy.com/v10.0/repositories-configure/adjusting-quality-settings.md#gates) with a coverage variation threshold using the same precision.
+
+    The increased precision of the metric reflects the code coverage changes better by reducing issues with rounding errors. (IO-56)
+
+    ![Coverage threshold with two decimal places on the Quality settings page](../images/io-56.png)
+
+-   While [configuring a coding standard](https://docs.codacy.com/v10.0/organizations/using-a-coding-standard.md), you can now toggle all code patterns using the new checkbox on the header. This allows you to conveniently toggle code patterns in bulk, for example, to enable all security code patterns. (CY-6255, CY-6336)
+
+    ![Selecting all code patterns while configuring a coding standard](../images/cy-6336.png)
 
 ## Bug fixes
 
