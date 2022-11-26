@@ -30,7 +30,7 @@ To configure the tools and code patterns for your repository:
 1.  Optionally, [manually reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.
 
 !!! tip
-    Organization owners can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-synced-organizations.md#change-analysis-configuration).
+    Organization owners can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
 
 ## Pattern filters
 

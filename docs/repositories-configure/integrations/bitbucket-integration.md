@@ -22,7 +22,7 @@ If you remove the integration, you can enable it again as follows:
 1.  Click the button **Enable** and follow the instructions.
 
     !!! important
-        The user that enables the integration [must have administrator access to the repository](../../organizations/roles-and-permissions-for-synced-organizations.md#permissions-for-bitbucket). Codacy uses this Bitbucket user to create comments on pull requests.
+        The user that enables the integration [must have administrator access to the repository](../../organizations/roles-and-permissions-for-organizations.md#permissions-for-bitbucket). Codacy uses this Bitbucket user to create comments on pull requests.
 
     {% include-markdown "../../assets/includes/service-account-integration.md" %}
 

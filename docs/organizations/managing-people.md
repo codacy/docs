@@ -51,7 +51,7 @@ When a member leaves an organization:
 
 -   Codacy stops analyzing commits from that member to private repositories in the organization
 -   **On GitLab and Bitbucket organizations** Codacy stops analyzing repositories that were added by the member
--   Organizations must have at least one owner, so when the last organization owner leaves the organization they must either add someone else as owner or [delete the organization](../organizations/what-are-synced-organizations.md#deleting-an-organization)
+-   Organizations must have at least one owner, so when the last organization owner leaves the organization they must either add someone else as owner or [delete the organization](../organizations/what-are-organizations.md#deleting-an-organization)
 
 To remove members from your organization open your organization **Settings**, page **People**, and click the icon next to the members you wish to remove:
 
@@ -60,4 +60,4 @@ To remove members from your organization open your organization **Settings**, pa
 ## See also
 
 -   [Adding people to Codacy programmatically](../codacy-api/examples/adding-people-to-codacy-programmatically.md)
--   [Roles and permissions for synced organizations](roles-and-permissions-for-synced-organizations.md)
+-   [Roles and permissions for organizations](roles-and-permissions-for-organizations.md)
