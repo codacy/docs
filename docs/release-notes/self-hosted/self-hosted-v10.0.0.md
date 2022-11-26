@@ -44,11 +44,12 @@ Follow the steps below to upgrade to Codacy Self-hosted v10.0.0:
 
 ## Bug fixes
 
--   Fix an issue where changing a parameter on a repository following a standard would not display a confirmation warning.  (PLUTO-149)
--   Fixed an issue that could cause the commit pages to display an empty **Diff** tab. (IO-129)
--   Added support for the ESLint plugin [prettier-plugin-tailwindcss](https://www.npmjs.com/package/prettier-plugin-tailwindcss). (CY-6570)
--   Added support for the ESLint plugin [eslint-plugin-typescript-sort-keys](https://www.npmjs.com/package/eslint-plugin-typescript-sort-keys). (CY-6561)
--   Codacy-remark-lint uses now the plugin remark-gfm (CY-6513)
+-   Now, Codacy asks for confirmation when you change a code pattern parameter on a repository that follows a coding standard. (PLUTO-149)
+-   Fixed an issue that could cause the commit details page to display an empty **Diff** tab. (IO-129)
+-   Added support for the following ESLint plugins:
+    -   [<span class="skip-vale">prettier-plugin-tailwindcss</span>](https://www.npmjs.com/package/prettier-plugin-tailwindcss) (CY-6570)
+    -   [<span class="skip-vale">eslint-plugin-typescript-sort-keys</span>](https://www.npmjs.com/package/eslint-plugin-typescript-sort-keys) (CY-6561)
+-   Added support for the remark-lint plugin [<span class="skip-vale">remarkjs/remark-gfm</span>](https://github.com/remarkjs/remark-gfm) (CY-6513)
 
 ## Tool versions
 
