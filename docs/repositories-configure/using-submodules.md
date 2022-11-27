@@ -22,7 +22,7 @@ After we enabled submodules for your organization, do the following:
 
     When you add a repository to Codacy, Codacy adds a new SSH key to your repository using an integration with your Git provider. Codacy uses this SSH key every time it needs to clone that repository. When you're using submodules, Codacy needs to clone additional repositories it has no access to. Since there is no way of identifying the submodules of a repository before cloning the repository, Codacy adds the SSH keys to the user account so that it has access to the same repositories as the user.
 
-    ![Generate new user key](images/using-submodules-generate-new-user-key.png)
+    <!--TODO Update for IO-201-->![Generate new user key](images/using-submodules-generate-new-user-key.png)
 
 1.  If you're using submodules to share an analysis tool configuration file across your repositories, check if your tool recursively searches the subdirectories of your repositories for configuration files.
 
