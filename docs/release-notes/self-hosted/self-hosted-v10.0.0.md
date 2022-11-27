@@ -25,6 +25,18 @@ Follow the steps below to upgrade to Codacy Self-hosted v10.0.0:
     -   [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-10.0.0)
     -   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-10.0.0)
 
+## Breaking changes
+
+This Codacy Self-hosted version requires [PostgreSQL version 11.18](https://docs.codacy.com/v10.0/chart/requirements/#postgresql-server-setup) since the previous major version [recently reached end-of-life (EOL)](https://www.postgresql.org/support/versioning/).
+
+To upgrade PostgreSQL:
+
+1.  Follow the instructions on [how to upgrade a PostgreSQL cluster](https://www.postgresql.org/docs/11/upgrading.html).
+
+1.  After the upgrade, clean the Codacy databases with [vacuumdb](https://www.postgresql.org/docs/11/app-vacuumdb.html) to prevent the <span class="skip-vale">autovacuum</a> feature from momentarily affecting the performance of the databases at a later time.
+
+**If you're using GitHub Enterprise Server** this Codacy Self-hosted version requires [GitHub Enterprise Server version 3.6.2 or later](https://docs.codacy.com/v10.0/faq/general/which-version-control-systems-does-codacy-support/).
+
 ## Product enhancements
 
 -   You can now configure your Codacy GitHub App to use [expiring user access tokens](https://docs.github.com/en/developers/apps/building-github-apps/refreshing-user-to-server-access-tokens). (PLUTO-133)
