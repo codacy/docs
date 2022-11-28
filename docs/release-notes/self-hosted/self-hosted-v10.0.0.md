@@ -51,6 +51,11 @@ To upgrade PostgreSQL:
 
     ![Coverage threshold with two decimal places on the Quality settings page](../images/io-56.png)
 
+-   Added support for the following ESLint plugins:
+    -   [<span class="skip-vale">prettier-plugin-tailwindcss</span>](https://www.npmjs.com/package/prettier-plugin-tailwindcss) (CY-6570)
+    -   [<span class="skip-vale">eslint-plugin-typescript-sort-keys</span>](https://www.npmjs.com/package/eslint-plugin-typescript-sort-keys) (CY-6561)
+-   Added support for the remark-lint plugin [<span class="skip-vale">remarkjs/remark-gfm</span>](https://github.com/remarkjs/remark-gfm). (CY-6513)
+
 -   While [configuring a coding standard](https://docs.codacy.com/v10.0/organizations/using-a-coding-standard.md), you can now toggle all code patterns using the new checkbox on the header. This allows you to conveniently toggle code patterns in bulk, for example, to enable all security code patterns. (CY-6255, CY-6336)
 
     ![Selecting all code patterns while configuring a coding standard](../images/cy-6336.png)
@@ -59,10 +64,6 @@ To upgrade PostgreSQL:
 
 -   Now, Codacy asks for confirmation when you change a code pattern parameter on a repository that follows a coding standard. (PLUTO-149)
 -   Fixed an issue that could cause the commit details page to display an empty **Diff** tab. (IO-129)
--   Added support for the following ESLint plugins:
-    -   [<span class="skip-vale">prettier-plugin-tailwindcss</span>](https://www.npmjs.com/package/prettier-plugin-tailwindcss) (CY-6570)
-    -   [<span class="skip-vale">eslint-plugin-typescript-sort-keys</span>](https://www.npmjs.com/package/eslint-plugin-typescript-sort-keys) (CY-6561)
--   Added support for the remark-lint plugin [<span class="skip-vale">remarkjs/remark-gfm</span>](https://github.com/remarkjs/remark-gfm) (CY-6513)
 
 ## Tool versions
 
