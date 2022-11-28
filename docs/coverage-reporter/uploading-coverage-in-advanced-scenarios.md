@@ -33,7 +33,7 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
 
 Upload multiple partial coverage reports in sequence:
 
-1.  Upload each report separately with the flag `--partial`.
+1.  Upload each report <span class="skip-vale">separately</span> with the flag `--partial`.
 
     If you're sending reports for a language with the flag `--partial`, you must use the flag in all reports for that language to ensure the correct calculation of the coverage.
 

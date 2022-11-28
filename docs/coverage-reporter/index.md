@@ -4,7 +4,7 @@ description: Generate coverage reports in a supported format and upload them to 
 
 # Adding coverage to your repository
 
-Code coverage is a metric used to describe the degree to which the source code of a program is tested. A program with high code coverage has been more thoroughly tested and has a lower chance of containing software bugs than a program with low code coverage. You can read more about the [basics of code coverage](https://blog.codacy.com/a-guide-to-code-coverage-part-1-code-coverage-explained/) on Codacy's blog.
+Code coverage is a metric used to describe the degree to which the source code of a program is tested. A program with high code coverage has been more <span class="skip-vale">thoroughly</span> tested and has a lower chance of containing software bugs than a program with low code coverage. You can read more about the [basics of code coverage](https://blog.codacy.com/a-guide-to-code-coverage-part-1-code-coverage-explained/) on Codacy's blog.
 
 To monitor the code coverage of your repository on Codacy you must generate coverage reports for each commit on your CI/CD workflow, and then upload the coverage data to Codacy.
 
@@ -138,7 +138,7 @@ If you're generating a report format that Codacy doesn't support yet, [contribut
 
 As a last resort, you can also send the coverage data directly by calling one of the following Codacy API endpoints:
 
--   [saveCoverage](https://api.codacy.com/swagger#savecoverage)
+-   [<span class="skip-vale">saveCoverage</span>](https://api.codacy.com/swagger#savecoverage)
 -   [saveCoverageWithAccountToken](https://api.codacy.com/swagger#savecoveragewithaccounttoken)
 
 ## 2. Uploading coverage data to Codacy {: id="uploading-coverage"}
