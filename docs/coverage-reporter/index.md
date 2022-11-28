@@ -14,11 +14,11 @@ Complete these main steps to set up coverage for your repository:
 
     Ensure that you're generating one of the code coverage report formats supported by Codacy on each push to your repository.
 
-1.  **Uploading coverage data to Codacy**
+2.  **Uploading coverage data to Codacy**
 
     After each push to your repository, run the Codacy Coverage Reporter to parse your report file and upload the coverage data to Codacy.
 
-1.  **Validating that the coverage setup is complete**
+3.  **Validating that the coverage setup is complete**
 
     Check if Codacy displays the coverage metrics for new commits and pull requests and troubleshoot the coverage setup if necessary.
 
@@ -185,13 +185,13 @@ The recommended way to do this is by using a CI/CD platform that automatically r
 
         We recommend that you set API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.
 
-1.  **If you're using Codacy Self-hosted** set the following environment variable to specify your Codacy instance URL:
+2.  **If you're using Codacy Self-hosted** set the following environment variable to specify your Codacy instance URL:
 
     ```bash
     export CODACY_API_BASE_URL=<your Codacy instance URL>
     ```
 
-1.  Run Codacy Coverage Reporter **on the root of the locally checked out branch of your Git repository**, specifying the relative path to the coverage report to upload:
+3.  Run Codacy Coverage Reporter **on the root of the locally checked out branch of your Git repository**, specifying the relative path to the coverage report to upload:
 
     ```bash
     bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r <coverage report file name>
@@ -289,7 +289,7 @@ Follow these instructions to validate that your coverage setup is working correc
         </td>
         <td>
             <p>Make sure that the <a href="../repositories-configure/managing-branches/">branch or target branch for pull requests is enabled on Codacy</a>.</p>
-            <p>If Codacy is already analyzing the branch, make sure that the Codacy Coverage Reporter <href="troubleshooting-coverage-cli-issues/#commit-detection">detects the correct commit SHA-1 hash</a> for the uploaded coverage data.</p>
+            <p>If Codacy is already analyzing the branch, make sure that the Codacy Coverage Reporter <a href="troubleshooting-coverage-cli-issues/#commit-detection">detects the correct commit SHA-1 hash</a> for the uploaded coverage data.</p>
         </td>
     </tr>
     <tr>

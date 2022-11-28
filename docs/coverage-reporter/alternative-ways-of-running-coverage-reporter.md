@@ -131,7 +131,7 @@ If you are having any issues with your installation, you can also build the cove
     cd codacy-coverage-reporter
     sbt assembly
     ```
-   
+
     This will produce a file `target/codacy-coverage-reporter-assembly-<version>.jar` that you can run.
 
 3.  Execute this `.jar` in the repository where you want to upload the coverage. For example:
