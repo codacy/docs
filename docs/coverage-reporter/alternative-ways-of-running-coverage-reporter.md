@@ -52,11 +52,11 @@ docker run -v $PWD:/code codacy/codacy-coverage-reporter:<version> report
 
 ## GitHub Action
 
-If you're using GitHub Actions to report coverage, you can use our GitHub Action [codacy/codacy-coverage-reporter-action](https://github.com/codacy/codacy-coverage-reporter-action).
+If you're using GitHub Actions to report coverage, you can use our GitHub Action [<span class="skip-vale">codacy/codacy-coverage-reporter-action</span>](https://github.com/codacy/codacy-coverage-reporter-action).
 
 ## CircleCI orb
 
-If you're using CircleCI to report coverage, you can use our orb [codacy/coverage-reporter](https://circleci.com/orbs/registry/orb/codacy/coverage-reporter).
+If you're using CircleCI to report coverage, you can use our orb [<span class="skip-vale">codacy/coverage-reporter</span>](https://circleci.com/orbs/registry/orb/codacy/coverage-reporter).
 
 ## Manually downloading the binary
 
@@ -144,7 +144,7 @@ If you are having any issues with your installation, you can also build the cove
 
 ### Maven plugin
 
-Thanks to the amazing job of [Gavin Mogan](https://github.com/halkeye) you can now send your coverage to Codacy using his Maven plugin [halkeye/codacy-maven-plugin](https://github.com/halkeye/codacy-maven-plugin)! Be sure to follow the instructions on his repository.
+Thanks to the amazing job of [<span class="skip-vale">Gavin Mogan</span>](https://github.com/halkeye) you can now send your coverage to Codacy using his Maven plugin [<span class="skip-vale">halkeye/codacy-maven-plugin</span>](https://github.com/halkeye/codacy-maven-plugin)! Be sure to follow the instructions on his repository.
 
 ### Travis CI
 

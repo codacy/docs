@@ -10,14 +10,14 @@ The sections below provide instructions or workarounds to overcome common issues
 
 The Codacy Coverage Reporter automatically detects the SHA-1 hash of the current commit to associate with the coverage data when you're using one of the following CI/CD platforms:
 
--   Appveyor
+-   <span class="skip-vale">Appveyor</span>
 -   AWS CodeBuild
 -   Azure Pipelines
--   Bitrise
--   Buildkite
+-   <span class="skip-vale">Bitrise</span>
+-   <span class="skip-vale">Buildkite</span>
 -   Circle CI
--   Codefresh
--   Codeship
+-   <span class="skip-vale">Codefresh</span>
+-   <span class="skip-vale">Codeship</span>
 -   Docker
 -   GitLab
 -   Greenhouse CI
@@ -29,7 +29,7 @@ The Codacy Coverage Reporter automatically detects the SHA-1 hash of the current
 -   Solano CI
 -   TeamCity CI
 -   Travis CI
--   Wercker CI
+-   <span class="skip-vale">Wercker CI</span>
 
 If the Codacy Coverage Reporter fails to detect the current commit from the CI workflow context, it will use the current commit from the local Git repository instead.
 
@@ -45,7 +45,7 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
 
 Codacy Coverage Reporter automatically searches for coverage reports matching the [file name conventions for supported formats](index.md#generating-coverage).
 
-However, if Codacy Coverage Reporter does not find your coverage report, you can explicitly define the report file name with the flag `-r`. For example:
+However, if Codacy Coverage Reporter doesn't find your coverage report, you can explicitly define the report file name with the flag `-r`. For example:
 
 ```bash
 bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r <coverage report file name>
@@ -53,7 +53,7 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r <coverage report f
 
 ## Report generated an empty result while uploading C# coverage data {: id="detailedxml"}
 
-If you're using dotCover to generate coverage reports for your C# projects, you must use the dotCover detailedXML report format as follows:
+If you're using <span class="skip-vale">dotCover</span> to generate coverage reports for your C# projects, you must use the <span class="skip-vale">dotCover</span> detailedXML report format as follows:
 
 ```bash
 dotCover.exe cover <...> --reportType=DetailedXml
@@ -67,19 +67,19 @@ There are some ways you can solve this:
 
 -   Split your coverage reports into smaller files and [upload them to Codacy one at a time](../uploading-coverage-in-advanced-scenarios/#multiple-reports).
 
--   **If you're using dotCover to generate coverage reports for your C# projects**, you should [exclude xUnit files](https://www.jetbrains.com/help/dotcover/Running_Coverage_Analysis_from_the_Command_LIne.html#filters_cmd) from the coverage analysis as follows:
+-   **If you're using dotCover to generate coverage reports for your C# projects**, you should [exclude <span class="skip-vale">xUnit</span> files](https://www.jetbrains.com/help/dotcover/Running_Coverage_Analysis_from_the_Command_LIne.html#filters_cmd) from the coverage analysis as follows:
 
     ```bash
     dotCover.exe cover <...> /Filters=-:xunit*
     ```
 
-    By default, dotCover includes xUnit files in the coverage analysis and this results in larger coverage reports. This filter helps ensure that the resulting coverage data does not exceed the size limit accepted by the Codacy API when uploading the results.
+    By default, <span class="skip-vale">dotCover</span> includes <span class="skip-vale">xUnit</span> files in the coverage analysis and this results in larger coverage reports. This filter helps ensure that the resulting coverage data doesn't exceed the size limit accepted by the Codacy API when uploading the results.
 
 ## Connect timed out while uploading coverage data
 
 If you get a `Error doing a post to <...> connect timed out` error while uploading your coverage data to Codacy it means that the Codacy Coverage Reporter is timing out while connecting to the Codacy API. This typically happens if you're uploading coverage data for larger repositories.
 
-To increase the default timeout while connecting to the Codacy API, use the flag `--http-timeout` to set a value larger than 10000 miliseconds. For example, to set the timeout to 30 seconds:
+To increase the default timeout while connecting to the Codacy API, use the flag `--http-timeout` to set a value larger than 10000 milliseconds. For example, to set the timeout to 30 seconds:
 
 ```bash
 bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
@@ -89,7 +89,7 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
 
 ## MalformedInputException while parsing report
 
-If you get a `java.nio.charset.MalformedInputException` when running the Codacy Coverage Reporter it means that the coverage report includes a character that is not encoded in UTF-8. The invalid character can belong to the file name of one of your source code files, or even a class or method name.
+If you get a `java.nio.charset.MalformedInputException` when running the Codacy Coverage Reporter it means that the coverage report includes a character that's not encoded in UTF-8. The invalid character can belong to the file name of one of your source code files, or even a class or method name.
 
 For maximum compatibility of your coverage reports with the Codacy Coverage Reporter, make sure that your coverage reports use UTF-8 encoding and that they only include UTF-8 characters.
 
@@ -103,11 +103,11 @@ echo "$(dig +short api.codacy.com | tail -n1) api.codacy.com" >> /etc/hosts
 
 ## coverage-xml/index.xml generated an empty result
 
-If you're using PHPUnit version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the PHPUnit XML format only for versions 4 and older.
+If you're using <span class="skip-vale">PHPUnit</span> version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the <span class="skip-vale">PHPUnit</span> XML format only for versions 4 and older.
 
 To change the output format replace the flag `--coverage-xml <dir>` with `--coverage-clover <file>` when executing `phpunit`.
 
-See [PHPUnit command-line documentation](https://phpunit.readthedocs.io/en/9.5/textui.html) for more information.
+See [<span class="skip-vale">PHPUnit</span> command-line documentation](https://phpunit.readthedocs.io/en/9.5/textui.html) for more information.
 
 ## Can't validate checksum {: id="checksum"}
 
