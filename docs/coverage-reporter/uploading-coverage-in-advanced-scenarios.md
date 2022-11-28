@@ -37,7 +37,7 @@ Upload multiple partial coverage reports in sequence:
 
     If you're sending reports for a language with the flag `--partial`, you must use the flag in all reports for that language to ensure the correct calculation of the coverage.
 
-2.  Notify Codacy with the `final` command after uploading all reports.
+1.  Notify Codacy with the `final` command after uploading all reports.
 
 For example:
 

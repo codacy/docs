@@ -125,7 +125,7 @@ If you are having any issues with your installation, you can also build the cove
     git clone https://github.com/codacy/codacy-coverage-reporter.git
     ```
 
-2.  Run the command `sbt assembly` inside the local repository folder:
+1.  Run the command `sbt assembly` inside the local repository folder:
 
     ```bash
     cd codacy-coverage-reporter
@@ -134,7 +134,7 @@ If you are having any issues with your installation, you can also build the cove
 
     This will produce a file `target/codacy-coverage-reporter-assembly-<version>.jar` that you can run.
 
-3.  Execute this `.jar` in the repository where you want to upload the coverage. For example:
+1.  Execute this `.jar` in the repository where you want to upload the coverage. For example:
 
     ```bash
     <path>/java-project$ java -jar ../codacy-coverage-reporter/target/codacy-coverage-reporter-assembly-<version>.jar report
