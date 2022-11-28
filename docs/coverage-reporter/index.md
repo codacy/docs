@@ -420,7 +420,7 @@ Follow these instructions to validate that your coverage setup is working correc
     </tr>
     </table>
 
-1.  Check that Codacy displays the coverage metrics for the latest commits and pull requests.
+2.  Check that Codacy displays the coverage metrics for the latest commits and pull requests.
 
     ![Coverage metrics displayed on Codacy](images/coverage-codacy-ui.png)
 
