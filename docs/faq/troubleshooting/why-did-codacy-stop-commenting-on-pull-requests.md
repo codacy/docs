@@ -11,7 +11,7 @@ To fix this issue and also avoid future disruptions, Codacy recommends that you 
     !!! note
         The service account must:
 
-        -   [Have administrator permissions](../../organizations/roles-and-permissions-for-synced-organizations.md) on the repositories to integrate with Codacy
+        -   [Have administrator permissions](../../organizations/roles-and-permissions-for-organizations.md) on the repositories to integrate with Codacy
         -   Not be shared by other systems to ensure that Codacy doesn't hit the API rate limits of the Git provider when using this account
 
     !!! tip

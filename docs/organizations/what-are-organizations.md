@@ -1,6 +1,6 @@
-# What are synced organizations
+# What are organizations
 
-Synced organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that don't belong to a Git provider organization), and team members into Codacy with a few clicks.
+Codacy organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that don't belong to a Git provider organization), and team members into Codacy with a few clicks.
 
 Changes to the organizations, repositories, and team members are synchronized with Codacy in real-time, avoiding the manual management of repositories and teams.
 
@@ -34,7 +34,7 @@ In case you change your organization or repository on the Git provider, some cha
 | Bitbucket Cloud | Yes | Yes | No | No | No | No |
 | Bitbucket Server | Yes | Yes | No | No | No | No |
 
-Check out the [roles and permission mapping from the Git providers](roles-and-permissions-for-synced-organizations.md).
+Check out the [roles and permission mapping from the Git providers](roles-and-permissions-for-organizations.md).
 
 ## Deleting an organization
 

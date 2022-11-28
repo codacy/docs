@@ -16,10 +16,10 @@ The sections below provide details about the two types of API tokens and instruc
 
 ## Generating and revoking account API tokens {: id="account-api-tokens"}
 
-Account API tokens are defined at the **Codacy user account level**. Each account API token authorizes access to the same organizations, repositories, and operations as the [roles and permissions of the owner of the account](../organizations/roles-and-permissions-for-synced-organizations.md).
+Account API tokens are defined at the **Codacy user account level**. Each account API token authorizes access to the same organizations, repositories, and operations as the [roles and permissions of the owner of the account](../organizations/roles-and-permissions-for-organizations.md).
 
 !!! important
-    **If you're using an account API token to upload coverage** be sure to [check the roles](../organizations/roles-and-permissions-for-synced-organizations.md) that your Git provider account must have to authorize uploading coverage to Codacy.
+    **If you're using an account API token to upload coverage** be sure to [check the roles](../organizations/roles-and-permissions-for-organizations.md) that your Git provider account must have to authorize uploading coverage to Codacy.
 
     We recommend that you use a dedicated service account for integrating Codacy with your repositories. This will avoid disruption of service if the user who originally created an account API token stops having access to the repositories, such as when the user leaves the team or the organization.
 

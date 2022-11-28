@@ -23,4 +23,4 @@ Currently, the integration between Codacy and GitLab Cloud has the following lim
 
 ## See also
 
--   [What are synced organizations](../../organizations/what-are-synced-organizations.md)
+-   [What are organizations](../../organizations/what-are-organizations.md)

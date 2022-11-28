@@ -22,4 +22,4 @@ Currently, the integration between Codacy and Bitbucket Cloud has the following 
 
 ## See also
 
--   [What are synced organizations](../../organizations/what-are-synced-organizations.md)
+-   [What are organizations](../../organizations/what-are-organizations.md)

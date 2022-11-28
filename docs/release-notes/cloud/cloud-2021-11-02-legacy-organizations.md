@@ -1,6 +1,6 @@
 # End of support for legacy manual organizations November 2, 2021
 
-On November 2, 2021, as part of our efforts to improve Codacy Cloud and allow all our customers to benefit from a more seamless experience, we’re removing the support for legacy manual organizations. As part of this process, we'll automatically migrate your legacy organization to a new [synced organization](../../organizations/what-are-synced-organizations.md).
+On November 2, 2021, as part of our efforts to improve Codacy Cloud and allow all our customers to benefit from a more seamless experience, we’re removing the support for legacy manual organizations. As part of this process, we'll automatically migrate your legacy organization to a new [synced organization](../../organizations/what-are-organizations.md).
 
 To make sure that Codacy will continue to analyze your repositories **please perform the following steps before November 2, 2021**:
 

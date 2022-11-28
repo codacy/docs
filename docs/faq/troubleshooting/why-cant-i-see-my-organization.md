@@ -4,7 +4,7 @@ description: Try these steps if you don't see your organization when adding your
 
 # Why can't I see my organization?
 
-If you can't [add your organization to Codacy](../../organizations/what-are-synced-organizations.md#adding-an-organization) because it doesn't appear on the Organizations page, please try re-adding your Git provider or refreshing the list of organizations by clicking **Add provider** or **Refresh this list** on the Organizations page:
+If you can't [add your organization to Codacy](../../organizations/what-are-organizations.md#adding-an-organization) because it doesn't appear on the Organizations page, please try re-adding your Git provider or refreshing the list of organizations by clicking **Add provider** or **Refresh this list** on the Organizations page:
 
 ![Refreshing the list of organizations](images/organization-refresh-list.png)
 
