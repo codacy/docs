@@ -109,7 +109,7 @@ echo "$(dig +short api.codacy.com | tail -n1) api.codacy.com" >> /etc/hosts
 
 If you're using PHPUnit version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the PHPUnit XML format only for versions 4 and older.
 
-To change the output format replace the flag `--coverage-xml <dir>` with `--coverage-clover <file>` when executing `phpunit`.
+To change the output format replace the flag `--coverage-xml <dir>` with `--coverage-clover <file>` when executing <span class="skip-vale">`phpunit`</span>.
 
 See [PHPUnit command-line documentation](https://phpunit.readthedocs.io/en/9.5/textui.html) for more information.
 
