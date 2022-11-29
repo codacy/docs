@@ -6,6 +6,9 @@ description: There are alternative ways of running or installing Codacy Coverage
 
 The following sections list the alternative ways of running or installing Codacy Coverage Reporter.
 
+!!! important
+    **If you're using Codacy Self-hosted {{extra.version}}** you must use [Codacy Coverage Reporter 13.10.15](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.10.15) to ensure it's compatible with your Codacy instance.
+
 ## Bash script (recommended) {: id="bash-script"}
 
 The recommended way to run the Codacy Coverage Reporter is by using the [self-contained bash script `get.sh`](https://github.com/codacy/codacy-coverage-reporter/blob/master/get.sh) that automatically downloads and runs the most recent version of the Codacy Coverage Reporter:
