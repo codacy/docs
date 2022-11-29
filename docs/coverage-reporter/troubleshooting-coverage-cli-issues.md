@@ -10,16 +10,14 @@ The sections below provide instructions or workarounds to overcome common issues
 
 The Codacy Coverage Reporter automatically detects the SHA-1 hash of the current commit to associate with the coverage data when you're using one of the following CI/CD platforms:
 
-<!-- vale off -->
-
--   Appveyor
+-   <span class="skip-vale">Appveyor</span>
 -   AWS CodeBuild
 -   Azure Pipelines
--   Bitrise
--   Buildkite
+-   <span class="skip-vale">Bitrise</span>
+-   <span class="skip-vale">Buildkite</span>
 -   Circle CI
--   Codefresh
--   Codeship
+-   <span class="skip-vale">Codefresh</span>
+-   <span class="skip-vale">Codeship</span>
 -   Docker
 -   GitLab
 -   Greenhouse CI
@@ -31,9 +29,7 @@ The Codacy Coverage Reporter automatically detects the SHA-1 hash of the current
 -   Solano CI
 -   TeamCity CI
 -   Travis CI
--   Wercker CI
-
-<!-- vale on -->
+-   <span class="skip-vale">Wercker CI</span>
 
 If the Codacy Coverage Reporter fails to detect the current commit from the CI workflow context, it will use the current commit from the local Git repository instead.
 
@@ -107,11 +103,11 @@ echo "$(dig +short api.codacy.com | tail -n1) api.codacy.com" >> /etc/hosts
 
 ## coverage-xml/index.xml generated an empty result
 
-If you're using PHPUnit version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the PHPUnit XML format only for versions 4 and older.
+If you're using <span class="skip-vale">PHPUnit</span> version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the <span class="skip-vale">PHPUnit</span> XML format only for versions 4 and older.
 
 To change the output format replace the flag `--coverage-xml <dir>` with `--coverage-clover <file>` when executing <span class="skip-vale">`phpunit`</span>.
 
-See [PHPUnit command-line documentation](https://phpunit.readthedocs.io/en/9.5/textui.html) for more information.
+See [<span class="skip-vale">PHPUnit</span> command-line documentation](https://phpunit.readthedocs.io/en/9.5/textui.html) for more information.
 
 ## Can't validate checksum {: id="checksum"}
 
