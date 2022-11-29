@@ -11,7 +11,7 @@
         <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2022-11-29 10:40:41">
+        <meta http-equiv="last-modified" content="2022-11-29 15:37:21">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
@@ -3711,8 +3711,9 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </div>
 </li>
 <li>
-<p><strong>If you're using Codacy Self-hosted</strong> set the following environment variable to specify your Codacy instance URL:</p>
+<p><strong>If you're using Codacy Self-hosted</strong> set the following environment variables to specify your Codacy instance URL and the Codacy Coverage Reporter version that's compatible with Codacy Self-hosted 9.0.0:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>&lt;your Codacy instance URL&gt;
+<span class="nb">export</span> <span class="nv">CODACY_REPORTER_VERSION</span><span class="o">=</span><span class="m">13</span>.10.15
 </code></pre></div>
 </li>
 <li>
