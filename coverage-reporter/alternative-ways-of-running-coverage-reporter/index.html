@@ -11,7 +11,7 @@
         <meta name="description" content="There are alternative ways of running or installing Codacy Coverage Reporter, such as running a Docker image, using a GitHub Action or CircleCI orb, downloading a binary for your operating system, or building the binary from source.">
       
       
-        <meta http-equiv="last-modified" content="2022-11-29 15:37:21">
+        <meta http-equiv="last-modified" content="2022-11-29 16:21:05">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/">
@@ -3569,12 +3569,12 @@
 <ul>
 <li>
 <p>On Ubuntu, run:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span>
+<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report -r &lt;coverage report file name&gt;
 </code></pre></div>
 </li>
 <li>
 <p>On Alpine Linux, run:</p>
-<div class="highlight"><pre><span></span><code>wget -qO - https://coverage.codacy.com/get.sh <span class="p">|</span> sh
+<div class="highlight"><pre><span></span><code>wget -qO - https://coverage.codacy.com/get.sh <span class="p">|</span> sh -s -- report -r &lt;coverage report file name&gt;
 </code></pre></div>
 </li>
 </ul>
