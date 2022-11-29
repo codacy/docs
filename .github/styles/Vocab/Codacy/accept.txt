@@ -50,6 +50,7 @@ monorepo
 namespace
 onboarding
 PHP_CodeSniffer
+PHPUnit
 plaintext
 PMD
 Prospector
