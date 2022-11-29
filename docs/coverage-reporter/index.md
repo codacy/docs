@@ -129,9 +129,9 @@ If you're generating a report format that Codacy doesn't support yet, [contribut
 
     This will generate a file `cobertura.xml` inside the folder `<report-output-dir>`.
 
--   [dariodf/lcov_ex](https://github.com/dariodf/lcov_ex): generate LCOV reports for Elixir projects
--   [chrisgit/sfdx-plugins_apex_coverage_report](https://github.com/chrisgit/sfdx-plugins_apex_coverage_report): generate LCOV or Cobertura reports from [Apex](https://help.salesforce.com/articleView?id=sf.code_apex_dev_guide_tools.htm&type=5) code coverage data
--   [danielpalme/ReportGenerator](https://github.com/danielpalme/ReportGenerator): convert between different report formats
+-   [<span class="skip-vale">dariodf/lcov_ex</span>](https://github.com/dariodf/lcov_ex): generate LCOV reports for Elixir projects
+-   [<span class="skip-vale">chrisgit/sfdx-plugins_apex_coverage_report</span>](https://github.com/chrisgit/sfdx-plugins_apex_coverage_report): generate LCOV or Cobertura reports from [Apex](https://help.salesforce.com/articleView?id=sf.code_apex_dev_guide_tools.htm&type=5) code coverage data
+-   [<span class="skip-vale">danielpalme/ReportGenerator</span>](https://github.com/danielpalme/ReportGenerator): convert between different report formats
 
 !!! important
     Make sure that you [specify the language](uploading-coverage-in-advanced-scenarios.md#unsupported-languages) when uploading coverage for an unsupported language.

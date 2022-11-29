@@ -95,7 +95,7 @@ For maximum compatibility of your coverage reports with the Codacy Coverage Repo
 
 ## SubstrateSegfaultHandler caught signal 11
 
-If you're experiencing segmentation faults when uploading the coverage results due to [oracle/graal#624](https://github.com/oracle/graal/issues/624), execute the following command before running the reporter, as a workaround:
+If you're experiencing segmentation faults when uploading the coverage results due to [<span class="skip-vale">oracle/graal#624</span>](https://github.com/oracle/graal/issues/624), execute the following command before running the reporter, as a workaround:
 
 ```sh
 echo "$(dig +short api.codacy.com | tail -n1) api.codacy.com" >> /etc/hosts
