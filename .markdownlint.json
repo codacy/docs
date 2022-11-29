@@ -11,6 +11,7 @@
     "indent": 4
   },
   "MD013": false,
+  "MD023": false,
   "MD029": {
     "style": "one"
   },
