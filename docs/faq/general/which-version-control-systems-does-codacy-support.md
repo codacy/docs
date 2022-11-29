@@ -24,7 +24,7 @@ Codacy supports repositories from the following Git providers:
       <td><p>Codacy Cloud or<br/><a href="https://www.codacy.com/self-hosted">Codacy Self-hosted</a></p>
     </tr>
     <tr>
-      <td><p><strong>GitHub Enterprise Server</strong><br/>version 2.20.3 or later</p></td>
+      <td><p><strong>GitHub Enterprise Server</strong><br/>version 3.6.2 or later</p></td>
       <td><p>GitHub Enterprise</p></td>
       <td><p><a href="https://www.codacy.com/self-hosted">Codacy Self-hosted</a></p></td>
     </tr>
