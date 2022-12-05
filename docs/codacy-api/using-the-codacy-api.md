@@ -164,7 +164,7 @@ curl -X GET 'https://app.codacy.com/api/v3/organizations/gh/codacy/repositories?
      -H 'api-token: <your account API token>'
 ```
 
-If you continue requesting more pages the endpoint will eventually return a `pagination` object that doens't include a `cursor`. This means that you've reached the last page of results:
+If you continue requesting more pages the endpoint will eventually return a `pagination` object that doesn't include a `cursor`. This means that you've reached the last page of results:
 
 ```json
 {
