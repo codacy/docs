@@ -11,7 +11,7 @@
         <meta name="description" content="The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.">
       
       
-        <meta http-equiv="last-modified" content="2022-08-26 15:48:54">
+        <meta http-equiv="last-modified" content="2022-12-05 09:31:34">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/using-the-codacy-api/">
@@ -3680,7 +3680,7 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
 <div class="highlight"><pre><span></span><code>curl -X GET <span class="s1">&#39;https://app.codacy.com/api/v3/organizations/gh/codacy/repositories?limit=10&amp;cursor=codacy_2&#39;</span>
      -H <span class="s1">&#39;api-token: &lt;your account API token&gt;&#39;</span>
 </code></pre></div>
-<p>If you continue requesting more pages the endpoint will eventually return a <code>pagination</code> object that doens't include a <code>cursor</code>. This means that you've reached the last page of results:</p>
+<p>If you continue requesting more pages the endpoint will eventually return a <code>pagination</code> object that doesn't include a <code>cursor</code>. This means that you've reached the last page of results:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span><span class="w"></span>
 <span class="w">  </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w"></span>
 <span class="w">    </span><span class="err">...</span><span class="w"></span>
@@ -3855,7 +3855,7 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 26, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 5, 2022</span>
     
   </small>
 </div>
