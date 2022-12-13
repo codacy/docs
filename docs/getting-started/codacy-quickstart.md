@@ -8,10 +8,10 @@ Codacy is an automated code quality and coverage platform that analyzes your sou
 
 By integrating with your Git provider, Codacy keeps track of your team’s work, analyzes relevant commits, highlights problems, offers suggestions for improvements, and can act as a safeguard to prevent low-quality changes from making it into the codebase. Through static code review analysis, Codacy notifies you of the following key code quality metrics:
 
-* **Issues**: violations of a given rule, standard, convention, or best practice, ranging from inconsistent code formatting to potential security risks.
-* **Complexity**: a measure of the number of execution paths through a program's source code.
-* **Duplication**: the amount of duplicated portions of code.
-* **Coverage**: the percentage of coverable lines of code covered by automated tests.
+- **Issues**: violations of a given rule, standard, convention, or best practice, ranging from inconsistent code formatting to potential security risks.
+- **Complexity**: a measure of the number of execution paths through a program's source code.
+- **Duplication**: the amount of duplicated portions of code.
+- **Coverage**: the percentage of coverable lines of code covered by automated tests.
 
 Codacy displays the current state and trend for these metrics across your projects, from organization and repository overviews to individual files, pull requests, and commits.
 
