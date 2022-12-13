@@ -4,18 +4,16 @@ description: Set up Codacy to automatically analyze your source code and identif
 
 # Codacy quickstart (5 min)
 
-Codacy is an automated code quality and coverage platform that analyzes your source code and identifies issues as you go, helping your team write robust software by scanning over 40 programming languages, such as JavaScript, Python, Java, C#, and PHP.
+Codacy is an automated code quality and coverage platform that analyzes your source code and identifies issues as you go, helping your team ship robust software by scanning over 40 programming languages, such as JavaScript, Python, Java, C#, and PHP.
 
-By integrating with your Git provider, Codacy keeps track of your team’s work, analyzes relevant commits, highlights problems, offers suggestions for improvements, and can act as a safeguard to prevent low-quality changes from making it into the codebase. Through static code review analysis, Codacy notifies you of the following key code quality metrics:
+By integrating with your Git provider, Codacy keeps track of your team’s work, analyzes relevant commits, highlights problems, suggests improvements, and protects your codebase from unwelcome changes. Codacy monitors the following metrics across your projects, from organization and repository overviews to individual files, pull requests, and commits:
 
--   **Issues**: violations of a given rule, standard, convention, or best practice, ranging from inconsistent code formatting to potential security risks.
--   **Complexity**: a measure of the number of execution paths through a program's source code.
--   **Duplication**: the amount of duplicated portions of code.
--   **Coverage**: the percentage of coverable lines of code covered by automated tests.
+-   **Issues**: violations of a given rule, standard, convention, or best practice, from inconsistent code formatting to security risks
+-   **Complexity**: a measure of the number of execution paths through a program's source code
+-   **Duplication**: the amount of duplicated portions of code
+-   **Coverage**: the percentage of lines of code covered by automated tests
 
-Codacy displays the current state and trend for these metrics across your projects, from organization and repository overviews to individual files, pull requests, and commits.
-
-Check out our product demo for an overview of the main Codacy features (recorded on February 4, 2022):
+Check out our product demo for an overview of Codacy's main features (recorded on February 4, 2022):
 
 <div style="position: relative; padding-bottom: 61.224489795918366%; height: 0;"><iframe src="https://www.loom.com/embed/c1a408057e5c46eda4e3256eafae1f05" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
