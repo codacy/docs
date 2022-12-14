@@ -75,6 +75,15 @@ Follow these Markdown conventions when editing the documentation:
         1. Item 2.1
     ```
 
+-   Use the following structure to encode information that would fit an [HTML description list](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl):
+
+    ```markdown
+    This is the equivalent to a description list:
+    
+    -   **<Description term 1>:** <Description details 1>
+    -   **<Description term 2>:** <Description details 2>
+    ```
+
 -   Use the [Admonitions syntax](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#usage) to include **notes**, **tips**, and **warnings**, or to highlight **important** information. For example:
 
     ```markdown
