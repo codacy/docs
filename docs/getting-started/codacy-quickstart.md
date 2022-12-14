@@ -6,7 +6,7 @@ description: Set up Codacy to automatically analyze your source code and identif
 
 Codacy is an automated code quality and coverage platform that analyzes your source code and identifies issues as you go, helping your team ship robust software by scanning over 40 programming languages, such as JavaScript, Python, Java, C#, and PHP.
 
-By integrating with your Git provider, Codacy keeps track of your team’s work, analyzes relevant commits, highlights problems, suggests improvements, and protects your codebase from unwelcome changes. Codacy monitors the following metrics across your projects, from organization and repository overviews to individual files, pull requests, and commits:
+By integrating with your Git provider, Codacy keeps track of your team’s work, analyzes relevant commits, highlights problems, suggests improvements, and protects your codebase from unwelcome changes. From organization and repository level to individual files, pull requests, and commits, Codacy monitors the following metrics across your projects:
 
 -   **Issues**: violations of a given rule, standard, convention, or best practice, from inconsistent code formatting to security risks
 -   **Complexity**: a measure of the number of execution paths through a program's source code
