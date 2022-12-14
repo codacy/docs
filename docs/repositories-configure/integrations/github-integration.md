@@ -42,17 +42,17 @@ Adds a report to your pull requests showing whether your pull requests and cover
 
 ![Pull request status check on GitHub](images/github-integration-pr-status.png)
 
-### Annotations
+### Issue annotations
 
 Adds annotations on the lines of the pull request where Codacy finds new issues. Codacy maps the severity of the issues reported by the tools to the severity levels of the annotations. To enable this option, you must enable **Status checks** first.
 
-![Pull request annotation on GitHub](images/github-integration-pr-annotation.png)
+![Issue annotation on GitHub](images/github-integration-pr-annotation.png)
 
-### Summary
+### Issue summaries
 
 Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable **Status checks** first.
 
-![Pull request summary on GitHub](images/github-integration-pr-summary.png)
+![Issue summary on GitHub](images/github-integration-pr-summary.png)
 
 ### Suggested fixes {: id="suggest-fixes"}
 
