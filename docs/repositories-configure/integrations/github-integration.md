@@ -54,6 +54,12 @@ Shows an overall view of the changes in the pull request, including new issues a
 
 ![Issue summary on GitHub](images/github-integration-pr-summary.png)
 
+### Coverage summaries
+
+Shows an overall view of the coverage metrics in the pull request, including details about the data that Codacy used to calculate both the coverage variation and diff coverage.
+
+![Coverage summary on GitHub](images/github-integration-coverage-summary.png)<!--TODO Update screenshot with final version-->
+
 ### Suggested fixes {: id="suggest-fixes"}
 
 {%
