@@ -48,3 +48,11 @@ Next, add the repositories that you wish to analyze. Codacy begins an initial an
 Click the link **Go to repository** to see the [code quality overview of your repository](../repositories/repository-dashboard.md) as soon as the initial analysis is complete:
 
 ![Repository dashboard](../repositories/images/repository-dashboard.png)
+
+## You're all set! 🎉 {: id="all-set"}
+
+Congratulations, your new repository is ready! To explore the initial analysis results, [check the **Issues** page](../repositories/issues.md).
+
+## What next?
+
+The first analysis is based on **default configurations**. We recommend that you [tweak and adapt your settings](tweak-your-settings.md) to match your preferences and specific scenario.

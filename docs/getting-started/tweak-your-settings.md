@@ -4,21 +4,16 @@ description: Tweak your repository settings
 
 [//]: # (TODO)
 [//]: # (  * meta description)
-[//]: # (  * page links)
 
 # Tweak Your Settings {: id="tweak-settings"}
 
- Check the static analysis results on the **Issues** page to [explore the initial analysis results](../repositories/issues.md).
-
- The first analysis is based on Codacy **default configurations**, so you should tweak and adapt the following configurations to match your preferences and specific scenario:
+[//]: # (TODO remove note)
+!!! important
+    This page is still a WIP. Don't review yet.
 
 -   [Ignore files](../repositories-configure/ignoring-files.md) that you want to exclude from the Codacy analysis
 -   [Configure the code patterns](../repositories-configure/configuring-code-patterns.md) that Codacy uses to analyze your repository
 -   [Adjust the quality settings](../repositories-configure/adjusting-quality-settings.md) to control quality gate that Codacy applies to your commits and pull requests
-
-## You're all set! 🎉 {: id="all-set"}
-
-Congratulations, your new repository is ready!
 
 Optionally, you can also:
 
