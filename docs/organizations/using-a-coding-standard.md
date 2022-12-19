@@ -1,5 +1,6 @@
 # Using a coding standard
 
+[//]: # (TODO Remove beta feature info if confirmed https://codacy.atlassian.net/browse/IO-320)
 !!! info "This is a beta feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
