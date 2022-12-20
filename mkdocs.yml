@@ -464,7 +464,11 @@ nav:
           - repositories-configure/ignoring-files.md
           - repositories-configure/file-extensions.md
           - repositories-configure/adjusting-quality-settings.md
-          - Setting up code coverage: "!include submodules/codacy-coverage-reporter/mkdocs.yml"
+          - Setting up code coverage:
+                - coverage-reporter/index.md
+                - coverage-reporter/alternative-ways-of-running-coverage-reporter.md
+                - coverage-reporter/uploading-coverage-in-advanced-scenarios.md
+                - coverage-reporter/troubleshooting-coverage-cli-issues.md
           - repositories-configure/using-submodules.md
           - repositories-configure/codacy-configuration-file.md
           - repositories-configure/removing-your-repository.md
