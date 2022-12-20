@@ -11,7 +11,7 @@
         <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2022-09-23 10:10:52">
+        <meta http-equiv="last-modified" content="2022-12-20 18:15:06">
       
       
         <link rel="canonical" href="https://docs.codacy.com/v9.0/coverage-reporter/">
@@ -2169,7 +2169,7 @@
                 
                 
                 <h1 id="adding-coverage-to-your-repository">Adding coverage to your repository<a class="headerlink" href="#adding-coverage-to-your-repository" title="Permanent link">#</a></h1>
-<p>Code coverage is a metric used to describe the degree to which the source code of a program is tested. A program with high code coverage has been more thoroughly tested and has a lower chance of containing software bugs than a program with low code coverage. You can read more about the <a href="https://blog.codacy.com/a-guide-to-code-coverage-part-1-code-coverage-explained/">basics of code coverage</a> on Codacy's blog.</p>
+<p>Code coverage is a metric used to describe the degree to which the source code of a program is tested. A program with high code coverage has been more <span class="skip-vale">thoroughly</span> tested and has a lower chance of containing software bugs than a program with low code coverage. You can read more about the <a href="https://blog.codacy.com/a-guide-to-code-coverage-part-1-code-coverage-explained/">basics of code coverage</a> on Codacy's blog.</p>
 <p>To monitor the code coverage of your repository on Codacy you must generate coverage reports for each commit on your CI/CD workflow, and then upload the coverage data to Codacy.</p>
 <p>Complete these main steps to set up coverage for your repository:</p>
 <ol>
@@ -2287,10 +2287,10 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <p>This will generate a file <code>cobertura.xml</code> inside the folder <code>&lt;report-output-dir&gt;</code>.</p>
 </li>
 <li>
-<p><a href="https://github.com/dariodf/lcov_ex">dariodf/lcov_ex</a>: generate LCOV reports for Elixir projects</p>
+<p><a href="https://github.com/dariodf/lcov_ex"><span class="skip-vale">dariodf/lcov_ex</span></a>: generate LCOV reports for Elixir projects</p>
 </li>
-<li><a href="https://github.com/chrisgit/sfdx-plugins_apex_coverage_report">chrisgit/sfdx-plugins_apex_coverage_report</a>: generate LCOV or Cobertura reports from <a href="https://help.salesforce.com/articleView?id=sf.code_apex_dev_guide_tools.htm&amp;type=5">Apex</a> code coverage data</li>
-<li><a href="https://github.com/danielpalme/ReportGenerator">danielpalme/ReportGenerator</a>: convert between different report formats</li>
+<li><a href="https://github.com/chrisgit/sfdx-plugins_apex_coverage_report"><span class="skip-vale">chrisgit/sfdx-plugins_apex_coverage_report</span></a>: generate LCOV or Cobertura reports from <a href="https://help.salesforce.com/articleView?id=sf.code_apex_dev_guide_tools.htm&amp;type=5">Apex</a> code coverage data</li>
+<li><a href="https://github.com/danielpalme/ReportGenerator"><span class="skip-vale">danielpalme/ReportGenerator</span></a>: convert between different report formats</li>
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -2298,7 +2298,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </div>
 <p>As a last resort, you can also send the coverage data directly by calling one of the following Codacy API endpoints:</p>
 <ul>
-<li><a href="https://api.codacy.com/swagger#savecoverage">saveCoverage</a></li>
+<li><a href="https://api.codacy.com/swagger#savecoverage"><span class="skip-vale">saveCoverage</span></a></li>
 <li><a href="https://api.codacy.com/swagger#savecoveragewithaccounttoken">saveCoverageWithAccountToken</a></li>
 </ul>
 <h2 id="uploading-coverage">2. Uploading coverage data to Codacy<a class="headerlink" href="#uploading-coverage" title="Permanent link">#</a></h2>
@@ -2349,8 +2349,9 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </div>
 </li>
 <li>
-<p><strong>If you're using Codacy Self-hosted</strong> set the following environment variable to specify your Codacy instance URL:</p>
+<p><strong>If you're using Codacy Self-hosted</strong> set the following environment variables to specify your Codacy instance URL and the Codacy Coverage Reporter version that's compatible with Codacy Self-hosted 9.0.0:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>&lt;your Codacy instance URL&gt;
+<span class="nb">export</span> <span class="nv">CODACY_REPORTER_VERSION</span><span class="o">=</span><span class="m">13</span>.10.15
 </code></pre></div>
 </li>
 <li>
@@ -2373,39 +2374,40 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Example</p>
-<p>The example below shows that after pushing a commit that correctly sets up coverage on the main branch:</p>
+<p>The example below shows that after pushing a commit that correctly sets up coverage on the default branch:</p>
 <ul>
-<li>Codacy will report coverage metrics for all subsequent commits and pull requests relative to the main branch</li>
-<li>Codacy won't report coverage metrics for commits and pull requests that are relative to older branches where the coverage setup wasn't performed yet</li>
+<li>
+<p>Codacy will report coverage metrics for all subsequent commits and pull requests relative to the default branch.</p>
+</li>
+<li>
+<p>Codacy won't report coverage metrics for commits and pull requests that are relative to older branches where the coverage setup wasn't performed yet.</p>
+<p>To solve this issue, you can rebase the old feature branch to update the common ancestor commit to one that already has coverage data.</p>
+</li>
 </ul>
-<p><img alt="Setting up coverage on the main branch" src="images/coverage-validate.png" /></p>
+<p><img alt="Setting up coverage on the default branch" src="images/coverage-validate.png" /></p>
 </div>
 <p>Follow these instructions to validate that your coverage setup is working correctly:</p>
 <ol>
 <li>
-<p>On Codacy, open your <strong>Repository Settings</strong>, tab <strong>Coverage</strong>, and observe the list of recent coverage reports in the section <strong>Test your integration</strong>.</p>
+<p>On Codacy, open your <strong>Repository Settings</strong>, tab <strong>Coverage</strong>, and observe the list of the most recent 50 coverage reports in the section <strong>Test your integration</strong>.</p>
 <p>Make sure that Codacy receives and processes the coverage data successfully for <strong>at least two commits</strong>.</p>
 <p><img alt="Testing the coverage integration" src="images/coverage-test-integration.png" /></p>
 <p>If there are commits with a status different from <strong>Processed</strong>, please follow the troubleshooting instructions for the corresponding error status and click the button <strong>Test integration</strong> to display any new coverage reports uploaded to Codacy.</p>
+<h3 id="status-commit-not-found" style="color: #EF5454;">Commit not found<a class="headerlink" href="#status-commit-not-found" title="Permanent link">#</a></h3>
+<p>Codacy doesn't have information about the commit associated with the coverage data.</p>
 <p><table>
 <colgroup>
-    <col style="width: 25%;"/>
-    <col style="width: 30%;"/>
-    <col style="width: 45%;"/>
+    <col style="width: 40%;"/>
+    <col style="width: 60%;"/>
 </colgroup>
 <thead>
 <tr>
-    <th>Error status</th>
     <th>What causes the error?</th>
     <th>How to fix the error?</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-    <td rowspan="2">
-        <p style="color: #EF5454;"><strong>Commit not found</strong></p>
-        <p>Codacy doesn't have information about the commit associated with the coverage data.</p>
-    </td>
     <td>
         Codacy didn't receive the webhook for that commit from the Git provider.
     </td>
@@ -2422,17 +2424,28 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
         Make sure that the Codacy Coverage Reporter <a href="troubleshooting-coverage-cli-issues/#commit-detection">detects the correct commit SHA-1 hash</a> for the uploaded coverage data.
     </td>
 </tr>
+</table></p>
+<h3 id="status-branch-not-enabled" style="color: #EF5454;">Branch not enabled<a class="headerlink" href="#status-branch-not-enabled" title="Permanent link">#</a></h3>
+<p>The commit associated with the coverage data doesn't belong to any branch that Codacy is analyzing.</p>
+<p><table>
+<colgroup>
+    <col style="width: 40%;"/>
+    <col style="width: 60%;"/>
+</colgroup>
+<thead>
 <tr>
-   <td rowspan="2">
-        <p style="color: #EF5454;"><strong>Branch not enabled</strong></p>
-        <p>The commit associated with the coverage data doesn't belong to any branch that Codacy is analyzing.</p>
-    </td>
+    <th>What causes the error?</th>
+    <th>How to fix the error?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
     <td>
         Coverage was uploaded for a commit that belongs to a branch that isn't analyzed by Codacy.
     </td>
     <td>
         <p>Make sure that the <a href="../repositories-configure/managing-branches/">branch or target branch for pull requests is enabled on Codacy</a>.</p>
-        <p>If Codacy is already analyzing the branch, make sure that the Codacy Coverage Reporter <href="troubleshooting-coverage-cli-issues/#commit-detection">detects the correct commit SHA-1 hash</a> for the uploaded coverage data.</p>
+        <p>If Codacy is already analyzing the branch, make sure that the Codacy Coverage Reporter <a href="troubleshooting-coverage-cli-issues/#commit-detection">detects the correct commit SHA-1 hash</a> for the uploaded coverage data.</p>
     </td>
 </tr>
 <tr>
@@ -2443,11 +2456,22 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
         The error status is expected in this scenario and you can ignore it.
     </td>
 </tr>
+</table></p>
+<h3 id="status-commit-not-analyzed" style="color: #EF5454;">Commit not analyzed<a class="headerlink" href="#status-commit-not-analyzed" title="Permanent link">#</a></h3>
+<p>Due to technical limitations, Codacy only reports coverage for a commit after successfully completing the static code analysis of that commit.</p>
+<p><table>
+<colgroup>
+    <col style="width: 40%;"/>
+    <col style="width: 60%;"/>
+</colgroup>
+<thead>
 <tr>
-    <td rowspan="5">
-        <p style="color: #EF5454;"><strong>Commit not analyzed</strong></p>
-        <p>Due to technical limitations, Codacy only reports coverage for a commit after successfully completing the static code analysis of that commit.</p>
-    </td>
+    <th>What causes the error?</th>
+    <th>How to fix the error?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
     <td>
         Codacy hasn't finished analyzing the commit yet.
     </td>
@@ -2487,11 +2511,22 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
         Solve the issue that caused the analysis to fail (such as <a href="../faq/troubleshooting/we-no-longer-have-access-to-this-repository/">Codacy losing access to the repository</a>), or contact us at <a href="mailto:support@codacy.com">support@codacy.com</a> asking for help.
     </td>
 </tr>
+</table></p>
+<h3 id="status-final-report-not-sent" style="color: #EF5454;">Final report not sent<a class="headerlink" href="#status-final-report-not-sent" title="Permanent link">#</a></h3>
+<p>Codacy is waiting to receive more coverage data before reporting the coverage for a commit.</p>
+<p><table>
+<colgroup>
+    <col style="width: 40%;"/>
+    <col style="width: 60%;"/>
+</colgroup>
+<thead>
 <tr>
-    <td rowspan="3">
-        <p style="color: #2562EA;"><strong>Pending</strong></p>
-        <p>Codacy is waiting to receive more coverage data before reporting the coverage for a commit.</p>
-    </td>
+    <th>What causes the error?</th>
+    <th>How to fix the error?</th>
+</tr>
+</thead>
+<tbody>
+<tr>
     <td>
         Coverage was uploaded with the <code>--partial</code> flag but Codacy didn't receive the <code>final</code> notification.
     </td>
@@ -2499,6 +2534,21 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
         Make sure that after uploading all partial reports you <a href="uploading-coverage-in-advanced-scenarios/#multiple-reports-sequence">send the <code>final</code> notification</a>.
     </td>
 </tr>
+</table></p>
+<h3 id="status-pending" style="color: #2562EA;">Pending<a class="headerlink" href="#status-pending" title="Permanent link">#</a></h3>
+<p>Codacy is waiting to receive valid coverage data for the files in your repository.</p>
+<p><table>
+<colgroup>
+    <col style="width: 40%;"/>
+    <col style="width: 60%;"/>
+</colgroup>
+<thead>
+<tr>
+    <th>What causes the error?</th>
+    <th>How to fix the error?</th>
+</tr>
+</thead>
+<tbody>
 <tr>
     <td>
         The file paths in the coverage report don't match the ones on the repository <strong>Files</strong> page on Codacy.
@@ -2515,14 +2565,6 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
         Check <a href="../repositories-configure/ignoring-files/">which files are ignored on Codacy</a> and make sure that you're generating coverage reports for the correct files in your repository.
     </td>
 </tr>
-<tr>
-    <td>
-        An empty coverage data set (<code>"total": 0</code>) was uploaded using the Codacy API.
-    </td>
-    <td>
-        Codacy must receive coverage data for at least one file to calculate and display coverage.
-    </td>
-</tr>
 </table></p>
 </li>
 <li>
@@ -2531,7 +2573,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <p>If Codacy doesn't display the coverage variation metric in pull requests (represented by <code>-</code>), make sure that you have uploaded coverage data for both:</p>
 <ul>
 <li>The common ancestor commit of the pull request branch and the target branch</li>
-<li>The last commit in the pull request branch</li>
+<li>The head commit of the pull request branch</li>
 </ul>
 <p>The following diagram highlights the commits that must have received coverage data for Codacy to display the coverage variation metric on a pull request:</p>
 <p><img alt="Commits that must have received coverage data" src="images/coverage-pr-commits.png" /></p>
@@ -2698,7 +2740,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 23, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 20, 2022</span>
     
   </small>
 </div>
