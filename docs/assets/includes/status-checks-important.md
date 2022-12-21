@@ -3,7 +3,7 @@
     **To get a status for coverage** you must also:
 
     -   [Add coverage to your repository](../../coverage-reporter/index.md)
-    -   Enable the rule **Coverage variation is under** on the [pull request quality gate](../../repositories-configure/adjusting-quality-settings.md#gates).
+    -   Enable the rule **Diff coverage is under** or **Coverage variation is under** on the [pull request quality gate](../../repositories-configure/adjusting-quality-settings.md#gates).
 
     **To block merging pull requests** that aren't up to standards see [How do I block merging pull requests using Codacy as a quality gate?](../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
 <!--coverage-status-end-->
@@ -15,7 +15,7 @@
     **To get a status for coverage** you must also:
 
     -   [Add coverage to your repository](../../coverage-reporter/index.md)
-    -   Enable the rule **Coverage variation is under** on the [pull request quality gate](../../repositories-configure/adjusting-quality-settings.md#gates).
+    -   Enable the rule **Diff coverage is under** or **Coverage variation is under** on the [pull request quality gate](../../repositories-configure/adjusting-quality-settings.md#gates).
 
     **To block merging merge requests** that aren't up to standards see [How do I block merging pull requests using Codacy as a quality gate?](../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
 <!--coverage-status-gitlab-end-->
