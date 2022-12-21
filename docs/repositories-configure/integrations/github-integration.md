@@ -63,6 +63,9 @@ Shows an overall view of the coverage metrics in the pull request, including det
 
 ![Coverage summary on GitHub](images/github-integration-coverage-summary.png)<!--TODO Update screenshot with final version-->
 
+!!! note
+    This feature is only supported on GitHub Cloud.
+
 ### Suggested fixes {: id="suggest-fixes"}
 
 {%
