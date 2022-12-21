@@ -293,7 +293,7 @@ Follow these instructions to validate that your coverage setup is working correc
             Coverage was uploaded for a commit that belongs to a branch that isn't analyzed by Codacy.
         </td>
         <td>
-            <p>Make sure that the <a href="../repositories-configure/managing-branches/">branch or target branch for pull requests is enabled on Codacy</a>.</p>
+            <p>Make sure that the <a href="../repositories-configure/managing-branches/">branch is enabled on Codacy</a>. Alternatively, ensure that the target branch is enabled and open a pull request for Codacy to start analyzing the branch automatically.</p>
             <p>If Codacy is already analyzing the branch, make sure that the Codacy Coverage Reporter <a href="troubleshooting-coverage-cli-issues/#commit-detection">detects the correct commit SHA-1 hash</a> for the uploaded coverage data.</p>
         </td>
     </tr>
