@@ -56,7 +56,7 @@ Shows an overall view of the changes in the pull request, including new issues a
 
 ### Coverage summaries
 
-Shows an overall view of the coverage metrics in the pull request, including details about the data that Codacy used to calculate both the coverage variation and diff coverage.
+Adds a pull request comment showing an overall view of the coverage metrics for the pull request, including details about the data that Codacy used to calculate the coverage variation and diff coverage metrics.
 
 !!! important
     **To get coverage summaries** you must also [add coverage to your repository](../../coverage-reporter/index.md).
