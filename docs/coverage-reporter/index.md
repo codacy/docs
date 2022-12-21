@@ -22,6 +22,10 @@ Complete these main steps to set up coverage for your repository:
 
     Check if Codacy displays the coverage metrics for new commits and pull requests and troubleshoot the coverage setup if necessary.
 
+1.  **Enabling the Git provider integration**
+
+    Integrate Codacy with your Git provider to report coverage results directly on pull requests.
+
 The next sections include detailed instructions on how to complete each step of the setup process.
 
 ## 1. Generating coverage reports {: id="generating-coverage"}
@@ -443,3 +447,15 @@ Follow these instructions to validate that your coverage setup is working correc
     -   Branch name and commit SHA-1 hash corresponding to the CI/CD output
     -   Test coverage report that you're uploading to Codacy
     -   Any other relevant information or screenshots of your setup
+
+## 4. Enabling the Git provider integration {: id="enabling-git-provider-integration"}
+
+After validating that the coverage setup is complete, Codacy recommends that you enable the integration with your Git provider to obtain coverage status checks and coverage summaries directly on pull requests.
+
+![Coverage summary on GitHub](../repositories-configure/integrations/images/github-integration-coverage-summary.png)
+
+To do this, follow the instructions depending on your Git provider:
+
+-   [GitHub](../repositories-configure/integrations/github-integration.md#configuring)
+-   [GitLab](../repositories-configure/integrations/gitlab-integration.md#configuring)
+-   [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#configuring)
