@@ -10,7 +10,7 @@
 
 <!--NOTE
     GitLab must mention "merge requests" instead of "pull requests"-->
-<!--gitlab-start-->
+<!--coverage-status-gitlab-start-->
 !!! important
     **To get a status for coverage** you must also:
 
@@ -18,4 +18,4 @@
     -   Enable the rule **Coverage variation is under** on the [pull request quality gate](../../repositories-configure/adjusting-quality-settings.md#gates).
 
     **To block merging merge requests** that aren't up to standards see [How do I block merging pull requests using Codacy as a quality gate?](../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
-<!--gitlab-end-->
+<!--coverage-status-gitlab-end-->
