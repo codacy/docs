@@ -2,18 +2,36 @@
 description: Tweak your repository settings
 ---
 
-[//]: # (TODO)
-[//]: # (  * meta description)
-[//]: # (  * remove WIP note)
-
-!!! important
-    This page is still a WIP. Don't review yet.
+[//]: # (TODO meta description)
 
 # Tweak Your Settings {: id="tweak-settings"}
 
-## Tweaking your repository settings
+1.  [Ignoring files](#ignoring-files)
+1.  [Configuring code patterns](#configuring-code-patterns)
+1.  [Adjusting quality settings](#adjusting-quality-settings)
+1.  [Adding coverage reports](#adding-coverage-reports)
+1.  [Providing feedback to your Git provider](#git-provider-feedback)
+1.  [Adding a Codacy badge to your repository](#adding-codacy-badge)
 
-### Configure code patterns
+## 1. Ignoring files {: id="ignoring-files"}
+
+-   [Ignore files](../repositories-configure/ignoring-files.md) that you want to exclude from the Codacy analysis
+
+Importance
+
+-   Analyzing only the code that matters keeps your quality pipeline simple and effective, encouraging developers to follow best practices.
+
+What
+
+-   You can choose to prevent Codacy from analyzing any number of files or directories.
+
+Benefits
+
+-   Avoid wasting time and the cognitive load of managing unneeded analysis.
+-   Avoid false positives and noisy warnings.
+-   Avoid analyzing compiled files and third-party libraries
+
+## 2. Configuring code patterns {: id="configuring-code-patterns"}
 
 -   [Configure the code patterns](../repositories-configure/configuring-code-patterns.md) that Codacy uses to analyze your repository
 
@@ -32,7 +50,7 @@ Benefits
 -   Enable only the tools that highlight the issues that most matter to you.
 -   Leverage your own tool configuration files.
 
-### Adjust quality settings
+## 3. Adjusting quality settings {: id="adjusting-quality-settings"}
 
 -   [Adjust the quality settings](../repositories-configure/adjusting-quality-settings.md) to control quality gate that Codacy applies to your commits and pull requests
 
@@ -51,27 +69,7 @@ Benefits
 -   Configure goals for quality, duplication, and complexity that your team can strive for.
 -   The goal are not necessarily enforced, but the team members are aware of them and motivated to act.
 
-### Ignore files
-
--   [Ignore files](../repositories-configure/ignoring-files.md) that you want to exclude from the Codacy analysis
-
-Importance
-
--   Analyzing only the code that matters keeps your quality pipeline simple and effective, encouraging developers to follow best practices.
-
-What
-   
--   You can choose to prevent Codacy from analyzing any number of files or directories.
-
-Benefits
-
--   Avoid wasting time and the cognitive load of managing unneeded analysis.
--   Avoid false positives and noisy warnings.
--   Avoid analyzing compiled files and third-party libraries
-
-## Optional steps
-
-### Add coverage reports
+## 4. Adding coverage reports {: id="adding-coverage-reports"}
 
 -   [Add coverage reports to Codacy](../coverage-reporter/index.md)
 
@@ -89,10 +87,12 @@ Benefits
 
 -   Centralize coverage with static code analysis metrics.
 
-### Configure Codacy to provide feedback to your Git provider and act as a quality gate
+## 5. Providing feedback to your Git provider {: id="git-provider-feedback"}
+
+[//]: # (TODO decide how to integrate the instructions to act as a quality gate)
+[//]: # (  -   [Use Codacy as a quality gate]&#40;../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md&#41; to block merging pull requests that don't meet your quality standards)
 
 -   Configure Codacy to provide analysis feedback directly on [GitHub](../repositories-configure/integrations/github-integration.md#configuring), [GitLab](../repositories-configure/integrations/gitlab-integration.md#configuring), or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#configuring) pull requests
--   [Use Codacy as a quality gate](../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md) to block merging pull requests that don't meet your quality standards
 
 What
 
@@ -109,7 +109,9 @@ Benefits
 -   Annotate the lines where Codacy finds new issues, linking to more details about the issues and suggestions to fix them.
 -   Show a summary view of changes, including new issues and metrics such as complexity, and duplication.
 
-### Add Codacy badge to your repository
+## 6. Adding a Codacy badge to your repository {: id="adding-codacy-badge"}
+
+[//]: # (TODO is this relevant here? In this page we're building up to the main use case--Git provider quality gate--only to then finish with a detail that serves us more than them. We may want to consider moving this someplace else in the docs)
 
 -   [Add a Codacy badge to your repository](adding-a-codacy-badge.md) displaying the current code quality grade or code coverage
 What
