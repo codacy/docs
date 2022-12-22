@@ -2,7 +2,9 @@
 description: Tweak your repository settings
 ---
 
-[//]: # (TODO meta description)
+[//]: # (TODO)
+[//]: # ( * meta description)
+[//]: # ( * promote the quality badge section elsewhere)
 
 # Tweak Your Settings {: id="tweak-settings"}
 
@@ -11,7 +13,6 @@ description: Tweak your repository settings
 1.  [Adjusting quality settings](#adjusting-quality-settings)
 1.  [Adding coverage reports](#adding-coverage-reports)
 1.  [Providing feedback to your Git provider](#git-provider-feedback)
-1.  [Adding a Codacy badge to your repository](#adding-codacy-badge)
 
 ## 1. Ignoring files {: id="ignoring-files"}
 
@@ -108,23 +109,3 @@ Benefits
 -   Report to your Git provider whether your changes and code coverage are up to standard as configured on the quality settings of your repository.
 -   Annotate the lines where Codacy finds new issues, linking to more details about the issues and suggestions to fix them.
 -   Show a summary view of changes, including new issues and metrics such as complexity, and duplication.
-
-## 6. Adding a Codacy badge to your repository {: id="adding-codacy-badge"}
-
-[//]: # (TODO is this relevant here? In this page we're building up to the main use case--Git provider quality gate--only to then finish with a detail that serves us more than them. We may want to consider moving this someplace else in the docs)
-
--   [Add a Codacy badge to your repository](adding-a-codacy-badge.md) displaying the current code quality grade or code coverage
-What
-
--   Status badges are visible on your main repo page and show statistics of interest about the repository.
-
-Importance
-
--   By showing whether a workflow is currently failing or passing, status badges signal the quality of your repositories to potential users.
-
-Benefits
-
--   Code quality or code coverage
--   Give your users a quick way to collect metrics
--   Improve readability of a repository
-
