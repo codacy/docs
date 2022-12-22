@@ -52,11 +52,11 @@ Click **See all issues** to see the full [list of issues](issues.md) found, or c
 
 ## Coverage
 
-The **Coverage** area displays the percentage of lines of code on the selected branch that are covered by tests versus the [quality settings](../repositories-configure/adjusting-quality-settings.md) defined for the repository, as well as the number of files:
+The **Coverage** area displays the percentage of lines of code on the selected branch that are covered by tests versus the [coverage goal](../repositories-configure/adjusting-quality-settings.md#goals) defined in the quality settings of the repository, as well as the number of files:
 
 -   Without coverage
--   With coverage not up to standards (based on your repository quality settings)
--   With coverage up to standards (based on your repository quality settings)
+-   With coverage not up to standards (based on the coverage goal)
+-   With coverage up to standards (based on the coverage goal)
 
 Click **See all files** to open the [list of files](files.md) in the repository.
 
