@@ -450,7 +450,7 @@ Follow these instructions to validate that your coverage setup is working correc
 
 ## 4. Enabling the Git provider integration {: id="enabling-git-provider-integration"}
 
-After validating that the coverage setup is complete, Codacy recommends that you enable the integration with your Git provider to obtain the coverage status and summaries directly on pull requests.
+After validating that the coverage setup is complete, we recommend that you enable the integration with your Git provider to obtain the coverage status and summaries directly on pull requests.
 
 ![Coverage summary on GitHub](../repositories-configure/integrations/images/github-integration-coverage-summary.png)
 
