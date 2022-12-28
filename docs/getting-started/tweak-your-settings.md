@@ -16,11 +16,18 @@ Analyzing only the code that matters avoids false positives and keeps your quali
 
 [Ignore non-essential files](../repositories-configure/ignoring-files.md) to prevent Codacy from analyzing compiled code, third-party libraries, and any arbitrary collection of files and directories.
 
+![Ignoring files](../repositories-configure/images/ignored-files.png)
+
 ## 2. Configuring code patterns {: id="configuring-code-patterns"}
 
 Codacy leverages multiple tools to examine the source code of a program without executing it, looking for code patterns. Each of these patterns matches one or more well-known issues that may impact your codebase, from simple typos to critical security risks.
 
-[Configure code patterns](../repositories-configure/configuring-code-patterns.md) to enable only the analysis tools that most matter to you, leverage existing tool configuration files, formalize internal best practices, and consistently deliver code that’s more secure, performant, maintainable, and readable.
+[Configure code patterns](../repositories-configure/configuring-code-patterns.md) to enable the features that bring more value to your team, eliminate false positives, leverage existing configuration files, and consistently deliver code that’s more secure, performant, maintainable, and readable.
+
+!!! tip
+    To apply the same configurations to multiple repositories, [use a coding standard](../organizations/using-a-coding-standard.md).
+
+![Configuring the tools and code patterns](../repositories-configure/images/code-patterns.png)
 
 ## 3. Adjusting quality settings {: id="adjusting-quality-settings"}
 
@@ -33,6 +40,8 @@ Codacy’s settings let you configure the recommended values and goals for quali
 Code coverage reports detail how much of your code is covered by tests. High code coverage in turn correlates with code that is well-tested, well-maintained, and reliable.
 
 [Add coverage reports to Codacy](../coverage-reporter/index.md) and unify your coverage and static code analysis metrics. You can generate your reports using the best coverage tool for your needs and upload them to Codacy picking from a range of options (CI/CD integration, CLI, Docker, GitHub action, and more)
+
+![Adding coverage reports to your repository](../coverage-reporter/images/coverage-codacy-ui.png)
 
 ## 5. Providing feedback to your Git provider {: id="git-provider-feedback"}
 
