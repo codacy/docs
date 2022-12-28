@@ -41,7 +41,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td>Organization<br/>Admin</td>
     </tr>
     <tr>
-      <td>Join organization</td>
+      <td>Join organization,<br/>list coding standards</td>
       <td>No</td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
@@ -138,7 +138,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">Organization<br/>Admin</td>
     </tr>
     <tr>
-      <td>Join organization</td>
+      <td>Join organization,<br/>list coding standards</td>
       <td>No</td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes<sup>2</sup></td>
@@ -227,7 +227,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td>Organization<br/>Admin</td>
     </tr>
     <tr>
-      <td>Join organization</td>
+      <td>Join organization,<br/>list coding standards</td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes<sup>2</sup></td>
     </tr>
