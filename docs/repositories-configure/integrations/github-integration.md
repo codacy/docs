@@ -76,4 +76,4 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
 
 ## See also
 
--   [How do I block merging pull requests using Codacy as a quality gate?](../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
+-   [Setting up Codacy as a quality gate](../../getting-started/setting-up-codacy-as-a-quality-gate.md)

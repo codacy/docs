@@ -24,7 +24,7 @@ Codacy leverages multiple tools to examine the source code of a program without 
 
 ## 3. Adjusting quality settings {: id="adjusting-quality-settings"}
 
-Codacy’s settings let you configure the recommended values and goals for quality, duplication, and complexity metrics. They are always visible on Codacy's dashboard and can even be enforced when [integrating with your Git provider](../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md).
+Codacy’s settings let you configure the recommended values and goals for quality, duplication, and complexity metrics. They are always visible on Codacy's dashboard and can even be enforced when [integrating with your Git provider](setting-up-codacy-as-a-quality-gate.md).
 
 [Adjust the quality settings](../repositories-configure/adjusting-quality-settings.md) to control the quality metrics of your code and deliver features that exceed expectations.
 

@@ -60,4 +60,4 @@ Shows an overall view of the changes in the pull request, including new issues a
 
 ## See also
 
--   [How do I block merging pull requests using Codacy as a quality gate?](../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
+-   [Setting up Codacy as a quality gate](../../getting-started/setting-up-codacy-as-a-quality-gate.md)

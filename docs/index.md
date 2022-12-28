@@ -46,7 +46,7 @@ description: Documentation homepage for the Codacy Quality automated code review
       <div>Invite your team members to join Codacy to analyze their commits on private repositories.</div>
     </div>
   </a>
-  <a class="topic-card" href="faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/">
+  <a class="topic-card" href="getting-started/setting-up-codacy-as-a-quality-gate">
     <div class="tc-icon">
       <img alt="Using Codacy as a quality gate" src="/assets/images/icon-checklist.svg">
     </div>
