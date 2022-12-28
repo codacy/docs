@@ -49,10 +49,8 @@ Click the link **Go to repository** to see the [code quality overview of your re
 
 ![Repository dashboard](../repositories/images/repository-dashboard.png)
 
-## You're all set! 🎉 {: id="all-set"}
+## What next?
 
 Congratulations, your new repository is ready! To explore the initial analysis results, [check the **Issues** page](../repositories/issues.md).
-
-## What next?
 
 The first analysis is based on **default configurations**. We recommend that you [tweak and adapt your settings](tweak-your-settings.md) to match your preferences and specific scenario.
