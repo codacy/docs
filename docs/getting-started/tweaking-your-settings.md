@@ -2,7 +2,7 @@
 description: Tweak your repository settings
 ---
 
-# Tweak your settings
+# Tweaking your settings
 
 1.  [Ignoring files](#ignoring-files)
 1.  [Configuring code patterns](#configuring-code-patterns)

@@ -7,7 +7,7 @@ description: Configure Codacy to block merging pull requests that don't meet you
 You can set up Codacy to act as a quality gate and block merging pull requests that don't meet your quality criteria. This safeguards your codebase against security issues, untested code, and the accumulation of tech debt.
 
 !!! important "Prerequisites"
-    Before setting up Codacy as a quality gate, [customize your settings](tweak-your-settings.md) to best match your needs.
+    Before setting up Codacy as a quality gate, [customize your settings](tweaking-your-settings.md) to best match your needs.
 
 To set up Codacy as a quality gate, follow these steps:
 
