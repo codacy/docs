@@ -4,46 +4,44 @@ description: Configure Codacy to block merging pull requests that don't meet you
 
 # Setting up Codacy as a quality gate
 
-You can block merging pull requests until they pass the Codacy quality gate. This ensures the quality of the changes to your codebase, such as to prevent introducing security issues or adding code that isn't covered by tests.
+You can set up Codacy to act as a quality gate and block merging pull requests that don't meet your quality criteria. This safeguards your codebase against security issues, untested code, and the accumulation of tech debt.
 
 !!! important "Prerequisites"
     Before setting up Codacy as a quality gate, [customize your settings](tweak-your-settings.md) to best match your needs.
 
-To block merging pull requests that don't meet the quality standards of your team, complete these steps:
+To set up Codacy as a quality gate, follow these steps:
 
-1.  [Deciding which pull requests fail the Codacy quality gate](#configuring-gate)
+1.  [Configuring the quality gate rules](#configuring-gate)
+1.  [Using code coverage as a quality gate](#coverage-gate) (optional)
 1.  [Enabling the Codacy pull request status checks](#enabling-status-checks)
 1.  [Configuring your Git provider to block merging pull requests](#configuring-git-provider)
 
-The next sections include detailed instructions on how to complete each step.
-
 ## 1. Configuring the quality gate rules {: id="configuring-gate"}
 
-[Review and adjust the quality settings](../repositories-configure/adjusting-quality-settings.md) of your repository to decide which pull requests should fail the Codacy quality gate.
-
-!!! important
-    To use code coverage to block merging pull requests that don't meet your standards:
-
-    -   [Set up coverage](../coverage-reporter/index.md) before opening the pull request
-    -   [Enable the rule](../repositories-configure/adjusting-quality-settings.md#gates) Diff coverage is under or Coverage variation is under
+To **set the minimum values for merging pull requests to pass** the Codacy quality gates, [adjust the quality settings](../repositories-configure/adjusting-quality-settings.md) of your project.
 
 !!! tip
-    Depending on the initial quality of your repositories and the maturity of your team practices, the default quality gates may be too strict.  Consider initially setting gates only on new critical issues, new security issues, and considerable drops in code coverage.
+    Depending on the initial quality of your repositories and on your current team practices, the default quality gates may be too strict.  Consider initially limiting gates only to new critical issues, new security issues, and considerable drops in code coverage.
 
 ![Adjusting the quality settings](../repositories-configure/images/quality-settings.png)
 
-## 2. Enabling the Codacy pull request status checks {: id="enabling-status-checks"}
+## 2. Using code coverage as a quality gate (optional) {: id="coverage-gate"}
 
-Set up your repository so that Codacy reports the results of the analysis directly on your pull requests as status checks:
+To **optionally use code coverage as a quality gate** for merging pull requests:
 
-To do this, follow the instructions for [GitHub](../repositories-configure/integrations/github-integration.md#enabling), [GitLab](../repositories-configure/integrations/gitlab-integration.md#enabling), or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#enabling) depending on your Git provider, and make sure that you:
+1.  [Set up the coverage reporter pipeline](../coverage-reporter/index.md), and do so **before** opening a pull request, so that Codacy correctly reports the coverage status on both the pull request branch and the target branch
+1.  [Enable the rule](../repositories-configure/adjusting-quality-settings.md#gates) **Diff coverage is under** or **Coverage variation is under**, so that Codacy reports the coverage status to your Git provider
 
-1.  Enable the Git provider integration
-1.  Enable the option **Status checks** (GitHub) or **Pull request status** (GitLab and Bitbucket)
+## 3. Enabling the Codacy pull request status checks {: id="enabling-status-checks"}
+
+To let Codacy **report the results of the analysis directly on your pull requests** as status checks:
+
+1.  Enable the Git provider integration ([GitHub](../repositories-configure/integrations/github-integration.md#enabling), [GitLab](../repositories-configure/integrations/gitlab-integration.md#enabling), [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#enabling))
+1.  After enabling the Git provider integration, enable the option **Status checks** (GitHub) or **Pull request status** (GitLab and Bitbucket)
 
 ![Enabling your Git provider integration](../repositories-configure/integrations/images/github-integration.png)
 
-## 3. Configuring your Git provider to block merging pull requests {: id="configuring-git-provider"}
+## 4. Configuring your Git provider to block merging pull requests {: id="configuring-git-provider"}
 
 !!! important
     At this stage we recommend that you:
