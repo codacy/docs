@@ -16,7 +16,7 @@ Ignoring non-essential files helps you avoid false positives, streamlines your q
 
 [Configure ignore rules](../repositories-configure/ignoring-files.md) to prevent Codacy from analyzing compiled code, third-party libraries, and any collection of files and directories.
 
-[//]: # (![Ignoring files]&#40;../repositories-configure/images/ignored-files.png&#41;)
+![Ignoring files](../repositories-configure/images/ignored-files.png)
 
 ## 2. Configuring code patterns {: id="configuring-code-patterns"}
 
@@ -27,7 +27,7 @@ Codacy uses multiple tools to analyze the source code of a program without execu
 !!! tip
     To apply the same configurations to multiple repositories, [use a coding standard](../organizations/using-a-coding-standard.md).
 
-[//]: # (![Configuring the tools and code patterns]&#40;../repositories-configure/images/code-patterns.png&#41;)
+![Configuring the tools and code patterns](../repositories-configure/images/code-patterns.png)
 
 ## 3. Adjusting quality settings {: id="adjusting-quality-settings"}
 
@@ -41,7 +41,7 @@ Code coverage reports detail how much of your code is covered by tests. High cod
 
 [Add coverage reports to Codacy](../coverage-reporter/index.md) to unify your coverage and static code analysis metrics. You can generate your reports using the best coverage tool for your needs and upload them to Codacy picking from a range of options: CI/CD integration, CLI, Docker, GitHub action, and more.
 
-[//]: # (![Adding coverage reports to your repository]&#40;../coverage-reporter/images/coverage-codacy-ui.png&#41;)
+![Adding coverage reports to your repository](../coverage-reporter/images/coverage-codacy-ui.png)
 
 ## 5. Providing feedback to your Git provider {: id="git-provider-feedback"}
 
