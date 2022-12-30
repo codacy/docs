@@ -45,4 +45,4 @@ There may be different reasons for this issue to happen:
 
 ## See also
 
--   [How do I change my email address on Codacy?](../general/how-do-i-change-my-email-address-on-codacy.md)
+-   [How do I update my email address on Codacy?](../../account/emails.md#updating-your-email-addresses)

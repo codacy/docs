@@ -48,12 +48,15 @@ markdownlint
 md
 monorepo
 namespace
+OAuth
 onboarding
 PHP_CodeSniffer
+PHPUnit
 plaintext
 PMD
 Prospector
 PSScriptAnalyser
+PVC
 Pylint
 remark-lint
 Revive

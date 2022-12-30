@@ -34,8 +34,8 @@ Adds a report to your merge requests showing whether your merge requests and cov
 
 {%
     include-markdown "../../assets/includes/status-checks-important.md"
-    start="<!--gitlab-start-->"
-    end="<!--gitlab-end-->"
+    start="<!--coverage-status-gitlab-start-->"
+    end="<!--coverage-status-gitlab-end-->"
 %}
 
 ![Merge request status on GitLab](images/gitlab-integration-pr-status.png)

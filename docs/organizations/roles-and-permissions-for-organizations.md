@@ -65,7 +65,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Upload coverage<br/>using an account API token</td>
+      <td>Upload coverage using an account API token,<br/>see the coverage report logs</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td colspan="2" class="yes">Yes</td>
@@ -162,7 +162,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Upload coverage<br/>using an account API token</td>
+      <td>Upload coverage using an account API token,<br/>see the coverage report logs</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
@@ -242,7 +242,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Upload coverage<br/>using an account API token</td>
+      <td>Upload coverage using an account API token,<br/>see the coverage report logs</td>
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
     </tr>
@@ -298,6 +298,7 @@ To change this, open your organization **Settings**, page **Member privileges**,
 -   [Managing people](managing-people.md)
 -   [Accepting new people to your organization](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization)
 
+<!-- vale off -->
 <style>
 /*Center text in all cells except the first column*/
 td:not(:first-child), th:not(:first-child) {
