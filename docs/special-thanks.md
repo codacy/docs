@@ -28,6 +28,7 @@ In addition to in-house built rules, we use open source tools for many of our st
 </td>
 <td>
 <ul>
+<li><a href="https://www.sonarsource.com/knowledge/languages/vb6/">SonarVB</a></li>
 <li><a href="https://github.com/phpmd/phpmd">PHPMD</a></li>
 <li><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a></li>
 <li><a href="https://github.com/jshint/jshint">JSHint</a></li>
