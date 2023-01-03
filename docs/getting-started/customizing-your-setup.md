@@ -1,14 +1,16 @@
 ---
-description: Tweak your repository settings
+description: Customizing your setup
 ---
 
-# Tweaking your settings
+# Customizing your setup
 
+[//]: # (TODO prerequisites: check out the quickstart!)
+
+1.  [Prerequisites](#prerequisites)
 1.  [Ignoring files](#ignoring-files)
-1.  [Configuring code patterns](#configuring-code-patterns)
-1.  [Adjusting quality settings](#adjusting-quality-settings)
-1.  [Adding coverage reports](#adding-coverage-reports)
-1.  [Providing feedback to your Git provider](#git-provider-feedback)
+1.  [Configuring tools and code patterns](#configuring-code-patterns)
+1.  [Adding coverage reports](#adding-coverage-reports) (optional)
+1.  [Next steps](#next-steps)
 
 ## 1. Ignoring files {: id="ignoring-files"}
 
@@ -25,17 +27,11 @@ Codacy uses multiple tools to analyze the source code of a program without execu
 [Configure code patterns](../repositories-configure/configuring-code-patterns.md) to adapt analysis tools to your use case, leverage existing configuration files, and start delivering code that’s more secure, performant, and maintainable.
 
 !!! tip
-    To apply the same configurations to multiple repositories, [use a coding standard](../organizations/using-a-coding-standard.md).
+To apply the same configurations to multiple repositories, [use a coding standard](../organizations/using-a-coding-standard.md).
 
 ![Configuring the tools and code patterns](../repositories-configure/images/code-patterns.png)
 
-## 3. Adjusting quality settings {: id="adjusting-quality-settings"}
-
-Codacy’s settings let you configure the recommended values and goals for quality, duplication, and complexity metrics. They are always visible on Codacy's dashboard and [can even be enforced](setting-up-codacy-as-a-quality-gate.md) when integrating with your Git provider.
-
-[Adjust the quality settings](../repositories-configure/adjusting-quality-settings.md) to control the quality metrics of your code and deliver features that exceed expectations.
-
-## 4. Adding coverage reports {: id="adding-coverage-reports"}
+## 3. Adding coverage reports {: id="adding-coverage-reports"}
 
 Code coverage reports detail how much of your code is covered by tests. High code coverage correlates with code that is well-tested, well-maintained, and reliable.
 
@@ -43,8 +39,7 @@ Code coverage reports detail how much of your code is covered by tests. High cod
 
 ![Adding coverage reports to your repository](../coverage-reporter/images/coverage-codacy-ui.png)
 
-## 5. Providing feedback to your Git provider {: id="git-provider-feedback"}
+## 4. Next steps {: id="next-steps"}
 
-Once you’re satisfied with your setup, you can integrate Codacy into your team's Git workflow to offer suggestions, flag potential issues, and keep your code robust as you push changes.
-
-Configure Codacy to provide feedback directly on [GitHub](../repositories-configure/integrations/github-integration.md), [GitLab](../repositories-configure/integrations/gitlab-integration.md), or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md) pull requests by annotating the lines with new issues, displaying a summary view of changes, and reporting when your changes and code coverage are up to standard.
+-   Once you’re satisfied with your setup, you can [integrate Codacy with your Git provider](integrating-codacy-with-your-git-provider.md) to offer suggestions, flag potential issues, and block problematic pull requests.
+-   You can also [add a Codacy badge to your repository](adding-a-codacy-badge.md) to display the current code quality grade or code coverage.

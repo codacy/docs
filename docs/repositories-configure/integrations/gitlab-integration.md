@@ -54,4 +54,4 @@ Shows an overall view of the changes in the merge request, including new issues 
 
 ## See also
 
--   [Setting up Codacy as a quality gate](../../getting-started/setting-up-codacy-as-a-quality-gate.md)
+-   [Setting up Codacy as a quality gate](../../getting-started/integrating-codacy-with-your-git-provider.md)

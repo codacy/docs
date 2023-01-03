@@ -17,7 +17,7 @@ Depending on the result of applying the quality gate rules, Codacy updates the c
 !!! note
     **To enable pull request status** directly on your Git provider, see the instructions for [GitHub](../repositories-configure/integrations/github-integration.md#configuring), [GitLab](../repositories-configure/integrations/gitlab-integration.md#configuring), or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#configuring), depending on your Git provider. For Codacy to report the coverage status on your pull requests you must also turn on the rule **Diff coverage is under** or **Coverage variation is under**.
 
-    **If you want to block merging pull requests** that aren't up to standards see [Setting up Codacy as a quality gate](../getting-started/setting-up-codacy-as-a-quality-gate.md)
+    **If you want to block merging pull requests** that aren't up to standards see [Setting up Codacy as a quality gate](../getting-started/integrating-codacy-with-your-git-provider.md)
 
 The following screenshot displays the default configuration values:
 
@@ -62,5 +62,5 @@ The following screenshot displays the default configuration values:
 ## See also
 
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
--   [Setting up Codacy as a quality gate](../getting-started/setting-up-codacy-as-a-quality-gate.md)
+-   [Setting up Codacy as a quality gate](../getting-started/integrating-codacy-with-your-git-provider.md)
 -   [Diff coverage: <span class="skip-vale">we have</span> a new metric and quality gate rule for PRs](https://blog.codacy.com/diff-coverage/)

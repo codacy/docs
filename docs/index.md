@@ -46,7 +46,7 @@ description: Documentation homepage for the Codacy Quality automated code review
       <div>Invite your team members to join Codacy to analyze their commits on private repositories.</div>
     </div>
   </a>
-  <a class="topic-card" href="getting-started/setting-up-codacy-as-a-quality-gate">
+  <a class="topic-card" href="getting-started/integrating-codacy-with-your-git-provider">
     <div class="tc-icon">
       <img alt="Using Codacy as a quality gate" src="/assets/images/icon-checklist.svg">
     </div>
