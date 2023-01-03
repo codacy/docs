@@ -76,4 +76,4 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
 
 ## See also
 
--   [Setting up Codacy as a quality gate](../../getting-started/integrating-codacy-with-your-git-provider.md)
+-   [Integrating Codacy with your Git workflow](../../getting-started/integrating-codacy-with-your-git-workflow.md)

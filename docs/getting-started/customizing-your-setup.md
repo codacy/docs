@@ -6,7 +6,6 @@ description: Customizing your setup
 
 [//]: # (TODO prerequisites: check out the quickstart!)
 
-1.  [Prerequisites](#prerequisites)
 1.  [Ignoring files](#ignoring-files)
 1.  [Configuring tools and code patterns](#configuring-code-patterns)
 1.  [Adding coverage reports](#adding-coverage-reports) (optional)
@@ -41,5 +40,5 @@ Code coverage reports detail how much of your code is covered by tests. High cod
 
 ## 4. Next steps {: id="next-steps"}
 
--   Once you’re satisfied with your setup, you can [integrate Codacy with your Git provider](integrating-codacy-with-your-git-provider.md) to offer suggestions, flag potential issues, and block problematic pull requests.
+-   Once you’re satisfied with your setup, you can [integrate Codacy with your Git workflow](integrating-codacy-with-your-git-workflow.md) to offer suggestions, flag potential issues, and block problematic pull requests.
 -   You can also [add a Codacy badge to your repository](adding-a-codacy-badge.md) to display the current code quality grade or code coverage.
