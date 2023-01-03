@@ -8,12 +8,12 @@ The following sections include instructions on how to use the Codacy Coverage Re
 
 ## Uploading multiple coverage reports for the same language {: id="multiple-reports"}
 
-If your test suite is split in different modules or runs in parallel, you must upload multiple coverage reports for the same language either at once or in sequence.
+If your test suite is split into different modules or runs in parallel, you must upload multiple coverage reports for the same language either at once or in sequence.
 
-If one or more coverage reports mark a line as covered multiple times, Codacy still counts it as a single covered line when calculating coverage.
+Alternatively, consider merging multiple coverage reports before uploading them to Codacy. Most coverage tools support merging or aggregating coverage data. For example, use the [merge mojo for JaCoCo](http://www.eclemma.org/jacoco/trunk/doc/merge-mojo.html).
 
-!!! tip
-    Alternatively, consider merging multiple coverage reports before uploading them to Codacy. Most coverage tools support merging or aggregating coverage data. For example, use the [merge mojo for JaCoCo](http://www.eclemma.org/jacoco/trunk/doc/merge-mojo.html).
+!! note
+    If one or more coverage reports mark a line as covered multiple times, Codacy counts it as a single covered line when calculating coverage.
 
 ### Uploading all reports at once {: id="multiple-reports-once"}
 
