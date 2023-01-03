@@ -3541,25 +3541,25 @@
 <div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
 
 <span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
-<span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span> <span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
+<span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span><span class="w"> </span><span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
 <span class="nv">ORGANIZATION</span><span class="o">=</span><span class="s2">&quot;&lt;your organization name&gt;&quot;</span>
 
-<span class="nv">repositories</span><span class="o">=</span><span class="k">$(</span>curl -sX GET <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/repositories&quot;</span> <span class="se">\</span>
-                    -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
-               <span class="p">|</span> jq -r <span class="s2">&quot;.data[] | .name&quot;</span><span class="k">)</span>
+<span class="nv">repositories</span><span class="o">=</span><span class="k">$(</span>curl<span class="w"> </span>-sX<span class="w"> </span>GET<span class="w"> </span><span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/repositories&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">                    </span>-H<span class="w"> </span><span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">               </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;.data[] | .name&quot;</span><span class="k">)</span>
 
-<span class="nv">count</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$repositories</span><span class="s2">&quot;</span> <span class="p">|</span> wc -l<span class="k">)</span>
-<span class="nb">read</span> -p <span class="s2">&quot;Create project tokens for </span><span class="nv">$count</span><span class="s2"> repositories? (y/n) &quot;</span> choice
-<span class="k">if</span> <span class="o">[</span> <span class="s2">&quot;</span><span class="nv">$choice</span><span class="s2">&quot;</span> <span class="o">=</span> <span class="s2">&quot;y&quot;</span> <span class="o">]</span><span class="p">;</span> <span class="k">then</span>
-    <span class="nb">echo</span> <span class="s2">&quot;</span><span class="nv">$repositories</span><span class="s2">&quot;</span> <span class="p">|</span> <span class="k">while</span> <span class="nb">read</span> repository<span class="p">;</span> <span class="k">do</span>
-        <span class="nb">echo</span> -n <span class="s2">&quot;</span><span class="nv">$repository</span><span class="s2">,&quot;</span>
-        curl -sX POST <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/repositories/</span><span class="nv">$repository</span><span class="s2">/tokens&quot;</span> <span class="se">\</span>
-             -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
-        <span class="p">|</span> jq -r <span class="s2">&quot;.data | .token&quot;</span>
-        sleep <span class="m">2</span> <span class="c1"># Wait 2 seconds</span>
-    <span class="k">done</span>
+<span class="nv">count</span><span class="o">=</span><span class="k">$(</span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$repositories</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>wc<span class="w"> </span>-l<span class="k">)</span>
+<span class="nb">read</span><span class="w"> </span>-p<span class="w"> </span><span class="s2">&quot;Create project tokens for </span><span class="nv">$count</span><span class="s2"> repositories? (y/n) &quot;</span><span class="w"> </span>choice
+<span class="k">if</span><span class="w"> </span><span class="o">[</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$choice</span><span class="s2">&quot;</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;y&quot;</span><span class="w"> </span><span class="o">]</span><span class="p">;</span><span class="w"> </span><span class="k">then</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$repositories</span><span class="s2">&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span><span class="k">while</span><span class="w"> </span><span class="nb">read</span><span class="w"> </span>repository<span class="p">;</span><span class="w"> </span><span class="k">do</span>
+<span class="w">        </span><span class="nb">echo</span><span class="w"> </span>-n<span class="w"> </span><span class="s2">&quot;</span><span class="nv">$repository</span><span class="s2">,&quot;</span>
+<span class="w">        </span>curl<span class="w"> </span>-sX<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/repositories/</span><span class="nv">$repository</span><span class="s2">/tokens&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>-H<span class="w"> </span><span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">        </span><span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;.data | .token&quot;</span>
+<span class="w">        </span>sleep<span class="w"> </span><span class="m">2</span><span class="w"> </span><span class="c1"># Wait 2 seconds</span>
+<span class="w">    </span><span class="k">done</span>
 <span class="k">else</span>
-    <span class="nb">echo</span> <span class="s2">&quot;No changes made.&quot;</span><span class="p">;</span>
+<span class="w">    </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;No changes made.&quot;</span><span class="p">;</span>
 <span class="k">fi</span>
 </code></pre></div>
 <p>Example output:</p>

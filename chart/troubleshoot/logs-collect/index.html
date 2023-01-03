@@ -3491,8 +3491,8 @@
 <ol>
 <li>
 <p>Run the following command on a machine with network access to the Codacy cluster, replacing <code>&lt;namespace&gt;</code> with the namespace in which Codacy was installed:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -fsSL https://raw.githubusercontent.com/codacy/chart/master/docs/troubleshoot/extract-codacy-logs.sh<span class="o">)</span> <span class="se">\</span>
-    -n &lt;namespace&gt;
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/codacy/chart/master/docs/troubleshoot/extract-codacy-logs.sh<span class="o">)</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-n<span class="w"> </span>&lt;namespace&gt;
 </code></pre></div>
 <p>This will download the logs of the last 7 days as an archive file with the name <code>codacy_logs_&lt;timestamp&gt;.zip</code>.</p>
 <div class="admonition tip">
@@ -3506,8 +3506,8 @@
 <p class="admonition-title">Note</p>
 <p>If the file is too big, please upload the file to either a cloud storage service such as <a href="https://www.google.com/drive/">Google Drive</a> or to a file transfer service such as <a href="http://www.wetransfer.com/">WeTransfer</a> and send us the link to the file instead.</p>
 <p>Alternatively, to reduce the size of the compressed archive file, retrieve logs for a smaller number of days by replacing <code>&lt;days&gt;</code> with a number between 1 and 7:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -fsSL https://raw.githubusercontent.com/codacy/chart/master/docs/troubleshoot/extract-codacy-logs.sh<span class="o">)</span> <span class="se">\</span>
-    -n &lt;namespace&gt; -d &lt;days&gt;
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/codacy/chart/master/docs/troubleshoot/extract-codacy-logs.sh<span class="o">)</span><span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-n<span class="w"> </span>&lt;namespace&gt;<span class="w"> </span>-d<span class="w"> </span>&lt;days&gt;
 </code></pre></div>
 </div>
 </li>

@@ -3504,9 +3504,9 @@
 </li>
 <li>
 <p>Store all your currently defined configuration values in a file:</p>
-<div class="highlight"><pre><span></span><code>helm get values codacy <span class="se">\</span>
-                --namespace codacy <span class="se">\</span>
-                --output yaml &gt; codacy.yaml
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>get<span class="w"> </span>values<span class="w"> </span>codacy<span class="w"> </span><span class="se">\</span>
+<span class="w">                </span>--namespace<span class="w"> </span>codacy<span class="w"> </span><span class="se">\</span>
+<span class="w">                </span>--output<span class="w"> </span>yaml<span class="w"> </span>&gt;<span class="w"> </span>codacy.yaml
 </code></pre></div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -3518,11 +3518,11 @@
 </li>
 <li>
 <p>Perform the upgrade using the values stored in the file:</p>
-<div class="highlight"><pre><span></span><code>helm repo update
-helm upgrade codacy codacy-stable/codacy <span class="se">\</span>
-             --version <span class="m">9</span>.0.0 <span class="se">\</span>
-             --namespace codacy <span class="se">\</span>
-             --values codacy.yaml
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>repo<span class="w"> </span>update
+helm<span class="w"> </span>upgrade<span class="w"> </span>codacy<span class="w"> </span>codacy-stable/codacy<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>--version<span class="w"> </span><span class="m">9</span>.0.0<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>--namespace<span class="w"> </span>codacy<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>--values<span class="w"> </span>codacy.yaml
 </code></pre></div>
 </li>
 <li>

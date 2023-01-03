@@ -3547,12 +3547,12 @@
 </div>
 <h3 id="multiple-reports-once">Uploading all reports at once<a class="headerlink" href="#multiple-reports-once" title="Permanent link">#</a></h3>
 <p>Upload multiple partial coverage reports with a single command by specifying each report with the flag <code>-r</code>. For example:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-    -l Java -r report1.xml -r report2.xml -r report3.xml
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-l<span class="w"> </span>Java<span class="w"> </span>-r<span class="w"> </span>report1.xml<span class="w"> </span>-r<span class="w"> </span>report2.xml<span class="w"> </span>-r<span class="w"> </span>report3.xml
 </code></pre></div>
 <p>You can also upload all your reports dynamically using the command <code>find</code>. For example:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-    -l Java <span class="k">$(</span>find . -name <span class="s1">&#39;jacoco*.xml&#39;</span> -printf <span class="s1">&#39;-r %p &#39;</span><span class="k">)</span>
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-l<span class="w"> </span>Java<span class="w"> </span><span class="k">$(</span>find<span class="w"> </span>.<span class="w"> </span>-name<span class="w"> </span><span class="s1">&#39;jacoco*.xml&#39;</span><span class="w"> </span>-printf<span class="w"> </span><span class="s1">&#39;-r %p &#39;</span><span class="k">)</span>
 </code></pre></div>
 <h3 id="multiple-reports-sequence">Uploading reports in sequence<a class="headerlink" href="#multiple-reports-sequence" title="Permanent link">#</a></h3>
 <p>Upload multiple partial coverage reports in sequence:</p>
@@ -3566,32 +3566,32 @@
 </li>
 </ol>
 <p>For example:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-    --partial -l Java -r report1.xml
-bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-    --partial -l Java -r report2.xml
-bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> final
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--partial<span class="w"> </span>-l<span class="w"> </span>Java<span class="w"> </span>-r<span class="w"> </span>report1.xml
+bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--partial<span class="w"> </span>-l<span class="w"> </span>Java<span class="w"> </span>-r<span class="w"> </span>report2.xml
+bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>final
 </code></pre></div>
 <h2 id="multiple-languages">Uploading the same coverage report for multiple languages<a class="headerlink" href="#multiple-languages" title="Permanent link">#</a></h2>
 <p>If your test suite generates a single coverage report for more than one language, you must upload the same coverage report for each language.</p>
 <p>To do this, upload the same report multiple times, specifying each different language with the flag <code>-l</code>. For example:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-    --partial -l Javascript -r report.xml
-bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-    --partial -l TypeScript -r report.xml
-bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> final
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--partial<span class="w"> </span>-l<span class="w"> </span>Javascript<span class="w"> </span>-r<span class="w"> </span>report.xml
+bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--partial<span class="w"> </span>-l<span class="w"> </span>TypeScript<span class="w"> </span>-r<span class="w"> </span>report.xml
+bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>final
 </code></pre></div>
 <h2 id="golang">Uploading coverage for Golang<a class="headerlink" href="#golang" title="Permanent link">#</a></h2>
 <p>Codacy can't automatically detect Golang coverage report files because they don't have specific file names.</p>
 <p>If you're uploading a Golang coverage report, you must also specify the report type:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-    --force-coverage-parser go -r &lt;coverage report file name&gt;
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--force-coverage-parser<span class="w"> </span>go<span class="w"> </span>-r<span class="w"> </span>&lt;coverage<span class="w"> </span>report<span class="w"> </span>file<span class="w"> </span>name&gt;
 </code></pre></div>
 <h2 id="unsupported-languages">Uploading coverage for unsupported languages<a class="headerlink" href="#unsupported-languages" title="Permanent link">#</a></h2>
 <p>If your language isn't in the <a href="../#generating-coverage">list of supported languages</a>, you can still send coverage to Codacy.</p>
 <p>To do this, provide the correct language with the flag <code>-l</code>, together with <code>--force-language</code>. For example:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report <span class="se">\</span>
-  -l Kotlin --force-language -r &lt;coverage report file name&gt;
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-l<span class="w"> </span>Kotlin<span class="w"> </span>--force-language<span class="w"> </span>-r<span class="w"> </span>&lt;coverage<span class="w"> </span>report<span class="w"> </span>file<span class="w"> </span>name&gt;
 </code></pre></div>
 <p>See the <a href="https://github.com/codacy/codacy-plugins-api/blob/master/src/main/scala/com/codacy/plugins/api/languages/Language.scala#L43">list of languages</a> that you can specify using the flag <code>-l</code>.</p>
               

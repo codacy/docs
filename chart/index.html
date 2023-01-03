@@ -3581,16 +3581,16 @@
 </li>
 <li>
 <p>Create a cluster namespace called <code>codacy</code> that will group all resources related to Codacy.</p>
-<div class="highlight"><pre><span></span><code>kubectl create namespace codacy
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span>codacy
 </code></pre></div>
 </li>
 <li>
 <p>Add the Docker registry credentials provided by Codacy together with your license to a cluster Secret. This is necessary because some Codacy Docker images are currently private.</p>
 <p>Substitute <code>&lt;docker_username&gt;</code> and <code>&lt;docker_password&gt;</code> with the Docker registry username and password and run the following command:</p>
-<div class="highlight"><pre><span></span><code>kubectl create secret docker-registry docker-credentials <span class="se">\</span>
-    --docker-username<span class="o">=</span>&lt;docker_username&gt; <span class="se">\</span>
-    --docker-password<span class="o">=</span>&lt;docker_password&gt; <span class="se">\</span>
-    --namespace codacy
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>secret<span class="w"> </span>docker-registry<span class="w"> </span>docker-credentials<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--docker-username<span class="o">=</span>&lt;docker_username&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--docker-password<span class="o">=</span>&lt;docker_password&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--namespace<span class="w"> </span>codacy
 </code></pre></div>
 </li>
 <li>
@@ -3609,35 +3609,35 @@
 <p class="admonition-title">Important</p>
 <p><strong>If you're using MicroK8s</strong> you must download and use the file <a href="values-files/values-microk8s.yaml"><code>values-microk8s.yaml</code></a> together with the file <code>values-production.yaml</code> by uncommenting the last line in the <code>helm upgrade</code> command below.</p>
 </div>
-<div class="highlight"><pre><span></span><code>helm repo add codacy-stable https://charts.codacy.com/stable/
-helm repo update
-helm upgrade --install codacy codacy-stable/codacy <span class="se">\</span>
-             --namespace codacy <span class="se">\</span>
-             --version <span class="m">9</span>.0.0 <span class="se">\</span>
-             --values values-production.yaml
-             <span class="c1"># --values values-microk8s.yaml</span>
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>repo<span class="w"> </span>add<span class="w"> </span>codacy-stable<span class="w"> </span>https://charts.codacy.com/stable/
+helm<span class="w"> </span>repo<span class="w"> </span>update
+helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>codacy<span class="w"> </span>codacy-stable/codacy<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>--namespace<span class="w"> </span>codacy<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>--version<span class="w"> </span><span class="m">9</span>.0.0<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>--values<span class="w"> </span>values-production.yaml
+<span class="w">             </span><span class="c1"># --values values-microk8s.yaml</span>
 </code></pre></div>
 </li>
 <li>
 <p>By now all the Codacy pods should be starting in the cluster. Run the following command <strong>and wait for all the pods to have the status Running</strong>, which can take several minutes:</p>
-<div class="highlight"><pre><span></span><code>$ kubectl get pods -n codacy
-NAME                                            READY   STATUS    RESTARTS   AGE
-codacy-api-f7897b965-fgn67                      <span class="m">1</span>/1     Running   <span class="m">0</span>          8m57s
-codacy-api-f7897b965-kkqsx                      <span class="m">1</span>/1     Running   <span class="m">0</span>          8m57s
-codacy-crow-7c957d45f6-b8zp2                    <span class="m">1</span>/1     Running   <span class="m">2</span>          8m57s
-codacy-crowdb-0                                 <span class="m">1</span>/1     Running   <span class="m">0</span>          8m57s
-codacy-engine-549bcb69d9-cgrqf                  <span class="m">1</span>/1     Running   <span class="m">1</span>          8m57s
-codacy-engine-549bcb69d9-sh5f4                  <span class="m">1</span>/1     Running   <span class="m">1</span>          8m57s
-codacy-fluentdoperator-x5vr2                    <span class="m">2</span>/2     Running   <span class="m">0</span>          8m57s
-codacy-listener-868b784dcf-npdfh                <span class="m">1</span>/1     Running   <span class="m">0</span>          8m57s
-codacy-listenerdb-0                             <span class="m">1</span>/1     Running   <span class="m">0</span>          8m57s
-codacy-minio-7cfdc7b4f4-254gz                   <span class="m">1</span>/1     Running   <span class="m">0</span>          8m57s
-codacy-nfsserverprovisioner-0                   <span class="m">1</span>/1     Running   <span class="m">0</span>          8m57s
-codacy-portal-774d9fc596-rwqj5                  <span class="m">1</span>/1     Running   <span class="m">2</span>          8m56s
-codacy-rabbitmq-ha-0                            <span class="m">1</span>/1     Running   <span class="m">0</span>          8m57s
-codacy-ragnaros-69459775b5-hmj4d                <span class="m">1</span>/1     Running   <span class="m">3</span>          8m57s
-codacy-remote-provider-service-8fb8556b-rr4ws   <span class="m">1</span>/1     Running   <span class="m">0</span>          8m56s
-codacy-worker-manager-656dbf8d6d-n4j7c          <span class="m">1</span>/1     Running   <span class="m">0</span>          8m57s
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>kubectl<span class="w"> </span>get<span class="w"> </span>pods<span class="w"> </span>-n<span class="w"> </span>codacy
+NAME<span class="w">                                            </span>READY<span class="w">   </span>STATUS<span class="w">    </span>RESTARTS<span class="w">   </span>AGE
+codacy-api-f7897b965-fgn67<span class="w">                      </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>8m57s
+codacy-api-f7897b965-kkqsx<span class="w">                      </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>8m57s
+codacy-crow-7c957d45f6-b8zp2<span class="w">                    </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">2</span><span class="w">          </span>8m57s
+codacy-crowdb-0<span class="w">                                 </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>8m57s
+codacy-engine-549bcb69d9-cgrqf<span class="w">                  </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">1</span><span class="w">          </span>8m57s
+codacy-engine-549bcb69d9-sh5f4<span class="w">                  </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">1</span><span class="w">          </span>8m57s
+codacy-fluentdoperator-x5vr2<span class="w">                    </span><span class="m">2</span>/2<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>8m57s
+codacy-listener-868b784dcf-npdfh<span class="w">                </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>8m57s
+codacy-listenerdb-0<span class="w">                             </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>8m57s
+codacy-minio-7cfdc7b4f4-254gz<span class="w">                   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>8m57s
+codacy-nfsserverprovisioner-0<span class="w">                   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>8m57s
+codacy-portal-774d9fc596-rwqj5<span class="w">                  </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">2</span><span class="w">          </span>8m56s
+codacy-rabbitmq-ha-0<span class="w">                            </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>8m57s
+codacy-ragnaros-69459775b5-hmj4d<span class="w">                </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">3</span><span class="w">          </span>8m57s
+codacy-remote-provider-service-8fb8556b-rr4ws<span class="w">   </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>8m56s
+codacy-worker-manager-656dbf8d6d-n4j7c<span class="w">          </span><span class="m">1</span>/1<span class="w">     </span>Running<span class="w">   </span><span class="m">0</span><span class="w">          </span>8m57s
 </code></pre></div>
 </li>
 </ol>

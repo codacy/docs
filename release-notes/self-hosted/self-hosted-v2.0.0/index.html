@@ -3550,15 +3550,15 @@
 <li>
 <p>You must manually delete the existing RabbitMQ PVCs before upgrading Codacy.</p>
 <p>To do this, start by removing the RabbitMQ <span class="skip-vale">statefulset</span>:</p>
-<div class="highlight"><pre><span></span><code>kubectl delete sts/codacy-rabbitmq-ha -n codacy
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>delete<span class="w"> </span>sts/codacy-rabbitmq-ha<span class="w"> </span>-n<span class="w"> </span>codacy
 </code></pre></div>
 <p>Confirm the name of the PVCs that were created by RabbitMQ:</p>
-<div class="highlight"><pre><span></span><code>kubectl get pvc -n codacy
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>pvc<span class="w"> </span>-n<span class="w"> </span>codacy
 </code></pre></div>
 <p>Finally, delete all the PVCs related to RabbitMQ. You should have three replicas which was the default for versions older than 2.0.0:</p>
-<div class="highlight"><pre><span></span><code>kubectl delete pvc data-codacy-rabbitmq-ha-0 -n codacy
-kubectl delete pvc data-codacy-rabbitmq-ha-1 -n codacy
-kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>delete<span class="w"> </span>pvc<span class="w"> </span>data-codacy-rabbitmq-ha-0<span class="w"> </span>-n<span class="w"> </span>codacy
+kubectl<span class="w"> </span>delete<span class="w"> </span>pvc<span class="w"> </span>data-codacy-rabbitmq-ha-1<span class="w"> </span>-n<span class="w"> </span>codacy
+kubectl<span class="w"> </span>delete<span class="w"> </span>pvc<span class="w"> </span>data-codacy-rabbitmq-ha-2<span class="w"> </span>-n<span class="w"> </span>codacy
 </code></pre></div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -3570,60 +3570,60 @@ kubectl delete pvc data-codacy-rabbitmq-ha-2 -n codacy
 <ul>
 <li>
 <p>The following analysis workers configuration values moved from:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">worker-manager</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">config</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">workers</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
-<span class="w">    </span><span class="nt">workerResources</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
-<span class="w">    </span><span class="nt">pluginResources</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">worker-manager</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">config</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">workers</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">workerResources</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+<span class="w">    </span><span class="nt">pluginResources</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
 </code></pre></div>
 <p>To:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">workerManager</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">workers</span><span class="p">:</span><span class="w"></span>
-<span class="w">      </span><span class="nt">config</span><span class="p">:</span><span class="w"></span>
-<span class="w">        </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
-<span class="w">        </span><span class="nt">workerResources</span><span class="p">:</span><span class="w"></span>
-<span class="w">            </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
-<span class="w">        </span><span class="nt">pluginResources</span><span class="p">:</span><span class="w"></span>
-<span class="w">            </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">workerManager</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">workers</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">config</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="nt">workerResources</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+<span class="w">        </span><span class="nt">pluginResources</span><span class="p">:</span>
+<span class="w">            </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
 </code></pre></div>
 </li>
 <li>
 <p>The following database configuration values moved from:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">hotspots-api</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">hotspotsdb</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">hotspots-api</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">hotspotsdb</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
 
-<span class="nt">activities</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">activitiesdb</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="nt">activities</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">activitiesdb</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
 
-<span class="nt">crow</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">crowdb</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
+<span class="nt">crow</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">crowdb</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
 </code></pre></div>
 <p>To:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">hotspotsdb</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
-<span class="w">  </span><span class="nt">activitiesdb</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
-<span class="w">  </span><span class="nt">crowdb</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">global</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">hotspotsdb</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+<span class="w">  </span><span class="nt">activitiesdb</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
+<span class="w">  </span><span class="nt">crowdb</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
 </code></pre></div>
 </li>
 <li>
 <p>The following Erlang cookie configuration was added to the RabbitMQ configuration values:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">rabbitmq-ha</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">rabbitmqErlangCookie</span><span class="p">:</span><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">&lt;--- erlang-cookie ---&gt;</span><span class="w">  </span><span class="c1"># Generate one with `cat /dev/urandom | tr -dc &#39;a-zA-Z0-9&#39; | fold -w 32 | head -n 1`</span><span class="w"></span>
-<span class="w">  </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">rabbitmq-ha</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">rabbitmqErlangCookie</span><span class="p">:</span><span class="w">  </span><span class="l l-Scalar l-Scalar-Plain">&lt;--- erlang-cookie ---&gt;</span><span class="w">  </span><span class="c1"># Generate one with `cat /dev/urandom | tr -dc &#39;a-zA-Z0-9&#39; | fold -w 32 | head -n 1`</span>
+<span class="w">  </span><span class="p p-Indicator">[</span><span class="nv">...</span><span class="p p-Indicator">]</span>
 </code></pre></div>
 <p>When you previously installed Codacy, this cookie was automatically set to a random value. We recommend that you keep the same cookie to help ensure that the Codacy upgrade runs <span class="skip-vale">smoothly</span>.</p>
 <p>Run the following command to retrieve the current cookie value and define it explicitly in the new configuration:</p>
-<div class="highlight"><pre><span></span><code>kubectl get secrets -n codacy codacy-rabbitmq-ha -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s2">&quot;{.data.rabbitmq-erlang-cookie}&quot;</span> <span class="p">|</span> base64 --decode
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>get<span class="w"> </span>secrets<span class="w"> </span>-n<span class="w"> </span>codacy<span class="w"> </span>codacy-rabbitmq-ha<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s2">&quot;{.data.rabbitmq-erlang-cookie}&quot;</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>base64<span class="w"> </span>--decode
 </code></pre></div>
 </li>
 </ul>

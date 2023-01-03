@@ -3643,8 +3643,8 @@
 <ul>
 <li>
 <p><a href="https://github.com/SlatherOrg/slather">SlatherOrg/slather</a>: generate Cobertura reports from Xcode coverage reports:</p>
-<div class="highlight"><pre><span></span><code>gem install slather
-slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;project-name&gt; &lt;project-name&gt;.xcodeproj
+<div class="highlight"><pre><span></span><code>gem<span class="w"> </span>install<span class="w"> </span>slather
+slather<span class="w"> </span>coverage<span class="w"> </span>-x<span class="w"> </span>--output-directory<span class="w"> </span>&lt;report-output-dir&gt;<span class="w"> </span>--scheme<span class="w"> </span>&lt;project-name&gt;<span class="w"> </span>&lt;project-name&gt;.xcodeproj
 </code></pre></div>
 <p>This will generate a file <code>cobertura.xml</code> inside the folder <code>&lt;report-output-dir&gt;</code>.</p>
 </li>
@@ -3677,7 +3677,7 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <ul>
 <li>
 <p><strong>If you're setting up coverage for one repository</strong>, <a href="../codacy-api/api-tokens/#project-api-tokens">obtain a project API token</a> and set the following environment variable to specify your project API token:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>&lt;your project API token&gt;
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>&lt;your<span class="w"> </span>project<span class="w"> </span>API<span class="w"> </span>token&gt;
 </code></pre></div>
 </li>
 <li>
@@ -3697,10 +3697,10 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 <p><strong>CODACY_PROJECT_NAME:</strong> Name of the repository for which you're uploading the coverage data.</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_TOKEN</span><span class="o">=</span>&lt;your account API token&gt;
-<span class="nb">export</span> <span class="nv">CODACY_ORGANIZATION_PROVIDER</span><span class="o">=</span>&lt;Git provider hosting the repository&gt;
-<span class="nb">export</span> <span class="nv">CODACY_USERNAME</span><span class="o">=</span>&lt;organization name or username on the Git provider&gt;
-<span class="nb">export</span> <span class="nv">CODACY_PROJECT_NAME</span><span class="o">=</span>&lt;repository name&gt;
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span>&lt;your<span class="w"> </span>account<span class="w"> </span>API<span class="w"> </span>token&gt;
+<span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_ORGANIZATION_PROVIDER</span><span class="o">=</span>&lt;Git<span class="w"> </span>provider<span class="w"> </span>hosting<span class="w"> </span>the<span class="w"> </span>repository&gt;
+<span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_USERNAME</span><span class="o">=</span>&lt;organization<span class="w"> </span>name<span class="w"> </span>or<span class="w"> </span>username<span class="w"> </span>on<span class="w"> </span>the<span class="w"> </span>Git<span class="w"> </span>provider&gt;
+<span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_PROJECT_NAME</span><span class="o">=</span>&lt;repository<span class="w"> </span>name&gt;
 </code></pre></div>
 </li>
 </ul>
@@ -3712,13 +3712,13 @@ slather coverage -x --output-directory &lt;report-output-dir&gt; --scheme &lt;pr
 </li>
 <li>
 <p><strong>If you're using Codacy Self-hosted</strong> set the following environment variables to specify your Codacy instance URL and the Codacy Coverage Reporter version that's compatible with Codacy Self-hosted 9.0.0:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>&lt;your Codacy instance URL&gt;
-<span class="nb">export</span> <span class="nv">CODACY_REPORTER_VERSION</span><span class="o">=</span><span class="m">13</span>.10.15
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>&lt;your<span class="w"> </span>Codacy<span class="w"> </span>instance<span class="w"> </span>URL&gt;
+<span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_REPORTER_VERSION</span><span class="o">=</span><span class="m">13</span>.10.15
 </code></pre></div>
 </li>
 <li>
 <p>Run Codacy Coverage Reporter <strong>on the root of the locally checked out branch of your Git repository</strong>, specifying the relative path to the coverage report to upload:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -Ls https://coverage.codacy.com/get.sh<span class="o">)</span> report -r &lt;coverage report file name&gt;
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span>-r<span class="w"> </span>&lt;coverage<span class="w"> </span>report<span class="w"> </span>file<span class="w"> </span>name&gt;
 </code></pre></div>
 <p>Check the console output to validate that the Codacy Coverage Reporter <strong>detected the correct commit SHA-1 hash</strong> and <strong>successfully uploaded</strong> the coverage data to Codacy. If you need help, <a href="troubleshooting-coverage-cli-issues/">check the troubleshooting page</a> for solutions to the most common issues while running the CLI.</p>
 <div class="admonition note">

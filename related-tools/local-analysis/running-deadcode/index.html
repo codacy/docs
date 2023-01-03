@@ -3532,12 +3532,12 @@
 <ul>
 <li>
 <p><strong>If you're setting up one repository</strong>, <a href="../../../codacy-api/api-tokens/#project-api-tokens">obtain a project API token</a> and set the following environment variable to specify your project API token:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>&lt;your project API token&gt;
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>&lt;your<span class="w"> </span>project<span class="w"> </span>API<span class="w"> </span>token&gt;
 </code></pre></div>
 </li>
 <li>
 <p><strong>If you're setting up multiple repositories</strong>, <a href="../../../codacy-api/api-tokens/#account-api-tokens">obtain an account API Token</a> and set the following environment variable to specify the account API token:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_TOKEN</span><span class="o">=</span>&lt;your account API token&gt;
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span>&lt;your<span class="w"> </span>account<span class="w"> </span>API<span class="w"> </span>token&gt;
 </code></pre></div>
 </li>
 </ul>
@@ -3549,24 +3549,24 @@
 </li>
 <li>
 <p><strong>If you're using Codacy Self-hosted</strong> set the following environment variable to specify your Codacy instance URL:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span> <span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>&lt;your Codacy instance URL&gt;
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>&lt;your<span class="w"> </span>Codacy<span class="w"> </span>instance<span class="w"> </span>URL&gt;
 </code></pre></div>
 </li>
 <li>
 <p>Download and run the <a href="https://github.com/codacy/codacy-analysis-cli#install">Codacy Analysis CLI</a> on the root of the repository, specifying the tool deadcode.</p>
-<div class="highlight"><pre><span></span><code>codacy-analysis-cli analyze --tool deadcode <span class="se">\</span>
-                            --allow-network <span class="se">\</span>
-                            --upload <span class="se">\</span>
-                            --verbose
+<div class="highlight"><pre><span></span><code>codacy-analysis-cli<span class="w"> </span>analyze<span class="w"> </span>--tool<span class="w"> </span>deadcode<span class="w"> </span><span class="se">\</span>
+<span class="w">                            </span>--allow-network<span class="w"> </span><span class="se">\</span>
+<span class="w">                            </span>--upload<span class="w"> </span><span class="se">\</span>
+<span class="w">                            </span>--verbose
 </code></pre></div>
 <p><strong>If you're using an account API token</strong>, you must also provide the flags <code>--provider</code>, <code>--username</code>, and <code>--project</code>. You can obtain the values for these flags from the URL of your repository dashboard on Codacy:</p>
-<div class="highlight"><pre><span></span><code>codacy-analysis-cli analyze --provider &lt;gh, ghe, gl, gle, bb, or bbe&gt; <span class="se">\</span>
-                            --username &lt;name of your Codacy organization&gt; <span class="se">\</span>
-                            --project &lt;name of your repository&gt; <span class="se">\</span>
-                            --tool deadcode <span class="se">\</span>
-                            --allow-network <span class="se">\</span>
-                            --upload <span class="se">\</span>
-                            --verbose
+<div class="highlight"><pre><span></span><code>codacy-analysis-cli<span class="w"> </span>analyze<span class="w"> </span>--provider<span class="w"> </span>&lt;gh,<span class="w"> </span>ghe,<span class="w"> </span>gl,<span class="w"> </span>gle,<span class="w"> </span>bb,<span class="w"> </span>or<span class="w"> </span>bbe&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">                            </span>--username<span class="w"> </span>&lt;name<span class="w"> </span>of<span class="w"> </span>your<span class="w"> </span>Codacy<span class="w"> </span>organization&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">                            </span>--project<span class="w"> </span>&lt;name<span class="w"> </span>of<span class="w"> </span>your<span class="w"> </span>repository&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">                            </span>--tool<span class="w"> </span>deadcode<span class="w"> </span><span class="se">\</span>
+<span class="w">                            </span>--allow-network<span class="w"> </span><span class="se">\</span>
+<span class="w">                            </span>--upload<span class="w"> </span><span class="se">\</span>
+<span class="w">                            </span>--verbose
 </code></pre></div>
 </li>
 </ol>

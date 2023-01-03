@@ -3560,19 +3560,19 @@
 <ol>
 <li>
 <p>Make sure that the package <code>nfs-common</code> is installed:</p>
-<div class="highlight"><pre><span></span><code>sudo apt update <span class="o">&amp;&amp;</span> sudo apt install nfs-common -y
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>apt<span class="w"> </span>update<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span>sudo<span class="w"> </span>apt<span class="w"> </span>install<span class="w"> </span>nfs-common<span class="w"> </span>-y
 </code></pre></div>
 </li>
 <li>
 <p>Install MicroK8s from the <code>1.19/stable</code> channel:</p>
-<div class="highlight"><pre><span></span><code>sudo snap install microk8s --classic --channel<span class="o">=</span><span class="m">1</span>.19/stable
-sudo usermod -a -G microk8s <span class="nv">$USER</span>
-sudo su - <span class="nv">$USER</span>
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>snap<span class="w"> </span>install<span class="w"> </span>microk8s<span class="w"> </span>--classic<span class="w"> </span>--channel<span class="o">=</span><span class="m">1</span>.19/stable
+sudo<span class="w"> </span>usermod<span class="w"> </span>-a<span class="w"> </span>-G<span class="w"> </span>microk8s<span class="w"> </span><span class="nv">$USER</span>
+sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span><span class="nv">$USER</span>
 </code></pre></div>
 </li>
 <li>
 <p>Check that MicroK8s is running:</p>
-<div class="highlight"><pre><span></span><code>microk8s.status --wait-ready
+<div class="highlight"><pre><span></span><code>microk8s.status<span class="w"> </span>--wait-ready
 </code></pre></div>
 </li>
 </ol>
@@ -3581,19 +3581,19 @@ sudo su - <span class="nv">$USER</span>
 <ol>
 <li>
 <p>Configure MicroK8s to allow privileged containers:</p>
-<div class="highlight"><pre><span></span><code>sudo mkdir -p /var/snap/microk8s/current/args
-sudo <span class="nb">echo</span> <span class="s2">&quot;--allow-privileged=true&quot;</span> &gt;&gt; /var/snap/microk8s/current/args/kube-apiserver
-microk8s.status --wait-ready
+<div class="highlight"><pre><span></span><code>sudo<span class="w"> </span>mkdir<span class="w"> </span>-p<span class="w"> </span>/var/snap/microk8s/current/args
+sudo<span class="w"> </span><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;--allow-privileged=true&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/var/snap/microk8s/current/args/kube-apiserver
+microk8s.status<span class="w"> </span>--wait-ready
 </code></pre></div>
 </li>
 <li>
 <p>Enable the following MicroK8s addons:</p>
-<div class="highlight"><pre><span></span><code>microk8s.enable dns
-microk8s.status --wait-ready
-microk8s.enable storage
-microk8s.status --wait-ready
-microk8s.enable ingress
-microk8s.status --wait-ready
+<div class="highlight"><pre><span></span><code>microk8s.enable<span class="w"> </span>dns
+microk8s.status<span class="w"> </span>--wait-ready
+microk8s.enable<span class="w"> </span>storage
+microk8s.status<span class="w"> </span>--wait-ready
+microk8s.enable<span class="w"> </span>ingress
+microk8s.status<span class="w"> </span>--wait-ready
 </code></pre></div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -3605,25 +3605,25 @@ microk8s.status --wait-ready
 <p>Restart MicroK8s and its services to make sure that all configurations are working:</p>
 <div class="highlight"><pre><span></span><code>microk8s.stop
 microk8s.start
-microk8s.status --wait-ready
+microk8s.status<span class="w"> </span>--wait-ready
 </code></pre></div>
 </li>
 <li>
 <p>Export your kubeconfig so that Helm knows on which cluster to install the charts:</p>
-<div class="highlight"><pre><span></span><code>microk8s.config &gt; ~/.kube/config
+<div class="highlight"><pre><span></span><code>microk8s.config<span class="w"> </span>&gt;<span class="w"> </span>~/.kube/config
 </code></pre></div>
 </li>
 <li>
 <p>The addons are now enabled and the MicroK8s instance bootstrapped. However, we must wait for some MicroK8s pods to be ready, as failing to do so can result in the pods entering a <code>CrashLoopBackoff</code> state:</p>
-<div class="highlight"><pre><span></span><code>microk8s.kubectl <span class="nb">wait</span> -n kube-system --for<span class="o">=</span><span class="nv">condition</span><span class="o">=</span>Ready pod -l k8s-app<span class="o">=</span>kube-dns
-microk8s.kubectl <span class="nb">wait</span> -n kube-system --for<span class="o">=</span><span class="nv">condition</span><span class="o">=</span>Ready pod -l k8s-app<span class="o">=</span>hostpath-provisioner
+<div class="highlight"><pre><span></span><code>microk8s.kubectl<span class="w"> </span><span class="nb">wait</span><span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span>--for<span class="o">=</span><span class="nv">condition</span><span class="o">=</span>Ready<span class="w"> </span>pod<span class="w"> </span>-l<span class="w"> </span>k8s-app<span class="o">=</span>kube-dns
+microk8s.kubectl<span class="w"> </span><span class="nb">wait</span><span class="w"> </span>-n<span class="w"> </span>kube-system<span class="w"> </span>--for<span class="o">=</span><span class="nv">condition</span><span class="o">=</span>Ready<span class="w"> </span>pod<span class="w"> </span>-l<span class="w"> </span>k8s-app<span class="o">=</span>hostpath-provisioner
 <span class="c1"># If the following command fails, you probably installed the wrong MicroK8s version</span>
-microk8s.kubectl <span class="nb">wait</span> --all-namespaces --for<span class="o">=</span><span class="nv">condition</span><span class="o">=</span>Ready pod -l <span class="nv">name</span><span class="o">=</span>nginx-ingress-microk8s
+microk8s.kubectl<span class="w"> </span><span class="nb">wait</span><span class="w"> </span>--all-namespaces<span class="w"> </span>--for<span class="o">=</span><span class="nv">condition</span><span class="o">=</span>Ready<span class="w"> </span>pod<span class="w"> </span>-l<span class="w"> </span><span class="nv">name</span><span class="o">=</span>nginx-ingress-microk8s
 </code></pre></div>
 </li>
 <li>
 <p>Verify that the MicroK8s configuration was successful:</p>
-<div class="highlight"><pre><span></span><code>microk8s.status --wait-ready
+<div class="highlight"><pre><span></span><code>microk8s.status<span class="w"> </span>--wait-ready
 </code></pre></div>
 <p>The output of the command should be the following:</p>
 <div class="highlight"><pre><span></span><code>microk8s is running
@@ -3653,7 +3653,7 @@ dashboard: disabled
 <li>
 <p>You must execute all <code>kubectl</code> commands as <code>microk8s.kubectl</code> commands instead.</p>
 <p>To simplify this, we suggest that you create an alias so that you can run the commands directly as provided on the instructions:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">alias</span> <span class="nv">kubectl</span><span class="o">=</span>microk8s.kubectl
+<div class="highlight"><pre><span></span><code><span class="nb">alias</span><span class="w"> </span><span class="nv">kubectl</span><span class="o">=</span>microk8s.kubectl
 </code></pre></div>
 </li>
 <li>

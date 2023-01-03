@@ -3488,7 +3488,7 @@
                 
                 <h1 id="how-to-skip-an-analysis">How to skip an analysis?<a class="headerlink" href="#how-to-skip-an-analysis" title="Permanent link">#</a></h1>
 <p>By default, Codacy automatically analyzes a repository whenever you push changes. However, you can override this behavior by adding the tag <code>[ci skip]</code> or <code>[skip ci]</code> anywhere in the subject or body of the commit message. For example:</p>
-<div class="highlight"><pre><span></span><code>git commit -a -m <span class="s2">&quot;Add eslint-plugin-chai-expect version 1.1.1 [ci skip]&quot;</span>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>commit<span class="w"> </span>-a<span class="w"> </span>-m<span class="w"> </span><span class="s2">&quot;Add eslint-plugin-chai-expect version 1.1.1 [ci skip]&quot;</span>
 </code></pre></div>
 <p>If you later decide to analyze a skipped commit, you can override any skip tags by <a href="../../repositories/how-do-i-reanalyze-my-repository/">reanalyzing the commit</a>.</p>
 <div class="admonition note">

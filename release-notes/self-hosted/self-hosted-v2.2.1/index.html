@@ -3530,9 +3530,9 @@
                 <h1 id="self-hosted-v221">Self-hosted v2.2.1<a class="headerlink" href="#self-hosted-v221" title="Permanent link">#</a></h1>
 <p>These release notes are for <a href="https://github.com/codacy/chart/releases/tag/2.2.1">Codacy Self-hosted v2.2.1</a>, released on October 22, 2020.</p>
 <p>To upgrade Codacy, follow <a href="../../../chart/maintenance/upgrade/">these instructions</a>. After that, restart the Fluentd pods by running the following command, replacing <code>&lt;namespace&gt;</code> with the namespace in which Codacy was installed:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">daemonset</span><span class="o">=</span><span class="k">$(</span>kubectl get daemonsets --namespace &lt;namespace&gt; -o <span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[*].metadata.name}&#39;</span><span class="k">)</span> <span class="o">&amp;&amp;</span> <span class="se">\</span>
-kubectl rollout restart daemonset <span class="nv">$daemonset</span> --namespace &lt;namespace&gt; <span class="o">&amp;&amp;</span> <span class="se">\</span>
-kubectl rollout status daemonset <span class="nv">$daemonset</span> --namespace &lt;namespace&gt; --watch
+<div class="highlight"><pre><span></span><code><span class="nv">daemonset</span><span class="o">=</span><span class="k">$(</span>kubectl<span class="w"> </span>get<span class="w"> </span>daemonsets<span class="w"> </span>--namespace<span class="w"> </span>&lt;namespace&gt;<span class="w"> </span>-o<span class="w"> </span><span class="nv">jsonpath</span><span class="o">=</span><span class="s1">&#39;{.items[*].metadata.name}&#39;</span><span class="k">)</span><span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+kubectl<span class="w"> </span>rollout<span class="w"> </span>restart<span class="w"> </span>daemonset<span class="w"> </span><span class="nv">$daemonset</span><span class="w"> </span>--namespace<span class="w"> </span>&lt;namespace&gt;<span class="w"> </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="se">\</span>
+kubectl<span class="w"> </span>rollout<span class="w"> </span>status<span class="w"> </span>daemonset<span class="w"> </span><span class="nv">$daemonset</span><span class="w"> </span>--namespace<span class="w"> </span>&lt;namespace&gt;<span class="w"> </span>--watch
 </code></pre></div>
 <h2 id="bug-fixes">Bug fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">#</a></h2>
 <ul>

@@ -3539,11 +3539,11 @@
 <p class="admonition-title">Important</p>
 <p><strong>If you're using Codacy Self-hosted</strong> you must also specify the endpoint where the Codacy instance is running either by using the flag <code>--codacy-api-base-url</code> or the environment variable <code>CODACY_API_BASE_URL</code>.</p>
 </div>
-<div class="highlight"><pre><span></span><code>codacy-analysis-cli analyze --directory &lt;SOURCE-CODE-PATH&gt; <span class="se">\</span>
-                            --project-token &lt;PROJECT-TOKEN&gt; <span class="se">\</span>
-                            --allow-network <span class="se">\</span>
-                            --verbose <span class="se">\</span>
-                            --upload
+<div class="highlight"><pre><span></span><code>codacy-analysis-cli<span class="w"> </span>analyze<span class="w"> </span>--directory<span class="w"> </span>&lt;SOURCE-CODE-PATH&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">                            </span>--project-token<span class="w"> </span>&lt;PROJECT-TOKEN&gt;<span class="w"> </span><span class="se">\</span>
+<span class="w">                            </span>--allow-network<span class="w"> </span><span class="se">\</span>
+<span class="w">                            </span>--verbose<span class="w"> </span><span class="se">\</span>
+<span class="w">                            </span>--upload
 </code></pre></div>
 <p>If you don't specify the tool, the analysis will run as Codacy does in the backend. To obtain results for <a href="../../../repositories-configure/codacy-configuration-file/#which-tools-can-be-configured-and-which-name-should-i-use">a particular tool</a>, specify the tool with <code>--tool</code>.</p>
 <h3 id="advanced-configuration">Advanced configuration<a class="headerlink" href="#advanced-configuration" title="Permanent link">#</a></h3>

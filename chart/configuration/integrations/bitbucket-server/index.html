@@ -3533,7 +3533,7 @@
 <li>
 <p>Create a key pair to sign and validate the requests between Codacy and the Bitbucket Server instance.</p>
 <p>Run the following command to create the key pair using the RSA algorithm in the PKCS#8 format:</p>
-<div class="highlight"><pre><span></span><code>bash &lt;<span class="o">(</span>curl -fsSL https://raw.githubusercontent.com/codacy/chart/master/docs/configuration/integrations/generate-bitbucket-server-secrets.sh<span class="o">)</span>
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-fsSL<span class="w"> </span>https://raw.githubusercontent.com/codacy/chart/master/docs/configuration/integrations/generate-bitbucket-server-secrets.sh<span class="o">)</span>
 </code></pre></div>
 <p>Store the keys in a safe place for usage in the next steps and as a backup.</p>
 </li>
@@ -3582,16 +3582,16 @@
 </li>
 <li>
 <p>Set <code>global.bitbucketEnterprise.enabled: "true"</code> and define the remaining values as described below and with the information obtained when you created the Bitbucket Server application link:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">bitbucketEnterprise</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span><span class="w"></span>
-<span class="w">  </span><span class="nt">login</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span><span class="w"> </span><span class="c1"># Show login button for Bitbucket Server</span><span class="w"></span>
-<span class="w">  </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;bitbucket.example.com&quot;</span><span class="w"> </span><span class="c1"># Hostname of your Bitbucket Server instance</span><span class="w"></span>
-<span class="w">  </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;https&quot;</span><span class="w"> </span><span class="c1"># Protocol of your Bitbucket Server instance</span><span class="w"></span>
-<span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7990</span><span class="w"> </span><span class="c1"># Port of your Bitbucket Server instance</span><span class="w"></span>
-<span class="w">  </span><span class="nt">consumerKey</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># Generated when creating the Bitbucket Server application link</span><span class="w"></span>
-<span class="w">  </span><span class="nt">consumerPublicKey</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># Generated when creating the Bitbucket Server application link</span><span class="w"></span>
-<span class="w">  </span><span class="nt">consumerPrivateKey</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># Generated when creating the Bitbucket Server application link</span><span class="w"></span>
-<span class="w">  </span><span class="nt">contextPath</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># Context path of your Bitbucket Server, if configured</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">bitbucketEnterprise</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span>
+<span class="w">  </span><span class="nt">login</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;true&quot;</span><span class="w"> </span><span class="c1"># Show login button for Bitbucket Server</span>
+<span class="w">  </span><span class="nt">hostname</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;bitbucket.example.com&quot;</span><span class="w"> </span><span class="c1"># Hostname of your Bitbucket Server instance</span>
+<span class="w">  </span><span class="nt">protocol</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;https&quot;</span><span class="w"> </span><span class="c1"># Protocol of your Bitbucket Server instance</span>
+<span class="w">  </span><span class="nt">port</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">7990</span><span class="w"> </span><span class="c1"># Port of your Bitbucket Server instance</span>
+<span class="w">  </span><span class="nt">consumerKey</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># Generated when creating the Bitbucket Server application link</span>
+<span class="w">  </span><span class="nt">consumerPublicKey</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># Generated when creating the Bitbucket Server application link</span>
+<span class="w">  </span><span class="nt">consumerPrivateKey</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># Generated when creating the Bitbucket Server application link</span>
+<span class="w">  </span><span class="nt">contextPath</span><span class="p">:</span><span class="w"> </span><span class="s">&quot;&quot;</span><span class="w"> </span><span class="c1"># Context path of your Bitbucket Server, if configured</span>
 </code></pre></div>
 </li>
 <li>
@@ -3601,10 +3601,10 @@
 <p><strong>If you're using MicroK8s</strong> you must use the file <code>values-microk8s.yaml</code> together with the file <code>values-production.yaml</code>.</p>
 <p>To do this, uncomment the last line before running the <code>helm upgrade</code> command below.</p>
 </div>
-<div class="highlight"><pre><span></span><code>helm upgrade <span class="o">(</span>...options used to install Codacy...<span class="o">)</span> <span class="se">\</span>
-             --version <span class="m">9</span>.0.0 <span class="se">\</span>
-             --values values-production.yaml <span class="se">\</span>
-             <span class="c1"># --values values-microk8s.yaml</span>
+<div class="highlight"><pre><span></span><code>helm<span class="w"> </span>upgrade<span class="w"> </span><span class="o">(</span>...options<span class="w"> </span>used<span class="w"> </span>to<span class="w"> </span>install<span class="w"> </span>Codacy...<span class="o">)</span><span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>--version<span class="w"> </span><span class="m">9</span>.0.0<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span>--values<span class="w"> </span>values-production.yaml<span class="w"> </span><span class="se">\</span>
+<span class="w">             </span><span class="c1"># --values values-microk8s.yaml</span>
 </code></pre></div>
 </li>
 </ol>

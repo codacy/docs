@@ -3622,7 +3622,7 @@
 <ol>
 <li>
 <p>Create a <code>port-forward</code> from the <code>rabbitmq</code> pod to your local machine, replacing <code>&lt;namespace&gt;</code> with the namespace in which Codacy was installed:</p>
-<div class="highlight"><pre><span></span><code>kubectl port-forward codacy-rabbitmq-ha-0 <span class="m">15672</span>:15672 --namespace<span class="o">=</span>&lt;namespace&gt;
+<div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>port-forward<span class="w"> </span>codacy-rabbitmq-ha-0<span class="w"> </span><span class="m">15672</span>:15672<span class="w"> </span>--namespace<span class="o">=</span>&lt;namespace&gt;
 </code></pre></div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -3640,7 +3640,7 @@
 </ol>
 <h2 id="missing-new-tools">Missing new tools<a class="headerlink" href="#missing-new-tools" title="Permanent link">#</a></h2>
 <p>If the <strong>Code patterns</strong> page of your repositories doesn't list a new tool that was included in a new Codacy version, force the list of available tools to refresh by running the following command on any <code>codacy-engine-*</code> pod:</p>
-<div class="highlight"><pre><span></span><code>curl -X POST localhost:9000/api/v1/engine/initialize
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>localhost:9000/api/v1/engine/initialize
 </code></pre></div>
 <h2 id="upgrade-failed-cannot-patch-codacy-minio">Upgrade failed: cannot patch "codacy-minio"<a class="headerlink" href="#upgrade-failed-cannot-patch-codacy-minio" title="Permanent link">#</a></h2>
 <p>If you download and use an updated <code>values-production.yaml</code> file while upgrading to <a href="https://docs.codacy.com/release-notes/self-hosted/self-hosted-v9.0.0/">Codacy Self-hosted 9.0.0</a>, you'll get the following error:</p>
@@ -3651,10 +3651,10 @@
 <ul>
 <li>
 <p>Reset the PVC size back to the original value of 20Gi on your <code>values.yaml</code> file:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">minio</span><span class="p">:</span><span class="w"></span>
-<span class="w">  </span><span class="nt">fullnameOverride</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">codacy-minio</span><span class="w"></span>
-<span class="w">  </span><span class="nt">persistence</span><span class="p">:</span><span class="w"></span>
-<span class="w">    </span><span class="nt">size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20Gi</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="nt">minio</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">fullnameOverride</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">codacy-minio</span>
+<span class="w">  </span><span class="nt">persistence</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">size</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">20Gi</span>
 </code></pre></div>
 </li>
 <li>

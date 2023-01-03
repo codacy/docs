@@ -3535,13 +3535,13 @@
 <li>Uses <a href="https://github.com/stedolan/jq">jq</a> to select only the necessary data fields and convert the results to the CSV format.</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
-<span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span> <span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
+<span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span><span class="w"> </span><span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
 <span class="nv">ORGANIZATION</span><span class="o">=</span><span class="s2">&quot;&lt;your organization name&gt;&quot;</span>
 <span class="nv">REPOSITORY</span><span class="o">=</span><span class="s2">&quot;&lt;your repository name&gt;&quot;</span>
 
-curl -X GET <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/repositories/</span><span class="nv">$REPOSITORY</span><span class="s2">/files?search=src/router/&quot;</span> <span class="se">\</span>
-     -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
-<span class="p">|</span> jq -r <span class="s2">&quot;.data[] | [.path, .gradeLetter, .totalIssues, .complexity, .coverage, .duplication] | @csv&quot;</span>
+curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span><span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/repositories/</span><span class="nv">$REPOSITORY</span><span class="s2">/files?search=src/router/&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;.data[] | [.path, .gradeLetter, .totalIssues, .complexity, .coverage, .duplication] | @csv&quot;</span>
 </code></pre></div>
 <p>Example output:</p>
 <div class="highlight"><pre><span></span><code>&quot;src/components/router/index.ts&quot;,&quot;A&quot;,0,8,70,0

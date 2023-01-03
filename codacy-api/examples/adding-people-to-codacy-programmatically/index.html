@@ -3526,10 +3526,10 @@
                 <h1 id="adding-people-to-codacy-programmatically">Adding people to Codacy programmatically<a class="headerlink" href="#adding-people-to-codacy-programmatically" title="Permanent link">#</a></h1>
 <p>There are scenarios where manually adding people on the Codacy UI is inconvenient or time-consuming. For example, you're adding many people to Codacy, such as when initially onboarding all developers within a team.</p>
 <p>To add people programmatically, use Codacy's API v3 endpoint <a href="https://app.codacy.com/api/api-docs#addpeopletoorganization">addPeopleToOrganization</a> by performing an HTTP POST request to <code>/people</code>, specifying a list of email addresses in the body of the request:</p>
-<div class="highlight"><pre><span></span><code>curl -X POST https://app.codacy.com/api/v3/organizations/&lt;GIT_PROVIDER&gt;/&lt;ORGANIZATION&gt;/people <span class="se">\</span>
-  -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
-  -H <span class="s1">&#39;api-token: &lt;API_KEY&gt;&#39;</span> <span class="se">\</span>
-  -d <span class="s1">&#39;[&quot;&lt;EMAIL#1&gt;&quot;, &quot;&lt;EMAIL#2&gt;&quot;]&#39;</span>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.codacy.com/api/v3/organizations/&lt;GIT_PROVIDER&gt;/&lt;ORGANIZATION&gt;/people<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;api-token: &lt;API_KEY&gt;&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;[&quot;&lt;EMAIL#1&gt;&quot;, &quot;&lt;EMAIL#2&gt;&quot;]&#39;</span>
 </code></pre></div>
 <p>Substitute the placeholders with your own values:</p>
 <ul>
@@ -3588,19 +3588,19 @@
 <li>Calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#addpeopletoorganization">addPeopleToOrganization</a> to add a list of email addresses to Codacy.</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
-<span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span> <span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
+<span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span><span class="w"> </span><span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
 <span class="nv">ORGANIZATION</span><span class="o">=</span><span class="s2">&quot;&lt;your organization name&gt;&quot;</span>
 <span class="nv">FILENAME</span><span class="o">=</span><span class="s2">&quot;emails.txt&quot;</span>
 
-<span class="nv">EMAILS</span><span class="o">=</span><span class="sb">`</span>awk -vORS<span class="o">=</span>, <span class="s1">&#39;{if(length($1)&gt;0) printf(&quot;\&quot;%s\&quot;,&quot;, $1)}&#39;</span> <span class="nv">$FILENAME</span> <span class="p">|</span> sed <span class="s1">&#39;s/,$//&#39;</span><span class="sb">`</span>
+<span class="nv">EMAILS</span><span class="o">=</span><span class="sb">`</span>awk<span class="w"> </span>-vORS<span class="o">=</span>,<span class="w"> </span><span class="s1">&#39;{if(length($1)&gt;0) printf(&quot;\&quot;%s\&quot;,&quot;, $1)}&#39;</span><span class="w"> </span><span class="nv">$FILENAME</span><span class="w"> </span><span class="p">|</span><span class="w"> </span>sed<span class="w"> </span><span class="s1">&#39;s/,$//&#39;</span><span class="sb">`</span>
 
-curl -X POST <span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/people&quot;</span> <span class="se">\</span>
-     -H <span class="s1">&#39;Content-Type: application/json&#39;</span> <span class="se">\</span>
-     -H <span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span> <span class="se">\</span>
-     -d <span class="s2">&quot;[</span><span class="nv">$EMAILS</span><span class="s2">]&quot;</span>
+curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/people&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-d<span class="w"> </span><span class="s2">&quot;[</span><span class="nv">$EMAILS</span><span class="s2">]&quot;</span>
 </code></pre></div>
 <p>Expected format of the file containing the email addresses list:</p>
-<div class="highlight"><pre><span></span><code>$ cat emails.txt
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>cat<span class="w"> </span>emails.txt
 email1@codacy.com
 email2@codacy.com
 email3@codacy.com
