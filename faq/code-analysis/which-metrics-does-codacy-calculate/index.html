@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy scans your code for issues and calculates code complexity, duplication, and coverage metrics. Besides this, Codacy also calculates a grade for your repository and files based on all calculated code quality metrics.">
       
       
-        <meta http-equiv="last-modified" content="2022-11-24 10:38:41">
+        <meta http-equiv="last-modified" content="2023-01-04 08:46:57">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/which-metrics-does-codacy-calculate/">
@@ -3758,7 +3758,7 @@
 <p>You must set up your CI/CD pipeline to <a href="../../../coverage-reporter/">upload code coverage data to Codacy</a>. Because of this, the tool that you use to generate the coverage reports is responsible for creating the data that Codacy then uses to calculate code coverage.</p>
 <p>Codacy calculates code coverage as follows:</p>
 <ul>
-<li>The coverage value for each file is the percentage of coverable lines that are covered by tests in the file.</li>
+<li>The coverage value for each file is the percentage of coverable lines that are covered by tests in the file. If a line is covered multiple times, Codacy counts it as a single covered line when calculating coverage.</li>
 <li>A repository is considered to have acceptable coverage if the percentage of coverable lines that are covered by tests in the repository is higher than the threshold <a href="../../../repositories-configure/adjusting-quality-settings/#goals"><strong>Coverage is under</strong></a>.</li>
 </ul>
 <ul>
@@ -3977,7 +3977,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 24, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 4, 2023</span>
     
   </small>
 </div>
