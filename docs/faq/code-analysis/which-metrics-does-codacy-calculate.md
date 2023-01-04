@@ -123,8 +123,7 @@ You must set up your CI/CD pipeline to [upload code coverage data to Codacy](../
 
 Codacy calculates code coverage as follows:
 
--   The coverage value for each file is the percentage of coverable lines that are covered by tests in the file.
--   If a line is covered multiple times, Codacy counts it as a single covered line when calculating coverage.
+-   The coverage value for each file is the percentage of coverable lines that are covered by tests in the file. If a line is covered multiple times, Codacy counts it as a single covered line when calculating coverage.
 -   A repository is considered to have acceptable coverage if the percentage of coverable lines that are covered by tests in the repository is higher than the threshold [**Coverage is under**](../../repositories-configure/adjusting-quality-settings.md#goals).
 <!--code-coverage-metrics-start-->
 -   The **coverage variation** of a commit or pull request is the increase or drop in the percentage of coverable lines that are covered by tests in the repository because of the changes of the commit or pull request.
