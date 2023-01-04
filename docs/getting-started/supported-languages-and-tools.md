@@ -89,7 +89,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>C#</td>
-      <td><a href="https://github.com/SonarSource/sonar-dotnet">Sonar C#</a></td>
+      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
