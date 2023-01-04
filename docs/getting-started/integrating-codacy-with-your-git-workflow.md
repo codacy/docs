@@ -12,7 +12,6 @@ To integrate Codacy with your Git workflow, follow these steps:
 1.  [Activating the Git provider integration](#git-provider-integration)
 1.  [Using code coverage as a quality gate](#coverage-gate)
 1.  [Blocking merging pull requests](#blocking-pull-requests)
-1.  [Next steps](#next-steps)
 
 ## 1. Configuring quality settings {: id="configuring-quality-settings"}
 
@@ -52,6 +51,6 @@ Optionally, to use code coverage or its variation as a quality gate:
 
 Finally, set up your Git provider to block merging pull requests with failing status checks ([GitHub](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule), [GitLab](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds), [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/)).
 
-## 5. Next steps {: id="next-steps"}
+## Next steps {: id="next-steps"}
 
--   TODO
+[//]: # (TODO next steps)
