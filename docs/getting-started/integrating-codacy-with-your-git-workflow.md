@@ -28,7 +28,7 @@ To integrate Codacy with your Git workflow, follow these steps:
 
 1.  When activating the integration, enable the option **Status checks** (GitHub) or **Pull request status** (GitLab and Bitbucket).
 
-    This instructs Codacy to report to your Git provider whether the status checks on a pull requests are passing or failing, based on your quality settings.
+    This instructs Codacy to report to your Git provider whether the status checks on a pull request are passing or failing, based on your quality settings.
 
 ## 3. Using code coverage as a quality gate {: id="coverage-gate"}
 
