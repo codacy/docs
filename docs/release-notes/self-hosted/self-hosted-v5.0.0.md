@@ -64,7 +64,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 ## Bug fixes
 
 -   Fixed an issue that could sometimes cause repository quality settings to be saved only <span class="skip-vale">partially</span>. (CY-5380)
--   Fixed an issue that could cause Sonar Visual Basic to time out independently of how many files are analyzed. (CY-5204)
+-   Fixed an issue that could cause SonarVB to time out independently of how many files are analyzed. (CY-5204)
 -   Improved the visual feedback for the Jira integration status. (CY-5190)
 -   Fixed an issue that prevented the message "Refresh the page to see the results" from being displayed on the commit and pull request pages after a re-analysis was completed. (CY-5187)
 -   Fixed some default regular expressions on [<span class="skip-vale">codacy-checkstyle</span>](https://github.com/codacy/codacy-checkstyle) that could cause the code pattern PackageName to report false positives when configured using the Codacy UI. (CY-5185)
@@ -115,8 +115,8 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **RuboCop 1.23.0 (updated from 1.21.0)**
 -   Scalastyle 1.5.0
 -   **ShellCheck 0.7.2 (updated from 0.7.1)**
--   **Sonar C# 8.30 (updated from 8.25)**
--   Sonar Visual Basic 8.15
+-   **SonarC# 8.30 (updated from 8.25)**
+-   SonarVB 8.15
 -   **Spectral (new)**
 -   SpotBugs 4.1.2
 -   SQLint 0.1.9
