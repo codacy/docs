@@ -96,7 +96,7 @@ The Security Monitor supports checking the languages and frameworks below for an
     </tr>
     <tr>
       <td>C#</td>
-      <td><a href="https://github.com/SonarSource/sonar-dotnet">Sonar C#</a></td>
+      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
     </tr>
     <tr>
       <td>C++</td>
@@ -173,7 +173,7 @@ The Security Monitor supports checking the languages and frameworks below for an
     </tr>
     <tr>
       <td>Visual Basic</td>
-      <td><a href="https://github.com/SonarSource/sonar-dotnet">Sonar Visual Basic</a></td>
+      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a></td>
     </tr>
   </tbody>
 </table>
