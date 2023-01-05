@@ -45,7 +45,6 @@ jscpd
 JSHint
 JSP
 markdownlint
-md
 monorepo
 namespace
 OAuth
@@ -67,7 +66,6 @@ Scalastyle
 SCSSLint
 Serverless
 ShellCheck
-signup
 SonarC#
 SonarVB
 SpotBugs
