@@ -1,2 +1,3 @@
 ---
-exclude_paths: []
+exclude_paths:
+  - ".github/styles/**"
