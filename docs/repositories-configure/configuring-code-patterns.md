@@ -267,13 +267,13 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
-    <td>Sonar C#</td>
+    <td>SonarC#</td>
     <td>C#</td>
     <td><code>SonarLint.xml</code></td>
     <td></td>
   </tr>
   <tr>
-    <td>Sonar VB</td>
+    <td>SonarVB</td>
     <td>Visual Basic</td>
     <td><code>SonarLint.xml</code></td>
     <td></td>
