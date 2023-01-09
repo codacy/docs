@@ -41,7 +41,7 @@ To add members to your organization:
 
     ![Adding members to your organization](images/organization-people-add-modal.png)
 
-1.  Confirm the updated billing details displayed at the bottom of the window and click the button **Add people**. Codacy emails an invitation to newly added members.
+1.  Confirm the updated billing details displayed at the bottom of the window and click the button **Add people**. Codacy emails the newly added members inviting them to log in.
 
 ## Removing people from your organization {: id="removing-people"}
 
