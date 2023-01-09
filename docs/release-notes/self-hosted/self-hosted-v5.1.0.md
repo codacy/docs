@@ -79,8 +79,8 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   RuboCop 1.23.0
 -   Scalastyle 1.5.0
 -   ShellCheck 0.7.2
--   Sonar C# 8.30
--   Sonar Visual Basic 8.15
+-   SonarC# 8.30
+-   SonarVB 8.15
 -   spectral-rulesets 1.2.7
 -   SpotBugs 4.1.2
 -   SQLint 0.1.9
