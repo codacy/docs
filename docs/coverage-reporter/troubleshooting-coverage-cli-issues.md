@@ -11,6 +11,7 @@ The sections below provide instructions or workarounds to overcome common issues
 The Codacy Coverage Reporter automatically detects the SHA-1 hash of the current commit to associate with the coverage data when you're using one of the following CI/CD platforms:
 
 -   <span class="skip-vale">Appveyor</span>
+-   Argo CD
 -   AWS CodeBuild
 -   Azure Pipelines
 -   <span class="skip-vale">Bitrise</span>
