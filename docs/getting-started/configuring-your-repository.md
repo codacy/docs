@@ -4,7 +4,7 @@ description: Configuring your repository
 
 # Configuring your repository
 
-Once you've [added your first repository](codacy-quickstart.md), **it's important that you configure it** for your use case and preferences. An optimal configuration integrates code analysis seamlessly into your development pipeline while avoiding false positives. This encourages your team to adopt and commit to best practices.
+Once you've [added your first repository](codacy-quickstart.md), **it's important that you configure it** to best match your use case and preferences. An optimal configuration integrates code analysis seamlessly into your development pipeline while avoiding false positives. This encourages your team to adopt and commit to best practices.
 
 To configure your repository, follow these steps:
 
