@@ -51,9 +51,8 @@ Click the link **Go to repository** to see the [code quality overview of your re
 
 ![Repository dashboard](../repositories/images/repository-dashboard.png)
 
+**Congratulations, your new repository is ready!** To explore the initial analysis results, [check the **Issues** page](../repositories/issues.md).
+
 ## Next steps
 
-Congratulations, your new repository is ready!
-
--   To explore the initial analysis results, [check the **Issues** page](../repositories/issues.md).
--   The first analysis is based on **default configurations**. We recommend that you [configure your repository](configuring-your-repository.md) to match your preferences and specific scenario.
+The first analysis is based on default tool and pattern configurations. [It's important that you configure your repository](configuring-your-repository.md) for your use case and preferences.
