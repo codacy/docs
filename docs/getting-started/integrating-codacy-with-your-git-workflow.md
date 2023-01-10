@@ -4,7 +4,7 @@ description: Configure Codacy to block merging pull requests that don't meet you
 
 # Integrating Codacy with your Git workflow
 
-Once you've [customized your setup](customizing-your-setup.md) to best match your needs, you can integrate Codacy with your Git workflow to display analysis results and code coverage on your Git provider and block problematic pull requests.
+Once you've [configured your repository](configuring-your-repository.md) to best match your needs, you can integrate Codacy with your Git workflow to display analysis results and code coverage on your Git provider and block problematic pull requests.
 
 To integrate Codacy with your Git workflow, follow these steps:
 

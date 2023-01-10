@@ -54,4 +54,4 @@ Click the link **Go to repository** to see the [code quality overview of your re
 Congratulations, your new repository is ready!
 
 -   To explore the initial analysis results, [check the **Issues** page](../repositories/issues.md).
--   The first analysis is based on **default configurations**. We recommend that you [customize your setup](customizing-your-setup.md) to match your preferences and specific scenario.
+-   The first analysis is based on **default configurations**. We recommend that you [configure your repository](configuring-your-repository.md) to match your preferences and specific scenario.

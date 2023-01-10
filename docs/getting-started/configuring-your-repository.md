@@ -1,8 +1,8 @@
 ---
-description: Customizing your setup
+description: Configuring your repository
 ---
 
-# Customizing your setup
+# Configuring your repository
 
 Once you've [added your repositories](codacy-quickstart.md), you can customize your setup to adapt the analysis tools to your use case, avoid false positives, and integrate code coverage analysis into your quality pipeline.
 
