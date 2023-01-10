@@ -51,7 +51,7 @@ Click the link **Go to repository** to see the [code quality overview of your re
 
 ![Repository dashboard](../repositories/images/repository-dashboard.png)
 
-## What next?
+## Next steps
 
 Congratulations, your new repository is ready!
 
