@@ -4,12 +4,12 @@ description: Configuring your repository
 
 # Configuring your repository
 
-Once you've [added your first repository](codacy-quickstart.md), **it's important that you configure it** to best match your use case and preferences. An optimal configuration integrates code analysis seamlessly into your development pipeline while avoiding false positives. This encourages your team to adopt and commit to best practices.
+Once you've [added your first repository](codacy-quickstart.md), **it's important that you configure it** to best match your use case and preferences. An optimal configuration integrates code analysis seamlessly into your development pipeline while avoiding false positives. This encourages your team to follow best practices.
 
 To configure your repository, follow these steps:
 
 1.  [Ignoring files](#ignoring-files)
-1.  [Configuring tools and code patterns](#configuring-code-patterns)
+1.  [Configuring code patterns](#configuring-code-patterns)
 1.  [Adding coverage reports](#adding-coverage-reports) (optional)
 
 ## 1. Ignoring files {: id="ignoring-files"}
@@ -29,7 +29,9 @@ To configure your repository, follow these steps:
 
 ## 3. Adding coverage reports {: id="adding-coverage-reports"}
 
-[Add coverage reports to Codacy](../coverage-reporter/index.md) to detail how much of your code is covered by tests and unify your quality and coverage pipelines. You can generate coverage reports locally and upload them to Codacy picking from a range of options: CI/CD integration, CLI, Docker, GitHub action, and more.
+[Add coverage reports to Codacy](../coverage-reporter/index.md) to detail how much of your code is covered by tests and unify your quality and coverage pipelines.
+[//]: # (TODO reword)
+You generate coverage reports locally and upload them to Codacy picking from a range of options: CI/CD integration, CLI, Docker, GitHub action, and more.
 
 ![Adding coverage reports to your repository](../coverage-reporter/images/coverage-codacy-ui.png)
 

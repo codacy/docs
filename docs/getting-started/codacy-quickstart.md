@@ -25,7 +25,7 @@ To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.
 
 Sign up with a Git provider such as GitHub, GitLab, or Bitbucket. This links your Codacy user with your Git provider user, making it easier to add repositories to Codacy and invite your teammates.
 
-Codacy will request access to your Git provider during the authorization flow. [Check the permissions that Codacy requires and why](which-permissions-does-codacy-need-from-my-account.md). Codacy will also ask you to fill in a few details about your company so we know a bit more about your use case.
+Codacy will request access to your Git provider during the authorization flow. [Check the permissions that Codacy requires and why](which-permissions-does-codacy-need-from-my-account.md). Codacy will also ask you to fill in a few details about your company, so we know a bit more about your use case.
 
 ## 2. Choose an organization {: id="choose-organization"}
 
@@ -40,7 +40,7 @@ To start adding your repositories, select one of the organizations.
 
 ## 3. Add repositories {: id="add-repositories"}
 
-Next, add the repositories that you wish to analyze. Codacy begins an initial analysis as soon as you add a repository and sets everything up to ensure your next commits on that repository are analyzed.
+Next, add the repositories that you wish to analyze. Codacy begins an initial analysis as soon as you add a repository and sets everything up to ensure your next commits on the repository are analyzed.
 
 !!! note
     You can only add repositories on Codacy if you have the [necessary permissions on your Git provider](../organizations/roles-and-permissions-for-organizations.md).

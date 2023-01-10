@@ -14,10 +14,10 @@ To integrate Codacy with your Git workflow, follow these steps:
 
 ## 1. Configuring quality settings {: id="configuring-quality-settings"}
 
-[Configure the quality settings](../repositories-configure/adjusting-quality-settings.md) of your project to define the gates (minimum acceptable values) and goals for quality metrics such as issues, duplication, complexity, and code coverage. These gates, goals, and metrics are always visible on Codacy's dashboard.
+[Configure the quality settings](../repositories-configure/adjusting-quality-settings.md) of your project to define the gates (minimum acceptable values) and goals for quality metrics such as issues, duplication, complexity, and code coverage.
 
-!!! important
-    If you want to use code coverage as a quality gate, enable **Diff coverage is under** or **Coverage variation is under**. This instructs Codacy to report the coverage analysis results to your Git provider.
+!!! info "Using coverage as a quality gate"
+    To use code coverage as a quality gate, enable **Diff coverage is under** or **Coverage variation is under**. This instructs Codacy to report the coverage analysis results to your Git provider.
 
 !!! tip
     Depending on the initial quality of your repositories and on your current team practices, the default gates may be too strict. Consider initially limiting gates to new critical issues, new security issues, and considerable drops in code coverage.
@@ -26,18 +26,14 @@ To integrate Codacy with your Git workflow, follow these steps:
 
 ## 2. Activating the Git provider integration {: id="git-provider-integration"}
 
-1.  Activate the integration with your Git provider ([GitHub](../repositories-configure/integrations/github-integration.md), [GitLab](../repositories-configure/integrations/gitlab-integration.md), [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md)).
-
-1.  When activating the integration, enable the option **Status checks** (GitHub) or **Pull request status** (GitLab and Bitbucket).
-
-    This instructs Codacy to report to your Git provider whether the status checks on a pull request are passing or failing, based on your quality settings.
+Activate the integration with your Git provider ([GitHub](../repositories-configure/integrations/github-integration.md), [GitLab](../repositories-configure/integrations/gitlab-integration.md), [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md)) and enable the option **Status checks** (GitHub) or **Pull request status** (GitLab and Bitbucket). This instructs Codacy to report to your Git provider whether the status checks on a pull request are passing or failing, based on your quality settings.
 
 ![Enabling your Git provider integration](../repositories-configure/integrations/images/github-integration.png)
 
 ## 3. Blocking merging pull requests {: id="blocking-pull-requests"}
 
 !!! important
-    At this stage we recommend that you:
+    At this stage it's important that you:
 
     -   Validate that Codacy is reporting the intended status on your pull requests
     -   Double check you repository's [tool and code pattern settings](../repositories-configure/configuring-code-patterns.md) and [quality gate settings](../repositories-configure/adjusting-quality-settings.md)
