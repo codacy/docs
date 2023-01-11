@@ -27,11 +27,12 @@ To configure your repository, follow these steps:
 
 ![Configuring the tools and code patterns](../repositories-configure/images/code-patterns.png)
 
-## 3. Adding coverage reports {: id="adding-coverage-reports"}
+## 3. Adding coverage reports (optional) {: id="adding-coverage-reports"}
 
-[Add coverage reports to Codacy](../coverage-reporter/index.md) to detail how much of your code is covered by tests and unify your quality and coverage pipelines.
-[//]: # (TODO reword)
-You generate coverage reports locally and upload them to Codacy picking from a range of options: CI/CD integration, CLI, Docker, GitHub action, and more.
+[Add coverage reports to Codacy](../coverage-reporter/index.md) to detail how much of your code is covered by tests and unify your quality and coverage pipelines. You can generate coverage reports locally using the best tool for your project and upload them to Codacy picking from a range of options: CI/CD integration, CLI, Docker, GitHub action, and more.
+
+!!! important
+    Setting up the coverage pipeline is a prerequisite for Codacy to act as a quality gate and block merging pull requests.
 
 ![Adding coverage reports to your repository](../coverage-reporter/images/coverage-codacy-ui.png)
 

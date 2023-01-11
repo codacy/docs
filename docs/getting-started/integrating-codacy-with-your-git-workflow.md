@@ -16,8 +16,11 @@ To integrate Codacy with your Git workflow, follow these steps:
 
 [Configure the quality settings](../repositories-configure/adjusting-quality-settings.md) of your project to define the gates (minimum acceptable values) and goals for quality metrics such as issues, duplication, complexity, and code coverage.
 
-!!! info "Using coverage as a quality gate"
-    To use code coverage as a quality gate, enable **Diff coverage is under** or **Coverage variation is under**. This instructs Codacy to report the coverage analysis results to your Git provider.
+!!! info "Using code coverage as a quality gate"
+    To use code coverage as a quality gate:
+
+    -   Ensure that code coverage reports are being generated and uploaded to Codacy
+    -   Enable **Diff coverage is under** or **Coverage variation is under** when configuring the quality settings
 
 !!! tip
     Depending on the initial quality of your repositories and on your current team practices, the default gates may be too strict. Consider initially limiting gates to new critical issues, new security issues, and considerable drops in code coverage.
@@ -32,12 +35,15 @@ Activate the integration with your Git provider ([GitHub](../repositories-config
 
 ## 3. Blocking merging pull requests {: id="blocking-pull-requests"}
 
-!!! important
-    At this stage it's important that you:
+Set up your Git provider to enforce Codacy's feedback and block merging pull requests with failing status checks ([GitHub](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule), [GitLab](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds), [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/)).
 
-    -   Validate that Codacy is reporting the intended status on your pull requests
-    -   Double check you repository's [tool and code pattern settings](../repositories-configure/configuring-code-patterns.md) and [quality gate settings](../repositories-configure/adjusting-quality-settings.md)
+## Next steps
 
-    This is important to eliminate any false positives that could inadvertently block the work of your team.
+**Congratulations!**  🎉 You've successfully integrated and set up your first repository.
 
-Finally, set up your Git provider to block merging pull requests with failing status checks ([GitHub](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule), [GitLab](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds), [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/)).
+Before moving on, it's important that you:
+
+-   Validate that Codacy is reporting the intended status on your pull requests
+-   Review your [tool and code pattern settings](../repositories-configure/configuring-code-patterns.md) and [quality gate settings](../repositories-configure/adjusting-quality-settings.md)
+
+This is important to eliminate any false positives that could inadvertently block the work of your team.
