@@ -31,7 +31,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 -   Fixed wrong message when disabling patterns on the Issues page. (CY-3745)
 -   Fixed an issue that caused the configuration value containing the username of the metrics database to be used as the username for <span class="skip-vale">jobsdb</span>. (CY-3697)
 -   Fixed an issue that caused the security dashboard to allow enabling patterns for tools using a configuration file. (CY-3684)
--   Fixed an issue that caused Sonar C# to detect issues related to patterns not enabled in the configuration. (CY-3607)
+-   Fixed an issue that caused SonarC# to detect issues related to patterns not enabled in the configuration. (CY-3607)
 
 ## Tool versions
 
@@ -69,8 +69,8 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **RuboCop 1.11.0 (updated from 1.9.1)**
 -   **Scalastyle 1.5.0 (updated from 1.0.0, adds support for Scala 2.13)**
 -   ShellCheck 0.7.1
--   **Sonar C# 8.13 (updated from 8.15)**
--   Sonar Visual Basic 8.15
+-   **SonarC# 8.13 (updated from 8.15)**
+-   SonarVB 8.15
 -   SpotBugs 4.1.2
 -   SQLint 0.1.9
 -   Staticcheck 2020.1.6
