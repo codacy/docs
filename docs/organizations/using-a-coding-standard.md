@@ -52,7 +52,7 @@ To create a coding standard for your organization:
 
 ## Setting a coding standard as default {: id="set-default"}
 
-New repositories in your organization automatically follow the default coding standard.
+New repositories in your organization automatically follow the default coding standard or Codacy defaults if no default coding standard is set.
 
 To set a coding standard as default:
 
