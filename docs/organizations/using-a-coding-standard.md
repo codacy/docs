@@ -12,7 +12,7 @@ The organization coding standard helps you ensure that Codacy analyzes multiple 
 When you customize the tools or code patterns of a repository that follows the coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.
 
 !!! important
-    The coding standard enables or disables any tools that are using configuration files on the repositories following the coding standard, but these tools will keep using configuration files instead of the code pattern settings of the coding standard.
+    [Tool configuration files](../repositories-configure/configuring-code-patterns.md#using-your-own-tool-configuration-files) override coding standards.
 
 ## Creating a coding standard {: id="creating"}
 
@@ -22,11 +22,11 @@ To create a coding standard for your organization:
 
 1.  Name your coding standard and click **Create standard**.
 
-    Optionally, select a repository that Codacy will use as a baseline to bootstrap the tool and pattern configurations for the new coding standard. This is useful if you already have a repository with code patterns configured that you wish to use as a template for creating the coding standard.
+    Optionally, select a repository for Codacy to use as a baseline when bootstrapping the tool and pattern configurations for the new coding standard. This is useful if you already have a configured repository that you wish to use as a template.
 
     ![Creating a new coding standard](images/coding-standard-create.png)
 
-1.  Select all the programming languages that the new coding standard will cover and click **Next: Tools and patterns**.
+1.  Select the programming languages that the new coding standard should cover and click **Next: Tools and patterns**.
 
     The coding standard will only include configurations for the tools that support at least one of the selected languages.
 
@@ -34,11 +34,11 @@ To create a coding standard for your organization:
 
 1.  Configure the tools and patterns of the coding standard and click **Next: Select and apply to repositories**.
 
-    -   Toggle the tools that Codacy will run when analyzing your code
-    -   For each enabled tool, configure the code patterns that the tool will use
+    -   Toggle the tools to run when analyzing your code
+    -   For each enabled tool, configure the code patterns to use
 
     !!! tip
-        -   You can use the filters to help you find the relevant tools and code patterns. The recommended configurations are manually curated by Codacy or based on the default code patterns of the tools and are marked with the icon ![Recommended icon](images/coding-standard-recommended-icon.png).
+        -   Use the filters to find the relevant tools and code patterns. The recommended configurations are manually curated by Codacy or based on tool defaults and are marked with the icon ![Recommended icon](images/coding-standard-recommended-icon.png).
         -   To toggle multiple code patterns at once, click the checkbox of the first pattern and **Shift+click** the checkbox of the last pattern in a range.
         -   To toggle all the code patterns visible on the list, click the checkbox on the header of the code patterns list. If there are more code patterns to load on the list, you can click the link **Enable/Disable all &lt;N&gt; patterns** to toggle all patterns matching the current filters.
 
@@ -52,7 +52,7 @@ To create a coding standard for your organization:
 
 ## Setting a coding standard as default {: id="set-default"}
 
-New repositories in your organization will automatically follow the default coding standard.
+New repositories in your organization automatically follow the default coding standard.
 
 To set a coding standard as default:
 
@@ -72,7 +72,7 @@ To edit an existing coding standard or change the repositories that follow that 
 
     ![Editing an existing coding standard](images/coding-standard-edit.png)
 
-1.  Make your changes to the current coding standard configurations and click the button **Next** to advance between the following pages:
+1.  Edit the current coding standard configurations and click the button **Next** to advance between the following pages:
 
     -   The programming languages that the coding standard applies to
     -   The tool and code pattern configurations of the coding standard
@@ -85,7 +85,7 @@ To edit an existing coding standard or change the repositories that follow that 
 1.  Click the button **Save and apply standard** on the repository selection page to save your changes to the coding standard.
 
     !!! important
-        If you stopped applying the coding standard to any repository, Codacy will restore the previous code pattern configurations for that repository.
+        If you stop applying the coding standard to any repository, Codacy restores the previous code pattern configurations for that repository.
 
     Codacy will start using the updated coding standard on the next analysis of each selected repository.
 
