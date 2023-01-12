@@ -34,7 +34,7 @@ To create a coding standard for your organization:
 
 1.  Configure the tools and patterns of the coding standard and click **Next: Select and apply to repositories**.
 
-    -   Toggle the tools to run when analyzing your code
+    -   Toggle the tools to run when Codacy analyzes your code
     -   For each enabled tool, configure the code patterns to use
 
     !!! tip
