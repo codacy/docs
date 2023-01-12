@@ -14,7 +14,7 @@ When the integration is enabled, you can also create pull request comments and G
 
 To enable the GitHub integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
 
-![GitHub integration](images/github-integration.png)<!--TODO Update screenshot with final version-->
+![GitHub integration](images/github-integration.png)
 
 If you remove the integration, you can enable it again as follows:
 
