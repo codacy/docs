@@ -11,7 +11,7 @@
         <meta name="description" content="Create a coding standard on your organization to define and apply shared tool and code pattern configurations consistently across your repositories. You can also apply the coding standard to new repositories automatically by defining the coding standard as default.">
       
       
-        <meta http-equiv="last-modified" content="2022-11-09 15:00:04">
+        <meta http-equiv="last-modified" content="2023-01-12 17:13:36">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/using-a-coding-standard/">
@@ -3559,7 +3559,7 @@
 <p>When you customize the tools or code patterns of a repository that follows the coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>The coding standard enables or disables any tools that are using configuration files on the repositories following the coding standard, but these tools will keep using configuration files instead of the code pattern settings of the coding standard.</p>
+<p>The coding standard turns tools with configuration files on and off. Those tool configuration files, however, take precedence over the code patterns defined on the coding standard.</p>
 </div>
 <h2 id="creating">Creating a coding standard<a class="headerlink" href="#creating" title="Permanent link">#</a></h2>
 <p>To create a coding standard for your organization:</p>
@@ -3569,24 +3569,24 @@
 </li>
 <li>
 <p>Name your coding standard and click <strong>Create standard</strong>.</p>
-<p>Optionally, select a repository that Codacy will use as a baseline to bootstrap the tool and pattern configurations for the new coding standard. This is useful if you already have a repository with code patterns configured that you wish to use as a template for creating the coding standard.</p>
+<p>Optionally, select a repository for Codacy to use as a baseline when bootstrapping the tool and pattern configurations for the new coding standard. This is useful if you already have a configured repository that you wish to use as a template.</p>
 <p><img alt="Creating a new coding standard" src="../images/coding-standard-create.png" /></p>
 </li>
 <li>
-<p>Select all the programming languages that the new coding standard will cover and click <strong>Next: Tools and patterns</strong>.</p>
+<p>Select the programming languages that the new coding standard should cover and click <strong>Next: Tools and patterns</strong>.</p>
 <p>The coding standard will only include configurations for the tools that support at least one of the selected languages.</p>
 <p><img alt="Selecting the languages for the coding standard" src="../images/coding-standard-select-languages.png" /></p>
 </li>
 <li>
 <p>Configure the tools and patterns of the coding standard and click <strong>Next: Select and apply to repositories</strong>.</p>
 <ul>
-<li>Toggle the tools that Codacy will run when analyzing your code</li>
-<li>For each enabled tool, configure the code patterns that the tool will use</li>
+<li>Toggle the tools to run when Codacy analyzes your code</li>
+<li>For each enabled tool, configure the code patterns to use</li>
 </ul>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <ul>
-<li>You can use the filters to help you find the relevant tools and code patterns. The recommended configurations are manually curated by Codacy or based on the default code patterns of the tools and are marked with the icon <img alt="Recommended icon" src="../images/coding-standard-recommended-icon.png" />.</li>
+<li>Use the filters to find the relevant tools and code patterns. The recommended configurations are manually curated by Codacy or based on tool defaults and are marked with the icon <img alt="Recommended icon" src="../images/coding-standard-recommended-icon.png" />.</li>
 <li>To toggle multiple code patterns at once, click the checkbox of the first pattern and <strong>Shift+click</strong> the checkbox of the last pattern in a range.</li>
 <li>To toggle all the code patterns visible on the list, click the checkbox on the header of the code patterns list. If there are more code patterns to load on the list, you can click the link <strong>Enable/Disable all &lt;N&gt; patterns</strong> to toggle all patterns matching the current filters.</li>
 </ul>
@@ -3600,7 +3600,7 @@
 </li>
 </ol>
 <h2 id="set-default">Setting a coding standard as default<a class="headerlink" href="#set-default" title="Permanent link">#</a></h2>
-<p>New repositories in your organization will automatically follow the default coding standard.</p>
+<p>New repositories in your organization automatically follow the default coding standard or Codacy defaults if no default coding standard is set.</p>
 <p>To set a coding standard as default:</p>
 <ol>
 <li>
@@ -3622,7 +3622,7 @@
 <p><img alt="Editing an existing coding standard" src="../images/coding-standard-edit.png" /></p>
 </li>
 <li>
-<p>Make your changes to the current coding standard configurations and click the button <strong>Next</strong> to advance between the following pages:</p>
+<p>Edit the current coding standard configurations and click the button <strong>Next</strong> to advance between the following pages:</p>
 <ul>
 <li>The programming languages that the coding standard applies to</li>
 <li>The tool and code pattern configurations of the coding standard</li>
@@ -3635,7 +3635,7 @@
 <p>Click the button <strong>Save and apply standard</strong> on the repository selection page to save your changes to the coding standard.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>If you stopped applying the coding standard to any repository, Codacy will restore the previous code pattern configurations for that repository.</p>
+<p>If you stop applying the coding standard to any repository, Codacy restores the previous code pattern configurations for that repository.</p>
 </div>
 <p>Codacy will start using the updated coding standard on the next analysis of each selected repository.</p>
 </li>
@@ -3807,7 +3807,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 9, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 12, 2023</span>
     
   </small>
 </div>
