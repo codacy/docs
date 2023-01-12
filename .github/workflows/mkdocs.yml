@@ -74,12 +74,12 @@ jobs:
         run: |
           echo "MKDOCS_VERSION=$(mkdocs --version | cut -d " " -f 3)" >> $GITHUB_ENV
           echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-9`" >> $GITHUB_ENV
-          echo "CUSTOM_DOMAIN=docs.pulse.codacy.com" >> $GITHUB_ENV
+          echo "CUSTOM_DOMAIN=docs.codacy.com" >> $GITHUB_ENV
 
       - name: Create robots.txt
         if: github.ref == 'refs/heads/master'
         run: |
-          echo -e "User-agent: *\nSitemap: https://${{ env.CUSTOM_DOMAIN }}/sitemap.xml" > "${GITHUB_WORKSPACE}/docs/robots.txt"
+          echo -e "User-agent: *\nSitemap: https://${{ env.CUSTOM_DOMAIN }}/sitemap.xml" > "./site/robots.txt"
 
       - name: Deploy docs (Latest)
         uses: peaceiris/actions-gh-pages@v3
