@@ -30,7 +30,7 @@ jobs:
             {panel}
             [Github permalink|${{ github.event.issue.html_url }}]
             {panel}
-          fields: '{"customfield_10009": "DOCS-162"}'
+          fields: '{"customfield_10009": "DOCS-162", "labels": ["Quality"]}'
 
       - name: Update title of GitHub issue
         uses: actions/github-script@v6

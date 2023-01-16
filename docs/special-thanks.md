@@ -17,6 +17,7 @@ In addition to in-house built rules, we use open source tools for many of our st
 <tr class="odd">
 <td>
 <ul>
+<li><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></li>
 <li><a href="https://github.com/pmd/pmd">PMD</a></li>
 <li><a href="https://github.com/presidentbeef/brakeman">Brakeman</a></li>
 <li><a href="https://github.com/rubocop/rubocop">RuboCop</a></li>
@@ -27,6 +28,7 @@ In addition to in-house built rules, we use open source tools for many of our st
 </td>
 <td>
 <ul>
+<li><a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a></li>
 <li><a href="https://github.com/phpmd/phpmd">PHPMD</a></li>
 <li><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a></li>
 <li><a href="https://github.com/jshint/jshint">JSHint</a></li>

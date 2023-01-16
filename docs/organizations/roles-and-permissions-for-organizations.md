@@ -298,6 +298,7 @@ To change this, open your organization **Settings**, page **Member privileges**,
 -   [Managing people](managing-people.md)
 -   [Accepting new people to your organization](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization)
 
+<!-- vale off -->
 <style>
 /*Center text in all cells except the first column*/
 td:not(:first-child), th:not(:first-child) {

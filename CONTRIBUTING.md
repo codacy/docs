@@ -75,6 +75,15 @@ Follow these Markdown conventions when editing the documentation:
         1. Item 2.1
     ```
 
+-   Use the following structure to encode information that would fit an [HTML description list](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/dl):
+
+    ```markdown
+    This is the equivalent to a description list:
+    
+    -   **<Description term 1>:** <Description details 1>
+    -   **<Description term 2>:** <Description details 2>
+    ```
+
 -   Use the [Admonitions syntax](https://squidfunk.github.io/mkdocs-material/reference/admonitions/#usage) to include **notes**, **tips**, and **warnings**, or to highlight **important** information. For example:
 
     ```markdown
@@ -136,20 +145,17 @@ A [GitHub workflow](https://github.com/codacy/docs/blob/master/.github/workflows
 
 ## Releasing a new Codacy Self-hosted documentation version
 
-It's necessary to release a new version of the documentation when there is a new **major or minor** version release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the chart and <span class="skip-vale">codacy-coverage-reporter</span> submodule documentation on the Latest version of the documentation and creating a dedicated documentation version for the new release.
+It's necessary to release a new version of the documentation when there is a new **major or minor** version release of the [Codacy Self-hosted chart](https://github.com/codacy/chart). This involves updating the chart submodule documentation on the Latest version of the documentation and creating a dedicated documentation version for the new release.
 
 ### Updating the Latest documentation version
 
-First, update the Latest documentation version with the latest chart and <span class="skip-vale">codacy-coverage-reporter</span> documentation:
+First, update the Latest documentation version with the latest chart documentation:
 
-1.  Create a new branch and pull the latest changes from the `master` branch of the chart and <span class="skip-vale">codacy-coverage-reporter</span> submodules.
+1.  Create a new branch and pull the latest changes from the `master` branch of the chart submodule.
 
     ```bash
     git checkout -b feature/update-submodules
     cd submodules/chart
-    git checkout master
-    git pull
-    cd ../codacy-coverage-reporter
     git checkout master
     git pull
     cd ../..
@@ -157,7 +163,7 @@ First, update the Latest documentation version with the latest chart and <span c
 
 1.  Edit the file [`mkdocs.yml`](mkdocs.yml) and update the value of the variable `extra.version` to the new version of the chart.
 
-1.  Build the documentation and make sure that the changes for the new chart and <span class="skip-vale">codacy-coverage-reporter</span> versions are correct.
+1.  Build the documentation and make sure that the changes for the new chart version are correct.
 
 1.  Open a pull request with the changes and merge the branch into `master`.
 
@@ -185,14 +191,6 @@ After updating the Latest documentation version, you're ready to create a new Co
     cd ../..
     ```
 
-1.  Pull the correct <span class="skip-vale">codacy-coverage-reporter</span> tag for this Codacy Self-hosted version.
-
-    ```bash
-    cd submodules/codacy-coverage-reporter
-    git checkout self-hosted-2.0.0
-    cd ../..
-    ```
-
 1.  Edit the file `mkdocs.yml` and make sure that the value of the variable `extra.version` is set to the new version of the chart.
 
 1.  Delete the release notes from the release branch, since it's only necessary to publish the release notes on the Latest or main version of the documentation:
@@ -201,7 +199,7 @@ After updating the Latest documentation version, you're ready to create a new Co
 
     -   Delete all lines on `mkdocs.yml` that reference the removed files
 
-1.  Build the documentation and make sure that the changes for the new chart and <span class="skip-vale">codacy-coverage-reporter</span> versions are correct.
+1.  Build the documentation and make sure that the changes for the new chart version are correct.
 
 1.  Push the new branch and check that the GitHub workflow deploys the new documentation version under `https://docs.codacy.com/v<MAJOR>.<MINOR>`.
 

@@ -37,3 +37,9 @@
 .version-select-container .select-css option {
   font-weight: normal;
 }
+
+@media screen and (max-width: 719px) {
+  .version-select-container .select-css {
+    max-width: 38vw;
+  }
+}
