@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the GitHub integration to have status checks, annotations, analysis summaries, and suggested fixes from Codacy directly on pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2022-11-25 11:59:50">
+        <meta http-equiv="last-modified" content="2023-01-16 12:18:08">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/github-integration/">
@@ -3576,12 +3576,24 @@
 <p><strong>To block merging pull requests</strong> that aren't up to standards see <a href="../../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/">How do I block merging pull requests using Codacy as a quality gate?</a></p>
 </div>
 <p><img alt="Pull request status check on GitHub" src="../images/github-integration-pr-status.png" /></p>
-<h3 id="annotations">Annotations<a class="headerlink" href="#annotations" title="Permanent link">#</a></h3>
+<h3 id="issue-annotations">Issue annotations<a class="headerlink" href="#issue-annotations" title="Permanent link">#</a></h3>
 <p>Adds annotations on the lines of the pull request where Codacy finds new issues. Codacy maps the severity of the issues reported by the tools to the severity levels of the annotations. To enable this option, you must enable <strong>Status checks</strong> first.</p>
-<p><img alt="Pull request annotation on GitHub" src="../images/github-integration-pr-annotation.png" /></p>
-<h3 id="summary">Summary<a class="headerlink" href="#summary" title="Permanent link">#</a></h3>
+<p><img alt="Issue annotation on GitHub" src="../images/github-integration-pr-annotation.png" /></p>
+<h3 id="issue-summaries">Issue summaries<a class="headerlink" href="#issue-summaries" title="Permanent link">#</a></h3>
 <p>Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable <strong>Status checks</strong> first.</p>
-<p><img alt="Pull request summary on GitHub" src="../images/github-integration-pr-summary.png" /></p>
+<p><img alt="Issue summary on GitHub" src="../images/github-integration-pr-summary.png" /></p>
+<h3 id="coverage-summaries">Coverage summaries<a class="headerlink" href="#coverage-summaries" title="Permanent link">#</a></h3>
+<p>Adds a pull request comment showing an overall view of the coverage metrics for the pull request, including details about the data that Codacy used to calculate the coverage variation and diff coverage metrics.</p>
+<p>When there are new coverage results, Codacy updates the last coverage summary comment if it's included in the last 5 comments of the pull request. Otherwise, Codacy creates a new comment.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>To get coverage summaries</strong> you must also <a href="../../../coverage-reporter/">add coverage to your repository</a>.</p>
+</div>
+<p><img alt="Coverage summary on GitHub" src="../images/github-integration-coverage-summary.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This feature is only supported on GitHub Cloud.</p>
+</div>
 <h3 id="suggest-fixes">Suggested fixes<a class="headerlink" href="#suggest-fixes" title="Permanent link">#</a></h3>
 <div class="admonition info">
 <p class="admonition-title">This feature is <a href="https://www.codacy.com/pricing">only available on paid plans</a></p>
@@ -3757,7 +3769,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 25, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2023</span>
     
   </small>
 </div>
