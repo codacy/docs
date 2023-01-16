@@ -11,7 +11,7 @@
         <meta name="description" content="Before installing Codacy Self-hosted you must ensure that you have your infrastructure correctly provisioned and configured.">
       
       
-        <meta http-equiv="last-modified" content="2022-08-03 17:59:11">
+        <meta http-equiv="last-modified" content="2023-01-16 13:43:03">
       
       
         <link rel="canonical" href="https://docs.codacy.com/v9.0/chart/requirements/">
@@ -2388,6 +2388,10 @@
 </tr>
 </tbody>
 </table>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Please note that due to the way Codacy works, a small number of pods will run in privileged mode with the <code>CAP_SYS_ADMIN</code> capability. This is required to allow the Worker pods to serve NFS shares to be mounted by the pods running the static code analysis tools.</p>
+</div>
 <h2 id="postgresql-server-setup">PostgreSQL server setup<a class="headerlink" href="#postgresql-server-setup" title="Permanent link">#</a></h2>
 <p>Codacy requires a database server to persist data that must satisfy the following requirements:</p>
 <ul>
@@ -2609,7 +2613,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 3, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 16, 2023</span>
     
   </small>
 </div>
