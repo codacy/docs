@@ -63,7 +63,7 @@ When there are new coverage results, Codacy updates the last coverage summary co
 !!! important
     **To get coverage summaries** you must also [add coverage to your repository](../../coverage-reporter/index.md).
 
-![Coverage summary on GitHub](images/github-integration-coverage-summary.png)<!--TODO Update screenshot with final version-->
+![Coverage summary on GitHub](images/github-integration-coverage-summary.png)
 
 !!! note
     This feature is only supported on GitHub Cloud.
