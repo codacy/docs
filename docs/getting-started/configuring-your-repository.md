@@ -20,6 +20,10 @@ To configure your repository, follow these steps:
 
 ## 2. Configuring code patterns {: id="configuring-code-patterns"}
 
+[//]: # (TODO polish intro)
+
+Codacy uses multiple tools to analyze the source code of a program without executing it, looking for code patterns. Each of these patterns matches one or more well-known issues, from simple typos to critical security risks. This type of code inspection is called static analysis.
+
 [Configure code patterns](../repositories-configure/configuring-code-patterns.md) to adapt the analysis tools to your use case, leverage existing configuration files, and filter flagged issues.
 
 !!! tip
