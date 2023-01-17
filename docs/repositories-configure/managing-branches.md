@@ -1,7 +1,7 @@
 # Managing branches
 
 {% if not extra.self_hosted %}
-Just like on your Git provider, every repository on Codacy has a default branch. Codacy always analyzes the default branch and loads its data first on dashboards. When you add a repository, the default branch on Codacy matches the default branch on your Git provider (typically `master` or `main`) and is the only one being analyzed.
+Codacy automatically analyzes the default branch of your repository (typically `master` or `main` as configured on your Git provider) and loads its data first on dashboards. Codacy also supports analyzing multiple branches.
 
 To change the default branch of your repository or start analyzing other branches:
 
