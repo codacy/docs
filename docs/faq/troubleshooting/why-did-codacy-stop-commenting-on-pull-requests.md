@@ -4,7 +4,7 @@
 
 Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the GitLab or Bitbucket integration no longer has permissions on the repository or that the SSH key is no longer valid.
 
-To fix this issue and also avoid future disruptions, Codacy recommends that you re-enable the GitLab or Bitbucket integration on Codacy using a dedicated service account on your Git provider:
+To fix this issue and avoid future disruptions, re-enable the GitLab or Bitbucket integration on Codacy using a dedicated service account on your Git provider:
 
 1.  Create a service account on your Git provider exclusively dedicated to integrating Codacy with your repositories.
 
