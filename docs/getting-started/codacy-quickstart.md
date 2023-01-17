@@ -49,6 +49,7 @@ Click the link **Go to repository** to see the [code quality overview of your re
 
 ![Repository dashboard](../repositories/images/repository-dashboard.png)
 
+<!--TODO Edit this part-->
 ## 4. Tweak your repository settings {: id="tweak-settings"}
 
  Check the static analysis results on the **Issues** page to [explore the initial analysis results](../repositories/issues.md).
