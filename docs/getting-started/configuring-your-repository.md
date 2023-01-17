@@ -1,23 +1,35 @@
 # Configuring your repository
 
-<!--TODO Add the intro-->
-
-## 1. Reviewing and adjusting the Codacy analysis settings {: id="adjusting-analysis-settings"}
+<!--TODO
+    - Edit the intro, merging the available info
+    - Don't forget to mention coverage as well
+-->
+Once you've [added your first repository](codacy-quickstart.md), it's important that you configure the analysis tools to match the use cases of your team and avoid any distracting false positives. In particular, you should configure any coding conventions and best practices that your team may already be following or that you want to enforce.
 
 We recommend that you spend some time reviewing the Codacy analysis settings to focus on the tools and code patterns that bring more value to your team. Importantly, this eliminates the risk of having false positives block the work of your team once you start using Codacy as a quality gate.
 
-1.  [Ignore any files and directories](../../repositories-configure/ignoring-files.md) that aren't relevant for the Codacy analysis, such as generated code or any third-party libraries included in your repositories.
+To configure your repository, follow these steps:
 
-    ![Ignoring files](../../repositories-configure/images/ignored-files.png)
+1.  [Ignoring files](#ignoring-files)
+1.  [Configuring code patterns](#configuring-code-patterns)
+1.  [Adding coverage reports](#adding-coverage) (optional)
 
-1.  [Configure the tools and code patterns](../../repositories-configure/configuring-code-patterns.md) that Codacy uses to analyze your repository.
+## 1. Ignoring files {: id="ignoring-files"}
 
-    !!! tip
-        To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, [use an organization coding standard](../../organizations/using-a-coding-standard.md) instead.
+[Ignore any files and directories](../../repositories-configure/ignoring-files.md) that aren't relevant for the Codacy analysis, such as generated code or any third-party libraries included in your repositories.
 
-    ![Configuring the tools and code patterns](../../repositories-configure/images/code-patterns.png)
+![Ignoring files](../../repositories-configure/images/ignored-files.png)
 
-## 2. Adding coverage to your repository (optional) {: id="adding-coverage"}
+## 2. Configuring code patterns {: id="configuring-code-patterns"}
+
+[Configure the tools and code patterns](../../repositories-configure/configuring-code-patterns.md) that Codacy uses to analyze your repository.
+
+!!! tip
+    To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, [use an organization coding standard](../../organizations/using-a-coding-standard.md) instead.
+
+![Configuring the tools and code patterns](../../repositories-configure/images/code-patterns.png)
+
+## 3. Adding coverage to your repository (optional) {: id="adding-coverage"}
 
 If you want to use code coverage to block merging pull requests that don't meet your quality standards, make sure that you [add coverage to your repository](../../coverage-reporter/index.md).
 
