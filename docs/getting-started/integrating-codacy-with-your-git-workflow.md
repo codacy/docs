@@ -1,12 +1,19 @@
 # Integrating Codacy with your Git workflow
 
-<!--TODO Add the intro-->
+<!--TODO Edit the intro, merging the available info-->
+Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of delaying or blocking the development progress.
+
+Set up your repository so that Codacy reports the results of the analysis directly on your pull requests as status checks.
+
+To integrate Codacy with your Git workflow, follow these steps:
+
+1.  [Configuring the quality gate rules](#configuring-gate)
+1.  [Activating the Git provider integration](#git-provider-integration)
+1.  [Blocking merging pull requests](#blocking-pull-requests)
 
 ## 1. Configuring the quality gate rules {: id="configuring-gate"}
 
 [Review and adjust the quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository to decide which pull requests should fail the Codacy quality gate.
-
-Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of delaying or blocking the development progress.
 
 !!! tip
     The default values of the quality gate rules are designed to help maintain the current code quality of your repository. In particular, the default value for the coverage rule might be demanding.
@@ -24,8 +31,6 @@ Depending on factors such as the current code quality of your repository and the
 
 ## 2. Enabling the Codacy pull request status checks {: id="enabling-status-checks"}
 
-Set up your repository so that Codacy reports the results of the analysis directly on your pull requests as status checks:
-
 To do this, follow the instructions for [GitHub](../../repositories-configure/integrations/github-integration.md#enabling), [GitLab](../../repositories-configure/integrations/gitlab-integration.md#enabling), or [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#enabling) depending on your Git provider, and make sure that you:
 
 1.  Enable the Git provider integration
@@ -35,6 +40,7 @@ To do this, follow the instructions for [GitHub](../../repositories-configure/in
 
 ## 3. Configuring your Git provider to block merging pull requests {: id="configuring-git-provider"}
 
+<!--TODO Add discussion about when it's time for customers to actually block merging pull requests-->
 !!! important
     At this stage we recommend that you:
 
