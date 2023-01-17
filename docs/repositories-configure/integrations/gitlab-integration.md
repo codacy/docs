@@ -54,4 +54,4 @@ Shows an overall view of the changes in the merge request, including new issues 
 
 ## See also
 
--   [How do I block merging pull requests using Codacy as a quality gate?](../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
+-   [Integrating Codacy with your Git workflow](../../getting-started/integrating-codacy-with-your-git-workflow.md)
