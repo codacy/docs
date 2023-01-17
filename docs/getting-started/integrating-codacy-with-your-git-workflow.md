@@ -1,9 +1,16 @@
 # Integrating Codacy with your Git workflow
 
-<!--TODO Edit the intro, merging the available info-->
+<!--TODO Edit the intro, merging the available info
 Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of delaying or blocking the development progress.
 
 Set up your repository so that Codacy reports the results of the analysis directly on your pull requests as status checks.
+
+You can block merging pull requests until they pass the Codacy quality gate. This ensures the quality of the changes to your codebase, such as to prevent introducing security issues or adding code that isn't covered by tests.
+
+To block merging pull requests that don't meet the quality standards of your team you must complete these main steps:
+
+Configure Codacy to block merging pull requests that don't meet your quality standards.
+-->
 
 To integrate Codacy with your Git workflow, follow these steps:
 
