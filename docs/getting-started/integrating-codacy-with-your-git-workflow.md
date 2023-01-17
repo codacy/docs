@@ -16,8 +16,8 @@ To integrate Codacy with your Git workflow, follow these steps:
 
 [Configure the quality settings](../repositories-configure/adjusting-quality-settings.md) of your project to define the gates (minimum acceptable values) and goals for quality metrics such as issues, duplication, complexity, and code coverage.
 
-!!! info "Using code coverage as a quality gate"
-    To use code coverage as a quality gate:
+!!! info
+    **If you want to use code coverage as a quality gate:**
 
     -   Ensure that code coverage reports are being generated and uploaded to Codacy
     -   Enable **Diff coverage is under** or **Coverage variation is under** when configuring the quality settings
