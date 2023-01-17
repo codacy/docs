@@ -1,5 +1,5 @@
 ---
-description: Configure Codacy to block merging pull requests that don't meet your quality standards.
+description: Configure Codacy to display analysis and coverage results on your Git provider and block merging pull requests that don't meet your quality standards.
 ---
 
 # Integrating Codacy with your Git workflow

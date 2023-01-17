@@ -1,5 +1,5 @@
 ---
-description: Configuring your repository
+description: Configure the analysis tools used by Codacy to match the use cases of your team and avoid any distracting false positives.
 ---
 
 # Configuring your repository
