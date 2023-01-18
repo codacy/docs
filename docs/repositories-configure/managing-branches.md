@@ -36,9 +36,7 @@ Codacy manages pull request branches and inactive branches as follows:
 
 -   **Pull request branches**
 
-    Codacy automatically analyzes branches corresponding to new pull requests, **as long as the target branches of the pull requests are enabled**.
-
-    Codacy stops analyzing these branches when the pull requests are merged or closed.
+    Codacy automatically analyzes the source and target branches for new pull requests. If the branches were disabled before the pull requests were created, Codacy stops analyzing those branches when the pull requests are merged or closed.
 
 -   **Inactive branches**
 
