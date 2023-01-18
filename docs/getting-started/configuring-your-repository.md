@@ -1,13 +1,14 @@
 # Configuring your repository
 
 <!--TODO
-    - Edit the intro, merging the available info
-    - Don't forget to mention coverage as well
-
-Once you've [added your first repository](codacy-quickstart.md), it's important that you configure the analysis tools to match the use cases of your team and avoid any distracting false positives. In particular, you should configure any coding conventions and best practices that your team may already be following or that you want to enforce.
+    - Review the intro and consider integrating the remaining info gathered from previous versions
 
 We recommend that you spend some time reviewing the Codacy analysis settings to focus on the tools and code patterns that bring more value to your team. Importantly, this eliminates the risk of having false positives block the work of your team once you start using Codacy as a quality gate.
 -->
+
+Once you've [added your first repository](codacy-quickstart.md), it's important that you configure the analysis tools to match the use cases of your team and avoid time-consuming false positives. In particular, you should configure any coding conventions and best practices that your team may already be following or that you want to enforce.
+
+You can optionally add coverage reports to detail how much of your code is covered by tests and unify your quality and coverage pipelines. You can generate coverage reports and upload them to Codacy using a range of options, such as CI/CD integration, CLI, Docker, GitHub action, and more.
 
 To configure your repository, follow these steps:
 
