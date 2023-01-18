@@ -1,11 +1,5 @@
 # Integrating Codacy with your Git workflow
 
-<!--TODO
-    - Review the intro and consider integrating the remaining info gathered from previous versions
-
-Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of delaying or blocking the development progress.
--->
-
 Once you've [configured your repository](configuring-your-repository.md) to best match your use case, integrate Codacy with your Git workflow to display analysis results and code coverage as status checks on your pull requests.
 
 In particular, you can configure quality gates to block merging pull requests that don't meet the quality standards of your team. This ensures the quality of the changes to your codebase, preventing the introduction of security issues and untested code.
@@ -21,9 +15,9 @@ To integrate Codacy with your Git workflow, follow these steps:
 [Review and adjust the quality settings](../repositories-configure/adjusting-quality-settings.md) of your repository to decide which pull requests should fail the Codacy quality gate.
 
 !!! tip
-    The default values of the quality gate rules are designed to help maintain the current code quality of your repository. In particular, the default value for the coverage rule might be demanding.
+    The default values of the quality gate rules are designed to help maintain the current code quality of your repository. In particular, the default value for the coverage rule might be demanding. Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of delaying or blocking the development progress.
 
-    Because of this, Codacy generally recommends that on a first stage you configure rules that focus on stopping new critical issues from entering your code base, such as:
+    Codacy generally recommends that on a first stage you configure rules that focus on stopping new critical issues from entering your code base, such as:
 
     -   High severity issues
     -   Security issues
