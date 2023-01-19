@@ -36,7 +36,7 @@ Codacy manages pull request branches and inactive branches as follows:
 
 -   **Pull request branches**
 
-    Codacy automatically analyzes branches corresponding to new pull requests and also enables the target branches of the pull requests if they're disabled.
+    Codacy automatically analyzes branches corresponding to new pull requests and also enables the target branches if they're disabled.
 
 -   **Inactive branches**
 
