@@ -1,3 +1,7 @@
+---
+description: Configure the Codacy analysis tools to match the coding conventions and best practices that your team may already be following or that you want to promote.
+---
+
 # Configuring your repository
 
 Once you've [added your first repository](codacy-quickstart.md), it's important that you configure the analysis tools to match the use cases of your team, such as configuring any coding conventions and best practices that your team may already be following or that you want to promote. It's also critical to review the configurations to avoid reporting false positives or any other issues that don't bring value to your team, which can introduce unwanted delays to the development process.
