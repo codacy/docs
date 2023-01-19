@@ -56,4 +56,5 @@ Finally, follow the instructions from your Git provider to block merging pull re
 
 ## Next steps
 
+<!--TODO review the final section and consider adding links to useful next steps-->
 **Congratulations!**  🎉 You've successfully integrated and set up your first repository.
