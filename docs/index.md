@@ -46,6 +46,7 @@ description: Documentation homepage for the Codacy Quality automated code review
       <div>Invite your team members to join Codacy to analyze their commits on private repositories.</div>
     </div>
   </a>
+  <!--TODO Recover "Adding coverage reports" card-->
   <a class="topic-card" href="getting-started/integrating-codacy-with-your-git-workflow/">
     <div class="tc-icon">
       <img alt="Using Codacy as a quality gate" src="/assets/images/icon-checklist.svg">
