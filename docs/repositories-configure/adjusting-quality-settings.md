@@ -15,10 +15,7 @@ These settings configure when Codacy reports pull requests and commits as not up
 Depending on the result of applying the quality gate rules, Codacy updates the color of the metrics on the [pull request or commit quality overview](../repositories/pull-requests.md#quality-overview) and reports the corresponding pull request status on your Git provider, if enabled.
 
 !!! note
-    <!--TODO Substitute this with single link to page "Integrating Codacy with your Git workflow"
-    **To enable pull request status** directly on your Git provider, see the instructions for [GitHub](../repositories-configure/integrations/github-integration.md#configuring), [GitLab](../repositories-configure/integrations/gitlab-integration.md#configuring), or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#configuring), depending on your Git provider. For Codacy to report the coverage status on your pull requests you must also turn on the rule **Diff coverage is under** or **Coverage variation is under**.
-
-    **If you want to block merging pull requests** that aren't up to standards see [Integrating Codacy with your Git workflow](../getting-started/integrating-codacy-with-your-git-workflow.md)-->
+    [Integrate Codacy with your Git workflow](../getting-started/integrating-codacy-with-your-git-workflow.md) to report the pull request status to your Git provider and optionally block merging pull requests.
 
 The following screenshot displays the default configuration values:
 

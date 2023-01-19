@@ -54,7 +54,6 @@ Finally, follow the instructions from your Git provider to block merging pull re
 -   **GitLab:** [Only allow merge requests to be merged if the pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds)
 -   **Bitbucket:** [configure Bitbucket to prevent a merge with unresolved merge checks](https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/)
 
-## Next steps
+## You're all set! 🎉
 
-<!--TODO review the final section and consider adding links to useful next steps-->
-**Congratulations!**  🎉 You've successfully integrated and set up your first repository.
+**Congratulations!** You've successfully integrated and set up your first repository.

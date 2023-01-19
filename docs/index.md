@@ -46,14 +46,13 @@ description: Documentation homepage for the Codacy Quality automated code review
       <div>Invite your team members to join Codacy to analyze their commits on private repositories.</div>
     </div>
   </a>
-  <!--TODO Recover "Adding coverage reports" card-->
-  <a class="topic-card" href="getting-started/integrating-codacy-with-your-git-workflow/">
+  <a class="topic-card" href="coverage-reporter/">
     <div class="tc-icon">
-      <img alt="Using Codacy as a quality gate" src="/assets/images/icon-checklist.svg">
+      <img alt="Adding coverage to your repository" src="/assets/images/icon-checklist.svg">
     </div>
     <div class="tc-content">
-      <div>Using Codacy as a quality gate</div>
-      <div>Configure Codacy to block merging pull requests that don't meet your quality standards.</div>
+      <div>Adding coverage to your repository</div>
+      <div>Set up your repositories to show code coverage reports directly on Codacy.</div>
     </div>
   </a>
   <a class="topic-card" href="codacy-api/using-the-codacy-api/">
