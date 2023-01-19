@@ -16,6 +16,9 @@ When you customize the tools or code patterns of a repository that follows a cod
 
 ## Creating a coding standard {: id="creating"}
 
+!!! note
+    Codacy currently supports up to 10 coding standards per organization.
+
 To create a coding standard for your organization:
 
 1.  Open your organization **Coding standards** page, tab **Coding standards**.
