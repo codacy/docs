@@ -25,7 +25,7 @@ To create a coding standard for your organization:
 
 1.  Click the button **Create new standard** at the top right-hand corner of the page. This opens a window with the coding standard creation form.
 
-1.  Name your coding standard and click **Create standard**.
+1.  Enter a unique name and click **Create standard**.
 
     Optionally, select a repository for Codacy to use as a baseline when bootstrapping the tool and pattern configurations for the new coding standard. This is useful if you already have a configured repository that you wish to use as a template.
 
