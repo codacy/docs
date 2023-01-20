@@ -34,13 +34,9 @@ Depending on the options that you enable, Codacy will automatically update pull 
 
 ### Pull Request Status
 
-Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository.
+Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository. You can then optionally [block merging pull requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
 
-{%
-    include-markdown "../../assets/includes/status-checks-important.md"
-    start="<!--coverage-status-start-->"
-    end="<!--coverage-status-end-->"
-%}
+{% include-markdown "../../assets/includes/status-checks-important.md" %}
 
 ![Pull request status on Bitbucket](images/bitbucket-integration-pr-status.png)
 
