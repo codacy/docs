@@ -12,7 +12,7 @@ To integrate Codacy with your Git workflow, follow these steps:
 
 1.  [Configuring the quality gate rules](#configuring-gate)
 1.  [Activating the Git provider integration](#git-provider-integration)
-1.  [Blocking merging pull requests](#blocking-pull-requests)
+1.  [Blocking merging pull requests](#blocking-pull-requests) (optional)
 
 ## 1. Configuring the quality gate rules {: id="configuring-gate"}
 
@@ -41,18 +41,16 @@ Follow the instructions for [GitHub](../repositories-configure/integrations/gith
 
 ![Enabling your Git provider integration](../repositories-configure/integrations/images/github-integration.png)
 
-## 3. Blocking merging pull requests {: id="blocking-pull-requests"}
+## 3. Blocking merging pull requests (optional) {: id="blocking-pull-requests"}
 
-<!--TODO Add discussion about when it's time for customers to actually block merging pull requests-->
-!!! important
-    At this stage we recommend that you:
+Once you've tested out Codacy for a while and you're happy with the level of feedback provided, you can decide to enforce the quality gates and use Codacy to block merging pull requests on your Git provider. This is the best way to protect your code from unwelcome changes, but will also be an integral part of your development pipeline. It's therefore important that before activating this feature, you:
 
-    -   Validate that Codacy is reporting the intended status on your pull requests
-    -   Double check you repository's [tool and code pattern settings](../repositories-configure/configuring-code-patterns.md) and [quality gate settings](../repositories-configure/adjusting-quality-settings.md)
+-   Validate that Codacy is reporting the intended status on your pull requests
+-   Double check you repository's [tool and code pattern settings](../repositories-configure/configuring-code-patterns.md) and [quality gate settings](../repositories-configure/adjusting-quality-settings.md)
 
-    This is important to eliminate any false positives that could inadvertently block the work of your team.
+This is important to eliminate any false positives that could inadvertently block the work of your team.
 
-Finally, follow the instructions from your Git provider to block merging pull requests if they don't pass the Codacy status check:
+Follow the instructions from your Git provider to block merging pull requests if they don't pass the Codacy status check:
 
 -   **GitHub:** [Set Codacy as a required status check](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
 -   **GitLab:** [Only allow merge requests to be merged if the pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds)
