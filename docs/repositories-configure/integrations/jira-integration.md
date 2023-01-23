@@ -23,8 +23,8 @@ To enable the Jira integration:
     -   **Email:** Email address of the user account that Codacy will use to create new issues in Jira.
     -   **API token:** [Jira API token](https://support.atlassian.com/atlassian-account/docs/manage-api-tokens-for-your-atlassian-account/#Create-an-API-token) for the user account that Codacy will use to create new issues in Jira. The Jira integration only supports HTTP basic authentication.
 
-    !!! important
-        We recommend that you use a dedicated service account for integrating Codacy with Jira. Jira issues created by Codacy will appear as being reported by this user account.
+    !!! tip
+        Use a dedicated service account to integrate Codacy with Jira. Jira issues created by Codacy will appear as being reported by this account.
 
 1.  Click **Save** and make sure that Codacy can successfully establish a connection with Jira.
 

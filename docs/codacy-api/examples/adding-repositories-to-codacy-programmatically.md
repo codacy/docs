@@ -50,7 +50,7 @@ We provide an example Bash script that adds all repositories in a GitHub Cloud o
     | 11 to 100          | Considerable   |
     | More than 100      | Extreme        |
 
-    To avoid these delays, we recommend that you add repositories in small batches or that you space out adding new repositories in time.
+    To avoid these delays, add repositories in small batches or space out adding new repositories over time.
 
 The example script:
 

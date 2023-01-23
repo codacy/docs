@@ -1,5 +1,5 @@
 ---
-description: Enable the GitHub integration to have status checks, annotations, analysis summaries, and suggested fixes from Codacy directly on pull requests.
+description: Enable the GitHub integration to have status checks, annotations, issue and coverage summaries, and suggested fixes from Codacy directly on pull requests.
 ---
 
 # GitHub integration

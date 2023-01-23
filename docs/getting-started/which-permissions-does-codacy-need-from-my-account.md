@@ -193,7 +193,7 @@ To revoke the access from Codacy to one or more of the OAuth providers:
 
     ![Revoking access to an integration](images/revoke-integration.png)
 
-1.  To ensure that the integration is removed not only on Codacy but also on the integration side, we recommend that you follow the instructions on how to revoke the Codacy OAuth application on your provider:
+1.  To ensure that the integration is removed not only on Codacy but also on the integration side, it's important that you revoke the Codacy OAuth application access on your provider:
 
     -   [GitHub Cloud](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations)
     -   [GitLab Cloud](https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications)
