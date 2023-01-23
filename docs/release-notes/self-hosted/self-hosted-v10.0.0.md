@@ -62,6 +62,7 @@ To upgrade PostgreSQL:
 
 ## Bug fixes
 
+-   Fixed an issue that caused Codacy to display the coverage value on the wrong file in specific edge cases. (COV-25)
 -   Now, Codacy asks for confirmation when you change a code pattern parameter on a repository that follows a coding standard. (PLUTO-149)
 -   Fixed an issue that could cause the commit details page to display an empty **Diff** tab. (IO-129)
 
