@@ -1,5 +1,6 @@
 aligncheck
 allowlist
+autovacuum
 Ameba
 Bandit
 Bitbucket
@@ -77,5 +78,6 @@ Tailor
 tooltip
 TSLint
 TSQLLint
+vacuumdb
 Visualforce
 Xcode

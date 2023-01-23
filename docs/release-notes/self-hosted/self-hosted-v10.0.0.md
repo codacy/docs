@@ -33,7 +33,7 @@ To upgrade PostgreSQL:
 
 1.  Follow the instructions on [how to upgrade a PostgreSQL cluster](https://www.postgresql.org/docs/11/upgrading.html).
 
-1.  After the upgrade, clean the Codacy databases with [vacuumdb](https://www.postgresql.org/docs/11/app-vacuumdb.html) to prevent the <span class="skip-vale">autovacuum</a> feature from momentarily affecting the performance of the databases at a later time.
+1.  After the upgrade, clean the Codacy databases with [vacuumdb](https://www.postgresql.org/docs/11/app-vacuumdb.html) to prevent the autovacuum feature from momentarily affecting the performance of the databases at a later time.
 
 **If you're using GitHub Enterprise Server** this Codacy Self-hosted version requires [GitHub Enterprise Server version 3.6.2 or later](https://docs.codacy.com/v10.0/faq/general/which-version-control-systems-does-codacy-support/).
 
