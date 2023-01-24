@@ -70,6 +70,9 @@ To set a coding standard as default:
 [//]: # (TODO this may include a confirmation step)
 1.  Toggle **Make default** on the relevant coding standard card.
 
+    !!! note
+        Only one coding standard at a time can be the default coding standard.
+
 [//]: # (TODO new screenshot)
     ![Setting a coding standard as the default](images/coding-standard-set-default.png)
 
