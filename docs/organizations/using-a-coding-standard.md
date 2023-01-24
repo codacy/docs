@@ -90,7 +90,6 @@ To edit an existing coding standard or change the repositories that follow that 
     -   The tool and code pattern configurations of the coding standard
     -   The repositories that follow the coding standard
 
-[//]: # (TODO we may remove this detail, confirm)
     You can also rename the coding standard using the input at the bottom of the first page of the wizard:
 
     ![Renaming a coding standard](images/coding-standard-rename.png)
