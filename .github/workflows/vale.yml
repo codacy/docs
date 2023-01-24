@@ -13,7 +13,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: false
 
-      - name: Vale
+      - name: Vale action
         uses: errata-ai/vale-action@v2.0.1
         with:
           filter_mode: added
