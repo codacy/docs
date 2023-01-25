@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to obtain code quality metrics for files in a repository programmatically using the Codacy API endpoint listFiles.">
       
       
-        <meta http-equiv="last-modified" content="2022-07-13 18:22:28">
+        <meta http-equiv="last-modified" content="2023-01-25 15:19:27">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/obtaining-code-quality-metrics-for-files/">
@@ -3537,14 +3537,14 @@
                 
                 
                 <h1 id="obtaining-code-quality-metrics-for-files">Obtaining code quality metrics for files<a class="headerlink" href="#obtaining-code-quality-metrics-for-files" title="Permanent link">#</a></h1>
-<p>To obtain the code quality information for your files in a flexible way, use the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#listfiles">listFiles</a>.</p>
+<p>To obtain the code quality information for your files in a flexible way, use the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#listfiles"><span class="skip-vale">listFiles</span></a>.</p>
 <p>For example, if you're managing your source code using a monorepo strategy you may want to generate separate code quality reports for the subset of files that belong to each component or project in your repository.</p>
 <h2 id="example-obtaining-code-quality-metrics-for-a-subdirectory-of-your-repository">Example: Obtaining code quality metrics for a subdirectory of your repository<a class="headerlink" href="#example-obtaining-code-quality-metrics-for-a-subdirectory-of-your-repository" title="Permanent link">#</a></h2>
 <p>This example exports the grade, total issues, complexity, coverage, and duplication in CSV format for all files in the directory <code>src/router</code> of the GitHub repository <code>codacy/website</code>.</p>
 <p>The example script:</p>
 <ol>
 <li>Defines the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API.</li>
-<li>Calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#listfiles">listFiles</a> to retrieve the code quality metrics, filtering the results by files that include <code>src/router/</code> in the path.</li>
+<li>Calls the endpoint <a href="https://app.codacy.com/api/api-docs#listfiles"><span class="skip-vale">listFiles</span></a> to retrieve the code quality metrics, filtering the results by files that include <code>src/router/</code> in the path.</li>
 <li>Uses <a href="https://github.com/stedolan/jq">jq</a> to select only the necessary data fields and convert the results to the CSV format.</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
@@ -3728,7 +3728,7 @@ curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 13, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2023</span>
     
   </small>
 </div>

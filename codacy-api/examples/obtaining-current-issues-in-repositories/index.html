@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to obtain information about issues in a repository programmatically using the Codacy API endpoint searchRepositoryIssues.">
       
       
-        <meta http-equiv="last-modified" content="2022-07-13 18:22:28">
+        <meta http-equiv="last-modified" content="2023-01-25 15:19:27">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/obtaining-current-issues-in-repositories/">
@@ -3544,7 +3544,7 @@
 <p>The example script:</p>
 <ol>
 <li>Defines the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API.</li>
-<li>Calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#searchrepositoryissues">searchRepositoryIssues</a> to retrieve information about the issues, filtering the results by security issues with the relevant severity levels.</li>
+<li>Calls the endpoint <a href="https://app.codacy.com/api/api-docs#searchrepositoryissues">searchRepositoryIssues</a> to retrieve information about the issues, filtering the results by security issues with the relevant severity levels.</li>
 <li>Uses <a href="https://github.com/stedolan/jq">jq</a> to select only the necessary data fields and convert the results to the CSV format.</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
@@ -3729,7 +3729,7 @@ curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </spa
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 13, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2023</span>
     
   </small>
 </div>

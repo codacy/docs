@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to add people programmatically using Codacy's API v3 endpoint addPeopleToOrganization.">
       
       
-        <meta http-equiv="last-modified" content="2022-08-26 15:48:54">
+        <meta http-equiv="last-modified" content="2023-01-25 15:19:27">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/adding-people-to-codacy-programmatically/">
@@ -3538,7 +3538,7 @@
                 
                 <h1 id="adding-people-to-codacy-programmatically">Adding people to Codacy programmatically<a class="headerlink" href="#adding-people-to-codacy-programmatically" title="Permanent link">#</a></h1>
 <p>There are scenarios where manually adding people on the Codacy UI is inconvenient or time-consuming. For example, you're adding many people to Codacy, such as when initially onboarding all developers within a team.</p>
-<p>To add people programmatically, use Codacy's API v3 endpoint <a href="https://app.codacy.com/api/api-docs#addpeopletoorganization">addPeopleToOrganization</a> by performing an HTTP POST request to <code>/people</code>, specifying a list of email addresses in the body of the request:</p>
+<p>To add people programmatically, use the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#addpeopletoorganization">addPeopleToOrganization</a> by performing an HTTP POST request to <code>/people</code>, specifying a list of email addresses in the body of the request:</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.codacy.com/api/v3/organizations/&lt;GIT_PROVIDER&gt;/&lt;ORGANIZATION&gt;/people<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;Content-Type: application/json&#39;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;api-token: &lt;API_KEY&gt;&#39;</span><span class="w"> </span><span class="se">\</span>
@@ -3598,7 +3598,7 @@
 <li>Defines the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API.</li>
 <li>Defines the path and filename of the file containing the email addresses list.</li>
 <li>Uses <code>awk</code> and <code>sed</code> to read the email addresses list from a file.</li>
-<li>Calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#addpeopletoorganization">addPeopleToOrganization</a> to add a list of email addresses to Codacy.</li>
+<li>Calls the endpoint <a href="https://app.codacy.com/api/api-docs#addpeopletoorganization">addPeopleToOrganization</a> to add a list of email addresses to Codacy.</li>
 </ol>
 <div class="highlight"><pre><span></span><code><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
 <span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span><span class="w"> </span><span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
@@ -3780,7 +3780,7 @@ email4@codacy.com
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 26, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2023</span>
     
   </small>
 </div>

@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to create new project API tokens for all repositories in an organization using the Codacy API endpoint createRepositoryApiToken.">
       
       
-        <meta http-equiv="last-modified" content="2022-07-13 18:22:28">
+        <meta http-equiv="last-modified" content="2023-01-25 15:19:27">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/creating-project-api-tokens-programmatically/">
@@ -3544,10 +3544,10 @@
 <p>The example script:</p>
 <ol>
 <li>Defines the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API, the Git provider, and the organization name.</li>
-<li>Calls the Codacy API endpoint <a href="https://api.codacy.com/api/api-docs#listorganizationrepositories">listOrganizationRepositories</a> to retrieve the list of repositories in the organization.</li>
+<li>Calls the endpoint <a href="https://api.codacy.com/api/api-docs#listorganizationrepositories">listOrganizationRepositories</a> to retrieve the list of repositories in the organization.</li>
 <li>Uses <a href="https://github.com/stedolan/jq">jq</a> to select only the name of the repositories.</li>
 <li>Asks for confirmation from the user before making any changes.</li>
-<li>For each repository, calls the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#createrepositoryapitoken">createRepositoryApiToken</a> to create a new project API token and uses jq to obtain only the created token string.</li>
+<li>For each repository, calls the endpoint <a href="https://app.codacy.com/api/api-docs#createrepositoryapitoken">createRepositoryApiToken</a> to create a new project API token and uses jq to obtain only the created token string.</li>
 <li>Outputs a comma-separated list of the repository names and the corresponding new token strings.</li>
 <li>Pauses a few seconds between requests to the Codacy API to avoid rate limiting.</li>
 </ol>
@@ -3745,7 +3745,7 @@ website,&lt;new project API token&gt;
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 13, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2023</span>
     
   </small>
 </div>
