@@ -53,4 +53,4 @@ Click the link **Go to repository** to see the [code quality overview of your re
 
 ## Next steps
 
-The first analysis is based on default tool and pattern configurations. [It's important that you configure your repository](configuring-your-repository.md) to integrate code analysis seamlessly into your existing pipeline.
+The first analysis is based on default tool and pattern configurations. It's now important that you configure your repository to integrate code analysis seamlessly into your existing pipeline. See how to [configure your repository to match the use cases of your team](configuring-your-repository.md).
