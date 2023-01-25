@@ -48,7 +48,7 @@ done
 Example output:
 
 ```bash
-$ ./run.sh pulse
+$ ./check-coverage.sh pulse
 Checking #1563
 Coverage for 4faccc86676f7dba3af2b71400605b0be4a686e3 is Processed
 Coverage for 51e57784468459b9b2839aa63c3e7e807a39c4ab is null
