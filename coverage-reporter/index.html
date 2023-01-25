@@ -11,7 +11,7 @@
         <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2023-01-17 08:26:35">
+        <meta http-equiv="last-modified" content="2023-01-25 12:02:37">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
@@ -3945,10 +3945,10 @@ slather<span class="w"> </span>coverage<span class="w"> </span>-x<span class="w"
 <li>
 <p>Check that Codacy displays the coverage metrics for the latest commits and pull requests.</p>
 <p><img alt="Coverage metrics displayed on Codacy" src="images/coverage-codacy-ui.png" /></p>
-<p>If Codacy doesn't display the coverage variation metric in pull requests (represented by <code>-</code>), make sure that you have uploaded coverage data for both:</p>
+<p>If Codacy can't calculate the coverage metrics for pull requests, make sure that you have uploaded coverage data for both:</p>
 <ul>
-<li>The common ancestor commit of the pull request branch and the target branch</li>
-<li>The head commit of the pull request branch</li>
+<li>The <strong>common ancestor commit</strong> of the pull request branch and the target branch</li>
+<li>The <strong>head commit</strong> of the pull request branch</li>
 </ul>
 <p>The following diagram highlights the commits that must have received coverage data for Codacy to display the coverage variation metric on a pull request:</p>
 <p><img alt="Commits that must have received coverage data" src="images/coverage-pr-commits.png" /></p>
@@ -4122,7 +4122,7 @@ slather<span class="w"> </span>coverage<span class="w"> </span>-x<span class="w"
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 17, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2023</span>
     
   </small>
 </div>
