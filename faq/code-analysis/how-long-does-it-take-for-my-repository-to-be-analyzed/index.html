@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Codacy usually takes under 5 minutes to analyze your repository, however it may take longer as this depends on the size of your repository.">
+        <meta name="description" content="Codacy usually takes under 5 minutes to analyze your repository. It may however take longer, depending on a number of factors:">
       
       
-        <meta http-equiv="last-modified" content="2022-09-27 09:59:53">
+        <meta http-equiv="last-modified" content="2023-01-26 15:43:32">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed/">
@@ -3512,9 +3512,33 @@
                 
                 
                 <h1 id="how-long-does-it-take-for-my-repository-to-be-analyzed">How long does it take for my repository to be analyzed?<a class="headerlink" href="#how-long-does-it-take-for-my-repository-to-be-analyzed" title="Permanent link">#</a></h1>
-<p>Codacy usually takes under 5 minutes to analyze your repository, however it may take longer as this depends on the size of your repository.</p>
+<p>Codacy usually takes under 5 minutes to analyze your repository. It may however take longer, depending on a number of factors:</p>
+<ul>
+<li>
+<p><strong>Whether it's the initial analysis of your repository</strong></p>
+<p>The initial analysis examines all files in the repository, while each subsequent commit triggers an analysis only on files changed in that commit.</p>
+</li>
+<li>
+<p><strong>Whether tool configurations have been updated</strong></p>
+<p>Updates to tool configurations trigger a reanalysis of all files in the repository on the next commit and may impact analysis duration.</p>
+</li>
+<li>
+<p><strong>The size of your repository</strong></p>
+<p>To speed up the analysis, <a href="../../../repositories-configure/ignoring-files/">ignore any files and directories</a> that aren't relevant to your project, such as generated code or any third-party libraries included in your repositories.</p>
+</li>
+<li>
+<p><strong>The time it takes your Git provider to trigger the analysis</strong></p>
 <p>Codacy relies on post-commit hooks sent by your Git provider to trigger the analysis after each push to the repository, so if your analysis is taking a lot of time to start <a href="../../../repositories-configure/integrations/post-commit-hooks/">check that the Post-Commit Hook integration for your repository is enabled</a>.</p>
-<p>Besides this, you can also <a href="https://status.codacy.com/">check Codacy's status page</a> to see if there is any ongoing incident that could delay the analysis.</p>
+</li>
+<li>
+<p><strong>The priority of your analysis request and the current load on Codacy's servers</strong></p>
+<p>Open-source projects have lower priority in the Codacy analysis queues.</p>
+</li>
+<li>
+<p><strong>Whether Codacy or your Git provider is currently experiencing issues or outages</strong></p>
+<p>Check the <a href="https://status.codacy.com/">Codacy status page</a> and the status page of your Git provider (<a href="https://www.githubstatus.com/">GitHub</a>, <a href="https://status.gitlab.com/">GitLab</a>, <a href="https://bitbucket.status.atlassian.com/">Bitbucket</a>) to see if there is any ongoing incident that could delay the analysis.</p>
+</li>
+</ul>
               
               
                 
@@ -3671,7 +3695,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 27, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 26, 2023</span>
     
   </small>
 </div>
