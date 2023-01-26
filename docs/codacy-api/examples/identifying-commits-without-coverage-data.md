@@ -54,6 +54,9 @@ Example usage and output, where:
 -   The first commit listed for each pull request is the **head commit** of the pull request branch
 -   The second commit listed for each pull request is the **common ancestor commit** of the pull request branch
 
+!!! note
+    If you find commits where the coverage status is different from `Processed`, [follow these troubleshooting instructions](../../coverage-reporter/index.md#validating-coverage) to validate that your coverage setup is working correctly.
+
 ```bash
 $ ./check-coverage.sh pulse
 Checking #1563
