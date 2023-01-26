@@ -27,21 +27,17 @@ GIT_PROVIDER="<your Git provider>" # gh, ghe, gl, gle, bb, or bbe
 ORGANIZATION="<your organization name>"
 REPOSITORY=$1
 
-check_pull_request() {
-  curl -sX GET "https://app.codacy.com/api/v3/analysis/organizations/$GIT_PROVIDER/$ORGANIZATION/repositories/$REPOSITORY/pull-requests/$1/coverage/status" \
-       -H "api-token: $CODACY_API_TOKEN" \
-       -H "Content-Type: application/json" \
-  | jq -r '.data[] | "Coverage for \(.commitSha) is \(.reports[0].status)"'
-}
-
 curl -sX GET "https://app.codacy.com/api/v3/analysis/organizations/$GIT_PROVIDER/$ORGANIZATION/repositories/$REPOSITORY/pull-requests" \
      -H "api-token: $CODACY_API_TOKEN" \
      -H "Content-Type: application/json" \
 | jq -r ".data[] | .pullRequest.number" | \
 
-while read pr; do
-    echo "Checking #$pr"
-    check_pull_request $pr
+while read pull_request_number; do
+    echo "Checking #$pull_request_number"
+    curl -sX GET "https://app.codacy.com/api/v3/analysis/organizations/$GIT_PROVIDER/$ORGANIZATION/repositories/$REPOSITORY/pull-requests/$pull_request_number/coverage/status" \
+         -H "api-token: $CODACY_API_TOKEN" \
+         -H "Content-Type: application/json" \
+    | jq -r '.data[] | "Coverage for \(.commitSha) is \(.reports[0].status)"'
 done
 ```
 
