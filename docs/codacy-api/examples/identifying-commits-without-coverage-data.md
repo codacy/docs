@@ -19,10 +19,9 @@ To check if Codacy has received the required coverage data to calculate the cove
 
 ## Example: Identifying which pull request commits are missing coverage data
 
-This example checks whether the head and common ancestor commits of the open pull requests currently in a repository have received coverage data.
+This example checks whether the open pull requests in a repository have received coverage data for their head and common ancestor commits.
 
 The example script:
-
 
 1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API, the Git provider, the organization name, and the repository name passed as an argument to the script.
 1.  Calls the Codacy API endpoint [listRepositoryPullRequests](https://api.codacy.com/api/api-docs#listrepositorypullrequests) to retrieve the list of open pull requests on the repository.
