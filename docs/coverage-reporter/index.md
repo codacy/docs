@@ -183,7 +183,7 @@ The recommended way to do this is by using a CI/CD platform that automatically r
     !!! warning
         **Never write API tokens to your configuration files** and keep your API tokens well protected, as they grant owner permissions to your projects on Codacy
 
-        We recommend that you set API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.
+        It's a best practice to store API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.
 
 1.  **If you're using Codacy Self-hosted** set the following environment variables to specify your Codacy instance URL and the Codacy Coverage Reporter version that's compatible with Codacy Self-hosted {{extra.version}}:
 
@@ -425,10 +425,10 @@ Follow these instructions to validate that your coverage setup is working correc
 
     ![Coverage metrics displayed on Codacy](images/coverage-codacy-ui.png)
 
-    If Codacy doesn't display the coverage variation metric in pull requests (represented by `-`), make sure that you have uploaded coverage data for both:
+    If Codacy can't calculate the coverage metrics for pull requests, make sure that you have uploaded coverage data for both:
 
-    -   The common ancestor commit of the pull request branch and the target branch
-    -   The head commit of the pull request branch
+    -   The **common ancestor commit** of the pull request branch and the target branch
+    -   The **head commit** of the pull request branch
 
     The following diagram highlights the commits that must have received coverage data for Codacy to display the coverage variation metric on a pull request:
 

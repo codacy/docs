@@ -9,7 +9,7 @@ There are scenarios where manually adding Git repositories on the Codacy UI is i
 -   You want to add all new repositories to Codacy when they're created on the Git provider
 -   You're adding many repositories to Codacy, such as when initially adding all repositories in your Git provider organization
 
-To add repositories programmatically, use Codacy's API v3 endpoint [addRepository](https://app.codacy.com/api/api-docs#addrepository) by performing an HTTP POST request to `/repositories`, specifying the Git provider and the full path of the repository in the body of the request:
+To add repositories programmatically, use the Codacy API v3 endpoint [<span class="skip-vale">addRepository</span>](https://app.codacy.com/api/api-docs#addrepository) by performing an HTTP POST request to `/repositories`, specifying the Git provider and the full path of the repository in the body of the request:
 
 ```bash
 curl -X POST https://app.codacy.com/api/v3/repositories \
@@ -50,14 +50,14 @@ We provide an example Bash script that adds all repositories in a GitHub Cloud o
     | 11 to 100          | Considerable   |
     | More than 100      | Extreme        |
 
-    To avoid these delays, we recommend that you add repositories in small batches or that you space out adding new repositories in time.
+    To avoid these delays, add repositories in small batches or space out adding new repositories over time.
 
 The example script:
 
 1.  Defines a GitHub [personal access token](https://github.com/settings/tokens), the GitHub organization name, and the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
 1.  Calls the GitHub API to [obtain the list of all repositories](https://docs.github.com/en/rest/repos/repos#list-organization-repositories) in the defined organization.
 1.  Uses [jq](https://github.com/stedolan/jq) to return the value of `full_name` for each repository obtained in the JSON response. The `full_name` already includes the organization and repository names using the format `<organization>/<repository>`.
-1.  For each repository, calls the Codacy API endpoint [addRepository](https://app.codacy.com/api/api-docs#addrepository) to add a new repository specifying `gh` as the Git provider and the value of `full_name` as the full path of the repository.
+1.  For each repository, calls the endpoint [<span class="skip-vale">addRepository</span>](https://app.codacy.com/api/api-docs#addrepository) to add a new repository specifying `gh` as the Git provider and the value of `full_name` as the full path of the repository.
 1.  Checks the HTTP status code obtained in the response and performs basic error handling.
 1.  Pauses a few seconds between requests to the Codacy API to avoid rate limiting.
 
