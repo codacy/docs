@@ -18,12 +18,10 @@ Codacy usually takes under 5 minutes to analyze your repository. It may however 
 
     Codacy relies on post-commit hooks sent by your Git provider to trigger the analysis after each push to the repository, so if your analysis is taking a lot of time to start [check that the Post-Commit Hook integration for your repository is enabled](../../repositories-configure/integrations/post-commit-hooks.md).
 
--   **The priority of your analysis request**
+-   **The priority of your analysis request and the current load on Codacy's servers**
 
     Open-source projects have lower priority in the Codacy analysis queues.
 
 -   **Whether Codacy or your Git provider is currently experiencing issues or outages**
 
     Check the [Codacy status page](https://status.codacy.com/) and the status page of your Git provider ([GitHub](https://www.githubstatus.com/), [GitLab](https://status.gitlab.com/), [Bitbucket](https://bitbucket.status.atlassian.com/)) to see if there is any ongoing incident that could delay the analysis.
-
--   **The current load on Codacy's servers**
