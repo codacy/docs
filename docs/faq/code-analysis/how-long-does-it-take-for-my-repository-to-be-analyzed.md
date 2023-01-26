@@ -4,6 +4,12 @@ Codacy usually takes under 5 minutes to analyze your repository. It may however 
 
 -   **Whether it's the initial analysis of your repository**
 
+    The initial analysis examines all files in the repository, while each subsequent commit triggers an analysis only on files changed in that commit.
+
+-   **Whether tool configurations have been updated**
+
+    Updates in tool configurations trigger a reanalysis on all files in the repository at the next commit and may therefore increase analysis times.
+
 -   **The size of your repository**
 
     To speed up the analysis, [ignore any files and directories](../../repositories-configure/ignoring-files.md) that aren't relevant to your project, such as generated code or any third-party libraries included in your repositories.
