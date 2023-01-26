@@ -49,7 +49,10 @@ while read pull_request_number; do
 done
 ```
 
-Example usage and output:
+Example usage and output, where:
+
+-   The first commit listed for each pull request is the **head commit** of the pull request branch
+-   The second commit listed for each pull request is the **common ancestor commit** of the pull request branch
 
 ```bash
 $ ./check-coverage.sh pulse
