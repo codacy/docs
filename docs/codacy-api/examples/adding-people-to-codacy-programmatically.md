@@ -6,7 +6,7 @@ description: Example of how to add people programmatically using Codacy's API v3
 
 There are scenarios where manually adding people on the Codacy UI is inconvenient or time-consuming. For example, you're adding many people to Codacy, such as when initially onboarding all developers within a team.
 
-To add people programmatically, use Codacy's API v3 endpoint [addPeopleToOrganization](https://app.codacy.com/api/api-docs#addpeopletoorganization) by performing an HTTP POST request to `/people`, specifying a list of email addresses in the body of the request:
+To add people programmatically, use the Codacy API endpoint [addPeopleToOrganization](https://app.codacy.com/api/api-docs#addpeopletoorganization) by performing an HTTP POST request to `/people`, specifying a list of email addresses in the body of the request:
 
 ```bash
 curl -X POST https://app.codacy.com/api/v3/organizations/<GIT_PROVIDER>/<ORGANIZATION>/people \
@@ -42,7 +42,7 @@ The example script:
 1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
 1.  Defines the path and filename of the file containing the email addresses list.
 1.  Uses `awk` and `sed` to read the email addresses list from a file.
-1.  Calls the Codacy API endpoint [addPeopleToOrganization](https://app.codacy.com/api/api-docs#addpeopletoorganization) to add a list of email addresses to Codacy.
+1.  Calls the endpoint [addPeopleToOrganization](https://app.codacy.com/api/api-docs#addpeopletoorganization) to add a list of email addresses to Codacy.
 
 ```bash
 CODACY_API_TOKEN="<your account API token>"
