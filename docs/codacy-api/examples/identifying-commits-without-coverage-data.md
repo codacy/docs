@@ -19,7 +19,16 @@ To check if Codacy has received the required coverage data to calculate the cove
 
 ## Example: Identifying which pull request commits are missing coverage data
 
-<!--TODO Explain example-->
+This example checks whether the head and common ancestor commits of the open pull requests currently in a repository have received coverage data.
+
+The example script:
+
+
+1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API, the Git provider, the organization name, and the repository name passed as an argument to the script.
+1.  Calls the Codacy API endpoint [listRepositoryPullRequests](https://api.codacy.com/api/api-docs#listrepositorypullrequests) to retrieve the list of open pull requests on the repository.
+1.  Uses [jq](https://github.com/stedolan/jq) to select only the numbers that identify the pull requests on the Git provider.
+1.  For each pull request, outputs the pull request number and calls the Codacy API endpoint [getPullRequestCoverageReports](https://api.codacy.com/api/api-docs#getpullrequestcoveragereports) to obtain the information about the coverage data received for the head and common ancestor commits of the pull request.
+1.  Uses [jq](https://github.com/stedolan/jq) to select and output the commit SHA-1 and coverage status for the commits.
 
 ```bash
 CODACY_API_TOKEN="<your account API token>"
@@ -41,7 +50,7 @@ while read pull_request_number; do
 done
 ```
 
-Example output:
+Example usage and output:
 
 ```bash
 $ ./check-coverage.sh pulse
@@ -55,3 +64,5 @@ Checking #1434
 Coverage for 74efe5d7542846f36cb8c030bd6b73fa9060dca2 is null
 Coverage for 1a64ea8885717e7b9874c9f3702806ec96b00276 is null
 ```
+
+{% include-markdown "../../assets/includes/api-example-pagination-important.md" %}
