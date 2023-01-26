@@ -20,7 +20,7 @@ Codacy usually takes under 5 minutes to analyze your repository. It may however 
 
 -   **The priority of your analysis request**
 
-    Open-source projects have lower priority in Codacy's analysis queues.
+    Open-source projects have lower priority in the Codacy analysis queues.
 
 -   **Whether Codacy or your Git provider is currently experiencing issues or outages**
 
