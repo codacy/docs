@@ -25,7 +25,7 @@ To configure your repository, follow these steps:
 [Configure the tools and code patterns](../repositories-configure/configuring-code-patterns.md) that Codacy uses to analyze your repository.
 
 !!! tip
-    To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, [use an organization coding standard](../organizations/using-a-coding-standard.md) instead.
+    To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, [use an organization coding standard](../organizations/using-a-coding-standard.md).
 
 ![Configuring the tools and code patterns](../repositories-configure/images/code-patterns.png)
 
