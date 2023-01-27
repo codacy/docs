@@ -20,10 +20,10 @@ Follow the steps below to upgrade to Codacy Self-hosted v10.0.0:
 
 1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v10.0/chart/maintenance/upgrade/).
 
-1.  Update your Codacy command-line tools to the versions with the Git tag `self-hosted-10.0.0`:
+1.  Update your Codacy command-line tools to the following versions:
 
-    -   [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-10.0.0)
-    -   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-10.0.0)
+    -   [Codacy Analysis CLI 7.6.6](https://github.com/codacy/codacy-analysis-cli/releases/tag/7.6.6)
+    -   [Codacy Coverage Reporter 13.10.15](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.10.15)
 
 ## Breaking changes
 
