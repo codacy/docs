@@ -92,6 +92,8 @@ To edit an existing coding standard or change the repositories that follow that 
 !!! tip
     To ensure that all new repositories automatically follow the coding standard, [set the coding standard as default](#set-default).
 
+[//]: # (TODO ## Deleting a coding standard {: id="deleting"})
+
 ## See also
 
 -   [Copying code patterns between repositories](copying-code-patterns-between-repositories.md)
