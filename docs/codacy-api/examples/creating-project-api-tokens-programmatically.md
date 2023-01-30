@@ -78,7 +78,7 @@ REPOSITORY=$1
 
 curl -sX GET "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/repositories/$REPOSITORY/tokens" \
      -H "api-token: $CODACY_API_TOKEN" \
-| jq -r ".data[] | .token"
+| jq -er ".data[] | .token"
 ```
 
 Example usage to obtain only the project API token created most recently for the repository:
