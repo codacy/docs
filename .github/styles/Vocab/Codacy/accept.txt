@@ -24,6 +24,7 @@ Ctrl
 [Cc]yclomatic
 dartanalyzer
 deadcode
+Dependabot
 detekt
 Dockerfile
 endif

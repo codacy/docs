@@ -145,7 +145,7 @@ As a last resort, you can also send the coverage data directly by calling one of
 
 After having coverage reports set up for your repository, you must use the Codacy Coverage Reporter to upload them to Codacy.
 
-The recommended way to do this is by using a CI/CD platform that automatically runs tests, generates coverage, and uses the Codacy Coverage Reporter to upload the coverage report information for every push to your repository.
+The recommended way to do this is by using a CI/CD platform that automatically runs tests, generates coverage, and uses the Codacy Coverage Reporter to upload the coverage report information for **every push to your repository** including merge commits or any commits created automatically by tools such as Dependabot.
 
 !!! note "Alternative ways of running the Codacy Coverage Reporter"
     Codacy makes available [alternative ways to run the Codacy Coverage Reporter](alternative-ways-of-running-coverage-reporter.md), such as by installing the binary manually or by using Docker, a GitHub Action, or a CircleCI Orb.
