@@ -1,12 +1,6 @@
 # Why can't I see or add my organization's repositories?
 
-If you can't see or add your organization's repositories, or have any problems regarding metrics (for example, you can't see any issues and your pull requests aren't analyzed), please check if your user account has a duplicated copy of the repository on the organization.
-
-The ideal scenario for your organization's repositories is to have a unique copy of it added to your Codacy organization, by someone with write permissions on the repository.
-
-In case you have a duplicated repository on your account, please delete it and use only the one available in your organization.
-
-In the unlikely event of not seeing repositories for one or multiple organizations, please go to your GitHub settings and revoke the Codacy OAuth application.
+If you can't [see or add your repositories on your Codacy organization](../../organizations/managing-repositories.md), please go to your GitHub settings and revoke the Codacy OAuth application.
 
 ![Revoking the Codacy OAuth application](images/github-revoke-codacy.png)
 
