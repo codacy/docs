@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the Bitbucket integration to have pull request status, comments, and analysis summaries from Codacy directly on pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2022-11-25 11:59:50">
+        <meta http-equiv="last-modified" content="2023-01-30 15:04:59">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/bitbucket-integration/">
@@ -185,6 +185,30 @@
   <li class="md-nav__item">
     <a href="../../../getting-started/codacy-quickstart/" title="Codacy quickstart (5 min)" class="md-nav__link">
       Codacy quickstart (5 min)
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../getting-started/configuring-your-repository/" title="Configuring your repository" class="md-nav__link">
+      Configuring your repository
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../getting-started/integrating-codacy-with-your-git-workflow/" title="Integrating Codacy with your Git workflow" class="md-nav__link">
+      Integrating Codacy with your Git workflow
     </a>
   </li>
 
@@ -1785,18 +1809,6 @@
   <li class="md-nav__item">
     <a href="../../../faq/general/how-does-codacy-protect-my-privacy/" title="How does Codacy protect my privacy?" class="md-nav__link">
       How does Codacy protect my privacy?
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/" title="How do I block merging pull requests using Codacy as a quality gate?" class="md-nav__link">
-      How do I block merging pull requests using Codacy as a quality gate?
     </a>
   </li>
 
@@ -3582,7 +3594,7 @@
 <p>To configure the Bitbucket integration, open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
 <p>Depending on the options that you enable, Codacy will automatically update pull requests on Bitbucket with extra information when accepting pull requests:</p>
 <h3 id="pull-request-status">Pull Request Status<a class="headerlink" href="#pull-request-status" title="Permanent link">#</a></h3>
-<p>Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the <a href="../../adjusting-quality-settings/">quality settings</a> of your repository.</p>
+<p>Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the <a href="../../adjusting-quality-settings/">quality settings</a> of your repository. You can then optionally <a href="../../../getting-started/integrating-codacy-with-your-git-workflow/#blocking-pull-requests">block merging pull requests that aren't up to standards</a>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>To get a status for coverage</strong> you must also:</p>
@@ -3590,7 +3602,6 @@
 <li><a href="../../../coverage-reporter/">Add coverage to your repository</a></li>
 <li>Enable the rule <strong>Diff coverage is under</strong> or <strong>Coverage variation is under</strong> on the <a href="../../adjusting-quality-settings/#gates">pull request quality gate</a>.</li>
 </ul>
-<p><strong>To block merging pull requests</strong> that aren't up to standards see <a href="../../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/">How do I block merging pull requests using Codacy as a quality gate?</a></p>
 </div>
 <p><img alt="Pull request status on Bitbucket" src="../images/bitbucket-integration-pr-status.png" /></p>
 <h3 id="pull-request-comment">Pull Request Comment<a class="headerlink" href="#pull-request-comment" title="Permanent link">#</a></h3>
@@ -3604,7 +3615,7 @@
 <p><img alt="Pull request summary on Bitbucket" src="../images/bitbucket-integration-pr-summary.png" /></p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
-<li><a href="../../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/">How do I block merging pull requests using Codacy as a quality gate?</a></li>
+<li><a href="../../../getting-started/integrating-codacy-with-your-git-workflow/">Integrating Codacy with your Git workflow</a></li>
 </ul>
               
               
@@ -3762,7 +3773,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 25, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 30, 2023</span>
     
   </small>
 </div>

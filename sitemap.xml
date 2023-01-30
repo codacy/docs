@@ -236,11 +236,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.codacy.com/faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate/</loc>
-         <lastmod>2023-01-30</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.codacy.com/faq/general/how-does-codacy-keep-my-data-secure/</loc>
          <lastmod>2023-01-30</lastmod>
          <changefreq>daily</changefreq>
@@ -347,6 +342,16 @@
     </url>
     <url>
          <loc>https://docs.codacy.com/getting-started/codacy-quickstart/</loc>
+         <lastmod>2023-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.codacy.com/getting-started/configuring-your-repository/</loc>
+         <lastmod>2023-01-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.codacy.com/getting-started/integrating-codacy-with-your-git-workflow/</loc>
          <lastmod>2023-01-30</lastmod>
          <changefreq>daily</changefreq>
     </url>
