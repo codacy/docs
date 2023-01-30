@@ -17,6 +17,8 @@ By integrating with your Git provider, Codacy keeps track of your team’s work,
 -   **Duplication**: the amount of duplicated portions of code
 -   **Coverage**: the percentage of lines of code covered by automated tests
 
+{% include-markdown "../assets/includes/nav-multistep.md" %}
+
 To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.codacy.com/) and click **Get started**. Then, follow the instructions below.
 
 ## 1. Sign up {: id="sign-up"}
