@@ -17,15 +17,19 @@ By integrating with your Git provider, Codacy keeps track of your team’s work,
 -   **Duplication**: the amount of duplicated portions of code
 -   **Coverage**: the percentage of lines of code covered by automated tests
 
-To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.codacy.com/) and click **Get started**. Then, follow the instructions below.
+To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.codacy.com/) and click **Get started**. Then, follow these steps:
 
-## 1. Sign up {: id="sign-up"}
+1.  [Signing up](#signing-up)
+1.  [Choosing an organization](#choosing-organization)
+1.  [Adding repositories](#adding-repositories)
+
+## 1. Signing up {: id="signing-up"}
 
 Sign up with a Git provider such as GitHub, GitLab, or Bitbucket. This links your Codacy user with your Git provider user, making it easier to add repositories to Codacy and invite your teammates.
 
 Codacy will request access to your Git provider during the authorization flow. [Check the permissions that Codacy requires and why](which-permissions-does-codacy-need-from-my-account.md). Codacy will also ask you to fill in a few details about your company so we know a bit more about your use case.
 
-## 2. Choose an organization {: id="choose-organization"}
+## 2. Choosing an organization {: id="choosing-organization"}
 
 Now, you'll need to add or join the organizations that contain your repositories. The organization with the same name as your Git provider username contains your personal repositories. Read more about [organizations on Codacy](../organizations/what-are-organizations.md).
 
@@ -36,7 +40,7 @@ To start adding your repositories, select one of the organizations.
 
 ![Choosing an organization](../organizations/images/organization-add.png)  
 
-## 3. Add repositories {: id="add-repositories"}
+## 3. Adding repositories {: id="adding-repositories"}
 
 Next, add the repositories that you wish to analyze. Codacy begins an initial analysis as soon as you add a repository and sets everything up to ensure your next commits on that repository are analyzed.
 
