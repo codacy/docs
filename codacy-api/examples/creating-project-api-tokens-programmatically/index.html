@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to create new project API tokens for all repositories in an organization using the Codacy API endpoint createRepositoryApiToken.">
       
       
-        <meta http-equiv="last-modified" content="2023-01-31 15:15:29">
+        <meta http-equiv="last-modified" content="2023-01-31 15:19:50">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/creating-project-api-tokens-programmatically/">
@@ -1159,6 +1159,13 @@
         <li class="md-nav__item">
   <a href="#example-creating-project-api-tokens-for-all-repositories-in-an-organization" class="md-nav__link">
     Example: Creating project API tokens for all repositories in an organization
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#example-listing-the-project-api-tokens-for-a-repository" class="md-nav__link">
+    Example: Listing the project API tokens for a repository
   </a>
   
 </li>
@@ -3568,7 +3575,7 @@
                 
                 
                 <h1 id="creating-project-api-tokens-programmatically">Creating project API tokens programmatically<a class="headerlink" href="#creating-project-api-tokens-programmatically" title="Permanent link">#</a></h1>
-<p>To create new <a href="../../api-tokens/">project API tokens</a> for your Codacy repositories programmatically, use the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#createrepositoryapitoken">createRepositoryApiToken</a>.</p>
+<p>To create new <a href="../../api-tokens/">project API tokens</a> for your Codacy repositories programmatically, use the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#createrepositoryapitoken">createRepositoryApiToken</a>. You can also list all project API tokens for a repository using the endpoint <a href="https://api.codacy.com/api/api-docs#listrepositoryapitokens">listRepositoryApiTokens</a>.</p>
 <p>For example, if you're <a href="../../../coverage-reporter/">setting up coverage</a> for all your repositories and prefer not to use a single account API token that grants the same permissions as an administrator, you need to create an individual project API token for each repository.</p>
 <h2 id="example-creating-a-project-api-token-for-a-single-repository">Example: Creating a project API token for a single repository<a class="headerlink" href="#example-creating-a-project-api-token-for-a-single-repository" title="Permanent link">#</a></h2>
 <p>This example creates a new project API token for a repository and outputs the new token string.</p>
@@ -3638,6 +3645,27 @@ website,&lt;new project API token&gt;
 <p class="admonition-title">Important</p>
 <p>For the sake of simplicity, the example doesn't consider paginated results obtained from the Codacy API. <a href="../../using-the-codacy-api/#using-pagination">Learn how to use pagination</a> to ensure that you process all results returned by the API.</p>
 </div>
+<h2 id="example-listing-the-project-api-tokens-for-a-repository">Example: Listing the project API tokens for a repository<a class="headerlink" href="#example-listing-the-project-api-tokens-for-a-repository" title="Permanent link">#</a></h2>
+<p>This example lists all project API tokens created for a repository.</p>
+<p>The example script:</p>
+<ol>
+<li>Defines the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API, the Git provider, the organization name, and the repository name passed as an argument to the script.</li>
+<li>Calls the endpoint <a href="https://api.codacy.com/api/api-docs#listrepositoryapitokens">listRepositoryApiTokens</a> to list the project API tokens available on the repository and uses <a href="https://github.com/stedolan/jq">jq</a> to obtain only the token strings, or exit with a non-zero status if the repository doesn't have any project API tokens created yet.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+<span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
+<span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span><span class="w"> </span><span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
+<span class="nv">ORGANIZATION</span><span class="o">=</span><span class="s2">&quot;&lt;your organization name&gt;&quot;</span>
+<span class="nv">REPOSITORY</span><span class="o">=</span><span class="nv">$1</span>
+
+curl<span class="w"> </span>-sX<span class="w"> </span>GET<span class="w"> </span><span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/repositories/</span><span class="nv">$REPOSITORY</span><span class="s2">/tokens&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-er<span class="w"> </span><span class="s2">&quot;.data[] | .token&quot;</span>
+</code></pre></div>
+<p>Example usage to obtain only the project API token created most recently for the repository:</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>./list-tokens.sh<span class="w"> </span>website<span class="w"> </span><span class="p">|</span><span class="w"> </span>head<span class="w"> </span>-n<span class="w"> </span><span class="m">1</span>
+&lt;last<span class="w"> </span>project<span class="w"> </span>API<span class="w"> </span>token<span class="w"> </span>created&gt;
+</code></pre></div>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../api-tokens/">API tokens</a></li>
