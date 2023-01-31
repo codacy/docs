@@ -30,6 +30,8 @@ The example script:
 1.  Uses [jq](https://github.com/stedolan/jq) to select and output the commit SHA-1 and coverage status for the commits.
 
 ```bash
+#!/bin/bash
+
 CODACY_API_TOKEN="<your account API token>"
 GIT_PROVIDER="<your Git provider>" # gh, ghe, gl, gle, bb, or bbe
 ORGANIZATION="<your organization name>"
