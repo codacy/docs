@@ -67,7 +67,7 @@ This example lists all project API tokens created for a repository.
 The example script:
 
 1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API, the Git provider, the organization name, and the repository name passed as an argument to the script.
-1.  Calls the endpoint [listRepositoryApiTokens](https://api.codacy.com/api/api-docs#listrepositoryapitokens) to list the project API tokens available on the repository and uses [jq](https://github.com/stedolan/jq) to obtain only the token strings.
+1.  Calls the endpoint [listRepositoryApiTokens](https://api.codacy.com/api/api-docs#listrepositoryapitokens) to list the project API tokens available on the repository and uses [jq](https://github.com/stedolan/jq) to obtain only the token strings, or exit with a non-zero status if the repository doesn't have any project API tokens created yet.
 
 ```bash
 #!/bin/bash
