@@ -16,7 +16,7 @@ This example creates new project API token for a repository and outputs the new 
 The example script:
 
 1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API, the Git provider, the organization name, and the repository name passed as an argument to the script.
-1.  Calls the endpoint [createRepositoryApiToken](https://app.codacy.com/api/api-docs#createrepositoryapitoken) to create a new project API token and uses jq to obtain only the created token string.
+1.  Calls the endpoint [createRepositoryApiToken](https://app.codacy.com/api/api-docs#createrepositoryapitoken) to create a new project API token and uses [jq](https://github.com/stedolan/jq) to obtain only the created token string.
 
 ```bash
 #!/bin/bash
