@@ -438,7 +438,7 @@ Follow these instructions to validate that your coverage setup is working correc
 
     ![Commits that must have received coverage data](images/coverage-pr-commits.png)
 
-    Click **View logs** on a pull request detail page to see the SHA-1 hashes of the commits that are missing coverage data. If you have many open pull requests, you can also [use a script to identify if any pull requests are missing coverage data](../codacy-api/examples/identifying-commits-without-coverage-data.md).
+    Click **View logs** on a pull request detail page to see the SHA-1 hashes of the commits that are missing coverage data. If you have many open pull requests, you can also use a script to [identify if any pull requests are missing coverage data](../codacy-api/examples/identifying-commits-without-coverage-data.md).
 
     ![Logs showing the pull request commits that are missing coverage data](images/coverage-codacy-ui-logs.png)
 
