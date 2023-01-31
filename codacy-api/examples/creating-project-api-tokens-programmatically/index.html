@@ -11,7 +11,7 @@
         <meta name="description" content="Example of how to create new project API tokens for all repositories in an organization using the Codacy API endpoint createRepositoryApiToken.">
       
       
-        <meta http-equiv="last-modified" content="2023-01-25 15:19:27">
+        <meta http-equiv="last-modified" content="2023-01-31 15:15:29">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/creating-project-api-tokens-programmatically/">
@@ -1148,6 +1148,13 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#example-creating-a-project-api-token-for-a-single-repository" class="md-nav__link">
+    Example: Creating a project API token for a single repository
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#example-creating-project-api-tokens-for-all-repositories-in-an-organization" class="md-nav__link">
@@ -3563,6 +3570,28 @@
                 <h1 id="creating-project-api-tokens-programmatically">Creating project API tokens programmatically<a class="headerlink" href="#creating-project-api-tokens-programmatically" title="Permanent link">#</a></h1>
 <p>To create new <a href="../../api-tokens/">project API tokens</a> for your Codacy repositories programmatically, use the Codacy API endpoint <a href="https://app.codacy.com/api/api-docs#createrepositoryapitoken">createRepositoryApiToken</a>.</p>
 <p>For example, if you're <a href="../../../coverage-reporter/">setting up coverage</a> for all your repositories and prefer not to use a single account API token that grants the same permissions as an administrator, you need to create an individual project API token for each repository.</p>
+<h2 id="example-creating-a-project-api-token-for-a-single-repository">Example: Creating a project API token for a single repository<a class="headerlink" href="#example-creating-a-project-api-token-for-a-single-repository" title="Permanent link">#</a></h2>
+<p>This example creates a new project API token for a repository and outputs the new token string.</p>
+<p>The example script:</p>
+<ol>
+<li>Defines the <a href="../../api-tokens/#account-api-tokens">account API token</a> used to authenticate on the Codacy API, the Git provider, the organization name, and the repository name passed as an argument to the script.</li>
+<li>Calls the endpoint <a href="https://app.codacy.com/api/api-docs#createrepositoryapitoken">createRepositoryApiToken</a> to create a new project API token and uses <a href="https://github.com/stedolan/jq">jq</a> to obtain only the created token string.</li>
+</ol>
+<div class="highlight"><pre><span></span><code><span class="ch">#!/bin/bash</span>
+
+<span class="nv">CODACY_API_TOKEN</span><span class="o">=</span><span class="s2">&quot;&lt;your account API token&gt;&quot;</span>
+<span class="nv">GIT_PROVIDER</span><span class="o">=</span><span class="s2">&quot;&lt;your Git provider&gt;&quot;</span><span class="w"> </span><span class="c1"># gh, ghe, gl, gle, bb, or bbe</span>
+<span class="nv">ORGANIZATION</span><span class="o">=</span><span class="s2">&quot;&lt;your organization name&gt;&quot;</span>
+<span class="nv">REPOSITORY</span><span class="o">=</span><span class="nv">$1</span>
+
+curl<span class="w"> </span>-sX<span class="w"> </span>POST<span class="w"> </span><span class="s2">&quot;https://app.codacy.com/api/v3/organizations/</span><span class="nv">$GIT_PROVIDER</span><span class="s2">/</span><span class="nv">$ORGANIZATION</span><span class="s2">/repositories/</span><span class="nv">$REPOSITORY</span><span class="s2">/tokens&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s2">&quot;api-token: </span><span class="nv">$CODACY_API_TOKEN</span><span class="s2">&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="p">|</span><span class="w"> </span>jq<span class="w"> </span>-r<span class="w"> </span><span class="s2">&quot;.data | .token&quot;</span>
+</code></pre></div>
+<p>Example usage and output</p>
+<div class="highlight"><pre><span></span><code>$<span class="w"> </span>./create-token.sh<span class="w"> </span>website
+&lt;new<span class="w"> </span>project<span class="w"> </span>API<span class="w"> </span>token&gt;
+</code></pre></div>
 <h2 id="example-creating-project-api-tokens-for-all-repositories-in-an-organization">Example: Creating project API tokens for all repositories in an organization<a class="headerlink" href="#example-creating-project-api-tokens-for-all-repositories-in-an-organization" title="Permanent link">#</a></h2>
 <p>This example creates new project API tokens for all the repositories in an organization and outputs a comma-separated list of repository names and corresponding token strings.</p>
 <p>The example script:</p>
@@ -3769,7 +3798,7 @@ website,&lt;new project API token&gt;
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 31, 2023</span>
     
   </small>
 </div>
