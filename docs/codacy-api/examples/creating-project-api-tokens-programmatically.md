@@ -5,7 +5,7 @@ description: Example of how to create new project API tokens for all repositorie
 
 # Creating project API tokens programmatically
 
-To create new [project API tokens](../api-tokens.md) for your Codacy repositories programmatically, use the Codacy API endpoint [createRepositoryApiToken](https://app.codacy.com/api/api-docs#createrepositoryapitoken).
+To create new [project API tokens](../api-tokens.md) for your Codacy repositories programmatically, use the Codacy API endpoint [createRepositoryApiToken](https://app.codacy.com/api/api-docs#createrepositoryapitoken). You can also list all project API tokens for a repository using the endpoint [listRepositoryApiTokens](https://api.codacy.com/api/api-docs#listrepositoryapitokens).
 
 For example, if you're [setting up coverage](../../coverage-reporter/index.md) for all your repositories and prefer not to use a single account API token that grants the same permissions as an administrator, you need to create an individual project API token for each repository.
 
@@ -88,6 +88,34 @@ website,<new project API token>
 ```
 
 {% include-markdown "../../assets/includes/api-example-pagination-important.md" %}
+
+## Example: Listing the project API tokens for a repository
+
+This example lists all project API tokens created for a repository.
+
+The example script:
+
+1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API, the Git provider, the organization name, and the repository name passed as an argument to the script.
+1.  Calls the endpoint [listRepositoryApiTokens](https://api.codacy.com/api/api-docs#listrepositoryapitokens) to list the project API tokens available on the repository and uses [jq](https://github.com/stedolan/jq) to obtain only the token strings, or exit with a non-zero status if the repository doesn't have any project API tokens created yet.
+
+```bash
+#!/bin/bash
+CODACY_API_TOKEN="<your account API token>"
+GIT_PROVIDER="<your Git provider>" # gh, ghe, gl, gle, bb, or bbe
+ORGANIZATION="<your organization name>"
+REPOSITORY=$1
+
+curl -sX GET "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/repositories/$REPOSITORY/tokens" \
+     -H "api-token: $CODACY_API_TOKEN" \
+| jq -er ".data[] | .token"
+```
+
+Example usage to obtain only the project API token created most recently for the repository:
+
+```bash
+$ ./list-tokens.sh website | head -n 1
+<last project API token created>
+```
 
 ## See also
 
