@@ -11,7 +11,7 @@ For example, if you're [setting up coverage](../../coverage-reporter/index.md) f
 
 ## Example: Creating a project API token for a single repository
 
-This example creates new project API token for a repository and outputs the new token string.
+This example creates a new project API token for a repository and outputs the new token string.
 
 The example script:
 
