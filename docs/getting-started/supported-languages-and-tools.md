@@ -96,7 +96,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>CoffeeScript</td>
-      <td><a href="http://www.coffeelint.org/">CoffeeLint</a></td>
+      <td><a href="https://github.com/clutchski/coffeelint">CoffeeLint</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
