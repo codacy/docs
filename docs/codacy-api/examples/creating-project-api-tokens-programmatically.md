@@ -9,6 +9,35 @@ To create new [project API tokens](../api-tokens.md) for your Codacy repositorie
 
 For example, if you're [setting up coverage](../../coverage-reporter/index.md) for all your repositories and prefer not to use a single account API token that grants the same permissions as an administrator, you need to create an individual project API token for each repository.
 
+## Example: Creating a project API token for a single repository
+
+This example creates a new project API token for a repository and outputs the new token string.
+
+The example script:
+
+1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API, the Git provider, the organization name, and the repository name passed as an argument to the script.
+1.  Calls the endpoint [createRepositoryApiToken](https://app.codacy.com/api/api-docs#createrepositoryapitoken) to create a new project API token and uses [jq](https://github.com/stedolan/jq) to obtain only the created token string.
+
+```bash
+#!/bin/bash
+
+CODACY_API_TOKEN="<your account API token>"
+GIT_PROVIDER="<your Git provider>" # gh, ghe, gl, gle, bb, or bbe
+ORGANIZATION="<your organization name>"
+REPOSITORY=$1
+
+curl -sX POST "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/repositories/$REPOSITORY/tokens" \
+     -H "api-token: $CODACY_API_TOKEN" \
+| jq -r ".data | .token"
+```
+
+Example usage and output
+
+```bash
+$ ./create-token.sh website
+<new project API token>
+```
+
 ## Example: Creating project API tokens for all repositories in an organization
 
 This example creates new project API tokens for all the repositories in an organization and outputs a comma-separated list of repository names and corresponding token strings.
