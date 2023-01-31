@@ -1,5 +1,6 @@
 ---
 description: Set up Codacy to automatically analyze your source code and identify issues as you go, helping you develop software more efficiently with fewer issues down the line. Codacy notifies you of security issues, code coverage, duplication, and complexity in every commit and pull request.
+onboarding_step: 0
 ---
 
 # Codacy quickstart (5 min)
@@ -16,6 +17,8 @@ By integrating with your Git provider, Codacy keeps track of your team’s work,
 -   **Complexity**: a measure of the number of execution paths through a program's source code
 -   **Duplication**: the amount of duplicated portions of code
 -   **Coverage**: the percentage of lines of code covered by automated tests
+
+## Adding your first repository
 
 {% include-markdown "../assets/includes/nav-multistep.md" %}
 

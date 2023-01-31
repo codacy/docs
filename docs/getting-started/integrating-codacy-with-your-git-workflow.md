@@ -1,8 +1,11 @@
 ---
 description: Integrate Codacy with your Git workflow to display analysis results and code coverage as status checks on your pull requests and optionally block merging pull requests.
+onboarding_step: 2
 ---
 
 # Integrating Codacy with your Git workflow
+
+{% include-markdown "../assets/includes/nav-multistep.md" %}
 
 Once you've [configured your repository](configuring-your-repository.md) to best match your use case, integrate Codacy with your Git workflow to display analysis results and code coverage as status checks on your pull requests.
 
