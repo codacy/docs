@@ -11,7 +11,7 @@
         <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2023-01-25 12:02:37">
+        <meta http-equiv="last-modified" content="2023-02-01 14:57:11">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
@@ -3592,7 +3592,7 @@
 <ul>
 <li>There are many tools that you can use to generate coverage reports, but you must ensure that the coverage reports are in one of the formats that Codacy supports</li>
 <li>If your repository includes multiple programming languages, you may need to generate a separate coverage report for each language depending on the specific languages and tools that you use</li>
-<li>Make sure that you generate coverage reports that include coverage data for all source code files in your repository, and not just the files that were changed in each commit</li>
+<li>Make sure that you generate coverage reports that include coverage data for all tested source code files in your repository and not just the files that were changed in each commit</li>
 </ul>
 <p>The following table contains example coverage tools that generate reports in formats that Codacy supports:</p>
 <table>
@@ -3701,8 +3701,15 @@ slather<span class="w"> </span>coverage<span class="w"> </span>-x<span class="w"
 <li><a href="https://api.codacy.com/swagger#savecoveragewithaccounttoken">saveCoverageWithAccountToken</a></li>
 </ul>
 <h2 id="uploading-coverage">2. Uploading coverage data to Codacy<a class="headerlink" href="#uploading-coverage" title="Permanent link">#</a></h2>
-<p>After having coverage reports set up for your repository, you must use the Codacy Coverage Reporter to upload them to Codacy.</p>
-<p>The recommended way to do this is by using a CI/CD platform that automatically runs tests, generates coverage, and uses the Codacy Coverage Reporter to upload the coverage report information for every push to your repository.</p>
+<p>After having coverage reports set up for your repository, you must use the Codacy Coverage Reporter to upload them to Codacy. The recommended way to do this is by using a CI/CD platform that automatically runs tests, generates coverage, and then uses the Codacy Coverage Reporter to upload the coverage report information to Codacy.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Please note that Codacy needs to receive coverage data for:</p>
+<ul>
+<li><strong>Every push to your repository</strong> including merge commits or any commits created automatically by tools such as Dependabot</li>
+<li><strong>All tested files in your repository</strong> including the files that weren't changed in the commit, or files from unchanged modules in a monorepo setup</li>
+</ul>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Alternative ways of running the Codacy Coverage Reporter</p>
 <p>Codacy makes available <a href="alternative-ways-of-running-coverage-reporter/">alternative ways to run the Codacy Coverage Reporter</a>, such as by installing the binary manually or by using Docker, a GitHub Action, or a CircleCI Orb.</p>
@@ -3969,13 +3976,29 @@ slather<span class="w"> </span>coverage<span class="w"> </span>-x<span class="w"
 <li>
 <p>Check that Codacy displays the coverage metrics for the latest commits and pull requests.</p>
 <p><img alt="Coverage metrics displayed on Codacy" src="images/coverage-codacy-ui.png" /></p>
-<p>If Codacy can't calculate the coverage metrics for pull requests, make sure that you have uploaded coverage data for both:</p>
-<ul>
-<li>The <strong>common ancestor commit</strong> of the pull request branch and the target branch</li>
-<li>The <strong>head commit</strong> of the pull request branch</li>
-</ul>
-<p>The following diagram highlights the commits that must have received coverage data for Codacy to display the coverage variation metric on a pull request:</p>
+<p>If Codacy can't calculate the coverage metrics for pull requests, make sure that you're uploading coverage data for the following commits of the pull request:</p>
+<table>
+<thead>
+<tr>
+<th>Commit</th>
+<th>Required to calculate the coverage metrics</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Head commit</strong><br/>of the pull request branch</td>
+<td>Coverage variation<br/></br>Diff coverage</td>
+</tr>
+<tr>
+<td><strong>Common ancestor commit</strong><br/>of the pull request and target branches</td>
+<td>Coverage variation</td>
+</tr>
+</tbody>
+</table>
+<p>The following diagram highlights the commits that must receive coverage data for Codacy to calculate the coverage metrics for pull requests:</p>
 <p><img alt="Commits that must have received coverage data" src="images/coverage-pr-commits.png" /></p>
+<p>Click <strong>View logs</strong> on a pull request detail page to see the SHA-1 hashes of the commits that are missing coverage data. If you have many open pull requests, you can also use a script to <a href="../codacy-api/examples/identifying-commits-without-coverage-data/">identify if any pull requests are missing coverage data</a>.</p>
+<p><img alt="Logs showing the pull request commits that are missing coverage data" src="images/coverage-codacy-ui-logs.png" /></p>
 </li>
 </ol>
 <div class="admonition note">
@@ -4146,7 +4169,7 @@ slather<span class="w"> </span>coverage<span class="w"> </span>-x<span class="w"
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 25, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2023</span>
     
   </small>
 </div>
