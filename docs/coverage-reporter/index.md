@@ -32,7 +32,7 @@ Consider the following when generating coverage reports for your repository:
 
 -   There are many tools that you can use to generate coverage reports, but you must ensure that the coverage reports are in one of the formats that Codacy supports
 -   If your repository includes multiple programming languages, you may need to generate a separate coverage report for each language depending on the specific languages and tools that you use
--   Make sure that you generate coverage reports that include coverage data for all source code files in your repository, and not just the files that were changed in each commit
+-   Make sure that you generate coverage reports that include coverage data for all tested source code files in your repository and not just the files that were changed in each commit
 
 The following table contains example coverage tools that generate reports in formats that Codacy supports:
 
@@ -143,9 +143,13 @@ As a last resort, you can also send the coverage data directly by calling one of
 
 ## 2. Uploading coverage data to Codacy {: id="uploading-coverage"}
 
-After having coverage reports set up for your repository, you must use the Codacy Coverage Reporter to upload them to Codacy.
+After having coverage reports set up for your repository, you must use the Codacy Coverage Reporter to upload them to Codacy. The recommended way to do this is by using a CI/CD platform that automatically runs tests, generates coverage, and then uses the Codacy Coverage Reporter to upload the coverage report information to Codacy.
 
-The recommended way to do this is by using a CI/CD platform that automatically runs tests, generates coverage, and uses the Codacy Coverage Reporter to upload the coverage report information for every push to your repository.
+!!! important
+    Please note that Codacy needs to receive coverage data for:
+
+    -   **Every push to your repository** including merge commits or any commits created automatically by tools such as Dependabot
+    -   **All tested files in your repository** including the files that weren't changed in the commit, or files from unchanged modules in a monorepo setup
 
 !!! note "Alternative ways of running the Codacy Coverage Reporter"
     Codacy makes available [alternative ways to run the Codacy Coverage Reporter](alternative-ways-of-running-coverage-reporter.md), such as by installing the binary manually or by using Docker, a GitHub Action, or a CircleCI Orb.
@@ -425,14 +429,20 @@ Follow these instructions to validate that your coverage setup is working correc
 
     ![Coverage metrics displayed on Codacy](images/coverage-codacy-ui.png)
 
-    If Codacy can't calculate the coverage metrics for pull requests, make sure that you have uploaded coverage data for both:
+    If Codacy can't calculate the coverage metrics for pull requests, make sure that you're uploading coverage data for the following commits of the pull request:
 
-    -   The **common ancestor commit** of the pull request branch and the target branch
-    -   The **head commit** of the pull request branch
+    | Commit | Required to calculate the coverage metrics |
+    |--------|-----------------------------|
+    |**Head commit**<br/>of the pull request branch | Coverage variation<br/></br>Diff coverage |
+    |**Common ancestor commit**<br/>of the pull request and target branches | Coverage variation |
 
-    The following diagram highlights the commits that must have received coverage data for Codacy to display the coverage variation metric on a pull request:
+    The following diagram highlights the commits that must receive coverage data for Codacy to calculate the coverage metrics for pull requests:
 
     ![Commits that must have received coverage data](images/coverage-pr-commits.png)
+
+    Click **View logs** on a pull request detail page to see the SHA-1 hashes of the commits that are missing coverage data. If you have many open pull requests, you can also use a script to [identify if any pull requests are missing coverage data](../codacy-api/examples/identifying-commits-without-coverage-data.md).
+
+    ![Logs showing the pull request commits that are missing coverage data](images/coverage-codacy-ui-logs.png)
 
 !!! note "Need help?"
     If you need help setting up coverage on your repository please contact us at <mailto:support@codacy.com> including the following information:
