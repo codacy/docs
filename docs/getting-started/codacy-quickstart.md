@@ -1,6 +1,6 @@
 ---
 description: Set up Codacy to automatically analyze your source code and identify issues as you go, helping you develop software more efficiently with fewer issues down the line. Codacy notifies you of security issues, code coverage, duplication, and complexity in every commit and pull request.
-onboarding_step: 0
+nav_step: 0
 ---
 
 # Codacy quickstart (5 min)
@@ -20,7 +20,7 @@ By integrating with your Git provider, Codacy keeps track of your team’s work,
 
 ## Adding your first repository
 
-{% include-markdown "../assets/includes/nav-multistep.md" %}
+{% include-markdown "../assets/includes/nav-multistep-quickstart.md" %}
 
 To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.codacy.com/) and click **Get started**. Then, follow these steps:
 
