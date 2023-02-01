@@ -7,7 +7,7 @@ nav_step: 2
 
 {% include-markdown "../assets/includes/nav-multistep-quickstart.md" %}
 
-Once you've [configured your repository](configuring-your-repository.md) to best match your use case, integrate Codacy with your Git workflow to display analysis results and code coverage as status checks on your pull requests.
+Once you've configured your repository to best match your use case, integrate Codacy with your Git workflow to display analysis results and code coverage as status checks on your pull requests.
 
 In particular, you can configure quality gates to block merging pull requests that don't meet the quality standards of your team. This ensures the quality of the changes to your codebase, preventing the introduction of security issues and untested code.
 
