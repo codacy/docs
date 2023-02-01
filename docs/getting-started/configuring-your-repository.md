@@ -1,10 +1,13 @@
 ---
 description: Configure Codacy to match the coding conventions and best practices that your team may already be following or that you want to promote.
+nav_step: 1
 ---
 
 # Configuring your repository
 
-Once you've [added your first repository](codacy-quickstart.md), it's important that you configure Codacy's analysis tools to match the use cases of your team, such as configuring any coding conventions and best practices that your team may already be following or that you want to promote. It's also critical to review the configurations to avoid reporting false positives or any other issues that don't bring value to your team, which can introduce unwanted delays to the development process.
+{% include-markdown "../assets/includes/nav-multistep-quickstart.md" %}
+
+Once you've added your first repository, it's important that you configure Codacy's analysis tools to match the use cases of your team, such as configuring any coding conventions and best practices that your team may already be following or that you want to promote. It's also critical to review the configurations to avoid reporting false positives or any other issues that don't bring value to your team, which can introduce unwanted delays to the development process.
 
 You can optionally add coverage reports to detail how much of your code is covered by tests and unify your quality and coverage pipelines. You can generate coverage reports and upload them to Codacy using a range of options, such as CI/CD integration, CLI, Docker, GitHub action, and more.
 
