@@ -80,7 +80,7 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-codenarc" class="skip-vale">codacy/codacy-codenarc</a></td>
 </tr>
 <tr>
-<td><a href="http://www.coffeelint.org/">CoffeeLint</a></td>
+<td><a href="https://github.com/clutchski/coffeelint">CoffeeLint</a></td>
 <td><a href="https://github.com/codacy/codacy-coffeelint" class="skip-vale">codacy/codacy-coffeelint</a></td>
 </tr>
 <tr>
