@@ -74,7 +74,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 v10
 
--   [v10.0.0](self-hosted/self-hosted-v10.0.0.md) (November 24, 2022)<!--TODO Update release date-->
+-   [v10.0.0](self-hosted/self-hosted-v10.0.0.md) (February 3, 2023)
 
 v9
 
