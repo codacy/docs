@@ -76,6 +76,10 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
 
+v10
+
+-   [v10.0.0](self-hosted/self-hosted-v10.0.0.md) (February 3, 2023)
+
 v9
 
 -   [v9.0.0](self-hosted/self-hosted-v9.0.0.md) (September 23, 2022)
