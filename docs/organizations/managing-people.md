@@ -22,7 +22,7 @@ To join or add an organization after completing the sign-up process, click **Org
 ![Joining an organization](images/organization-join.png)
 
 !!! note
-    **On Codacy Cloud**, organization owners [control if team members need an approval](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization) before joining their organizations.
+    **On Codacy Cloud**, organization owners [control if team members need an approval](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization) before joining their organizations.
 
 ## Adding people to your organization {: id="adding-people"}
 
