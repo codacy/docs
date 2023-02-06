@@ -108,7 +108,7 @@ If you're using <span class="skip-vale">PHPUnit</span> version 5 or above to gen
 
 To change the output format replace the flag `--coverage-xml <dir>` with `--coverage-clover <file>` when executing <span class="skip-vale">`phpunit`</span>.
 
-See [<span class="skip-vale">PHPUnit</span> command-line documentation](https://phpunit.readthedocs.io/en/9.5/textui.html) for more information.
+See [<span class="skip-vale">PHPUnit</span> command-line documentation](https://phpunit.readthedocs.io/en/10.0/textui.html) for more information.
 
 ## Can't validate checksum {: id="checksum"}
 
