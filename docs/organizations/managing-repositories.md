@@ -29,7 +29,7 @@ To add a new repository to Codacy, click the button **Add repository** at the to
 ![Adding a repository](images/repositories-add.png)
 
 !!! important
-    To see your repositories in this list, make sure that you have admin permissions over the repositories on the Git provider and that [Codacy has permissions to access the repositories](../faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md).
+    To see your repositories in this list, make sure that you have admin permissions over the repositories on the Git provider.
 
 Add one or multiple repositories to your organization by clicking **Add** next to the repositories. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
