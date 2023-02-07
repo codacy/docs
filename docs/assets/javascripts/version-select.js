@@ -37,9 +37,51 @@ window.addEventListener("DOMContentLoaded", function() {
         var deprecatedVersionsArray = new Array();
         var versionsArray = new Array();
 
+        // Used to decorate options with a numeric sort order
+        function decorateWithSortOrder(option) {
+            // Option version, formatted as major.minor.patch (e.g. 1.1.0)
+            var optionVersion = option.value.match(/[\d.]+/);
+            optionVersion = optionVersion ? optionVersion[0] : '';
+
+            // We split over an array for further processing.
+            var optionVersionArray = optionVersion.split('.').map(function (v) {
+                return parseInt(v, 10);
+            });
+
+            if(!optionVersionArray.length)
+            {
+                // If there is no version, we send this option to the bottom.
+                option.__sortOrder = 0;
+                return;
+            }
+
+            // Some versions only include major.minor, (e.g. 1.1). This normalizes them to 3 numbers.
+            if(optionVersionArray.length === 2)
+            {
+                optionVersionArray.push(0);
+            }
+
+            // We multiply each version number by powers of 1000:
+            //  major: millions (1000 ^ 2)
+            //  minor: thousands (1000 ^ 1)
+            //  patch: one (1000 ^ 0)
+            // This way, we can sum them and obtain a unique sort order for each version.
+            // E.g. 1.1.0 becomes 11000000, 2.5.123 becomes 2500123
+
+            var versionArrayLength = optionVersionArray.length;
+            var sortOrder = optionVersionArray.reduce(function (acc, cur, i) {
+                acc += cur * Math.pow(1000, versionArrayLength - i - 1);
+                return acc;
+            }, 0)
+
+            option.__sortOrder = sortOrder;
+        }
+
         options.forEach(function(i) {
             var option = new Option(i.text, i.value, void(0),
-                                    i.value === selected);       
+                                    i.value === selected);
+
+            decorateWithSortOrder(option);
 
             if(i.text.includes("Latest"))
             {
@@ -60,13 +102,7 @@ window.addEventListener("DOMContentLoaded", function() {
 
         // Used to order versions from latest to oldest
         function compare(a, b) {
-            let comparison = 0;
-            if (a.value > b.value) {
-                comparison = -1;
-            } else if (a.value < b.value) {
-                comparison = 1;
-            }
-            return comparison;
+            return parseInt(b.__sortOrder) - parseInt(a.__sortOrder);
         }
 
         // Add supported versions
