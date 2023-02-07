@@ -316,11 +316,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.codacy.com/faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories/</loc>
-         <lastmod>2023-02-07</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.codacy.com/faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/</loc>
          <lastmod>2023-02-07</lastmod>
          <changefreq>daily</changefreq>
