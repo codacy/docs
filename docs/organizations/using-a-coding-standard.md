@@ -29,14 +29,12 @@ To create a coding standard for your organization:
 
     Optionally, select a repository for Codacy to use as a baseline when bootstrapping the tool and pattern configurations for the new coding standard. This is useful if you already have a configured repository that you wish to use as a template.
 
-[//]: # (TODO new screenshot)
     ![Creating a new coding standard](images/coding-standard-create.png)
 
 1.  Select the programming languages that the new coding standard should cover and click **Next: Tools and patterns**.
 
     The coding standard will only include configurations for the tools that support at least one of the selected languages.
 
-[//]: # (TODO new screenshot)
     ![Selecting the languages for the coding standard](images/coding-standard-select-languages.png)
 
 1.  Configure the tools and patterns of the coding standard and click **Next: Select and apply to repositories**.
@@ -49,14 +47,12 @@ To create a coding standard for your organization:
         -   To toggle multiple code patterns at once, click the checkbox of the first pattern and **Shift+click** the checkbox of the last pattern in a range.
         -   To toggle all the code patterns visible on the list, click the checkbox on the header of the code patterns list. If there are more code patterns to load on the list, you can click the link **Enable/Disable all &lt;N&gt; patterns** to toggle all patterns matching the current filters.
 
-[//]: # (TODO review screenshot)
     ![Configuring the tools and patterns for the coding standard](images/coding-standard-configure-tools.png)
 
 1.  Select existing repositories that should follow the new coding standard and click **Save and apply standard**.
 
     Codacy will start using the new coding standard on the next analysis of each selected repository.
 
-[//]: # (TODO review screenshot)
     ![Applying the coding standard to repositories](images/coding-standard-apply.png)
 
 ## Setting a coding standard as default {: id="set-default"}
@@ -67,13 +63,11 @@ To set a coding standard as default:
 
 1.  Open your organization **Coding standards** page, tab **Coding standards**.
 
-[//]: # (TODO this may include a confirmation step)
 1.  Toggle **Make default** on the relevant coding standard card.
 
     !!! note
         Only one coding standard at a time can be the default coding standard.
 
-[//]: # (TODO new screenshot)
     ![Setting a coding standard as the default](images/coding-standard-set-default.png)
 
 ## Editing a coding standard {: id="editing"}
