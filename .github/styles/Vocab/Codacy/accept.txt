@@ -1,5 +1,6 @@
 aligncheck
 allowlist
+autovacuum
 Ameba
 Bandit
 Bitbucket
@@ -24,6 +25,7 @@ Ctrl
 [Cc]yclomatic
 dartanalyzer
 deadcode
+Dependabot
 detekt
 Dockerfile
 endif
@@ -77,5 +79,6 @@ Tailor
 tooltip
 TSLint
 TSQLLint
+vacuumdb
 Visualforce
 Xcode

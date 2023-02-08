@@ -1,5 +1,5 @@
 ---
-description: Enable the GitHub integration to have status checks, annotations, analysis summaries, and suggested fixes from Codacy directly on pull requests.
+description: Enable the GitHub integration to have status checks, annotations, issue and coverage summaries, and suggested fixes from Codacy directly on pull requests.
 ---
 
 # GitHub integration
@@ -32,27 +32,37 @@ Depending on the options that you enable, Codacy will automatically update pull 
 
 ### Status checks
 
-Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository.
+Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality settings](../../repositories-configure/adjusting-quality-settings.md) of your repository. You can then optionally [block merging pull requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
 
-{%
-    include-markdown "../../assets/includes/status-checks-important.md"
-    start="<!--coverage-status-start-->"
-    end="<!--coverage-status-end-->"
-%}
+{% include-markdown "../../assets/includes/status-checks-important.md" %}
 
 ![Pull request status check on GitHub](images/github-integration-pr-status.png)
 
-### Annotations
+### Issue annotations
 
 Adds annotations on the lines of the pull request where Codacy finds new issues. Codacy maps the severity of the issues reported by the tools to the severity levels of the annotations. To enable this option, you must enable **Status checks** first.
 
-![Pull request annotation on GitHub](images/github-integration-pr-annotation.png)
+![Issue annotation on GitHub](images/github-integration-pr-annotation.png)
 
-### Summary
+### Issue summaries
 
 Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable **Status checks** first.
 
-![Pull request summary on GitHub](images/github-integration-pr-summary.png)
+![Issue summary on GitHub](images/github-integration-pr-summary.png)
+
+### Coverage summaries
+
+Adds a pull request comment showing an overall view of the coverage metrics for the pull request, including details about the data that Codacy used to calculate the coverage variation and diff coverage metrics.
+
+When there are new coverage results, Codacy updates the last coverage summary comment if it's included in the last 5 comments of the pull request. Otherwise, Codacy creates a new comment.
+
+!!! important
+    **To get coverage summaries** you must also [add coverage to your repository](../../coverage-reporter/index.md).
+
+![Coverage summary on GitHub](images/github-integration-coverage-summary.png)
+
+!!! note
+    This feature is only supported on GitHub Cloud.
 
 ### Suggested fixes {: id="suggest-fixes"}
 
@@ -76,4 +86,4 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
 
 ## See also
 
--   [How do I block merging pull requests using Codacy as a quality gate?](../../faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md)
+-   [Integrating Codacy with your Git workflow](../../getting-started/integrating-codacy-with-your-git-workflow.md)

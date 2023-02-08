@@ -30,7 +30,7 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    version: "9.0.0"
+    version: "10.0.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
@@ -205,10 +205,10 @@ plugins:
               "hc/en-us/articles/208953205.md": "account/managing-your-profile.md"
               "hc/en-us/articles/208953205-Changing-your-username-and-avatar.md": "account/managing-your-profile.md"
               "hc/en-us/articles/208953205-Managing-your-profile.md": "account/managing-your-profile.md"
-              "hc/en-us/articles/212622529.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
-              "hc/en-us/articles/212622529-Why-can-t-I-see-or-add-my-organization-s-repositories-.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
-              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-projects-.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
-              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-s-projects-.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
+              "hc/en-us/articles/212622529.md": "organizations/managing-repositories.md"
+              "hc/en-us/articles/212622529-Why-can-t-I-see-or-add-my-organization-s-repositories-.md": "organizations/managing-repositories.md"
+              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-projects-.md": "organizations/managing-repositories.md"
+              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-s-projects-.md": "organizations/managing-repositories.md"
               "hc/en-us/articles/212799365.md": "getting-started/adding-a-codacy-badge.md"
               "hc/en-us/articles/212799365-Badges.md": "getting-started/adding-a-codacy-badge.md"
               "hc/en-us/articles/213149905.md": "account/emails.md"
@@ -305,8 +305,8 @@ plugins:
               "hc/en-us/articles/360021260713-How-does-Codacy-measure-complexity-in-my-repository-.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
               "hc/en-us/articles/360023916013.md": "related-tools/local-analysis/running-spotbugs.md"
               "hc/en-us/articles/360023916013-Run-SpotBugs.md": "related-tools/local-analysis/running-spotbugs.md"
-              "hc/en-us/articles/360025654573.md": "faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
-              "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
+              "hc/en-us/articles/360025654573.md": "getting-started/integrating-codacy-with-your-git-workflow.md"
+              "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "getting-started/integrating-codacy-with-your-git-workflow.md"
               "hc/en-us/articles/360025964333.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
               "hc/en-us/articles/360025964333-File-size-limitation.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
               "hc/en-us/articles/360025964853.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
@@ -490,7 +490,7 @@ plugins:
               "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md": "index.md"
               "repositories/security-dashboard.md": "repositories/security-monitor.md"
               "related-tools/engines.md": "getting-started/supported-languages-and-tools.md"
-              "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md": "faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
+              "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md": "getting-started/integrating-codacy-with-your-git-workflow.md"
               "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
               "repositories-configure/php_codesniffer-specifying-your-php-version.md": "repositories-configure/codacy-configuration-file.md"
               "getting-started/i-added-a-repository-now-what.md": "getting-started/codacy-quickstart.md"
@@ -537,18 +537,21 @@ plugins:
               "faq/code-analysis/do-you-check-for-dependencies.md": "faq/code-analysis/does-codacy-check-for-dependencies.md"
               "faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md"
               "faq/repositories/how-do-i-manually-force-a-repository-update.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
-              "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md": "faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
+              "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md": "getting-started/integrating-codacy-with-your-git-workflow.md"
               "coverage-reporter/troubleshooting-common-issues.md": "coverage-reporter/troubleshooting-coverage-cli-issues.md"
-              "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
+              "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md": "organizations/managing-repositories.md"
               "faq/general/why-cant-i-see-my-organization.md": "faq/troubleshooting/why-cant-i-see-my-organization.md"
               "organizations/roles-and-permissions-for-synced-organizations.md": "organizations/roles-and-permissions-for-organizations.md"
               "organizations/what-are-synced-organizations.md": "organizations/what-are-organizations.md"
               "faq/general/how-do-i-change-my-email-address-on-codacy.md": "account/emails.md"
+              "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md": "organizations/managing-repositories.md"
 
 nav:
     - Documentation home: "index.md"
     - Getting started:
           - getting-started/codacy-quickstart.md
+          - getting-started/configuring-your-repository.md
+          - getting-started/integrating-codacy-with-your-git-workflow.md
           - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
           - getting-started/adding-a-codacy-badge.md
@@ -612,6 +615,7 @@ nav:
                 - codacy-api/examples/creating-project-api-tokens-programmatically.md
                 - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
                 - codacy-api/examples/obtaining-current-issues-in-repositories.md
+                - codacy-api/examples/identifying-commits-without-coverage-data.md
     - Managing Codacy Self-hosted: "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
@@ -623,7 +627,6 @@ nav:
                 - faq/general/how-does-codacy-support-bitbucket-server.md
                 - faq/general/how-does-codacy-keep-my-data-secure.md
                 - faq/general/how-does-codacy-protect-my-privacy.md
-                - faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md
                 - faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider.md
                 - faq/general/how-can-i-change-or-cancel-my-plan.md
           - Repositories:
@@ -640,7 +643,6 @@ nav:
                 - faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md
           - Troubleshooting:
                 - faq/troubleshooting/why-cant-i-see-my-organization.md
-                - faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md
                 - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
                 - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
                 - faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md
@@ -651,6 +653,8 @@ nav:
     - Release notes:
           - release-notes/index.md
           - Cloud:
+                - 2023:
+                      - release-notes/cloud/cloud-2023-01.md
                 - 2022:
                       - release-notes/cloud/cloud-2022-12.md
                       - release-notes/cloud/cloud-2022-11.md
@@ -696,6 +700,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v10:
+                      - release-notes/self-hosted/self-hosted-v10.0.0.md
                 - v9:
                       - release-notes/self-hosted/self-hosted-v9.0.0.md
                 - v8:
