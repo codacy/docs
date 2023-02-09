@@ -153,8 +153,6 @@ window.addEventListener("DOMContentLoaded", function() {
     }
 
     function generateVersionSwitcher(versionJSON) {
-        // TODO delete the following line
-        versionJSON = testData;
         versionJSON.forEach(function(e) {
             populateVersionSitemap(e.version);
         });
