@@ -39,6 +39,10 @@ window.addEventListener("DOMContentLoaded", function() {
 
         // Used to decorate options with a numeric sort order
         function decorateWithSortOrder(option) {
+            if(!(option && option.value && option.value.match)) {
+                return;
+            }
+
             // Option version, formatted as major.minor.patch (e.g. 1.1.0)
             var optionVersion = option.value.match(/[\d.]+/);
             optionVersion = optionVersion ? optionVersion[0] : '';
