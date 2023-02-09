@@ -47,7 +47,7 @@ window.addEventListener("DOMContentLoaded", function() {
             var optionVersion = option.value.match(/[\d.]+/);
             optionVersion = optionVersion ? optionVersion[0] : '';
 
-            // We split over an array for further processing.
+            // We split over an array for further processing and convert version number from string to integer.
             var optionVersionArray = optionVersion.split('.').map(function (v) {
                 return parseInt(v, 10);
             });
@@ -59,7 +59,7 @@ window.addEventListener("DOMContentLoaded", function() {
                 return;
             }
 
-            // Some versions only include major.minor, (e.g. 1.1). This normalizes them to 3 numbers.
+            // Some versions only include major.minor, (e.g. [1, 1]). This normalizes them to 3 numbers: [1, 1, 0].
             if(optionVersionArray.length === 2)
             {
                 optionVersionArray.push(0);
@@ -70,7 +70,7 @@ window.addEventListener("DOMContentLoaded", function() {
             //  minor: thousands (1000 ^ 1)
             //  patch: one (1000 ^ 0)
             // This way, we can sum them and obtain a unique sort order for each version.
-            // E.g. 1.1.0 becomes 11000000, 2.5.123 becomes 2500123
+            // E.g. 1.1.0 becomes 1100000, 2.5.123 becomes 2500123
 
             var versionArrayLength = optionVersionArray.length;
             var sortOrder = optionVersionArray.reduce(function (acc, cur, i) {
