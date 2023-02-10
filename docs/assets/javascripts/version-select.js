@@ -37,48 +37,36 @@ window.addEventListener("DOMContentLoaded", function() {
         var deprecatedVersionsArray = new Array();
         var versionsArray = new Array();
 
-        // Used to decorate options with a numeric sort order
+        // Used to decorate options with a sort order.
         function decorateWithSortOrder(option) {
-            if(!(option && option.value && option.value.match)) {
+            if(!(option && option.value && option.value.match))
+            {
+                option.__sortOrder = '0';
                 return;
             }
 
-            // Option version, formatted as major.minor.patch (e.g. 1.1.0)
-            var optionVersion = option.value.match(/[\d.]+/);
-            optionVersion = optionVersion ? optionVersion[0] : '';
+            // We isolate the version number, e.g. 1.1.0
+            var versionNumber = option.value.match(/[\d.]+/);
 
-            // We split over an array for further processing and convert version number from string to integer.
-            var optionVersionArray = optionVersion.split('.').map(function (v) {
-                return parseInt(v, 10);
-            });
-
-            if(!optionVersionArray.length)
+            if(!versionNumber)
             {
-                // If there is no version, we send this option to the bottom.
-                option.__sortOrder = 0;
+                option.__sortOrder = '0';
                 return;
             }
 
-            // Some versions only include major.minor, (e.g. [1, 1]). This normalizes them to 3 numbers: [1, 1, 0].
-            if(optionVersionArray.length === 2)
+            var versionNumberArray = versionNumber[0].split('.');
+
+            // Some versions only include major.minor, (e.g. ['1', '1']).
+            // This normalizes them to 3 numbers: ['1', '1', '0'].
+            while(versionNumberArray.length < 3)
             {
-                optionVersionArray.push(0);
+                versionNumberArray.push('0');
             }
 
-            // We multiply each version number by powers of 1000:
-            //  major: millions (1000 ^ 2)
-            //  minor: thousands (1000 ^ 1)
-            //  patch: one (1000 ^ 0)
-            // This way, we can sum them and obtain a unique sort order for each version.
-            // E.g. 1.1.0 becomes 1100000, 2.5.123 becomes 2500123
-
-            var versionArrayLength = optionVersionArray.length;
-            var sortOrder = optionVersionArray.reduce(function (acc, cur, i) {
-                acc += cur * Math.pow(1000, versionArrayLength - i - 1);
-                return acc;
-            }, 0)
-
-            option.__sortOrder = sortOrder;
+            // https://stackoverflow.com/questions/40201533/sort-version-dotted-number-strings-in-javascript
+            option.__sortOrder = versionNumberArray.map(function (v) {
+                return +v + 10000;
+            }).join('.');
         }
 
         options.forEach(function(i) {
@@ -106,7 +94,13 @@ window.addEventListener("DOMContentLoaded", function() {
 
         // Used to order versions from latest to oldest
         function compare(a, b) {
-            return parseInt(b.__sortOrder) - parseInt(a.__sortOrder);
+            let comparison = 0;
+            if (a.__sortOrder > b.__sortOrder) {
+                comparison = -1;
+            } else if (a.__sortOrder < b.__sortOrder) {
+                comparison = 1;
+            }
+            return comparison;
         }
 
         // Add supported versions
