@@ -39,7 +39,11 @@ window.addEventListener("DOMContentLoaded", function() {
 
         // Used to decorate options with a sort order.
         function decorateWithSortOrder(option) {
-            if(!(option && option.value && option.value.match))
+            if(!option) {
+                return;
+            }
+
+            if(!(option.value && option.value.match))
             {
                 option.__sortOrder = '0';
                 return;
