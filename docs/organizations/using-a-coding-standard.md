@@ -9,12 +9,12 @@ Create a coding standard on your organization to define and apply shared tool an
 
 The organization coding standard helps you ensure that Codacy analyzes multiple repositories with the same tool and code pattern settings. For example, you can use the organization coding standard to ensure that all your repositories and teams are following the same security rules or coding conventions.
 
-If a coding standard doesn't include a tool, any pre-existing repository settings for that tool aren't modified by the coding standard.
-
 When you customize the tools or code patterns of a repository that follows the coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.
 
 !!! important
-    The coding standard turns tools with configuration files on and off. Those tool configuration files, however, take precedence over the code patterns defined on the coding standard.
+    -   If a coding standard doesn't include a tool, any pre-existing repository settings for that tool aren't modified by the coding standard.
+
+    -   The coding standard turns tools with configuration files on and off. Those tool configuration files, however, take precedence over the code patterns defined on the coding standard.
 
 ## Creating a coding standard {: id="creating"}
 
