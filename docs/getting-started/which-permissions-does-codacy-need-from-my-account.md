@@ -206,10 +206,7 @@ If you need to use an integration that you have previously revoked, log in again
 
 ## Why does Codacy ask for permission to create SSH keys?
 
-Codacy asks for permission to create SSH keys because it needs to create an SSH key in your account in the following situations:
-
--   If your repository uses submodules, so that Codacy can clone the repositories for each submodule
--   If Codacy fails to integrate with a repository using the repository key, so that Codacy can continue to perform analysis
+Codacy asks for permission to create SSH keys because it needs to create an SSH key in your account so that it can also clone the repositories for each submodule, if your repository uses git submodules.
 
 **Codacy only adds read-only SSH keys to be able to clone repositories** and won't have access to any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also [revoke the keys created by Codacy at any time](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-ssh-keys). Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.
 
