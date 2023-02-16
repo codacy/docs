@@ -1,34 +1,42 @@
 # Webhook notifications
 
-Codacy integrates with any service by sending a POST message to a defined address.
+Webhook notifications enable Codacy to integrate with any service by sending a POST message to a custom address after analyzing each commit belonging to an active branch.
 
-To add a webhook, access the **Integrations** tab of your repository **Settings**, click on **Add channel** and select **Webhook** from the list.
+## Adding a webhook notification
 
-![Adding a webhook](images/webhook-integration.png)
+To add a webhook notification:
 
-## Configuration
+1.  Open your **Repository Settings**, tab **Integrations**, and click the button **Add integration**.
 
-**Endpoint Address**
+    This opens a window listing integration options.
 
-The URL where to POST the message.
+1.  Click **Webhook** and scroll to the bottom of the page to access the newly created Webhook settings panel.
 
-After filling the field you have to click the Save button and everything should be setup correctly. You can use the Test button to send a test notification to the address.
+     ![Adding a webhook](images/webhook-integration-add.png)
 
-When Codacy sends the POST to the address the message is in JSON format. Below, you can see an example message:
+1.  Fill in the field with the address of your endpoint and click **Save**.
+
+    To send a sample payload to the specified endpoint, click the **Test** button.
+
+    ![Adding a webhook](images/webhook-integration-configure.png)
+
+## Payload format
+
+Each webhook notification includes a JSON payload with the following fields:
 
 ```json
 {
-  "commit":{
-    "data":{
-      "uuid":"4cbf02df84dbcaa44b75a64ed832f7dbff2231dd",
-        "urls":{
-          "delta":"https://www.codacy.com/public/jquery/jquery.git/commit?bid=21776&cid=6037089"
-        }
-    },
-      "results":{
-        "fixed_count":1,
-        "new_count":0
+  "commit": {
+    "data": {
+      "uuid": "4cbf02df84dbcaa44b75a64ed832f7dbff2231dd",
+      "urls": {
+        "delta": "https://www.codacy.com/public/jquery/jquery.git/commit?bid=21776&cid=6037089"
       }
+    },
+    "results": {
+      "fixed_count": 1,
+      "new_count": 0
+    }
   }
 }
 ```
