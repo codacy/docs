@@ -7,11 +7,11 @@ Members of an organization can see the details of the repositories in that organ
 
     -   Contributors who aren't part of your Git provider organization can't join your organization on Codacy app, but you should still add them to your Codacy organization to analyze their commits on private repositories.
 
-    -   In some Enterprise plans, Codacy automatically adds to the organization new people that commit on your private repositories and analyzes their commits.
+    -   In some Enterprise plans, Codacy automatically adds to the organization new people that commit on your private repositories and analyzes their commits. Also, Codacy updates your seats automatically when adding new people.
 
-To list and manage the members of your organization, open your organization **Settings**, page **People**. This page also shows when the organization members last logged in to Codacy app:
+To list and manage the members of your organization, open your organization **Settings**, page **People**. This page also shows when the organization members last logged in to Codacy app and when they last committed on your repositories:
 
-![People in an organization](images/organization-people.png)
+![People in an organization](images/organization-people.png)<!--TODO: Update image-->
 
 ## Joining an organization {: id="joining"}
 
@@ -31,17 +31,20 @@ To join or add an organization after completing the sign-up process, click **Org
 !!! tip
     You can also use the Codacy API to [add people to your Codacy organization](../codacy-api/examples/adding-people-to-codacy-programmatically.md). This is useful while adding a large amount of people or to automatically add new members of your Git provider organization to Codacy.
 
+!!! note
+    For Enterprise plans where Codacy automatically adds new people that commit on your private repositories, you can invite them to join your organization on the Codacy app.
+
 To add members to your organization:
 
 1.  Open your organization **Settings**, page **People**, and click the button **Add people**.
 
-    ![Adding members to your organization](images/organization-people-add-button.png)
+    ![Adding members to your organization](images/organization-people-add-button.png)<!--TODO: Update image-->
 
 1.  Select people from the list displaying pending requests to join the organization, as well as recent contributors to the private repositories in your organization.
 
     Alternatively, click **Add people using email addresses** to manually enter the list of email addresses of the people you wish to add.
 
-    ![Adding members to your organization](images/organization-people-add-modal.png)
+    ![Adding members to your organization](images/organization-people-add-modal.png)<!--TODO: Update image-->
 
 1.  Confirm the updated billing details displayed at the bottom of the window and click the button **Add people**. Codacy emails the newly added members inviting them to log in.
 
@@ -57,7 +60,10 @@ When a member leaves an organization:
 
 To remove members from your organization open your organization **Settings**, page **People**, and click the icon next to the members you wish to remove:
 
-![Removing people from your organization](images/organization-people-remove.png)
+![Removing people from your organization](images/organization-people-remove.png)<!--TODO: Update image-->
+
+!!! important
+    For Enterprise plans where Codacy automatically adds new people that commit on your private repositories, team members that you remove from your organization will be added again if they keep committing.
 
 ## See also
 
