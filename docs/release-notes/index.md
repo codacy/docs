@@ -16,6 +16,10 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Cloud release notes {: id="cloud"}
 
+2023
+
+-   [Cloud January 2023](cloud/cloud-2023-01.md)
+
 2022
 
 -   [Cloud December 2022](cloud/cloud-2022-12.md)
@@ -71,6 +75,10 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Cloud July 23, 2018](cloud/cloud-2018-07-23.md)
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
+
+v10
+
+-   [v10.0.0](self-hosted/self-hosted-v10.0.0.md) (February 3, 2023)
 
 v9
 

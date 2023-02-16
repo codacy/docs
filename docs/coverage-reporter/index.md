@@ -84,7 +84,7 @@ The following table contains example coverage tools that generate reports in for
 </tr>
 <tr>
     <td>PHP</td>
-    <td><a href="https://phpunit.readthedocs.io/en/9.5/code-coverage-analysis.html">PHPUnit</a></td>
+    <td><a href="https://phpunit.readthedocs.io/en/10.0/code-coverage.html">PHPUnit</a></td>
     <td><code>coverage-xml/index.xml</code> (PHPUnit XML version &lt;= 4)<br/>
         <code>clover.xml</code> (Clover)</td>
 </tr>
