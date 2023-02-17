@@ -63,7 +63,7 @@ To remove members from your organization open your organization **Settings**, pa
 ![Removing people from your organization](images/organization-people-remove.png)<!--TODO: Update image-->
 
 !!! important
-    For Enterprise plans where Codacy automatically adds new people that commit on your private repositories, team members that you remove from your organization will be added again if they keep committing.
+    For Enterprise plans where Codacy automatically adds new people that commit to your private repositories, team members that you remove from your organization will be added again if they keep committing.
 
 ## See also
 
