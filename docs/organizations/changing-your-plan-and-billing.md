@@ -22,7 +22,7 @@ If you have any questions or need help with your account, please contact <mailto
 !!! note
     -   **If you're using GitHub Marketplace,** this configuration isn't available and team members must always wait for an organization owner to manually approve their requests to join the organization.
 
-    -   In some **Enterprise plans**, Codacy automatically adds to the organization new people that commit on your private repositories. However, they still need to join the organization on the Codacy app if they want to use the UI.
+    -   In some **Enterprise plans**, Codacy automatically adds to the organization new people that commit to your private repositories. However, they still need to join the organization on the Codacy app if they want to use the UI.
 
 Choose one of the following options in your organization **Settings**, page **Plan and billing**:
 

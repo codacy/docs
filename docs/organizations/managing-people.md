@@ -3,11 +3,11 @@
 Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, Codacy only analyzes commits to **private repositories** from contributors who are members of the corresponding organization on Codacy.
 
 !!! important
-    -   Make sure that you invite or ask your team members to join your organization on Codacy so that Codacy analyzes their commits on private repositories.
+    -   Make sure that you invite or ask your team members to join your organization on Codacy so that Codacy analyzes their commits to private repositories.
 
-    -   Contributors who aren't part of your Git provider organization can't join your organization on Codacy app, but you should still add them to your Codacy organization to analyze their commits on private repositories.
+    -   Contributors who aren't part of your Git provider organization can't join your organization on Codacy app, but you should still add them to your Codacy organization to analyze their commits to private repositories.
 
-    -   In some Enterprise plans, Codacy automatically adds to the organization new people that commit on your private repositories and analyzes their commits. Also, Codacy updates your seats automatically when adding new people.
+    -   In some Enterprise plans, Codacy automatically adds to the organization new people that commit to your private repositories and analyzes their commits. Also, Codacy updates your seats automatically when adding new people.
 
 To list and manage the members of your organization, open your organization **Settings**, page **People**. This page also shows when the organization members last logged in to Codacy app and when they last committed to your repositories:
 
@@ -26,7 +26,7 @@ To join or add an organization after completing the sign-up process, click **Org
 
 ## Adding people to your organization {: id="adding-people"}
 
-**On Codacy Cloud**, organization owners can also add team members to their organization on Codacy. This is useful to allow Codacy to analyze commits in private repositories by contributors who haven't signed up to Codacy or joined the organization yet.
+**On Codacy Cloud**, organization owners can also add team members to their organization on Codacy. This is useful to allow Codacy to analyze commits to private repositories by contributors who haven't signed up to Codacy or joined the organization yet.
 
 !!! tip
     You can also use the Codacy API to [add people to your Codacy organization](../codacy-api/examples/adding-people-to-codacy-programmatically.md). This is useful while adding a large amount of people or to automatically add new members of your Git provider organization to Codacy.
