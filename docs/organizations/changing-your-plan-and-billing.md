@@ -26,7 +26,7 @@ If you have any questions or need help with your account, please contact <mailto
 
 Choose one of the following options in your organization **Settings**, page **Plan and billing**:
 
--   **Allow new people to join immediately:** team members with access to the organization on the Git provider can join the organization on Codacy app immediately, as long as there are seats available.
+-   **Allow new people to join immediately:** team members with access to the organization on the Git provider can join the organization on the Codacy app immediately, as long as there are seats available.
 
 -   **Review join requests from new people:** when team members with access to the organization on the Git provider join the organization on Codacy app, an organization owner must manually approve their requests to join on the page **People**.
 
