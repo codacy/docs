@@ -9,7 +9,7 @@ Members of an organization can see the details of the repositories in that organ
 
     -   In some Enterprise plans, Codacy automatically adds to the organization new people that commit to your private repositories and analyzes their commits. Also, Codacy updates your seats automatically when adding new people.
 
-To list and manage the members of your organization, open your organization **Settings**, page **People**. This page also shows when the organization members last logged in to Codacy app and when they last committed to your repositories:
+To list and manage the members of your organization, open your organization **Settings**, page **People**. This page also shows when the organization members last logged in to the Codacy app:
 
 ![People in an organization](images/organization-people.png)<!--TODO: Update image-->
 
