@@ -1,14 +1,12 @@
 # Webhook notifications
 
-Webhook notifications enable Codacy to integrate with any service by sending a POST message to a custom address after analyzing each commit belonging to an active branch.
+Webhook notifications enable Codacy to integrate with a service by sending a POST message to a custom address after analyzing each commit belonging to an active branch. You can set up multiple webhook notifications per repository.
 
 ## Adding a webhook notification
 
 To add a webhook notification:
 
-1.  Open your **Repository Settings**, tab **Integrations**, and click the button **Add integration**.
-
-    This opens a window listing integration options.
+1.  Open your repository **Settings**, tab **Integrations**, and click the button **Add integration** to open a modal window listing integration options.
 
 1.  Click **Webhook** and scroll to the bottom of the page to access the newly created Webhook settings panel.
 
