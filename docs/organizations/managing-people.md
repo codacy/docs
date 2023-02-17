@@ -32,7 +32,7 @@ To join or add an organization after completing the sign-up process, click **Org
     You can also use the Codacy API to [add people to your Codacy organization](../codacy-api/examples/adding-people-to-codacy-programmatically.md). This is useful while adding a large amount of people or to automatically add new members of your Git provider organization to Codacy.
 
 !!! note
-    For Enterprise plans where Codacy automatically adds new people that commit on your private repositories, you can invite them to join your organization on the Codacy app.
+    For Enterprise plans where Codacy automatically adds new people that commit to your private repositories, you can invite them to join your organization on the Codacy app.
 
 To add members to your organization:
 
