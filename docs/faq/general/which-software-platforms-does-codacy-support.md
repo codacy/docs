@@ -75,3 +75,7 @@ Codacy runs on every modern browser supporting HTML5 and CSS3:
 -   Firefox 45+
 -   Internet Explorer 11+
 -   Microsoft Edge 13+
+
+## Supported character encodings
+
+Codacy supports the UTF-8 character encoding standard.
