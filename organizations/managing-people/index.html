@@ -11,7 +11,7 @@
         <meta name="description" content="Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, Codacy only analyzes commits to private repositories from contributors who are members of the corresponding organization on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2023-01-09 14:39:36">
+        <meta http-equiv="last-modified" content="2023-02-20 18:19:52">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-people/">
@@ -3648,24 +3648,37 @@
 <p>Members of an organization can see the details of the repositories in that organization and add new repositories to be analyzed by Codacy. Besides this, Codacy only analyzes commits to <strong>private repositories</strong> from contributors who are members of the corresponding organization on Codacy.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Make sure that you invite or ask your team members to join your organization on Codacy so that Codacy analyzes their commits on private repositories.</p>
-<p>Contributors who aren't part of your Git provider organization can't join your Codacy organization, but you should still add them to Codacy to analyze their commits on private repositories.</p>
+<ul>
+<li>
+<p>Make sure that you invite or ask your team members to join your organization on Codacy so that Codacy analyzes their commits to private repositories.</p>
+</li>
+<li>
+<p>Contributors who aren't part of your Git provider organization can't join your organization on Codacy app, but you should still add them to your Codacy organization to analyze their commits to private repositories.</p>
+</li>
+<li>
+<p>In some Enterprise plans, Codacy automatically adds to the organization new people that commit to your private repositories and analyzes their commits. Also, Codacy updates your seats automatically when adding new people.</p>
+</li>
+</ul>
 </div>
-<p>To list and manage the members of your organization, open your organization <strong>Settings</strong>, page <strong>People</strong>. This page also shows when the organization members last logged in to Codacy:</p>
+<p>To list and manage the members of your organization, open your organization <strong>Settings</strong>, page <strong>People</strong>. This page also shows when the organization members last logged in to the Codacy app:</p>
 <p><img alt="People in an organization" src="../images/organization-people.png" /></p>
 <h2 id="joining">Joining an organization<a class="headerlink" href="#joining" title="Permanent link">#</a></h2>
-<p>To become a member of an organization on Codacy you must <a href="../../getting-started/codacy-quickstart/">sign up to Codacy</a> using your Git provider and follow the instructions to either join an existing organization or add a new one.</p>
+<p>To become a member of an organization on Codacy app you must <a href="../../getting-started/codacy-quickstart/">sign up to Codacy</a> using your Git provider and follow the instructions to either join an existing organization or add a new one.</p>
 <p>To join or add an organization after completing the sign-up process, click <strong>Organizations</strong> on the top right-hand menu under your avatar:</p>
 <p><img alt="Joining an organization" src="../images/organization-join.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>On Codacy Cloud</strong>, organization owners <a href="../changing-your-plan-and-billing/#accepting-new-people-to-your-organization">control if team members need an approval</a> before joining their organizations.</p>
+<p><strong>On Codacy Cloud</strong>, organization owners <a href="../changing-your-plan-and-billing/#allowing-new-people-to-join-your-organization">control if team members need an approval</a> before joining their organizations.</p>
 </div>
 <h2 id="adding-people">Adding people to your organization<a class="headerlink" href="#adding-people" title="Permanent link">#</a></h2>
-<p><strong>On Codacy Cloud</strong>, organization owners can also invite team members to their organization on Codacy. This is useful to allow Codacy to analyze commits in private repositories by contributors who haven't signed up to Codacy or joined the organization yet.</p>
+<p><strong>On Codacy Cloud</strong>, organization owners can also add team members to their organization on Codacy. This is useful to allow Codacy to analyze commits to private repositories by contributors who haven't signed up to Codacy or joined the organization yet.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can also use the Codacy API to <a href="../../codacy-api/examples/adding-people-to-codacy-programmatically/">add people to your Codacy organization</a>. This is useful while adding a large amount of people or to automatically add new members of your Git provider organization to Codacy.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For Enterprise plans where Codacy automatically adds new people that commit to your private repositories, you can invite them to join your organization on the Codacy app.</p>
 </div>
 <p>To add members to your organization:</p>
 <ol>
@@ -3692,6 +3705,10 @@
 </ul>
 <p>To remove members from your organization open your organization <strong>Settings</strong>, page <strong>People</strong>, and click the icon next to the members you wish to remove:</p>
 <p><img alt="Removing people from your organization" src="../images/organization-people-remove.png" /></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>For Enterprise plans where Codacy automatically adds new people that commit to your private repositories, team members that you remove from your organization will be added again if they keep committing.</p>
+</div>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../codacy-api/examples/adding-people-to-codacy-programmatically/">Adding people to Codacy programmatically</a></li>
@@ -3853,7 +3870,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 9, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 20, 2023</span>
     
   </small>
 </div>
