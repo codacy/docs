@@ -15,6 +15,8 @@ If the switch isn't visible, go to the **Integrations** tab and add the GitHub o
 !!! important
     Make sure that you enable the integration after adding it.
 
+![Adding an integration](images/post-commit-hook-add.png)
+
 ## Manual setup of post-commit hooks on GitHub
 
 To turn on post-commit hooks for GitHub:
