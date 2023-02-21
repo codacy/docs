@@ -179,4 +179,4 @@ https://docs.codacy.com/repositories-configure/integrations/gitlab-integration/,
 https://docs.codacy.com/repositories-configure/integrations/jira-integration/,The Jira integration incorporates Codacy on your existing Jira workflows.
 https://docs.codacy.com/repositories-configure/integrations/post-commit-hooks/,For Codacy to check updates in your repository (new commits and pull requests) you must have post-commit hooks enabled.
 https://docs.codacy.com/repositories-configure/integrations/slack-integration/,Enable the Slack integration to integrate Codacy with Slack by sending messages to a channel when it finds new issues.
-https://docs.codacy.com/repositories-configure/integrations/webhook-notifications/,Codacy integrates with any service by sending a POST message to a defined address.
+https://docs.codacy.com/repositories-configure/integrations/webhook-notifications/,Webhook notifications enable Codacy to integrate with a service by sending a POST message to a custom address after analyzing each commit belonging to an active branch. You can set up multiple webhook notifications per repository.

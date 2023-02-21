@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Codacy integrates with any service by sending a POST message to a defined address.">
+        <meta name="description" content="Webhook notifications enable Codacy to integrate with a service by sending a POST message to a custom address after analyzing each commit belonging to an active branch. You can set up multiple webhook notifications per repository.">
       
       
-        <meta http-equiv="last-modified" content="2020-11-17 12:15:18">
+        <meta http-equiv="last-modified" content="2023-02-21 15:58:31">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/webhook-notifications/">
@@ -532,8 +532,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#configuration" class="md-nav__link">
-    Configuration
+  <a href="#adding-a-webhook-notification" class="md-nav__link">
+    Adding a webhook notification
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#payload-format" class="md-nav__link">
+    Payload format
   </a>
   
 </li>
@@ -3626,26 +3633,37 @@
                 
                 
                 <h1 id="webhook-notifications">Webhook notifications<a class="headerlink" href="#webhook-notifications" title="Permanent link">#</a></h1>
-<p>Codacy integrates with any service by sending a POST message to a defined address.</p>
-<p>To add a webhook, access the <strong>Integrations</strong> tab of your repository <strong>Settings</strong>, click on <strong>Add channel</strong> and select <strong>Webhook</strong> from the list.</p>
-<p><img alt="Adding a webhook" src="../images/webhook-integration.png" /></p>
-<h2 id="configuration">Configuration<a class="headerlink" href="#configuration" title="Permanent link">#</a></h2>
-<p><strong>Endpoint Address</strong></p>
-<p>The URL where to POST the message.</p>
-<p>After filling the field you have to click the Save button and everything should be setup correctly. You can use the Test button to send a test notification to the address.</p>
-<p>When Codacy sends the POST to the address the message is in JSON format. Below, you can see an example message:</p>
+<p>Webhook notifications enable Codacy to integrate with a service by sending a POST message to a custom address after analyzing each commit belonging to an active branch. You can set up multiple webhook notifications per repository.</p>
+<h2 id="adding-a-webhook-notification">Adding a webhook notification<a class="headerlink" href="#adding-a-webhook-notification" title="Permanent link">#</a></h2>
+<p>To add a webhook notification:</p>
+<ol>
+<li>
+<p>Open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>, and click the button <strong>Add integration</strong> to open a modal window listing integration options.</p>
+</li>
+<li>
+<p>Click <strong>Webhook</strong> and scroll to the bottom of the page to access the newly created Webhook settings panel.</p>
+<p><img alt="Adding a webhook" src="../images/webhook-integration-add.png" /></p>
+</li>
+<li>
+<p>Fill in the field with the address of your endpoint and click <strong>Save</strong>.</p>
+<p>To send a sample payload to the specified endpoint, click the <strong>Test</strong> button.</p>
+<p><img alt="Adding a webhook" src="../images/webhook-integration-configure.png" /></p>
+</li>
+</ol>
+<h2 id="payload-format">Payload format<a class="headerlink" href="#payload-format" title="Permanent link">#</a></h2>
+<p>Each webhook notification includes a JSON payload with the following fields:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;commit&quot;</span><span class="p">:{</span>
-<span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:{</span>
-<span class="w">      </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="s2">&quot;4cbf02df84dbcaa44b75a64ed832f7dbff2231dd&quot;</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;urls&quot;</span><span class="p">:{</span>
-<span class="w">          </span><span class="nt">&quot;delta&quot;</span><span class="p">:</span><span class="s2">&quot;https://www.codacy.com/public/jquery/jquery.git/commit?bid=21776&amp;cid=6037089&quot;</span>
-<span class="w">        </span><span class="p">}</span>
-<span class="w">    </span><span class="p">},</span>
-<span class="w">      </span><span class="nt">&quot;results&quot;</span><span class="p">:{</span>
-<span class="w">        </span><span class="nt">&quot;fixed_count&quot;</span><span class="p">:</span><span class="mi">1</span><span class="p">,</span>
-<span class="w">        </span><span class="nt">&quot;new_count&quot;</span><span class="p">:</span><span class="mi">0</span>
+<span class="w">  </span><span class="nt">&quot;commit&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">&quot;data&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;uuid&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;4cbf02df84dbcaa44b75a64ed832f7dbff2231dd&quot;</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;urls&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="nt">&quot;delta&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;https://www.codacy.com/public/jquery/jquery.git/commit?bid=21776&amp;cid=6037089&quot;</span>
 <span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">},</span>
+<span class="w">    </span><span class="nt">&quot;results&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="nt">&quot;fixed_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
+<span class="w">      </span><span class="nt">&quot;new_count&quot;</span><span class="p">:</span><span class="w"> </span><span class="mi">0</span>
+<span class="w">    </span><span class="p">}</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
@@ -3805,7 +3823,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2020</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 21, 2023</span>
     
   </small>
 </div>
