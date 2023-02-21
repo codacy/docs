@@ -108,7 +108,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
 </table>
 
 <sup>1</sup>: Outside Collaborators aren't supported as members of organizations on Codacy. You can still [add Outside Collaborators to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.  
-<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization).
+<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).
 
 ## Permissions for GitLab
 
@@ -205,7 +205,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
 </table>
 
 <sup>1</sup>: External Users aren't supported as members of organizations on Codacy. You can still [add External Users to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.  
-<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization).
+<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).
 
 ## Permissions for Bitbucket
 
@@ -270,7 +270,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
 </table>
 
 <sup>1</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.  
-<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization).
+<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).
 
 ## Configuring who can change the analysis configuration {: id="change-analysis-configuration"}
 
@@ -296,7 +296,7 @@ To change this, open your organization **Settings**, page **Member privileges**,
 ## See also
 
 -   [Managing people](managing-people.md)
--   [Accepting new people to your organization](changing-your-plan-and-billing.md#accepting-new-people-to-your-organization)
+-   [Accepting new people to your organization](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization)
 
 <!-- vale off -->
 <style>
