@@ -2,7 +2,7 @@
 description: Codacy runs on every modern browser supporting HTML5 and CSS3.
 ---
 
-# Which software technologies does Codacy support?
+# Which platforms and technologies does Codacy support?
 
 ## Supported version control systems and Git providers
 
