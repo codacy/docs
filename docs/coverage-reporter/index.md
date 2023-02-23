@@ -423,6 +423,14 @@ Follow these instructions to validate that your coverage setup is working correc
             Check <a href="../repositories-configure/ignoring-files/">which files are ignored on Codacy</a> and make sure that you're generating coverage reports for the correct files in your repository.
         </td>
     </tr>
+    <tr>
+        <td>
+            The uploaded coverage data is incorrectly associated, using the `-l` option, to a language that's not present in your repository.
+        </td>
+        <td>
+            Verify that you are associating the correct language, or don't specify a language to let Codacy detect the contents of the coverage reports automatically. See <a href="uploading-coverage-in-advanced-scenarios/">how to upload coverage in advanced scenarios</a> for more information.
+        </td>
+    </tr>
     </table>
 
 1.  Check that Codacy displays the coverage metrics for the latest commits and pull requests.
