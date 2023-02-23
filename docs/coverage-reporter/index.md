@@ -425,7 +425,7 @@ Follow these instructions to validate that your coverage setup is working correc
     </tr>
     <tr>
         <td>
-            The uploaded coverage data is incorrectly marked, using the `-l` option, as only including files in a language that's not present in your repository.
+            The uploaded coverage data is incorrectly associated with the `-l` option to a language that's not present in your repository.
         </td>
         <td>
             Verify that you are marking the correct language, or don't specify a language to let Codacy detect the contents of the coverage reports automatically. See <a href="uploading-coverage-in-advanced-scenarios/">how to upload coverage in advanced scenarios</a> for more information.
