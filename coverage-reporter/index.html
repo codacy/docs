@@ -11,7 +11,7 @@
         <meta name="description" content="Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2023-02-13 15:26:10">
+        <meta http-equiv="last-modified" content="2023-02-23 14:28:56">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/">
@@ -4031,6 +4031,14 @@ slather<span class="w"> </span>coverage<span class="w"> </span>-x<span class="w"
         Check <a href="../repositories-configure/ignoring-files/">which files are ignored on Codacy</a> and make sure that you're generating coverage reports for the correct files in your repository.
     </td>
 </tr>
+<tr>
+    <td>
+        The uploaded coverage data is incorrectly associated, using the <code>-l</code> option, to a language that's not present in your repository.
+    </td>
+    <td>
+        Verify that you are associating the correct language, or don't specify a language to let Codacy detect the contents of the coverage reports automatically. See <a href="uploading-coverage-in-advanced-scenarios/">how to upload coverage in advanced scenarios</a> for more information.
+    </td>
+</tr>
 </table></p>
 </li>
 <li>
@@ -4229,7 +4237,7 @@ slather<span class="w"> </span>coverage<span class="w"> </span>-x<span class="w"
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 13, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 23, 2023</span>
     
   </small>
 </div>
