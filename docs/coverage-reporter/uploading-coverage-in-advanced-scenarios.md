@@ -87,4 +87,4 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
   -l Kotlin --force-language -r <coverage report file name>
 ```
 
-See the [list of languages](https://github.com/codacy/codacy-plugins-api/blob/master/src/main/scala/com/codacy/plugins/api/languages/Language.scala#L43) that you can specify using the flag `-l`.
+See the [list of languages](https://github.com/codacy/codacy-plugins-api/blob/master/src/main/scala/com/codacy/plugins/api/languages/Language.scala#L41) that you can specify using the flag `-l`.
