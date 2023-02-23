@@ -94,7 +94,15 @@ To edit an existing coding standard or change the repositories that follow that 
 !!! tip
     To ensure that all new repositories automatically follow the coding standard, [set the coding standard as default](#set-default).
 
-[//]: # (TODO ## Deleting a coding standard {: id="deleting"})
+## Deleting a coding standard {: id="deleting"}
+
+To delete a coding standard:
+
+1.  Open your organization **Coding standards** page, tab **Coding standards**.
+
+1.  Click the trash can icon on the coding standard card and confirm by clicking **Delete coding standard**.
+
+    ![Deleting a coding standard](images/coding-standard-delete.png)
 
 ## See also
 
