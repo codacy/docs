@@ -7,7 +7,7 @@ description: There are alternative ways of running or installing Codacy Coverage
 The following sections list the alternative ways of running or installing Codacy Coverage Reporter.
 
 !!! important
-    **If you're using Codacy Self-hosted {{extra.version}}** you must use [Codacy Coverage Reporter 13.10.15](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.10.15) to ensure it's compatible with your Codacy instance.
+    **If you're using Codacy Self-hosted {{extra.version}}** you must use [Codacy Coverage Reporter 13.12.3](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.12.3) to ensure it's compatible with your Codacy instance.
 
 ## Bash script (recommended) {: id="bash-script"}
 
@@ -86,9 +86,9 @@ You can use the scripts below to automatically check for the latest version of t
     ./codacy-coverage-reporter report
     ```
 
-### Java 8
+### Java
 
-Use the Java 8 binary to run Codacy Coverage reporter on other platforms, such as Linux x86, macOS, Windows, etc.
+Use the Java binary to run Codacy Coverage reporter on other platforms, such as Linux x86, macOS, Windows, etc.
 
 You can use the scripts below to automatically check for the latest version of the Java binaries, download the binaries from either Codacy's public store or GitHub, and run them.
 
