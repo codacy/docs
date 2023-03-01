@@ -364,6 +364,7 @@ The table below displays the code coverage metrics as calculated by Codacy:
 ## See also
 
 -   [Which metrics does Codacy calculate?](which-metrics-does-codacy-calculate.md#code-coverage)
+-   [Adding coverage to your repository](../../coverage-reporter/index.md)
 
 <style>
 /*Center text*/
