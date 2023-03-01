@@ -7,7 +7,7 @@ description: Create an account API token to authorize access to all the reposito
 Codacy provides **account** and **project**-level API tokens that allow you to:
 
 -   [Upload coverage data](../coverage-reporter/index.md) to Codacy
--   [Upload the results of running local analysis](../related-tools/local-analysis/running-local-analysis.md) to Codacy
+-   [Upload the results of running local analysis](../repositories-configure/local-analysis/running-local-analysis.md) to Codacy
 -   [Authenticate when using the Codacy API](using-the-codacy-api.md#authenticating-requests)
 
 The sections below provide details about the two types of API tokens and instructions on how to generate and revoke them.
@@ -58,6 +58,6 @@ To revoke a project API token, click the trash can icon for the corresponding **
 ## See also
 
 -   [Adding coverage to your repository](../coverage-reporter/index.md)
--   [Running local analysis](../related-tools/local-analysis/running-local-analysis.md)
--   [Client-side tools](../related-tools/local-analysis/client-side-tools.md)
+-   [Running local analysis](../repositories-configure/local-analysis/running-local-analysis.md)
+-   [Client-side tools](../repositories-configure/local-analysis/client-side-tools.md)
 -   [Creating project API tokens programmatically](examples/creating-project-api-tokens-programmatically.md)
