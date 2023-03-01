@@ -21,7 +21,7 @@ The table below describes the supported client-side tools and includes links to 
     When adding a new supported tool, make sure that you update the following pages:
 
     docs/getting-started/supported-languages-and-tools.md
-    docs/related-tools/local-analysis/client-side-tools.md (if the tool runs client-side)
+    docs/repositories-configure/local-analysis/client-side-tools.md (if the tool runs client-side)
     docs/repositories/security-monitor.md (if the tool reports security issues)
     docs/repositories-configure/configuring-code-patterns.md (supported configuration files table, or list of tools that don't support configuration files)
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)

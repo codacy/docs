@@ -352,7 +352,7 @@ Follow these instructions to validate that your coverage setup is working correc
             The setting <strong>Run analysis on your build server</strong> is on, but your client-side tools didn't upload results to Codacy.
         </td>
         <td>
-            Make sure that your <a href="../related-tools/local-analysis/client-side-tools/">client-side tools</a> run successfully and upload the results to Codacy to complete the analysis.
+            Make sure that your <a href="../repositories-configure/local-analysis/client-side-tools/">client-side tools</a> run successfully and upload the results to Codacy to complete the analysis.
         </td>
     </tr>
     <tr>

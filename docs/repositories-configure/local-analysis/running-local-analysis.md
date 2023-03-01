@@ -19,7 +19,7 @@ codacy-analysis-cli analyze --directory <SOURCE-CODE-PATH> \
                             --upload
 ```
 
-If you don't specify the tool, the analysis will run as Codacy does in the backend. To obtain results for [a particular tool](../../repositories-configure/codacy-configuration-file.md#which-tools-can-be-configured-and-which-name-should-i-use), specify the tool with `--tool`.
+If you don't specify the tool, the analysis will run as Codacy does in the backend. To obtain results for [a particular tool](../codacy-configuration-file.md#which-tools-can-be-configured-and-which-name-should-i-use), specify the tool with `--tool`.
 
 ### Advanced configuration
 

@@ -16,7 +16,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     When adding a new supported tool, make sure that you update the following pages:
 
     docs/getting-started/supported-languages-and-tools.md
-    docs/related-tools/local-analysis/client-side-tools.md (if the tool runs client-side)
+    docs/repositories-configure/local-analysis/client-side-tools.md (if the tool runs client-side)
     docs/repositories/security-monitor.md (if the tool reports security issues)
     docs/repositories-configure/configuring-code-patterns.md (supported configuration files table, or list of tools that don't support configuration files)
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
@@ -384,7 +384,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
   </tbody>
 </table>
 
-<sup><span id="client-side">1</span></sup>: Supported as a [client-side tool](../related-tools/local-analysis/client-side-tools.md).  
+<sup><span id="client-side">1</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
 <sup><span id="cppcheck-misra">2</span></sup>: Currently, Cppcheck only supports [checking the MISRA guidelines for C](https://cppcheck.sourceforge.io/misra.php).  
 <sup><span id="dart-limitations">3</span></sup>: Currently, Codacy only supports including the packages [lints](https://pub.dev/packages/lints) and [flutter_lints](https://pub.dev/packages/flutter_lints) on dartanalyzer configuration files.  
 <sup><span id="ruby-31">4</span></sup>: Currently, Codacy doesn't support any static code analysis tool for [Ruby 3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/).  
@@ -603,5 +603,5 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 ## See also
 
 -   [Codacy quickstart (5 min)](codacy-quickstart.md)
--   [Client-side tools](../related-tools/local-analysis/client-side-tools.md)
+-   [Client-side tools](../repositories-configure/local-analysis/client-side-tools.md)
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
