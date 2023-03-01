@@ -157,8 +157,8 @@ plugins:
               "hc/en-us/articles/207280239-Bitbucket-Integration.md": "repositories-configure/integrations/bitbucket-integration.md"
               "hc/en-us/articles/207280359.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280359-WebHook-Notifications.md": "repositories-configure/integrations/webhook-notifications.md"
-              "hc/en-us/articles/207280379.md": "related-tools/codacy-plugin-tools.md"
-              "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "related-tools/codacy-plugin-tools.md"
+              "hc/en-us/articles/207280379.md": "getting-started/supported-languages-and-tools.md#codacy-plugin-tools"
+              "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "getting-started/supported-languages-and-tools.md#codacy-plugin-tools"
               "hc/en-us/articles/207312879.md": "coverage-reporter/index.md"
               "hc/en-us/articles/207312879-Generate-Coverage.md": "coverage-reporter/index.md"
               "hc/en-us/articles/207993605.md": "getting-started/codacy-quickstart.md"
@@ -174,8 +174,8 @@ plugins:
               "hc/en-us/articles/207994395-Language-Extensions.md": "repositories-configure/file-extensions.md"
               "hc/en-us/articles/207994675.md": "codacy-api/api-tokens.md"
               "hc/en-us/articles/207994675-Project-API.md": "codacy-api/api-tokens.md"
-              "hc/en-us/articles/207994725.md": "related-tools/codacy-plugin-tools.md"
-              "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "related-tools/codacy-plugin-tools.md"
+              "hc/en-us/articles/207994725.md": "getting-started/supported-languages-and-tools.md#codacy-plugin-tools"
+              "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "getting-started/supported-languages-and-tools.md#codacy-plugin-tools"
               "hc/en-us/articles/207994735.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/207994765.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
@@ -457,8 +457,8 @@ plugins:
               "getting-started/setting-up-your-personal-repositories.md": "getting-started/codacy-quickstart.md"
               "getting-started/supported-languages.md": "getting-started/supported-languages-and-tools.md"
               "account/default-patterns.md": "repositories-configure/configuring-code-patterns.md"
-              "related-tools/tool-developer-guide.md": "related-tools/codacy-plugin-tools.md"
-              "related-tools/tool-developer-guide-using-scala.md": "related-tools/codacy-plugin-tools.md"
+              "related-tools/tool-developer-guide.md": "getting-started/supported-languages-and-tools.md#codacy-plugin-tools"
+              "related-tools/tool-developer-guide-using-scala.md": "getting-started/supported-languages-and-tools.md#codacy-plugin-tools"
               "organizations/adding-and-managing-authors.md": "organizations/managing-people.md"
               "organizations/authors-vs-members.md": "organizations/managing-people.md"
               "organizations/configuring-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-organizations.md"
@@ -547,6 +547,7 @@ plugins:
               "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md": "organizations/managing-repositories.md"
               "faq/general/which-browsers-does-codacy-support.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
               "faq/general/which-version-control-systems-does-codacy-support.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
+              "related-tools/codacy-plugin-tools.md": "getting-started/supported-languages-and-tools.md#codacy-plugin-tools"
 
 nav:
     - Documentation home: "index.md"
@@ -605,7 +606,6 @@ nav:
                 - related-tools/local-analysis/running-aligncheck.md
                 - related-tools/local-analysis/running-deadcode.md
                 - related-tools/local-analysis/running-spotbugs.md
-          - related-tools/codacy-plugin-tools.md
     - Codacy API:
           - codacy-api/using-the-codacy-api.md
           - codacy-api/api-tokens.md

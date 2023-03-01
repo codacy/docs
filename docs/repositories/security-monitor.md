@@ -65,7 +65,6 @@ The Security Monitor supports checking the languages and frameworks below for an
     When adding a new supported tool, make sure that you update the following pages:
 
     docs/getting-started/supported-languages-and-tools.md
-    docs/related-tools/codacy-plugin-tools.md
     docs/related-tools/local-analysis/client-side-tools.md (if the tool runs client-side)
     docs/repositories/security-monitor.md (if the tool reports security issues)
     docs/repositories-configure/configuring-code-patterns.md (supported configuration files table, or list of tools that don't support configuration files)
