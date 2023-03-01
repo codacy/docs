@@ -391,11 +391,11 @@ The table below lists all languages and frameworks that Codacy supports and the 
 <sup><span id="swiftlint-complexity">5</span></sup>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html) on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code patterns page](../repositories-configure/configuring-code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration) to customize the thresholds.  
 <sup><span id="suggest-fixes">🔧</span></sup>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
 
-## Codacy plugin tools
+## Codacy wrappers for supported tools
 
-Codacy uses a system of plugin tools to extend the scope of analyses on your repositories, allowing support for new languages and tools.
+Codacy adds support for new languages and tools by using ["wrapper" Docker images for running each tool](https://github.com/codacy/codacy-example-tool).
 
-The Codacy GitHub repositories list the version and extra plugins supported by each plugin tool. You can also submit GitHub issues on these repositories.
+The following table lists the Codacy GitHub repositories corresponding to each supported tool. Use these repositories to check the version and extra plugins supported by each tool, or to submit GitHub issues related to each tool.
 
 <table>
 <thead>
