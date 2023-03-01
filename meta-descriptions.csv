@@ -78,12 +78,6 @@ https://docs.codacy.com/organizations/organization-overview/,The Organization Ov
 https://docs.codacy.com/organizations/roles-and-permissions-for-organizations/,"List of operations that users can perform on Codacy depending on their role on the Git provider, and how to configure who can change analysis configurations."
 https://docs.codacy.com/organizations/using-a-coding-standard/,Create a coding standard on your organization to define and apply shared tool and code pattern configurations consistently across your repositories. You can also apply the coding standard to new repositories automatically by defining the coding standard as default.
 https://docs.codacy.com/organizations/what-are-organizations/,"Codacy organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that don't belong to a Git provider organization), and team members into Codacy with a few clicks."
-https://docs.codacy.com/related-tools/codacy-plugin-tools/,"Codacy uses a system of plugin tools to extend the scope of analyses on your repositories, allowing support for new languages and tools every day."
-https://docs.codacy.com/related-tools/local-analysis/client-side-tools/,"Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools together with all other code quality information on the Codacy dashboards."
-https://docs.codacy.com/related-tools/local-analysis/running-aligncheck/,Instructions on how to run aligncheck as a client-side tool on Codacy.
-https://docs.codacy.com/related-tools/local-analysis/running-deadcode/,Instructions on how to run deadcode as a client-side tool on Codacy.
-https://docs.codacy.com/related-tools/local-analysis/running-local-analysis/,Documentation for the Codacy Quality automated code review tool.
-https://docs.codacy.com/related-tools/local-analysis/running-spotbugs/,Instructions on how to run SpotBugs as a client-side tool on Codacy.
 https://docs.codacy.com/release-notes/,Index of release notes for Codacy Cloud and Codacy Self-hosted.
 https://docs.codacy.com/release-notes/cloud/cloud-2018-07-23/,"Release notes for Codacy Cloud July 23, 2018."
 https://docs.codacy.com/release-notes/cloud/cloud-2018-10-19/,"Release notes for Codacy Cloud October 19, 2018."
@@ -179,3 +173,8 @@ https://docs.codacy.com/repositories-configure/integrations/jira-integration/,Th
 https://docs.codacy.com/repositories-configure/integrations/post-commit-hooks/,For Codacy to check updates in your repository (new commits and pull requests) you must have post-commit hooks enabled.
 https://docs.codacy.com/repositories-configure/integrations/slack-integration/,Enable the Slack integration to integrate Codacy with Slack by sending messages to a channel when it finds new issues.
 https://docs.codacy.com/repositories-configure/integrations/webhook-notifications/,Webhook notifications enable Codacy to integrate with a service by sending a POST message to a custom address after analyzing each commit belonging to an active branch. You can set up multiple webhook notifications per repository.
+https://docs.codacy.com/repositories-configure/local-analysis/client-side-tools/,"Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools together with all other code quality information on the Codacy dashboards."
+https://docs.codacy.com/repositories-configure/local-analysis/running-aligncheck/,Instructions on how to run aligncheck as a client-side tool on Codacy.
+https://docs.codacy.com/repositories-configure/local-analysis/running-deadcode/,Instructions on how to run deadcode as a client-side tool on Codacy.
+https://docs.codacy.com/repositories-configure/local-analysis/running-local-analysis/,Documentation for the Codacy Quality automated code review tool.
+https://docs.codacy.com/repositories-configure/local-analysis/running-spotbugs/,Instructions on how to run SpotBugs as a client-side tool on Codacy.
