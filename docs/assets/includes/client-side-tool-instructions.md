@@ -1,6 +1,8 @@
-<!--instructions-start-->
+<!--instructions-ui-setup-start-->
 1.  [Enable {{ page.meta.tool_name }}](../../repositories-configure/configuring-code-patterns.md) and configure the corresponding code patterns on your repository **Code patterns** page.
+<!--instructions-ui-setup-end-->
 
+<!--instructions-start-->
 1.  Enable **Run analysis on your build server** on your repository **Settings**, tab **General**, **Repository analysis**.
 
     This setting enables Codacy to wait for the results of the local analysis before resuming the analysis of your commits.

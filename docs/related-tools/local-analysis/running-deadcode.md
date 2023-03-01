@@ -11,6 +11,11 @@ To run deadcode as a [client-side tool](client-side-tools.md):
      include-markdown breaks the final list in two, use include instead. -->
 {%
     include "../../assets/includes/client-side-tool-instructions.md"
+    start="<!--instructions-ui-setup-start-->"
+    end="<!--instructions-ui-setup-end-->"
+%}
+{%
+    include "../../assets/includes/client-side-tool-instructions.md"
     start="<!--instructions-start-->"
     end="<!--instructions-end-->"
 %}
