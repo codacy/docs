@@ -1,83 +1,38 @@
----
-tool_name: the Codacy Analysis CLI
----
-
-[//]: # (TODO global:)
-[//]: # ( *This page is now pretty similar to the tool-specific ones. Should we consolidate somehow?)
-
 # Running local analysis
 
-[//]: # (TODO: add concepts)
+## Set up the Codacy Analysis CLI
+
+Follow the [installation guide](https://github.com/codacy/codacy-analysis-cli#install) to get the `codacy-analysis-cli` executable running on your build server.
 
 ## Running an analysis with the CLI
 
-1.  Follow the [installation guide](https://github.com/codacy/codacy-analysis-cli#install) to get the `codacy-analysis-cli` executable running on your build server.
+At the moment, the CLI still requires to retrieve the configuration from Codacy to perform an analysis. To access the repository, you will have to obtain a *Project Token* as explained in the [CLI documentation](https://github.com/codacy/codacy-analysis-cli#project-token). Then, you can invoke the CLI to get a report with all the issues:
 
-[//]: # (TODO:)
-[//]: # ( *The following setup instructions are simpler and also appear to work, running Docker in the background. Could we use this simplified version here? The current ones on the README are a mess.)
-[//]: # ( *Check with devs to confirm that there are no caveats using this one.)
-[//]: # (```bash)
-[//]: # (wget https://raw.githubusercontent.com/codacy/codacy-analysis-cli/master/bin/codacy-analysis-cli.sh)
-[//]: # (chmod +x codacy-analysis-cli.sh)
-[//]: # (mv codacy-analysis-cli.sh /usr/local/bin/codacy-analysis-cli)
-[//]: # (```)
-
-{%
-    include "../../assets/includes/client-side-tool-instructions.md"
-    start="<!--instructions-start-->"
-    end="<!--instructions-end-->"
-%}
-
-1.  Run the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#install) on the root of the repository. Use the `--upload` flag to upload the analysis results to Codacy upon completion.
-
-    ```bash
-    codacy-analysis-cli analyze --upload
-    ```
-
-    **If you're using an account API token**, you must also provide the flags `--provider`, `--username`, and `--project`. You can obtain the values for these flags from the URL of your repository dashboard on Codacy:
-
-    ```bash
-    codacy-analysis-cli analyze --upload \
-                                --provider <gh, ghe, gl, gle, bb, or bbe> \
-                                --username <name of your Codacy organization> \
-                                --project <name of your repository>
-    ```
-
-[//]: # (TODO confirm the use cases for these and whether we need them)
-    **TODO insert introductory sentence here**:
-
-    -   `--allow-network` - run the tools that require compilation like SpotBugs
-    -   `--max-allowed-issues` - return a non-zero exit code when the specified number of issues is exceeded
-    -   `--fail-if-incomplete` - return a non-zero exit code when any tool fails to run successfully
-
-The Codacy Analysis CLI analyzes your repository and uploads the results to Codacy, so you can use them in your workflow.
-
-## Running an analysis using a specific tool
-
-To obtain results for a particular tool, follow the same procedure as above, specifying the tool you wish to use with the `--tool` option.
-
-Using a project API token:
+!!! important
+    **If you're using Codacy Self-hosted** you must also specify the endpoint where the Codacy instance is running either by using the flag `--codacy-api-base-url` or the environment variable `CODACY_API_BASE_URL`.
 
 ```bash
-codacy-analysis-cli analyze --upload \
+codacy-analysis-cli analyze --directory <SOURCE-CODE-PATH> \
+                            --project-token <PROJECT-TOKEN> \
                             --allow-network \
-                            --tool <tool short name>
+                            --verbose \
+                            --upload
 ```
 
-Using an account API token:
+If you don't specify the tool, the analysis will run as Codacy does in the backend. To obtain results for [a particular tool](../../repositories-configure/codacy-configuration-file.md#which-tools-can-be-configured-and-which-name-should-i-use), specify the tool with `--tool`.
 
-```bash
-codacy-analysis-cli analyze --upload \
-                            --provider <gh, ghe, gl, gle, bb, or bbe> \
-                            --username <name of your Codacy organization> \
-                            --project <name of your repository>
-                            --tool <tool short name>
-```
+### Advanced configuration
 
-For an end-to-end example, see [how to run a local analysis with SpotBugs](running-spotbugs.md).
+For advanced configuration details, check all the CLI flags in the [CLI documentation](https://github.com/codacy/codacy-analysis-cli#commands-and-configuration).
 
-{%
-    include-markdown "../../assets/includes/client-side-tool-instructions.md"
-    start="<!--advanced-start-->"
-    end="<!--advanced-end-->"
-%}
+Some flags you might be interested in:
+
+-   `--allow-network` - to run the tools that require compilation like SpotBugs
+-   `--max-allowed-issues` - returns a non-zero exit code when a certain number of issues is exceeded
+-   `--fail-if-incomplete` - to return a non-zero exit code when any tool fails to run successfully
+
+## Notes on ignored issues
+
+If you have ignored issues on Codacy be aware that the CLI won't respect those ignored issues when printing the results locally.
+
+However, if you upload the results, the ignored issues will be reflected on the Codacy UI after the analysis is complete.
