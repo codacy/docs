@@ -461,3 +461,8 @@ Follow these instructions to validate that your coverage setup is working correc
     -   Branch name and commit SHA-1 hash corresponding to the CI/CD output
     -   Test coverage report that you're uploading to Codacy
     -   Any other relevant information or screenshots of your setup
+
+## See also
+
+-   [Identifying commits without coverage data](../codacy-api/examples/identifying-commits-without-coverage-data.md)
+-   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)

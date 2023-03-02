@@ -73,3 +73,7 @@ Coverage for 1a64ea8885717e7b9874c9f3702806ec96b00276 is null
 ```
 
 {% include-markdown "../../assets/includes/api-example-pagination-important.md" %}
+
+## See also
+
+-   [Adding coverage to your repository](../../coverage-reporter/index.md)
