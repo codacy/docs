@@ -8,7 +8,7 @@ Codacy supports client-side tools in two ways:
 
     The Codacy Analysis CLI lets Codacy present on its dashboards the analysis information reported by any tools you may be using, in addition to the default code quality information, and is necessary to upload analysis data for tools that analyze locally compiled assets.
 
-    If an access token is set, the Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running the tools.
+    If an [API token](../../codacy-api/api-tokens.md) is set, the Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running the tools.
 
 -   **Standalone tools:** Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy. You must download, configure, and run the third-party tools yourself.
 
