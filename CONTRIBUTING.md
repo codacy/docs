@@ -222,7 +222,7 @@ To apply a hotfix to an existing chart release:
 
 1.  Use a pull request to apply the changes to the `master` branch of the chart. This ensures that the fixes will also be available on the next chart version.
 
-1.  Checkout the chart branch to apply the hotfix and cherry-pick one or more changes:
+1.  Check out the chart branch to apply the hotfix and cherry-pick one or more changes:
 
     ```bash
     git checkout release-x.x.x
