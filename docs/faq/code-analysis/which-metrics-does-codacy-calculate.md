@@ -146,7 +146,7 @@ Once the coverage setup is complete, Codacy displays coverage data on the follow
 |[Pull request detail page](../../repositories/pull-requests.md)|Diff coverage for the changes included in the pull request|
 |[Files page](../../repositories/files.md)|Coverage percentage of each file|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Coverage of the most recent commit of the selected branch and its evolution over time|
-|[Codacy badge](../../getting-started/adding-a-codacy-badge.md)|Coverage of the most recent commit of the default branch of the repository|
+|[Codacy badge](../../getting-started/adding-a-codacy-badge.md)|Coverage of the most recent commit of the default branch|
 |[Organization Overview](../../organizations/organization-overview.md)|Average coverage of the repositories in your organization and coverage of each repository|
 |[Repositories list page](../../organizations/managing-repositories.md)|Coverage of each repository in your organization|
 
