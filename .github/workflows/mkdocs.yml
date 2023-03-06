@@ -1,6 +1,9 @@
 name: MkDocs
 
-on: push
+on:
+  push:
+  merge_group:
+    types: [checks_requested]
 
 # Set concurrency group to either "dev" or "prod"
 concurrency: ${{ fromJSON('{"false":"dev","true":"prod"}')[github.ref == 'refs/heads/master' || startsWith(github.ref, 'refs/heads/release/v')] }}
