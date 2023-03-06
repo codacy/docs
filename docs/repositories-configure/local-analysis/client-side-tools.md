@@ -1,14 +1,12 @@
 # Client-side tools
 
-Client-side tools enable you to run an analysis locally or as part of your CI pipeline and upload the results to Codacy. This way, Codacy presents the analysis information reported by your local tools and all other code quality information on the Codacy dashboards.
+Client-side tools enable you to run an analysis locally or as part of your CI pipeline and upload the results to Codacy. This way, Codacy presents the analysis information reported by your local tools on the Codacy dashboards, in addition to the default code quality information.
 
 Codacy supports client-side tools in two ways:
 
--   **Containerized tools:** Codacy provides Docker images to run analysis tools locally. To run the images, print out analysis results, optionally upload them to Codacy, and more, use the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli).
+-   **Containerized tools:** Codacy provides Docker images to run analysis tools locally. To fetch code pattern configurations from Codacy, run the images, print out analysis results, and upload them to Codacy, use the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli).
 
-    The Codacy Analysis CLI lets Codacy present on its dashboards the analysis information reported by any tools you may be using, in addition to the default code quality information, and is necessary to upload analysis data for tools that analyze locally compiled assets.
-
-    If an [API token](../../codacy-api/api-tokens.md) is set, the Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running the tools.
+    The Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running the tools.
 
 -   **Standalone tools:** Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy. You must download, configure, and run the third-party tools yourself.
 
