@@ -11,7 +11,7 @@
         <meta name="description" content="Follow the instructions below to set up an Amazon EKS cluster from scratch, including the necessary underlying infrastructure, using Terraform.">
       
       
-        <meta http-equiv="last-modified" content="2022-06-16 16:15:52">
+        <meta http-equiv="last-modified" content="2023-02-22 14:41:26">
       
       
         <link rel="canonical" href="https://docs.codacy.com/chart/infrastructure/eks-quickstart/">
@@ -3736,17 +3736,24 @@ helm<span class="w"> </span>repo<span class="w"> </span>update
 <p>If you wish to use a private load balancer or restrict the IP range for the provisioned load balancer edit the file and enable the required annotation and/or the corresponding setting where indicated.</p>
 </li>
 <li>
-<p>Install the NGINX Ingress Controller:</p>
+<p>Install the NGINX Ingress Controller.</p>
+<p><strong>If you're using Kubernetes version &lt;=1.21</strong>, run:</p>
 <div class="highlight"><pre><span></span><code>kubectl<span class="w"> </span>create<span class="w"> </span>namespace<span class="w"> </span>codacy
 helm<span class="w"> </span>upgrade<span class="w"> </span>--install<span class="w"> </span>--namespace<span class="w"> </span>codacy<span class="w"> </span>--version<span class="w"> </span><span class="m">1</span>.39.0<span class="w"> </span>codacy-nginx-ingress<span class="w"> </span>stable/nginx-ingress<span class="w"> </span>-f<span class="w"> </span>values-nginx.yaml
+</code></pre></div>
+<p><strong>If you're using Kubernetes version 1.22 or later</strong>, run:</p>
+<div class="highlight"><pre><span></span><code>kubectl create namespace codacy
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+helm upgrade --install --namespace codacy --version 4.3.0 nginx-ingress ingress-nginx/ingress-nginx -f values-nginx.yaml
 </code></pre></div>
 </li>
 </ol>
 <h2 id="uninstalling-the-amazon-eks-cluster">Uninstalling the Amazon EKS cluster<a class="headerlink" href="#uninstalling-the-amazon-eks-cluster" title="Permanent link">#</a></h2>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-</div>
 <p>If you proceed beyond this point you'll permanently delete and break things.</p>
+</div>
 <ol>
 <li>
 <p>Delete the Kubernetes cluster.</p>
@@ -3922,7 +3929,7 @@ then will <code>terraform destroy</code> be able to destroy the backend.</p>
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 16, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 22, 2023</span>
     
   </small>
 </div>
