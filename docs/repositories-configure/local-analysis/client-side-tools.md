@@ -4,7 +4,7 @@ Client-side tools enable you to run an analysis locally or as part of your CI pi
 
 Codacy supports client-side tools in two ways:
 
--   **Containerized tools:** Codacy provides Docker images to run analysis tools locally. To run the images, print out analysis results, optionally upload them to Codacy, and more, use the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#codacy-analysis-cli) (command-line interface).
+-   **Containerized tools:** Codacy provides Docker images to run analysis tools locally. To run the images, print out analysis results, optionally upload them to Codacy, and more, use the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli).
 
     The Codacy Analysis CLI lets Codacy present on its dashboards the analysis information reported by any tools you may be using, in addition to the default code quality information, and is necessary to upload analysis data for tools that analyze locally compiled assets.
 
