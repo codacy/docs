@@ -393,7 +393,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
 
 ## Codacy wrappers for supported tools
 
-Codacy adds support for new languages and tools by using ["wrapper" Docker images for running each tool](https://github.com/codacy/codacy-example-tool).
+Codacy adds support for new languages and tools by using [a Docker image to wrap each tool](https://github.com/codacy/codacy-example-tool).
 
 The following table lists the Codacy GitHub repositories corresponding to each supported tool. Use these repositories to check the version and extra plugins supported by each tool, or to submit GitHub issues related to each tool.
 
