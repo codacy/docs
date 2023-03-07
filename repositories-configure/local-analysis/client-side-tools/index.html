@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools together with all other code quality information on the Codacy dashboards.">
+        <meta name="description" content="Client-side tools enable you to run an analysis locally or as part of your CI pipeline and upload the results to Codacy. This way, Codacy presents the analysis information reported by your local tools on the Codacy dashboards, in addition to the default code quality information.">
       
       
-        <meta http-equiv="last-modified" content="2023-03-01 16:14:18">
+        <meta http-equiv="last-modified" content="2023-03-07 17:39:29">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/local-analysis/client-side-tools/">
@@ -661,18 +661,6 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../running-local-analysis/" title="Running local analysis" class="md-nav__link">
-      Running local analysis
-    </a>
-  </li>
-
         
           
           
@@ -3584,12 +3572,12 @@
                 
                 
                 <h1 id="client-side-tools">Client-side tools<a class="headerlink" href="#client-side-tools" title="Permanent link">#</a></h1>
-<p>Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools together with all other code quality information on the Codacy dashboards.</p>
+<p>Client-side tools enable you to run an analysis locally or as part of your CI pipeline and upload the results to Codacy. This way, Codacy presents the analysis information reported by your local tools on the Codacy dashboards, in addition to the default code quality information.</p>
 <p>Codacy supports client-side tools in two ways:</p>
 <ul>
 <li>
-<p><strong>Containerized tools:</strong> Codacy provides a Docker image for the tools, and you run the images using the <a href="../running-local-analysis/">Codacy Analysis CLI</a>.</p>
-<p>The Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running these tools.</p>
+<p><strong>Containerized tools:</strong> Codacy provides Docker images to run analysis tools locally. To fetch code pattern configurations from Codacy, run the images, print out analysis results, and upload them to Codacy, use the <a href="https://github.com/codacy/codacy-analysis-cli">Codacy Analysis CLI</a>.</p>
+<p>The Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running the tools.</p>
 </li>
 <li>
 <p><strong>Standalone tools:</strong> Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy. You must download, configure, and run the third-party tools yourself.</p>
@@ -3829,7 +3817,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 1, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 7, 2023</span>
     
   </small>
 </div>

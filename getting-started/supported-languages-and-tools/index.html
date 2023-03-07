@@ -11,7 +11,7 @@
         <meta name="description" content="List of tools that Codacy uses to analyze over 40 supported languages and frameworks. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code frameworks as well as code duplication, code complexity, and code coverage metrics for most programming languages.">
       
       
-        <meta http-equiv="last-modified" content="2023-03-01 16:14:18">
+        <meta http-equiv="last-modified" content="2023-03-07 17:39:29">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/supported-languages-and-tools/">
@@ -253,8 +253,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#codacy-wrappers-for-supported-tools" class="md-nav__link">
-    Codacy wrappers for supported tools
+  <a href="#docker-images-of-supported-tools" class="md-nav__link">
+    Docker images of supported tools
   </a>
   
 </li>
@@ -705,18 +705,6 @@
       </label>
       <ul class="md-nav__list" data-md-scrollfix>
         
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../repositories-configure/local-analysis/running-local-analysis/" title="Running local analysis" class="md-nav__link">
-      Running local analysis
-    </a>
-  </li>
-
         
           
           
@@ -3967,8 +3955,8 @@
 <sup><span id="ruby-31">4</span></sup>: Currently, Codacy doesn't support any static code analysis tool for <a href="https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/">Ruby 3.1</a>.<br />
 <sup><span id="swiftlint-complexity">5</span></sup>: Supports <a href="https://realm.github.io/SwiftLint/cyclomatic_complexity.html">reporting warnings or errors</a> on functions above specific complexity thresholds. Enable the rule <strong>Cyclomatic Complexity</strong> on the <a href="../../repositories-configure/configuring-code-patterns/">Code patterns page</a>, or use a <a href="https://realm.github.io/SwiftLint/index.html#configuration">configuration file</a> to customize the thresholds.<br />
 <sup><span id="suggest-fixes">🔧</span></sup>: Supports <a href="../../repositories-configure/integrations/github-integration/#suggest-fixes">suggesting fixes</a> for identified issues.</p>
-<h2 id="codacy-wrappers-for-supported-tools">Codacy wrappers for supported tools<a class="headerlink" href="#codacy-wrappers-for-supported-tools" title="Permanent link">#</a></h2>
-<p>Codacy adds support for new languages and tools by using <a href="https://github.com/codacy/codacy-example-tool">"wrapper" Docker images for running each tool</a>.</p>
+<h2 id="docker-images-of-supported-tools">Docker images of supported tools<a class="headerlink" href="#docker-images-of-supported-tools" title="Permanent link">#</a></h2>
+<p>Codacy adds support for new languages and tools by using <a href="https://github.com/codacy/codacy-example-tool">a Docker image to run each tool</a>.</p>
 <p>The following table lists the Codacy GitHub repositories corresponding to each supported tool. Use these repositories to check the version and extra plugins supported by each tool, or to submit GitHub issues related to each tool.</p>
 <table>
 <thead>
@@ -4335,7 +4323,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 1, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 7, 2023</span>
     
   </small>
 </div>
