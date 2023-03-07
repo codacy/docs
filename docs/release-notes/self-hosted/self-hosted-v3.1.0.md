@@ -15,7 +15,7 @@ To upgrade Codacy, follow [these instructions](../../chart/maintenance/upgrade.m
 -   Now, Codacy stores the date when users are removed so that this information is available when using [`codacy-usage-report`](https://github.com/codacy/codacy-usage-report). (CY-3194)
 -   Improvements to the [supported languages and tools](../../getting-started/supported-languages-and-tools.md):
     -   Added static analysis support for **Objective-C** with the tool Faux Pas.
-    -   Expanded static analysis support for **Go** with the [client-side tools](../../related-tools/local-analysis/client-side-tools.md) aligncheck, deadcode, and Staticcheck.
+    -   Expanded static analysis support for **Go** with the [client-side tools](../../repositories-configure/local-analysis/client-side-tools.md) aligncheck, deadcode, and Staticcheck.
     -   Added duplication and complexity support for **Kotlin** with the tools jscpd and detekt. (CY-3003)
 
 ## Bug fixes
@@ -65,8 +65,8 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   RuboCop 0.82.0
 -   Scalastyle 1.0.0
 -   ShellCheck 0.7.1
--   **Sonar C# 8.15 (updated from 8.14)**
--   **Sonar Visual Basic 8.15 (updated from 8.14)**
+-   **SonarC# 8.15 (updated from 8.14)**
+-   **SonarVB 8.15 (updated from 8.14)**
 -   SpotBugs 4.1.2
 -   SQLint 0.1.9
 -   **Staticcheck 2020.1.6 (new)**

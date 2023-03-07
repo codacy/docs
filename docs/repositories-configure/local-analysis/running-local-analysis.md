@@ -19,7 +19,7 @@ codacy-analysis-cli analyze --directory <SOURCE-CODE-PATH> \
                             --upload
 ```
 
-If you don't specify the tool, the analysis will run as Codacy does in the backend. To obtain results for [a particular tool](../../repositories-configure/codacy-configuration-file.md#which-tools-can-be-configured-and-which-name-should-i-use), specify the tool with `--tool`.
+If you don't specify the tool, the analysis will run as Codacy does in the backend. To obtain results for [a particular tool](../codacy-configuration-file.md#which-tools-can-be-configured-and-which-name-should-i-use), specify the tool with `--tool`.
 
 ### Advanced configuration
 
@@ -27,7 +27,7 @@ For advanced configuration details, check all the CLI flags in the [CLI document
 
 Some flags you might be interested in:
 
--   `--allow-network` - to run the tools that require compilation like SpotBugs, FindBugs, FindSecBugs
+-   `--allow-network` - to run the tools that require compilation like SpotBugs
 -   `--max-allowed-issues` - returns a non-zero exit code when a certain number of issues is exceeded
 -   `--fail-if-incomplete` - to return a non-zero exit code when any tool fails to run successfully
 

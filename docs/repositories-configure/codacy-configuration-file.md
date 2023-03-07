@@ -77,14 +77,13 @@ To ignore files, you must use the [Java glob syntax](https://docs.oracle.com/jav
     When adding a new supported tool, make sure that you update the following pages:
 
     docs/getting-started/supported-languages-and-tools.md
-    docs/related-tools/codacy-plugin-tools.md
-    docs/related-tools/local-analysis/client-side-tools.md (if the tool runs client-side)
+    docs/repositories-configure/local-analysis/client-side-tools.md (if the tool runs client-side)
     docs/repositories/security-monitor.md (if the tool reports security issues)
     docs/repositories-configure/configuring-code-patterns.md (supported configuration files table, or list of tools that don't support configuration files)
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
-You can use the Codacy configuration file to configure all tools supported by Codacy except the [client-side tools](../related-tools/local-analysis/client-side-tools.md).
+You can use the Codacy configuration file to configure all tools supported by Codacy except the [client-side tools](local-analysis/client-side-tools.md).
 
 The following are the tool names that must be used in the Codacy configuration file:
 
@@ -173,7 +172,7 @@ engines:
 ```
 
 !!! tip
-    If you're using Python 3.4.\* or later as your programming language, we recommend that you disable the tool **Pylint** and enable the tool **Pylint (Python 3)** on your repository [Code patterns page](configuring-code-patterns.md) instead. For more information see [What's New in Pylint 2.0](https://pylint.pycqa.org/en/latest/whatsnew/2/2.0/index.html).
+    If you're using Python 3.4.\* or later as your programming language, disable the tool **Pylint** and enable the tool **Pylint (Python 3)** on your repository [Code patterns page](configuring-code-patterns.md) instead. For more information, see [What's New in Pylint 2.0](https://pylint.pycqa.org/en/latest/whatsnew/2/2.0/index.html).
 
 ### PMD CPD (Duplication)
 

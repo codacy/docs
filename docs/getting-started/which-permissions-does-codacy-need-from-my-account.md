@@ -193,7 +193,7 @@ To revoke the access from Codacy to one or more of the OAuth providers:
 
     ![Revoking access to an integration](images/revoke-integration.png)
 
-1.  To ensure that the integration is removed not only on Codacy but also on the integration side, we recommend that you follow the instructions on how to revoke the Codacy OAuth application on your provider:
+1.  To ensure that the integration is removed not only on Codacy but also on the integration side, it's important that you revoke the Codacy OAuth application access on your provider:
 
     -   [GitHub Cloud](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations)
     -   [GitLab Cloud](https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications)
@@ -206,10 +206,7 @@ If you need to use an integration that you have previously revoked, log in again
 
 ## Why does Codacy ask for permission to create SSH keys?
 
-Codacy asks for permission to create SSH keys because it needs to create an SSH key in your account in the following situations:
-
--   If your repository uses submodules, so that Codacy can clone the repositories for each submodule
--   If Codacy fails to integrate with a repository using the repository key, so that Codacy can continue to perform analysis
+Codacy needs to create an SSH key in your account to clone repositories and any associated git submodules.
 
 **Codacy only adds read-only SSH keys to be able to clone repositories** and won't have access to any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also [revoke the keys created by Codacy at any time](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-ssh-keys). Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.
 

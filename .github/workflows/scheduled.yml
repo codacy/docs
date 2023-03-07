@@ -16,7 +16,7 @@ jobs:
 
       - name: Check for broken links
         id: lychee
-        uses: lycheeverse/lychee-action@v1.5.4
+        uses: lycheeverse/lychee-action@v1.6.1
         with:
           args: --verbose ./docs/**/*.md ./submodules/chart/docs/**/*.md
           jobSummary: true
@@ -24,7 +24,7 @@ jobs:
           GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 
       - name: Create issue
-        if: steps.lychee.outputs.exit_code != 0
+        if: env.lychee_exit_code != 0
         uses: peter-evans/create-issue-from-file@v4
         with:
           title: Broken link report

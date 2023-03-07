@@ -1,8 +1,8 @@
----
-description: Codacy supports the cloud and self-hosted versions of GitHub, GitLab, and Bitbucket.
----
+# Which platforms and technologies does Codacy support?
 
-# Which version control systems does Codacy support?
+This page includes information about software platforms and technologies compatible with Codacy.
+
+## Supported version control systems and Git providers
 
 Codacy supports repositories from the following Git providers:
 
@@ -64,3 +64,16 @@ Codacy supports repositories from the following Git providers:
 
 !!! note
     Although older versions of the self-hosted Git providers may work with Codacy without loss of functionality, Codacy will only fix issues and ensure compatibility with the versions listed above.
+
+## Supported browsers
+
+Codacy runs on every modern browser supporting HTML5 and CSS3:
+
+-   Chrome 67+
+-   Firefox 45+
+-   Internet Explorer 11+
+-   Microsoft Edge 13+
+
+## Supported character encodings
+
+Codacy supports the UTF-8 character encoding standard.

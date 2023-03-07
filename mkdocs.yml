@@ -30,7 +30,7 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    version: "9.0.0"
+    version: "10.0.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
@@ -157,8 +157,8 @@ plugins:
               "hc/en-us/articles/207280239-Bitbucket-Integration.md": "repositories-configure/integrations/bitbucket-integration.md"
               "hc/en-us/articles/207280359.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280359-WebHook-Notifications.md": "repositories-configure/integrations/webhook-notifications.md"
-              "hc/en-us/articles/207280379.md": "related-tools/codacy-plugin-tools.md"
-              "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "related-tools/codacy-plugin-tools.md"
+              "hc/en-us/articles/207280379.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
+              "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
               "hc/en-us/articles/207312879.md": "coverage-reporter/index.md"
               "hc/en-us/articles/207312879-Generate-Coverage.md": "coverage-reporter/index.md"
               "hc/en-us/articles/207993605.md": "getting-started/codacy-quickstart.md"
@@ -174,8 +174,8 @@ plugins:
               "hc/en-us/articles/207994395-Language-Extensions.md": "repositories-configure/file-extensions.md"
               "hc/en-us/articles/207994675.md": "codacy-api/api-tokens.md"
               "hc/en-us/articles/207994675-Project-API.md": "codacy-api/api-tokens.md"
-              "hc/en-us/articles/207994725.md": "related-tools/codacy-plugin-tools.md"
-              "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "related-tools/codacy-plugin-tools.md"
+              "hc/en-us/articles/207994725.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
+              "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
               "hc/en-us/articles/207994735.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/207994765.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
@@ -184,10 +184,10 @@ plugins:
               "hc/en-us/articles/207994825-How-do-I-manually-force-a-repository-update-.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
               "hc/en-us/articles/207994835.md": "index.md"
               "hc/en-us/articles/207994835-How-do-I-transfer-delete-a-repository-from-my-account-.md": "index.md"
-              "hc/en-us/articles/207994865.md": "faq/general/which-version-control-systems-does-codacy-support.md"
-              "hc/en-us/articles/207994865-Can-you-add-repos-from-other-Git-providers-.md": "faq/general/which-version-control-systems-does-codacy-support.md"
-              "hc/en-us/articles/207994885.md": "faq/general/which-browsers-does-codacy-support.md"
-              "hc/en-us/articles/207994885-Which-browsers-does-codacy-support-.md": "faq/general/which-browsers-does-codacy-support.md"
+              "hc/en-us/articles/207994865.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
+              "hc/en-us/articles/207994865-Can-you-add-repos-from-other-Git-providers-.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
+              "hc/en-us/articles/207994885.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
+              "hc/en-us/articles/207994885-Which-browsers-does-codacy-support-.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
               "hc/en-us/articles/207994895.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
               "hc/en-us/articles/207994895-How-long-does-it-take-for-my-repository-to-be-analysed-.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
               "hc/en-us/articles/207994935.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md"
@@ -205,10 +205,10 @@ plugins:
               "hc/en-us/articles/208953205.md": "account/managing-your-profile.md"
               "hc/en-us/articles/208953205-Changing-your-username-and-avatar.md": "account/managing-your-profile.md"
               "hc/en-us/articles/208953205-Managing-your-profile.md": "account/managing-your-profile.md"
-              "hc/en-us/articles/212622529.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
-              "hc/en-us/articles/212622529-Why-can-t-I-see-or-add-my-organization-s-repositories-.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
-              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-projects-.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
-              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-s-projects-.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
+              "hc/en-us/articles/212622529.md": "organizations/managing-repositories.md"
+              "hc/en-us/articles/212622529-Why-can-t-I-see-or-add-my-organization-s-repositories-.md": "organizations/managing-repositories.md"
+              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-projects-.md": "organizations/managing-repositories.md"
+              "hc/en-us/articles/212622529-Why-can-t-I-see-my-organization-s-projects-.md": "organizations/managing-repositories.md"
               "hc/en-us/articles/212799365.md": "getting-started/adding-a-codacy-badge.md"
               "hc/en-us/articles/212799365-Badges.md": "getting-started/adding-a-codacy-badge.md"
               "hc/en-us/articles/213149905.md": "account/emails.md"
@@ -216,8 +216,8 @@ plugins:
               "hc/en-us/articles/213149905-How-do-I-change-my-email-address-in-Codacy-.md": "account/emails.md"
               "hc/en-us/articles/213211825.md": "faq/code-analysis/does-codacy-check-for-dependencies.md"
               "hc/en-us/articles/213211825-Do-you-check-for-dependencies-.md": "faq/code-analysis/does-codacy-check-for-dependencies.md"
-              "hc/en-us/articles/213217965.md": "faq/general/which-version-control-systems-does-codacy-support.md"
-              "hc/en-us/articles/213217965-Which-version-control-systems-do-you-support-.md": "faq/general/which-version-control-systems-does-codacy-support.md"
+              "hc/en-us/articles/213217965.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
+              "hc/en-us/articles/213217965-Which-version-control-systems-do-you-support-.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
               "hc/en-us/articles/213280129.md": "repositories-configure/integrations/jira-integration.md"
               "hc/en-us/articles/213280129-JIRA.md": "repositories-configure/integrations/jira-integration.md"
               "hc/en-us/articles/213632009.md": "getting-started/supported-languages-and-tools.md"
@@ -261,10 +261,10 @@ plugins:
               "hc/en-us/articles/360006036934-PHP-CodeSniffer-Specifying-your-PHP-version.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/360006795293.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
               "hc/en-us/articles/360006795293-Repository-failed-to-clone-Generating-a-new-SSH-key.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
-              "hc/en-us/articles/360008254833.md": "related-tools/local-analysis/running-local-analysis.md"
-              "hc/en-us/articles/360008254833-Run-local-analysis.md": "related-tools/local-analysis/running-local-analysis.md"
-              "hc/en-us/articles/360008254833-Run-local-analysis-before-creating-a-commit.md": "related-tools/local-analysis/running-local-analysis.md"
-              "hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results.md": "related-tools/local-analysis/running-local-analysis.md"
+              "hc/en-us/articles/360008254833.md": "repositories-configure/local-analysis/running-local-analysis.md"
+              "hc/en-us/articles/360008254833-Run-local-analysis.md": "repositories-configure/local-analysis/running-local-analysis.md"
+              "hc/en-us/articles/360008254833-Run-local-analysis-before-creating-a-commit.md": "repositories-configure/local-analysis/running-local-analysis.md"
+              "hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results.md": "repositories-configure/local-analysis/running-local-analysis.md"
               "hc/en-us/articles/360009164573.md": "repositories-configure/adjusting-quality-settings.md"
               "hc/en-us/articles/360009164573-Quality-Settings.md": "repositories-configure/adjusting-quality-settings.md"
               "hc/en-us/articles/360009180134.md": "repositories/issues.md"
@@ -303,10 +303,10 @@ plugins:
               "hc/en-us/articles/360020569254-Scheduled-Maintenance-Saturday-30th-Mar-05-00-GMT-01-00-EDT-.md": "index.md"
               "hc/en-us/articles/360021260713.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
               "hc/en-us/articles/360021260713-How-does-Codacy-measure-complexity-in-my-repository-.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
-              "hc/en-us/articles/360023916013.md": "related-tools/local-analysis/running-spotbugs.md"
-              "hc/en-us/articles/360023916013-Run-SpotBugs.md": "related-tools/local-analysis/running-spotbugs.md"
-              "hc/en-us/articles/360025654573.md": "faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
-              "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
+              "hc/en-us/articles/360023916013.md": "repositories-configure/local-analysis/running-spotbugs.md"
+              "hc/en-us/articles/360023916013-Run-SpotBugs.md": "repositories-configure/local-analysis/running-spotbugs.md"
+              "hc/en-us/articles/360025654573.md": "getting-started/integrating-codacy-with-your-git-workflow.md"
+              "hc/en-us/articles/360025654573-How-do-I-set-Codacy-as-a-required-check-to-merge-my-PRs-.md": "getting-started/integrating-codacy-with-your-git-workflow.md"
               "hc/en-us/articles/360025964333.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
               "hc/en-us/articles/360025964333-File-size-limitation.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
               "hc/en-us/articles/360025964853.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
@@ -315,8 +315,8 @@ plugins:
               "hc/en-us/articles/360012861999-Cancelling-your-plan.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "hc/en-us/articles/360012973060.md": "faq/general/how-does-codacy-support-bitbucket-cloud.md"
               "hc/en-us/articles/360012973060-How-does-Codacy-support-Bitbucket-Cloud-.md": "faq/general/how-does-codacy-support-bitbucket-cloud.md"
-              "hc/en-us/articles/360013142699.md": "related-tools/local-analysis/client-side-tools.md"
-              "hc/en-us/articles/360013142699-Client-side-tools.md": "related-tools/local-analysis/client-side-tools.md"
+              "hc/en-us/articles/360013142699.md": "repositories-configure/local-analysis/client-side-tools.md"
+              "hc/en-us/articles/360013142699-Client-side-tools.md": "repositories-configure/local-analysis/client-side-tools.md"
               "hc/en-us/articles/360013560819.md": "faq/repositories/i-moved-my-repository-on-the-git-provider.md"
               "hc/en-us/articles/360013560819-I-moved-my-repository-on-the-Git-provider.md": "faq/repositories/i-moved-my-repository-on-the-git-provider.md"
               "hc/en-us/articles/360013926899.md": "faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md"
@@ -457,8 +457,8 @@ plugins:
               "getting-started/setting-up-your-personal-repositories.md": "getting-started/codacy-quickstart.md"
               "getting-started/supported-languages.md": "getting-started/supported-languages-and-tools.md"
               "account/default-patterns.md": "repositories-configure/configuring-code-patterns.md"
-              "related-tools/tool-developer-guide.md": "related-tools/codacy-plugin-tools.md"
-              "related-tools/tool-developer-guide-using-scala.md": "related-tools/codacy-plugin-tools.md"
+              "related-tools/tool-developer-guide.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
+              "related-tools/tool-developer-guide-using-scala.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
               "organizations/adding-and-managing-authors.md": "organizations/managing-people.md"
               "organizations/authors-vs-members.md": "organizations/managing-people.md"
               "organizations/configuring-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-organizations.md"
@@ -490,16 +490,16 @@ plugins:
               "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md": "index.md"
               "repositories/security-dashboard.md": "repositories/security-monitor.md"
               "related-tools/engines.md": "getting-started/supported-languages-and-tools.md"
-              "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md": "faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
+              "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-my-prs.md": "getting-started/integrating-codacy-with-your-git-workflow.md"
               "faq/troubleshooting/why-isnt-codacy-commenting-on-pull-requests-anymore.md": "faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md"
               "repositories-configure/php_codesniffer-specifying-your-php-version.md": "repositories-configure/codacy-configuration-file.md"
               "getting-started/i-added-a-repository-now-what.md": "getting-started/codacy-quickstart.md"
               "related-tools/api-tokens.md": "codacy-api/api-tokens.md"
               "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md"
-              "related-tools/running-local-analysis.md": "related-tools/local-analysis/running-local-analysis.md"
-              "related-tools/run-local-analysis.md": "related-tools/local-analysis/running-local-analysis.md"
-              "related-tools/client-side-tools.md": "related-tools/local-analysis/client-side-tools.md"
-              "related-tools/run-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"
+              "related-tools/running-local-analysis.md": "repositories-configure/local-analysis/running-local-analysis.md"
+              "related-tools/run-local-analysis.md": "repositories-configure/local-analysis/running-local-analysis.md"
+              "related-tools/client-side-tools.md": "repositories-configure/local-analysis/client-side-tools.md"
+              "related-tools/run-spotbugs.md": "repositories-configure/local-analysis/running-spotbugs.md"
               "repositories-configure/ignore-files-from-codacy-analysis.md": "repositories-configure/ignoring-files.md"
               "organizations/how-to-configure-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-organizations.md"
               "repositories/what-are-the-different-grades-and-how-are-they-calculated.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
@@ -507,8 +507,8 @@ plugins:
               "repositories/quality-settings.md": "repositories-configure/adjusting-quality-settings.md"
               "repositories/removing-your-repository.md": "repositories-configure/removing-your-repository.md"
               "repositories/post-commit-hooks.md": "repositories-configure/integrations/post-commit-hooks.md"
-              "faq/general/which-version-control-systems-do-you-support.md": "faq/general/which-version-control-systems-does-codacy-support.md"
-              "faq/general/which-browsers-do-you-support.md": "faq/general/which-browsers-does-codacy-support.md"
+              "faq/general/which-version-control-systems-do-you-support.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
+              "faq/general/which-browsers-do-you-support.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
               "repositories/commits-view.md": "repositories/commits.md"
               "repositories/files-view.md": "repositories/files.md"
               "repositories/issues-view.md": "repositories/issues.md"
@@ -521,10 +521,10 @@ plugins:
               "repositories/badges.md": "getting-started/adding-a-codacy-badge.md"
               "related-tools/codacy-api-tokens.md": "codacy-api/api-tokens.md"
               "hc/en-us/articles/207280239-Bitbucket-Cloud-Integration.md": "repositories-configure/integrations/bitbucket-integration.md"
-              "hc/en-us/articles/207994885-Which-browsers-do-you-support-.md": "faq/general/which-browsers-does-codacy-support.md"
+              "hc/en-us/articles/207994885-Which-browsers-do-you-support-.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
               "organizations/managing-repositories-in-your-organization.md": "organizations/managing-repositories.md"
               "organizations/why-cant-i-see-my-organization.md": "faq/troubleshooting/why-cant-i-see-my-organization.md"
-              "related-tools/running-spotbugs.md": "related-tools/local-analysis/running-spotbugs.md"
+              "related-tools/running-spotbugs.md": "repositories-configure/local-analysis/running-spotbugs.md"
               "account/notifications.md": "account/emails.md"
               "faq/general/how-do-i-change-my-email-address-in-codacy.md": "account/emails.md"
               "codacy-api/adding-repositories-to-codacy-programmatically.md": "codacy-api/examples/adding-repositories-to-codacy-programmatically.md"
@@ -537,18 +537,29 @@ plugins:
               "faq/code-analysis/do-you-check-for-dependencies.md": "faq/code-analysis/does-codacy-check-for-dependencies.md"
               "faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md"
               "faq/repositories/how-do-i-manually-force-a-repository-update.md": "faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md"
-              "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md": "faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md"
+              "faq/repositories/how-do-i-set-codacy-as-a-required-check-to-merge-prs.md": "getting-started/integrating-codacy-with-your-git-workflow.md"
               "coverage-reporter/troubleshooting-common-issues.md": "coverage-reporter/troubleshooting-coverage-cli-issues.md"
-              "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md": "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md"
+              "faq/repositories/why-cant-i-see-or-add-my-organizations-repositories.md": "organizations/managing-repositories.md"
               "faq/general/why-cant-i-see-my-organization.md": "faq/troubleshooting/why-cant-i-see-my-organization.md"
               "organizations/roles-and-permissions-for-synced-organizations.md": "organizations/roles-and-permissions-for-organizations.md"
               "organizations/what-are-synced-organizations.md": "organizations/what-are-organizations.md"
               "faq/general/how-do-i-change-my-email-address-on-codacy.md": "account/emails.md"
+              "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md": "organizations/managing-repositories.md"
+              "faq/general/which-browsers-does-codacy-support.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
+              "faq/general/which-version-control-systems-does-codacy-support.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
+              "related-tools/codacy-plugin-tools.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
+              "related-tools/local-analysis/client-side-tools.md": "repositories-configure/local-analysis/client-side-tools.md"
+              "related-tools/local-analysis/running-aligncheck.md": "repositories-configure/local-analysis/running-aligncheck.md"
+              "related-tools/local-analysis/running-deadcode.md": "repositories-configure/local-analysis/running-deadcode.md"
+              "related-tools/local-analysis/running-local-analysis.md": "repositories-configure/local-analysis/running-local-analysis.md"
+              "related-tools/local-analysis/running-spotbugs.md": "repositories-configure/local-analysis/running-spotbugs.md"
 
 nav:
     - Documentation home: "index.md"
     - Getting started:
           - getting-started/codacy-quickstart.md
+          - getting-started/configuring-your-repository.md
+          - getting-started/integrating-codacy-with-your-git-workflow.md
           - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
           - getting-started/adding-a-codacy-badge.md
@@ -578,6 +589,12 @@ nav:
                 - coverage-reporter/alternative-ways-of-running-coverage-reporter.md
                 - coverage-reporter/uploading-coverage-in-advanced-scenarios.md
                 - coverage-reporter/troubleshooting-coverage-cli-issues.md
+          - Local analysis:
+                - repositories-configure/local-analysis/running-local-analysis.md
+                - repositories-configure/local-analysis/client-side-tools.md
+                - repositories-configure/local-analysis/running-aligncheck.md
+                - repositories-configure/local-analysis/running-deadcode.md
+                - repositories-configure/local-analysis/running-spotbugs.md
           - repositories-configure/using-submodules.md
           - repositories-configure/codacy-configuration-file.md
           - repositories-configure/removing-your-repository.md
@@ -593,14 +610,6 @@ nav:
     - Your account:
           - account/managing-your-profile.md
           - account/emails.md
-    - Related tools:
-          - Local analysis:
-                - related-tools/local-analysis/running-local-analysis.md
-                - related-tools/local-analysis/client-side-tools.md
-                - related-tools/local-analysis/running-aligncheck.md
-                - related-tools/local-analysis/running-deadcode.md
-                - related-tools/local-analysis/running-spotbugs.md
-          - related-tools/codacy-plugin-tools.md
     - Codacy API:
           - codacy-api/using-the-codacy-api.md
           - codacy-api/api-tokens.md
@@ -612,18 +621,17 @@ nav:
                 - codacy-api/examples/creating-project-api-tokens-programmatically.md
                 - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
                 - codacy-api/examples/obtaining-current-issues-in-repositories.md
+                - codacy-api/examples/identifying-commits-without-coverage-data.md
     - Managing Codacy Self-hosted: "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
-                - faq/general/which-version-control-systems-does-codacy-support.md
-                - faq/general/which-browsers-does-codacy-support.md
+                - faq/general/which-platforms-and-technologies-does-codacy-support.md
                 - faq/general/how-does-codacy-support-gitlab-cloud.md
                 - faq/general/how-does-codacy-support-gitlab-enterprise.md
                 - faq/general/how-does-codacy-support-bitbucket-cloud.md
                 - faq/general/how-does-codacy-support-bitbucket-server.md
                 - faq/general/how-does-codacy-keep-my-data-secure.md
                 - faq/general/how-does-codacy-protect-my-privacy.md
-                - faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md
                 - faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider.md
                 - faq/general/how-can-i-change-or-cancel-my-plan.md
           - Repositories:
@@ -640,7 +648,6 @@ nav:
                 - faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md
           - Troubleshooting:
                 - faq/troubleshooting/why-cant-i-see-my-organization.md
-                - faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md
                 - faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests.md
                 - faq/troubleshooting/why-arent-duplication-metrics-being-calculated.md
                 - faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md
@@ -651,7 +658,11 @@ nav:
     - Release notes:
           - release-notes/index.md
           - Cloud:
+                - 2023:
+                      - release-notes/cloud/cloud-2023-02.md
+                      - release-notes/cloud/cloud-2023-01.md
                 - 2022:
+                      - release-notes/cloud/cloud-2022-12.md
                       - release-notes/cloud/cloud-2022-11.md
                       - release-notes/cloud/cloud-2022-10.md
                       - release-notes/cloud/cloud-2022-09.md
@@ -695,6 +706,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v10:
+                      - release-notes/self-hosted/self-hosted-v10.0.0.md
                 - v9:
                       - release-notes/self-hosted/self-hosted-v9.0.0.md
                 - v8:
