@@ -471,6 +471,7 @@ plugins:
               "release-notes/cloud/scheduled-maintenance-saturday,-17th-nov@8:00-gmt-(0:00-pst).md": "index.md"
               "faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
               "faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
+              "faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md": "getting-started/integrating-codacy-with-your-git-workflow.md"
               # Moved pages
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/troubleshooting/why-cant-i-see-my-organization.md"
