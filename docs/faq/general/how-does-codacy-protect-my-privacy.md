@@ -4,7 +4,7 @@ description: At Codacy, keeping your personal data safe has always been a top pr
 
 # How does Codacy protect my privacy?
 
-On the 25th of May 2018, the new "General Data Protection Regulation" ([GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)) will come into effect. This regulation contains the most significant changes to European data privacy legislation in the last 20 years and gives you more control over your personal data and greater transparency on how it's used.
+In May 2018 the new "General Data Protection Regulation" ([GDPR](https://en.wikipedia.org/wiki/General_Data_Protection_Regulation)) came into effect. This regulation contains the most significant changes to European data privacy legislation in the last 20 years and gives you more control over your personal data and greater transparency on how it's used.
 
 At Codacy, keeping your personal data safe has always been a top priority and we look at GDPR as another opportunity for us to strengthen this commitment to you. We're changing our data processing policies, operations, activities, and documentation in anticipation of the upcoming GDPR and have updated our [Privacy Policy](https://www.codacy.com/privacy) to incorporate said changes and specifically reflect the new regulation.
 
