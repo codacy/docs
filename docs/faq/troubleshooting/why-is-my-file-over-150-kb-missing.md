@@ -10,7 +10,7 @@ As a solution to this problem, we placed a size limit to the files that Codacy w
 
 ## What if I need to analyze a file that exceeds this limit?
 
-While Codacy will ignore your file by default, you can still analyze it by running the analysis locally using the [Codacy Analysis CLI](../../related-tools/local-analysis/running-local-analysis.md). The Codacy Analysis CLI doesn't have any limitation on file size.
+While Codacy will ignore your file by default, you can still analyze it by running the analysis locally using the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli). The Codacy Analysis CLI doesn't have any limitation on file size.
 
 ## What about Codacy Self-hosted?
 

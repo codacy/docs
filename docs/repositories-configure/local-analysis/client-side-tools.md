@@ -1,12 +1,12 @@
 # Client-side tools
 
-Client-side tools enable you to run analysis either locally or as part of your CI pipeline, and then integrating the results into Codacy. This way, Codacy presents the analysis information reported by your local tools together with all other code quality information on the Codacy dashboards.
+Client-side tools enable you to run an analysis locally or as part of your CI pipeline and upload the results to Codacy. This way, Codacy presents the analysis information reported by your local tools on the Codacy dashboards, in addition to the default code quality information.
 
 Codacy supports client-side tools in two ways:
 
--   **Containerized tools:** Codacy provides a Docker image for the tools, and you run the images using the [Codacy Analysis CLI](running-local-analysis.md).
+-   **Containerized tools:** Codacy provides Docker images to run analysis tools locally. To fetch code pattern configurations from Codacy, run the images, print out analysis results, and upload them to Codacy, use the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli).
 
-    The Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running these tools.
+    The Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running the tools.
 
 -   **Standalone tools:** Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy. You must download, configure, and run the third-party tools yourself.
 
@@ -21,8 +21,7 @@ The table below describes the supported client-side tools and includes links to 
     When adding a new supported tool, make sure that you update the following pages:
 
     docs/getting-started/supported-languages-and-tools.md
-    docs/related-tools/codacy-plugin-tools.md
-    docs/related-tools/local-analysis/client-side-tools.md (if the tool runs client-side)
+    docs/repositories-configure/local-analysis/client-side-tools.md (if the tool runs client-side)
     docs/repositories/security-monitor.md (if the tool reports security issues)
     docs/repositories-configure/configuring-code-patterns.md (supported configuration files table, or list of tools that don't support configuration files)
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)

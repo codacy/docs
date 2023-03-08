@@ -44,7 +44,7 @@ The Codacy Analysis CLI runs SpotBugs on the compiled classes of your repository
 
 The Codacy Analysis CLI tries to find the compiled classes and map results to the source files automatically. If you use Maven, Gradle, or sbt the Codacy Analysis CLI also detects the default layouts automatically.
 
-If there is an issue with detection, you can configure these paths manually by adding a `.codacy.yml` [Codacy configuration file](../../repositories-configure/codacy-configuration-file.md) to the root of the repository:
+If there is an issue with detection, you can configure these paths manually by adding a `.codacy.yml` [Codacy configuration file](../codacy-configuration-file.md) to the root of the repository:
 
 ```yml
 ---
