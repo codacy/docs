@@ -84,7 +84,7 @@ The following table contains example coverage tools that generate reports in for
 </tr>
 <tr>
     <td>PHP</td>
-    <td><a href="https://phpunit.readthedocs.io/en/10.0/code-coverage-analysis.html">PHPUnit</a></td>
+    <td><a href="https://phpunit.readthedocs.io/en/10.0/code-coverage.html">PHPUnit</a></td>
     <td><code>coverage-xml/index.xml</code> (PHPUnit XML version &lt;= 4)<br/>
         <code>clover.xml</code> (Clover)</td>
 </tr>
@@ -352,7 +352,7 @@ Follow these instructions to validate that your coverage setup is working correc
             The setting <strong>Run analysis on your build server</strong> is on, but your client-side tools didn't upload results to Codacy.
         </td>
         <td>
-            Make sure that your <a href="../related-tools/local-analysis/client-side-tools/">client-side tools</a> run successfully and upload the results to Codacy to complete the analysis.
+            Make sure that your <a href="../repositories-configure/local-analysis/client-side-tools/">client-side tools</a> run successfully and upload the results to Codacy to complete the analysis.
         </td>
     </tr>
     <tr>
@@ -423,6 +423,14 @@ Follow these instructions to validate that your coverage setup is working correc
             Check <a href="../repositories-configure/ignoring-files/">which files are ignored on Codacy</a> and make sure that you're generating coverage reports for the correct files in your repository.
         </td>
     </tr>
+    <tr>
+        <td>
+            The uploaded coverage data is incorrectly associated, using the `-l` option, to a language that's not present in your repository.
+        </td>
+        <td>
+            Verify that you are associating the correct language, or don't specify a language to let Codacy detect the contents of the coverage reports automatically. See <a href="uploading-coverage-in-advanced-scenarios/">how to upload coverage in advanced scenarios</a> for more information.
+        </td>
+    </tr>
     </table>
 
 1.  Check that Codacy displays the coverage metrics for the latest commits and pull requests.
@@ -453,3 +461,8 @@ Follow these instructions to validate that your coverage setup is working correc
     -   Branch name and commit SHA-1 hash corresponding to the CI/CD output
     -   Test coverage report that you're uploading to Codacy
     -   Any other relevant information or screenshots of your setup
+
+## See also
+
+-   [Identifying commits without coverage data](../codacy-api/examples/identifying-commits-without-coverage-data.md)
+-   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
