@@ -28,11 +28,13 @@ The following screenshot displays the default configuration values:
 -   **Diff coverage is under:** Pull requests are marked not up to standards if the diff coverage of the pull request is lower than the set value or `∅` ([not applicable](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage)). This rule is only available for pull requests.
 -   **Coverage variation is under:** Pull requests or commits are marked not up to standards if they introduce a variation to coverage lower than the set value.
 
-    To ensure that commits and pull requests:
+    !!! tip
+        Set this gate to a value **between -5.00% and -1.00%**. This will ensure that:
 
-    -   **Can decrease** the coverage, set the value between -100.00 and 0.00%
-    -   **Can't decrease** the coverage, set the value to 0.00%
-    -   **Must improve** the coverage, set the value between 0.00 and 1.00%
+        -   Codacy marks as not up to standards pull requests that **drop coverage by 5% or more**
+        -   Developers have a **1% coverage drop margin** so they aren't blocked [while performing some types of code refactors](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md#example-pull-request-coverage-variation-is-negative-but-no-files-have-coverage-variation)
+
+        To ensure that the changes in each pull request have a minimum level of coverage, use the gate **Diff coverage is under** instead.
 
 !!! note
     Learn how Codacy calculates the code quality metrics in more detail:
