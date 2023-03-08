@@ -5,7 +5,7 @@
 
     For more information [read the release announcement](https://blog.codacy.com/organization-coding-standards/) or [watch a demo (3 min)](https://www.loom.com/share/19642d09662e40f2820bf2be6bdf3660) to learn how to create a coding standard for your organization.
 
-Create coding standards on your organization to define and apply shared tool and code pattern configurations consistently across your repositories. You can also apply a coding standard to new repositories automatically by defining it as default.
+Create coding standards on your organization to define and apply shared tool and code pattern configurations consistently across your repositories. You can also apply a coding standard to new repositories automatically by [defining it as default](#set-default).
 
 Coding standards help you ensure that Codacy analyzes multiple repositories with the same tool and code pattern configurations. For example, you can use a coding standard to ensure that a group of repositories follow the same security rules or coding conventions.
 
