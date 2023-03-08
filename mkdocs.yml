@@ -157,8 +157,8 @@ plugins:
               "hc/en-us/articles/207280239-Bitbucket-Integration.md": "repositories-configure/integrations/bitbucket-integration.md"
               "hc/en-us/articles/207280359.md": "repositories-configure/integrations/webhook-notifications.md"
               "hc/en-us/articles/207280359-WebHook-Notifications.md": "repositories-configure/integrations/webhook-notifications.md"
-              "hc/en-us/articles/207280379.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
-              "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
+              "hc/en-us/articles/207280379.md": "getting-started/supported-languages-and-tools.md#docker-images-of-supported-tools"
+              "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "getting-started/supported-languages-and-tools.md#docker-images-of-supported-tools"
               "hc/en-us/articles/207312879.md": "coverage-reporter/index.md"
               "hc/en-us/articles/207312879-Generate-Coverage.md": "coverage-reporter/index.md"
               "hc/en-us/articles/207993605.md": "getting-started/codacy-quickstart.md"
@@ -174,8 +174,8 @@ plugins:
               "hc/en-us/articles/207994395-Language-Extensions.md": "repositories-configure/file-extensions.md"
               "hc/en-us/articles/207994675.md": "codacy-api/api-tokens.md"
               "hc/en-us/articles/207994675-Project-API.md": "codacy-api/api-tokens.md"
-              "hc/en-us/articles/207994725.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
-              "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
+              "hc/en-us/articles/207994725.md": "getting-started/supported-languages-and-tools.md#docker-images-of-supported-tools"
+              "hc/en-us/articles/207994725-Tool-Developer-Guide.md": "getting-started/supported-languages-and-tools.md#docker-images-of-supported-tools"
               "hc/en-us/articles/207994735.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/207994735-Supported-Languages.md": "getting-started/supported-languages-and-tools.md"
               "hc/en-us/articles/207994765.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
@@ -261,10 +261,10 @@ plugins:
               "hc/en-us/articles/360006036934-PHP-CodeSniffer-Specifying-your-PHP-version.md": "repositories-configure/codacy-configuration-file.md"
               "hc/en-us/articles/360006795293.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
               "hc/en-us/articles/360006795293-Repository-failed-to-clone-Generating-a-new-SSH-key.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
-              "hc/en-us/articles/360008254833.md": "repositories-configure/local-analysis/running-local-analysis.md"
-              "hc/en-us/articles/360008254833-Run-local-analysis.md": "repositories-configure/local-analysis/running-local-analysis.md"
-              "hc/en-us/articles/360008254833-Run-local-analysis-before-creating-a-commit.md": "repositories-configure/local-analysis/running-local-analysis.md"
-              "hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results.md": "repositories-configure/local-analysis/running-local-analysis.md"
+              "hc/en-us/articles/360008254833.md": "repositories-configure/local-analysis/client-side-tools.md"
+              "hc/en-us/articles/360008254833-Run-local-analysis.md": "repositories-configure/local-analysis/client-side-tools.md"
+              "hc/en-us/articles/360008254833-Run-local-analysis-before-creating-a-commit.md": "repositories-configure/local-analysis/client-side-tools.md"
+              "hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results.md": "repositories-configure/local-analysis/client-side-tools.md"
               "hc/en-us/articles/360009164573.md": "repositories-configure/adjusting-quality-settings.md"
               "hc/en-us/articles/360009164573-Quality-Settings.md": "repositories-configure/adjusting-quality-settings.md"
               "hc/en-us/articles/360009180134.md": "repositories/issues.md"
@@ -457,8 +457,8 @@ plugins:
               "getting-started/setting-up-your-personal-repositories.md": "getting-started/codacy-quickstart.md"
               "getting-started/supported-languages.md": "getting-started/supported-languages-and-tools.md"
               "account/default-patterns.md": "repositories-configure/configuring-code-patterns.md"
-              "related-tools/tool-developer-guide.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
-              "related-tools/tool-developer-guide-using-scala.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
+              "related-tools/tool-developer-guide.md": "getting-started/supported-languages-and-tools.md#docker-images-of-supported-tools"
+              "related-tools/tool-developer-guide-using-scala.md": "getting-started/supported-languages-and-tools.md#docker-images-of-supported-tools"
               "organizations/adding-and-managing-authors.md": "organizations/managing-people.md"
               "organizations/authors-vs-members.md": "organizations/managing-people.md"
               "organizations/configuring-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-organizations.md"
@@ -496,8 +496,8 @@ plugins:
               "getting-started/i-added-a-repository-now-what.md": "getting-started/codacy-quickstart.md"
               "related-tools/api-tokens.md": "codacy-api/api-tokens.md"
               "faq/troubleshooting/why-isnt-my-public-repository-being-analysed.md": "faq/troubleshooting/why-isnt-my-public-repository-being-analyzed.md"
-              "related-tools/running-local-analysis.md": "repositories-configure/local-analysis/running-local-analysis.md"
-              "related-tools/run-local-analysis.md": "repositories-configure/local-analysis/running-local-analysis.md"
+              "related-tools/running-local-analysis.md": "repositories-configure/local-analysis/client-side-tools.md"
+              "related-tools/run-local-analysis.md": "repositories-configure/local-analysis/client-side-tools.md"
               "related-tools/client-side-tools.md": "repositories-configure/local-analysis/client-side-tools.md"
               "related-tools/run-spotbugs.md": "repositories-configure/local-analysis/running-spotbugs.md"
               "repositories-configure/ignore-files-from-codacy-analysis.md": "repositories-configure/ignoring-files.md"
@@ -547,12 +547,13 @@ plugins:
               "faq/troubleshooting/why-cant-i-see-or-add-my-organizations-repositories.md": "organizations/managing-repositories.md"
               "faq/general/which-browsers-does-codacy-support.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
               "faq/general/which-version-control-systems-does-codacy-support.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
-              "related-tools/codacy-plugin-tools.md": "getting-started/supported-languages-and-tools.md#codacy-wrappers-for-supported-tools"
+              "related-tools/codacy-plugin-tools.md": "getting-started/supported-languages-and-tools.md#docker-images-of-supported-tools"
               "related-tools/local-analysis/client-side-tools.md": "repositories-configure/local-analysis/client-side-tools.md"
               "related-tools/local-analysis/running-aligncheck.md": "repositories-configure/local-analysis/running-aligncheck.md"
               "related-tools/local-analysis/running-deadcode.md": "repositories-configure/local-analysis/running-deadcode.md"
-              "related-tools/local-analysis/running-local-analysis.md": "repositories-configure/local-analysis/running-local-analysis.md"
+              "related-tools/local-analysis/running-local-analysis.md": "repositories-configure/local-analysis/client-side-tools.md"
               "related-tools/local-analysis/running-spotbugs.md": "repositories-configure/local-analysis/running-spotbugs.md"
+              "repositories-configure/local-analysis/running-local-analysis.md": "repositories-configure/local-analysis/client-side-tools.md"
 
 nav:
     - Documentation home: "index.md"
@@ -590,7 +591,6 @@ nav:
                 - coverage-reporter/uploading-coverage-in-advanced-scenarios.md
                 - coverage-reporter/troubleshooting-coverage-cli-issues.md
           - Local analysis:
-                - repositories-configure/local-analysis/running-local-analysis.md
                 - repositories-configure/local-analysis/client-side-tools.md
                 - repositories-configure/local-analysis/running-aligncheck.md
                 - repositories-configure/local-analysis/running-deadcode.md
