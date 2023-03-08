@@ -100,7 +100,7 @@ To delete a coding standard:
 
 1.  Open your organization **Coding standards** page, tab **Coding standards**.
 
-1.  Click the trash can icon on the coding standard card and confirm by clicking **Delete coding standard**.
+1.  Click the trash can icon on the coding standard card and confirm.
 
     ![Deleting a coding standard](images/coding-standard-delete.png)
 
