@@ -34,6 +34,6 @@ If the user that initially configured the repository on Codacy was using a user 
     !!! important
         **If you're using Bitbucket Cloud**, you must manually add the SSH key on your [user account](https://bitbucket.org/account/settings/ssh-keys/).
 
-    <!--TODO Update for IO-201-->![Generate new key](images/we-no-longer-have-access-to-this-repository-new-key.png)
+    ![Generate new key](images/we-no-longer-have-access-to-this-repository-new-key.png)
 
 1.  Open the tab **Integrations**. If you have an integration with your Git provider enabled, [remove and re-create the integration](why-did-codacy-stop-commenting-on-pull-requests.md).

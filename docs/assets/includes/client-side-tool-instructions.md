@@ -5,7 +5,7 @@
 
     This setting enables Codacy to wait for the results of the local analysis before resuming the analysis of your commits.
 
-    <!--TODO Update for IO-201-->![Run analysis on your build server](images/run-analysis-through-build-server.png)
+    ![Run analysis on your build server](images/run-analysis-through-build-server.png)
 
 1.  Set up an API token to authenticate on Codacy:
 
