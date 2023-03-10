@@ -26,13 +26,12 @@ The following screenshot displays the default configuration values:
 -   **Complexity is over:** Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value.
 -   **Duplication is over:** Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value.
 -   **Diff coverage is under:** Pull requests are marked not up to standards if the diff coverage of the pull request is lower than the set value or `∅` ([not applicable](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage)). This rule is only available for pull requests.
--   **Coverage variation is under:** Pull requests or commits are marked not up to standards if they introduce a variation to coverage lower than the set value. The maximum value is 1%.
+-   **Coverage variation is under:** Pull requests or commits are marked not up to standards if they introduce a variation to coverage lower than the set value.
 
-    To ensure that commits and pull requests:
+    !!! tip
+        **Set this gate to -0.10% or lower.** This will ensure that developers have a coverage drop margin so they aren't blocked [while performing some types of code refactors](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md#example-pull-request-coverage-variation-is-negative-but-no-files-have-coverage-variation)
 
-    -   **Can decrease** the coverage, set the value between -100.00 and 0.00%
-    -   **Can't decrease** the coverage, set the value to 0.00%
-    -   **Must improve** the coverage, set the value between 0.00 and 1.00%
+        To ensure that the changes in each pull request have a minimum level of coverage, use the gate **Diff coverage is under** instead.
 
 !!! note
     Learn how Codacy calculates the code quality metrics in more detail:
