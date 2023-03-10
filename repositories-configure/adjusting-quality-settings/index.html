@@ -11,7 +11,7 @@
         <meta name="description" content="The Quality settings allow you to configure quality gates for your pull requests and commits, and define quality goals that help you monitor the progress of the code quality in your repository dashboard.">
       
       
-        <meta http-equiv="last-modified" content="2023-01-30 15:04:59">
+        <meta http-equiv="last-modified" content="2023-03-10 11:50:22">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/adjusting-quality-settings/">
@@ -3604,13 +3604,12 @@
 <li><strong>Duplication is over:</strong> Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value.</li>
 <li><strong>Diff coverage is under:</strong> Pull requests are marked not up to standards if the diff coverage of the pull request is lower than the set value or <code>∅</code> (<a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#code-coverage">not applicable</a>). This rule is only available for pull requests.</li>
 <li>
-<p><strong>Coverage variation is under:</strong> Pull requests or commits are marked not up to standards if they introduce a variation to coverage lower than the set value. The maximum value is 1%.</p>
-<p>To ensure that commits and pull requests:</p>
-<ul>
-<li><strong>Can decrease</strong> the coverage, set the value between -100.00 and 0.00%</li>
-<li><strong>Can't decrease</strong> the coverage, set the value to 0.00%</li>
-<li><strong>Must improve</strong> the coverage, set the value between 0.00 and 1.00%</li>
-</ul>
+<p><strong>Coverage variation is under:</strong> Pull requests or commits are marked not up to standards if they introduce a variation to coverage lower than the set value.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Set this gate to -0.10% or lower.</strong> This will ensure that developers have a coverage drop margin so they aren't blocked <a href="../../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes/#example-pull-request-coverage-variation-is-negative-but-no-files-have-coverage-variation">while performing some types of code refactors</a></p>
+<p>To ensure that the changes in each pull request have a minimum level of coverage, use the gate <strong>Diff coverage is under</strong> instead.</p>
+</div>
 </li>
 </ul>
 <div class="admonition note">
@@ -3796,7 +3795,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 30, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 10, 2023</span>
     
   </small>
 </div>

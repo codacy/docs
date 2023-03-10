@@ -11,7 +11,7 @@
         <meta name="description" content="You may encounter some situations where Codacy shows unexpected drops in coverage, potentially causing your quality gates to fail. Usually, these drops in coverage happen in files that the commit or pull request didn&#x27;t change.">
       
       
-        <meta http-equiv="last-modified" content="2023-03-02 11:48:15">
+        <meta http-equiv="last-modified" content="2023-03-10 11:50:22">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes/">
@@ -3830,6 +3830,10 @@
 <p><img alt="Pull request coverage variation is negative but no files have coverage variation" src="../images/coverage-example-2.png" /></p>
 <p><strong>Removing covered lines</strong> from a file that had 100% coverage means that the file will continue to have 100% coverage. All lines in the file continue to be covered, even though there are now less covered lines. As such, there is no coverage variation for the file.</p>
 <p>However, since the proportion between the total number of covered and coverable lines across all files in the repository is now different, there can be a drop in the coverage variation for the pull request.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you're using the <a href="../../../repositories-configure/adjusting-quality-settings/#gates">gate <strong>Coverage variation is under</strong></a>, configure at least a <strong>-0.10% coverage variation margin</strong> to ensure that developers aren't blocked while performing code refactors such as the one from this example.</p>
+</div>
 <p>The table below represents two example coverage reports reflecting a pull request that removes lines 5 and 6 of the file <code>ClassA.java</code>:</p>
 <table>
   <thead>
@@ -4143,7 +4147,7 @@ th.border {
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 2, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 10, 2023</span>
     
   </small>
 </div>
