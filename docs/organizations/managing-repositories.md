@@ -1,8 +1,10 @@
 # Managing repositories
 
+<!-- TODO PUL-368 Review page in its entirety -->
+
 To see a list of the repositories that Codacy is monitoring, open the page **Repositories** under your organization.
 
-![Repositories list](images/repositories.png)
+<!-- TODO PUL-368 Screenshot -->![Repositories list](images/repositories.png)
 
 This page lists the repositories that already belong to your organization on Codacy sorted by [last updated date](organization-overview.md#last-updated-repositories), and allows you to compare the repositories in the list according to the following metrics:
 
@@ -26,7 +28,7 @@ If you have many repositories, you can use the search field above the list to <s
 
 To add a new repository to Codacy, click the button **Add repository** at the top right-hand corner of the page. This opens a window listing the repositories in your Git provider organization that don't belong to your organization on Codacy yet.
 
-![Adding a repository](images/repositories-add.png)
+<!-- TODO PUL-368 Screenshot -->![Adding a repository](images/repositories-add.png)
 
 !!! important
     To see your repositories in this list, make sure that you have admin permissions over the repositories on the Git provider and that Codacy has permissions to access the repositories.
