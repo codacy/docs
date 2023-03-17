@@ -1,11 +1,11 @@
 <!--instructions-start-->
 1.  [Enable {{ page.meta.tool_name }}](../../repositories-configure/configuring-code-patterns.md) and configure the corresponding code patterns on your repository **Code patterns** page.
 
-1.  Enable **Run analysis on your build server** on your repository **Settings**, tab **General**, **Repository analysis**.
+1.  Enable **Run analysis on your build server** on your repository **Settings**, tab **General**, <!-- TODO IO-510 -->**Repository analysis**.
 
     This setting enables Codacy to wait for the results of the local analysis before resuming the analysis of your commits.
 
-    ![Run analysis on your build server](images/run-analysis-through-build-server.png)
+    <!-- TODO IO-510 -->![Run analysis on your build server](images/run-analysis-through-build-server.png)
 
 1.  Set up an API token to authenticate on Codacy:
 
