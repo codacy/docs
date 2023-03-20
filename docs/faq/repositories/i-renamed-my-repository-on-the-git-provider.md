@@ -4,4 +4,4 @@ If you changed the name or URL of your repository on your Git provider, you can 
 
 To rename your repository on Codacy, open the page **Settings** and click the button **Update repository**.
 
-<!-- TODO IO-510 -->![Renaming your repository](images/repository-rename.png)
+![Renaming your repository](images/repository-rename.png)
