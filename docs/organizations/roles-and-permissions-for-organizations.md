@@ -2,7 +2,7 @@
 description: List of operations that users can perform on Codacy depending on their role on the Git provider, and how to configure who can change analysis configurations.
 ---
 
-<!-- TODO PUL-368 We may *not* update this one: there would be a new entry labelled "Follow a repository", open to all -->
+<!-- TODO PLUTO-368 We may *not* update this one: there would be a new entry labelled "Follow a repository", open to all -->
 
 # Roles and permissions for organizations
 
