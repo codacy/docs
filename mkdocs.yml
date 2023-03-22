@@ -572,6 +572,8 @@ nav:
           - repositories/issues.md
           - repositories/pull-requests.md
           - repositories/security-monitor.md
+          - Coverage:
+            - coverage/repositories/repository-dashboard.md
     - Configuring your repositories:
           - repositories-configure/configuring-code-patterns.md
           - repositories-configure/managing-branches.md
