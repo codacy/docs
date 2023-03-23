@@ -1,10 +1,8 @@
 ---
-description: The Organization Overview provides an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
+description: The Organization Overview provides an overview of the repositories belonging to your Git provider organization that you are following on Codacy. Here you can compare their statuses and check for items that require your attention.
 ---
 
 # Organization Overview
-
-<!-- TODO PLUTO-368 Review page in its entirety -->
 
 {%
     include-markdown "../assets/includes/paid.md"
@@ -12,16 +10,16 @@ description: The Organization Overview provides an overview of repositories that
     end="<!--paid-end-->"
 %}
 
-The **Organization Overview** provides an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
+The **Organization Overview** provides an overview of the repositories belonging to your Git provider organization that you are following on Codacy. Here you can compare their statuses and check for items that require your attention.
 
 To access your Organization Overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
 
 !!! important
-    -   The Organization Overview calculates metrics and displays data only for the repositories that you have access to. This means that depending on their permissions, two users could see different results on their Organization Overview.
+    -   The Organization Overview calculates metrics and displays data only for [the repositories that you follow on Codacy](managing-repositories.md). This means that depending on their selection of followed repositories, two users can see different results on their Organization Overview.
 
     -   The Organization Overview displays information for **at most the last 100 updated repositories**.
 
-![Organization Overview](images/organization-overview.png)
+![Organization Overview](images/organization-overview.png)<!-- TODO PLUTO-368 Update screenshot -->
 
 Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained. The selected repositories are stored in your browser so that the same filter is applied between your visits to the Organization Overview page.
 
@@ -41,7 +39,7 @@ The following sections provide a detailed description of each dashboard area.
 
 ## Overall quality chart
 
-The **Overall quality** chart compares the repositories in your organization regarding [grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade), [issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Each tab displays the average value for the corresponding metric across your repositories.
+The **Overall quality** chart compares the organization repositories that you follow regarding [grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade), [issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Each tab displays the average value for the corresponding metric across your repositories.
 
 ![Overall quality chart](images/organization-overview-overall-quality.png)
 
@@ -76,7 +74,7 @@ Click a pull request to see the [details of that pull request](../repositories/p
 
 The **Last updated repositories** list displays the last updated repositories, sorted by reverse date of the last update. Each item displays the date of the last update and the current grade of the repository.
 
-Click **See all** to see all repositories in your organization.
+Click **See all** to see all the organazition repositories that you follow on Codacy.
 
 ![Last updated repositories](images/organization-overview-repositories-last-updated.png)
 
