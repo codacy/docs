@@ -46,7 +46,7 @@ To create a coding standard for your organization:
 
     ![Configuring the tools and patterns for the coding standard](images/coding-standard-configure-tools.png)
 
-1.  <!-- TODO PLUTO-368 Review permissions for this action. This may require no change -->Select existing repositories that should follow the new coding standard and click **Save and apply standard**.
+1.  Select existing repositories that should follow the new coding standard and click **Save and apply standard**.
 
     Codacy will start using the new coding standard on the next analysis of each selected repository.
 
