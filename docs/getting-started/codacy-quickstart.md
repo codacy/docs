@@ -47,7 +47,7 @@ To start adding your repositories, select one of the organizations.
 
 ## 3. Adding repositories {: id="adding-repositories"}
 
-<!-- TODO PLUTO-368 Update copy with Follow behavior -->Next, add the repositories that you wish to analyze. Codacy begins an initial analysis as soon as you add a repository and sets everything up to ensure your next commits on that repository are analyzed.
+Next, add the repositories that you wish to analyze. Codacy begins an initial analysis as soon as you add a repository and sets everything up to ensure your next commits on that repository are analyzed.
 
 !!! note
     You can only add repositories on Codacy if you have the [necessary permissions on your Git provider](../organizations/roles-and-permissions-for-organizations.md).
