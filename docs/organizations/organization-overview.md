@@ -1,5 +1,5 @@
 ---
-description: The Organization Overview provides an overview of the repositories belonging to your Git provider organization that you are following on Codacy. Here you can compare their statuses and check for items that require your attention.
+description: The Organization Overview provides an overview of the repositories belonging to your Git provider organization that you follow on Codacy. Here you can compare their statuses and check for items that require your attention.
 ---
 
 # Organization Overview
@@ -10,12 +10,12 @@ description: The Organization Overview provides an overview of the repositories 
     end="<!--paid-end-->"
 %}
 
-The **Organization Overview** provides an overview of the repositories belonging to your Git provider organization that you are following on Codacy. Here you can compare their statuses and check for items that require your attention.
+The **Organization Overview** provides an overview of the repositories belonging to your Git provider organization that you [follow on Codacy](managing-repositories.md). Here you can compare their statuses and check for items that require your attention.
 
 To access your Organization Overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
 
 !!! important
-    -   The Organization Overview calculates metrics and displays data only for [the repositories that you follow on Codacy](managing-repositories.md). This means that depending on their selection of followed repositories, two users can see different results on their Organization Overview.
+    -   The Organization Overview calculates metrics and displays data only for the **repositories that you follow** on Codacy. This means that depending on their selection of followed repositories, two users can see different results on their Organization Overview.
 
     -   The Organization Overview displays information for **at most the last 100 updated repositories**.
 

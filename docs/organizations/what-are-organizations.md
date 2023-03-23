@@ -23,6 +23,8 @@ This opens the list of organizations on your Git providers. The organization wit
 
 ## Updates on the Git provider
 
+<!-- TODO PLUTO-368 Review this section -->
+
 In case you change your organization or repository on the Git provider, some changes are automatically reflected on Codacy. The following cases are supported, depending on your Git provider:
 
 | Provider | Rename repository | Change repository visibility | Delete repository | Rename organization or group | Remove member from organization or group | Delete organization or group |

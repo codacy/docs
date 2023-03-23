@@ -1,12 +1,12 @@
 # Managing repositories
 
-<!-- TODO PLUTO-368 Review page in its entirety -->
+Users with the [necessary permissions on your Git provider](roles-and-permissions-for-organizations.md) can **add** the organization repositories to Codacy to start analyzing them. Other members of the organization will then be able to **follow** on Codacy the repositories of their interest.
 
-To see a list of the repositories that Codacy is monitoring, open the page **Repositories** under your organization.
+To see a list of the repositories that you follow on Codacy, open the page **Repositories** under your organization. Across the application, Codacy calculates and displays data for the repositories in this list.
 
-<!-- TODO PLUTO-368 Screenshot -->![Repositories list](images/repositories.png)
+<!-- TODO PLUTO-368 Update screenshot -->![Repositories list](images/repositories.png)
 
-This page lists the repositories that already belong to your organization on Codacy sorted by [last updated date](organization-overview.md#last-updated-repositories), and allows you to compare the repositories in the list according to the following metrics:
+This page lists the repositories that you follow on Codacy sorted by [last updated date](organization-overview.md#last-updated-repositories), and allows you to compare the repositories in the list according to the following metrics:
 
 -   [Grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade)
 -   [Issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues)
@@ -16,9 +16,9 @@ This page lists the repositories that already belong to your organization on Cod
 
 The list also displays error and warning messages for repositories that have issues, such as when there are no committers added to the organization or when Codacy stopped having access to the repository. Hover the mouse cursor over the warning icons or open the repository to see more details.
 
-If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
+If you are following many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
-## Adding a repository
+## Adding or following a repository {: id="adding-a-repository"}
 
 {%
     include-markdown "../assets/includes/paid.md"
@@ -26,16 +26,24 @@ If you have many repositories, you can use the search field above the list to <s
     end="<!--paid-private-repositories-end-->"
 %}
 
-To add a new repository to Codacy, click the button **Add repository** at the top right-hand corner of the page. This opens a window listing the repositories in your Git provider organization that don't belong to your organization on Codacy yet.
+Depending on your [permissions on the Git provider](roles-and-permissions-for-organizations.md) you can:
 
-<!-- TODO PLUTO-368 Screenshot -->![Adding a repository](images/repositories-add.png)
+-   **Add** a new repository to Codacy to start analyzing it. You need admin permission over the repository to add it to Codacy.
+-   **Follow** a repository that was already added to Codacy by a repository admin.
+
+!!! note
+    When adding a new repository to Codacy, all users with admin permissions over that repository start following it.
+
+To add or follow a repository, click the button **Manage repository** at the top right-hand corner of the page. This opens a window listing your organization repositories.
+
+<!-- TODO PLUTO-368 Update screenshot -->![Adding a repository](images/repositories-add.png)
 
 !!! important
-    To see your repositories in this list, make sure that you have admin permissions over the repositories on the Git provider and that Codacy has permissions to access the repositories.
+    To see your repositories in this list, make sure that you have permissions over the repositories on the Git provider and that Codacy has permissions to access the repositories.
 
-Add one or multiple repositories to your organization by clicking **Add** next to the repositories. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
+Add or follow your organization repositories by clicking **Add** or **Follow** next to the repositories. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
-After adding repositories, close the window to return to the list of repositories in your organization. Although Codacy will immediately start analyzing the new repositories, they will display empty metrics until the first analysis returns results.
+Then, close the window to return to your repositories list. Although Codacy will immediately start analyzing new added repositories, they will display empty metrics until the first analysis returns results.
 
 ![Waiting for first analysis results](images/repositories-analyzing.png)
 
