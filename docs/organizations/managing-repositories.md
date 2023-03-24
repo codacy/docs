@@ -31,9 +31,6 @@ Depending on your [permissions on the Git provider](roles-and-permissions-for-or
 -   **Add** a new repository to Codacy to start analyzing it. You need admin permission over the repository to add it to Codacy.
 -   **Follow** a repository that was already added to Codacy by a repository admin.
 
-!!! note
-    When adding a new repository to Codacy, all users with admin permissions over that repository start following it.
-
 To add or follow a repository, click the button **Manage repository** at the top right-hand corner of the page. This opens a window listing your organization repositories.
 
 <!-- TODO PLUTO-368 Update screenshot -->![Adding a repository](images/repositories-add.png)
@@ -46,6 +43,13 @@ Add or follow your organization repositories by clicking **Add** or **Follow** n
 Then, close the window to return to your repositories list. Although Codacy will immediately start analyzing new added repositories, they will display empty metrics until the first analysis returns results.
 
 ![Waiting for first analysis results](images/repositories-analyzing.png)
+
+!!! note
+    -   When an **admin user** adds a new repository to Codacy, all users with admin permissions over that repository will start following it.
+
+    -   If you access directly on Codacy to the details of a repository that you have permissions over and you **weren't following yet**, Codacy automatically adds that repository to your repositories list. For example, when you access the repository directly from a link on the Git provider UI.
+
+    -   If you access directly on Codacy to the details of a repository that you **don't have permissions anymore**, Codacy automatically removes that repository from your repositories list.
 
 ## See also
 
