@@ -68,6 +68,7 @@ Scalastyle
 SCSSLint
 Serverless
 ShellCheck
+SLAs
 SonarC#
 SonarVB
 SpotBugs
