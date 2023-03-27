@@ -234,7 +234,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes<sup>2</sup></td>
     </tr>
     <tr>
-      <td>Follow and view private repository</td>
+      <td>View and follow private repository</td>
       <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
