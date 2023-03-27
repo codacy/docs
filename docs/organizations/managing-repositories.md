@@ -38,7 +38,7 @@ To add or follow a repository, click the button **Manage repositories** at the t
 !!! important
     To see your repositories in this list, make sure that you have permissions over the repositories on the Git provider and that Codacy has permissions to access the repositories.
 
-Add or follow your organization repositories by clicking **Add** or **Follow** next to the repositories. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
+Add or follow your repositories by clicking **Add** or **Follow** next to the repositories. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
 Then, close the window to return to your repositories list. Although Codacy will immediately start analyzing new added repositories, they will display empty metrics until the first analysis returns results.
 
