@@ -47,9 +47,9 @@ Then, close the window to return to your repositories list. Although Codacy imme
 !!! note
     -   When an **admin user** adds a new repository to Codacy, all users with admin permissions over that repository start following it automatically.
 
-    -   If you access directly on Codacy to the details of a repository that you have permissions over and you **weren't following yet**, Codacy automatically adds that repository to your repositories list. For example, when you access the repository directly from a link on the Git provider UI.
+    -   You automatically **start following** a repository as soon as you access any page from that repository. For example, when you access the repository using a direct link on your Git provider UI.
 
-    -   If you access directly on Codacy to the details of a repository that you **don't have permissions anymore**, Codacy automatically removes that repository from your repositories list.
+        Conversely, you automatically **stop following** a repository as soon as you try accessing any page from that repository but you don't have permissions to see that repository anymore.
 
 ## See also
 
