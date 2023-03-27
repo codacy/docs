@@ -52,7 +52,7 @@ Next, add the repositories that you wish to analyze. Codacy begins an initial an
 !!! note
     You can only add repositories on Codacy if you have the [necessary permissions on your Git provider](../organizations/roles-and-permissions-for-organizations.md).
 
-<!-- TODO PLUTO-368 Update screenshot -->![Adding repositories](../organizations/images/repositories-add.png)
+<!-- TODO PLUTO-368 Validate if this (shared) screenshot is updated -->![Adding repositories](../organizations/images/repositories-add.png)
 
 Click the link **Go to repository** to see the [code quality overview of your repository](../repositories/repository-dashboard.md) as soon as the initial analysis is complete:
 
