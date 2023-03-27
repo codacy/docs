@@ -2,7 +2,7 @@
 
 Users with the [necessary permissions on your Git provider](roles-and-permissions-for-organizations.md) can **add** repositories to Codacy to start analyzing them. The remaining organization members can then **follow** added repositories of their interest on Codacy.
 
-To see a list of the repositories that you follow on Codacy, open the page **Repositories** under your organization. Across the application, Codacy calculates and displays data for the repositories in this list.
+To see a list of the repositories you follow on Codacy, open the page **Repositories** under your organization. Across the application, Codacy calculates and displays data for the repositories on this list.
 
 <!-- TODO PLUTO-368 Update screenshot -->![Repositories list](images/repositories.png)
 
