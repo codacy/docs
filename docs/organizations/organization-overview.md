@@ -15,7 +15,7 @@ The **Organization Overview** provides an overview of the repositories belonging
 To access your Organization Overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
 
 !!! important
-    -   The Organization Overview calculates metrics and displays data only for the **repositories that you follow** on Codacy. This means that depending on their selection of followed repositories, two users can see different results on their Organization Overview.
+    -   The Organization Overview calculates metrics and displays data only for the **repositories that you follow** on Codacy. This means that depending on their list of followed repositories, two users can see different results on their Organization Overview.
 
     -   The Organization Overview displays information for **at most the last 100 updated repositories**.
 
