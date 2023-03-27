@@ -1,5 +1,5 @@
 ---
-description: The Organization Overview provides an overview of the repositories belonging to your Git provider organization that you follow on Codacy. Here you can compare their statuses and check for items that require your attention.
+description: The Organization Overview provides an overview of the repositories that you follow on Codacy. Here you can compare their statuses and check for items that require your attention.
 ---
 
 # Organization Overview
