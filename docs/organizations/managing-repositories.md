@@ -36,7 +36,7 @@ To add or follow a repository, click the button **Manage repositories** at the t
 <!-- TODO PLUTO-368 Update screenshot -->![Adding a repository](images/repositories-add.png)
 
 !!! important
-    To see your repositories in this list, make sure that you have permissions over the repositories on the Git provider and that Codacy has permissions to access the repositories.
+    To see your repositories in this list, make sure that you have the necessary permissions over the repositories on the Git provider and that Codacy has the necessary permissions to access the repositories.
 
 Add or follow your repositories by clicking **Add** or **Follow** next to the repositories. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
