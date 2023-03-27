@@ -26,7 +26,7 @@ If you are following many repositories, you can use the search field above the l
     end="<!--paid-private-repositories-end-->"
 %}
 
-Depending on your [permissions on the Git provider](roles-and-permissions-for-organizations.md) you can:
+Depending on your [permissions on the Git provider](roles-and-permissions-for-organizations.md), you can:
 
 -   **Add** a new repository to Codacy to start analyzing it. You need admin permission over the repository to add it to Codacy.
 -   **Follow** a repository that was already added to Codacy by a repository admin.
