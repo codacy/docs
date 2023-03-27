@@ -74,7 +74,7 @@ Click a pull request to see the [details of that pull request](../repositories/p
 
 The **Last updated repositories** list displays the last updated repositories, sorted by reverse date of the last update. Each item displays the date of the last update and the current grade of the repository.
 
-Click **See all** to see all the organization repositories that you follow on Codacy.
+Click **See all** to see all the repositories that you follow on Codacy.
 
 ![Last updated repositories](images/organization-overview-repositories-last-updated.png)
 
