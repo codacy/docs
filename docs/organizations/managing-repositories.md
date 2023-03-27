@@ -31,7 +31,7 @@ Depending on your [permissions on the Git provider](roles-and-permissions-for-or
 -   **Add** a new repository to Codacy to start analyzing it. You need admin permission over the repository to add it to Codacy.
 -   **Follow** a repository that was already added to Codacy by a repository admin.
 
-To add or follow a repository, click the button **Manage repository** at the top right-hand corner of the page. This opens a window listing your organization repositories.
+To add or follow a repository, click the button **Manage repositories** at the top right-hand corner of the page. This opens a window listing your organization repositories.
 
 <!-- TODO PLUTO-368 Update screenshot -->![Adding a repository](images/repositories-add.png)
 
