@@ -148,7 +148,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
     </tr>
     <tr>
-      <td>Follow and view private repository</td>
+      <td>View and follow private repository</td>
       <td>No</td>
       <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
