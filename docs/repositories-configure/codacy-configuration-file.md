@@ -182,7 +182,7 @@ engines:
     https://github.com/codacy/codacy-duplication-pmdcpd/blob/c799cb3a80d1f3b3a8eb9868f63abee13e3e81c4/src/main/scala/com/codacy/duplication/pmd/Cpd.scala#L128
 -->
 
-Codacy uses [PMD's Copy/Paste Detector (CPD)](https://pmd.github.io/latest/pmd_userdocs_cpd.html) to identify duplicated blocks of code [on the supported languages](../getting-started/supported-languages-and-tools.md).
+Codacy uses [PMD's Copy/Paste Detector (CPD)](https://docs.pmd-code.org/latest/) to identify duplicated blocks of code [on the supported languages](../getting-started/supported-languages-and-tools.md).
 
 By default, Codacy only reports duplicate code blocks that have the following minimum token length, depending on the language:
 
