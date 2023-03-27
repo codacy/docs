@@ -6,7 +6,7 @@ To see a list of the repositories you follow on Codacy, open the page **Reposito
 
 <!-- TODO PLUTO-368 Update screenshot -->![Repositories list](images/repositories.png)
 
-This page lists the repositories that you follow on Codacy sorted by [last updated date](organization-overview.md#last-updated-repositories), and allows you to compare the repositories in the list according to the following metrics:
+This page lists the repositories that you follow on Codacy sorted by [last updated date](organization-overview.md#last-updated-repositories), and allows you to compare the repositories on the list according to the following metrics:
 
 -   [Grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade)
 -   [Issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues)
