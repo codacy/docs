@@ -40,7 +40,7 @@ To add or follow a repository, click the button **Manage repositories** at the t
 
 Add or follow your repositories by clicking **Add** or **Follow** next to the repositories. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
-Then, close the window to return to your repositories list. Although Codacy will immediately start analyzing new added repositories, they will display empty metrics until the first analysis returns results.
+Then, close the window to return to your repositories list. Although Codacy immediately starts analyzing newly added repositories, they display empty metrics until the first analysis returns results.
 
 ![Waiting for first analysis results](images/repositories-analyzing.png)
 
