@@ -16,7 +16,7 @@ This page lists the repositories that you follow on Codacy sorted by [last updat
 
 The list also displays error and warning messages for repositories that have issues, such as when there are no committers added to the organization or when Codacy stopped having access to the repository. Hover the mouse cursor over the warning icons or open the repository to see more details.
 
-If you are following many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
+If you follow many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
 ## Adding or following a repository {: id="adding-a-repository"}
 
