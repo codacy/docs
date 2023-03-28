@@ -12,4 +12,21 @@ By default, the page lists the commits on the main branch of your repository but
 
 ![Commits page](images/commits.png)<!--TODO Update-->
 
+Click a specific commit to see detailed information about the code quality changes introduced by that commit.
+
+![Commit detail](images/commits-detail.png)
+
+The next sections describe each area of the commit detail page.
+
+## Commit information {: id="info"}
+
+This area displays the information that identifies the commit:
+
+-   Commit message
+-   Author, SHA hash, and parent commit(s)
+-   Date
+-   Link to the commit on your Git provider
+
+![Commit status](images/commits-detail-status.png)<!--TODO Update-->
+
 <!--TODO Include and review the remaining page-->
