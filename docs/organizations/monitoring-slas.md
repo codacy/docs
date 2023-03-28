@@ -1,8 +1,18 @@
+<!--
+TODO:
+- Confirm that the SLA deadline for "due soon" is <= 15 days.
+- Confirm that new issues on the *default branch* create new items.
+- Dashboard, total: confirm whether we're listing all items or all open items.
+-->
+
 # Monitoring SLAs <!-- *** Concepts *** -->
 
 An SLA, short for service-level agreement, defines the expected time to resolve an action item with a defined priority.
 
-You define an SLA by linking a Codacy issue category and severity to an SLA priority. After you define an SLA, a new SLA action item is automatically created every time Codacy detects a corresponding issue on the most recent commit of the <!-- TODO confirm -->default branch, .
+You define an SLA by linking a Codacy issue category and severity to an SLA priority. After you define an SLA:
+
+-   Codacy creates a new SLA action item every time it detects a corresponding issue on the most recent commit of the default branch
+-   Codacy closes and existing SLA action item if it doesn't detect the corresponding issue on the most recent analyzed commit
 
 <!-- *** Tasks *** -->
 ## Setting up an SLA
@@ -30,7 +40,7 @@ To list and monitor SLA items:
     The dashboard contains five panes. Each pane contains the total count of matching items and a button to access the respective filtered item list:
 
     -   **Total**: all open items<!-- TODO confirm if we're listing all items or all open items -->
-    -   **Due soon**: open items within 15 days of missing their SLA deadline<!-- TODO confirm -->
+    -   **Due soon**: open items within 15 days of missing their SLA deadline
     -   **Overdue**: open items with a missed SLA deadline
     -   **Closed on time**: items closed before the SLA deadline, over the past 12 months
     -   **Closed late**: items closed after the SLA deadline, over the past 12 months
@@ -46,19 +56,12 @@ To list and monitor SLA items:
 <!-- *** Reference *** -->
 ## Item status
 
-<!--
-- When an item is open (Codacy)
-- When an item is closed (Codacy)
-- A table defining item statuses and their meaning:
-  - An item is open
-    - On track
-    - Due Soon
-    - Overdue
-  - An item is closed
-    - Completed on-time
-    - Completed late
+The following table describes how item statuses map to status categories and SLA deadlines:
 
-- For Codacy items:
-  - A new item is open if a new Codacy issue is detected on the most recent analyzed commit
-  - An item is closed if the related Codacy issue is not detected on the most recent analyzed commit
--->
+| Item status    | Status category | SLA deadline                       |
+|----------------|-----------------|------------------------------------|
+| On track       | Open            | 15 days or more to the deadline    |
+| Due soon       | Open            | Fewer than 15 days to the deadline |
+| Overdue        | Open            | The deadline has been missed       |
+| Closed on time | Resolved        | Resolved before the deadline       |
+| Closed late    | Resolved        | Resolved after the deadline        |
