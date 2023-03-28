@@ -1,18 +1,14 @@
-[//]: # (TODO remove comments)
+# Monitoring SLAs <!-- *** Concepts *** -->
 
-[//]: # (*** Concepts ***)
-
-# Monitoring SLAs
-
-[//]: # (WIP - some notes)
+<!--
 An SLA, short for service-level agreement, defines the amount of time required to respond to an incoming task having a defined priority.
 Codacy lets you define and monitor SLAs associated with Codacy issues.
 An SLA is represented by a priority label associated with a deadline to close a newly open item.
 Define an SLA to monitor...
 An item is a task to be closed within the deadline defined by the matching SLA.
+-->
 
-[//]: # (*** Tasks ***)
-
+<!-- *** Tasks *** -->
 ## Setting up an SLA
 
 To set up an SLA for your organization:
@@ -51,9 +47,10 @@ To list and monitor SLA items:
 
     ![Adding a repository](images/monitoring-slas-placeholder.png)
 
-[//]: # (*** Reference ***)
+<!-- *** Reference *** -->
 ## Item status
 
+<!--
 - When an item is open (Codacy)
 - When an item is closed (Codacy)
 - A table defining item statuses and their meaning:
@@ -64,3 +61,4 @@ To list and monitor SLA items:
   - An item is closed
     - Completed on-time
     - Completed late
+-->
