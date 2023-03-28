@@ -23,7 +23,7 @@ The next sections describe each area of the commit detail page.
 This area displays the information that identifies the commit:
 
 -   Commit message
--   Author, SHA hash, and parent commit(s)
+-   Committer, SHA hash, and parent commit(s)
 -   Date
 -   Link to the commit on your Git provider
 
