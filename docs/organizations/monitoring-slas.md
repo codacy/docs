@@ -1,12 +1,8 @@
 # Monitoring SLAs <!-- *** Concepts *** -->
 
-<!--
-An SLA, short for service-level agreement, defines the amount of time required to respond to an incoming task having a defined priority.
-Codacy lets you define and monitor SLAs associated with Codacy issues.
-An SLA is represented by a priority label associated with a deadline to close a newly open item.
-Define an SLA to monitor...
-An item is a task to be closed within the deadline defined by the matching SLA.
--->
+An SLA, short for service-level agreement, defines the expected time to resolve an action item with a defined priority.
+
+You define an SLA by linking a Codacy issue category and severity to an SLA priority. After you define an SLA, a new SLA action item is automatically created every time Codacy detects a corresponding issue on the most recent commit of the <!-- TODO confirm -->default branch, .
 
 <!-- *** Tasks *** -->
 ## Setting up an SLA
@@ -31,19 +27,19 @@ To list and monitor SLA items:
 
 1.  Open your organization **SLA monitor** page to display the SLA dashboard.
 
-    The dashboard contains five tiles, each linking to a filtered item list:
+    The dashboard contains five panes. Each pane contains the total count of matching items and a button to access the respective filtered item list:
 
     -   **Total**: all open items<!-- TODO confirm if we're listing all items or all open items -->
-    -   **Due soon**: open items with an approaching SLA deadline of 15 days or less<!-- TODO confirm -->
+    -   **Due soon**: open items within 15 days of missing their SLA deadline<!-- TODO confirm -->
     -   **Overdue**: open items with a missed SLA deadline
     -   **Closed on time**: items closed before the SLA deadline, over the past 12 months
     -   **Closed late**: items closed after the SLA deadline, over the past 12 months
-    
+
     ![Adding a repository](images/monitoring-slas-placeholder.png)
 
-1.  Click the relevant tile to display the corresponding filtered item list.
+1.  Click the **Review** button in the relevant pane to access the corresponding filtered item list.
 
-1.  To update or further refine the list by priority or status, use the selectors at the top of the list.
+1.  To further filter the list by priority or status, use the selectors above the list.
 
     ![Adding a repository](images/monitoring-slas-placeholder.png)
 
@@ -61,4 +57,8 @@ To list and monitor SLA items:
   - An item is closed
     - Completed on-time
     - Completed late
+
+- For Codacy items:
+  - A new item is open if a new Codacy issue is detected on the most recent analyzed commit
+  - An item is closed if the related Codacy issue is not detected on the most recent analyzed commit
 -->
