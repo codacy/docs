@@ -54,7 +54,7 @@ This area displays the coverage gate status and an overview of the coverage metr
         -   [Which coverage metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#coverage)
         -   [Why does Codacy show unexpected coverage changes?](../../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
 
--   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) for your repository:
+-   The **colors** depend on the [quality gate rules](../../repositories-configure/adjusting-quality-settings.md) for your repository:
 
     -   **Green:** The metric passes the quality gate
     -   **Red:** The metric fails the quality gate
