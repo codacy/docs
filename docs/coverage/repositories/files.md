@@ -3,6 +3,8 @@ product: coverage
 ---
 
 # [Coverage] Files page
+<!--TODO
+    Review page, see https://codacy.atlassian.net/browse/COV-118 and https://codacy.atlassian.net/browse/COV-121 for more details-->
 
 <!--TODO Review behavior for analyzing branches-->
 The **Files page** displays the current coverage information for each analyzed file in your [active repository branches](../../repositories-configure/managing-branches.md).

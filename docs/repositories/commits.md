@@ -4,6 +4,8 @@ file_name: "commits"
 ---
 
 # Commits page
+<!--TODO
+    Review page, see https://codacy.atlassian.net/browse/COV-123 and https://codacy.atlassian.net/browse/COV-122 for more details-->
 
 The **Commits page** displays an overview of the commits in your repository, such as the analysis status and the number of new and fixed issues for each commit. This allows you to monitor the evolution of the code quality in your repository per commit.
 
