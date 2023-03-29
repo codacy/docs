@@ -61,8 +61,18 @@ This area displays the coverage gate status and an overview of the coverage metr
     -   **Gray:** There aren't quality gate rules configured for the metric or the value doesn't impact the quality gate
 
 <!-- vale off -->
-![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-coverage-overview.png)
+![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-coverage-overview.png)<!--TODO Update-->
 <!-- vale on -->
 <!--coverage-overview-end-->
 
-<!--TODO Include and review the remaining page-->
+<!--tabs-start-->
+## Files tab
+
+The **Files** tab displays the coverage variation that the {{ page.meta.page_name }} introduced to the files in your repository relative to the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
+
+The option **Show also files without coverage changes** allows you to list all files that the {{ page.meta.page_name }} updated, even if their coverage didn't change.
+
+<!-- vale off -->
+![Files tab](images/{{ page.meta.file_name }}-tab-files.png)<!--TODO Update-->
+<!-- vale on -->
+<!--tabs-end-->
