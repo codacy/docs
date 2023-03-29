@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy scans your code for issues and calculates code complexity, duplication, and coverage metrics. Besides this, Codacy also calculates a grade for your repository and files based on all calculated code quality metrics.">
       
       
-        <meta http-equiv="last-modified" content="2023-03-08 10:53:40">
+        <meta http-equiv="last-modified" content="2023-03-29 09:30:41">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/which-metrics-does-codacy-calculate/">
@@ -3678,7 +3678,7 @@
 <li><strong>Security:</strong> All security problems</li>
 <li><strong>Documentation:</strong> Methods and classes that don't have the correct comment annotations</li>
 </ul>
-<p>Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the <strong>percentage of issues relative to an expected baseline</strong> of 100 issues with an average cost of 10 per 1000 lines of code, where the cost of each issue depends on its severity: Critical = 10, Medium = 5, Minor = 1.</p>
+<p>Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the issue cost <strong>relative to a baseline of 1 point per line of code</strong>, where the cost of each issue depends on its severity: Critical = 10 points, Medium = 5 points, Minor = 1 point. This means that if your repository has 50% issues, the amount and severity of the issues in your repository is half of the baseline.</p>
 <p>Codacy displays issues on the following places:</p>
 <table>
 <thead>
@@ -4020,7 +4020,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 8, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 29, 2023</span>
     
   </small>
 </div>
