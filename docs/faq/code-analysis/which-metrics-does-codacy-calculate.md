@@ -59,7 +59,7 @@ Codacy calculates the number of issues in the following static code analysis cat
 -   **Documentation:** Methods and classes that don't have the correct comment annotations
 <!--issue-categories-end-->
 
-Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the **issue cost relative to an expected baseline of 10 points per 1000 lines of code**, where the cost of each issue depends on its severity: Critical = 10 points, Medium = 5 points, Minor = 1 point. This means that if your repository has 50% issues, the amount and severity of the issues in your repository is half of the expected baseline.
+Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the issue cost **relative to a baseline of 1 point per line of code**, where the cost of each issue depends on its severity: Critical = 10 points, Medium = 5 points, Minor = 1 point. This means that if your repository has 50% issues, the amount and severity of the issues in your repository is half of the baseline.
 
 Codacy displays issues on the following places:
 
