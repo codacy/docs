@@ -3,16 +3,17 @@ TODO:
 - Confirm that the SLA deadline for "due soon" is <= 15 days.
 - Confirm that new issues on the *default branch* create new items.
 - Dashboard, total: confirm whether we're listing all items or all open items.
+- Item priorities section: define SLA resolution times
 -->
 
 # Monitoring SLAs <!-- *** Concepts *** -->
 
 An SLA, short for service-level agreement, defines the expected time to resolve an action item with a defined priority.
 
-You define an SLA by linking a Codacy issue category and severity to an SLA priority. After you define an SLA:
+You define an SLA by linking a Codacy issue category and severity to an SLA priority. For example, you can link all Codacy issues belonging to the Security category and with a High severity to a Critical SLA priority. After you define an SLA:
 
--   Codacy creates a new SLA action item every time it detects a corresponding issue on the most recent commit of the default branch
--   Codacy closes and existing SLA action item if it doesn't detect the corresponding issue on the most recent analyzed commit
+-   Codacy opens a new SLA action item when it detects a corresponding issue on the most recent analyzed commit of the default branch
+-   Codacy closes an existing SLA action item when it stops detecting the associated issue on the most recent analyzed commit of the default branch
 
 <!-- *** Tasks *** -->
 ## Setting up an SLA
@@ -54,7 +55,7 @@ To list and monitor SLA items:
     ![Adding a repository](images/monitoring-slas-placeholder.png)
 
 <!-- *** Reference *** -->
-## Item status
+## Item statuses
 
 The following table describes how item statuses map to status categories and SLA deadlines:
 
@@ -65,3 +66,14 @@ The following table describes how item statuses map to status categories and SLA
 | Overdue        | Open            | The deadline has been missed       |
 | Closed on time | Resolved        | Resolved before the deadline       |
 | Closed late    | Resolved        | Resolved after the deadline        |
+
+## Item priorities
+
+The following table lists item priorities and expected resolution times for the associated SLAs.
+
+| Item priority | SLA resolution time |
+|---------------|---------------------|
+| Low           | X days              |
+| Medium        | X days              |
+| High          | X days              |
+| Critical      | X days              |
