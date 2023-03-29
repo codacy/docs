@@ -2,8 +2,6 @@
 description: List of operations that users can perform on Codacy depending on their role on the Git provider, and how to configure who can change analysis configurations.
 ---
 
-<!-- TODO PLUTO-368 We may *not* update this one: there would be a new entry labelled "Follow a repository", open to all -->
-
 # Roles and permissions for organizations
 
 Your team members have different permission levels on Codacy depending on their role on your Git provider. To change the permission level of a user on Codacy, you must adjust their role directly on your Git provider so that Codacy will use the corresponding permission level on the next time that the user logs in to Codacy.
