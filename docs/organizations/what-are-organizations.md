@@ -2,7 +2,7 @@
 
 Codacy organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that don't belong to a Git provider organization), and team members into Codacy with a few clicks.
 
-Changes to the organizations, repositories, and team members are synchronized with Codacy, avoiding the manual management of repositories and teams.
+Changes to the organizations, repositories, and team members are synchronized with Codacy in real-time, avoiding the manual management of repositories and teams.
 
 ## Adding an organization
 
@@ -22,8 +22,6 @@ This opens the list of organizations on your Git providers. The organization wit
     If you can't see the organization you're looking for, follow the instructions in the card **Adding new organizations** or [these troubleshooting instructions](../faq/troubleshooting/why-cant-i-see-my-organization.md).
 
 ## Updates on the Git provider
-
-<!-- TODO PLUTO-368 Review this section -->
 
 In case you change your organization or repository on the Git provider, some changes are automatically reflected on Codacy. The following cases are supported, depending on your Git provider:
 
