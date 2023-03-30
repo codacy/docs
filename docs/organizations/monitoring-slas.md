@@ -3,17 +3,21 @@ TODO:
 - Confirm that the SLA deadline for "due soon" is <= 15 days.
 - Confirm that new issues on the *default branch* create new items.
 - Dashboard, total: confirm whether we're listing all items or all open items.
-- Item priorities section: define SLA resolution times
+
+Concepts:
+- Define SLA item
+- Define other SLA terminology as needed
+- Confirm if each item in the item list is clickable to reveal details
 -->
 
 # Monitoring SLAs <!-- *** Concepts *** -->
 
-An SLA, short for service-level agreement, defines the expected time to resolve an action item with a defined priority.
+An SLA, short for service-level agreement, defines the expected time to resolve an item with a defined priority.
 
 You define an SLA by linking a Codacy issue category and severity to an SLA priority. For example, you can link all Codacy issues belonging to the Security category and with a High severity to a Critical SLA priority. After you define an SLA:
 
--   Codacy opens a new SLA action item when it detects a corresponding issue on the most recent analyzed commit of the default branch
--   Codacy closes an existing SLA action item when it stops detecting the associated issue on the most recent analyzed commit of the default branch
+-   Codacy opens a new SLA item when it detects a corresponding new issue on the most recent analyzed commit of the default branch. To expand on the example above, when Codacy detects a new Security issue with High severity, it opens a new Critical SLA issue.
+-   Codacy closes an existing SLA item when it stops detecting the associated issue on the most recent analyzed commit of the default branch, or when the associated [issue is explicitly ignored](../repositories/issues.md#ignoring-and-managing-issues) on Codacy.
 
 <!-- *** Tasks *** -->
 ## Setting up an SLA
@@ -43,8 +47,8 @@ To list and monitor SLA items:
     -   **Total**: all open items<!-- TODO confirm if we're listing all items or all open items -->
     -   **Due soon**: open items within 15 days of missing their SLA deadline
     -   **Overdue**: open items with a missed SLA deadline
-    -   **Closed on time**: items closed before the SLA deadline, over the past 12 months
-    -   **Closed late**: items closed after the SLA deadline, over the past 12 months
+    -   **Closed on time**: items closed before the SLA deadline
+    -   **Closed late**: items closed after the SLA deadline
 
     ![Adding a repository](images/monitoring-slas-placeholder.png)
 
@@ -55,7 +59,7 @@ To list and monitor SLA items:
     ![Adding a repository](images/monitoring-slas-placeholder.png)
 
 <!-- *** Reference *** -->
-## Item statuses
+## SLA item statuses and data retention
 
 The following table describes how item statuses map to status categories and SLA deadlines:
 
@@ -64,16 +68,18 @@ The following table describes how item statuses map to status categories and SLA
 | On track       | Open            | 15 days or more to the deadline    |
 | Due soon       | Open            | Fewer than 15 days to the deadline |
 | Overdue        | Open            | The deadline has been missed       |
-| Closed on time | Resolved        | Resolved before the deadline       |
-| Closed late    | Resolved        | Resolved after the deadline        |
+| Closed on time | Closed          | Closed before the deadline         |
+| Closed late    | Closed          | Closed after the deadline          |
 
-## Item priorities
+Open items are retained **indefinitely**. Closed items are retained for **one year**.
 
-The following table lists item priorities and expected resolution times for the associated SLAs.
+## SLA item priorities
+
+The following table lists item priorities and expected resolution times for the associated SLAs:
 
 | Item priority | SLA resolution time |
 |---------------|---------------------|
-| Low           | X days              |
-| Medium        | X days              |
-| High          | X days              |
-| Critical      | X days              |
+| Low           | 90 days             |
+| Medium        | 30 days             |
+| High          | 15 days             |
+| Critical      | 7 days              |
