@@ -1,4 +1,4 @@
-# Security Monitor
+# Security monitor
 
 {%
     include-markdown "../assets/includes/paid.md"
@@ -6,11 +6,11 @@
     end="<!--paid-end-->"
 %}
 
-The **Security Monitor** provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.
+The **Security monitor** provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.
 
 By default, the page displays the overview for the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display information for other branches.
 
-![Security Monitor](images/security-monitor.png)
+![Security monitor](images/security-monitor.png)
 
 The left-hand side of the dashboard lists the status for each security category that the tools that can analyze the programming languages in your repository support:
 
@@ -59,7 +59,7 @@ The left-hand side of the dashboard lists the status for each security category 
 
 ## Languages checked for security issues
 
-The Security Monitor supports checking the languages and frameworks below for any security issues reported by the corresponding tools:
+The Security monitor supports checking the languages and frameworks below for any security issues reported by the corresponding tools:
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
@@ -184,7 +184,7 @@ The Security Monitor supports checking the languages and frameworks below for an
 
 ## Supported security categories
 
-Each issue reported on the Security Monitor belongs to one of the following security categories:
+Each issue reported on the Security monitor belongs to one of the following security categories:
 
 <!--NOTE
     Currently, this category doesn't include any security issues

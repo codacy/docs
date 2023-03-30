@@ -1,8 +1,8 @@
 ---
-description: The Organization Overview provides an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
+description: The Organization overview provides an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
 ---
 
-# Organization Overview
+# Organization overview
 
 {%
     include-markdown "../assets/includes/paid.md"
@@ -10,24 +10,24 @@ description: The Organization Overview provides an overview of repositories that
     end="<!--paid-end-->"
 %}
 
-The **Organization Overview** provides an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
+The **Organization overview** provides an overview of repositories that belong to the same Git provider organization. Here you can compare their statuses and check for items that require your attention.
 
-To access your Organization Overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
+To access your Organization overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
 
 !!! important
-    -   The Organization Overview calculates metrics and displays data only for the repositories that you have access to. This means that depending on their permissions, two users could see different results on their Organization Overview.
+    -   The Organization overview calculates metrics and displays data only for the repositories that you have access to. This means that depending on their permissions, two users could see different results on their Organization overview.
 
-    -   The Organization Overview displays information for **at most the last 100 updated repositories**.
+    -   The Organization overview displays information for **at most the last 100 updated repositories**.
 
-![Organization Overview](images/organization-overview.png)
+![Organization overview](images/organization-overview.png)
 
-Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained. The selected repositories are stored in your browser so that the same filter is applied between your visits to the Organization Overview page.
+Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained. The selected repositories are stored in your browser so that the same filter is applied between your visits to the Organization overview page.
 
 You can use the language filter to help you narrow down the list of repositories in the drop-down list:
 
 ![Using the language filter to narrow down the list of repositories](images/organization-overview-filter-language.png)
 
-On the Organization Overview you have the following areas to help you monitor your repositories:
+On the Organization overview you have the following areas to help you monitor your repositories:
 
 -   [Overall quality chart](#overall-quality-chart)
 -   [Open pull requests](#open-pull-requests)
