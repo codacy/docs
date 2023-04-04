@@ -19,7 +19,7 @@ To access your Organization Overview, select an organization from the top naviga
 
     -   The Organization Overview displays information for **at most the last 100 updated repositories**.
 
-![Organization Overview](images/organization-overview.png)<!-- TODO PLUTO-368 Update screenshot -->
+![Organization Overview](images/organization-overview.png)
 
 Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained. The selected repositories are stored in your browser so that the same filter is applied between your visits to the Organization Overview page.
 

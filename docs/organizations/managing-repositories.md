@@ -4,7 +4,7 @@ Users with the [necessary permissions on your Git provider](roles-and-permission
 
 To see a list of the repositories you follow on Codacy, open the page **Repositories** under your organization. Across the application, Codacy calculates and displays data for the repositories on this list.
 
-<!-- TODO PLUTO-368 Update screenshot -->![Repositories list](images/repositories.png)
+![Repositories list](images/repositories.png)
 
 This page lists the repositories that you follow on Codacy sorted by [last updated date](organization-overview.md#last-updated-repositories), and allows you to compare the repositories on the list according to the following metrics:
 
@@ -33,7 +33,7 @@ Depending on your [permissions on the Git provider](roles-and-permissions-for-or
 
 To add or follow a repository, click the button **Manage repositories** at the top right-hand corner of the page. This opens a window listing your organization repositories.
 
-<!-- TODO PLUTO-368 Update screenshot -->![Adding a repository](images/repositories-add.png)
+![Adding a repository](images/repositories-add.png)
 
 !!! important
     To see your repositories in this list, make sure that you have the necessary permissions over the repositories on the Git provider and that Codacy has the necessary permissions to access the repositories.
