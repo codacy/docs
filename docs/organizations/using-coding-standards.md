@@ -1,4 +1,4 @@
-# Using a coding standard
+# Using coding standards
 
 Create coding standards on your organization to define and apply shared tool and code pattern configurations consistently across your repositories. You can also apply a coding standard to new repositories automatically by [defining it as default](#set-default).
 
