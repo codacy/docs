@@ -12,7 +12,7 @@ By default, the page lists the commits on the main branch of your repository but
 
 ![Commits page](images/commits.png)<!--TODO Update-->
 
-Click a specific commit to see detailed information about the code quality changes introduced by that commit.
+Click a specific commit to see detailed coverage information for that commit.
 
 ![Commit detail](images/commits-detail.png)
 
@@ -20,14 +20,14 @@ The next sections describe each area of the commit detail page.
 
 ## Commit information {: id="info"}
 
-This area displays the information that identifies the commit:
+This area displays detailed information about the commit:
 
 -   Commit message
 -   Committer, SHA hash, and parent commit(s)
 -   Date
 -   Link to the commit on your Git provider
 
-![Commit status](images/commits-detail-status.png)<!--TODO Update-->
+![Commit information](images/commits-detail-information.png)<!--TODO Update-->
 
 <!--coverage-overview-start-->
 ## {{ page.meta.page_name.capitalize() }} coverage overview {: id="quality-overview"}
@@ -66,7 +66,7 @@ This area displays the coverage gate status and an overview of the coverage metr
 <!-- vale on -->
 <!--coverage-overview-end-->
 
-<!--tabs-start-->
+<!--tab-files-start-->
 ## Files tab
 
 The **Files** tab displays the coverage variation that the {{ page.meta.page_name }} introduced to the files in your repository relative to the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
@@ -76,4 +76,4 @@ The option **Show also files without coverage changes** allows you to list all f
 <!-- vale off -->
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)<!--TODO Update-->
 <!-- vale on -->
-<!--tabs-end-->
+<!--tab-files-end-->
