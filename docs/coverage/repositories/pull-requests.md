@@ -40,7 +40,7 @@ This area displays detailed information about the pull request:
 
 {%
     include-markdown "commits.md"
-    start="<!--tab-files--start-->"
+    start="<!--tab-files-start-->"
     end="<!--tab-files-end-->"
 %}
 
@@ -52,4 +52,4 @@ The **Commits** tab displays an overview of each commit included in the pull req
 
 ## See also
 
--   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Which metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md)
