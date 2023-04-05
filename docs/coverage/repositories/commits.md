@@ -52,7 +52,7 @@ This area displays the coverage gate status and an overview of the coverage metr
     !!! note
         Learn how Codacy calculates the code quality metrics in more detail:
 
-        -   [Which coverage metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#coverage)
+        -   [Which coverage metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage)
         -   [Why does Codacy show unexpected coverage changes?](../../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
 
 -   The **colors** depend on the [quality gate rules](../../repositories-configure/adjusting-quality-settings.md) for your repository:
