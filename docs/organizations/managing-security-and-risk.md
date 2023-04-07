@@ -10,7 +10,7 @@ Concepts:
 - Confirm if each item in the item list is clickable to reveal details
 -->
 
-# Monitoring SLAs <!-- *** Concepts *** -->
+# Managing security and risks <!-- *** Concepts *** -->
 
 An SLA, short for service-level agreement, defines the expected time to resolve an item with a defined priority.
 
@@ -26,7 +26,7 @@ To set up an SLA for your organization:
 
 1.  Open your organization **SLA monitor** page.
 
-    ![Adding a repository](images/monitoring-slas-placeholder.png)
+    ![Adding a repository](images/placeholder.png)
 
 1.  Click the button **Settings** at the top right-hand corner of the page. This opens the settings modal window.
 
@@ -50,13 +50,13 @@ To list and monitor SLA items:
     -   **Closed on time**: items closed before the SLA deadline
     -   **Closed late**: items closed after the SLA deadline
 
-    ![Adding a repository](images/monitoring-slas-placeholder.png)
+    ![Adding a repository](images/placeholder.png)
 
 1.  Click the **Review** button in the relevant pane to access the corresponding filtered item list.
 
 1.  To further filter the list by priority or status, use the selectors above the list.
 
-    ![Adding a repository](images/monitoring-slas-placeholder.png)
+    ![Adding a repository](images/placeholder.png)
 
 <!-- *** Reference *** -->
 ## SLA item statuses and data retention

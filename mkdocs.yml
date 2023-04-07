@@ -604,7 +604,7 @@ nav:
           - organizations/organization-overview.md
           - organizations/managing-repositories.md
           - organizations/using-a-coding-standard.md
-          - Monitoring SLAs: organizations/monitoring-slas.md
+          - organizations/managing-security-and-risk.md
           - organizations/copying-code-patterns-between-repositories.md
           - organizations/managing-people.md
           - organizations/roles-and-permissions-for-organizations.md
