@@ -1,11 +1,23 @@
+<!--
+TODO
+
+- Tweak page title. Options
+  - Managing security vulnerabilities and risk
+-->
+
 # Managing security and risk <!-- *** Concepts *** -->
 
-The Security and Risk Management dashboard helps you identify, prioritize, track, and address security vulnerabilities and other issues across your organization by automatically creating prioritized, time-bound action items linked to Codacy issues.
+The Security and Risk Management dashboard helps you identify, prioritize, track, and address security vulnerabilities and other issues across your organization by automatically opening prioritized, time-bound action items whenever Codacy detects specific new issues.
 
-For Codacy to automatically create and prioritize these items, you must first [set up rules](#setting-up-rules) linking item priorities to Codacy issue types and severities. For example, you can link a Critical item priority to Codacy Security issues of High severity. After you define a rule:
+To let Codacy automatically open and prioritize an item, you must first [set up rules](#setting-up-rules) to assign the item a priority based on the type and severity of the originating issue. To help you address important items first, each priority defines an [expected resolution time](#item-priorities-and-resolution-times) to close the associated item.
 
--   Codacy opens a new item when it first detects a matching Codacy issue on the default branch. In the example SLA defined above, Codacy would open a new item with Critical priority when first detecting a new Codacy Security issue of High severity.
--   Codacy closes an existing item when it stops detecting the matching issue on the default branch, or when the associated [issue is explicitly ignored](../repositories/issues.md#ignoring-and-managing-issues).
+After you set up the rules:
+
+-   Codacy opens a new item when it detects on the default branch a new Codacy issue that matches one of the rules.
+
+    For example, you can set up a rule to open an item with Critical priority whenever Codacy detects on the default branch a new Security issue of High severity.
+
+-   Codacy closes an item when it stops detecting the originating issue on the default branch, or when the originating [issue is explicitly ignored](../repositories/issues.md#ignoring-and-managing-issues).
 
 <!-- *** Tasks *** -->
 ## Setting up rules
@@ -30,13 +42,13 @@ To list and monitor items:
 
 1.  Open your organization **Security and risk management** page to display the dashboard.
 
-    The dashboard includes five panes, each containing the total count of matching items and a button to access the matching item list:
+    The dashboard includes five panes, each containing the number of matching items and a button to access the matching item list:
 
     -   **Total**: all open items
-    -   **Due soon**: open items within 15 days of missing their SLA deadline
-    -   **Overdue**: open items with a missed SLA deadline
-    -   **Closed on time**: items closed before the SLA deadline
-    -   **Closed late**: items closed after the SLA deadline
+    -   **Due soon**: open items within 15 days of missing their deadline
+    -   **Overdue**: open items with a missed deadline
+    -   **Closed on time**: items closed before the deadline
+    -   **Closed late**: items closed after the deadline
 
     ![Security and risk management dashboard](images/placeholder.png)
 
@@ -65,9 +77,9 @@ Open items are retained **indefinitely**. Closed items are retained for **one ye
 
 The following table lists item priorities and expected resolution times:
 
-| Item priority | Resolution time |
-|---------------|-----------------|
-| Low           | 90 days         |
-| Medium        | 30 days         |
-| High          | 15 days         |
-| Critical      | 7 days          |
+| Item priority | Expected resolution time from first detection |
+|---------------|-----------------------------------------------|
+| Low           | 90 days                                       |
+| Medium        | 30 days                                       |
+| High          | 15 days                                       |
+| Critical      | 7 days                                        |
