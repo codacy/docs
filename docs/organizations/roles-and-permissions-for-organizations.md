@@ -41,7 +41,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td>Organization<br/>Admin</td>
     </tr>
     <tr>
-      <td>Join organization,<br/>view SLAs<!-- TODO confirm--></td>
+      <td>Join organization</td>
       <td>No</td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
@@ -89,7 +89,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Manage coding standards,<br/>edit SLAs,<br/>bulk copy patterns</td>
+      <td>Manage coding standards,<br/>edit security and risk management rules,<br/>bulk copy patterns</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td colspan="2">No</td>
@@ -138,7 +138,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">Organization<br/>Admin</td>
     </tr>
     <tr>
-      <td>Join organization,<br/>view SLAs<!-- TODO confirm --></td>
+      <td>Join organization</td>
       <td>No</td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes<sup>2</sup></td>
@@ -186,7 +186,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Manage coding standards,<br/>edit SLAs,<br/>bulk copy patterns</td>
+      <td>Manage coding standards,<br/>edit security and risk management rules,<br/>bulk copy patterns</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td>No</td>
@@ -227,7 +227,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td>Organization<br/>Admin</td>
     </tr>
     <tr>
-      <td>Join organization,<br/>view SLAs<!-- TODO confirm --></td>
+      <td>Join organization</td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes<sup>2</sup></td>
     </tr>
@@ -257,7 +257,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Manage coding standards,<br/>edit SLAs,<br/>bulk copy patterns</td>
+      <td>Manage coding standards,<br/>edit security and risk management rules,<br/>bulk copy patterns</td>
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
     </tr>
