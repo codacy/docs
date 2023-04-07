@@ -7,13 +7,13 @@ TODO
 
 # Managing security and risk <!-- *** Concepts *** -->
 
-The Security and Risk Management dashboard helps you identify, prioritize, track, and address security vulnerabilities and other issues across your organization by automatically opening prioritized, time-bound action items whenever Codacy detects specific new issues.
+The Security and Risk Management dashboard helps you identify, track, and address security vulnerabilities and other issues across your organization by automatically opening prioritized, time-bound action items whenever Codacy detects specific new issues in your repositories.
 
-To let Codacy automatically open and prioritize an item, you must first [set up rules](#setting-up-rules) to assign the item a priority based on the type and severity of the originating issue. To help you address important items first, each priority defines an [expected resolution time](#item-priorities-and-resolution-times) to close the associated item.
+To use this dashboard, you must first [set up rules](#setting-up-rules) to automatically prioritize a new item based on the type and severity of the originating Codacy issue. Each priority level defines an [expected resolution time](#item-priorities-and-resolution-times) to close the associated item.
 
-After you set up the rules:
+Once the rules are set up:
 
--   Codacy opens a new item when it detects on the default branch a new Codacy issue that matches one of the rules.
+-   Codacy opens a new item when it detects on the default branch a new issue that matches one of the rules.
 
     For example, you can set up a rule to open an item with Critical priority whenever Codacy detects on the default branch a new Security issue of High severity.
 
@@ -77,9 +77,9 @@ Open items are retained **indefinitely**. Closed items are retained for **one ye
 
 The following table lists item priorities and expected resolution times:
 
-| Item priority | Expected resolution time from first detection |
-|---------------|-----------------------------------------------|
-| Low           | 90 days                                       |
-| Medium        | 30 days                                       |
-| High          | 15 days                                       |
-| Critical      | 7 days                                        |
+| Item priority | Expected resolution time<br/>from first detection |
+|---------------|---------------------------------------------------|
+| Low           | 90 days                                           |
+| Medium        | 30 days                                           |
+| High          | 15 days                                           |
+| Critical      | 7 days                                            |
