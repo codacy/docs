@@ -14,7 +14,7 @@ By default, the page lists open pull requests but you can click the **Closed** t
 
 ![Pull Requests page](images/pull-requests.png)<!--TODO Update-->
 
-Click a specific commit to see detailed coverage information for that pull request.
+Click a specific pull request to see detailed coverage information for that pull request.
 
 ![Pull request detail](images/pull-requests-detail.png)
 
