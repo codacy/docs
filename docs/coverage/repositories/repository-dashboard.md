@@ -22,15 +22,15 @@ The top of the Repository Dashboard displays:
 
 On the Repository Dashboard you have the following areas to help you monitor your repository:
 
--   [Quality evolution chart](#quality-evolution-chart)
+-   [Coverage evolution chart](#quality-evolution-chart)
 -   [Coverage](#coverage)
 -   [Open pull requests](#open-pull-requests)
 
 The following sections provide a detailed overview of each dashboard area.
 
-## Quality evolution chart
+## Coverage evolution chart
 
-The **Quality evolution** chart displays the evolution of the repository code quality regarding [code coverage](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Click on **Last 3 months**, **Last 31 days**, or **Last 7 days** to select the time interval of the historical data to display on the chart.
+The **Coverage evolution** chart displays the evolution of the repository [code coverage](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Click on **Last 3 months**, **Last 31 days**, or **Last 7 days** to select the time interval of the historical data to display on the chart.
 
 The tab displays the following information:
 
