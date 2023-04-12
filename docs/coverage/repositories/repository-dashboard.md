@@ -43,7 +43,7 @@ The tab displays the following information:
 
 The chart also displays the **trendline** based on the past behavior and the **coverage goal** defined on the repository [quality settings](../../repositories-configure/adjusting-quality-settings.md).
 
-![Quality evolution chart](images/repository-dashboard-quality-evolution.png)<!--TODO Update-->
+![Quality evolution chart](images/repository-dashboard-coverage-evolution.png)<!--TODO Update-->
 
 ## Coverage
 
