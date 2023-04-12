@@ -22,7 +22,7 @@ The top of the Repository Dashboard displays:
 
 On the Repository Dashboard you have the following areas to help you monitor your repository:
 
--   [Coverage evolution chart](#quality-evolution-chart)
+-   [Coverage evolution chart](#coverage-evolution-chart)
 -   [Coverage](#coverage)
 -   [Open pull requests](#open-pull-requests)
 
