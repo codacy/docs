@@ -8,7 +8,7 @@ product: coverage
 <!--TODO
     Review page, see https://codacy.atlassian.net/browse/COV-119 for more details-->
 
-The **Pull Requests page** displays an overview of the pull requests in your repository, such as the analysis status and coverage metrics for each pull request. This allows you to monitor the coverage of the work in progress in your repository.
+The **Pull Requests page** displays an overview of the pull requests in your repository, such as the status and coverage metrics for each pull request. This allows you to monitor the coverage of the work in progress in your repository.
 
 By default, the page lists open pull requests but you can click the **Closed** tab at the top of the list to display the closed pull requests.
 
@@ -28,7 +28,7 @@ This area displays detailed information about the pull request:
 -   Pull request author, pull request branch, and target branch
 -   Last updated date of the pull request
 -   Link to the pull request on your Git provider
--   Codacy analysis logs<!--TODO Explain how to read the logs in more detail?-->
+-   Codacy logs<!--TODO Explain how to read the logs in more detail?-->
 
 ![Pull request information](images/pull-requests-detail-information.png)<!--TODO Update-->
 
@@ -46,7 +46,7 @@ This area displays detailed information about the pull request:
 
 ## Commits tab
 
-The **Commits** tab displays an overview of each commit included in the pull request, such as the analysis status and the coverage metrics for each commit.
+The **Commits** tab displays an overview of each commit included in the pull request, such as the status and coverage metrics for each commit.
 
 ![Commits tab](images/pull-requests-tab-commits.png)
 
