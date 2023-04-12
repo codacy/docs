@@ -69,9 +69,9 @@ This area displays the coverage gate status and an overview of the coverage metr
 <!--tab-files-start-->
 ## Files tab
 
-The **Files** tab displays the coverage variation that the {{ page.meta.page_name }} introduced to the files in your repository relative to the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
+The **Files** tab displays the coverage variation that the {{ page.meta.page_name }} introduces to the files in your repository relative to the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
 
-The option **Show also files without coverage changes** allows you to list all files that the {{ page.meta.page_name }} updated, even if their coverage didn't change.
+The option **Show also files without coverage changes** allows you to list all files that the {{ page.meta.page_name }} updates, even if their coverage doesn't change.
 
 <!-- vale off -->
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)<!--TODO Update-->
