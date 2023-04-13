@@ -527,7 +527,7 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 </tr>
 <tr>
 <td><a href="https://pylint.pycqa.org/">Pylint</a></td>
-<td><a href="https://github.com/codacy/codacy-pylint" class="skip-vale">codacy/codacy-pylint</a></td>
+<td><a href="https://github.com/codacy/codacy-pylint-python3" class="skip-vale">codacy/codacy-pylint-python3</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
