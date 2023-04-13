@@ -2,7 +2,7 @@
 
 Members of a Codacy organization can access the Codacy app to see the dashboards and details of the organization repositories. Depending on their permissions on the Git provider, members can also manage the organization and repository settings on Codacy.
 
-Codacy only analyzes commits to **private repositories** from members of the corresponding organization on Codacy.
+For **private repositories**, Codacy only analyzes commits from members of the corresponding organization on Codacy.
 
 !!! important
     -   Make sure that you invite or ask your team members to join your organization on Codacy so that Codacy analyzes their commits to private repositories.
