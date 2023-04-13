@@ -239,7 +239,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>Pylint</td>
     <td>Python</td>
     <td><code>pylintrc</code>, <code>.pylintrc</code></td>
-    <td><a href="https://github.com/codacy/codacy-pylint/blob/master/requirements.txt">Plugins</a></td>
+    <td><a href="https://github.com/codacy/codacy-pylint-python3/blob/master/requirements.txt">Plugins</a></td>
   </tr>
   <tr>
     <td>remark-lint</td>
