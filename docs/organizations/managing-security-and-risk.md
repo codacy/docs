@@ -1,42 +1,15 @@
-<!--
-TODO
-
-- Tweak page title. Options
-  - Managing security vulnerabilities and risk
--->
-
 # Managing security and risk <!-- *** Concepts *** -->
 
-The Security and Risk Management dashboard helps you identify, track, and address security vulnerabilities and other issues across your organization by automatically opening prioritized, time-bound action items whenever Codacy detects specific new issues in your repositories.
+The Security and Risk Management dashboard helps you identify, prioritize, track, and address security vulnerabilities across your organization by opening time-bound action items whenever Codacy detects new security issues.
 
-To use this dashboard, you must first [set up rules](#setting-up-rules) to automatically prioritize a new item based on the type and severity of the originating Codacy issue. Each priority level defines an [expected resolution time](#item-priorities-and-resolution-times) to close the associated item.
+Codacy opens and prioritizes a new item when it detects a new security issue on the default branch of an organization repository. Each priority level defines an [expected resolution time](#default-item-priorities-and-resolution-times) to close the associated item. For example, Codacy opens an item with Critical priority upon detecting a new Security issue of Critical severity on the default branch of an organization repository.
 
-Once the rules are set up:
+Codacy closes an item when it stops detecting the originating issue on the default branch of an organization repository, when [the originating issue is ignored](../repositories/issues.md#ignoring-and-managing-issues), or when the [tool that detected the originating issue is disabled](../repositories-configure/configuring-code-patterns.md).
 
--   Codacy opens a new item when it detects on the default branch a new issue that matches one of the rules.
+## Detecting and monitoring items
 
-    For example, you can set up a rule to open an item with Critical priority whenever Codacy detects on the default branch a new Security issue of High severity.
-
--   Codacy closes an item when it stops detecting the originating issue on the default branch, or when the originating [issue is explicitly ignored](../repositories/issues.md#ignoring-and-managing-issues).
-
-<!-- *** Tasks *** -->
-## Setting up rules
-
-To set up rules for your organization:
-
-1.  Open your organization **Security and risk management** page.
-
-    ![Security and risk management dashboard](images/placeholder.png)
-
-1.  Click the button **Set up rules** at the top right-hand corner of the page. This opens the rule setup modal window.
-
-1.  Click the **Add rule** button to create a new rule.
-
-1.  Select a combination of Codacy issue category and severity, choose a priority to link, and confirm.
-
-1.  Repeat to add as many rules as required.
-
-## Monitoring items
+!!! note
+    To automatically open and prioritize items, [enable patterns belonging to the Security category](../repositories-configure/configuring-code-patterns.md), so that Codacy can detect Security issues.
 
 To list and monitor items:
 
@@ -73,13 +46,12 @@ The following table describes how item statuses map to status categories and dea
 
 Open items are retained **indefinitely**. Closed items are retained for **one year**.
 
-## Item priorities and resolution times
+## Default item priorities and resolution times
 
-The following table lists item priorities and expected resolution times:
+The following table describes how the severity of a Codacy security issue severity maps to the priority and expected resolution time of an item:
 
-| Item priority | Expected resolution time<br/>from first detection |
-|---------------|---------------------------------------------------|
-| Low           | 90 days                                           |
-| Medium        | 30 days                                           |
-| High          | 15 days                                           |
-| Critical      | 7 days                                            |
+| Item priority | Severity of the detected<br/>Codacy issue | Expected resolution time<br/>from issue detection |
+|---------------|-------------------------------------------|---------------------------------------------------|
+| Low           | Minor                                     | 120 days                                          |
+| Medium        | Medium                                    | 90 days                                           |
+| Critical      | Critical                                  | 30 days                                           |
