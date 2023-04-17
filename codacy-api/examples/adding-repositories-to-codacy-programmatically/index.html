@@ -3699,12 +3699,12 @@
 <span class="w">    </span><span class="m">200</span><span class="o">)</span><span class="w"> </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;</span><span class="nv">$repo</span><span class="s2"> added successfully\n&quot;</span>
 <span class="w">         </span><span class="p">;;</span>
 <span class="w">    </span><span class="m">401</span><span class="o">)</span><span class="w"> </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;Error: 401 Unauthorized, check the Codacy API token\n&quot;</span>
-<span class="w">         </span><span class="nb">break</span>
+<span class="w">         </span><span class="k">break</span>
 <span class="w">         </span><span class="p">;;</span>
 <span class="w">    </span><span class="m">409</span><span class="o">)</span><span class="w"> </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;Error: 409 Conflict, </span><span class="nv">$repo</span><span class="s2"> is already added to Codacy\n&quot;</span>
 <span class="w">         </span><span class="p">;;</span>
 <span class="w">      </span>*<span class="o">)</span><span class="w"> </span><span class="nb">printf</span><span class="w"> </span><span class="s2">&quot;Error: </span><span class="nv">$http_status</span><span class="s2"> HTTP status code\n&quot;</span>
-<span class="w">         </span><span class="nb">break</span>
+<span class="w">         </span><span class="k">break</span>
 <span class="w">         </span><span class="p">;;</span>
 <span class="w">  </span><span class="k">esac</span>
 <span class="w">  </span>sleep<span class="w"> </span><span class="m">60</span><span class="w"> </span><span class="c1"># Pause between repositories</span>
