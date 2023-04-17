@@ -1,5 +1,7 @@
 # Adjusting quality settings
 
+<!--TODO PLUTO-532 Review all the content of this page-->
+
 The **Quality settings** allow you to configure quality gates for your pull requests and commits, and define quality goals that help you monitor the progress of the code quality in your repository dashboard.
 
 To access the quality settings, open your repository **Settings**, tab **Quality Settings**:
