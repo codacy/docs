@@ -4,8 +4,6 @@ file_name: "pull-requests"
 ---
 
 # Pull Requests page
-<!--TODO
-    Review page, see https://codacy.atlassian.net/browse/COV-120 for more details-->
 
 The **Pull Requests page** displays an overview of the pull requests in your repository, such as the analysis status and the number of new and fixed issues for each pull request. This allows you to monitor the code quality of the work in progress in your repository.
 
