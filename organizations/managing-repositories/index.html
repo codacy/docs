@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="To see a list of the repositories that Codacy is monitoring, open the page Repositories under your organization.">
+        <meta name="description" content="Users with the necessary permissions on your Git provider can add repositories to Codacy to start analyzing them. The remaining organization members with access to the added repositories can then follow on Codacy the repositories of their interest.">
       
       
-        <meta http-equiv="last-modified" content="2023-02-07 12:49:19">
+        <meta http-equiv="last-modified" content="2023-04-17 10:05:15">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-repositories/">
@@ -842,7 +842,7 @@
       
         <li class="md-nav__item">
   <a href="#adding-a-repository" class="md-nav__link">
-    Adding a repository
+    Adding or following a repository
   </a>
   
 </li>
@@ -3589,9 +3589,10 @@
                 
                 
                 <h1 id="managing-repositories">Managing repositories<a class="headerlink" href="#managing-repositories" title="Permanent link">#</a></h1>
-<p>To see a list of the repositories that Codacy is monitoring, open the page <strong>Repositories</strong> under your organization.</p>
+<p>Users with the <a href="../roles-and-permissions-for-organizations/">necessary permissions on your Git provider</a> can <strong>add</strong> repositories to Codacy to start analyzing them. The remaining organization members with access to the added repositories can then <strong>follow</strong> on Codacy the repositories of their interest.</p>
+<p>To see all the repositories that you follow on Codacy, open the page <strong>Repositories</strong> under your organization. Across the application, Codacy calculates and displays data for the repositories on this list.</p>
 <p><img alt="Repositories list" src="../images/repositories.png" /></p>
-<p>This page lists the repositories that already belong to your organization on Codacy sorted by <a href="../organization-overview/#last-updated-repositories">last updated date</a>, and allows you to compare the repositories in the list according to the following metrics:</p>
+<p>This page lists the repositories that you follow on Codacy sorted by <a href="../organization-overview/#last-updated-repositories">last updated date</a>, and allows you to compare the repositories on the list according to the following metrics:</p>
 <ul>
 <li><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#grade">Grade</a></li>
 <li><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Issues</a></li>
@@ -3600,20 +3601,37 @@
 <li><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#code-coverage">Coverage</a></li>
 </ul>
 <p>The list also displays error and warning messages for repositories that have issues, such as when there are no committers added to the organization or when Codacy stopped having access to the repository. Hover the mouse cursor over the warning icons or open the repository to see more details.</p>
-<p>If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.</p>
-<h2 id="adding-a-repository">Adding a repository<a class="headerlink" href="#adding-a-repository" title="Permanent link">#</a></h2>
+<p>If you follow many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.</p>
+<h2 id="adding-a-repository">Adding or following a repository<a class="headerlink" href="#adding-a-repository" title="Permanent link">#</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Analyzing private repositories is <a href="https://www.codacy.com/pricing">only available on paid plans</a></p>
 </div>
-<p>To add a new repository to Codacy, click the button <strong>Add repository</strong> at the top right-hand corner of the page. This opens a window listing the repositories in your Git provider organization that don't belong to your organization on Codacy yet.</p>
+<p>Depending on your <a href="../roles-and-permissions-for-organizations/">permissions on the Git provider</a>, you can:</p>
+<ul>
+<li><strong>Add</strong> a new repository to Codacy to start analyzing it. You need admin permission over the repository to add it to Codacy.</li>
+<li><strong>Follow</strong> a repository that was already added to Codacy by a repository admin.</li>
+</ul>
+<p>To add or follow a repository, click the button <strong>Manage repositories</strong> at the top right-hand corner of the page. This opens a window listing your organization repositories.</p>
 <p><img alt="Adding a repository" src="../images/repositories-add.png" /></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>To see your repositories in this list, make sure that you have admin permissions over the repositories on the Git provider and that Codacy has permissions to access the repositories.</p>
+<p>To see your repositories in this list, make sure that you have the necessary permissions over the repositories on the Git provider and that Codacy has the necessary permissions to access the repositories.</p>
 </div>
-<p>Add one or multiple repositories to your organization by clicking <strong>Add</strong> next to the repositories. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.</p>
-<p>After adding repositories, close the window to return to the list of repositories in your organization. Although Codacy will immediately start analyzing the new repositories, they will display empty metrics until the first analysis returns results.</p>
+<p>Add or follow your repositories by clicking <strong>Add</strong> or <strong>Follow</strong> next to the repositories. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.</p>
+<p>Then, close the window to return to your repositories list. Although Codacy immediately starts analyzing newly added repositories, they display empty metrics until the first analysis returns results.</p>
 <p><img alt="Waiting for first analysis results" src="../images/repositories-analyzing.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>
+<p>When an <strong>admin user</strong> adds a new repository to Codacy, all users with admin permissions over that repository start following it automatically.</p>
+</li>
+<li>
+<p>You automatically <strong>start following</strong> a repository as soon as you access any page from that repository. For example, when you access the repository using a direct link on your Git provider UI.</p>
+<p>Conversely, you automatically <strong>stop following</strong> a repository as soon as you try accessing any page from that repository but you don't have permissions to see that repository anymore.</p>
+</li>
+</ul>
+</div>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">Which metrics does Codacy calculate?</a></li>
@@ -3774,7 +3792,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 7, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 17, 2023</span>
     
   </small>
 </div>
