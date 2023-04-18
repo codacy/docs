@@ -8,7 +8,7 @@ product: coverage
 
 The **Repository Dashboard** provides an overview of the repository coverage and items that require your attention.
 
-To access your Repository Dashboard, select a repository from the [Organization Dashboard](../../organizations/organization-overview.md) or open a repository on any other page and select **Dashboard** on the left navigation sidebar.<!--TODO Review navigation-->
+To access your Repository Dashboard, select a repository from the [Repositories list](../../organizations/managing-repositories.md) and select **Dashboard** on the left navigation sidebar.
 
 !!! tip
     You can share the URL of the Repository Dashboard for your **public repositories** to allow other people to see your repository coverage metrics, even if they aren't registered on Codacy.
@@ -27,6 +27,10 @@ On the Repository Dashboard you have the following areas to help you monitor you
 -   [Open pull requests](#open-pull-requests)
 
 The following sections provide a detailed overview of each dashboard area.
+
+<!--TODO Include this information?
+{% include-markdown "../../assets/includes/dashboard-api-report-note.md" %}
+-->
 
 ## Coverage evolution chart
 
