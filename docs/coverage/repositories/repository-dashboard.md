@@ -57,7 +57,7 @@ The **Coverage** area displays the percentage of lines of code on the selected b
 -   With coverage not up to standards (based on the coverage goal)
 -   With coverage up to standards (based on the coverage goal)
 
-Click **See all files** to open the [list of files]<!--(files.md) TODO Update--> in the repository.
+Click **See all files** to open the [list of files](files.md) in the repository.
 
 !!! tip
     If you don't have coverage set up for your repository yet, the Coverage area provides you with instructions on [how to add coverage for your repository](../../coverage-reporter/index.md).
@@ -68,16 +68,17 @@ Click **See all files** to open the [list of files]<!--(files.md) TODO Update-->
 
 The **Open pull requests** area displays the last updated pull requests and the split between the status of all open pull requests in your repository:
 
--   **Up to standards:** Pull requests that meet the minimum quality levels
--   **Not up to standards:** Pull requests that failed to meet at least one of the [coverage gate rules defined for the repository](../../repositories-configure/adjusting-quality-settings.md#gates)
--   **Analyzing:** Pull requests currently being analyzed by Codacy
+-   **Up to coverage standards:** Pull requests that meet the minimum coverage levels
+-   **Not up to coverage standards:** Pull requests that failed to meet at least one of the [coverage gate rules defined for the repository](../../repositories-configure/adjusting-quality-settings.md#gates)
+-   **No information:** Pull requests that didn't receive the coverage reports required for Codacy to calculate the coverage metrics
 
 Click a bar segment to display only pull requests with the corresponding status.
 
-To see the details of pull requests, click a pull request from the list or click **See all pull requests** to open the [list of pull requests]<!--(pull-requests.md) TODO Update--> in the repository.
+To see the details of pull requests, click a pull request from the list or click **See all pull requests** to open the [list of pull requests](pull-requests.md) in the repository.
 
 ![Open pull requests](images/repository-dashboard-open-pull-requests.png)<!--TODO Update-->
 
 ## See also
 
 -   [Which metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Using the Codacy API to obtain code quality metrics for files](../../codacy-api/examples/obtaining-code-quality-metrics-for-files.md)
