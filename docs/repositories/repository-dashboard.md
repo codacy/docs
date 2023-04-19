@@ -52,7 +52,7 @@ Click **See all issues** to see the full [list of issues](issues.md) found, or c
 
 ## Coverage
 
-The **Coverage** area displays the percentage of lines of code on the selected branch that are covered by tests versus the [coverage goal](../repositories-configure/adjusting-quality-goals.md#goals) defined in the quality settings of the repository, as well as the number of files:
+The **Coverage** area displays the percentage of lines of code on the selected branch that are covered by tests versus the [coverage goal](../repositories-configure/adjusting-quality-goals.md) defined in the quality settings of the repository, as well as the number of files:
 
 -   Without coverage
 -   With coverage not up to standards (based on the coverage goal)
