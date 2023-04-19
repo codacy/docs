@@ -239,7 +239,7 @@ Consider an example pull request where Codacy shows the following metrics:
 However, since the proportion between the total number of covered and coverable lines across all files in the repository is now different, there can be a drop in the coverage variation for the pull request.
 
 !!! important
-    If you're using the [gate **Coverage variation is under**](../../repositories-configure/adjusting-quality-settings.md#gates), configure at least a **-0.10% coverage variation margin** to ensure that developers aren't blocked while performing code refactors such as the one from this example.
+    If you're using the [gate **Coverage variation is under**](../../repositories-configure/adjusting-quality-gates.md), configure at least a **-0.10% coverage variation margin** to ensure that developers aren't blocked while performing code refactors such as the one from this example.
 
 The table below represents two example coverage reports reflecting a pull request that removes lines 5 and 6 of the file `ClassA.java`:
 

@@ -21,7 +21,7 @@ To integrate Codacy with your Git workflow, follow these steps:
 
 ## 1. Configuring the quality gate rules {: id="configuring-gate"}
 
-[Review and adjust the quality settings](../repositories-configure/adjusting-quality-settings.md) of your repository to decide which pull requests should fail the Codacy quality gate.
+[Review and adjust the quality gates](../repositories-configure/adjusting-quality-gates.md) of your repository to decide which pull requests should fail the Codacy quality gate.
 
 !!! tip
     The default values of the quality gate rules are designed to help maintain the current code quality of your repository. In particular, the default value for the coverage rule might be demanding. Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of delaying or blocking the development progress.
@@ -35,7 +35,7 @@ To integrate Codacy with your Git workflow, follow these steps:
 !!! important
     **If you want to use code coverage** to block merging pull requests that don't meet your standards, make sure that you enable the rule **Diff coverage is under** or **Coverage variation is under**. This is required for Codacy to report the coverage status directly on your pull requests.
 
-![Adjusting the quality settings](../repositories-configure/images/quality-settings.png)
+![Adjusting the quality gates](../repositories-configure/images/quality-settings.png)
 
 ## 2. Activating the Git provider integration {: id="git-provider-integration"}
 
@@ -54,7 +54,7 @@ Once you've tested out Codacy for a while and you're happy with the level of fee
     To eliminate any false positives that could inadvertently block the work of your team, it's important that before activating this feature you:
 
     -   Validate that Codacy is reporting the intended status on your pull requests
-    -   Double check you repository's [tool and code pattern settings](../repositories-configure/configuring-code-patterns.md) and [quality gate settings](../repositories-configure/adjusting-quality-settings.md)
+    -   Double check you repository's [tool and code pattern settings](../repositories-configure/configuring-code-patterns.md) and [quality gate settings](../repositories-configure/adjusting-quality-gates.md)
 
 Follow the instructions from your Git provider to block merging pull requests if they don't pass the Codacy status check:
 
