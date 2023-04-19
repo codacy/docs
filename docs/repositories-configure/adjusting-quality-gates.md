@@ -1,6 +1,6 @@
 # Adjusting gates for code quality
 
-You can adjust the **Gates** for the quality of your code to configure when Codacy reports that your pull requests and commits as not up to standards.
+You can adjust the **Gates** for the quality of your code to configure when Codacy reports your pull requests and commits as not up to standards.
 
 Depending on the result of applying the quality gate rules, Codacy updates the color of the metrics on the [pull request or commit quality overview](../repositories/pull-requests.md#quality-overview) and reports the corresponding pull request status on your Git provider, if enabled.
 
@@ -23,14 +23,9 @@ To access the quality gates, open your repository **Settings**, tab **Gates**. T
 
         To ensure that the changes in each pull request have a minimum level of coverage, use the gate **Diff coverage is under** instead.
 
-!!! note
-    Learn how Codacy calculates the code quality metrics in more detail:
-
-    -   [Which code quality metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
-    -   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
-
 ## See also
 
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
 -   [Integrating Codacy with your Git workflow](../getting-started/integrating-codacy-with-your-git-workflow.md)
+-   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
 -   [Diff coverage: <span class="skip-vale">we have</span> a new metric and quality gate rule for PRs](https://blog.codacy.com/diff-coverage/)
