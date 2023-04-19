@@ -31,8 +31,6 @@ This area displays detailed information about the commit:
 
 <!--coverage-overview-start-->
 ## {{ page.meta.page_name.capitalize() }} coverage overview {: id="coverage-overview"}
-<!--TODO
-    Review the entire section, see https://codacy.atlassian.net/browse/COV-122 for extra details to cover here-->
 
 This area displays the coverage gate status and an overview of the coverage metrics for the {{ page.meta.page_name }}:
 
