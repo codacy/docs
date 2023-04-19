@@ -174,7 +174,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>JSON</td>
-      <td><a href="https://github.com/codacy/codacy-jackson-linter">Jackson Linter</a></td>
+      <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
@@ -498,7 +498,7 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-hadolint" class="skip-vale">codacy/codacy-hadolint</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/codacy/codacy-jackson-linter">Jackson Linter</a></td>
+<td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
 <td><a href="https://github.com/codacy/codacy-jackson-linter" class="skip-vale">codacy/codacy-jackson-linter</a></td>
 </tr>
 <tr>
