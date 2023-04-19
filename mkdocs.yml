@@ -85,7 +85,8 @@ plugins:
     - git-revision-date-localized
     # Include content from other Markdown files
     # https://github.com/mondeja/mkdocs-include-markdown-plugin
-    - include-markdown
+    - include-markdown:
+          comments: false
     # Allow using variables, macros, and filters
     # https://github.com/fralau/mkdocs_macros_plugin
     - macros:
