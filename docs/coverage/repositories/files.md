@@ -3,15 +3,11 @@ product: coverage
 ---
 
 # [Coverage] Files page
-<!--TODO
-    Review page, see https://codacy.atlassian.net/browse/COV-118 and https://codacy.atlassian.net/browse/COV-121 for more details-->
 
 <!--TODO Review behavior for analyzing branches-->
-The **Files page** displays the current coverage information for each analyzed file in your [active repository branches](../../repositories-configure/managing-branches.md).
+The **Files page** displays the current code coverage information for each analyzed file in your [enabled repository branches](../../repositories-configure/managing-branches.md).
 
 By default, the page lists the files on the main branch of your repository but if you have [more than one branch enabled](../../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display files on other branches.
-
-Codacy displays the [code coverage](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage) of each file, if available.
 
 Codacy displays the files in alphabetical order by default, but you can sort the list by each column to help you identify which files need more test coverage.
 
@@ -26,17 +22,16 @@ Use the search box to filter the list and find specific files:
 
 ## File details
 
-Click on a file to see more detailed coverage information for that file, including:
+Click a specific file to see more detailed coverage information for that file, including:
 
 -   **Coverable lines:** Source lines of code that can be covered by tests
 -   **Covered lines:** Source lines of code that are covered by tests
 -   **Coverage:** Percentage of coverable source lines of code that are covered by tests
 
-The page also shows the source code of the files and identifies which lines of code are covered by tests or not.
+The page also shows the source code of the file and identifies which lines of code are covered by tests or not.
 
 ![File detail](images/files-details.png)<!--TODO Review-->
 
-<!--TODO Check if the information in this section still applies
 ## Why are some files missing? {: id="missing-files"}
 
 The Files page only displays files in your repository that were analyzed by Codacy. This means that some of your files may be missing from the list, for example:
@@ -56,7 +51,6 @@ The Files page only displays files in your repository that were analyzed by Coda
 -   **The file might be too big**
 
     Codacy doesn't analyze or display files that are over a certain size. [Read more details](../../faq/troubleshooting/why-is-my-file-over-150-kb-missing.md) for information on how to overcome this limit.
--->
 
 ## See also
 
