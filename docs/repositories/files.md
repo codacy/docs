@@ -25,7 +25,7 @@ Use the search box to filter the list and find specific files:
 
 ## File details
 
-Click on a file to see more detailed analysis information for that file, including statistics on:
+Click a specific file to see more detailed analysis information for that file, including statistics on:
 
 -   **Size:** Lines of code, source lines of code, and commented lines of code
 -   **Structure:** Number of methods and ratio of source lines of code per number of methods
