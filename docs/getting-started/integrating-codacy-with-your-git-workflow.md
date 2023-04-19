@@ -35,7 +35,7 @@ To integrate Codacy with your Git workflow, follow these steps:
 !!! important
     **If you want to use code coverage** to block merging pull requests that don't meet your standards, make sure that you enable the rule **Diff coverage is under** or **Coverage variation is under**. This is required for Codacy to report the coverage status directly on your pull requests.
 
-![Adjusting the quality gates](../repositories-configure/images/quality-settings.png)
+![Adjusting the quality gates](../repositories-configure/images/quality-settings-gates.png)
 
 ## 2. Activating the Git provider integration {: id="git-provider-integration"}
 
