@@ -9,9 +9,9 @@ To access the quality goals, open your repository **Settings**, tab **Goals**. T
 ![Quality goals](images/quality-settings-goals.png)
 
 -   **Issues are over:** Defines the threshold displayed on the tab **Issues** of the quality evolution chart.
--   **Complexity of files is over:** Defines the threshold displayed on the tab **Complexity** of the quality evolution chart.
+-   **Complexity is over:** Defines the threshold displayed on the tab **Complexity** of the quality evolution chart.
 -   **File is complex when over:** A file is considered complex when its complexity is over this value.
--   **Duplication of files is over:** Defines the threshold displayed on the tab **Duplication** of the quality evolution chart.
+-   **Duplication is over:** Defines the threshold displayed on the tab **Duplication** of the quality evolution chart.
 -   **File is duplicate when over:** A file is considered duplicated when it has more clones than this value.
 -   **Coverage is under:** Defines the threshold displayed on the tab **Coverage** of the quality evolution chart.
 
