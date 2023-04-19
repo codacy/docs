@@ -26,7 +26,8 @@ On the Repository Dashboard you have the following areas to help you monitor you
 
 The following sections provide a detailed overview of each dashboard area.
 
-<!--TODO Include this information?
+<!--NOTE
+    Consider including this information later on
 {% include-markdown "../../assets/includes/dashboard-api-report-note.md" %}
 -->
 
