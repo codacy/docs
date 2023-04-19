@@ -3,8 +3,6 @@ product: coverage
 ---
 
 # [Coverage] Repository Dashboard
-<!--TODO
-    Review page, see https://codacy.atlassian.net/browse/COV-115 for more details-->
 
 The **Repository Dashboard** provides an overview of the repository coverage and items that require your attention.
 
