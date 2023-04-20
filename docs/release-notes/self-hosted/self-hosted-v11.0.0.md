@@ -12,28 +12,6 @@ These release notes are for [Codacy Self-hosted v11.0.0](https://github.com/coda
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
-<!--TODO Check these issues manually
-
-Jira issues without release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/DOCS-209
-Bugs and Community Issues:
-Others:
--   https://codacy.atlassian.net/browse/PLUTO-449
-
-Jira issues with disabled release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/IO-439
-Bugs and Community Issues:
--   https://codacy.atlassian.net/browse/IO-397
--   https://codacy.atlassian.net/browse/IO-393
--   https://codacy.atlassian.net/browse/IO-381
--   https://codacy.atlassian.net/browse/CY-6630
--   https://codacy.atlassian.net/browse/CY-6586
--->
-
 ## Upgrading Codacy Self-hosted
 
 Follow the steps below to upgrade to Codacy Self-hosted v11.0.0:
