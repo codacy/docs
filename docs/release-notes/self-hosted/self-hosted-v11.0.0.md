@@ -27,6 +27,8 @@ Follow the steps below to upgrade to Codacy Self-hosted v11.0.0:
 
 ## Product enhancements
 
+-   Added support for [Kubernetes 1.23.\* and MicroK8s 1.23.\*](https://docs.codacy.com/v11.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-1151)
+
 ## Bug fixes
 
 -   Fixed an issue while synchronizing the name of Codacy organizations with the corresponding GitLab groups. (PLUTO-450)
