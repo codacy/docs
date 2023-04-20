@@ -1,4 +1,4 @@
-# Adjusting gates for code quality
+# Adjusting quality gates
 
 You can adjust the **Gates** for the quality of your code to configure when Codacy reports your pull requests and commits as not up to standards.
 
