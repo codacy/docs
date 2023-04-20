@@ -1,6 +1,6 @@
 # Adjusting quality gates
 
-You can adjust the **Gates** for the quality of your code to configure when Codacy reports your pull requests and commits as not up to standards.
+Adjust the **quality gates** to configure when Codacy reports your pull requests and commits as not up to standards.
 
 Depending on the result of applying the quality gate rules, Codacy updates the color of the metrics on the [pull request or commit quality overview](../repositories/pull-requests.md#quality-overview) and reports the corresponding pull request status on your Git provider, if enabled.
 
