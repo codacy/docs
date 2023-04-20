@@ -20,10 +20,11 @@ Follow the steps below to upgrade to Codacy Self-hosted v11.0.0:
 
 1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v11.0/chart/maintenance/upgrade/).
 
-1.  Update your Codacy command-line tools to the versions with the Git tag `self-hosted-11.0.0`:
+1.  Update your Codacy command-line tools to the following versions:
 
-    -   [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli/releases/tag/self-hosted-11.0.0)
-    -   [Codacy Coverage Reporter](https://github.com/codacy/codacy-coverage-reporter/releases/tag/self-hosted-11.0.0)
+    -   [Codacy Analysis CLI 7.7.4](https://github.com/codacy/codacy-analysis-cli/releases/tag/7.7.4)
+    -   [Codacy Coverage Reporter 13.12.3](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.12.3)
+
 ## Breaking changes
 
 This version of Codacy Self-hosted drops support for Kubernetes 1.19, 1.20, and 1.21. These are old versions that [already reached EOL](https://kubernetes.io/releases/patch-releases/#non-active-branch-history).
