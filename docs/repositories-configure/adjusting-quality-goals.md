@@ -15,6 +15,8 @@ To access the quality goals, open your repository **Settings**, tab **Goals**. T
 -   **File is duplicate when over:** A file is considered duplicated when it has more clones than this value.
 -   **Coverage is under:** Defines the threshold displayed on the tab **Coverage** of the quality evolution chart.
 
+{% include-markdown "../assets/includes/quality-metrics-resources.md" %}
+
 ## See also
 
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
