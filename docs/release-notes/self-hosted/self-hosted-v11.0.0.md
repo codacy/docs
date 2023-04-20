@@ -27,13 +27,10 @@ Follow the steps below to upgrade to Codacy Self-hosted v11.0.0:
 
 ## Product enhancements
 
--   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](https://docs.codacy.com/v11.0/repositories/pull-requests/), [Commit](https://docs.codacy.com/v11.0/repositories/commits/), and [Files](https://docs.codacy.com/v11.0/repositories/files/) page, and you can [define quality gates](https://docs.codacy.com/v11.0/repositories-configure/adjusting-quality-settings/#gates) with a coverage variation threshold using the same precision.
-
-    The increased precision of the metric reflects the code coverage changes better by reducing issues with rounding errors. ![Coverage variation on the Pull request quality overview](../images/io-92.png) (IO-92)
-
 ## Bug fixes
 
 -   Fixed an issue while synchronizing the name of Codacy organizations with the corresponding GitLab groups. (PLUTO-450)
+-   Fixed a scenario where tools could fail to complete the analysis due to a shorter than expected timeout. (IO-482)
 -   Fixed an inconsistent issue count between the **Commits** list and the **Repository Dashboard** page. (IO-422)
 
 ## Tool versions
