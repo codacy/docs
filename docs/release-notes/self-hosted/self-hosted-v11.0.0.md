@@ -69,7 +69,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Checkov 2.1.188
 -   Checkstyle 10.3.1
 -   Clang-Tidy 10.0.1
--   **[CodeNarc 3.2.0](https://github.com/CodeNarc/CodeNarc/blob/master/CHANGELOG.md) (updated from 2.2.0)**
+-   **[CodeNarc 3.2.0](https://github.com/CodeNarc/CodeNarc/blob/master/CHANGELOG.md#version-320----jan-2023) (updated from 2.2.0)**
 -   CoffeeLint 2.1.0
 -   **[Cppcheck 2.10](https://github.com/danmar/cppcheck/releases/tag/2.10) (updated from 2.2)**
 -   Credo 1.4.0
@@ -82,7 +82,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Flawfinder 2.0.19
 -   Gosec 2.8.1
 -   Hadolint 1.18.2
--   **Jackson Linter 2.14.2 (updated from 2.10.2)**
+-   **[Jackson Linter 2.14.2](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.14.2) (updated from 2.10.2)**
 -   JSHint 2.13.5
 -   **[markdownlint 0.26.2](https://github.com/DavidAnson/markdownlint/releases/tag/v0.26.2) (updated from 0.23.1)**
 -   **[PHP Mess Detector 2.13.0](https://github.com/phpmd/phpmd/releases/tag/2.13.0) (updated from 2.10.1)**
@@ -90,14 +90,14 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **[PMD 6.55.0](https://pmd.sourceforge.io/pmd-6.55.0/pmd_release_notes.html) (updated from 6.48.0)**
 -   Prospector 1.7.7
 -   PSScriptAnalyzer 1.18.3
--   **Pylint 2.17.0 (updated from 2.14.5)**
+-   **[Pylint 2.17.0](https://github.com/PyCQA/pylint/releases/tag/v2.17.0) (updated from 2.14.5)**
 -   Pylint (deprecated) 1.9.5
 -   remark-lint 7.0.1
 -   Revive 1.2.3
 -   RuboCop 1.39.0
 -   Scalastyle 1.5.0
--   **ShellCheck v0.9.0 (updated from 0.8.0)**
--   **[SonarC# 8.40](https://github.com/SonarSource/sonar-dotnet/tags) (updated from 8.39)**
+-   **[ShellCheck 0.9.0](https://github.com/koalaman/shellcheck/blob/master/CHANGELOG.md#v090---2022-12-12) (updated from 0.8.0)**
+-   **[SonarC# 8.40](https://github.com/SonarSource/sonar-dotnet/releases/tag/8.40.0.48530) (updated from 8.39)**
 -   SonarVB 8.15
 -   spectral-rulesets 1.2.7
 -   **[SpotBugs 4.7.3](https://github.com/spotbugs/spotbugs/releases/tag/4.7.3) (updated from 4.5.3)**
