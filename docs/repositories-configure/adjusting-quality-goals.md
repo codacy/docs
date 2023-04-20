@@ -1,6 +1,6 @@
-# Adjusting goals for code quality
+# Adjusting quality goals
 
-You can adjust the **Goals** that help you monitor the progress of the code quality in your repository dashboard, and configure which files Codacy considers complex or duplicated.
+Adjust the **quality goals** to help you monitor the progress of the code quality in your repository dashboard, and configure which files Codacy considers complex or duplicated.
 
 Codacy displays the quality goals as dashed lines on the [quality evolution chart](../repositories/repository-dashboard.md#quality-evolution-chart) to help you monitor the progress and overall quality status of your repository.
 
