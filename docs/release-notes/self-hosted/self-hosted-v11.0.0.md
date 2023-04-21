@@ -8,9 +8,28 @@ codacy_tools_version_new: https://github.com/codacy/codacy-tools-sh/releases/tag
 
 # Self-hosted v11.0.0
 
-These release notes are for [Codacy Self-hosted v11.0.0](https://github.com/codacy/chart/releases/tag/11.0.0){: target="_blank"}, released on April 20, 2023.
+These release notes are for [Codacy Self-hosted v11.0.0](https://github.com/codacy/chart/releases/tag/11.0.0){: target="_blank"}, released on April 21, 2023.<!-- TODO Update release date -->
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
+
+<!--TODO Check these issues manually
+
+Jira issues without release notes
+
+Epics:
+-   https://codacy.atlassian.net/browse/DOCS-209
+Bugs and Community Issues:
+
+Jira issues with disabled release notes
+
+Epics:
+-   https://codacy.atlassian.net/browse/IO-439
+Bugs and Community Issues:
+-   https://codacy.atlassian.net/browse/IO-397
+-   https://codacy.atlassian.net/browse/IO-393
+-   https://codacy.atlassian.net/browse/CY-6630
+-   https://codacy.atlassian.net/browse/CY-6586
+-->
 
 ## Upgrading Codacy Self-hosted
 
@@ -20,25 +39,22 @@ Follow the steps below to upgrade to Codacy Self-hosted v11.0.0:
 
 1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v11.0/chart/maintenance/upgrade/).
 
-1.  Update your Codacy command-line tools to the following versions:
+1.  Update your Codacy command-line tools to the following versions:<!--TODO Update CLI tool versions-->
 
-    -   [Codacy Analysis CLI 7.8.3](https://github.com/codacy/codacy-analysis-cli/releases/tag/7.8.3)
-    -   [Codacy Coverage Reporter 13.13.1](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.13.1)
-
-## Breaking changes
-
-This version of Codacy Self-hosted drops support for Kubernetes 1.19, 1.20, and 1.21. These are old versions that [already reached EOL](https://kubernetes.io/releases/patch-releases/#non-active-branch-history).
-
-If you're using Kubernetes 1.19, 1.20, or 1.21, make sure that you upgrade your cluster before upgrading Codacy. For the current supported versions, see the [chart requirements page](https://docs.codacy.com/v11.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
+    -   [Codacy Analysis CLI MAJOR.MINOR.PATCH](https://github.com/codacy/codacy-analysis-cli/releases/tag/MAJOR.MINOR.PATCH)
+    -   [Codacy Coverage Reporter MAJOR.MINOR.PATCH](https://github.com/codacy/codacy-coverage-reporter/releases/tag/MAJOR.MINOR.PATCH)
 
 ## Product enhancements
 
--   Added support for [Kubernetes 1.23.\* and MicroK8s 1.23.\*](https://docs.codacy.com/v11.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-1151)
+-   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](https://docs.codacy.com/v11.0/repositories/pull-requests/), [Commit](https://docs.codacy.com/v11.0/repositories/commits/), and [Files](https://docs.codacy.com/v11.0/repositories/files/) page, and you can [define quality gates](https://docs.codacy.com/v11.0/repositories-configure/adjusting-quality-settings/#gates) with a coverage variation threshold using the same precision.
+
+    The increased precision of the metric reflects the code coverage changes better by reducing issues with rounding errors. ![Coverage variation on the Pull request quality overview](../images/io-92.png) (IO-92)
 
 ## Bug fixes
 
+-   Added support for the ESLint plugin [<span class="skip-vale">eslint-config-qiw</span>](https://www.npmjs.com/package/eslint-config-qiwi). (TS-256)
+-   Fixed an issue that caused Checkov to output warnings when the tool had no files to analyze. (TS-11)
 -   Fixed an issue while synchronizing the name of Codacy organizations with the corresponding GitLab groups. (PLUTO-450)
--   Fixed a scenario where tools could fail to complete the analysis due to a shorter than expected timeout. (IO-482)
 -   Fixed an inconsistent issue count between the **Commits** list and the **Repository Dashboard** page. (IO-422)
 
 ## Tool versions
@@ -52,7 +68,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Checkov 2.1.188
 -   Checkstyle 10.3.1
 -   Clang-Tidy 10.0.1
--   **[CodeNarc 3.2.0](https://github.com/CodeNarc/CodeNarc/blob/master/CHANGELOG.md#version-320----jan-2023) (updated from 2.2.0)**
+-   **[CodeNarc 3.2.0](https://github.com/CodeNarc/CodeNarc/blob/master/CHANGELOG.md) (updated from 2.2.0)**
 -   CoffeeLint 2.1.0
 -   **[Cppcheck 2.10](https://github.com/danmar/cppcheck/releases/tag/2.10) (updated from 2.2)**
 -   Credo 1.4.0
@@ -79,8 +95,8 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Revive 1.2.3
 -   RuboCop 1.39.0
 -   Scalastyle 1.5.0
--   **[ShellCheck 0.9.0](https://github.com/koalaman/shellcheck/blob/master/CHANGELOG.md#v090---2022-12-12) (updated from 0.8.0)**
--   **[SonarC# 8.40](https://github.com/SonarSource/sonar-dotnet/releases/tag/8.40.0.48530) (updated from 8.39)**
+-   **ShellCheck v0.9.0 (updated from 0.8.0)**
+-   **[SonarC# 8.40](https://github.com/SonarSource/sonar-dotnet/tags) (updated from 8.39)**
 -   SonarVB 8.15
 -   spectral-rulesets 1.2.7
 -   **[SpotBugs 4.7.3](https://github.com/spotbugs/spotbugs/releases/tag/4.7.3) (updated from 4.5.3)**
