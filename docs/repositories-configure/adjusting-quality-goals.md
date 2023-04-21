@@ -18,4 +18,3 @@ To access the quality goals, open your repository **Settings**, tab **Goals**. T
 ## See also
 
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
--   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
