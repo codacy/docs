@@ -8,7 +8,7 @@ If your repository has source files with unrecognized extensions, you can config
 
 1.  Go to your repository's **Settings**, **File Extensions**.
 
-    ![Configuring file extensions](images/file-extensions.png)
+    ![Configuring file extensions](images/file-extensions.png)<!--TODO PLUTO-532 Update screenshot-->
 
 1.  Add the extensions you want to be recognized for each language.
 
