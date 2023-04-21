@@ -32,7 +32,7 @@ This area displays the information that identifies the commit (SHA hash, date, a
 
 This area displays the quality gate status and an overview of the code quality metrics for the {{ page.meta.page_name }}:
 
--   The quality gate status is either **Not up to standards** or **Up to standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) for your repository.
+-   The quality gate status is either **Not up to standards** or **Up to standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
 
     If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to standards**.
 
@@ -56,7 +56,7 @@ This area displays the quality gate status and an overview of the code quality m
         -   [Which code quality metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
         -   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
 
--   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) for your repository:
+-   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository:
 
     -   **Green:** The metric passes the quality gate
     -   **Red:** The metric fails the quality gate
