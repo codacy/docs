@@ -193,7 +193,7 @@ After having coverage reports set up for your repository, you must use the Codac
 
     ```bash
     export CODACY_API_BASE_URL=<your Codacy instance URL>
-    export CODACY_REPORTER_VERSION=13.13.0
+    export CODACY_REPORTER_VERSION=13.13.1
     ```
 
 1.  Run Codacy Coverage Reporter **on the root of the locally checked out branch of your Git repository**, specifying the relative path to the coverage report to upload:
