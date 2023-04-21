@@ -171,7 +171,7 @@ First, update the Latest documentation version with the latest chart documentati
 
 After updating the Latest documentation version, you're ready to create a new Codacy Self-hosted documentation version:
 
-1.  Create a new release branch with the name `release/v<MAJOR>.<MINOR>` from the now updated `master` branch.
+1.  Create a new release branch with the name `release/v<MAJOR>.<MINOR>` from the branch of the previous Codacy Self-hosted docs version.
 
 1.  Edit the file [`.gitmodules`](.gitmodules) and update the branch of the chart submodule to the correct release branch. For example:
 
@@ -179,25 +179,19 @@ After updating the Latest documentation version, you're ready to create a new Co
     [submodule "submodules/chart"]
         path = submodules/chart
         url = https://github.com/codacy/chart
-        branch = release-2.0.0
+        branch = release-11.0.0
     ```
 
 1.  Pull the latest changes from this branch of the chart submodule.
 
     ```bash
     cd submodules/chart
-    git checkout release-2.0.0
+    git checkout release-11.0.0
     git pull
     cd ../..
     ```
 
 1.  Edit the file `mkdocs.yml` and make sure that the value of the variable `extra.version` is set to the new version of the chart.
-
-1.  Delete the release notes from the release branch, since it's only necessary to publish the release notes on the Latest or main version of the documentation:
-
-    -   Delete the folder `docs/release-notes`
-
-    -   Delete all lines on `mkdocs.yml` that reference the removed files
 
 1.  Build the documentation and make sure that the changes for the new chart version are correct.
 
@@ -210,9 +204,9 @@ You must update an existing Codacy Self-hosted documentation version when there 
 To do this, you must update the documentation of the chart on the:
 
 -   [Latest version of the documentation](#updating-the-latest-documentation-version)
--   Corresponding version of the documentation (for example, v2.0)
+-   Corresponding version of the documentation (for example, v11.0)
 
-    Follow the instructions on [updating the Latest documentation version](#updating-the-latest-documentation-version), but when updating the corresponding version of the documentation commit the changes to that release branch instead of `master`. For example, `release/v2.0`.
+    Follow the instructions on [updating the Latest documentation version](#updating-the-latest-documentation-version), but when updating the corresponding version of the documentation commit the changes to that release branch instead of `master`. For example, `release/v11.0`.
 
 ## Applying documentation hotfixes to existing chart releases
 
