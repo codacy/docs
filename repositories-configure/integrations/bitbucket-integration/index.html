@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the Bitbucket integration to have pull request status, comments, and analysis summaries from Codacy directly on pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2023-01-30 15:04:59">
+        <meta http-equiv="last-modified" content="2023-04-21 15:10:54">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/bitbucket-integration/">
@@ -606,8 +606,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../adjusting-quality-settings/" title="Adjusting quality settings" class="md-nav__link">
-      Adjusting quality settings
+    <a href="../../adjusting-quality-gates/" title="Adjusting quality gates" class="md-nav__link">
+      Adjusting quality gates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../adjusting-quality-goals/" title="Adjusting quality goals" class="md-nav__link">
+      Adjusting quality goals
     </a>
   </li>
 
@@ -619,16 +631,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
     
-    <label class="md-nav__link" for="nav-4-7">
+    <label class="md-nav__link" for="nav-4-8">
       Setting up code coverage
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Setting up code coverage" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-7">
+      <label class="md-nav__title" for="nav-4-8">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -697,16 +709,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-8">
+    <label class="md-nav__link" for="nav-4-9">
       Local analysis
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Local analysis" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-8">
+      <label class="md-nav__title" for="nav-4-9">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -3666,13 +3678,13 @@
 <p>To configure the Bitbucket integration, open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
 <p>Depending on the options that you enable, Codacy will automatically update pull requests on Bitbucket with extra information when accepting pull requests:</p>
 <h3 id="pull-request-status">Pull Request Status<a class="headerlink" href="#pull-request-status" title="Permanent link">#</a></h3>
-<p>Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the <a href="../../adjusting-quality-settings/">quality settings</a> of your repository. You can then optionally <a href="../../../getting-started/integrating-codacy-with-your-git-workflow/#blocking-pull-requests">block merging pull requests that aren't up to standards</a>.</p>
+<p>Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the <a href="../../adjusting-quality-gates/">quality gate rules</a> for your repository. You can then optionally <a href="../../../getting-started/integrating-codacy-with-your-git-workflow/#blocking-pull-requests">block merging pull requests that aren't up to standards</a>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>To get a status for coverage</strong> you must also:</p>
 <ul>
 <li><a href="../../../coverage-reporter/">Add coverage to your repository</a></li>
-<li>Enable the rule <strong>Diff coverage is under</strong> or <strong>Coverage variation is under</strong> on the <a href="../../adjusting-quality-settings/#gates">pull request quality gate</a>.</li>
+<li>Enable the rule <strong>Diff coverage is under</strong> or <strong>Coverage variation is under</strong> on the <a href="../../adjusting-quality-gates/">pull request quality gate</a>.</li>
 </ul>
 </div>
 <p><img alt="Pull request status on Bitbucket" src="../images/bitbucket-integration-pr-status.png" /></p>
@@ -3845,7 +3857,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 30, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 21, 2023</span>
     
   </small>
 </div>

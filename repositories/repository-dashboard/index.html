@@ -11,7 +11,7 @@
         <meta name="description" content="The Repository Dashboard provides an overview of the repository code quality and items that require your attention.">
       
       
-        <meta http-equiv="last-modified" content="2023-03-31 08:24:21">
+        <meta http-equiv="last-modified" content="2023-04-21 15:10:54">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/repository-dashboard/">
@@ -618,8 +618,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/adjusting-quality-settings/" title="Adjusting quality settings" class="md-nav__link">
-      Adjusting quality settings
+    <a href="../../repositories-configure/adjusting-quality-gates/" title="Adjusting quality gates" class="md-nav__link">
+      Adjusting quality gates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../repositories-configure/adjusting-quality-goals/" title="Adjusting quality goals" class="md-nav__link">
+      Adjusting quality goals
     </a>
   </li>
 
@@ -631,16 +643,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
     
-    <label class="md-nav__link" for="nav-4-7">
+    <label class="md-nav__link" for="nav-4-8">
       Setting up code coverage
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Setting up code coverage" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-7">
+      <label class="md-nav__title" for="nav-4-8">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -709,16 +721,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-8">
+    <label class="md-nav__link" for="nav-4-9">
       Local analysis
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Local analysis" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-8">
+      <label class="md-nav__title" for="nav-4-9">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -3693,14 +3705,14 @@
 <p class="admonition-title">Note</p>
 <p>The coverage tab only displays a value if Codacy received coverage data for the most recent commit. This is because one commit can <span class="skip-vale">easily</span> change the size or number of files on the repository, or even remove some files that had coverage information.</p>
 </div>
-<p>The chart also displays the <strong>trendline</strong> based on the past behavior and the <strong>quality goal</strong> defined on the repository <a href="../../repositories-configure/adjusting-quality-settings/">quality settings</a>.</p>
+<p>The chart also displays the <strong>trendline</strong> based on the past behavior and the <a href="../../repositories-configure/adjusting-quality-goals/">quality goals</a> defined for the repository.</p>
 <p><img alt="Quality evolution chart" src="../images/repository-dashboard-quality-evolution.png" /></p>
 <h2 id="issues-breakdown">Issues breakdown<a class="headerlink" href="#issues-breakdown" title="Permanent link">#</a></h2>
 <p>The <strong>Issues breakdown</strong> area displays the total number of issues found on the selected branch, as well as the distribution of issues across each code quality issue category.</p>
 <p>Click <strong>See all issues</strong> to see the full <a href="../issues/">list of issues</a> found, or click a category to see the issues in that category.</p>
 <p><img alt="Issues breakdown" src="../images/repository-dashboard-issues-breakdown.png" /></p>
 <h2 id="coverage">Coverage<a class="headerlink" href="#coverage" title="Permanent link">#</a></h2>
-<p>The <strong>Coverage</strong> area displays the percentage of lines of code on the selected branch that are covered by tests versus the <a href="../../repositories-configure/adjusting-quality-settings/#goals">coverage goal</a> defined in the quality settings of the repository, as well as the number of files:</p>
+<p>The <strong>Coverage</strong> area displays the percentage of lines of code on the selected branch that are covered by tests versus the <a href="../../repositories-configure/adjusting-quality-goals/">coverage goal</a> defined in the quality settings of the repository, as well as the number of files:</p>
 <ul>
 <li>Without coverage</li>
 <li>With coverage not up to standards (based on the coverage goal)</li>
@@ -3716,7 +3728,7 @@
 <p>The <strong>Open pull requests</strong> area displays the last updated pull requests and the split between the status of all open pull requests in your repository:</p>
 <ul>
 <li><strong>Up to standards:</strong> Pull requests that meet the minimum quality levels</li>
-<li><strong>Not up to standards:</strong> Pull requests that failed to meet at least one of the <a href="../../repositories-configure/adjusting-quality-settings/#gates">quality gate rules defined for the repository</a></li>
+<li><strong>Not up to standards:</strong> Pull requests that failed to meet at least one of the <a href="../../repositories-configure/adjusting-quality-gates/">quality gate rules defined for the repository</a></li>
 <li><strong>Analyzing:</strong> Pull requests currently being analyzed by Codacy</li>
 </ul>
 <p>Click a bar segment to display only pull requests with the corresponding status.</p>
@@ -3884,7 +3896,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 31, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 21, 2023</span>
     
   </small>
 </div>

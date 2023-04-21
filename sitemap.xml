@@ -811,7 +811,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.codacy.com/repositories-configure/adjusting-quality-settings/</loc>
+         <loc>https://docs.codacy.com/repositories-configure/adjusting-quality-gates/</loc>
+         <lastmod>2023-04-21</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.codacy.com/repositories-configure/adjusting-quality-goals/</loc>
          <lastmod>2023-04-21</lastmod>
          <changefreq>daily</changefreq>
     </url>

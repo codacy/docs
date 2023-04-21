@@ -11,7 +11,7 @@
         <meta name="description" content="Integrate Codacy with your Git workflow to display analysis results and code coverage as status checks on your pull requests and optionally block merging pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2023-02-27 14:46:14">
+        <meta http-equiv="last-modified" content="2023-04-21 15:10:54">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/integrating-codacy-with-your-git-workflow/">
@@ -611,8 +611,20 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/adjusting-quality-settings/" title="Adjusting quality settings" class="md-nav__link">
-      Adjusting quality settings
+    <a href="../../repositories-configure/adjusting-quality-gates/" title="Adjusting quality gates" class="md-nav__link">
+      Adjusting quality gates
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../repositories-configure/adjusting-quality-goals/" title="Adjusting quality goals" class="md-nav__link">
+      Adjusting quality goals
     </a>
   </li>
 
@@ -624,16 +636,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-7" type="checkbox" id="nav-4-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
     
-    <label class="md-nav__link" for="nav-4-7">
+    <label class="md-nav__link" for="nav-4-8">
       Setting up code coverage
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Setting up code coverage" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-7">
+      <label class="md-nav__title" for="nav-4-8">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -702,16 +714,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-8" type="checkbox" id="nav-4-8">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-4-9" type="checkbox" id="nav-4-9">
     
-    <label class="md-nav__link" for="nav-4-8">
+    <label class="md-nav__link" for="nav-4-9">
       Local analysis
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Local analysis" data-md-level="2">
-      <label class="md-nav__title" for="nav-4-8">
+      <label class="md-nav__title" for="nav-4-9">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -3681,7 +3693,7 @@
 <li><a href="#blocking-pull-requests">Blocking merging pull requests</a> (optional)</li>
 </ol>
 <h2 id="configuring-gate">1. Configuring the quality gate rules<a class="headerlink" href="#configuring-gate" title="Permanent link">#</a></h2>
-<p><a href="../../repositories-configure/adjusting-quality-settings/">Review and adjust the quality settings</a> of your repository to decide which pull requests should fail the Codacy quality gate.</p>
+<p><a href="../../repositories-configure/adjusting-quality-gates/">Review and adjust the quality gates</a> of your repository to decide which pull requests should fail the Codacy quality gate.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>The default values of the quality gate rules are designed to help maintain the current code quality of your repository. In particular, the default value for the coverage rule might be demanding. Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of delaying or blocking the development progress.</p>
@@ -3696,7 +3708,7 @@
 <p class="admonition-title">Important</p>
 <p><strong>If you want to use code coverage</strong> to block merging pull requests that don't meet your standards, make sure that you enable the rule <strong>Diff coverage is under</strong> or <strong>Coverage variation is under</strong>. This is required for Codacy to report the coverage status directly on your pull requests.</p>
 </div>
-<p><img alt="Adjusting the quality settings" src="../../repositories-configure/images/quality-settings.png" /></p>
+<p><img alt="Adjusting the quality gates" src="../../repositories-configure/images/quality-settings-gates.png" /></p>
 <h2 id="git-provider-integration">2. Activating the Git provider integration<a class="headerlink" href="#git-provider-integration" title="Permanent link">#</a></h2>
 <p>Follow the instructions for <a href="../../repositories-configure/integrations/github-integration/#enabling">GitHub</a>, <a href="../../repositories-configure/integrations/gitlab-integration/#enabling">GitLab</a>, or <a href="../../repositories-configure/integrations/bitbucket-integration/#enabling">Bitbucket</a> depending on your Git provider, and make sure that you:</p>
 <ol>
@@ -3711,7 +3723,7 @@
 <p>To eliminate any false positives that could inadvertently block the work of your team, it's important that before activating this feature you:</p>
 <ul>
 <li>Validate that Codacy is reporting the intended status on your pull requests</li>
-<li>Double check you repository's <a href="../../repositories-configure/configuring-code-patterns/">tool and code pattern settings</a> and <a href="../../repositories-configure/adjusting-quality-settings/">quality gate settings</a></li>
+<li>Double check you repository's <a href="../../repositories-configure/configuring-code-patterns/">tool and code pattern settings</a> and <a href="../../repositories-configure/adjusting-quality-gates/">quality gate settings</a></li>
 </ul>
 </div>
 <p>Follow the instructions from your Git provider to block merging pull requests if they don't pass the Codacy status check:</p>
@@ -3878,7 +3890,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 27, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 21, 2023</span>
     
   </small>
 </div>
