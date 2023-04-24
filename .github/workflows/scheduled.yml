@@ -1,8 +1,6 @@
 name: Scheduled jobs
 
-on:
-  schedule:
-   - cron: "15 5 * * 1"
+on: push
 
 jobs:
   check-broken-links:
@@ -10,9 +8,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
-          submodules: true
 
       - name: Check for broken links
         id: lychee
@@ -38,9 +33,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
-          submodules: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -72,9 +64,6 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
-          submodules: true
 
       - name: Set up Python
         uses: actions/setup-python@v4
@@ -104,15 +93,12 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v3
-        with:
-          token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
-          submodules: true
 
       - name: Compress images
         id: calibre
         uses: calibreapp/image-actions@main
         with:
-          githubToken: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
           ignorePaths: submodules/**
           compressOnly: true
 
@@ -124,5 +110,3 @@ jobs:
           branch-suffix: timestamp
           commit-message: "clean: Compress images"
           body: ${{ steps.calibre.outputs.markdown }}
-        env:
-          GITHUB_TOKEN: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
