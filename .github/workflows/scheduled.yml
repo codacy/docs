@@ -18,7 +18,7 @@ jobs:
           args: --verbose ./docs/**/*.md ./submodules/chart/docs/**/*.md
           jobSummary: true
         env:
-          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Create issue
         if: env.lychee_exit_code != 0
