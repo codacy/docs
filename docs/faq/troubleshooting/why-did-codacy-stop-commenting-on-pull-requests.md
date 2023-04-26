@@ -35,6 +35,8 @@ To fix this issue and avoid future disruptions, re-enable the GitLab or Bitbucke
 
     -   [Enabling the Bitbucket integration](../../repositories-configure/integrations/bitbucket-integration.md#enabling)
 
+<!--TODO PLUTO-535 Add a note-->
+
 ## See also
 
 -   [We no longer have access to this repository, check your SSH keys](we-no-longer-have-access-to-this-repository.md)

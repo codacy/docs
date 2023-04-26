@@ -5,6 +5,8 @@ nav_step: 2
 
 # Integrating Codacy with your Git workflow
 
+<!--TODO PLUTO-535 Update this content-->
+
 {% include-markdown "../assets/includes/nav-multistep-quickstart.md" %}
 
 Once you've configured your repository to best match your use case, integrate Codacy with your Git workflow to display analysis results and code coverage as status checks on your pull requests.
