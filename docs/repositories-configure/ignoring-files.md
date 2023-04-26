@@ -8,7 +8,7 @@ In some situations, you may want to ignore or exclude files from the Codacy anal
 
 To exclude files from your repository analysis open your repository **Settings**, tab **Ignored Files**, and select the files you want to ignore. This view only shows the files on your main branch.
 
-![Ignored files](images/ignored-files.png)<!--TODO PLUTO-532 Update screenshot-->
+![Ignored files](images/ignored-files.png)
 
 You can also ignore files using your own tool configuration files, although this depends on the option being supported by each tool.
 

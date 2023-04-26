@@ -7,7 +7,7 @@ To change the default branch of your repository or start analyzing other branche
 
 1.  Open your repository **Settings**, tab **Branches**.
 
-    ![Managing branches](images/managing-branches.png)<!--TODO PLUTO-532 Update screenshot-->
+    ![Managing branches](images/managing-branches.png)
 
 1.  To enable analysis for a new branch, toggle the corresponding switch in the column **Analyze**.
 
@@ -24,7 +24,7 @@ To change the main branch of your repository or enable analysis on other branche
 
 This page also displays the [code quality grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md) for each enabled branch.
 
-![Managing branches](images/managing-branches-sh.png)<!--TODO PLUTO-532 Update screenshot-->
+![Managing branches](images/managing-branches-sh.png)
 
 !!! note
     **If you're using Codacy Self-hosted** you can also configure Codacy to automatically enable all new branches that are pushed to the repository.
