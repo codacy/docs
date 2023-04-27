@@ -1,18 +1,18 @@
-# Managing security and risk <!-- *** Concepts *** -->
+# Managing security and risk
 
 The Security and Risk Management dashboard helps you identify, prioritize, track, and address security vulnerabilities across your organization by opening time-bound action items whenever Codacy finds new Security issues in your organization's repositories.
 
-Codacy **automatically opens and prioritizes** a new item when it finds a new Security issue on the default branch of a repository. The priority of each item defines an [expected resolution time](#item-priorities-and-resolution-times) to fix the underlying Security issue.
+Codacy **automatically opens and prioritizes** a new item when it finds a new Security issue on the default branch of a repository. The priority of each item defines an expected resolution time to fix the underlying Security issue.
 
-For example, Codacy opens an item with Critical priority upon finding a new Security issue of Critical severity on the default branch of an organization repository. If the underlying issue isn't fixed within the expected resolution time of 30 days, the [status of the item](#item-statuses-and-data-retention) transitions to Overdue and then to Closed late if the item is closed.
+For example, when finding a new Security issue of Critical severity on the default branch of a repository, Codacy automatically opens an item with Critical priority. If the Security issue is fixed within the [expected resolution time](#item-priorities-and-resolution-times), the [status of the item](#item-statuses) changes to Closed on time. If the issue isn't fixed within the expected resolution time, the status of the item changes to Overdue.
 
 Codacy **automatically closes** an item when it stops detecting the underlying issue, when [the underlying issue is ignored](../repositories/issues.md#ignoring-and-managing-issues), or when the [tool that found the underlying issue is disabled](../repositories-configure/configuring-code-patterns.md).
 
 ## Opening and closing items
 
-To automatically open and close items, Codacy must start and stop detecting the underlying Security issues on your repositories. To make sure that this works correctly:
+To automatically open and close items, Codacy must start and stop detecting the underlying Security issues. To make sure that Security issues are detected:
 
-1.  [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category on your repositories.
+1.  [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These are enabled by default, but may not be on a custom configuration.
 
 1.  Confirm that all [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
 
@@ -34,18 +34,17 @@ To list and monitor items:
 
 1.  Click the **Review** button in the relevant pane to access the matching item list.
 
-Once you're on the item list page:
+    By default, items are sorted by days to deadline, with overdue items shown first, followed by items closest to the deadline.
 
 1.  To further filter the list by priority or status, use the selectors above the list.
 
     ![Security and risk management items](images/placeholder.png)
 
-1.  Click the Details column of an item to navigate to a filtered view of the Repository issues page.
+1.  To find out more about an item, click its Details entry. This redirects you to a filtered view of the Repository issues page, showing only the item of interest.<!-- TODO confirm this is part of the MVP -->
 
-<!-- *** Reference *** -->
-## Item statuses and data retention
+## Item statuses
 
-The following table describes how item statuses map to status categories and deadlines:
+The following table describes how item statuses map to deadlines:
 
 | Item status    | Status category | Deadline                           |
 |----------------|-----------------|------------------------------------|
@@ -55,14 +54,18 @@ The following table describes how item statuses map to status categories and dea
 | Closed on time | Closed          | Closed before the deadline         |
 | Closed late    | Closed          | Closed after the deadline          |
 
-Open items are retained **indefinitely**. Closed items are retained for **one year**.
-
 ## Item priorities and resolution times
 
 The following table defines the priorities and days to close an item by fixing the underlying Codacy security issue, based on the severity of the issue:
 
-| Item priority | Days to fix the underlying issue | Severity of the underlying issue |
-|---------------|----------------------------------|----------------------------------|
-| Low           | 120                              | Minor                            |
-| Medium        | 90                               | Medium                           |
-| Critical      | 30                               | Critical                         |
+| Item priority | Days to fix the underlying<br>Security issue | Severity of the underlying<br>Security issue |
+|---------------|----------------------------------------------|----------------------------------------------|
+| Low           | 120                                          | Minor                                        |
+| Medium        | 90                                           | Medium                                       |
+| Critical      | 30                                           | Critical                                     |
+
+## Data retention
+
+Open items are retained indefinitely. Closed items are retained for one year.
+
+Deleting a repository deletes all the associated items.
