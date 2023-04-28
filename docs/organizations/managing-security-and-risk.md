@@ -1,22 +1,22 @@
 # Managing security and risk
 
-<!-- introduce the feature: to manage security and risk, centralize blah blah using the SRM dashboard -->
+To <span class="skip-vale">quickly</span> identify, prioritize, track, and address security vulnerabilities, open the page **Security and risk** under your organization to access the Security and risk management dashboard. This dashboard lets you monitor and act on time-bound, prioritized action items that Codacy creates automatically.
 
-The Security and Risk Management dashboard helps you identify, prioritize, track, and address security vulnerabilities across your organization by opening time-bound action items whenever Codacy finds new Security issues in your organization's repositories.
+Codacy opens a new item when it finds a new Security issue on the default branch of a repository. [Every item is prioritized](#item-priorities-and-deadlines) based on the severity of the underlying issue. Moreover, each priority defines a deadline to fix the underlying issue.
 
-Codacy **automatically opens and prioritizes** a new item when it finds a new Security issue on the default branch of a repository. The priority of each item defines a deadline to fix the underlying Security issue.
+For example, Codacy automatically opens an item with Critical priority upon finding a new Security issue of Critical severity on the default branch of a repository. If the Security issue is fixed before the associated deadline, the [status of the item](#item-statuses) changes to Closed on time. If the issue isn't fixed before the deadline, the status of the item changes to Overdue.
 
-For example, when finding a new Security issue of Critical severity on the default branch of a repository, Codacy automatically opens an item with Critical priority. If the Security issue is fixed [before the deadline](#item-priorities-and-resolution-times), the [status of the item](#item-statuses) changes to Closed on time. If the issue isn't fixed before the deadline, the status of the item changes to Overdue.
-
-Codacy **automatically closes** an item when it stops detecting the underlying issue, when [the underlying issue is ignored](../repositories/issues.md#ignoring-and-managing-issues), or when the [tool that found the underlying issue is disabled](../repositories-configure/configuring-code-patterns.md).
+Codacy closes an item when it stops detecting the underlying issue, when [the underlying issue is ignored](../repositories/issues.md#ignoring-and-managing-issues), or when the [tool that found the underlying issue is disabled](../repositories-configure/configuring-code-patterns.md).
 
 ## Opening and closing items
 
-To automatically open and close items, Codacy must start and stop detecting the underlying Security issues. To make sure that Security issues are detected:
+To automatically open and close items, Codacy must start and stop detecting the underlying Security issues. To make sure that these Security issues are detected correctly:
 
-1.  [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These are enabled by default, but may not be on a custom configuration.
+1.  [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category.
 
-1.  Confirm that all [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
+    These patterns are enabled by default, but may not be on a custom configuration.
+
+1.  Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
 
 ## Monitoring items
 
@@ -24,10 +24,10 @@ To list and monitor items:
 
 1.  Open your organization **Security and risk management** page to display the dashboard.
 
-    The dashboard includes five panes, each containing the number of matching items and a button to access the matching item list:
+    The dashboard includes five panes, each containing a count of matching items and a button to access the matching item list:
 
     -   **Total**: all open items
-    -   **Due soon**: open items within 15 days of missing their deadline
+    -   **Due soon**: open items within 15 days of their deadline
     -   **Overdue**: open items with a missed deadline
     -   **Closed on time**: items closed before the deadline
     -   **Closed late**: items closed after the deadline
