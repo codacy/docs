@@ -5,8 +5,6 @@ nav_step: 2
 
 # Integrating Codacy with your Git workflow
 
-<!--TODO PLUTO-535 Update this content-->
-
 {% include-markdown "../assets/includes/nav-multistep-quickstart.md" %}
 
 Once you've configured your repository to best match your use case, integrate Codacy with your Git workflow to display analysis results and code coverage as status checks on your pull requests.
@@ -45,6 +43,9 @@ Follow the instructions for [GitHub](../repositories-configure/integrations/gith
 1.  Enable the option **Status checks** (GitHub) or **Pull request status** (GitLab and Bitbucket)
 
 ![Enabling your Git provider integration](../repositories-configure/integrations/images/github-integration.png)
+
+!!! tip
+    Configure the organization [default settings](../organizations/default-git-provider-integration.md) for the integration with your Git provider. Codacy will use those settings when enabling the Git provider integration for newly added repositories.
 
 ## 3. Blocking merging pull requests (optional) {: id="blocking-pull-requests"}
 
