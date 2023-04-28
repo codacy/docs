@@ -35,7 +35,7 @@ To fix this issue and avoid future disruptions, re-enable the GitLab or Bitbucke
 
     -   [Enabling the Bitbucket integration](../../repositories-configure/integrations/bitbucket-integration.md#enabling)
 
-<!--TODO PLUTO-535 Add a note-->
+{% include-markdown "../../assets/includes/default-git-provider-settings-tip.md" %}
 
 ## See also
 

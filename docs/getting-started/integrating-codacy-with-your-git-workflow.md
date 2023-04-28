@@ -44,8 +44,7 @@ Follow the instructions for [GitHub](../repositories-configure/integrations/gith
 
 ![Enabling your Git provider integration](../repositories-configure/integrations/images/github-integration.png)
 
-!!! tip
-    Configure the organization [default settings](../organizations/default-git-provider-integration.md) for the integration with your Git provider. Codacy will use those settings when enabling the Git provider integration for newly added repositories.
+{% include-markdown "../assets/includes/default-git-provider-settings-tip.md" %}
 
 ## 3. Blocking merging pull requests (optional) {: id="blocking-pull-requests"}
 
