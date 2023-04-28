@@ -4,8 +4,6 @@ description: Enable the GitHub integration to have status checks, annotations, i
 
 # GitHub integration
 
-<!--TODO PLUTO-535 Update this content-->
-
 The GitHub integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your pull requests.
 
 When the integration is enabled, you can also create pull request comments and GitHub issues directly from Codacy when [browsing the existing issues](../../repositories/issues.md) on the repository:
@@ -14,7 +12,7 @@ When the integration is enabled, you can also create pull request comments and G
 
 ## Enabling the GitHub integration {: id="enabling"}
 
-To enable the GitHub integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
+To enable the GitHub integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default with the [settings defined for your organization](../../organizations/default-git-provider-integration.md).
 
 ![GitHub integration](images/github-integration.png)
 
@@ -28,7 +26,7 @@ If you remove the integration, you can enable it again as follows:
 
 ## Configuring the GitHub integration {: id="configuring"}
 
-To configure the GitHub integration, open your repository **Settings**, tab **Integrations**.
+To change the configuration of the GitHub integration, open your repository **Settings**, tab **Integrations**.
 
 Depending on the options that you enable, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests:
 

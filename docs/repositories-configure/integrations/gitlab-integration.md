@@ -4,13 +4,11 @@ description: Enable the GitLab integration to have merge request status, comment
 
 # GitLab integration
 
-<!--TODO PLUTO-535 Update this content-->
-
 The GitLab integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your merge requests.
 
 ## Enabling the GitLab integration {: id="enabling"}
 
-To enable the GitLab integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
+To enable the GitLab integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default with the [settings defined for your organization](../../organizations/default-git-provider-integration.md).
 
 ![GitLab integration](images/gitlab-integration.png)
 
@@ -26,7 +24,7 @@ If you remove the integration, you can enable it again as follows:
 
 ## Configuring the GitLab integration {: id="configuring"}
 
-To configure the GitLab integration, open your repository **Settings**, tab **Integrations**.
+To change the configuration of the GitLab integration, open your repository **Settings**, tab **Integrations**.
 
 Depending on the options that you enable, Codacy will automatically update merge requests on GitLab with extra information when accepting merge requests:
 

@@ -4,8 +4,6 @@ description: Enable the Bitbucket integration to have pull request status, comme
 
 # Bitbucket integration
 
-<!--TODO PLUTO-535 Update this content-->
-
 The Bitbucket integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your pull requests.
 
 When the integration is enabled, you can also create pull request comments and Jira issues directly from Codacy when [browsing the existing issues](../../repositories/issues.md) on the repository:
@@ -14,7 +12,7 @@ When the integration is enabled, you can also create pull request comments and J
 
 ## Enabling the Bitbucket integration {: id="enabling"}
 
-To enable the Bitbucket integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default.
+To enable the Bitbucket integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, the integration is already enabled by default with the [settings defined for your organization](../../organizations/default-git-provider-integration.md).
 
 ![Bitbucket integration](images/bitbucket-integration.png)
 
@@ -30,7 +28,7 @@ If you remove the integration, you can enable it again as follows:
 
 ## Configuring the Bitbucket integration {: id="configuring"}
 
-To configure the Bitbucket integration, open your repository **Settings**, tab **Integrations**.
+To change the configuration of the Bitbucket integration, open your repository **Settings**, tab **Integrations**.
 
 Depending on the options that you enable, Codacy will automatically update pull requests on Bitbucket with extra information when accepting pull requests:
 
