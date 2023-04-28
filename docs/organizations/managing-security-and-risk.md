@@ -36,10 +36,6 @@ To list and monitor items:
 
     By default, items are sorted by days to deadline, with overdue items shown first, followed by items closest to the deadline.
 
-1.  To further filter the list by priority or status, use the selectors above the list.
-
-    ![Security and risk management items](images/placeholder.png)
-
 1.  To find out more about an item, click its Details entry. This redirects you to a filtered view of the Repository issues page, showing only the item of interest.<!-- TODO confirm this is part of the MVP -->
 
 ## Item statuses
