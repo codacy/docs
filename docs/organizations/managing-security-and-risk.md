@@ -1,10 +1,12 @@
 # Managing security and risk
 
+<!-- introduce the feature: to manage security and risk, centralize blah blah using the SRM dashboard -->
+
 The Security and Risk Management dashboard helps you identify, prioritize, track, and address security vulnerabilities across your organization by opening time-bound action items whenever Codacy finds new Security issues in your organization's repositories.
 
-Codacy **automatically opens and prioritizes** a new item when it finds a new Security issue on the default branch of a repository. The priority of each item defines an expected resolution time to fix the underlying Security issue.
+Codacy **automatically opens and prioritizes** a new item when it finds a new Security issue on the default branch of a repository. The priority of each item defines a deadline to fix the underlying Security issue.
 
-For example, when finding a new Security issue of Critical severity on the default branch of a repository, Codacy automatically opens an item with Critical priority. If the Security issue is fixed within the [expected resolution time](#item-priorities-and-resolution-times), the [status of the item](#item-statuses) changes to Closed on time. If the issue isn't fixed within the expected resolution time, the status of the item changes to Overdue.
+For example, when finding a new Security issue of Critical severity on the default branch of a repository, Codacy automatically opens an item with Critical priority. If the Security issue is fixed [before the deadline](#item-priorities-and-resolution-times), the [status of the item](#item-statuses) changes to Closed on time. If the issue isn't fixed before the deadline, the status of the item changes to Overdue.
 
 Codacy **automatically closes** an item when it stops detecting the underlying issue, when [the underlying issue is ignored](../repositories/issues.md#ignoring-and-managing-issues), or when the [tool that found the underlying issue is disabled](../repositories-configure/configuring-code-patterns.md).
 
@@ -42,23 +44,49 @@ To list and monitor items:
 
 The following table describes how item statuses map to deadlines:
 
-| Item status    | Status category | Deadline                           |
-|----------------|-----------------|------------------------------------|
-| On track       | Open            | 15 days or more to the deadline    |
-| Due soon       | Open            | Fewer than 15 days to the deadline |
-| Overdue        | Open            | The deadline has been missed       |
-| Closed on time | Closed          | Closed before the deadline         |
-| Closed late    | Closed          | Closed after the deadline          |
+<table>
+    <thead>
+        <tr>
+            <th>Status category</th>
+            <th>Item status</th>
+            <th>Deadline</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td rowspan="3">Open</td>
+            <td>On track</td>
+            <td>15 days or more to the deadline</td>
+        </tr>
+        <tr>
+            <td>Due soon</td>
+            <td>Fewer than 15 days to the deadline</td>
+        </tr>
+        <tr>
+            <td>Overdue</td>
+            <td>The deadline has been missed</td>
+        </tr>
+        <tr>
+            <td rowspan="2">Closed</td>
+            <td>Closed on time</td>
+            <td>Closed before the deadline</td>
+        </tr>
+        <tr>
+            <td>Closed late</td>
+            <td>Closed after the deadline</td>
+        </tr>
+    </tbody>
+</table>
 
-## Item priorities and resolution times
+## Item priorities and deadlines
 
-The following table defines the priorities and days to close an item by fixing the underlying Codacy security issue, based on the severity of the issue:
+The following table defines item priorities and days to close an item by fixing the underlying Codacy security issue, based on the severity of the issue:
 
-| Item priority | Days to fix the underlying<br>Security issue | Severity of the underlying<br>Security issue |
-|---------------|----------------------------------------------|----------------------------------------------|
-| Low           | 120                                          | Minor                                        |
-| Medium        | 90                                           | Medium                                       |
-| Critical      | 30                                           | Critical                                     |
+| Security issue severity | Item priority | Days to close |
+|-------------------------|---------------|---------------|
+| Minor                   | Low           | 120           |
+| Medium                  | Medium        | 90            |
+| Critical                | Critical      | 30            |
 
 ## Data retention
 
