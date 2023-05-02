@@ -59,7 +59,7 @@ Codacy calculates the number of issues in the following static code analysis cat
 -   **Documentation:** Methods and classes that don't have the correct comment annotations
 <!--issue-categories-end-->
 
-Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the **percentage of issues relative to an expected baseline** of 100 issues with an average cost of 10 per 1000 lines of code, where the cost of each issue depends on its severity: Critical = 10, Medium = 5, Minor = 1.
+Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the issue cost **relative to a baseline of 1 point per line of code**, where the cost of each issue depends on its severity: Critical = 10 points, Medium = 5 points, Minor = 1 point. This means that if your repository has 50% issues, the amount and severity of the issues in your repository is half of the baseline.
 
 Codacy displays issues on the following places:
 
@@ -79,7 +79,7 @@ Codacy uses [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_com
 Codacy calculates complexity as follows:
 
 -   The complexity value for each file is the highest cyclomatic complexity of the methods in the file.
--   A file is considered complex if its cyclomatic complexity value is higher than the threshold [**File is complex when over**](../../repositories-configure/adjusting-quality-settings.md#goals).
+-   A file is considered complex if its cyclomatic complexity value is higher than the threshold [**File is complex when over**](../../repositories-configure/adjusting-quality-goals.md).
 -   The complexity value of a commit or pull request is the sum of the cyclomatic complexity of the files that were changed in the commit or pull request and that have complexity higher than 4.
 
 Codacy displays complexity on the following places:
@@ -99,7 +99,7 @@ Codacy identifies clones or [sequences of duplicate code](https://en.wikipedia.o
 Codacy calculates duplication as follows:
 
 -   The duplication value for each file is the number of clones in the file.
--   A file is considered duplicated if the number of clones in the file is higher than the threshold [**File is duplicated when over**](../../repositories-configure/adjusting-quality-settings.md#goals).
+-   A file is considered duplicated if the number of clones in the file is higher than the threshold [**File is duplicated when over**](../../repositories-configure/adjusting-quality-goals.md).
 -   The duplication value of a commit or pull request is the number of clones introduced by the commit or pull request.
 
 !!! note
@@ -124,7 +124,7 @@ You must set up your CI/CD pipeline to [upload code coverage data to Codacy](../
 Codacy calculates code coverage as follows:
 
 -   The coverage value for each file is the percentage of coverable lines that are covered by tests in the file. If a line is covered multiple times, Codacy counts it as a single covered line when calculating coverage.
--   A repository is considered to have acceptable coverage if the percentage of coverable lines that are covered by tests in the repository is higher than the threshold [**Coverage is under**](../../repositories-configure/adjusting-quality-settings.md#goals).
+-   A repository is considered to have acceptable coverage if the percentage of coverable lines that are covered by tests in the repository is higher than the threshold [**Coverage is under**](../../repositories-configure/adjusting-quality-goals.md).
 <!--code-coverage-metrics-start-->
 -   The **coverage variation** of a commit or pull request is the increase or drop in the percentage of coverable lines that are covered by tests in the repository because of the changes of the commit or pull request.
 -   The **diff coverage** of a pull request is the percentage of **coverable lines** that the pull request **added or modified** that are covered by tests.

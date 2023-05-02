@@ -43,6 +43,8 @@ This area displays the information that identifies the pull request (head and ba
 
 The **Commits** tab displays an overview of each commit included in the pull request, such as the analysis status and the number of new and fixed issues for each commit.
 
+Click a specific commit to see [detailed information about that commit](commits.md#status).
+
 ![Commits tab](images/pull-requests-tab-commits.png)
 
 ## See also

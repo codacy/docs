@@ -49,7 +49,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes<sup>2</sup></td>
     </tr>
     <tr>
-      <td>View private repository</td>
+      <td>View and follow private repository</td>
       <td>No</td>
       <td colspan="2" class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
@@ -146,7 +146,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
     </tr>
     <tr>
-      <td>View private repository</td>
+      <td>View and follow private repository</td>
       <td>No</td>
       <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -232,7 +232,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes<sup>2</sup></td>
     </tr>
     <tr>
-      <td>View private repository</td>
+      <td>View and follow private repository</td>
       <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>

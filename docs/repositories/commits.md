@@ -7,7 +7,7 @@ file_name: "commits"
 
 The **Commits page** displays an overview of the commits in your repository, such as the analysis status and the number of new and fixed issues for each commit. This allows you to monitor the evolution of the code quality in your repository per commit.
 
-By default, the page lists the commits on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display issues on other branches.
+By default, the page lists the commits on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display commits on other branches.
 
 ![Commits page](images/commits.png)
 
@@ -32,7 +32,7 @@ This area displays the information that identifies the commit (SHA hash, date, a
 
 This area displays the quality gate status and an overview of the code quality metrics for the {{ page.meta.page_name }}:
 
--   The quality gate status is either **Not up to standards** or **Up to standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) for your repository.
+-   The quality gate status is either **Not up to standards** or **Up to standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
 
     If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to standards**.
 
@@ -56,7 +56,7 @@ This area displays the quality gate status and an overview of the code quality m
         -   [Which code quality metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
         -   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
 
--   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-settings.md) for your repository:
+-   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository:
 
     -   **Green:** The metric passes the quality gate
     -   **Red:** The metric fails the quality gate
@@ -108,7 +108,7 @@ The **New Duplication** and **Fixed Duplication** tabs display the list of dupli
 
 ## Files tab
 
-The **Files** tab displays the variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) that the {{ page.meta.page_name }} introduced to the files in your repository, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
+The **Files** tab displays the variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) that the {{ page.meta.page_name }} introduces to the files in your repository, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
 
 -   **Issues:** Number of new or fixed issues
 -   **Duplication:** Variation of the number of duplicated code blocks
@@ -117,7 +117,7 @@ The **Files** tab displays the variation of the following [code quality metrics]
 
 Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
 
-The option **Show files without code quality changes** allows you to list all files that the {{ page.meta.page_name }} updated, even if their code quality metrics didn't change.
+The option **Show files without code quality changes** allows you to list all files that the {{ page.meta.page_name }} updates, even if their code quality metrics don't change.
 
 <!-- vale off -->
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
