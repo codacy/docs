@@ -1,5 +1,8 @@
 # Managing security and risk
 
+!!! info "This is a beta feature"
+    This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
+
 To <span class="skip-vale">quickly</span> identify, prioritize, track, and address security vulnerabilities, open the **Security and risk management** page from the organization-level navigation menu. On this page, you can monitor and act on time-bound, prioritized action items that Codacy creates automatically when finding Security issues:
 
 -   Codacy opens a new item when it finds a new Security issue on the default branch of a repository.
