@@ -608,8 +608,8 @@ nav:
           - organizations/organization-overview.md
           - organizations/managing-repositories.md
           - organizations/using-coding-standards.md
-          - organizations/managing-security-and-risk.md
           - organizations/copying-code-patterns-between-repositories.md
+          - organizations/managing-security-and-risk.md
           - organizations/managing-people.md
           - organizations/roles-and-permissions-for-organizations.md
           - organizations/changing-your-plan-and-billing.md
