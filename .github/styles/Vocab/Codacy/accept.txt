@@ -67,9 +67,7 @@ Scalameta
 Scalastyle
 SCSSLint
 Serverless
-severities
 ShellCheck
-SLAs
 SonarC#
 SonarVB
 SpotBugs
