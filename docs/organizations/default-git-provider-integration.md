@@ -4,7 +4,7 @@ You can configure the default settings that Codacy uses to integrate with your G
 
 To configure these default settings, go to the Git provider integration page for your organization. The integration features depend on your provider, [GitHub](../repositories-configure/integrations/github-integration.md#configuring), [GitLab](../repositories-configure/integrations/gitlab-integration.md#configuring) or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#configuring).
 
-![Default Git provider integration](images/default-git-provider-settings.png)
+![Default Git provider integration settings](images/default-git-provider-settings.png)
 
 You can later change the integration settings for a specific repository on the repository **Settings**, tab **Integrations**.
 
