@@ -125,11 +125,11 @@ The option **Show files without code quality changes** allows you to list all fi
 
 ## Diff tab
 
-The **Diff** tab displays the differences in each file that was changed in the {{ page.meta.page_name }}. The background of the lines that are different depend on the change:
+The **Diff** tab displays the differences in each file that was changed in the {{ page.meta.page_name }}. The background of the changed lines depends on the change:
 
 -   **Red**: Deleted line
--   **Yellow**: Original version of a changed line with the updated characters highlighted in red
--   **Pale green**: New version of a changed line with the updated characters highlighted in bright green
+-   **Yellow**: Old version of a changed line with deleted characters highlighted in red
+-   **Pale green**: New version of a changed line with added characters highlighted in bright green
 -   **Bright green**: New line
 
 <!-- vale off -->
