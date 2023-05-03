@@ -32,9 +32,9 @@ This area displays the information that identifies the commit (SHA hash, date, a
 
 This area displays the quality gate status and an overview of the code quality metrics for the {{ page.meta.page_name }}:
 
--   The quality gate status is either **Not up to standards** or **Up to standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
+-   The quality gate status is either **Failed quality gates** or **Passed quality gates** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
 
-    If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to standards**.
+    If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Passed quality gates**.
 
 -   The variation of the following code quality metrics introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %}:
 
