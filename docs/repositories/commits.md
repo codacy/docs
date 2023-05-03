@@ -129,7 +129,7 @@ The **Diff** tab displays the differences in each file that was changed in the {
 
 -   **Red**: Deleted line
 -   **Yellow**: Old version of a changed line with deleted characters highlighted in red
--   **Pale green**: New version of a changed line with added characters highlighted in bright green
+-   **Green**: New version of a changed line with added characters highlighted in bright green
 -   **Bright green**: New line
 
 <!-- vale off -->
