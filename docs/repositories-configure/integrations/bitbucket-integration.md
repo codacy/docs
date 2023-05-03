@@ -28,7 +28,7 @@ If you remove the integration, you can enable it again as follows:
 
 ## Configuring the Bitbucket integration {: id="configuring"}
 
-To change the configuration of the Bitbucket integration, open your repository **Settings**, tab **Integrations**.
+To configure the Bitbucket integration, open your repository **Settings**, tab **Integrations**.
 
 Depending on the options that you enable, Codacy will automatically update pull requests on Bitbucket with extra information when accepting pull requests:
 
