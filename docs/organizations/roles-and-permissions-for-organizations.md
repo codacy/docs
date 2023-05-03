@@ -97,7 +97,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure default settings for Git provider integration</td>
+      <td>Configure default Git provider integration settings</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td colspan="2">No</td>
