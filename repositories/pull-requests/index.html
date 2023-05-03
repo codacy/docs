@@ -3785,7 +3785,13 @@
 <p>The option <strong>Show files without code quality changes</strong> allows you to list all files that the pull request updates, even if their code quality metrics don't change.</p>
 <p><img alt="Files tab" src="../images/pull-requests-tab-files.png" /></p>
 <h2 id="diff-tab">Diff tab<a class="headerlink" href="#diff-tab" title="Permanent link">#</a></h2>
-<p>The <strong>Diff</strong> tab displays the line differences in each file that was changed in the pull request.</p>
+<p>The <strong>Diff</strong> tab displays the differences in each file that was changed in the pull request. The background of the changed lines depends on the change:</p>
+<ul>
+<li><strong>Red</strong>: Deleted line</li>
+<li><strong>Yellow</strong>: Old version of a changed line with deleted characters highlighted in red</li>
+<li><strong>Green</strong>: New version of a changed line with added characters highlighted in bright green</li>
+<li><strong>Bright green</strong>: New line</li>
+</ul>
 <p><img alt="Diff tab" src="../images/pull-requests-tab-diff.png" /></p>
 <h2 id="commits-tab">Commits tab<a class="headerlink" href="#commits-tab" title="Permanent link">#</a></h2>
 <p>The <strong>Commits</strong> tab displays an overview of each commit included in the pull request, such as the analysis status and the number of new and fixed issues for each commit.</p>

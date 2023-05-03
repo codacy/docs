@@ -11,7 +11,7 @@
         <meta name="description" content="The Commits page displays an overview of the commits in your repository, such as the analysis status and the number of new and fixed issues for each commit. This allows you to monitor the evolution of the code quality in your repository per commit.">
       
       
-        <meta http-equiv="last-modified" content="2023-05-03 08:06:46">
+        <meta http-equiv="last-modified" content="2023-05-03 15:44:45">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/commits/">
@@ -3777,7 +3777,13 @@
 <p>The option <strong>Show files without code quality changes</strong> allows you to list all files that the commit updates, even if their code quality metrics don't change.</p>
 <p><img alt="Files tab" src="../images/commits-tab-files.png" /></p>
 <h2 id="diff-tab">Diff tab<a class="headerlink" href="#diff-tab" title="Permanent link">#</a></h2>
-<p>The <strong>Diff</strong> tab displays the line differences in each file that was changed in the commit.</p>
+<p>The <strong>Diff</strong> tab displays the differences in each file that was changed in the commit. The background of the changed lines depends on the change:</p>
+<ul>
+<li><strong>Red</strong>: Deleted line</li>
+<li><strong>Yellow</strong>: Old version of a changed line with deleted characters highlighted in red</li>
+<li><strong>Green</strong>: New version of a changed line with added characters highlighted in bright green</li>
+<li><strong>Bright green</strong>: New line</li>
+</ul>
 <p><img alt="Diff tab" src="../images/commits-tab-diff.png" /></p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
