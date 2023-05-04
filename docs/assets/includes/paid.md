@@ -8,4 +8,4 @@
 
 <!--paid-feature-start-->
 !!! info "This is a [paid feature](https://www.codacy.com/pricing)"
-<!--paid-feature-end>
+<!--paid-feature-end-->
