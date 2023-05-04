@@ -44,13 +44,13 @@ The tab displays the following information:
 !!! note
     The chart only displays a value if Codacy received coverage data for the most recent commit. This is because one commit can <span class="skip-vale">easily</span> change the size or number of files on the repository, or even remove some files that had coverage information.
 
-The chart also displays the **trendline** based on the past behavior and the **coverage goal** defined on the repository [quality settings](../../repositories-configure/adjusting-quality-settings.md).
+The chart also displays the **trendline** based on the past behavior and the **coverage goal** defined on the repository [quality settings](../../repositories-configure/adjusting-quality-goals.md).
 
 ![Quality evolution chart](images/repository-dashboard-coverage-evolution.png)<!--TODO Update-->
 
 ## Coverage
 
-The **Coverage** area displays the percentage of lines of code on the selected branch that are covered by tests versus the [coverage goal](../../repositories-configure/adjusting-quality-settings.md#goals) defined in the quality settings of the repository, as well as the number of files:
+The **Coverage** area displays the percentage of lines of code on the selected branch that are covered by tests versus the [coverage goal](../../repositories-configure/adjusting-quality-goals.md) defined in the quality settings of the repository, as well as the number of files:
 
 -   Without coverage
 -   With coverage not up to standards (based on the coverage goal)
@@ -68,7 +68,7 @@ Click **See all files** to open the [list of files](files.md) in the repository.
 The **Open pull requests** area displays the last updated pull requests and the split between the status of all open pull requests in your repository:
 
 -   **Up to coverage standards:** Pull requests that meet the minimum coverage levels
--   **Not up to coverage standards:** Pull requests that failed to meet at least one of the [coverage gate rules defined for the repository](../../repositories-configure/adjusting-quality-settings.md#gates)
+-   **Not up to coverage standards:** Pull requests that failed to meet at least one of the [coverage gate rules defined for the repository](../../repositories-configure/adjusting-quality-gates.md)
 -   **No information:** Pull requests that didn't receive the coverage reports required for Codacy to calculate the coverage metrics
 
 Click a bar segment to display only pull requests with the corresponding status.

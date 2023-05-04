@@ -34,7 +34,7 @@ This area displays detailed information about the commit:
 
 This area displays the coverage gate status and an overview of the coverage metrics for the {{ page.meta.page_name }}:
 
--   The quality gate status is either **Up to coverage standards** or **Not up to coverage standards** depending on the [coverage gate rules](../../repositories-configure/adjusting-quality-settings.md) for your repository.
+-   The quality gate status is either **Up to coverage standards** or **Not up to coverage standards** depending on the [coverage gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository.
 
     If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to coverage standards**.
 
@@ -54,7 +54,7 @@ This area displays the coverage gate status and an overview of the coverage metr
         -   [Which coverage metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage)
         -   [Why does Codacy show unexpected coverage changes?](../../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
 
--   The **colors** depend on the [coverage gate rules](../../repositories-configure/adjusting-quality-settings.md) for your repository:
+-   The **colors** depend on the [coverage gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository:
 
     -   **Green:** The metric passes the coverage gate
     -   **Red:** The metric fails the coverage gate
