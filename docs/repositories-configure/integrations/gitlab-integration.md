@@ -26,6 +26,8 @@ If you remove the integration, you can enable it again as follows:
 
 To configure the GitLab integration, open your repository **Settings**, tab **Integrations**.
 
+<!--TODO PLUTO-550 Add tip-->
+
 Depending on the options that you enable, Codacy will automatically update merge requests on GitLab with extra information when accepting merge requests:
 
 ### Pull Request Status

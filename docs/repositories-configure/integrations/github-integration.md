@@ -28,6 +28,8 @@ If you remove the integration, you can enable it again as follows:
 
 To configure the GitHub integration, open your repository **Settings**, tab **Integrations**.
 
+<!--TODO PLUTO-550 Add tip-->
+
 Depending on the options that you enable, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests:
 
 ### Status checks
