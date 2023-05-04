@@ -7,7 +7,7 @@ Each organization on Codacy has a dedicated plan and associated billing. To make
     **If you're using GitHub Marketplace,** make changes to your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).
 <!--github-marketplace-end-->
 
-![Plan and billing for a Codacy organization](images/organization-plan-billing.png)
+![Plan and billing for a Codacy organization](images/organization-plan-billing.png)<!--TODO Update-->
 
 -   **To upgrade** to the Pro plan click **Choose plan**, choose between monthly or yearly billing, and provide your payment and invoice details
 
