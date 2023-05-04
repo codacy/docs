@@ -1,13 +1,8 @@
 # Changing your plan and billing
 
-Each Codacy organization is associated with your billing details and one or more active Codacy products. To update your billing details or change the active products and their pricing plans, open your organization **Settings**, page **Plan and billing**.
+Each Codacy organization is associated with your billing details and one or more active Codacy products.
 
-<!--github-marketplace-start-->
-!!! note
-    **If you're using GitHub Marketplace,** make changes to your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).<!--TODO Will we have this option for Coverage?-->
-<!--github-marketplace-end-->
-
-![Plan and billing for a Codacy organization](images/organization-plan-billing.png)<!--TODO Update-->
+To update your billing details or change the active products and their pricing plans, open your organization **Settings**, page **Plan and billing**.
 
 -   **To activate** a new product and enjoy a free trial click **Try Quality** or **Try Coverage**
 
@@ -16,6 +11,13 @@ Each Codacy organization is associated with your billing details and one or more
 -   **To make changes** to your billing details click **Change your billing details**
 
 If you have any questions or need help with your account, please contact <mailto:support@codacy.com>.
+
+<!--github-marketplace-start-->
+!!! note
+    **If you're using GitHub Marketplace,** make changes to your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).<!--TODO Will we have this option for Coverage?-->
+<!--github-marketplace-end-->
+
+![Plan and billing for a Codacy organization](images/organization-plan-billing.png)<!--TODO Update-->
 
 ## Allowing new people to join your organization
 
