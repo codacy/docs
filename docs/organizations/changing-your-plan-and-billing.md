@@ -1,17 +1,19 @@
 # Changing your plan and billing
 
-Each organization on Codacy has a dedicated plan and associated billing. To make changes to the plan and billing of an organization, open your organization **Settings**, page **Plan and billing**.
+Each Codacy organization is associated with your billing details and one or more active Codacy products. To update your billing details or change the active products and their pricing plans, open your organization **Settings**, page **Plan and billing**.
 
 <!--github-marketplace-start-->
 !!! note
-    **If you're using GitHub Marketplace,** make changes to your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).
+    **If you're using GitHub Marketplace,** make changes to your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).<!--TODO Will we have this option for Coverage?-->
 <!--github-marketplace-end-->
 
 ![Plan and billing for a Codacy organization](images/organization-plan-billing.png)<!--TODO Update-->
 
--   **To upgrade** to the Pro plan click **Choose plan**, choose between monthly or yearly billing, and provide your payment and invoice details
+-   **To activate** a new product and enjoy a free trial click **Try Quality** or **Try Coverage**
 
--   **To make changes** to your Pro plan or invoice details click **Edit plan details** or click **Edit invoice details**
+-   **To upgrade** to a Pro plan click **Choose plan**, choose between monthly or yearly billing, and provide your payment and invoice details
+
+-   **To make changes** to your billing details click **Change your billing details**
 
 If you have any questions or need help with your account, please contact <mailto:support@codacy.com>.
 
