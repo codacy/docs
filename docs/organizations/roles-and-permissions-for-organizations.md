@@ -114,7 +114,15 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
 
 The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresponding Codacy permission levels and the operations that they're allowed to perform:
 
-<table>
+<table>![Untitled-1](https://user-images.githubusercontent.com/97154178/236248169-47f4d609-eb58-44a2-9cb9-d65edf4db362.gif)
+![IMG_20230206_132227_710](https://user-images.githubusercontent.com/97154178/236248197-f337b83d-a308-4407-938d-4c532627a298.jpg)
+![IMG_20230122_133106_552](https://user-images.githubusercontent.com/97154178/236248203-fc940986-4279-470b-9eb9-9c8ec6ea040a.jpg)
+![20220508_223118](https://user-images.githubusercontent.com/97154178/236248210-6bfc6bdf-70d2-4b6e-9986-13d663a4daad.jpg)
+
+
+https://user-images.githubusercontent.com/97154178/236248214-9da7951f-edd9-445e-ad8c-56f7beb6f44b.mp4
+
+
   <thead>
     <tr>
       <th>GitLab role</th>
