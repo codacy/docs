@@ -1,23 +1,13 @@
-# Adjusting quality settings
+# Adjusting quality gates
 
-The **Quality settings** allow you to configure quality gates for your pull requests and commits, and define quality goals that help you monitor the progress of the code quality in your repository dashboard.
-
-To access the quality settings, open your repository **Settings**, tab **Quality Settings**:
-
-![Quality settings](images/quality-settings.png)
-
-The following sections explain the settings in detail.
-
-## Gates
-
-These settings configure when Codacy reports pull requests and commits as not up to standards.
+Adjust the **quality gates** to configure when Codacy reports your pull requests and commits as not up to standards.
 
 Depending on the result of applying the quality gate rules, Codacy updates the color of the metrics on the [pull request or commit quality overview](../repositories/pull-requests.md#quality-overview) and reports the corresponding pull request status on your Git provider, if enabled.
 
 !!! note
     [Integrate Codacy with your Git workflow](../getting-started/integrating-codacy-with-your-git-workflow.md) to report the pull request status to your Git provider and optionally block merging pull requests that aren't up to standards.
 
-The following screenshot displays the default configuration values:
+To access the quality gates, open your repository **Settings**, tab **Gates**. The following screenshot displays the default configuration values:
 
 ![Quality gates](images/quality-settings-gates.png)
 
@@ -33,31 +23,8 @@ The following screenshot displays the default configuration values:
 
         To ensure that the changes in each pull request have a minimum level of coverage, use the gate **Diff coverage is under** instead.
 
-!!! note
-    Learn how Codacy calculates the code quality metrics in more detail:
-
-    -   [Which code quality metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
-    -   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
-
-## Goals
-
-These settings configure the quality goals for your repository, and which files Codacy considers complex or duplicated.
-
-Codacy displays the quality goals as dashed lines on the [quality evolution chart](../repositories/repository-dashboard.md#quality-evolution-chart) to help you monitor the progress and overall quality status of your repository.
-
-The following screenshot displays the default configuration values:
-
-![Quality settings for the repository](images/quality-settings-goals.png)
-
--   **Issues are over:** Defines the threshold displayed on the tab **Issues** of the quality evolution chart.
--   **Complexity of files is over:** Defines the threshold displayed on the tab **Complexity** of the quality evolution chart.
--   **File is complex when over:** A file is considered complex when its complexity is over this value.
--   **Duplication of files is over:** Defines the threshold displayed on the tab **Duplication** of the quality evolution chart.
--   **File is duplicate when over:** A file is considered duplicated when it has more clones than this value.
--   **Coverage is under:** Defines the threshold displayed on the tab **Coverage** of the quality evolution chart.
-
 ## See also
 
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
 -   [Integrating Codacy with your Git workflow](../getting-started/integrating-codacy-with-your-git-workflow.md)
--   [Diff coverage: <span class="skip-vale">we have</span> a new metric and quality gate rule for PRs](https://blog.codacy.com/diff-coverage/)

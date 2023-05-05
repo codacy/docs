@@ -7,7 +7,7 @@ description: Configure the static analysis tools and code patterns that Codacy u
 By default, Codacy uses a subset of the supported static analysis tools and code patterns to analyze your repositories. These default settings result from community feedback or existing coding standards. However, you can adapt the default settings to your scenario by configuring the tools and code patterns that Codacy uses to analyze your repository.
 
 !!! note
-    If your repository is following an [organization coding standard](../organizations/using-a-coding-standard.md), changes made to any tool or code pattern cause the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.
+    If your repository is following an [organization coding standard](../organizations/using-coding-standards.md), changes made to any tool or code pattern cause the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.
 
 To configure the tools and code patterns for your repository:
 
@@ -58,7 +58,7 @@ Importing tool and code pattern configurations from another repository can help 
 For example, when adding a new repository on Codacy you can copy the tool and code pattern configurations from an existing repository that's already configured, and then tweak and adapt the settings for your new repository.
 
 !!! tip
-    To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, [use an organization coding standard](../organizations/using-a-coding-standard.md) instead.
+    To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, [use an organization coding standard](../organizations/using-coding-standards.md) instead.
 
     Alternatively, you can also copy the tool and code pattern configurations [from one repository to multiple target repositories](../organizations/copying-code-patterns-between-repositories.md).
 
@@ -239,7 +239,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>Pylint</td>
     <td>Python</td>
     <td><code>pylintrc</code>, <code>.pylintrc</code></td>
-    <td><a href="https://github.com/codacy/codacy-pylint/blob/master/requirements.txt">Plugins</a></td>
+    <td><a href="https://github.com/codacy/codacy-pylint-python3/blob/master/requirements.txt">Plugins</a></td>
   </tr>
   <tr>
     <td>remark-lint</td>
@@ -347,6 +347,6 @@ The table below lists the configuration file names that Codacy detects and suppo
 
 ## See also
 
--   [Applying a coding standard across multiple repositories](../organizations/using-a-coding-standard.md)
+-   [Applying a coding standard across multiple repositories](../organizations/using-coding-standards.md)
 -   [Copying code patterns between repositories](../organizations/copying-code-patterns-between-repositories.md)
 -   [How to implement Google JavaScript style guide with Codacy](https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/)

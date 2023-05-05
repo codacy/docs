@@ -30,7 +30,7 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    version: "10.0.0"
+    version: "11.0.0"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
@@ -85,7 +85,8 @@ plugins:
     - git-revision-date-localized
     # Include content from other Markdown files
     # https://github.com/mondeja/mkdocs-include-markdown-plugin
-    - include-markdown
+    - include-markdown:
+          comments: false
     # Allow using variables, macros, and filters
     # https://github.com/fralau/mkdocs_macros_plugin
     - macros:
@@ -265,8 +266,8 @@ plugins:
               "hc/en-us/articles/360008254833-Run-local-analysis.md": "repositories-configure/local-analysis/client-side-tools.md"
               "hc/en-us/articles/360008254833-Run-local-analysis-before-creating-a-commit.md": "repositories-configure/local-analysis/client-side-tools.md"
               "hc/en-us/articles/360008254833-Run-local-analysis-and-Push-results.md": "repositories-configure/local-analysis/client-side-tools.md"
-              "hc/en-us/articles/360009164573.md": "repositories-configure/adjusting-quality-settings.md"
-              "hc/en-us/articles/360009164573-Quality-Settings.md": "repositories-configure/adjusting-quality-settings.md"
+              "hc/en-us/articles/360009164573.md": "repositories-configure/adjusting-quality-gates.md"
+              "hc/en-us/articles/360009164573-Quality-Settings.md": "repositories-configure/adjusting-quality-gates.md"
               "hc/en-us/articles/360009180134.md": "repositories/issues.md"
               "hc/en-us/articles/360009180134-Issues-View.md": "repositories/issues.md"
               "hc/en-us/articles/360009180134-The-Issues-View.md": "repositories/issues.md"
@@ -505,7 +506,7 @@ plugins:
               "organizations/how-to-configure-which-users-can-ignore-issues.md": "organizations/roles-and-permissions-for-organizations.md"
               "repositories/what-are-the-different-grades-and-how-are-they-calculated.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
               "repositories/managing-branches.md": "repositories-configure/managing-branches.md"
-              "repositories/quality-settings.md": "repositories-configure/adjusting-quality-settings.md"
+              "repositories/quality-settings.md": "repositories-configure/adjusting-quality-gates.md"
               "repositories/removing-your-repository.md": "repositories-configure/removing-your-repository.md"
               "repositories/post-commit-hooks.md": "repositories-configure/integrations/post-commit-hooks.md"
               "faq/general/which-version-control-systems-do-you-support.md": "faq/general/which-platforms-and-technologies-does-codacy-support.md"
@@ -533,7 +534,7 @@ plugins:
               "faq/troubleshooting/why-is-my-file-missing.md": "faq/troubleshooting/why-is-my-file-over-150-kb-missing.md"
               "getting-started/getting-started-with-codacy.md": "getting-started/codacy-quickstart.md"
               "repositories-configure/code-patterns.md": "repositories-configure/configuring-code-patterns.md"
-              "repositories-configure/quality-settings.md": "repositories-configure/adjusting-quality-settings.md"
+              "repositories-configure/quality-settings.md": "repositories-configure/adjusting-quality-gates.md"
               "faq/code-analysis/skipping-an-analysis.md": "faq/code-analysis/how-to-skip-an-analysis.md"
               "faq/code-analysis/do-you-check-for-dependencies.md": "faq/code-analysis/does-codacy-check-for-dependencies.md"
               "faq/code-analysis/how-to-configure-php-codesniffer-code-standards.md": "faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md"
@@ -555,6 +556,8 @@ plugins:
               "related-tools/local-analysis/running-local-analysis.md": "repositories-configure/local-analysis/client-side-tools.md"
               "related-tools/local-analysis/running-spotbugs.md": "repositories-configure/local-analysis/running-spotbugs.md"
               "repositories-configure/local-analysis/running-local-analysis.md": "repositories-configure/local-analysis/client-side-tools.md"
+              "organizations/using-a-coding-standard.md": "organizations/using-coding-standards.md"
+              "repositories-configure/adjusting-quality-settings.md": "repositories-configure/adjusting-quality-gates.md"
 
 nav:
     - Documentation home: "index.md"
@@ -585,7 +588,8 @@ nav:
                 - repositories-configure/integrations/post-commit-hooks.md
           - repositories-configure/ignoring-files.md
           - repositories-configure/file-extensions.md
-          - repositories-configure/adjusting-quality-settings.md
+          - repositories-configure/adjusting-quality-gates.md
+          - repositories-configure/adjusting-quality-goals.md
           - Setting up code coverage:
                 - coverage-reporter/index.md
                 - coverage-reporter/alternative-ways-of-running-coverage-reporter.md
@@ -603,7 +607,7 @@ nav:
           - organizations/what-are-organizations.md
           - organizations/organization-overview.md
           - organizations/managing-repositories.md
-          - organizations/using-a-coding-standard.md
+          - organizations/using-coding-standards.md
           - organizations/copying-code-patterns-between-repositories.md
           - organizations/managing-people.md
           - organizations/roles-and-permissions-for-organizations.md
@@ -660,6 +664,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2023:
+                      - release-notes/cloud/cloud-2023-03.md
                       - release-notes/cloud/cloud-2023-02.md
                       - release-notes/cloud/cloud-2023-01.md
                 - 2022:
@@ -707,6 +712,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v11:
+                      - release-notes/self-hosted/self-hosted-v11.0.0.md
                 - v10:
                       - release-notes/self-hosted/self-hosted-v10.0.0.md
                 - v9:
