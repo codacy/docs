@@ -28,13 +28,13 @@ If you remove the integration, you can enable it again as follows:
 
 To configure the GitHub integration, open your repository **Settings**, tab **Integrations**.
 
+Depending on the options that you enable, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests.
+
 {%
     include-markdown "../../assets/includes/default-git-provider-settings-tip.md"
     start="<!--default-settings-apply-all-start-->"
     end="<!--default-settings-apply-all-end-->"
 %}
-
-Depending on the options that you enable, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests:
 
 ### Status checks
 
