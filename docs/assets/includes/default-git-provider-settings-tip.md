@@ -5,5 +5,5 @@
 
 <!--default-settings-apply-all-start-->
 !!! tip
-    You can [apply the default Git provider integration settings to all repositories](../../organizations/configuring-default-git-provider-integration-settings.md#apply-all) to ensure that all your repositories have the same settings.
+    You can [apply the default Git provider integration settings to all repositories](../../organizations/configuring-default-git-provider-integration-settings.md#apply-all) to ensure that your repositories all share the same settings.
 <!--default-settings-apply-all-end-->
