@@ -10,9 +10,7 @@ The organization-level Git provider integration settings define the defaults tha
 
 ## Applying default settings to all repositories {: id="apply-all"}
 
-To ensure that all your repositories are configured with the default Git provider integrating settings defined for your organization, apply these settings all repositories.
-
-To apply the default settings to all repositories, click the button **Apply default to all repositories**.
+To ensure that all your repositories are configured with the default Git provider integrating settings defined for your organization, click the button **Apply default to all repositories**.
 
 ![Apply default settings to all repositories](images/default-git-provider-settings-apply-all.png)<!--TODO PLUTO-550 Update screenshot-->
 
