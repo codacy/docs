@@ -609,6 +609,7 @@ nav:
           - organizations/managing-repositories.md
           - organizations/using-coding-standards.md
           - organizations/copying-code-patterns-between-repositories.md
+          - organizations/configuring-default-git-provider-integration-settings.md
           - organizations/managing-people.md
           - organizations/roles-and-permissions-for-organizations.md
           - organizations/changing-your-plan-and-billing.md
@@ -664,6 +665,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2023:
+                      - release-notes/cloud/cloud-2023-04.md
                       - release-notes/cloud/cloud-2023-03.md
                       - release-notes/cloud/cloud-2023-02.md
                       - release-notes/cloud/cloud-2023-01.md
