@@ -44,6 +44,8 @@ Follow the instructions for [GitHub](../repositories-configure/integrations/gith
 
 ![Enabling your Git provider integration](../repositories-configure/integrations/images/github-integration.png)
 
+{% include-markdown "../assets/includes/default-git-provider-settings-tip.md" %}
+
 ## 3. Blocking merging pull requests (optional) {: id="blocking-pull-requests"}
 
 Once you've tested out Codacy for a while and you're happy with the level of feedback provided, you can decide to enforce the quality gates and use Codacy to block merging pull requests on your Git provider. This is the best way to protect your code from unwelcome changes and fully integrates code quality and coverage analysis into your development pipeline.
