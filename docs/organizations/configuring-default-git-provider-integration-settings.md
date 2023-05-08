@@ -6,7 +6,7 @@ To configure these default settings, go to the Git provider integration page for
 
 ![Default Git provider integration settings](images/default-git-provider-settings.png)<!--TODO PLUTO-550 Update screenshot-->
 
-The organization-level Git provider integration settings define the defaults that Codacy applies to new repositories. You can then [apply these setting to all your repositories](#apply-all) already added to Codacy, or customize the settings for each individual repository, which depend on your Git provider, [GitHub](../repositories-configure/integrations/github-integration.md), [GitLab](../repositories-configure/integrations/gitlab-integration.md) or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md).
+The organization-level Git provider integration settings define the defaults that Codacy applies to new repositories. You can then customize the settings for each individual repository, which depend on your Git provider, [GitHub](../repositories-configure/integrations/github-integration.md), [GitLab](../repositories-configure/integrations/gitlab-integration.md) or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md).
 
 ## Applying default settings to all repositories {: id="apply-all"}
 
