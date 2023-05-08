@@ -361,6 +361,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.codacy.com/organizations/configuring-default-git-provider-integration-settings/</loc>
+         <lastmod>2023-05-08</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.codacy.com/organizations/copying-code-patterns-between-repositories/</loc>
          <lastmod>2023-05-08</lastmod>
          <changefreq>daily</changefreq>
