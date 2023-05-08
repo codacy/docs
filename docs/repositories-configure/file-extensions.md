@@ -14,7 +14,6 @@ If your repository has source files with unrecognized extensions, you can config
 
 1.  Click **Save** to update your file extension settings.
 
-    <!--TODO Check if https://codacy.atlassian.mknet/browse/PLUTO-466 is done-->
     The updated settings will be used on the next analysis, but you can click **reanalyze the latest commit of your branches now** on the notification that appears at the bottom of the page to trigger an analysis immediately.
 
     ![Analyze now](images/file-extensions-analyze.png)
