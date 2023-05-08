@@ -44,7 +44,11 @@ Follow the instructions for [GitHub](../repositories-configure/integrations/gith
 
 ![Enabling your Git provider integration](../repositories-configure/integrations/images/github-integration.png)
 
-{% include-markdown "../assets/includes/default-git-provider-settings-tip.md" %}
+{%
+    include-markdown "../assets/includes/default-git-provider-settings-tip.md"
+    start="<!--default-settings-start-->"
+    end="<!--default-settings-end-->"
+%}
 
 ## 3. Blocking merging pull requests (optional) {: id="blocking-pull-requests"}
 

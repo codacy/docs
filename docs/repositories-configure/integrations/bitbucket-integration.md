@@ -30,7 +30,11 @@ If you remove the integration, you can enable it again as follows:
 
 To configure the Bitbucket integration, open your repository **Settings**, tab **Integrations**.
 
-<!--TODO PLUTO-550 Add tip-->
+{%
+    include-markdown "../../assets/includes/default-git-provider-settings-tip.md"
+    start="<!--default-settings-apply-all-start-->"
+    end="<!--default-settings-apply-all-end-->"
+%}
 
 Depending on the options that you enable, Codacy will automatically update pull requests on Bitbucket with extra information when accepting pull requests:
 
