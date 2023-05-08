@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to use the Codacy Coverage Reporter to upload coverage data in advanced scenarios such as when running parallel tests, using monorepos, or testing source code in multiple or unsupported languages.">
       
       
-        <meta http-equiv="last-modified" content="2023-02-23 14:21:05">
+        <meta http-equiv="last-modified" content="2023-05-08 10:36:25">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/uploading-coverage-in-advanced-scenarios/">
@@ -3739,7 +3739,7 @@ bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </s
 <div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>-l<span class="w"> </span>Kotlin<span class="w"> </span>--force-language<span class="w"> </span>-r<span class="w"> </span>&lt;coverage<span class="w"> </span>report<span class="w"> </span>file<span class="w"> </span>name&gt;
 </code></pre></div>
-<p>See the <a href="https://github.com/codacy/codacy-plugins-api/blob/master/src/main/scala/com/codacy/plugins/api/languages/Language.scala#L41">list of languages</a> that you can specify using the flag <code>-l</code>.</p>
+<p>See the <a href="https://github.com/codacy/codacy-plugins-api/blob/master/codacy-plugins-api/src/main/scala/com/codacy/plugins/api/languages/Language.scala#L41">list of languages</a> that you can specify using the flag <code>-l</code>.</p>
               
               
                 
@@ -3896,7 +3896,7 @@ bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </s
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 23, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2023</span>
     
   </small>
 </div>
