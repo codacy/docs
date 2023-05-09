@@ -30,7 +30,7 @@ Each of these areas displays a count of matching items and a **Review** button t
 
 ## Item list
 
-The Security and Risk Management item list displays a list of items, filtered by status and ordered by days to deadline, with overdue items first, followed by items closest to the deadline.
+The Security and Risk Management item list displays a list of items, filtered by status and sorted by due date ascending.
 
 To access the item list, access the [dashboard](#dashboard) and click the **Review** button under the area of interest, based on the desired filtering.
 
