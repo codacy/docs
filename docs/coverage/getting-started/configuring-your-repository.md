@@ -13,16 +13,9 @@ You can optionally add coverage reports to detail how much of your code is cover
 
 To configure your repository, follow these steps:
 
-1.  [Ignoring files](#ignoring-files)
 1.  [Adding coverage reports](#adding-coverage) (optional)
 
-## 1. Ignoring files {: id="ignoring-files"}
-
-[Ignore any files and directories](../../repositories-configure/ignoring-files.md) that aren't relevant for the Codacy analysis, such as generated code or any third-party libraries included in your repositories.
-
-![Ignoring files](../../repositories-configure/images/ignored-files.png)
-
-## 2. Adding coverage to your repository (optional) {: id="adding-coverage"}
+## 1. Adding coverage to your repository (optional) {: id="adding-coverage"}
 
 If you want to use code coverage to block merging pull requests that don't meet your quality standards, make sure that you [add coverage to your repository](../../coverage-reporter/index.md).
 
