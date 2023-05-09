@@ -47,16 +47,14 @@ To start adding your repositories, select one of the organizations.
 
 ## 3. Adding repositories {: id="adding-repositories"}
 
-Next, add the repositories that you wish to analyze. Codacy begins an initial analysis as soon as you add a repository and sets everything up to ensure your next commits on that repository are analyzed.<!--TODO Review-->
+Next, add the repositories that you wish to use on Codacy.
 
 !!! note
     You can only add repositories on Codacy if you have the [necessary permissions on your Git provider](../../organizations/roles-and-permissions-for-organizations.md).
 
 ![Adding repositories](../../organizations/images/repositories-add.png)
 
-Click the link **Go to repository** to see the [code quality overview of your repository](../repositories/repository-dashboard.md) as soon as the initial analysis is complete:
-
-![Repository dashboard](../repositories/images/repository-dashboard.png)
+Click the link **Go to repository** to start configuring your new repository on Codacy.
 
 ## 4. Adding coverage to your repository {: id="adding-coverage"}
 <!--TODO Review
@@ -73,7 +71,7 @@ It's important that you set up coverage beforehand because Codacy can only repor
 
 ## Next steps {: id="next-steps"}
 
-Once you're satisfied with your setup, [integrate Codacy with your Git workflow](integrating-codacy-with-your-git-workflow.md) to flag potential issues, block problematic pull requests, and display other useful suggestions directly on your Git provider.
+Once you're satisfied with your setup, [integrate Codacy with your Git workflow](integrating-codacy-with-your-git-workflow.md) to report the coverage metrics directly on your pull requests and block problematic pull requests.
 
 !!! tip
-    To showcase the current code quality grade and coverage, [add a Codacy badge to your repository](../../getting-started/adding-a-codacy-badge.md).
+    To showcase the current code coverage percentage, [add a Codacy badge to your repository](../../getting-started/adding-a-codacy-badge.md).
