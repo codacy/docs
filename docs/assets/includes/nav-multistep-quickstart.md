@@ -7,7 +7,7 @@
                     Adding your first repository
                 </p>
             {% else %}
-                <a href="/getting-started/codacy-quality-quickstart#adding-your-first-repository">
+                <a href="/getting-started/codacy-quickstart#adding-your-first-repository">
                     Adding your first repository
                 </a>
             {% endif %}
