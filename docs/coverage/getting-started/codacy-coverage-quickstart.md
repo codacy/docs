@@ -3,7 +3,7 @@ description: Set up Codacy Coverage to automatically analyze your code coverage 
 nav_step: 0
 ---
 
-# Codacy Coverage quickstart<!--TODO Remove? (5 min)-->
+# Codacy Coverage quickstart
 
 Codacy Coverage is [TBD]
 <!--TODO Review
