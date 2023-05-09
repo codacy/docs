@@ -57,15 +57,10 @@ Next, add the repositories that you wish to use on Codacy.
 Click the link **Go to repository** to start configuring your new repository on Codacy.
 
 ## 4. Adding coverage to your repository {: id="adding-coverage"}
-<!--TODO Review
-    Once you've added your first repository, it's important that you configure Codacy's analysis tools to match the use cases of your team, such as configuring any coding conventions and best practices that your team may already be following or that you want to promote. It's also critical to review the configurations to avoid reporting false positives or any other issues that don't bring value to your team, which can introduce unwanted delays to the development process.
 
-    You can optionally add coverage reports to detail how much of your code is covered by tests and unify your quality and coverage pipelines. You can generate coverage reports and upload them to Codacy using a range of options, such as CI/CD integration, CLI, Docker, GitHub action, and more.
--->
+[Set up coverage for your repository](../../coverage-reporter/index.md) to monitor how much of your code is covered by tests or block merging pull requests that don't meet your coverage standards.
 
-If you want to use code coverage to block merging pull requests that don't meet your quality standards, make sure that you [add coverage to your repository](../../coverage-reporter/index.md).
-
-It's important that you set up coverage beforehand because Codacy can only report the coverage status for pull requests after receiving reports for the last commits **on both the pull request branch and the target branch**.
+You can generate coverage reports and upload them to Codacy using a range of options, such as CI/CD integration, CLI, Docker, GitHub action, and more.
 
 ![Adding coverage to your repository](../../coverage-reporter/images/coverage-codacy-ui.png)
 
