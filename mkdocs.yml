@@ -570,7 +570,6 @@ nav:
           - getting-started/adding-a-codacy-badge.md
     - "[Coverage] Getting started":
           - coverage/getting-started/codacy-coverage-quickstart.md
-          - coverage/getting-started/configuring-your-repository.md
           - coverage/getting-started/integrating-codacy-with-your-git-workflow.md
     - Your repositories:
           - repositories/repository-dashboard.md
