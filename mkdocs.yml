@@ -568,6 +568,10 @@ nav:
           - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
           - getting-started/adding-a-codacy-badge.md
+    - "[Coverage] Getting started":
+          - coverage/getting-started/codacy-coverage-quickstart.md
+          - coverage/getting-started/configuring-your-repository.md
+          - coverage/getting-started/integrating-codacy-with-your-git-workflow.md
     - Your repositories:
           - repositories/repository-dashboard.md
           - repositories/commits.md
