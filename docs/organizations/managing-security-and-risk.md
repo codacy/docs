@@ -26,7 +26,7 @@ The dashboard includes five areas:
 
 Each of these areas displays a count of matching items and a **Review** button to access a filtered list displaying the matching items.
 
-![Security and Risk Management dashboard](images/placeholder.png)
+![Security and Risk Management dashboard](images/security-risk-management-dashboard.png)
 
 ## Item list
 
@@ -36,7 +36,7 @@ To access the item list, access the [dashboard](#dashboard) and click the **Revi
 
 To find out more about an item, click its **Details** column. This redirects you to a filtered view of the **Repository issues** page, showing only the item of interest.
 
-![Security and Risk Management item list](images/placeholder.png)
+![Security and Risk Management item list](images/security-risk-management-item-list.png)
 
 ## Opening and closing items
 
