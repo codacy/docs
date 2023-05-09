@@ -16,7 +16,7 @@ The Security and Risk Management dashboard provides a general overview of securi
 
 To access the dashboard, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
 
-![Security and Risk Management dashboard](images/security-risk-management-dashboard.png)
+![Security and Risk Management dashboard](images/security-risk-management-dashboard.png)<!-- TODO update -->
 
 The dashboard includes five areas:
 
@@ -36,7 +36,7 @@ To access the item list, access the [dashboard](#dashboard) and click the **Revi
 
 To find out more about an item, click its **Details** column. This redirects you to a filtered view of the **Repository issues** page, showing only the item of interest.
 
-![Security and Risk Management item list](images/security-risk-management-item-list.png)
+![Security and Risk Management item list](images/security-risk-management-item-list.png)<!-- TODO update -->
 
 ## Opening and closing items
 
