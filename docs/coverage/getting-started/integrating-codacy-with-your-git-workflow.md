@@ -1,5 +1,5 @@
 ---
-description: Integrate Codacy with your Git workflow to display analysis results and code coverage as status checks on your pull requests and optionally block merging pull requests.
+description: Integrate Codacy with your Git workflow to display code coverage metrics and status checks on your pull requests and optionally block merging pull requests.
 nav_step: 1
 ---
 
@@ -7,9 +7,9 @@ nav_step: 1
 
 <!--TODO {--% include-markdown "../assets/includes/nav-multistep-quickstart.md" %--}-->
 
-Once you've configured your repository to best match your use case, integrate Codacy with your Git workflow to display analysis results and code coverage as status checks on your pull requests.
+Once you've configured your repository to best match your use case, integrate Codacy with your Git workflow to display code coverage metrics and status checks on your pull requests.
 
-In particular, you can configure quality gates to block merging pull requests that don't meet the quality standards of your team. This ensures the quality of the changes to your codebase, preventing the introduction of security issues and untested code.
+In particular, you can configure coverage gates to block merging pull requests that don't meet the coverage standards of your team. This ensures the code coverage of the changes to your codebase, preventing the introduction of untested code.
 
 To integrate Codacy with your Git workflow, follow these steps:
 
@@ -19,19 +19,14 @@ To integrate Codacy with your Git workflow, follow these steps:
 
 ## 1. Configuring the coverage gate rules {: id="configuring-gate"}
 
-[Review and adjust the coverage gates](../../repositories-configure/adjusting-quality-gates.md) of your repository to decide which pull requests should fail the Codacy quality gate.
+[Review and adjust the coverage gates](../../repositories-configure/adjusting-quality-gates.md) of your repository to decide which pull requests should fail the Codacy coverage gate.
 
 !!! tip
-    The default values of the quality gate rules are designed to help maintain the current code quality of your repository. In particular, the default value for the coverage rule might be demanding. Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of delaying or blocking the development progress.
+    The default value for the coverage gate rules are designed to help maintain the current code coverage of your repository and might be demanding. Depending on factors such as the current code coverage of your repository and the maturity of your team practices, consider the balance between implementing stricter coverage gates and the possibility of delaying or blocking the development progress.
 
-    Codacy generally recommends that on a first stage you configure rules that focus on stopping new critical issues from entering your code base, such as:
+    Codacy generally recommends that on a first stage you configure rules that focus on preventing considerable drops in code coverage.
 
-    -   Considerable drops in code coverage
-
-!!! important
-    **If you want to use code coverage** to block merging pull requests that don't meet your standards, make sure that you enable the rule **Diff coverage is under** or **Coverage variation is under**. This is required for Codacy to report the coverage status directly on your pull requests.
-
-![Adjusting the quality gates](../../repositories-configure/images/quality-settings-gates.png)
+![Adjusting the coverage gates](../../repositories-configure/images/quality-settings-gates.png)
 
 ## 2. Activating the Git provider integration {: id="git-provider-integration"}
 
@@ -46,13 +41,13 @@ Follow the instructions for [GitHub](../../repositories-configure/integrations/g
 
 ## 3. Blocking merging pull requests (optional) {: id="blocking-pull-requests"}
 
-Once you've tested out Codacy for a while and you're happy with the level of feedback provided, you can decide to enforce the quality gates and use Codacy to block merging pull requests on your Git provider. This is the best way to protect your code from unwelcome changes and fully integrates code quality and coverage analysis into your development pipeline.
+Once you've tested out Codacy for a while and you're happy with the level of feedback provided, you can decide to enforce the coverage gates and use Codacy to block merging pull requests on your Git provider. This is the best way to protect your code from unwelcome changes and fully integrates coverage analysis into your development pipeline.
 
 !!! important
     To eliminate any false positives that could inadvertently block the work of your team, it's important that before activating this feature you:
 
     -   Validate that Codacy is reporting the intended status on your pull requests
-    -   Double check you repository's [tool and code pattern settings](../../repositories-configure/configuring-code-patterns.md) and [quality gate settings](../../repositories-configure/adjusting-quality-gates.md)
+    -   Double check you repository's [coverage gate settings](../../repositories-configure/adjusting-quality-gates.md)
 
 Follow the instructions from your Git provider to block merging pull requests if they don't pass the Codacy status check:
 
