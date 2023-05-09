@@ -6,6 +6,8 @@ Coding standards help you ensure that Codacy analyzes multiple repositories with
 
 When you customize the tools or code patterns of a repository that follows a coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.
 
+Each repository can only follow one coding standard at a time. Applying a new coding standard to a repository unassigns any previously applied coding standard.
+
 !!! important
     Coding standards turn tools with configuration files on and off. Those tool configuration files, however, take precedence over the code patterns defined on the coding standard.
 
