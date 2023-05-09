@@ -17,7 +17,7 @@ By integrating with your Git provider, Codacy [TBD]
     -   **Coverage**: the percentage of lines of code covered by automated tests
 -->
 
-## Adding your first repository
+## [Coverage] Adding your first repository
 
 <!--TODO {--% include-markdown "../assets/includes/nav-multistep-quickstart.md" %--}-->
 
