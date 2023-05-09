@@ -602,6 +602,6 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 
 ## See also
 
--   [Codacy quickstart (5 min)](codacy-quality-quickstart.md)
+-   [Codacy quickstart (5 min)](codacy-quickstart.md)
 -   [Client-side tools](../repositories-configure/local-analysis/client-side-tools.md)
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
