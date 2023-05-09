@@ -16,8 +16,6 @@ The Security and Risk Management dashboard provides a general overview of securi
 
 To access the dashboard, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
 
-![Security and Risk Management dashboard](images/security-risk-management-dashboard.png)<!-- TODO update -->
-
 The dashboard includes five areas:
 
 -   **Total:** all open items
@@ -27,6 +25,8 @@ The dashboard includes five areas:
 -   **Closed late:** items closed after the deadline
 
 Each of these areas displays a count of matching items and a **Review** button to access a filtered list displaying the matching items.
+
+![Security and Risk Management dashboard](images/security-risk-management-dashboard.png)<!-- TODO update -->
 
 ## Item list
 
