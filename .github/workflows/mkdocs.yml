@@ -31,8 +31,6 @@ jobs:
         id: pull_request
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
         uses: jwalton/gh-find-current-pr@v1
-        with:
-          state: all
 
       - name: Build docs
         run: |
