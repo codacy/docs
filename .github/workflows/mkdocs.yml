@@ -27,9 +27,16 @@ jobs:
         run: |
           pip install -r requirements.txt
 
+      - name: Obtain pull request number
+        id: pull_request
+        if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
+        uses: jwalton/gh-find-current-pr@v1
+
       - name: Build docs
         run: |
           mkdocs -v build
+        env:
+          MKDOCS_PULL_REQUEST: ${{ steps.pull_request.outputs.pr }}
 
       - name: Upload meta descriptions artifact
         uses: actions/upload-artifact@v3
