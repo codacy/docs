@@ -1,5 +1,9 @@
 # Managing security and risk
 
+<!-- TODO remove this admonition before publishing. This is caused by https://codacy.atlassian.net/browse/HRZ-151 -->
+!!! important "This is a preview version of the Codacy documentation"
+    For the latest updates and improvements, [see the latest Cloud documentation](https://docs.codacy.com/) instead.
+
 !!! info "This is a beta feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
