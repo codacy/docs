@@ -37,9 +37,47 @@ window.addEventListener("DOMContentLoaded", function() {
         var deprecatedVersionsArray = new Array();
         var versionsArray = new Array();
 
+        // Used to decorate options with a sort order.
+        function decorateWithSortOrder(option) {
+            if(!option) {
+                return;
+            }
+
+            if(!(option.value && option.value.match))
+            {
+                option.__sortOrder = '0';
+                return;
+            }
+
+            // We isolate the version number, e.g. 1.1.0
+            var versionNumber = option.value.match(/[\d.]+/);
+
+            if(!versionNumber)
+            {
+                option.__sortOrder = '0';
+                return;
+            }
+
+            var versionNumberArray = versionNumber[0].split('.');
+
+            // Some versions only include major.minor, (e.g. ['1', '1']).
+            // This normalizes them to 3 numbers: ['1', '1', '0'].
+            while(versionNumberArray.length < 3)
+            {
+                versionNumberArray.push('0');
+            }
+
+            // https://stackoverflow.com/questions/40201533/sort-version-dotted-number-strings-in-javascript
+            option.__sortOrder = versionNumberArray.map(function (v) {
+                return +v + 10000;
+            }).join('.');
+        }
+
         options.forEach(function(i) {
             var option = new Option(i.text, i.value, void(0),
-                                    i.value === selected);       
+                                    i.value === selected);
+
+            decorateWithSortOrder(option);
 
             if(i.text.includes("Latest"))
             {
@@ -61,9 +99,9 @@ window.addEventListener("DOMContentLoaded", function() {
         // Used to order versions from latest to oldest
         function compare(a, b) {
             let comparison = 0;
-            if (a.value > b.value) {
+            if (a.__sortOrder > b.__sortOrder) {
                 comparison = -1;
-            } else if (a.value < b.value) {
+            } else if (a.__sortOrder < b.__sortOrder) {
                 comparison = 1;
             }
             return comparison;
