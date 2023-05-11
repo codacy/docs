@@ -3,9 +3,9 @@
 !!! info "This is a beta feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
-The **Security and Risk Management** feature helps you <span class="skip-vale">quickly</span> identify, track, and address security vulnerabilities by automatically opening time-bound, prioritized action items whenever Codacy detects Security issues in your organization repositories.
+The **Security and Risk Management** feature helps you <span class="skip-vale">quickly</span> identify, track, and address security vulnerabilities by automatically opening time-bound, prioritized action items whenever Codacy detects Security issues in your organization repositories or in your connected Jira Cloud instance.
 
-Under Security and Risk Management, you have the following pages to help you monitor your repositories:
+Under Security and Risk Management, you can find the following pages to help you monitor your security vulnerabilities:
 
 -   [Dashboard](#dashboard)
 -   [Item list](#item-list)
@@ -32,29 +32,85 @@ Each of these areas displays a count of matching items and a **Review** button t
 
 The Security and Risk Management item list displays a list of items, filtered by status and sorted by due date ascending.
 
-To access the item list, access the [dashboard](#dashboard) and click the **Review** button under the area of interest, based on the desired filtering.
+To access the item list, access the [dashboard](#dashboard) and click the **Review** button under an area of interest, based on the desired filtering.
 
-To find out more about an item, click its **Details** column. This redirects you to a filtered view of the **Repository issues** page, showing only the item of interest.
+To open the originating issue of an item, click the **Details** column of the item of interest.
 
 ![Security and Risk Management item list](images/security-risk-management-item-list.png)
 
+## Managing integrations
+
+Integrations let you detect security vulnerabilities across a number of platforms and display them all as security items on the unified item list.
+
+The following section explains how to integrate with each of the supported platforms.
+
+=== "Codacy"
+
+    The Codacy integration is active by default and can't be deactivated.
+
+=== "Jira Cloud"
+
+    To install the Jira Cloud integration:
+
+    1.  Open your organization **Security and Risk** page and click the **Configure** button. This opens the configuration page.
+
+    1.  On the right-hand side of the page, under the Integrations list, find the Jira entry and click the **Install** button. This redirects you to Atlassian's website.
+
+        ![Security and Risk Management Jira integration](images/security-risk-management-integration-jira.png)
+
+    1.  On Atlassian's website, authorize Codacy to access your Atlassian account. Once successful, you're redirected back to Codacy.
+
+        !!! note
+            Use a Jira account with admin permissions when authorizing Codacy. This lets Codacy access all issues.
+
+        Upon installation, Codacy automatically imports all Jira tickets that were created within the 90-day period preceding the integration and tagged with the label "security" and displays them on the item list, along with items from other sources.
+        
+        Jira-related items are then synchronized daily with the matching Jira issues throughout their lifecycle.
+
+    To uninstall the Jira integration:
+
+    1.  Open your organization **Security and Risk** page and click the button **Configure** to open the configuration page.
+
+    1.  Find the Jira entry under the Integrations area and click the **Options** button (identified by three dots), then select **Uninstall** and confirm.
+
 ## Opening and closing items
 
-!!! important
-    To automatically open and close items, Codacy must detect when the underlying Security issues are introduced and fixed. To make sure that Codacy detects the Security issues correctly:
+<!-- TODO Introductory paragraph with shared concepts
+There was an admonition here to explain why the dashboard may be empty and how to fix it. That admonition is now under the Codacy section below, so we need an introductory sentence here to point the user to that section.
 
-    -   [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.
-    -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
+- To find issues and automatically open and close items, Codacy must detect when the underlying issues are introduced and fixed.
+-->
+Codacy automatically opens a security item whenever one of the configured source platforms detects a security vulnerability:
 
-Codacy automatically opens a new item when it detects a new Security issue on the default branch of a repository:
+-   [Every new item is assigned a priority](#item-priorities-and-deadlines) based on the importance of the underlying vulnerability. Each priority also defines a deadline to fix the underlying vulnerability.
 
--   [Every new item is assigned a priority](#item-priorities-and-deadlines) based on the severity of the underlying issue. Each priority also defines a deadline to fix the underlying issue.
+-   [Every new item is assigned a status](#item-statuses) based on the number of days left to fix the underlying vulnerability. As deadlines are approached, met, or missed, items transition through different statuses.
 
--   [Every new item is assigned a status](#item-statuses) based on the number of days left before the deadline to fix the underlying issue. As deadlines are approached, met, or missed, items transition through different statuses.
+Codacy automatically closes an existing security item when the source platform stops detecting the associated security vulnerability.
 
-Codacy automatically closes an item when it stops detecting the underlying issue, when [the underlying issue is ignored](../repositories/issues.md#ignoring-and-managing-issues), or when the [tool that found the underlying issue is disabled](../repositories-configure/configuring-code-patterns.md).
+The following section details when Codacy opens and closes items for each supported platform.
 
-For example, Codacy automatically opens an item with Critical priority upon detecting a new Security issue of Critical severity on the default branch of a repository. If the Security issue is fixed before the deadline, the status of the item changes to Closed on time. If the issue isn't fixed before the deadline, the status of the item changes to Overdue.
+=== "Codacy"
+
+    -   Codacy automatically opens a new item when it detects a new Security issue on the default branch of a repository.
+
+    -   Codacy automatically closes an item when it stops detecting the underlying issue, when [the underlying issue is ignored](../repositories/issues.md#ignoring-and-managing-issues), or when [the tool that found the underlying issue is disabled](../repositories-configure/configuring-code-patterns.md).
+
+    !!! note
+        To make sure that Codacy detects Security issues correctly:
+
+        -   [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.
+        -   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
+        -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
+
+=== "Jira Cloud"
+
+    -   Codacy automatically opens a new item when it detects a new Jira issue with a "security" label.
+
+    -   Codacy automatically closes an item when it detects that the underlying Jira issue is marked as Closed.
+
+    !!! note
+        Codacy retrieves updates from Jira once a day. To make sure that Codacy detects Jira issues correctly, assign the "security" label when creating the issue or immediately after.
 
 ## Item statuses
 
@@ -96,16 +152,24 @@ The following table describes how item statuses map to deadlines:
 
 ## Item priorities and deadlines
 
-The following table defines item priorities and days to fix the underlying Codacy security issue, based on the severity of the issue:
+The following table defines item priorities and days to fix the underlying issue, based on the importance of the issue:
 
-| Security issue severity | Item priority | Days to close |
-|-------------------------|---------------|---------------|
-| Critical                | Critical      | 30            |
-| Medium                  | Medium        | 90            |
-| Minor                   | Low           | 120           |
+
+| Item priority | Days to close | Codacy Security issue severity | Jira security issue priority |
+|---------------|---------------|--------------------------------|------------------------------|
+| Critical      | 30            | Critical                       | Blocker                      |
+| High          | 60            | -                              | High                         |
+| Medium        | 90            | Medium                         | Medium                       |
+| Low           | 120           | Minor                          | Low and other                |
 
 ## Data retention
 
 Codacy retains open items indefinitely and closed items for one year.
 
-Deleting a repository deletes all open items belonging to that repository.
+=== "Codacy"
+
+    Deleting a repository deletes all open items belonging to that repository.
+
+=== "Jira Cloud"
+
+    Uninstalling the Jira integration removes any associated open items from the Security and Risk dashboard. Closed items are retained for one year.
