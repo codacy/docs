@@ -35,6 +35,8 @@ extra:
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
     support_email: "support@codacy.com"
+    # Add pull request preview banner
+    pull_request_preview: !ENV [MKDOCS_PULL_REQUEST, false]
     # Control search engine indexing and the visibility of features on Codacy Self-hosted documentation pages
     self_hosted: !ENV [MKDOCS_SELF_HOSTED, false]
 
@@ -609,6 +611,7 @@ nav:
           - organizations/managing-repositories.md
           - organizations/using-coding-standards.md
           - organizations/copying-code-patterns-between-repositories.md
+          - organizations/configuring-default-git-provider-integration-settings.md
           - organizations/managing-security-and-risk.md
           - organizations/managing-people.md
           - organizations/roles-and-permissions-for-organizations.md
@@ -665,6 +668,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2023:
+                      - release-notes/cloud/cloud-2023-04.md
                       - release-notes/cloud/cloud-2023-03.md
                       - release-notes/cloud/cloud-2023-02.md
                       - release-notes/cloud/cloud-2023-01.md

@@ -32,9 +32,9 @@ This area displays the information that identifies the commit (SHA hash, date, a
 
 This area displays the quality gate status and an overview of the code quality metrics for the {{ page.meta.page_name }}:
 
--   The quality gate status is either **Not up to standards** or **Up to standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
+-   The quality gate status is either **Failed quality gates** or **Passed quality gates** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
 
-    If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to standards**.
+    If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Passed quality gates**.
 
 -   The variation of the following code quality metrics introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %}:
 
@@ -125,7 +125,12 @@ The option **Show files without code quality changes** allows you to list all fi
 
 ## Diff tab
 
-The **Diff** tab displays the line differences in each file that was changed in the {{ page.meta.page_name }}.
+The **Diff** tab displays the differences in each file that was changed in the {{ page.meta.page_name }}. The background of the changed lines depends on the change:
+
+-   **Red**: Deleted line
+-   **Yellow**: Old version of a changed line with deleted characters highlighted in red
+-   **Green**: New version of a changed line with added characters highlighted in bright green
+-   **Bright green**: New line
 
 <!-- vale off -->
 ![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)
