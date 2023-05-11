@@ -1,9 +1,5 @@
 # Managing security and risk
 
-<!-- TODO remove this admonition before publishing. This is caused by https://codacy.atlassian.net/browse/HRZ-151 -->
-!!! important "This is a preview version of the Codacy documentation"
-    For the latest updates and improvements, [see the latest Cloud documentation](https://docs.codacy.com/) instead.
-
 !!! info "This is a beta feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
@@ -30,7 +26,7 @@ The dashboard includes five areas:
 
 Each of these areas displays a count of matching items and a **Review** button to access a filtered list displaying the matching items.
 
-![Security and Risk Management dashboard](images/security-risk-management-dashboard.png)<!-- TODO update -->
+![Security and Risk Management dashboard](images/security-risk-management-dashboard.png)
 
 ## Item list
 
@@ -40,7 +36,7 @@ To access the item list, access the [dashboard](#dashboard) and click the **Revi
 
 To find out more about an item, click its **Details** column. This redirects you to a filtered view of the **Repository issues** page, showing only the item of interest.
 
-![Security and Risk Management item list](images/security-risk-management-item-list.png)<!-- TODO update -->
+![Security and Risk Management item list](images/security-risk-management-item-list.png)
 
 ## Opening and closing items
 
