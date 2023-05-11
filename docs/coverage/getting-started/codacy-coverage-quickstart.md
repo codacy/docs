@@ -3,7 +3,7 @@ description: Set up Codacy Coverage to automatically analyze your code coverage 
 nav_step: 0
 ---
 
-# Codacy Coverage quickstart
+# [Coverage] Codacy Coverage quickstart
 
 Codacy Coverage is [TBD]
 <!--TODO Review
@@ -17,7 +17,7 @@ By integrating with your Git provider, Codacy [TBD]
     -   **Coverage**: the percentage of lines of code covered by automated tests
 -->
 
-## [Coverage] Adding your first repository
+## Adding your first repository
 
 <!--TODO {--% include-markdown "../assets/includes/nav-multistep-quickstart.md" %--}-->
 
