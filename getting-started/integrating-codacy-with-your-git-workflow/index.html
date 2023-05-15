@@ -11,7 +11,7 @@
         <meta name="description" content="Integrate Codacy with your Git workflow to display analysis results and code coverage as status checks on your pull requests and optionally block merging pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2023-05-08 09:16:34">
+        <meta http-equiv="last-modified" content="2023-05-15 10:27:29">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/integrating-codacy-with-your-git-workflow/">
@@ -3738,13 +3738,15 @@
 <p>Follow the instructions for <a href="../../repositories-configure/integrations/github-integration/#enabling">GitHub</a>, <a href="../../repositories-configure/integrations/gitlab-integration/#enabling">GitLab</a>, or <a href="../../repositories-configure/integrations/bitbucket-integration/#enabling">Bitbucket</a> depending on your Git provider, and make sure that you:</p>
 <ol>
 <li>Enable the Git provider integration</li>
-<li>Enable the option <strong>Status checks</strong> (GitHub) or <strong>Pull request status</strong> (GitLab and Bitbucket)</li>
-</ol>
-<p><img alt="Enabling your Git provider integration" src="../../repositories-configure/integrations/images/github-integration.png" /></p>
+<li>
+<p>Enable the option <strong>Status checks</strong> (GitHub) or <strong>Pull request status</strong> (GitLab and Bitbucket)</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>Configure the <a href="../../organizations/configuring-default-git-provider-integration-settings/">default Git provider integration settings</a> that Codacy applies to new repositories to help ensure that all new repositories have the same settings.</p>
 </div>
+</li>
+</ol>
+<p><img alt="Enabling your Git provider integration" src="../../repositories-configure/integrations/images/github-integration.png" /></p>
 <h2 id="blocking-pull-requests">3. Blocking merging pull requests (optional)<a class="headerlink" href="#blocking-pull-requests" title="Permanent link">#</a></h2>
 <p>Once you've tested out Codacy for a while and you're happy with the level of feedback provided, you can decide to enforce the quality gates and use Codacy to block merging pull requests on your Git provider. This is the best way to protect your code from unwelcome changes and fully integrates code quality and coverage analysis into your development pipeline.</p>
 <div class="admonition important">
@@ -3919,7 +3921,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2023</span>
     
   </small>
 </div>
