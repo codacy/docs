@@ -11,7 +11,7 @@
         <meta name="description" content="Adjust the quality gates to configure when Codacy reports your pull requests and commits as not up to standards.">
       
       
-        <meta http-equiv="last-modified" content="2023-04-21 15:10:54">
+        <meta http-equiv="last-modified" content="2023-05-16 09:25:41">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/adjusting-quality-gates/">
@@ -3674,7 +3674,6 @@
 <li><strong>New security issues are over:</strong> Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value.</li>
 <li><strong>Complexity is over:</strong> Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value.</li>
 <li><strong>Duplication is over:</strong> Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value.</li>
-<li><strong>Diff coverage is under:</strong> Pull requests are marked not up to standards if the diff coverage of the pull request is lower than the set value or <code>∅</code> (<a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#code-coverage">not applicable</a>). This rule is only available for pull requests.</li>
 <li>
 <p><strong>Coverage variation is under:</strong> Pull requests or commits are marked not up to standards if they introduce a variation to coverage lower than the set value.</p>
 <div class="admonition tip">
@@ -3682,6 +3681,9 @@
 <p><strong>Set this gate to -0.10% or lower.</strong> This will ensure that developers have a coverage drop margin so they aren't blocked <a href="../../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes/#example-pull-request-coverage-variation-is-negative-but-no-files-have-coverage-variation">while performing some types of code refactors</a></p>
 <p>To ensure that the changes in each pull request have a minimum level of coverage, use the gate <strong>Diff coverage is under</strong> instead.</p>
 </div>
+</li>
+<li>
+<p><strong>Diff coverage is under:</strong> Pull requests are marked not up to standards if the diff coverage of the pull request is lower than the set value or <code>∅</code> (<a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#code-coverage">not applicable</a>). This rule is only available for pull requests.</p>
 </li>
 </ul>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
@@ -3846,7 +3848,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 21, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 16, 2023</span>
     
   </small>
 </div>
