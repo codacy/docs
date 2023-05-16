@@ -42,9 +42,13 @@ Follow the instructions for [GitHub](../repositories-configure/integrations/gith
 1.  Enable the Git provider integration
 1.  Enable the option **Status checks** (GitHub) or **Pull request status** (GitLab and Bitbucket)
 
-![Enabling your Git provider integration](../repositories-configure/integrations/images/github-integration.png)
+    {%
+        include-markdown "../assets/includes/default-git-provider-settings-tip.md"
+        start="<!--default-settings-start-->"
+        end="<!--default-settings-end-->"
+    %}
 
-{% include-markdown "../assets/includes/default-git-provider-settings-tip.md" %}
+![Enabling your Git provider integration](../repositories-configure/integrations/images/github-integration.png)
 
 ## 3. Blocking merging pull requests (optional) {: id="blocking-pull-requests"}
 

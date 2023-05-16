@@ -6,7 +6,7 @@ Jinja2==3.1.1
 
 # Markdown extensions
 Pygments==2.15.1
-pymdown-extensions==9.11
+pymdown-extensions==10.0
 
 # MkDocs plugins
 mkdocs-exclude-search==0.6.5
@@ -15,6 +15,6 @@ mkdocs-git-revision-date-localized-plugin==1.2.0
 mkdocs-include-markdown-plugin==4.0.4
 mkdocs-macros-plugin==0.7.0
 mkdocs-meta-descriptions-plugin==2.2.0
-mkdocs-monorepo-plugin==1.0.4
+mkdocs-monorepo-plugin==1.0.5
 mkdocs-redirects==1.2.0
 mkdocs-rss-plugin==1.6.0
