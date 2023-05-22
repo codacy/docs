@@ -6,7 +6,7 @@ Jinja2==3.1.1
 
 # Markdown extensions
 Pygments==2.15.1
-pymdown-extensions==10.0
+pymdown-extensions==10.0.1
 
 # MkDocs plugins
 mkdocs-exclude-search==0.6.5
