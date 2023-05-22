@@ -32,7 +32,7 @@ This version of Codacy Self-hosted drops support for Kubernetes 1.19, 1.20, and 
 If you're using Kubernetes 1.19, 1.20, or 1.21, make sure that you upgrade your cluster before upgrading Codacy. For the current supported versions, see the [chart requirements page](https://docs.codacy.com/v11.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
 
 !!! important
-    **If you use MicroK8s to run Codacy Self-hosted please use version 1.19.\* only**, as we're investigating feedback from customers that had issues running Codacy Self-hosted using MicroK8s versions newer than 1.19.
+    **If you use MicroK8s to run Codacy Self-hosted please use version 1.19 only**, as we're investigating feedback from customers that had issues running Codacy Self-hosted using MicroK8s versions newer than 1.19.\*.
 
 ## Product enhancements
 
