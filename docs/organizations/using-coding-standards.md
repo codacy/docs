@@ -4,12 +4,16 @@ Create coding standards on your organization to define and apply shared tool and
 
 Coding standards help you ensure that Codacy analyzes multiple repositories with the same tool and code pattern configurations. For example, you can use a coding standard to ensure that a group of repositories follow the same security rules or coding conventions.
 
-Each repository can only follow one coding standard at a time. Applying a new coding standard to a repository <span class="skip-vale">unassigns</span> any previously applied coding standard.
+!!! note
+    Consider the following when using coding standards:
 
-When you customize the tools or code patterns of a repository that follows a coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.
+    -   Applying a coding standard to a repository only affects the configurations of the tools included in the coding standard, while the remaining tool and code pattern configurations remain unchanged.
 
-!!! important
-    Coding standards turn tools with configuration files on and off. Those tool configuration files, however, take precedence over the code patterns defined on the coding standard.
+    -   Each repository can only follow one coding standard at a time. Applying a new coding standard to a repository <span class="skip-vale">unassigns</span> any previously applied coding standard.
+
+    -   When you customize the tools or code patterns of a repository that follows a coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.
+
+    -   Coding standards turn tools with configuration files on and off. Those tool configuration files, however, take precedence over the code patterns defined on the coding standard.
 
 ## Creating a coding standard {: id="creating"}
 
