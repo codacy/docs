@@ -39,7 +39,7 @@ To upgrade PostgreSQL:
 
 ## Product enhancements
 
--   Added support for [Kubernetes 1.22.\* and MicroK8s 1.22.\*](https://docs.codacy.com/v10.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-992)
+-   Added support for [Kubernetes 1.22.\*](https://docs.codacy.com/v10.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-992)
 -   You can now configure your Codacy GitHub App to use [expiring user access tokens](https://docs.github.com/en/developers/apps/building-github-apps/refreshing-user-to-server-access-tokens). (PLUTO-133)
 -   Improved the performance of applying coding standards to repositories to avoid timeouts when updating hundreds of repositories. (PLUTO-83)
 -   The **Status** column of the [coverage reports list](https://docs.codacy.com/v10.0/coverage-reporter/#validating-coverage) now includes direct links to troubleshooting instructions when there are coverage errors. (IO-155)
