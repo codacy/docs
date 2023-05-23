@@ -21,7 +21,7 @@ The next sections describe each area of the pull request detail page.
 
 This area displays the information that identifies the pull request (head and base branches, date, and name), as well as:
 
--   The analysis status and a [button to reanalyze the last commit on the pull request branch](../faq/repositories/how-do-i-reanalyze-my-repository.md)
+-   The analysis status and a [button to reanalyze the last commit on the pull request branch](../faq/repositories/how-do-i-reanalyze-my-repository.md) (enabled when the committer [is part of your organization](../organizations/managing-people.md))
 -   A link to the analysis logs
 -   A link to the pull request on your Git provider
 
