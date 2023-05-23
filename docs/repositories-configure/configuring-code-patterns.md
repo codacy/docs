@@ -24,7 +24,7 @@ To configure the tools and code patterns for your repository:
 1.  Select each tool to configure and toggle the corresponding code patterns using the checkbox next to each pattern.
 
     !!! tip
-        Codacy displays the tag **New**  for one month next to the name of any recently added code patterns.
+        Codacy displays the tag **New** for one month next to the name of any recently added code patterns.
 
     ![Configuring code patterns](images/code-patterns-configure.png)
 
