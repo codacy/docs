@@ -11,7 +11,7 @@
         <meta name="description" content="Release notes for Codacy Cloud April 2023.">
       
       
-        <meta http-equiv="last-modified" content="2023-05-05 10:21:06">
+        <meta http-equiv="last-modified" content="2023-05-23 16:13:04">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2023-04/">
@@ -3690,7 +3690,7 @@
 <h2 id="bug-fixes">Bug fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">#</a></h2>
 <ul>
 <li>It's now possible to see and change the repository settings for repositories without commits or before Codacy finishes performing the first analysis. (TS-320)</li>
-<li>Now, the re-analysis button is disabled unless the current user is either the committer and a member of the organization, or a repository admin. (PLUTO-49)</li>
+<li>The button to reanalyze commits or pull requests is now disabled if the committer isn't part of the organization. (PLUTO-49)</li>
 <li>Improved the performance of the Code patterns page while listing many code patterns. (IO-479)</li>
 <li>Now, the link "See all files" on the <strong>Coverage</strong> area of the Repository Dashboard navigates to the Files page on the currently selected branch. (CY-6823)</li>
 <li>Fixed an issue that could cause Codacy to report the diff coverage metric as <code>∅</code> (not applicable) even though there weren't any uploaded coverage reports. (COV-152)</li>
@@ -3902,7 +3902,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 5, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 23, 2023</span>
     
   </small>
 </div>
