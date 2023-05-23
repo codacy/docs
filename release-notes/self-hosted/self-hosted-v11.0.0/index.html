@@ -11,7 +11,7 @@
         <meta name="description" content="Release notes for Codacy Self-hosted v11.0.0.">
       
       
-        <meta http-equiv="last-modified" content="2023-04-21 14:44:47">
+        <meta http-equiv="last-modified" content="2023-05-23 17:03:04">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/self-hosted/self-hosted-v11.0.0/">
@@ -3717,9 +3717,13 @@
 <h2 id="breaking-changes">Breaking changes<a class="headerlink" href="#breaking-changes" title="Permanent link">#</a></h2>
 <p>This version of Codacy Self-hosted drops support for Kubernetes 1.19, 1.20, and 1.21. These are old versions that <a href="https://kubernetes.io/releases/patch-releases/#non-active-branch-history">already reached EOL</a>.</p>
 <p>If you're using Kubernetes 1.19, 1.20, or 1.21, make sure that you upgrade your cluster before upgrading Codacy. For the current supported versions, see the <a href="https://docs.codacy.com/v11.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup">chart requirements page</a>.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>If you use MicroK8s to run Codacy Self-hosted please use version 1.19 only</strong>, as we're investigating feedback from customers that had issues running Codacy Self-hosted using MicroK8s versions newer than 1.19.*.</p>
+</div>
 <h2 id="product-enhancements">Product enhancements<a class="headerlink" href="#product-enhancements" title="Permanent link">#</a></h2>
 <ul>
-<li>Added support for <a href="https://docs.codacy.com/v11.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup">Kubernetes 1.23.* and MicroK8s 1.23.*</a> (REL-1151)</li>
+<li>Added support for <a href="https://docs.codacy.com/v11.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup">Kubernetes 1.23.*</a> (REL-1151)</li>
 </ul>
 <h2 id="bug-fixes">Bug fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">#</a></h2>
 <ul>
@@ -3934,7 +3938,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 21, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 23, 2023</span>
     
   </small>
 </div>
