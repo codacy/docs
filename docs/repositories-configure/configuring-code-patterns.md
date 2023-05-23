@@ -7,7 +7,9 @@ description: Configure the static analysis tools and code patterns that Codacy u
 By default, Codacy uses a subset of the supported static analysis tools and code patterns to analyze your repositories. These default settings result from community feedback or existing coding standards. However, you can adapt the default settings to your scenario by configuring the tools and code patterns that Codacy uses to analyze your repository.
 
 !!! note
-    If your repository is following an [organization coding standard](../organizations/using-coding-standards.md), changes made to any tool or code pattern cause the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.
+    -   Organization owners can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
+
+    -   If your repository is following an [organization coding standard](../organizations/using-coding-standards.md), changes made to any tool or code pattern cause the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.
 
 To configure the tools and code patterns for your repository:
 
@@ -21,6 +23,9 @@ To configure the tools and code patterns for your repository:
 
 1.  Select each tool to configure and toggle the corresponding code patterns using the checkbox next to each pattern.
 
+    !!! tip
+        Codacy displays the tag **New**  for one month next to the name of any recently added code patterns.
+
     ![Configuring code patterns](images/code-patterns-configure.png)
 
     To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues.
@@ -28,9 +33,6 @@ To configure the tools and code patterns for your repository:
     ![Code pattern details](images/code-patterns-detail.png)
 
 1.  Optionally, [manually reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.
-
-!!! tip
-    Organization owners can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
 
 ## Pattern filters
 
