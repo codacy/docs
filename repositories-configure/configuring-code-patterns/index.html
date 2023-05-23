@@ -11,7 +11,7 @@
         <meta name="description" content="Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results are adapted to your scenario.">
       
       
-        <meta http-equiv="last-modified" content="2023-04-13 10:14:44">
+        <meta http-equiv="last-modified" content="2023-05-23 14:12:17">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/configuring-code-patterns/">
@@ -3685,7 +3685,14 @@
 <p>By default, Codacy uses a subset of the supported static analysis tools and code patterns to analyze your repositories. These default settings result from community feedback or existing coding standards. However, you can adapt the default settings to your scenario by configuring the tools and code patterns that Codacy uses to analyze your repository.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
+<ul>
+<li>
+<p>Organization owners can <a href="../../organizations/roles-and-permissions-for-organizations/#change-analysis-configuration">change who is allowed to configure code patterns</a>.</p>
+</li>
+<li>
 <p>If your repository is following an <a href="../../organizations/using-coding-standards/">organization coding standard</a>, changes made to any tool or code pattern cause the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.</p>
+</li>
+</ul>
 </div>
 <p>To configure the tools and code patterns for your repository:</p>
 <ol>
@@ -3699,6 +3706,10 @@
 </li>
 <li>
 <p>Select each tool to configure and toggle the corresponding code patterns using the checkbox next to each pattern.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Codacy displays the tag <strong>New</strong>  for one month next to the name of any recently added code patterns.</p>
+</div>
 <p><img alt="Configuring code patterns" src="../images/code-patterns-configure.png" /></p>
 <p>To see an explanation of the issues that a pattern detects and how to fix them, click <strong>Show details</strong>. Some patterns also allow you to configure the rules for detecting issues.</p>
 <p><img alt="Code pattern details" src="../images/code-patterns-detail.png" /></p>
@@ -3707,10 +3718,6 @@
 <p>Optionally, <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">manually reanalyze your repository</a> to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.</p>
 </li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Organization owners can <a href="../../organizations/roles-and-permissions-for-organizations/#change-analysis-configuration">change who is allowed to configure code patterns</a>.</p>
-</div>
 <h2 id="pattern-filters">Pattern filters<a class="headerlink" href="#pattern-filters" title="Permanent link">#</a></h2>
 <p>To make it easier to find relevant code patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), category, or status:</p>
 <p><img alt="Filtering code patterns" src="../images/code-patterns-filter.png" /></p>
@@ -4187,7 +4194,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 13, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 23, 2023</span>
     
   </small>
 </div>
