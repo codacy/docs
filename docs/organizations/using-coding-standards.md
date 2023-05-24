@@ -102,10 +102,6 @@ To edit an existing coding standard or change the repositories that follow that 
 
     Codacy will start using the updated coding standard on the next analysis of each selected repository.
 
-<!--TODO Refactor-->
-!!! tip
-    To ensure that all new repositories automatically follow a coding standard, [set the coding standard as default](#set-default).
-
 ## Deleting a coding standard {: id="deleting"}
 
 To delete a coding standard:
