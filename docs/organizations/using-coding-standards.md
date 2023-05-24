@@ -2,19 +2,25 @@
 
 Create coding standards on your organization to define and apply shared tool and code pattern configurations consistently across your repositories. You can also apply a coding standard to new repositories automatically by [defining it as default](#set-default).
 
+<!--TODO Refactor-->
 Coding standards help you ensure that Codacy analyzes multiple repositories with the same tool and code pattern configurations. For example, you can use a coding standard to ensure that a group of repositories follow the same security rules or coding conventions.
 
+<!--TODO Refactor-->
 Applying a coding standard to a repository only affects the configurations of the tools included in the coding standard, while the remaining tool and code pattern configurations remain unchanged.
 
+<!--TODO Refactor-->
 Each repository can only follow one coding standard at a time. Applying a new coding standard to a repository <span class="skip-vale">unassigns</span> any previously applied coding standard.
 
+<!--TODO Refactor-->
 When you customize the tools or code patterns of a repository that follows a coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.
 
+<!--TODO Refactor-->
 !!! important
     Coding standards turn tools with configuration files on and off. Those tool configuration files, however, take precedence over the code patterns defined on the coding standard.
 
 ## Creating a coding standard {: id="creating"}
 
+<!--TODO Refactor-->
 !!! note
     Codacy currently supports up to 10 coding standards per organization.
 
@@ -64,6 +70,7 @@ To set a coding standard as default:
 
 1.  Toggle **Make default** on the relevant coding standard card.
 
+    <!--TODO Refactor-->
     !!! note
         Only one coding standard at a time can be the default coding standard.
 
@@ -91,11 +98,13 @@ To edit an existing coding standard or change the repositories that follow that 
 
 1.  Click the button **Save and apply standard** on the repository selection page to save your changes to the coding standard.
 
+    <!--TODO Refactor-->
     !!! important
         If you stop applying a coding standard to any repository, Codacy restores the previous code pattern configurations for that repository.
 
     Codacy will start using the updated coding standard on the next analysis of each selected repository.
 
+<!--TODO Refactor-->
 !!! tip
     To ensure that all new repositories automatically follow a coding standard, [set the coding standard as default](#set-default).
 
