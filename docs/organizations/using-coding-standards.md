@@ -61,7 +61,7 @@ To create a coding standard for your organization:
 
 ## Setting a coding standard as default {: id="set-default"}
 
-New repositories in your organization automatically follow the default coding standard or Codacy defaults if no default coding standard is set.
+New repositories in your organization automatically follow the default coding standard, or the Codacy default configurations if no default coding standard is set.
 
 To set a coding standard as default:
 
@@ -69,7 +69,6 @@ To set a coding standard as default:
 
 1.  Toggle **Make default** on the relevant coding standard card.
 
-    <!--TODO Refactor-->
     !!! note
         Only one coding standard at a time can be the default coding standard.
 
