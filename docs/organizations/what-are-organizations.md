@@ -23,9 +23,12 @@ This opens the list of organizations on your Git providers. The organization wit
 
 ## Updates on the Git provider
 
-In case you change your organization or repository on the Git provider, some changes are automatically reflected on Codacy. The following cases are supported, depending on your Git provider:
+If you update your organization or repository information on your Git provider, some changes are automatically reflected on Codacy, as described in the table below.
 
-| Provider | Rename repository | Change repository visibility | Delete repository | Rename organization or group | Remove member from organization or group | Delete organization or group |
+!!! note
+    If an update to your organization name isn't automatically reflected on Codacy, navigate to the organization **Settings** page, tab **Profile**, and click the **Synchronize** button.
+
+| Git provider | Rename repository | Change repository visibility | Delete repository | Rename organization or group | Remove member from organization or group | Delete organization or group |
 |---|---|---|---|---|---|---|
 | GitHub Cloud | Yes | Yes | Yes | Yes | Yes | Yes |
 | GitHub Enterprise | Yes | Yes | Yes | Yes | Yes | Yes |
