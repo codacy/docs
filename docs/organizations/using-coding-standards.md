@@ -92,10 +92,10 @@ To edit an existing coding standard or change the repositories that follow that 
 
 1.  Click the button **Save and apply standard** on the repository selection page to save your changes to the coding standard.
 
+    Codacy will start using the updated coding standard on the next analysis of each selected repository.
+
     !!! note
         If you stop applying a coding standard to any repository, Codacy restores the previous code pattern configurations for those repositories. However, the repositories keep the toggle status of the tools from the coding standard.
-
-    Codacy will start using the updated coding standard on the next analysis of each selected repository.
 
 ## Deleting a coding standard {: id="deleting"}
 
@@ -104,6 +104,9 @@ To delete a coding standard:
 1.  Open your organization **Coding standards** page, tab **Coding standards**.
 
 1.  Click the trash can icon on the coding standard card and confirm.
+
+    !!! note
+        If you delete a coding standard, Codacy restores the previous code pattern configurations for any repositories following the coding standard. However, the repositories keep the toggle status of the tools from the coding standard.
 
     ![Deleting a coding standard](images/coding-standard-delete.png)
 
