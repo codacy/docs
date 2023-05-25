@@ -26,7 +26,7 @@ This opens the list of organizations on your Git providers. The organization wit
 If you update your organization or repository information on your Git provider, some changes are automatically reflected on Codacy, as described in the table below.
 
 !!! note
-    If an update to your organization name isn't automatically reflected on Codacy, navigate to the organization **Settings** page, tab **Profile**, and click the **Synchronize** button in the Synchronize organization name area.
+    If an update to your organization name isn't automatically reflected on Codacy, navigate to the organization **Settings** page, tab **Profile**, and click the **Synchronize** button.
 
 | Git provider | Rename repository | Change repository visibility | Delete repository | Rename organization or group | Remove member from organization or group | Delete organization or group |
 |---|---|---|---|---|---|---|
