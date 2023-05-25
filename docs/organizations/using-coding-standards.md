@@ -9,7 +9,7 @@ Create coding standards on your organization to define shared tool and code patt
 -   If you later edit the tool and code pattern settings in a coding standard, the repositories following that coding standard automatically start using the new configurations when analyzing new commits
 -   When you customize the tools or code patterns of a repository that follows a coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.
 
-If you set a coding standard as default, new repositories that you add to Codacy start following that coding standard automatically.
+Optionally, set a default coding standard to apply it automatically to all new repositories that you add to Codacy. If no coding standard is set as default, new repositories won't follow any coding standard and will use the Codacy default configurations instead.
 
 !!! important
     Coding standards turn tools with configuration files on and off. Those tool configuration files, however, take precedence over the code patterns defined on the coding standard.
@@ -56,8 +56,6 @@ To create a coding standard for your organization:
     ![Applying the coding standard to repositories](images/coding-standard-apply.png)
 
 ## Setting a coding standard as default {: id="set-default"}
-
-New repositories in your organization automatically follow the default coding standard, or the Codacy default configurations if no default coding standard is set.
 
 To set a coding standard as default:
 
