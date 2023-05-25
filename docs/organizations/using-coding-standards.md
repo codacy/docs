@@ -95,7 +95,7 @@ To edit an existing coding standard or change the repositories that follow that 
     Codacy will start using the updated coding standard on the next analysis of each selected repository.
 
     !!! note
-        If you stop applying a coding standard to any repository, Codacy restores the previous code pattern configurations for those repositories. However, the repositories keep the toggle status of the tools from the coding standard.
+        If you stop applying a coding standard to any repositories, Codacy restores the previous code pattern configurations for those repositories. However, the repositories keep the toggle status of the tools from the coding standard.
 
 ## Deleting a coding standard {: id="deleting"}
 
