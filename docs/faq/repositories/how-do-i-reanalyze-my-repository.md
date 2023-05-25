@@ -8,9 +8,11 @@ Reanalyze the last commit in your branch or pull request:
     ![Greyed-out Codacy badge and repository grade](images/codacy-badge-grade-gray.png)
 
 !!! important
-    If you have the setting **Run analysis on your build server** enabled in your repository **Settings** page so that you can [run client-side tools](../../repositories-configure/local-analysis/client-side-tools.md), you can't trigger a new analysis from the Codacy UI.
+    -   If you have the setting **Run analysis on your build server** enabled in your repository **Settings** page so that you can [run client-side tools](../../repositories-configure/local-analysis/client-side-tools.md), you can't trigger a new analysis from the Codacy UI.
 
-    Instead, you must manually run the client-side tools or wait for them to report the results for a new commit.
+        Instead, you must manually run the client-side tools or wait for them to report the results for a new commit.
+
+    -   You can only reanalyze commits to branches or pull requests in your repository if the committer [is part of your organization](../../organizations/managing-people.md).
 
 ## Reanalyzing a branch
 

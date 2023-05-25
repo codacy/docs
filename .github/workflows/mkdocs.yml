@@ -32,11 +32,15 @@ jobs:
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
         uses: jwalton/gh-find-current-pr@v1
 
+      - name: Set up environment variables
+        if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
+        run: |
+          echo "MKDOCS_PREVIEW_BRANCH=$GITHUB_REF_NAME" >> $GITHUB_ENV
+          echo "MKDOCS_PREVIEW_PULL_REQUEST=${{ steps.pull_request.outputs.pr }}" >> $GITHUB_ENV
+
       - name: Build docs
         run: |
           mkdocs -v build
-        env:
-          MKDOCS_PULL_REQUEST: ${{ steps.pull_request.outputs.pr }}
 
       - name: Upload meta descriptions artifact
         uses: actions/upload-artifact@v3

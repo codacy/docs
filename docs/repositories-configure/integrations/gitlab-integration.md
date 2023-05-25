@@ -26,7 +26,13 @@ If you remove the integration, you can enable it again as follows:
 
 To configure the GitLab integration, open your repository **Settings**, tab **Integrations**.
 
-Depending on the options that you enable, Codacy will automatically update merge requests on GitLab with extra information when accepting merge requests:
+Depending on the options that you enable, Codacy will automatically update merge requests on GitLab with extra information when accepting merge requests.
+
+{%
+    include-markdown "../../assets/includes/default-git-provider-settings-tip.md"
+    start="<!--default-settings-apply-all-start-->"
+    end="<!--default-settings-apply-all-end-->"
+%}
 
 ### Pull Request Status
 

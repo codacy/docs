@@ -21,7 +21,7 @@ The next sections describe each area of the commit detail page.
 
 This area displays the information that identifies the commit (SHA hash, date, and commit message), as well as:
 
--   The analysis status and a [button to reanalyze the commit](../faq/repositories/how-do-i-reanalyze-my-repository.md)
+-   The analysis status and a [button to reanalyze the commit](../faq/repositories/how-do-i-reanalyze-my-repository.md) (enabled when the committer [is part of your organization](../organizations/managing-people.md))
 -   A link to the analysis logs
 -   A link to the commit on your Git provider
 
