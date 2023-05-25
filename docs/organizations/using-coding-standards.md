@@ -4,7 +4,7 @@ Coding standards help you ensure that Codacy analyzes multiple repositories with
 
 Create coding standards on your organization to define different tool and code pattern configurations that apply to a set of programming languages. After creating a coding standard, apply it to your repositories:
 
--   Applying a coding standard to a repository only affects the configurations of the tools included in the coding standard, while the remaining tool and code pattern configurations remain unchanged.
+-   Applying a coding standard to a repository only affects the configurations of the tools that are included in the coding standard, while the remaining tool and code pattern configurations of the repository remain unchanged.
 -   If you later edit the tool and code pattern configurations in a coding standard, the repositories following that coding standard automatically start using the updated configurations on the next analysis.
 -   When you customize the tools or code patterns of a repository that follows a coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.
 -   Each repository can only follow one coding standard at a time. Applying a new coding standard to a repository <span class="skip-vale">unassigns</span> any previously applied coding standard.
