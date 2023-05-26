@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Create coding standards on your organization to define and apply shared tool and code pattern configurations consistently across your repositories. You can also apply a coding standard to new repositories automatically by defining it as default.">
+        <meta name="description" content="Coding standards help you ensure that Codacy analyzes multiple repositories with the same tool and code pattern configurations. For example, you can use a coding standard to ensure that a group of repositories follow the same security rules or coding conventions.">
       
       
-        <meta http-equiv="last-modified" content="2023-05-24 10:38:49">
+        <meta http-equiv="last-modified" content="2023-05-26 15:22:01">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/using-coding-standards/">
@@ -3689,20 +3689,20 @@
                 
                 
                 <h1 id="using-coding-standards">Using coding standards<a class="headerlink" href="#using-coding-standards" title="Permanent link">#</a></h1>
-<p>Create coding standards on your organization to define and apply shared tool and code pattern configurations consistently across your repositories. You can also apply a coding standard to new repositories automatically by <a href="#set-default">defining it as default</a>.</p>
 <p>Coding standards help you ensure that Codacy analyzes multiple repositories with the same tool and code pattern configurations. For example, you can use a coding standard to ensure that a group of repositories follow the same security rules or coding conventions.</p>
-<p>Applying a coding standard to a repository only affects the configurations of the tools included in the coding standard, while the remaining tool and code pattern configurations remain unchanged.</p>
-<p>Each repository can only follow one coding standard at a time. Applying a new coding standard to a repository <span class="skip-vale">unassigns</span> any previously applied coding standard.</p>
-<p>When you customize the tools or code patterns of a repository that follows a coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.</p>
+<p>Create coding standards on your organization to define different tool and code pattern configurations that apply to a set of programming languages. After creating a coding standard, apply it to your repositories:</p>
+<ul>
+<li>Each repository can only follow one coding standard at a time. Applying a new coding standard to a repository <span class="skip-vale">unassigns</span> any previously applied coding standard.</li>
+<li>Applying a coding standard to a repository only affects the configurations of the tools that are included in the coding standard, while the remaining tool and code pattern configurations of the repository remain unchanged.</li>
+<li>If you later edit the tool and code pattern configurations in a coding standard, the repositories following that coding standard automatically start using the updated configurations on the next analysis.</li>
+<li>When you customize the tools or code patterns of a repository that follows a coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.</li>
+</ul>
+<p>Optionally, set a default coding standard to apply it automatically to all new repositories that you add to Codacy. If no coding standard is set as default, new repositories don't follow any coding standard and use the Codacy default configurations instead.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Coding standards turn tools with configuration files on and off. Those tool configuration files, however, take precedence over the code patterns defined on the coding standard.</p>
 </div>
 <h2 id="creating">Creating a coding standard<a class="headerlink" href="#creating" title="Permanent link">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Codacy currently supports up to 10 coding standards per organization.</p>
-</div>
 <p>To create a coding standard for your organization:</p>
 <ol>
 <li>
@@ -3710,6 +3710,10 @@
 </li>
 <li>
 <p>Click the button <strong>Create new standard</strong> at the top right-hand corner of the page. This opens a window with the coding standard creation form.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Codacy currently supports up to 10 coding standards per organization.</p>
+</div>
 </li>
 <li>
 <p>Enter a unique name and click <strong>Create standard</strong>.</p>
@@ -3744,7 +3748,6 @@
 </li>
 </ol>
 <h2 id="set-default">Setting a coding standard as default<a class="headerlink" href="#set-default" title="Permanent link">#</a></h2>
-<p>New repositories in your organization automatically follow the default coding standard or Codacy defaults if no default coding standard is set.</p>
 <p>To set a coding standard as default:</p>
 <ol>
 <li>
@@ -3781,17 +3784,13 @@
 </li>
 <li>
 <p>Click the button <strong>Save and apply standard</strong> on the repository selection page to save your changes to the coding standard.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>If you stop applying a coding standard to any repository, Codacy restores the previous code pattern configurations for that repository.</p>
-</div>
 <p>Codacy will start using the updated coding standard on the next analysis of each selected repository.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you stop applying a coding standard to a repository, Codacy restores the previous code pattern configurations of that repository, but keeps the tool activation status defined by the coding standard.</p>
+</div>
 </li>
 </ol>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>To ensure that all new repositories automatically follow a coding standard, <a href="#set-default">set the coding standard as default</a>.</p>
-</div>
 <h2 id="deleting">Deleting a coding standard<a class="headerlink" href="#deleting" title="Permanent link">#</a></h2>
 <p>To delete a coding standard:</p>
 <ol>
@@ -3800,6 +3799,10 @@
 </li>
 <li>
 <p>Click the trash can icon on the coding standard card and confirm.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you delete a coding standard, Codacy restores the previous code pattern configurations of any repositories following the coding standard, but keeps the tool activation status defined by the coding standard.</p>
+</div>
 <p><img alt="Deleting a coding standard" src="../images/coding-standard-delete.png" /></p>
 </li>
 </ol>
@@ -3966,7 +3969,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 24, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 26, 2023</span>
     
   </small>
 </div>
