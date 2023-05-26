@@ -10,3 +10,5 @@ config:
       minbackoff: 2s
       maxbackoff: 20s
       maxretries: 5
+rbac:
+  pspEnabled: false

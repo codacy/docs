@@ -19,6 +19,8 @@ persistence:
 table_manager:
   retention_deletes_enabled: true
   retention_period: 72h
+rbac:
+  pspEnabled: false
 grafana:
   datasources:
     enabled: true
