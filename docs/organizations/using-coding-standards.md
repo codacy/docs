@@ -9,7 +9,7 @@ Create coding standards on your organization to define different tool and code p
 -   If you later edit the tool and code pattern configurations in a coding standard, the repositories following that coding standard automatically start using the updated configurations on the next analysis.
 -   When you customize the tools or code patterns of a repository that follows a coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.
 
-Optionally, set a default coding standard to apply it automatically to all new repositories that you add to Codacy. If no coding standard is set as default, new repositories won't follow any coding standard and will use the Codacy default configurations instead.
+Optionally, set a default coding standard to apply it automatically to all new repositories that you add to Codacy. If no coding standard is set as default, new repositories don't follow any coding standard and use the Codacy default configurations instead.
 
 !!! important
     Coding standards turn tools with configuration files on and off. Those tool configuration files, however, take precedence over the code patterns defined on the coding standard.
@@ -93,7 +93,7 @@ To edit an existing coding standard or change the repositories that follow that 
     Codacy will start using the updated coding standard on the next analysis of each selected repository.
 
     !!! note
-        If you stop applying a coding standard to any repositories, Codacy restores the previous code pattern configurations for those repositories. However, the repositories keep the toggle status of the tools from the coding standard.
+        If you stop applying a coding standard to a repository, Codacy restores the previous code pattern configurations of that repository, but keeps the tool activation status defined by the coding standard.
 
 ## Deleting a coding standard {: id="deleting"}
 
@@ -104,7 +104,7 @@ To delete a coding standard:
 1.  Click the trash can icon on the coding standard card and confirm.
 
     !!! note
-        If you delete a coding standard, Codacy restores the previous code pattern configurations for any repositories following the coding standard. However, the repositories keep the toggle status of the tools from the coding standard.
+        If you delete a coding standard, Codacy restores the previous code pattern configurations of any repositories following the coding standard, but keeps the tool activation status defined by the coding standard.
 
     ![Deleting a coding standard](images/coding-standard-delete.png)
 
