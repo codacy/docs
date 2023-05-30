@@ -34,9 +34,12 @@ The Security and Risk Management item list displays a list of items, filtered by
 
 To access the item list, access the [dashboard](#dashboard) and click the **Review** button under the area of interest, based on the desired filtering.
 
-To find out more about an item, click its **Details** column. This redirects you to a filtered view of the **Repository issues** page, showing only the item of interest.
+When viewing the item list:
 
-![Security and Risk Management item list](images/security-risk-management-item-list.png)
+-   To update the filtering criteria, click the **Status** dropdown above the list.
+-   To find out more about an item, click its **Details** column. This redirects you to a filtered view of the **Repository issues** page, showing only the item of interest.
+
+![Security and Risk Management item list](images/security-risk-management-item-list.png)<!-- TODO HRZ-182 update screenshot -->
 
 ## Opening and closing items
 
