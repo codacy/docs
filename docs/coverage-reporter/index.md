@@ -189,11 +189,11 @@ After having coverage reports set up for your repository, you must use the Codac
 
         It's a best practice to store API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.
 
-1.  **If you're using Codacy Self-hosted** set the following environment variables to specify your Codacy instance URL and the Codacy Coverage Reporter version that's compatible with Codacy Self-hosted {{extra.version}}:
+1.  **If you're using Codacy Self-hosted** set the following environment variables to specify your Codacy instance URL and the Codacy Coverage Reporter version that's compatible with Codacy Self-hosted {{ extra.codacy_self_hosted_version }}:
 
     ```bash
     export CODACY_API_BASE_URL=<your Codacy instance URL>
-    export CODACY_REPORTER_VERSION=13.13.1
+    export CODACY_REPORTER_VERSION={{ extra.codacy_coverage_reporter_version }}
     ```
 
 1.  Run Codacy Coverage Reporter **on the root of the locally checked out branch of your Git repository**, specifying the relative path to the coverage report to upload:

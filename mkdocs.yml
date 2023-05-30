@@ -30,13 +30,15 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    version: "11.0.0"
+    codacy_self_hosted_version: "11.0.0"
+    codacy_coverage_reporter_version: "13.13.1"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
     support_email: "support@codacy.com"
     # Add pull request preview banner
-    pull_request_preview: !ENV [MKDOCS_PULL_REQUEST, false]
+    preview_branch: !ENV [MKDOCS_PREVIEW_BRANCH, false]
+    preview_pull_request: !ENV [MKDOCS_PREVIEW_PULL_REQUEST, false]
     # Control search engine indexing and the visibility of features on Codacy Self-hosted documentation pages
     self_hosted: !ENV [MKDOCS_SELF_HOSTED, false]
 
