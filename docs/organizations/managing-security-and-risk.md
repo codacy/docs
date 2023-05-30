@@ -162,6 +162,35 @@ The following table defines security item priorities and days to fix the underly
 | **Medium**                     | 90                 | Medium                             | Medium                           |
 | **Low**                        | 120                | Minor                              | Low and other                    |
 
+## Access management<!-- Rename this. We're not really only managing access, are we? -->
+
+Organization owners can assign the Security Manager role to organization members, as well as revoke it. Security managers share some permissions with organization owners:
+
+|Permission|Organization Owner|Security Manager|
+|---|---|---|
+|Access Security and Risk Management|Yes|Yes|
+|Access originating items (Codacy repositories, Jira issues)|Yes|Inherits original permissions|
+|Manage integrations|Yes|?<!-- TODO confirm if security managers cans manage integrations -->|
+|Assign and revoke the Security Manager role|Yes|No|
+
+To assign the Security Manager role to a user:
+
+1.  Access the **Security and Risk Management configuration** page.
+
+1.  In the Permissions area, use the search field to find the user of interest.
+
+1.  Click **Assign**.<!-- TODO is there a confirmation step here? -->
+
+To revoke the Security Manager role from a user:
+
+1.  Access the **Security and Risk Management configuration** page.
+
+1.  In the Permissions area, scroll the list to find the user of interest.
+
+1.  Click the **Revoke icon** to the right of the user's name and confirm.
+
+<!-- TODO screenshot highlighting the Permissions area -->
+
 ## Data retention
 
 Codacy retains open items indefinitely and closed items for one year.
