@@ -15,7 +15,7 @@ You can also ignore files using your own tool configuration files, although this
 If you need more flexibility in ignoring files [use a Codacy configuration file](codacy-configuration-file.md) instead.
 
 !!! note
-    To exclude files from coverage analysis only, you must ignore them directly in the tool you're using to generate coverage reports and ensure that the reports you upload to Codacy don't include coverage information for those files.
+    {% include-markdown "../assets/includes/coverage-ignore.md" %}
 
 ## Default ignored files
 
