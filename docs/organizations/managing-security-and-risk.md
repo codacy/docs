@@ -169,8 +169,8 @@ Organization owners can assign the Security Manager role to organization members
 |Permission|Organization Owner|Security Manager|
 |---|---|---|
 |Access Security and Risk Management|Yes|Yes|
-|Access originating items (Codacy repositories, Jira issues)|Yes|Inherits original permissions|
-|Manage integrations|Yes|?<!-- TODO confirm if security managers cans manage integrations -->|
+|Access originating items (Codacy repositories, Jira issues)|Yes<!-- TODO admin may nothave access here? Confirm -->|Inherits original permissions|
+|Manage integrations|Yes|<!-- TODO confirm if security managers cans manage integrations -->|
 |Assign and revoke the Security Manager role|Yes|No|
 
 To assign the Security Manager role to a user:
