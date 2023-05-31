@@ -14,6 +14,9 @@ You can also ignore files using your own tool configuration files, although this
 
 If you need more flexibility in ignoring files [use a Codacy configuration file](codacy-configuration-file.md) instead.
 
+!!! note
+    {% include-markdown "../assets/includes/coverage-ignore.md" %}
+
 ## Default ignored files
 
 By default, Codacy ignores all files that match the following regular expressions:
