@@ -11,7 +11,7 @@
         <meta name="description" content="Ignore or exclude files from the Codacy analysis and see the list of files that Codacy already ignores by default.">
       
       
-        <meta http-equiv="last-modified" content="2023-04-18 13:36:26">
+        <meta http-equiv="last-modified" content="2023-05-31 09:41:34">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/ignoring-files/">
@@ -3666,6 +3666,10 @@
 <p><img alt="Ignored files" src="../images/ignored-files.png" /></p>
 <p>You can also ignore files using your own tool configuration files, although this depends on the option being supported by each tool.</p>
 <p>If you need more flexibility in ignoring files <a href="../codacy-configuration-file/">use a Codacy configuration file</a> instead.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To exclude files from coverage analysis only, you must ignore them directly in the tool you're using to generate coverage reports and ensure that the reports you upload to Codacy don't include coverage information for those files.</p>
+</div>
 <h2 id="default-ignored-files">Default ignored files<a class="headerlink" href="#default-ignored-files" title="Permanent link">#</a></h2>
 <p>By default, Codacy ignores all files that match the following regular expressions:</p>
 <div class="highlight"><pre><span></span><code>.*[\.-]min\.css
@@ -3853,7 +3857,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 18, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 31, 2023</span>
     
   </small>
 </div>

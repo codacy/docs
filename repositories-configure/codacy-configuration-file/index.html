@@ -11,7 +11,7 @@
         <meta name="description" content="Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages.">
       
       
-        <meta http-equiv="last-modified" content="2023-04-13 10:14:44">
+        <meta http-equiv="last-modified" content="2023-05-31 09:41:34">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/codacy-configuration-file/">
@@ -3695,6 +3695,7 @@
 <ul>
 <li>If a Codacy configuration file exists in your repository, the <a href="../ignoring-files/">Ignored files settings</a> defined on the Codacy UI don't apply and you must ignore files using the configuration file instead.</li>
 <li>To disable a tool you must use the <a href="../configuring-code-patterns/">Code patterns page</a> instead.</li>
+<li>To exclude files from coverage analysis only, you must ignore them directly in the tool you're using to generate coverage reports and ensure that the reports you upload to Codacy don't include coverage information for those files.</li>
 </ul>
 </div>
 <p>To use a Codacy configuration file:</p>
@@ -4079,7 +4080,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 13, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 31, 2023</span>
     
   </small>
 </div>
