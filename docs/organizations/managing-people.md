@@ -44,7 +44,7 @@ To add people to your organization:
 
     ![Adding people to your organization](images/organization-people-add-button.png)
 
-1.  Select people from the list displaying pending requests to join the organization, as well as recent contributors to the private repositories in your organization.
+1.  Select people from the list displaying pending requests to join the organization, as well as recent committers to the private repositories in your organization.
 
     Alternatively, click **Add people using email addresses** to manually enter the list of email addresses of the people you wish to add.
 
