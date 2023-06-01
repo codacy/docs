@@ -179,6 +179,8 @@ To assign the Security Manager role to a user:
 
 1.  In the Permissions area, use the search field to find the relevant user.
 
+    ![Security and Risk Management access management](images/security-risk-management-access-management.png)
+
 1.  Click the relevant row.<!-- TODO reword this -->
 
 To revoke the Security Manager role from a user:
