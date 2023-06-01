@@ -26,11 +26,13 @@ The recommended way to run the Codacy Coverage Reporter is by using the [self-co
     ```
 
 !!! note
-    Starting on version `13.0.0` the script automatically validates the checksum of the downloaded binary. To skip the checksum validation, define the following environment variable:
+    -   Make sure that your CI/CD platform has access to the Internet so that the command can download the bash script, the Codacy Coverage Reporter binary, and the validation checksum.
 
-    ```bash
-    export CODACY_REPORTER_SKIP_CHECKSUM=true
-    ```
+    -   Starting on version `13.0.0` the script automatically validates the checksum of the downloaded binary. To skip the checksum validation, define the following environment variable:
+
+       ```bash
+       export CODACY_REPORTER_SKIP_CHECKSUM=true
+       ```
 
 The self-contained script can cache the binary. To avoid downloading the binary every time that the script runs, add one of the following directories to your CI cached folders:
 
