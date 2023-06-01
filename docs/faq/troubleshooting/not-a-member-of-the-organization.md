@@ -4,7 +4,7 @@
     include-markdown "../../assets/includes/cloud.md"
 %}
 
-When you see the message **Not a member of the organization** it means that Codacy Cloud can't analyze a commit because the associated email address doesn't belong to any Codacy user.
+When you see the message **Not a member of the organization** it means that Codacy Cloud can't analyze a commit because the associated email address doesn't belong to any [member or committer of your Codacy organization](../../organizations/managing-people.md).
 
 You can check which email address is associated with a commit by hovering the cursor on the name of the committer on the page for the commit:
 
