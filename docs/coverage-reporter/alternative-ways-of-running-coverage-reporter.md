@@ -26,7 +26,7 @@ The recommended way to run the Codacy Coverage Reporter is by using the [self-co
     ```
 
 !!! note
-    -   Make sure that your CI/CD platform has access to the Internet so that the command can download the bash script, the Codacy Coverage Reporter binary, and the validation checksum.
+    -   Make sure that your CI/CD platform has access to the Internet so that the command can download the bash script and the Codacy Coverage Reporter binary, and access the Codacy API.
 
     -   Starting on version `13.0.0` the script automatically validates the checksum of the downloaded binary. To skip the checksum validation, define the following environment variable:
 
