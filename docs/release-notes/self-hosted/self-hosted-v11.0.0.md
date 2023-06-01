@@ -85,7 +85,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **[ShellCheck 0.9.0](https://github.com/koalaman/shellcheck/blob/master/CHANGELOG.md#v090---2022-12-12) (updated from 0.8.0)**
 -   **[SonarC# 8.40](https://github.com/SonarSource/sonar-dotnet/releases/tag/8.40.0.48530) (updated from 8.39)**
 -   SonarVB 8.15
--   Spectral 1.2.7
+-   spectral-rulesets 1.2.7
 -   **[SpotBugs 4.7.3](https://github.com/spotbugs/spotbugs/releases/tag/4.7.3) (updated from 4.5.3)**
 -   SQLint 0.2.1
 -   Staticcheck 2022.1.3

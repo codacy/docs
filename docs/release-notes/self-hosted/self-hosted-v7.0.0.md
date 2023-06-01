@@ -123,7 +123,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   ShellCheck 0.7.2
 -   SonarC# 8.30
 -   SonarVB 8.15
--   Spectral 1.2.7
+-   spectral-rulesets 1.2.7
 -   SpotBugs 4.5.3
 -   SQLint 0.2.1
 -   Staticcheck 2020.1.6
