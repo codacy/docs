@@ -40,6 +40,12 @@ To find out more about an item, click its **Details** column. This redirects you
 
 ## Opening and closing items
 
+!!! important
+    To automatically open and close items, Codacy must detect when the underlying Security issues are introduced and fixed. To make sure that Codacy detects the Security issues correctly:
+
+    -   [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.
+    -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
+
 Codacy automatically opens a new item when it detects a new Security issue on the default branch of a repository:
 
 -   [Every new item is assigned a priority](#item-priorities-and-deadlines) based on the severity of the underlying issue. Each priority also defines a deadline to fix the underlying issue.
@@ -49,12 +55,6 @@ Codacy automatically opens a new item when it detects a new Security issue on th
 Codacy automatically closes an item when it stops detecting the underlying issue, when [the underlying issue is ignored](../repositories/issues.md#ignoring-and-managing-issues), or when the [tool that found the underlying issue is disabled](../repositories-configure/configuring-code-patterns.md).
 
 For example, Codacy automatically opens an item with Critical priority upon detecting a new Security issue of Critical severity on the default branch of a repository. If the Security issue is fixed before the deadline, the status of the item changes to Closed on time. If the issue isn't fixed before the deadline, the status of the item changes to Overdue.
-
-!!! important
-    To automatically open and close items, Codacy must detect when the underlying Security issues are introduced and fixed. To make sure that Codacy detects the Security issues correctly:
-
-    -   [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.
-    -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
 
 ## Item statuses
 
