@@ -6,7 +6,7 @@
 
 When you see the message **Not a member of the organization** it means that Codacy Cloud can't analyze a commit because the associated email address doesn't belong to any Codacy user.
 
-You can check which email address is associated with a commit by hovering the cursor on the name of the contributor on the page for the commit:
+You can check which email address is associated with a commit by hovering the cursor on the name of the committer on the page for the commit:
 
 ![Checking the email address for a commit](images/not-a-member-of-the-organization-commit.png)
 
