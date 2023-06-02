@@ -54,7 +54,7 @@ To add people to your organization:
 
 ## Removing people from your organization {: id="removing-people"}
 
-Members of an organization on Codacy can remove themselves from the organization, and organization owners can also remove other members or committers.
+Members of an organization on Codacy can remove themselves from the organization, and organization owners can also remove other members and committers.
 
 When a member or committer leaves an organization:
 
