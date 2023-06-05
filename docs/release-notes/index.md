@@ -18,6 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2023
 
+-   [Cloud May 2023](cloud/cloud-2023-05.md)
 -   [Cloud April 2023](cloud/cloud-2023-04.md)
 -   [Cloud March 2023](cloud/cloud-2023-03.md)
 -   [Cloud February 2023](cloud/cloud-2023-02.md)
