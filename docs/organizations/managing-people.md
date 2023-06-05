@@ -2,7 +2,7 @@
 
 People signing up to the Codacy app and joining an organization become members of that organization. Members of a Codacy organization can see the dashboards and details of the organization repositories. Depending on their permissions on the Git provider, members can also manage the organization and repository settings on Codacy.
 
-For **private repositories**, Codacy only analyzes commits from people in your Codacy organization. To make sure that Codacy analyzes all relevant commits, add to your Codacy organization the committers that are not members of the organization yet.
+For **private repositories**, Codacy only analyzes commits from people in your Codacy organization. To make sure that Codacy analyzes all relevant commits, add to your Codacy organization the committers that aren't members of the organization yet.
 
 !!! important
     -   Make sure that you invite or ask your teammates to join your organization on Codacy so that Codacy analyzes their commits to private repositories.
