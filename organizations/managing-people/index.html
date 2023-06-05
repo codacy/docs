@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Members of a Codacy organization can access the Codacy app to see the dashboards and details of the organization repositories. Depending on their permissions on the Git provider, members can also manage the organization and repository settings on Codacy.">
+        <meta name="description" content="People signing up to the Codacy app and joining an organization become members of that organization. Members of a Codacy organization can see the dashboards and details of the organization repositories. Depending on their permissions on the Git provider, members can also manage the organization and repository settings on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2023-04-13 14:17:48">
+        <meta http-equiv="last-modified" content="2023-06-05 15:02:31">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-people/">
@@ -3694,23 +3694,23 @@
                 
                 
                 <h1 id="managing-people">Managing people<a class="headerlink" href="#managing-people" title="Permanent link">#</a></h1>
-<p>Members of a Codacy organization can access the Codacy app to see the dashboards and details of the organization repositories. Depending on their permissions on the Git provider, members can also manage the organization and repository settings on Codacy.</p>
-<p>For <strong>private repositories</strong>, Codacy only analyzes commits from members of the corresponding organization on Codacy.</p>
+<p>People signing up to the Codacy app and joining an organization become members of that organization. Members of a Codacy organization can see the dashboards and details of the organization repositories. Depending on their permissions on the Git provider, members can also manage the organization and repository settings on Codacy.</p>
+<p>For <strong>private repositories</strong>, Codacy only analyzes commits from people in your Codacy organization. To make sure that Codacy analyzes all relevant commits, add to your Codacy organization the committers that aren't members of the organization yet.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <ul>
 <li>
-<p>Make sure that you invite or ask your team members to join your organization on Codacy so that Codacy analyzes their commits to private repositories.</p>
+<p>Make sure that you invite or ask your teammates to join your organization on Codacy so that Codacy analyzes their commits to private repositories.</p>
 </li>
 <li>
-<p>Contributors who aren't part of your Git provider organization can't join your organization on Codacy app, but you should still add them to your Codacy organization to analyze their commits to private repositories.</p>
+<p>Committers who aren't part of your Git provider organization can't join your organization on Codacy app, but you should still add them to your Codacy organization to analyze their commits to private repositories.</p>
 </li>
 <li>
-<p>In some Enterprise plans, Codacy automatically adds to the organization new people that commit to your private repositories and analyzes their commits. Also, Codacy updates your seats automatically when adding new people.</p>
+<p>In some Enterprise plans, Codacy automatically adds to the organization new people that commit to your private repositories and analyzes their commits. Also, Codacy updates your seats automatically when adding these new committers.</p>
 </li>
 </ul>
 </div>
-<p>To list and manage the members of your organization, open your organization <strong>Settings</strong>, page <strong>People</strong>. This page also shows when the organization members last logged in to the Codacy app:</p>
+<p>To list and manage the people in your organization, open your organization <strong>Settings</strong>, page <strong>People</strong>. This page also shows their last activity on Codacy:</p>
 <p><img alt="People in an organization" src="../images/organization-people.png" /></p>
 <h2 id="joining">Joining an organization<a class="headerlink" href="#joining" title="Permanent link">#</a></h2>
 <p>To become a member of an organization on Codacy app you must <a href="../../getting-started/codacy-quickstart/">sign up to Codacy</a> using your Git provider and follow the instructions to either join an existing organization or add a new one.</p>
@@ -3721,43 +3721,43 @@
 <p><strong>On Codacy Cloud</strong>, organization owners <a href="../changing-your-plan-and-billing/#allowing-new-people-to-join-your-organization">control if team members need an approval</a> before joining their organizations.</p>
 </div>
 <h2 id="adding-people">Adding people to your organization<a class="headerlink" href="#adding-people" title="Permanent link">#</a></h2>
-<p><strong>On Codacy Cloud</strong>, organization owners can also add team members to their organization on Codacy. This is useful to allow Codacy to analyze commits to private repositories by contributors who haven't signed up to Codacy or joined the organization yet.</p>
+<p><strong>On Codacy Cloud</strong>, organization owners can also add teammates to their organization on Codacy. This is useful to allow Codacy to analyze commits to private repositories by committers who haven't signed up to Codacy or joined the organization yet.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can also use the Codacy API to <a href="../../codacy-api/examples/adding-people-to-codacy-programmatically/">add people to your Codacy organization</a>. This is useful while adding a large amount of people or to automatically add new members of your Git provider organization to Codacy.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For Enterprise plans where Codacy automatically adds new people that commit to your private repositories, you can invite them to join your organization on the Codacy app.</p>
+<p>For Enterprise plans where Codacy automatically adds new committers to your organization, you can invite them to join the organization on the Codacy app.</p>
 </div>
-<p>To add members to your organization:</p>
+<p>To add people to your organization:</p>
 <ol>
 <li>
 <p>Open your organization <strong>Settings</strong>, page <strong>People</strong>, and click the button <strong>Add people</strong>.</p>
-<p><img alt="Adding members to your organization" src="../images/organization-people-add-button.png" /></p>
+<p><img alt="Adding people to your organization" src="../images/organization-people-add-button.png" /></p>
 </li>
 <li>
-<p>Select people from the list displaying pending requests to join the organization, as well as recent contributors to the private repositories in your organization.</p>
+<p>Select people from the list displaying pending requests to join the organization, as well as recent committers to the private repositories in your organization.</p>
 <p>Alternatively, click <strong>Add people using email addresses</strong> to manually enter the list of email addresses of the people you wish to add.</p>
-<p><img alt="Adding members to your organization" src="../images/organization-people-add-modal.png" /></p>
+<p><img alt="Adding people to your organization" src="../images/organization-people-add-modal.png" /></p>
 </li>
 <li>
-<p>Confirm the updated billing details displayed at the bottom of the window and click the button <strong>Add people</strong>. Codacy emails the newly added members inviting them to log in.</p>
+<p>Confirm the updated billing details displayed at the bottom of the window and click the button <strong>Add people</strong>. Codacy emails the newly added people inviting them to log in.</p>
 </li>
 </ol>
 <h2 id="removing-people">Removing people from your organization<a class="headerlink" href="#removing-people" title="Permanent link">#</a></h2>
-<p>Members of an organization on Codacy can remove themselves from the organization, and organization owners can also remove other members.</p>
-<p>When a member leaves an organization:</p>
+<p>Members of an organization on Codacy can remove themselves from the organization, and organization owners can also remove other members and committers.</p>
+<p>When a member or committer leaves an organization:</p>
 <ul>
-<li>Codacy stops analyzing commits from that member to private repositories in the organization</li>
+<li>Codacy stops analyzing their commits to private repositories in the organization</li>
 <li><strong>On GitLab and Bitbucket organizations</strong> Codacy stops analyzing repositories that were added by the member</li>
 <li>Organizations must have at least one owner, so when the last organization owner leaves the organization they must either add someone else as owner or <a href="../what-are-organizations/#deleting-an-organization">delete the organization</a></li>
 </ul>
-<p>To remove members from your organization open your organization <strong>Settings</strong>, page <strong>People</strong>, and click the icon next to the members you wish to remove:</p>
+<p>To remove people from your organization open your organization <strong>Settings</strong>, page <strong>People</strong>, and click the icon next to the member or committer you wish to remove:</p>
 <p><img alt="Removing people from your organization" src="../images/organization-people-remove.png" /></p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>For Enterprise plans where Codacy automatically adds new people that commit to your private repositories, team members that you remove from your organization will be added again if they keep committing.</p>
+<p>For Enterprise plans where Codacy automatically adds new committers to the organization, people that you remove from your organization will be added again if they keep committing.</p>
 </div>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
@@ -3920,7 +3920,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 13, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 5, 2023</span>
     
   </small>
 </div>
