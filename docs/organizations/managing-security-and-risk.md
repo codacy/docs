@@ -162,36 +162,32 @@ The following table defines security item priorities and days to fix the underly
 | **Medium**                     | 90                 | Medium                             | Medium                           |
 | **Low**                        | 120                | Minor                              | Low and other                    |
 
-## Access management<!-- Rename this. We're not really only managing access, are we? -->
+## Access management<!-- TODO Rename this. We're not only managing access, are we? -->
 
-Organization owners can assign the Security Manager role to organization members, as well as revoke it. Security managers share some permissions with organization owners:
+Organization owners can assign the Security Manager role to organization members, as well as revoke it. Security managers share some permissions with organization owners:<!-- TODO State here more clearly why this is useful as a feature -->
 
 |Permission|Organization Owner|Security Manager|
 |---|---|---|
 |Access Security and Risk Management|Yes|Yes|
-|Access originating items (Codacy repositories, Jira issues)|Yes<!-- TODO admin may nothave access here? Confirm -->|Inherits original permissions|
+|Access originating items<!-- TODO reword all "originating items" instances for clarity --> (Codacy repositories, Jira issues)|Yes<!-- TODO admin may not have access here? Confirm -->|Inherits original permissions|
 |Manage integrations|Yes|<!-- TODO confirm if security managers cans manage integrations -->|
 |Assign and revoke the Security Manager role|Yes|No|
 
 To assign the Security Manager role to a user:
 
-1.  Access the **Security and Risk Management configuration** page.
+1.  Access the **Security and risk management configuration** page.
 
-1.  In the Permissions area, use the search field to find the relevant user.
+1.  In the **Permissions** area, use the search field to find the relevant user and click the user's name.
 
     ![Security and Risk Management access management](images/security-risk-management-access-management.png)
-
-1.  Click the relevant row.<!-- TODO reword this -->
 
 To revoke the Security Manager role from a user:
 
 1.  Access the **Security and Risk Management configuration** page.
 
-1.  In the Permissions area, scroll the list to find the relevant user.
+1.  In the **Permissions** area, scroll the list to find the relevant user.
 
 1.  Click the **Revoke role icon**<!-- TODO icon image here? --> to the right of the user's name and confirm.
-
-<!-- TODO screenshot highlighting the Permissions area -->
 
 ## Data retention
 
