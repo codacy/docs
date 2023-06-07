@@ -164,14 +164,20 @@ The following table defines security item priorities and days to fix the underly
 
 ## Access management<!-- TODO Rename this. We're not only managing access, are we? -->
 
+<!--
+TODO Explain first what is the Security Manager role:
+-   what it can do
+-   mention it doesn't map any Git provider permissions
+-->
+
 Organization owners can assign the Security Manager role to organization members, as well as revoke it. Security managers share some permissions with organization owners:<!-- TODO State here more clearly why this is useful as a feature -->
 
-|Permission|Organization Owner|Security Manager|
-|---|---|---|
-|Access Security and Risk Management|Yes|Yes|
-|Access originating items<!-- TODO reword all "originating items" instances for clarity --> (Codacy repositories, Jira issues)|Yes<!-- TODO admin may not have access here? Confirm -->|Inherits original permissions|
-|Manage integrations|Yes|<!-- TODO confirm if security managers cans manage integrations -->|
-|Assign and revoke the Security Manager role|Yes|No|
+| Permission                                                                                                                    | Organization Owner                                       | Security Manager                                                    |
+|-------------------------------------------------------------------------------------------------------------------------------|----------------------------------------------------------|---------------------------------------------------------------------|
+| Access Security and Risk Management                                                                                           | Yes                                                      | Yes                                                                 |
+| Access originating items<!-- TODO reword all "originating items" instances for clarity --> (Codacy repositories, Jira issues) | Yes<!-- TODO admin may not have access here? Confirm --> | Inherits original permissions                                       |
+| Manage integrations                                                                                                           | Yes                                                      | <!-- TODO confirm if security managers cans manage integrations --> |
+| Assign and revoke the Security Manager role                                                                                   | Yes                                                      | No                                                                  |
 
 To assign the Security Manager role to a user:
 
