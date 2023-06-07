@@ -14,7 +14,7 @@ Under Security and Risk Management, you have the following pages to help you mon
 
 The Security and Risk Management dashboard provides a general overview of security items, based on their status.
 
-To access the dashboard, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
+To access the dashboard, select an organization from the top navigation bar and select **Security and Risk** on the left navigation sidebar.
 
 The dashboard includes five areas:
 
@@ -108,4 +108,4 @@ The following table defines item priorities and days to fix the underlying Codac
 
 Codacy retains open items indefinitely and closed items for one year.
 
-Deleting a repository deletes all the items belonging to that repository.
+Deleting a repository deletes all open items belonging to that repository.
