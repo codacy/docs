@@ -34,7 +34,7 @@ The Security and Risk Management item list displays a list of items, filtered by
 
 To access the item list, access the [dashboard](#dashboard) and click the **Review** button under an area of interest, based on the desired filtering.
 
-To open the originating issue of an item, click the **Details** column of the item of interest.
+To navigate to an item's underlying issue, click the **Details** column of the item of interest.
 
 ![Security and Risk Management item list](images/security-risk-management-item-list.png)
 
@@ -46,7 +46,7 @@ The following section explains how to integrate with each of the supported platf
 
 === "Codacy"
 
-    The Codacy integration is active by default and can't be deactivated.
+    Security and Risk Management always displays items caused by Codacy Security issues. This feature can't be deactivated.
 
 === "Jira Cloud"
 
@@ -71,7 +71,7 @@ The following section explains how to integrate with each of the supported platf
 
     1.  Open your organization **Security and Risk** page and click the button **Configure** to open the configuration page.
 
-    1.  Find the Jira entry under the Integrations area and click the **Options** button (identified by three dots), then select **Uninstall** and confirm.
+    1.  Find the Jira entry under the Integrations list and click the **Options** button (identified by three dots), then select **Uninstall** and confirm.
 
 ## Opening and closing items
 
