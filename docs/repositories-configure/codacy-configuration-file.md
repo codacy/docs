@@ -17,6 +17,7 @@ Codacy supports configuring certain advanced features through a configuration fi
 !!! note
     -   If a Codacy configuration file exists in your repository, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must ignore files using the configuration file instead.
     -   To disable a tool you must use the [Code patterns page](configuring-code-patterns.md) instead.
+    -   {% include-markdown "../assets/includes/coverage-ignore.md" %}
 
 To use a Codacy configuration file:
 
