@@ -24,11 +24,11 @@ To join or add an organization after completing the sign-up process, click **Org
 ![Joining an organization](images/organization-join.png)
 
 !!! note
-    **On Codacy Cloud**, organization owners [control if team members need an approval](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization) before joining their organizations.
+    **On Codacy Cloud**, organization owners<!-- TODO DOCS-495 --> [control if team members need an approval](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization) before joining their organizations.
 
 ## Adding people to your organization {: id="adding-people"}
 
-**On Codacy Cloud**, organization owners can also add teammates to their organization on Codacy. This is useful to allow Codacy to analyze commits to private repositories by committers who haven't signed up to Codacy or joined the organization yet.
+**On Codacy Cloud**, organization owners<!-- TODO DOCS-495 --> can also add teammates to their organization on Codacy. This is useful to allow Codacy to analyze commits to private repositories by committers who haven't signed up to Codacy or joined the organization yet.
 
 !!! tip
     You can also use the Codacy API to [add people to your Codacy organization](../codacy-api/examples/adding-people-to-codacy-programmatically.md). This is useful while adding a large amount of people or to automatically add new members of your Git provider organization to Codacy.
@@ -52,13 +52,13 @@ To add people to your organization:
 
 ## Removing people from your organization {: id="removing-people"}
 
-Members of an organization on Codacy can remove themselves from the organization, and organization owners can also remove other members and committers.
+Members of an organization on Codacy can remove themselves from the organization, and organization owners<!-- TODO DOCS-495 --> can also remove other members and committers.
 
 When a member or committer leaves an organization:
 
 -   Codacy stops analyzing their commits to private repositories in the organization
 -   **On GitLab and Bitbucket organizations** Codacy stops analyzing repositories that were added by the member
--   Organizations must have at least one owner, so when the last organization owner leaves the organization they must either add someone else as owner or [delete the organization](../organizations/what-are-organizations.md#deleting-an-organization)
+-   Organizations must have at least one owner<!-- TODO DOCS-495 -->, so when the last organization owner<!-- TODO DOCS-495 --> leaves the organization they must either add someone else as owner or [delete the organization](../organizations/what-are-organizations.md#deleting-an-organization)
 
 To remove people from your organization open your organization **Settings**, page **People**, and click the icon next to the member or committer you wish to remove:
 
