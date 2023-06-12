@@ -75,11 +75,9 @@ The following section explains how to integrate with each of the supported platf
 
 ## Opening and closing items
 
-<!-- TODO Introductory paragraph with shared concepts
-There was an admonition here to explain why the dashboard may be empty and how to fix it. That admonition is now under the Codacy section below, so we need an introductory sentence here to point the user to that section.
-
-- To find issues and automatically open and close items, Codacy must detect when the underlying issues are introduced and fixed.
--->
+!!! important
+    To automatically open and close items, Codacy must detect when the underlying vulnerabilities are introduced and fixed. The detection logic is platform-dependent and is described below.
+    
 Codacy automatically opens a security item whenever one of the configured source platforms detects a security vulnerability:
 
 -   [Every new item is assigned a priority](#item-priorities-and-deadlines) based on the importance of the underlying vulnerability. Each priority also defines a deadline to fix the underlying vulnerability.
