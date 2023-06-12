@@ -3,7 +3,7 @@
 !!! info "This is a beta feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
-The **Security and Risk Management** feature helps you <span class="skip-vale">quickly</span> identify, track, and address security vulnerabilities by automatically opening time-bound, prioritized action items whenever Codacy detects Security issues in your organization repositories or in your connected Jira Cloud instance.
+The **Security and Risk Management** feature helps you <span class="skip-vale">quickly</span> identify, track, and address security vulnerabilities by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira Cloud instance.
 
 Under Security and Risk Management, you can find the following pages to help you monitor your security vulnerabilities:
 
@@ -80,7 +80,7 @@ The following section explains how to integrate with each of the supported platf
     
 Codacy automatically opens a security item whenever one of the configured source platforms detects a security vulnerability:
 
--   [Every new item is assigned a priority](#item-priorities-and-deadlines) based on the importance of the underlying vulnerability. Each priority also defines a deadline to fix the underlying vulnerability.
+-   [Every new item is assigned a priority](#item-priorities-and-deadlines) based on the importance of the underlying vulnerability on the source platform. Each priority also defines a deadline to fix the underlying vulnerability.
 
 -   [Every new item is assigned a status](#item-statuses) based on the number of days left to fix the underlying vulnerability. As deadlines are approached, met, or missed, items transition through different statuses.
 
