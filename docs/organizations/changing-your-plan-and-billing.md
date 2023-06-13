@@ -20,7 +20,7 @@ If you have any questions or need help with your account, please contact <mailto
 **On Codacy Cloud**, organization owners control if team members need an approval before joining their organization. Codacy updates your seats automatically when new users join an organization.
 
 !!! note
-    -   **If you're using GitHub Marketplace,** this configuration isn't available and team members must always wait for an organization owner to manually approve their requests to join the organization.
+    -   **If you're using GitHub Marketplace,** this configuration isn't available and team members must always wait for an organization owner<!-- TODO DOCS-495 Don't update, we're in the context of GH marketplace context --> to manually approve their requests to join the organization.
 
     -   In some **Enterprise plans**, Codacy automatically adds to the organization new people that commit to your private repositories. However, they still need to join the organization on the Codacy app if they want to use the UI.
 
