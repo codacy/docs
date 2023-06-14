@@ -333,10 +333,10 @@ Follow these instructions to validate that your coverage setup is working correc
     </tr>
     <tr>
         <td>
-            Codacy didn't analyze the commit on a private repository because the commit author isn't a member of the Codacy organization.
+            Codacy didn't analyze the commit on a private repository because the committer doesn't belong to the Codacy organization.
         </td>
         <td>
-            Make sure that you <a href="../organizations/managing-people/#adding-people">add all commit authors as members of the Codacy organization</a>.
+            Make sure that you <a href="../organizations/managing-people/#adding-people">add all committers to your Codacy organization</a>.
         </td>
     </tr>
     <tr>

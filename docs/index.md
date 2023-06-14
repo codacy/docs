@@ -39,11 +39,11 @@ description: Documentation homepage for the Codacy Quality automated code review
 <div class="topic-row">
   <a class="topic-card"  href="organizations/managing-people/">
     <div class="tc-icon">
-      <img alt="Adding and managing Authors" src="/assets/images/icon-user-management.svg">
+      <img alt="Adding and managing people" src="/assets/images/icon-user-management.svg">
     </div>
     <div class="tc-content">
       <div>Managing people in organizations</div>
-      <div>Invite your team members to join Codacy to analyze their commits on private repositories.</div>
+      <div>Invite your teammates to join Codacy to analyze their commits on private repositories.</div>
     </div>
   </a>
   <a class="topic-card" href="coverage-reporter/">
