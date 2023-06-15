@@ -83,9 +83,9 @@ The following section explains how to integrate with each of the supported platf
 
 Codacy automatically opens a security item whenever one of the configured source platforms detects a security vulnerability:
 
--   [Every new item is assigned a priority](#item-priorities-and-deadlines) based on the importance of the underlying vulnerability on the source platform. Each priority also defines a deadline to fix the underlying vulnerability.
+The importance of the vulnerability defines the [priority of the item](#item-priorities-and-deadlines). In turn, the priority of the item defines a deadline to fix the vulnerability.
 
--   [Every new item is assigned a status](#item-statuses) based on the number of days left to fix the underlying vulnerability. As deadlines are approached, met, or missed, items transition through different statuses.
+The time to the deadline sets the [status of the item](#item-statuses). The item then transitions through different statuses as the deadline is approached, met, or missed.
 
 Codacy automatically closes an existing security item when the source platform stops detecting the associated security vulnerability.
 
@@ -93,9 +93,13 @@ The following section details when Codacy opens and closes items for each suppor
 
 === "Codacy"
 
-    -   Codacy automatically opens a new item when it detects a new Security issue on the default branch of a repository.
+    Codacy automatically opens a new item when it detects a new Security issue on the default branch of a repository.
 
-    -   Codacy automatically closes an item when it stops detecting the underlying issue, when [the underlying issue is ignored](../repositories/issues.md#ignoring-and-managing-issues), or when [the tool that found the underlying issue is disabled](../repositories-configure/configuring-code-patterns.md).
+    Codacy automatically closes an item in either of the following cases:
+    
+    -   Codacy detects that the underlying issue isn't present in the most recent analyzed commit and therefore has been fixed
+    -   [The underlying issue is ignored](../repositories/issues.md#ignoring-and-managing-issues)
+    -   [The tool that found the underlying issue is disabled](../repositories-configure/configuring-code-patterns.md)
 
     !!! note
         To make sure that Codacy detects Security issues correctly:
@@ -106,9 +110,9 @@ The following section details when Codacy opens and closes items for each suppor
 
 === "Jira Cloud"
 
-    -   Codacy automatically opens a new item when it detects a new Jira issue with a "security" label.
+    Codacy automatically opens a new item when it detects a new Jira issue with a "security" label.
 
-    -   Codacy automatically closes an item when it detects that the underlying Jira issue is marked as Closed.
+    Codacy automatically closes an item when it detects that the underlying Jira issue is marked as Closed.
 
     !!! note
         Codacy retrieves updates from Jira once a day. To make sure that Codacy detects Jira issues correctly, assign the "security" label when creating the issue or immediately after.
