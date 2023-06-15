@@ -49,7 +49,7 @@ The following section explains how to integrate with each of the supported platf
 
 === "Codacy"
 
-    Security and Risk Management always displays items caused by Codacy Security issues. This feature can't be deactivated.
+    Security and Risk Management always displays items caused by Codacy security issues. This feature can't be deactivated.
 
 === "Jira Cloud"
 
@@ -79,7 +79,7 @@ The following section explains how to integrate with each of the supported platf
 ## Opening and closing items
 
 !!! important
-    To automatically open and close items, Codacy must detect when the underlying vulnerabilities are introduced and fixed. The detection logic is platform-dependent and is described below.
+    To automatically open and close items, Codacy must detect when the vulnerabilities are introduced and fixed. The detection logic is platform-dependent and is described below.
 
 Codacy automatically opens a security item whenever one of the configured source platforms detects a security vulnerability:
 
@@ -93,16 +93,16 @@ The following section details when Codacy opens and closes items for each suppor
 
 === "Codacy"
 
-    Codacy automatically opens a new item when it detects a new Security issue on the default branch of a repository.
+    Codacy automatically opens a new item when it detects a new security issue on the default branch of a repository.
 
     Codacy automatically closes an item in either of the following cases:
     
-    -   Codacy detects that the underlying issue isn't present in the most recent analyzed commit and therefore has been fixed
-    -   [The underlying issue is ignored](../repositories/issues.md#ignoring-and-managing-issues)
-    -   [The tool that found the underlying issue is disabled](../repositories-configure/configuring-code-patterns.md)
+    -   Codacy detects that the associated issue isn't present in the most recent analyzed commit and therefore is fixed
+    -   You [ignore the associated issue](../repositories/issues.md#ignoring-and-managing-issues)
+    -   You [disable the tool](../repositories-configure/configuring-code-patterns.md) that found the associated issue
 
     !!! note
-        To make sure that Codacy detects Security issues correctly:
+        To make sure that Codacy detects security issues correctly:
 
         -   [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.
         -   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
@@ -112,10 +112,11 @@ The following section details when Codacy opens and closes items for each suppor
 
     Codacy automatically opens a new item when it detects a new Jira issue with a "security" label.
 
-    Codacy automatically closes an item when it detects that the underlying Jira issue is marked as Closed.
+    Codacy automatically closes an item when it detects that the associated Jira issue is marked as Closed.
 
     !!! note
-        Codacy retrieves updates from Jira once a day. To make sure that Codacy detects Jira issues correctly, assign the "security" label when creating the issue or immediately after.
+        -   Codacy retrieves updates from Jira once a day.
+        -   To make sure that Codacy detects Jira issues correctly, assign the "security" label when creating the issue or immediately after.
 
 ## Item statuses
 
@@ -157,7 +158,7 @@ The following table describes how item statuses map to deadlines:
 
 ## Item priorities and deadlines
 
-The following table defines security item priorities and days to fix the underlying issue, based on the importance of the issue:
+The following table defines security item priorities and days to fix the associated issue, based on the importance of the issue:
 
 | **Security item<br/>priority** | <br/>Days to close | Codacy<br/>security issue severity | Jira<br/>security issue priority |
 |--------------------------------|--------------------|------------------------------------|----------------------------------|
