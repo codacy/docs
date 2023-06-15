@@ -153,7 +153,7 @@ The following table describes how item statuses map to deadlines:
 
 ## Item priorities and deadlines
 
-The following table defines security item priorities and days to fix the underlying issue, based on the importance of the underlying issue:
+The following table defines security item priorities and days to fix the underlying issue, based on the importance of the issue:
 
 | **Security item<br/>priority** | <br/>Days to close | Codacy<br/>security issue severity | Jira<br/>security issue priority |
 |--------------------------------|--------------------|------------------------------------|----------------------------------|
