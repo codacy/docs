@@ -49,15 +49,21 @@ When viewing the item list:
     -   [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.
     -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
 
-Codacy automatically opens a new item when it detects a new Security issue on the default branch of a repository:
+### Opening items
 
--   [Every new item is assigned a priority](#item-priorities-and-deadlines) based on the severity of the underlying issue. Each priority also defines a deadline to fix the underlying issue.
+Codacy automatically opens a new item when it detects a new security issue on the default branch of a repository.
 
--   [Every new item is assigned a status](#item-statuses) based on the number of days left before the deadline to fix the underlying issue. As deadlines are approached, met, or missed, items transition through different statuses.
+The severity of the issue defines the [priority of the item](#item-priorities-and-deadlines). In turn, the priority of the item defines a deadline to fix the issue.
 
-Codacy automatically closes an item when it stops detecting the underlying issue, when [the underlying issue is ignored](../repositories/issues.md#ignoring-and-managing-issues), or when the [tool that found the underlying issue is disabled](../repositories-configure/configuring-code-patterns.md).
+The time to the deadline sets the [status of the item](#item-statuses). The item then transitions through different statuses as the deadline is approached, met, or missed.
 
-For example, Codacy automatically opens an item with Critical priority upon detecting a new Security issue of Critical severity on the default branch of a repository. If the Security issue is fixed before the deadline, the status of the item changes to Closed on time. If the issue isn't fixed before the deadline, the status of the item changes to Overdue.
+### Closing items
+
+Codacy automatically closes an item in either of the following cases:
+
+-   Codacy detects that the underlying issue isn't present in the most recent analyzed commit and therefore has been fixed
+-   [The underlying issue is ignored](../repositories/issues.md#ignoring-and-managing-issues)
+-   [The tool that found the underlying issue is disabled](../repositories-configure/configuring-code-patterns.md)
 
 ## Item statuses
 
