@@ -19,6 +19,8 @@ To integrate Codacy with your Git workflow, follow these steps:
 
 ## 1. Configuring the quality gate rules {: id="configuring-gate"}
 
+<!--TODO PLUTO-505 Link content with gate policies-->
+
 [Review and adjust the quality gates](../repositories-configure/adjusting-quality-gates.md) of your repository to decide which pull requests should fail the Codacy quality gate.
 
 !!! tip

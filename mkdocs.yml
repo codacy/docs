@@ -613,6 +613,7 @@ nav:
           - organizations/managing-repositories.md
           - organizations/using-coding-standards.md
           - organizations/copying-code-patterns-between-repositories.md
+          - organizations/using-gate-policies.md
           - organizations/configuring-default-git-provider-integration-settings.md
           - organizations/managing-people.md
           - organizations/roles-and-permissions-for-organizations.md
