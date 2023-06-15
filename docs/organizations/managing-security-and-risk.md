@@ -81,7 +81,7 @@ The following section explains how to integrate with each of the supported platf
 !!! important
     To automatically open and close items, Codacy must detect when the vulnerabilities are introduced and fixed. The detection logic is platform-dependent and is described below.
 
-Codacy automatically opens a security item whenever one of the configured source platforms detects a security vulnerability:
+Codacy automatically opens a security item whenever one of the configured source platforms detects a security vulnerability.
 
 The importance of the vulnerability defines the [priority of the item](#item-priorities-and-deadlines). In turn, the priority of the item defines a deadline to fix the vulnerability.
 
