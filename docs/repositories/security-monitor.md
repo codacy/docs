@@ -8,6 +8,9 @@
 
 The **Security Monitor** provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.
 
+!!! tip
+    For an organization-level overview of security vulnerabilities, use the [Security and Risk Management](../organizations/managing-security-and-risk.md) dashboard instead.
+    
 By default, the page displays the overview for the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display information for other branches.
 
 ![Security Monitor](images/security-monitor.png)
