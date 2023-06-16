@@ -167,15 +167,15 @@ The following table defines security item priorities and days to fix the associa
 | **Medium**                     | 90                 | Medium                             | Medium                           |
 | **Low**                        | 120                | Minor                              | Low and other                    |
 
-## Managing access to Security and Risk Management
+## Managing access to security and risk management
 
-To better track and address security vulnerabilities, organization admins can extend access to Security and Risk Management by assigning the Security Manager role to organization members.
+To better track and address security vulnerabilities, organization admins can extend access to security and risk management by assigning the Security Manager role to organization members.
 
 The Security Manager role is independent of the Git provider role of an organization member and provides only the permissions necessary to monitor security vulnerabilities, following the principle of least privilege:
 
 | Permission                                                  | Organization Admin | Security Manager           |
 |-------------------------------------------------------------|--------------------|----------------------------|
-| Access Security and Risk Management                         | Yes                | Yes                        |
+| Access security and risk management                         | Yes                | Yes                        |
 | Access underlying issues (Codacy repositories, Jira issues) | Yes                | Keeps original permissions |
 | Manage integrations                                         | Yes                | ?<!-- TODO confirm  -->    |
 | Assign and revoke the Security Manager role                 | Yes                | No                         |
@@ -183,15 +183,15 @@ The Security Manager role is independent of the Git provider role of an organiza
 
 To assign the Security Manager role:
 
-1.  Access the **Security and risk management configuration** page: select an organization from the top navigation bar, then **Security and Risk** on the left navigation sidebar, and click the **Configure** button in the top right-hand corner of the page.
+1.  Access the **Security and risk management configuration** page by selecting an organization from the top navigation bar, then **Security and risk** on the left navigation sidebar, and finally clicking the **Configure** button in the top right-hand corner of the page.
 
 1.  In the **Permissions** area, use the search field to find the relevant user and click the user's name.
 
-    ![Security and Risk Management access management](images/security-risk-management-access-management.png)
+    ![security and risk management access management](images/security-risk-management-access-management.png)
 
 To revoke the Security Manager role:
 
-1.  Access the **Security and Risk Management configuration** page.
+1.  Access the **Security and risk management configuration** page.
 
 1.  In the **Permissions** area, scroll the list to find the relevant user.
 
