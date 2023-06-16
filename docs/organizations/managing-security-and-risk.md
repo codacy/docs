@@ -3,18 +3,18 @@
 !!! info "This is a beta feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
-The **Security and Risk Management** feature helps you <span class="skip-vale">quickly</span> identify, track, and address security vulnerabilities by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira Cloud instance.
+The security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security vulnerabilities by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira Cloud instance.
 
-Under Security and Risk Management, you can find the following pages to help you monitor your security vulnerabilities:
+Under security and risk management, you can find the following pages to help you monitor your security vulnerabilities:
 
 -   [Dashboard](#dashboard)
 -   [Item list](#item-list)
 
 ## Dashboard
 
-The Security and Risk Management dashboard provides a general overview of security items, based on their status.
+The **Security and risk management** dashboard provides a general overview of security items, based on their status.
 
-To access the dashboard, select an organization from the top navigation bar and select **Security and Risk** on the left navigation sidebar.
+To access the dashboard, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
 
 The dashboard includes five areas:
 
@@ -26,11 +26,11 @@ The dashboard includes five areas:
 
 Each of these areas displays a count of matching items and a **Review** button to access a filtered list displaying the matching items.
 
-![Security and Risk Management dashboard](images/security-risk-management-dashboard.png)
+![security and risk management dashboard](images/security-risk-management-dashboard.png)
 
 ## Item list
 
-The Security and Risk Management item list displays a list of items, filtered by status and sorted by due date ascending.
+The **Security and risk management items** page displays a list of items, filtered by status and sorted by due date ascending.
 
 To access the item list, access the [dashboard](#dashboard) and click the **Review** button under an area of interest, based on the desired filtering.
 
@@ -39,7 +39,7 @@ When viewing the item list:
 -   To update the filtering criteria, click the **Status** or **Priority** drop-downs above the list.
 -   To find out more about an item, click its **Details** column. This redirects you to a filtered view of the **Repository issues** page, showing only the item of interest.
 
-![Security and Risk Management item list](images/security-risk-management-item-list.png)
+![Security and risk management items](images/security-risk-management-item-list.png)
 
 ## Managing integrations
 
@@ -49,7 +49,7 @@ The following section explains how to integrate with each of the supported platf
 
 === "Codacy"
 
-    Security and Risk Management always displays items caused by Codacy security issues. This feature can't be deactivated.
+    Security and risk management always displays items caused by Codacy security issues. This feature can't be deactivated.
 
 === "Jira Cloud"
 
@@ -59,7 +59,7 @@ The following section explains how to integrate with each of the supported platf
 
     1.  On the right-hand side of the page, under the Integrations list, find the Jira entry and click the **Install** button. This redirects you to Atlassian's website.
 
-        ![Security and Risk Management Jira integration](images/security-risk-management-integration-jira.png)
+        ![Security and risk management Jira integration](images/security-risk-management-integration-jira.png)
 
     1.  On Atlassian's website, authorize Codacy to access your Atlassian account. Once successful, you're redirected back to Codacy.
 
