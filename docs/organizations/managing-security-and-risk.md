@@ -59,7 +59,7 @@ The following section explains how to integrate with each of the supported platf
 
     1.  On the right-hand side of the page, under the Integrations list, find the Jira entry and click the **Install** button. This redirects you to Atlassian's website.
 
-        ![Security and risk management Jira integration](images/security-risk-management-integration-jira.png)
+        ![Security and risk management Jira Cloud integration](images/security-risk-management-integration-jira.png)
 
     1.  On Atlassian's website, authorize Codacy to access your Atlassian account. Once successful, you're redirected back to Codacy.
 
@@ -177,4 +177,4 @@ Codacy retains open items indefinitely and closed items for one year.
 
 === "Jira Cloud"
 
-    Uninstalling the Jira integration deletes all associated open items.
+    Uninstalling the Jira Cloud integration deletes all associated open items.
