@@ -167,6 +167,9 @@ The following table defines security item priorities and days to fix the associa
 | **Medium**                     | 90                 | Medium                             | Medium                           |
 | **Low**                        | 120                | Minor                              | Low and other                    |
 
+<!--
+TODO Update this section once the behavior is consistent. See https://codacy.slack.com/archives/C050XTVETSQ/p1687167901474059
+
 ## Data retention
 
 Codacy retains open items indefinitely and closed items for one year.
@@ -178,3 +181,4 @@ Codacy retains open items indefinitely and closed items for one year.
 === "Jira Cloud"
 
     Uninstalling the Jira Cloud integration deletes all associated open items.
+-->
