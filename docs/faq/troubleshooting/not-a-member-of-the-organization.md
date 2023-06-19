@@ -18,7 +18,7 @@ There may be different reasons for this issue to happen:
 
 -   **The user making the commit hasn't signed in to Codacy Cloud and joined the organization yet**
 
-    The user must [join the organization](../../organizations/managing-people.md#joining) or, if you're the organization owner, you can [add the user](../../organizations/managing-people.md#adding-people) instead.
+    The user must [join the organization](../../organizations/managing-people.md#joining) or, if you're the organization admin, you can [add the user](../../organizations/managing-people.md#adding-people) instead.
 
 -   **The commit email address isn't associated with the account of a Codacy Cloud user**
 
