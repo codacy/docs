@@ -66,7 +66,7 @@ Use the options in the cogwheel menu of each issue to:
     See [how to restore ignored issues](#restoring-ignored-issues).
 
     !!! tip
-        Organization owners can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
+        Organization admins can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
 
 -   **Disable the code pattern** that detected the issue.
 
