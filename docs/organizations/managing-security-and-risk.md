@@ -177,4 +177,4 @@ Codacy retains open items indefinitely and closed items for one year.
 
 === "Jira Cloud"
 
-    Uninstalling the Jira integration removes any associated open items from the Security and Risk dashboard. Closed items are retained for one year.
+    Uninstalling the Jira integration deletes all associated open items.
