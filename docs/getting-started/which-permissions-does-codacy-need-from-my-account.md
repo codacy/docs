@@ -90,11 +90,6 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
       <td>Read Only</td>
       <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</td>
     </tr>
-    <tr>
-      <td>Git SSH keys</td>
-      <td>Read & Write</td>
-      <td><a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
-    </tr>
   </tbody>
 </table>
 
@@ -151,7 +146,7 @@ If you log in with Bitbucket, Codacy requires the following [permissions/scopes]
   <tbody>
     <tr>
       <td><code>account:write</code></td>
-      <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis. Furthermore, <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
+      <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</td>
     </tr>
     <tr>
       <td><code>repository:admin</code></td>
@@ -206,7 +201,7 @@ If you need to use an integration that you have previously revoked, log in again
 
 ## Why does Codacy ask for permission to create SSH keys?
 
-Codacy needs to create an SSH key in your account to clone repositories and any associated git submodules.
+When you add a repository to Codacy, Codacy adds a new SSH key to your repository using an integration with your Git provider. Codacy uses this SSH key every time it needs to clone that repository.
 
 **Codacy only adds read-only SSH keys to be able to clone repositories** and won't have access to any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also [revoke the keys created by Codacy at any time](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-ssh-keys). Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.
 

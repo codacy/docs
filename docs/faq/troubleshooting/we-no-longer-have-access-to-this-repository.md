@@ -4,6 +4,8 @@ description: Troubleshoot and fix issues that prevent Codacy from cloning your p
 
 # We no longer have access to this repository, check your SSH keys
 
+<!--TODO PLUTO-630 Update content-->
+
 Codacy uses SSH keys to clone your private repositories. Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, an SSH key can be added either:
 
 -   Directly to the repository itself, if the user has permissions to add SSH keys to the repository
