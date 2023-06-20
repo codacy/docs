@@ -183,7 +183,7 @@ The Security Manager role is independent of the Git provider role of an organiza
 
 To assign the Security Manager role:
 
-1.  Access the **Security and risk management configuration** page by selecting an organization from the top navigation bar, then **Security and risk** on the left navigation sidebar, and finally clicking the **Configure** button in the top right-hand corner of the page.
+1.  Select an organization from the top navigation bar, then **Security and risk** on the left navigation sidebar, then click the **Configure** button in the top right-hand corner of the page. This opens the **Security and risk management configuration** page.
 
 1.  In the **Permissions** area, use the search field to find the relevant user and click the user's name.
 
