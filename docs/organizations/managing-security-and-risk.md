@@ -36,7 +36,7 @@ To access the item list, access the [dashboard](#dashboard) and click the **Revi
 
 When viewing the item list:
 
--   To update the filtering criteria, click the **Status** drop-down above the list.
+-   To update the filtering criteria, click the **Status** or **Priority** drop-downs above the list.
 -   To find out more about an item, click its **Details** column. This redirects you to a filtered view of the **Repository issues** page, showing only the item of interest.
 
 ![Security and Risk Management item list](images/security-risk-management-item-list.png)
