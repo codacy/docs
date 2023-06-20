@@ -49,7 +49,7 @@ The following section explains how to integrate with each of the supported platf
 
 === "Codacy"
 
-    Security and risk management always displays items caused by Codacy security issues. This feature can't be deactivated.
+    Security and risk management always displays items opened after detecting Codacy security issues. This feature can't be deactivated.
 
 === "Jira Cloud"
 
@@ -64,7 +64,7 @@ The following section explains how to integrate with each of the supported platf
     1.  On Atlassian's website, authorize Codacy to access your Atlassian account. Once successful, you're redirected back to Codacy.
 
         !!! note
-            Use a Jira account with admin permissions when authorizing Codacy. This lets Codacy access all issues.
+            Use a Jira account with admin permissions when authorizing Codacy. This lets Codacy access all issues, since the integration inherits the permissions of the authorizing account.
 
         Upon installation, Codacy automatically imports all Jira tickets that were created within the 90-day period preceding the integration and tagged with the label "security" and displays them on the item list, along with items from other sources.
         
