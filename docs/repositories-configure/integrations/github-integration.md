@@ -90,6 +90,8 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
 
     📢 [Activate suggested fixes now](#enabling) and [let us know](mailto:support@codacy.com?subject=Feedback on Suggest fixes) what you think!
 
+<!-- TODO CY-6853 AI-enhanced comments -->
+
 ## See also
 
 -   [Integrating Codacy with your Git workflow](../../getting-started/integrating-codacy-with-your-git-workflow.md)

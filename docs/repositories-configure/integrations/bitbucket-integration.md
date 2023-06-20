@@ -52,6 +52,8 @@ Adds comments on the lines of the pull request where Codacy finds new issues. Cl
 
 ![Pull request comment on Bitbucket](images/bitbucket-integration-pr-comment.png)
 
+<!-- TODO CY-6853 AI-enhanced comments -->
+
 ### Pull Request Summary
 
 !!! note "This feature isn't available for Bitbucket Server"

@@ -48,6 +48,8 @@ Adds comments on the lines of the merge request where Codacy finds new issues. C
 
 ![Merge request comment on GitLab](images/gitlab-integration-pr-comment.png)
 
+<!-- TODO CY-6853 AI-enhanced comments -->
+
 ### Pull Request Summary
 
 Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication.
