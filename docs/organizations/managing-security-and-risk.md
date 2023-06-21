@@ -32,7 +32,7 @@ Each of these areas displays a count of matching items and a **Review** button t
 
 The **Security and risk management items** page displays a list of items, filtered by status and sorted by due date ascending.
 
-To access the item list, access the [dashboard](#dashboard) and click the **Review** button under an area of interest, based on the desired filtering.
+To access the item list, access the [dashboard](#dashboard) and click the **Review** button in the area of interest, based on the desired filtering.
 
 When viewing the item list:
 
@@ -83,7 +83,7 @@ The following section explains how to integrate with each of the supported platf
 
 Codacy automatically opens a security item whenever one of the configured source platforms detects a security vulnerability.
 
-The importance of the vulnerability defines the [priority of the item](#item-priorities-and-deadlines). In turn, the priority of the item defines a deadline to fix the vulnerability.
+The importance of the vulnerability defines the [priority of the item](#item-priorities-and-deadlines). In turn, the item's priority defines a deadline to fix the associated vulnerability.
 
 The time to the deadline sets the [status of the item](#item-statuses). The item then transitions through different statuses as the deadline is approached, met, or missed.
 
@@ -160,12 +160,12 @@ The following table describes how item statuses map to deadlines:
 
 The following table defines security item priorities and days to fix the associated issue, based on the importance of the issue:
 
-| **Security item<br/>priority** | <br/>Days to close | Codacy<br/>security issue severity | Jira<br/>security issue priority |
-|--------------------------------|--------------------|------------------------------------|----------------------------------|
-| **Critical**                   | 30                 | Critical                           | Blocker                          |
-| **High**                       | 60                 | -                                  | High                             |
-| **Medium**                     | 90                 | Medium                             | Medium                           |
-| **Low**                        | 120                | Minor                              | Low and other                    |
+| Security item<br/>priority | <br/>Days to close | Codacy<br/>security issue severity | Jira<br/>security issue priority |
+|----------------------------|--------------------|------------------------------------|----------------------------------|
+| Critical                   | 30                 | Critical                           | Blocker                          |
+| High                       | 60                 | -                                  | High                             |
+| Medium                     | 90                 | Medium                             | Medium                           |
+| Low                        | 120                | Minor                              | Low and other                    |
 
 ## Managing access to security and risk management
 
@@ -176,14 +176,14 @@ The Security Manager role is independent of the Git provider role of an organiza
 | Permission                                                  | Organization Admin | Security Manager           |
 |-------------------------------------------------------------|--------------------|----------------------------|
 | Access security and risk management                         | Yes                | Yes                        |
-| Access underlying issues (Codacy repositories, Jira issues) | Yes                | Keeps original permissions |
+| Access associated issues (Codacy repositories, Jira issues) | Yes                | Keeps original permissions |
 | Manage integrations                                         | Yes                | Yes                        |
 | Assign and revoke the Security Manager role                 | Yes                | No                         |
 | All other Organization Admin permissions                    | Yes                | No                         |
 
 To assign the Security Manager role:
 
-1.  Select an organization from the top navigation bar, then **Security and risk** on the left navigation sidebar, then click the **Configure** button in the top right-hand corner of the page. This opens the **Security and risk management configuration** page.
+1.  Open your organization **Security and Risk** page and click the **Configure** button. This opens the configuration page.
 
 1.  In the **Permissions** area, use the search field to find the relevant user and click the user's name.
 
@@ -191,7 +191,7 @@ To assign the Security Manager role:
 
 To revoke the Security Manager role:
 
-1.  Access the **Security and risk management configuration** page.
+1.  Open your organization **Security and Risk** page and click the **Configure** button. This opens the configuration page.
 
 1.  In the **Permissions** area, scroll the list to find the relevant user.
 
