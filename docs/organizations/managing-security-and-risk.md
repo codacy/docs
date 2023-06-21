@@ -3,16 +3,16 @@
 !!! info "This is a beta feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
-The security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security vulnerabilities by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira Cloud instance.
+The security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira Cloud instance.
 
-Under security and risk management, you can find the following pages to help you monitor your security vulnerabilities:
+Under security and risk management, you can find the following pages to help you monitor your security issues:
 
 -   [Dashboard](#dashboard)
 -   [Item list](#item-list)
 
 ## Dashboard
 
-The **Security and risk management** dashboard provides a general overview of security items, based on their status.
+The **Security and risk management** dashboard provides a general overview of items, based on their status.
 
 To access the dashboard, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
 
@@ -43,7 +43,7 @@ When viewing the item list:
 
 ## Managing integrations
 
-Integrations let you detect security vulnerabilities across a number of platforms and display them all as security items on the unified item list.
+Integrations let you detect security issues across a number of platforms and display them all as items on the unified item list.
 
 The following section explains how to integrate with each of the supported platforms.
 
@@ -52,6 +52,8 @@ The following section explains how to integrate with each of the supported platf
     Security and risk management always displays items opened after detecting Codacy security issues. This feature can't be deactivated.
 
 === "Jira Cloud"
+
+    ### Installing the Jira Cloud integration
 
     To install the Jira Cloud integration:
 
@@ -63,12 +65,14 @@ The following section explains how to integrate with each of the supported platf
 
     1.  On Atlassian's website, authorize Codacy to access your Atlassian account. Once successful, you're redirected back to Codacy.
 
-        !!! note
-            Use a Jira account with admin permissions when authorizing Codacy. This lets Codacy access all issues, since the integration inherits the permissions of the authorizing account.
+    Upon installation, Codacy imports all Jira tickets that were created within the 90-day period preceding the integration and tagged with the label "security" and displays them on the item list, along with items from other sources.
 
-        Upon installation, Codacy automatically imports all Jira tickets that were created within the 90-day period preceding the integration and tagged with the label "security" and displays them on the item list, along with items from other sources.
-        
-        Jira-related items are then synchronized daily with the matching Jira issues throughout their lifecycle.
+    Jira-related items are then synchronized daily with the matching Jira issues throughout their lifecycle.
+
+    !!! note
+        Use a Jira account with admin permissions when authorizing Codacy. This lets Codacy access all issues, since the integration inherits the permissions of the authorizing account.
+
+    ### Uninstalling the Jira Cloud integration
 
     To uninstall the Jira integration:
 
@@ -79,23 +83,22 @@ The following section explains how to integrate with each of the supported platf
 ## Opening and closing items
 
 !!! important
-    To automatically open and close items, Codacy must detect when the vulnerabilities are introduced and fixed. The detection logic is platform-dependent and is described below.
+    To open and close items, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.
 
-Codacy automatically opens a security item whenever one of the configured source platforms detects a security vulnerability.
+Codacy opens an item whenever one of the configured source platforms detects a security issue. The new item is assigned a priority and a status:
 
-The importance of the vulnerability defines the [priority of the item](#item-priorities-and-deadlines). In turn, the item's priority defines a deadline to fix the associated vulnerability.
+-   The importance of the security issue defines the [priority of the item](#item-priorities-and-deadlines). In turn, the item's priority defines a deadline to fix the associated issue.
+-   The time to the deadline sets the [status of the item](#item-statuses). The item then transitions through different statuses as the deadline is approached, met, or missed.
 
-The time to the deadline sets the [status of the item](#item-statuses). The item then transitions through different statuses as the deadline is approached, met, or missed.
-
-Codacy automatically closes an existing security item when the source platform stops detecting the associated security vulnerability.
+Codacy closes an existing item when the source platform stops detecting the associated security issue.
 
 The following section details when Codacy opens and closes items for each supported platform.
 
 === "Codacy"
 
-    Codacy automatically opens a new item when it detects a new security issue on the default branch of a repository.
+    Codacy opens a new item when it detects a new security issue on the default branch of a repository.
 
-    Codacy automatically closes an item in either of the following cases:
+    Codacy closes an item in either of the following cases:
     
     -   Codacy detects that the associated issue isn't present in the most recent analyzed commit and therefore is fixed
     -   You [ignore the associated issue](../repositories/issues.md#ignoring-and-managing-issues)
@@ -110,9 +113,9 @@ The following section details when Codacy opens and closes items for each suppor
 
 === "Jira Cloud"
 
-    Codacy automatically opens a new item when it detects a new Jira issue with a "security" label.
+    Codacy opens a new item when it detects a new Jira issue with a "security" label.
 
-    Codacy automatically closes an item when it detects that the associated Jira issue is marked as Closed.
+    Codacy closes an item when it detects that the associated Jira issue is marked as Closed.
 
     !!! note
         -   Codacy retrieves updates from Jira once a day.
@@ -158,28 +161,30 @@ The following table describes how item statuses map to deadlines:
 
 ## Item priorities and deadlines
 
-The following table defines security item priorities and days to fix the associated issue, based on the importance of the issue:
+The following table defines item priorities and days to fix the associated security issue, based on the importance of the issue:
 
-| Security item<br/>priority | <br/>Days to close | Codacy<br/>security issue severity | Jira<br/>security issue priority |
-|----------------------------|--------------------|------------------------------------|----------------------------------|
-| Critical                   | 30                 | Critical                           | Blocker                          |
-| High                       | 60                 | -                                  | High                             |
-| Medium                     | 90                 | Medium                             | Medium                           |
-| Low                        | 120                | Minor                              | Low and other                    |
+| Item<br/>priority | <br/>Days to close | Codacy issue<br/>severity | Jira issue<br/>priority |
+|-------------------|--------------------|---------------------------|-------------------------|
+| Critical          | 30                 | Critical                  | Blocker                 |
+| High              | 60                 | -                         | High                    |
+| Medium            | 90                 | Medium                    | Medium                  |
+| Low               | 120                | Minor                     | Low and other           |
 
 ## Managing access to security and risk management
 
-To better track and address security vulnerabilities, organization admins can extend access to security and risk management by assigning the Security Manager role to organization members.
+To better track and address security issues, organization admins can extend access to security and risk management by assigning the Security Manager role to organization members.
 
-The Security Manager role is independent of the Git provider role of an organization member and provides only the permissions necessary to monitor security vulnerabilities, following the principle of least privilege:
+The Security Manager role is independent of the Git provider role of an organization member and provides only the permissions necessary to monitor security issues, following the principle of least privilege:
 
 | Permission                                                  | Organization Admin | Security Manager           |
 |-------------------------------------------------------------|--------------------|----------------------------|
 | Access security and risk management                         | Yes                | Yes                        |
-| Access associated issues (Codacy repositories, Jira issues) | Yes                | Keeps original permissions |
+| Access associated issues (Codacy repositories, Jira issues) | Platform-dependent | Keeps original permissions |
 | Manage integrations                                         | Yes                | Yes                        |
 | Assign and revoke the Security Manager role                 | Yes                | No                         |
 | All other Organization Admin permissions                    | Yes                | No                         |
+
+### Assigning the Security Manager role
 
 To assign the Security Manager role:
 
@@ -188,6 +193,8 @@ To assign the Security Manager role:
 1.  In the **Permissions** area, use the search field to find the relevant user and click the user's name.
 
     ![security and risk management access management](images/security-risk-management-access-management.png)
+
+### Revoking the Security Manager role
 
 To revoke the Security Manager role:
 
