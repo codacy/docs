@@ -65,9 +65,9 @@ The following section explains how to integrate with each of the supported platf
 
     1.  On Atlassian's website, authorize Codacy to access your Atlassian account. Once successful, you're redirected back to Codacy.
 
-    Upon installation, Codacy imports all Jira tickets that were created within the 90-day period preceding the integration and tagged with the label "security" and displays them on the item list, along with items from other sources.
+    Upon installation, Codacy imports all open Jira issues that were created within the 90-day period preceding the integration and tagged with the label "security" (case-insensitive) and displays them on the item list, along with items from other sources.
 
-    Jira-related items are then synchronized daily with the matching Jira issues throughout their lifecycle.
+    Items are then synchronized daily with the matching Jira issues throughout their lifecycle.
 
     !!! note
         Use a Jira account with admin permissions when authorizing Codacy. This lets Codacy access all issues, since the integration inherits the permissions of the authorizing account.
@@ -119,6 +119,7 @@ The following section details when Codacy opens and closes items for each suppor
 
     !!! note
         -   Codacy retrieves updates from Jira once a day.
+        -   If an issue is opened and closed on the same day, Codacy may not detect it.
         -   To make sure that Codacy detects Jira issues correctly, assign the "security" label when creating the issue or immediately after.
 
 ## Item statuses
@@ -217,5 +218,7 @@ Codacy retains open items indefinitely and closed items for one year.
 
 === "Jira Cloud"
 
-    Uninstalling the Jira Cloud integration deletes all associated open items.
+    Uninstalling the Jira Cloud integration using the security and risk management configuration page deletes all associated open items.
+    
+    Uninstalling the Jira Cloud integration using the Jira website doesn't delete any associated items. However, it prevents Codacy from opening new Jira-related items.
 -->
