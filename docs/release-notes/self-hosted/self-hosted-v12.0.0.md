@@ -40,10 +40,6 @@ If you're updating Kubernetes to v1.25, upgrade to Codacy Self-hosted v12.0.0 be
 
 If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by running the following commands after upgrading to Codacy Self-hosted v12.0.0 but before updating Kubernetes to v1.25:
 
- ```
- command here
- ```
-
 ## Product enhancements
 
 -   Added support for [Kubernetes 1.25.\*](https://docs.codacy.com/v12.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-1306)
