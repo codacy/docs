@@ -47,9 +47,6 @@ If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs
 ## Product enhancements
 
 -   Added support for [Kubernetes 1.25.\*](https://docs.codacy.com/v12.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-1306)
-
-## Bug fixes
-
 -   Added support for the ESLint plugin [<span class="skip-vale">eslint-plugin-rxjs</span>](https://www.npmjs.com/package/eslint-plugin-rxjs). (TS-346)
 -   Added support for the ESLint plugins [<span class="skip-vale">eslint-plugin-markdown</span>](https://www.npmjs.com/package/eslint-plugin-markdown) and [<span class="skip-vale">eslint-plugin-yml</span>](https://www.npmjs.com/package/eslint-plugin-yml). (TS-121)
 
@@ -66,7 +63,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Clang-Tidy 10.0.1
 -   CodeNarc 3.2.0
 -   CoffeeLint 2.1.0
--   **Cppcheck 2.10.3 (updated from 2.10)**
+-   **[Cppcheck 2.10.3](https://github.com/danmar/cppcheck/releases/tag/2.10.3) (updated from 2.10)**
 -   Credo 1.4.0
 -   CSSLint 1.0.5
 -   dartanalyzer 2.17.0
@@ -94,7 +91,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   ShellCheck v0.9.0
 -   SonarC# 8.40
 -   SonarVB 8.15
--   **Spectral 1.16.0 (updated from 1.2.7)**
+-   **[Spectral 1.16.0](https://github.com/stoplightio/spectral/releases/tag/%40stoplight%2Fspectral-rulesets-v1.16.0) (updated from 1.2.7)**
 -   SpotBugs 4.7.3
 -   SQLint 0.2.1
 -   Staticcheck 2022.1.3
