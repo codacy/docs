@@ -13,24 +13,12 @@ These release notes are for [Codacy Self-hosted v12.0.0](https://github.com/coda
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
 <!--TODO Check these issues manually
-
 Jira issues without release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/DOCS-291
-Bugs and Community Issues:
--   https://codacy.atlassian.net/browse/TS-110
+-   https://codacy.atlassian.net/browse/TS-110 TODO review
 
 Jira issues with disabled release notes
-
-Epics:
-Bugs and Community Issues:
--   https://codacy.atlassian.net/browse/TS-374
--   https://codacy.atlassian.net/browse/TS-369
--   https://codacy.atlassian.net/browse/TS-356
--   https://codacy.atlassian.net/browse/TS-352
--   https://codacy.atlassian.net/browse/IO-624
--   https://codacy.atlassian.net/browse/IO-541
+-   https://codacy.atlassian.net/browse/TS-369 TODO Notify Paulo that we're ignoring this one: https://codacy.atlassian.net/browse/TS-369?focusedCommentId=56541
+-   https://codacy.atlassian.net/browse/TS-356 TODO we may want to notify this: ESlint: install plugin vue-scoped-css
 -->
 
 ## Upgrading Codacy Self-hosted
