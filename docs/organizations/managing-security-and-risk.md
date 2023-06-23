@@ -9,6 +9,7 @@ Under security and risk management, you can find the following pages to help you
 
 -   [Dashboard](#dashboard)
 -   [Item list](#item-list)
+-   [Configuration page](#configuration-page)
 
 ## Dashboard
 
@@ -40,6 +41,14 @@ When viewing the item list:
 -   To find out more about an item, click its **Details** column. This redirects you to a filtered view of the **Repository issues** page, showing only the item of interest.
 
 ![Security and risk management items](images/security-risk-management-item-list.png)
+
+## Configuration page
+
+The **Security and risk management configuration** page lets you [manage integrations](#managing-integrations) to fetch security vulnerability information from third-party platforms, as well as [assign or revoke the Security Manager role](#managing-access-to-security-and-risk-management) for organization members.
+
+To access the configuration page, access the [dashboard](#dashboard) or the [item list](#item-list) and click the **Configure** button in the top right-hand corner of the page.
+
+![Security and risk management configuration](images/security-risk-management-configuration.png)
 
 ## Managing integrations
 
