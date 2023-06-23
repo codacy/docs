@@ -17,10 +17,10 @@ After we enabled submodules for your organization, do the following:
     -   **Public repositories**, make sure that your Git URL uses the HTTPS protocol
     -   **Private repositories**, make sure that your Git URL uses the SSH protocol.
 
-1.  If you already have repositories on Codacy where you want to use submodules, navigate to the page **Settings** and click the button **Generate New User Key** for each of these repositories.
+1.  If you already have repositories on Codacy where you want to use submodules, add a new SSH key to your git provider account for each of these repositories. On the repository **Settings** page, you can click the link **Add new user key** to go to your Git provider page where you manage your user account SSH keys.
 
-    !!! important
-        **If you're using Bitbucket Cloud**, you must manually add the SSH key on your [user account](https://bitbucket.org/account/settings/ssh-keys/).
+    !!! note
+        **If you're using GitLab Cloud**, navigate to the page **Settings** and click the button **Generate New User Key** for each repository. Codacy generates new keys on your user account.
 
     When you add a repository to Codacy, Codacy adds a new SSH key to your repository using an integration with your Git provider. Codacy uses this SSH key every time it needs to clone that repository. When you're using submodules, Codacy needs to clone additional repositories it has no access to. Since there is no way of identifying the submodules of a repository before cloning the repository, Codacy adds the SSH keys to the user account so that it has access to the same repositories as the user.
 
@@ -34,9 +34,14 @@ After we enabled submodules for your organization, do the following:
 
 You must repeat steps 2 to 4 above every time you add new repositories with submodules to Codacy.
 
-Alternatively, you can make this the default behavior for all new repositories by enabling **Add project key to the user, by default** in **Administration**, page **Settings**.
+**If you're using Codacy Self-hosted**, you can make this the default behavior for all new repositories by enabling **Add project key to the user, by default** in **Administration**, page **Settings**.
 
 !!! important
     **If you're using Bitbucket Cloud** this setting must be turned off since automatically adding the user keys isn't supported.
 
 ![Add project key to the user by default](images/using-submodules-default-add-user-key.png)
+
+## See also
+
+-   [Add an SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
+-   [Add an SSH key to your Bitbucket account](https://support.atlassian.com/bitbucket-cloud/docs/configure-ssh-and-two-step-verification/)
