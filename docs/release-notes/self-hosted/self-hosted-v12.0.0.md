@@ -40,6 +40,13 @@ If you're updating Kubernetes to v1.25, upgrade to Codacy Self-hosted v12.0.0 be
 
 If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by following the relevant update instructions ([Loki](https://docs.codacy.com/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/chart/configuration/monitoring/#3-installing-promtail)) after upgrading to Codacy Self-hosted v12.0.0 and before updating Kubernetes to v1.25.
 
+If you have set `scheduler.enable = "true"` in `values.yaml`, before migrating to Codacy Self-hosted v12.0.0:
+
+-   Remove scheduler settings from `values.yaml`
+-   In `worker-manager`, ConfigMap set CONFIG_FORCE_codacy_kubernetes_scheduler_name: default-scheduler 
+-   Restart `worker-manager` deployment
+-   Remove any pending worker Pods
+
 ## Product enhancements
 
 -   Added support for [Kubernetes 1.25.\*](https://docs.codacy.com/v12.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-1306)
