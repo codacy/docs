@@ -44,7 +44,7 @@ When viewing the item list:
 
 ## Configuration page
 
-The **Security and risk management configuration** page lets you [manage integrations](#managing-integrations) to fetch security vulnerability information from third-party platforms, as well as [assign or revoke the Security Manager role](#managing-access-to-security-and-risk-management) for organization members.
+The **Security and risk management configuration** page lets you [manage integrations](#managing-integrations) to fetch security vulnerability information from third-party platforms<!--, as well as [assign or revoke the Security Manager role](#managing-access-to-security-and-risk-management) for organization members-->.
 
 To access the configuration page, access the [dashboard](#dashboard) or the [item list](#item-list) and click the **Configure** button in the top right-hand corner of the page.
 
@@ -180,7 +180,8 @@ The following table defines item priorities and days to fix the associated secur
 | Medium            | 90               | Medium                               | Medium                             |
 | Low               | 120              | Minor                                | Low and other                      |
 
-## Managing access to security and risk management
+<!--
+## Managing access with the Security Manager role
 
 To better track and address security issues, organization admins can extend access to security and risk management by assigning the Security Manager role to organization members.
 
@@ -213,6 +214,7 @@ To revoke the Security Manager role:
 1.  In the **Permissions** area, scroll the list to find the relevant user.
 
 1.  Click the **Revoke role icon** to the right of the user's name and confirm.
+-->
 
 <!--
 TODO Update this section once the behavior is consistent. See https://codacy.slack.com/archives/C050XTVETSQ/p1687167901474059
