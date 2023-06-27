@@ -12,15 +12,6 @@ These release notes are for [Codacy Self-hosted v12.0.0](https://github.com/coda
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
-<!--TODO Check these issues manually
-Jira issues without release notes
--   https://codacy.atlassian.net/browse/TS-110 TODO review
-
-Jira issues with disabled release notes
--   https://codacy.atlassian.net/browse/TS-369 TODO Notify Paulo that we're ignoring this one: https://codacy.atlassian.net/browse/TS-369?focusedCommentId=56541
--   https://codacy.atlassian.net/browse/TS-356 TODO we may want to notify this: ESlint: install plugin vue-scoped-css
--->
-
 ## Upgrading Codacy Self-hosted
 
 Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
@@ -36,28 +27,33 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 ## Breaking changes
 
-If you're updating Kubernetes to v1.25, upgrade to Codacy Self-hosted v12.0.0 before doing so, as some Kubernetes endpoints have been deprecated and may lead to service outage if used with earlier versions of Codacy Self-hosted.
+-   If you're updating Kubernetes to v1.25, upgrade to Codacy Self-hosted v12.0.0 before doing so, as some Kubernetes endpoints have been deprecated and may lead to service outage if used with earlier versions of Codacy Self-hosted.
 
-If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by following the relevant update instructions ([Loki](https://docs.codacy.com/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/chart/configuration/monitoring/#3-installing-promtail)) after upgrading to Codacy Self-hosted v12.0.0 and before updating Kubernetes to v1.25.
+-   If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by following the relevant update instructions ([Loki](https://docs.codacy.com/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/chart/configuration/monitoring/#3-installing-promtail)) after upgrading to Codacy Self-hosted v12.0.0 and before updating Kubernetes to v1.25.
 
-If you have set `scheduler.enable = "true"` in `values.yaml`, before migrating to Codacy Self-hosted v12.0.0:
+-   If you have set `scheduler.enable = "true"` in `values.yaml`, before migrating to Codacy Self-hosted v12.0.0:
 
--   Remove scheduler settings from `values.yaml`
--   In `worker-manager`, ConfigMap set CONFIG_FORCE_codacy_kubernetes_scheduler_name: default-scheduler 
--   Restart `worker-manager` deployment
--   Remove any pending worker Pods
+    -   Remove scheduler settings from `values.yaml`
+    -   In `worker-manager`, ConfigMap set CONFIG_FORCE_codacy_kubernetes_scheduler_name: default-scheduler 
+    -   Restart `worker-manager` deployment
+    -   Remove any pending worker Pods
 
 ## Product enhancements
 
 -   Added support for [Kubernetes 1.25.\*](https://docs.codacy.com/v12.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-1306)
--   Added support for the ESLint plugin [<span class="skip-vale">eslint-plugin-rxjs</span>](https://www.npmjs.com/package/eslint-plugin-rxjs). (TS-346)
--   Added support for the ESLint plugins [<span class="skip-vale">eslint-plugin-markdown</span>](https://www.npmjs.com/package/eslint-plugin-markdown) and [<span class="skip-vale">eslint-plugin-yml</span>](https://www.npmjs.com/package/eslint-plugin-yml). (TS-121)
+
+-   Added support for the following ESLint plugins:
+
+    -   [<span class="skip-vale">eslint-plugin-rxjs</span>](https://www.npmjs.com/package/eslint-plugin-rxjs) (TS-346)
+    -   [<span class="skip-vale">eslint-plugin-markdown</span>](https://www.npmjs.com/package/eslint-plugin-markdown) (TS-121)
+    -   [<span class="skip-vale">eslint-plugin-yml</span>](https://www.npmjs.com/package/eslint-plugin-yml) (TS-121)
+    -   [<span class="skip-vale">vue-scoped-css</span>](https://www.npmjs.com/package/eslint-plugin-vue-scoped-css) (TS-356)
 
 ## Tool versions
 
 This version of Codacy Self-hosted includes the tool versions below. The tools that were updated on this version are highlighted in bold:
 
--   Ameba 0.13.1
+-   **Ameba 1.4.3 (updated from 0.13.1)**
 -   Bandit 1.7.0
 -   Brakeman 4.3.1
 -   bundler-audit 0.6.1
@@ -89,7 +85,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Pylint (deprecated) 1.9.5
 -   remark-lint 7.0.1
 -   **[Revive 1.3.2](https://github.com/mgechev/revive/releases/tag/v1.3.2) (updated from 1.2.3)**
--   RuboCop 1.39.0
+-   **[RuboCop 1.52.1](https://github.com/rubocop/rubocop/releases/tag/v1.52.1) (updated from 1.39.0)**
 -   Scalastyle 1.5.0
 -   ShellCheck v0.9.0
 -   SonarC# 8.40
@@ -98,7 +94,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   SpotBugs 4.7.3
 -   SQLint 0.2.1
 -   Staticcheck 2022.1.3
--   **[Stylelint 15.6.2](https://github.com/stylelint/stylelint/releases/tag/15.6.2) (updated from 14.16.1)**
+-   **[Stylelint 15.8.0](https://github.com/stylelint/stylelint/releases/tag/15.8.0) (updated from 14.16.1)**
 -   SwiftLint 0.50.3
 -   Tailor 0.12.0
 -   TSLint 6.1.3
