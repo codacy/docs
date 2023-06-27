@@ -37,6 +37,7 @@ GitLab
 Gocyclo
 Gosec
 Gradle
+Grafana
 Gravatar
 Hadolint
 hostname
@@ -56,6 +57,7 @@ PHPUnit
 plaintext
 PMD
 Prospector
+Promtail
 PSScriptAnalyser
 PVC
 Pylint
