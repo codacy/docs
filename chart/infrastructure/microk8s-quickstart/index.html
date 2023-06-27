@@ -11,7 +11,7 @@
         <meta name="description" content="Follow the instructions below to set up a MicroK8s instance from scratch, including all the necessary dependencies and configurations.">
       
       
-        <meta http-equiv="last-modified" content="2022-10-19 15:43:09">
+        <meta http-equiv="last-modified" content="2023-06-22 15:47:05">
       
       
         <link rel="canonical" href="https://docs.codacy.com/chart/infrastructure/microk8s-quickstart/">
@@ -3733,6 +3733,11 @@ sudo<span class="w"> </span>su<span class="w"> </span>-<span class="w"> </span><
 <div class="highlight"><pre><span></span><code>microk8s.status<span class="w"> </span>--wait-ready
 </code></pre></div>
 </li>
+<li>
+<p>If you're running MicroK8s using a single node, disable high-availability clustering for improved performance:</p>
+<div class="highlight"><pre><span></span><code>microk8s.disable<span class="w"> </span>ha-cluster
+</code></pre></div>
+</li>
 </ol>
 <h2 id="3-configuring-microk8s">3. Configuring MicroK8s<a class="headerlink" href="#3-configuring-microk8s" title="Permanent link">#</a></h2>
 <p>Now that MicroK8s is running on the machine we can proceed to enabling the necessary addons:</p>
@@ -3974,7 +3979,7 @@ dashboard: disabled
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 19, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 22, 2023</span>
     
   </small>
 </div>
