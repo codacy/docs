@@ -31,9 +31,17 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 - If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by performing the following updates in this order:
 
-    -   First, upgrade to Codacy Self-hosted 12.0.0
-    -   Update Loki and Promtail by following the respective installation instructions ([Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail))
-    -   Finally, upgrade Kubernetes to 1.25
+    <ol style="list-style-type: decimal !important;">
+        <li>
+            Upgrade to Codacy Self-hosted 12.0.0
+        </li>
+        <li>
+            Update Loki and Promtail by following the respective installation instructions (<a href="https://docs.codacy.com/v12.0/chart/configuration/monitoring/#2-installing-loki">Loki</a>, <a href="https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail">Promtail</a>)
+        </li>
+        <li>
+            Upgrade Kubernetes to 1.25
+        </li>
+    </ol>
 
 - If you have set `scheduler.enable = "true"` in `values.yaml`, do the following before migrating to Codacy Self-hosted v12.0.0.
 
