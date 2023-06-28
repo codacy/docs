@@ -15,7 +15,10 @@ After we enabled submodules for your organization, do the following:
     -   **Public repositories**, make sure that your Git URL uses the HTTPS protocol
     -   **Private repositories**, make sure that your Git URL uses the SSH protocol.
 
-1.  If you already have repositories on Codacy where you want to use submodules, add a new [SSH key to your git provider account](#user-account-keys) for each of the repositories. On the repository **Settings** page, you can click the link **Add new user key** to go to your Git provider page where you manage your user account SSH keys.
+1.  If you already have repositories on Codacy where you want to use submodules, [add a new SSH key to your git provider account](#user-account-keys) for each repository by navigating to the repository **Settings** page and clicking the link **Add new user key**.
+
+    This takes you to the Git provider page where you can manage your user account SSH keys.
+
 
     !!! note
         **If you're using GitLab Cloud**, navigate to the page **Settings** and click the button **Generate New User Key** for each repository. Codacy generates new keys on your user account.
