@@ -203,6 +203,6 @@ If you need to use an integration that you have previously revoked, log in again
 
 When you add a private repository to Codacy, Codacy uses the integration with your Git provider to create a new SSH key on the repository. Codacy then uses that SSH key every time it needs to clone the repository.
 
-**Codacy only adds read-only SSH keys** and can't access any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also [revoke the keys created by Codacy at any time](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-deploy-keys). Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.
+**Codacy only adds read-only SSH keys** and can't access any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also [revoke the keys created by Codacy at any time](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-deploy-keys). Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.<!--NOTE Even though this section applies to all Git providers, we're only providing a link to the GitHub docs for the sake of simplicity.-->
 
 We understand the desire for security and privacy and find that the SSH protocol is preferable to HTTPS as it separates Codacy's access rights from the one of the users.
