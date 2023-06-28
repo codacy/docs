@@ -29,9 +29,13 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 -   If you're updating Kubernetes to v1.25, upgrade to Codacy Self-hosted v12.0.0 before doing so, as some Kubernetes endpoints have been deprecated and may lead to service outage if used with earlier versions of Codacy Self-hosted.
 
--   If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by following the relevant update instructions ([Loki](https://docs.codacy.com/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/chart/configuration/monitoring/#3-installing-promtail)) after upgrading to Codacy Self-hosted v12.0.0 and before updating Kubernetes to v1.25.
+-   If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by performing the following updates in this order:
 
--   If you have set `scheduler.enable = "true"` in `values.yaml`, before migrating to Codacy Self-hosted v12.0.0:
+    -   First, upgrade to Codacy Self-hosted 12.0.0
+    -   Update Loki and Promtail by following the respective installation instructions ([Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail))
+    -   Finally, upgrade Kubernetes to 1.25
+
+- If you have set `scheduler.enable = "true"` in `values.yaml`, before migrating to Codacy Self-hosted v12.0.0:
 
     -   Remove scheduler settings from `values.yaml`
     -   In `worker-manager`, ConfigMap set CONFIG_FORCE_codacy_kubernetes_scheduler_name: default-scheduler 
