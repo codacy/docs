@@ -11,7 +11,7 @@ Some changes on your Git provider can prevent Codacy from cloning your private r
 If you renamed the repository or moved it to a different account on the Git provider:
 
 1.  On Codacy, open your **Repository Settings**, tab **General**.
-1.  Click the button **Update repository** on the **Synchronize with provider** area.
+1.  Click the button **Update repository** in the **Synchronize with provider** area.
 
 ## The user that configured the repository no longer has access
 
