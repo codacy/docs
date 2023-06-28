@@ -27,20 +27,46 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 ## Breaking changes
 
--   If you're updating Kubernetes to v1.25, upgrade to Codacy Self-hosted v12.0.0 before doing so, as some Kubernetes endpoints have been deprecated and may lead to service outage if used with earlier versions of Codacy Self-hosted.
+- If you're updating Kubernetes to v1.25, upgrade to Codacy Self-hosted v12.0.0 before doing so, as some Kubernetes endpoints have been deprecated and may lead to service outage if used with earlier versions of Codacy Self-hosted.
 
--   If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by performing the following updates in this order:
+- If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by performing the following updates in this order:
 
     -   First, upgrade to Codacy Self-hosted 12.0.0
     -   Update Loki and Promtail by following the respective installation instructions ([Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail))
     -   Finally, upgrade Kubernetes to 1.25
 
-- If you have set `scheduler.enable = "true"` in `values.yaml`, before migrating to Codacy Self-hosted v12.0.0:
+- If you have set `scheduler.enable = "true"` in `values.yaml`, do the following before migrating to Codacy Self-hosted v12.0.0.
 
-    -   Remove scheduler settings from `values.yaml`
-    -   In `worker-manager`, ConfigMap set CONFIG_FORCE_codacy_kubernetes_scheduler_name: default-scheduler 
-    -   Restart `worker-manager` deployment
-    -   Remove any pending worker Pods
+    Assuming you're using the default `codacy` namespace:
+
+    -   Remove all `scheduler.*` settings from `values.yaml`
+
+    -   Update the ConfigMap of `worker-manager`:
+    
+        ```bash
+        kubectl patch configmap/worker-manager --namespace codacy --type merge --patch '{"data":{"CONFIG_FORCE_codacy_kubernetes_scheduler_enable": "false","CONFIG_FORCE_codacy_kubernetes_scheduler_name":"default-scheduler"}}'
+        ```
+
+    -   Restart the `worker-manager` Deployment:
+
+        ```bash
+        kubectl rollout restart deployment/worker-manager -n codacy
+        ```
+
+    -   List any pending `worker` Pods:
+
+        ```bash
+        kubectl get pods -l app=worker --field-selector=status.phase=Pending -n codacy
+        ```
+
+    -   If there are any pending worker pods, remove them:
+
+        !!! warning
+            This is a destructive action. Make sure you understand the consequences.
+
+        ```bash
+        TODO delete command
+        ```
 
 ## Product enhancements
 
