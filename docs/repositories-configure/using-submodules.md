@@ -19,7 +19,6 @@ After we enabled submodules for your organization, do the following:
 
     This takes you to the Git provider page where you can manage your user account SSH keys.
 
-
     !!! note
         **If you're using GitLab Cloud**, navigate to the page **Settings** and click the button **Generate New User Key** for each repository. Codacy generates new keys on your user account.
 
