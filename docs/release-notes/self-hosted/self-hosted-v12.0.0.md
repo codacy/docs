@@ -67,7 +67,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
         kubectl get pods -l app=worker --field-selector=status.phase=Pending -n codacy
         ```
 
-    -   If there are any pending worker pods, remove them:
+    -   If there are any pending `worker` Pods, remove them:
 
         !!! warning
             This is a destructive action. Make sure you understand the consequences.
