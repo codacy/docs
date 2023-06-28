@@ -29,7 +29,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 - If you're updating Kubernetes to v1.25, upgrade to Codacy Self-hosted v12.0.0 before doing so, as some Kubernetes endpoints have been deprecated and may lead to service outage if used with earlier versions of Codacy Self-hosted.
 
-- If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by performing the following updates in this order:
+-   If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by performing the following updates in this order:
 
     <ol style="list-style-type: decimal !important;">
         <li>
@@ -43,7 +43,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
         </li>
     </ol>
 
-- If you have set `scheduler.enable = "true"` in `values.yaml`, do the following before migrating to Codacy Self-hosted v12.0.0.
+-   If you have set `scheduler.enable = "true"` in `values.yaml`, do the following before migrating to Codacy Self-hosted v12.0.0.
 
     Assuming you're using the default `codacy` namespace:
 
