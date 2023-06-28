@@ -201,7 +201,7 @@ If you need to use an integration that you have previously revoked, log in again
 
 ## Why does Codacy ask for permission to create SSH keys?
 
-When you add a private repository to Codacy, Codacy uses the integration with your Git provider to create an new SSH key on the repository. Codacy then uses that SSH key every time it needs to clone the repository.
+When you add a private repository to Codacy, Codacy uses the integration with your Git provider to create a new SSH key on the repository. Codacy then uses that SSH key every time it needs to clone the repository.
 
 **Codacy only adds read-only SSH keys** and won't have access to any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also [revoke the keys created by Codacy at any time](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-deploy-keys). Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.
 
