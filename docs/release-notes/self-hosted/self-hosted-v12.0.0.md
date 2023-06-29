@@ -27,13 +27,13 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 ## Breaking changes
 
-- If you're updating Kubernetes to v1.25, upgrade to Codacy Self-hosted v12.0.0 before doing so, as some Kubernetes endpoints have been deprecated and may lead to service outage if used with earlier versions of Codacy Self-hosted.
+-   If you're updating Kubernetes to v1.25, upgrade to Codacy Self-hosted v12.0.0 before doing so, as some Kubernetes endpoints have been deprecated and may lead to service outage if used with earlier versions of Codacy Self-hosted.
 
 -   If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by upgrading in the following order:
 
     1.  Upgrade to Codacy Self-hosted v12.0.0
 
-    1.  Update Loki and Promtail by following the respective installation instructions ([Loki](https://docs.codacy.com/v12.    - 0/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail))
+    1.  Update Loki and Promtail by following the respective installation instructions ([Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail))
 
     1.  Upgrade Kubernetes to v1.25
 
@@ -44,7 +44,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
     1.  Remove all `scheduler.*` settings from `values.yaml`
 
     1.  Update the ConfigMap of `worker-manager`:
-    
+
         ```bash
         kubectl patch configmap/worker-manager --namespace codacy --type merge --patch '{"data":{"CONFIG_FORCE_codacy_kubernetes_scheduler_enable": "false","CONFIG_FORCE_codacy_kubernetes_scheduler_name":"default-scheduler"}}'
         ```
