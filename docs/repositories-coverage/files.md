@@ -14,11 +14,11 @@ Codacy displays the files in alphabetical order by default, but you can sort the
 !!! note
     [You can use the Codacy API](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md) to generate reports or obtain coverage metrics for the files in your repositories in a more flexible way.
 
-![Files list](images/files.png)<!--TODO Review-->
+![Files list](images/files.png)
 
 Use the search box to filter the list and find specific files:
 
-![Finding specific files](images/files-search.png)<!--TODO Review-->
+![Finding specific files](images/files-search.png)
 
 ## File details
 
@@ -30,7 +30,7 @@ Click a specific file to see more detailed coverage information for that file, i
 
 The page also shows the source code of the file and identifies which lines of code are covered by tests (green background) or not (red background).
 
-![File detail](images/files-details.png)<!--TODO Review-->
+![File detail](images/files-details.png)
 
 ## Why are some files missing? {: id="missing-files"}
 
