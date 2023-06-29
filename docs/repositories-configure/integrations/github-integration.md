@@ -82,14 +82,6 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
 
 ![Comment suggesting a fix on GitHub](images/github-integration-suggest-fixes.png)
 
-!!! note
-    This feature is in early access and has the following limitations for now:
-
-    -   The only supported Git providers are GitHub Cloud and GitHub Enterprise.
-    -   The only two tools that suggest fixes are [ESLint](https://eslint.org/docs/rules/) and [markdownlint](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md). However, we're planning to support suggestions from more tools.
-
-    📢 [Activate suggested fixes now](#enabling) and [let us know](mailto:support@codacy.com?subject=Feedback on Suggest fixes) what you think!
-
 <!-- TODO CY-6853 AI-enhanced comments -->
 
 ## See also
