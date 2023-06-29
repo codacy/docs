@@ -10,7 +10,7 @@ The **Coverage Commits page** displays an overview of the commits in your reposi
 
 By default, the page lists the commits on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display commits on other branches.
 
-![Commits page](images/commits.png)<!--TODO Update-->
+![Commits page](images/commits.png)
 
 Click a specific commit to see detailed information about the code coverage changes introduced by that commit.
 
@@ -27,7 +27,7 @@ This area displays detailed information about the commit:
 -   Date
 -   Link to the commit on your Git provider
 
-![Commit information](images/commits-detail-information.png)<!--TODO Update-->
+![Commit information](images/commits-detail-information.png)
 
 <!--coverage-overview-start-->
 ## {{ page.meta.page_name.capitalize() }} coverage overview {: id="coverage-overview"}
@@ -61,7 +61,7 @@ This area displays the coverage gate status and an overview of the coverage metr
     -   **Gray:** There aren't coverage gate rules configured for the metric or the value doesn't impact the coverage gate
 
 <!-- vale off -->
-![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-coverage-overview.png)<!--TODO Update-->
+![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-coverage-overview.png)
 <!-- vale on -->
 <!--coverage-overview-end-->
 
@@ -73,6 +73,6 @@ The **Files** tab displays the coverage variation that the {{ page.meta.page_nam
 The option **Show also files without coverage changes** allows you to list all files that the {{ page.meta.page_name }} updates, even if their coverage doesn't change.
 
 <!-- vale off -->
-![Files tab](images/{{ page.meta.file_name }}-tab-files.png)<!--TODO Update-->
+![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
 <!-- vale on -->
 <!--tab-files-end-->
