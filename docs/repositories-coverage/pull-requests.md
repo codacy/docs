@@ -52,4 +52,4 @@ Click a specific commit to see [detailed information about that commit](commits.
 
 ## See also
 
--   [Which metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)

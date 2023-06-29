@@ -8,7 +8,7 @@ product: coverage
 
 The **Coverage Commits page** displays an overview of the commits in your repository, such as the analysis status and coverage for each commit. This allows you to monitor the evolution of coverage in your repository per commit.
 
-By default, the page lists the commits on the main branch of your repository but if you have [more than one branch enabled](../../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display commits on other branches.
+By default, the page lists the commits on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display commits on other branches.
 
 ![Commits page](images/commits.png)<!--TODO Update-->
 
@@ -34,7 +34,7 @@ This area displays detailed information about the commit:
 
 This area displays the coverage gate status and an overview of the coverage metrics for the {{ page.meta.page_name }}:
 
--   The quality gate status is either **Up to coverage standards** or **Not up to coverage standards** depending on the [coverage gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository.
+-   The quality gate status is either **Up to coverage standards** or **Not up to coverage standards** depending on the [coverage gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
 
     If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to coverage standards**.
 
@@ -51,10 +51,10 @@ This area displays the coverage gate status and an overview of the coverage metr
     !!! note
         Learn how Codacy calculates the code quality metrics in more detail:
 
-        -   [Which coverage metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage)
-        -   [Why does Codacy show unexpected coverage changes?](../../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
+        -   [Which coverage metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage)
+        -   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
 
--   The **colors** depend on the [coverage gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository:
+-   The **colors** depend on the [coverage gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository:
 
     -   **Green:** The metric passes the coverage gate
     -   **Red:** The metric fails the coverage gate

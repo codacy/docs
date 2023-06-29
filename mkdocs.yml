@@ -580,10 +580,10 @@ nav:
           - repositories/pull-requests.md
           - repositories/security-monitor.md
     - Your repositories on Coverage:
-          - coverage/repositories/repository-dashboard.md
-          - coverage/repositories/commits.md
-          - coverage/repositories/files.md
-          - coverage/repositories/pull-requests.md
+          - repositories-coverage/repository-dashboard.md
+          - repositories-coverage/commits.md
+          - repositories-coverage/files.md
+          - repositories-coverage/pull-requests.md
     - Configuring your repositories:
           - repositories-configure/configuring-code-patterns.md
           - repositories-configure/managing-branches.md
