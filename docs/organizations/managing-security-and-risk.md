@@ -37,7 +37,7 @@ To access the item list, access the [dashboard](#dashboard) and click the **Revi
 
 When viewing the item list:
 
--   To update the filtering criteria, click the **Status** or **Priority** drop-downs above the list.
+-   To update the filtering criteria, click the **Status** or **Severity** drop-downs above the list.
 -   To find out more about an item, click its **Details** column. This redirects you to a filtered view of the **Repository issues** page, showing only the item of interest.
 
 ![Security and risk management items](images/security-risk-management-item-list.png)
@@ -94,9 +94,9 @@ The following section explains how to integrate with each of the supported platf
 !!! important
     To open and close items, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.
 
-Codacy opens an item whenever one of the configured source platforms detects a security issue. The new item is assigned a priority and a status:
+Codacy opens an item whenever one of the configured source platforms detects a security issue. The new item is assigned a severity and a status:
 
--   The importance of the security issue defines the [priority of the item](#item-priorities-and-deadlines). In turn, the item's priority defines a deadline to fix the associated issue.
+-   The importance of the security issue defines the [severity of the item](#item-severities-and-deadlines). In turn, the item's severity defines a deadline to fix the associated issue.
 -   The time to the deadline sets the [status of the item](#item-statuses). The item then transitions through different statuses as the deadline is approached, met, or missed.
 
 Codacy closes an existing item when the source platform stops detecting the associated security issue.
@@ -169,11 +169,11 @@ The following table describes how item statuses map to deadlines:
     </tbody>
 </table>
 
-## Item priorities and deadlines
+## Item severities and deadlines
 
-The following table defines item priorities and days to fix the associated security issue, based on the importance of the underlying issue:
+The following table defines item severities and days to fix the associated security issue, based on the importance of the underlying issue:
 
-| Item<br/>priority | <br/>Days to fix | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority |
+| Item<br/>severity | <br/>Days to fix | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority |
 |-------------------|------------------|--------------------------------------|------------------------------------|
 | Critical          | 30               | Critical                             | Blocker                            |
 | High              | 60               | -                                    | High                               |
