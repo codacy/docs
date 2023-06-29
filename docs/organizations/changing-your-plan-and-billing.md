@@ -21,7 +21,7 @@ If you have any questions or need help with your account, please contact <mailto
 
 ## Allowing new people to join your organization
 
-**On Codacy Cloud**, organization owners control if team members need an approval before joining their organization. Codacy updates your seats automatically when new users join an organization.
+**On Codacy Cloud**, organization admins control if team members need an approval before joining their organization. Codacy updates your seats automatically when new users join an organization.
 
 !!! note
     -   **If you're using GitHub Marketplace,** this configuration isn't available and team members must always wait for an organization owner to manually approve their requests to join the organization.
@@ -32,8 +32,8 @@ Choose one of the following options in your organization **Settings**, page **Pl
 
 -   **Allow new people to join immediately:** people with access to the organization on the Git provider can join the organization on the Codacy app immediately, as long as there are seats available.
 
--   **Review join requests from new people:** when people with access to the organization on the Git provider join the organization on Codacy app, an organization owner must manually approve their requests to join on the page **People**.
+-   **Review join requests from new people:** when people with access to the organization on the Git provider join the organization on Codacy app, an organization admin must manually approve their requests to join on the page **People**.
 
-    Your teammates that have already been invited to join or were added to the organization are automatically approved, and you can also skip the approval process for organization owners.
+    Your teammates that have already been invited to join or were added to the organization are automatically approved, and you can also skip the approval process for organization admins.
 
 ![Accepting new people to the organization](images/organization-plan-billing-people-accept.png)

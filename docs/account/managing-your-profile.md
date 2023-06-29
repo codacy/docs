@@ -25,4 +25,4 @@ This operation doesn't make any changes on your Git provider.
 To delete your account, click the button **Delete account** and confirm that you <span class="skip-vale">really</span> want to proceed.
 
 !!! note
-    If you're the last organization owner of any of your organizations, you must either add someone else as an owner or [delete those organizations](../organizations/what-are-organizations.md#deleting-an-organization) before you can delete your account.
+    If you're the last organization admin of any of your organizations, you must either add someone else as an owner or [delete those organizations](../organizations/what-are-organizations.md#deleting-an-organization) before you can delete your account.
