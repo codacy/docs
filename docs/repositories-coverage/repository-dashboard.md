@@ -11,7 +11,7 @@ To access your Repository Dashboard, select a repository from the [Repositories 
 !!! tip
     You can share the URL of the Repository Dashboard for your **public repositories** to allow other people to see your repository coverage metrics, even if they aren't registered on Codacy.
 
-![Repository Dashboard](images/repository-dashboard.png)<!--TODO Update-->
+![Repository Dashboard](images/repository-dashboard.png)
 
 The top of the Repository Dashboard displays:
 
@@ -46,7 +46,7 @@ The tab displays the following information:
 
 The chart also displays the **trendline** based on the past behavior and the **coverage goal** defined on the repository [quality settings](../repositories-configure/adjusting-quality-goals.md).
 
-![Quality evolution chart](images/repository-dashboard-coverage-evolution.png)<!--TODO Update-->
+![Quality evolution chart](images/repository-dashboard-coverage-evolution.png)
 
 ## Coverage
 
@@ -61,7 +61,7 @@ Click **See all files** to open the [list of files](files.md) in the repository.
 !!! tip
     If you don't have coverage set up for your repository yet, the Coverage area provides you with instructions on [how to add coverage for your repository](../coverage-reporter/index.md).
 
-![Coverage](images/repository-dashboard-coverage.png)<!--TODO Update-->
+![Coverage](images/repository-dashboard-coverage.png)
 
 ## Open pull requests
 
@@ -75,7 +75,7 @@ Click a bar segment to display only pull requests with the corresponding status.
 
 To see the details of pull requests, click a pull request from the list or click **See all pull requests** to open the [list of pull requests](pull-requests.md) in the repository.
 
-![Open pull requests](images/repository-dashboard-open-pull-requests.png)<!--TODO Update-->
+![Open pull requests](images/repository-dashboard-open-pull-requests.png)
 
 ## See also
 
