@@ -68,7 +68,7 @@ The following section explains how to integrate with each of the supported platf
 
     1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
 
-    1.  On the right-hand side of the page, under the Integrations list, find the Jira entry and click the **Install** button. This redirects you to Atlassian's website.
+    1.  On the right-hand side of the page, under the Integrations list, find the Jira entry and click the **Install** button to open the installation modal, then confirm by clicking **Install Jira** to proceed to Atlassian's website..
 
         ![Security and risk management Jira Cloud integration](images/security-risk-management-integration-jira.png)
 
