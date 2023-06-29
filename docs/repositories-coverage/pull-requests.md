@@ -10,7 +10,7 @@ The **Coverage Pull Requests page** displays an overview of the pull requests in
 
 By default, the page lists open pull requests but you can click the **Closed** tab at the top of the list to display the closed pull requests.
 
-![Pull Requests page](images/pull-requests.png)<!--TODO Update-->
+![Pull Requests page](images/pull-requests.png)
 
 Click a specific pull request to see detailed coverage information for that pull request.
 
@@ -28,7 +28,7 @@ This area displays detailed information about the pull request:
 -   Link to the pull request on your Git provider
 -   Codacy logs<!--TODO Explain how to read the logs in more detail?-->
 
-![Pull request information](images/pull-requests-detail-information.png)<!--TODO Update-->
+![Pull request information](images/pull-requests-detail-information.png)
 
 {%
     include-markdown "commits.md"
