@@ -572,14 +572,14 @@ nav:
           - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
           - getting-started/adding-a-codacy-badge.md
-    - Your repositories:
+    - Your repositories on Quality:
           - repositories/repository-dashboard.md
           - repositories/commits.md
           - repositories/files.md
           - repositories/issues.md
           - repositories/pull-requests.md
           - repositories/security-monitor.md
-    - "[Coverage] Your repositories":
+    - Your repositories on Coverage:
           - coverage/repositories/repository-dashboard.md
           - coverage/repositories/commits.md
           - coverage/repositories/files.md

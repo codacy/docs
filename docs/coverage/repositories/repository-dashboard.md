@@ -2,9 +2,9 @@
 product: coverage
 ---
 
-# [Coverage] Repository Dashboard
+# Coverage Repository Dashboard
 
-The **Repository Dashboard** provides an overview of the repository coverage and items that require your attention.
+The **Coverage Repository Dashboard** provides an overview of the repository coverage and items that require your attention.
 
 To access your Repository Dashboard, select a repository from the [Repositories list](../../organizations/managing-repositories.md) and select **Dashboard** on the left navigation sidebar.
 
