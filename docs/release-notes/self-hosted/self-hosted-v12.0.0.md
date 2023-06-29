@@ -85,7 +85,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 This version of Codacy Self-hosted includes the tool versions below. The tools that were updated on this version are highlighted in bold:
 
--   **Ameba 1.4.3 (updated from 0.13.1)**
+-   **[Ameba 1.4.3](https://github.com/crystal-ameba/ameba/releases/tag/v1.4.3) (updated from 0.13.1)**
 -   Bandit 1.7.0
 -   Brakeman 4.3.1
 -   bundler-audit 0.6.1
