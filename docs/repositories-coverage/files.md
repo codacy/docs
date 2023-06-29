@@ -28,7 +28,7 @@ Click a specific file to see more detailed coverage information for that file, i
 -   **Covered lines:** Source lines of code that are covered by tests
 -   **Coverage:** Percentage of coverable source lines of code that are covered by tests
 
-The page also shows the source code of the file and identifies which lines of code are covered by tests or not.
+The page also shows the source code of the file and identifies which lines of code are covered by tests (green background) or not (red background).
 
 ![File detail](images/files-details.png)<!--TODO Review-->
 
