@@ -38,7 +38,7 @@ To access the item list, access the [dashboard](#dashboard) and click the **Revi
 When viewing the item list:
 
 -   To update the filtering criteria, click the **Status** or **Severity** drop-downs above the list.
--   To find out more about an item, click its **Details** column. This redirects you to a filtered view of the **Repository issues** page, showing only the item of interest.
+-   To find out more about an item, click its **Details** column to navigate to the item of interest on the source platform.
 
 ![Security and risk management items](images/security-risk-management-item-list.png)
 
@@ -66,7 +66,7 @@ The following section explains how to integrate with each of the supported platf
 
     To install the Jira Cloud integration:
 
-    1.  Open your organization **Security and Risk** page and click the **Configure** button. This opens the configuration page.
+    1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
 
     1.  On the right-hand side of the page, under the Integrations list, find the Jira entry and click the **Install** button. This redirects you to Atlassian's website.
 
@@ -198,7 +198,7 @@ The Security Manager role is independent of the Git provider role of an organiza
 
 To assign the Security Manager role:
 
-1.  Open your organization **Security and Risk** page and click the **Configure** button. This opens the configuration page.
+1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
 
 1.  In the **Permissions** area, use the search field to find the relevant user and click the user's name.
 
@@ -208,7 +208,7 @@ To assign the Security Manager role:
 
 To revoke the Security Manager role:
 
-1.  Open your organization **Security and Risk** page and click the **Configure** button. This opens the configuration page.
+1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
 
 1.  In the **Permissions** area, scroll the list to find the relevant user.
 
