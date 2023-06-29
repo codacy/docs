@@ -56,7 +56,9 @@ Adds comments on the lines of the merge request where Codacy finds new issues. C
     end="<!--paid-end-->"
 %}
 
-Adds AI enhanced comments with insights to help you fix identified issues.
+Adds AI-enhanced comments with insights to help you fix identified issues.
+
+{% include-markdown "../../assets/includes/ai-info.md" %}
 
 ![AI-enhanced comment on GitLab](images/gitlab-integration-ai-comment.png)<!-- TODO CY-6853 -->
 

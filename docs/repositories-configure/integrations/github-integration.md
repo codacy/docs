@@ -93,7 +93,9 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
     end="<!--paid-end-->"
 %}
 
-Adds AI enhanced comments with insights to help you fix identified issues. Enable also **Suggested fixes** to get ready-to-commit AI-generated fixes.
+Adds AI-enhanced comments with insights to help you fix identified issues. Enable also **Suggested fixes** to get ready-to-commit AI-generated fixes.
+
+{% include-markdown "../../assets/includes/ai-info.md" %}
 
 ![AI-enhanced comment on GitHub](images/github-integration-ai-comment.png)<!-- TODO CY-6853 -->
 
