@@ -31,43 +31,35 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 -   If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by performing the following updates in this order:
 
-    <ol style="list-style-type: decimal !important;">
-        <li>
-            Upgrade to Codacy Self-hosted 12.0.0
-        </li>
-        <li>
-            Update Loki and Promtail by following the respective installation instructions (<a href="https://docs.codacy.com/v12.0/chart/configuration/monitoring/#2-installing-loki">Loki</a>, <a href="https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail">Promtail</a>)
-        </li>
-        <li>
-            Upgrade Kubernetes to 1.25
-        </li>
-    </ol>
+    1.  Upgrade to Codacy Self-hosted 12.0.0
+    1.  Update Loki and Promtail by following the respective installation instructions (<a href="https://docs.codacy.com/v12.    - 0/chart/configuration/monitoring/#2-installing-loki">Loki</a>, <a href="https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail">Promtail</a>)
+    1.  Upgrade Kubernetes to 1.25
 
 -   If you have set `scheduler.enable = "true"` in `values.yaml`, do the following before migrating to Codacy Self-hosted v12.0.0.
 
     Assuming you're using the default `codacy` namespace:
 
-    -   Remove all `scheduler.*` settings from `values.yaml`
+    1.  Remove all `scheduler.*` settings from `values.yaml`
 
-    -   Update the ConfigMap of `worker-manager`:
+    1.  Update the ConfigMap of `worker-manager`:
     
         ```bash
         kubectl patch configmap/worker-manager --namespace codacy --type merge --patch '{"data":{"CONFIG_FORCE_codacy_kubernetes_scheduler_enable": "false","CONFIG_FORCE_codacy_kubernetes_scheduler_name":"default-scheduler"}}'
         ```
 
-    -   Restart the `worker-manager` Deployment:
+    1.  Restart the `worker-manager` Deployment:
 
         ```bash
         kubectl rollout restart deployment/worker-manager -n codacy
         ```
 
-    -   List any pending `worker` Pods:
+    1.  List any pending `worker` Pods:
 
         ```bash
         kubectl get pods -l app=worker --field-selector=status.phase=Pending -n codacy
         ```
 
-    -   If there are any pending `worker` Pods, remove them:
+    1.  If there are any pending `worker` Pods, remove them:
 
         !!! warning
             This is a destructive action. Make sure you understand the consequences.
