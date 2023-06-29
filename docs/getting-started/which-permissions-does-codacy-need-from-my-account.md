@@ -190,8 +190,8 @@ To revoke the access from Codacy to one or more of the OAuth providers:
 
 1.  To ensure that the integration is removed not only on Codacy but also on the integration side, it's important that you revoke the Codacy OAuth application access on your provider:
 
-    -   [GitHub Cloud](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-authorized-integrations)
-    -   [GitLab Cloud](https://docs.gitlab.com/ee/integration/oauth_provider.html#authorized-applications)
+    -   [GitHub Cloud](https://docs.github.com/en/apps/using-github-apps/reviewing-and-revoking-authorization-of-github-apps)
+    -   [GitLab Cloud](https://docs.gitlab.com/ee/integration/oauth_provider.html#view-all-authorized-applications)
     -   [Bitbucket Cloud](https://support.atlassian.com/bitbucket-cloud/docs/bitbucket-cloud-apps-overview/#OAuth-consumer-permissions)
     -   [Google Sign-in](https://support.google.com/accounts/answer/3466521#remove-access)
 
