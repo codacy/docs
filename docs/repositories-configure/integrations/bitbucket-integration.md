@@ -56,8 +56,7 @@ Adds comments on the lines of the pull request where Codacy finds new issues. Cl
 
 Adds AI enhanced comments with insights to help you fix identified issues.
 
-<!-- TODO screenshot CY-6853 -->
-![AI-enhanced comment on Bitbucket](images/bitbucket-integration-pr-comment.png)
+![AI-enhanced comment on Bitbucket](images/bitbucket-integration-ai-comment.png)
 
 ### Pull Request Summary
 

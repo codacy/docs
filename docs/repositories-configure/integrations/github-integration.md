@@ -89,8 +89,7 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
 
 Adds AI enhanced comments with insights to help you fix identified issues. Enable also **Suggested fixes** to get ready-to-commit AI-generated fixes.
 
-<!-- TODO screenshot CY-6853 -->
-![AI-enhanced comment on GitHub](images/github-integration-suggest-fixes.png)
+![AI-enhanced comment on GitHub](images/github-integration-ai-comment.png)
 
 ## See also
 

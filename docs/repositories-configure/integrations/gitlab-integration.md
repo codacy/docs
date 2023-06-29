@@ -52,8 +52,7 @@ Adds comments on the lines of the merge request where Codacy finds new issues. C
 
 Adds AI enhanced comments with insights to help you fix identified issues.
 
-<!-- TODO screenshot CY-6853 -->
-![AI-enhanced comment on GitLab](images/gitlab-integration-pr-comment.png)
+![AI-enhanced comment on GitLab](images/gitlab-integration-ai-comment.png)
 
 ### Pull Request Summary
 
