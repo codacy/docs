@@ -33,7 +33,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
     1.  Upgrade to Codacy Self-hosted 12.0.0
 
-    1.  Update Loki and Promtail by following the respective installation instructions (<a href="https://docs.codacy.com/v12.    - 0/chart/configuration/monitoring/#2-installing-loki">Loki</a>, <a href="https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail">Promtail</a>)
+    1.  Update Loki and Promtail by following the respective installation instructions ([Loki](https://docs.codacy.com/v12.    - 0/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail))
 
     1.  Upgrade Kubernetes to 1.25
 
