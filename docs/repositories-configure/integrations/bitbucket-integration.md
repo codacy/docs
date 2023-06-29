@@ -14,7 +14,7 @@ When the integration is enabled, you can also create pull request comments and J
 
 To enable the Bitbucket integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, Codacy enables the integration using the [default settings for your organization](../../organizations/configuring-default-git-provider-integration-settings.md).
 
-![Bitbucket integration](images/bitbucket-integration.png)
+![Bitbucket integration](images/bitbucket-integration.png)<!-- TODO CY-6853 -->
 
 If you remove the integration, you can enable it again as follows:
 
@@ -62,7 +62,7 @@ Adds comments on the lines of the pull request where Codacy finds new issues. Cl
 
 Adds AI enhanced comments with insights to help you fix identified issues.
 
-![AI-enhanced comment on Bitbucket](images/bitbucket-integration-ai-comment.png)
+![AI-enhanced comment on Bitbucket](images/bitbucket-integration-ai-comment.png)<!-- TODO CY-6853 -->
 
 ### Pull Request Summary
 

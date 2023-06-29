@@ -8,7 +8,7 @@ The GitHub integration incorporates Codacy on your existing Git provider workflo
 
 When the integration is enabled, you can also create pull request comments and GitHub issues directly from Codacy when [browsing the existing issues](../../repositories/issues.md) on the repository:
 
-![GitHub integration for issues](images/github-integration-issues.png)
+![GitHub integration for issues](images/github-integration-issues.png)<!-- TODO CY-6853 -->
 
 ## Enabling the GitHub integration {: id="enabling"}
 
@@ -95,7 +95,7 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
 
 Adds AI enhanced comments with insights to help you fix identified issues. Enable also **Suggested fixes** to get ready-to-commit AI-generated fixes.
 
-![AI-enhanced comment on GitHub](images/github-integration-ai-comment.png)
+![AI-enhanced comment on GitHub](images/github-integration-ai-comment.png)<!-- TODO CY-6853 -->
 
 ## See also
 

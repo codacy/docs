@@ -10,7 +10,7 @@ The GitLab integration incorporates Codacy on your existing Git provider workflo
 
 To enable the GitLab integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, Codacy enables the integration using the [default settings for your organization](../../organizations/configuring-default-git-provider-integration-settings.md).
 
-![GitLab integration](images/gitlab-integration.png)
+![GitLab integration](images/gitlab-integration.png)<!-- TODO CY-6853 -->
 
 If you remove the integration, you can enable it again as follows:
 
@@ -58,7 +58,7 @@ Adds comments on the lines of the merge request where Codacy finds new issues. C
 
 Adds AI enhanced comments with insights to help you fix identified issues.
 
-![AI-enhanced comment on GitLab](images/gitlab-integration-ai-comment.png)
+![AI-enhanced comment on GitLab](images/gitlab-integration-ai-comment.png)<!-- TODO CY-6853 -->
 
 ### Pull Request Summary
 
