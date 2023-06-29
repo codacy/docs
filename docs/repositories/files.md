@@ -52,7 +52,7 @@ Depending on the available analysis information for the file, Codacy displays on
 
     ![Duplicated blocks for a file](images/files-duplication.png)
 
--   **Coverage:** Shows which lines of code are covered by tests or not. The tab displays the percentage of coverable lines that are covered by tests in the file.
+-   **Coverage:** Shows which lines of code are covered by tests (green background) or not (red background). The tab displays the percentage of coverable lines that are covered by tests in the file.
 
     ![Coverage information for a file](images/files-coverage.png)
 
