@@ -13,4 +13,4 @@ To delete your repository from Codacy:
 
 1.  Click the button **Remove repository** and confirm that you want to remove the repository.
 
-    ![Removing your repository](images/repository-remove.png)
+    ![Removing your repository](images/repository-remove.png)<!--TODO PLUTO-630 Update screenshot-->

@@ -28,7 +28,7 @@ When using submodules, you must do the following for all your existing and new r
 
     For GitHub and Bitbucket, this takes you to the Git provider page where you can manage your user account SSH keys. For GitLab, Codacy removes the existing repository key and creates the new SSH key on your user account automatically.
 
-    ![Generate new user key](images/using-submodules-generate-new-user-key.png)
+    ![Generate new user key](images/using-submodules-generate-new-user-key.png)<!--TODO PLUTO-630 Update screenshot-->
 
 1.  If you're using submodules to share an analysis tool configuration file across your repositories, check if your tool recursively searches the subdirectories of your repositories for configuration files.
 
