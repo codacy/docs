@@ -15,11 +15,11 @@ theme:
     custom_dir: "submodules/codacy-mkdocs-material/material"
     font: false
     language: "en"
-    favicon: "assets/images/favicon.svg"
+    favicon: "assets/images/favicon.ico"
     palette:
         primary: "indigo"
         accent: "indigo"
-    logo: "assets/images/codacy-quality-docs-logo.svg"
+    logo: "assets/images/codacy-docs-logo.svg"
     features: []
 extra_css:
     - "assets/stylesheets/version-select.css"
@@ -105,7 +105,7 @@ plugins:
     # Create RSS feeds for release notes
     # https://github.com/Guts/mkdocs-rss-plugin
     - rss:
-          image: "https://docs.codacy.com/assets/images/quality-logo.png"
+          image: "https://docs.codacy.com/assets/images/codacy-logo.png"
           match_path: 'release-notes\/.*'
     # Generate redirects for moved or deleted pages
     # https://github.com/datarobot/mkdocs-redirects
