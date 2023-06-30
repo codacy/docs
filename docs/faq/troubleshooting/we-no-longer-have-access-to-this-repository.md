@@ -32,6 +32,6 @@ If the user that initially configured the repository on Codacy was using a user 
     !!! note
         If [your repository is using submodules on Codacy](../../repositories-configure/using-submodules.md), add a new SSH user key to your git provider account instead.
 
-    ![Generate new key](images/we-no-longer-have-access-to-this-repository-new-key.png)<!--TODO PLUTO-630 Update screenshot-->
+    ![Generate new key](images/we-no-longer-have-access-to-this-repository-new-key.png)
 
 1.  Open the tab **Integrations**. If you have an integration with your Git provider enabled, [remove and re-create the integration](why-did-codacy-stop-commenting-on-pull-requests.md).
