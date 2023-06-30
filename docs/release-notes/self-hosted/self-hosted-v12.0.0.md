@@ -67,7 +67,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
             This is a destructive action. Make sure you understand the consequences.
 
         ```bash
-        TODO delete command
+        kubectl delete pods -l app=worker --field-selector=status.phase=Pending -n codacy
         ```
 
 ## Product enhancements
