@@ -38,7 +38,7 @@ When using submodules, you must do the following for all your existing and new r
 
 !!! info "This section applies only to Codacy Self-hosted"
 
-You can set Codacy to automatically add the new SSH key to your git provider account for all new repositories by enabling **Add project key to the user, by default** in **Administration**, page **Settings**.
+You can set Codacy to automatically add the new SSH key to your Git provider account for all new repositories by enabling **Add project key to the user, by default** on the **Administration** console, page **Settings**.
 
 !!! important
     **If you're using Bitbucket Cloud** this setting must be turned off since automatically adding the user keys isn't supported.
