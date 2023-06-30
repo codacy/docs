@@ -14,7 +14,7 @@ By default, Codacy does normal Git clones that **don't include submodules** to e
     -   **Public repositories**, make sure that your Git URL uses the HTTPS protocol.
     -   **Private repositories**, make sure that your Git URL uses the SSH protocol.
 
-## Enabling submodules on a repository {: id="enable"}
+## Enabling submodules on a repository
 
 When using submodules, you must do the following for all your existing and new repositories:
 
