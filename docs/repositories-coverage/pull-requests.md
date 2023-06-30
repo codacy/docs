@@ -26,7 +26,7 @@ This area displays detailed information about the pull request:
 -   Pull request author, pull request branch, target branch, and pull request identifier on the Git provider
 -   Last updated date of the pull request
 -   Link to the pull request on your Git provider
--   Codacy logs<!--TODO Explain how to read the logs in more detail?-->
+-   Codacy logs<!--NOTE As an improvement, explain how to read the logs in more detail-->
 
 ![Pull request information](images/pull-requests-detail-information.png)
 
