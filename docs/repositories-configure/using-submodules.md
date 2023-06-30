@@ -22,7 +22,7 @@ When using submodules, you must do the following for all your existing and new r
 
     Codacy generates this repository key when you add a repository to Codacy and uses it to clone that repository. When you're using submodules, Codacy needs to clone additional repositories it may not have access to. To overcome this, Codacy must use an SSH key of your user account to have access to the same repositories as your user.
 
-1.  For GitHub and Bitbucket, remove this Codacy key from the repository settings on the Git provider.
+1.  For GitHub and Bitbucket, remove this Codacy key from the repository settings on your Git provider.
 
 1.  Add a new SSH key to your git provider account by clicking the link **Add new user key** or the button **Generate New User Key**, depending on your Git provider.
 
