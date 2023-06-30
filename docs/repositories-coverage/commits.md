@@ -42,7 +42,7 @@ This area displays the coverage gate status and an overview of the coverage metr
 
 {% if page.meta.page_name == "commit" %}
     -   **Coverage variation:** Variation of code coverage percentage relative to the parent commit
-    -   **Total coverage:** Coverage value for the current commit
+    -   **Total coverage:** Coverage value of the repository at this commit
 {% else %}
     -   **Diff coverage:** Code coverage of the coverable lines added or changed by the pull request, or `∅` (not applicable) if there aren't any coverable lines added or changed
     -   **Coverage variation:** Variation of code coverage percentage relative to the target branch of the pull request
