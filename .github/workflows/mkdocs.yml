@@ -79,6 +79,13 @@ jobs:
           NETLIFY_AUTH_TOKEN: ${{ secrets.NETLIFY_PERSONAL_ACCESS_TOKEN }}
           NETLIFY_SITE_ID: ${{ secrets.NETLIFY_SITE_ID }}
 
+      - name: Update Netlify pull request preview URL
+        uses: ivangabriele/find-and-replace-pull-request-body@v1.1.5
+        with:
+          githubToken: ${{ secrets.GITHUB_TOKEN }}
+          find: <!-- URL of the pages changed on the branch preview deployment -->
+          replace: https://${{ steps.branch.outputs.name }}--docs-codacy.netlify.app/
+
       # Deploy Latest docs on push to master
       - name: Set up environment variables
         if: github.ref == 'refs/heads/master'
