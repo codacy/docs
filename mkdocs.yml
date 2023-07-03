@@ -1,6 +1,6 @@
 # Project information
-site_name: "Codacy Quality docs"
-site_description: "Documentation for the Codacy Quality automated code review tool."
+site_name: "Codacy docs"
+site_description: "Documentation for the Codacy automated code review tool."
 site_url: "https://docs.codacy.com/"
 site_author: "support@codacy.com (Codacy Support)"
 copyright: "© <script>document.write(new Date().getFullYear())</script> <a href=\"https://www.codacy.com\">Codacy</a> - Automated code review"
@@ -15,11 +15,11 @@ theme:
     custom_dir: "submodules/codacy-mkdocs-material/material"
     font: false
     language: "en"
-    favicon: "assets/images/favicon.svg"
+    favicon: "assets/images/favicon.ico"
     palette:
         primary: "indigo"
         accent: "indigo"
-    logo: "assets/images/codacy-quality-docs-logo.svg"
+    logo: "assets/images/codacy-docs-logo.svg"
     features: []
 extra_css:
     - "assets/stylesheets/version-select.css"
@@ -105,7 +105,7 @@ plugins:
     # Create RSS feeds for release notes
     # https://github.com/Guts/mkdocs-rss-plugin
     - rss:
-          image: "https://docs.codacy.com/assets/images/quality-logo.png"
+          image: "https://docs.codacy.com/assets/images/codacy-logo.png"
           match_path: 'release-notes\/.*'
     # Generate redirects for moved or deleted pages
     # https://github.com/datarobot/mkdocs-redirects
@@ -572,13 +572,18 @@ nav:
           - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
           - getting-started/adding-a-codacy-badge.md
-    - Your repositories:
+    - Repositories on Codacy Quality:
           - repositories/repository-dashboard.md
           - repositories/commits.md
           - repositories/files.md
           - repositories/issues.md
           - repositories/pull-requests.md
           - repositories/security-monitor.md
+    - Repositories on Codacy Coverage:
+          - repositories-coverage/repository-dashboard.md
+          - repositories-coverage/commits.md
+          - repositories-coverage/files.md
+          - repositories-coverage/pull-requests.md
     - Configuring your repositories:
           - repositories-configure/configuring-code-patterns.md
           - repositories-configure/managing-branches.md
