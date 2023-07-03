@@ -1,4 +1,4 @@
-# Security Monitor
+# Quality Security Monitor
 
 {%
     include-markdown "../assets/includes/paid.md"
@@ -6,7 +6,7 @@
     end="<!--paid-end-->"
 %}
 
-The **Security Monitor** provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.
+The **Quality Security Monitor** provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.
 
 By default, the page displays the overview for the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display information for other branches.
 
