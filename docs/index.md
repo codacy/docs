@@ -1,5 +1,5 @@
 ---
-description: Documentation homepage for the Codacy Quality automated code review tool.
+description: Documentation homepage for the Codacy automated code review tool.
 ---
 
 # Documentation home
@@ -20,7 +20,7 @@ description: Documentation homepage for the Codacy Quality automated code review
   </div>
 
   <div class="content-link-column">
-    <div>Using Codacy Quality</div>
+    <div>Using Codacy</div>
 
     <a class="content-link" href="organizations/what-are-organizations/">
       <div>Creating and managing an organization</div>
