@@ -1,5 +1,5 @@
 Page,Meta description
-https://docs.codacy.com/,Documentation homepage for the Codacy Quality automated code review tool.
+https://docs.codacy.com/,Documentation homepage for the Codacy automated code review tool.
 https://docs.codacy.com/special-thanks/,We would like to thank everyone who helped us greatly. The names on these lists contributed immensely to what Codacy is today.
 https://docs.codacy.com/account/emails/,"To manage the email addresses associated with your account and your email notifications, click on your avatar on the top right-hand corner and open Your account, page Emails."
 https://docs.codacy.com/account/managing-your-profile/,"To manage your profile information such as your name and avatar, click on your avatar on the top right-hand corner and select Your account."
@@ -158,12 +158,12 @@ https://docs.codacy.com/release-notes/self-hosted/self-hosted-v7.0.0/,Release no
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v8.0.0/,Release notes for Codacy Self-hosted v8.0.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v8.1.0/,Release notes for Codacy Self-hosted v8.1.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v9.0.0/,Release notes for Codacy Self-hosted v9.0.0.
-https://docs.codacy.com/repositories/commits/,"The Commits page displays an overview of the commits in your repository, such as the analysis status and the number of new and fixed issues for each commit. This allows you to monitor the evolution of the code quality in your repository per commit."
-https://docs.codacy.com/repositories/files/,The Files page displays the current code quality information for each analyzed file in your enabled repository branches.
-https://docs.codacy.com/repositories/issues/,"The Issues page lists all the issues that Codacy detected in your repository, including the severity level and category of each issue."
-https://docs.codacy.com/repositories/pull-requests/,"The Pull Requests page displays an overview of the pull requests in your repository, such as the analysis status and the number of new and fixed issues for each pull request. This allows you to monitor the code quality of the work in progress in your repository."
-https://docs.codacy.com/repositories/repository-dashboard/,The Repository Dashboard provides an overview of the repository code quality and items that require your attention.
-https://docs.codacy.com/repositories/security-monitor/,"The Security Monitor provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off."
+https://docs.codacy.com/repositories/commits/,"The Quality Commits page displays an overview of the commits in your repository, such as the analysis status and the number of new and fixed issues for each commit. This allows you to monitor the evolution of the code quality in your repository per commit."
+https://docs.codacy.com/repositories/files/,The Quality Files page displays the current code quality information for each analyzed file in your enabled repository branches.
+https://docs.codacy.com/repositories/issues/,"The Quality Issues page lists all the issues that Codacy detected in your repository, including the severity level and category of each issue."
+https://docs.codacy.com/repositories/pull-requests/,"The Quality Pull Requests page displays an overview of the pull requests in your repository, such as the analysis status and the number of new and fixed issues for each pull request. This allows you to monitor the code quality of the work in progress in your repository."
+https://docs.codacy.com/repositories/repository-dashboard/,The Quality Repository Dashboard provides an overview of the repository code quality and items that require your attention.
+https://docs.codacy.com/repositories/security-monitor/,"The Quality Security Monitor provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off."
 https://docs.codacy.com/repositories-configure/adjusting-quality-gates/,Adjust the quality gates to configure when Codacy reports your pull requests and commits as not up to standards.
 https://docs.codacy.com/repositories-configure/adjusting-quality-goals/,"Adjust the quality goals to help you monitor the progress of the code quality in your repository dashboard, and configure which files Codacy considers complex or duplicated."
 https://docs.codacy.com/repositories-configure/codacy-configuration-file/,"Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages."
@@ -184,3 +184,7 @@ https://docs.codacy.com/repositories-configure/local-analysis/client-side-tools/
 https://docs.codacy.com/repositories-configure/local-analysis/running-aligncheck/,Instructions on how to run aligncheck as a client-side tool on Codacy.
 https://docs.codacy.com/repositories-configure/local-analysis/running-deadcode/,Instructions on how to run deadcode as a client-side tool on Codacy.
 https://docs.codacy.com/repositories-configure/local-analysis/running-spotbugs/,Instructions on how to run SpotBugs as a client-side tool on Codacy.
+https://docs.codacy.com/repositories-coverage/commits/,"The Coverage Commits page displays an overview of the commits in your repository, such as the analysis status and coverage for each commit. This allows you to monitor the evolution of coverage in your repository per commit."
+https://docs.codacy.com/repositories-coverage/files/,The Coverage Files page displays the current code coverage information for each analyzed file in your enabled repository branches.
+https://docs.codacy.com/repositories-coverage/pull-requests/,"The Coverage Pull Requests page displays an overview of the pull requests in your repository, such as the status and coverage metrics for each pull request. This allows you to monitor the coverage of the work in progress in your repository."
+https://docs.codacy.com/repositories-coverage/repository-dashboard/,The Coverage Repository Dashboard provides an overview of the repository coverage and items that require your attention.
