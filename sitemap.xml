@@ -381,6 +381,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.codacy.com/organizations/managing-security-and-risk/</loc>
+         <lastmod>2023-07-03</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.codacy.com/organizations/organization-overview/</loc>
          <lastmod>2023-07-03</lastmod>
          <changefreq>daily</changefreq>
