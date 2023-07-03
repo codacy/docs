@@ -1,6 +1,6 @@
-# Files page
+# Quality Files page
 
-The **Files page** displays the current code quality information for each analyzed file in your [enabled repository branches](../repositories-configure/managing-branches.md).
+The **Quality Files page** displays the current code quality information for each analyzed file in your [enabled repository branches](../repositories-configure/managing-branches.md).
 
 By default, the page lists the files on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display files on other branches.
 
@@ -52,7 +52,7 @@ Depending on the available analysis information for the file, Codacy displays on
 
     ![Duplicated blocks for a file](images/files-duplication.png)
 
--   **Coverage:** Shows which lines of code are covered by tests or not. The tab displays the percentage of coverable lines that are covered by tests in the file.
+-   **Coverage:** Shows which lines of code are covered by tests (green background) or not (red background). The tab displays the percentage of coverable lines that are covered by tests in the file.
 
     ![Coverage information for a file](images/files-coverage.png)
 

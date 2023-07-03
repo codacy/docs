@@ -1,6 +1,6 @@
-# Issues page
+# Quality Issues page
 
-The **Issues page** lists all the issues that Codacy detected in your repository, including the severity level and category of each issue.
+The **Quality Issues page** lists all the issues that Codacy detected in your repository, including the severity level and category of each issue.
 
 By default, the page lists the issues on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display issues on other branches.
 
@@ -66,7 +66,7 @@ Use the options in the cogwheel menu of each issue to:
     See [how to restore ignored issues](#restoring-ignored-issues).
 
     !!! tip
-        Organization owners can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
+        Organization admins can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
 
 -   **Disable the code pattern** that detected the issue.
 

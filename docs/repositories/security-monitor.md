@@ -1,4 +1,4 @@
-# Security Monitor
+# Quality Security Monitor
 
 {%
     include-markdown "../assets/includes/paid.md"
@@ -6,7 +6,7 @@
     end="<!--paid-end-->"
 %}
 
-The **Security Monitor** provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.
+The **Quality Security Monitor** provides an overview of all security issues that Codacy found on your repository, and also warns you if any security code patterns are currently turned off.
 
 !!! tip
     For an organization-level overview of security vulnerabilities, use the [Security and Risk Management](../organizations/managing-security-and-risk.md) dashboard instead.
