@@ -1,5 +1,6 @@
 aligncheck
 allowlist
+Atlassian
 autovacuum
 Ameba
 Bandit
@@ -67,6 +68,7 @@ Scalameta
 Scalastyle
 SCSSLint
 Serverless
+severities
 ShellCheck
 SonarC#
 SonarVB
