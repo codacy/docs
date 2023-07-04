@@ -11,7 +11,7 @@
         <meta name="description" content="Review the list of permissions that Codacy requires from your Git provider to analyze your code.">
       
       
-        <meta http-equiv="last-modified" content="2023-06-29 15:05:46">
+        <meta http-equiv="last-modified" content="2023-07-04 12:23:02">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/which-permissions-does-codacy-need-from-my-account/">
@@ -3881,11 +3881,6 @@
       <td>Read Only</td>
       <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</td>
     </tr>
-    <tr>
-      <td>Git SSH keys</td>
-      <td>Read & Write</td>
-      <td><a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
-    </tr>
   </tbody>
 </table>
 
@@ -3938,7 +3933,7 @@
   <tbody>
     <tr>
       <td><code>account:write</code></td>
-      <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis. Furthermore, <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
+      <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</td>
     </tr>
     <tr>
       <td><code>repository:admin</code></td>
@@ -3990,8 +3985,8 @@
 <p>After revoking an integration, Codacy will no longer be able to access or manipulate resources that require API calls, such as detecting new pull requests or adding comments to pull requests. However, Codacy will still be able to perform operations that only require using the Git protocol either via SSH or HTTPS, such as detecting new commits and calculating diffs. To remove your repositories from Codacy and stop the analysis you must <a href="../../repositories-configure/removing-your-repository/">delete them from your Codacy account</a>.</p>
 <p>If you need to use an integration that you have previously revoked, log in again to Codacy with that integration so that Codacy can request the required permissions from the provider.</p>
 <h2 id="why-does-codacy-ask-for-permission-to-create-ssh-keys">Why does Codacy ask for permission to create SSH keys?<a class="headerlink" href="#why-does-codacy-ask-for-permission-to-create-ssh-keys" title="Permanent link">#</a></h2>
-<p>Codacy needs to create an SSH key in your account to clone repositories and any associated git submodules.</p>
-<p><strong>Codacy only adds read-only SSH keys to be able to clone repositories</strong> and won't have access to any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-ssh-keys">revoke the keys created by Codacy at any time</a>. Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.</p>
+<p>When you add a private repository to Codacy, Codacy uses the integration with your Git provider to create a new SSH key on the repository. Codacy then uses that SSH key every time it needs to clone the repository.</p>
+<p><strong>Codacy only adds read-only SSH keys</strong> and can't access any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-deploy-keys">revoke the keys created by Codacy at any time</a>. Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.</p>
 <p>We understand the desire for security and privacy and find that the SSH protocol is preferable to HTTPS as it separates Codacy's access rights from the one of the users.</p>
               
               
@@ -4149,7 +4144,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 29, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 4, 2023</span>
     
   </small>
 </div>

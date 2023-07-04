@@ -11,7 +11,7 @@
         <meta name="description" content="Git submodules allow you to keep a Git repository as a subdirectory within another Git repository. Git submodules are helpful in maintaining a shared configuration file for your team, and then applying it to multiple Git repositories.">
       
       
-        <meta http-equiv="last-modified" content="2022-08-26 15:48:54">
+        <meta http-equiv="last-modified" content="2023-07-04 12:23:02">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/using-submodules/">
@@ -841,15 +841,29 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enabling-submodules" class="md-nav__link">
-    Enabling submodules
+  <a href="#prerequisites-for-using-submodules" class="md-nav__link">
+    Prerequisites for using submodules
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#using-submodules-on-new-repositories" class="md-nav__link">
-    Using submodules on new repositories
+  <a href="#enabling-submodules-on-a-repository" class="md-nav__link">
+    Enabling submodules on a repository
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#automating-user-keys-for-new-repositories" class="md-nav__link">
+    Automating user keys for new repositories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#see-also" class="md-nav__link">
+    See also
   </a>
   
 </li>
@@ -3771,27 +3785,36 @@
                 
                 <h1 id="using-submodules">Using submodules<a class="headerlink" href="#using-submodules" title="Permanent link">#</a></h1>
 <p><a href="https://git-scm.com/book/en/v2/Git-Tools-Submodules">Git submodules</a> allow you to keep a Git repository as a subdirectory within another Git repository. Git submodules are helpful in maintaining a shared configuration file for your team, and then applying it to multiple Git repositories.</p>
-<h2 id="enabling-submodules">Enabling submodules<a class="headerlink" href="#enabling-submodules" title="Permanent link">#</a></h2>
-<p>By default, Codacy does normal Git clones that don't include submodules to ensure that we only clone necessary repositories. However, if your organization needs to use submodules, please contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a> asking to enable submodules on Codacy.</p>
-<p>After we enabled submodules for your organization, do the following:</p>
+<p>By default, Codacy does normal Git clones that <strong>don't include submodules</strong> to ensure that we only clone necessary repositories. If your organization needs to use submodules, you can request Codacy to enable this feature for you.</p>
+<h2 id="prerequisites-for-using-submodules">Prerequisites for using submodules<a class="headerlink" href="#prerequisites-for-using-submodules" title="Permanent link">#</a></h2>
 <ol>
 <li>
-<p><strong>If you're using Codacy Self-hosted</strong>, you must <a href="../../chart/maintenance/license/">update the license</a>.</p>
+<p>Contact us at <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a> asking to enable submodules on Codacy.</p>
+</li>
+<li>
+<p><strong>If you're using Codacy Self-hosted</strong>, <a href="../../chart/maintenance/license/">update your license</a>.</p>
 </li>
 <li>
 <p>If your submodules are:</p>
 <ul>
-<li><strong>Public repositories</strong>, make sure that your Git URL uses the HTTPS protocol</li>
+<li><strong>Public repositories</strong>, make sure that your Git URL uses the HTTPS protocol.</li>
 <li><strong>Private repositories</strong>, make sure that your Git URL uses the SSH protocol.</li>
 </ul>
 </li>
+</ol>
+<h2 id="enabling-submodules-on-a-repository">Enabling submodules on a repository<a class="headerlink" href="#enabling-submodules-on-a-repository" title="Permanent link">#</a></h2>
+<p>When using submodules, you must do the following for all your existing and new repositories:</p>
+<ol>
 <li>
-<p>If you already have repositories on Codacy where you want to use submodules, navigate to the page <strong>Settings</strong> and click the button <strong>Generate New User Key</strong> for each of these repositories.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>If you're using Bitbucket Cloud</strong>, you must manually add the SSH key on your <a href="https://bitbucket.org/account/settings/ssh-keys/">user account</a>.</p>
-</div>
-<p>When you add a repository to Codacy, Codacy adds a new SSH key to your repository using an integration with your Git provider. Codacy uses this SSH key every time it needs to clone that repository. When you're using submodules, Codacy needs to clone additional repositories it has no access to. Since there is no way of identifying the submodules of a repository before cloning the repository, Codacy adds the SSH keys to the user account so that it has access to the same repositories as the user.</p>
+<p>Open the repository <strong>Settings</strong>, tab <strong>General</strong>. In the <strong>Danger zone</strong> area, you have the <strong>SSH Key</strong> generated by Codacy to access your repository. Take note of this key.</p>
+<p>Codacy generates this repository key when you add a repository to Codacy and uses it to clone that repository. When you're using submodules, Codacy needs to clone additional repositories it may not have access to. To overcome this, Codacy must use an SSH key of your user account to have access to the same repositories as your user.</p>
+</li>
+<li>
+<p>For GitHub and Bitbucket, remove this Codacy key from the repository settings on your Git provider.</p>
+</li>
+<li>
+<p>Add a new SSH key to your git provider account by clicking the link <strong>Add new user key</strong> or the button <strong>Generate New User Key</strong>, depending on your Git provider.</p>
+<p>For GitHub and Bitbucket, this takes you to the Git provider page where you can manage your user account SSH keys. For GitLab, Codacy removes the existing repository key and creates the new SSH key on your user account automatically.</p>
 <p><img alt="Generate new user key" src="../images/using-submodules-generate-new-user-key.png" /></p>
 </li>
 <li>
@@ -3799,14 +3822,23 @@
 <p>If your tool doesn't detect the configuration files in the submodule directories, you must include a configuration file directly in the root of your repositories referencing the configuration files in the submodule directories.</p>
 </li>
 </ol>
-<h2 id="using-submodules-on-new-repositories">Using submodules on new repositories<a class="headerlink" href="#using-submodules-on-new-repositories" title="Permanent link">#</a></h2>
-<p>You must repeat steps 2 to 4 above every time you add new repositories with submodules to Codacy.</p>
-<p>Alternatively, you can make this the default behavior for all new repositories by enabling <strong>Add project key to the user, by default</strong> in <strong>Administration</strong>, page <strong>Settings</strong>.</p>
+<h2 id="automating-user-keys-for-new-repositories">Automating user keys for new repositories<a class="headerlink" href="#automating-user-keys-for-new-repositories" title="Permanent link">#</a></h2>
+<div class="admonition info">
+<p class="admonition-title">This section applies only to Codacy Self-hosted</p>
+</div>
+<p>You can set Codacy to automatically add the new SSH key to your Git provider account for all new repositories by enabling <strong>Add project key to the user, by default</strong> on the <strong>Administration</strong> console, page <strong>Settings</strong>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p><strong>If you're using Bitbucket Cloud</strong> this setting must be turned off since automatically adding the user keys isn't supported.</p>
 </div>
 <p><img alt="Add project key to the user by default" src="../images/using-submodules-default-add-user-key.png" /></p>
+<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
+<ul>
+<li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys">Managing deploy keys in GitHub</a></li>
+<li><a href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">Add an SSH key to your GitHub account</a></li>
+<li><a href="https://support.atlassian.com/bitbucket-cloud/docs/configure-repository-settings/">Configure repository settings in Bitbucket</a></li>
+<li><a href="https://support.atlassian.com/bitbucket-cloud/docs/configure-ssh-and-two-step-verification/">Add an SSH key to your Bitbucket account</a></li>
+</ul>
               
               
                 
@@ -3963,7 +3995,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 26, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 4, 2023</span>
     
   </small>
 </div>
