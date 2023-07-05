@@ -11,7 +11,7 @@
         <meta name="description" content="Release notes for Codacy Cloud June 2023.">
       
       
-        <meta http-equiv="last-modified" content="2023-07-04 13:11:50">
+        <meta http-equiv="last-modified" content="2023-07-05 11:22:50">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2023-06/">
@@ -3799,6 +3799,37 @@
 <p>📢 <a href="https://roadmap.codacy.com">Visit the Codacy roadmap</a> and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!</p>
 <h2 id="product-enhancements">Product enhancements<a class="headerlink" href="#product-enhancements" title="Permanent link">#</a></h2>
 <ul>
+<li>Added support for the Stylelint plugin <a href="https://www.npmjs.com/package/stylelint-no-px"><span class="skip-vale">stylelint-no-px</span></a>. (TS-455)</li>
+<li>Added support for the following ESLint plugins:<ul>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-perfectionist"><span class="skip-vale">eslint-plugin-perfectionist</span></a> (TS-416)</li>
+<li><a href="https://www.npmjs.com/package/@ngrx/eslint-plugin"><span class="skip-vale">@ngrx/eslint-plugin</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/@nx/react"><span class="skip-vale">@nx/react</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/@tanstack/eslint-plugin-query"><span class="skip-vale">@tanstack/eslint-plugin-query</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-deprecation"><span class="skip-vale">eslint-plugin-deprecation</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-ember"><span class="skip-vale">eslint-plugin-ember</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-eslint-plugin"><span class="skip-vale">eslint-plugin-eslint-plugin</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-fp"><span class="skip-vale">eslint-plugin-fp</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-header"><span class="skip-vale">eslint-plugin-header</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-import-alias"><span class="skip-vale">eslint-plugin-import-alias</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-import-newlines"><span class="skip-vale">eslint-plugin-import-newlines</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-jest-extended"><span class="skip-vale">eslint-plugin-jest-extended</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-jira-ticket-todo-comment"><span class="skip-vale">eslint-plugin-jira-ticket-todo-comment</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-lit"><span class="skip-vale">eslint-plugin-lit</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-prefer-object-spread"><span class="skip-vale">eslint-plugin-prefer-object-spread</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-rxjs-angular"><span class="skip-vale">eslint-plugin-rxjs-angular</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-tailwindcss"><span class="skip-vale">eslint-plugin-tailwindcss</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-test-selectors"><span class="skip-vale">eslint-plugin-test-selectors</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-you-dont-need-lodash-underscore"><span class="skip-vale">eslint-plugin-you-dont-need-lodash-underscore</span></a> (TS-419)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-filenames"><span class="skip-vale">eslint-plugin-filenames</span></a> (TS-424)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-diff"><span class="skip-vale">eslint-plugin-diff</span></a> (TS-428)</li>
+<li><a href="https://www.npmjs.com/package/eslint-config-airbnb-typescript-prettier"><span class="skip-vale">eslint-config-airbnb-typescript-prettier</span></a> (TS-448)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-jest-dom"><span class="skip-vale">eslint-plugin-jest-dom</span></a> (TS-449)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-testing-library"><span class="skip-vale">eslint-plugin-testing-library</span></a> (TS-449)</li>
+<li><a href="https://www.npmjs.com/package/eslint-plugin-sort-destructure-keys"><span class="skip-vale">eslint-plugin-sort-destructure-keys</span></a> (TS-448)</li>
+</ul>
+</li>
+<li>Improved the performance of the tool Stylelint by reviewing and refactoring the tool configurations and supported packages. (TS-438)</li>
+<li>Updated and refactored the tool Ameba. <a href="https://github.com/codacy/codacy-ameba/pull/25">Thanks to <span class="skip-vale">Sija</span> for the contribution!</a> (TS-417)</li>
 <li>There's now an onboarding tutorial to guide you through the steps of <a href="../../../getting-started/codacy-quickstart/#adding-your-first-repository">adding and setting up your first repository</a>. (DOCS-468)</li>
 </ul>
 <h2 id="bug-fixes">Bug fixes<a class="headerlink" href="#bug-fixes" title="Permanent link">#</a></h2>
@@ -4012,7 +4043,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 4, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 5, 2023</span>
     
   </small>
 </div>
