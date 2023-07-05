@@ -11,7 +11,7 @@
         <meta name="description" content="Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results are adapted to your scenario.">
       
       
-        <meta http-equiv="last-modified" content="2023-06-19 14:28:20">
+        <meta http-equiv="last-modified" content="2023-07-05 08:51:31">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/configuring-code-patterns/">
@@ -3914,6 +3914,7 @@
 <ul>
 <li>Codacy will use the version of the configuration file <strong>in the branch being analyzed</strong>. For example, if you open a pull request that includes changes to the configuration file, the analysis results will take those changes into account.</li>
 <li>If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option <strong>Configuration file</strong> on the Code patterns page.</li>
+<li>Codacy will use tool configuration files even if you ignore them <a href="../ignoring-files/">using the Codacy UI</a> or <a href="../codacy-configuration-file/">in a Codacy configuration file</a>.</li>
 </ul>
 <p>The table below lists the configuration file names that Codacy detects and supports for each tool:</p>
 <table>
@@ -4308,7 +4309,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 19, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 5, 2023</span>
     
   </small>
 </div>
