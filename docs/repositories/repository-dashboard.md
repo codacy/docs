@@ -1,6 +1,6 @@
-# Repository Dashboard
+# Quality Repository Dashboard
 
-The **Repository Dashboard** provides an overview of the repository code quality and items that require your attention.
+The **Quality Repository Dashboard** provides an overview of the repository code quality and items that require your attention.
 
 To access your Repository Dashboard, select a repository from the [Repositories list](../organizations/managing-repositories.md) and select **Dashboard** on the left navigation sidebar.
 
