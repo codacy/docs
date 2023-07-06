@@ -20,10 +20,10 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v12.0/chart/maintenance/upgrade/).
 
-1.  Update your Codacy command-line tools to the following versions:<!--TODO Update CLI tool versions-->
+1.  Update your Codacy command-line tools to the following versions:
 
-    -   [Codacy Analysis CLI MAJOR.MINOR.PATCH](https://github.com/codacy/codacy-analysis-cli/releases/tag/MAJOR.MINOR.PATCH)
-    -   [Codacy Coverage Reporter MAJOR.MINOR.PATCH](https://github.com/codacy/codacy-coverage-reporter/releases/tag/MAJOR.MINOR.PATCH)
+    -   [Codacy Analysis CLI 7.8.3](https://github.com/codacy/codacy-analysis-cli/releases/tag/7.8.3)
+    -   [Codacy Coverage Reporter 13.13.1](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.13.1)
 
 ## Breaking changes
 
