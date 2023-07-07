@@ -48,7 +48,7 @@ Adds comments on the lines of the merge request where Codacy finds new issues. C
 
 ![Merge request comment on GitLab](images/gitlab-integration-pr-comment.png)
 
-### AI-enhanced comments
+### AI-Enhanced Comments
 
 {% include-markdown "../../assets/includes/preview.md" %}
 
