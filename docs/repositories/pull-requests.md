@@ -3,9 +3,9 @@ page_name: "pull request"
 file_name: "pull-requests"
 ---
 
-# Pull Requests page
+# Quality Pull Requests page
 
-The **Pull Requests page** displays an overview of the pull requests in your repository, such as the analysis status and the number of new and fixed issues for each pull request. This allows you to monitor the code quality of the work in progress in your repository.
+The **Quality Pull Requests page** displays an overview of the pull requests in your repository, such as the analysis status and the number of new and fixed issues for each pull request. This allows you to monitor the code quality of the work in progress in your repository.
 
 By default, the page lists open pull requests but you can use the drop-down list at the top of the page to display the closed pull requests.
 
