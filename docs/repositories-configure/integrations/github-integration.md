@@ -93,7 +93,7 @@ Adds AI-enhanced comments with insights to help you fix identified issues. Enabl
 
 {% include-markdown "../../assets/includes/ai-info.md" %}
 
-![AI-enhanced comment on GitHub](images/github-integration-ai-comment.png)<!-- TODO CY-6853 -->
+![AI-enhanced comment on GitHub](images/github-integration-ai-comment.png)
 
 ## See also
 
