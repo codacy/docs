@@ -200,7 +200,7 @@ To assign the Security Manager role:
 
 1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
 
-1.  In the **Permissions** area, use the search field to find the relevant user and click the user's name.
+1.  In the **Security managers** area, use the search field to find the relevant user and click the user's name.
 
     ![security and risk management access management](images/security-risk-management-access-management.png)
 
@@ -210,7 +210,7 @@ To revoke the Security Manager role:
 
 1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
 
-1.  In the **Permissions** area, scroll the list to find the relevant user.
+1.  In the **Security managers** area, scroll the list to find the relevant user.
 
 1.  Click the **Revoke role icon** to the right of the user's name and confirm.
 
