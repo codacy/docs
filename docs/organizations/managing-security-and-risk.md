@@ -1,6 +1,6 @@
 # Managing security and risk
 
-!!! info "This is a beta feature"
+!!! info "This is a preview feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
 The security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira Cloud instance.
