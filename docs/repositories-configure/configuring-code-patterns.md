@@ -115,7 +115,7 @@ After activating the option to use the configuration file:
 
 -   Codacy will use the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results will take those changes into account.
 -   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.
--   Codacy will use tool configuration files even if you exclude them from the Codacy analysis [using the Codacy UI](ignoring-files.md) or a [Codacy configuration file](codacy-configuration-file.md).
+-   Codacy will keep using the tool configuration file even if you exclude that file from the Codacy analysis [using the Codacy UI](ignoring-files.md) or a [Codacy configuration file](codacy-configuration-file.md).
 
 The table below lists the configuration file names that Codacy detects and supports for each tool:
 
