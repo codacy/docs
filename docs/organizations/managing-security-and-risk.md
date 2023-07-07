@@ -1,6 +1,6 @@
 # Managing security and risk
 
-!!! info "This is a beta feature"
+!!! info "This is a preview feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
 The security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira Cloud instance.
@@ -44,7 +44,7 @@ When viewing the item list:
 
 ## Configuration page
 
-The **Security and risk management configuration** page lets you [manage integrations](#managing-integrations) to fetch security vulnerability information from third-party platforms<!--, as well as [assign or revoke the Security Manager role](#managing-access-to-security-and-risk-management) for organization members-->.
+The **Security and risk management configuration** page lets you [manage integrations](#managing-integrations) to fetch security vulnerability information from third-party platforms, as well as [assign or revoke the Security Manager role](#managing-access-to-security-and-risk-management) for organization members.
 
 To access the configuration page, access the [dashboard](#dashboard) or the [item list](#item-list) and click the **Configure** button in the top right-hand corner of the page.
 
@@ -180,9 +180,6 @@ The following table defines item severities and days to fix the associated secur
 | Medium            | 90               | Medium                               | Medium                             |
 | Low               | 120              | Minor                                | Low and other                      |
 
-<!--
-TODO Publish this section once deployed. See 
-
 ## Managing access to security and risk management
 
 To better track and address security issues, organization admins can extend access to security and risk management by assigning the Security Manager role to organization members.
@@ -203,7 +200,7 @@ To assign the Security Manager role:
 
 1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
 
-1.  In the **Permissions** area, use the search field to find the relevant user and click the user's name.
+1.  In the **Security managers** area, use the search field to find the relevant user and click the user's name.
 
     ![security and risk management access management](images/security-risk-management-access-management.png)
 
@@ -213,10 +210,9 @@ To revoke the Security Manager role:
 
 1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
 
-1.  In the **Permissions** area, scroll the list to find the relevant user.
+1.  In the **Security managers** area, scroll the list to find the relevant user.
 
 1.  Click the **Revoke role icon** to the right of the user's name and confirm.
--->
 
 <!--
 TODO Update this section once the behavior is consistent. See https://codacy.slack.com/archives/C050XTVETSQ/p1687167901474059

@@ -108,8 +108,8 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
     </tr>
     <tr>
       <td>
-        Access security and risk management<!--,<br/>
-        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a>-->
+        Access security and risk management,<br/>
+        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a>
       </td>
       <td>No</td>
       <td colspan="2">No</td>
@@ -224,8 +224,8 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
     </tr>
     <tr>
       <td>
-        Access security and risk management<!--,<br/>
-        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a>-->
+        Access security and risk management,<br/>
+        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a>
       </td>
       <td>No</td>
       <td colspan="2">No</td>
@@ -308,8 +308,8 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
     </tr>
     <tr>
       <td>
-        Access security and risk management<!--,<br/>
-        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a>-->
+        Access security and risk management,<br/>
+        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a>
       </td>
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
