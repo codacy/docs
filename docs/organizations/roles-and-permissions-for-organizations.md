@@ -91,6 +91,14 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
+      <td>Manage gate policies</td>
+      <td>No</td>
+      <td colspan="2">No</td>
+      <td colspan="2">No</td>
+      <td>No</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
       <td>Manage coding standards,<br/>bulk copy patterns</td>
       <td>No</td>
       <td colspan="2">No</td>
@@ -207,6 +215,14 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
+      <td>Manage gate policies</td>
+      <td>No</td>
+      <td colspan="2">No</td>
+      <td>No</td>
+      <td colspan="2">No</td>
+      <td colspan="2" class="yes">Yes</td>
+    </tr>
+    <tr>
       <td>Manage coding standards,<br/>bulk copy patterns</td>
       <td>No</td>
       <td colspan="2">No</td>
@@ -293,6 +309,11 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
     </tr>
     <tr>
       <td>Add and remove repository</td>
+      <td colspan="2">No</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Manage gate policies</td>
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
     </tr>
