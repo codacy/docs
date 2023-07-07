@@ -56,8 +56,6 @@ Adds AI-enhanced comments with insights to help you fix identified issues.
 
 {% include-markdown "../../assets/includes/ai-info.md" %}
 
-![AI-enhanced comment on GitLab](images/gitlab-integration-ai-comment.png)<!-- TODO CY-6853 -->
-
 ### Pull Request Summary
 
 Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication.

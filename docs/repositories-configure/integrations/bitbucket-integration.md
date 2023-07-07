@@ -60,8 +60,6 @@ Adds AI-enhanced comments with insights to help you fix identified issues.
 
 {% include-markdown "../../assets/includes/ai-info.md" %}
 
-![AI-enhanced comment on Bitbucket](images/bitbucket-integration-ai-comment.png)<!-- TODO CY-6853 -->
-
 ### Pull Request Summary
 
 !!! note "This feature isn't available for Bitbucket Server"
