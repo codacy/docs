@@ -80,15 +80,20 @@ When there are new coverage results, Codacy updates the last coverage summary co
 
 Adds comments on the lines of the pull request where Codacy finds new issues with suggestions on how to fix the issues. Codacy doesn't apply any changes automatically. To apply the changes, [manually review and accept the suggestions](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request#applying-suggested-changes).
 
+!!! tip
+    Enable also **AI-enhanced comments** to get ready-to-commit AI-generated fixes.
+
 ![Comment suggesting a fix on GitHub](images/github-integration-suggest-fixes.png)
 
-!!! note
-    This feature is in early access and has the following limitations for now:
+### AI-enhanced comments
 
-    -   The only supported Git providers are GitHub Cloud and GitHub Enterprise.
-    -   The only two tools that suggest fixes are [ESLint](https://eslint.org/docs/rules/) and [markdownlint](https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md). However, we're planning to support suggestions from more tools.
+{% include-markdown "../../assets/includes/preview.md" %}
 
-    📢 [Activate suggested fixes now](#enabling) and [let us know](mailto:support@codacy.com?subject=Feedback on Suggest fixes) what you think!
+Adds AI-enhanced comments with insights to help you fix identified issues. Enable also **Suggested fixes** to get ready-to-commit AI-generated fixes.
+
+{% include-markdown "../../assets/includes/ai-info.md" %}
+
+![AI-enhanced comment on GitHub](images/github-integration-ai-comment.png)
 
 ## See also
 
