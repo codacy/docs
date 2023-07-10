@@ -2,7 +2,7 @@
 
 The **quality gates** of your repository configure when Codacy reports your pull requests and commits as not up to standards.
 
-When you add your repository to Codacy, it automatically follows the [default gate policy for your organization](../organizations/using-gate-policies.md). If you want to set different quality gates for the repository, create a new organization gate policy to apply to the repository.
+When you add your repository to Codacy, it automatically follows the [default gate policy for your organization](../organizations/using-gate-policies.md). If you want to set different quality gates for the repository, [create a new organization gate policy](../organizations/using-gate-policies.md#creating) to apply to the repository.
 
 !!! important
     Although you can define custom quality gate settings for a specific repository, we recommend that you always [use a gate policy](../organizations/using-gate-policies.md) defined by your organization for consistency across repositories.
@@ -14,7 +14,7 @@ Depending on the result of applying the quality gate rules, Codacy updates the c
 
 To access the quality gates, open your repository **Settings**, tab **Gates**. The following screenshot displays the default configuration values:
 
-![Quality gates](images/quality-settings-gates.png)
+![Quality gates](images/quality-settings-gates.png)<!--TODO PLUTO-505 Update screenshot-->
 
 -   **New issues are over:** Pull requests or commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is higher than the set value.
 -   **New security issues are over:** Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value.
