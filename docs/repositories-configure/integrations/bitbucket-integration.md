@@ -52,6 +52,14 @@ Adds comments on the lines of the pull request where Codacy finds new issues. Cl
 
 ![Pull request comment on Bitbucket](images/bitbucket-integration-pr-comment.png)
 
+### AI-Enhanced Comments
+
+{% include-markdown "../../assets/includes/preview.md" %}
+
+Adds AI-enhanced comments with insights to help you fix identified issues.
+
+{% include-markdown "../../assets/includes/ai-info.md" %}
+
 ### Pull Request Summary
 
 !!! note "This feature isn't available for Bitbucket Server"
