@@ -14,7 +14,7 @@ Depending on the result of applying the quality gate rules, Codacy updates the c
 
 To access the quality gates, open your repository **Settings**, tab **Gates**. The following screenshot displays the default configuration values:
 
-![Quality gates](images/quality-settings-gates.png)<!--TODO PLUTO-505 Update screenshot-->
+![Quality gates](images/quality-settings-gates.png)
 
 -   **New issues are over:** Pull requests or commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is higher than the set value.
 -   **New security issues are over:** Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value.
