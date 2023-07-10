@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the GitHub integration to have status checks, annotations, issue and coverage summaries, and suggested fixes from Codacy directly on pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2023-05-15 10:27:29">
+        <meta http-equiv="last-modified" content="2023-07-10 12:42:56">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/github-integration/">
@@ -3849,16 +3849,25 @@
 <p class="admonition-title">This feature is <a href="https://www.codacy.com/pricing">only available on paid plans</a></p>
 </div>
 <p>Adds comments on the lines of the pull request where Codacy finds new issues with suggestions on how to fix the issues. Codacy doesn't apply any changes automatically. To apply the changes, <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request#applying-suggested-changes">manually review and accept the suggestions</a>.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Enable also <strong>AI-enhanced comments</strong> to get ready-to-commit AI-generated fixes.</p>
+</div>
 <p><img alt="Comment suggesting a fix on GitHub" src="../images/github-integration-suggest-fixes.png" /></p>
+<h3 id="ai-enhanced-comments">AI-enhanced comments<a class="headerlink" href="#ai-enhanced-comments" title="Permanent link">#</a></h3>
+<div class="admonition info">
+<p class="admonition-title">This feature is still under development and is accessible on request. To try it out, email us at  <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
+</div>
+<p>Adds AI-enhanced comments with insights to help you fix identified issues. Enable also <strong>Suggested fixes</strong> to get ready-to-commit AI-generated fixes.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>This feature is in early access and has the following limitations for now:</p>
 <ul>
-<li>The only supported Git providers are GitHub Cloud and GitHub Enterprise.</li>
-<li>The only two tools that suggest fixes are <a href="https://eslint.org/docs/rules/">ESLint</a> and <a href="https://github.com/DavidAnson/markdownlint/blob/main/doc/Rules.md">markdownlint</a>. However, we're planning to support suggestions from more tools.</li>
+<li>This feature is compatible with most programming languages and requires no additional setup.</li>
+<li>Comments are generated using the description of the static analysis issue, information about the tool that detected the issue, and a few lines of surrounding code to provide the AI with extra context and improve its accuracy.</li>
+<li>This feature leverages the OpenAI API. No information is shared with other third parties or used to train AI models. Please refer to the <a href="https://openai.com/policies/api-data-usage-policies">OpenAI API data usage policies</a> for more information.</li>
 </ul>
-<p>📢 <a href="#enabling">Activate suggested fixes now</a> and <a href="mailto:support@codacy.com?subject=Feedback on Suggest fixes">let us know</a> what you think!</p>
 </div>
+<p><img alt="AI-enhanced comment on GitHub" src="../images/github-integration-ai-comment.png" /></p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../../getting-started/integrating-codacy-with-your-git-workflow/">Integrating Codacy with your Git workflow</a></li>
@@ -4019,7 +4028,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 10, 2023</span>
     
   </small>
 </div>

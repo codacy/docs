@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the GitLab integration to have merge request status, comments, and analysis summaries from Codacy directly on merge requests.">
       
       
-        <meta http-equiv="last-modified" content="2023-05-15 10:27:29">
+        <meta http-equiv="last-modified" content="2023-07-10 12:42:56">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/gitlab-integration/">
@@ -3832,6 +3832,19 @@
 <h3 id="pull-request-comment">Pull Request Comment<a class="headerlink" href="#pull-request-comment" title="Permanent link">#</a></h3>
 <p>Adds comments on the lines of the merge request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them.</p>
 <p><img alt="Merge request comment on GitLab" src="../images/gitlab-integration-pr-comment.png" /></p>
+<h3 id="ai-enhanced-comments">AI-Enhanced Comments<a class="headerlink" href="#ai-enhanced-comments" title="Permanent link">#</a></h3>
+<div class="admonition info">
+<p class="admonition-title">This feature is still under development and is accessible on request. To try it out, email us at  <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
+</div>
+<p>Adds AI-enhanced comments with insights to help you fix identified issues.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This feature is compatible with most programming languages and requires no additional setup.</li>
+<li>Comments are generated using the description of the static analysis issue, information about the tool that detected the issue, and a few lines of surrounding code to provide the AI with extra context and improve its accuracy.</li>
+<li>This feature leverages the OpenAI API. No information is shared with other third parties or used to train AI models. Please refer to the <a href="https://openai.com/policies/api-data-usage-policies">OpenAI API data usage policies</a> for more information.</li>
+</ul>
+</div>
 <h3 id="pull-request-summary">Pull Request Summary<a class="headerlink" href="#pull-request-summary" title="Permanent link">#</a></h3>
 <p>Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication.</p>
 <p><img alt="Merge request summary on GitLab" src="../images/gitlab-integration-pr-summary.png" /></p>
@@ -3995,7 +4008,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 15, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 10, 2023</span>
     
   </small>
 </div>
