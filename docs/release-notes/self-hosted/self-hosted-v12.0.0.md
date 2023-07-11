@@ -29,7 +29,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 Codacy Self-hosted v12 supports Kubernetes v1.24 and v1.25. If you're upgrading your Kubernetes installation, make sure to do the following in the recommended order to avoid service outages:
 
-1. If you have set `scheduler.enable = "true"` in `values.yaml`, do the following:
+1.  If you have set `scheduler.enable = "true"` in `values.yaml`, do the following:
 
     Assuming you're using the default `codacy` namespace:
 
