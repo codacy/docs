@@ -135,7 +135,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   PHP Mess Detector 2.13.0
 -   PHP_CodeSniffer 3.7.2
 -   PMD 6.55.0
--   **[Prospector 1.10.2](https://github.com/PyCQA/prospector/releases/tag/v1.10.2) (updated from 1.7.7)**
+-   **[Prospector 1.10.2](https://github.com/landscapeio/prospector/releases/tag/1.10.2) (updated from 1.7.7)**
 -   PSScriptAnalyzer 1.18.3
 -   **[Pylint 2.17.3](https://github.com/PyCQA/pylint/releases/tag/v2.17.3) (updated from 2.17.0)**
 -   Pylint (deprecated) 1.9.5
