@@ -22,7 +22,7 @@ To integrate Codacy with your Git workflow, follow these steps:
 [Review and adjust the quality gates](../repositories-configure/adjusting-quality-gates.md) of your repository to decide which pull requests should fail the Codacy quality gate.
 
 !!! tip
-    The [default quality gate rules]](../organizations/using-gate-policies.md) are designed to help maintain the current code quality of your repository. In particular, the default value for the coverage rule might be demanding. Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of delaying or blocking the development progress.
+    The [default quality gate rules](../organizations/using-gate-policies.md) are designed to help maintain the current code quality of your repository. In particular, the default value for the coverage rule might be demanding. Depending on factors such as the current code quality of your repository and the maturity of your team practices, consider the balance between implementing stricter quality gates and the possibility of delaying or blocking the development progress.
 
     Codacy generally recommends that on a first stage you configure rules that focus on stopping new critical issues from entering your code base, such as:
 
