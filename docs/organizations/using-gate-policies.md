@@ -1,10 +1,8 @@
 # Using gate policies
 
-Gate policies help you ensure that Codacy uses the same quality gates across your organization repositories.
+Gate policies help you ensure that Codacy uses the same [quality gates](../repositories-configure/adjusting-quality-gates.md) across your organization repositories.
 
-Codacy provides a built-in gate policy, **Codacy gate policy**, with the default quality gates that define when your pull requests and commits meet the minimum quality levels.
-
-This built-in **Codacy gate policy** is primarily the default gate policy, which Codacy applies automatically to newly added repositories. You can then create new gate policies with different quality gates and make them the default for your organization.
+Codacy provides a built-in gate policy, **Codacy Gate Policy**, which sets minimum quality levels for pull requests and commits. By default, Codacy applies this gate policy automatically to newly added repositories. You can then create new gate policies with different quality gates and make them the default for your organization.
 
 ![Codacy built-in gate policy](images/gate-policy-codacy-default.png)
 
@@ -58,7 +56,7 @@ To edit the quality gates of an existing gate policy or change the repositories 
 1.  Edit the current quality gate values and click the button **Next: Select and apply to repositories**.
 
     !!! note
-        You can't change the quality gate values of the built-in **Codacy gate policy**.
+        You can't change the quality gate values of the built-in **Codacy Gate Policy**.
 
 1.  Edit the list of repositories that follow the gate policy.
 
@@ -71,7 +69,7 @@ If you stop applying a gate policy to a repository, Codacy restores the previous
 ## Deleting a gate policy {: id="deleting"}
 
 !!! note
-    You can't delete the built-in **Codacy gate policy**.
+    You can't delete the built-in **Codacy Gate Policy**.
 
 To delete an organization gate policy:
 
@@ -85,8 +83,4 @@ When you delete a gate policy:
 
 -   Codacy restores the previous quality gates of each repository following that gate policy.
 
--   If the deleted gate policy was the default for your organization, Codacy makes the built-in **Codacy gate policy** the default.
-
-## See also
-
--   [Adjusting quality gates](../repositories-configure/adjusting-quality-gates.md)
+-   If the deleted gate policy was the default for your organization, Codacy makes the built-in **Codacy Gate Policy** the default.
