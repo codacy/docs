@@ -4,12 +4,12 @@ The **quality gates** of your repository configure when Codacy reports your pull
 
 When you add your repository to Codacy, it automatically follows the [default gate policy for your organization](../organizations/using-gate-policies.md). If you want to set different quality gates for the repository, [create a new organization gate policy](../organizations/using-gate-policies.md#creating) to apply to the repository.
 
-!!! important
+!!! note
     Although you can define custom quality gate settings for specific repositories, we recommend that you always [use a gate policy](../organizations/using-gate-policies.md) defined by your organization to enforce consistent rules across multiple repositories.
 
 Depending on the result of applying the quality gate rules, Codacy updates the color of the metrics on the [pull request or commit quality overview](../repositories/pull-requests.md#quality-overview) and reports the corresponding pull request status on your Git provider, if enabled.
 
-!!! note
+!!! tip
     [Integrate Codacy with your Git workflow](../getting-started/integrating-codacy-with-your-git-workflow.md) to report the pull request status to your Git provider and optionally block merging pull requests that aren't up to standards.
 
 To access the quality gates, open your repository **Settings**, tab **Gates**. The following screenshot displays the default configuration values:
