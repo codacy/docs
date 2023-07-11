@@ -12,7 +12,7 @@ Depending on the result of applying the quality gate rules, Codacy updates the c
 !!! tip
     [Integrate Codacy with your Git workflow](../getting-started/integrating-codacy-with-your-git-workflow.md) to report the pull request status to your Git provider and optionally block merging pull requests that aren't up to standards.
 
-To access the quality gates, open your repository **Settings**, tab **Gates**. The following screenshot displays the default configuration values:
+To access the quality gates, open your repository **Settings**, tab **Gates**.
 
 ![Quality gates](images/quality-settings-gates.png)
 

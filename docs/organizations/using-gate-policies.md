@@ -2,9 +2,11 @@
 
 Gate policies help you ensure that Codacy uses the same [quality gates](../repositories-configure/adjusting-quality-gates.md) across your organization repositories.
 
-Codacy provides a built-in gate policy, **Codacy Gate Policy**, which sets minimum quality levels for pull requests and commits. By default, Codacy applies this gate policy automatically to newly added repositories. You can then create new gate policies with different quality gates and make them the default for your organization.
+Codacy provides a built-in gate policy, **Codacy Gate Policy**, which sets minimum quality levels for pull requests and commits. The following screenshot displays the default configuration values:
 
 ![Codacy built-in gate policy](images/gate-policy-codacy-default.png)
+
+By default, Codacy applies the **Codacy Gate Policy** automatically to newly added repositories. You can then create new gate policies with different quality gates and make them the default for your organization.
 
 ## Creating a new gate policy {: id="creating"}
 
