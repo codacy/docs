@@ -29,8 +29,6 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 -   If you're updating Kubernetes to v1.25, upgrade to Codacy Self-hosted v12.0.0 before doing so, as some Kubernetes endpoints have been deprecated and may lead to service outage if used with earlier versions of Codacy Self-hosted.
 
--   <!-- TODO memory requirements https://codacy.slack.com/archives/CSSSHAK9N/p1688643146512439?thread_ts=1688632097.010499&cid=CSSSHAK9N -->
-
 -   If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), ensure Pod Security Policies are disabled for Loki and Promtail by upgrading in the following order:
 
     1.  Upgrade to Codacy Self-hosted v12.0.0
