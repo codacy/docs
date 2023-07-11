@@ -71,7 +71,6 @@ Codacy Self-hosted v12 supports Kubernetes v1.24 and v1.25. If you're upgrading 
 ## Product enhancements
 
 -   Added support for [Kubernetes 1.25.\*](https://docs.codacy.com/v12.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-1306)
--   Added support for [<span class="skip-vale">cgroup</span> v2](https://kubernetes.io/docs/concepts/architecture/cgroups/). (<!-- TODO is there a task tracking this activity?-->)
 -   Added support for the Stylelint plugin [<span class="skip-vale">stylelint-no-px</span>](https://www.npmjs.com/package/stylelint-no-px). (TS-455)
 -   Added support for the following ESLint plugins:
     -   [<span class="skip-vale">eslint-plugin-rxjs</span>](https://www.npmjs.com/package/eslint-plugin-rxjs) (TS-346)
