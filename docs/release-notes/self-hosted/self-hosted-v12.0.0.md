@@ -99,7 +99,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   CSSLint 1.0.5
 -   dartanalyzer 2.17.0
 -   **[detekt 1.22.0](https://github.com/detekt/detekt/releases/tag/v1.22.0) (updated from 1.19.0)**
--   **[ESLint 8.42.0](https://github.com/eslint/eslint/releases/tag/v8.42.0) (updated from 8.34.0)**
+-   **[ESLint 8.44.0](https://github.com/eslint/eslint/releases/tag/v8.44.0) (updated from 8.34.0)**
 -   ESLint (deprecated) 7.32.0
 -   Faux-Pas 1.7.2
 -   Flawfinder 2.0.19
@@ -126,7 +126,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   SpotBugs 4.7.3
 -   SQLint 0.2.1
 -   Staticcheck 2022.1.3
--   **[Stylelint 15.8.0](https://github.com/stylelint/stylelint/releases/tag/15.8.0) (updated from 14.16.1)**
+-   **[Stylelint 15.9.0](https://github.com/stylelint/stylelint/releases/tag/15.9.0) (updated from 14.16.1)**
 -   SwiftLint 0.50.3
 -   Tailor 0.12.0
 -   TSLint 6.1.3
