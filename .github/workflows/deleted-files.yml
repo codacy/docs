@@ -17,11 +17,6 @@ jobs:
         uses: tj-actions/changed-files@v37
         with:
           files: docs/**/*.md
-      - name: List all deleted files
-        env:
-          MY_DATA: '${{ toJSON(steps.changed-files.outputs) }}'
-        run: |
-          echo "$MY_DATA"
       - name: Format list of deleted files
         id: format-output
         env:
@@ -38,10 +33,6 @@ jobs:
             This PR deletes one or more `md` files:
             `${{ steps.format-output.outputs.FORMATTED }}`
             
-            ---
-            
             Remember to append the appropriate redirects in `mkdocs.yml` under `plugins.redirects.redirect_maps`.
-            
-            (Run ${{ github.run_id }})
           comment_tag: deleted-files-reminder
           
