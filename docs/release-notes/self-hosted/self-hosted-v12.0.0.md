@@ -105,8 +105,8 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
     -   [<span class="skip-vale">eslint-plugin-jest-dom</span>](https://www.npmjs.com/package/eslint-plugin-jest-dom) (TS-449)
     -   [<span class="skip-vale">eslint-plugin-testing-library</span>](https://www.npmjs.com/package/eslint-plugin-testing-library) (TS-449)
     -   [<span class="skip-vale">eslint-plugin-sort-destructure-keys</span>](https://www.npmjs.com/package/eslint-plugin-sort-destructure-keys) (TS-448)
-- Improved the performance of the tool Stylelint by reviewing and refactoring the tool configurations and supported packages. (TS-438)
-- Updated and refactored the tool Ameba. [Thanks to <span class="skip-vale">Sija</span> for the contribution!](https://github.com/codacy/codacy-ameba/pull/25) (TS-417)
+-   Improved the performance of the tool Stylelint by reviewing and refactoring the tool configurations and supported packages. (TS-438)
+-   Updated and refactored the tool Ameba. [Thanks to <span class="skip-vale">Sija</span> for the contribution!](https://github.com/codacy/codacy-ameba/pull/25) (TS-417)
 
 ## Tool versions
 
