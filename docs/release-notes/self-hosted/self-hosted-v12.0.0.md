@@ -72,36 +72,6 @@ Codacy Self-hosted v12 supports Kubernetes v1.24 and v1.25. If you're upgrading 
 
 -   Added support for [Kubernetes 1.25.\*](https://docs.codacy.com/v12.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-1306)
 -   Added support for the Stylelint plugin [<span class="skip-vale">stylelint-no-px</span>](https://www.npmjs.com/package/stylelint-no-px). (TS-455)
--   Added support for the following ESLint plugins:
-    -   [<span class="skip-vale">eslint-plugin-rxjs</span>](https://www.npmjs.com/package/eslint-plugin-rxjs) (TS-346)
-    -   [<span class="skip-vale">eslint-plugin-markdown</span>](https://www.npmjs.com/package/eslint-plugin-markdown) (TS-121)
-    -   [<span class="skip-vale">eslint-plugin-yml</span>](https://www.npmjs.com/package/eslint-plugin-yml) (TS-121)
-    -   [<span class="skip-vale">vue-scoped-css</span>](https://www.npmjs.com/package/eslint-plugin-vue-scoped-css) (TS-356)
-    -   [<span class="skip-vale">eslint-plugin-perfectionist</span>](https://www.npmjs.com/package/eslint-plugin-perfectionist) (TS-416)
-    -   [<span class="skip-vale">@ngrx/eslint-plugin</span>](https://www.npmjs.com/package/@ngrx/eslint-plugin) (TS-419)
-    -   [<span class="skip-vale">@nx/react</span>](https://www.npmjs.com/package/@nx/react) (TS-419)
-    -   [<span class="skip-vale">@tanstack/eslint-plugin-query</span>](https://www.npmjs.com/package/@tanstack/eslint-plugin-query) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-deprecation</span>](https://www.npmjs.com/package/eslint-plugin-deprecation) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-ember</span>](https://www.npmjs.com/package/eslint-plugin-ember) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-eslint-plugin</span>](https://www.npmjs.com/package/eslint-plugin-eslint-plugin) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-fp</span>](https://www.npmjs.com/package/eslint-plugin-fp) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-header</span>](https://www.npmjs.com/package/eslint-plugin-header) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-import-alias</span>](https://www.npmjs.com/package/eslint-plugin-import-alias) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-import-newlines</span>](https://www.npmjs.com/package/eslint-plugin-import-newlines) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-jest-extended</span>](https://www.npmjs.com/package/eslint-plugin-jest-extended) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-jira-ticket-todo-comment</span>](https://www.npmjs.com/package/eslint-plugin-jira-ticket-todo-comment) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-lit</span>](https://www.npmjs.com/package/eslint-plugin-lit) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-prefer-object-spread</span>](https://www.npmjs.com/package/eslint-plugin-prefer-object-spread) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-rxjs-angular</span>](https://www.npmjs.com/package/eslint-plugin-rxjs-angular) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-tailwindcss</span>](https://www.npmjs.com/package/eslint-plugin-tailwindcss) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-test-selectors</span>](https://www.npmjs.com/package/eslint-plugin-test-selectors) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-you-dont-need-lodash-underscore</span>](https://www.npmjs.com/package/eslint-plugin-you-dont-need-lodash-underscore) (TS-419)
-    -   [<span class="skip-vale">eslint-plugin-filenames</span>](https://www.npmjs.com/package/eslint-plugin-filenames) (TS-424)
-    -   [<span class="skip-vale">eslint-plugin-diff</span>](https://www.npmjs.com/package/eslint-plugin-diff) (TS-428)
-    -   [<span class="skip-vale">eslint-config-airbnb-typescript-prettier</span>](https://www.npmjs.com/package/eslint-config-airbnb-typescript-prettier) (TS-448)
-    -   [<span class="skip-vale">eslint-plugin-jest-dom</span>](https://www.npmjs.com/package/eslint-plugin-jest-dom) (TS-449)
-    -   [<span class="skip-vale">eslint-plugin-testing-library</span>](https://www.npmjs.com/package/eslint-plugin-testing-library) (TS-449)
-    -   [<span class="skip-vale">eslint-plugin-sort-destructure-keys</span>](https://www.npmjs.com/package/eslint-plugin-sort-destructure-keys) (TS-448)
 -   Improved the performance of the tool Stylelint by reviewing and refactoring the tool configurations and supported packages. (TS-438)
 -   Updated and refactored the tool Ameba. [Thanks to <span class="skip-vale">Sija</span> for the contribution!](https://github.com/codacy/codacy-ameba/pull/25) (TS-417)
 
@@ -123,7 +93,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   CSSLint 1.0.5
 -   dartanalyzer 2.17.0
 -   **[detekt 1.22.0](https://github.com/detekt/detekt/releases/tag/v1.22.0) (updated from 1.19.0)**
--   **[ESLint 8.44.0](https://github.com/eslint/eslint/releases/tag/v8.44.0) (updated from 8.34.0)**
+-   ESLint 8.34.0
 -   ESLint (deprecated) 7.32.0
 -   Faux-Pas 1.7.2
 -   Flawfinder 2.0.19
