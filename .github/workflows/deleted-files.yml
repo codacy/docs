@@ -12,27 +12,37 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v3
+
       - name: Get changed docs md files
         id: changed-files
         uses: tj-actions/changed-files@v37
         with:
           files: docs/**/*.md
+
       - name: Format list of deleted files
         id: format-output
         env:
-          ORIGINAL: '${{ steps.changed-files.outputs.deleted_files }}'
+          ORIGINAL_DELETED: '${{ steps.changed-files.outputs.deleted_files }}'
+          ORIGINAL_RENAMED: '${{ steps.changed-files.outputs.renamed_files }}'
         run: |
-          echo "FORMATTED=$(echo $ORIGINAL | sed 's/ /`<br>`/g')" >> $GITHUB_OUTPUT
+          echo "FORMATTED_DELETED=$(echo $ORIGINAL_DELETED | sed 's/ /`<br>`/g')" >> $GITHUB_OUTPUT
+          echo "FORMATTED_RENAMED=$(echo $ORIGINAL_RENAMED | sed 's/ /`<br>`/g')" >> $GITHUB_OUTPUT
+
+      - name: Print debug info to console
+        env:
+          MY_DATA: '${{ toJSON(steps.changed-files.outputs) }}'
+          FORMATTED_DELETED: '${{ steps.format-output.outputs.FORMATTED_DELETED }}'
+          FORMATTED_RENAMED: '${{ steps.format-output.outputs.FORMATTED_RENAMED }}'
+        run: |
+          echo "$MY_DATA"
+
       - name: Comment PR if there are deleted files
         if: steps.changed-files.outputs.any_deleted == 'true'
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            ## Notice
-            
-            This PR deletes one or more `md` files:
-            `${{ steps.format-output.outputs.FORMATTED }}`
-            
+            ## Remember to add redirects
+            ${{ steps.format-output.outputs.FORMATTED_DELETED != '' && format('This PR **deletes** one or more `md` files:<br>`{0}`<br>', steps.format-output.outputs.FORMATTED_DELETED) || ''  }}
+            ${{ steps.format-output.outputs.FORMATTED_RENAMED != '' && format('This PR **renames** one or more `md` files:<br>`{0}`<br>', steps.format-output.outputs.FORMATTED_RENAMED) || ''  }}
             Remember to append the appropriate redirects in `mkdocs.yml` under `plugins.redirects.redirect_maps`.
           comment_tag: deleted-files-reminder
-          
