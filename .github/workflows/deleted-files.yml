@@ -1,9 +1,9 @@
 name: Deleted files
 
-on:
-  pull_request:
-    branches:
-      master
+on: pull_request
+#  pull_request:
+#    branches:
+#      master
 
 jobs:
   list-deleted-files:
