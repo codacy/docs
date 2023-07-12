@@ -41,7 +41,7 @@ jobs:
         uses: thollander/actions-comment-pull-request@v2
         with:
           message: |
-            ## Notice
+            ## Remember to add redirects
             ${{ steps.format-output.outputs.FORMATTED_DELETED != '' && format('This PR **deletes** one or more `md` files:<br>`{0}`<br>', steps.format-output.outputs.FORMATTED_DELETED) || ''  }}
             ${{ steps.format-output.outputs.FORMATTED_RENAMED != '' && format('This PR **renames** one or more `md` files:<br>`{0}`<br>', steps.format-output.outputs.FORMATTED_RENAMED) || ''  }}
             Remember to append the appropriate redirects in `mkdocs.yml` under `plugins.redirects.redirect_maps`.
