@@ -27,9 +27,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 ## Breaking changes
 
-Codacy Self-hosted v12 supports Kubernetes v1.24 and v1.25. If you're upgrading your Kubernetes installation, make sure to do the following in the recommended order to avoid service outages:
-
-1.  If you have set `scheduler.enable = "true"` in `values.yaml`, do the following:
+- If you have set `scheduler.enable = "true"` in `values.yaml`, do the following.
 
     Assuming you're using the default `codacy` namespace:
 
@@ -62,11 +60,13 @@ Codacy Self-hosted v12 supports Kubernetes v1.24 and v1.25. If you're upgrading 
         kubectl delete pods -l app=worker --field-selector=status.phase=Pending -n codacy
         ```
 
-1.  Upgrade to Codacy Self-hosted v12.0.0
+-   If you're upgrading your Kubernetes installation to v1.25, make sure to do the following in the recommended order to avoid service outages:
 
-1.  If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), update Loki and Promtail by following the latest respective installation instructions ([Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail)).
+    1.  Upgrade to Codacy Self-hosted v12.0.0
 
-1.  Upgrade Kubernetes
+    1.  If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.    0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), update Loki and Promtail by following the     latest respective installation instructions ([Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail)).
+
+    1.  Upgrade Kubernetes to v1.25
 
 ## Product enhancements
 
