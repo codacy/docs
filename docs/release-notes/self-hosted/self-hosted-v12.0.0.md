@@ -64,7 +64,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
     1.  Upgrade to Codacy Self-hosted v12.0.0
 
-    1.  If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.    0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), update Loki and Promtail by following the     latest respective installation instructions ([Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail)).
+    1.  If using the monitoring functionality [Grafana + Prometheus + Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#setting-up-monitoring-using-grafana-prometheus-and-loki), update Loki and Promtail by following the latest respective installation instructions ([Loki](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#2-installing-loki), [Promtail](https://docs.codacy.com/v12.0/chart/configuration/monitoring/#3-installing-promtail)).
 
     1.  Upgrade Kubernetes to v1.25
 
