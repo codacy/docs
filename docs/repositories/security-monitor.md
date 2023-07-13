@@ -146,8 +146,8 @@ The Security Monitor supports checking the languages and frameworks below for an
       <td>Python
       </td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/PyCQA/prospector">Prospector</a>,
-          <a href="https://pylint.pycqa.org/">Pylint</a></td>
+          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
+          <a href="https://github.com/pylint-dev/pylint">Pylint</a></td>
     </tr>
     <tr>
       <td>Ruby<a href="#ruby-31"><sup>4</sup></a>

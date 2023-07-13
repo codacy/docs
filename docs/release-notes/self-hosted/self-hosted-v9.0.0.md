@@ -122,10 +122,10 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   PHP Mess Detector 2.10.1
 -   PHP_CodeSniffer 3.6.2
 -   **[PMD 6.48.0](https://pmd.sourceforge.io/pmd-6.48.0/pmd_release_notes.html) (updated from 6.36.0)**
--   **[Prospector 1.7.7](https://github.com/PyCQA/prospector/releases/tag/1.7.7) (updated from 1.3.1)**
+-   **[Prospector 1.7.7](https://github.com/landscapeio/prospector/releases/tag/1.7.7) (updated from 1.3.1)**
 -   PSScriptAnalyzer 1.18.3
 -   Pylint 1.9.5
--   **[Pylint (Python 3) 2.14.5](https://github.com/PyCQA/pylint/releases/tag/v2.14.5) (updated from 2.7.4)**
+-   **[Pylint (Python 3) 2.14.5](https://github.com/pylint-dev/pylint/releases/tag/v2.14.5) (updated from 2.7.4)**
 -   remark-lint 7.0.1
 -   **[Revive 1.2.3](https://github.com/mgechev/revive/releases/tag/v1.2.3) (updated from 1.2.1)**
 -   **[RuboCop 1.32.0](https://github.com/rubocop/rubocop/releases/tag/v1.32.0) (updated from 1.28.2)**
