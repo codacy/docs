@@ -1,7 +1,7 @@
 [submodule "submodules/chart"]
 	path = submodules/chart
 	url = https://github.com/codacy/chart
-	branch = release-11.0.0
+	branch = release-12.0.0
 [submodule "submodules/codacy-mkdocs-material"]
 	path = submodules/codacy-mkdocs-material
 	url = https://github.com/codacy/codacy-mkdocs-material
