@@ -155,7 +155,7 @@ First, update the Latest documentation version with the latest chart and <span c
     cd ../..
     ```
 
-1.  Edit the file [`mkdocs.yml`](mkdocs.yml) and update the value of the variable `extra.version` to the new version of the chart.
+1.  Edit the file [`mkdocs.yml`](mkdocs.yml) and update the value of the variable `extra.codacy_self_hosted_version` to the new version of the chart.
 
 1.  Build the documentation and make sure that the changes for the new chart and <span class="skip-vale">codacy-coverage-reporter</span> versions are correct.
 
@@ -193,7 +193,7 @@ After updating the Latest documentation version, you're ready to create a new Co
     cd ../..
     ```
 
-1.  Edit the file `mkdocs.yml` and make sure that the value of the variable `extra.version` is set to the new version of the chart.
+1.  Edit the file `mkdocs.yml` and make sure that the value of the variable `extra.codacy_self_hosted_version` is set to the new version of the chart.
 
 1.  Delete the release notes from the release branch, since it's only necessary to publish the release notes on the Latest or main version of the documentation:
 

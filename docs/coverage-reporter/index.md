@@ -185,7 +185,7 @@ The recommended way to do this is by using a CI/CD platform that automatically r
 
         We recommend that you set API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.
 
-1.  **If you're using Codacy Self-hosted** set the following environment variables to specify your Codacy instance URL and the Codacy Coverage Reporter version that's compatible with Codacy Self-hosted {{extra.version}}:
+1.  **If you're using Codacy Self-hosted** set the following environment variables to specify your Codacy instance URL and the Codacy Coverage Reporter version that's compatible with Codacy Self-hosted {{extra.codacy_self_hosted_version}}:
 
     ```bash
     export CODACY_API_BASE_URL=<your Codacy instance URL>
