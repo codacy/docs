@@ -70,7 +70,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 ## Product enhancements
 
--   Added support for [Kubernetes 1.25.\*](https://docs.codacy.com/v12.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-1306)
+-   Added support for [Kubernetes 1.24.\* and 1.25.\*](https://docs.codacy.com/v12.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup) (REL-1304, REL-1306)
 -   Added support for the Stylelint plugin [<span class="skip-vale">stylelint-no-px</span>](https://www.npmjs.com/package/stylelint-no-px). (TS-455)
 -   Improved the performance of the tool Stylelint by reviewing and refactoring the tool configurations and supported packages. (TS-438)
 -   Updated and refactored the tool Ameba. [Thanks to <span class="skip-vale">Sija</span> for the contribution!](https://github.com/codacy/codacy-ameba/pull/25) (TS-417)
