@@ -598,6 +598,7 @@ nav:
           - organizations/what-are-organizations.md
           - organizations/organization-overview.md
           - organizations/managing-repositories.md
+          - organizations/using-gate-policies.md
           - organizations/using-coding-standards.md
           - organizations/copying-code-patterns-between-repositories.md
           - organizations/configuring-default-git-provider-integration-settings.md

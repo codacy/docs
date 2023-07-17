@@ -4,6 +4,8 @@ description: List of operations that users can perform on Codacy depending on th
 
 # Roles and permissions for organizations
 
+<!--TODO PLUTO-505 Add permissions to manage gate policies-->
+
 Your team members have different permission levels on Codacy depending on their role on your Git provider. To change the permission level of a user on Codacy, you must adjust their role directly on your Git provider so that Codacy will use the corresponding permission level on the next time that the user logs in to Codacy.
 
 See the Codacy permission levels that correspond to each role on your Git provider:
@@ -89,7 +91,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Manage coding standards,<br/>bulk copy patterns</td>
+      <td>Manage gate policies and coding standards,<br/>bulk copy patterns</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td colspan="2">No</td>
@@ -205,7 +207,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Manage coding standards,<br/>bulk copy patterns</td>
+      <td>Manage gate policies and coding standards,<br/>bulk copy patterns</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td>No</td>
@@ -295,7 +297,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Manage coding standards,<br/>bulk copy patterns</td>
+      <td>Manage gate policies and coding standards,<br/>bulk copy patterns</td>
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
     </tr>
