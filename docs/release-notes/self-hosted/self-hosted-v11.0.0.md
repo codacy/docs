@@ -76,7 +76,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **[PMD 6.55.0](https://pmd.sourceforge.io/pmd-6.55.0/pmd_release_notes.html) (updated from 6.48.0)**
 -   Prospector 1.7.7
 -   PSScriptAnalyzer 1.18.3
--   **[Pylint 2.17.0](https://github.com/PyCQA/pylint/releases/tag/v2.17.0) (updated from 2.14.5)**
+-   **[Pylint 2.17.0](https://github.com/pylint-dev/pylint/releases/tag/v2.17.0) (updated from 2.14.5)**
 -   Pylint (deprecated) 1.9.5
 -   remark-lint 7.0.1
 -   Revive 1.2.3
