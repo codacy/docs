@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Adjust the quality gates to configure when Codacy reports your pull requests and commits as not up to standards.">
+        <meta name="description" content="The quality gates of your repository configure when Codacy reports your pull requests and commits as not up to standards.">
       
       
-        <meta http-equiv="last-modified" content="2023-05-16 09:25:41">
+        <meta http-equiv="last-modified" content="2023-07-17 14:20:18">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/adjusting-quality-gates/">
@@ -940,6 +940,18 @@
   <li class="md-nav__item">
     <a href="../../organizations/managing-repositories/" title="Managing repositories" class="md-nav__link">
       Managing repositories
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../organizations/using-gate-policies/" title="Using gate policies" class="md-nav__link">
+      Using gate policies
     </a>
   </li>
 
@@ -3775,13 +3787,18 @@
                 
                 
                 <h1 id="adjusting-quality-gates">Adjusting quality gates<a class="headerlink" href="#adjusting-quality-gates" title="Permanent link">#</a></h1>
-<p>Adjust the <strong>quality gates</strong> to configure when Codacy reports your pull requests and commits as not up to standards.</p>
-<p>Depending on the result of applying the quality gate rules, Codacy updates the color of the metrics on the <a href="../../repositories/pull-requests/#quality-overview">pull request or commit quality overview</a> and reports the corresponding pull request status on your Git provider, if enabled.</p>
+<p>The <strong>quality gates</strong> of your repository configure when Codacy reports your pull requests and commits as not up to standards.</p>
+<p>When you add your repository to Codacy, it automatically follows the <a href="../../organizations/using-gate-policies/">default gate policy for your organization</a>. If you want to set different quality gates for the repository, <a href="../../organizations/using-gate-policies/#creating">create a new organization gate policy</a> to apply to the repository.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
+<p>Although you can define custom quality gate settings for specific repositories, we recommend that you always <a href="../../organizations/using-gate-policies/">use a gate policy</a> defined by your organization to enforce consistent rules across multiple repositories.</p>
+</div>
+<p>Depending on the result of applying the quality gate rules, Codacy updates the color of the metrics on the <a href="../../repositories/pull-requests/#quality-overview">pull request or commit quality overview</a> and reports the corresponding pull request status on your Git provider, if enabled.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
 <p><a href="../../getting-started/integrating-codacy-with-your-git-workflow/">Integrate Codacy with your Git workflow</a> to report the pull request status to your Git provider and optionally block merging pull requests that aren't up to standards.</p>
 </div>
-<p>To access the quality gates, open your repository <strong>Settings</strong>, tab <strong>Gates</strong>. The following screenshot displays the default configuration values:</p>
+<p>To access the quality gates, open your repository <strong>Settings</strong>, tab <strong>Gates</strong>.</p>
 <p><img alt="Quality gates" src="../images/quality-settings-gates.png" /></p>
 <ul>
 <li><strong>New issues are over:</strong> Pull requests or commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is higher than the set value.</li>
@@ -3962,7 +3979,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 16, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 17, 2023</span>
     
   </small>
 </div>

@@ -401,6 +401,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.codacy.com/organizations/using-gate-policies/</loc>
+         <lastmod>2023-07-17</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.codacy.com/organizations/what-are-organizations/</loc>
          <lastmod>2023-07-17</lastmod>
          <changefreq>daily</changefreq>
