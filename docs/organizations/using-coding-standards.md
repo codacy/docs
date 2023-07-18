@@ -18,7 +18,7 @@ Optionally, set a default coding standard to apply it automatically to all new r
 
 To create a coding standard for your organization:
 
-1.  Open your organization **Coding standards** page, tab **Coding standards**.
+1.  Open your organization **Policies** page, tab **Coding standards**.
 
 1.  Click the button **Create new standard** at the top right-hand corner of the page. This opens a window with the coding standard creation form.
 
@@ -59,7 +59,7 @@ To create a coding standard for your organization:
 
 To set a coding standard as default:
 
-1.  Open your organization **Coding standards** page, tab **Coding standards**.
+1.  Open your organization **Policies** page, tab **Coding standards**.
 
 1.  Toggle **Make default** on the relevant coding standard card.
 
@@ -72,7 +72,7 @@ To set a coding standard as default:
 
 To edit an existing coding standard or change the repositories that follow that coding standard:
 
-1.  Open your organization **Coding standards** page, tab **Coding standards**.
+1.  Open your organization **Policies** page, tab **Coding standards**.
 
 1.  Click the edit icon on the coding standard card.
 
@@ -99,7 +99,7 @@ To edit an existing coding standard or change the repositories that follow that 
 
 To delete a coding standard:
 
-1.  Open your organization **Coding standards** page, tab **Coding standards**.
+1.  Open your organization **Policies** page, tab **Coding standards**.
 
 1.  Click the trash can icon on the coding standard card and confirm.
 

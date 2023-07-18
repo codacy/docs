@@ -261,8 +261,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>Python
       </td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/PyCQA/prospector">Prospector</a>,
-          <a href="https://pylint.pycqa.org/">Pylint</a></td>
+          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
+          <a href="https://github.com/pylint-dev/pylint">Pylint</a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/rubik/radon">Radon</a></td>
@@ -526,7 +526,7 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-psscriptanalyzer" class="skip-vale">codacy/codacy-psscriptanalyzer</a></td>
 </tr>
 <tr>
-<td><a href="https://pylint.pycqa.org/">Pylint</a></td>
+<td><a href="https://github.com/pylint-dev/pylint">Pylint</a></td>
 <td><a href="https://github.com/codacy/codacy-pylint-python3" class="skip-vale">codacy/codacy-pylint-python3</a></td>
 </tr>
 <tr>
