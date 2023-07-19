@@ -33,16 +33,16 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
     1.  Remove all `scheduler.*` settings from `values.yaml`
 
-    1.  Update the ConfigMap of `worker-manager`:
+    1.  Update the ConfigMap of `codacy-worker-manager`:
 
         ```bash
-        kubectl patch configmap/worker-manager --namespace codacy --type merge --patch '{"data":{"CONFIG_FORCE_codacy_kubernetes_scheduler_enable": "false","CONFIG_FORCE_codacy_kubernetes_scheduler_name":"default-scheduler"}}'
+        kubectl patch configmap/codacy-worker-manager --namespace codacy --type merge --patch '{"data":{"CONFIG_FORCE_codacy_kubernetes_scheduler_enable": "false","CONFIG_FORCE_codacy_kubernetes_scheduler_name":"default-scheduler"}}'
         ```
 
-    1.  Restart the `worker-manager` Deployment:
+    1.  Restart the `codacy-worker-manager` Deployment:
 
         ```bash
-        kubectl rollout restart deployment/worker-manager -n codacy
+        kubectl rollout restart deployment/codacy-worker-manager -n codacy
         ```
 
     1.  List any pending `worker` Pods:
