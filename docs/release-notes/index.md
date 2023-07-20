@@ -83,7 +83,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 v12
 
--   [v12.0.0](self-hosted/self-hosted-v12.0.0.md) (June 23, 2023)<!-- TODO update release date -->
+-   [v12.0.0](self-hosted/self-hosted-v12.0.0.md) (July 20, 2023)
 
 v11
 
