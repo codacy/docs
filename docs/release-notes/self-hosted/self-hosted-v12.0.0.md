@@ -27,11 +27,11 @@ Follow the steps below to upgrade to Codacy Self-hosted v12.0.0:
 
 ## Breaking changes
 
--   If you have set `scheduler.enable: "true"` in `values.yaml`, do the following before updating Kubernetes.
+-   If you have set `scheduler.enable: "true"` in `values-production.yaml` (or `values-microk8s.yaml` if using MicroK8s), do the following before updating Kubernetes.
 
     Assuming you're using the default `codacy` namespace:
 
-    1.  Remove all `scheduler.*` settings from `values.yaml`
+    1.  Remove all `scheduler.*` settings from `values-production.yaml` (or `values-microk8s.yaml` if using MicroK8s)
 
     1.  Update the ConfigMap of `codacy-worker-manager`:
 
