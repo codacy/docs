@@ -17,7 +17,7 @@ The **Security and risk management** dashboard provides a general overview of it
 
 To access the dashboard, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
 
-The dashboard includes five areas:
+The main area of the dashboard includes five panels:
 
 -   **Total:** all open items
 -   **Due soon:** open items within 15 days of their deadline
@@ -25,13 +25,13 @@ The dashboard includes five areas:
 -   **Closed on time:** items closed before the deadline
 -   **Closed late:** items closed after the deadline
 
-Each of these areas displays a count of matching items and a **Review** button to access a filtered list displaying the matching items.
+Each panel shows the total count of matching items and contains a **Review** button to view a list of matching items.
 
 ![security and risk management dashboard](images/security-risk-management-dashboard.png)
 
 ## Item list
 
-The **Security and risk management items** page displays a list of items, filtered by status and sorted by due date ascending.
+The **Security and risk management items** page displays a filtered list of items, sorted by due date ascending.
 
 To access the item list, access the [dashboard](#dashboard) and click the **Review** button in the area of interest, based on the desired filtering.
 
