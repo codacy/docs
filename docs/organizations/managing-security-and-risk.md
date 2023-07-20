@@ -27,6 +27,8 @@ The main area of the dashboard includes five panels:
 
 Each panel shows the total count of matching items and contains a **Review** button to view a list of matching items.
 
+To limit the total counts in each panel to a specific set of severities or repositories, click the **Severity** or **Repository** drop-downs above the main area.
+
 ![security and risk management dashboard](images/security-risk-management-dashboard.png)
 
 ## Item list
@@ -37,7 +39,7 @@ To access the item list, access the [dashboard](#dashboard) and click the **Revi
 
 When viewing the item list:
 
--   To update the filtering criteria, click the **Status** or **Severity** drop-downs above the list.
+-   To update the filtering criteria, click the **Severity**, **Status**, or **Repository** drop-downs above the list.
 -   To find out more about an item, click its **Details** column to navigate to the item of interest on the source platform.
 
 ![Security and risk management items](images/security-risk-management-item-list.png)
