@@ -131,6 +131,13 @@ The following section details when Codacy opens and closes items for each suppor
         -   If an issue is opened and closed on the same day, Codacy may not detect it.
         -   To make sure that Codacy detects Jira issues correctly, assign the "security" label when creating the issue or immediately after.
 
+## Exporting items
+
+To export a list of items as a CSV file, access the [dashboard](#dashboard) or the [item list](#item-list) and click the **Export CSV** button in the top right-hand corner of the page.
+
+!!! note
+    The exported list always includes all items, ignoring any applied filters.
+
 ## Item statuses
 
 The following table describes how item statuses map to deadlines:
