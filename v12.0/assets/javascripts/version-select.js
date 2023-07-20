@@ -1,0 +1,204 @@
+window.addEventListener("DOMContentLoaded", function() {
+    window.versionPages = {};
+    var VERSION = window.location.pathname.split("/")[1];
+    var VERSION_LATEST = "latest";
+
+    function removePrefix(str, prefix) {
+        var hasPrefix = str.indexOf(prefix) === 0;
+        return hasPrefix ? str.substr(prefix.length) : str.toString();
+    }
+
+    function populateVersionSitemap(version) {
+        var versionPath = version === VERSION_LATEST ? "" : "/" + version;
+        window.versionPages[version] = [];
+
+        var xhrSitemap = new XMLHttpRequest();
+        var sitemapURL = window.location.origin + versionPath + "/sitemap.xml";
+        xhrSitemap.open("GET", sitemapURL);
+        xhrSitemap.onload = function() {
+            var xmlLoc = this.responseXML.getElementsByTagName("loc");
+            var nodeText = [];
+    
+            for (var index = 0; index < xmlLoc.length; index++) {
+                var element = xmlLoc[index];
+                nodeText.push(element.textContent);
+            }
+            var prefix = nodeText[0].slice(0,-1);
+            window.versionPages[version] = nodeText.map(function(e) {
+                return removePrefix(e, prefix);
+            });
+        };
+        xhrSitemap.send();
+    }
+
+    function makeSelect(options, selected) {
+        var select = document.createElement("select");
+        select.classList.add("select-css");
+        var deprecatedVersionsArray = new Array();
+        var versionsArray = new Array();
+
+        // Used to decorate options with a sort order.
+        function decorateWithSortOrder(option) {
+            if(!option) {
+                return;
+            }
+
+            if(!(option.value && option.value.match))
+            {
+                option.__sortOrder = '0';
+                return;
+            }
+
+            // We isolate the version number, e.g. 1.1.0
+            var versionNumber = option.value.match(/[\d.]+/);
+
+            if(!versionNumber)
+            {
+                option.__sortOrder = '0';
+                return;
+            }
+
+            var versionNumberArray = versionNumber[0].split('.');
+
+            // Some versions only include major.minor, (e.g. ['1', '1']).
+            // This normalizes them to 3 numbers: ['1', '1', '0'].
+            while(versionNumberArray.length < 3)
+            {
+                versionNumberArray.push('0');
+            }
+
+            // https://stackoverflow.com/questions/40201533/sort-version-dotted-number-strings-in-javascript
+            option.__sortOrder = versionNumberArray.map(function (v) {
+                return +v + 10000;
+            }).join('.');
+        }
+
+        options.forEach(function(i) {
+            var option = new Option(i.text, i.value, void(0),
+                                    i.value === selected);
+
+            decorateWithSortOrder(option);
+
+            if(i.text.includes("Latest"))
+            {
+                // Ensure the Latest option is the first one
+                select.add(option, 0);
+            }
+            else if(i.text.includes("Deprecated"))
+            {
+                // Group deprecated versions
+                deprecatedVersionsArray.push(option);
+            }
+            else
+            {
+                // Group supported versions
+                versionsArray.push(option);
+            }
+        });
+
+        // Used to order versions from latest to oldest
+        function compare(a, b) {
+            let comparison = 0;
+            if (a.__sortOrder > b.__sortOrder) {
+                comparison = -1;
+            } else if (a.__sortOrder < b.__sortOrder) {
+                comparison = 1;
+            }
+            return comparison;
+        }
+
+        // Add supported versions
+        versionsArray.sort(compare);
+        versionsArray.forEach(function(i) {
+            select.add(i);
+        });
+
+        // Finally, add deprecated versions to ensure they appear last
+        deprecatedVersionsArray.sort(compare);
+        deprecatedVersionsArray.forEach(function(i) {
+            select.add(i);
+        });
+
+        return select;
+    }
+
+    function fetchVersions(callback) {
+        var xhr = new XMLHttpRequest();
+        // Obtain JSON listing all available versions
+        xhr.open("GET", window.location.origin + "/versions.json");
+        xhr.onload = function() {
+            if (this.status === 404) {
+                // Use mock JSON as fallback
+                var staticJSON = [{"version": "latest", "title": "Cloud (Latest)", "aliases": []}];
+                callback(staticJSON)
+            } else {
+                callback(JSON.parse(this.responseText));
+            }
+        };
+        xhr.send();
+    }
+
+    function placeSelectElement(ele) {
+        // Place the HTML select element in the DOM
+        var container = document.createElement("div");
+        container.id = "version-selector";
+        container.className = "version-select-container";
+
+        var span = document.createElement("span");
+        span.innerText = "Version";
+
+        container.appendChild(span);
+        container.appendChild(ele);
+
+        var article = document.querySelector(".search-cta-top > .md-search");
+        article.insertAdjacentElement("afterend", container);
+    }
+
+    function generateVersionSwitcher(versionJSON) {
+        versionJSON.forEach(function(e) {
+            populateVersionSitemap(e.version);
+        });
+
+        // Identify which is the current version
+        var currentVersion = versionJSON.find(function(i) {
+            return i.version === VERSION ||
+                   i.aliases.includes(VERSION);
+        });
+
+        if(!currentVersion) {
+            // If VERSION was not found in the parsed JSON,
+            // it means that the version is the latest
+            currentVersion = versionJSON.find(function(i) {
+                return i.version === VERSION_LATEST;
+            });
+        }
+
+        // Build the HTML select element
+        var select = makeSelect(versionJSON.map(function(i) {
+            return {text: i.title, value: i.version};
+        }), currentVersion.version);
+
+        // Navigate to the selected version
+        select.addEventListener("change", function() {
+            var currentPath = window.location.pathname;
+            var targetVersionPath = this.value === VERSION_LATEST ? "" : "/" + this.value;
+
+            if(currentVersion.version !== VERSION_LATEST) {
+                currentPath = removePrefix(window.location.pathname, "/" + currentVersion.version);
+            }
+
+            if(window.versionPages[this.value].includes(currentPath)) {
+                window.location.href = window.location.origin + targetVersionPath + currentPath;
+            } else {
+                window.location.href = window.location.origin + targetVersionPath;
+            }
+        });
+        select.title = "For Codacy Cloud, select Latest.\nFor Codacy Self-Hosted, select the version of your Codacy installation.";
+
+
+        // Place the HTML select element in the DOM
+        placeSelectElement(select);
+    }
+
+    fetchVersions(generateVersionSwitcher);
+});
