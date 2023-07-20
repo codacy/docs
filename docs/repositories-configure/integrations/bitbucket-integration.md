@@ -54,8 +54,6 @@ Adds comments on the lines of the pull request where Codacy finds new issues. Cl
 
 ### AI-Enhanced Comments
 
-{% include-markdown "../../assets/includes/preview.md" %}
-
 Adds AI-enhanced comments with insights to help you fix identified issues.
 
 {% include-markdown "../../assets/includes/ai-info.md" %}
