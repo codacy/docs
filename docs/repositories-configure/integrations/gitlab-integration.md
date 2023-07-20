@@ -50,8 +50,6 @@ Adds comments on the lines of the merge request where Codacy finds new issues. C
 
 ### AI-Enhanced Comments
 
-{% include-markdown "../../assets/includes/preview.md" %}
-
 Adds AI-enhanced comments with insights to help you fix identified issues.
 
 {% include-markdown "../../assets/includes/ai-info.md" %}
