@@ -76,3 +76,13 @@ The option **Show also files without coverage changes** allows you to list all f
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
 <!-- vale on -->
 <!--tab-files-end-->
+
+<!--tab-diff-start-->
+## Diff tab
+
+The **Diff** tab displays<!-- TODO COV-513 -->.
+
+<!-- vale off -->
+![Files tab](images/{{ page.meta.file_name }}-tab-diff.png)
+<!-- vale on -->
+<!--tab-diff-end-->
