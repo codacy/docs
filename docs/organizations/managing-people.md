@@ -67,6 +67,15 @@ To remove people from your organization open your organization **Settings**, pag
 !!! important
     For Enterprise plans where Codacy automatically adds new committers to the organization, people that you remove from your organization will be added again if they keep committing.
 
+## Developers configuration
+
+<!--TODO PLUTO-656 Add details about developers configuration-->
+Make sure all developers committing to your repositories do the following:
+
+-   Configure their email addresses on the Git provider account
+
+-   Set the email address in their local Git configuration 
+
 ## See also
 
 -   [Adding people to Codacy programmatically](../codacy-api/examples/adding-people-to-codacy-programmatically.md)
