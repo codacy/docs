@@ -80,7 +80,13 @@ The option **Show also files without coverage changes** allows you to list all f
 <!--tab-diff-start-->
 ## Diff tab
 
-The **Diff** tab displays<!-- TODO COV-513 -->.
+The **Diff** tab displays a line-by-line view of the coverage variation introduced by the {{ page.meta.page_name }}. It includes the following areas:
+
+-   A list of files modified by the {{ page.meta.page_name }}, showing next to each file either the total file coverage or the coverage variation introduced by the {{ page.meta.page_name }}.
+
+-   A diff viewer comparing the old and new content of each modified file.
+
+    Any added or modified coverable lines are highlighted in **red** if not covered and in **green** if covered. Each covered line includes a label showing its test coverage count.
 
 <!-- vale off -->
 ![Files tab](images/{{ page.meta.file_name }}-tab-diff.png)
