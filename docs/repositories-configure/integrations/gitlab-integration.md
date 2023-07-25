@@ -54,7 +54,7 @@ Adds AI-enhanced comments with insights to help you fix identified issues.
 
 {% include-markdown "../../assets/includes/ai-info.md" %}
 
-![AI-enhanced comment on GitLab](images/gitlab-integration-ai-comment.png)<!-- TODO CY-6853 -->
+![AI-enhanced comment on GitLab](images/gitlab-integration-ai-comment.png)
 
 ### Pull Request Summary
 
