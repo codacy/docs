@@ -50,6 +50,9 @@ To add people to your organization:
 
 1.  Confirm the updated billing details displayed at the bottom of the window and click the button **Add people**. Codacy emails the newly added people inviting them to log in.
 
+!!! important
+    To prevent duplicate seats for the same committer in your organization, make sure all developers committing to your repositories [configure their email addresses correctly](../account/emails.md#updating).
+
 ## Removing people from your organization {: id="removing-people"}
 
 Members of an organization on Codacy can remove themselves from the organization, and organization admins can also remove other members and committers.
@@ -66,15 +69,6 @@ To remove people from your organization open your organization **Settings**, pag
 
 !!! important
     For Enterprise plans where Codacy automatically adds new committers to the organization, people that you remove from your organization will be added again if they keep committing.
-
-## Developers configuration
-
-<!--TODO PLUTO-656 Add details about developers configuration-->
-Make sure all developers committing to your repositories do the following:
-
--   Configure their email addresses on the Git provider account
-
--   Set the email address in their local Git configuration 
 
 ## See also
 
