@@ -22,7 +22,7 @@ To update the email addresses associated with your Codacy account, do the follow
 !!! note
     **When using GitHub**, Codacy automatically associates all commit email addresses linked to the same GitHub user with a single committer. Thus, developers that never logged in to the Codacy app must also make sure they [set their email address in the local Git configuration](#git-config) and add all their email addresses to their [GitHub account](https://github.com/settings/emails).
 
-### Setting your email address in local Git configuration {: id="git-config"}
+### Setting your Git email address {: id="git-config"}
 
 Unless you explicitly [configure your email address](https://git-scm.com/docs/git-config#Documentation/git-config.txt-useremail), Git automatically uses an email address based on the username and hostname of your workstation, and associates this email address with your commits.
 
