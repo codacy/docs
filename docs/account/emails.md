@@ -10,7 +10,7 @@ Codacy pulls email addresses from the Git provider associated with your current 
 
 To update the email addresses associated with your Codacy account, do the following:
 
-1.  Make sure you [set your email address in your local Git configuration](#git-config).
+1.  Make sure you [set your Git email address](#git-config).
 
 1.  Update your email addresses on your Git provider ([GitHub](https://docs.github.com/en/enterprise-cloud@latest/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account), [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/set-email-aliases/), or [GitLab](https://docs.gitlab.com/ee/user/profile/#add-emails-to-your-user-profile)).
 
@@ -20,7 +20,7 @@ To update the email addresses associated with your Codacy account, do the follow
         If the updates are still not reflected on Codacy, navigate to the [access management](https://app.codacy.com/account/access-management) page, revoke the relevant Git provider or Google integration, then log out and back in to Codacy using the same provider.
 
 !!! note
-    **When using GitHub**, Codacy automatically associates all commit email addresses linked to the same GitHub user with a single committer. Thus, developers that never logged in to the Codacy app must also make sure they [set their email address in the local Git configuration](#git-config) and add all their email addresses to their [GitHub account](https://github.com/settings/emails).
+    **When using GitHub**, Codacy automatically associates all commit email addresses linked to the same GitHub user with a single committer. Thus, developers that never logged in to the Codacy app must also make sure they [set their Git email address](#git-config) and add all their email addresses to their [GitHub account](https://github.com/settings/emails).
 
 ### Setting your Git email address {: id="git-config"}
 
