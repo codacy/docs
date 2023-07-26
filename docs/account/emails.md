@@ -2,11 +2,11 @@
 
 To manage the email addresses associated with your account and your email notifications, click on your avatar on the top right-hand corner and open **Your account**, page **Emails**.
 
+![Email settings](images/emails-notifications.png)
+
 ## Updating your email addresses {: id="updating"}
 
 Codacy pulls email addresses from the Git provider associated with your current session. On the **Emails** page, you can verify which email addresses are associated with your Codacy account.
-
-<!--TODO PLUTO-656 Add screenshot-->
 
 To update the email addresses associated with your Codacy account, do the following:
 
@@ -49,8 +49,6 @@ Configure the notifications that you wish to receive under **Repository notifica
 -   **Per pull request:** Codacy will send you an email for each analyzed pull request.
 
 -   **Only my activity:** By default, Codacy will only send you emails about your own commits and pull requests. Turn off this setting to receive emails for commits and pull requests made by other people as well.
-
-![Email settings](images/emails-notifications.png)
 
 !!! tip
     To turn off all email notifications, disable the settings **Per commit** and **Per pull request**.

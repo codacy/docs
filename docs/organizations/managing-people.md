@@ -51,7 +51,7 @@ To add people to your organization:
 1.  Confirm the updated billing details displayed at the bottom of the window and click the button **Add people**. Codacy emails the newly added people inviting them to log in.
 
 !!! important
-    To prevent duplicate seats for the same committer in your organization, make sure all developers committing to your repositories [configure their email addresses correctly](../account/emails.md#updating).
+    To prevent duplicate seats for the same person in your organization, make sure all developers committing to your repositories [configure their email addresses correctly](../account/emails.md#updating).
 
 ## Removing people from your organization {: id="removing-people"}
 
