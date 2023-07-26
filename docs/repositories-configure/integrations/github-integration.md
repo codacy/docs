@@ -87,7 +87,7 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
 
 ### AI-enhanced comments
 
-Adds AI-enhanced comments with insights and ready-to-commit AI-generated fixes for identified issues. To enable this option, you must enable **Suggested fixes** first.
+Adds AI-enhanced comments, providing insights and ready-to-commit AI-generated fixes for identified issues in cases where tool-suggested fixes are not supported. To enable this option, you must enable **Suggested fixes** first.
 
 {% include-markdown "../../assets/includes/ai-info.md" %}
 
