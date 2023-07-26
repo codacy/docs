@@ -14,7 +14,7 @@ To update the email addresses associated with your Codacy account, do the follow
 
 1.  Update your email addresses on your Git provider ([GitHub](https://docs.github.com/en/enterprise-cloud@latest/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account), [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/set-email-aliases/), or [GitLab](https://docs.gitlab.com/ee/user/profile/#add-emails-to-your-user-profile)).
 
-1.  Log out and log in to Codacy again.
+1.  Log out and log back in to Codacy.
 
     !!! tip
         If the updates are still not reflected on Codacy, navigate to the [access management](https://app.codacy.com/account/access-management) page, revoke the relevant Git provider or Google integration, then log out and back in to Codacy using the same provider.
