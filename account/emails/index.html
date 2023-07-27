@@ -11,7 +11,7 @@
         <meta name="description" content="To manage the email addresses associated with your account and your email notifications, click on your avatar on the top right-hand corner and open Your account, page Emails.">
       
       
-        <meta http-equiv="last-modified" content="2022-12-13 08:25:30">
+        <meta http-equiv="last-modified" content="2023-07-27 08:25:26">
       
       
         <link rel="canonical" href="https://docs.codacy.com/account/emails/">
@@ -1081,7 +1081,7 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#updating-your-email-addresses" class="md-nav__link">
+  <a href="#updating" class="md-nav__link">
     Updating your email addresses
   </a>
   
@@ -3837,11 +3837,40 @@
                 
                 <h1 id="emails">Emails<a class="headerlink" href="#emails" title="Permanent link">#</a></h1>
 <p>To manage the email addresses associated with your account and your email notifications, click on your avatar on the top right-hand corner and open <strong>Your account</strong>, page <strong>Emails</strong>.</p>
-<h2 id="updating-your-email-addresses">Updating your email addresses<a class="headerlink" href="#updating-your-email-addresses" title="Permanent link">#</a></h2>
-<p>Codacy pulls email addresses from the Git provider associated with your current session. To update the email addresses displayed on Codacy, update them on your Git provider, then log out and back in to Codacy.</p>
+<p><img alt="Email settings" src="../images/emails-notifications.png" /></p>
+<h2 id="updating">Updating your email addresses<a class="headerlink" href="#updating" title="Permanent link">#</a></h2>
+<p>Codacy pulls email addresses from the Git provider associated with your current session. On the <strong>Emails</strong> page, you can verify which email addresses are associated with your Codacy account.</p>
+<p>To update the email addresses associated with your Codacy account, do the following:</p>
+<ol>
+<li>
+<p>Make sure you <a href="#git-config">set your Git email address</a>.</p>
+</li>
+<li>
+<p>Update your email addresses on your Git provider (<a href="https://docs.github.com/en/enterprise-cloud@latest/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account">GitHub</a>, <a href="https://support.atlassian.com/bitbucket-cloud/docs/set-email-aliases/">Bitbucket</a>, or <a href="https://docs.gitlab.com/ee/user/profile/#add-emails-to-your-user-profile">GitLab</a>).</p>
+</li>
+<li>
+<p>Log out and log back in to Codacy.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>If the updates are still not reflected on Codacy, navigate to the <a href="https://app.codacy.com/account/access-management">access management</a> page, revoke the relevant Git provider or Google integration, then log out and back in to Codacy using the same provider.</p>
+</div>
+</li>
+</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If the updates are still not reflected on Codacy, navigate to the <a href="https://app.codacy.com/account/access-management">access management</a> page, revoke the relevant Git provider or Google integration, then log out and back in to Codacy using the same provider.</p>
+<p>When developers commit <strong>from GitHub</strong>, Codacy automatically associates all email addresses linked to their GitHub user with a single Codacy committer. Thus, developers that never logged in to the Codacy app must also make sure they <a href="#git-config">set their Git email address</a> and add all their email addresses to their <a href="https://github.com/settings/emails">GitHub account</a>.</p>
+</div>
+<h3 id="git-config">Setting your Git email address<a class="headerlink" href="#git-config" title="Permanent link">#</a></h3>
+<p>Unless you explicitly <a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-useremail">configure your email address</a>, Git automatically uses an email address based on the username and hostname of your workstation, and associates this email address with your commits.</p>
+<p>To check which email address your local Git installation is using, run the following command on your workstation:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>user.email
+</code></pre></div>
+<p>If the returned email address isn't one of the email addresses associated with your Git provider account, configure Git to use one of those email addresses instead:</p>
+<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span>you@example.com
+</code></pre></div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Make sure that your email address doesn't include any extra characters such as quotes (<code>""</code> or <code>''</code>).</p>
 </div>
 <h2 id="managing-your-email-notifications">Managing your email notifications<a class="headerlink" href="#managing-your-email-notifications" title="Permanent link">#</a></h2>
 <p>Codacy can send you an email whenever there are new analysis results on your repositories with the list of found issues and the changes that created them. Codacy sends all email notifications to your default email address, and you can change your default email address by clicking <strong>make default</strong> next to another email address.</p>
@@ -3857,7 +3886,6 @@
 <p><strong>Only my activity:</strong> By default, Codacy will only send you emails about your own commits and pull requests. Turn off this setting to receive emails for commits and pull requests made by other people as well.</p>
 </li>
 </ul>
-<p><img alt="Email settings" src="../images/emails-notifications.png" /></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>To turn off all email notifications, disable the settings <strong>Per commit</strong> and <strong>Per pull request</strong>.</p>
@@ -4018,7 +4046,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 13, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 27, 2023</span>
     
   </small>
 </div>
