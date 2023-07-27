@@ -82,11 +82,15 @@ The option **Show also files without coverage changes** allows you to list all f
 
 The **Diff** tab displays a line-by-line view of the coverage variation introduced by the {{ page.meta.page_name }}. It includes the following areas:
 
--   A list of files modified by the {{ page.meta.page_name }}, showing next to each file either the total file coverage or the coverage variation introduced by the {{ page.meta.page_name }}.
+-   A **list of files** modified by the {{ page.meta.page_name }}, with additional information for each file:
 
--   A diff viewer comparing the old and new content of each modified file.
+    -   A **green plus icon** if the file is added or a **yellow dot icon** if it's modified by the {{ page.meta.page_name }}
+    -   The **coverage variation** introduced by the {{ page.meta.page_name }} or the **total file coverage** if there's no variation
 
-    Any added or modified coverable lines are highlighted in **red** if not covered and in **green** if covered. Each covered line includes a label showing its test coverage count.
+-   A **diff viewer** comparing the old and new content of each modified file. The background of any added or modified coverable lines depends on their coverage status:
+
+    -   **Red**: Uncovered line
+    -   **Green**: Covered line, labeled with its test coverage count
 
 <!-- vale off -->
 ![Files tab](images/{{ page.meta.file_name }}-tab-diff.png)
