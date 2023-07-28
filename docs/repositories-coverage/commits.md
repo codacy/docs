@@ -85,7 +85,7 @@ The **Diff** tab displays a line-by-line view of the coverage variation introduc
 -   A **list of files** modified by the {{ page.meta.page_name }}, with additional information for each file:
 
     -   A **green plus icon** if the file is added or a **yellow dot icon** if it's modified by the {{ page.meta.page_name }}
-    -   The **coverage variation** introduced by the {{ page.meta.page_name }} or the **total file coverage** if there's no variation
+   -   The **coverage variation** introduced by the {{ page.meta.page_name }} (green or red value) or the **total file coverage** if there's no variation (grey value)
 
 -   A **diff viewer** comparing the old and new content of each modified file. The background of any added or modified coverable lines depends on their coverage status:
 
