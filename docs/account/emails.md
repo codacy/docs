@@ -10,16 +10,19 @@ Codacy pulls email addresses from the Git provider associated with your current 
 
 To update the email addresses associated with your Codacy account, do the following:
 
+1.  Make sure you [set your Git email address](#git-config).
+
 1.  Update your email addresses on your Git provider ([GitHub](https://docs.github.com/en/enterprise-cloud@latest/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account), [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/set-email-aliases/), or [GitLab](https://docs.gitlab.com/ee/user/profile/#add-emails-to-your-user-profile)).
 
-1.  Log out and log in to Codacy again.
+1.  Log out and log back in to Codacy.
+
+    !!! tip
+        If the updates are still not reflected on Codacy, navigate to the [access management](https://app.codacy.com/account/access-management) page, revoke the relevant Git provider or Google integration, then log out and back in to Codacy using the same provider.
 
 !!! note
-    -   If the updates are still not reflected on Codacy, navigate to the [access management](https://app.codacy.com/account/access-management) page, revoke the relevant Git provider or Google integration, then log out and back in to Codacy using the same provider.
+    When developers commit **from GitHub**, Codacy automatically associates all email addresses linked to their GitHub user with a single Codacy committer. Thus, developers that never logged in to the Codacy app must also make sure they [set their Git email address](#git-config) and add all their email addresses to their [GitHub account](https://github.com/settings/emails).
 
-    -   For GitHub, Codacy automatically associates all commit email addresses from the same GitHub user ID to a single committer.
-
-### Setting your email address in local Git configuration {: id="git-config"}
+### Setting your Git email address {: id="git-config"}
 
 Unless you explicitly [configure your email address](https://git-scm.com/docs/git-config#Documentation/git-config.txt-useremail), Git automatically uses an email address based on the username and hostname of your workstation, and associates this email address with your commits.
 
