@@ -50,6 +50,13 @@ To access the configuration page, access the [dashboard](#dashboard) or the [ite
 
 ![Security and risk management configuration](images/security-risk-management-configuration.png)
 
+## Exporting items
+
+To export a list of items as a CSV file, access the [dashboard](#dashboard) or the [item list](#item-list) and click the **Export CSV** button in the top right-hand corner of the page.
+
+!!! note
+    The exported list always includes all items, ignoring any applied filters.
+
 ## Managing integrations
 
 Integrations let you detect security issues across a number of platforms and display them all as items on the unified item list.
