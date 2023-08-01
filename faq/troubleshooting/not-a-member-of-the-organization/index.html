@@ -11,7 +11,7 @@
         <meta name="description" content="When you see the message Not a member of the organization it means that Codacy Cloud can&#x27;t analyze a commit because the associated email address doesn&#x27;t belong to any member or committer of your Codacy organization.">
       
       
-        <meta http-equiv="last-modified" content="2023-07-27 08:25:26">
+        <meta http-equiv="last-modified" content="2023-08-01 16:19:12">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/troubleshooting/not-a-member-of-the-organization/">
@@ -2116,39 +2116,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Not a member of the organization
-      </label>
-    
     <a href="./" title="Not a member of the organization" class="md-nav__link md-nav__link--active">
       Not a member of the organization
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#see-also" class="md-nav__link">
-    See also
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -3847,26 +3817,12 @@
 </li>
 <li>
 <p><strong>The commit email address isn't associated with the account of a Codacy Cloud user</strong></p>
-<p>Codacy automatically associates the email addresses from the Git provider accounts to the Codacy accounts when users sign in to Codacy. Make sure that the user configures the missing email address on their Git provider account, and that the user logs in again on Codacy for the change to take effect.</p>
+<p>Make sure the user <a href="../../../account/emails/#updating">updates the email addresses associated with their Codacy account</a> to include the missing commit email address.</p>
 </li>
 <li>
-<p><strong>Git isn't configured with your correct email address</strong></p>
-<p>Unless you explicitly <a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-useremail">configure your email address</a>, Git automatically uses an email address based on the username and hostname of your workstation, and associates this email address with your commits.</p>
-<p>To check which email address your local Git installation is using, run the following command on your workstation:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>user.email
-</code></pre></div>
-<p>If the returned email address isn't one of the email addresses associated with your Git provider account, configure Git to use one of those email addresses instead:</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>config<span class="w"> </span>--global<span class="w"> </span>user.email<span class="w"> </span>you@example.com
-</code></pre></div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Make sure that your email address doesn't include any extra characters such as quotes (<code>""</code> or <code>''</code>).</p>
-</div>
+<p><strong>Git isn't configured with the correct email address</strong></p>
+<p>Make sure the user <a href="../../../account/emails/#git-config">sets the Git email address</a> correctly.</p>
 </li>
-</ul>
-<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
-<ul>
-<li><a href="../../../account/emails/#updating">How do I update my email address on Codacy?</a></li>
 </ul>
               
               
@@ -4024,7 +3980,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 27, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 1, 2023</span>
     
   </small>
 </div>
