@@ -6,7 +6,7 @@ To manage the email addresses associated with your account and your email notifi
 
 ## Updating your email addresses {: id="updating"}
 
-Codacy pulls email addresses from the Git provider associated with your current session. On the **Emails** page, you can verify which email addresses are associated with your Codacy account.
+Codacy automatically links to your Codacy account the email addresses from the Git provider associated with your current session. On the **Emails** page, you can verify which email addresses are linked to your Codacy account.
 
 To update the email addresses associated with your Codacy account, do the following:
 

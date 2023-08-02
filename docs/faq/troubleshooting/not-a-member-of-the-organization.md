@@ -22,27 +22,8 @@ There may be different reasons for this issue to happen:
 
 -   **The commit email address isn't associated with the account of a Codacy Cloud user**
 
-    Codacy automatically associates the email addresses from the Git provider accounts to the Codacy accounts when users sign in to Codacy. Make sure that the user configures the missing email address on their Git provider account, and that the user logs in again on Codacy for the change to take effect.
+    Make sure the user [updates the email addresses associated with their Codacy account](../../account/emails.md#updating) to include the missing commit email address.
 
--   **Git isn't configured with your correct email address**
+-   **Git isn't configured with the correct email address**
 
-    Unless you explicitly [configure your email address](https://git-scm.com/docs/git-config#Documentation/git-config.txt-useremail), Git automatically uses an email address based on the username and hostname of your workstation, and associates this email address with your commits.
-
-    To check which email address your local Git installation is using, run the following command on your workstation:
-
-    ```bash
-    git config user.email
-    ```
-
-    If the returned email address isn't one of the email addresses associated with your Git provider account, configure Git to use one of those email addresses instead:
-
-    ```bash
-    git config --global user.email you@example.com
-    ```
-
-    !!! important
-        Make sure that your email address doesn't include any extra characters such as quotes (`""` or `''`).
-
-## See also
-
--   [How do I update my email address on Codacy?](../../account/emails.md#updating)
+    Make sure the user [sets the Git email address](../../account/emails.md#git-config) correctly.
