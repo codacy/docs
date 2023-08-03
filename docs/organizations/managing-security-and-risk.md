@@ -223,7 +223,7 @@ To revoke the Security Manager role:
 
 ## Data retention
 
-Codacy retains all items indefinitely.
+Codacy retains all items indefinitely, except in the cases below.
 
 === "Codacy"
 
