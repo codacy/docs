@@ -11,7 +11,7 @@
         <meta name="description" content="The security and risk management feature helps you quickly identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira Cloud instance.">
       
       
-        <meta http-equiv="last-modified" content="2023-07-31 07:13:26">
+        <meta http-equiv="last-modified" content="2023-08-03 13:30:04">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -1049,6 +1049,13 @@
         <li class="md-nav__item">
   <a href="#managing-access-to-security-and-risk-management" class="md-nav__link">
     Managing access to security and risk management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#data-retention" class="md-nav__link">
+    Data retention
   </a>
   
 </li>
@@ -4147,6 +4154,16 @@
 <p>Click the <strong>Revoke role icon</strong> to the right of the user's name and confirm.</p>
 </li>
 </ol>
+<h2 id="data-retention">Data retention<a class="headerlink" href="#data-retention" title="Permanent link">#</a></h2>
+<p>Codacy retains all items indefinitely.</p>
+<div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Codacy</label><div class="tabbed-content">
+<p>Deleting a repository deletes all open items belonging to that repository.</p>
+</div>
+<input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><label for="__tabbed_3_2">Jira Cloud</label><div class="tabbed-content">
+<p>Uninstalling the Jira Cloud integration using the security and risk management configuration page deletes all associated open items.</p>
+<p>Uninstalling the Jira Cloud integration using the Jira website doesn't delete any associated items. However, it prevents Codacy from opening new Jira-related items.</p>
+</div>
+</div>
               
               
                 
@@ -4303,7 +4320,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 31, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 3, 2023</span>
     
   </small>
 </div>
