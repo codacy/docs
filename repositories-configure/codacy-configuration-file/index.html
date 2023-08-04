@@ -11,7 +11,7 @@
         <meta name="description" content="Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages.">
       
       
-        <meta http-equiv="last-modified" content="2023-05-31 09:41:34">
+        <meta http-equiv="last-modified" content="2023-08-04 06:47:35">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/codacy-configuration-file/">
@@ -3908,7 +3908,7 @@
 </li>
 </ol>
 <h2 id="syntax-for-ignoring-files">Syntax for ignoring files<a class="headerlink" href="#syntax-for-ignoring-files" title="Permanent link">#</a></h2>
-<p>To ignore files, you must use the <a href="https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29">Java glob syntax</a> to define one or more <code>exclude_paths</code> patterns. For example:</p>
+<p>To ignore files using a Codacy configuration file, you must define one or more patterns under <code>exclude_paths</code> using the <a href="https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29">Java glob syntax</a>:</p>
 <table>
 <thead>
 <tr>
@@ -3943,6 +3943,12 @@
 </tr>
 </tbody>
 </table>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">exclude_paths</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;test/README.md&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**/*.resource&quot;</span>
+</code></pre></div>
 <h2 id="which-tools-can-be-configured-and-which-name-should-i-use">Which tools can be configured and which name should I use?<a class="headerlink" href="#which-tools-can-be-configured-and-which-name-should-i-use" title="Permanent link">#</a></h2>
 <p>You can use the Codacy configuration file to configure all tools supported by Codacy except the <a href="../local-analysis/client-side-tools/">client-side tools</a>.</p>
 <p>The following are the tool names that must be used in the Codacy configuration file:</p>
@@ -4248,7 +4254,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 31, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 4, 2023</span>
     
   </small>
 </div>

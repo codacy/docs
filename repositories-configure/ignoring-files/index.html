@@ -11,7 +11,7 @@
         <meta name="description" content="Ignore or exclude files from the Codacy analysis and see the list of files that Codacy already ignores by default.">
       
       
-        <meta http-equiv="last-modified" content="2023-06-07 08:58:59">
+        <meta http-equiv="last-modified" content="2023-08-04 06:47:35">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/ignoring-files/">
@@ -3832,14 +3832,14 @@
 <p>In some situations, you may want to ignore or exclude files from the Codacy analysis.</p>
 <p>To exclude files from your repository analysis open your repository <strong>Settings</strong>, tab <strong>Ignored Files</strong>, and select the files you want to ignore. This view only shows the files on your main branch.</p>
 <p><img alt="Ignored files" src="../images/ignored-files.png" /></p>
-<p>You can also ignore files using your own tool configuration files, although this depends on the option being supported by each tool.</p>
-<p>If you need more flexibility in ignoring files <a href="../codacy-configuration-file/">use a Codacy configuration file</a> instead.</p>
+<p>You can also ignore files using your own <a href="../configuring-code-patterns/#using-your-own-tool-configuration-files">tool configuration files</a>, although this depends on the option being supported by each tool.</p>
+<p>If you need more flexibility in ignoring files, use a Codacy configuration file to <a href="../codacy-configuration-file/#syntax-for-ignoring-files">define a custom list of file paths to exclude</a>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>To exclude files from coverage analysis only, you must ignore them directly in the tool you're using to generate coverage reports and ensure that the reports you upload to Codacy don't include coverage information for those files.</p>
 </div>
 <h2 id="default-ignored-files">Default ignored files<a class="headerlink" href="#default-ignored-files" title="Permanent link">#</a></h2>
-<p>By default, Codacy ignores all the files that match the regular expressions below. If you want to override these defaults, <a href="../codacy-configuration-file/">use a Codacy configuration file</a> to define a custom list of file paths to exclude.</p>
+<p>By default, Codacy ignores all the files that match the regular expressions below. If you want to override these defaults, use a Codacy configuration file to <a href="../codacy-configuration-file/#syntax-for-ignoring-files">define a custom list of file paths to exclude</a>.</p>
 <div class="highlight"><pre><span></span><code>.*[\.-]min\.css
 .*[\.-]min\.js
 .*node_modules/.*
@@ -4025,7 +4025,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 7, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 4, 2023</span>
     
   </small>
 </div>
