@@ -11,7 +11,7 @@
         <meta name="description" content="The security and risk management feature helps you quickly identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira Cloud instance.">
       
       
-        <meta http-equiv="last-modified" content="2023-08-03 13:30:04">
+        <meta http-equiv="last-modified" content="2023-08-04 06:53:32">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -1026,6 +1026,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#managing-access-to-security-and-risk-management" class="md-nav__link">
+    Managing access to security and risk management
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#opening-and-closing-items" class="md-nav__link">
     Opening and closing items
   </a>
@@ -1042,13 +1049,6 @@
         <li class="md-nav__item">
   <a href="#item-severities-and-deadlines" class="md-nav__link">
     Item severities and deadlines
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#managing-access-to-security-and-risk-management" class="md-nav__link">
-    Managing access to security and risk management
   </a>
   
 </li>
@@ -3974,6 +3974,69 @@
 </ol>
 </div>
 </div>
+<h2 id="managing-access-to-security-and-risk-management">Managing access to security and risk management<a class="headerlink" href="#managing-access-to-security-and-risk-management" title="Permanent link">#</a></h2>
+<p>To better track and address security issues, organization admins can extend access to security and risk management by assigning the Security Manager role to organization members.</p>
+<p>The Security Manager role is independent of the Git provider role of an organization member and provides only the permissions necessary to monitor security issues, following the principle of least privilege:</p>
+<table>
+<thead>
+<tr>
+<th>Permission</th>
+<th>Organization Admin</th>
+<th>Security Manager</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Access security and risk management</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Access associated issues (Codacy repositories, Jira issues)</td>
+<td>Platform-dependent</td>
+<td>Keeps original permissions</td>
+</tr>
+<tr>
+<td>Manage integrations</td>
+<td>Yes</td>
+<td>Yes</td>
+</tr>
+<tr>
+<td>Assign and revoke the Security Manager role</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+<tr>
+<td>All other Organization Admin permissions</td>
+<td>Yes</td>
+<td>No</td>
+</tr>
+</tbody>
+</table>
+<h3 id="assigning-the-security-manager-role">Assigning the Security Manager role<a class="headerlink" href="#assigning-the-security-manager-role" title="Permanent link">#</a></h3>
+<p>To assign the Security Manager role:</p>
+<ol>
+<li>
+<p>Open your organization <strong>Security and Risk</strong> page and click the <strong>Configure</strong> button to open the configuration page.</p>
+</li>
+<li>
+<p>In the <strong>Security managers</strong> area, use the search field to find the relevant user and click the user's name.</p>
+<p><img alt="security and risk management access management" src="../images/security-risk-management-access-management.png" /></p>
+</li>
+</ol>
+<h3 id="revoking-the-security-manager-role">Revoking the Security Manager role<a class="headerlink" href="#revoking-the-security-manager-role" title="Permanent link">#</a></h3>
+<p>To revoke the Security Manager role:</p>
+<ol>
+<li>
+<p>Open your organization <strong>Security and Risk</strong> page and click the <strong>Configure</strong> button to open the configuration page.</p>
+</li>
+<li>
+<p>In the <strong>Security managers</strong> area, scroll the list to find the relevant user.</p>
+</li>
+<li>
+<p>Click the <strong>Revoke role icon</strong> to the right of the user's name and confirm.</p>
+</li>
+</ol>
 <h2 id="opening-and-closing-items">Opening and closing items<a class="headerlink" href="#opening-and-closing-items" title="Permanent link">#</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -4091,69 +4154,6 @@
 </tr>
 </tbody>
 </table>
-<h2 id="managing-access-to-security-and-risk-management">Managing access to security and risk management<a class="headerlink" href="#managing-access-to-security-and-risk-management" title="Permanent link">#</a></h2>
-<p>To better track and address security issues, organization admins can extend access to security and risk management by assigning the Security Manager role to organization members.</p>
-<p>The Security Manager role is independent of the Git provider role of an organization member and provides only the permissions necessary to monitor security issues, following the principle of least privilege:</p>
-<table>
-<thead>
-<tr>
-<th>Permission</th>
-<th>Organization Admin</th>
-<th>Security Manager</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Access security and risk management</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Access associated issues (Codacy repositories, Jira issues)</td>
-<td>Platform-dependent</td>
-<td>Keeps original permissions</td>
-</tr>
-<tr>
-<td>Manage integrations</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Assign and revoke the Security Manager role</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr>
-<td>All other Organization Admin permissions</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-<h3 id="assigning-the-security-manager-role">Assigning the Security Manager role<a class="headerlink" href="#assigning-the-security-manager-role" title="Permanent link">#</a></h3>
-<p>To assign the Security Manager role:</p>
-<ol>
-<li>
-<p>Open your organization <strong>Security and Risk</strong> page and click the <strong>Configure</strong> button to open the configuration page.</p>
-</li>
-<li>
-<p>In the <strong>Security managers</strong> area, use the search field to find the relevant user and click the user's name.</p>
-<p><img alt="security and risk management access management" src="../images/security-risk-management-access-management.png" /></p>
-</li>
-</ol>
-<h3 id="revoking-the-security-manager-role">Revoking the Security Manager role<a class="headerlink" href="#revoking-the-security-manager-role" title="Permanent link">#</a></h3>
-<p>To revoke the Security Manager role:</p>
-<ol>
-<li>
-<p>Open your organization <strong>Security and Risk</strong> page and click the <strong>Configure</strong> button to open the configuration page.</p>
-</li>
-<li>
-<p>In the <strong>Security managers</strong> area, scroll the list to find the relevant user.</p>
-</li>
-<li>
-<p>Click the <strong>Revoke role icon</strong> to the right of the user's name and confirm.</p>
-</li>
-</ol>
 <h2 id="data-retention">Data retention<a class="headerlink" href="#data-retention" title="Permanent link">#</a></h2>
 <p>Codacy retains all items indefinitely.</p>
 <div class="tabbed-set" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><label for="__tabbed_3_1">Codacy</label><div class="tabbed-content">
@@ -4320,7 +4320,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 3, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 4, 2023</span>
     
   </small>
 </div>
