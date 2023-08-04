@@ -10,16 +10,16 @@ To exclude files from your repository analysis open your repository **Settings**
 
 ![Ignored files](images/ignored-files.png)
 
-You can also ignore files using your own tool configuration files, although this depends on the option being supported by each tool.
+You can also ignore files using your own [tool configuration files](configuring-code-patterns.md#using-your-own-tool-configuration-files), although this depends on the option being supported by each tool.
 
-If you need more flexibility in ignoring files [use a Codacy configuration file](codacy-configuration-file.md) instead.
+If you need more flexibility in ignoring files, use a Codacy configuration file to [define a custom list of file paths to exclude](codacy-configuration-file.md#syntax-for-ignoring-files).
 
 !!! note
     {% include-markdown "../assets/includes/coverage-ignore.md" %}
 
 ## Default ignored files
 
-By default, Codacy ignores all the files that match the regular expressions below. If you want to override these defaults, [use a Codacy configuration file](codacy-configuration-file.md) to define a custom list of file paths to exclude.
+By default, Codacy ignores all the files that match the regular expressions below. If you want to override these defaults, use a Codacy configuration file to [define a custom list of file paths to exclude](codacy-configuration-file.md#syntax-for-ignoring-files).
 
 ```text
 .*[\.-]min\.css

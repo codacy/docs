@@ -61,7 +61,7 @@ To use a Codacy configuration file:
 
 ## Syntax for ignoring files
 
-To ignore files, you must use the [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29) to define one or more `exclude_paths` patterns. For example:
+To ignore files using a Codacy configuration file, you must define one or more patterns under `exclude_paths` using the [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29):
 
 | Example pattern    | Ignored files                                                |
 | ------------------ | ------------------------------------------------------------ |
@@ -71,6 +71,15 @@ To ignore files, you must use the [Java glob syntax](https://docs.oracle.com/jav
 | `test/**/*`        | All files inside sub-directories of test                     |
 | `**.resource`      | All `.resource` files across all your repository             |
 | `**/*.resource`    | All `.resource` files in all directories and sub-directories |
+
+For example:
+
+```yaml
+---
+exclude_paths:
+  - "test/README.md"
+  - "**/*.resource"
+```
 
 ## Which tools can be configured and which name should I use?
 
