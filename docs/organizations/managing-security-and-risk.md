@@ -96,6 +96,40 @@ The following section explains how to integrate with each of the supported platf
 
     1.  Find the Jira entry under the Integrations list and click the **Options** button (identified by three dots), then select **Uninstall** and confirm.
 
+## Managing access to security and risk management
+
+To better track and address security issues, organization admins can extend access to security and risk management by assigning the Security Manager role to organization members.
+
+The Security Manager role is independent of the Git provider role of an organization member and provides only the permissions necessary to monitor security issues, following the principle of least privilege:
+
+| Permission                                                  | Organization Admin | Security Manager           |
+|-------------------------------------------------------------|--------------------|----------------------------|
+| Access security and risk management                         | Yes                | Yes                        |
+| Access associated issues (Codacy repositories, Jira issues) | Platform-dependent | Keeps original permissions |
+| Manage integrations                                         | Yes                | Yes                        |
+| Assign and revoke the Security Manager role                 | Yes                | No                         |
+| All other Organization Admin permissions                    | Yes                | No                         |
+
+### Assigning the Security Manager role
+
+To assign the Security Manager role:
+
+1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
+
+1.  In the **Security managers** area, use the search field to find the relevant user and click the user's name.
+
+    ![security and risk management access management](images/security-risk-management-access-management.png)
+
+### Revoking the Security Manager role
+
+To revoke the Security Manager role:
+
+1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
+
+1.  In the **Security managers** area, scroll the list to find the relevant user.
+
+1.  Click the **Revoke role icon** to the right of the user's name and confirm.
+
 ## Opening and closing items
 
 !!! important
@@ -187,46 +221,9 @@ The following table defines item severities and days to fix the associated secur
 | Medium            | 90               | Medium                               | Medium                             |
 | Low               | 120              | Minor                                | Low and other                      |
 
-## Managing access to security and risk management
-
-To better track and address security issues, organization admins can extend access to security and risk management by assigning the Security Manager role to organization members.
-
-The Security Manager role is independent of the Git provider role of an organization member and provides only the permissions necessary to monitor security issues, following the principle of least privilege:
-
-| Permission                                                  | Organization Admin | Security Manager           |
-|-------------------------------------------------------------|--------------------|----------------------------|
-| Access security and risk management                         | Yes                | Yes                        |
-| Access associated issues (Codacy repositories, Jira issues) | Platform-dependent | Keeps original permissions |
-| Manage integrations                                         | Yes                | Yes                        |
-| Assign and revoke the Security Manager role                 | Yes                | No                         |
-| All other Organization Admin permissions                    | Yes                | No                         |
-
-### Assigning the Security Manager role
-
-To assign the Security Manager role:
-
-1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
-
-1.  In the **Security managers** area, use the search field to find the relevant user and click the user's name.
-
-    ![security and risk management access management](images/security-risk-management-access-management.png)
-
-### Revoking the Security Manager role
-
-To revoke the Security Manager role:
-
-1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
-
-1.  In the **Security managers** area, scroll the list to find the relevant user.
-
-1.  Click the **Revoke role icon** to the right of the user's name and confirm.
-
-<!--
-TODO Update this section once the behavior is consistent. See https://codacy.slack.com/archives/C050XTVETSQ/p1687167901474059
-
 ## Data retention
 
-Codacy retains open items indefinitely and closed items for one year.
+Except for the situations described below, Codacy retains all items indefinitely.
 
 === "Codacy"
 
@@ -237,4 +234,3 @@ Codacy retains open items indefinitely and closed items for one year.
     Uninstalling the Jira Cloud integration using the security and risk management configuration page deletes all associated open items.
     
     Uninstalling the Jira Cloud integration using the Jira website doesn't delete any associated items. However, it prevents Codacy from opening new Jira-related items.
--->
