@@ -12,7 +12,7 @@ To exclude files from your repository analysis open your repository **Settings**
 
 You can also ignore files using your own [tool configuration files](configuring-code-patterns.md#using-your-own-tool-configuration-files), although this depends on the option being supported by each tool.
 
-If you need more flexibility in ignoring files, use a Codacy configuration file to [define a custom list of file paths to exclude](codacy-configuration-file.md#syntax-for-ignoring-files) instead.
+If you need more flexibility in ignoring files, use a Codacy configuration file to [define a custom list of file paths to exclude](codacy-configuration-file.md#syntax-for-ignoring-files).
 
 !!! note
     {% include-markdown "../assets/includes/coverage-ignore.md" %}
