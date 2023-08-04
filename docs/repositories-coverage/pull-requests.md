@@ -42,6 +42,12 @@ This area displays detailed information about the pull request:
     end="<!--tab-files-end-->"
 %}
 
+{%
+    include-markdown "commits.md"
+    start="<!--tab-diff-start-->"
+    end="<!--tab-diff-end-->"
+%}
+
 ## Commits tab
 
 The **Commits** tab displays an overview of each commit included in the pull request, such as the status and coverage metrics for each commit.
