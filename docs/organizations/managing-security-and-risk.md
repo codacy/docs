@@ -223,7 +223,7 @@ The following table defines item severities and days to fix the associated secur
 
 ## Data retention
 
-Codacy retains all items indefinitely, except in the cases below.
+Except for the situations described below, Codacy retains all items indefinitely.
 
 === "Codacy"
 
