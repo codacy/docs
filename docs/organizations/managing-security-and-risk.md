@@ -221,12 +221,9 @@ To revoke the Security Manager role:
 
 1.  Click the **Revoke role icon** to the right of the user's name and confirm.
 
-<!--
-TODO Update this section once the behavior is consistent. See https://codacy.slack.com/archives/C050XTVETSQ/p1687167901474059
-
 ## Data retention
 
-Codacy retains open items indefinitely and closed items for one year.
+Codacy retains all items indefinitely.
 
 === "Codacy"
 
@@ -237,4 +234,3 @@ Codacy retains open items indefinitely and closed items for one year.
     Uninstalling the Jira Cloud integration using the security and risk management configuration page deletes all associated open items.
     
     Uninstalling the Jira Cloud integration using the Jira website doesn't delete any associated items. However, it prevents Codacy from opening new Jira-related items.
--->
