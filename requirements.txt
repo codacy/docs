@@ -5,7 +5,7 @@ mkdocs-material==8.2.3
 Jinja2==3.1.1
 
 # Markdown extensions
-Pygments==2.15.1
+Pygments==2.16.1
 pymdown-extensions==10.1
 
 # MkDocs plugins
