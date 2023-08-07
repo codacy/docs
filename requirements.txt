@@ -1,20 +1,20 @@
-mkdocs==1.5.1
+mkdocs==1.5.2
 mike==1.1.2
 markdown==3.3.7 # Temporarily pin version <3.4, see https://github.com/mkdocs/mkdocs/pull/2893
 mkdocs-material==8.2.3
 Jinja2==3.1.1
 
 # Markdown extensions
-Pygments==2.15.1
+Pygments==2.16.1
 pymdown-extensions==10.1
 
 # MkDocs plugins
 mkdocs-exclude-search==0.6.5
 mkdocs-exclude==1.0.2
 mkdocs-git-revision-date-localized-plugin==1.2.0
-mkdocs-include-markdown-plugin==4.0.4
+mkdocs-include-markdown-plugin==5.1.0
 mkdocs-macros-plugin==1.0.2
-mkdocs-meta-descriptions-plugin==2.2.0
+mkdocs-meta-descriptions-plugin==2.3.0
 mkdocs-monorepo-plugin==1.0.5
 mkdocs-redirects==1.2.1
 mkdocs-rss-plugin==1.8.0
