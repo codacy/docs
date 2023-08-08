@@ -23,13 +23,11 @@ To configure the tools and code patterns for a repository:
 
 1.  Open the repository **Code patterns** page.
 
-<!-- TODO DOCS-341 Evaluate whether to keep -->
-[//]: # (    ![Code patterns page]&#40;images/code-patterns.png&#41;)
+    ![Code patterns page](images/code-patterns.png)
 
 1.  Enable or disable the tools that Codacy should use to analyze the repository.
 
-<!-- TODO DOCS-341 Evaluate whether to keep -->
-[//]: # (    ![Toggling tools]&#40;images/code-patterns-toggle-tools.png&#41;)
+    ![Toggling tools](images/code-patterns-toggle-tools.png)
 
 1.  Select a tool to enable or disable its code patterns. Some patterns also allow you to configure the rules for detecting issues.
 
@@ -44,8 +42,7 @@ To configure the tools and code patterns for a repository:
 
         - Codacy displays the tag **New** for one month next to the name of newly added code patterns.
 
-<!-- TODO DOCS-341 Evaluate whether to keep -->
-[//]: # (![Filtering code patterns]&#40;images/code-patterns-filter.png&#41;)
+    ![Configuring code patterns](images/code-patterns-configure.png)
 
 1.  Codacy will use the new configuration when it analyzes a new commit or pull request.
 
