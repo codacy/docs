@@ -4,13 +4,15 @@ description: Configure the static analysis tools and code patterns that Codacy u
 
 # Configuring code patterns
 
+!!! note
+    Organization admins can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
+    
 By default, Codacy uses a subset of the supported static analysis tools and code patterns to analyze your repositories. These default settings result from community feedback or existing coding standards. However, you can adapt the default settings to your scenario by configuring the tools and code patterns that Codacy uses to analyze your repository.
 
-<!-- TODO DOCS-341 repurpose these admonitions as contextual information under the relevant steps -->
-!!! note
-    -   Organization admins can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
+## Configuring tools and code patterns
 
-    -   If your repository is following an [organization coding standard](../organizations/using-coding-standards.md), changes made to any tool or code pattern cause the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.
+!!! note
+    If your repository is following an [organization coding standard](../organizations/using-coding-standards.md), changes made to any tool or code pattern cause the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.
 
 To configure the tools and code patterns for your repository:
 
@@ -26,31 +28,30 @@ To configure the tools and code patterns for your repository:
 
 1.  Select each tool to configure and toggle the corresponding code patterns using the checkbox next to each pattern.
 
+    To make it easier to find relevant code patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), category, or status: <!-- TODO link to more info on pattern category -->
+
+    !!! tip
+        To enable **all code patterns** matching a specific category, use the filter to select the relevant patterns and click         **Enable all**.
+        
+        For example, to enable all Security patterns of a tool, you can use the **Security** filter and click **Enable all**.
+
+    To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues.
+
     !!! tip
         Codacy displays the tag **New** for one month next to the name of any recently added code patterns.
 
 <!-- TODO DOCS-341 Evaluate whether to keep -->
-[//]: # (    ![Configuring code patterns]&#40;images/code-patterns-configure.png&#41;)
+[//]: # (![Filtering code patterns]&#40;images/code-patterns-filter.png&#41;)
 
-    To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues.
+<!-- TODO DOCS-341 Evaluate whether to keep -->
+[//]: # (    ![Configuring code patterns]&#40;images/code-patterns-configure.png&#41;)
 
 <!-- TODO DOCS-341 Evaluate whether to keep -->
 [//]: # (    ![Code pattern details]&#40;images/code-patterns-detail.png&#41;)
 
 1.  Optionally, [manually reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.
 
-## Pattern filters <!-- TODO DOCS-341 Rewrite as action-oriented (-ing) section title -->
-
-To make it easier to find relevant code patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), category, or status:
-
-<!-- TODO DOCS-341 Evaluate whether to keep -->
-[//]: # (![Filtering code patterns]&#40;images/code-patterns-filter.png&#41;)
-
-!!! tip
-    To enable **all code patterns** matching a specific category, use the filter to select the relevant patterns and click **Enable all**.
-
-    For example, to enable all Security patterns of a tool, you can use the **Security** filter and click **Enable all**.
-
+<!-- TODO DOCS-341 Remove this section. It doesn't add much value here. -->
 Issues detected by Codacy belong to one of the following categories:
 
 {%
