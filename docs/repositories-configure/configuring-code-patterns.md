@@ -6,6 +6,7 @@ description: Configure the static analysis tools and code patterns that Codacy u
 
 By default, Codacy uses a subset of the supported static analysis tools and code patterns to analyze your repositories. These default settings result from community feedback or existing coding standards. However, you can adapt the default settings to your scenario by configuring the tools and code patterns that Codacy uses to analyze your repository.
 
+<!-- TODO DOCS-341 repurpose these admonitions as contextual information under the relevant steps -->
 !!! note
     -   Organization admins can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
 
@@ -15,30 +16,35 @@ To configure the tools and code patterns for your repository:
 
 1.  Open your repository **Code patterns** page.
 
-    ![Code patterns page](images/code-patterns.png)
+<!-- TODO DOCS-341 Evaluate whether to keep -->
+[//]: # (    ![Code patterns page]&#40;images/code-patterns.png&#41;)
 
 1.  Toggle the tools that Codacy will use to analyze your repository.
 
-    ![Toggling tools](images/code-patterns-toggle-tools.png)
+<!-- TODO DOCS-341 Evaluate whether to keep -->
+[//]: # (    ![Toggling tools]&#40;images/code-patterns-toggle-tools.png&#41;)
 
 1.  Select each tool to configure and toggle the corresponding code patterns using the checkbox next to each pattern.
 
     !!! tip
         Codacy displays the tag **New** for one month next to the name of any recently added code patterns.
 
-    ![Configuring code patterns](images/code-patterns-configure.png)
+<!-- TODO DOCS-341 Evaluate whether to keep -->
+[//]: # (    ![Configuring code patterns]&#40;images/code-patterns-configure.png&#41;)
 
     To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues.
 
-    ![Code pattern details](images/code-patterns-detail.png)
+<!-- TODO DOCS-341 Evaluate whether to keep -->
+[//]: # (    ![Code pattern details]&#40;images/code-patterns-detail.png&#41;)
 
 1.  Optionally, [manually reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.
 
-## Pattern filters
+## Pattern filters <!-- TODO DOCS-341 Rewrite as action-oriented (-ing) section title -->
 
 To make it easier to find relevant code patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), category, or status:
 
-![Filtering code patterns](images/code-patterns-filter.png)
+<!-- TODO DOCS-341 Evaluate whether to keep -->
+[//]: # (![Filtering code patterns]&#40;images/code-patterns-filter.png&#41;)
 
 !!! tip
     To enable **all code patterns** matching a specific category, use the filter to select the relevant patterns and click **Enable all**.
@@ -64,6 +70,7 @@ For example, when adding a new repository on Codacy you can copy the tool and co
 
     Alternatively, you can also copy the tool and code pattern configurations [from one repository to multiple target repositories](../organizations/copying-code-patterns-between-repositories.md).
 
+<!-- TODO DOCS-341 Can we simplify this? -->
 <!--code-patterns-copy-start-->
 !!! important
     Consider the following when using this feature:
@@ -83,7 +90,8 @@ To import the tool and code pattern configurations from another repository:
 
 1.  Open your repository **Code patterns** and click **Import patterns**.
 
-    ![Importing code patterns from another repository](images/code-patterns-import.png)
+<!-- TODO DOCS-341 Evaluate whether to keep -->
+[//]: # (    ![Importing code patterns from another repository]&#40;images/code-patterns-import.png&#41;)
 
 1.  Follow the instructions to select the source repository and complete the import.
 
@@ -109,7 +117,8 @@ Codacy supports configuration files for several tools. To use a configuration fi
 
 1.  Open your repository **Code patterns** page, select the tool that will use the configuration file, and select the option **Configuration file**.
 
-    ![Using a configuration file](images/code-patterns-config-file.png)
+<!-- TODO DOCS-341 Evaluate whether to keep -->
+[//]: # (    ![Using a configuration file]&#40;images/code-patterns-config-file.png&#41;)
 
 After activating the option to use the configuration file:
 
@@ -325,8 +334,9 @@ The table below lists the configuration file names that Codacy detects and suppo
   </tbody>
 </table>
 
+
 !!! note
-    Codacy doesn't support configuration files for the following tools:
+    Codacy doesn't support configuration files for the following tools: <!-- TODO DOCS-341 Should we include this in the table above? -->
 
     -   aligncheck
     -   bundler-audit
@@ -346,10 +356,10 @@ The table below lists the configuration file names that Codacy detects and suppo
     -   SQLint
     -   Staticcheck
 
-    For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
+    For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.<!-- TODO DOCS-341 Move this info to the appropriate step. It's almost invisible/out of context here. -->
 
 ## See also
 
 -   [Applying a coding standard across multiple repositories](../organizations/using-coding-standards.md)
 -   [Copying code patterns between repositories](../organizations/copying-code-patterns-between-repositories.md)
--   [How to implement Google JavaScript style guide with Codacy](https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/)
+-   [How to implement Google JavaScript style guide with Codacy](https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/)<!-- TODO DOCS-341 Shouldn't we rather mention an internal docs page here? -->
