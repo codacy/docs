@@ -11,9 +11,9 @@ By default, Codacy analyzes your repositories using a subset of the supported st
 
 You have multiple options to adapt the default configurations to your needs:
 
-- [Configuring tools and code patterns using the Codacy UI](#configuring-tools-and-code-patterns-using-the-codacy-ui)
-- [Importing configurations from another repository](#import-patterns)
-- [Using tool configuration files](#using-your-own-tool-configuration-files)
+-   [Configuring tools and code patterns using the Codacy UI](#configuring-tools-and-code-patterns-using-the-codacy-ui)
+-   [Importing configurations from another repository](#import-patterns)
+-   [Using tool configuration files](#using-your-own-tool-configuration-files)
 
 ## Configuring tools and code patterns using the Codacy UI
 
@@ -98,9 +98,9 @@ Codacy [supports configuration files for several static analysis tools](../getti
 
 To use a configuration file for a static analysis tool:
 
-1.   Push the configuration file to the root of the [default Codacy branch](managing-branches.md).
+1.  Push the configuration file to the root of the [default Codacy branch](managing-branches.md).
 
-1.   Open the repository **Code patterns** page, select the tool of interest, and select the option **Configuration file**.
+1.  Open the repository **Code patterns** page, select the tool of interest, and select the option **Configuration file**.
 
     !!! note
         -   If a subsequent pull request updates the configuration file, Codacy considers the updates when analyzing that pull request.
