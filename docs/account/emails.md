@@ -10,7 +10,7 @@ Codacy automatically links to your Codacy account the email addresses from the G
 
 To update the email addresses associated with your Codacy account, do the following:
 
-1.  Make sure you [set your Git email address](#git-config) so that commits are attributed to you.
+1.  [Configure your Git email address](#git-config). This ensures that commits are attributed to you.
 
 1.  Update your email addresses on your Git provider ([GitHub](https://docs.github.com/en/enterprise-cloud@latest/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account), [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/set-email-aliases/), or [GitLab](https://docs.gitlab.com/ee/user/profile/#add-emails-to-your-user-profile)).
 
