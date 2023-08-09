@@ -123,11 +123,17 @@ The table below lists the configuration file names that Codacy detects and suppo
     <tr>
       <th>Tool name</th>
       <th>Language</th>
-      <th>Files detected</th>
+      <th>Files supported</th>
       <th>Other info</th>
     <tr>
   </thead>
   <tbody>
+  <tr>
+    <td>aligncheck</td>
+    <td>Go</td>
+    <td>-</td>
+    <td></td>
+  </tr>
   <tr>
     <td>Ameba</td>
     <td>Crystal</td>
@@ -147,15 +153,51 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
+    <td>bundler-audit</td>
+    <td>Ruby</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Checkov</td>
+    <td>AWS CloudFormation, Azure Resource Manager Templates, Kubernetes, Serverless Framework, Terraform</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>Checkstyle</td>
     <td>Java</td>
     <td><code>checkstyle.xml</code></td>
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
   </tr>
   <tr>
+    <td>Clang-Tidy</td>
+    <td>C, C++, Objective-C</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Codacy Scalameta Pro</td>
+    <td>Scala</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>CodeNarc</td>
     <td>Groovy</td>
     <td><code>.codenarcrc</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>CoffeeLint</td>
+    <td>CoffeeScript</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Cppcheck</td>
+    <td>C, C++</td>
+    <td>-</td>
     <td></td>
   </tr>
   <tr>
@@ -177,6 +219,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td><a href="https://dart.dev/guides/language/analysis-options">Customizing static analysis</a></td>
   </tr>
   <tr>
+    <td>deadcode</td>
+    <td>Go</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>detekt</td>
     <td>Kotlin</td>
     <td><code>default-detekt-config.yml</code>, <code>detekt.yml</code></td>
@@ -196,9 +244,33 @@ The table below lists the configuration file names that Codacy detects and suppo
     </td>
   </tr>
   <tr>
+    <td>Faux Pas</td>
+    <td>Objective-C</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Flawfinder</td>
+    <td>C, C++</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Gosec</td>
+    <td>Go</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>Hadolint</td>
     <td>Dockerfile</td>
     <td><code>.hadolint.yaml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Jackson Linter</td>
+    <td>JSON</td>
+    <td>-</td>
     <td></td>
   </tr>
   <tr>
@@ -238,6 +310,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
+    <td>PSScriptAnalyzer</td>
+    <td>PowerShell</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>Pylint</td>
     <td>Python</td>
     <td><code>pylintrc</code>, <code>.pylintrc</code></td>
@@ -268,6 +346,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
+    <td>ShellCheck</td>
+    <td>Shell</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
     <td>SonarC#</td>
     <td>C#</td>
     <td><code>SonarLint.xml</code></td>
@@ -290,6 +374,18 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>Java, Scala</td>
     <td><code>findbugs.xml</code>, <code>findbugs-includes.xml</code>, <code>findbugs-excludes.xml</code>, <code>spotbugs.xml</code>, <code>spotbugs-includes.xml</code>, <code>spotbugs-excludes.xml</code></td>
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
+  </tr>
+  <tr>
+    <td>SQLint</td>
+    <td>PostgreSQL</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Staticcheck</td>
+    <td>Go</td>
+    <td>-</td>
+    <td></td>
   </tr>
   <tr>
     <td>Stylelint</td>
@@ -321,30 +417,16 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td><code>.tsqllintrc</code></td>
     <td></td>
   </tr>
+  <tr>
+    <td>Unity Roslyn Analyzers</td>
+    <td>Unity</td>
+    <td>-</td>
+    <td></td>
+  </tr>
   </tbody>
 </table>
 
 !!! note
-    Codacy doesn't support configuration files for the following tools: <!-- TODO DOCS-341 Should we include this in the table above? -->
-
-    -   aligncheck
-    -   bundler-audit
-    -   Checkov
-    -   Clang-Tidy
-    -   Codacy Scalameta Pro
-    -   CoffeeLint
-    -   Cppcheck
-    -   deadcode
-    -   Faux Pas
-    -   Flawfinder
-    -   Gosec
-    -   Jackson Linter
-    -   PSScriptAnalyzer
-    -   Unity Roslyn Analyzers
-    -   ShellCheck
-    -   SQLint
-    -   Staticcheck
-
     For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.<!-- TODO DOCS-341 Move this info to the appropriate step. It's almost invisible/out of context here. -->
 
 ## See also
