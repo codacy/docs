@@ -10,6 +10,8 @@ Codacy uses industry-leading tools to perform automatic static code analysis ove
 
 -   **For cloud infrastructure-as-code frameworks** Codacy provides static analysis to enforce security and compliance best practices.
 
+## Languages and frameworks
+
 The table below lists all languages and frameworks that Codacy supports and the corresponding tools that Codacy uses to analyze your source code. Besides this, Codacy uses [cloc](https://github.com/kentcdodds/cloc) to calculate the source lines of code for all supported languages and supports multiple [code coverage report formats](../coverage-reporter/index.md#generating-coverage).
 
 <!--NOTE
@@ -18,7 +20,6 @@ The table below lists all languages and frameworks that Codacy supports and the 
     docs/getting-started/supported-languages-and-tools.md
     docs/repositories-configure/local-analysis/client-side-tools.md (if the tool runs client-side)
     docs/repositories/security-monitor.md (if the tool reports security issues)
-    docs/repositories-configure/configuring-code-patterns.md (supported configuration files table, or list of tools that don't support configuration files)
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
@@ -391,6 +392,319 @@ The table below lists all languages and frameworks that Codacy supports and the 
 <sup><span id="swiftlint-complexity">5</span></sup>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html) on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code patterns page](../repositories-configure/configuring-code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration) to customize the thresholds.  
 <sup><span id="suggest-fixes">🔧</span></sup>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
 
+## Tool configuration files
+
+To adapt the Codacy analysis settings to your scenario, you can configure the tools and code patterns used to analyze your repositories, either in the Codacy UI or by using configuration files. The table below lists the configuration files that Codacy detects and supports for each tool.
+
+See [how to use tool configuration files](../repositories-configure/configuring-code-patterns.md#using-your-own-tool-configuration-files).
+
+<table>
+  <thead>
+    <tr>
+      <th>Tool name</th>
+      <th>Languages</th>
+      <th>Supported configuration files</th>
+      <th>Additional info</th>
+    <tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>aligncheck</td>
+    <td>Go</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Ameba</td>
+    <td>Crystal</td>
+    <td><code>.ameba.yml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
+    <td>Python</td>
+    <td><code>bandit.yml</code>, <code>.bandit</code></td>
+    <td>To solve flagged valid Python "assert" statements, create a <code>bandit.yml</code> on the root of the repository containing: <code>skips: \['B101'\]</code></td>
+  </tr>
+  <tr>
+    <td>Brakeman</td>
+    <td>Ruby</td>
+    <td><code>config/brakeman.yml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>bundler-audit</td>
+    <td>Ruby</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Checkov</td>
+    <td>AWS CloudFormation, Azure Resource Manager Templates, Kubernetes, Serverless Framework, Terraform</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Checkstyle</td>
+    <td>Java</td>
+    <td><code>checkstyle.xml</code></td>
+    <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
+  </tr>
+  <tr>
+    <td>Clang-Tidy</td>
+    <td>C, C++, Objective-C</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Codacy Scalameta Pro</td>
+    <td>Scala</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>CodeNarc</td>
+    <td>Groovy</td>
+    <td><code>.codenarcrc</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>CoffeeLint</td>
+    <td>CoffeeScript</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Cppcheck</td>
+    <td>C, C++</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Credo</td>
+    <td>Elixir</td>
+    <td><code>.credo.exs</code>, <code>config/.credo.exs</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>CSSLint</td>
+    <td>CSS</td>
+    <td><code>.csslintrc</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>dartanalyzer</td>
+    <td>Dart</td>
+    <td><code>analysis_options.yml</code></td>
+    <td><a href="https://dart.dev/guides/language/analysis-options">Customizing static analysis</a></td>
+  </tr>
+  <tr>
+    <td>deadcode</td>
+    <td>Go</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>detekt</td>
+    <td>Kotlin</td>
+    <td><code>default-detekt-config.yml</code>, <code>detekt.yml</code></td>
+    <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
+  </tr>
+  <tr>
+    <td><a href="https://eslint.org/docs/user-guide/configuring">ESLint</a></td>
+    <td>JavaScript, TypeScript</td>
+    <td><code>.eslintrc.js</code>, <code>.eslintrc.cjs</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code>, <code>.eslintrc</code>,
+        <code>.prettierrc</code>, <code>.prettierrc.yaml</code>, <code>.prettierrc.yml</code>, <code>.prettierrc.json</code>, <code>prettier.config.js</code>, <code>.prettierrc.js</code></td>
+    <td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintPlugins.ts">Plugins configurable on the Codacy UI</a><br />
+        <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L58">Other supported plugins</a><br />
+
+        <p>If you're using <a href="https://eslint.org/docs/latest/user-guide/configuring/configuration-files#cascading-and-hierarchy">module-level ESLint configuration files</a>, you must also include a ESLint configuration file <strong>on the root of your repository</strong> for Codacy to detect that you're using configuration files. For example, add the following minimal <code>.eslintrc.json</code> configuration file:</p>
+
+        <pre><code>{ "root": true }</code></pre>
+    </td>
+  </tr>
+  <tr>
+    <td>Faux Pas</td>
+    <td>Objective-C</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Flawfinder</td>
+    <td>C, C++</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Gosec</td>
+    <td>Go</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Hadolint</td>
+    <td>Dockerfile</td>
+    <td><code>.hadolint.yaml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Jackson Linter</td>
+    <td>JSON</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>JSHint</td>
+    <td>JavaScript</td>
+    <td><code>.jshintrc</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>markdownlint</td>
+    <td>Markdown</td>
+    <td><code>.markdownlint.json</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td><a href="https://github.com/squizlabs/PHP_CodeSniffer/wiki/Advanced-Usage">PHP_CodeSniffer</a></td>
+    <td>PHP</td>
+    <td><code>phpcs.xml</code>, <code>phpcs.xml.dist</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PHP Mess Detector</td>
+    <td>PHP</td>
+    <td><code>codesize.xml</code>, <code>phpmd.xml</code>, <code>phpmd.xml.dist</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PMD</td>
+    <td>Apex, Java, JavaScript, JSP, PL/SQL, XML, Velocity and Visualforce</td>
+    <td><code>ruleset.xml</code>, <code>apex-ruleset.xml</code></td>
+    <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
+  </tr>
+  <tr>
+    <td>Prospector</td>
+    <td>Python</td>
+    <td><code>.prospector.yml</code>, <code>.prospector.yaml</code>, <code>prospector.yml</code>, <code>prospector.yaml</code>, <code>.landscape.yml</code>, <code>.landscape.yaml</code>, <code>landscape.yml</code>, <code>landscape.yaml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>PSScriptAnalyzer</td>
+    <td>PowerShell</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Pylint</td>
+    <td>Python</td>
+    <td><code>pylintrc</code>, <code>.pylintrc</code></td>
+    <td><a href="https://github.com/codacy/codacy-pylint-python3/blob/master/requirements.txt">Plugins</a></td>
+  </tr>
+  <tr>
+    <td>remark-lint</td>
+    <td>Markdown</td>
+    <td><code>.remarkrc</code>, <code>.remarkrc.json</code>, <code>.remarkrc.yaml</code>, <code>.remarkrc.yml</code>, <code>.remarkrc.js</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Revive</td>
+    <td>Go</td>
+    <td><code>revive.toml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>RuboCop</td>
+    <td>Ruby</td>
+    <td><code>.rubocop.yml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Scalastyle</td>
+    <td>Scala</td>
+    <td><code>scalastyle-config.xml</code>, <code>scalastyle_config.xml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ShellCheck</td>
+    <td>Shell</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SonarC#</td>
+    <td>C#</td>
+    <td><code>SonarLint.xml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SonarVB</td>
+    <td>Visual Basic</td>
+    <td><code>SonarLint.xml</code></td>
+    <td></td>
+  </tr>
+ <tr>
+    <td>Spectral</td>
+    <td>AsyncAPI, OpenAPI</td>
+    <td><code>.spectral.yaml</code>, <code>.spectral.yml</code>, <code>.spectral.json</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>SpotBugs</td>
+    <td>Java, Scala</td>
+    <td><code>findbugs.xml</code>, <code>findbugs-includes.xml</code>, <code>findbugs-excludes.xml</code>, <code>spotbugs.xml</code>, <code>spotbugs-includes.xml</code>, <code>spotbugs-excludes.xml</code></td>
+    <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
+  </tr>
+  <tr>
+    <td>SQLint</td>
+    <td>PostgreSQL</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Staticcheck</td>
+    <td>Go</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Stylelint</td>
+    <td>CSS, LESS, SASS</td>
+    <td><code>.stylelintrc</code>, <code>stylelint.config.js</code>, <code>.stylelintrc.json</code>, <code>.stylelintrc.yaml</code>, <code>.stylelintrc.yml</code>, <code>.stylelintrc.js</code></td>
+    <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
+  </tr>
+  <tr>
+    <td>SwiftLint</td>
+    <td>Swift</td>
+    <td><code>.swiftlint.yml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Tailor</td>
+    <td>Swift</td>
+    <td><code>.tailor.yml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TSLint</td>
+    <td>TypeScript</td>
+    <td><code>tslint.json</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>TSQLLint</td>
+    <td>Transact-SQL</td>
+    <td><code>.tsqllintrc</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Unity Roslyn Analyzers</td>
+    <td>Unity</td>
+    <td>-</td>
+    <td></td>
+  </tr>
+  </tbody>
+</table>
 ## Docker images of supported tools
 
 Codacy adds support for new languages and tools by using [a Docker image to run each tool](https://github.com/codacy/codacy-example-tool).

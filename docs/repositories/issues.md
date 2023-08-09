@@ -73,7 +73,7 @@ Use the options in the cogwheel menu of each issue to:
     Codacy will stop using that pattern after the next analysis of your repository, so be sure that you're no longer interested in identifying similar issues. To re-enable patterns use the [Code patterns page](../repositories-configure/configuring-code-patterns.md).
 
     !!! note
-        -   If you're using a [custom configuration file](../repositories-configure/configuring-code-patterns.md#using-your-own-tool-configuration-files), you must manage patterns manually on your configuration file.
+        -   If you're using a [custom tool configuration file](../getting-started/supported-languages-and-tools.md#tool-configuration-files), you must manage patterns manually on your configuration file.
         -   If your repository is following an [organization coding standard](../organizations/using-coding-standards.md), disabling the code pattern causes the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.
 
 -   **Ignore the file** where the issue was detected.
