@@ -6,7 +6,7 @@ description: Configure the static analysis tools and code patterns that Codacy u
 
 !!! note
     Organization admins can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
-    
+
 By default, Codacy analyzes your repositories using a subset of the supported static analysis tools and code patterns. These default settings are the result of community feedback and of existing coding standards.
 
 You can adapt the default settings to your scenario by configuring the tools and code patterns that Codacy uses to analyze your repositories.
@@ -14,7 +14,7 @@ You can adapt the default settings to your scenario by configuring the tools and
 ## Configuring tools and code patterns
 
 !!! note
-    If a repository follows an [organization coding standard](../organizations/using-coding-standards.md) and you update the tool or code pattern configurations for that repository: 
+    If a repository follows an [organization coding standard](../organizations/using-coding-standards.md) and you update the tool or code pattern configurations for that repository:
 
     -   The repository stops following the coding standard
     -   Codacy copies the coding standard configurations to your repository so you can customize them
@@ -323,7 +323,6 @@ The table below lists the configuration file names that Codacy detects and suppo
   </tr>
   </tbody>
 </table>
-
 
 !!! note
     Codacy doesn't support configuration files for the following tools: <!-- TODO DOCS-341 Should we include this in the table above? -->
