@@ -1,5 +1,5 @@
 ---
-description: Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results are adapted to your scenario.
+description: Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results fit your needs.
 ---
 
 # Configuring code patterns
@@ -18,10 +18,7 @@ You have multiple options to adapt the default configurations to your needs:
 ## Configuring tools and code patterns using the Codacy UI
 
 !!! note
-    If a repository follows [coding standard configurations](../organizations/using-coding-standards.md) and you update the configurations for that repository:
-
-    -   The repository stops following the coding standard
-    -   Codacy copies the coding standard configurations to your repository so you can customize them
+    If you update the configurations of a repository that follows a [coding standard](../organizations/using-coding-standards.md),  Codacy copies the coding standard configurations to the repository, and the repository stops following the coding standard. You can then customize the repository configurations without affecting the coding standard.
 
 To configure the tools and code patterns for a repository using the Codacy UI:
 
@@ -93,20 +90,22 @@ Codacy will use the updated configurations on the next analysis.
 ## Using tool configuration files {: id="using-your-own-tool-configuration-files"}
 
 !!! note
-    -   Codacy uses tool configuration files even if you ignore them [using the Codacy UI](ignoring-files.md) or a [Codacy configuration file](codacy-configuration-file.md#syntax-for-ignoring-files).
+    -   Once set, Codacy uses a configuration file even if you exclude it from Codacy analysis [using the Codacy UI](ignoring-files.md) or a [Codacy configuration file](codacy-configuration-file.md#syntax-for-ignoring-files).
 
-    -   When you update pattern settings using configuration files, Codacy may display outdated messages for issues identified previously by those patterns.<!-- TODO Can we clarify when, and if this is temporary? -->
+    -   When you update pattern settings using a configuration file, Codacy may display outdated messages for issues identified previously by those patterns.<!-- TODO Can we remove this? If not, can we clarify when this happens and if this is temporary?  -->
 
-Codacy [supports configuration files for several static analysis tools](../getting-started/supported-languages-and-tools.md#tool-configuration-files). Tool configuration files can help you streamline your setup and test new configurations before using them in production:
-
-- If a pull request updates a configuration file, Codacy considers those updates when analyzing the associated branch.
-- If a pull request deletes a configuration file, Codacy reverts to the last tool patterns configured before using the configuration file.
+Codacy [supports configuration files for several static analysis tools](../getting-started/supported-languages-and-tools.md#tool-configuration-files) to help you streamline your setup.
 
 To use a configuration file for a static analysis tool:
 
-1.  Push the configuration file to the root of the [branch configured as default on Codacy](managing-branches.md).
+1.   Push the configuration file to the root of the [default Codacy branch](managing-branches.md).
 
-1.  Open the repository **Code patterns** page, select the tool of interest, and select the option **Configuration file**.
+1.   Open the repository **Code patterns** page, select the tool of interest, and select the option **Configuration file**.
+
+    !!! note
+        -   If a subsequent pull request updates the configuration file, Codacy considers the updates when analyzing that pull request.
+
+        -   If a subsequent pull request deletes the configuration file, Codacy reverts to the last tool patterns set before using the configuration file.
 
     ![Using a configuration file](images/code-patterns-config-file.png)
 
