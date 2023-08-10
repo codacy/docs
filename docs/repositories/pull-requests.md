@@ -9,7 +9,7 @@ The **Quality Pull Requests page** displays an overview of the pull requests in 
 
 By default, the page lists open pull requests but you can click the **Closed** tab at the top of the list to display the closed pull requests.
 
-![Pull Requests page](images/pull-requests.png)
+![Pull Requests page](images/pull-requests.png)<!--TODO CY-6556 Update screenshot. It might be tricky to update this screenshot only, because all the remaining screenshots for the Pull Request page are related with one-->
 
 Click a specific pull request to see detailed information about the code quality changes introduced by that pull request.
 
