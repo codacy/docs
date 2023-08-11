@@ -11,7 +11,7 @@
         <meta name="description" content="To manage the email addresses associated with your account and your email notifications, click on your avatar on the top right-hand corner and open Your account, page Emails.">
       
       
-        <meta http-equiv="last-modified" content="2023-08-01 16:19:12">
+        <meta http-equiv="last-modified" content="2023-08-11 09:50:22">
       
       
         <link rel="canonical" href="https://docs.codacy.com/account/emails/">
@@ -3855,7 +3855,7 @@
 <p>To update the email addresses associated with your Codacy account, do the following:</p>
 <ol>
 <li>
-<p>Make sure you <a href="#git-config">set your Git email address</a>.</p>
+<p><a href="#git-config">Configure your Git email address</a>. This ensures that commits are attributed to you.</p>
 </li>
 <li>
 <p>Update your email addresses on your Git provider (<a href="https://docs.github.com/en/enterprise-cloud@latest/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account">GitHub</a>, <a href="https://support.atlassian.com/bitbucket-cloud/docs/set-email-aliases/">Bitbucket</a>, or <a href="https://docs.gitlab.com/ee/user/profile/#add-emails-to-your-user-profile">GitLab</a>).</p>
@@ -3870,7 +3870,7 @@
 </ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>When developers commit <strong>from GitHub</strong>, Codacy automatically associates all email addresses linked to their GitHub user with a single Codacy committer. Thus, developers that never logged in to the Codacy app must also make sure they <a href="#git-config">set their Git email address</a> and add all their email addresses to their <a href="https://github.com/settings/emails">GitHub account</a>.</p>
+<p>When developers commit <strong>from GitHub or Bitbucket</strong>, Codacy automatically associates all the commit email addresses from the same Git provider user with a single Codacy committer. For developers that never logged in to the Codacy app, this mechanism requires that they <a href="#git-config">set their Git email address</a> and add all their email addresses to their <a href="https://github.com/settings/emails">GitHub account</a> or <a href="https://bitbucket.org/account/settings/email/">Bitbucket account</a>.</p>
 </div>
 <h3 id="git-config">Setting your Git email address<a class="headerlink" href="#git-config" title="Permanent link">#</a></h3>
 <p>Unless you explicitly <a href="https://git-scm.com/docs/git-config#Documentation/git-config.txt-useremail">configure your email address</a>, Git automatically uses an email address based on the username and hostname of your workstation, and associates this email address with your commits.</p>
@@ -4058,7 +4058,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 1, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 11, 2023</span>
     
   </small>
 </div>
