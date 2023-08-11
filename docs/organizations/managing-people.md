@@ -47,7 +47,9 @@ To add people to your organization:
     Alternatively, click **Add people using email addresses** to manually enter the list of email addresses of the people you wish to add.
 
     !!! important
-        To prevent the same person from occupying more than one seat in your organization, make sure all developers committing to your repositories [configure their email addresses correctly](../account/emails.md#updating).
+        - To prevent the same person from occupying more than one seat in your organization, make sure your teammates [update the email addresses associated with their Codacy account](../account/emails.md#updating).
+
+        - **On GitHub and Bitbucket organizations**, Codacy automatically reduces seat duplication when commits are pushed by associating all the commit email addresses from the same Git provider user with a single Codacy committer. This mechanism requires that all developers committing to your private repositories [set their Git email address](../account/emails.md#git-config) and add all their email addresses to their [GitHub account](https://github.com/settings/emails) or [Bitbucket account](https://bitbucket.org/account/settings/email/).
 
     ![Adding people to your organization](images/organization-people-add-modal.png)
 
