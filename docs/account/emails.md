@@ -10,7 +10,7 @@ Codacy automatically links to your Codacy account the email addresses from the G
 
 To update the email addresses associated with your Codacy account, do the following:
 
-1.  Make sure you [set your Git email address](#git-config).
+1.  [Configure your Git email address](#git-config). This ensures that commits are attributed to you.
 
 1.  Update your email addresses on your Git provider ([GitHub](https://docs.github.com/en/enterprise-cloud@latest/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account), [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/set-email-aliases/), or [GitLab](https://docs.gitlab.com/ee/user/profile/#add-emails-to-your-user-profile)).
 
@@ -20,7 +20,7 @@ To update the email addresses associated with your Codacy account, do the follow
         If the updates are still not reflected on Codacy, navigate to the [access management](https://app.codacy.com/account/access-management) page, revoke the relevant Git provider or Google integration, then log out and back in to Codacy using the same provider.
 
 !!! note
-    When developers commit **from GitHub**, Codacy automatically associates all email addresses linked to their GitHub user with a single Codacy committer. Thus, developers that never logged in to the Codacy app must also make sure they [set their Git email address](#git-config) and add all their email addresses to their [GitHub account](https://github.com/settings/emails).
+    When developers commit **from GitHub or Bitbucket**, Codacy automatically associates all the commit email addresses from the same Git provider user with a single Codacy committer. For developers that never logged in to the Codacy app, this mechanism requires that they [set their Git email address](#git-config) and add all their email addresses to their [GitHub account](https://github.com/settings/emails) or [Bitbucket account](https://bitbucket.org/account/settings/email/).
 
 ### Setting your Git email address {: id="git-config"}
 
