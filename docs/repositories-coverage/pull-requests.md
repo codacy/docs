@@ -31,19 +31,19 @@ This area displays detailed information about the pull request:
 ![Pull request information](images/pull-requests-detail-information.png)
 
 {%
-    include-markdown "commits.md"
+    include-markdown "./commits.md"
     start="<!--coverage-overview-start-->"
     end="<!--coverage-overview-end-->"
 %}
 
 {%
-    include-markdown "commits.md"
+    include-markdown "./commits.md"
     start="<!--tab-files-start-->"
     end="<!--tab-files-end-->"
 %}
 
 {%
-    include-markdown "commits.md"
+    include-markdown "./commits.md"
     start="<!--tab-diff-start-->"
     end="<!--tab-diff-end-->"
 %}

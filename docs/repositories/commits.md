@@ -76,7 +76,7 @@ This area displays the quality gate status and an overview of the code quality m
 The **New Issues** and **Fixed Issues** tabs display the list of issues that the commit created or fixed.
 
 {%
-    include-markdown "issues.md"
+    include-markdown "./issues.md"
     start="<!--issue-detail-start-->"
     end="<!--issue-detail-end-->"
 %}
