@@ -52,7 +52,7 @@ Based on the information obtained from the coverage reports, Codacy calculates c
 -   The **coverage** for a file, commit, or pull request is the percentage of covered lines in the universe of coverable lines for that file, commit, or pull request. For example, a commit with 85 covered lines out of a total of 100 coverable lines has 85% coverage.
 
 {%
-    include-markdown "which-metrics-does-codacy-calculate.md"
+    include-markdown "./which-metrics-does-codacy-calculate.md"
     start="<!--code-coverage-metrics-start-->"
     end="<!--code-coverage-metrics-end-->"
 %}
