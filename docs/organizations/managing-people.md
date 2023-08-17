@@ -65,7 +65,7 @@ When a member or committer leaves an organization:
 -   **On GitLab and Bitbucket organizations** Codacy stops analyzing repositories that were added by the member
 -   Organizations must have at least one admin, so when the last organization admin leaves the organization they must either add someone else as admin or [delete the organization](../organizations/what-are-organizations.md#deleting-an-organization)
 
-To remove people from your organization open your organization **Settings**, page **People**, and click the icon next to the member or committer you wish to remove:
+To remove people from your organization open your organization **Settings**, page **People**, click the icon next to the member or committer you wish to remove, and select **Remove from organization**:
 
 ![Removing people from your organization](images/organization-people-remove.png)
 
