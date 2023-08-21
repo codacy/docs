@@ -21,7 +21,7 @@
         export CODACY_API_TOKEN=<your account API token>
         ```
 
-    {% include-markdown "api-token-warning.md" %}
+    {% include-markdown "./api-token-warning.md" %}
 
 1.  **If you're using Codacy Self-hosted** set the following environment variable to specify your Codacy instance URL:
 

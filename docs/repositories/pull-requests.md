@@ -28,13 +28,13 @@ This area displays the information that identifies the pull request (head and ba
 ![Pull request status](images/pull-requests-detail-status.png)
 
 {%
-    include-markdown "commits.md"
+    include-markdown "./commits.md"
     start="<!--quality-overview-start-->"
     end="<!--quality-overview-end-->"
 %}
 
 {%
-    include-markdown "commits.md"
+    include-markdown "./commits.md"
     start="<!--tabs-start-->"
     end="<!--tabs-end-->"
 %}

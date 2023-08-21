@@ -76,7 +76,7 @@ This area displays the quality gate status and an overview of the code quality m
 The **New Issues** and **Fixed Issues** tabs display the list of issues that the commit created or fixed.
 
 {%
-    include-markdown "issues.md"
+    include-markdown "./issues.md"
     start="<!--issue-detail-start-->"
     end="<!--issue-detail-end-->"
 %}
@@ -106,6 +106,19 @@ The **New Duplication** and **Fixed Duplication** tabs display the list of dupli
 
 ![New Duplication and Fixed Duplication tabs](images/{{ page.meta.file_name }}-tab-duplication.png)
 
+## Diff tab
+
+The **Diff** tab displays the differences in each file that was changed in the {{ page.meta.page_name }}. The background of the changed lines depends on the change:
+
+-   **Red**: Deleted line
+-   **Yellow**: Old version of a changed line with deleted characters highlighted in red
+-   **Green**: New version of a changed line with added characters highlighted in bright green
+-   **Bright green**: New line
+
+<!-- vale off -->
+![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)
+<!-- vale on -->
+
 ## Files tab
 
 The **Files** tab displays the variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) that the {{ page.meta.page_name }} introduces to the files in your repository, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
@@ -121,19 +134,6 @@ The option **Show files without code quality changes** allows you to list all fi
 
 <!-- vale off -->
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
-<!-- vale on -->
-
-## Diff tab
-
-The **Diff** tab displays the differences in each file that was changed in the {{ page.meta.page_name }}. The background of the changed lines depends on the change:
-
--   **Red**: Deleted line
--   **Yellow**: Old version of a changed line with deleted characters highlighted in red
--   **Green**: New version of a changed line with added characters highlighted in bright green
--   **Bright green**: New line
-
-<!-- vale off -->
-![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)
 <!-- vale on -->
 <!--tabs-end-->
 
