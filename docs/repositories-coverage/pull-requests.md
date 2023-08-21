@@ -38,14 +38,14 @@ This area displays detailed information about the pull request:
 
 {%
     include-markdown "./commits.md"
-    start="<!--tab-files-start-->"
-    end="<!--tab-files-end-->"
+    start="<!--tab-diff-start-->"
+    end="<!--tab-diff-end-->"
 %}
 
 {%
     include-markdown "./commits.md"
-    start="<!--tab-diff-start-->"
-    end="<!--tab-diff-end-->"
+    start="<!--tab-files-start-->"
+    end="<!--tab-files-end-->"
 %}
 
 ## Commits tab
