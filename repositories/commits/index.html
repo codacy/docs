@@ -11,7 +11,7 @@
         <meta name="description" content="The Quality Commits page displays an overview of the commits in your repository, such as the analysis status and the number of new and fixed issues for each commit. This allows you to monitor the evolution of the code quality in your repository per commit.">
       
       
-        <meta http-equiv="last-modified" content="2023-08-16 08:28:38">
+        <meta http-equiv="last-modified" content="2023-08-21 09:49:33">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/commits/">
@@ -359,15 +359,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#files-tab" class="md-nav__link">
-    Files tab
+  <a href="#diff-tab" class="md-nav__link">
+    Diff tab
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#diff-tab" class="md-nav__link">
-    Diff tab
+  <a href="#files-tab" class="md-nav__link">
+    Files tab
   </a>
   
 </li>
@@ -3970,6 +3970,15 @@
 <h2 id="duplication-tabs">Duplication tabs<a class="headerlink" href="#duplication-tabs" title="Permanent link">#</a></h2>
 <p>The <strong>New Duplication</strong> and <strong>Fixed Duplication</strong> tabs display the list of duplicated blocks that the commit created or fixed.</p>
 <p><img alt="New Duplication and Fixed Duplication tabs" src="../images/commits-tab-duplication.png" /></p>
+<h2 id="diff-tab">Diff tab<a class="headerlink" href="#diff-tab" title="Permanent link">#</a></h2>
+<p>The <strong>Diff</strong> tab displays the differences in each file that was changed in the commit. The background of the changed lines depends on the change:</p>
+<ul>
+<li><strong>Red</strong>: Deleted line</li>
+<li><strong>Yellow</strong>: Old version of a changed line with deleted characters highlighted in red</li>
+<li><strong>Green</strong>: New version of a changed line with added characters highlighted in bright green</li>
+<li><strong>Bright green</strong>: New line</li>
+</ul>
+<p><img alt="Diff tab" src="../images/commits-tab-diff.png" /></p>
 <h2 id="files-tab">Files tab<a class="headerlink" href="#files-tab" title="Permanent link">#</a></h2>
 <p>The <strong>Files</strong> tab displays the variation of the following <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">code quality metrics</a> that the commit introduces to the files in your repository, displayed either as a <strong>positive or negative variation</strong>, or <strong>no variation</strong> (represented by <code>=</code>):</p>
 <ul>
@@ -3981,15 +3990,6 @@
 <p>Depending on the languages being analyzed or if you haven't <a href="../../coverage-reporter/">set up coverage for your repository</a>, some metrics <strong>may not be calculated</strong> (represented by <code>-</code>).</p>
 <p>The option <strong>Show files without code quality changes</strong> allows you to list all files that the commit updates, even if their code quality metrics don't change.</p>
 <p><img alt="Files tab" src="../images/commits-tab-files.png" /></p>
-<h2 id="diff-tab">Diff tab<a class="headerlink" href="#diff-tab" title="Permanent link">#</a></h2>
-<p>The <strong>Diff</strong> tab displays the differences in each file that was changed in the commit. The background of the changed lines depends on the change:</p>
-<ul>
-<li><strong>Red</strong>: Deleted line</li>
-<li><strong>Yellow</strong>: Old version of a changed line with deleted characters highlighted in red</li>
-<li><strong>Green</strong>: New version of a changed line with added characters highlighted in bright green</li>
-<li><strong>Bright green</strong>: New line</li>
-</ul>
-<p><img alt="Diff tab" src="../images/commits-tab-diff.png" /></p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">Which metrics does Codacy calculate?</a></li>
@@ -4150,7 +4150,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 16, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 21, 2023</span>
     
   </small>
 </div>
