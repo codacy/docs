@@ -61,42 +61,9 @@ To export a list of items as a CSV file, access the [dashboard](#dashboard) or t
 
 ## Managing integrations
 
+<!-- TODO TAROT-2285 update and link to: [Configuring the Jira integration](./configuring-the-jira-integration.md) -->
+
 Integrations let you detect security issues across a number of platforms and display them all as items on the unified item list.
-
-The following section explains how to integrate with each of the supported platforms.
-
-=== "Codacy"
-
-    Security and risk management always displays items opened after detecting Codacy security issues. This feature can't be deactivated.
-
-=== "Jira Cloud"
-
-    ### Installing the Jira Cloud integration
-
-    To install the Jira Cloud integration:
-
-    1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
-
-    1.  On the right-hand side of the page, under the Integrations list, find the Jira entry and click the **Install** button to open the installation modal. Confirm by clicking **Install Jira** to proceed to Atlassian's website.
-
-        ![Security and risk management Jira Cloud integration](images/security-risk-management-integration-jira.png)
-
-    1.  On Atlassian's website, authorize Codacy to access your Atlassian account. Once successful, you're redirected back to Codacy.
-
-    Upon installation, Codacy imports all open Jira issues that were created within the 90-day period preceding the integration and tagged with the label "security" (case-insensitive) and displays them on the item list, along with items from other sources.
-
-    Items are then synchronized daily with the matching Jira issues throughout their lifecycle.
-
-    !!! note
-        Use a Jira account with admin permissions when authorizing Codacy. This lets Codacy access all issues, since the integration inherits the permissions of the authorizing account.
-
-    ### Uninstalling the Jira Cloud integration
-
-    To uninstall the Jira integration:
-
-    1.  Open your organization **Security and Risk** page and click the button **Configure** to open the configuration page.
-
-    1.  Find the Jira entry under the Integrations list and click the **Options** button (identified by three dots), then select **Uninstall** and confirm.
 
 ## Managing access to security and risk management
 
@@ -165,6 +132,8 @@ The following section details when Codacy opens and closes items for each suppor
 
 === "Jira Cloud"
 
+    <!-- TODO TAROT-2285 Decide whether to move this section to the Jira integration page -->
+
     Codacy opens a new item when it detects a new Jira issue with a "security" label.
 
     Codacy closes an item when it detects that the associated Jira issue is marked as Closed.
@@ -175,6 +144,8 @@ The following section details when Codacy opens and closes items for each suppor
         -   To make sure that Codacy detects Jira issues correctly, assign the "security" label when creating the issue or immediately after.
 
 ## Item statuses
+
+<!-- TODO TAROT-2285 Decide whether to move this section to the Jira integration page -->
 
 The following table describes how item statuses map to deadlines:
 
@@ -214,6 +185,8 @@ The following table describes how item statuses map to deadlines:
 
 ## Item severities and deadlines
 
+<!-- TODO TAROT-2285 Decide whether to split this table to the Jira integration page -->
+
 The following table defines item severities and days to fix the associated security issue, based on the importance of the underlying issue:
 
 | Item<br/>severity | <br/>Days to fix | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority |
@@ -224,6 +197,8 @@ The following table defines item severities and days to fix the associated secur
 | Low               | 120              | Minor                                | Low and other                      |
 
 ## Data retention
+
+<!-- TODO TAROT-2285 Decide whether to split this table to the Jira integration page -->
 
 Except for the situations described below, Codacy retains all items indefinitely.
 
@@ -236,3 +211,7 @@ Except for the situations described below, Codacy retains all items indefinitely
     Uninstalling the Jira Cloud integration using the security and risk management configuration page deletes all associated open items.
     
     Uninstalling the Jira Cloud integration using the Jira website doesn't delete any associated items. However, it prevents Codacy from opening new Jira-related items.
+
+## See also
+
+-   [Configuring the Jira integration](./configuring-the-jira-integration.md)
