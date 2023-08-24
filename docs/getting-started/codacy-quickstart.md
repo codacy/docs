@@ -22,7 +22,7 @@ By integrating with your Git provider, Codacy keeps track of your team’s work,
 
 {% include-markdown "../assets/includes/nav-multistep-quickstart.md" %}
 
-To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.codacy.com/) and click **Get started**. Then, follow these steps:
+To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.codacy.com/) and click **Start free**. Then, follow these steps:
 
 1.  [Signing up](#signing-up)
 1.  [Choosing an organization](#choosing-organization)
