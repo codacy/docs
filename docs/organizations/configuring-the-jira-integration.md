@@ -41,7 +41,6 @@ To uninstall the Jira Cloud integration:
 
 1.  Find the Jira entry under the Integrations list and click the **Options** button (identified by three dots), then select **Uninstall** and confirm.
 
-
 ## See also
 
 -   [Managing security and risk](./managing-security-and-risk.md)
