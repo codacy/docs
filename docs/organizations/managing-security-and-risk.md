@@ -113,35 +113,35 @@ Codacy closes an existing item when the source platform stops detecting the asso
 
 The following section details when Codacy opens and closes items for each supported platform.
 
-=== "Codacy"
+### Codacy
 
-    Codacy opens a new item when it detects a new security issue on the default branch of a repository.
+Codacy opens a new item when it detects a new security issue on the default branch of a repository.
 
-    Codacy closes an item in either of the following cases:
-    
-    -   Codacy detects that the associated issue isn't present in the most recent analyzed commit and therefore is fixed
-    -   You [ignore the associated issue](../repositories/issues.md#ignoring-and-managing-issues)
-    -   You [disable the tool](../repositories-configure/configuring-code-patterns.md) that found the associated issue
+Codacy closes an item in either of the following cases:
 
-    !!! note
-        To make sure that Codacy detects security issues correctly:
+-   Codacy detects that the associated issue isn't present in the most recent analyzed commit and therefore is fixed
+-   You [ignore the associated issue](../repositories/issues.md#ignoring-and-managing-issues)
+-   You [disable the tool](../repositories-configure/configuring-code-patterns.md) that found the associated issue
 
-        -   [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.
-        -   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
-        -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
+!!! note
+    To make sure that Codacy detects security issues correctly:
 
-=== "Jira Cloud"
+    -   [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.
+    -   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
+    -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
 
-    <!-- TODO TAROT-2285 Decide whether to move this section to the Jira integration page -->
+### Jira Cloud
 
-    Codacy opens a new item when it detects a new Jira issue with a "security" label.
+<!-- TODO TAROT-2285 Decide whether to move this section to the Jira integration page -->
 
-    Codacy closes an item when it detects that the associated Jira issue is marked as Closed.
+Codacy opens a new item when it detects a new Jira issue with a "security" label.
 
-    !!! note
-        -   Codacy retrieves updates from Jira once a day.
-        -   If an issue is opened and closed on the same day, Codacy may not detect it.
-        -   To make sure that Codacy detects Jira issues correctly, assign the "security" label when creating the issue or immediately after.
+Codacy closes an item when it detects that the associated Jira issue is marked as Closed.
+
+!!! note
+    -   Codacy retrieves updates from Jira once a day.
+    -   If an issue is opened and closed on the same day, Codacy may not detect it.
+    -   To make sure that Codacy detects Jira issues correctly, assign the "security" label when creating the issue or immediately after.
 
 ## Item statuses
 
@@ -202,15 +202,15 @@ The following table defines item severities and days to fix the associated secur
 
 Except for the situations described below, Codacy retains all items indefinitely.
 
-=== "Codacy"
+### Codacy
 
-    Deleting a repository deletes all open items belonging to that repository.
+Deleting a repository deletes all open items belonging to that repository.
 
-=== "Jira Cloud"
+### Jira Cloud
 
-    Uninstalling the Jira Cloud integration using the security and risk management configuration page deletes all associated open items.
+Uninstalling the Jira Cloud integration using the security and risk management configuration page deletes all associated open items.
     
-    Uninstalling the Jira Cloud integration using the Jira website doesn't delete any associated items. However, it prevents Codacy from opening new Jira-related items.
+Uninstalling the Jira Cloud integration using the Jira website doesn't delete any associated items. However, it prevents Codacy from opening new Jira-related items.
 
 ## See also
 
