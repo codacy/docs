@@ -61,7 +61,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>AWS CloudFormation</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a><a href="#yaml-only"> <sup>1</sup></a></td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <a href="https://trivy.dev">Trivy</a><a href="#yaml-only"> <sup>1</sup></a></td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -184,7 +185,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://pmd.github.io/">PMD</a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>2</sup></a></td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://pmd.github.io/">PMD</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
     </tr>
@@ -202,7 +204,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>JSON</td>
       <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -226,7 +229,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>Kubernetes</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a><a href="#yaml-only"> <sup>1</sup></a></td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <a href="https://trivy.dev">Trivy</a><a href="#yaml-only"> <sup>1</sup></a></td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -302,7 +306,9 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://github.com/pylint-dev/pylint">Pylint</a></td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
+          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/rubik/radon">Radon</a></td>
     </tr>
@@ -374,7 +380,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>Terraform</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
     </tr>
