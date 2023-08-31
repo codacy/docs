@@ -44,16 +44,16 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Apex</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>AsyncAPI</td>
       <td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -68,8 +68,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Azure Resource Manager Templates</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -78,7 +78,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>2</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
-      <td></td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
@@ -88,7 +88,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>2</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a><a href="#cppcheck-misra"><sup>3</sup></a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
-      <td></td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
@@ -96,7 +96,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>C#</td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
-      <td></td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
@@ -104,16 +104,16 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>CoffeeScript</td>
       <td><a href="https://github.com/clutchski/coffeelint">CoffeeLint</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>Crystal</td>
       <td><a href="https://github.com/crystal-ameba/ameba">Ameba</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -121,15 +121,15 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>CSS</td>
       <td><a href="http://csslint.net/">CSSLint</a>,
           <a href="https://stylelint.io/">Stylelint</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>Dart</td>
       <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a><a href="#dart-limitations"><sup>4</sup></a></td>
-      <td></td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
@@ -137,7 +137,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Dockerfile</td>
       <td><a href="https://github.com/hadolint/hadolint">Hadolint</a></td>
-      <td></td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
@@ -145,7 +145,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Elixir</td>
       <td><a href="https://github.com/rrrene/credo">Credo</a></td>
-      <td></td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
@@ -157,7 +157,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"><sup>2</sup></a>,
           <a href="https://github.com/mgechev/revive">Revive</a>,
           <a href="https://staticcheck.io/">Staticcheck</a><a href="#client-side"><sup>2</sup></a></td>
-      <td></td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a></td>
@@ -165,8 +165,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Groovy</td>
       <td><a href="https://codenarc.github.io/CodeNarc/">CodeNarc</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -183,7 +183,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a>,
           <a href="https://pmd.github.io/">PMD</a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>2</sup></a></td>
-      <td></td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
@@ -201,7 +201,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>JSON</td>
       <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
-      <td></td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
@@ -209,16 +209,16 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>JSP</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>Kotlin</td>
       <td><a href="https://github.com/detekt/detekt">detekt</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/detekt/detekt">detekt</a></td>
     </tr>
@@ -233,8 +233,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Less</td>
       <td><a href="https://stylelint.io/">Stylelint</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -242,23 +242,23 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>Markdown</td>
       <td><a href="https://github.com/remarkjs/remark-lint">remark-lint</a>, <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
       <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> <a href="#suggest-fixes">🔧</a></td>
-      <td></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>Objective-C</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>2</sup></a>, <a href="http://fauxpasapp.com/">Faux Pas</a><a href="#client-side"><sup>2</sup></a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>OpenAPI</td>
       <td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -266,7 +266,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>PHP</td>
       <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
           <a href="https://phpmd.org/">PHP Mess Detector</a></td>
-      <td></td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://github.com/sebastianbergmann/phpcpd">PHPCPD</a></td>
       <td><a href="https://github.com/pdepend/pdepend">PHP Depend</a></td>
@@ -274,24 +274,24 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>PL/SQL</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>PostgreSQL</td>
       <td><a href="https://github.com/purcell/sqlint">SQLint</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>PowerShell</td>
       <td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -301,7 +301,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://github.com/pylint-dev/pylint">Pylint</a></td>
-      <td></td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/rubik/radon">Radon</a></td>
@@ -312,15 +312,15 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://brakemanscanner.org/">Brakeman</a>,
           <a href="https://github.com/rubysec/bundler-audit">bundler-audit</a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a></td>
-      <td></td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
       <td><a href="https://github.com/rubocop/rubocop">RuboCop</a></td>
     </tr>
     <tr>
       <td>Rust</td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
@@ -328,8 +328,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Sass</td>
       <td><a href="https://stylelint.io/">Stylelint</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -339,8 +339,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
           <a href="http://www.scalastyle.org/">Scalastyle</a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>2</sup></a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
           <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a></td>
@@ -348,16 +348,16 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Serverless Framework</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>Shell</td>
       <td><a href="https://www.shellcheck.net/">ShellCheck</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -365,15 +365,15 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>Swift </td>
       <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a>,
           <a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#swiftlint-complexity"><sup>6</sup></a></td>
     </tr>
     <tr>
       <td>Terraform</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
-      <td></td>
+      <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
@@ -381,8 +381,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Transact-SQL</td>
       <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -398,48 +398,48 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Unity</td>
       <td><a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a><a href="#client-side"><sup>2</sup></a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>Velocity</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>Visual Basic</td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>Visualforce</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>XML</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
     <tr>
       <td>XSL</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td></td>
-      <td></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
