@@ -89,7 +89,7 @@ The Security Monitor supports checking the languages and frameworks below for an
     <tr>
       <td>AWS CloudFormation</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
-          <a href="https://trivy.dev">Trivy</a><a href="#yaml-only"><sup>1</sup></a></td>
+          <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>1</sup></a></td>
     </tr>
     <tr>
       <td>C</td>
