@@ -661,6 +661,10 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-tailor" class="skip-vale">codacy/codacy-tailor</a></td>
 </tr>
 <tr>
+<td><a href="https://trivy.dev">Trivy</a></td>
+<td><a href="https://github.com/codacy/codacy-trivy/" class="skip-vale">codacy/codacy-trivy</a></td>
+</tr>
+<tr>
 <td><a href="https://palantir.github.io/tslint/">TSLint</a></td>
 <td><a href="https://github.com/codacy/codacy-tslint" class="skip-vale">codacy/codacy-tslint</a></td>
 </tr>
