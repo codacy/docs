@@ -60,8 +60,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>AWS CloudFormation</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
-      <td></td>
-      <td><a href="https://trivy.dev">Trivy</a><a href="#yaml-only"><sup>1</sup></a></td>
+      <td>-</td>
+      <td><a href="https://trivy.dev">Trivy</a><a href="#yaml-only"> <sup>1</sup></a></td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -172,9 +172,9 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Helm</td>
-      <td></td>
-      <td></td>
-      <td><a href="https://trivy.dev">Trivy</a><a href="#yaml-only"><sup>1</sup></a></td>
+      <td>-</td>
+      <td>-</td>
+      <td><a href="https://trivy.dev">Trivy</a><a href="#yaml-only"> <sup>1</sup></a></td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -225,8 +225,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Kubernetes</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
-      <td></td>
-      <td><a href="https://trivy.dev">Trivy</a><a href="#yaml-only"><sup>1</sup></a></td>
+      <td>-</td>
+      <td><a href="https://trivy.dev">Trivy</a><a href="#yaml-only"> <sup>1</sup></a></td>
       <td>-</td>
       <td>-</td>
     </tr>
