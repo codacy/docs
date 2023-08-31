@@ -345,6 +345,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     -   ShellCheck
     -   SQLint
     -   Staticcheck
+    -   Trivy
 
     For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
 
