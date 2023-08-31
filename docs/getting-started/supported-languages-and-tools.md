@@ -35,7 +35,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <th>Language or framework</th>
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Static analysis</a></th>
       <th><a style="color: white;" href="#suggest-fixes">Suggested fixes</a></th>
-      <th><a style="color: white;" href="#secret-detection">Secret detection</a></th><!-- TODO TAROT-2295 New section? -->
+      <th>Secret detection</th>
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">Duplication</a></th>
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">Complexity</a></th>
     </tr>

@@ -170,16 +170,14 @@ The Security Monitor supports checking the languages and frameworks below for an
       <td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
     </tr>
     <tr>
-      <td>Python
-      </td>
+      <td>Python</td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
-      <td>Ruby<a href="#ruby-31"> <sup>5</sup></a>
-      </td>
+      <td>Ruby<a href="#ruby-31"> <sup>5</sup></a></td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a>,
           <a href="https://github.com/rubysec/bundler-audit">bundler-audit</a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
@@ -209,7 +207,7 @@ The Security Monitor supports checking the languages and frameworks below for an
     <tr>
       <td>TypeScript</td>
       <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>4</sup></a>,
-      <a href="https://trivy.dev">Trivy</a></td>
+          <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>Visual Basic</td>
