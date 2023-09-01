@@ -17,7 +17,7 @@ You can install the extension from the [Visual Studio Marketplace](https://marke
 
 ## Fetching pull request quality and coverage data from Codacy
 
-1.  Open the repository directory in VS Code. 
+1.  Open the repository directory in VS Code.
 
     !!! note
         Make sure that you’ve [added the repository to Codacy](../organizations/managing-repositories.md#adding-a-repository).
@@ -57,7 +57,7 @@ The main view displays the following metrics for the pull request:
     !!! tip
         The percentage next to each file name is the coverage variation for that file.
 
--   Sequences of **duplicate code** (clones). These are the same ones you find in the [Quality Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app. 
+-   Sequences of **duplicate code** (clones). These are the same ones you find in the [Quality Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
 
 -   Variations in **code complexity**.
 
@@ -70,7 +70,7 @@ To navigate to found issues:
 1.  Click the name of the problem you wish to review.
 
     Line-based navigation is currently only supported for Quality issues.
-    
+
     ![Navigate to a specific issue from the Problems tab](images/codacy-vscode-extension-problems-tab.png)
 
 1.  Hover over a highlighted issue in the code editor to view more details and available quick fixes.
