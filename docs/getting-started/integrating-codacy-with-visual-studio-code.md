@@ -77,6 +77,6 @@ To refresh the pull request data manually, click the Refresh Pull Request button
 
 ## Troubleshooting
 
-### Could not find repository
+### <span class="skip-vale">Could not</span> find repository
 
 If you encounter this error, confirm that the repository has been [added to Codacy Cloud](../organizations/managing-repositories.md#adding-a-repository) and that you have at least [Repository Read permissions](../organizations/roles-and-permissions-for-organizations.md) for the repository.
