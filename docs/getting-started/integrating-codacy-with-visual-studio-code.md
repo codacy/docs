@@ -73,7 +73,7 @@ To navigate to found issues:
     
     ![Navigate to a specific issue from the Problems tab](images/codacy-vscode-extension-problems-tab.png)
 
-1.  Hover over a highlighted issue to view more details and available quick fixes.
+1.  Hover over a highlighted issue in the code editor to view more details and available quick fixes.
 
     For a list of tools that support quick fixes, see [Supported languages and tools](./supported-languages-and-tools.md#supported-languages-and-tools)
 
