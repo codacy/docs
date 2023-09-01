@@ -33,15 +33,15 @@ You can install the extension from the [Visual Studio Marketplace](https://marke
     !!! note
         The branch must match an open pull request analyzed by Codacy.
 
-After completing these steps, Codacy displays any found problems for the pull request in the main view and in VS Code's Problems tab.
+After completing these steps, Codacy displays a summary of all found problems for the pull request in the main view and in VS Code's Problems tab.
 
 ## Reviewing found problems
 
-To review all found problems, open the main view by clicking the **Codacy logo** in the status bar or the **Codacy tab** in the activity bar.
+To review a summary of all found problems for the pull request, open the main view by clicking the **Codacy logo** in the status bar or the **Codacy tab** in the activity bar.
 
 ![Codacy main view](images/codacy-vscode-extension-main-view.png)
 
-The main view displays the following metrics for the pull request:
+The main view displays the following:
 
 -   The **Quality status** of the pull request, either up to standards or not up to standards, based on the repository’s [Quality gates](../repositories-configure/adjusting-quality-gates.md).
 
@@ -61,13 +61,13 @@ The main view displays the following metrics for the pull request:
 
 -   Variations in **code complexity**.
 
-## Navigating to found issues
+## Navigating to found problems
 
-To navigate to found issues:
+To navigate to a found problem:
 
 1.  Open the **Problems tab** (use `Ctrl+Shift+M` on Windows/Linux or `Cmd+Shift+M` on macOS)
 
-1.  Click the name of the problem you wish to review.
+1.  Click the name of the issue you wish to review.
 
     Line-based navigation is currently only supported for Quality issues.
 
