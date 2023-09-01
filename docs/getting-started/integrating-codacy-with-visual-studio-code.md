@@ -20,9 +20,9 @@ You can install the extension from the [Visual Studio Marketplace](https://marke
 1.  Open the repository directory in VS Code. 
 
     !!! note
-        Make sure that you’ve added the repository to Codacy.
+        Make sure that you’ve [added the repository to Codacy](../organizations/managing-repositories.md#adding-a-repository).
 
-1.  Access the main view by clicking the **Codacy logo** in the status bar or the **Codacy tab** in the activity bar.
+1.  Open the main view by clicking the **Codacy logo** in the status bar or the **Codacy tab** in the activity bar.
 
     ![Codacy main view](images/codacy-vscode-extension-sign-in.png)
 
@@ -63,11 +63,19 @@ The main view displays the following metrics for the pull request:
 
 ## Navigating to found issues
 
-To navigate to found issues, access the **Problems tab** (use `Ctrl+Shift+M` on Windows/Linux or `Cmd+Shift+M` on macOS) and click the name of the problem you wish to review. Line-based navigation is currently only supported for Quality issues.
+To navigate to found issues:
 
-![Navigate to a specific issue from the Problems tab](images/codacy-vscode-extension-problems-tab.png)
+1.  Open the **Problems tab** (use `Ctrl+Shift+M` on Windows/Linux or `Cmd+Shift+M` on macOS)
 
-Hover over a highlighted issue to view more details and available quick fixes. For a list of tools that support quick fixes, see [Supported languages and tools](./supported-languages-and-tools.md#supported-languages-and-tools)
+1.  Click the name of the problem you wish to review.
+
+    Line-based navigation is currently only supported for Quality issues.
+    
+    ![Navigate to a specific issue from the Problems tab](images/codacy-vscode-extension-problems-tab.png)
+
+1.  Hover over a highlighted issue to view more details and available quick fixes.
+
+    For a list of tools that support quick fixes, see [Supported languages and tools](./supported-languages-and-tools.md#supported-languages-and-tools)
 
 ## Refreshing pull request data
 
