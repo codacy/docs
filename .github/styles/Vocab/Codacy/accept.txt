@@ -85,5 +85,4 @@ TSLint
 TSQLLint
 vacuumdb
 Visualforce
-VSCode
 Xcode
