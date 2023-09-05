@@ -603,6 +603,7 @@ nav:
           - organizations/using-coding-standards.md
           - organizations/copying-code-patterns-between-repositories.md
           - organizations/configuring-default-git-provider-integration-settings.md
+          - organizations/configuring-the-slack-integration.md
           - organizations/managing-security-and-risk.md
           - organizations/managing-people.md
           - organizations/roles-and-permissions-for-organizations.md
