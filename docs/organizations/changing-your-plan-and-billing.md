@@ -2,10 +2,12 @@
 
 Each organization on Codacy has a dedicated plan and associated billing. To make changes to the plan and billing of an organization, open your organization **Settings**, page **Plan and billing**.
 
-<!--github-marketplace-start-->
+<!--plan-caveats-start-->
 !!! note
-    **If you're using GitHub Marketplace,** make changes to your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).
-<!--github-marketplace-end-->
+    -   If you're using GitHub Marketplace, update your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).
+
+    -   If you cancel your plan or switch to a different Enterprise plan, some repositories may show outdated information in the Codacy UI. To update this information, reanalyze the repositories or push new commits.
+<!--plan-caveats-end-->
 
 ![Plan and billing for a Codacy organization](images/organization-plan-billing.png)
 
