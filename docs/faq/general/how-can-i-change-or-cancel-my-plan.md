@@ -12,8 +12,8 @@ Alternatively, [delete your organization](../../organizations/what-are-organizat
 
 {%
     include-markdown "../../organizations/changing-your-plan-and-billing.md"
-    start="<!--github-marketplace-start-->"
-    end="<!--github-marketplace-end-->"
+    start="<!--plan-caveats-start-->"
+    end="<!--plan-caveats-end-->"
 %}
 
 ## If you're using Codacy Self-hosted
