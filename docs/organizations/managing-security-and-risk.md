@@ -61,7 +61,7 @@ To export a list of items as a CSV file, access the [dashboard](#dashboard) or t
 
 ## Managing integrations
 
-<!-- TODO TAROT-2285 update and link to: [Configuring the Jira integration](./configuring-the-jira-integration.md) -->
+<!-- TODO TAROT-2285 update and link to: [Configuring the Jira integration](./jira-integration-for-security-and-risk-management.md) -->
 
 Integrations let you detect security issues across a number of platforms and display them all as items on the unified item list.
 
@@ -214,4 +214,4 @@ Uninstalling the Jira Cloud integration using the Jira website doesn't delete an
 
 ## See also
 
--   [Configuring the Jira integration](./configuring-the-jira-integration.md)
+-   [Configuring the Jira integration for Security and risk management](integrations/jira-integration-for-security-and-risk-management.md)

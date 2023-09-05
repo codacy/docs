@@ -1,4 +1,4 @@
-# Configuring the Jira integration<!-- TODO TAROT-2285 tentative title -->
+# Jira integration for Security and risk management
 
 <!--
     TODO TAROT-2285 introduction and concepts:
@@ -10,6 +10,9 @@
     - Limitations: The Jira integration is only available for Jira Cloud.
 -->
 
+!!! tip
+    If you want to integrate Jira with a single repository on Codacy, see [Repository Jira integration](../../repositories-configure/integrations/jira-integration.md).
+
 ## Installing the Jira Cloud integration
 
 <!-- TODO TAROT-2285 update instructions to match the new section structure -->
@@ -20,7 +23,7 @@ To install the Jira Cloud integration:
 
 1.  On the right-hand side of the page, under the Integrations list, find the Jira entry and click the **Install** button to open the installation modal. Confirm by clicking **Install Jira** to proceed to Atlassian's website.
 
-    ![Security and risk management Jira Cloud integration](images/integration-jira-install.png)
+    ![Security and risk management Jira Cloud integration](images/jira-install-srm.png)
 
 1.  On Atlassian's website, authorize Codacy to access your Atlassian account. Once successful, you're redirected back to Codacy.
 
@@ -43,4 +46,4 @@ To uninstall the Jira Cloud integration:
 
 ## See also
 
--   [Managing security and risk](./managing-security-and-risk.md)
+-   [Managing security and risk](../managing-security-and-risk.md)

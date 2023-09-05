@@ -572,7 +572,7 @@ nav:
                 - repositories-configure/integrations/gitlab-integration.md
                 - repositories-configure/integrations/bitbucket-integration.md
                 - repositories-configure/integrations/slack-integration.md
-                - repositories-configure/integrations/jira-integration.md
+                - Jira integration: repositories-configure/integrations/jira-integration.md
                 - repositories-configure/integrations/webhook-notifications.md
                 - repositories-configure/integrations/post-commit-hooks.md
           - repositories-configure/ignoring-files.md
@@ -600,7 +600,8 @@ nav:
           - organizations/using-coding-standards.md
           - organizations/copying-code-patterns-between-repositories.md
           - organizations/configuring-default-git-provider-integration-settings.md
-          - organizations/configuring-the-jira-integration.md
+          - Integrations:
+              - organizations/integrations/jira-integration-for-security-and-risk-management.md
           - organizations/managing-security-and-risk.md
           - organizations/managing-people.md
           - organizations/roles-and-permissions-for-organizations.md
