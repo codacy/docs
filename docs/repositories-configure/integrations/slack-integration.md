@@ -1,4 +1,7 @@
-# Slack integration
+# Repository Slack integration
+
+!!! tip
+    If you want to receive notifications for all repositories in your organization, you can configure the [organization Slack integration](../../organizations/integrations/slack-integration.md) instead.
 
 Enable the Slack integration to integrate Codacy with Slack by sending messages to a channel when it finds new issues.
 
