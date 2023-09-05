@@ -113,7 +113,7 @@ Codacy closes an existing item when the source platform stops detecting the asso
 
 The following section details when Codacy opens and closes items for each supported platform.
 
-### Codacy
+### Opening and closing Codacy items
 
 Codacy opens a new item when it detects a new security issue on the default branch of a repository.
 
@@ -130,7 +130,7 @@ Codacy closes an item in either of the following cases:
     -   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
     -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
 
-### Jira Cloud
+### Opening and closing Jira Cloud items
 
 <!-- TODO TAROT-2285 Decide whether to move this section to the Jira integration page -->
 
@@ -202,11 +202,11 @@ The following table defines item severities and days to fix the associated secur
 
 Except for the situations described below, Codacy retains all items indefinitely.
 
-### Codacy
+### Data retention for Codacy items
 
 Deleting a repository deletes all open items belonging to that repository.
 
-### Jira Cloud
+### Data retention for Jira Cloud items
 
 Uninstalling the Jira Cloud integration using the security and risk management configuration page deletes all associated open items.
     
