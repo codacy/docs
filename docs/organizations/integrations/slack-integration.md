@@ -1,9 +1,11 @@
 # Organization Slack integration
 
-<!-- TODO confirm that we only track Security issues -->
+<!-- TODO TAROT-2301
 
-!!! tip
-    If you want to receive notifications only for a specific repository, you can configure the [repository Slack integration](../../repositories-configure/integrations/slack-integration.md) instead.
+- confirm that we only track Security issues
+- review page title to align with actual use case
+- review content to align with actual use case
+-->
 
 This integration sends notifications to a Slack channel of your choice when Codacy detects new issues in your organization.
 

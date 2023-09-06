@@ -1,8 +1,5 @@
 # Repository Slack integration
 
-!!! tip
-    If you want to receive notifications for all repositories in your organization, you can configure the [organization Slack integration](../../organizations/integrations/slack-integration.md) instead.
-
 Enable the Slack integration to integrate Codacy with Slack by sending messages to a channel when it finds new issues.
 
 To enable the Slack integration access the **Integrations** tab of your repository **Settings**, click **Add integration** and select **Slack** from the list.
@@ -32,3 +29,7 @@ After filling both fields, click the **Save** button. You can also use the **Tes
 After configuring your Slack integration with your server settings, Codacy will send a message on Slack whenever it finds new issues.
 
 ![Example Slack notification](images/slack-integration-notification.png)
+
+## See also
+
+-   [Organization Slack integration](../../organizations/integrations/slack-integration.md)<!-- TODO TAROT-2301 Review title -->
