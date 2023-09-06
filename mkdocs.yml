@@ -601,7 +601,7 @@ nav:
           - organizations/copying-code-patterns-between-repositories.md
           - organizations/configuring-default-git-provider-integration-settings.md
           - Integrations:
-              - organizations/integrations/jira-integration-for-security-and-risk-management.md
+              - organizations/integrations/jira-integration.md
           - organizations/managing-security-and-risk.md
           - organizations/managing-people.md
           - organizations/roles-and-permissions-for-organizations.md

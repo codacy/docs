@@ -1,7 +1,7 @@
 # Repository Jira integration
 
 !!! tip
-    If you want to integrate Jira with Security and risk management, see [Jira integration for Security and risk management](../../organizations/integrations/jira-integration-for-security-and-risk-management.md).
+    If you want to integrate Jira with Security and risk management, see [Jira integration for Security and risk management](../../organizations/integrations/jira-integration.md).
 
 The Jira integration incorporates Codacy on your existing Jira workflows.
 
