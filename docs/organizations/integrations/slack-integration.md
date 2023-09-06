@@ -1,5 +1,7 @@
 # Organization Slack integration
 
+<!-- TODO confirm that we only track Security issues -->
+
 !!! tip
     If you want to receive notifications only for a specific repository, you can configure the [repository Slack integration](../../repositories-configure/integrations/slack-integration.md) instead.
 
