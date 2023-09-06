@@ -18,7 +18,7 @@ To install the Jira integration:
 
 1.  Open your organization **Integrations**, page **Jira**, and click **Install Jira** to proceed to Atlassian's website.
 
-    ![Security and risk management Jira integration](images/jira-install-srm.png)
+    ![Security and risk management Jira integration installation](images/jira-integration-srm-install.png)
 
 1.  On Atlassian's website, authorize Codacy to access your Atlassian account. Once successful, you're redirected back to Codacy.
 
