@@ -1,8 +1,5 @@
 # Jira integration for Security and risk management
 
-!!! tip
-    If you want to integrate Jira with a single repository on Codacy, see [Repository Jira integration](../../repositories-configure/integrations/jira-integration.md).
-
 This integration imports all Jira issues labeled as **security** to the [Security and risk management dashboard](../managing-security-and-risk.md), allowing you to manage your Jira security issues and track their resolution in one place.
 
 ## Installing the Jira integration
