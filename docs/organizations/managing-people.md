@@ -9,7 +9,10 @@ For **private repositories**, Codacy only analyzes commits from people in your C
 
     -   Committers who aren't part of your Git provider organization can't join your organization on Codacy app, but you should still add them to your Codacy organization to analyze their commits to private repositories.
 
-    -   In some Enterprise plans, Codacy automatically adds to the organization new people that commit to your private repositories and analyzes their commits. Also, Codacy updates your seats automatically when adding these new committers.
+    -   In some Enterprise plans, Codacy automatically manages people activity and seats usage for your organization:
+        -   Adds new people who commit to your private repositories and analyzes their commits.
+        -   Deactivates people who perform no commit or login for 90 consecutive days.
+        -   Updates your organization seats accordingly when adding or deactivating people.
 
 To list and manage the people in your organization, open your organization **Settings**, page **People**. This page also shows their last activity on Codacy:
 
@@ -59,6 +62,9 @@ To add people to your organization:
 
 Members of an organization on Codacy can remove themselves from the organization, and organization admins can also remove other members and committers.
 
+!!! note
+    For Enterprise plans where Codacy automatically manages people activity for your organization, you can only remove inactive people who performed no activity for 90 consecutive days. Inactive people don't occupy a seat in your organization.
+
 When a member or committer leaves an organization:
 
 -   Codacy stops analyzing their commits to private repositories in the organization
@@ -68,9 +74,6 @@ When a member or committer leaves an organization:
 To remove people from your organization open your organization **Settings**, page **People**, click the icon next to the member or committer you wish to remove, and select **Remove from organization**:
 
 ![Removing people from your organization](images/organization-people-remove.png)
-
-!!! important
-    For Enterprise plans where Codacy automatically adds new committers to the organization, people that you remove from your organization will be added again if they keep committing.
 
 ## See also
 
