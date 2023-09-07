@@ -1,13 +1,6 @@
-# Organization Slack integration
+# Organization Slack integration for Security issues
 
-<!-- TODO TAROT-2301
-
-- confirm that we only track Security issues
-- review page title to align with actual use case
-- review content to align with actual use case
--->
-
-This integration sends notifications to a Slack channel of your choice when Codacy detects new issues in your organization.
+This integration sends notifications to a Slack channel of your choice whenever Codacy detects new critical Security issues in any repository within your organization.
 
 ## Installing the Slack integration
 

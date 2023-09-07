@@ -32,4 +32,4 @@ After configuring your Slack integration with your server settings, Codacy will 
 
 ## See also
 
--   [Organization Slack integration](../../organizations/integrations/slack-integration.md)<!-- TODO TAROT-2301 Review title -->
+-   [Organization Slack integration for Security issues](../../organizations/integrations/slack-integration.md)
