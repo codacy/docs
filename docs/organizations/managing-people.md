@@ -9,12 +9,15 @@ For **private repositories**, Codacy only analyzes commits from people in your C
 
     -   Committers who aren't part of your Git provider organization can't join your organization on Codacy app, but you should still add them to your Codacy organization to analyze their commits to private repositories.
 
-    -   In some Enterprise plans, Codacy automatically manages people activity and seats usage for your organization:
-        -   Adds new people who commit to your private repositories and analyzes their commits.
-        -   Deactivates people who perform no commit or login for 90 consecutive days.
-        -   Updates your organization seats accordingly when adding or deactivating people.
 
-To list and manage the people in your organization, open your organization **Settings**, page **People**. This page also shows their last activity on Codacy:
+To list and manage the people in your organization, open your organization **Settings**, page **People**. This page also shows their last activity on Codacy.
+
+!!! note
+    In some Enterprise plans, Codacy automatically manages people activity and seat usage for your organization:
+    
+    -   Adds new people who commit to your private repositories and analyzes their commits.
+    -   Deactivates people who perform no commit or login for 90 consecutive days.
+    -   Updates your organization seats accordingly when adding or deactivating people.
 
 ![People in an organization](images/organization-people.png)
 
