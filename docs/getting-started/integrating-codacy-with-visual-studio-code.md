@@ -27,7 +27,7 @@ To integrate Codacy into your setup, install the Codacy extension for VS Code by
 
 You can install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=codacy-app.codacy) or through the [Extensions view](https://code.visualstudio.com/docs/editor/extension-marketplace#_browse-for-extensions) in Visual Studio Code. Alternatively, you can [download the latest release as a VSIX package](https://github.com/codacy/codacy-vscode-extension/releases) and install it manually.
 
-## Fetching pull request quality and coverage data from Codacy
+## Getting pull request quality and coverage data from Codacy
 
 <!-- TODO DOCS-596 add intro -->
 
@@ -45,13 +45,9 @@ You can install the extension from the [Visual Studio Marketplace](https://marke
 1.  Check out the relevant branch.
 
     !!! note
-        The branch must match an open pull request analyzed by Codacy.
+        The branch must be associated with an open pull request analyzed by Codacy.
 
-After completing these steps, Codacy displays a summary of all found problems for the pull request in the main view and in VS Code's Problems tab.
-
-## Reviewing found problems
-
-To review a summary of all found problems for the pull request, open the main view by clicking the **Codacy logo** in the status bar or the **Codacy tab** in the activity bar.
+After completing these steps, Codacy displays a summary of all problems for the pull request in the main view and in VS Code's Problems tab.
 
 ![Codacy main view](images/codacy-vscode-extension-main-view.png)
 
@@ -77,15 +73,18 @@ The main view displays the following:
 
 -   Variations in **code complexity**.
 
-## Navigating to found problems
+## Reviewing pull request issues
 
-To navigate to a found problem:
+In the Problems tab, Codacy displays the same issues you find in the main view, but lets you navigate to the exact line of code where the issue was found.
+
+!!! note
+    Line-based navigation is currently only available for Quality issues. Coverage, clones, and complexity aren't currently shown in the Problems tab.
+
+To review the issues:
 
 1.  Open the **Problems tab** (use `Ctrl+Shift+M` on Windows/Linux or `Cmd+Shift+M` on macOS)
 
 1.  Click the name of the issue you wish to review.
-
-    Line-based navigation is currently only supported for Quality issues.
 
     ![Navigate to a specific issue from the Problems tab](images/codacy-vscode-extension-problems-tab.png)
 
@@ -95,9 +94,9 @@ To navigate to a found problem:
 
 ## Refreshing pull request data
 
-The Codacy extension refreshes the pull request data every time you push new changes to the Git provider, after the analysis is complete. The analysis usually takes less than 5 minutes.
+To refresh the pull request data, push your changes to the Git provider after you're done addressing the issues, so that Codacy analyzes the new code. The Codacy extension then refreshes the pull request data after the analysis is complete. The analysis usually takes less than 5 minutes.
 
-To refresh the pull request data manually, click the Refresh Pull Request button in the main view.
+Alternatively, to refresh the pull request data manually, click the Refresh Pull Request button in the main view.
 
 ## Troubleshooting
 
