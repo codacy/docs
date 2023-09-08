@@ -80,6 +80,7 @@ Staticcheck
 Stylelint
 SwiftLint
 Tailor
+Trivy
 tooltip
 TSLint
 TSQLLint
