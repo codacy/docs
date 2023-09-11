@@ -16,9 +16,9 @@ To install the Slack integration:
 
 1.  **On Codacy**:
 
-    1. Open your organization **Integrations**, page **Slack**.
+    1.  Open your organization **Integrations**, page **Slack**.
 
-    1. Paste the Incoming Webhook URL in the field and click **Install Slack**.
+    1.  Paste the Incoming Webhook URL in the field and click **Install Slack**.
 
     ![Slack integration installation](images/slack-integration-install.png)
 
