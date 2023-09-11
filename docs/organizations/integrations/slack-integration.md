@@ -1,6 +1,6 @@
 # Organization Slack integration for Security issues
 
-The organization Slack integration for Security issues sends notifications to a Slack channel of your choice whenever Codacy detects new critical Security issues in any repository within your organization.
+The organization Slack integration for Security issues sends notifications to a Slack channel of your choice whenever Codacy detects new critical Security issues in the default branch of any repository in your organization.
 
 ## Installing the Slack integration
 
