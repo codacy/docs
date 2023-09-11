@@ -661,6 +661,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2023:
+                      - release-notes/cloud/cloud-2023-08.md
                       - release-notes/cloud/cloud-2023-07.md
                       - release-notes/cloud/cloud-2023-06.md
                       - release-notes/cloud/cloud-2023-05.md
