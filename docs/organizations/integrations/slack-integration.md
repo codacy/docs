@@ -6,9 +6,9 @@ The organization Slack integration for Security issues sends notifications to a 
 
 To install the Slack integration:
 
-1.  Follow the [instructions on the Slack documentation pages](https://api.slack.com/messaging/webhooks) to add an Incoming Webhook to a Slack application and set it to post to a channel of your choice.
+1.  Follow the [instructions on the Slack documentation pages](https://api.slack.com/messaging/webhooks) to create an Incoming Webhook and set it to post to a channel of your choice.
 
-1.  On Slack, open the [Your Apps](https://api.slack.com/apps) page, select the relevant application, navigate to the **Incoming Webhooks** page, and copy the Incoming Webhook URL (it starts with `https://hooks.slack.com/services/`).
+1.  On Slack, from the page [Your Apps](https://api.slack.com/apps), select the application linked to the webhook, page **Incoming Webhooks**, and copy the URL of the Incoming Webhook you've just created (it starts with `https://hooks.slack.com/services/`).
 
 1.  On Codacy, open your organization **Integrations**, page **Slack**, paste the Incoming Webhook URL in the field, and click **Install Slack**.
 
