@@ -11,7 +11,7 @@
         <meta name="description" content="People signing up to the Codacy app and joining an organization become members of that organization. Members of a Codacy organization can see the dashboards and details of the organization repositories. Depending on their permissions on the Git provider, members can also manage the organization and repository settings on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2023-08-17 09:49:04">
+        <meta http-equiv="last-modified" content="2023-09-11 09:14:19">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-people/">
@@ -3897,12 +3897,18 @@
 <li>
 <p>Committers who aren't part of your Git provider organization can't join your organization on Codacy app, but you should still add them to your Codacy organization to analyze their commits to private repositories.</p>
 </li>
-<li>
-<p>In some Enterprise plans, Codacy automatically adds to the organization new people that commit to your private repositories and analyzes their commits. Also, Codacy updates your seats automatically when adding these new committers.</p>
-</li>
 </ul>
 </div>
-<p>To list and manage the people in your organization, open your organization <strong>Settings</strong>, page <strong>People</strong>. This page also shows their last activity on Codacy:</p>
+<p>To list and manage the people in your organization, open your organization <strong>Settings</strong>, page <strong>People</strong>. This page also shows their last activity on Codacy.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In some Enterprise plans, Codacy automatically manages people activity and seat usage for your organization:</p>
+<ul>
+<li>Adds new people who commit to your private repositories and analyzes their commits.</li>
+<li>Deactivates people who perform no commit or login for 90 consecutive days.</li>
+<li>Updates your organization seats accordingly when adding or deactivating people. Inactive people don't occupy a seat in your organization.</li>
+</ul>
+</div>
 <p><img alt="People in an organization" src="../images/organization-people.png" /></p>
 <h2 id="joining">Joining an organization<a class="headerlink" href="#joining" title="Permanent link">#</a></h2>
 <p>To become a member of an organization on Codacy app you must <a href="../../getting-started/codacy-quickstart/">sign up to Codacy</a> using your Git provider and follow the instructions to either join an existing organization or add a new one.</p>
@@ -3918,14 +3924,14 @@
 <p class="admonition-title">Tip</p>
 <p>You can also use the Codacy API to <a href="../../codacy-api/examples/adding-people-to-codacy-programmatically/">add people to your Codacy organization</a>. This is useful while adding a large amount of people or to automatically add new members of your Git provider organization to Codacy.</p>
 </div>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>For Enterprise plans where Codacy automatically adds new committers to your organization, you can invite them to join the organization on the Codacy app.</p>
-</div>
 <p>To add people to your organization:</p>
 <ol>
 <li>
 <p>Open your organization <strong>Settings</strong>, page <strong>People</strong>, and click the button <strong>Add people</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For Enterprise plans where Codacy automatically adds new committers to your organization, you can invite them to join the organization on the Codacy app by clicking the <strong>Invite people</strong> button.</p>
+</div>
 <p><img alt="Adding people to your organization" src="../images/organization-people-add-button.png" /></p>
 </li>
 <li>
@@ -3956,12 +3962,12 @@
 <li><strong>On GitLab and Bitbucket organizations</strong> Codacy stops analyzing repositories that were added by the member</li>
 <li>Organizations must have at least one admin, so when the last organization admin leaves the organization they must either add someone else as admin or <a href="../what-are-organizations/#deleting-an-organization">delete the organization</a></li>
 </ul>
-<p>To remove people from your organization open your organization <strong>Settings</strong>, page <strong>People</strong>, click the icon next to the member or committer you wish to remove, and select <strong>Remove from organization</strong>:</p>
-<p><img alt="Removing people from your organization" src="../images/organization-people-remove.png" /></p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>For Enterprise plans where Codacy automatically adds new committers to the organization, people that you remove from your organization will be added again if they keep committing.</p>
+<p>To remove people from your organization open your organization <strong>Settings</strong>, page <strong>People</strong>, click the icon next to the member or committer you wish to remove, and select <strong>Remove from organization</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For Enterprise plans where Codacy automatically manages people activity for your organization, you can only remove inactive people who performed no activity for 90 consecutive days.</p>
 </div>
+<p><img alt="Removing people from your organization" src="../images/organization-people-remove.png" /></p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../codacy-api/examples/adding-people-to-codacy-programmatically/">Adding people to Codacy programmatically</a></li>
@@ -4123,7 +4129,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 17, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 11, 2023</span>
     
   </small>
 </div>
