@@ -4,8 +4,6 @@ description: List of operations that users can perform on Codacy depending on th
 
 # Roles and permissions for organizations
 
-<!--TODO PLUTO-505 Add permissions to manage gate policies-->
-
 Your team members have different permission levels on Codacy depending on their role on your Git provider. To change the permission level of a user on Codacy, you must adjust their role directly on your Git provider so that Codacy will use the corresponding permission level on the next time that the user logs in to Codacy.
 
 See the Codacy permission levels that correspond to each role on your Git provider:

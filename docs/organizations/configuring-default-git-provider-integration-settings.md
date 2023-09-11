@@ -2,7 +2,7 @@
 
 You can configure the default settings that Codacy uses to integrate with your Git provider when you add a new repository to Codacy. This enables you to apply the same settings across your organization repositories.
 
-To configure these default settings, go to the Git provider integration page for your organization on the left navigation sidebar.
+To configure these default settings, open your organization **Integrations** page and select your Git provider.
 
 ![Default Git provider integration settings](images/default-git-provider-settings.png)
 

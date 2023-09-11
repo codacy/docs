@@ -551,6 +551,7 @@ nav:
           - getting-started/codacy-quickstart.md
           - getting-started/configuring-your-repository.md
           - getting-started/integrating-codacy-with-your-git-workflow.md
+          - getting-started/integrating-codacy-with-visual-studio-code.md
           - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
           - getting-started/adding-a-codacy-badge.md
@@ -658,6 +659,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2023:
+                      - release-notes/cloud/cloud-2023-08.md
                       - release-notes/cloud/cloud-2023-07.md
                       - release-notes/cloud/cloud-2023-06.md
                       - release-notes/cloud/cloud-2023-05.md
