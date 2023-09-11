@@ -11,11 +11,11 @@ jobs:
     name: Detect deleted files
     steps:
       - name: Checkout
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Get changed docs md files
         id: changed-files
-        uses: tj-actions/changed-files@v38
+        uses: tj-actions/changed-files@v39
         with:
           files: docs/**/*.md
 
