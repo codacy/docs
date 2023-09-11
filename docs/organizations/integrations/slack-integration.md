@@ -14,6 +14,8 @@ To install the Slack integration:
 
     ![Slack integration installation](images/slack-integration-install.png)
 
+Once the Slack integration is installed, Codacy sends a confirmation message to the Slack channel you configured when creating the Incoming Webhook.
+
 ## Uninstalling the Slack integration
 
 To uninstall the Slack integration, open your organization **Integrations**, page **Slack**, then click **Uninstall Slack** and confirm.
