@@ -6,7 +6,7 @@ The organization Slack integration for Security issues sends notifications to a 
 
 To install the Slack integration:
 
-1. **On Slack**:
+1.  **On Slack**:
 
     1.  [Create an Incoming Webhook](https://api.slack.com/messaging/webhooks) and set it to post to a channel of your choice.
 
