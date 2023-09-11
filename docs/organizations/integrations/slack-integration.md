@@ -14,7 +14,7 @@ To install the Slack integration:
 
     ![Slack integration installation](images/slack-integration-install.png)
 
-Once the Slack integration is installed, Codacy sends a confirmation message to the Slack channel you configured when creating the Incoming Webhook. From there on, Codacy notifies you on the same channel whenever a new critical Security issue is detected in any repository within your organization.
+Once the Slack integration is installed, Codacy sends a confirmation message to the Slack channel you configured when creating the Incoming Webhook. From there on, Codacy notifies you on the same channel whenever a new critical Security issue is detected in the default branch of any repository in your organization.
 
 ![Slack integration message](images/slack-integration-message.png)
 
