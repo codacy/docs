@@ -472,6 +472,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
 
 ## Tool configuration files
 
+<!-- TODO DOCS-341 Consider removing supported languages for entries with no tool configuration file -->
+
 To adapt the Codacy analysis settings to your scenario, you can configure the tools and code patterns used to analyze your repositories, either in the Codacy UI or by using configuration files. The table below lists the configuration files that Codacy detects and supports for each tool.
 
 See [how to use tool configuration files](../repositories-configure/configuring-code-patterns.md#using-your-own-tool-configuration-files).
@@ -761,6 +763,13 @@ See [how to use tool configuration files](../repositories-configure/configuring-
     <td>Tailor</td>
     <td>Swift</td>
     <td><code>.tailor.yml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Trivy</td>
+    <td>AWS Cloudformation, C, C++, C#, Dart, Dockerfile, Elixir, Go, Helm, Java, Javascript, JSON,
+        Kubernetes, PHP, Python, Ruby, Rust, Terraform, TypeScript, YAML</td>
+    <td>-</td>
     <td></td>
   </tr>
   <tr>
