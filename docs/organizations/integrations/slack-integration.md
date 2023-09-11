@@ -6,9 +6,11 @@ This integration sends notifications to a Slack channel of your choice whenever 
 
 To install the Slack integration:
 
-1.  [Add a Slack Incoming Webhook](https://api.slack.com/messaging/webhooks) to your Slack workspace.
+1. Follow the [instructions on the Slack documentation pages](https://api.slack.com/messaging/webhooks) to add an Incoming Webhook to your Slack workspace and set it to post to a channel of your choice, and then copy the webhook URL.
 
-1.  Open your organization **Integrations**, page **Slack**, paste the incoming webhook in the field and click **Install Slack**.
+    The Incoming Webhook URL starts with `https://hooks.slack.com/services/`.
+
+1.  Open your organization **Integrations**, page **Slack**, paste the Incoming Webhook URL in the field, and click **Install Slack**.
 
     ![Slack integration installation](images/slack-integration-install.png)
 
