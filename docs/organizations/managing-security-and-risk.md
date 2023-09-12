@@ -1,9 +1,11 @@
 # Managing security and risk
 
+<!-- TODO TAROT-2285: Review page for accuracy and flow -->
+
 !!! info "This is a preview feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
-The security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira Cloud instance.
+The security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira instance.
 
 Under security and risk management, you can find the following pages to help you monitor your security issues:
 
@@ -59,11 +61,9 @@ To export a list of items as a CSV file, access the [dashboard](#dashboard) or t
 !!! note
     The exported list always includes all items, ignoring any applied filters.
 
-## Managing integrations
+## Integrating with Jira {: id="managing-integrations"}
 
-<!-- TODO TAROT-2285 update and link to: [Configuring the Jira integration](./jira-integration.md) -->
-
-Integrations let you detect security issues across a number of platforms and display them all as items on the unified item list.
+Integrate Jira with Security and risk management to import all Jira issues labeled as **security** and manage them in one place. For integration instructions, see [Jira integration for Security and risk management](./integrations/jira-integration.md).
 
 ## Managing access to security and risk management
 
@@ -104,7 +104,7 @@ To revoke the Security Manager role:
 !!! important
     To open and close items, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.
 
-Codacy opens an item whenever one of the configured source platforms detects a security issue. The new item is assigned a severity and a status:
+Codacy opens an item whenever a source platform detects a security issue. The new item is assigned a severity and a status:
 
 -   The importance of the security issue defines the [severity of the item](#item-severities-and-deadlines). In turn, the item's severity defines a deadline to fix the associated issue.
 -   The time to the deadline sets the [status of the item](#item-statuses). The item then transitions through different statuses as the deadline is approached, met, or missed.
@@ -130,9 +130,7 @@ Codacy closes an item in either of the following cases:
     -   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
     -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
 
-### Opening and closing Jira Cloud items
-
-<!-- TODO TAROT-2285 Decide whether to move this section to the Jira integration page -->
+### Opening and closing Jira items
 
 Codacy opens a new item when it detects a new Jira issue with a "security" label.
 
@@ -144,8 +142,6 @@ Codacy closes an item when it detects that the associated Jira issue is marked a
     -   To make sure that Codacy detects Jira issues correctly, assign the "security" label when creating the issue or immediately after.
 
 ## Item statuses
-
-<!-- TODO TAROT-2285 Decide whether to move this section to the Jira integration page -->
 
 The following table describes how item statuses map to deadlines:
 
@@ -185,8 +181,6 @@ The following table describes how item statuses map to deadlines:
 
 ## Item severities and deadlines
 
-<!-- TODO TAROT-2285 Decide whether to split this table to the Jira integration page -->
-
 The following table defines item severities and days to fix the associated security issue, based on the importance of the underlying issue:
 
 | Item<br/>severity | <br/>Days to fix | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority |
@@ -198,19 +192,7 @@ The following table defines item severities and days to fix the associated secur
 
 ## Data retention
 
-<!-- TODO TAROT-2285 Decide whether to split this table to the Jira integration page -->
-
-Except for the situations described below, Codacy retains all items indefinitely.
-
-### Data retention for Codacy items
-
 Deleting a repository deletes all open items belonging to that repository.
-
-### Data retention for Jira Cloud items
-
-Uninstalling the Jira Cloud integration using the security and risk management configuration page deletes all associated open items.
-    
-Uninstalling the Jira Cloud integration using the Jira website doesn't delete any associated items. However, it prevents Codacy from opening new Jira-related items.
 
 ## See also
 
