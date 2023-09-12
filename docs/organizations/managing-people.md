@@ -9,9 +9,14 @@ For **private repositories**, Codacy only analyzes commits from people in your C
 
     -   Committers who aren't part of your Git provider organization can't join your organization on Codacy app, but you should still add them to your Codacy organization to analyze their commits to private repositories.
 
-    -   In some Enterprise plans, Codacy automatically adds to the organization new people that commit to your private repositories and analyzes their commits. Also, Codacy updates your seats automatically when adding these new committers.
+To list and manage the people in your organization, open your organization **Settings**, page **People**. This page also shows their last activity on Codacy.
 
-To list and manage the people in your organization, open your organization **Settings**, page **People**. This page also shows their last activity on Codacy:
+!!! note
+    In some Enterprise plans, Codacy automatically manages people activity and seat usage for your organization:
+
+    -   Adds new people who commit to your private repositories and analyzes their commits.
+    -   Deactivates people who perform no commit or login for 90 consecutive days.
+    -   Updates your organization seats accordingly when adding or deactivating people. Inactive people don't occupy a seat in your organization.
 
 ![People in an organization](images/organization-people.png)
 
@@ -33,12 +38,12 @@ To join or add an organization after completing the sign-up process, click **Org
 !!! tip
     You can also use the Codacy API to [add people to your Codacy organization](../codacy-api/examples/adding-people-to-codacy-programmatically.md). This is useful while adding a large amount of people or to automatically add new members of your Git provider organization to Codacy.
 
-!!! note
-    For Enterprise plans where Codacy automatically adds new committers to your organization, you can invite them to join the organization on the Codacy app.
-
 To add people to your organization:
 
 1.  Open your organization **Settings**, page **People**, and click the button **Add people**.
+
+    !!! note
+        For Enterprise plans where Codacy automatically adds new committers to your organization, you can invite them to join the organization on the Codacy app by clicking the **Invite people** button.
 
     ![Adding people to your organization](images/organization-people-add-button.png)
 
@@ -65,12 +70,12 @@ When a member or committer leaves an organization:
 -   **On GitLab and Bitbucket organizations** Codacy stops analyzing repositories that were added by the member
 -   Organizations must have at least one admin, so when the last organization admin leaves the organization they must either add someone else as admin or [delete the organization](../organizations/what-are-organizations.md#deleting-an-organization)
 
-To remove people from your organization open your organization **Settings**, page **People**, click the icon next to the member or committer you wish to remove, and select **Remove from organization**:
+To remove people from your organization open your organization **Settings**, page **People**, click the icon next to the member or committer you wish to remove, and select **Remove from organization**.
+
+!!! note
+    For Enterprise plans where Codacy automatically manages people activity for your organization, you can only remove inactive people who performed no activity for 90 consecutive days.
 
 ![Removing people from your organization](images/organization-people-remove.png)
-
-!!! important
-    For Enterprise plans where Codacy automatically adds new committers to the organization, people that you remove from your organization will be added again if they keep committing.
 
 ## See also
 
