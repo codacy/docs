@@ -23,8 +23,8 @@ Upon installation, Codacy imports all open Jira issues that were created within 
 
 Items are then synchronized daily with the matching Jira issues throughout their lifecycle. For more information, see:
 
-- [When Codacy opens and closes security items](../managing-security-and-risk.md#opening-and-closing-items)
-- [How Codacy assigns security item severities](../managing-security-and-risk.md#item-severities-and-deadlines) based on the Jira issue priority.
+-   [When Codacy opens and closes security items](../managing-security-and-risk.md#opening-and-closing-items)
+-   [How Codacy assigns security item severities](../managing-security-and-risk.md#item-severities-and-deadlines) based on the Jira issue priority.
 
 ## Uninstalling the Jira integration
 
