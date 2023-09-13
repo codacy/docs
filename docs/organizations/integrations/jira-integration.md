@@ -7,21 +7,21 @@ Integrate Jira with [Security and risk management](../managing-security-and-risk
 ## Installing the Jira integration
 
 !!! note
-    -   Before installing the Jira integration, make sure to tag the Jira issues you wish to import with the label **security** (case-insensitive).
+    -   Before you install the Jira integration, tag the Jira issues you wish to import with the label **security** (case-insensitive).
 
-    -   Use a Jira account with admin permissions when installing this integration. This lets Codacy access all issues, since the integration inherits the permissions of the authorizing account.
+    -   Use an admin Jira account when you install this integration. This lets Codacy improt all issues, since the integration has the same permissions as the authorizing account.
 
 To install the Jira integration:
 
-1.  Open your organization **Integrations**, page **Jira**, and click **Install Jira** to proceed to Atlassian's website.
+1.  Open your organization **Integrations**, page **Jira**, and click **Install Jira**. This redirects you to Atlassian's website.
 
     ![Security and risk management Jira integration installation](images/jira-integration-srm-install.png)
 
-1.  On Atlassian's website, authorize Codacy to access your Atlassian account. Once successful, you're redirected back to Codacy.
+1.  On Atlassian's website, authorize Codacy. You're then redirected back to Codacy.
 
-Upon installation, Codacy imports all open Jira issues that were created within the 90-day period preceding the integration.
+After installing, Codacy imports all open Jira issues created up to 90 days before integration.
 
-For more information on how the integration works, see [how Codacy manages security items](../managing-security-and-risk.md#opening-and-closing-items) and [how Codacy assigns security item severities](../managing-security-and-risk.md#item-severities-and-deadlines).
+To learn more about how the integration works, see [how Codacy manages security items](../managing-security-and-risk.md#opening-and-closing-items) and [how Codacy assigns security item severities](../managing-security-and-risk.md#item-severities-and-deadlines).
 
 ## Uninstalling the Jira integration
 
