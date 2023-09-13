@@ -21,7 +21,7 @@ To install the Jira integration:
 
 Upon installation, Codacy imports all open Jira issues that were created within the 90-day period preceding the integration.
 
-For more information on how the integration works, see [when Codacy opens and closes security items](../managing-security-and-risk.md#opening-and-closing-items) and [how Codacy assigns security item severities](../managing-security-and-risk.md#item-severities-and-deadlines).
+For more information on how the integration works, see [how Codacy manages security items](../managing-security-and-risk.md#opening-and-closing-items) and [how Codacy assigns security item severities](../managing-security-and-risk.md#item-severities-and-deadlines).
 
 ## Uninstalling the Jira integration
 
