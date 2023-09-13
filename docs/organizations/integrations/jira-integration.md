@@ -4,18 +4,18 @@
 
 Integrate Jira with [Security and risk management](../managing-security-and-risk.md) to import your Jira issues and manage them all in one place as security items.
 
-## Installing the Jira integration
+## Installing Jira
 
 !!! note
-    -   Before you install the Jira integration, tag the Jira issues you wish to import with the label **security** (case-insensitive).
+    -   Before you install Jira, tag the Jira issues you wish to import with the label **security** (case-insensitive).
 
     -   Use an admin Jira account when you install this integration. This lets Codacy improt all issues, since the integration has the same permissions as the authorizing account.
 
-To install the Jira integration:
+To install Jira:
 
 1.  Open your organization **Integrations**, page **Jira**, and click **Install Jira**. This redirects you to Atlassian's website.
 
-    ![Security and risk management Jira integration installation](images/jira-integration-srm-install.png)
+    ![Security and risk management Jira installation](images/jira-integration-srm-install.png)
 
 1.  On Atlassian's website, authorize Codacy. You're then redirected back to Codacy.
 
@@ -23,14 +23,14 @@ After installing, Codacy imports all open Jira issues created up to 90 days befo
 
 To learn more about how the integration works, see [how Codacy manages security items](../managing-security-and-risk.md#opening-and-closing-items) and [how Codacy assigns security item severities](../managing-security-and-risk.md#item-severities-and-deadlines).
 
-## Uninstalling the Jira integration
+## Uninstalling Jira
 
-To uninstall the Jira integration, open your organization **Integrations**, page **Jira**, then click **Uninstall Jira** and confirm.
+To uninstall Jira, open your organization **Integrations**, page **Jira**, then click **Uninstall Jira** and confirm.
 
 !!! important
-    - Uninstalling the Jira integration with the procedure described above deletes all associated open items.
+    -   If you uninstall Jira as described above, Codacy deletes all Jira-related open items.
 
-    - Uninstalling the Jira integration through the Jira website doesn't delete any associated items. However, it prevents Codacy from opening new Jira-related items.
+    -   If you uninstall Jira through the Jira website, Codacy doesn't delete any Jira items, but it won't be able to open new Jira items either.
 
 ## See also
 
