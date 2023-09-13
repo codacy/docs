@@ -19,9 +19,9 @@ To install the Jira integration:
 
 1.  On Atlassian's website, authorize Codacy to access your Atlassian account. Once successful, you're redirected back to Codacy.
 
-Upon installation, Codacy imports all open Jira issues that were created within the 90-day period preceding the integration and labeled as **security** (case-insensitive) and displays them on the item list, along with items from other sources.
+Upon installation, Codacy imports all open Jira issues that were created within the 90-day period preceding the integration.
 
-Items are then synchronized daily with the matching Jira issues throughout their lifecycle. For more information, see [when Codacy opens and closes security items](../managing-security-and-risk.md#opening-and-closing-items) and [how Codacy assigns security item severities](../managing-security-and-risk.md#item-severities-and-deadlines).
+For more information on how the integration works, see [when Codacy opens and closes security items](../managing-security-and-risk.md#opening-and-closing-items) and [how Codacy assigns security item severities](../managing-security-and-risk.md#item-severities-and-deadlines).
 
 ## Uninstalling the Jira integration
 

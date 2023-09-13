@@ -27,10 +27,10 @@ The main area of the dashboard includes five panels:
 
 Each panel shows the total count of matching items and contains a **Review** button to view a list of matching items.
 
-When viewing the dashboard:
+When viewing the dashboard, you can:
 
--   To limit the total counts in each panel to a specific set of severities or repositories, click the **Severity** or **Repository** drop-downs above the main area.
--   To export a list of items as a CSV file, click the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
+-   Limit the total counts in each panel to a specific set of severities or repositories by clicking the **Severity** or **Repository** drop-downs above the main area.
+-   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
 
 ![Security and risk management dashboard](images/security-risk-management-dashboard.png)
 
@@ -40,11 +40,11 @@ The **Security and risk management items** page displays a filtered list of item
 
 To access the item list, access the [dashboard](#dashboard) and click the **Review** button in the area of interest, based on the desired filtering.
 
-When viewing the item list:
+When viewing the item list, you can:
 
--   To update the filtering criteria, click the **Severity**, **Status**, or **Repository** drop-downs above the list.
--   To find out more about an item, click its **Details** column to navigate to the item of interest on the source platform.
--   To export a list of items as a CSV file, click the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
+-   Update the filtering criteria by clicking the **Severity**, **Status**, or **Repository** drop-downs above the list.
+-   Find out more about an item by clicking its **Details** column to navigate to the item of interest on the source platform.
+-   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
 
 ![Security and risk management items](images/security-risk-management-item-list.png)
 
@@ -70,7 +70,14 @@ Codacy closes an item when the source platform stops detecting the associated se
 
 The following section details when Codacy opens and closes items for each supported platform.
 
-### Opening and closing items detected on Codacy repositories {: id="opening-and-closing-codacy-items"}
+### How Codacy manages items detected on Git repositories {: id="opening-and-closing-codacy-items"}
+
+!!! note
+    To make sure that Codacy detects security issues correctly:
+
+    -   [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.
+    -   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
+    -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
 
 Codacy opens a new item when it detects a new security issue on the default branch of a repository.
 
@@ -80,26 +87,19 @@ Codacy closes an item in either of the following cases:
 -   You [ignore the associated issue](../repositories/issues.md#ignoring-and-managing-issues)
 -   You [disable the tool](../repositories-configure/configuring-code-patterns.md) that found the associated issue
 
-!!! note
-    To make sure that Codacy detects security issues correctly:
-
-    -   [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.
-    -   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
-    -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
-
 !!! important
     Deleting a repository deletes all open items belonging to that repository.
 
-### Opening and closing items detected on Jira {: id="opening-and-closing-jira-items"}
+### How Codacy manages items detected on Jira {: id="opening-and-closing-jira-items"}
+
+!!! note
+    -   For Codacy to detect Jira issues, you must [integrate Jira with Security and risk management](./integrations/jira-integration.md).
+    -   Codacy retrieves updates from Jira once a day. If an issue is opened and closed on the same day, Codacy may not detect it.
+    -   To make sure that Codacy detects Jira issues correctly, assign the **security** label when creating the issue or immediately after.
 
 Codacy opens a new item when it detects a new Jira issue with a **security** label (case-insensitive).
 
 Codacy closes an item when it detects that the associated Jira issue is marked as Closed.
-
-!!! note
-    -   Codacy retrieves updates from Jira once a day.
-    -   If an issue is opened and closed on the same day, Codacy may not detect it.
-    -   To make sure that Codacy detects Jira issues correctly, assign the **security** label when creating the issue or immediately after.
 
 ## Managing access to Security and risk management
 
@@ -134,10 +134,6 @@ To revoke the Security Manager role:
 1.  In the **Security managers** area, scroll the list to find the relevant user.
 
 1.  Click the **Revoke role icon** to the right of the user's name and confirm.
-
-## Integrating with Jira {: id="managing-integrations"}
-
-Integrate Jira with Security and risk management to import all Jira issues labeled as **security** and manage them in one place. For integration instructions, see [Jira integration for Security and risk management](./integrations/jira-integration.md).
 
 ## Item statuses
 
