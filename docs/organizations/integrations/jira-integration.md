@@ -1,4 +1,4 @@
-# Jira integration for Security and risk management
+# Organization Jira integration for Security and risk management
 
 Integrate Jira with [Security and risk management dashboard](../managing-security-and-risk.md) to import all Jira issues labeled as **security** and manage them in one place.
 
