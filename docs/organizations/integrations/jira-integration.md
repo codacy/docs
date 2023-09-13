@@ -2,7 +2,7 @@
 
 !!! info "This integration is only available for Jira Cloud"
 
-Integrate Jira with [Security and risk management](../managing-security-and-risk.md) to import all Jira issues labeled as **security** and manage them all in one place as security items.
+Integrate Jira with [Security and risk management](../managing-security-and-risk.md) to import your Jira issues and manage them all in one place as security items.
 
 ## Installing the Jira integration
 
