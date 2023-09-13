@@ -82,6 +82,7 @@ https://docs.codacy.com/organizations/roles-and-permissions-for-organizations/,"
 https://docs.codacy.com/organizations/using-coding-standards/,"Coding standards help you ensure that Codacy analyzes multiple repositories with the same tool and code pattern configurations. For example, you can use a coding standard to ensure that a group of repositories follow the same security rules or coding conventions."
 https://docs.codacy.com/organizations/using-gate-policies/,Gate policies help you ensure that Codacy uses the same quality gates across your organization repositories.
 https://docs.codacy.com/organizations/what-are-organizations/,"Codacy organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that don't belong to a Git provider organization), and team members into Codacy with a few clicks."
+https://docs.codacy.com/organizations/integrations/slack-integration/,The organization Slack integration for Security issues sends notifications to a Slack channel of your choice whenever Codacy detects new critical Security issues in the default branch of any repository in your organization.
 https://docs.codacy.com/release-notes/,Index of release notes for Codacy Cloud and Codacy Self-hosted.
 https://docs.codacy.com/release-notes/cloud/cloud-2018-07-23/,"Release notes for Codacy Cloud July 23, 2018."
 https://docs.codacy.com/release-notes/cloud/cloud-2018-10-19/,"Release notes for Codacy Cloud October 19, 2018."
