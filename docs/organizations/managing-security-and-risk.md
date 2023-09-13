@@ -1,13 +1,11 @@
 # Managing security and risk
 
-<!-- TODO TAROT-2285: Review page for accuracy and flow -->
-
 !!! info "This is a preview feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
-The security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira instance.
+The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your [connected Jira instance](./integrations/jira-integration.md).
 
-Under security and risk management, you can find the following pages to help you monitor your security issues:
+Under Security and risk management, you can find the following pages to help you monitor your security issues:
 
 -   [Dashboard](#dashboard)
 -   [Item list](#item-list)
@@ -29,9 +27,12 @@ The main area of the dashboard includes five panels:
 
 Each panel shows the total count of matching items and contains a **Review** button to view a list of matching items.
 
-To limit the total counts in each panel to a specific set of severities or repositories, click the **Severity** or **Repository** drop-downs above the main area.
+When viewing the dashboard:
 
-![security and risk management dashboard](images/security-risk-management-dashboard.png)
+-   To limit the total counts in each panel to a specific set of severities or repositories, click the **Severity** or **Repository** drop-downs above the main area.
+-   To export a list of items as a CSV file, click the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
+
+![Security and risk management dashboard](images/security-risk-management-dashboard.png)
 
 ## Item list
 
@@ -43,77 +44,33 @@ When viewing the item list:
 
 -   To update the filtering criteria, click the **Severity**, **Status**, or **Repository** drop-downs above the list.
 -   To find out more about an item, click its **Details** column to navigate to the item of interest on the source platform.
+-   To export a list of items as a CSV file, click the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
 
 ![Security and risk management items](images/security-risk-management-item-list.png)
 
 ## Configuration page
 
-The **Security and risk management configuration** page lets you [manage integrations](#managing-integrations) to fetch security vulnerability information from third-party platforms, as well as [assign or revoke the Security Manager role](#managing-access-to-security-and-risk-management) for organization members.
+The **Security and risk management configuration** page lets you [assign or revoke the Security Manager role](#managing-access-to-security-and-risk-management) for organization members and review the [severity assignment rules](#item-severities-and-deadlines).
 
 To access the configuration page, access the [dashboard](#dashboard) or the [item list](#item-list) and click the **Configure** button in the top right-hand corner of the page.
 
 ![Security and risk management configuration](images/security-risk-management-configuration.png)
 
-## Exporting items
-
-To export a list of items as a CSV file, access the [dashboard](#dashboard) or the [item list](#item-list) and click the **Export CSV** button in the top right-hand corner of the page.
-
-!!! note
-    The exported list always includes all items, ignoring any applied filters.
-
-## Integrating with Jira {: id="managing-integrations"}
-
-Integrate Jira with Security and risk management to import all Jira issues labeled as **security** and manage them in one place. For integration instructions, see [Jira integration for Security and risk management](./integrations/jira-integration.md).
-
-## Managing access to security and risk management
-
-To better track and address security issues, organization admins can extend access to security and risk management by assigning the Security Manager role to organization members.
-
-The Security Manager role is independent of the Git provider role of an organization member and provides only the permissions necessary to monitor security issues, following the principle of least privilege:
-
-| Permission                                                  | Organization Admin | Security Manager           |
-|-------------------------------------------------------------|--------------------|----------------------------|
-| Access security and risk management                         | Yes                | Yes                        |
-| Access associated issues (Codacy repositories, Jira issues) | Platform-dependent | Keeps original permissions |
-| Manage integrations                                         | Yes                | Yes                        |
-| Assign and revoke the Security Manager role                 | Yes                | No                         |
-| All other Organization Admin permissions                    | Yes                | No                         |
-
-### Assigning the Security Manager role
-
-To assign the Security Manager role:
-
-1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
-
-1.  In the **Security managers** area, use the search field to find the relevant user and click the user's name.
-
-    ![security and risk management access management](images/security-risk-management-access-management.png)
-
-### Revoking the Security Manager role
-
-To revoke the Security Manager role:
-
-1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
-
-1.  In the **Security managers** area, scroll the list to find the relevant user.
-
-1.  Click the **Revoke role icon** to the right of the user's name and confirm.
-
-## Opening and closing items
+## How Codacy manages security items {: id="opening-and-closing-items"}
 
 !!! important
-    To open and close items, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.
+    To open and close security items, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.
 
-Codacy opens an item whenever a source platform detects a security issue. The new item is assigned a severity and a status:
+Codacy opens a new security item whenever a source platform detects a new security issue. The new item is automatically assigned a severity and a status:
 
--   The importance of the security issue defines the [severity of the item](#item-severities-and-deadlines). In turn, the item's severity defines a deadline to fix the associated issue.
--   The time to the deadline sets the [status of the item](#item-statuses). The item then transitions through different statuses as the deadline is approached, met, or missed.
+-   The priority of the issue on the source platform sets the [severity of the item](#item-severities-and-deadlines). In turn, the severity of the item defines a deadline to close the item.
+-   The time to the deadline sets the [status of the item](#item-statuses). The item then moves through different statuses as the deadline is approached, met, or missed.
 
-Codacy closes an existing item when the source platform stops detecting the associated security issue.
+Codacy closes an item when the source platform stops detecting the associated security issue.
 
 The following section details when Codacy opens and closes items for each supported platform.
 
-### Opening and closing Codacy items
+### Opening and closing items detected on Codacy repositories {: id="opening-and-closing-codacy-items"}
 
 Codacy opens a new item when it detects a new security issue on the default branch of a repository.
 
@@ -130,16 +87,57 @@ Codacy closes an item in either of the following cases:
     -   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
     -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
 
-### Opening and closing Jira items
+!!! important
+    Deleting a repository deletes all open items belonging to that repository.
 
-Codacy opens a new item when it detects a new Jira issue with a "security" label.
+### Opening and closing items detected on Jira {: id="opening-and-closing-jira-items"}
+
+Codacy opens a new item when it detects a new Jira issue with a **security** label (case-insensitive).
 
 Codacy closes an item when it detects that the associated Jira issue is marked as Closed.
 
 !!! note
     -   Codacy retrieves updates from Jira once a day.
     -   If an issue is opened and closed on the same day, Codacy may not detect it.
-    -   To make sure that Codacy detects Jira issues correctly, assign the "security" label when creating the issue or immediately after.
+    -   To make sure that Codacy detects Jira issues correctly, assign the **security** label when creating the issue or immediately after.
+
+## Managing access to Security and risk management
+
+To better track and address security issues, organization admins can extend access to Security and risk management by assigning the Security Manager role to organization members.
+
+The Security Manager role is independent of the Git provider role of an organization member and provides only the permissions necessary to monitor security issues, following the principle of least privilege:
+
+| Permission                                                  | Organization Admin | Security Manager           |
+|-------------------------------------------------------------|--------------------|----------------------------|
+| Access Security and risk management                         | Yes                | Yes                        |
+| Access associated issues (Codacy repositories, Jira issues) | Platform-dependent | Keeps original permissions |
+| Manage integrations                                         | Yes                | Yes                        |
+| Assign and revoke the Security Manager role                 | Yes                | No                         |
+| All other Organization Admin permissions                    | Yes                | No                         |
+
+### Assigning the Security Manager role
+
+To assign the Security Manager role:
+
+1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
+
+1.  In the **Security managers** area, use the search field to find the relevant user and click the user's name.
+
+    ![Security and risk management access management](images/security-risk-management-access-management.png)
+
+### Revoking the Security Manager role
+
+To revoke the Security Manager role:
+
+1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
+
+1.  In the **Security managers** area, scroll the list to find the relevant user.
+
+1.  Click the **Revoke role icon** to the right of the user's name and confirm.
+
+## Integrating with Jira {: id="managing-integrations"}
+
+Integrate Jira with Security and risk management to import all Jira issues labeled as **security** and manage them in one place. For integration instructions, see [Jira integration for Security and risk management](./integrations/jira-integration.md).
 
 ## Item statuses
 
@@ -190,10 +188,6 @@ The following table defines item severities and days to fix the associated secur
 | Medium            | 90               | Medium                               | Medium                             |
 | Low               | 120              | Minor                                | Low and other                      |
 
-## Data retention
-
-Deleting a repository deletes all open items belonging to that repository.
-
 ## See also
 
--   [Configuring the Jira integration for Security and risk management](integrations/jira-integration.md)
+-   [Security monitor](../repositories/security-monitor.md)

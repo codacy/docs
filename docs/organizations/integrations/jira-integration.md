@@ -27,7 +27,7 @@ Items are then synchronized daily with the matching Jira issues throughout their
 
 To uninstall the Jira integration, open your organization **Integrations**, page **Jira**, then click **Uninstall Jira** and confirm.
 
-!!! note
+!!! important
     - Uninstalling the Jira integration with the procedure described above deletes all associated open items.
 
     - Uninstalling the Jira integration through the Jira website doesn't delete any associated items. However, it prevents Codacy from opening new Jira-related items.
