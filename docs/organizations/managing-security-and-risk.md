@@ -111,7 +111,7 @@ The Security Manager role is independent of the Git provider role of an organiza
 |-------------------------------------------------------------|--------------------|----------------------------|
 | Access Security and risk management                         | Yes                | Yes                        |
 | Access associated issues (Codacy repositories, Jira issues) | Platform-dependent | Keeps original permissions |
-| Manage integrations                                         | Yes                | Yes                        |
+| Manage the Jira integration                                 | Yes                | Yes                        |
 | Assign and revoke the Security Manager role                 | Yes                | No                         |
 | All other Organization Admin permissions                    | Yes                | No                         |
 
