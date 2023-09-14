@@ -22,7 +22,7 @@ To install the Jira integration:
 
 1.  On Atlassian's website, authorize Codacy. Once successful, you're redirected back to Codacy.
 
-After installing, Codacy imports all open Jira issues created up to 90 days before the integration.
+After installing, Codacy imports all open Jira issues labeled **security** and created up to 90 days before the integration.
 
 For more information on how this integration works, see [how Codacy manages security items](../managing-security-and-risk.md#opening-and-closing-items) and [how Codacy assigns security item severities](../managing-security-and-risk.md#item-severities-and-deadlines).
 
