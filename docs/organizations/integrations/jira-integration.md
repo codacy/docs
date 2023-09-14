@@ -17,7 +17,7 @@ To install the Jira integration:
 
     !!! note
         Use a Jira account with admin permissions when installing this integration. This lets Codacy access all issues, since the integration inherits the permissions of the account that installs it.
-    
+
     ![Security and risk management Jira integration installation](images/jira-integration-srm-install.png)
 
 1.  On Atlassian's website, authorize Codacy. Once successful, you're redirected back to Codacy.
