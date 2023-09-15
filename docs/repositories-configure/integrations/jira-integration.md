@@ -1,4 +1,4 @@
-# Jira integration
+# Repository Jira integration
 
 The Jira integration incorporates Codacy on your existing Jira workflows.
 
@@ -31,3 +31,7 @@ To enable the Jira integration:
 1.  Click **Advanced** to configure the issue type and any built-in or custom Jira fields of new issues created by Codacy.
 
     ![Advanced settings of the Jira integration](images/jira-integration-advanced.png)
+
+## See also
+
+-   [Jira integration for Security and risk management](../../organizations/integrations/jira-integration.md)
