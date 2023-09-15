@@ -1,4 +1,4 @@
-# Slack integration
+# Repository Slack integration
 
 Enable the Slack integration to integrate Codacy with Slack by sending messages to a channel when it finds new issues.
 
@@ -29,3 +29,7 @@ After filling both fields, click the **Save** button. You can also use the **Tes
 After configuring your Slack integration with your server settings, Codacy will send a message on Slack whenever it finds new issues.
 
 ![Example Slack notification](images/slack-integration-notification.png)
+
+## See also
+
+-   [Organization Slack integration for Security issues](../../organizations/integrations/slack-integration.md)
