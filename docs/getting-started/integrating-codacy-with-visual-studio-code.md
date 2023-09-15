@@ -2,18 +2,18 @@
 
 !!! info "To use this extension you need a [Codacy account](https://www.codacy.com/signup-codacy)"
 
-The Codacy extension for VS Code displays information about the quality of a pull request, highlights problematic code patterns, and displays code quality metrics directly in Visual Studio Code.
+The Codacy extension for VS Code displays information about the quality of a pull request, highlights problematic code patterns, and displays code quality metrics directly in VS Code.
 
-With this extension, you can see in VS Code a list problems found by Codacy in the pull request you’re working on, and navigate to any Quality issue.
+Use this extension to get the full list of problems found by Codacy for the pull request you’re working on and to navigate to any Quality issue that you want to review and fix.
 
 ## Installing the Codacy VS Code extension
 
-1.  Make sure that the repository you’re working is analyzed by Codacy and that you have at least [Repository Read permissions](../organizations/roles-and-permissions-for-organizations.md).
+1.  Make sure that the repository you’re working on is analyzed by Codacy and that you have at least [Repository Read permissions](../organizations/roles-and-permissions-for-organizations.md).
 
     !!! tip
         If this is your first time using Codacy, see [how to add and analyze your first repository](./codacy-quickstart.md#adding-your-first-repository).
 
-1.  Install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=codacy-app.codacy) or through the Extensions view in Visual Studio Code.
+1.  Install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=codacy-app.codacy) or through the Extensions view in VS Code.
 
     Alternatively, you can install it manually by [downloading the latest release as a VSIX package](https://github.com/codacy/codacy-vscode-extension/releases).
 
@@ -24,7 +24,7 @@ To see Codacy quality and coverage data for the pull request you're working on, 
 1.  Open the repository directory in VS Code.
 
     !!! note
-        If the repository isn't on Codacy yet, see [how to add repository to Codacy](../organizations/managing-repositories.md#adding-a-repository).
+        If the repository isn't on Codacy yet, [add it to Codacy](../organizations/managing-repositories.md#adding-a-repository) first.
 
 1.  Open the main view by clicking the **Codacy logo** in the status bar or the **Codacy tab** in the activity bar.
 
@@ -37,17 +37,17 @@ To see Codacy quality and coverage data for the pull request you're working on, 
     !!! note
         The branch must be associated with an open pull request analyzed by Codacy.
 
-After completing these steps, Codacy displays a summary of all problems for the pull request in the main view and in VS Code's Problems tab.
+After completing these steps, Codacy displays a summary of all problems for the pull request in the main view and a list of found Quality issues in VS Code's Problems tab.
 
 ![Codacy main view](images/codacy-vscode-extension-main-view.png)
 
 The main view displays the following:
 
--   The **Quality status** of the pull request, either up to standards or not up to standards, based on the repository’s [Quality gates](../repositories-configure/adjusting-quality-gates.md).
+-   The **Quality status** of the pull request, either up to standards or not up to standards, based on the [Quality gates](../repositories-configure/adjusting-quality-gates.md) set for the repository.
 
 -   Any **Quality issues** introduced or fixed by the pull request. These are the same issues you find in the [Quality Issues tabs](../repositories/pull-requests.md#issues-tabs) in the Codacy app and are also visible in VS Code's Problems tab.
 
-    The number next to each file name is the total number of issues that the pull request adds to or removes from that file. The number farther to the right is the number of new Medium or Critical issues. If there are any such issues, the file name is also highlighted in yellow (Medium) or red (Critical).
+    The number next to each file name is the total number of Quality issues that the pull request adds to or removes from that file. The number farther to the right is the number of new Medium or Critical Quality issues. If there are any such issues, the file name is also highlighted in yellow (Medium) or red (Critical).
 
     ![Important issues](./images/codacy-vscode-extension-important-issues.png)
 
@@ -68,9 +68,9 @@ In the Problems tab, Codacy displays the same Quality issues you find in the mai
 
 To review Quality issues:
 
-1.  Open the **Problems tab** (use `Ctrl+Shift+M` on Windows/Linux or `Cmd+Shift+M` on macOS)
+1.  Open the **Problems tab** (use `Ctrl+Shift+M` on Windows/Linux or `Cmd+Shift+M` on macOS).
 
-1.  Click the name of the issue you wish to review.
+1.  Click the name of the issue you want to review.
 
     ![Navigate to a specific issue from the Problems tab](images/codacy-vscode-extension-problems-tab.png)
 
@@ -84,9 +84,7 @@ To review Quality issues:
 
 ## Troubleshooting
 
-If you're having trouble using the Codacy extension for VS Code, see the following sections for troubleshooting tips.
-
-Since this extension is an open source project, you are also welcome to [open an issue or a pull request on GitHub](https://github.com/codacy/codacy-vscode-extension)
+If you're having trouble using the Codacy extension for VS Code, see the following sections to troubleshoot errors. Since this extension is an open source project, you are also welcome to [open an issue or a pull request on GitHub](https://github.com/codacy/codacy-vscode-extension).
 
 ### <span class="skip-vale">Could not</span> find repository
 
