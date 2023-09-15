@@ -179,7 +179,7 @@ The following table defines item severities and days to fix the associated secur
 
 | Item<br/>severity | <br/>Days to fix | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority |
 |-------------------|------------------|--------------------------------------|------------------------------------|
-| Critical          | 30               | Critical                             | Blocker                            |
+| Critical          | 30               | Critical                             | Highest                            |
 | High              | 60               | -                                    | High                               |
 | Medium            | 90               | Medium                               | Medium                             |
 | Low               | 120              | Minor                                | Low and other                      |
