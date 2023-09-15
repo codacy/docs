@@ -63,9 +63,6 @@ markdown_extensions:
     # Strip comments from the generated HTML
     # https://facelessuser.github.io/pymdown-extensions/extensions/striphtml/
     - pymdownx.striphtml
-    # Tabbed content
-    # https://facelessuser.github.io/pymdown-extensions/extensions/tabbed/
-    - pymdownx.tabbed
     # Generate table of contents for each page
     # https://python-markdown.github.io/extensions/toc/
     - toc:
@@ -575,7 +572,7 @@ nav:
                 - repositories-configure/integrations/gitlab-integration.md
                 - repositories-configure/integrations/bitbucket-integration.md
                 - Slack integration: repositories-configure/integrations/slack-integration.md
-                - repositories-configure/integrations/jira-integration.md
+                - Jira integration: repositories-configure/integrations/jira-integration.md
                 - repositories-configure/integrations/webhook-notifications.md
                 - repositories-configure/integrations/post-commit-hooks.md
           - repositories-configure/ignoring-files.md
@@ -605,6 +602,7 @@ nav:
           - organizations/configuring-default-git-provider-integration-settings.md
           - Integrations:
                 - Slack integration for Security issues: organizations/integrations/slack-integration.md
+                - Jira integration for Security and risk management: organizations/integrations/jira-integration.md
           - organizations/managing-security-and-risk.md
           - organizations/managing-people.md
           - organizations/roles-and-permissions-for-organizations.md
