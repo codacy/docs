@@ -14,7 +14,7 @@ When the integration is enabled, you can also create pull request comments and G
 
 To enable the GitHub integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, Codacy enables the integration using the [default settings for your organization](../../organizations/configuring-default-git-provider-integration-settings.md).
 
-![GitHub integration](images/github-integration.png)
+![GitHub integration](images/github-integration.png)<!-- TODO ALA-574 Update screenshot -->
 
 If you remove the integration, you can enable it again as follows:
 
@@ -55,6 +55,12 @@ Adds annotations on the lines of the pull request where Codacy finds new issues.
 Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable **Status checks** first.
 
 ![Issue summary on GitHub](images/github-integration-pr-summary.png)
+
+### Diff coverage
+
+Sends an additional diff coverage status report from the new, faster Coverage engine.
+
+![Extra diff coverage report](images/coverage-report-new-engine.png)<!-- TODO ALA-574 Update screenshot -->
 
 ### Coverage summaries
 
