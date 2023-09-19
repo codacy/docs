@@ -73,7 +73,7 @@ When a member or committer leaves an organization:
 To remove people from your organization open your organization **Settings**, page **People**, click the icon next to the member or committer you wish to remove, and select **Remove from organization**.
 
 !!! note
-    For Enterprise plans where Codacy automatically manages people activity for your organization, you can't remove people who had their commits analyzed within the last 90 days because their are still active within the billing period.
+    For Enterprise plans where Codacy automatically manages people activity for your organization, you can't remove people who had their commits analyzed within the last 90 days because their are still active within the billing period. However, if you remove them from the organization on your Git provider, they no longer have permissions to your repositories on Codacy.
 
 ![Removing people from your organization](images/organization-people-remove.png)
 
