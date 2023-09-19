@@ -26,18 +26,15 @@ To see Codacy quality and coverage data for the pull request you're working on, 
     !!! note
         If the repository isn't on Codacy yet, [add it to Codacy](../organizations/managing-repositories.md#adding-a-repository) first.
 
+1.  Check out the branch associated with the open pull request you're working on.
+
 1.  Open the main view by clicking the **Codacy logo** in the activity bar or the **Codacy tab** in the status bar.
 
     ![Codacy main view](images/codacy-vscode-extension-sign-in.png)
 
 1.  If you’re not signed in, click the **Sign in** button to authorize VS Code on Codacy.
 
-1.  Check out the branch you're working on.
-
-    !!! note
-        The branch must be associated with an open pull request analyzed by Codacy.
-
-After completing these steps, the main view shows the result of the Codacy analysis for the pull request. The VS Code Problems tab lists the Quality issues found.
+After completing these steps, the main view shows the result of the latest Codacy analysis for the pull request. The VS Code Problems tab lists the Quality issues found.
 
 ![Codacy main view](images/codacy-vscode-extension-main-view.png)
 
