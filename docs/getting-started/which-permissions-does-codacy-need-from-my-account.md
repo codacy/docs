@@ -45,7 +45,7 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
     </tr>
     <tr>
       <td>Metadata</td>
-      <td>Read Only</td>
+      <td>Read-Only</td>
       <td>Codacy retrieves repository metadata, such as name, languages, collaborators and commit information.</td>
     </tr>
     <tr>
@@ -69,6 +69,11 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
       <td><a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
     </tr>
     <tr>
+      <td>Contents</td>
+      <td>Read-Only</td>
+      <td>Codacy uses GitHub App tokens to clone repositories for code analysis as part of an ongoing initiative to phase out the use of SSH keys.</td>
+    </tr>
+    <tr>
       <td colspan="3"><strong>Organization permissions:</strong></td>
     </tr>
     <tr>
@@ -78,7 +83,7 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
     </tr>
     <tr>
       <td>Members</td>
-      <td>Read Only</td>
+      <td>Read-Only</td>
       <td>Codacy retrieves information about organization members and teams to enforce permissions and user management.</td>
     </tr>
     <tr>
@@ -87,7 +92,7 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
     </tr>
     <tr>
       <td>Email addresses</td>
-      <td>Read Only</td>
+      <td>Read-Only</td>
       <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</td>
     </tr>
   </tbody>
