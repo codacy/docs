@@ -82,10 +82,6 @@ To review Quality issues:
 
 When the analysis is complete, the Codacy extension automatically refreshes the pull request analysis result. You can also refresh the pull request data manually by clicking the Refresh Pull Request button in the main view.
 
-## Troubleshooting
+## See also
 
-If you're having trouble using the Codacy extension for VS Code, see the following sections to troubleshoot errors. Since this extension is an open source project, you are also welcome to [open an issue or a pull request on GitHub](https://github.com/codacy/codacy-vscode-extension).
-
-### <span class="skip-vale">Could not</span> find repository
-
-If you see this error, confirm that the repository has been [added to Codacy Cloud](../organizations/managing-repositories.md#adding-a-repository) and that you have at least [Repository Read permissions](../organizations/roles-and-permissions-for-organizations.md).
+-   [Troubleshooting the Codacy VS Code extension](https://marketplace.visualstudio.com/items?itemName=codacy-app.codacy#troubleshooting)
