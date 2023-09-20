@@ -11,7 +11,7 @@
         <meta name="description" content="People signing up to the Codacy app and joining an organization become members of that organization. Members of a Codacy organization can see the dashboards and details of the organization repositories. Depending on their permissions on the Git provider, members can also manage the organization and repository settings on Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2023-09-11 09:14:19">
+        <meta http-equiv="last-modified" content="2023-09-20 08:51:35">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-people/">
@@ -4019,7 +4019,7 @@
 <p>To remove people from your organization open your organization <strong>Settings</strong>, page <strong>People</strong>, click the icon next to the member or committer you wish to remove, and select <strong>Remove from organization</strong>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>For Enterprise plans where Codacy automatically manages people activity for your organization, you can only remove inactive people who performed no activity for 90 consecutive days.</p>
+<p>For Enterprise plans where Codacy automatically manages people activity for your organization, you can't remove people who had their commits analyzed within the last 90 days because their are still active within the billing period. However, if you remove them from the organization on your Git provider, they no longer have permissions to your repositories on Codacy.</p>
 </div>
 <p><img alt="Removing people from your organization" src="../images/organization-people-remove.png" /></p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
@@ -4183,7 +4183,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 11, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 20, 2023</span>
     
   </small>
 </div>
