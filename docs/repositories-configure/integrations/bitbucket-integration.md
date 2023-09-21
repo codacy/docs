@@ -14,7 +14,7 @@ When the integration is enabled, you can also create pull request comments and J
 
 To enable the Bitbucket integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, Codacy enables the integration using the [default settings for your organization](../../organizations/configuring-default-git-provider-integration-settings.md).
 
-![Bitbucket integration](images/bitbucket-integration.png)<!-- TODO ALA-574 Update screenshot -->
+![Bitbucket integration](images/bitbucket-integration.png)<!-- TODO ALA-619 Review screenshot -->
 
 If you remove the integration, you can enable it again as follows:
 
@@ -60,11 +60,11 @@ Adds AI-enhanced comments with insights to help you fix identified issues.
 
 ![AI-enhanced comment on GitLab](images/bitbucket-integration-ai-comment.png)
 
-### Extra Diff Coverage Report
+### Extra Diff Coverage and Coverage Variation Report
 
-Adds an additional report to your pull requests from the new, faster coverage engine, showing whether your diff coverage is up to standards or not as configured on the [quality gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository. You can then optionally [block merging pull requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
+Adds two additional reports to your pull requests from the new, faster coverage engine, showing whether your diff coverage and coverage variation are up to standards or not as configured on the [quality gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository. You can then optionally [block merging pull requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
 
-![Extra diff coverage report](images/coverage-report-new-engine.png)<!-- TODO ALA-574 Update screenshot -->
+![Extra diff coverage report](images/coverage-report-new-engine.png)<!-- TODO ALA-599 Review screenshot -->
 
 ### Pull Request Summary
 
