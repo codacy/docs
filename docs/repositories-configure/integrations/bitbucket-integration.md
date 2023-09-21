@@ -62,7 +62,7 @@ Adds AI-enhanced comments with insights to help you fix identified issues.
 
 ### Extra Diff Coverage Report
 
-Sends an additional diff coverage status report from the new, faster Coverage engine.
+Adds an additional report to your pull requests from the new, faster coverage engine, showing whether your diff coverage is up to standards or not as configured on the [quality gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository. You can then optionally [block merging pull requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
 
 ![Extra diff coverage report](images/coverage-report-new-engine.png)<!-- TODO ALA-574 Update screenshot -->
 
