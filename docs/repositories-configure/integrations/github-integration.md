@@ -63,7 +63,7 @@ Adds an additional report to your pull requests from the new, faster coverage en
 ![Extra diff coverage report](images/coverage-report-new-engine.png)
 
 !!! note
-    This feature requires an update to [Codacy GitHub App permissions](../../getting-started/which-permissions-does-codacy-need-from-my-account.md#github-cloud). Make sure you [review and accept](https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions) the updated Codacy app permissions on GitHub.
+    This feature is only supported on GitHub Cloud and requires an update to [Codacy GitHub App permissions](../../getting-started/which-permissions-does-codacy-need-from-my-account.md#github-cloud). Make sure you [review and accept](https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions) the updated Codacy app permissions on GitHub.
 
 ### Coverage summaries
 
