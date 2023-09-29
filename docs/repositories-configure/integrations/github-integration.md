@@ -58,9 +58,12 @@ Shows an overall view of the changes in the pull request, including new issues a
 
 ### Diff coverage
 
-Adds an additional report to your pull requests from the new, faster coverage engine, showing whether your diff coverage is up to standards or not as configured on the [quality gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository. You can then optionally [block merging pull requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
+Adds an additional report to your pull requests from the new, faster coverage engine, showing whether your diff coverage is up to standards or not as configured on the [quality gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository. You can then optionally [block merging pull requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests). To enable this option, you must enable **Status checks** first.
 
-![Extra diff coverage report](images/coverage-report-new-engine.png)<!-- TODO ALA-574 Update screenshot -->
+![Extra diff coverage report](images/coverage-report-new-engine.png)
+
+!!! note
+    This feature requires an update to [Codacy GitHub App permissions](../../getting-started/which-permissions-does-codacy-need-from-my-account.md#github-cloud). Make sure you [review and accept](https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions) the updated Codacy app permissions on GitHub.
 
 ### Coverage summaries
 
