@@ -71,7 +71,7 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
     <tr>
       <td>Contents</td>
       <td>Read-Only</td>
-      <td>Codacy uses GitHub App tokens to clone repositories for code analysis as part of an ongoing initiative to phase out the use of SSH keys.</td>
+      <td>Codacy accesses repository contents to provide faster code coverage analysis and as part of an initiative to use GitHub App tokens instead of SSH keys when cloning repositories for code quality analysis.</td>
     </tr>
     <tr>
       <td colspan="3"><strong>Organization permissions:</strong></td>
