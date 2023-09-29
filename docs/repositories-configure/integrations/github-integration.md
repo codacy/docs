@@ -14,7 +14,7 @@ When the integration is enabled, you can also create pull request comments and G
 
 To enable the GitHub integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, Codacy enables the integration using the [default settings for your organization](../../organizations/configuring-default-git-provider-integration-settings.md).
 
-![GitHub integration](images/github-integration.png)<!-- TODO ALA-574 Update screenshot -->
+![GitHub integration](images/github-integration.png)
 
 If you remove the integration, you can enable it again as follows:
 
