@@ -81,4 +81,4 @@ When the analysis is complete, the Codacy extension automatically refreshes the 
 
 ## See also
 
--   [Troubleshooting the Codacy VS Code extension](https://marketplace.visualstudio.com/items?itemName=codacy-app.codacy#troubleshooting)
+-   [Troubleshooting the Codacy VS Code extension](https://github.com/codacy/codacy-vscode-extension#troubleshooting)
