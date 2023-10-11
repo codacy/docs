@@ -77,7 +77,7 @@ The **New Issues** and **Fixed Issues** tabs display the list of issues that the
 
 Click the title of an issue to see the following information:
 
--   The committer and date of the commit that introduced the issue<!-- TODO CY-6604 I'm not seeing the committer. Is this by design? -->
+-   The committer and date of the commit that introduced the issue
 -   The [tool that reported the issue](../getting-started/supported-languages-and-tools.md) and the estimated time to fix it
 -   What's the issue and how to solve it
 -   The programming language and category of the issue
