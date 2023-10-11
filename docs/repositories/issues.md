@@ -54,7 +54,7 @@ You can define one or more of the following filters:
 
 ## Ignoring and managing issues
 
-Use the options in the three-dots menu of each issue to:
+Use the options in the options menu of each issue to:
 
 -   **Copy a link** to the issue.
 
@@ -97,7 +97,7 @@ The menu can include more options depending on the features that you enable on y
 
 To see the list of ignored issues, click the **Ignored** tab.
 
-To restore an ignored issue, click the issue title and select **Unignore** from the three-dots menu:
+To restore an ignored issue, click the issue title and select **Unignore** from the options menu:
 
 ![Restoring an ignored issue](images/issues-unignore.png)<!-- TODO CY-6604 Update screenshot -->
 
