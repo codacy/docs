@@ -1,7 +1,6 @@
 # Repository Jira integration
 
-<!-- TODO CY-6604 Update admonition -->
-!!! info "Sunsetting notice"
+!!! info "This feature will be removed soon and is no longer actively supported. Please avoid using it on new projects."
 
 The Jira integration incorporates Codacy on your existing Jira workflows.
 

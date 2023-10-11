@@ -87,12 +87,6 @@ Use the options in the options menu of each issue to:
 
 ![Issue shortcuts menu](images/issues-menu.png)<!-- TODO CY-6604 Update screenshot -->
 
-<!-- TODO CY-6604 Remove -->
-The menu can include more options depending on the features that you enable on your GitHub or Bitbucket integration:
-
--   [GitHub integration](../repositories-configure/integrations/github-integration.md)
--   [Bitbucket integration](../repositories-configure/integrations/bitbucket-integration.md)
-
 ## Restoring ignored issues
 
 To see the list of ignored issues, click the **Ignored** tab.
