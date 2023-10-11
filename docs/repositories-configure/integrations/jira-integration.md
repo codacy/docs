@@ -1,5 +1,8 @@
 # Repository Jira integration
 
+<!-- TODO CY-6604 Update admonition -->
+!!! info "Sunsetting notice"
+
 The Jira integration incorporates Codacy on your existing Jira workflows.
 
 When the integration is enabled, you can create issues on a Jira project directly from Codacy when browsing the existing issues on the repository:
