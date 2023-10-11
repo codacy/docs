@@ -7,28 +7,35 @@ By default, the page lists the issues on the main branch of your repository but 
 !!! note
     [You can use the Codacy API](../codacy-api/examples/obtaining-current-issues-in-repositories.md) to generate reports or obtain information about the current issues in your repositories in a more flexible way.
 
-![Issues page](images/issues.png)
+![Issues page](images/issues.png)<!-- TODO CY-6604 Update screenshot -->
 
 <!--issue-detail-start-->
 Click the title of an issue to see the following information:
 
--   The committer and date of the commit that introduced the issue
--   The [tool that reported the issue](../getting-started/supported-languages-and-tools.md) and the estimated time to fix it
--   What's the issue and how to solve it
--   The programming language and category of the issue
+-   The committer and date of the commit that introduced the issue<!-- TODO CY-6604 I'm not seeing this. Is this by design? -->
+-   The estimated time to fix the issue
+-   What the issue is and how to solve it
+-   The [tool that reported the issue](../getting-started/supported-languages-and-tools.md) and the related code pattern
+-   The programming language and category of the issue<!-- TODO CY-6604 I'm not seeing this. Is this by design? -->
 <!--issue-detail-end-->
 
-![Issue details](images/issues-detail.png)
+![Issue details](images/issues-detail.png)<!-- TODO CY-6604 Update screenshot -->
 
 ## Filtering issues
 
 Filter the list of issues to find specific issues, such as the issues with the highest severity or security issues:
 
-![Filtering issues](images/issues-filter.png)
+![Filtering issues](images/issues-filter.png)<!-- TODO CY-6604 Update screenshot -->
 
 You can define one or more of the following filters:
 
 -   **Language:** Programming language of the file where the issues were detected
+
+-   **Severity level:** Potential impact of the issues:
+
+    -   **Critical (red):** The most dangerous issues that you should prioritize fixing since they identify code that's susceptible to serious problems regarding security and compatibility
+    -   **Medium (yellow):** You should check out these issues, as they're based on coding standards and conventions
+    -   **Minor (blue):** The least critical issues, such as most code style issues
 
 -   **Issue category:** One of the following types of issue:
 
@@ -37,12 +44,6 @@ You can define one or more of the following filters:
         start="<!--issue-categories-start-->"
         end="<!--issue-categories-end-->"
     %}
-
--   **Severity level:** Potential impact of the issues:
-
-    -   **Critical (red):** The most dangerous issues that you should prioritize fixing since they identify code that's susceptible to serious problems regarding security and compatibility
-    -   **Medium (yellow):** You should check out these issues, as they're based on coding standards and conventions
-    -   **Minor (blue):** The least critical issues, such as most code style issues
 
 -   **Pattern:** [Code pattern](../repositories-configure/configuring-code-patterns.md) that detected the issue
 
@@ -53,7 +54,9 @@ You can define one or more of the following filters:
 
 ## Ignoring and managing issues
 
-Use the options in the cogwheel menu of each issue to:
+Use the options in the three-dots menu of each issue to:
+
+-   **Copy a link** to the issue.
 
 -   **Ignore the issue** and hide it from the list.
 
@@ -66,7 +69,7 @@ Use the options in the cogwheel menu of each issue to:
     See [how to restore ignored issues](#restoring-ignored-issues).
 
     !!! tip
-        Organization admins can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
+        Organization admins can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).<!-- TODO CY-6604 Is this behavior unchanged? -->
 
 -   **Disable the code pattern** that detected the issue.
 
@@ -74,14 +77,17 @@ Use the options in the cogwheel menu of each issue to:
 
     !!! note
         -   If you're using a [custom configuration file](../repositories-configure/configuring-code-patterns.md#using-your-own-tool-configuration-files), you must manage patterns manually on your configuration file.
-        -   If your repository is following an [organization coding standard](../organizations/using-coding-standards.md), disabling the code pattern causes the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.
+        -   If your repository is following an [organization coding standard](../organizations/using-coding-standards.md), disabling the code pattern causes the repository to stop following the coding standard. In this case, Codacy asks for your confirmation before accepting the changes and then copies the coding standard configurations to your repository, so you can customize them.
+
+-   **View the file** where the issue was detected.
 
 -   **Ignore the file** where the issue was detected.
 
     Codacy will no longer analyze that file on your repository, so be sure that you're no longer interested in identifying any type of issues on that file. To remove an ignored file use the [Ignored Files tab](../repositories-configure/ignoring-files.md) in your repository settings.
 
-![Issue shortcuts menu](images/issues-menu.png)
+![Issue shortcuts menu](images/issues-menu.png)<!-- TODO CY-6604 Update screenshot -->
 
+<!-- TODO CY-6604 Remove -->
 The menu can include more options depending on the features that you enable on your GitHub or Bitbucket integration:
 
 -   [GitHub integration](../repositories-configure/integrations/github-integration.md)
@@ -89,11 +95,11 @@ The menu can include more options depending on the features that you enable on y
 
 ## Restoring ignored issues
 
-To see the list of ignored issues, click **Current Issues** and select **Ignored Issues**.
+To see the list of ignored issues, click the **Ignored** tab.
 
-To restore an ignored issue, click the button **Unignore** next to the issue title:
+To restore an ignored issue, click the issue title and select **Unignore** from the three-dots menu:
 
-![Restoring an ignored issue](images/issues-unignore.png)
+![Restoring an ignored issue](images/issues-unignore.png)<!-- TODO CY-6604 Update screenshot -->
 
 ## See also
 
