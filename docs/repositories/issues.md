@@ -12,11 +12,10 @@ By default, the page lists the issues on the main branch of your repository but 
 <!--issue-detail-start-->
 Click the title of an issue to see the following information:
 
--   The committer and date of the commit that introduced the issue<!-- TODO CY-6604 I'm not seeing this. Is this by design? -->
+-   The committer and date of the commit that introduced the issue, if available
 -   The estimated time to fix the issue
 -   What the issue is and how to solve it
 -   The [tool that reported the issue](../getting-started/supported-languages-and-tools.md) and the related code pattern
--   The programming language and category of the issue<!-- TODO CY-6604 I'm not seeing this. Is this by design? -->
 <!--issue-detail-end-->
 
 ![Issue details](images/issues-detail.png)<!-- TODO CY-6604 Update screenshot -->
@@ -69,7 +68,7 @@ Use the options in the options menu of each issue to:
     See [how to restore ignored issues](#restoring-ignored-issues).
 
     !!! tip
-        Organization admins can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).<!-- TODO CY-6604 Is this behavior unchanged? -->
+        Organization admins can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
 
 -   **Disable the code pattern** that detected the issue.
 
