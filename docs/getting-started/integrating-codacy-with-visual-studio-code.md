@@ -1,90 +1,84 @@
 # Integrating Codacy with Visual Studio Code
 
-If you're using Visual Studio Code, integrating Codacy into your setup can enhance your workflow, provide valuable insights into your code, and streamline your code review process without leaving the editor.
+The [Codacy Visual Studio Code extension](https://github.com/codacy/codacy-vscode-extension) is an open-source project that enables developers to review directly in VS Code the result of Codacy analysis for the pull requests they’re working on.
 
-To integrate Codacy into your setup, install the Codacy extension for VS Code by following the instructions below. This extension notifies you about the quality of a pull request, highlights problematic code patterns, and displays code quality metrics, all within VS Code.
+Use this extension to get the full list of problems found by Codacy for a pull request and navigate to any Quality issue that you want to review and fix.
+
+!!! info "To use this extension you need a [Codacy account](https://www.codacy.com/signup-codacy)"
 
 ## Installing the Codacy VS Code extension
 
-!!! note
-    Before installing the extension, make sure you meet the following requirements:
+1.  Make sure that the repository you’re working on is analyzed by Codacy and that you have at least [Repository Read permissions](../organizations/roles-and-permissions-for-organizations.md).
 
-    -   You have a [Codacy account](https://www.codacy.com/signup-codacy).
-    -   The repository you’re working on has been [added to Codacy Cloud](../organizations/managing-repositories.md#adding-a-repository) and analyzed.
-    -   You have at least [Repository Read permissions](../organizations/roles-and-permissions-for-organizations.md) for the repository you’re working on.
+    !!! tip
+        If this is your first time using Codacy, see [how to add and analyze your first repository](./codacy-quickstart.md#adding-your-first-repository).
 
-You can install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=codacy-app.codacy) or through the [Extensions view](https://code.visualstudio.com/docs/editor/extension-marketplace#_browse-for-extensions) in Visual Studio Code. Alternatively, you can [download the latest release as a VSIX package](https://github.com/codacy/codacy-vscode-extension/releases) and install it manually.
+1.  Install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=codacy-app.codacy) or through the [Extensions view in VS Code](https://code.visualstudio.com/docs/editor/extension-marketplace#_browse-for-extensions).
 
-## Fetching pull request quality and coverage data from Codacy
+    Alternatively, you can install it manually by [downloading the latest release as a VSIX package](https://github.com/codacy/codacy-vscode-extension/releases).
+
+## Getting pull request quality and coverage data
+
+To see Codacy quality and coverage data for the pull request you're working on, follow these steps:
 
 1.  Open the repository directory in VS Code.
 
     !!! note
-        Make sure that you’ve [added the repository to Codacy](../organizations/managing-repositories.md#adding-a-repository).
+        If the repository isn't on Codacy yet, [add it to Codacy](../organizations/managing-repositories.md#adding-a-repository) first.
 
-1.  Open the main view by clicking the **Codacy logo** in the status bar or the **Codacy tab** in the activity bar.
+1.  Check out the branch associated with the open pull request you're working on.
+
+1.  Open the main view by clicking the **Codacy logo** in the activity bar or the **Codacy tab** in the status bar.
 
     ![Codacy main view](images/codacy-vscode-extension-sign-in.png)
 
-1.  If you’re not signed in, click the **Sign In** button to authorize VS Code on Codacy.
+1.  If you’re not signed in, click the **Sign in** button to authorize VS Code on Codacy.
 
-1.  Check out the relevant branch.
-
-    !!! note
-        The branch must match an open pull request analyzed by Codacy.
-
-After completing these steps, Codacy displays a summary of all found problems for the pull request in the main view and in VS Code's Problems tab.
-
-## Reviewing found problems
-
-To review a summary of all found problems for the pull request, open the main view by clicking the **Codacy logo** in the status bar or the **Codacy tab** in the activity bar.
+After completing these steps, the main view shows the result of the latest Codacy analysis for the pull request. The VS Code Problems tab lists the Quality issues found.
 
 ![Codacy main view](images/codacy-vscode-extension-main-view.png)
 
-The main view displays the following:
+The main view displays the information about the code quality changes introduced by the pull request:
 
--   The **Quality status** of the pull request, either up to standards or not up to standards, based on the repository’s [Quality gates](../repositories-configure/adjusting-quality-gates.md).
+-   The **Quality status** of the pull request, either up to standards or not up to standards, based on the [Quality gates](../repositories-configure/adjusting-quality-gates.md) set for the repository.
 
--   Any **Quality issues** introduced or fixed by the pull request. These are the same issues you find in the [Quality Issues tabs](../repositories/pull-requests.md#issues-tabs) in the Codacy app.
+-   Any **Quality issues** introduced or fixed by the pull request. These are the same issues you find in the [Quality Issues tabs](../repositories/pull-requests.md#issues-tabs) in the Codacy app and are also visible in VS Code's Problems tab.
 
-    !!! tip
-        -   The number immediately next to each file name is the total number of issues in that file.
+    The number next to each file name is the total number of Quality issues that the pull request adds to or removes from that file. The number farther to the right is the number of new Medium or Critical Quality issues. If there are any such issues, the file name is also highlighted in yellow (Medium) or red (Critical).
 
-        -   The number farther to the right of each file name is the number of issues with severity Medium or higher in that file. The file is also highlighted in yellow if there are any such issues.
+    ![Important issues](./images/codacy-vscode-extension-important-issues.png)
 
 -   The **diff coverage and coverage variation** introduced by the pull request. These are the same values you find in the [Pull request coverage overview](../repositories-coverage/pull-requests.md#coverage-overview) panel in the Codacy app.
 
-    !!! tip
-        The percentage next to each file name is the coverage variation for that file.
+    The percentage next to each file name is the coverage variation for that file.
 
 -   Sequences of **duplicate code** (clones). These are the same ones you find in the [Quality Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
 
 -   Variations in **code complexity**.
 
-## Navigating to found problems
+## Reviewing pull request issues
 
-To navigate to a found problem:
+In the Problems tab, Codacy displays the same Quality issues you find in the main view and lets you navigate to the exact line of code where the issue was found.
 
-1.  Open the **Problems tab** (use `Ctrl+Shift+M` on Windows/Linux or `Cmd+Shift+M` on macOS)
+!!! note
+    Code coverage, duplicates, and complexity aren't currently shown in the Problems tab.
 
-1.  Click the name of the issue you wish to review.
+To review Quality issues:
 
-    Line-based navigation is currently only supported for Quality issues.
+1.  Open the **Problems tab** (use `Ctrl+Shift+M` on Windows/Linux or `Cmd+Shift+M` on macOS).
+
+1.  Click the name of the issue you want to review.
 
     ![Navigate to a specific issue from the Problems tab](images/codacy-vscode-extension-problems-tab.png)
 
-1.  Hover over a highlighted issue in the code editor to view more details and available quick fixes.
+1.  Hover over a highlighted issue in the code editor to view available actions and suggested quick fixes (if available).
 
-    For a list of tools that support quick fixes, see [Supported languages and tools](./supported-languages-and-tools.md#supported-languages-and-tools)
+    For a list of tools that support quick fixes, see [Supported languages and tools](./supported-languages-and-tools.md#supported-languages-and-tools).
 
-## Refreshing pull request data
+1.  Once you've addressed the problems in your code, push your changes to the Git provider so that Codacy analyzes the updated code.
 
-The Codacy extension refreshes the pull request data every time you push new changes to the Git provider, after the analysis is complete. The analysis usually takes less than 5 minutes.
+When the analysis is complete, the Codacy extension automatically refreshes the pull request analysis result. You can also refresh the pull request data manually by clicking the Refresh Pull Request button in the main view.
 
-To refresh the pull request data manually, click the Refresh Pull Request button in the main view.
+## See also
 
-## Troubleshooting
-
-### <span class="skip-vale">Could not</span> find repository
-
-If you encounter this error, confirm that the repository has been [added to Codacy Cloud](../organizations/managing-repositories.md#adding-a-repository) and that you have at least [Repository Read permissions](../organizations/roles-and-permissions-for-organizations.md) for the repository.
+-   [Troubleshooting the Codacy VS Code extension](https://github.com/codacy/codacy-vscode-extension#troubleshooting)
