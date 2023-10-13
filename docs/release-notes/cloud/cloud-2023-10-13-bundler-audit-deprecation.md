@@ -15,4 +15,6 @@ On January 1st, 2024 we'll be removing **bundler-audit** from Codacy.
 
 To continue monitoring your repositories for vulnerable Ruby gems, enable the **Trivy** tool in your [organization coding standards](../../organizations/using-coding-standards.md) (recommended) or on the [code patterns page](../../repositories-configure/configuring-code-patterns.md) of each of the affected repositories.
 
+For new repositories, **Trivy** will be active by default.
+
 If you have any questions or need help, please contact <mailto:support@codacy.com>.
