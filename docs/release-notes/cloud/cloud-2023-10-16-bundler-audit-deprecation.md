@@ -6,7 +6,7 @@ rss_href: /feed_rss_created.xml
 # Deprecation of bundler-audit October 16, 2023
 
 <!-- TODO TAROT-2399 Update with the correct date-->
-On October 16th 2023 we deprecated the tool **bundler-audit** in favor of [**Trivy**](https://github.com/codacy/codacy-trivy), a more complete and actively maintained tool for detecting vulnerabilities in Ruby gems and other languages.
+On October 16th 2023 we deprecated the tool **bundler-audit** in favor of [**Trivy**](https://github.com/codacy/codacy-trivy), a more complete and actively maintained tool for detecting vulnerabilities in Ruby gems and other languages, with a vulnerability database that is updated daily.
 
 ## If you are using bundler-audit
 
