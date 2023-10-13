@@ -18,6 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2023
 
+-   [Deprecation of bundler-audit October 16, 2023](cloud/cloud-2023-10-16-bundler-audit-deprecation.md)<!-- TODO TAROT-2399 Update date and file name to match the actual deprecation date -->
 -   [Cloud September 2023](cloud/cloud-2023-09.md)
 -   [Cloud August 2023](cloud/cloud-2023-08.md)
 -   [Cloud July 2023](cloud/cloud-2023-07.md)
