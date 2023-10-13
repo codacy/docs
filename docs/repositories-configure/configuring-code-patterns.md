@@ -329,7 +329,6 @@ The table below lists the configuration file names that Codacy detects and suppo
     Codacy doesn't support configuration files for the following tools:
 
     -   aligncheck
-    -   bundler-audit
     -   Checkov
     -   Clang-Tidy
     -   Codacy Scalameta Pro
