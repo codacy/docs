@@ -9,14 +9,12 @@ By default, the page lists the issues on the main branch of your repository but 
 
 ![Issues page](images/issues.png)<!-- TODO CY-6604 Update screenshot -->
 
-<!--issue-detail-start-->
 Click the title of an issue to see the following information:
 
 -   The committer and date of the commit that introduced the issue, if available
 -   The estimated time to fix the issue
 -   What the issue is and how to solve it
 -   The [tool that reported the issue](../getting-started/supported-languages-and-tools.md) and the related code pattern
-<!--issue-detail-end-->
 
 ![Issue details](images/issues-detail.png)<!-- TODO CY-6604 Update screenshot -->
 
