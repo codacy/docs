@@ -51,7 +51,7 @@ You can define one or more of the following filters:
 
 ## Ignoring and managing issues
 
-Use the options in the options menu of each issue to:
+Use the options in the menu of each issue to:
 
 -   **Copy the link** to the issue.
 
