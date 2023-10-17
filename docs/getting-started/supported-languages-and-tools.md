@@ -316,7 +316,6 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>Ruby<a href="#ruby-31"><sup>5</sup></a>
       </td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a>,
-          <a href="https://github.com/rubysec/bundler-audit">bundler-audit</a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
@@ -498,10 +497,6 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="https://brakemanscanner.org/">Brakeman</a></td>
 <td><a href="https://github.com/codacy/codacy-brakeman" class="skip-vale">codacy/codacy-brakeman</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/rubysec/bundler-audit">bundler-audit</a></td>
-<td><a href="https://github.com/codacy/codacy-bundler-audit" class="skip-vale">codacy/codacy-bundler-audit</a></td>
 </tr>
 <tr>
 <td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a></td>
