@@ -26,10 +26,13 @@ The table below lists all languages and frameworks that Codacy supports and the 
 
 <table>
   <colgroup>
-    <col width="20%"/>
-    <col width="25%"/>
-    <col width="15%"/>
-    <col width="20%"/>
+    <col span="1" style="width: 20%;">
+    <col span="1" style="width: 20%;">
+    <col span="1" style="width: 10%;">
+    <col span="1" style="width: 10%;">
+    <col span="1" style="width: 20%;">
+    <col span="1" style="width: 10%;">
+    <col span="1" style="width: 10%;">
     <col width="20%"/>
   </colgroup>
   <thead>
@@ -217,7 +220,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://pmd.github.io/">PMD</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a> (scans <code>package-lock.json</code>, <code>yarn.lock</code>) <a href="#any-path"><sup>3</sup></a></td>
+      <td><a href="https://trivy.dev">Trivy</a> (scans <br><code>package-lock.json</code>, <br><code>yarn.lock</code>) <a href="#any-path"><sup>3</sup></a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://eslint.org/">ESLint</a></td>
     </tr>
@@ -438,7 +441,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://palantir.github.io/tslint/">TSLint</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a> (scans <code>package-lock.json</code>, <code>yarn.lock</code>) <a href="#any-path"><sup>3</sup></a></td>
+      <td><a href="https://trivy.dev">Trivy</a> (scans <br><code>package-lock.json</code>, <br><code>yarn.lock</code>) <a href="#any-path"><sup>3</sup></a></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://eslint.org/">ESLint</a></td>
     </tr>
