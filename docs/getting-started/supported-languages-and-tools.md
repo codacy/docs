@@ -592,7 +592,7 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-cppcheck" class="skip-vale">codacy/codacy-cppcheck</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/rrrene/credo">Credo</a></span></td>
+<td><a href="https://github.com/rrrene/credo">Credo</a></td>
 <td><a href="https://github.com/codacy/codacy-credo" class="skip-vale">codacy/codacy-credo</a></td>
 </tr>
 <tr>
