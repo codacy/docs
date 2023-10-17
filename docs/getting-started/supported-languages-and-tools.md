@@ -2,6 +2,8 @@
 description: List of tools that Codacy uses to analyze over 40 supported languages and frameworks. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code frameworks as well as code duplication, code complexity, and code coverage metrics for most programming languages.
 ---
 
+<!-- TODO TAROT-2398 update copy to convey the presence of secret detection and vulnerability scans -->
+
 # Supported languages and tools
 
 Codacy uses industry-leading tools to perform automatic static code analysis over 40 supported languages and frameworks:
@@ -66,7 +68,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
           <a href="https://trivy.dev">Trivy</a><a href="#yaml-only"> <sup>1</sup></a></td>
-      <td><a href="https://trivy.dev">Trivy</a></td><!-- TODO TAROT-2398 must be specified in configuration? -->
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -75,7 +77,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td>-</td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td><!-- TODO TAROT-2398 must be specified in configuration? -->
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -106,7 +108,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a> (scans <code>packages.lock.json</code>, <code>packages.config</code>, <code>.deps.json</code>) <a href="#any-path"><sup>3</sup></a></td>
+      <td><a href="https://trivy.dev">Trivy</a> (scans <code>packages.lock.json</code>, <code>packages.config</code>, <code>.deps.json</code>) <a href="#any-path"><sup>3</sup></a></td><!-- TODO TAROT-2398 confirm that these file formats match what we analyze -->
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
     </tr>
@@ -143,7 +145,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a><a href="#dart-limitations"><sup>5</sup></a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a> (scans <code>pubspec.lock</code>) <a href="#any-path"><sup>3</sup></a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -152,7 +154,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://github.com/hadolint/hadolint">Hadolint</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a> (scans <code>Dockerfile</code>, <code>*.dockerfile</code>) <a href="#any-path"><sup>3</sup></a></td><!-- TODO TAROT-2398 confirm -->
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -174,7 +176,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://staticcheck.io/">Staticcheck</a><a href="#client-side"><sup>2</sup></a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a> (scans <code>go.mod</code>) <a href="#any-path"><sup>3</sup></a></td>
+      <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a></td>
     </tr>
@@ -192,7 +194,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a><a href="#yaml-only"> <sup>1</sup></a></td>
-      <td><a href="https://trivy.dev">Trivy</a> (scans <code>Chart.yaml</code>, <code>.helmignore</code>) <a href="#any-path"><sup>3</sup></a></td><!-- TODO TAROT-2398 confirm -->
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -204,7 +206,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td><a href="https://pmd.github.io/">PMD</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a> (scans <code>pom.xml</code>, <code>*gradle.lockfile</code>) <a href="#any-path"><sup>3</sup></a></td>
+      <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
     </tr>
@@ -215,7 +217,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://pmd.github.io/">PMD</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a> (scans <code>package-lock.json</code>, <code>yarn.lock</code>, <code>pnpm-lock.yaml</code>) <a href="#any-path"><sup>3</sup></a></td>
+      <td><a href="https://trivy.dev">Trivy</a> (scans <code>package-lock.json</code>, <code>yarn.lock</code>) <a href="#any-path"><sup>3</sup></a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://eslint.org/">ESLint</a></td>
     </tr>
@@ -253,7 +255,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
           <a href="https://trivy.dev">Trivy</a><a href="#yaml-only"> <sup>1</sup></a></td>
-      <td><a href="https://trivy.dev">Trivy</a></td><!-- TODO TAROT-2398 must be specified in configuration? -->
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -339,7 +341,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a> (scans <code>Pipfile.lock</code>, <code>poetry.lock</code>, <code>requirements.txt</code>) <a href="#any-path"><sup>3</sup></a></td>
+      <td><a href="https://trivy.dev">Trivy</a> (scans <code>Pipfile.lock</code>) <a href="#any-path"><sup>3</sup></a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/rubik/radon">Radon</a></td>
     </tr>
@@ -407,7 +409,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
       <td>-</td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://trivy.dev">Trivy</a> (scans <code>Package.resolved</code>) <a href="#any-path"><sup>3</sup></a></td><!-- TODO TAROT-2398 Do we also scan Cocoa pods (Podfile.lock)? -->
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#swiftlint-complexity"><sup>7</sup></a></td>
     </tr>
@@ -417,7 +419,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a> (scans <code>*.tf</code>) <a href="#any-path"><sup>3</sup></a></td><!-- TODO TAROT-2398 confirm -->
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -436,7 +438,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://palantir.github.io/tslint/">TSLint</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a> (scans <code>package-lock.json</code>, <code>yarn.lock</code>, <code>pnpm-lock.yaml</code>) <a href="#any-path"><sup>3</sup></a></td>
+      <td><a href="https://trivy.dev">Trivy</a> (scans <code>package-lock.json</code>, <code>yarn.lock</code>) <a href="#any-path"><sup>3</sup></a></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://eslint.org/">ESLint</a></td>
     </tr>
