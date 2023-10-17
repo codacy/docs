@@ -2,15 +2,13 @@
 description: List of tools that Codacy uses to analyze over 40 supported languages and frameworks. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code frameworks as well as code duplication, code complexity, and code coverage metrics for most programming languages.
 ---
 
-<!-- TODO TAROT-2398 update copy to convey the presence of secret detection and vulnerability scans -->
-
 # Supported languages and tools
 
 Codacy uses industry-leading tools to perform automatic static code analysis over 40 supported languages and frameworks:
 
--   **For programming languages** Codacy provides static analysis as well as code duplication, code complexity, and code coverage metrics for key languages.
+-   **For programming languages** Codacy provides static analysis as well as code duplication, code complexity, secret detection, dependency vulnerability scanning, and code coverage metrics for key languages.
 
--   **For cloud infrastructure-as-code frameworks** Codacy provides static analysis to enforce security and compliance best practices.
+-   **For cloud infrastructure-as-code frameworks** Codacy provides static analysis and secret detection to enforce security and compliance best practices.
 
 The table below lists all languages and frameworks that Codacy supports and the corresponding tools that Codacy uses to analyze your source code. Besides this, Codacy uses [cloc](https://github.com/kentcdodds/cloc) to calculate the source lines of code for all supported languages and supports multiple [code coverage report formats](../coverage-reporter/index.md#generating-coverage).
 
@@ -41,7 +39,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Static analysis</a></th>
       <th><a style="color: white;" href="#suggest-fixes">Suggested fixes</a></th>
       <th>Secret detection</th>
-      <th>Dependency vulnerability scan</th>
+      <th>Dependency vulnerability scanning</th>
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">Duplication</a></th>
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">Complexity</a></th>
     </tr>
