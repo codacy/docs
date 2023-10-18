@@ -11,7 +11,7 @@
         <meta name="description" content="The Quality Issues page lists all the issues that Codacy detected in your repository, including the severity level and category of each issue.">
       
       
-        <meta http-equiv="last-modified" content="2023-07-03 14:04:40">
+        <meta http-equiv="last-modified" content="2023-10-18 10:24:18">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/issues/">
@@ -3973,10 +3973,10 @@
 <p><img alt="Issues page" src="../images/issues.png" /></p>
 <p>Click the title of an issue to see the following information:</p>
 <ul>
-<li>The committer and date of the commit that introduced the issue</li>
-<li>The <a href="../../getting-started/supported-languages-and-tools/">tool that reported the issue</a> and the estimated time to fix it</li>
-<li>What's the issue and how to solve it</li>
-<li>The programming language and category of the issue</li>
+<li>The committer and date of the commit that introduced the issue, if available</li>
+<li>The estimated time to fix the issue</li>
+<li>What the issue is and how to solve it</li>
+<li>The <a href="../../getting-started/supported-languages-and-tools/">tool that reported the issue</a> and the related code pattern</li>
 </ul>
 <p><img alt="Issue details" src="../images/issues-detail.png" /></p>
 <h2 id="filtering-issues">Filtering issues<a class="headerlink" href="#filtering-issues" title="Permanent link">#</a></h2>
@@ -3986,6 +3986,14 @@
 <ul>
 <li>
 <p><strong>Language:</strong> Programming language of the file where the issues were detected</p>
+</li>
+<li>
+<p><strong>Severity level:</strong> Potential impact of the issues:</p>
+<ul>
+<li><strong>Critical (red):</strong> The most dangerous issues that you should prioritize fixing since they identify code that's susceptible to serious problems regarding security and compatibility</li>
+<li><strong>Medium (yellow):</strong> You should check out these issues, as they're based on coding standards and conventions</li>
+<li><strong>Minor (blue):</strong> The least critical issues, such as most code style issues</li>
+</ul>
 </li>
 <li>
 <p><strong>Issue category:</strong> One of the following types of issue:</p>
@@ -4001,14 +4009,6 @@
 </ul>
 </li>
 <li>
-<p><strong>Severity level:</strong> Potential impact of the issues:</p>
-<ul>
-<li><strong>Critical (red):</strong> The most dangerous issues that you should prioritize fixing since they identify code that's susceptible to serious problems regarding security and compatibility</li>
-<li><strong>Medium (yellow):</strong> You should check out these issues, as they're based on coding standards and conventions</li>
-<li><strong>Minor (blue):</strong> The least critical issues, such as most code style issues</li>
-</ul>
-</li>
-<li>
 <p><strong>Pattern:</strong> <a href="../../repositories-configure/configuring-code-patterns/">Code pattern</a> that detected the issue</p>
 </li>
 <li>
@@ -4020,8 +4020,11 @@
 <p>Each code pattern has a pre-defined severity level and at the moment Codacy doesn't support customizing that information.</p>
 </div>
 <h2 id="ignoring-and-managing-issues">Ignoring and managing issues<a class="headerlink" href="#ignoring-and-managing-issues" title="Permanent link">#</a></h2>
-<p>Use the options in the cogwheel menu of each issue to:</p>
+<p>Use the options in the menu of each issue to:</p>
 <ul>
+<li>
+<p><strong>Copy the link</strong> to the issue.</p>
+</li>
 <li>
 <p><strong>Ignore the issue</strong> and hide it from the list.</p>
 <p>Codacy will no longer report the issue after the next analysis of your repository. For example, you can ignore issues that you disagree with because:</p>
@@ -4043,9 +4046,12 @@
 <p class="admonition-title">Note</p>
 <ul>
 <li>If you're using a <a href="../../repositories-configure/configuring-code-patterns/#using-your-own-tool-configuration-files">custom configuration file</a>, you must manage patterns manually on your configuration file.</li>
-<li>If your repository is following an <a href="../../organizations/using-coding-standards/">organization coding standard</a>, disabling the code pattern causes the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.</li>
+<li>If your repository is following an <a href="../../organizations/using-coding-standards/">organization coding standard</a>, disabling the code pattern causes the repository to stop following the coding standard. In this case, Codacy asks for your confirmation before accepting the changes and then copies the coding standard configurations to your repository, so you can customize them.</li>
 </ul>
 </div>
+</li>
+<li>
+<p><strong>View the file</strong> where the issue was detected.</p>
 </li>
 <li>
 <p><strong>Ignore the file</strong> where the issue was detected.</p>
@@ -4053,14 +4059,9 @@
 </li>
 </ul>
 <p><img alt="Issue shortcuts menu" src="../images/issues-menu.png" /></p>
-<p>The menu can include more options depending on the features that you enable on your GitHub or Bitbucket integration:</p>
-<ul>
-<li><a href="../../repositories-configure/integrations/github-integration/">GitHub integration</a></li>
-<li><a href="../../repositories-configure/integrations/bitbucket-integration/">Bitbucket integration</a></li>
-</ul>
 <h2 id="restoring-ignored-issues">Restoring ignored issues<a class="headerlink" href="#restoring-ignored-issues" title="Permanent link">#</a></h2>
-<p>To see the list of ignored issues, click <strong>Current Issues</strong> and select <strong>Ignored Issues</strong>.</p>
-<p>To restore an ignored issue, click the button <strong>Unignore</strong> next to the issue title:</p>
+<p>To see the list of ignored issues, click the <strong>Ignored</strong> tab.</p>
+<p>To restore an ignored issue, click the issue title to expand the details and select <strong>Unignore issue</strong> from the options menu:</p>
 <p><img alt="Restoring an ignored issue" src="../images/issues-unignore.png" /></p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
@@ -4223,7 +4224,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 3, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 18, 2023</span>
     
   </small>
 </div>
