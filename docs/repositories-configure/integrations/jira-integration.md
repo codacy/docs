@@ -1,5 +1,7 @@
 # Repository Jira integration
 
+!!! info "This feature will be removed soon and is no longer actively supported. Please avoid using it on new projects."
+
 The Jira integration incorporates Codacy on your existing Jira workflows.
 
 When the integration is enabled, you can create issues on a Jira project directly from Codacy when browsing the existing issues on the repository:
