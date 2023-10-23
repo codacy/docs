@@ -7,7 +7,7 @@ By default, the page lists the issues on the main branch of your repository but 
 !!! note
     [You can use the Codacy API](../codacy-api/examples/obtaining-current-issues-in-repositories.md) to generate reports or obtain information about the current issues in your repositories in a more flexible way.
 
-![Issues page](images/issues.png)<!-- TODO CY-6604 Update screenshot -->
+![Issues page](images/issues.png)
 
 Click the title of an issue to see the following information:
 
@@ -16,13 +16,13 @@ Click the title of an issue to see the following information:
 -   What the issue is and how to solve it
 -   The [tool that reported the issue](../getting-started/supported-languages-and-tools.md) and the related code pattern
 
-![Issue details](images/issues-detail.png)<!-- TODO CY-6604 Update screenshot -->
+![Issue details](images/issues-detail.png)
 
 ## Filtering issues
 
 Filter the list of issues to find specific issues, such as the issues with the highest severity or security issues:
 
-![Filtering issues](images/issues-filter.png)<!-- TODO CY-6604 Update screenshot -->
+![Filtering issues](images/issues-filter.png)
 
 You can define one or more of the following filters:
 
@@ -82,7 +82,7 @@ Use the options in the menu of each issue to:
 
     Codacy will no longer analyze that file on your repository, so be sure that you're no longer interested in identifying any type of issues on that file. To remove an ignored file use the [Ignored Files tab](../repositories-configure/ignoring-files.md) in your repository settings.
 
-![Issue shortcuts menu](images/issues-menu.png)<!-- TODO CY-6604 Update screenshot -->
+![Issue shortcuts menu](images/issues-menu.png)
 
 ## Restoring ignored issues
 
@@ -90,7 +90,7 @@ To see the list of ignored issues, click the **Ignored** tab.
 
 To restore an ignored issue, click the issue title to expand the details and select **Unignore issue** from the options menu:
 
-![Restoring an ignored issue](images/issues-unignore.png)<!-- TODO CY-6604 Update screenshot -->
+![Restoring an ignored issue](images/issues-unignore.png)
 
 ## See also
 
