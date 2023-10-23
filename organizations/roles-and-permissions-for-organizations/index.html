@@ -11,7 +11,7 @@
         <meta name="description" content="List of operations that users can perform on Codacy depending on their role on the Git provider, and how to configure who can change analysis configurations.">
       
       
-        <meta http-equiv="last-modified" content="2023-09-06 09:56:11">
+        <meta http-equiv="last-modified" content="2023-10-23 07:15:40">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/roles-and-permissions-for-organizations/">
@@ -4048,7 +4048,7 @@
       <td>No</td>
       <td colspan="2">No</td>
       <td colspan="2">No</td>
-      <td class="yes">Yes</td>
+      <td class="yes">Yes<sup>3</sup></td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -4090,7 +4090,8 @@
 </table>
 
 <p><sup>1</sup>: Outside Collaborators aren't supported as members of organizations on Codacy. You can still <a href="../managing-people/#adding-people">add Outside Collaborators to Codacy</a> so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.<br />
-<sup>2</sup>: Joining an organization may need an approval depending on your setting for <a href="../changing-your-plan-and-billing/#allowing-new-people-to-join-your-organization">accepting new people</a>.</p>
+<sup>2</sup>: Joining an organization may need an approval depending on your setting for <a href="../changing-your-plan-and-billing/#allowing-new-people-to-join-your-organization">accepting new people</a>.<br />
+<sup>3</sup>: Requires that an Organization owner has given the Codacy GitHub App access to the repositories to add or remove.</p>
 <h2 id="permissions-for-gitlab">Permissions for GitLab<a class="headerlink" href="#permissions-for-gitlab" title="Permanent link">#</a></h2>
 <p>The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresponding Codacy permission levels and the operations that they're allowed to perform:</p>
 <table>
@@ -4485,7 +4486,7 @@ td:nth-child(1) {
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 6, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 23, 2023</span>
     
   </small>
 </div>
