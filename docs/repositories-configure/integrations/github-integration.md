@@ -56,9 +56,9 @@ Shows an overall view of the changes in the pull request, including new issues a
 
 ![Issue summary on GitHub](images/github-integration-pr-summary.png)
 
-### Diff coverage
+### New Coverage engine
 
-Adds an additional report to your pull requests from the new, faster coverage engine, showing whether your diff coverage is up to standards or not as configured on the [quality gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository. You can then optionally [block merging pull requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests). To enable this option, you must enable **Status checks** first.
+Adds two additional reports to your pull requests from the new, faster coverage engine, showing whether your diff coverage and coverage variation are up to standards or not as configured on the [quality gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository. You can then optionally [block merging pull requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests). To enable this option, you must enable **Status checks** first.
 
 ![Extra diff coverage report](images/coverage-report-new-engine.png)
 
