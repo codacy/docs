@@ -541,6 +541,7 @@ plugins:
               "repositories-configure/local-analysis/running-local-analysis.md": "repositories-configure/local-analysis/client-side-tools.md"
               "organizations/using-a-coding-standard.md": "organizations/using-coding-standards.md"
               "repositories-configure/adjusting-quality-settings.md": "repositories-configure/adjusting-quality-gates.md"
+              "organizations/configuring-default-git-provider-integration-settings.md": "organizations/integrations/default-git-provider-integration-settings.md"
 
 nav:
     - Documentation home: "index.md"
@@ -567,7 +568,7 @@ nav:
     - Configuring your repositories:
           - repositories-configure/configuring-code-patterns.md
           - repositories-configure/managing-branches.md
-          - Integrations:
+          - Managing integrations:
                 - repositories-configure/integrations/github-integration.md
                 - repositories-configure/integrations/gitlab-integration.md
                 - repositories-configure/integrations/bitbucket-integration.md
@@ -599,8 +600,8 @@ nav:
           - organizations/using-gate-policies.md
           - organizations/using-coding-standards.md
           - organizations/copying-code-patterns-between-repositories.md
-          - organizations/configuring-default-git-provider-integration-settings.md
-          - Integrations:
+          - Managing integrations:
+                - organizations/integrations/default-git-provider-integration-settings.md
                 - Slack integration for Security issues: organizations/integrations/slack-integration.md
                 - Jira integration for Security and risk management: organizations/integrations/jira-integration.md
           - organizations/managing-security-and-risk.md
@@ -659,6 +660,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2023:
+                      - release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation.md
                       - release-notes/cloud/cloud-2023-09.md
                       - release-notes/cloud/cloud-2023-08.md
                       - release-notes/cloud/cloud-2023-07.md
