@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy automatically analyzes the default branch of your repository (typically master or main as configured on your Git provider) and loads its data first on dashboards. Codacy also supports analyzing multiple branches.">
       
       
-        <meta http-equiv="last-modified" content="2023-01-23 08:11:45">
+        <meta http-equiv="last-modified" content="2023-10-24 17:24:18">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/managing-branches/">
@@ -3914,6 +3914,10 @@
                 
                 <h1 id="managing-branches">Managing branches<a class="headerlink" href="#managing-branches" title="Permanent link">#</a></h1>
 <p>Codacy automatically analyzes the default branch of your repository (typically <code>master</code> or <code>main</code> as configured on your Git provider) and loads its data first on dashboards. Codacy also supports analyzing multiple branches.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Codacy doesn't support and skips the analysis of branches named <a href="https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefHEADaHEAD"><code>HEAD</code></a> or matching the pattern <a href="https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefrefaref"><code>refs/heads/*</code></a>, as these are Git reserved terms.</p>
+</div>
 <p>To change the default branch of your repository or start analyzing other branches:</p>
 <ol>
 <li>
@@ -4099,7 +4103,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 23, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 24, 2023</span>
     
   </small>
 </div>
