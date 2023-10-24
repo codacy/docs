@@ -137,7 +137,6 @@ spectral
 stylelint
 swiftlint
 trivy
-tslint
 tsqllint
 ```
 
