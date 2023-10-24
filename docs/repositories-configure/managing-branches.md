@@ -4,7 +4,7 @@
 Codacy automatically analyzes the default branch of your repository (typically `master` or `main` as configured on your Git provider) and loads its data first on dashboards. Codacy also supports analyzing multiple branches.
 
 !!! note
-    Codacy doesn't support and skips the analysis of branches named [`HEAD`](<https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefHEADaHEAD>) or [`refs/heads/*`](<https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefrefaref>), as these are Git reserved terms.
+    Codacy doesn't support and skips the analysis of branches named [`HEAD`](<https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefHEADaHEAD>) or matching the pattern [`refs/heads/*`](<https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefrefaref>), as these are Git reserved terms.
 
 To change the default branch of your repository or start analyzing other branches:
 
