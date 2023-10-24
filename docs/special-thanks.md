@@ -31,7 +31,6 @@ In addition to in-house built rules, we use open source tools for many of our st
 <li><a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a></li>
 <li><a href="https://github.com/phpmd/phpmd">PHPMD</a></li>
 <li><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a></li>
-<li><a href="https://github.com/jshint/jshint">JSHint</a></li>
 <li><a href="https://github.com/mochajs/mocha">Mocha</a></li>
 <li><a href="https://github.com/scalastyle/scalastyle">Scalastyle</a></li>
 <li><a href="https://github.com/CSSLint/csslint">CSSLint</a></li>

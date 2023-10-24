@@ -203,12 +203,6 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
-    <td>JSHint</td>
-    <td>JavaScript</td>
-    <td><code>.jshintrc</code></td>
-    <td></td>
-  </tr>
-  <tr>
     <td>markdownlint</td>
     <td>Markdown</td>
     <td><code>.markdownlint.json</code></td>

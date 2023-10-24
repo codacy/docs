@@ -116,7 +116,6 @@ eslint
 flawfinder
 hadolint
 jacksonlinter
-jshint
 markdownlint
 phpcs
 phpmd
