@@ -7,7 +7,7 @@ rss_href: /feed_rss_created.xml
 
 On October 24th 2023<!-- DOCS-609 update with correct launch date --> we deprecated the following tools: **CSSLint**, **Faux Pas**, **JSHint**, **Tailor**, and **TSLint**.
 
-These tools have become deprecated or stopped being updated by their maintainers and started providing a bad experience for Codacy users either by reporting false positives or causing other unexpected issues.
+These tools have become deprecated or stopped being updated by their maintainers and started providing a bad experience to Codacy users either by reporting false positives or causing other unexpected issues.
 
 We've been working on alternatives for each deprecated tool. See [what to do if you are using one of the deprecated tools](#if-you-are-using-one-of-these-tools).
 
@@ -19,7 +19,7 @@ The remaining deprecated tools (Faux Pas, JSHint, and Tailor) will be removed la
 
 ## If you are using one of these tools
 
-To continue analyzing any affected repositories, enable the following tools in your [organization coding standards](../../organizations/using-coding-standards.md) (recommended) or on the [code patterns page](../../repositories-configure/configuring-code-patterns.md) of affected repositories, based on the deprecated tool you are using:
+To continue analyzing your repositories, enable the replacement tool for the corresponding deprecated tool listed below in your [organization coding standards](../../organizations/using-coding-standards.md) (recommended) or on the [code patterns page](../../repositories-configure/configuring-code-patterns.md) of each affected repositories:
 
 | Deprecated tool | Replacement tool |
 |-----------------|------------------|
