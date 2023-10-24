@@ -133,8 +133,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>CSS</td>
-      <td><a href="http://csslint.net/">CSSLint</a>,
-          <a href="https://stylelint.io/">Stylelint</a></td>
+      <td><a href="https://stylelint.io/">Stylelint</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -594,10 +593,6 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="https://github.com/rrrene/credo">Credo</a></td>
 <td><a href="https://github.com/codacy/codacy-credo" class="skip-vale">codacy/codacy-credo</a></td>
-</tr>
-<tr>
-<td><a href="http://csslint.net/">CSSLint</a></td>
-<td><a href="https://github.com/codacy/codacy-csslint" class="skip-vale">codacy/codacy-csslint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/arturbosch/detekt">detekt</a></td>
