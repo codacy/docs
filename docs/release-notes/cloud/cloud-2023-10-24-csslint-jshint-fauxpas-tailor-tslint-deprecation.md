@@ -15,7 +15,7 @@ We've been working on alternatives for each deprecated tool. See [what to do if 
 
 On January 1st, 2024 we'll be removing the following tools from Codacy: **CSSLint** and **TSLint**.
 
-The remaining deprecated tools (Faux Pas, JSHint, and Tailor) will be removed at a later date. You can follow the [Codacy release notes](https://docs.codacy.com/release-notes/) for further updates.
+The remaining deprecated tools (Faux Pas, JSHint, and Tailor) will be removed later. You can follow the [Codacy release notes](https://docs.codacy.com/release-notes/) for further updates.
 
 ## If you are using one of these tools
 
@@ -26,7 +26,7 @@ To continue analyzing any affected repositories, enable the following tools in y
 | CSSLint         | Stylelint        |
 | Faux Pas        | Clang-Tidy       |
 | JSHint          | ESLint           |
-| Tailor          | Swiftlint        |
+| Tailor          | SwiftLint        |
 | TSLint          | ESLint           |
 
 If you have any questions or need help, please contact <mailto:support@codacy.com>.
