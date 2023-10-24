@@ -299,12 +299,6 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
-    <td>Tailor</td>
-    <td>Swift</td>
-    <td><code>.tailor.yml</code></td>
-    <td></td>
-  </tr>
-  <tr>
     <td>TSLint</td>
     <td>TypeScript</td>
     <td><code>tslint.json</code></td>

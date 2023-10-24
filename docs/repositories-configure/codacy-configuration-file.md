@@ -136,7 +136,6 @@ SQLint
 spectral
 stylelint
 swiftlint
-tailor
 trivy
 tslint
 tsqllint
