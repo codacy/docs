@@ -335,7 +335,6 @@ The table below lists the configuration file names that Codacy detects and suppo
     -   CoffeeLint
     -   Cppcheck
     -   deadcode
-    -   Faux Pas
     -   Flawfinder
     -   Gosec
     -   Jackson Linter

@@ -279,7 +279,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Objective-C</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>2</sup></a>, <a href="http://fauxpasapp.com/">Faux Pas</a><a href="#client-side"><sup>2</sup></a></td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -561,10 +561,6 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a></td>
 <td><a href="https://github.com/codacy/codacy-scalameta" class="skip-vale">codacy/codacy-scalameta</a></td>
-</tr>
-<tr>
-<td><a href="http://fauxpasapp.com/">Faux Pas</a></td>
-<td><a href="https://github.com/codacy/codacy-faux-pas" class="skip-vale">codacy/codacy-faux-pas</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/securego/gosec">Gosec</a></td>
