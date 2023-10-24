@@ -6,7 +6,6 @@ Codacy automatically analyzes the default branch of your repository (typically `
 !!! note
     Codacy doesn't support and skips the analysis of branches named [`HEAD`](<https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefHEADaHEAD>) or [`refs/heads/*`](<https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefrefaref>), as these are Git reserved terms.
 
-
 To change the default branch of your repository or start analyzing other branches:
 
 1.  Open your repository **Settings**, tab **Branches**.
