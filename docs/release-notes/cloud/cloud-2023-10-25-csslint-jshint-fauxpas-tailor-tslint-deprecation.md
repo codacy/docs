@@ -29,4 +29,6 @@ To continue analyzing your repositories, enable the replacement tool for the cor
 | Tailor          | SwiftLint        |
 | TSLint          | ESLint           |
 
+The suggested replacement tools are enabled by default for new repositories, except for Clang Tidy, which is a [client-side tool](../../repositories-configure/local-analysis/client-side-tools.md).
+
 If you have any questions or need help, please contact <mailto:support@codacy.com>.
