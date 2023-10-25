@@ -88,7 +88,7 @@ Use the options in the menu of each issue to:
 
 To see the list of ignored issues, click the **Ignored** tab.
 
-To restore an ignored issue, click the issue title to expand the details and select **Unignore issue** from the options menu:
+To restore an ignored issue, select **Unignore issue** from the options menu:
 
 ![Restoring an ignored issue](images/issues-unignore.png)
 
