@@ -203,12 +203,6 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
-    <td>JSHint</td>
-    <td>JavaScript</td>
-    <td><code>.jshintrc</code></td>
-    <td></td>
-  </tr>
-  <tr>
     <td>markdownlint</td>
     <td>Markdown</td>
     <td><code>.markdownlint.json</code></td>
@@ -305,18 +299,6 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
-    <td>Tailor</td>
-    <td>Swift</td>
-    <td><code>.tailor.yml</code></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>TSLint</td>
-    <td>TypeScript</td>
-    <td><code>tslint.json</code></td>
-    <td></td>
-  </tr>
-  <tr>
     <td>TSQLLint</td>
     <td>Transact-SQL</td>
     <td><code>.tsqllintrc</code></td>
@@ -335,7 +317,6 @@ The table below lists the configuration file names that Codacy detects and suppo
     -   CoffeeLint
     -   Cppcheck
     -   deadcode
-    -   Faux Pas
     -   Flawfinder
     -   Gosec
     -   Jackson Linter
