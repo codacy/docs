@@ -11,7 +11,7 @@
         <meta name="description" content="List of tools that Codacy uses to analyze over 40 supported languages and frameworks. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code frameworks as well as code duplication, code complexity, and code coverage metrics for most programming languages.">
       
       
-        <meta http-equiv="last-modified" content="2023-10-17 16:32:24">
+        <meta http-equiv="last-modified" content="2023-10-25 08:30:25">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/supported-languages-and-tools/">
@@ -2363,6 +2363,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation/" title="Deprecation of CSSLint, JSHint, Faux Pas, Tailor, TSLint October 25, 2023" class="md-nav__link">
+      Deprecation of CSSLint, JSHint, Faux Pas, Tailor, TSLint October 25, 2023
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation/" title="Deprecation of bundler-audit October 13, 2023" class="md-nav__link">
       Deprecation of bundler-audit October 13, 2023
     </a>
@@ -4071,8 +4083,7 @@
     </tr>
     <tr>
       <td>CSS</td>
-      <td><a href="http://csslint.net/">CSSLint</a>,
-          <a href="https://stylelint.io/">Stylelint</a></td>
+      <td><a href="https://stylelint.io/">Stylelint</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -4152,7 +4163,6 @@
     <tr>
       <td>JavaScript</td>
       <td><a href="https://eslint.org/">ESLint</a>,
-          <a href="https://jshint.com/">JSHint</a>,
           <a href="https://pmd.github.io/">PMD</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://trivy.dev">Trivy</a></td>
@@ -4218,7 +4228,7 @@
     </tr>
     <tr>
       <td>Objective-C</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>2</sup></a>, <a href="http://fauxpasapp.com/">Faux Pas</a><a href="#client-side"><sup>2</sup></a></td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -4344,8 +4354,7 @@
     </tr>
     <tr>
       <td>Swift </td>
-      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a>,
-          <a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
+      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
       <td>-</td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
@@ -4373,8 +4382,7 @@
     </tr>
     <tr>
       <td>TypeScript</td>
-      <td><a href="https://eslint.org/">ESLint</a>,
-          <a href="https://palantir.github.io/tslint/">TSLint</a></td>
+      <td><a href="https://eslint.org/">ESLint</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
@@ -4498,10 +4506,6 @@
 <td><a href="https://github.com/codacy/codacy-scalameta" class="skip-vale">codacy/codacy-scalameta</a></td>
 </tr>
 <tr>
-<td><a href="http://fauxpasapp.com/">Faux Pas</a></td>
-<td><a href="https://github.com/codacy/codacy-faux-pas" class="skip-vale">codacy/codacy-faux-pas</a></td>
-</tr>
-<tr>
 <td><a href="https://github.com/securego/gosec">Gosec</a></td>
 <td><a href="https://github.com/codacy/codacy-gosec" class="skip-vale">codacy/codacy-gosec</a></td>
 </tr>
@@ -4530,10 +4534,6 @@
 <td><a href="https://github.com/codacy/codacy-credo" class="skip-vale">codacy/codacy-credo</a></td>
 </tr>
 <tr>
-<td><a href="http://csslint.net/">CSSLint</a></td>
-<td><a href="https://github.com/codacy/codacy-csslint" class="skip-vale">codacy/codacy-csslint</a></td>
-</tr>
-<tr>
 <td><a href="https://github.com/arturbosch/detekt">detekt</a></td>
 <td><a href="https://github.com/codacy/codacy-detekt" class="skip-vale">codacy/codacy-detekt</a></td>
 </tr>
@@ -4556,10 +4556,6 @@
 <tr>
 <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
 <td><a href="https://github.com/codacy/codacy-jackson-linter" class="skip-vale">codacy/codacy-jackson-linter</a></td>
-</tr>
-<tr>
-<td><a href="https://jshint.com/">JSHint</a></td>
-<td><a href="https://github.com/codacy/codacy-jshint" class="skip-vale">codacy/codacy-jshint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a></td>
@@ -4642,16 +4638,8 @@
 <td><a href="https://github.com/codacy/codacy-swiftlint" class="skip-vale">codacy/codacy-swiftlint</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
-<td><a href="https://github.com/codacy/codacy-tailor" class="skip-vale">codacy/codacy-tailor</a></td>
-</tr>
-<tr>
 <td><a href="https://trivy.dev">Trivy</a></td>
 <td><a href="https://github.com/codacy/codacy-trivy/" class="skip-vale">codacy/codacy-trivy</a></td>
-</tr>
-<tr>
-<td><a href="https://palantir.github.io/tslint/">TSLint</a></td>
-<td><a href="https://github.com/codacy/codacy-tslint" class="skip-vale">codacy/codacy-tslint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
@@ -4822,7 +4810,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 17, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 25, 2023</span>
     
   </small>
 </div>

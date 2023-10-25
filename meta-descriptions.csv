@@ -134,6 +134,7 @@ https://docs.codacy.com/release-notes/cloud/cloud-2023-07/,Release notes for Cod
 https://docs.codacy.com/release-notes/cloud/cloud-2023-08/,Release notes for Codacy Cloud August 2023.
 https://docs.codacy.com/release-notes/cloud/cloud-2023-09/,Release notes for Codacy Cloud September 2023.
 https://docs.codacy.com/release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation/,"On October 13th 2023 we deprecated the tool bundler-audit in favor of Trivy, a more complete and actively maintained tool for detecting vulnerabilities in Ruby gems and other languages, with a vulnerability database that's updated daily."
+https://docs.codacy.com/release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation/,"On October 25th 2023 we deprecated the following tools: CSSLint, Faux Pas, JSHint, Tailor, and TSLint."
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.0/,Release notes for Codacy Self-hosted v1.0.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.1/,Release notes for Codacy Self-hosted v1.0.1.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.1.0/,Release notes for Codacy Self-hosted v1.1.0.
