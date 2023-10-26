@@ -1,0 +1,160 @@
+---
+rss_title: Codacy release notes RSS feed
+rss_href: /feed_rss_created.xml
+description: Release notes for Codacy Self-hosted v13.0.0.
+codacy_tools_version_old: https://github.com/codacy/codacy-tools-sh/releases/tag/sh-1.2.6
+codacy_tools_version_new: https://github.com/codacy/codacy-tools-sh/releases/tag/sh-1.2.7
+---
+
+# Self-hosted v13.0.0
+
+These release notes are for [Codacy Self-hosted v13.0.0](https://github.com/codacy/chart/releases/tag/13.0.0){: target="_blank"}, released on October 26, 2023.<!-- TODO Update release date -->
+
+📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
+
+<!--TODO Check these issues manually
+
+Jira issues without release notes
+
+Epics:
+Bugs and other issues:
+-   https://codacy.atlassian.net/browse/TS-623
+-   https://codacy.atlassian.net/browse/TS-621
+-   https://codacy.atlassian.net/browse/TS-601
+-   https://codacy.atlassian.net/browse/TS-600
+-   https://codacy.atlassian.net/browse/TS-599
+-   https://codacy.atlassian.net/browse/TS-598
+-   https://codacy.atlassian.net/browse/TS-597
+-   https://codacy.atlassian.net/browse/TS-587
+-   https://codacy.atlassian.net/browse/TS-586
+-   https://codacy.atlassian.net/browse/TS-585
+-   https://codacy.atlassian.net/browse/TS-584
+-   https://codacy.atlassian.net/browse/TS-583
+-   https://codacy.atlassian.net/browse/TS-575
+-   https://codacy.atlassian.net/browse/TS-572
+-   https://codacy.atlassian.net/browse/TS-571
+-   https://codacy.atlassian.net/browse/TS-570
+-   https://codacy.atlassian.net/browse/TS-569
+-   https://codacy.atlassian.net/browse/TS-566
+-   https://codacy.atlassian.net/browse/TS-565
+-   https://codacy.atlassian.net/browse/TS-556
+-   https://codacy.atlassian.net/browse/TS-552
+-   https://codacy.atlassian.net/browse/TS-550
+-   https://codacy.atlassian.net/browse/TS-541
+-   https://codacy.atlassian.net/browse/TS-486
+-   https://codacy.atlassian.net/browse/TS-449
+-   https://codacy.atlassian.net/browse/TS-448
+-   https://codacy.atlassian.net/browse/TS-428
+-   https://codacy.atlassian.net/browse/TS-424
+-   https://codacy.atlassian.net/browse/TS-419
+-   https://codacy.atlassian.net/browse/TS-416
+
+Jira issues with disabled release notes
+
+Epics:
+Bugs and other issues:
+-   https://codacy.atlassian.net/browse/TS-615
+-   https://codacy.atlassian.net/browse/TS-595
+-   https://codacy.atlassian.net/browse/TS-546
+-   https://codacy.atlassian.net/browse/TS-524
+-   https://codacy.atlassian.net/browse/TS-523
+-   https://codacy.atlassian.net/browse/TS-521
+-   https://codacy.atlassian.net/browse/TS-515
+-   https://codacy.atlassian.net/browse/TS-513
+-   https://codacy.atlassian.net/browse/TS-509
+-   https://codacy.atlassian.net/browse/TS-508
+-   https://codacy.atlassian.net/browse/TS-507
+-   https://codacy.atlassian.net/browse/TS-506
+-   https://codacy.atlassian.net/browse/TS-505
+-   https://codacy.atlassian.net/browse/TS-483
+-   https://codacy.atlassian.net/browse/TS-482
+-   https://codacy.atlassian.net/browse/TS-481
+-   https://codacy.atlassian.net/browse/TS-479
+-   https://codacy.atlassian.net/browse/TS-478
+-   https://codacy.atlassian.net/browse/TS-466
+-   https://codacy.atlassian.net/browse/TS-465
+-   https://codacy.atlassian.net/browse/TS-456
+-   https://codacy.atlassian.net/browse/TS-374
+-   https://codacy.atlassian.net/browse/TS-336
+-   https://codacy.atlassian.net/browse/TS-110
+-   https://codacy.atlassian.net/browse/CY-7084
+-->
+
+## Upgrading Codacy Self-hosted
+
+Follow the steps below to upgrade to Codacy Self-hosted v13.0.0:
+
+1.  Check the [release notes for all Codacy Self-hosted versions](../index.md#self-hosted) **between your current version and the most recent version** for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
+
+1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v13.0/chart/maintenance/upgrade/).
+
+1.  Update your Codacy command-line tools to the following versions:<!--TODO Update CLI tool versions-->
+
+    -   [Codacy Analysis CLI MAJOR.MINOR.PATCH](https://github.com/codacy/codacy-analysis-cli/releases/tag/MAJOR.MINOR.PATCH)
+    -   [Codacy Coverage Reporter MAJOR.MINOR.PATCH](https://github.com/codacy/codacy-coverage-reporter/releases/tag/MAJOR.MINOR.PATCH)
+
+## Product enhancements
+
+-   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](https://docs.codacy.com/v13.0/repositories/pull-requests/), [Commit](https://docs.codacy.com/v13.0/repositories/commits/), and [Files](https://docs.codacy.com/v13.0/repositories/files/) page, and you can [define quality gates](https://docs.codacy.com/v13.0/repositories-configure/adjusting-quality-settings/#gates) with a coverage variation threshold using the same precision.
+
+    The increased precision of the metric reflects the code coverage changes better by reducing issues with rounding errors. ![Coverage variation on the Pull request quality overview](../images/io-92.png) (IO-92)
+
+## Bug fixes
+
+-   Pylint now supports Python 3.11 syntax. (TS-467)
+-   Added support for the ESLint plugin [<span class="skip-vale">vue-scoped-css</span>](https://www.npmjs.com/package/eslint-plugin-vue-scoped-css). (TS-356)
+-   Added support for the ESLint plugin [<span class="skip-vale">eslint-plugin-rxjs</span>](https://www.npmjs.com/package/eslint-plugin-rxjs). (TS-346)
+-   Added support for the ESLint plugins [<span class="skip-vale">eslint-plugin-markdown</span>](https://www.npmjs.com/package/eslint-plugin-markdown) and [<span class="skip-vale">eslint-plugin-yml</span>](https://www.npmjs.com/package/eslint-plugin-yml). (TS-121)
+-   Fixed an incorrect popup being shown when loading the repository Code patterns page. (PLUTO-717)
+
+## Tool versions
+
+This version of Codacy Self-hosted includes the tool versions below. The tools that were updated on this version are highlighted in bold:
+
+-   **@coffeelint/cli 5.2.11 (updated from 2.1.0)**
+-   Ameba 1.4.3
+-   **Bandit 1.7.5 (updated from 1.7.0)**
+-   Brakeman 4.3.1
+-   **bundler-audit (deprecated) 0.9.1 (updated from 0.6.1)**
+-   Checkov 2.3.187
+-   **[Checkstyle 10.12.3](https://checkstyle.sourceforge.io/releasenotes.html#Release_10.12.3) (updated from 10.3.1)**
+-   Clang-Tidy 10.0.1
+-   **[CodeNarc 3.3.0](https://github.com/CodeNarc/CodeNarc/blob/master/CHANGELOG.md) (updated from 3.2.0)**
+-   **[Cppcheck 2.12.0](https://github.com/danmar/cppcheck/releases/tag/2.12.0) (updated from 2.10.3)**
+-   Credo 1.4.0
+-   CSSLint (deprecated) 1.0.5
+-   dartanalyzer 2.17.0
+-   detekt 1.22.0
+-   **[ESLint 8.51.0](https://github.com/eslint/eslint/releases/tag/v8.51.0) (updated from 8.34.0)**
+-   ESLint (deprecated) 7.32.0
+-   Faux-Pas 1.7.2
+-   Flawfinder 2.0.19
+-   Gosec 2.15.0
+-   Hadolint 1.18.2
+-   **[Jackson Linter 2.15.2](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.15.2) (updated from 2.14.2)**
+-   **JSHint (deprecated) 2.13.6 (updated from 2.13.5)**
+-   markdownlint 0.26.2
+-   PHP Mess Detector 2.13.0
+-   PHP_CodeSniffer 3.7.2
+-   PMD 6.55.0
+-   Prospector 1.10.2
+-   **PSScriptAnalyzer 1.21.0 (updated from 1.18.3)**
+-   **[Pylint 2.17.5](https://github.com/pylint-dev/pylint/releases/tag/v2.17.5) (updated from 2.17.3)**
+-   Pylint (deprecated) 1.9.5
+-   **remark-lint 9.1.2 (updated from 7.0.1)**
+-   **[Revive 1.3.3](https://github.com/mgechev/revive/releases/tag/v1.3.3) (updated from 1.3.2)**
+-   **[RuboCop 1.56.1](https://github.com/rubocop/rubocop/releases/tag/v1.56.1) (updated from 1.52.1)**
+-   **Scalastyle 1.5.1 (updated from 1.5.0)**
+-   ShellCheck v0.9.0
+-   SonarC# 8.40
+-   SonarVB 8.15
+-   Spectral 1.16.0
+-   SpotBugs 4.7.3
+-   SQLint 0.2.1
+-   **[Staticcheck 2023.1.5](https://staticcheck.io/changes/2023.1.5/#2023.1.5) (updated from 2022.1.3)**
+-   **[Stylelint 15.10.3](https://github.com/stylelint/stylelint/releases/tag/15.10.3) (updated from 15.9.0)**
+-   SwiftLint 0.50.3
+-   Tailor 0.12.0
+-   TSLint (deprecated) 6.1.3
+-   TSQLLint 1.11.1
+-   **[Unity Roslyn Analyzers 1.17.0](https://github.com/microsoft/Microsoft.Unity.Analyzers/releases/tag/1.17.0) (updated from 1.14.0)**
