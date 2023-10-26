@@ -4,6 +4,8 @@ description: List of operations that users can perform on Codacy depending on th
 
 # Roles and permissions for organizations
 
+<!-- TODO TAROT-2414 overall page review -->
+
 Your team members have different permission levels on Codacy depending on their role on your Git provider. To change the permission level of a user on Codacy, you must adjust their role directly on your Git provider so that Codacy will use the corresponding permission level on the next time that the user logs in to Codacy.
 
 See the Codacy permission levels that correspond to each role on your Git provider:
@@ -344,6 +346,10 @@ To change this, open your organization **Settings**, page **Member privileges**,
     -   [GitHub](#permissions-for-github)
     -   [GitLab](#permissions-for-gitlab)
     -   [Bitbucket](#permissions-for-bitbucket)
+
+## Managing the Organization Manager role
+
+<!-- TODO TAROT-2414 Draft new section. Reuse parts of "Managing access to Security and risk management" -->
 
 ## See also
 

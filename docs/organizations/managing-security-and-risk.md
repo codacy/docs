@@ -1,5 +1,7 @@
 # Managing security and risk
 
+<!-- TODO TAROT-2414 overall page review -->
+
 !!! info "This is a preview feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
 
@@ -32,7 +34,7 @@ When viewing the dashboard, you can:
 -   Limit the total counts in each panel to a specific set of severities or repositories by clicking the **Severity** or **Repository** drop-downs above the main area.
 -   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
 
-![Security and risk management dashboard](images/security-risk-management-dashboard.png)
+![Security and risk management dashboard](images/security-risk-management-dashboard.png)<!-- TODO TAROT-2414 review screenshot -->
 
 ## Item list
 
@@ -46,15 +48,17 @@ When viewing the item list, you can:
 -   Find out more about an item by clicking its **Details** column to navigate to the item of interest on the source platform.
 -   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
 
-![Security and risk management items](images/security-risk-management-item-list.png)
+![Security and risk management items](images/security-risk-management-item-list.png)<!-- TODO TAROT-2414 review screenshot -->
 
 ## Configuration page
+
+<!-- TODO TAROT-2414 review/remove section-->
 
 The **Security and risk management configuration** page lets you [assign or revoke the Security Manager role](#managing-access-to-security-and-risk-management) for organization members and review the [severity assignment rules](#item-severities-and-deadlines).
 
 To access the configuration page, access the [dashboard](#dashboard) or the [item list](#item-list) and click the **Configure** button in the top right-hand corner of the page.
 
-![Security and risk management configuration](images/security-risk-management-configuration.png)
+![Security and risk management configuration](images/security-risk-management-configuration.png)<!-- TODO TAROT-2414 review screenshot -->
 
 ## How Codacy manages security items {: id="opening-and-closing-items"}
 
@@ -103,6 +107,8 @@ Codacy closes an item when it detects that the associated Jira issue is marked a
 
 ## Managing access to Security and risk management
 
+<!-- TODO TAROT-2414 review/remove section-->
+
 To better track and address security issues, organization admins can extend access to Security and risk management by assigning the Security Manager role to organization members.
 
 The Security Manager role is independent of the Git provider role of an organization member and provides only the permissions necessary to monitor security issues, following the principle of least privilege:
@@ -123,7 +129,7 @@ To assign the Security Manager role:
 
 1.  In the **Security managers** area, use the search field to find the relevant user and click the user's name.
 
-    ![Security and risk management access management](images/security-risk-management-access-management.png)
+    ![Security and risk management access management](images/security-risk-management-access-management.png)<!-- TODO TAROT-2414 review/remove screenshot -->
 
 ### Revoking the Security Manager role
 
