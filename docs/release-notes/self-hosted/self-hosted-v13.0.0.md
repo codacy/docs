@@ -36,6 +36,26 @@ Follow the steps below to upgrade to Codacy Self-hosted v13.0.0:
 
 -   Fixed an incorrect popup being shown when loading the repository Code patterns page. (PLUTO-717)
 
+## Deprecated tools
+
+This version of Codacy Self-hosted deprecates the following tools: **CSSLint**, **Faux Pas**, **JSHint**, **Tailor**, and **TSLint**.
+
+These tools have become deprecated or stopped being updated by their maintainers and started providing a bad experience to Codacy users either by reporting false positives or causing other unexpected issues.
+
+To continue analyzing your repositories, enable the replacement tool for the corresponding deprecated tool listed below on the [code patterns page](https://docs.codacy.com/v13.0/repositories-configure/configuring-code-patterns/) of each affected repository or in your [organization coding standard](https://docs.codacy.com/v13.0/organizations/using-a-coding-standard/), if you are using one:
+
+| Deprecated tool | Replacement tool |
+|-----------------|------------------|
+| CSSLint         | Stylelint        |
+| Faux Pas        | Clang-Tidy       |
+| JSHint          | ESLint           |
+| Tailor          | SwiftLint        |
+| TSLint          | ESLint           |
+
+The suggested replacement tools are enabled by default for new repositories, except for Clang Tidy, which is a [client-side tool](https://docs.codacy.com/v13.0/related-tools/local-analysis/client-side-tools/).
+
+If you have any questions or need help, please contact <mailto:support@codacy.com>.
+
 ## Tool versions
 
 This version of Codacy Self-hosted includes the tool versions below. The tools that were updated on this version are highlighted in bold:
