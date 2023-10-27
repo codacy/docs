@@ -43,7 +43,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Ameba 1.4.3
 -   **[Bandit 1.7.5](https://github.com/PyCQA/bandit/releases/tag/1.7.5) (updated from 1.7.0)**
 -   Brakeman 4.3.1
--   **[bundler-audit (deprecated) 0.9.1](https://github.com/rubysec/bundler-audit/releases/tag/v0.9.1) (updated from 0.6.1)**
+-   **[bundler-audit 0.9.1](https://github.com/rubysec/bundler-audit/releases/tag/v0.9.1) (updated from 0.6.1)**
 -   Checkov 2.3.187
 -   **[Checkstyle 10.12.3](https://checkstyle.sourceforge.io/releasenotes.html#Release_10.12.3) (updated from 10.3.1)**
 -   Clang-Tidy 10.0.1
