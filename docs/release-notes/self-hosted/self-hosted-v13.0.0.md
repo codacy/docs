@@ -27,6 +27,8 @@ Follow the steps below to upgrade to Codacy Self-hosted v13.0.0:
 
 ## Product enhancements
 
+-   Added support for [Kubernetes 1.26](https://docs.codacy.com/v13.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup). (REL-1389)
+-   Added support for [PostgreSQL server 12](https://docs.codacy.com/v13.0/chart/requirements/#postgresql-server-setup). (REL-1347)
 -   Pylint now supports Python 3.11 syntax. (TS-467)
 -   Added support for the ESLint plugin [<span class="skip-vale">vue-scoped-css</span>](https://www.npmjs.com/package/eslint-plugin-vue-scoped-css). (TS-356)
 -   Added support for the ESLint plugin [<span class="skip-vale">eslint-plugin-rxjs</span>](https://www.npmjs.com/package/eslint-plugin-rxjs). (TS-346)
