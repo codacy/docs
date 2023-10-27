@@ -178,7 +178,6 @@ The Security Monitor supports checking the languages and frameworks below for an
     <tr>
       <td>Ruby<a href="#ruby-31"> <sup>5</sup></a></td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a>,
-          <a href="https://github.com/rubysec/bundler-audit">bundler-audit</a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>

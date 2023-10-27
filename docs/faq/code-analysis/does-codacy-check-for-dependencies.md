@@ -1,5 +1,5 @@
 # Does Codacy check for dependencies?
 
-Codacy doesn't check for dependencies. Codacy performs static code analysis on the source code and checks for code style and security issues, duplication, complexity, and coverage.
+Yes, Codacy scans the manifest files of your repositories and displays any vulnerable dependencies as Codacy issues.
 
-To learn more on how to extend analysis on your repositories, see Codacy's [supported languages and tools](../../getting-started/supported-languages-and-tools.md).
+For a list of supported languages and manifest files scanned by the Codacy dependency vulnerability scanning tools, see [Supported languages and tools](../../getting-started/supported-languages-and-tools.md).

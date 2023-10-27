@@ -6,9 +6,9 @@ description: List of tools that Codacy uses to analyze over 40 supported languag
 
 Codacy uses industry-leading tools to perform automatic static code analysis over 40 supported languages and frameworks:
 
--   **For programming languages** Codacy provides static analysis as well as code duplication, code complexity, and code coverage metrics for key languages.
+-   **For programming languages** Codacy provides static analysis as well as code duplication, code complexity, secret detection, dependency vulnerability scanning, and code coverage metrics for key languages.
 
--   **For cloud infrastructure-as-code frameworks** Codacy provides static analysis to enforce security and compliance best practices.
+-   **For cloud infrastructure-as-code frameworks** Codacy provides static analysis and secret detection to enforce security and compliance best practices.
 
 ## Languages and frameworks
 
@@ -25,10 +25,13 @@ The table below lists all languages and frameworks that Codacy supports and the 
 
 <table>
   <colgroup>
-    <col width="20%"/>
-    <col width="25%"/>
-    <col width="15%"/>
-    <col width="20%"/>
+    <col span="1" style="width: 20%;">
+    <col span="1" style="width: 20%;">
+    <col span="1" style="width: 10%;">
+    <col span="1" style="width: 10%;">
+    <col span="1" style="width: 20%;">
+    <col span="1" style="width: 10%;">
+    <col span="1" style="width: 10%;">
     <col width="20%"/>
   </colgroup>
   <thead>
@@ -37,6 +40,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Static analysis</a></th>
       <th><a style="color: white;" href="#suggest-fixes">Suggested fixes</a></th>
       <th>Secret detection</th>
+      <th>Dependency vulnerability scanning</th>
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">Duplication</a></th>
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">Complexity</a></th>
     </tr>
@@ -49,10 +53,12 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>AsyncAPI</td>
       <td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -66,10 +72,12 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://trivy.dev">Trivy</a><a href="#yaml-only"> <sup>1</sup></a></td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Azure Resource Manager Templates</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -82,6 +90,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>*.lock</code> (Conan) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
     </tr>
@@ -92,6 +101,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>*.lock</code> (Conan) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
     </tr>
@@ -100,12 +110,14 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>.deps.json</code> (.Net), <code>packages.lock.json</code> (NuGet) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
     </tr>
     <tr>
       <td>CoffeeScript</td>
       <td><a href="https://github.com/clutchski/coffeelint">CoffeeLint</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -118,11 +130,12 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>CSS</td>
-      <td><a href="http://csslint.net/">CSSLint</a>,
-          <a href="https://stylelint.io/">Stylelint</a></td>
+      <td><a href="https://stylelint.io/">Stylelint</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -135,6 +148,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Dockerfile</td>
@@ -143,12 +157,14 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Elixir</td>
       <td><a href="https://github.com/rrrene/credo">Credo</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>mix.lock</code> (Mix) </td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -161,12 +177,14 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://staticcheck.io/">Staticcheck</a><a href="#client-side"><sup>2</sup></a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
+      <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a></td>
     </tr>
     <tr>
       <td>Groovy</td>
       <td><a href="https://codenarc.github.io/CodeNarc/">CodeNarc</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -179,6 +197,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://trivy.dev">Trivy</a><a href="#yaml-only"> <sup>1</sup></a></td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Java</td>
@@ -188,16 +207,17 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td><a href="https://pmd.github.io/">PMD</a>,
           <a href="https://trivy.dev">Trivy</a></td>
+      <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
     </tr>
     <tr>
       <td>JavaScript</td>
       <td><a href="https://eslint.org/">ESLint</a>,
-          <a href="https://jshint.com/">JSHint</a>,
           <a href="https://pmd.github.io/">PMD</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://eslint.org/">ESLint</a></td>
     </tr>
@@ -209,6 +229,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>JSP</td>
@@ -217,10 +238,12 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Kotlin</td>
       <td><a href="https://github.com/detekt/detekt">detekt</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
@@ -234,10 +257,12 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://trivy.dev">Trivy</a><a href="#yaml-only"> <sup>1</sup></a></td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Less</td>
       <td><a href="https://stylelint.io/">Stylelint</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -250,10 +275,12 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Objective-C</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>2</sup></a>, <a href="http://fauxpasapp.com/">Faux Pas</a><a href="#client-side"><sup>2</sup></a></td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>2</sup></a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -266,6 +293,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>PHP</td>
@@ -273,12 +301,14 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://phpmd.org/">PHP Mess Detector</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
       <td><a href="https://github.com/sebastianbergmann/phpcpd">PHPCPD</a></td>
       <td><a href="https://github.com/pdepend/pdepend">PHP Depend</a></td>
     </tr>
     <tr>
       <td>PL/SQL</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -291,6 +321,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>PowerShell</td>
@@ -299,10 +330,10 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
-      <td>Python
-      </td>
+      <td>Python</td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://github.com/pylint-dev/pylint">Pylint</a></td>
@@ -310,17 +341,17 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Pipfile.lock</code> (pipenv) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/rubik/radon">Radon</a></td>
     </tr>
     <tr>
-      <td>Ruby<a href="#ruby-31"><sup>5</sup></a>
-      </td>
+      <td>Ruby<a href="#ruby-31"><sup>5</sup></a></td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a>,
-          <a href="https://github.com/rubysec/bundler-audit">bundler-audit</a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Gemfile.lock</code> (Bundler) </td>
       <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
       <td><a href="https://github.com/rubocop/rubocop">RuboCop</a></td>
     </tr>
@@ -329,6 +360,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Cargo.lock</code> (Cargo) </td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -339,13 +371,14 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
-      <td>Scala
-      </td>
+      <td>Scala</td>
       <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
           <a href="http://www.scalastyle.org/">Scalastyle</a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>2</sup></a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -359,6 +392,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Shell</td>
@@ -367,13 +401,14 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Swift </td>
-      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a>,
-          <a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
+      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
       <td>-</td>
       <td>-</td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#swiftlint-complexity"><sup>6</sup></a></td>
     </tr>
@@ -385,6 +420,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Transact-SQL</td>
@@ -393,19 +429,21 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>TypeScript</td>
-      <td><a href="https://eslint.org/">ESLint</a>,
-          <a href="https://palantir.github.io/tslint/">TSLint</a></td>
+      <td><a href="https://eslint.org/">ESLint</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://eslint.org/">ESLint</a></td>
     </tr>
     <tr>
       <td>Unity</td>
       <td><a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a><a href="#client-side"><sup>2</sup></a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -418,10 +456,12 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Visual Basic</td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -434,10 +474,12 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>XML</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -450,12 +492,14 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>YAML</td>
       <td>-</td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -823,10 +867,6 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-brakeman" class="skip-vale">codacy/codacy-brakeman</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/rubysec/bundler-audit">bundler-audit</a></td>
-<td><a href="https://github.com/codacy/codacy-bundler-audit" class="skip-vale">codacy/codacy-bundler-audit</a></td>
-</tr>
-<tr>
 <td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a></td>
 <td><a href="https://github.com/codacy/codacy-checkstyle" class="skip-vale">codacy/codacy-checkstyle</a></td>
 </tr>
@@ -841,10 +881,6 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a></td>
 <td><a href="https://github.com/codacy/codacy-scalameta" class="skip-vale">codacy/codacy-scalameta</a></td>
-</tr>
-<tr>
-<td><a href="http://fauxpasapp.com/">Faux Pas</a></td>
-<td><a href="https://github.com/codacy/codacy-faux-pas" class="skip-vale">codacy/codacy-faux-pas</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/securego/gosec">Gosec</a></td>
@@ -871,12 +907,8 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-cppcheck" class="skip-vale">codacy/codacy-cppcheck</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/rrrene/credo">Credo</a></span></td>
+<td><a href="https://github.com/rrrene/credo">Credo</a></td>
 <td><a href="https://github.com/codacy/codacy-credo" class="skip-vale">codacy/codacy-credo</a></td>
-</tr>
-<tr>
-<td><a href="http://csslint.net/">CSSLint</a></td>
-<td><a href="https://github.com/codacy/codacy-csslint" class="skip-vale">codacy/codacy-csslint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/arturbosch/detekt">detekt</a></td>
@@ -901,10 +933,6 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
 <td><a href="https://github.com/codacy/codacy-jackson-linter" class="skip-vale">codacy/codacy-jackson-linter</a></td>
-</tr>
-<tr>
-<td><a href="https://jshint.com/">JSHint</a></td>
-<td><a href="https://github.com/codacy/codacy-jshint" class="skip-vale">codacy/codacy-jshint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a></td>
@@ -987,16 +1015,8 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-swiftlint" class="skip-vale">codacy/codacy-swiftlint</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
-<td><a href="https://github.com/codacy/codacy-tailor" class="skip-vale">codacy/codacy-tailor</a></td>
-</tr>
-<tr>
 <td><a href="https://trivy.dev">Trivy</a></td>
 <td><a href="https://github.com/codacy/codacy-trivy/" class="skip-vale">codacy/codacy-trivy</a></td>
-</tr>
-<tr>
-<td><a href="https://palantir.github.io/tslint/">TSLint</a></td>
-<td><a href="https://github.com/codacy/codacy-tslint" class="skip-vale">codacy/codacy-tslint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
