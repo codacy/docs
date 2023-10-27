@@ -46,7 +46,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Ameba 1.4.3
 -   **[Bandit 1.7.5](https://github.com/PyCQA/bandit/releases/tag/1.7.5) (updated from 1.7.0)**
 -   Brakeman 4.3.1
--   **bundler-audit (deprecated) 0.9.1 (updated from 0.6.1)**
+-   **[bundler-audit (deprecated) 0.9.1](https://github.com/rubysec/bundler-audit/releases/tag/v0.9.1) (updated from 0.6.1)**
 -   Checkov 2.3.187
 -   **[Checkstyle 10.12.3](https://checkstyle.sourceforge.io/releasenotes.html#Release_10.12.3) (updated from 10.3.1)**
 -   Clang-Tidy 10.0.1
@@ -54,7 +54,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **[CoffeeLint 5.2.11](https://github.com/coffeelint/coffeelint/releases/tag/v5.2.11) (updated from 2.1.0)**
 -   **[Cppcheck 2.12.0](https://github.com/danmar/cppcheck/releases/tag/2.12.0) (updated from 2.10.3)**
 -   Credo 1.4.0
--   CSSLint (deprecated) 1.0.5
+-   **CSSLint (deprecated) 1.0.5**
 -   dartanalyzer 2.17.0
 -   detekt 1.22.0
 -   **[ESLint 8.51.0](https://github.com/eslint/eslint/releases/tag/v8.51.0) (updated from 8.34.0)**
@@ -64,7 +64,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   Gosec 2.15.0
 -   Hadolint 1.18.2
 -   **[Jackson Linter 2.15.2](https://github.com/FasterXML/jackson/wiki/Jackson-Release-2.15.2) (updated from 2.14.2)**
--   **JSHint (deprecated) 2.13.6 (updated from 2.13.5)**
+-   **[JSHint (deprecated) 2.13.6](https://github.com/jshint/jshint/releases/tag/2.13.6) (updated from 2.13.5)**
 -   markdownlint 0.26.2
 -   PHP Mess Detector 2.13.0
 -   PHP_CodeSniffer 3.7.2
@@ -87,6 +87,6 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **[Stylelint 15.10.3](https://github.com/stylelint/stylelint/releases/tag/15.10.3) (updated from 15.9.0)**
 -   SwiftLint 0.50.3
 -   Tailor 0.12.0
--   TSLint (deprecated) 6.1.3
+-   **TSLint (deprecated) 6.1.3**
 -   TSQLLint 1.11.1
 -   **[Unity Roslyn Analyzers 1.17.0](https://github.com/microsoft/Microsoft.Unity.Analyzers/releases/tag/1.17.0) (updated from 1.14.0)**
