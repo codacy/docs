@@ -56,7 +56,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   detekt 1.22.0
 -   **[ESLint 8.51.0](https://github.com/eslint/eslint/releases/tag/v8.51.0) (updated from 8.34.0)**
 -   ESLint (deprecated) 7.32.0
--   Faux-Pas 1.7.2
+-   **Faux-Pas (deprecated) 1.7.2**
 -   Flawfinder 2.0.19
 -   Gosec 2.15.0
 -   Hadolint 1.18.2
@@ -83,7 +83,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **[Staticcheck 2023.1.5](https://staticcheck.io/changes/2023.1.5/#2023.1.5) (updated from 2022.1.3)**
 -   **[Stylelint 15.10.3](https://github.com/stylelint/stylelint/releases/tag/15.10.3) (updated from 15.9.0)**
 -   SwiftLint 0.50.3
--   Tailor 0.12.0
+-   **Tailor (deprecated) 0.12.0**
 -   **TSLint (deprecated) 6.1.3**
 -   TSQLLint 1.11.1
 -   **[Unity Roslyn Analyzers 1.17.0](https://github.com/microsoft/Microsoft.Unity.Analyzers/releases/tag/1.17.0) (updated from 1.14.0)**
