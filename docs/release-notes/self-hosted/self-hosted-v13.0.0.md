@@ -31,9 +31,6 @@ Follow the steps below to upgrade to Codacy Self-hosted v13.0.0:
 -   Added support for the ESLint plugin [<span class="skip-vale">vue-scoped-css</span>](https://www.npmjs.com/package/eslint-plugin-vue-scoped-css). (TS-356)
 -   Added support for the ESLint plugin [<span class="skip-vale">eslint-plugin-rxjs</span>](https://www.npmjs.com/package/eslint-plugin-rxjs). (TS-346)
 -   Added support for the ESLint plugins [<span class="skip-vale">eslint-plugin-markdown</span>](https://www.npmjs.com/package/eslint-plugin-markdown) and [<span class="skip-vale">eslint-plugin-yml</span>](https://www.npmjs.com/package/eslint-plugin-yml). (TS-121)
--   Codacy now displays the coverage variation metric with a precision of two decimal places on the [Pull request](https://docs.codacy.com/v13.0/repositories/pull-requests/), [Commit](https://docs.codacy.com/v13.0/repositories/commits/), and [Files](https://docs.codacy.com/v13.0/repositories/files/) page, and you can [define quality gates](https://docs.codacy.com/v13.0/repositories-configure/adjusting-quality-settings/#gates) with a coverage variation threshold using the same precision.
-
-    The increased precision of the metric reflects the code coverage changes better by reducing issues with rounding errors. ![Coverage variation on the Pull request quality overview](../images/io-92.png) (IO-92)
 
 ## Bug fixes
 
