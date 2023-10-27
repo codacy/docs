@@ -111,15 +111,15 @@ Follow the steps below to upgrade to Codacy Self-hosted v13.0.0:
 
 This version of Codacy Self-hosted includes the tool versions below. The tools that were updated on this version are highlighted in bold:
 
--   **@coffeelint/cli 5.2.11 (updated from 2.1.0)**
 -   Ameba 1.4.3
--   **Bandit 1.7.5 (updated from 1.7.0)**
+-   **[Bandit 1.7.5](https://github.com/PyCQA/bandit/releases/tag/1.7.5) (updated from 1.7.0)**
 -   Brakeman 4.3.1
 -   **bundler-audit (deprecated) 0.9.1 (updated from 0.6.1)**
 -   Checkov 2.3.187
 -   **[Checkstyle 10.12.3](https://checkstyle.sourceforge.io/releasenotes.html#Release_10.12.3) (updated from 10.3.1)**
 -   Clang-Tidy 10.0.1
 -   **[CodeNarc 3.3.0](https://github.com/CodeNarc/CodeNarc/blob/master/CHANGELOG.md) (updated from 3.2.0)**
+-   **[CoffeeLint 5.2.11](https://github.com/coffeelint/coffeelint/releases/tag/v5.2.11) (updated from 2.1.0)**
 -   **[Cppcheck 2.12.0](https://github.com/danmar/cppcheck/releases/tag/2.12.0) (updated from 2.10.3)**
 -   Credo 1.4.0
 -   CSSLint (deprecated) 1.0.5
@@ -138,13 +138,13 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   PHP_CodeSniffer 3.7.2
 -   PMD 6.55.0
 -   Prospector 1.10.2
--   **PSScriptAnalyzer 1.21.0 (updated from 1.18.3)**
+-   **[PSScriptAnalyzer 1.21.0](https://github.com/PowerShell/PSScriptAnalyzer/releases/tag/1.21.0) (updated from 1.18.3)**
 -   **[Pylint 2.17.5](https://github.com/pylint-dev/pylint/releases/tag/v2.17.5) (updated from 2.17.3)**
 -   Pylint (deprecated) 1.9.5
--   **remark-lint 9.1.2 (updated from 7.0.1)**
+-   **[remark-lint 9.1.2](https://github.com/remarkjs/remark-lint/releases/tag/9.1.2) (updated from 7.0.1)**
 -   **[Revive 1.3.3](https://github.com/mgechev/revive/releases/tag/v1.3.3) (updated from 1.3.2)**
 -   **[RuboCop 1.56.1](https://github.com/rubocop/rubocop/releases/tag/v1.56.1) (updated from 1.52.1)**
--   **Scalastyle 1.5.1 (updated from 1.5.0)**
+-   **[Scalastyle 1.5.1](https://github.com/beautiful-scala/scalastyle/releases/tag/v1.5.1) (updated from 1.5.0)**
 -   ShellCheck v0.9.0
 -   SonarC# 8.40
 -   SonarVB 8.15
