@@ -263,6 +263,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
+    <td>Semgrep</td><!-- TODO TAROT-2355 confirm supported language list and config file names -->
+    <td>Apex, Bash, C, C#, C++, Clojure, Dart, Dockerfile, Elixir, Go, Java, JavaScript, Kotlin, PHP, Python, Ruby, Rust, Scala, Swift, Terraform, TypeScript</td>
+    <td><code>semgrep.yml</code>, <code>semgrep.yaml</code></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>SonarC#</td>
     <td>C#</td>
     <td><code>SonarLint.xml</code></td>
