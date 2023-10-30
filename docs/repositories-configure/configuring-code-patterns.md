@@ -123,7 +123,7 @@ The table below lists the configuration file names that Codacy detects and suppo
   <thead>
     <tr>
       <th>Tool name</th>
-      <th>Language</th>
+      <th>Languages</th>
       <th>Files detected</th>
       <th>Other info</th>
     <tr>
