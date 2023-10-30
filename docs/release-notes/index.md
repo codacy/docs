@@ -18,6 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2023
 
+-   [Deprecation of CSSLint, JSHint, Faux Pas, Tailor, TSLint October 25, 2023](cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md)
 -   [Deprecation of bundler-audit October 13, 2023](cloud/cloud-2023-10-13-bundler-audit-deprecation.md)
 -   [Cloud September 2023](cloud/cloud-2023-09.md)
 -   [Cloud August 2023](cloud/cloud-2023-08.md)

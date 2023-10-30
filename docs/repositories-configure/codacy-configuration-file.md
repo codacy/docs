@@ -116,7 +116,6 @@ eslint
 flawfinder
 hadolint
 jacksonlinter
-jshint
 markdownlint
 phpcs
 phpmd
@@ -137,9 +136,7 @@ SQLint
 spectral
 stylelint
 swiftlint
-tailor
 trivy
-tslint
 tsqllint
 ```
 

@@ -133,8 +133,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>CSS</td>
-      <td><a href="http://csslint.net/">CSSLint</a>,
-          <a href="https://stylelint.io/">Stylelint</a></td>
+      <td><a href="https://stylelint.io/">Stylelint</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -214,7 +213,6 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>JavaScript</td>
       <td><a href="https://eslint.org/">ESLint</a>,
-          <a href="https://jshint.com/">JSHint</a>,
           <a href="https://pmd.github.io/">PMD</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://trivy.dev">Trivy</a></td>
@@ -280,7 +278,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Objective-C</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>2</sup></a>, <a href="http://fauxpasapp.com/">Faux Pas</a><a href="#client-side"><sup>2</sup></a></td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -406,8 +404,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Swift </td>
-      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a>,
-          <a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
+      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
       <td>-</td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
@@ -435,8 +432,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>TypeScript</td>
-      <td><a href="https://eslint.org/">ESLint</a>,
-          <a href="https://palantir.github.io/tslint/">TSLint</a></td>
+      <td><a href="https://eslint.org/">ESLint</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
@@ -564,10 +560,6 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-scalameta" class="skip-vale">codacy/codacy-scalameta</a></td>
 </tr>
 <tr>
-<td><a href="http://fauxpasapp.com/">Faux Pas</a></td>
-<td><a href="https://github.com/codacy/codacy-faux-pas" class="skip-vale">codacy/codacy-faux-pas</a></td>
-</tr>
-<tr>
 <td><a href="https://github.com/securego/gosec">Gosec</a></td>
 <td><a href="https://github.com/codacy/codacy-gosec" class="skip-vale">codacy/codacy-gosec</a></td>
 </tr>
@@ -596,10 +588,6 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-credo" class="skip-vale">codacy/codacy-credo</a></td>
 </tr>
 <tr>
-<td><a href="http://csslint.net/">CSSLint</a></td>
-<td><a href="https://github.com/codacy/codacy-csslint" class="skip-vale">codacy/codacy-csslint</a></td>
-</tr>
-<tr>
 <td><a href="https://github.com/arturbosch/detekt">detekt</a></td>
 <td><a href="https://github.com/codacy/codacy-detekt" class="skip-vale">codacy/codacy-detekt</a></td>
 </tr>
@@ -622,10 +610,6 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
 <td><a href="https://github.com/codacy/codacy-jackson-linter" class="skip-vale">codacy/codacy-jackson-linter</a></td>
-</tr>
-<tr>
-<td><a href="https://jshint.com/">JSHint</a></td>
-<td><a href="https://github.com/codacy/codacy-jshint" class="skip-vale">codacy/codacy-jshint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a></td>
@@ -708,16 +692,8 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-swiftlint" class="skip-vale">codacy/codacy-swiftlint</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
-<td><a href="https://github.com/codacy/codacy-tailor" class="skip-vale">codacy/codacy-tailor</a></td>
-</tr>
-<tr>
 <td><a href="https://trivy.dev">Trivy</a></td>
 <td><a href="https://github.com/codacy/codacy-trivy/" class="skip-vale">codacy/codacy-trivy</a></td>
-</tr>
-<tr>
-<td><a href="https://palantir.github.io/tslint/">TSLint</a></td>
-<td><a href="https://github.com/codacy/codacy-tslint" class="skip-vale">codacy/codacy-tslint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
