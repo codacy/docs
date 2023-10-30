@@ -129,6 +129,7 @@ revive
 rubocop
 roslyn
 scalastyle
+semgrep<!-- TODO TAROT-2355 confirm -->
 shellcheck
 sonarscharp
 sonarvb
