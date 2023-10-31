@@ -30,6 +30,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <th>Repository<br/>Write</th>
       <th>Repository<br/>Maintain</th>
       <th>Repository<br/>Admin</th>
+      <th>-</th>
       <th>Organization<br/>Owner</th>
     </tr>
   </thead>
@@ -40,6 +41,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2">Repository<br/>Read</td>
       <td colspan="2">Repository<br/>Write</td>
       <td>Repository<br/>Admin</td>
+      <td>Organization<br/>Manager</td>
       <td>Organization<br/>Admin</td>
     </tr>
     <tr>
@@ -48,6 +50,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes<sup>2</sup></td>
+      <td class="yes">Yes</td>
       <td class="yes">Yes<sup>2</sup></td>
     </tr>
     <tr>
@@ -57,6 +60,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</td>
@@ -64,6 +68,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
       <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
+      <td class="yes">Yes</td><!--TODO TAROT-2414 confirm this is correct. Note on Slite: Configurable, depends on Repository permission, and only for repositories that they have access to in the git provider-->
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -72,6 +77,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
+      <td class="yes">Yes</td><!--TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -80,6 +86,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
+      <td class="yes">Yes</td><!-- TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -88,6 +95,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td colspan="2">No</td>
       <td class="yes">Yes<sup>3</sup></td>
+      <td class="yes">Yes</td><!-- TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -97,6 +105,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td>No</td>
       <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Configure default Git provider integration settings</td>
@@ -104,6 +113,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td colspan="2">No</td>
       <td>No</td>
+      <td class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -113,6 +123,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td>No</td>
       <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Invite and accept members,<br/>modify billing</td>
@@ -120,6 +131,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td colspan="2">No</td>
       <td>No</td>
+      <td>No</td><!--TODO TAROT-2414 confirm this is correct-->
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -127,6 +139,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td>No</td>
       <td colspan="2">No</td>
       <td colspan="2">No</td>
+      <td>No</td>
       <td>No</td>
       <td class="yes">Yes</td>
     </tr>
@@ -151,6 +164,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <th>Project<br/>Developer</th>
       <th>Project<br/>Maintainer</th>
       <th>Project<br/>Owner</th>
+      <th>-</th>
       <th>Group<br/>Owner</th>
       <th>Administrator</th>
     </tr>
@@ -162,6 +176,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">Repository<br/>Read</td>
       <td>Repository<br/>Write</td>
       <td colspan="2">Repository<br/>Admin</td>
+      <td>Organization<br/>Manager</td>
       <td colspan="2">Organization<br/>Admin</td>
     </tr>
     <tr>
@@ -170,6 +185,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes<sup>2</sup></td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
+      <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
     </tr>
     <tr>
@@ -178,6 +194,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
+      <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -186,6 +203,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
       <td colspan="2" class="yes">Yes</td>
+      <td class="yes">Yes</td><!--TODO TAROT-2414 confirm this is correct. Note on Slite: Configurable, depends on Repository permission, and only for repositories that they have access to in the git provider-->
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -194,6 +212,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
+      <td class="yes">Yes</td><!--TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -202,6 +221,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td>No</td>
       <td colspan="2" class="yes">Yes</td>
+      <td class="yes">Yes</td><!-- TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -210,6 +230,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td>No</td>
       <td colspan="2" class="yes">Yes</td>
+      <td class="yes">Yes</td><!-- TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -218,6 +239,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td>No</td>
       <td colspan="2">No</td>
+      <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -226,6 +248,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td>No</td>
       <td colspan="2">No</td>
+      <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -234,6 +257,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td>No</td>
       <td colspan="2">No</td>
+      <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -242,6 +266,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td>No</td>
       <td colspan="2">No</td>
+      <td>No</td><!--TODO TAROT-2414 confirm this is correct-->
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -250,6 +275,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td>No</td>
       <td colspan="2">No</td>
+      <td>No</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
   </tbody>
@@ -268,6 +294,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <th>Bitbucket role</th>
       <th>Read</th>
       <th>Write<sup>1</sup></th>
+      <th>-</th>
       <th>Admin</th>
     </tr>
   </thead>
@@ -275,61 +302,73 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
     <tr>
       <td>Codacy permission level</td>
       <td colspan="2">Repository<br/>Read</td>
+      <td>Organization<br/>Manager</td>
       <td>Organization<br/>Admin</td>
     </tr>
     <tr>
       <td>Join organization</td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
+      <td class="yes">Yes</td>
       <td class="yes">Yes<sup>2</sup></td>
     </tr>
     <tr>
       <td>View and follow private repository</td>
       <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</td>
       <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
+      <td class="yes">Yes</td><!--TODO TAROT-2414 confirm this is correct. Note on Slite: Configurable, depends on Repository permission, and only for repositories that they have access to in the git provider-->
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Upload coverage using an account API token,<br/>see the coverage report logs</td>
       <td colspan="2">No</td>
+      <td class="yes">Yes</td><!--TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Configure repository</td>
       <td colspan="2">No</td>
+      <td class="yes">Yes</td><!-- TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Add and remove repository</td>
       <td colspan="2">No</td>
+      <td class="yes">Yes</td><!-- TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Manage gate policies and coding standards,<br/>bulk copy patterns</td>
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Configure default settings for Git provider integration</td>
       <td colspan="2">No</td>
+      <td class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Access Security and risk management</td>
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Invite and accept members,<br/>modify billing</td>
       <td colspan="2">No</td>
+      <td>No</td><!--TODO TAROT-2414 confirm this is correct-->
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Manage the Organization Manager role</td>
       <td colspan="2">No</td>
+      <td>No</td>
       <td class="yes">Yes</td>
     </tr>
   </tbody>
@@ -362,61 +401,13 @@ To change this, open your organization **Settings**, page **Roles and permission
 
 ## Managing the Organization Manager role
 
-<!-- TODO TAROT-2414 review intro and permissions-->
-To better manage organization-level settings, organization admins can share some permissions with other organization members using the Organization Manager role.
+To better manage organization-level settings, organization admins can share some permissions with other organization members by assigning the Organization Manager role.
 
-The Organization Manager role is independent of the Git provider role of an organization member and provides the following permissions:
+The Organization Manager role is independent of the Git provider role of an organization member. To review the extra provided permissions, see the respective permission table:
 
-<table data-exclude="">
-  <thead>
-    <tr>
-      <th>Permission</th>
-      <th>Organization Manager</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="background-color: #FFFFFF">Manage gate policies and coding standards,<br/>bulk copy patterns</td>
-      <td class="yes" style="background-color: #E6F4EA">Yes</td>
-    </tr>
-    <tr>
-      <td>Access Security and risk management</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Configure default Git provider integration settings</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Configure all organization-level integrations</td><!--TODO TAROT-2414 Note: this is not on the permission table-->
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Invite and accept members,<br/>modify billing</td><!--TODO TAROT-2414 confirm this is correct-->
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>Manage the Organization Manager role</td>
-      <td>No</td>
-    </tr>
-    <tr>
-      <td>All other Organization Admin permissions</td>
-      <td>No</td>
-    </tr>
-  </tbody>
-</table>
-
-<!--TODO TAROT-2414 Review these
-- View and follow private repository: Yes, but only for repositories that they have access to in the git provider
-- Ignore issues and files, configure code patterns and file extensions, manage branches
-    - Configurable, depends on Repository permission, and only for repositories that they have access to in the git provider
-- Upload coverage using an account API token, see the coverage report logs
-    - Depends on Repository permission, and only for repositories that they have access to in the git provider
-- Configure repository
-    - Depends on Repository permission, and only for repositories that they have access to in the git provider
-- Add and remove repository
-    - Depends on Repository permission, and only for repositories that they have access to in the git provider
--->
+-   [GitHub](#permissions-for-github)
+-   [GitLab](#permissions-for-gitlab)
+-   [Bitbucket](#permissions-for-bitbucket)
 
 ### Assigning the Organization Manager role
 
