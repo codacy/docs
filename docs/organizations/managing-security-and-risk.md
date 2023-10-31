@@ -95,43 +95,7 @@ Codacy closes an item in either of the following cases:
 
 Codacy opens a new item when it detects a new Jira issue with a **security** label (case-insensitive).
 
-Codacy closes an item when it detects that the associated Jira issue is marked as Closed.
-
-## Managing access to Security and risk management
-
-<!-- TODO TAROT-2414 review/remove section-->
-
-To better track and address security issues, organization admins can extend access to Security and risk management by assigning the Security Manager role to organization members.
-
-The Security Manager role is independent of the Git provider role of an organization member and provides only the permissions necessary to monitor security issues, following the principle of least privilege:
-
-| Permission                                                  | Organization Admin | Security Manager           |
-|-------------------------------------------------------------|--------------------|----------------------------|
-| Access Security and risk management                         | Yes                | Yes                        |
-| Access associated issues (Codacy repositories, Jira issues) | Platform-dependent | Keeps original permissions |
-| Manage the Jira integration                                 | Yes                | Yes                        |
-| Assign and revoke the Security Manager role                 | Yes                | No                         |
-| All other Organization Admin permissions                    | Yes                | No                         |
-
-### Assigning the Security Manager role
-
-To assign the Security Manager role:
-
-1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
-
-1.  In the **Security managers** area, use the search field to find the relevant user and click the user's name.
-
-    ![Security and risk management access management](images/security-risk-management-access-management.png)<!-- TODO TAROT-2414 review/remove screenshot -->
-
-### Revoking the Security Manager role
-
-To revoke the Security Manager role:
-
-1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
-
-1.  In the **Security managers** area, scroll the list to find the relevant user.
-
-1.  Click the **Revoke role icon** to the right of the user's name and confirm.
+Codacy closes an item when it detects that the associated Jira issue is marked as Closed.[](#managing-access-to-security-and-risk-management)
 
 ## Item statuses
 

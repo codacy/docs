@@ -109,7 +109,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
     <tr>
       <td>
         Access security and risk management,<br/>
-        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a>
+        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a><!-- TODO TAROT-2414 review-->
       </td>
       <td>No</td>
       <td colspan="2">No</td>
@@ -226,7 +226,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
     <tr>
       <td>
         Access security and risk management,<br/>
-        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a>
+        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a><!-- TODO TAROT-2414 review-->
       </td>
       <td>No</td>
       <td colspan="2">No</td>
@@ -310,7 +310,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
     <tr>
       <td>
         Access security and risk management,<br/>
-        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a>
+        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a><!-- TODO TAROT-2414 review-->
       </td>
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
@@ -330,15 +330,16 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
 
 By default, only users with the Codacy permission level **Repository Write** can change analysis configurations.
 
-To change this, open your organization **Settings**, page **Member privileges**, and define the lowest Codacy permission level required to perform the following operations on the repositories of your organization:
+To change this, open your organization **Settings**, page **Roles and permissions**, and define the lowest Codacy permission level required to perform the following operations on the repositories of your organization:
 
+<!-- TODO TAROT-2414 confirm permissions-->
 -   [Ignore issues](../repositories/issues.md#ignoring-and-managing-issues)
 -   [Ignore files](../repositories-configure/ignoring-files.md)
 -   [Configure code patterns](../repositories-configure/configuring-code-patterns.md)
 -   [Configure file extensions](../repositories-configure/file-extensions.md)
 -   [Manage branches](../repositories-configure/managing-branches.md)
 
-![Configuring who can change analysis configurations](images/organization-analysis-configuration.png)
+![Configuring who can change analysis configurations](images/roles-permissions-repo-management.png)<!-- TODO TAROT-2414 finalize screenshot -->
 
 !!! note
     Codacy determines the permission level of each user from the role that each user has on your Git provider:
@@ -349,7 +350,38 @@ To change this, open your organization **Settings**, page **Member privileges**,
 
 ## Managing the Organization Manager role
 
-<!-- TODO TAROT-2414 Draft new section. Reuse parts of "Managing access to Security and risk management" -->
+<!-- TODO TAROT-2414 review intro and permissions-->
+To better track and address security issues, organization admins can extend access to Security and risk management by assigning the Organization Manager role to organization members.
+
+The Organization Manager role is independent of the Git provider role of an organization member and provides the following permissions:
+
+| Permission                                                  | Organization Admin | Organization Manager       |
+|-------------------------------------------------------------|--------------------|----------------------------|
+| Access Security and risk management                         | Yes                | Yes                        |
+| Access associated issues (Codacy repositories, Jira issues) | Platform-dependent | Keeps original permissions |
+| Manage the Jira integration                                 | Yes                | Yes                        |
+| Assign and revoke the Organization Manager role             | Yes                | No                         |
+| All other Organization Admin permissions                    | Yes                | No                         |
+
+### Assigning the Organization Manager role
+
+To assign the Organization Manager role:
+
+1.  Open your organization **Settings**, page **Roles and permissions**.
+
+1.  In the **Organization Managers** area, use the search field to find the relevant user and click the user's name.
+
+    ![Security and risk management access management](images/roles-permissions-organization-manager-assign.png)<!-- TODO TAROT-2414 finalize screenshot -->
+
+### Revoking the Organization Manager role
+
+To revoke the Organization Manager role:
+
+1.  Open your organization **Settings**, page **Roles and permissions**.
+
+1.  In the **Organization Managers** area, scroll the list to find the relevant user.
+
+1.  Click the **Revoke role icon** to the right of the user's name and confirm.
 
 ## See also
 
