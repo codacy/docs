@@ -107,10 +107,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>
-        Access security and risk management,<br/>
-        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a><!-- TODO TAROT-2414 review-->
-      </td>
+      <td>Access Security and risk management</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td colspan="2">No</td>
@@ -119,6 +116,14 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
     </tr>
     <tr>
       <td>Invite and accept members,<br/>modify billing</td>
+      <td>No</td>
+      <td colspan="2">No</td>
+      <td colspan="2">No</td>
+      <td>No</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Manage the Organization Manager role</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td colspan="2">No</td>
@@ -224,10 +229,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>
-        Access security and risk management,<br/>
-        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a><!-- TODO TAROT-2414 review-->
-      </td>
+      <td>Access Security and risk management</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td>No</td>
@@ -236,6 +238,14 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
     </tr>
     <tr>
       <td>Invite and accept members,<br/>modify billing</td>
+      <td>No</td>
+      <td colspan="2">No</td>
+      <td>No</td>
+      <td colspan="2">No</td>
+      <td colspan="2" class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Manage the Organization Manager role</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td>No</td>
@@ -308,15 +318,17 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>
-        Access security and risk management,<br/>
-        assign and revoke <a href="/organizations/managing-security-and-risk/#managing-access-to-security-and-risk-management">Security Manager role</a><!-- TODO TAROT-2414 review-->
-      </td>
+      <td>Access Security and risk management</td>
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Invite and accept members,<br/>modify billing</td>
+      <td colspan="2">No</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Manage the Organization Manager role</td>
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
     </tr>
@@ -351,17 +363,60 @@ To change this, open your organization **Settings**, page **Roles and permission
 ## Managing the Organization Manager role
 
 <!-- TODO TAROT-2414 review intro and permissions-->
-To better track and address security issues, organization admins can extend access to Security and risk management by assigning the Organization Manager role to organization members.
+To better manage organization-level settings, organization admins can share some permissions with other organization members using the Organization Manager role.
 
 The Organization Manager role is independent of the Git provider role of an organization member and provides the following permissions:
 
-| Permission                                                  | Organization Admin | Organization Manager       |
-|-------------------------------------------------------------|--------------------|----------------------------|
-| Access Security and risk management                         | Yes                | Yes                        |
-| Access associated issues (Codacy repositories, Jira issues) | Platform-dependent | Keeps original permissions |
-| Manage the Jira integration                                 | Yes                | Yes                        |
-| Assign and revoke the Organization Manager role             | Yes                | No                         |
-| All other Organization Admin permissions                    | Yes                | No                         |
+<table data-exclude="">
+  <thead>
+    <tr>
+      <th>Permission</th>
+      <th>Organization Manager</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="background-color: #FFFFFF">Manage gate policies and coding standards,<br/>bulk copy patterns</td>
+      <td class="yes" style="background-color: #E6F4EA">Yes</td>
+    </tr>
+    <tr>
+      <td>Access Security and risk management</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Configure default Git provider integration settings</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Configure all organization-level integrations</td><!--TODO TAROT-2414 Note: this is not on the permission table-->
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Invite and accept members,<br/>modify billing</td><!--TODO TAROT-2414 confirm this is correct-->
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>Manage the Organization Manager role</td>
+      <td>No</td>
+    </tr>
+    <tr>
+      <td>All other Organization Admin permissions</td>
+      <td>No</td>
+    </tr>
+  </tbody>
+</table>
+
+<!--TODO TAROT-2414 Review these
+- View and follow private repository: Yes, but only for repositories that they have access to in the git provider
+- Ignore issues and files, configure code patterns and file extensions, manage branches
+    - Configurable, depends on Repository permission, and only for repositories that they have access to in the git provider
+- Upload coverage using an account API token, see the coverage report logs
+    - Depends on Repository permission, and only for repositories that they have access to in the git provider
+- Configure repository
+    - Depends on Repository permission, and only for repositories that they have access to in the git provider
+- Add and remove repository
+    - Depends on Repository permission, and only for repositories that they have access to in the git provider
+-->
 
 ### Assigning the Organization Manager role
 
@@ -396,7 +451,7 @@ td:not(:first-child), th:not(:first-child) {
 }
 
 /*Background color for row containing the Codacy permission levels*/
-tr:nth-child(1) td {
+table:not(data-exclude) tr:nth-child(1) td {
   background-color: #EBF1FF;
 }
 

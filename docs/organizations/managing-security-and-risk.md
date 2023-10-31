@@ -1,6 +1,10 @@
 # Managing security and risk
 
-<!-- TODO TAROT-2414 overall page review -->
+<!-- TODO TAROT-2414
+
+- overall page review
+- add note mentioning that access can be managed on Roles and permissions page
+-->
 
 !!! info "This is a preview feature"
     This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
@@ -11,7 +15,6 @@ Under Security and risk management, you can find the following pages to help you
 
 -   [Dashboard](#dashboard)
 -   [Item list](#item-list)
--   [Configuration page](#configuration-page)
 
 ## Dashboard
 
