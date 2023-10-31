@@ -33,6 +33,7 @@ When viewing the dashboard, you can:
 
 -   Limit the total counts in each panel to a specific set of severities or repositories by clicking the **Severity** or **Repository** drop-downs above the main area.
 -   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
+-   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
 ![Security and risk management dashboard](images/security-risk-management-dashboard.png)<!-- TODO TAROT-2414 review screenshot -->
 
@@ -47,18 +48,9 @@ When viewing the item list, you can:
 -   Update the filtering criteria by clicking the **Severity**, **Status**, or **Repository** drop-downs above the list.
 -   Find out more about an item by clicking its **Details** column to navigate to the item of interest on the source platform.
 -   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
+-   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
 ![Security and risk management items](images/security-risk-management-item-list.png)<!-- TODO TAROT-2414 review screenshot -->
-
-## Configuration page
-
-<!-- TODO TAROT-2414 review/remove section-->
-
-The **Security and risk management configuration** page lets you [assign or revoke the Security Manager role](#managing-access-to-security-and-risk-management) for organization members and review the [severity assignment rules](#item-severities-and-deadlines).
-
-To access the configuration page, access the [dashboard](#dashboard) or the [item list](#item-list) and click the **Configure** button in the top right-hand corner of the page.
-
-![Security and risk management configuration](images/security-risk-management-configuration.png)<!-- TODO TAROT-2414 review screenshot -->
 
 ## How Codacy manages security items {: id="opening-and-closing-items"}
 
