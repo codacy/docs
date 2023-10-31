@@ -2,6 +2,11 @@
 description: List of tools that Codacy uses to analyze over 40 supported languages and frameworks. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code frameworks as well as code duplication, code complexity, and code coverage metrics for most programming languages.
 ---
 
+<!-- TODO TAROT-2355
+- We may be adding new languages with this tool! Consider this and add the appropriate TODOs.
+- Optional: Flag Semgrep as "beta", e.g. with a footnote mentioning that we only use open-source rules.
+-->
+
 # Supported languages and tools
 
 Codacy uses industry-leading tools to perform automatic static code analysis over 40 supported languages and frameworks:
