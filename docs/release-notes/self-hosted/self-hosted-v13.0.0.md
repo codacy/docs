@@ -23,7 +23,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v13.0.0:
 1.  Update your Codacy command-line tools to the following versions:
 
     -   [Codacy Analysis CLI 7.9.4](https://github.com/codacy/codacy-analysis-cli/releases/tag/7.9.4)
-    -   [Codacy Coverage Reporter 13.13.7](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.13.7)<!--TODO Update to 13.13.8, when available-->
+    -   [Codacy Coverage Reporter 13.13.8](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.13.8)
 
 ## Product enhancements
 
