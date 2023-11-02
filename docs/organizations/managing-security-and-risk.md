@@ -89,7 +89,7 @@ Codacy closes an item in either of the following cases:
 
 Codacy opens a new item when it detects a new Jira issue with a **security** label (case-insensitive).
 
-Codacy closes an item when it detects that the associated Jira issue is marked as Closed.[](#managing-access-to-security-and-risk-management)
+Codacy closes an item when it detects that the associated Jira issue is marked as Closed.
 
 ## Item statuses
 
