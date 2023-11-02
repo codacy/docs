@@ -4,17 +4,17 @@ description: List of operations that users can perform on Codacy depending on th
 
 # Roles and permissions for organizations
 
-<!-- TODO TAROT-2414 overall page review -->
+By default, Codacy assigns each organization member a permission level corresponding to that member's role on your Git provider. To update a member's permission level on Codacy, update that member's role directly on your Git provider. When next logging in to Codacy, the member is assigned the corresponding new permission level.
 
-Your team members have different permission levels on Codacy depending on their role on your Git provider. To change the permission level of a user on Codacy, you must adjust their role directly on your Git provider so that Codacy will use the corresponding permission level on the next time that the user logs in to Codacy.
+You can grant additional permissions to any organization member by assigning that member the [Organization Manager role](#the-organization-manager-role).
 
-See the Codacy permission levels that correspond to each role on your Git provider:
+To review the permissions granted by each role, see the tables for each Git provider:
 
 -   [GitHub](#permissions-for-github)
 -   [GitLab](#permissions-for-gitlab)
 -   [Bitbucket](#permissions-for-bitbucket)
 
-See [managing people](managing-people.md) to list and manage the members of your Codacy organization.
+To list and manage the members of your Codacy organization, see the [Managing people](managing-people.md) page.
 
 ## Permissions for GitHub
 
@@ -379,9 +379,9 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
 
 ## The Organization Manager role
 
-To enable other members to manage organization settings, organization admins can share some permissions using the Organization Manager role.
+To enable other members to manage organization settings, organization admins can share some permissions using the Organization Manager role. This role is independent of the Git provider roles of organization members.
 
-The Organization Manager role is independent of the Git provider roles of organization members. To review the additional permissions, see the permission tables for each Git provider:
+To review the additional permissions granted, see the tables for each Git provider:
 
 -   [GitHub](#permissions-for-github)
 -   [GitLab](#permissions-for-gitlab)
