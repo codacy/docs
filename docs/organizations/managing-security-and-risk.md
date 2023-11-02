@@ -1,14 +1,5 @@
 # Managing security and risk
 
-<!-- TODO TAROT-2414
-
-- overall page review
-- add note mentioning that access can be managed on Roles and permissions page
--->
-
-!!! info "This is a preview feature"
-    This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
-
 The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your [connected Jira instance](./integrations/jira-integration.md).
 
 Under Security and risk management, you can find the following pages to help you monitor your security issues:
@@ -38,7 +29,7 @@ When viewing the dashboard, you can:
 -   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
 -   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
-![Security and risk management dashboard](images/security-risk-management-dashboard.png)<!-- TODO TAROT-2414 review screenshot -->
+![Security and risk management dashboard](images/security-risk-management-dashboard.png)<!-- TODO TAROT-2414 confirm screenshot -->
 
 ## Item list
 
@@ -53,7 +44,7 @@ When viewing the item list, you can:
 -   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
 -   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
-![Security and risk management items](images/security-risk-management-item-list.png)<!-- TODO TAROT-2414 review screenshot -->
+![Security and risk management items](images/security-risk-management-item-list.png)<!-- TODO TAROT-2414 confirm screenshot -->
 
 ## How Codacy manages security items {: id="opening-and-closing-items"}
 
