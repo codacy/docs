@@ -110,8 +110,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>CSS</td>
-      <td><a href="http://csslint.net/">CSSLint</a>,
-          <a href="https://stylelint.io/">Stylelint</a></td>
+      <td><a href="https://stylelint.io/">Stylelint</a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
@@ -167,7 +166,6 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>JavaScript</td>
       <td><a href="https://eslint.org/">ESLint</a>,
-          <a href="https://jshint.com/">JSHint</a>,
           <a href="https://pmd.github.io/">PMD</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -217,7 +215,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Objective-C</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a>, <a href="http://fauxpasapp.com/">Faux Pas</a><a href="#client-side"><sup>1</sup></a></td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>1</sup></a></td>
       <td></td>
       <td>-</td>
       <td>-</td>
@@ -312,8 +310,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Swift </td>
-      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a>,
-          <a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
+      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
       <td></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#swiftlint-complexity"><sup>5</sup></a></td>
@@ -334,8 +331,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>TypeScript</td>
-      <td><a href="https://eslint.org/">ESLint</a>,
-          <a href="https://palantir.github.io/tslint/">TSLint</a></td>
+      <td><a href="https://eslint.org/">ESLint</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://eslint.org/">ESLint</a></td>

@@ -29,7 +29,6 @@ In addition to in-house built rules, we use open source tools for many of our st
 <ul>
 <li><a href="https://github.com/phpmd/phpmd">PHPMD</a></li>
 <li><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a></li>
-<li><a href="https://github.com/jshint/jshint">JSHint</a></li>
 <li><a href="https://github.com/mochajs/mocha">Mocha</a></li>
 <li><a href="https://github.com/scalastyle/scalastyle">Scalastyle</a></li>
 <li><a href="https://github.com/CSSLint/csslint">CSSLint</a></li>
@@ -48,7 +47,6 @@ In addition to in-house built rules, we use open source tools for many of our st
 <td>
 <ul>
 <li><a href="https://github.com/hadolint/hadolint">Hadolint</a></li>
-<li><a href="https://palantir.github.io/tslint/">TSLint</a></li>
 <li><a href="https://github.com/sds/scss-lint">SCSSLint</a></li>
 <li><a href="https://github.com/rrrene/credo">Credo</a></li>
 <li><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyzer</a></li>

@@ -60,10 +60,6 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-scalameta" class="skip-vale">codacy/codacy-scalameta</a></td>
 </tr>
 <tr>
-<td><a href="http://fauxpasapp.com/">Faux Pas</a></td>
-<td><a href="https://github.com/codacy/codacy-faux-pas" class="skip-vale">codacy/codacy-faux-pas</a></td>
-</tr>
-<tr>
 <td><a href="https://github.com/securego/gosec">Gosec</a></td>
 <td><a href="https://github.com/codacy/codacy-gosec" class="skip-vale">codacy/codacy-gosec</a></td>
 </tr>
@@ -92,10 +88,6 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <td><a href="https://github.com/codacy/codacy-credo" class="skip-vale">codacy/codacy-credo</a></td>
 </tr>
 <tr>
-<td><a href="http://csslint.net/">CSSLint</a></td>
-<td><a href="https://github.com/codacy/codacy-csslint" class="skip-vale">codacy/codacy-csslint</a></td>
-</tr>
-<tr>
 <td><a href="https://github.com/arturbosch/detekt">detekt</a></td>
 <td><a href="https://github.com/codacy/codacy-detekt" class="skip-vale">codacy/codacy-detekt</a></td>
 </tr>
@@ -118,10 +110,6 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <tr>
 <td><a href="https://github.com/codacy/codacy-jackson-linter">Jackson Linter</a></td>
 <td><a href="https://github.com/codacy/codacy-jackson-linter" class="skip-vale">codacy/codacy-jackson-linter</a></td>
-</tr>
-<tr>
-<td><a href="https://jshint.com/">JSHint</a></td>
-<td><a href="https://github.com/codacy/codacy-jshint" class="skip-vale">codacy/codacy-jshint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a></td>
@@ -202,14 +190,6 @@ The Codacy GitHub repositories list the version and extra plugins supported by e
 <tr>
 <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
 <td><a href="https://github.com/codacy/codacy-swiftlint" class="skip-vale">codacy/codacy-swiftlint</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/sleekbyte/tailor">Tailor</a></td>
-<td><a href="https://github.com/codacy/codacy-tailor" class="skip-vale">codacy/codacy-tailor</a></td>
-</tr>
-<tr>
-<td><a href="https://palantir.github.io/tslint/">TSLint</a></td>
-<td><a href="https://github.com/codacy/codacy-tslint" class="skip-vale">codacy/codacy-tslint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
