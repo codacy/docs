@@ -3,7 +3,7 @@ description: List of tools that Codacy uses to analyze over 40 supported languag
 ---
 
 <!-- TODO TAROT-2355
-- We may be adding new languages with this tool! Consider this and add the appropriate TODOs.
+- Review extra added languages. See the task for a complete list.
 - Optional: Flag Semgrep as "beta", e.g. with a footnote mentioning that we only use open-source rules.
 -->
 
@@ -52,7 +52,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
   <tbody>
     <tr>
       <td>Apex</td>
-      <td><a href="https://pmd.github.io/">PMD</a></td>
+      <td><a href="https://pmd.github.io/">PMD</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -88,10 +89,20 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
+      <td>Bash</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>C</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>2</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
-          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
+          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
@@ -102,7 +113,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>C++</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>2</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a><a href="#cppcheck-misra"><sup>3</sup></a>,
-          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
+          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
@@ -111,12 +123,31 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>C#</td>
-      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>.deps.json</code> (.Net), <code>packages.lock.json</code> (NuGet) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
+    </tr>
+    <tr>
+      <td>Cairo</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Clojure</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>CoffeeScript</td>
@@ -147,7 +178,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Dart</td>
-      <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a><a href="#dart-limitations"><sup>4</sup></a></td>
+      <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a><a href="#dart-limitations"><sup>4</sup></a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
@@ -156,7 +188,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Dockerfile</td>
-      <td><a href="https://github.com/hadolint/hadolint">Hadolint</a></td>
+      <td><a href="https://github.com/hadolint/hadolint">Hadolint</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
@@ -165,7 +198,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Elixir</td>
-      <td><a href="https://github.com/rrrene/credo">Credo</a></td>
+      <td><a href="https://github.com/rrrene/credo">Credo</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>mix.lock</code> (Mix) </td>
@@ -178,6 +212,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://github.com/tsenart/deadcode">deadcode</a><a href="#client-side"><sup>2</sup></a>,
           <a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"><sup>2</sup></a>,
           <a href="https://github.com/mgechev/revive">Revive</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://staticcheck.io/">Staticcheck</a><a href="#client-side"><sup>2</sup></a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
@@ -204,9 +239,19 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
+      <td>HTML</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>Java</td>
       <td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a>,
           <a href="https://pmd.github.io/">PMD</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>2</sup></a></td>
       <td>-</td>
       <td><a href="https://pmd.github.io/">PMD</a>,
@@ -218,7 +263,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>JavaScript</td>
       <td><a href="https://eslint.org/">ESLint</a>,
-          <a href="https://pmd.github.io/">PMD</a></td>
+          <a href="https://pmd.github.io/">PMD</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
@@ -227,10 +273,20 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>JSON</td>
-      <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
+      <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
           <a href="https://trivy.dev">Trivy</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Jsonnet</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -245,8 +301,27 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
+      <td>JSX</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Julia</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>Kotlin</td>
-      <td><a href="https://github.com/detekt/detekt">detekt</a></td>
+      <td><a href="https://github.com/detekt/detekt">detekt</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -273,6 +348,24 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
+      <td>Lisp</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Lua</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>Markdown</td>
       <td><a href="https://github.com/remarkjs/remark-lint">remark-lint</a>, <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
       <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> <a href="#suggest-fixes">🔧</a></td>
@@ -291,6 +384,15 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
+      <td>OCaml</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>OpenAPI</td>
       <td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
       <td>-</td>
@@ -302,7 +404,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>PHP</td>
       <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
-          <a href="https://phpmd.org/">PHP Mess Detector</a></td>
+          <a href="https://phpmd.org/">PHP Mess Detector</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
@@ -340,7 +443,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>Python</td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
-          <a href="https://github.com/pylint-dev/pylint">Pylint</a></td>
+          <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
@@ -350,9 +454,19 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://github.com/rubik/radon">Radon</a></td>
     </tr>
     <tr>
+      <td>R</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>Ruby<a href="#ruby-31"><sup>5</sup></a></td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a>,
-          <a href="https://github.com/rubocop/rubocop">RuboCop</a></td>
+          <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Gemfile.lock</code> (Bundler) </td>
@@ -361,7 +475,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Rust</td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Cargo.lock</code> (Cargo) </td>
@@ -381,6 +495,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>Scala</td>
       <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
           <a href="http://www.scalastyle.org/">Scalastyle</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
           <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
@@ -388,6 +503,15 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
           <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a></td>
+    </tr>
+    <tr>
+      <td>Scheme</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Serverless Framework</td>
@@ -408,8 +532,18 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
+      <td>Solidity</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>Swift </td>
-      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
       <td>-</td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
@@ -418,7 +552,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Terraform</td>
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
           <a href="https://trivy.dev">Trivy</a></td>
@@ -437,7 +572,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>TypeScript</td>
-      <td><a href="https://eslint.org/">ESLint</a></td>
+      <td><a href="https://eslint.org/">ESLint</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
@@ -482,7 +618,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>XML</td>
-      <td><a href="https://pmd.github.io/">PMD</a></td>
+      <td><a href="https://pmd.github.io/">PMD</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -500,7 +637,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>YAML</td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
