@@ -4,9 +4,7 @@ description: List of operations that users can perform on Codacy depending on th
 
 # Roles and permissions for organizations
 
-By default, Codacy assigns each organization member a permission level corresponding to that member's role on your Git provider. To update a member's permission level on Codacy, update that member's role directly on your Git provider. When next logging in to Codacy, the member is assigned the corresponding new permission level.
-
-You can grant additional permissions to any organization member by assigning that member the [Organization Manager role](#the-organization-manager-role).
+By default, Codacy assigns each organization member a role corresponding to that member's role on your Git provider. To update a member's role on Codacy, update that member's role directly on your Git provider. When next logging in to Codacy, the member is assigned the new role.
 
 To review the permissions granted by each role, see the tables for each Git provider:
 
@@ -14,11 +12,14 @@ To review the permissions granted by each role, see the tables for each Git prov
 -   [GitLab](#permissions-for-gitlab)
 -   [Bitbucket](#permissions-for-bitbucket)
 
+!!! tip
+    You can grant some administrative permissions to any organization member by assigning that member the [Organization Manager role](#the-organization-manager-role).
+
 To list and manage the members of your Codacy organization, see the [Managing people](managing-people.md) page.
 
 ## Permissions for GitHub
 
-The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresponding Codacy permission levels and the operations that they're allowed to perform:
+The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresponding Codacy roles and the operations that they're allowed to perform:
 
 <table>
   <thead>
@@ -36,7 +37,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
   </thead>
   <tbody>
     <tr>
-      <td>Codacy permission level</td>
+      <td>Codacy role</td>
       <td>-</td>
       <td colspan="2">Repository<br/>Read</td>
       <td colspan="2">Repository<br/>Write</td>
@@ -152,7 +153,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
 
 ## Permissions for GitLab
 
-The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresponding Codacy permission levels and the operations that they're allowed to perform:
+The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresponding Codacy roles and the operations that they're allowed to perform:
 
 <table>
   <thead>
@@ -171,7 +172,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
   </thead>
   <tbody>
     <tr>
-      <td>Codacy permission level</td>
+      <td>Codacy role</td>
       <td>-</td>
       <td colspan="2">Repository<br/>Read</td>
       <td>Repository<br/>Write</td>
@@ -286,7 +287,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
 
 ## Permissions for Bitbucket
 
-The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corresponding Codacy permission levels and the operations that they're allowed to perform:
+The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corresponding Codacy roles and the operations that they're allowed to perform:
 
 <table>
   <thead>
@@ -300,7 +301,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
   </thead>
   <tbody>
     <tr>
-      <td>Codacy permission level</td>
+      <td>Codacy role</td>
       <td colspan="2">Repository<br/>Read</td>
       <td><a href="#the-organization-manager-role">Organization<br/>Manager</a></td>
       <td>Organization<br/>Admin</td>
@@ -379,9 +380,9 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
 
 ## The Organization Manager role
 
-To enable other members to manage organization settings, organization admins can share some permissions using the Organization Manager role. This role is independent of the Git provider roles of organization members.
+To enable other members to manage organization settings, organization admins can share some of their permissions with any organization member using the Organization Manager role. This role is independent of the Git provider roles of organization members.
 
-To review the additional permissions granted, see the tables for each Git provider:
+To review the additional permissions granted by the Organization Manager role, see the tables for each Git provider:
 
 -   [GitHub](#permissions-for-github)
 -   [GitLab](#permissions-for-gitlab)
@@ -409,9 +410,9 @@ To revoke the Organization Manager role:
 
 ## Configuring who can change the analysis configuration {: id="change-analysis-configuration"}
 
-By default, only users with the Codacy permission level **Repository Write** can change analysis configurations.
+By default, only users with the Codacy role **Repository Write** can change analysis configurations.
 
-To change this, open your organization **Settings**, page **Roles and permissions**, and define the lowest Codacy permission level required to perform the following operations on the repositories of your organization:
+To change this, open your organization **Settings**, page **Roles and permissions**, and define the lowest Codacy role required to perform the following operations on the repositories of your organization:
 
 <!-- TODO TAROT-2414 confirm permissions-->
 -   [Ignore issues](../repositories/issues.md#ignoring-and-managing-issues)
@@ -423,7 +424,7 @@ To change this, open your organization **Settings**, page **Roles and permission
 ![Configuring who can change analysis configurations](images/roles-permissions-repo-management.png)<!-- TODO TAROT-2414 finalize screenshot -->
 
 !!! note
-    Codacy determines the permission level of each user from the role that each user has on your Git provider:
+    Codacy determines the role of each user from the role that each user has on your Git provider:
 
     -   [GitHub](#permissions-for-github)
     -   [GitLab](#permissions-for-gitlab)
