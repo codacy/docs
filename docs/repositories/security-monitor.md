@@ -74,6 +74,11 @@ The Security Monitor supports checking the languages and frameworks below for an
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
+<!-- TODO TAROT-2355
+- Review languages that support security issues. See the task for a complete list.
+- Optional: Flag Semgrep as "beta", e.g. with a footnote mentioning that we only use open-source rules.
+-->
+
 <table>
   <thead>
     <tr>
@@ -84,7 +89,8 @@ The Security Monitor supports checking the languages and frameworks below for an
   <tbody>
     <tr>
       <td>Apex</td>
-      <td><a href="https://pmd.github.io/">PMD</a></td>
+      <td><a href="https://pmd.github.io/">PMD</a>,
+          <a href="https://semgrep.dev/">Semgrep</a></td>
     </tr>
     <tr>
       <td>AWS CloudFormation</td>
@@ -92,15 +98,21 @@ The Security Monitor supports checking the languages and frameworks below for an
           <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>1</sup></a></td>
     </tr>
     <tr>
+      <td>Bash</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+    </tr>
+    <tr>
       <td>C</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>2</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>C#</td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
@@ -108,25 +120,38 @@ The Security Monitor supports checking the languages and frameworks below for an
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>2</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
+      <td>Cairo</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+    </tr>
+    <tr>
+      <td>Clojure</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+    </tr>
+    <tr>
       <td>Dart</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>Dockerfile</td>
       <td><a href="https://github.com/hadolint/hadolint">Hadolint</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>Elixir</td>
       <td><a href="https://github.com/rrrene/credo">Credo</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>Go</td>
       <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"> <sup>2</sup></a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
@@ -138,31 +163,67 @@ The Security Monitor supports checking the languages and frameworks below for an
       <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>1</sup></a></td>
     </tr>
     <tr>
+      <td>HTML</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+    </tr>
+    <tr>
       <td>Java</td>
-      <td><a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"> <sup>2</sup></a><a href="#spotbugs-plugin"> <sup>3</sup></a>,
-      <a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"> <sup>2</sup></a><a href="#spotbugs-plugin"> <sup>3</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>JavaScript</td>
       <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>4</sup></a>,
-      <a href="https://trivy.dev">Trivy</a></td>
+          <a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>JSON</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>Jsonnet</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+    </tr>
+    <tr>
+      <td>JSX</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+    </tr>
+    <tr>
+      <td>Julia</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+    </tr>
+    <tr>
+      <td>Kotlin</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
     </tr>
     <tr>
       <td>Kubernetes</td>
       <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>1</sup></a></td>
     </tr>
     <tr>
+      <td>Lisp</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+    </tr>
+    <tr>
+      <td>Lua</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+    </tr>
+    <tr>
       <td>Objective-C</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>2</sup></a></td>
+    </tr>
+    <tr>
+      <td>OCaml</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
     </tr>
     <tr>
       <td>PHP</td>
       <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
           <a href="https://phpmd.org/">PHP Mess Detector</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
@@ -174,22 +235,42 @@ The Security Monitor supports checking the languages and frameworks below for an
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>R</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
     </tr>
     <tr>
       <td>Ruby<a href="#ruby-31"> <sup>5</sup></a></td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>Rust</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>Scala</td>
       <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"> <sup>2</sup></a><a href="#spotbugs-plugin"> <sup>3</sup></a></td>
+    </tr>
+    <tr>
+      <td>Scheme</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+    </tr>
+    <tr>
+      <td>Solidity</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+    </tr>
+    <tr>
+      <td>Swift</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
     </tr>
     <tr>
       <td>Shell</td>
@@ -197,7 +278,8 @@ The Security Monitor supports checking the languages and frameworks below for an
     </tr>
     <tr>
       <td>Terraform</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>Transact-SQL</td>
@@ -206,11 +288,20 @@ The Security Monitor supports checking the languages and frameworks below for an
     <tr>
       <td>TypeScript</td>
       <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>4</sup></a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>Visual Basic</td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a></td>
+    </tr>
+    <tr>
+      <td>YAML</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+    </tr>
+    <tr>
+      <td>XML</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
     </tr>
   </tbody>
 </table>
