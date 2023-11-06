@@ -38,7 +38,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v13.0.0:
 
 -   Fixed an incorrect popup being shown when loading the repository Code patterns page. (PLUTO-717)
 
-## Deprecated tools
+## Tool deprecations
 
 This version of Codacy Self-hosted deprecates the following tools: **CSSLint**, **Faux Pas**, **JSHint**, **Tailor**, and **TSLint**.
 
