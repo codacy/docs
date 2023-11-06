@@ -388,6 +388,9 @@ To review the additional permissions granted by the Organization Manager role, s
 -   [GitLab](#permissions-for-gitlab)
 -   [Bitbucket](#permissions-for-bitbucket)
 
+!!! important
+    Organization Managers can access the **Policies** and **Integrations** settings sections of your organization and can therefore impact some repository settings for all repositories of your organization, even repositories that they can't access on the Git provider. However, they can't access the repositories themselves and can only see the repository names.
+
 ### Assigning the Organization Manager role
 
 To assign the Organization Manager role:
@@ -395,6 +398,9 @@ To assign the Organization Manager role:
 1.  Open your organization **Settings**, page **Roles and permissions**.
 
 1.  In the **Organization Managers** area, use the search field to find the relevant user and click the user's name.
+
+    !!! note
+        You can only assign the Organization Manager role to users who have already joined your organization on Codacy.
 
     ![Security and risk management access management](images/roles-permissions-organization-manager-assign.png)<!-- TODO TAROT-2414 finalize screenshot -->
 
