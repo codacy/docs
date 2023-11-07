@@ -47,7 +47,7 @@ The left-hand side of the dashboard lists the status for each security category 
     <tr>
       <td style="display: none;"></td>
       <td><strong>Codacy can't determine if all security code patterns in this category are turned on or not</strong><br/><br/>
-          This happens when you're using configuration files to control which code patterns are turned on. Ensure that you manually turn on the listed code patterns on your configuration files.</td>
+          This happens when you use configuration files to control which code patterns are turned on, when the tool is disabled, or when it's a <a href="../../repositories-configure/local-analysis/client-side-tools/">client-side tool</a>. Ensure that you manually turn on the listed code patterns in your configuration files, that the tool is enabled, and check if the tool runs client-side.</td>
     </tr>
     <tr>
       <td><img src="../images/security-monitor-green.png" alt="Green"></td>

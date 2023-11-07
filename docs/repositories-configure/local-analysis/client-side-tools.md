@@ -80,7 +80,7 @@ The table below describes the supported client-side tools and includes links to 
         <td><a href="../running-spotbugs/">Running SpotBugs</a> (containerized)</td>
     </tr>
     <tr>
-        <td rowspan="2">Objective-C</td>
+        <td>Objective-C</td>
         <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a></td>
         <td>Clang-tidy is a clang-based C++ "linter" tool. Its purpose is to provide an extensible framework for diagnosing and fixing typical programming errors, like style violations, interface misuse, or bugs that can be deduced via static analysis. Clang-tidy is modular and provides a convenient interface for writing new checks.</td>
         <td><a href="https://github.com/codacy/codacy-clang-tidy#usage">Running Clang-Tidy</a> (standalone)</td>

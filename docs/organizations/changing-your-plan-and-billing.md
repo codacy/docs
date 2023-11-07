@@ -4,7 +4,7 @@ Each organization on Codacy has a dedicated plan and associated billing. To make
 
 <!--plan-caveats-start-->
 !!! note
-    -   If you're using GitHub Marketplace, update your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing).
+    -   If you're using GitHub Marketplace, update your billing details or cancel your plan directly on your [GitHub Billing page](https://github.com/settings/billing/summary).
 
     -   If you cancel your plan or switch to a different Enterprise plan, some repositories may show outdated information in the Codacy UI. To update this information, reanalyze the repositories or push new commits.
 <!--plan-caveats-end-->
