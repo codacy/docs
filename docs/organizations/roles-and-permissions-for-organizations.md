@@ -27,12 +27,12 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
   <thead>
     <tr>
       <th>GitHub role</th>
-      <th>Outside<br/>Collaborator<sup>1</sup></th>
-      <th>Repository<br/>Read</th>
-      <th>Repository<br/>Triage</th>
-      <th>Repository<br/>Write</th>
-      <th>Repository<br/>Maintain</th>
-      <th>Repository<br/>Admin</th>
+      <th>Outside<br/>collaborator<sup>1</sup></th>
+      <th>Repository<br/>read</th>
+      <th>Repository<br/>triage</th>
+      <th>Repository<br/>write</th>
+      <th>Repository<br/>maintain</th>
+      <th>Repository<br/>admin</th>
       <th>-</th>
       <th>Organization<br/>Owner</th>
     </tr>
@@ -41,11 +41,11 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
     <tr>
       <td>Codacy role</td>
       <td>-</td>
-      <td colspan="2">Repository<br/>Read</td>
-      <td colspan="2">Repository<br/>Write</td>
-      <td>Repository<br/>Admin</td>
-      <td><a href="#the-organization-manager-role">Organization<br/>Manager</a></td>
-      <td>Organization<br/>Admin</td>
+      <td colspan="2">Repository<br/>read</td>
+      <td colspan="2">Repository<br/>write</td>
+      <td>Repository<br/>admin</td>
+      <td><a href="#the-organization-manager-role">Organization<br/>manager</a></td>
+      <td>Organization<br/>admin</td>
     </tr>
     <tr>
       <td>Join organization</td>
@@ -138,7 +138,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Assign and revoke the Organization Manager role</td>
+      <td>Assign and revoke the organization manager role</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td colspan="2">No</td>
@@ -149,9 +149,9 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
   </tbody>
 </table>
 
-<sup>1</sup>: Outside Collaborators aren't supported as members of organizations on Codacy. You can still [add Outside Collaborators to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.  
+<sup>1</sup>: Outside collaborators aren't supported as members of organizations on Codacy. You can still [add outside collaborators to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.  
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).  
-<sup>3</sup>: Requires that an Organization owner has given the Codacy GitHub App access to the repositories to add or remove.
+<sup>3</sup>: Requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.
 
 ## Permissions for GitLab
 
@@ -161,14 +161,14 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
   <thead>
     <tr>
       <th>GitLab role</th>
-      <th>External<br/>User<sup>1</sup></th>
-      <th>Project<br/>Guest</th>
-      <th>Project<br/>Reporter</th>
-      <th>Project<br/>Developer</th>
-      <th>Project<br/>Maintainer</th>
-      <th>Project<br/>Owner</th>
+      <th>External<br/>user<sup>1</sup></th>
+      <th>Project<br/>guest</th>
+      <th>Project<br/>reporter</th>
+      <th>Project<br/>developer</th>
+      <th>Project<br/>maintainer</th>
+      <th>Project<br/>owner</th>
       <th>-</th>
-      <th>Group<br/>Owner</th>
+      <th>Group<br/>owner</th>
       <th>Administrator</th>
     </tr>
   </thead>
@@ -176,11 +176,11 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
     <tr>
       <td>Codacy role</td>
       <td>-</td>
-      <td colspan="2">Repository<br/>Read</td>
-      <td>Repository<br/>Write</td>
-      <td colspan="2">Repository<br/>Admin</td>
-      <td><a href="#the-organization-manager-role">Organization<br/>Manager</a></td>
-      <td colspan="2">Organization<br/>Admin</td>
+      <td colspan="2">Repository<br/>read</td>
+      <td>Repository<br/>write</td>
+      <td colspan="2">Repository<br/>admin</td>
+      <td><a href="#the-organization-manager-role">Organization<br/>manager</a></td>
+      <td colspan="2">Organization<br/>admin</td>
     </tr>
     <tr>
       <td>Join organization</td>
@@ -273,7 +273,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Assign and revoke the Organization Manager role</td>
+      <td>Assign and revoke the organization manager role</td>
       <td>No</td>
       <td colspan="2">No</td>
       <td>No</td>
@@ -284,7 +284,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
   </tbody>
 </table>
 
-<sup>1</sup>: External Users aren't supported as members of organizations on Codacy. You can still [add External Users to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.  
+<sup>1</sup>: External users aren't supported as members of organizations on Codacy. You can still [add external users to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.  
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).
 
 ## Permissions for Bitbucket
@@ -304,9 +304,9 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
   <tbody>
     <tr>
       <td>Codacy role</td>
-      <td colspan="2">Repository<br/>Read</td>
-      <td><a href="#the-organization-manager-role">Organization<br/>Manager</a></td>
-      <td>Organization<br/>Admin</td>
+      <td colspan="2">Repository<br/>read</td>
+      <td><a href="#the-organization-manager-role">Organization<br/>manager</a></td>
+      <td>Organization<br/>admin</td>
     </tr>
     <tr>
       <td>Join organization</td>
@@ -369,7 +369,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Assign and revoke the Organization Manager role</td>
+      <td>Assign and revoke the organization manager role</td>
       <td colspan="2">No</td>
       <td>No</td>
       <td class="yes">Yes</td>
@@ -391,7 +391,7 @@ To review the additional permissions granted by the Organization Manager role, s
 -   [Bitbucket](#permissions-for-bitbucket)
 
 !!! important
-    Organization Managers can access the **Policies** and **Integrations** settings sections of your organization and can therefore impact some repository settings for all repositories of your organization, even repositories that they can't access on the Git provider. However, they can't access the repositories themselves and can only see the repository names.
+    Organization managers can access the **Policies** and **Integrations** settings sections of your organization and can therefore impact some repository settings for all repositories of your organization, even repositories that they can't access on the Git provider. However, they can't access the repositories themselves and can only see the repository names.
 
 ### Assigning the Organization Manager role
 
@@ -399,7 +399,7 @@ To assign the Organization Manager role:
 
 1.  Open your organization **Settings**, page **Roles and permissions**.
 
-1.  In the **Organization Managers** area, use the search field to find the relevant organization member and click the member's name.
+1.  In the **Organization managers** area, use the search field to find the relevant organization member and click the member's name.
 
     !!! note
         You can only assign the Organization Manager role to [members of your organization](./managing-people.md#joining).
@@ -412,13 +412,13 @@ To revoke the Organization Manager role:
 
 1.  Open your organization **Settings**, page **Roles and permissions**.
 
-1.  In the **Organization Managers** area, scroll the list to find the relevant user.
+1.  In the **Organization managers** area, scroll the list to find the relevant user.
 
 1.  Click the **Revoke role icon** to the right of the user's name and confirm.
 
 ## Configuring who can change the analysis configuration {: id="change-analysis-configuration"}
 
-By default, only users with the Codacy role **Repository Write** can change analysis configurations.
+By default, only users with the Codacy role **repository write** can change analysis configurations.
 
 To change this, open your organization **Settings**, page **Roles and permissions**, and define the lowest Codacy role required to perform the following operations on the repositories of your organization:
 
