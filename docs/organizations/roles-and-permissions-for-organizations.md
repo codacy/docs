@@ -4,7 +4,9 @@ description: List of operations that users can perform on Codacy depending on th
 
 # Roles and permissions for organizations
 
-By default, Codacy assigns each organization member a role corresponding to that member's role on your Git provider. To update a member's role on Codacy, update that member's role directly on your Git provider. When next logging in to Codacy, the member is assigned the new role.
+By default, Codacy assigns each organization member a role corresponding to that member's role on your Git provider.
+
+To update a member's role on Codacy, update that member's role directly on your Git provider. When next logging in to Codacy, the member is assigned the new role.
 
 To review the permissions granted by each role, see the tables for each Git provider:
 
@@ -397,10 +399,10 @@ To assign the Organization Manager role:
 
 1.  Open your organization **Settings**, page **Roles and permissions**.
 
-1.  In the **Organization Managers** area, use the search field to find the relevant user and click the user's name.
+1.  In the **Organization Managers** area, use the search field to find the relevant organization member and click the member's name.
 
     !!! note
-        You can only assign the Organization Manager role to users who have already joined your organization on Codacy.
+        You can only assign the Organization Manager role to [members of your organization](./managing-people.md#joining).
 
     ![Security and risk management access management](images/roles-permissions-organization-manager-assign.png)
 
@@ -429,7 +431,7 @@ To change this, open your organization **Settings**, page **Roles and permission
 ![Configuring who can change analysis configurations](images/roles-permissions-repo-management.png)
 
 !!! note
-    Codacy determines the role of each user from the role that each user has on your Git provider:
+    Codacy determines the role of each organization member from the role of that member on your Git provider:
 
     -   [GitHub](#permissions-for-github)
     -   [GitLab](#permissions-for-gitlab)
