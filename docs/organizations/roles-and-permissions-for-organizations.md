@@ -402,7 +402,7 @@ To assign the Organization Manager role:
     !!! note
         You can only assign the Organization Manager role to users who have already joined your organization on Codacy.
 
-    ![Security and risk management access management](images/roles-permissions-organization-manager-assign.png)<!-- TODO TAROT-2414 finalize screenshot -->
+    ![Security and risk management access management](images/roles-permissions-organization-manager-assign.png)
 
 ### Revoking the Organization Manager role
 
@@ -427,7 +427,7 @@ To change this, open your organization **Settings**, page **Roles and permission
 -   [Configure file extensions](../repositories-configure/file-extensions.md)
 -   [Manage branches](../repositories-configure/managing-branches.md)
 
-![Configuring who can change analysis configurations](images/roles-permissions-repo-management.png)<!-- TODO TAROT-2414 finalize screenshot -->
+![Configuring who can change analysis configurations](images/roles-permissions-repo-management.png)
 
 !!! note
     Codacy determines the role of each user from the role that each user has on your Git provider:

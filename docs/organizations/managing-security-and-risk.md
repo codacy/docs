@@ -29,7 +29,7 @@ When viewing the dashboard, you can:
 -   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
 -   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
-![Security and risk management dashboard](images/security-risk-management-dashboard.png)<!-- TODO TAROT-2414 confirm screenshot -->
+![Security and risk management dashboard](images/security-risk-management-dashboard.png)
 
 ## Item list
 
@@ -44,7 +44,7 @@ When viewing the item list, you can:
 -   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
 -   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
-![Security and risk management items](images/security-risk-management-item-list.png)<!-- TODO TAROT-2414 confirm screenshot -->
+![Security and risk management items](images/security-risk-management-item-list.png)
 
 ## How Codacy manages security items {: id="opening-and-closing-items"}
 
