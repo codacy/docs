@@ -25,6 +25,40 @@ Follow the steps below to upgrade to Codacy Self-hosted v13.0.0:
     -   [Codacy Analysis CLI 7.9.4](https://github.com/codacy/codacy-analysis-cli/releases/tag/7.9.4)
     -   [Codacy Coverage Reporter 13.13.8](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.13.8)
 
+## Support for ingress-nginx 4.8.3
+
+This version of Codacy Self-hosted adds support for [ingress-nginx 4.8.3](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.8.3), which fixes the following vulnerabilities:
+
+-   [CVE-2022-4886](https://github.com/kubernetes/ingress-nginx/issues/10570)
+-   [CVE-2023-5043](https://github.com/kubernetes/ingress-nginx/issues/10571)
+-   [CVE-2023-5044](https://github.com/kubernetes/ingress-nginx/issues/10572)
+
+!!! note
+    Although [ingress-nginx 4.8.3 officially supports](https://github.com/kubernetes/ingress-nginx/tree/helm-chart-4.8.3#supported-versions-table) Kubernetes **version 1.25** to **1.28**, we tested this version of Codacy Self-hosted using [ingress-nginx 4.8.3](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.8.3) on all the [supported Kubernetes versions](https://docs.codacy.com/v13.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup), **1.22.\*** to **1.26.\***. All tests were successful in accordance with our quality assurance standards.
+
+### Upgrading ingress-nginx to version 4.8.3
+
+!!! warning
+    -   If you applied to ingress-nginx **custom configurations** different from the Codacy's `values-nginx.yaml` file, follow the [ingress-nginx documentation on how to upgrade your installation](https://github.com/kubernetes/ingress-nginx/blob/main/docs/deploy/upgrade.md).
+    -   If your NGINX Ingress Controller is shared by other components out of Codacy's installation scope, check those components documentation to evaluate the impact of this upgrade.
+
+    If you have any questions regarding the above scenarios or need help, please contact <mailto:support@codacy.com>.
+
+If your Codacy Self-hosted setup uses a **dedicated NGINX Ingress Controller** that follows [Codacy's installation instructions](https://docs.codacy.com/v13.0/chart/infrastructure/eks-quickstart/) with **no custom configurations**, you can upgrade ingress-nginx to version 4.8.3 by executing the steps below:
+
+1.  Download the updated configuration file [`values-nginx.yaml`](https://docs.codacy.com/v13.0/chart/values-files/values-nginx.yaml) for the NGINX Ingress Controller, which enables `enableAnnotationValidations`.
+
+1.  Run the following script:
+
+    ```
+    kubectl create namespace codacy
+    helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+    helm repo update
+    helm upgrade --install --namespace codacy --version 4.8.3 nginx-ingress ingress-nginx/ingress-nginx -f values-nginx.yaml
+    ```
+
+This upgrade can also be applied to supported Codacy Self-Hosted versions before v13.0.
+
 ## Product enhancements
 
 -   Added support for [Kubernetes 1.26](https://docs.codacy.com/v13.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup). (REL-1389)
@@ -33,6 +67,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v13.0.0:
 -   Added support for the ESLint plugin [<span class="skip-vale">vue-scoped-css</span>](https://www.npmjs.com/package/eslint-plugin-vue-scoped-css). (TS-356)
 -   Added support for the ESLint plugin [<span class="skip-vale">eslint-plugin-rxjs</span>](https://www.npmjs.com/package/eslint-plugin-rxjs). (TS-346)
 -   Added support for the ESLint plugins [<span class="skip-vale">eslint-plugin-markdown</span>](https://www.npmjs.com/package/eslint-plugin-markdown) and [<span class="skip-vale">eslint-plugin-yml</span>](https://www.npmjs.com/package/eslint-plugin-yml). (TS-121)
+-   Added support for [ingress-nginx 4.8.3](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.8.3). (REL-1416)
 
 ## Bug fixes
 
