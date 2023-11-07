@@ -29,9 +29,9 @@ Follow the steps below to upgrade to Codacy Self-hosted v13.0.0:
 
 This version of Codacy Self-hosted adds support for [ingress-nginx 4.8.3](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.8.3), which fixes the following vulnerabilities:
 
--   [CVE-2022-4886](https://github.com/kubernetes/ingress-nginx/issues/10570)
--   [CVE-2023-5043](https://github.com/kubernetes/ingress-nginx/issues/10571)
--   [CVE-2023-5044](https://github.com/kubernetes/ingress-nginx/issues/10572)
+-   [CVE-2022\-4886](https://github.com/kubernetes/ingress-nginx/issues/10570)
+-   [CVE-2023\-5043](https://github.com/kubernetes/ingress-nginx/issues/10571)
+-   [CVE-2023\-5044](https://github.com/kubernetes/ingress-nginx/issues/10572)
 
 !!! note
     Although [ingress-nginx 4.8.3 officially supports](https://github.com/kubernetes/ingress-nginx/tree/helm-chart-4.8.3#supported-versions-table) Kubernetes **version 1.25** to **1.28**, we tested this version of Codacy Self-hosted using [ingress-nginx 4.8.3](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.8.3) on all the [supported Kubernetes versions](https://docs.codacy.com/v13.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup), **1.22.\*** to **1.26.\***. All tests were successful in accordance with our quality assurance standards.
