@@ -69,7 +69,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
       <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
-      <td>Inherits original permission</td><!--TODO TAROT-2414 confirm this is correct. Note on Slite: Configurable, depends on Repository permission, and only for repositories that they have access to in the git provider-->
+      <td>Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -78,7 +78,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
-      <td>Inherits original permission</td><!--TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
+      <td>Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -87,7 +87,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
-      <td>Inherits original permission</td><!-- TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
+      <td>Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -96,7 +96,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td colspan="2">No</td>
       <td class="yes">Yes<sup>3</sup></td>
-      <td>Inherits original permission</td><!-- TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
+      <td>Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -132,7 +132,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td colspan="2">No</td>
       <td>No</td>
-      <td>No</td><!--TODO TAROT-2414 confirm this is correct-->
+      <td>No</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -204,7 +204,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
       <td colspan="2" class="yes">Yes</td>
-      <td>Inherits original permission</td><!--TODO TAROT-2414 confirm this is correct. Note on Slite: Configurable, depends on Repository permission, and only for repositories that they have access to in the git provider-->
+      <td>Inherits original permission</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -213,7 +213,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
-      <td>Inherits original permission</td><!--TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
+      <td>Inherits original permission</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -222,7 +222,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td>No</td>
       <td colspan="2" class="yes">Yes</td>
-      <td>Inherits original permission</td><!-- TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
+      <td>Inherits original permission</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -231,7 +231,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td>No</td>
       <td colspan="2" class="yes">Yes</td>
-      <td>Inherits original permission</td><!-- TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
+      <td>Inherits original permission</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -267,7 +267,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">No</td>
       <td>No</td>
       <td colspan="2">No</td>
-      <td>No</td><!--TODO TAROT-2414 confirm this is correct-->
+      <td>No</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
@@ -321,25 +321,25 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
     <tr>
       <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</td>
       <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>Inherits original permission</td><!--TODO TAROT-2414 confirm this is correct. Note on Slite: Configurable, depends on Repository permission, and only for repositories that they have access to in the git provider-->
+      <td>Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Upload coverage using an account API token,<br/>see the coverage report logs</td>
       <td colspan="2">No</td>
-      <td>Inherits original permission</td><!--TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
+      <td>Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Configure repository</td>
       <td colspan="2">No</td>
-      <td>Inherits original permission</td><!-- TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
+      <td>Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Add and remove repository</td>
       <td colspan="2">No</td>
-      <td>Inherits original permission</td><!-- TODO TAROT-2414 confirm this is correct. Note on Slite: Depends on Repository permission, and only for repositories that they have access to in the git provider-->
+      <td>Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -363,7 +363,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
     <tr>
       <td>Invite and accept members,<br/>modify billing</td>
       <td colspan="2">No</td>
-      <td>No</td><!--TODO TAROT-2414 confirm this is correct-->
+      <td>No</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
@@ -420,7 +420,6 @@ By default, only users with the Codacy role **Repository Write** can change anal
 
 To change this, open your organization **Settings**, page **Roles and permissions**, and define the lowest Codacy role required to perform the following operations on the repositories of your organization:
 
-<!-- TODO TAROT-2414 confirm permissions-->
 -   [Ignore issues](../repositories/issues.md#ignoring-and-managing-issues)
 -   [Ignore files](../repositories-configure/ignoring-files.md)
 -   [Configure code patterns](../repositories-configure/configuring-code-patterns.md)
