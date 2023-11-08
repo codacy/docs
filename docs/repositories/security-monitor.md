@@ -76,7 +76,6 @@ The Security Monitor supports checking the languages and frameworks below for an
 
 <!-- TODO TAROT-2355
 - Review languages that support security issues. See the task for a complete list.
-- Optional: Flag Semgrep as "beta", e.g. with a footnote mentioning that we only use open-source rules.
 -->
 
 <table>
