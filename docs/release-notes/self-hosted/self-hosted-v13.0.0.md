@@ -25,7 +25,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v13.0.0:
     -   [Codacy Analysis CLI 7.9.4](https://github.com/codacy/codacy-analysis-cli/releases/tag/7.9.4)
     -   [Codacy Coverage Reporter 13.13.8](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.13.8)
 
-## Support for ingress-nginx 4.8.3
+## Support for ingress-nginx chart 4.8.3
 
 This version of Codacy Self-hosted adds support for [ingress-nginx 4.8.3](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.8.3), which fixes the following vulnerabilities:
 
