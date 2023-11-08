@@ -39,7 +39,7 @@ This version of Codacy Self-hosted adds support for [ingress-nginx 4.8.3](https:
 ### Upgrading ingress-nginx to version 4.8.3
 
 !!! warning
-    -   If you applied to ingress-nginx **custom configurations** different from the Codacy's `values-nginx.yaml` file, follow the [ingress-nginx documentation on how to upgrade your installation](https://github.com/kubernetes/ingress-nginx/blob/main/docs/deploy/upgrade.md).
+    -   If you applied **custom configurations** to ingress-nginx different from the Codacy's `values-nginx.yaml` file, follow the [ingress-nginx documentation](https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx/4.8.3) to upgrade your installation.
     -   If your NGINX Ingress Controller is shared by other components out of Codacy's installation scope, check those components documentation to evaluate the impact of this upgrade.
 
     If you have any questions regarding the above scenarios or need help, please contact <mailto:support@codacy.com>.
