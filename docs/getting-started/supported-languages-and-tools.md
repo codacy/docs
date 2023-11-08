@@ -4,7 +4,6 @@ description: List of tools that Codacy uses to analyze over 40 supported languag
 
 <!-- TODO TAROT-2355
 - Review extra added languages. See the task for a complete list.
-- Optional: Flag Semgrep as "beta", e.g. with a footnote mentioning that we only use open-source rules.
 -->
 
 # Supported languages and tools
