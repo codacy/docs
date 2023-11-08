@@ -89,7 +89,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>*.lock</code> (Conan) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
     </tr>
@@ -100,7 +100,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>*.lock</code> (Conan) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
     </tr>
