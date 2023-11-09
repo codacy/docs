@@ -1,57 +1,51 @@
 ---
-description: Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results are adapted to your scenario.
+description: Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results fit your needs.
 ---
 
 # Configuring code patterns
 
-By default, Codacy uses a subset of the supported static analysis tools and code patterns to analyze your repositories. These default settings result from community feedback or existing coding standards. However, you can adapt the default settings to your scenario by configuring the tools and code patterns that Codacy uses to analyze your repository.
+!!! note
+    Organization admins can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
+
+By default, Codacy analyzes your repositories using a subset of the supported static analysis tools and code patterns. These default configurations are the result of community feedback and of existing coding standards.
+
+You can adapt the default configurations to your needs in several ways:
+
+-   [Configuring tools and code patterns using the Codacy UI](#configuring-tools-and-code-patterns-using-the-codacy-ui)
+-   [Importing configurations from another repository](#import-patterns)
+-   [Using tool configuration files](#using-your-own-tool-configuration-files)
+
+## Configuring tools and code patterns using the Codacy UI
 
 !!! note
-    -   Organization admins can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
+    If you update the configurations of a repository that follows a [coding standard](../organizations/using-coding-standards.md), Codacy copies the coding standard configurations to the repository and the repository stops following the coding standard. You can then customize the repository configurations without affecting the coding standard.
 
-    -   If your repository is following an [organization coding standard](../organizations/using-coding-standards.md), changes made to any tool or code pattern cause the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.
-
-To configure the tools and code patterns for your repository:
+To configure the tools and code patterns for a repository using the Codacy UI:
 
 1.  Open your repository **Code patterns** page.
 
     ![Code patterns page](images/code-patterns.png)
 
-1.  Toggle the tools that Codacy will use to analyze your repository.
+1.  Enable or disable the tools that Codacy should use to analyze the repository.
 
     ![Toggling tools](images/code-patterns-toggle-tools.png)
 
-1.  Select each tool to configure and toggle the corresponding code patterns using the checkbox next to each pattern.
+1.  Select a tool to enable or disable its code patterns.
 
-    !!! tip
-        Codacy displays the tag **New** for one month next to the name of any recently added code patterns.
-
-    ![Configuring code patterns](images/code-patterns-configure.png)
+    To filter the patterns by language, category, or status, use the sidebar filters.
 
     To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues.
 
-    ![Code pattern details](images/code-patterns-detail.png)
+    !!! tip
+        -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click **Enable all**.
 
-1.  Optionally, [manually reanalyze your repository](../faq/repositories/how-do-i-reanalyze-my-repository.md) to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.
+            For example, to enable all Security patterns, click the **Security** filter and then click **Enable all**.
 
-## Pattern filters
+        -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.
 
-To make it easier to find relevant code patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), category, or status:
+    ![Configuring code patterns](images/code-patterns-configure.png)
 
-![Filtering code patterns](images/code-patterns-filter.png)
-
-!!! tip
-    To enable **all code patterns** matching a specific category, use the filter to select the relevant patterns and click **Enable all**.
-
-    For example, to enable all Security patterns of a tool, you can use the **Security** filter and click **Enable all**.
-
-Issues detected by Codacy belong to one of the following categories:
-
-{%
-    include-markdown "../faq/code-analysis/which-metrics-does-codacy-calculate.md"
-    start="<!--issue-categories-start-->"
-    end="<!--issue-categories-end-->"
-%}
+1.  Optionally, to take the changes into account immediately, [reanalyze the repository manually](../faq/repositories/how-do-i-reanalyze-my-repository.md). Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.
 
 ## Importing pattern configurations from another repository {: id="import-patterns"}
 
@@ -64,6 +58,7 @@ For example, when adding a new repository on Codacy you can copy the tool and co
 
     Alternatively, you can also copy the tool and code pattern configurations [from one repository to multiple target repositories](../organizations/copying-code-patterns-between-repositories.md).
 
+<!-- TODO DOCS-341 Can we simplify this? -->
 <!--code-patterns-copy-start-->
 !!! important
     Consider the following when using this feature:
@@ -83,7 +78,7 @@ To import the tool and code pattern configurations from another repository:
 
 1.  Open your repository **Code patterns** and click **Import patterns**.
 
-    ![Importing code patterns from another repository](images/code-patterns-import.png)
+    ![Importing code patterns from another repository](images/code-patterns-import.png)<!-- TODO DOCS-341 Evaluate whether to keep -->
 
 1.  Follow the instructions to select the source repository and complete the import.
 
@@ -91,7 +86,7 @@ To import the tool and code pattern configurations from another repository:
 
 Codacy will use the updated configurations on the next analysis.
 
-## Using your own tool configuration files
+## Using tool configuration files {: id="using-your-own-tool-configuration-files"}
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
@@ -103,19 +98,25 @@ Codacy will use the updated configurations on the next analysis.
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
-Codacy supports configuration files for several tools. To use a configuration file for your static analysis tool:
+!!! note
+    -   Once set, Codacy uses a configuration file even if you exclude it from Codacy analysis [using the Codacy UI](ignoring-files.md) or a [Codacy configuration file](codacy-configuration-file.md#syntax-for-ignoring-files).
 
-1.  Push the configuration file to the root of the branch [configured as the main branch on Codacy](managing-branches.md).
+    -   When you update pattern settings using a configuration file, Codacy may display outdated messages for issues identified previously by those patterns.<!-- TODO Can we remove this? If not, can we clarify when this happens and if this is temporary?  -->
 
-1.  Open your repository **Code patterns** page, select the tool that will use the configuration file, and select the option **Configuration file**.
+Codacy supports configuration files for several static analysis tools to help you streamline your setup.
+
+To use a configuration file for a static analysis tool:
+
+1.  Push the configuration file to the root of the [default Codacy branch](managing-branches.md).
+
+1.  Open the repository **Code patterns** page, select the tool of interest, and select the option **Configuration file**.
+
+    !!! note
+        -   If a subsequent pull request updates the configuration file, Codacy considers the updates when analyzing that pull request.
+
+        -   If a subsequent pull request deletes the configuration file, Codacy reverts to the last tool patterns set before using the configuration file.
 
     ![Using a configuration file](images/code-patterns-config-file.png)
-
-After activating the option to use the configuration file:
-
--   Codacy will use the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results will take those changes into account.
--   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.
--   Codacy will keep using the tool configuration file even if you exclude that file from the Codacy analysis [using the Codacy UI](ignoring-files.md) or a [Codacy configuration file](codacy-configuration-file.md).
 
 The table below lists the configuration file names that Codacy detects and supports for each tool:
 
@@ -333,4 +334,4 @@ The table below lists the configuration file names that Codacy detects and suppo
 
 -   [Applying a coding standard across multiple repositories](../organizations/using-coding-standards.md)
 -   [Copying code patterns between repositories](../organizations/copying-code-patterns-between-repositories.md)
--   [How to implement Google JavaScript style guide with Codacy](https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/)
+-   [How to implement Google JavaScript style guide with Codacy](https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/)<!-- TODO DOCS-341 Shouldn't we rather mention an internal docs page here? -->
