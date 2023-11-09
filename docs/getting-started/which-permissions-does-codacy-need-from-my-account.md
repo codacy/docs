@@ -17,6 +17,8 @@ Codacy requests only the necessary permissions from your Git provider to analyze
 
 If you log in with GitHub, Codacy requires the following [app permissions](https://docs.github.com/en/rest/overview/permissions-required-for-github-apps):
 
+<!--TODO PLUTO-772 Update permissions-->
+
 <table>
   <colgroup>
     <col width="20%"/>
@@ -205,6 +207,8 @@ After revoking an integration, Codacy will no longer be able to access or manipu
 If you need to use an integration that you have previously revoked, log in again to Codacy with that integration so that Codacy can request the required permissions from the provider.
 
 ## Why does Codacy ask for permission to create SSH keys?
+
+<!--TODO PLUTO-772 Update this section-->
 
 When you add a private repository to Codacy, Codacy uses the integration with your Git provider to create a new SSH key on the repository. Codacy then uses that SSH key every time it needs to clone the repository.
 

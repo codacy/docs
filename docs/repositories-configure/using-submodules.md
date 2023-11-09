@@ -1,5 +1,7 @@
 # Using submodules
 
+<!--TODO PLUTO-772 Review content-->
+
 [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) allow you to keep a Git repository as a subdirectory within another Git repository. Git submodules are helpful in maintaining a shared configuration file for your team, and then applying it to multiple Git repositories.
 
 By default, Codacy does normal Git clones that **don't include submodules** to ensure that we only clone necessary repositories. If your organization needs to use submodules, you can request Codacy to enable this feature for you.
