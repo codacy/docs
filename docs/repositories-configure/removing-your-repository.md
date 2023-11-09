@@ -13,7 +13,7 @@ To delete your repository from Codacy:
 
 1.  Click the button **Remove repository** and confirm that you want to remove the repository.
 
-    ![Removing your repository](images/repository-remove.png)<!--TODO PLUTO-772 Update screenshot-->
+    ![Removing your repository](images/repository-remove.png)
 
     !!! note
         For added security, after you remove the repository from Codacy you can delete the webhooks and SSH keys (GitLab and Bitbucket only) related to this Codacy repository from your Git provider to prevent their reuse.
