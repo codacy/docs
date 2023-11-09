@@ -17,7 +17,7 @@ If you renamed the repository or moved it to a different account on the Git prov
 
 !!! info "This section applies only to GitLab and Bitbucket"
 
-Codacy uses SSH keys to clone your private repositories. Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, an SSH key can be added either:<!--TODO PLUTO-772 Clarify that SSH keys applies only to GitLab and Bitbucket-->
+On GitLab and Bitbucket organizations, Codacy uses SSH keys to clone your private repositories. Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, an SSH key can be added either:
 
 -   Directly to the repository itself, if the user has permissions to add SSH keys to the repository
 -   To the user account, if the user only has read or commit permissions on the repository
