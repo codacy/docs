@@ -14,8 +14,7 @@ To review the permissions granted by each role, see the tables for each Git prov
 -   [GitLab](#permissions-for-gitlab)
 -   [Bitbucket](#permissions-for-bitbucket)
 
-!!! tip
-    You can grant some administrative permissions to any organization member using the [Organization Manager](#the-organization-manager-role) role.
+You can grant some administrative permissions to any organization member independently of the member's role on the Git provider, using the [organization manager](#the-organization-manager-role) role.
 
 To list and manage the members of your Codacy organization, see the [Managing people](managing-people.md) page.
 
@@ -380,11 +379,11 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
 <sup>1</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.  
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).
 
-## The Organization Manager role
+## The organization manager role
 
-To enable other members to manage organization settings, organization admins can share some of their permissions with any organization member using the Organization Manager role. This role is independent of the Git provider roles of organization members.
+To enable other members to manage organization settings, organization admins can share some of their permissions with any organization member using the organization manager role. This role is independent of the Git provider roles of organization members.
 
-To review the additional permissions granted by the Organization Manager role, see the tables for each Git provider:
+To review the additional permissions granted by the organization manager role, see the tables for each Git provider:
 
 -   [GitHub](#permissions-for-github)
 -   [GitLab](#permissions-for-gitlab)
@@ -393,22 +392,22 @@ To review the additional permissions granted by the Organization Manager role, s
 !!! important
     Organization managers can access the **Policies** and **Integrations** settings sections of your organization and can therefore impact some repository settings for all repositories of your organization, even repositories that they can't access on the Git provider. However, they can't access the repositories themselves and can only see the repository names.
 
-### Assigning the Organization Manager role
+### Assigning the organization manager role
 
-To assign the Organization Manager role:
+To assign the organization manager role:
 
 1.  Open your organization **Settings**, page **Roles and permissions**.
 
 1.  In the **Organization managers** area, use the search field to find the relevant organization member and click the member's name.
 
     !!! note
-        You can only assign the Organization Manager role to [members of your organization](./managing-people.md#joining).
+        You can only assign the organization manager role to [members of your organization](./managing-people.md#joining).
 
     ![Security and risk management access management](images/roles-permissions-organization-manager-assign.png)
 
-### Revoking the Organization Manager role
+### Revoking the organization manager role
 
-To revoke the Organization Manager role:
+To revoke the organization manager role:
 
 1.  Open your organization **Settings**, page **Roles and permissions**.
 
