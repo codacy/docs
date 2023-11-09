@@ -62,7 +62,5 @@ You can set Codacy to automatically add the new SSH key to your Git provider acc
 
 ## See also
 
--   [Managing deploy keys in GitHub](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/managing-deploy-keys)
--   [Add an SSH key to your GitHub account](https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent)
 -   [Configure repository settings in Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/configure-repository-settings/)
 -   [Add an SSH key to your Bitbucket account](https://support.atlassian.com/bitbucket-cloud/docs/configure-ssh-and-two-step-verification/)
