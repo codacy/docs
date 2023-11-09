@@ -2,10 +2,6 @@
 description: List of tools that Codacy uses to analyze over 40 supported languages and frameworks. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code frameworks as well as code duplication, code complexity, and code coverage metrics for most programming languages.
 ---
 
-<!-- TODO TAROT-2355
-- Review extra added languages. See the task for a complete list.
--->
-
 # Supported languages and tools
 
 Codacy uses industry-leading tools to perform automatic static code analysis over 40 supported languages and frameworks:
@@ -131,24 +127,6 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
     </tr>
     <tr>
-      <td>Cairo</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Clojure</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
       <td>CoffeeScript</td>
       <td><a href="https://github.com/clutchski/coffeelint">CoffeeLint</a></td>
       <td>-</td>
@@ -177,8 +155,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Dart</td>
-      <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a><a href="#dart-limitations"><sup>5</sup></a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
+      <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a><a href="#dart-limitations"><sup>5</sup></a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
@@ -238,15 +215,6 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
-      <td>HTML</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
       <td>Java</td>
       <td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a>,
           <a href="https://pmd.github.io/">PMD</a>,
@@ -272,8 +240,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>JSON</td>
-      <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
+      <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
           <a href="https://trivy.dev">Trivy</a></td>
@@ -282,35 +249,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
-      <td>Jsonnet</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
       <td>JSP</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>JSX</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Julia</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -347,24 +287,6 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
-      <td>Lisp</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Lua</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
       <td>Markdown</td>
       <td><a href="https://github.com/remarkjs/remark-lint">remark-lint</a>, <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
       <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> <a href="#suggest-fixes">🔧</a></td>
@@ -376,15 +298,6 @@ The table below lists all languages and frameworks that Codacy supports and the 
     <tr>
       <td>Objective-C</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>3</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>OCaml</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -453,15 +366,6 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td><a href="https://github.com/rubik/radon">Radon</a></td>
     </tr>
     <tr>
-      <td>R</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
       <td>Ruby<a href="#ruby-31"><sup>6</sup></a></td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
@@ -504,15 +408,6 @@ The table below lists all languages and frameworks that Codacy supports and the 
           <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a></td>
     </tr>
     <tr>
-      <td>Scheme</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
       <td>Serverless Framework</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td>-</td>
@@ -531,16 +426,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
-      <td>Solidity</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Swift </td>
+      <td>Swift</td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a>,
           <a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
       <td>-</td>
@@ -617,8 +503,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>XML</td>
-      <td><a href="https://pmd.github.io/">PMD</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
+      <td><a href="https://pmd.github.io/">PMD</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -636,7 +521,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>YAML</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
+      <td>-</td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
