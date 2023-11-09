@@ -6,6 +6,9 @@ description: If your repository has source files with unrecognized extensions, y
 
 If your repository has source files with unrecognized extensions, you can configure Codacy to include them in the next analysis:
 
+!!! note
+    Currently, the Semgrep static analysis tool doesn't support custom file extensions.
+
 1.  Go to your repository's **Settings**, **File Extensions**.
 
     ![Configuring file extensions](images/file-extensions.png)
