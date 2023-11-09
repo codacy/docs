@@ -22,6 +22,9 @@ The table below lists all languages and frameworks that Codacy supports and the 
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
+!!! important
+    Codacy runs security and other analysis tools when code is pushed to your Git provider. These tools don't scan code for issues continuously.
+
 <table>
   <colgroup>
     <col span="1" style="width: 20%;">
