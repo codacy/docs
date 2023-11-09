@@ -17,8 +17,6 @@ Codacy requests only the necessary permissions from your Git provider to analyze
 
 If you log in with GitHub, Codacy requires the following [app permissions](https://docs.github.com/en/rest/overview/permissions-required-for-github-apps):
 
-<!--TODO PLUTO-772 Update permissions-->
-
 <table>
   <colgroup>
     <col width="20%"/>
@@ -66,14 +64,9 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
       <td>Codacy sets the status of commits according to the result of code analysis.</td>
     </tr>
     <tr>
-      <td>Administration</td>
-      <td>Read & Write</td>
-      <td><a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
-    </tr>
-    <tr>
       <td>Contents</td>
       <td>Read-Only</td>
-      <td>Codacy accesses repository contents to provide faster code coverage analysis and as part of an initiative to use GitHub App tokens instead of SSH keys when cloning repositories for code quality analysis.</td>
+      <td>Codacy retrieves repository contents when integrating with your repositories and cloning them for code quality analysis, and to provide faster code coverage analysis.</td>
     </tr>
     <tr>
       <td colspan="3"><strong>Organization permissions:</strong></td>
