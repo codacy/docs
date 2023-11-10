@@ -19,8 +19,8 @@ x If switching to an analyzed branch with no open pull request, the extension sh
 x For a full list of Codacy commands, Cmd + Shift + P
 
 ## Structure
-- Refactor page IA to follow concept-task-reference
-    - Review titles of the section "The main view" and subsections
+x Refactor page IA to follow concept-task-reference
+    x Review titles of the section "The main view" and subsections
 x Remove mention of the Codacy status bar icon.
 
 ## Visuals
@@ -33,44 +33,13 @@ Use this extension to get the full list of problems found by Codacy for a pull r
 
 !!! info "To use this extension you need a [Codacy account](https://www.codacy.com/signup-codacy)"
 
-## Installing the Codacy VS Code extension
+## Interface overview
 
-1.  Make sure that the repository you’re working on is analyzed by Codacy and that you have at least [Repository Read permissions](../organizations/roles-and-permissions-for-organizations.md).
+The main view of the extension displays information about the code quality changes introduced by the pull request you're working on, as well as the status of other open pull requests and analyzed branches. This information is grouped into three tabs:
 
-    !!! tip
-        If this is your first time using Codacy, see [how to add and analyze your first repository](./codacy-quickstart.md#adding-your-first-repository).
-
-1.  Install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=codacy-app.codacy) or through the [Extensions view in VS Code](https://code.visualstudio.com/docs/editor/extension-marketplace#_browse-for-extensions).
-
-    Alternatively, you can install it manually by [downloading the latest release as a VSIX package](https://github.com/codacy/codacy-vscode-extension/releases).
-
-## Getting pull request quality and coverage data
-
-To see Codacy quality and coverage data for a pull request, follow these steps:
-
-1.  Open the repository directory in VS Code.
-
-    !!! note
-        If the repository isn't on Codacy yet, [add it to Codacy](../organizations/managing-repositories.md#adding-a-repository) first.
-
-1.  Open the main view by clicking the **Codacy logo** in the activity bar.
-
-    ![Codacy main view](images/codacy-vscode-extension-sign-in.png)
-
-1.  If you’re not signed in, click the **Sign in** button to authorize VS Code on Codacy.
-
-    !!! tip
-        You can also sign in and access more Codacy commands, such as **Sign out**, by opening the VS Code command palette (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS) and typing "Codacy".
-
-1.  Checkout the pull request of interest, either manually or from the **Open Pull Requests** tab, by clicking the arrow button or using the contextual right-click menu.
-
-After completing these steps, the main view shows the result of the latest Codacy analysis for the pull request. The VS Code Problems tab lists the Quality issues found.
-
-![Codacy main view](images/codacy-vscode-extension-main-view.png)
-
-## The main view
-
-The main view displays the information about the code quality changes introduced by the pull request you're working on. It has three tabs: **Status**, **Open Pull Requests tab**, and **Settings**.
+-   [Status](#status-tab)
+-   [Open Pull Requests](#open-pull-requests-tab)
+-   [Analyzed branch](#analyzed-branch-tab)
 
 ### Status tab
 
@@ -115,6 +84,41 @@ The **Open Pull Requests** tab lists all open pull requests for the repository, 
 ### Analyzed branch tab
 
 If you switch to an analyzed branch that doesn't have an open pull request, such as the `main` or `master` branch, the **Analyzed Branch** tab appears and shows an overview of the Quality issues found in the branch, grouped by recently added, introduced by the current user, issue category, and issue severity.
+
+## Installing the Codacy VS Code extension
+
+1.  Make sure that the repository you’re working on is analyzed by Codacy and that you have at least [Repository Read permissions](../organizations/roles-and-permissions-for-organizations.md).
+
+    !!! tip
+        If this is your first time using Codacy, see [how to add and analyze your first repository](./codacy-quickstart.md#adding-your-first-repository).
+
+1.  Install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=codacy-app.codacy) or through the [Extensions view in VS Code](https://code.visualstudio.com/docs/editor/extension-marketplace#_browse-for-extensions).
+
+    Alternatively, you can install it manually by [downloading the latest release as a VSIX package](https://github.com/codacy/codacy-vscode-extension/releases).
+
+## Getting pull request quality and coverage data
+
+To see Codacy quality and coverage data for a pull request, follow these steps:
+
+1.  Open the repository directory in VS Code.
+
+    !!! note
+        If the repository isn't on Codacy yet, [add it to Codacy](../organizations/managing-repositories.md#adding-a-repository) first.
+
+1.  Open the main view by clicking the **Codacy logo** in the activity bar.
+
+    ![Codacy main view](images/codacy-vscode-extension-sign-in.png)
+
+1.  If you’re not signed in, click the **Sign in** button to authorize VS Code on Codacy.
+
+    !!! tip
+        You can also sign in and access more Codacy commands, such as **Sign out**, by opening the VS Code command palette (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS) and typing "Codacy".
+
+1.  Checkout the pull request of interest, either manually or from the **Open Pull Requests** tab, by clicking the arrow button or using the contextual right-click menu.
+
+After completing these steps, the main view shows the result of the latest Codacy analysis for the pull request. The VS Code Problems tab lists the Quality issues found.
+
+![Codacy main view](images/codacy-vscode-extension-main-view.png)
 
 ## Reviewing pull request issues
 
