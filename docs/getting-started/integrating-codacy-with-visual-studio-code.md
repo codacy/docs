@@ -1,31 +1,6 @@
 # Integrating Codacy with Visual Studio Code
 
-<!-- TODO ALA-697
-
-## Content
-x There is a new Open Pull Requests tab, listing, for each PR:
-    x Who opened the PR
-    x Source and target branches of the PR
-    x Same metrics as the open PR
-        x Except the quality status, which appears on hover and uses a symbol to clarify
-        x The symbol also displays if it’s analyzing
-            x The symbol and hover message change to signal this
-x All PRs are displayed, even non-analyzed ones, with a message. It's not necessary to mention this.
-x Each open pull request lets the user:
-    x Check out the associated branch
-        x By clicking an arrow that appears on click/hover
-        x By using a contextual right-click menu
-x If switching to an analyzed branch with no open pull request, the extension shows issues for that branch
-x For a full list of Codacy commands, Cmd + Shift + P
-
-## Structure
-x Refactor page IA to follow concept-task-reference
-    x Review titles of the section "The main view" and subsections
-x Remove mention of the Codacy status bar icon.
-
-## Visuals
-x Screenshot updates
---> 
+<!-- TODO ALA-697 --> 
 
 The [Codacy Visual Studio Code extension](https://github.com/codacy/codacy-vscode-extension) is an open-source project that enables developers to review directly in VS Code the result of Codacy analysis for the pull requests they’re working on.
 
@@ -40,6 +15,8 @@ The main view of the extension displays information about the code quality chang
 -   [Status](#status-tab)
 -   [Open Pull Requests](#open-pull-requests-tab)
 -   [Analyzed branch](#analyzed-branch-tab)
+
+<!-- TODO ALA-697 add illustrative interface screenshot -->
 
 ### Status tab
 
