@@ -9,19 +9,22 @@ x There is a new Open Pull Requests tab, listing, for each PR:
     x Same metrics as the open PR
         x Except the quality status, which appears on hover and uses a symbol to clarify
         x The symbol also displays if it’s analyzing
-            - [CONFIRM] Just the symbol changes to signal this
-- [CONFIRM] Confirm that only analyzed PRs are listed.
+            x The symbol and hover message change to signal this
+x All PRs are displayed, even non-analyzed ones, with a message. It's not necessary to mention this.
 x Each open pull request lets the user:
     x Check out the associated branch
         x By clicking an arrow that appears on click/hover
         x By using a contextual right-click menu
 x If switching to an analyzed branch with no open pull request, the extension shows issues for that branch
-- For a full list of Codacy commands, Cmd + Shift + P
+x For a full list of Codacy commands, Cmd + Shift + P
 
 ## Structure
 - Refactor page IA to follow concept-task-reference
-- Review titles of the section "The main view" and subsections
-- Remove mention of the Codacy status bar icon.
+    - Review titles of the section "The main view" and subsections
+x Remove mention of the Codacy status bar icon.
+
+## Visuals
+- Screenshot updates
 --> 
 
 The [Codacy Visual Studio Code extension](https://github.com/codacy/codacy-vscode-extension) is an open-source project that enables developers to review directly in VS Code the result of Codacy analysis for the pull requests they’re working on.
@@ -50,11 +53,14 @@ To see Codacy quality and coverage data for a pull request, follow these steps:
     !!! note
         If the repository isn't on Codacy yet, [add it to Codacy](../organizations/managing-repositories.md#adding-a-repository) first.
 
-1.  Open the main view by clicking the **Codacy logo** in the activity bar or the **Codacy tab** in the status bar.<!-- TODO ALA-697: Confirm that the status bar icon is still there. -->
+1.  Open the main view by clicking the **Codacy logo** in the activity bar.
 
     ![Codacy main view](images/codacy-vscode-extension-sign-in.png)
 
 1.  If you’re not signed in, click the **Sign in** button to authorize VS Code on Codacy.
+
+    !!! tip
+        You can also sign in and access more Codacy commands, such as **Sign out**, by opening the VS Code command palette (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS) and typing "Codacy".
 
 1.  Checkout the pull request of interest, either manually or from the **Open Pull Requests** tab, by clicking the arrow button or using the contextual right-click menu.
 
@@ -88,9 +94,13 @@ The pull request **Status** tab displays the following information for the curre
 
 ### Open pull requests tab
 
-The **Open Pull Requests** tab lists all open pull requests for the repository, including the following information for each pull request:
+The **Open Pull Requests** tab lists all open pull requests for the repository, including the following information for each:
 
--   The **Quality status** of the pull request, either up to standards or not up to standards, based on the [Quality gates](../repositories-configure/adjusting-quality-gates.md) set for the repository, which is visible on hover.
+-   The status of the pull request, which is visible on hover:
+
+    -   Analyzing, if Codacy is analyzing the branch.
+
+    -   Up to standards or not up to standards, based on the [Quality gates](../repositories-configure/adjusting-quality-gates.md) set for the repository.
 
 -   The author of the pull request.
 
@@ -108,7 +118,7 @@ If you switch to an analyzed branch that doesn't have an open pull request, such
 
 ## Reviewing pull request issues
 
-In the Problems tab, Codacy displays the same Quality issues you find in the [**Status tab**](#status-tab) and lets you navigate to the exact line of code where the issue was found.
+In the **Problems tab**, Codacy displays the same Quality issues you find in the **Status tab** and lets you navigate to the exact line of code where the issue was found.
 
 !!! note
     Code coverage, duplicates, and complexity aren't currently shown in the Problems tab.
