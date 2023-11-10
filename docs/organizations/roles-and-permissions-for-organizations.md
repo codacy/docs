@@ -14,7 +14,7 @@ To review the permissions granted by each role, see the tables for each Git prov
 -   [GitLab](#permissions-for-gitlab)
 -   [Bitbucket](#permissions-for-bitbucket)
 
-You can grant some administrative permissions to any organization member independently of the member's role on the Git provider, using the [organization manager](#the-organization-manager-role) role.
+Additionally, you can grant some administrative permissions to any organization member independently of the member's role on the Git provider, using the [organization manager](#the-organization-manager-role) role.
 
 To list and manage the members of your Codacy organization, see the [Managing people](managing-people.md) page.
 
