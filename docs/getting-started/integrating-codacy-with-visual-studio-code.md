@@ -24,7 +24,7 @@ x For a full list of Codacy commands, Cmd + Shift + P
 x Remove mention of the Codacy status bar icon.
 
 ## Visuals
-- Screenshot updates
+x Screenshot updates
 --> 
 
 The [Codacy Visual Studio Code extension](https://github.com/codacy/codacy-vscode-extension) is an open-source project that enables developers to review directly in VS Code the result of Codacy analysis for the pull requests they’re working on.
