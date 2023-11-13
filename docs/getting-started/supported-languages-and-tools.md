@@ -23,7 +23,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
 -->
 
 !!! important
-    Codacy runs security and other analysis tools when code is pushed to your Git provider. These tools don't scan code for issues continuously.
+    Codacy runs security and other analysis tools when code changes are pushed to your repositories. These tools don't scan code for issues continuously.
 
 <table>
   <colgroup>
