@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira instance.">
       
       
-        <meta http-equiv="last-modified" content="2023-09-15 14:12:00">
+        <meta http-equiv="last-modified" content="2023-11-13 10:44:07">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -1071,22 +1071,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuration-page" class="md-nav__link">
-    Configuration page
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#opening-and-closing-items" class="md-nav__link">
     How Codacy manages security items
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#managing-access-to-security-and-risk-management" class="md-nav__link">
-    Managing access to Security and risk management
   </a>
   
 </li>
@@ -4016,16 +4002,11 @@
                 
                 
                 <h1 id="managing-security-and-risk">Managing security and risk<a class="headerlink" href="#managing-security-and-risk" title="Permanent link">#</a></h1>
-<div class="admonition info">
-<p class="admonition-title">This is a preview feature</p>
-<p>This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.</p>
-</div>
 <p>The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your <a href="../integrations/jira-integration/">connected Jira instance</a>.</p>
 <p>Under Security and risk management, you can find the following pages to help you monitor your security issues:</p>
 <ul>
 <li><a href="#dashboard">Dashboard</a></li>
 <li><a href="#item-list">Item list</a></li>
-<li><a href="#configuration-page">Configuration page</a></li>
 </ul>
 <h2 id="dashboard">Dashboard<a class="headerlink" href="#dashboard" title="Permanent link">#</a></h2>
 <p>The <strong>Security and risk management</strong> dashboard provides a general overview of items, based on their status.</p>
@@ -4043,6 +4024,7 @@
 <ul>
 <li>Limit the total counts in each panel to a specific set of severities or repositories by clicking the <strong>Severity</strong> or <strong>Repository</strong> drop-downs above the main area.</li>
 <li>Export a list of items as a CSV file by clicking the <strong>Export CSV</strong> button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.</li>
+<li>Review the <a href="#item-severities-and-deadlines">severity assignment rules</a> by clicking the <strong>See rules</strong> button in the top right-hand corner of the page.</li>
 </ul>
 <p><img alt="Security and risk management dashboard" src="../images/security-risk-management-dashboard.png" /></p>
 <h2 id="item-list">Item list<a class="headerlink" href="#item-list" title="Permanent link">#</a></h2>
@@ -4053,12 +4035,9 @@
 <li>Update the filtering criteria by clicking the <strong>Severity</strong>, <strong>Status</strong>, or <strong>Repository</strong> drop-downs above the list.</li>
 <li>Find out more about an item by clicking its <strong>Details</strong> column to navigate to the item of interest on the source platform.</li>
 <li>Export a list of items as a CSV file by clicking the <strong>Export CSV</strong> button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.</li>
+<li>Review the <a href="#item-severities-and-deadlines">severity assignment rules</a> by clicking the <strong>See rules</strong> button in the top right-hand corner of the page.</li>
 </ul>
 <p><img alt="Security and risk management items" src="../images/security-risk-management-item-list.png" /></p>
-<h2 id="configuration-page">Configuration page<a class="headerlink" href="#configuration-page" title="Permanent link">#</a></h2>
-<p>The <strong>Security and risk management configuration</strong> page lets you <a href="#managing-access-to-security-and-risk-management">assign or revoke the Security Manager role</a> for organization members and review the <a href="#item-severities-and-deadlines">severity assignment rules</a>.</p>
-<p>To access the configuration page, access the <a href="#dashboard">dashboard</a> or the <a href="#item-list">item list</a> and click the <strong>Configure</strong> button in the top right-hand corner of the page.</p>
-<p><img alt="Security and risk management configuration" src="../images/security-risk-management-configuration.png" /></p>
 <h2 id="opening-and-closing-items">How Codacy manages security items<a class="headerlink" href="#opening-and-closing-items" title="Permanent link">#</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -4103,69 +4082,6 @@
 </div>
 <p>Codacy opens a new item when it detects a new Jira issue with a <strong>security</strong> label (case-insensitive).</p>
 <p>Codacy closes an item when it detects that the associated Jira issue is marked as Closed.</p>
-<h2 id="managing-access-to-security-and-risk-management">Managing access to Security and risk management<a class="headerlink" href="#managing-access-to-security-and-risk-management" title="Permanent link">#</a></h2>
-<p>To better track and address security issues, organization admins can extend access to Security and risk management by assigning the Security Manager role to organization members.</p>
-<p>The Security Manager role is independent of the Git provider role of an organization member and provides only the permissions necessary to monitor security issues, following the principle of least privilege:</p>
-<table>
-<thead>
-<tr>
-<th>Permission</th>
-<th>Organization Admin</th>
-<th>Security Manager</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Access Security and risk management</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Access associated issues (Codacy repositories, Jira issues)</td>
-<td>Platform-dependent</td>
-<td>Keeps original permissions</td>
-</tr>
-<tr>
-<td>Manage the Jira integration</td>
-<td>Yes</td>
-<td>Yes</td>
-</tr>
-<tr>
-<td>Assign and revoke the Security Manager role</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-<tr>
-<td>All other Organization Admin permissions</td>
-<td>Yes</td>
-<td>No</td>
-</tr>
-</tbody>
-</table>
-<h3 id="assigning-the-security-manager-role">Assigning the Security Manager role<a class="headerlink" href="#assigning-the-security-manager-role" title="Permanent link">#</a></h3>
-<p>To assign the Security Manager role:</p>
-<ol>
-<li>
-<p>Open your organization <strong>Security and Risk</strong> page and click the <strong>Configure</strong> button to open the configuration page.</p>
-</li>
-<li>
-<p>In the <strong>Security managers</strong> area, use the search field to find the relevant user and click the user's name.</p>
-<p><img alt="Security and risk management access management" src="../images/security-risk-management-access-management.png" /></p>
-</li>
-</ol>
-<h3 id="revoking-the-security-manager-role">Revoking the Security Manager role<a class="headerlink" href="#revoking-the-security-manager-role" title="Permanent link">#</a></h3>
-<p>To revoke the Security Manager role:</p>
-<ol>
-<li>
-<p>Open your organization <strong>Security and Risk</strong> page and click the <strong>Configure</strong> button to open the configuration page.</p>
-</li>
-<li>
-<p>In the <strong>Security managers</strong> area, scroll the list to find the relevant user.</p>
-</li>
-<li>
-<p>Click the <strong>Revoke role icon</strong> to the right of the user's name and confirm.</p>
-</li>
-</ol>
 <h2 id="item-statuses">Item statuses<a class="headerlink" href="#item-statuses" title="Permanent link">#</a></h2>
 <p>The following table describes how item statuses map to deadlines:</p>
 <table>
@@ -4401,7 +4317,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 15, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 13, 2023</span>
     
   </small>
 </div>
