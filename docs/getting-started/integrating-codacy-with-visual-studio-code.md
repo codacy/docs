@@ -68,7 +68,7 @@ If you switch to an analyzed branch that doesn't have an open pull request, such
 
 ## Installing the Codacy VS Code extension
 
-1.  Make sure that the repository you’re working on is analyzed by Codacy and that you have at least [Repository Read permissions](../organizations/roles-and-permissions-for-organizations.md).
+1.  Make sure that the repository you’re working on is analyzed by Codacy and that you have a [repository read](../organizations/roles-and-permissions-for-organizations.md) role or higher.
 
     !!! tip
         If this is your first time using Codacy, see [how to add and analyze your first repository](./codacy-quickstart.md#adding-your-first-repository).
