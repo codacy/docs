@@ -1,15 +1,11 @@
 # Managing security and risk
 
-!!! info "This is a preview feature"
-    This is a new Codacy feature and <span class="skip-vale">we're</span> continuing to improve it.
-
 The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your [connected Jira instance](./integrations/jira-integration.md).
 
 Under Security and risk management, you can find the following pages to help you monitor your security issues:
 
 -   [Dashboard](#dashboard)
 -   [Item list](#item-list)
--   [Configuration page](#configuration-page)
 
 ## Dashboard
 
@@ -31,6 +27,7 @@ When viewing the dashboard, you can:
 
 -   Limit the total counts in each panel to a specific set of severities or repositories by clicking the **Severity** or **Repository** drop-downs above the main area.
 -   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
+-   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
 ![Security and risk management dashboard](images/security-risk-management-dashboard.png)
 
@@ -45,16 +42,9 @@ When viewing the item list, you can:
 -   Update the filtering criteria by clicking the **Severity**, **Status**, or **Repository** drop-downs above the list.
 -   Find out more about an item by clicking its **Details** column to navigate to the item of interest on the source platform.
 -   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
+-   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
 ![Security and risk management items](images/security-risk-management-item-list.png)
-
-## Configuration page
-
-The **Security and risk management configuration** page lets you [assign or revoke the Security Manager role](#managing-access-to-security-and-risk-management) for organization members and review the [severity assignment rules](#item-severities-and-deadlines).
-
-To access the configuration page, access the [dashboard](#dashboard) or the [item list](#item-list) and click the **Configure** button in the top right-hand corner of the page.
-
-![Security and risk management configuration](images/security-risk-management-configuration.png)
 
 ## How Codacy manages security items {: id="opening-and-closing-items"}
 
@@ -100,40 +90,6 @@ Codacy closes an item in either of the following cases:
 Codacy opens a new item when it detects a new Jira issue with a **security** label (case-insensitive).
 
 Codacy closes an item when it detects that the associated Jira issue is marked as Closed.
-
-## Managing access to Security and risk management
-
-To better track and address security issues, organization admins can extend access to Security and risk management by assigning the Security Manager role to organization members.
-
-The Security Manager role is independent of the Git provider role of an organization member and provides only the permissions necessary to monitor security issues, following the principle of least privilege:
-
-| Permission                                                  | Organization Admin | Security Manager           |
-|-------------------------------------------------------------|--------------------|----------------------------|
-| Access Security and risk management                         | Yes                | Yes                        |
-| Access associated issues (Codacy repositories, Jira issues) | Platform-dependent | Keeps original permissions |
-| Manage the Jira integration                                 | Yes                | Yes                        |
-| Assign and revoke the Security Manager role                 | Yes                | No                         |
-| All other Organization Admin permissions                    | Yes                | No                         |
-
-### Assigning the Security Manager role
-
-To assign the Security Manager role:
-
-1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
-
-1.  In the **Security managers** area, use the search field to find the relevant user and click the user's name.
-
-    ![Security and risk management access management](images/security-risk-management-access-management.png)
-
-### Revoking the Security Manager role
-
-To revoke the Security Manager role:
-
-1.  Open your organization **Security and Risk** page and click the **Configure** button to open the configuration page.
-
-1.  In the **Security managers** area, scroll the list to find the relevant user.
-
-1.  Click the **Revoke role icon** to the right of the user's name and confirm.
 
 ## Item statuses
 
