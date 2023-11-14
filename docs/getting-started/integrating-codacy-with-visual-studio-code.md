@@ -20,7 +20,7 @@ The main view of the extension displays information about the code quality chang
 
 The pull request **Status** tab displays the following information for the currently checked out pull request:
 
-![Codacy main view](images/codacy-vscode-extension-status-tab.png)<!-- TODO ALA-697 screenshot -->
+![Codacy main view](images/codacy-vscode-extension-status-tab.png)
 
 -   The **Quality status** of the pull request, either up to standards or not up to standards, based on the [Quality gates](../repositories-configure/adjusting-quality-gates.md) set for the repository.
 
@@ -42,7 +42,7 @@ The pull request **Status** tab displays the following information for the curre
 
 The **Open Pull Requests** tab lists all open pull requests for the repository, including the following information for each:
 
-![Codacy main view](images/codacy-vscode-extension-pull-requests-tab.png)<!-- TODO ALA-697 screenshot -->
+![Codacy main view](images/codacy-vscode-extension-pull-requests-tab.png)
 
 -   The status of the pull request, which is visible on hover:
 
