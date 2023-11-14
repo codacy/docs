@@ -84,15 +84,6 @@ The table below lists all languages and frameworks that Codacy supports and the 
       <td>-</td>
     </tr>
     <tr>
-      <td>Bash</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
       <td>C</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"><sup>3</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
@@ -418,7 +409,8 @@ The table below lists all languages and frameworks that Codacy supports and the 
     </tr>
     <tr>
       <td>Shell</td>
-      <td><a href="https://www.shellcheck.net/">ShellCheck</a></td>
+      <td><a href="https://www.shellcheck.net/">ShellCheck</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>1</sup></a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -531,7 +523,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
   </tbody>
 </table>
 
-<sup><span id="semgrep">1</span></sup><!-- TODO TAROT-2355: Review copy and link. -->: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/).  
+<sup><span id="semgrep">1</span></sup><!-- TODO TAROT-2355: Review copy and link. -->: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/). This tool doesn't support [custom file extensions](../repositories-configure/file-extensions.md).  
 <sup><span id="yaml-only">1</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.  
 <sup><span id="client-side">2</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
 <sup><span id="cppcheck-misra">3</span></sup>: Currently, Cppcheck only supports [checking the MISRA guidelines for C](https://cppcheck.sourceforge.io/misra.php).  
@@ -681,6 +673,10 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="http://www.scalastyle.org/">Scalastyle</a></td>
 <td><a href="https://github.com/codacy/codacy-scalastyle" class="skip-vale">codacy/codacy-scalastyle</a></td>
+</tr>
+<tr>
+<td><a href="https://semgrep.dev/">Semgrep</a></td>
+<td><a href="https://github.com/codacy/codacy-semgrep" class="skip-vale">codacy/codacy-semgrep</a></td>
 </tr>
 <tr>
 <td><a href="https://www.shellcheck.net/">ShellCheck</a></td>

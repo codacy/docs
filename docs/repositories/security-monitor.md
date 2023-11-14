@@ -93,10 +93,6 @@ The Security Monitor supports checking the languages and frameworks below for an
           <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
     </tr>
     <tr>
-      <td>Bash</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-    </tr>
-    <tr>
       <td>C</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>3</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
@@ -218,7 +214,8 @@ The Security Monitor supports checking the languages and frameworks below for an
     </tr>
     <tr>
       <td>Shell</td>
-      <td><a href="https://www.shellcheck.net/">ShellCheck</a></td>
+      <td><a href="https://www.shellcheck.net/">ShellCheck</a>
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
     </tr>
     <tr>
       <td>Terraform</td>

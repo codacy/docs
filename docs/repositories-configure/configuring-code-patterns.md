@@ -264,7 +264,7 @@ The table below lists the configuration file names that Codacy detects and suppo
   </tr>
   <tr>
     <td>Semgrep</td>
-    <td>Apex, Bash, C++, C#, Dockerfile, Elixir, Go, Java, JavaScript, Kotlin, PHP, Python, Ruby, Rust, Scala, Swift, Terraform, TypeScript</td>
+    <td>Apex, C++, C#, Dockerfile, Elixir, Go, Java, JavaScript, Kotlin, PHP, Python, Ruby, Rust, Scala, Shell, Swift, Terraform, TypeScript</td>
     <td><code>.semgrep.yaml</code></td>
     <td></td>
   </tr>
