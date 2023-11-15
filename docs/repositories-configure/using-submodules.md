@@ -13,9 +13,11 @@ By default, Codacy does normal Git clones that **don't include submodules** to e
 
 1.  **If you're using Codacy Self-hosted**, [update your license](../chart/maintenance/license.md).
 
-1.  If your submodules are:<!--TODO PLUTO-772 Validate prerequisites-->
-    -   **Public repositories**, make sure that your Git URL uses the HTTPS protocol.
-    -   **Private repositories**, make sure that your Git URL uses the SSH protocol.
+1.  Make sure that your **Git URL** uses the correct protocol:
+    -   **GitHub:** HTTPS protocol
+    -   **GitLab and Bitbucket:**
+        -   HTTPS protocol, if your submodules are **public repositories**
+        -   SSH protocol, if your submodules are **private repositories**
 
 ## Enabling submodules on a repository
 
