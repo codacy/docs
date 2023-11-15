@@ -23,7 +23,7 @@ By default, Codacy does normal Git clones that **don't include submodules** to e
 
 When using submodules, you must do the following for all your existing and new repositories:
 
-1.  **For GitLab and Bitbucket**, [update the public SSH key](#update-key) that Codacy uses to access your repository.
+1.  **GitLab and Bitbucket only:** [Update the public SSH key](#update-key) that Codacy uses to access your repository.
 
 1.  If you're using submodules to share an analysis tool configuration file across your repositories, check if your tool recursively searches the subdirectories of your repositories for configuration files.
 
