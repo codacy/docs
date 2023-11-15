@@ -526,7 +526,7 @@ The table below lists all languages and frameworks that Codacy supports and the 
   </tbody>
 </table>
 
-<sup><span id="semgrep">1</span></sup><!-- TODO TAROT-2355: Review copy and link. -->: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/). This tool doesn't support [custom file extensions](../repositories-configure/file-extensions.md).  
+<sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/). This tool doesn't support [custom file extensions](../repositories-configure/file-extensions.md).  
 <sup><span id="yaml-only">1</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.  
 <sup><span id="client-side">2</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
 <sup><span id="cppcheck-misra">3</span></sup>: Currently, Cppcheck only supports [checking the MISRA guidelines for C](https://cppcheck.sourceforge.io/misra.php).  
