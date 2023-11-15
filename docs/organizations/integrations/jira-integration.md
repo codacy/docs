@@ -32,7 +32,3 @@ To uninstall the Jira integration, open your organization **Integrations**, page
 
 !!! important
     Uninstalling the Jira integration as described above deletes all associated open items. You can alternatively uninstall the Jira integration on the Jira website: this doesn't delete anything, but it prevents Codacy from opening new Jira-related items.
-
-## See also
-
--   [Repository Jira integration](../../repositories-configure/integrations/jira-integration.md)
