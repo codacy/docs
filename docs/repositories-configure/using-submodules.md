@@ -44,8 +44,7 @@ To update your GitLab or Bitbucket public SSH key that Codacy uses to access you
     -   For GitLab, click the button **Generate New User Key**. Codacy removes the existing repository key and creates the new SSH key on your user account automatically.
 
     -   For Bitbucket:
-        1.  Take note of the existing key.
-        1.  Remove this Codacy key from the repository settings on your Git provider.
+        1.  Remove the existing Codacy key from the repository settings on your Git provider.
         1.  Click the link **Add new user key**. This takes you to the Git provider page where you can manage your user account SSH keys.
         1.  Add a new SSH key to your Git provider account.
 
