@@ -5,7 +5,7 @@
 By default, Codacy does normal Git clones that **don't include submodules** to ensure that we only clone necessary repositories. If your organization needs to use submodules, you can request Codacy to enable this feature for you.
 
 !!! note
-    GitHub only: Your repository and the repositories that you add as submodules must belong to the same GitHub organization.
+    **GitHub only:** Your repository and the repositories that you add as submodules must belong to the same GitHub organization.
 
 ## Prerequisites for using submodules
 
