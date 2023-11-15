@@ -57,7 +57,8 @@ If your Codacy Self-hosted setup uses a **dedicated NGINX Ingress Controller** t
     helm upgrade --install --namespace codacy --version 4.8.3 nginx-ingress ingress-nginx/ingress-nginx -f values-nginx.yaml
     ```
 
-This upgrade can also be applied to supported Codacy Self-Hosted versions before v13.0.
+!!! note
+    This ingress-nginx chart upgrade can be applied to Codacy Self-hosted v10.0 and later.
 
 ## Product enhancements
 
