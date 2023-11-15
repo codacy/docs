@@ -4,12 +4,9 @@ description: Configure the static analysis tools and code patterns that Codacy u
 
 # Configuring code patterns
 
-!!! note
-    Organization admins can [change who is allowed to configure code patterns](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
+!!! info "Organization admins can [manage access to this feature](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration)"
 
-By default, Codacy analyzes your repositories using a subset of the supported static analysis tools and code patterns. These default configurations are the result of community feedback and of existing coding standards.
-
-You can adapt the default configurations to your needs in several ways:
+By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs in several ways:
 
 -   [Configuring tools and code patterns using the Codacy UI](#configuring-tools-and-code-patterns-using-the-codacy-ui)
 -   [Importing configurations from another repository](#import-patterns)
@@ -58,7 +55,6 @@ For example, when adding a new repository on Codacy you can copy the tool and co
 
     Alternatively, you can also copy the tool and code pattern configurations [from one repository to multiple target repositories](../organizations/copying-code-patterns-between-repositories.md).
 
-<!-- TODO DOCS-341 Can we simplify this? -->
 <!--code-patterns-copy-start-->
 !!! important
     Consider the following when using this feature:
@@ -78,7 +74,7 @@ To import the tool and code pattern configurations from another repository:
 
 1.  Open your repository **Code patterns** and click **Import patterns**.
 
-    ![Importing code patterns from another repository](images/code-patterns-import.png)<!-- TODO DOCS-341 Evaluate whether to keep -->
+    ![Importing code patterns from another repository](images/code-patterns-import.png)
 
 1.  Follow the instructions to select the source repository and complete the import.
 
@@ -334,4 +330,4 @@ The table below lists the configuration file names that Codacy detects and suppo
 
 -   [Applying a coding standard across multiple repositories](../organizations/using-coding-standards.md)
 -   [Copying code patterns between repositories](../organizations/copying-code-patterns-between-repositories.md)
--   [How to implement Google JavaScript style guide with Codacy](https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/)<!-- TODO DOCS-341 Shouldn't we rather mention an internal docs page here? -->
+-   [How to implement Google JavaScript style guide with Codacy](https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/)
