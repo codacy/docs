@@ -3,7 +3,7 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Removal of Jira, Slack, and Webhooks integrations on repository level November 13, 2023
+# Removal of Jira, Slack, and Webhooks repository integrations November 13, 2023
 
 On the week of November 13th 2023 we removed the option to create, configure, and delete Jira, Slack, and Webhooks integrations for your repositories. These integrations were available on the repository **Settings**, tab **Integration**.
 
