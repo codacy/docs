@@ -66,6 +66,8 @@ The **Open Pull Requests** tab lists all open pull requests for the repository, 
 
 If you switch to an analyzed branch that doesn't have an open pull request, such as the `main` or `master` branch, the **Analyzed Branch** tab appears and shows an overview of the Quality issues found in the branch, grouped by recently added, introduced by the current user, issue category, and issue severity.
 
+See [how to manage the analysis of your repository's branches](../repositories-configure/managing-branches.md).
+
 ## Installing the Codacy VS Code extension
 
 1.  Make sure that the repository you’re working on is analyzed by Codacy and that you have a [repository read](../organizations/roles-and-permissions-for-organizations.md) role or higher.
