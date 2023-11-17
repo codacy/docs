@@ -8,7 +8,7 @@ Use this extension to get the full list of problems found by Codacy for a pull r
 
 ## Interface overview
 
-The main view of the extension displays information about the code quality changes introduced by the pull request you're working on, as well as the status of other open pull requests and analyzed branches. This information is grouped into three tabs:
+The main view of the extension displays information about the code quality changes introduced by the pull request you're working on, as well as the status of other open pull requests and analyzed branches. This information is grouped into three sections:
 
 -   [Status](#status-tab)
 -   [Open Pull Requests](#open-pull-requests-tab)
@@ -58,13 +58,13 @@ The **Open Pull Requests** tab lists all open pull requests for the repository, 
 
 -   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Quality Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
 
--   Variations in **code complexity** introduced by the pull request.
+-   Variations in **code complexity** introduced by the pull request. This is the same value you find on the [Pull request quality overview](../repositories/pull-requests.md#quality-overview) in the Codacy app.
 
 ### Analyzed branch tab
 
 ![Codacy main view](images/codacy-vscode-extension-analyzed-branch-tab.png)
 
-If you switch to an analyzed branch that doesn't have an open pull request, such as the `main` or `master` branch, the **Analyzed Branch** tab appears and shows an overview of the Quality issues found in the branch, grouped by recently added, introduced by the current user, issue category, and issue severity.
+The **Analyzed Branch** tab appears if you switch to an analyzed branch that doesn't have an open pull request, such as the `main` or `master` branch. This tab shows an overview of the Quality issues found in that branch, grouped by recently added, introduced by the current user, issue category, and issue severity.
 
 See [how to manage the analysis of your repository's branches](../repositories-configure/managing-branches.md).
 
@@ -95,9 +95,9 @@ To see Codacy quality and coverage data for a pull request, follow these steps:
 1.  If you’re not signed in, click the **Sign in** button to authorize VS Code on Codacy.
 
     !!! tip
-        You can alternatively sign in, and access more Codacy commands, such as **Sign out**, by opening the VS Code command palette (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS) and typing "Codacy".
+        To access a complete list of Codacy commands, open the VS Code command palette (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS) and type "Codacy".
 
-1.  Checkout the pull request of interest, either manually or from the **Open Pull Requests** tab, by clicking the arrow button or using the contextual right-click menu.
+1.  Check out the pull request of interest. You can do it either manually or from the **Open Pull Requests** tab, by clicking the arrow button or using the contextual right-click menu.
 
 After completing these steps, the main view shows the result of the latest Codacy analysis for the pull request. The VS Code Problems tab lists the Quality issues found.
 
