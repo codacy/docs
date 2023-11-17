@@ -11,7 +11,7 @@ On the week of November 13th 2023 we removed the option to create, configure, an
 
 ## Removal of existing integrations
 
-On the week of MM DDth YYYY we'll be removing your existing integrations.
+On the week of MM DDth YYYY we'll be removing your existing integrations.<!--TODO CY-7215 Update date to remove existing integrations-->
 
 <!--TODO CY-7215 Impacts?-->
 
