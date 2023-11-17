@@ -11,13 +11,13 @@ On the week of November 13th 2023 we removed the option to create, configure, an
 
 ## Removal of existing integrations
 
-On the week of MM DDth YYYY we'll be removing your existing integrations.<!--TODO CY-7215 Update date to remove existing integrations-->
+On the week of MM DD YYYY we'll be removing your existing integrations.<!--TODO CY-7215 Update date to remove existing integrations-->
 
 <!--TODO CY-7215 Impacts?-->
 
 ## If you are using Jira, Slack, or Webhooks repository integration
 
-Your existing integrations will keep working until MM DDth YYYY, but you are no longer able to configure, or delete them on the Codacy app.
+Your existing integrations will keep working until MM DD YYYY, but you are no longer able to configure, or delete them on the Codacy app.
 
 <!--TODO CY-7215 Instructions for customers?-->
 
