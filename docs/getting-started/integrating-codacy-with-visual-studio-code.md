@@ -18,9 +18,9 @@ The main view of the extension displays information about the code quality chang
 
 ### Status tab
 
-The pull request **Status** tab displays the following information for the currently checked out pull request:
+![Status tab UI](images/codacy-vscode-extension-status-tab.png)
 
-![Codacy main view](images/codacy-vscode-extension-status-tab.png)
+The pull request **Status** tab displays the following information for the currently checked out pull request:
 
 -   The **Quality status** of the pull request, either up to standards or not up to standards, based on the [Quality gates](../repositories-configure/adjusting-quality-gates.md) set for the repository.
 
@@ -40,9 +40,9 @@ The pull request **Status** tab displays the following information for the curre
 
 ### Open pull requests tab
 
-The **Open Pull Requests** tab lists all open pull requests for the repository, including the following information for each:
+![Pull requests tab UI](images/codacy-vscode-extension-pull-requests-tab.png)
 
-![Codacy main view](images/codacy-vscode-extension-pull-requests-tab.png)
+The **Open Pull Requests** tab lists all open pull requests for the repository, including the following information for each:
 
 -   The status of the pull request, which is visible on hover:
 
@@ -62,7 +62,7 @@ The **Open Pull Requests** tab lists all open pull requests for the repository, 
 
 ### Analyzed branch tab
 
-![Codacy main view](images/codacy-vscode-extension-analyzed-branch-tab.png)
+![Analyzed branch tab UI](images/codacy-vscode-extension-analyzed-branch-tab.png)
 
 The **Analyzed Branch** tab appears if you switch to an analyzed branch that doesn't have an open pull request, such as the `main` or `master` branch. This tab shows an overview of the Quality issues found in that branch, grouped by recently added, introduced by the current user, issue category, and issue severity.
 
