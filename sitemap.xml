@@ -956,11 +956,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.codacy.com/repositories-configure/integrations/slack-integration/</loc>
-         <lastmod>2023-11-17</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.codacy.com/repositories-configure/local-analysis/client-side-tools/</loc>
          <lastmod>2023-11-17</lastmod>
          <changefreq>daily</changefreq>
