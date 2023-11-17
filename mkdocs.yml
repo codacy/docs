@@ -660,6 +660,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2023:
+                      - release-notes/cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal.md
                       - release-notes/cloud/cloud-2023-10.md
                       - release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md
                       - release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation.md
