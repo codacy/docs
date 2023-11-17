@@ -160,8 +160,8 @@ plugins:
               "hc/en-us/articles/207280239.md": "repositories-configure/integrations/bitbucket-integration.md"
               "hc/en-us/articles/207280239-bitbucket-integration.md": "repositories-configure/integrations/bitbucket-integration.md"
               "hc/en-us/articles/207280239-Bitbucket-Integration.md": "repositories-configure/integrations/bitbucket-integration.md"
-              "hc/en-us/articles/207280359.md": "repositories-configure/integrations/webhook-notifications.md"
-              "hc/en-us/articles/207280359-WebHook-Notifications.md": "repositories-configure/integrations/webhook-notifications.md"
+              "hc/en-us/articles/207280359.md": "index.md"
+              "hc/en-us/articles/207280359-WebHook-Notifications.md": "index.md"
               "hc/en-us/articles/207280379.md": "getting-started/supported-languages-and-tools.md#docker-images-of-supported-tools"
               "hc/en-us/articles/207280379-Tool-Developer-Guide-Using-Scala.md": "getting-started/supported-languages-and-tools.md#docker-images-of-supported-tools"
               "hc/en-us/articles/207312879.md": "coverage-reporter/index.md"
@@ -456,6 +456,7 @@ plugins:
               "faq/code-analysis/how-does-codacy-measure-complexity-in-my-repository.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
               "faq/repositories/what-are-the-different-grades-and-how-are-they-calculated.md": "faq/code-analysis/which-metrics-does-codacy-calculate.md"
               "faq/general/how-do-i-block-merging-prs-using-codacy-as-a-quality-gate.md": "getting-started/integrating-codacy-with-your-git-workflow.md"
+              "repositories-configure/integrations/webhook-notifications.md": "index.md"
               "repositories-configure/integrations/jira-integration.md": "organizations/integrations/jira-integration.md"
               "repositories-configure/integrations/slack-integration.md": "organizations/integrations/slack-integration.md"
               # Moved pages
@@ -574,7 +575,6 @@ nav:
                 - repositories-configure/integrations/github-integration.md
                 - repositories-configure/integrations/gitlab-integration.md
                 - repositories-configure/integrations/bitbucket-integration.md
-                - repositories-configure/integrations/webhook-notifications.md
                 - repositories-configure/integrations/post-commit-hooks.md
           - repositories-configure/ignoring-files.md
           - repositories-configure/file-extensions.md
