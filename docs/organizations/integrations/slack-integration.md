@@ -28,7 +28,3 @@ Once the Slack integration is installed, Codacy sends a confirmation message to 
 ## Uninstalling the Slack integration
 
 To uninstall the Slack integration, open your organization **Integrations**, page **Slack**, then click **Uninstall Slack** and confirm.
-
-## See also
-
--   [Repository Slack integration](../../repositories-configure/integrations/slack-integration.md)

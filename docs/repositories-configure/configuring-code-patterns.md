@@ -123,7 +123,7 @@ The table below lists the configuration file names that Codacy detects and suppo
   <thead>
     <tr>
       <th>Tool name</th>
-      <th>Language</th>
+      <th>Languages</th>
       <th>Files detected</th>
       <th>Other info</th>
     <tr>
@@ -260,6 +260,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>Scalastyle</td>
     <td>Scala</td>
     <td><code>scalastyle-config.xml</code>, <code>scalastyle_config.xml</code></td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>Semgrep</td>
+    <td>Apex, C++, C#, Dockerfile, Elixir, Go, Java, JavaScript, Kotlin, PHP, Python, Ruby, Rust, Scala, Shell, Swift, Terraform, TypeScript</td>
+    <td><code>.semgrep.yaml</code></td>
     <td></td>
   </tr>
   <tr>
