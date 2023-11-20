@@ -18,7 +18,7 @@ The main view of the extension displays information about the code quality and c
 
 ### Status tab
 
-The **Pull request status** tab displays the following information for the currently checked out pull request:
+The **Pull request status** tab displays the following information for the pull request of the currently checked-out branch:
 
 -   The **Quality status** of the pull request, either up to standards or not up to standards, based on the [Quality gates](../repositories-configure/adjusting-quality-gates.md) set for the repository.
 
@@ -79,7 +79,7 @@ See [how to manage the analysis of your repository's branches](../repositories-c
 
 ## Getting pull request quality and coverage data
 
-To see Codacy quality and coverage data for a pull request, follow these steps:
+To see Codacy quality and coverage data for an open pull request, follow these steps:
 
 1.  Open the repository directory in VS Code.
 
