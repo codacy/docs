@@ -129,6 +129,7 @@ revive
 rubocop
 roslyn
 scalastyle
+semgrep
 shellcheck
 sonarscharp
 sonarvb
