@@ -65,7 +65,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</td>
+      <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches,<br/>reanalyze branches and pull requests</td>
       <td>No</td>
       <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
       <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
@@ -200,7 +200,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</td>
+      <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches,<br/>reanalyze branches and pull requests</td>
       <td>No</td>
       <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
@@ -320,7 +320,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</td>
+      <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches,<br/>reanalyze branches and pull requests</td>
       <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
       <td>Inherits original permission</td>
       <td class="yes">Yes</td>
@@ -426,6 +426,7 @@ To change this, open your organization **Settings**, page **Roles and permission
 -   [Configure code patterns](../repositories-configure/configuring-code-patterns.md)
 -   [Configure file extensions](../repositories-configure/file-extensions.md)
 -   [Manage branches](../repositories-configure/managing-branches.md)
+-   [Reanalyze branches and pull requests](../faq/repositories/how-do-i-reanalyze-my-repository.md)
 
 ![Configuring who can change analysis configurations](images/roles-permissions-repo-management.png)
 
