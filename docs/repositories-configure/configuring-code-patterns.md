@@ -4,7 +4,7 @@ description: Configure the static analysis tools and code patterns that Codacy u
 
 # Configuring code patterns
 
-!!! info "Organization admins can [manage access to this feature](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration)"
+{% include-markdown "../assets/includes/admin-access-control-info.md" %}
 
 By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs in several ways:
 

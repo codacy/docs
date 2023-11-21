@@ -51,6 +51,8 @@ You can define one or more of the following filters:
 
 ## Ignoring and managing issues
 
+{% include-markdown "../assets/includes/admin-access-control-info.md" %}
+
 Use the options in the menu of each issue to:
 
 -   **Copy the link** to the issue.

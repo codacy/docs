@@ -4,6 +4,8 @@ description: If your repository has source files with unrecognized extensions, y
 
 # Configuring file extensions
 
+{% include-markdown "../assets/includes/admin-access-control-info.md" %}
+
 If your repository has source files with unrecognized extensions, you can configure Codacy to include them in the next analysis:
 
 1.  Go to your repository's **Settings**, **File Extensions**.
