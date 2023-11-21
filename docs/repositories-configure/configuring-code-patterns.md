@@ -108,7 +108,7 @@ To use a configuration file for a static analysis tool:
 1.  Open the repository **Code patterns** page, select the tool of interest, and select the option **Configuration file**.
 
     !!! note
-        -   If a subsequent pull request updates the configuration file, Codacy considers the updates when analyzing that pull request.
+        -   If a subsequent pull request updates the configuration file, Codacy considers those updates when analyzing that pull request.
 
         -   If a subsequent pull request deletes the configuration file, Codacy reverts to the last tool patterns set before using the configuration file.
 
