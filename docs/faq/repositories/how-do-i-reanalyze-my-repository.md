@@ -1,5 +1,7 @@
 # How do I reanalyze my repository?
 
+!!! info "Organization admins can [manage access to this feature](../../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration)"
+
 Reanalyze the last commit in your branch or pull request:
 
 -   To update the Codacy analysis results taking into account the most recent configurations for your repository without waiting for a new commit to trigger the analysis
