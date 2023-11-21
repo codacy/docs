@@ -9,7 +9,7 @@ On the week of November 13th 2023 we removed the option to create, configure, an
 
 Existing integrations will keep working for now, we'll remove them on a second phase. However, you're no longer able to configure or delete them on the Codacy app.
 
-Due to very low usage of these integrations, their maintenance had been neglected for years. Thus, they were starting to negatively impact our speed to deliver new features. Although there's no timeline in place to make these integrations available again, we're open to looking into them upon feedback.
+Due to <span class="skip-vale">very</span> low usage of these integrations, their maintenance had been neglected for years. Thus, they were starting to negatively impact our speed to deliver new features. Although there's no timeline in place to make these integrations available again, we're open to looking into them upon feedback.
 
 ## Removal of existing integrations
 
