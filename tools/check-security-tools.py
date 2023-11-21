@@ -9,7 +9,13 @@ DOCUMENTATION_PATH = "../docs/repositories/security-monitor.md"
 ENDPOINT_URL_TOOLS = "https://api.codacy.com/api/v3/tools"
 ENDPOINT_URL_CODE_PATTERNS = Template("https://api.codacy.com/api/v3/tools/${toolUuid}/patterns")
 IGNORED_TOOL_UUIDS = ["34225275-f79e-4b85-8126-c7512c987c0d",  # Pylint 1.9 (legacy)
-                      "cf05f3aa-fd23-4586-8cce-5368917ec3e5"]  # ESLint 7 (deprecated)
+                      "cf05f3aa-fd23-4586-8cce-5368917ec3e5",  # ESLint 7 (deprecated)
+                      "0c5f0040-53b7-11e3-8f96-0800200c9a66",  # JSHint (deprecated)
+                      "38794ba2-94d8-4178-ab99-1f5c1d12760c",  # bundler-audit (deprecated)
+                      "612c22f7-663d-429c-ac02-e5cb3d1eb020",  # TSLint (deprecated)
+                      "997201eb-0907-4823-87c0-a8f7703531e7",  # CSSLint (deprecated)
+                      "cd6c01c6-7ff8-4a35-aaac-bbb0859564a1",  # Faux Pas (deprecated)
+                      "ea1f5906-d2fc-4f84-926f-848273f5cf94"]  # tailor (deprecated)
 
 
 def check_security_tools():
