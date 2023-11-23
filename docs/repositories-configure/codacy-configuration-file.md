@@ -124,7 +124,6 @@ pylintpython3
 remark-lint
 revive
 rubocop
-roslyn
 scalastyle
 semgrep
 shellcheck
