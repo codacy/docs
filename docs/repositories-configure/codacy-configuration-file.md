@@ -101,7 +101,6 @@ The following are the tool names that must be used in the Codacy configuration f
 ameba
 bandit
 brakeman
-bundleraudit
 checkov
 checkstyle
 codacy-scalameta-pro
@@ -109,10 +108,9 @@ codenarc
 coffeelint
 cppcheck
 credo
-csslint
 dartanalyzer
 detekt
-eslint
+eslint-8
 flawfinder
 hadolint
 jacksonlinter
@@ -122,7 +120,6 @@ phpmd
 pmd
 prospector
 psscriptanalyzer
-pylint
 pylintpython3
 remark-lint
 revive
@@ -133,8 +130,8 @@ semgrep
 shellcheck
 sonarscharp
 sonarvb
-SQLint
 spectral
+SQLint
 stylelint
 swiftlint
 trivy
