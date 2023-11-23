@@ -3,7 +3,6 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-<!-- TODO ALA-695 Update to launch date. Search and replace this. Don't forget to also update the file name -->
 # New Coverage engine status checks November 23rd, 2023
 
 !!! info "This release note applies if you have set Codacy to send pull request status data to your Git provider (see how on [GitHub](../../repositories-configure/integrations/github-integration.md#status-checks), [GitLab](../../repositories-configure/integrations/gitlab-integration.md#pull-request-status), and [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#pull-request-status))."
