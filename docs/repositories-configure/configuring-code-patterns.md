@@ -166,12 +166,6 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
-    <td>CSSLint</td>
-    <td>CSS</td>
-    <td><code>.csslintrc</code></td>
-    <td></td>
-  </tr>
-  <tr>
     <td>dartanalyzer</td>
     <td>Dart</td>
     <td><code>analysis_options.yml</code></td>
