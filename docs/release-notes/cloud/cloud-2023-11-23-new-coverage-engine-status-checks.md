@@ -73,5 +73,5 @@ If you are using the old status check to block merging pull requests on GitHub, 
 
 You may notice some differences in the coverage metrics reported by the old and new Coverage engines. This may happen because the new Coverage engine calculates coverage metrics considering all the files included in the coverage report, while the old Coverage engine ignores some files:
 
--   The old Coverage engine ignores any files on a coverage report that aren't also modified by the associated pull request.
+-   The old Coverage engine ignores any files on a coverage report that aren't present on the repository on that given commit.
 -   The old Coverage engine may ignore additional files since it shares [ignore rules](../../repositories-configure/ignoring-files.md) with the Codacy analysis engine.
