@@ -45,7 +45,7 @@ Then, close the window to return to your repositories list. Although Codacy imme
 ![Waiting for first analysis results](images/repositories-analyzing.png)
 
 !!! note
-    -   When an **admin user** adds a new repository to Codacy, all users with admin permissions over that repository start following it automatically.
+    -   When a user adds a new repository to Codacy, all organization admins start following it automatically.
 
     -   You automatically **start following** a repository as soon as you access any page from that repository. For example, when you access the repository using a direct link on your Git provider UI.
 
