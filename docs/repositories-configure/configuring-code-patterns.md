@@ -23,7 +23,7 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
     ![Code patterns page](images/code-patterns.png)
 
-1.  Enable or disable the tools that Codacy should use to analyze the repository.
+1.  Enable or disable the tools that Codacy will use to analyze the repository.
 
     ![Toggling tools](images/code-patterns-toggle-tools.png)
 
