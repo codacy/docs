@@ -27,16 +27,12 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
     ![Toggling tools](images/code-patterns-toggle-tools.png)
 
-1.  Select a tool to enable or disable its code patterns.
-
-    To filter the patterns by language, category, or status, use the sidebar filters.
+1.  Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the sidebar filters. You can filter by language, [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), or status.
 
     To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues.
 
     !!! tip
-        -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click **Enable all**.
-
-            For example, to enable all Security patterns, click the **Security** filter and then click **Enable all**.
+        -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click **Enable all**. For example, to enable all Security patterns, click the **Security** filter and then click **Enable all**.
 
         -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.
 
@@ -95,9 +91,7 @@ Codacy will use the updated configurations on the next analysis.
 -->
 
 !!! note
-    -   Once set, Codacy uses a configuration file even if you exclude it from Codacy analysis [using the Codacy UI](ignoring-files.md) or a [Codacy configuration file](codacy-configuration-file.md#syntax-for-ignoring-files).
-
-    -   When you update pattern settings using a configuration file, Codacy may display outdated messages for issues identified previously by those patterns.<!-- TODO Can we remove this? If not, can we clarify when this happens and if this is temporary?  -->
+    -   After activating a configuration file for a tool, Codacy uses that configuration file even if you exclude it from Codacy analysis [using the Codacy UI](ignoring-files.md) or a [Codacy configuration file](codacy-configuration-file.md#syntax-for-ignoring-files).
 
 Codacy supports configuration files for several static analysis tools to help you streamline your setup.
 
@@ -108,9 +102,11 @@ To use a configuration file for a static analysis tool:
 1.  Open the repository **Code patterns** page, select the tool of interest, and select the option **Configuration file**.
 
     !!! note
-        -   If a subsequent pull request updates the configuration file, Codacy considers those updates when analyzing that pull request.
+        -   Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results take those changes into account.
 
-        -   If a subsequent pull request deletes the configuration file, Codacy reverts to the last tool patterns set before using the configuration file.
+        -   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.
+
+        -   For performance reasons, when you update pattern settings using a configuration file, Codacy may display outdated messages for issues identified previously by those patterns.
 
     ![Using a configuration file](images/code-patterns-config-file.png)
 
@@ -329,8 +325,6 @@ The table below lists the configuration file names that Codacy detects and suppo
     -   Staticcheck
     -   Trivy
     -   Unity Roslyn Analyzers
-
-    For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.
 
 ## See also
 
