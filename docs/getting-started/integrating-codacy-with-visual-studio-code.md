@@ -86,7 +86,7 @@ To see Codacy quality and coverage data for an open pull request, follow these s
     !!! note
         If the repository isn't on Codacy yet, [add it to Codacy](../organizations/managing-repositories.md#adding-a-repository) first.
 
-1.  Open the main view by clicking the **Codacy logo** in the activity bar.
+1.  Open the main view by clicking the **Codacy logo** in the activity bar or the **Codacy tab** in the status bar.
 
     ![Codacy main view](images/codacy-vscode-extension-sign-in.png)
 
