@@ -91,7 +91,7 @@ Codacy will use the updated configurations on the next analysis.
 -->
 
 !!! note
-    -   After activating a configuration file for a tool, Codacy uses that configuration file even if you exclude it from Codacy analysis [using the Codacy UI](ignoring-files.md) or a [Codacy configuration file](codacy-configuration-file.md#syntax-for-ignoring-files).
+    After activating a configuration file for a tool, Codacy uses that configuration file even if you exclude it from Codacy analysis [using the Codacy UI](ignoring-files.md) or a [Codacy configuration file](codacy-configuration-file.md#syntax-for-ignoring-files).
 
 Codacy supports configuration files for several static analysis tools to help you streamline your setup.
 
