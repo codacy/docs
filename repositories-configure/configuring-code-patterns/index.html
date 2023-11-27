@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results are adapted to your scenario.">
+        <meta name="description" content="Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results fit your needs.">
       
       
-        <meta http-equiv="last-modified" content="2023-11-17 16:08:58">
+        <meta http-equiv="last-modified" content="2023-11-27 09:34:24">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/configuring-code-patterns/">
@@ -511,8 +511,8 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#pattern-filters" class="md-nav__link">
-    Pattern filters
+  <a href="#configuring-tools-and-code-patterns-using-the-codacy-ui" class="md-nav__link">
+    Configuring tools and code patterns using the Codacy UI
   </a>
   
 </li>
@@ -526,7 +526,7 @@
       
         <li class="md-nav__item">
   <a href="#using-your-own-tool-configuration-files" class="md-nav__link">
-    Using your own tool configuration files
+    Using tool configuration files
   </a>
   
 </li>
@@ -4006,61 +4006,50 @@
                 
                 
                 <h1 id="configuring-code-patterns">Configuring code patterns<a class="headerlink" href="#configuring-code-patterns" title="Permanent link">#</a></h1>
-<p>By default, Codacy uses a subset of the supported static analysis tools and code patterns to analyze your repositories. These default settings result from community feedback or existing coding standards. However, you can adapt the default settings to your scenario by configuring the tools and code patterns that Codacy uses to analyze your repository.</p>
+<div class="admonition info">
+<p class="admonition-title">Organization admins can <a href="../../organizations/roles-and-permissions-for-organizations/#change-analysis-configuration">manage access to this feature</a></p>
+</div>
+<p>By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs in several ways:</p>
+<ul>
+<li><a href="#configuring-tools-and-code-patterns-using-the-codacy-ui">Configuring tools and code patterns using the Codacy UI</a></li>
+<li><a href="#import-patterns">Importing configurations from another repository</a></li>
+<li><a href="#using-your-own-tool-configuration-files">Using tool configuration files</a></li>
+</ul>
+<h2 id="configuring-tools-and-code-patterns-using-the-codacy-ui">Configuring tools and code patterns using the Codacy UI<a class="headerlink" href="#configuring-tools-and-code-patterns-using-the-codacy-ui" title="Permanent link">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<ul>
-<li>
-<p>Organization admins can <a href="../../organizations/roles-and-permissions-for-organizations/#change-analysis-configuration">change who is allowed to configure code patterns</a>.</p>
-</li>
-<li>
-<p>If your repository is following an <a href="../../organizations/using-coding-standards/">organization coding standard</a>, changes made to any tool or code pattern cause the repository to stop following the coding standard. In this case Codacy asks for your confirmation before accepting the changes, and then copies the coding standard configurations to your repository so you can customize them.</p>
-</li>
-</ul>
+<p>If you update the configurations of a repository that follows a <a href="../../organizations/using-coding-standards/">coding standard</a>, Codacy copies the coding standard configurations to the repository and the repository stops following the coding standard. You can then customize the repository configurations without affecting the coding standard.</p>
 </div>
-<p>To configure the tools and code patterns for your repository:</p>
+<p>To configure the tools and code patterns for a repository using the Codacy UI:</p>
 <ol>
 <li>
 <p>Open your repository <strong>Code patterns</strong> page.</p>
 <p><img alt="Code patterns page" src="../images/code-patterns.png" /></p>
 </li>
 <li>
-<p>Toggle the tools that Codacy will use to analyze your repository.</p>
+<p>Enable or disable the tools that Codacy will use to analyze the repository.</p>
 <p><img alt="Toggling tools" src="../images/code-patterns-toggle-tools.png" /></p>
 </li>
 <li>
-<p>Select each tool to configure and toggle the corresponding code patterns using the checkbox next to each pattern.</p>
+<p>Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the sidebar filters. You can filter by language, <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">issue category</a>, or status.</p>
+<p>To see an explanation of the issues that a pattern detects and how to fix them, click <strong>Show details</strong>. Some patterns also allow you to configure the rules for detecting issues.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Codacy displays the tag <strong>New</strong> for one month next to the name of any recently added code patterns.</p>
-</div>
-<p><img alt="Configuring code patterns" src="../images/code-patterns-configure.png" /></p>
-<p>To see an explanation of the issues that a pattern detects and how to fix them, click <strong>Show details</strong>. Some patterns also allow you to configure the rules for detecting issues.</p>
-<p><img alt="Code pattern details" src="../images/code-patterns-detail.png" /></p>
+<ul>
+<li>
+<p>To enable a group of code patterns, use the filter to select the relevant group of patterns and click <strong>Enable all</strong>. For example, to enable all Security patterns, click the <strong>Security</strong> filter and then click <strong>Enable all</strong>.</p>
 </li>
 <li>
-<p>Optionally, <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">manually reanalyze your repository</a> to immediately take the changes into account. Otherwise, Codacy will use the new configuration when it analyzes a new commit or pull request.</p>
+<p>Codacy displays the tag <strong>New</strong> for one month next to the name of newly added code patterns.</p>
+</li>
+</ul>
+</div>
+<p><img alt="Configuring code patterns" src="../images/code-patterns-configure.png" /></p>
+</li>
+<li>
+<p>Optionally, to take the changes into account immediately, <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">reanalyze the repository manually</a>. Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.</p>
 </li>
 </ol>
-<h2 id="pattern-filters">Pattern filters<a class="headerlink" href="#pattern-filters" title="Permanent link">#</a></h2>
-<p>To make it easier to find relevant code patterns, you can use the sidebar to filter the patterns by language (only for tools that support multiple languages), category, or status:</p>
-<p><img alt="Filtering code patterns" src="../images/code-patterns-filter.png" /></p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>To enable <strong>all code patterns</strong> matching a specific category, use the filter to select the relevant patterns and click <strong>Enable all</strong>.</p>
-<p>For example, to enable all Security patterns of a tool, you can use the <strong>Security</strong> filter and click <strong>Enable all</strong>.</p>
-</div>
-<p>Issues detected by Codacy belong to one of the following categories:</p>
-<ul>
-<li><strong>Code Style:</strong> Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks</li>
-<li><strong>Error Prone:</strong> Code that may hide bugs and language keywords that should be used with caution, such as the operator <code>==</code> in JavaScript or <code>Option.get</code> in Scala</li>
-<li><strong>Code Complexity:</strong> High complexity methods and classes that should be refactored</li>
-<li><strong>Performance:</strong> Code that can have performance problems</li>
-<li><strong>Compatibility:</strong> Mainly for frontend code, compatibility problems across different browser versions</li>
-<li><strong>Unused Code:</strong> Unused variables and methods, code that can't be reached</li>
-<li><strong>Security:</strong> All security problems</li>
-<li><strong>Documentation:</strong> Methods and classes that don't have the correct comment annotations</li>
-</ul>
 <h2 id="import-patterns">Importing pattern configurations from another repository<a class="headerlink" href="#import-patterns" title="Permanent link">#</a></h2>
 <p>Importing tool and code pattern configurations from another repository can help you bootstrap and standardize the tool and code pattern configurations across your repositories.</p>
 <p>For example, when adding a new repository on Codacy you can copy the tool and code pattern configurations from an existing repository that's already configured, and then tweak and adapt the settings for your new repository.</p>
@@ -4109,23 +4098,36 @@
 </li>
 </ol>
 <p>Codacy will use the updated configurations on the next analysis.</p>
-<h2 id="using-your-own-tool-configuration-files">Using your own tool configuration files<a class="headerlink" href="#using-your-own-tool-configuration-files" title="Permanent link">#</a></h2>
-<p>Codacy supports configuration files for several tools. To use a configuration file for your static analysis tool:</p>
+<h2 id="using-your-own-tool-configuration-files">Using tool configuration files<a class="headerlink" href="#using-your-own-tool-configuration-files" title="Permanent link">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>After activating a configuration file for a tool, Codacy uses that configuration file even if you exclude it from Codacy analysis <a href="../ignoring-files/">using the Codacy UI</a> or a <a href="../codacy-configuration-file/#syntax-for-ignoring-files">Codacy configuration file</a>.</p>
+</div>
+<p>Codacy supports configuration files for several static analysis tools to help you streamline your setup.</p>
+<p>To use a configuration file for a static analysis tool:</p>
 <ol>
 <li>
-<p>Push the configuration file to the root of the branch <a href="../managing-branches/">configured as the main branch on Codacy</a>.</p>
+<p>Push the configuration file to the root of the <a href="../managing-branches/">default Codacy branch</a>.</p>
 </li>
 <li>
-<p>Open your repository <strong>Code patterns</strong> page, select the tool that will use the configuration file, and select the option <strong>Configuration file</strong>.</p>
+<p>Open the repository <strong>Code patterns</strong> page, select the tool of interest, and select the option <strong>Configuration file</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>
+<p>Codacy uses the version of the configuration file <strong>in the branch being analyzed</strong>. For example, if you open a pull request that includes changes to the configuration file, the analysis results take those changes into account.</p>
+</li>
+<li>
+<p>If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option <strong>Configuration file</strong> on the Code patterns page.</p>
+</li>
+<li>
+<p>For performance reasons, when you update pattern settings using a configuration file, Codacy may display outdated messages for issues identified previously by those patterns.</p>
+</li>
+</ul>
+</div>
 <p><img alt="Using a configuration file" src="../images/code-patterns-config-file.png" /></p>
 </li>
 </ol>
-<p>After activating the option to use the configuration file:</p>
-<ul>
-<li>Codacy will use the version of the configuration file <strong>in the branch being analyzed</strong>. For example, if you open a pull request that includes changes to the configuration file, the analysis results will take those changes into account.</li>
-<li>If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option <strong>Configuration file</strong> on the Code patterns page.</li>
-<li>Codacy will keep using the tool configuration file even if you exclude that file from the Codacy analysis <a href="../ignoring-files/">using the Codacy UI</a> or a <a href="../codacy-configuration-file/">Codacy configuration file</a>.</li>
-</ul>
 <p>The table below lists the configuration file names that Codacy detects and supports for each tool:</p>
 <table>
   <thead>
@@ -4342,7 +4344,6 @@
 <li>Trivy</li>
 <li>Unity Roslyn Analyzers</li>
 </ul>
-<p>For performance reasons, if you make changes to pattern settings using configuration files, Codacy may display outdated messages for issues that have already been identified by those patterns.</p>
 </div>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
@@ -4506,7 +4507,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 17, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 27, 2023</span>
     
   </small>
 </div>
