@@ -457,7 +457,7 @@ table:not(data-exclude) tr:nth-child(1) td {
 /*Add vertical borders and disable horizontal borders*/
 td {
   border-left: 1px solid var(--md-default-fg-color--lightest);
-  border-top: 0 !important;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
 }
 td:nth-child(1) {
   border-left: 0;
