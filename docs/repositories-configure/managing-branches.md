@@ -1,6 +1,9 @@
 # Managing branches
 
 {% if not extra.self_hosted %}
+
+{% include-markdown "../assets/includes/admin-access-control-info.md" %}
+
 Codacy automatically analyzes the default branch of your repository (typically `master` or `main` as configured on your Git provider) and loads its data first on dashboards. Codacy also supports analyzing multiple branches.
 
 !!! note
