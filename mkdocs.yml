@@ -30,8 +30,8 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    codacy_self_hosted_version: "12.0.0"
-    codacy_coverage_reporter_version: "13.13.1"
+    codacy_self_hosted_version: "13.0.0"
+    codacy_coverage_reporter_version: "13.13.14" 
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
@@ -660,6 +660,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2023:
+                      - release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md
                       - release-notes/cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal.md
                       - release-notes/cloud/cloud-2023-10.md
                       - release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md
@@ -718,6 +719,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v13:
+                      - release-notes/self-hosted/self-hosted-v13.0.0.md
                 - v12:
                       - release-notes/self-hosted/self-hosted-v12.0.0.md
                 - v11:
