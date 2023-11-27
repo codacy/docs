@@ -11,7 +11,7 @@
         <meta name="description" content="The Codacy Visual Studio Code extension is an open-source project that enables developers to review directly in VS Code the result of Codacy analysis for the pull requests they’re working on.">
       
       
-        <meta http-equiv="last-modified" content="2023-11-13 10:44:07">
+        <meta http-equiv="last-modified" content="2023-11-27 10:13:57">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/integrating-codacy-with-visual-studio-code/">
@@ -251,6 +251,13 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#interface-overview" class="md-nav__link">
+    Interface overview
+  </a>
+  
+</li>
       
         <li class="md-nav__item">
   <a href="#installing-the-codacy-vs-code-extension" class="md-nav__link">
@@ -4011,6 +4018,71 @@
 <div class="admonition info">
 <p class="admonition-title">To use this extension you need a <a href="https://www.codacy.com/signup-codacy">Codacy account</a></p>
 </div>
+<h2 id="interface-overview">Interface overview<a class="headerlink" href="#interface-overview" title="Permanent link">#</a></h2>
+<p>The main view of the extension displays information about the code quality and coverage changes introduced by the pull requests you're working on, as well as the quality status of analyzed branches. This information is grouped into three panels:</p>
+<ul>
+<li><a href="#status-tab">Pull request status</a></li>
+<li><a href="#open-pull-requests-tab">Open pull requests</a></li>
+<li><a href="#analyzed-branch-tab">Analyzed branch</a></li>
+</ul>
+<p><img alt="Important issues" src="../images/codacy-vscode-extension-main-view.png" /></p>
+<h3 id="status-tab">Status tab<a class="headerlink" href="#status-tab" title="Permanent link">#</a></h3>
+<p>The <strong>Pull request status</strong> tab displays the following information for the pull request of the currently checked-out branch:</p>
+<ul>
+<li>
+<p>The <strong>Quality status</strong> of the pull request, either up to standards or not up to standards, based on the <a href="../../repositories-configure/adjusting-quality-gates/">Quality gates</a> set for the repository.</p>
+</li>
+<li>
+<p>Any <strong>Quality issues</strong> introduced or fixed by the pull request. These are the same issues you find in the <a href="../../repositories/pull-requests/#issues-tabs">Quality Issues tabs</a> in the Codacy app and are also visible in VS Code's Problems tab.</p>
+<p>The number next to each file name is the total number of Quality issues that the pull request adds to or removes from that file. The number farther to the right, added by VS Code, is the total number of problems in that file, which may or may not be Quality issues from Codacy. If there are any Medium or Critical Quality issues, the file name is also highlighted in yellow (Medium) or red (Critical).</p>
+<p><img alt="Important issues" src="../images/codacy-vscode-extension-important-issues.png" /></p>
+</li>
+<li>
+<p>The <strong>diff coverage and coverage variation</strong> introduced by the pull request. These are the same values you find in the <a href="../../repositories-coverage/pull-requests/#coverage-overview">Pull request coverage overview</a> panel in the Codacy app.</p>
+<p>The percentage next to each file name is the coverage variation for that file.</p>
+</li>
+<li>
+<p>Sequences of <strong>duplicate code</strong> (clones) introduced by the pull request. These are the same ones you find in the <a href="../../repositories/pull-requests/#duplication-tabs">Quality Duplication tabs</a> in the Codacy app.</p>
+</li>
+<li>
+<p>Variations in <strong>code complexity</strong> introduced by the pull request.</p>
+</li>
+</ul>
+<h3 id="open-pull-requests-tab">Open pull requests tab<a class="headerlink" href="#open-pull-requests-tab" title="Permanent link">#</a></h3>
+<p><img alt="Pull requests tab UI" src="../images/codacy-vscode-extension-pull-requests-tab.png" /></p>
+<p>The <strong>Open Pull Requests</strong> tab lists all open pull requests for the repository, including the following information for each:</p>
+<ul>
+<li>
+<p>The status of the pull request, which is visible on hover:</p>
+<ul>
+<li>
+<p>Analyzing, if Codacy is analyzing the branch.</p>
+</li>
+<li>
+<p>Up to standards or not up to standards, based on the <a href="../../repositories-configure/adjusting-quality-gates/">Quality gates</a> set for the repository.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>The author of the pull request.</p>
+</li>
+<li>
+<p>The source and target branches of the pull request.</p>
+</li>
+<li>
+<p>Any <strong>Quality issues</strong> introduced or fixed by the pull request. These are the same issues you find in the <a href="../../repositories/pull-requests/#issues-tabs">Quality Issues tabs</a> in the Codacy app.</p>
+</li>
+<li>
+<p>Sequences of <strong>duplicate code</strong> (clones) introduced by the pull request. These are the same ones you find in the <a href="../../repositories/pull-requests/#duplication-tabs">Quality Duplication tabs</a> in the Codacy app.</p>
+</li>
+<li>
+<p>Variations in <strong>code complexity</strong> introduced by the pull request. This is the same value you find on the <a href="../../repositories/pull-requests/#quality-overview">Pull request quality overview</a> in the Codacy app.</p>
+</li>
+</ul>
+<h3 id="analyzed-branch-tab">Analyzed branch tab<a class="headerlink" href="#analyzed-branch-tab" title="Permanent link">#</a></h3>
+<p><img alt="Analyzed branch tab UI" src="../images/codacy-vscode-extension-analyzed-branch-tab.png" /></p>
+<p>The <strong>Analyzed Branch</strong> tab appears if you switch to an analyzed branch that doesn't have an open pull request, such as the <code>main</code> or <code>master</code> branch. This tab shows an overview of the Quality issues found in that branch, grouped by recently added, introduced by the current user, issue category, and issue severity.</p>
+<p>See <a href="../../repositories-configure/managing-branches/">how to manage the analysis of your repository's branches</a>.</p>
 <h2 id="installing-the-codacy-vs-code-extension">Installing the Codacy VS Code extension<a class="headerlink" href="#installing-the-codacy-vs-code-extension" title="Permanent link">#</a></h2>
 <ol>
 <li>
@@ -4026,7 +4098,7 @@
 </li>
 </ol>
 <h2 id="getting-pull-request-quality-and-coverage-data">Getting pull request quality and coverage data<a class="headerlink" href="#getting-pull-request-quality-and-coverage-data" title="Permanent link">#</a></h2>
-<p>To see Codacy quality and coverage data for the pull request you're working on, follow these steps:</p>
+<p>To see Codacy quality and coverage data for an open pull request, follow these steps:</p>
 <ol>
 <li>
 <p>Open the repository directory in VS Code.</p>
@@ -4036,41 +4108,23 @@
 </div>
 </li>
 <li>
-<p>Check out the branch associated with the open pull request you're working on.</p>
-</li>
-<li>
 <p>Open the main view by clicking the <strong>Codacy logo</strong> in the activity bar or the <strong>Codacy tab</strong> in the status bar.</p>
 <p><img alt="Codacy main view" src="../images/codacy-vscode-extension-sign-in.png" /></p>
 </li>
 <li>
 <p>If you’re not signed in, click the <strong>Sign in</strong> button to authorize VS Code on Codacy.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To access a complete list of Codacy commands, open the VS Code command palette (<code>Ctrl+Shift+P</code> on Windows/Linux or <code>Cmd+Shift+P</code> on macOS) and type "Codacy".</p>
+</div>
+</li>
+<li>
+<p>Check out the pull request of interest. You can do it either manually or from the <strong>Open Pull Requests</strong> tab, by clicking the arrow button or using the contextual right-click menu.</p>
 </li>
 </ol>
 <p>After completing these steps, the main view shows the result of the latest Codacy analysis for the pull request. The VS Code Problems tab lists the Quality issues found.</p>
-<p><img alt="Codacy main view" src="../images/codacy-vscode-extension-main-view.png" /></p>
-<p>The main view displays the information about the code quality changes introduced by the pull request:</p>
-<ul>
-<li>
-<p>The <strong>Quality status</strong> of the pull request, either up to standards or not up to standards, based on the <a href="../../repositories-configure/adjusting-quality-gates/">Quality gates</a> set for the repository.</p>
-</li>
-<li>
-<p>Any <strong>Quality issues</strong> introduced or fixed by the pull request. These are the same issues you find in the <a href="../../repositories/pull-requests/#issues-tabs">Quality Issues tabs</a> in the Codacy app and are also visible in VS Code's Problems tab.</p>
-<p>The number next to each file name is the total number of Quality issues that the pull request adds to or removes from that file. The number farther to the right is the number of new Medium or Critical Quality issues. If there are any such issues, the file name is also highlighted in yellow (Medium) or red (Critical).</p>
-<p><img alt="Important issues" src="../images/codacy-vscode-extension-important-issues.png" /></p>
-</li>
-<li>
-<p>The <strong>diff coverage and coverage variation</strong> introduced by the pull request. These are the same values you find in the <a href="../../repositories-coverage/pull-requests/#coverage-overview">Pull request coverage overview</a> panel in the Codacy app.</p>
-<p>The percentage next to each file name is the coverage variation for that file.</p>
-</li>
-<li>
-<p>Sequences of <strong>duplicate code</strong> (clones). These are the same ones you find in the <a href="../../repositories/pull-requests/#duplication-tabs">Quality Duplication tabs</a> in the Codacy app.</p>
-</li>
-<li>
-<p>Variations in <strong>code complexity</strong>.</p>
-</li>
-</ul>
 <h2 id="reviewing-pull-request-issues">Reviewing pull request issues<a class="headerlink" href="#reviewing-pull-request-issues" title="Permanent link">#</a></h2>
-<p>In the Problems tab, Codacy displays the same Quality issues you find in the main view and lets you navigate to the exact line of code where the issue was found.</p>
+<p>In the <strong>Problems tab</strong>, Codacy displays the same Quality issues you find in the <strong>Status tab</strong> and lets you navigate to the exact line of code where the issue was found.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Code coverage, duplicates, and complexity aren't currently shown in the Problems tab.</p>
@@ -4253,7 +4307,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 13, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 27, 2023</span>
     
   </small>
 </div>
