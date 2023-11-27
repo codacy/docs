@@ -7,13 +7,13 @@ rss_href: /feed_rss_created.xml
 
 On the week of November 13th 2023 we removed the option to create, configure, and delete **Jira**, **Slack**, and **Webhooks integrations for your repositories**. These integrations were available on the repository **Settings**, tab **Integration**.
 
-Your existing integrations will keep working for now and [will be removed on the week of MM DD YYYY](#removal-of-existing-integrations). However, you can no longer configure or delete them on the Codacy app.<!--TODO CY-7215 Update date-->
+Your existing integrations will keep working [until the end of 2023](#removal-of-existing-integrations). However, you can no longer configure or delete them on the Codacy app.
 
 Due to their limited adoption, these integrations haven't been maintained for some time and have started impacting the delivery of new features. Although there's no plan to make these integrations available again, we're open to looking into them upon feedback.
 
 ## Removal of existing integrations
 
-<!--TODO CY-7215 Update date-->On the week of MM DD YYYY we'll be removing Jira, Slack, and Webhooks repository integrations from the Codacy app. Your existing integrations will stop working and we'll delete all related data, including authentication data.
+We're planning to remove the existing Jira, Slack, and Webhooks repository integrations from the Codacy app by the **end of 2023**. By this time, your existing integrations will stop working and we'll delete all related data, including authentication data.
 
 ## If you are using Jira, Slack, or Webhooks repository integrations
 
