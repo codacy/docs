@@ -69,7 +69,7 @@ If you are using the old status check to block merging pull requests on GitHub, 
 
 ![New Coverage status checks GitHub](../images/ala-695-update-status-checks-github.png)
 
-## Differences in coverage metrics between the old and new Coverage enginesx
+## Differences in coverage metrics between the old and new Coverage engines
 
 You may notice some differences in the coverage metrics reported by the old and new Coverage engines. This may happen because the new Coverage engine calculates coverage metrics considering all the files included in the coverage report, while the old Coverage engine ignores some files:<!--NOTE Temporary comment for review purpose, to remove-->
 
