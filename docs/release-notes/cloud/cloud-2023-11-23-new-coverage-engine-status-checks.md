@@ -67,7 +67,7 @@ Currently, Codacy sends coverage data to your Git provider from both the old and
 
 If you are using the old status check to block merging pull requests on GitHub, remove the old Codacy Coverage Report as a required check of your pull requests' target branch:
 
-1.  [Edit the the branch protection rule](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#editing-a-branch-protection-rule) of your pull requests' target branch.
+1.  [Edit the branch protection rule](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#editing-a-branch-protection-rule) of your pull requests' target branch.
 1.  Remove the old **Codacy Coverage Report** under the section **Require status checks to pass before merging** and save your changes:
 
 ![New Coverage status checks GitHub](../images/ala-695-update-status-checks-github.png)
