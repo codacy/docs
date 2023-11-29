@@ -49,7 +49,7 @@ Currently, Codacy sends coverage data to your Git provider from both the old and
       <td>Brownout of the old Coverage status check</td>
       <td>
         <p>Codacy will not send the old status check on this day.</p><!--NOTE Temporary comment for review purpose, to remove-->
-        <p>This will help you confirm that your setup has been updated correctly and lower the risk of disruptions when the old status check is removed.</p>
+        <p>This will help you confirm that your setup has been updated correctly and lower the risk of disruptions when the old status check is removed.<br/>If on this day you can merge your pull requests using the new checks and don't encounter other issues, it means that your setup has been updated correctly. Otherwise, if on this date you are still using the old check to block merging pull requests on GitHub, please <a href="#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github">update your Git provider settings</a>.</p>
       </td>
     </tr>
     <tr>
