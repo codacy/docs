@@ -137,6 +137,18 @@ trivy
 tsqllint
 ```
 
+The following tools are **deprecated** and shouldn't be used, although their tool names are still accepted in the Codacy configuration file:
+
+```text
+bundleraudit
+csslint
+eslint
+jshint
+pylint
+tailor
+tslint
+```
+
 ## Tool-specific configurations
 
 By default, Codacy tries to detect which language is used on each source code file, and uses a set of default options for identifying duplicate blocks of code. However, some false positives may occur.
