@@ -4,6 +4,8 @@ description: Ignore or exclude files from the Codacy analysis and see the list o
 
 # Ignoring files
 
+{% include-markdown "../assets/includes/admin-access-control-info.md" %}
+
 In some situations, you may want to ignore or exclude files from the Codacy analysis.
 
 To exclude files from your repository analysis open your repository **Settings**, tab **Ignored Files**, and select the files you want to ignore. This view only shows the files on your main branch.

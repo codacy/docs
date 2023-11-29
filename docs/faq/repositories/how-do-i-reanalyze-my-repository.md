@@ -1,6 +1,6 @@
 # How do I reanalyze my repository?
 
-!!! info "Organization admins can [manage access to this feature](../../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration)"
+{% include-markdown "../../assets/includes/admin-access-control-info.md" %}
 
 Reanalyze the last commit in your branch or pull request:
 
