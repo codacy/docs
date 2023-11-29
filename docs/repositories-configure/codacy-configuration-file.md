@@ -137,7 +137,7 @@ trivy
 tsqllint
 ```
 
-The following tools are **deprecated** and shouldn't be used, although their tool names are still accepted in the Codacy configuration file:
+The following names correspond to **deprecated tools** and shouldn't be used, although they're still accepted in the Codacy configuration file:
 
 ```text
 bundleraudit
