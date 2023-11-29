@@ -27,7 +27,7 @@ This is what the new checks look like on each provider:
 
 ## Deprecation and removal of the old Coverage engine status checks
 
-Currently, Codacy sends coverage data to your Git provider from both the old and new Coverage engines. We will deprecate and eventually remove the old status checks on the following dates:<!--NOTE Temporary comment for review purpose, to remove-->
+Currently, Codacy sends coverage data to your Git provider from both the old and new Coverage engines. We will deprecate and later remove the old status checks on the following dates:
 
 <table>
   <thead>
