@@ -142,12 +142,20 @@ The following names correspond to **deprecated tools** and shouldn't be used, al
 ```text
 bundleraudit
 csslint
-eslint
+eslint (1)
 jshint
-pylint
+pylint (2)
 tailor
 tslint
 ```
+
+<sup>1</sup>: Use `eslint-8` for ESLint.  
+<sup>2</sup>: Use `pylintpython3` for Pylint.  
+
+For further details on the remaining tools, see these deprecation notes:
+
+-   [Deprecation of bundler-audit October 13, 2023](../release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation.md)
+-   [Deprecation of CSSLint, JSHint, Faux Pas, Tailor, TSLint October 25, 2023](../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md)
 
 ## Tool-specific configurations
 
