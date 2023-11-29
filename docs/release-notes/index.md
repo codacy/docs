@@ -18,6 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2023
 
+-   [Removal of Jira, Slack, and Webhooks repository integrations November 13, 2023](cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal.md)
 -   [Cloud October 2023](cloud/cloud-2023-10.md)
 -   [Deprecation of CSSLint, JSHint, Faux Pas, Tailor, TSLint October 25, 2023](cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md)
 -   [Deprecation of bundler-audit October 13, 2023](cloud/cloud-2023-10-13-bundler-audit-deprecation.md)
@@ -86,6 +87,10 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Cloud July 23, 2018](cloud/cloud-2018-07-23.md)
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
+
+v13
+
+-   [v13.0.0](self-hosted/self-hosted-v13.0.0.md) (November 23, 2023)
 
 v12
 

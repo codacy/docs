@@ -48,7 +48,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
     </tr>
     <tr>
       <td>Join organization</td>
-      <td>No</td>
+      <td class="no">No</td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes<sup>2</sup></td>
@@ -57,7 +57,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
     </tr>
     <tr>
       <td>View and follow private repository</td>
-      <td>No</td>
+      <td class="no">No</td>
       <td colspan="2" class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
@@ -65,84 +65,84 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</td>
-      <td>No</td>
-      <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
-      <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches,<br/>reanalyze branches and pull requests</td>
+      <td class="no">No</td>
+      <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
+      <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
       <td class="yes">Yes</td>
-      <td>Inherits original permission</td>
+      <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Upload coverage using an account API token,<br/>see the coverage report logs</td>
-      <td>No</td>
-      <td colspan="2">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
       <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
-      <td>Inherits original permission</td>
+      <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Configure repository</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td colspan="2">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td colspan="2" class="no">No</td>
       <td class="yes">Yes</td>
-      <td>Inherits original permission</td>
+      <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Add and remove repository</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td colspan="2">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td colspan="2" class="no">No</td>
       <td class="yes">Yes<sup>3</sup></td>
-      <td>Inherits original permission</td>
+      <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Manage gate policies and coding standards,<br/>bulk copy patterns</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Configure default Git provider integration settings</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Access Security and risk management</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Invite and accept members,<br/>modify billing</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
-      <td>No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Assign and revoke the organization manager role</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
-      <td>No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
+      <td class="no">No</td>
       <td class="yes">Yes</td>
     </tr>
   </tbody>
@@ -183,7 +183,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
     </tr>
     <tr>
       <td>Join organization</td>
-      <td>No</td>
+      <td class="no">No</td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
       <td class="yes">Yes<sup>2</sup></td>
       <td colspan="2" class="yes">Yes<sup>2</sup></td>
@@ -192,7 +192,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
     </tr>
     <tr>
       <td>View and follow private repository</td>
-      <td>No</td>
+      <td class="no">No</td>
       <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
@@ -200,84 +200,84 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</td>
-      <td>No</td>
-      <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
-      <td class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
+      <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches,<br/>reanalyze branches and pull requests</td>
+      <td class="no">No</td>
+      <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
+      <td class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
       <td colspan="2" class="yes">Yes</td>
-      <td>Inherits original permission</td>
+      <td class="maybe">Inherits original permission</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
       <td>Upload coverage using an account API token,<br/>see the coverage report logs</td>
-      <td>No</td>
-      <td colspan="2">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
       <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
-      <td>Inherits original permission</td>
+      <td class="maybe">Inherits original permission</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
       <td>Configure repository</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
       <td colspan="2" class="yes">Yes</td>
-      <td>Inherits original permission</td>
+      <td class="maybe">Inherits original permission</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
       <td>Add and remove repository</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
       <td colspan="2" class="yes">Yes</td>
-      <td>Inherits original permission</td>
+      <td class="maybe">Inherits original permission</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
       <td>Manage gate policies and coding standards,<br/>bulk copy patterns</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
-      <td colspan="2">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
       <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
       <td>Configure default settings for Git provider integration</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
-      <td colspan="2">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
       <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
       <td>Access Security and risk management</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
-      <td colspan="2">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
       <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
       <td>Invite and accept members,<br/>modify billing</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
       <td>Assign and revoke the organization manager role</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
-      <td colspan="2">No</td>
-      <td>No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
   </tbody>
@@ -320,57 +320,57 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches</td>
-      <td colspan="2" class="yes"><a href="#change-analysis-configuration">Configurable</a></td>
-      <td>Inherits original permission</td>
+      <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches,<br/>reanalyze branches and pull requests</td>
+      <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
+      <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Upload coverage using an account API token,<br/>see the coverage report logs</td>
-      <td colspan="2">No</td>
-      <td>Inherits original permission</td>
+      <td colspan="2" class="no">No</td>
+      <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Configure repository</td>
-      <td colspan="2">No</td>
-      <td>Inherits original permission</td>
+      <td colspan="2" class="no">No</td>
+      <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Add and remove repository</td>
-      <td colspan="2">No</td>
-      <td>Inherits original permission</td>
+      <td colspan="2" class="no">No</td>
+      <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Manage gate policies and coding standards,<br/>bulk copy patterns</td>
-      <td colspan="2">No</td>
+      <td colspan="2" class="no">No</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Configure default settings for Git provider integration</td>
-      <td colspan="2">No</td>
+      <td colspan="2" class="no">No</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Access Security and risk management</td>
-      <td colspan="2">No</td>
+      <td colspan="2" class="no">No</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Invite and accept members,<br/>modify billing</td>
-      <td colspan="2">No</td>
-      <td>No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
       <td>Assign and revoke the organization manager role</td>
-      <td colspan="2">No</td>
-      <td>No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
       <td class="yes">Yes</td>
     </tr>
   </tbody>
@@ -426,6 +426,7 @@ To change this, open your organization **Settings**, page **Roles and permission
 -   [Configure code patterns](../repositories-configure/configuring-code-patterns.md)
 -   [Configure file extensions](../repositories-configure/file-extensions.md)
 -   [Manage branches](../repositories-configure/managing-branches.md)
+-   [Reanalyze branches and pull requests](../faq/repositories/how-do-i-reanalyze-my-repository.md)
 
 ![Configuring who can change analysis configurations](images/roles-permissions-repo-management.png)
 
@@ -456,14 +457,20 @@ table:not(data-exclude) tr:nth-child(1) td {
 /*Add vertical borders and disable horizontal borders*/
 td {
   border-left: 1px solid var(--md-default-fg-color--lightest);
-  border-top: 0 !important;
+  border-top: 1px solid var(--md-default-fg-color--lightest);
 }
 td:nth-child(1) {
   border-left: 0;
 }
 
-/*Background for cells marking the allowed operations*/
+/*Background for cells marking various operations*/
 .yes {
   background-color: #E6F4EA;
+}
+.no {
+  background-color: #FFF1EB;
+}
+.maybe {
+  background-color: #F2F9FC;
 }
 </style>
