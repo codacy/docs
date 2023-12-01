@@ -119,15 +119,6 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Access Security and risk management</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
       <td>Invite and accept members,<br/>modify billing</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
@@ -254,15 +245,6 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Access Security and risk management</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
       <td>Invite and accept members,<br/>modify billing</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
@@ -351,12 +333,6 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
     </tr>
     <tr>
       <td>Configure default settings for Git provider integration</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Access Security and risk management</td>
       <td colspan="2" class="no">No</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
