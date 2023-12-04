@@ -159,12 +159,6 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td></td>
   </tr>
   <tr>
-    <td>CSSLint</td>
-    <td>CSS</td>
-    <td><code>.csslintrc</code></td>
-    <td></td>
-  </tr>
-  <tr>
     <td>dartanalyzer</td>
     <td>Dart</td>
     <td><code>analysis_options.yml</code></td>
@@ -179,8 +173,7 @@ The table below lists the configuration file names that Codacy detects and suppo
   <tr>
     <td><a href="https://eslint.org/docs/user-guide/configuring">ESLint</a></td>
     <td>JavaScript, TypeScript</td>
-    <td><code>.eslintrc.js</code>, <code>.eslintrc.cjs</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code>, <code>.eslintrc</code>,
-        <code>.prettierrc</code>, <code>.prettierrc.yaml</code>, <code>.prettierrc.yml</code>, <code>.prettierrc.json</code>, <code>prettier.config.js</code>, <code>.prettierrc.js</code></td>
+    <td><code>.eslintrc.js</code>, <code>.eslintrc.cjs</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code></td>
     <td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintPlugins.ts">Plugins configurable on the Codacy UI</a><br />
         <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L58">Other supported plugins</a><br />
 
