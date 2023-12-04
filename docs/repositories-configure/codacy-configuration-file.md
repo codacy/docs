@@ -101,7 +101,6 @@ The following are the tool names that must be used in the Codacy configuration f
 ameba
 bandit
 brakeman
-bundleraudit
 checkov
 checkstyle
 codacy-scalameta-pro
@@ -109,10 +108,9 @@ codenarc
 coffeelint
 cppcheck
 credo
-csslint
 dartanalyzer
 detekt
-eslint
+eslint-8
 flawfinder
 hadolint
 jacksonlinter
@@ -122,24 +120,31 @@ phpmd
 pmd
 prospector
 psscriptanalyzer
-pylint
 pylintpython3
 remark-lint
 revive
 rubocop
-roslyn
 scalastyle
 semgrep
 shellcheck
 sonarscharp
 sonarvb
-SQLint
 spectral
+SQLint
 stylelint
 swiftlint
 trivy
 tsqllint
 ```
+
+The following names are **deprecated** and shouldn't be used, although they're still accepted in the Codacy configuration file:
+
+-   `bundleraudit` - The tool **bundler-audit** [is deprecated](../release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation.md). If you are using **Semprep** or **Trivy** instead, use the names `trivy` or `semgrep`.
+-   `csslint` - The tool **CSSLint** [is deprecated](../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md). If you are using **Stylelint** instead, use the name `stylelint`.
+-   `eslint` - Use the name `eslint-8` for **ESLint**.
+-   `jshint`, `tslint` - The tools **JSHint** and **TSLint** [are deprecated](../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md). If you are using **ESLint** instead, use the name `eslint-8`.
+-   `pylint` - Use the name `pylintpython3` for **Pylint**.
+-   `tailor` - The tool **Tailor** [is deprecated](../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md). If you are using **SwiftLint** instead, use the name `swiftlint`.
 
 ## Tool-specific configurations
 
