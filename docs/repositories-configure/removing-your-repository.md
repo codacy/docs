@@ -19,4 +19,4 @@ To delete your repository from Codacy:
         For added security, after you remove the repository from Codacy you can delete from your Git provider the resources related to this Codacy repository to prevent their reuse:
 
         -   Webhooks
-        -   SSH keys (GitLab and Bitbucket only)
+        -   SSH keys <!--TODO PLUTO-811 Add "(GitLab and Bitbucket only)"-->
