@@ -51,6 +51,9 @@ Then, close the window to return to your repositories list. Although Codacy imme
 
         Conversely, you automatically **stop following** a repository as soon as you try accessing any page from that repository but you don't have permissions to see that repository anymore.
 
+!!! tip
+    You can use the [Codacy API](https://api.codacy.com/api/api-docs#unfollowrepository) to stop following a repository.
+
 ## See also
 
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
