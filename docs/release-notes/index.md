@@ -18,6 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2023
 
+-   [Cloud November 2023](cloud/cloud-2023-11.md)
 -   [New Coverage engine status checks November 23, 2023](cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md)
 -   [Removal of Jira, Slack, and Webhooks repository integrations November 13, 2023](cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal.md)
 -   [Cloud October 2023](cloud/cloud-2023-10.md)
