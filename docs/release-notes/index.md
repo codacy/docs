@@ -18,7 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2023
 
--   [Codacy no longer requests repository permissions for Administration on GitHub December DD, 2023](cloud/cloud-2023-12-DD-gh-admin-permission-not-required.md)
+-   [Codacy no longer requests repository permissions for Administration on GitHub December DD, 2023](cloud/cloud-2023-12-DD-gh-admin-permission-not-requested.md)
 -   [New Coverage engine status checks November 23, 2023](cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md)
 -   [Removal of Jira, Slack, and Webhooks repository integrations November 13, 2023](cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal.md)
 -   [Cloud October 2023](cloud/cloud-2023-10.md)
