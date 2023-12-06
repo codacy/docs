@@ -18,7 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2023
 
--   [New Coverage engine November 23, 2023](cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md)
+-   [Rollout of new Coverage engine November 23, 2023](cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md)
 -   [Removal of Jira, Slack, and Webhooks repository integrations November 13, 2023](cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal.md)
 -   [Cloud October 2023](cloud/cloud-2023-10.md)
 -   [Deprecation of CSSLint, JSHint, Faux Pas, Tailor, TSLint October 25, 2023](cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md)
