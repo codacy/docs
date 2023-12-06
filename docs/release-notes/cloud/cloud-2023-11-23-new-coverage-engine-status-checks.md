@@ -3,22 +3,24 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# New Coverage engine November 23, 2023
+# Rollout of new Coverage engine November 23, 2023
 
-As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we've been working on a new Coverage engine and started its deployment on November 23rd, 2023. The transition to use the new engine across Codacy will take several months and will eventually impact all the coverage data you see on the UI, API, and Git provider.
+As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we've been working on a new Coverage engine and started its deployment on November 23rd, 2023. The rollout to use the new engine across Codacy will be phased across several months and will gradually impact the coverage data you see on the Git provider, UI, and API.
 
-As a result, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to [differences in reported metrics](#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines). Please refer to the table below for the updated status of the transition process. The table will be updated as changes are introduced.
+Please refer to the table below for the updated status of the transition process. The table will be updated as changes are introduced.
 
-| Codacy feature             | Transition status | Notes                                                                                                                                        |
-|----------------------------|-------------------|----------------------------------------------------------------------------------------------------------------------------------------------|
-| Codacy app UI              | Planned           | -                                                                                                                                            |
-| Codacy API                 | Planned           | -                                                                                                                                            |
-| Git provider status checks | Beta              | Data from the new Coverage engine is marked \[beta\]<br>and shown alongside data from the current engine. [Read more below](#status-checks). |
-| GitHub coverage summaries  | Planned           | -                                                                                                                                            |
+| Codacy feature                               | Transition status |     | Notes                                                                                                                                                       |
+|----------------------------------------------|-------------------|:----|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Git provider status checks](#status-checks) | Beta              |     | The new Coverage engine now sends coverage data to your Git provider. This data is marked \[beta\] and is shown alongside the data from the current engine. |
+| GitHub coverage summaries                    | Planned           |     | -                                                                                                                                                           |
+| Codacy app UI                                | Planned           |     | -                                                                                                                                                           |
+| Codacy API                                   | Planned           |     | -                                                                                                                                                           |
 
-## Status checks
+As a result of this transition, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to [differences in reported metrics](#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines).
 
-!!! info "The following applies to the repositories for which you set Codacy to send pull request coverage status data to your Git provider (see how on [GitHub](../../repositories-configure/integrations/github-integration.md#status-checks), [GitLab](../../repositories-configure/integrations/gitlab-integration.md#pull-request-status), and [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#pull-request-status))."
+## Git provider status checks from the new Coverage engine {: id="status-checks"}
+
+!!! info "This section applies to the repositories for which you set Codacy to send pull request coverage status data to your Git provider (see how on [GitHub](../../repositories-configure/integrations/github-integration.md#status-checks), [GitLab](../../repositories-configure/integrations/gitlab-integration.md#pull-request-status), and [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#pull-request-status))."
 
 On November 23rd 2023 we set the new Coverage engine to send coverage data to your Git provider. As a consequence of this update, you can now see two additional checks on your pull requests, marked **\[beta\]**, alongside the preexisting **Codacy Coverage Report** check.
 
