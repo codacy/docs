@@ -660,6 +660,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2023:
+                      - release-notes/cloud/cloud-2023-11.md
                       - release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md
                       - release-notes/cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal.md
                       - release-notes/cloud/cloud-2023-10.md
