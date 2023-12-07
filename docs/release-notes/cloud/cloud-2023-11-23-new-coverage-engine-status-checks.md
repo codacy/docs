@@ -16,7 +16,7 @@ Please refer to the table below for the updated status of the transition process
 | Codacy app UI                                    | Planned     | -                                                                                                                                                           |
 | Codacy API                                       | Planned     | -                                                                                                                                                           |
 
-As a result of this transition, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to [differences in reported metrics](#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines).
+Because of this transition, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to [differences in reported metrics](#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines).
 
 ## Git provider status checks from the new Coverage engine {: id="status-checks"}
 
