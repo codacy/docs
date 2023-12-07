@@ -19,7 +19,8 @@ For product updates that are in progress or planned [visit the Codacy public roa
 2023
 
 -   [Codacy no longer requests repository permissions for Administration on GitHub December DD, 2023](cloud/cloud-2023-12-DD-gh-admin-permission-not-requested.md)
--   [New Coverage engine status checks November 23, 2023](cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md)
+-   [Cloud November 2023](cloud/cloud-2023-11.md)
+-   [Rollout of new Coverage engine November 23, 2023](cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md)
 -   [Removal of Jira, Slack, and Webhooks repository integrations November 13, 2023](cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal.md)
 -   [Cloud October 2023](cloud/cloud-2023-10.md)
 -   [Deprecation of CSSLint, JSHint, Faux Pas, Tailor, TSLint October 25, 2023](cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md)
