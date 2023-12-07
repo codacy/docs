@@ -13,7 +13,45 @@ Codacy GitHub App no longer requests [read and write repository permissions for 
 
 With the deprecation of the SSH Keys usage for GitHub, we've the opportunity to improve the security, safety and reduce the liability of our GitHub App as we will no longer be requesting Repository Administration Read and Write permission.
 
-## Removal of Administration repository permission
+## Removal of repository permissions for Administration
+
+Currently, Codacy requires repository permissions for Administration exclusively as a fallback mechanism when the Contents permission is missing. In this case, Codacy creates an SSH key on the repository to allow cloning and integrating with your repository.
+
+We will remove this permission on the following dates:
+
+<table>
+  <thead>
+    <th>Date</th>
+    <th>Event</th>
+    <th>What to expect</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td>December DD, 2023</td>
+      <td>Codacy started using installation tokens to clone and integrate with your repositories. SSH keys are used exclusively as a fallback mechanism when the Contents permission is missing.</td>
+      <td>
+        <p>From this day on, the new checks will be the official status checks for Codacy Coverage and will no longer be marked <strong>beta</strong>. The old check will be marked <strong>deprecated</strong> but will keep working.</p>
+        <p>If on this date you are still using the old check to block merging pull requests on GitHub, please <a href="#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github">update your Git provider settings</a>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>April 18th, 2024</td>
+      <td>Brownout of repository permissions for Administration</td>
+      <td>
+        <p>Codacy will not send the old status check on this day.</p>
+        <p>This will help you confirm that your setup has been updated correctly and lower the risk of disruptions when the old status check is removed.<br/>If on this day you can merge your pull requests using the new checks and don't encounter other issues, it means that your setup has been updated correctly. Otherwise, if on this date you are still using the old check to block merging pull requests on GitHub, please <a href="#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github">update your Git provider settings</a>.</p>
+      </td>
+    </tr>
+    <tr>
+      <td>June 5th, 2024</td>
+      <td>Removal of repository permissions for Administration</td>
+      <td>
+        <p>Codacy will stop sending the old status check.</p>
+        <p>If on this date you are still using the old check to block merging pull requests on GitHub, you will no longer be able to merge them. To fix this, <a href="#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github">follow the instructions below</a>.</p>
+      </td>
+    </tr>
+  </tbody>
+</table>
 
 ## What do you need to do if you have GitHub repositories?
 
