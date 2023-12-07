@@ -71,7 +71,7 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
     <tr>
       <td>Administration</td>
       <td>Read & Write</td>
-      <td>This permission will soon be removed and is currently used <strong>exclusively as a fallback mechanism</strong> when the Contents permission is missing. In this case, Codacy <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">creates an SSH key on the repository</a> to allow cloning and integrating with your repository.<br/>To avoid disruptions in the future, make sure you accept Codacy GitHub App updated permissions on your GitHub organization.</td>
+      <td>This permission will soon be removed and is currently used <strong>exclusively as a fallback mechanism</strong> when the Contents permission is missing. In this case, Codacy <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">creates an SSH key on the repository</a> to allow cloning and integrating with your repository.<br/>To avoid disruptions in the future, make sure you [approve Codacy GitHub App updated permissions](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app) on your GitHub organization.</td>
     </tr>
     <tr>
       <td colspan="3"><strong>Organization permissions:</strong></td>
