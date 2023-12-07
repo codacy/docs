@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="On November 23rd 2023 we activated the new, faster Coverage engine and set it to send coverage data to your Git provider. This is part of an ongoing effort to improve the speed and value of the insights provided by Codacy.">
+        <meta name="description" content="As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we&#x27;ve been working on a new Coverage engine and started its deployment on November 23rd, 2023. The rollout to use the new engine across Codacy will be phased across several months and will gradually impact the coverage data you see on the Git provider, UI, and API.">
       
       
-        <meta http-equiv="last-modified" content="2023-11-29 16:48:02">
+        <meta http-equiv="last-modified" content="2023-12-07 15:49:43">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/">
@@ -27,7 +27,7 @@
     
     
       
-        <title>New Coverage engine status checks November 23, 2023 - Codacy docs</title>
+        <title>Rollout of new Coverage engine November 23, 2023 - Codacy docs</title>
       
     
     
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#new-coverage-engine-status-checks-november-23-2023" class="md-skip">
+        <a href="#rollout-of-new-coverage-engine-november-23-2023" class="md-skip">
           Skip to content
         </a>
       
@@ -2308,11 +2308,11 @@
     
     
       <label class="md-nav__link md-nav__link--active" for="__toc">
-        New Coverage engine status checks November 23, 2023
+        Rollout of new Coverage engine November 23, 2023
       </label>
     
-    <a href="./" title="New Coverage engine status checks November 23, 2023" class="md-nav__link md-nav__link--active">
-      New Coverage engine status checks November 23, 2023
+    <a href="./" title="Rollout of new Coverage engine November 23, 2023" class="md-nav__link md-nav__link--active">
+      Rollout of new Coverage engine November 23, 2023
     </a>
     
       
@@ -2331,15 +2331,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#deprecation-and-removal-of-the-old-coverage-engine-status-checks" class="md-nav__link">
-    Deprecation and removal of the old Coverage engine status checks
+  <a href="#status-checks" class="md-nav__link">
+    Git provider status checks from the new Coverage engine
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github" class="md-nav__link">
-    If you are using the old Coverage status check to block merging pull requests on GitHub
+  <a href="#coverage-summaries" class="md-nav__link">
+    GitHub coverage summaries from the new Coverage engine
   </a>
   
 </li>
@@ -4028,12 +4028,54 @@
                   
                 
                 
-                <h1 id="new-coverage-engine-status-checks-november-23-2023">New Coverage engine status checks November 23, 2023<a class="headerlink" href="#new-coverage-engine-status-checks-november-23-2023" title="Permanent link">#</a></h1>
+                <h1 id="rollout-of-new-coverage-engine-november-23-2023">Rollout of new Coverage engine November 23, 2023<a class="headerlink" href="#rollout-of-new-coverage-engine-november-23-2023" title="Permanent link">#</a></h1>
+<p>As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we've been working on a new Coverage engine and started its deployment on November 23rd, 2023. The rollout to use the new engine across Codacy will be phased across several months and will gradually impact the coverage data you see on the Git provider, UI, and API.</p>
 <div class="admonition info">
-<p class="admonition-title">This release note applies to the repositories for which you set Codacy to send pull request coverage status data to your Git provider (see how on <a href="../../../repositories-configure/integrations/github-integration/#status-checks">GitHub</a>, <a href="../../../repositories-configure/integrations/gitlab-integration/#pull-request-status">GitLab</a>, and <a href="../../../repositories-configure/integrations/bitbucket-integration/#pull-request-status">Bitbucket</a>).</p>
+<p class="admonition-title">Info</p>
+<p>GitHub only: The new Coverage engine requires updated app permissions. If you haven't done so yet, please <a href="https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions">review and accept the updated Codacy app permissions</a>.</p>
 </div>
-<p>On November 23rd 2023 we activated the new, faster Coverage engine and set it to send coverage data to your Git provider. This is part of an ongoing effort to improve the speed and value of the insights provided by Codacy.</p>
-<p>As a consequence of this update, you can now see two additional checks on your pull requests, marked <strong>beta</strong>, alongside the preexisting <strong>Codacy Coverage Report</strong> check. If you are using the Codacy Coverage Report status check to block merging pull requests on GitHub, please <a href="#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github">update your setup</a> and avoid disruptions in the future.</p>
+<p>Please refer to the table below for the updated status of the transition process. The table will be updated as changes are introduced.</p>
+<table>
+<thead>
+<tr>
+<th>Feature</th>
+<th>Status</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="#status-checks">Git provider status checks</a></td>
+<td>Live (beta)</td>
+<td>The new Coverage engine now sends coverage data to your Git provider. This data is marked [beta] and is shown alongside the data from the current engine.</td>
+</tr>
+<tr>
+<td><a href="#coverage-summaries">GitHub coverage summaries</a></td>
+<td>Live</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Codacy app UI</td>
+<td>Planned</td>
+<td>-</td>
+</tr>
+<tr>
+<td>Codacy API</td>
+<td>Planned</td>
+<td>-</td>
+</tr>
+</tbody>
+</table>
+<p>Because of this transition, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to <a href="#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines">differences in reported metrics</a>.</p>
+<h2 id="status-checks">Git provider status checks from the new Coverage engine<a class="headerlink" href="#status-checks" title="Permanent link">#</a></h2>
+<div class="admonition info">
+<p class="admonition-title">This section applies to the repositories for which you set Codacy to send pull request coverage status data to your Git provider (see how on <a href="../../../repositories-configure/integrations/github-integration/#status-checks">GitHub</a>, <a href="../../../repositories-configure/integrations/gitlab-integration/#pull-request-status">GitLab</a>, and <a href="../../../repositories-configure/integrations/bitbucket-integration/#pull-request-status">Bitbucket</a>).</p>
+</div>
+<p>On November 23rd 2023 we set the new Coverage engine to send coverage data to your Git provider. As a consequence of this update, you can now see two additional checks on your pull requests, marked <strong>[beta]</strong>, alongside the preexisting <strong>Codacy Coverage Report</strong> check.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>GitHub only: If you are using the Codacy Coverage Report status check to block merging pull requests, please <a href="#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github">update your GitHub setup</a> and avoid disruptions in the future.</p>
+</div>
 <p>This is what the new checks look like on each provider:</p>
 <ul>
 <li>
@@ -4049,7 +4091,7 @@
 <p><img alt="New Coverage status checks Bitbucket" src="../../images/ala-695-status-checks-bitbucket.png" /></p>
 </li>
 </ul>
-<h2 id="deprecation-and-removal-of-the-old-coverage-engine-status-checks">Deprecation and removal of the old Coverage engine status checks<a class="headerlink" href="#deprecation-and-removal-of-the-old-coverage-engine-status-checks" title="Permanent link">#</a></h2>
+<h3 id="deprecation-and-removal-of-the-old-coverage-engine-status-checks">Deprecation and removal of the old Coverage engine status checks<a class="headerlink" href="#deprecation-and-removal-of-the-old-coverage-engine-status-checks" title="Permanent link">#</a></h3>
 <p>Currently, Codacy sends coverage data to your Git provider from both the old and new Coverage engines. We will deprecate and later remove the old status checks on the following dates:</p>
 <table>
   <thead>
@@ -4085,13 +4127,18 @@
   </tbody>
 </table>
 
-<h2 id="if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github">If you are using the old Coverage status check to block merging pull requests on GitHub<a class="headerlink" href="#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github" title="Permanent link">#</a></h2>
+<h3 id="if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github">If you are using the old Coverage status check to block merging pull requests on GitHub<a class="headerlink" href="#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github" title="Permanent link">#</a></h3>
 <p>If you are using the old status check to block merging pull requests on GitHub, remove the old Codacy Coverage Report as a required check of your pull requests' target branch:</p>
 <ol>
 <li><a href="https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/managing-protected-branches/managing-a-branch-protection-rule#editing-a-branch-protection-rule">Edit the branch protection rule</a> of your pull requests' target branch.</li>
 <li>Remove the old <strong>Codacy Coverage Report</strong> under the section <strong>Require status checks to pass before merging</strong> and save your changes:</li>
 </ol>
 <p><img alt="New Coverage status checks GitHub" src="../../images/ala-695-update-status-checks-github.png" /></p>
+<h2 id="coverage-summaries">GitHub coverage summaries from the new Coverage engine<a class="headerlink" href="#coverage-summaries" title="Permanent link">#</a></h2>
+<div class="admonition info">
+<p class="admonition-title">This section applies to the repositories for which you set Codacy to post <a href="../../../repositories-configure/integrations/github-integration/#coverage-summaries">coverage summaries</a> to your GitHub pull requests</p>
+</div>
+<p>On December 7th 2023 we set the new Coverage engine to post coverage summaries to GitHub, replacing the old Coverage engine. No further action is required on your part.</p>
 <h2 id="differences-in-coverage-metrics-between-the-old-and-new-coverage-engines">Differences in coverage metrics between the old and new Coverage engines<a class="headerlink" href="#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines" title="Permanent link">#</a></h2>
 <p>You may notice some differences in the coverage metrics reported by the old and new Coverage engines and may need to update your <a href="../../../repositories-configure/adjusting-quality-gates/">coverage gate rules</a> accordingly. This may happen because the new Coverage engine calculates coverage metrics considering all the files included in the coverage report, while the old Coverage engine ignores some files:</p>
 <ul>
@@ -4141,7 +4188,7 @@
           <br>
         </div>
         <p>
-          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22New Coverage engine status checks November 23, 2023%22">create a more detailed issue on our GitHub repository</a>.
+          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Rollout of new Coverage engine November 23, 2023%22">create a more detailed issue on our GitHub repository</a>.
         </p>
       </div>
     </div>
@@ -4157,7 +4204,7 @@
     </p>
     
     <p>
-      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20New Coverage engine status checks November 23, 2023">support@codacy.com</a>.
+      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Rollout of new Coverage engine November 23, 2023">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -4254,7 +4301,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 29, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 7, 2023</span>
     
   </small>
 </div>
