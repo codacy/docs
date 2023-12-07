@@ -7,6 +7,9 @@ rss_href: /feed_rss_created.xml
 
 As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we've been working on a new Coverage engine and started its deployment on November 23rd, 2023. The rollout to use the new engine across Codacy will be phased across several months and will gradually impact the coverage data you see on the Git provider, UI, and API.
 
+!!! info
+    GitHub only: The new Coverage engine requires updated app permissions. If you haven't done so yet, please [review and accept the updated Codacy app permissions](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions).
+
 Please refer to the table below for the updated status of the transition process. The table will be updated as changes are introduced.
 
 | Feature                                          | Status      | Notes                                                                                                                                                       |
