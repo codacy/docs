@@ -9,12 +9,12 @@ As part of an ongoing effort to improve the speed and value of the insights prov
 
 Please refer to the table below for the updated status of the transition process. The table will be updated as changes are introduced.
 
-| Codacy feature                               | Transition status |     | Notes                                                                                                                                                       |
-|----------------------------------------------|-------------------|:----|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Git provider status checks](#status-checks) | Beta              |     | The new Coverage engine now sends coverage data to your Git provider. This data is marked \[beta\] and is shown alongside the data from the current engine. |
-| GitHub coverage summaries                    | Planned           |     | -                                                                                                                                                           |
-| Codacy app UI                                | Planned           |     | -                                                                                                                                                           |
-| Codacy API                                   | Planned           |     | -                                                                                                                                                           |
+| Feature                                          | Status      | Notes                                                                                                                                                       |
+|--------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| [Git provider status checks](#status-checks)     | Live (beta) | The new Coverage engine now sends coverage data to your Git provider. This data is marked \[beta\] and is shown alongside the data from the current engine. |
+| [GitHub coverage summaries](#coverage-summaries) | Live        | -                                                                                                                                                           |
+| Codacy app UI                                    | Planned     | -                                                                                                                                                           |
+| Codacy API                                       | Planned     | -                                                                                                                                                           |
 
 As a result of this transition, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to [differences in reported metrics](#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines).
 
@@ -87,6 +87,12 @@ If you are using the old status check to block merging pull requests on GitHub, 
 1.  Remove the old **Codacy Coverage Report** under the section **Require status checks to pass before merging** and save your changes:
 
 ![New Coverage status checks GitHub](../images/ala-695-update-status-checks-github.png)
+
+## GitHub coverage summaries from the new Coverage engine {: id="coverage-summaries"}
+
+!!! info "This section applies to the repositories for which you set Codacy to post [coverage summaries](../../repositories-configure/integrations/github-integration.md#coverage-summaries) to your GitHub pull requests"
+
+On December 7th 2023 we set the new Coverage engine to post coverage summaries to GitHub, replacing the old Coverage engine. No further action is required on your part.
 
 ## Differences in coverage metrics between the old and new Coverage engines
 
