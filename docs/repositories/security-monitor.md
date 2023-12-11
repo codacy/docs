@@ -62,7 +62,7 @@ The left-hand side of the dashboard lists the status for each security category 
 
 ## Languages checked for security issues
 
-The Security Monitor supports checking the languages and frameworks below for any security issues reported by the corresponding tools:
+The Security Monitor supports checking the languages and infrastructure-as-code platforms below for any security issues reported by the corresponding tools:
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
@@ -77,7 +77,7 @@ The Security Monitor supports checking the languages and frameworks below for an
 <table>
   <thead>
     <tr>
-      <th>Language or framework</th>
+      <th>Language</th>
       <th>Tools that report security issues</th>
     </tr>
   </thead>
@@ -128,6 +128,10 @@ The Security Monitor supports checking the languages and frameworks below for an
       <td>Elixir</td>
       <td><a href="https://github.com/rrrene/credo">Credo</a>,
           <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>GitHub Actions</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
     </tr>
     <tr>
       <td>Go</td>
