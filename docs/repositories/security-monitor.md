@@ -130,6 +130,10 @@ The Security Monitor supports checking the languages and infrastructure-as-code 
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
+      <td>GitHub Actions</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+    </tr>
+    <tr>
       <td>Go</td>
       <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"> <sup>3</sup></a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,

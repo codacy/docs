@@ -177,6 +177,15 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
     </tr>
     <tr>
+      <td>GitHub Actions</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+    </tr>
+    <tr>
       <td>Go</td>
       <td><a href="https://gitlab.com/opennota/check">aligncheck</a><a href="#client-side"><sup>3</sup></a>,
           <a href="https://github.com/tsenart/deadcode">deadcode</a><a href="#client-side"><sup>3</sup></a>,
