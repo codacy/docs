@@ -11,7 +11,7 @@ For increased security, Codacy is deprecating the usage of **repository SSH keys
 
 This change translates into an important security improvement by reducing the liability of Codacy GitHub App, as it no longer requests [read and write repository permissions for Administration](https://docs.github.com/en/enterprise-cloud@latest/rest/overview/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-administration).
 
-## What do you need to do if you have GitHub organization?
+## What do you need to do if you have a GitHub organization?
 
 To use installation access tokens, Codacy GitHub App requires [repository read permissions for Contents](https://docs.github.com/en/enterprise-cloud@latest/rest/overview/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-contents).
 
