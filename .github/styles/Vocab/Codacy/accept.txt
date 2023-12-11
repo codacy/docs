@@ -64,6 +64,8 @@ PVC
 Pylint
 remark-lint
 Revive
+Rollout
+rollout
 RuboCop
 sbt
 Scalameta
