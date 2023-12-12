@@ -21,11 +21,7 @@ If you have any questions or need help, please contact <mailto:support@codacy.co
 
 ## Removal of repository permissions for Administration
 
-To ensure you have the necessary time to [approve Codacy GitHub App updated permissions](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app) on your GitHub organization, Codacy will keep using repository SSH keys for Git operations for now as a fallback mechanism when the Contents permission is missing.
-
-At a later phase, Codacy will drop repository permissions for Administration and the usage of repository SSH keys, and will no longer store those SSH keys.
-
-See the timeline below:
+To ensure you have the necessary time to [approve Codacy GitHub App updated permissions](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app) on your GitHub organization before the removal of repository permissions for Administration, Codacy will execute a phased rollout according to the timeline below:
 
 <table>
   <thead>
