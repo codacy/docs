@@ -22,7 +22,7 @@ The **Pull request status** tab displays the following information for the pull 
 
 -   The **Quality status** of the pull request, either up to standards or not up to standards, based on the [Quality gates](../repositories-configure/adjusting-quality-gates.md) set for the repository.
 
--   Any **Quality issues** introduced or fixed by the pull request. These are the same issues you find in the [Quality Issues tabs](../repositories/pull-requests.md#issues-tabs) in the Codacy app and are also visible in VS Code's Problems tab.
+-   Any **Quality issues** introduced or fixed by the pull request. These are the same issues you find in the [Quality Issues tabs](../repositories/pull-requests.md#issues-tab) in the Codacy app and are also visible in VS Code's Problems tab.
 
     The number next to each file name is the total number of Quality issues that the pull request adds to or removes from that file. The number farther to the right, added by VS Code, is the total number of problems in that file, which may or may not be Quality issues from Codacy. If there are any Medium or Critical Quality issues, the file name is also highlighted in yellow (Medium) or red (Critical).
 
@@ -32,7 +32,7 @@ The **Pull request status** tab displays the following information for the pull 
 
     The percentage next to each file name is the coverage variation for that file.
 
--   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Quality Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
+-   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Quality Duplication tabs](../repositories/pull-requests.md#duplication-tab) in the Codacy app.
 
 -   Variations in **code complexity** introduced by the pull request.
 
@@ -52,9 +52,9 @@ The **Open Pull Requests** tab lists all open pull requests for the repository, 
 
 -   The source and target branches of the pull request.
 
--   Any **Quality issues** introduced or fixed by the pull request. These are the same issues you find in the [Quality Issues tabs](../repositories/pull-requests.md#issues-tabs) in the Codacy app.
+-   Any **Quality issues** introduced or fixed by the pull request. These are the same issues you find in the [Quality Issues tabs](../repositories/pull-requests.md#issues-tab) in the Codacy app.
 
--   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Quality Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
+-   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Quality Duplication tabs](../repositories/pull-requests.md#duplication-tab) in the Codacy app.
 
 -   Variations in **code complexity** introduced by the pull request. This is the same value you find on the [Pull request quality overview](../repositories/pull-requests.md#quality-overview) in the Codacy app.
 
