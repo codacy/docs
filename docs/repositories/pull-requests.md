@@ -57,7 +57,7 @@ To [ignore or manage an issue](issues.md#ignoring-and-managing-issues), click th
 
 ## Duplication tab
 
-The **Duplication** tab displays the lists of duplicated blocks that the {{ page.meta.page_name }} created or fixed.
+The **Duplication** tab displays the lists of duplicated blocks that the {{ page.meta.page_name }} creates or fixes.
 
 ![New Duplication and Fixed Duplication tabs](./images/{{ page.meta.file_name }}-tab-duplication.png)<!-- TODO ALA-643 Screenshot -->
 

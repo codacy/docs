@@ -28,9 +28,17 @@ This area displays the information that identifies the commit (SHA hash, date, a
 ![Commit status](images/commits-detail-status.png)
 
 <!--quality-overview-start-->
+{% if page.meta.page_name == "commit" %}
 ## {{ page.meta.page_name.capitalize() }} quality overview {: id="quality-overview"}
 
 This area displays the quality gate status and an overview of the code quality metrics for the {{ page.meta.page_name }}:
+{% else %}
+## {{ page.meta.page_name.capitalize() }} analysis status and quality overview {: id="quality-overview"}
+
+When an analysis is running, this area displays a detailed analysis status, including analysis times and a link to inspect the logs.
+
+After an analysis completes, this area displays the quality gate status and an overview of the code quality metrics for the {{ page.meta.page_name }}:
+{% endif %}
 
 -   The quality gate status is either **Failed quality gates** or **Passed quality gates** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
 
@@ -106,7 +114,7 @@ The following are example situations that can lead to possible issues:
 <!--tab-duplication-start-->
 ## Duplication tabs
 
-The **New Duplication** and **Fixed Duplication** tabs display the list of duplicated blocks that the {{ page.meta.page_name }} created or fixed.
+The **New Duplication** and **Fixed Duplication** tabs display the list of duplicated blocks that the {{ page.meta.page_name }} creates or fixes.
 
 ![New Duplication and Fixed Duplication tabs](images/{{ page.meta.file_name }}-tab-duplication.png)
 <!--tab-duplication-start-->
