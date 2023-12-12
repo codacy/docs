@@ -16,7 +16,7 @@ When this happens, Codacy doesn't display code duplication metrics for the affec
 
 -   The analysis logs for commits won't display a duplication analysis task for the tool corresponding to the affected language.
 
-    ![Analysis logs for a commit](images/duplication-logs.png)
+    ![Analysis logs for a commit](images/duplication-logs.png)<!-- TODO ALA-643 Confirm screenshot is still valid -->
 
 As a workaround, if you're exceeding the maximum number of source code files:
 
