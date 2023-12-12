@@ -71,11 +71,6 @@ This area displays the quality gate status and an overview of the code quality m
 <!-- vale on -->
 <!--quality-overview-end-->
 
-<!--tabs-start
-TODO
-- When updating this section, verify whether it can be merged with the associated section in pull-reequests.md
-- See ALA-643 for the original updates
--->
 ## Issues tabs
 
 The **New Issues** and **Fixed Issues** tabs display the list of issues that the commit created or fixed.
@@ -91,6 +86,7 @@ Use the options in the cogwheel menu of each issue to [ignore and manage issues]
 
 ![New Issues and Fixed Issues tabs](images/{{ page.meta.file_name }}-tab-issues.png)
 
+<!--tab-possible-issues-start-->
 ### Possible issues
 
 In some situations, Codacy may report either new or fixed **possible** issues on a {{ page.meta.page_name }}, which means that the code analysis detected these issues in lines of code that weren't changed by that {{ page.meta.page_name }}. This gives you awareness to how your changes may be affecting other parts of your code.
@@ -105,13 +101,17 @@ The following are example situations that can lead to possible issues:
     **If you're using GitHub** you may see [annotations](../repositories-configure/integrations/github-integration.md#issue-annotations)  for possible issues reported under **Unchanged files with check annotations** on the **Files changed** tab of your pull requests.
 
     This happens when Codacy reports possible issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/).
+<!--tab-possible-issues-end-->
 
+<!--tab-duplication-start-->
 ## Duplication tabs
 
 The **New Duplication** and **Fixed Duplication** tabs display the list of duplicated blocks that the {{ page.meta.page_name }} created or fixed.
 
 ![New Duplication and Fixed Duplication tabs](images/{{ page.meta.file_name }}-tab-duplication.png)
+<!--tab-duplication-start-->
 
+<!--tab-diff-start-->
 ## Diff tab
 
 The **Diff** tab displays the differences in each file that was changed in the {{ page.meta.page_name }}. The background of the changed lines depends on the change:
@@ -124,7 +124,9 @@ The **Diff** tab displays the differences in each file that was changed in the {
 <!-- vale off -->
 ![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)
 <!-- vale on -->
+<!--tab-diff-end-->
 
+<!--tab-files-start-->
 ## Files tab
 
 The **Files** tab displays the variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) that the {{ page.meta.page_name }} introduces to the files in your repository, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
@@ -141,7 +143,7 @@ The option **Show files without code quality changes** allows you to list all fi
 <!-- vale off -->
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
 <!-- vale on -->
-<!--tabs-end-->
+<!--tab-files-end-->
 
 ## See also
 
