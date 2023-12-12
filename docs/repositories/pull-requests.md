@@ -13,11 +13,12 @@ By default, the page lists open pull requests but you can click the **Closed** t
 
 Click a specific pull request to see detailed information about the code quality changes introduced by that pull request.
 
-![Pull request detail](images/pull-requests-detail.png)
+![Pull request detail](images/pull-requests-detail.png)<!-- TODO ALA-643 Screenshot -->
 
 The next sections describe each area of the pull request detail page.
 
 ## Pull request status {: id="status"}
+<!-- TODO ALA-643 Review section -->
 
 This area displays the information that identifies the pull request (head and base branches, date, and name), as well as:
 
@@ -25,13 +26,19 @@ This area displays the information that identifies the pull request (head and ba
 -   A link to the analysis logs
 -   A link to the pull request on your Git provider
 
-![Pull request status](images/pull-requests-detail-status.png)
+![Pull request status](images/pull-requests-detail-status.png)<!-- TODO ALA-643 Screenshot -->
 
+<!-- TODO ALA-643 New section - quality overview -->
 {%
     include-markdown "./commits.md"
     start="<!--quality-overview-start-->"
     end="<!--quality-overview-end-->"
 %}
+
+<!-- TODO ALA-643
+* New section - tabs
+* Add duplication, complexity, coverage
+-->
 
 {%
     include-markdown "./commits.md"
@@ -40,12 +47,13 @@ This area displays the information that identifies the pull request (head and ba
 %}
 
 ## Commits tab
+<!-- TODO ALA-643 Review section -->
 
 The **Commits** tab displays an overview of each commit included in the pull request, such as the analysis status and the number of new and fixed issues for each commit.
 
 Click a specific commit to see [detailed information about that commit](commits.md#status).
 
-![Commits tab](images/pull-requests-tab-commits.png)
+![Commits tab](images/pull-requests-tab-commits.png)<!-- TODO ALA-643 Screenshot -->
 
 ## See also
 
