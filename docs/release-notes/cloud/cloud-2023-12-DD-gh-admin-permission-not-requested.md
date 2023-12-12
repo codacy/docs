@@ -48,10 +48,10 @@ To ensure you have the necessary time to [approve Codacy GitHub App updated perm
     </tr>
     <tr>
       <td>MM DD, 2024</td>
-      <td>Codacy will drop repository permissions for Administration and the usage of repository SSH keys</td>
+      <td>Codacy will remove repository permissions for Administration and drop the usage of repository SSH keys</td>
       <td>
-        <p>Codacy will start using exclusively installation access tokens to clone and integrate with your repositories with no fallback mechanisms, and will no longer store repositories SSH keys.</p>
-        <p>If on this date you haven't <a href="https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app">approved Codacy GitHub App updated permissions</a> on your GitHub organization, your Codacy quality analysis will fail and you'll not be able to add new repositories to Codacy.</p>
+        <p>Codacy will start using exclusively installation access tokens to clone and integrate with your repositories with no fallback mechanisms, and will no longer store repositories SSH keys. Also, repository permissions for Administration will be removed from the Codacy GitHub App.</p>
+        <p>If on this date you haven't <a href="https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app">approved Codacy GitHub App updated permissions</a> on your GitHub organization, your Codacy quality analysis will fail and you'll not be able to add new repositories to Codacy until you approve the updated permissions.</p>
       </td>
     </tr>
   </tbody>
