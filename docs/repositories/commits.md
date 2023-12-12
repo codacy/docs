@@ -39,11 +39,12 @@ This area displays the quality gate status and an overview of the code quality m
 -   The variation of the following code quality metrics introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %}:
 
     -   **Issues:** Number of new or fixed issues
+{% if page.meta.page_name == "commit" %}
     -   **Duplication:** Variation of the number of duplicated code blocks
     -   **Complexity:** Variation of complexity
-{% if page.meta.page_name == "commit" %}
     -   **Coverage:** Variation of code coverage percentage relative to the parent commit
 {% else %}
+    -   **Security issues:** Number of new or fixed security issues
     -   **Coverage variation:** Variation of code coverage percentage relative to the target branch
     -   **Diff coverage:** Code coverage of the coverable lines added or changed by the pull request, or `∅` (not applicable) if there aren't any coverable lines added or changed
 {% endif %}
@@ -70,7 +71,11 @@ This area displays the quality gate status and an overview of the code quality m
 <!-- vale on -->
 <!--quality-overview-end-->
 
-<!--tabs-start-->
+<!--tabs-start
+TODO
+- When updating this section, verify whether it can be merged with the associated section in pull-reequests.md
+- See ALA-643 for the original updates
+-->
 ## Issues tabs
 
 The **New Issues** and **Fixed Issues** tabs display the list of issues that the commit created or fixed.
