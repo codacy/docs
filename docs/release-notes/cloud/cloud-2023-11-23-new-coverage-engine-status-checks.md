@@ -12,12 +12,38 @@ As part of an ongoing effort to improve the speed and value of the insights prov
 
 Please refer to the table below for the updated status of the transition process. The table will be updated as changes are introduced.
 
-| Feature                                          | Status      | Notes                                                                                                                                                       |
-|--------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| [Git provider status checks](#status-checks)     | Live (beta) | The new Coverage engine now sends coverage data to your Git provider. This data is marked \[beta\] and is shown alongside the data from the current engine. |
-| [GitHub coverage summaries](#coverage-summaries) | Live        | -                                                                                                                                                           |
-| Codacy app UI                                    | Planned     | -                                                                                                                                                           |
-| Codacy API                                       | Planned     | -                                                                                                                                                           |
+<table>
+  <thead>
+    <th>Feature set</th>
+    <th>Feature</th>
+    <th>Status</th>
+    <th>Notes</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Git providers</td>
+      <td><a href="#status-checks">Git provider status checks</a></td>
+      <td>Live (beta)</td>
+      <td>The new Coverage engine now sends coverage data to your Git provider.<br>This data is marked [beta] and is shown alongside the data from the current engine.</td>
+    </tr>
+    <tr>
+      <td><a href="#coverage-summaries">GitHub coverage summaries</a></td>
+      <td>Live</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Codacy app UI</td>
+      <td><a href="#diff-tabs">Coverage commit diff tab <br>and pull request diff tab</a></td>
+      <td>Live</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Other pages and components</td>
+      <td>Planned</td>
+      <td>-</td>
+    </tr>
+  </tbody>
+</table>
 
 Because of this transition, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to [differences in reported metrics](#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines).
 
@@ -96,6 +122,10 @@ If you are using the old status check to block merging pull requests on GitHub, 
 !!! info "This section applies to the repositories for which you set Codacy to post [coverage summaries](../../repositories-configure/integrations/github-integration.md#coverage-summaries) to your GitHub pull requests"
 
 On December 7th 2023 we set the new Coverage engine to post coverage summaries to GitHub, replacing the old Coverage engine. No further action is required on your part.
+
+## Codacy app UI diff tabs from the new Coverage engine {: id="diff-tabs"}
+
+On <!-- TODO ALA-789 date --> we set the diff tabs of the [Coverage commits](../../repositories-coverage/commits.md#diff-tab) and [Coverage pull requests](../../repositories-coverage/pull-requests.md#diff-tab) pages to get data from the new Coverage engine when available. No further action is required on your part.
 
 ## Differences in coverage metrics between the old and new Coverage engines
 
