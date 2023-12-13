@@ -150,7 +150,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
 
 <sup>1</sup>: Outside collaborators aren't supported as members of organizations on Codacy. You can still [add outside collaborators to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.  
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).  
-<sup>3</sup>: These users can only see security items originating from Jira and from Codacy repositories that they follow.  
+<sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.  
 <sup>4</sup>: Requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.
 
 ## Permissions for GitLab
