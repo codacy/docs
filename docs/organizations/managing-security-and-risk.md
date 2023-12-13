@@ -29,10 +29,6 @@ When viewing the dashboard, you can:
 
 -   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
--   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
-
-    !!! info "The **Export CSV** feature is available only to organization admins and organization managers"
-
 ![Security and risk management dashboard](images/security-risk-management-dashboard.png)
 
 ## Item list
@@ -49,11 +45,13 @@ When viewing the item list, you can:
 
 -   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
--   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
-
-    !!! info "The **Export CSV** feature is available only to organization admins and organization managers"
-
 ![Security and risk management items](images/security-risk-management-item-list.png)
+
+## Exporting the security item list
+
+!!! info "This feature is available only to organization admins and organization managers"
+
+To export a list of security items as a CSV file, click the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
 
 ## How Codacy manages security items {: id="opening-and-closing-items"}
 
