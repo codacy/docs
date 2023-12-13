@@ -15,7 +15,7 @@ This change translates into an important security improvement by reducing the li
 
 Make sure an organization owner [approves Codacy GitHub App updated permissions](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app) on your GitHub organization, if not done yet.
 
-To use installation access tokens, Codacy GitHub App requires [repository read permissions for Contents](https://docs.github.com/en/enterprise-cloud@latest/rest/overview/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-contents), and has requested additional permissions for it.
+To use installation access tokens, Codacy GitHub App requires [repository read permissions for Contents](https://docs.github.com/en/enterprise-cloud@latest/rest/overview/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-contents). Thus, organization owners will be notified to review a request for this additional permission:
 
 ![Codacy GitHub App updated permissions request](../images/2023-12-DD-gh-updated-permissions.png)
 
