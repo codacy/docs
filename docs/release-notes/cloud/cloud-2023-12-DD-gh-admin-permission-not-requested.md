@@ -13,7 +13,7 @@ This change translates into an important security improvement by reducing the li
 
 ## What do you need to do if you have a GitHub organization? {: id="to-do"}
 
-Make sure an organization owner [approves Codacy GitHub App updated permissions](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app) on your GitHub organization, if you haven't done it yet.
+Make sure an organization owner [approves Codacy GitHub App updated permissions](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app) on your GitHub organization, if not done yet.
 
 To use installation access tokens, Codacy GitHub App requires [repository read permissions for Contents](https://docs.github.com/en/enterprise-cloud@latest/rest/overview/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-contents), and has requested additional permissions for it.
 
