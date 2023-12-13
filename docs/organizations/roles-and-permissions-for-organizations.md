@@ -379,8 +379,8 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
 </table>
 
 <sup>1</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.  
-<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).
-<sup>3</sup>: These users can only see security items originating from Jira and from Codacy repositories that they follow.  
+<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).  
+<sup>3</sup>: These users can only see security items originating from Jira and from Codacy repositories that they follow.
 
 ## The organization manager role
 
