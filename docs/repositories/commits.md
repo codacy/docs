@@ -111,13 +111,11 @@ The following are example situations that can lead to possible issues:
     This happens when Codacy reports possible issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/).
 <!--tab-possible-issues-end-->
 
-<!--tab-duplication-start-->
 ## Duplication tabs
 
 The **New Duplication** and **Fixed Duplication** tabs display the list of duplicated blocks that the {{ page.meta.page_name }} creates or fixes.
 
 ![New Duplication and Fixed Duplication tabs](images/{{ page.meta.file_name }}-tab-duplication.png)
-<!--tab-duplication-start-->
 
 <!--tab-diff-start-->
 ## Diff tab
