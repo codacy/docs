@@ -15,7 +15,7 @@ Please refer to the table below for the updated status of the transition process
 | Feature                                          | Status      | Notes                                                                                                                                                       |
 |--------------------------------------------------|-------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | [Git provider status checks](#status-checks)     | Live (beta) | The new Coverage engine now sends coverage data to your Git provider. This data is marked \[beta\] and is shown alongside the data from the current engine. |
-| [GitHub coverage summaries](#coverage-summaries) | Live        | -                                                                                                                                                           |
+| [GitHub coverage summaries](#coverage-summaries) | Live        | Summaries are now sent from the new Coverage engine. If you haven't done so yet, please review and update your app permissions as mentioned above.          |
 | Codacy app UI                                    | Planned     | -                                                                                                                                                           |
 | Codacy API                                       | Planned     | -                                                                                                                                                           |
 
