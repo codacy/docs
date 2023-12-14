@@ -35,7 +35,7 @@ This area displays the information that identifies the pull request (head and ba
     end="<!--quality-overview-end-->"
 %}
 
-## Issues tab
+## Issues tab {: id="issues-tabs"}
 
 The **Issues** tab displays the lists of issues that the commit created or fixed.
 
@@ -55,7 +55,7 @@ To [ignore or manage an issue](issues.md#ignoring-and-managing-issues), click th
     end="<!--tab-possible-issues-end-->"
 %}
 
-## Duplication tab
+## Duplication tab {: id="duplication-tabs"}
 
 The **Duplication** tab displays the lists of duplicated blocks that the {{ page.meta.page_name }} creates or fixes.
 
