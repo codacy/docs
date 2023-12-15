@@ -66,7 +66,7 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
     <tr>
       <td>Contents</td>
       <td>Read-Only</td>
-      <td>Codacy uses installation access tokens when integrating with your repositories and cloning them for code quality analysis, and retrieves repository contents to provide faster code coverage analysis.</td>
+      <td>Codacy retrieves repository contents to get installation access tokens, which are used to integrate with your repositories and clone them for code analysis.</td>
     </tr>
     <tr>
       <td>Administration</td>
