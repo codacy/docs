@@ -11,7 +11,7 @@
         <meta name="description" content="As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we&#x27;ve been working on a new Coverage engine and started its deployment on November 23rd, 2023. The rollout to use the new engine across Codacy will be phased across several months and will gradually impact the coverage data you see on the Git provider, UI, and API.">
       
       
-        <meta http-equiv="last-modified" content="2023-12-15 10:46:58">
+        <meta http-equiv="last-modified" content="2023-12-15 15:22:59">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/">
@@ -4138,7 +4138,7 @@
 <div class="admonition info">
 <p class="admonition-title">This section applies to the repositories for which you set Codacy to post <a href="../../../repositories-configure/integrations/github-integration/#coverage-summaries">coverage summaries</a> to your GitHub pull requests</p>
 </div>
-<p>On December 7th 2023 we set the new Coverage engine to post coverage summaries to GitHub, replacing the old Coverage engine. No further action is required on your part.</p>
+<p>On December 7th 2023 we set the new Coverage engine to post coverage summaries to GitHub, replacing the old Coverage engine. If you haven't done so yet, please <a href="https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions">review and accept the updated Codacy app permissions</a>.</p>
 <h2 id="differences-in-coverage-metrics-between-the-old-and-new-coverage-engines">Differences in coverage metrics between the old and new Coverage engines<a class="headerlink" href="#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines" title="Permanent link">#</a></h2>
 <p>You may notice some differences in the coverage metrics reported by the old and new Coverage engines and may need to update your <a href="../../../repositories-configure/adjusting-quality-gates/">coverage gate rules</a> accordingly. This may happen because the new Coverage engine calculates coverage metrics considering all the files included in the coverage report, while the old Coverage engine ignores some files:</p>
 <ul>
