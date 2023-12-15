@@ -31,6 +31,9 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
     -l Java $(find . -name 'jacoco*.xml' -printf '-r %p ')
 ```
 
+!!! note
+    The example above works only on systems that use GNU find with support for the `-printf` action, such as Linux.
+
 ### Uploading reports in sequence {: id="multiple-reports-sequence"}
 
 Upload multiple partial coverage reports in sequence:
