@@ -7,7 +7,7 @@ rss_href: /feed_rss_created.xml
 
 !!! info "This release note applies only to GitHub"
 
-For increased security, Codacy is deprecating the usage of **repository SSH keys** for Git operations on GitHub in favour of **installation access tokens**.
+For increased security, Codacy is deprecating the usage of **repository SSH keys** for Git operations on GitHub in favor of **installation access tokens**.
 
 This change translates into an important security improvement by reducing the liability of Codacy GitHub App, as it no longer requests [read and write repository permissions for Administration](https://docs.github.com/en/enterprise-cloud@latest/rest/overview/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-administration).
 
