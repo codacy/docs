@@ -45,7 +45,7 @@ To ensure the [Codacy GitHub App updated permissions are approved](#to-do) on yo
       <td>Brownout of repository permissions for Administration</td>
       <td>
         <p>On this day, Codacy won't use any fallback mechanism if the Contents permission is missing.</p>
-        <p>This will help you confirm that you already approved the updated permissions for Codacy GitHub App.<br/>If on this date your Codacy quality analysis fail or you have problems adding new repositories to Codacy, make sure an organization owner <a href="#to-do">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</p>
+        <p>This will help you confirm that the updated permissions for the Codacy GitHub App were already approved for your organization.<br/>If on this date your Codacy quality analysis fails or you have problems adding new repositories to Codacy, make sure an organization owner <a href="#to-do">approves the updated permissions for the Codacy GitHub App</a> on your GitHub organization.</p>
       </td>
     </tr>
     <tr>
