@@ -52,7 +52,7 @@ To ensure the [Codacy GitHub App updated permissions are approved](#to-do) on yo
       <td>MM DD, 2024</td>
       <td>Codacy will remove repository permissions for Administration and drop the usage of repository SSH keys</td>
       <td>
-        <p>Codacy will start using exclusively installation access tokens to clone and integrate with your repositories with no fallback mechanisms, and will no longer store repositories SSH keys. Also, repository permissions for Administration will be removed from the Codacy GitHub App.</p>
+        <p>Codacy will start using exclusively installation access tokens to clone and integrate with your repositories, with no fallback mechanisms, and will no longer store repository SSH keys. Also, repository permissions for Administration will be removed from the Codacy GitHub App.</p>
         <p>If on this date the Codacy GitHub App updated permissions haven't been approved on your GitHub organization yet, your Codacy quality analysis will fail and you'll not be able to add new repositories to Codacy until an organization owner <a href="#to-do">approves the updated permissions.</a></p>
       </td>
     </tr>
