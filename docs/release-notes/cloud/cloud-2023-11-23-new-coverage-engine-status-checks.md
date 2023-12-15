@@ -29,7 +29,7 @@ Please refer to the table below for the updated status of the transition process
     <tr>
       <td><a href="#coverage-summaries">GitHub coverage summaries</a></td>
       <td>Live</td>
-      <td>-</td>
+      <td>The new Coverage engine now sends coverage summaries to GitHub. If you haven't done so yet, please review and update your app permissions as mentioned above.</td>
     </tr>
     <tr>
       <td rowspan="2">Codacy app UI</td>
