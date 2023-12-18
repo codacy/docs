@@ -32,7 +32,7 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
 ```
 
 !!! note
-    The example above works only on systems that use GNU find with support for the `-printf` action, such as Linux.
+    This example works only on systems that use GNU `find` with support for the `-printf` action, such as Linux.
 
 ### Uploading reports in sequence {: id="multiple-reports-sequence"}
 
