@@ -103,3 +103,5 @@ You may notice some differences in the coverage metrics reported by the old and 
 
 -   The old Coverage engine ignores any files on a coverage report that aren't present on the repository on that given commit.
 -   The old Coverage engine may ignore additional files since it shares [ignore rules](../../repositories-configure/ignoring-files.md) with the Codacy analysis engine.
+
+{% include-markdown "../../assets/includes/coverage-ignore.md" %}

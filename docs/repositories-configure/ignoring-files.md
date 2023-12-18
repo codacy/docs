@@ -16,8 +16,11 @@ You can also ignore files using your own [tool configuration files](configuring-
 
 If you need more flexibility in ignoring files, use a Codacy configuration file to [define a custom list of file paths to exclude](codacy-configuration-file.md#syntax-for-ignoring-files).
 
-!!! note
-    {% include-markdown "../assets/includes/coverage-ignore.md" %}
+## Ignoring files in coverage analysis
+
+Coverage analysis does not ignore any files.
+
+{% include-markdown "../assets/includes/coverage-ignore.md" %}
 
 ## Default ignored files
 
