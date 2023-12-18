@@ -26,13 +26,13 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
 
 You can also upload all your reports dynamically using the command `find`. For example:
 
+!!! note
+    This example works only on systems that use GNU `find` with support for the `-printf` action, such as Linux.
+
 ```bash
 bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
     -l Java $(find . -name 'jacoco*.xml' -printf '-r %p ')
 ```
-
-!!! note
-    This example works only on systems that use GNU `find` with support for the `-printf` action, such as Linux.
 
 ### Uploading reports in sequence {: id="multiple-reports-sequence"}
 
