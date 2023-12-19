@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the GitLab or Bitbucket integration no longer has permissions on the repository or that the SSH key is no longer valid.">
+        <meta name="description" content="Documentation for the Codacy automated code review tool.">
       
       
-        <meta http-equiv="last-modified" content="2023-10-26 07:47:15">
+        <meta http-equiv="last-modified" content="2023-12-19 14:20:38">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/">
@@ -2134,6 +2134,20 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#outdated-app-permissions" class="md-nav__link">
+    Outdated app permissions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#outdated-permissions-or-invalid-ssh-key" class="md-nav__link">
+    Outdated permissions or invalid SSH key
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#see-also" class="md-nav__link">
     See also
   </a>
@@ -4011,8 +4025,15 @@
                 
                 
                 <h1 id="why-did-codacy-stop-commenting-on-pull-requests">Why did Codacy stop commenting on pull requests?<a class="headerlink" href="#why-did-codacy-stop-commenting-on-pull-requests" title="Permanent link">#</a></h1>
+<h2 id="outdated-app-permissions">Outdated app permissions<a class="headerlink" href="#outdated-app-permissions" title="Permanent link">#</a></h2>
 <div class="admonition info">
-<p class="admonition-title">This page applies only to GitLab and Bitbucket</p>
+<p class="admonition-title">This section applies to Codacy Coverage on GitHub</p>
+</div>
+<p>Coverage information is currently sent to GitHub by a new version of the Codacy Coverage engine, which depends on updated app permissions.</p>
+<p>If you stopped receiving coverage summaries on your pull requests, please <a href="https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions">review and accept the updated Codacy app permissions on GitHub</a>. For more information on the rollout of the new Coverage engine, <a href="../../../release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/">see the relevant release note</a>.</p>
+<h2 id="outdated-permissions-or-invalid-ssh-key">Outdated permissions or invalid SSH key<a class="headerlink" href="#outdated-permissions-or-invalid-ssh-key" title="Permanent link">#</a></h2>
+<div class="admonition info">
+<p class="admonition-title">This section applies to GitLab and Bitbucket</p>
 </div>
 <p>Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the GitLab or Bitbucket integration no longer has permissions on the repository or that the SSH key is no longer valid.</p>
 <p>To fix this issue and avoid future disruptions, re-enable the GitLab or Bitbucket integration on Codacy using a dedicated service account on your Git provider:</p>
@@ -4219,7 +4240,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 26, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 19, 2023</span>
     
   </small>
 </div>
