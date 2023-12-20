@@ -65,6 +65,15 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
+      <td>Access Security and risk management</td>
+      <td class="no">No</td>
+      <td colspan="2" class="yes">Yes<sup>3</sup></td>
+      <td colspan="2" class="yes">Yes<sup>3</sup></td>
+      <td class="yes">Yes<sup>3</sup></td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
       <td>Ignore issues and files,<br/>configure code patterns and file extensions,<br/>manage branches,<br/>reanalyze branches and pull requests</td>
       <td class="no">No</td>
       <td colspan="2" class="maybe"><a href="#change-analysis-configuration">Configurable</a></td>
@@ -96,7 +105,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td colspan="2" class="no">No</td>
-      <td class="yes">Yes<sup>3</sup></td>
+      <td class="yes">Yes<sup>4</sup></td>
       <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
     </tr>
@@ -111,15 +120,6 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
     </tr>
     <tr>
       <td>Configure default Git provider integration settings</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
-      <td>Access Security and risk management</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td colspan="2" class="no">No</td>
@@ -150,7 +150,8 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
 
 <sup>1</sup>: Outside collaborators aren't supported as members of organizations on Codacy. You can still [add outside collaborators to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.  
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).  
-<sup>3</sup>: Requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.
+<sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.  
+<sup>4</sup>: Requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.
 
 ## Permissions for GitLab
 
@@ -196,6 +197,15 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td colspan="2" class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Access Security and risk management</td>
+      <td class="no">No</td>
+      <td colspan="2" class="yes">Yes<sup>3</sup></td>
+      <td class="yes">Yes<sup>3</sup></td>
+      <td colspan="2" class="yes">Yes<sup>3</sup></td>
       <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
     </tr>
@@ -254,15 +264,6 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Access Security and risk management</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td colspan="2" class="yes">Yes</td>
-    </tr>
-    <tr>
       <td>Invite and accept members,<br/>modify billing</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
@@ -284,7 +285,8 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
 </table>
 
 <sup>1</sup>: External users aren't supported as members of organizations on Codacy. You can still [add external users to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.  
-<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).
+<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).  
+<sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.  
 
 ## Permissions for Bitbucket
 
@@ -316,6 +318,12 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
     <tr>
       <td>View and follow private repository</td>
       <td colspan="2" class="yes">Yes</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Access Security and risk management</td>
+      <td colspan="2" class="yes">Yes<sup>3</sup></td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
@@ -356,12 +364,6 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Access Security and risk management</td>
-      <td colspan="2" class="no">No</td>
-      <td class="yes">Yes</td>
-      <td class="yes">Yes</td>
-    </tr>
-    <tr>
       <td>Invite and accept members,<br/>modify billing</td>
       <td colspan="2" class="no">No</td>
       <td class="no">No</td>
@@ -377,7 +379,8 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
 </table>
 
 <sup>1</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.  
-<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).
+<sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).  
+<sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.
 
 ## The organization manager role
 
