@@ -78,7 +78,6 @@ The **Duplication** tab displays the lists of duplicated blocks that the {{ page
     end="<!--tab-diff-end-->"
 %}
 
-<!-- TODO ALA-643 Confirm the option to show files with no coverage changes is kept -->
 {%
     include-markdown "./commits.md"
     start="<!--tab-files-start-->"

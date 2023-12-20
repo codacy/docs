@@ -144,8 +144,10 @@ The **Files** tab displays the variation of the following [code quality metrics]
 
 Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
 
+{% if page.meta.page_name == "commit" %}
 The option **Show files without code quality changes** allows you to list all files that the {{ page.meta.page_name }} updates, even if their code quality metrics don't change.
 
+{% endif %}
 <!-- vale off -->
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
 <!-- vale on -->
