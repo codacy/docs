@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira instance.">
       
       
-        <meta http-equiv="last-modified" content="2023-11-13 10:44:07">
+        <meta http-equiv="last-modified" content="2023-12-20 13:36:35">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -1030,6 +1030,13 @@
         <li class="md-nav__item">
   <a href="#item-list" class="md-nav__link">
     Item list
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#exporting-the-security-item-list" class="md-nav__link">
+    Exporting the security item list
   </a>
   
 </li>
@@ -4064,9 +4071,12 @@
 <p>Each panel shows the total count of matching items and contains a <strong>Review</strong> button to view a list of matching items.</p>
 <p>When viewing the dashboard, you can:</p>
 <ul>
-<li>Limit the total counts in each panel to a specific set of severities or repositories by clicking the <strong>Severity</strong> or <strong>Repository</strong> drop-downs above the main area.</li>
-<li>Export a list of items as a CSV file by clicking the <strong>Export CSV</strong> button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.</li>
-<li>Review the <a href="#item-severities-and-deadlines">severity assignment rules</a> by clicking the <strong>See rules</strong> button in the top right-hand corner of the page.</li>
+<li>
+<p>Limit the total counts in each panel to a specific set of severities or repositories by clicking the <strong>Severity</strong> or <strong>Repository</strong> drop-downs above the main area.</p>
+</li>
+<li>
+<p>Review the <a href="#item-severities-and-deadlines">severity assignment rules</a> by clicking the <strong>See rules</strong> button in the top right-hand corner of the page.</p>
+</li>
 </ul>
 <p><img alt="Security and risk management dashboard" src="../images/security-risk-management-dashboard.png" /></p>
 <h2 id="item-list">Item list<a class="headerlink" href="#item-list" title="Permanent link">#</a></h2>
@@ -4074,12 +4084,22 @@
 <p>To access the item list, access the <a href="#dashboard">dashboard</a> and click the <strong>Review</strong> button in the area of interest, based on the desired filtering.</p>
 <p>When viewing the item list, you can:</p>
 <ul>
-<li>Update the filtering criteria by clicking the <strong>Severity</strong>, <strong>Status</strong>, or <strong>Repository</strong> drop-downs above the list.</li>
-<li>Find out more about an item by clicking its <strong>Details</strong> column to navigate to the item of interest on the source platform.</li>
-<li>Export a list of items as a CSV file by clicking the <strong>Export CSV</strong> button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.</li>
-<li>Review the <a href="#item-severities-and-deadlines">severity assignment rules</a> by clicking the <strong>See rules</strong> button in the top right-hand corner of the page.</li>
+<li>
+<p>Update the filtering criteria by clicking the <strong>Severity</strong>, <strong>Status</strong>, or <strong>Repository</strong> drop-downs above the list.</p>
+</li>
+<li>
+<p>Find out more about an item by clicking its <strong>Details</strong> column to navigate to the item of interest on the source platform.</p>
+</li>
+<li>
+<p>Review the <a href="#item-severities-and-deadlines">severity assignment rules</a> by clicking the <strong>See rules</strong> button in the top right-hand corner of the page.</p>
+</li>
 </ul>
 <p><img alt="Security and risk management items" src="../images/security-risk-management-item-list.png" /></p>
+<h2 id="exporting-the-security-item-list">Exporting the security item list<a class="headerlink" href="#exporting-the-security-item-list" title="Permanent link">#</a></h2>
+<div class="admonition info">
+<p class="admonition-title">This feature is available only to organization admins and organization managers</p>
+</div>
+<p>To export a list of security items as a CSV file, click the <strong>Export CSV</strong> button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.</p>
 <h2 id="opening-and-closing-items">How Codacy manages security items<a class="headerlink" href="#opening-and-closing-items" title="Permanent link">#</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -4359,7 +4379,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 13, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 20, 2023</span>
     
   </small>
 </div>
