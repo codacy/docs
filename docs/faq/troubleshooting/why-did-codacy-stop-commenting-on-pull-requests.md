@@ -1,6 +1,16 @@
 # Why did Codacy stop commenting on pull requests?
 
-!!! info "This page applies only to GitLab and Bitbucket"
+## Outdated app permissions
+
+!!! info "This section applies to Codacy Coverage on GitHub"
+
+Coverage information is currently sent to GitHub by a new version of the Codacy Coverage engine, which depends on updated app permissions.
+
+If you stopped receiving coverage summaries on your pull requests, please [review and accept the updated Codacy app permissions on GitHub](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions). For more information on the rollout of the new Coverage engine, [see the relevant release note](../../release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md).
+
+## Outdated permissions or invalid SSH key
+
+!!! info "This section applies to GitLab and Bitbucket"
 
 Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the GitLab or Bitbucket integration no longer has permissions on the repository or that the SSH key is no longer valid.
 
