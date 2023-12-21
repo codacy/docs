@@ -25,7 +25,7 @@ Each panel shows the total count of matching items and contains a **Review** but
 
 When viewing the dashboard, you can:
 
--   Limit the total counts in each panel to a specific set of severities or repositories by clicking the **Severity** or **Repository** drop-downs above the main area.
+-   Limit the total counts in each panel to a specific set of severities or repositories by clicking the **Severity**, **Repository**, or **Security category** drop-downs above the main area.
 
 -   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
@@ -39,7 +39,7 @@ To access the item list, access the [dashboard](#dashboard) and click the **Revi
 
 When viewing the item list, you can:
 
--   Update the filtering criteria by clicking the **Severity**, **Status**, or **Repository** drop-downs above the list.
+-   Update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, or **Security category** drop-downs above the list.
 
 -   Find out more about an item by clicking its **Details** column to navigate to the item of interest on the source platform.
 
