@@ -26,7 +26,7 @@ Each panel shows the total count of matching items and contains a **Review** but
 When viewing the dashboard, you can:
 
 -   Limit the total counts in each panel to a specific set of severities or repositories by clicking the **Severity** or **Repository** drop-downs above the main area.
--   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
+
 -   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
 ![Security and risk management dashboard](images/security-risk-management-dashboard.png)
@@ -40,11 +40,18 @@ To access the item list, access the [dashboard](#dashboard) and click the **Revi
 When viewing the item list, you can:
 
 -   Update the filtering criteria by clicking the **Severity**, **Status**, or **Repository** drop-downs above the list.
+
 -   Find out more about an item by clicking its **Details** column to navigate to the item of interest on the source platform.
--   Export a list of items as a CSV file by clicking the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
+
 -   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
 ![Security and risk management items](images/security-risk-management-item-list.png)
+
+## Exporting the security item list
+
+!!! info "This feature is available only to organization admins and organization managers"
+
+To export a list of security items as a CSV file, click the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
 
 ## How Codacy manages security items {: id="opening-and-closing-items"}
 
