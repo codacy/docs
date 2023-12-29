@@ -140,7 +140,7 @@ On December 7th 2023 we set the new Coverage engine to post coverage summaries t
     end="<!--accept-permission-end-->"
 %}
 
-On January 1st 2024<!-- TODO ALA-789 date --> we set the [diff tab of the Coverage pull requests page](../../repositories-coverage/pull-requests.md#diff-tab) to get data from the new Coverage engine.
+On December 27th 2023 we set the [diff tab of the Coverage pull requests page](../../repositories-coverage/pull-requests.md#diff-tab) to get data from the new Coverage engine.
 
 ## Differences in coverage metrics between the old and new Coverage engines
 
