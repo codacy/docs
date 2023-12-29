@@ -11,7 +11,7 @@
         <meta name="description" content="As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we&#x27;ve been working on a new Coverage engine and started its deployment on November 23rd, 2023. The rollout to use the new engine across Codacy will be phased across several months and will gradually impact the coverage data you see on the Git provider, UI, and API.">
       
       
-        <meta http-equiv="last-modified" content="2023-12-15 15:22:59">
+        <meta http-equiv="last-modified" content="2023-12-29 15:24:23">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/">
@@ -2345,6 +2345,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#diff-tabs" class="md-nav__link">
+    Codacy app UI diff tabs from the new Coverage engine
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines" class="md-nav__link">
     Differences in coverage metrics between the old and new Coverage engines
   </a>
@@ -4029,43 +4036,44 @@
                 
                 
                 <h1 id="rollout-of-new-coverage-engine-november-23-2023">Rollout of new Coverage engine November 23, 2023<a class="headerlink" href="#rollout-of-new-coverage-engine-november-23-2023" title="Permanent link">#</a></h1>
-<p>As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we've been working on a new Coverage engine and started its deployment on November 23rd, 2023. The rollout to use the new engine across Codacy will be phased across several months and will gradually impact the coverage data you see on the Git provider, UI, and API.</p>
 <div class="admonition info">
-<p class="admonition-title">Info</p>
-<p>GitHub only: The new Coverage engine requires updated app permissions. If you haven't done so yet, please <a href="https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions">review and accept the updated Codacy app permissions</a>.</p>
+<p class="admonition-title">GitHub only: this feature requires updated app permissions. If you haven't done so yet, please <a href="https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions">review and accept the updated Codacy app permissions</a> on GitHub</p>
 </div>
+<p>As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we've been working on a new Coverage engine and started its deployment on November 23rd, 2023. The rollout to use the new engine across Codacy will be phased across several months and will gradually impact the coverage data you see on the Git provider, UI, and API.</p>
 <p>Please refer to the table below for the updated status of the transition process. The table will be updated as changes are introduced.</p>
 <table>
-<thead>
-<tr>
-<th>Feature</th>
-<th>Status</th>
-<th>Notes</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="#status-checks">Git provider status checks</a></td>
-<td>Live (beta)</td>
-<td>The new Coverage engine now sends coverage data to your Git provider. This data is marked [beta] and is shown alongside the data from the current engine.</td>
-</tr>
-<tr>
-<td><a href="#coverage-summaries">GitHub coverage summaries</a></td>
-<td>Live</td>
-<td>The new Coverage engine now sends coverage summaries to GitHub. If you haven't done so yet, please review and update your app permissions as mentioned above.</td>
-</tr>
-<tr>
-<td>Codacy app UI</td>
-<td>Planned</td>
-<td>-</td>
-</tr>
-<tr>
-<td>Codacy API</td>
-<td>Planned</td>
-<td>-</td>
-</tr>
-</tbody>
+  <thead>
+    <th>Feature set</th>
+    <th>Feature</th>
+    <th>Status</th>
+    <th>Notes</th>
+  </thead>
+  <tbody>
+    <tr>
+      <td rowspan="2">Git providers</td>
+      <td><a href="#status-checks">Git provider status checks</a></td>
+      <td>Live (beta)</td>
+      <td>The new Coverage engine now sends coverage data to your Git provider.<br>This data is marked [beta] and is shown alongside the data from the current engine.</td>
+    </tr>
+    <tr>
+      <td><a href="#coverage-summaries">GitHub coverage summaries</a></td>
+      <td>Live</td>
+      <td>The new Coverage engine now sends coverage summaries to GitHub. If you haven't done so yet, please review and update your app permissions as mentioned above.</td>
+    </tr>
+    <tr>
+      <td rowspan="2">Codacy app UI</td>
+      <td><a href="#diff-tabs">Coverage pull request diff tab</a></td>
+      <td>Live</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Other pages and components</td>
+      <td>Planned</td>
+      <td>-</td>
+    </tr>
+  </tbody>
 </table>
+
 <p>Because of this transition, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to <a href="#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines">differences in reported metrics</a>.</p>
 <h2 id="status-checks">Git provider status checks from the new Coverage engine<a class="headerlink" href="#status-checks" title="Permanent link">#</a></h2>
 <div class="admonition info">
@@ -4138,7 +4146,15 @@
 <div class="admonition info">
 <p class="admonition-title">This section applies to the repositories for which you set Codacy to post <a href="../../../repositories-configure/integrations/github-integration/#coverage-summaries">coverage summaries</a> to your GitHub pull requests</p>
 </div>
-<p>On December 7th 2023 we set the new Coverage engine to post coverage summaries to GitHub, replacing the old Coverage engine. If you haven't done so yet, please <a href="https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions">review and accept the updated Codacy app permissions</a>.</p>
+<div class="admonition info">
+<p class="admonition-title">GitHub only: this feature requires updated app permissions. If you haven't done so yet, please <a href="https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions">review and accept the updated Codacy app permissions</a> on GitHub</p>
+</div>
+<p>On December 7th 2023 we set the new Coverage engine to post coverage summaries to GitHub, replacing the old Coverage engine.</p>
+<h2 id="diff-tabs">Codacy app UI diff tabs from the new Coverage engine<a class="headerlink" href="#diff-tabs" title="Permanent link">#</a></h2>
+<div class="admonition info">
+<p class="admonition-title">GitHub only: this feature requires updated app permissions. If you haven't done so yet, please <a href="https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions">review and accept the updated Codacy app permissions</a> on GitHub</p>
+</div>
+<p>On December 27th 2023 we set the <a href="../../../repositories-coverage/pull-requests/#diff-tab">diff tab of the Coverage pull requests page</a> to get data from the new Coverage engine.</p>
 <h2 id="differences-in-coverage-metrics-between-the-old-and-new-coverage-engines">Differences in coverage metrics between the old and new Coverage engines<a class="headerlink" href="#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines" title="Permanent link">#</a></h2>
 <p>You may notice some differences in the coverage metrics reported by the old and new Coverage engines and may need to update your <a href="../../../repositories-configure/adjusting-quality-gates/">coverage gate rules</a> accordingly. This may happen because the new Coverage engine calculates coverage metrics considering all the files included in the coverage report, while the old Coverage engine ignores some files:</p>
 <ul>
@@ -4301,7 +4317,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 15, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 29, 2023</span>
     
   </small>
 </div>
