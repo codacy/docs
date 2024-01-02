@@ -39,7 +39,7 @@ To access the item list, access the [dashboard](#dashboard) and click the **Revi
 
 When viewing the item list, you can:
 
--   Limit the total counts in each panel to a specific set of severities, repositories, or security categories by clicking the filter drop-downs above the main area.
+-   Update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, or **Security category** drop-downs above the list.
 
 -   Find out more about an item by clicking its **Details** column to navigate to the item of interest on the source platform.
 
