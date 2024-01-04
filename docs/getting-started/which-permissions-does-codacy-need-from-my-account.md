@@ -71,7 +71,7 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
     <tr>
       <td>Administration</td>
       <td>Read & Write</td>
-      <td>This permission <strong>will soon be removed</strong> and is currently used as a fallback mechanism when the Contents permission is not available. In this case, Codacy <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">creates an SSH key on the repository</a> to allow cloning and integrating with your repository.<br/>To ensure Codacy keeps working correcly, make sure an organization owner <a href="https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</td>
+      <td>This permission <strong>will soon be removed</strong> and is currently used as a fallback mechanism when the Contents permission isn't available. In this case, Codacy <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">creates an SSH key on the repository</a> to allow cloning and integrating with your repository.<br/>To ensure Codacy keeps working correctly, make sure an organization owner <a href="https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</td>
     </tr>
     <tr>
       <td colspan="3"><strong>Organization permissions:</strong></td>
@@ -206,10 +206,12 @@ If you need to use an integration that you have previously revoked, log in again
 
 ## Why does Codacy ask for permission to create SSH keys?
 
-!!! info "This section applies only to GitLab and Bitbucket"
-    For GitHub, Codacy creates an SSH key on the repository **exclusively as a fallback mechanism** when the Contents permission is missing. To avoid disruptions in the future, make sure you accept Codacy GitHub App [updated permissions](#github-cloud) on your GitHub organization.
+!!! note
+    **GitHub only:** Codacy will soon start using [installation access tokens](https://docs.github.com/en/enterprise-cloud@latest/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app#about-installation-access-tokens) instead of SSH keys to integrate with your GitHub repositories and clone them. SSH keys are currently used as a fallback mechanism when the [Contents permission]((#github-cloud)) isn't available.
 
-On GitLab and Bitbucket organizations, when you add a private repository to Codacy, Codacy uses the integration with your Git provider to create a new SSH key on the repository. Codacy then uses that SSH key every time it needs to clone the repository.
+    To ensure Codacy keeps working correctly, make sure an organization owner [approves Codacy GitHub App updated permissions](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app) on your GitHub organization.
+
+When you add a private repository to Codacy, Codacy uses the integration with your Git provider to create a new SSH key on the repository. Codacy then uses that SSH key every time it needs to clone the repository.
 
 **Codacy only adds read-only SSH keys** and can't access any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access. Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.
 
