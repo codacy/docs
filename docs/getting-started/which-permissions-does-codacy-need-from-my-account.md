@@ -207,7 +207,7 @@ If you need to use an integration that you have previously revoked, log in again
 ## Why does Codacy ask for permission to create SSH keys?
 
 !!! note
-    **GitHub only:** Codacy will soon start using [installation access tokens](https://docs.github.com/en/enterprise-cloud@latest/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app#about-installation-access-tokens) instead of SSH keys to integrate with your GitHub repositories and clone them. SSH keys are currently used as a fallback mechanism when the [Contents permission]((#github-cloud)) isn't available.
+    **GitHub only:** Codacy will soon start using [installation access tokens](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app#about-installation-access-tokens) instead of SSH keys to integrate with your GitHub repositories and clone them. SSH keys are currently used as a fallback mechanism when the [Contents permission](#github-cloud) isn't available.
 
     To ensure Codacy keeps working correctly, make sure an organization owner [approves Codacy GitHub App updated permissions](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app) on your GitHub organization.
 
@@ -218,4 +218,4 @@ When you add a private repository to Codacy, Codacy uses the integration with yo
 We understand the desire for security and privacy and find that the SSH protocol is preferable to HTTPS as it separates Codacy's access rights from the one of the users.
 
 !!! tip
-    You can revoke the keys created by Codacy at any time. See [GitLab](https://docs.gitlab.com/ee/user/project/deploy_keys/) or [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/configure-repository-settings/) documentation for further details.
+    You can revoke the keys created by Codacy at any time. See [GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-deploy-keys), [GitLab](https://docs.gitlab.com/ee/user/project/deploy_keys/), or [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/configure-repository-settings/) documentation for further details.
