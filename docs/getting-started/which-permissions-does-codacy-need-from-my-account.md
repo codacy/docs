@@ -66,12 +66,12 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
     <tr>
       <td>Contents</td>
       <td>Read-Only</td>
-      <td>Codacy retrieves repository contents to get installation access tokens, which are used to integrate with your repositories and clone them for code analysis.</td>
+      <td>Codacy retrieves repository contents to get installation access tokens when integrating with your repositories and clone them, and for code coverage analysis.<br/><strong>Codacy requests this permission since September 2023.</strong> Make sure an organization owner <a href="https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</td>
     </tr>
     <tr>
       <td>Administration</td>
       <td>Read & Write</td>
-      <td>This permission will soon be removed and is currently used <strong>exclusively as a fallback mechanism</strong> when the Contents permission is missing. In this case, Codacy <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">creates an SSH key on the repository</a> to allow cloning and integrating with your repository.<br/>To avoid disruptions in the future, make sure you <a href="https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app">approve Codacy GitHub App updated permissions</a> on your GitHub organization.</td>
+      <td>This permission <strong>will soon be removed</strong> and is currently used as a fallback mechanism when the Contents permission is not available. In this case, Codacy <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">creates an SSH key on the repository</a> to allow cloning and integrating with your repository.<br/>To ensure Codacy keeps working correcly, make sure an organization owner <a href="https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</td>
     </tr>
     <tr>
       <td colspan="3"><strong>Organization permissions:</strong></td>
