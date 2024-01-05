@@ -7,7 +7,7 @@ By default, Codacy does normal Git clones that **don't include submodules** to e
 !!! important
     **GitHub only:**
 
-    -   To clone repositories, the Codacy GitHub App requires the Contents permission. Make sure you accept the Codacy GitHub App [updated permissions](../getting-started/which-permissions-does-codacy-need-from-my-account.md/#github-cloud) on your GitHub organization.
+    -   To clone repositories, the Codacy GitHub App [requires the Contents permission](../getting-started/which-permissions-does-codacy-need-from-my-account.md#github-cloud). Make sure an organization owner [approves Codacy GitHub App updated permissions](https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps) on your GitHub organization.
     -   Your repository and the repositories that you add as submodules must belong to the same GitHub organization.
 
 ## Prerequisites for using submodules
