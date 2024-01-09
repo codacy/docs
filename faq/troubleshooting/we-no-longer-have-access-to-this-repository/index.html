@@ -11,7 +11,7 @@
         <meta name="description" content="Troubleshoot and fix issues that prevent Codacy from cloning your private repository, such as moving the repository or changing the permissions of the user that added the repository to Codacy.">
       
       
-        <meta http-equiv="last-modified" content="2023-07-04 12:23:02">
+        <meta http-equiv="last-modified" content="2024-01-09 15:18:10">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/troubleshooting/we-no-longer-have-access-to-this-repository/">
@@ -4041,7 +4041,7 @@
 <div class="admonition info">
 <p class="admonition-title">This section applies only to GitLab and Bitbucket</p>
 </div>
-<p>Codacy uses SSH keys to clone your private repositories. Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, an SSH key can be added either:</p>
+<p>On GitLab and Bitbucket organizations, Codacy uses SSH keys to clone your private repositories. Depending on the level of access that the user configuring the repository on Codacy has on the remote Git provider, an SSH key can be added either:</p>
 <ul>
 <li>Directly to the repository itself, if the user has permissions to add SSH keys to the repository</li>
 <li>To the user account, if the user only has read or commit permissions on the repository</li>
@@ -4054,7 +4054,7 @@
 <p>This is only possible if the user configuring the integration with the remote Git provider has administrator access to the repository. Otherwise, this operation will fail. Alternatively, you can do this process manually by copying the SSH key.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If <a href="../../../repositories-configure/using-submodules/">your repository is using submodules on Codacy</a>, add a new SSH user key to your git provider account instead.</p>
+<p>If <a href="../../../repositories-configure/using-submodules/">your repository is using submodules on Codacy</a>, add a new SSH user key to your Git provider account instead.</p>
 </div>
 <p><img alt="Generate new key" src="../images/we-no-longer-have-access-to-this-repository-new-key.png" /></p>
 </li>
@@ -4218,7 +4218,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 4, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 9, 2024</span>
     
   </small>
 </div>

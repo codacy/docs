@@ -11,7 +11,7 @@
         <meta name="description" content="Review the list of permissions that Codacy requires from your Git provider to analyze your code.">
       
       
-        <meta http-equiv="last-modified" content="2023-09-29 09:44:00">
+        <meta http-equiv="last-modified" content="2024-01-09 15:18:10">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/which-permissions-does-codacy-need-from-my-account/">
@@ -4113,14 +4113,14 @@
       <td>Codacy sets the status of commits according to the result of code analysis.</td>
     </tr>
     <tr>
-      <td>Administration</td>
-      <td>Read & Write</td>
-      <td><a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">Codacy creates an SSH key</a> on the repository to allow cloning and integrating with your repository.</td>
-    </tr>
-    <tr>
       <td>Contents</td>
       <td>Read-Only</td>
-      <td>Codacy accesses repository contents to provide faster code coverage analysis and as part of an initiative to use GitHub App tokens instead of SSH keys when cloning repositories for code quality analysis.</td>
+      <td>Codacy retrieves repository contents to get installation access tokens when integrating with your repositories and clone them, and for code coverage analysis.<br/><strong>Codacy requests this permission since September 2023.</strong> Make sure an organization owner <a href="https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</td>
+    </tr>
+    <tr>
+      <td>Administration</td>
+      <td>Read & Write</td>
+      <td>This permission <strong>will soon be removed</strong> and is currently used as a fallback mechanism when the Contents permission isn't available. In this case, Codacy <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">creates an SSH key on the repository</a> to allow cloning and integrating with your repository.<br/>To ensure Codacy keeps working correctly, make sure an organization owner <a href="https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</td>
     </tr>
     <tr>
       <td colspan="3"><strong>Organization permissions:</strong></td>
@@ -4248,9 +4248,18 @@
 <p>After revoking an integration, Codacy will no longer be able to access or manipulate resources that require API calls, such as detecting new pull requests or adding comments to pull requests. However, Codacy will still be able to perform operations that only require using the Git protocol either via SSH or HTTPS, such as detecting new commits and calculating diffs. To remove your repositories from Codacy and stop the analysis you must <a href="../../repositories-configure/removing-your-repository/">delete them from your Codacy account</a>.</p>
 <p>If you need to use an integration that you have previously revoked, log in again to Codacy with that integration so that Codacy can request the required permissions from the provider.</p>
 <h2 id="why-does-codacy-ask-for-permission-to-create-ssh-keys">Why does Codacy ask for permission to create SSH keys?<a class="headerlink" href="#why-does-codacy-ask-for-permission-to-create-ssh-keys" title="Permanent link">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>GitHub only:</strong> Codacy will soon start using <a href="https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app#about-installation-access-tokens">installation access tokens</a> instead of SSH keys to integrate with your GitHub repositories and clone them. SSH keys are currently used as a fallback mechanism when the <a href="#github-cloud">Contents permission</a> isn't available.</p>
+<p>To ensure Codacy keeps working correctly, make sure an organization owner <a href="https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</p>
+</div>
 <p>When you add a private repository to Codacy, Codacy uses the integration with your Git provider to create a new SSH key on the repository. Codacy then uses that SSH key every time it needs to clone the repository.</p>
-<p><strong>Codacy only adds read-only SSH keys</strong> and can't access any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access, and you can also <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-deploy-keys">revoke the keys created by Codacy at any time</a>. Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.</p>
+<p><strong>Codacy only adds read-only SSH keys</strong> and can't access any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access. Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.</p>
 <p>We understand the desire for security and privacy and find that the SSH protocol is preferable to HTTPS as it separates Codacy's access rights from the one of the users.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can revoke the keys created by Codacy at any time. See <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-deploy-keys">GitHub</a>, <a href="https://docs.gitlab.com/ee/user/project/deploy_keys/">GitLab</a>, or <a href="https://support.atlassian.com/bitbucket-cloud/docs/configure-repository-settings/">Bitbucket</a> documentation for further details.</p>
+</div>
               
               
                 
@@ -4407,7 +4416,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 29, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 9, 2024</span>
     
   </small>
 </div>
