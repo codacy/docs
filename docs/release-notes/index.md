@@ -18,7 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2023
 
--   [Deprecation of SSH keys for GitHub repositories January DD, 2024](cloud/cloud-2023-12-DD-gh-admin-permission-not-requested.md)
+-   [Deprecation of SSH keys for GitHub repositories January DD, 2024](cloud/cloud-2024-01-DD-gh-repository-ssh-keys-deprecation.md)
 -   [Cloud December 2023](cloud/cloud-2023-12.md)
 -   [Cloud November 2023](cloud/cloud-2023-11.md)
 -   [Rollout of new Coverage engine November 23, 2023](cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md)
