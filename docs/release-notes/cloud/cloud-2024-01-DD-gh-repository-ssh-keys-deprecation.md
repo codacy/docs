@@ -33,15 +33,15 @@ To ensure the [Codacy GitHub App updated permissions are approved](#to-do) on yo
   </thead>
   <tbody>
     <tr>
-      <td>December DD, 2023</td>
-      <td>Codacy started using installation access tokens to clone and integrate with your repositories, and deprecated repositories SSH keys usage</td>
+      <td>January DD, 2024</td>
+      <td>Codacy started using installation access tokens to clone and integrate with your repositories, and deprecated the usage of repositories SSH keys</td>
       <td>
         <p>From this day on, repositories SSH keys are used exclusively as a fallback mechanism when the Contents permission is missing.</p>
         <p>If not done yet, make sure an organization owner <a href="#to-do">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</p>
       </td>
     </tr>
     <tr>
-      <td>January DD, 2024</td>
+      <td>February 12, 2024</td>
       <td>Brownout of repository permissions for Administration</td>
       <td>
         <p>On this day, Codacy won't use any fallback mechanism if the Contents permission is missing.</p>
@@ -49,11 +49,18 @@ To ensure the [Codacy GitHub App updated permissions are approved](#to-do) on yo
       </td>
     </tr>
     <tr>
-      <td>MM DD, 2024</td>
+      <td>February 19, 2024</td>
       <td>Codacy will remove repository permissions for Administration and drop the usage of repository SSH keys</td>
       <td>
-        <p>Codacy will start using exclusively installation access tokens to clone and integrate with your repositories, with no fallback mechanisms, and will no longer store repository SSH keys. Also, repository permissions for Administration will be removed from the Codacy GitHub App.</p>
+        <p>Codacy will start using exclusively installation access tokens to clone and integrate with your repositories, with no fallback mechanisms. Also, repository permissions for Administration will be removed from the Codacy GitHub App.</p>
         <p>If on this date the Codacy GitHub App updated permissions haven't been approved on your GitHub organization yet, your Codacy quality analysis will fail and you'll not be able to add new repositories to Codacy until an organization owner <a href="#to-do">approves the updated permissions.</a></p>
+      </td>
+    </tr>
+    <tr>
+      <td>To define</td>
+      <td>Codacy will no longer store repository SSH keys</td>
+      <td>
+        <p>On this day, Codacy will delete all the repository SSH keys stored in our systems.</p>
       </td>
     </tr>
   </tbody>
