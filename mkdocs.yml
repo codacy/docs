@@ -661,6 +661,7 @@ nav:
           - Cloud:
                 - 2023:
                       - release-notes/cloud/cloud-2023-12-DD-gh-admin-permission-not-requested.md
+                      - release-notes/cloud/cloud-2023-12.md
                       - release-notes/cloud/cloud-2023-11.md
                       - release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md
                       - release-notes/cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal.md
