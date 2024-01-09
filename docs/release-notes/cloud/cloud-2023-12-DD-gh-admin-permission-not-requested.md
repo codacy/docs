@@ -3,7 +3,7 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Codacy no longer requests repository permissions for Administration on GitHub December DD, 2023
+# Deprecation of SSH keys for GitHub repositories January DD, 2024
 
 !!! info "This release note applies only to GitHub"
 
