@@ -9,13 +9,13 @@ rss_href: /feed_rss_created.xml
 
 For increased security, Codacy is deprecating the usage of **repository SSH keys** for Git operations on GitHub in favor of **installation access tokens**.
 
-This change translates into an important security improvement by reducing the liability of Codacy GitHub App, as it no longer requests [read and write repository permissions for Administration](https://docs.github.com/en/enterprise-cloud@latest/rest/overview/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-administration).
+This change translates into an important security improvement by reducing the liability of Codacy GitHub App, as it no longer requests [read and write repository permissions for Administration](https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-administration).
 
 ## What do you need to do if you have a GitHub organization? {: id="to-do"}
 
-Make sure an organization owner [approves the updated permissions for the Codacy GitHub App](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app) on your GitHub organization, if not done yet.
+Make sure an organization owner [approves the updated permissions for the Codacy GitHub App](https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps) on your GitHub organization, if not done yet.
 
-To use installation access tokens, the Codacy GitHub App requires [repository read permissions for Contents](https://docs.github.com/en/enterprise-cloud@latest/rest/overview/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-contents). Thus, organization owners will be notified to review a request for this additional permission:
+To use installation access tokens, the Codacy GitHub App requires [repository read permissions for Contents](https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-contents). Thus, organization owners will be notified to review a request for this additional permission:
 
 ![Codacy GitHub App updated permissions request](../images/2023-12-DD-gh-updated-permissions.png)
 
