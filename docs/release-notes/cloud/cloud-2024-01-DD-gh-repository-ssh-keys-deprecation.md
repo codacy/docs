@@ -12,7 +12,7 @@ For increased security, Codacy is deprecating the usage of **repository SSH keys
 This change translates into important security improvements:
 
 -   It reduces the liability of the Codacy GitHub App, as it no longer requests [read and write repository permissions for Administration](https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-administration).
--   Contrary to SSH keys, [installation access tokens](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app#about-installation-access-tokens) expire after one hour and Codacy loses access when the GitHub App is uninstalled.
+-   Contrary to long-living SSH keys, [installation access tokens](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app#about-installation-access-tokens) expire after one hour and Codacy loses access when the GitHub App is uninstalled.
 
 To minimize any impact, Codacy is now deprecating the usage of repository SSH keys and will delete them from our systems only at a later stage. [See the rollout timeline](#timeline) for more details.
 
