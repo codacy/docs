@@ -7,14 +7,14 @@ rss_href: /feed_rss_created.xml
 
 !!! info "This release note applies only to GitHub"
 
-For increased security, Codacy is deprecating the usage of **repository SSH keys** for Git operations on GitHub in favor of **installation access tokens**.
+For increased security, Codacy deprecated the usage of **repository SSH keys** for Git operations on GitHub in favor of **installation access tokens**.
 
 This change translates into important security improvements:
 
--   It reduces the liability of the Codacy GitHub App, as it no longer requests [read and write repository permissions for Administration](https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-administration).
+-   It reduces the liability of the Codacy GitHub App, as it no longer requires [read and write repository permissions for Administration](https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-administration).
 -   Contrary to long-living SSH keys, [installation access tokens](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app#about-installation-access-tokens) expire after one hour and Codacy loses access when the GitHub App is uninstalled.
 
-To minimize any impact, Codacy is now deprecating the usage of repository SSH keys and will delete them from our systems only at a later stage. [See the rollout timeline](#timeline) for more details.
+To minimize any impact, Codacy deprecated the usage of repository SSH keys for now but will keep use them as a fallback mechanism. At a later stage, Codacy will delete the repository SSH keys stored in our systems. [See the rollout timeline](#timeline) for more details.
 
 ## Changes on the Codacy GitHub App required permissions {: id="changes-permissions"}
 
@@ -76,3 +76,7 @@ To ensure the conditions to use installation access tokens on GitHub organizatio
     </tr>
   </tbody>
 </table>
+
+## See also
+
+-   [Which permissions are required by Codacy GitHub App?](../../getting-started/which-permissions-does-codacy-need-from-my-account.md#github-cloud)
