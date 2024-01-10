@@ -14,7 +14,7 @@ This change translates into important security improvements:
 -   It reduces the liability of the Codacy GitHub App, as it no longer requires [read and write repository permissions for Administration](https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-administration).
 -   Contrary to long-living SSH keys, [installation access tokens](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app#about-installation-access-tokens) expire after one hour and Codacy loses access when the GitHub App is uninstalled.
 
-To minimize any impact, Codacy deprecated the usage of repository SSH keys for now but will keep use them as a fallback mechanism. At a later stage, Codacy will delete the repository SSH keys stored in our systems. [See the rollout timeline](#timeline) for more details.
+To minimize any impact, Codacy deprecated the usage of repository SSH keys for now but will keep using them as a fallback mechanism at this first stage. At a later stage, Codacy will delete the repository SSH keys stored in our systems. [See the rollout timeline](#timeline) for more details.
 
 ## Changes on the Codacy GitHub App required permissions {: id="changes-permissions"}
 
