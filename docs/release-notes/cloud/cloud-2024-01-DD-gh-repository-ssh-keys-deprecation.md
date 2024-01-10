@@ -3,7 +3,7 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Deprecation of SSH keys for GitHub repositories January DD, 2024
+# Deprecation of SSH keys for GitHub repositories January DD, 2024<!--TODO PLUTO-802 Update release date-->
 
 !!! info "This release note applies only to GitHub"
 
@@ -44,7 +44,7 @@ To ensure the conditions to use installation access tokens on GitHub organizatio
   </thead>
   <tbody>
     <tr>
-      <td>January DD, 2024</td>
+      <td>January DD, 2024</td><!--TODO PLUTO-802 Update release date-->
       <td>Codacy started using installation access tokens to clone and integrate with your repositories, and deprecated the usage of repositories SSH keys</td>
       <td>
         <p>From this day on, repositories SSH keys are used exclusively as a fallback mechanism when the Contents permission is missing.</p>
