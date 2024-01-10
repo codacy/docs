@@ -9,21 +9,32 @@ rss_href: /feed_rss_created.xml
 
 For increased security, Codacy is deprecating the usage of **repository SSH keys** for Git operations on GitHub in favor of **installation access tokens**.
 
-This change translates into an important security improvement by reducing the liability of Codacy GitHub App, as it no longer requests [read and write repository permissions for Administration](https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-administration).
+This change translates into important security improvements:
+
+-   It reduces the liability of the Codacy GitHub App, as it no longer requests [read and write repository permissions for Administration](https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-administration).
+-   Contrary to SSH keys, [installation access tokens](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app#about-installation-access-tokens) expire after one hour and Codacy loses access when the GitHub App is uninstalled.
+
+To minimize any impact, Codacy is now deprecating the usage of repository SSH keys and will delete them from our systems only at a later stage. [See the rollout timeline](#timeline) for more details.
+
+## Changes on the Codacy GitHub App required permissions {: id="changes-permissions"}
+
+To use installation access tokens, the Codacy GitHub App now requires [repository read permissions for Contents](https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-contents).
+
+On the other hand, the Codacy GitHub App no longer requires [read and write repository permissions for Administration](https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-administration). This permission will be removed from the Codacy GitHub App according to the [rollout timeline](#timeline).
 
 ## What do you need to do if you have a GitHub organization? {: id="to-do"}
 
 Make sure an organization owner [approves the updated permissions for the Codacy GitHub App](https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps) on your GitHub organization, if not done yet.
 
-To use installation access tokens, the Codacy GitHub App requires [repository read permissions for Contents](https://docs.github.com/en/rest/authentication/permissions-required-for-github-apps?apiVersion=2022-11-28#repository-permissions-for-contents). Thus, organization owners will be notified to review a request for this additional permission:
+Codacy has been requesting this permission since September 2023. Organization owners should had received a GitHub notification to review a request for this additional permission:
 
 ![Codacy GitHub App updated permissions request](../images/2023-12-DD-gh-updated-permissions.png)
 
 If you have any questions or need help, please contact <mailto:support@codacy.com>.
 
-## Removal of repository permissions for Administration
+## Removal of repository permissions for Administration and SSH keys {: id="timeline"}
 
-To ensure the [Codacy GitHub App updated permissions are approved](#to-do) on your GitHub organization before the removal of repository permissions for Administration, Codacy will execute a phased rollout according to the timeline below:
+To ensure the conditions to use installation access tokens on GitHub organizations are met before the removal of repository permissions for Administration and SSH keys, Codacy will execute a phased rollout according to the timeline below:
 
 <table>
   <thead>
