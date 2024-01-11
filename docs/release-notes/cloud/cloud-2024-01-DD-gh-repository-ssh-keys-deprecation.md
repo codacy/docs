@@ -45,9 +45,9 @@ To ensure the conditions to use installation access tokens on GitHub organizatio
   <tbody>
     <tr>
       <td>January DD, 2024</td><!--TODO PLUTO-802 Update release date-->
-      <td>Codacy started using installation access tokens to clone and integrate with your repositories, and deprecated the usage of repositories SSH keys</td>
+      <td>Codacy started using installation access tokens to clone and integrate with your repositories, and deprecated the usage of repository SSH keys</td>
       <td>
-        <p>From this day on, repositories SSH keys are used exclusively as a fallback mechanism when the Contents permission is missing.</p>
+        <p>From this day on, repository SSH keys are used exclusively as a fallback mechanism when the Contents permission is missing.</p>
         <p>If not done yet, make sure an organization owner <a href="#to-do">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</p>
       </td>
     </tr>
