@@ -32,4 +32,5 @@ The CR line end control character was used by older Classic Mac OS systems, and 
     -   [Configuring Git to handle line endings](https://docs.github.com/en/get-started/getting-started-with-git/configuring-git-to-handle-line-endings)
     -   [Mind the End of Your Line](https://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/)
 
+Test contraction suggestion: we are something.
 Test forbidden words: cripple
