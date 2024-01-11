@@ -26,7 +26,7 @@ On the other hand, the Codacy GitHub App no longer requires [read and write repo
 
 Make sure an organization owner [approves the updated permissions for the Codacy GitHub App](https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps) on your GitHub organization, if not done yet.
 
-Codacy has been requesting repository read permissions for **Contents** since September 2023. Organization owners should had received a GitHub notification to review a request for this additional permission:
+Codacy has been requesting repository read permissions for **Contents** since September 2023. Organization owners should have received a GitHub notification to review a request for this additional permission:
 
 ![Codacy GitHub App updated permissions request](../images/2023-12-DD-gh-updated-permissions.png)<!--TODO PLUTO-802 Rename image-->
 
