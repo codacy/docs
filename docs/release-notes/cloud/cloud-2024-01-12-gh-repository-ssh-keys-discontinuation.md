@@ -64,7 +64,7 @@ To ensure the conditions to use installation access tokens on GitHub organizatio
       <td>Codacy will remove repository permissions for Administration from the Codacy GitHub App and stop using repository SSH keys</td>
       <td>
         <p>Codacy will start using installation access tokens to clone and integrate with your repositories, with no fallback mechanisms. Also, repository permissions for Administration will be removed from the Codacy GitHub App.</p>
-        <p>If on this day the Codacy GitHub App updated permissions haven't been approved on your GitHub organization yet, your Codacy quality analysis will fail and you'll not be able to add new repositories to Codacy until an organization owner <a href="#to-do">approves the updated permissions.</a></p>
+        <p>If on this day the Codacy GitHub App updated permissions haven't been approved on your GitHub organization yet, your Codacy quality analysis will fail and you'll not be able to add new repositories to Codacy until an organization owner <a href="#to-do">approves the updated permissions</a>.</p>
       </td>
     </tr>
     <tr>
@@ -72,6 +72,7 @@ To ensure the conditions to use installation access tokens on GitHub organizatio
       <td>Codacy will no longer store repository SSH keys</td>
       <td>
         <p>On this day, Codacy will delete all the repository SSH keys stored in our systems.</p>
+        <p>For increased security, you can <a href="https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-deploy-keys">revoke the keys created by Codacy on your GitHub repository</a>.</p>
       </td>
     </tr>
   </tbody>
