@@ -18,7 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2024
 
--   [Deprecation of SSH keys for GitHub repositories January DD, 2024](cloud/cloud-2024-01-12-gh-repository-ssh-keys-discontinuation.md)
+-   [Discontinuation of SSH keys for GitHub repositories January 12, 2024](cloud/cloud-2024-01-12-gh-repository-ssh-keys-discontinuation.md)
 
 2023
 
