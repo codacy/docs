@@ -142,22 +142,24 @@ On December 7th 2023 we set the new Coverage engine to post coverage summaries t
 
 On December 27th 2023 we set the [diff tab of the Coverage pull requests page](../../repositories-coverage/pull-requests.md#diff-tab) to get data from the new Coverage engine.
 
-## Differences in coverage metrics between the old and new Coverage engines
+## Missing data and differences in reported metrics
 
-You may notice some differences in the coverage metrics reported by the old and new Coverage engines and may need to update your [coverage gate rules](../../repositories-configure/adjusting-quality-gates.md) accordingly. This may happen because the new Coverage engine calculates coverage metrics considering all the files included in the coverage report, while the old Coverage engine ignores some files:
+### Missing data on the Coverage Pull request page {: id="differences-in-coverage-metrics-between-the-coverage-and-quality-pull-request-pages" }
 
--   The old Coverage engine ignores any files on a coverage report that aren't present on the repository on that given commit.
--   The old Coverage engine may ignore additional files since it shares [ignore rules](../../repositories-configure/ignoring-files.md) with the Codacy analysis engine.
+You may notice missing coverage data on the [Coverage Pull requests page](../../repositories-coverage/pull-requests.md) for older pull requests when compared to the coverage data shown on the [Quality Pull requests page](../../repositories/pull-requests.md). This may happen due to a number of reasons:
 
-## Differences in coverage metrics between the Coverage and Quality pull request pages
+-   GitHub only: The new Coverage service requires updated app permissions to calculate coverage data. If you haven't done so yet, please [review and accept the updated Codacy app permissions](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions) on GitHub and re-analyze the pull request by pushing an empty commit.
 
-You may notice some differences in the coverage metrics reported by the [Coverage Pull requests page](../../repositories-coverage/pull-requests.md) and [Quality Pull requests page](../../repositories/pull-requests.md). This may happen due to a number of reasons:
-
--   The latest commit to the pull request was pushed before the new Coverage engine was enabled. To resolve this, please re-analyze the pull request by pushing an empty commit:
+-   The data may be missing because the latest commit to the pull request was pushed before the new Coverage engine was enabled. To resolve this, please re-analyze the pull request by pushing an empty commit:
 
     ```bash
     git commit --allow-empty -m "Trigger analysis"
     git push
     ```
 
--   GitHub only: The new Coverage service requires updated app permissions. If you haven't done so yet, please [review and accept the updated Codacy app permissions](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions) on GitHub and re-analyze the pull request by pushing an empty commit.
+### Differences in coverage metrics between the old and new Coverage engines {: id="differences-in-coverage-metrics-between-the-old-and-new-coverage-engines"}
+
+You may notice some differences in the coverage metrics reported by the old and new Coverage engines and may need to update your [coverage gate rules](../../repositories-configure/adjusting-quality-gates.md) accordingly. This may happen because the new Coverage engine calculates coverage metrics considering all the files included in the coverage report, while the old Coverage engine ignores some files:
+
+-   The old Coverage engine ignores any files on a coverage report that aren't present on the repository on that given commit.
+-   The old Coverage engine may ignore additional files since it shares [ignore rules](../../repositories-configure/ignoring-files.md) with the Codacy analysis engine.
