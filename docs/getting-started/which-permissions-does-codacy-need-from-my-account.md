@@ -207,7 +207,7 @@ If you need to use an integration that you have previously revoked, log in again
 ## Why does Codacy ask for permission to create SSH keys?
 
 !!! note
-    **GitHub only:** Codacy started using [installation access tokens](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app#about-installation-access-tokens) instead of SSH keys to integrate with your GitHub repositories and clone them. SSH keys are currently used as a fallback mechanism when the [Contents permission](#github-cloud) isn't available. For more information, [see the deprecation notice of SSH keys for GitHub repositories](../release-notes/cloud/cloud-2024-01-12-gh-repository-ssh-keys-discontinuation.md).
+    **GitHub only:** Codacy started using [installation access tokens](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app#about-installation-access-tokens) instead of SSH keys to integrate with your GitHub repositories and clone them. SSH keys are currently used as a fallback mechanism when the [Contents permission](#github-cloud) isn't available. For more information, [see the discontinuation notice of SSH keys for GitHub repositories](../release-notes/cloud/cloud-2024-01-12-gh-repository-ssh-keys-discontinuation.md).
 
     To ensure Codacy keeps working correctly, make sure an organization owner [approves Codacy GitHub App updated permissions](https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps) on your GitHub organization.
 
