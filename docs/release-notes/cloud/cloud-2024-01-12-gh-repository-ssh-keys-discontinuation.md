@@ -3,7 +3,7 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Discontinuation of SSH keys for GitHub repositories January 12, 2024
+# Discontinuation of SSH keys for GitHub repositories January 15, 2024
 
 !!! info "This release note applies only to GitHub"
 
@@ -44,7 +44,7 @@ To ensure the conditions to use installation access tokens on GitHub organizatio
   </thead>
   <tbody>
     <tr>
-      <td>January 12, 2024</td>
+      <td>January 15, 2024</td>
       <td>Codacy started using installation access tokens to clone and integrate with your repositories</td>
       <td>
         <p>From this day on, repository SSH keys are used exclusively as a fallback mechanism when the Contents permission is missing.</p>
