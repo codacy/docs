@@ -140,6 +140,7 @@ https://docs.codacy.com/release-notes/cloud/cloud-2023-11-13-jira-slack-webhooks
 https://docs.codacy.com/release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/,"As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we've been working on a new Coverage engine and started its deployment on November 23rd, 2023. The rollout to use the new engine across Codacy will be phased across several months and will gradually impact the coverage data you see on the Git provider, UI, and API."
 https://docs.codacy.com/release-notes/cloud/cloud-2023-11/,Release notes for Codacy Cloud November 2023.
 https://docs.codacy.com/release-notes/cloud/cloud-2023-12/,Release notes for Codacy Cloud December 2023.
+https://docs.codacy.com/release-notes/cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation/,"For increased security, Codacy is discontinuing the usage of repository SSH keys for Git operations on GitHub in favor of installation access tokens."
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.0/,Release notes for Codacy Self-hosted v1.0.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.1/,Release notes for Codacy Self-hosted v1.0.1.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.1.0/,Release notes for Codacy Self-hosted v1.1.0.

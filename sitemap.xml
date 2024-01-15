@@ -706,6 +706,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.codacy.com/release-notes/cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation/</loc>
+         <lastmod>2024-01-15</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.0/</loc>
          <lastmod>2024-01-15</lastmod>
          <changefreq>daily</changefreq>
