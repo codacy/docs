@@ -6,7 +6,7 @@ description: Enable the Bitbucket integration to have pull request status, comme
 
 The Bitbucket integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your pull requests.
 
-When this integration is enabled, you can also create pull request comments directly from Codacy when browsing the existing repository issues on the [commit issue tabs](../../repositories/commits.md#issues-tabs), [pull request issue tabs](../../repositories/pull-requests.md#issues-tabs), or the [Security monitor](../../repositories/security-monitor.md):
+When this integration is enabled, you can also create pull request comments directly from Codacy when browsing the existing repository issues on the [commit issue tabs](../../repositories/commits.md#issues-tabs), [pull request issue tabs](../../repositories/pull-requests.md#issues-tabs), or the [Security monitor](../../repositories/security-monitor.md):<!--TODO CY-6642 Check if this is still true-->
 
 ![Bitbucket integration for issues](images/bitbucket-integration-issues.png)
 
@@ -14,9 +14,9 @@ When this integration is enabled, you can also create pull request comments dire
 
 To enable the Bitbucket integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, Codacy enables the integration using the [default settings for your organization](../../organizations/integrations/default-git-provider-integration-settings.md).
 
-![Bitbucket integration](images/bitbucket-integration.png)
+![Bitbucket integration](images/bitbucket-integration.png)<!--TODO CY-6642 Update screenshot-->
 
-If you remove the integration, you can enable it again as follows:
+If you remove the integration, you can enable it again as follows:<!--TODO CY-6642 This will change, as we won't allow users to delete the integration-->
 
 1.  Click the button **Add integration** and select **Bitbucket** on the list.
 1.  Click the button **Enable** and follow the instructions.

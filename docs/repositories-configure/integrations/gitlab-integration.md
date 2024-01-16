@@ -10,9 +10,9 @@ The GitLab integration incorporates Codacy on your existing Git provider workflo
 
 To enable the GitLab integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, Codacy enables the integration using the [default settings for your organization](../../organizations/integrations/default-git-provider-integration-settings.md).
 
-![GitLab integration](images/gitlab-integration.png)
+![GitLab integration](images/gitlab-integration.png)<!--TODO CY-6642 Update screenshot-->
 
-If you remove the integration, you can enable it again as follows:
+If you remove the integration, you can enable it again as follows:<!--TODO CY-6642 This will change, as we won't allow users to delete the integration-->
 
 1.  Click the button **Add integration** and select **GitLab** on the list.
 1.  Click the button **Enable** and follow the instructions.

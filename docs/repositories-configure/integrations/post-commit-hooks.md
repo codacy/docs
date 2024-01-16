@@ -1,5 +1,7 @@
 # Post-commit hooks
 
+<!--TODO CY-6642 This page needs a complete review-->
+
 For Codacy to check updates in your repository (new commits and pull requests) you must have post-commit hooks enabled.
 
 There are two ways to do this: **automatically** or **manually**
