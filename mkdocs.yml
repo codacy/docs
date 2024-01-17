@@ -545,6 +545,7 @@ plugins:
               "organizations/using-a-coding-standard.md": "organizations/using-coding-standards.md"
               "repositories-configure/adjusting-quality-settings.md": "repositories-configure/adjusting-quality-gates.md"
               "organizations/configuring-default-git-provider-integration-settings.md": "organizations/integrations/default-git-provider-integration-settings.md"
+              "codacy-api/examples/creating-project-api-tokens-programmatically.md": "codacy-api/examples/creating-repository-api-tokens-programmatically.md"
 
 nav:
     - Documentation home: "index.md"
@@ -619,7 +620,7 @@ nav:
           - Examples:
                 - codacy-api/examples/adding-people-to-codacy-programmatically.md
                 - codacy-api/examples/adding-repositories-to-codacy-programmatically.md
-                - codacy-api/examples/creating-project-api-tokens-programmatically.md
+                - codacy-api/examples/creating-repository-api-tokens-programmatically.md
                 - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
                 - codacy-api/examples/obtaining-current-issues-in-repositories.md
                 - codacy-api/examples/identifying-commits-without-coverage-data.md

@@ -23,7 +23,7 @@ Account API tokens are defined at the **Codacy user account level**. Each accoun
 
     Use a dedicated service account to integrate Codacy with your repositories. This prevents disruption of service if the user who created an account API token loses access to the repositories, which may happen when a user leaves the team or the organization.
 
-You can create new account API tokens programmatically [using the Codacy API](examples/creating-project-api-tokens-programmatically.md) or using the Codacy UI:
+You can create new account API tokens programmatically [using the Codacy API](examples/creating-repository-api-tokens-programmatically.md) or using the Codacy UI:
 
 1.  Open your account, tab **Access management**.
 
@@ -42,7 +42,7 @@ To revoke an account API token, click the "X" next to the token. After this, all
 
 Repository API tokens are defined on **individual repositories**. Each repository API token only authorizes access to the corresponding repository.
 
-You can create new repository API tokens programmatically [using the Codacy API](examples/creating-project-api-tokens-programmatically.md) or using the Codacy UI:
+You can create new repository API tokens programmatically [using the Codacy API](examples/creating-repository-api-tokens-programmatically.md) or using the Codacy UI:
 
 1.  Open your repository **Settings**, tab **Integrations**.
 
@@ -59,4 +59,4 @@ To revoke a repository API token, click the "X" next to the token. After this, a
 
 -   [Adding coverage to your repository](../coverage-reporter/index.md)
 -   [Client-side tools](../repositories-configure/local-analysis/client-side-tools.md)
--   [Creating repository API tokens programmatically](examples/creating-project-api-tokens-programmatically.md)<!--TODO CY-6642 Update page name-->
+-   [Creating repository API tokens programmatically](examples/creating-repository-api-tokens-programmatically.md)<!--TODO CY-6642 Update page name-->
