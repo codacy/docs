@@ -44,18 +44,16 @@ Repository API tokens are defined on **individual repositories**. Each repositor
 
 You can create new repository API tokens programmatically [using the Codacy API](examples/creating-project-api-tokens-programmatically.md) or using the Codacy UI:
 
-1.  Open your repository **Settings**, tab **Integrations**.<!--TODO CY-6642 Update the procedure-->
+1.  Open your repository **Settings**, tab **Integrations**.
 
-1.  Click the button **Add integration** and add a **Project API** integration.
-
-1.  Click the button **Settings** on the **Project API** integration and copy the project API token.
+1.  Click the button **Create API token** under **Repository API tokens**.
 
     !!! tip
         You can create multiple (up to 100) API tokens per repository. This can be useful to have a more flexible control by revoking only a specific token.
 
     ![Creating a repository API token](images/codacy-api-tokens-project.png)<!--TODO CY-6642 Update screenshot-->
 
-To revoke a repository API token, click the trash can icon for the corresponding **Project API** integration. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
+To revoke a repository API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
 
 ## See also
 
