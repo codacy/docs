@@ -659,6 +659,8 @@ nav:
     - Release notes:
           - release-notes/index.md
           - Cloud:
+                - 2024:
+                      - release-notes/cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation.md
                 - 2023:
                       - release-notes/cloud/cloud-2023-12.md
                       - release-notes/cloud/cloud-2023-11.md
