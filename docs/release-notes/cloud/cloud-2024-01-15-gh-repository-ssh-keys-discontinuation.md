@@ -28,7 +28,7 @@ Make sure an organization owner [approves the updated permissions for the Codacy
 
 Codacy has been requesting repository read permissions for **Contents** since September 2023. Organization owners should have received a GitHub notification to review a request for this additional permission:
 
-![Codacy GitHub App updated permissions request](../images/2023-12-DD-gh-updated-permissions.png)<!--TODO PLUTO-802 Rename image-->
+![Codacy GitHub App updated permissions request](../images/2024-01-15-gh-updated-permissions.png)
 
 If you have any questions or need help, please contact <mailto:support@codacy.com>.
 
