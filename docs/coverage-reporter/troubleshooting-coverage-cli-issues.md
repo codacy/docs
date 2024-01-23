@@ -13,6 +13,7 @@ The sections below provide instructions or workarounds to overcome common issues
 -   [coverage-xml/index.xml generated an empty result](#coverage-xmlindexxml-generated-an-empty-result)
 -   [JsonParseException while uploading coverage data](#jsonparseexception-while-uploading-coverage-data)
 -   [MalformedInputException while parsing report](#malformedinputexception-while-parsing-report)
+-   [No coverage data was sent](#no-coverage-data-was-sent)
 -   [Report generated an empty result while uploading C# coverage data](#detailedxml)
 -   [SubstrateSegfaultHandler caught signal 11](#substratesegfaulthandler-caught-signal-11)
 
@@ -115,6 +116,16 @@ There are some ways you can solve this:
 If you get a `java.nio.charset.MalformedInputException` when running the Codacy Coverage Reporter it means that the coverage report includes a character that's not encoded in UTF-8. The invalid character can belong to the file name of one of your source code files, or even a class or method name.
 
 For maximum compatibility of your coverage reports with the Codacy Coverage Reporter, make sure that your coverage reports use UTF-8 encoding and that they only include UTF-8 characters.
+
+## No coverage data was sent
+
+You can get the `No coverage data was sent` error when running the Codacy Coverage Reporter for the following reasons:
+
+-   The coverage report doesn't include any coverage data.
+-   The coverage report only includes data for files that don't exist in the associated Git repository. In this case, you also get one or more warnings `File: [filename] will be discarded and will not be considered for coverage calculation`.
+
+!!! note
+    If you upload multiple coverage reports and at least one contains valid data, the Codacy Coverage Reporter uploads the valid reports and ignores the invalid ones.
 
 ## Report generated an empty result while uploading C# coverage data {: id="detailedxml"}
 
