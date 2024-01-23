@@ -4,7 +4,40 @@ description: Instructions or workarounds to overcome common issues while using C
 
 # Troubleshooting coverage CLI issues
 
-The sections below provide instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI.
+The sections below provide instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI:
+
+-   [Can't guess any report due to no matching](#cant-guess-any-report-due-to-no-matching)
+-   [Can't validate checksum](#checksum)
+-   [Commit SHA-1 hash detection](#commit-detection)
+-   [Connect timed out while uploading coverage data](#connect-timed-out-while-uploading-coverage-data)
+-   [coverage-xml/index.xml generated an empty result](#coverage-xmlindexxml-generated-an-empty-result)
+-   [JsonParseException while uploading coverage data](#jsonparseexception-while-uploading-coverage-data)
+-   [MalformedInputException while parsing report](#malformedinputexception-while-parsing-report)
+-   [No coverage data was sent](#no-coverage-data-was-sent)
+-   [Report generated an empty result while uploading C# coverage data](#detailedxml)
+-   [SubstrateSegfaultHandler caught signal 11](#substratesegfaulthandler-caught-signal-11)
+
+## Can't guess any report due to no matching
+
+Codacy Coverage Reporter automatically searches for coverage reports matching the [file name conventions for supported formats](index.md#generating-coverage).
+
+However, if Codacy Coverage Reporter doesn't find your coverage report, you can explicitly define the report file name with the flag `-r`. For example:
+
+```bash
+bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r <coverage report file name>
+```
+
+## Can't validate checksum {: id="checksum"}
+
+Starting on version [13.0.0](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.0.0) the `get.sh` script automatically validates the checksum of the downloaded Codacy Coverage Reporter binary. This requires having either the `sha512sum` or `shasum` command on the operating system where you're running the script.
+
+If you're getting this error while uploading your coverage data to Codacy, install the correct version of `sha512sum` or `shasum` for the operating system that you're using.
+
+You can also skip validating the checksum of the binary by defining the following environment variable, however, Codacy doesn't recommend this:
+
+```bash
+export CODACY_REPORTER_SKIP_CHECKSUM=true
+```
 
 ## Commit SHA-1 hash detection {: id="commit-detection"}
 
@@ -42,23 +75,25 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
     --commit-uuid cd4d000083a744cf1617d46af4ec108b79e06bed
 ```
 
-## Can't guess any report due to no matching
+## Connect timed out while uploading coverage data
 
-Codacy Coverage Reporter automatically searches for coverage reports matching the [file name conventions for supported formats](index.md#generating-coverage).
+If you get a `Error doing a post to <...> connect timed out` error while uploading your coverage data to Codacy it means that the Codacy Coverage Reporter is timing out while connecting to the Codacy API. This typically happens if you're uploading coverage data for larger repositories.
 
-However, if Codacy Coverage Reporter doesn't find your coverage report, you can explicitly define the report file name with the flag `-r`. For example:
-
-```bash
-bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r <coverage report file name>
-```
-
-## Report generated an empty result while uploading C# coverage data {: id="detailedxml"}
-
-If you're using <span class="skip-vale">dotCover</span> to generate coverage reports for your C# projects, you must use the <span class="skip-vale">dotCover</span> detailedXML report format as follows:
+To increase the default timeout while connecting to the Codacy API, use the flag `--http-timeout` to set a value larger than 10000 milliseconds. For example, to set the timeout to 30 seconds:
 
 ```bash
-dotCover.exe cover <...> --reportType=DetailedXml
+bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
+    -r report.xml \
+    --http-timeout 30000
 ```
+
+## coverage-xml/index.xml generated an empty result
+
+If you're using <span class="skip-vale">PHPUnit</span> version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the <span class="skip-vale">PHPUnit</span> XML format only for versions 4 and older.
+
+To change the output format replace the flag `--coverage-xml <dir>` with `--coverage-clover <file>` when executing <span class="skip-vale">`phpunit`</span>.
+
+See [<span class="skip-vale">PHPUnit</span> command-line documentation](https://phpunit.readthedocs.io/en/10.0/textui.html) for more information.
 
 ## JsonParseException while uploading coverage data
 
@@ -76,23 +111,31 @@ There are some ways you can solve this:
 
     By default, <span class="skip-vale">dotCover</span> includes <span class="skip-vale">xUnit</span> files in the coverage analysis and this results in larger coverage reports. This filter helps ensure that the resulting coverage data doesn't exceed the size limit accepted by the Codacy API when uploading the results.
 
-## Connect timed out while uploading coverage data
-
-If you get a `Error doing a post to <...> connect timed out` error while uploading your coverage data to Codacy it means that the Codacy Coverage Reporter is timing out while connecting to the Codacy API. This typically happens if you're uploading coverage data for larger repositories.
-
-To increase the default timeout while connecting to the Codacy API, use the flag `--http-timeout` to set a value larger than 10000 milliseconds. For example, to set the timeout to 30 seconds:
-
-```bash
-bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
-    -r report.xml \
-    --http-timeout 30000
-```
-
 ## MalformedInputException while parsing report
 
 If you get a `java.nio.charset.MalformedInputException` when running the Codacy Coverage Reporter it means that the coverage report includes a character that's not encoded in UTF-8. The invalid character can belong to the file name of one of your source code files, or even a class or method name.
 
 For maximum compatibility of your coverage reports with the Codacy Coverage Reporter, make sure that your coverage reports use UTF-8 encoding and that they only include UTF-8 characters.
+
+## No coverage data was sent
+
+You can get the `No coverage data was sent` error when running the Codacy Coverage Reporter for the following reasons:
+
+-   The coverage report doesn't include any coverage data.
+-   The coverage report only includes data for files that don't exist in the associated Git repository. In this case, you also get one or more warnings `File: [filename] will be discarded and will not be considered for coverage calculation`.
+
+Make sure that your coverage report isn't empty and that it includes coverage data for files in the associated Git repository.
+
+!!! note
+    If you upload multiple coverage reports and at least one contains valid data, the Codacy Coverage Reporter uploads the valid reports and ignores the invalid ones.
+
+## Report generated an empty result while uploading C# coverage data {: id="detailedxml"}
+
+If you're using <span class="skip-vale">dotCover</span> to generate coverage reports for your C# projects, you must use the <span class="skip-vale">dotCover</span> detailedXML report format as follows:
+
+```bash
+dotCover.exe cover <...> --reportType=DetailedXml
+```
 
 ## SubstrateSegfaultHandler caught signal 11
 
@@ -102,22 +145,3 @@ If you're experiencing segmentation faults when uploading the coverage results d
 echo "$(dig +short api.codacy.com | tail -n1) api.codacy.com" >> /etc/hosts
 ```
 
-## coverage-xml/index.xml generated an empty result
-
-If you're using <span class="skip-vale">PHPUnit</span> version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the <span class="skip-vale">PHPUnit</span> XML format only for versions 4 and older.
-
-To change the output format replace the flag `--coverage-xml <dir>` with `--coverage-clover <file>` when executing <span class="skip-vale">`phpunit`</span>.
-
-See [<span class="skip-vale">PHPUnit</span> command-line documentation](https://phpunit.readthedocs.io/en/10.0/textui.html) for more information.
-
-## Can't validate checksum {: id="checksum"}
-
-Starting on version [13.0.0](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.0.0) the `get.sh` script automatically validates the checksum of the downloaded Codacy Coverage Reporter binary. This requires having either the `sha512sum` or `shasum` command on the operating system where you're running the script.
-
-If you're getting this error while uploading your coverage data to Codacy, install the correct version of `sha512sum` or `shasum` for the operating system that you're using.
-
-You can also skip validating the checksum of the binary by defining the following environment variable, however, Codacy doesn't recommend this:
-
-```bash
-export CODACY_REPORTER_SKIP_CHECKSUM=true
-```
