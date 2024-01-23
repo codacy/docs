@@ -8,13 +8,13 @@ To manage the email addresses associated with your account and your email notifi
 
 Codacy automatically links to your Codacy account the email addresses from the Git provider associated with your current session. On the **Emails** page, you can verify which email addresses are linked to your Codacy account.
 
-<!--TODO PLUTO-852 Add email privacy information-->
-
 To update the email addresses associated with your Codacy account, do the following:
 
 1.  [Configure your Git email address](#git-config). This ensures that commits are attributed to you.
 
 1.  Update your email addresses on your Git provider ([GitHub](https://docs.github.com/en/enterprise-cloud@latest/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account), [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/set-email-aliases/), or [GitLab](https://docs.gitlab.com/ee/user/profile/#add-emails-to-your-user-profile)).
+
+    For **GitHub**, Codacy respects your choice to keep your [email addresses private](#emails-visibility).
 
 1.  Log out and log back in to Codacy.
 
@@ -42,6 +42,16 @@ git config --global user.email you@example.com
 
 !!! important
     Make sure that your email address doesn't include any extra characters such as quotes (`""` or `''`).
+
+### Emails visibility
+
+!!! info "This section applies only to GitHub"
+
+When you login to Codacy using GitHub, Codacy respects your choice to [keep your email addresses private](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address) by not showing your private email addresses on lists and not using them for search filters.
+
+On the **Emails** page, you can verify the visibility of each email address linked to your Codacy account, `Private` or `Public`. Make sure your Codacy **default** email address is public.<!--TODO PLUTO-852 Clarify why the default email must be public-->
+
+![Email privacy](images/emails-privacy.png)<!--TODO PLUTO-852 Update screenshot-->
 
 ## Managing your email notifications
 
