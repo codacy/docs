@@ -4,7 +4,17 @@ description: Instructions or workarounds to overcome common issues while using C
 
 # Troubleshooting coverage CLI issues
 
-The sections below provide instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI.
+The sections below provide instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI:
+
+-   [Can't guess any report due to no matching](#cant-guess-any-report-due-to-no-matching)
+-   [Can't validate checksum](#checksum)
+-   [Commit SHA-1 hash detection](#commit-detection)
+-   [Connect timed out while uploading coverage data](#connect-timed-out-while-uploading-coverage-data)
+-   [coverage-xml/index.xml generated an empty result](#coverage-xmlindexxml-generated-an-empty-result)
+-   [JsonParseException while uploading coverage data](#jsonparseexception-while-uploading-coverage-data)
+-   [MalformedInputException while parsing report](#malformedinputexception-while-parsing-report)
+-   [Report generated an empty result while uploading C# coverage data](#detailedxml)
+-   [SubstrateSegfaultHandler caught signal 11](#substratesegfaulthandler-caught-signal-11)
 
 ## Can't guess any report due to no matching
 
