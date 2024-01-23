@@ -124,7 +124,7 @@ You can get the `No coverage data was sent` error when running the Codacy Covera
 -   The coverage report doesn't include any coverage data.
 -   The coverage report only includes data for files that don't exist in the associated Git repository. In this case, you also get one or more warnings `File: [filename] will be discarded and will not be considered for coverage calculation`.
 
-Make sure that your coverage report is not empty and that it includes coverage data for files in the associated Git repository.
+Make sure that your coverage report isn't empty and that it includes coverage data for files in the associated Git repository.
 
 !!! note
     If you upload multiple coverage reports and at least one contains valid data, the Codacy Coverage Reporter uploads the valid reports and ignores the invalid ones.
