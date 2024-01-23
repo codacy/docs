@@ -8,6 +8,8 @@ To manage the email addresses associated with your account and your email notifi
 
 Codacy automatically links to your Codacy account the email addresses from the Git provider associated with your current session. On the **Emails** page, you can verify which email addresses are linked to your Codacy account.
 
+<!--TODO PLUTO-852 Add email privacy information-->
+
 To update the email addresses associated with your Codacy account, do the following:
 
 1.  [Configure your Git email address](#git-config). This ensures that commits are attributed to you.
