@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI.">
       
       
-        <meta http-equiv="last-modified" content="2023-02-06 12:11:57">
+        <meta http-equiv="last-modified" content="2024-01-23 15:20:52">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/troubleshooting-coverage-cli-issues/">
@@ -724,13 +724,6 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#commit-detection" class="md-nav__link">
-    Commit SHA-1 hash detection
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#cant-guess-any-report-due-to-no-matching" class="md-nav__link">
     Can't guess any report due to no matching
   </a>
@@ -738,15 +731,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#detailedxml" class="md-nav__link">
-    Report generated an empty result while uploading C# coverage data
+  <a href="#checksum" class="md-nav__link">
+    Can't validate checksum
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#jsonparseexception-while-uploading-coverage-data" class="md-nav__link">
-    JsonParseException while uploading coverage data
+  <a href="#commit-detection" class="md-nav__link">
+    Commit SHA-1 hash detection
   </a>
   
 </li>
@@ -759,20 +752,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#malformedinputexception-while-parsing-report" class="md-nav__link">
-    MalformedInputException while parsing report
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#substratesegfaulthandler-caught-signal-11" class="md-nav__link">
-    SubstrateSegfaultHandler caught signal 11
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#coverage-xmlindexxml-generated-an-empty-result" class="md-nav__link">
     coverage-xml/index.xml generated an empty result
   </a>
@@ -780,8 +759,36 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#checksum" class="md-nav__link">
-    Can't validate checksum
+  <a href="#jsonparseexception-while-uploading-coverage-data" class="md-nav__link">
+    JsonParseException while uploading coverage data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#malformedinputexception-while-parsing-report" class="md-nav__link">
+    MalformedInputException while parsing report
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#no-coverage-data-was-sent" class="md-nav__link">
+    No coverage data was sent
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#detailedxml" class="md-nav__link">
+    Report generated an empty result while uploading C# coverage data
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#substratesegfaulthandler-caught-signal-11" class="md-nav__link">
+    SubstrateSegfaultHandler caught signal 11
   </a>
   
 </li>
@@ -4121,7 +4128,30 @@
                 
                 
                 <h1 id="troubleshooting-coverage-cli-issues">Troubleshooting coverage CLI issues<a class="headerlink" href="#troubleshooting-coverage-cli-issues" title="Permanent link">#</a></h1>
-<p>The sections below provide instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI.</p>
+<p>The sections below provide instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI:</p>
+<ul>
+<li><a href="#cant-guess-any-report-due-to-no-matching">Can't guess any report due to no matching</a></li>
+<li><a href="#checksum">Can't validate checksum</a></li>
+<li><a href="#commit-detection">Commit SHA-1 hash detection</a></li>
+<li><a href="#connect-timed-out-while-uploading-coverage-data">Connect timed out while uploading coverage data</a></li>
+<li><a href="#coverage-xmlindexxml-generated-an-empty-result">coverage-xml/index.xml generated an empty result</a></li>
+<li><a href="#jsonparseexception-while-uploading-coverage-data">JsonParseException while uploading coverage data</a></li>
+<li><a href="#malformedinputexception-while-parsing-report">MalformedInputException while parsing report</a></li>
+<li><a href="#no-coverage-data-was-sent">No coverage data was sent</a></li>
+<li><a href="#detailedxml">Report generated an empty result while uploading C# coverage data</a></li>
+<li><a href="#substratesegfaulthandler-caught-signal-11">SubstrateSegfaultHandler caught signal 11</a></li>
+</ul>
+<h2 id="cant-guess-any-report-due-to-no-matching">Can't guess any report due to no matching<a class="headerlink" href="#cant-guess-any-report-due-to-no-matching" title="Permanent link">#</a></h2>
+<p>Codacy Coverage Reporter automatically searches for coverage reports matching the <a href="../#generating-coverage">file name conventions for supported formats</a>.</p>
+<p>However, if Codacy Coverage Reporter doesn't find your coverage report, you can explicitly define the report file name with the flag <code>-r</code>. For example:</p>
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span>-r<span class="w"> </span>&lt;coverage<span class="w"> </span>report<span class="w"> </span>file<span class="w"> </span>name&gt;
+</code></pre></div>
+<h2 id="checksum">Can't validate checksum<a class="headerlink" href="#checksum" title="Permanent link">#</a></h2>
+<p>Starting on version <a href="https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.0.0">13.0.0</a> the <code>get.sh</code> script automatically validates the checksum of the downloaded Codacy Coverage Reporter binary. This requires having either the <code>sha512sum</code> or <code>shasum</code> command on the operating system where you're running the script.</p>
+<p>If you're getting this error while uploading your coverage data to Codacy, install the correct version of <code>sha512sum</code> or <code>shasum</code> for the operating system that you're using.</p>
+<p>You can also skip validating the checksum of the binary by defining the following environment variable, however, Codacy doesn't recommend this:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_REPORTER_SKIP_CHECKSUM</span><span class="o">=</span><span class="nb">true</span>
+</code></pre></div>
 <h2 id="commit-detection">Commit SHA-1 hash detection<a class="headerlink" href="#commit-detection" title="Permanent link">#</a></h2>
 <p>The Codacy Coverage Reporter automatically detects the SHA-1 hash of the current commit to associate with the coverage data when you're using one of the following CI/CD platforms:</p>
 <ul>
@@ -4153,15 +4183,17 @@
 <span class="w">    </span>-r<span class="w"> </span>report.xml<span class="w"> </span><span class="se">\</span>
 <span class="w">    </span>--commit-uuid<span class="w"> </span>cd4d000083a744cf1617d46af4ec108b79e06bed
 </code></pre></div>
-<h2 id="cant-guess-any-report-due-to-no-matching">Can't guess any report due to no matching<a class="headerlink" href="#cant-guess-any-report-due-to-no-matching" title="Permanent link">#</a></h2>
-<p>Codacy Coverage Reporter automatically searches for coverage reports matching the <a href="../#generating-coverage">file name conventions for supported formats</a>.</p>
-<p>However, if Codacy Coverage Reporter doesn't find your coverage report, you can explicitly define the report file name with the flag <code>-r</code>. For example:</p>
-<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span>-r<span class="w"> </span>&lt;coverage<span class="w"> </span>report<span class="w"> </span>file<span class="w"> </span>name&gt;
+<h2 id="connect-timed-out-while-uploading-coverage-data">Connect timed out while uploading coverage data<a class="headerlink" href="#connect-timed-out-while-uploading-coverage-data" title="Permanent link">#</a></h2>
+<p>If you get a <code>Error doing a post to &lt;...&gt; connect timed out</code> error while uploading your coverage data to Codacy it means that the Codacy Coverage Reporter is timing out while connecting to the Codacy API. This typically happens if you're uploading coverage data for larger repositories.</p>
+<p>To increase the default timeout while connecting to the Codacy API, use the flag <code>--http-timeout</code> to set a value larger than 10000 milliseconds. For example, to set the timeout to 30 seconds:</p>
+<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>-r<span class="w"> </span>report.xml<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--http-timeout<span class="w"> </span><span class="m">30000</span>
 </code></pre></div>
-<h2 id="detailedxml">Report generated an empty result while uploading C# coverage data<a class="headerlink" href="#detailedxml" title="Permanent link">#</a></h2>
-<p>If you're using <span class="skip-vale">dotCover</span> to generate coverage reports for your C# projects, you must use the <span class="skip-vale">dotCover</span> detailedXML report format as follows:</p>
-<div class="highlight"><pre><span></span><code>dotCover.exe<span class="w"> </span>cover<span class="w"> </span>&lt;...&gt;<span class="w"> </span>--reportType<span class="o">=</span>DetailedXml
-</code></pre></div>
+<h2 id="coverage-xmlindexxml-generated-an-empty-result">coverage-xml/index.xml generated an empty result<a class="headerlink" href="#coverage-xmlindexxml-generated-an-empty-result" title="Permanent link">#</a></h2>
+<p>If you're using <span class="skip-vale">PHPUnit</span> version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the <span class="skip-vale">PHPUnit</span> XML format only for versions 4 and older.</p>
+<p>To change the output format replace the flag <code>--coverage-xml &lt;dir&gt;</code> with <code>--coverage-clover &lt;file&gt;</code> when executing <span class="skip-vale"><code>phpunit</code></span>.</p>
+<p>See <a href="https://phpunit.readthedocs.io/en/10.0/textui.html"><span class="skip-vale">PHPUnit</span> command-line documentation</a> for more information.</p>
 <h2 id="jsonparseexception-while-uploading-coverage-data">JsonParseException while uploading coverage data<a class="headerlink" href="#jsonparseexception-while-uploading-coverage-data" title="Permanent link">#</a></h2>
 <p>If you get a <code>com.fasterxml.jackson.core.JsonParseException</code> error while uploading your coverage data to Codacy it means that your coverage report is too big and that Codacy Coverage Reporter hit a limit of 10 MB when uploading the coverage data to Codacy.</p>
 <p>There are some ways you can solve this:</p>
@@ -4176,29 +4208,27 @@
 <p>By default, <span class="skip-vale">dotCover</span> includes <span class="skip-vale">xUnit</span> files in the coverage analysis and this results in larger coverage reports. This filter helps ensure that the resulting coverage data doesn't exceed the size limit accepted by the Codacy API when uploading the results.</p>
 </li>
 </ul>
-<h2 id="connect-timed-out-while-uploading-coverage-data">Connect timed out while uploading coverage data<a class="headerlink" href="#connect-timed-out-while-uploading-coverage-data" title="Permanent link">#</a></h2>
-<p>If you get a <code>Error doing a post to &lt;...&gt; connect timed out</code> error while uploading your coverage data to Codacy it means that the Codacy Coverage Reporter is timing out while connecting to the Codacy API. This typically happens if you're uploading coverage data for larger repositories.</p>
-<p>To increase the default timeout while connecting to the Codacy API, use the flag <code>--http-timeout</code> to set a value larger than 10000 milliseconds. For example, to set the timeout to 30 seconds:</p>
-<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>-r<span class="w"> </span>report.xml<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--http-timeout<span class="w"> </span><span class="m">30000</span>
-</code></pre></div>
 <h2 id="malformedinputexception-while-parsing-report">MalformedInputException while parsing report<a class="headerlink" href="#malformedinputexception-while-parsing-report" title="Permanent link">#</a></h2>
 <p>If you get a <code>java.nio.charset.MalformedInputException</code> when running the Codacy Coverage Reporter it means that the coverage report includes a character that's not encoded in UTF-8. The invalid character can belong to the file name of one of your source code files, or even a class or method name.</p>
 <p>For maximum compatibility of your coverage reports with the Codacy Coverage Reporter, make sure that your coverage reports use UTF-8 encoding and that they only include UTF-8 characters.</p>
+<h2 id="no-coverage-data-was-sent">No coverage data was sent<a class="headerlink" href="#no-coverage-data-was-sent" title="Permanent link">#</a></h2>
+<p>You can get the <code>No coverage data was sent</code> error when running the Codacy Coverage Reporter for the following reasons:</p>
+<ul>
+<li>The coverage report doesn't include any coverage data.</li>
+<li>The coverage report only includes data for files that don't exist in the associated Git repository. In this case, you also get one or more warnings <code>File: [filename] will be discarded and will not be considered for coverage calculation</code>.</li>
+</ul>
+<p>Make sure that your coverage report isn't empty and that it includes coverage data for files in the associated Git repository.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you upload multiple coverage reports and at least one contains valid data, the Codacy Coverage Reporter uploads the valid reports and ignores the invalid ones.</p>
+</div>
+<h2 id="detailedxml">Report generated an empty result while uploading C# coverage data<a class="headerlink" href="#detailedxml" title="Permanent link">#</a></h2>
+<p>If you're using <span class="skip-vale">dotCover</span> to generate coverage reports for your C# projects, you must use the <span class="skip-vale">dotCover</span> detailedXML report format as follows:</p>
+<div class="highlight"><pre><span></span><code>dotCover.exe<span class="w"> </span>cover<span class="w"> </span>&lt;...&gt;<span class="w"> </span>--reportType<span class="o">=</span>DetailedXml
+</code></pre></div>
 <h2 id="substratesegfaulthandler-caught-signal-11">SubstrateSegfaultHandler caught signal 11<a class="headerlink" href="#substratesegfaulthandler-caught-signal-11" title="Permanent link">#</a></h2>
 <p>If you're experiencing segmentation faults when uploading the coverage results due to <a href="https://github.com/oracle/graal/issues/624"><span class="skip-vale">oracle/graal#624</span></a>, execute the following command before running the reporter, as a workaround:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>dig<span class="w"> </span>+short<span class="w"> </span>api.codacy.com<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-n1<span class="k">)</span><span class="s2"> api.codacy.com&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/hosts
-</code></pre></div>
-<h2 id="coverage-xmlindexxml-generated-an-empty-result">coverage-xml/index.xml generated an empty result<a class="headerlink" href="#coverage-xmlindexxml-generated-an-empty-result" title="Permanent link">#</a></h2>
-<p>If you're using <span class="skip-vale">PHPUnit</span> version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the <span class="skip-vale">PHPUnit</span> XML format only for versions 4 and older.</p>
-<p>To change the output format replace the flag <code>--coverage-xml &lt;dir&gt;</code> with <code>--coverage-clover &lt;file&gt;</code> when executing <span class="skip-vale"><code>phpunit</code></span>.</p>
-<p>See <a href="https://phpunit.readthedocs.io/en/10.0/textui.html"><span class="skip-vale">PHPUnit</span> command-line documentation</a> for more information.</p>
-<h2 id="checksum">Can't validate checksum<a class="headerlink" href="#checksum" title="Permanent link">#</a></h2>
-<p>Starting on version <a href="https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.0.0">13.0.0</a> the <code>get.sh</code> script automatically validates the checksum of the downloaded Codacy Coverage Reporter binary. This requires having either the <code>sha512sum</code> or <code>shasum</code> command on the operating system where you're running the script.</p>
-<p>If you're getting this error while uploading your coverage data to Codacy, install the correct version of <code>sha512sum</code> or <code>shasum</code> for the operating system that you're using.</p>
-<p>You can also skip validating the checksum of the binary by defining the following environment variable, however, Codacy doesn't recommend this:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_REPORTER_SKIP_CHECKSUM</span><span class="o">=</span><span class="nb">true</span>
 </code></pre></div>
               
               
@@ -4356,7 +4386,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 6, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 23, 2024</span>
     
   </small>
 </div>
