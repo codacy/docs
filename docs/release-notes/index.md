@@ -16,6 +16,10 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Cloud release notes {: id="cloud"}
 
+2024
+
+-   [Discontinuation of SSH keys for GitHub repositories January 15, 2024](cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation.md)
+
 2023
 
 -   [Cloud December 2023](cloud/cloud-2023-12.md)
