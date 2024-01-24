@@ -6,7 +6,9 @@ description: Enable the GitLab integration to have merge request status, comment
 
 The GitLab integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your merge requests.
 
-## Enabling the GitLab integration {: id="enabling"}<!--TODO CY-6642 Review this section considering the new behaviour to refresh/re-assign integration-->
+## Enabling the GitLab integration {: id="enabling"}
+
+<!--TODO CY-6642 Review this section considering the new behaviour to refresh/re-assign integration-->
 
 To enable the GitLab integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, Codacy enables the integration using the [default settings for your organization](../../organizations/integrations/default-git-provider-integration-settings.md).
 
