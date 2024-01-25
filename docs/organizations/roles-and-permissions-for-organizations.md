@@ -18,6 +18,64 @@ Additionally, you can grant some administrative permissions to any organization 
 
 To list and manage the members of your Codacy organization, see the [Managing people](managing-people.md) page.
 
+## The organization manager role
+
+To enable other members to manage organization settings, organization admins can share some of their permissions with any organization member using the organization manager role. This role is independent of the Git provider roles of organization members.
+
+To review the additional permissions granted by the organization manager role, see the tables for each Git provider:
+
+-   [GitHub](#permissions-for-github)
+-   [GitLab](#permissions-for-gitlab)
+-   [Bitbucket](#permissions-for-bitbucket)
+
+!!! important
+    Organization managers can access the **Policies** and **Integrations** settings sections of your organization and can therefore impact some repository settings for all repositories of your organization, even repositories that they can't access on the Git provider. However, they can't access the repositories themselves and can only see the repository names.
+
+### Assigning the organization manager role
+
+To assign the organization manager role:
+
+1.  Open your organization **Settings**, page **Roles and permissions**.
+
+1.  In the **Organization managers** area, use the search field to find the relevant organization member and click the member's name.
+
+    !!! note
+        You can only assign the organization manager role to [members of your organization](./managing-people.md#joining).
+
+    ![Security and risk management access management](images/roles-permissions-organization-manager-assign.png)
+
+### Revoking the organization manager role
+
+To revoke the organization manager role:
+
+1.  Open your organization **Settings**, page **Roles and permissions**.
+
+1.  In the **Organization managers** area, scroll the list to find the relevant user.
+
+1.  Click the **Revoke role icon** to the right of the user's name and confirm.
+
+## Configuring who can change the analysis configuration {: id="change-analysis-configuration"}
+
+By default, only users with the Codacy role **repository write** can change analysis configurations.
+
+To change this, open your organization **Settings**, page **Roles and permissions**, and define the lowest Codacy role required to perform the following operations on the repositories of your organization:
+
+-   [Ignore issues](../repositories/issues.md#ignoring-and-managing-issues)
+-   [Ignore files](../repositories-configure/ignoring-files.md)
+-   [Configure code patterns](../repositories-configure/configuring-code-patterns.md)
+-   [Configure file extensions](../repositories-configure/file-extensions.md)
+-   [Manage branches](../repositories-configure/managing-branches.md)
+-   [Reanalyze branches and pull requests](../faq/repositories/how-do-i-reanalyze-my-repository.md)
+
+![Configuring who can change analysis configurations](images/roles-permissions-repo-management.png)
+
+!!! note
+    Codacy determines the role of each organization member from the role of that member on your Git provider:
+
+    -   [GitHub](#permissions-for-github)
+    -   [GitLab](#permissions-for-gitlab)
+    -   [Bitbucket](#permissions-for-bitbucket)
+
 ## Permissions for GitHub
 
 The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresponding Codacy roles and the operations that they're allowed to perform:
@@ -429,64 +487,6 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
 <sup>1</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.  
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).  
 <sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.
-
-## The organization manager role
-
-To enable other members to manage organization settings, organization admins can share some of their permissions with any organization member using the organization manager role. This role is independent of the Git provider roles of organization members.
-
-To review the additional permissions granted by the organization manager role, see the tables for each Git provider:
-
--   [GitHub](#permissions-for-github)
--   [GitLab](#permissions-for-gitlab)
--   [Bitbucket](#permissions-for-bitbucket)
-
-!!! important
-    Organization managers can access the **Policies** and **Integrations** settings sections of your organization and can therefore impact some repository settings for all repositories of your organization, even repositories that they can't access on the Git provider. However, they can't access the repositories themselves and can only see the repository names.
-
-### Assigning the organization manager role
-
-To assign the organization manager role:
-
-1.  Open your organization **Settings**, page **Roles and permissions**.
-
-1.  In the **Organization managers** area, use the search field to find the relevant organization member and click the member's name.
-
-    !!! note
-        You can only assign the organization manager role to [members of your organization](./managing-people.md#joining).
-
-    ![Security and risk management access management](images/roles-permissions-organization-manager-assign.png)
-
-### Revoking the organization manager role
-
-To revoke the organization manager role:
-
-1.  Open your organization **Settings**, page **Roles and permissions**.
-
-1.  In the **Organization managers** area, scroll the list to find the relevant user.
-
-1.  Click the **Revoke role icon** to the right of the user's name and confirm.
-
-## Configuring who can change the analysis configuration {: id="change-analysis-configuration"}
-
-By default, only users with the Codacy role **repository write** can change analysis configurations.
-
-To change this, open your organization **Settings**, page **Roles and permissions**, and define the lowest Codacy role required to perform the following operations on the repositories of your organization:
-
--   [Ignore issues](../repositories/issues.md#ignoring-and-managing-issues)
--   [Ignore files](../repositories-configure/ignoring-files.md)
--   [Configure code patterns](../repositories-configure/configuring-code-patterns.md)
--   [Configure file extensions](../repositories-configure/file-extensions.md)
--   [Manage branches](../repositories-configure/managing-branches.md)
--   [Reanalyze branches and pull requests](../faq/repositories/how-do-i-reanalyze-my-repository.md)
-
-![Configuring who can change analysis configurations](images/roles-permissions-repo-management.png)
-
-!!! note
-    Codacy determines the role of each organization member from the role of that member on your Git provider:
-
-    -   [GitHub](#permissions-for-github)
-    -   [GitLab](#permissions-for-gitlab)
-    -   [Bitbucket](#permissions-for-bitbucket)
 
 ## See also
 
