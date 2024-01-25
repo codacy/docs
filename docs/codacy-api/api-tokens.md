@@ -4,7 +4,7 @@ description: Create an account API token to authorize access to all the reposito
 
 # API tokens
 
-Codacy provides **account** and **repository**-level API tokens that allow you to:<!--TODO CY-6642 Replace project by repository-->
+Codacy provides **account** and **repository**-level API tokens that allow you to:
 
 -   [Upload coverage data](../coverage-reporter/index.md) to Codacy
 -   Upload to Codacy the results of [running client-side analysis tools](../repositories-configure/local-analysis/client-side-tools.md)
@@ -38,8 +38,6 @@ To revoke an account API token, click the "X" next to the token. After this, all
 
 ## Generating and revoking repository API tokens {: id="repository-api-tokens"}
 
-<!--TODO CY-6642 Replace project by repository-->
-
 Repository API tokens are defined on **individual repositories**. Each repository API token only authorizes access to the corresponding repository.
 
 You can create new repository API tokens programmatically [using the Codacy API](examples/creating-repository-api-tokens-programmatically.md) or using the Codacy UI:
@@ -59,4 +57,4 @@ To revoke a repository API token, click the "X" next to the token. After this, a
 
 -   [Adding coverage to your repository](../coverage-reporter/index.md)
 -   [Client-side tools](../repositories-configure/local-analysis/client-side-tools.md)
--   [Creating repository API tokens programmatically](examples/creating-repository-api-tokens-programmatically.md)<!--TODO CY-6642 Update page name-->
+-   [Creating repository API tokens programmatically](examples/creating-repository-api-tokens-programmatically.md)
