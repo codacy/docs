@@ -51,7 +51,7 @@ You can create new repository API tokens programmatically [using the Codacy API]
     !!! tip
         You can create multiple (up to 100) API tokens per repository. This can be useful to have a more flexible control by revoking only a specific token.
 
-    ![Creating a repository API token](images/codacy-api-tokens-project.png)<!--TODO CY-6642 Update screenshot-->
+    ![Creating a repository API token](images/codacy-api-tokens-repository.png)<!--TODO CY-6642 Update screenshot-->
 
 To revoke a repository API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
 
