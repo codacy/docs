@@ -36,7 +36,7 @@ You can create new account API tokens programmatically [using the Codacy API](ex
 
 To revoke an account API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
 
-## Generating and revoking repository API tokens {: id="project-api-tokens"}
+## Generating and revoking repository API tokens {: id="repository-api-tokens"}
 
 <!--TODO CY-6642 Replace project by repository-->
 
