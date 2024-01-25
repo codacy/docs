@@ -22,11 +22,7 @@ To list and manage the members of your Codacy organization, see the [Managing pe
 
 To enable other members to manage organization settings, organization admins can share some of their permissions with any organization member using the organization manager role. This role is independent of the Git provider roles of organization members.
 
-To review the additional permissions granted by the organization manager role, see the tables for each Git provider:
-
--   [GitHub](#permissions-for-github)
--   [GitLab](#permissions-for-gitlab)
--   [Bitbucket](#permissions-for-bitbucket)
+To review the additional permissions granted by the organization manager role, see the tables for each Git provider ([GitHub](#permissions-for-github), [GitLab](#permissions-for-gitlab), [Bitbucket](#permissions-for-bitbucket)).
 
 !!! important
     Organization managers can access the **Policies** and **Integrations** settings sections of your organization and can therefore impact some repository settings for all repositories of your organization, even repositories that they can't access on the Git provider. However, they can't access the repositories themselves and can only see the repository names.
