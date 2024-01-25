@@ -18,7 +18,6 @@ jobs:
         with:
           filter_mode: added
           debug: true
-          version: 2.30.0
         env:
           # Required
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
