@@ -77,9 +77,7 @@ severities
 ShellCheck
 SonarC#
 SonarVB
-SpotBugs
 SQLint
-Staticcheck
 Stylelint
 SwiftLint
 Tailor

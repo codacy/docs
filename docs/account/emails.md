@@ -55,3 +55,7 @@ Configure the notifications that you wish to receive under **Repository notifica
 
 !!! tip
     To turn off all email notifications, disable the settings **Per commit** and **Per pull request**.
+
+This is a test to confirm that Staticcheck triggers a Vale warning.
+
+This is a test to confirm that SpotBugs triggers a Vale warning.
