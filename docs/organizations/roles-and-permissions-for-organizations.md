@@ -4,17 +4,17 @@ description: List of operations that users can perform on Codacy depending on th
 
 # Roles and permissions for organizations
 
-By default, Codacy assigns each organization member a role corresponding to that member's role on your Git provider.
+By default, Codacy assigns each organization member a role corresponding to that member's role on your Git provider. Each Codacy role corresponds to a set of permissions that determine what the member can do on Codacy, from least capable (repository read) to most capable (organization admin).
 
-To update a member's role on Codacy, update that member's role directly on your Git provider. When next logging in to Codacy, the member is assigned the new role.
+Organization admins can also grant additional permissions to any organization member by [using the organization manager role](#the-organization-manager-role) and by [configuring who can change the analysis configuration](#change-analysis-configuration).
+
+To update a member's role on Codacy, update that member's role on your Git provider. When next logging in to Codacy, the member is assigned the new role.<!-- TODO is this task rather than intro/concept? --> 
 
 To review the permissions granted by each role, see the tables for each Git provider:
 
--   [GitHub](#permissions-for-github)
--   [GitLab](#permissions-for-gitlab)
--   [Bitbucket](#permissions-for-bitbucket)
-
-Additionally, you can grant some administrative permissions to any organization member independently of the member's role on the Git provider, using the [organization manager](#the-organization-manager-role) role.
+-   [Permissions for GitHub](#permissions-for-github)
+-   [Permissions for GitLab](#permissions-for-gitlab)
+-   [Permissions for Bitbucket](#permissions-for-bitbucket)
 
 To list and manage the members of your Codacy organization, see the [Managing people](managing-people.md) page.
 
