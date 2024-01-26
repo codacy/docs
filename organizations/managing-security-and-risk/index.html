@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira instance.">
       
       
-        <meta http-equiv="last-modified" content="2024-01-26 10:04:39">
+        <meta http-equiv="last-modified" content="2024-01-26 16:42:49">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -347,18 +347,6 @@
   <li class="md-nav__item">
     <a href="../../repositories/pull-requests/" title="Quality Pull Requests page" class="md-nav__link">
       Quality Pull Requests page
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
-    <a href="../../repositories/security-monitor/" title="Quality Security Monitor" class="md-nav__link">
-      Quality Security Monitor
     </a>
   </li>
 
@@ -1063,8 +1051,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#see-also" class="md-nav__link">
-    See also
+  <a href="#languages-checked-for-security-issues" class="md-nav__link">
+    Languages checked for security issues
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#supported-security-categories" class="md-nav__link">
+    Supported security categories
   </a>
   
 </li>
@@ -4273,10 +4268,283 @@
 </tbody>
 </table>
 <p><small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small></p>
-<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
-<ul>
-<li><a href="../../repositories/security-monitor/">Security monitor</a></li>
-</ul>
+<h2 id="languages-checked-for-security-issues">Languages checked for security issues<a class="headerlink" href="#languages-checked-for-security-issues" title="Permanent link">#</a></h2>
+<p>Security and risk management supports checking the languages and infrastructure-as-code platforms below for any Codacy security issues reported by the corresponding tools:</p>
+<table>
+  <thead>
+    <tr>
+      <th>Language</th>
+      <th>Tools that report security issues</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Apex</td>
+      <td><a href="https://pmd.github.io/">PMD</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+    </tr>
+    <tr>
+      <td>AWS CloudFormation</td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
+    </tr>
+    <tr>
+      <td>C</td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>3</sup></a>,
+          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
+          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>C#</td>
+      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>C++</td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>3</sup></a>,
+          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
+          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>Dart</td>
+      <td><a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>Dockerfile</td>
+      <td><a href="https://github.com/hadolint/hadolint">Hadolint</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>Elixir</td>
+      <td><a href="https://github.com/rrrene/credo">Credo</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>GitHub Actions</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+    </tr>
+    <tr>
+      <td>Go</td>
+      <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"> <sup>3</sup></a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>Groovy</td>
+      <td><a href="https://codenarc.github.io/CodeNarc/">CodeNarc</a></td>
+    </tr>
+    <tr>
+      <td>Helm</td>
+      <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
+    </tr>
+    <tr>
+      <td>Java</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"> <sup>3</sup></a><a href="#spotbugs-plugin"> <sup>4</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>JavaScript</td>
+      <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>5</sup></a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>JSON</td>
+      <td><a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>Kotlin</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+    </tr>
+    <tr>
+      <td>Kubernetes</td>
+      <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
+    </tr>
+    <tr>
+      <td>Objective-C</td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>3</sup></a></td>
+    </tr>
+    <tr>
+      <td>PHP</td>
+      <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
+          <a href="https://phpmd.org/">PHP Mess Detector</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>PowerShell</td>
+      <td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
+    </tr>
+    <tr>
+      <td>Python</td>
+      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
+          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
+          <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>Ruby<a href="#ruby-31"> <sup>6</sup></a></td>
+      <td><a href="https://brakemanscanner.org/">Brakeman</a>,
+          <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>Rust</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>Scala</td>
+      <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"> <sup>3</sup></a><a href="#spotbugs-plugin"> <sup>4</sup></a></td>
+    </tr>
+    <tr>
+      <td>Swift</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+    </tr>
+    <tr>
+      <td>Shell</td>
+      <td><a href="https://www.shellcheck.net/">ShellCheck</a>
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+    </tr>
+    <tr>
+      <td>Terraform</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>Transact-SQL</td>
+      <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
+    </tr>
+    <tr>
+      <td>TypeScript</td>
+      <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>5</sup></a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+    </tr>
+    <tr>
+      <td>Visual Basic</td>
+      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a></td>
+    </tr>
+  </tbody>
+</table>
+
+<p><sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for <a href="https://semgrep.dev/pricing/">Semgrep Pro</a>.<br />
+<sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.<br />
+<sup><span id="client-side">3</span></sup>: Supported as a <a href="../../repositories-configure/local-analysis/client-side-tools/">client-side tool</a>.<br />
+<sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin <a href="https://find-sec-bugs.github.io/">Find Security Bugs</a>.<br />
+<sup><span id="eslint-plugin">5</sup>: Includes the shareable config <a href="https://www.npmjs.com/package/eslint-config-nodesecurity"><span class="skip-vale">nodesecurity</span></a> and the plugins <a href="https://www.npmjs.com/package/eslint-plugin-angularjs-security-rules">angularjs-security-rules</a>, <a href="https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml">no-unsafe-innerhtml</a>, <a href="https://www.npmjs.com/package/eslint-plugin-no-unsanitized">no-unsanitized</a>, <a href="https://www.npmjs.com/package/eslint-plugin-scanjs-rules">scanjs-rules</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security">security</a>, and <a href="https://www.npmjs.com/package/eslint-plugin-security-node">security-node</a>.<br />
+<sup><span id="ruby-31">6</span></sup>: Currently, Codacy doesn't support any static code analysis tool for <a href="https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/">Ruby 3.1</a>.  </p>
+<h2 id="supported-security-categories">Supported security categories<a class="headerlink" href="#supported-security-categories" title="Permanent link">#</a></h2>
+<p>Each Codacy issue reported by Security and risk management belongs to one of the following security categories:</p>
+<table>
+<thead>
+<tr>
+<th>Security category</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Android</strong></td>
+<td>Android-specific security issues.</td>
+</tr>
+<tr>
+<td><strong>Authentication</strong></td>
+<td>Broken authentication and authorization attacks consist in gaining access to accounts that allow disclosing sensitive information or performing operations that could compromise the system.</td>
+</tr>
+<tr>
+<td><strong>Command Injection</strong></td>
+<td>Command injection attacks aim to execute arbitrary commands on the host operating system.</td>
+</tr>
+<tr>
+<td><strong>Cookies</strong></td>
+<td>Security issues related to insecure cookies.</td>
+</tr>
+<tr>
+<td><strong>Cryptography</strong></td>
+<td>Cryptography attacks exploit failures related to cryptography (or lack thereof), <span class="skip-vale">potentially</span> leading to exposure of sensitive data.</td>
+</tr>
+<tr>
+<td><strong>CSRF</strong></td>
+<td>Cross-Site Request Forgery (CSRF) attacks force an end user to execute unwanted actions on a web application in which they're currently authenticated.</td>
+</tr>
+<tr>
+<td><strong>Denial of Service</strong></td>
+<td>Denial of Service (DoS) attacks make a resource (site, application, server) unavailable for legitimate users, typically by flooding the resource with requests or exploiting a vulnerability to trigger a crash.</td>
+</tr>
+<tr>
+<td><strong>File Access</strong></td>
+<td>File access security issues may allow an attacker to access arbitrary files and directories stored on the file system such as application source code, configuration, and critical system files.</td>
+</tr>
+<tr>
+<td><strong>HTTP Headers</strong></td>
+<td>Insecure HTTP headers are a common attack vector for malicious users.</td>
+</tr>
+<tr>
+<td><strong>Input Validation</strong></td>
+<td>Client input should always be validated to prevent malformed or malicious data from entering the workflow of an information system.</td>
+</tr>
+<tr>
+<td><strong>Insecure Modules and Libraries</strong></td>
+<td>Security issues related to modules or libraries that can <span class="skip-vale">potentially</span> include vulnerabilities.</td>
+</tr>
+<tr>
+<td><strong>Insecure Storage</strong></td>
+<td>Security issues related to insecure storage of sensitive data.</td>
+</tr>
+<tr>
+<td><strong>Malicious Code</strong></td>
+<td>Security issues related to code patterns that are <span class="skip-vale">potentially</span> unsafe.</td>
+</tr>
+<tr>
+<td><strong>Mass Assignment</strong></td>
+<td>Unprotected mass assignments are a Rails feature that could allow an attacker to update sensitive model attributes.</td>
+</tr>
+<tr>
+<td><strong>Regex</strong></td>
+<td>Regular expressions can be used in Denial of Service attacks, exploiting the fact that in most regular expression implementations the computational load grows exponentially with input size.</td>
+</tr>
+<tr>
+<td><strong>Routes</strong></td>
+<td>Badly configured routes can give unintended access to an attacker.</td>
+</tr>
+<tr>
+<td><strong>SQL Injection</strong></td>
+<td>SQL injection attacks insert or "inject" malicious SQL queries into the application via the client input data.</td>
+</tr>
+<tr>
+<td><strong>SSL</strong></td>
+<td>Security issues related with old SSL versions or configurations that have known cryptographic weaknesses and should no longer be used.</td>
+</tr>
+<tr>
+<td><strong>Unexpected Behaviour</strong></td>
+<td>Security issues related to <span class="skip-vale">potentially</span> insecure system API calls.</td>
+</tr>
+<tr>
+<td><strong>Visibility</strong></td>
+<td>Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.</td>
+</tr>
+<tr>
+<td><strong>XSS</strong></td>
+<td>Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into trusted websites that are visited by the end users.</td>
+</tr>
+<tr>
+<td><strong>Other</strong></td>
+<td>Other language-specific security issues.</td>
+</tr>
+</tbody>
+</table>
               
               
                 

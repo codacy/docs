@@ -916,11 +916,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.codacy.com/repositories/security-monitor/</loc>
-         <lastmod>2024-01-26</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.codacy.com/repositories-configure/adjusting-quality-gates/</loc>
          <lastmod>2024-01-26</lastmod>
          <changefreq>daily</changefreq>
