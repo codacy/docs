@@ -151,7 +151,7 @@ The following table defines item severities and days to fix the associated secur
 
 ## Languages checked for security issues
 
-Security and risk management supports checking the languages and infrastructure-as-code platforms below for any security issues reported by the corresponding tools:
+Security and risk management supports checking the languages and infrastructure-as-code platforms below for any Codacy security issues reported by the corresponding tools:
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
@@ -341,7 +341,7 @@ Security and risk management supports checking the languages and infrastructure-
 
 ## Supported security categories
 
-Each issue reported by Security and risk management belongs to one of the following security categories:
+Each Codacy issue reported by Security and risk management belongs to one of the following security categories:
 
 <!--NOTE
     Currently, this category doesn't include any security issues
