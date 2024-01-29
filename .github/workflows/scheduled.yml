@@ -13,7 +13,7 @@ jobs:
 
       - name: Check for broken links
         id: lychee
-        uses: lycheeverse/lychee-action@v1.9.1
+        uses: lycheeverse/lychee-action@v1.9.2
         with:
           args: --verbose ./docs/**/*.md ./submodules/chart/docs/**/*.md
           jobSummary: true
@@ -22,7 +22,7 @@ jobs:
 
       - name: Create issue
         if: env.lychee_exit_code != 0
-        uses: peter-evans/create-issue-from-file@v4
+        uses: peter-evans/create-issue-from-file@v5
         with:
           title: Broken link report
           content-filepath: ./lychee/out.md
@@ -52,7 +52,7 @@ jobs:
           python ./check-supported-tools.py > ${{ env.OUTPUT_FILE }}
 
       - name: Create issue
-        uses: peter-evans/create-issue-from-file@v4
+        uses: peter-evans/create-issue-from-file@v5
         if: ${{ failure() }}
         with:
           title: Missing supported tools report
@@ -83,7 +83,7 @@ jobs:
           python ./check-security-tools.py > ${{ env.OUTPUT_FILE }}
 
       - name: Create issue
-        uses: peter-evans/create-issue-from-file@v4
+        uses: peter-evans/create-issue-from-file@v5
         if: ${{ failure() }}
         with:
           title: Missing security tools report
