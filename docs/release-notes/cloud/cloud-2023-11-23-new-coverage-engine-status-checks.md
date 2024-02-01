@@ -35,13 +35,45 @@ Please refer to the table below for the updated status of the transition process
       <td>The new Coverage engine now sends coverage summaries to GitHub. If you haven't done so yet, please review and update your app permissions as mentioned above.</td>
     </tr>
     <tr>
-      <td rowspan="2">Codacy app UI</td>
-      <td><a href="#diff-tabs">Coverage pull request diff tab</a></td>
-      <td>Live</td>
+      <td rowspan="8">Codacy app UI and API endpoints</td>
+      <td>Quality dashboard</td>
+      <td>Planned</td>
       <td>-</td>
     </tr>
     <tr>
-      <td>Other pages and components</td>
+      <td>Coverage dashboard</td>
+      <td>Planned</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Quality pull request list page</td>
+      <td>Planned</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Coverage pull request list page</td>
+      <td>Planned</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Quality pull request page</td>
+      <td>Planned</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#diff-tabs">Coverage pull request page</a>
+      </td>
+      <td>In progress</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Quality commit page</td>
+      <td>Planned</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Coverage commit page</td>
       <td>Planned</td>
       <td>-</td>
     </tr>
@@ -132,7 +164,7 @@ If you are using the old status check to block merging pull requests on GitHub, 
 
 On December 7th 2023 we set the new Coverage engine to post coverage summaries to GitHub, replacing the old Coverage engine.
 
-## Codacy app UI diff tabs from the new Coverage engine {: id="diff-tabs"}
+## Codacy app UI
 
 {%
     include-markdown "../../assets/includes/coverage-github-accept-permissions.md"
@@ -140,7 +172,9 @@ On December 7th 2023 we set the new Coverage engine to post coverage summaries t
     end="<!--accept-permission-end-->"
 %}
 
-On December 27th 2023 we set the [diff tab of the Coverage pull requests page](../../repositories-coverage/pull-requests.md#diff-tab) to get data from the new Coverage engine.
+### Coverage pull request page {: id="diff-tabs"}
+
+-   **Diff tab**: On December 27th 2023 we set the [diff tab of the Coverage pull request page](../../repositories-coverage/pull-requests.md#diff-tab) to get data from the new Coverage engine.
 
 ## New Coverage engine side effects
 
