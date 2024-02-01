@@ -35,7 +35,7 @@ Please refer to the table below for the updated status of the transition process
       <td>The new Coverage engine now sends coverage summaries to GitHub. If you haven't done so yet, please review and update your app permissions as mentioned above.</td>
     </tr>
     <tr>
-      <td rowspan="8">Codacy app UI and API endpoints</td>
+      <td rowspan="8">Codacy app UI</td>
       <td>Quality dashboard</td>
       <td>Planned</td>
       <td>-</td>
