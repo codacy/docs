@@ -11,7 +11,7 @@
         <meta name="description" content="As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we&#x27;ve been working on a new Coverage engine and started its deployment on November 23rd, 2023. The rollout to use the new engine across Codacy will be phased across several months and will gradually impact the coverage data you see on the Git provider, UI, and API.">
       
       
-        <meta http-equiv="last-modified" content="2024-01-15 14:07:18">
+        <meta http-equiv="last-modified" content="2024-02-01 14:47:45">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/">
@@ -2387,8 +2387,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#diff-tabs" class="md-nav__link">
-    Codacy app UI diff tabs from the new Coverage engine
+  <a href="#codacy-app-ui" class="md-nav__link">
+    Codacy app UI
   </a>
   
 </li>
@@ -4103,13 +4103,45 @@
       <td>The new Coverage engine now sends coverage summaries to GitHub. If you haven't done so yet, please review and update your app permissions as mentioned above.</td>
     </tr>
     <tr>
-      <td rowspan="2">Codacy app UI</td>
-      <td><a href="#diff-tabs">Coverage pull request diff tab</a></td>
-      <td>Live</td>
+      <td rowspan="8">Codacy app UI</td>
+      <td>Quality dashboard</td>
+      <td>Planned</td>
       <td>-</td>
     </tr>
     <tr>
-      <td>Other pages and components</td>
+      <td>Coverage dashboard</td>
+      <td>Planned</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Quality pull request list page</td>
+      <td>Planned</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Coverage pull request list page</td>
+      <td>Planned</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Quality pull request page</td>
+      <td>Planned</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>
+        <a href="#diff-tabs">Coverage pull request page</a>
+      </td>
+      <td>Live (partially migrated)</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Quality commit page</td>
+      <td>Planned</td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>Coverage commit page</td>
       <td>Planned</td>
       <td>-</td>
     </tr>
@@ -4192,11 +4224,14 @@
 <p class="admonition-title">GitHub only: this feature requires updated app permissions. If you haven't done so yet, please <a href="https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions">review and accept the updated Codacy app permissions</a> on GitHub</p>
 </div>
 <p>On December 7th 2023 we set the new Coverage engine to post coverage summaries to GitHub, replacing the old Coverage engine.</p>
-<h2 id="diff-tabs">Codacy app UI diff tabs from the new Coverage engine<a class="headerlink" href="#diff-tabs" title="Permanent link">#</a></h2>
+<h2 id="codacy-app-ui">Codacy app UI<a class="headerlink" href="#codacy-app-ui" title="Permanent link">#</a></h2>
 <div class="admonition info">
 <p class="admonition-title">GitHub only: this feature requires updated app permissions. If you haven't done so yet, please <a href="https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions">review and accept the updated Codacy app permissions</a> on GitHub</p>
 </div>
-<p>On December 27th 2023 we set the <a href="../../../repositories-coverage/pull-requests/#diff-tab">diff tab of the Coverage pull requests page</a> to get data from the new Coverage engine.</p>
+<h3 id="diff-tabs">Coverage pull request page<a class="headerlink" href="#diff-tabs" title="Permanent link">#</a></h3>
+<ul>
+<li><strong>Diff tab</strong>: On December 27th 2023 we set the <a href="../../../repositories-coverage/pull-requests/#diff-tab">diff tab of the Coverage pull request page</a> to get data from the new Coverage engine.</li>
+</ul>
 <h2 id="new-coverage-engine-side-effects">New Coverage engine side effects<a class="headerlink" href="#new-coverage-engine-side-effects" title="Permanent link">#</a></h2>
 <h3 id="differences-in-coverage-metrics-between-the-coverage-and-quality-pull-request-pages">Missing data on the Coverage Pull request page<a class="headerlink" href="#differences-in-coverage-metrics-between-the-coverage-and-quality-pull-request-pages" title="Permanent link">#</a></h3>
 <p>You may notice missing coverage data on the <a href="../../../repositories-coverage/pull-requests/">Coverage Pull requests page</a> for older pull requests when compared to the coverage data shown on the <a href="../../../repositories/pull-requests/">Quality Pull requests page</a>. This may happen due to a number of reasons:</p>
@@ -4373,7 +4408,7 @@ git<span class="w"> </span>push
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 15, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2024</span>
     
   </small>
 </div>
