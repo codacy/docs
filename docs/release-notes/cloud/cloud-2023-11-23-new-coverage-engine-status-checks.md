@@ -64,7 +64,7 @@ Please refer to the table below for the updated status of the transition process
       <td>
         <a href="#diff-tabs">Coverage pull request page</a>
       </td>
-      <td>In progress</td>
+      <td>Live (partially migrated)</td>
       <td>-</td>
     </tr>
     <tr>
