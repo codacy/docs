@@ -66,12 +66,12 @@ Please refer to the table below for the updated status of the transition process
       <td>-</td>
     </tr>
     <tr>
-      <td><a href="quality-commit-page">Quality commit page</a></td>
+      <td><a href="#quality-commit-page">Quality commit page</a></td>
       <td>Planned</td>
       <td>-</td>
     </tr>
     <tr>
-      <td><a href="coverage-commit-page">Coverage commit page</a></td>
+      <td><a href="#coverage-commit-page">Coverage commit page</a></td>
       <td>Migrated</td>
       <td>-</td>
     </tr>
