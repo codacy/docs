@@ -9,7 +9,7 @@ To manage the email addresses associated with your account and your email notifi
 Codacy automatically links to your Codacy account the email addresses from the Git provider associated with your current session. On the **Emails** page, you can verify which email addresses are linked to your Codacy account.
 
 !!! note
-    For **GitHub**, if you set the option [Keep my email addresses private](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address?platform=mac#about-commit-email-addresses) on the Git provider, Codacy doesn't show your private emails and uses another available email address when displaying your personal details on lists, search filters, or activity."
+    For **GitHub**, if you have [email privacy enabled](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address?platform=mac#about-commit-email-addresses) on the provider, Codacy doesn't show your private emails and uses another available email address when displaying your personal details on lists, search filters, or activity."
 
 To update the email addresses associated with your Codacy account, do the following:
 
