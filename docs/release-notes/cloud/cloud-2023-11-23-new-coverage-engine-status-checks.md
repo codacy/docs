@@ -176,7 +176,7 @@ On <!-- TODO ALA-845 Date -->, the [Quality dashboard](../../repositories/reposi
 
 ### Quality pull request page
 
-A redesigned Quality pull request page is planned to be released in the near future and will get all the data from the new Coverage engine.
+A redesigned [Quality pull request](../../repositories/pull-requests.md) page is planned to be released in the near future and will get all the data from the new Coverage engine.
 
 ### Coverage pull request page {: id="diff-tabs"}
 
@@ -186,7 +186,7 @@ On <!-- TODO ALA-845 Date -->, the rest of the [Coverage pull request page](../.
 
 ### Quality commit page
 
-A redesigned Quality commit page is planned to be released in the near future, and it will get all the data from the new Coverage engine.
+A redesigned [Quality commit](../../repositories/commits.md) page is planned to be released in the near future, and it will get all the data from the new Coverage engine.
 
 ### Coverage commit page
 
