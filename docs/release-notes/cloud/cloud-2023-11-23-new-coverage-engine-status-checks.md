@@ -37,22 +37,22 @@ Please refer to the table below for the updated status of the transition process
     <tr>
       <td rowspan="8">Codacy app UI</td>
       <td><a href="#migrated-pages">Quality dashboard</a></td>
-      <td>Migrated</td>
+      <td>Live</td>
       <td>-</td>
     </tr>
     <tr>
       <td><a href="#migrated-pages">Coverage dashboard</a></td>
-      <td>Migrated</td>
+      <td>Live</td>
       <td>-</td>
     </tr>
     <tr>
       <td><a href="#migrated-pages">Quality pull request list page</a></td>
-      <td>Migrated</td>
+      <td>Live</td>
       <td>-</td>
     </tr>
     <tr>
       <td><a href="#migrated-pages">Coverage pull request list page</a></td>
-      <td>Migrated</td>
+      <td>Live</td>
       <td>-</td>
     </tr>
     <tr>
@@ -62,7 +62,7 @@ Please refer to the table below for the updated status of the transition process
     </tr>
     <tr>
       <td><a href="#diff-tabs">Coverage pull request page</a></td>
-      <td>Partially migrated</td>
+      <td>Live</td>
       <td>-</td>
     </tr>
     <tr>
@@ -72,7 +72,7 @@ Please refer to the table below for the updated status of the transition process
     </tr>
     <tr>
       <td><a href="#coverage-commit-page">Coverage commit page</a></td>
-      <td>Migrated</td>
+      <td>Live</td>
       <td>-</td>
     </tr>
   </tbody>
