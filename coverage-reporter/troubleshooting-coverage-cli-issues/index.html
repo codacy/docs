@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI.">
       
       
-        <meta http-equiv="last-modified" content="2024-01-23 15:20:52">
+        <meta http-equiv="last-modified" content="2024-02-05 09:40:34">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/troubleshooting-coverage-cli-issues/">
@@ -4181,7 +4181,7 @@
 <h2 id="coverage-xmlindexxml-generated-an-empty-result">coverage-xml/index.xml generated an empty result<a class="headerlink" href="#coverage-xmlindexxml-generated-an-empty-result" title="Permanent link">#</a></h2>
 <p>If you're using <span class="skip-vale">PHPUnit</span> version 5 or above to generate your coverage report, you must output the report using the Clover format. Codacy Coverage Reporter supports the <span class="skip-vale">PHPUnit</span> XML format only for versions 4 and older.</p>
 <p>To change the output format replace the flag <code>--coverage-xml &lt;dir&gt;</code> with <code>--coverage-clover &lt;file&gt;</code> when executing <span class="skip-vale"><code>phpunit</code></span>.</p>
-<p>See <a href="https://phpunit.readthedocs.io/en/10.0/textui.html"><span class="skip-vale">PHPUnit</span> command-line documentation</a> for more information.</p>
+<p>See <a href="https://phpunit.readthedocs.io/en/11.0/textui.html"><span class="skip-vale">PHPUnit</span> command-line documentation</a> for more information.</p>
 <h2 id="jsonparseexception-while-uploading-coverage-data">JsonParseException while uploading coverage data<a class="headerlink" href="#jsonparseexception-while-uploading-coverage-data" title="Permanent link">#</a></h2>
 <p>If you get a <code>com.fasterxml.jackson.core.JsonParseException</code> error while uploading your coverage data to Codacy it means that your coverage report is too big and that Codacy Coverage Reporter hit a limit of 10 MB when uploading the coverage data to Codacy.</p>
 <p>There are some ways you can solve this:</p>
@@ -4374,7 +4374,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 23, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 5, 2024</span>
     
   </small>
 </div>
