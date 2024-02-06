@@ -19,12 +19,12 @@ The next sections describe each area of the pull request detail page.
 
 ## Pull request status {: id="status"}
 
-This area displays the information that identifies the pull request (head and base branches, date, and name), as well as:
+This area displays the information that identifies the pull request (name, author, head and base branches, and date), as well as:
 
--   The analysis status
+-   The analysis status<!-- TODO ALA-643 confirm -->
+-   A link to the pull request on your Git provider
 -   A [button to reanalyze the latest pull request commit](../faq/repositories/how-do-i-reanalyze-my-repository.md), enabled when the committer [is part of your organization](../organizations/managing-people.md)
 -   A link to the analysis logs
--   A link to the pull request on your Git provider
 
 ![Pull request status](images/pull-requests-detail-status.png)<!-- TODO ALA-643 Screenshot -->
 

@@ -19,25 +19,29 @@ The next sections describe each area of the commit detail page.
 
 ## Commit status {: id="status"}
 
-This area displays the information that identifies the commit (SHA hash, date, and commit message), as well as:
+![Commit status](images/commits-detail-status.png)<!-- TODO ALA-643 Screenshot -->
 
--   The analysis status
+This area displays the information that identifies the commit (commit message, committer, SHA hash, and date), as well as:
+
+-   The analysis status<!-- TODO ALA-643 Confirm -->
+-   A link to the commit on your Git provider
 -   A [button to reanalyze the commit](../faq/repositories/how-do-i-reanalyze-my-repository.md), enabled when the committer [is part of your organization](../organizations/managing-people.md)
 -   A link to the analysis logs
--   A link to the commit on your Git provider
-
-![Commit status](images/commits-detail-status.png)<!-- TODO ALA-643 Screenshot -->
 
 <!--quality-overview-start-->
 ## {{ page.meta.page_name.capitalize() }} analysis status and quality overview {: id="quality-overview"}
 
-When an analysis is running, this area displays a detailed analysis status, analysis times, and a link to inspect the logs.
+<!-- vale off -->
+![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)
+<!-- vale on -->
+
+When an analysis is running, this area displays a detailed analysis status, analysis times, and a link to inspect the logs.<!-- TODO ALA-643 Confirm -->
 
 After an analysis completes, this area displays the code quality metrics and gate status for the {{ page.meta.page_name }}:
 
--   The quality gate status is either **Failed quality gates** or **Passed quality gates** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
+-   The analysis status is either **Up to quality standards** or **Not up to quality standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
 
-    If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Passed quality gates**.
+    If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to quality standards**.
 
 -   The variation of the following code quality metrics introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %}:
 
@@ -68,16 +72,14 @@ After an analysis completes, this area displays the code quality metrics and gat
 
     !!! note
         If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.
-
-<!-- vale off -->
-![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)
-<!-- vale on -->
 <!--quality-overview-end-->
 
 <!--tabs-start-->
 ## Issues tab {: id="issues-tabs"}
 
-The **Issues** tab displays the lists of issues that the {{ page.meta.page_name }} created or fixed.
+The **Issues** tab displays the lists of issues that the {{ page.meta.page_name }} creates or fixes.
+
+<!-- TODO ALA-643 Document filters: new issues, fixed issues (confirm), severity, category, file -->
 
 {%
     include-markdown "./issues.md"
@@ -111,7 +113,11 @@ The **Duplication** tab displays the lists of duplicated blocks that the {{ page
 ![New Duplication and Fixed Duplication tabs](./images/{{ page.meta.file_name }}-tab-duplication.png)<!-- TODO ALA-643 Screenshot -->
 
 ## Complexity tab
-<!-- TODO ALA-643 Draft section -->
+<!-- TODO ALA-643 Review section -->
+
+The **Complexity** tab displays the complexity changes introduced by the {{ page.meta.page_name }}.
+
+<!-- TODO ALA-643 Document filters: increase level, decrease -->
 
 ![Complexity tab](./images/{{ page.meta.file_name }}-tab-complexity.png)<!-- TODO ALA-643 Screenshot -->
 
