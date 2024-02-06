@@ -31,6 +31,8 @@ This area displays the information that identifies the commit (commit message, c
 <!--quality-overview-start-->
 ## {{ page.meta.page_name.capitalize() }} analysis status and quality overview {: id="quality-overview"}
 
+<!-- TODO ALA-643 We'll only show dta if there's a gate set -->
+
 <!-- vale off -->
 ![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)
 <!-- vale on -->
@@ -79,7 +81,7 @@ After an analysis completes, this area displays the code quality metrics and gat
 
 The **Issues** tab displays the lists of issues that the {{ page.meta.page_name }} creates or fixes.
 
-<!-- TODO ALA-643 Document filters: new issues, fixed issues (confirm), severity, category, file -->
+<!-- TODO ALA-643 Document filters: new issues, fixed issues, potentially fixed issues, severity, category, file -->
 
 {%
     include-markdown "./issues.md"
