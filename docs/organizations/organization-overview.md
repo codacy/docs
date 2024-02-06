@@ -4,12 +4,6 @@ description: The Organization Overview provides an overview of the repositories 
 
 # Organization Overview
 
-{%
-    include-markdown "../assets/includes/paid.md"
-    start="<!--paid-start-->"
-    end="<!--paid-end-->"
-%}
-
 The **Organization Overview** provides an overview of the repositories belonging to your Git provider organization that you [follow on Codacy](managing-repositories.md). Here you can compare their statuses and check for items that require your attention.
 
 To access your Organization Overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
