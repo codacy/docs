@@ -92,7 +92,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure repository</td>
+      <td>Configure repository settings</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td colspan="2" class="no">No</td>
@@ -228,7 +228,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure repository</td>
+      <td>Configure repository settings</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td class="no">No</td>
@@ -340,7 +340,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure repository</td>
+      <td>Configure repository settings</td>
       <td colspan="2" class="no">No</td>
       <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
