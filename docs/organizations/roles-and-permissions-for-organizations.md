@@ -92,7 +92,25 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure repository settings</td>
+      <td>Configure repository integration settings with Git provider</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="maybe">Inherits original permission</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Configure repository quality gates and goals</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="maybe">Inherits original permission</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Enable repository local analysis, manage repository API tokens</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td colspan="2" class="no">No</td>
@@ -228,7 +246,25 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure repository settings</td>
+      <td>Configure repository integration settings with Git provider</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="yes">Yes</td>
+      <td class="maybe">Inherits original permission</td>
+      <td colspan="2" class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Configure repository quality gates and goals</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="yes">Yes</td>
+      <td class="maybe">Inherits original permission</td>
+      <td colspan="2" class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Enable repository local analysis, manage repository API tokens</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td class="no">No</td>
@@ -340,7 +376,19 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure repository settings</td>
+      <td>Configure repository integration settings with Git provider</td>
+      <td colspan="2" class="no">No</td>
+      <td class="maybe">Inherits original permission</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Configure repository quality gates and goals</td>
+      <td colspan="2" class="no">No</td>
+      <td class="maybe">Inherits original permission</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
+      <td>Enable repository local analysis, manage repository API tokens</td>
       <td colspan="2" class="no">No</td>
       <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
