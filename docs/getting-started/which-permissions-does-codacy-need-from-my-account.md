@@ -201,16 +201,13 @@ If you need to use an integration that you have previously revoked, log in again
 
 ## Why does Codacy ask for permission to create SSH keys?
 
-!!! note
-    **GitHub only:** Codacy started using [installation access tokens](https://docs.github.com/en/apps/creating-github-apps/authenticating-with-a-github-app/generating-an-installation-access-token-for-a-github-app#about-installation-access-tokens) instead of SSH keys to integrate with your GitHub repositories and clone them. SSH keys are currently used as a fallback mechanism when the [Contents permission](#github-cloud) isn't available. For more information, [see the discontinuation notice of SSH keys for GitHub repositories](../release-notes/cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation.md).
+!!! info "This section applies only to GitLab and Bitbucket"
 
-    To ensure Codacy keeps working correctly, make sure an organization owner [approves Codacy GitHub App updated permissions](https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps) on your GitHub organization.
-
-When you add a private repository to Codacy, Codacy uses the integration with your Git provider to create a new SSH key on the repository. Codacy then uses that SSH key every time it needs to clone the repository.
+On GitLab and Bitbucket organizations, when you add a private repository to Codacy, Codacy uses the integration with your Git provider to create a new SSH key on the repository. Codacy then uses that SSH key every time it needs to clone the repository.
 
 **Codacy only adds read-only SSH keys** and can't access any of your existing SSH keys. You have full control over which organizations and repositories Codacy is authorized to access. Codacy doesn't change the contents or member privileges of any repository you authorize it to analyze.
 
 We understand the desire for security and privacy and find that the SSH protocol is preferable to HTTPS as it separates Codacy's access rights from the one of the users.
 
 !!! tip
-    You can revoke the keys created by Codacy at any time. See [GitHub](https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/reviewing-your-deploy-keys), [GitLab](https://docs.gitlab.com/ee/user/project/deploy_keys/), or [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/configure-repository-settings/) documentation for further details.
+    You can revoke the keys created by Codacy at any time. See [GitLab](https://docs.gitlab.com/ee/user/project/deploy_keys/) or [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/configure-repository-settings/) documentation for further details.
