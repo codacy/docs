@@ -92,7 +92,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure repository integration settings with Git provider</td>
+      <td>Configure repository Git provider integration settings</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td colspan="2" class="no">No</td>
@@ -110,7 +110,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Enable repository local analysis, manage repository API tokens</td>
+      <td>Configure repository to run analysis on local build server, manage repository API tokens</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td colspan="2" class="no">No</td>
@@ -128,7 +128,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Manage gate policies and coding standards,<br/>bulk copy patterns</td>
+      <td>Manage organization gate policies and coding standards,<br/>bulk copy patterns</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td colspan="2" class="no">No</td>
@@ -137,7 +137,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure default Git provider integration settings</td>
+      <td>Configure organization default settings for Git provider integration</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td colspan="2" class="no">No</td>
@@ -246,7 +246,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure repository integration settings with Git provider</td>
+      <td>Configure repository Git provider integration settings</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td class="no">No</td>
@@ -264,7 +264,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Enable repository local analysis, manage repository API tokens</td>
+      <td>Configure repository to run analysis on local build server, manage repository API tokens</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td class="no">No</td>
@@ -282,7 +282,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Manage gate policies and coding standards,<br/>bulk copy patterns</td>
+      <td>Manage organization gate policies and coding standards,<br/>bulk copy patterns</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td class="no">No</td>
@@ -291,7 +291,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure default settings for Git provider integration</td>
+      <td>Configure organization default settings for Git provider integration</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td class="no">No</td>
@@ -376,7 +376,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure repository integration settings with Git provider</td>
+      <td>Configure repository Git provider integration settings</td>
       <td colspan="2" class="no">No</td>
       <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
@@ -388,7 +388,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Enable repository local analysis, manage repository API tokens</td>
+      <td>Configure repository to run analysis on local build server, manage repository API tokens</td>
       <td colspan="2" class="no">No</td>
       <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
@@ -400,13 +400,13 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Manage gate policies and coding standards,<br/>bulk copy patterns</td>
+      <td>Manage organization gate policies and coding standards,<br/>bulk copy patterns</td>
       <td colspan="2" class="no">No</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure default settings for Git provider integration</td>
+      <td>Configure organization default settings for Git provider integration</td>
       <td colspan="2" class="no">No</td>
       <td class="yes">Yes</td>
       <td class="yes">Yes</td>
