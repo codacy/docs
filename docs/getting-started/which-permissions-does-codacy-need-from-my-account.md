@@ -69,11 +69,6 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
       <td>Codacy retrieves repository contents to get installation access tokens when integrating with your repositories and clone them, and for code coverage analysis.<br/><strong>Codacy requests this permission since September 2023.</strong> Make sure an organization owner <a href="https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</td>
     </tr>
     <tr>
-      <td>Administration</td>
-      <td>Read & Write</td>
-      <td>This permission <strong>will soon be removed</strong> and is currently used as a fallback mechanism when the Contents permission isn't available. In this case, Codacy <a href="#why-does-codacy-ask-for-permission-to-create-ssh-keys">creates an SSH key on the repository</a> to allow cloning and integrating with your repository.<br/>To ensure Codacy keeps working correctly, make sure an organization owner <a href="https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</td>
-    </tr>
-    <tr>
       <td colspan="3"><strong>Organization permissions:</strong></td>
     </tr>
     <tr>
