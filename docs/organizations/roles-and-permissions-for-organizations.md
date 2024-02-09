@@ -104,7 +104,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td>Configure repository quality gates and goals</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
-      <td colspan="2" class="no">No</td>
+      <td colspan="2" class="yes">Yes</td>
       <td class="yes">Yes</td>
       <td class="maybe">Inherits original permission</td>
       <td class="yes">Yes</td>
@@ -258,7 +258,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td>Configure repository quality gates and goals</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
-      <td class="no">No</td>
+      <td class="yes">Yes</td>
       <td colspan="2" class="yes">Yes</td>
       <td class="maybe">Inherits original permission</td>
       <td colspan="2" class="yes">Yes</td>
