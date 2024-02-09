@@ -110,7 +110,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td class="yes">Yes</td>
     </tr>
     <tr>
-      <td>Configure repository to run analysis on local build server, manage repository API tokens</td>
+      <td>Enable repository analysis to run on a local build server, manage repository API tokens</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
       <td colspan="2" class="no">No</td>
