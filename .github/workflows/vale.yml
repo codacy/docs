@@ -14,7 +14,7 @@ jobs:
           submodules: false
 
       - name: Vale
-        uses: errata-ai/vale-action@v2.0.1
+        uses: errata-ai/vale-action@v2.1.0
         with:
           filter_mode: added
           debug: true

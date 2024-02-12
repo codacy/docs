@@ -5,7 +5,7 @@ import requests
 
 from string import Template
 
-DOCUMENTATION_PATH = "../docs/repositories/security-monitor.md"
+DOCUMENTATION_PATH = "../docs/organizations/managing-security-and-risk.md"
 ENDPOINT_URL_TOOLS = "https://api.codacy.com/api/v3/tools"
 ENDPOINT_URL_CODE_PATTERNS = Template("https://api.codacy.com/api/v3/tools/${toolUuid}/patterns")
 IGNORED_TOOL_UUIDS = ["34225275-f79e-4b85-8126-c7512c987c0d",  # Pylint 1.9 (legacy)

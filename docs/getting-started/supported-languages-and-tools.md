@@ -17,7 +17,7 @@ The table below lists all languages that Codacy supports and the corresponding t
 
     docs/getting-started/supported-languages-and-tools.md
     docs/repositories-configure/local-analysis/client-side-tools.md (if the tool runs client-side)
-    docs/repositories/security-monitor.md (if the tool reports security issues)
+    docs/organizations/managing-security-and-risk.md  (if the tool reports security issues)
     docs/repositories-configure/configuring-code-patterns.md (supported configuration files table, or list of tools that don't support configuration files)
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
