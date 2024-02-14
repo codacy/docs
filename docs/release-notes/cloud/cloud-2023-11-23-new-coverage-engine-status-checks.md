@@ -182,8 +182,6 @@ A redesigned [Quality pull request](../../repositories/pull-requests.md) page is
 
 On December 27th 2023, the [diff tab of the Coverage pull request page](../../repositories-coverage/pull-requests.md#diff-tab) was set to get data from the new Coverage engine.
 
-On <!-- TODO ALA-845 Date -->, the rest of the [Coverage pull request page](../../repositories-coverage/pull-requests.md) was set to get data from the new Coverage engine.
-
 ### Quality commit page
 
 A redesigned [Quality commit](../../repositories/commits.md) page is planned to be released in the near future and will get coverage data from the new Coverage engine.
