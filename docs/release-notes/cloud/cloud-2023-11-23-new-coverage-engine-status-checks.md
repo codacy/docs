@@ -176,17 +176,17 @@ On February 6th 2024, the [Quality dashboard](../../repositories/repository-dash
 
 ### Quality pull request page
 
-A redesigned [Quality pull request](../../repositories/pull-requests.md) page is planned to be released in the near future and will get coverage data from the new Coverage engine.
+<!-- TODO ALA-845 Update once live --> A redesigned [Quality pull request](../../repositories/pull-requests.md) page is planned to be released in the near future and will get coverage data from the new Coverage engine.
 
 ### Coverage pull request page {: id="diff-tabs"}
 
 On December 27th 2023, the [diff tab of the Coverage pull request page](../../repositories-coverage/pull-requests.md#diff-tab) was set to get data from the new Coverage engine.
 
-On <!-- TODO ALA-845 Date -->, the rest of the [Coverage pull request page](../../repositories-coverage/pull-requests.md) was set to get data from the new Coverage engine.
+On <!-- TODO ALA-845 Date when launched -->, the rest of the [Coverage pull request page](../../repositories-coverage/pull-requests.md) was set to get data from the new Coverage engine.
 
 ### Quality commit page
 
-A redesigned [Quality commit](../../repositories/commits.md) page is planned to be released in the near future and will get coverage data from the new Coverage engine.
+<!-- TODO ALA-845 Update once live --> A redesigned [Quality commit](../../repositories/commits.md) page is planned to be released in the near future and will get coverage data from the new Coverage engine.
 
 ### Coverage commit page
 
