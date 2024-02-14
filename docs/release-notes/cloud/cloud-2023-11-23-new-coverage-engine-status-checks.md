@@ -26,8 +26,8 @@ Please refer to the table below for the updated status of the transition process
     <tr>
       <td rowspan="2">Git providers</td>
       <td><a href="#status-checks">Git provider status checks</a></td>
-      <td>Live (beta)</td>
-      <td>The new Coverage engine now sends coverage data to your Git provider.<br>This data is marked [beta] and is shown alongside the data from the current engine.</td>
+      <td>Live</td>
+      <td>The new Coverage engine now sends coverage data to your Git provider.<br>Coverage data sent by the old engine is marked [deprecated] and is shown alongside the data from the current engine.</td>
     </tr>
     <tr>
       <td><a href="#coverage-summaries">GitHub coverage summaries</a></td>
