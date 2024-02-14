@@ -62,7 +62,7 @@ Please refer to the table below for the updated status of the transition process
     </tr>
     <tr>
       <td><a href="#diff-tabs">Coverage pull request page</a></td>
-      <td>Live</td>
+      <td>In progress</td>
       <td>-</td>
     </tr>
     <tr>
@@ -172,11 +172,11 @@ On December 7th 2023, the new Coverage engine started posting coverage summaries
 
 ### Quality dashboard, Coverage dashboard, Quality pull request list page, and Coverage pull request list page {: id="migrated-pages" }
 
-On <!-- TODO ALA-845 Date -->, the [Quality dashboard](../../repositories/repository-dashboard.md), [Coverage dashboard](../../repositories-coverage/repository-dashboard.md), [Quality pull request list page](../../repositories/pull-requests.md), and [Coverage pull request list page](../../repositories-coverage/pull-requests.md) were set to get data from the new Coverage engine.
+On February 6th 2024, the [Quality dashboard](../../repositories/repository-dashboard.md), [Coverage dashboard](../../repositories-coverage/repository-dashboard.md), [Quality pull request list page](../../repositories/pull-requests.md), and [Coverage pull request list page](../../repositories-coverage/pull-requests.md) were set to get data from the new Coverage engine.
 
 ### Quality pull request page
 
-A redesigned [Quality pull request](../../repositories/pull-requests.md) page is planned to be released in the near future and will get all the data from the new Coverage engine.
+A redesigned [Quality pull request](../../repositories/pull-requests.md) page is planned to be released in the near future and will get coverage data from the new Coverage engine.
 
 ### Coverage pull request page {: id="diff-tabs"}
 
@@ -186,11 +186,11 @@ On <!-- TODO ALA-845 Date -->, the rest of the [Coverage pull request page](../.
 
 ### Quality commit page
 
-A redesigned [Quality commit](../../repositories/commits.md) page is planned to be released in the near future, and it will get all the data from the new Coverage engine.
+A redesigned [Quality commit](../../repositories/commits.md) page is planned to be released in the near future and will get coverage data from the new Coverage engine.
 
 ### Coverage commit page
 
-On <!-- TODO ALA-845 Date -->, the [Coverage commit](../../repositories-coverage/commits.md) page was set to get data from the new Coverage engine.
+On February 8th 2024, the [Coverage commit](../../repositories-coverage/commits.md) page was set to get data from the new Coverage engine.
 
 ## New Coverage engine side effects
 
