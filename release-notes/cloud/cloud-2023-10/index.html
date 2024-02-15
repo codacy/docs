@@ -11,7 +11,7 @@
         <meta name="description" content="Release notes for Codacy Cloud October 2023.">
       
       
-        <meta http-equiv="last-modified" content="2023-11-23 16:20:11">
+        <meta http-equiv="last-modified" content="2024-02-15 17:22:38">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2023-10/">
@@ -2423,6 +2423,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#feature-removal" class="md-nav__link">
+    Feature removal
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#tool-deprecations" class="md-nav__link">
     Tool deprecations
   </a>
@@ -4112,6 +4119,13 @@
 <li>TSQLLint can now also detect and analyze files with an <code>sql</code> extension. (TS-543)</li>
 <li>Codacy no longer supports and now skips the analysis of branches named <code>HEAD</code> or matching the pattern <code>refs/heads/*</code>, as these are Git reserved terms. (IO-830)</li>
 </ul>
+<h2 id="feature-removal">Feature removal<a class="headerlink" href="#feature-removal" title="Permanent link">#</a></h2>
+<p>Due to their limited adoption, we removed the following options from the menu of each issue listed on the <strong>Issues</strong> page:</p>
+<ul>
+<li>GitHub: Create pull request comments and GitHub issues.</li>
+<li>Bitbucket: Create pull requests comments and Bitbucket issues.</li>
+<li>Jira: Create Jira issues. (CY-6535)</li>
+</ul>
 <h2 id="tool-deprecations">Tool deprecations<a class="headerlink" href="#tool-deprecations" title="Permanent link">#</a></h2>
 <ul>
 <li>On October 13th 2023 we deprecated the tool <strong>bundler-audit</strong>. For more information, <a href="../cloud-2023-10-13-bundler-audit-deprecation/">see the deprecation notice</a>.</li>
@@ -4325,7 +4339,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 23, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 15, 2024</span>
     
   </small>
 </div>
