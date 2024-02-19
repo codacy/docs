@@ -36,17 +36,17 @@ Please refer to the table below for the updated status of the transition process
     </tr>
     <tr>
       <td rowspan="4">Codacy app UI</td>
-      <td><a href="../../repositories-coverage/pull-requests/#diff-tab">Coverage pull request diff tab</a></td>
+      <td><a href="../../../repositories-coverage/pull-requests/#diff-tab">Coverage pull request diff tab</a></td>
       <td>Live</td>
       <td>Set to get data from the new Coverage engine on December 27th 2023.</td>
     </tr>
     <tr>
-      <td><a href="../../repositories-coverage/repository-dashboard/">Coverage dashboard</a></td>
+      <td><a href="../../../repositories-coverage/repository-dashboard/">Coverage dashboard</a></td>
       <td>Live</td>
       <td>Set to get data from the new Coverage engine on February 6th 2024.</td>
     </tr>
     <tr>
-      <td><a href="../../repositories/repository-dashboard/">Quality dashboard</a></td>
+      <td><a href="../../../repositories/repository-dashboard/">Quality dashboard</a></td>
       <td>Live</td>
       <td>Set to get data from the new Coverage engine on February 6th 2024.</td>
     </tr>
