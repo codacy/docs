@@ -35,24 +35,19 @@ Please refer to the table below for the updated status of the transition process
       <td>The new Coverage engine now sends coverage summaries to GitHub. If you haven't done so yet, please review and update your app permissions as mentioned above.</td>
     </tr>
     <tr>
-      <td rowspan="4">Codacy app UI</td>
+      <td rowspan="3">Codacy app UI</td>
       <td><a href="../../../repositories-coverage/pull-requests/#diff-tab">Coverage pull request diff tab</a></td>
       <td>Live</td>
       <td>Set to get data from the new Coverage engine on December 27th 2023.</td>
     </tr>
     <tr>
-      <td><a href="../../../repositories-coverage/repository-dashboard/">Coverage dashboard</a></td>
-      <td>Live</td>
-      <td>Set to get data from the new Coverage engine on February 6th 2024.</td>
-    </tr>
-    <tr>
-      <td><a href="../../../repositories/repository-dashboard/">Quality dashboard</a></td>
+      <td><a href="../../../repositories-coverage/pull-requests/">Coverage pull request list page</a></td>
       <td>Live</td>
       <td>Set to get data from the new Coverage engine on February 6th 2024.</td>
     </tr>
     <tr>
       <td>Other pages and components</td>
-      <td>Ongoing</td>
+      <td>Planned</td>
       <td>-</td>
     </tr>
   </tbody>
