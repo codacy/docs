@@ -11,7 +11,7 @@
         <meta name="description" content="As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we&#x27;ve been working on a new Coverage engine and started its deployment on November 23rd, 2023. The rollout to use the new engine across Codacy will be phased across several months and will gradually impact the coverage data you see on the Git provider, UI, and API.">
       
       
-        <meta http-equiv="last-modified" content="2024-02-01 14:47:45">
+        <meta http-equiv="last-modified" content="2024-02-19 16:04:14">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/">
@@ -2399,13 +2399,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#codacy-app-ui" class="md-nav__link">
-    Codacy app UI
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#new-coverage-engine-side-effects" class="md-nav__link">
     New Coverage engine side effects
   </a>
@@ -4106,8 +4099,8 @@
     <tr>
       <td rowspan="2">Git providers</td>
       <td><a href="#status-checks">Git provider status checks</a></td>
-      <td>Live (beta)</td>
-      <td>The new Coverage engine now sends coverage data to your Git provider.<br>This data is marked [beta] and is shown alongside the data from the current engine.</td>
+      <td>Live</td>
+      <td>The new Coverage engine now sends coverage data to your Git provider.<br>Since February 14th, 2024, the Coverage data sent by the old engine is marked <strong>deprecated</strong> and is shown alongside the data from the new Coverage engine.</td>
     </tr>
     <tr>
       <td><a href="#coverage-summaries">GitHub coverage summaries</a></td>
@@ -4115,57 +4108,33 @@
       <td>The new Coverage engine now sends coverage summaries to GitHub. If you haven't done so yet, please review and update your app permissions as mentioned above.</td>
     </tr>
     <tr>
-      <td rowspan="8">Codacy app UI</td>
-      <td>Quality dashboard</td>
-      <td>Planned</td>
-      <td>-</td>
+      <td rowspan="3">Codacy app UI</td>
+      <td><a href="../../../repositories-coverage/pull-requests/#diff-tab">Coverage pull request Diff tab</a></td>
+      <td>Live</td>
+      <td>Since December 27th, 2023, this component gets data from the new Coverage engine.</td>
     </tr>
     <tr>
-      <td>Coverage dashboard</td>
-      <td>Planned</td>
-      <td>-</td>
+      <td><a href="../../../repositories-coverage/pull-requests/">Coverage Pull Requests page</a></td>
+      <td>Live</td>
+      <td>Since February 6th, 2024, this page gets data from the new Coverage engine.</td>
     </tr>
     <tr>
-      <td>Quality pull request list page</td>
-      <td>Planned</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Coverage pull request list page</td>
-      <td>Planned</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Quality pull request page</td>
-      <td>Planned</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>
-        <a href="#diff-tabs">Coverage pull request page</a>
-      </td>
-      <td>Live (partially migrated)</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Quality commit page</td>
-      <td>Planned</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Coverage commit page</td>
+      <td>Other pages and components</td>
       <td>Planned</td>
       <td>-</td>
     </tr>
   </tbody>
 </table>
 
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>Because of this transition, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to <a href="#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines">differences in reported metrics</a>.</p>
+</div>
 <h2 id="status-checks">Git provider status checks from the new Coverage engine<a class="headerlink" href="#status-checks" title="Permanent link">#</a></h2>
 <div class="admonition info">
 <p class="admonition-title">This section applies to the repositories for which you set Codacy to send pull request coverage status data to your Git provider (see how on <a href="../../../repositories-configure/integrations/github-integration/#status-checks">GitHub</a>, <a href="../../../repositories-configure/integrations/gitlab-integration/#pull-request-status">GitLab</a>, and <a href="../../../repositories-configure/integrations/bitbucket-integration/#pull-request-status">Bitbucket</a>).</p>
 </div>
-<p>On November 23rd 2023 we set the new Coverage engine to send coverage data to your Git provider. As a consequence of this update, you can now see two additional checks on your pull requests, marked <strong>[beta]</strong>, alongside the preexisting <strong>Codacy Coverage Report</strong> check.</p>
+<p>On November 23rd 2023, the new Coverage engine started sending coverage data to your Git provider. As a consequence of this update, you can now see two additional checks on your pull requests, marked <strong>[beta]</strong>, alongside the preexisting <strong>Codacy Coverage Report</strong> check.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>GitHub only: If you are using the Codacy Coverage Report status check to block merging pull requests, please <a href="#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github">update your GitHub setup</a> and avoid disruptions in the future.</p>
@@ -4235,15 +4204,7 @@
 <div class="admonition info">
 <p class="admonition-title">GitHub only: this feature requires updated app permissions. If you haven't done so yet, please <a href="https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions">review and accept the updated Codacy app permissions</a> on GitHub</p>
 </div>
-<p>On December 7th 2023 we set the new Coverage engine to post coverage summaries to GitHub, replacing the old Coverage engine.</p>
-<h2 id="codacy-app-ui">Codacy app UI<a class="headerlink" href="#codacy-app-ui" title="Permanent link">#</a></h2>
-<div class="admonition info">
-<p class="admonition-title">GitHub only: this feature requires updated app permissions. If you haven't done so yet, please <a href="https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions">review and accept the updated Codacy app permissions</a> on GitHub</p>
-</div>
-<h3 id="diff-tabs">Coverage pull request page<a class="headerlink" href="#diff-tabs" title="Permanent link">#</a></h3>
-<ul>
-<li><strong>Diff tab</strong>: On December 27th 2023 we set the <a href="../../../repositories-coverage/pull-requests/#diff-tab">diff tab of the Coverage pull request page</a> to get data from the new Coverage engine.</li>
-</ul>
+<p>On December 7th 2023, the new Coverage engine started posting coverage summaries to GitHub, replacing the old Coverage engine.</p>
 <h2 id="new-coverage-engine-side-effects">New Coverage engine side effects<a class="headerlink" href="#new-coverage-engine-side-effects" title="Permanent link">#</a></h2>
 <h3 id="differences-in-coverage-metrics-between-the-coverage-and-quality-pull-request-pages">Missing data on the Coverage Pull request page<a class="headerlink" href="#differences-in-coverage-metrics-between-the-coverage-and-quality-pull-request-pages" title="Permanent link">#</a></h3>
 <p>You may notice missing coverage data on the <a href="../../../repositories-coverage/pull-requests/">Coverage Pull requests page</a> for older pull requests when compared to the coverage data shown on the <a href="../../../repositories/pull-requests/">Quality Pull requests page</a>. This may happen due to a number of reasons:</p>
@@ -4420,7 +4381,7 @@ git<span class="w"> </span>push
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 1, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 19, 2024</span>
     
   </small>
 </div>
