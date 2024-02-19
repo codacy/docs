@@ -27,7 +27,7 @@ Please refer to the table below for the updated status of the transition process
       <td rowspan="2">Git providers</td>
       <td><a href="#status-checks">Git provider status checks</a></td>
       <td>Live</td>
-      <td>The new Coverage engine now sends coverage data to your Git provider.<br>Coverage data sent by the old engine is marked <strong>deprecated</strong> and is shown alongside the data from the new Coverage engine.</td>
+      <td>The new Coverage engine now sends coverage data to your Git provider.<br>Since February 14th, 2024, the Coverage data sent by the old engine is marked <strong>deprecated</strong> and is shown alongside the data from the new Coverage engine.</td>
     </tr>
     <tr>
       <td><a href="#coverage-summaries">GitHub coverage summaries</a></td>
@@ -36,14 +36,14 @@ Please refer to the table below for the updated status of the transition process
     </tr>
     <tr>
       <td rowspan="3">Codacy app UI</td>
-      <td><a href="../../../repositories-coverage/pull-requests/#diff-tab">Coverage pull request diff tab</a></td>
+      <td><a href="../../../repositories-coverage/pull-requests/#diff-tab">Coverage pull request Diff tab</a></td>
       <td>Live</td>
-      <td>Set to get data from the new Coverage engine on December 27th 2023.</td>
+      <td>Since December 27th, 2023, this component gets data from the new Coverage engine.</td>
     </tr>
     <tr>
-      <td><a href="../../../repositories-coverage/pull-requests/">Coverage pull request list page</a></td>
+      <td><a href="../../../repositories-coverage/pull-requests/">Coverage Pull Requests page</a></td>
       <td>Live</td>
-      <td>Set to get data from the new Coverage engine on February 6th 2024.</td>
+      <td>Since February 6th, 2024, this page gets data from the new Coverage engine.</td>
     </tr>
     <tr>
       <td>Other pages and components</td>
