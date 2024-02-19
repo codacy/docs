@@ -27,7 +27,7 @@ Please refer to the table below for the updated status of the transition process
       <td rowspan="2">Git providers</td>
       <td><a href="#status-checks">Git provider status checks</a></td>
       <td>Live</td>
-      <td>The new Coverage engine now sends coverage data to your Git provider.<br>Coverage data sent by the old engine is marked [deprecated] and is shown alongside the data from the current engine.</td>
+      <td>The new Coverage engine now sends coverage data to your Git provider.<br>Coverage data sent by the old engine is marked <strong>deprecated</strong> and is shown alongside the data from the new Coverage engine.</td>
     </tr>
     <tr>
       <td><a href="#coverage-summaries">GitHub coverage summaries</a></td>
@@ -35,50 +35,31 @@ Please refer to the table below for the updated status of the transition process
       <td>The new Coverage engine now sends coverage summaries to GitHub. If you haven't done so yet, please review and update your app permissions as mentioned above.</td>
     </tr>
     <tr>
-      <td rowspan="8">Codacy app UI</td>
-      <td><a href="#migrated-pages">Quality dashboard</a></td>
+      <td rowspan="4">Codacy app UI</td>
+      <td><a href="../../repositories-coverage/pull-requests/#diff-tab">Coverage pull request diff tab</a></td>
       <td>Live</td>
-      <td>-</td>
+      <td>Set to get data from the new Coverage engine on December 27th 2023.</td>
     </tr>
     <tr>
-      <td><a href="#migrated-pages">Coverage dashboard</a></td>
+      <td><a href="../../repositories-coverage/repository-dashboard/">Coverage dashboard</a></td>
       <td>Live</td>
-      <td>-</td>
+      <td>Set to get data from the new Coverage engine on February 6th 2024.</td>
     </tr>
     <tr>
-      <td><a href="#migrated-pages">Quality pull request list page</a></td>
+      <td><a href="../../repositories/repository-dashboard/">Quality dashboard</a></td>
       <td>Live</td>
-      <td>-</td>
+      <td>Set to get data from the new Coverage engine on February 6th 2024.</td>
     </tr>
     <tr>
-      <td><a href="#migrated-pages">Coverage pull request list page</a></td>
-      <td>Live</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td><a href="#quality-pull-request-page">Quality pull request page</a></td>
-      <td>Planned</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td><a href="#diff-tabs">Coverage pull request page</a></td>
-      <td>In progress</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td><a href="#quality-commit-page">Quality commit page</a></td>
-      <td>Planned</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td><a href="#coverage-commit-page">Coverage commit page</a></td>
-      <td>Live</td>
+      <td>Other pages and components</td>
+      <td>Ongoing</td>
       <td>-</td>
     </tr>
   </tbody>
 </table>
 
-Because of this transition, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to [differences in reported metrics](#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines).
+!!! note
+    Because of this transition, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to [differences in reported metrics](#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines).
 
 ## Git provider status checks from the new Coverage engine {: id="status-checks"}
 
@@ -161,34 +142,6 @@ If you are using the old status check to block merging pull requests on GitHub, 
 %}
 
 On December 7th 2023, the new Coverage engine started posting coverage summaries to GitHub, replacing the old Coverage engine.
-
-## Codacy app UI
-
-{%
-    include-markdown "../../assets/includes/coverage-github-accept-permissions.md"
-    start="<!--accept-permission-start-->"
-    end="<!--accept-permission-end-->"
-%}
-
-### Quality dashboard, Coverage dashboard, Quality pull request list page, and Coverage pull request list page {: id="migrated-pages" }
-
-On February 6th 2024, the [Quality dashboard](../../repositories/repository-dashboard.md), [Coverage dashboard](../../repositories-coverage/repository-dashboard.md), [Quality pull request list page](../../repositories/pull-requests.md), and [Coverage pull request list page](../../repositories-coverage/pull-requests.md) were set to get data from the new Coverage engine.
-
-### Quality pull request page
-
-A redesigned [Quality pull request](../../repositories/pull-requests.md) page is planned to be released in the near future and will get coverage data from the new Coverage engine.
-
-### Coverage pull request page {: id="diff-tabs"}
-
-On December 27th 2023, the [diff tab of the Coverage pull request page](../../repositories-coverage/pull-requests.md#diff-tab) was set to get data from the new Coverage engine.
-
-### Quality commit page
-
-A redesigned [Quality commit](../../repositories/commits.md) page is planned to be released in the near future and will get coverage data from the new Coverage engine.
-
-### Coverage commit page
-
-On February 8th 2024, the [Coverage commit](../../repositories-coverage/commits.md) page was set to get data from the new Coverage engine.
 
 ## New Coverage engine side effects
 
