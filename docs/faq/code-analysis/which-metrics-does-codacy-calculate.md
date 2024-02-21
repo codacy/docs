@@ -57,6 +57,8 @@ Codacy calculates the number of issues in the following static code analysis cat
 -   **Unused Code:** Unused variables and methods, code that can't be reached
 -   **Security:** Potential security vulnerabilities, including hard-coded passwords and keys (secret scanning), vulnerable dependencies (software composition analysis or SCA), and insecure code patterns (static application security testing or SAST). For more information, see the complete [list of security issue categories](../../organizations/managing-security-and-risk.md#supported-security-categories)
 -   **Documentation:** Methods and classes that don't have the correct comment annotations
+-   **Best Practices:** Code that doesn't follow generally accepted best practices
+-   **Comprehensibility:** Code difficult to understand and modify
 <!--issue-categories-end-->
 
 Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the issue cost **relative to a baseline of 1 point per line of code**, where the cost of each issue depends on its severity: Critical = 10 points, Medium = 5 points, Minor = 1 point. This means that if your repository has 50% issues, the amount and severity of the issues in your repository is half of the baseline.
