@@ -10,7 +10,7 @@ pip3 install -r requirements.txt
 
 ## check-security-tools
 
-Validates if the source file for the page [Security Monitor](https://docs.codacy.com/repositories/security-monitor/) mentions the tools returned by the Codacy API endpoint [listTools](https://api.codacy.com/api/api-docs#codacy-api-tools) that include security code patterns.
+Validates if the source file for the page [Managing security and risk](https://docs.codacy.com/organizations/managing-security-and-risk/) mentions the tools returned by the Codacy API endpoint [<span class="skip-vale">listTools</span>](https://api.codacy.com/api/api-docs#codacy-api-tools) that include security code patterns.
 
 ```bash
 ./check-security-tools.py
