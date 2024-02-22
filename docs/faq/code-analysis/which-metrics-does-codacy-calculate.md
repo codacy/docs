@@ -49,15 +49,15 @@ Codacy displays grades on the following places:
 Codacy calculates the number of issues in the following static code analysis categories:
 
 <!--issue-categories-start-->
--   **Code Style:** Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks
--   **Error Prone:** Code that may hide bugs and language keywords that should be used with caution, such as the operator `==` in JavaScript or `Option.get` in Scala
--   **Code Complexity:** High complexity methods and classes that should be refactored
+-   **Code style:** Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks
+-   **Error prone:** Code that may hide bugs and language keywords that should be used with caution, such as the operator `==` in JavaScript or `Option.get` in Scala
+-   **Code complexity:** High complexity methods and classes that should be refactored
 -   **Performance:** Code that can have performance problems
 -   **Compatibility:** Mainly for frontend code, compatibility problems across different browser versions
--   **Unused Code:** Unused variables and methods, code that can't be reached
+-   **Unused code:** Unused variables and methods, code that can't be reached
 -   **Security:** Potential security vulnerabilities, including hard-coded passwords and keys (secret scanning), vulnerable dependencies (software composition analysis or SCA), and insecure code patterns (static application security testing or SAST). For more information, see the complete [list of security issue categories](../../organizations/managing-security-and-risk.md#supported-security-categories)
 -   **Documentation:** Methods and classes that don't have the correct comment annotations
--   **Best Practice:** Code that doesn't follow the recommended coding standards and best practices
+-   **Best practice:** Code that doesn't follow the recommended coding standards and best practices
 -   **Comprehensibility:** Code that can be difficult to understand and modify
 <!--issue-categories-end-->
 
