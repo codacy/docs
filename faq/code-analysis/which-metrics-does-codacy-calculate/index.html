@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy scans your code for issues and calculates code complexity, duplication, and coverage metrics. Besides this, Codacy also calculates a grade for your repository and files based on all calculated code quality metrics.">
       
       
-        <meta http-equiv="last-modified" content="2024-02-08 09:49:09">
+        <meta http-equiv="last-modified" content="2024-02-23 17:57:43">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/which-metrics-does-codacy-calculate/">
@@ -4162,14 +4162,16 @@
 <h2 id="issues">Issues<a class="headerlink" href="#issues" title="Permanent link">#</a></h2>
 <p>Codacy calculates the number of issues in the following static code analysis categories:</p>
 <ul>
-<li><strong>Code Style:</strong> Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks</li>
-<li><strong>Error Prone:</strong> Code that may hide bugs and language keywords that should be used with caution, such as the operator <code>==</code> in JavaScript or <code>Option.get</code> in Scala</li>
-<li><strong>Code Complexity:</strong> High complexity methods and classes that should be refactored</li>
+<li><strong>Code style:</strong> Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks</li>
+<li><strong>Error prone:</strong> Code that may hide bugs and language keywords that should be used with caution, such as the operator <code>==</code> in JavaScript or <code>Option.get</code> in Scala</li>
+<li><strong>Code complexity:</strong> High complexity methods and classes that should be refactored</li>
 <li><strong>Performance:</strong> Code that can have performance problems</li>
 <li><strong>Compatibility:</strong> Mainly for frontend code, compatibility problems across different browser versions</li>
-<li><strong>Unused Code:</strong> Unused variables and methods, code that can't be reached</li>
+<li><strong>Unused code:</strong> Unused variables and methods, code that can't be reached</li>
 <li><strong>Security:</strong> Potential security vulnerabilities, including hard-coded passwords and keys (secret scanning), vulnerable dependencies (software composition analysis or SCA), and insecure code patterns (static application security testing or SAST). For more information, see the complete <a href="../../../organizations/managing-security-and-risk/#supported-security-categories">list of security issue categories</a></li>
 <li><strong>Documentation:</strong> Methods and classes that don't have the correct comment annotations</li>
+<li><strong>Best practice:</strong> Code that doesn't follow the recommended coding standards and best practices</li>
+<li><strong>Comprehensibility:</strong> Code that can be difficult to understand and modify</li>
 </ul>
 <p>Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the issue cost <strong>relative to a baseline of 1 point per line of code</strong>, where the cost of each issue depends on its severity: Critical = 10 points, Medium = 5 points, Minor = 1 point. This means that if your repository has 50% issues, the amount and severity of the issues in your repository is half of the baseline.</p>
 <p>Codacy displays issues on the following places:</p>
@@ -4513,7 +4515,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 8, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 23, 2024</span>
     
   </small>
 </div>
