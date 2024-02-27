@@ -23,7 +23,6 @@ The next sections describe each area of the commit detail page.
 
 This area displays the information that identifies the commit (commit message, committer, SHA hash, and date), as well as:
 
--   The analysis status<!-- TODO ALA-643 Confirm -->
 -   A link to the commit on your Git provider
 -   A [button to reanalyze the commit](../faq/repositories/how-do-i-reanalyze-my-repository.md), enabled when the committer [is part of your organization](../organizations/managing-people.md)
 -   A link to the analysis logs
@@ -31,21 +30,17 @@ This area displays the information that identifies the commit (commit message, c
 <!--quality-overview-start-->
 ## {{ page.meta.page_name.capitalize() }} analysis status and quality overview {: id="quality-overview"}
 
-<!-- TODO ALA-643 We'll only show dta if there's a gate set -->
-
 <!-- vale off -->
 ![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)
 <!-- vale on -->
 
-When an analysis is running, this area displays a detailed analysis status, analysis times, and a link to inspect the logs.<!-- TODO ALA-643 Confirm -->
-
-After an analysis completes, this area displays the code quality metrics and gate status for the {{ page.meta.page_name }}:
+This area displays the code quality metrics and gate status for the {{ page.meta.page_name }}:
 
 -   The analysis status is either **Up to quality standards** or **Not up to quality standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
 
     If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to quality standards**.
 
--   The variation of the following code quality metrics introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %}:
+-   For code quality metrics [with a gate set up](../repositories-configure/adjusting-quality-gates.md), the variation introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %}:
 
     -   **Issues:** Number of new or fixed issues
 {% if page.meta.page_name == "commit" %}
@@ -79,9 +74,7 @@ After an analysis completes, this area displays the code quality metrics and gat
 <!--tabs-start-->
 ## Issues tab {: id="issues-tabs"}
 
-The **Issues** tab displays the lists of issues that the {{ page.meta.page_name }} creates or fixes.
-
-<!-- TODO ALA-643 Document filters: new issues, fixed issues, potentially fixed issues, severity, category, file -->
+The **Issues** tab displays the lists of issues that the {{ page.meta.page_name }} creates or fixes. Use the sidebar filters to narrow down the list to new issues (including issues of specific severity or category), issues within a specific file, fixed issues, potential new issues, or potential fixed issues.
 
 {%
     include-markdown "./issues.md"
@@ -93,42 +86,41 @@ To [ignore or manage an issue](issues.md#ignoring-and-managing-issues), click th
 
 ![Issues tab](images/{{ page.meta.file_name }}-tab-issues.png)
 
-### Possible issues
+### Potential issues {: id="possible-issues"}
 
-In some situations, Codacy may report either new or fixed **possible** issues on a {{ page.meta.page_name }}, which means that the code analysis detected these issues in lines of code that weren't changed by that {{ page.meta.page_name }}. This gives you awareness to how your changes may be affecting other parts of your code.
+Codacy may label some issues as **potential**, which means that the code analysis detected these issues in lines of code that weren't changed by the analyzed {{ page.meta.page_name }}. This increases the visibility of how changes may affect other parts of your code.<!-- TODO ALA-643 Review sentence -->
 
-The following are example situations that can lead to possible issues:
+The following are example situations that can lead to potential issues:
 
 -   The issue was either created or fixed in the current {{ page.meta.page_name }}, but the static code analysis tools reported the issue on a line that didn't change in the {{ page.meta.page_name }}. For example, if you remove the line containing the declaration of a variable you may get an "undeclared variable" issue in other lines that use that variable.
 
--   If a file had [more than 50 issues reported by the same tool](../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md) and you push a new commit that fixes some of these issues, Codacy will report more issues until the limit of 50 issues. These issues will be possible issues if they're outside the lines of code changed in the new commit.
+-   If a file had [more than 50 issues reported by the same tool](../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md) and you push a new commit that fixes some of these issues, Codacy will report more issues until the limit of 50 issues. These issues will be potential issues if they're outside the lines of code changed in the new commit.
 
 !!! note
-    **If you're using GitHub** you may see [annotations](../repositories-configure/integrations/github-integration.md#issue-annotations)  for possible issues reported under **Unchanged files with check annotations** on the **Files changed** tab of your pull requests.
+    **If you're using GitHub** you may see [annotations](../repositories-configure/integrations/github-integration.md#issue-annotations)  for potential issues reported under **Unchanged files with check annotations** on the **Files changed** tab of your pull requests.
 
-    This happens when Codacy reports possible issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/).
+    This happens when Codacy reports potential issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/).
 
 ## Duplication tab {: id="duplication-tabs"}
 
-The **Duplication** tab displays the lists of duplicated blocks that the {{ page.meta.page_name }} creates or fixes.
+The **Duplication** tab displays the lists of duplicated blocks that the {{ page.meta.page_name }} creates or fixes. You can click a duplicated block to expand it and inspect the code.
 
 ![New Duplication and Fixed Duplication tabs](./images/{{ page.meta.file_name }}-tab-duplication.png)<!-- TODO ALA-643 Screenshot -->
 
 ## Complexity tab
-<!-- TODO ALA-643 Review section -->
 
-The **Complexity** tab displays the complexity changes introduced by the {{ page.meta.page_name }}.
-
-<!-- TODO ALA-643 Document filters: increase level, decrease -->
+The **Complexity** tab displays the complexity changes introduced by the {{ page.meta.page_name }}. Use the sidebar filters to narrow down the list to high increase, low increase, or decrease.
 
 ![Complexity tab](./images/{{ page.meta.file_name }}-tab-complexity.png)<!-- TODO ALA-643 Screenshot -->
 
-## Coverage tab
-<!-- TODO ALA-643 Draft section -->
+{% if page.meta.page_name == "pull request" %}
+{%
+    include-markdown "../repositories-coverage/commits.md"
+    start="<!--tab-diff-start-->"
+    end="<!--tab-diff-end-->"
+%}
+{% endif %}
 
-![Coverage tab](./images/{{ page.meta.file_name }}-tab-coverage.png)<!-- TODO ALA-643 Screenshot -->
-
-<!-- TODO ALA-643 Confirm tab colors are kept -->
 ## Diff tab
 
 The **Diff** tab displays the differences in each file that was changed in the {{ page.meta.page_name }}. The background of the changed lines depends on the change:
@@ -138,6 +130,8 @@ The **Diff** tab displays the differences in each file that was changed in the {
 -   **Green**: New version of a changed line with added characters highlighted in bright green
 -   **Bright green**: New line
 
+Additionally, lines with issues are highlighted according to issue severity and include a button to view more details and navigate to the issue.
+
 <!-- vale off -->
 ![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)
 <!-- vale on -->
@@ -146,7 +140,7 @@ The **Diff** tab displays the differences in each file that was changed in the {
 
 The **Files** tab displays the variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) that the {{ page.meta.page_name }} introduces to the files in your repository, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
 
--   **Issues:** Number of new or fixed issues
+-   **New issues:** Number of new or fixed issues
 -   **Duplication:** Variation of the number of duplicated code blocks
 -   **Complexity:** Variation of complexity
 -   **Coverage variation:** Variation of code coverage percentage relative to the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}
