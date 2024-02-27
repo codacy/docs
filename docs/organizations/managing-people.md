@@ -15,7 +15,7 @@ To list and manage the people in your organization, open your organization **Set
     In some Enterprise plans, Codacy automatically manages seat usage for your organization based on the contribution to your private repositories:
 
     -   Adds new seats for people who commit to your private repositories and analyzes their commits.
-    -   Deactivates the seats for people who perform no commit or have no commits analyzed for 90 consecutive days.
+    -   Deactivates the seats of people who perform no commit or have no commits analyzed for 90 consecutive days.
     -   Only people committing to your private repositories or having their commits analyzed within the last 90 days occupy a seat in your organization.
 
 ![People in an organization](images/organization-people.png)
