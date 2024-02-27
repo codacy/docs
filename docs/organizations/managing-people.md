@@ -12,11 +12,11 @@ For **private repositories**, Codacy only analyzes commits from people in your C
 To list and manage the people in your organization, open your organization **Settings**, page **People**. This page also shows their last activity on Codacy.
 
 !!! note
-    In some Enterprise plans, Codacy automatically manages people activity and seat usage for your organization:
+    In some Enterprise plans, Codacy automatically manages seat usage for your organization based on the contribution to your private reposiotries:
 
-    -   Adds new people who commit to your private repositories and analyzes their commits.
-    -   Deactivates people who perform no commit or login for 90 consecutive days.
-    -   Updates your organization seats accordingly when adding or deactivating people. Inactive people don't occupy a seat in your organization.
+    -   Adds new seats for people who commit to your private repositories and analyzes their commits.
+    -   Deactivates the seats for people who perform no commit for 90 consecutive days.
+    -   Only people committing to your private repositories within the last 90 days occupy a seat in your organization.
 
 ![People in an organization](images/organization-people.png)
 
@@ -73,7 +73,7 @@ When a member or committer leaves an organization:
 To remove people from your organization open your organization **Settings**, page **People**, click the icon next to the member or committer you wish to remove, and select **Remove from organization**.
 
 !!! note
-    For Enterprise plans where Codacy automatically manages people activity for your organization, you can't remove people who had their commits analyzed within the last 90 days because their are still active within the billing period. However, if you remove them from the organization on your Git provider, they no longer have permissions to your repositories on Codacy.
+    For Enterprise plans where Codacy automatically manages seat usage for your organization, you can't remove people who had their commits analyzed within the last 90 days because their are still active within the billing period. However, if you remove them from the organization on your Git provider, they no longer have permissions to your repositories on Codacy.
 
 ![Removing people from your organization](images/organization-people-remove.png)
 
