@@ -12,11 +12,7 @@ For **private repositories**, Codacy only analyzes commits from people in your C
 To list and manage the people in your organization, open your organization **Settings**, page **People**. This page also shows their last activity on Codacy.
 
 !!! note
-    In some Enterprise plans, Codacy automatically manages seat usage for your organization based on the contribution to your private repositories:
-
-    -   Adds new seats for people who commit to your private repositories and analyzes their commits.
-    -   Deactivates the seats of people who perform no commit or have no commits analyzed for 90 consecutive days.
-    -   Only people committing to your private repositories or having their commits analyzed within the last 90 days occupy a seat in your organization.
+    In some Enterprise plans, Codacy automatically assigns a seat to any person with at least one analyzed commit to your private repositories over the past 90 days and frees up the seat after 90 days of code analysis inactivity.
 
 ![People in an organization](images/organization-people.png)
 
