@@ -13,13 +13,13 @@ By default, the page lists the commits on the main branch of your repository, bu
 
 Click a specific commit to see detailed information about the code quality changes introduced by that commit.
 
-![Commit detail](images/commits-detail.png)<!-- TODO ALA-643 Screenshot -->
+![Commit detail](images/commits-detail.png)
 
 The next sections describe each area of the commit detail page.
 
 ## Commit status {: id="status"}
 
-![Commit status](images/commits-detail-status.png)<!-- TODO ALA-643 Screenshot -->
+![Commit status](images/commits-detail-status.png)
 
 This area displays the information that identifies the commit (commit message, committer, SHA hash, and date), as well as:
 
@@ -104,13 +104,13 @@ The following are example situations that can lead to potential issues:
 
 The **Duplication** tab displays the lists of clones (duplicated code blocks) that the {{ page.meta.page_name }} creates or fixes. You can click a clone to expand it and inspect the code.
 
-![Duplication tabs](./images/{{ page.meta.file_name }}-tab-duplication.png)<!-- TODO ALA-643 Screenshot -->
+![Duplication tabs](./images/{{ page.meta.file_name }}-tab-duplication.png)
 
 ## Complexity tab
 
 The **Complexity** tab displays the complexity changes introduced by the {{ page.meta.page_name }}. Use the sidebar filters to narrow down the list to high increase, low increase, or improvement.
 
-![Complexity tab](./images/{{ page.meta.file_name }}-tab-complexity.png)<!-- TODO ALA-643 Screenshot -->
+![Complexity tab](./images/{{ page.meta.file_name }}-tab-complexity.png)
 
 <!-- TODO ALA-643 Confirm there's no coverage tab on commits -->
 {% if page.meta.page_name == "pull request" %}

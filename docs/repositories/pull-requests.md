@@ -13,7 +13,7 @@ By default, the page lists open pull requests, but you can click the **Closed** 
 
 Click a specific pull request to see detailed information about the code quality changes introduced by that pull request.
 
-![Pull request detail](images/pull-requests-detail.png)<!-- TODO ALA-643 Screenshot -->
+![Pull request detail](images/pull-requests-detail.png)
 
 The next sections describe each area of the pull request detail page.
 
@@ -25,7 +25,7 @@ This area displays the information that identifies the pull request (name, autho
 -   A [button to reanalyze the latest pull request commit](../faq/repositories/how-do-i-reanalyze-my-repository.md), enabled when the committer [is part of your organization](../organizations/managing-people.md)
 -   A link to the analysis logs
 
-![Pull request status](images/pull-requests-detail-status.png)<!-- TODO ALA-643 Screenshot -->
+![Pull request status](images/pull-requests-detail-status.png)
 
 {%
     include-markdown "./commits.md"
@@ -45,7 +45,7 @@ The **Commits** tab displays an overview of each commit included in the pull req
 
 Click a specific commit to see [detailed information about that commit](commits.md#status).
 
-![Commits tab](images/pull-requests-tab-commits.png)<!-- TODO ALA-643 Screenshot -->
+![Commits tab](images/pull-requests-tab-commits.png)
 
 ## See also
 
