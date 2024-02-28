@@ -40,15 +40,14 @@ This area displays the code quality metrics and gate status for the {{ page.meta
 
     If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to quality standards**.
 
--   For code quality metrics [with a gate set up](../repositories-configure/adjusting-quality-gates.md), the variation introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %}:
+-   The variation introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %} for code quality metrics [with a gate set up](../repositories-configure/adjusting-quality-gates.md):
 
-    -   **Issues:** Number of new or fixed issues
+    -   **Issues:** Number of new issues
 {% if page.meta.page_name == "commit" %}
     -   **Duplication:** Variation of the number of duplicated code blocks
     -   **Complexity:** Variation of complexity
     -   **Coverage:** Variation of code coverage percentage relative to the parent commit
 {% else %}
-    -   **Security issues:** Number of new or fixed security issues
     -   **Coverage variation:** Variation of code coverage percentage relative to the target branch
     -   **Diff coverage:** Code coverage of the coverable lines added or changed by the pull request, or `∅` (not applicable) if there aren't any coverable lines added or changed
 {% endif %}
@@ -65,7 +64,7 @@ This area displays the code quality metrics and gate status for the {{ page.meta
 
     -   **Green:** The metric passes the quality gate
     -   **Red:** The metric fails the quality gate
-    -   **Gray:** There aren't quality gate rules configured for the metric or the value doesn't impact the quality gate
+    -   **Gray:** Coverage data is missing<!-- TODO ALA-643 Confirm this only applies to coverage -->
 
     !!! note
         If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.
@@ -103,16 +102,17 @@ The following are example situations that can lead to potential issues:
 
 ## Duplication tab {: id="duplication-tabs"}
 
-The **Duplication** tab displays the lists of duplicated blocks that the {{ page.meta.page_name }} creates or fixes. You can click a duplicated block to expand it and inspect the code.
+The **Duplication** tab displays the lists of clones (duplicated code blocks) that the {{ page.meta.page_name }} creates or fixes. You can click a clone to expand it and inspect the code.
 
-![New Duplication and Fixed Duplication tabs](./images/{{ page.meta.file_name }}-tab-duplication.png)<!-- TODO ALA-643 Screenshot -->
+![Duplication tabs](./images/{{ page.meta.file_name }}-tab-duplication.png)<!-- TODO ALA-643 Screenshot -->
 
 ## Complexity tab
 
-The **Complexity** tab displays the complexity changes introduced by the {{ page.meta.page_name }}. Use the sidebar filters to narrow down the list to high increase, low increase, or decrease.
+The **Complexity** tab displays the complexity changes introduced by the {{ page.meta.page_name }}. Use the sidebar filters to narrow down the list to high increase, low increase, or improvement.
 
 ![Complexity tab](./images/{{ page.meta.file_name }}-tab-complexity.png)<!-- TODO ALA-643 Screenshot -->
 
+<!-- TODO ALA-643 Confirm there's no coverage tab on commits -->
 {% if page.meta.page_name == "pull request" %}
 {%
     include-markdown "../repositories-coverage/commits.md"
@@ -140,7 +140,7 @@ Additionally, lines with issues are highlighted according to issue severity and 
 
 The **Files** tab displays the variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) that the {{ page.meta.page_name }} introduces to the files in your repository, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
 
--   **New issues:** Number of new or fixed issues
+-   **New issues:** Number of new issues<!-- TODO ALA-643 Confirm this correct -->
 -   **Duplication:** Variation of the number of duplicated code blocks
 -   **Complexity:** Variation of complexity
 -   **Coverage variation:** Variation of code coverage percentage relative to the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}
