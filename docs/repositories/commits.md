@@ -5,7 +5,7 @@ file_name: "commits"
 
 # Quality Commits page
 
-The **Quality Commits page** displays an overview of the commits in your repository, such as the analysis status and the code quality metrics for each commit. This allows you to monitor the evolution of the code quality in your repository per commit.
+The **Quality Commits page** displays an overview of the commits in your repository, such as the analysis status and the code quality metrics for each commit. This allows you to monitor the evolution of the code quality per commit in your repository.
 
 By default, the page lists the commits on the main branch of your repository, but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display commits on other branches.
 
@@ -21,7 +21,7 @@ The next sections describe each area of the commit detail page.
 
 ![Commit status](images/commits-detail-status.png)
 
-This area displays the information that identifies the commit (commit message, committer, SHA hash, and date), as well as:
+This area displays the information that identifies the commit (commit message, committer, SHA hash, and last updated date), as well as:
 
 -   A link to the commit on your Git provider
 -   A [button to reanalyze the commit](../faq/repositories/how-do-i-reanalyze-my-repository.md), enabled when the committer [is part of your organization](../organizations/managing-people.md)
@@ -38,18 +38,18 @@ This area displays the code quality metrics and gate status for the {{ page.meta
 
 -   The analysis status is either **Up to quality standards** or **Not up to quality standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
 
-    If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Up to quality standards**.
+    If there are no gate rules enabled for {{ page.meta.page_name }}s, the status is always **Up to quality standards**.
 
 -   The variation introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %} for code quality metrics [with a gate set up](../repositories-configure/adjusting-quality-gates.md):
 
     -   **Issues:** Number of new issues
 {% if page.meta.page_name == "commit" %}
-    -   **Duplication:** Variation of the number of duplicated code blocks
-    -   **Complexity:** Variation of complexity
-    -   **Coverage:** Variation of code coverage percentage relative to the parent commit
+    -   **Duplication:** Changes in the number of duplicated code blocks
+    -   **Complexity:** Changes in code complexity
+    -   **Coverage:** Changes in code coverage percentage compared with the parent commit
 {% else %}
-    -   **Coverage variation:** Variation of code coverage percentage relative to the target branch
-    -   **Diff coverage:** Code coverage of the coverable lines added or changed by the pull request, or `∅` (not applicable) if there aren't any coverable lines added or changed
+    -   **Diff coverage:** Code coverage of the coverable lines affected by the pull request, or `∅` (not applicable) if there are no coverable lines
+    -   **Coverage variation:** Changes in code coverage percentage compared with the target branch
 {% endif %}
 
     Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
@@ -67,13 +67,13 @@ This area displays the code quality metrics and gate status for the {{ page.meta
     -   **Gray:** Coverage data is missing<!-- TODO ALA-643 Confirm this only applies to coverage -->
 
     !!! note
-        If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.
+        If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.<!-- TODO ALA-643 Confirm this is still correct -->
 <!--quality-overview-end-->
 
 <!--tabs-start-->
 ## Issues tab {: id="issues-tabs"}
 
-The **Issues** tab displays the lists of issues that the {{ page.meta.page_name }} creates or fixes. Use the sidebar filters to narrow down the list to new issues (including issues of specific severity or category), issues within a specific file, fixed issues, potential new issues, or potential fixed issues.
+The **Issues** tab displays the lists of issues that the {{ page.meta.page_name }} creates or fixes. Use the sidebar filters to filter the list by new issues (including issues of specific severity or category), issues within a specific file, fixed issues, [potential new issues, or potential fixed issues](#possible-issues).
 
 {%
     include-markdown "./issues.md"
@@ -102,13 +102,13 @@ The following are example situations that can lead to potential issues:
 
 ## Duplication tab {: id="duplication-tabs"}
 
-The **Duplication** tab displays the lists of clones (duplicated code blocks) that the {{ page.meta.page_name }} creates or fixes. You can click a clone to expand it and inspect the code.
+The **Duplication** tab displays the lists of clones (duplicated code blocks) that the {{ page.meta.page_name }} adds or fixes. You can click a clone to expand it and inspect the code.
 
 ![Duplication tabs](./images/{{ page.meta.file_name }}-tab-duplication.png)
 
 ## Complexity tab
 
-The **Complexity** tab displays the complexity changes introduced by the {{ page.meta.page_name }}. Use the sidebar filters to narrow down the list to high increase, low increase, or improvement.
+The **Complexity** tab displays the complexity changes introduced by the {{ page.meta.page_name }}. Use the sidebar filters to filter the list by high increase, low increase, or improvement.
 
 ![Complexity tab](./images/{{ page.meta.file_name }}-tab-complexity.png)
 
@@ -141,9 +141,9 @@ Additionally, lines with issues are highlighted according to issue severity and 
 The **Files** tab displays the variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) that the {{ page.meta.page_name }} introduces to the files in your repository, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
 
 -   **New issues:** Number of new issues<!-- TODO ALA-643 Confirm this correct -->
--   **Duplication:** Variation of the number of duplicated code blocks
--   **Complexity:** Variation of complexity
--   **Coverage variation:** Variation of code coverage percentage relative to the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}
+-   **Duplication:** Changes in the number of duplicated code blocks
+-   **Complexity:** Changes in code complexity
+-   **Coverage variation:** Changes in code coverage percentage compared with the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}
 
 Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
 
