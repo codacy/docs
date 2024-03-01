@@ -57,7 +57,7 @@ You can define one or more of the following filters:
 
 Use the options in the menu of each issue to:
 
--   **Copy the link** to the issue.
+-   **Copy the link** to the issue (available only for issues listed on the Issues page).<!-- TODO ALA-643 confirm -->
 
 -   **Ignore the issue** and hide it from the list.
 
