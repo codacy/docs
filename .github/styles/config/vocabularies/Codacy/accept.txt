@@ -87,6 +87,7 @@ Trivy
 tooltip
 TSLint
 TSQLLint
+unassigns
 vacuumdb
 Visualforce
 Xcode

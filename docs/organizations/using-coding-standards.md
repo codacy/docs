@@ -1,18 +1,11 @@
 # Using coding standards
 
-Coding standards help you ensure that Codacy analyzes multiple repositories with the same tool and code pattern configurations. For example, you can use a coding standard to ensure that a group of repositories follow the same security rules or coding conventions.
+Coding standards store your preferred tool and code pattern configurations and let you apply them to multiple repositories, ensuring consistent code quality and security across your organization.
 
-Create coding standards on your organization to define different tool and code pattern configurations that apply to a set of programming languages. After creating a coding standard, apply it to your repositories:
-
--   Each repository can only follow one coding standard at a time. Applying a new coding standard to a repository <span class="skip-vale">unassigns</span> any previously applied coding standard.
--   Applying a coding standard to a repository only affects the configurations of the tools that are included in the coding standard, while the remaining tool and code pattern configurations of the repository remain unchanged.
--   If you later edit the tool and code pattern configurations in a coding standard, the repositories following that coding standard automatically start using the updated configurations on the next analysis.
--   When you customize the tools or code patterns of a repository that follows a coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.
-
-Optionally, set a default coding standard to apply it automatically to all new repositories that you add to Codacy. If no coding standard is set as default, new repositories don't follow any coding standard and use the Codacy default configurations instead.
+A repository can only follow one coding standard at a time. Assigning a coding standard to a repository unassigns any previously assigned coding standard.
 
 !!! important
-    Coding standards turn tools with configuration files on and off. Those tool configuration files, however, take precedence over the code patterns defined on the coding standard.
+    When using a tool configuration file alongside a coding standard, the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.
 
 ## Creating a coding standard {: id="creating"}
 
@@ -35,6 +28,9 @@ To create a coding standard for your organization:
 
     The coding standard will only include configurations for the tools that support at least one of the selected languages.
 
+    !!! important
+        If a coding standard doesn't include a language and the associated tools, Codacy uses tool defaults and may still analyze that language. To prevent this, include all the languages and tools that you want the coding standard to include.
+
     ![Selecting the languages for the coding standard](images/coding-standard-select-languages.png)
 
 1.  Configure the tools and patterns of the coding standard and click **Next: Select and apply to repositories**.
@@ -55,7 +51,9 @@ To create a coding standard for your organization:
 
     ![Applying the coding standard to repositories](images/coding-standard-apply.png)
 
-## Setting a coding standard as default {: id="set-default"}
+## Defining a default coding standard {: id="set-default"}
+
+For ease of management, you can define a default coding standard that automatically applies to new repositories. In the absence of a default coding standard, Codacy applies global defaults to all new repositories.
 
 To set a coding standard as default:
 
@@ -69,6 +67,9 @@ To set a coding standard as default:
     ![Setting a coding standard as the default](images/coding-standard-set-default.png)
 
 ## Editing a coding standard {: id="editing"}
+
+!!! note
+    Any edits to the configurations of a coding standard are automatically applied from the next analysis of each associated repository. However, any edit to the configurations of an associated repository unassigns the coding standard from that repository.
 
 To edit an existing coding standard or change the repositories that follow that coding standard:
 
