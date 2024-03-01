@@ -87,7 +87,7 @@ To [ignore or manage an issue](issues.md#ignoring-and-managing-issues), click th
 
 ### Potential issues {: id="possible-issues"}
 
-Codacy may label some issues as **potential**, which means that the code analysis detected these issues in lines of code that weren't changed by the analyzed {{ page.meta.page_name }}. This increases the visibility of how changes may affect other parts of your code.<!-- TODO ALA-643 Review sentence -->
+Codacy may label some issues as **potential**, which means that the code analysis detected these issues in lines of code that weren't changed by the analyzed {{ page.meta.page_name }}. This highlights potential consequences in other parts of your codebase.
 
 The following are example situations that can lead to potential issues:
 
@@ -140,7 +140,7 @@ Additionally, lines with issues are highlighted according to issue severity and 
 
 The **Files** tab displays the variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) that the {{ page.meta.page_name }} introduces to the files in your repository, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
 
--   **New issues:** Number of new issues<!-- TODO ALA-643 Confirm this correct -->
+-   **New issues:** Number of new or fixed issues<!-- TODO ALA-643 Confirm this correct and we also display fixed issues -->
 -   **Duplication:** Changes in the number of duplicated code blocks
 -   **Complexity:** Changes in code complexity
 -   **Coverage variation:** Changes in code coverage percentage compared with the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}
