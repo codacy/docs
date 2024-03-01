@@ -26,7 +26,7 @@ To reanalyze a branch in your repository:
 
     ![Selecting the last commit on a branch](images/reanalyze-repository-commits-list.png)
 
-1.  Click the icon next to the **Current status** of the commit to trigger a reanalysis. Codacy will display a message when the analysis is complete.
+1.  Click the **Reanalyze** button to trigger a reanalysis.
 
     ![Reanalyzing a commit](images/reanalyze-repository-commit.png)
 
@@ -38,7 +38,7 @@ To reanalyze a pull request in your repository:
 
     ![Selecting a pull request](images/reanalyze-repository-prs-list.png)
 
-1.  Click the icon next to the **Current status** of the pull request to trigger a reanalysis. Codacy will display a message when the analysis is complete.
+1.  Click the **Reanalyze** button to trigger a reanalysis.
 
     ![Reanalyzing a pull request](images/reanalyze-repository-pr.png)
 

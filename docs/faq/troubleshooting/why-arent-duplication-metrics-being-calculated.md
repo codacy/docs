@@ -14,7 +14,7 @@ When this happens, Codacy doesn't display code duplication metrics for the affec
 
     ![New duplication for a commit](images/duplication-commits.png)
 
--   The analysis logs for commits won't display a duplication analysis task for the tool corresponding to the affected language.
+-   The analysis logs for commits won't display a duplication analysis task for the tool corresponding to the affected language.<!-- TODO ALA-643 Is this still true? -->
 
     ![Analysis logs for a commit](images/duplication-logs.png)
 

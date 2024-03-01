@@ -28,7 +28,7 @@ This area displays the information that identifies the commit (commit message, c
 -   A link to the analysis logs
 
 <!--quality-overview-start-->
-## {{ page.meta.page_name.capitalize() }} analysis status and quality overview {: id="quality-overview"}
+## {{ page.meta.page_name.capitalize() }} quality overview {: id="quality-overview"}
 
 <!-- vale off -->
 ![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)
