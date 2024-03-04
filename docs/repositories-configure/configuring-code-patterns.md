@@ -49,9 +49,7 @@ For example, when adding a new repository on Codacy you can copy the tool and co
 !!! tip
     To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, [use an organization coding standard](../organizations/using-coding-standards.md) instead.
 
-    Alternatively, you can also copy the tool and code pattern configurations [from one repository to multiple target repositories](../organizations/copying-code-patterns-between-repositories.md).
-
-<!--code-patterns-copy-start-->
+<!-- TODO ALA-904 Check that this still applies -->
 !!! important
     Consider the following when using this feature:
 
@@ -64,7 +62,6 @@ For example, when adding a new repository on Codacy you can copy the tool and co
     | Source repository | Target repository | Target repository after import |
     |-------------------|-------------------|--------------------------------|
     | ![Source repository](images/code-patterns-import-example-source.svg) | ![Target repository](images/code-patterns-import-example-target.svg) | ![Target repository after import](images/code-patterns-import-example-final.svg) |
-<!--code-patterns-copy-end-->
 
 To import the tool and code pattern configurations from another repository:
 
@@ -322,5 +319,4 @@ The table below lists the configuration file names that Codacy detects and suppo
 ## See also
 
 -   [Applying a coding standard across multiple repositories](../organizations/using-coding-standards.md)
--   [Copying code patterns between repositories](../organizations/copying-code-patterns-between-repositories.md)
 -   [How to implement Google JavaScript style guide with Codacy](https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/)
