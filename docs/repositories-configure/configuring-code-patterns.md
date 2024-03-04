@@ -6,10 +6,9 @@ description: Configure the static analysis tools and code patterns that Codacy u
 
 {% include-markdown "../assets/includes/admin-access-control-info.md" %}
 
-By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs in several ways:
+By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs as follows:
 
 -   [Configuring tools and code patterns using the Codacy UI](#configuring-tools-and-code-patterns-using-the-codacy-ui)
--   [Importing configurations from another repository](#import-patterns)
 -   [Using tool configuration files](#using-your-own-tool-configuration-files)
 
 ## Configuring tools and code patterns using the Codacy UI
@@ -21,7 +20,7 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
 1.  Open your repository **Code patterns** page.
 
-    ![Code patterns page](images/code-patterns.png)
+    ![Code patterns page](images/code-patterns.png)<!-- TODO ALA-904 Confirm screenshot matches updates -->
 
 1.  Enable or disable the tools that Codacy will use to analyze the repository.
 
@@ -39,41 +38,6 @@ To configure the tools and code patterns for a repository using the Codacy UI:
     ![Configuring code patterns](images/code-patterns-configure.png)
 
 1.  Optionally, to take the changes into account immediately, [reanalyze the repository manually](../faq/repositories/how-do-i-reanalyze-my-repository.md). Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.
-
-## Importing pattern configurations from another repository {: id="import-patterns"}
-
-Importing tool and code pattern configurations from another repository can help you bootstrap and standardize the tool and code pattern configurations across your repositories.
-
-For example, when adding a new repository on Codacy you can copy the tool and code pattern configurations from an existing repository that's already configured, and then tweak and adapt the settings for your new repository.
-
-!!! tip
-    To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, [use an organization coding standard](../organizations/using-coding-standards.md) instead.
-
-<!-- TODO ALA-904 Check that this still applies -->
-!!! important
-    Consider the following when using this feature:
-
-    -   **Tool matching:** Codacy only copies settings for tools that are available on both the source and target repositories, and overwrites the existing settings for these tools on the target repository.
-    -   **Toggle status:** Codacy copies the enabled or disabled status of the matching tools from the source to the target repository.
-    -   **Configuration files:** Codacy copies the UI configuration of all matching tools, even those set to use configuration files. However, the import doesn't include the configuration mode itself and doesn't copy configuration files across repositories.
-
-    The following example illustrates the points above:
-
-    | Source repository | Target repository | Target repository after import |
-    |-------------------|-------------------|--------------------------------|
-    | ![Source repository](images/code-patterns-import-example-source.svg) | ![Target repository](images/code-patterns-import-example-target.svg) | ![Target repository after import](images/code-patterns-import-example-final.svg) |
-
-To import the tool and code pattern configurations from another repository:
-
-1.  Open your repository **Code patterns** and click **Import patterns**.
-
-    ![Importing code patterns from another repository](images/code-patterns-import.png)
-
-1.  Follow the instructions to select the source repository and complete the import.
-
-1.  Review and adjust your tool and code pattern configurations if necessary.
-
-Codacy will use the updated configurations on the next analysis.
 
 ## Using tool configuration files {: id="using-your-own-tool-configuration-files"}
 
@@ -105,7 +69,7 @@ To use a configuration file for a static analysis tool:
 
         -   For performance reasons, when you update pattern settings using a configuration file, Codacy may display outdated messages for issues identified previously by those patterns.
 
-    ![Using a configuration file](images/code-patterns-config-file.png)
+    ![Using a configuration file](images/code-patterns-config-file.png)<!-- TODO ALA-904 Confirm screenshot matches updates -->
 
 The table below lists the configuration file names that Codacy detects and supports for each tool:
 

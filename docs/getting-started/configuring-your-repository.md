@@ -30,7 +30,7 @@ To configure your repository, follow these steps:
 !!! tip
     To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, [use an organization coding standard](../organizations/using-coding-standards.md).
 
-![Configuring the tools and code patterns](../repositories-configure/images/code-patterns.png)
+![Configuring the tools and code patterns](../repositories-configure/images/code-patterns.png)<!-- TODO ALA-904 Confirm screenshot matches updates -->
 
 ## 3. Adding coverage to your repository (optional) {: id="adding-coverage"}
 
