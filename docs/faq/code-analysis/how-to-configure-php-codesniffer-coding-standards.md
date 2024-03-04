@@ -16,7 +16,7 @@ To enforce a specific PHP_CodeSniffer coding standard you must [create a configu
 
     <https://github.com/codacy/codacy-codesniffer/blob/master/composer.json>
 
-For example, create a text file with the name `.phpcs.xml` to use the PSR12 coding standard but excluding the sniffs `Generic.WhiteSpace.DisallowTabIndent` and `PSR12.Operators.OperatorSpacing`:
+For example, create a text file with the name `phpcs.xml` to use the PSR12 coding standard but excluding the sniffs `Generic.WhiteSpace.DisallowTabIndent` and `PSR12.Operators.OperatorSpacing`:
 
 ```xml
 <?xml version="1.0"?>

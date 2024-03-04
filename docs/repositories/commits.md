@@ -38,7 +38,7 @@ This area displays the quality gate status and an overview of the code quality m
 
 -   The variation of the following code quality metrics introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %}:
 
-    -   **Issues:** Number of new or fixed issues
+    -   **Issues:** Number of new issues
     -   **Duplication:** Variation of the number of duplicated code blocks
     -   **Complexity:** Variation of complexity
 {% if page.meta.page_name == "commit" %}
