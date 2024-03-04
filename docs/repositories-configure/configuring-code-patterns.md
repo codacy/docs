@@ -24,7 +24,7 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
 1.  Enable or disable the tools that Codacy will use to analyze the repository.
 
-    ![Toggling tools](images/code-patterns-toggle-tools.png)
+    ![Toggling tools](images/code-patterns-toggle-tools.png)<!-- TODO ALA-904 Confirm screenshot matches updates -->
 
 1.  Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the sidebar filters. You can filter by language, [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), or status.
 
@@ -35,7 +35,7 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
         -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.
 
-    ![Configuring code patterns](images/code-patterns-configure.png)
+    ![Configuring code patterns](images/code-patterns-configure.png)<!-- TODO ALA-904 Confirm screenshot matches updates -->
 
 1.  Optionally, to take the changes into account immediately, [reanalyze the repository manually](../faq/repositories/how-do-i-reanalyze-my-repository.md). Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.
 
