@@ -336,7 +336,7 @@ Security and risk management supports checking the languages and infrastructure-
 <sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.  
 <sup><span id="client-side">3</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
 <sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/).  
-<sup><span id="eslint-plugin">5</sup>: Includes the shareable config [<span class="skip-vale">nodesecurity</span>](https://www.npmjs.com/package/eslint-config-nodesecurity) and the plugins [angularjs-security-rules](https://www.npmjs.com/package/eslint-plugin-angularjs-security-rules), [no-unsafe-innerhtml](https://www.npmjs.com/package/eslint-plugin-no-unsafe-innerhtml), [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [scanjs-rules](https://www.npmjs.com/package/eslint-plugin-scanjs-rules), [security](https://www.npmjs.com/package/eslint-plugin-security), and [security-node](https://www.npmjs.com/package/eslint-plugin-security-node).  
+<sup><span id="eslint-plugin">5</sup>: Includes the plugins [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [security](https://www.npmjs.com/package/eslint-plugin-security), [security-node](https://www.npmjs.com/package/eslint-plugin-security-node), and [xss](https://www.npmjs.com/package/eslint-plugin-xss).  
 <sup><span id="ruby-31">6</span></sup>: Currently, Codacy doesn't support any static code analysis tool for [Ruby 3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/).  
 
 ## Supported security categories
