@@ -22,7 +22,7 @@ To create a coding standard for your organization:
 
 1.  Enter a unique name and click **Create standard**.
 
-    Optionally, select a repository to use as a baseline for the new coding standard.
+    Optionally, select a repository to use as a baseline for the new coding standard. This is useful if you already have a well-configured repository that you wish to use as a template.
 
     ![Creating a new coding standard](images/coding-standard-create.png)
 
@@ -33,11 +33,11 @@ To create a coding standard for your organization:
          
         If a language is not selected in this step, the associated tools are not necessarily disabled. Rather, Codacy uses default tool configurations, potentially enabling the tools and leading to unintended analysis of the omitted language. To override this behavior:
 
-        1.  When creating a coding standard, select all the languages used in the relevant repositories, so that all associated tools are controlled by the coding standard.
+        1.  When creating a coding standard, ensure all languages are selected, so that the standard controls all tools.
 
         1.  Explicitly disable the tools that you don't want to use.
 
-       ![Selecting the languages for the coding standard](images/coding-standard-select-languages.png)
+    ![Selecting the languages for the coding standard](images/coding-standard-select-languages.png)
 
 1.  Configure the tools and patterns of the coding standard and click **Next: Select and apply to repositories**.
 
@@ -106,6 +106,9 @@ To delete a coding standard:
 ## Defining a default coding standard {: id="set-default"}
 
 For ease of management, you can define a default coding standard that automatically applies to new repositories. In the absence of a default coding standard, Codacy applies global defaults to all new repositories.
+
+!!! note
+    When Codacy introduces new tools, those are automatically added to the global Codacy defaults but need to be manually added to the default coding standard.
 
 To set a coding standard as default:
 
