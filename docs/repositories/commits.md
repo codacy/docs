@@ -24,7 +24,7 @@ The next sections describe each area of the commit detail page.
 This area displays the information that identifies the commit (commit message, committer, SHA hash, and last updated date), as well as:
 
 -   A link to the commit on your Git provider
--   A [button to reanalyze the commit](../faq/repositories/how-do-i-reanalyze-my-repository.md), enabled when the committer [is part of your organization](../organizations/managing-people.md)
+-   A [link to reanalyze the commit](../faq/repositories/how-do-i-reanalyze-my-repository.md), enabled when the committer [is part of your organization](../organizations/managing-people.md)
 -   A link to the analysis logs
 
 <!--quality-overview-start-->
@@ -34,9 +34,9 @@ This area displays the information that identifies the commit (commit message, c
 ![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)
 <!-- vale on -->
 
-This area displays the code quality metrics and gate status for the {{ page.meta.page_name }}:
+This area displays the quality gate status for the {{ page.meta.page_name }} and the code quality metrics [with a gate set up](../repositories-configure/adjusting-quality-gates.md):
 
--   The analysis status is either **Up to quality standards** or **Not up to quality standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
+-   The quality gate status is either **Up to quality standards** or **Not up to quality standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
 
     If there are no gate rules enabled for {{ page.meta.page_name }}s, the status is always **Up to quality standards**.
 
@@ -96,7 +96,7 @@ The following are example situations that can lead to potential issues:
 -   If a file had [more than 50 issues reported by the same tool](../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md) and you push a new commit that fixes some of these issues, Codacy will report more issues until the limit of 50 issues. These issues will be potential issues if they're outside the lines of code changed in the new commit.
 
 !!! note
-    **If you're using GitHub** you may see [annotations](../repositories-configure/integrations/github-integration.md#issue-annotations)  for potential issues reported under **Unchanged files with check annotations** on the **Files changed** tab of your pull requests.
+    **If you're using GitHub** you may see [annotations](../repositories-configure/integrations/github-integration.md#issue-annotations) for potential issues reported under **Unchanged files with check annotations** on the **Files changed** tab of your pull requests.
 
     This happens when Codacy reports potential issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/).
 
@@ -130,7 +130,7 @@ The **Diff** tab displays the differences in each file that was changed in the {
 -   **Green**: New version of a changed line with added characters highlighted in bright green
 -   **Bright green**: New line
 
-Additionally, lines with issues are highlighted according to issue severity and include a button to view more details and navigate to the issue.
+Lines with issues are highlighted according to the issue severity. On these lines, hover over the pill label to view more details or navigate to the issue.
 
 <!-- vale off -->
 ![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)
