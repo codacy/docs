@@ -43,10 +43,10 @@ This area displays the quality gate status for the {{ page.meta.page_name }} and
 -   The variation introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %} for code quality metrics [with a gate set up](../repositories-configure/adjusting-quality-gates.md):
 
     -   **Issues:** Number of new issues
-{% if page.meta.page_name == "commit" %}
     -   **Duplication:** Changes in the number of duplicated code blocks
-    -   **Complexity:** Changes in code complexity
-    -   **Coverage:** Changes in code coverage percentage compared with the parent commit
+    -   **Complexity:** Changes in code complexity<!-- TODO ALA-643 Is this still visible on the commit view? -->
+{% if page.meta.page_name == "commit" %}
+    -   **Coverage variation:** Changes in code coverage percentage compared with the parent commit
 {% else %}
     -   **Diff coverage:** Code coverage of the coverable lines affected by the pull request, or `∅` (not applicable) if there are no coverable lines
     -   **Coverage variation:** Changes in code coverage percentage compared with the target branch
