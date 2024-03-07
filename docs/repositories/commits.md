@@ -81,7 +81,7 @@ The **Issues** tab displays the lists of issues that the {{ page.meta.page_name 
     end="<!--issue-details-end-->"
 %}
 
-To [ignore or manage an issue](issues.md#ignoring-and-managing-issues), click the associated options menu.
+To [ignore or manage an issue](issues.md#ignoring-and-managing-issues), click the associated options in the menu.
 
 ![Issues tab](images/{{ page.meta.file_name }}-tab-issues.png)
 
