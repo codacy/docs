@@ -123,14 +123,16 @@ The **Complexity** tab displays the complexity changes introduced by the {{ page
 
 ## Diff tab
 
-The **Diff** tab displays the differences in each file that was changed in the {{ page.meta.page_name }}. The background of the changed lines depends on the change:
+The **Diff** tab displays the code changes and issues introduced by the {{ page.meta.page_name }}. It includes the following areas:
 
--   **Red**: Deleted line
--   **Yellow**: Old version of a changed line with deleted characters highlighted in red
--   **Green**: New version of a changed line with added characters highlighted in bright green
--   **Bright green**: New line
+-   A **list of files** modified by the {{ page.meta.page_name }}, with additional information for each file:
 
-Lines with issues are highlighted according to the issue severity. On these lines, hover over the pill label to view more details or navigate to the issue.
+    -   A **green plus icon** if the file is added or a **yellow dot icon** if it's modified by the {{ page.meta.page_name }}
+    -   The **number of issues** introduced by the {{ page.meta.page_name }}<!-- TODO ALA-643 Confirm we only count new issues -->
+
+-   A **diff viewer** showing for each modified file the diff coverage and a comparison of the old and new file content. 
+
+    Lines with issues are highlighted according to issue severity and include a pill label with the issue type and count. Hover over the pill label to view more details or navigate to the issues.
 
 <!-- vale off -->
 ![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)
