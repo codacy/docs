@@ -1,5 +1,13 @@
 # Managing security and risk
 
+<!-- TODO TAROT-2591
+
+- Rename dashboard section
+- Rename items to findings
+- Match wording to design
+-->
+
+<!-- TODO TAROT-2591: Review intro -->
 The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your [connected Jira instance](./integrations/jira-integration.md).
 
 Under Security and risk management, you can find the following pages to help you monitor your security issues:
@@ -7,6 +15,7 @@ Under Security and risk management, you can find the following pages to help you
 -   [Dashboard](#dashboard)
 -   [Item list](#item-list)
 
+<!-- TODO TAROT-2591: Review and rename section -->
 ## Dashboard
 
 The **Security and risk management** dashboard provides a general overview of items, based on their status.
@@ -29,7 +38,7 @@ When viewing the dashboard, you can:
 
 -   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
-![Security and risk management dashboard](images/security-risk-management-dashboard.png)
+![Security and risk management dashboard](images/security-risk-management-dashboard.png)<!-- TODO TAROT-2591: Update screenshot -->
 
 ## Item list
 
@@ -45,7 +54,7 @@ When viewing the item list, you can:
 
 -   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
-![Security and risk management items](images/security-risk-management-item-list.png)
+![Security and risk management items](images/security-risk-management-item-list.png)<!-- TODO TAROT-2591: Update screenshot -->
 
 ## Exporting the security item list
 
@@ -149,6 +158,7 @@ The following table defines item severities and days to fix the associated secur
 
 <small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small>
 
+<!-- TODO TAROT-2591: Review section for coherence with above and consider moving it to another page altogether. -->
 ## Languages checked for security issues
 
 Security and risk management supports checking the languages and infrastructure-as-code platforms below for any Codacy security issues reported by the corresponding tools:
