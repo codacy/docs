@@ -1,6 +1,6 @@
 # Using coding standards
 
-Coding standards store your preferred tool and code pattern configurations and let you apply them to multiple repositories, ensuring consistent code quality and security across your organization.
+Coding standards enable the analysis of multiple repositories with the same tool and code pattern configurations, ensuring consistent code quality across your organization. For example, you can use a coding standard to ensure that a group of repositories follows the same security rules or coding conventions.
 
 This page covers the following topics:
 
@@ -12,7 +12,8 @@ This page covers the following topics:
 
 ## Creating a coding standard {: id="creating"}
 
-!!! info "Codacy currently supports up to 10 coding standards per organization"
+!!! note
+    Codacy currently supports up to 10 coding standards per organization.
 
 To create a coding standard for your organization:
 
@@ -26,7 +27,7 @@ To create a coding standard for your organization:
 
     ![Creating a new coding standard](images/coding-standard-create.png)
 
-1.  Select the programming languages that the new coding standard should cover and click **Next: Tools and patterns**.
+1.  Select the programming languages that the new coding standard should cover. 
 
     !!! important
         The coding standard will only control tools that can analyze one or more of the languages selected in this step.
@@ -39,7 +40,9 @@ To create a coding standard for your organization:
 
     ![Selecting the languages for the coding standard](images/coding-standard-select-languages.png)
 
-1.  Configure the tools and patterns of the coding standard and click **Next: Select and apply to repositories**.
+1.  Click **Next: Tools and patterns**.
+
+1.  Configure the tools and patterns of the coding standard.
 
     -   Toggle the tools to run when Codacy analyzes your code
     -   For each enabled tool, configure the code patterns to use
@@ -50,6 +53,8 @@ To create a coding standard for your organization:
         -   To toggle all the code patterns visible on the list, click the checkbox on the header of the code patterns list. If there are more code patterns to load on the list, you can click the link **Enable/Disable all &lt;N&gt; patterns** to toggle all patterns matching the current filters.
 
     ![Configuring the tools and patterns for the coding standard](images/coding-standard-configure-tools.png)
+
+1.  Click **Next: Select and apply to repositories**.
 
 1.  Select existing repositories that should follow the new coding standard and click **Save and apply standard**.
 
