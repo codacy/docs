@@ -5,9 +5,9 @@ Coding standards enable the analysis of multiple repositories with the same tool
 This page covers the following topics:
 
 -   [Creating a coding standard](#creating)
+-   [Defining a default coding standard](#set-default)
 -   [Editing a coding standard](#editing)
 -   [Deleting a coding standard](#deleting)
--   [Defining a default coding standard](#set-default)
 -   [Using a coding standard alongside tool configuration files](#using-with-tool-configuration)
 
 ## Creating a coding standard {: id="creating"}
@@ -65,6 +65,24 @@ To create a coding standard for your organization:
 
     ![Applying the coding standard to repositories](images/coding-standard-apply.png)
 
+## Defining a default coding standard {: id="set-default"}
+
+For ease of management, you can define a default coding standard that automatically applies to new repositories. In the absence of a default coding standard, Codacy applies global defaults to all new repositories.
+
+!!! note
+    When Codacy introduces new tools, those are automatically added to the global Codacy defaults but need to be manually added to the default coding standard.
+
+To set a coding standard as default:
+
+1.  Open your organization **Policies** page, tab **Coding standards**.
+
+1.  Toggle **Make default** on the relevant coding standard card.
+
+    !!! note
+    Only one coding standard at a time can be the default coding standard.
+
+    ![Setting a coding standard as the default](images/coding-standard-set-default.png)
+
 ## Editing a coding standard {: id="editing"}
 
 !!! note
@@ -107,24 +125,6 @@ To delete a coding standard:
         If you delete a coding standard, Codacy restores the previous code pattern configurations of any repositories following the coding standard, but keeps the tool activation status defined by the coding standard.
 
     ![Deleting a coding standard](images/coding-standard-delete.png)
-
-## Defining a default coding standard {: id="set-default"}
-
-For ease of management, you can define a default coding standard that automatically applies to new repositories. In the absence of a default coding standard, Codacy applies global defaults to all new repositories.
-
-!!! note
-    When Codacy introduces new tools, those are automatically added to the global Codacy defaults but need to be manually added to the default coding standard.
-
-To set a coding standard as default:
-
-1.  Open your organization **Policies** page, tab **Coding standards**.
-
-1.  Toggle **Make default** on the relevant coding standard card.
-
-    !!! note
-        Only one coding standard at a time can be the default coding standard.
-
-    ![Setting a coding standard as the default](images/coding-standard-set-default.png)
 
 ## Using a coding standard alongside tool configuration files {: id="using-with-tool-configuration"}
 
