@@ -34,9 +34,9 @@ To create a coding standard for your organization:
          
         If a language is not selected in this step, the associated tools are not necessarily disabled. Rather, Codacy uses default tool configurations, potentially enabling the tools and leading to unintended analysis of the omitted language. To override this behavior:
 
-        1.  When creating a coding standard, ensure all languages are selected, so that the standard controls all tools.
+        1. Ensure all languages are selected, so that the coding standard controls all tools.
 
-        1.  Explicitly disable the tools that you don't want to use.
+        1. In the next step, explicitly disable the tools that you don't want to use.
 
     ![Selecting the languages for the coding standard](images/coding-standard-select-languages.png)
 
