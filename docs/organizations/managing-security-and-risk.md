@@ -1,82 +1,78 @@
 # Managing security and risk
 
-<!-- TODO TAROT-2591
-
-- Rename dashboard section
-- Rename items to findings
-- Match wording to design
--->
+<!-- TODO TAROT-2591 Match wording to design -->
 
 <!-- TODO TAROT-2591: Review intro -->
-The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your [connected Jira instance](./integrations/jira-integration.md).
+The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized findings whenever Codacy detects security issues in your organization repositories or in your [connected Jira instance](./integrations/jira-integration.md).
 
-Under Security and risk management, you can find the following pages to help you monitor your security issues:
+Under Security and risk management, you can find the following pages to help you monitor security:
 
--   [Dashboard](#dashboard)
--   [Item list](#item-list)
+-   [Overview](#dashboard)
+-   [Findings](#item-list)
 
-<!-- TODO TAROT-2591: Review and rename section -->
-## Dashboard
+<!-- TODO TAROT-2591: Rewrite section -->
+## Overview {: id="dashboard"}
 
-The **Security and risk management** dashboard provides a general overview of items, based on their status.
+The **Security and risk management overview** provides a general overview of findings, based on their status.
 
-To access the dashboard, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
+To access the overview page, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
 
-The main area of the dashboard includes five panels:
+The main area of the overview includes five panels:
 
--   **Total:** all open items
--   **Due soon:** open items within 15 days of their deadline
--   **Overdue:** open items with a missed deadline
--   **Closed on time:** items closed before the deadline
--   **Closed late:** items closed after the deadline
+-   **Total:** all open findings
+-   **Due soon:** open findings within 15 days of their deadline
+-   **Overdue:** open findings with a missed deadline
+-   **Closed on time:** findings closed before the deadline
+-   **Closed late:** findings closed after the deadline
 
-Each panel shows the total count of matching items and contains a **Review** button to view a list of matching items.
+Each panel shows the total count of matching findings and contains a **Review** button to view a list of matching findings.
 
-When viewing the dashboard, you can:
+When viewing the overview, you can:
 
 -   Limit the total counts in each panel to a specific set of severities, repositories, or security categories by clicking the filter drop-downs above the main area.
 
 -   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
-![Security and risk management dashboard](images/security-risk-management-dashboard.png)<!-- TODO TAROT-2591: Update screenshot -->
+![Security and risk management overview](images/security-risk-management-overview.png)<!-- TODO TAROT-2591: Update screenshot -->
 
-## Item list
+<!-- TODO TAROT-2591: Review section -->
+## Findings {: id="item-list"}
 
-The **Security and risk management items** page displays a filtered list of items, sorted by due date ascending.
+The **Security and risk management findings** page displays a filtered list of findings, sorted by due date ascending.
 
-To access the item list, access the [dashboard](#dashboard) and click the **Review** button in the area of interest, based on the desired filtering.
+To access the findings page, access the [dashboard](#dashboard) and click the **Review** button in the area of interest, based on the desired filtering.
 
-When viewing the item list, you can:
+When viewing the findings, you can:
 
 -   Update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, or **Security category** drop-downs above the list.
 
--   Find out more about an item by clicking its **Details** column to navigate to the item of interest on the source platform.
+-   Find out more about an finding by clicking its **Details** column to navigate to the finding of interest on the source platform.
 
 -   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
 
-![Security and risk management items](images/security-risk-management-item-list.png)<!-- TODO TAROT-2591: Update screenshot -->
+![Security and risk management findings](images/security-risk-management-findings.png)<!-- TODO TAROT-2591: Update screenshot -->
 
-## Exporting the security item list
+## Exporting the findings {: id="exporting-the-security-item-list"}
 
 !!! info "This feature is available only to organization admins and organization managers"
 
-To export a list of security items as a CSV file, click the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
+To export a list of findings as a CSV file, click the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all findings, ignoring any applied filters.
 
-## How Codacy manages security items {: id="opening-and-closing-items"}
+## How Codacy manages findings {: id="opening-and-closing-items"}
 
 !!! important
-    To open and close security items, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.
+    To open and close findings, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.
 
-Codacy opens a new security item whenever a source platform detects a new security issue. The new item is automatically assigned a severity and a status:
+Codacy opens a new finding whenever a source platform detects a new security issue. The new finding is automatically assigned a severity and a status:
 
--   The priority of the issue on the source platform sets the [severity of the item](#item-severities-and-deadlines). In turn, the severity of the item defines a deadline to close the item.
--   The time to the deadline sets the [status of the item](#item-statuses). The item then moves through different statuses as the deadline is approached, met, or missed.
+-   The priority of the issue on the source platform sets the [severity of the finding](#item-severities-and-deadlines). In turn, the severity of the finding defines a deadline to close the finding.
+-   The time to the deadline sets the [status of the finding](#item-statuses). The finding then moves through different statuses as the deadline is approached, met, or missed.
 
-Codacy closes an item when the source platform stops detecting the associated security issue.
+Codacy closes a finding when the source platform stops detecting the associated security issue.
 
-The following section details when Codacy opens and closes items for each supported platform.
+The following section details when Codacy opens and closes findings for each supported platform.
 
-### How Codacy manages items detected on Git repositories {: id="opening-and-closing-codacy-items"}
+### How Codacy manages findings detected on Git repositories {: id="opening-and-closing-codacy-items"}
 
 !!! note
     To make sure that Codacy detects security issues correctly:
@@ -85,37 +81,37 @@ The following section details when Codacy opens and closes items for each suppor
     -   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
     -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
 
-Codacy opens a new item when it detects a new security issue on the default branch of a repository.
+Codacy opens a new finding when it detects a new security issue on the default branch of a repository.
 
-Codacy closes an item in either of the following cases:
+Codacy closes a finding in either of the following cases:
 
 -   Codacy detects that the associated issue isn't present in the most recent analyzed commit and therefore is fixed
 -   You [ignore the associated issue](../repositories/issues.md#ignoring-and-managing-issues)
 -   You [disable the tool](../repositories-configure/configuring-code-patterns.md) that found the associated issue
 
 !!! important
-    Deleting a repository deletes all open items belonging to that repository.
+    Deleting a repository deletes all open findings belonging to that repository.
 
-### How Codacy manages items detected on Jira {: id="opening-and-closing-jira-items"}
+### How Codacy manages findings detected on Jira {: id="opening-and-closing-jira-items"}
 
 !!! note
     -   For Codacy to detect Jira issues, you must [integrate Jira with Security and risk management](./integrations/jira-integration.md).
     -   Codacy retrieves updates from Jira once a day. If an issue is opened and closed on the same day, Codacy may not detect it.
     -   To make sure that Codacy detects Jira issues correctly, assign the **security** label when creating the issue or immediately after.
 
-Codacy opens a new item when it detects a new Jira issue with a **security** label (case-insensitive).
+Codacy opens a new finding when it detects a new Jira issue with a **security** label (case-insensitive).
 
-Codacy closes an item when it detects that the associated Jira issue is marked as Closed.
+Codacy closes a finding when it detects that the associated Jira issue is marked as Closed.
 
-## Item statuses
+## Finding statuses {: id="item-statuses"}
 
-The following table describes how item statuses map to deadlines:
+The following table describes how finding statuses map to deadlines:
 
 <table>
     <thead>
         <tr>
             <th>Status category</th>
-            <th>Item status</th>
+            <th>Finding status</th>
             <th>Deadline</th>
         </tr>
     </thead>
@@ -145,16 +141,16 @@ The following table describes how item statuses map to deadlines:
     </tbody>
 </table>
 
-## Item severities and deadlines
+## Finding severities and deadlines {: id="item-severities-and-deadlines"}
 
-The following table defines item severities and days to fix the associated security issue, based on the importance of the underlying issue:
+The following table defines finding severities and days to fix the associated security issue, based on the importance of the underlying issue:
 
-| Item<br/>severity | <br/>Days to fix | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority <sup>1</sup> |
-|-------------------|------------------|--------------------------------------|-------------------------------------------------|
-| Critical          | 30               | Critical                             | Highest                                         |
-| High              | 60               | -                                    | High                                            |
-| Medium            | 90               | Medium                               | Medium                                          |
-| Low               | 120              | Minor                                | Low and other/custom                            |
+| Finding<br/>severity | <br/>Days to fix | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority <sup>1</sup> |
+|----------------------|------------------|--------------------------------------|-------------------------------------------------|
+| Critical             | 30               | Critical                             | Highest                                         |
+| High                 | 60               | -                                    | High                                            |
+| Medium               | 90               | Medium                               | Medium                                          |
+| Low                  | 120              | Minor                                | Low and other/custom                            |
 
 <small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small>
 
@@ -346,7 +342,7 @@ Security and risk management supports checking the languages and infrastructure-
 <sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.  
 <sup><span id="client-side">3</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
 <sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/).  
-<sup><span id="eslint-plugin">5</sup>: Includes the plugins [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [security](https://www.npmjs.com/package/eslint-plugin-security), [security-node](https://www.npmjs.com/package/eslint-plugin-security-node), and [xss](https://www.npmjs.com/package/eslint-plugin-xss).  
+<sup><span id="eslint-plugin">5</span></sup>: Includes the plugins [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [security](https://www.npmjs.com/package/eslint-plugin-security), [security-node](https://www.npmjs.com/package/eslint-plugin-security-node), and [xss](https://www.npmjs.com/package/eslint-plugin-xss).  
 <sup><span id="ruby-31">6</span></sup>: Currently, Codacy doesn't support any static code analysis tool for [Ruby 3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/).  
 
 ## Supported security categories
