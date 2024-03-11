@@ -57,8 +57,6 @@ You can define one or more of the following filters:
 
 Use the options in the menu of each issue to:
 
--   **Copy the link** to the issue (available only for issues listed on the Issues page).<!-- TODO ALA-643 confirm -->
-
 -   **Ignore the issue** and hide it from the list.
 
     Codacy will no longer report the issue after the next analysis of your repository. For example, you can ignore issues that you disagree with because:
