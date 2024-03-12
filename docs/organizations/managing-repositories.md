@@ -18,7 +18,7 @@ The list also displays error and warning messages for repositories that have iss
 
 If you follow many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
-## Adding or following a repository {: id="adding-a-repository"}
+## Adding a repository {: id="adding-a-repository"}
 
 {%
     include-markdown "../assets/includes/paid.md"
@@ -26,33 +26,49 @@ If you follow many repositories, you can use the search field above the list to 
     end="<!--paid-private-repositories-end-->"
 %}
 
-Depending on your [permissions on the Git provider](roles-and-permissions-for-organizations.md), you can:
+Users with [admin permission over a repository](roles-and-permissions-for-organizations.md) can add it to Codacy to start analyzing it.
 
--   **Add** a new repository to Codacy to start analyzing it. You need admin permission over the repository to add it to Codacy.
--   **Follow** a repository that was already added to Codacy by a repository admin.
+!!! note
+    When a user adds a new repository to Codacy, all organization admins start following it automatically.
 
-To add or follow a repository, click the button **Manage repositories** at the top right-hand corner of the page. This opens a window listing your organization repositories.
+To add a new repository to Codacy:
 
-![Adding a repository](images/repositories-add.png)
+1.  Click the button **Manage repositories** at the top right-hand corner of the page. This opens a window listing your organization repositories.
 
-!!! important
-    To see your repositories in this list, make sure that you have the necessary permissions over the repositories on the Git provider and that Codacy has the necessary permissions to access the repositories.
+    !!! important
+        To see your repositories in this list, make sure that you have the necessary permissions over the repositories on the Git provider and that Codacy has the necessary permissions to access the repositories.
 
-Add or follow your repositories by clicking **Add** or **Follow** next to the repositories. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
+    ![Adding a repository](images/repositories-add.png)
 
-Then, close the window to return to your repositories list. Although Codacy immediately starts analyzing newly added repositories, they display empty metrics until the first analysis returns results.
+1.  Click **Add** next to the repositories you want to add. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
+
+1.  Close the window to return to your repositories list.
+
+Although Codacy immediately starts analyzing newly added repositories, they display empty metrics until the first analysis returns results.
 
 ![Waiting for first analysis results](images/repositories-analyzing.png)
 
+## Following or unfollowing a repository {: id="follow-unfollow"}
+
+Users with at least [read permission](roles-and-permissions-for-organizations.md) over the repositories already added to Codacy by a repository admin, can choose the repositories they want to follow.
+
+To follow or unfollow a repository on Codacy:
+
+1.  Click the button **Manage repositories** at the top right-hand corner of the page. This opens a window listing your organization repositories.
+
+    !!! important
+        To see your repositories in this list, make sure that you have the necessary permissions over the repositories on the Git provider and that Codacy has the necessary permissions to access the repositories.
+
+    ![Adding a repository](images/repositories-add.png)
+
+1.  Click **Follow** or **Unfollow** next to the repositories you want to follow or unfollow. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
+
+1.  Close the window to return to your repositories list.
+
 !!! note
-    -   When a user adds a new repository to Codacy, all organization admins start following it automatically.
+    You automatically **start following** a repository as soon as you access any page from that repository. For example, when you access the repository using a direct link on your Git provider UI.
 
-    -   You automatically **start following** a repository as soon as you access any page from that repository. For example, when you access the repository using a direct link on your Git provider UI.
-
-        Conversely, you automatically **stop following** a repository as soon as you try accessing any page from that repository but you don't have permissions to see that repository anymore.
-
-!!! tip
-    You can use the [Codacy API](https://api.codacy.com/api/api-docs#unfollowrepository) to stop following a repository.
+    Conversely, you automatically **stop following** a repository as soon as you try accessing any page from that repository but you don't have permissions to see that repository anymore.
 
 ## See also
 
