@@ -25,6 +25,7 @@ On the Organization overview you have the following areas to help you monitor yo
 
 -   [Overall quality chart](#overall-quality-chart)
 -   [Open pull requests](#open-pull-requests)
+-   [Organization setup](#organization-setup)
 -   [Last updated repositories](#last-updated-repositories)
 
 The following sections provide a detailed description of each dashboard area.
@@ -63,6 +64,10 @@ The **Last updated** tab displays open pull requests sorted by the date of updat
 ![Last updated pull requests](images/organization-overview-prs-last-updated.png)
 
 Click a pull request to see the [details of that pull request](../repositories/pull-requests.md#status).
+
+## Organization setup
+
+The **Organization setup** area displays the status of the initial configuration of your organization on Codacy. It provides you with a checklist of items that you should complete to ensure that your organization is set up correctly and that you're getting the most out of Codacy.
 
 ## Last updated repositories
 
