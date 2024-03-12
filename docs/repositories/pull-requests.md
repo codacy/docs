@@ -41,7 +41,7 @@ This area displays the information that identifies the pull request (name, autho
 
 ## Commits tab
 
-The **Commits** tab displays an overview of each commit included in the pull request, such as the analysis status and the number of issues fixed or introduced.
+The **Commits** tab displays an overview of each commit included in the pull request, such as the analysis status and the number of issues introduced.
 
 Click a specific commit to see [detailed information about that commit](commits.md#status).
 
