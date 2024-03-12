@@ -2,6 +2,9 @@
 
 Users with the [necessary permissions on your Git provider](roles-and-permissions-for-organizations.md) can **add** repositories to Codacy to start analyzing them. The remaining organization members with access to the added repositories can then **follow** on Codacy the repositories of their interest.
 
+!!! important
+    To see your repositories on Codacy, make sure that you have the necessary permissions over the repositories on the Git provider and that Codacy has the necessary permissions to access the repositories.
+
 To see all the repositories that you follow on Codacy, open the page **Repositories** under your organization. Across the application, Codacy calculates and displays data for the repositories on this list.
 
 ![Repositories list](images/repositories.png)
@@ -35,9 +38,6 @@ To add a new repository to Codacy:
 
 1.  Click the button **Manage repositories** at the top right-hand corner of the page. This opens a window listing your organization repositories.
 
-    !!! important
-        To see your repositories in this list, make sure that you have the necessary permissions over the repositories on the Git provider and that Codacy has the necessary permissions to access the repositories.
-
     ![Adding a repository](images/repositories-add.png)
 
 1.  Click **Add** next to the repositories you want to add. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
@@ -55,9 +55,6 @@ Users with at least [read permission](roles-and-permissions-for-organizations.md
 To follow or unfollow a repository on Codacy:
 
 1.  Click the button **Manage repositories** at the top right-hand corner of the page. This opens a window listing your organization repositories.
-
-    !!! important
-        To see your repositories in this list, make sure that you have the necessary permissions over the repositories on the Git provider and that Codacy has the necessary permissions to access the repositories.
 
     ![Adding a repository](images/repositories-add.png)
 
