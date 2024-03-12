@@ -2,9 +2,9 @@
 
 Codacy executes the `git diff` command when analyzing new commits and pull requests to identify the lines of code that were changed. Codacy then uses this information to display the issues that were caused by the changes introduced by the commits or pull requests.
 
-If you have files in your repository that use the carriage return (CR) as the line end control character, the command `git diff` doesn't correctly identify line endings in the changed files. Because of this, Codacy is unable to use the output of the command and the **Diff** step of your commit or pull request analysis logs will display the message `An error occurred during this step. Please, retry your analysis or contact support`.<!-- TODO ALA-643 Confirm message is still valid -->
+If you have files in your repository that use the carriage return (CR) as the line end control character, the command `git diff` doesn't correctly identify line endings in the changed files. Because of this, Codacy is unable to use the output of the command and the **Diff** step of your commit or pull request analysis logs will display the message `An error occurred during this step. Please, retry your analysis or contact support`.
 
-![Viewing the analysis logs](images/error-line-endings.png)<!-- TODO ALA-643 Update screenshot if the above still holds -->
+![Viewing the analysis logs](images/error-line-endings.png)
 
 The CR line end control character was used by older Classic Mac OS systems, and for the sake of interoperability it's recommended that you:
 
