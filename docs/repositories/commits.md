@@ -44,7 +44,7 @@ This area displays the quality gate status for the {{ page.meta.page_name }} and
 
     -   **Issues:** Number of new issues
     -   **Duplication:** Changes in the number of duplicated code blocks
-    -   **Complexity:** Changes in code complexity<!-- TODO ALA-643 Is this still visible on the commit view? -->
+    -   **Complexity:** Changes in code complexity
 {% if page.meta.page_name == "commit" %}
     -   **Coverage variation:** Changes in code coverage percentage compared with the parent commit
 {% else %}
@@ -64,7 +64,7 @@ This area displays the quality gate status for the {{ page.meta.page_name }} and
 
     -   **Green:** The metric passes the quality gate
     -   **Red:** The metric fails the quality gate
-    -   **Gray:** Coverage data is missing<!-- TODO ALA-643 Confirm this only applies to coverage -->
+    -   **Gray:** The metric has no value
 
     !!! note
         If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.<!-- TODO ALA-643 Confirm this is still correct -->
