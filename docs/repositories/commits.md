@@ -128,7 +128,7 @@ The **Diff** tab displays the code changes and issues introduced by the {{ page.
 -   A **list of files** modified by the {{ page.meta.page_name }}, with additional information for each file:
 
     -   A **green plus icon** if the file is added or a **yellow dot icon** if it's modified by the {{ page.meta.page_name }}
-    -   The **number of issues** introduced by the {{ page.meta.page_name }}<!-- TODO ALA-643 Confirm we only count new issues -->
+    -   The **number of new issues** introduced by the {{ page.meta.page_name }}
 
 -   A **diff viewer** showing for each modified file the diff coverage and a comparison of the old and new file content. 
 
@@ -142,7 +142,7 @@ The **Diff** tab displays the code changes and issues introduced by the {{ page.
 
 The **Files** tab displays the variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) that the {{ page.meta.page_name }} introduces to the files in your repository, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
 
--   **New issues:** Number of new or fixed issues<!-- TODO ALA-643 Confirm this correct and we also display fixed issues -->
+-   **New issues:** Number of new issues
 -   **Duplication:** Changes in the number of duplicated code blocks
 -   **Complexity:** Changes in code complexity
 -   **Coverage variation:** Changes in code coverage percentage compared with the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}
