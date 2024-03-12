@@ -67,7 +67,7 @@ This area displays the quality gate status for the {{ page.meta.page_name }} and
     -   **Gray:** The metric has no value
 
     !!! note
-        If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.<!-- TODO ALA-643 Confirm this is still correct -->
+        If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics.
 <!--quality-overview-end-->
 
 <!--tabs-start-->
