@@ -1,8 +1,6 @@
 # Managing security and risk
 
-<!-- TODO TAROT-2591 Match wording to design -->
-
-The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your [connected Jira instance](./integrations/jira-integration.md), or during [penetration testing](#)<!-- TODO TAROT-2591: Link to pen-testing page -->.
+The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your [connected Jira instance](./integrations/jira-integration.md), or during [penetration testing](https://go.codacy.com/pen-testing-product)
 
 Under Security and risk management, you can find the following pages to help you monitor security:
 
@@ -86,7 +84,7 @@ For a detailed view of the counts on a specific week, hover over the graph.
 The **Top 10 high-risk repositories** panel displays the repositories with the highest number of open findings, ordered by severity.
 
 !!! note
-    This panel may list less than ten repositories if there are fewer than ten repositories with open findings in the organization or if less than ten repositories are selected in the dropdown filter.<!-- TODO TAROT-2591: Confirm this logic -->
+    This panel may list less than ten repositories if there are fewer than ten repositories with open findings in the organization or if less than ten repositories are selected in the dropdown filter.
 
 ![Security and risk management high risk repositories panel](images/security-risk-management-overview-top-risk.png)<!-- TODO TAROT-2591: Screenshot -->
 
@@ -98,12 +96,11 @@ To access the findings page with the corresponding filter applied, click on a ca
 
 ![Security and risk management top categories panel](images/security-risk-management-overview-top-categories.png)<!-- TODO TAROT-2591: Screenshot -->
 
-<!-- TODO TAROT-2591: Review section -->
 ## Findings {: id="item-list"}
 
-The **Security and risk management findings** page displays a filtered list of findings, sorted by due date ascending.<!-- TODO TAROT-2591: Confirm sorting --> Use this page to review and prioritize findings, and to track the progress of your security efforts.
+The **Security and risk management findings** page displays a filtered list of findings, sorted by status. Use this page to review and prioritize findings and track the progress of your security efforts.
 
-To access the overview page, select an organization from the top navigation bar, select **Security and risk** on the left navigation sidebar, and click the **Findings** tab in the top navigation bar.
+To access the overview page, select an organization from the top navigation bar, select **Security and risk** on the left navigation sidebar, and click the **Findings** tab in the top bar.
 
 ![Security and risk management findings page](images/security-risk-management-findings.png)<!-- TODO TAROT-2591: Screenshot -->
 
@@ -111,7 +108,7 @@ When viewing the findings, you can update the filtering criteria by clicking the
 
 ### Viewing a single finding
 
-To view the details of a single finding, click the **Details** column of the finding in the list.<!-- TODO TAROT-2591: Confirm action to access single finding -->
+To view the details of a single finding, click the **Details** column of the finding in the list.
 
 <!-- TODO TAROT-2591: Draft section -->
 
@@ -178,7 +175,10 @@ Codacy closes a finding when it detects that the associated Jira issue is marked
 
 ### How Codacy manages findings detected during penetration testing {: id="opening-and-closing-pen-testing-items"}
 
-<!-- TODO TAROT-2591: Draft section -->
+!!! note
+    Penetration testing is available upon request and is provided by a third-party partner. See [how to request penetration testing for your organization](https://go.codacy.com/pen-testing-product).
+
+Codacy opens a new finding when penetration testing results are published by our partner.
 
 ## Finding statuses {: id="item-statuses"}
 
