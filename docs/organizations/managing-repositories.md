@@ -56,7 +56,7 @@ To follow or unfollow a repository on Codacy:
 
 1.  Click the button **Manage repositories** at the top right-hand corner of the page. This opens a window listing your organization repositories.
 
-    ![Adding a repository](images/repositories-add.png)
+    ![Adding a repository](images/repositories-follow.png)
 
 1.  Click **Follow** or **Unfollow** next to the repositories you want to follow or unfollow. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
