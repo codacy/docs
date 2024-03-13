@@ -24,7 +24,7 @@ The next sections describe each area of the commit detail page.
 This area displays the information that identifies the commit (commit message, committer, SHA hash, and last updated date), as well as:
 
 -   A link to the commit on your Git provider
--   A [link to reanalyze the commit](../faq/repositories/how-do-i-reanalyze-my-repository.md), enabled when the committer [is part of your organization](../organizations/managing-people.md)
+-   A [link to reanalyze the commit](../faq/repositories/how-do-i-reanalyze-my-repository.md), present when the committer [is part of your organization](../organizations/managing-people.md)
 -   A link to the analysis logs
 
 <!--quality-overview-start-->
@@ -67,7 +67,7 @@ This area displays the quality gate status for the {{ page.meta.page_name }} and
     -   **Gray:** The metric has no value
 
     !!! note
-        If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics.
+        If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the metrics and optionally re-upload the Coverage report if you also changed the coverage gate rules.
 <!--quality-overview-end-->
 
 <!--tabs-start-->
