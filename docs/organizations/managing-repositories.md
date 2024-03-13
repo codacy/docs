@@ -38,11 +38,11 @@ To add a new repository to Codacy:
 
 1.  Click the button **Manage repositories** at the top right-hand corner of the page. This opens a window listing your organization repositories.
 
-    ![Adding a repository](images/repositories-add.png)
-
 1.  Click **Add** next to the repositories you want to add. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
-1.  Close the window to return to your repositories list.
+    ![Adding a repository](images/repositories-add.png)
+
+1.  When you're done, close the window to return to your repositories list.
 
 Although Codacy immediately starts analyzing newly added repositories, they display empty metrics until the first analysis returns results.
 
@@ -56,11 +56,11 @@ To follow or unfollow a repository on Codacy:
 
 1.  Click the button **Manage repositories** at the top right-hand corner of the page. This opens a window listing your organization repositories.
 
-    ![Adding a repository](images/repositories-follow.png)
-
 1.  Click **Follow** or **Unfollow** next to the repositories you want to follow or unfollow. If you have many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
-1.  Close the window to return to your repositories list.
+    ![Adding a repository](images/repositories-follow.png)
+
+1.  When you're done, close the window to return to your repositories list.
 
 !!! note
     You automatically **start following** a repository as soon as you access any page from that repository. For example, when you access the repository using a direct link on your Git provider UI.
