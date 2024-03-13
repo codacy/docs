@@ -2,61 +2,134 @@
 
 <!-- TODO TAROT-2591 Match wording to design -->
 
-<!-- TODO TAROT-2591: Review intro -->
-The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized findings whenever Codacy detects security issues in your organization repositories or in your [connected Jira instance](./integrations/jira-integration.md).
+The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your [connected Jira instance](./integrations/jira-integration.md), or during [penetration testing](#)<!-- TODO TAROT-2591: Link to pen-testing page -->.
 
 Under Security and risk management, you can find the following pages to help you monitor security:
 
 -   [Overview](#dashboard)
 -   [Findings](#item-list)
 
-<!-- TODO TAROT-2591: Rewrite section -->
+On each of the above pages, the following actions are also available:
+
+-   [Sharing a filtered view of findings](#sharing-filtered-view)
+-   [Exporting findings](#exporting-the-security-item-list)
+-   [Reviewing severity rules and integration settings](#reviewing-settings)
+
+To review how Codacy manages findings and the associated severities and deadlines, see:
+
+-   [How Codacy manages findings](#opening-and-closing-items)
+-   [Finding statuses](#item-statuses)
+-   [Finding severities and deadlines](#item-severities-and-deadlines)
+
+For a list of languages checked for security issues by Codacy and a list of detected security categories, see:
+
+-   [Languages checked for security issues](#languages-checked-for-security-issues)
+-   [Supported security categories](#supported-security-categories)
+
 ## Overview {: id="dashboard"}
 
-The **Security and risk management overview** provides a general overview of findings, based on their status.
+The **Security and risk management overview** page provides a high-level view of the security posture of your organization, including the number of open findings, the distribution of open findings by severity, the history of finding resolution, and a breakdown of the most high-risk repositories and most detected security categories.
+
+Use this page to quickly identify areas that need attention and to track the progress of your security efforts.
 
 To access the overview page, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
 
-The main area of the overview includes five panels:
+![Security and risk management overview page](images/security-risk-management-overview.png)<!-- TODO TAROT-2591: Screenshot -->
 
--   **Total:** all open findings
--   **Due soon:** open findings within 15 days of their deadline
--   **Overdue:** open findings with a missed deadline
--   **Closed on time:** findings closed before the deadline
--   **Closed late:** findings closed after the deadline
+The overview page includes six panels:
 
-Each panel shows the total count of matching findings and contains a **Review** button to view a list of matching findings.
+-   [Open findings overview](#open-findings-overview)
+-   [Open finding distribution](#open-finding-distribution)
+-   [Open finding history](#open-finding-history)
+-   [Activity history](#activity-history)
+-   [Top 10 high-risk repositories](#top-10-high-risk-repositories)
+-   [Top 10 common security categories](#top-10-common-security-categories)
 
-When viewing the overview, you can:
+To limit the information displayed in each panel to a specific set of repositories, use the filter drop-down above the main area.
 
--   Limit the total counts in each panel to a specific set of severities, repositories, or security categories by clicking the filter drop-downs above the main area.
+### Open findings overview
 
--   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
+The **Open findings overview** panel displays the total number of open findings, as well as the number of findings of each severity.
 
-![Security and risk management overview](images/security-risk-management-overview.png)<!-- TODO TAROT-2591: Update screenshot -->
+To access the findings page with the corresponding filter applied, click on a number.
+
+![Security and risk management open findings overview panel](images/security-risk-management-overview-open.png)<!-- TODO TAROT-2591: Screenshot -->
+
+### Open finding distribution
+
+The **Open finding distribution** panel displays the relative distribution of open findings by scan kind, severity, or status.
+
+To select the desired distribution, use the drop-down in the top right-hand corner of the panel.
+
+To access the findings page with the corresponding filter applied, click on a number.
+
+![Security and risk management open finding distribution panel](images/security-risk-management-overview-distribution.png)<!-- TODO TAROT-2591: Screenshot -->
+
+### Open finding history
+
+The **Open finding history** panel displays a graph showing weekly trends of open findings from the past three months, grouped by severity.
+
+For a detailed view of the distribution on a specific week, hover over the graph.
+
+![Security and risk management open finding history panel](images/security-risk-management-overview-history-open.png)<!-- TODO TAROT-2591: Screenshot -->
+
+### Activity history
+
+The **Activity history** panel displays a graph showing weekly counts of open and closed findings over the past three months and the overall open finding trend.
+
+For a detailed view of the counts on a specific week, hover over the graph.
+
+![Security and risk management activity history panel](images/security-risk-management-overview-history-activity.png)<!-- TODO TAROT-2591: Screenshot -->
+
+### Top 10 high-risk repositories
+
+The **Top 10 high-risk repositories** panel displays the repositories with the highest number of open findings, ordered by severity.
+
+!!! note
+    This panel may list less than ten repositories if there are fewer than ten repositories with open findings in the organization or if less than ten repositories are selected in the dropdown filter.<!-- TODO TAROT-2591: Confirm this logic -->
+
+![Security and risk management high risk repositories panel](images/security-risk-management-overview-top-risk.png)<!-- TODO TAROT-2591: Screenshot -->
+
+### Top 10 common security categories
+
+The **Top 10 common security categories** panel displays the most common security categories of open findings, ordered by count.
+
+To access the findings page with the corresponding filter applied, click on a category.
+
+![Security and risk management top categories panel](images/security-risk-management-overview-top-categories.png)<!-- TODO TAROT-2591: Screenshot -->
 
 <!-- TODO TAROT-2591: Review section -->
 ## Findings {: id="item-list"}
 
-The **Security and risk management findings** page displays a filtered list of findings, sorted by due date ascending.
+The **Security and risk management findings** page displays a filtered list of findings, sorted by due date ascending.<!-- TODO TAROT-2591: Confirm sorting --> Use this page to review and prioritize findings, and to track the progress of your security efforts.
 
-To access the findings page, access the [dashboard](#dashboard) and click the **Review** button in the area of interest, based on the desired filtering.
+To access the overview page, select an organization from the top navigation bar, select **Security and risk** on the left navigation sidebar, and click the **Findings** tab in the top navigation bar.
 
-When viewing the findings, you can:
+![Security and risk management findings page](images/security-risk-management-findings.png)<!-- TODO TAROT-2591: Screenshot -->
 
--   Update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, or **Security category** drop-downs above the list.
+When viewing the findings, you can update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, **Security category**, or **Scan type** drop-downs above the list.
 
--   Find out more about an finding by clicking its **Details** column to navigate to the finding of interest on the source platform.
+### Viewing a single finding
 
--   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
+To view the details of a single finding, click the **Details** column of the finding in the list.<!-- TODO TAROT-2591: Confirm action to access single finding -->
 
-![Security and risk management findings](images/security-risk-management-findings.png)<!-- TODO TAROT-2591: Update screenshot -->
+<!-- TODO TAROT-2591: Draft section -->
 
-## Exporting the findings {: id="exporting-the-security-item-list"}
+![Security and risk management single finding page](images/security-risk-management-findings-single.png)<!-- TODO TAROT-2591: Screenshot -->
+
+## Sharing a filtered view of findings {: id="sharing-filtered-view"}
+
+To share the current view of the overview or findings page, click the **Copy URL** button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.
+
+## Exporting findings {: id="exporting-the-security-item-list"}
 
 !!! info "This feature is available only to organization admins and organization managers"
 
-To export a list of findings as a CSV file, click the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all findings, ignoring any applied filters.
+To export a list of findings as a CSV file, click the options menu in the top right-hand corner of the page and select **Export CSV**. The exported list always includes all findings, ignoring any applied filters.
+
+## Reviewing severity rules and integration settings {: id="reviewing-settings"}
+
+To review the [severity assignment rules](#item-severities-and-deadlines) or the [Jira integration settings](./integrations/jira-integration.md), click the options menu in the top right-hand corner of the page and select the respective entry.
 
 ## How Codacy manages findings {: id="opening-and-closing-items"}
 
@@ -102,6 +175,10 @@ Codacy closes a finding in either of the following cases:
 Codacy opens a new finding when it detects a new Jira issue with a **security** label (case-insensitive).
 
 Codacy closes a finding when it detects that the associated Jira issue is marked as Closed.
+
+### How Codacy manages findings detected during penetration testing {: id="opening-and-closing-pen-testing-items"}
+
+<!-- TODO TAROT-2591: Draft section -->
 
 ## Finding statuses {: id="item-statuses"}
 
