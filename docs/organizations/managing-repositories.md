@@ -50,7 +50,7 @@ Although Codacy immediately starts analyzing newly added repositories, they disp
 
 ## Following or unfollowing a repository {: id="follow-unfollow"}
 
-Users with at least [read permission](roles-and-permissions-for-organizations.md) over the repositories already added to Codacy by a repository admin, can choose the repositories they want to follow.
+Users with [no admin permission](roles-and-permissions-for-organizations.md) over the repositories already added to Codacy by a repository admin, can choose which repositories they want to follow.
 
 To follow or unfollow a repository on Codacy:
 
