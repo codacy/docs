@@ -34,7 +34,7 @@ Users with the [necessary permissions](roles-and-permissions-for-organizations.m
 !!! note
     When a user adds a new repository to Codacy, all organization admins start following it automatically.
 
-To add a new repository to Codacy:
+To add new repositories to Codacy:
 
 1.  Click the button **Manage repositories** at the top right-hand corner of the page. This opens a window listing your organization repositories.
 
@@ -52,7 +52,7 @@ Although Codacy immediately starts analyzing newly added repositories, they disp
 
 Users with [no permission to add a repository](roles-and-permissions-for-organizations.md) to Codacy, can follow that repository after it has been added to Codacy, and stop following it at any time.
 
-To follow or unfollow a repository on Codacy:
+To follow or unfollow repositories on Codacy:
 
 1.  Click the button **Manage repositories** at the top right-hand corner of the page. This opens a window listing your organization repositories.
 
