@@ -189,7 +189,7 @@ The recommended way to do this is by using a CI/CD platform that automatically r
 
     ```bash
     export CODACY_API_BASE_URL=<your Codacy instance URL>
-    export CODACY_REPORTER_VERSION=13.10.15
+    export CODACY_REPORTER_VERSION={{ extra.codacy_coverage_reporter_version }}
     ```
 
 1.  Run Codacy Coverage Reporter **on the root of the locally checked out branch of your Git repository**, specifying the relative path to the coverage report to upload:
