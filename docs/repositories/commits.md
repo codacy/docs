@@ -112,14 +112,11 @@ The **Complexity** tab displays the complexity changes introduced by the {{ page
 
 ![Complexity tab](./images/{{ page.meta.file_name }}-tab-complexity.png)
 
-<!-- TODO ALA-643 Confirm there's no coverage tab on commits -->
-{% if page.meta.page_name == "pull request" %}
 {%
     include-markdown "../repositories-coverage/commits.md"
     start="<!--tab-diff-start-->"
     end="<!--tab-diff-end-->"
 %}
-{% endif %}
 
 ## Diff tab
 
