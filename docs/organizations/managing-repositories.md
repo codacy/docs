@@ -29,7 +29,7 @@ If you follow many repositories, you can use the search field above the list to 
     end="<!--paid-private-repositories-end-->"
 %}
 
-Users with [admin permission over a repository](roles-and-permissions-for-organizations.md) can add it to Codacy to start analyzing it.
+Users with the [necessary permissions](roles-and-permissions-for-organizations.md) can add a repository to Codacy to start analyzing it.
 
 !!! note
     When a user adds a new repository to Codacy, all organization admins start following it automatically.
@@ -50,7 +50,7 @@ Although Codacy immediately starts analyzing newly added repositories, they disp
 
 ## Following or unfollowing a repository {: id="follow-unfollow"}
 
-Users with [no admin permission](roles-and-permissions-for-organizations.md) over the repositories already added to Codacy by a repository admin, can choose which repositories they want to follow.
+Users with [no permission to add a repository](roles-and-permissions-for-organizations.md) to Codacy, can follow that repository after it has been added to Codacy, and stop following it at any time.
 
 To follow or unfollow a repository on Codacy:
 
