@@ -54,7 +54,7 @@ Next, add the repositories that you wish to analyze. Codacy begins an initial an
 
 ![Adding repositories](../organizations/images/repositories-add.png)
 
-Click the link **Go to repository** to see the [code quality overview of your repository](../repositories/repository-dashboard.md) as soon as the initial analysis is complete:
+Click the repository name to navigate to the repository dashboard and see the [code quality overview of your repository](../repositories/repository-dashboard.md) as soon as the initial analysis is complete:
 
 ![Repository dashboard](../repositories/images/repository-dashboard.png)
 
