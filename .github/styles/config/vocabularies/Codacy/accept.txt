@@ -88,6 +88,7 @@ tooltip
 TSLint
 TSQLLint
 unassigns
+unfollow
 vacuumdb
 Visualforce
 Xcode
