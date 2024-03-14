@@ -115,6 +115,7 @@ The **Complexity** tab displays the complexity changes introduced by the {{ page
 
 ![Complexity tab](./images/{{ page.meta.file_name }}-tab-complexity.png)
 
+<!-- TODO ALA-643 Screenshot commit tab coverage -->
 {%
     include-markdown "../repositories-coverage/commits.md"
     start="<!--tab-diff-start-->"
