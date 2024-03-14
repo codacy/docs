@@ -108,7 +108,10 @@ The **Duplication** tab displays the lists of clones (duplicated code blocks) th
 
 ## Complexity tab
 
-The **Complexity** tab displays the complexity changes introduced by the {{ page.meta.page_name }}. Use the sidebar filters to filter the list by high increase, low increase, or improvement.
+The **Complexity** tab displays the complexity changes introduced by the {{ page.meta.page_name }}. Use the sidebar filters to filter the list by high increase (4 or more), low increase (1 to 3), or improvement (less than 0).
+
+!!! note
+    When calculating the complexity variation introduced by a {{ page.meta.page_name }}, Codacy only considers files with a high increase in complexity. For more information, see [how Codacy calculates cyclomatic complexity](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
 
 ![Complexity tab](./images/{{ page.meta.file_name }}-tab-complexity.png)
 
