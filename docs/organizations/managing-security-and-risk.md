@@ -7,23 +7,6 @@ Under Security and risk management, you can find the following pages to help you
 -   [Overview](#dashboard)
 -   [Findings](#item-list)
 
-On each of the above pages, the following actions are also available:
-
--   [Sharing a filtered view of findings](#sharing-filtered-view)
--   [Exporting findings](#exporting-the-security-item-list)
--   [Reviewing severity rules and integration settings](#reviewing-settings)
-
-To review how Codacy manages findings and the associated severities and deadlines, see:
-
--   [How Codacy manages findings](#opening-and-closing-items)
--   [Finding statuses](#item-statuses)
--   [Finding severities and deadlines](#item-severities-and-deadlines)
-
-For a list of languages checked for security issues by Codacy and a list of detected security categories, see:
-
--   [Languages checked for security issues](#languages-checked-for-security-issues)
--   [Supported security categories](#supported-security-categories)
-
 ## Overview {: id="dashboard"}
 
 The **Security and risk management overview** page provides a high-level view of the security posture of your organization, including the number of open findings, the distribution of open findings by severity, the history of finding resolution, and a breakdown of the most high-risk repositories and most detected security categories.
