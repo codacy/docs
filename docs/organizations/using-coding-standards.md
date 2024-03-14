@@ -32,7 +32,7 @@ To create a coding standard for your organization:
     !!! important
         The coding standard will only control tools that can analyze one or more of the languages selected in this step.
          
-        If a language is not selected in this step, the associated tools are not necessarily disabled. Rather, Codacy uses default tool configurations, potentially enabling the tools and leading to unintended analysis of the omitted language. To override this behavior:
+        For the remaining languages not selected in this step, Codacy uses existing repository-level configurations if present or global Codacy defaults otherwise, potentially analyzing some of the omitted languages. To prevent this:
 
         1. Ensure all languages are selected, so that the coding standard controls all tools.
 
