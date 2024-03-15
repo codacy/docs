@@ -1,8 +1,8 @@
 # Managing security and risk
 
-The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your [connected Jira instance](./integrations/jira-integration.md), or during [penetration testing](https://go.codacy.com/pen-testing-product)
+The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your [connected Jira instance](./integrations/jira-integration.md), or as a result of [penetration testing](https://go.codacy.com/pen-testing-product).
 
-Under Security and risk management, you can find the following pages to help you monitor security:
+Under Security and risk management, you can find the following pages to help you monitor security on your repositories:
 
 -   [Overview](#dashboard)
 -   [Findings](#item-list)
@@ -48,7 +48,7 @@ To access the findings page with the corresponding filter applied, click on a nu
 
 ### Open finding history
 
-The **Open finding history** panel displays a graph showing weekly trends of open findings from the past three months, grouped by severity.
+The **Open findings history** graph shows weekly trends of open findings from the past three months, grouped by severity.
 
 For a detailed view of the distribution on a specific week, hover over the graph.
 
@@ -105,7 +105,7 @@ To share the current view of the overview or findings page, click the **Copy URL
 
 !!! info "This feature is available only to organization admins and organization managers"
 
-To export a list of findings as a CSV file, click the options menu in the top right-hand corner of the page and select **Export CSV**. The exported list always includes all findings, ignoring any applied filters.
+To export a list of findings as a CSV file, click the options menu in the top right-hand corner of the page and select **Export findings (.csv)**. The exported list always includes all findings, ignoring any applied filters.
 
 ## Reviewing severity rules and integration settings {: id="reviewing-settings"}
 
