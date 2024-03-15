@@ -1,17 +1,19 @@
 # Managing security and risk
 
-The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your [connected Jira instance](./integrations/jira-integration.md), or as a result of [penetration testing](https://go.codacy.com/pen-testing-product).
+The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your [connected Jira instance](./integrations/jira-integration.md), or <span class="skip-vale">as a result of</span> [penetration testing](https://go.codacy.com/pen-testing-product).
 
 Under Security and risk management, you can find the following pages to help you monitor security on your repositories:
 
 -   [Overview](#dashboard)
 -   [Findings](#item-list)
 
+In addition, on these pages, you can [share filtered views of findings](#sharing-filtered-view), [export findings as a CSV file](#exporting-the-security-item-list), and [review severity rules and integration settings](#reviewing-settings)
+
 ## Overview {: id="dashboard"}
 
 The **Security and risk management overview** page provides a high-level view of the security posture of your organization, including the number of open findings, the distribution of open findings by severity, the history of finding resolution, and a breakdown of the most high-risk repositories and most detected security categories.
 
-Use this page to quickly identify areas that need attention and to track the progress of your security efforts.
+Use this page to <span class="skip-vale">quickly</span> identify areas that need attention and to track the progress of your security efforts.
 
 To access the overview page, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
 
@@ -56,7 +58,7 @@ For a detailed view of the distribution on a specific week, hover over the graph
 
 ### Activity history
 
-The **Activity history** panel displays a graph showing weekly counts of open and closed findings over the past three months and the overall open finding trend.
+The **Activity history** graph shows weekly counts of open and closed findings over the past three months, overlaid over the overall open finding trend.
 
 For a detailed view of the counts on a specific week, hover over the graph.
 
@@ -64,7 +66,7 @@ For a detailed view of the counts on a specific week, hover over the graph.
 
 ### Top 10 high-risk repositories
 
-The **Top 10 high-risk repositories** panel displays the repositories with the highest number of open findings, ordered by severity.
+The **Top 10 high-risk repositories** list shows the repositories with the highest number of open findings, ordered by severity.
 
 !!! note
     This panel may list less than ten repositories if there are fewer than ten repositories with open findings in the organization or if less than ten repositories are selected in the dropdown filter.
@@ -73,7 +75,7 @@ The **Top 10 high-risk repositories** panel displays the repositories with the h
 
 ### Top 10 common security categories
 
-The **Top 10 common security categories** panel displays the most common security categories of open findings, ordered by count.
+The **Top 10 common security categories** list shows the most common security categories of open findings, ordered by count.
 
 To access the findings page with the corresponding filter applied, click on a category.
 
