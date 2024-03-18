@@ -1,6 +1,6 @@
 # User session management
 
-To reduce the risk of unauthorized access to your account, Codacy sets automatic expiration timeouts for every session. When a session espires, Codacy invalidates the session both on client and server side.
+To reduce the risk of unauthorized access to your account, Codacy sets automatic expiration timeouts for every session. When a session expires, Codacy invalidates the session both on client and server side.
 
 ## Idle session timeout
 
