@@ -4,7 +4,7 @@ To reduce the risk of unauthorized access to your account, Codacy sets automatic
 
 ## Idle session timeout
 
-The **idle session timeout** on the Codacy app is **5 minutes**. On the absence of user's activity during this period, such as typing or using the mouse, Codacy logs the user out and invalidates the session.
+The **idle session timeout** on the Codacy app is **30 minutes**. On the absence of user's activity during this period, such as typing or using the mouse, Codacy logs the user out and invalidates the session.
 
 ## Absolute session timeout
 
