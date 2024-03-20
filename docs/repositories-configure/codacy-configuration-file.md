@@ -19,14 +19,15 @@ Codacy supports configuring certain advanced features through a configuration fi
     -   To disable a tool you must use the [Code patterns page](configuring-code-patterns.md) instead.
     -   {% include-markdown "../assets/includes/coverage-ignore.md" %}
 
+## Using a Codacy configuration file
+
 To use a Codacy configuration file:
 
 1.  Create a text file with the name `.codacy.yml` or `.codacy.yaml` on the root of your repository.
 
-1.  Add your settings to the configuration file based on the example template below.
+1.  Add a line containing a triple dash (`---`) to the beginning of your configuration file.
 
-    !!! important
-        The configuration file must start with a line containing a triple dash (`---`).
+1.  Add your settings to the configuration file based on the example template below.
 
     ```yaml
     ---
