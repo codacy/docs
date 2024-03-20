@@ -10,9 +10,9 @@ Codacy supports configuring certain advanced features through a configuration fi
 
 -   Configuring a specific repository directory on which to start the analysis
 
--   Adding custom file extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
-
 -   Adjusting [tool-specific configurations](#tool-specific-configurations)
+
+-   Adding custom file extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
 
 !!! note
     -   If a Codacy configuration file exists in your repository, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must ignore files using the configuration file instead.
