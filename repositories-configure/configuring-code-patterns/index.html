@@ -11,7 +11,7 @@
         <meta name="description" content="Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results fit your needs.">
       
       
-        <meta http-equiv="last-modified" content="2024-03-14 13:33:48">
+        <meta http-equiv="last-modified" content="2024-03-20 12:06:15">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/configuring-code-patterns/">
@@ -506,13 +506,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#import-patterns" class="md-nav__link">
-    Importing pattern configurations from another repository
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#using-your-own-tool-configuration-files" class="md-nav__link">
     Using tool configuration files
   </a>
@@ -958,30 +951,18 @@
           
 
 
-  <li class="md-nav__item">
-    <a href="../../organizations/copying-code-patterns-between-repositories/" title="Copying code patterns between repositories" class="md-nav__link">
-      Copying code patterns between repositories
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-7" type="checkbox" id="nav-6-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-6" type="checkbox" id="nav-6-6">
     
-    <label class="md-nav__link" for="nav-6-7">
+    <label class="md-nav__link" for="nav-6-6">
       Managing integrations
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Managing integrations" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-7">
+      <label class="md-nav__title" for="nav-6-6">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -4099,10 +4080,9 @@
 <div class="admonition info">
 <p class="admonition-title">Organization admins can <a href="../../organizations/roles-and-permissions-for-organizations/#change-analysis-configuration">manage access to this feature</a></p>
 </div>
-<p>By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs in several ways:</p>
+<p>By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs as follows:</p>
 <ul>
 <li><a href="#configuring-tools-and-code-patterns-using-the-codacy-ui">Configuring tools and code patterns using the Codacy UI</a></li>
-<li><a href="#import-patterns">Importing configurations from another repository</a></li>
 <li><a href="#using-your-own-tool-configuration-files">Using tool configuration files</a></li>
 </ul>
 <h2 id="configuring-tools-and-code-patterns-using-the-codacy-ui">Configuring tools and code patterns using the Codacy UI<a class="headerlink" href="#configuring-tools-and-code-patterns-using-the-codacy-ui" title="Permanent link">#</a></h2>
@@ -4140,54 +4120,6 @@
 <p>Optionally, to take the changes into account immediately, <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">reanalyze the repository manually</a>. Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.</p>
 </li>
 </ol>
-<h2 id="import-patterns">Importing pattern configurations from another repository<a class="headerlink" href="#import-patterns" title="Permanent link">#</a></h2>
-<p>Importing tool and code pattern configurations from another repository can help you bootstrap and standardize the tool and code pattern configurations across your repositories.</p>
-<p>For example, when adding a new repository on Codacy you can copy the tool and code pattern configurations from an existing repository that's already configured, and then tweak and adapt the settings for your new repository.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, <a href="../../organizations/using-coding-standards/">use an organization coding standard</a> instead.</p>
-<p>Alternatively, you can also copy the tool and code pattern configurations <a href="../../organizations/copying-code-patterns-between-repositories/">from one repository to multiple target repositories</a>.</p>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Consider the following when using this feature:</p>
-<ul>
-<li><strong>Tool matching:</strong> Codacy only copies settings for tools that are available on both the source and target repositories, and overwrites the existing settings for these tools on the target repository.</li>
-<li><strong>Toggle status:</strong> Codacy copies the enabled or disabled status of the matching tools from the source to the target repository.</li>
-<li><strong>Configuration files:</strong> Codacy copies the UI configuration of all matching tools, even those set to use configuration files. However, the import doesn't include the configuration mode itself and doesn't copy configuration files across repositories.</li>
-</ul>
-<p>The following example illustrates the points above:</p>
-<table>
-<thead>
-<tr>
-<th>Source repository</th>
-<th>Target repository</th>
-<th>Target repository after import</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><img alt="Source repository" src="../images/code-patterns-import-example-source.svg" /></td>
-<td><img alt="Target repository" src="../images/code-patterns-import-example-target.svg" /></td>
-<td><img alt="Target repository after import" src="../images/code-patterns-import-example-final.svg" /></td>
-</tr>
-</tbody>
-</table>
-</div>
-<p>To import the tool and code pattern configurations from another repository:</p>
-<ol>
-<li>
-<p>Open your repository <strong>Code patterns</strong> and click <strong>Import patterns</strong>.</p>
-<p><img alt="Importing code patterns from another repository" src="../images/code-patterns-import.png" /></p>
-</li>
-<li>
-<p>Follow the instructions to select the source repository and complete the import.</p>
-</li>
-<li>
-<p>Review and adjust your tool and code pattern configurations if necessary.</p>
-</li>
-</ol>
-<p>Codacy will use the updated configurations on the next analysis.</p>
 <h2 id="using-your-own-tool-configuration-files">Using tool configuration files<a class="headerlink" href="#using-your-own-tool-configuration-files" title="Permanent link">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -4438,7 +4370,6 @@
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../organizations/using-coding-standards/">Applying a coding standard across multiple repositories</a></li>
-<li><a href="../../organizations/copying-code-patterns-between-repositories/">Copying code patterns between repositories</a></li>
 <li><a href="https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/">How to implement Google JavaScript style guide with Codacy</a></li>
 </ul>
               
@@ -4597,7 +4528,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 14, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 20, 2024</span>
     
   </small>
 </div>
