@@ -132,7 +132,5 @@ When using a [tool configuration file](../repositories-configure/configuring-cod
 
 ## See also
 
--   [Copying code patterns between repositories](copying-code-patterns-between-repositories.md)
--   [Importing pattern configurations from another repository](../repositories-configure/configuring-code-patterns.md#import-patterns)
 -   [Configuring code patterns on each repository](../repositories-configure/configuring-code-patterns.md)
 -   [How to implement Google JavaScript style guide with Codacy](https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/)
