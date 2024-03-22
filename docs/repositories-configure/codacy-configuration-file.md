@@ -6,7 +6,7 @@ description: Use the Codacy configuration file to configure advanced features on
 
 Codacy supports configuring certain advanced features through a configuration file, such as:
 
--   Ignoring files globally, for duplication, or a specific tool
+-   [Ignoring files](#ignore-files) globally, for duplication, or a specific tool
 
 -   Configuring a specific repository directory on which to start the analysis
 
@@ -15,11 +15,12 @@ Codacy supports configuring certain advanced features through a configuration fi
 -   Adding custom file extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
 
 !!! note
-    -   If a Codacy configuration file exists in your repository, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must ignore files using the configuration file instead.
     -   To disable a tool you must use the [Code patterns page](configuring-code-patterns.md) instead.
-    -   {% include-markdown "../assets/includes/coverage-ignore.md" %}
 
 ## Using a Codacy configuration file
+
+!!! important
+    If a Codacy configuration file exists in your repository, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must [ignore files using the configuration file](#ignore-files) instead.
 
 To use a Codacy configuration file:
 
@@ -59,6 +60,13 @@ To use a Codacy configuration file:
     ```bash
     codacy-analysis-cli validate-configuration --directory `pwd`
     ```
+
+## Ignoring files using a Codacy configuration file {: id="ignore-files"}
+
+The Codacy configuration file gives you more flexibility in [ignoring or excluding files](ignoring-files.md) from the Codacy analysis.
+
+!!! note
+    -   {% include-markdown "../assets/includes/coverage-ignore.md" %}
 
 ## Syntax for ignoring files
 
