@@ -10,12 +10,9 @@ Codacy supports configuring certain advanced features through a configuration fi
 
 -   Configuring a specific repository directory on which to start the analysis
 
--   Adjusting [tool-specific configurations](#tool-specific-configurations)
+-   Adjusting [tool-specific configurations](#tool-conf)
 
 -   Adding custom file extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
-
-!!! note
-    -   To disable a tool you must use the [Code patterns page](configuring-code-patterns.md) instead.
 
 ## Using a Codacy configuration file
 
@@ -90,7 +87,12 @@ exclude_paths:
   - "**/*.resource"
 ```
 
-## Which tools can be configured and which name should I use?
+## Adjusting tool configurations {: id="tool-conf"}
+
+!!! note
+    To disable a tool you must use the [Code patterns page](configuring-code-patterns.md) instead.
+
+### Which tools can be configured and which name should I use?
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
@@ -155,13 +157,13 @@ The following names are **deprecated** and shouldn't be used, although they're s
 -   `pylint` - Use the name `pylintpython3` for **Pylint**.
 -   `tailor` - The tool **Tailor** [is deprecated](../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md). If you are using **SwiftLint** instead, use the name `swiftlint`.
 
-## Tool-specific configurations
+### Tool-specific configurations
 
 By default, Codacy tries to detect which language is used on each source code file, and uses a set of default options for identifying duplicate blocks of code. However, some false positives may occur.
 
 The tools below support specifying the language or language version used in the source code files that you're analyzing, or tuning the duplication detection.
 
-### Cppcheck
+#### Cppcheck
 
 If you're using Cppcheck to analyze C or C++ source code files, add the following configuration to your Codacy configuration file to define the programming language you're using. The supported languages are `c` and `c++`:
 
@@ -172,7 +174,7 @@ engines:
     language: c++
 ```
 
-### PHP_CodeSniffer
+#### PHP_CodeSniffer
 
 If you're using the [PHP Compatibility](https://github.com/PHPCompatibility/PHPCompatibility) coding standard for PHP_CodeSniffer, add the following configuration to your Codacy configuration file to [define the PHP version](https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions) you're using:
 
@@ -183,7 +185,7 @@ engines:
     php_version: 5.5
 ```
 
-### Legacy Pylint 1.9.*
+#### Legacy Pylint 1.9.*
 
 If you're using the legacy Pylint 1.9.* to analyze Python source code files, add the following configuration to your Codacy configuration file to define the Python language version you're using. The supported versions are `2` and `3`:
 
@@ -197,7 +199,7 @@ engines:
 !!! tip
     If you're using Python 3.4.\* or later as your programming language, disable the tool **Pylint (legacy)** and enable the tool **Pylint** on your repository [Code patterns page](configuring-code-patterns.md) instead. For more information, see [What's New in Pylint 2.0](https://pylint.pycqa.org/en/latest/whatsnew/2/2.0/index.html).
 
-### PMD CPD (Duplication)
+#### PMD CPD (Duplication)
 
 <!--NOTE
     Reference for all options:
