@@ -27,6 +27,8 @@ To use a Codacy configuration file:
 
 1.  Add your settings to the configuration file based on the example template below.
 
+    If you set any [Ignored files settings](ignoring-files.md) for the repository, make sure you [add those settings](#syntax-for-ignoring-files) to the configuration file.
+
     ```yaml
     ---
     engines:
