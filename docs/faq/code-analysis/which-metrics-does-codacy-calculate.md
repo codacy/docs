@@ -76,7 +76,7 @@ Codacy displays issues on the following places:
 
 ## Complexity
 
-Codacy uses [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) to identify files with complex methods in your repository. Cyclomatic complexity is the number of linearly independent paths through the source code of a method: the more control flow statements used in a method, the higher the value. Methods with a high cyclomatic complexity are more difficult to test and more likely to have defects. [Learn more about code complexity](https://blog.codacy.com/an-in-depth-explanation-of-code-complexity/) on Codacy's blog.
+Codacy uses [cyclomatic complexity](https://en.wikipedia.org/wiki/Cyclomatic_complexity) to identify files with complex methods in your repository. Cyclomatic complexity is the number of linearly independent paths through the source code of a method: the more control flow statements used in a method, the higher the value. Methods with a high cyclomatic complexity are more difficult to test and more likely to have defects. [Learn more about code complexity](https://blog.codacy.com/code-complexity/) on Codacy's blog.
 
 Codacy calculates complexity as follows:
 

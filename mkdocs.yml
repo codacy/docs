@@ -546,6 +546,7 @@ plugins:
               "repositories-configure/adjusting-quality-settings.md": "repositories-configure/adjusting-quality-gates.md"
               "organizations/configuring-default-git-provider-integration-settings.md": "organizations/integrations/default-git-provider-integration-settings.md"
               "repositories/security-monitor.md": "organizations/managing-security-and-risk.md"
+              "organizations/copying-code-patterns-between-repositories.md": "organizations/using-coding-standards.md"
 
 nav:
     - Documentation home: "index.md"
@@ -599,7 +600,6 @@ nav:
           - organizations/managing-repositories.md
           - organizations/using-gate-policies.md
           - organizations/using-coding-standards.md
-          - organizations/copying-code-patterns-between-repositories.md
           - Managing integrations:
                 - organizations/integrations/default-git-provider-integration-settings.md
                 - Slack integration for Security issues: organizations/integrations/slack-integration.md
