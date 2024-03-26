@@ -1,6 +1,6 @@
 # User session management
 
-To reduce the risk of unauthorized access to your account, Codacy sets automatic expiration timeouts for every session. When a session expires, Codacy invalidates the session both on the client and server side.
+To reduce the risk of unauthorized access to your account, Codacy sets automatic expiration timeouts for every session. When a session expires, Codacy invalidates the session both on the client and server side.<!--TODO PLUTO-883 Validate the behavior when there is an active session on the Git provider side, would that avoid an explicit re-login on refresh-->
 
 ## Idle session timeout
 
