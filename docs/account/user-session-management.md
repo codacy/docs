@@ -8,4 +8,4 @@ The **idle session timeout** on the Codacy app is **30 minutes**. In the absence
 
 ## Absolute session timeout
 
-The **absolute session timeout** on the Codacy app is **8 hours**. When an active session reaches this maximum period, Codacy logs the user out and invalidates the session.
+The **absolute session timeout** on the Codacy app is **8 hours**. When an active session reaches this maximum period, Codacy logs out the user and invalidates the session.
