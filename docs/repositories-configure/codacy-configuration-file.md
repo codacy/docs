@@ -8,9 +8,9 @@ Codacy supports configuring certain advanced features through a configuration fi
 
 -   [Ignoring files](#ignore-files) globally, for duplication, or a specific tool
 
--   Configuring a specific repository directory on which to start the analysis
-
 -   Adjusting [tool-specific configurations](#tool-conf)
+
+-   Configuring a specific repository directory on which to start the analysis
 
 -   Adding custom file extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
 
