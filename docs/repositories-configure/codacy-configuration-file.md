@@ -92,7 +92,7 @@ exclude_paths:
 ## Adjusting tool configurations {: id="tool-conf"}
 
 !!! important
-    The Codacy configuration file enables you to adjust [tool-specific configurations](#tool-specific-configurations), not to disable tools. A tool can only be disabeld on the [Code patterns page](configuring-code-patterns.md) by users with the [necessary permissions](../organizations/roles-and-permissions-for-organizations.md).
+    The Codacy configuration file lets you [configure tools](#tool-specific-configurations) but not disable them. A tool can only be disabled on the [Code patterns page](configuring-code-patterns.md) by users with the [necessary permissions](../organizations/roles-and-permissions-for-organizations.md).
 
 ### Which tools can be configured and which name should I use?
 
