@@ -17,7 +17,7 @@ Use this page to <span class="skip-vale">quickly</span> identify areas that need
 
 To access the overview page, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
 
-![Security and risk management overview page](images/security-risk-management-overview.png)<!-- TODO TAROT-2591: Screenshot -->
+![Security and risk management overview page](images/security-risk-management-overview.png)
 
 The overview page includes six panels:
 
@@ -36,7 +36,7 @@ The **Open findings overview** panel displays the total number of open findings,
 
 To access the findings page with the corresponding filter applied, click on a number.
 
-![Security and risk management open findings overview panel](images/security-risk-management-overview-open.png)<!-- TODO TAROT-2591: Screenshot -->
+![Security and risk management open findings overview panel](images/security-risk-management-overview-open.png)
 
 ### Open finding distribution
 
@@ -46,7 +46,7 @@ To select the desired distribution, use the drop-down in the top right-hand corn
 
 To access the findings page with the corresponding filter applied, click on a number.
 
-![Security and risk management open finding distribution panel](images/security-risk-management-overview-distribution.png)<!-- TODO TAROT-2591: Screenshot -->
+![Security and risk management open finding distribution panel](images/security-risk-management-overview-distribution.png)
 
 ### Open finding history
 
@@ -54,7 +54,7 @@ The **Open findings history** graph shows weekly trends of open findings from th
 
 For a detailed view of the distribution on a specific week, hover over the graph.
 
-![Security and risk management open finding history panel](images/security-risk-management-overview-history-open.png)<!-- TODO TAROT-2591: Screenshot -->
+![Security and risk management open finding history panel](images/security-risk-management-overview-history-open.png)
 
 ### Activity history
 
@@ -62,7 +62,7 @@ The **Activity history** graph shows weekly counts of open and closed findings o
 
 For a detailed view of the counts on a specific week, hover over the graph.
 
-![Security and risk management activity history panel](images/security-risk-management-overview-history-activity.png)<!-- TODO TAROT-2591: Screenshot -->
+![Security and risk management activity history panel](images/security-risk-management-overview-history-activity.png)
 
 ### Top 10 high-risk repositories
 
@@ -71,7 +71,7 @@ The **Top 10 high-risk repositories** list shows the repositories with the highe
 !!! note
     This panel may list less than ten repositories if there are fewer than ten repositories with open findings in the organization or if less than ten repositories are selected in the dropdown filter.
 
-![Security and risk management high risk repositories panel](images/security-risk-management-overview-top-risk.png)<!-- TODO TAROT-2591: Screenshot -->
+![Security and risk management high risk repositories panel](images/security-risk-management-overview-top-risk.png)
 
 ### Top 10 common security categories
 
@@ -79,7 +79,7 @@ The **Top 10 common security categories** list shows the most common security ca
 
 To access the findings page with the corresponding filter applied, click on a category.
 
-![Security and risk management top categories panel](images/security-risk-management-overview-top-categories.png)<!-- TODO TAROT-2591: Screenshot -->
+![Security and risk management top categories panel](images/security-risk-management-overview-top-categories.png)
 
 ## Findings {: id="item-list"}
 
@@ -87,17 +87,9 @@ The **Security and risk management findings** page displays a filtered list of f
 
 To access the overview page, select an organization from the top navigation bar, select **Security and risk** on the left navigation sidebar, and click the **Findings** tab in the top bar.
 
-![Security and risk management findings page](images/security-risk-management-findings.png)<!-- TODO TAROT-2591: Screenshot -->
+![Security and risk management findings page](images/security-risk-management-findings.png)
 
 When viewing the findings, you can update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, **Security category**, or **Scan type** drop-downs above the list.
-
-### Viewing a single finding
-
-To view the details of a single finding, click the **Details** column of the finding in the list.
-
-<!-- TODO TAROT-2591: Draft section -->
-
-![Security and risk management single finding page](images/security-risk-management-findings-single.png)<!-- TODO TAROT-2591: Screenshot -->
 
 ## Sharing a filtered view of findings {: id="sharing-filtered-view"}
 
