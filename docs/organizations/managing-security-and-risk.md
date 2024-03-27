@@ -2,7 +2,7 @@
 
 The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your [connected Jira instance](./integrations/jira-integration.md), or <span class="skip-vale">as a result of</span> [penetration testing](https://go.codacy.com/pen-testing-product).
 
-Under Security and risk management, you can find the following pages to help you monitor security on your repositories:
+Under Security and risk management, you can find the following pages to help you monitor the security of your repositories:
 
 -   [Overview](#dashboard)
 -   [Findings](#item-list)
@@ -32,7 +32,7 @@ To limit the information displayed in each panel to a specific set of repositori
 
 ### Open findings overview
 
-The **Open findings overview** panel displays the total number of open findings, as well as the number of findings of each severity.
+The **Open findings overview** panel displays the total number of open findings and the number of findings of each severity, helping you quickly assess the overall security posture of your organization.
 
 To access the findings page with the corresponding filter applied, click on a number.
 
@@ -40,7 +40,7 @@ To access the findings page with the corresponding filter applied, click on a nu
 
 ### Open finding distribution
 
-The **Open finding distribution** panel displays the relative distribution of open findings by scan kind, severity, or status.
+The **Open finding distribution** panel shows the relative distribution of open findings by scan kind, severity, or status, helping you identify areas that may need immediate attention.
 
 To select the desired distribution, use the drop-down in the top right-hand corner of the panel.
 
@@ -50,7 +50,7 @@ To access the findings page with the corresponding filter applied, click on a nu
 
 ### Open finding history
 
-The **Open findings history** graph shows weekly trends of open findings from the past three months, grouped by severity.
+The **Open findings history** graph shows the open finding trends over the past three months, grouped by week and severity. This graph offers a historical perspective on the progress of your security efforts and can, for example, help you evaluate whether the right issues are being addressed.
 
 For a detailed view of the distribution on a specific week, hover over the graph.
 
@@ -58,7 +58,7 @@ For a detailed view of the distribution on a specific week, hover over the graph
 
 ### Activity history
 
-The **Activity history** graph shows weekly counts of open and closed findings over the past three months, overlaid over the overall open finding trend.
+The **Activity history** graph shows weekly counts of open and closed findings over the past three months, overlaid on the overall open finding trend. It complements the **Open findings history** graph with more information, such as the volume of findings addressed each week and a visual representation of the new/closed ratio.
 
 For a detailed view of the counts on a specific week, hover over the graph.
 
@@ -69,7 +69,7 @@ For a detailed view of the counts on a specific week, hover over the graph.
 The **Top 10 high-risk repositories** list shows the repositories with the highest number of open findings, ordered by severity.
 
 !!! note
-    This panel may list less than ten repositories if there are fewer than ten repositories with open findings in the organization or if less than ten repositories are selected in the dropdown filter.
+    This panel may list fewer than ten repositories if there are fewer than ten repositories with open findings in the organization or if fewer than ten repositories are selected in the dropdown **Repository** filter.
 
 ![Security and risk management high risk repositories panel](images/security-risk-management-overview-top-risk.png)
 
@@ -103,7 +103,7 @@ To export a list of findings as a CSV file, click the options menu in the top ri
 
 ## Reviewing severity rules and integration settings {: id="reviewing-settings"}
 
-To review the [severity assignment rules](#item-severities-and-deadlines) or the [Jira integration settings](./integrations/jira-integration.md), click the options menu in the top right-hand corner of the page and select the respective entry.
+To review the [severity assignment rules](#item-severities-and-deadlines) or the [Jira integration settings](./integrations/jira-integration.md), click the options menu in the top right-hand corner of the page and select respectively **See severity rules** or **View integrations**.
 
 ## How Codacy manages findings {: id="opening-and-closing-items"}
 
@@ -208,7 +208,6 @@ The following table defines finding severities and days to fix the associated se
 
 <small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small>
 
-<!-- TODO TAROT-2591: Review section for coherence with above and consider moving it to another page altogether. -->
 ## Languages checked for security issues
 
 Security and risk management supports checking the languages and infrastructure-as-code platforms below for any Codacy security issues reported by the corresponding tools:
