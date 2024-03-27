@@ -65,7 +65,7 @@ To use a Codacy configuration file:
 The Codacy configuration file gives you more flexibility in [ignoring or excluding files](ignoring-files.md) from the Codacy analysis.
 
 !!! note
-    -   {% include-markdown "../assets/includes/coverage-ignore.md" %}
+    {% include-markdown "../assets/includes/coverage-ignore.md" %}
 
 ### Syntax for ignoring files
 
