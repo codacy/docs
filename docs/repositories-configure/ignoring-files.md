@@ -22,7 +22,7 @@ If you need more flexibility in ignoring files, use a Codacy configuration file 
 !!! important
     If your repository has a [Codacy configuration file](codacy-configuration-file.md), the **Ignored files** settings defined on the Codacy UI don't apply. In this case, you must [ignore files using the configuration file](codacy-configuration-file.md#ignore-files) instead.
 
-    ![Ignored files](images/ignored-files-configuration-file.png)
+![Ignored files](images/ignored-files-configuration-file.png)
 
 ## Default ignored files
 
