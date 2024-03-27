@@ -23,7 +23,7 @@ To use a Codacy configuration file:
 
 1.  Create a text file with the name `.codacy.yml` or `.codacy.yaml` on the root of your repository.
 
-1.  Add a line containing a triple dash (`---`) to the beginning of your configuration file.
+    The file must start with a line containing a triple dash (`---`).
 
 1.  Add your settings to the configuration file based on the example template below.
 
