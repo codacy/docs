@@ -1,43 +1,48 @@
 # Using coding standards
 
-Coding standards help you ensure that Codacy analyzes multiple repositories with the same tool and code pattern configurations. For example, you can use a coding standard to ensure that a group of repositories follow the same security rules or coding conventions.
+Coding standards enable the analysis of multiple repositories with the same tool and code pattern configurations, ensuring consistent code quality across your organization. For example, you can use a coding standard to ensure that a group of repositories follows the same security rules or coding conventions.
 
-Create coding standards on your organization to define different tool and code pattern configurations that apply to a set of programming languages. After creating a coding standard, apply it to your repositories:
+This page covers the following topics:
 
--   Each repository can only follow one coding standard at a time. Applying a new coding standard to a repository <span class="skip-vale">unassigns</span> any previously applied coding standard.
--   Applying a coding standard to a repository only affects the configurations of the tools that are included in the coding standard, while the remaining tool and code pattern configurations of the repository remain unchanged.
--   If you later edit the tool and code pattern configurations in a coding standard, the repositories following that coding standard automatically start using the updated configurations on the next analysis.
--   When you customize the tools or code patterns of a repository that follows a coding standard, Codacy warns you that the repository will stop following the coding standard and asks for your confirmation.
-
-Optionally, set a default coding standard to apply it automatically to all new repositories that you add to Codacy. If no coding standard is set as default, new repositories don't follow any coding standard and use the Codacy default configurations instead.
-
-!!! important
-    Coding standards turn tools with configuration files on and off. Those tool configuration files, however, take precedence over the code patterns defined on the coding standard.
+-   [Creating a coding standard](#creating)
+-   [Defining a default coding standard](#set-default)
+-   [Editing a coding standard](#editing)
+-   [Deleting a coding standard](#deleting)
+-   [Using a coding standard alongside tool configuration files](#using-with-tool-configuration)
 
 ## Creating a coding standard {: id="creating"}
+
+!!! note
+    Codacy currently supports up to 10 coding standards per organization.
 
 To create a coding standard for your organization:
 
 1.  Open your organization **Policies** page, tab **Coding standards**.
 
-1.  Click the button **Create new standard** at the top right-hand corner of the page. This opens a window with the coding standard creation form.
-
-    !!! note
-        Codacy currently supports up to 10 coding standards per organization.
+1.  Click the button **Create new standard** at the top right-hand corner of the page. This opens the coding standard creation form.
 
 1.  Enter a unique name and click **Create standard**.
 
-    Optionally, select a repository for Codacy to use as a baseline when bootstrapping the tool and pattern configurations for the new coding standard. This is useful if you already have a configured repository that you wish to use as a template.
+    Optionally, select a repository to use as a baseline for the new coding standard. This is useful if you already have a well-configured repository that you wish to use as a template.
 
     ![Creating a new coding standard](images/coding-standard-create.png)
 
-1.  Select the programming languages that the new coding standard should cover and click **Next: Tools and patterns**.
+1.  Select the programming languages that the new coding standard should cover. 
 
-    The coding standard will only include configurations for the tools that support at least one of the selected languages.
+    !!! important
+        The coding standard will only control tools that can analyze one or more of the languages selected in this step.
+         
+        For the remaining languages not selected in this step, Codacy uses existing repository-level configurations if present or global Codacy defaults otherwise, potentially analyzing some of the omitted languages. To prevent this:
+
+        1. Ensure all languages are selected, so that the coding standard controls all tools.
+
+        1. In the next step, explicitly disable the tools that you don't want to use.
 
     ![Selecting the languages for the coding standard](images/coding-standard-select-languages.png)
 
-1.  Configure the tools and patterns of the coding standard and click **Next: Select and apply to repositories**.
+1.  Click **Next: Tools and patterns**.
+
+1.  Configure the tools and patterns of the coding standard.
 
     -   Toggle the tools to run when Codacy analyzes your code
     -   For each enabled tool, configure the code patterns to use
@@ -49,13 +54,23 @@ To create a coding standard for your organization:
 
     ![Configuring the tools and patterns for the coding standard](images/coding-standard-configure-tools.png)
 
+1.  Click **Next: Select and apply to repositories**.
+
 1.  Select existing repositories that should follow the new coding standard and click **Save and apply standard**.
 
     Codacy will start using the new coding standard on the next analysis of each selected repository.
 
+    !!! note
+        A repository can follow one coding standard at a time. Assigning a coding standard to a repository unassigns any previously assigned coding standard.
+
     ![Applying the coding standard to repositories](images/coding-standard-apply.png)
 
-## Setting a coding standard as default {: id="set-default"}
+## Defining a default coding standard {: id="set-default"}
+
+For ease of management, you can define a default coding standard that automatically applies to new repositories. In the absence of a default coding standard, Codacy applies global defaults to all new repositories.
+
+!!! note
+    When Codacy introduces new tools, those are automatically added to the global Codacy defaults but need to be manually added to the default coding standard.
 
 To set a coding standard as default:
 
@@ -64,11 +79,14 @@ To set a coding standard as default:
 1.  Toggle **Make default** on the relevant coding standard card.
 
     !!! note
-        Only one coding standard at a time can be the default coding standard.
+    Only one coding standard at a time can be the default coding standard.
 
     ![Setting a coding standard as the default](images/coding-standard-set-default.png)
 
 ## Editing a coding standard {: id="editing"}
+
+!!! note
+    Any edits to the configurations of a coding standard are automatically applied from the next analysis of each associated repository. However, any edit to the configurations of an associated repository unassigns the coding standard from that repository.
 
 To edit an existing coding standard or change the repositories that follow that coding standard:
 
@@ -108,9 +126,11 @@ To delete a coding standard:
 
     ![Deleting a coding standard](images/coding-standard-delete.png)
 
+## Using a coding standard alongside tool configuration files {: id="using-with-tool-configuration"}
+
+When using a [tool configuration file](../repositories-configure/configuring-code-patterns.md#using-your-own-tool-configuration-files) alongside a coding standard, the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.
+
 ## See also
 
--   [Copying code patterns between repositories](copying-code-patterns-between-repositories.md)
--   [Importing pattern configurations from another repository](../repositories-configure/configuring-code-patterns.md#import-patterns)
 -   [Configuring code patterns on each repository](../repositories-configure/configuring-code-patterns.md)
 -   [How to implement Google JavaScript style guide with Codacy](https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/)
