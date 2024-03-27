@@ -5,7 +5,7 @@ When you use Bitbucket Cloud to sign up or log into Codacy, the Bitbucket teams 
 After adding a team:
 
 -   Codacy displays the list of all repositories in that team so that you can add them to Codacy as repositories to be analyzed
--   The members of the team will be able to join or request to join Codacy
+-   The members of the team will be able to [join or request to join Codacy](../../organizations/managing-people.md#joining)
 
 If you have repositories that don't belong to any team, you can still add those on Codacy directly under **My Repositories**.
 
