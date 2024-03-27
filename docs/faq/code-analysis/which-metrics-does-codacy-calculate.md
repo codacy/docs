@@ -82,7 +82,7 @@ Codacy calculates complexity as follows:
 
 -   The complexity value for each file is the highest cyclomatic complexity of the methods in the file.
 -   A file is considered complex if its cyclomatic complexity value is higher than the threshold [**File is complex when over**](../../repositories-configure/adjusting-quality-goals.md).
--   The complexity value of a commit or pull request is the sum of the cyclomatic complexity of the files that were changed in the commit or pull request and that have complexity higher than 4.
+-   The complexity value of a commit or pull request is the sum of the cyclomatic complexity of the files that were changed in the commit or pull request and that have a high complexity increase, defined as an increase of 4 or more.
 
 Codacy displays complexity on the following places:
 
