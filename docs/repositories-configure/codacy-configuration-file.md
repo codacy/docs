@@ -17,7 +17,12 @@ Codacy supports configuring certain advanced features through a configuration fi
 ## Using a Codacy configuration file
 
 !!! important
-    If a Codacy configuration file exists in your repository, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must [ignore files using the configuration file](#ignore-files) instead.
+    If your repository has a Codacy configuration file, the following **no longer applies**:
+
+    -   The [Ignored files settings](ignoring-files.md) defined on the Codacy UI
+    -   The [default ignored files](ignoring-files.md#default-ignored-files)
+    
+    In this case, you must [ignore files using the configuration file](#syntax-for-ignoring-files) instead.
 
 To use a Codacy configuration file:
 
@@ -92,7 +97,7 @@ exclude_paths:
 ## Adjusting tool configurations {: id="tool-conf"}
 
 !!! note
-    The Codacy configuration file lets you [configure tools](#tool-specific-configurations) but not disable them. A tool can only be disabled on the [Code patterns page](configuring-code-patterns.md) by users with the [necessary permissions](../organizations/roles-and-permissions-for-organizations.md).
+    The Codacy configuration file lets you [configure tools](#tool-specific-configurations), but you can't enable or disable them. A tool can only be enabled or disabled on the [Code patterns page](configuring-code-patterns.md) by users with the [necessary permissions](../organizations/roles-and-permissions-for-organizations.md).
 
 ### Which tools can be configured and which name should I use?
 

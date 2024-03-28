@@ -20,7 +20,12 @@ To exclude files from your repository analysis open your repository **Settings**
 If you need more flexibility in ignoring files, use a Codacy configuration file to [define a custom list of file paths to exclude](codacy-configuration-file.md#syntax-for-ignoring-files).
 
 !!! important
-    If your repository has a [Codacy configuration file](codacy-configuration-file.md), the **Ignored files** settings defined on the Codacy UI don't apply. In this case, you must [ignore files using the configuration file](codacy-configuration-file.md#ignore-files) instead.
+    If your repository has a [Codacy configuration file](codacy-configuration-file.md), the following **no longer applies**:
+
+    -   The **Ignored files** settings defined on the Codacy UI
+    -   The [default ignored files](#default-ignored-files)
+    
+    In this case, you must [ignore files using the configuration file](codacy-configuration-file.md#ignore-files) instead.
 
 ![Ignored files](images/ignored-files-configuration-file.png)
 
