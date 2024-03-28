@@ -17,12 +17,7 @@ Codacy supports configuring certain advanced features through a configuration fi
 ## Using a Codacy configuration file
 
 !!! important
-    If your repository has a Codacy configuration file, the following **no longer applies**:
-
-    -   The [Ignored files settings](ignoring-files.md) defined on the Codacy UI
-    -   The [default ignored files](ignoring-files.md#default-ignored-files)
-    
-    In this case, you must [ignore files using the configuration file](#syntax-for-ignoring-files) instead.
+    If your repository has a Codacy configuration file, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must [ignore files using the configuration file](#syntax-for-ignoring-files) instead.
 
 To use a Codacy configuration file:
 
