@@ -13,7 +13,7 @@ In addition, on these pages, you can [share filtered views of findings](#sharing
 
 The **Security and risk management overview** page provides a high-level view of the security posture of your organization, including the number of open findings, the distribution of open findings by severity, the history of finding resolution, and a breakdown of the most high-risk repositories and most detected security categories.
 
-Use this page to <span class="skip-vale">quickly</span> identify areas that need attention and to track the progress of your security efforts.
+Use this page to assess your organization's security posture and its progress over time, identify areas for improvement, and share findings with stakeholders.
 
 To access the overview page, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
 
