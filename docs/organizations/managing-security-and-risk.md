@@ -22,8 +22,8 @@ To access the overview page, select an organization from the top navigation bar 
 The overview page includes six panels:
 
 -   [Open findings overview](#open-findings-overview)
--   [Open finding distribution](#open-finding-distribution)
--   [Open finding history](#open-finding-history)
+-   [open findings distribution](#open-findings-distribution)
+-   [open findings history](#open-findings-history)
 -   [Activity history](#activity-history)
 -   [Top 10 high-risk repositories](#top-10-high-risk-repositories)
 -   [Top 10 common security categories](#top-10-common-security-categories)
@@ -38,27 +38,27 @@ To access the findings page with the corresponding filter applied, click on a nu
 
 ![Security and risk management open findings overview panel](images/security-risk-management-overview-open.png)
 
-### Open finding distribution
+### Open findings distribution
 
-The **Open finding distribution** panel shows the relative distribution of open findings by scan kind, severity, or status, helping you identify areas that may need immediate attention.
+The **Open findings distribution** panel shows the relative distribution of open findings by scan kind, severity, or status, helping you identify areas that may need immediate attention.
 
 To select the desired distribution, use the drop-down in the top right-hand corner of the panel.
 
 To access the findings page with the corresponding filter applied, click on a number.
 
-![Security and risk management open finding distribution panel](images/security-risk-management-overview-distribution.png)
+![Security and risk management open findings distribution panel](images/security-risk-management-overview-distribution.png)
 
-### Open finding history
+### Open findings history
 
-The **Open findings history** graph shows the open finding trends over the past three months, grouped by week and severity. This graph offers a historical perspective on the progress of your security efforts and can, for example, help you evaluate whether the right issues are being addressed.
+The **Open findings history** graph shows the open findings trends over the past three months, grouped by week and severity. This graph offers a historical perspective on the progress of your security efforts and can, for example, help you evaluate whether the right issues are being addressed.
 
 For a detailed view of the distribution on a specific week, hover over the graph.
 
-![Security and risk management open finding history panel](images/security-risk-management-overview-history-open.png)
+![Security and risk management open findings history panel](images/security-risk-management-overview-history-open.png)
 
 ### Activity history
 
-The **Activity history** graph shows weekly counts of open and closed findings over the past three months, overlaid on the overall open finding trend. It complements the **Open findings history** graph with more information, such as the volume of findings addressed each week and a visual representation of the new/closed ratio.
+The **Activity history** graph shows weekly counts of open and closed findings over the past three months, overlaid on the overall open findings trend. It complements the **Open findings history** graph with more information, such as the volume of findings addressed each week and a visual representation of the new/closed ratio.
 
 For a detailed view of the counts on a specific week, hover over the graph.
 
