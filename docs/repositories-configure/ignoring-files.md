@@ -34,15 +34,15 @@ By default, Codacy ignores all the files that match the regular expressions belo
 .*[\.-]min\.css
 .*[\.-]min\.js
 .*node_modules/.*
-.*bower_components
+.*bower_components/.*
 .*vendor/.*
-.*third[_-]?[Pp]arty
+.*third[_-]?[Pp]arty/.*
 .*docs?/.*
-.*samples
+.*samples?/.*
 .*releases?/.*
-.*builds
+.*builds?/.*
 .*dist/.*
-.*external
+.*external/.*
 .*libs/.*
 .*d3\.js
 .*angular(-resource|)?\.js
@@ -59,4 +59,5 @@ By default, Codacy ignores all the files that match the regular expressions belo
 .*bootstrap\.js
 .*bootstrap\.css
 .*font-awesome\.css
+.*\.[Dd]esigner\.cs
 ```
