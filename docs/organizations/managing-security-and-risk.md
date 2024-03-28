@@ -32,7 +32,7 @@ To limit the information displayed in each panel to a specific set of repositori
 
 ### Open findings overview
 
-The **Open findings overview** panel displays the total number of open findings and the number of findings of each severity, helping you quickly assess the overall security posture of your organization.
+The **Open findings overview** panel displays the total number of open security findings and the number of findings of each severity, helping you quickly assess the overall security posture of your organization and <span class="skip-vale">quickly</span> review findings that are critical or overdue.
 
 To access the findings page with the corresponding filter applied, click on a number.
 
@@ -40,7 +40,7 @@ To access the findings page with the corresponding filter applied, click on a nu
 
 ### Open findings distribution
 
-The **Open findings distribution** panel shows the relative distribution of open findings by scan kind, severity, or status, helping you identify areas that may need immediate attention.
+The **Open findings distribution** panel shows the relative distribution of open findings by scan kind, severity, or status, helping you evaluate the distribution of risk across different scan kinds and identify areas that may need immediate attention.
 
 To select the desired distribution, use the drop-down in the top right-hand corner of the panel.
 
@@ -50,7 +50,7 @@ To access the findings page with the corresponding filter applied, click on a nu
 
 ### Open findings history
 
-The **Open findings history** graph shows the open findings trends over the past three months, grouped by week and severity. This graph offers a historical perspective on the progress of your security efforts and can, for example, help you evaluate whether the right issues are being addressed.
+The **Open findings history** graph shows the open findings trends over the past three months, grouped by week and severity. It details the progression of your organization's risk and security posture over time and can, for example, help you understand if the right issues are being addressed.
 
 For a detailed view of the distribution on a specific week, hover over the graph.
 
