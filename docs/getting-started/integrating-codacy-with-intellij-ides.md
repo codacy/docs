@@ -10,9 +10,9 @@ Use this extension to get the full list of problems found by Codacy for a pull r
 
 The main view of the extension displays information about the code quality and coverage changes introduced by the pull requests you're working on, as well as the quality status of analyzed branches. This information is grouped into three panels:
 
--   [Pull request status](#status-tab)
--   [Open pull requests](#open-pull-requests-tab)
--   [Analyzed branch](#analyzed-branch-tab)
+- [Pull request status](#status-tab)
+- [Open pull requests](#open-pull-requests-tab)
+- [Analyzed branch](#analyzed-branch-tab)
 
 ![Important issues](./images/codacy-vscode-extension-main-view.png)
 
