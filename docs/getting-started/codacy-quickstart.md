@@ -13,7 +13,7 @@ Check out our product demo for an overview of Codacy's main features (recorded o
 
 By integrating with your Git provider, Codacy keeps track of your team’s work, analyzes relevant commits, highlights problems, suggests improvements, and protects your codebase from unwelcome changes. From organization and repository level to individual files, pull requests, and commits, Codacy monitors the following metrics across your projects:
 
--   **Issues**: violations of a given rule, standard, convention, or best practice, from inconsistent code formatting to security risks
+- **Issues**: violations of a given rule, standard, convention, or best practice, from inconsistent code formatting to security risks
 -   **Complexity**: a measure of the number of execution paths through a program's source code
 -   **Duplication**: the amount of duplicated portions of code
 -   **Coverage**: the percentage of lines of code covered by automated tests
