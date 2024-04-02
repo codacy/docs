@@ -11,7 +11,7 @@
         <meta name="description" content="Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages.">
       
       
-        <meta http-equiv="last-modified" content="2024-01-26 16:42:49">
+        <meta http-equiv="last-modified" content="2024-04-02 11:28:11">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/codacy-configuration-file/">
@@ -817,22 +817,22 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#syntax-for-ignoring-files" class="md-nav__link">
-    Syntax for ignoring files
+  <a href="#using-a-codacy-configuration-file" class="md-nav__link">
+    Using a Codacy configuration file
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#which-tools-can-be-configured-and-which-name-should-i-use" class="md-nav__link">
-    Which tools can be configured and which name should I use?
+  <a href="#ignore-files" class="md-nav__link">
+    Ignoring files using a Codacy configuration file
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#tool-specific-configurations" class="md-nav__link">
-    Tool-specific configurations
+  <a href="#tool-conf" class="md-nav__link">
+    Adjusting tool configurations
   </a>
   
 </li>
@@ -4080,7 +4080,10 @@
 <p>Codacy supports configuring certain advanced features through a configuration file, such as:</p>
 <ul>
 <li>
-<p>Ignoring files globally, for duplication, or a specific tool</p>
+<p><a href="#ignore-files">Ignoring files</a> globally, for duplication, or a specific tool</p>
+</li>
+<li>
+<p>Adjusting <a href="#tool-conf">tool-specific configurations</a></p>
 </li>
 <li>
 <p>Configuring a specific repository directory on which to start the analysis</p>
@@ -4088,29 +4091,21 @@
 <li>
 <p>Adding custom file extensions to languages, keeping in mind that some tools might not work out of the box with those extensions</p>
 </li>
-<li>
-<p>Adjusting <a href="#tool-specific-configurations">tool-specific configurations</a></p>
-</li>
 </ul>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ul>
-<li>If a Codacy configuration file exists in your repository, the <a href="../ignoring-files/">Ignored files settings</a> defined on the Codacy UI don't apply and you must ignore files using the configuration file instead.</li>
-<li>To disable a tool you must use the <a href="../configuring-code-patterns/">Code patterns page</a> instead.</li>
-<li>To exclude files from coverage analysis only, you must ignore them directly in the tool you're using to generate coverage reports and ensure that the reports you upload to Codacy don't include coverage information for those files.</li>
-</ul>
+<h2 id="using-a-codacy-configuration-file">Using a Codacy configuration file<a class="headerlink" href="#using-a-codacy-configuration-file" title="Permanent link">#</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If your repository has a Codacy configuration file, the <a href="../ignoring-files/">Ignored files settings</a> defined on the Codacy UI don't apply and you must <a href="#syntax-for-ignoring-files">ignore files using the configuration file</a> instead.</p>
 </div>
 <p>To use a Codacy configuration file:</p>
 <ol>
 <li>
 <p>Create a text file with the name <code>.codacy.yml</code> or <code>.codacy.yaml</code> on the root of your repository.</p>
+<p>The file must start with a line containing a triple dash (<code>---</code>).</p>
 </li>
 <li>
 <p>Add your settings to the configuration file based on the example template below.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>The configuration file must start with a line containing a triple dash (<code>---</code>).</p>
-</div>
+<p>If you defined any <a href="../ignoring-files/">Ignored files settings</a> for the repository, make sure you <a href="#syntax-for-ignoring-files">add those settings</a> to the Codacy configuration file.</p>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">engines</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">rubocop</span><span class="p">:</span>
@@ -4141,7 +4136,13 @@
 </code></pre></div>
 </li>
 </ol>
-<h2 id="syntax-for-ignoring-files">Syntax for ignoring files<a class="headerlink" href="#syntax-for-ignoring-files" title="Permanent link">#</a></h2>
+<h2 id="ignore-files">Ignoring files using a Codacy configuration file<a class="headerlink" href="#ignore-files" title="Permanent link">#</a></h2>
+<p>The Codacy configuration file gives you more flexibility in <a href="../ignoring-files/">ignoring or excluding files</a> from the Codacy analysis.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To exclude files from coverage analysis only, you must ignore them directly in the tool you're using to generate coverage reports and ensure that the reports you upload to Codacy don't include coverage information for those files.</p>
+</div>
+<h3 id="syntax-for-ignoring-files">Syntax for ignoring files<a class="headerlink" href="#syntax-for-ignoring-files" title="Permanent link">#</a></h3>
 <p>To ignore files using a Codacy configuration file, you must define one or more patterns under <code>exclude_paths</code> using the <a href="https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29">Java glob syntax</a>:</p>
 <table>
 <thead>
@@ -4183,7 +4184,12 @@
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;test/README.md&quot;</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**/*.resource&quot;</span>
 </code></pre></div>
-<h2 id="which-tools-can-be-configured-and-which-name-should-i-use">Which tools can be configured and which name should I use?<a class="headerlink" href="#which-tools-can-be-configured-and-which-name-should-i-use" title="Permanent link">#</a></h2>
+<h2 id="tool-conf">Adjusting tool configurations<a class="headerlink" href="#tool-conf" title="Permanent link">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Codacy configuration file lets you <a href="#tool-specific-configurations">configure tools</a>, but you can't enable or disable them. A tool can only be enabled or disabled on the <a href="../configuring-code-patterns/">Code patterns page</a> by users with the <a href="../../organizations/roles-and-permissions-for-organizations/">necessary permissions</a>.</p>
+</div>
+<h3 id="which-tools-can-be-configured-and-which-name-should-i-use">Which tools can be configured and which name should I use?<a class="headerlink" href="#which-tools-can-be-configured-and-which-name-should-i-use" title="Permanent link">#</a></h3>
 <p>You can use the Codacy configuration file to configure all tools supported by Codacy except the <a href="../local-analysis/client-side-tools/">client-side tools</a>.</p>
 <p>The following are the tool names that must be used in the Codacy configuration file:</p>
 <div class="highlight"><pre><span></span><code>ameba
@@ -4233,24 +4239,24 @@ tsqllint
 <li><code>pylint</code> - Use the name <code>pylintpython3</code> for <strong>Pylint</strong>.</li>
 <li><code>tailor</code> - The tool <strong>Tailor</strong> <a href="../../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation/">is deprecated</a>. If you are using <strong>SwiftLint</strong> instead, use the name <code>swiftlint</code>.</li>
 </ul>
-<h2 id="tool-specific-configurations">Tool-specific configurations<a class="headerlink" href="#tool-specific-configurations" title="Permanent link">#</a></h2>
+<h3 id="tool-specific-configurations">Tool-specific configurations<a class="headerlink" href="#tool-specific-configurations" title="Permanent link">#</a></h3>
 <p>By default, Codacy tries to detect which language is used on each source code file, and uses a set of default options for identifying duplicate blocks of code. However, some false positives may occur.</p>
 <p>The tools below support specifying the language or language version used in the source code files that you're analyzing, or tuning the duplication detection.</p>
-<h3 id="cppcheck">Cppcheck<a class="headerlink" href="#cppcheck" title="Permanent link">#</a></h3>
+<h4 id="cppcheck">Cppcheck<a class="headerlink" href="#cppcheck" title="Permanent link">#</a></h4>
 <p>If you're using Cppcheck to analyze C or C++ source code files, add the following configuration to your Codacy configuration file to define the programming language you're using. The supported languages are <code>c</code> and <code>c++</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">engines</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">cppcheck</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">language</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">c++</span>
 </code></pre></div>
-<h3 id="php_codesniffer">PHP_CodeSniffer<a class="headerlink" href="#php_codesniffer" title="Permanent link">#</a></h3>
+<h4 id="php_codesniffer">PHP_CodeSniffer<a class="headerlink" href="#php_codesniffer" title="Permanent link">#</a></h4>
 <p>If you're using the <a href="https://github.com/PHPCompatibility/PHPCompatibility">PHP Compatibility</a> coding standard for PHP_CodeSniffer, add the following configuration to your Codacy configuration file to <a href="https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions">define the PHP version</a> you're using:</p>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">engines</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">phpcs</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">php_version</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">5.5</span>
 </code></pre></div>
-<h3 id="legacy-pylint-19">Legacy Pylint 1.9.*<a class="headerlink" href="#legacy-pylint-19" title="Permanent link">#</a></h3>
+<h4 id="legacy-pylint-19">Legacy Pylint 1.9.*<a class="headerlink" href="#legacy-pylint-19" title="Permanent link">#</a></h4>
 <p>If you're using the legacy Pylint 1.9.* to analyze Python source code files, add the following configuration to your Codacy configuration file to define the Python language version you're using. The supported versions are <code>2</code> and <code>3</code>:</p>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">engines</span><span class="p">:</span>
@@ -4261,7 +4267,7 @@ tsqllint
 <p class="admonition-title">Tip</p>
 <p>If you're using Python 3.4.* or later as your programming language, disable the tool <strong>Pylint (legacy)</strong> and enable the tool <strong>Pylint</strong> on your repository <a href="../configuring-code-patterns/">Code patterns page</a> instead. For more information, see <a href="https://pylint.pycqa.org/en/latest/whatsnew/2/2.0/index.html">What's New in Pylint 2.0</a>.</p>
 </div>
-<h3 id="pmd-cpd-duplication">PMD CPD (Duplication)<a class="headerlink" href="#pmd-cpd-duplication" title="Permanent link">#</a></h3>
+<h4 id="pmd-cpd-duplication">PMD CPD (Duplication)<a class="headerlink" href="#pmd-cpd-duplication" title="Permanent link">#</a></h4>
 <p>Codacy uses <a href="https://docs.pmd-code.org/latest/">PMD's Copy/Paste Detector (CPD)</a> to identify duplicated blocks of code <a href="../../getting-started/supported-languages-and-tools/">on the supported languages</a>.</p>
 <p>By default, Codacy only reports duplicate code blocks that have the following minimum token length, depending on the language:</p>
 <table>
@@ -4492,7 +4498,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 26, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 2, 2024</span>
     
   </small>
 </div>
