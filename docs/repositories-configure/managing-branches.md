@@ -19,7 +19,9 @@ To change the default branch of your repository or start analyzing other branche
 
     Enabling a new branch triggers an initial analysis of that branch and the analysis results and information for that branch will become available after the analysis is complete.
 
-1.  To change the default branch on Codacy, click the corresponding **Make default** link that appears when you hover the column **Default**. Changing the default branch on Codacy doesn't change the default branch on your Git provider.
+1.  To change the default branch on Codacy, click the corresponding **Make default** link that appears when you hover the column **Default**.
+
+    Changing the default branch on Codacy doesn't change the default branch on your Git provider. Likewise, changing the default branch on your Git provider doesn't change the default branch on Codacy.
 
     !!! note
         You can only set as default branch an already enabled branch.
