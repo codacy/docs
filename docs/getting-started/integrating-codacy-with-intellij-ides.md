@@ -2,21 +2,16 @@
 
 <!-- TODO ALA-872
 - update instructions to match UI
-- add screenshots
 - review entire page for accuracy
 -->
 
-!!! info "The Codacy IntelliJ plugin is compatible with  IntelliJ IDEA (Ultimate, Community), Android Studio, and Aqua."
-
-The [Codacy IntelliJ plugin](https://github.com/codacy/codacy-intellij-extension) is an open-source project that enables developers to review directly in IntelliJ IDEs the result of Codacy analysis for the pull requests they’re working on.
-
-Use this plugin to get the full list of problems found by Codacy for a pull request and navigate to any Quality issue that you want to review and fix.
-
 !!! info "To use this plugin you need a [Codacy account](https://www.codacy.com/signup-codacy)"
+
+The [Codacy IntelliJ plugin](https://github.com/codacy/codacy-intellij-extension) is an open-source plugin for IntelliJ IDEs that lets you review the result of the Codacy analysis for a pull request, get the full list of problems found, and navigate to any Quality issue that you want to review and fix.
 
 ## Interface overview
 
-[//]: # (![Main view]&#40;./images/codacy-intellij-plugin-main-view.png&#41;<!-- TODO ALA-872 screenshot -->)
+![Main view](./images/codacy-intellij-plugin-main-view.png)<!-- TODO ALA-872 screenshot -->
 
 The main view of the plugin displays information about the code quality and coverage changes introduced by the pull request of the currently checked-out branch:
 
@@ -24,19 +19,19 @@ The main view of the plugin displays information about the code quality and cove
 
 -   Any **Quality issues** introduced or fixed by the pull request. These are the same issues you find in the [Quality Issues tabs](../repositories/pull-requests.md#issues-tabs) in the Codacy app and are also visible in IntelliJ's Problems tab.
 
-    The number next to each file name is the total number of Quality issues that the pull request adds to or removes from that file. The number farther to the right, added by IntelliJ, is the total number of problems in that file, which may or may not be Quality issues from Codacy. If there are any Medium or Critical Quality issues, the file name is also highlighted in yellow (Medium) or red (Critical).<!-- TODO ALA-872 confirm -->
+    When this item is expanded, the number next to each file name is the total number of Quality issues that the pull request adds to or removes from that file.<!-- TODO ALA-872 confirm "removes" is correct -->
 
-[//]: # (    ![Important issues]&#40;./images/codacy-intellij-plugin-important-issues.png&#41;<!-- TODO ALA-872 screenshot -->)
-
--   The **diff coverage and coverage variation** introduced by the pull request. These are the same values you find in the [Pull request coverage overview](../repositories-coverage/pull-requests.md#coverage-overview) panel in the Codacy app.
+-   The **diff coverage and coverage variation** introduced by the pull request. These are the same values you find in the [Pull request coverage overview](../repositories-coverage/pull-requests.md#coverage-overview) panel in the Codacy app.<!-- TODO ALA-872 confirm once bug fixed by developer -->
 
     The percentage next to each file name is the coverage variation for that file.
 
 -   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Quality Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
 
--   Variations in **code complexity** introduced by the pull request.
+-   Variations in **code complexity** introduced by the pull request.<!-- WIP review -->
 
 ## Installing the Codacy IntelliJ plugin
+
+!!! info "The Codacy IntelliJ plugin is compatible with IntelliJ IDEA (Ultimate, Community), Android Studio, and Aqua."
 
 1.  Make sure that the repository you’re working on is analyzed by Codacy and that you have a [repository read](../organizations/roles-and-permissions-for-organizations.md) role or higher.
 
@@ -54,16 +49,16 @@ To see Codacy quality and coverage data for an open pull request, follow these s
     !!! note
         If the repository isn't on Codacy yet, [add it to Codacy](../organizations/managing-repositories.md#adding-a-repository) first.
 
-1.  Open the main view by clicking the **Codacy logo** in the activity bar or the **Codacy tab** in the status bar.
+1.  Open the main view by clicking the **Codacy logo** in the left tool window bar of your IntelliJ IDE.
 
-[//]: # (    ![Codacy main view]&#40;./images/codacy-intellij-plugin-sign-in.png&#41;)
+    ![Codacy main view](./images/codacy-intellij-plugin-sign-in.png)<!-- TODO ALA-872 screenshot -->
 
 1.  If you’re not signed in, click the **Sign in** button to authorize IntelliJ on Codacy.
 
     !!! tip
-        To access a complete list of Codacy commands, open the IntelliJ command palette (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS) and type "Codacy".
+        To access a complete list of Codacy commands, open the IntelliJ command palette (`Ctrl+Shift+A` on Windows/Linux or `Cmd+Shift+A` on macOS) and type "Codacy".
 
-1.  Check out the pull request of interest. You can do it either manually or from the **Open Pull Requests** tab, by clicking the arrow button or using the contextual right-click menu.
+1.  Check out the pull request of interest.
 
 After completing these steps, the main view shows the result of the latest Codacy analysis for the pull request. The IntelliJ Problems tab lists the Quality issues found.
 
@@ -76,13 +71,13 @@ In the **Problems tab**, Codacy displays the same Quality issues you find in the
 
 To review Quality issues:
 
-1.  Open the **Problems tab** (use `Ctrl+Shift+M` on Windows/Linux or `Cmd+Shift+M` on macOS).
+1.  Open the **Problems tool window** (use `Ctrl+6` on Windows/Linux or `Cmd+6` on macOS) and select the **Files** tab.
 
 1.  Click the name of the issue you want to review.
 
-[//]: # (    ![Navigate to a specific issue from the Problems tab]&#40;./images/codacy-intellij-plugin-problems-tab.png&#41;)
+    ![Navigate to a specific issue from the Problems tab](./images/codacy-intellij-plugin-problems-tab.png)<!-- TODO ALA-872 screenshot -->
 
-1.  Hover over a highlighted issue in the code editor to view available actions and suggested quick fixes (if available).
+1.  Hover over a highlighted issue in the code editor to view available actions and suggested quick fixes (if available).<!-- TODO confirm quick fixes ara available -->
 
     For a list of tools that support quick fixes, see [Supported languages and tools](./supported-languages-and-tools.md#supported-languages-and-tools).
 
