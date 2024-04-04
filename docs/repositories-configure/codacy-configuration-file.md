@@ -6,27 +6,28 @@ description: Use the Codacy configuration file to configure advanced features on
 
 Codacy supports configuring certain advanced features through a configuration file, such as:
 
--   Ignoring files globally, for duplication, or a specific tool
+-   [Ignoring files](#ignore-files) globally, for duplication, or a specific tool
+
+-   Adjusting [tool-specific configurations](#tool-conf)
 
 -   Configuring a specific repository directory on which to start the analysis
 
 -   Adding custom file extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
 
--   Adjusting [tool-specific configurations](#tool-specific-configurations)
+## Using a Codacy configuration file
 
-!!! note
-    -   If a Codacy configuration file exists in your repository, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must ignore files using the configuration file instead.
-    -   To disable a tool you must use the [Code patterns page](configuring-code-patterns.md) instead.
-    -   {% include-markdown "../assets/includes/coverage-ignore.md" %}
+!!! important
+    If your repository has a Codacy configuration file, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must [ignore files using the configuration file](#syntax-for-ignoring-files) instead.
 
 To use a Codacy configuration file:
 
 1.  Create a text file with the name `.codacy.yml` or `.codacy.yaml` on the root of your repository.
 
+    The file must start with a line containing a triple dash (`---`).
+
 1.  Add your settings to the configuration file based on the example template below.
 
-    !!! important
-        The configuration file must start with a line containing a triple dash (`---`).
+    If you defined any [Ignored files settings](ignoring-files.md) for the repository, make sure you [add those settings](#syntax-for-ignoring-files) to the Codacy configuration file.
 
     ```yaml
     ---
@@ -59,7 +60,14 @@ To use a Codacy configuration file:
     codacy-analysis-cli validate-configuration --directory `pwd`
     ```
 
-## Syntax for ignoring files
+## Ignoring files using a Codacy configuration file {: id="ignore-files"}
+
+The Codacy configuration file gives you more flexibility in [ignoring or excluding files](ignoring-files.md) from the Codacy analysis.
+
+!!! note
+    {% include-markdown "../assets/includes/coverage-ignore.md" %}
+
+### Syntax for ignoring files
 
 To ignore files using a Codacy configuration file, you must define one or more patterns under `exclude_paths` using the [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29):
 
@@ -81,7 +89,12 @@ exclude_paths:
   - "**/*.resource"
 ```
 
-## Which tools can be configured and which name should I use?
+## Adjusting tool configurations {: id="tool-conf"}
+
+!!! note
+    The Codacy configuration file lets you [configure tools](#tool-specific-configurations), but you can't enable or disable them. A tool can only be enabled or disabled on the [Code patterns page](configuring-code-patterns.md) by users with the [necessary permissions](../organizations/roles-and-permissions-for-organizations.md).
+
+### Which tools can be configured and which name should I use?
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
@@ -146,13 +159,13 @@ The following names are **deprecated** and shouldn't be used, although they're s
 -   `pylint` - Use the name `pylintpython3` for **Pylint**.
 -   `tailor` - The tool **Tailor** [is deprecated](../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md). If you are using **SwiftLint** instead, use the name `swiftlint`.
 
-## Tool-specific configurations
+### Tool-specific configurations
 
 By default, Codacy tries to detect which language is used on each source code file, and uses a set of default options for identifying duplicate blocks of code. However, some false positives may occur.
 
 The tools below support specifying the language or language version used in the source code files that you're analyzing, or tuning the duplication detection.
 
-### Cppcheck
+#### Cppcheck
 
 If you're using Cppcheck to analyze C or C++ source code files, add the following configuration to your Codacy configuration file to define the programming language you're using. The supported languages are `c` and `c++`:
 
@@ -163,7 +176,7 @@ engines:
     language: c++
 ```
 
-### PHP_CodeSniffer
+#### PHP_CodeSniffer
 
 If you're using the [PHP Compatibility](https://github.com/PHPCompatibility/PHPCompatibility) coding standard for PHP_CodeSniffer, add the following configuration to your Codacy configuration file to [define the PHP version](https://github.com/PHPCompatibility/PHPCompatibility#sniffing-your-code-for-compatibility-with-specific-php-versions) you're using:
 
@@ -174,7 +187,7 @@ engines:
     php_version: 5.5
 ```
 
-### Legacy Pylint 1.9.*
+#### Legacy Pylint 1.9.*
 
 If you're using the legacy Pylint 1.9.* to analyze Python source code files, add the following configuration to your Codacy configuration file to define the Python language version you're using. The supported versions are `2` and `3`:
 
@@ -188,7 +201,7 @@ engines:
 !!! tip
     If you're using Python 3.4.\* or later as your programming language, disable the tool **Pylint (legacy)** and enable the tool **Pylint** on your repository [Code patterns page](configuring-code-patterns.md) instead. For more information, see [What's New in Pylint 2.0](https://pylint.pycqa.org/en/latest/whatsnew/2/2.0/index.html).
 
-### PMD CPD (Duplication)
+#### PMD CPD (Duplication)
 
 <!--NOTE
     Reference for all options:
