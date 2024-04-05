@@ -5,6 +5,7 @@ Coding standards enable the analysis of multiple repositories with the same tool
 This page covers the following topics:
 
 -   [Creating a coding standard](#creating)
+-   [Tweaking a coding standard](#advanced-configuration)<!-- TODO ALA-940 review title for clarity -->
 -   [Defining a default coding standard](#set-default)
 -   [Editing a coding standard](#editing)
 -   [Deleting a coding standard](#deleting)
@@ -21,38 +22,20 @@ To create a coding standard for your organization:
 
 1.  Click the button **Create new standard** at the top right-hand corner of the page. This opens the coding standard creation form.
 
-1.  Enter a unique name and click **Create standard**.
+1.  Enter a unique name for the new coding standard. Optionally, you can:<!-- TODO ALA-940 review section for flow and consistency with other instances like this -->
 
-    Optionally, select a repository to use as a baseline for the new coding standard. This is useful if you already have a well-configured repository that you wish to use as a template.
+    -   Select a repository to use as a baseline for the new coding standard. This is useful if you already have a well-configured repository that you wish to use as a template.
+    -   Make the new coding standard the default coding standard for your organization, so that it automatically applies to new repositories.
 
-    ![Creating a new coding standard](images/coding-standard-create.png)
+1.  Click **Create standard**.
 
-1.  Select the programming languages that the new coding standard should cover. 
+    ![Creating a new coding standard](images/coding-standard-create.png)<!-- TODO ALA-940 screenshot -->
 
-    !!! important
-        The coding standard will only control tools that can analyze one or more of the languages selected in this step.
-         
-        For the remaining languages not selected in this step, Codacy uses existing repository-level configurations if present or global Codacy defaults otherwise, potentially analyzing some of the omitted languages. To prevent this:
+1.  Choose presets.<!-- TODO ALA-940 draft section -->
 
-        1. Ensure all languages are selected, so that the coding standard controls all tools.
+    If you want more control over the coding standard, click **Advanced settings** to [configure the coding standard from scratch](#advanced-configuration).
 
-        1. In the next step, explicitly disable the tools that you don't want to use.
-
-    ![Selecting the languages for the coding standard](images/coding-standard-select-languages.png)
-
-1.  Click **Next: Tools and patterns**.
-
-1.  Configure the tools and patterns of the coding standard.
-
-    -   Toggle the tools to run when Codacy analyzes your code
-    -   For each enabled tool, configure the code patterns to use
-
-    !!! tip
-        -   Use the filters to find the relevant tools and code patterns. The recommended configurations are manually curated by Codacy or based on tool defaults and are marked with the icon ![Recommended icon](images/coding-standard-recommended-icon.png).
-        -   To toggle multiple code patterns at once, click the checkbox of the first pattern and **Shift+click** the checkbox of the last pattern in a range.
-        -   To toggle all the code patterns visible on the list, click the checkbox on the header of the code patterns list. If there are more code patterns to load on the list, you can click the link **Enable/Disable all &lt;N&gt; patterns** to toggle all patterns matching the current filters.
-
-    ![Configuring the tools and patterns for the coding standard](images/coding-standard-configure-tools.png)
+    ![Coding standard presets](images/coding-standard-presets.png)<!-- TODO ALA-940 screenshot -->
 
 1.  Click **Next: Select and apply to repositories**.
 
@@ -63,7 +46,41 @@ To create a coding standard for your organization:
     !!! note
         A repository can follow one coding standard at a time. Assigning a coding standard to a repository unassigns any previously assigned coding standard.
 
-    ![Applying the coding standard to repositories](images/coding-standard-apply.png)
+    ![Applying the coding standard to repositories](images/coding-standard-apply.png)<!-- TODO ALA-940 screenshot -->
+
+## Tweaking a coding standard {: id="advanced-configuration"}
+
+<!-- TODO ALA-940
+- section intro
+- review steps
+-->
+
+1.  Select the programming languages that the new coding standard should cover.
+
+    !!! important
+    The coding standard will only control tools that can analyze one or more of the languages selected in this step.
+
+        For the remaining languages not selected in this step, Codacy uses existing repository-level configurations if present or global Codacy defaults otherwise, potentially analyzing some of the omitted languages. To prevent this:
+
+        1. Ensure all languages are selected, so that the coding standard controls all tools.
+
+        1. In the next step, explicitly disable the tools that you don't want to use.
+
+    ![Selecting the languages for the coding standard](images/coding-standard-select-languages.png)<!-- TODO ALA-940 screenshot -->
+
+1.  Click **Next: Tools and patterns**.
+
+1.  Configure the tools and patterns of the coding standard.
+
+    -   Toggle the tools to run when Codacy analyzes your code
+    -   For each enabled tool, configure the code patterns to use
+
+    !!! tip
+    -   Use the filters to find the relevant tools and code patterns. The recommended configurations are manually curated by Codacy or based on tool defaults and are marked with the icon ![Recommended icon](images/coding-standard-recommended-icon.png).
+    -   To toggle multiple code patterns at once, click the checkbox of the first pattern and **Shift+click** the checkbox of the last pattern in a range.
+    -   To toggle all the code patterns visible on the list, click the checkbox on the header of the code patterns list. If there are more code patterns to load on the list, you can click the link **Enable/Disable all &lt;N&gt; patterns** to toggle all patterns matching the current filters.
+
+    ![Configuring the tools and patterns for the coding standard](images/coding-standard-configure-tools.png)<1-- TODO ALA-940 screenshot -->
 
 ## Defining a default coding standard {: id="set-default"}
 
@@ -96,7 +113,7 @@ To edit an existing coding standard or change the repositories that follow that 
 
     ![Editing an existing coding standard](images/coding-standard-edit.png)
 
-1.  Edit the current coding standard configurations and click the button **Next** to advance between the following pages:
+1.  Edit the current coding standard configurations and click the button **Next** to advance between the following pages:<!-- TODO ALA-940 review and confirm this flow -->
 
     -   The programming languages that the coding standard applies to
     -   The tool and code pattern configurations of the coding standard
@@ -104,7 +121,7 @@ To edit an existing coding standard or change the repositories that follow that 
 
     You can also rename the coding standard using the input at the bottom of the first page of the wizard:
 
-    ![Renaming a coding standard](images/coding-standard-rename.png)
+    ![Renaming a coding standard](images/coding-standard-rename.png)<!-- TODO ALA-940 screenshot -->
 
 1.  Click the button **Save and apply standard** on the repository selection page to save your changes to the coding standard.
 
