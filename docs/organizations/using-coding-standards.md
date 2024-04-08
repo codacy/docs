@@ -113,7 +113,7 @@ To edit an existing coding standard or change the repositories that follow that 
 
     ![Editing an existing coding standard](images/coding-standard-edit.png)
 
-1.  Edit the current coding standard configurations and click the button **Next** to advance between the following pages:<!-- TODO ALA-940 review and confirm this flow -->
+1.  Edit the current coding standard configurations and click the button **Next** to advance between the following pages:<!-- TODO ALA-940 We should keep the current "advanced" flow for editing. Review for accuracy. -->
 
     -   The programming languages that the coding standard applies to
     -   The tool and code pattern configurations of the coding standard
