@@ -1,7 +1,6 @@
 # Integrating Codacy with IntelliJ IDEs
 
 <!-- TODO ALA-872
-- update instructions to match UI
 - review entire page for accuracy
 -->
 
@@ -11,9 +10,11 @@ The [Codacy IntelliJ plugin](https://github.com/codacy/codacy-intellij-extension
 
 ## Interface overview
 
+The main view of the Codacy IntelliJ plugin provides a summary of the code quality and coverage changes introduced by the pull request of the currently checked-out branch.
+
 ![Main view](./images/codacy-intellij-plugin-main-view.png)<!-- TODO ALA-872 screenshot -->
 
-The main view of the plugin displays information about the code quality and coverage changes introduced by the pull request of the currently checked-out branch:
+In the main view, you can find the following information:
 
 -   The **Quality status** of the pull request, either up to standards or not up to standards, based on the [Quality gates](../repositories-configure/adjusting-quality-gates.md) set for the repository.
 
@@ -55,29 +56,30 @@ To see Codacy quality and coverage data for an open pull request, follow these s
 
 1.  If you’re not signed in, click the **Sign in** button to authorize IntelliJ on Codacy.
 
-    !!! tip
-        To access a complete list of Codacy commands, open the IntelliJ command palette (`Ctrl+Shift+A` on Windows/Linux or `Cmd+Shift+A` on macOS) and type "Codacy".
-
 1.  Check out the pull request of interest.
 
-After completing these steps, the main view shows the result of the latest Codacy analysis for the pull request. The IntelliJ Problems tab lists the Quality issues found.
+After completing these steps, the main view shows the result of the latest Codacy analysis for the pull request.
 
 ## Reviewing pull request issues
 
-In the **Problems tab**, Codacy displays the same Quality issues you find in the **Status tab** and lets you navigate to the exact line of code where the issue was found.
+In the **Problems tool window**, Codacy displays the same Quality issues you find in the main view and lets you navigate to the exact line of code where the issue was found.
 
 !!! note
-    Code coverage, duplicates, and complexity aren't currently shown in the Problems tab.
+    Code coverage, duplicates, and complexity aren't currently shown in the Problems tool window.<!-- TODO ALA-872 confirm -->
 
 To review Quality issues:
 
-1.  Open the **Problems tool window** (use `Ctrl+6` on Windows/Linux or `Cmd+6` on macOS) and select the **Files** tab.
+1.  Open the file you want to review.
 
-1.  Click the name of the issue you want to review.
+    You can find the list of files with issues in the main view of the Codacy plugin. Double-click the file name to open it in the editor.
+
+1.  Open the **Problems tool window** (use `Ctrl+6` on Windows/Linux or `Cmd+6` on macOS) and select the **File** tab.
 
     ![Navigate to a specific issue from the Problems tab](./images/codacy-intellij-plugin-problems-tab.png)<!-- TODO ALA-872 screenshot -->
 
-1.  Hover over a highlighted issue in the code editor to view available actions and suggested quick fixes (if available).<!-- TODO confirm quick fixes ara available -->
+1.  Click the name of the issue you want to review.
+
+1.  Hover over a highlighted issue in the code editor to view available actions and suggested quick fixes, if available.
 
     For a list of tools that support quick fixes, see [Supported languages and tools](./supported-languages-and-tools.md#supported-languages-and-tools).
 
