@@ -27,7 +27,7 @@ To create a coding standard for your organization:
     Optionally, you can:
 
     -   Select a repository to use as a baseline for the new coding standard. This is useful if you already have a well-configured repository that you wish to use as a template.
-    -   Make the new coding standard the default coding standard for your organization, so that it automatically applies to new repositories.
+    -   Set the new coding standard as your organization's default, so it applies automatically to new repositories.
 
     ![Creating a new coding standard](images/coding-standard-create.png)<!-- TODO ALA-940 screenshot -->
 
@@ -35,13 +35,13 @@ To create a coding standard for your organization:
 
 1.  Adjust the sensitivity of the coding standard from **Essential** to **Comprehensive** for each issue category group:
 
-    -   **Essential**: Includes fewer code patterns, focusing on the most critical issues. Ideal for initial integration, to prevent overwhelming developers, and to speed up analysis times.
-    -   **Comprehensive**: Includes all issues by incorporating a broader range of code patterns, capturing the complete severity spectrum. Ideal for a more thorough analysis, to ensure a comprehensive code quality review, but may increase analysis times and diminish focus on critical issues.
+    -   **Essential**: Focuses on the most important issues by including the most critical code patterns. Ideal for initial integration, to prevent overwhelming developers, and to speed up analysis times.
+    -   **Comprehensive**: Detects all issues by including all code patterns, capturing the complete severity spectrum. Ideal for detailed code quality reviews, but may increase analysis times and reduce emphasis on critical issues.
 
-    For detailed control over included code patterns, select **Advanced settings** to [further customize the coding standard](#advanced-settings).
+    If you want more control over included code patterns, click **Advanced settings** to [customize the coding standard](#advanced-settings).
 
     !!! tip
-        Initially, set sensitivity to **Essential** for most category groups to prioritize critical issues. It helps streamline the integration process with Codacy, reducing the risk of overwhelming developers with too many reported issues. You can gradually include more patterns as needed.
+        Initially, set the sensitivity to **Essential** for most category groups to focus on critical code patterns. It helps streamline the integration process with Codacy, reducing the risk of overwhelming developers with too many reported issues. You can gradually include more patterns as needed.
 
     ![Coding standard presets](images/coding-standard-presets.png)<!-- TODO ALA-940 screenshot -->
 
