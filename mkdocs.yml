@@ -554,7 +554,7 @@ nav:
           - getting-started/codacy-quickstart.md
           - getting-started/configuring-your-repository.md
           - getting-started/integrating-codacy-with-your-git-workflow.md
-          - Integrating Codacy with an IDE:
+          - Integrating Codacy with your IDE:
                 - getting-started/integrating-codacy-with-intellij-ides.md
                 - getting-started/integrating-codacy-with-visual-studio-code.md
           - getting-started/supported-languages-and-tools.md

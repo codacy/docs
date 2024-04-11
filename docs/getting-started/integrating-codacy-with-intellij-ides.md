@@ -50,7 +50,7 @@ To see Codacy quality and coverage data for an open pull request, follow these s
     !!! note
         If the repository isn't on Codacy yet, [add it to Codacy](../organizations/managing-repositories.md#adding-a-repository) first.
 
-1.  Open the main view by clicking the **Codacy logo** in the left tool window bar of your IntelliJ IDE.
+1.  Open the main view by clicking the **Codacy logo** in the left tool window bar.
 
     ![Codacy main view](./images/codacy-intellij-plugin-sign-in.png)<!-- TODO ALA-872 screenshot -->
 
@@ -89,4 +89,4 @@ When the analysis is complete, the Codacy plugin automatically refreshes the pul
 
 ## See also
 
--   [Troubleshooting the Codacy IntelliJ plugin](https://github.com/codacy/codacy-vscode-extension#troubleshooting)
+-   [Troubleshooting the Codacy IntelliJ plugin](https://github.com/codacy/codacy-intellij-extension?tab=readme-ov-file#troubleshooting)
