@@ -97,7 +97,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
       <td colspan="2">Repository<br/>read</td>
       <td colspan="2">Repository<br/>write</td>
       <td>Repository<br/>admin</td>
-      <td><a href="#the-organization-manager-role">Organization<br/>manager</a></td>
+      <td><a href="#managing-the-organization-manager-role">Organization<br/>manager</a></td>
       <td>Organization<br/>admin</td>
     </tr>
     <tr>
@@ -251,7 +251,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
       <td colspan="2">Repository<br/>read</td>
       <td>Repository<br/>write</td>
       <td colspan="2">Repository<br/>admin</td>
-      <td><a href="#the-organization-manager-role">Organization<br/>manager</a></td>
+      <td><a href="#managing-the-organization-manager-role">Organization<br/>manager</a></td>
       <td colspan="2">Organization<br/>admin</td>
     </tr>
     <tr>
@@ -396,7 +396,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
     <tr>
       <td>Codacy role</td>
       <td colspan="2">Repository<br/>read</td>
-      <td><a href="#the-organization-manager-role">Organization<br/>manager</a></td>
+      <td><a href="#managing-the-organization-manager-role">Organization<br/>manager</a></td>
       <td>Organization<br/>admin</td>
     </tr>
     <tr>
