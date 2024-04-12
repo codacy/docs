@@ -17,7 +17,7 @@ Use this page to assess your organization's security posture and its progress ov
 
 To access the overview page, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
 
-![Security and risk management overview page](images/security-risk-management-overview.png)
+![Security and risk management overview page](images/security-risk-management-overview.png)<!-- TODO: Update image - scan type -->
 
 The overview page includes six panels:
 
@@ -46,7 +46,7 @@ To select the desired distribution, use the drop-down in the top right-hand corn
 
 To access the findings page with the corresponding filter applied, click on a number.
 
-![Security and risk management open findings distribution panel](images/security-risk-management-overview-distribution.png)
+![Security and risk management open findings distribution panel](images/security-risk-management-overview-distribution.png)<!-- TODO: Update image - scan type -->
 
 ### Open findings history
 
@@ -89,7 +89,7 @@ To access the overview page, select an organization from the top navigation bar,
 
 ![Security and risk management findings page](images/security-risk-management-findings.png)
 
-When viewing the findings, you can update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, **Security category**, or **Scan type** drop-downs above the list.
+When viewing the findings, you can update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, or **Security category** drop-downs above the list.
 
 ## Sharing a filtered view of findings {: id="sharing-filtered-view"}
 
