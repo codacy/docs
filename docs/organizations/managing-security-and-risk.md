@@ -83,9 +83,9 @@ To access the findings page with the corresponding filter applied, click on a ca
 
 ## Findings {: id="item-list"}
 
-The **Security and risk management findings** page displays a filtered list of findings, sorted by status. Use this page to review and prioritize findings and track the progress of your security efforts.
+The **Security and risk management findings** page displays a filtered list of findings. By default, this list is sorted by status, and you can click the **First detected** column name to sort the findings by the detection date. Use this page to review and prioritize findings and track the progress of your security efforts.
 
-To access the overview page, select an organization from the top navigation bar, select **Security and risk** on the left navigation sidebar, and click the **Findings** tab in the top bar.
+To access the findings page, access the [overview page](#dashboard) and click the **Findings** tab.
 
 ![Security and risk management findings page](images/security-risk-management-findings.png)
 
