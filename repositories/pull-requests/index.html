@@ -11,7 +11,7 @@
         <meta name="description" content="The Quality Pull Requests page displays an overview of the pull requests in your repository, such as the analysis status and the code quality metrics for each pull request. This allows you to monitor the code quality of the work in progress in your repository.">
       
       
-        <meta http-equiv="last-modified" content="2023-09-18 09:12:48">
+        <meta http-equiv="last-modified" content="2024-04-15 13:20:33">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/pull-requests/">
@@ -394,14 +394,28 @@
       
         <li class="md-nav__item">
   <a href="#issues-tabs" class="md-nav__link">
-    Issues tabs
+    Issues tab
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#duplication-tabs" class="md-nav__link">
-    Duplication tabs
+    Duplication tab
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#complexity-tab" class="md-nav__link">
+    Complexity tab
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coverage-tab" class="md-nav__link">
+    Coverage tab
   </a>
   
 </li>
@@ -4137,38 +4151,39 @@
                 
                 <h1 id="quality-pull-requests-page">Quality Pull Requests page<a class="headerlink" href="#quality-pull-requests-page" title="Permanent link">#</a></h1>
 <p>The <strong>Quality Pull Requests page</strong> displays an overview of the pull requests in your repository, such as the analysis status and the code quality metrics for each pull request. This allows you to monitor the code quality of the work in progress in your repository.</p>
-<p>By default, the page lists open pull requests but you can click the <strong>Closed</strong> tab at the top of the list to display the closed pull requests.</p>
+<p>By default, the page lists open pull requests, but you can click the <strong>Closed</strong> tab at the top of the list to display the closed pull requests.</p>
 <p><img alt="Pull Requests page" src="../images/pull-requests.png" /></p>
 <p>Click a specific pull request to see detailed information about the code quality changes introduced by that pull request.</p>
 <p><img alt="Pull request detail" src="../images/pull-requests-detail.png" /></p>
 <p>The next sections describe each area of the pull request detail page.</p>
 <h2 id="status">Pull request status<a class="headerlink" href="#status" title="Permanent link">#</a></h2>
-<p>This area displays the information that identifies the pull request (head and base branches, date, and name), as well as:</p>
+<p>This area displays the information that identifies the pull request (name, author, head and base branches, and last updated date), as well as:</p>
 <ul>
-<li>The analysis status and a <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">button to reanalyze the last commit on the pull request branch</a> (enabled when the committer <a href="../../organizations/managing-people/">is part of your organization</a>)</li>
-<li>A link to the analysis logs</li>
 <li>A link to the pull request on your Git provider</li>
+<li>A <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">link to reanalyze the latest pull request commit</a>, present when the committer <a href="../../organizations/managing-people/">is part of your organization</a></li>
+<li>A link to the analysis logs</li>
 </ul>
 <p><img alt="Pull request status" src="../images/pull-requests-detail-status.png" /></p>
 <h2 id="quality-overview">Pull request quality overview<a class="headerlink" href="#quality-overview" title="Permanent link">#</a></h2>
-<p>This area displays the quality gate status and an overview of the code quality metrics for the pull request:</p>
+<p><img alt="Pull request quality overview" src="../images/pull-requests-detail-quality-overview.png" /></p>
+<p>This area displays the quality gate status for the pull request and the code quality metrics <a href="../../repositories-configure/adjusting-quality-gates/">with a gate set up</a>:</p>
 <ul>
 <li>
-<p>The quality gate status is either <strong>Failed quality gates</strong> or <strong>Passed quality gates</strong> depending on the <a href="../../repositories-configure/adjusting-quality-gates/">quality gate rules</a> for your repository.</p>
-<p>If you don't have any rules enabled for pull requests, the status is always <strong>Passed quality gates</strong>.</p>
+<p>The quality gate status is either <strong>Up to quality standards</strong> or <strong>Not up to quality standards</strong> depending on the <a href="../../repositories-configure/adjusting-quality-gates/">quality gate rules</a> for your repository.</p>
+<p>If there are no gate rules enabled for pull requests, the status is always <strong>Up to quality standards</strong>.</p>
 </li>
 <li>
-<p>The variation of the following code quality metrics introduced by the pull request is displayed either as a <strong>positive or negative variation</strong>, <strong>no variation</strong> (represented by <code>=</code>), or <strong>not applicable</strong> (represented by <code>∅</code>):</p>
+<p>The variation introduced by the pull request is displayed either as a <strong>positive or negative variation</strong>, <strong>no variation</strong> (represented by <code>=</code>), or <strong>not applicable</strong> (represented by <code>∅</code>) for code quality metrics <a href="../../repositories-configure/adjusting-quality-gates/">with a gate set up</a>:</p>
 <ul>
 <li><strong>Issues:</strong> Number of new issues</li>
-<li><strong>Duplication:</strong> Variation of the number of duplicated code blocks</li>
+<li><strong>Duplication:</strong> Changes in the number of duplicated code blocks</li>
 <li>
-<p><strong>Complexity:</strong> Variation of complexity</p>
+<p><strong>Complexity:</strong> Changes in code complexity</p>
 </li>
 <li>
-<p><strong>Coverage variation:</strong> Variation of code coverage percentage relative to the target branch</p>
+<p><strong>Diff coverage:</strong> Code coverage of the coverable lines affected by the pull request, or <code>∅</code> (not applicable) if there are no coverable lines</p>
 </li>
-<li><strong>Diff coverage:</strong> Code coverage of the coverable lines added or changed by the pull request, or <code>∅</code> (not applicable) if there aren't any coverable lines added or changed</li>
+<li><strong>Coverage variation:</strong> Changes in code coverage percentage compared with the target branch</li>
 </ul>
 <p>Depending on the languages being analyzed or if you haven't <a href="../../coverage-reporter/">set up coverage for your repository</a>, some metrics <strong>may not be calculated</strong> (represented by <code>-</code>).</p>
 <div class="admonition note">
@@ -4185,67 +4200,99 @@
 <ul>
 <li><strong>Green:</strong> The metric passes the quality gate</li>
 <li><strong>Red:</strong> The metric fails the quality gate</li>
-<li><strong>Gray:</strong> There aren't quality gate rules configured for the metric or the value doesn't impact the quality gate</li>
+<li><strong>Gray:</strong> The metric has no value</li>
 </ul>
-<div class="admonition notes">
-<p class="admonition-title">Notes</p>
-<p>If you change the quality gate rules you must reanalyze the pull request to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you change the quality gate rules you must reanalyze the pull request to update the metrics and optionally re-upload the Coverage report if you also changed the coverage gate rules.</p>
 </div>
 </li>
 </ul>
-<p><img alt="Pull request quality overview" src="../images/pull-requests-detail-quality-overview.png" /></p>
-<h2 id="issues-tabs">Issues tabs<a class="headerlink" href="#issues-tabs" title="Permanent link">#</a></h2>
-<p>The <strong>New Issues</strong> and <strong>Fixed Issues</strong> tabs display the list of issues that the commit created or fixed.</p>
+<h2 id="issues-tabs">Issues tab<a class="headerlink" href="#issues-tabs" title="Permanent link">#</a></h2>
+<p>The <strong>Issues</strong> tab displays the lists of issues that the pull request creates or fixes. Use the sidebar filters to filter the list by new issues (including issues of specific severity or category), issues within a specific file, fixed issues, <a href=".#possible-issues">potential new issues, or potential fixed issues</a>.</p>
 <p>Click the title of an issue to see the following information:</p>
 <ul>
-<li>The committer and date of the commit that introduced the issue</li>
-<li>The <a href="../../getting-started/supported-languages-and-tools/">tool that reported the issue</a> and the estimated time to fix it</li>
-<li>What's the issue and how to solve it</li>
-<li>The programming language and category of the issue</li>
+<li>The committer and date of the commit that introduced the issue, if available</li>
+<li>The estimated time to fix the issue</li>
+<li>What the issue is and how to solve it</li>
+<li>The <a href="../../getting-started/supported-languages-and-tools/">tool that reported the issue</a> and the related code pattern</li>
 </ul>
-<p>Use the options in the cogwheel menu of each issue to <a href="../issues/#ignoring-and-managing-issues">ignore and manage issues</a>.</p>
-<p><img alt="New Issues and Fixed Issues tabs" src="../images/pull-requests-tab-issues.png" /></p>
-<h3 id="possible-issues">Possible issues<a class="headerlink" href="#possible-issues" title="Permanent link">#</a></h3>
-<p>In some situations, Codacy may report either new or fixed <strong>possible</strong> issues on a pull request, which means that the code analysis detected these issues in lines of code that weren't changed by that pull request. This gives you awareness to how your changes may be affecting other parts of your code.</p>
-<p>The following are example situations that can lead to possible issues:</p>
+<p>To <a href="../issues/#ignoring-and-managing-issues">ignore or manage an issue</a>, click the associated options in the menu.</p>
+<p><img alt="Issues tab" src="../images/pull-requests-tab-issues.png" /></p>
+<h3 id="possible-issues">Potential issues<a class="headerlink" href="#possible-issues" title="Permanent link">#</a></h3>
+<p>Codacy may label some issues as <strong>potential</strong>, which means that the code analysis detected these issues in lines of code that weren't changed by the analyzed pull request. This highlights potential consequences in other parts of your codebase.</p>
+<p>The following are example situations that can lead to potential issues:</p>
 <ul>
 <li>
 <p>The issue was either created or fixed in the current pull request, but the static code analysis tools reported the issue on a line that didn't change in the pull request. For example, if you remove the line containing the declaration of a variable you may get an "undeclared variable" issue in other lines that use that variable.</p>
 </li>
 <li>
-<p>If a file had <a href="../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/">more than 50 issues reported by the same tool</a> and you push a new commit that fixes some of these issues, Codacy will report more issues until the limit of 50 issues. These issues will be possible issues if they're outside the lines of code changed in the new commit.</p>
+<p>If a file had <a href="../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/">more than 50 issues reported by the same tool</a> and you push a new commit that fixes some of these issues, Codacy will report more issues until the limit of 50 issues. These issues will be potential issues if they're outside the lines of code changed in the new commit.</p>
 </li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><strong>If you're using GitHub</strong> you may see <a href="../../repositories-configure/integrations/github-integration/#issue-annotations">annotations</a>  for possible issues reported under <strong>Unchanged files with check annotations</strong> on the <strong>Files changed</strong> tab of your pull requests.</p>
-<p>This happens when Codacy reports possible issues in files that weren't changed in your pull request. <a href="https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/">Read more about this GitHub feature</a>.</p>
+<p><strong>If you're using GitHub</strong> you may see <a href="../../repositories-configure/integrations/github-integration/#issue-annotations">annotations</a> for potential issues reported under <strong>Unchanged files with check annotations</strong> on the <strong>Files changed</strong> tab of your pull requests.</p>
+<p>This happens when Codacy reports potential issues in files that weren't changed in your pull request. <a href="https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/">Read more about this GitHub feature</a>.</p>
 </div>
-<h2 id="duplication-tabs">Duplication tabs<a class="headerlink" href="#duplication-tabs" title="Permanent link">#</a></h2>
-<p>The <strong>New Duplication</strong> and <strong>Fixed Duplication</strong> tabs display the list of duplicated blocks that the pull request created or fixed.</p>
-<p><img alt="New Duplication and Fixed Duplication tabs" src="../images/pull-requests-tab-duplication.png" /></p>
-<h2 id="diff-tab">Diff tab<a class="headerlink" href="#diff-tab" title="Permanent link">#</a></h2>
-<p>The <strong>Diff</strong> tab displays the differences in each file that was changed in the pull request. The background of the changed lines depends on the change:</p>
+<h2 id="duplication-tabs">Duplication tab<a class="headerlink" href="#duplication-tabs" title="Permanent link">#</a></h2>
+<p>The <strong>Duplication</strong> tab displays the lists of clones (duplicated code blocks) that the pull request adds or fixes. You can click a clone to expand it and inspect the code.</p>
+<p><img alt="Duplication tabs" src="../images/pull-requests-tab-duplication.png" /></p>
+<h2 id="complexity-tab">Complexity tab<a class="headerlink" href="#complexity-tab" title="Permanent link">#</a></h2>
+<p>The <strong>Complexity</strong> tab displays the complexity changes introduced by the pull request. Use the sidebar filters to filter the list by high increase (4 or more), low increase (1 to 3), or improvement (less than 0).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When calculating the complexity variation introduced by a pull request, Codacy only considers files with a high increase in complexity. For more information, see <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">how Codacy calculates cyclomatic complexity</a>.</p>
+</div>
+<p><img alt="Complexity tab" src="../images/pull-requests-tab-complexity.png" /></p>
+<h2 id="coverage-tab">Coverage tab<a class="headerlink" href="#coverage-tab" title="Permanent link">#</a></h2>
+<p>The <strong>Coverage</strong> tab displays a line-by-line view of the coverage variation introduced by the pull request. It includes the following areas:</p>
 <ul>
-<li><strong>Red</strong>: Deleted line</li>
-<li><strong>Yellow</strong>: Old version of a changed line with deleted characters highlighted in red</li>
-<li><strong>Green</strong>: New version of a changed line with added characters highlighted in bright green</li>
-<li><strong>Bright green</strong>: New line</li>
+<li>
+<p>A <strong>list of files</strong> modified by the pull request, with additional information for each file:</p>
+<ul>
+<li>A <strong>green plus icon</strong> if the file is added or a <strong>yellow dot icon</strong> if it's modified by the pull request</li>
+<li>The <strong>coverage variation</strong> introduced by the pull request (green or red value) or the <strong>total file coverage</strong> if there's no variation (grey value)</li>
+</ul>
+</li>
+<li>
+<p>A <strong>diff viewer</strong> showing for each modified file the diff coverage and a comparison of the old and new file content. The background of any added or modified lines depends on their coverage status:</p>
+<ul>
+<li><strong>Red</strong>: Uncovered line</li>
+<li><strong>Green</strong>: Covered line, labeled with its test coverage count</li>
+<li><strong>No background</strong>: Non-coverable line</li>
+</ul>
+</li>
+</ul>
+<p><img alt="Coverage tab" src="../images/pull-requests-tab-coverage.png" /></p>
+<h2 id="diff-tab">Diff tab<a class="headerlink" href="#diff-tab" title="Permanent link">#</a></h2>
+<p>The <strong>Diff</strong> tab displays the code changes and issues introduced by the pull request. It includes the following areas:</p>
+<ul>
+<li>
+<p>A <strong>list of files</strong> modified by the pull request, with additional information for each file:</p>
+<ul>
+<li>A <strong>green plus icon</strong> if the file is added or a <strong>yellow dot icon</strong> if it's modified by the pull request</li>
+<li>The <strong>number of new issues</strong> introduced by the pull request</li>
+</ul>
+</li>
+<li>
+<p>A <strong>diff viewer</strong> showing for each modified file the diff coverage and a comparison of the old and new file content. </p>
+<p>Lines with issues are highlighted according to issue severity and include a pill label with the issue type and count. Hover over the pill label to view more details or navigate to the issues.</p>
+</li>
 </ul>
 <p><img alt="Diff tab" src="../images/pull-requests-tab-diff.png" /></p>
 <h2 id="files-tab">Files tab<a class="headerlink" href="#files-tab" title="Permanent link">#</a></h2>
 <p>The <strong>Files</strong> tab displays the variation of the following <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">code quality metrics</a> that the pull request introduces to the files in your repository, displayed either as a <strong>positive or negative variation</strong>, or <strong>no variation</strong> (represented by <code>=</code>):</p>
 <ul>
-<li><strong>Issues:</strong> Number of new or fixed issues</li>
-<li><strong>Duplication:</strong> Variation of the number of duplicated code blocks</li>
-<li><strong>Complexity:</strong> Variation of complexity</li>
-<li><strong>Coverage variation:</strong> Variation of code coverage percentage relative to the target branch</li>
+<li><strong>New issues:</strong> Number of new issues</li>
+<li><strong>Duplication:</strong> Changes in the number of duplicated code blocks</li>
+<li><strong>Complexity:</strong> Changes in code complexity</li>
+<li><strong>Coverage variation:</strong> Changes in code coverage percentage compared with the target branch</li>
 </ul>
 <p>Depending on the languages being analyzed or if you haven't <a href="../../coverage-reporter/">set up coverage for your repository</a>, some metrics <strong>may not be calculated</strong> (represented by <code>-</code>).</p>
-<p>The option <strong>Show files without code quality changes</strong> allows you to list all files that the pull request updates, even if their code quality metrics don't change.</p>
 <p><img alt="Files tab" src="../images/pull-requests-tab-files.png" /></p>
 <h2 id="commits-tab">Commits tab<a class="headerlink" href="#commits-tab" title="Permanent link">#</a></h2>
-<p>The <strong>Commits</strong> tab displays an overview of each commit included in the pull request, such as the analysis status and the number of new and fixed issues for each commit.</p>
+<p>The <strong>Commits</strong> tab displays an overview of each commit included in the pull request, such as the analysis status and the number of issues introduced.</p>
 <p>Click a specific commit to see <a href="../commits/#status">detailed information about that commit</a>.</p>
 <p><img alt="Commits tab" src="../images/pull-requests-tab-commits.png" /></p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
@@ -4408,7 +4455,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 18, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 15, 2024</span>
     
   </small>
 </div>
