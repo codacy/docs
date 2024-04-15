@@ -37,7 +37,6 @@ By default, Codacy ignores all the files that match the regular expressions belo
 .*bower_components/.*
 .*vendor/.*
 .*third[_-]?[Pp]arty/.*
-.*docs?/.*
 .*samples?/.*
 .*releases?/.*
 .*builds?/.*
