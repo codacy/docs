@@ -91,6 +91,10 @@ To access the findings page, access the [overview page](#dashboard) and click th
 
 When viewing the findings, you can update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, or **Security category** drop-downs above the list.
 
+To find out more about a finding in the list, click its **Details** column to navigate to the finding details on the source platform. Click **View all findings** to get back to the findings list.
+
+![Security and risk management finding details](images/security-risk-management-finding-details.png)
+
 ## Sharing a filtered view of findings {: id="sharing-filtered-view"}
 
 To share the current view of the overview or findings page, click the **Copy URL** button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.
