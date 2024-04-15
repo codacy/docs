@@ -5,9 +5,9 @@ file_name: "commits"
 
 # Quality Commits page
 
-The **Quality Commits page** displays an overview of the commits in your repository, such as the analysis status and the code quality metrics for each commit. This allows you to monitor the evolution of the code quality in your repository per commit.
+The **Quality Commits page** displays an overview of the commits in your repository, such as the analysis status and the code quality metrics for each commit. This allows you to monitor the evolution of the code quality per commit in your repository.
 
-By default, the page lists the commits on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display commits on other branches.
+By default, the page lists the commits on the main branch of your repository, but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display commits on other branches.
 
 ![Commits page](images/commits.png)
 
@@ -19,33 +19,37 @@ The next sections describe each area of the commit detail page.
 
 ## Commit status {: id="status"}
 
-This area displays the information that identifies the commit (SHA hash, date, and commit message), as well as:
-
--   The analysis status and a [button to reanalyze the commit](../faq/repositories/how-do-i-reanalyze-my-repository.md) (enabled when the committer [is part of your organization](../organizations/managing-people.md))
--   A link to the analysis logs
--   A link to the commit on your Git provider
-
 ![Commit status](images/commits-detail-status.png)
+
+This area displays the information that identifies the commit (commit message, committer, SHA hash, and last updated date), as well as:
+
+-   A link to the commit on your Git provider
+-   A [link to reanalyze the commit](../faq/repositories/how-do-i-reanalyze-my-repository.md), present when the committer [is part of your organization](../organizations/managing-people.md)
+-   A link to the analysis logs
 
 <!--quality-overview-start-->
 ## {{ page.meta.page_name.capitalize() }} quality overview {: id="quality-overview"}
 
-This area displays the quality gate status and an overview of the code quality metrics for the {{ page.meta.page_name }}:
+<!-- vale off -->
+![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)
+<!-- vale on -->
 
--   The quality gate status is either **Failed quality gates** or **Passed quality gates** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
+This area displays the quality gate status for the {{ page.meta.page_name }} and the code quality metrics [with a gate set up](../repositories-configure/adjusting-quality-gates.md):
 
-    If you don't have any rules enabled for {{ page.meta.page_name }}s, the status is always **Passed quality gates**.
+-   The quality gate status is either **Up to quality standards** or **Not up to quality standards** depending on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository.
 
--   The variation of the following code quality metrics introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %}:
+    If there are no gate rules enabled for {{ page.meta.page_name }}s, the status is always **Up to quality standards**.
+
+-   The variation introduced by the {{ page.meta.page_name }} is displayed either as a **positive or negative variation**, {% if page.meta.page_name == "commit" %}or **no variation** (represented by `=`){% else %}**no variation** (represented by `=`), or **not applicable** (represented by `∅`){% endif %} for code quality metrics [with a gate set up](../repositories-configure/adjusting-quality-gates.md):
 
     -   **Issues:** Number of new issues
-    -   **Duplication:** Variation of the number of duplicated code blocks
-    -   **Complexity:** Variation of complexity
+    -   **Duplication:** Changes in the number of duplicated code blocks
+    -   **Complexity:** Changes in code complexity
 {% if page.meta.page_name == "commit" %}
-    -   **Coverage:** Variation of code coverage percentage relative to the parent commit
+    -   **Coverage variation:** Changes in code coverage percentage compared with the parent commit
 {% else %}
-    -   **Coverage variation:** Variation of code coverage percentage relative to the target branch
-    -   **Diff coverage:** Code coverage of the coverable lines added or changed by the pull request, or `∅` (not applicable) if there aren't any coverable lines added or changed
+    -   **Diff coverage:** Code coverage of the coverable lines affected by the pull request, or `∅` (not applicable) if there are no coverable lines
+    -   **Coverage variation:** Changes in code coverage percentage compared with the target branch
 {% endif %}
 
     Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
@@ -60,61 +64,75 @@ This area displays the quality gate status and an overview of the code quality m
 
     -   **Green:** The metric passes the quality gate
     -   **Red:** The metric fails the quality gate
-    -   **Gray:** There aren't quality gate rules configured for the metric or the value doesn't impact the quality gate
+    -   **Gray:** The metric has no value
 
-    !!! notes
-        If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the color of the metrics, except for coverage which updates immediately after you save your changes on the Quality Settings page.
-
-<!-- vale off -->
-![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)
-<!-- vale on -->
+    !!! note
+        If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the metrics and optionally re-upload the Coverage report if you also changed the coverage gate rules.
 <!--quality-overview-end-->
 
 <!--tabs-start-->
-## Issues tabs
+## Issues tab {: id="issues-tabs"}
 
-The **New Issues** and **Fixed Issues** tabs display the list of issues that the commit created or fixed.
+The **Issues** tab displays the lists of issues that the {{ page.meta.page_name }} creates or fixes. Use the sidebar filters to filter the list by new issues (including issues of specific severity or category), issues within a specific file, fixed issues, [potential new issues, or potential fixed issues](#possible-issues).
 
-Click the title of an issue to see the following information:
+{%
+    include-markdown "./issues.md"
+    start="<!--issue-details-start-->"
+    end="<!--issue-details-end-->"
+%}
 
--   The committer and date of the commit that introduced the issue
--   The [tool that reported the issue](../getting-started/supported-languages-and-tools.md) and the estimated time to fix it
--   What's the issue and how to solve it
--   The programming language and category of the issue
+To [ignore or manage an issue](issues.md#ignoring-and-managing-issues), click the associated options in the menu.
 
-Use the options in the cogwheel menu of each issue to [ignore and manage issues](issues.md#ignoring-and-managing-issues).
+![Issues tab](images/{{ page.meta.file_name }}-tab-issues.png)
 
-![New Issues and Fixed Issues tabs](images/{{ page.meta.file_name }}-tab-issues.png)
+### Potential issues {: id="possible-issues"}
 
-### Possible issues
+Codacy may label some issues as **potential**, which means that the code analysis detected these issues in lines of code that weren't changed by the analyzed {{ page.meta.page_name }}. This highlights potential consequences in other parts of your codebase.
 
-In some situations, Codacy may report either new or fixed **possible** issues on a {{ page.meta.page_name }}, which means that the code analysis detected these issues in lines of code that weren't changed by that {{ page.meta.page_name }}. This gives you awareness to how your changes may be affecting other parts of your code.
-
-The following are example situations that can lead to possible issues:
+The following are example situations that can lead to potential issues:
 
 -   The issue was either created or fixed in the current {{ page.meta.page_name }}, but the static code analysis tools reported the issue on a line that didn't change in the {{ page.meta.page_name }}. For example, if you remove the line containing the declaration of a variable you may get an "undeclared variable" issue in other lines that use that variable.
 
--   If a file had [more than 50 issues reported by the same tool](../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md) and you push a new commit that fixes some of these issues, Codacy will report more issues until the limit of 50 issues. These issues will be possible issues if they're outside the lines of code changed in the new commit.
+-   If a file had [more than 50 issues reported by the same tool](../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md) and you push a new commit that fixes some of these issues, Codacy will report more issues until the limit of 50 issues. These issues will be potential issues if they're outside the lines of code changed in the new commit.
 
 !!! note
-    **If you're using GitHub** you may see [annotations](../repositories-configure/integrations/github-integration.md#issue-annotations)  for possible issues reported under **Unchanged files with check annotations** on the **Files changed** tab of your pull requests.
+    **If you're using GitHub** you may see [annotations](../repositories-configure/integrations/github-integration.md#issue-annotations) for potential issues reported under **Unchanged files with check annotations** on the **Files changed** tab of your pull requests.
 
-    This happens when Codacy reports possible issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/).
+    This happens when Codacy reports potential issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/).
 
-## Duplication tabs
+## Duplication tab {: id="duplication-tabs"}
 
-The **New Duplication** and **Fixed Duplication** tabs display the list of duplicated blocks that the {{ page.meta.page_name }} created or fixed.
+The **Duplication** tab displays the lists of clones (duplicated code blocks) that the {{ page.meta.page_name }} adds or fixes. You can click a clone to expand it and inspect the code.
 
-![New Duplication and Fixed Duplication tabs](images/{{ page.meta.file_name }}-tab-duplication.png)
+![Duplication tabs](./images/{{ page.meta.file_name }}-tab-duplication.png)
+
+## Complexity tab
+
+The **Complexity** tab displays the complexity changes introduced by the {{ page.meta.page_name }}. Use the sidebar filters to filter the list by high increase (4 or more), low increase (1 to 3), or improvement (less than 0).
+
+!!! note
+    When calculating the complexity variation introduced by a {{ page.meta.page_name }}, Codacy only considers files with a high increase in complexity. For more information, see [how Codacy calculates cyclomatic complexity](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
+
+![Complexity tab](./images/{{ page.meta.file_name }}-tab-complexity.png)
+
+{%
+    include-markdown "../repositories-coverage/commits.md"
+    start="<!--tab-diff-start-->"
+    end="<!--tab-diff-end-->"
+%}
 
 ## Diff tab
 
-The **Diff** tab displays the differences in each file that was changed in the {{ page.meta.page_name }}. The background of the changed lines depends on the change:
+The **Diff** tab displays the code changes and issues introduced by the {{ page.meta.page_name }}. It includes the following areas:
 
--   **Red**: Deleted line
--   **Yellow**: Old version of a changed line with deleted characters highlighted in red
--   **Green**: New version of a changed line with added characters highlighted in bright green
--   **Bright green**: New line
+-   A **list of files** modified by the {{ page.meta.page_name }}, with additional information for each file:
+
+    -   A **green plus icon** if the file is added or a **yellow dot icon** if it's modified by the {{ page.meta.page_name }}
+    -   The **number of new issues** introduced by the {{ page.meta.page_name }}
+
+-   A **diff viewer** showing for each modified file the diff coverage and a comparison of the old and new file content. 
+
+    Lines with issues are highlighted according to issue severity and include a pill label with the issue type and count. Hover over the pill label to view more details or navigate to the issues.
 
 <!-- vale off -->
 ![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)
@@ -124,14 +142,12 @@ The **Diff** tab displays the differences in each file that was changed in the {
 
 The **Files** tab displays the variation of the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) that the {{ page.meta.page_name }} introduces to the files in your repository, displayed either as a **positive or negative variation**, or **no variation** (represented by `=`):
 
--   **Issues:** Number of new or fixed issues
--   **Duplication:** Variation of the number of duplicated code blocks
--   **Complexity:** Variation of complexity
--   **Coverage variation:** Variation of code coverage percentage relative to the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}
+-   **New issues:** Number of new issues
+-   **Duplication:** Changes in the number of duplicated code blocks
+-   **Complexity:** Changes in code complexity
+-   **Coverage variation:** Changes in code coverage percentage compared with the {% if page.meta.page_name == "commit" %}parent commit{% else %}target branch{% endif %}
 
 Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
-
-The option **Show files without code quality changes** allows you to list all files that the {{ page.meta.page_name }} updates, even if their code quality metrics don't change.
 
 <!-- vale off -->
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
