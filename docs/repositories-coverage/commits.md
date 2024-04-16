@@ -66,9 +66,13 @@ This area displays the coverage gate status and an overview of the coverage metr
 <!--coverage-overview-end-->
 
 <!--tab-diff-start-->
+{% if page.meta.product == "coverage" %}
 ## Diff tab
+{% else %}
+## Coverage tab
+{% endif %}
 
-The **Diff** tab displays a line-by-line view of the coverage variation introduced by the {{ page.meta.page_name }}. It includes the following areas:
+The {% if page.meta.product == "coverage" %}**Diff**{% else %}**Coverage**{% endif %} tab displays a line-by-line view of the coverage variation introduced by the {{ page.meta.page_name }}. It includes the following areas:
 
 -   A **list of files** modified by the {{ page.meta.page_name }}, with additional information for each file:
 
@@ -82,7 +86,11 @@ The **Diff** tab displays a line-by-line view of the coverage variation introduc
     -   **No background**: Non-coverable line
 
 <!-- vale off -->
+{% if page.meta.product == "coverage" %}
 ![Diff tab](images/{{ page.meta.file_name }}-tab-diff.png)
+{% else %}
+![Coverage tab](images/{{ page.meta.file_name }}-tab-coverage.png)
+{% endif %}
 <!-- vale on -->
 <!--tab-diff-end-->
 

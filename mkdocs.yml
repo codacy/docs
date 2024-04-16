@@ -648,6 +648,7 @@ nav:
                 - faq/code-analysis/does-codacy-check-for-dependencies.md
                 - faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed.md
                 - faq/code-analysis/how-to-skip-an-analysis.md
+                - faq/code-analysis/can-i-bypass-codacy-status-check.md
                 - faq/code-analysis/how-to-configure-php-codesniffer-coding-standards.md
           - Troubleshooting:
                 - faq/troubleshooting/why-cant-i-see-my-organization.md
@@ -662,6 +663,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2024:
+                      - release-notes/cloud/cloud-2024-03.md
                       - release-notes/cloud/cloud-2024-02.md
                       - release-notes/cloud/cloud-2024-01.md
                       - release-notes/cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation.md
