@@ -1,12 +1,8 @@
 # Integrating Codacy with IntelliJ IDEs
 
-<!-- TODO ALA-872
-- review entire page for accuracy
--->
+The [Codacy IntelliJ plugin](https://github.com/codacy/codacy-intellij-extension) is an open-source plugin for IntelliJ IDEs that lets you review the result of the Codacy analysis for a pull request, get the full list of problems found, and navigate to any Quality issue that you want to review and fix.
 
 !!! info "To use this plugin you need a [Codacy account](https://www.codacy.com/signup-codacy)"
-
-The [Codacy IntelliJ plugin](https://github.com/codacy/codacy-intellij-extension) is an open-source plugin for IntelliJ IDEs that lets you review the result of the Codacy analysis for a pull request, get the full list of problems found, and navigate to any Quality issue that you want to review and fix.
 
 ## Interface overview
 
@@ -20,15 +16,13 @@ In the main view, you can find the following information:
 
 -   Any **Quality issues** introduced or fixed by the pull request. These are the same issues you find in the [Quality Issues tabs](../repositories/pull-requests.md#issues-tabs) in the Codacy app and are also visible in IntelliJ's Problems tab.
 
-    When this item is expanded, the number next to each file name is the total number of Quality issues that the pull request adds to or removes from that file.<!-- TODO ALA-872 confirm "removes" is correct -->
+    When this item is expanded, the number next to each file name is the total number of Quality issues that the pull request adds to that file.
 
--   The **diff coverage and coverage variation** introduced by the pull request. These are the same values you find in the [Pull request coverage overview](../repositories-coverage/pull-requests.md#coverage-overview) panel in the Codacy app.<!-- TODO ALA-872 confirm once bug fixed by developer -->
-
-    The percentage next to each file name is the coverage variation for that file.
+-   The **diff coverage** introduced by the pull request. This is the same value you find in the [Pull request coverage overview](../repositories-coverage/pull-requests.md#coverage-overview) panel in the Codacy app. The percentage next to each file name is the coverage variation for that file.
 
 -   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Quality Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
 
--   Variations in **code complexity** introduced by the pull request.<!-- WIP review -->
+-   Variations in **code complexity** introduced by the pull request.
 
 ## Installing the Codacy IntelliJ plugin
 
@@ -65,7 +59,7 @@ After completing these steps, the main view shows the result of the latest Codac
 In the **Problems tool window**, Codacy displays the same Quality issues you find in the main view and lets you navigate to the exact line of code where the issue was found.
 
 !!! note
-    Code coverage, duplicates, and complexity aren't currently shown in the Problems tool window.<!-- TODO ALA-872 confirm -->
+    Code coverage, duplicates, and complexity aren't currently shown in the Problems tool window.
 
 To review Quality issues:
 
