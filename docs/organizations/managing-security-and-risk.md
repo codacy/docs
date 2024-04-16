@@ -22,8 +22,8 @@ To access the overview page, select an organization from the top navigation bar 
 The overview page includes six panels:
 
 -   [Open findings overview](#open-findings-overview)
--   [open findings distribution](#open-findings-distribution)
--   [open findings history](#open-findings-history)
+-   [Open findings distribution](#open-findings-distribution)
+-   [Open findings history](#open-findings-history)
 -   [Activity history](#activity-history)
 -   [Top 10 high-risk repositories](#top-10-high-risk-repositories)
 -   [Top 10 common security categories](#top-10-common-security-categories)
