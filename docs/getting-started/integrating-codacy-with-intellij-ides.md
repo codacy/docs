@@ -12,7 +12,7 @@ The [Codacy IntelliJ plugin](https://github.com/codacy/codacy-intellij-extension
 
 The main view of the Codacy IntelliJ plugin provides a summary of the code quality and coverage changes introduced by the pull request of the currently checked-out branch.
 
-![Main view](./images/codacy-intellij-plugin-main-view.png)<!-- TODO ALA-872 screenshot -->
+![Main view](./images/codacy-intellij-plugin-main-view.png)
 
 In the main view, you can find the following information:
 
@@ -52,7 +52,7 @@ To see Codacy quality and coverage data for an open pull request, follow these s
 
 1.  Open the main view by clicking the **Codacy logo** in the left tool window bar.
 
-    ![Codacy main view](./images/codacy-intellij-plugin-sign-in.png)<!-- TODO ALA-872 screenshot -->
+    ![Codacy main view](./images/codacy-intellij-plugin-sign-in.png)
 
 1.  If you’re not signed in, click the **Sign in** button to authorize IntelliJ on Codacy.
 
@@ -75,7 +75,7 @@ To review Quality issues:
 
 1.  Open the **Problems tool window** (use `Ctrl+6` on Windows/Linux or `Cmd+6` on macOS) and select the **File** tab.
 
-    ![Navigate to a specific issue from the Problems tab](./images/codacy-intellij-plugin-problems-tab.png)<!-- TODO ALA-872 screenshot -->
+    ![Navigate to a specific issue from the Problems tab](./images/codacy-intellij-plugin-problems-tab.png)
 
 1.  Click the name of the issue you want to review.
 
