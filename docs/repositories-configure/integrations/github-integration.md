@@ -6,10 +6,6 @@ description: Enable the GitHub integration to have status checks, annotations, i
 
 The GitHub integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your pull requests.
 
-When this integration is enabled, you can also create pull request comments directly from Codacy when browsing the existing repository issues on the [commit issue tabs](../../repositories/commits.md#issues-tabs) or on the [pull request issue tabs](../../repositories/pull-requests.md#issues-tabs) of a repository:<!--TODO CY-6642 Check if this is still true-->
-
-![GitHub integration for issues](images/github-integration-issues.png)
-
 ## Enabling the GitHub integration {: id="enabling"}
 
 <!--TODO CY-6642 Review this section considering the new behaviour to refresh/re-assign integration-->

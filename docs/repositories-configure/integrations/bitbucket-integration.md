@@ -6,10 +6,6 @@ description: Enable the Bitbucket integration to have pull request status, comme
 
 The Bitbucket integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your pull requests.
 
-When this integration is enabled, you can also create pull request comments directly from Codacy when browsing the existing repository issues on the [commit issue tabs](../../repositories/commits.md#issues-tabs) or on the [pull request issue tabs](../../repositories/pull-requests.md#issues-tabs):<!--TODO CY-6642 Check if this is still true-->
-
-![Bitbucket integration for issues](images/bitbucket-integration-issues.png)
-
 ## Enabling the Bitbucket integration {: id="enabling"}
 
 <!--TODO CY-6642 Review this section considering the new behaviour to refresh/re-assign integration-->
