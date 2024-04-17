@@ -39,7 +39,7 @@ To fix this issue and avoid future disruptions, re-enable the GitLab or Bitbucke
 
 1.  Re-enable the integration by following the instructions for your Git provider:
 
-    -   [Enabling the GitLab integration](../../repositories-configure/integrations/gitlab-integration.md#enabling)
+    -   [Enabling the GitLab integration](../../repositories-configure/integrations/gitlab-integration.md#refreshing)
 
     -   [Enabling the Bitbucket integration](../../repositories-configure/integrations/bitbucket-integration.md#enabling)
 

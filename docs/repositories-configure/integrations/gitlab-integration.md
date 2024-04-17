@@ -6,23 +6,14 @@ description: Enable the GitLab integration to have merge request status, comment
 
 The GitLab integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your merge requests.
 
-## Enabling the GitLab integration {: id="enabling"}
-
-<!--TODO CY-6642 Review this section considering the new behaviour to refresh/re-assign integration-->
-
-To enable the GitLab integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, Codacy enables the integration using the [default settings for your organization](../../organizations/integrations/default-git-provider-integration-settings.md).
+When you add a new repository, Codacy sets the GitLab integration using the [default settings for your organization](../../organizations/integrations/default-git-provider-integration-settings.md). You can then [customize the settings](#configuring) for the repository.
 
 ![GitLab integration](images/gitlab-integration.png)<!--TODO CY-6642 Update screenshot-->
 
-If you remove the integration, you can enable it again as follows:<!--TODO CY-6642 This will change, as we won't allow users to delete the integration-->
+!!! important
+    Codacy uses the GitLab user who added the repositry to create comments on merge requests. If that user loses access to the repository, a repository admin must [refresh the GitLab integration](#refreshing).
 
-1.  Click the button **Add integration** and select **GitLab** on the list.
-1.  Click the button **Enable** and follow the instructions.
-
-    !!! important
-        The user that enables the integration [must have administrator access to the repository](../../organizations/roles-and-permissions-for-organizations.md#permissions-for-gitlab). Codacy uses this GitLab user to create comments on merge requests.
-
-    {% include-markdown "../../assets/includes/service-account-integration.md" %}
+{% include-markdown "../../assets/includes/service-account-integration.md" %}
 
 ## Configuring the GitLab integration {: id="configuring"}
 
@@ -63,6 +54,20 @@ Adds AI-enhanced comments with insights to help you fix identified issues.
 Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication.
 
 ![Merge request summary on GitLab](images/gitlab-integration-pr-summary.png)
+
+## Refreshing the GitLab integration {: id="refreshing"}
+
+If the user who added the repository to Codacy loses access to the repository, which may happen when the user leaves the team or the organization, Codacy won't be able to create comments on merge requests.
+
+In this situation, another user with [administrator access to the repository](../../organizations/roles-and-permissions-for-organizations.md#permissions-for-gitlab) needs to refresh the GitLab integration:
+
+1.  Open the repository **Settings**, tab **Integrations**.
+
+1.  On the GitLab integration area, click the link **Refresh integration**.
+
+    ![Refresh GitLab integration](images/gitlab-integration-refresh.png)<!--TODO CY-6642 Update screenshot-->
+
+After refreshing the integration, Codacy will use the logged in GitLab user to create comments on merge requests.
 
 ## See also
 
