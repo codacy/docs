@@ -6,21 +6,12 @@ description: Enable the GitHub integration to have status checks, annotations, i
 
 The GitHub integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your pull requests.
 
-## Enabling the GitHub integration {: id="enabling"}
-
-<!--TODO CY-6642 Review this section considering the new behaviour to refresh/re-assign integration-->
-
-To enable the GitHub integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, Codacy enables the integration using the [default settings for your organization](../../organizations/integrations/default-git-provider-integration-settings.md).
+When you add a new repository, Codacy sets the GitHub integration using the [default settings for your organization](../../organizations/integrations/default-git-provider-integration-settings.md). You can then [customize the settings](#configuring) for the repository.
 
 ![GitHub integration](images/github-integration.png)<!--TODO CY-6642 Update screenshot-->
 
-If you remove the integration, you can enable it again as follows:<!--TODO CY-6642 This will change, as we won't allow users to delete the integration-->
-
-1.  Click the button **Add integration** and select **GitHub** on the list.
-1.  Click the button **Enable** and follow the instructions.
-
-    !!! important
-        The user that enables the integration [must have administrator access to the repository](../../organizations/roles-and-permissions-for-organizations.md#permissions-for-github).
+!!! important
+    Codacy uses the GitHub user that added the repositry to create [suggested fixes](#suggest-fixes) on pull requests. If this user loses access to the repository, another user with [administrator access to the repository](../../organizations/roles-and-permissions-for-organizations.md#permissions-for-github) must refresh the integration.
 
 ## Configuring the GitHub integration {: id="configuring"}
 
