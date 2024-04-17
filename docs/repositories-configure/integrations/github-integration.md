@@ -72,7 +72,7 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
 ![Comment suggesting a fix on GitHub](images/github-integration-suggest-fixes.png)
 
 !!! important
-    Codacy uses the GitHub user who added the repositry to create the suggested fixes comments on pull requests. If that user loses access to the repository, a repository admin must [refresh the GitHub integration](#refreshing).
+    Codacy uses the GitHub user who added the repository to create the suggested fixes comments on pull requests. If that user loses access to the repository, a repository admin must [refresh the GitHub integration](#refreshing).
 
 ### AI-enhanced comments
 
