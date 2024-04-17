@@ -41,7 +41,7 @@ To fix this issue and avoid future disruptions, re-enable the GitLab or Bitbucke
 
     -   [Enabling the GitLab integration](../../repositories-configure/integrations/gitlab-integration.md#refreshing)
 
-    -   [Enabling the Bitbucket integration](../../repositories-configure/integrations/bitbucket-integration.md#enabling)
+    -   [Enabling the Bitbucket integration](../../repositories-configure/integrations/bitbucket-integration.md#refreshing)
 
     {%
         include-markdown "../../assets/includes/default-git-provider-settings-tip.md"

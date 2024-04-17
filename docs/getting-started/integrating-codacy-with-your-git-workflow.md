@@ -37,7 +37,7 @@ To integrate Codacy with your Git workflow, follow these steps:
 
 ## 2. Activating the Git provider integration {: id="git-provider-integration"}
 
-Follow the instructions for [GitHub](../repositories-configure/integrations/github-integration.md#configuring), [GitLab](../repositories-configure/integrations/gitlab-integration.md#refreshing), or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#enabling) depending on your Git provider, and make sure that you:
+Follow the instructions for [GitHub](../repositories-configure/integrations/github-integration.md#configuring), [GitLab](../repositories-configure/integrations/gitlab-integration.md#refreshing), or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#refreshing) depending on your Git provider, and make sure that you:
 
 1.  Enable the Git provider integration
 1.  Enable the option **Status checks** (GitHub) or **Pull request status** (GitLab and Bitbucket)

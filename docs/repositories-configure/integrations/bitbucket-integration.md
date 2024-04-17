@@ -6,23 +6,14 @@ description: Enable the Bitbucket integration to have pull request status, comme
 
 The Bitbucket integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your pull requests.
 
-## Enabling the Bitbucket integration {: id="enabling"}
-
-<!--TODO CY-6642 Review this section considering the new behaviour to refresh/re-assign integration-->
-
-To enable the Bitbucket integration, open your repository **Settings**, tab **Integrations**. When you add a new repository, Codacy enables the integration using the [default settings for your organization](../../organizations/integrations/default-git-provider-integration-settings.md).
+When you add a new repository, Codacy sets the Bitbucket integration using the [default settings for your organization](../../organizations/integrations/default-git-provider-integration-settings.md). You can then [customize the settings](#configuring) for the repository.
 
 ![Bitbucket integration](images/bitbucket-integration.png)<!--TODO CY-6642 Update screenshot-->
 
-If you remove the integration, you can enable it again as follows:<!--TODO CY-6642 This will change, as we won't allow users to delete the integration-->
+!!! important
+    Codacy uses the Bitbucket user who added the repository to create comments on pull requests. If that user loses access to the repository, a repository admin must [refresh the Bitbucket integration](#refreshing).
 
-1.  Click the button **Add integration** and select **Bitbucket** on the list.
-1.  Click the button **Enable** and follow the instructions.
-
-    !!! important
-        The user that enables the integration [must have administrator access to the repository](../../organizations/roles-and-permissions-for-organizations.md#permissions-for-bitbucket). Codacy uses this Bitbucket user to create comments on pull requests.
-
-    {% include-markdown "../../assets/includes/service-account-integration.md" %}
+{% include-markdown "../../assets/includes/service-account-integration.md" %}
 
 ## Configuring the Bitbucket integration {: id="configuring"}
 
@@ -65,6 +56,20 @@ Adds AI-enhanced comments with insights to help you fix identified issues.
 Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication.
 
 ![Pull request summary on Bitbucket](images/bitbucket-integration-pr-summary.png)
+
+## Refreshing the Bitbucket integration {: id="refreshing"}
+
+If the user who added the repository to Codacy loses access to the repository, which may happen when the user leaves the team or the organization, Codacy won't be able to create comments on pull requests.
+
+In this situation, another user with [administrator access to the repository](../../organizations/roles-and-permissions-for-organizations.md#permissions-for-bitbucket) needs to refresh the Bitbucket integration:
+
+1.  Open the repository **Settings**, tab **Integrations**.
+
+1.  On the Bitbucket integration area, click the link **Refresh integration**.
+
+    ![Refresh Bitbucket integration](images/bitbucket-integration-refresh.png)<!--TODO CY-6642 Update screenshot-->
+
+After refreshing the integration, Codacy will use the logged in Bitbucket user to create comments on pull requests.
 
 ## See also
 
