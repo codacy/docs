@@ -90,9 +90,9 @@ In this situation, another user with [administrator access to the repository](..
 
 1.  Open the repository **Settings**, tab **Integrations**.
 
-1.  On the Git Hub integration area, click the link **Refresh integration**.
+1.  On the GitHub integration area, click the link **Refresh integration**.
 
-![Refresh GitHub integration](images/github-integration-refresh.png)<!--TODO CY-6642 Update screenshot-->
+    ![Refresh GitHub integration](images/github-integration-refresh.png)<!--TODO CY-6642 Update screenshot-->
 
 After refreshing the integration, Codacy will use the logged in GitHub user to create [suggested fixes](#suggest-fixes) on new pull requests.
 
