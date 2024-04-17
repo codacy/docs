@@ -43,12 +43,6 @@ To fix this issue and avoid future disruptions, re-enable the GitLab or Bitbucke
 
     -   [Configuring the Bitbucket integration](../../repositories-configure/integrations/bitbucket-integration.md#configuring)
 
-    {%
-        include-markdown "../../assets/includes/default-git-provider-settings-tip.md"
-        start="<!--default-settings-start-->"
-        end="<!--default-settings-end-->"
-    %}
-
 ## See also
 
 -   [We no longer have access to this repository, check your SSH keys](we-no-longer-have-access-to-this-repository.md)
