@@ -33,15 +33,15 @@ To fix this issue and avoid future disruptions, re-enable the GitLab or Bitbucke
 
 1.  Log in to Codacy using the new service account.
 
-1.  Open your repository **Settings**, tab **Integrations**, and click the trash can icon to remove the existing Git provider integration:
+1.  Open your repository **Settings**, tab **Integrations**, and click the link **Refresh integration** to refresh the existing Git provider integration:
 
-    ![Removing the old Git provider integration](images/git-provider-integration-remove.png)
+    ![Refresh Git provider integration](../../repositories-configure/integrations/images/gitlab-integration-refresh.png)
 
-1.  Re-enable the integration by following the instructions for your Git provider:
+1.  Make sure the Git provider integration is configured as needed:
 
-    -   [Enabling the GitLab integration](../../repositories-configure/integrations/gitlab-integration.md#refreshing)
+    -   [Configuring the GitLab integration](../../repositories-configure/integrations/gitlab-integration.md#configuring)
 
-    -   [Enabling the Bitbucket integration](../../repositories-configure/integrations/bitbucket-integration.md#refreshing)
+    -   [Configuring the Bitbucket integration](../../repositories-configure/integrations/bitbucket-integration.md#configuring)
 
     {%
         include-markdown "../../assets/includes/default-git-provider-settings-tip.md"
