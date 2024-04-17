@@ -13,8 +13,6 @@ When you add a new repository, Codacy sets the Bitbucket integration using the [
 !!! important
     Codacy uses the Bitbucket user who added the repository to create comments on pull requests. If that user loses access to the repository, a repository admin must [refresh the Bitbucket integration](#refreshing).
 
-{% include-markdown "../../assets/includes/service-account-integration.md" %}
-
 ## Configuring the Bitbucket integration {: id="configuring"}
 
 To configure the Bitbucket integration, open your repository **Settings**, tab **Integrations**.
@@ -70,6 +68,8 @@ In this situation, another user with [administrator access to the repository](..
     ![Refresh Bitbucket integration](images/bitbucket-integration-refresh.png)<!--TODO CY-6642 Update screenshot-->
 
 After refreshing the integration, Codacy will use the logged in Bitbucket user to create comments on pull requests.
+
+{% include-markdown "../../assets/includes/service-account-integration.md" %}
 
 ## See also
 

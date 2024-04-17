@@ -13,8 +13,6 @@ When you add a new repository, Codacy sets the GitLab integration using the [def
 !!! important
     Codacy uses the GitLab user who added the repository to create comments on merge requests. If that user loses access to the repository, a repository admin must [refresh the GitLab integration](#refreshing).
 
-{% include-markdown "../../assets/includes/service-account-integration.md" %}
-
 ## Configuring the GitLab integration {: id="configuring"}
 
 To configure the GitLab integration, open your repository **Settings**, tab **Integrations**.
@@ -68,6 +66,8 @@ In this situation, another user with [administrator access to the repository](..
     ![Refresh GitLab integration](images/gitlab-integration-refresh.png)<!--TODO CY-6642 Update screenshot-->
 
 After refreshing the integration, Codacy will use the logged in GitLab user to create comments on merge requests.
+
+{% include-markdown "../../assets/includes/service-account-integration.md" %}
 
 ## See also
 
