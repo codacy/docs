@@ -107,7 +107,7 @@ To export a list of findings as a CSV file, click the options menu in the top ri
 
 ## Reviewing severity rules and integration settings {: id="reviewing-settings"}
 
-To [review the severity assignment rules](#item-severities-and-deadlines) or [manage the Jira integration](./integrations/jira-integration.md), click the options menu in the top right-hand corner of the page and select respectively **See severity rules** or **Manage Jira integration**.<!-- TODO TAROT-2591 confirm link and button caption update for Jira integration -->
+To [review the severity assignment rules](#item-severities-and-deadlines) or manage the integration with [Jira](./integrations/jira-integration.md) or [Slack](./integrations/slack-integration.md), click the options menu in the top right-hand corner of the page and select respectively **See severity rules** or **View integrations**.
 
 ## How Codacy manages findings {: id="opening-and-closing-items"}
 
