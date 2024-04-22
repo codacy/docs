@@ -407,6 +407,9 @@ Security and risk management supports checking the languages and infrastructure-
 
 ## Supported security categories
 
+!!! note
+    Due to a recent update, some issues may be temporarily assigned the **Not yet categorized** category. To categorize these issues, you can [reanalyze the default branch of the relevant repository](../faq/repositories/how-do-i-reanalyze-my-repository.md#reanalyzing-a-branch). For a list of repositories that have issues with this category, use the **Security category** filter on the [Findings](#item-list) page.
+
 Each Codacy issue reported by Security and risk management belongs to one of the following security categories:
 
 <!--NOTE
@@ -440,6 +443,3 @@ Each Codacy issue reported by Security and risk management belongs to one of the
 | **Visibility**                     | Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.                                                                                  |
 | **XSS**                            | Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into trusted websites that are visited by the end users.                                                                                 |
 | **Other**                          | Other language-specific security issues.                                                                                                                                                                         |
-
-!!! note
-    Due to a recent update, some issues may be temporarily assigned the **Not yet categorized** category. To categorize these issues, you can [reanalyze the default branch of the relevant repository](../faq/repositories/how-do-i-reanalyze-my-repository.md#reanalyzing-a-branch).
