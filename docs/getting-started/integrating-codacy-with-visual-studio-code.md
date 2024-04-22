@@ -30,7 +30,7 @@ The **Pull request status** tab displays the following information for the pull 
 
 -   The **diff coverage and coverage variation** introduced by the pull request. These are the same values you find in the [Pull request coverage overview](../repositories-coverage/pull-requests.md#coverage-overview) panel in the Codacy app.
 
-    The percentage next to each file name is the coverage variation for that file. You can toggle on the coverage details to see the line-by-line coverage variation introduced by the pull request on that file.<!--TODO DOCS-681 Explain how to toggle on/off-->
+    The percentage next to each file name is the coverage variation for that file. You can toggle on the coverage details to see the line-by-line coverage variation introduced by the pull request on that file.<!--TODO DOCS-681 Explain how to toggle on/off--> These are the same details you find in the [coverage Diff tab of the pull request](../repositories-coverage/pull-requests.md#diff-tab) in the Codacy app.
 
 -   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Quality Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
 
