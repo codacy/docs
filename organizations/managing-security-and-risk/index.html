@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your connected Jira instance.">
+        <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2024-03-04 16:06:23">
+        <meta http-equiv="last-modified" content="2024-04-22 10:08:28">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -998,42 +998,56 @@
       
         <li class="md-nav__item">
   <a href="#dashboard" class="md-nav__link">
-    Dashboard
+    Overview
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#item-list" class="md-nav__link">
-    Item list
+    Findings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sharing-filtered-view" class="md-nav__link">
+    Sharing a filtered view of findings
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#exporting-the-security-item-list" class="md-nav__link">
-    Exporting the security item list
+    Exporting findings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#reviewing-settings" class="md-nav__link">
+    Reviewing severity rules and integration settings
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#opening-and-closing-items" class="md-nav__link">
-    How Codacy manages security items
+    How Codacy manages findings
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#item-statuses" class="md-nav__link">
-    Item statuses
+    Finding statuses
   </a>
   
 </li>
       
         <li class="md-nav__item">
   <a href="#item-severities-and-deadlines" class="md-nav__link">
-    Item severities and deadlines
+    Finding severities and deadlines
   </a>
   
 </li>
@@ -4136,68 +4150,85 @@
                 
                 
                 <h1 id="managing-security-and-risk">Managing security and risk<a class="headerlink" href="#managing-security-and-risk" title="Permanent link">#</a></h1>
-<p>The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your <a href="../integrations/jira-integration/">connected Jira instance</a>.</p>
-<p>Under Security and risk management, you can find the following pages to help you monitor your security issues:</p>
+<p>The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your <a href="../integrations/jira-integration/">connected Jira instance</a>, or <span class="skip-vale">as a result of</span> <a href="https://go.codacy.com/pen-testing-product">penetration testing</a>.</p>
+<p>Under Security and risk management, you can find the following pages to help you monitor the security of your repositories:</p>
 <ul>
-<li><a href="#dashboard">Dashboard</a></li>
-<li><a href="#item-list">Item list</a></li>
+<li><a href="#dashboard">Overview</a></li>
+<li><a href="#item-list">Findings</a></li>
 </ul>
-<h2 id="dashboard">Dashboard<a class="headerlink" href="#dashboard" title="Permanent link">#</a></h2>
-<p>The <strong>Security and risk management</strong> dashboard provides a general overview of items, based on their status.</p>
-<p>To access the dashboard, select an organization from the top navigation bar and select <strong>Security and risk</strong> on the left navigation sidebar.</p>
-<p>The main area of the dashboard includes five panels:</p>
+<p>In addition, on these pages, you can <a href="#sharing-filtered-view">share filtered views of findings</a>, <a href="#exporting-the-security-item-list">export findings as a CSV file</a>, and <a href="#reviewing-settings">review severity rules and integration settings</a></p>
+<h2 id="dashboard">Overview<a class="headerlink" href="#dashboard" title="Permanent link">#</a></h2>
+<p>The <strong>Security and risk management overview</strong> page provides a high-level view of the security posture of your organization, including the number of open findings, the distribution of open findings by severity, the history of finding resolution, and a breakdown of the most high-risk repositories and most detected security categories.</p>
+<p>Use this page to assess your organization's security posture and its progress over time, identify areas for improvement, and share findings with stakeholders.</p>
+<p>To access the overview page, select an organization from the top navigation bar and select <strong>Security and risk</strong> on the left navigation sidebar.</p>
+<p><img alt="Security and risk management overview page" src="../images/security-risk-management-overview.png" /></p>
+<p>The overview page includes six panels:</p>
 <ul>
-<li><strong>Total:</strong> all open items</li>
-<li><strong>Due soon:</strong> open items within 15 days of their deadline</li>
-<li><strong>Overdue:</strong> open items with a missed deadline</li>
-<li><strong>Closed on time:</strong> items closed before the deadline</li>
-<li><strong>Closed late:</strong> items closed after the deadline</li>
+<li><a href="#open-findings-overview">Open findings overview</a></li>
+<li><a href="#open-findings-distribution">Open findings distribution</a></li>
+<li><a href="#open-findings-history">Open findings history</a></li>
+<li><a href="#activity-history">Activity history</a></li>
+<li><a href="#top-10-high-risk-repositories">Top 10 high-risk repositories</a></li>
+<li><a href="#top-10-common-security-categories">Top 10 common security categories</a></li>
 </ul>
-<p>Each panel shows the total count of matching items and contains a <strong>Review</strong> button to view a list of matching items.</p>
-<p>When viewing the dashboard, you can:</p>
-<ul>
-<li>
-<p>Limit the total counts in each panel to a specific set of severities, repositories, or security categories by clicking the filter drop-downs above the main area.</p>
-</li>
-<li>
-<p>Review the <a href="#item-severities-and-deadlines">severity assignment rules</a> by clicking the <strong>See rules</strong> button in the top right-hand corner of the page.</p>
-</li>
-</ul>
-<p><img alt="Security and risk management dashboard" src="../images/security-risk-management-dashboard.png" /></p>
-<h2 id="item-list">Item list<a class="headerlink" href="#item-list" title="Permanent link">#</a></h2>
-<p>The <strong>Security and risk management items</strong> page displays a filtered list of items, sorted by due date ascending.</p>
-<p>To access the item list, access the <a href="#dashboard">dashboard</a> and click the <strong>Review</strong> button in the area of interest, based on the desired filtering.</p>
-<p>When viewing the item list, you can:</p>
-<ul>
-<li>
-<p>Update the filtering criteria by clicking the <strong>Severity</strong>, <strong>Status</strong>, <strong>Repository</strong>, or <strong>Security category</strong> drop-downs above the list.</p>
-</li>
-<li>
-<p>Find out more about an item by clicking its <strong>Details</strong> column to navigate to the item of interest on the source platform.</p>
-</li>
-<li>
-<p>Review the <a href="#item-severities-and-deadlines">severity assignment rules</a> by clicking the <strong>See rules</strong> button in the top right-hand corner of the page.</p>
-</li>
-</ul>
-<p><img alt="Security and risk management items" src="../images/security-risk-management-item-list.png" /></p>
-<h2 id="exporting-the-security-item-list">Exporting the security item list<a class="headerlink" href="#exporting-the-security-item-list" title="Permanent link">#</a></h2>
+<p>To limit the information displayed in each panel to a specific set of repositories, use the filter drop-down above the main area.</p>
+<h3 id="open-findings-overview">Open findings overview<a class="headerlink" href="#open-findings-overview" title="Permanent link">#</a></h3>
+<p>The <strong>Open findings overview</strong> panel displays the total number of open security findings and the number of findings of each severity, helping you quickly assess the overall security posture of your organization and <span class="skip-vale">quickly</span> review findings that are critical or overdue.</p>
+<p>To access the findings page with the corresponding filter applied, click on a number.</p>
+<p><img alt="Security and risk management open findings overview panel" src="../images/security-risk-management-overview-open.png" /></p>
+<h3 id="open-findings-distribution">Open findings distribution<a class="headerlink" href="#open-findings-distribution" title="Permanent link">#</a></h3>
+<p>The <strong>Open findings distribution</strong> panel shows the relative distribution of open findings by scan kind, severity, or status, helping you evaluate the distribution of risk across different scan kinds and identify areas that may need immediate attention.</p>
+<p>To select the desired distribution, use the drop-down in the top right-hand corner of the panel.</p>
+<p>To access the findings page with the corresponding filter applied, click on a number.</p>
+<p><img alt="Security and risk management open findings distribution panel" src="../images/security-risk-management-overview-distribution.png" /></p>
+<h3 id="open-findings-history">Open findings history<a class="headerlink" href="#open-findings-history" title="Permanent link">#</a></h3>
+<p>The <strong>Open findings history</strong> graph shows the open findings trends over the past three months, grouped by week and severity. It details the progression of your organization's risk and security posture over time and can, for example, help you understand if the right issues are being addressed.</p>
+<p>For a detailed view of the distribution on a specific week, hover over the graph.</p>
+<p><img alt="Security and risk management open findings history panel" src="../images/security-risk-management-overview-history-open.png" /></p>
+<h3 id="activity-history">Activity history<a class="headerlink" href="#activity-history" title="Permanent link">#</a></h3>
+<p>The <strong>Activity history</strong> graph shows weekly counts of open and closed findings over the past three months, overlaid on the overall open findings trend. It complements the <strong>Open findings history</strong> graph with more information, such as the volume of findings addressed each week and a visual representation of the new/closed ratio.</p>
+<p>For a detailed view of the counts on a specific week, hover over the graph.</p>
+<p><img alt="Security and risk management activity history panel" src="../images/security-risk-management-overview-history-activity.png" /></p>
+<h3 id="top-10-high-risk-repositories">Top 10 high-risk repositories<a class="headerlink" href="#top-10-high-risk-repositories" title="Permanent link">#</a></h3>
+<p>The <strong>Top 10 high-risk repositories</strong> list shows the repositories with the highest number of open findings, ordered by severity.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This panel may list fewer than ten repositories if there are fewer than ten repositories with open findings in the organization or if fewer than ten repositories are selected in the dropdown <strong>Repository</strong> filter.</p>
+</div>
+<p><img alt="Security and risk management high risk repositories panel" src="../images/security-risk-management-overview-top-risk.png" /></p>
+<h3 id="top-10-common-security-categories">Top 10 common security categories<a class="headerlink" href="#top-10-common-security-categories" title="Permanent link">#</a></h3>
+<p>The <strong>Top 10 common security categories</strong> list shows the most common security categories of open findings, ordered by count.</p>
+<p>To access the findings page with the corresponding filter applied, click on a category.</p>
+<p><img alt="Security and risk management top categories panel" src="../images/security-risk-management-overview-top-categories.png" /></p>
+<h2 id="item-list">Findings<a class="headerlink" href="#item-list" title="Permanent link">#</a></h2>
+<p>The <strong>Security and risk management findings</strong> page displays a filtered list of findings. By default, this list is sorted by status, and you can click the <strong>First detected</strong> column name to sort the findings by the detection date. Use this page to review and prioritize findings and track the progress of your security efforts.</p>
+<p>To access the findings page, access the <a href="#dashboard">overview page</a> and click the <strong>Findings</strong> tab.</p>
+<p><img alt="Security and risk management findings page" src="../images/security-risk-management-findings.png" /></p>
+<p>When viewing the findings, you can update the filtering criteria by clicking the <strong>Severity</strong>, <strong>Status</strong>, <strong>Repository</strong>, or <strong>Security category</strong> drop-downs above the list.</p>
+<p>To find out more about a finding in the list, click its <strong>Details</strong> column to navigate to the finding details on the source platform.</p>
+<p><img alt="Security and risk management finding details" src="../images/security-risk-management-finding-details.png" /></p>
+<h2 id="sharing-filtered-view">Sharing a filtered view of findings<a class="headerlink" href="#sharing-filtered-view" title="Permanent link">#</a></h2>
+<p>To share the current view of the overview or findings page, click the <strong>Copy URL</strong> button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.</p>
+<h2 id="exporting-the-security-item-list">Exporting findings<a class="headerlink" href="#exporting-the-security-item-list" title="Permanent link">#</a></h2>
 <div class="admonition info">
 <p class="admonition-title">This feature is available only to organization admins and organization managers</p>
 </div>
-<p>To export a list of security items as a CSV file, click the <strong>Export CSV</strong> button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.</p>
-<h2 id="opening-and-closing-items">How Codacy manages security items<a class="headerlink" href="#opening-and-closing-items" title="Permanent link">#</a></h2>
+<p>To export a list of findings as a CSV file, click the options menu in the top right-hand corner of the page and select <strong>Export findings (.csv)</strong>. The exported list always includes all findings, ignoring any applied filters.</p>
+<h2 id="reviewing-settings">Reviewing severity rules and integration settings<a class="headerlink" href="#reviewing-settings" title="Permanent link">#</a></h2>
+<p>To <a href="#item-severities-and-deadlines">review the severity assignment rules</a> or manage the integration with <a href="../integrations/jira-integration/">Jira</a> or <a href="../integrations/slack-integration/">Slack</a>, click the options menu in the top right-hand corner of the page and select respectively <strong>See severity rules</strong> or <strong>View integrations</strong>.</p>
+<h2 id="opening-and-closing-items">How Codacy manages findings<a class="headerlink" href="#opening-and-closing-items" title="Permanent link">#</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>To open and close security items, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.</p>
+<p>To open and close findings, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.</p>
 </div>
-<p>Codacy opens a new security item whenever a source platform detects a new security issue. The new item is automatically assigned a severity and a status:</p>
+<p>Codacy opens a new finding whenever a source platform detects a new security issue. The new finding is automatically assigned a severity and a status:</p>
 <ul>
-<li>The priority of the issue on the source platform sets the <a href="#item-severities-and-deadlines">severity of the item</a>. In turn, the severity of the item defines a deadline to close the item.</li>
-<li>The time to the deadline sets the <a href="#item-statuses">status of the item</a>. The item then moves through different statuses as the deadline is approached, met, or missed.</li>
+<li>The priority of the issue on the source platform sets the <a href="#item-severities-and-deadlines">severity of the finding</a>. In turn, the severity of the finding defines a deadline to close the finding.</li>
+<li>The time to the deadline sets the <a href="#item-statuses">status of the finding</a>. The finding then moves through different statuses as the deadline is approached, met, or missed.</li>
 </ul>
-<p>Codacy closes an item when the source platform stops detecting the associated security issue.</p>
-<p>The following section details when Codacy opens and closes items for each supported platform.</p>
-<h3 id="opening-and-closing-codacy-items">How Codacy manages items detected on Git repositories<a class="headerlink" href="#opening-and-closing-codacy-items" title="Permanent link">#</a></h3>
+<p>Codacy closes a finding when the source platform stops detecting the associated security issue.</p>
+<p>The following section details when Codacy opens and closes findings for each supported platform.</p>
+<h3 id="opening-and-closing-codacy-items">How Codacy manages findings detected on Git repositories<a class="headerlink" href="#opening-and-closing-codacy-items" title="Permanent link">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>To make sure that Codacy detects security issues correctly:</p>
@@ -4207,8 +4238,8 @@
 <li>Confirm that the latest <a href="../../repositories/commits/">commits</a> to the default branches of your repositories are analyzed.</li>
 </ul>
 </div>
-<p>Codacy opens a new item when it detects a new security issue on the default branch of a repository.</p>
-<p>Codacy closes an item in either of the following cases:</p>
+<p>Codacy opens a new finding when it detects a new security issue on the default branch of a repository.</p>
+<p>Codacy closes a finding in either of the following cases:</p>
 <ul>
 <li>Codacy detects that the associated issue isn't present in the most recent analyzed commit and therefore is fixed</li>
 <li>You <a href="../../repositories/issues/#ignoring-and-managing-issues">ignore the associated issue</a></li>
@@ -4216,9 +4247,9 @@
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Deleting a repository deletes all open items belonging to that repository.</p>
+<p>Deleting a repository deletes all open findings belonging to that repository.</p>
 </div>
-<h3 id="opening-and-closing-jira-items">How Codacy manages items detected on Jira<a class="headerlink" href="#opening-and-closing-jira-items" title="Permanent link">#</a></h3>
+<h3 id="opening-and-closing-jira-items">How Codacy manages findings detected on Jira<a class="headerlink" href="#opening-and-closing-jira-items" title="Permanent link">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
@@ -4227,15 +4258,21 @@
 <li>To make sure that Codacy detects Jira issues correctly, assign the <strong>security</strong> label when creating the issue or immediately after.</li>
 </ul>
 </div>
-<p>Codacy opens a new item when it detects a new Jira issue with a <strong>security</strong> label (case-insensitive).</p>
-<p>Codacy closes an item when it detects that the associated Jira issue is marked as Closed.</p>
-<h2 id="item-statuses">Item statuses<a class="headerlink" href="#item-statuses" title="Permanent link">#</a></h2>
-<p>The following table describes how item statuses map to deadlines:</p>
+<p>Codacy opens a new finding when it detects a new Jira issue with a <strong>security</strong> label (case-insensitive).</p>
+<p>Codacy closes a finding when it detects that the associated Jira issue is marked as Closed.</p>
+<h3 id="opening-and-closing-pen-testing-items">How Codacy manages findings detected during penetration testing<a class="headerlink" href="#opening-and-closing-pen-testing-items" title="Permanent link">#</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Penetration testing is available upon request and is provided by a third-party partner. See <a href="https://go.codacy.com/pen-testing-product">how to request penetration testing for your organization</a>.</p>
+</div>
+<p>Codacy opens a new finding when penetration testing results are published by our partner.</p>
+<h2 id="item-statuses">Finding statuses<a class="headerlink" href="#item-statuses" title="Permanent link">#</a></h2>
+<p>The following table describes how finding statuses map to deadlines:</p>
 <table>
     <thead>
         <tr>
             <th>Status category</th>
-            <th>Item status</th>
+            <th>Finding status</th>
             <th>Deadline</th>
         </tr>
     </thead>
@@ -4265,12 +4302,16 @@
     </tbody>
 </table>
 
-<h2 id="item-severities-and-deadlines">Item severities and deadlines<a class="headerlink" href="#item-severities-and-deadlines" title="Permanent link">#</a></h2>
-<p>The following table defines item severities and days to fix the associated security issue, based on the importance of the underlying issue:</p>
+<h2 id="item-severities-and-deadlines">Finding severities and deadlines<a class="headerlink" href="#item-severities-and-deadlines" title="Permanent link">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently, Codacy doesn't support customizing the severity rules for security findings.</p>
+</div>
+<p>The following table defines finding severities and days to fix the associated security issue, based on the importance of the underlying issue:</p>
 <table>
 <thead>
 <tr>
-<th>Item<br/>severity</th>
+<th>Finding<br/>severity</th>
 <th><br/>Days to fix</th>
 <th>Underlying Codacy<br/>issue severity</th>
 <th>Underlying Jira<br/>issue priority <sup>1</sup></th>
@@ -4479,7 +4520,7 @@
 <sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.<br />
 <sup><span id="client-side">3</span></sup>: Supported as a <a href="../../repositories-configure/local-analysis/client-side-tools/">client-side tool</a>.<br />
 <sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin <a href="https://find-sec-bugs.github.io/">Find Security Bugs</a>.<br />
-<sup><span id="eslint-plugin">5</sup>: Includes the plugins <a href="https://www.npmjs.com/package/eslint-plugin-no-unsanitized">no-unsanitized</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security">security</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security-node">security-node</a>, and <a href="https://www.npmjs.com/package/eslint-plugin-xss">xss</a>.<br />
+<sup><span id="eslint-plugin">5</span></sup>: Includes the plugins <a href="https://www.npmjs.com/package/eslint-plugin-no-unsanitized">no-unsanitized</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security">security</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security-node">security-node</a>, and <a href="https://www.npmjs.com/package/eslint-plugin-xss">xss</a>.<br />
 <sup><span id="ruby-31">6</span></sup>: Currently, Codacy doesn't support any static code analysis tool for <a href="https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/">Ruby 3.1</a>.  </p>
 <h2 id="supported-security-categories">Supported security categories<a class="headerlink" href="#supported-security-categories" title="Permanent link">#</a></h2>
 <p>Each Codacy issue reported by Security and risk management belongs to one of the following security categories:</p>
@@ -4741,7 +4782,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 4, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 22, 2024</span>
     
   </small>
 </div>
