@@ -75,7 +75,7 @@ To review Quality issues:
 
 1.  Hover over a highlighted issue in the code editor to view available actions and suggested quick fixes, if available.
 
-    For a list of tools that support quick fixes, see [Supported languages and tools](./supported-languages-and-tools.md#supported-languages-and-tools).
+    For a list of tools that support suggested fixes, see [Supported languages and tools](./supported-languages-and-tools.md#supported-languages-and-tools).
 
 1.  Once you've addressed the problems in your code, push your changes to the Git provider so that Codacy analyzes the updated code.
 
