@@ -91,6 +91,8 @@ To configure a coding standard using advanced settings:
 
     ![Configuring the tools and patterns for the coding standard](images/coding-standard-configure-tools.png)<!-- TODO ALA-940 screenshot -->
 
+1.  Proceed with the remaining wizard steps to finish [creating](#creating) or [editing](#editing) your coding standard.
+
 ## Defining a default coding standard {: id="set-default"}
 
 For ease of management, you can define a default coding standard that automatically applies to new repositories. In the absence of a default coding standard, Codacy applies global defaults to all new repositories.
