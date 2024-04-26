@@ -1,73 +1,129 @@
 # Managing security and risk
 
-The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security issues by automatically opening time-bound, prioritized action items whenever Codacy detects security issues in your organization repositories or in your [connected Jira instance](./integrations/jira-integration.md).
+The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your [connected Jira instance](./integrations/jira-integration.md), or <span class="skip-vale">as a result of</span> [penetration testing](https://go.codacy.com/pen-testing-product).
 
-Under Security and risk management, you can find the following pages to help you monitor your security issues:
+Under Security and risk management, you can find the following pages to help you monitor the security of your repositories:
 
--   [Dashboard](#dashboard)
--   [Item list](#item-list)
+-   [Overview](#dashboard)
+-   [Findings](#item-list)
 
-## Dashboard
+In addition, on these pages, you can [share filtered views of findings](#sharing-filtered-view), [export findings as a CSV file](#exporting-the-security-item-list), and [review severity rules and integration settings](#reviewing-settings)
 
-The **Security and risk management** dashboard provides a general overview of items, based on their status.
+## Overview {: id="dashboard"}
 
-To access the dashboard, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
+The **Security and risk management overview** page provides a high-level view of the security posture of your organization, including the number of open findings, the distribution of open findings by severity, the history of finding resolution, and a breakdown of the most high-risk repositories and most detected security categories.
 
-The main area of the dashboard includes five panels:
+Use this page to assess your organization's security posture and its progress over time, identify areas for improvement, and share findings with stakeholders.
 
--   **Total:** all open items
--   **Due soon:** open items within 15 days of their deadline
--   **Overdue:** open items with a missed deadline
--   **Closed on time:** items closed before the deadline
--   **Closed late:** items closed after the deadline
+To access the overview page, select an organization from the top navigation bar and select **Security and risk** on the left navigation sidebar.
 
-Each panel shows the total count of matching items and contains a **Review** button to view a list of matching items.
+![Security and risk management overview page](images/security-risk-management-overview.png)
 
-When viewing the dashboard, you can:
+The overview page includes six panels:
 
--   Limit the total counts in each panel to a specific set of severities, repositories, or security categories by clicking the filter drop-downs above the main area.
+-   [Open findings overview](#open-findings-overview)
+-   [Open findings distribution](#open-findings-distribution)
+-   [Open findings history](#open-findings-history)
+-   [Activity history](#activity-history)
+-   [Top 10 high-risk repositories](#top-10-high-risk-repositories)
+-   [Top 10 common security categories](#top-10-common-security-categories)
 
--   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
+To limit the information displayed in each panel to a specific set of repositories, use the filter drop-down above the main area.
 
-![Security and risk management dashboard](images/security-risk-management-dashboard.png)
+### Open findings overview
 
-## Item list
+The **Open findings overview** panel displays the total number of open security findings and the number of findings of each severity, helping you quickly assess the overall security posture of your organization and <span class="skip-vale">quickly</span> review findings that are critical or overdue.
 
-The **Security and risk management items** page displays a filtered list of items, sorted by due date ascending.
+To access the findings page with the corresponding filter applied, click on a number.
 
-To access the item list, access the [dashboard](#dashboard) and click the **Review** button in the area of interest, based on the desired filtering.
+![Security and risk management open findings overview panel](images/security-risk-management-overview-open.png)
 
-When viewing the item list, you can:
+### Open findings distribution
 
--   Update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, or **Security category** drop-downs above the list.
+The **Open findings distribution** panel shows the relative distribution of open findings by scan kind, severity, or status, helping you evaluate the distribution of risk across different scan kinds and identify areas that may need immediate attention.
 
--   Find out more about an item by clicking its **Details** column to navigate to the item of interest on the source platform.
+To select the desired distribution, use the drop-down in the top right-hand corner of the panel.
 
--   Review the [severity assignment rules](#item-severities-and-deadlines) by clicking the **See rules** button in the top right-hand corner of the page.
+To access the findings page with the corresponding filter applied, click on a number.
 
-![Security and risk management items](images/security-risk-management-item-list.png)
+![Security and risk management open findings distribution panel](images/security-risk-management-overview-distribution.png)
 
-## Exporting the security item list
+### Open findings history
+
+The **Open findings history** graph shows the open findings trends over the past three months, grouped by week and severity. It details the progression of your organization's risk and security posture over time and can, for example, help you understand if the right issues are being addressed.
+
+For a detailed view of the distribution on a specific week, hover over the graph.
+
+![Security and risk management open findings history panel](images/security-risk-management-overview-history-open.png)
+
+### Activity history
+
+The **Activity history** graph shows weekly counts of open and closed findings over the past three months, overlaid on the overall open findings trend. It complements the **Open findings history** graph with more information, such as the volume of findings addressed each week and a visual representation of the new/closed ratio.
+
+For a detailed view of the counts on a specific week, hover over the graph.
+
+![Security and risk management activity history panel](images/security-risk-management-overview-history-activity.png)
+
+### Top 10 high-risk repositories
+
+The **Top 10 high-risk repositories** list shows the repositories with the highest number of open findings, ordered by severity.
+
+!!! note
+    This panel may list fewer than ten repositories if there are fewer than ten repositories with open findings in the organization or if fewer than ten repositories are selected in the dropdown **Repository** filter.
+
+![Security and risk management high risk repositories panel](images/security-risk-management-overview-top-risk.png)
+
+### Top 10 common security categories
+
+The **Top 10 common security categories** list shows the most common security categories of open findings, ordered by count.
+
+To access the findings page with the corresponding filter applied, click on a category.
+
+![Security and risk management top categories panel](images/security-risk-management-overview-top-categories.png)
+
+## Findings {: id="item-list"}
+
+The **Security and risk management findings** page displays a filtered list of findings. By default, this list is sorted by status, and you can click the **First detected** column name to sort the findings by the detection date. Use this page to review and prioritize findings and track the progress of your security efforts.
+
+To access the findings page, access the [overview page](#dashboard) and click the **Findings** tab.
+
+![Security and risk management findings page](images/security-risk-management-findings.png)
+
+When viewing the findings, you can update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, or **Security category** drop-downs above the list.
+
+To find out more about a finding in the list, click its **Details** column to navigate to the finding details on the source platform.
+
+![Security and risk management finding details](images/security-risk-management-finding-details.png)
+
+## Sharing a filtered view of findings {: id="sharing-filtered-view"}
+
+To share the current view of the overview or findings page, click the **Copy URL** button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.
+
+## Exporting findings {: id="exporting-the-security-item-list"}
 
 !!! info "This feature is available only to organization admins and organization managers"
 
-To export a list of security items as a CSV file, click the **Export CSV** button in the top right-hand corner of the page. The exported list always includes all items, ignoring any applied filters.
+To export a list of findings as a CSV file, click the options menu in the top right-hand corner of the page and select **Export findings (.csv)**. The exported list always includes all findings, ignoring any applied filters.
 
-## How Codacy manages security items {: id="opening-and-closing-items"}
+## Reviewing severity rules and integration settings {: id="reviewing-settings"}
+
+To [review the severity assignment rules](#item-severities-and-deadlines) or manage the integration with [Jira](./integrations/jira-integration.md) or [Slack](./integrations/slack-integration.md), click the options menu in the top right-hand corner of the page and select respectively **See severity rules** or **View integrations**.
+
+## How Codacy manages findings {: id="opening-and-closing-items"}
 
 !!! important
-    To open and close security items, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.
+    To open and close findings, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.
 
-Codacy opens a new security item whenever a source platform detects a new security issue. The new item is automatically assigned a severity and a status:
+Codacy opens a new finding whenever a source platform detects a new security issue. The new finding is automatically assigned a severity and a status:
 
--   The priority of the issue on the source platform sets the [severity of the item](#item-severities-and-deadlines). In turn, the severity of the item defines a deadline to close the item.
--   The time to the deadline sets the [status of the item](#item-statuses). The item then moves through different statuses as the deadline is approached, met, or missed.
+-   The priority of the issue on the source platform sets the [severity of the finding](#item-severities-and-deadlines). In turn, the severity of the finding defines a deadline to close the finding.
+-   The time to the deadline sets the [status of the finding](#item-statuses). The finding then moves through different statuses as the deadline is approached, met, or missed.
 
-Codacy closes an item when the source platform stops detecting the associated security issue.
+Codacy closes a finding when the source platform stops detecting the associated security issue.
 
-The following section details when Codacy opens and closes items for each supported platform.
+The following section details when Codacy opens and closes findings for each supported platform.
 
-### How Codacy manages items detected on Git repositories {: id="opening-and-closing-codacy-items"}
+### How Codacy manages findings detected on Git repositories {: id="opening-and-closing-codacy-items"}
 
 !!! note
     To make sure that Codacy detects security issues correctly:
@@ -76,37 +132,44 @@ The following section details when Codacy opens and closes items for each suppor
     -   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
     -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
 
-Codacy opens a new item when it detects a new security issue on the default branch of a repository.
+Codacy opens a new finding when it detects a new security issue on the default branch of a repository.
 
-Codacy closes an item in either of the following cases:
+Codacy closes a finding in either of the following cases:
 
 -   Codacy detects that the associated issue isn't present in the most recent analyzed commit and therefore is fixed
 -   You [ignore the associated issue](../repositories/issues.md#ignoring-and-managing-issues)
 -   You [disable the tool](../repositories-configure/configuring-code-patterns.md) that found the associated issue
 
 !!! important
-    Deleting a repository deletes all open items belonging to that repository.
+    Deleting a repository deletes all open findings belonging to that repository.
 
-### How Codacy manages items detected on Jira {: id="opening-and-closing-jira-items"}
+### How Codacy manages findings detected on Jira {: id="opening-and-closing-jira-items"}
 
 !!! note
     -   For Codacy to detect Jira issues, you must [integrate Jira with Security and risk management](./integrations/jira-integration.md).
     -   Codacy retrieves updates from Jira once a day. If an issue is opened and closed on the same day, Codacy may not detect it.
     -   To make sure that Codacy detects Jira issues correctly, assign the **security** label when creating the issue or immediately after.
 
-Codacy opens a new item when it detects a new Jira issue with a **security** label (case-insensitive).
+Codacy opens a new finding when it detects a new Jira issue with a **security** label (case-insensitive).
 
-Codacy closes an item when it detects that the associated Jira issue is marked as Closed.
+Codacy closes a finding when it detects that the associated Jira issue is marked as Closed.
 
-## Item statuses
+### How Codacy manages findings detected during penetration testing {: id="opening-and-closing-pen-testing-items"}
 
-The following table describes how item statuses map to deadlines:
+!!! note
+    Penetration testing is available upon request and is provided by a third-party partner. See [how to request penetration testing for your organization](https://go.codacy.com/pen-testing-product).
+
+Codacy opens a new finding when penetration testing results are published by our partner.
+
+## Finding statuses {: id="item-statuses"}
+
+The following table describes how finding statuses map to deadlines:
 
 <table>
     <thead>
         <tr>
             <th>Status category</th>
-            <th>Item status</th>
+            <th>Finding status</th>
             <th>Deadline</th>
         </tr>
     </thead>
@@ -136,16 +199,19 @@ The following table describes how item statuses map to deadlines:
     </tbody>
 </table>
 
-## Item severities and deadlines
+## Finding severities and deadlines {: id="item-severities-and-deadlines"}
 
-The following table defines item severities and days to fix the associated security issue, based on the importance of the underlying issue:
+!!! note
+    Currently, Codacy doesn't support customizing the severity rules for security findings.
 
-| Item<br/>severity | <br/>Days to fix | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority <sup>1</sup> |
-|-------------------|------------------|--------------------------------------|-------------------------------------------------|
-| Critical          | 30               | Critical                             | Highest                                         |
-| High              | 60               | -                                    | High                                            |
-| Medium            | 90               | Medium                               | Medium                                          |
-| Low               | 120              | Minor                                | Low and other/custom                            |
+The following table defines finding severities and days to fix the associated security issue, based on the importance of the underlying issue:
+
+| Finding<br/>severity | <br/>Days to fix | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority <sup>1</sup> |
+|----------------------|------------------|--------------------------------------|-------------------------------------------------|
+| Critical             | 30               | Critical                             | Highest                                         |
+| High                 | 60               | -                                    | High                                            |
+| Medium               | 90               | Medium                               | Medium                                          |
+| Low                  | 120              | Minor                                | Low and other/custom                            |
 
 <small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small>
 
@@ -336,10 +402,13 @@ Security and risk management supports checking the languages and infrastructure-
 <sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.  
 <sup><span id="client-side">3</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
 <sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/).  
-<sup><span id="eslint-plugin">5</sup>: Includes the plugins [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [security](https://www.npmjs.com/package/eslint-plugin-security), [security-node](https://www.npmjs.com/package/eslint-plugin-security-node), and [xss](https://www.npmjs.com/package/eslint-plugin-xss).  
+<sup><span id="eslint-plugin">5</span></sup>: Includes the plugins [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [security](https://www.npmjs.com/package/eslint-plugin-security), [security-node](https://www.npmjs.com/package/eslint-plugin-security-node), and [xss](https://www.npmjs.com/package/eslint-plugin-xss).  
 <sup><span id="ruby-31">6</span></sup>: Currently, Codacy doesn't support any static code analysis tool for [Ruby 3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/).  
 
 ## Supported security categories
+
+!!! note
+    Due to a recent update, some issues may be temporarily assigned the **Not yet categorized** category. To categorize these issues, you can [reanalyze the default branch of the relevant repository](../faq/repositories/how-do-i-reanalyze-my-repository.md#reanalyzing-a-branch). For a list of repositories that have issues with this category, use the **Security category** filter on the [Findings](#item-list) page.
 
 Each Codacy issue reported by Security and risk management belongs to one of the following security categories:
 
@@ -374,6 +443,3 @@ Each Codacy issue reported by Security and risk management belongs to one of the
 | **Visibility**                     | Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.                                                                                  |
 | **XSS**                            | Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into trusted websites that are visited by the end users.                                                                                 |
 | **Other**                          | Other language-specific security issues.                                                                                                                                                                         |
-
-!!! note
-    Due to a recent update, some issues may be temporarily assigned the **Not yet categorized** category. To categorize these issues, you can [reanalyze the default branch of the relevant repository](../faq/repositories/how-do-i-reanalyze-my-repository.md#reanalyzing-a-branch).
