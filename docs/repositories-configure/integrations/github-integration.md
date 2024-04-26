@@ -8,7 +8,7 @@ The GitHub integration incorporates Codacy on your existing Git provider workflo
 
 When you add a new repository, Codacy sets the GitHub integration using the [default settings for your organization](../../organizations/integrations/default-git-provider-integration-settings.md). You can then [customize the settings](#configuring) for the repository.
 
-![GitHub integration](images/github-integration.png)<!--TODO CY-6642 Update screenshot-->
+![GitHub integration](images/github-integration.png)
 
 ## Configuring the GitHub integration {: id="configuring"}
 
