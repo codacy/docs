@@ -5,8 +5,6 @@ description: Example of how to create new repository API tokens for all reposito
 
 # Creating repository API tokens programmatically
 
-<!--TODO CY-6642 Replace project by repository-->
-
 To create new [repository API tokens](../api-tokens.md) for your Codacy repositories programmatically, use the Codacy API endpoint [createRepositoryApiToken](https://app.codacy.com/api/api-docs#createrepositoryapitoken). You can also list all repository API tokens for a repository using the endpoint [listRepositoryApiTokens](https://api.codacy.com/api/api-docs#listrepositoryapitokens).
 
 For example, if you're [setting up coverage](../../coverage-reporter/index.md) for all your repositories and prefer not to use a single account API token that grants the same permissions as an administrator, you need to create an individual repository API token for each repository.
