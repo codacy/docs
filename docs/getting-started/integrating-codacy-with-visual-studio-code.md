@@ -24,7 +24,7 @@ The **Pull request status** tab displays the following information for the pull 
 
 -   Any **Quality issues** introduced or fixed by the pull request. These are the same issues you find in the [Quality Issues tabs](../repositories/pull-requests.md#issues-tabs) in the Codacy app and are also visible in VS Code's Problems tab.
 
-    The number next to each file name is the total number of Quality issues that the pull request adds to or removes from that file. The number farther to the right, added by VS Code, is the total number of problems in that file, which may or may not be Quality issues from Codacy. If there are any Medium or Critical Quality issues, the file name is also highlighted in yellow (Medium) or red (Critical).
+    When this item is expanded, the number next to each file name is the total number of Quality issues that the pull request adds to or removes from that file. The number farther to the right, added by VS Code, is the total number of problems in that file, which may or may not be Quality issues from Codacy. If there are any Medium or Critical Quality issues, the file name is also highlighted in yellow (Medium) or red (Critical).
 
     ![Important issues](./images/codacy-vscode-extension-important-issues.png)
 
