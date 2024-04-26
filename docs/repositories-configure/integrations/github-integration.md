@@ -71,9 +71,6 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
 
 ![Comment suggesting a fix on GitHub](images/github-integration-suggest-fixes.png)
 
-!!! important
-    Codacy uses the GitHub user who added the repository to create the suggested fixes comments on pull requests. If that user loses access to the repository, a repository admin must [refresh the GitHub integration](#refreshing).
-
 ### AI-enhanced comments
 
 Adds AI-enhanced comments, providing insights and ready-to-commit AI-generated fixes for identified issues in cases where tool-suggested fixes are not supported. To enable this option, you must enable **Suggested fixes** first.
@@ -81,20 +78,6 @@ Adds AI-enhanced comments, providing insights and ready-to-commit AI-generated f
 {% include-markdown "../../assets/includes/ai-info.md" %}
 
 ![AI-enhanced comment on GitHub](images/github-integration-ai-comment.png)
-
-## Refreshing the GitHub integration {: id="refreshing"}
-
-If the user who added the repository to Codacy loses access to the repository, which may happen when the user leaves the team or the organization, Codacy won't be able to create [suggested fixes](#suggest-fixes) on pull requests.
-
-In this situation, another user with [administrator access to the repository](../../organizations/roles-and-permissions-for-organizations.md#permissions-for-github) needs to refresh the GitHub integration:
-
-1.  Open the repository **Settings**, tab **Integrations**.
-
-1.  On the GitHub integration area, click the link **Refresh integration**.
-
-    ![Refresh GitHub integration](images/github-integration-refresh.png)<!--TODO CY-6642 Update screenshot-->
-
-After refreshing the integration, Codacy will use the logged in GitHub user to create [suggested fixes](#suggest-fixes) on new pull requests.
 
 ## See also
 
