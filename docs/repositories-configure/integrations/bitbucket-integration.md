@@ -61,6 +61,8 @@ If the user who added the repository to Codacy loses access to the repository, w
 
 In this situation, another user with [administrator access to the repository](../../organizations/roles-and-permissions-for-organizations.md#permissions-for-bitbucket) needs to refresh the Bitbucket integration:
 
+{% include-markdown "../../assets/includes/service-account-integration.md" %}
+
 1.  Open the repository **Settings**, tab **Integrations**.
 
 1.  On the Bitbucket integration area, click the link **Refresh connection**.
@@ -68,8 +70,6 @@ In this situation, another user with [administrator access to the repository](..
     ![Refresh Bitbucket integration](images/bitbucket-integration-refresh.png)<!--TODO CY-6642 Update screenshot-->
 
 After refreshing the integration, Codacy will use the logged in Bitbucket user to create comments on pull requests.
-
-{% include-markdown "../../assets/includes/service-account-integration.md" %}
 
 ## See also
 
