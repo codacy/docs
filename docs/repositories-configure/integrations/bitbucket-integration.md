@@ -63,7 +63,7 @@ In this situation, another user with [administrator access to the repository](..
 
 1.  Open the repository **Settings**, tab **Integrations**.
 
-1.  On the Bitbucket integration area, click the link **Refresh integration**.
+1.  On the Bitbucket integration area, click the link **Refresh connection**.
 
     ![Refresh Bitbucket integration](images/bitbucket-integration-refresh.png)<!--TODO CY-6642 Update screenshot-->
 

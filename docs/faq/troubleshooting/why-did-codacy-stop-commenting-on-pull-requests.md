@@ -33,7 +33,7 @@ To fix this issue and avoid future disruptions, refresh the GitLab or Bitbucket 
 
 1.  Log in to Codacy using the new service account.
 
-1.  Open your repository **Settings**, tab **Integrations**, and click the link **Refresh integration** to refresh the existing Git provider integration:
+1.  Open your repository **Settings**, tab **Integrations**, and click the link **Refresh connection** to refresh the existing Git provider integration:
 
     ![Refresh Git provider integration](../../repositories-configure/integrations/images/gitlab-integration-refresh.png)
 
