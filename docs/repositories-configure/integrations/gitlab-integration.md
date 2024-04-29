@@ -25,7 +25,7 @@ Depending on the options that you enable, Codacy will automatically update merge
     end="<!--default-settings-apply-all-end-->"
 %}
 
-### Status checks
+### Status checks {: id="pull-request-status"}
 
 Adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the [quality gate rules](../../repositories-configure/adjusting-quality-gates.md) for your project. You can then optionally [block merging merge requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
 
@@ -33,13 +33,13 @@ Adds a report to your merge requests showing whether your merge requests and cov
 
 ![Merge request status on GitLab](images/gitlab-integration-pr-status.png)
 
-### Issue annotations
+### Issue annotations {: id="pull-request-comment"}
 
 Adds comments on the lines of the merge request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them. To enable this option, you must enable **Status checks** first.
 
 ![Merge request comment on GitLab](images/gitlab-integration-pr-comment.png)
 
-### Issue summaries
+### Issue summaries {: id="pull-request-summary"}
 
 Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable **Status checks** first.
 
