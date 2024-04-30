@@ -30,7 +30,7 @@ The **Pull request status** tab displays the following information for the pull 
 
 -   The **diff coverage and coverage variation** introduced by the pull request. These are the same values you find in the [Pull request coverage overview](../repositories-coverage/pull-requests.md#coverage-overview) panel in the Codacy app.
 
-    When this item is expanded, the percentage next to each file name is the coverage variation for that file. You can toggle on/off the inline coverage to see/hide the line-by-line diff coverage and a comparison of the old and new file content for each modified file - uncovered (red), covered (green), and non-coverable lines (no backgroud). These are the same details you find in the [coverage Diff tab of the pull request](../repositories-coverage/pull-requests.md#diff-tab) in the Codacy app.
+    When this item is expanded, the percentage next to each file name is the coverage variation for that file. You can toggle on/off the inline coverage to see/hide the line-by-line diff coverage and a comparison of the old and new file content for each modified file - uncovered lines (red), covered lines with its test coverage count (green), and non-coverable lines (no backgroud). These are the same details you find in the [coverage Diff tab of the pull request](../repositories-coverage/pull-requests.md#diff-tab) in the Codacy app.
 
     ![Toggle inline coverage](./images/codacy-vscode-extension-inline-coverage.png)
 
