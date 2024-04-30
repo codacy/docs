@@ -10,13 +10,11 @@ When this happens, Codacy doesn't display code duplication metrics for the affec
 
     ![Duplication in the Files page](images/duplication-files.png)
 
--   The **Commits** and **Pull Request** pages display an empty **New Duplication** tab.
+-   The **Commits** and **Pull Request** pages display an empty **Duplication** tab.
 
     ![New duplication for a commit](images/duplication-commits.png)
 
 -   The analysis logs for commits won't display a duplication analysis task for the tool corresponding to the affected language.
-
-    ![Analysis logs for a commit](images/duplication-logs.png)
 
 As a workaround, if you're exceeding the maximum number of source code files:
 
