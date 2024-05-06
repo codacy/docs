@@ -24,7 +24,8 @@ theme:
 extra_css:
     - "assets/stylesheets/version-select.css"
 extra_javascript:
-    - "https://static.zdassets.com/ekr/snippet.js?key=3d46eedc-c17f-4ae6-8385-a62571296d54"
+    - path: "https://static.zdassets.com/ekr/snippet.js?key=3d46eedc-c17f-4ae6-8385-a62571296d54"
+      id: "ze-snippet"
     - "assets/javascripts/version-select.js"
 
 # Extra variables
