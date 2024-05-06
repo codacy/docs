@@ -40,7 +40,7 @@ To access the findings page with the corresponding filter applied, click on a nu
 
 ### Open findings distribution
 
-The **Open findings distribution** panel shows the relative distribution of open findings by severity or status, helping you evaluate the distribution of risk across different severities and identify areas that may need immediate attention.
+The **Open findings distribution** panel shows the relative distribution of open findings by severity or status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
 
 To select the desired distribution, use the drop-down in the top right-hand corner of the panel.
 
