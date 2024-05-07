@@ -731,6 +731,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.codacy.com/release-notes/cloud/cloud-2024-04/</loc>
+         <lastmod>2024-05-07</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.0/</loc>
          <lastmod>2024-05-07</lastmod>
          <changefreq>daily</changefreq>
