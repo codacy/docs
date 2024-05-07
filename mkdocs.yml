@@ -24,7 +24,6 @@ theme:
 extra_css:
     - "assets/stylesheets/version-select.css"
 extra_javascript:
-    - "assets/javascripts/extra.js"
     - "assets/javascripts/version-select.js"
 
 # Extra variables
