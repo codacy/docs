@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Create an account API token to authorize access to all the repositories that you have access to, or a project API token to authorize access only to a specific repository.">
+        <meta name="description" content="Create an account API token to authorize access to all the repositories that you have access to, or a repository API token to authorize access only to a specific repository.">
       
       
-        <meta http-equiv="last-modified" content="2023-03-07 17:39:29">
+        <meta http-equiv="last-modified" content="2024-05-08 16:36:15">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/api-tokens/">
@@ -1190,8 +1190,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#project-api-tokens" class="md-nav__link">
-    Generating and revoking project API tokens
+  <a href="#repository-api-tokens" class="md-nav__link">
+    Generating and revoking repository API tokens
   </a>
   
 </li>
@@ -1289,8 +1289,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../examples/creating-project-api-tokens-programmatically/" title="Creating project API tokens programmatically" class="md-nav__link">
-      Creating project API tokens programmatically
+    <a href="../examples/creating-repository-api-tokens-programmatically/" title="Creating repository API tokens programmatically" class="md-nav__link">
+      Creating repository API tokens programmatically
     </a>
   </li>
 
@@ -4155,7 +4155,7 @@
                 
                 
                 <h1 id="api-tokens">API tokens<a class="headerlink" href="#api-tokens" title="Permanent link">#</a></h1>
-<p>Codacy provides <strong>account</strong> and <strong>project</strong>-level API tokens that allow you to:</p>
+<p>Codacy provides <strong>account</strong> and <strong>repository</strong>-level API tokens that allow you to:</p>
 <ul>
 <li><a href="../../coverage-reporter/">Upload coverage data</a> to Codacy</li>
 <li>Upload to Codacy the results of <a href="../../repositories-configure/local-analysis/client-side-tools/">running client-side analysis tools</a></li>
@@ -4174,7 +4174,7 @@
 <p><strong>If you're using an account API token to upload coverage</strong> be sure to <a href="../../organizations/roles-and-permissions-for-organizations/">check the roles</a> that your Git provider account must have to authorize uploading coverage to Codacy.</p>
 <p>Use a dedicated service account to integrate Codacy with your repositories. This prevents disruption of service if the user who created an account API token loses access to the repositories, which may happen when a user leaves the team or the organization.</p>
 </div>
-<p>You can create new account API tokens programmatically <a href="../examples/creating-project-api-tokens-programmatically/">using the Codacy API</a> or using the Codacy UI:</p>
+<p>You can create new account API tokens programmatically <a href="../examples/creating-repository-api-tokens-programmatically/">using the Codacy API</a> or using the Codacy UI:</p>
 <ol>
 <li>
 <p>Open your account, tab <strong>Access management</strong>.</p>
@@ -4189,31 +4189,28 @@
 </li>
 </ol>
 <p>To revoke an account API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
-<h2 id="project-api-tokens">Generating and revoking project API tokens<a class="headerlink" href="#project-api-tokens" title="Permanent link">#</a></h2>
-<p>Project API tokens are defined on <strong>individual repositories</strong>. Each project API token only authorizes access to the corresponding repository.</p>
-<p>You can create new project API tokens programmatically <a href="../examples/creating-project-api-tokens-programmatically/">using the Codacy API</a> or using the Codacy UI:</p>
+<h2 id="repository-api-tokens">Generating and revoking repository API tokens<a class="headerlink" href="#repository-api-tokens" title="Permanent link">#</a></h2>
+<p>Repository API tokens are defined on <strong>individual repositories</strong>. Each repository API token only authorizes access to the corresponding repository.</p>
+<p>You can create new repository API tokens programmatically <a href="../examples/creating-repository-api-tokens-programmatically/">using the Codacy API</a> or using the Codacy UI:</p>
 <ol>
 <li>
 <p>Open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
 </li>
 <li>
-<p>Click the button <strong>Add integration</strong> and add a <strong>Project API</strong> integration.</p>
-</li>
-<li>
-<p>Click the button <strong>Settings</strong> on the <strong>Project API</strong> integration and copy the project API token.</p>
+<p>Click the button <strong>Create API token</strong> under <strong>Repository API tokens</strong>.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>You can create multiple (up to 100) project API tokens per repository. This can be useful to have a more flexible control by revoking only a specific token.</p>
+<p>You can create multiple (up to 100) API tokens per repository. This can be useful to have a more flexible control by revoking only a specific token.</p>
 </div>
-<p><img alt="Creating a project API token" src="../images/codacy-api-tokens-project.png" /></p>
+<p><img alt="Creating a repository API token" src="../images/codacy-api-tokens-repository.png" /></p>
 </li>
 </ol>
-<p>To revoke a project API token, click the trash can icon for the corresponding <strong>Project API</strong> integration. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
+<p>To revoke a repository API token, click the <strong>X</strong> next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../coverage-reporter/">Adding coverage to your repository</a></li>
 <li><a href="../../repositories-configure/local-analysis/client-side-tools/">Client-side tools</a></li>
-<li><a href="../examples/creating-project-api-tokens-programmatically/">Creating project API tokens programmatically</a></li>
+<li><a href="../examples/creating-repository-api-tokens-programmatically/">Creating repository API tokens programmatically</a></li>
 </ul>
               
               
@@ -4371,7 +4368,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 7, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2024</span>
     
   </small>
 </div>

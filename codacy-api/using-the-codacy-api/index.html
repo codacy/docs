@@ -11,7 +11,7 @@
         <meta name="description" content="The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.">
       
       
-        <meta http-equiv="last-modified" content="2022-12-05 09:31:34">
+        <meta http-equiv="last-modified" content="2024-05-08 16:36:15">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/using-the-codacy-api/">
@@ -1296,8 +1296,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../examples/creating-project-api-tokens-programmatically/" title="Creating project API tokens programmatically" class="md-nav__link">
-      Creating project API tokens programmatically
+    <a href="../examples/creating-repository-api-tokens-programmatically/" title="Creating repository API tokens programmatically" class="md-nav__link">
+      Creating repository API tokens programmatically
     </a>
   </li>
 
@@ -4223,19 +4223,19 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
 </code></pre></div>
 </div>
 <h2 id="authenticating-requests">Authenticating requests<a class="headerlink" href="#authenticating-requests" title="Permanent link">#</a></h2>
-<p>Most API endpoints require that you authenticate using an API token. After <a href="../api-tokens/">obtaining the necessary tokens</a>, include them in your request headers using the format <code>api-token: &lt;your account API token&gt;</code> or <code>project-token: &lt;your project API token&gt;</code>.</p>
+<p>Most API endpoints require that you authenticate using an API token. After <a href="../api-tokens/">obtaining the necessary tokens</a>, include them in your request headers using the format <code>api-token: &lt;your account API token&gt;</code> or <code>project-token: &lt;your repository API token&gt;</code>.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Currently, all API v3 endpoints that require authentication must use <strong>account API tokens</strong>, while the API v2 endpoints require either <strong>account or project API tokens</strong>.</p>
+<p>Currently, all API v3 endpoints that require authentication must use <strong>account API tokens</strong>, while the API v2 endpoints require either <strong>account or repository API tokens</strong>.</p>
 <p>Performing <code>GET</code> requests for public repositories doesn't require authentication.</p>
 </div>
 <p>For example, to make a request to an API v3 endpoint that requires an account API token:</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span><span class="s1">&#39;https://api.codacy.com/api/v3/user/organizations/gh&#39;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">     </span>-H<span class="w"> </span><span class="s1">&#39;api-token: &lt;your account API token&gt;&#39;</span>
 </code></pre></div>
-<p>Or to make a request to an API v2 endpoint that requires a project API token:</p>
+<p>Or to make a request to an API v2 endpoint that requires a repository API token:</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>GET<span class="w"> </span><span class="s1">&#39;https://api.codacy.com/2.0/commit/da275c14ffab6e402dcc6009828067ffa44b7ee0&#39;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">     </span>-H<span class="w"> </span><span class="s1">&#39;project-token: &lt;your project API token&gt;&#39;</span>
+<span class="w">     </span>-H<span class="w"> </span><span class="s1">&#39;project-token: &lt;your repository API token&gt;&#39;</span>
 </code></pre></div>
 <h2 id="using-parameters-in-requests">Using parameters in requests<a class="headerlink" href="#using-parameters-in-requests" title="Permanent link">#</a></h2>
 <p>Most API endpoints require that you specify parameters.</p>
@@ -4469,7 +4469,7 @@ https://&lt;your Codacy instance domain name&gt;/api/v3
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 5, 2022</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2024</span>
     
   </small>
 </div>

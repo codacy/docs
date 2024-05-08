@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the GitLab integration to have merge request status, comments, and analysis summaries from Codacy directly on merge requests.">
       
       
-        <meta http-equiv="last-modified" content="2023-10-23 12:02:24">
+        <meta http-equiv="last-modified" content="2024-05-08 16:36:15">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/gitlab-integration/">
@@ -604,15 +604,15 @@
     <ul class="md-nav__list" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#enabling" class="md-nav__link">
-    Enabling the GitLab integration
+  <a href="#configuring" class="md-nav__link">
+    Configuring the GitLab integration
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#configuring" class="md-nav__link">
-    Configuring the GitLab integration
+  <a href="#refreshing" class="md-nav__link">
+    Refreshing the GitLab integration
   </a>
   
 </li>
@@ -1291,8 +1291,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/creating-project-api-tokens-programmatically/" title="Creating project API tokens programmatically" class="md-nav__link">
-      Creating project API tokens programmatically
+    <a href="../../../codacy-api/examples/creating-repository-api-tokens-programmatically/" title="Creating repository API tokens programmatically" class="md-nav__link">
+      Creating repository API tokens programmatically
     </a>
   </li>
 
@@ -4158,25 +4158,12 @@
                 
                 <h1 id="gitlab-integration">GitLab integration<a class="headerlink" href="#gitlab-integration" title="Permanent link">#</a></h1>
 <p>The GitLab integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your merge requests.</p>
-<h2 id="enabling">Enabling the GitLab integration<a class="headerlink" href="#enabling" title="Permanent link">#</a></h2>
-<p>To enable the GitLab integration, open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>. When you add a new repository, Codacy enables the integration using the <a href="../../../organizations/integrations/default-git-provider-integration-settings/">default settings for your organization</a>.</p>
+<p>When you add a new repository, Codacy sets the GitLab integration using the <a href="../../../organizations/integrations/default-git-provider-integration-settings/">default settings for your organization</a>. You can then <a href="#configuring">customize the settings</a> for the repository.</p>
 <p><img alt="GitLab integration" src="../images/gitlab-integration.png" /></p>
-<p>If you remove the integration, you can enable it again as follows:</p>
-<ol>
-<li>Click the button <strong>Add integration</strong> and select <strong>GitLab</strong> on the list.</li>
-<li>
-<p>Click the button <strong>Enable</strong> and follow the instructions.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>The user that enables the integration <a href="../../../organizations/roles-and-permissions-for-organizations/#permissions-for-gitlab">must have administrator access to the repository</a>. Codacy uses this GitLab user to create comments on merge requests.</p>
+<p>Codacy uses the GitLab user who added the repository to create comments on merge requests. If that user loses access to the repository, a repository admin must <a href="#refreshing">refresh the GitLab integration</a>.</p>
 </div>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Use a dedicated service account to integrate Codacy with your repositories. This prevents disruption of service if the user who originally enabled the integration loses access to the repositories, which may happen when a user leaves the team or the organization.</p>
-<p>For more information and instructions on how to set up a dedicated service account see <a href="../../../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/">Why did Codacy stop commenting on pull requests?</a></p>
-</div>
-</li>
-</ol>
 <h2 id="configuring">Configuring the GitLab integration<a class="headerlink" href="#configuring" title="Permanent link">#</a></h2>
 <p>To configure the GitLab integration, open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
 <p>Depending on the options that you enable, Codacy will automatically update merge requests on GitLab with extra information when accepting merge requests.</p>
@@ -4184,7 +4171,7 @@
 <p class="admonition-title">Tip</p>
 <p>You can <a href="../../../organizations/integrations/default-git-provider-integration-settings/#apply-all">apply the default Git provider integration settings to all repositories</a> to ensure that your repositories all share the same settings.</p>
 </div>
-<h3 id="pull-request-status">Pull Request Status<a class="headerlink" href="#pull-request-status" title="Permanent link">#</a></h3>
+<h3 id="pull-request-status">Status checks<a class="headerlink" href="#pull-request-status" title="Permanent link">#</a></h3>
 <p>Adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the <a href="../../adjusting-quality-gates/">quality gate rules</a> for your project. You can then optionally <a href="../../../getting-started/integrating-codacy-with-your-git-workflow/#blocking-pull-requests">block merging merge requests that aren't up to standards</a>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
@@ -4195,9 +4182,12 @@
 </ul>
 </div>
 <p><img alt="Merge request status on GitLab" src="../images/gitlab-integration-pr-status.png" /></p>
-<h3 id="pull-request-comment">Pull Request Comment<a class="headerlink" href="#pull-request-comment" title="Permanent link">#</a></h3>
-<p>Adds comments on the lines of the merge request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them.</p>
+<h3 id="pull-request-comment">Issue annotations<a class="headerlink" href="#pull-request-comment" title="Permanent link">#</a></h3>
+<p>Adds comments on the lines of the merge request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them. To enable this option, you must enable <strong>Status checks</strong> first.</p>
 <p><img alt="Merge request comment on GitLab" src="../images/gitlab-integration-pr-comment.png" /></p>
+<h3 id="pull-request-summary">Issue summaries<a class="headerlink" href="#pull-request-summary" title="Permanent link">#</a></h3>
+<p>Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable <strong>Status checks</strong> first.</p>
+<p><img alt="Merge request summary on GitLab" src="../images/gitlab-integration-pr-summary.png" /></p>
 <h3 id="ai-enhanced-comments">AI-Enhanced Comments<a class="headerlink" href="#ai-enhanced-comments" title="Permanent link">#</a></h3>
 <p>Adds AI-enhanced comments with insights to help you fix identified issues.</p>
 <div class="admonition note">
@@ -4209,9 +4199,24 @@
 </ul>
 </div>
 <p><img alt="AI-enhanced comment on GitLab" src="../images/gitlab-integration-ai-comment.png" /></p>
-<h3 id="pull-request-summary">Pull Request Summary<a class="headerlink" href="#pull-request-summary" title="Permanent link">#</a></h3>
-<p>Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication.</p>
-<p><img alt="Merge request summary on GitLab" src="../images/gitlab-integration-pr-summary.png" /></p>
+<h2 id="refreshing">Refreshing the GitLab integration<a class="headerlink" href="#refreshing" title="Permanent link">#</a></h2>
+<p>If the user who added the repository to Codacy loses access to the repository, which may happen when the user leaves the team or the organization, Codacy won't be able to create comments on merge requests.</p>
+<p>In this situation, another user with <a href="../../../organizations/roles-and-permissions-for-organizations/#permissions-for-gitlab">administrator access to the repository</a> needs to refresh the GitLab integration:</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Use a dedicated service account to integrate Codacy with your repositories. This prevents disruption of service if the user who originally enabled the integration loses access to the repositories, which may happen when a user leaves the team or the organization.</p>
+<p>For more information and instructions on how to set up a dedicated service account see <a href="../../../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/#outdated-permissions">Why did Codacy stop commenting on pull requests?</a></p>
+</div>
+<ol>
+<li>
+<p>Open the repository <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
+</li>
+<li>
+<p>On the GitLab integration area, click the link <strong>Refresh connection</strong>.</p>
+<p><img alt="Refresh GitLab integration" src="../images/gitlab-integration-refresh.png" /></p>
+</li>
+</ol>
+<p>After refreshing the integration, Codacy will use the logged in GitLab user to create comments on new merge requests.</p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../../getting-started/integrating-codacy-with-your-git-workflow/">Integrating Codacy with your Git workflow</a></li>
@@ -4372,7 +4377,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 23, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2024</span>
     
   </small>
 </div>

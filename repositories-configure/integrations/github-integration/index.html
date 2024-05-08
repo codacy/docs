@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the GitHub integration to have status checks, annotations, issue and coverage summaries, and suggested fixes from Codacy directly on pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2024-04-15 13:20:33">
+        <meta http-equiv="last-modified" content="2024-05-08 16:36:15">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/github-integration/">
@@ -590,13 +590,6 @@
       Table of contents
     </label>
     <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#enabling" class="md-nav__link">
-    Enabling the GitHub integration
-  </a>
-  
-</li>
       
         <li class="md-nav__item">
   <a href="#configuring" class="md-nav__link">
@@ -1291,8 +1284,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/creating-project-api-tokens-programmatically/" title="Creating project API tokens programmatically" class="md-nav__link">
-      Creating project API tokens programmatically
+    <a href="../../../codacy-api/examples/creating-repository-api-tokens-programmatically/" title="Creating repository API tokens programmatically" class="md-nav__link">
+      Creating repository API tokens programmatically
     </a>
   </li>
 
@@ -4158,20 +4151,8 @@
                 
                 <h1 id="github-integration">GitHub integration<a class="headerlink" href="#github-integration" title="Permanent link">#</a></h1>
 <p>The GitHub integration incorporates Codacy on your existing Git provider workflows by reporting issues and the analysis status directly on your pull requests.</p>
-<h2 id="enabling">Enabling the GitHub integration<a class="headerlink" href="#enabling" title="Permanent link">#</a></h2>
-<p>To enable the GitHub integration, open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>. When you add a new repository, Codacy enables the integration using the <a href="../../../organizations/integrations/default-git-provider-integration-settings/">default settings for your organization</a>.</p>
+<p>When you add a new repository, Codacy sets the GitHub integration using the <a href="../../../organizations/integrations/default-git-provider-integration-settings/">default settings for your organization</a>. You can then <a href="#configuring">customize the settings</a> for the repository.</p>
 <p><img alt="GitHub integration" src="../images/github-integration.png" /></p>
-<p>If you remove the integration, you can enable it again as follows:</p>
-<ol>
-<li>Click the button <strong>Add integration</strong> and select <strong>GitHub</strong> on the list.</li>
-<li>
-<p>Click the button <strong>Enable</strong> and follow the instructions.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>The user that enables the integration <a href="../../../organizations/roles-and-permissions-for-organizations/#permissions-for-github">must have administrator access to the repository</a>.</p>
-</div>
-</li>
-</ol>
 <h2 id="configuring">Configuring the GitHub integration<a class="headerlink" href="#configuring" title="Permanent link">#</a></h2>
 <p>To configure the GitHub integration, open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>.</p>
 <p>Depending on the options that you enable, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests.</p>
@@ -4389,7 +4370,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 15, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2024</span>
     
   </small>
 </div>

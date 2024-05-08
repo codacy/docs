@@ -11,7 +11,7 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool.">
       
       
-        <meta http-equiv="last-modified" content="2023-12-19 14:20:38">
+        <meta http-equiv="last-modified" content="2024-05-08 16:36:15">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/">
@@ -1234,8 +1234,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/creating-project-api-tokens-programmatically/" title="Creating project API tokens programmatically" class="md-nav__link">
-      Creating project API tokens programmatically
+    <a href="../../../codacy-api/examples/creating-repository-api-tokens-programmatically/" title="Creating repository API tokens programmatically" class="md-nav__link">
+      Creating repository API tokens programmatically
     </a>
   </li>
 
@@ -2171,7 +2171,7 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#outdated-permissions-or-invalid-ssh-key" class="md-nav__link">
+  <a href="#outdated-permissions" class="md-nav__link">
     Outdated permissions or invalid SSH key
   </a>
   
@@ -4163,12 +4163,12 @@
 </div>
 <p>Coverage information is currently sent to GitHub by a new version of the Codacy Coverage engine, which depends on updated app permissions.</p>
 <p>If you stopped receiving coverage summaries on your pull requests, please <a href="https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions">review and accept the updated Codacy app permissions on GitHub</a>. For more information on the rollout of the new Coverage engine, <a href="../../../release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/">see the relevant release note</a>.</p>
-<h2 id="outdated-permissions-or-invalid-ssh-key">Outdated permissions or invalid SSH key<a class="headerlink" href="#outdated-permissions-or-invalid-ssh-key" title="Permanent link">#</a></h2>
+<h2 id="outdated-permissions">Outdated permissions or invalid SSH key<a class="headerlink" href="#outdated-permissions" title="Permanent link">#</a></h2>
 <div class="admonition info">
 <p class="admonition-title">This section applies to GitLab and Bitbucket</p>
 </div>
 <p>Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the GitLab or Bitbucket integration no longer has permissions on the repository or that the SSH key is no longer valid.</p>
-<p>To fix this issue and avoid future disruptions, re-enable the GitLab or Bitbucket integration on Codacy using a dedicated service account on your Git provider:</p>
+<p>To fix this issue and avoid future disruptions, refresh the GitLab or Bitbucket integration on Codacy using a dedicated service account on your Git provider:</p>
 <ol>
 <li>
 <p>Create a service account on your Git provider exclusively dedicated to integrating Codacy with your repositories.</p>
@@ -4193,23 +4193,19 @@
 <p>Log in to Codacy using the new service account.</p>
 </li>
 <li>
-<p>Open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>, and click the trash can icon to remove the existing Git provider integration:</p>
-<p><img alt="Removing the old Git provider integration" src="../images/git-provider-integration-remove.png" /></p>
+<p>Open your repository <strong>Settings</strong>, tab <strong>Integrations</strong>, and click the link <strong>Refresh connection</strong> to refresh the existing Git provider integration:</p>
+<p><img alt="Refresh Git provider integration" src="../../../repositories-configure/integrations/images/gitlab-integration-refresh.png" /></p>
 </li>
 <li>
-<p>Re-enable the integration by following the instructions for your Git provider:</p>
+<p>Make sure the Git provider integration is configured as needed:</p>
 <ul>
 <li>
-<p><a href="../../../repositories-configure/integrations/gitlab-integration/#enabling">Enabling the GitLab integration</a></p>
+<p><a href="../../../repositories-configure/integrations/gitlab-integration/#configuring">Configuring the GitLab integration</a></p>
 </li>
 <li>
-<p><a href="../../../repositories-configure/integrations/bitbucket-integration/#enabling">Enabling the Bitbucket integration</a></p>
+<p><a href="../../../repositories-configure/integrations/bitbucket-integration/#configuring">Configuring the Bitbucket integration</a></p>
 </li>
 </ul>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Configure the <a href="../../../organizations/integrations/default-git-provider-integration-settings/">default Git provider integration settings</a> that Codacy applies to new repositories to help ensure that all new repositories have the same settings.</p>
-</div>
 </li>
 </ol>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
@@ -4372,7 +4368,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 19, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2024</span>
     
   </small>
 </div>
