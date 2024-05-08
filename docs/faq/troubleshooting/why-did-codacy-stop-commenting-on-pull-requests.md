@@ -8,13 +8,13 @@ Coverage information is currently sent to GitHub by a new version of the Codacy 
 
 If you stopped receiving coverage summaries on your pull requests, please [review and accept the updated Codacy app permissions on GitHub](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions). For more information on the rollout of the new Coverage engine, [see the relevant release note](../../release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md).
 
-## Outdated permissions or invalid SSH key
+## Outdated permissions or invalid SSH key {: id="outdated-permissions"}
 
 !!! info "This section applies to GitLab and Bitbucket"
 
 Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the GitLab or Bitbucket integration no longer has permissions on the repository or that the SSH key is no longer valid.
 
-To fix this issue and avoid future disruptions, re-enable the GitLab or Bitbucket integration on Codacy using a dedicated service account on your Git provider:
+To fix this issue and avoid future disruptions, refresh the GitLab or Bitbucket integration on Codacy using a dedicated service account on your Git provider:
 
 1.  Create a service account on your Git provider exclusively dedicated to integrating Codacy with your repositories.
 
@@ -33,21 +33,15 @@ To fix this issue and avoid future disruptions, re-enable the GitLab or Bitbucke
 
 1.  Log in to Codacy using the new service account.
 
-1.  Open your repository **Settings**, tab **Integrations**, and click the trash can icon to remove the existing Git provider integration:
+1.  Open your repository **Settings**, tab **Integrations**, and click the link **Refresh connection** to refresh the existing Git provider integration:
 
-    ![Removing the old Git provider integration](images/git-provider-integration-remove.png)
+    ![Refresh Git provider integration](../../repositories-configure/integrations/images/gitlab-integration-refresh.png)
 
-1.  Re-enable the integration by following the instructions for your Git provider:
+1.  Make sure the Git provider integration is configured as needed:
 
-    -   [Enabling the GitLab integration](../../repositories-configure/integrations/gitlab-integration.md#enabling)
+    -   [Configuring the GitLab integration](../../repositories-configure/integrations/gitlab-integration.md#configuring)
 
-    -   [Enabling the Bitbucket integration](../../repositories-configure/integrations/bitbucket-integration.md#enabling)
-
-    {%
-        include-markdown "../../assets/includes/default-git-provider-settings-tip.md"
-        start="<!--default-settings-start-->"
-        end="<!--default-settings-end-->"
-    %}
+    -   [Configuring the Bitbucket integration](../../repositories-configure/integrations/bitbucket-integration.md#configuring)
 
 ## See also
 
