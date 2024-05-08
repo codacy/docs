@@ -11,7 +11,7 @@
         <meta name="description" content="List of tools that Codacy uses to analyze over 40 supported languages. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code platforms as well as code duplication, code complexity, and code coverage metrics for most programming languages.">
       
       
-        <meta http-equiv="last-modified" content="2024-01-26 16:42:49">
+        <meta http-equiv="last-modified" content="2024-05-08 08:24:45">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/supported-languages-and-tools/">
@@ -4507,7 +4507,7 @@
     </tr>
     <tr>
       <td>Ruby <a href="#ruby-31"><sup>7</sup></a></td>
-      <td><a href="https://brakemanscanner.org/">Brakeman</a>,
+      <td><a href="https://brakemanscanner.org/">Brakeman</a> <a href="#semgrep-brakeman"><sup>8</sup></a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
@@ -4574,7 +4574,7 @@
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
-      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#swiftlint-complexity"><sup>8</sup></a> <a href="#complexity-limitations"><sup>6</sup></a></td>
+      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#complexity-limitations"><sup>6</sup></a> <a href="#swiftlint-complexity"><sup>9</sup></a></td>
     </tr>
     <tr>
       <td>Terraform</td>
@@ -4679,7 +4679,8 @@
 <sup><span id="dart-limitations">5</span></sup>: Currently, Codacy only supports including the packages <a href="https://pub.dev/packages/lints">lints</a> and <a href="https://pub.dev/packages/flutter_lints"><span class="skip-vale">flutter_lints</span></a> on dartanalyzer configuration files.<br />
 <sup><span id="complexity-limitations">6</span></sup>: Doesn't calculate <a href="../../repositories/files/#file-details">the number of methods and the complexity per method</a> for each file.<br />
 <sup><span id="ruby-31">7</span></sup>: Currently, Codacy doesn't support any static code analysis tool for <a href="https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/">Ruby 3.1</a>.<br />
-<sup><span id="swiftlint-complexity">8</span></sup>: Supports <a href="https://realm.github.io/SwiftLint/cyclomatic_complexity.html">reporting warnings or errors</a> on functions above specific complexity thresholds. Enable the rule <strong>Cyclomatic Complexity</strong> on the <a href="../../repositories-configure/configuring-code-patterns/">Code patterns page</a>, or use a <a href="https://realm.github.io/SwiftLint/index.html#configuration">configuration file</a> to customize the thresholds.<br />
+<sup><span id="semgrep-brakeman">8</span></sup>: Due to licensing limitations, Codacy doesn't support the latest version of Brakeman. To analyze your Ruby code for the latest security vulnerabilities, use <a href="https://semgrep.dev/">Semgrep</a>, which provides comprehensive and up-to-date security scanning.<br />
+<sup><span id="swiftlint-complexity">9</span></sup>: Supports <a href="https://realm.github.io/SwiftLint/cyclomatic_complexity.html">reporting warnings or errors</a> on functions above specific complexity thresholds. Enable the rule <strong>Cyclomatic Complexity</strong> on the <a href="../../repositories-configure/configuring-code-patterns/">Code patterns page</a>, or use a <a href="https://realm.github.io/SwiftLint/index.html#configuration">configuration file</a> to customize the thresholds.<br />
 <sup><span id="suggest-fixes">🔧</span></sup>: Supports <a href="../../repositories-configure/integrations/github-integration/#suggest-fixes">suggesting fixes</a> for identified issues.</p>
 <h2 id="docker-images-of-supported-tools">Docker images of supported tools<a class="headerlink" href="#docker-images-of-supported-tools" title="Permanent link">#</a></h2>
 <p>Codacy adds support for new languages and tools by using <a href="https://github.com/codacy/codacy-example-tool">a Docker image to run each tool</a>.</p>
@@ -5033,7 +5034,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 26, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2024</span>
     
   </small>
 </div>
