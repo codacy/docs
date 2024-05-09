@@ -17,7 +17,13 @@ Codacy supports configuring certain advanced features through a configuration fi
 ## Using a Codacy configuration file
 
 !!! important
-    If your repository has a Codacy configuration file, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must [ignore files using the configuration file](#syntax-for-ignoring-files) instead.
+    -   If your repository has a Codacy configuration file, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must [ignore files using the configuration file](#syntax-for-ignoring-files) instead.
+    -   Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the Codacy configuration file, the analysis results take those changes into account. However, if the Codacy configuration file **in the default branch** includes settings to [ignore files](#syntax-for-ignoring-files):
+
+        -   The analysis results of any branch always take the ignore settings defined **in the default branch** into account.
+        -   The ignore settings of the Codacy configuration file **in the branch being analyzed** are cumulative and don't override the settings defined **in the default branch**.
+        
+        For example, if the Codacy configuration file **in the default branch** excludes file A from analysis, that file will be excluded from analysis **in any branch being analyzed** even if you remove that rule from the Codacy configuration file in that branch.
 
 To use a Codacy configuration file:
 
