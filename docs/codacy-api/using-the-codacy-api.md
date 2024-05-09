@@ -69,10 +69,10 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
 
 ## Authenticating requests
 
-Most API endpoints require that you authenticate using an API token. After [obtaining the necessary tokens](api-tokens.md), include them in your request headers using the format `api-token: <your account API token>` or `project-token: <your project API token>`.
+Most API endpoints require that you authenticate using an API token. After [obtaining the necessary tokens](api-tokens.md), include them in your request headers using the format `api-token: <your account API token>` or `project-token: <your repository API token>`.
 
 !!! note
-    Currently, all API v3 endpoints that require authentication must use **account API tokens**, while the API v2 endpoints require either **account or project API tokens**.
+    Currently, all API v3 endpoints that require authentication must use **account API tokens**, while the API v2 endpoints require either **account or repository API tokens**.
 
     Performing `GET` requests for public repositories doesn't require authentication.
 
@@ -83,11 +83,11 @@ curl -X GET 'https://api.codacy.com/api/v3/user/organizations/gh' \
      -H 'api-token: <your account API token>'
 ```
 
-Or to make a request to an API v2 endpoint that requires a project API token:
+Or to make a request to an API v2 endpoint that requires a repository API token:
 
 ```bash
 curl -X GET 'https://api.codacy.com/2.0/commit/da275c14ffab6e402dcc6009828067ffa44b7ee0' \
-     -H 'project-token: <your project API token>'
+     -H 'project-token: <your repository API token>'
 ```
 
 ## Using parameters in requests

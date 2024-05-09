@@ -14,7 +14,7 @@ In particular, you can configure quality gates to block merging pull requests th
 To integrate Codacy with your Git workflow, follow these steps:
 
 1.  [Configuring the quality gate rules](#configuring-gate)
-1.  [Activating the Git provider integration](#git-provider-integration)
+1.  [Configuring the Git provider integration](#git-provider-integration)
 1.  [Blocking merging pull requests](#blocking-pull-requests) (optional)
 
 ## 1. Configuring the quality gate rules {: id="configuring-gate"}
@@ -35,18 +35,15 @@ To integrate Codacy with your Git workflow, follow these steps:
 
 ![Adjusting the quality gates](../repositories-configure/images/quality-settings-gates.png)
 
-## 2. Activating the Git provider integration {: id="git-provider-integration"}
+## 2. Configuring the Git provider integration {: id="git-provider-integration"}
 
-Follow the instructions for [GitHub](../repositories-configure/integrations/github-integration.md#enabling), [GitLab](../repositories-configure/integrations/gitlab-integration.md#enabling), or [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#enabling) depending on your Git provider, and make sure that you:
+Make sure you enable the option **Status checks** ([GitHub](../repositories-configure/integrations/github-integration.md#status-checks)) or **Pull request status** ([GitLab](../repositories-configure/integrations/gitlab-integration.md#pull-request-status) and [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#pull-request-status)).
 
-1.  Enable the Git provider integration
-1.  Enable the option **Status checks** (GitHub) or **Pull request status** (GitLab and Bitbucket)
-
-    {%
-        include-markdown "../assets/includes/default-git-provider-settings-tip.md"
-        start="<!--default-settings-start-->"
-        end="<!--default-settings-end-->"
-    %}
+{%
+    include-markdown "../assets/includes/default-git-provider-settings-tip.md"
+    start="<!--default-settings-start-->"
+    end="<!--default-settings-end-->"
+%}
 
 ![Enabling your Git provider integration](../repositories-configure/integrations/images/github-integration.png)
 
