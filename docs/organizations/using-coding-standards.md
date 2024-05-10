@@ -130,13 +130,14 @@ To edit an existing coding standard or change the repositories that follow that 
 
 1.  Edit the current coding standard configurations and click the button **Next** to advance to the following [configuration pages](#advanced-settings):
 
-    -   The programming languages that the coding standard applies to
-    -   The tool and code pattern configurations of the coding standard
-    -   The repositories that follow the coding standard
+    -   **Select languages**: the programming languages that the coding standard applies to.
 
-    You can also rename the coding standard using the input at the bottom of the first page of the wizard:
+        On this page, you can rename the coding standard by clicking the edit icon next to the name of the coding standard.
 
-    ![Renaming a coding standard](images/coding-standard-rename.png)<!-- TODO ALA-940 screenshot -->
+        ![Renaming a coding standard](images/coding-standard-rename.png)
+
+    -   **Choose tools and patterns**: the tool and code pattern configurations of the coding standard.
+    -   **Select and apply to repositories**: the repositories that follow the coding standard.
 
 1.  Click the button **Save and apply standard** on the repository selection page to save your changes to the coding standard.
 
