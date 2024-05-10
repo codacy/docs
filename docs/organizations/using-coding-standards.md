@@ -29,21 +29,23 @@ To create a coding standard for your organization:
     -   Select a repository to use as a baseline for the new coding standard. This is useful if you already have a well-configured repository that you wish to use as a template.
     -   Set the new coding standard as [your organization's default](#set-default), so it applies automatically to new repositories.
 
-    ![Creating a new coding standard](images/coding-standard-create.png)<!-- TODO ALA-940 screenshot -->
+    ![Creating a new coding standard](images/coding-standard-create.png)
 
-1.  Click **Create standard**.
+1.  Click **Create coding standard**.
 
 1.  Adjust the sensitivity of the coding standard from **Essential** to **Comprehensive** for each issue category group:
 
     -   **Essential**: Focuses on the most important issues by including the most critical code patterns. Ideal for initial integration, to prevent overwhelming developers, and to speed up analysis times.
     -   **Comprehensive**: Detects all issues by including all code patterns, capturing the complete severity spectrum. Ideal for detailed code quality reviews, while reducing emphasis on critical issues. It may increase analysis times.
 
-    If you want more control over included code patterns, click **Advanced settings** to [customize the coding standard](#advanced-settings).
+    <!-- TODO ALA-940 explain category groups -->
 
     !!! tip
         Initially, set the sensitivity to **Essential** for most category groups to focus on critical code patterns. It helps streamline the integration process with Codacy without overwhelming developers with too many reported issues. You can gradually include more patterns as needed.
 
-    ![Coding standard presets](images/coding-standard-presets.png)<!-- TODO ALA-940 screenshot -->
+    If you want more control over included code patterns, click **Advanced settings** to [customize the coding standard](#advanced-settings).
+
+    ![Coding standard presets](images/coding-standard-presets.png)
 
 1.  Click **Next: Select and apply to repositories**.
 
@@ -54,7 +56,7 @@ To create a coding standard for your organization:
     !!! note
         A repository can follow one coding standard at a time. Assigning a coding standard to a repository unassigns any previously assigned coding standard.
 
-    ![Applying the coding standard to repositories](images/coding-standard-apply.png)<!-- TODO ALA-940 screenshot -->
+    ![Applying the coding standard to repositories](images/coding-standard-apply.png)
 
 ## Configuring a coding standard using advanced settings {: id="advanced-settings"}
 
@@ -75,7 +77,7 @@ To configure a coding standard using advanced settings:
 
         1. In the next step, explicitly disable the tools that you don't want to use.
 
-    ![Selecting the languages for the coding standard](images/coding-standard-select-languages.png)<!-- TODO ALA-940 screenshot -->
+    ![Selecting the languages for the coding standard](images/coding-standard-select-languages.png)
 
 1.  Click **Next: Tools and patterns**.
 
@@ -89,7 +91,7 @@ To configure a coding standard using advanced settings:
         -   To toggle multiple code patterns at once, click the checkbox of the first pattern and **Shift+click** the checkbox of the last pattern in a range.
         -   To toggle all the code patterns visible on the list, click the checkbox on the header of the code patterns list. If there are more code patterns to load on the list, you can click the link **Enable/Disable all &lt;N&gt; patterns** to toggle all patterns matching the current filters.
 
-    ![Configuring the tools and patterns for the coding standard](images/coding-standard-configure-tools.png)<!-- TODO ALA-940 screenshot -->
+    ![Configuring the tools and patterns for the coding standard](images/coding-standard-configure-tools.png)
 
 1.  Proceed with the remaining wizard steps to finish [creating](#creating) or [editing](#editing) your coding standard.
 
@@ -100,7 +102,9 @@ For ease of management, you can define a default coding standard that automatica
 !!! note
     When Codacy introduces new tools, those are automatically added to the global Codacy defaults but need to be manually added to the default coding standard.
 
-To set a coding standard as default:
+You can set a new coding standard as default when [creating](#creating) one.
+
+To set an existing coding standard as default:
 
 1.  Open your organization **Policies** page, tab **Coding standards**.
 
