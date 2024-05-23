@@ -1,6 +1,4 @@
-# Using a dedicated service account to integrate with your Git provider
-
-**TESTING INFORMATION ARCHITECTURE**
+# Integrate with your Git provider using a service account
 
 !!! info "This page applies only to GitLab and Bitbucket"
 
