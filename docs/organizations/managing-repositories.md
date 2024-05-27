@@ -5,7 +5,9 @@ Users with the [necessary permissions on your Git provider](roles-and-permission
 !!! important
     To see your repositories on Codacy, make sure that you have the necessary permissions over the repositories on the Git provider and that Codacy has the necessary permissions to access the repositories.
 
-To see all the repositories that you follow on Codacy, open the page **Repositories** under your organization. Across the application, Codacy calculates and displays data for the repositories on this list.
+To see all the repositories that you follow on Codacy, open the page **Repositories** under your organization. Organization admins also see the total number of repositories that have already been [added to the organization](#adding-a-repository).
+
+Across the application, Codacy calculates and displays data for the repositories on this list.
 
 ![Repositories list](images/repositories.png)
 
