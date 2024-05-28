@@ -83,7 +83,7 @@ To configure a coding standard using advanced settings:
     -   For each enabled tool, configure the code patterns to use.
 
     !!! tip
-        -   Use the filters to find the relevant tools and code patterns. The recommended configurations are manually curated by Codacy or based on     tool defaults and are marked with the icon ![Recommended icon](images/coding-standard-recommended-icon.png).
+        -   Use the filters to find the relevant tools and code patterns. The recommended configurations are manually curated by Codacy or based on tool defaults and are marked with the icon ![Recommended icon](images/coding-standard-recommended-icon.png).
         -   To toggle multiple code patterns at once, click the checkbox of the first pattern and **Shift+click** the checkbox of the last pattern in a range.
         -   To toggle all the code patterns visible on the list, click the checkbox on the header of the code patterns list. If there are more code patterns to load on the list, you can click the link **Enable/Disable all &lt;N&gt; patterns** to toggle all patterns matching the current filters.
 
