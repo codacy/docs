@@ -47,7 +47,7 @@ To create a coding standard for your organization:
 
 1.  Click **Next: Select and apply to repositories**.
 
-1.  Select existing repositories that should follow the new coding standard and click **Save and apply standard**.
+1.  Select existing repositories that should follow the new coding standard and click **Save and apply coding standard**.
 
     Codacy will start using the new coding standard on the next analysis of each selected repository.
 
@@ -135,7 +135,7 @@ To edit an existing coding standard or change the repositories that follow that 
     -   **Choose tools and patterns**: the tool and code pattern configurations of the coding standard.
     -   **Select and apply to repositories**: the repositories that follow the coding standard.
 
-1.  Click the button **Save and apply standard** on the repository selection page to save your changes to the coding standard.
+1.  Click the button **Save and apply coding standard** on the repository selection page to save your changes to the coding standard.
 
     Codacy will start using the updated coding standard on the next analysis of each selected repository.
 
