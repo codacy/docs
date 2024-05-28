@@ -98,7 +98,7 @@ reviews:
   high_level_summary: true
 ```
 
-You can also enable this feature across your organization by creating the above file in the root of a repository named `.codacy`. (This file will be used as the default configuration for all repositories in the organization, and overriden by the repository-specific configuration file.)
+You can also enable this feature across your organization by creating the above file in the root of a repository named `.codacy`. This file will be used as the default configuration for all repositories in the organization and overridden by repository-specific configuration files.
 
 Once enabled, summaries will be created when pull requests are opened and updated at each commit to reflect any changes to the pull request.
 
