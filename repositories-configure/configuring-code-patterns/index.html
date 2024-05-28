@@ -11,7 +11,7 @@
         <meta name="description" content="Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results fit your needs.">
       
       
-        <meta http-equiv="last-modified" content="2024-03-20 12:06:15">
+        <meta http-equiv="last-modified" content="2024-05-28 13:30:16">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/configuring-code-patterns/">
@@ -4363,8 +4363,8 @@
   <tr>
     <td>RuboCop</td>
     <td>Ruby</td>
-    <td><code>.rubocop.yml</code></td>
-    <td></td>
+    <td><code>.rubocop-codacy.yml</code>, <code>.rubocop.yml</code></td>
+    <td>Supports alternative configuration file <code>.rubocop-codacy.yml</code> for Codacy analysis, allowing exclusion of private gems. This prevents analysis issues caused by private gem references, ensuring proper validation by Codacy.</td>
   </tr>
   <tr>
     <td>Scalastyle</td>
@@ -4606,7 +4606,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 20, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 28, 2024</span>
     
   </small>
 </div>
