@@ -27,7 +27,7 @@ To create a coding standard for your organization:
     Optionally, you can:
 
     -   Select a repository to use as a baseline for the new coding standard. This is useful if you already have a well-configured repository that you wish to use as a template.
-    -   Set the new coding standard as [your organization's default](#set-default), so it applies automatically to new repositories.
+    -   Set the new coding standard as your organization's [default coding standard](#set-default), so it applies automatically to new repositories.
 
     ![Creating a new coding standard](images/coding-standard-create.png)
 
@@ -58,13 +58,11 @@ To create a coding standard for your organization:
 
 ## Configuring a coding standard using advanced settings {: id="advanced-settings"}
 
-If you need more control when [creating a new coding standard](#creating), use the advanced settings to more precisely define the tools and code patterns that the coding standard should use. You can access the advanced settings from the creation wizard by clicking **Advanced settings** on the group sensitivity step.
-
-When editing an existing coding standard, the advanced settings are the default view.
+If you need more control when [creating a new coding standard](#creating), click **Advanced settings** to more precisely define the tools and code patterns that the coding standard should use. When editing an existing coding standard, the advanced settings are the default view.
 
 To configure a coding standard using advanced settings:
 
-1.  Select the programming languages that the new coding standard should cover.
+1.  Select the programming languages that the new coding standard should include.
 
     !!! important
         The coding standard will only control tools that can analyze one or more of the languages selected in this step.
