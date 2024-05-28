@@ -79,20 +79,19 @@ Adds AI-enhanced comments, providing insights and ready-to-commit AI-generated f
 
 ![AI-enhanced comment on GitHub](images/github-integration-ai-comment.png)
 
-### Automatic summaries
+## Generating automatic pull request summaries
 
-Codacy can provide a clear, high-level summary for each pull request, even if one is not written by developers.
-Codacy generates an overview of the changes in the pull request so that any reviewer can understand it's intent and impact.
+Codacy can provide a clear, high-level summary of the code changes introduced by a pull request, based on the committed code.
+Codacy generates an overview of the changes in the pull request so that any reviewer can understand its intent and impact.
 
 ![Automatic Summary on GitHub](images/github-integration-automatic-summary.png)
 
 !!! note
     -   This feature is only available for GitHub.
-    -   This feature uses AWS Bedrock within Codacy's existing infrastructure. No information is shared with any other third party or used to train AI models.
+    -   This feature uses [Amazon Bedrock](https://aws.amazon.com/bedrock/) within Codacy's existing infrastructure. No information is shared with any other third party or used to train AI models.
     -   Summaries are generated using the pull request title, branch name, commit messages, and changes diff.
 
-Enabling this feature requires a [Codacy configuration file](../codacy-configuration-file.md).
-Create a file named `codacy.yaml` in the root of your repository with the following content:
+To enable this feature, add the following to the [Codacy configuration file](../codacy-configuration-file.md) `codacy.yaml` in the root of your repository:
 
 ```yaml
 reviews:
@@ -101,9 +100,9 @@ reviews:
 
 You can also enable this feature across your organization by creating the above file in the root of a repository named `.codacy`. (This file will be used as the default configuration for all repositories in the organization, and overriden by the repository-specific configuration file.)
 
-Once enabled, summaries will be created when pull requests are opened and kept up-to-date to reflect any changes to the pull request.
+Once enabled, summaries will be created when pull requests are opened and updated at each commit to reflect any changes to the pull request.
 
-Pull requests opened by Bot accounts (such as Dependabot) are automatically ignored.
+Pull requests opened by bots, such as Dependabot, are ignored.
 
 ## See also
 
