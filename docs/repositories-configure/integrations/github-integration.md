@@ -81,7 +81,7 @@ Adds AI-enhanced comments, providing insights and ready-to-commit AI-generated f
 
 ### Automatic summaries
 
-Even when not written by developers, Codacy can provide an high-level summary for each pull request.
+Codacy can provide a clear, high-level summary for each pull request, even if one is not written by developers.
 Codacy generates an overview of the changes in the pull request so that any reviewer can understand it's intent and impact.
 
 ![Automatic Summary on GitHub](images/github-integration-automatic-summary.png)
