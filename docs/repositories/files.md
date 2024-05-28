@@ -70,7 +70,7 @@ The Files page only displays files in your repository that were analyzed by Coda
 
 -   **The file has an extension that is not on the list of supported extensions**
 
-    Codacy has a [list of file extensions](../repositories-configure/file-extensions.md) associated with each language. Codacy doesn't analyze or display files with extensions that aren't associated with a language.
+    Codacy supports a [list of file extensions](../repositories-configure/languages.md#configuring-file-extensions) associated with each language. Codacy doesn't analyze or display files with extensions that aren't associated with a language.
 
 -   **The file might be too big**
 

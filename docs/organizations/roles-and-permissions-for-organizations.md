@@ -32,7 +32,7 @@ To change this, open your organization **Settings**, page **Roles and permission
 -   [Ignore issues](../repositories/issues.md#ignoring-and-managing-issues)
 -   [Ignore files](../repositories-configure/ignoring-files.md)
 -   [Configure code patterns](../repositories-configure/configuring-code-patterns.md)
--   [Configure languages](../repositories-configure/file-extensions.md)
+-   [Configure languages](../repositories-configure/languages.md)
 -   [Manage branches](../repositories-configure/managing-branches.md)
 -   [Reanalyze branches and pull requests](../faq/repositories/how-do-i-reanalyze-my-repository.md)
 
