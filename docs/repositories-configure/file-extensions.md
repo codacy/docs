@@ -1,5 +1,5 @@
 ---
-description: If your repository has source files with unrecognized extensions, you can configure Codacy to include them in the next analysis.
+description: Configure the languages that Codacy analyzes in your repository. You can configure Codacy to include unrecognized file extensions, or disable the analysis of specific languages.
 ---
 
 # Configuring languages
