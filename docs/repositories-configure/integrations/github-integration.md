@@ -103,7 +103,7 @@ You can also enable this feature across your organization by creating the above 
 
 Once enabled, summaries will be created when pull requests are opened and kept up-to-date to reflect any changes to the pull request.
 
-Pull requests opened by Bot account (such as Dependabot) are automatically ignored.
+Pull requests opened by Bot accounts (such as Dependabot) are automatically ignored.
 
 ## See also
 
