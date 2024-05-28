@@ -19,11 +19,11 @@ If you are using file extensions different from those Codacy supports, associate
 
 1.  Go to your repository's **Settings**, **Languages**.
 
-    ![Configuring file extensions](images/file-extensions.png)
-
 1.  Add the extensions you want to be recognized for each language.
 
 1.  Click **Save changes** to update your file extension settings.
+
+    ![Configuring file extensions](images/file-extensions.png)
 
     The updated settings will be used on the next analysis, but you can click **reanalyze the latest commit of your branches now** on the notification that appears at the bottom of the page to trigger an analysis immediately.
 
@@ -38,11 +38,11 @@ By default, Codacy analysis all languages detected in your repository. To disabl
 
 1.  Go to your repository's **Settings**, **Languages**.
 
-    ![Configuring file extensions](images/file-extensions.png)
-
 1.  Use the toggle next to the language to disable its analysis.
 
 1.  Click **Save changes** to update your settings.
+
+    ![Disabling language](images/disable-language.png)
 
     The updated settings will be used on the next analysis, but you can click **reanalyze the latest commit of your branches now** on the notification that appears at the bottom of the page to trigger an analysis immediately.
 
