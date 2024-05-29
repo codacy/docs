@@ -47,6 +47,12 @@ Click a specific commit to see [detailed information about that commit](commits.
 
 ![Commits tab](images/pull-requests-tab-commits.png)
 
+## Fixing issues automatically
+
+!!! info "This section applies to GitHub repositories only"
+
+If Codacy detects code patterns that have suggested fixes, you can apply the fixes directly by clicking the **Fix issues** button that appears above the issue list. This action applies the suggested fixes and commits the changes to the pull request.
+
 ## See also
 
 -   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
