@@ -6,16 +6,16 @@ description: Configure the languages that Codacy analyzes in your repository. Yo
 
 {% include-markdown "../assets/includes/admin-access-control-info.md" %}
 
-Codacy automatically detects and analyzes languages in your repository based on a list of supported file extensions. On the repository **Settings**, tab **Languages**, you can see the list of languages that Codacy has detected and will include in the next analysis.
+Codacy automatically detects and analyzes languages in your repository based on a list of supported file extensions. On the repository **Settings**, tab **Languages**, you can see the list of languages that Codacy detected and will include in the next analysis.
 
-By default, the analysis is enabled for all languages that Codacy detects in you repository, and you can adapt them to your needs as follows:
+By default, the analysis is enabled for all languages that Codacy detects in you repository. You can adapt this configuration to your needs as follows:
 
--   If your repository has source files with unrecognized extensions, you can [configure Codacy to include those extensions in the next analysis](#configuring-file-extensions)
--   You can [disable the analysis of specific languages](#disable-language)
+-   [Configure Codacy to include unrecognized extensions](#configuring-file-extensions)
+-   [Disable the analysis of specific languages](#disable-language)
 
 ## Configuring file extensions
 
-If you are using file extensions different from those Codacy supports, associate them with their languages to ensure that Codacy also analyzes those files in the next analysis:
+If your repository has source files with extensions different from those Codacy supports, associate them with their languages to ensure that Codacy also analyzes those files in the next analysis:
 
 1.  Go to your repository's **Settings**, **Languages**.
 
@@ -34,7 +34,7 @@ If you are using file extensions different from those Codacy supports, associate
 
 ## Disabling analysis of a language {: id="disable-language"}
 
-By default, Codacy analysis all languages detected in your repository. To disable the analysis of a specific language, do the following:
+By default, Codacy analyzes all languages detected in your repository. To disable the analysis of a specific language, do the following:
 
 1.  Go to your repository's **Settings**, **Languages**.
 
