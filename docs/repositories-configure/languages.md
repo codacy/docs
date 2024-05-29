@@ -13,6 +13,9 @@ By default, the analysis is enabled for all languages that Codacy detects in you
 -   [Configure Codacy to include unrecognized extensions](#configuring-file-extensions)
 -   [Disable the analysis of specific languages](#disable-language)
 
+!!! note
+    Codacy applies both **Languages** settings defined on the Codacy UI and any other language setting defined using a [Codacy configuration file](codacy-configuration-file.md#languages).
+
 ## Configuring file extensions
 
 If your repository has source files with extensions different from those Codacy supports, associate them with their languages to ensure that Codacy also analyzes those files in the next analysis:
