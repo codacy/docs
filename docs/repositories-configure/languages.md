@@ -42,4 +42,4 @@ By default, Codacy analyzes all languages detected in your repository. To disabl
 
     ![Disabling language](images/disable-language.png)
 
-{% include-markdown "../assets/includes/update-file-extensions-reanalyze.md" %}
+    {% include-markdown "../assets/includes/update-file-extensions-reanalyze.md" %}

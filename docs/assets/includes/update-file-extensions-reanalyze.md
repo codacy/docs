@@ -3,4 +3,3 @@ The updated settings will be used on the next analysis, but you can click **rean
 
 ![Analyze now](../images/file-extensions-analyze.png)
 <!--updated-settings-end-->
-
