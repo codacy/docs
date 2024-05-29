@@ -202,7 +202,7 @@ The table below lists the configuration file names that Codacy detects and suppo
   <tr>
     <td>RuboCop</td>
     <td>Ruby</td>
-    <td><code>.rubocop-codacy.yml</code>, <code>.rubocop.yml</code></td>
+    <td><code>.rubocop.yml</code>, <code>.rubocop-codacy.yml</code></td>
     <td>Supports alternative configuration file <code>.rubocop-codacy.yml</code> for Codacy analysis, allowing exclusion of private gems. This prevents analysis issues caused by private gem references, ensuring proper validation by Codacy.</td>
   </tr>
   <tr>
