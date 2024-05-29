@@ -25,9 +25,11 @@ If your repository has source files with extensions different from those Codacy 
 
     ![Configuring file extensions](images/file-extensions.png)
 
+    <!--updated-settings-start-->
     The updated settings will be used on the next analysis, but you can click **reanalyze the latest commit of your branches now** on the notification that appears at the bottom of the page to trigger an analysis immediately.
 
     ![Analyze now](images/file-extensions-analyze.png)
+    <!--updated-settings-end-->
 
 !!! note
     Currently, the [Semgrep](https://github.com/codacy/codacy-semgrep) static analysis tool doesn't support custom file extensions.
@@ -44,6 +46,8 @@ By default, Codacy analyzes all languages detected in your repository. To disabl
 
     ![Disabling language](images/disable-language.png)
 
-    The updated settings will be used on the next analysis, but you can click **reanalyze the latest commit of your branches now** on the notification that appears at the bottom of the page to trigger an analysis immediately.
-
-    ![Analyze now](images/file-extensions-analyze.png)
+{%
+    include-markdown "./languages.md"
+    start="<!--updated-settings-start-->"
+    end="<!--updated-settings-end-->"
+%}
