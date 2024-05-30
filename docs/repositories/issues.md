@@ -98,7 +98,7 @@ To restore an ignored issue, select **Unignore issue** from the options menu:
 
 !!! info "This section applies to GitHub repositories only"
 
-If Codacy detects code patterns that have suggested fixes, you can apply the fixes by clicking the **Fix issues** button that appears above the issue list. This action applies the suggested fixes and opens a pull request targeting the selected branch.
+If Codacy detects code patterns that have suggested fixes, you can apply those fixes by clicking the **Fix issues** button above the issue list. This action opens a pull request including the suggested fixes and targeting the selected branch.
 
 ## See also
 
