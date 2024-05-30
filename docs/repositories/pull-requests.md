@@ -51,7 +51,9 @@ Click a specific commit to see [detailed information about that commit](commits.
 
 !!! info "This section applies to GitHub repositories only"
 
-If Codacy detects code patterns that have suggested fixes, you can apply those fixes directly by clicking the **Fix issues** button above the issue list. This action commits the suggested fixes to the pull request.
+If Codacy detects code patterns that have suggested fixes, a **Fix issues** button appears above the issue list. Click this button to commit the suggested fixes to the pull request.
+
+![Fix issues button](images/issues-fix-issues-button.png)
 
 ## See also
 
