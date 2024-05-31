@@ -66,7 +66,7 @@ If you selected **Guided setup** when [creating a new coding standard](#creating
 
 ## Configuring a coding standard (advanced setup) {: id="advanced-settings"}
 
-If you selected **Advanced setup** when [creating a new coding standard](#creating), follow these steps:
+If you selected **Advanced setup** when [creating a new coding standard](#creating) or are editing an existing coding standard, follow these steps:
 
 1.  Select the programming languages that the new coding standard should include.
 
