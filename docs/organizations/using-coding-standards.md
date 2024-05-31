@@ -133,7 +133,7 @@ To edit an existing coding standard or change the repositories that follow that 
 1.  Edit the current coding standard configurations and click the button **Next** to advance to the following [configuration pages](#advanced-settings):
 
     !!! note
-        When editing an existing coding standard, the [advanced setup](#advances-settings) is the default view.
+        When editing an existing coding standard, the [advanced setup](#advanced-settings) is the default view.
 
     -   **Select languages**: the programming languages that the coding standard applies to.
 
