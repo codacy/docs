@@ -152,7 +152,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a> <a href="#dart-limitations"><sup>5</sup></a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td>-</td>    
+      <td>-</td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td>-</td>
     </tr>
