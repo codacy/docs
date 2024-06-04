@@ -578,6 +578,7 @@ nav:
                 - repositories-configure/integrations/github-integration.md
                 - repositories-configure/integrations/gitlab-integration.md
                 - repositories-configure/integrations/bitbucket-integration.md
+                - repositories-configure/integrations/using-a-dedicated-service-account.md
                 - repositories-configure/integrations/post-commit-hooks.md
           - repositories-configure/ignoring-files.md
           - repositories-configure/file-extensions.md
