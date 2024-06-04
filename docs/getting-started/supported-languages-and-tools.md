@@ -152,7 +152,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a> <a href="#dart-limitations"><sup>5</sup></a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pubspec.yaml</code> (pub)</td>
+      <td>-</td>    
       <td>-</td>
       <td>-</td>
     </tr>
@@ -195,7 +195,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://staticcheck.io/">Staticcheck</a> <a href="#client-side"><sup>3</sup></a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>go.mod</code> and <code>go.sum</code> (mod)</td>
+      <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a></td>
     </tr>
