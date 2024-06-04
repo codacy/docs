@@ -1,7 +1,7 @@
 # Which events does Codacy log for my organization?
 
 !!! note
-    THE CONTENT OF THIS PAGE IS WORK IN PROGRESS
+    **THE CONTENT OF THIS PAGE IS WORK IN PROGRESS**
 
 The table below lists the events that Codacy logs for your organization at user, organization, and repository levels.
 
