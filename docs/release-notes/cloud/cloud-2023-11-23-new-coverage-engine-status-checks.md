@@ -27,7 +27,7 @@ Please refer to the table below for the updated status of the transition process
       <td rowspan="2">Git providers</td>
       <td><a href="#status-checks">Git provider status checks</a></td>
       <td>Live</td>
-      <td>The new Coverage engine now sends coverage data to your Git provider.<br>Since February 14th, 2024, the Coverage data sent by the old engine is marked <strong>deprecated</strong> and is shown alongside the data from the new Coverage engine.</td>
+      <td>The new Coverage engine now sends coverage data to your Git provider.<br>Codacy stopped sending coverage checks from the old Coverage engine on on June 5th, 2024.</td>
     </tr>
     <tr>
       <td><a href="#coverage-summaries">GitHub coverage summaries</a></td>
