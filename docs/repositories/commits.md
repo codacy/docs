@@ -73,7 +73,7 @@ This area displays the quality gate status for the {{ page.meta.page_name }} and
 <!--tabs-start-->
 ## Issues tab {: id="issues-tabs"}
 
-The **Issues** tab displays the lists of issues that the {{ page.meta.page_name }} creates or fixes. Use the sidebar filters to filter the list by new issues (including issues of specific severity or category), issues within a specific file, fixed issues, [potential new issues, or potential fixed issues](#possible-issues).
+The **Issues** tab displays the lists of issues that the {{ page.meta.page_name }} creates or fixes. Use the sidebar filters to filter the list by new issues (including issues of specific severity or category), issues within a specific file, fixed issues, [potential new issues, or potential fixed issues](./#possible-issues).
 
 {%
     include-markdown "./issues.md"
