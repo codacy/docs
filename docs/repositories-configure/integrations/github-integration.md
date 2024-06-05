@@ -91,7 +91,7 @@ Codacy generates an overview of the changes in the pull request so that any revi
 
 !!! note
     -   This feature is only available for GitHub.
-    -   This feature uses [Amazon Bedrock](https://aws.amazon.com/bedrock/) within Codacy's existing infrastructure. No information is shared with any other third party or used to train AI models.
+    -   This feature uses only AWS services within Codacy's existing infrastructure. No information is shared with any other third party or used to train AI models.
     -   Summaries are generated using the pull request title, branch name, commit messages, and changes diff.
 
 To enable this feature, add the following to the [Codacy configuration file](../codacy-configuration-file.md) `codacy.yaml` in the root of your repository:
