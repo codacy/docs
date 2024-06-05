@@ -50,8 +50,13 @@ The table below lists all languages that Codacy supports and the corresponding t
   <tbody>
     <tr>
       <td>Apex</td>
+      <!--
       <td><a href="https://pmd.github.io/">PMD</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
+      -->
+      <td><a href="https://pmd.github.io/">PMD</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -72,6 +77,9 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <!--
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
+          -->
           <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
@@ -92,8 +100,9 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
@@ -105,7 +114,8 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
@@ -114,8 +124,9 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>C#</td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>.deps.json</code> (.Net), <code>packages.lock.json</code> (NuGet) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
@@ -160,8 +171,9 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>Dockerfile</td>
       <td><a href="https://github.com/hadolint/hadolint">Hadolint</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -176,15 +188,18 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
     </tr>
+    <!--
     <tr>
       <td>GitHub Actions</td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
     </tr>
+    -->
     <tr>
       <td>Go</td>
       <td><a href="https://gitlab.com/opennota/check">aligncheck</a> <a href="#client-side"><sup>3</sup></a>,
@@ -193,8 +208,9 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://github.com/mgechev/revive">Revive</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://staticcheck.io/">Staticcheck</a> <a href="#client-side"><sup>3</sup></a></td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a></td>
@@ -212,7 +228,11 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>Helm</td>
       <td>-</td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
+      <td>
+          <!--
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
+          -->
+          <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -223,8 +243,9 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://pmd.github.io/">PMD</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a> <a href="#client-side"><sup>3</sup></a></td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://pmd.github.io/">PMD</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -236,7 +257,8 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://pmd.github.io/">PMD</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a></td>
@@ -265,13 +287,21 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://github.com/detekt/detekt">detekt</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/detekt/detekt">detekt</a></td>
     </tr>
     <tr>
       <td>Kubernetes</td>
+      <!--
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
+          <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
+      -->
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
@@ -322,7 +352,8 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://phpmd.org/">PHP Mess Detector</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
       <td><a href="https://github.com/sebastianbergmann/phpcpd">PHPCPD</a></td>
       <td><a href="https://github.com/pdepend/pdepend">PHP Depend</a></td>
@@ -360,9 +391,10 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -373,8 +405,9 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://brakemanscanner.org/">Brakeman</a> <a href="#semgrep-brakeman"><sup>8</sup></a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Gemfile.lock</code> (Bundler) </td>
       <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
       <td><a href="https://github.com/rubocop/rubocop">RuboCop</a> <a href="#complexity-limitations"><sup>6</sup></a></td>
@@ -383,7 +416,8 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>Rust</td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Cargo.lock</code> (Cargo) </td>
       <td>-</td>
       <td>-</td>
@@ -404,7 +438,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a> <a href="#client-side"><sup>3</sup></a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
@@ -424,7 +458,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://www.shellcheck.net/">ShellCheck</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -434,7 +468,8 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#complexity-limitations"><sup>6</sup></a> <a href="#swiftlint-complexity"><sup>9</sup></a></td>
@@ -445,6 +480,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
@@ -464,7 +500,8 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://eslint.org/">ESLint</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a></td>
@@ -509,7 +546,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>XML</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -536,7 +573,7 @@ The table below lists all languages that Codacy supports and the corresponding t
 </table>
 
 <sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/). This tool doesn't support [custom file extensions](../repositories-configure/file-extensions.md).  
-<sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.  
+<sup><span id="yaml-only">2</span></sup>: Currently, only YAML file scanning is supported on this platform.
 <sup><span id="client-side">3</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
 <sup><span id="cppcheck-misra">4</span></sup>: Currently, Cppcheck only supports [checking the MISRA guidelines for C](https://cppcheck.sourceforge.io/misra.php).  
 <sup><span id="dart-limitations">5</span></sup>: Currently, Codacy only supports including the packages [lints](https://pub.dev/packages/lints) and [<span class="skip-vale">flutter_lints</span>](https://pub.dev/packages/flutter_lints) on dartanalyzer configuration files.  
