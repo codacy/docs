@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the GitHub integration to have status checks, annotations, issue and coverage summaries, and suggested fixes from Codacy directly on pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2024-05-08 16:36:15">
+        <meta http-equiv="last-modified" content="2024-06-05 14:17:59">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/github-integration/">
@@ -594,6 +594,13 @@
         <li class="md-nav__item">
   <a href="#configuring" class="md-nav__link">
     Configuring the GitHub integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generating-automatic-pull-request-summaries" class="md-nav__link">
+    Generating automatic pull request summaries
   </a>
   
 </li>
@@ -4210,6 +4217,30 @@
 </ul>
 </div>
 <p><img alt="AI-enhanced comment on GitHub" src="../images/github-integration-ai-comment.png" /></p>
+<h2 id="generating-automatic-pull-request-summaries">Generating automatic pull request summaries<a class="headerlink" href="#generating-automatic-pull-request-summaries" title="Permanent link">#</a></h2>
+<div class="admonition info">
+<p class="admonition-title">This is a preview feature</p>
+<p>This is an upcoming Codacy feature. If you're interested, contact <a href="mailto:support@codacy.com">support@codacy.com</a> for early access.</p>
+</div>
+<p>Codacy can provide a clear, high-level summary of the code changes introduced by a pull request, based on the committed code.
+Codacy generates an overview of the changes in the pull request so that any reviewer can understand its intent and impact.</p>
+<p><img alt="Automatic Summary on GitHub" src="../images/github-integration-automatic-summary.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<ul>
+<li>This feature is only available for GitHub.</li>
+<li>This feature uses only AWS services within Codacy's existing infrastructure. No information is shared with any other third party or used to train AI models.</li>
+<li>Summaries are generated using the pull request title, branch name, commit messages, and changes diff.</li>
+</ul>
+</div>
+<p>To enable this feature, add the following to the <a href="../../codacy-configuration-file/">Codacy configuration file</a> <code>codacy.yaml</code> in the root of your repository:</p>
+<div class="highlight"><pre><span></span><code><span class="nt">reviews</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">high_level_summary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
+</code></pre></div>
+<p>You can also enable this feature across your organization by creating the above file in the root of a repository named <code>.codacy</code>. This file will be used as the default configuration for all repositories in the organization and overridden by repository-specific configuration files.</p>
+<p>Once enabled, summaries will be created when pull requests are opened and updated at each commit to reflect any changes to the pull request.</p>
+<p>Pull requests opened by bots, such as Dependabot, are ignored.</p>
+<p>If you see duplicated comments posted by Codacy on the same pull request, please ensure that your repository only has one configured webhook for Codacy.</p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../../getting-started/integrating-codacy-with-your-git-workflow/">Integrating Codacy with your Git workflow</a></li>
@@ -4370,7 +4401,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 5, 2024</span>
     
   </small>
 </div>
