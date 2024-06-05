@@ -106,7 +106,7 @@ You can also enable this feature across your organization by creating the above 
 Once enabled, summaries will be created when pull requests are opened and updated at each commit to reflect any changes to the pull request.
 
 Pull requests opened by bots, such as Dependabot, are ignored.
-
+If you see duplicated comments posted by Codacy on the same pull request, please ensure that your repository only has one configured webhook for Codacy.
 ## See also
 
 -   [Integrating Codacy with your Git workflow](../../getting-started/integrating-codacy-with-your-git-workflow.md)
