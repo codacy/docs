@@ -11,7 +11,7 @@
         <meta name="description" content="List of tools that Codacy uses to analyze over 40 supported languages. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code platforms as well as code duplication, code complexity, and code coverage metrics for most programming languages.">
       
       
-        <meta http-equiv="last-modified" content="2024-06-05 07:29:02">
+        <meta http-equiv="last-modified" content="2024-06-05 17:35:08">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/supported-languages-and-tools/">
@@ -4190,7 +4190,7 @@
       <td><a href="https://pmd.github.io/">PMD</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -4209,6 +4209,7 @@
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
           <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
@@ -4229,8 +4230,9 @@
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
@@ -4242,7 +4244,8 @@
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td>-</td>
@@ -4251,8 +4254,9 @@
       <td>C#</td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>.deps.json</code> (.Net), <code>packages.lock.json</code> (NuGet) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
@@ -4297,8 +4301,9 @@
       <td>Dockerfile</td>
       <td><a href="https://github.com/hadolint/hadolint">Hadolint</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -4317,7 +4322,8 @@
       <td>GitHub Actions</td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -4330,8 +4336,9 @@
           <a href="https://github.com/mgechev/revive">Revive</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://staticcheck.io/">Staticcheck</a> <a href="#client-side"><sup>3</sup></a></td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a></td>
@@ -4349,7 +4356,9 @@
       <td>Helm</td>
       <td>-</td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
+      <td>
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
+          <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -4360,8 +4369,9 @@
           <a href="https://pmd.github.io/">PMD</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a> <a href="#client-side"><sup>3</sup></a></td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://pmd.github.io/">PMD</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -4373,7 +4383,8 @@
           <a href="https://pmd.github.io/">PMD</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a></td>
@@ -4402,16 +4413,18 @@
       <td><a href="https://github.com/detekt/detekt">detekt</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/detekt/detekt">detekt</a></td>
     </tr>
     <tr>
       <td>Kubernetes</td>
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
-      <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
           <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
@@ -4459,7 +4472,8 @@
           <a href="https://phpmd.org/">PHP Mess Detector</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
       <td><a href="https://github.com/sebastianbergmann/phpcpd">PHPCPD</a></td>
       <td><a href="https://github.com/pdepend/pdepend">PHP Depend</a></td>
@@ -4497,9 +4511,10 @@
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
@@ -4510,8 +4525,9 @@
       <td><a href="https://brakemanscanner.org/">Brakeman</a> <a href="#semgrep-brakeman"><sup>8</sup></a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Gemfile.lock</code> (Bundler) </td>
       <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
       <td><a href="https://github.com/rubocop/rubocop">RuboCop</a> <a href="#complexity-limitations"><sup>6</sup></a></td>
@@ -4520,7 +4536,8 @@
       <td>Rust</td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Cargo.lock</code> (Cargo) </td>
       <td>-</td>
       <td>-</td>
@@ -4541,7 +4558,7 @@
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a> <a href="#client-side"><sup>3</sup></a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
@@ -4561,7 +4578,7 @@
       <td><a href="https://www.shellcheck.net/">ShellCheck</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -4571,7 +4588,8 @@
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#complexity-limitations"><sup>6</sup></a> <a href="#swiftlint-complexity"><sup>9</sup></a></td>
@@ -4582,6 +4600,7 @@
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
+          <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
@@ -4601,7 +4620,8 @@
       <td><a href="https://eslint.org/">ESLint</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a></td>
@@ -4646,7 +4666,7 @@
       <td>XML</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://trivy.dev">Trivy</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -4673,7 +4693,7 @@
 </table>
 
 <p><sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for <a href="https://semgrep.dev/pricing/">Semgrep Pro</a>. This tool doesn't support <a href="../../repositories-configure/file-extensions/">custom file extensions</a>.<br />
-<sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.<br />
+<sup><span id="yaml-only">2</span></sup>: Currently, only YAML file scanning is supported on this platform.
 <sup><span id="client-side">3</span></sup>: Supported as a <a href="../../repositories-configure/local-analysis/client-side-tools/">client-side tool</a>.<br />
 <sup><span id="cppcheck-misra">4</span></sup>: Currently, Cppcheck only supports <a href="https://cppcheck.sourceforge.io/misra.php">checking the MISRA guidelines for C</a>.<br />
 <sup><span id="dart-limitations">5</span></sup>: Currently, Codacy only supports including the packages <a href="https://pub.dev/packages/lints">lints</a> and <a href="https://pub.dev/packages/flutter_lints"><span class="skip-vale">flutter_lints</span></a> on dartanalyzer configuration files.<br />
