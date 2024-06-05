@@ -50,15 +50,10 @@ The table below lists all languages that Codacy supports and the corresponding t
   <tbody>
     <tr>
       <td>Apex</td>
-      <!--
       <td><a href="https://pmd.github.io/">PMD</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a></td>
-      -->
-      <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td>-</td>
-      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -77,9 +72,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
-          <!--
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
-          -->
           <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
@@ -188,7 +181,6 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
     </tr>
-    <!--
     <tr>
       <td>GitHub Actions</td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
@@ -199,7 +191,6 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
     </tr>
-    -->
     <tr>
       <td>Go</td>
       <td><a href="https://gitlab.com/opennota/check">aligncheck</a> <a href="#client-side"><sup>3</sup></a>,
@@ -229,9 +220,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>
-          <!--
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
-          -->
           <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
@@ -294,17 +283,11 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Kubernetes</td>
-      <!--
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
-          <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
-      -->
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
-      <td>-</td>
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
           <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
