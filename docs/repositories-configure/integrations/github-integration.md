@@ -81,6 +81,9 @@ Adds AI-enhanced comments, providing insights and ready-to-commit AI-generated f
 
 ## Generating automatic pull request summaries
 
+!!! info "This is a preview feature"
+    This is an upcoming Codacy feature. If you're interested, ask us for early access.
+
 Codacy can provide a clear, high-level summary of the code changes introduced by a pull request, based on the committed code.
 Codacy generates an overview of the changes in the pull request so that any reviewer can understand its intent and impact.
 
