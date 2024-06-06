@@ -40,7 +40,7 @@ To access the findings page with the corresponding filter applied, click on a nu
 
 ### Open findings distribution
 
-The **Open findings distribution** panel shows the relative distribution of open findings by severity or status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
+The **Open findings distribution** panel shows the relative distribution of open findings by scan kind, severity, or status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
 
 To select the desired distribution, use the drop-down in the top right-hand corner of the panel.
 
@@ -91,9 +91,9 @@ To access the findings page, access the [overview page](#dashboard) and click th
 
 ![Security and risk management findings page](images/security-risk-management-findings.png)
 
-When viewing the findings, you can update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, or **Security category** drop-downs above the list.
+When viewing the findings, you can update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, **Security category**, or **Scan type** drop-downs above the list.
 
-To find out more about a finding in the list, click its **Details** column to navigate to the finding details on the source platform.
+To find out more about a finding in the list, you can navigate to the finding details on the source platform by clicking its **Details** column. This column also offers a quick overview of each finding, including its title, the source platform, the security category, and related information, such as the repository name, Jira issue key, or penetration testing report URL.
 
 ![Security and risk management finding details](images/security-risk-management-finding-details.png)
 
@@ -161,7 +161,7 @@ Codacy closes a finding when it detects that the associated Jira issue is marked
 !!! note
     Penetration testing is available upon request and is provided by a third-party partner. See [how to request penetration testing for your organization](https://go.codacy.com/pen-testing-product).
 
-Codacy opens a new finding when penetration testing results are published by our partner.
+Codacy opens a new finding when penetration testing results are published by our partner.<!-- TODO TAROT-2669: clarify when these are closed -->
 
 ## Finding statuses {: id="item-statuses"}
 
@@ -445,3 +445,18 @@ Each Codacy issue reported by Security and risk management belongs to one of the
 | **Visibility**                     | Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.                                                                                  |
 | **XSS**                            | Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into trusted websites that are visited by the end users.                                                                                 |
 | **Other**                          | Other language-specific security issues.                                                                                                                                                                         |
+
+## Scan types
+
+Each finding detected in an organization's repository is also categorized by **Scan type**, indicating the specific source or method used to detect the finding. This information helps you understand the origin of the finding and the context in which the underlying issue was detected.
+
+The following table lists the available scan types and their descriptions:
+
+| Scan type                                   | Description                                                                                                               |
+|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
+| **Open-source dependencies**                | External libraries and packages with vulnerabilities or outdated versions.                                                |
+| **Exposed secrets**                         | Sensitive information, such as passwords or API keys, inadvertently included in the code.                                 |
+| **Infrastructure as code misconfiguration** | Configuration issues within infrastructure-as-code (IaC) files that could pose risks.                                     |
+| **Penetration testing**                     | Results from [penetration testing](#opening-and-closing-pen-testing-items) to find security vulnerabilities in your code. |
+| **CI/CD misconfigurations**                 | Errors or vulnerabilities in continuous integration and continuous deployment setups.                                     |
+| **Code scanning**                           | Other issues detected by Codacy's code analysis tools.                                                                    |
