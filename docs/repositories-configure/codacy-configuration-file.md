@@ -258,7 +258,7 @@ engines:
 You can use a Codacy configuration file to manage the languages that Codacy analyzes in your repository.
 
 !!! note
-    Codacy applies both language settings defined in the Codacy configuration file and any other language setting defined [on the Codacy UI](languages.md).
+    Codacy applies the language settings from the Codacy configuration file as well as any settings defined [in the Codacy UI](languages.md).
 
 ### Adding custom file extensions {: id="file-extensions"}
 
