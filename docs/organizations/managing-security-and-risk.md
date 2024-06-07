@@ -456,11 +456,6 @@ The following table lists the available scan types and their descriptions:
 |---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
 | **Code Scanning**                           | Analysis of source code for vulnerabilities without execution. Known as Static Application Security Testing (**SAST**).                             |
 | **Software Composition Analysis**           | Analysis of external libraries and packages for vulnerabilities or outdated versions. Known as Software Composition Analysis (**SCA**).             |
-| **Container Software Composition Analysis** | Analysis of container dependencies to identify vulnerabilities in the containers used in projects.                                                  |
 | **Exposed Secrets**                         | Detection of sensitive information, such as passwords or API keys, inadvertently included in the code.                                              |
 | **Infrastructure as Code**                  | Detection of configuration issues within infrastructure-as-code (IaC) files that could pose risks.                                                  |
 | **Penetration Testing**                     | Results from [penetration testing](#opening-and-closing-pen-testing-items) to find security vulnerabilities in running code.                        |
-| **CI/CD**                                   | Detection of errors or vulnerabilities in continuous integration and continuous deployment setups.                                                  |
-| **License Compliance**                      | Analysis of license files to ensure compliance with organizational policies.                                                                        |
-| **App Scanning**                            | Simulated attacks on live applications to find vulnerabilities. Known as Dynamic Application Security Testing (**DAST**).                           |
-| **Cloud Security**                          | Examination of live cloud environments to detect risks in infrastructure and configurations. Known as Cloud Security Posture Management (**CSPM**). |
