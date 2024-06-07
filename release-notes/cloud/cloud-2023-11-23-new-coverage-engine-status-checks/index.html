@@ -11,7 +11,7 @@
         <meta name="description" content="As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we&#x27;ve been working on a new Coverage engine and started its deployment on November 23rd, 2023. The rollout to use the new engine across Codacy will be phased across several months and will gradually impact the coverage data you see on the Git provider, UI, and API.">
       
       
-        <meta http-equiv="last-modified" content="2024-02-19 16:04:14">
+        <meta http-equiv="last-modified" content="2024-06-07 08:17:50">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/">
@@ -4178,7 +4178,7 @@
       <td rowspan="2">Git providers</td>
       <td><a href="#status-checks">Git provider status checks</a></td>
       <td>Live</td>
-      <td>The new Coverage engine now sends coverage data to your Git provider.<br>Since February 14th, 2024, the Coverage data sent by the old engine is marked <strong>deprecated</strong> and is shown alongside the data from the new Coverage engine.</td>
+      <td>The new Coverage engine now sends coverage data to your Git provider.<br>Codacy stopped sending coverage checks from the old Coverage engine on June 5th, 2024.</td>
     </tr>
     <tr>
       <td><a href="#coverage-summaries">GitHub coverage summaries</a></td>
@@ -4212,10 +4212,10 @@
 <div class="admonition info">
 <p class="admonition-title">This section applies to the repositories for which you set Codacy to send pull request coverage status data to your Git provider (see how on <a href="../../../repositories-configure/integrations/github-integration/#status-checks">GitHub</a>, <a href="../../../repositories-configure/integrations/gitlab-integration/#pull-request-status">GitLab</a>, and <a href="../../../repositories-configure/integrations/bitbucket-integration/#pull-request-status">Bitbucket</a>).</p>
 </div>
-<p>On November 23rd 2023, the new Coverage engine started sending coverage data to your Git provider. As a consequence of this update, you can now see two additional checks on your pull requests, marked <strong>[beta]</strong>, alongside the preexisting <strong>Codacy Coverage Report</strong> check.</p>
+<p>On June 5th 2024, Codacy stopped sending coverage checks from the old Coverage engine. As a consequence of this, you will only see the new checks from the new Coverage engine, <strong>Codacy Diff Coverage</strong> and <strong>Codacy Coverage Variation</strong>, and will no longer see the old <strong>Codacy Coverage Report</strong> check on your pull requests.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>GitHub only: If you are using the Codacy Coverage Report status check to block merging pull requests, please <a href="#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github">update your GitHub setup</a> and avoid disruptions in the future.</p>
+<p>GitHub only: If you are using the Codacy Coverage Report status check to block merging pull requests, please <a href="#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github">update your GitHub setup</a> to fix any disruptions.</p>
 </div>
 <p>This is what the new checks look like on each provider:</p>
 <ul>
@@ -4232,8 +4232,7 @@
 <p><img alt="New Coverage status checks Bitbucket" src="../../images/ala-695-status-checks-bitbucket.png" /></p>
 </li>
 </ul>
-<h3 id="deprecation-and-removal-of-the-old-coverage-engine-status-checks">Deprecation and removal of the old Coverage engine status checks<a class="headerlink" href="#deprecation-and-removal-of-the-old-coverage-engine-status-checks" title="Permanent link">#</a></h3>
-<p>Currently, Codacy sends coverage data to your Git provider from both the old and new Coverage engines. We will deprecate and later remove the old status checks on the following dates:</p>
+<h3 id="deprecation-and-removal-calendar-for-the-old-coverage-engine-status-checks">Deprecation and removal calendar for the old Coverage engine status checks<a class="headerlink" href="#deprecation-and-removal-calendar-for-the-old-coverage-engine-status-checks" title="Permanent link">#</a></h3>
 <table>
   <thead>
     <th>Date</th>
@@ -4459,7 +4458,7 @@ git<span class="w"> </span>push
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 19, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 7, 2024</span>
     
   </small>
 </div>
