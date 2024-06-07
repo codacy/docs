@@ -454,7 +454,7 @@ The following table lists the available scan types and their descriptions:
 
 | Scan type                         | Description                                                                                                                  |
 |-----------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| **Code Scanning**                 | Analysis of source code for vulnerabilities without execution. Known as Static Application Security Testing (SAST).          |
+| **Code Scanning**                 | Analysis of source code for vulnerabilities without execution. Also known as Static Application Security Testing (SAST).     |
 | **Software Composition Analysis** | Analysis of external libraries and packages for vulnerabilities or outdated versions.                                        |
 | **Exposed Secrets**               | Detection of sensitive information, such as passwords or API keys, inadvertently included in the code.                       |
 | **Infrastructure as Code**        | Detection of configuration issues within infrastructure-as-code (IaC) files that could pose risks.                           |
