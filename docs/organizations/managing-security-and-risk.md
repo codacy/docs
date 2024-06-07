@@ -93,9 +93,9 @@ To access the findings page, access the [overview page](#dashboard) and click th
 
 When viewing the findings, you can update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, **Security category**, or **Scan type** drop-downs above the list.
 
-To find out more about a finding in the list, you can navigate to the finding details on the source platform by clicking its **Details** column. This column also offers a quick overview of each finding, including its title, the source platform, the security category, and related information such as the repository name, Jira issue key, or penetration testing report URL.
+To find out more about a finding in the list, you can navigate to the finding details on the source platform by clicking its **Details** column. This column also offers a quick overview of each finding, including its title, [source platform](#opening-and-closing-items), [scan type](#scan-types), [security category](#supported-security-categories), and related information such as the repository name, Jira issue key, or penetration testing report URL.
 
-![Security and risk management finding details](images/security-risk-management-finding-details.png)
+![Security and risk management finding details](images/security-risk-management-finding-details.png)<!-- TODO TAROT-2669 screenshot -->
 
 ## Sharing a filtered view of findings {: id="sharing-filtered-view"}
 
@@ -452,11 +452,15 @@ Each finding detected in an organization's repository is also categorized by **S
 
 The following table lists the available scan types and their descriptions:
 
-| Scan type                                   | Description                                                                                                               |
-|---------------------------------------------|---------------------------------------------------------------------------------------------------------------------------|
-| **Open-source dependencies**                | External libraries and packages with vulnerabilities or outdated versions.                                                |
-| **Exposed secrets**                         | Sensitive information, such as passwords or API keys, inadvertently included in the code.                                 |
-| **Infrastructure as code misconfiguration** | Configuration issues within infrastructure-as-code (IaC) files that could pose risks.                                     |
-| **Penetration testing**                     | Results from [penetration testing](#opening-and-closing-pen-testing-items) to find security vulnerabilities in your code. |
-| **CI/CD misconfigurations**                 | Errors or vulnerabilities in continuous integration and continuous deployment setups.                                     |
-| **Code scanning**                           | Other issues detected by Codacy's code analysis tools.                                                                    |
+| Scan type                                   | Description                                                                                                                                         |
+|---------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Code Scanning**                           | Analysis of source code for vulnerabilities without execution. Known as Static Application Security Testing (**SAST**).                             |
+| **Software Composition Analysis**           | Analysis of external libraries and packages for vulnerabilities or outdated versions. Known as Software Composition Analysis (**SCA**).             |
+| **Container Software Composition Analysis** | Analysis of container dependencies to identify vulnerabilities in the containers used in projects.                                                  |
+| **Exposed Secrets**                         | Detection of sensitive information, such as passwords or API keys, inadvertently included in the code.                                              |
+| **Infrastructure as Code**                  | Detection of configuration issues within infrastructure-as-code (IaC) files that could pose risks.                                                  |
+| **Penetration Testing**                     | Results from [penetration testing](#opening-and-closing-pen-testing-items) to find security vulnerabilities in running code.                        |
+| **CI/CD**                                   | Detection of errors or vulnerabilities in continuous integration and continuous deployment setups.                                                  |
+| **License Compliance**                      | Analysis of license files to ensure compliance with organizational policies.                                                                        |
+| **App Scanning**                            | Simulated attacks on live applications to find vulnerabilities. Known as Dynamic Application Security Testing (**DAST**).                           |
+| **Cloud Security**                          | Examination of live cloud environments to detect risks in infrastructure and configurations. Known as Cloud Security Posture Management (**CSPM**). |
