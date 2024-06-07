@@ -8,13 +8,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
+        <meta name="description" content="Configure the languages that Codacy analyzes in your repository. You can configure Codacy to include unrecognized file extensions, or disable the analysis of specific languages.">
       
       
-        <meta http-equiv="last-modified" content="2024-06-04 12:43:29">
+        <meta http-equiv="last-modified" content="2024-06-07 14:19:27">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
+        <link rel="canonical" href="https://docs.codacy.com/repositories-configure/languages/">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Managing security and risk - Codacy docs</title>
+        <title>Configuring languages - Codacy docs</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#managing-security-and-risk" class="md-skip">
+        <a href="#configuring-languages" class="md-skip">
           Skip to content
         </a>
       
@@ -480,10 +480,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
     
     <label class="md-nav__link" for="nav-5">
       Configuring your repositories
@@ -507,7 +509,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/configuring-code-patterns/" title="Configuring code patterns" class="md-nav__link">
+    <a href="../configuring-code-patterns/" title="Configuring code patterns" class="md-nav__link">
       Configuring code patterns
     </a>
   </li>
@@ -519,7 +521,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/managing-branches/" title="Managing branches" class="md-nav__link">
+    <a href="../managing-branches/" title="Managing branches" class="md-nav__link">
       Managing branches
     </a>
   </li>
@@ -556,7 +558,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/github-integration/" title="GitHub integration" class="md-nav__link">
+    <a href="../integrations/github-integration/" title="GitHub integration" class="md-nav__link">
       GitHub integration
     </a>
   </li>
@@ -568,7 +570,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/gitlab-integration/" title="GitLab integration" class="md-nav__link">
+    <a href="../integrations/gitlab-integration/" title="GitLab integration" class="md-nav__link">
       GitLab integration
     </a>
   </li>
@@ -580,7 +582,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/bitbucket-integration/" title="Bitbucket integration" class="md-nav__link">
+    <a href="../integrations/bitbucket-integration/" title="Bitbucket integration" class="md-nav__link">
       Bitbucket integration
     </a>
   </li>
@@ -592,7 +594,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/post-commit-hooks/" title="Post-commit hooks" class="md-nav__link">
+    <a href="../integrations/post-commit-hooks/" title="Post-commit hooks" class="md-nav__link">
       Post-commit hooks
     </a>
   </li>
@@ -609,7 +611,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/ignoring-files/" title="Ignoring files" class="md-nav__link">
+    <a href="../ignoring-files/" title="Ignoring files" class="md-nav__link">
       Ignoring files
     </a>
   </li>
@@ -619,11 +621,57 @@
           
           
 
+  
 
-  <li class="md-nav__item">
-    <a href="../../repositories-configure/languages/" title="Configuring languages" class="md-nav__link">
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Configuring languages
+      </label>
+    
+    <a href="./" title="Configuring languages" class="md-nav__link md-nav__link--active">
       Configuring languages
     </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#configuring-file-extensions" class="md-nav__link">
+    Configuring file extensions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#disable-language" class="md-nav__link">
+    Disabling analysis of a language
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
   </li>
 
         
@@ -633,7 +681,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/adjusting-quality-gates/" title="Adjusting quality gates" class="md-nav__link">
+    <a href="../adjusting-quality-gates/" title="Adjusting quality gates" class="md-nav__link">
       Adjusting quality gates
     </a>
   </li>
@@ -645,7 +693,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/adjusting-quality-goals/" title="Adjusting quality goals" class="md-nav__link">
+    <a href="../adjusting-quality-goals/" title="Adjusting quality goals" class="md-nav__link">
       Adjusting quality goals
     </a>
   </li>
@@ -760,7 +808,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/local-analysis/client-side-tools/" title="Client-side tools" class="md-nav__link">
+    <a href="../local-analysis/client-side-tools/" title="Client-side tools" class="md-nav__link">
       Client-side tools
     </a>
   </li>
@@ -772,7 +820,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/local-analysis/running-aligncheck/" title="Running aligncheck" class="md-nav__link">
+    <a href="../local-analysis/running-aligncheck/" title="Running aligncheck" class="md-nav__link">
       Running aligncheck
     </a>
   </li>
@@ -784,7 +832,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/local-analysis/running-deadcode/" title="Running deadcode" class="md-nav__link">
+    <a href="../local-analysis/running-deadcode/" title="Running deadcode" class="md-nav__link">
       Running deadcode
     </a>
   </li>
@@ -796,7 +844,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/local-analysis/running-spotbugs/" title="Running SpotBugs" class="md-nav__link">
+    <a href="../local-analysis/running-spotbugs/" title="Running SpotBugs" class="md-nav__link">
       Running SpotBugs
     </a>
   </li>
@@ -813,7 +861,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/using-submodules/" title="Using submodules" class="md-nav__link">
+    <a href="../using-submodules/" title="Using submodules" class="md-nav__link">
       Using submodules
     </a>
   </li>
@@ -825,7 +873,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/codacy-configuration-file/" title="Codacy configuration file" class="md-nav__link">
+    <a href="../codacy-configuration-file/" title="Codacy configuration file" class="md-nav__link">
       Codacy configuration file
     </a>
   </li>
@@ -837,7 +885,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/removing-your-repository/" title="Removing your repository" class="md-nav__link">
+    <a href="../removing-your-repository/" title="Removing your repository" class="md-nav__link">
       Removing your repository
     </a>
   </li>
@@ -852,12 +900,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
     
     <label class="md-nav__link" for="nav-6">
       Organizations
@@ -881,7 +927,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../what-are-organizations/" title="What are organizations" class="md-nav__link">
+    <a href="../../organizations/what-are-organizations/" title="What are organizations" class="md-nav__link">
       What are organizations
     </a>
   </li>
@@ -893,7 +939,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../organization-overview/" title="Organization overview" class="md-nav__link">
+    <a href="../../organizations/organization-overview/" title="Organization overview" class="md-nav__link">
       Organization overview
     </a>
   </li>
@@ -905,7 +951,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../managing-repositories/" title="Managing repositories" class="md-nav__link">
+    <a href="../../organizations/managing-repositories/" title="Managing repositories" class="md-nav__link">
       Managing repositories
     </a>
   </li>
@@ -917,7 +963,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../using-gate-policies/" title="Using gate policies" class="md-nav__link">
+    <a href="../../organizations/using-gate-policies/" title="Using gate policies" class="md-nav__link">
       Using gate policies
     </a>
   </li>
@@ -929,7 +975,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../using-coding-standards/" title="Using coding standards" class="md-nav__link">
+    <a href="../../organizations/using-coding-standards/" title="Using coding standards" class="md-nav__link">
       Using coding standards
     </a>
   </li>
@@ -966,7 +1012,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../integrations/default-git-provider-integration-settings/" title="Default Git provider integration settings" class="md-nav__link">
+    <a href="../../organizations/integrations/default-git-provider-integration-settings/" title="Default Git provider integration settings" class="md-nav__link">
       Default Git provider integration settings
     </a>
   </li>
@@ -978,7 +1024,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../integrations/slack-integration/" title="Slack integration for Security issues" class="md-nav__link">
+    <a href="../../organizations/integrations/slack-integration/" title="Slack integration for Security issues" class="md-nav__link">
       Slack integration for Security issues
     </a>
   </li>
@@ -990,7 +1036,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../integrations/jira-integration/" title="Jira integration for Security and risk management" class="md-nav__link">
+    <a href="../../organizations/integrations/jira-integration/" title="Jira integration for Security and risk management" class="md-nav__link">
       Jira integration for Security and risk management
     </a>
   </li>
@@ -1005,113 +1051,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Managing security and risk
-      </label>
-    
-    <a href="./" title="Managing security and risk" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../organizations/managing-security-and-risk/" title="Managing security and risk" class="md-nav__link">
       Managing security and risk
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#dashboard" class="md-nav__link">
-    Overview
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#item-list" class="md-nav__link">
-    Findings
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sharing-filtered-view" class="md-nav__link">
-    Sharing a filtered view of findings
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#exporting-the-security-item-list" class="md-nav__link">
-    Exporting findings
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#reviewing-settings" class="md-nav__link">
-    Reviewing severity rules and integration settings
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#opening-and-closing-items" class="md-nav__link">
-    How Codacy manages findings
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#item-statuses" class="md-nav__link">
-    Finding statuses
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#item-severities-and-deadlines" class="md-nav__link">
-    Finding severities and deadlines
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#languages-checked-for-security-issues" class="md-nav__link">
-    Languages checked for security issues
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#supported-security-categories" class="md-nav__link">
-    Supported security categories
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1121,7 +1065,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../managing-people/" title="Managing people" class="md-nav__link">
+    <a href="../../organizations/managing-people/" title="Managing people" class="md-nav__link">
       Managing people
     </a>
   </li>
@@ -1133,7 +1077,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../roles-and-permissions-for-organizations/" title="Roles and permissions for organizations" class="md-nav__link">
+    <a href="../../organizations/roles-and-permissions-for-organizations/" title="Roles and permissions for organizations" class="md-nav__link">
       Roles and permissions for organizations
     </a>
   </li>
@@ -1145,7 +1089,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../changing-your-plan-and-billing/" title="Changing your plan and billing" class="md-nav__link">
+    <a href="../../organizations/changing-your-plan-and-billing/" title="Changing your plan and billing" class="md-nav__link">
       Changing your plan and billing
     </a>
   </li>
@@ -4203,484 +4147,60 @@
                   
                 
                 
-                <h1 id="managing-security-and-risk">Managing security and risk<a class="headerlink" href="#managing-security-and-risk" title="Permanent link">#</a></h1>
-<p>The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your <a href="../integrations/jira-integration/">connected Jira instance</a>, or <span class="skip-vale">as a result of</span> <a href="https://go.codacy.com/pen-testing-product">penetration testing</a>.</p>
-<p>Under Security and risk management, you can find the following pages to help you monitor the security of your repositories:</p>
-<ul>
-<li><a href="#dashboard">Overview</a></li>
-<li><a href="#item-list">Findings</a></li>
-</ul>
-<p>In addition, on these pages, you can <a href="#sharing-filtered-view">share filtered views of findings</a>, <a href="#exporting-the-security-item-list">export findings as a CSV file</a>, and <a href="#reviewing-settings">review severity rules and integration settings</a></p>
-<h2 id="dashboard">Overview<a class="headerlink" href="#dashboard" title="Permanent link">#</a></h2>
-<p>The <strong>Security and risk management overview</strong> page provides a high-level view of the security posture of your organization, including the number of open findings, the distribution of open findings by severity, the history of finding resolution, and a breakdown of the most high-risk repositories and most detected security categories.</p>
-<p>Use this page to assess your organization's security posture and its progress over time, identify areas for improvement, and share findings with stakeholders.</p>
-<p>To access the overview page, select an organization from the top navigation bar and select <strong>Security and risk</strong> on the left navigation sidebar.</p>
-<p><img alt="Security and risk management overview page" src="../images/security-risk-management-overview.png" /></p>
-<p>The overview page includes six panels:</p>
-<ul>
-<li><a href="#open-findings-overview">Open findings overview</a></li>
-<li><a href="#open-findings-distribution">Open findings distribution</a></li>
-<li><a href="#open-findings-history">Open findings history</a></li>
-<li><a href="#activity-history">Activity history</a></li>
-<li><a href="#top-10-high-risk-repositories">Top 10 high-risk repositories</a></li>
-<li><a href="#top-10-common-security-categories">Top 10 common security categories</a></li>
-</ul>
-<p>To limit the information displayed in each panel to a specific set of repositories, use the filter drop-down above the main area.</p>
-<h3 id="open-findings-overview">Open findings overview<a class="headerlink" href="#open-findings-overview" title="Permanent link">#</a></h3>
-<p>The <strong>Open findings overview</strong> panel displays the total number of open security findings and the number of findings of each severity, helping you quickly assess the overall security posture of your organization and <span class="skip-vale">quickly</span> review findings that are critical or overdue.</p>
-<p>To access the findings page with the corresponding filter applied, click on a number.</p>
-<p><img alt="Security and risk management open findings overview panel" src="../images/security-risk-management-overview-open.png" /></p>
-<h3 id="open-findings-distribution">Open findings distribution<a class="headerlink" href="#open-findings-distribution" title="Permanent link">#</a></h3>
-<p>The <strong>Open findings distribution</strong> panel shows the relative distribution of open findings by severity or status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.</p>
-<p>To select the desired distribution, use the drop-down in the top right-hand corner of the panel.</p>
-<p>To access the findings page with the corresponding filter applied, click on a number.</p>
-<p><img alt="Security and risk management open findings distribution panel" src="../images/security-risk-management-overview-distribution.png" /></p>
-<h3 id="open-findings-history">Open findings history<a class="headerlink" href="#open-findings-history" title="Permanent link">#</a></h3>
-<p>The <strong>Open findings history</strong> graph shows the open findings trends over the past three months, grouped by week and severity. It details the progression of your organization's risk and security posture over time and can, for example, help you understand if the right issues are being addressed.</p>
-<p>For a detailed view of the distribution on a specific week, hover over the graph.</p>
-<p><img alt="Security and risk management open findings history panel" src="../images/security-risk-management-overview-history-open.png" /></p>
-<h3 id="activity-history">Activity history<a class="headerlink" href="#activity-history" title="Permanent link">#</a></h3>
-<p>The <strong>Activity history</strong> graph shows weekly counts of open and closed findings over the past three months, overlaid on the overall open findings trend. It complements the <strong>Open findings history</strong> graph with more information, such as the volume of findings addressed each week and a visual representation of the new/closed ratio.</p>
-<p>To filter the graph by finding severity, use the drop-down in the top right-hand corner of the panel.</p>
-<p>For a detailed view of the counts on a specific week, hover over the graph.</p>
-<p><img alt="Security and risk management activity history panel" src="../images/security-risk-management-overview-history-activity.png" /></p>
-<h3 id="top-10-high-risk-repositories">Top 10 high-risk repositories<a class="headerlink" href="#top-10-high-risk-repositories" title="Permanent link">#</a></h3>
-<p>The <strong>Top 10 high-risk repositories</strong> list shows the repositories with the highest number of open findings, ordered by severity.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This panel may list fewer than ten repositories if there are fewer than ten repositories with open findings in the organization or if fewer than ten repositories are selected in the dropdown <strong>Repository</strong> filter.</p>
-</div>
-<p><img alt="Security and risk management high risk repositories panel" src="../images/security-risk-management-overview-top-risk.png" /></p>
-<h3 id="top-10-common-security-categories">Top 10 common security categories<a class="headerlink" href="#top-10-common-security-categories" title="Permanent link">#</a></h3>
-<p>The <strong>Top 10 common security categories</strong> list shows the most common security categories of open findings, ordered by count.</p>
-<p>To access the findings page with the corresponding filter applied, click on a category.</p>
-<p><img alt="Security and risk management top categories panel" src="../images/security-risk-management-overview-top-categories.png" /></p>
-<h2 id="item-list">Findings<a class="headerlink" href="#item-list" title="Permanent link">#</a></h2>
-<p>The <strong>Security and risk management findings</strong> page displays a filtered list of findings. By default, this list is sorted by status, and you can click the <strong>First detected</strong> column name to sort the findings by the detection date. Use this page to review and prioritize findings and track the progress of your security efforts.</p>
-<p>To access the findings page, access the <a href="#dashboard">overview page</a> and click the <strong>Findings</strong> tab.</p>
-<p><img alt="Security and risk management findings page" src="../images/security-risk-management-findings.png" /></p>
-<p>When viewing the findings, you can update the filtering criteria by clicking the <strong>Severity</strong>, <strong>Status</strong>, <strong>Repository</strong>, or <strong>Security category</strong> drop-downs above the list.</p>
-<p>To find out more about a finding in the list, click its <strong>Details</strong> column to navigate to the finding details on the source platform.</p>
-<p><img alt="Security and risk management finding details" src="../images/security-risk-management-finding-details.png" /></p>
-<h2 id="sharing-filtered-view">Sharing a filtered view of findings<a class="headerlink" href="#sharing-filtered-view" title="Permanent link">#</a></h2>
-<p>To share the current view of the overview or findings page, click the <strong>Copy URL</strong> button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.</p>
-<h2 id="exporting-the-security-item-list">Exporting findings<a class="headerlink" href="#exporting-the-security-item-list" title="Permanent link">#</a></h2>
+                <h1 id="configuring-languages">Configuring languages<a class="headerlink" href="#configuring-languages" title="Permanent link">#</a></h1>
 <div class="admonition info">
-<p class="admonition-title">This feature is available only to organization admins and organization managers</p>
+<p class="admonition-title">Organization admins can <a href="../../organizations/roles-and-permissions-for-organizations/#change-analysis-configuration">manage access to this feature</a></p>
 </div>
-<p>To export a list of findings as a CSV file, click the options menu in the top right-hand corner of the page and select <strong>Export findings (.csv)</strong>. The exported list always includes all findings, ignoring any applied filters.</p>
-<h2 id="reviewing-settings">Reviewing severity rules and integration settings<a class="headerlink" href="#reviewing-settings" title="Permanent link">#</a></h2>
-<p>To <a href="#item-severities-and-deadlines">review the severity assignment rules</a> or manage the integration with <a href="../integrations/jira-integration/">Jira</a> or <a href="../integrations/slack-integration/">Slack</a>, click the options menu in the top right-hand corner of the page and select respectively <strong>See severity rules</strong> or <strong>View integrations</strong>.</p>
-<h2 id="opening-and-closing-items">How Codacy manages findings<a class="headerlink" href="#opening-and-closing-items" title="Permanent link">#</a></h2>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>To open and close findings, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.</p>
-</div>
-<p>Codacy opens a new finding whenever a source platform detects a new security issue. The new finding is automatically assigned a severity and a status:</p>
+<p>Codacy automatically detects and analyzes languages in your repository based on a list of supported file extensions. On the repository <strong>Settings</strong>, tab <strong>Languages</strong>, you can see the list of languages that Codacy detected and will include in the next analysis.</p>
+<p>By default, the analysis is enabled for all languages that Codacy detects in you repository. You can adapt this configuration to your needs as follows:</p>
 <ul>
-<li>The priority of the issue on the source platform sets the <a href="#item-severities-and-deadlines">severity of the finding</a>. In turn, the severity of the finding defines a deadline to close the finding.</li>
-<li>The time to the deadline sets the <a href="#item-statuses">status of the finding</a>. The finding then moves through different statuses as the deadline is approached, met, or missed.</li>
+<li><a href="#configuring-file-extensions">Configure Codacy to include unrecognized extensions</a></li>
+<li><a href="#disable-language">Disable the analysis of specific languages</a></li>
 </ul>
-<p>Codacy closes a finding when the source platform stops detecting the associated security issue.</p>
-<p>The following section details when Codacy opens and closes findings for each supported platform.</p>
-<h3 id="opening-and-closing-codacy-items">How Codacy manages findings detected on Git repositories<a class="headerlink" href="#opening-and-closing-codacy-items" title="Permanent link">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>To make sure that Codacy detects security issues correctly:</p>
-<ul>
-<li><a href="../../repositories-configure/configuring-code-patterns/">Enable code patterns</a> belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.</li>
-<li>Alternatively, <a href="../using-coding-standards/">apply a coding standard</a> that includes patterns belonging to the Security category.</li>
-<li>Confirm that the latest <a href="../../repositories/commits/">commits</a> to the default branches of your repositories are analyzed.</li>
-</ul>
+<p>Codacy applies the language settings defined in the Codacy UI as well as any settings defined using a <a href="../codacy-configuration-file/#languages">Codacy configuration file</a>.</p>
 </div>
-<p>Codacy opens a new finding when it detects a new security issue on the default branch of a repository.</p>
-<p>Codacy closes a finding in either of the following cases:</p>
-<ul>
-<li>Codacy detects that the associated issue isn't present in the most recent analyzed commit and therefore is fixed</li>
-<li>You <a href="../../repositories/issues/#ignoring-and-managing-issues">ignore the associated issue</a></li>
-<li>You <a href="../../repositories-configure/configuring-code-patterns/">disable the tool</a> that found the associated issue</li>
-</ul>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Deleting a repository deletes all open findings belonging to that repository.</p>
-</div>
-<h3 id="opening-and-closing-jira-items">How Codacy manages findings detected on Jira<a class="headerlink" href="#opening-and-closing-jira-items" title="Permanent link">#</a></h3>
+<h2 id="configuring-file-extensions">Configuring file extensions<a class="headerlink" href="#configuring-file-extensions" title="Permanent link">#</a></h2>
+<p>If your repository contains source files with extensions not supported by Codacy, associate these extensions with their respective languages to ensure Codacy analyzes them in the next analysis:</p>
+<ol>
+<li>
+<p>Go to your repository's <strong>Settings</strong>, <strong>Languages</strong>.</p>
+</li>
+<li>
+<p>Add the extensions you want to be recognized for each language.</p>
+</li>
+<li>
+<p>Click <strong>Save changes</strong> to update your file extension settings.</p>
+<p><img alt="Configuring file extensions" src="../images/file-extensions.png" /></p>
+<p>
+The updated settings will be used on the next analysis, but you can click <strong>reanalyze the latest commit of your branches now</strong> on the notification that appears at the bottom of the page to trigger an analysis immediately.</p>
+<p><img alt="Analyze now" src="../../assets/images/file-extensions-analyze.png" />
+</p>
+</li>
+</ol>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<ul>
-<li>For Codacy to detect Jira issues, you must <a href="../integrations/jira-integration/">integrate Jira with Security and risk management</a>.</li>
-<li>Codacy retrieves updates from Jira once a day. If an issue is opened and closed on the same day, Codacy may not detect it.</li>
-<li>To make sure that Codacy detects Jira issues correctly, assign the <strong>security</strong> label when creating the issue or immediately after.</li>
-</ul>
+<p>Currently, the <a href="https://github.com/codacy/codacy-semgrep">Semgrep</a> static analysis tool doesn't support custom file extensions.</p>
 </div>
-<p>Codacy opens a new finding when it detects a new Jira issue with a <strong>security</strong> label (case-insensitive).</p>
-<p>Codacy closes a finding when it detects that the associated Jira issue is marked as Closed.</p>
-<h3 id="opening-and-closing-pen-testing-items">How Codacy manages findings detected during penetration testing<a class="headerlink" href="#opening-and-closing-pen-testing-items" title="Permanent link">#</a></h3>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Penetration testing is available upon request and is provided by a third-party partner. See <a href="https://go.codacy.com/pen-testing-product">how to request penetration testing for your organization</a>.</p>
-</div>
-<p>Codacy opens a new finding when penetration testing results are published by our partner.</p>
-<h2 id="item-statuses">Finding statuses<a class="headerlink" href="#item-statuses" title="Permanent link">#</a></h2>
-<p>The following table describes how finding statuses map to deadlines:</p>
-<table>
-    <thead>
-        <tr>
-            <th>Status category</th>
-            <th>Finding status</th>
-            <th>Deadline</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td rowspan="3">Open</td>
-            <td>Overdue</td>
-            <td>The deadline has been missed</td>
-        </tr>
-        <tr>
-            <td>Due soon</td>
-            <td>Fewer than 15 days to the deadline</td>
-        </tr>
-        <tr>
-            <td>On track</td>
-            <td>15 days or more to the deadline</td>
-        </tr>
-        <tr>
-            <td rowspan="2">Closed</td>
-            <td>Closed late</td>
-            <td>Closed after the deadline</td>
-        </tr>
-        <tr>
-            <td>Closed on time</td>
-            <td>Closed before the deadline</td>
-        </tr>
-    </tbody>
-</table>
-
-<h2 id="item-severities-and-deadlines">Finding severities and deadlines<a class="headerlink" href="#item-severities-and-deadlines" title="Permanent link">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Currently, Codacy doesn't support customizing the severity rules for security findings.</p>
-</div>
-<p>The following table defines finding severities and days to fix the associated security issue, based on the importance of the underlying issue:</p>
-<table>
-<thead>
-<tr>
-<th>Finding<br/>severity</th>
-<th><br/>Days to fix</th>
-<th>Underlying Codacy<br/>issue severity</th>
-<th>Underlying Jira<br/>issue priority <sup>1</sup></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Critical</td>
-<td>30</td>
-<td>Critical</td>
-<td>Highest</td>
-</tr>
-<tr>
-<td>High</td>
-<td>60</td>
-<td>-</td>
-<td>High</td>
-</tr>
-<tr>
-<td>Medium</td>
-<td>90</td>
-<td>Medium</td>
-<td>Medium</td>
-</tr>
-<tr>
-<td>Low</td>
-<td>120</td>
-<td>Minor</td>
-<td>Low and other/custom</td>
-</tr>
-</tbody>
-</table>
-<p><small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small></p>
-<h2 id="languages-checked-for-security-issues">Languages checked for security issues<a class="headerlink" href="#languages-checked-for-security-issues" title="Permanent link">#</a></h2>
-<p>Security and risk management supports checking the languages and infrastructure-as-code platforms below for any Codacy security issues reported by the corresponding tools:</p>
-<table>
-  <thead>
-    <tr>
-      <th>Language</th>
-      <th>Tools that report security issues</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Apex</td>
-      <td><a href="https://pmd.github.io/">PMD</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-    </tr>
-    <tr>
-      <td>AWS CloudFormation</td>
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
-          <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>3</sup></a>,
-          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
-          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>C#</td>
-      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>C++</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>3</sup></a>,
-          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
-          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>Dart</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>Dockerfile</td>
-      <td><a href="https://github.com/hadolint/hadolint">Hadolint</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>Elixir</td>
-      <td><a href="https://github.com/rrrene/credo">Credo</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>GitHub Actions</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-    </tr>
-    <tr>
-      <td>Go</td>
-      <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"> <sup>3</sup></a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>Groovy</td>
-      <td><a href="https://codenarc.github.io/CodeNarc/">CodeNarc</a></td>
-    </tr>
-    <tr>
-      <td>Helm</td>
-      <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
-    </tr>
-    <tr>
-      <td>Java</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"> <sup>3</sup></a><a href="#spotbugs-plugin"> <sup>4</sup></a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>JavaScript</td>
-      <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>5</sup></a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>JSON</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>Kotlin</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-    </tr>
-    <tr>
-      <td>Kubernetes</td>
-      <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
-    </tr>
-    <tr>
-      <td>Objective-C</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>3</sup></a></td>
-    </tr>
-    <tr>
-      <td>PHP</td>
-      <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
-          <a href="https://phpmd.org/">PHP Mess Detector</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>PowerShell</td>
-      <td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
-    </tr>
-    <tr>
-      <td>Python</td>
-      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
-          <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>Ruby<a href="#ruby-31"> <sup>6</sup></a></td>
-      <td><a href="https://brakemanscanner.org/">Brakeman</a>,
-          <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>Rust</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>Scala</td>
-      <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"> <sup>3</sup></a><a href="#spotbugs-plugin"> <sup>4</sup></a></td>
-    </tr>
-    <tr>
-      <td>Swift</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-    </tr>
-    <tr>
-      <td>Shell</td>
-      <td><a href="https://www.shellcheck.net/">ShellCheck</a>
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-    </tr>
-    <tr>
-      <td>Terraform</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>Transact-SQL</td>
-      <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
-    </tr>
-    <tr>
-      <td>TypeScript</td>
-      <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>5</sup></a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-    </tr>
-    <tr>
-      <td>Visual Basic</td>
-      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a></td>
-    </tr>
-  </tbody>
-</table>
-
-<p><sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for <a href="https://semgrep.dev/pricing/">Semgrep Pro</a>.<br />
-<sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.<br />
-<sup><span id="client-side">3</span></sup>: Supported as a <a href="../../repositories-configure/local-analysis/client-side-tools/">client-side tool</a>.<br />
-<sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin <a href="https://find-sec-bugs.github.io/">Find Security Bugs</a>.<br />
-<sup><span id="eslint-plugin">5</span></sup>: Includes the plugins <a href="https://www.npmjs.com/package/eslint-plugin-no-unsanitized">no-unsanitized</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security">security</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security-node">security-node</a>, and <a href="https://www.npmjs.com/package/eslint-plugin-xss">xss</a>.<br />
-<sup><span id="ruby-31">6</span></sup>: Currently, Codacy doesn't support any static code analysis tool for <a href="https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/">Ruby 3.1</a>.  </p>
-<h2 id="supported-security-categories">Supported security categories<a class="headerlink" href="#supported-security-categories" title="Permanent link">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Due to a recent update, some issues may be temporarily assigned the <strong>Not yet categorized</strong> category. To categorize these issues, you can <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/#reanalyzing-a-branch">reanalyze the default branch of the relevant repository</a>. For a list of repositories that have issues with this category, use the <strong>Security category</strong> filter on the <a href="#item-list">Findings</a> page.</p>
-</div>
-<p>Each Codacy issue reported by Security and risk management belongs to one of the following security categories:</p>
-<table>
-<thead>
-<tr>
-<th>Security category</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Android</strong></td>
-<td>Android-specific security issues.</td>
-</tr>
-<tr>
-<td><strong>Authentication</strong></td>
-<td>Broken authentication and authorization attacks consist in gaining access to accounts that allow disclosing sensitive information or performing operations that could compromise the system.</td>
-</tr>
-<tr>
-<td><strong>Command Injection</strong></td>
-<td>Command injection attacks aim to execute arbitrary commands on the host operating system.</td>
-</tr>
-<tr>
-<td><strong>Cookies</strong></td>
-<td>Security issues related to insecure cookies.</td>
-</tr>
-<tr>
-<td><strong>Cryptography</strong></td>
-<td>Cryptography attacks exploit failures related to cryptography (or lack thereof), <span class="skip-vale">potentially</span> leading to exposure of sensitive data.</td>
-</tr>
-<tr>
-<td><strong>CSRF</strong></td>
-<td>Cross-Site Request Forgery (CSRF) attacks force an end user to execute unwanted actions on a web application in which they're currently authenticated.</td>
-</tr>
-<tr>
-<td><strong>Denial of Service</strong></td>
-<td>Denial of Service (DoS) attacks make a resource (site, application, server) unavailable for legitimate users, typically by flooding the resource with requests or exploiting a vulnerability to trigger a crash.</td>
-</tr>
-<tr>
-<td><strong>File Access</strong></td>
-<td>File access security issues may allow an attacker to access arbitrary files and directories stored on the file system such as application source code, configuration, and critical system files.</td>
-</tr>
-<tr>
-<td><strong>HTTP Headers</strong></td>
-<td>Insecure HTTP headers are a common attack vector for malicious users.</td>
-</tr>
-<tr>
-<td><strong>Input Validation</strong></td>
-<td>Client input should always be validated to prevent malformed or malicious data from entering the workflow of an information system.</td>
-</tr>
-<tr>
-<td><strong>Insecure Modules and Libraries</strong></td>
-<td>Security issues related to modules or libraries that can <span class="skip-vale">potentially</span> include vulnerabilities.</td>
-</tr>
-<tr>
-<td><strong>Insecure Storage</strong></td>
-<td>Security issues related to insecure storage of sensitive data.</td>
-</tr>
-<tr>
-<td><strong>Malicious Code</strong></td>
-<td>Security issues related to code patterns that are <span class="skip-vale">potentially</span> unsafe.</td>
-</tr>
-<tr>
-<td><strong>Mass Assignment</strong></td>
-<td>Unprotected mass assignments are a Rails feature that could allow an attacker to update sensitive model attributes.</td>
-</tr>
-<tr>
-<td><strong>Regex</strong></td>
-<td>Regular expressions can be used in Denial of Service attacks, exploiting the fact that in most regular expression implementations the computational load grows exponentially with input size.</td>
-</tr>
-<tr>
-<td><strong>Routes</strong></td>
-<td>Badly configured routes can give unintended access to an attacker.</td>
-</tr>
-<tr>
-<td><strong>SQL Injection</strong></td>
-<td>SQL injection attacks insert or "inject" malicious SQL queries into the application via the client input data.</td>
-</tr>
-<tr>
-<td><strong>SSL</strong></td>
-<td>Security issues related with old SSL versions or configurations that have known cryptographic weaknesses and should no longer be used.</td>
-</tr>
-<tr>
-<td><strong>Unexpected Behaviour</strong></td>
-<td>Security issues related to <span class="skip-vale">potentially</span> insecure system API calls.</td>
-</tr>
-<tr>
-<td><strong>Visibility</strong></td>
-<td>Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.</td>
-</tr>
-<tr>
-<td><strong>XSS</strong></td>
-<td>Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into trusted websites that are visited by the end users.</td>
-</tr>
-<tr>
-<td><strong>Other</strong></td>
-<td>Other language-specific security issues.</td>
-</tr>
-</tbody>
-</table>
+<h2 id="disable-language">Disabling analysis of a language<a class="headerlink" href="#disable-language" title="Permanent link">#</a></h2>
+<p>By default, Codacy analyzes all languages detected in your repository. To disable the analysis of a specific language, do the following:</p>
+<ol>
+<li>
+<p>Go to your repository's <strong>Settings</strong>, <strong>Languages</strong>.</p>
+</li>
+<li>
+<p>Use the toggle next to the language to disable its analysis.</p>
+</li>
+<li>
+<p>Click <strong>Save changes</strong> to update your settings.</p>
+<p><img alt="Disabling language" src="../images/disable-language.png" /></p>
+<p>
+The updated settings will be used on the next analysis, but you can click <strong>reanalyze the latest commit of your branches now</strong> on the notification that appears at the bottom of the page to trigger an analysis immediately.</p>
+<p><img alt="Analyze now" src="../../assets/images/file-extensions-analyze.png" />
+</p>
+</li>
+</ol>
               
               
                 
@@ -4724,7 +4244,7 @@
           <br>
         </div>
         <p>
-          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Managing security and risk%22">create a more detailed issue on our GitHub repository</a>.
+          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Configuring languages%22">create a more detailed issue on our GitHub repository</a>.
         </p>
       </div>
     </div>
@@ -4733,14 +4253,14 @@
     </p>
     
     <p>
-      <a href="https://github.com/codacy/docs/edit/master/docs/organizations/managing-security-and-risk.md" title="Edit this page">
+      <a href="https://github.com/codacy/docs/edit/master/docs/repositories-configure/languages.md" title="Edit this page">
         Edit this page on GitHub
       </a>
       if you notice something wrong or missing.
     </p>
     
     <p>
-      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Managing security and risk">support@codacy.com</a>.
+      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Configuring languages">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -4837,7 +4357,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 4, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 7, 2024</span>
     
   </small>
 </div>

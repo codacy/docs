@@ -961,12 +961,12 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.codacy.com/repositories-configure/file-extensions/</loc>
+         <loc>https://docs.codacy.com/repositories-configure/ignoring-files/</loc>
          <lastmod>2024-06-07</lastmod>
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.codacy.com/repositories-configure/ignoring-files/</loc>
+         <loc>https://docs.codacy.com/repositories-configure/languages/</loc>
          <lastmod>2024-06-07</lastmod>
          <changefreq>daily</changefreq>
     </url>

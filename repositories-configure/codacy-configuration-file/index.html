@@ -11,7 +11,7 @@
         <meta name="description" content="Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages.">
       
       
-        <meta http-equiv="last-modified" content="2024-04-02 11:28:11">
+        <meta http-equiv="last-modified" content="2024-06-07 14:19:27">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/codacy-configuration-file/">
@@ -623,8 +623,8 @@
 
 
   <li class="md-nav__item">
-    <a href="../file-extensions/" title="Configuring file extensions" class="md-nav__link">
-      Configuring file extensions
+    <a href="../languages/" title="Configuring languages" class="md-nav__link">
+      Configuring languages
     </a>
   </li>
 
@@ -875,6 +875,13 @@
         <li class="md-nav__item">
   <a href="#tool-conf" class="md-nav__link">
     Adjusting tool configurations
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#languages" class="md-nav__link">
+    Configuring languages using a Codacy configuration file
   </a>
   
 </li>
@@ -4167,7 +4174,11 @@
 <p>Configuring a specific repository directory on which to start the analysis</p>
 </li>
 <li>
-<p>Adding custom file extensions to languages, keeping in mind that some tools might not work out of the box with those extensions</p>
+<p><a href="#languages">Configuring the languages</a> that Codacy analyzes in your repository:</p>
+<ul>
+<li><a href="#file-extensions">Adding custom file extensions</a> to languages</li>
+<li><a href="#disable-language">Disabling the analysis</a> of a specific language</li>
+</ul>
 </li>
 </ul>
 <h2 id="using-a-codacy-configuration-file">Using a Codacy configuration file<a class="headerlink" href="#using-a-codacy-configuration-file" title="Permanent link">#</a></h2>
@@ -4420,6 +4431,29 @@ tsqllint
 <span class="w">    </span><span class="nt">ignoreAnnotations</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 <span class="w">    </span><span class="nt">ignoreUsings</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 </code></pre></div>
+<h2 id="languages">Configuring languages using a Codacy configuration file<a class="headerlink" href="#languages" title="Permanent link">#</a></h2>
+<p>You can use a Codacy configuration file to manage the languages that Codacy analyzes in your repository.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Codacy applies the language settings from the Codacy configuration file as well as any settings defined <a href="../languages/">in the Codacy UI</a>.</p>
+</div>
+<h3 id="file-extensions">Adding custom file extensions<a class="headerlink" href="#file-extensions" title="Permanent link">#</a></h3>
+<p>To <a href="../languages/#configuring-file-extensions">add custom file extensions to languages</a> using a Codacy configuration file, you must define one or more extensions under <code>languages.&lt;LANGUAGE&gt;.extensions</code>. Keep in mind that some tools might not work out of the box with those extensions.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">languages</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">css</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">extensions</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;.scss&quot;</span>
+</code></pre></div>
+<h3 id="disable-language">Disabling analysis of a language<a class="headerlink" href="#disable-language" title="Permanent link">#</a></h3>
+<p>To <a href="../languages/#disable-language">disable the analysis of a specific language</a> using a Codacy configuration file, set <code>languages.&lt;LANGUAGE&gt;.enabled</code> to <code>false</code>. The analysis is enabled by default for all languages.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">languages</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">css</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
+</code></pre></div>
               
               
                 
@@ -4576,7 +4610,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 2, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 7, 2024</span>
     
   </small>
 </div>
