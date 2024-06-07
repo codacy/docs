@@ -93,7 +93,7 @@ To access the findings page, access the [overview page](#dashboard) and click th
 
 When viewing the findings, you can update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, **Security category**, or **Scan type** drop-downs above the list.
 
-To find out more about a finding in the list, you can navigate to the finding details on the source platform by clicking its **Details** column. This column also offers a quick overview of each finding, including its title, the source platform, the security category, and related information, such as the repository name, Jira issue key, or penetration testing report URL.
+To find out more about a finding in the list, you can navigate to the finding details on the source platform by clicking its **Details** column. This column also offers a quick overview of each finding, including its title, the source platform, the security category, and related information such as the repository name, Jira issue key, or penetration testing report URL.
 
 ![Security and risk management finding details](images/security-risk-management-finding-details.png)
 
