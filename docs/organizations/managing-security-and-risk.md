@@ -40,7 +40,7 @@ To access the findings page with the corresponding filter applied, click on a nu
 
 ### Open findings distribution
 
-The **Open findings distribution** panel shows the relative distribution of open findings by scan kind, severity, or status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
+The **Open findings distribution** panel shows the relative distribution of open findings by scan type, severity, or status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
 
 To select the desired distribution, use the drop-down in the top right-hand corner of the panel.
 
@@ -93,7 +93,7 @@ To access the findings page, access the [overview page](#dashboard) and click th
 
 When viewing the findings, you can update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, **Security category**, or **Scan type** drop-downs above the list.
 
-To find out more about a finding in the list, you can navigate to the finding details on the source platform by clicking its **Details** column. This column also offers a quick overview of each finding, including its title, [source platform](#opening-and-closing-items), [scan type](#scan-types), [security category](#supported-security-categories), and related information such as the repository name, Jira issue key, or penetration testing report URL.
+The **Details** column offers a quick overview of each finding in the list, including its title, [source platform](#opening-and-closing-items), [scan type](#scan-types), [security category](#supported-security-categories), and related information such as the repository name, Jira issue key, or penetration testing report URL. To find out more, click this overview to navigate to the finding details on the source platform.
 
 ![Security and risk management finding details](images/security-risk-management-finding-details.png)<!-- TODO TAROT-2669 screenshot -->
 
@@ -448,7 +448,7 @@ Each Codacy issue reported by Security and risk management belongs to one of the
 
 ## Scan types
 
-Each finding detected in an organization's repository is also categorized by **Scan type**, indicating the specific source or method used to detect the finding. This information helps you understand the origin of the finding and the context in which the underlying issue was detected.
+Security and risk management classifies each finding with a **Scan type**, indicating the specific source or method used to detect the finding. This information helps you understand the origin of the finding and the context in which the underlying issue was detected.
 
 The following table lists the available scan types and their descriptions:
 
