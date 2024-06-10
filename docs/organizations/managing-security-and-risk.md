@@ -168,14 +168,14 @@ Codacy opens a new finding when penetration testing results are published by our
 !!! note
     Currently, Codacy doesn't support customizing the severity rules for security findings.
 
-The following table defines finding severities and days to fix the associated security issue, based on the importance of the underlying issue:
+The following table defines finding severities and the number of days to the deadline to fix the associated security issue, based on the importance of the underlying issue:
 
-| Finding<br/>severity | <br/>Days to fix | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority <sup>1</sup> |
-|----------------------|------------------|--------------------------------------|-------------------------------------------------|
-| Critical             | 30               | Critical                             | Highest                                         |
-| High                 | 60               | -                                    | High                                            |
-| Medium               | 90               | Medium                               | Medium                                          |
-| Low                  | 120              | Minor                                | Low and other/custom                            |
+| Finding<br/>severity | <br/>Days to deadline | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority <sup>1</sup> |
+|----------------------|-----------------------|--------------------------------------|-------------------------------------------------|
+| Critical             | 30                    | Critical                             | Highest                                         |
+| High                 | 60                    | -                                    | High                                            |
+| Medium               | 90                    | Medium                               | Medium                                          |
+| Low                  | 120                   | Minor                                | Low and other/custom                            |
 
 <small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small>
 
