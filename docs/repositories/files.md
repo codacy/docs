@@ -4,6 +4,7 @@ The **Quality Files page** displays the current code quality information for eac
 
 By default, the page lists the files on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display files on other branches.
 
+<!-- TODO TAROT-2708: confirm this is still the case -->
 Codacy displays the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) for each file, if available:
 
 -   Grade
@@ -11,31 +12,38 @@ Codacy displays the following [code quality metrics](../faq/code-analysis/which-
 -   Complexity
 -   Duplication
 -   Code coverage
+- <!-- END TODO -->
 
 Codacy displays the files in alphabetical order by default, but you can sort the list by each column to help you identify which files you should improve or refactor next.
 
 !!! note
     [You can use the Codacy API](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md) to generate reports or obtain code quality metrics for the files in your repositories in a more flexible way.
 
-![Files list](images/files.png)
+![Files list](images/files.png)<!-- TODO TAROT-2708: update image -->
 
 Use the search box to filter the list and find specific files:
 
-![Finding specific files](images/files-search.png)
+![Finding specific files](images/files-search.png)<!-- TODO TAROT-2708: update image -->
 
 ## File details
 
 Click a specific file to see more detailed analysis information for that file, including statistics on:
 
+<!-- TODO TAROT-2708: confirm this is still the case -->
 -   **Size:** Lines of code, source lines of code, and commented lines of code
 -   **Structure:** Number of methods and ratio of source lines of code per number of methods
 -   **Complexity:** Complexity and complexity per method
 -   **Duplication:** Number of clones and duplicated lines of code
+<!-- END TODO -->
+-   **Coverable lines:** Source lines of code that can be covered by tests
+-   **Covered lines:** Source lines of code that are covered by tests
+-   **Coverage:** Percentage of coverable source lines of code that are covered by tests
 
-The button **Ignore File** allows you to ignore the selected file on future Codacy analysis.
+The button **Ignore File** allows you to ignore the selected file on future Codacy analysis.<!-- TODO TAROT-2708: remove -->
 
-![File detail](images/files-details.png)
+![File detail](images/files-details.png)<!-- TODO TAROT-2708: update image -->
 
+<!-- TODO TAROT-2708: confirm this is still the case -->
 Depending on the available analysis information for the file, Codacy displays one or more of the following tabs:
 
 -   **Issues:** Shows all issues in the file. The tab displays the number of issues in the file.
@@ -44,17 +52,18 @@ Depending on the available analysis information for the file, Codacy displays on
 
     For more information about the available information and filters and for each issue see the [Issues page](issues.md).
 
-    ![Issues for a file](images/files-issues.png)
+    ![Issues for a file](images/files-issues.png)<!-- TODO TAROT-2708: update image -->
 
 -   **Duplication:** Shows all duplicated blocks in the file with links to the clones of each block. The tab displays the number of duplicated blocks in the file.
 
     Toggle between the list and annotated source code views using the icon on the right-hand side.
 
-    ![Duplicated blocks for a file](images/files-duplication.png)
+    ![Duplicated blocks for a file](images/files-duplication.png)<!-- TODO TAROT-2708: update image -->
 
 -   **Coverage:** Shows which lines of code are covered by tests (green background) or not (red background). The tab displays the percentage of coverable lines that are covered by tests in the file.
 
-    ![Coverage information for a file](images/files-coverage.png)
+    ![Coverage information for a file](images/files-coverage.png)<!-- TODO TAROT-2708: update image -->
+<!-- END TODO -->
 
 ## Why are some files missing? {: id="missing-files"}
 
