@@ -30,6 +30,16 @@ The table below lists the events that Codacy logs for your organization at user,
 |Update default Git provider configuration|Default Git provider configuration for the organization updated|
 |Apply default Git provider configuration to all repositories|Default Git provider configuration applied to all repositories of the organization|
 |Create new organization hook|New organization webhook created|
+|Create new gate policy|New gate policy created|
+|Update gate policy definition|Quality gate values updated|
+|Apply gate policy to repositories|Gate policy applied to a set of repositories|
+|?Make gate policy default?|Gate policy was made the default|
+|?Delete gate policy?|Gate policy deleted|
+|Create new coding standard|New coding standard created|
+|?Update coding standard definition?|Languages, or tools and patterns updated|
+|Apply coding standard to repositories|Coding standard applied to a set of repositories|
+|?Make coding standard default?|Coding standard was made the default|
+|?Delete coding standard?|Coding standard deleted|
 
 ## Repository
 
