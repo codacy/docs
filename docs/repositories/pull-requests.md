@@ -23,7 +23,7 @@ This area displays the information that identifies the pull request (name, autho
 
 -   A link to the pull request on your Git provider
 -   A [link to reanalyze the latest pull request commit](../faq/repositories/how-do-i-reanalyze-my-repository.md), present when the committer [is part of your organization](../organizations/managing-people.md)
--   A link to the analysis logs
+-   A link to [view analysis logs](#viewing-analysis-logs)
 
 ![Pull request status](images/pull-requests-detail-status.png)
 
@@ -54,6 +54,17 @@ Click a specific commit to see [detailed information about that commit](commits.
 If Codacy detects code patterns that have suggested fixes, a **Fix issues** button appears above the issue list. Click this button to commit the suggested fixes to the pull request.
 
 ![Fix issues button](images/issues-fix-issues-button.png)
+
+## Viewing analysis logs
+
+Analysis logs can help you track and understand the performance of the tools and the timing of analyses on your pull requests.
+
+To access these logs, click the **View logs** button in the pull request status area. This opens a modal with two tabs:
+
+-   The **Quality** tab displays execution times and outcomes for various tools used to analyze the latest commit of the pull request. It helps identify the duration of each analysis phase and any potential issues.
+-   The **Coverage** tab lists reports received for the common ancestor commit and the head commit of the pull request. It helps you spot any issues with the coverage analysis, such as missing coverage reports.
+
+<!-- TODO DOCS-696 screenshot -->
 
 ## See also
 
