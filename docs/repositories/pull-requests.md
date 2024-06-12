@@ -64,7 +64,7 @@ To access these logs, click the **View logs** button in the pull request status 
 -   The **Quality** tab displays execution times and outcomes for various tools used to analyze the latest commit of the pull request. It helps identify the duration of each analysis phase and any potential issues.
 -   The **Coverage** tab lists reports received for the common ancestor commit and the head commit of the pull request. It helps you spot any issues with the coverage analysis, such as missing coverage reports.
 
-<!-- TODO DOCS-696 screenshot -->
+![View logs modal](images/pull-requests-view-logs-modal.png)
 
 ## See also
 
