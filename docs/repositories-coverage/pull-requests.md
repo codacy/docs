@@ -59,7 +59,9 @@ Click a specific commit to see [detailed information about that commit](commits.
 
 ## Viewing analysis logs
 
-To access the coverage analysis logs, click the **View logs** button in the pull request status area. This opens a modal listing coverage reports received for the common ancestor commit and the head commit of the pull request. Analysis logs can help you spot any issues with the coverage analysis, such as missing coverage reports.
+Analysis logs can help you spot any issues with the coverage analysis, such as missing coverage reports.
+
+To access the coverage analysis logs, click the **View logs** button in the pull request status area. This opens a modal listing coverage reports received for the common ancestor commit and the head commit of the pull request.
 
 ![View logs modal](images/pull-requests-coverage-view-logs-modal.png)
 
