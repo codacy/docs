@@ -22,7 +22,7 @@ The table below lists the events that Codacy logs for your organization at user,
 |-----|-----------|
 |Add organization|Organization added to Codacy|
 |Add person to organization|New person added to the organization|
-|?Remove person from organization?|Person removed from the organization|
+|?Remove person from organization (depends on effort)?|Person removed from the organization|
 |Join organization|User joined the organization|
 |Assign organization manager|Organization manager role assigned to a team member|
 |Revoke organization manager|Organization manager role revoked from a team member|
@@ -31,15 +31,16 @@ The table below lists the events that Codacy logs for your organization at user,
 |Apply default Git provider configuration to all repositories|Default Git provider configuration applied to all repositories of the organization|
 |Create new organization hook|New organization webhook created|
 |Create new gate policy|New gate policy created|
-|Update gate policy definition|Quality gate values updated|
-|Apply gate policy to repositories|Gate policy applied to a set of repositories|
-|?Make gate policy default?|Gate policy was made the default|
-|?Delete gate policy?|Gate policy deleted|
-|Create new coding standard|New coding standard created|
-|?Update coding standard definition?|Languages, or tools and patterns updated|
-|Apply coding standard to repositories|Coding standard applied to a set of repositories|
-|?Make coding standard default?|Coding standard was made the default|
-|?Delete coding standard?|Coding standard deleted|
+|Update gate policy|Quality gate definition updated (validate updated fields)|
+|Apply gate policy to repositories|Gate policy applied to a list of repositories|
+|?Make gate policy default?|Gate policy was made the default for the organization (validate)|
+|?Make Codacy gate policy default?|Built-in Codacy gate policy was made the default for the organization (validate)|
+|Delete gate policy|Gate policy deleted|
+|Create new coding standard|New coding standard created (validate implementation)|
+|Update coding standard|Coding standard definition updated (validate updated fields)|
+|Apply coding standard to repositories|Coding standard applied to a list of repositories|
+|?Make coding standard default?|Coding standard was made the default (validate)|
+|Delete coding standard?|Coding standard deleted|
 
 ## Repository
 
