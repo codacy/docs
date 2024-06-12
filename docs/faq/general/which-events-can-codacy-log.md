@@ -42,7 +42,7 @@ The table below lists the events that Codacy logs for your organization at user,
 |Update coding standard|Coding standard definition updated (validate updated fields)|
 |Apply coding standard to repositories|Coding standard applied to a list of repositories|
 |?Make coding standard default?|Coding standard was made the default (validate)|
-|Delete coding standard?|Coding standard deleted|
+|Delete coding standard|Coding standard deleted|
 
 ## Repository
 
