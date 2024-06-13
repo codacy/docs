@@ -51,7 +51,7 @@ Click a specific commit to see [detailed information about that commit](commits.
 
 Analysis logs can help you track and understand the performance of the tools and the timing of analyses on your pull requests.
 
-To access these logs, click the **View logs** button in the pull request status area. This opens a modal with two tabs:
+To access these logs, click the **View logs** link in the [pull request status](#status) area. This opens a modal with two tabs:
 
 -   The **Quality** tab displays execution times and outcomes for the tools used to analyze the latest commit of the pull request. It helps identify the duration of each analysis phase and any potential issues.
 -   The **Coverage** tab lists reports received for the common ancestor commit and the head commit of the pull request. It helps you spot any issues with the coverage analysis, such as missing coverage reports.

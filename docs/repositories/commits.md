@@ -158,7 +158,7 @@ Depending on the languages being analyzed or if you haven't [set up coverage for
 
 Analysis logs can help you identify the duration of each analysis phase and any potential issues.
 
-To access the analysis logs, click the **View logs** button in the commit status area. This opens a modal displaying execution times and outcomes for the tools used to analyze the commit.
+To access the analysis logs, click the **View logs** link in the [commit status](#status) area. This opens a modal displaying execution times and outcomes for the tools used to analyze the commit.
 
 ![View logs modal](images/commits-view-logs-modal.png)
 
