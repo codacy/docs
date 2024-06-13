@@ -11,7 +11,7 @@
         <meta name="description" content="The Quality Pull Requests page displays an overview of the pull requests in your repository, such as the analysis status and the code quality metrics for each pull request. This allows you to monitor the code quality of the work in progress in your repository.">
       
       
-        <meta http-equiv="last-modified" content="2024-05-30 08:28:57">
+        <meta http-equiv="last-modified" content="2024-06-13 09:16:02">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/pull-requests/">
@@ -479,6 +479,13 @@
         <li class="md-nav__item">
   <a href="#commits-tab" class="md-nav__link">
     Commits tab
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewing-analysis-logs" class="md-nav__link">
+    Viewing analysis logs
   </a>
   
 </li>
@@ -4234,7 +4241,7 @@
 <ul>
 <li>A link to the pull request on your Git provider</li>
 <li>A <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">link to reanalyze the latest pull request commit</a>, present when the committer <a href="../../organizations/managing-people/">is part of your organization</a></li>
-<li>A link to the analysis logs</li>
+<li>A link to <a href="#viewing-analysis-logs">view analysis logs</a></li>
 </ul>
 <p><img alt="Pull request status" src="../images/pull-requests-detail-status.png" /></p>
 <h2 id="quality-overview">Pull request quality overview<a class="headerlink" href="#quality-overview" title="Permanent link">#</a></h2>
@@ -4368,6 +4375,14 @@
 <p>The <strong>Commits</strong> tab displays an overview of each commit included in the pull request, such as the analysis status and the number of issues introduced.</p>
 <p>Click a specific commit to see <a href="../commits/#status">detailed information about that commit</a>.</p>
 <p><img alt="Commits tab" src="../images/pull-requests-tab-commits.png" /></p>
+<h2 id="viewing-analysis-logs">Viewing analysis logs<a class="headerlink" href="#viewing-analysis-logs" title="Permanent link">#</a></h2>
+<p>Analysis logs can help you track and understand the performance of the tools and the timing of analyses on your pull requests.</p>
+<p>To access these logs, click the <strong>View logs</strong> link in the <a href="#status">pull request status</a> area. This opens a modal with two tabs:</p>
+<ul>
+<li>The <strong>Quality</strong> tab displays execution times and outcomes for the tools used to analyze the latest commit of the pull request. It helps identify the duration of each analysis phase and any potential issues.</li>
+<li>The <strong>Coverage</strong> tab lists reports received for the common ancestor commit and the head commit of the pull request. It helps you spot any issues with the coverage analysis, such as missing coverage reports.</li>
+</ul>
+<p><img alt="View logs modal" src="../images/pull-requests-view-logs-modal.png" /></p>
 <h2 id="fixing-issues-automatically">Fixing issues automatically<a class="headerlink" href="#fixing-issues-automatically" title="Permanent link">#</a></h2>
 <div class="admonition info">
 <p class="admonition-title">This section applies to GitHub repositories only</p>
@@ -4534,7 +4549,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 30, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 13, 2024</span>
     
   </small>
 </div>

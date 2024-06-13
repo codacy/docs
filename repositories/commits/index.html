@@ -11,7 +11,7 @@
         <meta name="description" content="The Quality Commits page displays an overview of the commits in your repository, such as the analysis status and the code quality metrics for each commit. This allows you to monitor the evolution of the code quality per commit in your repository.">
       
       
-        <meta http-equiv="last-modified" content="2024-04-15 13:20:33">
+        <meta http-equiv="last-modified" content="2024-06-13 09:16:02">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/commits/">
@@ -436,6 +436,13 @@
         <li class="md-nav__item">
   <a href="#files-tab" class="md-nav__link">
     Files tab
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#viewing-analysis-logs" class="md-nav__link">
+    Viewing analysis logs
   </a>
   
 </li>
@@ -4221,7 +4228,7 @@
 <ul>
 <li>A link to the commit on your Git provider</li>
 <li>A <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">link to reanalyze the commit</a>, present when the committer <a href="../../organizations/managing-people/">is part of your organization</a></li>
-<li>A link to the analysis logs</li>
+<li>A link to <a href="#viewing-analysis-logs">view analysis logs</a></li>
 </ul>
 <h2 id="quality-overview">Commit quality overview<a class="headerlink" href="#quality-overview" title="Permanent link">#</a></h2>
 <p><img alt="Commit quality overview" src="../images/commits-detail-quality-overview.png" /></p>
@@ -4349,6 +4356,10 @@
 </ul>
 <p>Depending on the languages being analyzed or if you haven't <a href="../../coverage-reporter/">set up coverage for your repository</a>, some metrics <strong>may not be calculated</strong> (represented by <code>-</code>).</p>
 <p><img alt="Files tab" src="../images/commits-tab-files.png" /></p>
+<h2 id="viewing-analysis-logs">Viewing analysis logs<a class="headerlink" href="#viewing-analysis-logs" title="Permanent link">#</a></h2>
+<p>Analysis logs can help you identify the duration of each analysis phase and any potential issues.</p>
+<p>To access the analysis logs, click the <strong>View logs</strong> link in the <a href="#status">commit status</a> area. This opens a modal displaying execution times and outcomes for the tools used to analyze the commit.</p>
+<p><img alt="View logs modal" src="../images/commits-view-logs-modal.png" /></p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">Which metrics does Codacy calculate?</a></li>
@@ -4509,7 +4520,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 15, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 13, 2024</span>
     
   </small>
 </div>
