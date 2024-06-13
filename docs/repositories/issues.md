@@ -107,7 +107,7 @@ In this case, Codacy generates a patch that enables you to solve all resolvable 
 1.  Click the button **Fix issues** to open a modal with a patch that addresses all resolvable issues.
 1.  Copy the patch content to your clipboard.
 1.  Create a new branch from your default branch.
-1.  Apply the patch from your repository's root directory, e.g., with the `pbpaste | patch` command.  
+1.  Apply the patch from your repository's root directory, for example with the `pbpaste | patch` command.  
 
     !!! note
         These changes are automatically generated. Review them to make sure they're correct.
