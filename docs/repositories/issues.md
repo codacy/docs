@@ -98,12 +98,18 @@ To restore an ignored issue, select **Unignore issue** from the options menu:
 
 !!! info "This section applies to GitHub repositories only"
 
-If Codacy detects code patterns with suggested fixes, a **Fix issues** button appears above the issue list. Click this button to open a modal with a patch that addresses all resolvable issues. Follow the instructions in the modal to apply the patch:
+If Codacy detects code patterns with suggested fixes, a **Fix issues** button appears above the issue list.
+
+![Fix issues button](images/issues-fix-issues-button.png)
+
+In this case, Codacy generates a patch that enables you to solve all resolvable issues. To apply this patch to your local branch, do the following:
+
+1.  Click the button **Fix issues** to open a modal with a patch that addresses all resolvable issues.
 
 1.  Copy the patch content to your clipboard.
 1.  Create a new branch from your default branch.
-1.  Apply the fixes in your project's root folder, for example with the `pbpaste | patch` command.
-1.  Review the changes to confirm that they're correct.
+1.  Apply the fixes from your repository's root directory, e.g., with the `pbpaste | patch` command.
+1.  Make sure you review the changes to confirm that they're correct, as they were automatically generated.
 1.  Push the new branch to your repository.
 
 ![Fix issues button](images/issues-fix-issues-button.png)
