@@ -102,17 +102,20 @@ If Codacy detects code patterns with suggested fixes, a **Fix issues** button ap
 
 ![Fix issues button](images/issues-fix-issues-button.png)
 
-In this case, Codacy generates a patch that enables you to solve all resolvable issues. To apply this patch to your local branch, do the following:
+In this case, Codacy generates a patch that enables you to solve all resolvable issues. To apply this patch, do the following:
 
 1.  Click the button **Fix issues** to open a modal with a patch that addresses all resolvable issues.
-
 1.  Copy the patch content to your clipboard.
 1.  Create a new branch from your default branch.
-1.  Apply the fixes from your repository's root directory, e.g., with the `pbpaste | patch` command.
-1.  Make sure you review the changes to confirm that they're correct, as they were automatically generated.
-1.  Push the new branch to your repository.
+1.  Apply the patch from your repository's root directory, e.g., with the `pbpaste | patch` command.  
 
-![Fix issues button](images/issues-fix-issues-button.png)
+    !!! note
+        These changes are automatically generated. Review them to make sure they're correct.
+
+1.  Push the new branch to your repository.
+1.  On GitHub, create a pull request from the new branch to your default branch.
+
+![Fix issues modal](images/issues-fix-issues-modal.png)
 
 ## See also
 
