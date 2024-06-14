@@ -69,6 +69,9 @@ If Codacy detects code patterns with suggested fixes, a **Fix issues** button ap
 In this case, Codacy generates a patch that enables you to solve all resolvable issues. To apply this patch to the pull request, do the following:
 
 1.  Click the button **Fix issues** to open a modal with a patch that addresses all resolvable issues.
+
+    ![Fix issues modal](images/issues-fix-issues-modal.png)
+
 1.  Copy the patch content to the clipboard.
 1.  Check out the relevant branch in the local repository.
 1.  Apply the patch from the repository's root directory, for example with the `pbpaste | patch` command.
@@ -77,8 +80,6 @@ In this case, Codacy generates a patch that enables you to solve all resolvable 
         These changes are automatically generated. Review them to make sure they're correct.
 
 1.  Push the changes to the repository.
-
-![Fix issues modal](images/issues-fix-issues-modal.png)
 
 ## See also
 

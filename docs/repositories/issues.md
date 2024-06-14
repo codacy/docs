@@ -105,6 +105,9 @@ If Codacy detects code patterns with suggested fixes, a **Fix issues** button ap
 In this case, Codacy generates a patch that enables you to solve all resolvable issues. To apply this patch to the default branch, do the following:
 
 1.  Click the button **Fix issues** to open a modal with a patch that addresses all resolvable issues.
+
+    ![Fix issues modal](images/issues-fix-issues-modal.png)
+
 1.  Copy the patch content to the clipboard.
 1.  Create a new branch from the default branch.
 1.  Apply the patch from the repository's root directory, for example with the `pbpaste | patch` command.  
@@ -114,8 +117,6 @@ In this case, Codacy generates a patch that enables you to solve all resolvable 
 
 1.  Push the new branch to the repository.
 1.  On GitHub, create a pull request from the new branch to the default branch.
-
-![Fix issues modal](images/issues-fix-issues-modal.png)
 
 ## See also
 
