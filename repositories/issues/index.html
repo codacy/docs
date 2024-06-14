@@ -11,7 +11,7 @@
         <meta name="description" content="The Quality Issues page lists all the issues that Codacy detected in your repository, including the severity level and category of each issue.">
       
       
-        <meta http-equiv="last-modified" content="2024-05-30 08:28:57">
+        <meta http-equiv="last-modified" content="2024-06-14 12:44:35">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/issues/">
@@ -4286,8 +4286,30 @@
 <div class="admonition info">
 <p class="admonition-title">This section applies to GitHub repositories only</p>
 </div>
-<p>If Codacy detects code patterns that have suggested fixes, a <strong>Fix issues</strong> button appears above the issue list. Click this button to open a pull request including the suggested fixes and targeting the selected branch.</p>
+<p>If Codacy detects code patterns with suggested fixes, a <strong>Fix issues</strong> button appears above the issue list.</p>
 <p><img alt="Fix issues button" src="../images/issues-fix-issues-button.png" /></p>
+<p>In this case, Codacy generates a patch that enables you to solve all resolvable issues. To apply this patch to the default branch, do the following:</p>
+<ol>
+<li>
+<p>Click the button <strong>Fix issues</strong> to open a modal with a patch that addresses all resolvable issues.</p>
+<p><img alt="Fix issues modal" src="../images/issues-fix-issues-modal.png" /></p>
+</li>
+<li>
+<p>Copy the patch content to the clipboard.</p>
+</li>
+<li>Create a new branch from the default branch.</li>
+<li>
+<p>Apply the patch from the repository's root directory, for example with the <code>pbpaste | patch</code> command.  </p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>These changes are automatically generated. Review them to make sure they're correct.</p>
+</div>
+</li>
+<li>
+<p>Push the new branch to the repository.</p>
+</li>
+<li>On GitHub, create a pull request from the new branch to the default branch.</li>
+</ol>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">Which metrics does Codacy calculate?</a></li>
@@ -4449,7 +4471,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 30, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 14, 2024</span>
     
   </small>
 </div>
