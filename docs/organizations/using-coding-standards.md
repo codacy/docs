@@ -25,9 +25,7 @@ To create a coding standard for your organization:
 
 1.  Enter a unique name for the new coding standard.
 
-    Optionally, you can set the new coding standard as your organization's [default coding standard](#set-default), so it applies automatically to new repositories.
-
-    ![Creating a new coding standard](images/coding-standard-create.png)<!-- TODO ALA-1057 update image -->
+    Optionally, check **Make default** to set the new coding standard as your organization's [default coding standard](#set-default), so it applies automatically to new repositories.
 
 1.  Choose whether to create the coding standard using a guided or advanced setup:
 
@@ -35,7 +33,9 @@ To create a coding standard for your organization:
 
     -   The **advanced setup** lets you choose individual languages and code patterns to activate. It's ideal for fine-tuning the coding standard to your organization's specific needs, offering more control over the tools and code patterns used.
     
-        With the advanced setup, you can optionally select a repository as a baseline for the new coding standard. This is useful if you already have a well-configured repository that you wish to use as a template.
+        With the advanced setup, you can optionally **select a repository as the baseline** for the new coding standard. This is useful if you already have a well-configured repository that you wish to use as a template.
+
+    ![Creating a new coding standard](images/coding-standard-create.png)
 
 1.  Click **Create coding standard** to proceed to the [guided setup](#guided-setup) or [advanced setup](#advanced-settings), depending on your choice.
 
