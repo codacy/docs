@@ -12,7 +12,10 @@ Codacy supports configuring certain advanced features through a configuration fi
 
 -   Configuring a specific repository directory on which to start the analysis
 
--   Adding custom file extensions to languages, keeping in mind that some tools might not work out of the box with those extensions
+-   [Configuring the languages](#languages) that Codacy analyzes in your repository:
+
+    -   [Adding custom file extensions](#file-extensions) to languages
+    -   [Disabling the analysis](#disable-language) of a specific language
 
 ## Using a Codacy configuration file
 
@@ -248,4 +251,38 @@ engines:
     ignoreIdentifiers: true
     ignoreAnnotations: false
     ignoreUsings: false
+```
+
+## Configuring languages using a Codacy configuration file {: id="languages"}
+
+You can use a Codacy configuration file to manage the languages that Codacy analyzes in your repository.
+
+!!! note
+    Codacy applies the language settings from the Codacy configuration file as well as any settings defined [in the Codacy UI](languages.md).
+
+### Adding custom file extensions {: id="file-extensions"}
+
+To [add custom file extensions to languages](languages.md#configuring-file-extensions) using a Codacy configuration file, you must define one or more extensions under `languages.<LANGUAGE>.extensions`. Keep in mind that some tools might not work out of the box with those extensions.
+
+For example:
+
+```yaml
+---
+languages:
+  css:
+    extensions:
+      - ".scss"
+```
+
+### Disabling analysis of a language {: id="disable-language"}
+
+To [disable the analysis of a specific language](languages.md#disable-language) using a Codacy configuration file, set `languages.<LANGUAGE>.enabled` to `false`. The analysis is enabled by default for all languages.
+
+For example:
+
+```yaml
+---
+languages:
+  css:
+    enabled: false
 ```
