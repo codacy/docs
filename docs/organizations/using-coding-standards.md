@@ -31,7 +31,7 @@ To create a coding standard for your organization:
 
 1.  Choose whether to create the coding standard using a guided or advanced setup:
 
-    -   The **guided setup** lets you choose preset sensitivity levels for each issue type, turning on relevant patterns in bulk. It's ideal for quickly setting up a coding standard with minimal effort. You can always fine-tune the coding standard later using the advanced setup.
+    -   The **guided setup** lets you choose preset sensitivity levels for each issue type, turning on relevant patterns in bulk. It's ideal for quickly setting up a coding standard with minimal effort. You can always fine-tune the coding standard by editing it later using the advanced setup.
 
     -   The **advanced setup** lets you choose individual languages and code patterns to activate. It's ideal for fine-tuning the coding standard to your organization's specific needs, offering more control over the tools and code patterns used.
     
