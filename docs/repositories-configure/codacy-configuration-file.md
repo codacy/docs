@@ -51,12 +51,16 @@ To use a Codacy configuration file:
       css:
         extensions:
           - ".scss"
+      python:
+        enabled: false
     exclude_paths:
       - ".bundle/**"
       - "spec/**/*"
       - "benchmarks/**/*"
       - "**.min.js"
       - "**/tests/**"
+    include_paths:
+      - "**/tests/integration/**"
     ```
 
 1.  Optionally, validate the syntax of your configuration file with the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#install) by running the following command in the same folder as the Codacy configuration file:
