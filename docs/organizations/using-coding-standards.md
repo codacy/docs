@@ -5,7 +5,8 @@ Coding standards enable the analysis of multiple repositories with the same tool
 This page covers the following topics:
 
 -   [Creating a coding standard](#creating)
--   [Configuring a coding standard using advanced settings](#advanced-settings)
+-   [Configuring a coding standard (guided setup)](#guided-setup)
+-   [Configuring a coding standard (advanced setup)](#advanced-settings)
 -   [Defining a default coding standard](#set-default)
 -   [Editing a coding standard](#editing)
 -   [Deleting a coding standard](#deleting)
@@ -24,14 +25,23 @@ To create a coding standard for your organization:
 
 1.  Enter a unique name for the new coding standard.
 
-    Optionally, you can:
+    Optionally, check **Make default** to set the new coding standard as your organization's [default coding standard](#set-default), so it applies automatically to new repositories.
 
-    -   Select a repository to use as a baseline for the new coding standard. This is useful if you already have a well-configured repository that you wish to use as a template.
-    -   Set the new coding standard as your organization's [default coding standard](#set-default), so it applies automatically to new repositories.
+1.  Choose whether to create the coding standard using a guided or advanced setup:
+
+    -   The **guided setup** lets you choose preset sensitivity levels for each issue type, turning on relevant patterns in bulk. It's ideal for quickly setting up a coding standard with minimal effort. You can always fine-tune the coding standard by editing it later using the advanced setup.
+
+    -   The **advanced setup** lets you choose individual languages and code patterns to activate. It's ideal for fine-tuning the coding standard to your organization's specific needs, offering more control over the tools and code patterns used.
+    
+        With the advanced setup, you can optionally **select a repository as the baseline** for the new coding standard. This is useful if you already have a well-configured repository that you wish to use as a template.
 
     ![Creating a new coding standard](images/coding-standard-create.png)
 
-1.  Click **Create coding standard**.
+1.  Click **Create coding standard** to proceed to the [guided setup](#guided-setup) or [advanced setup](#advanced-settings), depending on your choice.
+
+## Configuring a coding standard (guided setup) {: id="guided-setup"}
+
+If you selected **Guided setup** when [creating a new coding standard](#creating), follow these steps:
 
 1.  Adjust the sensitivity of the coding standard from **Essential** to **Comprehensive** for each issue category group:
 
@@ -40,8 +50,6 @@ To create a coding standard for your organization:
 
     !!! tip
         Initially, set the sensitivity to **Essential** for most category groups to focus on critical code patterns. It helps streamline the integration process with Codacy without overwhelming developers with too many reported issues. You can gradually include more patterns as needed.
-
-    If you want more control over included code patterns, click **Advanced settings** to [customize the coding standard](#advanced-settings).
 
     ![Coding standard presets](images/coding-standard-presets.png)
 
@@ -56,11 +64,9 @@ To create a coding standard for your organization:
 
     ![Applying the coding standard to repositories](images/coding-standard-apply.png)
 
-## Configuring a coding standard using advanced settings {: id="advanced-settings"}
+## Configuring a coding standard (advanced setup) {: id="advanced-settings"}
 
-If you need more control when [creating a new coding standard](#creating), click **Advanced settings** to more precisely define the tools and code patterns that the coding standard should use. When editing an existing coding standard, the advanced settings are the default view.
-
-To configure a coding standard using advanced settings:
+If you selected **Advanced setup** when [creating a new coding standard](#creating) or are editing an existing coding standard, follow these steps:
 
 1.  Select the programming languages that the new coding standard should include.
 
@@ -125,6 +131,9 @@ To edit an existing coding standard or change the repositories that follow that 
     ![Editing an existing coding standard](images/coding-standard-edit.png)
 
 1.  Edit the current coding standard configurations and click the button **Next** to advance to the following [configuration pages](#advanced-settings):
+
+    !!! note
+        When editing an existing coding standard, the [advanced setup](#advanced-settings) is the default view.
 
     -   **Select languages**: the programming languages that the coding standard applies to.
 
