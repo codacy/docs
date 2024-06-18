@@ -95,7 +95,7 @@ When viewing the findings, you can update the filtering criteria by clicking the
 
 The **Details** column offers a quick overview of each finding in the list, including its title, [source platform](#opening-and-closing-items), [scan type](#scan-types), [security category](#supported-security-categories), and related information such as the repository name, Jira issue key, or penetration testing report URL. To find out more, click this overview to navigate to the finding details on the source platform.
 
-![Security and risk management finding details](images/security-risk-management-finding-details.png)<!-- TODO TAROT-2669 screenshot -->
+![Security and risk management finding details](images/security-risk-management-finding-details.png)
 
 ## Sharing a filtered view of findings {: id="sharing-filtered-view"}
 
