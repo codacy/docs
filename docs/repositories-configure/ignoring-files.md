@@ -28,7 +28,7 @@ If you need more flexibility in ignoring files, use a Codacy configuration file 
 
 ## Default ignored files
 
-By default, Codacy ignores all the files that match the regular expressions below.
+By default, Codacy ignores all the files that match the regular expressions below. If you need to analyze files that match these regular expressions, use a Codacy configuration file to [define a custom list of file paths to include](./codacy-configuration-file.md#include-files).
 
 ```text
 .*[\.-]min\.css

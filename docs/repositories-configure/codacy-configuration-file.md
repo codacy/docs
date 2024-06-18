@@ -8,6 +8,8 @@ Codacy supports configuring certain advanced features through a configuration fi
 
 -   [Ignoring files](#ignore-files) globally, for duplication, or a specific tool
 
+-   [Including specific ignored files](#include-files) in the analysis
+
 -   Adjusting [tool-specific configurations](#tool-conf)
 
 -   Configuring a specific repository directory on which to start the analysis
@@ -49,12 +51,16 @@ To use a Codacy configuration file:
       css:
         extensions:
           - ".scss"
+      python:
+        enabled: false
     exclude_paths:
       - ".bundle/**"
       - "spec/**/*"
       - "benchmarks/**/*"
       - "**.min.js"
       - "**/tests/**"
+    include_paths:
+      - "**/tests/integration/**"
     ```
 
 1.  Optionally, validate the syntax of your configuration file with the [Codacy Analysis CLI](https://github.com/codacy/codacy-analysis-cli#install) by running the following command in the same folder as the Codacy configuration file:
@@ -91,6 +97,30 @@ exclude_paths:
   - "test/README.md"
   - "**/*.resource"
 ```
+
+## Including specific files using a Codacy configuration file {: id="include-files"}
+
+The Codacy configuration file allows you to explicitly specify files or directories to include in the analysis. This is particularly useful for [bypassing files or directories that are ignored by default](./ignoring-files.md#default-ignored-files) or specified in `exclude_paths`.
+
+!!! note
+    If both `exclude_paths` and `include_paths` are defined, `include_paths` will specify exceptions to the exclusions defined in `exclude_paths`.
+
+### Syntax for including files
+
+To include specific files using a Codacy configuration file, you must define one or more patterns under `include_paths` [using the same syntax as `exclude_paths`](#syntax-for-ignoring-files).
+
+For example:
+
+```yaml
+---
+exclude_paths:
+  - "lib*/**"
+include_paths:
+  - "lib-a/**"
+  - "libs/**"
+```
+
+In this example, while all directories matching `lib*` are excluded, `lib-a` is specifically included for analysis, as well as any files within `libs`.
 
 ## Adjusting tool configurations {: id="tool-conf"}
 
