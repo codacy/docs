@@ -586,12 +586,12 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-brakeman" class="skip-vale">codacy/codacy-brakeman</a></td>
 </tr>
 <tr>
-<td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a></td>
-<td><a href="https://github.com/codacy/codacy-checkstyle" class="skip-vale">codacy/codacy-checkstyle</a></td>
-</tr>
-<tr>
 <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
 <td><a href="https://github.com/codacy/codacy-checkov" class="skip-vale">codacy/codacy-checkov</a></td>
+</tr>
+<tr>
+<td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a></td>
+<td><a href="https://github.com/codacy/codacy-checkstyle" class="skip-vale">codacy/codacy-checkstyle</a></td>
 </tr>
 <tr>
 <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a> <a href="#client-side"><sup>3</sup></a></td>
@@ -600,18 +600,6 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a></td>
 <td><a href="https://github.com/codacy/codacy-scalameta" class="skip-vale">codacy/codacy-scalameta</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/securego/gosec">Gosec</a> <a href="#client-side"><sup>3</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-gosec" class="skip-vale">codacy/codacy-gosec</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a> <a href="#dart-limitations"><sup>5</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-dartanalyzer" class="skip-vale">codacy/codacy-dartanalyzer</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/tsenart/deadcode">deadcode</a> <a href="#client-side"><sup>3</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-deadcode" class="skip-vale">codacy/codacy-deadcode</a></td>
 </tr>
 <tr>
 <td><a href="https://codenarc.org/">CodeNarc</a></td>
@@ -630,6 +618,14 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-credo" class="skip-vale">codacy/codacy-credo</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a> <a href="#dart-limitations"><sup>5</sup></a></td>
+<td><a href="https://github.com/codacy/codacy-dartanalyzer" class="skip-vale">codacy/codacy-dartanalyzer</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/tsenart/deadcode">deadcode</a> <a href="#client-side"><sup>3</sup></a></td>
+<td><a href="https://github.com/codacy/codacy-deadcode" class="skip-vale">codacy/codacy-deadcode</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/arturbosch/detekt">detekt</a></td>
 <td><a href="https://github.com/codacy/codacy-detekt" class="skip-vale">codacy/codacy-detekt</a></td>
 </tr>
@@ -642,8 +638,8 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-flawfinder" class="skip-vale">codacy/codacy-flawfinder</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/mgechev/revive">Revive</a></td>
-<td><a href="https://github.com/codacy/codacy-gorevive" class="skip-vale">codacy/codacy-gorevive</a></td>
+<td><a href="https://github.com/securego/gosec">Gosec</a> <a href="#client-side"><sup>3</sup></a></td>
+<td><a href="https://github.com/codacy/codacy-gosec" class="skip-vale">codacy/codacy-gosec</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/hadolint/hadolint">Hadolint</a></td>
@@ -652,6 +648,10 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
 <td><a href="https://github.com/codacy/codacy-jackson-linter" class="skip-vale">codacy/codacy-jackson-linter</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
+<td><a href="https://github.com/codacy/codacy-markdownlint" class="skip-vale">codacy/codacy-markdownlint</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a></td>
@@ -678,16 +678,12 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-pylint-python3" class="skip-vale">codacy/codacy-pylint-python3</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
-<td><a href="https://github.com/codacy/codacy-markdownlint" class="skip-vale">codacy/codacy-markdownlint</a></td>
-</tr>
-<tr>
 <td><a href="https://github.com/remarkjs/remark-lint">remark-lint</a></td>
 <td><a href="https://github.com/codacy/codacy-remark-lint" class="skip-vale">codacy/codacy-remark-lint</a></td>
 </tr>
 <tr>
-<td><a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a> <a href="#client-side"><sup>3</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-roslyn" class="skip-vale">codacy/codacy-roslyn</a></td>
+<td><a href="https://github.com/mgechev/revive">Revive</a></td>
+<td><a href="https://github.com/codacy/codacy-gorevive" class="skip-vale">codacy/codacy-gorevive</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/rubocop/rubocop">RuboCop</a> <a href="#complexity-limitations"><sup>6</sup></a></td>
@@ -744,6 +740,10 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
 <td><a href="https://github.com/codacy/codacy-tsqllint" class="skip-vale">codacy/codacy-tsqllint</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a> <a href="#client-side"><sup>3</sup></a></td>
+<td><a href="https://github.com/codacy/codacy-roslyn" class="skip-vale">codacy/codacy-roslyn</a></td>
 </tr>
 </tbody>
 </table>
