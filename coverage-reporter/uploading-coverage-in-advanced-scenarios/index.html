@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to use the Codacy Coverage Reporter to upload coverage data in advanced scenarios such as when running parallel tests, using monorepos, or testing source code in multiple or unsupported languages.">
       
       
-        <meta http-equiv="last-modified" content="2024-05-30 07:45:21">
+        <meta http-equiv="last-modified" content="2024-06-18 12:04:50">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/uploading-coverage-in-advanced-scenarios/">
@@ -4223,8 +4223,9 @@ bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </s
 <h2 id="golang">Uploading coverage for Golang<a class="headerlink" href="#golang" title="Permanent link">#</a></h2>
 <p>Codacy can't automatically detect Golang coverage report files because they don't have specific file names.</p>
 <p>If you're uploading a Golang coverage report, you must also specify the report type:</p>
-<div class="highlight"><pre><span></span><code>bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
-<span class="w">    </span>--force-coverage-parser<span class="w"> </span>go<span class="w"> </span>-r<span class="w"> </span>&lt;coverage<span class="w"> </span>report<span class="w"> </span>file<span class="w"> </span>name&gt;
+<div class="highlight"><pre><span></span><code>go<span class="w"> </span><span class="nb">test</span><span class="w"> </span>-coverprofile<span class="o">=</span>unit.coverage.out<span class="w"> </span>./...
+bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </span>-Ls<span class="w"> </span>https://coverage.codacy.com/get.sh<span class="o">)</span><span class="w"> </span>report<span class="w"> </span><span class="se">\</span>
+<span class="w">    </span>--force-coverage-parser<span class="w"> </span>go<span class="w"> </span>-r<span class="w"> </span>unit.coverage.out
 </code></pre></div>
 <h2 id="unsupported-languages">Uploading coverage for unsupported languages<a class="headerlink" href="#unsupported-languages" title="Permanent link">#</a></h2>
 <p>If your language isn't in the <a href="../#generating-coverage">list of supported languages</a>, you can still send coverage to Codacy.</p>
@@ -4389,7 +4390,7 @@ bash<span class="w"> </span>&lt;<span class="o">(</span>curl<span class="w"> </s
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 30, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 18, 2024</span>
     
   </small>
 </div>
