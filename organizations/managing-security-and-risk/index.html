@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2024-06-04 12:43:29">
+        <meta http-equiv="last-modified" content="2024-06-18 15:42:27">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -1081,13 +1081,6 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#item-statuses" class="md-nav__link">
-    Finding statuses
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#item-severities-and-deadlines" class="md-nav__link">
     Finding severities and deadlines
   </a>
@@ -1095,8 +1088,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#languages-checked-for-security-issues" class="md-nav__link">
-    Languages checked for security issues
+  <a href="#item-statuses" class="md-nav__link">
+    Finding statuses
   </a>
   
 </li>
@@ -1104,6 +1097,20 @@
         <li class="md-nav__item">
   <a href="#supported-security-categories" class="md-nav__link">
     Supported security categories
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#scan-types" class="md-nav__link">
+    Scan types
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#languages-checked-for-security-issues" class="md-nav__link">
+    Languages checked for security issues
   </a>
   
 </li>
@@ -4243,7 +4250,7 @@
 <p>To access the findings page with the corresponding filter applied, click on a number.</p>
 <p><img alt="Security and risk management open findings overview panel" src="../images/security-risk-management-overview-open.png" /></p>
 <h3 id="open-findings-distribution">Open findings distribution<a class="headerlink" href="#open-findings-distribution" title="Permanent link">#</a></h3>
-<p>The <strong>Open findings distribution</strong> panel shows the relative distribution of open findings by severity or status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.</p>
+<p>The <strong>Open findings distribution</strong> panel shows the relative distribution of open findings by scan type, severity, or status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.</p>
 <p>To select the desired distribution, use the drop-down in the top right-hand corner of the panel.</p>
 <p>To access the findings page with the corresponding filter applied, click on a number.</p>
 <p><img alt="Security and risk management open findings distribution panel" src="../images/security-risk-management-overview-distribution.png" /></p>
@@ -4271,8 +4278,8 @@
 <p>The <strong>Security and risk management findings</strong> page displays a filtered list of findings. By default, this list is sorted by status, and you can click the <strong>First detected</strong> column name to sort the findings by the detection date. Use this page to review and prioritize findings and track the progress of your security efforts.</p>
 <p>To access the findings page, access the <a href="#dashboard">overview page</a> and click the <strong>Findings</strong> tab.</p>
 <p><img alt="Security and risk management findings page" src="../images/security-risk-management-findings.png" /></p>
-<p>When viewing the findings, you can update the filtering criteria by clicking the <strong>Severity</strong>, <strong>Status</strong>, <strong>Repository</strong>, or <strong>Security category</strong> drop-downs above the list.</p>
-<p>To find out more about a finding in the list, click its <strong>Details</strong> column to navigate to the finding details on the source platform.</p>
+<p>When viewing the findings, you can update the filtering criteria by clicking the <strong>Severity</strong>, <strong>Status</strong>, <strong>Repository</strong>, <strong>Security category</strong>, or <strong>Scan type</strong> drop-downs above the list.</p>
+<p>The <strong>Details</strong> column offers a quick overview of each finding in the list, including its title, <a href="#opening-and-closing-items">source platform</a>, <a href="#scan-types">scan type</a>, <a href="#supported-security-categories">security category</a>, and related information such as the repository name, Jira issue key, or penetration testing report URL. To find out more, click this overview to navigate to the finding details on the source platform.</p>
 <p><img alt="Security and risk management finding details" src="../images/security-risk-management-finding-details.png" /></p>
 <h2 id="sharing-filtered-view">Sharing a filtered view of findings<a class="headerlink" href="#sharing-filtered-view" title="Permanent link">#</a></h2>
 <p>To share the current view of the overview or findings page, click the <strong>Copy URL</strong> button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.</p>
@@ -4332,7 +4339,51 @@
 <p class="admonition-title">Note</p>
 <p>Penetration testing is available upon request and is provided by a third-party partner. See <a href="https://go.codacy.com/pen-testing-product">how to request penetration testing for your organization</a>.</p>
 </div>
-<p>Codacy opens a new finding when penetration testing results are published by our partner.</p>
+<p>Codacy opens a finding for each security issue detected during a penetration test.</p>
+<p>Codacy closes a finding when a subsequent penetration test does not detect the underlying security issue.</p>
+<h2 id="item-severities-and-deadlines">Finding severities and deadlines<a class="headerlink" href="#item-severities-and-deadlines" title="Permanent link">#</a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently, Codacy doesn't support customizing the severity rules for security findings.</p>
+</div>
+<p>The following table defines finding severities and the number of days to the deadline to fix the associated security issue, based on the importance of the underlying issue:</p>
+<table>
+<thead>
+<tr>
+<th>Finding<br/>severity</th>
+<th><br/>Days to deadline</th>
+<th>Underlying Codacy<br/>issue severity</th>
+<th>Underlying Jira<br/>issue priority <sup>1</sup></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Critical</td>
+<td>30</td>
+<td>Critical</td>
+<td>Highest</td>
+</tr>
+<tr>
+<td>High</td>
+<td>60</td>
+<td>-</td>
+<td>High</td>
+</tr>
+<tr>
+<td>Medium</td>
+<td>90</td>
+<td>Medium</td>
+<td>Medium</td>
+</tr>
+<tr>
+<td>Low</td>
+<td>120</td>
+<td>Minor</td>
+<td>Low and other/custom</td>
+</tr>
+</tbody>
+</table>
+<p><small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small></p>
 <h2 id="item-statuses">Finding statuses<a class="headerlink" href="#item-statuses" title="Permanent link">#</a></h2>
 <p>The following table describes how finding statuses map to deadlines:</p>
 <table>
@@ -4369,49 +4420,143 @@
     </tbody>
 </table>
 
-<h2 id="item-severities-and-deadlines">Finding severities and deadlines<a class="headerlink" href="#item-severities-and-deadlines" title="Permanent link">#</a></h2>
+<h2 id="supported-security-categories">Supported security categories<a class="headerlink" href="#supported-security-categories" title="Permanent link">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Currently, Codacy doesn't support customizing the severity rules for security findings.</p>
+<p>Due to a recent update, some issues may be temporarily assigned the <strong>Not yet categorized</strong> category. To categorize these issues, you can <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/#reanalyzing-a-branch">reanalyze the default branch of the relevant repository</a>. For a list of repositories that have issues with this category, use the <strong>Security category</strong> filter on the <a href="#item-list">Findings</a> page.</p>
 </div>
-<p>The following table defines finding severities and days to fix the associated security issue, based on the importance of the underlying issue:</p>
+<p>Each Codacy issue reported by Security and risk management belongs to one of the following security categories:</p>
 <table>
 <thead>
 <tr>
-<th>Finding<br/>severity</th>
-<th><br/>Days to fix</th>
-<th>Underlying Codacy<br/>issue severity</th>
-<th>Underlying Jira<br/>issue priority <sup>1</sup></th>
+<th>Security category</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Critical</td>
-<td>30</td>
-<td>Critical</td>
-<td>Highest</td>
+<td><strong>Android</strong></td>
+<td>Android-specific security issues.</td>
 </tr>
 <tr>
-<td>High</td>
-<td>60</td>
-<td>-</td>
-<td>High</td>
+<td><strong>Authentication</strong></td>
+<td>Broken authentication and authorization attacks consist in gaining access to accounts that allow disclosing sensitive information or performing operations that could compromise the system.</td>
 </tr>
 <tr>
-<td>Medium</td>
-<td>90</td>
-<td>Medium</td>
-<td>Medium</td>
+<td><strong>Command Injection</strong></td>
+<td>Command injection attacks aim to execute arbitrary commands on the host operating system.</td>
 </tr>
 <tr>
-<td>Low</td>
-<td>120</td>
-<td>Minor</td>
-<td>Low and other/custom</td>
+<td><strong>Cookies</strong></td>
+<td>Security issues related to insecure cookies.</td>
+</tr>
+<tr>
+<td><strong>Cryptography</strong></td>
+<td>Cryptography attacks exploit failures related to cryptography (or lack thereof), <span class="skip-vale">potentially</span> leading to exposure of sensitive data.</td>
+</tr>
+<tr>
+<td><strong>CSRF</strong></td>
+<td>Cross-Site Request Forgery (CSRF) attacks force an end user to execute unwanted actions on a web application in which they're currently authenticated.</td>
+</tr>
+<tr>
+<td><strong>Denial of Service</strong></td>
+<td>Denial of Service (DoS) attacks make a resource (site, application, server) unavailable for legitimate users, typically by flooding the resource with requests or exploiting a vulnerability to trigger a crash.</td>
+</tr>
+<tr>
+<td><strong>File Access</strong></td>
+<td>File access security issues may allow an attacker to access arbitrary files and directories stored on the file system such as application source code, configuration, and critical system files.</td>
+</tr>
+<tr>
+<td><strong>HTTP Headers</strong></td>
+<td>Insecure HTTP headers are a common attack vector for malicious users.</td>
+</tr>
+<tr>
+<td><strong>Input Validation</strong></td>
+<td>Client input should always be validated to prevent malformed or malicious data from entering the workflow of an information system.</td>
+</tr>
+<tr>
+<td><strong>Insecure Modules and Libraries</strong></td>
+<td>Security issues related to modules or libraries that can <span class="skip-vale">potentially</span> include vulnerabilities.</td>
+</tr>
+<tr>
+<td><strong>Insecure Storage</strong></td>
+<td>Security issues related to insecure storage of sensitive data.</td>
+</tr>
+<tr>
+<td><strong>Malicious Code</strong></td>
+<td>Security issues related to code patterns that are <span class="skip-vale">potentially</span> unsafe.</td>
+</tr>
+<tr>
+<td><strong>Mass Assignment</strong></td>
+<td>Unprotected mass assignments are a Rails feature that could allow an attacker to update sensitive model attributes.</td>
+</tr>
+<tr>
+<td><strong>Regex</strong></td>
+<td>Regular expressions can be used in Denial of Service attacks, exploiting the fact that in most regular expression implementations the computational load grows exponentially with input size.</td>
+</tr>
+<tr>
+<td><strong>Routes</strong></td>
+<td>Badly configured routes can give unintended access to an attacker.</td>
+</tr>
+<tr>
+<td><strong>SQL Injection</strong></td>
+<td>SQL injection attacks insert or "inject" malicious SQL queries into the application via the client input data.</td>
+</tr>
+<tr>
+<td><strong>SSL</strong></td>
+<td>Security issues related with old SSL versions or configurations that have known cryptographic weaknesses and should no longer be used.</td>
+</tr>
+<tr>
+<td><strong>Unexpected Behaviour</strong></td>
+<td>Security issues related to <span class="skip-vale">potentially</span> insecure system API calls.</td>
+</tr>
+<tr>
+<td><strong>Visibility</strong></td>
+<td>Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.</td>
+</tr>
+<tr>
+<td><strong>XSS</strong></td>
+<td>Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into trusted websites that are visited by the end users.</td>
+</tr>
+<tr>
+<td><strong>Other</strong></td>
+<td>Other language-specific security issues.</td>
 </tr>
 </tbody>
 </table>
-<p><small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small></p>
+<h2 id="scan-types">Scan types<a class="headerlink" href="#scan-types" title="Permanent link">#</a></h2>
+<p>Security and risk management classifies each finding with a <strong>Scan type</strong>, indicating the specific source or method used to detect the finding. This information helps you understand the origin of the finding and the context in which the underlying issue was detected.</p>
+<p>The following table lists the available scan types and their descriptions:</p>
+<table>
+<thead>
+<tr>
+<th>Scan type</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Code Scanning</strong></td>
+<td>Analysis of source code for vulnerabilities without execution. Also known as Static Application Security Testing (SAST).</td>
+</tr>
+<tr>
+<td><strong>Software Composition Analysis</strong></td>
+<td>Analysis of external libraries and packages for vulnerabilities or outdated versions.</td>
+</tr>
+<tr>
+<td><strong>Exposed Secrets</strong></td>
+<td>Detection of sensitive information, such as passwords or API keys, inadvertently included in the code.</td>
+</tr>
+<tr>
+<td><strong>Infrastructure as Code</strong></td>
+<td>Detection of configuration issues within infrastructure-as-code (IaC) files that could pose risks.</td>
+</tr>
+<tr>
+<td><strong>Penetration Testing</strong></td>
+<td>Results from <a href="#opening-and-closing-pen-testing-items">penetration testing</a> to find security vulnerabilities in running code.</td>
+</tr>
+</tbody>
+</table>
 <h2 id="languages-checked-for-security-issues">Languages checked for security issues<a class="headerlink" href="#languages-checked-for-security-issues" title="Permanent link">#</a></h2>
 <p>Security and risk management supports checking the languages and infrastructure-as-code platforms below for any Codacy security issues reported by the corresponding tools:</p>
 <table>
@@ -4589,110 +4734,6 @@
 <sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin <a href="https://find-sec-bugs.github.io/">Find Security Bugs</a>.<br />
 <sup><span id="eslint-plugin">5</span></sup>: Includes the plugins <a href="https://www.npmjs.com/package/eslint-plugin-no-unsanitized">no-unsanitized</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security">security</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security-node">security-node</a>, and <a href="https://www.npmjs.com/package/eslint-plugin-xss">xss</a>.<br />
 <sup><span id="ruby-31">6</span></sup>: Currently, Codacy doesn't support any static code analysis tool for <a href="https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/">Ruby 3.1</a>.  </p>
-<h2 id="supported-security-categories">Supported security categories<a class="headerlink" href="#supported-security-categories" title="Permanent link">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Due to a recent update, some issues may be temporarily assigned the <strong>Not yet categorized</strong> category. To categorize these issues, you can <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/#reanalyzing-a-branch">reanalyze the default branch of the relevant repository</a>. For a list of repositories that have issues with this category, use the <strong>Security category</strong> filter on the <a href="#item-list">Findings</a> page.</p>
-</div>
-<p>Each Codacy issue reported by Security and risk management belongs to one of the following security categories:</p>
-<table>
-<thead>
-<tr>
-<th>Security category</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><strong>Android</strong></td>
-<td>Android-specific security issues.</td>
-</tr>
-<tr>
-<td><strong>Authentication</strong></td>
-<td>Broken authentication and authorization attacks consist in gaining access to accounts that allow disclosing sensitive information or performing operations that could compromise the system.</td>
-</tr>
-<tr>
-<td><strong>Command Injection</strong></td>
-<td>Command injection attacks aim to execute arbitrary commands on the host operating system.</td>
-</tr>
-<tr>
-<td><strong>Cookies</strong></td>
-<td>Security issues related to insecure cookies.</td>
-</tr>
-<tr>
-<td><strong>Cryptography</strong></td>
-<td>Cryptography attacks exploit failures related to cryptography (or lack thereof), <span class="skip-vale">potentially</span> leading to exposure of sensitive data.</td>
-</tr>
-<tr>
-<td><strong>CSRF</strong></td>
-<td>Cross-Site Request Forgery (CSRF) attacks force an end user to execute unwanted actions on a web application in which they're currently authenticated.</td>
-</tr>
-<tr>
-<td><strong>Denial of Service</strong></td>
-<td>Denial of Service (DoS) attacks make a resource (site, application, server) unavailable for legitimate users, typically by flooding the resource with requests or exploiting a vulnerability to trigger a crash.</td>
-</tr>
-<tr>
-<td><strong>File Access</strong></td>
-<td>File access security issues may allow an attacker to access arbitrary files and directories stored on the file system such as application source code, configuration, and critical system files.</td>
-</tr>
-<tr>
-<td><strong>HTTP Headers</strong></td>
-<td>Insecure HTTP headers are a common attack vector for malicious users.</td>
-</tr>
-<tr>
-<td><strong>Input Validation</strong></td>
-<td>Client input should always be validated to prevent malformed or malicious data from entering the workflow of an information system.</td>
-</tr>
-<tr>
-<td><strong>Insecure Modules and Libraries</strong></td>
-<td>Security issues related to modules or libraries that can <span class="skip-vale">potentially</span> include vulnerabilities.</td>
-</tr>
-<tr>
-<td><strong>Insecure Storage</strong></td>
-<td>Security issues related to insecure storage of sensitive data.</td>
-</tr>
-<tr>
-<td><strong>Malicious Code</strong></td>
-<td>Security issues related to code patterns that are <span class="skip-vale">potentially</span> unsafe.</td>
-</tr>
-<tr>
-<td><strong>Mass Assignment</strong></td>
-<td>Unprotected mass assignments are a Rails feature that could allow an attacker to update sensitive model attributes.</td>
-</tr>
-<tr>
-<td><strong>Regex</strong></td>
-<td>Regular expressions can be used in Denial of Service attacks, exploiting the fact that in most regular expression implementations the computational load grows exponentially with input size.</td>
-</tr>
-<tr>
-<td><strong>Routes</strong></td>
-<td>Badly configured routes can give unintended access to an attacker.</td>
-</tr>
-<tr>
-<td><strong>SQL Injection</strong></td>
-<td>SQL injection attacks insert or "inject" malicious SQL queries into the application via the client input data.</td>
-</tr>
-<tr>
-<td><strong>SSL</strong></td>
-<td>Security issues related with old SSL versions or configurations that have known cryptographic weaknesses and should no longer be used.</td>
-</tr>
-<tr>
-<td><strong>Unexpected Behaviour</strong></td>
-<td>Security issues related to <span class="skip-vale">potentially</span> insecure system API calls.</td>
-</tr>
-<tr>
-<td><strong>Visibility</strong></td>
-<td>Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.</td>
-</tr>
-<tr>
-<td><strong>XSS</strong></td>
-<td>Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into trusted websites that are visited by the end users.</td>
-</tr>
-<tr>
-<td><strong>Other</strong></td>
-<td>Other language-specific security issues.</td>
-</tr>
-</tbody>
-</table>
               
               
                 
@@ -4849,7 +4890,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 4, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 18, 2024</span>
     
   </small>
 </div>
