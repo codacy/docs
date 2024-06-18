@@ -11,7 +11,7 @@
         <meta name="description" content="Coding standards enable the analysis of multiple repositories with the same tool and code pattern configurations, ensuring consistent code quality across your organization. For example, you can use a coding standard to ensure that a group of repositories follows the same security rules or coding conventions.">
       
       
-        <meta http-equiv="last-modified" content="2024-05-29 10:41:35">
+        <meta http-equiv="last-modified" content="2024-06-18 08:36:34">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/using-coding-standards/">
@@ -968,8 +968,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#guided-setup" class="md-nav__link">
+    Configuring a coding standard (guided setup)
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#advanced-settings" class="md-nav__link">
-    Configuring a coding standard using advanced settings
+    Configuring a coding standard (advanced setup)
   </a>
   
 </li>
@@ -4199,7 +4206,8 @@
 <p>This page covers the following topics:</p>
 <ul>
 <li><a href="#creating">Creating a coding standard</a></li>
-<li><a href="#advanced-settings">Configuring a coding standard using advanced settings</a></li>
+<li><a href="#guided-setup">Configuring a coding standard (guided setup)</a></li>
+<li><a href="#advanced-settings">Configuring a coding standard (advanced setup)</a></li>
 <li><a href="#set-default">Defining a default coding standard</a></li>
 <li><a href="#editing">Editing a coding standard</a></li>
 <li><a href="#deleting">Deleting a coding standard</a></li>
@@ -4220,16 +4228,28 @@
 </li>
 <li>
 <p>Enter a unique name for the new coding standard.</p>
-<p>Optionally, you can:</p>
+<p>Optionally, check <strong>Make default</strong> to set the new coding standard as your organization's <a href="#set-default">default coding standard</a>, so it applies automatically to new repositories.</p>
+</li>
+<li>
+<p>Choose whether to create the coding standard using a guided or advanced setup:</p>
 <ul>
-<li>Select a repository to use as a baseline for the new coding standard. This is useful if you already have a well-configured repository that you wish to use as a template.</li>
-<li>Set the new coding standard as your organization's <a href="#set-default">default coding standard</a>, so it applies automatically to new repositories.</li>
+<li>
+<p>The <strong>guided setup</strong> lets you choose preset sensitivity levels for each issue type, turning on relevant patterns in bulk. It's ideal for quickly setting up a coding standard with minimal effort. You can always fine-tune the coding standard by editing it later using the advanced setup.</p>
+</li>
+<li>
+<p>The <strong>advanced setup</strong> lets you choose individual languages and code patterns to activate. It's ideal for fine-tuning the coding standard to your organization's specific needs, offering more control over the tools and code patterns used.</p>
+<p>With the advanced setup, you can optionally <strong>select a repository as the baseline</strong> for the new coding standard. This is useful if you already have a well-configured repository that you wish to use as a template.</p>
+</li>
 </ul>
 <p><img alt="Creating a new coding standard" src="../images/coding-standard-create.png" /></p>
 </li>
 <li>
-<p>Click <strong>Create coding standard</strong>.</p>
+<p>Click <strong>Create coding standard</strong> to proceed to the <a href="#guided-setup">guided setup</a> or <a href="#advanced-settings">advanced setup</a>, depending on your choice.</p>
 </li>
+</ol>
+<h2 id="guided-setup">Configuring a coding standard (guided setup)<a class="headerlink" href="#guided-setup" title="Permanent link">#</a></h2>
+<p>If you selected <strong>Guided setup</strong> when <a href="#creating">creating a new coding standard</a>, follow these steps:</p>
+<ol>
 <li>
 <p>Adjust the sensitivity of the coding standard from <strong>Essential</strong> to <strong>Comprehensive</strong> for each issue category group:</p>
 <ul>
@@ -4240,7 +4260,6 @@
 <p class="admonition-title">Tip</p>
 <p>Initially, set the sensitivity to <strong>Essential</strong> for most category groups to focus on critical code patterns. It helps streamline the integration process with Codacy without overwhelming developers with too many reported issues. You can gradually include more patterns as needed.</p>
 </div>
-<p>If you want more control over included code patterns, click <strong>Advanced settings</strong> to <a href="#advanced-settings">customize the coding standard</a>.</p>
 <p><img alt="Coding standard presets" src="../images/coding-standard-presets.png" /></p>
 </li>
 <li>
@@ -4256,9 +4275,8 @@
 <p><img alt="Applying the coding standard to repositories" src="../images/coding-standard-apply.png" /></p>
 </li>
 </ol>
-<h2 id="advanced-settings">Configuring a coding standard using advanced settings<a class="headerlink" href="#advanced-settings" title="Permanent link">#</a></h2>
-<p>If you need more control when <a href="#creating">creating a new coding standard</a>, click <strong>Advanced settings</strong> to more precisely define the tools and code patterns that the coding standard should use. When editing an existing coding standard, the advanced settings are the default view.</p>
-<p>To configure a coding standard using advanced settings:</p>
+<h2 id="advanced-settings">Configuring a coding standard (advanced setup)<a class="headerlink" href="#advanced-settings" title="Permanent link">#</a></h2>
+<p>If you selected <strong>Advanced setup</strong> when <a href="#creating">creating a new coding standard</a> or are editing an existing coding standard, follow these steps:</p>
 <ol>
 <li>
 <p>Select the programming languages that the new coding standard should include.</p>
@@ -4337,6 +4355,10 @@
 </li>
 <li>
 <p>Edit the current coding standard configurations and click the button <strong>Next</strong> to advance to the following <a href="#advanced-settings">configuration pages</a>:</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>When editing an existing coding standard, the <a href="#advanced-settings">advanced setup</a> is the default view.</p>
+</div>
 <ul>
 <li>
 <p><strong>Select languages</strong>: the programming languages that the coding standard applies to.</p>
@@ -4536,7 +4558,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 29, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 18, 2024</span>
     
   </small>
 </div>
