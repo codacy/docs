@@ -11,7 +11,7 @@
         <meta name="description" content="Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages.">
       
       
-        <meta http-equiv="last-modified" content="2024-06-07 14:19:27">
+        <meta http-equiv="last-modified" content="2024-06-18 12:09:29">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/codacy-configuration-file/">
@@ -868,6 +868,13 @@
         <li class="md-nav__item">
   <a href="#ignore-files" class="md-nav__link">
     Ignoring files using a Codacy configuration file
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#include-files" class="md-nav__link">
+    Including specific files using a Codacy configuration file
   </a>
   
 </li>
@@ -4180,6 +4187,9 @@
 <p><a href="#ignore-files">Ignoring files</a> globally, for duplication, or a specific tool</p>
 </li>
 <li>
+<p><a href="#include-files">Including specific ignored files</a> in the analysis</p>
+</li>
+<li>
 <p>Adjusting <a href="#tool-conf">tool-specific configurations</a></p>
 </li>
 <li>
@@ -4223,12 +4233,16 @@
 <span class="w">  </span><span class="nt">css</span><span class="p">:</span>
 <span class="w">    </span><span class="nt">extensions</span><span class="p">:</span>
 <span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;.scss&quot;</span>
+<span class="w">  </span><span class="nt">python</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">enabled</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">false</span>
 <span class="nt">exclude_paths</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;.bundle/**&quot;</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;spec/**/*&quot;</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;benchmarks/**/*&quot;</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**.min.js&quot;</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**/tests/**&quot;</span>
+<span class="nt">include_paths</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**/tests/integration/**&quot;</span>
 </code></pre></div>
 </li>
 <li>
@@ -4285,6 +4299,23 @@
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;test/README.md&quot;</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;**/*.resource&quot;</span>
 </code></pre></div>
+<h2 id="include-files">Including specific files using a Codacy configuration file<a class="headerlink" href="#include-files" title="Permanent link">#</a></h2>
+<p>The Codacy configuration file allows you to explicitly specify files or directories to include in the analysis. This is particularly useful for <a href="../ignoring-files/#default-ignored-files">bypassing files or directories that are ignored by default</a> or specified in <code>exclude_paths</code>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If both <code>exclude_paths</code> and <code>include_paths</code> are defined, <code>include_paths</code> will specify exceptions to the exclusions defined in <code>exclude_paths</code>.</p>
+</div>
+<h3 id="syntax-for-including-files">Syntax for including files<a class="headerlink" href="#syntax-for-including-files" title="Permanent link">#</a></h3>
+<p>To include specific files using a Codacy configuration file, you must define one or more patterns under <code>include_paths</code> <a href="#syntax-for-ignoring-files">using the same syntax as <code>exclude_paths</code></a>.</p>
+<p>For example:</p>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">exclude_paths</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;lib*/**&quot;</span>
+<span class="nt">include_paths</span><span class="p">:</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;lib-a/**&quot;</span>
+<span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;libs/**&quot;</span>
+</code></pre></div>
+<p>In this example, while all directories matching <code>lib*</code> are excluded, <code>lib-a</code> is specifically included for analysis, as well as any files within <code>libs</code>.</p>
 <h2 id="tool-conf">Adjusting tool configurations<a class="headerlink" href="#tool-conf" title="Permanent link">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -4622,7 +4653,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 7, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 18, 2024</span>
     
   </small>
 </div>
