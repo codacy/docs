@@ -17,9 +17,9 @@ The table below lists the events that Codacy logs for your organization at user,
 |-----|-----------|
 |Sign up|User signed up to Codacy|
 |Log in|User logged in to Codacy|
-|Create account API token|New [account API token](../../codacy-api/api-tokens.md#account-api-tokens) created|
-|Read account API token|List of [account API tokens](../../codacy-api/api-tokens.md#account-api-tokens) retrieved|
-|Delete account API token|[Account API token](../../codacy-api/api-tokens.md#account-api-tokens) deleted|
+|Create account API token|New [account API token](../codacy-api/api-tokens.md#account-api-tokens) created|
+|Read account API token|List of [account API tokens](../codacy-api/api-tokens.md#account-api-tokens) retrieved|
+|Delete account API token|[Account API token](../codacy-api/api-tokens.md#account-api-tokens) deleted|
 |Add Git provider|New Git provider added to Codacy|
 
 ## Organization
@@ -53,8 +53,8 @@ The table below lists the events that Codacy logs for your organization at user,
 |Event|Description|
 |-----|-----------|
 |Create new post-commit hook|New repository hook created|
-|Create repository API token|New [repository API token](../../codacy-api/api-tokens.md#repository-api-tokens) created|
-|Read repository API token|List of [repository API tokens](../../codacy-api/api-tokens.md#repository-api-tokens) retrieved|
-|Delete repository API token|[Repository API token](../../codacy-api/api-tokens.md#repository-api-tokens) deleted|
+|Create repository API token|New [repository API token](../codacy-api/api-tokens.md#repository-api-tokens) created|
+|Read repository API token|List of [repository API tokens](../codacy-api/api-tokens.md#repository-api-tokens) retrieved|
+|Delete repository API token|[Repository API token](../codacy-api/api-tokens.md#repository-api-tokens) deleted|
 |Update Git provider settings|Git provider settings for the repository updated|
 |Refresh Git provider integration|Git provider integration refreshed (applies only to Bitbucket and GitLab)|
