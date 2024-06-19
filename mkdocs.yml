@@ -609,6 +609,7 @@ nav:
                 - Jira integration for Security and risk management: organizations/integrations/jira-integration.md
           - organizations/managing-security-and-risk.md
           - organizations/managing-people.md
+          - organizations/audit-logs-for-organizations.md
           - organizations/roles-and-permissions-for-organizations.md
           - organizations/changing-your-plan-and-billing.md
     - Your account:
