@@ -30,16 +30,16 @@ ORGANIZATION="<your organization name>"
 
 curl -X GET "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/audit" \
      -H "api-token: $CODACY_API_TOKEN" \
-| jq -r ".data[] | [.actor, .action, .timestamp, .result, .source, .repositoryName, .requestDetails] | @csv"
+| jq -r ".data[] | [.actor.email, .actor.role, .action, .timestamp, .result, .source, .repositoryName, .requestDetails] | @csv"
 ```
 
 Example output:<!--TODO PLUTO-952 Update output-->
 
 ```text
-"src/components/router/index.ts","A",0,8,70,0
-"src/components/router/Link.tsx","A",0,5,100,0
-"src/components/router/Redirect.tsx","B",0,2,14,0
-"src/components/router/routes/account.ts","A",0,0,100,0
+"joe@email.com","organizationAdmin","repository.add",1606929874512,"succeed","UI","service-repo",""
+"joe@email.com","organizationAdmin","repository.add",1606929874512,"succeed","UI","service-repo",""
+"joe@email.com","organizationAdmin","repository.add",1606929874512,"succeed","UI","service-repo",""
+"joe@email.com","organizationAdmin","repository.add",1606929874512,"succeed","UI","service-repo",""
 [...]
 ```
 
