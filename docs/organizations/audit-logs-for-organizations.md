@@ -12,7 +12,7 @@ Codacy logs important events in your organization which enables the generation o
 
 ## Audit log events
 
-Each audit log tracks when a Codacy user executed a specific operation in your organization, which is identified by an **action**. For the details of each audit log, see the [Codacy API reference](https://api.codacy.com/api/api-docs#codacy-api).<!--TODO PLUTO-952 Update link-->
+Each audit log tracks when a Codacy user executed a specific operation in your organization, which is identified by an **action**. For the detailed content of each audit log, see the [Codacy API reference](https://api.codacy.com/api/api-docs#codacy-api).<!--TODO PLUTO-952 Update link-->
 
 The sections below list the events that Codacy logs for your organization at user, organization, and repository levels.
 
@@ -21,10 +21,10 @@ The sections below list the events that Codacy logs for your organization at use
 |Event|Description|Action|
 |-----|-----------|------|
 |Sign up|User signed up to Codacy||
-|Log in|User logged in to Codacy||
-|Create account API token|New [account API token](../codacy-api/api-tokens.md#account-api-tokens) created||
-|Read account API token|List of [account API tokens](../codacy-api/api-tokens.md#account-api-tokens) retrieved||
-|Delete account API token|[Account API token](../codacy-api/api-tokens.md#account-api-tokens) deleted||
+|Log in|User logged in to Codacy|`account.login`|
+|Create account API token|New [account API token](../codacy-api/api-tokens.md#account-api-tokens) created|`token.create`|
+|Read account API token|List of [account API tokens](../codacy-api/api-tokens.md#account-api-tokens) retrieved|`token.read`|
+|Delete account API token|[Account API token](../codacy-api/api-tokens.md#account-api-tokens) deleted|`token.delete`|
 |Add Git provider|New Git provider added to Codacy||
 
 ### Organization
