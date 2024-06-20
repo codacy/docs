@@ -1,9 +1,9 @@
 # Which events can Codacy log for my organization?
 
 !!! important
-    **THIS IS A TEMPORARY PAGE AND IT WILL BE REMOVED SOON**<!--TODO PLUTO-952 Delete this page and the related mkdocs.yml entry-->
+    **THIS IS A TEMPORARY PAGE AND IT WILL BE DELETED SOON**<!--TODO PLUTO-952 Delete this page and the related mkdocs.yml entry-->
 
-        See [Does Codacy keep audit logs for my organization?](./does-codacy-keep-audit-logs.md) instead.
+    See [Does Codacy keep audit logs for my organization?](./does-codacy-keep-audit-logs.md) instead.
 
 !!! info "This feature is available only to business tier customers"
 
