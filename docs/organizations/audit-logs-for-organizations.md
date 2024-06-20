@@ -6,12 +6,15 @@ description: List of events that Codacy can log an organization.
 
 !!! info "This feature is available only to business tier customers"
 
-< CONCEPT >
-< HOW TO USE THE FEATURE >
+Codacy logs important events in your organization which enables the generation of comprehensive reports to assist you with the audit process. For example, you can track who added a repository to Codacy, or changed the settings of a coding standard.
 
-The table below lists the events that Codacy logs for your organization at user, organization, and repository levels.
+[Organization admins and organization managers](./roles-and-permissions-for-organizations.md) can retrieve audit log reports [using the Codacy API](../codacy-api/examples/obtaining-audit-log-events-for-organization.md).
 
-## User
+The section below lists the events that Codacy logs for your organization at user, organization, and repository levels.
+
+## Audit log events
+
+### User
 
 |Event|Description|
 |-----|-----------|
@@ -22,7 +25,7 @@ The table below lists the events that Codacy logs for your organization at user,
 |Delete account API token|[Account API token](../codacy-api/api-tokens.md#account-api-tokens) deleted|
 |Add Git provider|New Git provider added to Codacy|
 
-## Organization
+### Organization
 
 |Event|Description|
 |-----|-----------|
@@ -48,7 +51,7 @@ The table below lists the events that Codacy logs for your organization at user,
 |?Make coding standard default?|Coding standard was made the default (validate)|
 |Delete coding standard|Coding standard deleted|
 
-## Repository
+### Repository
 
 |Event|Description|
 |-----|-----------|
