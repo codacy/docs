@@ -37,7 +37,6 @@ Follow the steps below to upgrade to Codacy Self-hosted v14.0.0:
 
 This version of Codacy Self-hosted includes the tool versions below. The tools that were updated on this version are highlighted in bold:
 
--   @coffeelint/cli 5.2.11
 -   **[Ameba 1.5.0](https://github.com/crystal-ameba/ameba/releases/tag/v1.5.0) (updated from 1.4.3)**
 -   Bandit 1.7.5
 -   Brakeman 4.3.1
@@ -46,6 +45,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **[Checkstyle 10.13.0](https://checkstyle.sourceforge.io/releasenotes.html#Release_10.13.0) (updated from 10.12.3)**
 -   Clang-Tidy 10.0.1
 -   CodeNarc 3.3.0
+-   CoffeeLint 5.2.11
 -   Cppcheck 2.12.0
 -   **Credo 1.7.2 (updated from 1.4.0)**
 -   CSSLint (deprecated) 1.0.5
@@ -63,7 +63,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   **[PHP Mess Detector 2.14.1](https://github.com/phpmd/phpmd/releases/tag/2.14.1) (updated from 2.13.0)**
 -   PHP_CodeSniffer 3.7.2
 -   PMD 6.55.0
--   **[Prospector 1.10.3](https://github.com/landscapeio/prospector/releases/tag/1.10.3) (updated from 1.10.2)**
+-   **[Prospector 1.10.3](https://github.com/landscapeio/prospector/releases/tag/v1.10.3) (updated from 1.10.2)**
 -   PSScriptAnalyzer 1.21.0
 -   **[Pylint 3.0.3](https://github.com/pylint-dev/pylint/releases/tag/v3.0.3) (updated from 2.17.5)**
 -   Pylint (deprecated) 1.9.5
@@ -74,10 +74,10 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   ShellCheck v0.9.0
 -   **[SonarC# 9.19](https://github.com/SonarSource/sonar-dotnet/tags) (updated from 8.40)**
 -   SonarVB 8.15
--   **[Spectral 1.18.1](https://github.com/stoplightio/spectral/releases/tag/%40stoplight%2Fspectral-rulesets-v1.18.1) (updated from 1.16.0)**
+-   **[Spectral 1.18.1](https://github.com/stoplightio/spectral/releases/tag/%40stoplight%2Fspectral-rulesets-1.18.1) (updated from 1.16.0)**
 -   **[SpotBugs 4.8.3](https://github.com/spotbugs/spotbugs/releases/tag/4.8.3) (updated from 4.7.3)**
 -   SQLint 0.2.1
--   **[Staticcheck 2023.1.6](https://staticcheck.io/changes/2023.1.6/#2023.1.6) (updated from 2023.1.5)**
+-   **[Staticcheck 2023.1.6](https://staticcheck.io/changes/2023.1/#2023.1.6) (updated from 2023.1.5)**
 -   Stylelint 15.10.3
 -   **[SwiftLint 0.54.0](https://github.com/realm/SwiftLint/releases/tag/0.54.0) (updated from 0.50.3)**
 -   Tailor 0.12.0
