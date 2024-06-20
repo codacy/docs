@@ -2,7 +2,6 @@
 
 To reduce the risk of unauthorized access to your account, Codacy sets automatic expiration timeouts for every session. When a session expires, Codacy invalidates the session both on the client and server side, and creates a new session.
 
-If your Git provider session is still valid by the time Codacy creates a new session, you will be automatically logged in again. In some specific scenarios, you might need to select your Git provider before logging in again.
 
 ## Idle session timeout
 
