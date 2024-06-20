@@ -14,12 +14,13 @@ For example, you may want to generate an audit log report for your organization,
 
 This example exports the actor, action, timestamp, result, source, repository name, and details in CSV format for [all tracked events](../../organizations/audit-logs-for-organizations.md) of your organization.
 
-!!! important
-   The user authenticating on the Codacy API must be an organization admin or organization manager.
-
 The example script:
 
 1.  Defines the [account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
+
+    !!! note
+        The user authenticating on the Codacy API must be an [organization admin or organization manager](../../organizations/roles-and-permissions-for-organizations.md).
+
 1.  Calls the endpoint [<span class="skip-vale">listAuditLogsForOrganization</span>](https://api.codacy.com/api/api-docs#codacy-api-organization) to retrieve the audit log events for your organization.<!--TODO PLUTO-952 Update link-->
 1.  Uses [jq](https://github.com/stedolan/jq) to select only the necessary data fields and convert the results to the CSV format.<!--TODO PLUTO-952 Confirm pagination usage-->
 
