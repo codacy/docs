@@ -1,5 +1,5 @@
 ---
-description: List of events that Codacy can log an organization.
+description: List of events that Codacy can log for an organization.
 ---
 
 # Audit logs for organizations
