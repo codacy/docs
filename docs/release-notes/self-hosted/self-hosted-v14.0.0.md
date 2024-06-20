@@ -12,48 +12,6 @@ These release notes are for [Codacy Self-hosted v14.0.0](https://github.com/coda
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
-<!--TODO Check these issues manually
-
-Jira issues without release notes
-
-Epics:
--   https://codacy.atlassian.net/browse/TCE-604
--   https://codacy.atlassian.net/browse/DOCS-209
-Bugs and other issues:
--   https://codacy.atlassian.net/browse/TCE-731
--   https://codacy.atlassian.net/browse/TCE-673
--   https://codacy.atlassian.net/browse/TCE-602
--   https://codacy.atlassian.net/browse/TCE-576
-
-Jira issues with disabled release notes
-
-Epics:
-Bugs and other issues:
--   https://codacy.atlassian.net/browse/TCE-713
--   https://codacy.atlassian.net/browse/TCE-712
--   https://codacy.atlassian.net/browse/TCE-704
--   https://codacy.atlassian.net/browse/TCE-687
--   https://codacy.atlassian.net/browse/TCE-686
--   https://codacy.atlassian.net/browse/TCE-685
--   https://codacy.atlassian.net/browse/TCE-679
--   https://codacy.atlassian.net/browse/TCE-678
--   https://codacy.atlassian.net/browse/TCE-660
--   https://codacy.atlassian.net/browse/TCE-659
--   https://codacy.atlassian.net/browse/TCE-651
--   https://codacy.atlassian.net/browse/TCE-647
--   https://codacy.atlassian.net/browse/TCE-645
--   https://codacy.atlassian.net/browse/TCE-637
--   https://codacy.atlassian.net/browse/TCE-636
--   https://codacy.atlassian.net/browse/TCE-635
--   https://codacy.atlassian.net/browse/TCE-622
--   https://codacy.atlassian.net/browse/TCE-610
--   https://codacy.atlassian.net/browse/TCE-577
--   https://codacy.atlassian.net/browse/TCE-573
--   https://codacy.atlassian.net/browse/TCE-562
--   https://codacy.atlassian.net/browse/IO-812
--   https://codacy.atlassian.net/browse/IO-393
--->
-
 ## Upgrading Codacy Self-hosted
 
 Follow the steps below to upgrade to Codacy Self-hosted v14.0.0:
