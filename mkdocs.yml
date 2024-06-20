@@ -638,6 +638,7 @@ nav:
                 - faq/general/how-does-codacy-support-bitbucket-server.md
                 - faq/general/how-does-codacy-keep-my-data-secure.md
                 - faq/general/how-does-codacy-protect-my-privacy.md
+                - faq/general/does-codacy-keep-audit-logs.md
                 - faq/general/which-events-can-codacy-log.md
                 - faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider.md
                 - faq/general/how-can-i-change-or-cancel-my-plan.md
