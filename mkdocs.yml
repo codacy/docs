@@ -29,7 +29,7 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    codacy_self_hosted_version: "13.0.0"
+    codacy_self_hosted_version: "14.0.0"
     codacy_coverage_reporter_version: "13.13.14"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
