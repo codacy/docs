@@ -14,6 +14,8 @@ The retention period of audit logs for organization events is one year.
 
 ## Audit log events
 
+<!--TODO PLUTO-952 Update the action for each event-->
+
 Each audit log tracks when a Codacy user executed a specific operation in your organization, which is identified by an **action**. For the detailed content of each audit log, see the [Codacy API reference](https://api.codacy.com/api/api-docs#codacy-api).<!--TODO PLUTO-952 Update link-->
 
 The sections below list the events that Codacy logs for your organization at user, organization, and repository levels.
