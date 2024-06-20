@@ -10,6 +10,8 @@ Codacy logs important events in your organization which enables the generation o
 
 [Organization admins and organization managers](./roles-and-permissions-for-organizations.md) can retrieve audit log reports of organization events [using the Codacy API](../codacy-api/examples/obtaining-audit-log-events-for-organization.md).
 
+The retention period of audit logs for organization events is one year.
+
 ## Audit log events
 
 Each audit log tracks when a Codacy user executed a specific operation in your organization, which is identified by an **action**. For the detailed content of each audit log, see the [Codacy API reference](https://api.codacy.com/api/api-docs#codacy-api).<!--TODO PLUTO-952 Update link-->
