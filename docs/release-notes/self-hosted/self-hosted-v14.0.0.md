@@ -69,9 +69,11 @@ Follow the steps below to upgrade to Codacy Self-hosted v14.0.0:
 
 ## Product enhancements
 
+-   ESLint now supports file extensions `.cjs` (JavaScript) and `.mts` (TypeScript). (TCE-673)
 
 ## Bug fixes
 
+-   Fixed an issue that caused the coverage settings page to time out when loading. (TCE-1001)
 
 ## Tool versions
 
