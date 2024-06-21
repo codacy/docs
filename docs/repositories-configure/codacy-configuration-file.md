@@ -23,12 +23,7 @@ Codacy supports configuring certain advanced features through a configuration fi
 
 !!! important
     -   If your repository has a Codacy configuration file, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must [ignore files using the configuration file](#syntax-for-ignoring-files) instead.
-    -   Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the Codacy configuration file, the analysis results take those changes into account. However, if the Codacy configuration file **in the default branch** includes settings to [ignore files](#syntax-for-ignoring-files):
-
-        -   The analysis results of any branch always take the ignore settings defined **in the default branch** into account.
-        -   The ignore settings of the Codacy configuration file **in the branch being analyzed** are cumulative and don't override the settings defined **in the default branch**.
-        
-        For example, if the Codacy configuration file **in the default branch** excludes file A from analysis, that file will be excluded from analysis **in any branch being analyzed** even if you remove that rule from the Codacy configuration file in that branch.
+    -   Except for [ignored files](#ignore-files), Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if a pull request modifies the Codacy configuration file, Codacy uses the updated configuration file to analyze that pull request.
 
 To use a Codacy configuration file:
 
@@ -79,9 +74,10 @@ To use a Codacy configuration file:
 
 The Codacy configuration file gives you more flexibility in [ignoring or excluding files](ignoring-files.md) from the Codacy analysis.
 
-!!! note
-    {% include-markdown "../assets/includes/coverage-ignore.md" %}
-
+!!! important
+    -   If the Codacy configuration file **in the default branch** includes settings to ignore files, that version takes precedence over the ignore settings defined **in the branch being analyzed**. For example, if a pull request removes an ignored path from the Codacy configuration file, any matching files will stay ignored until that pull request is merged into the default branch.
+    -   {% include-markdown "../assets/includes/coverage-ignore.md" %}
+  
 ### Syntax for ignoring files
 
 To ignore files using a Codacy configuration file, you must define one or more patterns under `exclude_paths` using the [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29):
