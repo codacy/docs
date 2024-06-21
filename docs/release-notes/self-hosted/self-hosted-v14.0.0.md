@@ -27,6 +27,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v14.0.0:
 
 ## Product enhancements
 
+-   Added support for [Kubernetes 1.27](https://docs.codacy.com/v14.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup). (REL-1428)
 -   ESLint now supports file extensions `.cjs` (JavaScript) and `.mts` (TypeScript). (TCE-673)
 
 ## Bug fixes
