@@ -22,8 +22,8 @@ Follow the steps below to upgrade to Codacy Self-hosted v14.0.0:
 
 1.  Update your Codacy command-line tools to the following versions:<!--TODO Update CLI tool versions-->
 
-    -   [Codacy Analysis CLI MAJOR.MINOR.PATCH](https://github.com/codacy/codacy-analysis-cli/releases/tag/MAJOR.MINOR.PATCH)
-    -   [Codacy Coverage Reporter MAJOR.MINOR.PATCH](https://github.com/codacy/codacy-coverage-reporter/releases/tag/MAJOR.MINOR.PATCH)
+    -   [Codacy Analysis CLI 7.9.5](https://github.com/codacy/codacy-analysis-cli/releases/tag/7.9.5)
+    -   [Codacy Coverage Reporter 13.10.15](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.10.15)
 
 ## Product enhancements
 
