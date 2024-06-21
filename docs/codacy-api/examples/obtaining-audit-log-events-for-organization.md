@@ -12,7 +12,7 @@ For example, you may want to generate an audit log report for your organization,
 
 ## Example: Obtaining audit log events for your organization
 
-This example exports the actor, action, timestamp, result, source, repository name, and details in CSV format for [all tracked events](../../organizations/audit-logs-for-organizations.md) of your organization.
+This example exports the actor, action, timestamp, result, source, repository name, and log details in CSV format for [all tracked events](../../organizations/audit-logs-for-organizations.md) of your organization.
 
 The example script:
 
@@ -31,7 +31,7 @@ ORGANIZATION="<your organization name>"
 
 curl -X GET "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/audit" \
      -H "api-token: $CODACY_API_TOKEN" \
-| jq -r ".data[] | [.actor.email, .actor.role, .action, .timestamp, .result, .source, .repositoryName, .requestDetails] | @csv"
+| jq -r ".data[] | [.actor.email, .actor.role, .action, .timestamp, .result, .source, .repositoryName, .requestDetails] | @csv"<!--TODO PLUTO-952 Update example removing pagination-->
 ```
 
 Example output:<!--TODO PLUTO-952 Update output-->
@@ -43,8 +43,6 @@ Example output:<!--TODO PLUTO-952 Update output-->
 "joe@email.com","organizationAdmin","repository.add",1606929874512,"succeed","UI","service-repo",""
 [...]
 ```
-
-{% include-markdown "../../assets/includes/api-example-pagination-important.md" %}
 
 ## See also
 
