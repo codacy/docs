@@ -20,7 +20,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v14.0.0:
 
 1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v14.0/chart/maintenance/upgrade/).
 
-1.  Update your Codacy command-line tools to the following versions:<!--TODO Update CLI tool versions-->
+1.  Update your Codacy command-line tools to the following versions:
 
     -   [Codacy Analysis CLI 7.9.5](https://github.com/codacy/codacy-analysis-cli/releases/tag/7.9.5)
     -   [Codacy Coverage Reporter 13.10.15](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.10.15)
