@@ -31,7 +31,7 @@ ORGANIZATION="<your organization name>"
 
 curl -X GET "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/audit" \
      -H "api-token: $CODACY_API_TOKEN" \
-| jq -r ".data[] | [.actor.email, .actor.role, .action, .timestamp, .result, .source, .repositoryName, .requestDetails] | @csv"<!--TODO PLUTO-952 Update example removing pagination-->
+| jq -r ".[] | [.actor.email, .actor.role, .action, .timestamp, .result, .source, .repositoryName, .requestDetails] | @csv"
 ```
 
 Example output:<!--TODO PLUTO-952 Update output-->
