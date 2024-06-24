@@ -40,7 +40,7 @@ To access the findings page with the corresponding filter applied, click on a nu
 
 ### Open findings distribution
 
-The **Open findings distribution** panel shows the relative distribution of open findings by severity or status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
+The **Open findings distribution** panel shows the relative distribution of open findings by scan type, severity, or status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
 
 To select the desired distribution, use the drop-down in the top right-hand corner of the panel.
 
@@ -91,9 +91,9 @@ To access the findings page, access the [overview page](#dashboard) and click th
 
 ![Security and risk management findings page](images/security-risk-management-findings.png)
 
-When viewing the findings, you can update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, or **Security category** drop-downs above the list.
+When viewing the findings, you can update the filtering criteria by clicking the **Severity**, **Status**, **Repository**, **Security category**, or **Scan type** drop-downs above the list.
 
-To find out more about a finding in the list, click its **Details** column to navigate to the finding details on the source platform.
+The **Details** column offers a quick overview of each finding in the list, including its title, [source platform](#opening-and-closing-items), [scan type](#scan-types), [security category](#supported-security-categories), and related information such as the repository name, Jira issue key, or penetration testing report URL. To find out more, click this overview to navigate to the finding details on the source platform.
 
 ![Security and risk management finding details](images/security-risk-management-finding-details.png)
 
@@ -161,7 +161,25 @@ Codacy closes a finding when it detects that the associated Jira issue is marked
 !!! note
     Penetration testing is available upon request and is provided by a third-party partner. See [how to request penetration testing for your organization](https://go.codacy.com/pen-testing-product).
 
-Codacy opens a new finding when penetration testing results are published by our partner.
+Codacy opens a finding for each security issue detected during a penetration test.
+
+Codacy closes a finding when a subsequent penetration test does not detect the underlying security issue.
+
+## Finding severities and deadlines {: id="item-severities-and-deadlines"}
+
+!!! note
+    Currently, Codacy doesn't support customizing the severity rules for security findings.
+
+The following table defines finding severities and the number of days to the deadline to fix the associated security issue, based on the importance of the underlying issue:
+
+| Finding<br/>severity | <br/>Days to deadline | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority <sup>1</sup> |
+|----------------------|-----------------------|--------------------------------------|-------------------------------------------------|
+| Critical             | 30                    | Critical                             | Highest                                         |
+| High                 | 60                    | -                                    | High                                            |
+| Medium               | 90                    | Medium                               | Medium                                          |
+| Low                  | 120                   | Minor                                | Low and other/custom                            |
+
+<small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small>
 
 ## Finding statuses {: id="item-statuses"}
 
@@ -201,21 +219,58 @@ The following table describes how finding statuses map to deadlines:
     </tbody>
 </table>
 
-## Finding severities and deadlines {: id="item-severities-and-deadlines"}
+## Supported security categories
 
 !!! note
-    Currently, Codacy doesn't support customizing the severity rules for security findings.
+    Due to a recent update, some issues may be temporarily assigned the **Not yet categorized** category. To categorize these issues, you can [reanalyze the default branch of the relevant repository](../faq/repositories/how-do-i-reanalyze-my-repository.md#reanalyzing-a-branch). For a list of repositories that have issues with this category, use the **Security category** filter on the [Findings](#item-list) page.
 
-The following table defines finding severities and days to fix the associated security issue, based on the importance of the underlying issue:
+Each Codacy issue reported by Security and risk management belongs to one of the following security categories:
 
-| Finding<br/>severity | <br/>Days to fix | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority <sup>1</sup> |
-|----------------------|------------------|--------------------------------------|-------------------------------------------------|
-| Critical             | 30               | Critical                             | Highest                                         |
-| High                 | 60               | -                                    | High                                            |
-| Medium               | 90               | Medium                               | Medium                                          |
-| Low                  | 120              | Minor                                | Low and other/custom                            |
+<!--NOTE
+    Currently, this category doesn't include any security issues
+    https://github.com/codacy/codacy-tools/pull/496#discussion_r892437164
 
-<small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small>
+|**Firefox OS**|Security issues related to sensitive APIs of Firefox OS.|
+-->
+
+| Security category                  | Description                                                                                                                                                                                                      |
+|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| **Android**                        | Android-specific security issues.                                                                                                                                                                                |
+| **Authentication**                 | Broken authentication and authorization attacks consist in gaining access to accounts that allow disclosing sensitive information or performing operations that could compromise the system.                     |
+| **Command Injection**              | Command injection attacks aim to execute arbitrary commands on the host operating system.                                                                                                                        |
+| **Cookies**                        | Security issues related to insecure cookies.                                                                                                                                                                     |
+| **Cryptography**                   | Cryptography attacks exploit failures related to cryptography (or lack thereof), <span class="skip-vale">potentially</span> leading to exposure of sensitive data.                                               |
+| **CSRF**                           | Cross-Site Request Forgery (CSRF) attacks force an end user to execute unwanted actions on a web application in which they're currently authenticated.                                                           |
+| **Denial of Service**              | Denial of Service (DoS) attacks make a resource (site, application, server) unavailable for legitimate users, typically by flooding the resource with requests or exploiting a vulnerability to trigger a crash. |
+| **File Access**                    | File access security issues may allow an attacker to access arbitrary files and directories stored on the file system such as application source code, configuration, and critical system files.                 |
+| **HTTP Headers**                   | Insecure HTTP headers are a common attack vector for malicious users.                                                                                                                                            |
+| **Input Validation**               | Client input should always be validated to prevent malformed or malicious data from entering the workflow of an information system.                                                                              |
+| **Insecure Modules and Libraries** | Security issues related to modules or libraries that can <span class="skip-vale">potentially</span> include vulnerabilities.                                                                                     |
+| **Insecure Storage**               | Security issues related to insecure storage of sensitive data.                                                                                                                                                   |
+| **Malicious Code**                 | Security issues related to code patterns that are <span class="skip-vale">potentially</span> unsafe.                                                                                                             |
+| **Mass Assignment**                | Unprotected mass assignments are a Rails feature that could allow an attacker to update sensitive model attributes.                                                                                              |
+| **Regex**                          | Regular expressions can be used in Denial of Service attacks, exploiting the fact that in most regular expression implementations the computational load grows exponentially with input size.                    |
+| **Routes**                         | Badly configured routes can give unintended access to an attacker.                                                                                                                                               |
+| **SQL Injection**                  | SQL injection attacks insert or "inject" malicious SQL queries into the application via the client input data.                                                                                                   |
+| **SSL**                            | Security issues related with old SSL versions or configurations that have known cryptographic weaknesses and should no longer be used.                                                                           |
+| **Unexpected Behaviour**           | Security issues related to <span class="skip-vale">potentially</span> insecure system API calls.                                                                                                                 |
+| **Visibility**                     | Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.                                                                                  |
+| **XSS**                            | Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into trusted websites that are visited by the end users.                                                                                 |
+| **Other**                          | Other language-specific security issues.                                                                                                                                                                         |
+
+## Scan types
+
+Security and risk management classifies each finding with a **Scan type**, indicating the specific source or method used to detect the finding. This information helps you understand the origin of the finding and the context in which the underlying issue was detected.
+
+The following table lists the available scan types and their descriptions:
+
+| Scan type                         | Description                                                                                                                  |
+|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------|
+| **Code Scanning**                 | Analysis of source code for vulnerabilities without execution. Also known as Static Application Security Testing (SAST).     |
+| **Software Composition Analysis** | Analysis of external libraries and packages for vulnerabilities or outdated versions.                                        |
+| **Exposed Secrets**               | Detection of sensitive information, such as passwords or API keys, inadvertently included in the code.                       |
+| **Infrastructure as Code**        | Detection of configuration issues within infrastructure-as-code (IaC) files that could pose risks.                           |
+| **Penetration Testing**           | Results from [penetration testing](#opening-and-closing-pen-testing-items) to find security vulnerabilities in running code. |
 
 ## Languages checked for security issues
 
@@ -406,42 +461,3 @@ Security and risk management supports checking the languages and infrastructure-
 <sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/).  
 <sup><span id="eslint-plugin">5</span></sup>: Includes the plugins [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [security](https://www.npmjs.com/package/eslint-plugin-security), [security-node](https://www.npmjs.com/package/eslint-plugin-security-node), and [xss](https://www.npmjs.com/package/eslint-plugin-xss).  
 <sup><span id="ruby-31">6</span></sup>: Currently, Codacy doesn't support any static code analysis tool for [Ruby 3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/).  
-
-## Supported security categories
-
-!!! note
-    Due to a recent update, some issues may be temporarily assigned the **Not yet categorized** category. To categorize these issues, you can [reanalyze the default branch of the relevant repository](../faq/repositories/how-do-i-reanalyze-my-repository.md#reanalyzing-a-branch). For a list of repositories that have issues with this category, use the **Security category** filter on the [Findings](#item-list) page.
-
-Each Codacy issue reported by Security and risk management belongs to one of the following security categories:
-
-<!--NOTE
-    Currently, this category doesn't include any security issues
-    https://github.com/codacy/codacy-tools/pull/496#discussion_r892437164
-
-|**Firefox OS**|Security issues related to sensitive APIs of Firefox OS.|
--->
-
-| Security category                  | Description                                                                                                                                                                                                      |
-|------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **Android**                        | Android-specific security issues.                                                                                                                                                                                |
-| **Authentication**                 | Broken authentication and authorization attacks consist in gaining access to accounts that allow disclosing sensitive information or performing operations that could compromise the system.                     |
-| **Command Injection**              | Command injection attacks aim to execute arbitrary commands on the host operating system.                                                                                                                        |
-| **Cookies**                        | Security issues related to insecure cookies.                                                                                                                                                                     |
-| **Cryptography**                   | Cryptography attacks exploit failures related to cryptography (or lack thereof), <span class="skip-vale">potentially</span> leading to exposure of sensitive data.                                               |
-| **CSRF**                           | Cross-Site Request Forgery (CSRF) attacks force an end user to execute unwanted actions on a web application in which they're currently authenticated.                                                           |
-| **Denial of Service**              | Denial of Service (DoS) attacks make a resource (site, application, server) unavailable for legitimate users, typically by flooding the resource with requests or exploiting a vulnerability to trigger a crash. |
-| **File Access**                    | File access security issues may allow an attacker to access arbitrary files and directories stored on the file system such as application source code, configuration, and critical system files.                 |
-| **HTTP Headers**                   | Insecure HTTP headers are a common attack vector for malicious users.                                                                                                                                            |
-| **Input Validation**               | Client input should always be validated to prevent malformed or malicious data from entering the workflow of an information system.                                                                              |
-| **Insecure Modules and Libraries** | Security issues related to modules or libraries that can <span class="skip-vale">potentially</span> include vulnerabilities.                                                                                     |
-| **Insecure Storage**               | Security issues related to insecure storage of sensitive data.                                                                                                                                                   |
-| **Malicious Code**                 | Security issues related to code patterns that are <span class="skip-vale">potentially</span> unsafe.                                                                                                             |
-| **Mass Assignment**                | Unprotected mass assignments are a Rails feature that could allow an attacker to update sensitive model attributes.                                                                                              |
-| **Regex**                          | Regular expressions can be used in Denial of Service attacks, exploiting the fact that in most regular expression implementations the computational load grows exponentially with input size.                    |
-| **Routes**                         | Badly configured routes can give unintended access to an attacker.                                                                                                                                               |
-| **SQL Injection**                  | SQL injection attacks insert or "inject" malicious SQL queries into the application via the client input data.                                                                                                   |
-| **SSL**                            | Security issues related with old SSL versions or configurations that have known cryptographic weaknesses and should no longer be used.                                                                           |
-| **Unexpected Behaviour**           | Security issues related to <span class="skip-vale">potentially</span> insecure system API calls.                                                                                                                 |
-| **Visibility**                     | Logging should always be included for security events to better allow attack detection and help defend against vulnerabilities.                                                                                  |
-| **XSS**                            | Cross-Site Scripting (XSS) attacks inject malicious client-side scripts into trusted websites that are visited by the end users.                                                                                 |
-| **Other**                          | Other language-specific security issues.                                                                                                                                                                         |

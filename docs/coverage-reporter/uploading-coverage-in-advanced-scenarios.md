@@ -72,8 +72,9 @@ Codacy can't automatically detect Golang coverage report files because they don'
 If you're uploading a Golang coverage report, you must also specify the report type:
 
 ```bash
+go test -coverprofile=unit.coverage.out ./...
 bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
-    --force-coverage-parser go -r <coverage report file name>
+    --force-coverage-parser go -r unit.coverage.out
 ```
 
 ## Uploading coverage for unsupported languages {: id="unsupported-languages"}
