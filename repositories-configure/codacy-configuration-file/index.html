@@ -11,7 +11,7 @@
         <meta name="description" content="Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages.">
       
       
-        <meta http-equiv="last-modified" content="2024-06-18 12:09:29">
+        <meta http-equiv="last-modified" content="2024-06-24 17:11:46">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/codacy-configuration-file/">
@@ -4206,7 +4206,13 @@
 <h2 id="using-a-codacy-configuration-file">Using a Codacy configuration file<a class="headerlink" href="#using-a-codacy-configuration-file" title="Permanent link">#</a></h2>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>If your repository has a Codacy configuration file, the <a href="../ignoring-files/">Ignored files settings</a> defined on the Codacy UI don't apply and you must <a href="#syntax-for-ignoring-files">ignore files using the configuration file</a> instead.</p>
+<ul>
+<li>If your repository has a Codacy configuration file, the <a href="../ignoring-files/">Ignored files settings</a> defined on the Codacy UI don't apply and you must <a href="#syntax-for-ignoring-files">ignore files using the configuration file</a> instead.</li>
+<li>
+<p>Codacy always uses the configuration file <strong>in the default branch</strong>. New settings added to the Codacy configuration file by a pull request are also considered for the pull request analysis, but the existing configuration in the default branch takes precedence.</p>
+<p>For example, if a pull request removes an ignored path from the Codacy configuration file, any matching files will stay ignored until that pull request is merged into the default branch.</p>
+</li>
+</ul>
 </div>
 <p>To use a Codacy configuration file:</p>
 <ol>
@@ -4653,7 +4659,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 18, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 24, 2024</span>
     
   </small>
 </div>
