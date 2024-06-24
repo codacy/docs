@@ -78,7 +78,7 @@ The Codacy configuration file gives you more flexibility in [ignoring or excludi
 
 !!! note
     {% include-markdown "../assets/includes/coverage-ignore.md" %}
-  
+
 ### Syntax for ignoring files
 
 To ignore files using a Codacy configuration file, you must define one or more patterns under `exclude_paths` using the [Java glob syntax](https://docs.oracle.com/javase/7/docs/api/java/nio/file/FileSystem.html#getPathMatcher%28java.lang.String%29):
