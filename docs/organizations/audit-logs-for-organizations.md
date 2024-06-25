@@ -18,52 +18,52 @@ The retention period of audit logs for organization events is one year.
 
 Each audit log tracks when a Codacy user executed a specific operation in your organization, which is identified by an **action**. For the detailed content of each audit log, see the [Codacy API reference](https://api.codacy.com/api/api-docs#codacy-api).<!--TODO PLUTO-952 Update link-->
 
-The sections below list the events that Codacy logs for your organization at user, organization, and repository levels.
+The sections below list the events that Codacy logs for your organization at user, organization, and repository levels.<!--TODO PLUTO-952 Validate all actions-->
 
 ### User
 
 |Event|Description|Action|
 |-----|-----------|------|
 |Sign up|User signed up to Codacy||
-|Log in|User logged in to Codacy|`account.login`|
-|Create account API token|New [account API token](../codacy-api/api-tokens.md#account-api-tokens) created|`token.create`|
-|Read account API token|List of [account API tokens](../codacy-api/api-tokens.md#account-api-tokens) retrieved|`token.read`|
-|Delete account API token|[Account API token](../codacy-api/api-tokens.md#account-api-tokens) deleted|`token.delete`|
-|Add Git provider|New Git provider added to Codacy||
+|Log in|User logged in to Codacy|`user.login`|
+|Create account API token|New [account API token](../codacy-api/api-tokens.md#account-api-tokens) created|`user.tokens.create`|
+|Read account API token|List of [account API tokens](../codacy-api/api-tokens.md#account-api-tokens) retrieved|`user.tokens.read`|
+|Delete account API token|[Account API token](../codacy-api/api-tokens.md#account-api-tokens) deleted|`user.tokens.delete`|
+|Add Git provider|New Git provider added to Codacy|`user.providers.create`|
 
 ### Organization
 
 |Event|Description|Action|
 |-----|-----------|------|
-|Add organization|Organization added to Codacy||
-|Add person to organization|New person added to the organization||
+|Add organization|Organization added to Codacy|`organizations.create`|
+|Add people to organization|New people added to the organization|`organizations.people.create.`|
 |?Remove person from organization (depends on effort)?|Person removed from the organization||
-|Join organization|User joined the organization||
+|Join organization|User joined the organization|`user.join`|
 |Assign organization manager|Organization manager role assigned to a team member||
 |Revoke organization manager|Organization manager role revoked from a team member||
 |Update repository management permissions|Repository management permissions updated||
-|Update default Git provider configuration|Default Git provider configuration for the organization updated||
-|Apply default Git provider configuration to all repositories|Default Git provider configuration applied to all repositories of the organization||
+|Update default Git provider configuration|Default Git provider configuration for the organization updated|`organizations.integrations.providersetting.update`|
+|Apply default Git provider configuration to all repositories|Default Git provider configuration applied to all repositories of the organization|`organizations.integrations.providersetting.apply`|
 |Create new organization hook|New organization webhook created||
-|Create new gate policy|New gate policy created||
-|Update gate policy|Quality gate definition updated (validate updated fields)||
-|Apply gate policy to repositories|Gate policy applied to a list of repositories||
-|?Make gate policy default?|Gate policy was made the default for the organization (validate)||
-|?Make Codacy gate policy default?|Built-in Codacy gate policy was made the default for the organization (validate)||
-|Delete gate policy|Gate policy deleted||
+|Create new gate policy|New gate policy created|`organizations.gatepolicies.create`|
+|Update gate policy|Quality gate definition updated|`organizations.gatepolicies.update`|
+|Apply gate policy to repositories|Gate policy applied to a list of repositories|`organizations.gatepolicies.repositories.apply`|
+|Make gate policy default|Gate policy was made the default for the organization|`organizations.gatepolicies.setdefault`|
+|Make Codacy gate policy default|Built-in Codacy gate policy was made the default for the organization|`organizations.gatepolicies.setcodacydefault`|
+|Delete gate policy|Gate policy deleted|`organizations.gatepolicies.delete`|
 |Create new coding standard|New coding standard created (validate implementation)||
 |Update coding standard|Coding standard definition updated (validate updated fields)||
-|Apply coding standard to repositories|Coding standard applied to a list of repositories||
-|?Make coding standard default?|Coding standard was made the default (validate)||
-|Delete coding standard|Coding standard deleted||
+|Apply coding standard to repositories|Coding standard applied to a list of repositories|`organizations.codingstandards.repositories.apply`|
+|Make coding standard default|Coding standard was made the default|`organizations.codingstandards.setdefault`|
+|Delete coding standard|Coding standard deleted|`organizations.codingstandards.delete`|
 
 ### Repository
 
 |Event|Description|Action|
 |-----|-----------|------|
-|Create new post-commit hook|New repository hook created||
-|Create repository API token|New [repository API token](../codacy-api/api-tokens.md#repository-api-tokens) created||
-|Read repository API token|List of [repository API tokens](../codacy-api/api-tokens.md#repository-api-tokens) retrieved||
-|Delete repository API token|[Repository API token](../codacy-api/api-tokens.md#repository-api-tokens) deleted||
-|Update Git provider settings|Git provider settings for the repository updated||
-|Refresh Git provider integration|Git provider integration refreshed (applies only to Bitbucket and GitLab)||
+|Create new post-commit hook|New repository hook created|`repositories.integrations.postcommithook`|
+|Create repository API token|New [repository API token](../codacy-api/api-tokens.md#repository-api-tokens) created|`repositories.tokens.create`|
+|Read repository API token|List of [repository API tokens](../codacy-api/api-tokens.md#repository-api-tokens) retrieved|`repositories.tokens.read`|
+|Delete repository API token|[Repository API token](../codacy-api/api-tokens.md#repository-api-tokens) deleted|`repositories.tokens.delete`|
+|Update Git provider settings|Git provider settings for the repository updated|`repositories.integrations.providersettings.update`|
+|Refresh Git provider integration|Git provider integration refreshed (applies only to Bitbucket and GitLab)|`repositories.integrations.refreshprovider`|
