@@ -37,10 +37,9 @@ curl -X GET "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZA
 Example output:<!--TODO PLUTO-952 Update output-->
 
 ```text
-"joe@email.com","organizationAdmin","repository.add",1606929874512,"succeed","UI","service-repo",""
-"joe@email.com","organizationAdmin","repository.add",1606929874512,"succeed","UI","service-repo",""
-"joe@email.com","organizationAdmin","repository.add",1606929874512,"succeed","UI","service-repo",""
-"joe@email.com","organizationAdmin","repository.add",1606929874512,"succeed","UI","service-repo",""
+"johnsmith@emailprovider.com","organizationAdmin","user.login","2024-07-01T09:30:24.656Z","succeed","UI","",""
+"johnsmith@emailprovider.com","organizationAdmin","repositories.add","2024-07-01T09:40:20.656Z","succeed","UI","service-repo",""
+"johnsmith@emailprovider.com","organizationAdmin","repositories.integrations.providersettings.update","2024-07-01T09:45:30.656Z","succeed","UI","service-repo","{\"commitStatus\":false,\"pullRequestComment\":false,\"pullRequestSummary\":false,\"aiEnhancedComments\":false,\"coverageSummary\":false,\"suggestions\":true}"
 [...]
 ```
 
