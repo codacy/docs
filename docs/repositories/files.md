@@ -17,11 +17,11 @@ Codacy displays the files in alphabetical order by default, but you can sort the
 !!! note
     [You can use the Codacy API](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md) to generate reports or obtain code quality metrics for the files in your repositories in a more flexible way.
 
-![Files list](images/files.png)<!-- TODO TAROT-2708: update image -->
+![Files list](images/files.png)
 
 Use the search box to filter the list and find specific files:
 
-![Finding specific files](images/files-search.png)<!-- TODO TAROT-2708: update image -->
+![Finding specific files](images/files-search.png)
 
 ## File details
 
@@ -29,21 +29,21 @@ Click a specific file to see more detailed analysis information for that file.
 
 The header of the file detail page displays the same code quality metrics as the Files page, along with a link to ignore the file and a link to the file on your Git provider.
 
-![File detail](images/files-details.png)<!-- TODO TAROT-2708: update image -->
+![File detail](images/files-details.png)
 
 Depending on the available analysis information for the file, Codacy displays one or more of the following tabs:
 
 -   **Issues:** Shows the annotated source code on the left-hand side and the matching list of issues and issue distribution by severity on the right-hand side. Each listed issue includes the same information and options available on the [Quality Issues page](issues.md).
 
-    ![Issues for a file](images/files-issues.png)<!-- TODO TAROT-2708: update image -->
+    ![Issues for a file](images/files-issues.png)
 
 -   **Duplication:** Shows the annotated source code on the left-hand side and the matching list of duplicated code blocks and counts on the right-hand side. Each listed duplicate includes the number of clones and their locations.
 
-    ![Duplicated blocks for a file](images/files-duplication.png)<!-- TODO TAROT-2708: update image -->
+    ![Duplicated blocks for a file](images/files-duplication.png)
 
 -   **Coverage:** Shows which lines of code are covered by tests (green background labeled with test hit count) or not covered (red background), along with the counts of coverable and covered lines and the file status with respect to the [coverage goal](../repositories-configure/adjusting-quality-goals.md).
 
-    ![Coverage information for a file](images/files-coverage.png)<!-- TODO TAROT-2708: update image -->
+    ![Coverage information for a file](images/files-coverage.png)
 
 ## Why are some files missing? {: id="missing-files"}
 
