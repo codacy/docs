@@ -130,7 +130,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -178,7 +178,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>mix.lock</code> (Mix) </td>
-      <td>-</td>
+      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -212,7 +212,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -317,7 +317,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -402,7 +402,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Cargo.lock</code> (Cargo) </td>
-      <td>-</td>
+      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -513,7 +513,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td>-</td>
     </tr>
     <tr>
