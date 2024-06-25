@@ -31,7 +31,7 @@ The header of the file detail page displays the same code quality metrics as the
 
 ![File detail](images/files-details.png)<!-- TODO TAROT-2708: update image -->
 
-Depending on the available analysis information for the file, Codacy displays one or more of the following tabs:<!-- TODO TAROT-2708: confirm which are always visible -->
+Depending on the available analysis information for the file, Codacy displays one or more of the following tabs:
 
 -   **Issues:** Shows the annotated source code on the left-hand side and the matching list of issues and issue distribution by severity on the right-hand side. Each listed issue includes the same information and options available on the [Quality Issues page](issues.md).
 
