@@ -22,7 +22,7 @@ The example script:
         The user authenticating on the Codacy API must be an [organization admin or organization manager](../../organizations/roles-and-permissions-for-organizations.md).
 
 1.  Calls the endpoint [<span class="skip-vale">listAuditLogsForOrganization</span>](https://api.codacy.com/api/api-docs#codacy-api-organization) to retrieve the audit log events for your organization.<!--TODO PLUTO-952 Update link-->
-1.  Uses [jq](https://github.com/stedolan/jq) to select only the necessary data fields and convert the results to the CSV format.<!--TODO PLUTO-952 Confirm pagination usage-->
+1.  Uses [jq](https://github.com/stedolan/jq) to select only the necessary data fields and convert the results to the CSV format.
 
 ```bash
 CODACY_API_TOKEN="<your account API token>"
@@ -34,7 +34,7 @@ curl -X GET "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZA
 | jq -r ".[] | [.actor.email, .actor.role, .action, .timestamp, .result, .source, .repositoryName, .requestDetails] | @csv"
 ```
 
-Example output:<!--TODO PLUTO-952 Update output-->
+Example output:
 
 ```text
 "johnsmith@emailprovider.com","organizationAdmin","user.login","2024-07-01T09:30:24.656Z","succeed","UI","",""
