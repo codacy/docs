@@ -35,14 +35,14 @@ ORGANIZATION="<your organization name>"
 
 curl -X GET "https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION/audit" \
      -H "api-token: $CODACY_API_TOKEN" \
-| jq -r ".[] | [.actor.email, .actor.role, .action, .timestamp, .result, .source, .repositoryName, .requestDetails] | @csv"
+| jq -r ".[] | [.actor.email, .actor.role, .action, .timestamp, .result, .source, .repositoryName, .details] | @csv"
 ```
 
 Example output:
 
 ```text
 "johnsmith@emailprovider.com","organizationAdmin","user.login","2024-07-01T09:30:24.656Z","succeed","UI","",""
-"johnsmith@emailprovider.com","organizationAdmin","repositories.add","2024-07-01T09:40:20.656Z","succeed","UI","service-repo",""
+"johnsmith@emailprovider.com","organizationAdmin","organizations.gatepolicies.update","2024-07-01T09:40:20.656Z","succeed","UI","","{\"settings\":{\"issueThreshold\":{\"threshold\":0,\"minimumSeverity\":\"Info\"},\"securityIssueThreshold\":1,\"duplicationThreshold\":1,\"complexityThreshold\":20}}"
 "johnsmith@emailprovider.com","organizationAdmin","repositories.integrations.providersettings.update","2024-07-01T09:45:30.656Z","succeed","UI","service-repo","{\"commitStatus\":false,\"pullRequestComment\":false,\"pullRequestSummary\":false,\"aiEnhancedComments\":false,\"coverageSummary\":false,\"suggestions\":true}"
 [...]
 ```
