@@ -36,7 +36,7 @@ The sections below list the events that Codacy logs for your organization at use
 |-----|-----------|------|
 |Add organization|Organization added to Codacy|`organizations.create`|
 |Add people to organization|New people added to the organization|`organizations.people.create`|
-|?Remove person from organization (depends on effort)?|Person removed from the organization|`organizations.people.create`|
+|?Remove person from organization (depends on effort)?|Person removed from the organization|`organizations.people.delete`|
 |Join organization|User joined the organization|`organizations.join`|
 |Assign organization manager|Organization manager role assigned to a team member|`organizations/security/managers.create`|
 |Revoke organization manager|Organization manager role revoked from a team member|`organizations/security/managers.delete`|
