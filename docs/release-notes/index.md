@@ -102,7 +102,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 v14
 
--   [v14.0.0](self-hosted/self-hosted-v14.0.0.md) (July 1, 2024)<!-- TODO Update release date -->
+-   [v14.0.0](self-hosted/self-hosted-v14.0.0.md) (June 26, 2024)
 
 v13
 
