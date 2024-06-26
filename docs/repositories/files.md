@@ -6,7 +6,7 @@ By default, the page lists the files on the main branch of your repository. Howe
 
 Codacy displays the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) for each file, if available:
 
--   **Grade:** The overall grade of the file
+-   **Grade:** Overall grade of the file
 -   **Issues:** Number of issues in the file
 -   **Complexity:** Cyclomatic complexity of the file
 -   **Duplication:** Number of duplicated blocks in the file
