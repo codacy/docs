@@ -29,32 +29,32 @@ The sections below list the events that Codacy logs for your organization at use
 |Event|Description|Action|
 |-----|-----------|------|
 |Log in|User logged in to Codacy|`user.login`|
-|Create account API token|New [account API token](../codacy-api/api-tokens.md#account-api-tokens) created|`user.tokens.create`|
-|Read account API token|List of [account API tokens](../codacy-api/api-tokens.md#account-api-tokens) retrieved|`user.tokens.read`|
-|Delete account API token|[Account API token](../codacy-api/api-tokens.md#account-api-tokens) deleted|`user.tokens.delete`|
+|Create [account API token](../codacy-api/api-tokens.md#account-api-tokens)|New account API token created|`user.tokens.create`|
+|Read account API token|List of account API tokens retrieved|`user.tokens.read`|
+|Delete account API token|Account API token deleted|`user.tokens.delete`|
 |?Add Git provider (depends on effort)?|New Git provider added to Codacy||
 
 ### Organization
 
 |Event|Description|Action|
 |-----|-----------|------|
-|Add organization|Organization added to Codacy|`organizations.create`|
-|Add people to organization|New people added to the organization|`organizations.people.create`|
+|[Add organization](./what-are-organizations.md#adding-an-organization)|Organization added to Codacy|`organizations.create`|
+|[Add people](./managing-people.md#adding-people) to organization|New people added to the organization|`organizations.people.create`|
 |?Remove person from organization (depends on effort)?|Person removed from the organization|`organizations.people.delete`|
-|Join organization|User joined the organization|`organizations.join`|
-|Assign organization manager|Organization manager role assigned to a team member|`organizations/security/managers.create`|
+|[Join organization](./managing-people.md#joining)|User joined the organization|`organizations.join`|
+|Assign [organization manager](./roles-and-permissions-for-organizations.md#org-manager)|Organization manager role assigned to a team member|`organizations/security/managers.create`|
 |Revoke organization manager|Organization manager role revoked from a team member|`organizations/security/managers.delete`|
 |?Update repository management permissions?|Repository management permissions updated||
-|Update default Git provider configuration|Default Git provider configuration for the organization updated|`organizations.integrations.providersettings.update`|
+|Update [default Git provider configuration](./integrations/default-git-provider-integration-settings.md)|Default Git provider configuration for the organization updated|`organizations.integrations.providersettings.update`|
 |Apply default Git provider configuration to all repositories|Default Git provider configuration applied to all repositories of the organization|`organizations.integrations.providersettings.apply`|
 |Create new organization hook|New organization webhook created|`organizations.settings.hooks.create`|
-|Create new gate policy|New gate policy created|`organizations.gatepolicies.create`|
+|Create new [gate policy](./using-gate-policies.md)|New gate policy created|`organizations.gatepolicies.create`|
 |Update gate policy|Quality gate definition updated|`organizations.gatepolicies.update`|
 |Apply gate policy to repositories|Gate policy applied to a list of repositories|`organizations.gatepolicies.repositories.apply`|
 |Make gate policy default|Gate policy was made the default for the organization|`organizations.gatepolicies.setdefault`|
 |Make Codacy gate policy default|Built-in Codacy gate policy was made the default for the organization|`organizations.gatepolicies.setcodacydefault`|
 |Delete gate policy|Gate policy deleted|`organizations.gatepolicies.delete`|
-|Create new coding standard using the guided setup|New coding standard created|`organizations.presetsstandards.create`|
+|Create new [coding standard](./using-coding-standards.md) using the guided setup|New coding standard created|`organizations.presetsstandards.create`|
 |Create new coding standard draft using the advanced setup|New coding standard draft created|`organizations.codingstandards.create`|
 |Create new coding standard from draft|New coding standard created|`organizations.codingstandards.promote`|
 |?Update coding standard?|Coding standard definition updated (validate updated fields)||
@@ -66,9 +66,9 @@ The sections below list the events that Codacy logs for your organization at use
 
 |Event|Description|Action|
 |-----|-----------|------|
-|Create new post-commit hook|New repository hook created|`repositories.integrations.postcommithook`|
-|Create repository API token|New [repository API token](../codacy-api/api-tokens.md#repository-api-tokens) created|`repositories.tokens.create`|
-|Read repository API token|List of [repository API tokens](../codacy-api/api-tokens.md#repository-api-tokens) retrieved|`repositories.tokens.read`|
-|Delete repository API token|[Repository API token](../codacy-api/api-tokens.md#repository-api-tokens) deleted|`repositories.tokens.delete`|
-|Update Git provider settings|Git provider settings for the repository updated|`repositories.integrations.providersettings.update`|
-|Refresh Git provider integration|Git provider integration refreshed (applies only to Bitbucket and GitLab)|`repositories.integrations.refreshprovider`|
+|Create new [post-commit hook](../repositories-configure/integrations/post-commit-hooks.md)|New repository hook created|`repositories.integrations.postcommithook`|
+|Create [repository API token](../codacy-api/api-tokens.md#repository-api-tokens)|New repository API token created|`repositories.tokens.create`|
+|Read repository API token|List of repository API tokens retrieved|`repositories.tokens.read`|
+|Delete repository API token|Repository API token deleted|`repositories.tokens.delete`|
+|Update Git provider settings|Git provider settings for the repository updated ([GitHub](../repositories-configure/integrations/github-integration.md#configuring), [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#configuring), or [GitLab](../repositories-configure/integrations/gitlab-integration.md#configuring))|`repositories.integrations.providersettings.update`|
+|Refresh Git provider integration|Git provider integration refreshed (applies only to [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#refreshing) and [GitLab](../repositories-configure/integrations/gitlab-integration.md#refreshing))|`repositories.integrations.refreshprovider`|
