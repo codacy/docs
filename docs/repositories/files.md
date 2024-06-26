@@ -7,15 +7,15 @@ By default, the page lists the files on the main branch of your repository. Howe
 Codacy displays the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) for each file, if available:
 
 -   **Grade:** The overall grade of the file
--   **Issues:** Number of issues and issue types
--   **Complexity:** Complexity and complexity per method
--   **Duplication:** Number of clones and duplicated lines of code
+-   **Issues:** Number of issues in the file
+-   **Complexity:** Cyclomatic complexity of the file
+-   **Duplication:** Number of duplicated blocks in the file
 -   **Coverage:** Percentage of coverable source lines of code that are covered by tests
 
 Codacy displays the files in alphabetical order by default, but you can sort the list by each column to help you identify which files you should improve or refactor next.
 
 !!! note
-    [You can use the Codacy API](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md) to generate reports or obtain code quality metrics for the files in your repositories in a more flexible way.
+    You can [use the Codacy API to generate reports or obtain code quality metrics](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md) for the files in your repositories in a more flexible way.
 
 ![Files list](images/files.png)
 
