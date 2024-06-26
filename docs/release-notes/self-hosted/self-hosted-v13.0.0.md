@@ -23,7 +23,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v13.0.0:
 1.  Update your Codacy command-line tools to the following versions:
 
     -   [Codacy Analysis CLI 7.9.5](https://github.com/codacy/codacy-analysis-cli/releases/tag/7.9.5)
-    -   [Codacy Coverage Reporter 13.13.14](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.13.14)
+    -   [Codacy Coverage Reporter 13.10.15](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.10.15)
 
 ## Support for ingress-nginx chart 4.8.3
 
