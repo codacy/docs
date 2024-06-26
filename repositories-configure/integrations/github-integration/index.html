@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the GitHub integration to have status checks, annotations, issue and coverage summaries, and suggested fixes from Codacy directly on pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2024-06-05 14:17:59">
+        <meta http-equiv="last-modified" content="2024-06-26 10:50:24">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/github-integration/">
@@ -4288,7 +4288,8 @@ Codacy generates an overview of the changes in the pull request so that any revi
 </ul>
 </div>
 <p>To enable this feature, add the following to the <a href="../../codacy-configuration-file/">Codacy configuration file</a> <code>codacy.yaml</code> in the root of your repository:</p>
-<div class="highlight"><pre><span></span><code><span class="nt">reviews</span><span class="p">:</span>
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">reviews</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">high_level_summary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
 </code></pre></div>
 <p>You can also enable this feature across your organization by creating the above file in the root of a repository named <code>.codacy</code>. This file will be used as the default configuration for all repositories in the organization and overridden by repository-specific configuration files.</p>
@@ -4455,7 +4456,7 @@ Codacy generates an overview of the changes in the pull request so that any revi
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 5, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 26, 2024</span>
     
   </small>
 </div>
