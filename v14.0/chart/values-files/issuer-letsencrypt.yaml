@@ -1,0 +1,15 @@
+apiVersion: cert-manager.io/v1alpha2
+kind: Issuer
+metadata:
+  name: letsencrypt-codacy
+  namespace: codacy
+spec:
+  acme:
+    server: https://acme-v02.api.letsencrypt.org/directory
+    email: <--- youremail@yourdomain.com --->
+    privateKeySecretRef:
+      name: letsencrypt
+    solvers:
+    - http01:
+        ingress:
+          class: nginx
