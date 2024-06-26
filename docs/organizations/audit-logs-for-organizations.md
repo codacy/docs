@@ -28,30 +28,32 @@ The sections below list the events that Codacy logs for your organization at use
 |Create account API token|New [account API token](../codacy-api/api-tokens.md#account-api-tokens) created|`user.tokens.create`|
 |Read account API token|List of [account API tokens](../codacy-api/api-tokens.md#account-api-tokens) retrieved|`user.tokens.read`|
 |Delete account API token|[Account API token](../codacy-api/api-tokens.md#account-api-tokens) deleted|`user.tokens.delete`|
-|Add Git provider|New Git provider added to Codacy|`user.providers.create`|
+|?Add Git provider (depends on effort)?|New Git provider added to Codacy||
 
 ### Organization
 
 |Event|Description|Action|
 |-----|-----------|------|
 |Add organization|Organization added to Codacy|`organizations.create`|
-|Add people to organization|New people added to the organization|`organizations.people.create.`|
-|?Remove person from organization (depends on effort)?|Person removed from the organization||
-|Join organization|User joined the organization|`user.join`|
-|Assign organization manager|Organization manager role assigned to a team member||
-|Revoke organization manager|Organization manager role revoked from a team member||
-|Update repository management permissions|Repository management permissions updated||
-|Update default Git provider configuration|Default Git provider configuration for the organization updated|`organizations.integrations.providersetting.update`|
-|Apply default Git provider configuration to all repositories|Default Git provider configuration applied to all repositories of the organization|`organizations.integrations.providersetting.apply`|
-|Create new organization hook|New organization webhook created||
+|Add people to organization|New people added to the organization|`organizations.people.create`|
+|?Remove person from organization (depends on effort)?|Person removed from the organization|`organizations.people.create`|
+|Join organization|User joined the organization|`organizations.join`|
+|Assign organization manager|Organization manager role assigned to a team member|`organizations/security/managers.create`|
+|Revoke organization manager|Organization manager role revoked from a team member|`organizations/security/managers.delete`|
+|?Update repository management permissions?|Repository management permissions updated||
+|Update default Git provider configuration|Default Git provider configuration for the organization updated|`organizations.integrations.providersettings.update`|
+|Apply default Git provider configuration to all repositories|Default Git provider configuration applied to all repositories of the organization|`organizations.integrations.providersettings.apply`|
+|Create new organization hook|New organization webhook created|`organizations.settings.hooks.create`|
 |Create new gate policy|New gate policy created|`organizations.gatepolicies.create`|
 |Update gate policy|Quality gate definition updated|`organizations.gatepolicies.update`|
 |Apply gate policy to repositories|Gate policy applied to a list of repositories|`organizations.gatepolicies.repositories.apply`|
 |Make gate policy default|Gate policy was made the default for the organization|`organizations.gatepolicies.setdefault`|
 |Make Codacy gate policy default|Built-in Codacy gate policy was made the default for the organization|`organizations.gatepolicies.setcodacydefault`|
 |Delete gate policy|Gate policy deleted|`organizations.gatepolicies.delete`|
-|Create new coding standard|New coding standard created (validate implementation)||
-|Update coding standard|Coding standard definition updated (validate updated fields)||
+|Create new coding standard using the guided setup|New coding standard created|`organizations.presetsstandards.create`|
+|Create new coding standard draft using the advanced setup|New coding standard draft created|`organizations.codingstandards.create`|
+|Create new coding standard from draft|New coding standard created|`organizations.codingstandards.promote`|
+|?Update coding standard?|Coding standard definition updated (validate updated fields)||
 |Apply coding standard to repositories|Coding standard applied to a list of repositories|`organizations.codingstandards.repositories.apply`|
 |Make coding standard default|Coding standard was made the default|`organizations.codingstandards.setdefault`|
 |Delete coding standard|Coding standard deleted|`organizations.codingstandards.delete`|
