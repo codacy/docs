@@ -9,7 +9,7 @@ Codacy displays the following [code quality metrics](../faq/code-analysis/which-
 -   **Grade:** Overall grade of the file
 -   **Issues:** Number of issues in the file
 -   **Complexity:** Cyclomatic complexity of the file
--   **Duplication:** Number of duplicated blocks in the file
+-   **Duplication:** Number of duplicated code blocks in the file
 -   **Coverage:** Percentage of coverable source lines of code that are covered by tests
 
 Codacy displays the files in alphabetical order by default, but you can sort the list by each column to help you identify which files you should improve or refactor next.
