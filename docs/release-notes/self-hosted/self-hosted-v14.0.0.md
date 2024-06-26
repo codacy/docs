@@ -48,7 +48,7 @@ This version of Codacy Self-hosted includes the tool versions below. The tools t
 -   CodeNarc 3.3.0
 -   CoffeeLint 5.2.11
 -   Cppcheck 2.12.0
--   **Credo 1.7.2 (updated from 1.4.0)**
+-   **[Credo 1.7.2](https://github.com/rrrene/credo/releases/tag/v1.7.2) (updated from 1.4.0)**
 -   CSSLint (deprecated) 1.0.5
 -   **[dartanalyzer 3.3.0](https://github.com/dart-lang/sdk/blob/main/CHANGELOG.md) (updated from 2.17.0)**
 -   **[detekt 1.23.5](https://github.com/detekt/detekt/releases/tag/v1.23.5) (updated from 1.22.0)**
