@@ -24,7 +24,6 @@ The sections below list the events that Codacy logs for your organization at use
 
 |Event|Description|Action|
 |-----|-----------|------|
-|Sign up|User signed up to Codacy||
 |Log in|User logged in to Codacy|`user.login`|
 |Create account API token|New [account API token](../codacy-api/api-tokens.md#account-api-tokens) created|`user.tokens.create`|
 |Read account API token|List of [account API tokens](../codacy-api/api-tokens.md#account-api-tokens) retrieved|`user.tokens.read`|
