@@ -14,7 +14,7 @@ By default, Codacy analyzes your repositories using a subset of the supported an
 ## Configuring tools and code patterns using the Codacy UI
 
 !!! note
-    If you update the configurations of a repository that follows a [coding standard](../organizations/using-coding-standards.md), Codacy copies the coding standard configurations to the repository and the repository stops following the coding standard. You can then customize the repository configurations without affecting the coding standard.
+    If you update the configurations of a repository that follows a [coding standard](../organizations/using-coding-standards.md), Codacy copies the coding standard configurations to the repository and the repository stops following the coding standard. You can then customize the repository configurations without affecting the coding standard.<!-- TODO ALA-1104 review (and potentially remove) -->
 
 To configure the tools and code patterns for a repository using the Codacy UI:
 
@@ -26,20 +26,22 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
     ![Toggling tools](images/code-patterns-toggle-tools.png)<!-- TODO ALA-1104 screenshot -->
 
-1.  Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the sidebar filters. You can filter by language, [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), or status.
+1.  Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the sidebar filters. You can filter by language, [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), or status.<!-- TODO ALA-1104 add new filter and search, review wording and structure -->
 
     To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues.
 
     !!! tip
-        -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click **Enable all**. For example, to enable all Security patterns, click the **Security** filter and then click **Enable all**.
+        -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click **Enable all**. For example, to enable all Security patterns, click the **Security** filter and then click **Enable all**.<!-- TODO ALA-1104 confirm this is still valid -->
 
-        -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.
+        -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.<!-- TODO ALA-1104 confirm this is still valid -->
 
     ![Configuring code patterns](images/code-patterns-configure.png)<!-- TODO ALA-1104 screenshot -->
 
 1.  Optionally, to take the changes into account immediately, [reanalyze the repository manually](../faq/repositories/how-do-i-reanalyze-my-repository.md). Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.
 
 ## Using tool configuration files {: id="using-your-own-tool-configuration-files"}
+
+<!-- TODO ALA-1104 confirm nothing needs to be updated here -->
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
