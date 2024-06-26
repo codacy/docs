@@ -38,7 +38,7 @@ To change this, open your organization **Settings**, page **Roles and permission
 
 ![Configuring repository management permissions](images/roles-permissions-repo-management.png)
 
-## Managing the organization manager role {: id="org-manager"}
+## Managing the organization manager role {: id="org-manager-role"}
 
 {% include-markdown "../assets/includes/admin-access-info.md" %}
 
