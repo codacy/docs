@@ -10,7 +10,7 @@ description: List of events that Codacy can log for an organization.
     end="<!--paid-feature-business-end-->"
 %}
 
-Codacy logs important events in your organization which enables the generation of comprehensive reports to assist you with the audit process. For example, you can track who added a repository to Codacy, or changed the settings of a coding standard.
+Codacy logs important events in your organization - when a user executed a specific operation - which enables the generation of comprehensive reports to assist you with the audit process. For example, you can track who added a repository to Codacy, or changed the settings of a coding standard.
 
 [Organization admins and organization managers](./roles-and-permissions-for-organizations.md) can retrieve audit log reports of organization events [using the Codacy API](../codacy-api/examples/obtaining-audit-log-events-for-organization.md).
 
