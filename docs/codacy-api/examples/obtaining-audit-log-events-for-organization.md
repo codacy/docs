@@ -4,7 +4,11 @@ description: Example of how to obtain audit log events for an organization using
 
 # Obtaining audit log events for an organization
 
-!!! info "This feature is available only to business tier customers"
+{%
+    include-markdown "../../assets/includes/paid.md"
+    start="<!--paid-feature-business-start-->"
+    end="<!--paid-feature-business-end-->"
+%}
 
 To obtain the audit log events for your organization, use the Codacy API endpoint [<span class="skip-vale">listAuditLogsForOrganization</span>](https://api.codacy.com/api/api-docs#codacy-api-organization).<!--TODO PLUTO-952 Update link-->
 

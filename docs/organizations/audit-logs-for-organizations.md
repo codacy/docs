@@ -4,7 +4,11 @@ description: List of events that Codacy can log for an organization.
 
 # Audit logs for organizations
 
-!!! info "This feature is available only to business tier customers"
+{%
+    include-markdown "../assets/includes/paid.md"
+    start="<!--paid-feature-business-start-->"
+    end="<!--paid-feature-business-end-->"
+%}
 
 Codacy logs important events in your organization which enables the generation of comprehensive reports to assist you with the audit process. For example, you can track who added a repository to Codacy, or changed the settings of a coding standard.
 

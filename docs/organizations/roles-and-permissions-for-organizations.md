@@ -233,7 +233,7 @@ The table below maps the GitHub Cloud and GitHub Enterprise roles to the corresp
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).  
 <sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.  
 <sup>4</sup>: Requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.  
-<sup>5</sup>: [Audit logs](./audit-logs-for-organizations.md) are available only to business tier customers.
+<sup>5</sup>: [Audit logs](./audit-logs-for-organizations.md) are available only on [Business plan](https://www.codacy.com/pricing).
 
 ## Permissions for GitLab
 
@@ -396,7 +396,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
 <sup>1</sup>: External users aren't supported as members of organizations on Codacy. You can still [add external users to Codacy](managing-people.md#adding-people) so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.  
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).  
 <sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.  
-<sup>4</sup>: [Audit logs](./audit-logs-for-organizations.md) are available only to business tier customers.
+<sup>4</sup>: [Audit logs](./audit-logs-for-organizations.md) are available only on [Business plan](https://www.codacy.com/pricing).
 
 ## Permissions for Bitbucket
 
@@ -509,7 +509,7 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
 <sup>1</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.  
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for [accepting new people](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization).  
 <sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.  
-<sup>4</sup>: [Audit logs](./audit-logs-for-organizations.md) are available only to business tier customers.
+<sup>4</sup>: [Audit logs](./audit-logs-for-organizations.md) are available only on [Business plan](https://www.codacy.com/pricing).
 
 ## See also
 
