@@ -29,8 +29,8 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    codacy_self_hosted_version: "13.0.0"
-    codacy_coverage_reporter_version: "13.13.14"
+    codacy_self_hosted_version: "14.0.0"
+    codacy_coverage_reporter_version: "13.10.15"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
@@ -614,6 +614,7 @@ nav:
     - Your account:
           - account/managing-your-profile.md
           - account/emails.md
+          - account/user-session-management.md
     - Codacy API:
           - codacy-api/using-the-codacy-api.md
           - codacy-api/api-tokens.md
@@ -732,6 +733,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v14:
+                      - release-notes/self-hosted/self-hosted-v14.0.0.md
                 - v13:
                       - release-notes/self-hosted/self-hosted-v13.0.0.md
                 - v12:
