@@ -18,7 +18,7 @@
                     Configuring your organization
                 </p>
             {% else %}
-                <a href="/getting-started/configuring-your-repository#configuring-your-repository">
+                <a href="/getting-started/configuring-your-organization#configuring-your-organization">
                     Configuring your organization
                 </a>
             {% endif %}
