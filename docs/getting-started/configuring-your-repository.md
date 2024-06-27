@@ -1,6 +1,6 @@
 ---
 description: Configure Codacy to match the coding conventions and best practices that your team may already be following or that you want to promote.
-nav_step: 1
+nav_step: 2
 ---
 
 # Configuring your repository
