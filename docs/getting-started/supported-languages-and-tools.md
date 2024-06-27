@@ -384,7 +384,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://github.com/rubik/radon">Radon</a></td>
     </tr>
     <tr>
-      <td>Ruby <a href="#ruby-31"><sup>7</sup></a></td>
+      <td>Ruby</td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a> <a href="#semgrep-brakeman"><sup>8</sup></a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
@@ -754,7 +754,6 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <sup><span id="cppcheck-misra">4</span></sup>: Currently, Cppcheck only supports [checking the MISRA guidelines for C](https://cppcheck.sourceforge.io/misra.php).  
 <sup><span id="dart-limitations">5</span></sup>: Currently, Codacy only supports including the packages [lints](https://pub.dev/packages/lints) and [<span class="skip-vale">flutter_lints</span>](https://pub.dev/packages/flutter_lints) on dartanalyzer configuration files.  
 <sup><span id="complexity-limitations">6</span></sup>: Doesn't calculate [the number of methods and the complexity per method](../repositories/files.md#file-details) for each file.  
-<sup><span id="ruby-31">7</span></sup>: Currently, Codacy doesn't support any static code analysis tool for [Ruby 3.1](https://www.ruby-lang.org/en/news/2021/12/25/ruby-3-1-0-released/).  
 <sup><span id="semgrep-brakeman">8</span></sup>: Due to licensing limitations, Codacy doesn't support the latest version of Brakeman. To analyze your Ruby code for the latest security vulnerabilities, use [Semgrep](https://semgrep.dev/), which provides comprehensive and up-to-date security scanning.  
 <sup><span id="swiftlint-complexity">9</span></sup>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html) on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code patterns page](../repositories-configure/configuring-code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration) to customize the thresholds.  
 <sup><span id="suggest-fixes">🔧</span></sup>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
