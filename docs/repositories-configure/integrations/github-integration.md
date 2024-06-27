@@ -97,6 +97,7 @@ Codacy generates an overview of the changes in the pull request so that any revi
 To enable this feature, add the following to the [Codacy configuration file](../codacy-configuration-file.md) `codacy.yaml` in the root of your repository:
 
 ```yaml
+---
 reviews:
   high_level_summary: true
 ```
