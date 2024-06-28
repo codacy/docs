@@ -10,7 +10,7 @@ description: Example of how to obtain audit log events for an organization using
     end="<!--paid-feature-business-end-->"
 %}
 
-To obtain the audit log events for your organization, use the Codacy API endpoint [<span class="skip-vale">listAuditLogsForOrganization</span>](https://api.codacy.com/api/api-docs#codacy-api-organization).<!--TODO PLUTO-952 Update link-->
+To obtain the audit log events for your organization, use the Codacy API endpoint [<span class="skip-vale">listAuditLogsForOrganization</span>](https://api.codacy.com/api/api-docs#listauditlogsfororganization).
 
 For example, you may want to generate an audit log report for your organization, or retrieve audit log data from Codacy to integrate with your internal audit reporting tool.
 
@@ -25,7 +25,7 @@ The example script:
     !!! note
         The user authenticating on the Codacy API must be an [organization admin or organization manager](../../organizations/roles-and-permissions-for-organizations.md).
 
-1.  Calls the endpoint [<span class="skip-vale">listAuditLogsForOrganization</span>](https://api.codacy.com/api/api-docs#codacy-api-organization) to retrieve the audit log events for your organization.<!--TODO PLUTO-952 Update link-->
+1.  Calls the endpoint [<span class="skip-vale">listAuditLogsForOrganization</span>](https://api.codacy.com/api/api-docs#listauditlogsfororganization) to retrieve the audit log events for your organization.
 1.  Uses [jq](https://github.com/stedolan/jq) to select only the necessary data fields and convert the results to the CSV format.
 
 ```bash
