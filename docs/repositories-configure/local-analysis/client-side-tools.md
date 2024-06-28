@@ -12,7 +12,7 @@ Codacy supports client-side tools in two ways:
 
     The Codacy Analysis CLI automatically fetches the code pattern settings that you define on the Codacy UI and applies them when running the tools.
 
--   **Standalone tools:** Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy. You must download, configure, and run the third-party tools yourself.
+-   **Standalone tools:** Codacy provides auxiliary converters that parse the output of third-party tools and convert to a format that you then upload to Codacy. You must download, configure, and run the third-party tools yourself.<!-- NOTE: If updating this line or the one below, search for and update the matching UI copy on the Code patterns page in codacy-spa. -->
 
     You can't configure these tools on the Codacy UI, since you manage their configuration locally.
 
