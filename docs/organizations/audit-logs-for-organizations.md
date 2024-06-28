@@ -32,7 +32,6 @@ The sections below list the events that Codacy logs for your organization at use
 |Create [account API token](../codacy-api/api-tokens.md#account-api-tokens)|New account API token created|`user.tokens.create`|
 |Read account API token|List of account API tokens retrieved|`user.tokens.read`|
 |Delete account API token|Account API token deleted|`user.tokens.delete`|
-|?Add Git provider (depends on effort)?|New Git provider added to Codacy||
 
 ### Organization
 
