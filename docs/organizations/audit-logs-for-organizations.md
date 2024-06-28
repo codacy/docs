@@ -10,9 +10,9 @@ description: List of events that Codacy can log for an organization.
     end="<!--paid-feature-business-end-->"
 %}
 
-Codacy logs important events in your organization - when a user executed a specific operation - which enables the generation of comprehensive reports to assist you with the audit process. For example, you can track who added a repository to Codacy, or changed the settings of a coding standard.
+Codacy logs important events in your organization, reflecting when your team members execute specific operations. This enables the generation of comprehensive reports to assist you with the audit process. For example, you can track who added a repository to Codacy, or changed the settings of a coding standard.
 
-[Organization admins and organization managers](./roles-and-permissions-for-organizations.md) can obtain the audit log data of the organization events using the Codacy API endpoint [<span class="skip-vale">listAuditLogsForOrganization</span>](https://api.codacy.com/api/api-docs#listauditlogsfororganization).
+[Organization admins and organization managers](./roles-and-permissions-for-organizations.md) can obtain the audit log data of the organization events using the Codacy API endpoint [listAuditLogsForOrganization](https://api.codacy.com/api/api-docs#listauditlogsfororganization).
 
 The retention period of audit logs for organization events is one year.
 
