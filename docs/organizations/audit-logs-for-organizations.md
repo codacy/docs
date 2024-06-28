@@ -41,6 +41,7 @@ The sections below list the events that Codacy logs for your organization at use
 |[Add organization](./what-are-organizations.md#adding-an-organization)|Organization added to Codacy|`organizations.create`|
 |[Add people](./managing-people.md#adding-people) to organization|New people added to the organization|`organizations.people.create`|
 |[Join organization](./managing-people.md#joining)|User joined the organization|`organizations.join`|
+|Update [repository management permissions](./roles-and-permissions-for-organizations.md#change-analysis-configuration)|Repository management permissions updated|`organizations.analysisconfigurationminimumpermission.update`|
 |Assign [organization manager](./roles-and-permissions-for-organizations.md#managing-the-organization-manager-role)|Organization manager role assigned to a team member|`organizations.security.managers.create`|
 |Revoke organization manager|Organization manager role revoked from a team member|`organizations.security.managers.delete`|
 |Update [default Git provider configuration](./integrations/default-git-provider-integration-settings.md)|Default Git provider configuration for the organization updated|`organizations.integrations.providersettings.update`|
