@@ -163,7 +163,7 @@ Codacy closes a finding when it detects that the associated Jira issue is marked
 
 Codacy opens a finding for each security issue detected during a penetration test.
 
-Codacy closes a finding when a subsequent penetration test does not detect the underlying security issue.
+Codacy closes a finding when a subsequent penetration test doesn't detect the underlying security issue.
 
 ### How Codacy manages findings detected during application scanning (DAST) {: id="opening-and-closing-app-scanning-items"}
 
@@ -172,7 +172,7 @@ Codacy closes a finding when a subsequent penetration test does not detect the u
 
 Codacy opens a finding for each security issue detected in the DAST report.
 
-Codacy closes a finding when a subsequent DAST report does not detect the underlying security issue.
+Codacy closes a finding when a subsequent DAST report doesn't detect the underlying security issue.
 
 ## Finding severities and deadlines {: id="item-severities-and-deadlines"}
 

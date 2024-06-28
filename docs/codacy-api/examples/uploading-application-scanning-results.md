@@ -12,7 +12,7 @@ To ensure the security of your web applications, Codacy allows you to upload DAS
 
     For details on generating reports in ZAP, refer to the [ZAP documentation](https://www.zaproxy.org/docs/).
 
-1.  Upload the report to the Codacy API endpoint [uploadDASTReport](https://app.codacy.com/api/api-docs#uploaddastreport):
+1.  Upload the report to the Codacy API endpoint [<span class="skip-vale">uploadDASTReport</span>](https://app.codacy.com/api/api-docs#uploaddastreport):
 
     <!-- TODO TAROT-2712 is `csrf-token: nocheck` required? -->
     ```bash
@@ -60,7 +60,7 @@ The example script:
 
 1.  Defines the [API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
 1.  Defines the path and filename of the file containing the DAST report.
-1.  Calls the endpoint [uploadDASTReport](https://app.codacy.com/api/api-docs#uploaddastreport) to upload the report to Codacy.
+1.  Calls the endpoint [<span class="skip-vale">uploadDASTReport</span>](https://app.codacy.com/api/api-docs#uploaddastreport) to upload the report to Codacy.
 
 <!-- TODO TAROT-2712 is `csrf-token: nocheck` required? -->
 ```bash
