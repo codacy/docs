@@ -52,10 +52,10 @@ The sections below list the events that Codacy logs for your organization at use
 |Make gate policy default|Gate policy was made the default for the organization|`organizations.gatepolicies.setdefault`|
 |Make Codacy gate policy default|Built-in Codacy gate policy was made the default for the organization|`organizations.gatepolicies.setcodacydefault`|
 |Delete gate policy|Gate policy deleted|`organizations.gatepolicies.delete`|
-|Create new [coding standard](./using-coding-standards.md) using the guided setup|New coding standard created|`organizations.presetsstandards.create`|
-|Create new coding standard draft using the advanced setup|New coding standard draft created|`organizations.codingstandards.create`|
+|Create new [coding standard](./using-coding-standards.md) using preset sensitivity levels|New coding standard created|`organizations.presetsstandards.create`|
+|Create new coding standard draft using individual language and code pattern settings|New coding standard draft created|`organizations.codingstandards.create`|
 |Create new coding standard from draft|New coding standard created|`organizations.codingstandards.promote`|
-|?Update coding standard?|Coding standard definition updated (validate updated fields)||
+|Update coding standard from draft|Coding standard updated|`organizations.codingstandards.promote`|
 |Apply coding standard to repositories|Coding standard applied to a list of repositories|`organizations.codingstandards.repositories.apply`|
 |Make coding standard default|Coding standard was made the default|`organizations.codingstandards.setdefault`|
 |Delete coding standard|Coding standard deleted|`organizations.codingstandards.delete`|
