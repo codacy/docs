@@ -4,11 +4,11 @@
         <li class="{% if page.meta.nav_step == 0 %}nav-multistep__step--active{% endif %}">
             {% if page.meta.nav_step == 0 %}
                 <p>
-                    Adding your first repository
+                    Adding your organization to Codacy
                 </p>
             {% else %}
-                <a href="/getting-started/codacy-quickstart#adding-your-first-repository">
-                    Adding your first repository
+                <a href="/getting-started/codacy-quickstart#adding-your-organization-to-codacy">
+                    Adding your organization to Codacy
                 </a>
             {% endif %}
         </li>
