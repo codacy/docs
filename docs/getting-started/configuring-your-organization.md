@@ -7,7 +7,7 @@ nav_step: 1
 
 {% include-markdown "../assets/includes/nav-multistep-quickstart.md" %}
 
-Now that you are familiar with Codacy, you might want to configure your Codacy organization to align with your corporate policies and ensure consistent code quality across your repositories.
+Once you've added your organization to Codacy, it's important that you align it with your corporate policies and ensure consistent code quality across your repositories.
 
 To configure your organization, follow these steps:
 
@@ -16,6 +16,7 @@ To configure your organization, follow these steps:
 1.  [Defining gate policies](#gate-policies)
 1.  [Defining coding standards](#coding-standards)
 1.  [Configuring default Git provider integration settings](#git-provider-settings)
+1.  [Adding repositories](#adding-repositories)
 
 ## 1. Configuring repository management permissions {: id="repository-permissions"}
 
@@ -47,6 +48,21 @@ To configure your organization, follow these steps:
 
 ![Default Git provider integration settings](../organizations/integrations/images/default-git-provider-settings.png)
 
+## 6. Adding repositories {: id="adding-repositories"}
+
+Next, add the repositories that you wish to analyze. Codacy begins an initial analysis as soon as you add a repository and sets everything up to ensure your next commits on that repository are analyzed.
+
+!!! note
+    You can only add repositories on Codacy if you have the [necessary permissions on your Git provider](../organizations/roles-and-permissions-for-organizations.md).
+
+![Adding repositories](../organizations/images/repositories-add.png)
+
+Click the repository name to navigate to the repository dashboard and see the [code quality overview of your repository](../repositories/repository-dashboard.md) as soon as the initial analysis is complete:
+
+![Repository dashboard](../repositories/images/repository-dashboard.png)
+
+To explore the initial analysis results, [check the **Issues** page](../repositories/issues.md).
+
 ## Next steps {: id="next-steps"}
 
-Now that you set up the global settings for your organization, see how to [configure any specific settings for each repository](./configuring-your-repository.md).
+The first analysis is based on the organization policies and standards that you previously defined, or Codacy defaults if you haven't defined your own policies. It's now important that you [configure specific rules for each repository](configuring-your-repository.md) to integrate code analysis seamlessly into your existing pipeline.
