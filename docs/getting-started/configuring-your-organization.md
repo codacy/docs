@@ -7,7 +7,7 @@ nav_step: 1
 
 {% include-markdown "../assets/includes/nav-multistep-quickstart.md" %}
 
-Once you've added your organization to Codacy, it's important that you align it with your corporate policies and ensure consistent code quality across your repositories. When adding new repositories to Codacy, they follow the defined organization policies.
+Once you've added your organization to Codacy, it's important that you align it with your corporate policies and configure it to match the coding conventions and best practices that your team may already be following or that you want to promote. It's also critical to review the configurations to avoid reporting false positives or any other issues that don't bring value to your team, which can introduce unwanted delays to the development process.
 
 To configure your organization, follow these steps:
 
@@ -65,4 +65,4 @@ To explore the initial analysis results, [check the **Issues** page](../reposito
 
 ## Next steps {: id="next-steps"}
 
-The first analysis is based on the organization policies and standards that you previously defined, or Codacy defaults if you haven't defined your own policies. It's now important that you [configure specific rules for each repository](configuring-your-repository.md) to integrate code analysis seamlessly into your existing pipeline.
+The first analysis is based on the organization policies and standards that you previously defined, or Codacy defaults if you haven't defined your own policies. This ensures consistent code quality across your repositories. It's now important that you [configure specific rules for each repository](configuring-your-repository.md) to integrate code analysis seamlessly into your existing pipeline.

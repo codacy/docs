@@ -7,14 +7,14 @@ nav_step: 2
 
 {% include-markdown "../assets/includes/nav-multistep-quickstart.md" %}
 
-Once you've added your first repository, it's important that you configure Codacy's analysis tools to match the use cases of your team, such as configuring any coding conventions and best practices that your team may already be following or that you want to promote. It's also critical to review the configurations to avoid reporting false positives or any other issues that don't bring value to your team, which can introduce unwanted delays to the development process.
+When adding your repositories to Codacy, the first analysis is based on the organization policies and standards. It's now important that you adjust for each repository any specific configuration where the organization settings don't apply.
 
-You can optionally add coverage reports to detail how much of your code is covered by tests and unify your quality and coverage pipelines. You can generate coverage reports and upload them to Codacy using a range of options, such as CI/CD integration, CLI, Docker, GitHub action, and more.
+You can optionally add coverage reports to detail how much of your repository code is covered by tests and unify your quality and coverage pipelines. You can generate coverage reports and upload them to Codacy using a range of options, such as CI/CD integration, CLI, Docker, GitHub action, and more.
 
 To configure your repository, follow these steps:
 
 1.  [Ignoring files](#ignoring-files)
-1.  [Configuring code patterns](#configuring-code-patterns)
+1.  [Adjusting code pattern configuration](#configuring-code-patterns)
 1.  [Adding coverage reports](#adding-coverage) (optional)
 
 ## 1. Ignoring files {: id="ignoring-files"}
@@ -23,9 +23,9 @@ To configure your repository, follow these steps:
 
 ![Ignoring files](../repositories-configure/images/ignored-files.png)
 
-## 2. Configuring code patterns {: id="configuring-code-patterns"}
+## 2. Adjusting code pattern configuration {: id="configuring-code-patterns"}
 
-[Configure the tools and code patterns](../repositories-configure/configuring-code-patterns.md) that Codacy uses to analyze your repository. If security is important for your team, review the [security and risk management dashboard](../organizations/managing-security-and-risk.md) to ensure that your configuration detects potential security issues.
+[Adjust the tools and code patterns](../repositories-configure/configuring-code-patterns.md) that Codacy uses to analyze your repository. If security is important for your team, review the [security and risk management dashboard](../organizations/managing-security-and-risk.md) to ensure that your configuration detects potential security issues.
 
 !!! tip
     To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, [use an organization coding standard](../organizations/using-coding-standards.md).
