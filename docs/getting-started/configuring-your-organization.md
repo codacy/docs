@@ -7,7 +7,7 @@ nav_step: 1
 
 {% include-markdown "../assets/includes/nav-multistep-quickstart.md" %}
 
-Once you've added your organization to Codacy, it's important that you align it with your corporate policies and ensure consistent code quality across your repositories.
+Once you've added your organization to Codacy, it's important that you align it with your corporate policies and ensure consistent code quality across your repositories. When adding new repositories to Codacy, they follow the defined organization policies.
 
 To configure your organization, follow these steps:
 
