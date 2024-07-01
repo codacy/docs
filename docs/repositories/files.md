@@ -27,7 +27,10 @@ Use the search box to filter the list and find specific files:
 
 Click a specific file to see more detailed analysis information for that file.
 
-The header of the file detail page displays the same code quality metrics as the Files page, along with an **Ignore file** link to ignore the file, and a link to view the file on your Git provider.
+The header of the file detail page displays the same code quality metrics as the Files page, as well as:
+
+-   An **Ignore file** link to [ignore the selected file](../repositories-configure/ignoring-files.md) on future Codacy analysis
+-   A link to view the file on your Git provider
 
 ![File detail](images/files-details.png)
 
