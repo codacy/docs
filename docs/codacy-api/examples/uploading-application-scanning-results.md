@@ -41,10 +41,7 @@ Substitute the placeholders with your own values:
 
 -   **ORGANIZATION:** Name of the organization on the Git provider. For example, `codacy`. You must have admin permissions over the organization on the Git provider.
 
--   **TOOL_NAME:** Name of the DAST tool used to generate the report.
-
-    !!! note
-        Currently, only ZAP is supported.
+-   **TOOL_NAME:** Name of the DAST tool used to generate the report. Currently, only ZAP is supported.
 
 -   **DAST_REPORT_PATH:** Path to the file containing the DAST report.
 
