@@ -2,20 +2,20 @@
 
 The **Quality Files page** displays the current code quality information for each analyzed file in your [enabled repository branches](../repositories-configure/managing-branches.md).
 
-By default, the page lists the files on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display files on other branches.
+By default, the page lists the files on the main branch of your repository. However, if you have [more than one branch enabled](../repositories-configure/managing-branches.md), you can select other branches using the drop-down list at the top of the page.
 
 Codacy displays the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) for each file, if available:
 
--   Grade
--   Number of issues
--   Complexity
--   Duplication
--   Code coverage
+-   **Grade:** Overall grade of the file
+-   **Issues:** Number of issues in the file
+-   **Complexity:** Cyclomatic complexity of the file
+-   **Duplication:** Number of duplicated code blocks in the file
+-   **Coverage:** Percentage of coverable source lines of code that are covered by tests
 
 Codacy displays the files in alphabetical order by default, but you can sort the list by each column to help you identify which files you should improve or refactor next.
 
 !!! note
-    [You can use the Codacy API](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md) to generate reports or obtain code quality metrics for the files in your repositories in a more flexible way.
+    You can [use the Codacy API to generate reports or obtain code quality metrics](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md) for the files in your repositories in a more flexible way.
 
 ![Files list](images/files.png)
 
@@ -25,34 +25,26 @@ Use the search box to filter the list and find specific files:
 
 ## File details
 
-Click a specific file to see more detailed analysis information for that file, including statistics on:
+Click a specific file to see more detailed analysis information for that file.
 
--   **Size:** Lines of code, source lines of code, and commented lines of code
--   **Structure:** Number of methods and ratio of source lines of code per number of methods
--   **Complexity:** Complexity and complexity per method
--   **Duplication:** Number of clones and duplicated lines of code
+The header of the file detail page displays the same code quality metrics as the Files page, as well as:
 
-The button **Ignore File** allows you to ignore the selected file on future Codacy analysis.
+-   An **Ignore file** link to [ignore the selected file](../repositories-configure/ignoring-files.md) on future Codacy analysis
+-   A link to view the file on your Git provider
 
 ![File detail](images/files-details.png)
 
 Depending on the available analysis information for the file, Codacy displays one or more of the following tabs:
 
--   **Issues:** Shows all issues in the file. The tab displays the number of issues in the file.
-
-    Toggle between the list and annotated source code views using the icon on the right-hand side. When using the list view, you can use filters to help you find specific issues in the file. Select an issue to see more information about the issue.
-
-    For more information about the available information and filters and for each issue see the [Issues page](issues.md).
+-   **Issues:** Shows the annotated source code on the left-hand side and the matching list of issues and issue distribution by severity on the right-hand side. Each listed issue includes the same information and options available on the [Quality Issues page](issues.md).
 
     ![Issues for a file](images/files-issues.png)
 
--   **Duplication:** Shows all duplicated blocks in the file with links to the clones of each block. The tab displays the number of duplicated blocks in the file.
-
-    Toggle between the list and annotated source code views using the icon on the right-hand side.
+-   **Duplication:** Shows the annotated source code on the left-hand side and the matching list of duplicated code blocks and counts on the right-hand side. Each listed duplicate includes the number of clones and their locations.
 
     ![Duplicated blocks for a file](images/files-duplication.png)
 
--   **Coverage:** Shows which lines of code are covered by tests (green background) or not (red background). The tab displays the percentage of coverable lines that are covered by tests in the file.
+-   **Coverage:** Shows which lines of code are covered by tests (green background labeled with test hit count) or not covered (red background), along with the counts of coverable and covered lines and the file status with respect to the [coverage goal](../repositories-configure/adjusting-quality-goals.md).
 
     ![Coverage information for a file](images/files-coverage.png)
 
