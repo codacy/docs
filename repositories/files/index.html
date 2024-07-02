@@ -11,7 +11,7 @@
         <meta name="description" content="The Quality Files page displays the current code quality information for each analyzed file in your enabled repository branches.">
       
       
-        <meta http-equiv="last-modified" content="2024-06-07 14:19:27">
+        <meta http-equiv="last-modified" content="2024-07-02 11:42:02">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/files/">
@@ -4222,48 +4222,43 @@
                 
                 <h1 id="quality-files-page">Quality Files page<a class="headerlink" href="#quality-files-page" title="Permanent link">#</a></h1>
 <p>The <strong>Quality Files page</strong> displays the current code quality information for each analyzed file in your <a href="../../repositories-configure/managing-branches/">enabled repository branches</a>.</p>
-<p>By default, the page lists the files on the main branch of your repository but if you have <a href="../../repositories-configure/managing-branches/">more than one branch enabled</a> you can use the drop-down list at the top of the page to display files on other branches.</p>
+<p>By default, the page lists the files on the main branch of your repository. However, if you have <a href="../../repositories-configure/managing-branches/">more than one branch enabled</a>, you can select other branches using the drop-down list at the top of the page.</p>
 <p>Codacy displays the following <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">code quality metrics</a> for each file, if available:</p>
 <ul>
-<li>Grade</li>
-<li>Number of issues</li>
-<li>Complexity</li>
-<li>Duplication</li>
-<li>Code coverage</li>
+<li><strong>Grade:</strong> Overall grade of the file</li>
+<li><strong>Issues:</strong> Number of issues in the file</li>
+<li><strong>Complexity:</strong> Cyclomatic complexity of the file</li>
+<li><strong>Duplication:</strong> Number of duplicated code blocks in the file</li>
+<li><strong>Coverage:</strong> Percentage of coverable source lines of code that are covered by tests</li>
 </ul>
 <p>Codacy displays the files in alphabetical order by default, but you can sort the list by each column to help you identify which files you should improve or refactor next.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p><a href="../../codacy-api/examples/obtaining-code-quality-metrics-for-files/">You can use the Codacy API</a> to generate reports or obtain code quality metrics for the files in your repositories in a more flexible way.</p>
+<p>You can <a href="../../codacy-api/examples/obtaining-code-quality-metrics-for-files/">use the Codacy API to generate reports or obtain code quality metrics</a> for the files in your repositories in a more flexible way.</p>
 </div>
 <p><img alt="Files list" src="../images/files.png" /></p>
 <p>Use the search box to filter the list and find specific files:</p>
 <p><img alt="Finding specific files" src="../images/files-search.png" /></p>
 <h2 id="file-details">File details<a class="headerlink" href="#file-details" title="Permanent link">#</a></h2>
-<p>Click a specific file to see more detailed analysis information for that file, including statistics on:</p>
+<p>Click a specific file to see more detailed analysis information for that file.</p>
+<p>The header of the file detail page displays the same code quality metrics as the Files page, as well as:</p>
 <ul>
-<li><strong>Size:</strong> Lines of code, source lines of code, and commented lines of code</li>
-<li><strong>Structure:</strong> Number of methods and ratio of source lines of code per number of methods</li>
-<li><strong>Complexity:</strong> Complexity and complexity per method</li>
-<li><strong>Duplication:</strong> Number of clones and duplicated lines of code</li>
+<li>An <strong>Ignore file</strong> link to <a href="../../repositories-configure/ignoring-files/">ignore the selected file</a> on future Codacy analysis</li>
+<li>A link to view the file on your Git provider</li>
 </ul>
-<p>The button <strong>Ignore File</strong> allows you to ignore the selected file on future Codacy analysis.</p>
 <p><img alt="File detail" src="../images/files-details.png" /></p>
 <p>Depending on the available analysis information for the file, Codacy displays one or more of the following tabs:</p>
 <ul>
 <li>
-<p><strong>Issues:</strong> Shows all issues in the file. The tab displays the number of issues in the file.</p>
-<p>Toggle between the list and annotated source code views using the icon on the right-hand side. When using the list view, you can use filters to help you find specific issues in the file. Select an issue to see more information about the issue.</p>
-<p>For more information about the available information and filters and for each issue see the <a href="../issues/">Issues page</a>.</p>
+<p><strong>Issues:</strong> Shows the annotated source code on the left-hand side and the matching list of issues and issue distribution by severity on the right-hand side. Each listed issue includes the same information and options available on the <a href="../issues/">Quality Issues page</a>.</p>
 <p><img alt="Issues for a file" src="../images/files-issues.png" /></p>
 </li>
 <li>
-<p><strong>Duplication:</strong> Shows all duplicated blocks in the file with links to the clones of each block. The tab displays the number of duplicated blocks in the file.</p>
-<p>Toggle between the list and annotated source code views using the icon on the right-hand side.</p>
+<p><strong>Duplication:</strong> Shows the annotated source code on the left-hand side and the matching list of duplicated code blocks and counts on the right-hand side. Each listed duplicate includes the number of clones and their locations.</p>
 <p><img alt="Duplicated blocks for a file" src="../images/files-duplication.png" /></p>
 </li>
 <li>
-<p><strong>Coverage:</strong> Shows which lines of code are covered by tests (green background) or not (red background). The tab displays the percentage of coverable lines that are covered by tests in the file.</p>
+<p><strong>Coverage:</strong> Shows which lines of code are covered by tests (green background labeled with test hit count) or not covered (red background), along with the counts of coverable and covered lines and the file status with respect to the <a href="../../repositories-configure/adjusting-quality-goals/">coverage goal</a>.</p>
 <p><img alt="Coverage information for a file" src="../images/files-coverage.png" /></p>
 </li>
 </ul>
@@ -4448,7 +4443,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 7, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 2, 2024</span>
     
   </small>
 </div>
