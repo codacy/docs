@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the GitHub integration to have status checks, annotations, issue and coverage summaries, and suggested fixes from Codacy directly on pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2024-06-26 10:50:24">
+        <meta http-equiv="last-modified" content="2024-07-04 07:49:35">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/github-integration/">
@@ -4294,12 +4294,11 @@ Codacy generates an overview of the changes in the pull request so that any revi
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <ul>
-<li>This feature is only available for GitHub.</li>
 <li>This feature uses only AWS services within Codacy's existing infrastructure. No information is shared with any other third party or used to train AI models.</li>
 <li>Summaries are generated using the pull request title, branch name, commit messages, and changes diff.</li>
 </ul>
 </div>
-<p>To enable this feature, add the following to the <a href="../../codacy-configuration-file/">Codacy configuration file</a> <code>codacy.yaml</code> in the root of your repository:</p>
+<p>To enable this feature, add the following to the <a href="../../codacy-configuration-file/">Codacy configuration file</a> <code>.codacy.yaml</code> in the root of your repository:</p>
 <div class="highlight"><pre><span></span><code><span class="nn">---</span>
 <span class="nt">reviews</span><span class="p">:</span>
 <span class="w">  </span><span class="nt">high_level_summary</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">true</span>
@@ -4468,7 +4467,7 @@ Codacy generates an overview of the changes in the pull request so that any revi
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 26, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 4, 2024</span>
     
   </small>
 </div>
