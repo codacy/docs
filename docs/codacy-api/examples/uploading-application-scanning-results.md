@@ -2,13 +2,13 @@
 description: Instructions on how to upload DAST results to Codacy using the API.
 ---
 
-# Uploading application scanning results to Codacy
+# Uploading DAST results to Codacy
 
-To ensure the security of your web applications, Codacy allows you to upload DAST results from [Zed Attack Proxy (ZAP)](https://www.zaproxy.org/) directly to Codacy and monitor them as findings under [Security and risk management](../../organizations/managing-security-and-risk.md).
+To ensure the security of your web applications, Codacy allows you to upload DAST (dynamic application security testing) results from [Zed Attack Proxy (ZAP)](https://www.zaproxy.org/) directly to Codacy and monitor them as findings under [Security and risk management](../../organizations/managing-security-and-risk.md).
 
-## Uploading ZAP DAST Results to Codacy
+## Uploading app scanning results to Codacy
 
-1.  Use Zed Attack Proxy (ZAP) to perform dynamic application security testing on your application and generate a report in the [Traditional JSON format](https://www.zaproxy.org/docs/desktop/addons/report-generation/report-traditional-json/).
+1.  Use ZAP ([Zed Attack Proxy](https://www.zaproxy.org/)) to perform dynamic app scanning on your application and generate a report in the [Traditional JSON format](https://www.zaproxy.org/docs/desktop/addons/report-generation/report-traditional-json/).
 
     For details on generating reports in ZAP, refer to the [ZAP documentation](https://www.zaproxy.org/docs/).
 
@@ -21,7 +21,7 @@ To ensure the security of your web applications, Codacy allows you to upload DAS
       -H 'csrf-token: nocheck' \
       -H 'Content-Type: multipart/form-data' \
       -H 'Accept: application/json' \
-      -F 'file=@<DAST_REPORT_PATH>' \
+      -F 'file=@<REPORT_PATH>' \
       -F 'reportFormat=json'
     ```
 
@@ -41,9 +41,9 @@ Substitute the placeholders with your own values:
 
 -   **ORGANIZATION:** Name of the organization on the Git provider. For example, `codacy`. You must have admin permissions over the organization on the Git provider.
 
--   **TOOL_NAME:** Name of the DAST tool used to generate the report. Currently, only ZAP is supported.
+-   **TOOL_NAME:** Name of the tool used to generate the report. Currently, only ZAP is supported.
 
--   **DAST_REPORT_PATH:** Path to the file containing the DAST report.
+-   **REPORT_PATH:** Path to the file containing the DAST report.
 
 Replace placeholders with your specific details to complete the upload. This process seamlessly integrates ZAP's security insights with Codacy's platform for a comprehensive security overview.
 
@@ -51,7 +51,7 @@ This procedure integrates your real-time security testing results with Codacy's 
  
 ## Example: Uploading ZAP DAST results
 
-Use this example Bash script to upload DAST results from ZAP contained in a file to Codacy. This example can be adapted to fit your specific needs.
+Use this example Bash script to upload the ZAP DAST report to Codacy. This example can be adapted to fit your specific needs.
 
 The example script:
 
