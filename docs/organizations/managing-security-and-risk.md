@@ -168,7 +168,7 @@ Codacy closes a finding when a subsequent penetration test doesn't detect the un
 ### How Codacy manages findings detected during application scanning (DAST) {: id="opening-and-closing-app-scanning-items"}
 
 !!! note
-    To view application scanning findings, also known as DAST (Dynamic Application Security Testing) findings, you must first [generate a DAST report and upload it to Codacy](../codacy-api/examples/uploading-application-scanning-results.md).
+    To view application scanning findings, also known as DAST (Dynamic Application Security Testing) findings, you must first [generate a DAST report and upload it to Codacy](../codacy-api/examples/uploading-dast-results.md).
 
 Codacy opens a finding for each security issue detected in the DAST report.
 
