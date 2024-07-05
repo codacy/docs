@@ -6,9 +6,9 @@ description: Instructions on how to upload DAST results to Codacy using the API.
 
 To ensure the security of your web applications, Codacy allows you to upload DAST (dynamic application security testing) results from [Zed Attack Proxy (ZAP)](https://www.zaproxy.org/) directly to Codacy and monitor them as findings under [Security and risk management](../../organizations/managing-security-and-risk.md).
 
-## Uploading app scanning results to Codacy
+## Uploading results to Codacy
 
-1.  Use ZAP ([Zed Attack Proxy](https://www.zaproxy.org/)) to perform dynamic app scanning on your application and generate a report in the [Traditional JSON format](https://www.zaproxy.org/docs/desktop/addons/report-generation/report-traditional-json/).
+1.  Use ZAP ([Zed Attack Proxy](https://www.zaproxy.org/)) to perform DAST on your application and generate a report in the [Traditional JSON format](https://www.zaproxy.org/docs/desktop/addons/report-generation/report-traditional-json/).
 
     For details on generating reports in ZAP, refer to the [ZAP documentation](https://www.zaproxy.org/docs/).
 
@@ -23,7 +23,7 @@ To ensure the security of your web applications, Codacy allows you to upload DAS
       -F 'reportFormat=json'
     ```
 
-Substitute the placeholders with your own values:
+Replace the placeholders with your own values:
 
 -   **API_KEY:** [Account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
 -   **GIT_PROVIDER:** Git provider hosting of the organization, using one of the values in the table below. For example, `gh` for GitHub Cloud.
@@ -43,9 +43,38 @@ Substitute the placeholders with your own values:
 
 -   **REPORT_PATH:** Path to the file containing the DAST report.
 
-Replace placeholders with your specific details to complete the upload. This process seamlessly integrates ZAP's security insights with Codacy's platform for a comprehensive security overview.
+Replace placeholders with your specific details to complete the upload.
 
-This procedure integrates your real-time security testing results with Codacy's comprehensive security management tools. 
+This process seamlessly integrates the security insights of third-party DAST tools with Codacy for a comprehensive security overview.
+
+## Retrieving uploaded results on Codacy
+
+To retrieve a list of uploaded DAST reports, access the Codacy API endpoint [<span class="skip-vale">listDASTReports</span>](https://api.codacy.com/api/api-docs#listdastreports):
+
+GET /organizations/{provider}/{remoteOrganizationName}/security/dast/reports
+```bash
+curl -X GET https://api.codacy.com/api/v3/organizations/<GIT_PROVIDER>/<ORGANIZATION>/security/dast/reports \
+  -H 'api-token: <API_KEY>' \
+  -H 'Accept: application/json'
+```
+
+Replace the placeholders with your own values:
+
+-   **API_KEY:** [Account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
+-   **GIT_PROVIDER:** Git provider hosting of the organization, using one of the values in the table below. For example, `gh` for GitHub Cloud.
+
+    | Value | Git provider      |
+    |-------|-------------------|
+    | `gh`  | GitHub Cloud      |
+    | `ghe` | GitHub Enterprise |
+    | `gl`  | GitLab Cloud      |
+    | `gle` | GitLab Enterprise |
+    | `bb`  | Bitbucket Cloud   |
+    | `bbe` | Bitbucket Server  |
+
+-   **TOOL_NAME:** Name of the tool used to generate the report. Currently, only ZAP is supported.
+
+This endpoint provides a list of all DAST reports uploaded to Codacy, allowing you to check the status and details of each report.
  
 ## Example: Uploading ZAP DAST results
 
