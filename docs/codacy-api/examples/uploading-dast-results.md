@@ -14,11 +14,9 @@ To ensure the security of your web applications, Codacy allows you to upload DAS
 
 1.  Upload the report to the Codacy API endpoint [<span class="skip-vale">uploadDASTReport</span>](https://app.codacy.com/api/api-docs#uploaddastreport):
 
-    <!-- TODO TAROT-2712 is `csrf-token: nocheck` required? -->
     ```bash
     curl -X POST https://app.codacy.com/api/v3/organizations/<GIT_PROVIDER>/<ORGANIZATION>/security/tools/dast/<TOOL_NAME>/reports \
       -H 'api-token: <API_KEY>' \
-      -H 'csrf-token: nocheck' \
       -H 'Content-Type: multipart/form-data' \
       -H 'Accept: application/json' \
       -F 'file=@<REPORT_PATH>' \
@@ -59,7 +57,6 @@ The example script:
 1.  Defines the path and filename of the file containing the DAST report.
 1.  Calls the endpoint [<span class="skip-vale">uploadDASTReport</span>](https://app.codacy.com/api/api-docs#uploaddastreport) to upload the report to Codacy.
 
-<!-- TODO TAROT-2712 is `csrf-token: nocheck` required? -->
 ```bash
 CODACY_API_TOKEN="<your API token>"
 GIT_PROVIDER="<your Git provider>" # e.g., gh for GitHub
@@ -69,7 +66,6 @@ REPORT_FILE_PATH="zap-report.json"
 
 curl -X POST https://app.codacy.com/api/v3/organizations/$GIT_PROVIDER/$ORGANIZATION_NAME/security/tools/dast/$TOOL_NAME/reports \
      -H "api-token: $CODACY_API_TOKEN" \
-     -H "csrf-token: nocheck" \
      -H "Content-Type: multipart/form-data" \
      -H "Accept: application/json" \
      -F "file=@$REPORT_FILE_PATH" \
