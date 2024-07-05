@@ -11,7 +11,7 @@
         <meta name="description" content="List of tools that Codacy uses to analyze over 40 supported languages. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code platforms as well as code duplication, code complexity, and code coverage metrics for most programming languages.">
       
       
-        <meta http-equiv="last-modified" content="2024-07-01 09:35:26">
+        <meta http-equiv="last-modified" content="2024-07-05 14:29:55">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/supported-languages-and-tools/">
@@ -4624,8 +4624,9 @@
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a> <a href="#client-side"><sup>3</sup></a></td>
       <td>-</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a></td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>build.sbt.lock</code> (sbt) <a href="#scala-dependencies"><sup>9</sup></a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
           <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a></td>
@@ -4956,6 +4957,7 @@
 <sup><span id="complexity-limitations">6</span></sup>: Doesn't calculate <a href="../../repositories/files/#file-details">the number of methods and the complexity per method</a> for each file.<br />
 <sup><span id="semgrep-brakeman">7</span></sup>: Due to licensing limitations, Codacy doesn't support the latest version of Brakeman. To analyze your Ruby code for the latest security vulnerabilities, use <a href="https://semgrep.dev/">Semgrep</a>, which provides comprehensive and up-to-date security scanning.<br />
 <sup><span id="swiftlint-complexity">8</span></sup>: Supports <a href="https://realm.github.io/SwiftLint/cyclomatic_complexity.html">reporting warnings or errors</a> on functions above specific complexity thresholds. Enable the rule <strong>Cyclomatic Complexity</strong> on the <a href="../../repositories-configure/configuring-code-patterns/">Code patterns page</a>, or use a <a href="https://realm.github.io/SwiftLint/index.html#configuration">configuration file</a> to customize the thresholds.<br />
+<sup><span id="scala-dependencies">9</span></sup>: Requires the <a href="https://github.com/stringbean/sbt-dependency-lock">sbt-dependency-lock</a> plugin for generating the lockfile.
 <sup><span id="suggest-fixes">🔧</span></sup>: Supports <a href="../../repositories-configure/integrations/github-integration/#suggest-fixes">suggesting fixes</a> for identified issues.</p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
@@ -5119,7 +5121,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 1, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 5, 2024</span>
     
   </small>
 </div>
