@@ -20,11 +20,11 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
 1.  Open your repository **Code patterns** page.
 
-    ![Code patterns page](images/code-patterns.png)<!-- TODO ALA-1104 screenshot -->
+    ![Code patterns page](images/code-patterns.png)
 
 1.  Enable or disable the tools that Codacy will use to analyze the repository.
 
-    ![Toggling tools](images/code-patterns-toggle-tools.png)<!-- TODO ALA-1104 screenshot -->
+    ![Toggling tools](images/code-patterns-toggle-tools.png)
 
 1.  Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the sidebar filters. You can filter by language, [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), or status.<!-- TODO ALA-1104 add new filter and search, review wording and structure -->
 
@@ -35,7 +35,7 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
         -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.<!-- TODO ALA-1104 confirm this is still valid -->
 
-    ![Configuring code patterns](images/code-patterns-configure.png)<!-- TODO ALA-1104 screenshot -->
+    ![Configuring code patterns](images/code-patterns-configure.png)
 
 1.  Optionally, to take the changes into account immediately, [reanalyze the repository manually](../faq/repositories/how-do-i-reanalyze-my-repository.md). Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.
 
@@ -73,7 +73,7 @@ To use a configuration file for a static analysis tool:
 
         -   For performance reasons, when you update pattern settings using a configuration file, Codacy may display outdated messages for issues identified previously by those patterns.
 
-    ![Using a configuration file](images/code-patterns-config-file.png)<!-- TODO ALA-1104 screenshot -->
+    ![Using a configuration file](images/code-patterns-config-file.png)
 
 The table below lists the configuration file names that Codacy detects and supports for each tool:
 
