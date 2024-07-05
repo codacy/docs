@@ -14,6 +14,9 @@ To ensure the security of your web applications, Codacy allows you to upload DAS
 
 1.  Upload the report to the Codacy API endpoint [<span class="skip-vale">uploadDASTReport</span>](https://app.codacy.com/api/api-docs#uploaddastreport):
 
+    !!! note
+        The DAST report must be under 20MB in size.
+
     ```bash
     curl -X POST https://app.codacy.com/api/v3/organizations/<GIT_PROVIDER>/<ORGANIZATION>/security/tools/dast/<TOOL_NAME>/reports \
       -H 'api-token: <API_KEY>' \
