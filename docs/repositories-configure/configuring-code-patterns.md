@@ -13,9 +13,6 @@ By default, Codacy analyzes your repositories using a subset of the supported an
 
 ## Configuring tools and code patterns using the Codacy UI
 
-!!! note
-    If you update the configurations of a repository that follows a [coding standard](../organizations/using-coding-standards.md), Codacy copies the coding standard configurations to the repository and the repository stops following the coding standard. You can then customize the repository configurations without affecting the coding standard.<!-- TODO ALA-1104 review (and potentially remove) -->
-
 To configure the tools and code patterns for a repository using the Codacy UI:
 
 1.  Open your repository **Code patterns** page.
@@ -26,22 +23,21 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
     ![Toggling tools](images/code-patterns-toggle-tools.png)
 
-1.  Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the sidebar filters. You can filter by language, [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), or status.<!-- TODO ALA-1104 add new filter and search, review wording and structure -->
+1.  Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the filters above the pattern list. You can filter by [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), status, or severity level.
 
-    To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues.
-
-    !!! tip
-        -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click **Enable all**. For example, to enable all Security patterns, click the **Security** filter and then click **Enable all**.<!-- TODO ALA-1104 confirm this is still valid -->
-
-        -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.<!-- TODO ALA-1104 confirm this is still valid -->
+    To see an explanation of the issues that a pattern detects and how to fix them, click the respective dropdown arrow.
 
     ![Configuring code patterns](images/code-patterns-configure.png)
 
 1.  Optionally, to take the changes into account immediately, [reanalyze the repository manually](../faq/repositories/how-do-i-reanalyze-my-repository.md). Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.
 
-## Using tool configuration files {: id="using-your-own-tool-configuration-files"}
+## Detaching a coding standard from a repository {: id="detaching"}
 
-<!-- TODO ALA-1104 confirm nothing needs to be updated here -->
+If the repository is following a coding standard, a notice is displayed. To detach the [coding standard](../organizations/using-coding-standards.md) from the repository, click **Detach repository** and confirm.
+
+![Detaching a coding standard](images/code-patterns-cs-detach.png)
+
+## Using tool configuration files {: id="using-your-own-tool-configuration-files"}
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
@@ -56,7 +52,7 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 !!! note
     -   After activating a configuration file for a tool, Codacy uses that configuration file even if you [exclude it from Codacy analysis](ignoring-files.md).
 
-    -   When [using a tool configuration file alongside a coding standard](../organizations/using-coding-standards.md#using-with-tool-configuration), the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.
+    -   When [using a tool configuration file alongside a coding standard](../organizations/using-coding-standards.md#using-with-tool-configuration), the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.<!-- TODO ALA-1104 confirm this is still the case -->
 
 Codacy supports configuration files for several static analysis tools to help you streamline your setup.
 
@@ -64,18 +60,18 @@ To use a configuration file for a static analysis tool:
 
 1.  Push the configuration file to the root of the [default Codacy branch](managing-branches.md).
 
-1.  Open the repository **Code patterns** page, select the tool of interest, and select the option **Configuration file**.
+1.  Open the repository **Code patterns** page, select the tool of interest, and activate the toggle to use a configuration file.
 
     !!! note
-        -   Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results take those changes into account.
+        -   Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results take those changes into account.<!-- TODO ALA-1104 confirm this is still the case -->
 
-        -   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.
+        -   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.<!-- TODO ALA-1104 confirm this is still the case -->
 
         -   For performance reasons, when you update pattern settings using a configuration file, Codacy may display outdated messages for issues identified previously by those patterns.
 
     ![Using a configuration file](images/code-patterns-config-file.png)
 
-The table below lists the configuration file names that Codacy detects and supports for each tool:
+The table below lists the configuration file names that Codacy detects and supports for each tool:<!-- TODO ALA-1104 confirm this is still the case -->
 
 <table>
   <thead>
