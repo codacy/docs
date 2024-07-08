@@ -8,11 +8,11 @@ To ensure the security of your web applications, Codacy allows you to upload DAS
 
 ## Uploading results to Codacy
 
-1.  Use ZAP ([Zed Attack Proxy](https://www.zaproxy.org/)) to perform DAST on your application and generate a report in the [Traditional JSON format](https://www.zaproxy.org/docs/desktop/addons/report-generation/report-traditional-json/).
+1.  Use [ZAP](https://www.zaproxy.org/) to perform DAST on your application and generate a report in the [Traditional JSON format](https://www.zaproxy.org/docs/desktop/addons/report-generation/report-traditional-json/).
 
     For details on generating reports in ZAP, refer to the [ZAP documentation](https://www.zaproxy.org/docs/).
 
-1.  Upload the report to the Codacy API endpoint [<span class="skip-vale">uploadDASTReport</span>](https://app.codacy.com/api/api-docs#uploaddastreport):
+1.  Upload the report to Codacy using the API endpoint [<span class="skip-vale">uploadDASTReport</span>](https://app.codacy.com/api/api-docs#uploaddastreport):
 
     !!! note
         The DAST report must be under 20MB in size.

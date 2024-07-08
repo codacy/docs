@@ -172,7 +172,7 @@ Codacy closes a finding when a subsequent penetration test doesn't detect the un
 
 Codacy opens a finding for each security issue detected in the DAST report. If subsequent reports identify the same issue, Codacy updates the existing finding.
 
-Codacy closes a finding when it is not detected in a subsequent DAST report. If a previously closed issue reappears in a later report, Codacy reopens the finding.
+Codacy closes a finding when it's not detected in a subsequent DAST report. If a previously closed issue reappears in a later report, Codacy reopens the finding.
 
 ## Finding severities and deadlines {: id="item-severities-and-deadlines"}
 
@@ -280,7 +280,7 @@ The following table lists the available scan types and their descriptions:
 | **Exposed Secrets**               | Detection of sensitive information, such as passwords or API keys, inadvertently included in the code.                       |
 | **Infrastructure as Code**        | Detection of configuration issues within infrastructure-as-code (IaC) files that could pose risks.                           |
 | **Penetration Testing**           | Results from [penetration testing](#opening-and-closing-pen-testing-items) to find security vulnerabilities in running code. |
-| **App Scanning**                  | Simulated attacks on live applications to find vulnerabilities. Known as Dynamic Application Security Testing (**DAST**).    |
+| **App Scanning**                  | Simulated attacks on live applications to find vulnerabilities. Also known as Dynamic Application Security Testing (**DAST**).    |
 
 ## Languages checked for security issues
 
