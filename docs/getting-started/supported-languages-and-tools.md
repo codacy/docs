@@ -421,8 +421,9 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a> <a href="#client-side"><sup>3</sup></a></td>
       <td>-</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a></td>
-      <td>-</td>
+      <td><a href="https://semgrep.dev/">Semgrep</a>,
+          <a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>build.sbt.lock</code> (sbt) <a href="#scala-dependencies"><sup>9</sup></a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
           <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a></td>
@@ -756,6 +757,7 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <sup><span id="complexity-limitations">6</span></sup>: Doesn't calculate [the number of methods and the complexity per method](../repositories/files.md#file-details) for each file.  
 <sup><span id="semgrep-brakeman">7</span></sup>: Due to licensing limitations, Codacy doesn't support the latest version of Brakeman. To analyze your Ruby code for the latest security vulnerabilities, use [Semgrep](https://semgrep.dev/), which provides comprehensive and up-to-date security scanning.  
 <sup><span id="swiftlint-complexity">8</span></sup>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html) on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code patterns page](../repositories-configure/configuring-code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration) to customize the thresholds.  
+<sup><span id="scala-dependencies">9</span></sup>: Requires the [sbt-dependency-lock](https://github.com/stringbean/sbt-dependency-lock) plugin for generating the lockfile.
 <sup><span id="suggest-fixes">🔧</span></sup>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
 
 ## See also
