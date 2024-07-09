@@ -27,6 +27,11 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
     To see an explanation of the issues that a pattern detects and how to fix them, click the respective dropdown arrow.
 
+    !!! tip
+        -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click the checkbox in the header of the patterns list.
+
+        -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.<!-- TODO ALA-1104 confirm this is still valid -->
+
     ![Configuring code patterns](images/code-patterns-configure.png)
 
 1.  Optionally, to take the changes into account immediately, [reanalyze the repository manually](../faq/repositories/how-do-i-reanalyze-my-repository.md). Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.
