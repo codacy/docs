@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2024-07-01 09:35:26">
+        <meta http-equiv="last-modified" content="2024-07-09 14:29:00">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -1395,6 +1395,18 @@
   <li class="md-nav__item">
     <a href="../../codacy-api/examples/identifying-commits-without-coverage-data/" title="Identifying commits without coverage data" class="md-nav__link">
       Identifying commits without coverage data
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../codacy-api/examples/uploading-dast-results/" title="Uploading DAST results to Codacy" class="md-nav__link">
+      Uploading DAST results to Codacy
     </a>
   </li>
 
@@ -4394,7 +4406,14 @@
 <p>Penetration testing is available upon request and is provided by a third-party partner. See <a href="https://go.codacy.com/pen-testing-product">how to request penetration testing for your organization</a>.</p>
 </div>
 <p>Codacy opens a finding for each security issue detected during a penetration test.</p>
-<p>Codacy closes a finding when a subsequent penetration test does not detect the underlying security issue.</p>
+<p>Codacy closes a finding when a subsequent penetration test doesn't detect the underlying security issue.</p>
+<h3 id="opening-and-closing-app-scanning-items">How Codacy manages findings detected during application scanning (DAST)<a class="headerlink" href="#opening-and-closing-app-scanning-items" title="Permanent link">#</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To view application scanning findings, also known as DAST (Dynamic Application Security Testing) findings, you must first <a href="../../codacy-api/examples/uploading-dast-results/">generate a DAST report and upload it to Codacy</a>.</p>
+</div>
+<p>Codacy opens a finding for each security issue detected in the DAST report. If subsequent reports identify the same issue, Codacy updates the existing finding.</p>
+<p>Codacy closes a finding when it's not detected in a subsequent DAST report. If a previously closed issue reappears in a later report, Codacy reopens the finding.</p>
 <h2 id="item-severities-and-deadlines">Finding severities and deadlines<a class="headerlink" href="#item-severities-and-deadlines" title="Permanent link">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -4591,7 +4610,7 @@
 <tbody>
 <tr>
 <td><strong>Code Scanning</strong></td>
-<td>Analysis of source code for vulnerabilities without execution. Also known as Static Application Security Testing (SAST).</td>
+<td>Analysis of source code for vulnerabilities without execution. Also known as Static Application Security Testing (<strong>SAST</strong>).</td>
 </tr>
 <tr>
 <td><strong>Software Composition Analysis</strong></td>
@@ -4608,6 +4627,10 @@
 <tr>
 <td><strong>Penetration Testing</strong></td>
 <td>Results from <a href="#opening-and-closing-pen-testing-items">penetration testing</a> to find security vulnerabilities in running code.</td>
+</tr>
+<tr>
+<td><strong>App Scanning</strong></td>
+<td>Simulated attacks on live applications to find vulnerabilities. Also known as Dynamic Application Security Testing (<strong>DAST</strong>).</td>
 </tr>
 </tbody>
 </table>
@@ -4943,7 +4966,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 1, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 9, 2024</span>
     
   </small>
 </div>
