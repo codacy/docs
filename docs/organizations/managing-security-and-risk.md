@@ -163,7 +163,16 @@ Codacy closes a finding when it detects that the associated Jira issue is marked
 
 Codacy opens a finding for each security issue detected during a penetration test.
 
-Codacy closes a finding when a subsequent penetration test does not detect the underlying security issue.
+Codacy closes a finding when a subsequent penetration test doesn't detect the underlying security issue.
+
+### How Codacy manages findings detected during application scanning (DAST) {: id="opening-and-closing-app-scanning-items"}
+
+!!! note
+    To view application scanning findings, also known as DAST (Dynamic Application Security Testing) findings, you must first [generate a DAST report and upload it to Codacy](../codacy-api/examples/uploading-dast-results.md).
+
+Codacy opens a finding for each security issue detected in the DAST report. If subsequent reports identify the same issue, Codacy updates the existing finding.
+
+Codacy closes a finding when it's not detected in a subsequent DAST report. If a previously closed issue reappears in a later report, Codacy reopens the finding.
 
 ## Finding severities and deadlines {: id="item-severities-and-deadlines"}
 
@@ -264,13 +273,14 @@ Security and risk management classifies each finding with a **Scan type**, indic
 
 The following table lists the available scan types and their descriptions:
 
-| Scan type                         | Description                                                                                                                  |
-|-----------------------------------|------------------------------------------------------------------------------------------------------------------------------|
-| **Code Scanning**                 | Analysis of source code for vulnerabilities without execution. Also known as Static Application Security Testing (SAST).     |
-| **Software Composition Analysis** | Analysis of external libraries and packages for vulnerabilities or outdated versions.                                        |
-| **Exposed Secrets**               | Detection of sensitive information, such as passwords or API keys, inadvertently included in the code.                       |
-| **Infrastructure as Code**        | Detection of configuration issues within infrastructure-as-code (IaC) files that could pose risks.                           |
-| **Penetration Testing**           | Results from [penetration testing](#opening-and-closing-pen-testing-items) to find security vulnerabilities in running code. |
+| Scan type                         | Description                                                                                                                    |
+|-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
+| **Code Scanning**                 | Analysis of source code for vulnerabilities without execution. Also known as Static Application Security Testing (**SAST**).   |
+| **Software Composition Analysis** | Analysis of external libraries and packages for vulnerabilities or outdated versions.                                          |
+| **Exposed Secrets**               | Detection of sensitive information, such as passwords or API keys, inadvertently included in the code.                         |
+| **Infrastructure as Code**        | Detection of configuration issues within infrastructure-as-code (IaC) files that could pose risks.                             |
+| **Penetration Testing**           | Results from [penetration testing](#opening-and-closing-pen-testing-items) to find security vulnerabilities in running code.   |
+| **App Scanning**                  | Simulated attacks on live applications to find vulnerabilities. Also known as Dynamic Application Security Testing (**DAST**). |
 
 ## Languages checked for security issues
 
