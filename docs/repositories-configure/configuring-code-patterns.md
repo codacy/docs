@@ -76,7 +76,7 @@ To use a configuration file for a static analysis tool:
 
     ![Using a configuration file](images/code-patterns-config-file.png)
 
-The table below lists the configuration file names that Codacy detects and supports for each tool:<!-- TODO ALA-1104 confirm this is still the case -->
+The table below lists the configuration file names that Codacy detects and supports for each tool:
 
 <table>
   <thead>
