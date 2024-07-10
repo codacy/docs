@@ -30,7 +30,7 @@ To configure the tools and code patterns for a repository using the Codacy UI:
     !!! tip
         -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click the checkbox in the header of the patterns list.
 
-        -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.<!-- TODO ALA-1104 confirm this is still valid -->
+        -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.
 
     ![Configuring code patterns](images/code-patterns-configure.png)
 
@@ -57,7 +57,7 @@ If the repository is following a coding standard, a notice is displayed. To deta
 !!! note
     -   After activating a configuration file for a tool, Codacy uses that configuration file even if you [exclude it from Codacy analysis](ignoring-files.md).
 
-    -   When [using a tool configuration file alongside a coding standard](../organizations/using-coding-standards.md#using-with-tool-configuration), the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.<!-- TODO ALA-1104 confirm this is still the case -->
+    -   When [using a tool configuration file alongside a coding standard](../organizations/using-coding-standards.md#using-with-tool-configuration), the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.
 
 Codacy supports configuration files for several static analysis tools to help you streamline your setup.
 
@@ -68,9 +68,9 @@ To use a configuration file for a static analysis tool:
 1.  Open the repository **Code patterns** page, select the tool of interest, and activate the toggle to use a configuration file.
 
     !!! note
-        -   Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results take those changes into account.<!-- TODO ALA-1104 confirm this is still the case -->
+        -   Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results take those changes into account.
 
-        -   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.<!-- TODO ALA-1104 confirm this is still the case -->
+        -   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.
 
         -   For performance reasons, when you update pattern settings using a configuration file, Codacy may display outdated messages for issues identified previously by those patterns.
 
