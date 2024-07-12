@@ -23,7 +23,7 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
     ![Toggling tools](images/code-patterns-toggle-tools.png)
 
-1.  Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the filters above the pattern list. You can filter by [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), status, or severity level.
+1.  Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the filters above the pattern list. You can filter by [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), status, severity level, or display only recommended code patterns.
 
     To see an explanation of the issues that a pattern detects and how to fix them, click the respective dropdown arrow.
 
