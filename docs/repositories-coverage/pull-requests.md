@@ -26,7 +26,8 @@ This area displays detailed information about the pull request:
 -   Pull request author, pull request branch, target branch, and pull request identifier on the Git provider
 -   Last updated date of the pull request
 -   Link to the pull request on your Git provider
--   Codacy logs<!--NOTE As an improvement, explain how to read the logs in more detail-->
+-   Link to reanalyze the pull request
+-   Link to [view analysis logs](#viewing-analysis-logs)
 
 ![Pull request information](images/pull-requests-detail-information.png)
 
@@ -55,6 +56,14 @@ The **Commits** tab displays an overview of each commit included in the pull req
 Click a specific commit to see [detailed information about that commit](commits.md#info).
 
 ![Commits tab](images/pull-requests-tab-commits.png)
+
+## Viewing analysis logs
+
+Analysis logs can help you spot any issues with the coverage analysis, such as missing coverage reports.
+
+To access the coverage analysis logs, click the **View logs** link in the [pull request information](#info) area. This opens a modal listing coverage reports received for the common ancestor commit and the head commit of the pull request.
+
+![View logs modal](images/pull-requests-coverage-view-logs-modal.png)
 
 ## See also
 

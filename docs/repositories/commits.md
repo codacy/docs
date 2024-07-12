@@ -25,7 +25,7 @@ This area displays the information that identifies the commit (commit message, c
 
 -   A link to the commit on your Git provider
 -   A [link to reanalyze the commit](../faq/repositories/how-do-i-reanalyze-my-repository.md), present when the committer [is part of your organization](../organizations/managing-people.md)
--   A link to the analysis logs
+-   A link to [view analysis logs](#viewing-analysis-logs)
 
 <!--quality-overview-start-->
 ## {{ page.meta.page_name.capitalize() }} quality overview {: id="quality-overview"}
@@ -153,6 +153,14 @@ Depending on the languages being analyzed or if you haven't [set up coverage for
 ![Files tab](images/{{ page.meta.file_name }}-tab-files.png)
 <!-- vale on -->
 <!--tabs-end-->
+
+## Viewing analysis logs
+
+Analysis logs can help you identify the duration of each analysis phase and any potential issues.
+
+To access the analysis logs, click the **View logs** link in the [commit status](#status) area. This opens a modal displaying execution times and outcomes for the tools used to analyze the commit.
+
+![View logs modal](images/commits-view-logs-modal.png)
 
 ## See also
 

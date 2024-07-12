@@ -79,6 +79,36 @@ Adds AI-enhanced comments, providing insights and ready-to-commit AI-generated f
 
 ![AI-enhanced comment on GitHub](images/github-integration-ai-comment.png)
 
+## Generating automatic pull request summaries
+
+!!! info "This is a preview feature"
+    This is an upcoming Codacy feature. If you're interested, contact <a href="mailto:support@codacy.com">support@codacy.com</a> for early access.
+
+Codacy can provide a clear, high-level summary of the code changes introduced by a pull request, based on the committed code.
+Codacy generates an overview of the changes in the pull request so that any reviewer can understand its intent and impact.
+
+![Automatic Summary on GitHub](images/github-integration-automatic-summary.png)
+
+!!! note
+    -   This feature uses only AWS services within Codacy's existing infrastructure. No information is shared with any other third party or used to train AI models.
+    -   Summaries are generated using the pull request title, branch name, commit messages, and changes diff.
+
+To enable this feature, add the following to the [Codacy configuration file](../codacy-configuration-file.md) `.codacy.yaml` in the root of your repository:
+
+```yaml
+---
+reviews:
+  high_level_summary: true
+```
+
+You can also enable this feature across your organization by creating the above file in the root of a repository named `.codacy`. This file will be used as the default configuration for all repositories in the organization and overridden by repository-specific configuration files.
+
+Once enabled, summaries will be created when pull requests are opened and updated at each commit to reflect any changes to the pull request.
+
+Pull requests opened by bots, such as Dependabot, are ignored.
+
+If you see duplicated comments posted by Codacy on the same pull request, please ensure that your repository only has one configured webhook for Codacy.
+
 ## See also
 
 -   [Integrating Codacy with your Git workflow](../../getting-started/integrating-codacy-with-your-git-workflow.md)

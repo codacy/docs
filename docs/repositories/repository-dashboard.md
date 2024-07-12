@@ -48,6 +48,8 @@ The **Issues breakdown** area displays the total number of issues found on the s
 
 Click **See all issues** to see the full [list of issues](issues.md) found, or click a category to see the issues in that category.
 
+If Codacy detects code patterns that have suggested fixes, a **Fix issues** button appears below the total issue count. Click this button to open a modal with a patch that addresses all resolvable issues, and follow the [same procedure outlined on the Quality Issues page](./issues.md#fixing-issues-automatically).
+
 ![Issues breakdown](images/repository-dashboard-issues-breakdown.png)
 
 ## Coverage
