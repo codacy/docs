@@ -156,7 +156,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a> <a href="#dart-limitations"><sup>5</sup></a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td>-</td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pubspec.lock</code></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td>-</td>
     </tr>
@@ -202,7 +202,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td>-</td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>go.mod</code></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a></td>
       <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a></td>
     </tr>
@@ -277,7 +277,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a></td>
-      <td>-</td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/detekt/detekt">detekt</a></td>
     </tr>
