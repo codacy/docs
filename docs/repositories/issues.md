@@ -10,7 +10,7 @@ By default, the page lists the issues on the main branch of your repository but 
 ![Issues page](images/issues.png)
 
 <!--issue-details-start-->
-Click the title of an issue tab to expand it and see the following information:
+Click the title of an issue card to expand it and see the following information:
 
 -   The committer and date of the commit that introduced the issue, if available
 -   The estimated time to fix the issue
