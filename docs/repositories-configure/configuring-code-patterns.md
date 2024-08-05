@@ -97,7 +97,7 @@ The table below lists the configuration file names that Codacy detects and suppo
   <tr>
     <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
     <td>Python</td>
-    <td><code>bandit.yml</code>, <code>bandit.yaml</code>, <code>.bandit</code, <code>bandit.toml</code, <code>bandit.ini</code</td>
+    <td><code>bandit.yml</code>, <code>bandit.yaml</code>, <code>.bandit</code>, <code>bandit.toml</code>, <code>bandit.ini</code></td>
     <td>To solve flagged valid Python "assert" statements, create a <code>bandit.yml</code> on the root of the repository containing: <code>skips: \['B101'\]</code></td>
   </tr>
   <tr>
