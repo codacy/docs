@@ -553,6 +553,7 @@ nav:
     - Documentation home: "index.md"
     - Getting started:
           - getting-started/codacy-quickstart.md
+          - getting-started/configuring-your-organization.md
           - getting-started/configuring-your-repository.md
           - getting-started/integrating-codacy-with-your-git-workflow.md
           - Integrating Codacy with your IDE:
