@@ -11,7 +11,7 @@
         <meta name="description" content="List of operations that users can perform on Codacy depending on their role on the Git provider, and how to configure repository management permissions.">
       
       
-        <meta http-equiv="last-modified" content="2024-06-07 14:19:27">
+        <meta http-equiv="last-modified" content="2024-08-07 14:12:54">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/roles-and-permissions-for-organizations/">
@@ -1029,6 +1029,18 @@
           
           
 
+
+  <li class="md-nav__item">
+    <a href="../audit-logs-for-organizations/" title="Audit logs for organizations" class="md-nav__link">
+      Audit logs for organizations
+    </a>
+  </li>
+
+        
+          
+          
+          
+
   
 
 
@@ -1960,6 +1972,18 @@
   <li class="md-nav__item">
     <a href="../../faq/general/how-does-codacy-protect-my-privacy/" title="How does Codacy protect my privacy?" class="md-nav__link">
       How does Codacy protect my privacy?
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../faq/general/does-codacy-keep-audit-logs/" title="Does Codacy keep audit logs for my organization?" class="md-nav__link">
+      Does Codacy keep audit logs for my organization?
     </a>
   </li>
 
@@ -4459,6 +4483,15 @@
       <td class="yes">Yes</td>
     </tr>
     <tr>
+      <td>Obtain audit logs for organization events<sup>5</sup></td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
       <td>Invite and accept members,<br/>modify billing</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
@@ -4482,7 +4515,8 @@
 <p><sup>1</sup>: Outside collaborators aren't supported as members of organizations on Codacy. You can still <a href="../managing-people/#adding-people">add outside collaborators to Codacy</a> so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.<br />
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for <a href="../changing-your-plan-and-billing/#allowing-new-people-to-join-your-organization">accepting new people</a>.<br />
 <sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.<br />
-<sup>4</sup>: Requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.</p>
+<sup>4</sup>: Requires that an organization owner has given the Codacy GitHub App access to the repositories to add or remove.<br />
+<sup>5</sup>: <a href="../audit-logs-for-organizations/">Audit logs</a> are available only on <a href="https://www.codacy.com/pricing">Business plan</a>.</p>
 <h2 id="permissions-for-gitlab">Permissions for GitLab<a class="headerlink" href="#permissions-for-gitlab" title="Permanent link">#</a></h2>
 <p>The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresponding Codacy roles and the operations that they're allowed to perform:</p>
 <table>
@@ -4610,6 +4644,15 @@
       <td colspan="2" class="yes">Yes</td>
     </tr>
     <tr>
+      <td>Obtain audit logs for organization events<sup>4</sup></td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="no">No</td>
+      <td colspan="2" class="no">No</td>
+      <td class="yes">Yes</td>
+      <td colspan="2" class="yes">Yes</td>
+    </tr>
+    <tr>
       <td>Invite and accept members,<br/>modify billing</td>
       <td class="no">No</td>
       <td colspan="2" class="no">No</td>
@@ -4632,7 +4675,8 @@
 
 <p><sup>1</sup>: External users aren't supported as members of organizations on Codacy. You can still <a href="../managing-people/#adding-people">add external users to Codacy</a> so that Codacy analyzes their commits to private repositories, but they won't be able to join your Codacy organization.<br />
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for <a href="../changing-your-plan-and-billing/#allowing-new-people-to-join-your-organization">accepting new people</a>.<br />
-<sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.  </p>
+<sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.<br />
+<sup>4</sup>: <a href="../audit-logs-for-organizations/">Audit logs</a> are available only on <a href="https://www.codacy.com/pricing">Business plan</a>.</p>
 <h2 id="permissions-for-bitbucket">Permissions for Bitbucket<a class="headerlink" href="#permissions-for-bitbucket" title="Permanent link">#</a></h2>
 <p>The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corresponding Codacy roles and the operations that they're allowed to perform:</p>
 <table>
@@ -4719,6 +4763,12 @@
       <td class="yes">Yes</td>
     </tr>
     <tr>
+      <td>Obtain audit logs for organization events<sup>4</sup></td>
+      <td colspan="2" class="no">No</td>
+      <td class="yes">Yes</td>
+      <td class="yes">Yes</td>
+    </tr>
+    <tr>
       <td>Invite and accept members,<br/>modify billing</td>
       <td colspan="2" class="no">No</td>
       <td class="no">No</td>
@@ -4735,7 +4785,8 @@
 
 <p><sup>1</sup>: Codacy can't distinguish the Bitbucket roles Read and Write because of a limitation on the Bitbucket API.<br />
 <sup>2</sup>: Joining an organization may need an approval depending on your setting for <a href="../changing-your-plan-and-billing/#allowing-new-people-to-join-your-organization">accepting new people</a>.<br />
-<sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.</p>
+<sup>3</sup>: These users can only see security items originating from Codacy repositories that they follow.<br />
+<sup>4</sup>: <a href="../audit-logs-for-organizations/">Audit logs</a> are available only on <a href="https://www.codacy.com/pricing">Business plan</a>.</p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../managing-people/">Managing people</a></li>
@@ -4928,7 +4979,7 @@ td:nth-child(1) {
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 7, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 7, 2024</span>
     
   </small>
 </div>
