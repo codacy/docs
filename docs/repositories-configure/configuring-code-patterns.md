@@ -23,7 +23,7 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
     ![Toggling tools](images/code-patterns-toggle-tools.png)
 
-1.  Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the filters above the pattern list. You can filter by [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), status, or severity level.
+1.  Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the filters above the pattern list. You can filter by [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), status, severity level, or display only recommended code patterns.
 
     To see an explanation of the issues that a pattern detects and how to fix them, click the respective dropdown arrow.
 
@@ -97,7 +97,7 @@ The table below lists the configuration file names that Codacy detects and suppo
   <tr>
     <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
     <td>Python</td>
-    <td><code>bandit.yml</code>, <code>.bandit</code></td>
+    <td><code>bandit.yml</code>, <code>bandit.yaml</code>, <code>.bandit</code>, <code>bandit.toml</code>, <code>bandit.ini</code></td>
     <td>To solve flagged valid Python "assert" statements, create a <code>bandit.yml</code> on the root of the repository containing: <code>skips: \['B101'\]</code></td>
   </tr>
   <tr>

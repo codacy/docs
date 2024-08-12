@@ -610,6 +610,7 @@ nav:
                 - Jira integration for Security and risk management: organizations/integrations/jira-integration.md
           - organizations/managing-security-and-risk.md
           - organizations/managing-people.md
+          - organizations/audit-logs-for-organizations.md
           - organizations/roles-and-permissions-for-organizations.md
           - organizations/changing-your-plan-and-billing.md
     - Your account:
@@ -639,6 +640,7 @@ nav:
                 - faq/general/how-does-codacy-support-bitbucket-server.md
                 - faq/general/how-does-codacy-keep-my-data-secure.md
                 - faq/general/how-does-codacy-protect-my-privacy.md
+                - faq/general/does-codacy-keep-audit-logs.md
                 - faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider.md
                 - faq/general/how-can-i-change-or-cancel-my-plan.md
           - Repositories:
@@ -667,6 +669,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2024:
+                      - release-notes/cloud/cloud-2024-06.md
                       - release-notes/cloud/cloud-2024-05.md
                       - release-notes/cloud/cloud-2024-04.md
                       - release-notes/cloud/cloud-2024-03.md
