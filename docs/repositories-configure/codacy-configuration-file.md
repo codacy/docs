@@ -176,7 +176,7 @@ rubocop
 scalastyle
 semgrep
 shellcheck
-sonarscharp
+sonarcsharp
 sonarvb
 spectral
 SQLint
