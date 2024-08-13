@@ -18,6 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2024
 
+-   [Cloud July 2024](cloud/cloud-2024-07.md)
 -   [Cloud June 2024](cloud/cloud-2024-06.md)
 -   [Cloud May 2024](cloud/cloud-2024-05.md)
 -   [Cloud April 2024](cloud/cloud-2024-04.md)
