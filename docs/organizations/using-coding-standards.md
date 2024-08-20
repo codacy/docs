@@ -26,7 +26,7 @@ To create a coding standard for your organization:
 
 1.  Enter a unique name for the new coding standard.
 
-    Optionally, check **Make default** to set the new coding standard as one of your organization's [default coding standards](#set-default), so it applies automatically to new repositories.
+    Optionally, check **Apply to new repositories** to set the new coding standard as one of your organization's [default coding standards](#set-default), so it applies automatically to new repositories.
 
 1.  Choose whether to create the coding standard using a guided or advanced setup:
 
@@ -108,7 +108,7 @@ To mark an existing coding standard as default:
 
 1.  Open your organization **Policies** page, tab **Coding standards**.
 
-1.  Toggle **Make default** on the relevant coding standard card.
+1.  Toggle **Apply to new repositoriet** on the relevant coding standard card.
 
     ![Setting a coding standard as the default](images/coding-standard-set-default.png)
 
