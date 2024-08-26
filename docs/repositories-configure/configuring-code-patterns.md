@@ -8,8 +8,8 @@ description: Configure the static analysis tools and code patterns that Codacy u
 
 By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs as follows:
 
-- [Configuring tools and code patterns using the Codacy UI](#configuring-tools-and-code-patterns-using-the-codacy-ui)
-- [Using tool configuration files](#using-your-own-tool-configuration-files)
+-   [Configuring tools and code patterns using the Codacy UI](#configuring-tools-and-code-patterns-using-the-codacy-ui)
+-   [Using tool configuration files](#using-your-own-tool-configuration-files)
 
 ## Configuring tools and code patterns using the Codacy UI
 
@@ -27,7 +27,8 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
     To see an explanation of the issues that a pattern detects and how to fix them, click the respective dropdown arrow.
 
-    !!! tip - To enable a group of code patterns, use the filter to select the relevant group of patterns and click the checkbox in the header of the patterns list.
+    !!! tip
+        -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click the checkbox in the header of the patterns list.
 
         -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.
 
@@ -45,6 +46,7 @@ Select the coding standards that you want to follow or stop following and click 
 
 ![Customize applied coding standards](images/code-patterns-cs-customize-modal.png)
 
+
 ## Using tool configuration files {: id="using-your-own-tool-configuration-files"}
 
 <!--NOTE
@@ -57,7 +59,8 @@ Select the coding standards that you want to follow or stop following and click 
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
-!!! note - After activating a configuration file for a tool, Codacy uses that configuration file even if you [exclude it from Codacy analysis](ignoring-files.md).
+!!! note
+    -   After activating a configuration file for a tool, Codacy uses that configuration file even if you [exclude it from Codacy analysis](ignoring-files.md).
 
     -   When [using a tool configuration file alongside a coding standard](../organizations/using-coding-standards.md#using-with-tool-configuration), the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.
 
@@ -69,7 +72,8 @@ To use a configuration file for a static analysis tool:
 
 1.  Open the repository **Code patterns** page, select the tool of interest, and activate the toggle to use a configuration file.
 
-    !!! note - Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results take those changes into account.
+    !!! note
+        -   Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results take those changes into account.
 
         -   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.
 
@@ -148,7 +152,6 @@ The table below lists the configuration file names that Codacy detects and suppo
 
         <pre><code>{ "root": true }</code></pre>
     </td>
-
   </tr>
   <tr>
     <td>Hadolint</td>
@@ -268,7 +271,7 @@ The table below lists the configuration file names that Codacy detects and suppo
 </table>
 
 !!! note
-Codacy doesn't support configuration files for the following tools:
+    Codacy doesn't support configuration files for the following tools:
 
     -   aligncheck
     -   Checkov
@@ -289,5 +292,5 @@ Codacy doesn't support configuration files for the following tools:
 
 ## See also
 
-- [Applying a coding standard across multiple repositories](../organizations/using-coding-standards.md)
-- [How to implement Google JavaScript style guide with Codacy](https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/)
+-   [Applying a coding standard across multiple repositories](../organizations/using-coding-standards.md)
+-   [How to implement Google JavaScript style guide with Codacy](https://blog.codacy.com/implement-google-javascript-style-guide-with-codacy/)
