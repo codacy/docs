@@ -108,7 +108,7 @@ To mark an existing coding standard as default:
 
 1.  Open your organization **Policies** page, tab **Coding standards**.
 
-1.  Toggle **Apply to new repositoriet** on the relevant coding standard card.
+1.  Toggle **Apply to new repositories** on the relevant coding standard card.
 
     ![Setting a coding standard as the default](images/coding-standard-set-default.png)
 
