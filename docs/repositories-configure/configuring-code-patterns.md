@@ -36,11 +36,16 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
 1.  Optionally, to take the changes into account immediately, [reanalyze the repository manually](../faq/repositories/how-do-i-reanalyze-my-repository.md). Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.
 
-## Detaching a coding standard from a repository {: id="detaching"}
+## Customizing applied coding standards {: id="customizing-applied-coding-standards"}
 
-If the repository is following a coding standard, a notice is displayed. To detach the [coding standard](../organizations/using-coding-standards.md) from the repository, click **Detach repository** and confirm.
+To apply or edit a repository's [coding standards](../organizations/using-coding-standards.md), click **Customize** in the **Following ...** section at the top of the **Code patterns** page.
 
-![Detaching a coding standard](images/code-patterns-cs-detach.png)
+![Customize applied coding standards](images/code-patterns-cs-customize.png)
+
+Select the coding standards that you want to follow or stop following and click **Apply**.
+
+![Customize applied coding standards](images/code-patterns-cs-customize-modal.png)
+
 
 ## Using tool configuration files {: id="using-your-own-tool-configuration-files"}
 
