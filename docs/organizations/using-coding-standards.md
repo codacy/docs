@@ -108,7 +108,7 @@ To mark an existing coding standard as default:
 
 1.  Open your organization **Policies** page, tab **Coding standards**.
 
-1.  Toggle **Apply to new repositoriet** on the relevant coding standard card.
+1.  Toggle **Apply to new repositories** on the relevant coding standard card.
 
     ![Setting a coding standard as the default](images/coding-standard-set-default.png)
 
@@ -162,7 +162,7 @@ When using a [tool configuration file](../repositories-configure/configuring-cod
 When Codacy analyzes your code using multiple coding standards, it merges the tools and patterns from each standard. Enabled tools and patterns in any applied standard will be enforced.
 
 !!! important
-    If the same pattern appears in multiple standards, the version from the most recently applied standard (with its parameters) takes precedence.
+    If the same pattern appears in multiple standards, the version from the most recently created and applied standard (with its parameters) takes precedence.
 
 ## See also
 
