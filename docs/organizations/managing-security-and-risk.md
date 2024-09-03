@@ -232,6 +232,7 @@ The following table describes how finding statuses map to deadlines:
 
 !!! note
     Due to a recent update, some issues may be temporarily assigned the **Not yet categorized** category. To categorize these issues, you can [reanalyze the default branch of the relevant repository](../faq/repositories/how-do-i-reanalyze-my-repository.md#reanalyzing-a-branch). For a list of repositories that have issues with this category, use the **Security category** filter on the [Findings](#item-list) page.
+    Note that some issues just don't have a security category. These issues will remain **Not yet categorized**.
 
 Each Codacy issue reported by Security and risk management belongs to one of the following security categories:
 
