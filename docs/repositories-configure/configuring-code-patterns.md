@@ -9,6 +9,8 @@ description: Configure the static analysis tools and code patterns that Codacy u
 By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs as follows:
 
 -   [Configuring tools and code patterns using the Codacy UI](#configuring-tools-and-code-patterns-using-the-codacy-ui)
+-   [Customizing applied coding standards](#using-your-own-tool-configuration-files)
+-   [Customizing patterns when following coding standards](#customizing-patterns-following-standards)
 -   [Using tool configuration files](#using-your-own-tool-configuration-files)
 
 ## Configuring tools and code patterns using the Codacy UI
@@ -46,6 +48,11 @@ Select the coding standards that you want to follow or stop following and click 
 
 ![Customize applied coding standards](images/code-patterns-cs-customize-modal.png)
 
+
+## Customizing patterns when following coding standards {: id="customizing-patterns-following-standards"}
+
+Tools and patterns enabled by a coding standard are enforced and cannot be disabled.
+You can add extra tools and patterns, if these are not enabled by any applied coding standard.
 
 ## Using tool configuration files {: id="using-your-own-tool-configuration-files"}
 
