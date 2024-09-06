@@ -73,11 +73,11 @@ To follow or unfollow repositories on Codacy:
 
 Codacy allows you to filter repositories based on **Repository Custom Properties** from GitHub. This feature helps you to categorize and filter repositories more effectively within the Codacy platform.
 
-![Repositories list filter](images/filter.png)
+![Repositories list filter](images/organization-manage-repos-custom-properties.png)
 
 To enable this feature, users must go through an **initial sync** between GitHub and Codacy, which ensures that the repository custom properties from GitHub are reflected in Codacy.
 
-![Repositories list sync](images/sync.png)
+![Repositories list sync](images/organization-manage-repos-custom-properties-sync.png)
 
 !!! note
     For changes to **Repository Custom Properties** in GitHub to be **automatically** reflected in Codacy, users need to [accept the new permission request made by the Codacy GitHub app](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app). Accepting this permission enables automatic synchronization of any future changes to the custom properties in GitHub.
