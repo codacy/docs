@@ -11,7 +11,7 @@
         <meta name="description" content="Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results fit your needs.">
       
       
-        <meta http-equiv="last-modified" content="2024-08-27 08:58:49">
+        <meta http-equiv="last-modified" content="2024-09-09 08:40:36">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/configuring-code-patterns/">
@@ -550,6 +550,13 @@
         <li class="md-nav__item">
   <a href="#customizing-applied-coding-standards" class="md-nav__link">
     Customizing applied coding standards
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#customizing-patterns-following-standards" class="md-nav__link">
+    Customizing patterns when following coding standards
   </a>
   
 </li>
@@ -4294,6 +4301,8 @@
 <p>By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs as follows:</p>
 <ul>
 <li><a href="#configuring-tools-and-code-patterns-using-the-codacy-ui">Configuring tools and code patterns using the Codacy UI</a></li>
+<li><a href="#using-your-own-tool-configuration-files">Customizing applied coding standards</a></li>
+<li><a href="#customizing-patterns-following-standards">Customizing patterns when following coding standards</a></li>
 <li><a href="#using-your-own-tool-configuration-files">Using tool configuration files</a></li>
 </ul>
 <h2 id="configuring-tools-and-code-patterns-using-the-codacy-ui">Configuring tools and code patterns using the Codacy UI<a class="headerlink" href="#configuring-tools-and-code-patterns-using-the-codacy-ui" title="Permanent link">#</a></h2>
@@ -4332,6 +4341,9 @@
 <p><img alt="Customize applied coding standards" src="../images/code-patterns-cs-customize.png" /></p>
 <p>Select the coding standards that you want to follow or stop following and click <strong>Apply</strong>.</p>
 <p><img alt="Customize applied coding standards" src="../images/code-patterns-cs-customize-modal.png" /></p>
+<h2 id="customizing-patterns-following-standards">Customizing patterns when following coding standards<a class="headerlink" href="#customizing-patterns-following-standards" title="Permanent link">#</a></h2>
+<p>Tools and patterns enabled by a coding standard are enforced and cannot be disabled.
+You can add extra tools and patterns, if these are not enabled by any applied coding standard.</p>
 <h2 id="using-your-own-tool-configuration-files">Using tool configuration files<a class="headerlink" href="#using-your-own-tool-configuration-files" title="Permanent link">#</a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -4740,7 +4752,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 27, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 9, 2024</span>
     
   </small>
 </div>
