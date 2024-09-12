@@ -11,7 +11,7 @@
         <meta name="description" content="Coding standards enable the analysis of multiple repositories with the same tool and code pattern configurations, ensuring consistent code quality across your organization. Multiple coding standards can be applied to the same repository. For example, you can use coding standards to ensure that a group of repositories follow the same security rules or coding conventions.">
       
       
-        <meta http-equiv="last-modified" content="2024-08-27 09:47:50">
+        <meta http-equiv="last-modified" content="2024-09-12 09:35:07">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/using-coding-standards/">
@@ -1005,6 +1005,13 @@
         <li class="md-nav__item">
   <a href="#using-with-tool-configuration" class="md-nav__link">
     Using a coding standard alongside tool configuration files
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#using-with-repository-configuration" class="md-nav__link">
+    Using a coding standard alongside repository-level customizations
   </a>
   
 </li>
@@ -4333,6 +4340,7 @@
 <li><a href="#editing">Editing a coding standard</a></li>
 <li><a href="#deleting">Deleting a coding standard</a></li>
 <li><a href="#using-with-tool-configuration">Using a coding standard alongside tool configuration files</a></li>
+<li><a href="#using-with-repository-configuration">Using a coding standard alongside repository-level customizations</a></li>
 <li><a href="#using-multiple">Using multiple coding standards</a></li>
 </ul>
 <h2 id="creating">Creating a coding standard<a class="headerlink" href="#creating" title="Permanent link">#</a></h2>
@@ -4503,6 +4511,8 @@
 </ol>
 <h2 id="using-with-tool-configuration">Using a coding standard alongside tool configuration files<a class="headerlink" href="#using-with-tool-configuration" title="Permanent link">#</a></h2>
 <p>When using a <a href="../../repositories-configure/configuring-code-patterns/#using-your-own-tool-configuration-files">tool configuration file</a> alongside a coding standard, the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.</p>
+<h2 id="using-with-repository-configuration">Using a coding standard alongside repository-level customizations<a class="headerlink" href="#using-with-repository-configuration" title="Permanent link">#</a></h2>
+<p>Tools and patterns enabled by a coding standard are enforced and cannot be disabled at the repository level. You can add extra tools and patterns, if these are not already enabled by any applied coding standard.</p>
 <h2 id="using-multiple">Using multiple coding standards<a class="headerlink" href="#using-multiple" title="Permanent link">#</a></h2>
 <p>When Codacy analyzes your code using multiple coding standards, it merges the tools and patterns from each standard. Enabled tools and patterns in any applied standard will be enforced.</p>
 <div class="admonition important">
@@ -4670,7 +4680,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 27, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 12, 2024</span>
     
   </small>
 </div>
