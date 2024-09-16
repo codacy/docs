@@ -499,6 +499,7 @@ plugins:
               "repositories/commits-view.md": "repositories/commits.md"
               "repositories/files-view.md": "repositories/files.md"
               "repositories/issues-view.md": "repositories/issues.md"
+              "repositories/coverage-view.md": "repositories/coverage.md"
               "coverage-reporter/generating-coverage-reports.md": "coverage-reporter/index.md"
               "coverage-reporter/adding-coverage-to-your-repository.md": "coverage-reporter/index.md"
               "faq/code-analysis/error-line-endings.md": "faq/troubleshooting/error-line-endings.md"
@@ -566,12 +567,8 @@ nav:
           - repositories/commits.md
           - repositories/files.md
           - repositories/issues.md
+          - repositories/coverage.md
           - repositories/pull-requests.md
-    - Repositories on Codacy Coverage:
-          - repositories-coverage/repository-dashboard.md
-          - repositories-coverage/commits.md
-          - repositories-coverage/files.md
-          - repositories-coverage/pull-requests.md
     - Configuring your repositories:
           - repositories-configure/configuring-code-patterns.md
           - repositories-configure/managing-branches.md

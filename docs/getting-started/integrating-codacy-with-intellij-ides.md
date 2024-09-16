@@ -18,7 +18,7 @@ In the main view, you can find the following information:
 
     When this item is expanded, the number next to each file name is the total number of Quality issues that the pull request adds to that file.
 
--   The **diff coverage** introduced by the pull request. This is the same value you find in the [Pull request coverage overview](../repositories-coverage/pull-requests.md#coverage-overview) panel in the Codacy app. The percentage next to each file name is the coverage variation for that file.
+-   The **diff coverage** introduced by the pull request. The percentage next to each file name is the coverage variation for that file.
 
 -   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Quality Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
 
