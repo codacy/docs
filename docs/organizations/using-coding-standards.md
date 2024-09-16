@@ -11,6 +11,7 @@ This page covers the following topics:
 -   [Editing a coding standard](#editing)
 -   [Deleting a coding standard](#deleting)
 -   [Using a coding standard alongside tool configuration files](#using-with-tool-configuration)
+-   [Using a coding standard alongside repository-level customizations](#using-with-repository-configuration)
 -   [Using multiple coding standards](#using-multiple)
 
 ## Creating a coding standard {: id="creating"}
@@ -156,6 +157,10 @@ To delete a coding standard:
 ## Using a coding standard alongside tool configuration files {: id="using-with-tool-configuration"}
 
 When using a [tool configuration file](../repositories-configure/configuring-code-patterns.md#using-your-own-tool-configuration-files) alongside a coding standard, the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.
+
+## Using a coding standard alongside repository-level customizations {: id="using-with-repository-configuration"}
+
+Tools and patterns enabled by a coding standard are enforced and cannot be disabled at the repository level. You can add extra tools and patterns, if these are not already enabled by any applied coding standard.
 
 ## Using multiple coding standards {: id="using-multiple"}
 
