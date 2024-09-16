@@ -15,7 +15,7 @@ Codacy displays the following [code coverage metrics](../faq/code-analysis/which
 -   **Files above coverage goal:** Number of files that contain a coverage percentage above the repository's goal
 -   **Files below coverage goal:** Number of files that contain a coverage percentage below the repository's goal
 
-If the repository does not have a coverage goal set, the code coverage metrics will not show values for Files above and below coverage goals.
+If the repository doesn't have a coverage goal set, the code coverage metrics won't show values for Files above and below coverage goals.
 
 !!! note
     You can set a Coverage goal for the repository [inside repository settings, on the Goals tab](../repositories-configure/adjusting-quality-goals.md).
@@ -36,13 +36,9 @@ To see the details of pull requests, click a pull request from the list or click
 
 ![Open pull requests](images/open-pull-requests-widget.png)
 
-## Low covered files with issues 
+## Files with low coverage, issues and/or high complexity
 
-For a better files comprehension in terms of issues and coverage simultaneously, Codacy displays a files table where it is possible to check which files contain a low coverage percentage and a high number of issues.
-
-## Low covered files with high complexity
-
-For a better files comprehension in terms of complexity and coverage simultaneously, Codacy displays a files table where it is possible to check which files contain a low coverage percentage and a high complexity rate.
+For a better understanding of how repository files are performing in terms of issues, high complexity and coverage simultaneously, Codacy displays two files tables where it's possible to check which files contain a low coverage percentage, along with a high number of issues and/or a high complexity rate.
 
 ![Low covered files with issues and high complexity](images/low-covered-files-tables.png)
 
