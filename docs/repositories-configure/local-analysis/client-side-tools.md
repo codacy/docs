@@ -16,6 +16,12 @@ Codacy supports client-side tools in two ways:
 
     You can't configure these tools on the Codacy UI, since you manage their configuration locally.
 
+!!! tip
+    In order to receive results from local analysis, the flag "Run analysis on your build server" **must be enabled**.
+
+![Client-side analysis flow](images/run-analysis-through-build-server.png)
+
+
 The table below describes the supported client-side tools and includes links to specific instructions on how to run each tool.
 
 !!! tip

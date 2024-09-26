@@ -665,6 +665,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2024:
+                      - release-notes/cloud/cloud-2024-08.md
                       - release-notes/cloud/cloud-2024-07.md
                       - release-notes/cloud/cloud-2024-06.md
                       - release-notes/cloud/cloud-2024-05.md
