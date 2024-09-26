@@ -115,12 +115,6 @@ The **Complexity** tab displays the complexity changes introduced by the {{ page
 
 ![Complexity tab](./images/{{ page.meta.file_name }}-tab-complexity.png)
 
-{%
-    include-markdown "../repositories-coverage/commits.md"
-    start="<!--tab-diff-start-->"
-    end="<!--tab-diff-end-->"
-%}
-
 ## Diff tab
 
 The **Diff** tab displays the code changes and issues introduced by the {{ page.meta.page_name }}. It includes the following areas:
