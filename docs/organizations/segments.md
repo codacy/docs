@@ -1,10 +1,10 @@
 # Segments
-Segments are dimensions that Codacy reads from your provider that organizes repositories into relevant groups for you. Today segments in Codacy is available for:
-- [GitHub Custom Properties](#github-custom-properties)
+Segments are dimensions that Codacy reads from your provider that organizes repositories into relevant groups for you. Today, Segments is available for: [GitHub Custom Properties](#github-custom-properties)
+  
 <br><br>
-### How can segments be utilised?
-- [Repository list](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade) 
-- [Security & Management Risk](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade)
+### How can Segments be utilised?
+- [Repository list](../organizations/managing-repositories/#custom-properties-filter) 
+- [Security & Management Risk](../organizations/managing-security-and-risk/)
 
 #### Enabling Segments
 To enable **Segments**, an initial sync between your provider and Codacy needs to happen. Once completed, you can use **Segments** to better locate and organize repositories within Codacy.
@@ -22,8 +22,8 @@ Create, use, and manage custom properties for your repositories directly in GitH
 
 > ###### How to setup _Custom Properties_ in GitHub
 > ###### For detailed steps on how to add, edit, and manage repository _Custom Properties_ in GitHub, refer to [GitHub's official documentation](https://docs.github.com/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties).
-<br><br>
 
+<br><br>
 ***
 <br>
 #### Check out what's new, and to come, in Codacy
