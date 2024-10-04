@@ -76,6 +76,7 @@ Codacy allows you to utilise **Segments** to filter repositories based on **Repo
 ![Repositories list filter](images/organization-manage-repos-custom-properties.png)
 
 To enable this feature, users must go through an **initial sync** between GitHub and Codacy, which ensures that the repository custom properties from GitHub are reflected in Codacy.
+To enable **Segments**, an initial sync between GitHub and Codacy needs to happen, which ensures that the repository custom properties from GitHub are reflected in Codacy. Once completed, you can use your custom properties as a **Segments** filter to better locate and organize repositories within Codacy.
 
 ![Repositories list sync](images/organization-manage-repos-custom-properties-sync.png)
 
@@ -84,7 +85,6 @@ To enable this feature, users must go through an **initial sync** between GitHub
 
     If the permission is **not accepted**, users will still be able to use Repository Custom Properties as filters in Codacy, but will need to manually trigger a sync. This can be done using the **manual sync** button available in the filter dropdown, which allows users to synchronize changes from GitHub, though the process may take longer.
 
-Once the sync is completed, you can use these custom properties as a filter to better locate and organize repositories within Codacy.
 
 !!! note
     To fully take advantage of this feature, you can create, use, and manage custom properties for your repositories directly in GitHub. Custom properties allow you to assign tags or metadata to repositories, making it easier to categorize and filter them.
