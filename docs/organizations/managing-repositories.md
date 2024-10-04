@@ -69,9 +69,9 @@ To follow or unfollow repositories on Codacy:
 
     Conversely, you automatically **stop following** a repository as soon as you try accessing any page from that repository but you don't have permissions to see that repository anymore.
 
-## Repository Custom Properties Filter {: id="custom-properties-filter"}
+## Finding your repositories with Segments Filter {: id="custom-properties-filter"}
 
-Codacy allows you to filter repositories based on **Repository Custom Properties** from GitHub. This feature helps you to categorize and filter repositories more effectively within the Codacy platform.
+Codacy allows you to utilise **Segments** to filter repositories based on **Repository Custom Properties** from GitHub. This feature helps you to categorize and filter repositories more effectively within the Codacy platform.
 
 ![Repositories list filter](images/organization-manage-repos-custom-properties.png)
 
