@@ -28,17 +28,7 @@ The overview page includes six panels:
 -   [Top 10 high-risk repositories](#top-10-high-risk-repositories)
 -   [Top 10 common security categories](#top-10-common-security-categories)
 
-To limit the information displayed in each panel to a specific set of repositories, use the filter drop-down above the main area. Choose the relevant repositories or utilise **Segments** to filter repositories based on Repository Custom Properties from GitHub.
-
-!!! note
-    To enable **Segments**, an initial sync between GitHub and Codacy needs to happen, which ensures that the repository custom properties from GitHub are reflected in Codacy. Once completed, you can use your custom properties as a **Segments** filter to better locate and organize repositories within Codacy.
-    
-    For detailed steps on how to add, edit, and manage **Repository Custom Properties** in GitHub, refer to [GitHub's official documentation](https://docs.github.com/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties).
-
-!!! important
-    For changes to **Repository Custom Properties** in GitHub to be **automatically** reflected in Codacy, users need to [accept the new permission request made by the Codacy GitHub app](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app). Accepting this permission enables automatic synchronization of any future changes to the custom properties in GitHub.
-
-    If the permission is **not accepted**, users will still be able to use Repository Custom Properties as filters in Codacy, but will need to manually trigger a sync. This can be done using the **manual sync** button available in the filter dropdown, which allows users to synchronize changes from GitHub, though the process may take longer.
+To limit the information displayed in each panel, use the filter drop-down above the main area, and choose the relevant repositories, or utilise [**Segments**](../segments).
 
 
 
@@ -103,16 +93,7 @@ To access the findings page, access the [overview page](#dashboard) and click th
 
 ![Security and risk management findings page](images/security-risk-management-findings.png)
 
-When viewing the findings, you can update the filtering criteria by clicking the **Segments**, **Repository**, **Severity**, **Status**,  **Security category**, or **Scan type** drop-downs above the list.
-
-**Segments** will filter repositories based on Repository Custom Properties from GitHub.
-
-    To enable **Segments**, an initial sync between GitHub and Codacy needs to happen, which ensures that the repository custom properties from GitHub are reflected in Codacy. Once completed, you can use your custom properties as a **Segments** filter to better locate and organize repositories within Codacy.
-
-!!! important
-    For changes to **Repository Custom Properties** in GitHub to be **automatically** reflected in Codacy, users need to [accept the new permission request made by the Codacy GitHub app](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app). Accepting this permission enables automatic synchronization of any future changes to the custom properties in GitHub.
-
-    If the permission is **not accepted**, users will still be able to use Repository Custom Properties as filters in Codacy, but will need to manually trigger a sync. This can be done using the **manual sync** button available in the filter dropdown, which allows users to synchronize changes from GitHub, though the process may take longer.
+When viewing the findings, you can update the filtering criteria by clicking the  [**Segments**](../segments) , **Repository**, **Severity**, **Status**,  **Security category**, or **Scan type** drop-downs above the list.
 
 The **Details** column offers a quick overview of each finding in the list, including its title, [source platform](#opening-and-closing-items), [scan type](#scan-types), [security category](#supported-security-categories), and related information such as the repository name, Jira issue key, or penetration testing report URL. To find out more, click this overview to navigate to the finding details on the source platform.
 
@@ -122,7 +103,7 @@ The **Details** column offers a quick overview of each finding in the list, incl
 
 To share the current view of the overview or findings page, click the **Copy URL** button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.
 
-!!! Important "**Segments** filter won't be considered when sharing the filtered view"
+!!! Important " [**Segments**](../segments) filter won't be considered when sharing the filtered view"
 
 ## Exporting findings {: id="exporting-the-security-item-list"}
 
