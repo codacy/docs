@@ -30,7 +30,7 @@ The overview page includes six panels:
 
 To limit the information displayed in each panel to a specific set of repositories, use the filter drop-down above the main area. Choose the relevant repositories or utilise **Segments** to filter repositories based on Repository Custom Properties from GitHub.
 
-!!note
+!!! note
 To enable **Segments**, an initial sync between GitHub and Codacy needs to happen, which ensures that the repository custom properties from GitHub are reflected in Codacy. Once completed, you can use your custom properties as a **Segments** filter to better locate and organize repositories within Codacy.
 
     For detailed steps on how to add, edit, and manage **Repository Custom Properties** in GitHub, refer to [GitHub's official documentation](https://docs.github.com/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties).
