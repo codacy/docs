@@ -1,6 +1,6 @@
 # Segments
 Segments are dimentions that Codacy reads from your provider that organizes repositories into relevant groups for you. Today segments in codacy is available for:
-- [GitHub Custom Properties](../#github-custom-properties)
+- [GitHub Custom Properties](#github-custom-properties)
   
 ### How can segments be utilised?
 - [Repositoy list](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade) 
