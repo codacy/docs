@@ -68,29 +68,19 @@ To follow or unfollow repositories on Codacy:
     You automatically **start following** a repository as soon as you access any page from that repository. For example, when you access the repository using a direct link on your Git provider UI.
 
     Conversely, you automatically **stop following** a repository as soon as you try accessing any page from that repository but you don't have permissions to see that repository anymore.
+ 
+## Finding your repositories with Segments {: id="provider-segments"}
 
-## Repository Custom Properties Filter {: id="custom-properties-filter"}
-
-Codacy allows you to filter repositories based on **Repository Custom Properties** from GitHub. This feature helps you to categorize and filter repositories more effectively within the Codacy platform.
+Codacy allows you to utilise [**Segments**](../segments) to categorize and filter repositories more effectively within the Codacy platform.
 
 ![Repositories list filter](images/organization-manage-repos-custom-properties.png)
 
-To enable this feature, users must go through an **initial sync** between GitHub and Codacy, which ensures that the repository custom properties from GitHub are reflected in Codacy.
+To enable [**Segments**](../segments), an initial sync between GitHub and Codacy needs to happen, which ensures that the repository custom properties from GitHub are reflected in Codacy. Once completed, you can use your custom properties as a **Segments** filter to better locate and organize repositories within Codacy.
 
 ![Repositories list sync](images/organization-manage-repos-custom-properties-sync.png)
 
-!!! important
-    For changes to **Repository Custom Properties** in GitHub to be **automatically** reflected in Codacy, users need to [accept the new permission request made by the Codacy GitHub app](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app). Accepting this permission enables automatic synchronization of any future changes to the custom properties in GitHub.
 
-    If the permission is **not accepted**, users will still be able to use Repository Custom Properties as filters in Codacy, but will need to manually trigger a sync. This can be done using the **manual sync** button available in the filter dropdown, which allows users to synchronize changes from GitHub, though the process may take longer.
-
-Once the sync is completed, you can use these custom properties as a filter to better locate and organize repositories within Codacy.
-
-!!! note
-    To fully take advantage of this feature, you can create, use, and manage custom properties for your repositories directly in GitHub. Custom properties allow you to assign tags or metadata to repositories, making it easier to categorize and filter them.
-
-    For detailed steps on how to add, edit, and manage **Repository Custom Properties** in GitHub, refer to [GitHub's official documentation](https://docs.github.com/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties).
 
 ## See also
-
--   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-  [How to setup Segments?](../segments.md)
+-  [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
