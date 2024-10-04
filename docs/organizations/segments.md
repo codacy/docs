@@ -26,9 +26,9 @@ Create, use, and manage custom properties for your repositories directly in GitH
 
 > ###### How to setup _Custom Properties_ in GitHub
 > ###### For detailed steps on how to add, edit, and manage repository _Custom Properties_ in GitHub, refer to [GitHub's official documentation](https://docs.github.com/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties).
-
+<br><br>
 ***
-
+<br><br><br><br>
 #### Chekc out what's new and to come in Codacy
 <div>
   <iframe id="inlineRoadmap"
