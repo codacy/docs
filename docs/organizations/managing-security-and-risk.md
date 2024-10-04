@@ -122,6 +122,8 @@ The **Details** column offers a quick overview of each finding in the list, incl
 
 To share the current view of the overview or findings page, click the **Copy URL** button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.
 
+!!! Important "**Segments** filter will not be considered when sharing the filtered view"
+
 ## Exporting findings {: id="exporting-the-security-item-list"}
 
 !!! info "This feature is available only to organization admins and organization managers"
