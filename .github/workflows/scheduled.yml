@@ -39,7 +39,7 @@ jobs:
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3."
           cache: "pip"
 
       - name: Install dependencies
@@ -106,7 +106,7 @@ jobs:
 
       - name: Create pull request
         if: steps.calibre.outputs.markdown != ''
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@v7
         with:
           title: "clean: Compress images"
           branch-suffix: timestamp
