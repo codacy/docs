@@ -5,9 +5,9 @@ rss_href: /feed_rss_created.xml
 
 # Adding ESLint 9 and PMD 7 as new supported tools September, 2024
 
-On September, 2024 Codacy is adding ESLint 9 and PMD 7 as new supported tools and it will deprecate ESLint 8 and PMD 6 soon:
+On September, 2024 Codacy added ESLint 9 and PMD 7 as new supported tools and it will deprecate ESLint 8 and PMD 6 soon:
 
--   ESLint 9 and PMD 7 won't be enabled by default on new repositories for now and Codacy recommends that you migrate to this version of the tool to benefit from the new features and fixes of ESLint and PMD
+-   ESLint 9 and PMD 7 won't be enabled by default for new repositories. Update these tools version to benefit from the new features and fixes.
 
 -   ESLint 8 and PMD 6 will still be available but Codacy will stop providing updates for this version of the tool, and it will be deprecated
 
