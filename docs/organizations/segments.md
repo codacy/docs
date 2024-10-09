@@ -15,8 +15,8 @@ To enable Segments, an initial sync between your provider and Codacy needs to ha
 
 #### GitHub Custom Properties {: id="github-custom-properties"}
 Create, use, and manage custom properties for your repositories directly in GitHub. Custom properties allow you to assign tags or metadata to repositories, making it easier to categorize and filter them.
-> ###### How to setup _Custom Properties_ in GitHub
-> ###### For detailed steps on how to add, edit, and manage repository _Custom Properties_ in GitHub, refer to [GitHub's official documentation](https://docs.github.com/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties).
+
+> Refer to [GitHub's official documentation](https://docs.github.com/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties) for detailed steps on how to add, edit, and manage repository **Custom Properties**. 
 
 #### Keep Segments in sync
 For changes to repository **Custom Properties** in GitHub to be **automatically** reflected in Codacy, users need to [accept the new permission request made by the Codacy GitHub app](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app). 
