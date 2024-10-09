@@ -29,7 +29,7 @@ The overview page includes six panels:
 -   [Top 10 common security categories](#top-10-common-security-categories)
 
 To limit the information displayed in each panel, use the filter drop-down above the main area, and choose the relevant repositories, or utilise [**Segments**](../segments).
-
+!!! info "Check out how to [enabled and configure segments](../segments/#enabling-segments)"
 
 
 ### Open findings overview
