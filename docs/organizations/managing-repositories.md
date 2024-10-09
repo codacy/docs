@@ -72,10 +72,10 @@ To follow or unfollow repositories on Codacy:
 ## Finding your repositories with Segments {: id="provider-segments"}
 
 Codacy allows you to utilise [**Segments**](../segments) to categorize and filter repositories more effectively within the Codacy platform.
+!!! info "Check out how to [enabled and configure segments](../segments/#enabling-segments)"
 
 ![Repositories list filter](images/organization-manage-repos-custom-properties.png)
 
-To enable [**Segments**](../segments), an initial sync between GitHub and Codacy needs to happen, which ensures that the repository custom properties from GitHub are reflected in Codacy. Once completed, you can use your custom properties as a **Segments** filter to better locate and organize repositories within Codacy.
 
 ![Repositories list sync](images/organization-manage-repos-custom-properties-sync.png)
 
