@@ -665,6 +665,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2024:
+                      - release-notes/cloud/cloud-2024-09.md
                       - release-notes/cloud/cloud-2024-09-adding-eslint9-and-pmd7.md
                       - release-notes/cloud/cloud-2024-08.md
                       - release-notes/cloud/cloud-2024-07.md
