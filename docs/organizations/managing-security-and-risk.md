@@ -29,7 +29,7 @@ The overview page includes six panels:
 -   [Top 10 common security categories](#top-10-common-security-categories)
 
 To limit the information displayed in each panel, use the filter drop-down above the main area, and choose the relevant repositories, or utilise [**Segments**](../segments).
-!!! info "Check out how to [enable and configure segments](../segments/#enabling-segments)"
+!!! info "Check out how to [enable and configure **Segments**](../segments/#enabling-segments)"
 
 
 ### Open findings overview
@@ -94,7 +94,7 @@ To access the findings page, access the [overview page](#dashboard) and click th
 ![Security and risk management findings page](images/security-risk-management-findings.png)
 
 When viewing the findings, you can update the filtering criteria by clicking the  [**Segments**](../segments) , **Repository**, **Severity**, **Status**,  **Security category**, or **Scan type** drop-downs above the list.
-!!! info "Check out how to [enable and configure segments](../segments/#enabling-segments)"
+!!! info "Check out how to [enable and configure **Segments**](../segments/#enabling-segments)"
 
 The **Details** column offers a quick overview of each finding in the list, including its title, [source platform](#opening-and-closing-items), [scan type](#scan-types), [security category](#supported-security-categories), and related information such as the repository name, Jira issue key, or penetration testing report URL. To find out more, click this overview to navigate to the finding details on the source platform.
 
