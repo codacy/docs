@@ -8,7 +8,8 @@ Segments are dimensions that Codacy reads from your provider that organizes repo
 
 ### Enabling Segments {: id="enabling-segments"}
 To enable Segments, an initial sync between your provider and Codacy needs to happen. Once completed, you can use Segments to better locate and organize repositories within Codacy.
-![Repositories list segments sync](../organizations/images/security-risk-management-segments-overview.png)
+![Segments sync](../organizations/images/Segments-no-sync.png)
+![Segments after sync](../organizations/images/segments-after-sync.png)
 <br><br>
 
 
@@ -29,8 +30,8 @@ For changes to repository **Custom Properties** in GitHub to be **automatically*
 <div>
   <iframe id="inlineRoadmap"
       title="Codacy Roadmap"
-      width="780"
-      height="560"
+      width="100%"
+      height="472"
     src="https://portal.productboard.com/2ng56ct2oir3adgbkvzfgqks" frameborder="0"  
   </iframe>
 </div>
