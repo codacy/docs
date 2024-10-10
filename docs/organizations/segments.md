@@ -10,7 +10,7 @@ Segments are dimensions that Codacy reads from your provider that organizes repo
 To enable Segments, an initial sync between your provider and Codacy needs to happen. Once completed, you can use Segments to better locate and organize repositories within Codacy.
 ![Segments sync](../organizations/images/Segments-no-sync.png)
 ![Segments after sync](../organizations/images/segments-after-sync.png)
-<br><br>
+
 
 
 #### GitHub Custom Properties {: id="github-custom-properties"}
@@ -24,7 +24,7 @@ For changes to repository **Custom Properties** in GitHub to be **automatically*
     If the permission is **not accepted**, users will still be able to use Repository Custom Properties as filters in Codacy, but will need to manually trigger a sync. This can be done using the **manual sync** button available in the filter dropdown, which allows users to synchronize changes from GitHub, though the process may take longer.
 
 
-<br><br>
+
 ***
 #### Check out what's new, and to come, in Codacy
 <div>
