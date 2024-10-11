@@ -61,22 +61,22 @@ The sections below list the events that Codacy logs for your organization at use
 
 ### Repository
 
-|Event|Description|Action|
-|-----|-----------|------|
-|Create new [post-commit hook](../repositories-configure/integrations/post-commit-hooks.md)|New repository hook created|`repositories.integrations.postcommithook`|
-|Create [repository API token](../codacy-api/api-tokens.md#repository-api-tokens)|New repository API token created|`repositories.tokens.create`|
-|Read repository API token|List of repository API tokens retrieved|`repositories.tokens.read`|
-|Delete repository API token|Repository API token deleted|`repositories.tokens.delete`|
-|Update Git provider integration settings<br>([GitHub](../repositories-configure/integrations/github-integration.md#configuring), [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#configuring), or [GitLab](../repositories-configure/integrations/gitlab-integration.md#configuring))|Git provider integration settings for the repository updated|`repositories.integrations.providersettings.update`|
-|Refresh Git provider integration<br>(applies only to [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#refreshing) and [GitLab](../repositories-configure/integrations/gitlab-integration.md#refreshing))|Git provider integration for the repository refreshed|`repositories.integrations.refreshprovider`|
-| Update issue                                                                                                         |Update issue|`repositories.issues.update`|
-| Update tool                                                                                                          |Update tool|`repositories.tools.update`|
-| Bypass pull request                                                                                                  |Bypass pull request|`repositories.pullrequests.bypass`|
-| Update repository language                                                                                           |Update repository language|`repositories.settings.language.update`|
-| Update branch                                                                                                        |Update branch|`repositories.branches.update`|
-| Update analysis settings                                                                                             |Update analysis settings|`repositories.settings.analysis.update`|
-| Reanalyze commit                                                                                                     |Reanalyze commit|`repositories.reanalyzeCommit`|
-| Synchronize repository with provider                                                                                 |Synchronize repository with provider|`repositories.settings.provider.sync`|
-| Update quality settings for repository                                                                               |Update quality settings for repository|`repositories.settings.quality.repository.update`|
-| Update quality settings for pull requests                                                                            |Update quality settings for pull requests|`repositories.settings.quality.pullrequests.update`|
-| Update file state                                                                                                    |Update file state|`repositories.file.update`|
+|Event| Description                                                  |Action|
+|-----|--------------------------------------------------------------|------|
+|Create new [post-commit hook](../repositories-configure/integrations/post-commit-hooks.md)| New repository hook created                                  |`repositories.integrations.postcommithook`|
+|Create [repository API token](../codacy-api/api-tokens.md#repository-api-tokens)| New repository API token created                             |`repositories.tokens.create`|
+|Read repository API token| List of repository API tokens retrieved                      |`repositories.tokens.read`|
+|Delete repository API token| Repository API token deleted                                 |`repositories.tokens.delete`|
+|Update Git provider integration settings<br>([GitHub](../repositories-configure/integrations/github-integration.md#configuring), [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#configuring), or [GitLab](../repositories-configure/integrations/gitlab-integration.md#configuring))| Git provider integration settings for the repository updated |`repositories.integrations.providersettings.update`|
+|Refresh Git provider integration<br>(applies only to [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#refreshing) and [GitLab](../repositories-configure/integrations/gitlab-integration.md#refreshing))| Git provider integration for the repository refreshed        |`repositories.integrations.refreshprovider`|
+| Update issue                                                                                                         | For example ignore issue                                     |`repositories.issues.update`|
+| Update tool                                                                                                          | Can be change parameters or disable/enable tool              |`repositories.tools.update`|
+| Bypass pull request                                                                                                  | Bypass pull request by authorized person                     |`repositories.pullrequests.bypass`|
+| Update repository language                                                                                           | Change languages analyzed in repository                      |`repositories.settings.language.update`|
+| Update branch                                                                                                        | Enable or Disable branch for analyse                         |`repositories.branches.update`|
+| Update analysis settings                                                                                             | Update analysis settings                                     |`repositories.settings.analysis.update`|
+| Reanalyze commit                                                                                                     | Reanalyze commit or pull request                             |`repositories.reanalyzeCommit`|
+| Synchronize repository with provider                                                                                 | Synchronize repository with provider                         |`repositories.settings.provider.sync`|
+| Update quality settings for repository                                                                               | Update quality settings for repository                       |`repositories.settings.quality.repository.update`|
+| Update quality settings for pull requests                                                                            | Update quality settings for pull requests                    |`repositories.settings.quality.pullrequests.update`|
+| Update file state                                                                                                    | Igonre or Unignore file                                      |`repositories.file.update`|
