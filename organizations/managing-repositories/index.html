@@ -11,7 +11,7 @@
         <meta name="description" content="Users with the necessary permissions on your Git provider can add repositories to Codacy to start analyzing them. The remaining organization members with access to the added repositories can then follow on Codacy the repositories of their interest.">
       
       
-        <meta http-equiv="last-modified" content="2024-09-17 14:14:02">
+        <meta http-equiv="last-modified" content="2024-10-14 13:29:54">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-repositories/">
@@ -885,8 +885,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#custom-properties-filter" class="md-nav__link">
-    Repository Custom Properties Filter
+  <a href="#provider-segments" class="md-nav__link">
+    Finding your repositories with Segments
   </a>
   
 </li>
@@ -902,6 +902,18 @@
   
 </nav>
     
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../segments/" title="Segments" class="md-nav__link">
+      Segments
+    </a>
   </li>
 
         
@@ -936,16 +948,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-6" type="checkbox" id="nav-5-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-7" type="checkbox" id="nav-5-7">
     
-    <label class="md-nav__link" for="nav-5-6">
+    <label class="md-nav__link" for="nav-5-7">
       Managing integrations
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Managing integrations" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-6">
+      <label class="md-nav__title" for="nav-5-7">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -4320,24 +4332,16 @@
 <p>You automatically <strong>start following</strong> a repository as soon as you access any page from that repository. For example, when you access the repository using a direct link on your Git provider UI.</p>
 <p>Conversely, you automatically <strong>stop following</strong> a repository as soon as you try accessing any page from that repository but you don't have permissions to see that repository anymore.</p>
 </div>
-<h2 id="custom-properties-filter">Repository Custom Properties Filter<a class="headerlink" href="#custom-properties-filter" title="Permanent link">#</a></h2>
-<p>Codacy allows you to filter repositories based on <strong>Repository Custom Properties</strong> from GitHub. This feature helps you to categorize and filter repositories more effectively within the Codacy platform.</p>
+<h2 id="provider-segments">Finding your repositories with Segments<a class="headerlink" href="#provider-segments" title="Permanent link">#</a></h2>
+<p>Codacy allows you to utilise <a href="../segments"><strong>Segments</strong></a> to categorize and filter repositories more effectively within the Codacy platform.</p>
+<div class="admonition info">
+<p class="admonition-title">Check out how to <a href="../segments/#enabling-segments">enable and configure <strong>Segments</strong></a></p>
+</div>
 <p><img alt="Repositories list filter" src="../images/organization-manage-repos-custom-properties.png" /></p>
-<p>To enable this feature, users must go through an <strong>initial sync</strong> between GitHub and Codacy, which ensures that the repository custom properties from GitHub are reflected in Codacy.</p>
 <p><img alt="Repositories list sync" src="../images/organization-manage-repos-custom-properties-sync.png" /></p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>For changes to <strong>Repository Custom Properties</strong> in GitHub to be <strong>automatically</strong> reflected in Codacy, users need to <a href="https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app">accept the new permission request made by the Codacy GitHub app</a>. Accepting this permission enables automatic synchronization of any future changes to the custom properties in GitHub.</p>
-<p>If the permission is <strong>not accepted</strong>, users will still be able to use Repository Custom Properties as filters in Codacy, but will need to manually trigger a sync. This can be done using the <strong>manual sync</strong> button available in the filter dropdown, which allows users to synchronize changes from GitHub, though the process may take longer.</p>
-</div>
-<p>Once the sync is completed, you can use these custom properties as a filter to better locate and organize repositories within Codacy.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>To fully take advantage of this feature, you can create, use, and manage custom properties for your repositories directly in GitHub. Custom properties allow you to assign tags or metadata to repositories, making it easier to categorize and filter them.</p>
-<p>For detailed steps on how to add, edit, and manage <strong>Repository Custom Properties</strong> in GitHub, refer to <a href="https://docs.github.com/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties">GitHub's official documentation</a>.</p>
-</div>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
+<li><a href="../segments">How to setup Segments?</a></li>
 <li><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">Which metrics does Codacy calculate?</a></li>
 </ul>
               
@@ -4496,7 +4500,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 17, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 14, 2024</span>
     
   </small>
 </div>

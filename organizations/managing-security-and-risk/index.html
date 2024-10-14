@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2024-09-03 08:22:50">
+        <meta http-equiv="last-modified" content="2024-10-14 13:29:54">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -851,6 +851,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../segments/" title="Segments" class="md-nav__link">
+      Segments
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../using-gate-policies/" title="Using gate policies" class="md-nav__link">
       Using gate policies
     </a>
@@ -876,16 +888,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-6" type="checkbox" id="nav-5-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5-7" type="checkbox" id="nav-5-7">
     
-    <label class="md-nav__link" for="nav-5-6">
+    <label class="md-nav__link" for="nav-5-7">
       Managing integrations
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Managing integrations" data-md-level="2">
-      <label class="md-nav__title" for="nav-5-6">
+      <label class="md-nav__title" for="nav-5-7">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -4328,7 +4340,10 @@
 <li><a href="#top-10-high-risk-repositories">Top 10 high-risk repositories</a></li>
 <li><a href="#top-10-common-security-categories">Top 10 common security categories</a></li>
 </ul>
-<p>To limit the information displayed in each panel to a specific set of repositories, use the filter drop-down above the main area.</p>
+<p>To limit the information displayed in each panel, use the filter drop-down above the main area, and choose the relevant repositories, or utilise <a href="../segments"><strong>Segments</strong></a>.</p>
+<div class="admonition info">
+<p class="admonition-title">Check out how to <a href="../segments/#enabling-segments">enable and configure <strong>Segments</strong></a></p>
+</div>
 <h3 id="open-findings-overview">Open findings overview<a class="headerlink" href="#open-findings-overview" title="Permanent link">#</a></h3>
 <p>The <strong>Open findings overview</strong> panel displays the total number of open security findings and the number of findings of each severity, helping you quickly assess the overall security posture of your organization and <span class="skip-vale">quickly</span> review findings that are critical or overdue.</p>
 <p>To access the findings page with the corresponding filter applied, click on a number.</p>
@@ -4362,11 +4377,17 @@
 <p>The <strong>Security and risk management findings</strong> page displays a filtered list of findings. By default, this list is sorted by status, and you can click the <strong>First detected</strong> column name to sort the findings by the detection date. Use this page to review and prioritize findings and track the progress of your security efforts.</p>
 <p>To access the findings page, access the <a href="#dashboard">overview page</a> and click the <strong>Findings</strong> tab.</p>
 <p><img alt="Security and risk management findings page" src="../images/security-risk-management-findings.png" /></p>
-<p>When viewing the findings, you can update the filtering criteria by clicking the <strong>Severity</strong>, <strong>Status</strong>, <strong>Repository</strong>, <strong>Security category</strong>, or <strong>Scan type</strong> drop-downs above the list.</p>
+<p>When viewing the findings, you can update the filtering criteria by clicking the  <a href="../segments"><strong>Segments</strong></a> , <strong>Repository</strong>, <strong>Severity</strong>, <strong>Status</strong>,  <strong>Security category</strong>, or <strong>Scan type</strong> drop-downs above the list.</p>
+<div class="admonition info">
+<p class="admonition-title">Check out how to <a href="../segments/#enabling-segments">enable and configure <strong>Segments</strong></a></p>
+</div>
 <p>The <strong>Details</strong> column offers a quick overview of each finding in the list, including its title, <a href="#opening-and-closing-items">source platform</a>, <a href="#scan-types">scan type</a>, <a href="#supported-security-categories">security category</a>, and related information such as the repository name, Jira issue key, or penetration testing report URL. To find out more, click this overview to navigate to the finding details on the source platform.</p>
 <p><img alt="Security and risk management finding details" src="../images/security-risk-management-finding-details.png" /></p>
 <h2 id="sharing-filtered-view">Sharing a filtered view of findings<a class="headerlink" href="#sharing-filtered-view" title="Permanent link">#</a></h2>
 <p>To share the current view of the overview or findings page, click the <strong>Copy URL</strong> button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.</p>
+<div class="admonition important">
+<p class="admonition-title"> <a href="../segments"><strong>Segments</strong></a> filter won't be considered when sharing the filtered view</p>
+</div>
 <h2 id="exporting-the-security-item-list">Exporting findings<a class="headerlink" href="#exporting-the-security-item-list" title="Permanent link">#</a></h2>
 <div class="admonition info">
 <p class="admonition-title">This feature is available only to organization admins and organization managers</p>
@@ -4985,7 +5006,7 @@ Note that some issues just don't have a security category. These issues will rem
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 3, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 14, 2024</span>
     
   </small>
 </div>
