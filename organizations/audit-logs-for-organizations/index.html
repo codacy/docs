@@ -11,7 +11,7 @@
         <meta name="description" content="List of events that Codacy can log for an organization.">
       
       
-        <meta http-equiv="last-modified" content="2024-08-07 14:12:54">
+        <meta http-equiv="last-modified" content="2024-10-14 11:03:32">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/audit-logs-for-organizations/">
@@ -4398,6 +4398,11 @@
 <td>Coding standard deleted</td>
 <td><code>organizations.codingstandards.delete</code></td>
 </tr>
+<tr>
+<td>Export <a href="../managing-security-and-risk/">security items</a></td>
+<td>Export security items</td>
+<td><code>organizations.security.items.export</code></td>
+</tr>
 </tbody>
 </table>
 <h3 id="repository">Repository<a class="headerlink" href="#repository" title="Permanent link">#</a></h3>
@@ -4439,6 +4444,61 @@
 <td>Refresh Git provider integration<br>(applies only to <a href="../../repositories-configure/integrations/bitbucket-integration/#refreshing">Bitbucket</a> and <a href="../../repositories-configure/integrations/gitlab-integration/#refreshing">GitLab</a>)</td>
 <td>Git provider integration for the repository refreshed</td>
 <td><code>repositories.integrations.refreshprovider</code></td>
+</tr>
+<tr>
+<td>Update issue</td>
+<td>For example ignore issue</td>
+<td><code>repositories.issues.update</code></td>
+</tr>
+<tr>
+<td>Update tool</td>
+<td>Can be change parameters or disable/enable tool</td>
+<td><code>repositories.tools.update</code></td>
+</tr>
+<tr>
+<td>Bypass pull request</td>
+<td>Bypass pull request by authorized person</td>
+<td><code>repositories.pullrequests.bypass</code></td>
+</tr>
+<tr>
+<td>Update repository language</td>
+<td>Change languages analyzed in repository</td>
+<td><code>repositories.settings.language.update</code></td>
+</tr>
+<tr>
+<td>Update branch</td>
+<td>Enable or Disable branch for analyse</td>
+<td><code>repositories.branches.update</code></td>
+</tr>
+<tr>
+<td>Update analysis settings</td>
+<td>Update analysis settings</td>
+<td><code>repositories.settings.analysis.update</code></td>
+</tr>
+<tr>
+<td>Reanalyze commit</td>
+<td>Reanalyze commit or pull request</td>
+<td><code>repositories.reanalyzecommit</code></td>
+</tr>
+<tr>
+<td>Synchronize repository with provider</td>
+<td>Synchronize repository with provider</td>
+<td><code>repositories.settings.provider.sync</code></td>
+</tr>
+<tr>
+<td>Update quality settings for repository</td>
+<td>Update quality settings for repository</td>
+<td><code>repositories.settings.quality.repository.update</code></td>
+</tr>
+<tr>
+<td>Update quality settings for pull requests</td>
+<td>Update quality settings for pull requests</td>
+<td><code>repositories.settings.quality.pullrequests.update</code></td>
+</tr>
+<tr>
+<td>Update file state</td>
+<td>Ignore or Unignore file</td>
+<td><code>repositories.file.update</code></td>
 </tr>
 </tbody>
 </table>
@@ -4598,7 +4658,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 7, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 14, 2024</span>
     
   </small>
 </div>
