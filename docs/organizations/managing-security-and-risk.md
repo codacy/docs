@@ -150,6 +150,19 @@ Codacy closes a finding in either of the following cases:
 !!! important
     Deleting a repository deletes all open findings belonging to that repository.
 
+### How Codacy manages findings detected during software composition analysis (SCA) {: id="opening-and-closing-sca-items"}
+
+!!! note
+    To make sure that Codacy detects dependency issues correctly, [enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Trivy tool. 
+
+Vulnerable dependencies are a specific GIT repository finding. Similarly to other repository findings, Codacy opens an issue whenever a commit is analyzed.
+
+Additionally, Codacy scans your codebase every evening to see if it's affected by any newly discovered vulnerabilities.
+
+!!! important
+    The proactive SCA scanning is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.
+
+
 ### How Codacy manages findings detected on Jira {: id="opening-and-closing-jira-items"}
 
 !!! note
