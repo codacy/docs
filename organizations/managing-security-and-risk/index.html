@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2024-10-14 13:29:54">
+        <meta http-equiv="last-modified" content="2024-10-18 08:54:33">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -4428,6 +4428,17 @@
 <p class="admonition-title">Important</p>
 <p>Deleting a repository deletes all open findings belonging to that repository.</p>
 </div>
+<h3 id="opening-and-closing-sca-items">How Codacy manages findings detected during software composition analysis (SCA)<a class="headerlink" href="#opening-and-closing-sca-items" title="Permanent link">#</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To make sure that Codacy detects dependency issues correctly, <a href="../../repositories-configure/configuring-code-patterns/">enable code patterns</a> belonging to the Trivy tool. </p>
+</div>
+<p>Vulnerable dependencies are a specific GIT repository finding. Similarly to other repository findings, Codacy opens an issue whenever a commit is analyzed.</p>
+<p>Additionally, Codacy scans your codebase every evening to see if it's affected by any newly discovered vulnerabilities.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The proactive SCA scanning is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.</p>
+</div>
 <h3 id="opening-and-closing-jira-items">How Codacy manages findings detected on Jira<a class="headerlink" href="#opening-and-closing-jira-items" title="Permanent link">#</a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -5006,7 +5017,7 @@ Note that some issues just don't have a security category. These issues will rem
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 14, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 18, 2024</span>
     
   </small>
 </div>
