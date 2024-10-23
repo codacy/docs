@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2024-10-18 08:54:33">
+        <meta http-equiv="last-modified" content="2024-10-23 09:31:18">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -1001,6 +1001,13 @@
         <li class="md-nav__item">
   <a href="#sharing-filtered-view" class="md-nav__link">
     Sharing a filtered view of findings
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ignoring-findings" class="md-nav__link">
+    Ignoring findings
   </a>
   
 </li>
@@ -4388,6 +4395,31 @@
 <div class="admonition important">
 <p class="admonition-title"> <a href="../segments"><strong>Segments</strong></a> filter won't be considered when sharing the filtered view</p>
 </div>
+<h2 id="ignoring-findings">Ignoring findings<a class="headerlink" href="#ignoring-findings" title="Permanent link">#</a></h2>
+<div class="admonition info">
+<p class="admonition-title">This feature is available only to organization admins and organization managers</p>
+</div>
+<p>On the finding's details page, you can ignore a finding using the context menu. When ignoring a finding you can optionally specify a reason for doing so.</p>
+<p><img alt="Security and risk management finding ignore" src="../images/security-risk-management-finding-ignore.png" /></p>
+<p>From an organization standpoint, ignoring a finding means that you accept the risk it poses and you're not planning on addressing the issue.</p>
+<p>From Codacy's standpoint, ignoring a finding means it will be removed from the metrics featured in the <a href="#dashboard">overview page</a> page. Note that the <a href="#open-findings-history">Open Findings history</a> chart will only be changed at the start of next week.</p>
+<div class="admonition info">
+<p class="admonition-title"><a href="../integrations/jira-integration/">Jira</a> findings can't be ignored in Codacy. You should closed the issue directly in Jira.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Ignoring findings detected on <a href="#opening-and-closing-items">Git repositories</a> will also <a href="../../repositories/issues/#ignoring-and-managing-issues">ignore the issue at the repository level</a>.</p>
+</div>
+<p>You can still see <strong>Ignored</strong> findings in the <a href="#item-list">findings list</a>, by filtering for the <strong>Ignored</strong> status in the <strong>Status</strong> dropdown. Check the <strong>Status</strong> column to know the status of a finding.</p>
+<p><img alt="Security and risk management finding unignore list" src="../images/security-risk-management-finding-unignore-list.png" /></p>
+<p>An Ignored finding can be <strong>unignored</strong> directly from the <a href="#item-list">findings list</a> or by going to the same menu where the ignore action was performed, in the findings details page. Note that in this page you can also find out more about who ignored the finding and why, if such a reason was provided.</p>
+<p>Unignoring a finding reverts the effects of ignoring it.</p>
+<p><img alt="Security and risk management finding unignore" src="../images/security-risk-management-finding-unignore.png" /></p>
+<div class="admonition important">
+<p class="admonition-title">Unignoring findings detected on <a href="#opening-and-closing-items">Git repositories</a> will also <a href="../../repositories/issues/#ignoring-and-managing-issues">unignore the issue at the repository level</a>.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Ignoring and unignoring findings are <a href="../audit-logs-for-organizations/#organization">auditable actions</a>.</p>
+</div>
 <h2 id="exporting-the-security-item-list">Exporting findings<a class="headerlink" href="#exporting-the-security-item-list" title="Permanent link">#</a></h2>
 <div class="admonition info">
 <p class="admonition-title">This feature is available only to organization admins and organization managers</p>
@@ -5017,7 +5049,7 @@ Note that some issues just don't have a security category. These issues will rem
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 18, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 23, 2024</span>
     
   </small>
 </div>
