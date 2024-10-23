@@ -216,4 +216,5 @@ https://docs.codacy.com/repositories-configure/integrations/post-commit-hooks/,"
 https://docs.codacy.com/repositories-configure/local-analysis/client-side-tools/,"Client-side tools enable you to run an analysis locally or as part of your build process and upload the results to Codacy. This way, Codacy presents the analysis information reported by your local tools on the Codacy dashboards, in addition to the default code quality information."
 https://docs.codacy.com/repositories-configure/local-analysis/running-aligncheck/,Instructions on how to run aligncheck as a client-side tool on Codacy.
 https://docs.codacy.com/repositories-configure/local-analysis/running-deadcode/,Instructions on how to run deadcode as a client-side tool on Codacy.
+https://docs.codacy.com/repositories-configure/local-analysis/running-eslint/,Instructions on how to run ESLint as a client-side tool on Codacy.
 https://docs.codacy.com/repositories-configure/local-analysis/running-spotbugs/,Instructions on how to run SpotBugs as a client-side tool on Codacy.
