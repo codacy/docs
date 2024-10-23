@@ -591,6 +591,7 @@ nav:
                 - repositories-configure/local-analysis/running-aligncheck.md
                 - repositories-configure/local-analysis/running-deadcode.md
                 - repositories-configure/local-analysis/running-spotbugs.md
+                - repositories-configure/local-analysis/running-eslint.md
           - repositories-configure/using-submodules.md
           - repositories-configure/codacy-configuration-file.md
           - repositories-configure/removing-your-repository.md
