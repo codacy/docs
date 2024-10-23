@@ -58,6 +58,8 @@ The sections below list the events that Codacy logs for your organization at use
 | Make coding standard default                                                                                         |Coding standard was made the default|`organizations.codingstandards.setdefault`|
 | Delete coding standard                                                                                               |Coding standard deleted|`organizations.codingstandards.delete`|
 | Export [security items](./managing-security-and-risk.md)                                                             |Export security items|`organizations.security.items.export`|
+| Ignore security item                                                                                                 |Security item was ignored|`organizations.security.items.ignore`|
+| Unignore security item                                                                                               |Security item was unignored|`organizations.security.items.unignore`|
 
 ### Repository
 
