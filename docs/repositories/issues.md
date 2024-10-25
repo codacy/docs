@@ -16,7 +16,7 @@ Click the title of an issue card to expand it and see the following information:
 -   The estimated time to fix the issue
 -   What the issue is and how to solve it
 -   The [tool that reported the issue](../getting-started/supported-languages-and-tools.md) and the related code pattern
--   Where is this pattern enabled: coding standard, repository rules, or configuration file
+-   Where's this pattern enabled: coding standard, repository rules, or configuration file
 <!--issue-details-end-->
 
 ![Issue details](images/issues-detail.png)
