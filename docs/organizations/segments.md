@@ -20,7 +20,7 @@ Custom properties allow you to assign tags or metadata to repositories, making i
 
 > Refer to [GitHub's official documentation](https://docs.github.com/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties) for detailed steps on how to add, edit, and manage repository **Custom Properties**. 
 
-#### Keep Segments in sync
+#### Keep Segments insync
 For changes to repository **Custom Properties** in GitHub to be **automatically** reflected in Codacy, users need to [accept the new permission request made by the Codacy GitHub app](https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app). 
 !!! note
     If the permission is **not accepted**, users will still be able to use Repository Custom Properties as filters in Codacy, but will need to manually trigger a sync. This can be done using the **manual sync** button available in the filter dropdown, which allows users to synchronize changes from GitHub, though the process may take longer.
@@ -31,7 +31,7 @@ Bitbucket Projects allow you to organize your repositories into relevant context
 > Refer to [Bitbucket's official documentation](https://support.atlassian.com/bitbucket-cloud/docs/create-a-project/) for detailed steps on how to add, edit, and manage **Projects**. 
 
 #### Keep Segments in sync
-After the first sync is done, Bitbucket Prjects will continually be in sync with Codacy automatically.
+After the first sync is done, Bitbucket Projects will continue to be insync with Codacy automatically.
 
 
 <br><br>
