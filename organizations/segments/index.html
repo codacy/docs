@@ -8,10 +8,12 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Segments are dimensions that Codacy reads from your provider that organizes repositories into relevant groups for you. Today, Segments is available for: GitHub Custom Properties">
+        <meta name="description" content="Segments are dimensions that Codacy reads from your provider that organizes repositories into relevant groups for you. Today, Segments is available for: 
+- GitHub Custom Properties
+- Bitbucket Projects">
       
       
-        <meta http-equiv="last-modified" content="2024-10-14 13:29:54">
+        <meta http-equiv="last-modified" content="2024-10-30 10:56:36">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/segments/">
@@ -4268,7 +4270,9 @@
                 
                 
                 <h1 id="segments">Segments<a class="headerlink" href="#segments" title="Permanent link">#</a></h1>
-<p>Segments are dimensions that Codacy reads from your provider that organizes repositories into relevant groups for you. Today, Segments is available for: <a href="#github-custom-properties">GitHub Custom Properties</a></p>
+<p>Segments are dimensions that Codacy reads from your provider that organizes repositories into relevant groups for you. Today, Segments is available for: 
+- <a href="#github-custom-properties">GitHub Custom Properties</a>
+- <a href="#bitbucket-projects">Bitbucket Projects</a></p>
 <h2 id="where-can-segments-be-utilised">Where can Segments be utilised?<a class="headerlink" href="#where-can-segments-be-utilised" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../managing-repositories/#provider-segments">Repository list</a> </li>
@@ -4280,16 +4284,23 @@
 <img alt="Segments after sync" src="../images/segments-after-sync.png" />
 <br><br></p>
 <h3 id="github-custom-properties">GitHub Custom Properties<a class="headerlink" href="#github-custom-properties" title="Permanent link">#</a></h3>
-<p>Create, use, and manage custom properties for your repositories directly in GitHub. Custom properties allow you to assign tags or metadata to repositories, making it easier to categorize and filter them.</p>
+<p>Custom properties allow you to assign tags or metadata to repositories, making it easier to categorize and filter them. Create, use, and manage custom properties for your repositories directly in GitHub. </p>
 <blockquote>
 <p>Refer to <a href="https://docs.github.com/en/organizations/managing-organization-settings/managing-custom-properties-for-repositories-in-your-organization#adding-custom-properties">GitHub's official documentation</a> for detailed steps on how to add, edit, and manage repository <strong>Custom Properties</strong>. </p>
 </blockquote>
-<h4 id="keep-segments-in-sync">Keep Segments in sync<a class="headerlink" href="#keep-segments-in-sync" title="Permanent link">#</a></h4>
+<h4 id="keep-segments-insync">Keep Segments insync<a class="headerlink" href="#keep-segments-insync" title="Permanent link">#</a></h4>
 <p>For changes to repository <strong>Custom Properties</strong> in GitHub to be <strong>automatically</strong> reflected in Codacy, users need to <a href="https://docs.github.com/en/apps/using-github-apps/approving-updated-permissions-for-a-github-app">accept the new permission request made by the Codacy GitHub app</a>. </p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>If the permission is <strong>not accepted</strong>, users will still be able to use Repository Custom Properties as filters in Codacy, but will need to manually trigger a sync. This can be done using the <strong>manual sync</strong> button available in the filter dropdown, which allows users to synchronize changes from GitHub, though the process may take longer.</p>
 </div>
+<h3 id="bitbucket-projects">Bitbucket Projects<a class="headerlink" href="#bitbucket-projects" title="Permanent link">#</a></h3>
+<p>Bitbucket Projects allow you to organize your repositories into relevant contexts for you, making it easier to categorize and filter them. Create, use, and manage Projects for your repositories directly in Bitbucket. </p>
+<blockquote>
+<p>Refer to <a href="https://support.atlassian.com/bitbucket-cloud/docs/create-a-project/">Bitbucket's official documentation</a> for detailed steps on how to add, edit, and manage <strong>Projects</strong>. </p>
+</blockquote>
+<h4 id="keep-segments-in-sync">Keep Segments in sync<a class="headerlink" href="#keep-segments-in-sync" title="Permanent link">#</a></h4>
+<p>After the first sync is done, Bitbucket Projects will continue to be insync with Codacy automatically.</p>
 <p><br><br></p>
 <hr />
 <h4 id="check-out-whats-new-and-to-come-in-codacy">Check out what's new, and to come, in Codacy<a class="headerlink" href="#check-out-whats-new-and-to-come-in-codacy" title="Permanent link">#</a></h4>
@@ -4457,7 +4468,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 14, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 30, 2024</span>
     
   </small>
 </div>
