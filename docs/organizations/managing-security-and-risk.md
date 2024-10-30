@@ -108,7 +108,7 @@ To share the current view of the overview or findings page, click the **Copy URL
 
 ## Ignoring findings {: id="ignoring-findings"}
 
-!!! info "This feature is available only to organization admins and organization managers"
+!!! info "This feature is available only to organization admins and organization managers except for findings detected on [Git repositories](#opening-and-closing-items). For those findings, [repository permissions are respected](../repositories/issues.md#ignoring-and-managing-issues)"
 
 On the finding's details page, you can ignore a finding using the context menu. When ignoring a finding you can optionally specify a reason for doing so.
 
