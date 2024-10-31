@@ -86,6 +86,7 @@ If you selected **Advanced setup** when [creating a new coding standard](#creati
 
     -   Toggle the tools to run when Codacy analyzes your code.
     -   For each enabled tool, configure the code patterns to use.
+    -   You can also use the **Discover patterns** option to find patterns across all tools.
 
     !!! tip
         -   Use the filters to find the relevant tools and code patterns. The recommended configurations are manually curated by Codacy or based on tool defaults and are marked with the icon ![Recommended icon](images/coding-standard-recommended-icon.png).
