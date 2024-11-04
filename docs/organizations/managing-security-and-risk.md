@@ -60,7 +60,7 @@ For a detailed view of the distribution on a specific week, hover over the graph
 
 ### Activity history
 
-The **Activity history** graph shows weekly counts of open and closed findings over the past three months, overlaid on the overall open findings trend. It complements the **Open findings history** graph with more information, such as the volume of findings addressed each week and a visual representation of the new/closed ratio.
+The **Activity history** graph shows weekly counts of open, closed, ignored and unignored findings over the past three months, overlaid on the overall open findings trend. It complements the **Open findings history** graph with more information, such as the volume of findings addressed each week and a visual representation of the new/closed ratio.
 
 To filter the graph by finding severity, use the drop-down in the top right-hand corner of the panel.
 
