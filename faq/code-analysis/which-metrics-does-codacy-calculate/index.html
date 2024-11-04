@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy scans your code for issues and calculates code complexity, duplication, and coverage metrics. Besides this, Codacy also calculates a grade for your repository and files based on all calculated code quality metrics.">
       
       
-        <meta http-equiv="last-modified" content="2024-04-15 13:20:33">
+        <meta http-equiv="last-modified" content="2024-11-04 13:25:08">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/which-metrics-does-codacy-calculate/">
@@ -4371,7 +4371,7 @@
 <li><strong>Best practice:</strong> Code that doesn't follow the recommended coding standards and best practices</li>
 <li><strong>Comprehensibility:</strong> Code that can be difficult to understand and modify</li>
 </ul>
-<p>Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the issue cost <strong>relative to a baseline of 1 point per line of code</strong>, where the cost of each issue depends on its severity: Critical = 10 points, Medium = 5 points, Minor = 1 point. This means that if your repository has 50% issues, the amount and severity of the issues in your repository is half of the baseline.</p>
+<p>Besides this, Codacy also allows you to compare issues across repositories with different sizes by showing <strong>issues per thousand lines of code (kLoC)</strong>.</p>
 <p>Codacy displays issues on the following places:</p>
 <table>
 <thead>
@@ -4395,15 +4395,15 @@
 </tr>
 <tr>
 <td><a href="../../../repositories/repository-dashboard/">Repository Dashboard</a></td>
-<td>Issue percentage and how the metric is evolving over time</td>
+<td>Issues per 1000 lines of code</td>
 </tr>
 <tr>
 <td><a href="../../../organizations/organization-overview/">Organization overview</a></td>
-<td>Average issue percentage of the repositories in your organization and issue percentage of each repository</td>
+<td>Average issues / kLoC of the repositories in your organization and issue / kLoC of each repository</td>
 </tr>
 <tr>
 <td><a href="../../../organizations/managing-repositories/">Repositories list page</a></td>
-<td>Issue percentage in each repository in your organization</td>
+<td>Issues / kLoC in each repository in your organization</td>
 </tr>
 </tbody>
 </table>
@@ -4713,7 +4713,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 15, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 4, 2024</span>
     
   </small>
 </div>

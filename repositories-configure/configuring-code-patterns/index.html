@@ -11,7 +11,7 @@
         <meta name="description" content="Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results fit your needs.">
       
       
-        <meta http-equiv="last-modified" content="2024-09-09 08:40:36">
+        <meta http-equiv="last-modified" content="2024-11-04 13:25:08">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/configuring-code-patterns/">
@@ -477,6 +477,13 @@
         <li class="md-nav__item">
   <a href="#configuring-tools-and-code-patterns-using-the-codacy-ui" class="md-nav__link">
     Configuring tools and code patterns using the Codacy UI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#discover-code-patterns-across-all-tools" class="md-nav__link">
+    Discover code patterns across all tools
   </a>
   
 </li>
@@ -4295,6 +4302,7 @@
 <p>By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs as follows:</p>
 <ul>
 <li><a href="#configuring-tools-and-code-patterns-using-the-codacy-ui">Configuring tools and code patterns using the Codacy UI</a></li>
+<li><a href="#discover-code-patterns-across-all-tools">Discover code patterns across all tools</a></li>
 <li><a href="#using-your-own-tool-configuration-files">Customizing applied coding standards</a></li>
 <li><a href="#customizing-patterns-following-standards">Customizing patterns when following coding standards</a></li>
 <li><a href="#using-your-own-tool-configuration-files">Using tool configuration files</a></li>
@@ -4330,6 +4338,10 @@
 <p>Optionally, to take the changes into account immediately, <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/">reanalyze the repository manually</a>. Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.</p>
 </li>
 </ol>
+<h2 id="discover-code-patterns-across-all-tools">Discover code patterns across all tools<a class="headerlink" href="#discover-code-patterns-across-all-tools" title="Permanent link">#</a></h2>
+<p>To discover code patterns across all tools, click <strong>Discover patterns</strong> at the top of the <strong>Tools</strong> list.</p>
+<p>Use the input field to search for patterns by name or description. You can also filter by severity level, issue category, recommended or disabled patterns.</p>
+<p>You can also expand your search to include patterns from all tools, even if the tool is not enabled for the repository.</p>
 <h2 id="customizing-applied-coding-standards">Customizing applied coding standards<a class="headerlink" href="#customizing-applied-coding-standards" title="Permanent link">#</a></h2>
 <p>To apply or edit a repository's <a href="../../organizations/using-coding-standards/">coding standards</a>, click <strong>Customize</strong> in the <strong>Following ...</strong> section at the top of the <strong>Code patterns</strong> page.</p>
 <p><img alt="Customize applied coding standards" src="../images/code-patterns-cs-customize.png" /></p>
@@ -4746,7 +4758,7 @@ You can add extra tools and patterns, if these are not enabled by any applied co
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 9, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 4, 2024</span>
     
   </small>
 </div>
