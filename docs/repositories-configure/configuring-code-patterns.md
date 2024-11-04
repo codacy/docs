@@ -9,6 +9,7 @@ description: Configure the static analysis tools and code patterns that Codacy u
 By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs as follows:
 
 -   [Configuring tools and code patterns using the Codacy UI](#configuring-tools-and-code-patterns-using-the-codacy-ui)
+-   [Discover code patterns across all tools](#discover-code-patterns-across-all-tools)
 -   [Customizing applied coding standards](#using-your-own-tool-configuration-files)
 -   [Customizing patterns when following coding standards](#customizing-patterns-following-standards)
 -   [Using tool configuration files](#using-your-own-tool-configuration-files)
@@ -37,6 +38,14 @@ To configure the tools and code patterns for a repository using the Codacy UI:
     ![Configuring code patterns](images/code-patterns-configure.png)
 
 1.  Optionally, to take the changes into account immediately, [reanalyze the repository manually](../faq/repositories/how-do-i-reanalyze-my-repository.md). Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.
+
+## Discover code patterns across all tools {: id="discover-code-patterns-across-all-tools"}
+
+To discover code patterns across all tools, click **Discover patterns** at the top of the **Tools** list.
+
+Use the input field to search for patterns by name or description. You can also filter by severity level, issue category, recommended or disabled patterns.
+
+You can also expand your search to include patterns from all tools, even if the tool is not enabled for the repository.
 
 ## Customizing applied coding standards {: id="customizing-applied-coding-standards"}
 
