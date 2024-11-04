@@ -60,7 +60,7 @@ For a detailed view of the distribution on a specific week, hover over the graph
 
 ### Activity history
 
-The **Activity history** graph shows weekly counts of open and closed findings over the past three months, overlaid on the overall open findings trend. It complements the **Open findings history** graph with more information, such as the volume of findings addressed each week and a visual representation of the new/closed ratio.
+The **Activity history** graph shows weekly counts of open, closed, ignored and unignored findings over the past three months, overlaid on the overall open findings trend. It complements the **Open findings history** graph with more information, such as the volume of findings addressed each week and a visual representation of the new/closed ratio.
 
 To filter the graph by finding severity, use the drop-down in the top right-hand corner of the panel.
 
@@ -105,6 +105,36 @@ The **Details** column offers a quick overview of each finding in the list, incl
 To share the current view of the overview or findings page, click the **Copy URL** button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.
 
 !!! Important " [**Segments**](../segments) filter won't be considered when sharing the filtered view"
+
+## Ignoring findings {: id="ignoring-findings"}
+
+!!! info "This feature is available only to organization admins and organization managers except for findings detected on [Git repositories](#opening-and-closing-items). For those findings, [repository permissions are respected](../repositories/issues.md#ignoring-and-managing-issues)"
+
+On the finding's details page, you can ignore a finding using the context menu. When ignoring a finding you can optionally specify a reason for doing so.
+
+![Security and risk management finding ignore](images/security-risk-management-finding-ignore.png)
+
+From an organization standpoint, ignoring a finding means that you accept the risk it poses and you're not planning on addressing the issue.
+
+From Codacy's standpoint, ignoring a finding means it will be removed from the metrics featured in the [overview page](#dashboard) page. Note that the [Open Findings history](#open-findings-history) chart will only be changed at the start of next week.
+
+!!! info "[Jira](./integrations/jira-integration.md) findings can't be ignored in Codacy. You should closed the issue directly in Jira."
+
+!!! Important "Ignoring findings detected on [Git repositories](#opening-and-closing-items) will also [ignore the issue at the repository level](../repositories/issues.md#ignoring-and-managing-issues)."
+
+You can still see **Ignored** findings in the [findings list](#item-list), by filtering for the **Ignored** status in the **Status** dropdown. Check the **Status** column to know the status of a finding.
+
+![Security and risk management finding unignore list](images/security-risk-management-finding-unignore-list.png)
+
+An Ignored finding can be **unignored** directly from the [findings list](#item-list) or by going to the same menu where the ignore action was performed, in the findings details page. Note that in this page you can also find out more about who ignored the finding and why, if such a reason was provided.
+
+Unignoring a finding reverts the effects of ignoring it.
+
+![Security and risk management finding unignore](images/security-risk-management-finding-unignore.png)
+
+!!! Important "Unignoring findings detected on [Git repositories](#opening-and-closing-items) will also [unignore the issue at the repository level](../repositories/issues.md#ignoring-and-managing-issues)."
+
+!!! info "Ignoring and unignoring findings are [auditable actions](../organizations/audit-logs-for-organizations.md#organization)."
 
 ## Exporting findings {: id="exporting-the-security-item-list"}
 
