@@ -61,7 +61,7 @@ Codacy calculates the number of issues in the following static code analysis cat
 -   **Comprehensibility:** Code that can be difficult to understand and modify
 <!--issue-categories-end-->
 
-Besides this, Codacy also allows you to compare issues across repositories with different sizes by calculating the issue cost **relative to a baseline of 1 point per line of code**, where the cost of each issue depends on its severity: Critical = 10 points, Medium = 5 points, Minor = 1 point. This means that if your repository has 50% issues, the amount and severity of the issues in your repository is half of the baseline.
+Besides this, Codacy also allows you to compare issues across repositories with different sizes by showing **issues per thousand lines of code (kLoC)**.
 
 Codacy displays issues on the following places:
 
@@ -70,9 +70,9 @@ Codacy displays issues on the following places:
 |[Commit detail page](../../repositories/commits.md)<br/>[Pull request detail page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of new and fixed issues introduced by the commit or pull request|
 |[Files page](../../repositories/files.md)|Number of issues in each file|
 |[Issues page](../../repositories/issues.md)|List of all issues detected in each branch|
-|[Repository Dashboard](../../repositories/repository-dashboard.md)|Issue percentage and how the metric is evolving over time|
-|[Organization overview](../../organizations/organization-overview.md)|Average issue percentage of the repositories in your organization and issue percentage of each repository|
-|[Repositories list page](../../organizations/managing-repositories.md)|Issue percentage in each repository in your organization|
+|[Repository Dashboard](../../repositories/repository-dashboard.md)|Issues per 1000 lines of code|
+|[Organization overview](../../organizations/organization-overview.md)|Average issues / kLoC of the repositories in your organization and issue / kLoC of each repository|
+|[Repositories list page](../../organizations/managing-repositories.md)|Issues / kLoC in each repository in your organization|
 
 ## Complexity
 
