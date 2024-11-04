@@ -9,12 +9,12 @@ description: Configure the static analysis tools and code patterns that Codacy u
 By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs as follows:
 
 -   [Configuring tools and code patterns using the Codacy UI](#configuring-tools-and-code-patterns-using-the-codacy-ui)
+-   [Discover code patterns across all tools](#discover-code-patterns-across-all-tools)
+-   [Customizing applied coding standards](#using-your-own-tool-configuration-files)
+-   [Customizing patterns when following coding standards](#customizing-patterns-following-standards)
 -   [Using tool configuration files](#using-your-own-tool-configuration-files)
 
 ## Configuring tools and code patterns using the Codacy UI
-
-!!! note
-    If you update the configurations of a repository that follows a [coding standard](../organizations/using-coding-standards.md), Codacy copies the coding standard configurations to the repository and the repository stops following the coding standard. You can then customize the repository configurations without affecting the coding standard.
 
 To configure the tools and code patterns for a repository using the Codacy UI:
 
@@ -26,18 +26,42 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
     ![Toggling tools](images/code-patterns-toggle-tools.png)
 
-1.  Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the sidebar filters. You can filter by language, [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), or status.
+1.  Select a tool to enable or disable its code patterns. To make it easier to find relevant patterns, use the filters above the pattern list. You can filter by [issue category](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), status, severity level, or display only recommended code patterns.
 
-    To see an explanation of the issues that a pattern detects and how to fix them, click **Show details**. Some patterns also allow you to configure the rules for detecting issues.
+    To see an explanation of the issues that a pattern detects and how to fix them, click the respective dropdown arrow.
 
     !!! tip
-        -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click **Enable all**. For example, to enable all Security patterns, click the **Security** filter and then click **Enable all**.
+        -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click the checkbox in the header of the patterns list.
 
         -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.
 
     ![Configuring code patterns](images/code-patterns-configure.png)
 
 1.  Optionally, to take the changes into account immediately, [reanalyze the repository manually](../faq/repositories/how-do-i-reanalyze-my-repository.md). Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.
+
+## Discover code patterns across all tools {: id="discover-code-patterns-across-all-tools"}
+
+To discover code patterns across all tools, click **Discover patterns** at the top of the **Tools** list.
+
+Use the input field to search for patterns by name or description. You can also filter by severity level, issue category, recommended or disabled patterns.
+
+You can also expand your search to include patterns from all tools, even if the tool is not enabled for the repository.
+
+## Customizing applied coding standards {: id="customizing-applied-coding-standards"}
+
+To apply or edit a repository's [coding standards](../organizations/using-coding-standards.md), click **Customize** in the **Following ...** section at the top of the **Code patterns** page.
+
+![Customize applied coding standards](images/code-patterns-cs-customize.png)
+
+Select the coding standards that you want to follow or stop following and click **Apply**.
+
+![Customize applied coding standards](images/code-patterns-cs-customize-modal.png)
+
+
+## Customizing patterns when following coding standards {: id="customizing-patterns-following-standards"}
+
+Tools and patterns enabled by a coding standard are enforced and cannot be disabled.
+You can add extra tools and patterns, if these are not enabled by any applied coding standard.
 
 ## Using tool configuration files {: id="using-your-own-tool-configuration-files"}
 
@@ -62,7 +86,7 @@ To use a configuration file for a static analysis tool:
 
 1.  Push the configuration file to the root of the [default Codacy branch](managing-branches.md).
 
-1.  Open the repository **Code patterns** page, select the tool of interest, and select the option **Configuration file**.
+1.  Open the repository **Code patterns** page, select the tool of interest, and activate the toggle to use a configuration file.
 
     !!! note
         -   Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results take those changes into account.
@@ -94,7 +118,7 @@ The table below lists the configuration file names that Codacy detects and suppo
   <tr>
     <td><a href="https://docs.openstack.org/bandit/latest/config.html">Bandit</a></td>
     <td>Python</td>
-    <td><code>bandit.yml</code>, <code>.bandit</code></td>
+    <td><code>bandit.yml</code>, <code>bandit.yaml</code>, <code>.bandit</code>, <code>bandit.toml</code>, <code>bandit.ini</code></td>
     <td>To solve flagged valid Python "assert" statements, create a <code>bandit.yml</code> on the root of the repository containing: <code>skips: \['B101'\]</code></td>
   </tr>
   <tr>

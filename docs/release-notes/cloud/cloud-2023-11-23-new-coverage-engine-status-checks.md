@@ -35,17 +35,6 @@ Please refer to the table below for the updated status of the transition process
       <td>The new Coverage engine now sends coverage summaries to GitHub. If you haven't done so yet, please review and update your app permissions as mentioned above.</td>
     </tr>
     <tr>
-      <td rowspan="3">Codacy app UI</td>
-      <td><a href="../../../repositories-coverage/pull-requests/#diff-tab">Coverage pull request Diff tab</a></td>
-      <td>Live</td>
-      <td>Since December 27th, 2023, this component gets data from the new Coverage engine.</td>
-    </tr>
-    <tr>
-      <td><a href="../../../repositories-coverage/pull-requests/">Coverage Pull Requests page</a></td>
-      <td>Live</td>
-      <td>Since February 6th, 2024, this page gets data from the new Coverage engine.</td>
-    </tr>
-    <tr>
       <td>Other pages and components</td>
       <td>Planned</td>
       <td>-</td>
@@ -140,7 +129,7 @@ On December 7th 2023, the new Coverage engine started posting coverage summaries
 
 ### Missing data on the Coverage Pull request page {: id="differences-in-coverage-metrics-between-the-coverage-and-quality-pull-request-pages" }
 
-You may notice missing coverage data on the [Coverage Pull requests page](../../repositories-coverage/pull-requests.md) for older pull requests when compared to the coverage data shown on the [Quality Pull requests page](../../repositories/pull-requests.md). This may happen due to a number of reasons:
+You may notice missing coverage data on the Coverage Pull requests page for older pull requests when compared to the coverage data shown on the [Quality Pull requests page](../../repositories/pull-requests.md). This may happen due to a number of reasons:
 
 -   GitHub only: The new Coverage service requires updated app permissions to calculate coverage data. If you haven't done so yet, [review and accept the updated Codacy app permissions](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions) on GitHub and re-analyze the pull request by pushing an empty commit.
 

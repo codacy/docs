@@ -29,8 +29,8 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    codacy_self_hosted_version: "13.0.0"
-    codacy_coverage_reporter_version: "13.13.14"
+    codacy_self_hosted_version: "14.0.0"
+    codacy_coverage_reporter_version: "13.10.15"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
     community_url: "https://community.codacy.com/"
@@ -499,6 +499,7 @@ plugins:
               "repositories/commits-view.md": "repositories/commits.md"
               "repositories/files-view.md": "repositories/files.md"
               "repositories/issues-view.md": "repositories/issues.md"
+              "repositories/coverage-view.md": "repositories/coverage.md"
               "coverage-reporter/generating-coverage-reports.md": "coverage-reporter/index.md"
               "coverage-reporter/adding-coverage-to-your-repository.md": "coverage-reporter/index.md"
               "faq/code-analysis/error-line-endings.md": "faq/troubleshooting/error-line-endings.md"
@@ -566,12 +567,8 @@ nav:
           - repositories/commits.md
           - repositories/files.md
           - repositories/issues.md
+          - repositories/coverage.md
           - repositories/pull-requests.md
-    - Repositories on Codacy Coverage:
-          - repositories-coverage/repository-dashboard.md
-          - repositories-coverage/commits.md
-          - repositories-coverage/files.md
-          - repositories-coverage/pull-requests.md
     - Configuring your repositories:
           - repositories-configure/configuring-code-patterns.md
           - repositories-configure/managing-branches.md
@@ -594,6 +591,7 @@ nav:
                 - repositories-configure/local-analysis/running-aligncheck.md
                 - repositories-configure/local-analysis/running-deadcode.md
                 - repositories-configure/local-analysis/running-spotbugs.md
+                - repositories-configure/local-analysis/running-eslint.md
           - repositories-configure/using-submodules.md
           - repositories-configure/codacy-configuration-file.md
           - repositories-configure/removing-your-repository.md
@@ -601,6 +599,7 @@ nav:
           - organizations/what-are-organizations.md
           - organizations/organization-overview.md
           - organizations/managing-repositories.md
+          - organizations/segments.md
           - organizations/using-gate-policies.md
           - organizations/using-coding-standards.md
           - Managing integrations:
@@ -609,11 +608,13 @@ nav:
                 - Jira integration for Security and risk management: organizations/integrations/jira-integration.md
           - organizations/managing-security-and-risk.md
           - organizations/managing-people.md
+          - organizations/audit-logs-for-organizations.md
           - organizations/roles-and-permissions-for-organizations.md
           - organizations/changing-your-plan-and-billing.md
     - Your account:
           - account/managing-your-profile.md
           - account/emails.md
+          - account/user-session-management.md
     - Codacy API:
           - codacy-api/using-the-codacy-api.md
           - codacy-api/api-tokens.md
@@ -626,6 +627,7 @@ nav:
                 - codacy-api/examples/obtaining-code-quality-metrics-for-files.md
                 - codacy-api/examples/obtaining-current-issues-in-repositories.md
                 - codacy-api/examples/identifying-commits-without-coverage-data.md
+                - codacy-api/examples/uploading-dast-results.md
     - Managing Codacy Self-hosted: "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
@@ -636,6 +638,7 @@ nav:
                 - faq/general/how-does-codacy-support-bitbucket-server.md
                 - faq/general/how-does-codacy-keep-my-data-secure.md
                 - faq/general/how-does-codacy-protect-my-privacy.md
+                - faq/general/does-codacy-keep-audit-logs.md
                 - faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider.md
                 - faq/general/how-can-i-change-or-cancel-my-plan.md
           - Repositories:
@@ -664,6 +667,11 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2024:
+                      - release-notes/cloud/cloud-2024-09.md
+                      - release-notes/cloud/cloud-2024-09-adding-eslint9-and-pmd7.md
+                      - release-notes/cloud/cloud-2024-08.md
+                      - release-notes/cloud/cloud-2024-07.md
+                      - release-notes/cloud/cloud-2024-06.md
                       - release-notes/cloud/cloud-2024-05.md
                       - release-notes/cloud/cloud-2024-04.md
                       - release-notes/cloud/cloud-2024-03.md
@@ -732,6 +740,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v14:
+                      - release-notes/self-hosted/self-hosted-v14.0.0.md
                 - v13:
                       - release-notes/self-hosted/self-hosted-v13.0.0.md
                 - v12:

@@ -10,23 +10,26 @@ By default, the page lists the issues on the main branch of your repository but 
 ![Issues page](images/issues.png)
 
 <!--issue-details-start-->
-Click the title of an issue to see the following information:
+Click the title of an issue card to expand it and see the following information:
 
 -   The committer and date of the commit that introduced the issue, if available
 -   The estimated time to fix the issue
 -   What the issue is and how to solve it
 -   The [tool that reported the issue](../getting-started/supported-languages-and-tools.md) and the related code pattern
+-   Where's this pattern enabled: coding standard, repository rules, or configuration file
 <!--issue-details-end-->
 
 ![Issue details](images/issues-detail.png)
 
 ## Filtering issues
 
-Filter the list of issues to find specific issues, such as the issues with the highest severity or security issues:
+Filter the list of issues to find specific issues, such as the issues with the highest severity or security issues.
+
+The list of code patterns with issues is always visible on the left side of the page. Click a [code pattern](../repositories-configure/configuring-code-patterns.md) to filter the list of issues by that pattern.
 
 ![Filtering issues](images/issues-filter.png)
 
-You can define one or more of the following filters:
+You can moreover define one or more of the following filters:
 
 -   **Language:** Programming language of the file where the issues were detected
 
@@ -43,8 +46,6 @@ You can define one or more of the following filters:
         start="<!--issue-categories-start-->"
         end="<!--issue-categories-end-->"
     %}
-
--   **Pattern:** [Code pattern](../repositories-configure/configuring-code-patterns.md) that detected the issue
 
 -   **Author:** Commit author that introduced the issue on the code
 

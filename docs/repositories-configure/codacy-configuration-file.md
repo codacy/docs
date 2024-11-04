@@ -22,7 +22,10 @@ Codacy supports configuring certain advanced features through a configuration fi
 ## Using a Codacy configuration file
 
 !!! important
-    If your repository has a Codacy configuration file, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must [ignore files using the configuration file](#syntax-for-ignoring-files) instead.
+    -   If your repository has a Codacy configuration file, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must [ignore files using the configuration file](#syntax-for-ignoring-files) instead.
+    -   Codacy always uses the configuration file **in the default branch**. New settings added to the Codacy configuration file by a pull request are also considered for the pull request analysis, but the existing configuration in the default branch takes precedence.
+
+        For example, if a pull request removes an ignored path from the Codacy configuration file, any matching files will stay ignored until that pull request is merged into the default branch.
 
 To use a Codacy configuration file:
 
@@ -173,7 +176,7 @@ rubocop
 scalastyle
 semgrep
 shellcheck
-sonarscharp
+sonarcsharp
 sonarvb
 spectral
 SQLint

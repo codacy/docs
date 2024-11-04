@@ -18,6 +18,11 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2024
 
+-   [Cloud September 2024](cloud/cloud-2024-09.md)
+-   [Adding ESLint 9 and PMD 7 as new supported tools September, 2024](cloud/cloud-2024-09-adding-eslint9-and-pmd7.md)
+-   [Cloud August 2024](cloud/cloud-2024-08.md)
+-   [Cloud July 2024](cloud/cloud-2024-07.md)
+-   [Cloud June 2024](cloud/cloud-2024-06.md)
 -   [Cloud May 2024](cloud/cloud-2024-05.md)
 -   [Cloud April 2024](cloud/cloud-2024-04.md)
 -   [Cloud March 2024](cloud/cloud-2024-03.md)
@@ -99,6 +104,10 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Cloud July 23, 2018](cloud/cloud-2018-07-23.md)
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
+
+v14
+
+-   [v14.0.0](self-hosted/self-hosted-v14.0.0.md) (June 26, 2024)
 
 v13
 
