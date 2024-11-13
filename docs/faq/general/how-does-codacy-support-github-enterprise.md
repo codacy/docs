@@ -1,10 +1,8 @@
-# How does Codacy support GitHub Enterprise?
+# How does Codacy support GitHub Enterprise Cloud?
 
 When you use GitHub Enterprise to sign up or log into Codacy, the GitHub Enterprise organizations, that you belong to, will be available to be added as Organizations on Codacy.
 
-After connecting with your Enterprise account:
-
--  Codacy displays the list of all organizations that you have access to in that Enterprise, and you can add to start analysing its repositories or join it. 
+After connecting with your Enterprise account Codacy displays the list of all organizations that you have access to in that Enterprise, and you can add to start analysing its repositories or join it. 
 
 
 ## Limitations
