@@ -1,5 +1,7 @@
 # Changing your plan and billing
 
+[![Start Slack chat](./images/slack-banner-2x.png)](https://start-chat.com/slack/codacy/tKNKyy)
+
 Each organization on Codacy has a dedicated plan and associated billing. To make changes to the plan and billing of an organization, open your organization **Settings**, page **Plan and billing**.
 
 <!--plan-caveats-start-->
