@@ -632,6 +632,7 @@ nav:
     - Troubleshooting and FAQs:
           - General:
                 - faq/general/which-platforms-and-technologies-does-codacy-support.md
+                - /faq/general/how-does-codacy-support-github-enterprise.md
                 - faq/general/how-does-codacy-support-gitlab-cloud.md
                 - faq/general/how-does-codacy-support-gitlab-enterprise.md
                 - faq/general/how-does-codacy-support-bitbucket-cloud.md
