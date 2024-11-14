@@ -7,6 +7,8 @@ nav_step: 0
 
 Codacy is an automated code quality and coverage platform that analyzes your source code and identifies issues as you go, helping your team ship robust software by scanning over 40 programming languages, such as JavaScript, Python, Java, C#, and PHP.
 
+[![Start Slack chat](./images/slack-banner-2x.png)](https://start-chat.com/slack/codacy/tKNKyy)
+
 Check out our product demo for an overview of Codacy's main features (recorded on May 13, 2024):
 
 <div style="position: relative; padding-bottom: 61.224489795918366%; height: 0;"><iframe src="https://www.loom.com/embed/1ed27d66b659427883ddd28e57468c22" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
