@@ -28,7 +28,7 @@ jobs:
             ${{ github.event.issue.body }}
             ----
             {panel}
-            [Github permalink|${{ github.event.issue.html_url }}]
+            [GitHub permalink|${{ github.event.issue.html_url }}]
             {panel}
           fields: '{"customfield_10009": "DOCS-162", "labels": ["Quality"]}'
 
