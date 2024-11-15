@@ -10,7 +10,7 @@ Codacy automatically links to your Codacy account the email addresses from the G
 
 !!! notes
     - For **GitHub**, if you have [email privacy enabled](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/setting-your-commit-email-address?platform=mac#about-commit-email-addresses) on the provider, Codacy doesn't show your private emails and uses another available email address when displaying your personal details on lists, search filters, or activity.
-    - Codacy does not allow you to have one email associated with more than one GitHub account. You can manage your [associated emails in the provider GitHub](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account).
+    - Codacy doesn't allow you to have one email associated with more than one GitHub account. You can manage your [associated emails in the provider GitHub](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account).
 
 
 
