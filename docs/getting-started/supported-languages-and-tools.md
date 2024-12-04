@@ -758,7 +758,7 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <sup><span id="semgrep-brakeman">7</span></sup>: Due to licensing limitations, Codacy doesn't support the latest version of Brakeman. To analyze your Ruby code for the latest security vulnerabilities, use [Semgrep](https://semgrep.dev/), which provides comprehensive and up-to-date security scanning.  
 <sup><span id="swiftlint-complexity">8</span></sup>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html) on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code patterns page](../repositories-configure/configuring-code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration) to customize the thresholds.  
 <sup><span id="scala-dependencies">9</span></sup>: Requires the [sbt-dependency-lock](https://github.com/stringbean/sbt-dependency-lock) plugin for generating the lockfile.  
-<sup><span id="different-tools">10</span></sup>: Codacy may use a different version of this tool for measuring complexity and duplication.   
+<sup><span id="different-tools">10</span></sup>: Codacy may use a different version of this tool for measuring complexity and duplication.  
 <sup><span id="suggest-fixes">🔧</span></sup>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
 
 ## See also
