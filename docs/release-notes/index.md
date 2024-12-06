@@ -18,6 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2024
 
+-   [Cloud November 2024](cloud/cloud-2024-11.md)
 -   [Cloud October 2024](cloud/cloud-2024-10.md)
 -   [Cloud September 2024](cloud/cloud-2024-09.md)
 -   [Adding ESLint 9 and PMD 7 as new supported tools September, 2024](cloud/cloud-2024-09-adding-eslint9-and-pmd7.md)
