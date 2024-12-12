@@ -15,4 +15,4 @@ Currently, the integration between Codacy and GitHub Enterprise has the followin
 
 ## See also
 
--   [How to manage your GitHub Enterprise organization](../enterprise-cloud/github-enterprise-cloud.md)
+-   [How to manage your GitHub Enterprise organization](../../enterprise-cloud/github-enterprise-cloud.md)
