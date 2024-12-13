@@ -7,10 +7,16 @@ After connecting with your Enterprise account Codacy displays the list of all or
 ### GitHub Enterprise types
 Codacy supports both [GitHub Enterprises types](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/choosing-an-enterprise-type-for-github-enterprise-cloud), Managed Users and Personal Accounts.
 
+## Access your Enterprises 
+Access Management > token BOOOM 
+![Enterprise cloud manage enterprises access](images/Codacy-Access-Management.png)
+![Enterprise cloud revoke access to enterprises](images/Codacy-Access-Management-revoke.png)
+![Enterprise cloud approave revoke access to enterprises](images/Codacy-Access-Management-revoke-approval.png)
+
 
 ## Manage your Enterprises 
 Once signed up or log with your GitHub enterprise account, navigate to your Enterprises area. There you can manage the git Enterprises that are in Codacy, as well its organizations and seats management. 
-![Enterprise cloud manage eterprises](images/Codacy-Enterprises.png)
+![Enterprise cloud manage enterprises](images/Codacy-Enterprises.png)
 
 ## Manage Enterprise organizations
 Once you select the Enterprise organization, you will see its list of organizations. 
