@@ -10,13 +10,15 @@ Codacy supports both [GitHub Enterprises types](https://docs.github.com/en/enter
 
 ## Manage your Enterprises 
 Once signed up or log with your GitHub enterprise account, navigate to your Enterprises area. There you can manage the git Enterprises that are in Codacy, as well its organizations and seats management. 
+![Enterprise cloud manage eterprises](images/Codacy-Enterprises.png)
 
 ## Manage Enterprise organizations
 Once you select the Enterprise organization, you will see its list of organizations. 
+![Enterprise cloud manage organizations](images/Codacy-Enterprise-Organizations.png)
 
 ## Manage Seats
 View seats and its activity in your Codacy Enterprise.
-
+![Enterprise cloud manage seats](images/Codacy-Enterprise-Seats.png)
 
 ## Limitations
 Currently, the integration between Codacy and GitHub Enterprise has the following limitations:
