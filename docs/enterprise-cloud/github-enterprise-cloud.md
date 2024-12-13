@@ -1,14 +1,19 @@
 # GitHub Enterprise Cloud
 
-When you use GitHub Enterprise to sign up or log into Codacy, the GitHub Enterprise organizations, that you belong to, will be available to be added as Organizations on Codacy.
+Use your GitHub Enterprise credentials when signup or login to Codacy and all your GitHub Enterprise organizations that you belong to, will be available to be added as Organizations on Codacy.
 
-After connecting with your Enterprise account Codacy displays the list of all organizations that you have access to in that Enterprise, and you can add to start analysing its repositories or join it. 
+Codacy also has a dedicated Enterprise area where GitHub Enterprise admins and owners of the enterprise will be able to manage them.
 
 ### GitHub Enterprise types
 Codacy supports both [GitHub Enterprises types](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/choosing-an-enterprise-type-for-github-enterprise-cloud), Managed Users and Personal Accounts.
 
 ## Access cloud Enterprises 
-Access you enterprises in codacy by setting up its integration. In codacy app, click on your avatar image, in the top right corner, then navigate throught "My account" and "Access management". There, you'll be able to add a **GitHub Enterprise Cloud** access token. Once generated and added in Codacy you will start seeing all infomration you have access to regarding your cloud enterprises. 
+Access you enterprises in Codacy by setting up its integration:
+1. In codacy app, click on your avatar image, in the top right corner
+2. then navigate throught "My account" and "Access management"
+3. There, you'll be able to add a **GitHub Enterprise Cloud** access token. 
+
+Once generated and added in Codacy you will start seeing all infomration you have access to regarding your cloud enterprises. 
 You can revoke the cloud enterpises access at any time in the same place.
 ![Enterprise cloud manage enterprises access](images/Codacy-Access-Management.png)
 
@@ -18,20 +23,22 @@ You can revoke the cloud enterpises access at any time in the same place.
 - [Seats management](#seats)
 - [Enterprise Limitations](#limitations)
 
+Once signup or login with your GitHub Enterprise credentials and, [setup access to could enterprises](#Access-cloud-Enterprises), navigate to your Enterprises area to manage your enterprises in Codacy, as well its organizations and seats management. 
 
-Once signed up or login with your GitHub enterprise account and, settingup access to could enterprises (LINK TO ABOVE), navigate to your Enterprises area. There you can manage the git Enterprises that are in Codacy, as well its organizations and seats management. 
-
-!!! note If you only have one Enterprise, Codacy will skip this screen and directs you to the Enterprise organizations list. 
+!!! note If you only have one Enterprise, Codacy will skip this screen and directs you to the [enterprise organizations list](#enterprise-organizations-list). 
 
 ![Enterprise cloud manage enterprises](images/Codacy-Enterprises.png)
 
 ### Enterprise organizations list
-View a enterprise organization and access its list of organizations. 
+Choose to view a enterprise and access its list of existing organizations, that you have access to.
 ![Enterprise cloud manage organizations](images/Codacy-Enterprise-Organizations.png)
 
 ### Seats
-View and export your enterprise seats and its activity.
-![Enterprise cloud manage seats](images/Codacy-Enterprise-Seats.png)
+View and export your enterprise seats and its activity by:
+1. Choose and view an enterprise organization
+2. Navigate to **People** on the left-handside navigation
+3. View, search and export the list of author seats
+!!! note Codacy members will not be part of this list, only authors, users that have dome commits. 
 
 ### Limitations
 Currently, the integration between Codacy and GitHub Enterprise has the following limitations:
