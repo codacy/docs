@@ -611,6 +611,8 @@ nav:
           - organizations/audit-logs-for-organizations.md
           - organizations/roles-and-permissions-for-organizations.md
           - organizations/changing-your-plan-and-billing.md
+    - Enterprise Cloud:
+          - enterprise-cloud/github-enterprise-cloud.md
     - Your account:
           - account/managing-your-profile.md
           - account/emails.md
