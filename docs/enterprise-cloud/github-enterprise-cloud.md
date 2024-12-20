@@ -23,7 +23,7 @@ You can revoke the cloud enterpises access at any time in the same place.
 - [Seats management](#seats)
 - [Enterprise Limitations](#limitations)
 
-Once signup or login with your GitHub Enterprise credentials and, [setup access to could enterprises](#Access-cloud-Enterprises), navigate to your Enterprises area to manage your enterprises in Codacy, as well its organizations and seats management. 
+Once signup or login with your GitHub Enterprise credentials and, [setup access to could enterprises](#access-cloud-Enterprises), navigate to your Enterprises area to manage your enterprises in Codacy, as well its organizations and seats management. 
 
 !!! note If you only have one Enterprise, Codacy will skip this screen and directs you to the [enterprise organizations list](#enterprise-organizations-list). 
 
