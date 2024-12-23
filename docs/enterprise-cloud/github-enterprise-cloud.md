@@ -9,6 +9,7 @@ Codacy supports both [GitHub Enterprises types](https://docs.github.com/en/enter
 
 ## Access cloud Enterprises 
 Access you enterprises in Codacy by setting up its integration:
+
 1. In codacy app, click on your avatar image, in the top right corner
 2. then navigate throught "My account" and "Access management"
 3. There, you'll be able to add a **GitHub Enterprise Cloud** access token. 
@@ -35,10 +36,13 @@ Choose to view a enterprise and access its list of existing organizations, that 
 
 ### Seats
 View and export your enterprise seats and its activity by:
+
 1. Choose and view an enterprise organization
 2. Navigate to **People** on the left-handside navigation
 3. View, search and export the list of author seats
+
 !!! note Codacy members will not be part of this list, only authors, users that have dome commits. 
+Only Enterprise **Owners** or **Admins** will b able to view and export the list of authors. 
 
 ### Limitations
 Currently, the integration between Codacy and GitHub Enterprise has the following limitations:
