@@ -44,7 +44,7 @@ View and export your enterprise seats and its activity by:
 
 !!! note 
     - Codacy members will not be part of this list, only authors, users that have dome commits. 
-    - Only Enterprise **Owners** or **Admins** will b able to view and export the list of authors. 
+    - Only Enterprise **Owners** or **Admins** will be able to view and export the list of authors. 
 
 ### Limitations
 Currently, the integration between Codacy and GitHub Enterprise has the following limitations:
