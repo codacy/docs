@@ -11,8 +11,8 @@ Codacy supports both [GitHub Enterprises types](https://docs.github.com/en/enter
 Access you enterprises in Codacy by setting up its integration:
 
 1. In codacy app, click on your avatar image, in the top right corner
-2. then navigate throught "My account" and "Access management"
-3. There, you'll be able to add a **GitHub Enterprise Cloud** access token. 
+1. then navigate throught "My account" and "Access management"
+1. There, you'll be able to add a **GitHub Enterprise Cloud** access token. 
 
 Once generated and added in Codacy you will start seeing all infomration you have access to regarding your cloud enterprises. 
 You can revoke the cloud enterpises access at any time in the same place.
@@ -26,7 +26,8 @@ You can revoke the cloud enterpises access at any time in the same place.
 
 Once signup or login with your GitHub Enterprise credentials and, [setup access to could enterprises](#access-cloud-enterprises), navigate to your Enterprises area to manage your enterprises in Codacy, as well its organizations and seats management. 
 
-!!! note If you only have one Enterprise, Codacy will skip this screen and directs you to the [enterprise organizations list](#enterprise-organizations-list). 
+!!! note 
+    If you only have one Enterprise, Codacy will skip this screen and directs you to the [enterprise organizations list](#enterprise-organizations-list). 
 
 ![Enterprise cloud manage enterprises](images/Codacy-Enterprises.png)
 
@@ -38,11 +39,12 @@ Choose to view a enterprise and access its list of existing organizations, that 
 View and export your enterprise seats and its activity by:
 
 1. Choose and view an enterprise organization
-2. Navigate to **People** on the left-handside navigation
-3. View, search and export the list of author seats
+1. Navigate to **People** on the left-handside navigation
+1. View, search and export the list of author seats
 
-!!! note Codacy members will not be part of this list, only authors, users that have dome commits. 
-Only Enterprise **Owners** or **Admins** will b able to view and export the list of authors. 
+!!! note 
+    - Codacy members will not be part of this list, only authors, users that have dome commits. 
+    - Only Enterprise **Owners** or **Admins** will b able to view and export the list of authors. 
 
 ### Limitations
 Currently, the integration between Codacy and GitHub Enterprise has the following limitations:
