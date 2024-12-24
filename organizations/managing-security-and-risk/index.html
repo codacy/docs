@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2024-11-04 13:40:26">
+        <meta http-equiv="last-modified" content="2024-12-24 16:12:08">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -1076,6 +1076,13 @@
         <li class="md-nav__item">
   <a href="#languages-checked-for-security-issues" class="md-nav__link">
     Languages checked for security issues
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dependencies-list" class="md-nav__link">
+    Dependencies
   </a>
   
 </li>
@@ -4421,6 +4428,7 @@
 <ul>
 <li><a href="#dashboard">Overview</a></li>
 <li><a href="#item-list">Findings</a></li>
+<li><a href="#dependencies-list">Dependencies</a></li>
 </ul>
 <p>In addition, on these pages, you can <a href="#sharing-filtered-view">share filtered views of findings</a>, <a href="#exporting-the-security-item-list">export findings as a CSV file</a>, and <a href="#reviewing-settings">review severity rules and integration settings</a></p>
 <h2 id="dashboard">Overview<a class="headerlink" href="#dashboard" title="Permanent link">#</a></h2>
@@ -4978,6 +4986,18 @@ Note that some issues just don't have a security category. These issues will rem
   </tbody>
 </table>
 
+<h2 id="dependencies-list">Dependencies<a class="headerlink" href="#dependencies-list" title="Permanent link">#</a></h2>
+<p>The <strong>Security and risk management dependencies</strong> page displays a unified view of all dependencies used by your repositories. </p>
+<p>To access the dependencies page, access the <a href="#dashboard">overview page</a> and click the <strong>Findings</strong> tab.</p>
+<p><img alt="Security and risk management dependencies page" src="../images/security-risk-management-dependencies-list.png" /></p>
+<p>When viewing dependencies, you'll be presented with a list of the dependencies used by all repositories in your organization. For each dependency, you'll be able to see how many repositories are making use of it, how many different versions you are using across all repositories, and how many security findings were found due to the presence of that dependency.</p>
+<p>You're also able to click any dependency to find out more information about it.</p>
+<p><img alt="Security and risk management dependency page" src="../images/security-risk-management-dependencies-single.png" /></p>
+<p>The dependency overview page offers a quick birds-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license applied to any particular version of that dependency.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The dependency explorer is a timed business-tier feature! We'll be releasing it to every Pro user in the near future, but if in the meanwhile you want to learn about it, and other business features we're offering or have planned <a href="https://www.codacy.com/pricing">get in touch with us</a>!</p>
+</div>
 <p><sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for <a href="https://semgrep.dev/pricing/">Semgrep Pro</a>.<br />
 <sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.<br />
 <sup><span id="client-side">3</span></sup>: Supported as a <a href="../../repositories-configure/local-analysis/client-side-tools/">client-side tool</a>.<br />
@@ -5139,7 +5159,7 @@ Note that some issues just don't have a security category. These issues will rem
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 4, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 24, 2024</span>
     
   </small>
 </div>
