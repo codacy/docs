@@ -6,6 +6,7 @@ Under Security and risk management, you can find the following pages to help you
 
 -   [Overview](#dashboard)
 -   [Findings](#item-list)
+-   [Dependencies](#dependencies-list)
 
 In addition, on these pages, you can [share filtered views of findings](#sharing-filtered-view), [export findings as a CSV file](#exporting-the-security-item-list), and [review severity rules and integration settings](#reviewing-settings)
 
@@ -513,6 +514,27 @@ Security and risk management supports checking the languages and infrastructure-
     </tr>
   </tbody>
 </table>
+
+## Dependencies {: id="dependencies-list"}
+
+The **Security and risk management dependencies** page displays a unified view of all dependencies used by your repositories. 
+
+To access the dependencies page, access the [overview page](#dashboard) and click the **Findings** tab.
+
+![Security and risk management dependencies page](images/security-risk-management-dependencies-list.png)
+
+When viewing dependencies, you'll be presented with a list of the dependencies used by all repositories in your organization. For each dependency, you'll be able to see how many repositories are making use of it, how many different versions you are using across all repositories, and how many security findings were found due to the presence of that dependency.
+
+You're also able to click any dependency to find out more information about it.
+
+![Security and risk management dependency page](images/security-risk-management-dependencies-single.png)
+
+ The dependency overview page offers a quick birds-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license applied to any particular version of that dependency.
+
+!!! important
+    The dependency explorer is a timed business-tier feature! We'll be releasing it to every Pro user in the near future, but if in the meanwhile you want to learn about it, and other business features we're offering or have planned [get in touch with us](https://www.codacy.com/pricing)!
+
+
 
 <sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/).  
 <sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.  
