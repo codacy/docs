@@ -13,7 +13,7 @@ To list and manage the people in your organization, open your organization **Set
 
 !!! note "In some Enterprise plans"
     - Codacy automatically assigns a seat to any person with at least one analyzed commit to your private repositories over the past 90 days and frees up the seat after 90 days of code analysis inactivity.
-    - **Members** are people that signup and joined an Organization in Codacy, and **Authors** are people that contribuit to code changes. It can happen that Authors are not Codacy Members. 
+    - **Members** are people that signup and joined an Organization in Codacy, and **Authors** are people that contribuite to code changes. It can happen that Authors aren't Codacy Members. 
 
 ![People in an organization](images/organization-people.png)
 
