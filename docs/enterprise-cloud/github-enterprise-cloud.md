@@ -43,7 +43,8 @@ View and export your enterprise seats and its activity by:
 1. View, search and export the list of author seats
 
 !!! note 
-    - Codacy members will not be part of this list, only authors, users that have dome commits. 
+    - Codacy members will not be part of this list, only authors, users that have done commits. 
+    - In some Enterprise plans, **Members** are people that signup and joined an Organization in Codacy, and **Authors** are people that contribuit to code changes. It can happen that Authors are not Codacy Members. 
     - Only Enterprise **Owners** or **Admins** will be able to view and export the list of authors. 
 
 ### Limitations
