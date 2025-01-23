@@ -88,7 +88,7 @@ To access the findings page with the corresponding filter applied, click on a ca
 
 ## Findings {: id="item-list"}
 
-The **Security and risk management findings** page displays a filtered list of findings. By default, you are shown the findings that are currently opened and this list is sorted by **Latest findings** found. You can click on the sort dropdown to sort the findings by detection date - latest or oldest - or by highest status. Use this page to review and prioritize findings and track the progress of your security efforts.
+The **Security and risk management findings** page displays a filtered list of findings. By default, you are shown the findings that are currently opened and this list is sorted by **Latest findings** found. You can click on the sort dropdown to sort the findings by detection date - latest or oldest. Use this page to review and prioritize findings and track the progress of your security efforts.
 
 To access the findings page, access the [overview page](#dashboard) and click the **Findings** tab.
 
