@@ -88,18 +88,18 @@ To access the findings page with the corresponding filter applied, click on a ca
 
 ## Findings {: id="item-list"}
 
-The **Security and risk management findings** page displays a filtered list of findings. By default, this list is sorted by status, and you can click the **First detected** column name to sort the findings by the detection date. Use this page to review and prioritize findings and track the progress of your security efforts.
+The **Security and risk management findings** page displays a filtered list of findings. By default, you are shown the findings that are currently opened and this list is sorted by **Latest findings** found. You can click on the sort dropdown to sort the findings by detection date - latest or oldest - or by highest status. Use this page to review and prioritize findings and track the progress of your security efforts.
 
 To access the findings page, access the [overview page](#dashboard) and click the **Findings** tab.
 
 ![Security and risk management findings page](images/security-risk-management-findings.png)
 
-When viewing the findings, you can update the filtering criteria by clicking the  [**Segments**](../segments) , **Repository**, **Severity**, **Status**,  **Security category**, or **Scan type** drop-downs above the list.
+On the left section of the page, besides sorting, you can update the filtering criteria by clicking the  [**Segments**](../segments) , **Repositories**, **Severities**, **Statuses**,  **Security categories**, or **Scan types** dropdowns above the list.
 !!! info "Check out how to [enable and configure **Segments**](../segments/#enabling-segments)"
 
-The **Details** column offers a quick overview of each finding in the list, including its title, [source platform](#opening-and-closing-items), [scan type](#scan-types), [security category](#supported-security-categories), and related information such as the repository name, Jira issue key, or penetration testing report URL. To find out more, click this overview to navigate to the finding details on the source platform.
+On the right section, you can view the filtered list of findings. Each finding card offers a quick overview of the vulnerability found, including its title, [source platform](#opening-and-closing-items), [scan type](#scan-types), [security category](#supported-security-categories), and related information such as the repository name, Jira issue key, or affected URL targets. To find out more, click this overview to navigate to the finding details on the source platform.
 
-![Security and risk management finding details](images/security-risk-management-finding-details.png)
+![Security and risk management finding page](images/security-risk-management-finding-details.png)
 
 ## Sharing a filtered view of findings {: id="sharing-filtered-view"}
 
@@ -111,7 +111,7 @@ To share the current view of the overview or findings page, click the **Copy URL
 
 !!! info "This feature is available only to organization admins and organization managers except for findings detected on [Git repositories](#opening-and-closing-items). For those findings, [repository permissions are respected](../repositories/issues.md#ignoring-and-managing-issues)"
 
-On the finding's details page, you can ignore a finding using the context menu. When ignoring a finding you can optionally specify a reason for doing so.
+You can ignore a finding using the context menu both in the findings list page and the findings details page. When ignoring a finding you can optionally specify a reason for doing so.
 
 ![Security and risk management finding ignore](images/security-risk-management-finding-ignore.png)
 
@@ -123,11 +123,11 @@ From Codacy's standpoint, ignoring a finding means it will be removed from the m
 
 !!! Important "Ignoring findings detected on [Git repositories](#opening-and-closing-items) will also [ignore the issue at the repository level](../repositories/issues.md#ignoring-and-managing-issues)."
 
-You can still see **Ignored** findings in the [findings list](#item-list), by filtering for the **Ignored** status in the **Status** dropdown. Check the **Status** column to know the status of a finding.
+You can still see **Ignored** findings in the [findings list](#item-list), by filtering for the **Ignored** status in the **Statuses** dropdown. You can assess which status a finding has at his overview, on the right top corner.
 
 ![Security and risk management finding unignore list](images/security-risk-management-finding-unignore-list.png)
 
-An Ignored finding can be **unignored** directly from the [findings list](#item-list) or by going to the same menu where the ignore action was performed, in the findings details page. Note that in this page you can also find out more about who ignored the finding and why, if such a reason was provided.
+An Ignored finding can be **unignored** directly from the [findings list](#item-list) or by going to the same menu in the finding details page. Note that in this page you can also find out more about who ignored the finding and why, if such a reason was provided.
 
 Unignoring a finding reverts the effects of ignoring it.
 
