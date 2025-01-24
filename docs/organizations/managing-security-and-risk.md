@@ -208,7 +208,7 @@ Codacy closes a finding when it detects that the associated Jira issue is marked
 ### How Codacy manages findings detected during penetration testing {: id="opening-and-closing-pen-testing-items"}
 
 !!! note
-    Penetration testing is available upon request and is provided by a third-party partner. See [how to request penetration testing for your organization](https://go.codacy.com/pen-testing-product).
+    Penetration testing is available upon request and is provided by a third-party partner. See [how to request penetration testing for your organization](https://www.codacy.com/security).
 
 Codacy opens a finding for each security issue detected during a penetration test.
 
