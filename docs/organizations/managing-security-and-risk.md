@@ -1,6 +1,6 @@
 # Managing security and risk
 
-The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your [connected Jira instance](./integrations/jira-integration.md), or <span class="skip-vale">as a result of</span> [penetration testing](https://go.codacy.com/pen-testing-product).
+The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your [connected Jira instance](./integrations/jira-integration.md), or <span class="skip-vale">as a result of</span> [penetration testing](https://www.codacy.com/security).
 
 Under Security and risk management, you can find the following pages to help you monitor the security of your repositories:
 
@@ -208,7 +208,7 @@ Codacy closes a finding when it detects that the associated Jira issue is marked
 ### How Codacy manages findings detected during penetration testing {: id="opening-and-closing-pen-testing-items"}
 
 !!! note
-    Penetration testing is available upon request and is provided by a third-party partner. See [how to request penetration testing for your organization](https://go.codacy.com/pen-testing-product).
+    Penetration testing is available upon request and is provided by a third-party partner. See [how to request penetration testing for your organization](https://www.codacy.com/security).
 
 Codacy opens a finding for each security issue detected during a penetration test.
 
