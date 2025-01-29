@@ -517,6 +517,10 @@ Security and risk management supports checking the languages and infrastructure-
 
 ## Dependencies {: id="dependencies-list"}
 
+!!! important
+    The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, contact our customer success team.
+
+
 The **Security and risk management dependencies** page displays a unified view of all dependencies used by your repositories. 
 
 To access the dependencies page, access the [overview page](#dashboard) and click the **Findings** tab.
@@ -530,10 +534,6 @@ You're also able to click any dependency to find out more information about it.
 ![Security and risk management dependency page](images/security-risk-management-dependencies-single.png)
 
  The dependency overview page offers a quick birds-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license applied to any particular version of that dependency.
-
-!!! important
-    The dependency explorer is a timed business-tier feature! We'll be releasing it to every Pro user in the near future, but if in the meanwhile you want to learn about it, and other business features we're offering or have planned [get in touch with us](https://www.codacy.com/pricing)!
-
 
 
 <sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/).  
