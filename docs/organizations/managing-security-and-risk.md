@@ -1,6 +1,6 @@
 # Managing security and risk
 
-The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your [connected Jira instance](./integrations/jira-integration.md), or <span class="skip-vale">as a result of</span> [penetration testing](https://go.codacy.com/pen-testing-product).
+The Security and risk management feature helps you <span class="skip-vale">quickly</span> identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your [connected Jira instance](./integrations/jira-integration.md), or <span class="skip-vale">as a result of</span> [penetration testing](https://www.codacy.com/security).
 
 Under Security and risk management, you can find the following pages to help you monitor the security of your repositories:
 
@@ -88,18 +88,18 @@ To access the findings page with the corresponding filter applied, click on a ca
 
 ## Findings {: id="item-list"}
 
-The **Security and risk management findings** page displays a filtered list of findings. By default, this list is sorted by status, and you can click the **First detected** column name to sort the findings by the detection date. Use this page to review and prioritize findings and track the progress of your security efforts.
+The **Security and risk management findings** page displays a filtered list of findings. By default, you are shown the findings that are currently opened and this list is sorted by **Latest findings** found. You can click on the sort dropdown to sort the findings by detection date - latest or oldest. Use this page to review and prioritize findings and track the progress of your security efforts.
 
 To access the findings page, access the [overview page](#dashboard) and click the **Findings** tab.
 
 ![Security and risk management findings page](images/security-risk-management-findings.png)
 
-When viewing the findings, you can update the filtering criteria by clicking the  [**Segments**](../segments) , **Repository**, **Severity**, **Status**,  **Security category**, or **Scan type** drop-downs above the list.
+On the left section of the page, besides sorting, you can update the filtering criteria by clicking the  [**Segments**](../segments) , **Repositories**, **Severities**, **Statuses**,  **Security categories**, or **Scan types** dropdowns above the list.
 !!! info "Check out how to [enable and configure **Segments**](../segments/#enabling-segments)"
 
-The **Details** column offers a quick overview of each finding in the list, including its title, [source platform](#opening-and-closing-items), [scan type](#scan-types), [security category](#supported-security-categories), and related information such as the repository name, Jira issue key, or penetration testing report URL. To find out more, click this overview to navigate to the finding details on the source platform.
+On the right section, you can view the filtered list of findings. Each finding card offers a quick overview of the vulnerability found, including its title, [source platform](#opening-and-closing-items), [scan type](#scan-types), [security category](#supported-security-categories), and related information such as the repository name, Jira issue key, or affected URL targets. To find out more, click this overview to navigate to the finding details on the source platform.
 
-![Security and risk management finding details](images/security-risk-management-finding-details.png)
+![Security and risk management finding page](images/security-risk-management-finding-details.png)
 
 ## Sharing a filtered view of findings {: id="sharing-filtered-view"}
 
@@ -111,7 +111,7 @@ To share the current view of the overview or findings page, click the **Copy URL
 
 !!! info "This feature is available only to organization admins and organization managers except for findings detected on [Git repositories](#opening-and-closing-items). For those findings, [repository permissions are respected](../repositories/issues.md#ignoring-and-managing-issues)"
 
-On the finding's details page, you can ignore a finding using the context menu. When ignoring a finding you can optionally specify a reason for doing so.
+You can ignore a finding using the context menu both in the findings list page and the findings details page. When ignoring a finding you can optionally specify a reason for doing so.
 
 ![Security and risk management finding ignore](images/security-risk-management-finding-ignore.png)
 
@@ -123,11 +123,11 @@ From Codacy's standpoint, ignoring a finding means it will be removed from the m
 
 !!! Important "Ignoring findings detected on [Git repositories](#opening-and-closing-items) will also [ignore the issue at the repository level](../repositories/issues.md#ignoring-and-managing-issues)."
 
-You can still see **Ignored** findings in the [findings list](#item-list), by filtering for the **Ignored** status in the **Status** dropdown. Check the **Status** column to know the status of a finding.
+You can still see **Ignored** findings in the [findings list](#item-list), by filtering for the **Ignored** status in the **Statuses** dropdown. You can assess which status a finding has at his overview, on the right top corner.
 
 ![Security and risk management finding unignore list](images/security-risk-management-finding-unignore-list.png)
 
-An Ignored finding can be **unignored** directly from the [findings list](#item-list) or by going to the same menu where the ignore action was performed, in the findings details page. Note that in this page you can also find out more about who ignored the finding and why, if such a reason was provided.
+An Ignored finding can be **unignored** directly from the [findings list](#item-list) or by going to the same menu in the finding details page. Note that in this page you can also find out more about who ignored the finding and why, if such a reason was provided.
 
 Unignoring a finding reverts the effects of ignoring it.
 
@@ -208,7 +208,7 @@ Codacy closes a finding when it detects that the associated Jira issue is marked
 ### How Codacy manages findings detected during penetration testing {: id="opening-and-closing-pen-testing-items"}
 
 !!! note
-    Penetration testing is available upon request and is provided by a third-party partner. See [how to request penetration testing for your organization](https://go.codacy.com/pen-testing-product).
+    Penetration testing is available upon request and is provided by a third-party partner. See [how to request penetration testing for your organization](https://www.codacy.com/security).
 
 Codacy opens a finding for each security issue detected during a penetration test.
 
@@ -517,6 +517,10 @@ Security and risk management supports checking the languages and infrastructure-
 
 ## Dependencies {: id="dependencies-list"}
 
+!!! important
+    The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, contact our customer success team.
+
+
 The **Security and risk management dependencies** page displays a unified view of all dependencies used by your repositories. 
 
 To access the dependencies page, access the [overview page](#dashboard) and click the **Findings** tab.
@@ -530,10 +534,6 @@ You're also able to click any dependency to find out more information about it.
 ![Security and risk management dependency page](images/security-risk-management-dependencies-single.png)
 
  The dependency overview page offers a quick birds-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license applied to any particular version of that dependency.
-
-!!! important
-    The dependency explorer is a timed business-tier feature! We'll be releasing it to every Pro user in the near future, but if in the meanwhile you want to learn about it, and other business features we're offering or have planned [get in touch with us](https://www.codacy.com/pricing)!
-
 
 
 <sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/).  
