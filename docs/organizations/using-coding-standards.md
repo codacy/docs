@@ -167,6 +167,8 @@ Tools and patterns enabled by a coding standard are enforced and cannot be disab
 
 When Codacy analyzes your code using multiple coding standards, it merges the tools and patterns from each standard. Enabled tools and patterns in any applied standard will be enforced.
 
+When building your coding standards, think about the structure you'd like to apply, not only for you, but the rest of your team. You can structure standards by frameworks, languages, teams, ....
+
 !!! important
     If the same pattern appears in multiple standards, the version from the most recently created and applied standard (with its parameters) takes precedence.
 
