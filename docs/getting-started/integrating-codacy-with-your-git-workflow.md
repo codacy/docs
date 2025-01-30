@@ -49,7 +49,7 @@ Make sure you enable the option **Status checks** ([GitHub](../repositories-conf
 
 ## 3. Blocking merging pull requests (optional) {: id="blocking-pull-requests"}
 
-Once you've tested out Codacy for a while and you're happy with the level of feedback provided, you can decide to enforce the quality gates and use Codacy to block merging pull requests on your Git provider. This is the best way to protect your code from unwelcome changes and fully integrates code quality and coverage analysis into your development pipeline.
+Once you've tested out Codacy for a while and you're happy with the level of feedback provided, you can decide to enforce the quality gates and use Codacy to block merging pull requests on your Git provider. This is the best way to protect your code from unwelcome changes and fully integrate code quality and coverage analysis into your development pipeline.
 
 !!! important
     To eliminate any false positives that could inadvertently block the work of your team, it's important that before activating this feature you:
@@ -62,6 +62,12 @@ Follow the instructions from your Git provider to block merging pull requests if
 -   **GitHub:** [set Codacy as a required status check](https://docs.github.com/en/repositories/configuring-branches-and-merges-in-your-repository/defining-the-mergeability-of-pull-requests/managing-a-branch-protection-rule)
 -   **GitLab:** [only allow merge requests to be merged if the pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds)
 -   **Bitbucket:** [configure Bitbucket to prevent a merge with unresolved merge checks](https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/)
+
+Codacy sends three different status checks to Git providers for increased granularity and customization: **quality metrics, coverage variation, and diff coverage**. These checks help you protect your repositories by indicating whether the main branch is fully, partially, or not protected:  
+
+-  **Protected**: All configured gates are required status checks in your Git provider.  
+-  **Partially Protected**: Some configured gates are required status checks in your Git provider.  
+-  **Not Protected**: None of the configured gates are required status checks in your Git provider.
 
 ## You're all set! 🎉
 
