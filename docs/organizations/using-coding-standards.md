@@ -165,12 +165,24 @@ Tools and patterns enabled by a coding standard are enforced and cannot be disab
 
 ## Using multiple coding standards {: id="using-multiple"}
 
-When Codacy analyzes your code using multiple coding standards, it merges the tools and patterns from each standard. Enabled tools and patterns in any applied standard will be enforced.
+When Codacy analyzes your code using multiple coding standards, it merges the tools and patterns from each standard.
 
-When building your coding standards, think about the structure you'd like to apply, not only for you, but the rest of your team. You can structure standards by frameworks, languages, teams, ....
+A common strategy is to start with a baseline standard containing fundamental rules that apply across all repositories, then layer additional standards based on specific needs. You can organize these additional standards by:
+
+- **Topics**: for example, security, performance, or maintainability.
+- **Architecture**: for example, backend, frontend, APIs
+- **Languages or frameworks**: for example, React, Java or Python
+- **Teams or tribes**: Allow different teams or tribes to maintain their own standards while inheriting organization-wide rules
+
+![Coding standards strategies](images/coding-standard-strategy.png)
+
+!!! note
+    You can apply up to 10 coding standards to your organization. Standards can overlap, meaning a single repository can follow multiple standards simultaneously.
 
 !!! important
     If the same pattern appears in multiple standards, the version from the most recently created and applied standard (with its parameters) takes precedence.
+
+Individual repositories can have their own specific overrides on top of the applied coding standards through additional code patterns, custom tool configurations, or local configuration files.
 
 ## See also
 
