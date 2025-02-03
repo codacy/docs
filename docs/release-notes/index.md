@@ -18,7 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2025
 
--   [Cloud December 2024](cloud/cloud-2025-01.md)
+-   [Cloud January 2025](cloud/cloud-2025-01.md)
 
 2024
 
