@@ -169,10 +169,10 @@ When Codacy analyzes your code using multiple coding standards, it merges the to
 
 A common strategy is to start with a baseline standard containing fundamental rules that apply across all repositories, then layer additional standards based on specific needs. You can organize these additional standards by:
 
-- **Topics**: for example, security, performance, or maintainability.
-- **Architecture**: for example, backend, frontend, APIs
-- **Languages or frameworks**: for example, React, Java or Python
-- **Teams or tribes**: Allow different teams or tribes to maintain their own standards while inheriting organization-wide rules
+- **Topics:** for example, security, performance, or maintainability
+- **Architecture:** for example, backend, frontend, APIs
+- **Languages or frameworks:** for example, React, Java or Python
+- **Teams or tribes:** Allow different teams or tribes to maintain their own standards while inheriting organization-wide rules
 
 ![Coding standards strategies](images/coding-standard-strategy.png)
 
@@ -182,7 +182,12 @@ A common strategy is to start with a baseline standard containing fundamental ru
 !!! important
     If the same pattern appears in multiple standards, the version from the most recently created and applied standard (with its parameters) takes precedence.
 
-Individual repositories can have their own specific overrides on top of the applied coding standards through additional code patterns, custom tool configurations, or local configuration files.
+### Implementation guidelines {: id="standards-implementation"}
+Consider these points when implementing coding standards:
+
+- **Keep maintenance simple:** Minimize overlap between standards and establish clear ownership to reduce maintenance complexity
+- **Manage access:** Assign organization managers or Git provider admin roles to users who should manage (create, edit and delete) organization-level standards (learn more in [Roles and Permissions](./roles-and-permissions-for-organizations.md/#managing-the-organization-manager-role))
+- **Be mindful of repository customization:** Individual repositories can have their own specific overrides through additional code patterns, custom tool configurations, or local configuration files
 
 ## See also
 
