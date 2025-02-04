@@ -170,7 +170,7 @@ When Codacy analyzes your code using multiple coding standards, it merges the to
 A common strategy is to start with a baseline standard containing fundamental rules that apply across all repositories, then layer additional standards based on specific needs. You can organize these additional standards by:
 
 - **Topics:** for example, security, performance, or maintainability
-- **Architecture:** for example, backend, frontend, APIs
+- **Architecture:** for example, backend or frontend
 - **Languages or frameworks:** for example, React, Java or Python
 - **Teams or tribes:** Allow different teams or tribes to maintain their own standards while inheriting organization-wide rules
 
