@@ -32,6 +32,10 @@ def check_security_tools():
         # Hack to ensure that Pylint is detected
         if tool_short_name == "pylintpython3":
             tool_name = "Pylint"
+        if tool_short_name == "ESLint9":
+            tool_name = "ESLint"
+        if tool_short_name == "PMD7":
+            tool_name = "PMD"
         tool_languages = tool["languages"]
         cursor = True
         code_patterns = []
