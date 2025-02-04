@@ -11,7 +11,7 @@
         <meta name="description" content="Coding standards enable the analysis of multiple repositories with the same tool and code pattern configurations, ensuring consistent code quality across your organization. Multiple coding standards can be applied to the same repository. For example, you can use coding standards to ensure that a group of repositories follow the same security rules or coding conventions.">
       
       
-        <meta http-equiv="last-modified" content="2024-11-04 13:25:08">
+        <meta http-equiv="last-modified" content="2025-02-04 09:59:52">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/using-coding-standards/">
@@ -4641,11 +4641,30 @@
 <h2 id="using-with-repository-configuration">Using a coding standard alongside repository-level customizations<a class="headerlink" href="#using-with-repository-configuration" title="Permanent link">#</a></h2>
 <p>Tools and patterns enabled by a coding standard are enforced and cannot be disabled at the repository level. You can add extra tools and patterns, if these are not already enabled by any applied coding standard.</p>
 <h2 id="using-multiple">Using multiple coding standards<a class="headerlink" href="#using-multiple" title="Permanent link">#</a></h2>
-<p>When Codacy analyzes your code using multiple coding standards, it merges the tools and patterns from each standard. Enabled tools and patterns in any applied standard will be enforced.</p>
+<p>When Codacy analyzes your code using multiple coding standards, it merges the tools and patterns from each standard.</p>
+<p>A common strategy is to start with a baseline standard containing fundamental rules that apply across all repositories, then layer additional standards based on specific needs. You can organize these additional standards by:</p>
+<ul>
+<li><strong>Topics:</strong> for example, security, performance, or maintainability</li>
+<li><strong>Architecture:</strong> for example, backend or frontend</li>
+<li><strong>Languages or frameworks:</strong> for example, React, Java or Python</li>
+<li><strong>Teams or tribes:</strong> Allow different teams or tribes to maintain their own standards while inheriting organization-wide rules</li>
+</ul>
+<p><img alt="Coding standards strategies" src="../images/coding-standard-strategy.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can apply up to 10 coding standards to your organization. Standards can overlap, meaning a single repository can follow multiple standards simultaneously.</p>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>If the same pattern appears in multiple standards, the version from the most recently created and applied standard (with its parameters) takes precedence.</p>
 </div>
+<h3 id="standards-implementation">Implementation guidelines<a class="headerlink" href="#standards-implementation" title="Permanent link">#</a></h3>
+<p>Consider these points when implementing coding standards:</p>
+<ul>
+<li><strong>Keep maintenance simple:</strong> Minimize overlap between standards and establish clear ownership to reduce maintenance complexity</li>
+<li><strong>Manage access:</strong> Assign organization managers or Git provider admin roles to users who should manage (create, edit and delete) organization-level standards (learn more in <a href="../roles-and-permissions-for-organizations/#managing-the-organization-manager-role">Roles and Permissions</a>)</li>
+<li><strong>Be mindful of repository customization:</strong> Individual repositories can have their own specific overrides through additional code patterns, custom tool configurations, or local configuration files</li>
+</ul>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../repositories-configure/configuring-code-patterns/">Configuring code patterns on each repository</a></li>
@@ -4807,7 +4826,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 4, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 4, 2025</span>
     
   </small>
 </div>
