@@ -8,13 +8,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="The Organization overview provides an overview of the repositories belonging to your Git provider organization. Here you can compare their statuses and check for items that require your attention.">
+        <meta name="description" content="The organization's Issues dashboard provides an overview of all the issues detected in the repositories belonging to your Git provider organization.">
       
       
         <meta http-equiv="last-modified" content="2025-02-07 11:02:25">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/organizations/organization-overview/">
+        <link rel="canonical" href="https://docs.codacy.com/organizations/issues-metrics/">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Organization overview - Codacy docs</title>
+        <title>Issues Metrics - Codacy docs</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#organization-overview" class="md-skip">
+        <a href="#issues-metrics" class="md-skip">
           Skip to content
         </a>
       
@@ -798,12 +798,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-5" type="checkbox" id="nav-5">
     
     <label class="md-nav__link" for="nav-5">
       Organizations
@@ -837,64 +835,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Organization overview
-      </label>
-    
-    <a href="./" title="Organization overview" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../organization-overview/" title="Organization overview" class="md-nav__link">
       Organization overview
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#overall-quality-chart" class="md-nav__link">
-    Overall quality chart
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#last-updated-repositories" class="md-nav__link">
-    Last updated repositories
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#see-also" class="md-nav__link">
-    See also
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -4406,69 +4351,44 @@
                   
                 
                 
-                <h1 id="organization-overview">Organization overview<a class="headerlink" href="#organization-overview" title="Permanent link">#</a></h1>
-<p>The <strong>Organization overview</strong> provides an overview of the repositories belonging to your Git provider organization that you <a href="../managing-repositories/">follow on Codacy</a>. Here you can compare their statuses and check for items that require your attention.</p>
-<p>To access your Organization overview, select an organization from the top navigation bar and select <strong>Overview</strong> on the left navigation sidebar.</p>
-<p>Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained. The selected repositories are stored in your browser so that the same filter is applied between your visits to the Organization overview page.</p>
-<p>On the Organization overview you have the following areas to help you monitor your repositories:</p>
+                <h1 id="issues-metrics">Issues Metrics<a class="headerlink" href="#issues-metrics" title="Permanent link">#</a></h1>
+<p>The <strong>Issues Metrics</strong> dashboard provides an overview of all the issues detected in the repositories belonging to your Git provider organization. Here, you can navigate through the issues detected in your repositories and filter them by severity and category. You can also filter the issues by selecting specific repositories or using <a href="../segments/">the segments that you have set up</a>.</p>
+<p><img alt="Open issues dashboard" src="../images/open-issues-dashboard.png" /></p>
+<p>To access the Issues Metrics dashboard, select an organization from the top navigation bar and click on the <strong>Open Issues</strong> tab at the top of the page.</p>
+<p>By default, the Issues Metrics dashboard displays metrics as the absolute number of issues. You can change the display to <strong>Issues per 1,000 lines of code</strong> by clicking on the ellipsis icon at the top right of the Open Issues tab. From here, you can also customize the period against which you want to compare the issues detected in your repositories. When available, comparisons against the previously selected period will be shown next to each value, and you can hover over the comparison to see the variation.</p>
+<p><img alt="Open issues tab options" src="../images/open-issues-tab-options.png" /></p>
+<p>The Issues Metrics dashboard includes the following sections to help you monitor the issues detected in your repositories:</p>
 <ul>
-<li><a href="#overall-quality-chart">Overall quality chart</a></li>
-<li><a href="#last-updated-repositories">Last updated repositories</a></li>
-<li><a href="../issues-metrics/">Issues metrics</a></li>
+<li><a href="#open-issues-by-severity">Open issues by severity</a></li>
+<li><a href="#open-issues-by-category">Open issues by category</a></li>
+<li><a href="#open-issues-evolution">Open issues evolution</a></li>
+<li><a href="#issues-activity">Issues activity</a></li>
+<li><a href="#repositories-with-the-most-issues">Repositories with the most issues</a></li>
 </ul>
-<p>On this page, you can also see the <strong>Organization setup</strong> area, which provides you with a checklist of items that you should complete to ensure that your organization is set up correctly and that you're getting the most out of Codacy.</p>
-<p>The following sections provide a detailed description of the repository-related dashboard areas.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>You can use the Codacy API to generate reports or obtain information about the code quality of your repositories in a more flexible way.</p>
-<p>For more information see the list of <a href="https://api.codacy.com/api/api-docs#codacy-api-analysis">available API endpoints</a> and the following examples:</p>
-<ul>
-<li><a href="../../codacy-api/examples/obtaining-current-issues-in-repositories/">Obtaining current issues in repositories</a></li>
-<li><a href="../../codacy-api/examples/obtaining-code-quality-metrics-for-files/">Obtaining code quality metrics for files</a></li>
-</ul>
-</div>
-<h2 id="overall-quality-chart">Overall quality chart<a class="headerlink" href="#overall-quality-chart" title="Permanent link">#</a></h2>
-<p>The <strong>Overall quality</strong> chart compares the repositories that you follow regarding <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#grade">grade</a>, <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">issues</a>, <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">complex files</a>, <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">duplication</a>, and <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#code-coverage">code coverage</a>. Each tab displays the average value for the corresponding metric for the last updated repositories.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<ul>
-<li>
-<p>The overall quality chart calculates metrics and displays data only for the <strong>repositories that you follow</strong> on Codacy. This means that depending on their list of followed repositories, two users can see different results on this chart.</p>
-</li>
-<li>
-<p>The overall quality chart displays information for <strong>at most the last 100 updated repositories</strong>.</p>
-</li>
-</ul>
-</div>
-<p><img alt="Overall quality chart" src="../images/organization-overview-overall-quality.png" /></p>
-<ul>
-<li>Hover the mouse pointer over the bars to see the metrics for the corresponding repositories.</li>
-<li>Click the bars to navigate directly to the corresponding repository.</li>
-</ul>
-<p>If you have over 8 repositories, the chart displays your repositories grouped by grade or percentage intervals. Click the bars to see and navigate directly to the corresponding repositories.</p>
-<p><img alt="Overall quality chart with grouped repositories" src="../images/organization-overview-overall-quality-grouped.png" /></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>If you don't have coverage set up for any of your repositories yet, the coverage tab provides you with instructions on <a href="../../coverage-reporter/">how to add coverage for your repositories</a>.</p>
+<p>In each section, you can click on the ellipsis icon in the top right corner to export that section's data to CSV or JSON.</p>
 </div>
-<h2 id="last-updated-repositories">Last updated repositories<a class="headerlink" href="#last-updated-repositories" title="Permanent link">#</a></h2>
-<p>The <strong>Last updated repositories</strong> list displays the last updated repositories, sorted by reverse date of the last update. </p>
-<p><img alt="Last updated repositories" src="../images/organization-overview-repositories-last-updated.png" /></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The exact value of the last updated date of the repositories depends on your Git provider:</p>
-<ul>
-<li><strong>GitHub:</strong> date of the last commit to any branch of the repository (value of <code>pushed_at</code> from the <a href="https://docs.github.com/en/rest/repos/repos#list-organization-repositories" target="_&quot;blank&quot;">GitHub Repositories API</a>).</li>
-<li><strong>GitLab:</strong> date when the project was last updated (value of <code>last_activity_at</code> from the <a href="https://docs.gitlab.com/ee/api/groups.html">GitLab Groups API</a>). Note that this value is only updated <a href="https://gitlab.com/gitlab-org/gitlab/-/issues/20952">at most once per hour</a>).</li>
-<li><strong>Bitbucket:</strong> date when the repository was last updated (value of <code>updated_on</code> from the <a href="https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/#api-group-repositories">Bitbucket Repositories API</a>). <strong>On Bitbucket Server</strong> Codacy can't obtain this information and the list displays the repositories in alphabetical order.</li>
-</ul>
+<h2 id="open-issues-by-severity">Open Issues by Severity<a class="headerlink" href="#open-issues-by-severity" title="Permanent link">#</a></h2>
+<p>This chart displays the current number of open issues detected in your repositories, grouped by severity. You can click on each severity level to filter the results in the rest of the dashboard.</p>
+<p><img alt="Open issues by severity" src="../images/open-issues-by-severity.png" /></p>
+<h2 id="open-issues-by-category">Open Issues by Category<a class="headerlink" href="#open-issues-by-category" title="Permanent link">#</a></h2>
+<p>This chart displays the current number of open issues detected in your repositories, grouped by category. You can click on each category to filter the results in the rest of the dashboard.</p>
+<p><img alt="Open issues by category" src="../images/open-issues-by-category.png" /></p>
+<h2 id="open-issues-evolution">Open Issues Evolution<a class="headerlink" href="#open-issues-evolution" title="Permanent link">#</a></h2>
+<p>This chart shows the trend of open issues in your repositories over time, either by severity or by category, depending on the filters applied. You can hover over the chart to see the number of open issues on a specific date. You can also click on the chart to filter results in the <strong>Issues Activity</strong> chart and the <strong>Repositories with the Most Issues</strong> list.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Data for each period represents an average of the values during that period.</p>
 </div>
-<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
-<ul>
-<li><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">Which metrics does Codacy calculate?</a></li>
-<li><a href="../../codacy-api/examples/obtaining-current-issues-in-repositories/">Using the Codacy API to obtain current issues in repositories</a></li>
-<li><a href="../../codacy-api/examples/obtaining-code-quality-metrics-for-files/">Using the Codacy API to obtain code quality metrics for files</a></li>
-</ul>
+<p><img alt="Open issues evolution by severity" src="../images/open-issues-evolution-by-severity.png" /></p>
+<p><img alt="Open issues evolution by category" src="../images/open-issues-evolution-by-category.png" /></p>
+<h2 id="issues-activity">Issues Activity<a class="headerlink" href="#issues-activity" title="Permanent link">#</a></h2>
+<p>This chart displays the number of issues fixed and introduced in your repositories over time. You can hover over the chart to see the number of issues fixed and introduced on a specific date. You can also click on the chart to filter results in the <strong>Repositories with the Most Issues</strong> list.</p>
+<p><img alt="Issues activity" src="../images/issues-activity.png" /></p>
+<h2 id="repositories-with-the-most-issues">Repositories with the Most Issues<a class="headerlink" href="#repositories-with-the-most-issues" title="Permanent link">#</a></h2>
+<p>This list displays repositories in descending order based on the number of issues. Depending on the filters applied, the list will show repositories with the most open issues, grouped by severity or category, or within a specific period.</p>
+<p><img alt="Open issues ranking" src="../images/open-issues-ranking.png" /></p>
               
               
                 
@@ -4512,7 +4432,7 @@
           <br>
         </div>
         <p>
-          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Organization overview%22">create a more detailed issue on our GitHub repository</a>.
+          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Issues Metrics%22">create a more detailed issue on our GitHub repository</a>.
         </p>
       </div>
     </div>
@@ -4521,14 +4441,14 @@
     </p>
     
     <p>
-      <a href="https://github.com/codacy/docs/edit/master/docs/organizations/organization-overview.md" title="Edit this page">
+      <a href="https://github.com/codacy/docs/edit/master/docs/organizations/issues-metrics.md" title="Edit this page">
         Edit this page on GitHub
       </a>
       if you notice something wrong or missing.
     </p>
     
     <p>
-      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Organization overview">support@codacy.com</a>.
+      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Issues Metrics">support@codacy.com</a>.
     </p>
   </div>
   <script>
