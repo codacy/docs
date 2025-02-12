@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2025-01-28 12:06:54">
+        <meta http-equiv="last-modified" content="2025-02-12 09:01:37">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -5051,12 +5051,13 @@ Note that some issues just don't have a security category. These issues will rem
 <p>When viewing dependencies, you'll be presented with a list of the dependencies used by all repositories in your organization. For each dependency, you'll be able to see how many repositories are making use of it, how many different versions you are using across all repositories, and how many security findings were found due to the presence of that dependency.</p>
 <p>You're also able to click any dependency to find out more information about it.</p>
 <p><img alt="Security and risk management dependency page" src="../images/security-risk-management-dependencies-single.png" /></p>
-<p>The dependency overview page offers a quick birds-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license applied to any particular version of that dependency.</p>
+<p>The dependency overview page offers a quick birds-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency.</p>
 <p><sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for <a href="https://semgrep.dev/pricing/">Semgrep Pro</a>.<br />
 <sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.<br />
 <sup><span id="client-side">3</span></sup>: Supported as a <a href="../../repositories-configure/local-analysis/client-side-tools/">client-side tool</a>.<br />
 <sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin <a href="https://find-sec-bugs.github.io/">Find Security Bugs</a>.<br />
-<sup><span id="eslint-plugin">5</span></sup>: Includes the plugins <a href="https://www.npmjs.com/package/eslint-plugin-no-unsanitized">no-unsanitized</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security">security</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security-node">security-node</a>, and <a href="https://www.npmjs.com/package/eslint-plugin-xss">xss</a>.  </p>
+<sup><span id="eslint-plugin">5</span></sup>: Includes the plugins <a href="https://www.npmjs.com/package/eslint-plugin-no-unsanitized">no-unsanitized</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security">security</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security-node">security-node</a>, and <a href="https://www.npmjs.com/package/eslint-plugin-xss">xss</a>.<br />
+<sup><span id="license-scanning">6</span></sup>: Visit the <a href="../../getting-started/supported-languages-and-tools/#supported-languages-and-tools">supported languages and tools</a> page for a list of supported languages.  </p>
               
               
                 
@@ -5213,7 +5214,7 @@ Note that some issues just don't have a security category. These issues will rem
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 28, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 12, 2025</span>
     
   </small>
 </div>
