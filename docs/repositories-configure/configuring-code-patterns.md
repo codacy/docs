@@ -289,7 +289,7 @@ The table below lists the configuration file names that Codacy detects and suppo
 !!! note
     Codacy doesn't support configuration files for the following tools:
 
-    -   aligncheck
+    -   Aligncheck
     -   Checkov
     -   Clang-Tidy
     -   Codacy Scalameta Pro
@@ -299,6 +299,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     -   Flawfinder
     -   Gosec
     -   Jackson Linter
+    -   Lizard
     -   PSScriptAnalyzer
     -   ShellCheck
     -   SQLint
