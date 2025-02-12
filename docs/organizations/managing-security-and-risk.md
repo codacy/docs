@@ -533,7 +533,7 @@ You're also able to click any dependency to find out more information about it.
 
 ![Security and risk management dependency page](images/security-risk-management-dependencies-single.png)
 
- The dependency overview page offers a quick birds-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license applied to any particular version of that dependency.
+ The dependency overview page offers a quick birds-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency.
 
 
 <sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/).  
@@ -541,3 +541,4 @@ You're also able to click any dependency to find out more information about it.
 <sup><span id="client-side">3</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
 <sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/).  
 <sup><span id="eslint-plugin">5</span></sup>: Includes the plugins [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [security](https://www.npmjs.com/package/eslint-plugin-security), [security-node](https://www.npmjs.com/package/eslint-plugin-security-node), and [xss](https://www.npmjs.com/package/eslint-plugin-xss).  
+<sup><span id="license-scanning">6</span></sup>: Visit the [supported languages and tools](../getting-started/supported-languages-and-tools.md#supported-languages-and-tools) page for a list of supported languages.  
