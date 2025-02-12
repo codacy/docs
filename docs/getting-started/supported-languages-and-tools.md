@@ -701,6 +701,10 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-jackson-linter" class="skip-vale">codacy/codacy-jackson-linter</a></td>
 </tr>
 <tr>
+<td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
+<td><a href="https://github.com/codacy/codacy-lizard" class="skip-vale">codacy/codacy-lizard</a></td>
+</tr>
+<tr>
 <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
 <td><a href="https://github.com/codacy/codacy-markdownlint" class="skip-vale">codacy/codacy-markdownlint</a></td>
 </tr>
