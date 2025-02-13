@@ -103,7 +103,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td>-</td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan)</td>
     </tr>
     <tr>
@@ -117,7 +117,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td>-</td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan)</td>
     </tr>
     <tr>
@@ -129,7 +129,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>.deps.json</code> (.Net), <code>packages.lock.json</code> (NuGet) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a> <a href="#different-tools"><sup>10</sup></a> </td>
+      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>packages.lock.json</code> (NuGet)</td>
     </tr>
     <tr>
@@ -219,7 +219,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>go.mod</code></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a></td>
+      <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>go.mod</code></td>
     </tr>
     <tr>
@@ -256,7 +256,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="https://pmd.github.io/">PMD</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> </td>
+      <td><a href="https://pmd.github.io/">PMD</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
     </tr>
     <tr>
@@ -269,7 +269,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> </td>
+      <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -314,7 +314,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -344,7 +344,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td>-</td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -367,7 +367,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
       <td><a href="https://github.com/sebastianbergmann/phpcpd">PHPCPD</a></td>
-      <td><a href="https://github.com/pdepend/pdepend">PHP Depend</a></td>
+      <td><a href="https://github.com/pdepend/pdepend">PHP Depend</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
     </tr>
     <tr>
@@ -413,7 +413,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry)</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/rubik/radon">Radon</a></td>
+      <td><a href="https://github.com/rubik/radon">Radon</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -426,7 +426,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Gemfile.lock</code> (Bundler) </td>
       <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
-      <td><a href="https://github.com/rubocop/rubocop">RuboCop</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> </td>
+      <td><a href="https://github.com/rubocop/rubocop">RuboCop</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -437,7 +437,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Cargo.lock</code> (Cargo) </td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td>-</td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -462,7 +462,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>build.sbt.lock</code> (sbt) <a href="#scala-dependencies"><sup>9</sup></a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
-          <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a></td>
+          <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -495,7 +495,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#complexity-limitations"><sup>6</sup></a> <a href="#swiftlint-complexity"><sup>8</sup></a> </td>
+      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#complexity-limitations"><sup>6</sup></a> <a href="#swiftlint-complexity"><sup>8</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -530,7 +530,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a></td>
+      <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -699,6 +699,10 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
 <td><a href="https://github.com/codacy/codacy-jackson-linter" class="skip-vale">codacy/codacy-jackson-linter</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
+<td><a href="https://github.com/codacy/codacy-lizard" class="skip-vale">codacy/codacy-lizard</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
