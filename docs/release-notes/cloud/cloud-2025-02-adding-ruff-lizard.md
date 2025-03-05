@@ -34,6 +34,6 @@ However, we plan to integrate it as a metric soon—stay tuned!
 We've increased our offering in Python tools and we added Ruff as our new tool for Quality.
 Ruff is a fast Python linter designed to be a drop-in replacement for tools like Flake8, isort, and Black. This tool significantly outperforms traditional Python linters, making it ideal for large codebases. Ruff supports over 500 linting rules and type-aware linting.
 
-Currently it's compatible with **Python 3.13**
+Currently it's compatible with **Python up to 3.13**
 
 If you have any questions or need help, please contact <mailto:support@codacy.com>.
