@@ -17,7 +17,7 @@ These insights will be available at the commit, PR, and file levels, integrated 
 
 ### Important Notes
 
-Not enabled by default (for now): Since Lizard may introduce a significant number of new issues, we’ve opted not to activate it by default—though this may change in the future.
+Not enabled by default (for now): Since Lizard may introduce a significant number of new issues, we’ve opted not to activate it by default (though this may change in the future)
 
 ### Tool vs. Metric
 
