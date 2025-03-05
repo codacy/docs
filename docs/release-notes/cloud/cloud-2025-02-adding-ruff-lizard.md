@@ -22,6 +22,7 @@ Not enabled by default (for now): Since Lizard may introduce a significant numbe
 ### Tool vs. Metric
 
 Currently, Lizard operates as a tool, meaning it does not impact:
+
 -   File-level complexity scores
 -   Complexity Quality gates
 -   Dashboard complexity metrics
