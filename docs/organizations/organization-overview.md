@@ -1,5 +1,5 @@
 ---
-description: The Organization overview provides an overview of the repositories that you follow on Codacy. Here you can compare their statuses and check for items that require your attention.
+description: The Organization overview provides an overview of the repositories belonging to your Git provider organization. Here you can compare their statuses and check for items that require your attention.
 ---
 
 # Organization overview
@@ -8,24 +8,13 @@ The **Organization overview** provides an overview of the repositories belonging
 
 To access your Organization overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
 
-!!! important
-    -   The Organization overview calculates metrics and displays data only for the **repositories that you follow** on Codacy. This means that depending on their list of followed repositories, two users can see different results on their Organization overview.
-
-    -   The Organization overview displays information for **at most the last 100 updated repositories**.
-
-![Organization overview](images/organization-overview.png)
-
 Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained. The selected repositories are stored in your browser so that the same filter is applied between your visits to the Organization overview page.
-
-You can use the language filter to help you narrow down the list of repositories in the drop-down list:
-
-![Using the language filter to narrow down the list of repositories](images/organization-overview-filter-language.png)
 
 On the Organization overview you have the following areas to help you monitor your repositories:
 
 -   [Overall quality chart](#overall-quality-chart)
--   [Open pull requests](#open-pull-requests)
 -   [Last updated repositories](#last-updated-repositories)
+-   [Issues metrics](issues-metrics.md)
 
 On this page, you can also see the **Organization setup** area, which provides you with a checklist of items that you should complete to ensure that your organization is set up correctly and that you're getting the most out of Codacy.
 
@@ -35,7 +24,12 @@ The following sections provide a detailed description of the repository-related 
 
 ## Overall quality chart
 
-The **Overall quality** chart compares the repositories that you follow regarding [grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade), [issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Each tab displays the average value for the corresponding metric across your repositories.
+The **Overall quality** chart compares the repositories that you follow regarding [grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade), [issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Each tab displays the average value for the corresponding metric for the last updated repositories.
+
+!!! important
+    -   The overall quality chart calculates metrics and displays data only for the **repositories that you follow** on Codacy. This means that depending on their list of followed repositories, two users can see different results on this chart.
+
+    -   The overall quality chart displays information for **at most the last 100 updated repositories**.
 
 ![Overall quality chart](images/organization-overview-overall-quality.png)
 
@@ -49,28 +43,10 @@ If you have over 8 repositories, the chart displays your repositories grouped by
 !!! tip
     If you don't have coverage set up for any of your repositories yet, the coverage tab provides you with instructions on [how to add coverage for your repositories](../coverage-reporter/index.md).
 
-## Open pull requests
-
-The **Most problematic** tab displays a short list of the open pull requests that aren't up to standards and have the most potential to negatively affect your code quality.
-
-![Most problematic pull requests](images/organization-overview-prs-problematic.png)
-
-The **Last updated** tab displays open pull requests sorted by the date of update with one of the following status:
-
--   Not up to standards
--   Up to standards
--   Analysis failed (something went wrong during the analysis)
--   Analyzing (intermediate status while Codacy is analyzing the pull request)
-
-![Last updated pull requests](images/organization-overview-prs-last-updated.png)
-
-Click a pull request to see the [details of that pull request](../repositories/pull-requests.md#status).
 
 ## Last updated repositories
 
-The **Last updated repositories** list displays the last updated repositories, sorted by reverse date of the last update. Each item displays the date of the last update and the current grade of the repository.
-
-Click **See all** to see all the repositories that you follow on Codacy.
+The **Last updated repositories** list displays the last updated repositories, sorted by reverse date of the last update. 
 
 ![Last updated repositories](images/organization-overview-repositories-last-updated.png)
 
