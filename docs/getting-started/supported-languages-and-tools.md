@@ -295,8 +295,11 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Kotlin</td>
-      <td><a href="https://github.com/detekt/detekt">detekt</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+      <td>
+          <a href="https://github.com/detekt/detekt">detekt</a>,
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://pmd.github.io">PMD</a>
+      </td>
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
@@ -489,8 +492,11 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Swift</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
+      <td>
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://github.com/realm/SwiftLint">SwiftLint</a>,
+          <a href="https://pmd.github.io">PMD</a>
+      </td>
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
@@ -718,8 +724,8 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <td><a href="https://github.com/codacy/codacy-phpmd" class="skip-vale">codacy/codacy-phpmd</a></td>
 </tr>
 <tr>
-<td><a href="https://pmd.sourceforge.io/pmd-5.3.2/pmd-java/index.html">PMD</a> <a href="#complexity-limitations"><sup>6</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-pmd" class="skip-vale">codacy/codacy-pmd</a></td>
+<td><a href="https://pmd.github.io/">PMD</a> <a href="#complexity-limitations"><sup>6</sup></a></td>
+<td><a href="https://github.com/codacy/codacy-pmd7" class="skip-vale">codacy/codacy-pmd7</a></td>
 </tr>
 <tr>
 <td><a href="https://github.com/landscapeio/prospector2">Prospector</a></td>
