@@ -405,6 +405,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
+          <a href="https://github.com/astral-sh/ruff">Ruff</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
@@ -743,6 +744,10 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="https://github.com/rubocop/rubocop">RuboCop</a> <a href="#complexity-limitations"><sup>6</sup></a></td>
 <td><a href="https://github.com/codacy/codacy-rubocop" class="skip-vale">codacy/codacy-rubocop</a></td>
+</tr>
+<tr>
+<td><a href="https://github.com/astral-sh/ruff">Ruff</a></td>
+<td><a href="https://github.com/codacy/codacy-ruff" class="skip-vale">codacy/codacy-ruff</a></td>
 </tr>
 <tr>
 <td><a href="http://www.scalastyle.org/">Scalastyle</a></td>
