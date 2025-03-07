@@ -11,7 +11,7 @@
         <meta name="description" content="Integrate Codacy with your Git workflow to display analysis results and code coverage as status checks on your pull requests and optionally block merging pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2025-01-30 09:46:23">
+        <meta http-equiv="last-modified" content="2025-03-07 14:55:32">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/integrating-codacy-with-your-git-workflow/">
@@ -4513,6 +4513,10 @@
 <li><strong>GitLab:</strong> <a href="https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds">only allow merge requests to be merged if the pipeline succeeds</a></li>
 <li><strong>Bitbucket:</strong> <a href="https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/">configure Bitbucket to prevent a merge with unresolved merge checks</a></li>
 </ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>GitHub offers two distinct methods for implementing branch protection: utilizing the dedicated 'Branch Protection Rules' section within the 'Branches' tab, or alternatively, employing 'RuleSets' found under the 'Rules' tab. Currently, our processes are configured to primarily use the 'Branch Protection Rules' method.</p>
+</div>
 <p>Codacy sends three different status checks to Git providers for increased granularity and customization: <strong>quality metrics, coverage variation, and diff coverage</strong>. These checks help you protect your repositories by indicating whether the main branch is fully, partially, or not protected:  </p>
 <ul>
 <li><strong>Protected</strong>: All configured gates are required status checks in your Git provider.  </li>
@@ -4677,7 +4681,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">January 30, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 7, 2025</span>
     
   </small>
 </div>
