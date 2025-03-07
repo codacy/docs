@@ -104,7 +104,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan)</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>C++</td>
@@ -118,7 +118,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan)</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>C#</td>
@@ -130,7 +130,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>.deps.json</code> (.Net), <code>packages.lock.json</code> (NuGet) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>packages.lock.json</code> (NuGet)</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>CoffeeScript</td>
@@ -220,7 +220,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>go.mod</code></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>go.mod</code></td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Groovy</td>
@@ -257,7 +257,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://pmd.github.io/">PMD</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
+      <td>-</td>
     </tr>
     <tr>
       <td>JavaScript</td>
@@ -305,7 +305,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/detekt/detekt">detekt</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Kubernetes</td>
