@@ -160,6 +160,7 @@ credo
 dartanalyzer
 detekt
 eslint-8
+eslint-9
 flawfinder
 hadolint
 jacksonlinter
@@ -167,12 +168,15 @@ markdownlint
 phpcs
 phpmd
 pmd
+pmd-7
 prospector
 psscriptanalyzer
 pylintpython3
 remark-lint
 revive
+roslyn
 rubocop
+ruff
 scalastyle
 semgrep
 shellcheck
