@@ -58,7 +58,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -311,7 +311,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td>-</td>
       <td>-</td>
     </tr>
@@ -623,7 +623,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
-      <td>-</td>
+      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td>-</td>
       <td>-</td>
     </tr>
