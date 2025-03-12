@@ -39,6 +39,7 @@ The table below lists all languages that Codacy supports and the corresponding t
   <thead>
     <tr>
       <th>Language</th>
+      <th>File extensions</th>
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Static analysis</a></th>
       <th><a style="color: white;" href="#suggest-fixes">Suggested fixes</a></th>
       <th>Secret detection</th>
@@ -51,6 +52,7 @@ The table below lists all languages that Codacy supports and the corresponding t
   <tbody>
     <tr>
       <td>Apex</td>
+      <td>.cls, .trigger</td>
       <td><a href="https://pmd.github.io/">PMD</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
@@ -62,6 +64,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>AsyncAPI</td>
+      <td>-</td>
       <td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
       <td>-</td>
       <td>-</td>
@@ -72,6 +75,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>AWS CloudFormation</td>
+      <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
@@ -84,6 +88,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Azure Resource Manager Templates</td>
+      <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td>-</td>
       <td>-</td>
@@ -94,6 +99,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>C</td>
+      <td>.c, .h</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a> <a href="#client-side"><sup>3</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
@@ -108,6 +114,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>C++</td>
+      <td>.cpp, .hpp, .cc, .cxx, .ino</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a> <a href="#client-side"><sup>3</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a> <a href="#cppcheck-misra"><sup>4</sup></a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
@@ -122,6 +129,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>C#</td>
+      <td>.cs</td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
@@ -134,6 +142,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>CoffeeScript</td>
+      <td>.coffee</td>
       <td><a href="https://github.com/clutchski/coffeelint">CoffeeLint</a></td>
       <td>-</td>
       <td>-</td>
@@ -144,6 +153,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Crystal</td>
+      <td>.cr</td>
       <td><a href="https://github.com/crystal-ameba/ameba">Ameba</a></td>
       <td>-</td>
       <td>-</td>
@@ -154,6 +164,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>CSS</td>
+      <td>.css</td>
       <td><a href="https://stylelint.io/">Stylelint</a></td>
       <td>-</td>
       <td>-</td>
@@ -164,6 +175,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Dart</td>
+      <td>.dart</td>
       <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a> <a href="#dart-limitations"><sup>5</sup></a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
@@ -174,6 +186,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Dockerfile</td>
+      <td>.dockerfile</td>
       <td><a href="https://github.com/hadolint/hadolint">Hadolint</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
@@ -186,6 +199,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Elixir</td>
+      <td>.ex, .exs</td>
       <td><a href="https://github.com/rrrene/credo">Credo</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
@@ -197,6 +211,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>GitHub Actions</td>
+      <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
@@ -208,6 +223,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Go</td>
+      <td>.go</td>
       <td><a href="https://gitlab.com/opennota/check">aligncheck</a> <a href="#client-side"><sup>3</sup></a>,
           <a href="https://github.com/tsenart/deadcode">deadcode</a> <a href="#client-side"><sup>3</sup></a>,
           <a href="https://github.com/securego/gosec">Gosec</a> <a href="#client-side"><sup>3</sup></a>,
@@ -224,6 +240,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Groovy</td>
+      <td>.groovy</td>
       <td><a href="https://codenarc.github.io/CodeNarc/">CodeNarc</a></td>
       <td>-</td>
       <td>-</td>
@@ -236,6 +253,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>Helm</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
       <td>
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
           <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
@@ -246,6 +264,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Java</td>
+      <td>.java</td>
       <td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a>,
           <a href="https://pmd.github.io/">PMD</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
@@ -261,6 +280,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>JavaScript</td>
+      <td>.js, .jsx, .jsm, .vue, .mjs</td>
       <td><a href="https://eslint.org/">ESLint</a>,
           <a href="https://pmd.github.io/">PMD</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
@@ -274,6 +294,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>JSON</td>
+      <td>.json</td>
       <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
@@ -285,6 +306,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>JSP</td>
+      <td>.jsp</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
       <td>-</td>
       <td>-</td>
@@ -295,6 +317,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Kotlin</td>
+      <td>.kt, .kts</td>
       <td>
           <a href="https://github.com/detekt/detekt">detekt</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
@@ -309,6 +332,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Kubernetes</td>
+      <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
@@ -322,6 +346,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Less</td>
+      <td>.less</td>
       <td><a href="https://stylelint.io/">Stylelint</a></td>
       <td>-</td>
       <td>-</td>
@@ -332,6 +357,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Markdown</td>
+      <td>.md, .markdown, .mdown, .mkdn, .mkd, .mdwn, .mkdown, .ron</td>
       <td><a href="https://github.com/remarkjs/remark-lint">remark-lint</a>, <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
       <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> <a href="#suggest-fixes">🔧</a></td>
       <td>-</td>
@@ -342,6 +368,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Objective-C</td>
+      <td>.m</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a> <a href="#client-side"><sup>3</sup></a></td>
       <td>-</td>
       <td>-</td>
@@ -352,6 +379,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>OpenAPI</td>
+      <td>-</td>
       <td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
       <td>-</td>
       <td>-</td>
@@ -362,6 +390,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>PHP</td>
+      <td>.php</td>
       <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
           <a href="https://phpmd.org/">PHP Mess Detector</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
@@ -375,6 +404,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>PL/SQL</td>
+      <td>.trg, .prc, .fnc, .pld, .pls, .plh, .plb, .pck, .pks, .pkh, .pkb, .typ, .tyb, .tps, .tpb</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
       <td>-</td>
       <td>-</td>
@@ -385,6 +415,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>PostgreSQL</td>
+      <td>-</td>
       <td><a href="https://github.com/purcell/sqlint">SQLint</a></td>
       <td>-</td>
       <td>-</td>
@@ -395,6 +426,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>PowerShell</td>
+      <td>.ps1, .psc1, .psd1, .psm1, .ps1xml, .pssc, .cdxml, .clixml</td>
       <td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
       <td>-</td>
       <td>-</td>
@@ -405,6 +437,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Python</td>
+      <td>.py</td>
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
@@ -422,6 +455,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Ruby</td>
+      <td>.rb, .gemspec, .podspec, .jbuilder, .rake, .opal</td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a> <a href="#semgrep-brakeman"><sup>7</sup></a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
@@ -435,6 +469,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Rust</td>
+      <td>.rs, .rlib</td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
@@ -446,6 +481,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Sass</td>
+      <td>.scss</td>
       <td><a href="https://stylelint.io/">Stylelint</a></td>
       <td>-</td>
       <td>-</td>
@@ -456,6 +492,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Scala</td>
+      <td>.scala</td>
       <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
           <a href="http://www.scalastyle.org/">Scalastyle</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
@@ -471,6 +508,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Serverless Framework</td>
+      <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
       <td>-</td>
       <td>-</td>
@@ -481,6 +519,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Shell</td>
+      <td>.sh, .bash</td>
       <td><a href="https://www.shellcheck.net/">ShellCheck</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
@@ -492,6 +531,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Swift</td>
+      <td>.swift</td>
       <td>
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://github.com/realm/SwiftLint">SwiftLint</a>,
@@ -507,6 +547,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Terraform</td>
+      <td>.tf</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
@@ -520,6 +561,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Transact-SQL</td>
+      <td>.tsql</td>
       <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
       <td>-</td>
       <td>-</td>
@@ -530,6 +572,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>TypeScript</td>
+      <td>.ts, .tsx</td>
       <td><a href="https://eslint.org/">ESLint</a>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
@@ -542,6 +585,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Unity</td>
+      <td>-</td>
       <td><a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a> <a href="#client-side"><sup>3</sup></a></td>
       <td>-</td>
       <td>-</td>
@@ -552,6 +596,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Velocity</td>
+      <td>.vm</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
       <td>-</td>
       <td>-</td>
@@ -562,6 +607,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Visual Basic</td>
+      <td>.vb</td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a></td>
       <td>-</td>
       <td>-</td>
@@ -572,6 +618,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>Visualforce</td>
+      <td>.component, .page</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
       <td>-</td>
       <td>-</td>
@@ -582,6 +629,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>XML</td>
+      <td>.xml, .xsl, .wsdl, .pom</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
@@ -592,6 +640,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>XSL</td>
+      <td>.xsl</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
       <td>-</td>
       <td>-</td>
@@ -602,6 +651,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     </tr>
     <tr>
       <td>YAML</td>
+      <td>.yaml, .yml, .env, .env.production, .env.prod, .env.staging, .env.dev, .env.development</td>
       <td>-</td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
