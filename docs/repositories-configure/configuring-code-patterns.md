@@ -158,16 +158,16 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
   </tr>
   <tr>
-    <td><a href="https://eslint.org/docs/user-guide/configuring">ESLint</a></td>
+    <td>ESLint v8</td>
     <td>JavaScript, TypeScript</td>
     <td><code>.eslintrc.js</code>, <code>.eslintrc.cjs</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code></td>
-    <td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintPlugins.ts">Plugins configurable on the Codacy UI</a><br />
-        <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L58">Other supported plugins</a><br />
-
-        <p>If you're using <a href="https://eslint.org/docs/latest/user-guide/configuring/configuration-files#cascading-and-hierarchy">module-level ESLint configuration files</a>, you must also include a ESLint configuration file <strong>on the root of your repository</strong> for Codacy to detect that you're using configuration files. For example, add the following minimal <code>.eslintrc.json</code> configuration file:</p>
-
-        <pre><code>{ "root": true }</code></pre>
-    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ESLint v9</td>
+    <td>JavaScript, TypeScript</td>
+    <td><code>eslint.config.js</code>, <code>eslint.config.mjs</code>, <code>eslint.config.cjs</code></td>
+    <td></td>
   </tr>
   <tr>
     <td>Hadolint</td>
@@ -228,6 +228,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>Ruby</td>
     <td><code>.rubocop.yml</code>, <code>.rubocop-codacy.yml</code></td>
     <td>Supports alternative configuration file <code>.rubocop-codacy.yml</code> for Codacy analysis, allowing exclusion of private gems. This prevents analysis issues caused by private gem references, ensuring proper validation by Codacy.</td>
+  </tr>
+  <tr>
+    <td>Ruff</td>
+    <td>Python</td>
+    <td><code>pyproject.toml, ruff.toml, .ruff.toml</code></td>
+    <td></td>
   </tr>
   <tr>
     <td>Scalastyle</td>

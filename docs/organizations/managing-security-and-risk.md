@@ -463,6 +463,7 @@ Security and risk management supports checking the languages and infrastructure-
       <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
+          <a href="https://docs.astral.sh/ruff/">Ruff</a></td>,
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
