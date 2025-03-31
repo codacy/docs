@@ -18,6 +18,9 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2025
 
+
+-   [Adding Ruff and Lizard as new supported tools February, 2025](cloud/cloud-2025-02-adding-ruff-lizard.md)
+-   [Cloud February 2025](cloud/cloud-2025-02.md)
 -   [Cloud January 2025](cloud/cloud-2025-01.md)
 
 2024
@@ -114,6 +117,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 v14
 
+-   [v14.1.1](self-hosted/self-hosted-v14.1.1.md) (March 10, 2025)
 -   [v14.0.0](self-hosted/self-hosted-v14.0.0.md) (June 26, 2024)
 
 v13

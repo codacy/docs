@@ -63,6 +63,9 @@ Follow the instructions from your Git provider to block merging pull requests if
 -   **GitLab:** [only allow merge requests to be merged if the pipeline succeeds](https://docs.gitlab.com/ee/user/project/merge_requests/merge_when_pipeline_succeeds.html#only-allow-merge-requests-to-be-merged-if-the-pipeline-succeeds)
 -   **Bitbucket:** [configure Bitbucket to prevent a merge with unresolved merge checks](https://support.atlassian.com/bitbucket-cloud/docs/suggest-or-require-checks-before-a-merge/)
 
+!!! important
+    GitHub offers two distinct methods for implementing branch protection: utilizing the dedicated 'Branch Protection Rules' section within the 'Branches' tab, or alternatively, employing 'RuleSets' found under the 'Rules' tab. Currently, our processes are configured to primarily use the 'Branch Protection Rules' method.
+
 Codacy sends three different status checks to Git providers for increased granularity and customization: **quality metrics, coverage variation, and diff coverage**. These checks help you protect your repositories by indicating whether the main branch is fully, partially, or not protected:  
 
 -  **Protected**: All configured gates are required status checks in your Git provider.  

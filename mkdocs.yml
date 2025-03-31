@@ -29,7 +29,7 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    codacy_self_hosted_version: "14.0.0"
+    codacy_self_hosted_version: "14.1.1"
     codacy_coverage_reporter_version: "13.10.15"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
@@ -670,6 +670,8 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2025:
+                      - release-notes/cloud/cloud-2025-02-adding-ruff-lizard.md      
+                      - release-notes/cloud/cloud-2025-02.md
                       - release-notes/cloud/cloud-2025-01.md
                 - 2024:
                       - release-notes/cloud/cloud-2024-12.md
@@ -749,6 +751,7 @@ nav:
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
                 - v14:
+                      - release-notes/self-hosted/self-hosted-v14.1.1.md
                       - release-notes/self-hosted/self-hosted-v14.0.0.md
                 - v13:
                       - release-notes/self-hosted/self-hosted-v13.0.0.md

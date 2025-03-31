@@ -60,6 +60,8 @@ The sections below list the events that Codacy logs for your organization at use
 | Export [security items](./managing-security-and-risk.md)                                                             |Export security items|`organizations.security.items.export`|
 | Ignore security item                                                                                                 |Security item was ignored|`organizations.security.items.ignore`|
 | Unignore security item                                                                                               |Security item was unignored|`organizations.security.items.unignore`|
+| Create DAST target | A target for DAST scanning was created | `organizations.dast.target.create` |
+| Delete DAST target | A target for DAST scanning was deleted | `organizations.dast.target.delete` |
 
 ### Repository
 
