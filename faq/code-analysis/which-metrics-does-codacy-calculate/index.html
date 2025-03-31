@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy scans your code for issues and calculates code complexity, duplication, and coverage metrics. Besides this, Codacy also calculates a grade for your repository and files based on all calculated code quality metrics.">
       
       
-        <meta http-equiv="last-modified" content="2024-11-04 13:25:08">
+        <meta http-equiv="last-modified" content="2025-03-31 13:32:31">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/which-metrics-does-codacy-calculate/">
@@ -4579,9 +4579,9 @@
 <p>Codacy uses <a href="https://en.wikipedia.org/wiki/Cyclomatic_complexity">cyclomatic complexity</a> to identify files with complex methods in your repository. Cyclomatic complexity is the number of linearly independent paths through the source code of a method: the more control flow statements used in a method, the higher the value. Methods with a high cyclomatic complexity are more difficult to test and more likely to have defects. <a href="https://blog.codacy.com/code-complexity/">Learn more about code complexity</a> on Codacy's blog.</p>
 <p>Codacy calculates complexity as follows:</p>
 <ul>
-<li>The complexity value for each file is the highest cyclomatic complexity of the methods in the file.</li>
+<li>The complexity value of a file is the total sum of the cyclomatic complexities of all methods within it.</li>
 <li>A file is considered complex if its cyclomatic complexity value is higher than the threshold <a href="../../../repositories-configure/adjusting-quality-goals/"><strong>File is complex when over</strong></a>.</li>
-<li>The complexity value of a commit or pull request is the sum of the cyclomatic complexity of the files that were changed in the commit or pull request and that have a high complexity increase, defined as an increase of 4 or more.</li>
+<li>The complexity value of a commit or pull request is determined by the cyclomatic complexity of its changes.</li>
 </ul>
 <p>Codacy displays complexity on the following places:</p>
 <table>
@@ -4881,7 +4881,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 4, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 31, 2025</span>
     
   </small>
 </div>
