@@ -16,7 +16,7 @@ The top of the Repository Dashboard displays:
 
 On the Repository Dashboard you have the following areas to help you monitor your repository:
 
--   [Evolution chart](#quality-evolution-chart)
+-   [Evolution chart](#evolution-chart)
 -   [Issues breakdown](#issues-breakdown)
 -   [Coverage](#coverage)
 -   [Open pull requests](#open-pull-requests)
