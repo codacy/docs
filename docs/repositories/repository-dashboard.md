@@ -1,6 +1,6 @@
-# Quality Repository Dashboard
+# Repository Dashboard
 
-The **Quality Repository Dashboard** provides an overview of the repository code quality and items that require your attention.
+The **Repository Dashboard** provides an overview of the repository code quality and items that require your attention.
 
 To access your Repository Dashboard, select a repository from the [Repositories list](../organizations/managing-repositories.md) and select **Dashboard** on the left navigation sidebar.
 
@@ -16,7 +16,7 @@ The top of the Repository Dashboard displays:
 
 On the Repository Dashboard you have the following areas to help you monitor your repository:
 
--   [Quality evolution chart](#quality-evolution-chart)
+-   [Evolution chart](#quality-evolution-chart)
 -   [Issues breakdown](#issues-breakdown)
 -   [Coverage](#coverage)
 -   [Open pull requests](#open-pull-requests)
@@ -25,9 +25,9 @@ The following sections provide a detailed overview of each dashboard area.
 
 {% include-markdown "../assets/includes/dashboard-api-report-note.md" %}
 
-## Quality evolution chart
+## Evolution chart
 
-The **Quality evolution** chart displays the evolution of the repository code quality regarding [issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Click on **Last 3 months**, **Last 31 days**, or **Last 7 days** to select the time interval of the historical data to display on the chart.
+The **Evolution** chart displays the evolution of the repository code quality regarding [issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Click on **Last 3 months**, **Last 31 days**, or **Last 7 days** to select the time interval of the historical data to display on the chart.
 
 Each tab displays the following information for the corresponding metric:
 
@@ -40,7 +40,7 @@ Each tab displays the following information for the corresponding metric:
 
 The chart also displays the **trendline** based on the past behavior and the [quality goals](../repositories-configure/adjusting-quality-goals.md) defined for the repository.
 
-![Quality evolution chart](images/repository-dashboard-quality-evolution.png)
+![Evolution chart](images/repository-dashboard-quality-evolution.png)
 
 ## Issues breakdown
 
@@ -48,7 +48,7 @@ The **Issues breakdown** area displays the total number of issues found on the s
 
 Click **See all issues** to see the full [list of issues](issues.md) found, or click a category to see the issues in that category.
 
-If Codacy detects code patterns that have suggested fixes, a **Fix issues** button appears below the total issue count. Click this button to open a modal with a patch that addresses all resolvable issues, and follow the [same procedure outlined on the Quality Issues page](./issues.md#fixing-issues-automatically).
+If Codacy detects code patterns that have suggested fixes, a **Fix issues** button appears below the total issue count. Click this button to open a modal with a patch that addresses all resolvable issues, and follow the [same procedure outlined on the Issues page](./issues.md#fixing-issues-automatically).
 
 ![Issues breakdown](images/repository-dashboard-issues-breakdown.png)
 

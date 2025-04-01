@@ -49,7 +49,7 @@ To upgrade PostgreSQL:
 
     The increased precision of the metric reflects the code coverage changes better by reducing issues with rounding errors. (IO-56)
 
-    ![Coverage threshold with two decimal places on the Quality settings page](../images/io-56.png)
+    ![Coverage threshold with two decimal places on the Settings page](../images/io-56.png)
 
 -   Added support for the following ESLint plugins:
     -   [<span class="skip-vale">prettier-plugin-tailwindcss</span>](https://www.npmjs.com/package/prettier-plugin-tailwindcss) (CY-6570)

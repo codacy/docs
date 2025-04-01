@@ -24,14 +24,14 @@ Not enabled by default (for now): Since Lizard may introduce a significant numbe
 Currently, Lizard operates as a tool, meaning it does not impact:
 
 -   File-level complexity scores
--   Complexity Quality gates
+-   Complexity gates
 -   Dashboard complexity metrics
 
 However, we plan to integrate it as a metric soon—stay tuned!
 
 ## Ruff
 
-We've increased our offering in Python tools and we added Ruff as our new tool for Quality.
+We've increased our offering in Python tools and we added Ruff as our new tool.
 Ruff is a fast Python linter designed to be a drop-in replacement for tools like Flake8, isort, and Black. This tool significantly outperforms traditional Python linters, making it ideal for large codebases. Ruff supports over 500 linting rules and type-aware linting.
 
 Currently it's compatible with **Python up to 3.13**
