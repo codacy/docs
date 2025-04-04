@@ -524,7 +524,7 @@ Security and risk management supports checking the languages and infrastructure-
 
 The **Security and risk management dependencies** page displays a unified view of all dependencies used by your repositories. 
 
-To access the dependencies page, access the [overview page](#dashboard) and click the **Findings** tab.
+To access the dependencies page, access the [overview page](#dashboard) and click the **Dependencies** tab.
 
 ![Security and risk management dependencies page](images/security-risk-management-dependencies-list.png)
 
@@ -543,3 +543,36 @@ You're also able to click any dependency to find out more information about it.
 <sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/).  
 <sup><span id="eslint-plugin">5</span></sup>: Includes the plugins [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [security](https://www.npmjs.com/package/eslint-plugin-security), [security-node](https://www.npmjs.com/package/eslint-plugin-security-node), and [xss](https://www.npmjs.com/package/eslint-plugin-xss).  
 <sup><span id="license-scanning">6</span></sup>: Visit the [supported languages and tools](../getting-started/supported-languages-and-tools.md#supported-languages-and-tools) page for a list of supported languages.  
+
+
+## App scanning {: id="app-scanning"}
+
+!!! important
+    App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.
+
+The **Security and risk management app scanning** page allows organizations to scan APIs and Web Applications for security vulnerabilities. This part of our DAST (Dynamic Application Security Testing) capabilities powered by ZAP.
+
+To access the app scanning page page, access the [overview page](#dashboard) and click the **App scanning** tab.
+
+![Security and risk management app scanning page](images/security-risk-management-app-scanning.png)
+
+App scanning tests applications in real-world scenarios, making it possible to find configuration and authentication issues or other runtime vulnerabilities that may impact your application’s functionality and security. It’s also a good method for preventing regressions and doesn’t depend on a specific programming language. As long as the application can be accessed through a browser, a DAST tool can typically scan it for vulnerabilities.
+
+!!! note
+    Already using ZAP? Upload your results via the API.
+
+### How to scan a target
+To scan a target, you can either: go to the Security and Risk Management dashboard, and access the App Scanning tab, or set it up for automation using our API configuration.
+
+!!! important
+    Only admins and organization managers will be able to Create new targets and run scans (in app and via the API).
+
+
+From within the tab, you're able to configure a new target by inputting the url of the app or API you'd like to scan. You can configure up to 6 targets within your organization (If you need more, talk to your customer success representative).
+Scans can be triggered manually via the app or the API. As you click to start a scan, it will be first added to that target's queue and then ran. If you've got a new version of the app while you're running a scan, no problem: just add a new scan to the queue, and it will run immediately after. There are no limits to how many scans an organization can run per target, so this should accommodate all your deployment needs.
+Once a scan is complete, it's findings will be added to the findings tab.
+
+!!! note
+    At the moment, DAST issues are only visible to admin and organization admin roles. We'll be reviewing this issue soon.
+
+Next steps for this release include adding Authentication, which will allow scans to have a wider coverage and better, more meaningful results. If you have any feedback, feel free to share it with us or with your customer success manager.
