@@ -630,6 +630,7 @@ nav:
                 - codacy-api/examples/obtaining-current-issues-in-repositories.md
                 - codacy-api/examples/identifying-commits-without-coverage-data.md
                 - codacy-api/examples/uploading-dast-results.md
+                - codacy-api/examples/running-dast-scans.md
     - Managing Codacy Self-hosted: "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
