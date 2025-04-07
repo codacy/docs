@@ -71,7 +71,7 @@ Replace the placeholders with your own values:
 -   **ORGANIZATION:** Name of the organization on the Git provider. For example, `codacy`. You must have admin permissions over the organization on the Git provider.
 -   **DAST_TARGET_ID:** Identifier of a DAST target to analyze (obtained from the POST endpoint used to create a target or GET endpoint used to get a list of targets). For example, `457`. You must have admin permissions over the organization on the Git provider.
 
-Scans will be asynchronous to your deployment pipeline and the results will be posted within the SRM dashboard within the findings tab.
+Scans will be asynchronous to your deployment pipeline. Once completed, you can access all scan results by navigating to the **Security dashboard**, selecting the **Findings tab** and filtering by **Scan types > DAST/App scanning**.
 
 ## Examples to Run scans on Deployment
 
