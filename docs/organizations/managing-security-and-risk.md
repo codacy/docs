@@ -559,7 +559,7 @@ To access the app scanning page page, access the [overview page](#dashboard) and
 App scanning tests applications in real-world scenarios, making it possible to find configuration and authentication issues or other runtime vulnerabilities that may impact your application’s functionality and security. It’s also a good method for preventing regressions and doesn’t depend on a specific programming language. As long as the application can be accessed through a browser, a DAST tool can typically scan it for vulnerabilities.
 
 !!! note
-    Already using ZAP? Upload your results via the API.
+    Already using ZAP? [Upload your results via the API.](../codacy-api/examples/uploading-dast-results.md)
 
 ### How to scan a target
 To scan a target, you can either: go to the Security and Risk Management dashboard, and access the App Scanning tab, or set it up for automation using our API configuration.
@@ -568,8 +568,8 @@ To scan a target, you can either: go to the Security and Risk Management dashboa
     Only admins and organization managers will be able to Create new targets and run scans (in app and via the API).
 
 
-From within the tab, you're able to configure a new target by inputting the URL of the app or API you'd like to scan. You can configure up to 6 targets within your organization (If you need more, talk to your customer success representative).
-Scans can be triggered manually via the app or the API. As you click to start a scan, it will be first added to that target's queue and then ran. If you've got a new version of the app while you're running a scan, no problem: just add a new scan to the queue, and it will run immediately after. There are no limits to how many scans an organization can run per target, so this should accommodate all your deployment needs.
+From within the tab, you're able to configure a new target by inputting the URL of the app or API you'd like to scan. You can configure up to 6 targets within your organization (if you need more, talk to your customer success representative).
+Scans can be triggered manually via the app or the API. As you click to start a scan, it will be first added to that target's queue and then run. If you've got a new version of the app while running a scan, no problem: just add a new scan to the queue, and it will run immediately after. There are no limits to how many scans an organization can run per target, so this should accommodate all your deployment needs.
 Once a scan is complete, it's findings will be added to the findings tab.
 
 !!! note
