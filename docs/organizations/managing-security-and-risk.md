@@ -568,6 +568,13 @@ To scan a target, you can either: go to the Security and Risk Management dashboa
     Only admins and organization managers will be able to Create new targets and run scans (in app and via the API).
 
 
+<div>
+  <iframe width="100%" height="472" src="https://www.youtube.com/embed/qPwHlIGJYXs?si=Q2Y5cmRelodtc05n" title="DAST targets" frameborder="0" 
+allowfullscreen>
+  </iframe>
+</div>
+
+
 From within the tab, you're able to configure a new target by inputting the URL of the app or API you'd like to scan. You can configure up to 6 targets within your organization (if you need more, talk to your customer success representative).
 Scans can be triggered manually via the app or the API. As you click to start a scan, it will be first added to that target's queue and then run. If you've got a new version of the app while running a scan, no problem: just add a new scan to the queue, and it will run immediately after. There are no limits to how many scans an organization can run per target, so this should accommodate all your deployment needs.
 Once a scan is complete, it's findings will be added to the findings tab, where you can review them using the filter **Scan types > DAST/App scanning**.
