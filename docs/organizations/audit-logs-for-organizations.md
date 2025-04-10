@@ -62,6 +62,7 @@ The sections below list the events that Codacy logs for your organization at use
 | Unignore security item                                                                                               |Security item was unignored|`organizations.security.items.unignore`|
 | Create DAST target | A target for DAST scanning was created | `organizations.dast.target.create` |
 | Delete DAST target | A target for DAST scanning was deleted | `organizations.dast.target.delete` |
+| Analyze DAST target | Request a DAST scan of an existing target | `organizations.dast.target.analyze` |
 
 ### Repository
 
