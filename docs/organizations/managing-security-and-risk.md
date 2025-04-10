@@ -569,7 +569,7 @@ To scan a target, you can either go to the Security and risk management dashboar
 
 
 <div>
-  <iframe width="100%" height="472" src="https://www.youtube.com/embed/qPwHlIGJYXs?si=Q2Y5cmRelodtc05n" title="DAST targets" frameborder="0" 
+  <iframe width="100%" height="472" src="https://www.youtube.com/embed/qPwHlIGJYXs?autoplay=1&mute=1&showinfo=0&loop=1" title="DAST targets" frameborder="0"
 allowfullscreen>
   </iframe>
 </div>

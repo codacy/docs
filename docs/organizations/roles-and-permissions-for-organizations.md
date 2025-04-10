@@ -35,7 +35,7 @@ To change this, open your organization **Settings**, page **Roles and permission
 -   [Configure languages](../repositories-configure/languages.md)
 -   [Manage branches](../repositories-configure/managing-branches.md)
 -   [Reanalyze branches and pull requests](../faq/repositories/how-do-i-reanalyze-my-repository.md)
--   [Create and run Dynamic Application Security Testing scans](../organizations/managing-security-and-risk.md#app-scanning)
+-   [Create targets and run Dynamic Application Security Testing scans](../organizations/managing-security-and-risk.md#app-scanning)
 
 ![Configuring repository management permissions](images/roles-permissions-repo-management.png)
 
