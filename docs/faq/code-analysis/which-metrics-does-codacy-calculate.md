@@ -96,7 +96,7 @@ Codacy displays complexity on the following places:
 
 ## Duplication
 
-Codacy identifies clones or [sequences of duplicate code](https://en.wikipedia.org/wiki/Duplicate_code) that exist in at least two different places of the source code of your repository. Clones typically indicate deeper code quality issues and should be eliminated through abstraction when possible.
+Codacy identifies clones or [sequences of duplicate code](https://en.wikipedia.org/wiki/Duplicate_code) that exist in at least two different places of the source code of your repository. Clones typically indicate deeper code issues and should be eliminated through abstraction when possible.
 
 Codacy calculates duplication as follows:
 

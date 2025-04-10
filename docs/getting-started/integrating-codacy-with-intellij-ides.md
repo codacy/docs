@@ -1,6 +1,6 @@
 # Integrating Codacy with IntelliJ IDEs
 
-The [Codacy IntelliJ plugin](https://github.com/codacy/codacy-intellij-extension) is an open-source plugin for IntelliJ IDEs that lets you review the result of the Codacy analysis for a pull request, get the full list of problems found, and navigate to any Quality issue that you want to review and fix.
+The [Codacy IntelliJ plugin](https://github.com/codacy/codacy-intellij-extension) is an open-source plugin for IntelliJ IDEs that lets you review the result of the Codacy analysis for a pull request, get the full list of problems found, and navigate to any issue that you want to review and fix.
 
 !!! info "To use this plugin you need a [Codacy account](https://www.codacy.com/signup-codacy)"
 
@@ -12,15 +12,15 @@ The main view of the Codacy IntelliJ plugin provides a summary of the code quali
 
 In the main view, you can find the following information:
 
--   The **Quality status** of the pull request, either up to standards or not up to standards, based on the [Quality gates](../repositories-configure/adjusting-quality-gates.md) set for the repository.
+-   The **Status** of the pull request, either up to standards or not up to standards, based on the [Gates](../repositories-configure/adjusting-quality-gates.md) set for the repository.
 
--   Any **Quality issues** introduced or fixed by the pull request. These are the same issues you find in the [Quality Issues tabs](../repositories/pull-requests.md#issues-tabs) in the Codacy app and are also visible in IntelliJ's Problems tab.
+-   Any **issues** introduced or fixed by the pull request. These are the same issues you find in the [Issues tabs](../repositories/pull-requests.md#issues-tabs) in the Codacy app and are also visible in IntelliJ's Problems tab.
 
-    When this item is expanded, the number next to each file name is the total number of Quality issues that the pull request adds to that file.
+    When this item is expanded, the number next to each file name is the total number of issues that the pull request adds to that file.
 
 -   The **diff coverage** introduced by the pull request. The percentage next to each file name is the coverage variation for that file.
 
--   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Quality Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
+-   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
 
 -   Variations in **code complexity** introduced by the pull request.
 
@@ -56,12 +56,12 @@ After completing these steps, the main view shows the result of the latest Codac
 
 ## Reviewing pull request issues
 
-In the **Problems tool window**, Codacy displays the same Quality issues you find in the main view and lets you navigate to the exact line of code where the issue was found.
+In the **Problems tool window**, Codacy displays the same issues you find in the main view and lets you navigate to the exact line of code where the issue was found.
 
 !!! note
     Code coverage, duplicates, and complexity aren't currently shown in the Problems tool window.
 
-To review Quality issues:
+To review issues:
 
 1.  Open the file you want to review.
 
