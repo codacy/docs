@@ -522,7 +522,7 @@ Security and risk management supports checking the languages and infrastructure-
     The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, contact our customer success team.
 
 
-The **Security and risk management dependencies** page displays a unified view of all dependencies used by your repositories. 
+The **Security and Risk Management Dependencies** page displays a unified view of all dependencies used by your repositories. 
 
 To access the dependencies page, access the [overview page](#dashboard) and click the **Dependencies** tab.
 
@@ -534,7 +534,7 @@ You're also able to click any dependency to find out more information about it.
 
 ![Security and risk management dependency page](images/security-risk-management-dependencies-single.png)
 
- The dependency overview page offers a quick birds-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency.
+ The dependency overview page offers a quick bird's-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency.
 
 
 <sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/).  
@@ -550,9 +550,9 @@ You're also able to click any dependency to find out more information about it.
 !!! important
     App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.
 
-The **Security and risk management app scanning** page allows organizations to scan APIs and Web Applications for security vulnerabilities. This part of our DAST (Dynamic Application Security Testing) capabilities powered by ZAP.
+The **Security and risk management app scanning** page allows organizations to scan APIs and Web Applications for security vulnerabilities. This is part of our DAST (Dynamic Application Security Testing) capabilities, powered by ZAP.
 
-To access the app scanning page page, access the [overview page](#dashboard) and click the **App scanning** tab.
+To access the app scanning page, access the [overview page](#dashboard) and click the **App scanning** tab.
 
 ![Security and risk management app scanning page](images/security-risk-management-app-scanning.png)
 
@@ -562,10 +562,10 @@ App scanning tests applications in real-world scenarios, making it possible to f
     Already using ZAP? [Upload your results via the API.](../codacy-api/examples/uploading-dast-results.md)
 
 ### How to scan a target
-To scan a target, you can either: go to the Security and Risk Management dashboard, and access the App Scanning tab, or set it up for automation using our API configuration.
+To scan a target, you can either go to the Security and Risk Management dashboard and access the App Scanning tab, or set it up for automation using our API.
 
 !!! important
-    Only admins and organization managers will be able to Create new targets and run scans (in app and via the API).
+    Only admins and organization managers will be able to create new targets and run scans (both in-app and via the API).
 
 
 <div>
@@ -577,9 +577,9 @@ allowfullscreen>
 
 From within the tab, you're able to configure a new target by inputting the URL of the app or API you'd like to scan. You can configure up to 6 targets within your organization (if you need more, talk to your customer success representative).
 Scans can be triggered manually via the app or the API. As you click to start a scan, it will be first added to that target's queue and then run. If you've got a new version of the app while running a scan, no problem: just add a new scan to the queue, and it will run immediately after. There are no limits to how many scans an organization can run per target, so this should accommodate all your deployment needs.
-Once a scan is complete, it's findings will be added to the findings tab, where you can review them using the filter **Scan types > DAST/App scanning**.
+Once a scan is complete, its findings will be added to the findings tab, where you can review them using the filter **Scan types > DAST/App scanning**.
 
 !!! note
-    At the moment, DAST issues are only visible to admin and organization admin roles. We'll be reviewing this issue soon.
+    Currently, DAST issues are only visible to admin and organization admin roles. We'll be reviewing this issue soon.
 
 Next steps for this release include adding Authentication, which will allow scans to have a wider coverage and better, more meaningful results. If you have any feedback, feel free to share it with us or with your customer success manager.
