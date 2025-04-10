@@ -522,7 +522,7 @@ Security and risk management supports checking the languages and infrastructure-
     The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, contact our customer success team.
 
 
-The **Security and Risk Management Dependencies** page displays a unified view of all dependencies used by your repositories. 
+The **Security and risk management Dependencies** page displays a unified view of all dependencies used by your repositories. 
 
 To access the dependencies page, access the [overview page](#dashboard) and click the **Dependencies** tab.
 
@@ -562,10 +562,10 @@ App scanning tests applications in real-world scenarios, making it possible to f
     Already using ZAP? [Upload your results via the API.](../codacy-api/examples/uploading-dast-results.md)
 
 ### How to scan a target
-To scan a target, you can either go to the Security and Risk Management dashboard and access the App Scanning tab, or set it up for automation using our API.
+To scan a target, you can either go to the Security and risk management dashboard and access the App Scanning tab, or set it up for automation using our API.
 
 !!! important
-    Only admins and organization managers will be able to create new targets and run scans (both in-app and via the API).
+    Only [admins and organization managers](../organizations/roles-and-permissions-for-organizations.md) will be able to create new targets and run scans (both in-app and via the API).
 
 
 <div>
@@ -575,11 +575,11 @@ allowfullscreen>
 </div>
 
 
-From within the tab, you're able to configure a new target by inputting the URL of the app or API you'd like to scan. You can configure up to 6 targets within your organization (if you need more, talk to your customer success representative).
-Scans can be triggered manually via the app or the API. As you click to start a scan, it will be first added to that target's queue and then run. If you've got a new version of the app while running a scan, no problem: just add a new scan to the queue, and it will run immediately after. There are no limits to how many scans an organization can run per target, so this should accommodate all your deployment needs.
+From within the tab, you're able to configure a new target by inputting the URL of the app you'd like to scan. You can configure up to 6 targets within your organization (if you need more, talk to your customer success representative).
+Scans can be triggered manually via Codacy's UI. As you click to start a scan, it will be first added to a queue and eventually executed. You can also queue a scan for a target that is already being scanned, and it will eventually execute after the current scan finishes. There are no limits to how many scans an organization can run per target, so this should accommodate all your deployment needs.
 Once a scan is complete, its findings will be added to the findings tab, where you can review them using the filter **Scan types > DAST/App scanning**.
 
 !!! note
-    Currently, DAST issues are only visible to admin and organization admin roles. We'll be reviewing this issue soon.
+    Currently, DAST issues are only visible to admin and organization admin roles.
 
-Next steps for this release include adding Authentication, which will allow scans to have a wider coverage and better, more meaningful results. If you have any feedback, feel free to share it with us or with your customer success manager.
+Follow our [roadmap](https://roadmap.codacy.com) for the upcoming updates on this feature.
