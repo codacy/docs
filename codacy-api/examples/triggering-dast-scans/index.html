@@ -8,13 +8,13 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Instructions on how to migrate your Codacy Self-hosted database.">
+        <meta name="description" content="Instructions on how to trigger DAST/App using the API.">
       
       
-        <meta http-equiv="last-modified" content="2023-10-31 16:06:50">
+        <meta http-equiv="last-modified" content="2025-04-10 13:32:06">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/chart/maintenance/database/">
+        <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/triggering-dast-scans/">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Database migration guide - Codacy docs</title>
+        <title>Trigger Dynamic Application Security Testing (DAST) scans - Codacy docs</title>
       
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#database-migration-guide" class="md-skip">
+        <a href="#trigger-dynamic-application-security-testing-dast-scans" class="md-skip">
           Skip to content
         </a>
       
@@ -1134,10 +1134,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8" type="checkbox" id="nav-8" checked>
     
     <label class="md-nav__link" for="nav-8">
       Codacy API
@@ -1161,7 +1163,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/using-the-codacy-api/" title="Using the Codacy API" class="md-nav__link">
+    <a href="../../using-the-codacy-api/" title="Using the Codacy API" class="md-nav__link">
       Using the Codacy API
     </a>
   </li>
@@ -1173,7 +1175,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/api-tokens/" title="API tokens" class="md-nav__link">
+    <a href="../../api-tokens/" title="API tokens" class="md-nav__link">
       API tokens
     </a>
   </li>
@@ -1207,10 +1209,12 @@
           
           
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-8-5" type="checkbox" id="nav-8-5" checked>
     
     <label class="md-nav__link" for="nav-8-5">
       Examples
@@ -1234,7 +1238,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/adding-people-to-codacy-programmatically/" title="Adding people to Codacy programmatically" class="md-nav__link">
+    <a href="../adding-people-to-codacy-programmatically/" title="Adding people to Codacy programmatically" class="md-nav__link">
       Adding people to Codacy programmatically
     </a>
   </li>
@@ -1246,7 +1250,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/adding-repositories-to-codacy-programmatically/" title="Adding repositories to Codacy programmatically" class="md-nav__link">
+    <a href="../adding-repositories-to-codacy-programmatically/" title="Adding repositories to Codacy programmatically" class="md-nav__link">
       Adding repositories to Codacy programmatically
     </a>
   </li>
@@ -1258,7 +1262,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/creating-repository-api-tokens-programmatically/" title="Creating repository API tokens programmatically" class="md-nav__link">
+    <a href="../creating-repository-api-tokens-programmatically/" title="Creating repository API tokens programmatically" class="md-nav__link">
       Creating repository API tokens programmatically
     </a>
   </li>
@@ -1270,7 +1274,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/obtaining-code-quality-metrics-for-files/" title="Obtaining code quality metrics for files" class="md-nav__link">
+    <a href="../obtaining-code-quality-metrics-for-files/" title="Obtaining code quality metrics for files" class="md-nav__link">
       Obtaining code quality metrics for files
     </a>
   </li>
@@ -1282,7 +1286,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/obtaining-current-issues-in-repositories/" title="Obtaining current issues in repositories" class="md-nav__link">
+    <a href="../obtaining-current-issues-in-repositories/" title="Obtaining current issues in repositories" class="md-nav__link">
       Obtaining current issues in repositories
     </a>
   </li>
@@ -1294,7 +1298,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/identifying-commits-without-coverage-data/" title="Identifying commits without coverage data" class="md-nav__link">
+    <a href="../identifying-commits-without-coverage-data/" title="Identifying commits without coverage data" class="md-nav__link">
       Identifying commits without coverage data
     </a>
   </li>
@@ -1306,7 +1310,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/uploading-dast-results/" title="Uploading DAST results to Codacy" class="md-nav__link">
+    <a href="../uploading-dast-results/" title="Uploading DAST results to Codacy" class="md-nav__link">
       Uploading DAST results to Codacy
     </a>
   </li>
@@ -1316,34 +1320,78 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../../../codacy-api/examples/triggering-dast-scans/" title="Trigger Dynamic Application Security Testing (DAST) scans" class="md-nav__link">
-      Trigger Dynamic Application Security Testing (DAST) scans
-    </a>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-        
-      </ul>
-    </nav>
-  </li>
-
-    
-      
-      
-      
-
   
 
 
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--active">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9" checked>
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Trigger Dynamic Application Security Testing (DAST) scans
+      </label>
+    
+    <a href="./" title="Trigger Dynamic Application Security Testing (DAST) scans" class="md-nav__link md-nav__link--active">
+      Trigger Dynamic Application Security Testing (DAST) scans
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#creating-targets" class="md-nav__link">
+    Creating targets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#trigger-dast-analysis-scans" class="md-nav__link">
+    Trigger DAST analysis scans
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+        
+      </ul>
+    </nav>
+  </li>
+
+    
+      
+      
+      
+
+
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9" type="checkbox" id="nav-9">
     
     <label class="md-nav__link" for="nav-9">
       Managing Codacy Self-hosted
@@ -1367,7 +1415,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../" title="Installing Codacy Self-hosted" class="md-nav__link">
+    <a href="../../../chart/" title="Installing Codacy Self-hosted" class="md-nav__link">
       Installing Codacy Self-hosted
     </a>
   </li>
@@ -1379,7 +1427,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../requirements/" title="System requirements" class="md-nav__link">
+    <a href="../../../chart/requirements/" title="System requirements" class="md-nav__link">
       System requirements
     </a>
   </li>
@@ -1416,7 +1464,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../infrastructure/eks-quickstart/" title="Creating an Amazon EKS cluster" class="md-nav__link">
+    <a href="../../../chart/infrastructure/eks-quickstart/" title="Creating an Amazon EKS cluster" class="md-nav__link">
       Creating an Amazon EKS cluster
     </a>
   </li>
@@ -1428,7 +1476,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../infrastructure/microk8s-quickstart/" title="Creating a MicroK8s cluster" class="md-nav__link">
+    <a href="../../../chart/infrastructure/microk8s-quickstart/" title="Creating a MicroK8s cluster" class="md-nav__link">
       Creating a MicroK8s cluster
     </a>
   </li>
@@ -1495,7 +1543,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/integrations/github-cloud/" title="GitHub Cloud" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/github-cloud/" title="GitHub Cloud" class="md-nav__link">
       GitHub Cloud
     </a>
   </li>
@@ -1507,7 +1555,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/integrations/github-enterprise/" title="GitHub Enterprise" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/github-enterprise/" title="GitHub Enterprise" class="md-nav__link">
       GitHub Enterprise
     </a>
   </li>
@@ -1519,7 +1567,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/integrations/github-app-create/" title="Creating a GitHub App" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/github-app-create/" title="Creating a GitHub App" class="md-nav__link">
       Creating a GitHub App
     </a>
   </li>
@@ -1531,7 +1579,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/integrations/gitlab-cloud/" title="GitLab Cloud" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/gitlab-cloud/" title="GitLab Cloud" class="md-nav__link">
       GitLab Cloud
     </a>
   </li>
@@ -1543,7 +1591,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/integrations/gitlab-enterprise/" title="GitLab Enterprise" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/gitlab-enterprise/" title="GitLab Enterprise" class="md-nav__link">
       GitLab Enterprise
     </a>
   </li>
@@ -1555,7 +1603,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/integrations/bitbucket-cloud/" title="Bitbucket Cloud" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/bitbucket-cloud/" title="Bitbucket Cloud" class="md-nav__link">
       Bitbucket Cloud
     </a>
   </li>
@@ -1567,7 +1615,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/integrations/bitbucket-server/" title="Bitbucket Server" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/bitbucket-server/" title="Bitbucket Server" class="md-nav__link">
       Bitbucket Server
     </a>
   </li>
@@ -1579,7 +1627,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/integrations/email/" title="SMTP server" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/email/" title="SMTP server" class="md-nav__link">
       SMTP server
     </a>
   </li>
@@ -1596,7 +1644,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/caching/" title="Caching" class="md-nav__link">
+    <a href="../../../chart/configuration/caching/" title="Caching" class="md-nav__link">
       Caching
     </a>
   </li>
@@ -1608,7 +1656,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/monitoring/" title="Monitoring" class="md-nav__link">
+    <a href="../../../chart/configuration/monitoring/" title="Monitoring" class="md-nav__link">
       Monitoring
     </a>
   </li>
@@ -1620,7 +1668,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../configuration/logging/" title="Logging" class="md-nav__link">
+    <a href="../../../chart/configuration/logging/" title="Logging" class="md-nav__link">
       Logging
     </a>
   </li>
@@ -1635,12 +1683,10 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9-5" type="checkbox" id="nav-9-5" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-9-5" type="checkbox" id="nav-9-5">
     
     <label class="md-nav__link" for="nav-9-5">
       Maintenance and operations
@@ -1664,7 +1710,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../license/" title="Updating your Codacy license" class="md-nav__link">
+    <a href="../../../chart/maintenance/license/" title="Updating your Codacy license" class="md-nav__link">
       Updating your Codacy license
     </a>
   </li>
@@ -1676,7 +1722,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../upgrade/" title="Upgrading Codacy" class="md-nav__link">
+    <a href="../../../chart/maintenance/upgrade/" title="Upgrading Codacy" class="md-nav__link">
       Upgrading Codacy
     </a>
   </li>
@@ -1688,7 +1734,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../uninstall/" title="Uninstalling Codacy" class="md-nav__link">
+    <a href="../../../chart/maintenance/uninstall/" title="Uninstalling Codacy" class="md-nav__link">
       Uninstalling Codacy
     </a>
   </li>
@@ -1698,64 +1744,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Database migration guide
-      </label>
-    
-    <a href="./" title="Database migration guide" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../chart/maintenance/database/" title="Database migration guide" class="md-nav__link">
       Database migration guide
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#requirements" class="md-nav__link">
-    Requirements
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#dumping-your-current-data-out-of-a-running-postgres" class="md-nav__link">
-    Dumping your current data out of a running Postgres
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#sample-script" class="md-nav__link">
-    Sample script
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -1795,7 +1788,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../troubleshoot/troubleshoot/" title="Troubleshooting Codacy Self-hosted" class="md-nav__link">
+    <a href="../../../chart/troubleshoot/troubleshoot/" title="Troubleshooting Codacy Self-hosted" class="md-nav__link">
       Troubleshooting Codacy Self-hosted
     </a>
   </li>
@@ -1807,7 +1800,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../troubleshoot/logs-collect/" title="Collecting logs for Support" class="md-nav__link">
+    <a href="../../../chart/troubleshoot/logs-collect/" title="Collecting logs for Support" class="md-nav__link">
       Collecting logs for Support
     </a>
   </li>
@@ -1819,7 +1812,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../troubleshoot/k8s-cheatsheet/" title="Kubernetes cheatsheet" class="md-nav__link">
+    <a href="../../../chart/troubleshoot/k8s-cheatsheet/" title="Kubernetes cheatsheet" class="md-nav__link">
       Kubernetes cheatsheet
     </a>
   </li>
@@ -4456,67 +4449,121 @@
                   
                 
                 
-                <h1 id="database-migration-guide">Database migration guide<a class="headerlink" href="#database-migration-guide" title="Permanent link">#</a></h1>
-<p>Migrating databases between pods is a straightforward process with 3 steps:</p>
-<ol>
-<li>Dump the databases to a dump file.</li>
-<li>Apply the dump file.</li>
-<li>Delete the dump file.</li>
-</ol>
-<p>You will have to dump all the following databases:</p>
-<ol>
-<li>accounts</li>
-<li>analysis</li>
-<li>filestore</li>
-<li>jobs</li>
-<li>metrics</li>
-<li>results</li>
-</ol>
-<h2 id="requirements">Requirements<a class="headerlink" href="#requirements" title="Permanent link">#</a></h2>
-<p>The following operations must be executed by a user which has elevated access (<code>SUPERUSER</code>) in the Postgres databases.</p>
-<h2 id="dumping-your-current-data-out-of-a-running-postgres">Dumping your current data out of a running Postgres<a class="headerlink" href="#dumping-your-current-data-out-of-a-running-postgres" title="Permanent link">#</a></h2>
-<p>You will need to know the following:</p>
-<ul>
-<li><code>$HOSTNAME</code> - the hostname where the database is located.</li>
-<li><code>$DB_USER</code> - the username with privileged access to the database that will perform the dump.</li>
-<li><code>$DB</code> - the database that you would like to export.</li>
-<li><code>$DB_PASSWORD</code> - the database password.</li>
-</ul>
-<h3 id="pg_dump">pg_dump<a class="headerlink" href="#pg_dump" title="Permanent link">#</a></h3>
-<p>The following command lets you extract a given database into a dump file:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span><span class="w"> </span>pg_dump<span class="w"> </span>-h<span class="w"> </span><span class="nv">$SRC_HOSTNAME</span><span class="w"> </span>-p<span class="w"> </span><span class="nv">$SRC_HOSTPORT</span><span class="w"> </span>-U<span class="w"> </span><span class="nv">$DB_USER</span><span class="w"> </span>--clean<span class="w"> </span>-Fc<span class="w"> </span><span class="nv">$db</span><span class="w"> </span>&gt;<span class="w"> </span>/tmp/<span class="nv">$db</span>.dump
-</code></pre></div>
-<p>This will dump the file with the <code>.dump</code> extension into the <code>/tmp</code> folder.</p>
-<p><a href="https://www.postgresql.org/docs/12/app-pgdump.html">For more information and additional options, please check the official documentation.</a></p>
-<h3 id="pg_restore">pg_restore<a class="headerlink" href="#pg_restore" title="Permanent link">#</a></h3>
-<p>To restore a database, you can run a <code>pg_restore</code> command to consume the dump file and replicate the data onto Postgres:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span><span class="w"> </span>pg_restore<span class="w"> </span>-h<span class="w"> </span><span class="nv">$DEST_HOSTNAME</span><span class="w"> </span>-p<span class="w"> </span><span class="nv">$DEST_HOSTPORT</span><span class="w"> </span>-U<span class="w"> </span><span class="nv">$DB_USER</span><span class="w"> </span>-j<span class="w"> </span><span class="m">8</span><span class="w"> </span>-d<span class="w"> </span><span class="nv">$db</span><span class="w"> </span>-n<span class="w"> </span>public<span class="w"> </span>--clean<span class="w"> </span><span class="nv">$db</span>.dump
-</code></pre></div>
-<p>With the custom format from <code>pg_dump</code> (by using <code>-Fc</code>) we can now invoke <code>pg_restore</code> with multiple parallel jobs. This should make the restoration of the databases quicker, depending on which value you provide for the number of parallel jobs to execute. We provide a value of 8 parallel jobs in the example above (<code>-j 8</code>).</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you run into any problems while restoring, make sure that you have the database created in that Postgres instance (e.g. before restoring the jobs database the Postgres instance should have an empty database called <code>jobs</code> created there).</p>
+                <h1 id="trigger-dynamic-application-security-testing-dast-scans">Trigger Dynamic Application Security Testing (DAST) scans<a class="headerlink" href="#trigger-dynamic-application-security-testing-dast-scans" title="Permanent link">#</a></h1>
+<p>Thanks to the new app scanning capabilities available on the Security and risk management dashboard, it's now possible to automate application scanning via Codacy's API. This means that, with little effort, you'll be able to trigger app scanning on demand every time you deploy a new version of your app.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.
+Check your <a href="../../../organizations/roles-and-permissions-for-organizations/">permissions</a>. Only git provider admins and organization managers will be able to create new targets and trigger scans (in app and via the API).
+Get your API key. All the methods below require you to authenticate via your <a href="../../api-tokens/#account-api-tokens">account's API token</a>.</p>
 </div>
-<p>For more information and additional options, please check the <a href="https://www.postgresql.org/docs/12/app-pgrestore.html">official documentation</a>.</p>
-<h2 id="sample-script">Sample script<a class="headerlink" href="#sample-script" title="Permanent link">#</a></h2>
-<p>Assuming you have the same <code>$DB_USER</code> and <code>$DB_PASSWORD</code>, and that you want to migrate all the databases from the same hostname to the same destination hostname, you could migrate your databases with the following sample script:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">SRC_HOSTNAME</span><span class="o">=</span><span class="nv">$1</span>
-<span class="nv">SRC_HOSTPORT</span><span class="o">=</span><span class="nv">$2</span>
-<span class="nv">DEST_HOSTNAME</span><span class="o">=</span><span class="nv">$3</span>
-<span class="nv">DEST_HOSTPORT</span><span class="o">=</span><span class="nv">$4</span>
-<span class="nv">DB_USER</span><span class="o">=</span><span class="nv">$5</span>
-<span class="nv">DB_PASSWORD</span><span class="o">=</span><span class="nv">$6</span>
-
-<span class="nb">declare</span><span class="w"> </span>-a<span class="w"> </span><span class="nv">dbs</span><span class="o">=(</span>accounts<span class="w"> </span>analysis<span class="w"> </span>filestore<span class="w"> </span><span class="nb">jobs</span><span class="w"> </span>metrics<span class="w"> </span>results<span class="o">)</span>
-<span class="k">for</span><span class="w"> </span>db<span class="w"> </span><span class="k">in</span><span class="w"> </span><span class="si">${</span><span class="nv">dbs</span><span class="p">[@]</span><span class="si">}</span>
-<span class="k">do</span>
-<span class="w">  </span><span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span><span class="w"> </span>pg_dump<span class="w"> </span>-h<span class="w"> </span><span class="nv">$SRC_HOSTNAME</span><span class="w"> </span>-p<span class="w"> </span><span class="nv">$SRC_HOSTPORT</span><span class="w"> </span>-U<span class="w"> </span><span class="nv">$DB_USER</span><span class="w"> </span>--clean<span class="w"> </span>-Fc<span class="w"> </span><span class="nv">$db</span><span class="w"> </span>&gt;<span class="w"> </span>/tmp/<span class="nv">$db</span>.dump
-<span class="w">  </span><span class="nv">PGPASSWORD</span><span class="o">=</span><span class="nv">$DB_PASSWORD</span><span class="w"> </span>pg_restore<span class="w"> </span>-h<span class="w"> </span><span class="nv">$DEST_HOSTNAME</span><span class="w"> </span>-p<span class="w"> </span><span class="nv">$DEST_HOSTPORT</span><span class="w"> </span>-U<span class="w"> </span><span class="nv">$DB_USER</span><span class="w"> </span>-d<span class="w"> </span><span class="nv">$db</span><span class="w"> </span>-n<span class="w"> </span>public<span class="w"> </span>--clean<span class="w"> </span><span class="nv">$db</span>.dump
-<span class="k">done</span>
+<h2 id="creating-targets">Creating targets<a class="headerlink" href="#creating-targets" title="Permanent link">#</a></h2>
+<p>Before the automation process itself, you need to create a target. Targets are single units that contain all the configurations of your scan, in this case the URL (and later on other configurations, like authentication details and OpenAPI definition).
+Targets only need to be defined once. The target's URL is immutable, so, if you need to change it, you'll need to delete the target and create a new one.</p>
+<p>To create a target:</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.codacy.com/api/v3/organizations/<span class="o">{</span>GIT_PROVIDER<span class="o">}</span>/<span class="o">{</span>ORGANIZATION<span class="o">}</span>/dast/targets<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Accept: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;api-token: {API_KEY}&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;url&quot;: &quot;https://api.domain.com/v1&quot;}&#39;</span>
 </code></pre></div>
-<p>As an example, you could run the script as follows:</p>
-<div class="highlight"><pre><span></span><code>migrateDBs.sh<span class="w"> </span>postgres–instance1.us-east-1.rds.amazonaws.com<span class="w"> </span><span class="m">25060</span><span class="w"> </span>postgres–instance1.eu-west-1.rds.amazonaws.com<span class="w"> </span><span class="m">25060</span><span class="w"> </span>super_user<span class="w"> </span>secret_password
+<p>Replace the placeholders with your own values:</p>
+<ul>
+<li><strong>API_KEY:</strong> <a href="../../api-tokens/#account-api-tokens">Account API token</a> used to authenticate on the Codacy API.</li>
+<li>
+<p><strong>GIT_PROVIDER:</strong> Git provider hosting of the organization, using one of the values in the table below. For example, <code>gh</code> for GitHub Cloud.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Git provider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gh</code></td>
+<td>GitHub Cloud</td>
+</tr>
+<tr>
+<td><code>ghe</code></td>
+<td>GitHub Enterprise</td>
+</tr>
+<tr>
+<td><code>gl</code></td>
+<td>GitLab Cloud</td>
+</tr>
+<tr>
+<td><code>gle</code></td>
+<td>GitLab Enterprise</td>
+</tr>
+<tr>
+<td><code>bb</code></td>
+<td>Bitbucket Cloud</td>
+</tr>
+<tr>
+<td><code>bbe</code></td>
+<td>Bitbucket Server</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>ORGANIZATION:</strong> Name of the organization on the Git provider. For example, <code>codacy</code>. You must have admin permissions over the organization on the Git provider.</p>
+</li>
+</ul>
+<p>Once you create the target you'll get the 'Target Id' as a response. That id will be used to trigger DAST scans in the next section.</p>
+<h2 id="trigger-dast-analysis-scans">Trigger DAST analysis scans<a class="headerlink" href="#trigger-dast-analysis-scans" title="Permanent link">#</a></h2>
+<p>Once your targets are created you can trigger an analysis by calling the '<a href="https://api.codacy.com/api/api-docs#analyzedasttarget">Analyze DAST target</a>' endpoint.</p>
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.codacy.com/api/v3/organizations/<span class="o">{</span>GIT_PROVIDER<span class="o">}</span>/<span class="o">{</span>ORGANIZATION<span class="o">}</span>/dast/targets/<span class="o">{</span>DAST_TARGET_ID<span class="o">}</span>/analyze<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Accept: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;api-token: {API_KEY}&quot;</span>
 </code></pre></div>
+<p>Replace the placeholders with your own values:</p>
+<ul>
+<li><strong>API_KEY:</strong> <a href="../../api-tokens/#account-api-tokens">Account API token</a> used to authenticate on the Codacy API.</li>
+<li>
+<p><strong>GIT_PROVIDER:</strong> Git provider hosting of the organization, using one of the values in the table below. For example, <code>gh</code> for GitHub Cloud.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Git provider</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>gh</code></td>
+<td>GitHub Cloud</td>
+</tr>
+<tr>
+<td><code>ghe</code></td>
+<td>GitHub Enterprise</td>
+</tr>
+<tr>
+<td><code>gl</code></td>
+<td>GitLab Cloud</td>
+</tr>
+<tr>
+<td><code>gle</code></td>
+<td>GitLab Enterprise</td>
+</tr>
+<tr>
+<td><code>bb</code></td>
+<td>Bitbucket Cloud</td>
+</tr>
+<tr>
+<td><code>bbe</code></td>
+<td>Bitbucket Server</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>ORGANIZATION:</strong> Name of the organization on the Git provider. For example, <code>codacy</code>. You must have admin permissions over the organization on the Git provider.
+<strong>DAST_TARGET_ID:</strong> Identifier of a DAST target to analyze (obtained in the <a href="./#creating-targets">previous section</a>. For example, <code>457</code>. You must have admin permissions over the organization on the Git provider.</p>
+</li>
+</ul>
+<p>Scans occur asynchronously. To monitor an ongoing scan you can use the <a href="../../../organizations/managing-security-and-risk/#app-scanning">target management page in Codacy</a>. Once completed, you can access all scan results by navigating to the <strong>Security dashboard</strong>, selecting the <strong>Findings tab</strong> and filtering by <strong>Scan types &gt; DAST/App scanning</strong>.</p>
               
               
                 
@@ -4560,7 +4607,7 @@
           <br>
         </div>
         <p>
-          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Database migration guide%22">create a more detailed issue on our GitHub repository</a>.
+          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Trigger Dynamic Application Security Testing (DAST) scans%22">create a more detailed issue on our GitHub repository</a>.
         </p>
       </div>
     </div>
@@ -4569,14 +4616,14 @@
     </p>
     
     <p>
-      <a href="https://github.com/codacy/chart/edit/master/docs/maintenance/database.md" title="Edit this page">
+      <a href="https://github.com/codacy/docs/edit/master/docs/codacy-api/examples/triggering-dast-scans.md" title="Edit this page">
         Edit this page on GitHub
       </a>
       if you notice something wrong or missing.
     </p>
     
     <p>
-      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Database migration guide">support@codacy.com</a>.
+      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Trigger Dynamic Application Security Testing (DAST) scans">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -4673,7 +4720,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 31, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 10, 2025</span>
     
   </small>
 </div>

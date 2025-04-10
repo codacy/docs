@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2025-03-12 15:42:21">
+        <meta http-equiv="last-modified" content="2025-04-10 13:32:06">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -1087,6 +1087,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#app-scanning" class="md-nav__link">
+    App scanning
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -1433,6 +1440,18 @@
   <li class="md-nav__item">
     <a href="../../codacy-api/examples/uploading-dast-results/" title="Uploading DAST results to Codacy" class="md-nav__link">
       Uploading DAST results to Codacy
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../codacy-api/examples/triggering-dast-scans/" title="Trigger Dynamic Application Security Testing (DAST) scans" class="md-nav__link">
+      Trigger Dynamic Application Security Testing (DAST) scans
     </a>
   </li>
 
@@ -5082,19 +5101,52 @@ Note that some issues just don't have a security category. These issues will rem
 <p class="admonition-title">Important</p>
 <p>The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, contact our customer success team.</p>
 </div>
-<p>The <strong>Security and risk management dependencies</strong> page displays a unified view of all dependencies used by your repositories. </p>
-<p>To access the dependencies page, access the <a href="#dashboard">overview page</a> and click the <strong>Findings</strong> tab.</p>
+<p>The <strong>Security and risk management Dependencies</strong> page displays a unified view of all dependencies used by your repositories. </p>
+<p>To access the dependencies page, access the <a href="#dashboard">overview page</a> and click the <strong>Dependencies</strong> tab.</p>
 <p><img alt="Security and risk management dependencies page" src="../images/security-risk-management-dependencies-list.png" /></p>
 <p>When viewing dependencies, you'll be presented with a list of the dependencies used by all repositories in your organization. For each dependency, you'll be able to see how many repositories are making use of it, how many different versions you are using across all repositories, and how many security findings were found due to the presence of that dependency.</p>
 <p>You're also able to click any dependency to find out more information about it.</p>
 <p><img alt="Security and risk management dependency page" src="../images/security-risk-management-dependencies-single.png" /></p>
-<p>The dependency overview page offers a quick birds-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency.</p>
+<p>The dependency overview page offers a quick bird's-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency.</p>
 <p><sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for <a href="https://semgrep.dev/pricing/">Semgrep Pro</a>.<br />
 <sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.<br />
 <sup><span id="client-side">3</span></sup>: Supported as a <a href="../../repositories-configure/local-analysis/client-side-tools/">client-side tool</a>.<br />
 <sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin <a href="https://find-sec-bugs.github.io/">Find Security Bugs</a>.<br />
 <sup><span id="eslint-plugin">5</span></sup>: Includes the plugins <a href="https://www.npmjs.com/package/eslint-plugin-no-unsanitized">no-unsanitized</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security">security</a>, <a href="https://www.npmjs.com/package/eslint-plugin-security-node">security-node</a>, and <a href="https://www.npmjs.com/package/eslint-plugin-xss">xss</a>.<br />
 <sup><span id="license-scanning">6</span></sup>: Visit the <a href="../../getting-started/supported-languages-and-tools/#supported-languages-and-tools">supported languages and tools</a> page for a list of supported languages.  </p>
+<h2 id="app-scanning">App scanning<a class="headerlink" href="#app-scanning" title="Permanent link">#</a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.</p>
+</div>
+<p>The <strong>Security and risk management app scanning</strong> page allows organizations to scan APIs and Web Applications for security vulnerabilities. This is part of our DAST (Dynamic Application Security Testing) capabilities, powered by ZAP.</p>
+<p>To access the app scanning page, access the <a href="#dashboard">overview page</a> and click the <strong>App scanning</strong> tab.</p>
+<p><img alt="Security and risk management app scanning page" src="../images/security-risk-management-app-scanning.png" /></p>
+<p>App scanning tests applications in real-world scenarios, making it possible to find configuration and authentication issues or other runtime vulnerabilities that may impact your application’s functionality and security. It’s also a good method for preventing regressions and doesn’t depend on a specific programming language. As long as the application can be accessed through a browser, a DAST tool can typically scan it for vulnerabilities.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Already using ZAP? <a href="../../codacy-api/examples/uploading-dast-results/">Upload your results via the API.</a></p>
+</div>
+<h3 id="how-to-scan-a-target">How to scan a target<a class="headerlink" href="#how-to-scan-a-target" title="Permanent link">#</a></h3>
+<p>To scan a target, you can either go to the Security and risk management dashboard and access the App Scanning tab, or set it up for automation using our API.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Only <a href="../roles-and-permissions-for-organizations/">admins and organization managers</a> will be able to create new targets and run scans (both in-app and via the API).</p>
+</div>
+<div>
+  <iframe width="100%" height="472" src="https://www.youtube.com/embed/qPwHlIGJYXs?autoplay=1&mute=1&showinfo=0&loop=1" title="DAST targets" frameborder="0"
+allowfullscreen>
+  </iframe>
+</div>
+
+<p>From within the tab, you're able to configure a new target by inputting the URL of the app you'd like to scan. You can configure up to 6 targets within your organization (if you need more, talk to your customer success representative).
+Scans can be triggered manually via Codacy's UI. As you click to start a scan, it will be first added to a queue and eventually executed. You can also queue a scan for a target that is already being scanned, and it will eventually execute after the current scan finishes. There are no limits to how many scans an organization can run per target, so this should accommodate all your deployment needs.
+Once a scan is complete, its findings will be added to the findings tab, where you can review them using the filter <strong>Scan types &gt; DAST/App scanning</strong>.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Currently, DAST issues are only visible to admin and organization admin roles.</p>
+</div>
+<p>Follow our <a href="https://roadmap.codacy.com">roadmap</a> for the upcoming updates on this feature.</p>
               
               
                 
@@ -5251,7 +5303,7 @@ Note that some issues just don't have a security category. These issues will rem
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 12, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 10, 2025</span>
     
   </small>
 </div>
