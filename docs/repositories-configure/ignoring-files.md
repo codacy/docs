@@ -18,6 +18,8 @@ To exclude files from your repository analysis open your repository **Settings**
     -   You can also ignore files using your own [tool configuration files](configuring-code-patterns.md#using-your-own-tool-configuration-files), although this depends on the option being supported by each tool.
 
     -   {% include-markdown "../assets/includes/coverage-ignore.md" %}
+    
+    -  When excluding files from **Duplication** analysis, you must state the **entire path** to the files. Unlike quality analysis, wildcards will not work, resulting in files not being excluded.
 
 If you need more flexibility in ignoring files, use a Codacy configuration file to [define a custom list of file paths to exclude](codacy-configuration-file.md#syntax-for-ignoring-files).
 
