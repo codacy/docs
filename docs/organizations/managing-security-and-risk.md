@@ -225,10 +225,7 @@ Codacy closes a finding when it's not detected in a subsequent DAST report. If a
 
 ## Finding severities and deadlines {: id="item-severities-and-deadlines"}
 
-!!! note
-    Currently, Codacy doesn't support customizing the severity rules for security findings.
-
-The following table defines finding severities and the number of days to the deadline to fix the associated security issue, based on the importance of the underlying issue:
+The following table defines finding severities and the default number of days to the deadline to fix the associated security issue, based on the importance of the underlying issue:
 
 | Finding<br/>severity | <br/>Days to deadline | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority <sup>1</sup> |
 |----------------------|-----------------------|--------------------------------------|-------------------------------------------------|
@@ -238,6 +235,21 @@ The following table defines finding severities and the number of days to the dea
 | Low                  | 120                   | Minor                                | Low and other/custom                            |
 
 <small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small>
+
+### Customize deadlines {: id="item-configurable-deadlines"}
+
+!!! info "This feature is available only to [organization admins and organization managers](../organizations/roles-and-permissions-for-organizations.md)."
+
+You can configure your findings deadline clicking on the "Configure SLAs" button, on the right corner of the page.
+
+![Security and risk management SLAs configure](images/security-risk-management-slas-configure.png)
+
+By opening the configuration modal, you'll be able to input your deadline preferences for each severity. Each deadline requires at least 1 day and can't exceed the maximum of 9999 days to be solved.
+
+![Security and risk management SLAs configuration modal](images/security-risk-management-slas-modal.png)
+
+As soon as changes are saved, your findings statuses will be updated accordingly, whether they are opened or closed.
+You are also able to reset to Codacy default deadline values (see table above) at any time.
 
 ## Finding statuses {: id="item-statuses"}
 
