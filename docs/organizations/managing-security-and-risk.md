@@ -579,6 +579,13 @@ From within the tab, you're able to configure a new target by inputting the URL 
 Scans can be triggered manually via Codacy's UI. As you click to start a scan, it will be first added to a queue and eventually executed. You can also queue a scan for a target that is already being scanned, and it will eventually execute after the current scan finishes. There are no limits to how many scans an organization can run per target, so this should accommodate all your deployment needs.
 Once a scan is complete, its findings will be added to the findings tab, where you can review them using the filter **Scan types > DAST/App scanning**.
 
+!!! important
+    Depending on the application being scanned, a DAST analysis can take a very long time to complete.
+    To guarantee the stability of Codacy's platform and fair access to analysis slots, DAST analysis can timeout when running for too long.
+
+!!! important
+    Failed analysis are retried a number of times according to their failure reason. A retry will re-enqueue the analysis, to be executed as soon as possible, while respecting the available analysis slots.
+
 !!! note
     Currently, DAST issues are only visible to admin and organization admin roles.
 
