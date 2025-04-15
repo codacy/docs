@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2025-04-10 13:32:06">
+        <meta http-equiv="last-modified" content="2025-04-15 13:10:28">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -4704,11 +4704,7 @@
 <p>Codacy opens a finding for each security issue detected in the DAST report. If subsequent reports identify the same issue, Codacy updates the existing finding.</p>
 <p>Codacy closes a finding when it's not detected in a subsequent DAST report. If a previously closed issue reappears in a later report, Codacy reopens the finding.</p>
 <h2 id="item-severities-and-deadlines">Finding severities and deadlines<a class="headerlink" href="#item-severities-and-deadlines" title="Permanent link">#</a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>Currently, Codacy doesn't support customizing the severity rules for security findings.</p>
-</div>
-<p>The following table defines finding severities and the number of days to the deadline to fix the associated security issue, based on the importance of the underlying issue:</p>
+<p>The following table defines finding severities and the default number of days to the deadline to fix the associated security issue, based on the importance of the underlying issue:</p>
 <table>
 <thead>
 <tr>
@@ -4746,6 +4742,16 @@
 </tbody>
 </table>
 <p><small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small></p>
+<h3 id="item-configurable-deadlines">Customize deadlines<a class="headerlink" href="#item-configurable-deadlines" title="Permanent link">#</a></h3>
+<div class="admonition info">
+<p class="admonition-title">This feature is available only to <a href="../roles-and-permissions-for-organizations/">organization admins and organization managers</a>.</p>
+</div>
+<p>You can configure your findings deadline by clicking on the "Configure SLAs" button, on the right corner of the page.</p>
+<p><img alt="Security and risk management SLAs configure" src="../images/security-risk-management-slas-configure.png" /></p>
+<p>In the open configuration modal you'll be able to input your deadline preferences for each severity. Each deadline must be between a minimum of 1 day and a maximum of 9999 days.</p>
+<p><img alt="Security and risk management SLAs configuration modal" src="../images/security-risk-management-slas-modal.png" /></p>
+<p>As soon as changes are saved, your open findings statuses will be updated accordingly.
+You are also able to reset to Codacy default deadline values (see table above) at any time.</p>
 <h2 id="item-statuses">Finding statuses<a class="headerlink" href="#item-statuses" title="Permanent link">#</a></h2>
 <p>The following table describes how finding statuses map to deadlines:</p>
 <table>
@@ -5303,7 +5309,7 @@ Once a scan is complete, its findings will be added to the findings tab, where y
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 10, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 15, 2025</span>
     
   </small>
 </div>
