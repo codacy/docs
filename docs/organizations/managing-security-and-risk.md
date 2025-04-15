@@ -240,15 +240,15 @@ The following table defines finding severities and the default number of days to
 
 !!! info "This feature is available only to [organization admins and organization managers](../organizations/roles-and-permissions-for-organizations.md)."
 
-You can configure your findings deadline clicking on the "Configure SLAs" button, on the right corner of the page.
+You can configure your findings deadline by clicking on the "Configure SLAs" button, on the right corner of the page.
 
 ![Security and risk management SLAs configure](images/security-risk-management-slas-configure.png)
 
-By opening the configuration modal, you'll be able to input your deadline preferences for each severity. Each deadline requires at least 1 day and can't exceed the maximum of 9999 days to be solved.
+In the open configuration modal you'll be able to input your deadline preferences for each severity. Each deadline must be between a minimum of 1 day and a maximum of 9999 days.
 
 ![Security and risk management SLAs configuration modal](images/security-risk-management-slas-modal.png)
 
-As soon as changes are saved, your findings statuses will be updated accordingly, whether they are opened or closed.
+As soon as changes are saved, your open findings statuses will be updated accordingly.
 You are also able to reset to Codacy default deadline values (see table above) at any time.
 
 ## Finding statuses {: id="item-statuses"}
