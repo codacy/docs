@@ -570,6 +570,9 @@ To access the app scanning page, access the [overview page](#dashboard) and clic
 
 App scanning tests applications in real-world scenarios, making it possible to find configuration and authentication issues or other runtime vulnerabilities that may impact your application’s functionality and security. It’s also a good method for preventing regressions and doesn’t depend on a specific programming language. As long as the application can be accessed through a browser, a DAST tool can typically scan it for vulnerabilities.
 
+In concrete, when you start a scan, Codacy runs a baseline scan using ZAP. This is a non-intrusive scan that identifies common security issues without actively attacking your application.
+It’s safe to run for production applications and helps detect problems like missing security headers, information disclosure through HTTP response headers, insecure cookie configurations, and others.
+
 !!! note
     Already using ZAP? [Upload your results via the API.](../codacy-api/examples/uploading-dast-results.md)
 
@@ -590,6 +593,13 @@ allowfullscreen>
 From within the tab, you're able to configure a new target by inputting the URL of the app you'd like to scan. You can configure up to 6 targets within your organization (if you need more, talk to your customer success representative).
 Scans can be triggered manually via Codacy's UI. As you click to start a scan, it will be first added to a queue and eventually executed. You can also queue a scan for a target that is already being scanned, and it will eventually execute after the current scan finishes. There are no limits to how many scans an organization can run per target, so this should accommodate all your deployment needs.
 Once a scan is complete, its findings will be added to the findings tab, where you can review them using the filter **Scan types > DAST/App scanning**.
+
+!!! important
+    Depending on the application being scanned, a DAST analysis can take a very long time to complete.
+    To guarantee the stability of Codacy's platform and fair access to analysis slots, DAST analysis can timeout when running for too long.
+
+!!! important
+    Failed analysis are retried a number of times according to their failure reason. A retry will re-enqueue the analysis, to be executed as soon as possible, while respecting the available analysis slots.
 
 !!! note
     Currently, DAST issues are only visible to admin and organization admin roles.
