@@ -589,6 +589,7 @@ nav:
           - Local analysis:
                 - repositories-configure/local-analysis/client-side-tools.md
                 - repositories-configure/local-analysis/running-aligncheck.md
+                - repositories-configure/local-analysis/running-dartanalyzer.md
                 - repositories-configure/local-analysis/running-deadcode.md
                 - repositories-configure/local-analysis/running-spotbugs.md
                 - repositories-configure/local-analysis/running-eslint.md

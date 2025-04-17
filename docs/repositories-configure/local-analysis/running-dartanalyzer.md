@@ -35,6 +35,7 @@ runtimes:
 tools:
     - dartanalyzer@3.7.20
 ```
+
 ## Manual configuration
 
 ```bash
