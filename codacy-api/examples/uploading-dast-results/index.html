@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to upload DAST results to Codacy using the API.">
       
       
-        <meta http-equiv="last-modified" content="2024-07-09 14:29:00">
+        <meta http-equiv="last-modified" content="2025-04-17 14:00:36">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/uploading-dast-results/">
@@ -4490,9 +4490,9 @@
 </li>
 <li>
 <p>Upload the report to Codacy using the API endpoint <a href="https://app.codacy.com/api/api-docs#uploaddastreport"><span class="skip-vale">uploadDASTReport</span></a>:</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>The DAST report must be under 20MB in size.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The DAST report must be under 20MB in size. Please also guarantee that @generated timestamps are in an English locale, and use the default ZAP format (EEE, d MMM yyyy HH:mm:ss), as otherwise the report won't be processed. </p>
 </div>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.codacy.com/api/v3/organizations/&lt;GIT_PROVIDER&gt;/&lt;ORGANIZATION&gt;/security/tools/dast/&lt;TOOL_NAME&gt;/reports<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>-H<span class="w"> </span><span class="s1">&#39;api-token: &lt;API_KEY&gt;&#39;</span><span class="w"> </span><span class="se">\</span>
@@ -4784,7 +4784,7 @@ curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </spa
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 9, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 17, 2025</span>
     
   </small>
 </div>
