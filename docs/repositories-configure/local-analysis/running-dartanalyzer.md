@@ -26,6 +26,15 @@ runtimes:
 tools:
     - dartanalyzer@3.7.20
 ```
+
+or 
+
+```yaml
+runtimes:
+    - flutter@3.29.3
+tools:
+    - dartanalyzer@3.7.20
+```
 ## Manual configuration
 
 ```bash
@@ -66,7 +75,7 @@ codacy-cli analyze -t dartanalyzer -o dartanalyzer.sarif -c $COMMIT_SHA -a CODAC
     upload_report: true
     provider: gh
     owner: codacy-acme
-    repository: sample-javascript-project
+    repository: sample-dart-project
 ```
 
 !!! warning "Tokens should be stored in the repository secrets."
