@@ -76,11 +76,7 @@ codacy-cli analyze -t dartanalyzer -o dartanalyzer.sarif -c $COMMIT_SHA -a CODAC
     upload_report: true
     provider: gh
     owner: codacy-acme
-<<<<<<< HEAD
     repository: sample-dart-project
-=======
-    repository: sample-javascript-project
->>>>>>> cdb996515 (add dartanalyzer on the pipeline docs and uv.lock as supported file)
 ```
 
 !!! warning "Tokens should be stored in the repository secrets."
