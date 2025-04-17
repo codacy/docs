@@ -8,18 +8,18 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="List of tools that Codacy uses to analyze over 40 supported languages. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code platforms as well as code duplication, code complexity, and code coverage metrics for most programming languages.">
+        <meta name="description" content="Instructions on how to run Dart Analyzer as a client-side tool on Codacy.">
       
       
         <meta http-equiv="last-modified" content="2025-04-17 13:11:07">
       
       
-        <link rel="canonical" href="https://docs.codacy.com/getting-started/supported-languages-and-tools/">
+        <link rel="canonical" href="https://docs.codacy.com/repositories-configure/local-analysis/running-dartanalyzer/">
       
       
         <meta name="author" content="support@codacy.com (Codacy Support)">
       
-      <link rel="shortcut icon" href="../../assets/images/favicon.ico">
+      <link rel="shortcut icon" href="../../../assets/images/favicon.ico">
       <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-5.1.1">
       
         <meta property="robots" content="index, follow">
@@ -27,13 +27,13 @@
     
     
       
-        <title>Supported languages and tools - Codacy docs</title>
+        <title>Running Dart Analyzer - Codacy docs</title>
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.8604980a.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.8604980a.min.css">
       
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.936ed772.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.936ed772.min.css">
       
       
         
@@ -47,7 +47,7 @@
     
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/version-select.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/version-select.css">
     
     
     
@@ -70,7 +70,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#supported-languages-and-tools" class="md-skip">
+        <a href="#running-dart-analyzer" class="md-skip">
           Skip to content
         </a>
       
@@ -80,7 +80,7 @@
   <nav class="md-header-nav" aria-label="Header">
     <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
       
-  <img src="../../assets/images/codacy-docs-logo.svg" alt="logo">
+  <img src="../../../assets/images/codacy-docs-logo.svg" alt="logo">
 
     </a>
     <label class="md-header-nav__button md-icon" for="__drawer">
@@ -134,7 +134,7 @@
   
   <a href="https://docs.codacy.com/" title="Codacy docs" class="md-header-nav__button md-logo" aria-label="Codacy docs">
     
-  <img src="../../assets/images/codacy-docs-logo.svg" alt="logo">
+  <img src="../../../assets/images/codacy-docs-logo.svg" alt="logo">
 
   </a>
   
@@ -146,7 +146,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../.." title="Documentation home" class="md-nav__link">
+    <a href="../../.." title="Documentation home" class="md-nav__link">
       Documentation home
     </a>
   </li>
@@ -156,12 +156,10 @@
       
       
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+  <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2" checked>
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-2" type="checkbox" id="nav-2">
     
     <label class="md-nav__link" for="nav-2">
       Getting started
@@ -185,7 +183,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../codacy-quickstart/" title="Codacy quickstart (5 min)" class="md-nav__link">
+    <a href="../../../getting-started/codacy-quickstart/" title="Codacy quickstart (5 min)" class="md-nav__link">
       Codacy quickstart (5 min)
     </a>
   </li>
@@ -197,7 +195,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../configuring-your-repository/" title="Configuring your repository" class="md-nav__link">
+    <a href="../../../getting-started/configuring-your-repository/" title="Configuring your repository" class="md-nav__link">
       Configuring your repository
     </a>
   </li>
@@ -209,7 +207,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../integrating-codacy-with-your-git-workflow/" title="Integrating Codacy with your Git workflow" class="md-nav__link">
+    <a href="../../../getting-started/integrating-codacy-with-your-git-workflow/" title="Integrating Codacy with your Git workflow" class="md-nav__link">
       Integrating Codacy with your Git workflow
     </a>
   </li>
@@ -246,7 +244,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../integrating-codacy-with-intellij-ides/" title="Integrating Codacy with IntelliJ IDEs" class="md-nav__link">
+    <a href="../../../getting-started/integrating-codacy-with-intellij-ides/" title="Integrating Codacy with IntelliJ IDEs" class="md-nav__link">
       Integrating Codacy with IntelliJ IDEs
     </a>
   </li>
@@ -258,7 +256,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../integrating-codacy-with-visual-studio-code/" title="Integrating Codacy with Visual Studio Code" class="md-nav__link">
+    <a href="../../../getting-started/integrating-codacy-with-visual-studio-code/" title="Integrating Codacy with Visual Studio Code" class="md-nav__link">
       Integrating Codacy with Visual Studio Code
     </a>
   </li>
@@ -273,57 +271,11 @@
           
           
 
-  
 
-
-  <li class="md-nav__item md-nav__item--active">
-    
-    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
-    
-      
-    
-    
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Supported languages and tools
-      </label>
-    
-    <a href="./" title="Supported languages and tools" class="md-nav__link md-nav__link--active">
+  <li class="md-nav__item">
+    <a href="../../../getting-started/supported-languages-and-tools/" title="Supported languages and tools" class="md-nav__link">
       Supported languages and tools
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#docker-images-of-supported-tools" class="md-nav__link">
-    Docker images of supported tools
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#see-also" class="md-nav__link">
-    See also
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
-    
   </li>
 
         
@@ -333,7 +285,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../which-permissions-does-codacy-need-from-my-account/" title="Which permissions does Codacy need from my account?" class="md-nav__link">
+    <a href="../../../getting-started/which-permissions-does-codacy-need-from-my-account/" title="Which permissions does Codacy need from my account?" class="md-nav__link">
       Which permissions does Codacy need from my account?
     </a>
   </li>
@@ -345,7 +297,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../adding-a-codacy-badge/" title="Adding a Codacy badge" class="md-nav__link">
+    <a href="../../../getting-started/adding-a-codacy-badge/" title="Adding a Codacy badge" class="md-nav__link">
       Adding a Codacy badge
     </a>
   </li>
@@ -387,7 +339,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories/repository-dashboard/" title="Quality Repository Dashboard" class="md-nav__link">
+    <a href="../../../repositories/repository-dashboard/" title="Quality Repository Dashboard" class="md-nav__link">
       Quality Repository Dashboard
     </a>
   </li>
@@ -399,7 +351,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories/commits/" title="Quality Commits page" class="md-nav__link">
+    <a href="../../../repositories/commits/" title="Quality Commits page" class="md-nav__link">
       Quality Commits page
     </a>
   </li>
@@ -411,7 +363,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories/files/" title="Quality Files page" class="md-nav__link">
+    <a href="../../../repositories/files/" title="Quality Files page" class="md-nav__link">
       Quality Files page
     </a>
   </li>
@@ -423,7 +375,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories/issues/" title="Quality Issues page" class="md-nav__link">
+    <a href="../../../repositories/issues/" title="Quality Issues page" class="md-nav__link">
       Quality Issues page
     </a>
   </li>
@@ -435,7 +387,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories/coverage/" title="Quality Coverage page" class="md-nav__link">
+    <a href="../../../repositories/coverage/" title="Quality Coverage page" class="md-nav__link">
       Quality Coverage page
     </a>
   </li>
@@ -447,7 +399,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories/pull-requests/" title="Quality Pull Requests page" class="md-nav__link">
+    <a href="../../../repositories/pull-requests/" title="Quality Pull Requests page" class="md-nav__link">
       Quality Pull Requests page
     </a>
   </li>
@@ -489,7 +441,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/configuring-code-patterns/" title="Configuring code patterns" class="md-nav__link">
+    <a href="../../configuring-code-patterns/" title="Configuring code patterns" class="md-nav__link">
       Configuring code patterns
     </a>
   </li>
@@ -501,7 +453,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/managing-branches/" title="Managing branches" class="md-nav__link">
+    <a href="../../managing-branches/" title="Managing branches" class="md-nav__link">
       Managing branches
     </a>
   </li>
@@ -538,7 +490,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/github-integration/" title="GitHub integration" class="md-nav__link">
+    <a href="../../integrations/github-integration/" title="GitHub integration" class="md-nav__link">
       GitHub integration
     </a>
   </li>
@@ -550,7 +502,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/gitlab-integration/" title="GitLab integration" class="md-nav__link">
+    <a href="../../integrations/gitlab-integration/" title="GitLab integration" class="md-nav__link">
       GitLab integration
     </a>
   </li>
@@ -562,7 +514,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/bitbucket-integration/" title="Bitbucket integration" class="md-nav__link">
+    <a href="../../integrations/bitbucket-integration/" title="Bitbucket integration" class="md-nav__link">
       Bitbucket integration
     </a>
   </li>
@@ -574,7 +526,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/integrations/post-commit-hooks/" title="Post-commit hooks" class="md-nav__link">
+    <a href="../../integrations/post-commit-hooks/" title="Post-commit hooks" class="md-nav__link">
       Post-commit hooks
     </a>
   </li>
@@ -591,7 +543,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/ignoring-files/" title="Ignoring files" class="md-nav__link">
+    <a href="../../ignoring-files/" title="Ignoring files" class="md-nav__link">
       Ignoring files
     </a>
   </li>
@@ -603,7 +555,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/languages/" title="Configuring languages" class="md-nav__link">
+    <a href="../../languages/" title="Configuring languages" class="md-nav__link">
       Configuring languages
     </a>
   </li>
@@ -615,7 +567,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/adjusting-quality-gates/" title="Adjusting quality gates" class="md-nav__link">
+    <a href="../../adjusting-quality-gates/" title="Adjusting quality gates" class="md-nav__link">
       Adjusting quality gates
     </a>
   </li>
@@ -627,7 +579,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/adjusting-quality-goals/" title="Adjusting quality goals" class="md-nav__link">
+    <a href="../../adjusting-quality-goals/" title="Adjusting quality goals" class="md-nav__link">
       Adjusting quality goals
     </a>
   </li>
@@ -664,7 +616,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../coverage-reporter/" title="Adding coverage to your repository" class="md-nav__link">
+    <a href="../../../coverage-reporter/" title="Adding coverage to your repository" class="md-nav__link">
       Adding coverage to your repository
     </a>
   </li>
@@ -676,7 +628,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../coverage-reporter/alternative-ways-of-running-coverage-reporter/" title="Alternative ways of running Coverage Reporter" class="md-nav__link">
+    <a href="../../../coverage-reporter/alternative-ways-of-running-coverage-reporter/" title="Alternative ways of running Coverage Reporter" class="md-nav__link">
       Alternative ways of running Coverage Reporter
     </a>
   </li>
@@ -688,7 +640,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../coverage-reporter/uploading-coverage-in-advanced-scenarios/" title="Uploading coverage in advanced scenarios" class="md-nav__link">
+    <a href="../../../coverage-reporter/uploading-coverage-in-advanced-scenarios/" title="Uploading coverage in advanced scenarios" class="md-nav__link">
       Uploading coverage in advanced scenarios
     </a>
   </li>
@@ -700,7 +652,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../coverage-reporter/troubleshooting-coverage-cli-issues/" title="Troubleshooting coverage CLI issues" class="md-nav__link">
+    <a href="../../../coverage-reporter/troubleshooting-coverage-cli-issues/" title="Troubleshooting coverage CLI issues" class="md-nav__link">
       Troubleshooting coverage CLI issues
     </a>
   </li>
@@ -742,7 +694,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/local-analysis/client-side-tools/" title="Client-side tools" class="md-nav__link">
+    <a href="../client-side-tools/" title="Client-side tools" class="md-nav__link">
       Client-side tools
     </a>
   </li>
@@ -754,7 +706,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/local-analysis/running-aligncheck/" title="Running aligncheck" class="md-nav__link">
+    <a href="../running-aligncheck/" title="Running aligncheck" class="md-nav__link">
       Running aligncheck
     </a>
   </li>
@@ -766,7 +718,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/local-analysis/running-deadcode/" title="Running deadcode" class="md-nav__link">
+    <a href="../running-deadcode/" title="Running deadcode" class="md-nav__link">
       Running deadcode
     </a>
   </li>
@@ -778,7 +730,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/local-analysis/running-spotbugs/" title="Running SpotBugs" class="md-nav__link">
+    <a href="../running-spotbugs/" title="Running SpotBugs" class="md-nav__link">
       Running SpotBugs
     </a>
   </li>
@@ -790,7 +742,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/local-analysis/running-eslint/" title="Running ESLint" class="md-nav__link">
+    <a href="../running-eslint/" title="Running ESLint" class="md-nav__link">
       Running ESLint
     </a>
   </li>
@@ -807,7 +759,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/using-submodules/" title="Using submodules" class="md-nav__link">
+    <a href="../../using-submodules/" title="Using submodules" class="md-nav__link">
       Using submodules
     </a>
   </li>
@@ -819,7 +771,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/codacy-configuration-file/" title="Codacy configuration file" class="md-nav__link">
+    <a href="../../codacy-configuration-file/" title="Codacy configuration file" class="md-nav__link">
       Codacy configuration file
     </a>
   </li>
@@ -831,7 +783,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../repositories-configure/removing-your-repository/" title="Removing your repository" class="md-nav__link">
+    <a href="../../removing-your-repository/" title="Removing your repository" class="md-nav__link">
       Removing your repository
     </a>
   </li>
@@ -873,7 +825,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/what-are-organizations/" title="What are organizations" class="md-nav__link">
+    <a href="../../../organizations/what-are-organizations/" title="What are organizations" class="md-nav__link">
       What are organizations
     </a>
   </li>
@@ -885,7 +837,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/organization-overview/" title="Organization overview" class="md-nav__link">
+    <a href="../../../organizations/organization-overview/" title="Organization overview" class="md-nav__link">
       Organization overview
     </a>
   </li>
@@ -897,7 +849,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/managing-repositories/" title="Managing repositories" class="md-nav__link">
+    <a href="../../../organizations/managing-repositories/" title="Managing repositories" class="md-nav__link">
       Managing repositories
     </a>
   </li>
@@ -909,7 +861,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/segments/" title="Segments" class="md-nav__link">
+    <a href="../../../organizations/segments/" title="Segments" class="md-nav__link">
       Segments
     </a>
   </li>
@@ -921,7 +873,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/using-gate-policies/" title="Using gate policies" class="md-nav__link">
+    <a href="../../../organizations/using-gate-policies/" title="Using gate policies" class="md-nav__link">
       Using gate policies
     </a>
   </li>
@@ -933,7 +885,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/using-coding-standards/" title="Using coding standards" class="md-nav__link">
+    <a href="../../../organizations/using-coding-standards/" title="Using coding standards" class="md-nav__link">
       Using coding standards
     </a>
   </li>
@@ -970,7 +922,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/integrations/default-git-provider-integration-settings/" title="Default Git provider integration settings" class="md-nav__link">
+    <a href="../../../organizations/integrations/default-git-provider-integration-settings/" title="Default Git provider integration settings" class="md-nav__link">
       Default Git provider integration settings
     </a>
   </li>
@@ -982,7 +934,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/integrations/slack-integration/" title="Slack integration for Security issues" class="md-nav__link">
+    <a href="../../../organizations/integrations/slack-integration/" title="Slack integration for Security issues" class="md-nav__link">
       Slack integration for Security issues
     </a>
   </li>
@@ -994,7 +946,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/integrations/jira-integration/" title="Jira integration for Security and risk management" class="md-nav__link">
+    <a href="../../../organizations/integrations/jira-integration/" title="Jira integration for Security and risk management" class="md-nav__link">
       Jira integration for Security and risk management
     </a>
   </li>
@@ -1011,7 +963,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/managing-security-and-risk/" title="Managing security and risk" class="md-nav__link">
+    <a href="../../../organizations/managing-security-and-risk/" title="Managing security and risk" class="md-nav__link">
       Managing security and risk
     </a>
   </li>
@@ -1023,7 +975,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/managing-people/" title="Managing people" class="md-nav__link">
+    <a href="../../../organizations/managing-people/" title="Managing people" class="md-nav__link">
       Managing people
     </a>
   </li>
@@ -1035,7 +987,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/audit-logs-for-organizations/" title="Audit logs for organizations" class="md-nav__link">
+    <a href="../../../organizations/audit-logs-for-organizations/" title="Audit logs for organizations" class="md-nav__link">
       Audit logs for organizations
     </a>
   </li>
@@ -1047,7 +999,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/roles-and-permissions-for-organizations/" title="Roles and permissions for organizations" class="md-nav__link">
+    <a href="../../../organizations/roles-and-permissions-for-organizations/" title="Roles and permissions for organizations" class="md-nav__link">
       Roles and permissions for organizations
     </a>
   </li>
@@ -1059,7 +1011,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../organizations/changing-your-plan-and-billing/" title="Changing your plan and billing" class="md-nav__link">
+    <a href="../../../organizations/changing-your-plan-and-billing/" title="Changing your plan and billing" class="md-nav__link">
       Changing your plan and billing
     </a>
   </li>
@@ -1101,7 +1053,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../enterprise-cloud/github-enterprise-cloud/" title="GitHub Enterprise Cloud" class="md-nav__link">
+    <a href="../../../enterprise-cloud/github-enterprise-cloud/" title="GitHub Enterprise Cloud" class="md-nav__link">
       GitHub Enterprise Cloud
     </a>
   </li>
@@ -1143,7 +1095,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../account/managing-your-profile/" title="Managing your profile" class="md-nav__link">
+    <a href="../../../account/managing-your-profile/" title="Managing your profile" class="md-nav__link">
       Managing your profile
     </a>
   </li>
@@ -1155,7 +1107,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../account/emails/" title="Emails" class="md-nav__link">
+    <a href="../../../account/emails/" title="Emails" class="md-nav__link">
       Emails
     </a>
   </li>
@@ -1167,7 +1119,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../account/user-session-management/" title="User session management" class="md-nav__link">
+    <a href="../../../account/user-session-management/" title="User session management" class="md-nav__link">
       User session management
     </a>
   </li>
@@ -1209,7 +1161,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../codacy-api/using-the-codacy-api/" title="Using the Codacy API" class="md-nav__link">
+    <a href="../../../codacy-api/using-the-codacy-api/" title="Using the Codacy API" class="md-nav__link">
       Using the Codacy API
     </a>
   </li>
@@ -1221,7 +1173,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../codacy-api/api-tokens/" title="API tokens" class="md-nav__link">
+    <a href="../../../codacy-api/api-tokens/" title="API tokens" class="md-nav__link">
       API tokens
     </a>
   </li>
@@ -1282,7 +1234,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../codacy-api/examples/adding-people-to-codacy-programmatically/" title="Adding people to Codacy programmatically" class="md-nav__link">
+    <a href="../../../codacy-api/examples/adding-people-to-codacy-programmatically/" title="Adding people to Codacy programmatically" class="md-nav__link">
       Adding people to Codacy programmatically
     </a>
   </li>
@@ -1294,7 +1246,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../codacy-api/examples/adding-repositories-to-codacy-programmatically/" title="Adding repositories to Codacy programmatically" class="md-nav__link">
+    <a href="../../../codacy-api/examples/adding-repositories-to-codacy-programmatically/" title="Adding repositories to Codacy programmatically" class="md-nav__link">
       Adding repositories to Codacy programmatically
     </a>
   </li>
@@ -1306,7 +1258,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../codacy-api/examples/creating-repository-api-tokens-programmatically/" title="Creating repository API tokens programmatically" class="md-nav__link">
+    <a href="../../../codacy-api/examples/creating-repository-api-tokens-programmatically/" title="Creating repository API tokens programmatically" class="md-nav__link">
       Creating repository API tokens programmatically
     </a>
   </li>
@@ -1318,7 +1270,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../codacy-api/examples/obtaining-code-quality-metrics-for-files/" title="Obtaining code quality metrics for files" class="md-nav__link">
+    <a href="../../../codacy-api/examples/obtaining-code-quality-metrics-for-files/" title="Obtaining code quality metrics for files" class="md-nav__link">
       Obtaining code quality metrics for files
     </a>
   </li>
@@ -1330,7 +1282,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../codacy-api/examples/obtaining-current-issues-in-repositories/" title="Obtaining current issues in repositories" class="md-nav__link">
+    <a href="../../../codacy-api/examples/obtaining-current-issues-in-repositories/" title="Obtaining current issues in repositories" class="md-nav__link">
       Obtaining current issues in repositories
     </a>
   </li>
@@ -1342,7 +1294,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../codacy-api/examples/identifying-commits-without-coverage-data/" title="Identifying commits without coverage data" class="md-nav__link">
+    <a href="../../../codacy-api/examples/identifying-commits-without-coverage-data/" title="Identifying commits without coverage data" class="md-nav__link">
       Identifying commits without coverage data
     </a>
   </li>
@@ -1354,7 +1306,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../codacy-api/examples/uploading-dast-results/" title="Uploading DAST results to Codacy" class="md-nav__link">
+    <a href="../../../codacy-api/examples/uploading-dast-results/" title="Uploading DAST results to Codacy" class="md-nav__link">
       Uploading DAST results to Codacy
     </a>
   </li>
@@ -1366,7 +1318,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../codacy-api/examples/triggering-dast-scans/" title="Trigger Dynamic Application Security Testing (DAST) scans" class="md-nav__link">
+    <a href="../../../codacy-api/examples/triggering-dast-scans/" title="Trigger Dynamic Application Security Testing (DAST) scans" class="md-nav__link">
       Trigger Dynamic Application Security Testing (DAST) scans
     </a>
   </li>
@@ -1413,7 +1365,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/" title="Installing Codacy Self-hosted" class="md-nav__link">
+    <a href="../../../chart/" title="Installing Codacy Self-hosted" class="md-nav__link">
       Installing Codacy Self-hosted
     </a>
   </li>
@@ -1425,7 +1377,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/requirements/" title="System requirements" class="md-nav__link">
+    <a href="../../../chart/requirements/" title="System requirements" class="md-nav__link">
       System requirements
     </a>
   </li>
@@ -1462,7 +1414,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/infrastructure/eks-quickstart/" title="Creating an Amazon EKS cluster" class="md-nav__link">
+    <a href="../../../chart/infrastructure/eks-quickstart/" title="Creating an Amazon EKS cluster" class="md-nav__link">
       Creating an Amazon EKS cluster
     </a>
   </li>
@@ -1474,7 +1426,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/infrastructure/microk8s-quickstart/" title="Creating a MicroK8s cluster" class="md-nav__link">
+    <a href="../../../chart/infrastructure/microk8s-quickstart/" title="Creating a MicroK8s cluster" class="md-nav__link">
       Creating a MicroK8s cluster
     </a>
   </li>
@@ -1541,7 +1493,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/configuration/integrations/github-cloud/" title="GitHub Cloud" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/github-cloud/" title="GitHub Cloud" class="md-nav__link">
       GitHub Cloud
     </a>
   </li>
@@ -1553,7 +1505,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/configuration/integrations/github-enterprise/" title="GitHub Enterprise" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/github-enterprise/" title="GitHub Enterprise" class="md-nav__link">
       GitHub Enterprise
     </a>
   </li>
@@ -1565,7 +1517,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/configuration/integrations/github-app-create/" title="Creating a GitHub App" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/github-app-create/" title="Creating a GitHub App" class="md-nav__link">
       Creating a GitHub App
     </a>
   </li>
@@ -1577,7 +1529,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/configuration/integrations/gitlab-cloud/" title="GitLab Cloud" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/gitlab-cloud/" title="GitLab Cloud" class="md-nav__link">
       GitLab Cloud
     </a>
   </li>
@@ -1589,7 +1541,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/configuration/integrations/gitlab-enterprise/" title="GitLab Enterprise" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/gitlab-enterprise/" title="GitLab Enterprise" class="md-nav__link">
       GitLab Enterprise
     </a>
   </li>
@@ -1601,7 +1553,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/configuration/integrations/bitbucket-cloud/" title="Bitbucket Cloud" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/bitbucket-cloud/" title="Bitbucket Cloud" class="md-nav__link">
       Bitbucket Cloud
     </a>
   </li>
@@ -1613,7 +1565,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/configuration/integrations/bitbucket-server/" title="Bitbucket Server" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/bitbucket-server/" title="Bitbucket Server" class="md-nav__link">
       Bitbucket Server
     </a>
   </li>
@@ -1625,7 +1577,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/configuration/integrations/email/" title="SMTP server" class="md-nav__link">
+    <a href="../../../chart/configuration/integrations/email/" title="SMTP server" class="md-nav__link">
       SMTP server
     </a>
   </li>
@@ -1642,7 +1594,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/configuration/caching/" title="Caching" class="md-nav__link">
+    <a href="../../../chart/configuration/caching/" title="Caching" class="md-nav__link">
       Caching
     </a>
   </li>
@@ -1654,7 +1606,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/configuration/monitoring/" title="Monitoring" class="md-nav__link">
+    <a href="../../../chart/configuration/monitoring/" title="Monitoring" class="md-nav__link">
       Monitoring
     </a>
   </li>
@@ -1666,7 +1618,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/configuration/logging/" title="Logging" class="md-nav__link">
+    <a href="../../../chart/configuration/logging/" title="Logging" class="md-nav__link">
       Logging
     </a>
   </li>
@@ -1708,7 +1660,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/maintenance/license/" title="Updating your Codacy license" class="md-nav__link">
+    <a href="../../../chart/maintenance/license/" title="Updating your Codacy license" class="md-nav__link">
       Updating your Codacy license
     </a>
   </li>
@@ -1720,7 +1672,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/maintenance/upgrade/" title="Upgrading Codacy" class="md-nav__link">
+    <a href="../../../chart/maintenance/upgrade/" title="Upgrading Codacy" class="md-nav__link">
       Upgrading Codacy
     </a>
   </li>
@@ -1732,7 +1684,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/maintenance/uninstall/" title="Uninstalling Codacy" class="md-nav__link">
+    <a href="../../../chart/maintenance/uninstall/" title="Uninstalling Codacy" class="md-nav__link">
       Uninstalling Codacy
     </a>
   </li>
@@ -1744,7 +1696,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/maintenance/database/" title="Database migration guide" class="md-nav__link">
+    <a href="../../../chart/maintenance/database/" title="Database migration guide" class="md-nav__link">
       Database migration guide
     </a>
   </li>
@@ -1786,7 +1738,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/troubleshoot/troubleshoot/" title="Troubleshooting Codacy Self-hosted" class="md-nav__link">
+    <a href="../../../chart/troubleshoot/troubleshoot/" title="Troubleshooting Codacy Self-hosted" class="md-nav__link">
       Troubleshooting Codacy Self-hosted
     </a>
   </li>
@@ -1798,7 +1750,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/troubleshoot/logs-collect/" title="Collecting logs for Support" class="md-nav__link">
+    <a href="../../../chart/troubleshoot/logs-collect/" title="Collecting logs for Support" class="md-nav__link">
       Collecting logs for Support
     </a>
   </li>
@@ -1810,7 +1762,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../chart/troubleshoot/k8s-cheatsheet/" title="Kubernetes cheatsheet" class="md-nav__link">
+    <a href="../../../chart/troubleshoot/k8s-cheatsheet/" title="Kubernetes cheatsheet" class="md-nav__link">
       Kubernetes cheatsheet
     </a>
   </li>
@@ -1882,7 +1834,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/general/which-platforms-and-technologies-does-codacy-support/" title="Which platforms and technologies does Codacy support?" class="md-nav__link">
+    <a href="../../../faq/general/which-platforms-and-technologies-does-codacy-support/" title="Which platforms and technologies does Codacy support?" class="md-nav__link">
       Which platforms and technologies does Codacy support?
     </a>
   </li>
@@ -1894,7 +1846,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/general/how-does-codacy-support-github-enterprise/" title="How does Codacy support GitHub Enterprise Cloud?" class="md-nav__link">
+    <a href="../../../faq/general/how-does-codacy-support-github-enterprise/" title="How does Codacy support GitHub Enterprise Cloud?" class="md-nav__link">
       How does Codacy support GitHub Enterprise Cloud?
     </a>
   </li>
@@ -1906,7 +1858,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/general/how-does-codacy-support-gitlab-cloud/" title="How does Codacy support GitLab Cloud?" class="md-nav__link">
+    <a href="../../../faq/general/how-does-codacy-support-gitlab-cloud/" title="How does Codacy support GitLab Cloud?" class="md-nav__link">
       How does Codacy support GitLab Cloud?
     </a>
   </li>
@@ -1918,7 +1870,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/general/how-does-codacy-support-gitlab-enterprise/" title="How does Codacy support GitLab Enterprise?" class="md-nav__link">
+    <a href="../../../faq/general/how-does-codacy-support-gitlab-enterprise/" title="How does Codacy support GitLab Enterprise?" class="md-nav__link">
       How does Codacy support GitLab Enterprise?
     </a>
   </li>
@@ -1930,7 +1882,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/general/how-does-codacy-support-bitbucket-cloud/" title="How does Codacy support Bitbucket Cloud?" class="md-nav__link">
+    <a href="../../../faq/general/how-does-codacy-support-bitbucket-cloud/" title="How does Codacy support Bitbucket Cloud?" class="md-nav__link">
       How does Codacy support Bitbucket Cloud?
     </a>
   </li>
@@ -1942,7 +1894,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/general/how-does-codacy-support-bitbucket-server/" title="How does Codacy support Bitbucket Server?" class="md-nav__link">
+    <a href="../../../faq/general/how-does-codacy-support-bitbucket-server/" title="How does Codacy support Bitbucket Server?" class="md-nav__link">
       How does Codacy support Bitbucket Server?
     </a>
   </li>
@@ -1954,7 +1906,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/general/how-does-codacy-keep-my-data-secure/" title="How does Codacy keep my data secure?" class="md-nav__link">
+    <a href="../../../faq/general/how-does-codacy-keep-my-data-secure/" title="How does Codacy keep my data secure?" class="md-nav__link">
       How does Codacy keep my data secure?
     </a>
   </li>
@@ -1966,7 +1918,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/general/how-does-codacy-protect-my-privacy/" title="How does Codacy protect my privacy?" class="md-nav__link">
+    <a href="../../../faq/general/how-does-codacy-protect-my-privacy/" title="How does Codacy protect my privacy?" class="md-nav__link">
       How does Codacy protect my privacy?
     </a>
   </li>
@@ -1978,7 +1930,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/general/does-codacy-keep-audit-logs/" title="Does Codacy keep audit logs for my organization?" class="md-nav__link">
+    <a href="../../../faq/general/does-codacy-keep-audit-logs/" title="Does Codacy keep audit logs for my organization?" class="md-nav__link">
       Does Codacy keep audit logs for my organization?
     </a>
   </li>
@@ -1990,7 +1942,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider/" title="How do I allowlist Codacy Cloud on my Git provider?" class="md-nav__link">
+    <a href="../../../faq/general/how-do-i-allowlist-codacy-cloud-on-my-git-provider/" title="How do I allowlist Codacy Cloud on my Git provider?" class="md-nav__link">
       How do I allowlist Codacy Cloud on my Git provider?
     </a>
   </li>
@@ -2002,7 +1954,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/general/how-can-i-change-or-cancel-my-plan/" title="How can I change or cancel my plan?" class="md-nav__link">
+    <a href="../../../faq/general/how-can-i-change-or-cancel-my-plan/" title="How can I change or cancel my plan?" class="md-nav__link">
       How can I change or cancel my plan?
     </a>
   </li>
@@ -2044,7 +1996,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/repositories/how-do-i-reanalyze-my-repository/" title="How do I reanalyze my repository?" class="md-nav__link">
+    <a href="../../../faq/repositories/how-do-i-reanalyze-my-repository/" title="How do I reanalyze my repository?" class="md-nav__link">
       How do I reanalyze my repository?
     </a>
   </li>
@@ -2056,7 +2008,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/repositories/i-renamed-my-repository-on-the-git-provider/" title="I renamed my repository on the Git provider" class="md-nav__link">
+    <a href="../../../faq/repositories/i-renamed-my-repository-on-the-git-provider/" title="I renamed my repository on the Git provider" class="md-nav__link">
       I renamed my repository on the Git provider
     </a>
   </li>
@@ -2068,7 +2020,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/repositories/i-moved-my-repository-on-the-git-provider/" title="I moved my repository on the Git provider" class="md-nav__link">
+    <a href="../../../faq/repositories/i-moved-my-repository-on-the-git-provider/" title="I moved my repository on the Git provider" class="md-nav__link">
       I moved my repository on the Git provider
     </a>
   </li>
@@ -2110,7 +2062,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/" title="Which metrics does Codacy calculate?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/which-metrics-does-codacy-calculate/" title="Which metrics does Codacy calculate?" class="md-nav__link">
       Which metrics does Codacy calculate?
     </a>
   </li>
@@ -2122,7 +2074,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes/" title="Why does Codacy show unexpected coverage changes?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes/" title="Why does Codacy show unexpected coverage changes?" class="md-nav__link">
       Why does Codacy show unexpected coverage changes?
     </a>
   </li>
@@ -2134,7 +2086,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/" title="Does Codacy place limits on the code analysis?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/" title="Does Codacy place limits on the code analysis?" class="md-nav__link">
       Does Codacy place limits on the code analysis?
     </a>
   </li>
@@ -2146,7 +2098,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/code-analysis/does-codacy-check-for-dependencies/" title="Does Codacy check for dependencies?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/does-codacy-check-for-dependencies/" title="Does Codacy check for dependencies?" class="md-nav__link">
       Does Codacy check for dependencies?
     </a>
   </li>
@@ -2158,7 +2110,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed/" title="How long does it take for my repository to be analyzed?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/how-long-does-it-take-for-my-repository-to-be-analyzed/" title="How long does it take for my repository to be analyzed?" class="md-nav__link">
       How long does it take for my repository to be analyzed?
     </a>
   </li>
@@ -2170,7 +2122,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/code-analysis/how-to-skip-an-analysis/" title="How to skip an analysis?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/how-to-skip-an-analysis/" title="How to skip an analysis?" class="md-nav__link">
       How to skip an analysis?
     </a>
   </li>
@@ -2182,7 +2134,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/code-analysis/can-i-bypass-codacy-status-check/" title="Can I bypass Codacy status check?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/can-i-bypass-codacy-status-check/" title="Can I bypass Codacy status check?" class="md-nav__link">
       Can I bypass Codacy status check?
     </a>
   </li>
@@ -2194,7 +2146,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/code-analysis/how-to-configure-php-codesniffer-coding-standards/" title="How to configure PHP_CodeSniffer coding standards?" class="md-nav__link">
+    <a href="../../../faq/code-analysis/how-to-configure-php-codesniffer-coding-standards/" title="How to configure PHP_CodeSniffer coding standards?" class="md-nav__link">
       How to configure PHP_CodeSniffer coding standards?
     </a>
   </li>
@@ -2236,7 +2188,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/troubleshooting/why-cant-i-see-my-organization/" title="Why can't I see my organization?" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/why-cant-i-see-my-organization/" title="Why can't I see my organization?" class="md-nav__link">
       Why can't I see my organization?
     </a>
   </li>
@@ -2248,7 +2200,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/" title="Why did Codacy stop commenting on pull requests?" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/why-did-codacy-stop-commenting-on-pull-requests/" title="Why did Codacy stop commenting on pull requests?" class="md-nav__link">
       Why did Codacy stop commenting on pull requests?
     </a>
   </li>
@@ -2260,7 +2212,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/troubleshooting/why-arent-duplication-metrics-being-calculated/" title="Why aren't duplication metrics being calculated?" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/why-arent-duplication-metrics-being-calculated/" title="Why aren't duplication metrics being calculated?" class="md-nav__link">
       Why aren't duplication metrics being calculated?
     </a>
   </li>
@@ -2272,7 +2224,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/troubleshooting/why-isnt-my-public-repository-being-analyzed/" title="Why isn't my public repository being analyzed?" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/why-isnt-my-public-repository-being-analyzed/" title="Why isn't my public repository being analyzed?" class="md-nav__link">
       Why isn't my public repository being analyzed?
     </a>
   </li>
@@ -2284,7 +2236,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/troubleshooting/not-a-member-of-the-organization/" title="Not a member of the organization" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/not-a-member-of-the-organization/" title="Not a member of the organization" class="md-nav__link">
       Not a member of the organization
     </a>
   </li>
@@ -2296,7 +2248,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/troubleshooting/we-no-longer-have-access-to-this-repository/" title="We no longer have access to this repository, check your SSH keys" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/we-no-longer-have-access-to-this-repository/" title="We no longer have access to this repository, check your SSH keys" class="md-nav__link">
       We no longer have access to this repository, check your SSH keys
     </a>
   </li>
@@ -2308,7 +2260,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/troubleshooting/why-is-my-file-over-150-kb-missing/" title="Why is my file over 150 KB missing?" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/why-is-my-file-over-150-kb-missing/" title="Why is my file over 150 KB missing?" class="md-nav__link">
       Why is my file over 150 KB missing?
     </a>
   </li>
@@ -2320,7 +2272,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../faq/troubleshooting/error-line-endings/" title="Error caused by incompatible line endings" class="md-nav__link">
+    <a href="../../../faq/troubleshooting/error-line-endings/" title="Error caused by incompatible line endings" class="md-nav__link">
       Error caused by incompatible line endings
     </a>
   </li>
@@ -2367,7 +2319,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/" title="Codacy release notes" class="md-nav__link">
+    <a href="../../../release-notes/" title="Codacy release notes" class="md-nav__link">
       Codacy release notes
     </a>
   </li>
@@ -2429,7 +2381,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2025-03/" title="Cloud March 2025" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2025-03/" title="Cloud March 2025" class="md-nav__link">
       Cloud March 2025
     </a>
   </li>
@@ -2441,7 +2393,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2025-02-adding-ruff-lizard/" title="Adding Lizard and Ruff as new supported tools February, 2025" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2025-02-adding-ruff-lizard/" title="Adding Lizard and Ruff as new supported tools February, 2025" class="md-nav__link">
       Adding Lizard and Ruff as new supported tools February, 2025
     </a>
   </li>
@@ -2453,7 +2405,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2025-02/" title="Cloud February 2025" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2025-02/" title="Cloud February 2025" class="md-nav__link">
       Cloud February 2025
     </a>
   </li>
@@ -2465,7 +2417,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2025-01/" title="Cloud January 2025" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2025-01/" title="Cloud January 2025" class="md-nav__link">
       Cloud January 2025
     </a>
   </li>
@@ -2507,7 +2459,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-12/" title="Cloud December 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-12/" title="Cloud December 2024" class="md-nav__link">
       Cloud December 2024
     </a>
   </li>
@@ -2519,7 +2471,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-11/" title="Cloud November 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-11/" title="Cloud November 2024" class="md-nav__link">
       Cloud November 2024
     </a>
   </li>
@@ -2531,7 +2483,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-10/" title="Cloud October 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-10/" title="Cloud October 2024" class="md-nav__link">
       Cloud October 2024
     </a>
   </li>
@@ -2543,7 +2495,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-09/" title="Cloud September 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-09/" title="Cloud September 2024" class="md-nav__link">
       Cloud September 2024
     </a>
   </li>
@@ -2555,7 +2507,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-09-adding-eslint9-and-pmd7/" title="Adding ESLint 9 and PMD 7 as new supported tools September, 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-09-adding-eslint9-and-pmd7/" title="Adding ESLint 9 and PMD 7 as new supported tools September, 2024" class="md-nav__link">
       Adding ESLint 9 and PMD 7 as new supported tools September, 2024
     </a>
   </li>
@@ -2567,7 +2519,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-08/" title="Cloud August 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-08/" title="Cloud August 2024" class="md-nav__link">
       Cloud August 2024
     </a>
   </li>
@@ -2579,7 +2531,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-07/" title="Cloud July 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-07/" title="Cloud July 2024" class="md-nav__link">
       Cloud July 2024
     </a>
   </li>
@@ -2591,7 +2543,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-06/" title="Cloud June 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-06/" title="Cloud June 2024" class="md-nav__link">
       Cloud June 2024
     </a>
   </li>
@@ -2603,7 +2555,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-05/" title="Cloud May 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-05/" title="Cloud May 2024" class="md-nav__link">
       Cloud May 2024
     </a>
   </li>
@@ -2615,7 +2567,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-04/" title="Cloud April 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-04/" title="Cloud April 2024" class="md-nav__link">
       Cloud April 2024
     </a>
   </li>
@@ -2627,7 +2579,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-03/" title="Cloud March 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-03/" title="Cloud March 2024" class="md-nav__link">
       Cloud March 2024
     </a>
   </li>
@@ -2639,7 +2591,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-02/" title="Cloud February 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-02/" title="Cloud February 2024" class="md-nav__link">
       Cloud February 2024
     </a>
   </li>
@@ -2651,7 +2603,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-01/" title="Cloud January 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-01/" title="Cloud January 2024" class="md-nav__link">
       Cloud January 2024
     </a>
   </li>
@@ -2663,7 +2615,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation/" title="Discontinuation of SSH keys for GitHub repositories January 15, 2024" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2024-01-15-gh-repository-ssh-keys-discontinuation/" title="Discontinuation of SSH keys for GitHub repositories January 15, 2024" class="md-nav__link">
       Discontinuation of SSH keys for GitHub repositories January 15, 2024
     </a>
   </li>
@@ -2705,7 +2657,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-12/" title="Cloud December 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-12/" title="Cloud December 2023" class="md-nav__link">
       Cloud December 2023
     </a>
   </li>
@@ -2717,7 +2669,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-11/" title="Cloud November 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-11/" title="Cloud November 2023" class="md-nav__link">
       Cloud November 2023
     </a>
   </li>
@@ -2729,7 +2681,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/" title="Rollout of new Coverage engine November 23, 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks/" title="Rollout of new Coverage engine November 23, 2023" class="md-nav__link">
       Rollout of new Coverage engine November 23, 2023
     </a>
   </li>
@@ -2741,7 +2693,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal/" title="Removal of Jira, Slack, and Webhooks repository integrations November 13, 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-11-13-jira-slack-webhooks-repo-integrations-removal/" title="Removal of Jira, Slack, and Webhooks repository integrations November 13, 2023" class="md-nav__link">
       Removal of Jira, Slack, and Webhooks repository integrations November 13, 2023
     </a>
   </li>
@@ -2753,7 +2705,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-10/" title="Cloud October 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-10/" title="Cloud October 2023" class="md-nav__link">
       Cloud October 2023
     </a>
   </li>
@@ -2765,7 +2717,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation/" title="Deprecation of CSSLint, JSHint, Faux Pas, Tailor, TSLint October 25, 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation/" title="Deprecation of CSSLint, JSHint, Faux Pas, Tailor, TSLint October 25, 2023" class="md-nav__link">
       Deprecation of CSSLint, JSHint, Faux Pas, Tailor, TSLint October 25, 2023
     </a>
   </li>
@@ -2777,7 +2729,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation/" title="Deprecation of bundler-audit October 13, 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation/" title="Deprecation of bundler-audit October 13, 2023" class="md-nav__link">
       Deprecation of bundler-audit October 13, 2023
     </a>
   </li>
@@ -2789,7 +2741,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-09/" title="Cloud September 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-09/" title="Cloud September 2023" class="md-nav__link">
       Cloud September 2023
     </a>
   </li>
@@ -2801,7 +2753,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-08/" title="Cloud August 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-08/" title="Cloud August 2023" class="md-nav__link">
       Cloud August 2023
     </a>
   </li>
@@ -2813,7 +2765,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-07/" title="Cloud July 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-07/" title="Cloud July 2023" class="md-nav__link">
       Cloud July 2023
     </a>
   </li>
@@ -2825,7 +2777,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-06/" title="Cloud June 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-06/" title="Cloud June 2023" class="md-nav__link">
       Cloud June 2023
     </a>
   </li>
@@ -2837,7 +2789,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-05/" title="Cloud May 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-05/" title="Cloud May 2023" class="md-nav__link">
       Cloud May 2023
     </a>
   </li>
@@ -2849,7 +2801,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-04/" title="Cloud April 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-04/" title="Cloud April 2023" class="md-nav__link">
       Cloud April 2023
     </a>
   </li>
@@ -2861,7 +2813,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-03/" title="Cloud March 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-03/" title="Cloud March 2023" class="md-nav__link">
       Cloud March 2023
     </a>
   </li>
@@ -2873,7 +2825,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-02/" title="Cloud February 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-02/" title="Cloud February 2023" class="md-nav__link">
       Cloud February 2023
     </a>
   </li>
@@ -2885,7 +2837,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2023-01/" title="Cloud January 2023" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2023-01/" title="Cloud January 2023" class="md-nav__link">
       Cloud January 2023
     </a>
   </li>
@@ -2927,7 +2879,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-12/" title="Cloud December 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-12/" title="Cloud December 2022" class="md-nav__link">
       Cloud December 2022
     </a>
   </li>
@@ -2939,7 +2891,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-11/" title="Cloud November 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-11/" title="Cloud November 2022" class="md-nav__link">
       Cloud November 2022
     </a>
   </li>
@@ -2951,7 +2903,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-10/" title="Cloud October 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-10/" title="Cloud October 2022" class="md-nav__link">
       Cloud October 2022
     </a>
   </li>
@@ -2963,7 +2915,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-09/" title="Cloud September 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-09/" title="Cloud September 2022" class="md-nav__link">
       Cloud September 2022
     </a>
   </li>
@@ -2975,7 +2927,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-08/" title="Cloud August 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-08/" title="Cloud August 2022" class="md-nav__link">
       Cloud August 2022
     </a>
   </li>
@@ -2987,7 +2939,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-07/" title="Cloud July 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-07/" title="Cloud July 2022" class="md-nav__link">
       Cloud July 2022
     </a>
   </li>
@@ -2999,7 +2951,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-06/" title="Cloud June 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-06/" title="Cloud June 2022" class="md-nav__link">
       Cloud June 2022
     </a>
   </li>
@@ -3011,7 +2963,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-05/" title="Cloud May 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-05/" title="Cloud May 2022" class="md-nav__link">
       Cloud May 2022
     </a>
   </li>
@@ -3023,7 +2975,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-04/" title="Cloud April 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-04/" title="Cloud April 2022" class="md-nav__link">
       Cloud April 2022
     </a>
   </li>
@@ -3035,7 +2987,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-03/" title="Cloud March 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-03/" title="Cloud March 2022" class="md-nav__link">
       Cloud March 2022
     </a>
   </li>
@@ -3047,7 +2999,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-03-31-adding-eslint8/" title="Adding ESLint 8 as a supported tool March 31, 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-03-31-adding-eslint8/" title="Adding ESLint 8 as a supported tool March 31, 2022" class="md-nav__link">
       Adding ESLint 8 as a supported tool March 31, 2022
     </a>
   </li>
@@ -3059,7 +3011,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-02/" title="Cloud February 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-02/" title="Cloud February 2022" class="md-nav__link">
       Cloud February 2022
     </a>
   </li>
@@ -3071,7 +3023,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal/" title="Removal of PMD (Legacy) February 16, 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-02-16-pmd-legacy-removal/" title="Removal of PMD (Legacy) February 16, 2022" class="md-nav__link">
       Removal of PMD (Legacy) February 16, 2022
     </a>
   </li>
@@ -3083,7 +3035,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2022-01/" title="Cloud January 2022" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2022-01/" title="Cloud January 2022" class="md-nav__link">
       Cloud January 2022
     </a>
   </li>
@@ -3125,7 +3077,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2021-12/" title="Cloud December 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-12/" title="Cloud December 2021" class="md-nav__link">
       Cloud December 2021
     </a>
   </li>
@@ -3137,7 +3089,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2021-11/" title="Cloud November 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-11/" title="Cloud November 2021" class="md-nav__link">
       Cloud November 2021
     </a>
   </li>
@@ -3149,7 +3101,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2021-10/" title="Cloud October 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-10/" title="Cloud October 2021" class="md-nav__link">
       Cloud October 2021
     </a>
   </li>
@@ -3161,7 +3113,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2021-09/" title="Cloud September 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-09/" title="Cloud September 2021" class="md-nav__link">
       Cloud September 2021
     </a>
   </li>
@@ -3173,7 +3125,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2021-11-02-legacy-organizations/" title="End of support for legacy manual organizations November 2, 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-11-02-legacy-organizations/" title="End of support for legacy manual organizations November 2, 2021" class="md-nav__link">
       End of support for legacy manual organizations November 2, 2021
     </a>
   </li>
@@ -3185,7 +3137,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2021-08/" title="Cloud August 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-08/" title="Cloud August 2021" class="md-nav__link">
       Cloud August 2021
     </a>
   </li>
@@ -3197,7 +3149,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance/" title="Performing scheduled database maintenance July 3, 2021" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2021-07-03-scheduled-db-maintenance/" title="Performing scheduled database maintenance July 3, 2021" class="md-nav__link">
       Performing scheduled database maintenance July 3, 2021
     </a>
   </li>
@@ -3239,7 +3191,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens/" title="Deprecating HTTP headers for API tokens April 1, 2020" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2020-04-01-deprecating-http-headers-for-api-tokens/" title="Deprecating HTTP headers for API tokens April 1, 2020" class="md-nav__link">
       Deprecating HTTP headers for API tokens April 1, 2020
     </a>
   </li>
@@ -3251,7 +3203,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal/" title="Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2020-03-09-nodesecurity-golint-scsslint-removal/" title="Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020" class="md-nav__link">
       Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020
     </a>
   </li>
@@ -3263,7 +3215,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2020-02-github-apps/" title="Codacy now supports GitHub Apps February 2020" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2020-02-github-apps/" title="Codacy now supports GitHub Apps February 2020" class="md-nav__link">
       Codacy now supports GitHub Apps February 2020
     </a>
   </li>
@@ -3305,7 +3257,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2019-11-15/" title="Cloud November 15, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-11-15/" title="Cloud November 15, 2019" class="md-nav__link">
       Cloud November 15, 2019
     </a>
   </li>
@@ -3317,7 +3269,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2019-10-30/" title="Cloud October 30, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-10-30/" title="Cloud October 30, 2019" class="md-nav__link">
       Cloud October 30, 2019
     </a>
   </li>
@@ -3329,7 +3281,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2019-09-05/" title="Cloud September 5, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-09-05/" title="Cloud September 5, 2019" class="md-nav__link">
       Cloud September 5, 2019
     </a>
   </li>
@@ -3341,7 +3293,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2019-08-07/" title="Cloud August 7, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-08-07/" title="Cloud August 7, 2019" class="md-nav__link">
       Cloud August 7, 2019
     </a>
   </li>
@@ -3353,7 +3305,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2019-06-18/" title="Cloud June 18, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-06-18/" title="Cloud June 18, 2019" class="md-nav__link">
       Cloud June 18, 2019
     </a>
   </li>
@@ -3365,7 +3317,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2019-05-20/" title="Cloud May 20, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-05-20/" title="Cloud May 20, 2019" class="md-nav__link">
       Cloud May 20, 2019
     </a>
   </li>
@@ -3377,7 +3329,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2019-05-05/" title="Cloud May 5, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-05-05/" title="Cloud May 5, 2019" class="md-nav__link">
       Cloud May 5, 2019
     </a>
   </li>
@@ -3389,7 +3341,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2019-04-08/" title="Cloud April 8, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-04-08/" title="Cloud April 8, 2019" class="md-nav__link">
       Cloud April 8, 2019
     </a>
   </li>
@@ -3401,7 +3353,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2019-03-29/" title="Cloud March 29, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-03-29/" title="Cloud March 29, 2019" class="md-nav__link">
       Cloud March 29, 2019
     </a>
   </li>
@@ -3413,7 +3365,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2019-02-18-bitbucket-changes/" title="Bitbucket changes February 18, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-02-18-bitbucket-changes/" title="Bitbucket changes February 18, 2019" class="md-nav__link">
       Bitbucket changes February 18, 2019
     </a>
   </li>
@@ -3425,7 +3377,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2019-01-02/" title="Cloud January 2, 2019" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2019-01-02/" title="Cloud January 2, 2019" class="md-nav__link">
       Cloud January 2, 2019
     </a>
   </li>
@@ -3467,7 +3419,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2018-11-16/" title="Cloud November 16, 2018" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2018-11-16/" title="Cloud November 16, 2018" class="md-nav__link">
       Cloud November 16, 2018
     </a>
   </li>
@@ -3479,7 +3431,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2018-11-02/" title="Cloud November 2, 2018" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2018-11-02/" title="Cloud November 2, 2018" class="md-nav__link">
       Cloud November 2, 2018
     </a>
   </li>
@@ -3491,7 +3443,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2018-10-19/" title="Cloud October 19, 2018" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2018-10-19/" title="Cloud October 19, 2018" class="md-nav__link">
       Cloud October 19, 2018
     </a>
   </li>
@@ -3503,7 +3455,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/cloud/cloud-2018-07-23/" title="Cloud July 23, 2018" class="md-nav__link">
+    <a href="../../../release-notes/cloud/cloud-2018-07-23/" title="Cloud July 23, 2018" class="md-nav__link">
       Cloud July 23, 2018
     </a>
   </li>
@@ -3575,7 +3527,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v14.1.1/" title="Self-hosted v14.1.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v14.1.1/" title="Self-hosted v14.1.1" class="md-nav__link">
       Self-hosted v14.1.1
     </a>
   </li>
@@ -3587,7 +3539,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v14.0.0/" title="Self-hosted v14.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v14.0.0/" title="Self-hosted v14.0.0" class="md-nav__link">
       Self-hosted v14.0.0
     </a>
   </li>
@@ -3629,7 +3581,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v13.0.0/" title="Self-hosted v13.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v13.0.0/" title="Self-hosted v13.0.0" class="md-nav__link">
       Self-hosted v13.0.0
     </a>
   </li>
@@ -3671,7 +3623,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v12.0.0/" title="Self-hosted v12.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v12.0.0/" title="Self-hosted v12.0.0" class="md-nav__link">
       Self-hosted v12.0.0
     </a>
   </li>
@@ -3713,7 +3665,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v11.0.0/" title="Self-hosted v11.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v11.0.0/" title="Self-hosted v11.0.0" class="md-nav__link">
       Self-hosted v11.0.0
     </a>
   </li>
@@ -3755,7 +3707,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v10.0.0/" title="Self-hosted v10.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v10.0.0/" title="Self-hosted v10.0.0" class="md-nav__link">
       Self-hosted v10.0.0
     </a>
   </li>
@@ -3797,7 +3749,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v9.0.0/" title="Self-hosted v9.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v9.0.0/" title="Self-hosted v9.0.0" class="md-nav__link">
       Self-hosted v9.0.0
     </a>
   </li>
@@ -3839,7 +3791,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v8.1.0/" title="Self-hosted v8.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v8.1.0/" title="Self-hosted v8.1.0" class="md-nav__link">
       Self-hosted v8.1.0
     </a>
   </li>
@@ -3851,7 +3803,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v8.0.0/" title="Self-hosted v8.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v8.0.0/" title="Self-hosted v8.0.0" class="md-nav__link">
       Self-hosted v8.0.0
     </a>
   </li>
@@ -3893,7 +3845,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v7.0.0/" title="Self-hosted v7.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v7.0.0/" title="Self-hosted v7.0.0" class="md-nav__link">
       Self-hosted v7.0.0
     </a>
   </li>
@@ -3935,7 +3887,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v6.0.0/" title="Self-hosted v6.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v6.0.0/" title="Self-hosted v6.0.0" class="md-nav__link">
       Self-hosted v6.0.0
     </a>
   </li>
@@ -3977,7 +3929,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v5.1.0/" title="Self-hosted v5.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v5.1.0/" title="Self-hosted v5.1.0" class="md-nav__link">
       Self-hosted v5.1.0
     </a>
   </li>
@@ -3989,7 +3941,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v5.0.0/" title="Self-hosted v5.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v5.0.0/" title="Self-hosted v5.0.0" class="md-nav__link">
       Self-hosted v5.0.0
     </a>
   </li>
@@ -4031,7 +3983,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v4.4.0/" title="Self-hosted v4.4.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.4.0/" title="Self-hosted v4.4.0" class="md-nav__link">
       Self-hosted v4.4.0
     </a>
   </li>
@@ -4043,7 +3995,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v4.3.0/" title="Self-hosted v4.3.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.3.0/" title="Self-hosted v4.3.0" class="md-nav__link">
       Self-hosted v4.3.0
     </a>
   </li>
@@ -4055,7 +4007,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v4.2.0/" title="Self-hosted v4.2.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.2.0/" title="Self-hosted v4.2.0" class="md-nav__link">
       Self-hosted v4.2.0
     </a>
   </li>
@@ -4067,7 +4019,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v4.1.0/" title="Self-hosted v4.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.1.0/" title="Self-hosted v4.1.0" class="md-nav__link">
       Self-hosted v4.1.0
     </a>
   </li>
@@ -4079,7 +4031,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v4.0.1/" title="Self-hosted v4.0.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.0.1/" title="Self-hosted v4.0.1" class="md-nav__link">
       Self-hosted v4.0.1
     </a>
   </li>
@@ -4091,7 +4043,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v4.0.0/" title="Self-hosted v4.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v4.0.0/" title="Self-hosted v4.0.0" class="md-nav__link">
       Self-hosted v4.0.0
     </a>
   </li>
@@ -4133,7 +4085,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v3.5.1/" title="Self-hosted v3.5.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.5.1/" title="Self-hosted v3.5.1" class="md-nav__link">
       Self-hosted v3.5.1
     </a>
   </li>
@@ -4145,7 +4097,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v3.5.0/" title="Self-hosted v3.5.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.5.0/" title="Self-hosted v3.5.0" class="md-nav__link">
       Self-hosted v3.5.0
     </a>
   </li>
@@ -4157,7 +4109,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v3.4.0/" title="Self-hosted v3.4.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.4.0/" title="Self-hosted v3.4.0" class="md-nav__link">
       Self-hosted v3.4.0
     </a>
   </li>
@@ -4169,7 +4121,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v3.3.0/" title="Self-hosted v3.3.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.3.0/" title="Self-hosted v3.3.0" class="md-nav__link">
       Self-hosted v3.3.0
     </a>
   </li>
@@ -4181,7 +4133,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v3.2.0/" title="Self-hosted v3.2.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.2.0/" title="Self-hosted v3.2.0" class="md-nav__link">
       Self-hosted v3.2.0
     </a>
   </li>
@@ -4193,7 +4145,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v3.1.0/" title="Self-hosted v3.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.1.0/" title="Self-hosted v3.1.0" class="md-nav__link">
       Self-hosted v3.1.0
     </a>
   </li>
@@ -4205,7 +4157,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v3.0.0/" title="Self-hosted v3.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v3.0.0/" title="Self-hosted v3.0.0" class="md-nav__link">
       Self-hosted v3.0.0
     </a>
   </li>
@@ -4247,7 +4199,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v2.2.1/" title="Self-hosted v2.2.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.2.1/" title="Self-hosted v2.2.1" class="md-nav__link">
       Self-hosted v2.2.1
     </a>
   </li>
@@ -4259,7 +4211,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v2.2.0/" title="Self-hosted v2.2.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.2.0/" title="Self-hosted v2.2.0" class="md-nav__link">
       Self-hosted v2.2.0
     </a>
   </li>
@@ -4271,7 +4223,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v2.1.1/" title="Self-hosted v2.1.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.1.1/" title="Self-hosted v2.1.1" class="md-nav__link">
       Self-hosted v2.1.1
     </a>
   </li>
@@ -4283,7 +4235,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v2.1.0/" title="Self-hosted v2.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.1.0/" title="Self-hosted v2.1.0" class="md-nav__link">
       Self-hosted v2.1.0
     </a>
   </li>
@@ -4295,7 +4247,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v2.0.0/" title="Self-hosted v2.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v2.0.0/" title="Self-hosted v2.0.0" class="md-nav__link">
       Self-hosted v2.0.0
     </a>
   </li>
@@ -4337,7 +4289,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v1.5.0/" title="Self-hosted v1.5.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.5.0/" title="Self-hosted v1.5.0" class="md-nav__link">
       Self-hosted v1.5.0
     </a>
   </li>
@@ -4349,7 +4301,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v1.4.0/" title="Self-hosted v1.4.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.4.0/" title="Self-hosted v1.4.0" class="md-nav__link">
       Self-hosted v1.4.0
     </a>
   </li>
@@ -4361,7 +4313,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v1.3.0/" title="Self-hosted v1.3.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.3.0/" title="Self-hosted v1.3.0" class="md-nav__link">
       Self-hosted v1.3.0
     </a>
   </li>
@@ -4373,7 +4325,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v1.2.0/" title="Self-hosted v1.2.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.2.0/" title="Self-hosted v1.2.0" class="md-nav__link">
       Self-hosted v1.2.0
     </a>
   </li>
@@ -4385,7 +4337,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v1.1.0/" title="Self-hosted v1.1.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.1.0/" title="Self-hosted v1.1.0" class="md-nav__link">
       Self-hosted v1.1.0
     </a>
   </li>
@@ -4397,7 +4349,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v1.0.1/" title="Self-hosted v1.0.1" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.0.1/" title="Self-hosted v1.0.1" class="md-nav__link">
       Self-hosted v1.0.1
     </a>
   </li>
@@ -4409,7 +4361,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../release-notes/self-hosted/self-hosted-v1.0.0/" title="Self-hosted v1.0.0" class="md-nav__link">
+    <a href="../../../release-notes/self-hosted/self-hosted-v1.0.0/" title="Self-hosted v1.0.0" class="md-nav__link">
       Self-hosted v1.0.0
     </a>
   </li>
@@ -4436,7 +4388,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../special-thanks/" title="Special thanks" class="md-nav__link">
+    <a href="../../../special-thanks/" title="Special thanks" class="md-nav__link">
       Special thanks
     </a>
   </li>
@@ -4459,874 +4411,91 @@
                   
                 
                 
-                <h1 id="supported-languages-and-tools">Supported languages and tools<a class="headerlink" href="#supported-languages-and-tools" title="Permanent link">#</a></h1>
-<p>Codacy uses industry-leading tools to perform automatic static code analysis over 40 supported languages:</p>
+                <h1 id="running-dart-analyzer">Running Dart Analyzer<a class="headerlink" href="#running-dart-analyzer" title="Permanent link">#</a></h1>
+<p>To run Dart Analyzer as a <a href="../client-side-tools/">client-side tool</a>:</p>
+<ol>
+<li>
+<p><a href="../../configuring-code-patterns/">Enable Dart Analyzer</a> and configure the corresponding code patterns on your repository <strong>Code patterns</strong> page.</p>
+</li>
+<li>
+<p>Enable <strong>Run analysis on your build server</strong> on your repository <strong>Settings</strong>, tab <strong>General</strong>, <strong>Repository analysis on your server</strong>.</p>
+<p>This setting enables Codacy to wait for the results of the local analysis before resuming the analysis of your commits.</p>
+<p><img alt="Run analysis on your build server" src="../images/run-analysis-through-build-server.png" /></p>
+</li>
+<li>
+<p>Set up an API token to authenticate on Codacy:</p>
 <ul>
 <li>
-<p><strong>For programming languages</strong>, Codacy provides static analysis as well as code duplication, code complexity, secret detection, dependency vulnerability scanning, and code coverage metrics for key languages.</p>
+<p><strong>If you're setting up one repository</strong>, <a href="../../../codacy-api/api-tokens/#repository-api-tokens">obtain a repository API token</a> and set the following environment variable to specify your repository API token:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_PROJECT_TOKEN</span><span class="o">=</span>&lt;your<span class="w"> </span>repository<span class="w"> </span>API<span class="w"> </span>token&gt;
+</code></pre></div>
 </li>
 <li>
-<p><strong>For cloud infrastructure-as-code platforms</strong>, Codacy provides static analysis and secret detection to enforce security and compliance best practices.</p>
+<p><strong>If you're setting up multiple repositories</strong>, <a href="../../../codacy-api/api-tokens/#account-api-tokens">obtain an account API Token</a> and set the following environment variable to specify the account API token:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_API_TOKEN</span><span class="o">=</span>&lt;your<span class="w"> </span>account<span class="w"> </span>API<span class="w"> </span>token&gt;
+</code></pre></div>
 </li>
 </ul>
-<p>The table below lists all languages that Codacy supports and the corresponding tools that Codacy uses to analyze your source code. Besides this, Codacy uses <a href="https://github.com/kentcdodds/cloc">cloc</a> to calculate the source lines of code for all supported languages and supports multiple <a href="../../coverage-reporter/#generating-coverage">code coverage report formats</a>.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Codacy runs security and other analysis tools when code changes are pushed to your repositories. These tools don't scan code for issues continuously.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p><strong>Never write API tokens to your configuration files</strong> and keep your API tokens well protected, as they grant owner permissions to your projects on Codacy.</p>
+<p>It's a best practice to store API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.</p>
 </div>
-<table>
-  <colgroup>
-    <col span="1" style="width: 20%;">
-    <col span="1" style="width: 20%;">
-    <col span="1" style="width: 10%;">
-    <col span="1" style="width: 10%;">
-    <col span="1" style="width: 20%;">
-    <col span="1" style="width: 10%;">
-    <col span="1" style="width: 10%;">
-    <col width="20%"/>
-  </colgroup>
-  <thead>
-    <tr>
-      <th>Language</th>
-      <th>File extensions</th>
-      <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Static analysis</a></th>
-      <th><a style="color: white;" href="#suggest-fixes">Suggested fixes</a></th>
-      <th>Secret detection</th>
-      <th>Dependency vulnerability scanning</th>
-      <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">Duplication</a></th>
-      <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">Complexity</a></th>
-      <th>License scanning</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>Apex</td>
-      <td>.cls, .trigger</td>
-      <td><a href="https://pmd.github.io/">PMD</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a></td>
-      <td>-</td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>AsyncAPI</td>
-      <td>-</td>
-      <td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>AWS CloudFormation</td>
-      <td>-</td>
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
-      <td>-</td>
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
-          <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Azure Resource Manager Templates</td>
-      <td>-</td>
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>C</td>
-      <td>.c, .h</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a> <a href="#client-side"><sup>3</sup></a>,
-          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
-          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>C++</td>
-      <td>.cpp, .hpp, .cc, .cxx, .ino</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a> <a href="#client-side"><sup>3</sup></a>,
-          <a href="http://cppcheck.sourceforge.net/">Cppcheck</a> <a href="#cppcheck-misra"><sup>4</sup></a>,
-          <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>C#</td>
-      <td>.cs</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>.deps.json</code> (.Net), <code>packages.lock.json</code> (NuGet) </td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>CoffeeScript</td>
-      <td>.coffee</td>
-      <td><a href="https://github.com/clutchski/coffeelint">CoffeeLint</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Crystal</td>
-      <td>.cr</td>
-      <td><a href="https://github.com/crystal-ameba/ameba">Ameba</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>CSS</td>
-      <td>.css</td>
-      <td><a href="https://stylelint.io/">Stylelint</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Dart</td>
-      <td>.dart</td>
-      <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a> <a href="#dart-limitations"><sup>5</sup></a></td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pubspec.lock</code></td>
-      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Dockerfile</td>
-      <td>.dockerfile</td>
-      <td><a href="https://github.com/hadolint/hadolint">Hadolint</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Elixir</td>
-      <td>.ex, .exs</td>
-      <td><a href="https://github.com/rrrene/credo">Credo</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>mix.lock</code> (Mix) </td>
-      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>GitHub Actions</td>
-      <td>-</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Go</td>
-      <td>.go</td>
-      <td><a href="https://gitlab.com/opennota/check">aligncheck</a> <a href="#client-side"><sup>3</sup></a>,
-          <a href="https://github.com/tsenart/deadcode">deadcode</a> <a href="#client-side"><sup>3</sup></a>,
-          <a href="https://github.com/securego/gosec">Gosec</a> <a href="#client-side"><sup>3</sup></a>,
-          <a href="https://github.com/mgechev/revive">Revive</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://staticcheck.io/">Staticcheck</a> <a href="#client-side"><sup>3</sup></a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>go.mod</code></td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Groovy</td>
-      <td>.groovy</td>
-      <td><a href="https://codenarc.github.io/CodeNarc/">CodeNarc</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Helm</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
-          <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Java</td>
-      <td>.java</td>
-      <td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a>,
-          <a href="https://pmd.github.io/">PMD</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://spotbugs.github.io/">SpotBugs</a> <a href="#client-side"><sup>3</sup></a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://pmd.github.io/">PMD</a>,
-          <a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
-      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="https://pmd.github.io/">PMD</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>JavaScript</td>
-      <td>.js, .jsx, .jsm, .vue, .mjs</td>
-      <td><a href="https://eslint.org/">ESLint</a>,
-          <a href="https://pmd.github.io/">PMD</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>JSON</td>
-      <td>.json</td>
-      <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
-      <td>-</td>
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>JSP</td>
-      <td>.jsp</td>
-      <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Kotlin</td>
-      <td>.kt, .kts</td>
-      <td>
-          <a href="https://github.com/detekt/detekt">detekt</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://pmd.github.io">PMD</a>
-      </td>
-      <td>-</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
-      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="https://github.com/detekt/detekt">detekt</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Kubernetes</td>
-      <td>-</td>
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
-          <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Less</td>
-      <td>.less</td>
-      <td><a href="https://stylelint.io/">Stylelint</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Markdown</td>
-      <td>.md, .markdown, .mdown, .mkdn, .mkd, .mdwn, .mkdown, .ron</td>
-      <td><a href="https://github.com/remarkjs/remark-lint">remark-lint</a>, <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
-      <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> <a href="#suggest-fixes">🔧</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Objective-C</td>
-      <td>.m</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a> <a href="#client-side"><sup>3</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>OpenAPI</td>
-      <td>-</td>
-      <td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>PHP</td>
-      <td>.php</td>
-      <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
-          <a href="https://phpmd.org/">PHP Mess Detector</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
-      <td><a href="https://github.com/sebastianbergmann/phpcpd">PHPCPD</a></td>
-      <td><a href="https://github.com/pdepend/pdepend">PHP Depend</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
-    </tr>
-    <tr>
-      <td>PL/SQL</td>
-      <td>.trg, .prc, .fnc, .pld, .pls, .plh, .plb, .pck, .pks, .pkh, .pkb, .typ, .tyb, .tps, .tpb</td>
-      <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>PostgreSQL</td>
-      <td>-</td>
-      <td><a href="https://github.com/purcell/sqlint">SQLint</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>PowerShell</td>
-      <td>.ps1, .psc1, .psd1, .psm1, .ps1xml, .pssc, .cdxml, .clixml</td>
-      <td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Python</td>
-      <td>.py</td>
-      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
-          <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
-          <a href="https://github.com/astral-sh/ruff">Ruff</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
-          <a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)</td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/rubik/radon">Radon</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Ruby</td>
-      <td>.rb, .gemspec, .podspec, .jbuilder, .rake, .opal</td>
-      <td><a href="https://brakemanscanner.org/">Brakeman</a> <a href="#semgrep-brakeman"><sup>7</sup></a>,
-          <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Gemfile.lock</code> (Bundler) </td>
-      <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
-      <td><a href="https://github.com/rubocop/rubocop">RuboCop</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Rust</td>
-      <td>.rs, .rlib</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Cargo.lock</code> (Cargo) </td>
-      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Sass</td>
-      <td>.scss</td>
-      <td><a href="https://stylelint.io/">Stylelint</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Scala</td>
-      <td>.scala</td>
-      <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
-          <a href="http://www.scalastyle.org/">Scalastyle</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://spotbugs.github.io/">SpotBugs</a> <a href="#client-side"><sup>3</sup></a></td>
-      <td>-</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>build.sbt.lock</code> (sbt) <a href="#scala-dependencies"><sup>9</sup></a></td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
-          <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Serverless Framework</td>
-      <td>-</td>
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Shell</td>
-      <td>.sh, .bash</td>
-      <td><a href="https://www.shellcheck.net/">ShellCheck</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Swift</td>
-      <td>.swift</td>
-      <td>
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
-          <a href="https://github.com/realm/SwiftLint">SwiftLint</a>,
-          <a href="https://pmd.github.io">PMD</a>
-      </td>
-      <td>-</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#complexity-limitations"><sup>6</sup></a> <a href="#swiftlint-complexity"><sup>8</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Terraform</td>
-      <td>.tf</td>
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td>-</td>
-      <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
-          <a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Transact-SQL</td>
-      <td>.tsql</td>
-      <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>TypeScript</td>
-      <td>.ts, .tsx</td>
-      <td><a href="https://eslint.org/">ESLint</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
-      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Unity</td>
-      <td>-</td>
-      <td><a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a> <a href="#client-side"><sup>3</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Velocity</td>
-      <td>.vm</td>
-      <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Visual Basic</td>
-      <td>.vb</td>
-      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>Visualforce</td>
-      <td>.component, .page</td>
-      <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>XML</td>
-      <td>.xml, .xsl, .wsdl, .pom</td>
-      <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>XSL</td>
-      <td>.xsl</td>
-      <td><a href="https://pmd.github.io/">PMD</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-    <tr>
-      <td>YAML</td>
-      <td>.yaml, .yml, .env, .env.production, .env.prod, .env.staging, .env.dev, .env.development</td>
-      <td>-</td>
-      <td>-</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
-  </tbody>
-</table>
-
-<h2 id="docker-images-of-supported-tools">Docker images of supported tools<a class="headerlink" href="#docker-images-of-supported-tools" title="Permanent link">#</a></h2>
-<p>Codacy adds support for new languages and tools by using <a href="https://github.com/codacy/codacy-example-tool">a Docker image to run each tool</a>.</p>
-<p>The following table lists the Codacy GitHub repositories corresponding to each supported tool. Use these repositories to check the extra plugins supported by each tool or to submit GitHub issues related to each tool. To learn more about the tool versions used by Codacy, <a href="../../release-notes/">see the latest release notes</a>.</p>
-<table>
-<thead>
-<tr>
-<th><strong>Tool name</strong></th>
-<th><strong>Codacy GitHub repository</strong></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="https://gitlab.com/opennota/check">aligncheck</a> <a href="#client-side"><sup>3</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-aligncheck" class="skip-vale">codacy/codacy-aligncheck</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/crystal-ameba/ameba">Ameba</a></td>
-<td><a href="https://github.com/codacy/codacy-ameba" class="skip-vale">codacy/codacy-ameba</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/PyCQA/bandit">Bandit</a></td>
-<td><a href="https://github.com/codacy/codacy-bandit" class="skip-vale">codacy/codacy-bandit</a></td>
-</tr>
-<tr>
-<td><a href="https://brakemanscanner.org/">Brakeman</a> <a href="#semgrep-brakeman"><sup>7</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-brakeman" class="skip-vale">codacy/codacy-brakeman</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
-<td><a href="https://github.com/codacy/codacy-checkov" class="skip-vale">codacy/codacy-checkov</a></td>
-</tr>
-<tr>
-<td><a href="https://checkstyle.sourceforge.io/">Checkstyle</a></td>
-<td><a href="https://github.com/codacy/codacy-checkstyle" class="skip-vale">codacy/codacy-checkstyle</a></td>
-</tr>
-<tr>
-<td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a> <a href="#client-side"><sup>3</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-clang-tidy" class="skip-vale">codacy/codacy-clang-tidy</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a></td>
-<td><a href="https://github.com/codacy/codacy-scalameta" class="skip-vale">codacy/codacy-scalameta</a></td>
-</tr>
-<tr>
-<td><a href="https://codenarc.org/">CodeNarc</a></td>
-<td><a href="https://github.com/codacy/codacy-codenarc" class="skip-vale">codacy/codacy-codenarc</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/clutchski/coffeelint">CoffeeLint</a></td>
-<td><a href="https://github.com/codacy/codacy-coffeelint" class="skip-vale">codacy/codacy-coffeelint</a></td>
-</tr>
-<tr>
-<td><a href="http://cppcheck.sourceforge.net/">Cppcheck</a> <a href="#cppcheck-misra"><sup>4</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-cppcheck" class="skip-vale">codacy/codacy-cppcheck</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/rrrene/credo">Credo</a></td>
-<td><a href="https://github.com/codacy/codacy-credo" class="skip-vale">codacy/codacy-credo</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a> <a href="#dart-limitations"><sup>5</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-dartanalyzer" class="skip-vale">codacy/codacy-dartanalyzer</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/tsenart/deadcode">deadcode</a> <a href="#client-side"><sup>3</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-deadcode" class="skip-vale">codacy/codacy-deadcode</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/arturbosch/detekt">detekt</a></td>
-<td><a href="https://github.com/codacy/codacy-detekt" class="skip-vale">codacy/codacy-detekt</a></td>
-</tr>
-<tr>
-<td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-eslint" class="skip-vale">codacy/codacy-eslint</a></td>
-</tr>
-<tr>
-<td><a href="https://dwheeler.com/flawfinder/">Flawfinder</a></td>
-<td><a href="https://github.com/codacy/codacy-flawfinder" class="skip-vale">codacy/codacy-flawfinder</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/securego/gosec">Gosec</a> <a href="#client-side"><sup>3</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-gosec" class="skip-vale">codacy/codacy-gosec</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/hadolint/hadolint">Hadolint</a></td>
-<td><a href="https://github.com/codacy/codacy-hadolint" class="skip-vale">codacy/codacy-hadolint</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
-<td><a href="https://github.com/codacy/codacy-jackson-linter" class="skip-vale">codacy/codacy-jackson-linter</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
-<td><a href="https://github.com/codacy/codacy-lizard" class="skip-vale">codacy/codacy-lizard</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
-<td><a href="https://github.com/codacy/codacy-markdownlint" class="skip-vale">codacy/codacy-markdownlint</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a></td>
-<td><a href="https://github.com/codacy/codacy-codesniffer" class="skip-vale">codacy/codacy-codesniffer</a></td>
-</tr>
-<tr>
-<td><a href="https://phpmd.org/">PHP Mess Detector</a></td>
-<td><a href="https://github.com/codacy/codacy-phpmd" class="skip-vale">codacy/codacy-phpmd</a></td>
-</tr>
-<tr>
-<td><a href="https://pmd.github.io/">PMD</a> <a href="#complexity-limitations"><sup>6</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-pmd7" class="skip-vale">codacy/codacy-pmd7</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/landscapeio/prospector2">Prospector</a></td>
-<td><a href="https://github.com/codacy/codacy-prospector" class="skip-vale">codacy/codacy-prospector</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
-<td><a href="https://github.com/codacy/codacy-psscriptanalyzer" class="skip-vale">codacy/codacy-psscriptanalyzer</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/pylint-dev/pylint">Pylint</a></td>
-<td><a href="https://github.com/codacy/codacy-pylint-python3" class="skip-vale">codacy/codacy-pylint-python3</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/remarkjs/remark-lint">remark-lint</a></td>
-<td><a href="https://github.com/codacy/codacy-remark-lint" class="skip-vale">codacy/codacy-remark-lint</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/mgechev/revive">Revive</a></td>
-<td><a href="https://github.com/codacy/codacy-gorevive" class="skip-vale">codacy/codacy-gorevive</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/rubocop/rubocop">RuboCop</a> <a href="#complexity-limitations"><sup>6</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-rubocop" class="skip-vale">codacy/codacy-rubocop</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/astral-sh/ruff">Ruff</a></td>
-<td><a href="https://github.com/codacy/codacy-ruff" class="skip-vale">codacy/codacy-ruff</a></td>
-</tr>
-<tr>
-<td><a href="http://www.scalastyle.org/">Scalastyle</a></td>
-<td><a href="https://github.com/codacy/codacy-scalastyle" class="skip-vale">codacy/codacy-scalastyle</a></td>
-</tr>
-<tr>
-<td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-semgrep" class="skip-vale">codacy/codacy-semgrep</a></td>
-</tr>
-<tr>
-<td><a href="https://www.shellcheck.net/">ShellCheck</a></td>
-<td><a href="https://github.com/codacy/codacy-shellcheck" class="skip-vale">codacy/codacy-shellcheck</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a></td>
-<td><a href="https://github.com/codacy/codacy-sonar-csharp" class="skip-vale">codacy/codacy-sonar-csharp</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a></td>
-<td><a href="https://github.com/codacy/codacy-sonar-visual-basic" class="skip-vale">codacy/codacy-sonar-visual-basic</a></td>
-</tr>
-<tr>
-<td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
-<td><a href="https://github.com/codacy/codacy-spectral" class="skip-vale">codacy/codacy-spectral</a></td>
-</tr>
-<tr>
-<td><a href="https://spotbugs.github.io/">SpotBugs</a> <a href="#client-side"><sup>3</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-spotbugs" class="skip-vale">codacy/codacy-spotbugs</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/purcell/sqlint">SQLint</a></td>
-<td><a href="https://github.com/codacy/codacy-sqlint" class="skip-vale">codacy/codacy-sqlint</a></td>
-</tr>
-<tr>
-<td><a href="https://staticcheck.io">Staticcheck</a> <a href="#client-side"><sup>3</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-staticcheck" class="skip-vale">codacy/codacy-staticcheck</a></td>
-</tr>
-<tr>
-<td><a href="https://stylelint.io/">Stylelint</a></td>
-<td><a href="https://github.com/codacy/codacy-stylelint" class="skip-vale">codacy/codacy-stylelint</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/realm/SwiftLint">SwiftLint</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#swiftlint-complexity"><sup>8</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-swiftlint" class="skip-vale">codacy/codacy-swiftlint</a></td>
-</tr>
-<tr>
-<td><a href="https://trivy.dev">Trivy</a></td>
-<td><a href="https://github.com/codacy/codacy-trivy/" class="skip-vale">codacy/codacy-trivy</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
-<td><a href="https://github.com/codacy/codacy-tsqllint" class="skip-vale">codacy/codacy-tsqllint</a></td>
-</tr>
-<tr>
-<td><a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a> <a href="#client-side"><sup>3</sup></a></td>
-<td><a href="https://github.com/codacy/codacy-roslyn" class="skip-vale">codacy/codacy-roslyn</a></td>
-</tr>
-</tbody>
-</table>
-
-<p><sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for <a href="https://semgrep.dev/pricing/">Semgrep Pro</a>. This tool doesn't support <a href="../../repositories-configure/languages/#configuring-file-extensions">custom file extensions</a>.<br />
-<sup><span id="yaml-only">2</span></sup>: Currently, only YAML file scanning is supported on this platform.<br />
-<sup><span id="client-side">3</span></sup>: Supported as a <a href="../../repositories-configure/local-analysis/client-side-tools/">client-side tool</a>.<br />
-<sup><span id="cppcheck-misra">4</span></sup>: Currently, Cppcheck only supports <a href="https://cppcheck.sourceforge.io/misra.php">checking the MISRA guidelines for C</a>.<br />
-<sup><span id="dart-limitations">5</span></sup>: Currently, Codacy only supports including the packages <a href="https://pub.dev/packages/lints">lints</a> and <a href="https://pub.dev/packages/flutter_lints"><span class="skip-vale">flutter_lints</span></a> on dartanalyzer configuration files.<br />
-<sup><span id="complexity-limitations">6</span></sup>: Doesn't calculate <a href="../../repositories/files/#file-details">the number of methods and the complexity per method</a> for each file.<br />
-<sup><span id="semgrep-brakeman">7</span></sup>: Due to licensing limitations, Codacy doesn't support the latest version of Brakeman. To analyze your Ruby code for the latest security vulnerabilities, use <a href="https://semgrep.dev/">Semgrep</a>, which provides comprehensive and up-to-date security scanning.<br />
-<sup><span id="swiftlint-complexity">8</span></sup>: Supports <a href="https://realm.github.io/SwiftLint/cyclomatic_complexity.html">reporting warnings or errors</a> on functions above specific complexity thresholds. Enable the rule <strong>Cyclomatic Complexity</strong> on the <a href="../../repositories-configure/configuring-code-patterns/">Code patterns page</a>, or use a <a href="https://realm.github.io/SwiftLint/index.html#configuration">configuration file</a> to customize the thresholds.<br />
-<sup><span id="scala-dependencies">9</span></sup>: Requires the <a href="https://github.com/stringbean/sbt-dependency-lock">sbt-dependency-lock</a> plugin for generating the lockfile.<br />
-<sup><span id="different-tools">10</span></sup>: Codacy may use a different version of this tool for measuring complexity and duplication.<br />
-<sup><span id="suggest-fixes">🔧</span></sup>: Supports <a href="../../repositories-configure/integrations/github-integration/#suggest-fixes">suggesting fixes</a> for identified issues.</p>
-<h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
+</li>
+<li>
+<p><strong>If you're using Codacy Self-hosted</strong> set the following environment variable to specify your Codacy instance URL:</p>
+<div class="highlight"><pre><span></span><code><span class="nb">export</span><span class="w"> </span><span class="nv">CODACY_API_BASE_URL</span><span class="o">=</span>&lt;your<span class="w"> </span>Codacy<span class="w"> </span>instance<span class="w"> </span>URL&gt;
+</code></pre></div>
+</li>
+</ol>
+<h2 id="important-concepts">Important Concepts<a class="headerlink" href="#important-concepts" title="Permanent link">#</a></h2>
 <ul>
-<li><a href="../codacy-quickstart/">Codacy quickstart (5 min)</a></li>
-<li><a href="../../repositories-configure/local-analysis/client-side-tools/">Client-side tools</a></li>
-<li><a href="../../faq/code-analysis/which-metrics-does-codacy-calculate/">Which metrics does Codacy calculate?</a></li>
+<li><strong><code>.codacy/codacy.yaml</code></strong>: Configuration file to specify <code>dart</code>, or <code>flutter</code>, and <code>dartanalyzer</code> versions for the CLI.</li>
 </ul>
+<div class="highlight"><pre><span></span><code><span class="nt">runtimes</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dart@3.7.2</span>
+<span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dartanalyzer@3.7.20</span>
+</code></pre></div>
+<p>or </p>
+<div class="highlight"><pre><span></span><code><span class="nt">runtimes</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">flutter@3.29.3</span>
+<span class="nt">tools</span><span class="p">:</span>
+<span class="w">    </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">dartanalyzer@3.7.20</span>
+</code></pre></div>
+<h2 id="manual-configuration">Manual configuration<a class="headerlink" href="#manual-configuration" title="Permanent link">#</a></h2>
+<div class="highlight"><pre><span></span><code>codacy-cli<span class="w"> </span>install
+codacy-cli<span class="w"> </span>analyze<span class="w"> </span>-t<span class="w"> </span>dartanalyzer<span class="w"> </span>-o<span class="w"> </span>dartanalyzer.sarif
+codacy-cli<span class="w"> </span>upload<span class="w"> </span>-s<span class="w"> </span>dartanalyzer.sarif<span class="w"> </span>-c<span class="w"> </span><span class="nv">$COMMIT_SHA</span><span class="w"> </span>-t<span class="w"> </span>CODACY_PROJECT_TOKEN
+</code></pre></div>
+<p><strong>If you're using an account API token</strong>, you must also provide the flags <code>-p</code>, <code>-o</code>, and <code>-r</code>. You can obtain the values for these flags from the URL of your repository dashboard on Codacy:</p>
+<div class="highlight"><pre><span></span><code>codacy-cli<span class="w"> </span>install
+codacy-cli<span class="w"> </span>analyze<span class="w"> </span>-t<span class="w"> </span>dartanalyzer<span class="w"> </span>-o<span class="w"> </span>dartanalyzer.sarif
+codacy-cli<span class="w"> </span>analyze<span class="w"> </span>-t<span class="w"> </span>dartanalyzer<span class="w"> </span>-o<span class="w"> </span>dartanalyzer.sarif<span class="w"> </span>-c<span class="w"> </span><span class="nv">$COMMIT_SHA</span><span class="w"> </span>-a<span class="w"> </span>CODACY_API_TOKEN<span class="w"> </span>-p<span class="w"> </span>provider<span class="w"> </span><span class="o">(</span>gh<span class="p">|</span>gl<span class="p">|</span>bb<span class="o">)</span><span class="w"> </span>-o<span class="w"> </span>ORGANIZATION<span class="w"> </span>-r<span class="w"> </span>REPOSITORY
+</code></pre></div>
+<h2 id="github-action">GitHub Action<a class="headerlink" href="#github-action" title="Permanent link">#</a></h2>
+<h3 id="using-a-project-token">Using a project token<a class="headerlink" href="#using-a-project-token" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code>- name: Run Codacy CLI
+  uses: codacy/codacy-cli-v2-action@main
+  with:
+    project-token: CODACY_PROJECT_TOKEN
+    tool: dartanalyzer
+    upload_report: true
+</code></pre></div>
+<h3 id="using-an-account-api-token">Using an account API token<a class="headerlink" href="#using-an-account-api-token" title="Permanent link">#</a></h3>
+<div class="highlight"><pre><span></span><code>- name: Run Codacy CLI
+  uses: codacy/codacy-cli-v2-action@main
+  with:
+    api_token: CODACY_API_TOKEN
+    tool: dartanalyzer
+    upload_report: true
+    provider: gh
+    owner: codacy-acme
+    repository: sample-dart-project
+</code></pre></div>
+<div class="admonition warning">
+<p class="admonition-title">Tokens should be stored in the repository secrets.</p>
+</div>
               
               
                 
@@ -5370,7 +4539,7 @@
           <br>
         </div>
         <p>
-          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Supported languages and tools%22">create a more detailed issue on our GitHub repository</a>.
+          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Running Dart Analyzer%22">create a more detailed issue on our GitHub repository</a>.
         </p>
       </div>
     </div>
@@ -5379,14 +4548,14 @@
     </p>
     
     <p>
-      <a href="https://github.com/codacy/docs/edit/master/docs/getting-started/supported-languages-and-tools.md" title="Edit this page">
+      <a href="https://github.com/codacy/docs/edit/master/docs/repositories-configure/local-analysis/running-dartanalyzer.md" title="Edit this page">
         Edit this page on GitHub
       </a>
       if you notice something wrong or missing.
     </p>
     
     <p>
-      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Supported languages and tools">support@codacy.com</a>.
+      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Running Dart Analyzer">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -5496,7 +4665,7 @@
   <div class="md-footer-nav">
     <nav class="md-footer-nav__inner">
       <div class="footer-logo">
-        <img src="../../assets/images/codacy-logo-black.svg" alt="Codacy">
+        <img src="../../../assets/images/codacy-logo-black.svg" alt="Codacy">
       </div>
       <div class="nav-links-wrapper">
       <ul>
@@ -5546,20 +4715,20 @@
       </main>
     </div>
     
-      <script src="../../assets/javascripts/vendor.57114a05.min.js"></script>
-      <script src="../../assets/javascripts/bundle.17d77c1b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching"}</script>
+      <script src="../../../assets/javascripts/vendor.57114a05.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.17d77c1b.min.js"></script><script id="__lang" type="application/json">{"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching"}</script>
       
       <script>
         app = initialize({
-          base: "../..",
+          base: "../../..",
           features: [],
           search: Object.assign({
-            worker: "../../assets/javascripts/worker/search.5845d53c.min.js"
+            worker: "../../../assets/javascripts/worker/search.5845d53c.min.js"
           }, typeof search !== "undefined" && search)
         })
       </script>
       
-        <script src="../../assets/javascripts/version-select.js"></script>
+        <script src="../../../assets/javascripts/version-select.js"></script>
       
       <script id="ze-snippet" src="https://static.zdassets.com/ekr/snippet.js?key=3d46eedc-c17f-4ae6-8385-a62571296d54"></script>
     
