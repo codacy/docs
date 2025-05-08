@@ -11,8 +11,6 @@ Thanks to the new app scanning capabilities available on the Security and risk m
 
     **Check your [permissions](../../organizations/roles-and-permissions-for-organizations.md).** Only git provider admins and organization managers will be able to create new targets and trigger scans (in app and via the API).
 
-    **Get your API key.** All the methods below require you to authenticate via your [account's API token](../api-tokens.md#account-api-tokens).
-
 
 ## Creating targets
 
