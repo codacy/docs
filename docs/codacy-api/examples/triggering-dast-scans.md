@@ -7,9 +7,12 @@ description: Instructions on how to trigger DAST/App using the API.
 Thanks to the new app scanning capabilities available on the Security and risk management dashboard, it's now possible to automate application scanning via Codacy's API. This means that, with little effort, you'll be able to trigger app scanning on demand every time you deploy a new version of your app.
 
 !!! important
-    App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.
-    Check your [permissions](../../organizations/roles-and-permissions-for-organizations.md). Only git provider admins and organization managers will be able to create new targets and trigger scans (in app and via the API).
-    Get your API key. All the methods below require you to authenticate via your [account's API token](../api-tokens.md#account-api-tokens).
+    **App scanning is a business feature.** If you are a Codacy Pro customer, contact our customer success team to access a short trial.
+
+    **Check your [permissions](../../organizations/roles-and-permissions-for-organizations.md).** Only git provider admins and organization managers will be able to create new targets and trigger scans (in app and via the API).
+
+    **Get your API key.** All the methods below require you to authenticate via your [account's API token](../api-tokens.md#account-api-tokens).
+
 
 ## Creating targets
 
