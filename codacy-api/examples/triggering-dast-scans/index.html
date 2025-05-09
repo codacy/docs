@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to trigger DAST/App using the API.">
       
       
-        <meta http-equiv="last-modified" content="2025-04-10 13:32:06">
+        <meta http-equiv="last-modified" content="2025-05-09 08:03:47">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/triggering-dast-scans/">
@@ -4477,9 +4477,8 @@
 <p>Thanks to the new app scanning capabilities available on the Security and risk management dashboard, it's now possible to automate application scanning via Codacy's API. This means that, with little effort, you'll be able to trigger app scanning on demand every time you deploy a new version of your app.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.
-Check your <a href="../../../organizations/roles-and-permissions-for-organizations/">permissions</a>. Only git provider admins and organization managers will be able to create new targets and trigger scans (in app and via the API).
-Get your API key. All the methods below require you to authenticate via your <a href="../../api-tokens/#account-api-tokens">account's API token</a>.</p>
+<p><strong>App scanning is a business feature.</strong> If you are a Codacy Pro customer, contact our customer success team to access a short trial.</p>
+<p><strong>Check your <a href="../../../organizations/roles-and-permissions-for-organizations/">permissions</a>.</strong> Only git provider admins and organization managers will be able to create new targets and trigger scans (in app and via the API).</p>
 </div>
 <h2 id="creating-targets">Creating targets<a class="headerlink" href="#creating-targets" title="Permanent link">#</a></h2>
 <p>Before the automation process itself, you need to create a target. Targets are single units that contain all the configurations of your scan, in this case the URL (and later on other configurations, like authentication details and OpenAPI definition).
@@ -4535,7 +4534,7 @@ Targets only need to be defined once. The target's URL is immutable, so, if you 
 <p><strong>ORGANIZATION:</strong> Name of the organization on the Git provider. For example, <code>codacy</code>. You must have admin permissions over the organization on the Git provider.</p>
 </li>
 </ul>
-<p>Once you create the target you'll get the 'Target Id' as a response. That id will be used to trigger DAST scans in the next section.</p>
+<p>Once you create the target you'll get the target <code>id</code> as a response. You will use it to trigger DAST scans in the next section.</p>
 <h2 id="trigger-dast-analysis-scans">Trigger DAST analysis scans<a class="headerlink" href="#trigger-dast-analysis-scans" title="Permanent link">#</a></h2>
 <p>Once your targets are created you can trigger an analysis by calling the '<a href="https://api.codacy.com/api/api-docs#analyzedasttarget">Analyze DAST target</a>' endpoint.</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.codacy.com/api/v3/organizations/<span class="o">{</span>GIT_PROVIDER<span class="o">}</span>/<span class="o">{</span>ORGANIZATION<span class="o">}</span>/dast/targets/<span class="o">{</span>DAST_TARGET_ID<span class="o">}</span>/analyze<span class="w"> </span><span class="se">\</span>
@@ -4545,47 +4544,9 @@ Targets only need to be defined once. The target's URL is immutable, so, if you 
 <p>Replace the placeholders with your own values:</p>
 <ul>
 <li><strong>API_KEY:</strong> <a href="../../api-tokens/#account-api-tokens">Account API token</a> used to authenticate on the Codacy API.</li>
-<li>
-<p><strong>GIT_PROVIDER:</strong> Git provider hosting of the organization, using one of the values in the table below. For example, <code>gh</code> for GitHub Cloud.</p>
-<table>
-<thead>
-<tr>
-<th>Value</th>
-<th>Git provider</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><code>gh</code></td>
-<td>GitHub Cloud</td>
-</tr>
-<tr>
-<td><code>ghe</code></td>
-<td>GitHub Enterprise</td>
-</tr>
-<tr>
-<td><code>gl</code></td>
-<td>GitLab Cloud</td>
-</tr>
-<tr>
-<td><code>gle</code></td>
-<td>GitLab Enterprise</td>
-</tr>
-<tr>
-<td><code>bb</code></td>
-<td>Bitbucket Cloud</td>
-</tr>
-<tr>
-<td><code>bbe</code></td>
-<td>Bitbucket Server</td>
-</tr>
-</tbody>
-</table>
-</li>
-<li>
-<p><strong>ORGANIZATION:</strong> Name of the organization on the Git provider. For example, <code>codacy</code>. You must have admin permissions over the organization on the Git provider.
-<strong>DAST_TARGET_ID:</strong> Identifier of a DAST target to analyze (obtained in the <a href="./#creating-targets">previous section</a>. For example, <code>457</code>. You must have admin permissions over the organization on the Git provider.</p>
-</li>
+<li><strong>GIT_PROVIDER:</strong> Git provider hosting of the organization (check the table on the example above). For example, <code>gh</code> for GitHub Cloud.</li>
+<li><strong>ORGANIZATION:</strong> Name of the organization on the Git provider. For example, <code>codacy</code>. You must have admin permissions over the organization on the Git provider.</li>
+<li><strong>DAST_TARGET_ID:</strong> Identifier of a DAST target to analyze (obtained in the <a href="./#creating-targets">previous section</a>. For example, <code>457</code>. You must have admin permissions over the organization on the Git provider.</li>
 </ul>
 <p>Scans occur asynchronously. To monitor an ongoing scan you can use the <a href="../../../organizations/managing-security-and-risk/#app-scanning">target management page in Codacy</a>. Once completed, you can access all scan results by navigating to the <strong>Security dashboard</strong>, selecting the <strong>Findings tab</strong> and filtering by <strong>Scan types &gt; DAST/App scanning</strong>.</p>
               
@@ -4744,7 +4705,7 @@ Targets only need to be defined once. The target's URL is immutable, so, if you 
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 10, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 9, 2025</span>
     
   </small>
 </div>
