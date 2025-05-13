@@ -562,6 +562,8 @@ nav:
           - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
           - getting-started/adding-a-codacy-badge.md
+    - Codacy Guardails:
+          - codacy-guardrails/requirements.md
     - Repositories on Codacy Quality:
           - repositories/repository-dashboard.md
           - repositories/commits.md
