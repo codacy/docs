@@ -562,8 +562,12 @@ nav:
           - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
           - getting-started/adding-a-codacy-badge.md
-    - Codacy Guardrails:
-          - codacy-guardrails/requirements.md
+    - Codacy Guardrails (IDE Extension):
+          - codacy-guardrails/codacy-guardrails-overview.md
+          - codacy-guardrails/codacy-guardrails-local-analysis.md
+          - codacy-guardrails/codacy-guardrails-how-to-use.md
+          - codacy-guardrails/codacy-guardrails-limitations.md
+          - codacy-guardrails/codacy-guardrails-faq.md
     - Repositories on Codacy Quality:
           - repositories/repository-dashboard.md
           - repositories/commits.md
