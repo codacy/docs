@@ -40,9 +40,9 @@ New to Codacy Guardrails? [Watch the Guardrails live demo](https://youtu.be/uVyR
 
 ### 1.  Download the extension
 
-[Visual Studio Code](https://tinyurl.com/codacy-vscode)
-[Cursor](http://tinyurl.com/codacy-cursor)
-[Windsurf](http://tinyurl.com/codacy-windsurf)
+- [Visual Studio Code](https://tinyurl.com/codacy-vscode)
+- [Cursor](http://tinyurl.com/codacy-cursor)
+- [Windsurf](http://tinyurl.com/codacy-windsurf)
 
 ![Click on Install below Codacy icon](images/install-codacy-extension.png)
 
@@ -71,8 +71,9 @@ It will create a folder in your local repository called **.codacy** with the app
 ## How to install MCP Server
 
 ### Overview and Setup
-[Check all supported features](https://github.com/codacy/codacy-mcp-server/blob/master/README.md#features--tools)
-[Setup](https://github.com/codacy/codacy-mcp-server/blob/master/README.md#setup)
+
+- [Check all supported features](https://github.com/codacy/codacy-mcp-server/blob/master/README.md#features--tools)
+- [Setup](https://github.com/codacy/codacy-mcp-server/blob/master/README.md#setup)
 
 ### NPM package
 
