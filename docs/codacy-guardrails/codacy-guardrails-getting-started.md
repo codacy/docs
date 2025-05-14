@@ -77,7 +77,7 @@ It will create a folder in your local repository called **.codacy** with the app
 
 If you want to use MCP Server with a NPM package you should download it from [here](https://www.npmjs.com/package/@codacy/codacy-mcp)
 
-Using this approach, you might have some limitations, so please have a [look at this page](codacy-guardrails/codacy-guardrails-limitations.md) to make sure you understand all implications.
+Using this approach, you might have some limitations, so please have a [look at this page](codacy-guardrails-limitations.md) to make sure you understand all implications.
 
 ### Install CLI
 
