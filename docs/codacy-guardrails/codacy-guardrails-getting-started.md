@@ -38,34 +38,35 @@ New to Codacy Guardrails? [Watch the Guardrails live demo](https://youtu.be/uVyR
 ## How to install the Codacy Extension
 [Check our IDE extension page](https://www.codacy.com/ide-extension)
 
-1.  Download the extension
+### 1.  Download the extension
 
-### Visual Studio Code
-[Download](https://tinyurl.com/codacy-vscode)
-### Cursor
-[Download](http://tinyurl.com/codacy-cursor)
-### Windsurf
-[Download](http://tinyurl.com/codacy-windsurf)
+[Visual Studio Code](https://tinyurl.com/codacy-vscode)
+[Cursor](http://tinyurl.com/codacy-cursor)
+[Windsurf](http://tinyurl.com/codacy-windsurf)
 
-[Click on Install below Codacy icon](images/install-codacy-extension.png)
+![Click on Install below Codacy icon](images/install-codacy-extension.png)
 
-2.  Click on Settings
+### 2.  Click on Settings
 
-[Settings](images/codacy-extension-settings.png)
+![Settings](images/codacy-extension-settings.png)
 
-3.  Add your API token to Workspace
+### 3.  Add your API token to Workspace
 
-[Settings > Workspace > API Personal Token](images/codacy-extension-add-api-token-workspace.png)
+Settings > Workspace > API Personal Token
 
-4. Activate the Codacy CLI for local analysis
+![Add API token](images/codacy-extension-add-api-token-workspace.png)
 
-[Click on the button **Install Codacy CLI**](images/codacy-extension-activate-cli.png)
+### 4. Activate the Codacy CLI for local analysis
+
+Click on the button **Install Codacy CLI**
+
+![Install CLI](images/codacy-extension-activate-cli.png)
 
 It will create a folder in your local repository called **.codacy** with the app already installed
 
-5. Install MCP Server (check the next topic in this page)
+### 5. Install MCP Server (check the next topic in this page)
 
-6. Restart your IDE
+### 6. Restart your IDE
 
 ## How to install MCP Server
 
