@@ -31,18 +31,19 @@ New to Codacy Guardrails? [Watch the Guardrails live demo](https://youtu.be/uVyR
 - Semgrep
 
 ## How to install the Codacy Extension
-[IDE extension]: https://www.codacy.com/ide-extension
+[Check our IDE extension page](https://www.codacy.com/ide-extension)
 
 ### Visual Studio Code
 [Click here](https://tinyurl.com/codacy-vscode)
-
 ### Cursor
 [Click here](http://tinyurl.com/codacy-cursor)
-
 ### Windsurf
 [Click here](http://tinyurl.com/codacy-windsurf)
 
+
 Once the IDE Extension is installed, follow the steps below:
+
+
 - Click the Codacy tab (Codacy icon)
 - Log in or create your Codacy account (5-second signup via GitHub, Bitbucket, and GitLab)
 - Activate the Codacy CLI for local analysis
@@ -50,6 +51,7 @@ Once the IDE Extension is installed, follow the steps below:
 - Restart the IDE
 
 ## How to install MCP Server
+
 [Instructions](https://github.com/codacy/codacy-mcp-server/blob/master/README.md)
 [NPM package](https://www.npmjs.com/package/@codacy/codacy-mcp)
 [Install CLI](https://github.com/codacy/codacy-cli-v2/blob/main/README.md)
