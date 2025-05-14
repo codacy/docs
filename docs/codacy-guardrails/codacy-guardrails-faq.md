@@ -15,4 +15,4 @@ Yes, local scanning via Codacy CLI works offline. API-based features (like query
 
 ## When I change some analysis configuration in the UI, should I clean the cache to use guardrails?
 
-## Does guardrails generate code for me
+## Does guardrails generate code for me?

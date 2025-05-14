@@ -52,6 +52,9 @@ Once the IDE Extension is installed, follow the steps below:
 
 ## How to install MCP Server
 
-[Instructions](https://github.com/codacy/codacy-mcp-server/blob/master/README.md)
-[NPM package](https://www.npmjs.com/package/@codacy/codacy-mcp)
-[Install CLI](https://github.com/codacy/codacy-cli-v2/blob/main/README.md)
+### Install MCP Server
+[Click here](https://github.com/codacy/codacy-mcp-server/blob/master/README.md)
+### NPM package 
+[Click here](https://www.npmjs.com/package/@codacy/codacy-mcp)
+### Install CLI
+[Click here](https://github.com/codacy/codacy-cli-v2/blob/main/README.md)
