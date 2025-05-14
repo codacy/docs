@@ -563,7 +563,7 @@ nav:
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
           - getting-started/adding-a-codacy-badge.md
     - Codacy Guardrails (IDE Extension):
-          - codacy-guardrails/codacy-guardrails-overview.md
+          - codacy-guardrails/codacy-guardrails-getting-started.md
           - codacy-guardrails/codacy-guardrails-local-analysis.md
           - codacy-guardrails/codacy-guardrails-how-to-use.md
           - codacy-guardrails/codacy-guardrails-limitations.md
