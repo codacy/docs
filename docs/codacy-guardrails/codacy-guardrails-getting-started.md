@@ -13,12 +13,12 @@ New to Codacy Guardrails? [Watch the Guardrails live demo](https://youtu.be/uVyR
 
 - MACOs
 - Linux
-- Windows (Working on it)
+- Windows (Coming Soon)
 
-```bash
+!!! important 
   For Windows users:
   Windows WSL (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows. 
-```
+
 
 ### Supported IDEs
 
@@ -34,6 +34,7 @@ New to Codacy Guardrails? [Watch the Guardrails live demo](https://youtu.be/uVyR
 - PMD
 - DartAnalyzer
 - Semgrep
+- Lizard (Read about this tool [here](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard))
 
 ## How to install the Codacy Extension
 [Check our IDE extension page](https://www.codacy.com/ide-extension)
@@ -44,19 +45,11 @@ New to Codacy Guardrails? [Watch the Guardrails live demo](https://youtu.be/uVyR
 - [Cursor](http://tinyurl.com/codacy-cursor)
 - [Windsurf](http://tinyurl.com/codacy-windsurf)
 
+Click on the button **Install** below Codacy icon
+
 ![Click on Install below Codacy icon](images/install-codacy-extension.png)
 
-### 2.  Click on Settings
-
-![Settings](images/codacy-extension-settings.png)
-
-### 3.  Add your API token to Workspace
-
-Settings > Workspace > API Personal Token
-
-![Add API token](images/codacy-extension-add-api-token-workspace.png)
-
-### 4. Activate the Codacy CLI for local analysis
+### 2. Activate the Codacy CLI for local analysis
 
 Click on the button **Install Codacy CLI**
 
@@ -64,23 +57,23 @@ Click on the button **Install Codacy CLI**
 
 It will create a folder in your local repository called **.codacy** with the app already installed
 
-### 5. Install MCP Server (check the next topic in this page)
+### 3. Install MCP Server (check the next topic in this page)
 
-### 6. Restart your IDE
+### 4. Restart your IDE
 
 ## How to install MCP Server
+[Check the README file of this feature](https://github.com/codacy/codacy-mcp-server/blob/master/README.md)
 
-### Overview and Setup
+### 1. Add the Codacy MCP Server
 
-- [Check all supported features](https://github.com/codacy/codacy-mcp-server/blob/master/README.md#features--tools)
-- [Setup](https://github.com/codacy/codacy-mcp-server/blob/master/README.md#setup)
+Click on the button **Add Codacy MCP Server**
 
-### NPM package
+![Add Codacy MCP Server](images/add-codacy-mcp-server.png)
 
-If you want to use MCP Server with a NPM package you should download it from [here](https://www.npmjs.com/package/@codacy/codacy-mcp)
+### 2. Restart the IDE
 
-Using this approach, you might have some limitations, so please have a [look at this page](codacy-guardrails-limitations.md) to make sure you understand all implications.
+### 3. Check if the Codacy MCP Server is enabled
 
-### Install CLI
+It should be all **green** without any **error message**
 
-To use the Codacy-CLI, it needs to be downloaded [here](https://github.com/codacy/codacy-cli-v2).
+![Codacy MCP Server is enabled](images/cursor-mcp-server-enabled.png)
