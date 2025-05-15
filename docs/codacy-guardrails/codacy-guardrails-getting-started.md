@@ -3,7 +3,8 @@
 Codacy Guardrails is a brand new way of enforcing code security and quality standards for AI-generated code, built into the free Codacy IDE Extension for VSCode, Copilot, Cursor, and Windsurf. Guardrails help developers ship safer, cleaner AI code by applying best practices and blocking insecure patterns while the code is being generated.
 
 Besides real-time AI code scanning, Guardrails users can now prompt all their Codacy findings, without ever leaving the AI chat panel inside their IDE.
-New to Codacy Guardrails?
+
+**New to Codacy Guardrails?**
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uVyRWnnJu-0?si=Pnbk65EvpvvJRXX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
@@ -15,12 +16,12 @@ New to Codacy Guardrails?
 
 ### Supported Operating Systems
 
-- MACOs
+- macOS
 - Linux
 - Windows (Coming Soon)
 
 !!! important 
-  **For Windows users: Windows WSL** (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows.
+    **For Windows users: Windows WSL** (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows.
 
 
 ### Supported IDEs
@@ -40,7 +41,6 @@ New to Codacy Guardrails?
 - Lizard (Read about this tool [here](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard))
 
 ## How to install the Codacy Extension
-[Check our IDE extension page](https://www.codacy.com/ide-extension)
 
 ### 1.  Download the extension
 
