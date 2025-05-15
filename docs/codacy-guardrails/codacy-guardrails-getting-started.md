@@ -16,8 +16,7 @@ New to Codacy Guardrails? [Watch the Guardrails live demo](https://youtu.be/uVyR
 - Windows (Coming Soon)
 
 !!! important 
-  For Windows users:
-  Windows WSL (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows. 
+  **For Windows users: Windows WSL** (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows.
 
 
 ### Supported IDEs
