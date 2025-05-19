@@ -117,6 +117,10 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
 
+v15
+
+-   [v15.0.0](self-hosted/self-hosted-v15.0.0.md) (April 10, 2025)
+
 v14
 
 -   [v14.1.1](self-hosted/self-hosted-v14.1.1.md) (March 10, 2025)
