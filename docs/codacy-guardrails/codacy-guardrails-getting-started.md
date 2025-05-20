@@ -194,4 +194,4 @@ Don't forget to update the value of `CODACY_ACCOUNT_TOKEN` with your token.
 
 3. Open the Copilot chat and switch the mode to `Agent`. You can check that the MCP server was enabled correctly by clicking on the `Select tools` icon, which should list all the available Codacy tools.
 
-![Copilot Agent with Codacy tools](docs/copilot_agent.png)
+![Copilot Agent with Codacy tools](images/copilot_agent.png)
