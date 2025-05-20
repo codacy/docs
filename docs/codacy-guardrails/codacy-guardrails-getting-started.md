@@ -92,7 +92,7 @@ Click on the button **Install** below Codacy icon
 
 ![Click on Install below Codacy icon](images/install-codacy-extension.png)
 
-### 2.  Install and active Codacy CLI for local analysis
+### 2.  Install and activate Codacy CLI for local analysis
 
 #### Download
 
@@ -131,9 +131,9 @@ If you want to use MCP Server with a NPM package you should download it from [he
 
 Using this approach, you might have some limitations, so please have a [look at this page](codacy-guardrails-limitations.md) to make sure you understand all implications.
 
-### 4. Setup
+#### Setup
 
-#### Cursor, Windsurf and Claude Desktop
+##### Cursor, Windsurf and Claude Desktop
 
 Depending on what IDE you are connecting the MCP Server to, you can use the following methods:
 
@@ -156,7 +156,7 @@ Depending on what IDE you are connecting the MCP Server to, you can use the foll
 }
 ```
 
-#### VS Code with Copilot
+##### VS Code with Copilot
 
 1. For connecting the MCP Server to Copilot in VS Code, add the following to the global config of the IDE:
 
