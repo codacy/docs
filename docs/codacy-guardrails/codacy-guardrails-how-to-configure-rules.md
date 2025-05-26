@@ -3,7 +3,7 @@
 ## Using configuration files
 
 !!! note
-    -   After activating a configuration file for a tool, Codacy uses that configuration file even if you [exclude it from Codacy analysis](ignoring-files.md).
+    -   After activating a configuration file for a tool, Codacy uses that configuration file even if you [exclude it from Codacy analysis](../repositories-configure/ignoring-files.md).
 
     -   When [using a tool configuration file alongside a coding standard](../organizations/using-coding-standards.md#using-with-tool-configuration), the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.
 
