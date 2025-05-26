@@ -567,7 +567,6 @@ nav:
           - codacy-guardrails/codacy-guardrails-how-to-use.md
           - codacy-guardrails/codacy-guardrails-how-to-configure-rules.md
           - codacy-guardrails/codacy-guardrails-limitations.md
-          - codacy-guardrails/codacy-guardrails-roadmap.md
           - codacy-guardrails/codacy-guardrails-troubleshooting.md
           - codacy-guardrails/codacy-guardrails-faq.md
     - Repositories on Codacy Quality:

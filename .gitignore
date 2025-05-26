@@ -17,3 +17,5 @@ site/
 
 # Auxiliary tool outputs
 tools/*.csv
+
+.codacy

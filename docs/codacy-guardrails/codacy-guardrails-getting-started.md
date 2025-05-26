@@ -4,13 +4,10 @@ Codacy Guardrails is a brand new way of enforcing code security and quality stan
 
 Besides real-time AI code scanning, Guardrails users can now prompt all their Codacy findings, without ever leaving the AI chat panel inside their IDE.
 
-**New to Codacy Guardrails?**
+**New to Codacy Guardrails?** [Check our blog post](https://blog.codacy.com/codacy-guardrails-free-real-time-enforcement-of-security-and-quality-standards)
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uVyRWnnJu-0?si=Pnbk65EvpvvJRXX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
-
-
-[Check our blog post](https://blog.codacy.com/codacy-guardrails-free-real-time-enforcement-of-security-and-quality-standards)
 
 ## Prerequisites
 
@@ -45,7 +42,7 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 
 ## How to install - Quick Guide
 
-### 1.  Download the extension
+### 1.  Download the extension {: id="download-extension"}
 
 - [Visual Studio Code](https://tinyurl.com/codacy-vscode)
 - [Cursor](http://tinyurl.com/codacy-cursor)
@@ -65,11 +62,15 @@ It will create a folder in your local repository called **.codacy** with the app
 
 ### 3. Install MCP Server
 
-#### a. Add the Codacy MCP Server
+#### a. Add the Codacy MCP Server - VSCode
 
-Click on the button **Add Codacy MCP Server**
+Click on the button **Add Codacy MCP Server** 
 
 ![Add Codacy MCP Server](images/add-codacy-mcp-server.png)
+
+#### a. Add the Codacy MCP Server - Other IDEs
+
+[Click here](#3-install-mcp-server)
 
 #### b. Check if the Codacy MCP Server is enabled
 
@@ -82,15 +83,7 @@ It should be all **green** without any **error message**
 
 ## How to install - Manually
 
-### 1.  Download the extension
-
-- [Visual Studio Code](https://tinyurl.com/codacy-vscode)
-- [Cursor](http://tinyurl.com/codacy-cursor)
-- [Windsurf](http://tinyurl.com/codacy-windsurf)
-
-Click on the button **Install** below Codacy icon
-
-![Click on Install below Codacy icon](images/install-codacy-extension.png)
+### 1.  [Download the extension](#download-extension) 
 
 ### 2.  Install and activate Codacy CLI for local analysis
 
