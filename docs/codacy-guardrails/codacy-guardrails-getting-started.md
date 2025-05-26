@@ -54,9 +54,16 @@ Click on the button **Install** below Codacy icon
 
 ### 2. Activate the Codacy CLI for local analysis
 
-Click on the button **Install Codacy CLI**
+#### VSCode 
+
+Click on the button **Install Codacy CLI** (only for VSCode)
 
 ![Install CLI](images/codacy-extension-activate-cli.png)
+
+#### Other IDEs
+
+[Click here](#install-cli)
+
 
 It will create a folder in your local repository called **.codacy** with the app already installed
 
@@ -70,7 +77,7 @@ Click on the button **Add Codacy MCP Server**
 
 #### a. Add the Codacy MCP Server - Other IDEs
 
-[Click here](#3-install-mcp-server)
+[Click here](#install-mcp-server)
 
 #### b. Check if the Codacy MCP Server is enabled
 
@@ -85,7 +92,7 @@ It should be all **green** without any **error message**
 
 ### 1.  [Download the extension](#download-extension) 
 
-### 2.  Install and activate Codacy CLI for local analysis
+### 2.  Install and activate Codacy CLI for local analysis {: id="install-cli"}
 
 #### Download
 
@@ -118,7 +125,7 @@ Before running the analysis, install the specified tools:
 codacy-cli install
 ```
 
-### 3. Install MCP Server
+### 3. Install MCP Server {: id="install-mcp-server"}
 
 If you want to use MCP Server with a NPM package you should download it from [here](https://www.npmjs.com/package/@codacy/codacy-mcp)
 

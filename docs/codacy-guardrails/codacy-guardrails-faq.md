@@ -12,15 +12,17 @@ Yes, local scanning via Codacy CLI works offline. API-based features (like query
 ## What sort of security and quality standards can I enforce with Codacy Guardrails?
 Codacy Guardrails detects and auto-remediates security risks and quality issues in JavaScript, TypeScript, Python, and Java, including:
 
-SAST vulnerabilities
-Hardcoded secrets
-Insecure dependencies
-Error prone code
-Performance issues
-Best practices
-Complex code
-Code duplications
-Styling violations
+
+-  SAST vulnerabilities
+-  Hardcoded secrets
+-  Insecure dependencies
+-  Error prone code
+-  Performance issues
+-  Best practices
+-  Complex code
+-  Code duplications
+-  Styling violations
+
 Configuring and enforcing coding standards at scale across all IDEs in your organization requires a Codacy Team or Business subscription.
 
 ## Is my data secure?
