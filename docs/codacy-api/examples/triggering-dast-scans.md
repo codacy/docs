@@ -7,9 +7,10 @@ description: Instructions on how to trigger DAST/App using the API.
 Thanks to the new app scanning capabilities available on the Security and risk management dashboard, it's now possible to automate application scanning via Codacy's API. This means that, with little effort, you'll be able to trigger app scanning on demand every time you deploy a new version of your app.
 
 !!! important
-    App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.
-    Check your [permissions](../../organizations/roles-and-permissions-for-organizations.md). Only git provider admins and organization managers will be able to create new targets and trigger scans (in app and via the API).
-    Get your API key. All the methods below require you to authenticate via your [account's API token](../api-tokens.md#account-api-tokens).
+    **App scanning is a business feature.** If you are a Codacy Pro customer, contact our customer success team to access a short trial.
+
+    **Check your [permissions](../../organizations/roles-and-permissions-for-organizations.md).** Only git provider admins and organization managers will be able to create new targets and trigger scans (in app and via the API).
+
 
 ## Creating targets
 
@@ -42,7 +43,7 @@ Replace the placeholders with your own values:
 
 -   **ORGANIZATION:** Name of the organization on the Git provider. For example, `codacy`. You must have admin permissions over the organization on the Git provider.
 
-Once you create the target you'll get the 'Target Id' as a response. That id will be used to trigger DAST scans in the next section.
+Once you create the target you'll get the target `id` as a response. You will use it to trigger DAST scans in the next section.
 
 ## Trigger DAST analysis scans
 
@@ -57,18 +58,8 @@ curl -X POST https://app.codacy.com/api/v3/organizations/{GIT_PROVIDER}/{ORGANIZ
 Replace the placeholders with your own values:
 
 -   **API_KEY:** [Account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
--   **GIT_PROVIDER:** Git provider hosting of the organization, using one of the values in the table below. For example, `gh` for GitHub Cloud.
-
-    | Value | Git provider      |
-    |-------|-------------------|
-    | `gh`  | GitHub Cloud      |
-    | `ghe` | GitHub Enterprise |
-    | `gl`  | GitLab Cloud      |
-    | `gle` | GitLab Enterprise |
-    | `bb`  | Bitbucket Cloud   |
-    | `bbe` | Bitbucket Server  |
-
+-   **GIT_PROVIDER:** Git provider hosting of the organization (check the table on the example above). For example, `gh` for GitHub Cloud.
 -   **ORGANIZATION:** Name of the organization on the Git provider. For example, `codacy`. You must have admin permissions over the organization on the Git provider.
-**DAST_TARGET_ID:** Identifier of a DAST target to analyze (obtained in the [previous section](./triggering-dast-scans.md#creating-targets). For example, `457`. You must have admin permissions over the organization on the Git provider.
+-   **DAST_TARGET_ID:** Identifier of a DAST target to analyze (obtained in the [previous section](./triggering-dast-scans.md#creating-targets). For example, `457`. You must have admin permissions over the organization on the Git provider.
 
 Scans occur asynchronously. To monitor an ongoing scan you can use the [target management page in Codacy](../../organizations/managing-security-and-risk.md#app-scanning). Once completed, you can access all scan results by navigating to the **Security dashboard**, selecting the **Findings tab** and filtering by **Scan types > DAST/App scanning**.

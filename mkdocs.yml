@@ -589,6 +589,7 @@ nav:
           - Local analysis:
                 - repositories-configure/local-analysis/client-side-tools.md
                 - repositories-configure/local-analysis/running-aligncheck.md
+                - repositories-configure/local-analysis/running-dartanalyzer.md
                 - repositories-configure/local-analysis/running-deadcode.md
                 - repositories-configure/local-analysis/running-spotbugs.md
                 - repositories-configure/local-analysis/running-eslint.md
@@ -671,6 +672,8 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2025:
+                      - release-notes/cloud/cloud-2025-04.md
+                      - release-notes/cloud/cloud-2025-03.md
                       - release-notes/cloud/cloud-2025-02-adding-ruff-lizard.md      
                       - release-notes/cloud/cloud-2025-02.md
                       - release-notes/cloud/cloud-2025-01.md

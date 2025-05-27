@@ -19,6 +19,8 @@ For product updates that are in progress or planned [visit the Codacy public roa
 2025
 
 
+-   [Cloud April 2025](cloud/cloud-2025-04.md)
+-   [Cloud March 2025](cloud/cloud-2025-03.md)
 -   [Adding Ruff and Lizard as new supported tools February, 2025](cloud/cloud-2025-02-adding-ruff-lizard.md)
 -   [Cloud February 2025](cloud/cloud-2025-02.md)
 -   [Cloud January 2025](cloud/cloud-2025-01.md)

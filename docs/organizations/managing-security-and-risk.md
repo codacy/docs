@@ -225,10 +225,7 @@ Codacy closes a finding when it's not detected in a subsequent DAST report. If a
 
 ## Finding severities and deadlines {: id="item-severities-and-deadlines"}
 
-!!! note
-    Currently, Codacy doesn't support customizing the severity rules for security findings.
-
-The following table defines finding severities and the number of days to the deadline to fix the associated security issue, based on the importance of the underlying issue:
+The following table defines finding severities and the default number of days to the deadline to fix the associated security issue, based on the importance of the underlying issue:
 
 | Finding<br/>severity | <br/>Days to deadline | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority <sup>1</sup> |
 |----------------------|-----------------------|--------------------------------------|-------------------------------------------------|
@@ -238,6 +235,21 @@ The following table defines finding severities and the number of days to the dea
 | Low                  | 120                   | Minor                                | Low and other/custom                            |
 
 <small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small>
+
+### Customize deadlines {: id="item-configurable-deadlines"}
+
+!!! info "This feature is available only to [organization admins and organization managers](../organizations/roles-and-permissions-for-organizations.md)."
+
+You can configure your findings deadline by clicking on the "Configure SLAs" button, on the right corner of the page.
+
+![Security and risk management SLAs configure](images/security-risk-management-slas-configure.png)
+
+In the open configuration modal you'll be able to input your deadline preferences for each severity. Each deadline must be between a minimum of 1 day and a maximum of 9999 days.
+
+![Security and risk management SLAs configuration modal](images/security-risk-management-slas-modal.png)
+
+As soon as changes are saved, your open findings statuses will be updated accordingly.
+You are also able to reset to Codacy default deadline values (see table above) at any time.
 
 ## Finding statuses {: id="item-statuses"}
 
@@ -558,6 +570,9 @@ To access the app scanning page, access the [overview page](#dashboard) and clic
 
 App scanning tests applications in real-world scenarios, making it possible to find configuration and authentication issues or other runtime vulnerabilities that may impact your application’s functionality and security. It’s also a good method for preventing regressions and doesn’t depend on a specific programming language. As long as the application can be accessed through a browser, a DAST tool can typically scan it for vulnerabilities.
 
+In concrete, when you start a scan, Codacy runs a baseline scan using ZAP. This is a non-intrusive scan that identifies common security issues without actively attacking your application.
+It’s safe to run for production applications and helps detect problems like missing security headers, information disclosure through HTTP response headers, insecure cookie configurations, and others.
+
 !!! note
     Already using ZAP? [Upload your results via the API.](../codacy-api/examples/uploading-dast-results.md)
 
@@ -578,6 +593,13 @@ allowfullscreen>
 From within the tab, you're able to configure a new target by inputting the URL of the app you'd like to scan. You can configure up to 6 targets within your organization (if you need more, talk to your customer success representative).
 Scans can be triggered manually via Codacy's UI. As you click to start a scan, it will be first added to a queue and eventually executed. You can also queue a scan for a target that is already being scanned, and it will eventually execute after the current scan finishes. There are no limits to how many scans an organization can run per target, so this should accommodate all your deployment needs.
 Once a scan is complete, its findings will be added to the findings tab, where you can review them using the filter **Scan types > DAST/App scanning**.
+
+!!! important
+    Depending on the application being scanned, a DAST analysis can take a very long time to complete.
+    To guarantee the stability of Codacy's platform and fair access to analysis slots, DAST analysis can timeout when running for too long.
+
+!!! important
+    Failed analysis are retried a number of times according to their failure reason. A retry will re-enqueue the analysis, to be executed as soon as possible, while respecting the available analysis slots.
 
 !!! note
     Currently, DAST issues are only visible to admin and organization admin roles.
