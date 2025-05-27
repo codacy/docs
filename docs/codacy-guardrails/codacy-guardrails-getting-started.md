@@ -54,30 +54,19 @@ Click on the button **Install** below Codacy icon
 
 ### 2. Activate the Codacy CLI for local analysis
 
-#### VSCode 
-
 Click on the button **Install Codacy CLI** (only for VSCode)
 
 ![Install CLI](images/codacy-extension-activate-cli.png)
-
-#### Other IDEs
-
-[Click here](#install-cli)
-
 
 It will create a folder in your local repository called **.codacy** with the app already installed
 
 ### 3. Install MCP Server
 
-#### a. Add the Codacy MCP Server - VSCode
+#### a. Add the Codacy MCP Server
 
 Click on the button **Add Codacy MCP Server** 
 
 ![Add Codacy MCP Server](images/add-codacy-mcp-server.png)
-
-#### a. Add the Codacy MCP Server - Other IDEs
-
-[Click here](#install-mcp-server)
 
 #### b. Check if the Codacy MCP Server is enabled
 
