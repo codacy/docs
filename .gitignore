@@ -19,3 +19,6 @@ site/
 tools/*.csv
 
 .codacy
+
+#Ignore vscode AI rules
+.github/copilot-instructions.md

@@ -30,58 +30,63 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 - Cursor
 - Windsurf
 
-### Supported tools
+### Built-in Scanners
 
-- ESLint
 - Trivy
+- Semgrep
+- ESLint
 - Pylint
 - PMD
 - DartAnalyzer
-- Semgrep
-- Lizard (Read about this tool [here](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard))
+- [Lizard](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard)
 
 ## How to install - Quick Guide
 
-### 1.  Download the extension {: id="download-extension"}
+### 1.  Download the extension
 
 - [Visual Studio Code](https://tinyurl.com/codacy-vscode)
 - [Cursor](http://tinyurl.com/codacy-cursor)
 - [Windsurf](http://tinyurl.com/codacy-windsurf)
 
-Click on the button **Install** below Codacy icon
+This will open the Codacy Extension in your IDE Marketplace. Click **Install**
 
 ![Click on Install below Codacy icon](images/install-codacy-extension.png)
 
-### 2. Activate the Codacy CLI for local analysis
+### 2. Install and activate the Codacy CLI for local analysis
 
-Click on the button **Install Codacy CLI** (only for VSCode)
+Click on the button **Install Codacy CLI**
 
 ![Install CLI](images/codacy-extension-activate-cli.png)
 
-It will create a folder in your local repository called **.codacy** with the app already installed
+It will create a folder in your local repository called **.codacy** with all needed configuration:
+
+-  The configuration from all built-in scanners
+-  Codacy CLI script to run analysis locally 
+
+!!! note
+  If you don't want this folder to be part of your repository in future commits but continue working with it locally, please add **.codacy** to your .gitignore file
+
 
 ### 3. Install MCP Server
 
 #### a. Add the Codacy MCP Server
 
-Click on the button **Add Codacy MCP Server** 
+In the Codacy Extension tab, click **Add Codacy MCP Server**
 
 ![Add Codacy MCP Server](images/add-codacy-mcp-server.png)
 
 #### b. Check if the Codacy MCP Server is enabled
 
-It should be all **green** without any **error message**
+On the left side menu of the Codacy extension, please make sure that mcp server is set up and ready.
 
-![Codacy MCP Server is enabled](images/cursor-mcp-server-enabled.png)
+![Codacy MCP Server is enabled](images/mcp-server-enabled.png)
 
 ### 4. Restart your IDE
 
 
 ## How to install - Manually
 
-### 1.  [Download the extension](#download-extension) 
-
-### 2.  Install and activate Codacy CLI for local analysis {: id="install-cli"}
+### 1.  Install and activate the Codacy CLI for local analysis {: id="install-cli"}
 
 #### Download
 
@@ -114,11 +119,12 @@ Before running the analysis, install the specified tools:
 codacy-cli install
 ```
 
-### 3. Install MCP Server {: id="install-mcp-server"}
+### 2. Install MCP Server {: id="install-mcp-server"}
 
 If you want to use MCP Server with a NPM package you should download it from [here](https://www.npmjs.com/package/@codacy/codacy-mcp)
 
-Using this approach, you might have some limitations, so please have a [look at this page](codacy-guardrails-limitations.md) to make sure you understand all implications.
+!!! important
+  You can find some limitations using this approach because the AI doesn't automatically analyse the code generated unless there's a rule set for it to do so. When using the IDE extension (VS Code, Cursor or Windsurf), we create those AI rules for the workspace, but if you are installing the MCP manually, you will need to create those rules by yourself. <a href="mailto:support@codacy.com">Let us know if you you plan to use this approach, so we can provide more information</a>
 
 #### Setup
 
@@ -177,10 +183,16 @@ Or open the general settings.json file directly, which according to your OS shou
 - for Windows: `%APPDATA%\Code\User\settings.json`
 - for Linux: `~/.config/Code/User/settings.json`
 
-Don't forget to update the value of `CODACY_ACCOUNT_TOKEN` with your token.
+![Settings.json in VSCode](images/settings-json-vscode.png)
 
-2. Make sure you have Agent mode enabled: [vscode://settings/chat.agent.enabled](vscode://settings/chat.agent.enabled)
+Make sure you update the value of `CODACY_ACCOUNT_TOKEN` with your [API token](../codacy-api/api-tokens.md).
 
-3. Open the Copilot chat and switch the mode to `Agent`. You can check that the MCP server was enabled correctly by clicking on the `Select tools` icon, which should list all the available Codacy tools.
+2. Above the MCP Server configuration in **Settings.json** file, you can Click in the command **Start**
+
+![Start MCP Server in VSCode](images/start-mcp-server-vscode.png)
+
+3. Make sure you have Agent mode enabled: [vscode://settings/chat.agent.enabled](vscode://settings/chat.agent.enabled)
+
+4. Open the Copilot chat and switch the mode to `Agent`. You can check that the MCP server was enabled correctly by clicking on the `Select tools` icon, which should list all the available Codacy tools.
 
 ![Copilot Agent with Codacy tools](images/copilot_agent.png)
