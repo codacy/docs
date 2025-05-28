@@ -4,7 +4,7 @@
 
 1.  Let's run an prompt to create a webserver in Java
 
-```bash
+```text
 Create a lightweight webserver in Java.
 ```
 
@@ -13,7 +13,6 @@ Create a lightweight webserver in Java.
 In response, it generated a compact, readable Java class using ServerSocket and raw streams to handle HTTP requests. Here’s what I got:
 
 ![response to the webserver creation using AI](images/response-webserver.png)
-
 
 2.  There's a call from MCP tool to analyse the code that was generated. Click in **Run tool**
 
@@ -33,12 +32,11 @@ Once your repository is connected to Codacy, you can go beyond traditional stati
 
 1.  Let's run a quick example with the prompt:
 
-```bash
+```text
 Can you tell what security issues I have in my repository?
 ```
 
 ![Prompt list the security issues in my repository](images/prompt-list-security-issues-repository.png)
-
 
 2.  Right after running this prompt, there is a MCP tool call to search all security issues in my repository. Click in **Run tool**
 
@@ -49,7 +47,3 @@ It will search for all open security issues in my repository. And it will list a
 ![List the security issues in my repository](images/list-security-issues.png)
 
 It turned security from a checklist into a dialogue — and that changes everything.
-	
-
-## Local scanning
-
