@@ -2,7 +2,7 @@
 
 ## Write secure, compliant AI code
 
-1.  Let's run an prompt to create a webserver in Java
+a.  Let's run an prompt to create a webserver in Java
 
 ```text
 Create a lightweight webserver in Java.
@@ -14,7 +14,7 @@ In response, it generated a compact, readable Java class using ServerSocket and 
 
 ![response to the webserver creation using AI](images/response-webserver.png)
 
-1.  There's a call from MCP tool to analyse the code that was generated. Click in **Run tool**
+b.  There's a call from MCP tool to analyse the code that was generated. Click in **Run tool**
 
 Codacy Guardrails starts analyzing it automatically using the Codacy CLI embedded in the agent’s flow. No configs, no extra steps – it just works.
 
@@ -22,7 +22,7 @@ It found an issue with PMD - the package name is not correctly declared - and it
 
 ![analysis to the webserver implementation](images/analysis-webserver-implementation.png)
 
-1.  After a new analysis, It shows us that it has 0 issues in the code
+c.  After a new analysis, It shows us that it has 0 issues in the code
 
 ![zero issues in the webserver implementation](images/no-issues-webserver.png)
 
@@ -31,7 +31,7 @@ It found an issue with PMD - the package name is not correctly declared - and it
 Once your repository is connected to Codacy, you can go beyond traditional static analysis and start interacting with your codebase using simple natural language prompts.
 
 
-1.  Let's run a quick example with the prompt:
+a.  Let's run a quick example with the prompt:
 
 ```text
 Can you tell what security issues I have in my repository?
@@ -40,7 +40,7 @@ Can you tell what security issues I have in my repository?
 ![Prompt list the security issues in my repository](images/prompt-list-security-issues-repository.png)
 
 
-1.  Right after running this prompt, there is a MCP tool call to search all security issues in my repository. Click in **Run tool**
+b.  Right after running this prompt, there is a MCP tool call to search all security issues in my repository. Click in **Run tool**
 
 ![List the security issues in my repository](images/run-mcp-tool-list-security-issues.png)
 
