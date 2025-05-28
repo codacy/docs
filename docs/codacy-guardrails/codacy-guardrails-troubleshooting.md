@@ -29,6 +29,6 @@ npm install -g @codacy/codacy-mcp
 
 ### AI made some changes in my files, but it's still showing old results
 
-That's expected if you're using VSCode. In VSCode, when AI updates the files, before clicking Continue when prompted to run **codacy_cli_analyze** you need to click **Keep** to actually keep the changes on your disk. If you don't do this, the agent will run the Codacy analysis,s and it will analyse the old code without these changes, leading to wrong or old results.
+If you're using **Visual Studio Code**, this behavior is expected. When AI makes changes to your files, you must click **Keep** to confirm and save those changes to disk before clicking **Continue** to run **codacy_cli_analyze**. If you skip this step, the agent will run the Codacy CLI with the previous version of your code, which can result in outdated or incorrect analysis results.
 
-But if you're using, for example, Cursor or even VScode Insiders, they will save it automatically, so you don't need to do anything.
+In contrast, editors like Cursor or Visual Studio Code Insiders handle this automatically—changes are saved without requiring manual confirmation, ensuring the latest code is analyzed correctly.
