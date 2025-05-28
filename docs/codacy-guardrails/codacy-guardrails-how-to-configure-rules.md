@@ -9,7 +9,7 @@ You can configure your rules in one of two ways:
 
 -  Using [built-in scanner configuration files](#using-configuration-files) – for version-controlled setups.
 
--  Using the [Codacy UI](#using-codacy-ui) – for quick, manual adjustments.
+-  Using the [Codacy UI](#using-the-codacy-ui) – for quick, manual adjustments.
 
 !!! note
   If you're already using a configuration file, please we recommend you can follow the first way. Otherwise, the second way is the best for you, so you can configure directly in the Codacy platform.
