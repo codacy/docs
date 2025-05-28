@@ -26,9 +26,12 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 
 ### Supported IDEs
 
-- Visual Studio Code (Insiders version included)
+- Visual Studio Code
 - Cursor
 - Windsurf
+
+!!! note
+    Visual Studio Code Insiders is recommended for its faster performance and compatibility with Codacy Guardrails. However, since it's a beta version, you may encounter occasional issues.
 
 ### Built-in Scanners
 
