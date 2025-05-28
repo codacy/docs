@@ -34,7 +34,7 @@ Once your repository is connected to Codacy, you can go beyond traditional stati
 a.  Let's run a quick example with the prompt:
 
 ```text
-Can you tell what security issues I have in my repository?
+Can you list all security issues in my repository?
 ```
 
 ![Prompt list the security issues in my repository](images/prompt-list-security-issues-repository.png)
