@@ -2,11 +2,7 @@
 
 ## Write secure, compliant AI code
 
-Sometimes, all you need is something simple.
-
-I was looking for a way to serve a basic HTTP response — no frameworks, no extra libraries — just core Java. I didn’t want the overhead of a full web framework like Spring Boot. That’s when I decided to try something different: I asked Guardrails to help.
-
-I gave it a clear prompt: 
+1.  Let's run an prompt to create a webserver in Java
 
 ```bash
 Create a lightweight webserver in Java.
@@ -14,21 +10,45 @@ Create a lightweight webserver in Java.
 
 ![Prompt create a webserver in java](images/create-webserver-java.png)
 
-In response, it generated a compact, readable Java class using ServerSocket and raw streams to handle HTTP requests. Here's what I got:
+In response, it generated a compact, readable Java class using ServerSocket and raw streams to handle HTTP requests. Here’s what I got:
 
-![response to the webserver creating using guardrails](images/response-webserver-implementation.png)
+![response to the webserver creation using AI](images/response-webserver.png)
 
-The result? A fully functional web server that prints incoming requests and replies with "Hello, World!". Lightweight, fast to prototype, and exactly what I needed.
 
-This wasn’t just about code — it was about speed, focus, and learning by doing. With just a few lines of Java and a nudge from AI, I was able to go from idea to a working server in minutes.
+2.  There's a call from MCP tool to analyse the code that was generated. Click in **Run tool**
 
-And the best part? As soon as got the file, Codacy jumped in and started analyzing it automatically. No configs, no extra steps — it just worked.
+Codacy Guardrails starts analyzing it automatically using the Codacy CLI embedded in the agent’s flow. No configs, no extra steps – it just works.
+
+It found an issue with PMD - the package name is not correctly declared - and it will try to fix that with the right declaration.
 
 ![analysis to the webserver implementation](images/analysis-webserver-implementation.png)
 
-Honestly, it felt like having an AI write the code and another AI review it. That’s the kind of feedback loop I love!
+3.  After a new analysis, It shows us that it has 0 issues in the code
+
+![zero issues in the webserver implementation](images/no-issues-webserver.png)
 
 ## Prompt Codacy from your IDE chat panel
+
+Once your repository is connected to Codacy, you can go beyond traditional static analysis and start interacting with your codebase using simple natural language prompts.
+
+1.  Let's run a quick example with the prompt:
+
+```bash
+Can you tell what security issues I have in my repository?
+```
+
+![Prompt list the security issues in my repository](images/prompt-list-security-issues-repository.png)
+
+
+2.  Right after running this prompt, there is a MCP tool call to search all security issues in my repository. Click in **Run tool**
+
+![List the security issues in my repository](images/run-mcp-tool-list-security-issues.png)
+
+It will search for all open security issues in my repository. And it will list all of them, showing the **title**, **priority**, **status** and the **link to the issue**, 
+
+![List the security issues in my repository](images/list-security-issues.png)
+
+It turned security from a checklist into a dialogue — and that changes everything.
 	
 
 ## Local scanning
