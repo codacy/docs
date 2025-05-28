@@ -20,7 +20,7 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 - Linux
 - Windows (Coming Soon)
 
-!!! important 
+!!! important
     **For Windows users: Windows WSL** (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows.
 
 
@@ -65,7 +65,7 @@ It will create a folder in your local repository called **.codacy** with all nee
 -  Codacy CLI script to run analysis locally 
 
 !!! note
-  If you don't want this folder to be part of your repository in future commits but continue working with it locally, please add **.codacy** to your .gitignore file
+    If you don't want this folder to be part of your repository in future commits but continue working with it locally, please add **.codacy** to your .gitignore file
 
 
 ### 3. Install MCP Server
@@ -125,7 +125,7 @@ codacy-cli install
 If you want to use MCP Server with a NPM package you should download it from [here](https://www.npmjs.com/package/@codacy/codacy-mcp)
 
 !!! important
-  You can find some limitations using this approach because the AI doesn't automatically analyse the code generated unless there's a rule set for it to do so. When using the IDE extension (VS Code, Cursor or Windsurf), we create those AI rules for the workspace, but if you are installing the MCP manually, you will need to create those rules by yourself. <a href="mailto:support@codacy.com">Let us know if you you plan to use this approach, so we can provide more information</a>
+    You can find some limitations using this approach because the AI doesn't automatically analyse the code generated unless there's a rule set for it to do so. When using the IDE extension (VS Code, Cursor or Windsurf), we create those AI rules for the workspace, but if you are installing the MCP manually, you will need to create those rules by yourself. <a href="mailto:support@codacy.com">Let us know if you you plan to use this approach, so we can provide more information</a>
 
 #### Setup
 
@@ -154,7 +154,7 @@ Depending on what IDE you are connecting the MCP Server to, you can use the foll
 
 ##### VS Code with Copilot
 
-1. For connecting the MCP Server to Copilot in VS Code, add the following to the global config of the IDE:
+1.  For connecting the MCP Server to Copilot in VS Code, add the following to the global config of the IDE:
 
 ```json
 {
@@ -188,12 +188,12 @@ Or open the general settings.json file directly, which according to your OS shou
 
 Make sure you update the value of `CODACY_ACCOUNT_TOKEN` with your [API token](../codacy-api/api-tokens.md).
 
-2. Above the MCP Server configuration in **Settings.json** file, you can Click in the command **Start**
+1.  Above the MCP Server configuration in **Settings.json** file, you can Click in the command **Start**
 
 ![Start MCP Server in VSCode](images/start-mcp-server-vscode.png)
 
-3. Make sure you have Agent mode enabled: [vscode://settings/chat.agent.enabled](vscode://settings/chat.agent.enabled)
+1.  Make sure you have Agent mode enabled: [vscode://settings/chat.agent.enabled](vscode://settings/chat.agent.enabled)
 
-4. Open the Copilot chat and switch the mode to `Agent`. You can check that the MCP server was enabled correctly by clicking on the `Select tools` icon, which should list all the available Codacy tools.
+1.  Open the Copilot chat and switch the mode to `Agent`. You can check that the MCP server was enabled correctly by clicking on the `Select tools` icon, which should list all the available Codacy tools.
 
 ![Copilot Agent with Codacy tools](images/copilot_agent.png)
