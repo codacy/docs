@@ -50,7 +50,8 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 
 This will open the Codacy Extension in your IDE Marketplace. Click **Install**
 
-![Click on Install below Codacy icon](images/install-codacy-extension.png)
+<td><img src="images/install-codacy-extension.png" alt="Click on Install below Codacy icon" width="417" height="108"></td>
+
 
 ### 2. Install and activate the Codacy CLI for local analysis
 
