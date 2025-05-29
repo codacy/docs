@@ -36,6 +36,12 @@ https://docs.codacy.com/codacy-api/examples/obtaining-code-quality-metrics-for-f
 https://docs.codacy.com/codacy-api/examples/obtaining-current-issues-in-repositories/,Example of how to obtain information about issues in a repository programmatically using the Codacy API endpoint searchRepositoryIssues.
 https://docs.codacy.com/codacy-api/examples/triggering-dast-scans/,Instructions on how to trigger DAST/App using the API.
 https://docs.codacy.com/codacy-api/examples/uploading-dast-results/,Instructions on how to upload DAST results to Codacy using the API.
+https://docs.codacy.com/codacy-guardrails/codacy-guardrails-faq/,Documentation for the Codacy automated code review tool.
+https://docs.codacy.com/codacy-guardrails/codacy-guardrails-getting-started/,"Codacy Guardrails is a brand new way of enforcing code security and quality standards for AI-generated code, built into the free Codacy IDE Extension for VSCode, Copilot, Cursor, and Windsurf. Guardrails help developers ship safer, cleaner AI code by applying best practices and blocking insecure patterns while the code is being generated."
+https://docs.codacy.com/codacy-guardrails/codacy-guardrails-how-to-configure-rules/,"By default, if no API token is provided in the MCP Server setup, Codacy uses a predefined configuration that includes all recommended rules (or code patterns that you can find on many parts of our product) from the supported built-in scanners."
+https://docs.codacy.com/codacy-guardrails/codacy-guardrails-how-to-use/,Documentation for the Codacy automated code review tool.
+https://docs.codacy.com/codacy-guardrails/codacy-guardrails-limitations/,Documentation for the Codacy automated code review tool.
+https://docs.codacy.com/codacy-guardrails/codacy-guardrails-troubleshooting/,Documentation for the Codacy automated code review tool.
 https://docs.codacy.com/coverage-reporter/,Generate coverage reports in a supported format and upload them to Codacy to monitor the code coverage of your repositories on Codacy.
 https://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/,"There are alternative ways of running or installing Codacy Coverage Reporter, such as running a Docker image, using a GitHub Action or CircleCI orb, downloading a binary for your operating system, or building the binary from source."
 https://docs.codacy.com/coverage-reporter/troubleshooting-coverage-cli-issues/,Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI.
