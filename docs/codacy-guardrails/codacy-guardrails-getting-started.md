@@ -46,9 +46,8 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 
 ## How to install - Quick Guide
 
-### 0. Prerequisites
-
-To take full advantage of Codacy Guardrails on **Windows (WSL)**, there might be some prerequisites you need to install first. [Check the setup steps here.](#how-to-install---prerequisites-for-windows-wsl)
+#### Note for Windows users:
+To take full advantage of Codacy Guardrails on Windows, you might need to setup WSL first, [check the steps here.](#how-to-install---wsl)
 
 ### 1.  Download the extension
 
@@ -92,9 +91,9 @@ On the left side menu of the Codacy extension, please make sure that MCP server 
 
 ### 4. Restart your IDE
 
-## How to install - Prerequisites for Windows (WSL)
+## How to install - WSL
 
-### 1. Ensure your machine has `node.js` and `npx` installed.
+### 1. Install or update [WSL.](https://learn.microsoft.com/en-us/windows/wsl/install)
 
 ### 2. Install the [WSL extension for VSCode.](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
 * Ensure you go through all the installation steps and double check all warnings the extension may show during setup, since your machine may require some extra setup steps, e.g. if your WSL distro version is outdated.
@@ -117,7 +116,7 @@ On the left side menu of the Codacy extension, please make sure that MCP server 
 
 ### 7. After everything is set up, you should now be able to interact with Codacy via Copilot.
 * Remember that for you to be able to interact with Codacy MCP server, you must be on the `Agent` mode of the chat, not the default `Ask` mode.
-* If you're still having issues with the MCP server, try to run the command `Preferences: Open User Settings (JSON)`, look for the Codacy MCP server settings and right on top of it you'll should see a `Start` option. Click on it and, if unsuccessful, go to `View > Debug Console` and check for errors.
+* If you're still having issues with the MCP server, try to run the command `Preferences: Open User Settings (JSON)`, look for the Codacy MCP server settings and right on top of it you'll should see a `Start` option. Click on it and, if unsuccessful, go to `View > Debug Console` and check for errors. Don't forget to ensure you have `node.js` and `npx` properly installed and set up.
 
 
 ## How to install - Manually
