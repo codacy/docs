@@ -44,7 +44,7 @@ b. Right after running this prompt, there is a MCP tool call to search all secur
 
 ![List the security issues in my repository](images/run-mcp-tool-list-security-issues.png)
 
-It will search for all open security issues in my repository. And it will list all of them, showing the **title**, **priority**, **status** and the **link to the issue**, 
+It will search for all open security issues in my repository. And it will list all them, showing the **title**, **priority**, **status** and the **link to the issue**, 
 
 ![List the security issues in my repository](images/list-security-issues.png)
 
