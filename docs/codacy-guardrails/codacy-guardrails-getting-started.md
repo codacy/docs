@@ -193,7 +193,7 @@ Make sure you update the value of `CODACY_ACCOUNT_TOKEN` with your [API token](.
 
 a. Above the MCP Server configuration in **Settings.json** file, you can Click in the command **Start**
 
-![Start MCP Server in VSCode](images/start-mcp-server-vscode.png)
+![Start MCP Server in VSCode](images/start-mcp-server-vscode.png) 
 
 b. Make sure you have Agent mode enabled: [vscode://settings/chat.agent.enabled](vscode://settings/chat.agent.enabled)
 
