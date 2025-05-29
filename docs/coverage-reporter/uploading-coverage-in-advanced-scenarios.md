@@ -77,6 +77,9 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
     --force-coverage-parser go -r unit.coverage.out
 ```
 
+!!! note
+    The module should match the project directory name. For example, a directory structure of `my-project/go.mod` should have `module my-project` or `module github.com/myusername/myrepo/my-project` instead of `module myproject` at the top of `go.mod`.
+
 ## Uploading coverage for unsupported languages {: id="unsupported-languages"}
 
 If your language isn't in the [list of supported languages](index.md#generating-coverage), you can still send coverage to Codacy.
