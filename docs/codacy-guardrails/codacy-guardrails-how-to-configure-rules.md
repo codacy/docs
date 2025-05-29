@@ -7,9 +7,9 @@ However, when an API token is used, Codacy automatically retrieves the current r
 You can configure your rules in one of two ways:
 
 
--  Using [built-in scanner configuration files](#using-configuration-files) – for version-controlled setups.
+-  Using [built-in scanner configuration files](#using-configuration-files)–for version-controlled setups.
 
--  Using the [Codacy UI](#using-the-codacy-ui) – for quick, manual adjustments.
+-  Using the [Codacy UI](#using-the-codacy-ui)–for quick, manual adjustments.
 
 !!! note
     If you're already using a configuration file, please we recommend you can follow the first way. Otherwise, the second way is the best for you, so you can configure directly in the Codacy platform.
@@ -132,5 +132,5 @@ Select the coding standards that you want to follow or stop following and click 
 ![Customize applied coding standards](images/code-patterns-cs-customize-modal.png)
 
 !!! note
-    -  Scanners and rules enabled by a coding standard are enforced and cannot be disabled.
-    -  You can add extra scanners and rules, if these are not enabled by any applied coding standard.
+    -  Scanners and rules enabled by a coding standard are enforced and can't be disabled.
+    -  You can add extra scanners and rules, if these aren't enabled by any applied coding standard.

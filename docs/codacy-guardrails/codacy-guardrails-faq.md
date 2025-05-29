@@ -4,16 +4,16 @@
 Please have a look at our [documentation](codacy-guardrails-getting-started.md)
 
 ## Does Guardrails only work with AI-generated code?
-No — while Guardrails does scan and auto-fix AI code as part of the agent flow, it scans any code shown in your IDE in real-time, regardless of how it was written.
+No. While Guardrails does scan and autofix AI code as part of the agent flow, it scans any code shown in your IDE in real-time, regardless of how it was written.
 
-## How is Guardrails different from Codacy’s traditional analysis?
+## How's Guardrails different from Codacy’s traditional analysis?
 Guardrails is IDE-first and real-time. It complements Codacy’s platform analysis by catching issues earlier in the development cycle.
 
 ## Does Guardrails work offline?
 Yes, local scanning via Codacy CLI works offline. API-based features (like querying metrics) require connectivity.
 
 ## Which AI security and quality standards can I enforce with Guardrails?
-Codacy Guardrails detects and auto-remediates security risks and quality issues in JavaScript, TypeScript, Python, and Java, including:
+Codacy Guardrails detects and autoremediates security risks and quality issues in JavaScript, TypeScript, Python, and Java, including:
 
 
 -  SAST vulnerabilities
@@ -29,7 +29,7 @@ Codacy Guardrails detects and auto-remediates security risks and quality issues 
 Configuring and enforcing coding standards at scale across all IDEs in your organization requires a Codacy Team or Business subscription.
 
 ## Is my data secure?
-Codacy Guardrails is not a large language model, but an IDE extension that uses an MCP Server to communicate with existing AI coding agents owned by the user.
+Codacy Guardrails isn't a large language model, but an IDE extension that uses an MCP Server to communicate with existing AI coding agents owned by the user.
 
 ## When I change some analysis configuration in the UI, is it automatically applied to Guardrails?
 We're still working on this feature but in order to update the new tool configuration. you should run the command in your repository:
@@ -50,7 +50,7 @@ Check our [Team and Organization plans](https://www.codacy.com/pricing) to unloc
 
 
 -  Central configuration and enforcement of AI coding standards across teams and projects
--  Query and auto-fix existing problems across your codebase from the AI chat panel
+-  Query and autofix existing problems across your codebase from the AI chat panel
 -  Generate custom security and code quality reports using AI prompts
 -  Full access to the Codacy Cloud platform including:
 
@@ -65,6 +65,6 @@ Check our [Team and Organization plans](https://www.codacy.com/pricing) to unloc
 Guardrails is supported on MacOS, Linux, and Windows (via [WSL](https://learn.microsoft.com/en-us/windows/wsl/install))
 
 ## Can I use Guardrails without an AI copilot?
-Codacy Guardrails is designed to be installed from our IDE extension for VS Code, Cursor and Windsurf. but as long as you have an AI code generator that is compatible with the MCP protocol you can also add Guardrails into your MCP configuration manually.
+Codacy Guardrails is designed to be installed from our IDE extension for VS Code, Cursor and Windsurf. but as long as you have an AI code generator that's compatible with the MCP protocol you can also add Guardrails into your MCP configuration manually.
 
 Without an AI coding agent, you instead need to use the Codacy IDE extension without the MCP Server.

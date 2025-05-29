@@ -40,7 +40,7 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 - ESLint
 - Pylint
 - PMD
-- DartAnalyzer
+- dartanalyzer
 - [Lizard](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard)
 
 ## How to install - Quick Guide
@@ -81,7 +81,7 @@ In the Codacy Extension tab, click **Add Codacy MCP Server**
 
 #### b. Check if the Codacy MCP Server is enabled
 
-On the left side menu of the Codacy extension, please make sure that mcp server is set up and ready.
+On the left side menu of the Codacy extension, please make sure that MCP server is set up and ready.
 
 ![Codacy MCP Server is enabled](images/mcp-server-enabled.png)
 
@@ -104,7 +104,7 @@ brew install codacy/codacy-cli-v2/codacy-cli-v2
 
 ##### Linux
 
-For Linux, we rely on the codacy-cli.sh script in the root. To download the CLI, run:
+For Linux, we rely on the **codacy-cli.sh** script in the root. To download the CLI, run:
 
 ```bash
 bash <(curl -Ls https://raw.githubusercontent.com/codacy/codacy-cli-v2/main/codacy-cli.sh)
@@ -191,12 +191,12 @@ Or open the general settings.json file directly, which according to your OS shou
 
 Make sure you update the value of `CODACY_ACCOUNT_TOKEN` with your [API token](../codacy-api/api-tokens.md).
 
-a.  Above the MCP Server configuration in **Settings.json** file, you can Click in the command **Start**
+a. Above the MCP Server configuration in **Settings.json** file, you can Click in the command **Start**
 
 ![Start MCP Server in VSCode](images/start-mcp-server-vscode.png)
 
-b.  Make sure you have Agent mode enabled: [vscode://settings/chat.agent.enabled](vscode://settings/chat.agent.enabled)
+b. Make sure you have Agent mode enabled: [vscode://settings/chat.agent.enabled](vscode://settings/chat.agent.enabled)
 
-c.  Open the Copilot chat and switch the mode to `Agent`. You can check that the MCP server was enabled correctly by clicking on the `Select tools` icon, which should list all the available Codacy tools.
+c. Open the Copilot chat and switch the mode to `Agent`. You can check that the MCP server was enabled correctly by clicking on the `Select tools` icon, which should list all the available Codacy tools.
 
 ![Copilot Agent with Codacy tools](images/copilot_agent.png)
