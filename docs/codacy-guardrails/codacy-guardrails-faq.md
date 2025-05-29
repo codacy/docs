@@ -13,7 +13,7 @@ Guardrails is IDE-first and real-time. It complements Codacy’s platform analys
 Yes, local scanning via Codacy CLI works offline. API-based features (like querying metrics) require connectivity.
 
 ## Which AI security and quality standards can I enforce with Guardrails?
-Codacy Guardrails detects and autoremediates security risks and quality issues in JavaScript, TypeScript, Python, and Java, including:
+Codacy Guardrails detects and autoremediate security risks and quality issues in JavaScript, TypeScript, Python, and Java, including:
 
 
 -  SAST vulnerabilities

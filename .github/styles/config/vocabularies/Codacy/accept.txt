@@ -1,4 +1,6 @@
 aligncheck
+autofix
+autoremediate
 allowlist
 Atlassian
 autovacuum
@@ -41,6 +43,7 @@ Gradle
 Grafana
 Gravatar
 Hadolint
+Hardcoded
 hostname
 hotfix
 Jira
@@ -91,4 +94,6 @@ unassigns
 unfollow
 vacuumdb
 Visualforce
+VSCode
 Xcode
+webserver
