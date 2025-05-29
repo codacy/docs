@@ -18,7 +18,7 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 
 - macOS
 - Linux
-- Windows (Coming Soon)
+- Windows (via WSL)
 
 !!! important
     **For Windows users: Windows WSL** (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows.
