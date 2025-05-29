@@ -28,7 +28,7 @@ c. After a new analysis, It shows us that it has 0 issues in the code
 
 ## Prompt Codacy from your IDE chat panel
 
-Once your repository is connected to Codacy, you can go beyond traditional static analysis and start interacting with your codebase using simple natural language prompts.
+Once your repository is connected to Codacy, you can go beyond traditional static analysis and start interacting with your codebase using natural language prompts.
 
 
 a. Let's run a quick example with the prompt:
