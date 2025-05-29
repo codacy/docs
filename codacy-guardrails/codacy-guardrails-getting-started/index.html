@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy Guardrails is a brand new way of enforcing code security and quality standards for AI-generated code, built into the free Codacy IDE Extension for VSCode, Copilot, Cursor, and Windsurf. Guardrails help developers ship safer, cleaner AI code by applying best practices and blocking insecure patterns while the code is being generated.">
       
       
-        <meta http-equiv="last-modified" content="2025-05-29 11:03:02">
+        <meta http-equiv="last-modified" content="2025-05-29 14:27:31">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-guardrails/codacy-guardrails-getting-started/">
@@ -382,6 +382,13 @@
         <li class="md-nav__item">
   <a href="#how-to-install-quick-guide" class="md-nav__link">
     How to install - Quick Guide
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-to-install-wsl" class="md-nav__link">
+    How to install - WSL
   </a>
   
 </li>
@@ -4601,7 +4608,8 @@
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">#</a></h2>
 <ul>
 <li>git</li>
-<li>node.js - ensure the <code>npx</code> commands runs without issues</li>
+<li>node.js - ensure the <code>npx</code> command runs without issues</li>
+<li>curl</li>
 </ul>
 <h3 id="supported-operating-systems">Supported Operating Systems<a class="headerlink" href="#supported-operating-systems" title="Permanent link">#</a></h3>
 <ul>
@@ -4634,6 +4642,8 @@
 <li><a href="https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard">Lizard</a></li>
 </ul>
 <h2 id="how-to-install-quick-guide">How to install - Quick Guide<a class="headerlink" href="#how-to-install-quick-guide" title="Permanent link">#</a></h2>
+<h4 id="note-for-windows-users">Note for Windows users:<a class="headerlink" href="#note-for-windows-users" title="Permanent link">#</a></h4>
+<p>To take full advantage of Codacy Guardrails on Windows, you might need to setup WSL first, <a href="#how-to-install-wsl">check the steps here.</a></p>
 <h3 id="1-download-the-extension">1.  Download the extension<a class="headerlink" href="#1-download-the-extension" title="Permanent link">#</a></h3>
 <ul>
 <li><a href="https://tinyurl.com/codacy-vscode">Visual Studio Code</a></li>
@@ -4662,6 +4672,37 @@
 <p>On the left side menu of the Codacy extension, please make sure that MCP server is set up and ready.</p>
 <p><img alt="Codacy MCP Server is enabled" src="../images/mcp-server-enabled.png" /></p>
 <h3 id="4-restart-your-ide">4. Restart your IDE<a class="headerlink" href="#4-restart-your-ide" title="Permanent link">#</a></h3>
+<h2 id="how-to-install-wsl">How to install - WSL<a class="headerlink" href="#how-to-install-wsl" title="Permanent link">#</a></h2>
+<h3 id="1-install-or-update-wsl">1. Install or update <a href="https://learn.microsoft.com/en-us/windows/wsl/install">WSL.</a><a class="headerlink" href="#1-install-or-update-wsl" title="Permanent link">#</a></h3>
+<h3 id="2-install-the-wsl-extension-for-vscode">2. Install the <a href="https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl">WSL extension for VSCode.</a><a class="headerlink" href="#2-install-the-wsl-extension-for-vscode" title="Permanent link">#</a></h3>
+<ul>
+<li>Ensure you go through all the installation steps and double check all warnings the extension may show during setup, since your machine may require some extra setup steps.</li>
+</ul>
+<h3 id="3-open-a-wsl-window">3. Open a WSL Window.<a class="headerlink" href="#3-open-a-wsl-window" title="Permanent link">#</a></h3>
+<ul>
+<li>You can do this by using the WSL extension keyboard shortcut <code>Ctrl</code> + <code>Alt</code> + <code>O</code> and then selecting the option or going to the command palette and selecting <code>WSL: Connect to WSL in New Window</code>.</li>
+</ul>
+<h3 id="4-open-your-project-folder-in-wsl-using-the-command-wsl-open-folder-in-wsl">4. Open your project folder in WSL using the command <code>WSL: Open Folder in WSL...</code>.<a class="headerlink" href="#4-open-your-project-folder-in-wsl-using-the-command-wsl-open-folder-in-wsl" title="Permanent link">#</a></h3>
+<ul>
+<li>Note that the path you need to enter is the WSL path, not the Windows one, so for example if you want to open your project that's in <code>C:\Users\your_username\project</code> the equivalent WSL path should be something like <code>/mnt/c/Users/your_username/project</code>.</li>
+<li>To double check your path you can always open WSL directly by pressing <code>Win</code> + <code>R</code> and then typing WSL and pressing enter. There you can check your file structure. Keep in mind that your user folder in WSL (<code>/home/your_username</code> or <code>~</code>) isn't your user folder in Windows (for example <code>/mnt/c/Users/your_username</code>).</li>
+<li>As an alternative, you can also open directly WSL, open your project folder and then opening VSCode from there with the command <code>code .</code>.</li>
+<li>If you open a project through Windows explorer, it might open in a new (non-WSL) window. Open it via the command palette instead.</li>
+</ul>
+<h3 id="5-install-curl-on-your-wsl-instance-if-its-not-installed-already">5. Install <code>curl</code> on your WSL instance if it's not installed already.<a class="headerlink" href="#5-install-curl-on-your-wsl-instance-if-its-not-installed-already" title="Permanent link">#</a></h3>
+<ul>
+<li>This will depend on the Linux distribution you are using, but for example in Debian and Ubuntu the command will be something like <code>sudo apt update &amp;&amp; sudo apt install curl</code>.</li>
+<li>You can do this directly in WSL or in VSCode by going to <code>View &gt; Terminal</code>.</li>
+</ul>
+<h3 id="6-now-you-should-be-able-to-install-the-codacy-extension-without-issues-go-through-the-steps-here">6. Now you should be able to install the Codacy extension without issues. Go through the steps <a href="#how-to-install-quick-guide">here</a>.<a class="headerlink" href="#6-now-you-should-be-able-to-install-the-codacy-extension-without-issues-go-through-the-steps-here" title="Permanent link">#</a></h3>
+<ul>
+<li>If you already have the extension installed, you will need to enable it for WSL. Check on your <code>Extensions</code> tab.</li>
+</ul>
+<h3 id="7-after-everything-is-set-up-you-should-now-be-able-to-interact-with-codacy-via-copilot">7. After everything is set up, you should now be able to interact with Codacy via Copilot.<a class="headerlink" href="#7-after-everything-is-set-up-you-should-now-be-able-to-interact-with-codacy-via-copilot" title="Permanent link">#</a></h3>
+<ul>
+<li>Remember that for you to be able to interact with Codacy MCP server, you must be on the <code>Agent</code> mode of the chat, not the default <code>Ask</code> mode.</li>
+<li>If you're still having issues with the MCP server, try to run the command <code>Preferences: Open User Settings (JSON)</code>, look for the Codacy MCP server settings and right on top of it you'll should see a <code>Start</code> option. Click on it and, if unsuccessful, go to <code>View &gt; Debug Console</code> and check for errors. Don't forget to ensure you have <code>node.js</code> and <code>npx</code> installed and set up.</li>
+</ul>
 <h2 id="how-to-install-manually">How to install - Manually<a class="headerlink" href="#how-to-install-manually" title="Permanent link">#</a></h2>
 <h3 id="install-cli">1.  Install and activate the Codacy CLI for local analysis<a class="headerlink" href="#install-cli" title="Permanent link">#</a></h3>
 <h4 id="download">Download<a class="headerlink" href="#download" title="Permanent link">#</a></h4>
