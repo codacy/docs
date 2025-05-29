@@ -12,7 +12,8 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 ## Prerequisites
 
 - git
-- node.js - ensure the `npx` commands runs without issues
+- node.js - ensure the `npx` command runs without issues
+- curl
 
 ### Supported Operating Systems
 
@@ -44,6 +45,10 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 - [Lizard](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard)
 
 ## How to install - Quick Guide
+
+### 0. Prerequisites
+
+To take full advantage of Codacy Guardrails on **Windows (WSL)**, there might be some prerequisites you need to install first. [Check the setup steps here.](#how-to-install---prerequisites-for-windows-wsl)
 
 ### 1.  Download the extension
 
@@ -86,6 +91,33 @@ On the left side menu of the Codacy extension, please make sure that MCP server 
 ![Codacy MCP Server is enabled](images/mcp-server-enabled.png)
 
 ### 4. Restart your IDE
+
+## How to install - Prerequisites for Windows (WSL)
+
+### 1. Ensure your machine has `node.js` and `npx` installed.
+
+### 2. Install the [WSL extension for VSCode.](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-wsl)
+* Ensure you go through all the installation steps and double check all warnings the extension may show during setup, since your machine may require some extra setup steps, e.g. if your WSL distro version is outdated.
+
+### 3. Open a WSL Window.
+* You can do this by using the WSL extension keyboard shortcut <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>O</kbd> and then selecting the option or going to the command palette and selecting `WSL: Connect to WSL in New Window`.
+
+### 4. Open your project folder in WSL using the command `WSL: Open Folder in WSL...`.
+* Note that the path you need to enter is the WSL path, not the Windows one, so for example if you want to open your project that is in `C:\Users\your_username\project` the equivalent WSL path should be something like `/mnt/c/Users/your_username/project`.
+* To double check your path you can always open WSL directly by pressing <kbd>Win</kbd> + <kbd>R</kbd> and then typing WSL and pressing enter. There you can check your file structure. Keep in mind that your user folder in WSL (`/home/your_username` or `~`) is NOT your user folder in Windows (e.g. `/mnt/c/Users/your_username`).
+* As an alternative, you can also open directly WSL, open your project folder and then opening vscode from there with the command `code .`.
+* If you open a project through Windows explorer, it might open in a new (non-WSL) window. Open it via the command palette instead.
+
+### 5. Install `curl` on your WSL instance if it's not installed already.
+* This will depend on the linux distro you are using, but for example in Debian and Ubuntu the command will be something like `sudo apt update && sudo apt install curl`.
+* You can do this directly in WSL or in vscode by going to View > Terminal.
+
+### 6. Now you should be able to install the Codacy extension without issues. Go through the steps [here](#how-to-install---quick-guide).
+* If you already have the extension installed, you will need to enable it for WSL. Check on your `Extensions` tab.
+
+### 7. After everything is set up, you should now be able to interact with Codacy via Copilot.
+* Remember that for you to be able to interact with Codacy MCP server, you must be on the `Agent` mode of the chat, not the default `Ask` mode.
+* If you're still having issues with the MCP server, try to run the command `Preferences: Open User Settings (JSON)`, look for the Codacy MCP server settings and right on top of it you'll should see a `Start` option. Click on it and, if unsuccessful, go to `View > Debug Console` and check for errors.
 
 
 ## How to install - Manually
