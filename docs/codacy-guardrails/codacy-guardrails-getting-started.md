@@ -100,11 +100,11 @@ On the left side menu of the Codacy extension, please make sure that MCP server 
 * Ensure you go through all the installation steps and double check all warnings the extension may show during setup, since your machine may require some extra setup steps, e.g. if your WSL distro version is outdated.
 
 ### 3. Open a WSL Window.
-* You can do this by using the WSL extension keyboard shortcut <kbd>Ctrl</kbd> + <kbd>Alt</kbd> + <kbd>O</kbd> and then selecting the option or going to the command palette and selecting `WSL: Connect to WSL in New Window`.
+* You can do this by using the WSL extension keyboard shortcut `Ctrl` + `Alt` + `O` and then selecting the option or going to the command palette and selecting `WSL: Connect to WSL in New Window`.
 
 ### 4. Open your project folder in WSL using the command `WSL: Open Folder in WSL...`.
 * Note that the path you need to enter is the WSL path, not the Windows one, so for example if you want to open your project that is in `C:\Users\your_username\project` the equivalent WSL path should be something like `/mnt/c/Users/your_username/project`.
-* To double check your path you can always open WSL directly by pressing <kbd>Win</kbd> + <kbd>R</kbd> and then typing WSL and pressing enter. There you can check your file structure. Keep in mind that your user folder in WSL (`/home/your_username` or `~`) is NOT your user folder in Windows (e.g. `/mnt/c/Users/your_username`).
+* To double check your path you can always open WSL directly by pressing `Win` + `R` and then typing WSL and pressing enter. There you can check your file structure. Keep in mind that your user folder in WSL (`/home/your_username` or `~`) is NOT your user folder in Windows (e.g. `/mnt/c/Users/your_username`).
 * As an alternative, you can also open directly WSL, open your project folder and then opening vscode from there with the command `code .`.
 * If you open a project through Windows explorer, it might open in a new (non-WSL) window. Open it via the command palette instead.
 
