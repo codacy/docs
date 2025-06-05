@@ -31,21 +31,21 @@ Follow the steps below to upgrade to Codacy Self-hosted v15.0.0:
 
 
 ## Tool versions
--   Ameba 1.5.0
--   Bandit 1.7.5
+-   Ameba 1.5.0 (updated from 1.4.0)
+-   Bandit 1.7.5 (updated from 1.7.1)
 -   Brakeman 4.3.1
 -   bundler-audit (deprecated) 0.9.1
--   Checkov 3.0.25
+-   Checkov 3.0.25 (updated from 2.3.187)
 -   Checkstyle 10.13.0
 -   Clang-Tidy 10.0.1
 -   CodeNarc 3.3.0
--   CoffeeLint 5.2.11
+-   CoffeeLint 5.2.11 (updated from 5.2.10)
 -   Cppcheck 2.12.0
 -   Credo 1.7.2
 -   CSSLint (deprecated) 1.0.5
 -   dartanalyzer 3.3.0
 -   detekt 1.23.5
--   ESLint 8.56.0
+-   ESLint 8.56.0 (updated from 8.55.0)
 -   ESLint (deprecated) 7.32.0
 -   Faux-Pas 1.7.2
 -   Flawfinder 2.0.19
@@ -53,8 +53,8 @@ Follow the steps below to upgrade to Codacy Self-hosted v15.0.0:
 -   Hadolint 1.18.2
 -   Jackson Linter 2.15.2
 -   JSHint (deprecated) 2.13.6
--   markdownlint 0.33.0
--   PHP Mess Detector 2.14.1
+-   markdownlint 0.33.0 (updated from 0.26.2)
+-   PHP Mess Detector 2.14.1 (updated from 2.13.0)
 -   PHP_CodeSniffer 3.7.2
 -   PMD 6.55.0
 -   Prospector 1.10.3
@@ -63,7 +63,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v15.0.0:
 -   Pylint (deprecated) 1.9.5
 -   remark-lint 9.1.2
 -   Revive 1.3.7
--   RuboCop 1.60.2
+-   RuboCop 1.60.2 (updated from 1.59.0)
 -   Scalastyle 1.5.1
 -   ShellCheck v0.9.0
 -   SonarC# 9.19
