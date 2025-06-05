@@ -18,6 +18,7 @@ jobs:
         with:
           filter_mode: added
           debug: true
+          fail_on_error: false
         env:
           # Required
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
