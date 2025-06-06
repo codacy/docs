@@ -679,6 +679,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2025:
+                      - release-notes/cloud/cloud-2025-05.md
                       - release-notes/cloud/cloud-2025-04.md
                       - release-notes/cloud/cloud-2025-03.md
                       - release-notes/cloud/cloud-2025-02-adding-ruff-lizard.md      
