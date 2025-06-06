@@ -867,7 +867,7 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/). This tool doesn't support [custom file extensions](../repositories-configure/languages.md#configuring-file-extensions).  
 <sup><span id="yaml-only">2</span></sup>: Currently, only YAML file scanning is supported on this platform.  
 <sup><span id="client-side">3</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
-<sup><span id="cppcheck-misra">4</span></sup>: Currently, Cppcheck only supports [checking the MISRA guidelines for C](https://cppcheck.sourceforge.io/misra.php).  
+<sup><span id="cppcheck-misra">4</span></sup>: Currently, Cppcheck only supports the MISRA guidelines for C.  
 <sup><span id="dart-limitations">5</span></sup>: Currently, Codacy only supports including the packages [lints](https://pub.dev/packages/lints) and [<span class="skip-vale">flutter_lints</span>](https://pub.dev/packages/flutter_lints) on dartanalyzer configuration files.  
 <sup><span id="complexity-limitations">6</span></sup>: Doesn't calculate [the number of methods and the complexity per method](../repositories/files.md#file-details) for each file.  
 <sup><span id="semgrep-brakeman">7</span></sup>: Due to licensing limitations, Codacy doesn't support the latest version of Brakeman. To analyze your Ruby code for the latest security vulnerabilities, use [Semgrep](https://semgrep.dev/), which provides comprehensive and up-to-date security scanning.  
