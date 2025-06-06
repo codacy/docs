@@ -77,4 +77,4 @@ Follow the steps below to upgrade to Codacy Self-hosted v15.0.0:
 -   Tailor 0.12.0
 -   TSLint (deprecated) 6.1.3
 -   TSQLLint 1.11.1
--   Unity Roslyn Analyzers 1.17.0`
+-   Unity Roslyn Analyzers 1.17.0
