@@ -8,7 +8,7 @@ codacy_tools_version_new: https://github.com/codacy/codacy-tools-sh/releases/tag
 
 # Self-hosted v15.0.0
 
-These release notes are for [Codacy Self-hosted v15.0.0](https://github.com/codacy/chart/releases/tag/15.0.0){: target="_blank"}, released on April 10, 2025.
+These release notes are for [Codacy Self-hosted v15.0.0](https://github.com/codacy/chart/releases/tag/15.0.0){: target="_blank"}, released on June 5, 2025.
 
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
@@ -27,7 +27,7 @@ Follow the steps below to upgrade to Codacy Self-hosted v15.0.0:
     -   [Codacy Coverage Reporter 13.10.15](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.10.15)
 
 ## Product enhancements
--   Added support for [Kubernetes 1.28](https://docs.codacy.com/v14.1/chart/requirements/#kubernetes-or-microk8s-cluster-setup). (REL-1560)
+-   Added support for [Kubernetes 1.30](https://docs.codacy.com/v15.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup). (REL-1560)
 
 
 ## Tool versions
@@ -77,4 +77,4 @@ Follow the steps below to upgrade to Codacy Self-hosted v15.0.0:
 -   Tailor 0.12.0
 -   TSLint (deprecated) 6.1.3
 -   TSQLLint 1.11.1
--   Unity Roslyn Analyzers 1.17.0
+-   Unity Roslyn Analyzers 1.17.0`
