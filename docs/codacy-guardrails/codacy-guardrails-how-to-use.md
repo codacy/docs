@@ -11,20 +11,20 @@
   </thead>
   <tbody>
   <tr>
-    <td>VSCode+Copilot</td>
-    <td>Sonnet 4</td>
+    <td>Visual Studio Code</td>
+    <td>Claude 3.5 Sonnet</td>
   </tr>
     <tr>
-    <td>VSCode Insiders</td>
-    <td>Sonnet 4</td>
+    <td>Visual Studio Code Insiders</td>
+    <td>Claude 4 Sonnet</td>
   </tr>
   <tr>
     <td>Cursor</td>
-    <td>Sonnet 4</td>
+    <td>Claude 4 Sonnet</td>
   </tr>
   <tr>
     <td>Windsurf</td>
-    <td>Sonnet 4</td>
+    <td>Claude 3.7 Sonnet</td>
   </tr>
   </tbody>
 </table>
