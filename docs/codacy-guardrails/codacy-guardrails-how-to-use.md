@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>IDE</th>
-      <th>Best AI model</th>
+      <th>Recommended LLM</th>
     <tr>
   </thead>
   <tbody>
