@@ -1,5 +1,34 @@
 # Using Codacy Guardrails
 
+## Recommended configurations
+
+<table>
+  <thead>
+    <tr>
+      <th>IDE</th>
+      <th>Best AI model</th>
+    <tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>VSCode+Copilot</td>
+    <td>Sonnet 4</td>
+  </tr>
+    <tr>
+    <td>VSCode Insiders</td>
+    <td>Sonnet 4</td>
+  </tr>
+  <tr>
+    <td>Cursor</td>
+    <td>Sonnet 4</td>
+  </tr>
+  <tr>
+    <td>Windsurf</td>
+    <td>Sonnet 4</td>
+  </tr>
+  </tbody>
+</table>
+
 ## Write secure, compliant AI code
 
 a. Let's run an prompt to create a webserver in Java
