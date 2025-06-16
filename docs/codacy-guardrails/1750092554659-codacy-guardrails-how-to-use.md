@@ -16,15 +16,15 @@
   </tr>
     <tr>
     <td>Visual Studio Code Insiders</td>
-    <td>Claude 4.x Sonnet</td>
+    <td>Claude 4 Sonnet</td>
   </tr>
   <tr>
     <td>Cursor</td>
-    <td>Claude 4.x Sonnet</td>
+    <td>Claude 4 Sonnet</td>
   </tr>
   <tr>
     <td>Windsurf</td>
-    <td>Claude 3.x Sonnet</td>
+    <td>Claude 3.7 Sonnet</td>
   </tr>
   </tbody>
 </table>
