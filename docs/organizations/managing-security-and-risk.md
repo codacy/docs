@@ -564,7 +564,7 @@ You're also able to click any dependency to find out more information about it.
 
 The **Security and risk management > App scanning** page allows organizations to scan Web Applications and APIs for security vulnerabilities. This feature is part of Codacy's Dynamic Application Security Testing (DAST) capabilities, powered by ZAP.
 
-To access the App scanning page, go to the [overview page](#dashboard) and click the **App scanning** tab.
+To access the App scanning page, go to the [Overview page](#dashboard) and click the **App scanning** tab.
 
 ![Security and risk management app scanning page](images/security-risk-management-app-scanning.png)
 

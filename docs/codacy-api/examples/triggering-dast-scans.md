@@ -14,7 +14,7 @@ Thanks to the new app scanning capabilities available on the Security and risk m
 
 ## Creating targets
 
-Before the automation process itself, you need to create a target. Targets are individual configurations that define what Codacy will scan,  including the target URL, its type (API or web application), and other fields like OpenAPI specification and optional authentication details for API targets.
+Before the automation process itself, you need to create a target. Targets are individual configurations that define what Codacy will scan, including the target URL, its type (API or web application), and other fields like OpenAPI specification and optional authentication details for API targets.
 
 Targets only need to be created once. Note that **target URLs are immutable** — if you need to change the URL, definition, or authentication, you'll need to delete the target and create a new one.
 
@@ -42,7 +42,7 @@ Replace the placeholders with your own values:
 | **API_KEY** | true | [Account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API |
 | **GIT_PROVIDER** | true | Git provider hosting of the organization, using one of the values in the table below. <br/>**Options:** `gh` (GitHub Cloud), `ghe`(GitHub Enterprise), `gl` (Gitlab Cloud), `gle` (Gitlab Enterprise), `bb` (Bitbucket Cloud), `bbe` (Bitbucket Server) | 
 | **ORGANIZATION** | true | Name of the organization on the Git provider. You must have admin permissions over the organization on the Git provider.<br/>For example, `codacy` |
-| **TARGET_URL** | true | Url of the Web app or API that will be scanned. <br/>Must start with `http://` or `https://`|
+| **TARGET_URL** | true | URL of the Web app or API that will be scanned. <br/>Must start with `http://` or `https://`|
 | **TARGET_TYPE** | false | Type of target to be scanned <br/> **Options:** `webapp` (default), `openapi` or `graphql`|
 | **API_DEFINITION_URL** | false * | The URL to a publicly accessible OpenAPI specification.<br/>*** Required for OpenAPI targets**|
 | **HEADER_NAME** | false | Name of the authentication header. <br/>For example, `Authentication`|
