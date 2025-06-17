@@ -1,5 +1,34 @@
 # Using Codacy Guardrails
 
+## Recommended configurations
+
+<table>
+  <thead>
+    <tr>
+      <th>IDE</th>
+      <th>Recommended LLM</th>
+    <tr>
+  </thead>
+  <tbody>
+  <tr>
+    <td>Visual Studio Code</td>
+    <td>Claude 3.x Sonnet</td>
+  </tr>
+    <tr>
+    <td>Visual Studio Code Insiders</td>
+    <td>Claude 4.x Sonnet</td>
+  </tr>
+  <tr>
+    <td>Cursor</td>
+    <td>Claude 4.x Sonnet</td>
+  </tr>
+  <tr>
+    <td>Windsurf</td>
+    <td>Claude 3.x Sonnet</td>
+  </tr>
+  </tbody>
+</table>
+
 ## Write secure, compliant AI code
 
 a. Let's run an prompt to create a webserver in Java
