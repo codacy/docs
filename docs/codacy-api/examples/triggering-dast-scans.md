@@ -39,14 +39,14 @@ Replace the placeholders with your own values:
 
 | Field | Required | Description |
 |-------|----------|-------------|
-| **API_KEY** | true | [Account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API. |
-| **GIT_PROVIDER** | true | Git provider hosting of the organization, using one of the values in the table below. For example, `gh` for GitHub Cloud. <br/>Options: `gh` (GitHub Cloud), `ghe`(GitHub Enterprise), `gl` (Gitlab Cloud), `gle` (Gitlab Enterprise), `bb` (Bitbucket Cloud), `bbe` (Bitbucket Server) | 
-| **ORGANIZATION** | true | Name of the organization on the Git provider. You must have admin permissions over the organization on the Git provider.<br/>For example, `codacy`. |
+| **API_KEY** | true | [Account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API |
+| **GIT_PROVIDER** | true | Git provider hosting of the organization, using one of the values in the table below. <br/>**Options:** `gh` (GitHub Cloud), `ghe`(GitHub Enterprise), `gl` (Gitlab Cloud), `gle` (Gitlab Enterprise), `bb` (Bitbucket Cloud), `bbe` (Bitbucket Server) | 
+| **ORGANIZATION** | true | Name of the organization on the Git provider. You must have admin permissions over the organization on the Git provider.<br/>For example, `codacy` |
 | **TARGET_URL** | true | Url of the Web app or API that will be scanned. <br/>Must start with `http://` or `https://`|
-| **TARGET_TYPE** | false | Type of target to be scanned <br/> Options: `webapp` (default), `openapi` or `graphql`|
-| **API_DEFINITION_URL** | false * | The URL to a publicly accessible OpenAPI specification.<br/>*** - Required for OpenAPI targets.**|
-| **HEADER_NAME** | false | Authentication parameter name. <br/>For example, `Authentication`)|
-| **HEADER_VALUE** | false | Authentication parameter value. <br/>For example, a token or API key|
+| **TARGET_TYPE** | false | Type of target to be scanned <br/> **Options:** `webapp` (default), `openapi` or `graphql`|
+| **API_DEFINITION_URL** | false * | The URL to a publicly accessible OpenAPI specification.<br/>*** Required for OpenAPI targets**|
+| **HEADER_NAME** | false | Name of the authentication header. <br/>For example, `Authentication`|
+| **HEADER_VALUE** | false | Value of the authentication header. <br/>For example, a token or API key|
 
 Once you create the target you'll get the target `id` as a response. You will use it to trigger DAST scans in the next section.
 
