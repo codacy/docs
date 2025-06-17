@@ -580,7 +580,7 @@ Codacy supports two types of scanning:
 
 - **API scans** simulate real-world attacks against your API endpoints. These are more aggressive and best suited for **non-production environments**, such as staging or development. API scans provide deeper insights into runtime behavior and potential vulnerabilities, such as:
   - Broken authentication or authorization controls
-  - Injection vulnerabilities (e.g., SQL or command injection)
+  - Injection vulnerabilities (SQL or command injection)
   - Exposure of sensitive data in API responses
   - Insecure CORS or HTTP method configurations
 
@@ -612,6 +612,7 @@ You can initiate scans in two ways:
 !!! important
     Only [admins and organization managers](../organizations/roles-and-permissions-for-organizations.md) can create targets and start scans, both in-app and via the API.
 
+[//]: <> (TODO: update video)
 <div>
   <iframe width="100%" height="472" src="https://www.youtube.com/embed/qPwHlIGJYXs?autoplay=1&mute=1&showinfo=0&loop=1" title="DAST targets" frameborder="0"
 allowfullscreen>
