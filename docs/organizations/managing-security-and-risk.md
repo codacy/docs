@@ -562,26 +562,55 @@ You're also able to click any dependency to find out more information about it.
 !!! important
     App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.
 
-The **Security and risk management app scanning** page allows organizations to scan APIs and Web Applications for security vulnerabilities. This is part of our DAST (Dynamic Application Security Testing) capabilities, powered by ZAP.
+The **Security and risk management > App scanning** page allows organizations to scan Web Applications and APIs for security vulnerabilities. This feature is part of Codacy's Dynamic Application Security Testing (DAST) capabilities, powered by ZAP.
 
-To access the app scanning page, access the [overview page](#dashboard) and click the **App scanning** tab.
+To access the App scanning page, go to the [overview page](#dashboard) and click the **App scanning** tab.
 
 ![Security and risk management app scanning page](images/security-risk-management-app-scanning.png)
 
-App scanning tests applications in real-world scenarios, making it possible to find configuration and authentication issues or other runtime vulnerabilities that may impact your application’s functionality and security. It’s also a good method for preventing regressions and doesn’t depend on a specific programming language. As long as the application can be accessed through a browser, a DAST tool can typically scan it for vulnerabilities.
+App scanning analyzes applications in runtime environments to help identify vulnerabilities such as misconfigurations, insecure authentication, or other security issues that occur in real-world usage. Because it doesn't rely on access to source code, it’s language-agnostic and useful for validating security across your entire stack. 
 
-In concrete, when you start a scan, Codacy runs a baseline scan using ZAP. This is a non-intrusive scan that identifies common security issues without actively attacking your application.
-It’s safe to run for production applications and helps detect problems like missing security headers, information disclosure through HTTP response headers, insecure cookie configurations, and others.
+Codacy supports two types of scanning:
+
+- **Web application scans** perform baseline, non-intrusive analysis. These scans are safe for production environments and detect surface-level issues such as:
+  - Missing security headers
+  - Insecure cookie configurations
+  - Information disclosure through HTTP response headers
+  - Exposure of sensitive or misconfigured files
+
+- **API scans** simulate real-world attacks against your API endpoints. These are more aggressive and best suited for **non-production environments**, such as staging or development. API scans provide deeper insights into runtime behavior and potential vulnerabilities, such as:
+  - Broken authentication or authorization controls
+  - Injection vulnerabilities (e.g., SQL or command injection)
+  - Exposure of sensitive data in API responses
+  - Insecure CORS or HTTP method configurations
 
 !!! note
     Already using ZAP? [Upload your results via the API.](../codacy-api/examples/uploading-dast-results.md)
 
-### How to scan a target
-To scan a target, you can either go to the Security and risk management dashboard and access the App Scanning tab, or set it up for automation using our API.
+## Creating an App Scanning target
+
+When creating a scan target, you'll be able to choose between a Web App or an API. Codacy supports scanning for:
+
+- **REST APIs**, which require a publicly accessible OpenAPI specification URL.
+- **GraphQL APIs**, where the schema is inferred from the default path `{targetUrl}/graphql`.
+
+API targets optionally support **header-based authentication**. As you create a target, keep in mind you may not be able to view or change certain fields later (to change your configurations you may need to delete and create a new target).
 
 !!! important
-    Only [admins and organization managers](../organizations/roles-and-permissions-for-organizations.md) will be able to create new targets and run scans (both in-app and via the API).
+    Avoid running API scans on production enviroments as our API scanners may cause potential downtime.
 
+!!! important
+    If exposing your API specification is not feasible for your team, let us know via support or your account representative.
+
+
+### How to scan a target
+
+You can initiate scans in two ways:
+- From the **App scanning** tab in the Security and risk management dashboard
+- By automating scans using [Codacy's API](../codacy-api/examples/triggering-dast-scans.md)
+
+!!! important
+    Only [admins and organization managers](../organizations/roles-and-permissions-for-organizations.md) can create targets and start scans, both in-app and via the API.
 
 <div>
   <iframe width="100%" height="472" src="https://www.youtube.com/embed/qPwHlIGJYXs?autoplay=1&mute=1&showinfo=0&loop=1" title="DAST targets" frameborder="0"
@@ -589,19 +618,19 @@ allowfullscreen>
   </iframe>
 </div>
 
+Each organization can have up to **6 active scan targets**. If you need additional capacity, contact your customer success representative.
 
-From within the tab, you're able to configure a new target by inputting the URL of the app you'd like to scan. You can configure up to 6 targets within your organization (if you need more, talk to your customer success representative).
-Scans can be triggered manually via Codacy's UI. As you click to start a scan, it will be first added to a queue and eventually executed. You can also queue a scan for a target that is already being scanned, and it will eventually execute after the current scan finishes. There are no limits to how many scans an organization can run per target, so this should accommodate all your deployment needs.
-Once a scan is complete, its findings will be added to the findings tab, where you can review them using the filter **Scan types > DAST/App scanning**.
+Scans are triggered manually through the UI and are queued before execution. You can queue one single scan per target — it will run sequentially. There is no limit to the number of scans you can run on a target, in order to support your deployment needs.
 
-!!! important
-    Depending on the application being scanned, a DAST analysis can take a very long time to complete.
-    To guarantee the stability of Codacy's platform and fair access to analysis slots, DAST analysis can timeout when running for too long.
+Once a scan completes, results will be available under the **Findings** tab. Use the **Scan types > DAST/App scanning** filter to view relevant findings.
 
 !!! important
-    Failed analysis are retried a number of times according to their failure reason. A retry will re-enqueue the analysis, to be executed as soon as possible, while respecting the available analysis slots.
+    Depending on the complexity of the target, DAST scans can take a significant amount of time to complete. Codacy may enforce timeouts to ensure platform stability and fair resource distribution.
+
+!!! important
+    Failed scans are retried based on the failure reason. Retries are added back to the queue automatically and processed when capacity allows.
 
 !!! note
-    Currently, DAST issues are only visible to admin and organization admin roles.
+    Currently, DAST findings are only visible to admin and organization admin roles.
 
-Follow our [roadmap](https://roadmap.codacy.com) for the upcoming updates on this feature.
+Follow our [roadmap](https://roadmap.codacy.com) for updates on this feature.
