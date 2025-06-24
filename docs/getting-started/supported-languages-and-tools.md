@@ -290,7 +290,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package-lock.json</code> (npm)</td>
     </tr>
     <tr>
       <td>JSON</td>
@@ -451,7 +451,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/rubik/radon">Radon</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
+      <a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)</td>
     </tr>
     <tr>
       <td>Ruby</td>
@@ -581,7 +581,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package-lock.json</code> (npm)</td>
     </tr>
     <tr>
       <td>Unity</td>
