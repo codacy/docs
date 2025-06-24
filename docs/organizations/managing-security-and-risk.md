@@ -568,7 +568,7 @@ To access the App scanning page, go to the [Overview page](#dashboard) and click
 
 ![Security and risk management app scanning page](images/security-risk-management-app-scanning.png)
 
-App scanning analyzes applications in runtime environments to help identify vulnerabilities such as misconfigurations, insecure authentication, or other security issues that occur in real-world usage. Because it doesn't rely on access to source code, it’s language-agnostic and useful for validating security across your entire stack. 
+App scanning analyzes applications in production or production-like environments to help identify vulnerabilities such as misconfigurations, insecure authentication, or other security issues that occur in real-world usage. Because it doesn't rely on access to source code, it’s language-agnostic and useful for validating security across your entire stack. 
 
 Codacy supports two types of scanning:
 
@@ -589,7 +589,7 @@ Codacy supports two types of scanning:
 
 ## Creating an App Scanning target
 
-When creating a scan target, you'll be able to choose between a Web App or an API. Codacy supports scanning for:
+When creating a scan target, you'll be able to choose between a Web App or an API. Configuring a Web App will only require a target URL, while APIs will have other requirements:
 
 - **REST APIs**, which require a publicly accessible OpenAPI specification URL.
 - **GraphQL APIs**, where the schema is inferred from the default path `{targetUrl}/graphql`.
@@ -600,7 +600,7 @@ API targets optionally support **header-based authentication**. As you create a 
     Avoid running API scans on production enviroments as our API scanners may cause potential downtime.
 
 !!! important
-    If exposing your API specification is not feasible for your team, let us know via support or your account representative.
+    If exposing your API specification isn't feasible for your team, let us know via support or your account representative.
 
 
 ### How to scan a target
