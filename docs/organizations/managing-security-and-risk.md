@@ -612,7 +612,6 @@ You can initiate scans in two ways:
 !!! important
     Only [admins and organization managers](../organizations/roles-and-permissions-for-organizations.md) can create targets and start scans, both in-app and via the API.
 
-[//]: <> (TODO: update video)
 <div>
   <iframe width="100%" height="472" src="https://www.youtube.com/embed/qPwHlIGJYXs?autoplay=1&mute=1&showinfo=0&loop=1" title="DAST targets" frameborder="0"
 allowfullscreen>
