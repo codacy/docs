@@ -456,9 +456,12 @@ The table below lists all languages that Codacy supports and the corresponding t
     <tr>
       <td>Ruby</td>
       <td>.rb, .gemspec, .podspec, .jbuilder, .rake, .opal</td>
-      <td><a href="https://brakemanscanner.org/">Brakeman</a> <a href="#semgrep-brakeman"><sup>7</sup></a>,
+      <td><a href="https://github.com/troessner/reek">Reek</a>,
+          <a href="https://brakemanscanner.org/">Brakeman</a>
+          <a href="#semgrep-brakeman"><sup>7</sup></a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>
+      </td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
@@ -543,6 +546,23 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#complexity-limitations"><sup>6</sup></a> <a href="#swiftlint-complexity"><sup>8</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>SQL</td>
+      <td>.sql</td>
+      <td>
+        <a href="https://pmd.github.io/">PMD</a>,
+        <a href="https://github.com/purcell/sqlint">SQLint</a>,
+        <a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a>,
+        <a href="https://github.com/sqlfluff/sqlfluff">SQLFluff</a>,
+        <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>
+      </td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
     </tr>
     <tr>
