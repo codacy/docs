@@ -465,6 +465,7 @@ The table below lists all languages that Codacy supports and the corresponding t
         <a href="https://github.com/rubik/radon">Radon</a>
         <a href="https://github.com/terryyin/lizard">Lizard</a>
       </td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Ruby</td>
