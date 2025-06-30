@@ -11,7 +11,7 @@
         <meta name="description" content="List of tools that Codacy uses to analyze over 40 supported languages. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code platforms as well as code duplication, code complexity, and code coverage metrics for most programming languages.">
       
       
-        <meta http-equiv="last-modified" content="2025-06-23 15:27:06">
+        <meta http-equiv="last-modified" content="2025-06-30 16:50:51">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/supported-languages-and-tools/">
@@ -2543,6 +2543,18 @@
 
 
   <li class="md-nav__item">
+    <a href="../../release-notes/cloud/cloud-2025-06-adding-sqlfluff-reek/" title="Adding SQLFluff and Reek as new supported tools June, 2025" class="md-nav__link">
+      Adding SQLFluff and Reek as new supported tools June, 2025
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
     <a href="../../release-notes/cloud/cloud-2025-05/" title="Cloud May 2025" class="md-nav__link">
       Cloud May 2025
     </a>
@@ -5067,27 +5079,44 @@
     <tr>
       <td>Python</td>
       <td>.py</td>
-      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
-          <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
-          <a href="https://github.com/astral-sh/ruff">Ruff</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
-          <a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)</td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/rubik/radon">Radon</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)</td>
+      <td>
+        <a href="https://github.com/PyCQA/bandit">Bandit</a>,
+        <a href="https://github.com/landscapeio/prospector">Prospector</a>,
+        <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
+        <a href="https://github.com/astral-sh/ruff">Ruff</a>,
+        <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>
+      </td>
+      <td>
+        <a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a>
+      </td>
+      <td>
+        <a href="https://github.com/PyCQA/bandit">Bandit</a>,
+        <a href="https://github.com/landscapeio/prospector">Prospector</a>,
+        <a href="https://semgrep.dev/">Semgrep</a>,
+        <a href="https://trivy.dev">Trivy</a>
+      </td>
+      <td>
+        <a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)
+      </td>
+      <td>
+        <a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a>
+        <a href="#different-tools"><sup>10</sup></a>
+      </td>
+      <td>
+        <a href="https://github.com/rubik/radon">Radon</a>
+        <a href="https://github.com/terryyin/lizard">Lizard</a>
+      </td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Ruby</td>
       <td>.rb, .gemspec, .podspec, .jbuilder, .rake, .opal</td>
-      <td><a href="https://brakemanscanner.org/">Brakeman</a> <a href="#semgrep-brakeman"><sup>7</sup></a>,
+      <td><a href="https://github.com/troessner/reek">Reek</a>,
+          <a href="https://brakemanscanner.org/">Brakeman</a>
+          <a href="#semgrep-brakeman"><sup>7</sup></a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>
+      </td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
@@ -5172,6 +5201,23 @@
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#complexity-limitations"><sup>6</sup></a> <a href="#swiftlint-complexity"><sup>8</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>SQL</td>
+      <td>.sql</td>
+      <td>
+        <a href="https://pmd.github.io/">PMD</a>,
+        <a href="https://github.com/purcell/sqlint">SQLint</a>,
+        <a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a>,
+        <a href="https://github.com/sqlfluff/sqlfluff">SQLFluff</a>,
+        <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>
+      </td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
     </tr>
     <tr>
@@ -5663,7 +5709,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 23, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 30, 2025</span>
     
   </small>
 </div>
