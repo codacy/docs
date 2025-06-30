@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to trigger DAST/App using the API.">
       
       
-        <meta http-equiv="last-modified" content="2025-05-09 08:03:47">
+        <meta http-equiv="last-modified" content="2025-06-30 10:16:40">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/triggering-dast-scans/">
@@ -4649,60 +4649,79 @@
 <p><strong>Check your <a href="../../../organizations/roles-and-permissions-for-organizations/">permissions</a>.</strong> Only git provider admins and organization managers will be able to create new targets and trigger scans (in app and via the API).</p>
 </div>
 <h2 id="creating-targets">Creating targets<a class="headerlink" href="#creating-targets" title="Permanent link">#</a></h2>
-<p>Before the automation process itself, you need to create a target. Targets are single units that contain all the configurations of your scan, in this case the URL (and later on other configurations, like authentication details and OpenAPI definition).
-Targets only need to be defined once. The target's URL is immutable, so, if you need to change it, you'll need to delete the target and create a new one.</p>
-<p>To create a target:</p>
+<p>Before the automation process itself, you need to create a target. Targets are individual configurations that define what Codacy will scan, including the target URL, its type (API or web application), and other type-dependent fields like OpenAPI specification and optional authentication details for API targets.</p>
+<p>Targets only need to be created once. Note that <strong>targets are immutable</strong> — if you need to change the URL, definition, or authentication, you'll need to delete the target and create a new one.</p>
+<p>To create a target, use the following API request:</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.codacy.com/api/v3/organizations/<span class="o">{</span>GIT_PROVIDER<span class="o">}</span>/<span class="o">{</span>ORGANIZATION<span class="o">}</span>/dast/targets<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Accept: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;api-token: {API_KEY}&quot;</span><span class="w"> </span><span class="se">\</span>
-<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;url&quot;: &quot;https://api.domain.com/v1&quot;}&#39;</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{</span>
+<span class="s1">        &quot;url&quot;: {TARGET_URL},</span>
+<span class="s1">        &quot;targetType&quot;: {TARGET_TYPE},</span>
+<span class="s1">        &quot;apiDefinitionUrl&quot;: {API_DEFINITION_URL},</span>
+<span class="s1">        &quot;apiAuthHeaders&quot;: {</span>
+<span class="s1">          &quot;{HEADER_NAME}&quot;: &quot;{HEADER_VALUE}&quot;</span>
+<span class="s1">        }</span>
+<span class="s1">      }&#39;</span>
 </code></pre></div>
 <p>Replace the placeholders with your own values:</p>
-<ul>
-<li><strong>API_KEY:</strong> <a href="../../api-tokens/#account-api-tokens">Account API token</a> used to authenticate on the Codacy API.</li>
-<li>
-<p><strong>GIT_PROVIDER:</strong> Git provider hosting of the organization, using one of the values in the table below. For example, <code>gh</code> for GitHub Cloud.</p>
 <table>
 <thead>
 <tr>
-<th>Value</th>
-<th>Git provider</th>
+<th>Field</th>
+<th>Required</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><code>gh</code></td>
-<td>GitHub Cloud</td>
+<td><strong>API_KEY</strong></td>
+<td>true</td>
+<td><a href="../../api-tokens/#account-api-tokens">Account API token</a> used to authenticate on the Codacy API</td>
 </tr>
 <tr>
-<td><code>ghe</code></td>
-<td>GitHub Enterprise</td>
+<td><strong>GIT_PROVIDER</strong></td>
+<td>true</td>
+<td>Git provider hosting of the organization, using one of the values in the table below. <br/><strong>Options:</strong> <code>gh</code> (GitHub Cloud), <code>ghe</code>(GitHub Enterprise), <code>gl</code> (Gitlab Cloud), <code>gle</code> (Gitlab Enterprise), <code>bb</code> (Bitbucket Cloud), <code>bbe</code> (Bitbucket Server)</td>
 </tr>
 <tr>
-<td><code>gl</code></td>
-<td>GitLab Cloud</td>
+<td><strong>ORGANIZATION</strong></td>
+<td>true</td>
+<td>Name of the organization on the Git provider. You must have admin permissions over the organization on the Git provider.<br/>For example, <code>codacy</code></td>
 </tr>
 <tr>
-<td><code>gle</code></td>
-<td>GitLab Enterprise</td>
+<td><strong>TARGET_URL</strong></td>
+<td>true</td>
+<td>URL of the Web app or API that will be scanned. <br/>Must start with <code>http://</code> or <code>https://</code><br/>For example, <code>https://api.codacy.com/v1</code></td>
 </tr>
 <tr>
-<td><code>bb</code></td>
-<td>Bitbucket Cloud</td>
+<td><strong>TARGET_TYPE</strong></td>
+<td>false</td>
+<td>Type of target to be scanned <br/> <strong>Options:</strong> <code>webapp</code> (default), <code>openapi</code> or <code>graphql</code></td>
 </tr>
 <tr>
-<td><code>bbe</code></td>
-<td>Bitbucket Server</td>
+<td><strong>API_DEFINITION_URL</strong></td>
+<td>false *</td>
+<td>The URL to a publicly accessible OpenAPI specification.<br/><strong>* Required for OpenAPI targets</strong></td>
+</tr>
+<tr>
+<td><strong>HEADER_NAME</strong></td>
+<td>false</td>
+<td>Name of the authentication header. <br/>For example, <code>Authentication</code></td>
+</tr>
+<tr>
+<td><strong>HEADER_VALUE</strong></td>
+<td>false</td>
+<td>Value of the authentication header. <br/>For example, a token or API key</td>
 </tr>
 </tbody>
 </table>
-</li>
-<li>
-<p><strong>ORGANIZATION:</strong> Name of the organization on the Git provider. For example, <code>codacy</code>. You must have admin permissions over the organization on the Git provider.</p>
-</li>
-</ul>
 <p>Once you create the target you'll get the target <code>id</code> as a response. You will use it to trigger DAST scans in the next section.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Currently we only support one authentication header. If you need more, please let us know via support or your account representative.</p>
+</div>
 <h2 id="trigger-dast-analysis-scans">Trigger DAST analysis scans<a class="headerlink" href="#trigger-dast-analysis-scans" title="Permanent link">#</a></h2>
 <p>Once your targets are created you can trigger an analysis by calling the '<a href="https://api.codacy.com/api/api-docs#analyzedasttarget">Analyze DAST target</a>' endpoint.</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.codacy.com/api/v3/organizations/<span class="o">{</span>GIT_PROVIDER<span class="o">}</span>/<span class="o">{</span>ORGANIZATION<span class="o">}</span>/dast/targets/<span class="o">{</span>DAST_TARGET_ID<span class="o">}</span>/analyze<span class="w"> </span><span class="se">\</span>
@@ -4873,7 +4892,7 @@ Targets only need to be defined once. The target's URL is immutable, so, if you 
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 9, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 30, 2025</span>
     
   </small>
 </div>

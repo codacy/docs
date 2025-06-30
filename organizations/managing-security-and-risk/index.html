@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2025-04-16 11:11:32">
+        <meta http-equiv="last-modified" content="2025-06-30 10:16:40">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -1204,6 +1204,13 @@
         <li class="md-nav__item">
   <a href="#app-scanning" class="md-nav__link">
     App scanning
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#creating-an-app-scanning-target" class="md-nav__link">
+    Creating an App Scanning target
   </a>
   
 </li>
@@ -5317,21 +5324,53 @@ Note that some issues just don't have a security category. These issues will rem
 <p class="admonition-title">Important</p>
 <p>App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.</p>
 </div>
-<p>The <strong>Security and risk management app scanning</strong> page allows organizations to scan APIs and Web Applications for security vulnerabilities. This is part of our DAST (Dynamic Application Security Testing) capabilities, powered by ZAP.</p>
-<p>To access the app scanning page, access the <a href="#dashboard">overview page</a> and click the <strong>App scanning</strong> tab.</p>
+<p>The <strong>Security and risk management &gt; App scanning</strong> page allows organizations to scan Web Applications and APIs for security vulnerabilities. This feature is part of Codacy's Dynamic Application Security Testing (DAST) capabilities, powered by ZAP.</p>
+<p>To access the App scanning page, go to the <a href="#dashboard">Overview page</a> and click the <strong>App scanning</strong> tab.</p>
 <p><img alt="Security and risk management app scanning page" src="../images/security-risk-management-app-scanning.png" /></p>
-<p>App scanning tests applications in real-world scenarios, making it possible to find configuration and authentication issues or other runtime vulnerabilities that may impact your application’s functionality and security. It’s also a good method for preventing regressions and doesn’t depend on a specific programming language. As long as the application can be accessed through a browser, a DAST tool can typically scan it for vulnerabilities.</p>
-<p>In concrete, when you start a scan, Codacy runs a baseline scan using ZAP. This is a non-intrusive scan that identifies common security issues without actively attacking your application.
-It’s safe to run for production applications and helps detect problems like missing security headers, information disclosure through HTTP response headers, insecure cookie configurations, and others.</p>
+<p>App scanning analyzes applications in production or production-like environments to help identify vulnerabilities such as misconfigurations, insecure authentication, or other security issues that occur in real-world usage. Because it doesn't rely on access to source code, it’s language-agnostic and useful for validating security across your entire stack. </p>
+<p>Codacy supports two types of scanning:</p>
+<ul>
+<li><strong>Web application scans</strong> perform baseline, non-intrusive analysis. These scans are safe for production environments and detect surface-level issues such as:</li>
+<li>Missing security headers</li>
+<li>Insecure cookie configurations</li>
+<li>Information disclosure through HTTP response headers</li>
+<li>
+<p>Exposure of sensitive or misconfigured files</p>
+</li>
+<li>
+<p><strong>API scans</strong> simulate real-world attacks against your API endpoints. These are more aggressive and best suited for <strong>non-production environments</strong>, such as staging or development. API scans provide deeper insights into runtime behavior and potential vulnerabilities, such as:</p>
+</li>
+<li>Broken authentication or authorization controls</li>
+<li>Injection vulnerabilities (SQL or command injection)</li>
+<li>Exposure of sensitive data in API responses</li>
+<li>Insecure CORS or HTTP method configurations</li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Already using ZAP? <a href="../../codacy-api/examples/uploading-dast-results/">Upload your results via the API.</a></p>
 </div>
-<h3 id="how-to-scan-a-target">How to scan a target<a class="headerlink" href="#how-to-scan-a-target" title="Permanent link">#</a></h3>
-<p>To scan a target, you can either go to the Security and risk management dashboard and access the App Scanning tab, or set it up for automation using our API.</p>
+<h2 id="creating-an-app-scanning-target">Creating an App Scanning target<a class="headerlink" href="#creating-an-app-scanning-target" title="Permanent link">#</a></h2>
+<p>When creating a scan target, you'll be able to choose between a Web App or an API. Configuring a Web App will only require a target URL, while APIs will have other requirements:</p>
+<ul>
+<li><strong>REST APIs</strong>, which require a publicly accessible OpenAPI specification URL.</li>
+<li><strong>GraphQL APIs</strong>, where the schema is inferred from the default path <code>{targetUrl}/graphql</code>.</li>
+</ul>
+<p>API targets optionally support <strong>header-based authentication</strong>. As you create a target, keep in mind you may not be able to view or change certain fields later (to change your configurations you may need to delete and create a new target).</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Only <a href="../roles-and-permissions-for-organizations/">admins and organization managers</a> will be able to create new targets and run scans (both in-app and via the API).</p>
+<p>Avoid running API scans on production enviroments as our API scanners may cause potential downtime.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If exposing your API specification isn't feasible for your team, let us know via support or your account representative.</p>
+</div>
+<h3 id="how-to-scan-a-target">How to scan a target<a class="headerlink" href="#how-to-scan-a-target" title="Permanent link">#</a></h3>
+<p>You can initiate scans in two ways:
+- From the <strong>App scanning</strong> tab in the Security and risk management dashboard
+- By automating scans using <a href="../../codacy-api/examples/triggering-dast-scans/">Codacy's API</a></p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Only <a href="../roles-and-permissions-for-organizations/">admins and organization managers</a> can create targets and start scans, both in-app and via the API.</p>
 </div>
 <div>
   <iframe width="100%" height="472" src="https://www.youtube.com/embed/qPwHlIGJYXs?autoplay=1&mute=1&showinfo=0&loop=1" title="DAST targets" frameborder="0"
@@ -5339,23 +5378,22 @@ allowfullscreen>
   </iframe>
 </div>
 
-<p>From within the tab, you're able to configure a new target by inputting the URL of the app you'd like to scan. You can configure up to 6 targets within your organization (if you need more, talk to your customer success representative).
-Scans can be triggered manually via Codacy's UI. As you click to start a scan, it will be first added to a queue and eventually executed. You can also queue a scan for a target that is already being scanned, and it will eventually execute after the current scan finishes. There are no limits to how many scans an organization can run per target, so this should accommodate all your deployment needs.
-Once a scan is complete, its findings will be added to the findings tab, where you can review them using the filter <strong>Scan types &gt; DAST/App scanning</strong>.</p>
+<p>Each organization can have up to <strong>6 active scan targets</strong>. If you need additional capacity, contact your customer success representative.</p>
+<p>Scans are triggered manually through the UI and are queued before execution. You can queue one single scan per target — it will run sequentially. There is no limit to the number of scans you can run on a target, in order to support your deployment needs.</p>
+<p>Once a scan completes, results will be available under the <strong>Findings</strong> tab. Use the <strong>Scan types &gt; DAST/App scanning</strong> filter to view relevant findings.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Depending on the application being scanned, a DAST analysis can take a very long time to complete.
-To guarantee the stability of Codacy's platform and fair access to analysis slots, DAST analysis can timeout when running for too long.</p>
+<p>Depending on the complexity of the target, DAST scans can take a significant amount of time to complete. Codacy may enforce timeouts to ensure platform stability and fair resource distribution.</p>
 </div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Failed analysis are retried a number of times according to their failure reason. A retry will re-enqueue the analysis, to be executed as soon as possible, while respecting the available analysis slots.</p>
+<p>Failed scans are retried based on the failure reason. Retries are added back to the queue automatically and processed when capacity allows.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Currently, DAST issues are only visible to admin and organization admin roles.</p>
+<p>Currently, DAST findings are only visible to admin and organization admin roles.</p>
 </div>
-<p>Follow our <a href="https://roadmap.codacy.com">roadmap</a> for the upcoming updates on this feature.</p>
+<p>Follow our <a href="https://roadmap.codacy.com">roadmap</a> for updates on this feature.</p>
               
               
                 
@@ -5512,7 +5550,7 @@ To guarantee the stability of Codacy's platform and fair access to analysis slot
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 16, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 30, 2025</span>
     
   </small>
 </div>
