@@ -438,20 +438,33 @@ The table below lists all languages that Codacy supports and the corresponding t
     <tr>
       <td>Python</td>
       <td>.py</td>
-      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
-          <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
-          <a href="https://github.com/astral-sh/ruff">Ruff</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
-          <a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)</td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/rubik/radon">Radon</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)</td>
+      <td>
+        <a href="https://github.com/PyCQA/bandit">Bandit</a>,
+        <a href="https://github.com/landscapeio/prospector">Prospector</a>,
+        <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
+        <a href="https://github.com/astral-sh/ruff">Ruff</a>,
+        <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>
+      </td>
+      <td>
+        <a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a>
+      </td>
+      <td>
+        <a href="https://github.com/PyCQA/bandit">Bandit</a>,
+        <a href="https://github.com/landscapeio/prospector">Prospector</a>,
+        <a href="https://semgrep.dev/">Semgrep</a>,
+        <a href="https://trivy.dev">Trivy</a>
+      </td>
+      <td>
+        <a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)
+      </td>
+      <td>
+        <a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a>
+        <a href="#different-tools"><sup>10</sup></a>
+      </td>
+      <td>
+        <a href="https://github.com/rubik/radon">Radon</a>
+        <a href="https://github.com/terryyin/lizard">Lizard</a>
+      </td>
     </tr>
     <tr>
       <td>Ruby</td>
