@@ -573,16 +573,16 @@ App scanning analyzes applications in production or production-like environments
 Codacy supports two types of scanning:
 
 - **Web application scans** perform baseline, non-intrusive analysis. These scans are safe for production environments and detect surface-level issues such as:
-  - Missing security headers
-  - Insecure cookie configurations
-  - Information disclosure through HTTP response headers
-  - Exposure of sensitive or misconfigured files
+    - Missing security headers
+    - Insecure cookie configurations
+    - Information disclosure through HTTP response headers
+    - Exposure of sensitive or misconfigured files
 
 - **API scans** simulate real-world attacks against your API endpoints. These are more aggressive and best suited for **non-production environments**, such as staging or development. API scans provide deeper insights into runtime behavior and potential vulnerabilities, such as:
-  - Broken authentication or authorization controls
-  - Injection vulnerabilities (SQL or command injection)
-  - Exposure of sensitive data in API responses
-  - Insecure CORS or HTTP method configurations
+    - Broken authentication or authorization controls
+    - Injection vulnerabilities (SQL or command injection)
+    - Exposure of sensitive data in API responses
+    - Insecure CORS or HTTP method configurations
 
 !!! note
     Already using ZAP? [Upload your results via the API.](../codacy-api/examples/uploading-dast-results.md)
