@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to trigger DAST/App using the API.">
       
       
-        <meta http-equiv="last-modified" content="2025-06-30 10:16:40">
+        <meta http-equiv="last-modified" content="2025-07-01 09:36:51">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/triggering-dast-scans/">
@@ -4663,6 +4663,18 @@
 <h2 id="creating-targets">Creating targets<a class="headerlink" href="#creating-targets" title="Permanent link">#</a></h2>
 <p>Before the automation process itself, you need to create a target. Targets are individual configurations that define what Codacy will scan, including the target URL, its type (API or web application), and other type-dependent fields like OpenAPI specification and optional authentication details for API targets.</p>
 <p>Targets only need to be created once. Note that <strong>targets are immutable</strong> — if you need to change the URL, definition, or authentication, you'll need to delete the target and create a new one.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Do not run API scans on production enviroments as our API scanners may cause potential downtime.</strong></p>
+<p>Our DAST API scanner performs active security testing by sending a large number of requests to your application. When using authenticated API scanning, this activity can be even more intensive, as ZAP explores and probes more of your API surface.</p>
+<p>Depending on how your target environment is configured, this may:</p>
+<ul>
+<li>Trigger rate limiting or throttling</li>
+<li>Appear as a high volume of traffic, similar to a load test</li>
+<li>Lead to incomplete scan results if key endpoints are blocked or limited</li>
+</ul>
+<p>We recommend running scans in a <strong>test or staging environment</strong>, or coordinating with your infrastructure team to ensure that your environment can safely handle the load.</p>
+</div>
 <p>To create a target, use the following API request:</p>
 <div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.codacy.com/api/v3/organizations/<span class="o">{</span>GIT_PROVIDER<span class="o">}</span>/<span class="o">{</span>ORGANIZATION<span class="o">}</span>/dast/targets<span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Content-Type: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
@@ -4904,7 +4916,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 30, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 1, 2025</span>
     
   </small>
 </div>

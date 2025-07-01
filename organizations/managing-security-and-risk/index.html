@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2025-07-01 09:13:58">
+        <meta http-equiv="last-modified" content="2025-07-01 09:36:51">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -1204,13 +1204,6 @@
         <li class="md-nav__item">
   <a href="#app-scanning" class="md-nav__link">
     App scanning
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#creating-an-app-scanning-target" class="md-nav__link">
-    Creating an App Scanning target
   </a>
   
 </li>
@@ -5365,19 +5358,27 @@ Note that some issues just don't have a security category. These issues will rem
 <p class="admonition-title">Note</p>
 <p>Already using ZAP? <a href="../../codacy-api/examples/uploading-dast-results/">Upload your results via the API.</a></p>
 </div>
-<h2 id="creating-an-app-scanning-target">Creating an App Scanning target<a class="headerlink" href="#creating-an-app-scanning-target" title="Permanent link">#</a></h2>
+<h3 id="creating-an-app-scanning-target">Creating an App Scanning target<a class="headerlink" href="#creating-an-app-scanning-target" title="Permanent link">#</a></h3>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Do not run API scans on production enviroments as our API scanners may cause potential downtime.</strong></p>
+<p>Our DAST API scanner performs active security testing by sending a large number of requests to your application. When using authenticated API scanning, this activity can be even more intensive, as ZAP explores and probes more of your API surface.</p>
+<p>Depending on how your target environment is configured, this may:</p>
+<ul>
+<li>Trigger rate limiting or throttling</li>
+<li>Appear as a high volume of traffic, similar to a load test</li>
+<li>Lead to incomplete scan results if key endpoints are blocked or limited</li>
+</ul>
+<p>We recommend running scans in a <strong>test or staging environment</strong>, or coordinating with your infrastructure team to ensure that your environment can safely handle the load.</p>
+</div>
 <p>When creating a scan target, you'll be able to choose between a Web App or an API. Configuring a Web App will only require a target URL, while APIs will have other requirements:</p>
 <ul>
 <li><strong>REST APIs</strong>, which require a publicly accessible OpenAPI specification URL.</li>
 <li><strong>GraphQL APIs</strong>, where the schema is inferred from the default path <code>{targetUrl}/graphql</code>.</li>
 </ul>
 <p>API targets optionally support <strong>header-based authentication</strong>. As you create a target, keep in mind you may not be able to view or change certain fields later (to change your configurations you may need to delete and create a new target).</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>Avoid running API scans on production enviroments as our API scanners may cause potential downtime.</p>
-</div>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
 <p>If exposing your API specification isn't feasible for your team, let us know via support or your account representative.</p>
 </div>
 <h3 id="how-to-scan-a-target">How to scan a target<a class="headerlink" href="#how-to-scan-a-target" title="Permanent link">#</a></h3>
