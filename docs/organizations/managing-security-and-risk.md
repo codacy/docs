@@ -587,7 +587,10 @@ Codacy supports two types of scanning:
 !!! note
     Already using ZAP? [Upload your results via the API.](../codacy-api/examples/uploading-dast-results.md)
 
-## Creating an App Scanning target
+### Creating an App Scanning target
+
+!!! important
+    **Do not run API scans on production enviroments** as our API scanners may cause potential downtime.
 
 When creating a scan target, you'll be able to choose between a Web App or an API. Configuring a Web App will only require a target URL, while APIs will have other requirements:
 
@@ -595,9 +598,6 @@ When creating a scan target, you'll be able to choose between a Web App or an AP
 - **GraphQL APIs**, where the schema is inferred from the default path `{targetUrl}/graphql`.
 
 API targets optionally support **header-based authentication**. As you create a target, keep in mind you may not be able to view or change certain fields later (to change your configurations you may need to delete and create a new target).
-
-!!! important
-    Avoid running API scans on production enviroments as our API scanners may cause potential downtime.
 
 !!! important
     If exposing your API specification isn't feasible for your team, let us know via support or your account representative.
