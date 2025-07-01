@@ -19,6 +19,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 2025
 
 
+-   [Adding SQLFluff and Reek as new supported tools June, 2025](cloud/cloud-2025-06-adding-sqlfluff-reek.md)
 -   [Cloud May 2025](cloud/cloud-2025-05.md)
 -   [Cloud April 2025](cloud/cloud-2025-04.md)
 -   [Cloud March 2025](cloud/cloud-2025-03.md)
