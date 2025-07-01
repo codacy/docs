@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2025-06-30 10:16:40">
+        <meta http-equiv="last-modified" content="2025-07-01 09:13:58">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -5342,20 +5342,24 @@ Note that some issues just don't have a security category. These issues will rem
 <p>App scanning analyzes applications in production or production-like environments to help identify vulnerabilities such as misconfigurations, insecure authentication, or other security issues that occur in real-world usage. Because it doesn't rely on access to source code, it’s language-agnostic and useful for validating security across your entire stack. </p>
 <p>Codacy supports two types of scanning:</p>
 <ul>
-<li><strong>Web application scans</strong> perform baseline, non-intrusive analysis. These scans are safe for production environments and detect surface-level issues such as:</li>
+<li>
+<p><strong>Web application scans</strong> perform baseline, non-intrusive analysis. These scans are safe for production environments and detect surface-level issues such as:</p>
+<ul>
 <li>Missing security headers</li>
 <li>Insecure cookie configurations</li>
 <li>Information disclosure through HTTP response headers</li>
-<li>
-<p>Exposure of sensitive or misconfigured files</p>
+<li>Exposure of sensitive or misconfigured files</li>
+</ul>
 </li>
 <li>
 <p><strong>API scans</strong> simulate real-world attacks against your API endpoints. These are more aggressive and best suited for <strong>non-production environments</strong>, such as staging or development. API scans provide deeper insights into runtime behavior and potential vulnerabilities, such as:</p>
-</li>
+<ul>
 <li>Broken authentication or authorization controls</li>
 <li>Injection vulnerabilities (SQL or command injection)</li>
 <li>Exposure of sensitive data in API responses</li>
 <li>Insecure CORS or HTTP method configurations</li>
+</ul>
+</li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -5562,7 +5566,7 @@ allowfullscreen>
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 30, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 1, 2025</span>
     
   </small>
 </div>
