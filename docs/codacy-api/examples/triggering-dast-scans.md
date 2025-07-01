@@ -19,7 +19,7 @@ Before the automation process itself, you need to create a target. Targets are i
 Targets only need to be created once. Note that **targets are immutable** — if you need to change the URL, definition, or authentication, you'll need to delete the target and create a new one.
 
 !!! important
-    **Do not run API scans on production enviroments** as our API scanners may cause potential downtime. [Learn more](../../organizations/managing-security-and-risk.md#avoid-running-api-scans-on-production-environments)
+    **Do not run API scans on production enviroments** as our API scanners may cause potential downtime. [Learn more](../../organizations/managing-security-and-risk.md)
 
 To create a target, use the following API request:
 
