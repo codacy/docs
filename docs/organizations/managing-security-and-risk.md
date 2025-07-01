@@ -587,7 +587,20 @@ Codacy supports two types of scanning:
 !!! note
     Already using ZAP? [Upload your results via the API.](../codacy-api/examples/uploading-dast-results.md)
 
-## Creating an App Scanning target
+### Creating an App Scanning target
+
+!!! important
+    **Do not run API scans on production enviroments as our API scanners may cause potential downtime.**
+
+    Our DAST API scanner performs active security testing by sending a large number of requests to your application. When using authenticated API scanning, this activity can be even more intensive, as ZAP explores and probes more of your API surface.
+
+    Depending on how your target environment is configured, this may:
+
+    - Trigger rate limiting or throttling
+    - Appear as a high volume of traffic, similar to a load test
+    - Lead to incomplete scan results if key endpoints are blocked or limited
+
+    We recommend running scans in a **test or staging environment**, or coordinating with your infrastructure team to ensure that your environment can safely handle the load.
 
 When creating a scan target, you'll be able to choose between a Web App or an API. Configuring a Web App will only require a target URL, while APIs will have other requirements:
 
@@ -596,10 +609,7 @@ When creating a scan target, you'll be able to choose between a Web App or an AP
 
 API targets optionally support **header-based authentication**. As you create a target, keep in mind you may not be able to view or change certain fields later (to change your configurations you may need to delete and create a new target).
 
-!!! important
-    Avoid running API scans on production enviroments as our API scanners may cause potential downtime.
-
-!!! important
+!!! note
     If exposing your API specification isn't feasible for your team, let us know via support or your account representative.
 
 

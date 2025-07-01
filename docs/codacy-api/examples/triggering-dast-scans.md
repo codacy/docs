@@ -18,6 +18,19 @@ Before the automation process itself, you need to create a target. Targets are i
 
 Targets only need to be created once. Note that **targets are immutable** — if you need to change the URL, definition, or authentication, you'll need to delete the target and create a new one.
 
+!!! important
+    **Do not run API scans on production enviroments as our API scanners may cause potential downtime.**
+
+    Our DAST API scanner performs active security testing by sending a large number of requests to your application. When using authenticated API scanning, this activity can be even more intensive, as ZAP explores and probes more of your API surface.
+
+    Depending on how your target environment is configured, this may:
+
+    - Trigger rate limiting or throttling
+    - Appear as a high volume of traffic, similar to a load test
+    - Lead to incomplete scan results if key endpoints are blocked or limited
+
+    We recommend running scans in a **test or staging environment**, or coordinating with your infrastructure team to ensure that your environment can safely handle the load.
+
 To create a target, use the following API request:
 
 ```bash
