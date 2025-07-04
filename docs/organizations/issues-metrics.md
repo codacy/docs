@@ -4,7 +4,7 @@ description: The organization's Issues dashboard provides an overview of all the
 
 # Issues metrics
 
-The **Issues Metrics** dashboard provides an overview of all the issues detected in the repositories belonging to your Git provider organization. Here, you can navigate through the issues detected in your repositories and filter them by severity and category. You can also filter the issues by selecting specific repositories or using [the segments that you have set up](segments.md).
+The **Issues metrics** dashboard provides an overview of all the issues detected in the repositories belonging to your Git provider organization. Here, you can navigate through the issues detected in your repositories and filter them by severity and category. You can also filter the issues by selecting specific repositories or using [the segments that you have set up](segments.md).
 
 ![Open issues dashboard](images/open-issues-dashboard.png)
 
