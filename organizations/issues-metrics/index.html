@@ -11,7 +11,7 @@
         <meta name="description" content="The organization's Issues dashboard provides an overview of all the issues detected in the repositories belonging to your Git provider organization.">
       
       
-        <meta http-equiv="last-modified" content="2025-02-07 11:02:25">
+        <meta http-equiv="last-modified" content="2025-07-07 08:31:07">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/issues-metrics/">
@@ -27,7 +27,7 @@
     
     
       
-        <title>Issues Metrics - Codacy docs</title>
+        <title>Issues metrics - Codacy docs</title>
       
     
     
@@ -912,10 +912,12 @@
       
       
 
+  
 
-  <li class="md-nav__item md-nav__item--nested">
+
+  <li class="md-nav__item md-nav__item--active md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6" type="checkbox" id="nav-6" checked>
     
     <label class="md-nav__link" for="nav-6">
       Organizations
@@ -985,6 +987,85 @@
           
           
 
+  
+
+
+  <li class="md-nav__item md-nav__item--active">
+    
+    <input class="md-nav__toggle md-toggle" data-md-toggle="toc" type="checkbox" id="__toc">
+    
+      
+    
+    
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Issues metrics
+      </label>
+    
+    <a href="./" title="Issues metrics" class="md-nav__link md-nav__link--active">
+      Issues metrics
+    </a>
+    
+      
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+      </span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#open-issues-by-severity" class="md-nav__link">
+    Open Issues by Severity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-issues-by-category" class="md-nav__link">
+    Open Issues by Category
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#open-issues-evolution" class="md-nav__link">
+    Open Issues Evolution
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#issues-activity" class="md-nav__link">
+    Issues Activity
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#repositories-with-the-most-issues" class="md-nav__link">
+    Repositories with the Most Issues
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
 
   <li class="md-nav__item">
     <a href="../using-gate-policies/" title="Using gate policies" class="md-nav__link">
@@ -1012,16 +1093,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-7" type="checkbox" id="nav-6-7">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-6-8" type="checkbox" id="nav-6-8">
     
-    <label class="md-nav__link" for="nav-6-7">
+    <label class="md-nav__link" for="nav-6-8">
       Managing integrations
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Managing integrations" data-md-level="2">
-      <label class="md-nav__title" for="nav-6-7">
+      <label class="md-nav__title" for="nav-6-8">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -4603,8 +4684,8 @@
                   
                 
                 
-                <h1 id="issues-metrics">Issues Metrics<a class="headerlink" href="#issues-metrics" title="Permanent link">#</a></h1>
-<p>The <strong>Issues Metrics</strong> dashboard provides an overview of all the issues detected in the repositories belonging to your Git provider organization. Here, you can navigate through the issues detected in your repositories and filter them by severity and category. You can also filter the issues by selecting specific repositories or using <a href="../segments/">the segments that you have set up</a>.</p>
+                <h1 id="issues-metrics">Issues metrics<a class="headerlink" href="#issues-metrics" title="Permanent link">#</a></h1>
+<p>The <strong>Issues metrics</strong> dashboard provides an overview of all the issues detected in the repositories belonging to your Git provider organization. Here, you can navigate through the issues detected in your repositories and filter them by severity and category. You can also filter the issues by selecting specific repositories or using <a href="../segments/">the segments that you have set up</a>.</p>
 <p><img alt="Open issues dashboard" src="../images/open-issues-dashboard.png" /></p>
 <p>To access the Issues Metrics dashboard, select an organization from the top navigation bar and click on the <strong>Open Issues</strong> tab at the top of the page.</p>
 <p>By default, the Issues Metrics dashboard displays metrics as the absolute number of issues. You can change the display to <strong>Issues per 1,000 lines of code</strong> by clicking on the ellipsis icon at the top right of the Open Issues tab. From here, you can also customize the period against which you want to compare the issues detected in your repositories. When available, comparisons against the previously selected period will be shown next to each value, and you can hover over the comparison to see the variation.</p>
@@ -4684,7 +4765,7 @@
           <br>
         </div>
         <p>
-          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Issues Metrics%22">create a more detailed issue on our GitHub repository</a>.
+          Alternatively, you can <a target="_blank" href="https://github.com/codacy/docs/issues/new?labels=user%20feedback&template=documentation-feedback.md&title=Feedback%20on%20%22Issues metrics%22">create a more detailed issue on our GitHub repository</a>.
         </p>
       </div>
     </div>
@@ -4700,7 +4781,7 @@
     </p>
     
     <p>
-      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Issues Metrics">support@codacy.com</a>.
+      If you have a question or need help please contact <a href="mailto:support@codacy.com?subject=Question%20regarding%20Issues metrics">support@codacy.com</a>.
     </p>
   </div>
   <script>
@@ -4797,7 +4878,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 7, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 7, 2025</span>
     
   </small>
 </div>
