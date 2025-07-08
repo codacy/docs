@@ -608,6 +608,7 @@ nav:
           - organizations/organization-overview.md
           - organizations/managing-repositories.md
           - organizations/segments.md
+          - organizations/issues-metrics.md
           - organizations/using-gate-policies.md
           - organizations/using-coding-standards.md
           - Managing integrations:
