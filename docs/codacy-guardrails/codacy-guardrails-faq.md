@@ -68,3 +68,14 @@ Guardrails is supported on MacOS, Linux, and Windows (via [WSL](https://learn.mi
 Codacy Guardrails is designed to be installed from our IDE extension for VS Code, Cursor and Windsurf. but as long as you have an AI code generator that's compatible with the MCP protocol you can also add Guardrails into your MCP configuration manually.
 
 Without an AI coding agent, you instead need to use the Codacy IDE extension without the MCP Server.
+
+## How can I install a specific version of the IDE extension?
+1. Open the Extensions tab
+2. Select `Codacy`
+3. Click on the down arrow on the right of the Uninstall button
+4. Select `Install specific version...`
+   ![install specific version](images/install-specific-version.png)
+5. Select the version you want on the top search bar
+6. Click on `Restart Extensions` when that button appears
+
+Keep in mind that the IDE extension is under active development, so be sure to check the latest versions.
