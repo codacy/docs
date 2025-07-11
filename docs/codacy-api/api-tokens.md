@@ -29,12 +29,20 @@ You can create new account API tokens programmatically [using the Codacy API](ex
 
 1.  Click the button **Create API token** under **Account API tokens**.
 
-    !!! tip
-        You can create multiple account API tokens. This can be useful to have a more flexible control by revoking only a specific token.
+1. Select an expiration date from the modal options. You can select between a range of 7 days to 90 days, create a custom expiration date, or create a token with no expiration.
 
-    ![Creating an account API token](images/codacy-api-tokens-account.png)
+![Creating an account API token](images/codacy-api-tokens-account.png)
 
-To revoke an account API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
+![Creating an account API token modal](images/codacy-api-tokens-account-modal.png)
+
+!!! tip
+    You can create multiple account API tokens. This can be useful to have a more flexible control by revoking only a specific token.
+
+When you have tokens created, you can view them inside the tokens table. By hovering a token, you are able to copy its value.
+
+![Creating an account API token modal](images/codacy-api-tokens-account-table.png)
+
+To delete an account API token, click the trash icon in the Actions column of the table. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply `{"error":"not found"}`.
 
 ## Generating and revoking repository API tokens {: id="repository-api-tokens"}
 
