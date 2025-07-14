@@ -11,7 +11,7 @@
         <meta name="description" content="Create an account API token to authorize access to all the repositories that you have access to, or a repository API token to authorize access only to a specific repository.">
       
       
-        <meta http-equiv="last-modified" content="2024-05-08 16:36:15">
+        <meta http-equiv="last-modified" content="2025-07-14 09:04:18">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/api-tokens/">
@@ -4709,14 +4709,20 @@
 </li>
 <li>
 <p>Click the button <strong>Create API token</strong> under <strong>Account API tokens</strong>.</p>
+</li>
+<li>
+<p>Select an expiration date from the modal options. You can select between a range of 7 days to 90 days, create a custom expiration date, or create a token with no expiration.</p>
+</li>
+</ol>
+<p><img alt="Creating an account API token" src="../images/codacy-api-tokens-account.png" /></p>
+<p><img alt="Creating an account API token modal" src="../images/codacy-api-tokens-account-modal.png" /></p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
 <p>You can create multiple account API tokens. This can be useful to have a more flexible control by revoking only a specific token.</p>
 </div>
-<p><img alt="Creating an account API token" src="../images/codacy-api-tokens-account.png" /></p>
-</li>
-</ol>
-<p>To revoke an account API token, click the "X" next to the token. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
+<p>When you have tokens created, you can view them inside the tokens table. By hovering a token, you are able to copy its value.</p>
+<p><img alt="Creating an account API token modal" src="../images/codacy-api-tokens-account-table.png" /></p>
+<p>To delete an account API token, click the trash icon in the Actions column of the table. After this, all applications or services using that token to access the Codacy API will fail to authenticate and will receive the reply <code>{"error":"not found"}</code>.</p>
 <h2 id="repository-api-tokens">Generating and revoking repository API tokens<a class="headerlink" href="#repository-api-tokens" title="Permanent link">#</a></h2>
 <p>Repository API tokens are defined on <strong>individual repositories</strong>. Each repository API token only authorizes access to the corresponding repository.</p>
 <p>You can create new repository API tokens programmatically <a href="../examples/creating-repository-api-tokens-programmatically/">using the Codacy API</a> or using the Codacy UI:</p>
@@ -4896,7 +4902,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 8, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 14, 2025</span>
     
   </small>
 </div>
