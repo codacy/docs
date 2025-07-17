@@ -65,7 +65,7 @@ Check our [Team and Organization plans](https://www.codacy.com/pricing) to unloc
 Guardrails is supported on MacOS, Linux, and Windows (via [WSL](https://learn.microsoft.com/en-us/windows/wsl/install))
 
 ## Can I use Guardrails without an AI copilot?
-Codacy Guardrails is designed to be installed from our IDE extension for VS Code, Cursor and Windsurf. but as long as you have an AI code generator that's compatible with the MCP protocol you can also add Guardrails into your MCP configuration manually.
+Codacy Guardrails is designed to be installed from our IDE extension for VS Code, Cursor and Windsurf, but as long as you have an AI code generator that's compatible with the MCP protocol you can also add Guardrails into your MCP configuration manually.
 
 Without an AI coding agent, you instead need to use the Codacy IDE extension without the MCP Server.
 
