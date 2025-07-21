@@ -11,7 +11,7 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool.">
       
       
-        <meta http-equiv="last-modified" content="2025-05-29 10:20:34">
+        <meta http-equiv="last-modified" content="2025-07-21 08:58:11">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-guardrails/codacy-guardrails-faq/">
@@ -505,6 +505,13 @@
         <li class="md-nav__item">
   <a href="#can-i-use-guardrails-without-an-ai-copilot" class="md-nav__link">
     Can I use Guardrails without an AI copilot?
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#how-can-i-install-a-specific-version-of-the-ide-extension" class="md-nav__link">
+    How can I install a specific version of the IDE extension?
   </a>
   
 </li>
@@ -4792,8 +4799,18 @@
 <h2 id="does-guardrails-work-with-all-os">Does Guardrails work with all OS?<a class="headerlink" href="#does-guardrails-work-with-all-os" title="Permanent link">#</a></h2>
 <p>Guardrails is supported on MacOS, Linux, and Windows (via <a href="https://learn.microsoft.com/en-us/windows/wsl/install">WSL</a>)</p>
 <h2 id="can-i-use-guardrails-without-an-ai-copilot">Can I use Guardrails without an AI copilot?<a class="headerlink" href="#can-i-use-guardrails-without-an-ai-copilot" title="Permanent link">#</a></h2>
-<p>Codacy Guardrails is designed to be installed from our IDE extension for VS Code, Cursor and Windsurf. but as long as you have an AI code generator that's compatible with the MCP protocol you can also add Guardrails into your MCP configuration manually.</p>
-<p>Without an AI coding agent, you instead need to use the Codacy IDE extension without the MCP Server.</p>
+<p>Codacy Guardrails is designed to be installed from our IDE extension for VS Code, Cursor and Windsurf, but as long as you have an AI code generator that's compatible with the MCP protocol you can also add Guardrails into your MCP configuration manually.</p>
+<p>Without an AI coding agent, you can still use the IDE extension for local analysis and PR check information.</p>
+<h2 id="how-can-i-install-a-specific-version-of-the-ide-extension">How can I install a specific version of the IDE extension?<a class="headerlink" href="#how-can-i-install-a-specific-version-of-the-ide-extension" title="Permanent link">#</a></h2>
+<p>If you wish to continue using a previous version a little longer, you can do so by:
+1. Open the Extensions tab
+2. Select <code>Codacy</code>
+3. Click on the down arrow on the right of the Uninstall button
+4. Select <code>Install specific version...</code>
+   <img alt="install specific version" src="../images/install-specific-version.png" />
+5. Select the version you want on the top search bar
+6. Click on <code>Restart Extensions</code> when that button appears</p>
+<p>Keep in mind that the IDE extension is under active development, so be sure to check for updates regularly. Reverting to the latest version is as simple as clicking on <strong>Update</strong>.</p>
               
               
                 
@@ -4950,7 +4967,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">May 29, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 21, 2025</span>
     
   </small>
 </div>
