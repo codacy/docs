@@ -67,7 +67,7 @@ Guardrails is supported on MacOS, Linux, and Windows (via [WSL](https://learn.mi
 ## Can I use Guardrails without an AI copilot?
 Codacy Guardrails is designed to be installed from our IDE extension for VS Code, Cursor and Windsurf, but as long as you have an AI code generator that's compatible with the MCP protocol you can also add Guardrails into your MCP configuration manually.
 
-Without an AI coding agent, you instead need to use the Codacy IDE extension without the MCP Server.
+Without an AI coding agent, you can still use the IDE extension for local analysis and PR check information.
 
 ## How can I install a specific version of the IDE extension?
 1. Open the Extensions tab
