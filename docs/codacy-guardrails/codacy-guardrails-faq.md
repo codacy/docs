@@ -70,6 +70,8 @@ Codacy Guardrails is designed to be installed from our IDE extension for VS Code
 Without an AI coding agent, you can still use the IDE extension for local analysis and PR check information.
 
 ## How can I install a specific version of the IDE extension?
+
+If you wish to continue using a previous version a little longer, you can do so by:
 1. Open the Extensions tab
 2. Select `Codacy`
 3. Click on the down arrow on the right of the Uninstall button
