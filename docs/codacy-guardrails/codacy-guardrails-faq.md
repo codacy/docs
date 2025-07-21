@@ -78,4 +78,4 @@ Without an AI coding agent, you can still use the IDE extension for local analys
 5. Select the version you want on the top search bar
 6. Click on `Restart Extensions` when that button appears
 
-Keep in mind that the IDE extension is under active development, so be sure to check the latest versions.
+Keep in mind that the IDE extension is under active development, so be sure to check for updates regularly. Reverting to the latest version is as simple as clicking on **Update**.
