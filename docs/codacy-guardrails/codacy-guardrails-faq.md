@@ -72,12 +72,21 @@ Without an AI coding agent, you can still use the IDE extension for local analys
 ## How can I install a specific version of the IDE extension?
 
 If you wish to continue using a previous version a little longer, you can do so by:
+
+
 1. Open the Extensions tab
+
 2. Select `Codacy`
+
 3. Click on the down arrow on the right of the Uninstall button
+ 
 4. Select `Install specific version...`
-   ![install specific version](images/install-specific-version.png)
+
+    ![install specific version](images/install-specific-version.png)
+
 5. Select the version you want on the top search bar
+
 6. Click on `Restart Extensions` when that button appears
 
-Keep in mind that the IDE extension is under active development, so be sure to check for updates regularly. Reverting to the latest version is as simple as clicking on **Update**.
+Keep in mind that the IDE extension is under active development, so be sure to check for updates regularly. 
+To revert to the latest version, click on `Update`.
