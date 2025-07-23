@@ -82,7 +82,7 @@ If you wish to continue using a previous version a little longer, you can do so 
  
 4. Select `Install specific version...`
 
-    ![install specific version](images/install-specific-version.png)
+   ![install specific version](images/install-specific-version.png)
 
 5. Select the version you want on the top search bar
 
