@@ -461,10 +461,7 @@ The table below lists all languages that Codacy supports and the corresponding t
         <a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a>
         <a href="#different-tools"><sup>10</sup></a>
       </td>
-      <td>
-        <a href="https://github.com/rubik/radon">Radon</a>
-        <a href="https://github.com/terryyin/lizard">Lizard</a>
-      </td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)</td> 
     </tr>
     <tr>
