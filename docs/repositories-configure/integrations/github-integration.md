@@ -54,7 +54,7 @@ When there are new coverage results, Codacy updates the last coverage summary co
 ![Coverage summary on GitHub](images/github-integration-coverage-summary.png)
 
 !!! note
-    This feature is only supported on GitHub Cloud.
+    This feature is only supported on GitHub and GitLab Cloud.
 
 ### Suggested fixes {: id="suggest-fixes"}
 

@@ -19,6 +19,11 @@ For product updates that are in progress or planned [visit the Codacy public roa
 2025
 
 
+-   [Cloud June 2025](cloud/cloud-2025-06.md)
+-   [Adding SQLFluff and Reek as new supported tools June, 2025](cloud/cloud-2025-06-adding-sqlfluff-reek.md)
+-   [Cloud May 2025](cloud/cloud-2025-05.md)
+-   [Cloud April 2025](cloud/cloud-2025-04.md)
+-   [Cloud March 2025](cloud/cloud-2025-03.md)
 -   [Adding Ruff and Lizard as new supported tools February, 2025](cloud/cloud-2025-02-adding-ruff-lizard.md)
 -   [Cloud February 2025](cloud/cloud-2025-02.md)
 -   [Cloud January 2025](cloud/cloud-2025-01.md)
@@ -114,6 +119,10 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Cloud July 23, 2018](cloud/cloud-2018-07-23.md)
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
+
+v15
+
+-   [v15.0.0](self-hosted/self-hosted-v15.0.0.md) (April 10, 2025)
 
 v14
 
