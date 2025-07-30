@@ -137,7 +137,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>.deps.json</code> (.Net), <code>packages.lock.json</code> (NuGet) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -235,7 +235,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>go.mod</code></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -275,7 +275,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="https://pmd.github.io/">PMD</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -289,7 +289,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package-lock.json</code> (npm)</td>
     </tr>
     <tr>
@@ -399,7 +399,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
       <td><a href="https://github.com/sebastianbergmann/phpcpd">PHPCPD</a></td>
-      <td><a href="https://github.com/pdepend/pdepend">PHP Depend</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
     </tr>
     <tr>
@@ -481,7 +481,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Gemfile.lock</code> (Bundler) </td>
       <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
-      <td><a href="https://github.com/rubocop/rubocop">RuboCop</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -519,8 +519,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>build.sbt.lock</code> (sbt) <a href="#scala-dependencies"><sup>9</sup></a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
-          <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -559,7 +558,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#complexity-limitations"><sup>6</sup></a> <a href="#swiftlint-complexity"><sup>8</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -614,7 +613,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package-lock.json</code> (npm)</td>
     </tr>
     <tr>
