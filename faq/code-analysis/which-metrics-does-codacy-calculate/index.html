@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy scans your code for issues and calculates code complexity, duplication, and coverage metrics. Besides this, Codacy also calculates a grade for your repository and files based on all calculated code quality metrics.">
       
       
-        <meta http-equiv="last-modified" content="2025-03-31 13:32:31">
+        <meta http-equiv="last-modified" content="2025-07-31 15:17:04">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/which-metrics-does-codacy-calculate/">
@@ -4770,7 +4770,7 @@
 <ul>
 <li><strong>Code style:</strong> Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks</li>
 <li><strong>Error prone:</strong> Code that may hide bugs and language keywords that should be used with caution, such as the operator <code>==</code> in JavaScript or <code>Option.get</code> in Scala</li>
-<li><strong>Code complexity:</strong> High complexity methods and classes that should be refactored</li>
+<li><strong>Code complexity:</strong> High complexity files that should be refactored</li>
 <li><strong>Performance:</strong> Code that can have performance problems</li>
 <li><strong>Compatibility:</strong> Mainly for frontend code, compatibility problems across different browser versions</li>
 <li><strong>Unused code:</strong> Unused variables and methods, code that can't be reached</li>
@@ -4834,11 +4834,11 @@
 <tbody>
 <tr>
 <td><a href="../../../repositories/commits/">Commit detail page</a><br/><a href="../../../repositories/pull-requests/">Pull request detail page</a><br/><a href="../../../account/emails/#managing-your-email-notifications">Email notifications</a></td>
-<td>Variation of the complexity value introduced by the commit or pull request</td>
+<td>The complexity variation introduced by a commit or pull request is defined as the sum of the changes in code complexity for each file modified in the commit or pull request</td>
 </tr>
 <tr>
 <td><a href="../../../repositories/files/">Files page</a></td>
-<td>Complexity value of each file</td>
+<td>The file complexity value is the sum of the complexity values of all methods defined within the file</td>
 </tr>
 <tr>
 <td><a href="../../../repositories/repository-dashboard/">Repository Dashboard</a></td>
@@ -5121,7 +5121,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 31, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 31, 2025</span>
     
   </small>
 </div>
