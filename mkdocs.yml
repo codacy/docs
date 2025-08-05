@@ -680,6 +680,7 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2025:
+                      - release-notes/cloud/cloud-2025-07.md
                       - release-notes/cloud/cloud-2025-06.md
                       - release-notes/cloud/cloud-2025-06-adding-sqlfluff-reek.md
                       - release-notes/cloud/cloud-2025-05.md
