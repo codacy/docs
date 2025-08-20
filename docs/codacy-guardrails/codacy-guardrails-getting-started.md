@@ -43,6 +43,7 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 - PMD
 - dartanalyzer
 - [Lizard](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard)
+- Revive
 
 ## How to install - Quick Guide {: id="how-to-install-quick-guide"}
 
