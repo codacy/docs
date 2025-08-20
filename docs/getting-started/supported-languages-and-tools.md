@@ -137,7 +137,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>.deps.json</code> (.Net), <code>packages.lock.json</code> (NuGet) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -235,7 +235,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>go.mod</code></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/fzipp/gocyclo">Gocyclo</a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -275,7 +275,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="https://pmd.github.io/">PMD</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -289,8 +289,8 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package-lock.json</code> (npm)</td>
     </tr>
     <tr>
       <td>JSON</td>
@@ -399,7 +399,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
       <td><a href="https://github.com/sebastianbergmann/phpcpd">PHPCPD</a></td>
-      <td><a href="https://github.com/pdepend/pdepend">PHP Depend</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
     </tr>
     <tr>
@@ -438,33 +438,47 @@ The table below lists all languages that Codacy supports and the corresponding t
     <tr>
       <td>Python</td>
       <td>.py</td>
-      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
-          <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
-          <a href="https://github.com/astral-sh/ruff">Ruff</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
-      <td><a href="https://github.com/PyCQA/bandit">Bandit</a>,
-          <a href="https://github.com/landscapeio/prospector">Prospector</a>,
-          <a href="https://semgrep.dev/">Semgrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry)</td>
-      <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/rubik/radon">Radon</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
+      <td>
+        <a href="https://github.com/PyCQA/bandit">Bandit</a>,
+        <a href="https://github.com/landscapeio/prospector">Prospector</a>,
+        <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
+        <a href="https://github.com/astral-sh/ruff">Ruff</a>,
+        <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>
+      </td>
+      <td>
+        <a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a>
+      </td>
+      <td>
+        <a href="https://github.com/PyCQA/bandit">Bandit</a>,
+        <a href="https://github.com/landscapeio/prospector">Prospector</a>,
+        <a href="https://semgrep.dev/">Semgrep</a>,
+        <a href="https://trivy.dev">Trivy</a>
+      </td>
+      <td>
+        <a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)
+      </td>
+      <td>
+        <a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a>
+        <a href="#different-tools"><sup>10</sup></a>
+      </td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)</td> 
     </tr>
     <tr>
       <td>Ruby</td>
       <td>.rb, .gemspec, .podspec, .jbuilder, .rake, .opal</td>
-      <td><a href="https://brakemanscanner.org/">Brakeman</a> <a href="#semgrep-brakeman"><sup>7</sup></a>,
+      <td><a href="https://github.com/troessner/reek">Reek</a>,
+          <a href="https://brakemanscanner.org/">Brakeman</a>
+          <a href="#semgrep-brakeman"><sup>7</sup></a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>
+      </td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Gemfile.lock</code> (Bundler) </td>
       <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
-      <td><a href="https://github.com/rubocop/rubocop">RuboCop</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -502,8 +516,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>build.sbt.lock</code> (sbt) <a href="#scala-dependencies"><sup>9</sup></a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="http://www.scalastyle.org/">Scalastyle</a>,
-          <a href="https://github.com/scala/scala">Scala 2 compiler and standard library</a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
     <tr>
@@ -542,7 +555,24 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
-      <td><a href="https://github.com/realm/SwiftLint">SwiftLint</a><a href="#complexity-limitations"><sup>6</sup></a> <a href="#swiftlint-complexity"><sup>8</sup></a> <a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td>-</td>
+    </tr>
+    <tr>
+      <td>SQL</td>
+      <td>.sql</td>
+      <td>
+        <a href="https://pmd.github.io/">PMD</a>,
+        <a href="https://github.com/purcell/sqlint">SQLint</a>,
+        <a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a>,
+        <a href="https://github.com/sqlfluff/sqlfluff">SQLFluff</a>,
+        <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>
+      </td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
+      <td>-</td>
       <td>-</td>
     </tr>
     <tr>
@@ -580,8 +610,8 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
-      <td><a href="https://eslint.org/">ESLint</a> <a href="#complexity-limitations"><sup>6</sup></a> <a href="#different-tools"><sup>10</sup></a>  <a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td>-</td>
+      <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package-lock.json</code> (npm)</td>
     </tr>
     <tr>
       <td>Unity</td>
@@ -867,7 +897,7 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/). This tool doesn't support [custom file extensions](../repositories-configure/languages.md#configuring-file-extensions).  
 <sup><span id="yaml-only">2</span></sup>: Currently, only YAML file scanning is supported on this platform.  
 <sup><span id="client-side">3</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
-<sup><span id="cppcheck-misra">4</span></sup>: Currently, Cppcheck only supports [checking the MISRA guidelines for C](https://cppcheck.sourceforge.io/misra.php).  
+<sup><span id="cppcheck-misra">4</span></sup>: Currently, Cppcheck only supports the MISRA guidelines for C.  
 <sup><span id="dart-limitations">5</span></sup>: Currently, Codacy only supports including the packages [lints](https://pub.dev/packages/lints) and [<span class="skip-vale">flutter_lints</span>](https://pub.dev/packages/flutter_lints) on dartanalyzer configuration files.  
 <sup><span id="complexity-limitations">6</span></sup>: Doesn't calculate [the number of methods and the complexity per method](../repositories/files.md#file-details) for each file.  
 <sup><span id="semgrep-brakeman">7</span></sup>: Due to licensing limitations, Codacy doesn't support the latest version of Brakeman. To analyze your Ruby code for the latest security vulnerabilities, use [Semgrep](https://semgrep.dev/), which provides comprehensive and up-to-date security scanning.  

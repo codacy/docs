@@ -271,6 +271,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td><code>findbugs.xml</code>, <code>findbugs-includes.xml</code>, <code>findbugs-excludes.xml</code>, <code>spotbugs.xml</code>, <code>spotbugs-includes.xml</code>, <code>spotbugs-excludes.xml</code></td>
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
   </tr>
+    <tr>
+    <td>SQLFluff</td>
+    <td>SQL</td>
+    <td><code>setup.cfg</code>, <code>tox.ini</code>, <code>pep8.ini</code>, <code>.sqlfluff</code>, <code>pyproject.toml</code></td>
+    <td>Supports configuration file in directories other than root</td>
+  </tr>
   <tr>
     <td>Stylelint</td>
     <td>CSS, LESS, SASS</td>
