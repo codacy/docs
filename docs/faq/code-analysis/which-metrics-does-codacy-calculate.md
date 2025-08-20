@@ -8,11 +8,13 @@ Codacy performs static code analysis and calculates code duplication, code compl
 
 The following sections describe how Codacy calculates each supported metric and where you can see each metric on the Codacy UI:
 
--   [Grade](#grade)
--   [Issues](#issues)
--   [Complexity](#complexity)
--   [Duplication](#duplication)
--   [Code coverage](#code-coverage)
+- [Which metrics does Codacy calculate?](#which-metrics-does-codacy-calculate)
+  - [Grade](#grade)
+  - [Issues](#issues)
+  - [Complexity](#complexity)
+  - [Duplication](#duplication)
+  - [Code coverage](#code-coverage)
+  - [See also](#see-also)
 
 !!! note
     Depending on certain characteristics of your repository, such as the number of source code files and their size, Codacy may [apply limits to the code analysis](does-codacy-place-limits-on-the-code-analysis.md) that impact the calculation of the supported metrics.
@@ -96,7 +98,7 @@ Codacy displays complexity on the following places:
 
 ## Duplication
 
-Codacy identifies clones or [sequences of duplicate code](https://en.wikipedia.org/wiki/Duplicate_code) that exist in at least two different places of the source code of your repository. Clones typically indicate deeper code issues and should be eliminated through abstraction when possible.
+Codacy identifies clones or [sequences of duplicate code](https://en.wikipedia.org/wiki/Duplicate_code) that exist in at least two different places of the source code of your repository. Clones typically indicate deeper code quality issues and should be eliminated through abstraction when possible.
 
 Codacy calculates duplication as follows:
 
