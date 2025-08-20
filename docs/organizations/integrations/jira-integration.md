@@ -47,7 +47,7 @@ Installing the Jira integration enables the feature of creating Jira tickets fro
 
 1.  A modal will open where you can select the Jira project, ticket type, summary and description.
 
-   ![Jira modal](images/jira-modal.png)
+    ![Jira modal](images/jira-modal.png)
 
     !!! important
         The Jira ticket creation doesn't support projects with mandatory custom fields
