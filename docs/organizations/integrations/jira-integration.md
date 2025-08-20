@@ -56,7 +56,7 @@ Installing the Jira integration enables the feature of creating Jira tickets fro
 
  To create a Jira ticket for multiple issues, you can do so by navigating to a list of issues and clicking on the **Create a Jira ticket for these issues** button at the top of the list
     
-![Create Jira Ticket from one issue](images/create-jira-ticket-for-multiple-issues.png)
+![Create Jira Ticket for multiple issues](images/create-jira-ticket-for-multiple-issues.png)
 
 !!! note
     You can create a Jira ticket for up to 50 issues / ticket
@@ -65,10 +65,10 @@ Installing the Jira integration enables the feature of creating Jira tickets fro
 
 To create a Jira ticket for a dependency, navigate to the page of the dependency and click on **Create a Jira ticket for this dependency**
 
-![Create Jira Ticket from one issue](images/jira-ticket-dependency.png)
+![Create Jira Ticket for a dependency](images/jira-ticket-dependency.png)
 
 ### Jira tickets for files
 
 To create a Jira ticket for a file, navigate to the page of the file and click on **Create a Jira ticket for this file**
 
-![Create Jira Ticket from one issue](images/jira-ticket-file.png)
+![Create Jira Ticket for a file](images/jira-ticket-file.png)
