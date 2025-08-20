@@ -17,7 +17,7 @@ To access the quality gates, open your repository **Settings**, tab **Gates**.
 ![Gates](images/quality-settings-gates.png)
 
 -   **New issues are over:** Pull requests or commits are marked not up to standards if the number of issues introduced that have at least the specified severity level is higher than the set value.
--   **New security issues are over:** Pull requests or commits are marked not up to standards if the number of security issues introduced is higher than the set value.
+-   **New security issues are over:** Pull requests or commits are marked not up to standards if the number of security issues introduced that have at least the specified severity level is higher than the set value.
 -   **Complexity is over:** Pull requests or commits are marked not up to standards if the introduced complexity is higher than the set value.
 -   **Duplication is over:** Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value.
 -   **Coverage variation is under:** Pull requests or commits are marked not up to standards if they introduce a variation to coverage lower than the set value.

@@ -29,7 +29,7 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    codacy_self_hosted_version: "14.1.1"
+    codacy_self_hosted_version: "15.0.0"
     codacy_coverage_reporter_version: "13.10.15"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
@@ -562,6 +562,13 @@ nav:
           - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
           - getting-started/adding-a-codacy-badge.md
+    - Codacy Guardrails (IDE Extension):
+          - codacy-guardrails/codacy-guardrails-getting-started.md
+          - codacy-guardrails/codacy-guardrails-how-to-use.md
+          - codacy-guardrails/codacy-guardrails-how-to-configure-rules.md
+          - codacy-guardrails/codacy-guardrails-limitations.md
+          - codacy-guardrails/codacy-guardrails-troubleshooting.md
+          - codacy-guardrails/codacy-guardrails-faq.md
     - Repositories on Codacy:
           - repositories/repository-dashboard.md
           - repositories/commits.md
@@ -589,6 +596,7 @@ nav:
           - Local analysis:
                 - repositories-configure/local-analysis/client-side-tools.md
                 - repositories-configure/local-analysis/running-aligncheck.md
+                - repositories-configure/local-analysis/running-dartanalyzer.md
                 - repositories-configure/local-analysis/running-deadcode.md
                 - repositories-configure/local-analysis/running-spotbugs.md
                 - repositories-configure/local-analysis/running-eslint.md
@@ -600,6 +608,7 @@ nav:
           - organizations/organization-overview.md
           - organizations/managing-repositories.md
           - organizations/segments.md
+          - organizations/issues-metrics.md
           - organizations/using-gate-policies.md
           - organizations/using-coding-standards.md
           - Managing integrations:
@@ -630,6 +639,7 @@ nav:
                 - codacy-api/examples/obtaining-current-issues-in-repositories.md
                 - codacy-api/examples/identifying-commits-without-coverage-data.md
                 - codacy-api/examples/uploading-dast-results.md
+                - codacy-api/examples/triggering-dast-scans.md
     - Managing Codacy Self-hosted: "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
@@ -670,6 +680,12 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2025:
+                      - release-notes/cloud/cloud-2025-07.md
+                      - release-notes/cloud/cloud-2025-06.md
+                      - release-notes/cloud/cloud-2025-06-adding-sqlfluff-reek.md
+                      - release-notes/cloud/cloud-2025-05.md
+                      - release-notes/cloud/cloud-2025-04.md
+                      - release-notes/cloud/cloud-2025-03.md
                       - release-notes/cloud/cloud-2025-02-adding-ruff-lizard.md      
                       - release-notes/cloud/cloud-2025-02.md
                       - release-notes/cloud/cloud-2025-01.md
@@ -750,6 +766,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v15:
+                      - release-notes/self-hosted/self-hosted-v15.0.0.md
                 - v14:
                       - release-notes/self-hosted/self-hosted-v14.1.1.md
                       - release-notes/self-hosted/self-hosted-v14.0.0.md

@@ -225,10 +225,7 @@ Codacy closes a finding when it's not detected in a subsequent DAST report. If a
 
 ## Finding severities and deadlines {: id="item-severities-and-deadlines"}
 
-!!! note
-    Currently, Codacy doesn't support customizing the severity rules for security findings.
-
-The following table defines finding severities and the number of days to the deadline to fix the associated security issue, based on the importance of the underlying issue:
+The following table defines finding severities and the default number of days to the deadline to fix the associated security issue, based on the importance of the underlying issue:
 
 | Finding<br/>severity | <br/>Days to deadline | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority <sup>1</sup> |
 |----------------------|-----------------------|--------------------------------------|-------------------------------------------------|
@@ -238,6 +235,21 @@ The following table defines finding severities and the number of days to the dea
 | Low                  | 120                   | Minor                                | Low and other/custom                            |
 
 <small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small>
+
+### Customize deadlines {: id="item-configurable-deadlines"}
+
+!!! info "This feature is available only to [organization admins and organization managers](../organizations/roles-and-permissions-for-organizations.md)."
+
+You can configure your findings deadline by clicking on the "Configure SLAs" button, on the right corner of the page.
+
+![Security and risk management SLAs configure](images/security-risk-management-slas-configure.png)
+
+In the open configuration modal you'll be able to input your deadline preferences for each severity. Each deadline must be between a minimum of 1 day and a maximum of 9999 days.
+
+![Security and risk management SLAs configuration modal](images/security-risk-management-slas-modal.png)
+
+As soon as changes are saved, your open findings statuses will be updated accordingly.
+You are also able to reset to Codacy default deadline values (see table above) at any time.
 
 ## Finding statuses {: id="item-statuses"}
 
@@ -522,9 +534,9 @@ Security and risk management supports checking the languages and infrastructure-
     The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, contact our customer success team.
 
 
-The **Security and risk management dependencies** page displays a unified view of all dependencies used by your repositories. 
+The **Security and risk management Dependencies** page displays a unified view of all dependencies used by your repositories. 
 
-To access the dependencies page, access the [overview page](#dashboard) and click the **Findings** tab.
+To access the dependencies page, access the [overview page](#dashboard) and click the **Dependencies** tab.
 
 ![Security and risk management dependencies page](images/security-risk-management-dependencies-list.png)
 
@@ -534,7 +546,7 @@ You're also able to click any dependency to find out more information about it.
 
 ![Security and risk management dependency page](images/security-risk-management-dependencies-single.png)
 
- The dependency overview page offers a quick birds-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency.
+ The dependency overview page offers a quick bird's-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency.
 
 
 <sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/).  
@@ -543,3 +555,92 @@ You're also able to click any dependency to find out more information about it.
 <sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/).  
 <sup><span id="eslint-plugin">5</span></sup>: Includes the plugins [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [security](https://www.npmjs.com/package/eslint-plugin-security), [security-node](https://www.npmjs.com/package/eslint-plugin-security-node), and [xss](https://www.npmjs.com/package/eslint-plugin-xss).  
 <sup><span id="license-scanning">6</span></sup>: Visit the [supported languages and tools](../getting-started/supported-languages-and-tools.md#supported-languages-and-tools) page for a list of supported languages.  
+
+
+## App scanning {: id="app-scanning"}
+
+!!! important
+    App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.
+
+The **Security and risk management > App scanning** page allows organizations to scan Web Applications and APIs for security vulnerabilities. This feature is part of Codacy's Dynamic Application Security Testing (DAST) capabilities, powered by ZAP.
+
+To access the App scanning page, go to the [Overview page](#dashboard) and click the **App scanning** tab.
+
+![Security and risk management app scanning page](images/security-risk-management-app-scanning.png)
+
+App scanning analyzes applications in production or production-like environments to help identify vulnerabilities such as misconfigurations, insecure authentication, or other security issues that occur in real-world usage. Because it doesn't rely on access to source code, it’s language-agnostic and useful for validating security across your entire stack. 
+
+Codacy supports two types of scanning:
+
+- **Web application scans** perform baseline, non-intrusive analysis. These scans are safe for production environments and detect surface-level issues such as:
+    - Missing security headers
+    - Insecure cookie configurations
+    - Information disclosure through HTTP response headers
+    - Exposure of sensitive or misconfigured files
+
+- **API scans** simulate real-world attacks against your API endpoints. These are more aggressive and best suited for **non-production environments**, such as staging or development. API scans provide deeper insights into runtime behavior and potential vulnerabilities, such as:
+    - Broken authentication or authorization controls
+    - Injection vulnerabilities (SQL or command injection)
+    - Exposure of sensitive data in API responses
+    - Insecure CORS or HTTP method configurations
+
+!!! note
+    Already using ZAP? [Upload your results via the API.](../codacy-api/examples/uploading-dast-results.md)
+
+### Creating an App Scanning target
+
+!!! important
+    **Do not run API scans on production enviroments as our API scanners may cause potential downtime.**
+
+    Our DAST API scanner performs active security testing by sending a large number of requests to your application. When using authenticated API scanning, this activity can be even more intensive, as ZAP explores and probes more of your API surface.
+
+    Depending on how your target environment is configured, this may:
+
+    - Trigger rate limiting or throttling
+    - Appear as a high volume of traffic, similar to a load test
+    - Lead to incomplete scan results if key endpoints are blocked or limited
+
+    We recommend running scans in a **test or staging environment**, or coordinating with your infrastructure team to ensure that your environment can safely handle the load.
+
+When creating a scan target, you'll be able to choose between a Web App or an API. Configuring a Web App will only require a target URL, while APIs will have other requirements:
+
+- **REST APIs**, which require a publicly accessible OpenAPI specification URL.
+- **GraphQL APIs**, where the schema is inferred from the default path `{targetUrl}/graphql`.
+
+API targets optionally support **header-based authentication**. As you create a target, keep in mind you may not be able to view or change certain fields later (to change your configurations you may need to delete and create a new target).
+
+!!! note
+    If exposing your API specification isn't feasible for your team, let us know via support or your account representative.
+
+
+### How to scan a target
+
+You can initiate scans in two ways:
+- From the **App scanning** tab in the Security and risk management dashboard
+- By automating scans using [Codacy's API](../codacy-api/examples/triggering-dast-scans.md)
+
+!!! important
+    Only [admins and organization managers](../organizations/roles-and-permissions-for-organizations.md) can create targets and start scans, both in-app and via the API.
+
+<div>
+  <iframe width="100%" height="472" src="https://www.youtube.com/embed/qPwHlIGJYXs?autoplay=1&mute=1&showinfo=0&loop=1" title="DAST targets" frameborder="0"
+allowfullscreen>
+  </iframe>
+</div>
+
+Each organization can have up to **6 active scan targets**. If you need additional capacity, contact your customer success representative.
+
+Scans are triggered manually through the UI and are queued before execution. You can queue one single scan per target — it will run sequentially. There is no limit to the number of scans you can run on a target, in order to support your deployment needs.
+
+Once a scan completes, results will be available under the **Findings** tab. Use the **Scan types > DAST/App scanning** filter to view relevant findings.
+
+!!! important
+    Depending on the complexity of the target, DAST scans can take a significant amount of time to complete. Codacy may enforce timeouts to ensure platform stability and fair resource distribution.
+
+!!! important
+    Failed scans are retried based on the failure reason. Retries are added back to the queue automatically and processed when capacity allows.
+
+!!! note
+    Currently, DAST findings are only visible to admin and organization admin roles.
+
+Follow our [roadmap](https://roadmap.codacy.com) for updates on this feature.

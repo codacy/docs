@@ -53,7 +53,7 @@ Codacy calculates the number of issues in the following static code analysis cat
 <!--issue-categories-start-->
 -   **Code style:** Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks
 -   **Error prone:** Code that may hide bugs and language keywords that should be used with caution, such as the operator `==` in JavaScript or `Option.get` in Scala
--   **Code complexity:** High complexity methods and classes that should be refactored
+-   **Code complexity:** High complexity files that should be refactored
 -   **Performance:** Code that can have performance problems
 -   **Compatibility:** Mainly for frontend code, compatibility problems across different browser versions
 -   **Unused code:** Unused variables and methods, code that can't be reached
@@ -90,8 +90,8 @@ Codacy displays complexity on the following places:
 
 |Place|Metric|
 |-----|------|
-|[Commit detail page](../../repositories/commits.md)<br/>[Pull request detail page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Variation of the complexity value introduced by the commit or pull request|
-|[Files page](../../repositories/files.md)|Complexity value of each file|
+|[Commit detail page](../../repositories/commits.md)<br/>[Pull request detail page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|The complexity variation introduced by a commit or pull request is defined as the sum of the changes in code complexity for each file modified in the commit or pull request|
+|[Files page](../../repositories/files.md)|The file complexity value is the sum of the complexity values of all methods defined within the file|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Percentage of complex files in your repository and how the metric is evolving over time|
 |[Organization overview](../../organizations/organization-overview.md)|Average percentage of complex files in the repositories in your organization and percentage of complex files in each repository|
 |[Repositories list page](../../organizations/managing-repositories.md)|Percentage of complex files in each repository in your organization|

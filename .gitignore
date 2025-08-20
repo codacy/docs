@@ -17,3 +17,8 @@ site/
 
 # Auxiliary tool outputs
 tools/*.csv
+
+.codacy
+
+#Ignore vscode AI rules
+.github/copilot-instructions.md
