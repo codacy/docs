@@ -11,12 +11,12 @@ To install the Jira integration:
 1.  On Jira, add the label **security** (case-insensitive) to the issues you wish to import and confirm that they use [the right Jira priorities to correctly map to item severities](../managing-security-and-risk.md#item-severities-and-deadlines).
 
     !!! tip
-        Add the **security** label as a default to all new Jira issues that track security-related work in your organization.
+    Add the **security** label as a default to all new Jira issues that track security-related work in your organization.
 
 1.  Open your organization **Integrations**, page **Jira**, and click **Install Jira** to proceed to Atlassian's website.
 
     !!! note
-        Use a Jira account with admin permissions when installing this integration. This lets Codacy access all issues, since the integration inherits the permissions of the account that installs it.
+    Use a Jira account with admin permissions when installing this integration. This lets Codacy access all issues, since the integration inherits the permissions of the account that installs it.
 
     ![Security and risk management Jira integration installation](images/jira-integration-srm-install.png)
 
@@ -31,7 +31,7 @@ For more information on how this integration works, see [how Codacy manages secu
 To uninstall the Jira integration, open your organization **Integrations**, page **Jira**, then click **Uninstall Jira** and confirm.
 
 !!! important
-    Uninstalling the Jira integration as described above deletes all associated open items. You can alternatively uninstall the Jira integration on the Jira website: this doesn't delete anything, but it prevents Codacy from opening new Jira-related items.
+Uninstalling the Jira integration as described above deletes all associated open items. You can alternatively uninstall the Jira integration on the Jira website: this doesn't delete anything, but it prevents Codacy from opening new Jira-related items.
 
 ## Creating Jira tickets from issues, dependencies and files
 
@@ -39,23 +39,23 @@ Installing the Jira integration enables the feature of creating Jira tickets fro
 
 ### Creating a Jira ticket for an issue
 
-1. Navigate to the list of issues.
+1.  Navigate to the list of issues.
 
-1. Click on the options button of the issue you want to create a ticket for, and then click on **Create Jira ticket** button.
+1.  Click on the options button of the issue you want to create a ticket for, and then click on **Create Jira ticket** button.
 
     ![Create Jira Ticket from one issue](images/create-jira-ticket-for-issue.png)
 
-1. A modal will open where you can select the Jira project, ticket type, summary and description.
+1.  A modal will open where you can select the Jira project, ticket type, summary and description.
 
-    ![Jira modal](images/jira-modal.png)
+   ![Jira modal](images/jira-modal.png)
 
-    !!! important
-        The Jira ticket creation doesn't support projects with mandatory custom fields
+   !!! important
+   The Jira ticket creation doesn't support projects with mandatory custom fields
 
 ### Jira tickets for multiple issues
 
- To create a Jira ticket for multiple issues, you can do so by navigating to a list of issues and clicking on the **Create a Jira ticket for these issues** button at the top of the list
-    
+To create a Jira ticket for multiple issues, you can do so by navigating to a list of issues and clicking on the **Create a Jira ticket for these issues** button at the top of the list
+
 ![Create Jira Ticket for multiple issues](images/create-jira-ticket-for-multiple-issues.png)
 
 !!! note
