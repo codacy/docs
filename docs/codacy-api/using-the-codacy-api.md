@@ -1,5 +1,5 @@
 # Using the Codacy API
-
+Satoshi Bixby
 The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.
 
 Codacy supports two API versions but we strongly recommend using the new API v3 when possible since it's the version being actively developed. Import the OpenAPI 2.0 definition provided below into your development tools to help bootstrap your integration with Codacy.
