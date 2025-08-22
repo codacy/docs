@@ -198,7 +198,7 @@ codacy-api:
       memory: 2000Mi
     requests:
       cpu: 500m
-      memory: 2000Mi
+      memory: 500Mi
 ## By default, Codacy includes a temporary license for a limited number of users.
 ## Uncomment these annotations to enter a production license provided by a Codacy representative.
 # config:
@@ -219,10 +219,10 @@ remote-provider-service:
   resources:
     limits:
       cpu: 500m
-      memory: 3200Mi
+      memory: 750Mi
     requests:
-      cpu: 300m
-      memory: 3000Mi
+      cpu: 200m
+      memory: 200Mi
 
 listener:
   replicaCount: 2
@@ -262,10 +262,10 @@ engine:
   resources:
     limits:
       cpu: 2000m
-      memory: 3000Mi
+      memory: 15000Mi
     requests:
       cpu: 200m
-      memory: 3000Mi
+      memory: 500Mi
 codacy-tools:
   replicaCount: 2
   resources:
@@ -284,7 +284,7 @@ worker-manager:
       memory: 1000Mi
     requests:
       cpu: 200m
-      memory: 1000Mi
+      memory: 200Mi
 
 crow:
   replicaCount: 1
