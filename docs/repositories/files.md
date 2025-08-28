@@ -1,6 +1,6 @@
-# Quality Files page
+# Files page
 
-The **Quality Files page** displays the current code quality information for each analyzed file in your [enabled repository branches](../repositories-configure/managing-branches.md).
+The **Files page** displays the current code quality information for each analyzed file in your [enabled repository branches](../repositories-configure/managing-branches.md).
 
 By default, the page lists the files on the main branch of your repository. However, if you have [more than one branch enabled](../repositories-configure/managing-branches.md), you can select other branches using the drop-down list at the top of the page.
 
@@ -36,7 +36,7 @@ The header of the file detail page displays the same code quality metrics as the
 
 Depending on the available analysis information for the file, Codacy displays one or more of the following tabs:
 
--   **Issues:** Shows the annotated source code on the left-hand side and the matching list of issues and issue distribution by severity on the right-hand side. Each listed issue includes the same information and options available on the [Quality Issues page](issues.md).
+-   **Issues:** Shows the annotated source code on the left-hand side and the matching list of issues and issue distribution by severity on the right-hand side. Each listed issue includes the same information and options available on the [Issues page](issues.md).
 
     ![Issues for a file](images/files-issues.png)
 
