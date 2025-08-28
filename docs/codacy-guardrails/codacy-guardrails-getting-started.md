@@ -36,7 +36,7 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 
 !!! note
     For Visual Studio Code, the Insiders version is recommended for its faster performance and compatibility with Codacy Guardrails. However, since it's a beta version, you may encounter occasional issues.
-    For Jetbrains IDEs, IntelliJ is not the only supported editor, but it's the one being extensively tested. If you use other editors such as PyCharm and run into any issues feel free to open an issue in our extension's [repository](https://github.com/codacy/codacy-intellij-extension)
+    For JetBrains IDEs, IntelliJ isn't the only supported editor, but it's the one being extensively tested. If you use other editors such as PyCharm and run into any issues feel free to open an issue in our extension's [repository](https://github.com/codacy/codacy-intellij-extension)
 
 ### Built-in Scanners
 
@@ -227,7 +227,7 @@ c. Open the Copilot chat and switch the mode to `Agent`. You can check that the 
 ![Copilot Agent with Codacy tools](images/copilot_agent.png)
 
 
-# Jetbrains IDEs
+# JetBrains IDEs
 
 
 ### Supported Operating Systems
@@ -248,7 +248,7 @@ c. Open the Copilot chat and switch the mode to `Agent`. You can check that the 
 - Others in the suite
 
 !!! note
-    For JetBrains IDEs, IntelliJ is not the only supported editor, but it's the one being extensively tested. If you use other editors such as PyCharm and run into any issues, feel free to open an issue in our extension's [repository](https://github.com/codacy/codacy-intellij-extension). Check the [extension page](https://tinyurl.com/codacy-jetbrains-extension) on the marketplace to see the full list of supported IDEs.
+    For JetBrains IDEs, IntelliJ isn't the only supported editor, but it's the one being extensively tested. If you use other editors such as PyCharm and run into any issues, feel free to open an issue in our extension's [repository](https://github.com/codacy/codacy-intellij-extension). Check the [extension page](https://tinyurl.com/codacy-jetbrains-extension) on the marketplace to see the full list of supported IDEs.
 
 ### Built-in Scanners
 
@@ -269,7 +269,7 @@ To take full advantage of Codacy Guardrails on Windows, you need to set up WSL f
 ### 1.  Install the extension
 
 
-You can either install the dependency from the [JetBrains marketplace](https://tinyurl.com/codacy-jetbrains-extension) or search for it directly in your IDE's plugin settings.
+You can either install the dependency from the [JetBrains marketplace](https://tinyurl.com/codacy-jetbrains-extension) or search for it directly in your Codacy plugin's settings.
 
 
 ![Install Extension](images/install-codacy-extension-jetbrains.png)
@@ -290,14 +290,14 @@ It will create a folder in your local repository called **.codacy** with all nee
     If you don't want this folder to be part of your repository in future commits but continue working with it locally, please add **.codacy** to your .gitignore file
 
 !!! note
-    The IDE extension will ignore any CLI version already installed (e.g., through brew or other package manager) on the machine.
+    The IDE extension will ignore any CLI version already installed (for example, through brew or other package manager) on the machine.
 
 
 ### 3. Install MCP Server
 
 #### a. Add the Codacy MCP Server
 
-After clicking on the codacy icon on the lower right of the editor, click on **Install AiAgent MCP**
+After clicking on the Codacy icon on the lower right of the editor, click on **Install AiAgent MCP**
 
 ![Add Codacy MCP Server](images/codacy-extension-activate-cli-jetbrains.png)
 
@@ -333,4 +333,4 @@ Install the guidelines by clicking on **Install AiAgent MCP** on the Codacy icon
 
 ### 6. Start using your Agent and Codacy will be there with you!
 
-![Codacy Guardrails running in Jetbrains](images/codacy-guardrails-junie.png)
+![Codacy Guardrails running in JetBrains](images/codacy-guardrails-junie.png)
