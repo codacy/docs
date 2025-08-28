@@ -84,13 +84,13 @@ Codacy calculates complexity as follows:
 
 -   The complexity value of a file is the total sum of the cyclomatic complexities of all methods within it.
 -   A file is considered complex if its cyclomatic complexity value is higher than the threshold [**File is complex when over**](../../repositories-configure/adjusting-quality-goals.md).
--   The complexity value of a commit or pull request is determined by the cyclomatic complexity of its changes.
+-   The complexity value of a commit or pull request is calculated by summing the complexity differences of all changed files where the difference is 4 or more.
 
 Codacy displays complexity on the following places:
 
 |Place|Metric|
 |-----|------|
-|[Commit detail page](../../repositories/commits.md)<br/>[Pull request detail page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|The complexity variation introduced by a commit or pull request is defined as the sum of the changes in code complexity for each file modified in the commit or pull request|
+|[Commit detail page](../../repositories/commits.md)<br/>[Pull request detail page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|The complexity variation introduced by a commit or pull request is calculated by summing the complexity differences of all changed files where the difference is 4 or more.
 |[Files page](../../repositories/files.md)|The file complexity value is the sum of the complexity values of all methods defined within the file|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Percentage of complex files in your repository and how the metric is evolving over time|
 |[Organization overview](../../organizations/organization-overview.md)|Average percentage of complex files in the repositories in your organization and percentage of complex files in each repository|
