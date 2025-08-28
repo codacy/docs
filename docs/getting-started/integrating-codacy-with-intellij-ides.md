@@ -81,6 +81,9 @@ To review issues:
 
 When the analysis is complete, the Codacy plugin automatically refreshes the pull request analysis result. You can also refresh the pull request data manually by clicking the Refresh Pull Request button in the main view.
 
+## Running Codacy Guardrails
+As of version [0.0.8](https://plugins.jetbrains.com/plugin/23924-codacy/versions/stable/840439), the IntelliJ plugin now supports Codacy Guardrails. To see how to get it quickly setup refer to our quickstart guide [here](../codacy-guardrails/codacy-guardrails-getting-started.md#how-to-install-quick-guide-jetbrains).
+
 ## See also
 
 -   [Troubleshooting the Codacy IntelliJ plugin](https://github.com/codacy/codacy-intellij-extension?tab=readme-ov-file#troubleshooting)

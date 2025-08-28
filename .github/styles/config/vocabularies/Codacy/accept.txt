@@ -1,10 +1,10 @@
 aligncheck
+allowlist
+Ameba
+Atlassian
 autofix
 autoremediate
-allowlist
-Atlassian
 autovacuum
-Ameba
 Bandit
 Bitbucket
 Bitnami
@@ -13,8 +13,8 @@ bundler-audit
 Checkov
 Checkstyle
 Clang-Tidy
-CloudFormation
 cloc
+CloudFormation
 Cobertura
 Codacy
 CodeNarc
@@ -51,6 +51,7 @@ jq
 jscpd
 JSHint
 JSP
+Junie
 markdownlint
 monorepo
 namespace
@@ -60,8 +61,8 @@ PHP_CodeSniffer
 PHPUnit
 plaintext
 PMD
-Prospector
 Promtail
+Prospector
 PSScriptAnalyser
 PVC
 Pylint
@@ -86,8 +87,8 @@ Staticcheck
 Stylelint
 SwiftLint
 Tailor
-Trivy
 tooltip
+Trivy
 TSLint
 TSQLLint
 unassigns
@@ -95,5 +96,5 @@ unfollow
 vacuumdb
 Visualforce
 VSCode
-Xcode
 webserver
+Xcode
