@@ -9,7 +9,7 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uVyRWnnJu-0?si=Pnbk65EvpvvJRXX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
-# VSCode
+# VSCode-based IDEs
 
 ## Prerequisites
 
@@ -36,7 +36,6 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 
 !!! note
     For Visual Studio Code, the Insiders version is recommended for its faster performance and compatibility with Codacy Guardrails. However, since it's a beta version, you may encounter occasional issues.
-    For JetBrains IDEs, IntelliJ isn't the only supported editor, but it's the one being extensively tested. If you use other editors such as PyCharm and run into any issues feel free to open an issue in our extension's [repository](https://github.com/codacy/codacy-intellij-extension)
 
 ### Built-in Scanners
 
@@ -52,7 +51,7 @@ Besides real-time AI code scanning, Guardrails users can now prompt all their Co
 ## How to install - Quick Guide {: id="how-to-install-quick-guide"}
 
 #### Note for Windows users:
-To take full advantage of Codacy Guardrails on Windows, you might need to setup WSL first, [check the steps here.](#how-to-install-wsl)
+To take advantage of Codacy Guardrails on Windows, you might need to setup WSL first, [check the steps here.](#how-to-install-wsl)
 
 ### 1.  Download the extension
 
@@ -237,7 +236,7 @@ c. Open the Copilot chat and switch the mode to `Agent`. You can check that the 
 - Windows (via WSL)
 
 !!! important
-    **For Windows users: Windows WSL** (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows. **Only local analysis** is supported for Windows, as MCP support for JetBrains IDEs is still not completely done.
+    **For Windows users: Windows WSL** (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows. **Only local analysis** are supported for Windows, as MCP support for JetBrains IDEs is still not completely done.
 
 
 ### Supported IDEs
@@ -248,7 +247,7 @@ c. Open the Copilot chat and switch the mode to `Agent`. You can check that the 
 - Others in the suite
 
 !!! note
-    For JetBrains IDEs, IntelliJ isn't the only supported editor, but it's the one being extensively tested. If you use other editors such as PyCharm and run into any issues, feel free to open an issue in our extension's [repository](https://github.com/codacy/codacy-intellij-extension). Check the [extension page](https://tinyurl.com/codacy-jetbrains-extension) on the marketplace to see the full list of supported IDEs.
+    For JetBrains IDEs, IntelliJ isn't the only supported editor, but is our primary focus. If you use other editors such as PyCharm and run into any issues, feel free to open an issue in our extension's [repository](https://github.com/codacy/codacy-intellij-extension). Check the [extension page](https://tinyurl.com/codacy-jetbrains-extension) on the marketplace to see the full list of supported IDEs.
 
 ### Built-in Scanners
 
@@ -264,13 +263,15 @@ c. Open the Copilot chat and switch the mode to `Agent`. You can check that the 
 ## How to install - JetBrains Quick Guide {: id="how-to-install-quick-guide-jetbrains"}
 
 #### Note for Windows users:
-To take full advantage of Codacy Guardrails on Windows, you need to set up WSL first; [check the steps here.](#how-to-install-wsl)
+To take advantage of Codacy Guardrails on Windows, you need to set up WSL first; [check the steps here.](#how-to-install-wsl)
 
 ### 1.  Install the extension
 
 
 You can either install the dependency from the [JetBrains marketplace](https://tinyurl.com/codacy-jetbrains-extension) or search for it directly in your Codacy plugin's settings.
 
+!!! note
+    If you don’t see the Codacy plugin icon on the left taskbar after installing it, go to View > Tool Windows > Codacy
 
 ![Install Extension](images/install-codacy-extension-jetbrains.png)
 
@@ -319,7 +320,7 @@ If you want Codacy to generate the AI agent guidelines (which will instruct the 
 ![Codacy MCP Server is enabled](images/extension-settings-jetbrains.png)
 
 #### d. Generate AI guidelines
-Install the guidelines by clicking on **Install AiAgent MCP** on the Codacy icon on the lower right part of your IDE.
+Install the guidelines by clicking on **Install AiAgent Guidelines** on the Codacy icon on the lower right part of your IDE.
 
 ![Install Agent Guidelines](images/codacy-extension-activate-cli-jetbrains.png)
 
@@ -329,7 +330,7 @@ Install the guidelines by clicking on **Install AiAgent MCP** on the Codacy icon
 ### 4. Restart your IDE to apply changes
 
 ### 5. After everything is set up, you should now be able to interact with Codacy via AI chat.
-* Remember that for you to be able to interact with the Codacy MCP server, you must be on the `Agent` mode of the chat (`Code` on Junie), not `Ask` mode.
+* Remember that for you to be able to interact with the Codacy MCP server, you must be on the `Agent` mode of the chat (`Code` on Junie), not `Ask` nor `Edit` mode.
 
 ### 6. Start using your Agent and Codacy will be there with you!
 
