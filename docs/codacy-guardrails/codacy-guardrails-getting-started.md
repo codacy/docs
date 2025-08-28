@@ -263,7 +263,7 @@ c. Open the Copilot chat and switch the mode to `Agent`. You can check that the 
 ## How to install - JetBrains Quick Guide {: id="how-to-install-quick-guide-jetbrains"}
 
 #### Note for Windows users:
-To take advantage of Codacy Guardrails on Windows, you need to set up WSL first; [check the steps here.](#how-to-install-wsl)
+To take advantage of Codacy Guardrails on Windows, you need to set up WSL first; [check the steps here](#how-to-install-wsl). **Only local analysis** are supported for Windows, as MCP support for JetBrains IDEs is still not completely done.
 
 ### 1.  Install the extension
 
