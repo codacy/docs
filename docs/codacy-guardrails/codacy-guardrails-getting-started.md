@@ -261,7 +261,7 @@ c. Open the Copilot chat and switch the mode to `Agent`. You can check that the 
 - [Lizard](https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard)
 - Revive
 
-## How to install - Jetbrains Quick Guide {: id="how-to-install-quick-guide-jetbrains"}
+## How to install - JetBrains Quick Guide {: id="how-to-install-quick-guide-jetbrains"}
 
 #### Note for Windows users:
 To take full advantage of Codacy Guardrails on Windows, you need to set up WSL first; [check the steps here.](#how-to-install-wsl)
