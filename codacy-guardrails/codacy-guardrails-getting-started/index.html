@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy Guardrails is a brand new way of enforcing code security and quality standards for AI-generated code, built into the free Codacy IDE Extension for VSCode, Copilot, Cursor, and Windsurf. Guardrails help developers ship safer, cleaner AI code by applying best practices and blocking insecure patterns while the code is being generated.">
       
       
-        <meta http-equiv="last-modified" content="2025-08-20 16:07:49">
+        <meta http-equiv="last-modified" content="2025-08-28 14:09:04">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-guardrails/codacy-guardrails-getting-started/">
@@ -349,60 +349,9 @@
       
     
     
-      <label class="md-nav__link md-nav__link--active" for="__toc">
-        Getting Started
-      </label>
-    
     <a href="./" title="Getting Started" class="md-nav__link md-nav__link--active">
       Getting Started
     </a>
-    
-      
-<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
-      </span>
-      Table of contents
-    </label>
-    <ul class="md-nav__list" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#prerequisites" class="md-nav__link">
-    Prerequisites
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-install-quick-guide" class="md-nav__link">
-    How to install - Quick Guide
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-install-wsl" class="md-nav__link">
-    How to install - WSL
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#how-to-install-manually" class="md-nav__link">
-    How to install - Manually
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
     
   </li>
 
@@ -4707,6 +4656,7 @@
 <p><strong>New to Codacy Guardrails?</strong> <a href="https://blog.codacy.com/codacy-guardrails-free-real-time-enforcement-of-security-and-quality-standards">Check our blog post</a></p>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/uVyRWnnJu-0?si=Pnbk65EvpvvJRXX4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
+<h1 id="vscode-based-ides">VSCode-based IDEs<a class="headerlink" href="#vscode-based-ides" title="Permanent link">#</a></h1>
 <h2 id="prerequisites">Prerequisites<a class="headerlink" href="#prerequisites" title="Permanent link">#</a></h2>
 <ul>
 <li>git</li>
@@ -4721,7 +4671,8 @@
 </ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p><strong>For Windows users: Windows WSL</strong> (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows.</p>
+<p><strong>For Windows users: Windows WSL</strong> (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows.
+We currently only support VSCode, Cursor, and Windsurf on Windows.</p>
 </div>
 <h3 id="supported-ides">Supported IDEs<a class="headerlink" href="#supported-ides" title="Permanent link">#</a></h3>
 <ul>
@@ -4746,12 +4697,13 @@
 </ul>
 <h2 id="how-to-install-quick-guide">How to install - Quick Guide<a class="headerlink" href="#how-to-install-quick-guide" title="Permanent link">#</a></h2>
 <h4 id="note-for-windows-users">Note for Windows users:<a class="headerlink" href="#note-for-windows-users" title="Permanent link">#</a></h4>
-<p>To take full advantage of Codacy Guardrails on Windows, you might need to setup WSL first, <a href="#how-to-install-wsl">check the steps here.</a></p>
+<p>To take advantage of Codacy Guardrails on Windows, you might need to setup WSL first, <a href="#how-to-install-wsl">check the steps here.</a></p>
 <h3 id="1-download-the-extension">1.  Download the extension<a class="headerlink" href="#1-download-the-extension" title="Permanent link">#</a></h3>
 <ul>
-<li><a href="https://tinyurl.com/codacy-vscode">Visual Studio Code</a></li>
+<li><a href="https://tinyurl.com/codacy-vscode-extension">Visual Studio Code</a></li>
 <li><a href="http://tinyurl.com/codacy-cursor">Cursor</a></li>
 <li><a href="http://tinyurl.com/codacy-windsurf">Windsurf</a></li>
+<li><a href="https://tinyurl.com/codacy-jetbrains-extension">IntelliJ IDEA</a></li>
 </ul>
 <p>This will open the Codacy Extension in your IDE Marketplace. Click <strong>Install</strong></p>
 <p><img alt="Install Extension" src="../images/install-codacy-extension.png" /></p>
@@ -4869,6 +4821,94 @@ You can either put the downloaded script in a specific file or create an alias t
 <p>b. Make sure you have Agent mode enabled: <a href="vscode://settings/chat.agent.enabled">vscode://settings/chat.agent.enabled</a></p>
 <p>c. Open the Copilot chat and switch the mode to <code>Agent</code>. You can check that the MCP server was enabled correctly by clicking on the <code>Select tools</code> icon, which should list all the available Codacy tools.</p>
 <p><img alt="Copilot Agent with Codacy tools" src="../images/copilot_agent.png" /></p>
+<h1 id="jetbrains-ides">JetBrains IDEs<a class="headerlink" href="#jetbrains-ides" title="Permanent link">#</a></h1>
+<h3 id="supported-operating-systems_1">Supported Operating Systems<a class="headerlink" href="#supported-operating-systems_1" title="Permanent link">#</a></h3>
+<ul>
+<li>macOS</li>
+<li>Linux</li>
+<li>Windows (via WSL)</li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>For Windows users: Windows WSL</strong> (a feature that allows you to run a Linux environment directly on Windows, without the need for a virtual machine or dual-boot setup) is the only way you can use this feature for now, but we're still working to fully support Windows. <strong>Only local analysis</strong> are supported for Windows, as MCP support for JetBrains IDEs is still not completely done.</p>
+</div>
+<h3 id="supported-ides_1">Supported IDEs<a class="headerlink" href="#supported-ides_1" title="Permanent link">#</a></h3>
+<ul>
+<li>IntelliJ IDEA</li>
+<li>PyCharm</li>
+<li>PhpStorm</li>
+<li>Others in the suite</li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>For JetBrains IDEs, IntelliJ isn't the only supported editor, but is our primary focus. If you use other editors such as PyCharm and run into any issues, feel free to open an issue in our extension's <a href="https://github.com/codacy/codacy-intellij-extension">repository</a>. Check the <a href="https://tinyurl.com/codacy-jetbrains-extension">extension page</a> on the marketplace to see the full list of supported IDEs.</p>
+</div>
+<h3 id="built-in-scanners_1">Built-in Scanners<a class="headerlink" href="#built-in-scanners_1" title="Permanent link">#</a></h3>
+<ul>
+<li>Trivy</li>
+<li>Semgrep</li>
+<li>ESLint</li>
+<li>Pylint</li>
+<li>PMD</li>
+<li>dartanalyzer</li>
+<li><a href="https://docs.codacy.com/release-notes/cloud/cloud-2025-02-adding-ruff-lizard/#lizard">Lizard</a></li>
+<li>Revive</li>
+</ul>
+<h2 id="how-to-install-quick-guide-jetbrains">How to install - JetBrains Quick Guide<a class="headerlink" href="#how-to-install-quick-guide-jetbrains" title="Permanent link">#</a></h2>
+<h4 id="note-for-windows-users_1">Note for Windows users:<a class="headerlink" href="#note-for-windows-users_1" title="Permanent link">#</a></h4>
+<p>To take advantage of Codacy Guardrails on Windows, you need to set up WSL first; <a href="#how-to-install-wsl">check the steps here</a>. <strong>Only local analysis</strong> are supported for Windows, as MCP support for JetBrains IDEs is still not completely done.</p>
+<h3 id="1-install-the-extension">1.  Install the extension<a class="headerlink" href="#1-install-the-extension" title="Permanent link">#</a></h3>
+<p>You can either install the dependency from the <a href="https://tinyurl.com/codacy-jetbrains-extension">JetBrains marketplace</a> or search for it directly in your Codacy plugin's settings.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you don’t see the Codacy plugin icon on the left taskbar after installing it, go to View &gt; Tool Windows &gt; Codacy</p>
+</div>
+<p><img alt="Install Extension" src="../images/install-codacy-extension-jetbrains.png" /></p>
+<h3 id="2-install-and-activate-the-codacy-cli-for-local-analysis_1">2. Install and activate the Codacy CLI for local analysis<a class="headerlink" href="#2-install-and-activate-the-codacy-cli-for-local-analysis_1" title="Permanent link">#</a></h3>
+<p>Click on the Codacy button on the lower right part of your IDE, and click <strong>Install CLI</strong></p>
+<p><img alt="Install CLI" src="../images/codacy-extension-activate-cli-jetbrains.png" /></p>
+<p>It will create a folder in your local repository called <strong>.codacy</strong> with all needed configuration:</p>
+<ul>
+<li>The configuration from all built-in scanners</li>
+<li>Codacy CLI script to run analysis locally </li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you don't want this folder to be part of your repository in future commits but continue working with it locally, please add <strong>.codacy</strong> to your .gitignore file</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The IDE extension will ignore any CLI version already installed (for example, through brew or other package manager) on the machine.</p>
+</div>
+<h3 id="3-install-mcp-server_1">3. Install MCP Server<a class="headerlink" href="#3-install-mcp-server_1" title="Permanent link">#</a></h3>
+<h4 id="a-add-the-codacy-mcp-server_1">a. Add the Codacy MCP Server<a class="headerlink" href="#a-add-the-codacy-mcp-server_1" title="Permanent link">#</a></h4>
+<p>After clicking on the Codacy icon on the lower right of the editor, click on <strong>Install AiAgent MCP</strong></p>
+<p><img alt="Add Codacy MCP Server" src="../images/codacy-extension-activate-cli-jetbrains.png" /></p>
+<h4 id="b-check-if-the-codacy-mcp-server-is-enabled_1">b. Check if the Codacy MCP Server is enabled<a class="headerlink" href="#b-check-if-the-codacy-mcp-server-is-enabled_1" title="Permanent link">#</a></h4>
+<p>In your IntelliJ settings, search the settings for the agent of your choice (Junie or Copilot) and confirm that Codacy is listed on the MCP settings tab.</p>
+<p><img alt="Codacy MCP Server is enabled" src="../images/mcp-settings-extension-jetbrains.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to install the plugin for your desired agent. Make sure to install JetBrains Junie or GitHub Copilot if you want to integrate the Codacy MCP.</p>
+</div>
+<h4 id="c-confirm-the-settings-of-your-codacy-extension">c. Confirm the settings of your Codacy extension<a class="headerlink" href="#c-confirm-the-settings-of-your-codacy-extension" title="Permanent link">#</a></h4>
+<p>In your IntelliJ settings, search the settings for the Codacy extension and confirm that you're using the correct version of the CLI, as well as your preferred AI agent. </p>
+<p>If you want Codacy to generate the AI agent guidelines (which will instruct the agent to run the Codacy local analysis on changes, for example) for you, you should also enable this option in the editor settings.</p>
+<p><img alt="Codacy MCP Server is enabled" src="../images/extension-settings-jetbrains.png" /></p>
+<h4 id="d-generate-ai-guidelines">d. Generate AI guidelines<a class="headerlink" href="#d-generate-ai-guidelines" title="Permanent link">#</a></h4>
+<p>Install the guidelines by clicking on <strong>Install AiAgent Guidelines</strong> on the Codacy icon on the lower right part of your IDE.</p>
+<p><img alt="Install Agent Guidelines" src="../images/codacy-extension-activate-cli-jetbrains.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You need to install the plugin for your desired agent. Make sure to install JetBrains Junie or GitHub Copilot if you want to integrate the Codacy MCP.</p>
+</div>
+<h3 id="4-restart-your-ide-to-apply-changes">4. Restart your IDE to apply changes<a class="headerlink" href="#4-restart-your-ide-to-apply-changes" title="Permanent link">#</a></h3>
+<h3 id="5-after-everything-is-set-up-you-should-now-be-able-to-interact-with-codacy-via-ai-chat_1">5. After everything is set up, you should now be able to interact with Codacy via AI chat.<a class="headerlink" href="#5-after-everything-is-set-up-you-should-now-be-able-to-interact-with-codacy-via-ai-chat_1" title="Permanent link">#</a></h3>
+<ul>
+<li>Remember that for you to be able to interact with the Codacy MCP server, you must be on the <code>Agent</code> mode of the chat (<code>Code</code> on Junie), not <code>Ask</code> nor <code>Edit</code> mode.</li>
+</ul>
+<h3 id="6-start-using-your-agent-and-codacy-will-be-there-with-you">6. Start using your Agent and Codacy will be there with you!<a class="headerlink" href="#6-start-using-your-agent-and-codacy-will-be-there-with-you" title="Permanent link">#</a></h3>
+<p><img alt="Codacy Guardrails running in JetBrains" src="../images/codacy-guardrails-junie.png" /></p>
               
               
                 
@@ -5025,7 +5065,7 @@ You can either put the downloaded script in a specific file or create an alias t
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 20, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 28, 2025</span>
     
   </small>
 </div>
