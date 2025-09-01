@@ -52,7 +52,7 @@ Currently, the integration between Codacy and GitHub Enterprise has the followin
 
 -   **Repositories with visibility Internal** will, in Codacy, have the same behavior as Private visibility. Although you see the repository in the provider, if you aren't part of the repository in the provider, you won't be able to see it in Codacy.
 -   **Same email connected to multiple GitHub accounts.** Codacy won't allow you to connect your enterprise account if that email is already associated with a different GitHub account. You can manage your [associated emails in the provider GitHub](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account).
--   **GitHub Cloud data residency is not supported.** Codacy is incompatible with GitHub Enterprise Cloud's data residency features. If your GitHub Enterprise Cloud has data residency enabled, Codacy will not be able to access or process your repositories. 
+-   **GitHub Cloud data residency is not supported.** Codacy is incompatible with GitHub Enterprise Cloud's data residency features. If your GitHub Enterprise Cloud has data residency enabled, Codacy won't be able to access or process your repositories. 
 
 
 
