@@ -112,7 +112,7 @@ exclude_paths:
 Cyclomatic complexity can be disabled or partially ignored for certain paths, files or languages.
 
 !!! note
-Cyclomatic complexity is referred as `metric` in the configuration file.
+    Cyclomatic complexity is referred as `metric` in the configuration file.
 
     ```yaml
     ---
@@ -188,6 +188,7 @@ eslint-9
 flawfinder
 hadolint
 jacksonlinter
+lizard
 markdownlint
 phpcs
 phpmd
