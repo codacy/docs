@@ -11,7 +11,7 @@
         <meta name="description" content="Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages.">
       
       
-        <meta http-equiv="last-modified" content="2025-07-31 15:17:04">
+        <meta http-equiv="last-modified" content="2025-09-08 13:52:08">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/codacy-configuration-file/">
@@ -4843,19 +4843,17 @@
 <p>Cyclomatic complexity can be disabled or partially ignored for certain paths, files or languages.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-</div>
 <p>Cyclomatic complexity is referred as <code>metric</code> in the configuration file.</p>
-<div class="highlight"><pre><span></span><code>```yaml
----
-engines:
-  metric:
-    exclude_paths:
-      - &quot;src/test.ts&quot;
-    config:
-      languages:
-        - &quot;typescript&quot;
-```
+<div class="highlight"><pre><span></span><code><span class="nn">---</span>
+<span class="nt">engines</span><span class="p">:</span>
+<span class="w">  </span><span class="nt">metric</span><span class="p">:</span>
+<span class="w">    </span><span class="nt">exclude_paths</span><span class="p">:</span>
+<span class="w">      </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;src/test.ts&quot;</span>
+<span class="w">    </span><span class="nt">config</span><span class="p">:</span>
+<span class="w">      </span><span class="nt">languages</span><span class="p">:</span>
+<span class="w">        </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="s">&quot;typescript&quot;</span>
 </code></pre></div>
+</div>
 <h2 id="include-files">Including specific files using a Codacy configuration file<a class="headerlink" href="#include-files" title="Permanent link">#</a></h2>
 <p>The Codacy configuration file allows you to explicitly specify files or directories to include in the analysis. This is particularly useful for <a href="../ignoring-files/#default-ignored-files">bypassing files or directories that are ignored by default</a> or specified in <code>exclude_paths</code>.</p>
 <div class="admonition note">
@@ -4898,6 +4896,7 @@ eslint-9
 flawfinder
 hadolint
 jacksonlinter
+lizard
 markdownlint
 phpcs
 phpmd
@@ -5214,7 +5213,7 @@ tsqllint
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 31, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 8, 2025</span>
     
   </small>
 </div>
