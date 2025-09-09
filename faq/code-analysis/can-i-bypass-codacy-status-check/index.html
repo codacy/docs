@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="!!! note This will only apply to gates enforcing quality checks. If coverage is blocking a pull request analysis, we recommend contacting your git provider admin or temporarily disabling the coverage gate on the repo and reanalyzing the pull request before enabling them again.">
+        <meta name="description" content="To protect your code from unwelcome changes, you can configure your Git workflow to block merging pull requests if they don&#x27;t pass the Codacy status check.">
       
       
-        <meta http-equiv="last-modified" content="2025-09-09 09:25:58">
+        <meta http-equiv="last-modified" content="2025-09-09 09:53:05">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/code-analysis/can-i-bypass-codacy-status-check/">
@@ -4653,7 +4653,10 @@
                 
                 
                 <h1 id="can-i-bypass-codacy-status-check">Can I bypass Codacy status check?<a class="headerlink" href="#can-i-bypass-codacy-status-check" title="Permanent link">#</a></h1>
-<p>!!! note <strong>This will only apply to gates enforcing quality checks.</strong> If coverage is blocking a pull request analysis, we recommend contacting your git provider admin or temporarily disabling the coverage gate on the repo and reanalyzing the pull request before enabling them again.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>This will only apply to gates enforcing quality checks.</strong> If coverage is blocking a pull request analysis, we recommend contacting your git provider admin or temporarily disabling the coverage gate on the repo and reanalyzing the pull request before enabling them again.</p>
+</div>
 <p>To protect your code from unwelcome changes, you can <a href="../../../getting-started/integrating-codacy-with-your-git-workflow/#blocking-pull-requests">configure your Git workflow to block merging pull requests</a> if they don't pass the Codacy status check.</p>
 <p>However, on <strong>very specific and exceptional situations</strong> where your pull request merging is blocked due to an unexpected issue not related to the quality of your code, Codacy allows <strong>repository admins</strong> to bypass the Codacy status check for that pull request.</p>
 <p>To bypass Codacy status check for a pull request, a repository admin must click <strong>Bypass status checks</strong> on the <a href="../../../repositories/pull-requests/#status">pull request status area</a> of the pull request detail screen.</p>
