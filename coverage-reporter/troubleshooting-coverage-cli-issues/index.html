@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI.">
       
       
-        <meta http-equiv="last-modified" content="2024-02-05 09:40:34">
+        <meta http-equiv="last-modified" content="2025-09-12 15:44:39">
       
       
         <link rel="canonical" href="https://docs.codacy.com/coverage-reporter/troubleshooting-coverage-cli-issues/">
@@ -855,6 +855,13 @@
         <li class="md-nav__item">
   <a href="#substratesegfaulthandler-caught-signal-11" class="md-nav__link">
     SubstrateSegfaultHandler caught signal 11
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#i-received-the-message-invalid-configuration-either-a-project-or-account-api-token-must-be-provided-or-available-in-an-environment-variable-in-a-build-from-a-commit-created-by-dependabot-github" class="md-nav__link">
+    I received the message: "Invalid configuration: Either a project or account API token must be provided or available in an environment variable" in a build from a commit created by Dependabot (Github)
   </a>
   
 </li>
@@ -4860,6 +4867,10 @@
 <p>If you're experiencing segmentation faults when uploading the coverage results due to <a href="https://github.com/oracle/graal/issues/624"><span class="skip-vale">oracle/graal#624</span></a>, execute the following command before running the reporter, as a workaround:</p>
 <div class="highlight"><pre><span></span><code><span class="nb">echo</span><span class="w"> </span><span class="s2">&quot;</span><span class="k">$(</span>dig<span class="w"> </span>+short<span class="w"> </span>api.codacy.com<span class="w"> </span><span class="p">|</span><span class="w"> </span>tail<span class="w"> </span>-n1<span class="k">)</span><span class="s2"> api.codacy.com&quot;</span><span class="w"> </span>&gt;&gt;<span class="w"> </span>/etc/hosts
 </code></pre></div>
+<h2 id="i-received-the-message-invalid-configuration-either-a-project-or-account-api-token-must-be-provided-or-available-in-an-environment-variable-in-a-build-from-a-commit-created-by-dependabot-github">I received the message: "Invalid configuration: Either a project or account API token must be provided or available in an environment variable" in a build from a commit created by Dependabot (Github)<a class="headerlink" href="#i-received-the-message-invalid-configuration-either-a-project-or-account-api-token-must-be-provided-or-available-in-an-environment-variable-in-a-build-from-a-commit-created-by-dependabot-github" title="Permanent link">#</a></h2>
+<p>When builds are triggered by Dependabot, they run with a read-only GITHUB_TOKEN and don’t have access to any secrets stored in GitHub Actions. This can break workflows — for example, the token may be missing and coverage reports can’t be uploaded to Codacy.</p>
+<p><a href="https://docs.github.com/en/code-security/dependabot/troubleshooting-dependabot/troubleshooting-dependabot-on-github-actions#troubleshooting-failures-when-dependabot-triggers-existing-workflows">See GitHub’s documentation for details.</a></p>
+<p>If you still need to upload coverage from Dependabot’s pull requests, a workaround is to add an empty commit to those PRs. Because the commit comes from a regular user account, the workflow will then have access to the repository’s secrets, allowing the upload to succeed.</p>
               
               
                 
@@ -5016,7 +5027,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 5, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 12, 2025</span>
     
   </small>
 </div>
