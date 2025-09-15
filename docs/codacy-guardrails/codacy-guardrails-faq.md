@@ -41,7 +41,7 @@ codacy-cli init
 This way Codacy will run the latest configuration.
 
 ## Does guardrails generate code for me?
-Guardrails Specify that Guardrails itself doesn’t generated anything but we inform the AI agent where issues are located and scan generated code using the Codacy CLI.
+Guardrails itself doesn’t generate anything but we inform the AI agent where issues are located and scan generated code using the Codacy CLI.
 
 ## How much does Guardrails cost?
 Codacy Guardrails is a free IDE Extension for local scanning of AI-generated and human-written code, **available free of charge to all developers.**
