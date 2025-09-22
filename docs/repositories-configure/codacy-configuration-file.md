@@ -6,7 +6,7 @@ description: Use the Codacy configuration file to configure advanced features on
 
 Codacy supports configuring certain advanced features through a configuration file, such as:
 
--   [Ignoring files](#ignore-files) globally, for duplication, or a specific tool
+-   [Ignoring files](#ignore-files) globally, for duplication, for cyclomatic complexity, or a specific tool
 
 -   [Including specific ignored files](#include-files) in the analysis
 
@@ -50,6 +50,12 @@ To use a Codacy configuration file:
         config:
           languages:
             - "ruby"
+      metric:
+        exclude_paths:
+          - "src/test.ts"
+        config:
+          languages:
+            - "typescript"
     languages:
       css:
         extensions:
@@ -100,6 +106,24 @@ exclude_paths:
   - "test/README.md"
   - "**/*.resource"
 ```
+
+### Syntax for configuring cyclomatic complexity
+
+Cyclomatic complexity can be disabled or partially ignored for certain paths, files or languages.
+
+!!! note
+    Cyclomatic complexity is referred as `metric` in the configuration file.
+
+    ```yaml
+    ---
+    engines:
+      metric:
+        exclude_paths:
+          - "src/test.ts"
+        config:
+          languages:
+            - "typescript"
+    ```
 
 ## Including specific files using a Codacy configuration file {: id="include-files"}
 
@@ -164,6 +188,7 @@ eslint-9
 flawfinder
 hadolint
 jacksonlinter
+lizard
 markdownlint
 phpcs
 phpmd

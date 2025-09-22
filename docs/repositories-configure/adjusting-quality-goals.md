@@ -2,11 +2,11 @@
 
 Adjust the **quality goals** to help you monitor the progress of the code quality in your repository dashboard, and configure which files Codacy considers complex or duplicated.
 
-Codacy displays the quality goals as dashed lines on the [quality evolution chart](../repositories/repository-dashboard.md#quality-evolution-chart) to help you monitor the progress and overall quality status of your repository.
+Codacy displays the quality goals as dashed lines on the [quality evolution chart](../repositories/repository-dashboard.md#evolution-chart) to help you monitor the progress and overall quality status of your repository.
 
 To access the quality goals, open your repository **Settings**, tab **Goals**. The following screenshot displays the default configuration values:
 
-![Quality goals](images/quality-settings-goals.png)
+![Goals](images/quality-settings-goals.png)
 
 -   **Issues are over:** Defines the threshold displayed on the tab **Issues** of the quality evolution chart.
 -   **Complexity is over:** Defines the threshold displayed on the tab **Complexity** of the quality evolution chart.

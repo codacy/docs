@@ -1,8 +1,8 @@
-# Organization Jira integration for Security and risk management
+# Organization Jira integration
 
 !!! info "This integration is only available for Jira Cloud"
 
-Integrate Jira with [Security and risk management](../managing-security-and-risk.md) to import your Jira issues and manage them all in one place as security items.
+Integrate Jira with Codacy to be able to create Jira tickets directly from Codacy findings, and import your Jira issues for [Security and risk management](../managing-security-and-risk.md) to manage them all in one place as security items.
 
 ## Installing the Jira integration
 
@@ -32,3 +32,43 @@ To uninstall the Jira integration, open your organization **Integrations**, page
 
 !!! important
     Uninstalling the Jira integration as described above deletes all associated open items. You can alternatively uninstall the Jira integration on the Jira website: this doesn't delete anything, but it prevents Codacy from opening new Jira-related items.
+
+## Creating Jira tickets from issues, dependencies and files
+
+Installing the Jira integration enables the feature of creating Jira tickets from issues, dependencies and files
+
+### Creating a Jira ticket for an issue
+
+1.  Navigate to the list of issues.
+
+1.  Click on the options button of the issue you want to create a ticket for, and then click on **Create Jira ticket** button.
+
+    ![Create Jira Ticket from one issue](images/create-jira-ticket-for-issue.png)
+
+1.  A modal will open where you can select the Jira project, ticket type, summary and description.
+
+    ![Jira modal](images/jira-modal.png)
+
+    !!! important
+        The Jira ticket creation doesn't support projects with mandatory custom fields
+
+### Jira tickets for multiple issues
+
+To create a Jira ticket for multiple issues, you can do so by navigating to a list of issues and clicking on the **Create a Jira ticket for these issues** button at the top of the list
+
+![Create Jira Ticket for multiple issues](images/create-jira-ticket-for-multiple-issues.png)
+
+!!! note
+    You can create a Jira ticket for up to 50 issues / ticket
+
+### Jira tickets for dependencies
+
+To create a Jira ticket for a dependency, navigate to the page of the dependency and click on **Create a Jira ticket for this dependency**
+
+![Create Jira Ticket for a dependency](images/jira-ticket-dependency.png)
+
+### Jira tickets for files
+
+To create a Jira ticket for a file, navigate to the page of the file and click on **Create a Jira ticket for this file**
+
+![Create Jira Ticket for a file](images/jira-ticket-file.png)

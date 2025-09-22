@@ -1,6 +1,6 @@
-# Quality Coverage page
+# Coverage page
 
-The **Quality Coverage page** displays the current code coverage information in your [enabled repository branches](../repositories-configure/managing-branches.md).
+The **Coverage page** displays the current code coverage information in your [enabled repository branches](../repositories-configure/managing-branches.md).
 
 If your repository doesn't have coverage set up, you can learn more on how to [add coverage to your repository](../coverage-reporter/index.md).
 

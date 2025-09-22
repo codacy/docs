@@ -43,6 +43,20 @@ Adds comments on the lines of the merge request where Codacy finds new issues. C
 
 Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable **Status checks** first.
 
+### Coverage summaries
+
+Adds a pull request comment showing an overall view of the coverage metrics for the pull request, including details about the data that Codacy used to calculate the coverage variation and diff coverage metrics.
+
+When there are new coverage results, Codacy updates the last coverage summary comment if it's included in the last 5 comments of the pull request. Otherwise, Codacy creates a new comment.
+
+!!! important
+    **To get coverage summaries** you must also [add coverage to your repository](../../coverage-reporter/index.md).
+
+![Coverage summary on GitLab](images/gitlab-integration-coverage-summary.png)
+
+!!! note
+    This feature is only supported on GitHub and GitLab Cloud.
+
 ![Merge request summary on GitLab](images/gitlab-integration-pr-summary.png)
 
 ### AI-Enhanced Comments
