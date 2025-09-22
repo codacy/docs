@@ -11,7 +11,7 @@
         <meta name="description" content="Ignore or exclude files from the Codacy analysis and see the list of files that Codacy already ignores by default.">
       
       
-        <meta http-equiv="last-modified" content="2024-06-18 12:09:29">
+        <meta http-equiv="last-modified" content="2025-09-22 15:48:10">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/ignoring-files/">
@@ -4711,6 +4711,9 @@
 <li>
 <p>To exclude files from coverage analysis only, you must ignore them directly in the tool you're using to generate coverage reports and ensure that the reports you upload to Codacy don't include coverage information for those files.</p>
 </li>
+<li>
+<p>When excluding files from <strong>Duplication</strong> analysis, you must state the <strong>entire path</strong> to the files. Unlike quality analysis, wildcards will not work, resulting in files not being excluded.</p>
+</li>
 </ul>
 </div>
 <p>If you need more flexibility in ignoring files, use a Codacy configuration file to <a href="../codacy-configuration-file/#syntax-for-ignoring-files">define a custom list of file paths to exclude</a>.</p>
@@ -4906,7 +4909,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 18, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 22, 2025</span>
     
   </small>
 </div>
