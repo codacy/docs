@@ -542,11 +542,39 @@ To access the dependencies page, access the [overview page](#dashboard) and clic
 
 When viewing dependencies, you'll be presented with a list of the dependencies used by all repositories in your organization. For each dependency, you'll be able to see how many repositories are making use of it, how many different versions you are using across all repositories, and how many security findings were found due to the presence of that dependency.
 
+You can sort the dependencies list using the sort dropdown to prioritize dependencies based on your security assessment needs:
+
+-   **Highest vulnerability** (default) - Dependencies with the most critical security findings appear first
+-   **Lowest OSSF score** - Dependencies with the lowest [OSSF Scorecard](#ossf-scorecard) security scores appear first, helping you identify dependencies that may not follow security best practices
+
 You're also able to click any dependency to find out more information about it.
 
 ![Security and risk management dependency page](images/security-risk-management-dependencies-single.png)
 
- The dependency overview page offers a quick bird's-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency.
+ The dependency overview page offers a quick bird's-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues, the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency, and the [OSSF Scorecard](#ossf-scorecard) security assessment.
+
+### OSSF Scorecard {: id="ossf-scorecard"}
+
+The **OSSF Scorecard** feature provides additional security insights for your dependencies by displaying security assessment data from the Open Source Security Foundation (OSSF) Scorecard project.
+
+The OSSF Scorecard is an automated tool that evaluates open source repositories against a comprehensive set of security best practices. It performs various checks on a dependency's repository to assess whether the project follows security best practices and helps determine if the dependency is safe for consumption.
+
+When available, OSSF Scorecard information appears on the dependency overview page, providing you with:
+
+-   **Overall security score** - A numerical score indicating the overall security posture of the dependency
+-   **Individual check results** - Detailed results for specific security practices such as:
+    -   Code review practices
+    -   Dependency update policies  
+    -   Security policy documentation
+    -   Vulnerability disclosure processes
+    -   Branch protection configurations
+    -   Binary artifact verification
+    -   Token permissions and usage
+
+This information helps you make informed decisions about the security risks associated with your dependencies and identify which dependencies may require additional scrutiny or alternative options.
+
+
+![Security and risk management OSSF scorecard report](images/security-risk-management-ossf-scorecard.png)
 
 
 <sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/).  
