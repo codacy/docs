@@ -555,7 +555,7 @@ You're also able to click any dependency to find out more information about it.
 
 ### OSSF Scorecard {: id="ossf-scorecard"}
 
-The **OSSF Scorecard** feature provides additional security insights for your dependencies by displaying security assessment data from the Open Source Security Foundation (OSSF) Scorecard project.
+The **OSSF Scorecard** feature provides additional security insights for your dependencies by displaying security assessment data from the [Open Source Security Foundation (OSSF) Scorecard project](https://scorecard.dev/).
 
 The OSSF Scorecard is an automated tool that evaluates open source repositories against a comprehensive set of security best practices. It performs various checks on a dependency's repository to assess whether the project follows security best practices and helps determine if the dependency is safe for consumption.
 
