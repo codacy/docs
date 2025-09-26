@@ -11,7 +11,7 @@
         <meta name="description" content="Codacy Guardrails is a brand new way of enforcing code security and quality standards for AI-generated code, built into the free Codacy IDE Extension for VSCode, Copilot, Cursor, and Windsurf. Guardrails help developers ship safer, cleaner AI code by applying best practices and blocking insecure patterns while the code is being generated.">
       
       
-        <meta http-equiv="last-modified" content="2025-08-28 14:09:04">
+        <meta http-equiv="last-modified" content="2025-09-26 15:25:33">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-guardrails/codacy-guardrails-getting-started/">
@@ -4735,15 +4735,17 @@ We currently only support VSCode, Cursor, and Windsurf on Windows.</p>
 <p class="admonition-title">Note</p>
 <p>The IDE extension will ignore any CLI version already installed (e.g. through brew or other package manager) on the machine.</p>
 </div>
-<h3 id="3-install-mcp-server">3. Install MCP Server<a class="headerlink" href="#3-install-mcp-server" title="Permanent link">#</a></h3>
-<h4 id="a-add-the-codacy-mcp-server">a. Add the Codacy MCP Server<a class="headerlink" href="#a-add-the-codacy-mcp-server" title="Permanent link">#</a></h4>
-<p>In the Codacy Extension tab, click <strong>Add Codacy MCP Server</strong></p>
-<p><img alt="Add Codacy MCP Server" src="../images/add-codacy-mcp-server.png" /></p>
-<h4 id="b-check-if-the-codacy-mcp-server-is-enabled">b. Check if the Codacy MCP Server is enabled<a class="headerlink" href="#b-check-if-the-codacy-mcp-server-is-enabled" title="Permanent link">#</a></h4>
-<p>On the left side menu of the Codacy extension, please make sure that MCP server is set up and ready.</p>
-<p><img alt="Codacy MCP Server is enabled" src="../images/mcp-server-enabled.png" /></p>
-<h3 id="4-restart-your-ide">4. Restart your IDE<a class="headerlink" href="#4-restart-your-ide" title="Permanent link">#</a></h3>
-<h3 id="5-after-everything-is-set-up-you-should-now-be-able-to-interact-with-codacy-via-ai-chat">5. After everything is set up, you should now be able to interact with Codacy via AI chat.<a class="headerlink" href="#5-after-everything-is-set-up-you-should-now-be-able-to-interact-with-codacy-via-ai-chat" title="Permanent link">#</a></h3>
+<h3 id="3-check-if-the-codacy-mcp-server-is-properly-setup">3. Check if the Codacy MCP Server is properly setup<a class="headerlink" href="#3-check-if-the-codacy-mcp-server-is-properly-setup" title="Permanent link">#</a></h3>
+<p>Codacy MCP Server will be installed automatically when starting the extension, and an instructions file will be created in your workspace. </p>
+<p>If you don't want Guardrails to automatically generate the instructions file, go to the extension's settings and set the instructions generation setting to manual.</p>
+<p><img alt="Guardrails instructions setting" src="../images/guardrails-instructions-setting.png" /></p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>The absence of the instructions file will impact the Guardrails experience.</p>
+</div>
+<p>You can later generate the instructions manually from the Guardrails section of the extension.</p>
+<p><img alt="Generate instructions file" src="../images/guardrails-generate-instructions-file.png" /></p>
+<h3 id="4-after-everything-is-set-up-you-should-now-be-able-to-interact-with-codacy-via-ai-chat">4. After everything is set up, you should now be able to interact with Codacy via AI chat.<a class="headerlink" href="#4-after-everything-is-set-up-you-should-now-be-able-to-interact-with-codacy-via-ai-chat" title="Permanent link">#</a></h3>
 <ul>
 <li>Remember that for you to be able to interact with Codacy MCP server, you must be on the <code>Agent</code> mode of the chat, not the default <code>Ask</code> mode.</li>
 <li>If you're still having issues with the MCP server, try to run the command <code>Preferences: Open User Settings (JSON)</code>, look for the Codacy MCP server settings and right on top of it you'll should see a <code>Start</code> option. Click on it and, if unsuccessful, go to <code>View &gt; Debug Console</code> and check for errors. Don't forget to ensure you have <code>node.js</code> and <code>npx</code> installed and set up.</li>
@@ -4892,11 +4894,11 @@ You can either put the downloaded script in a specific file or create an alias t
 <p class="admonition-title">Note</p>
 <p>The IDE extension will ignore any CLI version already installed (for example, through brew or other package manager) on the machine.</p>
 </div>
-<h3 id="3-install-mcp-server_1">3. Install MCP Server<a class="headerlink" href="#3-install-mcp-server_1" title="Permanent link">#</a></h3>
-<h4 id="a-add-the-codacy-mcp-server_1">a. Add the Codacy MCP Server<a class="headerlink" href="#a-add-the-codacy-mcp-server_1" title="Permanent link">#</a></h4>
+<h3 id="3-install-mcp-server">3. Install MCP Server<a class="headerlink" href="#3-install-mcp-server" title="Permanent link">#</a></h3>
+<h4 id="a-add-the-codacy-mcp-server">a. Add the Codacy MCP Server<a class="headerlink" href="#a-add-the-codacy-mcp-server" title="Permanent link">#</a></h4>
 <p>After clicking on the Codacy icon on the lower right of the editor, click on <strong>Install AiAgent MCP</strong></p>
 <p><img alt="Add Codacy MCP Server" src="../images/codacy-extension-activate-cli-jetbrains.png" /></p>
-<h4 id="b-check-if-the-codacy-mcp-server-is-enabled_1">b. Check if the Codacy MCP Server is enabled<a class="headerlink" href="#b-check-if-the-codacy-mcp-server-is-enabled_1" title="Permanent link">#</a></h4>
+<h4 id="b-check-if-the-codacy-mcp-server-is-enabled">b. Check if the Codacy MCP Server is enabled<a class="headerlink" href="#b-check-if-the-codacy-mcp-server-is-enabled" title="Permanent link">#</a></h4>
 <p>In your IntelliJ settings, search the settings for the agent of your choice (Junie or Copilot) and confirm that Codacy is listed on the MCP settings tab.</p>
 <p><img alt="Codacy MCP Server is enabled" src="../images/mcp-settings-extension-jetbrains.png" /></p>
 <div class="admonition note">
@@ -4915,7 +4917,7 @@ You can either put the downloaded script in a specific file or create an alias t
 <p>You need to install the plugin for your desired agent. Make sure to install JetBrains Junie or GitHub Copilot if you want to integrate the Codacy MCP.</p>
 </div>
 <h3 id="4-restart-your-ide-to-apply-changes">4. Restart your IDE to apply changes<a class="headerlink" href="#4-restart-your-ide-to-apply-changes" title="Permanent link">#</a></h3>
-<h3 id="5-after-everything-is-set-up-you-should-now-be-able-to-interact-with-codacy-via-ai-chat_1">5. After everything is set up, you should now be able to interact with Codacy via AI chat.<a class="headerlink" href="#5-after-everything-is-set-up-you-should-now-be-able-to-interact-with-codacy-via-ai-chat_1" title="Permanent link">#</a></h3>
+<h3 id="5-after-everything-is-set-up-you-should-now-be-able-to-interact-with-codacy-via-ai-chat">5. After everything is set up, you should now be able to interact with Codacy via AI chat.<a class="headerlink" href="#5-after-everything-is-set-up-you-should-now-be-able-to-interact-with-codacy-via-ai-chat" title="Permanent link">#</a></h3>
 <ul>
 <li>Remember that for you to be able to interact with the Codacy MCP server, you must be on the <code>Agent</code> mode of the chat (<code>Code</code> on Junie), not <code>Ask</code> nor <code>Edit</code> mode.</li>
 </ul>
@@ -5077,7 +5079,7 @@ You can either put the downloaded script in a specific file or create an alias t
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 28, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 26, 2025</span>
     
   </small>
 </div>
