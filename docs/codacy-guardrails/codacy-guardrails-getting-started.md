@@ -83,23 +83,22 @@ It will create a folder in your local repository called **.codacy** with all nee
     The IDE extension will ignore any CLI version already installed (e.g. through brew or other package manager) on the machine.
 
 
-### 3. Install MCP Server
+### 3. Check if the Codacy MCP Server is properly setup
 
-#### a. Add the Codacy MCP Server
+Codacy MCP Server will be installed automatically when starting the extension, and an instructions file will be created in your workspace. 
 
-In the Codacy Extension tab, click **Add Codacy MCP Server**
+If you don't want Guardrails to automatically generate the instructions file, go to the extension's settings and set the instructions generation setting to manual.
 
-![Add Codacy MCP Server](images/add-codacy-mcp-server.png)
+![Guardrails instructions setting](images/guardrails-instructions-setting.png)
 
-#### b. Check if the Codacy MCP Server is enabled
+!!! warning
+    The absence of the instructions file will impact the Guardrails experience.
 
-On the left side menu of the Codacy extension, please make sure that MCP server is set up and ready.
+You can later generate the instructions manually from the Guardrails section of the extension.
 
-![Codacy MCP Server is enabled](images/mcp-server-enabled.png)
+![Generate instructions file](images/guardrails-generate-instructions-file.png)
 
-### 4. Restart your IDE
-
-### 5. After everything is set up, you should now be able to interact with Codacy via AI chat.
+### 4. After everything is set up, you should now be able to interact with Codacy via AI chat.
 * Remember that for you to be able to interact with Codacy MCP server, you must be on the `Agent` mode of the chat, not the default `Ask` mode.
 * If you're still having issues with the MCP server, try to run the command `Preferences: Open User Settings (JSON)`, look for the Codacy MCP server settings and right on top of it you'll should see a `Start` option. Click on it and, if unsuccessful, go to `View > Debug Console` and check for errors. Don't forget to ensure you have `node.js` and `npx` installed and set up.
 
