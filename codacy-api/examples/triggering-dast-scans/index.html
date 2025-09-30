@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to trigger DAST/App using the API.">
       
       
-        <meta http-equiv="last-modified" content="2025-07-01 09:36:51">
+        <meta http-equiv="last-modified" content="2025-09-30 13:00:34">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/triggering-dast-scans/">
@@ -4807,7 +4807,13 @@
 <li><strong>ORGANIZATION:</strong> Name of the organization on the Git provider. For example, <code>codacy</code>. You must have admin permissions over the organization on the Git provider.</li>
 <li><strong>DAST_TARGET_ID:</strong> Identifier of a DAST target to analyze (obtained in the <a href="./#creating-targets">previous section</a>. For example, <code>457</code>. You must have admin permissions over the organization on the Git provider.</li>
 </ul>
-<p>Scans occur asynchronously. To monitor an ongoing scan you can use the <a href="../../../organizations/managing-security-and-risk/#app-scanning">target management page in Codacy</a>. Once completed, you can access all scan results by navigating to the <strong>Security dashboard</strong>, selecting the <strong>Findings tab</strong> and filtering by <strong>Scan types &gt; DAST/App scanning</strong>.</p>
+<p>Scans occur asynchronously. To monitor an ongoing scan you can use the <a href="../../../organizations/managing-security-and-risk/#app-scanning">target management page in Codacy</a>. Once completed, you can access all scan results by navigating to the <strong>Security dashboard</strong>, selecting the <strong>Findings tab</strong> and filtering by <strong>Scan types &gt; DAST/App scanning</strong>, or by clicking on a configured target to expand all of that target's results.
+Additionaly, you can use the <code>SearchSRMItems</code> endpoint to filter findings by their DAST target URL with the following request:
+<div class="highlight"><pre><span></span><code>curl<span class="w"> </span>-X<span class="w"> </span>POST<span class="w"> </span>https://app.codacy.com/api/v3/organizations/gh/codacy/security/items/search<span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;Accept: application/json&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;api-token: {API_KEY}&quot;</span><span class="w"> </span><span class="se">\</span>
+<span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;statuses&quot;:[&quot;OnTrack&quot;,&quot;Overdue&quot;,&quot;DueSoon&quot;],&quot;dastTargetUrls&quot;:[&quot;example.com]}&#39;</span>
+</code></pre></div></p>
               
               
                 
@@ -4964,7 +4970,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">July 1, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 30, 2025</span>
     
   </small>
 </div>
