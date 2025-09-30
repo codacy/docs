@@ -83,4 +83,11 @@ Replace the placeholders with your own values:
 -   **ORGANIZATION:** Name of the organization on the Git provider. For example, `codacy`. You must have admin permissions over the organization on the Git provider.
 -   **DAST_TARGET_ID:** Identifier of a DAST target to analyze (obtained in the [previous section](./triggering-dast-scans.md#creating-targets). For example, `457`. You must have admin permissions over the organization on the Git provider.
 
-Scans occur asynchronously. To monitor an ongoing scan you can use the [target management page in Codacy](../../organizations/managing-security-and-risk.md#app-scanning). Once completed, you can access all scan results by navigating to the **Security dashboard**, selecting the **Findings tab** and filtering by **Scan types > DAST/App scanning**.
+Scans occur asynchronously. To monitor an ongoing scan you can use the [target management page in Codacy](../../organizations/managing-security-and-risk.md#app-scanning). Once completed, you can access all scan results by navigating to the **Security dashboard**, selecting the **Findings tab** and filtering by **Scan types > DAST/App scanning**, or by clicking on a configured target to expand all of that target's results.
+Additionaly, you can use the `SearchSRMItems` endpoint to filter findings by their DAST target URL with the following request:
+```bash
+curl -X POST https://app.codacy.com/api/v3/organizations/gh/codacy/security/items/search \
+  -H "Accept: application/json" \
+  -H "api-token: {API_KEY}" \
+  -d '{"statuses":["OnTrack","Overdue","DueSoon"],"dastTargetUrls":["example.com]}'
+```
