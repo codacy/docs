@@ -643,4 +643,11 @@ Once a scan completes, results will be available under the **Findings** tab. Use
 !!! note
     Currently, DAST findings are only visible to admin and organization admin roles.
 
+### Findings results for your DAST scans
+
+As previously mentioned, once a scan completes, results will be available under the **Findings** tab. Use the **Scan types > DAST/App scanning** filter to view relevant findings.
+Additionaly, you can click on a configured target to expand all of that target's results.
+
+![DAST target results](images/security-risk-management-app-scanning-see-results.png)
+
 Follow our [roadmap](https://roadmap.codacy.com) for updates on this feature.
