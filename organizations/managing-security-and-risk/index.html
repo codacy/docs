@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2025-09-30 13:00:34">
+        <meta http-equiv="last-modified" content="2025-10-02 14:10:21">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -5363,9 +5363,33 @@ Note that some issues just don't have a security category. These issues will rem
 <p>To access the dependencies page, access the <a href="#dashboard">overview page</a> and click the <strong>Dependencies</strong> tab.</p>
 <p><img alt="Security and risk management dependencies page" src="../images/security-risk-management-dependencies-list.png" /></p>
 <p>When viewing dependencies, you'll be presented with a list of the dependencies used by all repositories in your organization. For each dependency, you'll be able to see how many repositories are making use of it, how many different versions you are using across all repositories, and how many security findings were found due to the presence of that dependency.</p>
+<p>You can sort the dependencies list using the sort dropdown to prioritize dependencies based on your security assessment needs:</p>
+<ul>
+<li><strong>Highest vulnerability</strong> (default) - Dependencies with the most critical security findings appear first</li>
+<li><strong>Lowest OSSF score</strong> - Dependencies with the lowest <a href="#ossf-scorecard">OSSF Scorecard</a> security scores appear first, helping you identify dependencies that may not follow security best practices</li>
+</ul>
 <p>You're also able to click any dependency to find out more information about it.</p>
 <p><img alt="Security and risk management dependency page" src="../images/security-risk-management-dependencies-single.png" /></p>
-<p>The dependency overview page offers a quick bird's-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues and the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency.</p>
+<p>The dependency overview page offers a quick bird's-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues, the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency, and the <a href="#ossf-scorecard">OSSF Scorecard</a> security assessment.</p>
+<h3 id="ossf-scorecard">OSSF Scorecard<a class="headerlink" href="#ossf-scorecard" title="Permanent link">#</a></h3>
+<p>The <strong>OSSF Scorecard</strong> feature provides additional security insights for your dependencies by displaying security assessment data from the Open Source Security Foundation (OSSF) Scorecard project.</p>
+<p>The OSSF Scorecard is an automated tool that evaluates open source repositories against a comprehensive set of security best practices. It performs various checks on a dependency's repository to assess whether the project follows security best practices and helps determine if the dependency is safe for consumption.</p>
+<p>When available, OSSF Scorecard information appears on the dependency overview page, providing you with:</p>
+<ul>
+<li><strong>Overall security score</strong> - A numerical score indicating the overall security posture of the dependency</li>
+<li><strong>Individual check results</strong> - Detailed results for specific security practices such as:<ul>
+<li>Code review practices</li>
+<li>Dependency update policies  </li>
+<li>Security policy documentation</li>
+<li>Vulnerability disclosure processes</li>
+<li>Branch protection configurations</li>
+<li>Binary artifact verification</li>
+<li>Token permissions and usage</li>
+</ul>
+</li>
+</ul>
+<p>This information helps you make informed decisions about the security risks associated with your dependencies and identify which dependencies may require additional scrutiny or alternative options.</p>
+<p><img alt="Security and risk management OSSF scorecard report" src="../images/security-risk-management-ossf-scorecard.png" /></p>
 <p><sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for <a href="https://semgrep.dev/pricing/">Semgrep Pro</a>.<br />
 <sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.<br />
 <sup><span id="client-side">3</span></sup>: Supported as a <a href="../../repositories-configure/local-analysis/client-side-tools/">client-side tool</a>.<br />
@@ -5619,7 +5643,7 @@ Additionaly, you can click on a configured target to expand all of that target's
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 30, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 2, 2025</span>
     
   </small>
 </div>
