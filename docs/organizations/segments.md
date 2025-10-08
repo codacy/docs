@@ -35,13 +35,3 @@ After the first sync is done, Bitbucket Projects will continue to be insync with
 
 
 <br><br>
-***
-#### Check out what's new, and to come, in Codacy
-<div>
-  <iframe id="inlineRoadmap"
-      title="Codacy Roadmap"
-      width="100%"
-      height="472"
-    src="https://portal.productboard.com/2ng56ct2oir3adgbkvzfgqks" frameborder="0" >
-  </iframe>
-</div>
