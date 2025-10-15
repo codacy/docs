@@ -101,6 +101,8 @@ On the right section, you can view the filtered list of findings. Each finding c
 
 ![Security and risk management finding page](images/security-risk-management-finding-details.png)
 
+The same Common Vulnerability and Exposure can be classified with different severities in different sources, like cve.org or NVD, and Trivy uses these and other sources to update their database. As such, there may be situations where the severity attributed to a Finding by Trivy is not in line with a specific source. Subsequent analysis can then close a Finding and re-open it with a different severity, if a Trivy database update occurs.
+
 ## Sharing a filtered view of findings {: id="sharing-filtered-view"}
 
 To share the current view of the overview or findings page, click the **Copy URL** button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.
