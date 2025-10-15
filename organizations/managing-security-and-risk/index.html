@@ -11,7 +11,7 @@
         <meta name="description" content="The Security and risk management feature helps you quickly identify, track, and address security across your organization by automatically opening time-bound, prioritized findings whenever security problems are detected in your organization repositories, in your connected Jira instance, or as a result of penetration testing.">
       
       
-        <meta http-equiv="last-modified" content="2025-10-02 14:10:21">
+        <meta http-equiv="last-modified" content="2025-10-15 14:37:02">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/managing-security-and-risk/">
@@ -4861,6 +4861,7 @@
 </div>
 <p>On the right section, you can view the filtered list of findings. Each finding card offers a quick overview of the vulnerability found, including its title, <a href="#opening-and-closing-items">source platform</a>, <a href="#scan-types">scan type</a>, <a href="#supported-security-categories">security category</a>, and related information such as the repository name, Jira issue key, or affected URL targets. To find out more, click this overview to navigate to the finding details on the source platform.</p>
 <p><img alt="Security and risk management finding page" src="../images/security-risk-management-finding-details.png" /></p>
+<p>The same Common Vulnerability and Exposure can be classified with different severities in different sources, like cve.org or NVD, and Trivy uses these and other sources to update their database. As such, there may be situations where the severity attributed to a Finding by Trivy is not in line with a specific source. Subsequent analysis can then close a Finding and re-open it with a different severity, if a Trivy database update occurs.</p>
 <h2 id="sharing-filtered-view">Sharing a filtered view of findings<a class="headerlink" href="#sharing-filtered-view" title="Permanent link">#</a></h2>
 <p>To share the current view of the overview or findings page, click the <strong>Copy URL</strong> button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.</p>
 <div class="admonition important">
@@ -5655,7 +5656,7 @@ Additionaly, you can click on a configured target to expand all of that target's
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 2, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 15, 2025</span>
     
   </small>
 </div>
