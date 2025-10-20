@@ -97,9 +97,11 @@ Codacy can automatically detect issues that may be false positives. If the syste
 -   **Ignore false positive** will ignore the issue and hide it from the list, as with other ignored issues.
 -   **Not a false positive** removes the False Positive label from the issue.
 
-Above the first issue in the list, an **Ignore all false positives** option will also appear, allowing you to bulk ignore all detected false positives at once.
-
 ![Managing system-detected false positives](images/issues-false-positive-menu.png)
+
+Expanding the issue will also display an explanation as to why this issue was deemed to be a false positive:
+
+![False positive issue context](images/issues-false-positive-context.png)
 
 ## Restoring ignored issues
 
