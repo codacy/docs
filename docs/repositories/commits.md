@@ -109,7 +109,7 @@ If your commit includes issues detected as false positives, an **Ignore all fals
 
 For more details on managing false positives, see [Managing system-detected false positives](issues.md#managing-system-detected-false-positives).
 
-[detailed view](images/pull-requests-false-positives.png)
+![Detected false positives](images/pull-requests-false-positives.png)
 
 ## Duplication tab {: id="duplication-tabs"}
 
