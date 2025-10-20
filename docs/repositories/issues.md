@@ -87,6 +87,20 @@ Use the options in the menu of each issue to:
 
 ![Issue shortcuts menu](images/issues-menu.png)
 
+## Managing system-detected false positives
+
+!!! info
+    This feature is available only on the Business tier or during a trial.
+
+Codacy can automatically detect issues that may be false positives. If the system indicates that an issue is a **False Positive**, you have two options:
+
+-   **Ignore false positive** will ignore the issue and hide it from the list, as with other ignored issues.
+-   **Not a false positive** removes the False Positive label from the issue.
+
+Above the first issue in the list, an **Ignore all false positives** option will also appear, allowing you to bulk ignore all detected false positives at once.
+
+![Managing system-detected false positives](images/issues-false-positive-menu.png)
+
 ## Restoring ignored issues
 
 To see the list of ignored issues, click the **Ignored** tab.
