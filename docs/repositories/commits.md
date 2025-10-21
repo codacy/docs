@@ -103,7 +103,7 @@ The following are example situations that can lead to potential issues:
 ### False positive issues
 
 !!! info
-    This feature is available only on the Business tier or during a trial.
+    This feature is available only on the Business tier.
 
 If your commit includes issues detected as false positives, an **Ignore all false positives** option will appear above the first issue in the list. This allows you to bulk ignore all detected false positives at once.
 
