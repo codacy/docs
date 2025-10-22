@@ -103,7 +103,7 @@ The following are example situations that can lead to potential issues:
 ### False positive issues
 
 !!! info
-    This feature is available only on the Business tier.
+    The False Positive detection is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.
 
 If your commit includes issues detected as false positives, an **Ignore all false positives** option will appear above the first issue in the list. This allows you to bulk ignore all detected false positives at once.
 

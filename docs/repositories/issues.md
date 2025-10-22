@@ -90,7 +90,7 @@ Use the options in the menu of each issue to:
 ## Managing system-detected false positives
 
 !!! info
-    This feature is available only on the Business tier. If you are a Codacy Pro customer, contact us to access a short trial.
+    The False Positive detection is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.
 
 Codacy can automatically detect issues that may be false positives. If the system indicates that an issue is a **False Positive**, you have two options:
 
