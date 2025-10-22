@@ -11,7 +11,7 @@
         <meta name="description" content="The Commits page displays an overview of the commits in your repository, such as the analysis status and the code quality metrics for each commit. This allows you to monitor the evolution of the code quality per commit in your repository.">
       
       
-        <meta http-equiv="last-modified" content="2025-08-20 09:42:55">
+        <meta http-equiv="last-modified" content="2025-10-22 08:32:18">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/commits/">
@@ -4846,6 +4846,14 @@
 <p><strong>If you're using GitHub</strong> you may see <a href="../../repositories-configure/integrations/github-integration/#issue-annotations">annotations</a> for potential issues reported under <strong>Unchanged files with check annotations</strong> on the <strong>Files changed</strong> tab of your pull requests.</p>
 <p>This happens when Codacy reports potential issues in files that weren't changed in your pull request. <a href="https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/">Read more about this GitHub feature</a>.</p>
 </div>
+<h3 id="false-positive-issues">False positive issues<a class="headerlink" href="#false-positive-issues" title="Permanent link">#</a></h3>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The False Positive detection is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.</p>
+</div>
+<p>If your commit includes issues detected as false positives, an <strong>Ignore all false positives</strong> option will appear above the first issue in the list. This allows you to bulk ignore all detected false positives at once.</p>
+<p>For more details on managing false positives, see <a href="../issues/#managing-system-detected-false-positives">Managing system-detected false positives</a>.</p>
+<p><img alt="Detected false positives" src="../images/pull-requests-false-positives.png" /></p>
 <h2 id="duplication-tabs">Duplication tab<a class="headerlink" href="#duplication-tabs" title="Permanent link">#</a></h2>
 <p>The <strong>Duplication</strong> tab displays the lists of clones (duplicated code blocks) that the commit adds or fixes. You can click a clone to expand it and inspect the code.</p>
 <p><img alt="Duplication tabs" src="../images/commits-tab-duplication.png" /></p>
@@ -5046,7 +5054,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 20, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 22, 2025</span>
     
   </small>
 </div>

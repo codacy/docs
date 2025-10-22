@@ -11,7 +11,7 @@
         <meta name="description" content="The Issues page lists all the issues that Codacy detected in your repository, including the severity level and category of each issue.">
       
       
-        <meta http-equiv="last-modified" content="2025-08-20 09:42:55">
+        <meta http-equiv="last-modified" content="2025-10-22 08:32:18">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/issues/">
@@ -520,6 +520,13 @@
         <li class="md-nav__item">
   <a href="#ignoring-and-managing-issues" class="md-nav__link">
     Ignoring and managing issues
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#managing-system-detected-false-positives" class="md-nav__link">
+    Managing system-detected false positives
   </a>
   
 </li>
@@ -4829,6 +4836,19 @@
 </li>
 </ul>
 <p><img alt="Issue shortcuts menu" src="../images/issues-menu.png" /></p>
+<h2 id="managing-system-detected-false-positives">Managing system-detected false positives<a class="headerlink" href="#managing-system-detected-false-positives" title="Permanent link">#</a></h2>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>The False Positive detection is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.</p>
+</div>
+<p>Codacy can automatically detect issues that may be false positives. If the system indicates that an issue is a <strong>False Positive</strong>, you have two options:</p>
+<ul>
+<li><strong>Ignore false positive</strong> will ignore the issue and hide it from the list, as with other ignored issues.</li>
+<li><strong>Not a false positive</strong> removes the False Positive label from the issue.</li>
+</ul>
+<p><img alt="Managing system-detected false positives" src="../images/issues-false-positive-menu.png" /></p>
+<p>Expanding the issue will also display an explanation as to why this issue was deemed to be a false positive:</p>
+<p><img alt="False positive issue context" src="../images/issues-false-positive-context.png" /></p>
 <h2 id="restoring-ignored-issues">Restoring ignored issues<a class="headerlink" href="#restoring-ignored-issues" title="Permanent link">#</a></h2>
 <p>To see the list of ignored issues, click the <strong>Ignored</strong> tab.</p>
 <p>To restore an ignored issue, select <strong>Unignore issue</strong> from the options menu:</p>
@@ -5022,7 +5042,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 20, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 22, 2025</span>
     
   </small>
 </div>
