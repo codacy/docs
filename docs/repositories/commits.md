@@ -100,6 +100,17 @@ The following are example situations that can lead to potential issues:
 
     This happens when Codacy reports potential issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/).
 
+### False positive issues
+
+!!! info
+    The False Positive detection is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.
+
+If your commit includes issues detected as false positives, an **Ignore all false positives** option will appear above the first issue in the list. This allows you to bulk ignore all detected false positives at once.
+
+For more details on managing false positives, see [Managing system-detected false positives](issues.md#managing-system-detected-false-positives).
+
+![Detected false positives](images/pull-requests-false-positives.png)
+
 ## Duplication tab {: id="duplication-tabs"}
 
 The **Duplication** tab displays the lists of clones (duplicated code blocks) that the {{ page.meta.page_name }} adds or fixes. You can click a clone to expand it and inspect the code.
