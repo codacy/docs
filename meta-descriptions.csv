@@ -26,6 +26,7 @@ https://docs.codacy.com/chart/maintenance/upgrade/,Instructions on how to upgrad
 https://docs.codacy.com/chart/troubleshoot/k8s-cheatsheet/,Useful helm and kubectl commands to help troubleshoot your Codacy Self-hosted instance.
 https://docs.codacy.com/chart/troubleshoot/logs-collect/,"To help troubleshoot issues, obtain the logs from your Codacy Self-hosted instance and send them to Codacy's Support."
 https://docs.codacy.com/chart/troubleshoot/troubleshoot/,"This page includes information to help you troubleshoot issues that you may come across while installing, configuring, and operating Codacy Self-hosted."
+https://docs.codacy.com/codacy-ai/codacy-ai/,Documentation for the Codacy automated code review tool.
 https://docs.codacy.com/codacy-api/api-tokens/,"Create an account API token to authorize access to all the repositories that you have access to, or a repository API token to authorize access only to a specific repository."
 https://docs.codacy.com/codacy-api/using-the-codacy-api/,The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.
 https://docs.codacy.com/codacy-api/examples/adding-people-to-codacy-programmatically/,Example of how to add people programmatically using Codacy's API v3 endpoint addPeopleToOrganization.
