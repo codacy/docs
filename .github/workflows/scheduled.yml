@@ -22,7 +22,7 @@ jobs:
 
       - name: Create issue
         if: env.lychee_exit_code != 0
-        uses: peter-evans/create-issue-from-file@v5
+        uses: peter-evans/create-issue-from-file@v6
         with:
           title: Broken link report
           content-filepath: ./lychee/out.md
@@ -52,7 +52,7 @@ jobs:
           python ./check-supported-tools.py > ${{ env.OUTPUT_FILE }}
 
       - name: Create issue
-        uses: peter-evans/create-issue-from-file@v5
+        uses: peter-evans/create-issue-from-file@v6
         if: ${{ failure() }}
         with:
           title: Missing supported tools report
@@ -83,7 +83,7 @@ jobs:
           python ./check-security-tools.py > ${{ env.OUTPUT_FILE }}
 
       - name: Create issue
-        uses: peter-evans/create-issue-from-file@v5
+        uses: peter-evans/create-issue-from-file@v6
         if: ${{ failure() }}
         with:
           title: Missing security tools report
