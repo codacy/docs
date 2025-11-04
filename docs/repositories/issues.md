@@ -59,12 +59,16 @@ You can moreover define one or more of the following filters:
 Use the options in the menu of each issue to:
 
 -   **Ignore the issue** and hide it from the list.
+    - **Select reason** for ignoring the issue.
 
     Codacy will no longer report the issue after the next analysis of your repository. For example, you can ignore issues that you disagree with because:
 
     -   Your team won't tackle the issues in the immediate future
     -   The issue isn't relevant in the specific context of your code
     -   The issue is a false positive
+    -   The issue is a test code
+
+    You can select one of the predefined reasons and give optional comment to provide more context.
 
     See [how to restore ignored issues](#restoring-ignored-issues).
 
@@ -85,7 +89,9 @@ Use the options in the menu of each issue to:
 
     Codacy will no longer analyze that file on your repository, so be sure that you're no longer interested in identifying any type of issues on that file. To remove an ignored file use the [Ignored Files tab](../repositories-configure/ignoring-files.md) in your repository settings.
 
-![Issue shortcuts menu](images/issues-menu.png)
+![Issue reason menu](images/issues-reason-menu.png)
+![Issue reason options](images/issues-reason-options.png)
+![Issue reason result](images/issues-reason-result.png)
 
 ## Managing system-detected false positives
 
