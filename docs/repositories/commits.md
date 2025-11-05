@@ -111,6 +111,14 @@ For more details on managing false positives, see [Managing system-detected fals
 
 ![Detected false positives](images/pull-requests-false-positives.png)
 
+During a pull request analysis, if Codacy identifies issues that appear to be false positives, 
+it will automatically add a comment listing all the detected false positives.
+
+![Detected false positives comment](images/pull-requests-false-positives-comment.png)
+
+!!! note
+    Pull Request comments for False Positives are currently supported on GitHub only.
+
 ## Duplication tab {: id="duplication-tabs"}
 
 The **Duplication** tab displays the lists of clones (duplicated code blocks) that the {{ page.meta.page_name }} adds or fixes. You can click a clone to expand it and inspect the code.
