@@ -11,7 +11,7 @@
         <meta name="description" content="The Commits page displays an overview of the commits in your repository, such as the analysis status and the code quality metrics for each commit. This allows you to monitor the evolution of the code quality per commit in your repository.">
       
       
-        <meta http-equiv="last-modified" content="2025-10-22 08:32:18">
+        <meta http-equiv="last-modified" content="2025-11-05 10:32:59">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/commits/">
@@ -4896,6 +4896,13 @@
 <p>If your commit includes issues detected as false positives, an <strong>Ignore all false positives</strong> option will appear above the first issue in the list. This allows you to bulk ignore all detected false positives at once.</p>
 <p>For more details on managing false positives, see <a href="../issues/#managing-system-detected-false-positives">Managing system-detected false positives</a>.</p>
 <p><img alt="Detected false positives" src="../images/pull-requests-false-positives.png" /></p>
+<p>During a pull request analysis, if Codacy identifies issues that appear to be false positives, 
+it will automatically add a comment listing all the detected false positives.</p>
+<p><img alt="Detected false positives comment" src="../images/pull-requests-false-positives-comment.png" /></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Pull Request comments for False Positives are currently supported on GitHub only.</p>
+</div>
 <h2 id="duplication-tabs">Duplication tab<a class="headerlink" href="#duplication-tabs" title="Permanent link">#</a></h2>
 <p>The <strong>Duplication</strong> tab displays the lists of clones (duplicated code blocks) that the commit adds or fixes. You can click a clone to expand it and inspect the code.</p>
 <p><img alt="Duplication tabs" src="../images/commits-tab-duplication.png" /></p>
@@ -5096,7 +5103,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 22, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 5, 2025</span>
     
   </small>
 </div>
