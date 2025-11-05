@@ -66,9 +66,9 @@ Use the options in the menu of each issue to:
     -   Your team won't tackle the issues in the immediate future
     -   The issue isn't relevant in the specific context of your code
     -   The issue is a false positive
-    -   The issue is a test code
+    -   The issue is test code
 
-    You can select one of the predefined reasons and give optional comment to provide more context.
+    You can select one of the predefined reasons and give an optional comment to provide more context.
 
     See [how to restore ignored issues](#restoring-ignored-issues).
 
