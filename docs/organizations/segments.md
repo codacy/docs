@@ -1,4 +1,7 @@
 # Segments
+
+_Segments are not supported for Personal orgs, as Custom Properties are not available in Github for these orgs._
+
 Segments are dimensions that Codacy reads from your provider that organizes repositories into relevant groups for you. Today, Segments is available for: 
 - [GitHub Custom Properties](#github-custom-properties)
 - [Bitbucket Projects](#bitbucket-projects)
