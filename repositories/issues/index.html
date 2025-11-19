@@ -11,7 +11,7 @@
         <meta name="description" content="The Issues page lists all the issues that Codacy detected in your repository, including the severity level and category of each issue.">
       
       
-        <meta http-equiv="last-modified" content="2025-10-22 08:32:18">
+        <meta http-equiv="last-modified" content="2025-11-19 09:50:29">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/issues/">
@@ -4857,12 +4857,13 @@
 <p>Use the options in the menu of each issue to:</p>
 <ul>
 <li>
-<p><strong>Ignore the issue</strong> and hide it from the list.</p>
+<p><strong>Ignore the issue</strong> and hide it from the list. You can select one of the predefined reasons and give an optional comment to provide more context.</p>
 <p>Codacy will no longer report the issue after the next analysis of your repository. For example, you can ignore issues that you disagree with because:</p>
 <ul>
 <li>Your team won't tackle the issues in the immediate future</li>
 <li>The issue isn't relevant in the specific context of your code</li>
 <li>The issue is a false positive</li>
+<li>The issue is test code</li>
 </ul>
 <p>See <a href="#restoring-ignored-issues">how to restore ignored issues</a>.</p>
 <div class="admonition tip">
@@ -4889,7 +4890,14 @@
 <p>Codacy will no longer analyze that file on your repository, so be sure that you're no longer interested in identifying any type of issues on that file. To remove an ignored file use the <a href="../../repositories-configure/ignoring-files/">Ignored Files tab</a> in your repository settings.</p>
 </li>
 </ul>
-<p><img alt="Issue shortcuts menu" src="../images/issues-menu.png" /></p>
+<table>
+  <tr>
+    <td><img src="../images/issues-reason-menu.png" alt="Issue reason menu"></td>
+    <td><img src="../images/issues-reason-options.png" alt="Issue reason options"></td>
+  </tr>
+</table>
+
+<p><img alt="Issue reason result" src="../images/issues-reason-result.png" /></p>
 <h2 id="managing-system-detected-false-positives">Managing system-detected false positives<a class="headerlink" href="#managing-system-detected-false-positives" title="Permanent link">#</a></h2>
 <div class="admonition info">
 <p class="admonition-title">Info</p>
@@ -5096,7 +5104,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">October 22, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">November 19, 2025</span>
     
   </small>
 </div>
