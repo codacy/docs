@@ -76,9 +76,9 @@ There are several reasons that could cause Codacy to report unexpected coverage 
 
     This can be caused by a failed step in your CI/CD pipeline, for example. In the case of pull requests, you should make sure that you upload all relevant coverage reports for both the **common ancestor commit** and the **head commit** of the pull request branch.
 
--   Ignoring files on Codacy.
+-   Ignoring files on Codacy vs ignoring files on the ncoverage report.
 
-    [Updating the list of ignored files](../../repositories-configure/ignoring-files.md) can have an impact on the amount of coverable and covered lines of the commits that Codacy compares to calculate the coverage variation metric.
+    [Updating the list of ignored files](../../repositories-configure/ignoring-files.md) won't have an impact on the amount of coverable and covered lines of the commits that Codacy compares to calculate the coverage variation metric. Codacy calculates Coverage based solely on what is included in the coverage report. Therefore, if there are files you wish to keep from being included in the calculation, you should ensure they are not included in the coverage report.
 
 -   External factors affecting the execution of tests.
 
