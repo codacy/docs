@@ -55,7 +55,7 @@ Ensures protection on all fronts, by integrating vulnerability detection through
 This list displays repositories in descending order based on the number of AI issues. Depending on the filters applied, the list will show repositories with the most AI open issues, grouped by severity or AI category.
 
 
-![Repositories with most AI issues](images/open-issues-by-category.png)
+![Repositories with most AI issues](images/repositories-with-most-ai-issues.png)
 
 ## Risk Level
 
