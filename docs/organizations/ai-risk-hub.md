@@ -16,12 +16,9 @@ To access the AI Risk Hub dashboard, select an organization from the top navigat
 The AI Risk Hub dashboard includes the following sections to help you monitor AI risk in your organization:
 
 - [AI Policy Compliance](#ai-policy-compliance)
-- [Repositories with the most AI issues](#repositories-with-the-most-ai-issues)
+- [Repositories with most AI issues](#repositories-with-most-ai-issues)
 - [Risk Level](#risk-level)
 - [AI Risk Checklist](#ai-risk-checklist)
-- [AI Materials](#ai-materials)
-- [AI Developer Tooling](#ai-developer-tooling)
-
 ## AI Policy Compliance
 
 Our AI Policy is a pre-defined, curated ruleset designed to prevent risks and vulnerabilities that are inherent to AI code from entering the codebase – which can be enforced immediately across all repositories and pull request checks.
@@ -72,8 +69,8 @@ With most repositories today being subject to GenAI code contributions, the chec
 - AI Policy enabled: Enable the AI Policy inside the AI Risk Hub tab.
 - Coverage enabled: Set up code coverage for your repositories. See how to [upload coverage data](../coverage-reporter/index.md) to Codacy.
 - Enforced gates: Add [gates to your repositories](../repositories-configure/adjusting-quality-gates.md), and preferentially [apply repositories to gate policies](./using-gate-policies.md). 
-- Protected pull requests: Protect your pull requests by [enforcing quality gates](../getting-started/integrating-codacy-with-your-git-workflow.md#3-blocking-merging-pull-requests-optional--idblocking-pull-requests).
-- Daily vulnerability scans: [Enable Proactive SCA](./managing-security-and-risk.md#dependencies--iddependencies-list) to protect your repositories from dependencies vulnerabilities.
-- Applications scanned: [Enable App scanning](./managing-security-and-risk.md#app-scanning--idapp-scanning) to scan Web Applications and APIs for security vulnerabilities.
+- Protected pull requests: Protect your pull requests by [enforcing quality gates](../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
+- Daily vulnerability scans: [Enable Proactive SCA](./managing-security-and-risk.md#dependencies-list) to protect your repositories from dependencies vulnerabilities.
+- Applications scanned: [Enable App scanning](./managing-security-and-risk.md#app-scanning) to scan Web Applications and APIs for security vulnerabilities.
 
 ![AI Risk Checklist](images/ai-risk-checklist.png)
