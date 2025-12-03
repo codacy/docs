@@ -318,7 +318,7 @@ Each Codacy issue reported by Security and risk management belongs to one of the
 | **File Access**                    | File access security issues may allow an attacker to access arbitrary files and directories stored on the file system such as application source code, configuration, and critical system files.                 |
 | **HTTP Headers**                   | Insecure HTTP headers are a common attack vector for malicious users.                                                                                                                                            |
 | **Input Validation**               | Client input should always be validated to prevent malformed or malicious data from entering the workflow of an information system.                                                                              |
-| **Insecure Modules and Libraries** | Security issues related to modules or libraries that can <span class="skip-vale">potentially</span> include vulnerabilities.                                                                                     |
+| **Insecure Modules and Libraries** | Security issues related to modules or libraries that are malicious or can <span class="skip-vale">potentially</span> include vulnerabilities.                                                                                     |
 | **Insecure Storage**               | Security issues related to insecure storage of sensitive data.                                                                                                                                                   |
 | **Malicious Code**                 | Security issues related to code patterns that are <span class="skip-vale">potentially</span> unsafe.                                                                                                             |
 | **Mass Assignment**                | Unprotected mass assignments are a Rails feature that could allow an attacker to update sensitive model attributes.                                                                                              |
@@ -340,7 +340,7 @@ The following table lists the available scan types and their descriptions:
 | Scan type                         | Description                                                                                                                    |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | **Code Scanning**                 | Analysis of source code for vulnerabilities without execution. Also known as Static Application Security Testing (**SAST**).   |
-| **Software Composition Analysis** | Analysis of external libraries and packages for vulnerabilities or outdated versions.                                          |
+| **Software Composition Analysis** | Analysis of external libraries and packages for malicious intent, vulnerabilities or outdated versions.                                          |
 | **Exposed Secrets**               | Detection of sensitive information, such as passwords or API keys, inadvertently included in the code.                         |
 | **Infrastructure as Code**        | Detection of configuration issues within infrastructure-as-code (IaC) files that could pose risks.                             |
 | **Penetration Testing**           | Results from [penetration testing](#opening-and-closing-pen-testing-items) to find security vulnerabilities in running code.   |

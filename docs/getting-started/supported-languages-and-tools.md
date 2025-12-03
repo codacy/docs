@@ -44,6 +44,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <th><a style="color: white;" href="#suggest-fixes">Suggested fixes</a></th>
       <th>Secret detection</th>
       <th>Dependency vulnerability scanning</th>
+      <th>Malicious packages detection <a href="#malicious-packages-detection"><sup>11</sup></a></th>
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">Duplication</a></th>
       <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">Complexity</a></th>
       <th>License scanning</th>
@@ -58,6 +59,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a></td>
       <td>-</td>
+      <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td>-</td>
       <td>-</td>
@@ -66,6 +68,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>AsyncAPI</td>
       <td>-</td>
       <td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -85,11 +88,13 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Azure Resource Manager Templates</td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -108,6 +113,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
+      <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -123,6 +129,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
+      <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -136,6 +143,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>.deps.json</code> (.Net), <code>packages.lock.json</code> (NuGet) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <code>packages.lock.json</code> for malicious packages published in <a href="https://www.nuget.org/">NuGet</a> </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -144,6 +152,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>CoffeeScript</td>
       <td>.coffee</td>
       <td><a href="https://github.com/clutchski/coffeelint">CoffeeLint</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -161,11 +170,13 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>CSS</td>
       <td>.css</td>
       <td><a href="https://stylelint.io/">Stylelint</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -180,6 +191,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pubspec.lock</code></td>
+      <td>-</td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td>-</td>
       <td>-</td>
@@ -196,6 +208,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Elixir</td>
@@ -205,6 +218,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>mix.lock</code> (Mix) </td>
+      <td>-</td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td>-</td>
       <td>-</td>
@@ -216,6 +230,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -234,6 +249,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>go.mod</code></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>go.mod</code> for malicious packages published in <a href="https://github.com">github.com</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -242,6 +258,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>Groovy</td>
       <td>.groovy</td>
       <td><a href="https://codenarc.github.io/CodeNarc/">CodeNarc</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -261,6 +278,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Java</td>
@@ -274,6 +292,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code> for malicious packages published in <a href="https://maven.apache.org/">maven</a></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -288,6 +307,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> for malicious packages published in <a href="https://www.npmjs.com/">npm</a> </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package-lock.json</code> (npm)</td>
@@ -303,11 +323,13 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>JSP</td>
       <td>.jsp</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -326,6 +348,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code> for malicious packages published in <a href="https://maven.apache.org/">maven</a></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/detekt/detekt">detekt</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td>-</td>
@@ -341,6 +364,7 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
     </tr>
@@ -348,6 +372,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>Less</td>
       <td>.less</td>
       <td><a href="https://stylelint.io/">Stylelint</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -365,11 +390,13 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Objective-C</td>
       <td>.m</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a> <a href="#client-side"><sup>3</sup></a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -387,6 +414,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>PHP</td>
@@ -398,6 +426,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
+      <td>-</td>
       <td><a href="https://github.com/sebastianbergmann/phpcpd">PHPCPD</a></td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
@@ -406,6 +435,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>PL/SQL</td>
       <td>.trg, .prc, .fnc, .pld, .pls, .plh, .plb, .pck, .pks, .pkh, .pkb, .typ, .tyb, .tps, .tpb</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -423,11 +453,13 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>PowerShell</td>
       <td>.ps1, .psc1, .psd1, .psm1, .ps1xml, .pssc, .cdxml, .clixml</td>
       <td><a href="https://github.com/PowerShell/PSScriptAnalyzer">PSScriptAnalyser</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -458,6 +490,9 @@ The table below lists all languages that Codacy supports and the corresponding t
         <a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)
       </td>
       <td>
+        <a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv) <br>for malicious packages published in <a href="https://pypi.org/">PyPI</a>
+      </td>
+      <td>
         <a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a>
         <a href="#different-tools"><sup>10</sup></a>
       </td>
@@ -477,6 +512,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Gemfile.lock</code> (Bundler) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Gemfile.lock</code> for malicious packages published in <a href="https://rubygems.org">rubygems.org</a> </td>
       <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -489,6 +525,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Cargo.lock</code> (Cargo) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Cargo.lock</code> for malicious packages published in <a href="https://crates.io">crates.io</a> </td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -497,6 +534,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>Sass</td>
       <td>.scss</td>
       <td><a href="https://stylelint.io/">Stylelint</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -515,6 +553,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>build.sbt.lock</code> (sbt) <a href="#scala-dependencies"><sup>9</sup></a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>build.sbt.lock</code> for malicious packages published in <a href="https://maven.apache.org/">maven</a> <a href="#scala-dependencies"><sup>9</sup></a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -523,6 +562,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>Serverless Framework</td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -541,6 +581,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Swift</td>
@@ -554,6 +595,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
+      <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -574,6 +616,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Terraform</td>
@@ -588,11 +631,13 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Transact-SQL</td>
       <td>.tsql</td>
       <td><a href="https://github.com/tsqllint/tsqllint/">TSQLLint</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -609,6 +654,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> for malicious packages published in <a href="https://www.npmjs.com/">npm</a> </td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package-lock.json</code> (npm)</td>
@@ -617,6 +663,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>Unity</td>
       <td>-</td>
       <td><a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a> <a href="#client-side"><sup>3</sup></a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -634,11 +681,13 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>Visual Basic</td>
       <td>.vb</td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarVB</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -650,6 +699,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>Visualforce</td>
       <td>.component, .page</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -667,11 +717,13 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td>-</td>
+      <td>-</td>
     </tr>
     <tr>
       <td>XSL</td>
       <td>.xsl</td>
       <td><a href="https://pmd.github.io/">PMD</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -685,6 +737,7 @@ The table below lists all languages that Codacy supports and the corresponding t
       <td>-</td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
+      <td>-</td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -904,6 +957,7 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <sup><span id="swiftlint-complexity">8</span></sup>: Supports [reporting warnings or errors](https://realm.github.io/SwiftLint/cyclomatic_complexity.html) on functions above specific complexity thresholds. Enable the rule **Cyclomatic Complexity** on the [Code patterns page](../repositories-configure/configuring-code-patterns.md), or use a [configuration file](https://realm.github.io/SwiftLint/index.html#configuration) to customize the thresholds.  
 <sup><span id="scala-dependencies">9</span></sup>: Requires the [sbt-dependency-lock](https://github.com/stringbean/sbt-dependency-lock) plugin for generating the lockfile.  
 <sup><span id="different-tools">10</span></sup>: Codacy may use a different version of this tool for measuring complexity and duplication.  
+<sup><span id="malicious-packages-detection">11</span></sup>: Malicious packages identified in the [OpenSSF Malicious Packages database](https://github.com/ossf/malicious-packages).  
 <sup><span id="suggest-fixes">🔧</span></sup>: Supports [suggesting fixes](../repositories-configure/integrations/github-integration.md#suggest-fixes) for identified issues.
 
 ## See also
