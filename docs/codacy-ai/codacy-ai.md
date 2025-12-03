@@ -10,9 +10,9 @@ Codacy AI utilizes only enterprise-grade instances of OpenAI and Google Gemini s
 
 ### AI-enhanced comments
 
-AI-enhanced comments are optional, machine-generated suggestions that appear directly in pull requests and review threads. They use Codacy's AI to provide concise issue summaries, remediation suggestions, and links to relevant documentation — helping reviewers and authors quickly understand and fix problems. 
+AI-enhanced comments are optional, machine-generated suggestions that appear directly in pull requests and review threads. They use Codacy's AI to provide concise issue summaries, remediation suggestions, and links to relevant documentation — helping reviewers and authors quickly understand and fix problems.
 
-This feature leverages openAI models, and is strictly opt-in: it will only run on repositories or projects where a repository admin has enabled it.
+This feature leverages OpenAI models, and is strictly opt-in: it will only run on repositories or projects where a repository admin has enabled it.
 
 How to turn it on
 
@@ -35,7 +35,13 @@ Notes
 
 ### Smart False Positive Triage
 
-This feature leverages openAI models, and is strictly opt-in: you need to get in touch with us in order to enable it.
+{%
+    include-markdown "../assets/includes/paid.md"
+    start="<!--paid-feature-business-start-->"
+    end="<!--paid-feature-business-end-->"
+%}
+
+This feature leverages OpenAI models, and is strictly opt-in: you need to get in touch with us in order to enable it.
 
 How to turn it on
 
@@ -49,6 +55,9 @@ Notes
 
 ### PR Reviewer
 
+!!! note
+    PR Reviewer is currently only available on GitHub, for all Team and Business plans.
+
 This feature leverages Google Gemini models, and is strictly opt-in: it will only run on repositories or projects where a repository admin has enabled it.
 
 How to turn it on
@@ -56,11 +65,11 @@ How to turn it on
 1. Go to your organization or repository settings in Codacy.
 2. Navigate to the "Integrations" or "AI features" section (depending on your Codacy plan and UI version).
 3. Find "AI Reviewer", under "Status checks", and toggle the feature to "On" for the repository or organization scope you want to enable.
-5. Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests with of the information used to proved the AI-enriched reviews.
-6. To request a PR Review from codacy, add a "codacy-review" label to you Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.
+4. Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests with of the information used to provide the AI-enriched reviews.
+5. To request a PR Review from codacy, add a **`codacy-review`** label to your Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.
 
 Notes
 
 - Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into model training.
-- To enrich the review, the git diff of the Pull Request as well as some ralted files' contents can be sent as context. No data is stored on our side, or used to train any models.
-- Prompts are neither stored nor visible by anyone 
+- To enrich the review, the git diff of the Pull Request as well as some related files' contents can be sent as context. No data is stored on our side, or used to train any models.
+- Prompts are neither stored nor visible by anyone
