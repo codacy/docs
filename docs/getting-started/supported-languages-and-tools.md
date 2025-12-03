@@ -27,26 +27,28 @@ The table below lists all languages that Codacy supports and the corresponding t
 
 <table>
   <colgroup>
-    <col span="1" style="width: 20%;">
-    <col span="1" style="width: 20%;">
-    <col span="1" style="width: 10%;">
-    <col span="1" style="width: 10%;">
-    <col span="1" style="width: 20%;">
-    <col span="1" style="width: 10%;">
-    <col span="1" style="width: 10%;">
-    <col width="20%"/>
+    <col span="1" style="width: 12.5%;"> <!-- Language -->
+    <col span="1" style="width: 12.5%;"> <!-- File extensions -->
+    <col span="1" style="width: 10%;">   <!-- Static analysis -->
+    <col span="1" style="width: 7.5%;">  <!-- Suggested fixes -->
+    <col span="1" style="width: 7.5%;">  <!-- Secret detection -->
+    <col span="1" style="width: 12.5%;"> <!-- Vuln scanning -->
+    <col span="1" style="width: 12.5%;"> <!-- Malicious packages -->
+    <col span="1" style="width: 7.5%;">  <!-- Duplication -->
+    <col span="1" style="width: 7.5%;">  <!-- Complexity -->
+    <col span="1" style="width: 10%;">   <!-- License scanning -->
   </colgroup>
   <thead>
     <tr>
       <th>Language</th>
       <th>File extensions</th>
-      <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Static analysis</a></th>
-      <th><a style="color: white;" href="#suggest-fixes">Suggested fixes</a></th>
+      <th><a style="color: white;text-decoration: underline;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Static analysis</a></th>
+      <th><a style="color: white;text-decoration: underline;" href="#suggest-fixes">Suggested fixes</a></th>
       <th>Secret detection</th>
       <th>Dependency vulnerability scanning</th>
-      <th>Malicious packages detection <a href="#malicious-packages-detection"><sup>11</sup></a></th>
-      <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">Duplication</a></th>
-      <th><a style="color: white;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">Complexity</a></th>
+      <th>Malicious packages detection <a style="color: white;text-decoration: underline;" href="#malicious-packages-detection"><sup>11</sup></a></th>
+      <th><a style="color: white;text-decoration: underline;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">Duplication</a></th>
+      <th><a style="color: white;text-decoration: underline;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">Complexity</a></th>
       <th>License scanning</th>
     </tr>
   </thead>
