@@ -25,19 +25,7 @@ The table below lists all languages that Codacy supports and the corresponding t
 !!! important
     Codacy runs security and other analysis tools when code changes are pushed to your repositories. These tools don't scan code for issues continuously.
 
-<table>
-  <colgroup>
-    <col span="1" style="width: 12.5%;"> <!-- Language -->
-    <col span="1" style="width: 12.5%;"> <!-- File extensions -->
-    <col span="1" style="width: 10%;">   <!-- Static analysis -->
-    <col span="1" style="width: 7.5%;">  <!-- Suggested fixes -->
-    <col span="1" style="width: 7.5%;">  <!-- Secret detection -->
-    <col span="1" style="width: 12.5%;"> <!-- Vuln scanning -->
-    <col span="1" style="width: 12.5%;"> <!-- Malicious packages -->
-    <col span="1" style="width: 7.5%;">  <!-- Duplication -->
-    <col span="1" style="width: 7.5%;">  <!-- Complexity -->
-    <col span="1" style="width: 10%;">   <!-- License scanning -->
-  </colgroup>
+<table style="font-size: .5rem;">
   <thead>
     <tr>
       <th>Language</th>
