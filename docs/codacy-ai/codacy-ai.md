@@ -68,14 +68,14 @@ _This feature leverages Google Gemini models, and is strictly opt-in: it will on
 
 The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the power of AI. It draws in the necessary context from source code and PR metadata to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
 
-More details about [Ai Reviewer here →](../repositories-configure/integrations/github-integration.md#ai-reviewer).
+More details about [AI Reviewer here →](../repositories-configure/integrations/github-integration.md#ai-reviewer).
 
 **How to turn it on**
 
 1. Go to your organization or repository settings in Codacy.
 2. Navigate to the "Integrations" or "AI features" section (depending on your Codacy plan and UI version).
 3. Find "AI Reviewer", under "Status checks", and toggle the feature to "On" for the repository or organization scope you want to enable.
-4. Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests with of the information used to provide the AI-enriched reviews.
+4. Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests with the information used to provide the AI-enriched reviews.
 5. To request a PR Review from codacy, add a **`codacy-review`** label to your Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.
 
 **Notes**
