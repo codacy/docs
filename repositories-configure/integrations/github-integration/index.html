@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the GitHub integration to have status checks, annotations, issue and coverage summaries, and suggested fixes from Codacy directly on pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2025-12-04 16:10:08">
+        <meta http-equiv="last-modified" content="2025-12-05 14:14:45">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/github-integration/">
@@ -4802,13 +4802,15 @@
 </div>
 <p><img alt="Pull request status check on GitHub" src="../images/github-integration-pr-status.png" /></p>
 <h3 id="ai-reviewer">AI Reviewer<a class="headerlink" href="#ai-reviewer" title="Permanent link">#</a></h3>
-<p>The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the power of AI. It draws in the necessary context from source code and PR metadata to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.</p>
-<p>It provides feedback on missing or weak tests, complex or duplicated code, and keeps security concerns up to date. Beyond that, it adds contextual insights about whether the changes follow the requirements, business rules, and logic used in the project.</p>
-<p><img alt="AI Reviewer on Github" src="../images/github-integration-ai-reviewer.png" /></p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This feature is only supported on GitHub.</p>
+<p>If you choose to enable the AI Reviewer, consider disabling the AI-enhanced comments, as it may duplicate any comments on Codacy issues you receive.</p>
 </div>
+<p>The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the power of AI. It draws in the necessary context from source code and PR metadata to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.</p>
+<p>It provides feedback on missing or weak tests, complex or duplicated code, and keeps security concerns up to date. Beyond that, it adds contextual insights about whether the changes follow the requirements, business rules, and logic used in the project.</p>
+<p>This setting can be enabled at a repository or organization level. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews. To request a PR Review from Codacy, add a <strong><code>codacy-review</code></strong> label to your Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.</p>
+<p><img alt="AI Reviewer on Github" src="../images/github-integration-ai-reviewer.png" /></p>
 <h3 id="issue-annotations">Issue annotations<a class="headerlink" href="#issue-annotations" title="Permanent link">#</a></h3>
 <p>Adds annotations on the lines of the pull request where Codacy finds new issues. Codacy maps the severity of the issues reported by the tools to the severity levels of the annotations. To enable this option, you must enable <strong>Status checks</strong> first.</p>
 <p><img alt="Issue annotation on GitHub" src="../images/github-integration-pr-annotation.png" /></p>
@@ -5008,7 +5010,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 4, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 5, 2025</span>
     
   </small>
 </div>
