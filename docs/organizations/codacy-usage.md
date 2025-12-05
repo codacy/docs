@@ -1,6 +1,6 @@
 # Codacy usage
 
-The **Codacy usage** dashboard provides an overview of how your organization is adopting Codacy. You can view and filter the list of repositories from your Git provider. It is also possible to filter, from repositories in Codacy, by gate and coverage information. You can also filter by selecting specific repositories or using [the segments that you have set up](segments.md).
+The **Codacy usage** dashboard provides an overview of how your organization is adopting Codacy. You can view and filter the list of repositories from your Git provider. You can also filter repositories in Codacy by gate and coverage information. You can also filter by selecting specific repositories or using [the segments that you have set up](segments.md).
 
 ![Codacy usage dashboard](images/codacy-usage-dashboard.png)
 
@@ -47,6 +47,6 @@ This chart displays the number of pull requests merged in your repositories. Mer
 
 ## Top repositories
 
-This list displays maximum 10 repositories in your Git provider. Depending on the filters applied, the list will show repositories not in Codacy, repositories in Codacy, or repositories in Codacy grouped by a specific dimension, such as gates information and/or coverage information.
+This list displays a maximum of 10 repositories in your Git provider. Depending on the filters applied, the list will show repositories not in Codacy, repositories in Codacy, or repositories in Codacy grouped by a specific dimension, such as gates information and/or coverage information.
 
 ![Top repositories](images/top-repositories.png)
