@@ -59,9 +59,9 @@ More details about [False Positives here →](../repositories/commits.md#false-p
 - To detect a Possible False Positive, Codacy only processes the specific issue context: one request per file with issues. No additional repository data is sent or used.
 - Prompts are neither stored nor visible by anyone
 
-<div id="pr-reviewer">
+<div id="pr-reviewer"></div>
+
 ### AI Reviewer
-</div>
 
 !!! note
     AI Reviewer is currently only available on GitHub, for all Team and Business plans.
