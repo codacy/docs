@@ -1,0 +1,16 @@
+/*
+These are overides to the current theme.
+*/
+
+:root, ::backdrop {
+    --sl-color-text-accent: #005DF0;
+    --sl-font: Inter;
+}
+
+a {
+    text-decoration: none;
+}
+
+.right-sidebar {
+    border-inline-start: none;
+}

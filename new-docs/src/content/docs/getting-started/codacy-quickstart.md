@@ -1,9 +1,8 @@
 ---
+title: Codacy quickstart (5 min)
 description: Set up Codacy to automatically analyze your source code and identify issues as you go, helping you develop software more efficiently with fewer issues down the line. Codacy notifies you of security issues, code coverage, duplication, and complexity in every commit and pull request.
 nav_step: 0
 ---
-
-# Codacy quickstart (5 min)
 
 Codacy is an automated code quality and coverage platform that analyzes your source code and identifies issues as you go, helping your team ship robust software by scanning over 40 programming languages, such as JavaScript, Python, Java, C#, and PHP.
 
@@ -20,7 +19,7 @@ By integrating with your Git provider, Codacy keeps track of your team’s work,
 
 ## Adding your first repository
 
-{% include-markdown "../assets/includes/nav-multistep-quickstart.md" %}
+{% include-markdown "../../../assets/includes/nav-multistep-quickstart.md" %}
 
 To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.codacy.com/) and click **Start free**. Then, follow these steps:
 
@@ -28,37 +27,40 @@ To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.
 1.  [Choosing an organization](#choosing-organization)
 1.  [Adding repositories](#adding-repositories)
 
-## 1. Signing up {: #signing-up}
+## 1. Signing up 
+{: #signing-up}
 
 Sign up with a Git provider such as GitHub, GitLab, or Bitbucket. This links your Codacy user with your Git provider user, making it easier to add repositories to Codacy and invite your teammates.
 
-Codacy will request access to your Git provider during the authorization flow. [Check the permissions that Codacy requires and why](which-permissions-does-codacy-need-from-my-account.md).
+Codacy will request access to your Git provider during the authorization flow. [Check the permissions that Codacy requires and why](which-permissions-does-codacy-need-from-my-account).
 
-## 2. Choosing an organization {: #choosing-organization}
+## 2. Choosing an organization 
+{: #choosing-organization}
 
-Now, you'll need to add or join the organizations that contain your repositories. The organization with the same name as your Git provider username contains your personal repositories. Read more about [organizations on Codacy](../organizations/what-are-organizations.md).
+Now, you'll need to add or join the organizations that contain your repositories. The organization with the same name as your Git provider username contains your personal repositories. Read more about [organizations on Codacy](../../organizations/what-are-organizations).
 
 To start adding your repositories, select one of the organizations.
 
 !!! note
-    If you can't see the organization you're looking for, [follow these troubleshooting instructions](../faq/troubleshooting/why-cant-i-see-my-organization.md).
+    If you can't see the organization you're looking for, [follow these troubleshooting instructions](../faq/troubleshooting/why-cant-i-see-my-organization).
 
 ![Choosing an organization](../organizations/images/organization-add.png)  
 
-## 3. Adding repositories {: id="adding-repositories"}
+## 3. Adding repositories 
+{: #adding-repositories}
 
 Next, add the repositories that you wish to analyze. Codacy begins an initial analysis as soon as you add a repository and sets everything up to ensure your next commits on that repository are analyzed.
 
 !!! note
-    You can only add repositories on Codacy if you have the [necessary permissions on your Git provider](../organizations/roles-and-permissions-for-organizations.md).
+    You can only add repositories on Codacy if you have the [necessary permissions on your Git provider](../organizations/roles-and-permissions-for-organizations).
 
 ![Adding repositories](../organizations/images/repositories-add.png)
 
-Click the repository name to navigate to the repository dashboard and see the [code quality overview of your repository](../repositories/repository-dashboard.md) as soon as the initial analysis is complete:
+Click the repository name to navigate to the repository dashboard and see the [code quality overview of your repository](../repositories/repository-dashboard) as soon as the initial analysis is complete:
 
 ![Repository dashboard](../repositories/images/repository-dashboard.png)
 
-**Congratulations, your new repository is ready!** To explore the initial analysis results, [check the **Issues** page](../repositories/issues.md).
+**Congratulations, your new repository is ready!** To explore the initial analysis results, [check the **Issues** page](../repositories/issues).
 
 ## Next steps
 

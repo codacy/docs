@@ -1,0 +1,20 @@
+{
+  "name": "teal-tower",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@astrojs/starlight": "^0.37.1",
+    "astro": "^5.6.1",
+    "sharp": "^0.34.2"
+  },
+  "devDependencies": {
+    "remark-attrs": "^1.0.0"
+  }
+}
