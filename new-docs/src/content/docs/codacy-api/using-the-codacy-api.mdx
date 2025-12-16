@@ -2,8 +2,6 @@
 title: Using the Codacy API
 ---
 
-# Using the Codacy API
-
 The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.
 
 Codacy supports two API versions but we strongly recommend using the new API v3 when possible since it's the version being actively developed. Import the OpenAPI 2.0 definition provided below into your development tools to help bootstrap your integration with Codacy.
@@ -25,11 +23,11 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
     <tr>
       <th>OpenAPI 2.0 definition</th>
       <td><a href="https://api.codacy.com/api/api-docs/swagger.yaml" class="skip-vale">https://api.codacy.com/api/api-docs/swagger.yaml</a></td>
-      <td>-
-          <!--NOTE
-              See https://github.com/codacy/docs/pull/1058#discussion_r810889139 for why we decided to postpone publishing the definition file URL for the API v2.
-              <a href="https://api.codacy.com/api-docs/swagger.yaml">https://api.codacy.com/api-docs/swagger.yaml</a>
-          --></td>
+      <td>-</td>
+      {/*<!--NOTE
+        See https://github.com/codacy/docs/pull/1058#discussion_r810889139 for why we decided to postpone publishing the definition file URL for the API v2. <a href="https://api.codacy.com/api-docs/swagger.yaml">https://api.codacy.com/api-docs/swagger.yaml</a>
+       -->*/}
+        
     </tr>
     <tr>
       <th>Base URL</th>
@@ -39,7 +37,7 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
     <tr>
       <th>Overview</th>
       <td>
-        <p>Use the new endpoints to access and manipulate the following resources, among others:<p>
+        <p>Use the new endpoints to access and manipulate the following resources, among others:</p>
         <ul>
           <li><a href="https://api.codacy.com/api/api-docs#codacy-api-analysis">Analysis</a> details, issue and ignored issue details, repository quality settings</li>
           <li><a href="https://api.codacy.com/api/api-docs#codacy-api-account">Account</a> details and API token management</li>
@@ -60,25 +58,26 @@ Codacy supports two API versions but we strongly recommend using the new API v3 
   </tbody>
 </table>
 
-!!! important
-    **If you're using Codacy Self-hosted** you must use your own Codacy instance domain name in the API URLs to access the endpoint documentation matching your Codacy Self-hosted version and to call the endpoints on your Codacy instance.
+:::important
+**If you're using Codacy Self-hosted** you must use your own Codacy instance domain name in the API URLs to access the endpoint documentation matching your Codacy Self-hosted version and to call the endpoints on your Codacy instance.
 
-    For example, use the following URLs for the API v3 endpoint documentation and endpoints:
+For example, use the following URLs for the API v3 endpoint documentation and endpoints:
 
-    ```
-    https://<your Codacy instance domain name>/api/api-docs
-    
-    https://<your Codacy instance domain name>/api/v3
-    ```
+```
+https://<your Codacy instance domain name>/api/api-docs
+https://<your Codacy instance domain name>/api/v3
+```
+:::
 
 ## Authenticating requests
 
 Most API endpoints require that you authenticate using an API token. After [obtaining the necessary tokens](api-tokens.md), include them in your request headers using the format `api-token: <your account API token>` or `project-token: <your repository API token>`.
 
-!!! note
-    Currently, all API v3 endpoints that require authentication must use **account API tokens**, while the API v2 endpoints require either **account or repository API tokens**.
+:::note
+Currently, all API v3 endpoints that require authentication must use **account API tokens**, while the API v2 endpoints require either **account or repository API tokens**.
 
-    Performing `GET` requests for public repositories doesn't require authentication.
+Performing `GET` requests for public repositories doesn't require authentication.
+:::
 
 For example, to make a request to an API v3 endpoint that requires an account API token:
 
