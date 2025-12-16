@@ -28,13 +28,13 @@ To get started, head to [<span class="skip-vale">codacy.com</span>](https://www.
 1.  [Choosing an organization](#choosing-organization)
 1.  [Adding repositories](#adding-repositories)
 
-## 1. Signing up {: id="#signing-up"}
+## 1. Signing up {: id="signing-up"}
 
 Sign up with a Git provider such as GitHub, GitLab, or Bitbucket. This links your Codacy user with your Git provider user, making it easier to add repositories to Codacy and invite your teammates.
 
 Codacy will request access to your Git provider during the authorization flow. [Check the permissions that Codacy requires and why](which-permissions-does-codacy-need-from-my-account.md).
 
-## 2. Choosing an organization {: id="#choosing-organization"}
+## 2. Choosing an organization {: id="choosing-organization"}
 
 Now, you'll need to add or join the organizations that contain your repositories. The organization with the same name as your Git provider username contains your personal repositories. Read more about [organizations on Codacy](../organizations/what-are-organizations.md).
 
