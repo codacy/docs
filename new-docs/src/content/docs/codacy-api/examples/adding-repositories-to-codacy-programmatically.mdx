@@ -3,12 +3,12 @@ title: Adding repositories to Codacy programmatically
 description: Example of how to add multiple repositories programmatically using Codacy's API v3 endpoint addRepository.
 ---
 
-# Adding repositories to Codacy programmatically
+import ApiExamplePaginationImportant from '../../../includes/ApiExamplePaginationImportant.astro'
 
 There are scenarios where manually adding Git repositories on the Codacy UI is inconvenient or time-consuming. For example:
 
--   You want to add all new repositories to Codacy when they're created on the Git provider
--   You're adding many repositories to Codacy, such as when initially adding all repositories in your Git provider organization
+- You want to add all new repositories to Codacy when they're created on the Git provider
+- You're adding many repositories to Codacy, such as when initially adding all repositories in your Git provider organization
 
 To add repositories programmatically, use the Codacy API v3 endpoint [<span class="skip-vale">addRepository</span>](https://app.codacy.com/api/api-docs#addrepository) by performing an HTTP POST request to `/repositories`, specifying the Git provider and the full path of the repository in the body of the request:
 
@@ -21,8 +21,8 @@ curl -X POST https://app.codacy.com/api/v3/repositories \
 
 Substitute the placeholders with your own values:
 
--   **API_KEY:** [Account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
--   **GIT_PROVIDER:** Git provider hosting of the repository, using one of the values in the table below. For example, `gh` for GitHub Cloud.
+- **API_KEY:** [Account API token](../api-tokens.md#account-api-tokens) used to authenticate on the Codacy API.
+- **GIT_PROVIDER:** Git provider hosting of the repository, using one of the values in the table below. For example, `gh` for GitHub Cloud.
 
     | Value | Git provider      |
     | ----- | ----------------- |
@@ -33,16 +33,17 @@ Substitute the placeholders with your own values:
     | `bb`  | Bitbucket Cloud   |
     | `bbe` | Bitbucket Server  |
 
--   **REPOSITORY_FULL_PATH:** Name of the organization and repository on the Git provider, using the format `<organization>/<repository>`. For example, `codacy/docs`. You must have admin permissions over the repository on the Git provider.
+- **REPOSITORY_FULL_PATH:** Name of the organization and repository on the Git provider, using the format `<organization>/<repository>`. For example, `codacy/docs`. You must have admin permissions over the repository on the Git provider.
 
-    !!! important
-        **If you're using GitLab** you must specify the full group path and the repository using the format `<group>/<subgroup-1>/.../<subgroup-N>/<repository>`.
+:::info
+**If you're using GitLab** you must specify the full group path and the repository using the format `<group>/<subgroup-1>/.../<subgroup-N>/<repository>`.
+:::
 
 ## Example: Adding all repositories in a GitHub organization
 
 We provide an example Bash script that adds all repositories in a GitHub Cloud organization to Codacy. We suggest that you adapt the script to your specific scenario.
 
-!!! warning
+:::caution
     Since Codacy automatically analyzes new repositories, adding many repositories in a short time can cause delays in the analysis of other repositories depending on the size of the repositories, the sizing of the infrastructure, and the concurrent analysis configuration. For example:
 
     | Repositories added | Expected delay |
@@ -52,6 +53,7 @@ We provide an example Bash script that adds all repositories in a GitHub Cloud o
     | More than 100      | Extreme        |
 
     To avoid these delays, add repositories in small batches or space out adding new repositories over time.
+:::
 
 The example script:
 
@@ -93,6 +95,4 @@ for repo in $(curl -s https://api.github.com/orgs/$GITHUB_ORG_NAME/repos -H "Aut
 done
 ```
 
-{% include "../../assets/includes/api-example-pagination-important.md" %}
-
-    Besides this, the script doesn't consider paginated results obtained from the GitHub API. [Learn how to use pagination on the GitHub API](https://docs.github.com/en/rest/guides/traversing-with-pagination) to ensure that you obtain all the repositories in your organization.
+<ApiExamplePaginationImportant github="true"/>
