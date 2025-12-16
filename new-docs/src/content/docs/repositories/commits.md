@@ -55,11 +55,12 @@ This area displays the quality gate status for the {{ page.meta.page_name }} and
 
     Depending on the languages being analyzed or if you haven't [set up coverage for your repository](../coverage-reporter/index.md), some metrics **may not be calculated** (represented by `-`).
 
-    !!! note
-        Learn how Codacy calculates the code quality metrics in more detail:
+    :::note
+    Learn how Codacy calculates the code quality metrics in more detail:
 
-        -   [Which code quality metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
-        -   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
+    -   [Which code quality metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+    -   [Why does Codacy show unexpected coverage changes?](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md)
+    :::
 
 -   The **colors** depend on the [quality gate rules](../repositories-configure/adjusting-quality-gates.md) for your repository:
 
@@ -67,8 +68,9 @@ This area displays the quality gate status for the {{ page.meta.page_name }} and
     -   **Red:** The metric fails the quality gate
     -   **Gray:** The metric has no value
 
-    !!! note
-        If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the metrics and optionally re-upload the Coverage report if you also changed the coverage gate rules.
+    :::note
+    If you change the quality gate rules you must reanalyze the {{ page.meta.page_name }} to update the metrics and optionally re-upload the Coverage report if you also changed the coverage gate rules.
+    :::
 <!--quality-overview-end-->
 
 <!--tabs-start-->
@@ -96,15 +98,18 @@ The following are example situations that can lead to potential issues:
 
 -   If a file had [more than 50 issues reported by the same tool](../faq/code-analysis/does-codacy-place-limits-on-the-code-analysis.md) and you push a new commit that fixes some of these issues, Codacy will report more issues until the limit of 50 issues. These issues will be potential issues if they're outside the lines of code changed in the new commit.
 
-!!! note
-    **If you're using GitHub** you may see [annotations](../repositories-configure/integrations/github-integration.md#issue-annotations) for potential issues reported under **Unchanged files with check annotations** on the **Files changed** tab of your pull requests.
+:::note
+**If you're using GitHub** you may see [annotations](../repositories-configure/integrations/github-integration.md#issue-annotations) for potential issues reported under **Unchanged files with check annotations** on the **Files changed** tab of your pull requests.
 
-    This happens when Codacy reports potential issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/).
+This happens when Codacy reports potential issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/).
+
+:::
 
 ### False positive issues
 
-!!! info
-    The False Positive detection is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.
+:::note
+The False Positive detection is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.
+:::
 
 If your commit includes issues detected as false positives, an **Ignore all false positives** option will appear above the first issue in the list. This allows you to bulk ignore all detected false positives at once.
 
@@ -117,8 +122,9 @@ it will automatically add a comment listing all the detected false positives.
 
 ![Detected false positives comment](images/pull-requests-false-positives-comment.png)
 
-!!! note
-    Pull Request comments for False Positives are currently supported on GitHub only.
+:::note
+Pull Request comments for False Positives are currently supported on GitHub only.
+:::
 
 ## Duplication tab {: id="duplication-tabs"}
 
@@ -130,8 +136,9 @@ The **Duplication** tab displays the lists of clones (duplicated code blocks) th
 
 The **Complexity** tab displays the complexity changes introduced by the {{ page.meta.page_name }}. Use the sidebar filters to filter the list by high increase (4 or more), low increase (1 to 3), or improvement (less than 0).
 
-!!! note
-    For more information, see [how Codacy calculates cyclomatic complexity](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
+:::note
+For more information, see [how Codacy calculates cyclomatic complexity](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
+:::
 
 ![Complexity tab](./images/{{ page.meta.file_name }}-tab-complexity.png)
 

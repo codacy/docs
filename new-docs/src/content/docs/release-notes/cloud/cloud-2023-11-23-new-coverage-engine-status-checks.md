@@ -43,17 +43,20 @@ Please refer to the table below for the updated status of the transition process
   </tbody>
 </table>
 
-!!! note
-    Because of this transition, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to [differences in reported metrics](#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines).
+:::note
+Because of this transition, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to [differences in reported metrics](#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines).
+:::
 
 ## Git provider status checks from the new Coverage engine {: id="status-checks"}
 
-!!! info "This section applies to the repositories for which you set Codacy to send pull request coverage status data to your Git provider (see how on [GitHub](../../repositories-configure/integrations/github-integration.md#status-checks), [GitLab](../../repositories-configure/integrations/gitlab-integration.md#pull-request-status), and [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#pull-request-status))."
+:::note[This section applies to the repositories for which you set Codacy to send pull request coverage status data to your Git provider (see how on [GitHub](../../repositories-configure/integrations/github-integration.md#status-checks), [GitLab](../../repositories-configure/integrations/gitlab-integration.md#pull-request-status), and [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#pull-request-status)).]
+:::
 
 On June 5th 2024, Codacy stopped sending coverage checks from the old Coverage engine. As a consequence of this, you will only see the new checks from the new Coverage engine, **Codacy Diff Coverage** and **Codacy Coverage Variation**, and will no longer see the old **Codacy Coverage Report** check on your pull requests.
 
-!!! important
-    GitHub only: If you are using the Codacy Coverage Report status check to block merging pull requests, please [update your GitHub setup](#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github) to fix any disruptions.
+:::caution
+GitHub only: If you are using the Codacy Coverage Report status check to block merging pull requests, please [update your GitHub setup](#if-you-are-using-the-old-coverage-status-check-to-block-merging-pull-requests-on-github) to fix any disruptions.
+:::
 
 This is what the new checks look like on each provider:
 
@@ -116,7 +119,8 @@ If you are using the old status check to block merging pull requests on GitHub, 
 
 ## GitHub coverage summaries from the new Coverage engine {: id="coverage-summaries"}
 
-!!! info "This section applies to the repositories for which you set Codacy to post [coverage summaries](../../repositories-configure/integrations/github-integration.md#coverage-summaries) to your GitHub pull requests"
+:::note[This section applies to the repositories for which you set Codacy to post [coverage summaries](../../repositories-configure/integrations/github-integration.md#coverage-summaries) to your GitHub pull requests]
+:::
 
 {%
     include-markdown "../../assets/includes/coverage-github-accept-permissions.md"

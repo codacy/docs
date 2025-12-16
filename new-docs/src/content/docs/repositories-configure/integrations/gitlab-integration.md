@@ -11,8 +11,9 @@ When you add a new repository, Codacy sets the GitLab integration using the [def
 
 ![GitLab integration](images/gitlab-integration.png)
 
-!!! important
-    Codacy uses the GitLab user who added the repository to create comments on merge requests. If that user loses access to the repository, a repository admin must [refresh the GitLab integration](#refreshing).
+:::caution
+Codacy uses the GitLab user who added the repository to create comments on merge requests. If that user loses access to the repository, a repository admin must [refresh the GitLab integration](#refreshing).
+:::
 
 ## Configuring the GitLab integration {: id="configuring"}
 
@@ -50,13 +51,15 @@ Adds a pull request comment showing an overall view of the coverage metrics for 
 
 When there are new coverage results, Codacy updates the last coverage summary comment if it's included in the last 5 comments of the pull request. Otherwise, Codacy creates a new comment.
 
-!!! important
-    **To get coverage summaries** you must also [add coverage to your repository](../../coverage-reporter/index.md).
+:::caution
+**To get coverage summaries** you must also [add coverage to your repository](../../coverage-reporter/index.md).
+:::
 
 ![Coverage summary on GitLab](images/gitlab-integration-coverage-summary.png)
 
-!!! note
-    This feature is only supported on GitHub and GitLab Cloud.
+:::note
+This feature is only supported on GitHub and GitLab Cloud.
+:::
 
 ![Merge request summary on GitLab](images/gitlab-integration-pr-summary.png)
 

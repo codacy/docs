@@ -36,10 +36,12 @@ To upgrade PostgreSQL:
 
 1.  After the upgrade, clean the Codacy databases with [vacuumdb](https://www.postgresql.org/docs/10/app-vacuumdb.html) to prevent the <span class="skip-vale">autovacuum</a> feature from momentarily affecting the performance of the databases at a later time.
 
-!!! important
-    If you download and use an updated `values-production.yaml` file while upgrading to Codacy Self-hosted 9.0.0, the upgrade will fail because the MinIO PVC can't be resized.
+:::caution
+If you download and use an updated `values-production.yaml` file while upgrading to Codacy Self-hosted 9.0.0, the upgrade will fail because the MinIO PVC can't be resized.
 
-    [Please see the troubleshooting instructions](https://docs.codacy.com/chart/troubleshoot/troubleshoot/#upgrade-failed-cannot-patch-codacy-minio) for a workaround.
+[Please see the troubleshooting instructions](https://docs.codacy.com/chart/troubleshoot/troubleshoot/#upgrade-failed-cannot-patch-codacy-minio) for a workaround.
+
+:::
 
 ## Product enhancements
 

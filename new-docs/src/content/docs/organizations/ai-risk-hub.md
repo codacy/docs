@@ -7,8 +7,9 @@ description: The organization's AI Risk Hub dashboard provides an overview of al
 
 The **AI Risk Hub** dashboard provides an overview of all the AI issues detected in the repositories applied to the organization's AI Policy standard and your organization's risk level based on your AI practices. Here, you can navigate through the issues detected in your repositories and filter them by severity and category. You can also filter the issues by selecting specific repositories or using [the segments that you have set up](segments.md).
 
-!!! important
-    Currently this tab is a preview of a Business tier feature.
+:::caution
+Currently this tab is a preview of a Business tier feature.
+:::
 
 ![AI Risk Hub dashboard](images/ai-risk-hub-dashboard.png)
 

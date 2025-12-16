@@ -34,7 +34,8 @@ The overview page includes six panels:
 -   [Top 10 common security categories](#top-10-common-security-categories)
 
 To limit the information displayed in each panel, use the filter drop-down above the main area, and choose the relevant repositories, or utilise [**Segments**](../segments).
-!!! info "Check out how to [enable and configure **Segments**](../segments/#enabling-segments)"
+:::note[Check out how to [enable and configure **Segments**](../segments/#enabling-segments)]
+:::
 
 
 ### Open findings overview
@@ -77,8 +78,9 @@ For a detailed view of the counts on a specific week, hover over the graph.
 
 The **Top 10 high-risk repositories** list shows the repositories with the highest number of open findings, ordered by severity.
 
-!!! note
-    This panel may list fewer than ten repositories if there are fewer than ten repositories with open findings in the organization or if fewer than ten repositories are selected in the dropdown **Repository** filter.
+:::note
+This panel may list fewer than ten repositories if there are fewer than ten repositories with open findings in the organization or if fewer than ten repositories are selected in the dropdown **Repository** filter.
+:::
 
 ![Security and risk management high risk repositories panel](images/security-risk-management-overview-top-risk.png)
 
@@ -99,7 +101,8 @@ To access the findings page, access the [overview page](#dashboard) and click th
 ![Security and risk management findings page](images/security-risk-management-findings.png)
 
 On the left section of the page, besides sorting, you can update the filtering criteria by clicking the  [**Segments**](../segments) , **Repositories**, **Severities**, **Statuses**,  **Security categories**, or **Scan types** dropdowns above the list.
-!!! info "Check out how to [enable and configure **Segments**](../segments/#enabling-segments)"
+:::note[Check out how to [enable and configure **Segments**](../segments/#enabling-segments)]
+:::
 
 On the right section, you can view the filtered list of findings. Each finding card offers a quick overview of the vulnerability found, including its title, [source platform](#opening-and-closing-items), [scan type](#scan-types), [security category](#supported-security-categories), and related information such as the repository name, Jira issue key, or affected URL targets. To find out more, click this overview to navigate to the finding details on the source platform.
 
@@ -111,11 +114,13 @@ The same Common Vulnerability and Exposure can be classified with different seve
 
 To share the current view of the overview or findings page, click the **Copy URL** button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.
 
-!!! Important " [**Segments**](../segments) filter won't be considered when sharing the filtered view"
+:::caution[ [**Segments**](../segments) filter won't be considered when sharing the filtered view]
+:::
 
 ## Ignoring findings {: id="ignoring-findings"}
 
-!!! info "This feature is available only to organization admins and organization managers except for findings detected on [Git repositories](#opening-and-closing-items). For those findings, [repository permissions are respected](../repositories/issues.md#ignoring-and-managing-issues)"
+:::note[This feature is available only to organization admins and organization managers except for findings detected on [Git repositories](#opening-and-closing-items). For those findings, [repository permissions are respected](../repositories/issues.md#ignoring-and-managing-issues)]
+:::
 
 You can ignore a finding using the context menu both in the findings list page and the findings details page. When ignoring a finding you can optionally specify a reason for doing so.
 
@@ -125,9 +130,11 @@ From an organization standpoint, ignoring a finding means that you accept the ri
 
 From Codacy's standpoint, ignoring a finding means it will be removed from the metrics featured in the [overview page](#dashboard) page. Note that the [Open Findings history](#open-findings-history) chart will only be changed at the start of next week.
 
-!!! info "[Jira](./integrations/jira-integration.md) findings can't be ignored in Codacy. You should closed the issue directly in Jira."
+:::note[[Jira](./integrations/jira-integration.md) findings can't be ignored in Codacy. You should closed the issue directly in Jira.]
+:::
 
-!!! Important "Ignoring findings detected on [Git repositories](#opening-and-closing-items) will also [ignore the issue at the repository level](../repositories/issues.md#ignoring-and-managing-issues)."
+:::caution[Ignoring findings detected on [Git repositories](#opening-and-closing-items) will also [ignore the issue at the repository level](../repositories/issues.md#ignoring-and-managing-issues).]
+:::
 
 You can still see **Ignored** findings in the [findings list](#item-list), by filtering for the **Ignored** status in the **Statuses** dropdown. You can assess which status a finding has at his overview, on the right top corner.
 
@@ -139,13 +146,16 @@ Unignoring a finding reverts the effects of ignoring it.
 
 ![Security and risk management finding unignore](images/security-risk-management-finding-unignore.png)
 
-!!! Important "Unignoring findings detected on [Git repositories](#opening-and-closing-items) will also [unignore the issue at the repository level](../repositories/issues.md#ignoring-and-managing-issues)."
+:::caution[Unignoring findings detected on [Git repositories](#opening-and-closing-items) will also [unignore the issue at the repository level](../repositories/issues.md#ignoring-and-managing-issues).]
+:::
 
-!!! info "Ignoring and unignoring findings are [auditable actions](../organizations/audit-logs-for-organizations.md#organization)."
+:::note[Ignoring and unignoring findings are [auditable actions](../organizations/audit-logs-for-organizations.md#organization).]
+:::
 
 ## Exporting findings {: id="exporting-the-security-item-list"}
 
-!!! info "This feature is available only to organization admins and organization managers"
+:::note[This feature is available only to organization admins and organization managers]
+:::
 
 To export a list of findings as a CSV file, click the options menu in the top right-hand corner of the page and select **Export findings (.csv)**. The exported list always includes all findings, ignoring any applied filters.
 
@@ -155,8 +165,9 @@ To [review the severity assignment rules](#item-severities-and-deadlines) or man
 
 ## How Codacy manages findings {: id="opening-and-closing-items"}
 
-!!! important
-    To open and close findings, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.
+:::caution
+To open and close findings, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.
+:::
 
 Codacy opens a new finding whenever a source platform detects a new security issue. The new finding is automatically assigned a severity and a status:
 
@@ -169,12 +180,14 @@ The following section details when Codacy opens and closes findings for each sup
 
 ### How Codacy manages findings detected on Git repositories {: id="opening-and-closing-codacy-items"}
 
-!!! note
-    To make sure that Codacy detects security issues correctly:
+:::note
+To make sure that Codacy detects security issues correctly:
 
-    -   [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.
-    -   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
-    -   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
+-   [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.
+-   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
+-   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
+
+:::
 
 Codacy opens a new finding when it detects a new security issue on the default branch of a repository.
 
@@ -184,28 +197,32 @@ Codacy closes a finding in either of the following cases:
 -   You [ignore the associated issue](../repositories/issues.md#ignoring-and-managing-issues)
 -   You [disable the tool](../repositories-configure/configuring-code-patterns.md) that found the associated issue
 
-!!! important
-    Deleting a repository deletes all open findings belonging to that repository.
+:::caution
+Deleting a repository deletes all open findings belonging to that repository.
+:::
 
 ### How Codacy manages findings detected during software composition analysis (SCA) {: id="opening-and-closing-sca-items"}
 
-!!! note
-    To make sure that Codacy detects dependency issues correctly, [enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Trivy tool. 
+:::note
+To make sure that Codacy detects dependency issues correctly, [enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Trivy tool.
+:::
 
 Vulnerable dependencies are a specific GIT repository finding. Similarly to other repository findings, Codacy opens an issue whenever a commit is analyzed.
 
 Additionally, Codacy scans your codebase every evening to see if it's affected by any newly discovered vulnerabilities.
 
-!!! important
-    The proactive SCA scanning is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.
+:::caution
+The proactive SCA scanning is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.
+:::
 
 
 ### How Codacy manages findings detected on Jira {: id="opening-and-closing-jira-items"}
 
-!!! note
-    -   For Codacy to detect Jira issues, you must [integrate Jira with Security and risk management](./integrations/jira-integration.md).
-    -   Codacy retrieves updates from Jira once a day. If an issue is opened and closed on the same day, Codacy may not detect it.
-    -   To make sure that Codacy detects Jira issues correctly, assign the **security** label when creating the issue or immediately after.
+:::note
+-   For Codacy to detect Jira issues, you must [integrate Jira with Security and risk management](./integrations/jira-integration.md).
+-   Codacy retrieves updates from Jira once a day. If an issue is opened and closed on the same day, Codacy may not detect it.
+-   To make sure that Codacy detects Jira issues correctly, assign the **security** label when creating the issue or immediately after.
+:::
 
 Codacy opens a new finding when it detects a new Jira issue with a **security** label (case-insensitive).
 
@@ -213,8 +230,9 @@ Codacy closes a finding when it detects that the associated Jira issue is marked
 
 ### How Codacy manages findings detected during penetration testing {: id="opening-and-closing-pen-testing-items"}
 
-!!! note
-    Penetration testing is available upon request and is provided by a third-party partner. See [how to request penetration testing for your organization](https://www.codacy.com/security).
+:::note
+Penetration testing is available upon request and is provided by a third-party partner. See [how to request penetration testing for your organization](https://www.codacy.com/security).
+:::
 
 Codacy opens a finding for each security issue detected during a penetration test.
 
@@ -222,8 +240,9 @@ Codacy closes a finding when a subsequent penetration test doesn't detect the un
 
 ### How Codacy manages findings detected during application scanning (DAST) {: id="opening-and-closing-app-scanning-items"}
 
-!!! note
-    To view application scanning findings, also known as DAST (Dynamic Application Security Testing) findings, you must first [generate a DAST report and upload it to Codacy](../codacy-api/examples/uploading-dast-results.md).
+:::note
+To view application scanning findings, also known as DAST (Dynamic Application Security Testing) findings, you must first [generate a DAST report and upload it to Codacy](../codacy-api/examples/uploading-dast-results.md).
+:::
 
 Codacy opens a finding for each security issue detected in the DAST report. If subsequent reports identify the same issue, Codacy updates the existing finding.
 
@@ -244,7 +263,8 @@ The following table defines finding severities and the default number of days to
 
 ### Customize deadlines {: id="item-configurable-deadlines"}
 
-!!! info "This feature is available only to [organization admins and organization managers](../organizations/roles-and-permissions-for-organizations.md)."
+:::note[This feature is available only to [organization admins and organization managers](../organizations/roles-and-permissions-for-organizations.md).]
+:::
 
 You can configure your findings deadline by clicking on the "Configure SLAs" button, on the right corner of the page.
 
@@ -297,9 +317,10 @@ The following table describes how finding statuses map to deadlines:
 
 ## Supported security categories
 
-!!! note
-    Due to a recent update, some issues may be temporarily assigned the **Not yet categorized** category. To categorize these issues, you can [reanalyze the default branch of the relevant repository](../faq/repositories/how-do-i-reanalyze-my-repository.md#reanalyzing-a-branch). For a list of repositories that have issues with this category, use the **Security category** filter on the [Findings](#item-list) page.
-    Note that some issues just don't have a security category. These issues will remain **Not yet categorized**.
+:::note
+Due to a recent update, some issues may be temporarily assigned the **Not yet categorized** category. To categorize these issues, you can [reanalyze the default branch of the relevant repository](../faq/repositories/how-do-i-reanalyze-my-repository.md#reanalyzing-a-branch). For a list of repositories that have issues with this category, use the **Security category** filter on the [Findings](#item-list) page.
+Note that some issues just don't have a security category. These issues will remain **Not yet categorized**.
+:::
 
 Each Codacy issue reported by Security and risk management belongs to one of the following security categories:
 
@@ -536,8 +557,9 @@ Security and risk management supports checking the languages and infrastructure-
 
 ## Dependencies {: id="dependencies-list"}
 
-!!! important
-    The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, contact our customer success team.
+:::caution
+The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, contact our customer success team.
+:::
 
 
 The **Security and risk management Dependencies** page displays a unified view of all dependencies used by your repositories. 
@@ -593,8 +615,9 @@ This information helps you make informed decisions about the security risks asso
 
 ## App scanning {: id="app-scanning"}
 
-!!! important
-    App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.
+:::caution
+App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.
+:::
 
 The **Security and risk management > App scanning** page allows organizations to scan Web Applications and APIs for security vulnerabilities. This feature is part of Codacy's Dynamic Application Security Testing (DAST) capabilities, powered by ZAP.
 
@@ -618,23 +641,26 @@ Codacy supports two types of scanning:
     - Exposure of sensitive data in API responses
     - Insecure CORS or HTTP method configurations
 
-!!! note
-    Already using ZAP? [Upload your results via the API.](../codacy-api/examples/uploading-dast-results.md)
+:::note
+Already using ZAP? [Upload your results via the API.](../codacy-api/examples/uploading-dast-results.md)
+:::
 
 ### Creating an App Scanning target
 
-!!! important
-    **Do not run API scans on production enviroments as our API scanners may cause potential downtime.**
+:::caution
+**Do not run API scans on production enviroments as our API scanners may cause potential downtime.**
 
-    Our DAST API scanner performs active security testing by sending a large number of requests to your application. When using authenticated API scanning, this activity can be even more intensive, as ZAP explores and probes more of your API surface.
+Our DAST API scanner performs active security testing by sending a large number of requests to your application. When using authenticated API scanning, this activity can be even more intensive, as ZAP explores and probes more of your API surface.
 
-    Depending on how your target environment is configured, this may:
+Depending on how your target environment is configured, this may:
 
-    - Trigger rate limiting or throttling
-    - Appear as a high volume of traffic, similar to a load test
-    - Lead to incomplete scan results if key endpoints are blocked or limited
+- Trigger rate limiting or throttling
+- Appear as a high volume of traffic, similar to a load test
+- Lead to incomplete scan results if key endpoints are blocked or limited
 
-    We recommend running scans in a **test or staging environment**, or coordinating with your infrastructure team to ensure that your environment can safely handle the load.
+We recommend running scans in a **test or staging environment**, or coordinating with your infrastructure team to ensure that your environment can safely handle the load.
+
+:::
 
 When creating a scan target, you'll be able to choose between a Web App or an API. Configuring a Web App will only require a target URL, while APIs will have other requirements:
 
@@ -643,8 +669,9 @@ When creating a scan target, you'll be able to choose between a Web App or an AP
 
 API targets optionally support **header-based authentication**. As you create a target, keep in mind you may not be able to view or change certain fields later (to change your configurations you may need to delete and create a new target).
 
-!!! note
-    If exposing your API specification isn't feasible for your team, let us know via support or your account representative.
+:::note
+If exposing your API specification isn't feasible for your team, let us know via support or your account representative.
+:::
 
 
 ### How to scan a target
@@ -653,8 +680,9 @@ You can initiate scans in two ways:
 - From the **App scanning** tab in the Security and risk management dashboard
 - By automating scans using [Codacy's API](../codacy-api/examples/triggering-dast-scans.md)
 
-!!! important
-    Only [admins and organization managers](../organizations/roles-and-permissions-for-organizations.md) can create targets and start scans, both in-app and via the API.
+:::caution
+Only [admins and organization managers](../organizations/roles-and-permissions-for-organizations.md) can create targets and start scans, both in-app and via the API.
+:::
 
 <div>
   <iframe width="100%" height="472" src="https://www.youtube.com/embed/qPwHlIGJYXs?autoplay=1&mute=1&showinfo=0&loop=1" title="DAST targets" frameborder="0"
@@ -668,14 +696,17 @@ Scans are triggered manually through the UI and are queued before execution. You
 
 Once a scan completes, results will be available under the **Findings** tab. Use the **Scan types > DAST/App scanning** filter to view relevant findings.
 
-!!! important
-    Depending on the complexity of the target, DAST scans can take a significant amount of time to complete. Codacy may enforce timeouts to ensure platform stability and fair resource distribution.
+:::caution
+Depending on the complexity of the target, DAST scans can take a significant amount of time to complete. Codacy may enforce timeouts to ensure platform stability and fair resource distribution.
+:::
 
-!!! important
-    Failed scans are retried based on the failure reason. Retries are added back to the queue automatically and processed when capacity allows.
+:::caution
+Failed scans are retried based on the failure reason. Retries are added back to the queue automatically and processed when capacity allows.
+:::
 
-!!! note
-    Currently, DAST findings are only visible to admin and organization admin roles.
+:::note
+Currently, DAST findings are only visible to admin and organization admin roles.
+:::
 
 ### Findings results for your DAST scans
 

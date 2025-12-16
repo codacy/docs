@@ -14,8 +14,9 @@ By default, the analysis is enabled for all languages that Codacy detects in you
 -   [Configure Codacy to include unrecognized extensions](#configuring-file-extensions)
 -   [Disable the analysis of specific languages](#disable-language)
 
-!!! note
-    Codacy applies the language settings defined in the Codacy UI as well as any settings defined using a [Codacy configuration file](codacy-configuration-file.md#languages).
+:::note
+Codacy applies the language settings defined in the Codacy UI as well as any settings defined using a [Codacy configuration file](codacy-configuration-file.md#languages).
+:::
 
 ## Configuring file extensions
 
@@ -31,8 +32,9 @@ If your repository contains source files with extensions not supported by Codacy
 
     {% include-markdown "../assets/includes/update-file-extensions-reanalyze.md" %}
 
-!!! note
-    Currently, the [Semgrep](https://github.com/codacy/codacy-semgrep) static analysis tool doesn't support custom file extensions.
+:::note
+Currently, the [Semgrep](https://github.com/codacy/codacy-semgrep) static analysis tool doesn't support custom file extensions.
+:::
 
 ## Disabling analysis of a language {: id="disable-language"}
 

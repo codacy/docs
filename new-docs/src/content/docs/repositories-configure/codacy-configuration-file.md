@@ -22,11 +22,13 @@ Codacy supports configuring certain advanced features through a configuration fi
 
 ## Using a Codacy configuration file
 
-!!! important
-    -   If your repository has a Codacy configuration file, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must [ignore files using the configuration file](#syntax-for-ignoring-files) instead.
-    -   Codacy always uses the configuration file **in the default branch**. New settings added to the Codacy configuration file by a pull request are also considered for the pull request analysis, but the existing configuration in the default branch takes precedence.
+:::caution
+-   If your repository has a Codacy configuration file, the [Ignored files settings](ignoring-files.md) defined on the Codacy UI don't apply and you must [ignore files using the configuration file](#syntax-for-ignoring-files) instead.
+-   Codacy always uses the configuration file **in the default branch**. New settings added to the Codacy configuration file by a pull request are also considered for the pull request analysis, but the existing configuration in the default branch takes precedence.
 
-        For example, if a pull request removes an ignored path from the Codacy configuration file, any matching files will stay ignored until that pull request is merged into the default branch.
+    For example, if a pull request removes an ignored path from the Codacy configuration file, any matching files will stay ignored until that pull request is merged into the default branch.
+
+:::
 
 To use a Codacy configuration file:
 
@@ -83,8 +85,9 @@ To use a Codacy configuration file:
 
 The Codacy configuration file gives you more flexibility in [ignoring or excluding files](ignoring-files.md) from the Codacy analysis.
 
-!!! note
-    {% include-markdown "../assets/includes/coverage-ignore.md" %}
+:::note
+{% include-markdown "../assets/includes/coverage-ignore.md" %}
+:::
 
 ### Syntax for ignoring files
 
@@ -112,26 +115,29 @@ exclude_paths:
 
 Cyclomatic complexity can be disabled or partially ignored for certain paths, files or languages.
 
-!!! note
-    Cyclomatic complexity is referred as `metric` in the configuration file.
+:::note
+Cyclomatic complexity is referred as `metric` in the configuration file.
 
-    ```yaml
-    ---
-    engines:
-      metric:
-        exclude_paths:
-          - "src/test.ts"
-        config:
-          languages:
-            - "typescript"
-    ```
+```yaml
+---
+engines:
+  metric:
+    exclude_paths:
+      - "src/test.ts"
+    config:
+      languages:
+        - "typescript"
+```
+
+:::
 
 ## Including specific files using a Codacy configuration file {: id="include-files"}
 
 The Codacy configuration file allows you to explicitly specify files or directories to include in the analysis. This is particularly useful for [bypassing files or directories that are ignored by default](./ignoring-files.md#default-ignored-files) or specified in `exclude_paths`.
 
-!!! note
-    If both `exclude_paths` and `include_paths` are defined, `include_paths` will specify exceptions to the exclusions defined in `exclude_paths`.
+:::note
+If both `exclude_paths` and `include_paths` are defined, `include_paths` will specify exceptions to the exclusions defined in `exclude_paths`.
+:::
 
 ### Syntax for including files
 
@@ -152,8 +158,9 @@ In this example, while all directories matching `lib*` are excluded, `lib-a` is 
 
 ## Adjusting tool configurations {: id="tool-conf"}
 
-!!! note
-    The Codacy configuration file lets you [configure tools](#tool-specific-configurations), but you can't enable or disable them. A tool can only be enabled or disabled on the [Code patterns page](configuring-code-patterns.md) by users with the [necessary permissions](../organizations/roles-and-permissions-for-organizations.md).
+:::note
+The Codacy configuration file lets you [configure tools](#tool-specific-configurations), but you can't enable or disable them. A tool can only be enabled or disabled on the [Code patterns page](configuring-code-patterns.md) by users with the [necessary permissions](../organizations/roles-and-permissions-for-organizations.md).
+:::
 
 ### Which tools can be configured and which name should I use?
 
@@ -264,8 +271,9 @@ engines:
     python_version: 2
 ```
 
-!!! tip
-    If you're using Python 3.4.\* or later as your programming language, disable the tool **Pylint (legacy)** and enable the tool **Pylint** on your repository [Code patterns page](configuring-code-patterns.md) instead. For more information, see [What's New in Pylint 2.0](https://pylint.pycqa.org/en/latest/whatsnew/2/2.0/index.html).
+:::tip
+If you're using Python 3.4.\* or later as your programming language, disable the tool **Pylint (legacy)** and enable the tool **Pylint** on your repository [Code patterns page](configuring-code-patterns.md) instead. For more information, see [What's New in Pylint 2.0](https://pylint.pycqa.org/en/latest/whatsnew/2/2.0/index.html).
+:::
 
 #### PMD CPD (Duplication)
 
@@ -301,8 +309,9 @@ Besides this, Codacy runs PMD CPD with the following options enabled by default:
 
 To use a different minimum token length or change any of the default options, add your settings to the Codacy configuration file based on the example template below.
 
-!!! important
-    If you configure `minTokenMatch` on the Codacy configuration file, Codacy will use that value for all languages.
+:::caution
+If you configure `minTokenMatch` on the Codacy configuration file, Codacy will use that value for all languages.
+:::
 
 ```yaml
 ---
@@ -320,8 +329,9 @@ engines:
 
 You can use a Codacy configuration file to manage the languages that Codacy analyzes in your repository.
 
-!!! note
-    Codacy applies the language settings from the Codacy configuration file as well as any settings defined [in the Codacy UI](languages.md).
+:::note
+Codacy applies the language settings from the Codacy configuration file as well as any settings defined [in the Codacy UI](languages.md).
+:::
 
 ### Adding custom file extensions {: id="file-extensions"}
 

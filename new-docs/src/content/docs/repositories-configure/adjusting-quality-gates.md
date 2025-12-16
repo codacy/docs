@@ -8,13 +8,15 @@ The **quality gates** of your repository configure when Codacy reports your pull
 
 When you add your repository to Codacy, it automatically follows the [default gate policy for your organization](../organizations/using-gate-policies.md). If you want to set different quality gates for the repository, [create a new organization gate policy](../organizations/using-gate-policies.md#creating) to apply to the repository.
 
-!!! note
-    Although you can define custom quality gate settings for specific repositories, we recommend that you always [use a gate policy](../organizations/using-gate-policies.md) defined by your organization to enforce consistent rules across multiple repositories.
+:::note
+Although you can define custom quality gate settings for specific repositories, we recommend that you always [use a gate policy](../organizations/using-gate-policies.md) defined by your organization to enforce consistent rules across multiple repositories.
+:::
 
 Depending on the result of applying the quality gate rules, Codacy updates the color of the metrics on the [pull request or commit quality overview](../repositories/pull-requests.md#quality-overview) and reports the corresponding pull request status on your Git provider, if enabled.
 
-!!! tip
-    [Integrate Codacy with your Git workflow](../getting-started/integrating-codacy-with-your-git-workflow.md) to report the pull request status to your Git provider and optionally block merging pull requests that aren't up to standards.
+:::tip
+[Integrate Codacy with your Git workflow](../getting-started/integrating-codacy-with-your-git-workflow.md) to report the pull request status to your Git provider and optionally block merging pull requests that aren't up to standards.
+:::
 
 To access the quality gates, open your repository **Settings**, tab **Gates**.
 
@@ -26,10 +28,11 @@ To access the quality gates, open your repository **Settings**, tab **Gates**.
 -   **Duplication is over:** Pull requests or commits are marked not up to standards if the number of clones introduced is higher than the set value.
 -   **Coverage variation is under:** Pull requests or commits are marked not up to standards if they introduce a variation to coverage lower than the set value.
 
-    !!! tip
-        **Set this gate to -0.10% or lower.** This will ensure that developers have a coverage drop margin so they aren't blocked [while performing some types of code refactors](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md#example-pull-request-coverage-variation-is-negative-but-no-files-have-coverage-variation)
+    :::tip
+    **Set this gate to -0.10% or lower.** This will ensure that developers have a coverage drop margin so they aren't blocked [while performing some types of code refactors](../faq/code-analysis/why-does-codacy-show-unexpected-coverage-changes.md#example-pull-request-coverage-variation-is-negative-but-no-files-have-coverage-variation)
 
-        To ensure that the changes in each pull request have a minimum level of coverage, use the gate **Diff coverage is under** instead.
+    To ensure that the changes in each pull request have a minimum level of coverage, use the gate **Diff coverage is under** instead.
+    :::
 
 -   **Diff coverage is under:** Pull requests are marked not up to standards if the diff coverage of the pull request is lower than the set value or `∅` ([not applicable](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage)). This rule is only available for pull requests.
 

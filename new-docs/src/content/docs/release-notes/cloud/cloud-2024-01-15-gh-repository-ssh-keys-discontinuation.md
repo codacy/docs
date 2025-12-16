@@ -6,7 +6,8 @@ rss_href: /feed_rss_created.xml
 
 # Discontinuation of SSH keys for GitHub repositories January 15, 2024
 
-!!! info "This release note applies only to GitHub"
+:::note[This release note applies only to GitHub]
+:::
 
 For increased security, Codacy is discontinuing the usage of **repository SSH keys** for Git operations on GitHub in favor of **installation access tokens**.
 

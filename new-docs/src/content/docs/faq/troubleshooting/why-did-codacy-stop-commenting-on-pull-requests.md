@@ -6,7 +6,8 @@ title: Why did Codacy stop commenting on pull requests?
 
 ## Outdated app permissions
 
-!!! info "This section applies to Codacy Coverage on GitHub"
+:::note[This section applies to Codacy Coverage on GitHub]
+:::
 
 Coverage information is currently sent to GitHub by a new version of the Codacy Coverage engine, which depends on updated app permissions.
 
@@ -14,7 +15,8 @@ If you stopped receiving coverage summaries on your pull requests, please [revie
 
 ## Outdated permissions or invalid SSH key {: id="outdated-permissions"}
 
-!!! info "This section applies to GitLab and Bitbucket"
+:::note[This section applies to GitLab and Bitbucket]
+:::
 
 Different reasons can cause Codacy to stop analyzing and commenting on pull requests, but the most common is that the user who initially enabled the GitLab or Bitbucket integration no longer has permissions on the repository or that the SSH key is no longer valid.
 
@@ -22,16 +24,17 @@ To fix this issue and avoid future disruptions, refresh the GitLab or Bitbucket 
 
 1.  Create a service account on your Git provider exclusively dedicated to integrating Codacy with your repositories.
 
-    !!! note
-        The service account must:
+    :::note
+    The service account must:
+    -   [Have administrator permissions](../../organizations/roles-and-permissions-for-organizations.md) on the repositories to integrate with Codacy
+    -   Not be shared by other systems to ensure that Codacy doesn't hit the API rate limits of the Git provider when using this account
+    :::
 
-        -   [Have administrator permissions](../../organizations/roles-and-permissions-for-organizations.md) on the repositories to integrate with Codacy
-        -   Not be shared by other systems to ensure that Codacy doesn't hit the API rate limits of the Git provider when using this account
+    :::tip
+    Using a dedicated service account also has the advantage of any pull request comments made by Codacy appearing as authored by the service account instead of by a regular organization member. You can name this account "Codacy" and use [this Codacy logo](https://avatars.githubusercontent.com/u/1834093) as the account picture so that your pull request comments look like the following example:
 
-    !!! tip
-        Using a dedicated service account also has the advantage of any pull request comments made by Codacy appearing as authored by the service account instead of by a regular organization member. You can name this account "Codacy" and use [this Codacy logo](https://avatars.githubusercontent.com/u/1834093) as the account picture so that your pull request comments look like the following example:
-
-        ![Codacy comment on a GitLab merge request](../../repositories-configure/integrations/images/gitlab-integration-pr-comment.png)
+    ![Codacy comment on a GitLab merge request](../../repositories-configure/integrations/images/gitlab-integration-pr-comment.png)
+    :::
 
 1.  Log out of both your Git provider and of Codacy.
 

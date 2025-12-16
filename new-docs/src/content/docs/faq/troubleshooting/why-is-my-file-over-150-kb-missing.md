@@ -35,10 +35,11 @@ To update the file size limit:
 
 1.  Apply the new configuration by performing a Helm upgrade and specifying the Codacy Self-hosted version currently installed. To do so execute the command [used to install Codacy](../../chart/index.md#helm-upgrade):
 
-    !!! important
-        **If you're using MicroK8s** you must use the file `values-microk8s.yaml` together with the file `values-production.yaml`.
+    :::caution
+    **If you're using MicroK8s** you must use the file `values-microk8s.yaml` together with the file `values-production.yaml`.
 
-        To do this, uncomment the last line before running the `helm upgrade` command below.
+    To do this, uncomment the last line before running the `helm upgrade` command below.
+    :::
 
     ```bash
     helm upgrade (...options used to install Codacy...) \

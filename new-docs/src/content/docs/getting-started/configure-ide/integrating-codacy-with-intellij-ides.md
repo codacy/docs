@@ -6,7 +6,8 @@ title: Integrating Codacy with IntelliJ IDEs
 
 The [Codacy IntelliJ plugin](https://github.com/codacy/codacy-intellij-extension) is an open-source plugin for IntelliJ IDEs that lets you review the result of the Codacy analysis for a pull request, get the full list of problems found, and navigate to any issue that you want to review and fix.
 
-!!! info "To use this plugin you need a [Codacy account](https://www.codacy.com/signup-codacy)"
+:::note[To use this plugin you need a [Codacy account](https://www.codacy.com/signup-codacy)]
+:::
 
 ## Interface overview
 
@@ -30,12 +31,14 @@ In the main view, you can find the following information:
 
 ## Installing the Codacy IntelliJ plugin
 
-!!! info "The Codacy IntelliJ plugin is compatible with IntelliJ IDEA (Ultimate, Community), Android Studio, and Aqua."
+:::note[The Codacy IntelliJ plugin is compatible with IntelliJ IDEA (Ultimate, Community), Android Studio, and Aqua.]
+:::
 
 1.  Make sure that the repository you’re working on is analyzed by Codacy and that you have a [repository read](../organizations/roles-and-permissions-for-organizations.md) role or higher.
 
-    !!! tip
-        If this is your first time using Codacy, see [how to add and analyze your first repository](./codacy-quickstart.md#adding-your-first-repository).
+    :::tip
+    If this is your first time using Codacy, see [how to add and analyze your first repository](./codacy-quickstart.md#adding-your-first-repository).
+    :::
 
 1.  Install the plugin from the [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/23924-codacy) or through the [plugin settings panel](https://www.jetbrains.com/help/idea/managing-plugins.html) in your IntelliJ IDE.
 
@@ -45,8 +48,9 @@ To see Codacy quality and coverage data for an open pull request, follow these s
 
 1.  Open the repository directory in your IntelliJ IDE.
 
-    !!! note
-        If the repository isn't on Codacy yet, [add it to Codacy](../organizations/managing-repositories.md#adding-a-repository) first.
+    :::note
+    If the repository isn't on Codacy yet, [add it to Codacy](../organizations/managing-repositories.md#adding-a-repository) first.
+    :::
 
 1.  Open the main view by clicking the **Codacy logo** in the left tool window bar.
 
@@ -62,8 +66,9 @@ After completing these steps, the main view shows the result of the latest Codac
 
 In the **Problems tool window**, Codacy displays the same issues you find in the main view and lets you navigate to the exact line of code where the issue was found.
 
-!!! note
-    Code coverage, duplicates, and complexity aren't currently shown in the Problems tool window.
+:::note
+Code coverage, duplicates, and complexity aren't currently shown in the Problems tool window.
+:::
 
 To review issues:
 

@@ -66,8 +66,9 @@ Codacy supports repositories from the following Git providers:
   </tbody>
 </table>
 
-!!! note
-    Although older versions of the self-hosted Git providers may work with Codacy without loss of functionality, Codacy will only fix issues and ensure compatibility with the versions listed above.
+:::note
+Although older versions of the self-hosted Git providers may work with Codacy without loss of functionality, Codacy will only fix issues and ensure compatibility with the versions listed above.
+:::
 
 ## Supported browsers
 

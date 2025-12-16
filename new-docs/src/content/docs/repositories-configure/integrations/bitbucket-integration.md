@@ -11,8 +11,9 @@ When you add a new repository, Codacy sets the Bitbucket integration using the [
 
 ![Bitbucket integration](images/bitbucket-integration.png)
 
-!!! important
-    Codacy uses the Bitbucket user who added the repository to create comments on pull requests. If that user loses access to the repository, a repository admin must [refresh the Bitbucket integration](#refreshing).
+:::caution
+Codacy uses the Bitbucket user who added the repository to create comments on pull requests. If that user loses access to the repository, a repository admin must [refresh the Bitbucket integration](#refreshing).
+:::
 
 ## Configuring the Bitbucket integration {: id="configuring"}
 
@@ -42,7 +43,8 @@ Adds comments on the lines of the pull request where Codacy finds new issues. Cl
 
 ### Issue summaries {: id="pull-request-summary"}
 
-!!! note "This feature isn't available for Bitbucket Server"
+:::note[This feature isn't available for Bitbucket Server]
+:::
 
 Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable **Status checks** first.
 

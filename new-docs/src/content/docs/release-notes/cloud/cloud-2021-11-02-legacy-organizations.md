@@ -14,8 +14,9 @@ To make sure that Codacy will continue to analyze your repositories **please per
 
 If you already have any synced organizations on Codacy, the migration process won't overwrite any data on those synced organizations, nor copy any repositories that you have in your legacy organization.
 
-!!! important
-    After the migration process ends on December 2, 2021, we'll delete any existing legacy organizations that we couldn't migrate.
+:::caution
+After the migration process ends on December 2, 2021, we'll delete any existing legacy organizations that we couldn't migrate.
+:::
 
 ## How does this impact me?
 

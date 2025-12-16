@@ -196,7 +196,8 @@ If you need to use an integration that you have previously revoked, log in again
 
 ## Why does Codacy ask for permission to create SSH keys?
 
-!!! info "This section applies only to GitLab and Bitbucket"
+:::note[This section applies only to GitLab and Bitbucket]
+:::
 
 On GitLab and Bitbucket organizations, when you add a private repository to Codacy, Codacy uses the integration with your Git provider to create a new SSH key on the repository. Codacy then uses that SSH key every time it needs to clone the repository.
 
@@ -204,5 +205,6 @@ On GitLab and Bitbucket organizations, when you add a private repository to Coda
 
 We understand the desire for security and privacy and find that the SSH protocol is preferable to HTTPS as it separates Codacy's access rights from the one of the users.
 
-!!! tip
-    You can revoke the keys created by Codacy at any time. See [GitLab](https://docs.gitlab.com/ee/user/project/deploy_keys/) or [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/configure-repository-settings/) documentation for further details.
+:::tip
+You can revoke the keys created by Codacy at any time. See [GitLab](https://docs.gitlab.com/ee/user/project/deploy_keys/) or [Bitbucket](https://support.atlassian.com/bitbucket-cloud/docs/configure-repository-settings/) documentation for further details.
+:::

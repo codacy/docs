@@ -23,8 +23,9 @@ The table below lists all languages that Codacy supports and the corresponding t
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
-!!! important
-    Codacy runs security and other analysis tools when code changes are pushed to your repositories. These tools don't scan code for issues continuously.
+:::caution
+Codacy runs security and other analysis tools when code changes are pushed to your repositories. These tools don't scan code for issues continuously.
+:::
 
 <table style="font-size: .5rem;">
   <thead>

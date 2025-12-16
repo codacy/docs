@@ -42,8 +42,9 @@ To set a gate policy as default:
 
 1.  Toggle **Make default** on the relevant gate policy card.
 
-    !!! note
-        Only one gate policy at a time can be the default gate policy.
+    :::note
+    Only one gate policy at a time can be the default gate policy.
+    :::
 
     ![Setting a gate policy as the default](images/gate-policy-set-default.png)
 
@@ -61,8 +62,9 @@ To edit the quality gates of an existing gate policy or change the repositories 
 
 1.  Edit the current quality gate values and click the button **Next: Select and apply to repositories**.
 
-    !!! note
-        You can't change the quality gate values of the built-in **Codacy Gate Policy**.
+    :::note
+    You can't change the quality gate values of the built-in **Codacy Gate Policy**.
+    :::
 
 1.  Edit the list of repositories that follow the gate policy.
 
@@ -74,8 +76,9 @@ If you stop applying a gate policy to a repository, Codacy restores the previous
 
 ## Deleting a gate policy {: id="deleting"}
 
-!!! note
-    You can't delete the built-in **Codacy Gate Policy**.
+:::note
+You can't delete the built-in **Codacy Gate Policy**.
+:::
 
 To delete an organization gate policy:
 

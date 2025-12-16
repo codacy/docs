@@ -134,8 +134,9 @@ If you're generating a report format that Codacy doesn't support yet, [contribut
 -   [<span class="skip-vale">chrisgit/sfdx-plugins_apex_coverage_report</span>](https://github.com/chrisgit/sfdx-plugins_apex_coverage_report): generate LCOV or Cobertura reports from [Apex](https://help.salesforce.com/articleView?id=sf.code_apex_dev_guide_tools.htm&type=5) code coverage data
 -   [<span class="skip-vale">danielpalme/ReportGenerator</span>](https://github.com/danielpalme/ReportGenerator): convert between different report formats
 
-!!! important
-    Make sure that you [specify the language](uploading-coverage-in-advanced-scenarios.md#unsupported-languages) when uploading coverage for an unsupported language.
+:::caution
+Make sure that you [specify the language](uploading-coverage-in-advanced-scenarios.md#unsupported-languages) when uploading coverage for an unsupported language.
+:::
 
 As a last resort, you can also send the coverage data directly by calling one of the following Codacy API endpoints:
 
@@ -146,16 +147,20 @@ As a last resort, you can also send the coverage data directly by calling one of
 
 After having coverage reports set up for your repository, you must use the Codacy Coverage Reporter to upload them to Codacy. The recommended way to do this is by using a CI/CD platform that automatically runs tests, generates coverage, and then uses the Codacy Coverage Reporter to upload the coverage report information to Codacy.
 
-!!! important
-    Please note that Codacy needs to receive coverage data for:
+:::caution
+Please note that Codacy needs to receive coverage data for:
 
-    -   **Every push to your repository** including merge commits or any commits created automatically by tools such as Dependabot
-    -   **All tested files in your repository** including the files that weren't changed in the commit, or files from unchanged modules in a monorepo setup
+-   **Every push to your repository** including merge commits or any commits created automatically by tools such as Dependabot
+-   **All tested files in your repository** including the files that weren't changed in the commit, or files from unchanged modules in a monorepo setup
 
-!!! note "Alternative ways of running the Codacy Coverage Reporter"
-    Codacy makes available [alternative ways to run the Codacy Coverage Reporter](alternative-ways-of-running-coverage-reporter.md), such as by installing the binary manually or by using Docker, a GitHub Action, or a CircleCI Orb.
+:::
 
-    However, the instructions on this page assume that you'll run the recommended [self-contained bash script `get.sh`](alternative-ways-of-running-coverage-reporter.md#bash-script) to automatically download and run the most recent version of the Codacy Coverage Reporter.    
+:::note[Alternative ways of running the Codacy Coverage Reporter]
+Codacy makes available [alternative ways to run the Codacy Coverage Reporter](alternative-ways-of-running-coverage-reporter.md), such as by installing the binary manually or by using Docker, a GitHub Action, or a CircleCI Orb.
+
+However, the instructions on this page assume that you'll run the recommended [self-contained bash script `get.sh`](alternative-ways-of-running-coverage-reporter.md#bash-script) to automatically download and run the most recent version of the Codacy Coverage Reporter.
+
+:::
 
 1.  Set up an API token to allow Codacy Coverage Reporter to authenticate on Codacy:
     {: id="authenticate"}
@@ -185,10 +190,11 @@ After having coverage reports set up for your repository, you must use the Codac
         export CODACY_PROJECT_NAME=<repository name>
         ```
 
-    !!! warning
-        **Never write API tokens to your configuration files** and keep your API tokens well protected, as they grant owner permissions to your projects on Codacy
+    :::caution
+    **Never write API tokens to your configuration files** and keep your API tokens well protected, as they grant owner permissions to your projects on Codacy
 
-        It's a best practice to store API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.
+    It's a best practice to store API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.
+    :::
 
 1.  **If you're using Codacy Self-hosted** set the following environment variables to specify your Codacy instance URL and the Codacy Coverage Reporter version that's compatible with Codacy Self-hosted {{ extra.codacy_self_hosted_version }}:
 
@@ -205,8 +211,9 @@ After having coverage reports set up for your repository, you must use the Codac
 
     Check the console output to validate that the Codacy Coverage Reporter **detected the correct commit SHA-1 hash** and **successfully uploaded** the coverage data to Codacy. If you need help, [check the troubleshooting page](troubleshooting-coverage-cli-issues.md) for solutions to the most common issues while running the CLI.
 
-    !!! note
-        Be sure to also check the [instructions for more advanced scenarios](uploading-coverage-in-advanced-scenarios.md) while uploading the coverage data to Codacy, such as when running parallel tests, using monorepos, or testing source code in multiple or unsupported languages.
+    :::note
+    Be sure to also check the [instructions for more advanced scenarios](uploading-coverage-in-advanced-scenarios.md) while uploading the coverage data to Codacy, such as when running parallel tests, using monorepos, or testing source code in multiple or unsupported languages.
+    :::
 
 ## 3. Validating that the coverage setup is complete {: id="validating-coverage"}
 
@@ -217,16 +224,18 @@ Because of this, to ensure that all code coverage metrics are available on Codac
 -   The last two commits in each branch
 -   The common ancestor commit of each pull request branch and its target branch
 
-!!! note "Example"
-    The example below shows that after pushing a commit that correctly sets up coverage on the default branch:
+:::note[Example]
+The example below shows that after pushing a commit that correctly sets up coverage on the default branch:
 
-    -   Codacy will report coverage metrics for all subsequent commits and pull requests relative to the default branch.
+-   Codacy will report coverage metrics for all subsequent commits and pull requests relative to the default branch.
 
-    -   Codacy won't report coverage metrics for commits and pull requests that are relative to older branches where the coverage setup wasn't performed yet.
+-   Codacy won't report coverage metrics for commits and pull requests that are relative to older branches where the coverage setup wasn't performed yet.
 
-        To solve this issue, you can rebase the old feature branch to update the common ancestor commit to one that already has coverage data.
+    To solve this issue, you can rebase the old feature branch to update the common ancestor commit to one that already has coverage data.
 
-    ![Setting up coverage on the default branch](images/coverage-validate.png)
+![Setting up coverage on the default branch](images/coverage-validate.png)
+
+:::
 
 Follow these instructions to validate that your coverage setup is working correctly:
 
@@ -453,15 +462,17 @@ Follow these instructions to validate that your coverage setup is working correc
 
     ![Logs showing the pull request commits that are missing coverage data](images/coverage-codacy-ui-logs.png)
 
-!!! note "Need help?"
-    If you need help setting up coverage on your repository please contact us at <mailto:support@codacy.com> including the following information:
+:::note[Need help?]
+If you need help setting up coverage on your repository please contact us at <mailto:support@codacy.com> including the following information:
 
-    -   URL of your repository on Codacy
-    -   Your CI/CD configuration files and the name of your CI/CD platform
-    -   Full console output of your CI/CD when running the Codacy Coverage Reporter
-    -   Branch name and commit SHA-1 hash corresponding to the CI/CD output
-    -   Test coverage report that you're uploading to Codacy
-    -   Any other relevant information or screenshots of your setup
+-   URL of your repository on Codacy
+-   Your CI/CD configuration files and the name of your CI/CD platform
+-   Full console output of your CI/CD when running the Codacy Coverage Reporter
+-   Branch name and commit SHA-1 hash corresponding to the CI/CD output
+-   Test coverage report that you're uploading to Codacy
+-   Any other relevant information or screenshots of your setup
+
+:::
 
 ## See also
 

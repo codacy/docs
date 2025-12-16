@@ -8,8 +8,9 @@ title: Using submodules
 
 By default, Codacy does normal Git clones that **don't include submodules** to ensure that we only clone necessary repositories. If your organization needs to use submodules, you can request Codacy to enable this feature for you.
 
-!!! important
-    **GitHub only:** Your repository and the repositories that you add as submodules must belong to the same GitHub organization.
+:::caution
+**GitHub only:** Your repository and the repositories that you add as submodules must belong to the same GitHub organization.
+:::
 
 ## Prerequisites for using submodules
 
@@ -35,7 +36,8 @@ When using submodules, you must do the following for all your existing and new r
 
 ## Updating the public SSH key to access the repository {: id="update-key"}
 
-!!! info "This section applies only to GitLab and Bitbucket"
+:::note[This section applies only to GitLab and Bitbucket]
+:::
 
 On GitLab and Bitbucket organizations, Codacy generates a repository key when you add a repository to Codacy and uses it to clone that repository. When you're using submodules, Codacy needs to clone additional repositories it may not have access to. To overcome this, Codacy must use an SSH key of your user account to have access to the same repositories as your user.
 
@@ -56,12 +58,14 @@ To update your GitLab or Bitbucket public SSH key that Codacy uses to access you
 
 ## Automating user keys for new repositories
 
-!!! info "This section applies only to Codacy Self-hosted"
+:::note[This section applies only to Codacy Self-hosted]
+:::
 
 You can set Codacy to automatically add the new SSH key to your Git provider account for all new repositories by enabling **Add project key to the user, by default** on the **Administration** console, page **Settings**.
 
-!!! important
-    **If you're using Bitbucket Cloud** this setting must be turned off since automatically adding the user keys isn't supported.
+:::caution
+**If you're using Bitbucket Cloud** this setting must be turned off since automatically adding the user keys isn't supported.
+:::
 
 ![Add project key to the user by default](images/using-submodules-default-add-user-key.png)
 

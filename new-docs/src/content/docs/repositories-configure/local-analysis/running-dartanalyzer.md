@@ -80,5 +80,6 @@ codacy-cli analyze -t dartanalyzer -o dartanalyzer.sarif -c $COMMIT_SHA -a CODAC
     repository: sample-dart-project
 ```
 
-!!! warning "Tokens should be stored in the repository secrets."
+:::caution[Tokens should be stored in the repository secrets.]
+:::
 

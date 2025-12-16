@@ -10,8 +10,9 @@ title: Managing branches
 
 Codacy automatically analyzes the default branch of your repository (typically `master` or `main` as configured on your Git provider) and loads its data first on dashboards. Codacy also supports analyzing multiple branches.
 
-!!! note
-    Codacy doesn't support and skips the analysis of branches named [`HEAD`](<https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefHEADaHEAD>) or matching the pattern [`refs/heads/*`](<https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefrefaref>), as these are Git reserved terms.
+:::note
+Codacy doesn't support and skips the analysis of branches named [`HEAD`](<https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefHEADaHEAD>) or matching the pattern [`refs/heads/*`](<https://git-scm.com/docs/gitglossary#Documentation/gitglossary.txt-aiddefrefaref>), as these are Git reserved terms.
+:::
 
 To change the default branch of your repository or start analyzing other branches:
 
@@ -27,8 +28,9 @@ To change the default branch of your repository or start analyzing other branche
 
     Changing the default branch on Codacy doesn't change the default branch on your Git provider. Likewise, changing the default branch on your Git provider doesn't change the default branch on Codacy.
 
-    !!! note
-        You can only set as default branch an already enabled branch.
+    :::note
+    You can only set as default branch an already enabled branch.
+    :::
 {% else %}
 Codacy automatically triggers analysis on the main branch of your repository (typically `master` or `main` as configured on your Git provider), and also supports analyzing multiple branches.
 
@@ -38,10 +40,12 @@ This page also displays the [code quality grade](../faq/code-analysis/which-metr
 
 ![Managing branches](images/managing-branches-sh.png)
 
-!!! note
-    **If you're using Codacy Self-hosted** you can also configure Codacy to automatically enable all new branches that are pushed to the repository.
+:::note
+**If you're using Codacy Self-hosted** you can also configure Codacy to automatically enable all new branches that are pushed to the repository.
 
-    ![Auto-enable new branches](images/managing-branches-auto-enable.png)
+![Auto-enable new branches](images/managing-branches-auto-enable.png)
+:::
+
 {% endif %}
 
 Codacy manages pull request branches and inactive branches as follows:

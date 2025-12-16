@@ -31,10 +31,11 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
     To see an explanation of the issues that a pattern detects and how to fix them, click the respective dropdown arrow.
 
-    !!! tip
-        -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click the checkbox in the header of the patterns list.
+    :::tip
+    -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click the checkbox in the header of the patterns list.
 
-        -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.
+    -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.
+    :::
 
     ![Configuring code patterns](images/code-patterns-configure.png)
 
@@ -76,10 +77,12 @@ You can add extra tools and patterns, if these are not enabled by any applied co
     docs/repositories-configure/codacy-configuration-file.md (list of tool short names to use on the Codacy configuration file)
 -->
 
-!!! note
-    -   After activating a configuration file for a tool, Codacy uses that configuration file even if you [exclude it from Codacy analysis](ignoring-files.md).
+:::note
+-   After activating a configuration file for a tool, Codacy uses that configuration file even if you [exclude it from Codacy analysis](ignoring-files.md).
 
-    -   When [using a tool configuration file alongside a coding standard](../organizations/using-coding-standards.md#using-with-tool-configuration), the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.
+-   When [using a tool configuration file alongside a coding standard](../organizations/using-coding-standards.md#using-with-tool-configuration), the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.
+
+:::
 
 Codacy supports configuration files for several static analysis tools to help you streamline your setup.
 
@@ -89,12 +92,13 @@ To use a configuration file for a static analysis tool:
 
 1.  Open the repository **Code patterns** page, select the tool of interest, and activate the toggle to use a configuration file.
 
-    !!! note
-        -   Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results take those changes into account.
+    :::note
+    -   Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results take those changes into account.
 
-        -   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.
+    -   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.
 
-        -   For performance reasons, when you update pattern settings using a configuration file, Codacy may display outdated messages for issues identified previously by those patterns.
+    -   For performance reasons, when you update pattern settings using a configuration file, Codacy may display outdated messages for issues identified previously by those patterns.
+    :::
 
     ![Using a configuration file](images/code-patterns-config-file.png)
 
@@ -299,26 +303,28 @@ The table below lists the configuration file names that Codacy detects and suppo
   </tbody>
 </table>
 
-!!! note
-    Codacy doesn't support configuration files for the following tools:
+:::note
+Codacy doesn't support configuration files for the following tools:
 
-    -   Aligncheck
-    -   Checkov
-    -   Clang-Tidy
-    -   Codacy Scalameta Pro
-    -   CoffeeLint
-    -   Cppcheck
-    -   deadcode
-    -   Flawfinder
-    -   Gosec
-    -   Jackson Linter
-    -   Lizard
-    -   PSScriptAnalyzer
-    -   ShellCheck
-    -   SQLint
-    -   Staticcheck
-    -   Trivy
-    -   Unity Roslyn Analyzers
+-   Aligncheck
+-   Checkov
+-   Clang-Tidy
+-   Codacy Scalameta Pro
+-   CoffeeLint
+-   Cppcheck
+-   deadcode
+-   Flawfinder
+-   Gosec
+-   Jackson Linter
+-   Lizard
+-   PSScriptAnalyzer
+-   ShellCheck
+-   SQLint
+-   Staticcheck
+-   Trivy
+-   Unity Roslyn Analyzers
+
+:::
 
 ## See also
 

@@ -8,8 +8,9 @@ The **Issues page** lists all the issues that Codacy detected in your repository
 
 By default, the page lists the issues on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display issues on other branches.
 
-!!! note
-    [You can use the Codacy API](../codacy-api/examples/obtaining-current-issues-in-repositories.md) to generate reports or obtain information about the current issues in your repositories in a more flexible way.
+:::note
+[You can use the Codacy API](../codacy-api/examples/obtaining-current-issues-in-repositories.md) to generate reports or obtain information about the current issues in your repositories in a more flexible way.
+:::
 
 ![Issues page](images/issues.png)
 
@@ -53,8 +54,9 @@ You can moreover define one or more of the following filters:
 
 -   **Author:** Commit author that introduced the issue on the code
 
-!!! note
-    Each code pattern has a pre-defined severity level and at the moment Codacy doesn't support customizing that information.
+:::note
+Each code pattern has a pre-defined severity level and at the moment Codacy doesn't support customizing that information.
+:::
 
 ## Ignoring and managing issues
 
@@ -74,16 +76,18 @@ Use the options in the menu of each issue to:
 
     See [how to restore ignored issues](#restoring-ignored-issues).
 
-    !!! tip
-        Organization admins can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
+    :::tip
+    Organization admins can [configure who is allowed to ignore issues](../organizations/roles-and-permissions-for-organizations.md#change-analysis-configuration).
+    :::
 
 -   **Disable the code pattern** that detected the issue.
 
     Codacy will stop using that pattern after the next analysis of your repository, so be sure that you're no longer interested in identifying similar issues. To re-enable patterns use the [Code patterns page](../repositories-configure/configuring-code-patterns.md).
 
-    !!! note
-        -   If you're using a [custom configuration file](../repositories-configure/configuring-code-patterns.md#using-your-own-tool-configuration-files), you must manage patterns manually on your configuration file.
-        -   If your repository is following an [organization coding standard](../organizations/using-coding-standards.md), disabling the code pattern causes the repository to stop following the coding standard. In this case, Codacy asks for your confirmation before accepting the changes and then copies the coding standard configurations to your repository, so you can customize them.
+    :::note
+    -   If you're using a [custom configuration file](../repositories-configure/configuring-code-patterns.md#using-your-own-tool-configuration-files), you must manage patterns manually on your configuration file.
+    -   If your repository is following an [organization coding standard](../organizations/using-coding-standards.md), disabling the code pattern causes the repository to stop following the coding standard. In this case, Codacy asks for your confirmation before accepting the changes and then copies the coding standard configurations to your repository, so you can customize them.
+    :::
 
 -   **View the file** where the issue was detected.
 
@@ -102,8 +106,9 @@ Use the options in the menu of each issue to:
 
 ## Managing system-detected false positives
 
-!!! info
-    The False Positive detection is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.
+:::note
+The False Positive detection is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.
+:::
 
 Codacy can automatically detect issues that may be false positives. If the system indicates that an issue is a **False Positive**, you have two options:
 
@@ -126,7 +131,8 @@ To restore an ignored issue, select **Unignore issue** from the options menu:
 
 ## Fixing issues automatically
 
-!!! info "This section applies to GitHub repositories only"
+:::note[This section applies to GitHub repositories only]
+:::
 
 If Codacy detects code patterns with suggested fixes, a **Fix issues** button appears above the issue list.
 
@@ -142,8 +148,9 @@ In this case, Codacy generates a patch that enables you to solve all resolvable 
 1.  Create a new branch from the default branch.
 1.  Apply the patch from the repository's root directory, for example with the `pbpaste | patch` command.  
 
-    !!! note
-        These changes are automatically generated. Review them to make sure they're correct.
+    :::note
+    These changes are automatically generated. Review them to make sure they're correct.
+    :::
 
 1.  Push the new branch to the repository.
 1.  On GitHub, create a pull request from the new branch to the default branch.

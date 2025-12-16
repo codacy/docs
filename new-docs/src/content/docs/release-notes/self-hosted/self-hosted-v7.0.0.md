@@ -36,10 +36,12 @@ GitLab defines Maintainers as [super-developers](https://about.gitlab.com/handbo
 
 However, until now the Codacy permissions for this role were limited to the same as a Developer. This change addresses customer feedback towards having a more seamless integration between Codacy and GitLab.
 
-!!! note
-    After upgrading Codacy, we recommend that you clean your browser cache and refresh the list of repositories on the **Repositories list** page to make sure that you're using the updated permissions:
+:::note
+After upgrading Codacy, we recommend that you clean your browser cache and refresh the list of repositories on the **Repositories list** page to make sure that you're using the updated permissions:
 
-    ![Refreshing the list of repositories on Codacy](../images/cy-5876.png)
+![Refreshing the list of repositories on Codacy](../images/cy-5876.png)
+
+:::
 
 ## Product enhancements
 
@@ -55,8 +57,9 @@ However, until now the Codacy permissions for this role were limited to the same
 
     New repositories will use ESLint 7 by default, but **Codacy won't provide more updates for ESLint 7 and will remove ESLint 7 on April 4, 2023**. (CY-5848)
 
-    !!! note
-        Please [follow these troubleshooting instructions](https://docs.codacy.com/v7.0/chart/troubleshoot/troubleshoot/#missing-new-tools) if the new tool ESLint 8 doesn't appear on the **Code patterns** page of your repositories after upgrading to this Codacy Self-hosted version.
+    :::note
+    Please [follow these troubleshooting instructions](https://docs.codacy.com/v7.0/chart/troubleshoot/troubleshoot/#missing-new-tools) if the new tool ESLint 8 doesn't appear on the **Code patterns** page of your repositories after upgrading to this Codacy Self-hosted version.
+    :::
 
 -   The [**Repositories list** page](https://docs.codacy.com/v7.0/organizations/managing-repositories/) now displays a warning icon to improve the visibility of warnings and errors affecting the repositories. (CY-5797)
 

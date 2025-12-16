@@ -70,5 +70,6 @@ codacy-cli analyze -t eslint -o eslint.sarif -c $COMMIT_SHA -a CODACY_API_TOKEN 
     repository: sample-javascript-project
 ```
 
-!!! warning "Tokens should be stored in the repository secrets."
+:::caution[Tokens should be stored in the repository secrets.]
+:::
 

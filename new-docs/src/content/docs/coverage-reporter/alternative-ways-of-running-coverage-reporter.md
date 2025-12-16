@@ -7,8 +7,9 @@ description: There are alternative ways of running or installing Codacy Coverage
 
 The following sections list the alternative ways of running or installing Codacy Coverage Reporter.
 
-!!! important
-    **If you're using Codacy Self-hosted {{ extra.codacy_self_hosted_version }}** you must use [Codacy Coverage Reporter {{ extra.codacy_coverage_reporter_version }}](https://github.com/codacy/codacy-coverage-reporter/releases/tag/{{ extra.codacy_coverage_reporter_version }}) to ensure it's compatible with your Codacy instance.
+:::caution
+**If you're using Codacy Self-hosted {{ extra.codacy_self_hosted_version }}** you must use [Codacy Coverage Reporter {{ extra.codacy_coverage_reporter_version }}](https://github.com/codacy/codacy-coverage-reporter/releases/tag/{{ extra.codacy_coverage_reporter_version }}) to ensure it's compatible with your Codacy instance.
+:::
 
 ## Bash script (recommended) {: id="bash-script"}
 
@@ -26,12 +27,13 @@ The recommended way to run the Codacy Coverage Reporter is by using the [self-co
     wget -qO - https://coverage.codacy.com/get.sh | sh -s -- report -r <coverage report file name>
     ```
 
-!!! note
-    Starting on version `13.0.0` the script automatically validates the checksum of the downloaded binary. To skip the checksum validation, define the following environment variable:
+:::note
+Starting on version `13.0.0` the script automatically validates the checksum of the downloaded binary. To skip the checksum validation, define the following environment variable:
 
-    ```bash
-    export CODACY_REPORTER_SKIP_CHECKSUM=true
-    ```
+```bash
+export CODACY_REPORTER_SKIP_CHECKSUM=true
+```
+:::
 
 The self-contained script can cache the binary. To avoid downloading the binary every time that the script runs, add one of the following directories to your CI cached folders:
 

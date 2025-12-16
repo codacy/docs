@@ -16,8 +16,9 @@ To add a new organization to Codacy, select **Add organization** on the navigati
 
 This opens the list of organizations on your Git providers. 
 
-!!! note 
-    The organization with the same name as your Git provider username contains your personal repositories.
+:::note
+The organization with the same name as your Git provider username contains your personal repositories.
+:::
 
 ![Adding an organization](images/organization-add.png)
 
@@ -25,15 +26,17 @@ This opens the list of organizations on your Git providers.
 -   To join an organization that's already on Codacy, click the link **Join** for that organization.
 -   To add organizations from a Git provider not yet listed on this page, click **Add provider** and give the [necessary permissions](../getting-started/which-permissions-does-codacy-need-from-my-account.md) for Codacy to sync with the new Git provider and display your organizations.
 
-!!! note
-    If you can't see the organization you're looking for, [follow these troubleshooting instructions](../faq/troubleshooting/why-cant-i-see-my-organization.md).
+:::note
+If you can't see the organization you're looking for, [follow these troubleshooting instructions](../faq/troubleshooting/why-cant-i-see-my-organization.md).
+:::
 
 ## Updates on the Git provider
 
 If you update your organization or repository information on your Git provider, some changes are automatically reflected on Codacy, as described in the table below.
 
-!!! note
-    If an update to your organization name isn't automatically reflected on Codacy, navigate to the organization **Settings** page, tab **Profile**, and click the **Synchronize** button.
+:::note
+If an update to your organization name isn't automatically reflected on Codacy, navigate to the organization **Settings** page, tab **Profile**, and click the **Synchronize** button.
+:::
 
 | Git provider | Rename repository | Change repository visibility | Delete repository | Rename organization or group | Remove member from organization or group | Delete organization or group |
 |---|---|---|---|---|---|---|

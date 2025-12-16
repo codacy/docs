@@ -61,7 +61,8 @@ To access these logs, click the **View logs** link in the [pull request status](
 
 ## Fixing issues automatically
 
-!!! info "This section applies to GitHub repositories only"
+:::note[This section applies to GitHub repositories only]
+:::
 
 If Codacy detects code patterns with suggested fixes, a **Fix issues** button appears above the issue list.
 
@@ -77,8 +78,9 @@ In this case, Codacy generates a patch that enables you to solve all resolvable 
 1.  Check out the relevant branch in the local repository.
 1.  Apply the patch from the repository's root directory, for example with the `pbpaste | patch` command.
 
-    !!! note
-        These changes are automatically generated. Review them to make sure they're correct.
+    :::note
+    These changes are automatically generated. Review them to make sure they're correct.
+    :::
 
 1.  Push the changes to the repository.
 

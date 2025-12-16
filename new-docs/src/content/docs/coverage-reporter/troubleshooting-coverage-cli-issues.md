@@ -127,8 +127,9 @@ You can get the `No coverage data was sent` error when running the Codacy Covera
 
 Make sure that your coverage report isn't empty and that it includes coverage data for files in the associated Git repository.
 
-!!! note
-    If you upload multiple coverage reports and at least one contains valid data, the Codacy Coverage Reporter uploads the valid reports and ignores the invalid ones.
+:::note
+If you upload multiple coverage reports and at least one contains valid data, the Codacy Coverage Reporter uploads the valid reports and ignores the invalid ones.
+:::
 
 ## Report generated an empty result while uploading C# coverage data {: id="detailedxml"}
 

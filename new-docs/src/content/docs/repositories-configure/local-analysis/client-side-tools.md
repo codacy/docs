@@ -20,16 +20,18 @@ Codacy supports client-side tools in two ways:
 
     You can't configure these tools on the Codacy UI, since you manage their configuration locally.
 
-!!! tip
-    In order to receive results from local analysis, the flag "Run analysis on your build server" **must be enabled**.
+:::tip
+In order to receive results from local analysis, the flag "Run analysis on your build server" **must be enabled**.
+:::
 
 ![Client-side analysis flow](images/run-analysis-through-build-server.png)
 
 
 The table below describes the supported client-side tools and includes links to specific instructions on how to run each tool.
 
-!!! tip
-    **If you're using GitHub** <span class="skip-vale">we</span> recommend that you use the [Codacy Analysis CLI GitHub Action](https://github.com/codacy/codacy-analysis-cli-action#integration-with-codacy-for-client-side-tools) to run the **containerized** client-side tools and upload the results to Codacy.
+:::tip
+**If you're using GitHub** <span class="skip-vale">we</span> recommend that you use the [Codacy Analysis CLI GitHub Action](https://github.com/codacy/codacy-analysis-cli-action#integration-with-codacy-for-client-side-tools) to run the **containerized** client-side tools and upload the results to Codacy.
+:::
 
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:

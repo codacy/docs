@@ -48,8 +48,9 @@ To grant an organization member additional permissions, you can assign that memb
 
 To review the additional permissions granted by the organization manager role, see the tables for each Git provider ([GitHub](#permissions-for-github), [GitLab](#permissions-for-gitlab), [Bitbucket](#permissions-for-bitbucket)).
 
-!!! note
-    Organization managers can access the **Policies** and **Integrations** settings sections of your organization and can therefore impact some repository settings for all repositories of your organization, even repositories that they can't access on the Git provider. However, they can't access the repositories themselves and can only see the repository names.
+:::note
+Organization managers can access the **Policies** and **Integrations** settings sections of your organization and can therefore impact some repository settings for all repositories of your organization, even repositories that they can't access on the Git provider. However, they can't access the repositories themselves and can only see the repository names.
+:::
 
 ### Assigning the organization manager role
 
@@ -59,8 +60,9 @@ To assign the organization manager role:
 
 1.  In the **Organization managers** area, use the search field to find the relevant organization member and click the member's name.
 
-    !!! note
-        You can only assign the organization manager role to [members of your organization](./managing-people.md#joining).
+    :::note
+    You can only assign the organization manager role to [members of your organization](./managing-people.md#joining).
+    :::
 
     ![Security and risk management access management](images/roles-permissions-organization-manager-assign.png)
 

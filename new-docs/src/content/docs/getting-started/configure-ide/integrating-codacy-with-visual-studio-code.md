@@ -8,7 +8,8 @@ The [Codacy Visual Studio Code extension](https://github.com/codacy/codacy-vscod
 
 Use this extension to get the full list of problems found by Codacy for a pull request and navigate to any issue that you want to review and fix.
 
-!!! info "To use this extension you need a [Codacy account](https://www.codacy.com/signup-codacy)"
+:::note[To use this extension you need a [Codacy account](https://www.codacy.com/signup-codacy)]
+:::
 
 ## Interface overview
 
@@ -76,8 +77,9 @@ See [how to manage the analysis of your repository's branches](../repositories-c
 
 1.  Make sure that the repository you’re working on is analyzed by Codacy and that you have a [repository read](../organizations/roles-and-permissions-for-organizations.md) role or higher.
 
-    !!! tip
-        If this is your first time using Codacy, see [how to add and analyze your first repository](./codacy-quickstart.md#adding-your-first-repository).
+    :::tip
+    If this is your first time using Codacy, see [how to add and analyze your first repository](./codacy-quickstart.md#adding-your-first-repository).
+    :::
 
 1.  Install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=codacy-app.codacy) or through the [Extensions view in VS Code](https://code.visualstudio.com/docs/editor/extension-marketplace#_browse-for-extensions).
 
@@ -89,8 +91,9 @@ To see Codacy quality and coverage data for an open pull request, follow these s
 
 1.  Open the repository directory in VS Code.
 
-    !!! note
-        If the repository isn't on Codacy yet, [add it to Codacy](../organizations/managing-repositories.md#adding-a-repository) first.
+    :::note
+    If the repository isn't on Codacy yet, [add it to Codacy](../organizations/managing-repositories.md#adding-a-repository) first.
+    :::
 
 1.  Open the main view by clicking the **Codacy logo** in the activity bar or the **Codacy tab** in the status bar.
 
@@ -98,8 +101,9 @@ To see Codacy quality and coverage data for an open pull request, follow these s
 
 1.  If you’re not signed in, click the **Sign in** button to authorize VS Code on Codacy.
 
-    !!! tip
-        To access a complete list of Codacy commands, open the VS Code command palette (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS) and type "Codacy".
+    :::tip
+    To access a complete list of Codacy commands, open the VS Code command palette (`Ctrl+Shift+P` on Windows/Linux or `Cmd+Shift+P` on macOS) and type "Codacy".
+    :::
 
 1.  Check out the pull request of interest. You can do it either manually or from the **Open Pull Requests** tab, by clicking the arrow button or using the contextual right-click menu.
 
@@ -109,8 +113,9 @@ After completing these steps, the main view shows the result of the latest Codac
 
 In the **Problems tab**, Codacy displays the same issues you find in the **Status tab** and lets you navigate to the exact line of code where the issue was found.
 
-!!! note
-    Code coverage, duplicates, and complexity aren't currently shown in the Problems tab.
+:::note
+Code coverage, duplicates, and complexity aren't currently shown in the Problems tab.
+:::
 
 To review issues:
 

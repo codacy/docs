@@ -97,7 +97,7 @@ If you don't want Guardrails to automatically generate the instructions file, go
 
 ![Guardrails instructions setting](images/guardrails-instructions-setting.png)
 
-:::warning
+:::caution
 The absence of the instructions file will impact the Guardrails experience.
 :::
 

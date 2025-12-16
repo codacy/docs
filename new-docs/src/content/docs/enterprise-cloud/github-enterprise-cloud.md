@@ -30,8 +30,9 @@ You can revoke the cloud enterpises access at any time in the same place.
 
 Once signup or login with your GitHub Enterprise credentials and, [setup access to could enterprises](#access-cloud-enterprises), navigate to your Enterprises area to manage your enterprises in Codacy, as well its organizations and seats management. 
 
-!!! note 
-    If you only have one Enterprise, Codacy will skip this screen and directs you to the [enterprise organizations list](#enterprise-organizations-list). 
+:::note
+If you only have one Enterprise, Codacy will skip this screen and directs you to the [enterprise organizations list](#enterprise-organizations-list).
+:::
 
 ![Enterprise cloud manage enterprises](images/Codacy-Enterprises.png)
 
@@ -46,10 +47,11 @@ View and export your enterprise seats and its activity by:
 1. Navigate to **People** on the left-handside navigation
 1. View, search and export the list of author seats
 
-!!! note 
-    - Codacy members won't be part of this list, only authors, users that have done commits. 
-    - In some Enterprise plans, **Members** are people that signup and joined an Organization in Codacy, and **Authors** are people that contribute to code changes. It can happen that Authors aren't Codacy Members. 
-    - Only Enterprise **Owners** or **Admins** will be able to view and export the list of authors. 
+:::note
+- Codacy members won't be part of this list, only authors, users that have done commits.
+- In some Enterprise plans, **Members** are people that signup and joined an Organization in Codacy, and **Authors** are people that contribute to code changes. It can happen that Authors aren't Codacy Members.
+- Only Enterprise **Owners** or **Admins** will be able to view and export the list of authors.
+:::
 
 ### Limitations
 Currently, the integration between Codacy and GitHub Enterprise has the following limitations:

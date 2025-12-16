@@ -110,10 +110,11 @@ In order to set up your rules, please follow the next steps:
 
     To see an explanation of the issues that a pattern detects and how to fix them, click the respective dropdown arrow.
 
-    !!! tip
-        -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click the checkbox in the header of the patterns list.
+    :::tip
+    -   To enable a group of code patterns, use the filter to select the relevant group of patterns and click the checkbox in the header of the patterns list.
 
-        -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.
+    -   Codacy displays the tag **New** for one month next to the name of newly added code patterns.
+    :::
 
     ![Configuring code patterns](images/code-patterns-configure.png)
 

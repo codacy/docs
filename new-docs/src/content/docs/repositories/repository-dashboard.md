@@ -8,8 +8,9 @@ The **Repository Dashboard** provides an overview of the repository code quality
 
 To access your Repository Dashboard, select a repository from the [Repositories list](../organizations/managing-repositories.md) and select **Dashboard** on the left navigation sidebar.
 
-!!! tip
-    You can share the URL of the Repository Dashboard for your **public repositories** to allow other people to see your repository code quality metrics, even if they aren't registered on Codacy.
+:::tip
+You can share the URL of the Repository Dashboard for your **public repositories** to allow other people to see your repository code quality metrics, even if they aren't registered on Codacy.
+:::
 
 ![Repository Dashboard](images/repository-dashboard.png)
 
@@ -39,8 +40,9 @@ Each tab displays the following information for the corresponding metric:
 -   The current value
 -   The variation of the value introduced by the last commit
 
-!!! note
-    The coverage tab only displays a value if Codacy received coverage data for the most recent commit. This is because one commit can <span class="skip-vale">easily</span> change the size or number of files on the repository, or even remove some files that had coverage information.
+:::note
+The coverage tab only displays a value if Codacy received coverage data for the most recent commit. This is because one commit can <span class="skip-vale">easily</span> change the size or number of files on the repository, or even remove some files that had coverage information.
+:::
 
 The chart also displays the **trendline** based on the past behavior and the [quality goals](../repositories-configure/adjusting-quality-goals.md) defined for the repository.
 
@@ -66,8 +68,9 @@ The **Coverage** area displays the percentage of lines of code on the selected b
 
 Click **See all files** to open the [list of files](files.md) in the repository.
 
-!!! tip
-    If you don't have coverage set up for your repository yet, the Coverage area provides you with instructions on [how to add coverage for your repository](../coverage-reporter/index.md).
+:::tip
+If you don't have coverage set up for your repository yet, the Coverage area provides you with instructions on [how to add coverage for your repository](../coverage-reporter/index.md).
+:::
 
 ![Coverage](images/repository-dashboard-coverage.png)
 

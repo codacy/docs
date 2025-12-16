@@ -6,8 +6,9 @@ title: Managing repositories
 
 Users with the [necessary permissions on your Git provider](roles-and-permissions-for-organizations.md) can **add** repositories to Codacy to start analyzing them. The remaining organization members with access to the added repositories can then **follow** on Codacy the repositories of their interest.
 
-!!! important
-    To see your repositories on Codacy, make sure that you have the necessary permissions over the repositories on the Git provider and that Codacy has the necessary permissions to access the repositories.
+:::caution
+To see your repositories on Codacy, make sure that you have the necessary permissions over the repositories on the Git provider and that Codacy has the necessary permissions to access the repositories.
+:::
 
 To see all the repositories that you follow on Codacy, open the page **Repositories** under your organization. Organization admins also see the total number of repositories that have already been [added to the organization](#adding-a-repository).
 
@@ -37,8 +38,9 @@ If you follow many repositories, you can use the search field above the list to 
 
 Users with the [necessary permissions](roles-and-permissions-for-organizations.md) can add a repository to Codacy to start analyzing it.
 
-!!! note
-    When a user adds a new repository to Codacy, all organization admins start following it automatically.
+:::note
+When a user adds a new repository to Codacy, all organization admins start following it automatically.
+:::
 
 To add new repositories to Codacy:
 
@@ -68,15 +70,18 @@ To follow or unfollow repositories on Codacy:
 
 1.  When you're done, close the window to return to your repositories list.
 
-!!! note
-    You automatically **start following** a repository as soon as you access any page from that repository. For example, when you access the repository using a direct link on your Git provider UI.
+:::note
+You automatically **start following** a repository as soon as you access any page from that repository. For example, when you access the repository using a direct link on your Git provider UI.
 
-    Conversely, you automatically **stop following** a repository as soon as you try accessing any page from that repository but you don't have permissions to see that repository anymore.
+Conversely, you automatically **stop following** a repository as soon as you try accessing any page from that repository but you don't have permissions to see that repository anymore.
  
+:::
+
 ## Finding your repositories with Segments {: id="provider-segments"}
 
 Codacy allows you to utilise [**Segments**](../segments) to categorize and filter repositories more effectively within the Codacy platform.
-!!! info "Check out how to [enable and configure **Segments**](../segments/#enabling-segments)"
+:::note[Check out how to [enable and configure **Segments**](../segments/#enabling-segments)]
+:::
 
 ![Repositories list filter](images/organization-manage-repos-custom-properties.png)
 

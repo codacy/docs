@@ -33,10 +33,12 @@ Adds a report to your pull requests showing whether your pull requests and cover
 
 ### AI Reviewer
 
-!!! note
-    This feature is only supported on GitHub.
+:::note
+This feature is only supported on GitHub.
 
-    If you choose to enable the AI Reviewer, consider disabling the AI-enhanced comments, as it may duplicate any comments on Codacy issues you receive.
+If you choose to enable the AI Reviewer, consider disabling the AI-enhanced comments, as it may duplicate any comments on Codacy issues you receive.
+
+:::
 
 The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the power of AI. It draws in the necessary context from source code and PR metadata to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
 
@@ -66,13 +68,15 @@ Adds a pull request comment showing an overall view of the coverage metrics for 
 
 When there are new coverage results, Codacy updates the last coverage summary comment if it's included in the last 5 comments of the pull request. Otherwise, Codacy creates a new comment.
 
-!!! important
-    **To get coverage summaries** you must also [add coverage to your repository](../../coverage-reporter/index.md).
+:::caution
+**To get coverage summaries** you must also [add coverage to your repository](../../coverage-reporter/index.md).
+:::
 
 ![Coverage summary on GitHub](images/github-integration-coverage-summary.png)
 
-!!! note
-    This feature is only supported on GitHub and GitLab Cloud.
+:::note
+This feature is only supported on GitHub and GitLab Cloud.
+:::
 
 ### Suggested fixes {: id="suggest-fixes"}
 
@@ -84,8 +88,9 @@ When there are new coverage results, Codacy updates the last coverage summary co
 
 Adds comments on the lines of the pull request where Codacy finds new issues with suggestions on how to fix the issues. Codacy doesn't apply any changes automatically. To apply the changes, [manually review and accept the suggestions](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request#applying-suggested-changes).
 
-!!! tip
-    Enable also **AI-enhanced comments** to get ready-to-commit AI-generated fixes.
+:::tip
+Enable also **AI-enhanced comments** to get ready-to-commit AI-generated fixes.
+:::
 
 ![Comment suggesting a fix on GitHub](images/github-integration-suggest-fixes.png)
 

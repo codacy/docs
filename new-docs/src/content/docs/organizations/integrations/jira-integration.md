@@ -4,7 +4,8 @@ title: Organization Jira integration
 
 # Organization Jira integration
 
-!!! info "This integration is only available for Jira Cloud"
+:::note[This integration is only available for Jira Cloud]
+:::
 
 Integrate Jira with Codacy to be able to create Jira tickets directly from Codacy findings, and import your Jira issues for [Security and risk management](../managing-security-and-risk.md) to manage them all in one place as security items.
 
@@ -14,13 +15,15 @@ To install the Jira integration:
 
 1.  On Jira, add the label **security** (case-insensitive) to the issues you wish to import and confirm that they use [the right Jira priorities to correctly map to item severities](../managing-security-and-risk.md#item-severities-and-deadlines).
 
-    !!! tip
-        Add the **security** label as a default to all new Jira issues that track security-related work in your organization.
+    :::tip
+    Add the **security** label as a default to all new Jira issues that track security-related work in your organization.
+    :::
 
 1.  Open your organization **Integrations**, page **Jira**, and click **Install Jira** to proceed to Atlassian's website.
 
-    !!! note
-        Use a Jira account with admin permissions when installing this integration. This lets Codacy access all issues, since the integration inherits the permissions of the account that installs it.
+    :::note
+    Use a Jira account with admin permissions when installing this integration. This lets Codacy access all issues, since the integration inherits the permissions of the account that installs it.
+    :::
 
     ![Security and risk management Jira integration installation](images/jira-integration-srm-install.png)
 
@@ -34,8 +37,9 @@ For more information on how this integration works, see [how Codacy manages secu
 
 To uninstall the Jira integration, open your organization **Integrations**, page **Jira**, then click **Uninstall Jira** and confirm.
 
-!!! important
-    Uninstalling the Jira integration as described above deletes all associated open items. You can alternatively uninstall the Jira integration on the Jira website: this doesn't delete anything, but it prevents Codacy from opening new Jira-related items.
+:::caution
+Uninstalling the Jira integration as described above deletes all associated open items. You can alternatively uninstall the Jira integration on the Jira website: this doesn't delete anything, but it prevents Codacy from opening new Jira-related items.
+:::
 
 ## Creating Jira tickets from issues, dependencies and files
 
@@ -53,8 +57,9 @@ Installing the Jira integration enables the feature of creating Jira tickets fro
 
     ![Jira modal](images/jira-modal.png)
 
-    !!! important
-        The Jira ticket creation doesn't support projects with mandatory custom fields
+    :::important
+    The Jira ticket creation doesn't support projects with mandatory custom fields
+    :::
 
 ### Jira tickets for multiple issues
 
@@ -62,8 +67,9 @@ To create a Jira ticket for multiple issues, you can do so by navigating to a li
 
 ![Create Jira Ticket for multiple issues](images/create-jira-ticket-for-multiple-issues.png)
 
-!!! note
-    You can create a Jira ticket for up to 50 issues / ticket
+:::note
+You can create a Jira ticket for up to 50 issues / ticket
+:::
 
 ### Jira tickets for dependencies
 

@@ -23,8 +23,9 @@ The Issues Metrics dashboard includes the following sections to help you monitor
 - [Issues activity](#issues-activity)
 - [Repositories with the most issues](#repositories-with-the-most-issues)
 
-!!! tip
-    In each section, you can click on the ellipsis icon in the top right corner to export that section's data to CSV or JSON.
+:::tip
+In each section, you can click on the ellipsis icon in the top right corner to export that section's data to CSV or JSON.
+:::
 
 ## Open Issues by Severity
 
@@ -42,8 +43,9 @@ This chart displays the current number of open issues detected in your repositor
 
 This chart shows the trend of open issues in your repositories over time, either by severity or by category, depending on the filters applied. You can hover over the chart to see the number of open issues on a specific date. You can also click on the chart to filter results in the **Issues Activity** chart and the **Repositories with the Most Issues** list.
 
-!!! important
-    Data for each period represents an average of the values during that period.
+:::caution
+Data for each period represents an average of the values during that period.
+:::
 
 ![Open issues evolution by severity](images/open-issues-evolution-by-severity.png)
 

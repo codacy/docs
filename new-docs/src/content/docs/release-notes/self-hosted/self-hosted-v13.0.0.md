@@ -34,16 +34,19 @@ This version of Codacy Self-hosted adds support for [ingress-nginx chart 4.8.3](
 -   [CVE-2023\-5043](https://github.com/kubernetes/ingress-nginx/issues/10571)
 -   [CVE-2023\-5044](https://github.com/kubernetes/ingress-nginx/issues/10572)
 
-!!! note
-    Although [ingress-nginx chart 4.8.3 officially supports](https://github.com/kubernetes/ingress-nginx/tree/helm-chart-4.8.3#supported-versions-table) Kubernetes **version 1.25** to **1.28**, we tested this version of Codacy Self-hosted using [ingress-nginx chart 4.8.3](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.8.3) on all the [supported Kubernetes versions](https://docs.codacy.com/v13.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup), **1.22.\*** to **1.26.\***. All tests were successful in accordance with our quality assurance standards.
+:::note
+Although [ingress-nginx chart 4.8.3 officially supports](https://github.com/kubernetes/ingress-nginx/tree/helm-chart-4.8.3#supported-versions-table) Kubernetes **version 1.25** to **1.28**, we tested this version of Codacy Self-hosted using [ingress-nginx chart 4.8.3](https://github.com/kubernetes/ingress-nginx/releases/tag/helm-chart-4.8.3) on all the [supported Kubernetes versions](https://docs.codacy.com/v13.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup), **1.22.\*** to **1.26.\***. All tests were successful in accordance with our quality assurance standards.
+:::
 
 ### Upgrading ingress-nginx chart to version 4.8.3
 
-!!! warning
-    -   If you applied **custom configurations** to ingress-nginx different from the Codacy's `values-nginx.yaml` file, follow the [ingress-nginx documentation](https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx/4.8.3) to upgrade your installation.
-    -   If your NGINX Ingress Controller is shared by other components out of Codacy's installation scope, check those components documentation to evaluate the impact of this upgrade.
+:::caution
+-   If you applied **custom configurations** to ingress-nginx different from the Codacy's `values-nginx.yaml` file, follow the [ingress-nginx documentation](https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx/4.8.3) to upgrade your installation.
+-   If your NGINX Ingress Controller is shared by other components out of Codacy's installation scope, check those components documentation to evaluate the impact of this upgrade.
 
-    If you have any questions regarding the above scenarios or need help, please contact <mailto:support@codacy.com>.
+If you have any questions regarding the above scenarios or need help, please contact <mailto:support@codacy.com>.
+
+:::
 
 If your Codacy Self-hosted setup uses a **dedicated NGINX Ingress Controller** that follows [Codacy's installation instructions](https://docs.codacy.com/v13.0/chart/infrastructure/eks-quickstart/) with **no custom configurations**, you can upgrade ingress-nginx chart to version 4.8.3 by executing the steps below:
 
@@ -58,8 +61,9 @@ If your Codacy Self-hosted setup uses a **dedicated NGINX Ingress Controller** t
     helm upgrade --install --namespace codacy --version 4.8.3 nginx-ingress ingress-nginx/ingress-nginx -f values-nginx.yaml
     ```
 
-!!! note
-    This ingress-nginx chart upgrade can be applied to Codacy Self-hosted v10.0 and later.
+:::note
+This ingress-nginx chart upgrade can be applied to Codacy Self-hosted v10.0 and later.
+:::
 
 ## Product enhancements
 

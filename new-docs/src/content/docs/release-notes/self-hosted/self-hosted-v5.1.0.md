@@ -19,8 +19,9 @@ Follow the steps below to upgrade to Codacy Self-hosted v5.1.0:
 
 1.  [Check the release notes](../index.md#self-hosted) for all Codacy Self-hosted versions between your current version and the most recent version for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
-    !!! warning
-        **Codacy Self-hosted v5.0.0 dropped the support for legacy manual organizations.** Please be sure to [review the breaking changes](self-hosted-v5.0.0.md#breaking-changes) introduced in that version before upgrading.
+    :::warning
+    **Codacy Self-hosted v5.0.0 dropped the support for legacy manual organizations.** Please be sure to [review the breaking changes](self-hosted-v5.0.0.md#breaking-changes) introduced in that version before upgrading.
+    :::
 
 1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](../../chart/maintenance/upgrade.md).
 

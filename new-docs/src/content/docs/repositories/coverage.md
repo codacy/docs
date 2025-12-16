@@ -21,8 +21,9 @@ Codacy displays the following [code coverage metrics](../faq/code-analysis/which
 
 If the repository doesn't have a coverage goal set, the code coverage metrics won't show values for Files above and below coverage goals.
 
-!!! note
-    You can set a Coverage goal for the repository [inside repository settings, on the Goals tab](../repositories-configure/adjusting-quality-goals.md).
+:::note
+You can set a Coverage goal for the repository [inside repository settings, on the Goals tab](../repositories-configure/adjusting-quality-goals.md).
+:::
 
 ![Code coverage metrics](images/coverage-metrics.png)
 

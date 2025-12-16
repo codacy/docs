@@ -19,8 +19,9 @@ Follow the steps below to upgrade to Codacy Self-hosted v5.0.0:
 
 1.  [Check the release notes](../index.md#self-hosted) for all Codacy Self-hosted versions between your current version and the most recent version for breaking changes and follow the instructions provided <span class="skip-vale">carefully</span>.
 
-    !!! warning
-        **This version drops the support for legacy manual organizations.** Please be sure to [review the breaking changes](#breaking-changes) introduced in this version before upgrading.
+    :::warning
+    **This version drops the support for legacy manual organizations.** Please be sure to [review the breaking changes](#breaking-changes) introduced in this version before upgrading.
+    :::
 
 1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](../../chart/maintenance/upgrade.md).
 
@@ -35,8 +36,9 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 
 -   Dropped support for legacy manual organizations.
 
-    !!! important
-        **If you're using legacy manual organizations** please contact <mailto:support@codacy.com> before upgrading to Codacy Self-hosted 5.0.0 or above so that <span class="skip-vale">we</span> can assist you with migrating your legacy organizations.
+    :::caution
+    **If you're using legacy manual organizations** please contact <mailto:support@codacy.com> before upgrading to Codacy Self-hosted 5.0.0 or above so that <span class="skip-vale">we</span> can assist you with migrating your legacy organizations.
+    :::
 
 -   The Codacy components `codacy-activities`, `hotspots-api`, and `hotspots-worker` are no longer needed and were removed.
 

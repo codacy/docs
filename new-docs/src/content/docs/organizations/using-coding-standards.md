@@ -20,8 +20,9 @@ This page covers the following topics:
 
 ## Creating a coding standard {: id="creating"}
 
-!!! note
-    Codacy currently supports up to 10 coding standards per organization.
+:::note
+Codacy currently supports up to 10 coding standards per organization.
+:::
 
 To create a coding standard for your organization:
 
@@ -54,8 +55,9 @@ If you selected **Guided setup** when [creating a new coding standard](#creating
     -   **Essential**: Focuses on the most important issues by including the most critical code patterns. Ideal for initial integration, to prevent overwhelming developers, and to speed up analysis times.
     -   **Comprehensive**: Detects all issues by including all code patterns, capturing the complete severity spectrum. Ideal for detailed code quality reviews, while reducing emphasis on critical issues. It may increase analysis times.
 
-    !!! tip
-        Initially, set the sensitivity to **Essential** for most category groups to focus on critical code patterns. It helps streamline the integration process with Codacy without overwhelming developers with too many reported issues. You can gradually include more patterns as needed.
+    :::tip
+    Initially, set the sensitivity to **Essential** for most category groups to focus on critical code patterns. It helps streamline the integration process with Codacy without overwhelming developers with too many reported issues. You can gradually include more patterns as needed.
+    :::
 
     ![Coding standard presets](images/coding-standard-presets.png)
 
@@ -73,14 +75,15 @@ If you selected **Advanced setup** when [creating a new coding standard](#creati
 
 1.  Select the programming languages that the new coding standard should include.
 
-    !!! important
-        The coding standard will only control tools that can analyze one or more of the languages selected in this step.
+    :::caution
+    The coding standard will only control tools that can analyze one or more of the languages selected in this step.
 
-        If a language is omitted in this step, Codacy uses repository-level tool configurations if present or global Codacy defaults otherwise, and may analyze the omitted language. To prevent this:
+    If a language is omitted in this step, Codacy uses repository-level tool configurations if present or global Codacy defaults otherwise, and may analyze the omitted language. To prevent this:
 
-        1. In this step select all languages, so that the coding standard controls all tools.
+    1. In this step select all languages, so that the coding standard controls all tools.
 
-        1. In the next step, explicitly disable the tools that you don't want to use.
+    1. In the next step, explicitly disable the tools that you don't want to use.
+    :::
 
     ![Selecting the languages for the coding standard](images/coding-standard-select-languages.png)
 
@@ -92,10 +95,11 @@ If you selected **Advanced setup** when [creating a new coding standard](#creati
     -   For each enabled tool, configure the code patterns to use.
     -   You can also use the **Discover patterns** option to find patterns across all tools.
 
-    !!! tip
-        -   Use the filters to find the relevant tools and code patterns. The recommended configurations are manually curated by Codacy or based on tool defaults and are marked with the icon ![Recommended icon](images/coding-standard-recommended-icon.png).
-        -   To toggle multiple code patterns at once, click the checkbox of the first pattern and **Shift+click** the checkbox of the last pattern in a range.
-        -   To toggle all the code patterns visible on the list, click the checkbox on the header of the code patterns list. If there are more code patterns to load on the list, you can click the link **Enable/Disable all &lt;N&gt; patterns** to toggle all patterns matching the current filters.
+    :::tip
+    -   Use the filters to find the relevant tools and code patterns. The recommended configurations are manually curated by Codacy or based on tool defaults and are marked with the icon ![Recommended icon](images/coding-standard-recommended-icon.png).
+    -   To toggle multiple code patterns at once, click the checkbox of the first pattern and **Shift+click** the checkbox of the last pattern in a range.
+    -   To toggle all the code patterns visible on the list, click the checkbox on the header of the code patterns list. If there are more code patterns to load on the list, you can click the link **Enable/Disable all &lt;N&gt; patterns** to toggle all patterns matching the current filters.
+    :::
 
     ![Configuring the tools and patterns for the coding standard](images/coding-standard-configure-tools.png)
 
@@ -105,8 +109,9 @@ If you selected **Advanced setup** when [creating a new coding standard](#creati
 
 For ease of management, you can define multiple default coding standards that automatically apply to new repositories. In the absence of default coding standards, Codacy applies global defaults to all new repositories.
 
-!!! note
-    When Codacy introduces new tools, those are automatically added to the global Codacy defaults but need to be manually added to a default coding standard.
+:::note
+When Codacy introduces new tools, those are automatically added to the global Codacy defaults but need to be manually added to a default coding standard.
+:::
 
 You can mark a new coding standard as default when [creating](#creating) one.
 
@@ -120,8 +125,9 @@ To mark an existing coding standard as default:
 
 ## Editing a coding standard {: id="editing"}
 
-!!! note
-    Any edits to the configurations of a coding standard are automatically applied on the next analysis of each associated repository.
+:::note
+Any edits to the configurations of a coding standard are automatically applied on the next analysis of each associated repository.
+:::
 
 To edit an existing coding standard or change the repositories that follow that coding standard:
 
@@ -133,8 +139,9 @@ To edit an existing coding standard or change the repositories that follow that 
 
 1.  Edit the current coding standard configurations and click the button **Next** to advance to the following [configuration pages](#advanced-settings):
 
-    !!! note
-        When editing an existing coding standard, the [advanced setup](#advanced-settings) is the default view.
+    :::note
+    When editing an existing coding standard, the [advanced setup](#advanced-settings) is the default view.
+    :::
 
     -   **Select languages**: the programming languages that the coding standard applies to.
 
@@ -180,11 +187,13 @@ A common strategy is to start with a baseline standard containing fundamental ru
 
 ![Coding standards strategies](images/coding-standard-strategy.png)
 
-!!! note
-    You can apply up to 10 coding standards to your organization. Standards can overlap, meaning a single repository can follow multiple standards simultaneously.
+:::note
+You can apply up to 10 coding standards to your organization. Standards can overlap, meaning a single repository can follow multiple standards simultaneously.
+:::
 
-!!! important
-    If the same pattern appears in multiple standards, the version from the most recently created and applied standard (with its parameters) takes precedence.
+:::caution
+If the same pattern appears in multiple standards, the version from the most recently created and applied standard (with its parameters) takes precedence.
+:::
 
 ### Implementation guidelines {: id="standards-implementation"}
 Consider these points when implementing coding standards:

@@ -13,19 +13,22 @@ To exclude files from your repository analysis open your repository **Settings**
 
 ![Ignored files](images/ignored-files.png)
 
-!!! note
-    -   See below the files that Codacy [ignores by default](#default-ignored-files).
+:::note
+-   See below the files that Codacy [ignores by default](#default-ignored-files).
 
-    -   You can also ignore files using your own [tool configuration files](configuring-code-patterns.md#using-your-own-tool-configuration-files), although this depends on the option being supported by each tool.
+-   You can also ignore files using your own [tool configuration files](configuring-code-patterns.md#using-your-own-tool-configuration-files), although this depends on the option being supported by each tool.
 
-    -   {% include-markdown "../assets/includes/coverage-ignore.md" %}
-    
-    -  When excluding files from **Duplication** analysis, you must state the **entire path** to the files. Unlike quality analysis, wildcards will not work, resulting in files not being excluded.
+-   {% include-markdown "../assets/includes/coverage-ignore.md" %}
+
+-  When excluding files from **Duplication** analysis, you must state the **entire path** to the files. Unlike quality analysis, wildcards will not work, resulting in files not being excluded.
+
+:::
 
 If you need more flexibility in ignoring files, use a Codacy configuration file to [define a custom list of file paths to exclude](codacy-configuration-file.md#syntax-for-ignoring-files).
 
-!!! important
-    If your repository has a [Codacy configuration file](codacy-configuration-file.md), the **Ignored files** settings defined on the Codacy UI don't apply and you must [ignore files using the configuration file](codacy-configuration-file.md#ignore-files) instead.
+:::caution
+If your repository has a [Codacy configuration file](codacy-configuration-file.md), the **Ignored files** settings defined on the Codacy UI don't apply and you must [ignore files using the configuration file](codacy-configuration-file.md#ignore-files) instead.
+:::
 
 ![Ignored files](images/ignored-files-configuration-file.png)
 

@@ -17,8 +17,9 @@ The following sections describe how Codacy calculates each supported metric and 
   - [Code coverage](#code-coverage)
   - [See also](#see-also)
 
-!!! note
-    Depending on certain characteristics of your repository, such as the number of source code files and their size, Codacy may [apply limits to the code analysis](does-codacy-place-limits-on-the-code-analysis.md) that impact the calculation of the supported metrics.
+:::note
+Depending on certain characteristics of your repository, such as the number of source code files and their size, Codacy may [apply limits to the code analysis](does-codacy-place-limits-on-the-code-analysis.md) that impact the calculation of the supported metrics.
+:::
 
 ## Grade
 
@@ -107,8 +108,9 @@ Codacy calculates duplication as follows:
 -   A file is considered duplicated if the number of clones in the file is higher than the threshold [**File is duplicated when over**](../../repositories-configure/adjusting-quality-goals.md).
 -   The duplication value of a commit or pull request is the number of clones introduced by the commit or pull request.
 
-!!! note
-    You can [customize the rules for identifying duplicated blocks of code](../../repositories-configure/codacy-configuration-file.md#pmd-cpd-duplication) when using PMD CPD to analyze the source code of your repository.
+:::note
+You can [customize the rules for identifying duplicated blocks of code](../../repositories-configure/codacy-configuration-file.md#pmd-cpd-duplication) when using PMD CPD to analyze the source code of your repository.
+:::
 
 Codacy displays duplication on the following places:
 
@@ -140,8 +142,9 @@ Codacy calculates code coverage as follows:
     -   Added or modified lines that aren't coverable
 <!--code-coverage-metrics-end-->
 
-!!! note
-    If you encounter a situation where Codacy shows an unexpected drop in coverage, learn about [the most common reasons causing those scenarios](why-does-codacy-show-unexpected-coverage-changes.md).
+:::note
+If you encounter a situation where Codacy shows an unexpected drop in coverage, learn about [the most common reasons causing those scenarios](why-does-codacy-show-unexpected-coverage-changes.md).
+:::
 
 Once the coverage setup is complete, Codacy displays coverage data on the following places:
 
