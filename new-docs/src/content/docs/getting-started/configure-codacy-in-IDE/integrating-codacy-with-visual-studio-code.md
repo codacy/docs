@@ -18,7 +18,7 @@ The main view of the extension displays information about the code quality and c
 -   [Open pull requests](#open-pull-requests-tab)
 -   [Analyzed branch](#analyzed-branch-tab)
 
-![Important issues](./images/codacy-vscode-extension-main-view.png)
+![Important issues](./../images/codacy-vscode-extension-main-view.png)
 
 ### Status tab
 
@@ -30,13 +30,13 @@ The **Pull request status** tab displays the following information for the pull 
 
     When this item is expanded, the number next to each file name is the total number of issues that the pull request adds to or removes from that file. The number farther to the right, added by VS Code, is the total number of problems in that file, which may or may not be issues from Codacy. If there are any Medium or Critical issues, the file name is also highlighted in yellow (Medium) or red (Critical).
 
-    ![Important issues](./images/codacy-vscode-extension-important-issues.png)
+    ![Important issues](./../images/codacy-vscode-extension-important-issues.png)
 
 -   The **diff coverage and coverage variation** introduced by the pull request.
 
     When this item is expanded, the percentage next to each file name is the coverage variation for that file. You can toggle on/off the inline coverage to see/hide the line-by-line diff coverage and a comparison of the old and new file content for each modified file - uncovered lines (red), covered lines with its test coverage count (green), and non-coverable lines (no background).
 
-    ![Toggle inline coverage](./images/codacy-vscode-extension-inline-coverage.png)
+    ![Toggle inline coverage](./../images/codacy-vscode-extension-inline-coverage.png)
 
 -   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
 
@@ -44,7 +44,7 @@ The **Pull request status** tab displays the following information for the pull 
 
 ### Open pull requests tab
 
-![Pull requests tab UI](images/codacy-vscode-extension-pull-requests-tab.png)
+![Pull requests tab UI](./../images/codacy-vscode-extension-pull-requests-tab.png)
 
 The **Open Pull Requests** tab lists all open pull requests for the repository, including the following information for each:
 
@@ -66,7 +66,7 @@ The **Open Pull Requests** tab lists all open pull requests for the repository, 
 
 ### Analyzed branch tab
 
-![Analyzed branch tab UI](images/codacy-vscode-extension-analyzed-branch-tab.png)
+![Analyzed branch tab UI](./../images/codacy-vscode-extension-analyzed-branch-tab.png)
 
 The **Analyzed Branch** tab appears if you switch to an analyzed branch that doesn't have an open pull request, such as the `main` or `master` branch. This tab shows an overview of the issues found in that branch, grouped by recently added, introduced by the current user, issue category, and issue severity.
 
@@ -94,7 +94,7 @@ To see Codacy quality and coverage data for an open pull request, follow these s
 
 1.  Open the main view by clicking the **Codacy logo** in the activity bar or the **Codacy tab** in the status bar.
 
-    ![Codacy main view](images/codacy-vscode-extension-sign-in.png)
+    ![Codacy main view](./../images/codacy-vscode-extension-sign-in.png)
 
 1.  If you’re not signed in, click the **Sign in** button to authorize VS Code on Codacy.
 
@@ -118,7 +118,7 @@ To review issues:
 
 1.  Click the name of the issue you want to review.
 
-    ![Navigate to a specific issue from the Problems tab](images/codacy-vscode-extension-problems-tab.png)
+    ![Navigate to a specific issue from the Problems tab](./../images/codacy-vscode-extension-problems-tab.png)
 
 1.  Hover over a highlighted issue in the code editor to view available actions and suggested quick fixes (if available).
 
