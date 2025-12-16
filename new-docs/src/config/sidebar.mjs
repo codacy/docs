@@ -14,7 +14,7 @@ export const sidebarTopics = [
     items: [
       {
         label: 'Getting started',
-        autogenerate: {directory: 'getting-started'}
+        autogenerate: { directory: 'getting-started' }
       },
       {
         label: 'Codacy Guardrails (IDE Extension)',
