@@ -5,6 +5,8 @@ These are overides to the current theme.
 :root, ::backdrop {
     --sl-color-text-accent: #005DF0;
     --sl-font: Inter;
+
+    --title-height: 4rem;
 }
 
 a {
@@ -13,4 +15,19 @@ a {
 
 .right-sidebar {
     border-inline-start: none;
+}
+
+.content-panel {
+    border-top: none;
+}
+
+.content-panel:first-of-type {
+    padding-top: var(--title-height)
+}
+
+/* Hide the Table of Contents heading (“On this page”) visually, but keep it for screen readers. */
+#starlight__on-this-page {
+    opacity: 0;
+    height: 0;
+    padding-top: var(--title-height)
 }

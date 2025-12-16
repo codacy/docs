@@ -20,9 +20,11 @@ export default defineConfig({
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/codacy/docs' }],
 			sidebar: [
 				{
+					label: 'Documentation home', slug: ''
+				},
+				{
 					label: 'Getting started',
 					items: [
-						{ label: 'Documentation home', slug: '' },
 						{ label: 'Codacy quickstart', slug: 'getting-started/codacy-quickstart' },
 						{ label: 'Configuring your repository', slug: 'getting-started/configuring-your-repository' },
 						{
