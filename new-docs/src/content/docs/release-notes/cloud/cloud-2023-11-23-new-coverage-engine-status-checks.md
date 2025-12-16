@@ -4,7 +4,6 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Rollout of new Coverage engine November 23, 2023
 
 {%
     include-markdown "../../assets/includes/coverage-github-accept-permissions.md"

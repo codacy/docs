@@ -6,7 +6,6 @@ description: Index of release notes for Codacy Cloud and Codacy Self-hosted.
 hide_toc: true
 ---
 
-# Codacy release notes
 
 This section contains the release notes for Codacy Cloud and Codacy Self-hosted.
 

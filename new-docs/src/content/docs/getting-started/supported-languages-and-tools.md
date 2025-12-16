@@ -3,7 +3,6 @@ title: Supported languages and tools
 description: List of tools that Codacy uses to analyze over 40 supported languages. Codacy provides static analysis for all programming languages and cloud infrastructure-as-code platforms as well as code duplication, code complexity, and code coverage metrics for most programming languages.
 ---
 
-# Supported languages and tools
 
 Codacy uses industry-leading tools to perform automatic static code analysis over 40 supported languages:
 

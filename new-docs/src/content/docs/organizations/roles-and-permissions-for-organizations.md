@@ -3,7 +3,6 @@ title: Roles and permissions for organizations
 description: List of operations that users can perform on Codacy depending on their role on the Git provider, and how to configure repository management permissions.
 ---
 
-# Roles and permissions for organizations
 
 By default, Codacy assigns each organization member a role corresponding to that member's role on your Git provider. Each Codacy role, from most restrictive (repository read) to most capable (organization admin), corresponds to a set of permissions that determine what each member can do on Codacy.
 

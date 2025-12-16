@@ -2,7 +2,6 @@
 title: Managing repositories
 ---
 
-# Managing repositories
 
 Users with the [necessary permissions on your Git provider](roles-and-permissions-for-organizations.md) can **add** repositories to Codacy to start analyzing them. The remaining organization members with access to the added repositories can then **follow** on Codacy the repositories of their interest.
 

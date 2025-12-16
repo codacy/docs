@@ -4,7 +4,6 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Discontinuation of SSH keys for GitHub repositories January 15, 2024
 
 :::note[This release note applies only to GitHub]
 :::

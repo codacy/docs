@@ -2,7 +2,6 @@
 title: Removing your repository
 ---
 
-# Removing your repository
 
 To stop Codacy from analyzing your repository, you must remove the repository from Codacy.
 

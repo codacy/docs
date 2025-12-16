@@ -2,7 +2,6 @@
 title: Why is my file over 150 KB missing?
 ---
 
-# Why is my file over 150 KB missing?
 
 Codacy Cloud currently [doesn't analyze files that are larger than 150 KB](../code-analysis/does-codacy-place-limits-on-the-code-analysis.md). Codacy doesn't display these files on the [Files page](../../repositories/files.md), and doesn't take them into account when grading your repository.
 

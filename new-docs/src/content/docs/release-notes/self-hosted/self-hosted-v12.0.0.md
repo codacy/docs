@@ -7,7 +7,6 @@ codacy_tools_version_old: https://github.com/codacy/codacy-tools-sh/releases/tag
 codacy_tools_version_new: https://github.com/codacy/codacy-tools-sh/releases/tag/sh-1.2.2
 ---
 
-# Self-hosted v12.0.0
 
 These release notes are for [Codacy Self-hosted v12.0.0](https://github.com/codacy/chart/releases/tag/12.0.0){: target="_blank"}, released on July 20, 2023.
 

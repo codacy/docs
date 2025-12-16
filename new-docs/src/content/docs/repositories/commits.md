@@ -4,7 +4,6 @@ page_name: "commit"
 file_name: "commits"
 ---
 
-# Commits page
 
 The **Commits page** displays an overview of the commits in your repository, such as the analysis status and the code quality metrics for each commit. This allows you to monitor the evolution of the code quality per commit in your repository.
 

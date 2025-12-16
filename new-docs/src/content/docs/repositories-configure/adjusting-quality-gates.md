@@ -2,7 +2,6 @@
 title: Adjusting quality gates
 ---
 
-# Adjusting quality gates
 
 The **quality gates** of your repository configure when Codacy reports your pull requests and commits as not up to standards.
 

@@ -2,7 +2,6 @@
 title: Why did Codacy stop commenting on pull requests?
 ---
 
-# Why did Codacy stop commenting on pull requests?
 
 ## Outdated app permissions
 

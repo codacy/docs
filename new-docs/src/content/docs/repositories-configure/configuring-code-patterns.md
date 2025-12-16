@@ -3,7 +3,6 @@ title: Configuring code patterns
 description: Configure the static analysis tools and code patterns that Codacy uses to analyze your repositories to ensure that the analysis results fit your needs.
 ---
 
-# Configuring code patterns
 
 {% include-markdown "../assets/includes/admin-access-control-info.md" %}
 

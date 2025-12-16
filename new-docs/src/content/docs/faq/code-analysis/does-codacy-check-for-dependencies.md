@@ -2,7 +2,6 @@
 title: Does Codacy check for dependencies?
 ---
 
-# Does Codacy check for dependencies?
 
 Yes, Codacy scans the manifest files of your repositories and displays any vulnerable dependencies as Codacy issues.
 

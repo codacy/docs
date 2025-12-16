@@ -5,7 +5,6 @@ rss_href: /feed_rss_created.xml
 description: Release notes for Codacy Self-hosted v4.1.0.
 ---
 
-# Self-hosted v4.1.0
 
 These release notes are for [Codacy Self-hosted v4.1.0](https://github.com/codacy/chart/releases/tag/4.1.0), released on July 6, 2021.
 

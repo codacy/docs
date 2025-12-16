@@ -3,7 +3,6 @@ title: Alternative ways of running Coverage Reporter
 description: There are alternative ways of running or installing Codacy Coverage Reporter, such as running a Docker image, using a GitHub Action or CircleCI orb, downloading a binary for your operating system, or building the binary from source.
 ---
 
-# Alternative ways of running Coverage Reporter
 
 The following sections list the alternative ways of running or installing Codacy Coverage Reporter.
 

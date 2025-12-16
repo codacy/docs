@@ -2,7 +2,6 @@
 title: What are organizations
 ---
 
-# What are organizations
 
 Codacy organizations let you automatically import your Git provider organizations, repositories (including your personal repositories that don't belong to a Git provider organization), and team members into Codacy with a few clicks.
 

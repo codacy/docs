@@ -2,7 +2,6 @@
 title: Integrating Codacy with IntelliJ IDEs
 ---
 
-# Integrating Codacy with IntelliJ IDEs
 
 The [Codacy IntelliJ plugin](https://github.com/codacy/codacy-intellij-extension) is an open-source plugin for IntelliJ IDEs that lets you review the result of the Codacy analysis for a pull request, get the full list of problems found, and navigate to any issue that you want to review and fix.
 

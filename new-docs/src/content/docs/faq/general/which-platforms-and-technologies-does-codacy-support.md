@@ -2,7 +2,6 @@
 title: Which platforms and technologies does Codacy support?
 ---
 
-# Which platforms and technologies does Codacy support?
 
 This page includes information about software platforms and technologies compatible with Codacy.
 

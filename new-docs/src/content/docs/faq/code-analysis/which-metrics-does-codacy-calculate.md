@@ -3,7 +3,6 @@ title: Which metrics does Codacy calculate?
 description: Codacy scans your code for issues and calculates code complexity, duplication, and coverage metrics. Besides this, Codacy also calculates a grade for your repository and files based on all calculated code quality metrics.
 ---
 
-# Which metrics does Codacy calculate?
 
 Codacy performs static code analysis and calculates code duplication, code complexity, and code coverage metrics for [most supported programming languages](../../getting-started/supported-languages-and-tools.md).
 

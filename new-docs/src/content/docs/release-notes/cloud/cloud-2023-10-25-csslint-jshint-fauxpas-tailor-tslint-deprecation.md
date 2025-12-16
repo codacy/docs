@@ -4,7 +4,6 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Deprecation of CSSLint, JSHint, Faux Pas, Tailor, TSLint October 25, 2023
 
 On October 25th 2023 we deprecated the following tools: **CSSLint**, **Faux Pas**, **JSHint**, **Tailor**, and **TSLint**.
 

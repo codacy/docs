@@ -2,7 +2,6 @@
 title: How does Codacy support GitLab Cloud?
 ---
 
-# How does Codacy support GitLab Cloud?
 
 When you use GitLab Cloud to sign up or log into Codacy, the GitLab Groups that you belong to will be available to be added as Organizations on Codacy.
 

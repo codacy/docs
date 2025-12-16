@@ -3,7 +3,6 @@ title: Troubleshooting coverage CLI issues
 description: Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI.
 ---
 
-# Troubleshooting coverage CLI issues
 
 The sections below provide instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI:
 

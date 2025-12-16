@@ -2,7 +2,6 @@
 title: Segments
 ---
 
-# Segments
 
 _Segments are not supported for Personal orgs, as Custom Properties are not available in Github for these orgs._
 

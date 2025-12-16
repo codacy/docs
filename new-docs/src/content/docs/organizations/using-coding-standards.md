@@ -2,7 +2,6 @@
 title: Using coding standards
 ---
 
-# Using coding standards
 
 Coding standards enable the analysis of multiple repositories with the same tool and code pattern configurations, ensuring consistent code quality across your organization. Multiple coding standards can be applied to the same repository. For example, you can use coding standards to ensure that a group of repositories follow the same security rules or coding conventions.
 

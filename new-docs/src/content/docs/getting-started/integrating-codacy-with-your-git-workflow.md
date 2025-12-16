@@ -4,7 +4,6 @@ description: Integrate Codacy with your Git workflow to display analysis results
 nav_step: 2
 ---
 
-# Integrating Codacy with your Git workflow
 
 {% include-markdown "../assets/includes/nav-multistep-quickstart.md" %}
 

@@ -2,7 +2,6 @@
 title: Not a member of the organization
 ---
 
-# Not a member of the organization
 
 {%
     include-markdown "../../assets/includes/cloud.md"

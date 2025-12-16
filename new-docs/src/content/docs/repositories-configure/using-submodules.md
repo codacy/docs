@@ -2,7 +2,6 @@
 title: Using submodules
 ---
 
-# Using submodules
 
 [Git submodules](https://git-scm.com/book/en/v2/Git-Tools-Submodules) allow you to keep a Git repository as a subdirectory within another Git repository. Git submodules are helpful in maintaining a shared configuration file for your team, and then applying it to multiple Git repositories.
 

@@ -2,7 +2,6 @@
 title: I moved my repository on the Git provider
 ---
 
-# I moved my repository on the Git provider
 
 Currently, Codacy doesn't automatically detect moves of repositories between two organizations.
 

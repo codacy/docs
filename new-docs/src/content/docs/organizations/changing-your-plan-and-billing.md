@@ -2,7 +2,6 @@
 title: Changing your plan and billing
 ---
 
-# Changing your plan and billing
 
 Each organization on Codacy has a dedicated plan and associated billing. To make changes to the plan and billing of an organization, open your organization **Settings**, page **Plan and billing**.
 

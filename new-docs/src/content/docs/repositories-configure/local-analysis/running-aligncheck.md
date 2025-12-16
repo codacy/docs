@@ -4,7 +4,6 @@ description: Instructions on how to run aligncheck as a client-side tool on Coda
 tool_name: aligncheck
 ---
 
-# Running aligncheck
 
 To run aligncheck as a [client-side tool](client-side-tools.md):
 

@@ -2,7 +2,6 @@
 title: Coverage page
 ---
 
-# Coverage page
 
 The **Coverage page** displays the current code coverage information in your [enabled repository branches](../repositories-configure/managing-branches.md).
 

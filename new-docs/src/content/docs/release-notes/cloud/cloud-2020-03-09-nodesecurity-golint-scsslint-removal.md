@@ -4,7 +4,6 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Removal of NodeSecurity, GoLint, and SCSSLint March 9, 2020
 
 On the week of March 9th 2020, we'll be removing some tools from Codacy.
 

@@ -2,7 +2,6 @@
 title: Error caused by incompatible line endings
 ---
 
-# Error caused by incompatible line endings
 
 Codacy executes the `git diff` command when analyzing new commits and pull requests to identify the lines of code that were changed. Codacy then uses this information to display the issues that were caused by the changes introduced by the commits or pull requests.
 

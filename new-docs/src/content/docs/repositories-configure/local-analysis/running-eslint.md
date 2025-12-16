@@ -4,7 +4,6 @@ description: Instructions on how to run ESLint as a client-side tool on Codacy.
 tool_name: ESLint
 ---
 
-# Running ESLint
 
 To run ESLint as a [client-side tool](client-side-tools.md):
 

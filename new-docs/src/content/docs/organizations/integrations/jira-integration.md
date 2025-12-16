@@ -2,7 +2,6 @@
 title: Organization Jira integration
 ---
 
-# Organization Jira integration
 
 :::note[This integration is only available for Jira Cloud]
 :::

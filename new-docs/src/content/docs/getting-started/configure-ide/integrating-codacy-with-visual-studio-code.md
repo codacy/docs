@@ -2,7 +2,6 @@
 title: Integrating Codacy with Visual Studio Code
 ---
 
-# Integrating Codacy with Visual Studio Code
 
 The [Codacy Visual Studio Code extension](https://github.com/codacy/codacy-vscode-extension) is an open-source project that enables developers to review directly in VS Code the result of Codacy analysis for the pull requests they’re working on.
 

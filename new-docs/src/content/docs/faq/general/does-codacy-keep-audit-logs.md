@@ -2,7 +2,6 @@
 title: Does Codacy keep audit logs for my organization?
 ---
 
-# Does Codacy keep audit logs for my organization?
 
 On [Business plan](https://www.codacy.com/pricing), Codacy logs significant organization events that can be retrieved for audit reporting.
 

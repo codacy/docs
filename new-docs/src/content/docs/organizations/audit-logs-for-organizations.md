@@ -3,7 +3,6 @@ title: Audit logs for organizations
 description: List of events that Codacy can log for an organization.
 ---
 
-# Audit logs for organizations
 
 {%
     include-markdown "../assets/includes/paid.md"

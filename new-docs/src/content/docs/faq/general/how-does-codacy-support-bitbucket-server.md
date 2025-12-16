@@ -2,7 +2,6 @@
 title: How does Codacy support Bitbucket Server?
 ---
 
-# How does Codacy support Bitbucket Server?
 
 When you use Bitbucket Server to sign up or log into Codacy, the Bitbucket projects that you belong to will be available to be added as Organizations on Codacy.
 

@@ -7,7 +7,6 @@ codacy_tools_version_old: https://github.com/codacy/codacy-tools/releases/tag/3.
 codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/4.0.28
 ---
 
-# Self-hosted v5.0.0
 
 These release notes are for [Codacy Self-hosted v5.0.0](https://github.com/codacy/chart/releases/tag/5.0.0), released on December 17, 2021.
 

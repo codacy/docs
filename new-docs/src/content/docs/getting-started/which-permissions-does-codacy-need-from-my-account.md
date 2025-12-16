@@ -3,7 +3,6 @@ title: Which permissions does Codacy need from my account?
 description: Review the list of permissions that Codacy requires from your Git provider to analyze your code.
 ---
 
-# Which permissions does Codacy need from my account?
 
 Codacy Cloud uses the OAuth protocol to handle logins and supports the following providers:
 

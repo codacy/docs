@@ -4,7 +4,6 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Adding ESLint 8 as a supported tool March 31, 2022
 
 On March 31, 2022 Codacy is adding ESLint 8 as a new supported tool and deprecating ESLint 7:
 

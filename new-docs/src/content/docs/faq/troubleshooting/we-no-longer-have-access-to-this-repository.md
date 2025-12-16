@@ -3,7 +3,6 @@ title: We no longer have access to this repository, check your SSH keys
 description: Troubleshoot and fix issues that prevent Codacy from cloning your private repository, such as moving the repository or changing the permissions of the user that added the repository to Codacy.
 ---
 
-# We no longer have access to this repository, check your SSH keys
 
 Some changes on your Git provider can prevent Codacy from cloning your private repository. When this happens, Codacy displays the error message "We no longer have access to this repository" on the Repository Dashboard page.
 

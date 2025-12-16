@@ -2,7 +2,6 @@
 title: Managing people
 ---
 
-# Managing people
 
 People signing up to the Codacy app and joining an organization become members of that organization. Members of a Codacy organization can see the dashboards and details of the organization repositories. Depending on their permissions on the Git provider, members can also manage the organization and repository settings on Codacy.
 

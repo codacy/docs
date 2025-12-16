@@ -2,7 +2,6 @@
 title: How long does it take for my repository to be analyzed?
 ---
 
-# How long does it take for my repository to be analyzed?
 
 Codacy usually takes under 5 minutes to analyze your repository. It may however take longer, depending on a number of factors:
 

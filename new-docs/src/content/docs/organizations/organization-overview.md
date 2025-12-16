@@ -3,7 +3,6 @@ title: Organization overview
 description: The Organization overview provides an overview of the repositories belonging to your Git provider organization. Here you can compare their statuses and check for items that require your attention.
 ---
 
-# Organization overview
 
 The **Organization overview** provides an overview of the repositories belonging to your Git provider organization that you [follow on Codacy](managing-repositories.md). Here you can compare their statuses and check for items that require your attention.
 

@@ -2,7 +2,6 @@
 title: Why does Codacy show unexpected coverage changes?
 ---
 
-# Why does Codacy show unexpected coverage changes?
 
 You may encounter some situations where Codacy shows unexpected drops in coverage, <span class="skip-vale">potentially</span> causing your quality gates to fail. Usually, these drops in coverage happen in files that the commit or pull request didn't change.
 

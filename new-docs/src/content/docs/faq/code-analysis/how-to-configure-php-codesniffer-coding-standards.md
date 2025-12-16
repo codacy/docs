@@ -3,7 +3,6 @@ title: How to configure PHP_CodeSniffer coding standards?
 description: To enforce a specific PHP_CodeSniffer coding standard on Codacy you must create a configuration file on the root of your repository that references one or more coding standards.
 ---
 
-# How to configure PHP_CodeSniffer coding standards?
 
 By default, Codacy uses the PHP_CodeSniffer configuration on the [Code patterns](../../repositories-configure/configuring-code-patterns.md) page when analyzing your repositories.
 

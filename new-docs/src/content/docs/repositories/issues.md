@@ -2,7 +2,6 @@
 title: Issues page
 ---
 
-# Issues page
 
 The **Issues page** lists all the issues that Codacy detected in your repository, including the severity level and category of each issue.
 

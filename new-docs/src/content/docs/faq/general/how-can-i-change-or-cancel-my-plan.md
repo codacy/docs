@@ -2,7 +2,6 @@
 title: How can I change or cancel my plan?
 ---
 
-# How can I change or cancel my plan?
 
 You can change or cancel [your Codacy plan](https://www.codacy.com/pricing) at any time. If you choose to cancel your annual subscription before the conclusion of the 12 months, your account will continue to work for the remainder of the annual billing period.
 

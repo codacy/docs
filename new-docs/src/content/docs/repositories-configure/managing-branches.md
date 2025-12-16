@@ -2,7 +2,6 @@
 title: Managing branches
 ---
 
-# Managing branches
 
 {% if not extra.self_hosted %}
 

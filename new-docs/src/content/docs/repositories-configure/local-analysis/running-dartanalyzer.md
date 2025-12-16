@@ -4,7 +4,6 @@ description: Instructions on how to run Dart Analyzer as a client-side tool on C
 tool_name: Dart Analyzer
 ---
 
-# Running Dart Analyzer
 
 To run Dart Analyzer as a [client-side tool](client-side-tools.md):
 

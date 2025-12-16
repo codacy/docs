@@ -2,7 +2,6 @@
 title: Does Codacy place limits on the code analysis?
 ---
 
-# Does Codacy place limits on the code analysis?
 
 Codacy uses limits when performing the analysis of your repositories to ensure good performance levels and avoid degradation of service during peak load.
 

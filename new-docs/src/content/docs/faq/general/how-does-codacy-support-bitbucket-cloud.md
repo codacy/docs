@@ -2,7 +2,6 @@
 title: How does Codacy support Bitbucket Cloud?
 ---
 
-# How does Codacy support Bitbucket Cloud?
 
 When you use Bitbucket Cloud to sign up or log into Codacy, the Bitbucket teams that you belong to will be available to be added as Organizations on Codacy.
 

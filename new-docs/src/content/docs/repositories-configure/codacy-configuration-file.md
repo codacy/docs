@@ -3,7 +3,6 @@ title: Codacy configuration file
 description: Use the Codacy configuration file to configure advanced features on Codacy with more control such as ignoring files for duplication or a specific tool, configuring the root directory to start the analysis, and adding custom file extensions to languages.
 ---
 
-# Codacy configuration file
 
 Codacy supports configuring certain advanced features through a configuration file, such as:
 

@@ -2,7 +2,6 @@
 title: Adjusting quality goals
 ---
 
-# Adjusting quality goals
 
 Adjust the **quality goals** to help you monitor the progress of the code quality in your repository dashboard, and configure which files Codacy considers complex or duplicated.
 

@@ -4,7 +4,6 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Removal of PMD (Legacy) February 16, 2022
 
 On the week of February 16th 2022 we'll be removing the tool **PMD (Legacy)** from Codacy.
 

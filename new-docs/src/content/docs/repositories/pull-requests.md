@@ -4,7 +4,6 @@ page_name: "pull request"
 file_name: "pull-requests"
 ---
 
-# Pull Requests page
 
 The **Pull Requests page** displays an overview of the pull requests in your repository, such as the analysis status and the code quality metrics for each pull request. This allows you to monitor the code quality of the work in progress in your repository.
 

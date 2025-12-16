@@ -2,7 +2,6 @@
 title: Repository Dashboard
 ---
 
-# Repository Dashboard
 
 The **Repository Dashboard** provides an overview of the repository code quality and items that require your attention.
 

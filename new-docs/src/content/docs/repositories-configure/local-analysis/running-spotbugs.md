@@ -4,7 +4,6 @@ description: Instructions on how to run SpotBugs as a client-side tool on Codacy
 tool_name: SpotBugs
 ---
 
-# Running SpotBugs
 
 To run SpotBugs as a [client-side tool](client-side-tools.md):
 

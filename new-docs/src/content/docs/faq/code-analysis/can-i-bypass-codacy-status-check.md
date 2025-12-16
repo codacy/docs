@@ -2,7 +2,6 @@
 title: Can I bypass Codacy status check?
 ---
 
-# Can I bypass Codacy status check?
 
 :::note
 **This will only apply to gates enforcing quality checks.** If coverage is blocking a pull request analysis, we recommend contacting your git provider admin or temporarily disabling the coverage gate on the repo and reanalyzing the pull request before enabling them again.

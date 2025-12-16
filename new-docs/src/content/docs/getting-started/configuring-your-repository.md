@@ -4,7 +4,6 @@ description: Configure Codacy to match the coding conventions and best practices
 nav_step: 1
 ---
 
-# Configuring your repository
 
 {% include-markdown "../assets/includes/nav-multistep-quickstart.md" %}
 

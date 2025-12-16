@@ -2,7 +2,6 @@
 title: How do I reanalyze my repository?
 ---
 
-# How do I reanalyze my repository?
 
 {% include-markdown "../../assets/includes/admin-access-control-info.md" %}
 

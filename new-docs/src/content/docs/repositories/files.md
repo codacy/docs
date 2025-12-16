@@ -2,7 +2,6 @@
 title: Files page
 ---
 
-# Files page
 
 The **Files page** displays the current code quality information for each analyzed file in your [enabled repository branches](../repositories-configure/managing-branches.md).
 

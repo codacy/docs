@@ -4,7 +4,6 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Adding SQLFluff and Reek as new supported tools June, 2025
 
 ## SQLFluff
 

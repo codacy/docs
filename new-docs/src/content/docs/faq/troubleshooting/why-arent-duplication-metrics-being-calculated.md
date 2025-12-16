@@ -2,7 +2,6 @@
 title: Why aren't duplication metrics being calculated?
 ---
 
-# Why aren't duplication metrics being calculated?
 
 For performance reasons, Codacy skips the calculation of code duplication for programming languages that have more than 5000 source code files in a repository.
 

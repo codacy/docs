@@ -3,7 +3,6 @@ title: Configuring languages
 description: Configure the languages that Codacy analyzes in your repository. You can configure Codacy to include unrecognized file extensions, or disable the analysis of specific languages.
 ---
 
-# Configuring languages
 
 {% include-markdown "../assets/includes/admin-access-control-info.md" %}
 

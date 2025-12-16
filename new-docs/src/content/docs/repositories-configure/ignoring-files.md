@@ -3,7 +3,6 @@ title: Ignoring files
 description: Ignore or exclude files from the Codacy analysis and see the list of files that Codacy already ignores by default.
 ---
 
-# Ignoring files
 
 {% include-markdown "../assets/includes/admin-access-control-info.md" %}
 

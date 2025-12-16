@@ -2,7 +2,6 @@
 title: GitHub Enterprise Cloud
 ---
 
-# GitHub Enterprise Cloud
 
 Use your GitHub Enterprise credentials when signup or login to Codacy and all your GitHub Enterprise organizations that you belong to, will be available to be added as Organizations on Codacy.
 

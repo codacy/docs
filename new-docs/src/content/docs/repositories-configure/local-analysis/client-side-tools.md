@@ -2,7 +2,6 @@
 title: Client-side tools
 ---
 
-# Client-side tools
 
 Client-side tools enable you to run an analysis locally or as part of your build process and upload the results to Codacy. This way, Codacy presents the analysis information reported by your local tools on the Codacy dashboards, in addition to the default code quality information.
 

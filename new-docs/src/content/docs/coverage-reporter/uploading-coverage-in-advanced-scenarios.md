@@ -3,7 +3,6 @@ title: Uploading coverage in advanced scenarios
 description: Instructions on how to use the Codacy Coverage Reporter to upload coverage data in advanced scenarios such as when running parallel tests, using monorepos, or testing source code in multiple or unsupported languages.
 ---
 
-# Uploading coverage in advanced scenarios
 
 The following sections include instructions on how to use the Codacy Coverage Reporter to upload coverage data in more advanced scenarios.
 

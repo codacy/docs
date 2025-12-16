@@ -4,7 +4,6 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
-# Adding Lizard and Ruff as new supported tools February, 2025
 
 ## Lizard
 

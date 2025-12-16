@@ -2,7 +2,6 @@
 title: Using gate policies
 ---
 
-# Using gate policies
 
 Gate policies help you ensure that Codacy uses the same [quality gates](../repositories-configure/adjusting-quality-gates.md) across your organization repositories.
 

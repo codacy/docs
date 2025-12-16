@@ -2,7 +2,6 @@
 title: Post-commit hooks
 ---
 
-# Post-commit hooks
 
 When you add a new repository to Codacy, Codacy automatically creates a repository hook on your Git provider to check for new commits and pull requests. This post-commit hook enables Codacy to trigger an analysis to run immediately after you push code to your repository.
 
