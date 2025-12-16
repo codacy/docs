@@ -2,14 +2,22 @@
 import { topicsNav as topics } from '../../config/sidebar.mjs';
 
 const pathname = Astro.url.pathname;
+
+const normalizeHref = (href: string): string => (href.endsWith('/') ? href : `${href}/`);
+const normalizePathname = (path: string): string =>
+  path === '/' || path.endsWith('/') ? path : `${path}/`;
+const matchesTopic = (href: string): boolean => {
+  const normalizedHref = normalizeHref(href);
+  const normalizedPathname = normalizePathname(pathname);
+  return normalizedPathname === normalizedHref || normalizedPathname.startsWith(normalizedHref);
+};
+
+const otherTopicMatched = topics.slice(1).some((topic) => matchesTopic(topic.href));
 ---
 
 <nav class="sl-header-tabs" aria-label="Primary">
-  {topics.map((topic) => {
-    const isActive =
-      topic.href === '/'
-        ? pathname === '/'
-        : pathname === topic.href || pathname.startsWith(`${topic.href.endsWith('/') ? topic.href : `${topic.href}/`}`);
+  {topics.map((topic, index) => {
+    const isActive = index === 0 ? !otherTopicMatched : matchesTopic(topic.href);
       
     return (
       <a href={topic.href} class={isActive ? 'active' : ''}>
