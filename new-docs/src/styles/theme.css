@@ -45,7 +45,8 @@ a {
     padding-top: var(--title-height)
 }
 
-/*hide social icons on header*/
-.header .social-icons {
-    display: none;
+
+/* Hide the starlight-sidebar-topics topic list (we use the header tabs instead). */
+ul.starlight-sidebar-topics {
+    display: none !important;
 }
