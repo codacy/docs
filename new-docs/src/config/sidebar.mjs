@@ -51,6 +51,10 @@ export const sidebarTopics = [
         autogenerate: { directory: 'codacy-ai' },
       },
       {
+        label: 'Coverage reporter',
+        autogenerate: { directory: 'coverage-reporter' },
+      },
+      {
         label: 'Repositories on Codacy',
         autogenerate: { directory: 'repositories' },
       },
@@ -60,7 +64,7 @@ export const sidebarTopics = [
       },
       {
         label: 'Organizations',
-        autogenerate: { directory: 'organization' }
+        autogenerate: { directory: 'organizations' }
       },
       {
         label: 'Enterprise Cloud',
@@ -106,4 +110,3 @@ export const sidebarTopics = [
 ];
 
 export const topicsNav = sidebarTopics.map(({ label, link }) => ({ label, href: link }));
-

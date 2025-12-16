@@ -13,6 +13,7 @@ export default defineConfig({
 	integrations: [
 		starlight({
 			title: 'Codacy Documentation',
+			lastUpdated: true,
 			customCss: ['./src/styles/theme.css'],
 			logo: {
 				light: './src/assets/images/codacy-logo.svg',
