@@ -32,3 +32,8 @@ a {
     height: 0;
     padding-top: var(--title-height)
 }
+
+/*hide social icons on header*/
+.header .social-icons {
+    display: none;
+}

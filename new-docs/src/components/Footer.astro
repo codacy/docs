@@ -1,0 +1,99 @@
+---
+import EditLink from 'virtual:starlight/components/EditLink';
+import LastUpdated from 'virtual:starlight/components/LastUpdated';
+import Pagination from 'virtual:starlight/components/Pagination';
+import config from 'virtual:starlight/user-config';
+import { Icon } from '@astrojs/starlight/components';
+
+const year = new Date().getFullYear();
+---
+
+<footer class="sl-flex codacy-footer">
+	<div class="meta sl-flex">
+		<EditLink />
+		<LastUpdated />
+	</div>
+
+	<Pagination />
+
+	<div class="brand-row">
+		<p class="copyright">© {year} Codacy - Automated code review</p>
+
+		<nav class="social" aria-label="Codacy social links">
+			{
+				(config.social ?? []).map((link) => (
+					<a class="social-link" href={link.href} rel="me noopener noreferrer" target="_blank">
+						<span class="sr-only">{link.label}</span>
+						<Icon name={link.icon} />
+					</a>
+				))
+			}
+		</nav>
+	</div>
+</footer>
+
+<style>
+	@layer starlight.core {
+		.codacy-footer {
+			flex-direction: column;
+			gap: 1.5rem;
+		}
+
+		.meta {
+			gap: 0.75rem 3rem;
+			justify-content: space-between;
+			flex-wrap: wrap;
+			margin-top: 3rem;
+			font-size: var(--sl-text-sm);
+			color: var(--sl-color-gray-3);
+		}
+
+		.brand-row {
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			gap: 1rem;
+			padding: 0.75rem 0 2rem;
+			border-top: 1px solid var(--sl-color-gray-6);
+		}
+
+		.copyright {
+			margin: 0;
+			font-size: var(--sl-text-sm);
+			color: var(--sl-color-gray-3);
+		}
+
+		.social {
+			display: flex;
+			gap: 0.75rem;
+		}
+
+		.social-link {
+			display: inline-flex;
+			align-items: center;
+			justify-content: center;
+			width: 2.25rem;
+			height: 2.25rem;
+			border-radius: 999px;
+			color: var(--sl-color-gray-3);
+			text-decoration: none;
+		}
+
+		.social-link:hover {
+			color: var(--sl-color-white);
+			background: color-mix(in srgb, var(--sl-color-gray-6), transparent 35%);
+		}
+
+		.sr-only {
+			position: absolute;
+			width: 1px;
+			height: 1px;
+			padding: 0;
+			margin: -1px;
+			overflow: hidden;
+			clip: rect(0, 0, 0, 0);
+			white-space: nowrap;
+			border: 0;
+		}
+	}
+</style>

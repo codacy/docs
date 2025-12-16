@@ -17,7 +17,15 @@ export default defineConfig({
 				dark: './src/assets/images/codacy-logo-white.svg',
 				replacesTitle: true
 			},
-			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/codacy/docs' }],
+			components: {
+				Footer: './src/components/Footer.astro',
+			},
+			social: [
+				{ icon: 'github', label: 'GitHub', href: 'https://github.com/codacy/docs' },
+				{ icon: 'x.com', label: 'x.com', href: 'https://x.com/codacy' },
+				{ icon: 'linkedin', label: 'LinkedIn', href: 'https://www.linkedin.com/company/codacy/' },
+				{ icon: 'youtube', label: 'YouTube', href: 'https://www.youtube.com/@codacydev' },
+			],
 			sidebar: [
 				{
 					label: 'Documentation home', slug: ''
