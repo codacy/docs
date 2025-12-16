@@ -5,7 +5,7 @@ These are overides to the current theme.
 :root, ::backdrop {
     --sl-color-text-accent: #005DF0;
     --sl-font: Inter;
-    --sl-color-bg-nav: var(--sl-color-bg);
+    --sl-color-bg-nav: var(--sl-color-bg-sidebar);
 
     --sl-text-2xs: 0.5rem;
     --sl-text-xs: 0.75rem;

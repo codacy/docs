@@ -2,8 +2,6 @@
 title: Using Codacy Guardrails
 ---
 
-# Using Codacy Guardrails
-
 ## Recommended configurations
 
 <table>
@@ -63,7 +61,6 @@ c. After a new analysis, It shows us that it has 0 issues in the code
 
 Once your repository is connected to Codacy, you can go beyond traditional static analysis and start interacting with your codebase using natural language prompts.
 
-
 a. Let's run a quick example with the prompt:
 
 ```text
@@ -71,7 +68,6 @@ Can you list all security issues in my repository?
 ```
 
 ![Prompt list the security issues in my repository](images/prompt-list-security-issues-repository.png)
-
 
 b. Right after running this prompt, there is a MCP tool call to search all security issues in my repository. Click in **Run tool**
 

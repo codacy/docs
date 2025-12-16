@@ -2,10 +2,8 @@
 title: FAQs
 ---
 
-# FAQs
-
 ## How do I install Codacy Guardrails?
-Please have a look at our [documentation](codacy-guardrails-getting-started.md)
+Please have a look at our [documentation](codacy-guardrails-getting-started.md).
 
 ## Does Guardrails only work with AI-generated code?
 No. While Guardrails does scan and autofix AI code as part of the agent flow, it scans any code shown in your IDE in real-time, regardless of how it was written.
@@ -18,7 +16,6 @@ Yes, local scanning via Codacy CLI works offline. API-based features (like query
 
 ## Which AI security and quality standards can I enforce with Guardrails?
 Codacy Guardrails detects and autoremediate security risks and quality issues in JavaScript, TypeScript, Python, and Java, including:
-
 
 -  SAST vulnerabilities
 -  Hardcoded secrets
@@ -52,7 +49,6 @@ Codacy Guardrails is a free IDE Extension for local scanning of AI-generated and
 
 Check our [Team and Organization plans](https://www.codacy.com/pricing) to unlock:
 
-
 -  Central configuration and enforcement of AI coding standards across teams and projects
 -  Query and autofix existing problems across your codebase from the AI chat panel
 -  Generate custom security and code quality reports using AI prompts
@@ -76,7 +72,6 @@ Without an AI coding agent, you can still use the IDE extension for local analys
 ## How can I install a specific version of the IDE extension?
 
 If you wish to continue using a previous version a little longer, you can do so by:
-
 
 1. Open the Extensions tab
 

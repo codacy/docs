@@ -2,8 +2,6 @@
 title: How to customize the analysis rules for Codacy Guardrails
 ---
 
-# How to customize the analysis rules for Codacy Guardrails
-
 By default, if no API token is provided in the [MCP Server setup](codacy-guardrails-getting-started.md/#3-install-mcp-server), Codacy uses a predefined configuration that includes all recommended rules (or [code patterns](../repositories-configure/configuring-code-patterns.md) that you can find on many parts of our product) from the supported built-in scanners.
 
 However, when an API token is used, Codacy automatically retrieves the current rule configuration directly from your repository.
@@ -15,9 +13,9 @@ You can configure your rules in one of two ways:
 
 -  Using the [Codacy UI](#using-the-codacy-ui)–for quick, manual adjustments.
 
-!!! note
-    If you're already using a configuration file, please we recommend you can follow the first way. Otherwise, the second way is the best for you, so you can configure directly in the Codacy platform.
-
+:::note
+If you're already using a configuration file, please we recommend you can follow the first way. Otherwise, the second way is the best for you, so you can configure directly in the Codacy platform.
+:::
 
 ## Using configuration files
 
@@ -73,17 +71,13 @@ To use a configuration file for a static analysis tool:
 
 2.  Open the repository **Code patterns** page, select the tool of interest, and activate the toggle to use a configuration file.
 
-!!! note
-    -   After activating a configuration file for a tool, Codacy uses that configuration file even if you [exclude it from Codacy analysis](../repositories-configure/ignoring-files.md).
-
-    -   When [using a tool configuration file alongside a coding standard](../organizations/using-coding-standards.md#using-with-tool-configuration), the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.
-
-    -   Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results take those changes into account.
-
-    -   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.
-
-    -   For performance reasons, when you update pattern settings using a configuration file, Codacy may display outdated messages for issues identified previously by those patterns.
-        
+:::note
+-   After activating a configuration file for a tool, Codacy uses that configuration file even if you [exclude it from Codacy analysis](../repositories-configure/ignoring-files.md).
+-   When [using a tool configuration file alongside a coding standard](../organizations/using-coding-standards.md#using-with-tool-configuration), the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.
+-   Codacy uses the version of the configuration file **in the branch being analyzed**. For example, if you open a pull request that includes changes to the configuration file, the analysis results take those changes into account.
+-   If Codacy analyzes a branch that doesn't include the configuration file, Codacy reverts to using the code patterns configured for the tool before you selected the option **Configuration file** on the Code patterns page.
+-   For performance reasons, when you update pattern settings using a configuration file, Codacy may display outdated messages for issues identified previously by those patterns.
+:::
 
 
 ![Using a configuration file](images/code-patterns-config-file.png)
@@ -135,6 +129,7 @@ Select the coding standards that you want to follow or stop following and click 
 
 ![Customize applied coding standards](images/code-patterns-cs-customize-modal.png)
 
-!!! note
-    -  Scanners and rules enabled by a coding standard are enforced and can't be disabled.
-    -  You can add extra scanners and rules, if these aren't enabled by any applied coding standard.
+:::note
+-  Scanners and rules enabled by a coding standard are enforced and can't be disabled.
+-  You can add extra scanners and rules, if these aren't enabled by any applied coding standard.
+:::
