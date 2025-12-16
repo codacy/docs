@@ -1,8 +1,8 @@
 ---
 title: Codacy AI
 ---
+import Paid from "../../includes/Paid.astro"
 
-# Codacy AI
 
 ## What is Codacy AI?
 
@@ -41,11 +41,7 @@ More details about [AI-enhanced comments here →](../repositories-configure/int
 
 ### Smart False Positive Triage
 
-{%
-    include-markdown "../assets/includes/paid.md"
-    start="<!--paid-feature-business-start-->"
-    end="<!--paid-feature-business-end-->"
-%}
+<Paid variant="business" />
 
 _This feature leverages OpenAI models, and is strictly opt-in: you need to get in touch with us in order to enable it._
 
@@ -55,7 +51,7 @@ More details about [False Positives here →](../repositories/commits.md#false-p
 
 **How to turn it on**
 
-1. Get in touch with your Customer Success Manager or with <support@codacy.com>
+1. Get in touch with your Customer Success Manager or with [support@codacy.com](mailto:support@codacy.com)
 
 **Notes**
 
