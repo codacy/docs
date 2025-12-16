@@ -1,13 +1,12 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
-import remarkAttrs from 'remark-attrs';
-import remarkKramdownAttrs from './src/remark/kramdown-attrs.mjs';
+import remarkCustomHeaderId from 'remark-custom-header-id';
 
 // https://astro.build/config
 export default defineConfig({
 	markdown: {
-		remarkPlugins: [remarkKramdownAttrs, remarkAttrs],
+		remarkPlugins: [remarkCustomHeaderId],
 	},
 	integrations: [
 		starlight({

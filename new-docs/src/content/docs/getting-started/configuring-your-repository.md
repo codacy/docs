@@ -18,7 +18,7 @@ To configure your repository, follow these steps:
 1.  [Configuring code patterns](#configuring-code-patterns)
 1.  [Adding coverage reports](#adding-coverage) (optional)
 
-## 1. Ignoring files {: id="ignoring-files"}
+## 1. Ignoring files {#ignoring-files}
 
 [Ignore any files and directories](../repositories-configure/ignoring-files.md) that aren't relevant for the Codacy analysis, such as generated code or any third-party libraries included in your repositories.
 

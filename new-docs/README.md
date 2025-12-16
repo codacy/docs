@@ -47,3 +47,12 @@ All commands are run from the root of the project, from a terminal:
 ## 👀 Want to learn more?
 
 Check out [Starlight’s docs](https://starlight.astro.build/), read [the Astro documentation](https://docs.astro.build), or jump into the [Astro Discord server](https://astro.build/chat).
+
+
+## Writing Docs
+
+Starlight supports two file types: .md and .mdx
+
+You can use .md for simpler files, but if you need to use imports, then you have to use .mdx. MDX is a file type that mixes js and markdown allowing you do fun things like importing components, doing for loops, functions and all that jazz.
+
+Note that if you use .mdx files, id attributes like {#new-id} will not work, and have to be replaced by ||#new-id|| or \{#new-id\}

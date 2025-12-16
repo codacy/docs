@@ -12,9 +12,7 @@
   "dependencies": {
     "@astrojs/starlight": "^0.37.1",
     "astro": "^5.6.1",
+    "remark-custom-header-id": "^1.0.0",
     "sharp": "^0.34.2"
-  },
-  "devDependencies": {
-    "remark-attrs": "^1.0.0"
   }
 }
