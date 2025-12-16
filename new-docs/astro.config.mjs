@@ -22,6 +22,7 @@ export default defineConfig({
 				{
 					label: 'Getting started',
 					items: [
+						{ label: 'Documentation home', slug: '' },
 						{ label: 'Codacy quickstart', slug: 'getting-started/codacy-quickstart' },
 						{ label: 'Configuring your repository', slug: 'getting-started/configuring-your-repository' },
 						{
