@@ -11,8 +11,13 @@ export default defineConfig({
 	},
 	integrations: [
 		starlight({
-			title: 'Codacy',
+			title: 'Codacy Documentation',
 			customCss: ['./src/styles/theme.css'],
+			logo: {
+				light: './src/assets/images/codacy-logo.svg',
+				dark: './src/assets/images/codacy-logo-white.svg',
+				replacesTitle: true
+			},
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/codacy/docs' }],
 			sidebar: [
 				{
