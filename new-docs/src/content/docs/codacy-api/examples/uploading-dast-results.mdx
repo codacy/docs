@@ -3,8 +3,6 @@ title: Uploading DAST results to Codacy
 description: Instructions on how to upload DAST results to Codacy using the API.
 ---
 
-# Uploading DAST results to Codacy
-
 To ensure the security of your web applications, Codacy allows you to upload DAST (dynamic application security testing) results from [Zed Attack Proxy (ZAP)](https://www.zaproxy.org/) directly to Codacy and monitor them as findings under [Security and risk management](../../organizations/managing-security-and-risk.md).
 
 ## Uploading results to Codacy
@@ -15,8 +13,9 @@ To ensure the security of your web applications, Codacy allows you to upload DAS
 
 1.  Upload the report to Codacy using the API endpoint [<span class="skip-vale">uploadDASTReport</span>](https://app.codacy.com/api/api-docs#uploaddastreport):
 
-    !!! important
+    :::caution
         The DAST report must be under 20MB in size. Please also guarantee that @generated timestamps are in an English locale, and use the default ZAP format (EEE, d MMM yyyy HH:mm:ss), as otherwise the report won't be processed. 
+    :::
 
     ```bash
     curl -X POST https://app.codacy.com/api/v3/organizations/<GIT_PROVIDER>/<ORGANIZATION>/security/tools/dast/<TOOL_NAME>/reports \
@@ -55,7 +54,6 @@ This process seamlessly integrates the security insights of third-party DAST too
 
 To retrieve a list of uploaded DAST reports, access the Codacy API endpoint [<span class="skip-vale">listDASTReports</span>](https://api.codacy.com/api/api-docs#listdastreports):
 
-GET /organizations/{provider}/{remoteOrganizationName}/security/dast/reports
 ```bash
 curl -X GET https://api.codacy.com/api/v3/organizations/<GIT_PROVIDER>/<ORGANIZATION>/security/dast/reports \
   -H 'api-token: <API_KEY>' \

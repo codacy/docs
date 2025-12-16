@@ -3,7 +3,7 @@ title: Identifying commits without coverage data
 description: Example of how to identify commits missing the coverage data required for calculating the coverage metrics of pull requests.
 ---
 
-# Identifying commits without coverage data
+import ApiExamplePaginationImportant from '../../../includes/ApiExamplePaginationImportant.astro'
 
 To calculate the supported coverage metrics for pull requests, Codacy requires that at least the following commits provide coverage data:
 
@@ -57,8 +57,9 @@ Example usage and output, where:
 -   The first commit listed for each pull request is the **head commit** of the pull request branch
 -   The second commit listed for each pull request is the **common ancestor commit** of the pull request branch
 
-!!! note
-    If you find commits where the coverage status is different from `Processed`, [follow these troubleshooting instructions](../../coverage-reporter/index.md#validating-coverage) to validate that your coverage setup is working correctly.
+:::note
+If you find commits where the coverage status is different from `Processed`, [follow these troubleshooting instructions](../../coverage-reporter/index.md#validating-coverage) to validate that your coverage setup is working correctly.
+:::
 
 ```bash
 $ ./check-coverage.sh pulse
@@ -73,7 +74,7 @@ Coverage for 74efe5d7542846f36cb8c030bd6b73fa9060dca2 is null
 Coverage for 1a64ea8885717e7b9874c9f3702806ec96b00276 is null
 ```
 
-{% include-markdown "../../assets/includes/api-example-pagination-important.md" %}
+<ApiExamplePaginationImportant />
 
 ## See also
 

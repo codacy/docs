@@ -3,14 +3,13 @@ title: Trigger Dynamic Application Security Testing (DAST) scans
 description: Instructions on how to trigger DAST/App using the API.
 ---
 
-# Trigger Dynamic Application Security Testing (DAST) scans
-
 Thanks to the new app scanning capabilities available on the Security and risk management dashboard, it's now possible to automate application scanning via Codacy's API. This means that, with little effort, you'll be able to trigger app scanning on demand every time you deploy a new version of your app.
 
-!!! important
-    **App scanning is a business feature.** If you are a Codacy Pro customer, contact our customer success team to access a short trial.
+:::caution
+**App scanning is a business feature.** If you are a Codacy Pro customer, contact our customer success team to access a short trial.
 
-    **Check your [permissions](../../organizations/roles-and-permissions-for-organizations.md).** Only git provider admins and organization managers will be able to create new targets and trigger scans (in app and via the API).
+**Check your [permissions](../../organizations/roles-and-permissions-for-organizations.md).** Only git provider admins and organization managers will be able to create new targets and trigger scans (in app and via the API).
+:::
 
 
 ## Creating targets
@@ -19,9 +18,8 @@ Before the automation process itself, you need to create a target. Targets are i
 
 Targets only need to be created once. Note that **targets are immutable** — if you need to change the URL, definition, or authentication, you'll need to delete the target and create a new one.
 
-!!! important
-    **Do not run API scans on production enviroments as our API scanners may cause potential downtime.**
-
+:::caution
+    **Do not run API scans on production enviroments as our API scanners may cause potential downtime.**  
     Our DAST API scanner performs active security testing by sending a large number of requests to your application. When using authenticated API scanning, this activity can be even more intensive, as ZAP explores and probes more of your API surface.
 
     Depending on how your target environment is configured, this may:
@@ -31,6 +29,7 @@ Targets only need to be created once. Note that **targets are immutable** — if
     - Lead to incomplete scan results if key endpoints are blocked or limited
 
     We recommend running scans in a **test or staging environment**, or coordinating with your infrastructure team to ensure that your environment can safely handle the load.
+:::
 
 To create a target, use the following API request:
 
@@ -64,8 +63,9 @@ Replace the placeholders with your own values:
 
 Once you create the target you'll get the target `id` as a response. You will use it to trigger DAST scans in the next section.
 
-!!! important
-    Currently we only support one authentication header. If you need more, please let us know via support or your account representative.
+:::note
+Currently we only support one authentication header. If you need more, please let us know via support or your account representative.
+:::
 
 ## Trigger DAST analysis scans
 
