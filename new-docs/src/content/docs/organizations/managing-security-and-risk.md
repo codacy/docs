@@ -13,8 +13,7 @@ Under Security and risk management, you can find the following pages to help you
 
 In addition, on these pages, you can [share filtered views of findings](#sharing-filtered-view), [export findings as a CSV file](#exporting-the-security-item-list), and [review severity rules and integration settings](#reviewing-settings)
 
-## Overview {: id="dashboard"}
-
+## Overview {#dashboard}
 The **Security and risk management overview** page provides a high-level view of the security posture of your organization, including the number of open findings, the distribution of open findings by severity, the history of finding resolution, and a breakdown of the most high-risk repositories and most detected security categories.
 
 Use this page to assess your organization's security posture and its progress over time, identify areas for improvement, and share findings with stakeholders.
@@ -91,8 +90,7 @@ To access the findings page with the corresponding filter applied, click on a ca
 
 ![Security and risk management top categories panel](images/security-risk-management-overview-top-categories.png)
 
-## Findings {: id="item-list"}
-
+## Findings {#item-list}
 The **Security and risk management findings** page displays a filtered list of findings. By default, you are shown the findings that are currently opened and this list is sorted by **Latest findings** found. You can click on the sort dropdown to sort the findings by detection date - latest or oldest. Use this page to review and prioritize findings and track the progress of your security efforts.
 
 To access the findings page, access the [overview page](#dashboard) and click the **Findings** tab.
@@ -109,15 +107,13 @@ On the right section, you can view the filtered list of findings. Each finding c
 
 The same Common Vulnerability and Exposure can be classified with different severities in different sources, like cve.org or NVD, and Trivy uses these and other sources to update their database. As such, there may be situations where the severity attributed to a Finding by Trivy is not in line with a specific source. Subsequent analysis can then close a Finding and re-open it with a different severity, if a Trivy database update occurs.
 
-## Sharing a filtered view of findings {: id="sharing-filtered-view"}
-
+## Sharing a filtered view of findings {#sharing-filtered-view}
 To share the current view of the overview or findings page, click the **Copy URL** button in the top right-hand corner of the page. This action copies the URL with the current filters applied to the clipboard.
 
 :::caution[ [**Segments**](../segments) filter won't be considered when sharing the filtered view]
 :::
 
-## Ignoring findings {: id="ignoring-findings"}
-
+## Ignoring findings {#ignoring-findings}
 :::note[This feature is available only to organization admins and organization managers except for findings detected on [Git repositories](#opening-and-closing-items). For those findings, [repository permissions are respected](../repositories/issues.md#ignoring-and-managing-issues)]
 :::
 
@@ -151,19 +147,16 @@ Unignoring a finding reverts the effects of ignoring it.
 :::note[Ignoring and unignoring findings are [auditable actions](../organizations/audit-logs-for-organizations.md#organization).]
 :::
 
-## Exporting findings {: id="exporting-the-security-item-list"}
-
+## Exporting findings {#exporting-the-security-item-list}
 :::note[This feature is available only to organization admins and organization managers]
 :::
 
 To export a list of findings as a CSV file, click the options menu in the top right-hand corner of the page and select **Export findings (.csv)**. The exported list always includes all findings, ignoring any applied filters.
 
-## Reviewing severity rules and integration settings {: id="reviewing-settings"}
-
+## Reviewing severity rules and integration settings {#reviewing-settings}
 To [review the severity assignment rules](#item-severities-and-deadlines) or manage the integration with [Jira](./integrations/jira-integration.md) or [Slack](./integrations/slack-integration.md), click the options menu in the top right-hand corner of the page and select respectively **See severity rules** or **View integrations**.
 
-## How Codacy manages findings {: id="opening-and-closing-items"}
-
+## How Codacy manages findings {#opening-and-closing-items}
 :::caution
 To open and close findings, Codacy must detect when the associated issues are introduced and fixed. The detection logic is platform-dependent and is described below.
 :::
@@ -177,8 +170,7 @@ Codacy closes a finding when the source platform stops detecting the associated 
 
 The following section details when Codacy opens and closes findings for each supported platform.
 
-### How Codacy manages findings detected on Git repositories {: id="opening-and-closing-codacy-items"}
-
+### How Codacy manages findings detected on Git repositories {#opening-and-closing-codacy-items}
 :::note
 To make sure that Codacy detects security issues correctly:
 
@@ -200,8 +192,7 @@ Codacy closes a finding in either of the following cases:
 Deleting a repository deletes all open findings belonging to that repository.
 :::
 
-### How Codacy manages findings detected during software composition analysis (SCA) {: id="opening-and-closing-sca-items"}
-
+### How Codacy manages findings detected during software composition analysis (SCA) {#opening-and-closing-sca-items}
 :::note
 To make sure that Codacy detects dependency issues correctly, [enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Trivy tool.
 :::
@@ -215,8 +206,7 @@ The proactive SCA scanning is a business tier feature. If you are a Codacy Pro c
 :::
 
 
-### How Codacy manages findings detected on Jira {: id="opening-and-closing-jira-items"}
-
+### How Codacy manages findings detected on Jira {#opening-and-closing-jira-items}
 :::note
 -   For Codacy to detect Jira issues, you must [integrate Jira with Security and risk management](./integrations/jira-integration.md).
 -   Codacy retrieves updates from Jira once a day. If an issue is opened and closed on the same day, Codacy may not detect it.
@@ -227,8 +217,7 @@ Codacy opens a new finding when it detects a new Jira issue with a **security** 
 
 Codacy closes a finding when it detects that the associated Jira issue is marked as Closed.
 
-### How Codacy manages findings detected during penetration testing {: id="opening-and-closing-pen-testing-items"}
-
+### How Codacy manages findings detected during penetration testing {#opening-and-closing-pen-testing-items}
 :::note
 Penetration testing is available upon request and is provided by a third-party partner. See [how to request penetration testing for your organization](https://www.codacy.com/security).
 :::
@@ -237,8 +226,7 @@ Codacy opens a finding for each security issue detected during a penetration tes
 
 Codacy closes a finding when a subsequent penetration test doesn't detect the underlying security issue.
 
-### How Codacy manages findings detected during application scanning (DAST) {: id="opening-and-closing-app-scanning-items"}
-
+### How Codacy manages findings detected during application scanning (DAST) {#opening-and-closing-app-scanning-items}
 :::note
 To view application scanning findings, also known as DAST (Dynamic Application Security Testing) findings, you must first [generate a DAST report and upload it to Codacy](../codacy-api/examples/uploading-dast-results.md).
 :::
@@ -247,8 +235,7 @@ Codacy opens a finding for each security issue detected in the DAST report. If s
 
 Codacy closes a finding when it's not detected in a subsequent DAST report. If a previously closed issue reappears in a later report, Codacy reopens the finding.
 
-## Finding severities and deadlines {: id="item-severities-and-deadlines"}
-
+## Finding severities and deadlines {#item-severities-and-deadlines}
 The following table defines finding severities and the default number of days to the deadline to fix the associated security issue, based on the importance of the underlying issue:
 
 | Finding<br/>severity | <br/>Days to deadline | Underlying Codacy<br/>issue severity | Underlying Jira<br/>issue priority <sup>1</sup> |
@@ -260,8 +247,7 @@ The following table defines finding severities and the default number of days to
 
 <small><sup>1</sup> Those listed are the default Jira priority names. If you rename a default Jira priority, it keeps the correct mapping.</small>
 
-### Customize deadlines {: id="item-configurable-deadlines"}
-
+### Customize deadlines {#item-configurable-deadlines}
 :::note[This feature is available only to [organization admins and organization managers](../organizations/roles-and-permissions-for-organizations.md).]
 :::
 
@@ -276,8 +262,7 @@ In the open configuration modal you'll be able to input your deadline preference
 As soon as changes are saved, your open findings statuses will be updated accordingly.
 You are also able to reset to Codacy default deadline values (see table above) at any time.
 
-## Finding statuses {: id="item-statuses"}
-
+## Finding statuses {#item-statuses}
 The following table describes how finding statuses map to deadlines:
 
 <table>
@@ -554,8 +539,7 @@ Security and risk management supports checking the languages and infrastructure-
   </tbody>
 </table>
 
-## Dependencies {: id="dependencies-list"}
-
+## Dependencies {#dependencies-list}
 :::caution
 The dependency tab is a business-tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, contact our customer success team.
 :::
@@ -580,8 +564,7 @@ You're also able to click any dependency to find out more information about it.
 
  The dependency overview page offers a quick bird's-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues, the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency, and the [OSSF Scorecard](#ossf-scorecard) security assessment.
 
-### OSSF Scorecard {: id="ossf-scorecard"}
-
+### OSSF Scorecard {#ossf-scorecard}
 The **OSSF Scorecard** feature provides additional security insights for your dependencies by displaying security assessment data from the Open Source Security Foundation (OSSF) Scorecard project.
 
 The OSSF Scorecard is an automated tool that evaluates open source repositories against a comprehensive set of security best practices. It performs various checks on a dependency's repository to assess whether the project follows security best practices and helps determine if the dependency is safe for consumption.
@@ -612,8 +595,7 @@ This information helps you make informed decisions about the security risks asso
 <sup><span id="license-scanning">6</span></sup>: Visit the [supported languages and tools](../getting-started/supported-languages-and-tools.md#supported-languages-and-tools) page for a list of supported languages.  
 
 
-## App scanning {: id="app-scanning"}
-
+## App scanning {#app-scanning}
 :::caution
 App scanning is a business feature. If you are a Codacy Pro customer, contact our customer success team to access a short trial.
 :::

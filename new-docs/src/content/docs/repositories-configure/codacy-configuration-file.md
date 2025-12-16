@@ -80,8 +80,7 @@ To use a Codacy configuration file:
     codacy-analysis-cli validate-configuration --directory `pwd`
     ```
 
-## Ignoring files using a Codacy configuration file {: id="ignore-files"}
-
+## Ignoring files using a Codacy configuration file {#ignore-files}
 The Codacy configuration file gives you more flexibility in [ignoring or excluding files](ignoring-files.md) from the Codacy analysis.
 
 :::note
@@ -130,8 +129,7 @@ engines:
 
 :::
 
-## Including specific files using a Codacy configuration file {: id="include-files"}
-
+## Including specific files using a Codacy configuration file {#include-files}
 The Codacy configuration file allows you to explicitly specify files or directories to include in the analysis. This is particularly useful for [bypassing files or directories that are ignored by default](./ignoring-files.md#default-ignored-files) or specified in `exclude_paths`.
 
 :::note
@@ -155,8 +153,7 @@ include_paths:
 
 In this example, while all directories matching `lib*` are excluded, `lib-a` is specifically included for analysis, as well as any files within `libs`.
 
-## Adjusting tool configurations {: id="tool-conf"}
-
+## Adjusting tool configurations {#tool-conf}
 :::note
 The Codacy configuration file lets you [configure tools](#tool-specific-configurations), but you can't enable or disable them. A tool can only be enabled or disabled on the [Code patterns page](configuring-code-patterns.md) by users with the [necessary permissions](../organizations/roles-and-permissions-for-organizations.md).
 :::
@@ -324,16 +321,14 @@ engines:
     ignoreUsings: false
 ```
 
-## Configuring languages using a Codacy configuration file {: id="languages"}
-
+## Configuring languages using a Codacy configuration file {#languages}
 You can use a Codacy configuration file to manage the languages that Codacy analyzes in your repository.
 
 :::note
 Codacy applies the language settings from the Codacy configuration file as well as any settings defined [in the Codacy UI](languages.md).
 :::
 
-### Adding custom file extensions {: id="file-extensions"}
-
+### Adding custom file extensions {#file-extensions}
 To [add custom file extensions to languages](languages.md#configuring-file-extensions) using a Codacy configuration file, you must define one or more extensions under `languages.<LANGUAGE>.extensions`. Keep in mind that some tools might not work out of the box with those extensions.
 
 For example:
@@ -346,8 +341,7 @@ languages:
       - ".scss"
 ```
 
-### Disabling analysis of a language {: id="disable-language"}
-
+### Disabling analysis of a language {#disable-language}
 To [disable the analysis of a specific language](languages.md#disable-language) using a Codacy configuration file, set `languages.<LANGUAGE>.enabled` to `false`. The analysis is enabled by default for all languages.
 
 For example:

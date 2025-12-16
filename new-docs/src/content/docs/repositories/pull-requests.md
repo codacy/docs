@@ -17,8 +17,7 @@ Click a specific pull request to see detailed information about the code quality
 
 The next sections describe each area of the pull request detail page.
 
-## Pull request status {: id="status"}
-
+## Pull request status {#status}
 This area displays the information that identifies the pull request (name, author, head and base branches, and last updated date), as well as:
 
 -   A link to the pull request on your Git provider

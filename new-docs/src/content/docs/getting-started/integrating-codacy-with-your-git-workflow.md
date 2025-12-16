@@ -17,8 +17,7 @@ To integrate Codacy with your Git workflow, follow these steps:
 1.  [Configuring the Git provider integration](#git-provider-integration)
 1.  [Blocking merging pull requests](#blocking-pull-requests) (optional)
 
-## 1. Configuring the quality gate rules {: id="configuring-gate"}
-
+## 1. Configuring the quality gate rules {#configuring-gate}
 [Review and adjust the quality gates](../repositories-configure/adjusting-quality-gates.md) of your repository to decide which pull requests should fail the Codacy quality gate.
 
 :::tip
@@ -38,8 +37,7 @@ Codacy generally recommends that on a first stage you configure rules that focus
 
 ![Adjusting the quality gates](../repositories-configure/images/quality-settings-gates.png)
 
-## 2. Configuring the Git provider integration {: id="git-provider-integration"}
-
+## 2. Configuring the Git provider integration {#git-provider-integration}
 Make sure you enable the option **Status checks** ([GitHub](../repositories-configure/integrations/github-integration.md#status-checks)) or **Pull request status** ([GitLab](../repositories-configure/integrations/gitlab-integration.md#pull-request-status) and [Bitbucket](../repositories-configure/integrations/bitbucket-integration.md#pull-request-status)).
 
 {%
@@ -50,8 +48,7 @@ Make sure you enable the option **Status checks** ([GitHub](../repositories-conf
 
 ![Enabling your Git provider integration](../repositories-configure/integrations/images/github-integration.png)
 
-## 3. Blocking merging pull requests (optional) {: id="blocking-pull-requests"}
-
+## 3. Blocking merging pull requests (optional) {#blocking-pull-requests}
 Once you've tested out Codacy for a while and you're happy with the level of feedback provided, you can decide to enforce the quality gates and use Codacy to block merging pull requests on your Git provider. This is the best way to protect your code from unwelcome changes and fully integrate code quality and coverage analysis into your development pipeline.
 
 :::caution

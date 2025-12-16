@@ -52,8 +52,7 @@ Depending on the available analysis information for the file, Codacy displays on
 
     ![Coverage information for a file](images/files-coverage.png)
 
-## Why are some files missing? {: id="missing-files"}
-
+## Why are some files missing? {#missing-files}
 The Files page only displays files in your repository that were analyzed by Codacy. This means that some of your files may be missing from the list, for example:
 
 -   **You're viewing the incorrect branch**

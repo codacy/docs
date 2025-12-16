@@ -6,8 +6,7 @@ description: Instructions on how to use the Codacy Coverage Reporter to upload c
 
 The following sections include instructions on how to use the Codacy Coverage Reporter to upload coverage data in more advanced scenarios.
 
-## Uploading multiple coverage reports for the same language {: id="multiple-reports"}
-
+## Uploading multiple coverage reports for the same language {#multiple-reports}
 If your test suite is split into different modules or runs in parallel, you must upload multiple coverage reports for the same language either at once or in sequence.
 
 Alternatively, consider merging multiple coverage reports before uploading them to Codacy. Most coverage tools support merging or aggregating coverage data. For example, use the [merge mojo for JaCoCo](http://www.eclemma.org/jacoco/trunk/doc/merge-mojo.html).
@@ -16,8 +15,7 @@ Alternatively, consider merging multiple coverage reports before uploading them 
 If one or more coverage reports mark a line as covered multiple times, Codacy counts it as a single covered line when calculating coverage.
 :::
 
-### Uploading all reports at once {: id="multiple-reports-once"}
-
+### Uploading all reports at once {#multiple-reports-once}
 Upload multiple partial coverage reports with a single command by specifying each report with the flag `-r`. For example:
 
 ```bash
@@ -32,8 +30,7 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
     -l Java $(find . -name 'jacoco*.xml' | sed 's,^, -r ,' | xargs echo)
 ```
 
-### Uploading reports in sequence {: id="multiple-reports-sequence"}
-
+### Uploading reports in sequence {#multiple-reports-sequence}
 Upload multiple partial coverage reports in sequence:
 
 1.  Upload each report <span class="skip-vale">separately</span> with the flag `--partial`.
@@ -52,8 +49,7 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
 bash <(curl -Ls https://coverage.codacy.com/get.sh) final
 ```
 
-## Uploading the same coverage report for multiple languages {: id="multiple-languages"}
-
+## Uploading the same coverage report for multiple languages {#multiple-languages}
 If your test suite generates a single coverage report for more than one language, you must upload the same coverage report for each language.
 
 To do this, upload the same report multiple times, specifying each different language with the flag `-l`. For example:
@@ -66,8 +62,7 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
 bash <(curl -Ls https://coverage.codacy.com/get.sh) final
 ```
 
-## Uploading coverage for Golang {: id="golang"}
-
+## Uploading coverage for Golang {#golang}
 Codacy can't automatically detect Golang coverage report files because they don't have specific file names.
 
 If you're uploading a Golang coverage report, you must also specify the report type:
@@ -78,8 +73,7 @@ bash <(curl -Ls https://coverage.codacy.com/get.sh) report \
     --force-coverage-parser go -r unit.coverage.out
 ```
 
-## Uploading coverage for unsupported languages {: id="unsupported-languages"}
-
+## Uploading coverage for unsupported languages {#unsupported-languages}
 If your language isn't in the [list of supported languages](index.md#generating-coverage), you can still send coverage to Codacy.
 
 To do this, provide the correct language with the flag `-l`, together with `--force-language`. For example:

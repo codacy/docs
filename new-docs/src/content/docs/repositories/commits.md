@@ -17,8 +17,7 @@ Click a specific commit to see detailed information about the code quality chang
 
 The next sections describe each area of the commit detail page.
 
-## Commit status {: id="status"}
-
+## Commit status {#status}
 ![Commit status](images/commits-detail-status.png)
 
 This area displays the information that identifies the commit (commit message, committer, SHA hash, and last updated date), as well as:
@@ -28,8 +27,7 @@ This area displays the information that identifies the commit (commit message, c
 -   A link to [view analysis logs](#viewing-analysis-logs)
 
 <!--quality-overview-start-->
-## {{ page.meta.page_name.capitalize() }} quality overview {: id="quality-overview"}
-
+## {{ page.meta.page_name.capitalize() }} quality overview {#quality-overview}
 <!-- vale off -->
 ![{{ page.meta.page_name.capitalize() }} quality overview](images/{{ page.meta.file_name }}-detail-quality-overview.png)
 <!-- vale on -->
@@ -73,8 +71,7 @@ This area displays the quality gate status for the {{ page.meta.page_name }} and
 <!--quality-overview-end-->
 
 <!--tabs-start-->
-## Issues tab {: id="issues-tabs"}
-
+## Issues tab {#issues-tabs}
 The **Issues** tab displays the lists of issues that the {{ page.meta.page_name }} creates or fixes. Use the sidebar filters to filter the list by new issues (including issues of specific severity or category), issues within a specific file, fixed issues, [potential new issues, or potential fixed issues](#possible-issues).
 
 {%
@@ -87,8 +84,7 @@ To [ignore or manage an issue](issues.md#ignoring-and-managing-issues), click th
 
 ![Issues tab](images/{{ page.meta.file_name }}-tab-issues.png)
 
-### Potential issues {: id="possible-issues"}
-
+### Potential issues {#possible-issues}
 Codacy may label some issues as **potential**, which means that the code analysis detected these issues in lines of code that weren't changed by the analyzed {{ page.meta.page_name }}. This highlights potential consequences in other parts of your codebase.
 
 The following are example situations that can lead to potential issues:
@@ -125,8 +121,7 @@ it will automatically add a comment listing all the detected false positives.
 Pull Request comments for False Positives are currently supported on GitHub only.
 :::
 
-## Duplication tab {: id="duplication-tabs"}
-
+## Duplication tab {#duplication-tabs}
 The **Duplication** tab displays the lists of clones (duplicated code blocks) that the {{ page.meta.page_name }} adds or fixes. You can click a clone to expand it and inspect the code.
 
 ![Duplication tabs](./images/{{ page.meta.file_name }}-tab-duplication.png)

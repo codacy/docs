@@ -24,8 +24,7 @@ Complete these main steps to set up coverage for your repository:
 
 The next sections include detailed instructions on how to complete each step of the setup process.
 
-## 1. Generating coverage reports {: id="generating-coverage"}
-
+## 1. Generating coverage reports {#generating-coverage}
 Before setting up Codacy to display code coverage metrics for your repository you must have tests and use tools to generate coverage reports for the source code files in your repository.
 
 Consider the following when generating coverage reports for your repository:
@@ -142,8 +141,7 @@ As a last resort, you can also send the coverage data directly by calling one of
 -   [<span class="skip-vale">saveCoverage</span>](https://api.codacy.com/swagger#savecoverage)
 -   [saveCoverageWithAccountToken](https://api.codacy.com/swagger#savecoveragewithaccounttoken)
 
-## 2. Uploading coverage data to Codacy {: id="uploading-coverage"}
-
+## 2. Uploading coverage data to Codacy {#uploading-coverage}
 After having coverage reports set up for your repository, you must use the Codacy Coverage Reporter to upload them to Codacy. The recommended way to do this is by using a CI/CD platform that automatically runs tests, generates coverage, and then uses the Codacy Coverage Reporter to upload the coverage report information to Codacy.
 
 :::caution
@@ -161,9 +159,7 @@ However, the instructions on this page assume that you'll run the recommended [s
 
 :::
 
-1.  Set up an API token to allow Codacy Coverage Reporter to authenticate on Codacy:
-    {: id="authenticate"}
-
+1.  Set up an API token to allow Codacy Coverage Reporter to authenticate on Codacy: {#authenticate}
     -   **If you're setting up coverage for one repository**, [obtain a repository API token](../codacy-api/api-tokens.md#repository-api-tokens) and set the following environment variable to specify your repository API token:
 
         ```bash
@@ -214,8 +210,7 @@ However, the instructions on this page assume that you'll run the recommended [s
     Be sure to also check the [instructions for more advanced scenarios](uploading-coverage-in-advanced-scenarios.md) while uploading the coverage data to Codacy, such as when running parallel tests, using monorepos, or testing source code in multiple or unsupported languages.
     :::
 
-## 3. Validating that the coverage setup is complete {: id="validating-coverage"}
-
+## 3. Validating that the coverage setup is complete {#validating-coverage}
 Codacy displays the code coverage in each branch, as well as the evolution of code coverage between commits and the code coverage variation introduced by pull requests.
 
 Because of this, to ensure that all code coverage metrics are available on Codacy, you must have successfully uploaded coverage data and analyzed:
@@ -246,8 +241,7 @@ Follow these instructions to validate that your coverage setup is working correc
 
     If there are commits with a status different from **Processed**, please follow the troubleshooting instructions for the corresponding error status and click the button **Test integration** to display any new coverage reports uploaded to Codacy.
 
-    ### Commit not found {: id="status-commit-not-found" style="color: #EF5454;"}
-
+    ### Commit not found {#status-commit-not-found}
     Codacy doesn't have information about the commit associated with the coverage data.
 
     <table>
@@ -281,8 +275,7 @@ Follow these instructions to validate that your coverage setup is working correc
     </tr>
     </table>
 
-    ### Branch not enabled {: id="status-branch-not-enabled" style="color: #EF5454;"}
-
+    ### Branch not enabled {#status-branch-not-enabled}
     The commit associated with the coverage data doesn't belong to any branch that Codacy is analyzing.
 
     <table>
@@ -316,8 +309,7 @@ Follow these instructions to validate that your coverage setup is working correc
     </tr>
     </table>
 
-    ### Commit not analyzed {: id="status-commit-not-analyzed" style="color: #EF5454;"}
-
+    ### Commit not analyzed {#status-commit-not-analyzed}
     Due to technical limitations, Codacy only reports coverage for a commit after successfully completing the static code analysis of that commit.
 
     <table>
@@ -374,8 +366,7 @@ Follow these instructions to validate that your coverage setup is working correc
     </tr>
     </table>
 
-    ### Final report not sent {: id="status-final-report-not-sent" style="color: #EF5454;"}
-
+    ### Final report not sent {#status-final-report-not-sent}
     Codacy is waiting to receive more coverage data before reporting the coverage for a commit.
 
     <table>
@@ -400,8 +391,7 @@ Follow these instructions to validate that your coverage setup is working correc
     </tr>
     </table>
 
-    ### Pending {: id="status-pending" style="color: #2562EA;"}
-
+    ### Pending {#status-pending}
     Codacy is waiting to receive valid coverage data for the files in your repository.
 
     <table>

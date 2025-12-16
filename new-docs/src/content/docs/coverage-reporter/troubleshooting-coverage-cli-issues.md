@@ -27,8 +27,7 @@ However, if Codacy Coverage Reporter doesn't find your coverage report, you can 
 bash <(curl -Ls https://coverage.codacy.com/get.sh) report -r <coverage report file name>
 ```
 
-## Can't validate checksum {: id="checksum"}
-
+## Can't validate checksum {#checksum}
 Starting on version [13.0.0](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.0.0) the `get.sh` script automatically validates the checksum of the downloaded Codacy Coverage Reporter binary. This requires having either the `sha512sum` or `shasum` command on the operating system where you're running the script.
 
 If you're getting this error while uploading your coverage data to Codacy, install the correct version of `sha512sum` or `shasum` for the operating system that you're using.
@@ -39,8 +38,7 @@ You can also skip validating the checksum of the binary by defining the followin
 export CODACY_REPORTER_SKIP_CHECKSUM=true
 ```
 
-## Commit SHA-1 hash detection {: id="commit-detection"}
-
+## Commit SHA-1 hash detection {#commit-detection}
 The Codacy Coverage Reporter automatically detects the SHA-1 hash of the current commit to associate with the coverage data when you're using one of the following CI/CD platforms:
 
 -   <span class="skip-vale">Appveyor</span>
@@ -130,8 +128,7 @@ Make sure that your coverage report isn't empty and that it includes coverage da
 If you upload multiple coverage reports and at least one contains valid data, the Codacy Coverage Reporter uploads the valid reports and ignores the invalid ones.
 :::
 
-## Report generated an empty result while uploading C# coverage data {: id="detailedxml"}
-
+## Report generated an empty result while uploading C# coverage data {#detailedxml}
 If you're using <span class="skip-vale">dotCover</span> to generate coverage reports for your C# projects, you must use the <span class="skip-vale">dotCover</span> detailedXML report format as follows:
 
 ```bash

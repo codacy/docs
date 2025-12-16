@@ -46,8 +46,7 @@ Please refer to the table below for the updated status of the transition process
 Because of this transition, both old and new data will coexist during this period, <span class="skip-vale">potentially</span> leading to [differences in reported metrics](#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines).
 :::
 
-## Git provider status checks from the new Coverage engine {: id="status-checks"}
-
+## Git provider status checks from the new Coverage engine {#status-checks}
 :::note[This section applies to the repositories for which you set Codacy to send pull request coverage status data to your Git provider (see how on [GitHub](../../repositories-configure/integrations/github-integration.md#status-checks), [GitLab](../../repositories-configure/integrations/gitlab-integration.md#pull-request-status), and [Bitbucket](../../repositories-configure/integrations/bitbucket-integration.md#pull-request-status)).]
 :::
 
@@ -116,8 +115,7 @@ If you are using the old status check to block merging pull requests on GitHub, 
 
 ![New Coverage status checks GitHub](../images/ala-695-update-status-checks-github.png)
 
-## GitHub coverage summaries from the new Coverage engine {: id="coverage-summaries"}
-
+## GitHub coverage summaries from the new Coverage engine {#coverage-summaries}
 :::note[This section applies to the repositories for which you set Codacy to post [coverage summaries](../../repositories-configure/integrations/github-integration.md#coverage-summaries) to your GitHub pull requests]
 :::
 
@@ -131,8 +129,7 @@ On December 7th 2023, the new Coverage engine started posting coverage summaries
 
 ## New Coverage engine side effects
 
-### Missing data on the Coverage Pull request page {: id="differences-in-coverage-metrics-between-the-coverage-and-quality-pull-request-pages" }
-
+### Missing data on the Coverage Pull request page {#differences-in-coverage-metrics-between-the-coverage-and-quality-pull-request-pages}
 You may notice missing coverage data on the Coverage Pull requests page for older pull requests when compared to the coverage data shown on the [Quality Pull requests page](../../repositories/pull-requests.md). This may happen due to a number of reasons:
 
 -   GitHub only: The new Coverage service requires updated app permissions to calculate coverage data. If you haven't done so yet, [review and accept the updated Codacy app permissions](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions) on GitHub and re-analyze the pull request by pushing an empty commit.
@@ -144,8 +141,7 @@ You may notice missing coverage data on the Coverage Pull requests page for olde
     git push
     ```
 
-### Differences in coverage metrics between the old and new Coverage engines {: id="differences-in-coverage-metrics-between-the-old-and-new-coverage-engines"}
-
+### Differences in coverage metrics between the old and new Coverage engines {#differences-in-coverage-metrics-between-the-old-and-new-coverage-engines}
 You may notice some differences in the coverage metrics reported by the old and new Coverage engines and may need to update your [coverage gate rules](../../repositories-configure/adjusting-quality-gates.md) accordingly. This may happen because the new Coverage engine calculates coverage metrics considering all the files included in the coverage report, while the old Coverage engine ignores some files:
 
 -   The old Coverage engine ignores any files on a coverage report that aren't present on the repository on that given commit.

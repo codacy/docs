@@ -33,8 +33,7 @@ When using submodules, you must do the following for all your existing and new r
 
     If your tool doesn't detect the configuration files in the submodule directories, you must include a configuration file directly in the root of your repositories referencing the configuration files in the submodule directories.
 
-## Updating the public SSH key to access the repository {: id="update-key"}
-
+## Updating the public SSH key to access the repository {#update-key}
 :::note[This section applies only to GitLab and Bitbucket]
 :::
 

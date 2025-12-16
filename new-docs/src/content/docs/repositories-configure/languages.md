@@ -35,8 +35,7 @@ If your repository contains source files with extensions not supported by Codacy
 Currently, the [Semgrep](https://github.com/codacy/codacy-semgrep) static analysis tool doesn't support custom file extensions.
 :::
 
-## Disabling analysis of a language {: id="disable-language"}
-
+## Disabling analysis of a language {#disable-language}
 By default, Codacy analyzes all languages detected in your repository. To disable the analysis of a specific language, do the following:
 
 1.  Go to your repository's **Settings**, **Languages**.

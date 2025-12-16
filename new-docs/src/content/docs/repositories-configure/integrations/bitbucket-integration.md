@@ -14,8 +14,7 @@ When you add a new repository, Codacy sets the Bitbucket integration using the [
 Codacy uses the Bitbucket user who added the repository to create comments on pull requests. If that user loses access to the repository, a repository admin must [refresh the Bitbucket integration](#refreshing).
 :::
 
-## Configuring the Bitbucket integration {: id="configuring"}
-
+## Configuring the Bitbucket integration {#configuring}
 To configure the Bitbucket integration, open your repository **Settings**, tab **Integrations**.
 
 Depending on the options that you enable, Codacy will automatically update pull requests on Bitbucket with extra information when accepting pull requests.
@@ -26,22 +25,19 @@ Depending on the options that you enable, Codacy will automatically update pull 
     end="<!--default-settings-apply-all-end-->"
 %}
 
-### Status checks {: id="pull-request-status"}
-
+### Status checks {#pull-request-status}
 Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository. You can then optionally [block merging pull requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
 
 {% include-markdown "../../assets/includes/status-checks-important.md" %}
 
 ![Pull request status on Bitbucket](images/bitbucket-integration-pr-status.png)
 
-### Issue annotations {: id="pull-request-comment"}
-
+### Issue annotations {#pull-request-comment}
 Adds comments on the lines of the pull request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them. To enable this option, you must enable **Status checks** first.
 
 ![Pull request comment on Bitbucket](images/bitbucket-integration-pr-comment.png)
 
-### Issue summaries {: id="pull-request-summary"}
-
+### Issue summaries {#pull-request-summary}
 :::note[This feature isn't available for Bitbucket Server]
 :::
 
@@ -57,8 +53,7 @@ Adds AI-enhanced comments with insights to help you fix identified issues.
 
 ![AI-enhanced comment on GitLab](images/bitbucket-integration-ai-comment.png)
 
-## Refreshing the Bitbucket integration {: id="refreshing"}
-
+## Refreshing the Bitbucket integration {#refreshing}
 If the user who added the repository to Codacy loses access to the repository, which may happen when the user leaves the team or the organization, Codacy won't be able to create comments on pull requests.
 
 In this situation, another user with [administrator access to the repository](../../organizations/roles-and-permissions-for-organizations.md#permissions-for-bitbucket) needs to refresh the Bitbucket integration:

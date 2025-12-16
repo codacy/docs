@@ -10,8 +10,7 @@ When you add a new repository, Codacy sets the GitHub integration using the [def
 
 ![GitHub integration](images/github-integration.png)
 
-## Configuring the GitHub integration {: id="configuring"}
-
+## Configuring the GitHub integration {#configuring}
 To configure the GitHub integration, open your repository **Settings**, tab **Integrations**.
 
 Depending on the options that you enable, Codacy will automatically update pull requests on GitHub with extra information when accepting pull requests.
@@ -77,8 +76,7 @@ When there are new coverage results, Codacy updates the last coverage summary co
 This feature is only supported on GitHub and GitLab Cloud.
 :::
 
-### Suggested fixes {: id="suggest-fixes"}
-
+### Suggested fixes {#suggest-fixes}
 {%
     include-markdown "../../assets/includes/paid.md"
     start="<!--paid-start-->"

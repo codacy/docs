@@ -21,8 +21,7 @@ To review the permissions granted by each role, see the tables for each Git prov
 
 To list and manage the members of your Codacy organization, see the [Managing people](managing-people.md) page.
 
-## Configuring repository management permissions {: id="change-analysis-configuration"}
-
+## Configuring repository management permissions {#change-analysis-configuration}
 {% include-markdown "../assets/includes/admin-access-info.md" %}
 
 By default, only users with the Codacy role **repository write** can change analysis configurations.

@@ -27,8 +27,7 @@ The list also displays error and warning messages for repositories that have iss
 
 If you follow many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
-## Adding a repository {: id="adding-a-repository"}
-
+## Adding a repository {#adding-a-repository}
 {%
     include-markdown "../assets/includes/paid.md"
     start="<!--paid-private-repositories-start-->"
@@ -55,8 +54,7 @@ Although Codacy immediately starts analyzing newly added repositories, they disp
 
 ![Waiting for first analysis results](images/repositories-analyzing.png)
 
-## Following or unfollowing a repository {: id="follow-unfollow"}
-
+## Following or unfollowing a repository {#follow-unfollow}
 Users with [no permission to add a repository](roles-and-permissions-for-organizations.md) to Codacy, can follow that repository after it has been added to Codacy, and stop following it at any time.
 
 To follow or unfollow repositories on Codacy:
@@ -76,8 +74,7 @@ Conversely, you automatically **stop following** a repository as soon as you try
  
 :::
 
-## Finding your repositories with Segments {: id="provider-segments"}
-
+## Finding your repositories with Segments {#provider-segments}
 Codacy allows you to utilise [**Segments**](../segments) to categorize and filter repositories more effectively within the Codacy platform.
 :::note[Check out how to [enable and configure **Segments**](../segments/#enabling-segments)]
 :::

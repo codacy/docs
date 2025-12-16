@@ -14,8 +14,7 @@ When you add a new repository, Codacy sets the GitLab integration using the [def
 Codacy uses the GitLab user who added the repository to create comments on merge requests. If that user loses access to the repository, a repository admin must [refresh the GitLab integration](#refreshing).
 :::
 
-## Configuring the GitLab integration {: id="configuring"}
-
+## Configuring the GitLab integration {#configuring}
 To configure the GitLab integration, open your repository **Settings**, tab **Integrations**.
 
 Depending on the options that you enable, Codacy will automatically update merge requests on GitLab with extra information when accepting merge requests.
@@ -26,22 +25,19 @@ Depending on the options that you enable, Codacy will automatically update merge
     end="<!--default-settings-apply-all-end-->"
 %}
 
-### Status checks {: id="pull-request-status"}
-
+### Status checks {#pull-request-status}
 Adds a report to your merge requests showing whether your merge requests and coverage are up to standards or not as configured on the [quality gate rules](../../repositories-configure/adjusting-quality-gates.md) for your project. You can then optionally [block merging merge requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
 
 {% include-markdown "../../assets/includes/status-checks-important.md" %}
 
 ![Merge request status on GitLab](images/gitlab-integration-pr-status.png)
 
-### Issue annotations {: id="pull-request-comment"}
-
+### Issue annotations {#pull-request-comment}
 Adds comments on the lines of the merge request where Codacy finds new issues. Click on the links to open Codacy and see more details about the issues and how to fix them. To enable this option, you must enable **Status checks** first.
 
 ![Merge request comment on GitLab](images/gitlab-integration-pr-comment.png)
 
-### Issue summaries {: id="pull-request-summary"}
-
+### Issue summaries {#pull-request-summary}
 Shows an overall view of the changes in the merge request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable **Status checks** first.
 
 ### Coverage summaries
@@ -70,8 +66,7 @@ Adds AI-enhanced comments with insights to help you fix identified issues.
 
 ![AI-enhanced comment on GitLab](images/gitlab-integration-ai-comment.png)
 
-## Refreshing the GitLab integration {: id="refreshing"}
-
+## Refreshing the GitLab integration {#refreshing}
 If the user who added the repository to Codacy loses access to the repository, which may happen when the user leaves the team or the organization, Codacy won't be able to create comments on merge requests.
 
 In this situation, another user with [administrator access to the repository](../../organizations/roles-and-permissions-for-organizations.md#permissions-for-gitlab) needs to refresh the GitLab integration:

@@ -17,8 +17,7 @@ This page covers the following topics:
 -   [Using a coding standard alongside repository-level customizations](#using-with-repository-configuration)
 -   [Using multiple coding standards](#using-multiple)
 
-## Creating a coding standard {: id="creating"}
-
+## Creating a coding standard {#creating}
 :::note
 Codacy currently supports up to 10 coding standards per organization.
 :::
@@ -45,8 +44,7 @@ To create a coding standard for your organization:
 
 1.  Click **Create coding standard** to proceed to the [guided setup](#guided-setup) or [advanced setup](#advanced-settings), depending on your choice.
 
-## Configuring a coding standard (guided setup) {: id="guided-setup"}
-
+## Configuring a coding standard (guided setup) {#guided-setup}
 If you selected **Guided setup** when [creating a new coding standard](#creating), follow these steps:
 
 1.  Adjust the sensitivity of the coding standard from **Essential** to **Comprehensive** for each issue category group:
@@ -68,8 +66,7 @@ If you selected **Guided setup** when [creating a new coding standard](#creating
 
     ![Applying the coding standard to repositories](images/coding-standard-apply.png)
 
-## Configuring a coding standard (advanced setup) {: id="advanced-settings"}
-
+## Configuring a coding standard (advanced setup) {#advanced-settings}
 If you selected **Advanced setup** when [creating a new coding standard](#creating) or are editing an existing coding standard, follow these steps:
 
 1.  Select the programming languages that the new coding standard should include.
@@ -104,8 +101,7 @@ If you selected **Advanced setup** when [creating a new coding standard](#creati
 
 1.  Proceed with the remaining wizard steps to finish [creating](#creating) or [editing](#editing) your coding standard.
 
-## Defining default coding standards {: id="set-default"}
-
+## Defining default coding standards {#set-default}
 For ease of management, you can define multiple default coding standards that automatically apply to new repositories. In the absence of default coding standards, Codacy applies global defaults to all new repositories.
 
 :::note
@@ -122,8 +118,7 @@ To mark an existing coding standard as default:
 
     ![Setting a coding standard as the default](images/coding-standard-set-default.png)
 
-## Editing a coding standard {: id="editing"}
-
+## Editing a coding standard {#editing}
 :::note
 Any edits to the configurations of a coding standard are automatically applied on the next analysis of each associated repository.
 :::
@@ -155,8 +150,7 @@ To edit an existing coding standard or change the repositories that follow that 
 
     Codacy will start using the updated coding standard on the next analysis of each selected repository.
 
-## Deleting a coding standard {: id="deleting"}
-
+## Deleting a coding standard {#deleting}
 To delete a coding standard:
 
 1.  Open your organization **Policies** page, tab **Coding standards**.
@@ -165,16 +159,13 @@ To delete a coding standard:
 
     ![Deleting a coding standard](images/coding-standard-delete.png)
 
-## Using a coding standard alongside tool configuration files {: id="using-with-tool-configuration"}
-
+## Using a coding standard alongside tool configuration files {#using-with-tool-configuration}
 When using a [tool configuration file](../repositories-configure/configuring-code-patterns.md#using-your-own-tool-configuration-files) alongside a coding standard, the configuration file controls the code patterns, while the coding standard controls whether the tool is enabled or disabled.
 
-## Using a coding standard alongside repository-level customizations {: id="using-with-repository-configuration"}
-
+## Using a coding standard alongside repository-level customizations {#using-with-repository-configuration}
 Tools and patterns enabled by a coding standard are enforced and cannot be disabled at the repository level. You can add extra tools and patterns, if these are not already enabled by any applied coding standard.
 
-## Using multiple coding standards {: id="using-multiple"}
-
+## Using multiple coding standards {#using-multiple}
 When Codacy analyzes your code using multiple coding standards, it merges the tools and patterns from each standard.
 
 A common strategy is to start with a baseline standard containing fundamental rules that apply across all repositories, then layer additional standards based on specific needs. You can organize these additional standards by:
@@ -194,7 +185,7 @@ You can apply up to 10 coding standards to your organization. Standards can over
 If the same pattern appears in multiple standards, the version from the most recently created and applied standard (with its parameters) takes precedence.
 :::
 
-### Implementation guidelines {: id="standards-implementation"}
+### Implementation guidelines {#standards-implementation}
 Consider these points when implementing coding standards:
 
 - **Keep maintenance simple:** Minimize overlap between standards and establish clear ownership to reduce maintenance complexity

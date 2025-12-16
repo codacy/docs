@@ -40,16 +40,14 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
 1.  Optionally, to take the changes into account immediately, [reanalyze the repository manually](../faq/repositories/how-do-i-reanalyze-my-repository.md). Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.
 
-## Discover code patterns across all tools {: id="discover-code-patterns-across-all-tools"}
-
+## Discover code patterns across all tools {#discover-code-patterns-across-all-tools}
 To discover code patterns across all tools, click **Discover patterns** at the top of the **Tools** list.
 
 Use the input field to search for patterns by name or description. You can also filter by severity level, issue category, recommended or disabled patterns.
 
 You can also expand your search to include patterns from all tools, even if the tool is not enabled for the repository.
 
-## Customizing applied coding standards {: id="customizing-applied-coding-standards"}
-
+## Customizing applied coding standards {#customizing-applied-coding-standards}
 To apply or edit a repository's [coding standards](../organizations/using-coding-standards.md), click **Customize** in the **Following ...** section at the top of the **Code patterns** page.
 
 ![Customize applied coding standards](images/code-patterns-cs-customize.png)
@@ -59,13 +57,11 @@ Select the coding standards that you want to follow or stop following and click 
 ![Customize applied coding standards](images/code-patterns-cs-customize-modal.png)
 
 
-## Customizing patterns when following coding standards {: id="customizing-patterns-following-standards"}
-
+## Customizing patterns when following coding standards {#customizing-patterns-following-standards}
 Tools and patterns enabled by a coding standard are enforced and cannot be disabled.
 You can add extra tools and patterns, if these are not enabled by any applied coding standard.
 
-## Using tool configuration files {: id="using-your-own-tool-configuration-files"}
-
+## Using tool configuration files {#using-your-own-tool-configuration-files}
 <!--NOTE
     When adding a new supported tool, make sure that you update the following pages:
 

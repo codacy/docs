@@ -12,8 +12,7 @@ Coverage information is currently sent to GitHub by a new version of the Codacy 
 
 If you stopped receiving coverage summaries on your pull requests, please [review and accept the updated Codacy app permissions on GitHub](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions). For more information on the rollout of the new Coverage engine, [see the relevant release note](../../release-notes/cloud/cloud-2023-11-23-new-coverage-engine-status-checks.md).
 
-## Outdated permissions or invalid SSH key {: id="outdated-permissions"}
-
+## Outdated permissions or invalid SSH key {#outdated-permissions}
 :::note[This section applies to GitLab and Bitbucket]
 :::
 

@@ -23,8 +23,7 @@ To list and manage the people in your organization, open your organization **Set
 
 ![People in an organization](images/organization-people.png)
 
-## Joining an organization {: id="joining"}
-
+## Joining an organization {#joining}
 To become a member of an organization on Codacy app you must [sign up to Codacy](../getting-started/codacy-quickstart.md) using your Git provider and follow the instructions to either join an existing organization or add a new one.
 
 To join or add an organization after completing the sign-up process, click **Organizations** on the top right-hand menu under your avatar:
@@ -35,8 +34,7 @@ To join or add an organization after completing the sign-up process, click **Org
 **On Codacy Cloud**, organization admins [control if team members need an approval](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization) before joining their organizations.
 :::
 
-## Adding people to your organization {: id="adding-people"}
-
+## Adding people to your organization {#adding-people}
 **On Codacy Cloud**, organization admins can also add teammates to their organization on Codacy. This is useful to allow Codacy to analyze commits to private repositories by committers who haven't signed up to Codacy or joined the organization yet.
 
 :::tip
@@ -68,8 +66,7 @@ To add people to your organization:
 
 1.  Confirm the updated billing details displayed at the bottom of the window and click the button **Add people**. Codacy emails the newly added people inviting them to log in.
 
-## Removing people from your organization {: id="removing-people"}
-
+## Removing people from your organization {#removing-people}
 Members of an organization on Codacy can remove themselves from the organization, and organization admins can also remove other members and committers.
 
 When a member or committer leaves an organization:
