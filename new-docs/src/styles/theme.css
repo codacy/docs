@@ -7,6 +7,18 @@ These are overides to the current theme.
     --sl-font: Inter;
     --sl-color-bg-nav: var(--sl-color-bg);
 
+    --sl-text-2xs: 0.5rem;
+    --sl-text-xs: 0.75rem;
+    --sl-text-sm: 0.8125rem;
+    --sl-text-base: 0.875rem;
+    --sl-text-lg: 1rem;
+    --sl-text-xl: 1.125rem;
+    --sl-text-2xl: 1.25rem;
+    --sl-text-3xl: 1.5rem;
+    --sl-text-4xl: 1.8125rem;
+    --sl-text-5xl: 2.1875rem;
+    --sl-text-6xl: 3rem;
+
     --title-height: 4rem;
 }
 
