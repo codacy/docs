@@ -72,9 +72,15 @@ const config: Config = {
       items: [
         {
           type: 'docSidebar',
-          sidebarId: 'tutorialSidebar',
+          sidebarId: 'documentationSidebar',
           position: 'left',
-          label: 'Tutorial',
+          label: 'Docs',
+        },
+        {
+          type: 'docSidebar',
+          sidebarId: 'releaseNotesSidebar',
+          position: 'left',
+          label: 'Release notes',
         },
         {
           href: 'https://github.com/facebook/docusaurus',
