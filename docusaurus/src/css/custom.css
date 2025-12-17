@@ -45,7 +45,7 @@
 
 .theme-layout-main .container {
   padding: 0 4rem;
-  margin: 4rem 0;
+  margin: 4rem auto;
 }
 
 @media (max-width: 1200px){
