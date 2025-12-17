@@ -44,11 +44,13 @@
 }
 
 .theme-layout-main .container {
-  padding: 4rem !important;
+  padding: 0 4rem;
+  margin: 4rem 0;
 }
 
 @media (max-width: 1200px){
   .theme-layout-main .container {
-    padding: 1.5rem !important;
+    padding: 1.5rem;
+    margin: 0;
   }
 }

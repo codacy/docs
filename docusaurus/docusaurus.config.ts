@@ -48,6 +48,7 @@ const config: Config = {
         docs: {
           routeBasePath: '/',
           sidebarPath: './sidebars.ts',
+          breadcrumbs: false,
         },
         theme: {
           customCss: './src/css/custom.css',
