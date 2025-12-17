@@ -2,12 +2,11 @@ MkDocs ➜ Docusaurus migration checklist
 
 Goal: ship `docusaurus/` as the new production site for https://docs.codacy.com/
 
-- [ ] **Release process** → see sections 4 and 9
-- [ ] **Information architecture + sidebar order** → see section 2
-- [ ] **Theme/branding** → see sections 2 and 7 (owner: Felipe)
-- [ ] **Production URL parity + internal links** → see sections 1, 3, and 8
-- [ ] **Markdown/MDX consistency** → see section 1
-- [ ] **Contributor guidance (README/best practices)** → see section 10
+## 0) Make it beautiful
+- [ ] Colors, fonts and sizes
+- [ ] Better footer
+- [ ] Beautiful navigation
+- [ ] Nav links
 
 ## 1) Content parity (docs rendering)
 - [ ] Confirm all pages exist in `docusaurus/docs` (count + spot-check key sections)
@@ -55,7 +54,7 @@ MkDocs currently publishes:
 ## 7) Tracking, scripts, and UX widgets
 MkDocs uses `extra.segment_key`, `extra.user_feedback`, and custom JS/CSS.
 - [ ] Add tracking (Segment or chosen tool) to Docusaurus
-- [ ] Add Intercom
+- [ ] Add Zendesk
 - [ ] Re-implement “user feedback” if it was a widget on MkDocs
 - [ ] Re-implement any “version selector” behavior (MkDocs `assets/javascripts/version-select.js` + CSS)
 
@@ -77,7 +76,3 @@ MkDocs uses `extra.segment_key`, `extra.user_feedback`, and custom JS/CSS.
 - [ ] Decide what to do with MkDocs artifacts once cutover is complete:
   - [ ] `mkdocs.yml`, `requirements.txt`, MkDocs workflows
   - [ ] MkDocs theme submodule `submodules/codacy-mkdocs-material`
-
-## Done
-- [x] Release notes tabs in navbar/sidebars
-- [x] Auto last updated
