@@ -4,17 +4,14 @@ description: Instructions on how to run Dart Analyzer as a client-side tool on C
 tool_name: Dart Analyzer
 ---
 
+import ClientSideToolInstructionsItems from '../../_includes/ClientSideToolInstructionsItems.mdx';
 
 To run Dart Analyzer as a [client-side tool](client-side-tools.md):
 
 
-<!-- NOTE
-     include-markdown breaks the final list in two, use include instead. -->
-{%
-    include "../../assets/includes/client-side-tool-instructions.md"
-    start="<!--instructions-start-->"
-    end="<!--instructions-end-->"
-%}
+<ol>
+    <ClientSideToolInstructionsItems toolName="Dart Analyzer" />
+</ol>
 
 ## Important Concepts
 
@@ -81,4 +78,3 @@ codacy-cli analyze -t dartanalyzer -o dartanalyzer.sarif -c $COMMIT_SHA -a CODAC
 
 :::caution[Tokens should be stored in the repository secrets.]
 :::
-

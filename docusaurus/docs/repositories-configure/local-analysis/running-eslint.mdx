@@ -4,17 +4,14 @@ description: Instructions on how to run ESLint as a client-side tool on Codacy.
 tool_name: ESLint
 ---
 
+import ClientSideToolInstructionsItems from '../../_includes/ClientSideToolInstructionsItems.mdx';
 
 To run ESLint as a [client-side tool](client-side-tools.md):
 
 
-<!-- NOTE
-     include-markdown breaks the final list in two, use include instead. -->
-{%
-    include "../../assets/includes/client-side-tool-instructions.md"
-    start="<!--instructions-start-->"
-    end="<!--instructions-end-->"
-%}
+<ol>
+    <ClientSideToolInstructionsItems toolName="ESLint" />
+</ol>
 
 ## Important Concepts
 
@@ -71,4 +68,3 @@ codacy-cli analyze -t eslint -o eslint.sarif -c $COMMIT_SHA -a CODACY_API_TOKEN 
 
 :::caution[Tokens should be stored in the repository secrets.]
 :::
-

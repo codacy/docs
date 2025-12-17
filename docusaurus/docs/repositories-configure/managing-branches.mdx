@@ -2,10 +2,11 @@
 title: Managing branches
 ---
 
+import AdminAccessControlInfo from '../_includes/AdminAccessControlInfo.mdx';
 
-{% if not extra.self_hosted %}
+<AdminAccessControlInfo />
 
-{% include-markdown "../assets/includes/admin-access-control-info.md" %}
+## Codacy Cloud
 
 Codacy automatically analyzes the default branch of your repository (typically `master` or `main` as configured on your Git provider) and loads its data first on dashboards. Codacy also supports analyzing multiple branches.
 
@@ -30,7 +31,8 @@ To change the default branch of your repository or start analyzing other branche
     :::note
     You can only set as default branch an already enabled branch.
     :::
-{% else %}
+## Codacy Self-hosted
+
 Codacy automatically triggers analysis on the main branch of your repository (typically `master` or `main` as configured on your Git provider), and also supports analyzing multiple branches.
 
 To change the main branch of your repository or enable analysis on other branches, open your repository **Settings**, tab **Branches**. Enabling a new branch triggers an initial analysis of that branch and the analysis results and information for that branch will become available after the analysis is complete.
@@ -44,8 +46,6 @@ This page also displays the [code quality grade](../faq/code-analysis/which-metr
 
 ![Auto-enable new branches](images/managing-branches-auto-enable.png)
 :::
-
-{% endif %}
 
 Codacy manages pull request branches and inactive branches as follows:
 

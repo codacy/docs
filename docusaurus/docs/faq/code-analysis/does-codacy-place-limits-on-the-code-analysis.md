@@ -72,9 +72,10 @@ Codacy limits the number of comments for reporting found issues on pull requests
 For now, Codacy only reports the first code issue when there are issues on duplicated lines on the same file. 
 </td>
 </tr>
+</tbody>
 </table>
 
-If you believe that you may have hit any of these limits and need help to overcome them, please contact us at <mailto:support@codacy.com>.
+If you believe that you may have hit any of these limits and need help to overcome them, please contact us at [support@codacy.com](mailto:support@codacy.com).
 
 ## See also
 

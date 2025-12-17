@@ -20,4 +20,4 @@ If you still can't see your organization on Codacy, follow the steps below to ch
 
     ![Revoking Codacy's OAuth integration](../../getting-started/images/revoke-integration.png)
 
-If these steps don't solve the issue, please contact us at <mailto:support@codacy.com>.
+If these steps don't solve the issue, please contact us at [support@codacy.com](mailto:support@codacy.com).

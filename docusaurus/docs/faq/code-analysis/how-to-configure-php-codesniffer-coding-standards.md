@@ -10,11 +10,11 @@ To enforce a specific PHP_CodeSniffer coding standard you must [create a configu
 
 -   Default coding standards packaged together with PHP_CodeSniffer:
 
-    <https://github.com/squizlabs/PHP_CodeSniffer/tree/master/src/Standards>
+	    [PHP_CodeSniffer coding standards](https://github.com/squizlabs/PHP_CodeSniffer/tree/master/src/Standards)
 
 -   Additional coding standards that Codacy packages on the PHP_CodeSniffer tool plugin. Check the repository the additional coding standards to learn how you can reference them in your configuration files:
 
-    <https://github.com/codacy/codacy-codesniffer/blob/master/composer.json>
+	    [codacy-codesniffer composer.json](https://github.com/codacy/codacy-codesniffer/blob/master/composer.json)
 
 For example, create a text file with the name `phpcs.xml` to use the PSR12 coding standard but excluding the sniffs `Generic.WhiteSpace.DisallowTabIndent` and `PSR12.Operators.OperatorSpacing`:
 

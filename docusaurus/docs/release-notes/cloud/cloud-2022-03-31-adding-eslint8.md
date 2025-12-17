@@ -41,4 +41,4 @@ ESLint 8 [introduces breaking changes](https://eslint.org/docs/latest/user-guide
       },
     ```
 
-If you have any questions or need help, please contact <mailto:support@codacy.com>.
+If you have any questions or need help, please contact [support@codacy.com](mailto:support@codacy.com).

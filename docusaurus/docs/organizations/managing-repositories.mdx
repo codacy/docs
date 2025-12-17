@@ -2,6 +2,7 @@
 title: Managing repositories
 ---
 
+import Paid from '../_includes/Paid.mdx';
 
 Users with the [necessary permissions on your Git provider](roles-and-permissions-for-organizations.md) can **add** repositories to Codacy to start analyzing them. The remaining organization members with access to the added repositories can then **follow** on Codacy the repositories of their interest.
 
@@ -28,11 +29,7 @@ The list also displays error and warning messages for repositories that have iss
 If you follow many repositories, you can use the search field above the list to <span class="skip-vale">quickly</span> find a specific repository.
 
 ## Adding a repository {#adding-a-repository}
-{%
-    include-markdown "../assets/includes/paid.md"
-    start="<!--paid-private-repositories-start-->"
-    end="<!--paid-private-repositories-end-->"
-%}
+<Paid variant="private-repositories" />
 
 Users with the [necessary permissions](roles-and-permissions-for-organizations.md) can add a repository to Codacy to start analyzing it.
 

@@ -80,15 +80,16 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
       <td>Read-Only</td>
       <td>Codacy retrieves information about organization members and teams to enforce permissions and user management.</td>
     </tr>
-    <tr>
-      <td colspan="3"><p><strong>User permissions:</strong></p>
-                      <p>These permissions are granted on an individual user basis as part of the user authorization flow. They will be also be displayed during account installation for transparency.</p></td>
-    </tr>
-    <tr>
-      <td>Email addresses</td>
-      <td>Read-Only</td>
-      <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</td>
-    </tr>
+	    <tr>
+	      <td colspan="3"><p><strong>User permissions:</strong></p>
+	                      <p>These permissions are granted on an individual user basis as part of the user authorization flow. They will be also be displayed during account installation for transparency.</p></td>
+	    </tr>
+	    </tr>
+	    <tr>
+	      <td>Email addresses</td>
+	      <td>Read-Only</td>
+	      <td>Codacy retrieves the user's email addresses to enforce which commits are eligible for analysis.</td>
+	    </tr>
   </tbody>
 </table>
 

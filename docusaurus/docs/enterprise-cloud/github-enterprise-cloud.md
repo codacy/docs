@@ -68,4 +68,4 @@ Currently, the integration between Codacy and GitHub Enterprise has the followin
 -   [How does Codacy support Bitbucket Cloud?](../faq/general/how-does-codacy-support-bitbucket-cloud.md)
 -   [How does Codacy support Bitbucket Server?](../faq/general/how-does-codacy-support-bitbucket-server.md)
 
-<br><br>
+<br /><br />

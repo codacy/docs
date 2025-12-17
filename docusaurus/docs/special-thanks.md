@@ -11,10 +11,10 @@ In addition to in-house built rules, we use open source tools for many of our st
 
 <table>
 <colgroup>
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
-<col style="width: 25%" />
+<col style={{width: '25%'}} />
+<col style={{width: '25%'}} />
+<col style={{width: '25%'}} />
+<col style={{width: '25%'}} />
 </colgroup>
 <tbody>
 <tr class="odd">
@@ -68,8 +68,8 @@ These are the tools integrated on Codacy by our own users! Without them, we woul
 
 <table>
 <colgroup>
-<col style="width: 50%" />
-<col style="width: 50%" />
+<col style={{width: '50%'}} />
+<col style={{width: '50%'}} />
 </colgroup>
 <thead>
 <tr>
@@ -87,7 +87,8 @@ These are the tools integrated on Codacy by our own users! Without them, we woul
 </td>
 </tr>
 <tr>
-<td><a href="https://elixir-lang.org/">Elixir</a>
+<td>
+<a href="https://elixir-lang.org/">Elixir</a>
 </td>
 <td>
 <a href="https://github.com/gerbal" class="skip-vale">Grant McLendon</a>
@@ -118,9 +119,9 @@ For all the people who helped us so much, we want to give a big shout out and th
 
 <table >
 <colgroup>
-<col style="width: 33%" />
-<col style="width: 33%" />
-<col style="width: 33%" />
+<col style={{width: '33%'}} />
+<col style={{width: '33%'}} />
+<col style={{width: '33%'}} />
 </colgroup>
 <tbody>
 <tr>

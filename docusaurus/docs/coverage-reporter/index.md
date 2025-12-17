@@ -24,7 +24,7 @@ Complete these main steps to set up coverage for your repository:
 
 The next sections include detailed instructions on how to complete each step of the setup process.
 
-## 1. Generating coverage reports {#generating-coverage}
+## 1. Generating coverage reports
 Before setting up Codacy to display code coverage metrics for your repository you must have tests and use tools to generate coverage reports for the source code files in your repository.
 
 Consider the following when generating coverage reports for your repository:
@@ -55,11 +55,7 @@ The following table contains example coverage tools that generate reports in for
 </tr>
 <tr>
     <td><a href="https://github.com/coverlet-coverage/coverlet">Coverlet</a></td>
-    <td>Make sure that you <a href="https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md#coverage-output">output the report files</a> in a supported format using one of the following file names:<br/>
-        <code>opencover.xml</code> (OpenCover)<br/>
-        <code>cobertura.xml</code> (Cobertura)<br/>
-        <code>lcov.info</code>, <code>lcov.dat</code>, <code>*.lcov</code> (LCOV)
-    </td>
+    <td>Make sure that you <a href="https://github.com/coverlet-coverage/coverlet/blob/master/Documentation/MSBuildIntegration.md#coverage-output">output the report files</a> in a supported format using one of the following file names:<br /><code>opencover.xml</code> (OpenCover)<br /><code>cobertura.xml</code> (Cobertura)<br /><code>lcov.info</code>, <code>lcov.dat</code>, <code>*.lcov</code> (LCOV)</td>
 </tr>
 <tr>
     <td>Go</td>
@@ -77,14 +73,14 @@ The following table contains example coverage tools that generate reports in for
 </tr>
 <tr>
     <td>JavaScript</td>
-    <td><a href="https://github.com/gotwarlost/istanbul">Istanbul</a><br/>
+    <td><a href="https://github.com/gotwarlost/istanbul">Istanbul</a><br />
         <a href="https://mochajs.org/">Mocha</a> + <a href="https://github.com/alex-seville/blanket">Blanket.js</a></td>
     <td><code>lcov.info</code>, <code>lcov.dat</code>, <code>*.lcov</code> (LCOV)</td>
 </tr>
 <tr>
     <td>PHP</td>
     <td><a href="https://phpunit.readthedocs.io/en/11.0/code-coverage.html">PHPUnit</a></td>
-    <td><code>coverage-xml/index.xml</code> (PHPUnit XML version &lt;= 4)<br/>
+    <td><code>coverage-xml/index.xml</code> (PHPUnit XML version &lt;= 4)<br />
         <code>clover.xml</code> (Clover)</td>
 </tr>
 <tr>
@@ -95,7 +91,7 @@ The following table contains example coverage tools that generate reports in for
 <tr>
     <td>Ruby</td>
     <td><a href="https://github.com/simplecov-ruby/simplecov">SimpleCov</a></td>
-    <td><code>cobertura.xml</code> (Cobertura)<br/>
+    <td><code>cobertura.xml</code> (Cobertura)<br />
         <code>lcov.info</code>, <code>lcov.dat</code>, <code>*.lcov</code> (LCOV)</td>
 </tr>
 <tr>
@@ -141,7 +137,7 @@ As a last resort, you can also send the coverage data directly by calling one of
 -   [<span class="skip-vale">saveCoverage</span>](https://api.codacy.com/swagger#savecoverage)
 -   [saveCoverageWithAccountToken](https://api.codacy.com/swagger#savecoveragewithaccounttoken)
 
-## 2. Uploading coverage data to Codacy {#uploading-coverage}
+## 2. Uploading coverage data to Codacy
 After having coverage reports set up for your repository, you must use the Codacy Coverage Reporter to upload them to Codacy. The recommended way to do this is by using a CI/CD platform that automatically runs tests, generates coverage, and then uses the Codacy Coverage Reporter to upload the coverage report information to Codacy.
 
 :::caution
@@ -159,7 +155,7 @@ However, the instructions on this page assume that you'll run the recommended [s
 
 :::
 
-1.  Set up an API token to allow Codacy Coverage Reporter to authenticate on Codacy: {#authenticate}
+1.  Set up an API token to allow Codacy Coverage Reporter to authenticate on Codacy:
     -   **If you're setting up coverage for one repository**, [obtain a repository API token](../codacy-api/api-tokens.md#repository-api-tokens) and set the following environment variable to specify your repository API token:
 
         ```bash
@@ -191,11 +187,11 @@ However, the instructions on this page assume that you'll run the recommended [s
     It's a best practice to store API tokens as environment variables. Check the documentation of your CI/CD platform on how to do this.
     :::
 
-1.  **If you're using Codacy Self-hosted** set the following environment variables to specify your Codacy instance URL and the Codacy Coverage Reporter version that's compatible with Codacy Self-hosted {{ extra.codacy_self_hosted_version }}:
+1.  **If you're using Codacy Self-hosted** set the following environment variables to specify your Codacy instance URL and the Codacy Coverage Reporter version that's compatible with your Codacy instance:
 
     ```bash
     export CODACY_API_BASE_URL=<your Codacy instance URL>
-    export CODACY_REPORTER_VERSION={{ extra.codacy_coverage_reporter_version }}
+    export CODACY_REPORTER_VERSION=<your Codacy Coverage Reporter version>
     ```
 
 1.  Run Codacy Coverage Reporter **on the root of the locally checked out branch of your Git repository**, specifying the relative path to the coverage report to upload:
@@ -210,7 +206,7 @@ However, the instructions on this page assume that you'll run the recommended [s
     Be sure to also check the [instructions for more advanced scenarios](uploading-coverage-in-advanced-scenarios.md) while uploading the coverage data to Codacy, such as when running parallel tests, using monorepos, or testing source code in multiple or unsupported languages.
     :::
 
-## 3. Validating that the coverage setup is complete {#validating-coverage}
+## 3. Validating that the coverage setup is complete
 Codacy displays the code coverage in each branch, as well as the evolution of code coverage between commits and the code coverage variation introduced by pull requests.
 
 Because of this, to ensure that all code coverage metrics are available on Codacy, you must have successfully uploaded coverage data and analyzed:
@@ -241,13 +237,13 @@ Follow these instructions to validate that your coverage setup is working correc
 
     If there are commits with a status different from **Processed**, please follow the troubleshooting instructions for the corresponding error status and click the button **Test integration** to display any new coverage reports uploaded to Codacy.
 
-    ### Commit not found {#status-commit-not-found}
+    ### Commit not found
     Codacy doesn't have information about the commit associated with the coverage data.
 
     <table>
     <colgroup>
-        <col style="width: 40%;"/>
-        <col style="width: 60%;"/>
+        <col style={{width: '40%'}} />
+        <col style={{width: '60%'}} />
     </colgroup>
     <thead>
     <tr>
@@ -272,16 +268,17 @@ Follow these instructions to validate that your coverage setup is working correc
         <td>
             Make sure that the Codacy Coverage Reporter <a href="troubleshooting-coverage-cli-issues/#commit-detection">detects the correct commit SHA-1 hash</a> for the uploaded coverage data.
         </td>
-    </tr>
-    </table>
+	    </tr>
+	    </tbody>
+	    </table>
 
-    ### Branch not enabled {#status-branch-not-enabled}
+    ### Branch not enabled
     The commit associated with the coverage data doesn't belong to any branch that Codacy is analyzing.
 
     <table>
     <colgroup>
-        <col style="width: 40%;"/>
-        <col style="width: 60%;"/>
+        <col style={{width: '40%'}} />
+        <col style={{width: '60%'}} />
     </colgroup>
     <thead>
     <tr>
@@ -307,15 +304,16 @@ Follow these instructions to validate that your coverage setup is working correc
             The error status is expected in this scenario and you can ignore it.
         </td>
     </tr>
+    </tbody>
     </table>
 
-    ### Commit not analyzed {#status-commit-not-analyzed}
+    ### Commit not analyzed
     Due to technical limitations, Codacy only reports coverage for a commit after successfully completing the static code analysis of that commit.
 
     <table>
     <colgroup>
-        <col style="width: 40%;"/>
-        <col style="width: 60%;"/>
+        <col style={{width: '40%'}} />
+        <col style={{width: '60%'}} />
     </colgroup>
     <thead>
     <tr>
@@ -364,15 +362,16 @@ Follow these instructions to validate that your coverage setup is working correc
             Solve the issue that caused the analysis to fail (such as <a href="../faq/troubleshooting/we-no-longer-have-access-to-this-repository/">Codacy losing access to the repository</a>), or contact us at <a href="mailto:support@codacy.com">support@codacy.com</a> asking for help.
         </td>
     </tr>
+    </tbody>
     </table>
 
-    ### Final report not sent {#status-final-report-not-sent}
+    ### Final report not sent
     Codacy is waiting to receive more coverage data before reporting the coverage for a commit.
 
     <table>
     <colgroup>
-        <col style="width: 40%;"/>
-        <col style="width: 60%;"/>
+        <col style={{width: '40%'}} />
+        <col style={{width: '60%'}} />
     </colgroup>
     <thead>
     <tr>
@@ -388,16 +387,17 @@ Follow these instructions to validate that your coverage setup is working correc
         <td>
             Make sure that after uploading all partial reports you <a href="uploading-coverage-in-advanced-scenarios/#multiple-reports-sequence">send the <code>final</code> notification</a>.
         </td>
-    </tr>
-    </table>
+	    </tr>
+	    </tbody>
+	    </table>
 
-    ### Pending {#status-pending}
+    ### Pending
     Codacy is waiting to receive valid coverage data for the files in your repository.
 
     <table>
     <colgroup>
-        <col style="width: 40%;"/>
-        <col style="width: 60%;"/>
+        <col style={{width: '40%'}} />
+        <col style={{width: '60%'}} />
     </colgroup>
     <thead>
     <tr>
@@ -429,8 +429,9 @@ Follow these instructions to validate that your coverage setup is working correc
         <td>
             Verify that you are associating the correct language, or don't specify a language to let Codacy detect the contents of the coverage reports automatically. See <a href="uploading-coverage-in-advanced-scenarios/">how to upload coverage in advanced scenarios</a> for more information.
         </td>
-    </tr>
-    </table>
+	    </tr>
+	    </tbody>
+	    </table>
 
 1.  Check that Codacy displays the coverage metrics for the latest commits and pull requests.
 
@@ -440,8 +441,8 @@ Follow these instructions to validate that your coverage setup is working correc
 
     | Commit | Required to calculate the coverage metrics |
     |--------|-----------------------------|
-    |**Head commit**<br/>of the pull request branch | Coverage variation<br/></br>Diff coverage |
-    |**Common ancestor commit**<br/>of the pull request and target branches | Coverage variation |
+    |**Head commit**<br />of the pull request branch | Coverage variation<br />Diff coverage |
+    |**Common ancestor commit**<br />of the pull request and target branches | Coverage variation |
 
     The following diagram highlights the commits that must receive coverage data for Codacy to calculate the coverage metrics for pull requests:
 
@@ -452,7 +453,7 @@ Follow these instructions to validate that your coverage setup is working correc
     ![Logs showing the pull request commits that are missing coverage data](images/coverage-codacy-ui-logs.png)
 
 :::note[Need help?]
-If you need help setting up coverage on your repository please contact us at <mailto:support@codacy.com> including the following information:
+If you need help setting up coverage on your repository please contact us at [support@codacy.com](mailto:support@codacy.com) including the following information:
 
 -   URL of your repository on Codacy
 -   Your CI/CD configuration files and the name of your CI/CD platform

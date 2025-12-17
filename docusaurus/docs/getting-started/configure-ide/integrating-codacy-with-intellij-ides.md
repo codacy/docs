@@ -18,13 +18,13 @@ In the main view, you can find the following information:
 
 -   The **Status** of the pull request, either up to standards or not up to standards, based on the [Gates](../repositories-configure/adjusting-quality-gates.md) set for the repository.
 
--   Any **issues** introduced or fixed by the pull request. These are the same issues you find in the [Issues tabs](../repositories/pull-requests.md#issues-tabs) in the Codacy app and are also visible in IntelliJ's Problems tab.
+-   Any **issues** introduced or fixed by the pull request. These are the same issues you find in the [Issues tabs](../repositories/pull-requests.mdx#issues-tabs) in the Codacy app and are also visible in IntelliJ's Problems tab.
 
     When this item is expanded, the number next to each file name is the total number of issues that the pull request adds to that file.
 
 -   The **diff coverage** introduced by the pull request. The percentage next to each file name is the coverage variation for that file.
 
--   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
+-   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Duplication tabs](../repositories/pull-requests.mdx#duplication-tabs) in the Codacy app.
 
 -   Variations in **code complexity** introduced by the pull request.
 

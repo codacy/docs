@@ -13,7 +13,7 @@ By default, Codacy does normal Git clones that **don't include submodules** to e
 
 ## Prerequisites for using submodules
 
-1.  Contact us at <mailto:support@codacy.com> asking to enable submodules on Codacy.
+1.  Contact us at [support@codacy.com](mailto:support@codacy.com) asking to enable submodules on Codacy.
 
 1.  **If you're using Codacy Self-hosted**, [update your license](../chart/maintenance/license.md).
 

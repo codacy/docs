@@ -20,7 +20,7 @@ Each organization on Codacy has a dedicated plan and associated billing. To make
 
 -   **To make changes** to your Pro plan or invoice details click **Edit plan details** or click **Edit invoice details**
 
-If you have any questions or need help with your account, please contact <mailto:support@codacy.com>.
+If you have any questions or need help with your account, please contact [support@codacy.com](mailto:support@codacy.com).
 
 ## Allowing new people to join your organization
 

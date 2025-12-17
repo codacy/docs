@@ -13,7 +13,7 @@ To obtain your Codacy badge, open your repository **Settings**, tab **General**,
 
 ![Codacy badge](images/codacy-badge.png)
 
-To display the grade or code coverage information of a [different branch](../repositories-configure/managing-branches.md) analyzed by Codacy, append `?branch=<branch_name>` to the URL of the badge. For example:
+To display the grade or code coverage information of a [different branch](../repositories-configure/managing-branches.mdx) analyzed by Codacy, append `?branch=<branch_name>` to the URL of the badge. For example:
 
 ```text
 https://app.codacy.com/project/badge/Grade/cba8fd0874ac4f569f4f880e473cbac9?branch=dev

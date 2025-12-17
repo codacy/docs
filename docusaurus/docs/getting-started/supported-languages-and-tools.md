@@ -26,18 +26,18 @@ The table below lists all languages that Codacy supports and the corresponding t
 Codacy runs security and other analysis tools when code changes are pushed to your repositories. These tools don't scan code for issues continuously.
 :::
 
-<table style="font-size: .5rem;">
+<table style={{fontSize: '.5rem'}}>
   <thead>
     <tr>
       <th>Language</th>
       <th>File extensions</th>
-      <th><a style="color: white;text-decoration: underline;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Static analysis</a></th>
-      <th><a style="color: white;text-decoration: underline;" href="#suggest-fixes">Suggested fixes</a></th>
+      <th><a style={{color: 'white', textDecoration: 'underline'}} href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#issues">Static analysis</a></th>
+      <th><a style={{color: 'white', textDecoration: 'underline'}} href="#suggest-fixes">Suggested fixes</a></th>
       <th>Secret detection</th>
       <th>Dependency vulnerability scanning</th>
-      <th>Malicious packages detection <a style="color: white;text-decoration: underline;" href="#malicious-packages-detection"><sup>11</sup></a></th>
-      <th><a style="color: white;text-decoration: underline;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">Duplication</a></th>
-      <th><a style="color: white;text-decoration: underline;" href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">Complexity</a></th>
+      <th>Malicious packages detection <a style={{color: 'white', textDecoration: 'underline'}} href="#malicious-packages-detection"><sup>11</sup></a></th>
+      <th><a style={{color: 'white', textDecoration: 'underline'}} href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#duplication">Duplication</a></th>
+      <th><a style={{color: 'white', textDecoration: 'underline'}} href="../../faq/code-analysis/which-metrics-does-codacy-calculate/#complexity">Complexity</a></th>
       <th>License scanning</th>
     </tr>
   </thead>
@@ -103,7 +103,7 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>conan.lock</code> (Conan) </td>
       <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
@@ -119,7 +119,7 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>conan.lock</code> (Conan) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>conan.lock</code> (Conan) </td>
       <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
@@ -133,7 +133,7 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>.deps.json</code> (.Net), <code>packages.lock.json</code> (NuGet) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>.deps.json</code> (.Net), <code>packages.lock.json</code> (NuGet) </td>
       <td><a href="https://trivy.dev">Trivy</a>, scans <code>packages.lock.json</code> for malicious packages published in <a href="https://www.nuget.org/">NuGet</a> </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
@@ -181,7 +181,7 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       <td><a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a> <a href="#dart-limitations"><sup>5</sup></a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pubspec.lock</code></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>pubspec.lock</code></td>
       <td>-</td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td>-</td>
@@ -208,7 +208,7 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
           <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td>-</td>
       <td><a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>mix.lock</code> (Mix) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>mix.lock</code> (Mix) </td>
       <td>-</td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td>-</td>
@@ -239,8 +239,8 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>go.mod</code></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>go.mod</code> for malicious packages published in <a href="https://github.com">github.com</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>go.mod</code></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>go.mod</code> for malicious packages published in <a href="https://github.com">github.com</a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -257,20 +257,19 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       <td>-</td>
       <td>-</td>
     </tr>
-    <tr>
-      <td>Helm</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>,
-          <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-      <td>-</td>
-    </tr>
+	    <tr>
+	      <td>Helm</td>
+	      <td>-</td>
+	      <td>-</td>
+	      <td>-</td>
+	      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#yaml-only"><sup>2</sup></a>, <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
+	      <td>-</td>
+	      <td>-</td>
+	      <td>-</td>
+	      <td>-</td>
+	      <td>-</td>
+	      <td>-</td>
+	    </tr>
     <tr>
       <td>Java</td>
       <td>.java</td>
@@ -282,8 +281,8 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       <td><a href="https://pmd.github.io/">PMD</a>,
           <a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code> for malicious packages published in <a href="https://maven.apache.org/">maven</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>pom.xml</code> and <code>gradle.lockfile</code></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>pom.xml</code> and <code>gradle.lockfile</code> for malicious packages published in <a href="https://maven.apache.org/">maven</a></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -297,11 +296,11 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> for malicious packages published in <a href="https://www.npmjs.com/">npm</a> </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>package.json</code> and <code>package-lock.json</code> (npm), <br /><code>yarn.lock</code> (Yarn) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>package.json</code> and <code>package-lock.json</code> for malicious packages published in <a href="https://www.npmjs.com/">npm</a> </td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package-lock.json</code> (npm)</td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>package-lock.json</code> (npm)</td>
     </tr>
     <tr>
       <td>JSON</td>
@@ -338,8 +337,8 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       </td>
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>pom.xml</code> and <code>gradle.lockfile</code> for malicious packages published in <a href="https://maven.apache.org/">maven</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>pom.xml</code> and <code>gradle.lockfile</code></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>pom.xml</code> and <code>gradle.lockfile</code> for malicious packages published in <a href="https://maven.apache.org/">maven</a></td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/detekt/detekt">detekt</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td>-</td>
@@ -416,11 +415,11 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>composer.lock</code> (Composer) </td>
       <td>-</td>
       <td><a href="https://github.com/sebastianbergmann/phpcpd">PHPCPD</a></td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>composer.lock</code> (Composer) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>composer.lock</code> (Composer) </td>
     </tr>
     <tr>
       <td>PL/SQL</td>
@@ -478,32 +477,27 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
         <a href="https://trivy.dev">Trivy</a>
       </td>
       <td>
-        <a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)
+        <a href="https://trivy.dev">Trivy</a>, scans <br /><code>requirements.txt</code> (pip), <br /><code>Pipfile.lock</code> (pipenv), <br /><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)
       </td>
       <td>
-        <a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv) <br>for malicious packages published in <a href="https://pypi.org/">PyPI</a>
+        <a href="https://trivy.dev">Trivy</a>, scans <br /><code>requirements.txt</code> (pip), <br /><code>Pipfile.lock</code> (pipenv) <br />for malicious packages published in <a href="https://pypi.org/">PyPI</a>
       </td>
       <td>
         <a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a>
         <a href="#different-tools"><sup>10</sup></a>
       </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>requirements.txt</code> (pip), <br><code>Pipfile.lock</code> (pipenv), <br><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)</td> 
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>requirements.txt</code> (pip), <br /><code>Pipfile.lock</code> (pipenv), <br /><code>poetry.lock</code> (Poetry), <code>uv.lock</code> (UV)</td> 
     </tr>
     <tr>
       <td>Ruby</td>
       <td>.rb, .gemspec, .podspec, .jbuilder, .rake, .opal</td>
-      <td><a href="https://github.com/troessner/reek">Reek</a>,
-          <a href="https://brakemanscanner.org/">Brakeman</a>
-          <a href="#semgrep-brakeman"><sup>7</sup></a>,
-          <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>
-      </td>
+      <td><a href="https://github.com/troessner/reek">Reek</a>, <a href="https://brakemanscanner.org/">Brakeman</a> <a href="#semgrep-brakeman"><sup>7</sup></a>, <a href="https://github.com/rubocop/rubocop">RuboCop</a>, <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Gemfile.lock</code> (Bundler) </td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Gemfile.lock</code> for malicious packages published in <a href="https://rubygems.org">rubygems.org</a> </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>Gemfile.lock</code> (Bundler) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>Gemfile.lock</code> for malicious packages published in <a href="https://rubygems.org">rubygems.org</a> </td>
       <td><a href="https://github.com/seattlerb/flay">Flay</a></td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -515,8 +509,8 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Cargo.lock</code> (Cargo) </td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Cargo.lock</code> for malicious packages published in <a href="https://crates.io">crates.io</a> </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>Cargo.lock</code> (Cargo) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>Cargo.lock</code> for malicious packages published in <a href="https://crates.io">crates.io</a> </td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -543,8 +537,8 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>build.sbt.lock</code> (sbt) <a href="#scala-dependencies"><sup>9</sup></a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>build.sbt.lock</code> for malicious packages published in <a href="https://maven.apache.org/">maven</a> <a href="#scala-dependencies"><sup>9</sup></a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>build.sbt.lock</code> (sbt) <a href="#scala-dependencies"><sup>9</sup></a></td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>build.sbt.lock</code> for malicious packages published in <a href="https://maven.apache.org/">maven</a> <a href="#scala-dependencies"><sup>9</sup></a></td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
       <td>-</td>
@@ -585,7 +579,7 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       <td>-</td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>Package.resolved</code> (SwiftPM) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>Package.resolved</code> (SwiftPM) </td>
       <td>-</td>
       <td><a href="https://pmd.github.io/pmd/pmd_userdocs_cpd.html">PMD CPD</a> <a href="#different-tools"><sup>10</sup></a> </td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
@@ -644,11 +638,11 @@ Codacy runs security and other analysis tools when code changes are pushed to yo
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://semgrep.dev/">Semgrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> (npm), <br><code>yarn.lock</code> (Yarn) </td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package.json</code> and <code>package-lock.json</code> for malicious packages published in <a href="https://www.npmjs.com/">npm</a> </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>package.json</code> and <code>package-lock.json</code> (npm), <br /><code>yarn.lock</code> (Yarn) </td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>package.json</code> and <code>package-lock.json</code> for malicious packages published in <a href="https://www.npmjs.com/">npm</a> </td>
       <td><a href="https://github.com/kucherenko/jscpd">jscpd</a></td>
       <td><a href="https://github.com/terryyin/lizard">Lizard</a></td>
-      <td><a href="https://trivy.dev">Trivy</a>, scans <br><code>package-lock.json</code> (npm)</td>
+      <td><a href="https://trivy.dev">Trivy</a>, scans <br /><code>package-lock.json</code> (npm)</td>
     </tr>
     <tr>
       <td>Unity</td>

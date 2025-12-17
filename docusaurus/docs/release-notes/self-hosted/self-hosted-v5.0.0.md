@@ -36,7 +36,7 @@ This version of Codacy Self-hosted introduces the following breaking changes:
 -   Dropped support for legacy manual organizations.
 
     :::caution
-    **If you're using legacy manual organizations** please contact <mailto:support@codacy.com> before upgrading to Codacy Self-hosted 5.0.0 or above so that <span class="skip-vale">we</span> can assist you with migrating your legacy organizations.
+    **If you're using legacy manual organizations** please contact [support@codacy.com](mailto:support@codacy.com) before upgrading to Codacy Self-hosted 5.0.0 or above so that <span class="skip-vale">we</span> can assist you with migrating your legacy organizations.
     :::
 
 -   The Codacy components `codacy-activities`, `hotspots-api`, and `hotspots-worker` are no longer needed and were removed.

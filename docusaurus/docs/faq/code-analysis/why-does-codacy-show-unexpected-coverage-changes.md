@@ -54,11 +54,13 @@ Based on the information obtained from the coverage reports, Codacy calculates c
 
 -   The **coverage** for a file, commit, or pull request is the percentage of covered lines in the universe of coverable lines for that file, commit, or pull request. For example, a commit with 85 covered lines out of a total of 100 coverable lines has 85% coverage.
 
-{%
-    include-markdown "./which-metrics-does-codacy-calculate.md"
-    start="<!--code-coverage-metrics-start-->"
-    end="<!--code-coverage-metrics-end-->"
-%}
+-   The **coverage variation** of a commit or pull request is the increase or drop in the percentage of coverable lines that are covered by tests in the repository because of the changes of the commit or pull request.
+-   The **diff coverage** of a pull request is the percentage of **coverable lines** that the pull request **added or modified** that are covered by tests.
+
+    If a pull request doesn't add or modify any coverable lines, the diff coverage is `∅` (not applicable). This scenario happens when the only changes in a pull request are:
+
+    -   Deleted lines
+    -   Added or modified lines that aren't coverable
 
 :::caution
 Note that changes external to a source code file can affect the lines that are or aren't covered in that file.
@@ -189,7 +191,7 @@ The table below displays the code coverage metrics as calculated by Codacy:
       <th>Covered<br/>lines</th>
       <th class="border">Coverage</th>
       <th>Coverage variation</th>
-      <th>Diff coverage</td>
+      <th>Diff coverage</th>
     </tr>
   </thead>
   <tbody>
@@ -373,34 +375,3 @@ The table below displays the code coverage metrics as calculated by Codacy:
 
 -   [Which metrics does Codacy calculate?](which-metrics-does-codacy-calculate.md#code-coverage)
 -   [Adding coverage to your repository](../../coverage-reporter/index.md)
-
-<style>
-/*Center text*/
-.center {
-  text-align: center !important;
-}
-
-/*Right border*/
-th.border {
-  border-right: 1px solid white;
-}
-
-.border {
-  border-right: 1px solid var(--md-default-fg-color--light);
-}
-
-/*Red background*/
-.background-red {
-  background-color: #ffe6e6;
-}
-
-/*Green text*/
-.text-green {
-  color: #21c178;
-}
-
-/*Red text*/
-.text-red {
-  color: #ef5454;
-}
-</style>

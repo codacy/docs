@@ -26,7 +26,7 @@ The **Pull request status** tab displays the following information for the pull 
 
 -   The **Status** of the pull request, either up to standards or not up to standards, based on the [Gates](../repositories-configure/adjusting-quality-gates.md) set for the repository.
 
--   Any **issues** introduced or fixed by the pull request. These are the same issues you find in the [Issues tabs](../repositories/pull-requests.md#issues-tabs) in the Codacy app and are also visible in VS Code's Problems tab.
+-   Any **issues** introduced or fixed by the pull request. These are the same issues you find in the [Issues tabs](../repositories/pull-requests.mdx#issues-tabs) in the Codacy app and are also visible in VS Code's Problems tab.
 
     When this item is expanded, the number next to each file name is the total number of issues that the pull request adds to or removes from that file. The number farther to the right, added by VS Code, is the total number of problems in that file, which may or may not be issues from Codacy. If there are any Medium or Critical issues, the file name is also highlighted in yellow (Medium) or red (Critical).
 
@@ -38,7 +38,7 @@ The **Pull request status** tab displays the following information for the pull 
 
     ![Toggle inline coverage](./../images/codacy-vscode-extension-inline-coverage.png)
 
--   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
+-   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Duplication tabs](../repositories/pull-requests.mdx#duplication-tabs) in the Codacy app.
 
 -   Variations in **code complexity** introduced by the pull request.
 
@@ -58,11 +58,11 @@ The **Open Pull Requests** tab lists all open pull requests for the repository, 
 
 -   The source and target branches of the pull request.
 
--   Any **issues** introduced or fixed by the pull request. These are the same issues you find in the [Issues tabs](../repositories/pull-requests.md#issues-tabs) in the Codacy app.
+-   Any **issues** introduced or fixed by the pull request. These are the same issues you find in the [Issues tabs](../repositories/pull-requests.mdx#issues-tabs) in the Codacy app.
 
--   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Duplication tabs](../repositories/pull-requests.md#duplication-tabs) in the Codacy app.
+-   Sequences of **duplicate code** (clones) introduced by the pull request. These are the same ones you find in the [Duplication tabs](../repositories/pull-requests.mdx#duplication-tabs) in the Codacy app.
 
--   Variations in **code complexity** introduced by the pull request. This is the same value you find on the [Pull request quality overview](../repositories/pull-requests.md#quality-overview) in the Codacy app.
+-   Variations in **code complexity** introduced by the pull request. This is the same value you find on the [Pull request quality overview](../repositories/pull-requests.mdx#quality-overview) in the Codacy app.
 
 ### Analyzed branch tab
 
@@ -70,7 +70,7 @@ The **Open Pull Requests** tab lists all open pull requests for the repository, 
 
 The **Analyzed Branch** tab appears if you switch to an analyzed branch that doesn't have an open pull request, such as the `main` or `master` branch. This tab shows an overview of the issues found in that branch, grouped by recently added, introduced by the current user, issue category, and issue severity.
 
-See [how to manage the analysis of your repository's branches](../repositories-configure/managing-branches.md).
+See [how to manage the analysis of your repository's branches](../repositories-configure/managing-branches.mdx).
 
 ## Installing the Codacy VS Code extension
 

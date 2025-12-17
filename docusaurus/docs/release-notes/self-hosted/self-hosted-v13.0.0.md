@@ -8,7 +8,7 @@ codacy_tools_version_new: https://github.com/codacy/codacy-tools-sh/releases/tag
 ---
 
 
-These release notes are for [Codacy Self-hosted v13.0.0](https://github.com/codacy/chart/releases/tag/13.0.0){: target="_blank"}, released on November 23, 2023.
+These release notes are for [Codacy Self-hosted v13.0.0](https://github.com/codacy/chart/releases/tag/13.0.0), released on November 23, 2023.
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
@@ -43,7 +43,7 @@ Although [ingress-nginx chart 4.8.3 officially supports](https://github.com/kube
 -   If you applied **custom configurations** to ingress-nginx different from the Codacy's `values-nginx.yaml` file, follow the [ingress-nginx documentation](https://artifacthub.io/packages/helm/ingress-nginx/ingress-nginx/4.8.3) to upgrade your installation.
 -   If your NGINX Ingress Controller is shared by other components out of Codacy's installation scope, check those components documentation to evaluate the impact of this upgrade.
 
-If you have any questions regarding the above scenarios or need help, please contact <mailto:support@codacy.com>.
+If you have any questions regarding the above scenarios or need help, please contact [support@codacy.com](mailto:support@codacy.com).
 
 :::
 
@@ -96,7 +96,7 @@ To continue analyzing your repositories, enable the replacement tool for the cor
 
 The suggested replacement tools are enabled by default for new repositories, except for Clang Tidy, which is a [client-side tool](https://docs.codacy.com/v13.0/related-tools/local-analysis/client-side-tools/).
 
-If you have any questions or need help, please contact <mailto:support@codacy.com>.
+If you have any questions or need help, please contact [support@codacy.com](mailto:support@codacy.com).
 
 ## Tool versions
 

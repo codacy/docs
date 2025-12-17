@@ -17,4 +17,4 @@ To continue monitoring your repositories for vulnerable Ruby gems, enable the **
 
 For new repositories, **Trivy** will be active by default.
 
-If you have any questions or need help, please contact <mailto:support@codacy.com>.
+If you have any questions or need help, please contact [support@codacy.com](mailto:support@codacy.com).

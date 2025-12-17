@@ -46,7 +46,7 @@ The table below describes the supported client-side tools and includes links to 
 <colgroup>
 <col/>
 <col/>
-<col style="width: 45%" />
+<col style={{width: '45%'}} />
 <col/>
 </colgroup>
 <thead>
@@ -97,12 +97,13 @@ The table below describes the supported client-side tools and includes links to 
         <td>Clang-tidy is a clang-based C++ "linter" tool. Its purpose is to provide an extensible framework for diagnosing and fixing typical programming errors, like style violations, interface misuse, or bugs that can be deduced via static analysis. Clang-tidy is modular and provides a convenient interface for writing new checks.</td>
         <td><a href="https://github.com/codacy/codacy-clang-tidy#usage">Running Clang-Tidy</a> (standalone)</td>
     </tr>
-    <tr>
-        <td>Unity</td>
-        <td><a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a></td>
-        <td>Unity-specific diagnostics for CSharp Unity projects.</td>
-        <td><a href="https://github.com/codacy/codacy-roslyn#usage">Running Unity Roslyn Analyzers</a> (standalone)</td>
-    </tr>
+	    <tr>
+	        <td>Unity</td>
+	        <td><a href="https://github.com/microsoft/Microsoft.Unity.Analyzers">Unity Roslyn Analyzers</a></td>
+	        <td>Unity-specific diagnostics for CSharp Unity projects.</td>
+	        <td><a href="https://github.com/codacy/codacy-roslyn#usage">Running Unity Roslyn Analyzers</a> (standalone)</td>
+	    </tr>
+	</tbody>
 </table>
 
 ## See also

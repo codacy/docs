@@ -4,12 +4,9 @@ rss_title: Codacy release notes RSS feed
 rss_href: /feed_rss_created.xml
 ---
 
+import CoverageGithubAcceptPermissions from '../../_includes/CoverageGithubAcceptPermissions.mdx';
 
-{%
-    include-markdown "../../assets/includes/coverage-github-accept-permissions.md"
-    start="<!--accept-permission-start-->"
-    end="<!--accept-permission-end-->"
-%}
+<CoverageGithubAcceptPermissions />
 
 As part of an ongoing effort to improve the speed and value of the insights provided by Codacy, we've been working on a new Coverage engine and started its deployment on November 23rd, 2023. The rollout to use the new engine across Codacy will be phased across several months and will gradually impact the coverage data you see on the Git provider, UI, and API.
 
@@ -27,7 +24,7 @@ Please refer to the table below for the updated status of the transition process
       <td rowspan="2">Git providers</td>
       <td><a href="#status-checks">Git provider status checks</a></td>
       <td>Live</td>
-      <td>The new Coverage engine now sends coverage data to your Git provider.<br>Codacy stopped sending coverage checks from the old Coverage engine on June 5th, 2024.</td>
+	      <td>The new Coverage engine now sends coverage data to your Git provider.<br />Codacy stopped sending coverage checks from the old Coverage engine on June 5th, 2024.</td>
     </tr>
     <tr>
       <td><a href="#coverage-summaries">GitHub coverage summaries</a></td>
@@ -119,18 +116,14 @@ If you are using the old status check to block merging pull requests on GitHub, 
 :::note[This section applies to the repositories for which you set Codacy to post [coverage summaries](../../repositories-configure/integrations/github-integration.md#coverage-summaries) to your GitHub pull requests]
 :::
 
-{%
-    include-markdown "../../assets/includes/coverage-github-accept-permissions.md"
-    start="<!--accept-permission-start-->"
-    end="<!--accept-permission-end-->"
-%}
+<CoverageGithubAcceptPermissions />
 
 On December 7th 2023, the new Coverage engine started posting coverage summaries to GitHub, replacing the old Coverage engine.
 
 ## New Coverage engine side effects
 
 ### Missing data on the Coverage Pull request page {#differences-in-coverage-metrics-between-the-coverage-and-quality-pull-request-pages}
-You may notice missing coverage data on the Coverage Pull requests page for older pull requests when compared to the coverage data shown on the [Quality Pull requests page](../../repositories/pull-requests.md). This may happen due to a number of reasons:
+You may notice missing coverage data on the Coverage Pull requests page for older pull requests when compared to the coverage data shown on the [Quality Pull requests page](../../repositories/pull-requests.mdx). This may happen due to a number of reasons:
 
 -   GitHub only: The new Coverage service requires updated app permissions to calculate coverage data. If you haven't done so yet, [review and accept the updated Codacy app permissions](https://docs.github.com/en/enterprise-cloud@latest/apps/using-github-apps/reviewing-and-modifying-installed-github-apps#reviewing-permissions) on GitHub and re-analyze the pull request by pushing an empty commit.
 

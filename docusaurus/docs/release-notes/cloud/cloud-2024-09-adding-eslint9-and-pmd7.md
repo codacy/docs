@@ -19,7 +19,7 @@ ESLint 9 [introduces breaking changes](https://eslint.org/blog/2024/04/eslint-v9
 
 **If you're using the following [ESLint configuration files](https://eslint.org/docs/user-guide/configuring/configuration-files) ".eslintrc.js", ".eslintrc.cjs", ".eslintrc.yaml", ".eslintrc.yml", ".eslintrc.json"** you must update your configuration file before enabling ESLint 9 on Codacy because the only **[ESLint configuration files](https://eslint.org/docs/user-guide/configuring/configuration-files) supported are "eslint.config.js", "eslint.config.mjs", "eslint.config.cjs" and you can check how to create them [here](https://eslint.org/docs/latest/use/configure/configuration-files)**
 
-If you have any questions or need help, please contact <mailto:support@codacy.com>.
+If you have any questions or need help, please contact [support@codacy.com](mailto:support@codacy.com).
 
 ## PMD 7
 
@@ -27,4 +27,4 @@ PMD 7 [introduces some changes](https://pmd.github.io/2024/03/22/PMD-7-is-here/)
 
 **PMD 7 now supports Kotlin, Swift and TypeScript, apart from the other languages already part of the previous version of the tool**
 
-If you have any questions or need help, please contact <mailto:support@codacy.com>.
+If you have any questions or need help, please contact [support@codacy.com](mailto:support@codacy.com).

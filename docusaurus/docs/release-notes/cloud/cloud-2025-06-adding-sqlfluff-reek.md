@@ -31,4 +31,4 @@ This makes it easier to maintain high-quality Ruby code and improve overall desi
 
 None of these tools will be enabled by default: Due to the potential volume of new issues reported, SQLFluff or Reek are not enabled by default on existing repositories. You can enable them manually in your repository settings.
 
-If you have any questions or need help, please contact <mailto:support@codacy.com>.
+If you have any questions or need help, please contact [support@codacy.com](mailto:support@codacy.com).

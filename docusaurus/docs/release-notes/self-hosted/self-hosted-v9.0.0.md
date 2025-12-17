@@ -8,7 +8,7 @@ codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/6.
 ---
 
 
-These release notes are for [Codacy Self-hosted v9.0.0](https://github.com/codacy/chart/releases/tag/9.0.0){: target="_blank"}, released on September 23, 2022.
+These release notes are for [Codacy Self-hosted v9.0.0](https://github.com/codacy/chart/releases/tag/9.0.0), released on September 23, 2022.
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
 
@@ -33,7 +33,7 @@ To upgrade PostgreSQL:
 
 1.  Follow the instructions on [how to upgrade a PostgreSQL cluster](https://www.postgresql.org/docs/10/upgrading.html).
 
-1.  After the upgrade, clean the Codacy databases with [vacuumdb](https://www.postgresql.org/docs/10/app-vacuumdb.html) to prevent the <span class="skip-vale">autovacuum</a> feature from momentarily affecting the performance of the databases at a later time.
+1.  After the upgrade, clean the Codacy databases with [vacuumdb](https://www.postgresql.org/docs/10/app-vacuumdb.html) to prevent the <span class="skip-vale">autovacuum</span> feature from momentarily affecting the performance of the databases at a later time.
 
 :::caution
 If you download and use an updated `values-production.yaml` file while upgrading to Codacy Self-hosted 9.0.0, the upgrade will fail because the MinIO PVC can't be resized.

@@ -24,18 +24,18 @@ Depending on certain characteristics of your repository, such as the number of s
 
 Codacy assigns an overall grade to your repository branches and to individual files to help you assess the code quality of your repository. Grades represent a weighted average of the available code quality metrics (issues, complexity, duplication, and coverage), and range from **A** to **F**:
 
-<table>
-  <tr>
-    <td>Highest grade</td>
-    <td><img src="../images/grade_a.png" alt="Grade A"></td>
-    <td><img src="../images/grade_b.png" alt="Grade B"></td>
-    <td><img src="../images/grade_c.png" alt="Grade C"></td>
-    <td><img src="../images/grade_d.png" alt="Grade D"></td>
-    <td><img src="../images/grade_e.png" alt="Grade E"></td>
-    <td><img src="../images/grade_f.png" alt="Grade F"></td>
-    <td>Lowest grade</td>
-  </tr>
-</table>
+	<table>
+	  <tr>
+	    <td>Highest grade</td>
+	    <td><img src="../images/grade_a.png" alt="Grade A" /></td>
+	    <td><img src="../images/grade_b.png" alt="Grade B" /></td>
+	    <td><img src="../images/grade_c.png" alt="Grade C" /></td>
+	    <td><img src="../images/grade_d.png" alt="Grade D" /></td>
+	    <td><img src="../images/grade_e.png" alt="Grade E" /></td>
+	    <td><img src="../images/grade_f.png" alt="Grade F" /></td>
+	    <td>Lowest grade</td>
+	  </tr>
+	</table>
 
 Codacy displays grades on the following places:
 
@@ -70,7 +70,7 @@ Codacy displays issues on the following places:
 
 |Place|Metric|
 |-----|------|
-|[Commit detail page](../../repositories/commits.md)<br/>[Pull request detail page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of new and fixed issues introduced by the commit or pull request|
+|[Commit detail page](../../repositories/commits.mdx)<br/>[Pull request detail page](../../repositories/pull-requests.mdx)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of new and fixed issues introduced by the commit or pull request|
 |[Files page](../../repositories/files.md)|Number of issues in each file|
 |[Issues page](../../repositories/issues.md)|List of all issues detected in each branch|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Issues per 1000 lines of code|
@@ -91,7 +91,7 @@ Codacy displays complexity on the following places:
 
 |Place|Metric|
 |-----|------|
-|[Commit detail page](../../repositories/commits.md)<br/>[Pull request detail page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|The complexity variation introduced by a commit or pull request is calculated by summing the complexity differences of all changed files where the difference is 4 or more.
+|[Commit detail page](../../repositories/commits.mdx)<br/>[Pull request detail page](../../repositories/pull-requests.mdx)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|The complexity variation introduced by a commit or pull request is calculated by summing the complexity differences of all changed files where the difference is 4 or more.
 |[Files page](../../repositories/files.md)|The file complexity value is the sum of the complexity values of all methods defined within the file|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Percentage of complex files in your repository and how the metric is evolving over time|
 |[Organization overview](../../organizations/organization-overview.md)|Average percentage of complex files in the repositories in your organization and percentage of complex files in each repository|
@@ -115,7 +115,7 @@ Codacy displays duplication on the following places:
 
 |Place|Metric|
 |-----|------|
-|[Commit detail page](../../repositories/commits.md)<br/>[Pull request detail page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of clones added or fixed by a commit or pull request|
+|[Commit detail page](../../repositories/commits.mdx)<br/>[Pull request detail page](../../repositories/pull-requests.mdx)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of clones added or fixed by a commit or pull request|
 |[Files page](../../repositories/files.md)|Duplication value of each file|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Percentage of duplicated files in your repository and how the metric is evolving over time|
 |[Organization overview](../../organizations/organization-overview.md)|Average percentage of duplicated files in the repositories in your organization and percentage of complex files in each repository|
@@ -149,8 +149,8 @@ Once the coverage setup is complete, Codacy displays coverage data on the follow
 
 |Place|Metric|
 |-----|------|
-|[Commit detail page](../../repositories/commits.md)<br/>[Pull request detail page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Variation in percentage points of the coverage value for all files in the commit or pull request|
-|[Pull request detail page](../../repositories/pull-requests.md)|Diff coverage for the changes included in the pull request|
+|[Commit detail page](../../repositories/commits.mdx)<br/>[Pull request detail page](../../repositories/pull-requests.mdx)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Variation in percentage points of the coverage value for all files in the commit or pull request|
+|[Pull request detail page](../../repositories/pull-requests.mdx)|Diff coverage for the changes included in the pull request|
 |[Files page](../../repositories/files.md)|Coverage percentage of each file|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Coverage of the most recent commit of the selected branch and its evolution over time|
 |[Codacy badge](../../getting-started/adding-a-codacy-badge.md)|Coverage of the most recent commit of the configured branch|

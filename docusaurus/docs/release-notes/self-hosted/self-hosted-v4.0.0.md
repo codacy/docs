@@ -18,7 +18,7 @@ To upgrade PostgreSQL:
 
 1.  Follow the instructions on [how to upgrade a PostgreSQL cluster](https://www.postgresql.org/docs/10/upgrading.html).
 
-1.  After the upgrade, clean the Codacy databases with [vacuumdb](https://www.postgresql.org/docs/10/app-vacuumdb.html) to prevent the <span class="skip-vale">autovacuum</a> feature from momentarily affecting the performance of the databases at a later time.
+1.  After the upgrade, clean the Codacy databases with [vacuumdb](https://www.postgresql.org/docs/10/app-vacuumdb.html) to prevent the <span class="skip-vale">autovacuum</span> feature from momentarily affecting the performance of the databases at a later time.
 
 ## Product enhancements
 

@@ -29,7 +29,7 @@ Codacy has been requesting repository read permissions for **Contents** since Se
 
 ![Codacy GitHub App updated permissions request](../images/2024-01-15-gh-updated-permissions.png)
 
-If you have any questions or need help, please contact <mailto:support@codacy.com>.
+If you have any questions or need help, please contact [support@codacy.com](mailto:support@codacy.com).
 
 ## Removal of repository permissions for Administration and SSH keys {#timeline}
 To ensure the conditions to use installation access tokens on GitHub organizations are met before the removal of repository permissions for Administration and SSH keys, Codacy will execute a phased rollout according to the timeline below:

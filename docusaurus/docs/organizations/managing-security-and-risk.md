@@ -176,7 +176,7 @@ To make sure that Codacy detects security issues correctly:
 
 -   [Enable code patterns](../repositories-configure/configuring-code-patterns.md) belonging to the Security category. These patterns are enabled by default, but may not be on custom configurations.
 -   Alternatively, [apply a coding standard](using-coding-standards.md) that includes patterns belonging to the Security category.
--   Confirm that the latest [commits](../repositories/commits.md) to the default branches of your repositories are analyzed.
+-   Confirm that the latest [commits](../repositories/commits.mdx) to the default branches of your repositories are analyzed.
 
 :::
 

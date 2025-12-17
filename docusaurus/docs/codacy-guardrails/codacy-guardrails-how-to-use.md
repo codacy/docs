@@ -7,10 +7,10 @@ title: Using Codacy Guardrails
 <table>
   <thead>
     <tr>
-      <th>IDE</th>
-      <th>Recommended LLM</th>
-    <tr>
-  </thead>
+	      <th>IDE</th>
+	      <th>Recommended LLM</th>
+	    </tr>
+	  </thead>
   <tbody>
   <tr>
     <td>Visual Studio Code</td>

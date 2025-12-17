@@ -17,4 +17,4 @@ We're planning to remove the existing Jira, Slack, and Webhooks repository integ
 
 ## If you are using Jira, Slack, or Webhooks repository integrations
 
-If you have critical workflows relying on these integrations, please contact us at <mailto:support@codacy.com> so we can advise on the best alternative.
+If you have critical workflows relying on these integrations, please contact us at [support@codacy.com](mailto:support@codacy.com) so we can advise on the best alternative.

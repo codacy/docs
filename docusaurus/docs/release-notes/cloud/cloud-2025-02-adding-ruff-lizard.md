@@ -36,4 +36,4 @@ Ruff is a fast Python linter designed to be a drop-in replacement for tools like
 
 Currently it's compatible with **Python up to 3.13**
 
-If you have any questions or need help, please contact <mailto:support@codacy.com>.
+If you have any questions or need help, please contact [support@codacy.com](mailto:support@codacy.com).

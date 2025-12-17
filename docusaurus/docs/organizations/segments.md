@@ -18,7 +18,7 @@ Segments are dimensions that Codacy reads from your provider that organizes repo
 To enable Segments, an initial sync between your provider and Codacy needs to happen. Once completed, you can use Segments to better locate and organize repositories within Codacy.
 ![Segments sync](../organizations/images/Segments-no-sync.png)
 ![Segments after sync](../organizations/images/segments-after-sync.png)
-<br><br>
+<br /><br />
 
 
 ### GitHub Custom Properties {#github-custom-properties}
@@ -41,4 +41,4 @@ Bitbucket Projects allow you to organize your repositories into relevant context
 After the first sync is done, Bitbucket Projects will continue to be insync with Codacy automatically.
 
 
-<br><br>
+<br /><br />

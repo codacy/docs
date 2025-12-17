@@ -11,50 +11,52 @@ Codacy supports repositories from the following Git providers:
 
 <table>
   <thead>
-    <td></td>
-    <th>Hosting model</th>
-    <th>Name used on Codacy</th>
-    <th>Required Codacy version</th>
+    <tr>
+      <th></th>
+      <th>Hosting model</th>
+      <th>Name used on Codacy</th>
+      <th>Required Codacy version</th>
+    </tr>
   </thead>
   <tbody>
     <!-- GitHub -->
     <tr>
-      <th rowspan="2" style="vertical-align: middle;">
-        <a style="color: white;" href="https://github.com">GitHub</a>
+      <th rowspan="2" style={{verticalAlign: 'middle'}}>
+        <a style={{color: 'white'}} href="https://github.com">GitHub</a>
       </th>
       <td><p><strong>GitHub.com</strong></p></td>
       <td><p>GitHub Cloud</p></td>
-      <td><p>Codacy Cloud or<br/>Codacy Self-hosted</p>
+      <td><p>Codacy Cloud or<br/>Codacy Self-hosted</p></td>
     </tr>
     <tr>
       <td><p><strong>GitHub Enterprise Server</strong><br/>version 3.6.2 or later</p></td>
       <td><p>GitHub Enterprise</p></td>
       <td><p>Codacy Self-hosted</p></td>
     </tr>
-    <tr><td colspan="100%"><tr>
+    <tr><td colspan="4"></td></tr>
     <!-- GitLab -->
     <tr>
-      <th rowspan="2" style="vertical-align: middle;">
-        <a style="color: white;" href="https://about.gitlab.com">GitLab</a>
+      <th rowspan="2" style={{verticalAlign: 'middle'}}>
+        <a style={{color: 'white'}} href="https://about.gitlab.com">GitLab</a>
       </th>
       <td><p><strong>GitLab SaaS</strong></p></td>
       <td><p>GitLab Cloud</p></td>
-      <td><p>Codacy Cloud or<br/>Codacy Self-hosted</p>
+      <td><p>Codacy Cloud or<br/>Codacy Self-hosted</p></td>
     </tr>
     <tr>
       <td><p><strong>GitLab Self-managed</strong><br/>version 14.8 or later</p></td>
       <td><p>GitLab Enterprise</p></td>
       <td><p>Codacy Self-hosted</p></td>
     </tr>
-    <tr><td colspan="100%"><tr>
+    <tr><td colspan="4"></td></tr>
     <!-- Bitbucket -->
     <tr>
-      <th rowspan="2" style="vertical-align: middle;">
-        <a style="color: white;" href="https://bitbucket.org">Bitbucket</a>
+      <th rowspan="2" style={{verticalAlign: 'middle'}}>
+        <a style={{color: 'white'}} href="https://bitbucket.org">Bitbucket</a>
       </th>
       <td><p><strong>Bitbucket Cloud</strong></p></td>
       <td><p>Bitbucket Cloud</p></td>
-      <td><p>Codacy Cloud or<br/>Codacy Self-hosted</p>
+      <td><p>Codacy Cloud or<br/>Codacy Self-hosted</p></td>
     </tr>
     <tr>
       <td><p><strong>Bitbucket Data Center</strong><br/>

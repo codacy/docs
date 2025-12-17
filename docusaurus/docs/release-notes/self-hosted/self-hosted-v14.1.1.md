@@ -8,7 +8,7 @@ codacy_tools_version_new: https://github.com/codacy/codacy-tools/releases/tag/1.
 ---
 
 
-These release notes are for [Codacy Self-hosted v14.1.1](https://github.com/codacy/chart/releases/tag/14.1.1){: target="_blank"}, released on March 10, 2025.
+These release notes are for [Codacy Self-hosted v14.1.1](https://github.com/codacy/chart/releases/tag/14.1.1), released on March 10, 2025.
 
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!

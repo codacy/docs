@@ -3,9 +3,9 @@ title: Files page
 ---
 
 
-The **Files page** displays the current code quality information for each analyzed file in your [enabled repository branches](../repositories-configure/managing-branches.md).
+The **Files page** displays the current code quality information for each analyzed file in your [enabled repository branches](../repositories-configure/managing-branches.mdx).
 
-By default, the page lists the files on the main branch of your repository. However, if you have [more than one branch enabled](../repositories-configure/managing-branches.md), you can select other branches using the drop-down list at the top of the page.
+By default, the page lists the files on the main branch of your repository. However, if you have [more than one branch enabled](../repositories-configure/managing-branches.mdx), you can select other branches using the drop-down list at the top of the page.
 
 Codacy displays the following [code quality metrics](../faq/code-analysis/which-metrics-does-codacy-calculate.md) for each file, if available:
 

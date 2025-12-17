@@ -3,11 +3,11 @@ title: Coverage page
 ---
 
 
-The **Coverage page** displays the current code coverage information in your [enabled repository branches](../repositories-configure/managing-branches.md).
+The **Coverage page** displays the current code coverage information in your [enabled repository branches](../repositories-configure/managing-branches.mdx).
 
 If your repository doesn't have coverage set up, you can learn more on how to [add coverage to your repository](../coverage-reporter/index.md).
 
-By default, the page displays the coverage information on the main branch of your repository. However, if you have [more than one branch enabled](../repositories-configure/managing-branches.md), you can select other branches using the drop-down list at the top of the page.
+By default, the page displays the coverage information on the main branch of your repository. However, if you have [more than one branch enabled](../repositories-configure/managing-branches.mdx), you can select other branches using the drop-down list at the top of the page.
 
 ## Code coverage metrics
 
@@ -36,7 +36,7 @@ The **Open pull requests** area displays the last updated pull requests and the 
 
 Click a bar segment to display only pull requests with the corresponding status.
 
-To see the details of pull requests, click a pull request from the list or click **See all pull requests** to open the [list of pull requests](pull-requests.md) in the repository.
+To see the details of pull requests, click a pull request from the list or click **See all pull requests** to open the [list of pull requests](pull-requests.mdx) in the repository.
 
 ![Open pull requests](images/open-pull-requests-widget.png)
 

@@ -24,12 +24,12 @@ The table below lists the configuration file names that Codacy detects and suppo
 <table>
   <thead>
     <tr>
-      <th>Scanner name</th>
-      <th>Languages</th>
-      <th>Files detected</th>
-      <th>Other info</th>
-    <tr>
-  </thead>
+	      <th>Scanner name</th>
+	      <th>Languages</th>
+	      <th>Files detected</th>
+	      <th>Other info</th>
+	    </tr>
+	  </thead>
   <tbody>
   <tr>
     <td>dartanalyzer</td>
@@ -67,7 +67,7 @@ The table below lists the configuration file names that Codacy detects and suppo
 
 To use a configuration file for a static analysis tool:
 
-1.  Make sure the configuration file is located in the root of the [default Codacy branch](../repositories-configure/managing-branches.md).
+1.  Make sure the configuration file is located in the root of the [default Codacy branch](../repositories-configure/managing-branches.mdx).
 
 2.  Open the repository **Code patterns** page, select the tool of interest, and activate the toggle to use a configuration file.
 

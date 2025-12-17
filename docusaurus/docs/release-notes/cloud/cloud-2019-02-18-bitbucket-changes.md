@@ -28,6 +28,6 @@ The original user who set up your Bitbucket integration will need to log in to C
 
 If the original user who set up your Bitbucket integration isn't available, someone who has Admin permissions in both Codacy and Bitbucket to [re-do the integration](../../repositories-configure/integrations/bitbucket-integration.md) in Codacy.
 
-You can log in with Bitbucket through <https://www.codacy.com/login-with/bitbucket>.
+You can log in with Bitbucket through [www.codacy.com/login-with/bitbucket](https://www.codacy.com/login-with/bitbucket).
 
 ![Logging in using Bitbucket](../images/2019-02-18-bitbucket-changes.png)
