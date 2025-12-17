@@ -42,3 +42,13 @@
 .menu {
   padding: 0.5rem
 }
+
+.theme-layout-main .container {
+  padding: 4rem !important;
+}
+
+@media (max-width: 1200px){
+  .theme-layout-main .container {
+    padding: 1.5rem !important;
+  }
+}
