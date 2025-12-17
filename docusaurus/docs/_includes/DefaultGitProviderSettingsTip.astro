@@ -1,0 +1,25 @@
+---
+import { Aside } from '@astrojs/starlight/components';
+
+type Variant = 'default-settings' | 'apply-all';
+const { variant = 'default-settings' } = Astro.props as { variant?: Variant };
+---
+
+{
+	variant === 'apply-all' ? (
+		<Aside type="tip">
+			<p>
+				You can <a href="/organizations/integrations/default-git-provider-integration-settings#apply-all">apply the default Git provider integration settings to all repositories</a> to ensure
+				that your repositories all share the same settings.
+			</p>
+		</Aside>
+	) : (
+		<Aside type="tip">
+			<p>
+				Configure the <a href="/organizations/integrations/default-git-provider-integration-settings">default Git provider integration settings</a> that Codacy applies to new repositories
+				to help ensure that all new repositories have the same settings.
+			</p>
+		</Aside>
+	)
+}
+

@@ -1,0 +1,12 @@
+---
+import { Aside } from '@astrojs/starlight/components';
+const { github = false } = Astro.props;
+
+
+---
+
+<Aside type="caution">
+    <p>For the sake of simplicity, the example doesn't consider paginated results obtained from the Codacy API. <a href="/codacy-api/using-the-codacy-api#using-pagination">Learn how to use pagination</a> to ensure that you process all results returned by the API.</p>
+    
+    { github && <p>Besides this, the script doesn’t consider paginated results obtained from the GitHub API. <a href="https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api">Learn how to use pagination on the GitHub API</a> to ensure that you obtain all the repositories in your organization.</p>}
+</Aside>

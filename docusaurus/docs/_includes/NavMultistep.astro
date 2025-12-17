@@ -1,0 +1,59 @@
+---
+const { step } = Astro.props;
+const activeStep = typeof step === 'number' ? step : Number(step);
+
+const steps = [
+	{
+		label: 'Adding your first repository',
+		href: '/getting-started/codacy-quickstart#adding-your-first-repository',
+	},
+	{
+		label: 'Configuring your repository',
+		href: '/getting-started/configuring-your-repository#configuring-your-repository',
+	},
+	{
+		label: 'Integrating Codacy with your Git workflow',
+		href: '/getting-started/integrating-codacy-with-your-git-workflow#integrating-codacy-with-your-git-workflow',
+	},
+];
+---
+
+<nav class="nav-multistep" aria-label="Guided path">
+	<p class="nav-multistep__label">This page is part of the following guided path:</p>
+	<ol class="nav-multistep__list">
+		{steps.map((item, index) => (
+			<li class:list={['nav-multistep__step', index === activeStep && 'nav-multistep__step--active']}>
+				{index === activeStep ? <span class="nav-multistep__current">{item.label}</span> : <a href={item.href}>{item.label}</a>}
+			</li>
+		))}
+	</ol>
+</nav>
+
+<style>
+	.nav-multistep {
+		margin: 1rem 0 1.25rem;
+		padding: 1rem;
+		border: 1px solid var(--sl-color-gray-5);
+		border-radius: 0.75rem;
+		background: var(--sl-color-gray-6);
+	}
+	.nav-multistep__label {
+		margin: 0 0 0.75rem;
+		color: var(--sl-color-gray-2);
+		font-size: var(--sl-text-sm);
+	}
+	.nav-multistep__list {
+		margin: 0;
+		padding-left: 1.25rem;
+	}
+	.nav-multistep__step {
+		margin: 0.25rem 0;
+	}
+	.nav-multistep__step--active {
+		font-weight: 600;
+	}
+	.nav-multistep__current {
+		color: var(--sl-color-white);
+	}
+</style>
+
