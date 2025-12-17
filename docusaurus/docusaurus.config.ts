@@ -56,6 +56,20 @@ const config: Config = {
       } satisfies Preset.Options,
     ],
   ],
+  plugins: [
+    [
+      require.resolve('@easyops-cn/docusaurus-search-local'),
+      {
+        docsRouteBasePath: '/',
+        indexBlog: false,
+        hashed: true,
+        language: ['en'],
+        fuzzyMatchingDistance: 0,
+        searchResultLimits: 8,
+        searchResultContextMaxLength: 40,
+      },
+    ],
+  ],
   themeConfig: {
     // Replace with your project's social card
     image: 'img/docusaurus-social-card.jpg',
@@ -80,7 +94,11 @@ const config: Config = {
           sidebarId: 'releaseNotesSidebar',
           position: 'left',
           label: 'Release notes',
-        }
+        },
+        {
+          type: 'search',
+          position: 'right',
+        },
       ],
     },
     prism: {
