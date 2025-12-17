@@ -80,12 +80,7 @@ const config: Config = {
           sidebarId: 'releaseNotesSidebar',
           position: 'left',
           label: 'Release notes',
-        },
-        {
-          href: 'https://github.com/facebook/docusaurus',
-          label: 'GitHub',
-          position: 'right',
-        },
+        }
       ],
     },
     prism: {
