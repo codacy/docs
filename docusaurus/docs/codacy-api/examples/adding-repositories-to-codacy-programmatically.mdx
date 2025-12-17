@@ -3,7 +3,7 @@ title: Adding repositories to Codacy programmatically
 description: Example of how to add multiple repositories programmatically using Codacy's API v3 endpoint addRepository.
 ---
 
-import ApiExamplePaginationImportant from '../../_includes/ApiExamplePaginationImportant.mdx'
+import ApiExamplePaginationImportant from '../../_includes/ApiExamplePaginationImportant.mdx';
 
 There are scenarios where manually adding Git repositories on the Codacy UI is inconvenient or time-consuming. For example:
 
@@ -95,4 +95,8 @@ for repo in $(curl -s https://api.github.com/orgs/$GITHUB_ORG_NAME/repos -H "Aut
 done
 ```
 
-<ApiExamplePaginationImportant github="true"/>
+<ApiExamplePaginationImportant />
+
+:::caution
+Besides this, the script doesn't consider paginated results obtained from the GitHub API. [Learn how to use pagination on the GitHub API](https://docs.github.com/en/rest/using-the-rest-api/using-pagination-in-the-rest-api) to ensure that you obtain all the repositories in your organization.
+:::
