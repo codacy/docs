@@ -2,6 +2,8 @@
 These are overides to the current theme.
 */
 
+@import './pages/roles-and-permissions.css';
+
 :root, ::backdrop {
     --sl-color-text-accent: #005DF0;
     --sl-font: Inter;

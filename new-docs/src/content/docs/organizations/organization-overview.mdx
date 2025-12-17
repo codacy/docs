@@ -2,6 +2,7 @@
 title: Organization overview
 description: The Organization overview provides an overview of the repositories belonging to your Git provider organization. Here you can compare their statuses and check for items that require your attention.
 ---
+import DashboardApiReportNote from './../../includes/DashboardApiReportNote.astro'
 
 
 The **Organization overview** provides an overview of the repositories belonging to your Git provider organization that you [follow on Codacy](managing-repositories.md). Here you can compare their statuses and check for items that require your attention.
@@ -20,7 +21,7 @@ On this page, you can also see the **Organization setup** area, which provides y
 
 The following sections provide a detailed description of the repository-related dashboard areas.
 
-{% include-markdown "../assets/includes/dashboard-api-report-note.md" %}
+<DashboardApiReportNote />
 
 ## Overall quality chart
 
@@ -30,7 +31,6 @@ The **Overall quality** chart compares the repositories that you follow regardin
 -   The overall quality chart calculates metrics and displays data only for the **repositories that you follow** on Codacy. This means that depending on their list of followed repositories, two users can see different results on this chart.
 
 -   The overall quality chart displays information for **at most the last 100 updated repositories**.
-
 :::
 
 ![Overall quality chart](images/organization-overview-overall-quality.png)
@@ -56,7 +56,7 @@ The **Last updated repositories** list displays the last updated repositories, s
 :::note
 The exact value of the last updated date of the repositories depends on your Git provider:
 
--   **GitHub:** date of the last commit to any branch of the repository (value of `pushed_at` from the [GitHub Repositories API](https://docs.github.com/en/rest/repos/repos#list-organization-repositories){: target=_"blank"}).
+-   **GitHub:** date of the last commit to any branch of the repository (value of `pushed_at` from the [GitHub Repositories API](https://docs.github.com/en/rest/repos/repos#list-organization-repositories)).
 -   **GitLab:** date when the project was last updated (value of `last_activity_at` from the [GitLab Groups API](https://docs.gitlab.com/ee/api/groups.html)). Note that this value is only updated [at most once per hour](https://gitlab.com/gitlab-org/gitlab/-/issues/20952)).
 -   **Bitbucket:** date when the repository was last updated (value of `updated_on` from the [Bitbucket Repositories API](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/#api-group-repositories)). **On Bitbucket Server** Codacy can't obtain this information and the list displays the repositories in alphabetical order.
 

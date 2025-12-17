@@ -2,9 +2,11 @@
 title: Ignoring files
 description: Ignore or exclude files from the Codacy analysis and see the list of files that Codacy already ignores by default.
 ---
+import AdminAccessControlInfo from './../../includes/AdminAccessControlInfo.astro'
+import CoverageIgnore from './../../includes/CoverageIgnore.astro'
 
 
-{% include-markdown "../assets/includes/admin-access-control-info.md" %}
+<AdminAccessControlInfo />
 
 In some situations, you may want to ignore or exclude files from the Codacy analysis.
 
@@ -17,10 +19,9 @@ To exclude files from your repository analysis open your repository **Settings**
 
 -   You can also ignore files using your own [tool configuration files](configuring-code-patterns.md#using-your-own-tool-configuration-files), although this depends on the option being supported by each tool.
 
--   {% include-markdown "../assets/includes/coverage-ignore.md" %}
+-   <CoverageIgnore />
 
 -  When excluding files from **Duplication** analysis, you must state the **entire path** to the files. Unlike quality analysis, wildcards will not work, resulting in files not being excluded.
-
 :::
 
 If you need more flexibility in ignoring files, use a Codacy configuration file to [define a custom list of file paths to exclude](codacy-configuration-file.md#syntax-for-ignoring-files).

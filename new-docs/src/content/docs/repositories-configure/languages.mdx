@@ -2,9 +2,10 @@
 title: Configuring languages
 description: Configure the languages that Codacy analyzes in your repository. You can configure Codacy to include unrecognized file extensions, or disable the analysis of specific languages.
 ---
+import AdminAccessControlInfo from './../../includes/AdminAccessControlInfo.astro'
+import UpdateFileExtensionsReanalyze from './../../includes/UpdateFileExtensionsReanalyze.astro'
 
-
-{% include-markdown "../assets/includes/admin-access-control-info.md" %}
+<AdminAccessControlInfo />
 
 Codacy automatically detects and analyzes languages in your repository based on a list of supported file extensions. On the repository **Settings**, tab **Languages**, you can see the list of languages that Codacy detected and will include in the next analysis.
 
@@ -29,13 +30,13 @@ If your repository contains source files with extensions not supported by Codacy
 
     ![Configuring file extensions](images/file-extensions.png)
 
-    {% include-markdown "../assets/includes/update-file-extensions-reanalyze.md" %}
+    <UpdateFileExtensionsReanalyze />
 
 :::note
 Currently, the [Semgrep](https://github.com/codacy/codacy-semgrep) static analysis tool doesn't support custom file extensions.
 :::
 
-## Disabling analysis of a language {#disable-language}
+## Disabling analysis of a language \{#disable-language\}
 By default, Codacy analyzes all languages detected in your repository. To disable the analysis of a specific language, do the following:
 
 1.  Go to your repository's **Settings**, **Languages**.
@@ -46,4 +47,4 @@ By default, Codacy analyzes all languages detected in your repository. To disabl
 
     ![Disabling language](images/disable-language.png)
 
-    {% include-markdown "../assets/includes/update-file-extensions-reanalyze.md" %}
+    <UpdateFileExtensionsReanalyze />

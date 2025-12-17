@@ -75,9 +75,7 @@ This area displays the quality gate status for the {{ page.meta.page_name }} and
 The **Issues** tab displays the lists of issues that the {{ page.meta.page_name }} creates or fixes. Use the sidebar filters to filter the list by new issues (including issues of specific severity or category), issues within a specific file, fixed issues, [potential new issues, or potential fixed issues](#possible-issues).
 
 {%
-    include-markdown "./issues.md"
-    start="<!--issue-details-start-->"
-    end="<!--issue-details-end-->"
+    include-markdown "./includes/issue-details.md"
 %}
 
 To [ignore or manage an issue](issues.md#ignoring-and-managing-issues), click the associated options in the menu.

@@ -1,6 +1,8 @@
 ---
 title: Issues page
 ---
+import AdminAccessControlInfo from './../../includes/AdminAccessControlInfo.astro'
+import IssueDetails from './../../includes/IssueDetails.astro'
 
 
 The **Issues page** lists all the issues that Codacy detected in your repository, including the severity level and category of each issue.
@@ -13,15 +15,7 @@ By default, the page lists the issues on the main branch of your repository but 
 
 ![Issues page](images/issues.png)
 
-<!--issue-details-start-->
-Click the title of an issue card to expand it and see the following information:
-
--   The committer and date of the commit that introduced the issue, if available
--   The estimated time to fix the issue
--   What the issue is and how to solve it
--   The [tool that reported the issue](../getting-started/supported-languages-and-tools.md) and the related code pattern
--   Where's this pattern enabled: coding standard, repository rules, or configuration file
-<!--issue-details-end-->
+<IssueDetails />
 
 ![Issue details](images/issues-detail.png)
 
@@ -44,12 +38,16 @@ You can moreover define one or more of the following filters:
     -   **Minor (blue):** The least critical issues, such as most code style issues
 
 -   **Issue category:** One of the following types of issue:
-
-    {%
-        include-markdown "../faq/code-analysis/which-metrics-does-codacy-calculate.md"
-        start="<!--issue-categories-start-->"
-        end="<!--issue-categories-end-->"
-    %}
+    -   **Code style:** Code formatting and syntax problems, such as variable names style and enforcing the use of brackets and quotation marks
+    -   **Error prone:** Code that may hide bugs and language keywords that should be used with caution, such as the operator `==` in JavaScript or `Option.get` in Scala
+    -   **Code complexity:** High complexity files that should be refactored
+    -   **Performance:** Code that can have performance problems
+    -   **Compatibility:** Mainly for frontend code, compatibility problems across different browser versions
+    -   **Unused code:** Unused variables and methods, code that can't be reached
+    -   **Security:** Potential security vulnerabilities, including hard-coded passwords and keys (secret scanning), vulnerable dependencies (software composition analysis or SCA), and insecure code patterns (static application security testing or SAST). For more information, see the complete [list of security issue categories](../organizations/managing-security-and-risk.md#supported-security-categories)
+    -   **Documentation:** Methods and classes that don't have the correct comment annotations
+    -   **Best practice:** Code that doesn't follow the recommended coding standards and best practices
+    -   **Comprehensibility:** Code that can be difficult to understand and modify
 
 -   **Author:** Commit author that introduced the issue on the code
 
@@ -59,7 +57,7 @@ Each code pattern has a pre-defined severity level and at the moment Codacy does
 
 ## Ignoring and managing issues
 
-{% include-markdown "../assets/includes/admin-access-control-info.md" %}
+<AdminAccessControlInfo />
 
 Use the options in the menu of each issue to:
 
@@ -96,8 +94,8 @@ Use the options in the menu of each issue to:
 
 <table>
   <tr>
-    <td><img src="../images/issues-reason-menu.png" alt="Issue reason menu"></td>
-    <td><img src="../images/issues-reason-options.png" alt="Issue reason options"></td>
+    <td><img src="../images/issues-reason-menu.png" alt="Issue reason menu"/></td>
+    <td><img src="../images/issues-reason-options.png" alt="Issue reason options"/></td>
   </tr>
 </table>
 

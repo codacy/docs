@@ -2,6 +2,7 @@
 title: Roles and permissions for organizations
 description: List of operations that users can perform on Codacy depending on their role on the Git provider, and how to configure repository management permissions.
 ---
+import AdminAccessInfo from './../../includes/AdminAccessInfo.astro'
 
 
 By default, Codacy assigns each organization member a role corresponding to that member's role on your Git provider. Each Codacy role, from most restrictive (repository read) to most capable (organization admin), corresponds to a set of permissions that determine what each member can do on Codacy.
@@ -21,8 +22,8 @@ To review the permissions granted by each role, see the tables for each Git prov
 
 To list and manage the members of your Codacy organization, see the [Managing people](managing-people.md) page.
 
-## Configuring repository management permissions {#change-analysis-configuration}
-{% include-markdown "../assets/includes/admin-access-info.md" %}
+## Configuring repository management permissions \{#change-analysis-configuration\}
+<AdminAccessInfo />
 
 By default, only users with the Codacy role **repository write** can change analysis configurations.
 
@@ -40,7 +41,7 @@ To change this, open your organization **Settings**, page **Roles and permission
 
 ## Managing the organization manager role
 
-{% include-markdown "../assets/includes/admin-access-info.md" %}
+<AdminAccessInfo />
 
 To grant an organization member additional permissions, you can assign that member the organization manager role. This role isn't influenced by a member's Git provider role.
 
@@ -404,7 +405,7 @@ The table below maps the GitLab Cloud and GitLab Enterprise roles to the corresp
 
 The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corresponding Codacy roles and the operations that they're allowed to perform:
 
-<table>
+<table class="roles-and-permissions">
   <thead>
     <tr>
       <th>Bitbucket role</th>
@@ -517,36 +518,3 @@ The table below maps the Bitbucket Cloud and Bitbucket Server roles to the corre
 
 -   [Managing people](managing-people.md)
 -   [Accepting new people to your organization](changing-your-plan-and-billing.md#allowing-new-people-to-join-your-organization)
-
-<!-- vale off -->
-<style>
-/*Center text in all cells except the first column*/
-td:not(:first-child), th:not(:first-child) {
-  text-align: center !important;
-}
-
-/*Background color for row containing the Codacy permission levels*/
-table:not(data-exclude) tr:nth-child(1) td {
-  background-color: #EBF1FF;
-}
-
-/*Add vertical borders and disable horizontal borders*/
-td {
-  border-left: 1px solid var(--md-default-fg-color--lightest);
-  border-top: 1px solid var(--md-default-fg-color--lightest);
-}
-td:nth-child(1) {
-  border-left: 0;
-}
-
-/*Background for cells marking various operations*/
-.yes {
-  background-color: #E6F4EA;
-}
-.no {
-  background-color: #FFF1EB;
-}
-.maybe {
-  background-color: #F2F9FC;
-}
-</style>
