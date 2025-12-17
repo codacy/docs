@@ -1,6 +1,7 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 import type {Config} from '@docusaurus/types';
 import type * as Preset from '@docusaurus/preset-classic';
+// Sidebar sorting is handled via explicit `_order.ts` files in `docs/`.
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
