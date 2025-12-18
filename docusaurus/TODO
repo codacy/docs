@@ -14,7 +14,7 @@ MVP
 ## 0) Apply new theme!
 - [ ] Homepage
 - [ ] Sidebar
-- [ ] Navbar
+- [x] Navbar
 - [ ] Search
 - [ ] Footer
 - [ ] Nav buttons
@@ -28,6 +28,7 @@ MVP
 - [x] Confirm MkDocs `include-markdown` usage is fully replaced with `_includes/*.mdx` imports/usages
 - [x] Confirm admonitions render as expected (MkDocs `!!! note|tip|warning` ➜ Docusaurus admonitions / MDX syntax)
 - [ ] Confirm heading IDs/anchors are stable (MkDocs `toc` permalink + custom `{:#id}` usage)
+- [ ] Fix all the links
 
 ## 2) Navigation & information architecture
 - [ ] Review `docusaurus/sidebars.ts` vs MkDocs `nav:` in `mkdocs.yml` for:

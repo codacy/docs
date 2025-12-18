@@ -1,0 +1,38 @@
+:root {
+    --ifm-navbar-padding-vertical: 1rem;
+    --ifm-navbar-padding-horizontal: 2rem;
+    --ifm-navbar-height: 4.5rem;
+}
+
+.navbar {
+    box-shadow: none;
+    border-bottom: 1px solid var(--ifm-toc-border-color);
+}
+
+.navbar__title {
+    font-size: 1.125rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    position:relative;
+    top: 1px;
+    color: var(--ifm-color-emphasis-800)
+}
+
+.navbar__brand {
+    border-right: 1px solid var(--ifm-toc-border-color);
+    padding-right: 1rem;
+}
+
+.navbar__link {
+    color: var(--ifm-color-emphasis-800);
+    font-weight: var(--ifm-font-weight-normal);
+}
+
+.navbar__link:hover {
+    color: var(--ifm-color-emphasis-700)
+}
+
+.navbar__link--active, .navbar__link--active:hover {
+    color: inherit;
+    font-weight: var(--ifm-font-weight-semibold);
+}

@@ -5,27 +5,16 @@
   */
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
  
-@import './imports/codacy-variables.css';
-@import './imports/ifm-overrides.css';
-@import './imports/search.css';
+/* variables reset */
+@import './imports/variables/codacy-variables.css';
+@import './imports/variables/ifm-overrides.css';
 
-/* You can override the default Infima variables here. */
-:root {
-  --ifm-font-size-base: 87.5%;
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
-  --ifm-font-family-base: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  
-  --ifm-toc-border-color: var(--ifm-color-emphasis-200);
+/* components */
+@import './imports/components/search.css';
+@import './imports/components/navbar.css';
+@import './imports/components/nav-multistep.css';
 
-  /* overriding the arrow in the sidebar */
-  --ifm-menu-link-sublist-icon: url("data:image/svg+xml;utf8,<svg viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M21.5397 17.5397C20.9261 18.1534 19.9311 18.1534 19.3174 17.5397L11 9.22234L2.6826 17.5397C2.06892 18.1534 1.07394 18.1534 0.460263 17.5397C-0.153418 16.9261 -0.153418 15.9311 0.460263 15.3174L9.88883 5.88883C10.5025 5.27515 11.4975 5.27515 12.1112 5.88883L21.5397 15.3174C22.1534 15.9311 22.1534 16.9261 21.5397 17.5397Z' fill='%237689AD'/></svg>");
-}
 
-/* For readability concerns, you should choose a lighter palette in dark mode. */
-[data-theme='dark'] {
-  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
-  --ifm-toc-border-color: var(--ifm-color-empaphis-200);
-}
 
 .table-of-contents__left-border {
   border: none;
@@ -34,11 +23,6 @@
 .menu__link--sublist-caret::after {
   background: var(--ifm-menu-link-sublist-icon) 50% / 1rem 1rem;
   background-repeat: no-repeat;
-}
-
-.navbar {
-  box-shadow: none;
-  border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 
 .menu {

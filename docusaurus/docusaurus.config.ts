@@ -77,6 +77,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
+      title: 'Docs',
       logo: {
         alt: 'Codacy Docs',
         src: 'img/codacy-logo.svg',
@@ -84,10 +85,16 @@ const config: Config = {
       },
       items: [
         {
+          to: '/',
+          label: 'Home',
+          position: 'left',
+          exact: true,
+        },
+        {
           type: 'docSidebar',
           sidebarId: 'documentationSidebar',
           position: 'left',
-          label: 'Docs',
+          label: 'Documentation',
         },
         {
           type: 'docSidebar',
@@ -104,6 +111,26 @@ const config: Config = {
     prism: {
       theme: prismThemes.github,
       darkTheme: prismThemes.dracula,
+    },
+    footer: {
+      style: 'dark',
+      links: [
+        {
+          title: 'Docs',
+          items: [
+            {label: 'Documentation', to: '/'},
+            {label: 'Release notes', to: '/release-notes/'},
+          ],
+        },
+        {
+          title: 'Codacy',
+          items: [
+            {label: 'Website', href: 'https://www.codacy.com'},
+            {label: 'Status', href: 'https://status.codacy.com'},
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} Codacy`,
     },
   } satisfies Preset.ThemeConfig,
 };

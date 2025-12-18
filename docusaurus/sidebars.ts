@@ -25,7 +25,6 @@ import {releaseNotesSidebarOrder} from './docs/release-notes/_order';
  */
 const sidebars: SidebarsConfig = {
   documentationSidebar: [
-    {type: 'doc', id: 'index', label: 'Documentation home'},
     {
       type: 'category',
       label: 'Getting started',
@@ -84,19 +83,6 @@ const sidebars: SidebarsConfig = {
     'special-thanks',
   ],
   releaseNotesSidebar: releaseNotesSidebarOrder,
-
-  // But you can create a sidebar manually
-  /*
-  tutorialSidebar: [
-    'intro',
-    'hello',
-    {
-      type: 'category',
-      label: 'Tutorial',
-      items: ['tutorial-basics/create-a-document'],
-    },
-  ],
-   */
 };
 
 export default sidebars;
