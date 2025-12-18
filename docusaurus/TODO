@@ -2,19 +2,31 @@ MkDocs ➜ Docusaurus migration checklist
 
 Goal: ship `docusaurus/` as the new production site for https://docs.codacy.com/
 
+---
+MVP
+
 ## 0) Make it beautiful
-- [ ] Colors, fonts and sizes
-- [ ] Better footer
-- [ ] Beautiful navigation
-- [ ] Nav links
+- [x] Colors, fonts and sizes
+- [x] Better footer
+- [x] Beautiful navigation
+- [x] Nav links
+
+## 0) Apply new theme!
+- [ ] Homepage
+- [ ] Sidebar
+- [ ] Navbar
+- [ ] Search
+- [ ] Footer
+- [ ] Nav buttons
+- [ ] Reading time?
 
 ## 1) Content parity (docs rendering)
 - [ ] Confirm all pages exist in `docusaurus/docs` (count + spot-check key sections)
-- [ ] Confirm MkDocs-only templating is fully removed from Docusaurus content:
-  - [ ] No Jinja tags (`{% ... %}` / `{{ ... }}`) remain in `docusaurus/docs`
-  - [ ] Replace MkDocs `extra.*` variables with Docusaurus equivalents (MDX constants / front matter / config)
-- [ ] Confirm MkDocs `include-markdown` usage is fully replaced with `_includes/*.mdx` imports/usages
-- [ ] Confirm admonitions render as expected (MkDocs `!!! note|tip|warning` ➜ Docusaurus admonitions / MDX syntax)
+- [x] Confirm MkDocs-only templating is fully removed from Docusaurus content:
+  - [x] No Jinja tags (`{% ... %}` / `{{ ... }}`) remain in `docusaurus/docs`
+  - [x] Replace MkDocs `extra.*` variables with Docusaurus equivalents (MDX constants / front matter / config)
+- [x] Confirm MkDocs `include-markdown` usage is fully replaced with `_includes/*.mdx` imports/usages
+- [x] Confirm admonitions render as expected (MkDocs `!!! note|tip|warning` ➜ Docusaurus admonitions / MDX syntax)
 - [ ] Confirm heading IDs/anchors are stable (MkDocs `toc` permalink + custom `{:#id}` usage)
 
 ## 2) Navigation & information architecture
@@ -22,8 +34,11 @@ Goal: ship `docusaurus/` as the new production site for https://docs.codacy.com/
   - [ ] Missing/extra categories
   - [ ] Ordering (including release notes yearly grouping)
   - [ ] Any pages that should be hidden from sidebar but still routable
-- [ ] Replace placeholder site metadata in `docusaurus/docusaurus.config.ts` (title/tagline/footer links/GitHub links)
-- [ ] Decide canonical doc routes (Docusaurus uses `/` as `routeBasePath`): ensure this matches production expectations
+- [x] Replace placeholder site metadata in `docusaurus/docusaurus.config.ts` (title/tagline/footer links/GitHub links)
+- [x] Decide canonical doc routes (Docusaurus uses `/` as `routeBasePath`): ensure this matches production expectations
+---
+
+Releseable
 
 ## 3) Redirects (must-have before cutover)
 - [ ] Port MkDocs `redirect_maps` from `mkdocs.yml` to Docusaurus redirects
@@ -31,32 +46,11 @@ Goal: ship `docusaurus/` as the new production site for https://docs.codacy.com/
   - Include legacy Zendesk (`hc/...`) redirects and internal moved-page redirects
 - [ ] Validate redirects with a link/redirect checker against the built site
 
-## 4) Versioning strategy (replaces `mike` + `MKDOCS_SELF_HOSTED`)
-MkDocs currently publishes:
-- Latest docs on `master` to `gh-pages/`
-- Self-hosted versions from `release/v*` using `mike deploy ...` (and `MKDOCS_SELF_HOSTED=true`)
-
-- [ ] Decide Docusaurus versioning model:
-  - [ ] Use Docusaurus docs versions for Self-hosted (`release/v*` ➜ versioned docs)
-  - [ ] Decide URL shape for versions (must preserve/redirect existing production URLs)
-- [ ] Implement the model in CI (build + deploy) and document how to cut a new Self-hosted version
-
 ## 5) Release notes specifics
 - [ ] RSS feed parity (MkDocs uses `mkdocs-rss-plugin` for `release-notes/*`)
   - [ ] Decide feed generation approach (Docusaurus plugin/custom script during build)
   - [ ] Ensure `/feed_rss_created.xml` exists (many pages link to it)
 - [ ] Confirm release notes sidebar + navigation matches expectations (tabs already added)
-
-## 6) “Last updated” (replaces `git-revision-date-localized`)
-- [ ] Enable/verify “Last updated” on doc pages (date + author if desired)
-- [ ] Ensure CI checkout uses full git history (`fetch-depth: 0`) so last update data is correct
-
-## 7) Tracking, scripts, and UX widgets
-MkDocs uses `extra.segment_key`, `extra.user_feedback`, and custom JS/CSS.
-- [ ] Add tracking (Segment or chosen tool) to Docusaurus
-- [ ] Add Zendesk
-- [ ] Re-implement “user feedback” if it was a widget on MkDocs
-- [ ] Re-implement any “version selector” behavior (MkDocs `assets/javascripts/version-select.js` + CSS)
 
 ## 8) SEO & meta descriptions (replaces `mkdocs-meta-descriptions`)
 - [ ] Decide how to generate meta descriptions (front matter `description` / plugin / build-time extraction)
@@ -70,6 +64,32 @@ MkDocs uses `extra.segment_key`, `extra.user_feedback`, and custom JS/CSS.
   - [ ] Branch previews (Netlify or equivalent)
   - [ ] Deploy latest to `gh-pages` with `CNAME=docs.codacy.com`
   - [ ] Deploy versioned Self-hosted docs from `release/v*`
+
+---
+
+NEXT
+
+## 4) Versioning strategy (replaces `mike` + `MKDOCS_SELF_HOSTED`)
+MkDocs currently publishes:
+- Latest docs on `master` to `gh-pages/`
+- Self-hosted versions from `release/v*` using `mike deploy ...` (and `MKDOCS_SELF_HOSTED=true`)
+
+- [ ] Decide Docusaurus versioning model:
+  - [ ] Use Docusaurus docs versions for Self-hosted (`release/v*` ➜ versioned docs)
+  - [ ] Decide URL shape for versions (must preserve/redirect existing production URLs)
+- [ ] Implement the model in CI (build + deploy) and document how to cut a new Self-hosted version
+- [ ] Re-implement any “version selector” behavior (MkDocs `assets/javascripts/version-select.js` + CSS)
+
+## 6) “Last updated” (replaces `git-revision-date-localized`)
+- [ ] Enable/verify “Last updated” on doc pages (date + author if desired)
+- [ ] Ensure CI checkout uses full git history (`fetch-depth: 0`) so last update data is correct
+
+## 7) Tracking, scripts, and UX widgets
+MkDocs uses `extra.segment_key`, `extra.user_feedback`, and custom JS/CSS.
+- [ ] Add tracking (Segment or chosen tool) to Docusaurus
+- [ ] Add Zendesk
+- [ ] Re-implement “user feedback” if it was a widget on MkDocs
+
 
 ## 10) Cleanup & documentation for contributors
 - [ ] Update root `README.md` and `CONTRIBUTING.md` for Docusaurus (build/preview instructions)
