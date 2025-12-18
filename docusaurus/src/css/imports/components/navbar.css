@@ -6,7 +6,6 @@
 
 .navbar {
     box-shadow: none;
-    border-bottom: 1px solid var(--ifm-toc-border-color);
 }
 
 .navbar__title {
