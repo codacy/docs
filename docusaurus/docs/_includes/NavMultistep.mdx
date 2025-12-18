@@ -1,0 +1,47 @@
+import Link from '@docusaurus/Link';
+
+export default function NavMultistep({ step }) {
+  const activeStep = typeof step === 'number' ? step : Number(step);
+  const steps = [
+    {
+      label: 'Adding your first repository',
+      href: '/getting-started/codacy-quickstart#adding-your-first-repository',
+    },
+    {
+      label: 'Configuring your repository',
+      href: '/getting-started/configuring-your-repository#configuring-your-repository',
+    },
+    {
+      label: 'Integrating Codacy with your Git workflow',
+      href: '/getting-started/integrating-codacy-with-your-git-workflow#integrating-codacy-with-your-git-workflow',
+    },
+  ];
+
+  return (
+    <nav className="nav-multistep" aria-label="Guided path">
+      <p className="nav-multistep__label">
+        This page is part of the following guided path:
+      </p>
+      <ol className="nav-multistep__list">
+        {steps.map((item, index) => {
+          const isActive = index === activeStep;
+
+          return (
+            <li
+              key={item.href}
+              className={`nav-multistep__step ${
+                isActive ? 'nav-multistep__step--active' : ''
+              }`}
+            >
+              {isActive ? (
+                <span className="nav-multistep__current">{item.label}</span>
+              ) : (
+                <Link to={item.href}>{item.label}</Link>
+              )}
+            </li>
+          );
+        })}
+      </ol>
+    </nav>
+  );
+}
