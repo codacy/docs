@@ -90,9 +90,11 @@ MkDocs uses `extra.segment_key`, `extra.user_feedback`, and custom JS/CSS.
 - [ ] Add Zendesk
 - [ ] Re-implement “user feedback” if it was a widget on MkDocs
 
-
 ## 10) Cleanup & documentation for contributors
 - [ ] Update root `README.md` and `CONTRIBUTING.md` for Docusaurus (build/preview instructions)
 - [ ] Decide what to do with MkDocs artifacts once cutover is complete:
   - [ ] `mkdocs.yml`, `requirements.txt`, MkDocs workflows
   - [ ] MkDocs theme submodule `submodules/codacy-mkdocs-material`
+
+## 11) Update release script
+- [ ] Update release script
