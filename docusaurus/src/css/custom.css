@@ -14,8 +14,7 @@
 @import './imports/components/navbar.css';
 @import './imports/components/nav-multistep.css';
 @import './imports/components/main-section.css';
-
-@layer docusaurus.infima, docusaurus.custom;
+@import './imports/components/footer.css';
 
 .table-of-contents__left-border {
   border: none;

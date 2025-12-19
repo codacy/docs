@@ -48,7 +48,7 @@ const config: Config = {
       'classic',
       {
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/docs',
           sidebarPath: './sidebars.ts',
           breadcrumbs: false,
         },
@@ -115,13 +115,13 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Docs',
           items: [
-            {label: 'Documentation', to: '/'},
-            {label: 'Release notes', to: '/release-notes/'},
+            {label: 'Documentation', to: '/docs/'},
+            {label: 'Release notes', to: '/docs/release-notes/'},
           ],
         },
         {
