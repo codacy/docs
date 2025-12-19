@@ -1,74 +1,91 @@
 .footer {
-  border-top: 1px solid var(--ifm-color-emphasis-200);
-  background: #ffffff;
+  --footer-bg: var(--ifm-color-emphasis-300);
+  --footer-text: var(--ifm-color-emphasis-800);
+  --footer-link: var(--ifm-color-emphasis-800);
+  --footer-gap: 2rem;
+  --footer-radius: 1rem;
+  --footer-padding: 2rem 1.5rem;
+  margin: 1rem;
+  border-radius: var(--footer-radius);
+  background: var(--footer-bg);
+}
+
+:global([data-theme='dark']) .footer {
+  --footer-bg: var(--ifm-color-emphasis-100);
+  --footer-text: var(--ifm-color-emphasis-900);
+  --footer-link: var(--ifm-color-emphasis-900);
+}
+
+@media (min-width: 997px) {
+    .footer {
+      margin: 2rem;
+    }
 }
 
 .inner {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 2rem;
-  max-width: 1200px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: var(--footer-padding);
 }
 
-.left {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
+.group {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--footer-gap) * 2);
+    flex-wrap: wrap;
 }
 
 .social {
-  display: flex;
-  gap: 0.75rem;
+    display: flex;
+    gap: 0.75rem;
 }
 
 .iconLink {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 36px;
-  height: 36px;
-  border-radius: 10px;
-  background: #e9edf3;
-  color: #445066;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 0.5rem;
+    color: var(--footer-text);
 }
 
 .icon {
-  font-size: 18px;
-  display: block;
-  color: currentColor;
+    font-size: 18px;
+    display: block;
+    color: currentColor;
 }
 
 .nav {
-  display: flex;
-  gap: 1.5rem;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
 }
 
 .navLink {
-  color: #445066;
-  font-weight: 600;
-  text-decoration: none;
+    color: var(--footer-link);
+    font-weight: 600;
+    text-decoration: none;
 }
 
-.right {
-  display: flex;
-  align-items: center;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.copy {
-  color: #445066;
-  font-weight: 600;
+.copyright {
+    color: var(--footer-link);
+    font-weight: 600;
+    margin-left: var(--footer-gap);
 }
 
 @media (max-width: 900px) {
-  .inner {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+    .inner {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .group {
+      gap: 1.5rem;
+    }
+
+    .copyright {
+      margin-left: 0;
+    }
 }

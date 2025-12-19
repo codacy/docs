@@ -43,6 +43,17 @@ const config: Config = {
     locales: ['en'],
   },
 
+  scripts: [
+    {
+      src: "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js",
+      type: "module",
+    },
+    {
+      src: "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js",
+      nomodule: true,
+    },
+  ],
+
   presets: [
     [
       'classic',
@@ -165,5 +176,7 @@ const config: Config = {
     },
   },
 };
+
+
 
 export default config;

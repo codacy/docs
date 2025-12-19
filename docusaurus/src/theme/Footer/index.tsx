@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from '@docusaurus/Link';
-import Head from '@docusaurus/Head';
+import Ionicon from 'react/icons';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 
 import styles from './styles.module.css';
@@ -22,18 +22,8 @@ export default function Footer(): React.JSX.Element {
 
   return (
     <footer className={styles.footer}>
-      <Head>
-        <script
-          type="module"
-          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-        />
-        <script
-          nomodule
-          src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-        />
-      </Head>
       <div className={styles.inner}>
-        <div className={styles.left}>
+        <div className={styles.group}>
           <div className={styles.social}>
             {socialLinks.map((item) => (
               <Link
@@ -53,13 +43,15 @@ export default function Footer(): React.JSX.Element {
             ))}
           </nav>
         </div>
-        <div className={styles.right}>
-          { privacyLink && (
-            <Link className={styles.navLink} href={privacyLink.href}>
-              {privacyLink.label}
-            </Link>
-          )}
-          <span className={styles.copy}>© {year} Codacy</span>
+        <div className={styles.group}>
+          <div>
+            { privacyLink && (
+              <Link className={styles.navLink} href={privacyLink.href}>
+                {privacyLink.label}
+              </Link>
+            )}
+            <span className={styles.copyright}>© {year} Codacy</span>
+          </div>
         </div>
       </div>
     </footer>
