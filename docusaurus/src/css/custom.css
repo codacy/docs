@@ -1,0 +1,43 @@
+/**
+  * Any CSS included here will be global. The classic template
+  * bundles Infima by default. Infima is a CSS framework designed to
+  * work well for content-centric websites.
+  */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+ 
+/* variables reset */
+@import './imports/variables/codacy-variables.css';
+@import './imports/variables/ifm-overrides.css';
+
+/* components */
+@import './imports/components/search.css';
+@import './imports/components/navbar.css';
+@import './imports/components/nav-multistep.css';
+
+
+
+.table-of-contents__left-border {
+  border: none;
+}
+
+.menu__link--sublist-caret::after {
+  background: var(--ifm-menu-link-sublist-icon) 50% / 1rem 1rem;
+  background-repeat: no-repeat;
+}
+
+.menu {
+  padding: 0.5rem
+}
+
+.theme-layout-main .container {
+  padding: 0 4rem;
+  margin: 4rem auto;
+}
+
+@media (max-width: 1200px){
+  .theme-layout-main .container {
+    padding: 1.5rem;
+    margin: 0;
+  }
+}
+

@@ -1,0 +1,59 @@
+:root {
+  /* Brand */
+  --ifm-color-primary: var(--codacy-primary);
+  --ifm-color-primary-dark: var(--codacy-blue-30);
+  --ifm-color-primary-darker: var(--codacy-blue-30);
+  --ifm-color-primary-darkest: var(--codacy-blue-20);
+  --ifm-color-primary-light: var(--codacy-blue-60);
+  --ifm-color-primary-lighter: var(--codacy-blue-70);
+  --ifm-color-primary-lightest: var(--codacy-blue-80);
+
+  /* Status */
+  --ifm-color-success: var(--codacy-success);
+  --ifm-color-warning: var(--codacy-warning);
+  --ifm-color-danger: var(--codacy-danger);
+
+  --ifm-color-white: var(--codacy-grey-100);
+  --ifm-color-black: var(--codacy-grey-00);
+
+  /* Greys (Codacy scale) */
+  --ifm-color-gray-0: var(--codacy-grey-100);
+  --ifm-color-gray-100: var(--codacy-grey-98);
+  --ifm-color-gray-200: var(--codacy-grey-95);
+  --ifm-color-gray-300: var(--codacy-grey-90);
+  --ifm-color-gray-400: var(--codacy-grey-80);
+  --ifm-color-gray-500: var(--codacy-grey-70);
+  --ifm-color-gray-600: var(--codacy-grey-60);
+  --ifm-color-gray-700: var(--codacy-grey-50);
+  --ifm-color-gray-800: var(--codacy-grey-30);
+  --ifm-color-gray-900: var(--codacy-grey-15);
+  --ifm-color-gray-1000: var(--codacy-grey-00);
+
+  --ifm-font-size-base: 87.5%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+  --ifm-font-family-base: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  
+  --ifm-toc-border-color: var(--ifm-color-emphasis-200);
+
+  /* overriding the arrow in the sidebar */
+  --ifm-menu-link-sublist-icon: url("data:image/svg+xml;utf8,<svg viewBox='0 0 22 22' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M21.5397 17.5397C20.9261 18.1534 19.9311 18.1534 19.3174 17.5397L11 9.22234L2.6826 17.5397C2.06892 18.1534 1.07394 18.1534 0.460263 17.5397C-0.153418 16.9261 -0.153418 15.9311 0.460263 15.3174L9.88883 5.88883C10.5025 5.27515 11.4975 5.27515 12.1112 5.88883L21.5397 15.3174C22.1534 15.9311 22.1534 16.9261 21.5397 17.5397Z' fill='%237689AD'/></svg>");
+}
+
+[data-theme='dark'] {
+  /* Brand: shift lighter for contrast on dark backgrounds */
+  --ifm-color-primary: var(--codacy-blue-60);
+  --ifm-color-primary-dark: var(--codacy-blue-50);
+  --ifm-color-primary-darker: var(--codacy-blue-40);
+  --ifm-color-primary-darkest: var(--codacy-blue-30);
+  --ifm-color-primary-light: var(--codacy-blue-70);
+  --ifm-color-primary-lighter: var(--codacy-blue-80);
+  --ifm-color-primary-lightest: var(--codacy-blue-90);
+
+  /* Status */
+  --ifm-color-success: var(--codacy-green-60);
+  --ifm-color-warning: var(--codacy-yellow-60);
+  --ifm-color-danger: var(--codacy-red-60);
+
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+  --ifm-toc-border-color: var(--ifm-color-emphasis-200);
+}
