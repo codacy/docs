@@ -135,6 +135,35 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Codacy`,
     },
   } satisfies Preset.ThemeConfig,
+  customFields: {
+    footerNavLinks: [
+      {label: 'Why Codacy', href: 'https://www.codacy.com/why-codacy'},
+      {label: 'Platform', href: 'https://www.codacy.com'},
+      {label: 'Resources', href: 'https://www.codacy.com/resources'},
+      {label: 'About us', href: 'https://www.codacy.com/about'},
+    ],
+    footerSocialLinks: [
+      {
+        label: 'GitHub',
+        href: 'https://github.com/codacy/docs',
+        icon: 'logo-github',
+      },
+      {
+        label: 'LinkedIn',
+        href: 'https://linkedin.com/company/codacy',
+        icon: 'logo-linkedin',
+      },
+      {
+        label: 'YouTube',
+        href: 'https://youtube.com/@codacydev',
+        icon: 'logo-youtube',
+      },
+    ],
+    footerPrivacyLink: {
+      label: 'Privacy policy',
+      href: 'https://example.com/privacy',
+    },
+  },
 };
 
 export default config;
