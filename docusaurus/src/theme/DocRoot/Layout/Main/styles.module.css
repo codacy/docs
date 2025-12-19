@@ -32,11 +32,10 @@
     display: block;
     width: calc(100% - var(--doc-sidebar-width) - 2rem - 2rem - 1px);
     height: 2rem;
-    clip-path: inset(0 0 1rem 0);
     border-color: var(--ifm-color-emphasis-300);
     border-style: solid;
     border-width: 1px 1px 0 0;
-    border-radius: 0 1rem 1rem 0;
+    border-radius: 0 1rem 0 0;
     top: calc(var(--ifm-navbar-height));
     z-index: 2;
   }
