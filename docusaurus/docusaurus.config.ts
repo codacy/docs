@@ -6,8 +6,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'My Site',
-  tagline: 'Dinosaurs are cool',
+  title: 'Codacy Docs',
+  tagline: 'Documentation for the Codacy automated code review tool.',
   favicon: 'img/codacy-favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -43,12 +43,23 @@ const config: Config = {
     locales: ['en'],
   },
 
+  scripts: [
+    {
+      src: "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js",
+      type: "module",
+    },
+    {
+      src: "https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js",
+      nomodule: true,
+    },
+  ],
+
   presets: [
     [
       'classic',
       {
         docs: {
-          routeBasePath: '/',
+          routeBasePath: '/docs',
           sidebarPath: './sidebars.ts',
           breadcrumbs: false,
         },
@@ -115,13 +126,13 @@ const config: Config = {
       darkTheme: prismThemes.dracula,
     },
     footer: {
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Docs',
           items: [
-            {label: 'Documentation', to: '/'},
-            {label: 'Release notes', to: '/release-notes/'},
+            {label: 'Documentation', to: '/docs/'},
+            {label: 'Release notes', to: '/docs/release-notes/'},
           ],
         },
         {
@@ -135,6 +146,37 @@ const config: Config = {
       copyright: `Copyright © ${new Date().getFullYear()} Codacy`,
     },
   } satisfies Preset.ThemeConfig,
+  customFields: {
+    footerNavLinks: [
+      {label: 'Why Codacy', href: 'https://www.codacy.com/why-codacy'},
+      {label: 'Platform', href: 'https://www.codacy.com'},
+      {label: 'Resources', href: 'https://www.codacy.com/resources'},
+      {label: 'About us', href: 'https://www.codacy.com/about'},
+    ],
+    footerSocialLinks: [
+      {
+        label: 'GitHub',
+        href: 'https://github.com/codacy/docs',
+        icon: 'logo-github',
+      },
+      {
+        label: 'LinkedIn',
+        href: 'https://linkedin.com/company/codacy',
+        icon: 'logo-linkedin',
+      },
+      {
+        label: 'YouTube',
+        href: 'https://youtube.com/@codacydev',
+        icon: 'logo-youtube',
+      },
+    ],
+    footerPrivacyLink: {
+      label: 'Privacy policy',
+      href: 'https://example.com/privacy',
+    },
+  },
 };
+
+
 
 export default config;

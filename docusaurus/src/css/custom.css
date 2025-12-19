@@ -13,8 +13,8 @@
 @import './imports/components/search.css';
 @import './imports/components/navbar.css';
 @import './imports/components/nav-multistep.css';
-
-
+@import './imports/components/main-section.css';
+@import './imports/components/footer.css';
 
 .table-of-contents__left-border {
   border: none;
@@ -25,19 +25,4 @@
   background-repeat: no-repeat;
 }
 
-.menu {
-  padding: 0.5rem
-}
-
-.theme-layout-main .container {
-  padding: 0 4rem;
-  margin: 4rem auto;
-}
-
-@media (max-width: 1200px){
-  .theme-layout-main .container {
-    padding: 1.5rem;
-    margin: 0;
-  }
-}
 

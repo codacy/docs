@@ -1,23 +1,87 @@
-/**
- * CSS files with the .module.css suffix will be treated as CSS modules
- * and scoped locally.
- */
-
-.heroBanner {
-  padding: 4rem 0;
-  text-align: center;
-  position: relative;
-  overflow: hidden;
+.homepage {
+  padding-bottom: 6rem;
 }
 
-@media screen and (max-width: 996px) {
-  .heroBanner {
-    padding: 2rem;
-  }
+.hero {
+  padding: 5rem 0 4rem;
+  background: linear-gradient(140deg, #f6f7fb 0%, #f0f6f3 60%, #e9f2ef 100%);
 }
 
-.buttons {
+.heroInner {
+  margin: 0 auto;
+  max-width: 960px;
+  padding: 0 1.5rem;
+  text-align: left;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.75rem;
+  margin: 0 0 0.75rem;
+  color: #5b6775;
+}
+
+.title {
+  font-size: clamp(2.2rem, 2.8vw + 1.5rem, 3.6rem);
+  line-height: 1.05;
+  margin: 0 0 1rem;
+}
+
+.subtitle {
+  font-size: 1.125rem;
+  max-width: 40rem;
+  margin: 0 0 2rem;
+  color: #3b4654;
+}
+
+.ctaRow {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.primaryCta,
+.secondaryCta {
+  border-radius: 999px;
+  padding: 0.75rem 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.primaryCta {
+  background: #0d1726;
+  color: #ffffff;
+}
+
+.secondaryCta {
+  border: 1px solid #0d1726;
+  color: #0d1726;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 3.5rem auto 0;
+  max-width: 1000px;
+  padding: 0 1.5rem;
+}
+
+.card {
+  background: #ffffff;
+  border: 1px solid #e1e5ea;
+  border-radius: 1.25rem;
+  padding: 1.75rem;
+  box-shadow: 0 10px 30px rgba(13, 23, 38, 0.08);
+}
+
+.card h2 {
+  margin-top: 0;
+}
+
+@media (max-width: 700px) {
+  .hero {
+    padding: 3rem 0 2.5rem;
+  }
 }
