@@ -19,7 +19,7 @@ To configure your repository, follow these steps:
 
 ## 1. Ignoring files {: id="ignoring-files"}
 
-[Ignore any files and directories](../repositories-configure/ignoring-files.md) that aren't relevant for the Codacy analysis, such as generated code or any third-party libraries included in your repositories.
+[Ignore any files and directories](../repositories-configure/ignoring-files.md) that aren't relevant for the Codacy analysis, such as generated code or any third-party libraries included in your repositories. Learn more about [Ignoring files](../repositories-configure/ignoring-files.md).
 
 ![Ignoring files](../repositories-configure/images/ignored-files.png)
 
