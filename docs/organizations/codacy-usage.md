@@ -36,12 +36,31 @@ This chart shows the trend of repositories in your organization over time, consi
 
 ## Merged pull requests
 
-This chart displays the number of pull requests merged in your repositories, categorizing them as either analyzed or not analyzed.
-Analyzed PRs are further broken down into three sub-categories:
+This chart tracks the total volume of pull requests merged across your Codacy-managed repositories. It serves as a high-level health check to ensure that your team's development velocity is aligned with your quality standards.
 
-- Passing Gates: Merged PRs that successfully passed all quality gates.
-- Failing Gates: Merged PRs that failed one or more quality gates.
-- Without Gates: Merged PRs where no quality gates were configured or applied.
+### Understanding the categories
+
+- Passing Gates: These PRs met all your quality standards (e.g., coverage, complexity, security) before being merged.
+- Failing Gates: PRs merged despite failing one or more quality checks.
+- Without Gates: PRs merged into repositories where no quality gates are configured. 
+- Never Analyzed: PRs that reached a "Merged" status without Codacy completing an analysis.
+
+#### Why are some PRs "Never analyzed"?
+
+If you see high numbers here, it usually boils down to two scenarios:
+
+1. A developer merged the PR immediately after opening it, before the Codacy analysis could finish.
+2. In self-service organizations, if a PR is authored by an email/user not yet added to your Codacy seat count, the analysis may be skipped.
+
+If you notice a high volume of PRs in Without gates, or Never analyzed categories, consider the following actions:
+
+#### Without gates:
+
+To ensure your code meets organizational standards, you should define a Quality Gate rule for the repository, such as setting thresholds for "New issues > 0" or "Coverage < 80%".
+
+#### Never analyzed:
+
+To ensure your team adjusts their workflow to wait for the "Codacy/Analysis" check to turn green before merging. Additionally, you should check your [seat management](../organizations/managing-people.md) to confirm that all active contributors are correctly mapped to a Codacy seat.
 
 Interacting with the chart allows you to filter the data, with the resulting repositories displayed in the "Top repositories" list.
 
