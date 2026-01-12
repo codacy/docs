@@ -21,7 +21,6 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Adding GolangCI-Lint as new supported tools January, 2026](cloud/cloud-2026-01-adding-golangci-lint.md)
 
 2025
-
 -   [Cloud December 2025](cloud/cloud-2025-12.md)
 -   [Cloud November 2025](cloud/cloud-2025-11.md)
 -   [Cloud October 2025](cloud/cloud-2025-10.md)
