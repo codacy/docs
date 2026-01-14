@@ -72,7 +72,7 @@ The table below describes the supported client-side tools and includes links to 
     </tr>
     <tr>
         <td><a href="https://github.com/golangci/golangci-lint">GolangCI-Lint</a></td>
-        <td>GolangCI-Lint is a fast, parallelized Go linters runner that aggregates dozens of different linters into a single tool, allowing developers to detect bugs, style errors, and complexity issues efficiently in their Go codebases..</td>
+        <td>GolangCI-Lint is a fast, parallelized Go linters runner that aggregates dozens of different linters into a single tool, allowing developers to detect bugs, style errors, and complexity issues efficiently in their Go codebases.</td>
         <td><a href="https://github.com/codacy/codacy-golangci-lint#usage">Running GolangCI-Lint</a> (standalone)</td>
     </tr>
     <tr>
