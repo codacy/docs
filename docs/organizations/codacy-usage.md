@@ -49,18 +49,21 @@ This chart tracks the total volume of pull requests merged across your Codacy-ma
 
 If you see high numbers here, it usually boils down to two scenarios:
 
-1. A developer merged the PR immediately after opening it, before the Codacy analysis could finish.
-2. In self-service organizations, if a PR is authored by an email/user not yet added to your Codacy seat count, the analysis may be skipped.
+1. A developer merged the PR immediately after opening it, before the Codacy analysis could finish. Ensure your team adjusts their workflow to wait for the "Codacy/Analysis" check to turn green before merging. 
 
-If you notice a high volume of PRs in Without gates, or Never analyzed categories, consider the following actions:
+2. In self-service organizations, if a PR is authored by an email/user not yet added to your Codacy seat count, the analysis may be skipped. You should check your [seat management](../organizations/managing-people.md) to confirm that all active contributors are correctly mapped to a Codacy seat.
 
-#### Without gates:
+#### Why are some PRs merged with "Failing gates"?
 
-To ensure your code meets organizational standards, you should define a Quality Gate rule for the repository, such as setting thresholds for "New issues > 0" or "Coverage < 80%".
+Pull requests are merged with failing Quality Gates usually due two reasons:
 
-#### Never analyzed:
+1. Quality Gates are advisory, not blocking. [Protect your pull requests](../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
 
-To ensure your team adjusts their workflow to wait for the "Codacy/Analysis" check to turn green before merging. Additionally, you should check your [seat management](../organizations/managing-people.md) to confirm that all active contributors are correctly mapped to a Codacy seat.
+2. Intentional exceptions or risk acceptance:
+
+- Developers/ maintainers may override failing checks to address urgent fixes, unblock critical work, or accept a known risk temporarily.
+
+- Sometimes pull requests are small and diff coverage / coverage variation may fail. Make sure your team follows the practices that were agreed upon within the organization.
 
 Interacting with the chart allows you to filter the data, with the resulting repositories displayed in the "Top repositories" list.
 
