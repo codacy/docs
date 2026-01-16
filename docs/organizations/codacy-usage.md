@@ -55,7 +55,7 @@ If you see high numbers here, it usually boils down to two scenarios:
 
 #### Why are some PRs merged with "Failing gates"?
 
-Pull requests are merged with failing Quality Gates usually due two reasons:
+Pull requests are merged with failing Quality Gates usually due to two reasons:
 
 1. Quality Gates are advisory, not blocking. [Protect your pull requests](../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
 
