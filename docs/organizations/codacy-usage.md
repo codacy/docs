@@ -49,7 +49,7 @@ This chart tracks the total volume of pull requests merged across your Codacy-ma
 
 If you see high numbers here, it usually boils down to two scenarios:
 
-1. A developer merged the PR immediately after opening it, before the Codacy analysis could finish. Ensure your team adjusts their workflow to wait for the "Codacy/Analysis" check to turn green before merging. 
+1. A developer merged the PR immediately after opening it, before the Codacy analysis could finish. Ensure your team adjusts their workflow to wait for the "Codacy/Analysis" check to turn green before merging.
 
 2. In self-service organizations, if a PR is authored by an email/user not yet added to your Codacy seat count, the analysis may be skipped. You should check your [seat management](../organizations/managing-people.md) to confirm that all active contributors are correctly mapped to a Codacy seat.
 
