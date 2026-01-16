@@ -61,7 +61,7 @@ Pull requests are merged with failing Quality Gates usually due to two reasons:
 
 2. Intentional exceptions or risk acceptance:
 
-- Developers/ maintainers may override failing checks to address urgent fixes, unblock critical work, or accept a known risk temporarily.
+- Developers/maintainers may override failing checks to address urgent fixes, unblock critical work, or accept a known risk temporarily.
 
 - Sometimes pull requests are small and diff coverage / coverage variation may fail. Make sure your team follows the practices that were agreed upon within the organization.
 
