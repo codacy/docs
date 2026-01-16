@@ -8,22 +8,9 @@ codacy_tools_version_new: https://github.com/codacy-sh/codacy-tools-sh/releases/
 
 # Self-hosted v16.0.0
 
-These release notes are for [Codacy Self-hosted v16.0.0](https://github.com/codacy/chart/releases/tag/16.0.0){: target="_blank"}, released on January 16, 2026.<!-- TODO Update release date -->
+These release notes are for [Codacy Self-hosted v16.0.0](https://github.com/codacy/chart/releases/tag/16.0.0){: target="_blank"}, released on January 16, 2026.
 
 📢 [Visit the Codacy roadmap](https://roadmap.codacy.com) and <span class="skip-vale">let us know</span> your feedback on both new and planned product updates!
-
-<!--TODO Check these issues manually
-
-Jira issues without release notes
-
-Epics:
-Bugs and other issues:
-
-Jira issues with disabled release notes
-
-Epics:
-Bugs and other issues:
--->
 
 ## Upgrading Codacy Self-hosted
 
@@ -33,12 +20,16 @@ Follow the steps below to upgrade to Codacy Self-hosted v16.0.0:
 
 1.  Follow the instructions to [upgrade your Codacy Self-hosted instance](https://docs.codacy.com/v16.0/chart/maintenance/upgrade/).
 
-1.  Update your Codacy command-line tools to the following versions:<!--TODO Update CLI tool versions-->
+1.  Update your Codacy command-line tools to the following versions:
 
-    -   [Codacy Analysis CLI MAJOR.MINOR.PATCH](https://github.com/codacy/codacy-analysis-cli/releases/tag/MAJOR.MINOR.PATCH)
-    -   [Codacy Coverage Reporter MAJOR.MINOR.PATCH](https://github.com/codacy/codacy-coverage-reporter/releases/tag/MAJOR.MINOR.PATCH)
+    -   [Codacy Analysis CLI 7.9.5](https://github.com/codacy/codacy-analysis-cli/releases/tag/7.9.5)
+    -   [Codacy Coverage Reporter 13.10.15](https://github.com/codacy/codacy-coverage-reporter/releases/tag/13.10.15)
 
 ## Product enhancements
+-   Added support for [Kubernetes 1.30](https://docs.codacy.com/v16.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
+-   Added support for [Kubernetes 1.31](https://docs.codacy.com/v16.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup).
+-   Added support for [Kubernetes 1.32](https://docs.codacy.com/v16.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup). 
+-   Added support for [Kubernetes 1.33](https://docs.codacy.com/v16.0/chart/requirements/#kubernetes-or-microk8s-cluster-setup). 
 
 
 ## Bug fixes
