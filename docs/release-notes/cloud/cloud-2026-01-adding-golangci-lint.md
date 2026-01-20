@@ -19,7 +19,7 @@ We’re excited to announce support for [GolangCI-Lint](https://golangci-lint.ru
 
 **To get started:**
 
-1. [Install GolangCI-Lint](https://golangci-lint.run/usage/install/) on your machine or CI environment.
+1. [Install GolangCI-Lint](https://golangci-lint.run/docs/welcome/install/) on your machine or CI environment.
 2. Run GolangCI-Lint on your Go codebase to generate a report.
 3. Use Codacy’s uploader to send the results to your Codacy project.
 
