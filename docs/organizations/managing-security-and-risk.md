@@ -37,7 +37,7 @@ To limit the information displayed in each panel, use the filter drop-down above
 
 The **Open findings overview** panel displays the total number of open security findings and the number of findings of each severity, helping you quickly assess the overall security posture of your organization and <span class="skip-vale">quickly</span> review findings that are critical or overdue.
 
-It also shows the relative distribution of open findings by status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
+Within this same panel, an additional visualization shows the relative distribution of open findings by status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
 
 To access the findings page with the corresponding filter applied, click on a number or bar area.
 
