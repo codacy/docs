@@ -23,7 +23,7 @@ To access the overview page, select an organization from the top navigation bar 
 The overview page includes six panels:
 
 -   [Open findings overview](#open-findings-overview)
--   [Open findings distribution](#open-findings-distribution)
+-   [Scan types distribution](#scan-types-distribution)
 -   [Open findings history](#open-findings-history)
 -   [Activity history](#activity-history)
 -   [Top 10 high-risk repositories](#top-10-high-risk-repositories)
@@ -37,19 +37,17 @@ To limit the information displayed in each panel, use the filter drop-down above
 
 The **Open findings overview** panel displays the total number of open security findings and the number of findings of each severity, helping you quickly assess the overall security posture of your organization and <span class="skip-vale">quickly</span> review findings that are critical or overdue.
 
-To access the findings page with the corresponding filter applied, click on a number.
+Within this same panel, an additional visualization shows the relative distribution of open findings by status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
 
-![Security and risk management open findings overview panel](images/security-risk-management-overview-open.png)
+To access the findings page with the corresponding filter applied, click on a number or bar area.
 
-### Open findings distribution
+![Security and risk management open findings overview panel](images/security-risk-management-overview-distribution.png)
 
-The **Open findings distribution** panel shows the relative distribution of open findings by scan type, severity, or status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
+### Scan types distribution
 
-To select the desired distribution, use the drop-down in the top right-hand corner of the panel.
+The **Scan types** panel shows the relative distribution of open findings by scan type. To access the findings page with the corresponding filter applied, click on a number from the panel.
 
-To access the findings page with the corresponding filter applied, click on a number.
-
-![Security and risk management open findings distribution panel](images/security-risk-management-overview-distribution.png)
+![Security and risk management scan types distribution panel](images/security-risk-management-scan-type-distribution.png)
 
 ### Open findings history
 
