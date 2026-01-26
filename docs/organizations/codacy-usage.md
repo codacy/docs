@@ -1,42 +1,45 @@
 # Codacy usage
 
-The **Codacy usage** dashboard offers an overview of your organization's adoption of Codacy. You can filter the displayed list of repositories by their Git provider, as well as by their gate and coverage information within Codacy. Additionally, you can filter by selecting specific repositories or by using [the segments that you have set up](segments.md).
+The **Codacy usage** dashboard provides an overview of your organization's configurations and their impact. You can filter repositories by quality gates and coverage, select specific respositories, or use [the segments that you have set up](segments.md).
 
 ![Codacy usage dashboard](images/codacy-usage-dashboard.png)
 
 !!! important
-    Repositories not in Codacy is only available to GitHub accounts.
+    The repositories **not in Codacy** metric is only available to GitHub accounts.
 
 To view the **Codacy usage** dashboard:
 
 - Select an organization from the top navigation bar.
 - On the organization overview page, click the Codacy usage tab.
 
-The Codacy usage dashboard includes the following sections to help you monitor Codacy adoption:
+The **Codacy usage dashboard** includes the following sections/charts to help you monitor Codacy adoption:
 
 - [Repositories](#repositories)
 - [Repositories evolution](#repositories-evolution)
 - [Merged pull requests](#merged-pull-requests)
-- [Top repositories](#top-repositories)
+- [Repositories list](#repositories-list)
 
 !!! tip
     In each section, you can click on the ellipsis icon in the top right corner to export that section's data to CSV or JSON.
 
 ## Repositories
 
-This chart displays the distribution of repositories in Codacy and repositories that aren't. The doughnut chart also details the breakdown of Codacy repositories based on their configuration: those without quality gates, without coverage, without either gates or coverage, and those with both gates and coverage. Users can interact with the doughnut chart or the numerical data to filter the results. Applying a filter will also affect the repositories displayed in the evolution chart and the results will appear in the "Top repositories" list.
+This chart displays the distribution of repositories that are and are not in Codacy. The doughnut chart also details the breakdown of Codacy repositories based on their configurations: those without quality gates, without coverage, without either gates or coverage, and those with both gates and coverage. Users can interact with the doughnut chart or the numerical data to filter the results. Applying a filter will also affect the repositories displayed in the evolution chart and the results will appear in the **Repositories list**.
+
+Note: Repository coverage data is based on the last merged pull request, meaning, that if a repository has coverage setup but coverage was not sent in the last merged PR, it will not count as a repository with Coverage.
 
 ![Repositories distribution](images/repositories-distribution.png)
 
 ## Repositories evolution
 
-This chart shows the trend of repositories in your organization over time, considering the filters applied. You can hover over the chart to see the number of repositories on a specific date. You can also click on the chart to filter results.
+This chart shows the trend of repositories in your organization over time, considering the filters applied, affecting the **Repositories list**. You can hover over the chart to see the number of repositories on a specific date. You can also click on the chart to filter results.
 
 ![Repositories evolution](images/repositories-evolution.png)
 
 ## Merged pull requests
 
-This chart tracks the total volume of pull requests merged across your Codacy-managed repositories. It serves as a high-level health check to ensure that your team's development velocity is aligned with your quality standards.
+This chart tracks the total volume of pull requests merged across your Codacy-managed repositories. It serves as a high-level health check to ensure that your team's development velocity is aligned with your quality standards. 
+Interacting with the chart allows you to filter the data, with the resulting repositories displayed in the **Repositories list**.
 
 ### Understanding the categories
 
@@ -49,9 +52,10 @@ This chart tracks the total volume of pull requests merged across your Codacy-ma
 
 If you see high numbers here, it usually boils down to two scenarios:
 
-1. A developer merged the PR immediately after opening it, before the Codacy analysis could finish. Ensure your team adjusts their workflow to wait for the "Codacy/Analysis" check to turn green before merging.
+1. A developer merged the PR immediately after opening it, before the Codacy analysis could finish. To improve this, ensure your team adjusts their workflow to wait for the "Codacy/Analysis" check to turn green before merging or by making the Codacy status check mandatory.
 
-2. In self-service organizations, if a PR is authored by an email/user not yet added to your Codacy seat count, the analysis may be skipped. You should check your [seat management](../organizations/managing-people.md) to confirm that all active contributors are correctly mapped to a Codacy seat.
+2. In organizations with manual user management (check your billing settings), if a PR is authored by an email/user not yet added to your Codacy seat count, the analysis may be skipped. You should check your [seat management](../organizations/managing-people.md) to confirm that all active contributors are correctly mapped to a Codacy seat.”
+
 
 #### Why are some PRs merged with "Failing gates"?
 
@@ -72,8 +76,8 @@ Interacting with the chart allows you to filter the data, with the resulting rep
 
 ![Merged pull requests](images/merged-pull-requests.png)
 
-## Top repositories
+## Repositories list
 
-The list shows a maximum of 10 repositories from your Git provider. You can use filters to display repositories that aren't yet in Codacy, or repositories that are already in Codacy. For repositories in Codacy, the list can also group them by specific metrics such as gates, coverage, and merged pull request information.
+The list shows a maximum of 10 repositories from your Git provider. You can use filters to display repositories that aren't yet in Codacy, or repositories that are already in Codacy. For repositories in Codacy, the list can also group them by specific metrics such as gates, coverage, and merged pull request information. Despite the 10 repository limit, the Repositories list section allows you to download a list up to 100 repositories.
 
-![Top repositories](images/top-repositories.png)
+![Repositories list](images/repositories-list.png)
