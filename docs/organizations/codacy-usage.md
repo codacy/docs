@@ -1,6 +1,6 @@
 # Codacy usage
 
-The **Codacy usage** dashboard provides an overview of your organization's configurations and their impact. You can filter repositories by quality gates and coverage, select specific respositories, or use [the segments that you have set up](segments.md).
+The **Codacy usage** dashboard provides an overview of your organization's configurations and their impact. You can filter repositories by quality gates and coverage, select specific repositories, or use [the segments that you have set up](segments.md).
 
 ![Codacy usage dashboard](images/codacy-usage-dashboard.png)
 
@@ -26,7 +26,8 @@ The **Codacy usage dashboard** includes the following sections/charts to help yo
 
 This chart displays the distribution of repositories that are and are not in Codacy. The doughnut chart also details the breakdown of Codacy repositories based on their configurations: those without quality gates, without coverage, without either gates or coverage, and those with both gates and coverage. Users can interact with the doughnut chart or the numerical data to filter the results. Applying a filter will also affect the repositories displayed in the evolution chart and the results will appear in the **Repositories list**.
 
-Note: Repository coverage data is based on the last merged pull request, meaning, that if a repository has coverage setup but coverage was not sent in the last merged PR, it will not count as a repository with Coverage.
+!!! note
+    Repository coverage data is based on the last merged pull request, meaning that if a repository has coverage setup but coverage was not sent in the last merged PR, it will not count as a repository with Coverage.
 
 ![Repositories distribution](images/repositories-distribution.png)
 
@@ -64,12 +65,11 @@ Pull requests are merged with failing Quality Gates usually due to two reasons:
 1. Quality Gates are advisory, not blocking. [Protect your pull requests](../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
 
 2. Intentional exceptions or risk acceptance:
+    - Developers/maintainers may override failing checks to address urgent fixes, unblock critical work, or accept a known risk temporarily.
 
-- Developers/maintainers may override failing checks to address urgent fixes, unblock critical work, or accept a known risk temporarily.
+    - Sometimes pull requests are small and diff coverage / coverage variation may fail. Make sure your team follows the practices that were agreed upon within the organization.
 
-- Sometimes pull requests are small and diff coverage / coverage variation may fail. Make sure your team follows the practices that were agreed upon within the organization.
-
-Interacting with the chart allows you to filter the data, with the resulting repositories displayed in the "Top repositories" list.
+Interacting with the chart allows you to filter the data, with the resulting repositories displayed in the **Repositories list**.
 
 !!! note
     Merged pull requests data is only from repositories that are in Codacy.
