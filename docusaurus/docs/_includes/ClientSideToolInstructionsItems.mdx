@@ -1,0 +1,74 @@
+import ApiTokenWarning from './ApiTokenWarning.mdx';
+
+export default function ClientSideToolInstructionsItems({ toolName }) {
+  return (
+    <>
+      <li>
+        <a href="/repositories-configure/configuring-code-patterns/">
+          Enable {toolName}
+        </a>{' '}
+        and configure the corresponding code patterns on your repository{' '}
+        <strong>Code patterns</strong> page.
+      </li>
+
+      <li>
+        Enable <strong>Run analysis on your build server</strong> on your
+        repository <strong>Settings</strong>, tab <strong>General</strong>,{' '}
+        <strong>Repository analysis on your server</strong>.
+        <p>
+          This setting enables Codacy to wait for the results of the local
+          analysis before resuming the analysis of your commits.
+        </p>
+        <p>
+          <img
+            src="./images/run-analysis-through-build-server.png"
+            alt="Run analysis on your build server"
+          />
+        </p>
+      </li>
+
+      <li>
+        Set up an API token to authenticate on Codacy:
+        <ul>
+          <li>
+            <strong>If you're setting up one repository</strong>,{' '}
+            <a href="/codacy-api/api-tokens#repository-api-tokens">
+              obtain a repository API token
+            </a>{' '}
+            and set the following environment variable to specify your
+            repository API token:
+            <pre>
+              <code className="language-bash">
+                export CODACY_PROJECT_TOKEN=&lt;your repository API token&gt;
+              </code>
+            </pre>
+          </li>
+          <li>
+            <strong>If you're setting up multiple repositories</strong>,{' '}
+            <a href="/codacy-api/api-tokens#account-api-tokens">
+              obtain an account API Token
+            </a>{' '}
+            and set the following environment variable to specify the account
+            API token:
+            <pre>
+              <code className="language-bash">
+                export CODACY_API_TOKEN=&lt;your account API token&gt;
+              </code>
+            </pre>
+          </li>
+        </ul>
+        <ApiTokenWarning />
+      </li>
+
+      <li>
+        <strong>If you're using Codacy Self-hosted</strong> set the following
+        environment variable to specify your Codacy instance URL:
+        <pre>
+          <code className="language-bash">
+            export CODACY_API_BASE_URL=&lt;your Codacy instance URL&gt;
+          </code>
+        </pre>
+      </li>
+    </>
+  );
+}
