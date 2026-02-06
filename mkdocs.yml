@@ -684,8 +684,8 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2026:
+                      - release-notes/cloud/cloud-2026-01.md  
                       - release-notes/cloud/cloud-2026-01-adding-golangci-lint.md
-                      - release-notes/cloud/cloud-2026-01.md
                 - 2025:
                       - release-notes/cloud/cloud-2025-12.md
                       - release-notes/cloud/cloud-2025-11.md
