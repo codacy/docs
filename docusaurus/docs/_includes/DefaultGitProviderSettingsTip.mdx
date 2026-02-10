@@ -1,0 +1,33 @@
+import Admonition from '@theme/Admonition';
+
+export default function DefaultGitProviderSettingsTip({
+  variant = 'default-settings',
+}) {
+  if (variant === 'apply-all') {
+    return (
+      <Admonition type="tip">
+        <p>
+          You can{' '}
+          <a href="/organizations/integrations/default-git-provider-integration-settings#apply-all">
+            apply the default Git provider integration settings to all
+            repositories
+          </a>{' '}
+          to ensure that your repositories all share the same settings.
+        </p>
+      </Admonition>
+    );
+  }
+
+  return (
+    <Admonition type="tip">
+      <p>
+        Configure the{' '}
+        <a href="/organizations/integrations/default-git-provider-integration-settings">
+          default Git provider integration settings
+        </a>{' '}
+        that Codacy applies to new repositories to help ensure that all new
+        repositories have the same settings.
+      </p>
+    </Admonition>
+  );
+}
