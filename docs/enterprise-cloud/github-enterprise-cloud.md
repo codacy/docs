@@ -1,21 +1,21 @@
 # GitHub Enterprise Cloud
 
-Use your GitHub Enterprise credentials when signup or login to Codacy and all your GitHub Enterprise organizations that you belong to, will be available to be added as Organizations on Codacy.
+Use your GitHub Enterprise credentials when signing up or logging in to Codacy and all your GitHub Enterprise organizations that you belong to will be available to be added as Organizations on Codacy.
 
 Codacy also has a dedicated Enterprise area where GitHub Enterprise admins and owners of the enterprise will be able to manage them.
 
 ### GitHub Enterprise types
-Codacy supports both [GitHub Enterprises types](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/choosing-an-enterprise-type-for-github-enterprise-cloud), Managed Users and Personal Accounts.
+Codacy supports both [GitHub Enterprise types](https://docs.github.com/en/enterprise-cloud@latest/admin/managing-iam/understanding-iam-for-enterprises/choosing-an-enterprise-type-for-github-enterprise-cloud), Managed Users and Personal Accounts.
 
 ## Access cloud Enterprises 
-Access you enterprises in Codacy by setting up its integration:
+Access your enterprises in Codacy by setting up its integration:
 
-1. In codacy app, click on your avatar image, in the top right corner
-1. then navigate throught "My account" and "Access management"
+1. In the Codacy app, click on your avatar image in the top right corner
+1. Then navigate through "My account" and "Access management"
 1. There, you'll be able to add a **GitHub Enterprise Cloud** access token. 
 
-Once generated and added in Codacy you will start seeing all infomration you have access to regarding your cloud enterprises. 
-You can revoke the cloud enterpises access at any time in the same place.
+Once generated and added in Codacy, you will start seeing all information you have access to regarding your cloud enterprises. 
+You can revoke the cloud enterprises' access at any time in the same place.
 ![Enterprise cloud manage enterprises access](images/Codacy-Access-Management.png)
 
 
@@ -24,27 +24,27 @@ You can revoke the cloud enterpises access at any time in the same place.
 - [Seats management](#seats)
 - [Enterprise Limitations](#limitations)
 
-Once signup or login with your GitHub Enterprise credentials and, [setup access to could enterprises](#access-cloud-enterprises), navigate to your Enterprises area to manage your enterprises in Codacy, as well its organizations and seats management. 
+Once you sign up or log in with your GitHub Enterprise credentials and [setup access to cloud enterprises](#access-cloud-enterprises), navigate to your Enterprises area to manage your enterprises in Codacy, as well as its organizations and seats management. 
 
 !!! note 
-    If you only have one Enterprise, Codacy will skip this screen and directs you to the [enterprise organizations list](#enterprise-organizations-list). 
+    If you only have one Enterprise, Codacy will skip this screen and direct you to the [enterprise organizations list](#enterprise-organizations-list). 
 
 ![Enterprise cloud manage enterprises](images/Codacy-Enterprises.png)
 
 ### Enterprise organizations list
-Choose to view a enterprise and access its list of existing organizations, that you have access to.
+Choose to view an enterprise and access its list of existing organizations that you have access to.
 ![Enterprise cloud manage organizations](images/Codacy-Enterprise-Organizations.png)
 
 ### Seats
 View and export your enterprise seats and its activity by:
 
 1. Choose and view an enterprise organization
-1. Navigate to **People** on the left-handside navigation
-1. View, search and export the list of author seats
+1. Navigate to **People** on the left-hand side navigation
+1. View, search, and export the list of author seats
 
 !!! note 
     - Codacy members won't be part of this list, only authors, users that have done commits. 
-    - In some Enterprise plans, **Members** are people that signup and joined an Organization in Codacy, and **Authors** are people that contribute to code changes. It can happen that Authors aren't Codacy Members. 
+    - In some Enterprise plans, **Members** are people that sign up and join an Organization in Codacy, and **Authors** are people that contribute to code changes. It can happen that Authors aren't Codacy Members. 
     - Only Enterprise **Owners** or **Admins** will be able to view and export the list of authors. 
 
 ### Limitations
