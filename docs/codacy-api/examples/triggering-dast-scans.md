@@ -91,3 +91,12 @@ curl -X POST https://app.codacy.com/api/v3/organizations/gh/codacy/security/item
   -H "api-token: {API_KEY}" \
   -d '{"statuses":["OnTrack","Overdue","DueSoon"],"dastTargetUrls":["example.com]}'
 ```
+
+## Whitelisting Codacy for DAST scans
+
+Our DAST scanner uses dedicated IP addresses. You may need to add the following IP addresses to your allowlist to prevent any connectivity, rate limiting, or security issues.
+
+```
+18.203.76.9
+34.254.123.99
+```
