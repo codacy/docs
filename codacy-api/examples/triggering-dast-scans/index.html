@@ -11,7 +11,7 @@
         <meta name="description" content="Instructions on how to trigger DAST/App using the API.">
       
       
-        <meta http-equiv="last-modified" content="2025-09-30 13:00:34">
+        <meta http-equiv="last-modified" content="2026-02-10 17:33:19">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-api/examples/triggering-dast-scans/">
@@ -1555,6 +1555,13 @@
         <li class="md-nav__item">
   <a href="#trigger-dast-analysis-scans" class="md-nav__link">
     Trigger DAST analysis scans
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#adding-codacy-to-your-allowlist-for-dast-scans" class="md-nav__link">
+    Adding Codacy to your allowlist for DAST scans
   </a>
   
 </li>
@@ -5024,6 +5031,12 @@ Additionaly, you can use the <code>SearchSRMItems</code> endpoint to filter find
 <span class="w">  </span>-H<span class="w"> </span><span class="s2">&quot;api-token: {API_KEY}&quot;</span><span class="w"> </span><span class="se">\</span>
 <span class="w">  </span>-d<span class="w"> </span><span class="s1">&#39;{&quot;statuses&quot;:[&quot;OnTrack&quot;,&quot;Overdue&quot;,&quot;DueSoon&quot;],&quot;dastTargetUrls&quot;:[&quot;example.com]}&#39;</span>
 </code></pre></div></p>
+<h2 id="adding-codacy-to-your-allowlist-for-dast-scans">Adding Codacy to your allowlist for DAST scans<a class="headerlink" href="#adding-codacy-to-your-allowlist-for-dast-scans" title="Permanent link">#</a></h2>
+<p>Our DAST scanner uses dedicated IP addresses. You may need to add the following IP addresses to your firewall's allowlist to prevent any rate limiting or connectivity issues:</p>
+<ul>
+<li>18.203.76.9</li>
+<li>34.254.123.99</li>
+</ul>
               
               
                 
@@ -5180,7 +5193,7 @@ Additionaly, you can use the <code>SearchSRMItems</code> endpoint to filter find
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 30, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 10, 2026</span>
     
   </small>
 </div>
