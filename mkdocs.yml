@@ -611,6 +611,8 @@ nav:
           - organizations/managing-repositories.md
           - organizations/segments.md
           - organizations/issues-metrics.md
+          - organizations/codacy-usage.md
+          - organizations/ai-risk-hub.md
           - organizations/using-gate-policies.md
           - organizations/using-coding-standards.md
           - Managing integrations:
@@ -681,7 +683,12 @@ nav:
     - Release notes:
           - release-notes/index.md
           - Cloud:
+                - 2026:
+                      - release-notes/cloud/cloud-2026-01.md  
+                      - release-notes/cloud/cloud-2026-01-adding-golangci-lint.md
                 - 2025:
+                      - release-notes/cloud/cloud-2025-12.md
+                      - release-notes/cloud/cloud-2025-11.md
                       - release-notes/cloud/cloud-2025-10.md
                       - release-notes/cloud/cloud-2025-09.md
                       - release-notes/cloud/cloud-2025-08.md
@@ -771,6 +778,8 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v16:
+                      - release-notes/self-hosted/self-hosted-v16.0.0.md
                 - v15:
                       - release-notes/self-hosted/self-hosted-v15.0.0.md
                 - v14:

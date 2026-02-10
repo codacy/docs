@@ -16,9 +16,15 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Cloud release notes {: id="cloud"}
 
+2026
+
+-   [Cloud January 2026](cloud/cloud-2026-01.md)
+-   [Adding GolangCI-Lint as new supported tool January, 2026](cloud/cloud-2026-01-adding-golangci-lint.md)
+
 2025
 
-
+-   [Cloud December 2025](cloud/cloud-2025-12.md)
+-   [Cloud November 2025](cloud/cloud-2025-11.md)
 -   [Cloud October 2025](cloud/cloud-2025-10.md)
 -   [Cloud September 2025](cloud/cloud-2025-09.md)
 -   [Cloud August 2025](cloud/cloud-2025-08.md)
@@ -123,6 +129,10 @@ For product updates that are in progress or planned [visit the Codacy public roa
 -   [Cloud July 23, 2018](cloud/cloud-2018-07-23.md)
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
+
+v16
+
+-   [v16.0.0](self-hosted/self-hosted-v16.0.0.md) (January, 2026)
 
 v15
 

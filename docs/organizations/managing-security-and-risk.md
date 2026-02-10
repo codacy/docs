@@ -23,7 +23,7 @@ To access the overview page, select an organization from the top navigation bar 
 The overview page includes six panels:
 
 -   [Open findings overview](#open-findings-overview)
--   [Open findings distribution](#open-findings-distribution)
+-   [Scan types distribution](#scan-types-distribution)
 -   [Open findings history](#open-findings-history)
 -   [Activity history](#activity-history)
 -   [Top 10 high-risk repositories](#top-10-high-risk-repositories)
@@ -37,19 +37,17 @@ To limit the information displayed in each panel, use the filter drop-down above
 
 The **Open findings overview** panel displays the total number of open security findings and the number of findings of each severity, helping you quickly assess the overall security posture of your organization and <span class="skip-vale">quickly</span> review findings that are critical or overdue.
 
-To access the findings page with the corresponding filter applied, click on a number.
+Within this same panel, an additional visualization shows the relative distribution of open findings by status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
 
-![Security and risk management open findings overview panel](images/security-risk-management-overview-open.png)
+To access the findings page with the corresponding filter applied, click on a number or bar area.
 
-### Open findings distribution
+![Security and risk management open findings overview panel](images/security-risk-management-overview-distribution.png)
 
-The **Open findings distribution** panel shows the relative distribution of open findings by scan type, severity, or status, helping you evaluate the distribution of risk across different criteria and identify areas that may need immediate attention.
+### Scan types distribution
 
-To select the desired distribution, use the drop-down in the top right-hand corner of the panel.
+The **Scan types** panel shows the relative distribution of open findings by scan type. To access the findings page with the corresponding filter applied, click on a number from the panel.
 
-To access the findings page with the corresponding filter applied, click on a number.
-
-![Security and risk management open findings distribution panel](images/security-risk-management-overview-distribution.png)
+![Security and risk management scan types distribution panel](images/security-risk-management-scan-type-distribution.png)
 
 ### Open findings history
 
@@ -318,7 +316,7 @@ Each Codacy issue reported by Security and risk management belongs to one of the
 | **File Access**                    | File access security issues may allow an attacker to access arbitrary files and directories stored on the file system such as application source code, configuration, and critical system files.                 |
 | **HTTP Headers**                   | Insecure HTTP headers are a common attack vector for malicious users.                                                                                                                                            |
 | **Input Validation**               | Client input should always be validated to prevent malformed or malicious data from entering the workflow of an information system.                                                                              |
-| **Insecure Modules and Libraries** | Security issues related to modules or libraries that can <span class="skip-vale">potentially</span> include vulnerabilities.                                                                                     |
+| **Insecure Modules and Libraries** | Security issues related to modules or libraries that are malicious or can <span class="skip-vale">potentially</span> include vulnerabilities.                                                                                     |
 | **Insecure Storage**               | Security issues related to insecure storage of sensitive data.                                                                                                                                                   |
 | **Malicious Code**                 | Security issues related to code patterns that are <span class="skip-vale">potentially</span> unsafe.                                                                                                             |
 | **Mass Assignment**                | Unprotected mass assignments are a Rails feature that could allow an attacker to update sensitive model attributes.                                                                                              |
@@ -340,7 +338,7 @@ The following table lists the available scan types and their descriptions:
 | Scan type                         | Description                                                                                                                    |
 |-----------------------------------|--------------------------------------------------------------------------------------------------------------------------------|
 | **Code Scanning**                 | Analysis of source code for vulnerabilities without execution. Also known as Static Application Security Testing (**SAST**).   |
-| **Software Composition Analysis** | Analysis of external libraries and packages for vulnerabilities or outdated versions.                                          |
+| **Software Composition Analysis** | Analysis of external libraries and packages for malicious intent, vulnerabilities or outdated versions.                                          |
 | **Exposed Secrets**               | Detection of sensitive information, such as passwords or API keys, inadvertently included in the code.                         |
 | **Infrastructure as Code**        | Detection of configuration issues within infrastructure-as-code (IaC) files that could pose risks.                             |
 | **Penetration Testing**           | Results from [penetration testing](#opening-and-closing-pen-testing-items) to find security vulnerabilities in running code.   |
