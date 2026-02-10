@@ -71,6 +71,11 @@ The table below describes the supported client-side tools and includes links to 
         <td><a href="../running-deadcode/">Running deadcode</a> (containerized)</td>
     </tr>
     <tr>
+        <td><a href="https://github.com/golangci/golangci-lint">GolangCI-Lint</a></td>
+        <td>GolangCI-Lint is a fast, parallelized Go linters runner that aggregates dozens of different linters into a single tool, allowing developers to detect bugs, style errors, and complexity issues efficiently in their Go codebases.</td>
+        <td><a href="https://github.com/codacy/codacy-golangci-lint#usage">Running GolangCI-Lint</a> (standalone)</td>
+    </tr>
+    <tr>
         <td><a href="https://github.com/securego/gosec">Gosec</a></td>
         <td>Gosec inspects source code for security problems by scanning the Go AST.</td>
         <td><a href="https://github.com/codacy/codacy-gosec#usage">Running Gosec</a> (standalone)</td>
