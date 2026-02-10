@@ -47,7 +47,7 @@ https://docs.codacy.com/coverage-reporter/,Generate coverage reports in a suppor
 https://docs.codacy.com/coverage-reporter/alternative-ways-of-running-coverage-reporter/,"There are alternative ways of running or installing Codacy Coverage Reporter, such as running a Docker image, using a GitHub Action or CircleCI orb, downloading a binary for your operating system, or building the binary from source."
 https://docs.codacy.com/coverage-reporter/troubleshooting-coverage-cli-issues/,Instructions or workarounds to overcome common issues while using Codacy Coverage Reporter CLI.
 https://docs.codacy.com/coverage-reporter/uploading-coverage-in-advanced-scenarios/,"Instructions on how to use the Codacy Coverage Reporter to upload coverage data in advanced scenarios such as when running parallel tests, using monorepos, or testing source code in multiple or unsupported languages."
-https://docs.codacy.com/enterprise-cloud/github-enterprise-cloud/,"Use your GitHub Enterprise credentials when signup or login to Codacy and all your GitHub Enterprise organizations that you belong to, will be available to be added as Organizations on Codacy."
+https://docs.codacy.com/enterprise-cloud/github-enterprise-cloud/,"Use your GitHub Enterprise credentials when signing up or logging in to Codacy and all your GitHub Enterprise organizations that you belong to, will be available to be added as Organizations on Codacy."
 https://docs.codacy.com/faq/code-analysis/can-i-bypass-codacy-status-check/,"To protect your code from unwelcome changes, you can configure your Git workflow to block merging pull requests if they don't pass the Codacy status check."
 https://docs.codacy.com/faq/code-analysis/does-codacy-check-for-dependencies/,"Yes, Codacy scans the manifest files of your repositories and displays any vulnerable dependencies as Codacy issues."
 https://docs.codacy.com/faq/code-analysis/does-codacy-place-limits-on-the-code-analysis/,Codacy uses limits when performing the analysis of your repositories to ensure good performance levels and avoid degradation of service during peak load.
@@ -188,6 +188,7 @@ https://docs.codacy.com/release-notes/cloud/cloud-2025-10/,Release notes for Cod
 https://docs.codacy.com/release-notes/cloud/cloud-2025-11/,Release notes for Codacy Cloud November 2025.
 https://docs.codacy.com/release-notes/cloud/cloud-2025-12/,Release notes for Codacy Cloud December 2025.
 https://docs.codacy.com/release-notes/cloud/cloud-2026-01-adding-golangci-lint/,Documentation for the Codacy automated code review tool.
+https://docs.codacy.com/release-notes/cloud/cloud-2026-01/,Release notes for Codacy Cloud January 2026.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.0/,Release notes for Codacy Self-hosted v1.0.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.1/,Release notes for Codacy Self-hosted v1.0.1.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.1.0/,Release notes for Codacy Self-hosted v1.1.0.
