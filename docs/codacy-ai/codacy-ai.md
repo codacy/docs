@@ -80,6 +80,38 @@ More details about [AI Reviewer here →](../repositories-configure/integrations
 4. Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews.
 5. To request a PR Review from codacy, add a **`codacy-review`** label to your Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.
 
+#### Custom Instructions
+
+To improve the results of the AI Reviewer, you can provide custom instructions to the AI Reviewer. These instructions are specific to a repository and help the AI Reviewer understand the structure of the code, the business logic of the project, and your own preferences.
+
+These instructions are specified in a `review.md` file in the `.codacy/instructions` directory of your repository.
+
+You can kickstart this instructions file asking your AI coding agent of choice to summarize the project and the codebase. Here is an example prompt:
+
+```
+Analyze this repository and generate a concise AI PR reviewer instruction file in Markdown.
+
+The file should give a PR reviewer the essential context that won't be visible in a diff. Cover:
+
+- **Purpose**: What this repo does in 1-2 sentences.
+- **Architecture**: High-level structure, patterns used (e.g. MVC, event-driven, monorepo, etc.).
+- **Folder structure**: Key directories and what lives in each. Skip obvious ones.
+- **Stack**: Languages, frameworks, major libraries, and their roles.
+- **Testing**: Framework used, where tests live, what's expected to be tested.
+- **Code style & conventions**: Naming, file organization, formatting tools, any patterns enforced.
+- **PR-specific rules**: Branch strategy, what a PR should/shouldn't include, migration rules, etc.
+- **Common pitfalls**: Things reviewers should flag — anti-patterns, known gotchas, areas that break easily.
+- **Out of scope**: Anything reviewers should explicitly ignore or not enforce.
+
+Rules for the output:
+- Output only the Markdown content, no preamble or explanation.
+- Be concise. Every line should earn its place — no filler.
+- Use short sections with bullet points. Avoid long prose.
+- If something is not applicable or not inferable, omit the section entirely.
+```
+
+
+
 **Notes**
 
 - Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into model training.
