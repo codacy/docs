@@ -88,7 +88,7 @@ These instructions are specified in a `review.md` file in the `.codacy/instructi
 
 You can kickstart this instructions file asking your AI coding agent of choice to summarize the project and the codebase. Here is an example prompt:
 
-```
+```markdown
 Analyze this repository and generate a concise AI PR reviewer instruction file in Markdown.
 
 The file should give a PR reviewer the essential context that won't be visible in a diff. Cover:
