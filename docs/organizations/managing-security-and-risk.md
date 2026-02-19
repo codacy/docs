@@ -369,16 +369,16 @@ Security and risk management supports checking the languages and infrastructure-
     <tr>
       <td>Apex</td>
       <td><a href="https://pmd.github.io/">PMD</a>,
-          <a href="https://github.com/opengrep/opengrep/">Opengrep</a> </td>
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a></td>
     </tr>
     <tr>
       <td>AWS CloudFormation</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
-          <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
+          <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>1</sup></a></td>
     </tr>
     <tr>
       <td>C</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>3</sup></a>,
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>2</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
@@ -392,7 +392,7 @@ Security and risk management supports checking the languages and infrastructure-
     </tr>
     <tr>
       <td>C++</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>3</sup></a>,
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>2</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
@@ -419,7 +419,7 @@ Security and risk management supports checking the languages and infrastructure-
     </tr>
     <tr>
       <td>Go</td>
-      <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"> <sup>3</sup></a>,
+      <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"> <sup>2</sup></a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
@@ -429,17 +429,17 @@ Security and risk management supports checking the languages and infrastructure-
     </tr>
     <tr>
       <td>Helm</td>
-      <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
+      <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>1</sup></a></td>
     </tr>
     <tr>
       <td>Java</td>
       <td><a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
-          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"> <sup>3</sup></a><a href="#spotbugs-plugin"> <sup>4</sup></a>,
+          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"> <sup>2</sup></a><a href="#spotbugs-plugin"> <sup>3</sup></a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>JavaScript</td>
-      <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>5</sup></a>,
+      <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>4</sup></a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
@@ -453,11 +453,11 @@ Security and risk management supports checking the languages and infrastructure-
     </tr>
     <tr>
       <td>Kubernetes</td>
-      <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>2</sup></a></td>
+      <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>1</sup></a></td>
     </tr>
     <tr>
       <td>Objective-C</td>
-      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>3</sup></a></td>
+      <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>2</sup></a></td>
     </tr>
     <tr>
       <td>PHP</td>
@@ -495,7 +495,7 @@ Security and risk management supports checking the languages and infrastructure-
       <td>Scala</td>
       <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
-          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"> <sup>3</sup></a><a href="#spotbugs-plugin"> <sup>4</sup></a></td>
+          <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"> <sup>2</sup></a><a href="#spotbugs-plugin"> <sup>3</sup></a></td>
     </tr>
     <tr>
       <td>Swift</td>
@@ -503,7 +503,7 @@ Security and risk management supports checking the languages and infrastructure-
     </tr>
     <tr>
       <td>Shell</td>
-      <td><a href="https://www.shellcheck.net/">ShellCheck</a>
+      <td><a href="https://www.shellcheck.net/">ShellCheck</a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a></td>
     </tr>
     <tr>
@@ -517,7 +517,7 @@ Security and risk management supports checking the languages and infrastructure-
     </tr>
     <tr>
       <td>TypeScript</td>
-      <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>5</sup></a>,
+      <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>4</sup></a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
@@ -551,7 +551,7 @@ You're also able to click any dependency to find out more information about it.
 
 ![Security and risk management dependency page](images/security-risk-management-dependencies-single.png)
 
- The dependency overview page offers a quick bird's-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues, the license <a href="#license-scanning"><sup>6</sup></a> applied to any particular version of that dependency, and the [OSSF Scorecard](#ossf-scorecard) security assessment.
+ The dependency overview page offers a quick bird's-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues, the license <a href="#license-scanning"><sup>5</sup></a> applied to any particular version of that dependency, and the [OSSF Scorecard](#ossf-scorecard) security assessment.
 
 ### OSSF Scorecard {: id="ossf-scorecard"}
 
@@ -577,11 +577,11 @@ This information helps you make informed decisions about the security risks asso
 ![Security and risk management OSSF scorecard report](images/security-risk-management-ossf-scorecard.png)
 
 
-<sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.  
-<sup><span id="client-side">3</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
-<sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/).  
-<sup><span id="eslint-plugin">5</span></sup>: Includes the plugins [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [security](https://www.npmjs.com/package/eslint-plugin-security), [security-node](https://www.npmjs.com/package/eslint-plugin-security-node), and [xss](https://www.npmjs.com/package/eslint-plugin-xss).  
-<sup><span id="license-scanning">6</span></sup>: Visit the [supported languages and tools](../getting-started/supported-languages-and-tools.md#supported-languages-and-tools) page for a list of supported languages.  
+<sup><span id="yaml-only">1</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.  
+<sup><span id="client-side">2</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
+<sup><span id="spotbugs-plugin">3</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/).  
+<sup><span id="eslint-plugin">4</span></sup>: Includes the plugins [no-unsanitized](https://www.npmjs.com/package/eslint-plugin-no-unsanitized), [security](https://www.npmjs.com/package/eslint-plugin-security), [security-node](https://www.npmjs.com/package/eslint-plugin-security-node), and [xss](https://www.npmjs.com/package/eslint-plugin-xss).  
+<sup><span id="license-scanning">5</span></sup>: Visit the [supported languages and tools](../getting-started/supported-languages-and-tools.md#supported-languages-and-tools) page for a list of supported languages.  
 
 
 ## App scanning {: id="app-scanning"}
