@@ -11,7 +11,7 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool.">
       
       
-        <meta http-equiv="last-modified" content="2025-12-10 11:33:17">
+        <meta http-equiv="last-modified" content="2026-02-19 16:34:48">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-ai/codacy-ai/">
@@ -4917,7 +4917,7 @@
 <h3 id="ai-enhanced-comments">AI-enhanced comments<a class="headerlink" href="#ai-enhanced-comments" title="Permanent link">#</a></h3>
 <p><em>This feature leverages OpenAI models, and is strictly opt-in: it will only run on repositories or projects where a repository admin has enabled it.</em></p>
 <p>AI-enhanced comments are optional, machine-generated suggestions that appear directly in pull requests and review threads. They use Codacy's AI to provide concise issue summaries, remediation suggestions, and links to relevant documentation — helping reviewers and authors quickly understand and fix problems.</p>
-<p>More details about <a href="../../repositories-configure/integrations/github-integration/#ai-enhanced-comments">AI-enhanced comments here →</a>.</p>
+<p>More details about <a href="../../repositories-configure/integrations/github-integration/#ai-enhanced-comments">AI-enhanced comments here</a>.</p>
 <p><strong>How to turn it on</strong></p>
 <ol>
 <li>Go to your organization or repository settings in Codacy.</li>
@@ -4943,7 +4943,7 @@
 </div>
 <p><em>This feature leverages OpenAI models, and is strictly opt-in: you need to get in touch with us in order to enable it.</em></p>
 <p>Codacy False Positive triage analyzes results on a commit basis to give you visibility into issues that may be false positives (based on their context). During triage, each issue is given a confidence score along with an explanation. When the confidence level falls below a defined threshold, the issue is then flagged as an AI false positive and surfaced for manual review. You can evaluate potential false positives during a pull request in app or on any Codacy page where issues appear. These issues can be ignored or marked as Not a false positive.</p>
-<p>More details about <a href="../../repositories/commits/#false-positive-issues">False Positives here →</a>.</p>
+<p>More details about <a href="../../repositories/commits/#false-positive-issues">False Positives here</a>.</p>
 <p><strong>How to turn it on</strong></p>
 <ol>
 <li>Get in touch with your Customer Success Manager or with <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a></li>
@@ -4963,15 +4963,39 @@
 </div>
 <p><em>This feature leverages Google Gemini models, and is strictly opt-in: it will only run on repositories or projects where a repository admin has enabled it.</em></p>
 <p>The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the power of AI. It draws in the necessary context from source code and PR metadata to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.</p>
-<p>More details about <a href="../../repositories-configure/integrations/github-integration/#ai-reviewer">AI Reviewer here →</a>.</p>
+<p>More details about <a href="../../repositories-configure/integrations/github-integration/#ai-reviewer">AI Reviewer here</a>.</p>
 <p><strong>How to turn it on</strong></p>
 <ol>
 <li>Go to your organization or repository settings in Codacy.</li>
 <li>Navigate to the "Integrations" or "AI features" section (depending on your Codacy plan and UI version).</li>
 <li>Find "AI Reviewer", under "Status checks", and toggle the feature to "On" for the repository or organization scope you want to enable.</li>
 <li>Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews.</li>
-<li>To request a PR Review from codacy, add a <strong><code>codacy-review</code></strong> label to your Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.</li>
+<li>To request a PR Review from Codacy, add a <strong><code>codacy-review</code></strong> label to your Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.</li>
 </ol>
+<h4 id="custom-instructions">Custom Instructions<a class="headerlink" href="#custom-instructions" title="Permanent link">#</a></h4>
+<p>To improve the results of the AI Reviewer, you can provide custom instructions to the AI Reviewer. These instructions are specific to a repository and help the AI Reviewer understand the structure of the code, the business logic of the project, and your own preferences.</p>
+<p>These instructions are specified in a <code>review.md</code> file in the <code>.codacy/instructions</code> directory of your repository.</p>
+<p>You can kickstart this instructions file by asking your AI coding agent of choice to summarize the project and the codebase. Here is an example prompt:</p>
+<div class="highlight"><pre><span></span><code>Analyze this repository and generate a concise AI PR reviewer instruction file in Markdown.
+
+The file should give a PR reviewer the essential context that won&#39;t be visible in a diff. Cover:
+
+<span class="k">-</span><span class="w"> </span><span class="gs">**Purpose**</span>: What this repo does in 1-2 sentences.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Architecture**</span>: High-level structure, patterns used (e.g. MVC, event-driven, monorepo, etc.).
+<span class="k">-</span><span class="w"> </span><span class="gs">**Folder structure**</span>: Key directories and what lives in each. Skip obvious ones.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Stack**</span>: Languages, frameworks, major libraries, and their roles.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Testing**</span>: Framework used, where tests live, what&#39;s expected to be tested.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Code style &amp; conventions**</span>: Naming, file organization, formatting tools, any patterns enforced.
+<span class="k">-</span><span class="w"> </span><span class="gs">**PR-specific rules**</span>: Branch strategy, what a PR should/shouldn&#39;t include, migration rules, etc.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Common pitfalls**</span>: Things reviewers should flag — anti-patterns, known gotchas, areas that break easily.
+<span class="k">-</span><span class="w"> </span><span class="gs">**Out of scope**</span>: Anything reviewers should explicitly ignore or not enforce.
+
+Rules for the output:
+<span class="k">-</span><span class="w"> </span>Output only the Markdown content, no preamble or explanation.
+<span class="k">-</span><span class="w"> </span>Be concise. Every line should earn its place — no filler.
+<span class="k">-</span><span class="w"> </span>Use short sections with bullet points. Avoid long prose.
+<span class="k">-</span><span class="w"> </span>If something is not applicable or not inferable, omit the section entirely.
+</code></pre></div>
 <p><strong>Notes</strong></p>
 <ul>
 <li>Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into model training.</li>
@@ -5134,7 +5158,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">December 10, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 19, 2026</span>
     
   </small>
 </div>
