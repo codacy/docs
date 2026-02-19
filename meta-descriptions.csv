@@ -189,6 +189,7 @@ https://docs.codacy.com/release-notes/cloud/cloud-2025-11/,Release notes for Cod
 https://docs.codacy.com/release-notes/cloud/cloud-2025-12/,Release notes for Codacy Cloud December 2025.
 https://docs.codacy.com/release-notes/cloud/cloud-2026-01-adding-golangci-lint/,Documentation for the Codacy automated code review tool.
 https://docs.codacy.com/release-notes/cloud/cloud-2026-01/,Release notes for Codacy Cloud January 2026.
+https://docs.codacy.com/release-notes/cloud/cloud-2026-02-migrating-semgrep/,"As we previously discussed on our blog, there have been licensing changes to Semgrep, and Opengrep has emerged as an open-source fork of the Semgrep engine. To ensure your continued access to the existing patterns we have switched to Opengrep."
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.0/,Release notes for Codacy Self-hosted v1.0.0.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.0.1/,Release notes for Codacy Self-hosted v1.0.1.
 https://docs.codacy.com/release-notes/self-hosted/self-hosted-v1.1.0/,Release notes for Codacy Self-hosted v1.1.0.
