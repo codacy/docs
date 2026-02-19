@@ -43,7 +43,7 @@ Codacy displays grades on the following places:
 |[Files page](../../repositories/files.md)|Grade for each file in your repository|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)<br/>[Codacy badge](../../getting-started/adding-a-codacy-badge.md)|Grade of each analyzed branch in your repository|
 |[Email notifications](../../account/emails.md#managing-your-email-notifications)|Grade of your repository|
-|[Organization overview](../../organizations/dashboards/organization-overview.md)|Average grade of the repositories in your organization and grade of each repository|
+|[Organization overview](../../organizations/reporting/organization-overview.md)|Average grade of the repositories in your organization and grade of each repository|
 |[Repositories list](../../organizations/managing-repositories.md)|Grade of each repository in your organization|
 
 ## Issues
@@ -73,7 +73,7 @@ Codacy displays issues on the following places:
 |[Files page](../../repositories/files.md)|Number of issues in each file|
 |[Issues page](../../repositories/issues.md)|List of all issues detected in each branch|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Issues per 1000 lines of code|
-|[Organization overview](../../organizations/dashboards/organization-overview.md)|Average issues / kLoC of the repositories in your organization and issue / kLoC of each repository|
+|[Organization overview](../../organizations/reporting/organization-overview.md)|Average issues / kLoC of the repositories in your organization and issue / kLoC of each repository|
 |[Repositories list page](../../organizations/managing-repositories.md)|Issues / kLoC in each repository in your organization|
 
 ## Complexity
