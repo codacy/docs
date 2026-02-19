@@ -4,7 +4,7 @@ description: The Organization overview provides an overview of the repositories 
 
 # Organization overview
 
-Codacy guarantees you high level visibility of your organization regarding its Code Quality, Security positioning, AI Risks, plus Codacy's usage & configurations. In the **Organization overview**, you'll be able to see all these metrics at a glance.
+Codacy guarantees you high-level visibility of your organization regarding its code quality, security positioning, AI risks, plus Codacy's usage and configurations. In the **Organization overview**, you'll be able to see all these metrics at a glance.
 
 The **Organization overview** summarizes the repositories belonging to your Git provider organization that you [follow on Codacy](../managing-repositories.md). Here you can compare their statuses and check for items that require your attention.
 
