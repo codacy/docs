@@ -78,7 +78,7 @@ More details about [AI Reviewer here →](../repositories-configure/integrations
 2. Navigate to the "Integrations" or "AI features" section (depending on your Codacy plan and UI version).
 3. Find "AI Reviewer", under "Status checks", and toggle the feature to "On" for the repository or organization scope you want to enable.
 4. Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews.
-5. To request a PR Review from codacy, add a **`codacy-review`** label to your Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.
+5. To request a PR Review from Codacy, add a **`codacy-review`** label to your Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.
 
 #### Custom Instructions
 
@@ -86,7 +86,7 @@ To improve the results of the AI Reviewer, you can provide custom instructions t
 
 These instructions are specified in a `review.md` file in the `.codacy/instructions` directory of your repository.
 
-You can kickstart this instructions file asking your AI coding agent of choice to summarize the project and the codebase. Here is an example prompt:
+You can kickstart this instructions file by asking your AI coding agent of choice to summarize the project and the codebase. Here is an example prompt:
 
 ```markdown
 Analyze this repository and generate a concise AI PR reviewer instruction file in Markdown.
