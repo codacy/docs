@@ -33,7 +33,7 @@ In this page we'll cover the Overview section, along with the Grade, Complexity,
 
 On the Organization overview you have the following areas to help you monitor your repositories:
 
--   [Code health and security](#overall-quality-chart)
+-   [Code health and security](#code-health-and-security)
 -   [Last updated repositories](#last-updated-repositories)
 
 On this page, you can also see the **Organization setup** area, which provides you with a checklist of items that you should complete to ensure that your organization is set up correctly and that you're getting the most out of Codacy.
