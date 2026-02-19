@@ -31,7 +31,7 @@ If your repository contains source files with extensions not supported by Codacy
     {% include-markdown "../assets/includes/update-file-extensions-reanalyze.md" %}
 
 !!! note
-    Currently, the [Semgrep](https://github.com/codacy/codacy-semgrep) static analysis tool doesn't support custom file extensions.
+    Currently, the [Opengrep](https://github.com/codacy/codacy-opengrep) static analysis tool doesn't support custom file extensions.
 
 ## Disabling analysis of a language {: id="disable-language"}
 
