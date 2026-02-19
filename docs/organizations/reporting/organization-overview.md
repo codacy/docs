@@ -10,7 +10,7 @@ The **Organization overview** summarizes the repositories belonging to your Git 
 
 To access your Organization overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
 
-![Image of the Organization Overview on the Overview tab]()
+![Image of the Organization Overview on the Overview tab](./images/organization-overview.png)
 
 The Organization overview contains the following tabs:
 
@@ -71,7 +71,7 @@ The **Last updated repositories** list displays the last updated repositories, s
 
 ## Grade
 
-![Image of the Grade tab]()
+![Image of the Grade tab](./images/organization-overview-grade.png)
 
 !!! important
     Grade metrics are based **at most on the last 100 updated repositories**.
@@ -81,18 +81,18 @@ The **Last updated repositories** list displays the last updated repositories, s
 !!! important
     Complexity metrics are based **at most on the last 100 updated repositories**.
 
-![Image of the Complexity tab]()
+![Image of the Complexity tab](./images/organization-overview-complexity.png)
 
 ## Duplication
 
 !!! important
     Duplication metrics are based **at most on the last 100 updated repositories**.
 
-![Image of the Duplication tab]()
+![Image of the Duplication tab](./images/organization-overview-duplication.png)
 
 ## Coverage
 
-![Image of the Coverage tab]()
+![Image of the Coverage tab](./images/organization-overview-coverage.png)
 
 
 ## See also
