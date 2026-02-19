@@ -369,7 +369,7 @@ Security and risk management supports checking the languages and infrastructure-
     <tr>
       <td>Apex</td>
       <td><a href="https://pmd.github.io/">PMD</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a> </td>
     </tr>
     <tr>
       <td>AWS CloudFormation</td>
@@ -381,13 +381,13 @@ Security and risk management supports checking the languages and infrastructure-
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>3</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>C#</td>
       <td><a href="https://github.com/SonarSource/sonar-dotnet">SonarC#</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
@@ -395,7 +395,7 @@ Security and risk management supports checking the languages and infrastructure-
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>3</sup></a>,
           <a href="http://cppcheck.sourceforge.net/">Cppcheck</a>,
           <a href="https://dwheeler.com/flawfinder/">Flawfinder</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
@@ -405,7 +405,7 @@ Security and risk management supports checking the languages and infrastructure-
     <tr>
       <td>Dockerfile</td>
       <td><a href="https://github.com/hadolint/hadolint">Hadolint</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
@@ -415,12 +415,12 @@ Security and risk management supports checking the languages and infrastructure-
     </tr>
     <tr>
       <td>GitHub Actions</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+      <td><a href="https://github.com/opengrep/opengrep/">Opengrep</a></td>
     </tr>
     <tr>
       <td>Go</td>
       <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"> <sup>3</sup></a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
@@ -433,14 +433,14 @@ Security and risk management supports checking the languages and infrastructure-
     </tr>
     <tr>
       <td>Java</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+      <td><a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"> <sup>3</sup></a><a href="#spotbugs-plugin"> <sup>4</sup></a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>JavaScript</td>
       <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>5</sup></a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
@@ -449,7 +449,7 @@ Security and risk management supports checking the languages and infrastructure-
     </tr>
     <tr>
       <td>Kotlin</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+      <td><a href="https://github.com/opengrep/opengrep/">Opengrep</a></td>
     </tr>
     <tr>
       <td>Kubernetes</td>
@@ -463,7 +463,7 @@ Security and risk management supports checking the languages and infrastructure-
       <td>PHP</td>
       <td><a href="https://github.com/squizlabs/PHP_CodeSniffer">PHP_CodeSniffer</a>,
           <a href="https://phpmd.org/">PHP Mess Detector</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
@@ -476,39 +476,39 @@ Security and risk management supports checking the languages and infrastructure-
           <a href="https://github.com/landscapeio/prospector">Prospector</a>,
           <a href="https://github.com/pylint-dev/pylint">Pylint</a>,
           <a href="https://docs.astral.sh/ruff/">Ruff</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>Ruby</td>
       <td><a href="https://brakemanscanner.org/">Brakeman</a>,
           <a href="https://github.com/rubocop/rubocop">RuboCop</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>Rust</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+      <td><a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
       <td>Scala</td>
       <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://spotbugs.github.io/">SpotBugs</a><a href="#client-side"> <sup>3</sup></a><a href="#spotbugs-plugin"> <sup>4</sup></a></td>
     </tr>
     <tr>
       <td>Swift</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+      <td><a href="https://github.com/opengrep/opengrep/">Opengrep</a></td>
     </tr>
     <tr>
       <td>Shell</td>
       <td><a href="https://www.shellcheck.net/">ShellCheck</a>
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a></td>
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a></td>
     </tr>
     <tr>
       <td>Terraform</td>
-      <td><a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+      <td><a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
@@ -518,7 +518,7 @@ Security and risk management supports checking the languages and infrastructure-
     <tr>
       <td>TypeScript</td>
       <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>5</sup></a>,
-          <a href="https://semgrep.dev/">Semgrep</a> <a href="#semgrep"><sup>1</sup></a>,
+          <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
@@ -577,7 +577,6 @@ This information helps you make informed decisions about the security risks asso
 ![Security and risk management OSSF scorecard report](images/security-risk-management-ossf-scorecard.png)
 
 
-<sup><span id="semgrep">1</span></sup>: Semgrep supports additional security rules when signing up for [Semgrep Pro](https://semgrep.dev/pricing/).  
 <sup><span id="yaml-only">2</span></sup>: Currently, Trivy only supports scanning YAML files on this platform.  
 <sup><span id="client-side">3</span></sup>: Supported as a [client-side tool](../repositories-configure/local-analysis/client-side-tools.md).  
 <sup><span id="spotbugs-plugin">4</span></sup>: Includes the plugin [Find Security Bugs](https://find-sec-bugs.github.io/).  

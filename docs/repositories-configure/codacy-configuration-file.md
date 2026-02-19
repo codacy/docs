@@ -203,7 +203,7 @@ roslyn
 rubocop
 ruff
 scalastyle
-semgrep
+opengrep
 shellcheck
 sonarcsharp
 sonarvb
@@ -217,7 +217,7 @@ tsqllint
 
 The following names are **deprecated** and shouldn't be used, although they're still accepted in the Codacy configuration file:
 
--   `bundleraudit` - The tool **bundler-audit** [is deprecated](../release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation.md). If you are using **Semprep** or **Trivy** instead, use the names `trivy` or `semgrep`.
+-   `bundleraudit` - The tool **bundler-audit** [is deprecated](../release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation.md). If you are using **Opengrep** or **Trivy** instead, use the names `trivy` or `opengrep`.
 -   `csslint` - The tool **CSSLint** [is deprecated](../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md). If you are using **Stylelint** instead, use the name `stylelint`.
 -   `eslint` - Use the name `eslint-8` for **ESLint**.
 -   `jshint`, `tslint` - The tools **JSHint** and **TSLint** [are deprecated](../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md). If you are using **ESLint** instead, use the name `eslint-8`.

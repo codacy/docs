@@ -18,6 +18,7 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2026
 
+-   [Semgrep to Opengrep migration February, 2026](cloud/cloud-2026-02-migrating-semgrep.md)
 -   [Cloud January 2026](cloud/cloud-2026-01.md)
 -   [Adding GolangCI-Lint as new supported tool January, 2026](cloud/cloud-2026-01-adding-golangci-lint.md)
 
