@@ -57,6 +57,7 @@ monorepo
 namespace
 OAuth
 onboarding
+Opengrep
 PHP_CodeSniffer
 PHPUnit
 plaintext
@@ -75,7 +76,6 @@ sbt
 Scalameta
 Scalastyle
 SCSSLint
-Semgrep
 Serverless
 severities
 ShellCheck
