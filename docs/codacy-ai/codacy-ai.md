@@ -14,7 +14,7 @@ _This feature leverages OpenAI models, and is strictly opt-in: it will only run 
 
 AI-enhanced comments are optional, machine-generated suggestions that appear directly in pull requests and review threads. They use Codacy's AI to provide concise issue summaries, remediation suggestions, and links to relevant documentation — helping reviewers and authors quickly understand and fix problems.
 
-More details about [AI-enhanced comments here →](../repositories-configure/integrations/github-integration.md#ai-enhanced-comments).
+More details about [AI-enhanced comments here](../repositories-configure/integrations/github-integration.md#ai-enhanced-comments).
 
 **How to turn it on**
 
@@ -47,7 +47,7 @@ _This feature leverages OpenAI models, and is strictly opt-in: you need to get i
 
 Codacy False Positive triage analyzes results on a commit basis to give you visibility into issues that may be false positives (based on their context). During triage, each issue is given a confidence score along with an explanation. When the confidence level falls below a defined threshold, the issue is then flagged as an AI false positive and surfaced for manual review. You can evaluate potential false positives during a pull request in app or on any Codacy page where issues appear. These issues can be ignored or marked as Not a false positive.
 
-More details about [False Positives here →](../repositories/commits.md#false-positive-issues).
+More details about [False Positives here](../repositories/commits.md#false-positive-issues).
 
 **How to turn it on**
 
@@ -70,7 +70,7 @@ _This feature leverages Google Gemini models, and is strictly opt-in: it will on
 
 The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the power of AI. It draws in the necessary context from source code and PR metadata to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
 
-More details about [AI Reviewer here →](../repositories-configure/integrations/github-integration.md#ai-reviewer).
+More details about [AI Reviewer here](../repositories-configure/integrations/github-integration.md#ai-reviewer).
 
 **How to turn it on**
 

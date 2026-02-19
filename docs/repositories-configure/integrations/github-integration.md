@@ -42,7 +42,7 @@ The AI Reviewer combines the reliability of deterministic, rule-based static cod
 It provides feedback on missing or weak tests, complex or duplicated code, and keeps security concerns up to date. Beyond that, it adds contextual insights about whether the changes follow the requirements, business rules, and logic used in the project.
 
 !!! tip
-    Improve the AI Reviewer results by providing custom instructions. [Learn how to do it here →](../../codacy-ai/codacy-ai.md#custom-instructions).
+    Improve the AI Reviewer results by providing custom instructions. [Learn how to do it here](../../codacy-ai/codacy-ai.md#custom-instructions).
 
 This setting can be enabled at a repository or organization level. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews. To request a PR Review from Codacy, add a **`codacy-review`** label to your Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.
 
