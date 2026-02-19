@@ -4,23 +4,43 @@ description: The Organization overview provides an overview of the repositories 
 
 # Organization overview
 
-The **Organization overview** provides an overview of the repositories belonging to your Git provider organization that you [follow on Codacy](../managing-repositories.md). Here you can compare their statuses and check for items that require your attention.
+Codacy allows you to guarantee visibility at high level of your organization in terms of code quality, security, ai risks and codacy's configurations. In the overview you're able to now see, in a single view all these parameters at a glace.
+
+The Organization overview contains the following tabs:
+
+- [Overview](#overview)
+- [Open issues](./issues-metrics.md)
+- [Grade](#grade)
+- [Complexity](#complexity)
+- [Duplication](#duplication)
+- [Coverage](#coverage)
+- [Codacy Usage](./codacy-usage.md)
+- [AI Risk Hub](./ai-risk-hub.md)
+
+![Image of the Organization Overview on the Overview tab]()
+
+In this page we'll cover the Overview, along with the Grade, Complexity, Duplication and Coverage sections.
+
+## Overview
+
+The **Organization overview** provides a summary of the repositories belonging to your Git provider organization that you [follow on Codacy](../managing-repositories.md). Here you can compare their statuses and check for items that require your attention.
 
 To access your Organization overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
 
-Use the drop-down list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained. The selected repositories are stored in your browser so that the same filter is applied between your visits to the Organization overview page.
+Use the dropdown list at the top of the page to filter the information displayed on all dashboard areas based on the repositories that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained. The selected repositories are stored in your browser so that the same filter is applied between your visits to the Organization overview page.
 
 On the Organization overview you have the following areas to help you monitor your repositories:
 
--   [Overall quality chart](#overall-quality-chart)
+-   [Code health and security](#overall-quality-chart)
 -   [Last updated repositories](#last-updated-repositories)
--   [Issues metrics](issues-metrics.md)
 
 On this page, you can also see the **Organization setup** area, which provides you with a checklist of items that you should complete to ensure that your organization is set up correctly and that you're getting the most out of Codacy.
 
 The following sections provide a detailed description of the repository-related dashboard areas.
 
 {% include-markdown "../../assets/includes/dashboard-api-report-note.md" %}
+
+## Code health and security {: id="overall-quality-chart"}
 
 ## Overall quality chart
 
