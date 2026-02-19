@@ -25,7 +25,7 @@ The Organization overview contains the following tabs:
 
 You can use the filters at the top of the page to filter all information displayed by the repositories or segments that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained. Your filter selection is stored in your browser so that you can keep your focus between your visits.
 
-In this page we'll cover the Overview section, along with the Grade, Complexity, Duplication and Coverage sections. 
+On this page, we'll cover the Overview section, along with the Grade, Complexity, Duplication, and Coverage sections.
 
 {% include-markdown "../../assets/includes/dashboard-api-report-note.md" %}
 
