@@ -4,7 +4,7 @@ description: The Organization overview provides an overview of the repositories 
 
 # Organization overview
 
-The **Organization overview** provides an overview of the repositories belonging to your Git provider organization that you [follow on Codacy](managing-repositories.md). Here you can compare their statuses and check for items that require your attention.
+The **Organization overview** provides an overview of the repositories belonging to your Git provider organization that you [follow on Codacy](../managing-repositories.md). Here you can compare their statuses and check for items that require your attention.
 
 To access your Organization overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
 
@@ -20,11 +20,11 @@ On this page, you can also see the **Organization setup** area, which provides y
 
 The following sections provide a detailed description of the repository-related dashboard areas.
 
-{% include-markdown "../assets/includes/dashboard-api-report-note.md" %}
+{% include-markdown "../../assets/includes/dashboard-api-report-note.md" %}
 
 ## Overall quality chart
 
-The **Overall quality** chart compares the repositories that you follow regarding [grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade), [issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Each tab displays the average value for the corresponding metric for the last updated repositories.
+The **Overall quality** chart compares the repositories that you follow regarding [grade](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade), [issues](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Each tab displays the average value for the corresponding metric for the last updated repositories.
 
 !!! important
     -   The overall quality chart calculates metrics and displays data only for the **repositories that you follow** on Codacy. This means that depending on their list of followed repositories, two users can see different results on this chart.
@@ -41,7 +41,7 @@ If you have over 8 repositories, the chart displays your repositories grouped by
 ![Overall quality chart with grouped repositories](images/organization-overview-overall-quality-grouped.png)
 
 !!! tip
-    If you don't have coverage set up for any of your repositories yet, the coverage tab provides you with instructions on [how to add coverage for your repositories](../coverage-reporter/index.md).
+    If you don't have coverage set up for any of your repositories yet, the coverage tab provides you with instructions on [how to add coverage for your repositories](../../coverage-reporter/index.md).
 
 
 ## Last updated repositories
@@ -59,6 +59,6 @@ The **Last updated repositories** list displays the last updated repositories, s
 
 ## See also
 
--   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
--   [Using the Codacy API to obtain current issues in repositories](../codacy-api/examples/obtaining-current-issues-in-repositories.md)
--   [Using the Codacy API to obtain code quality metrics for files](../codacy-api/examples/obtaining-code-quality-metrics-for-files.md)
+-   [Which metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-   [Using the Codacy API to obtain current issues in repositories](../../codacy-api/examples/obtaining-current-issues-in-repositories.md)
+-   [Using the Codacy API to obtain code quality metrics for files](../../codacy-api/examples/obtaining-code-quality-metrics-for-files.md)

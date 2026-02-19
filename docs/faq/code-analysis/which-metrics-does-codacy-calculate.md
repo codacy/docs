@@ -43,7 +43,7 @@ Codacy displays grades on the following places:
 |[Files page](../../repositories/files.md)|Grade for each file in your repository|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)<br/>[Codacy badge](../../getting-started/adding-a-codacy-badge.md)|Grade of each analyzed branch in your repository|
 |[Email notifications](../../account/emails.md#managing-your-email-notifications)|Grade of your repository|
-|[Organization overview](../../organizations/organization-overview.md)|Average grade of the repositories in your organization and grade of each repository|
+|[Organization overview](../../organizations/dashboards/organization-overview.md)|Average grade of the repositories in your organization and grade of each repository|
 |[Repositories list](../../organizations/managing-repositories.md)|Grade of each repository in your organization|
 
 ## Issues
@@ -73,7 +73,7 @@ Codacy displays issues on the following places:
 |[Files page](../../repositories/files.md)|Number of issues in each file|
 |[Issues page](../../repositories/issues.md)|List of all issues detected in each branch|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Issues per 1000 lines of code|
-|[Organization overview](../../organizations/organization-overview.md)|Average issues / kLoC of the repositories in your organization and issue / kLoC of each repository|
+|[Organization overview](../../organizations/dashboards/organization-overview.md)|Average issues / kLoC of the repositories in your organization and issue / kLoC of each repository|
 |[Repositories list page](../../organizations/managing-repositories.md)|Issues / kLoC in each repository in your organization|
 
 ## Complexity
@@ -93,7 +93,7 @@ Codacy displays complexity on the following places:
 |[Commit detail page](../../repositories/commits.md)<br/>[Pull request detail page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|The complexity variation introduced by a commit or pull request is calculated by summing the complexity differences of all changed files where the difference is 4 or more.
 |[Files page](../../repositories/files.md)|The file complexity value is the sum of the complexity values of all methods defined within the file|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Percentage of complex files in your repository and how the metric is evolving over time|
-|[Organization overview](../../organizations/organization-overview.md)|Average percentage of complex files in the repositories in your organization and percentage of complex files in each repository|
+|[Organization overview](../../organizations/dashboards/organization-overview.md)|Average percentage of complex files in the repositories in your organization and percentage of complex files in each repository|
 |[Repositories list page](../../organizations/managing-repositories.md)|Percentage of complex files in each repository in your organization|
 
 ## Duplication
@@ -116,7 +116,7 @@ Codacy displays duplication on the following places:
 |[Commit detail page](../../repositories/commits.md)<br/>[Pull request detail page](../../repositories/pull-requests.md)<br/>[Email notifications](../../account/emails.md#managing-your-email-notifications)|Number of clones added or fixed by a commit or pull request|
 |[Files page](../../repositories/files.md)|Duplication value of each file|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Percentage of duplicated files in your repository and how the metric is evolving over time|
-|[Organization overview](../../organizations/organization-overview.md)|Average percentage of duplicated files in the repositories in your organization and percentage of complex files in each repository|
+|[Organization overview](../../organizations/dashboards/organization-overview.md)|Average percentage of duplicated files in the repositories in your organization and percentage of complex files in each repository|
 |[Repositories list page](../../organizations/managing-repositories.md)|Percentage of duplicated files in each repository in your organization|
 
 ## Code coverage
@@ -151,7 +151,7 @@ Once the coverage setup is complete, Codacy displays coverage data on the follow
 |[Files page](../../repositories/files.md)|Coverage percentage of each file|
 |[Repository Dashboard](../../repositories/repository-dashboard.md)|Coverage of the most recent commit of the selected branch and its evolution over time|
 |[Codacy badge](../../getting-started/adding-a-codacy-badge.md)|Coverage of the most recent commit of the configured branch|
-|[Organization overview](../../organizations/organization-overview.md)|Average coverage of the repositories in your organization and coverage of each repository|
+|[Organization overview](../../organizations/dashboards/organization-overview.md)|Average coverage of the repositories in your organization and coverage of each repository|
 |[Repositories list page](../../organizations/managing-repositories.md)|Coverage of each repository in your organization|
 
 ## See also
