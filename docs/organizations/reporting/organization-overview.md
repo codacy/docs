@@ -41,7 +41,7 @@ On this page, you can also see the **Organization setup** area, which provides y
 
 ### Code health and security
 
-![Image of Code health and security section]()
+![Image of Code health and security section](./images/organization-overview-code-health-security.png)
 
 The **Overall quality** chart compares the repositories that you follow regarding [grade](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade), [issues](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Each tab displays the average value for the corresponding metric for the last updated repositories.
 
