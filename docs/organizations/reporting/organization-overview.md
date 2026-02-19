@@ -38,12 +38,10 @@ On the Organization overview you have the following areas to help you monitor yo
 
 On this page, you can also see the **Organization setup** area, which provides you with a checklist of items that you should complete to ensure that your organization is set up correctly and that you're getting the most out of Codacy.
 
-The following sections provide a detailed description of the repository-related dashboard areas.
 
+### Code health and security
 
-### Code health and security {: id="overall-quality-chart"}
-
-### Overall quality chart
+![Image of Code health and security section]()
 
 The **Overall quality** chart compares the repositories that you follow regarding [grade](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade), [issues](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Each tab displays the average value for the corresponding metric for the last updated repositories.
 
@@ -52,17 +50,10 @@ The **Overall quality** chart compares the repositories that you follow regardin
 
     -   The overall quality chart displays information for **at most the last 100 updated repositories**.
 
-![Overall quality chart](images/organization-overview-overall-quality.png)
-
 -   Hover the mouse pointer over the bars to see the metrics for the corresponding repositories.
 -   Click the bars to navigate directly to the corresponding repository.
 
 If you have over 8 repositories, the chart displays your repositories grouped by grade or percentage intervals. Click the bars to see and navigate directly to the corresponding repositories.
-
-![Overall quality chart with grouped repositories](images/organization-overview-overall-quality-grouped.png)
-
-!!! tip
-    If you don't have coverage set up for any of your repositories yet, the coverage tab provides you with instructions on [how to add coverage for your repositories](../../coverage-reporter/index.md).
 
 
 ### Last updated repositories
@@ -78,14 +69,30 @@ The **Last updated repositories** list displays the last updated repositories, s
     -   **GitLab:** date when the project was last updated (value of `last_activity_at` from the [GitLab Groups API](https://docs.gitlab.com/ee/api/groups.html)). Note that this value is only updated [at most once per hour](https://gitlab.com/gitlab-org/gitlab/-/issues/20952)).
     -   **Bitbucket:** date when the repository was last updated (value of `updated_on` from the [Bitbucket Repositories API](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/#api-group-repositories)). **On Bitbucket Server** Codacy can't obtain this information and the list displays the repositories in alphabetical order.
 
-
 ## Grade
+
+![Image of the Grade tab]()
+
+!!! important
+    Grade metrics are based **at most on the last 100 updated repositories**.
 
 ## Complexity
 
+!!! important
+    Complexity metrics are based **at most on the last 100 updated repositories**.
+
+![Image of the Complexity tab]()
+
 ## Duplication
 
+!!! important
+    Duplication metrics are based **at most on the last 100 updated repositories**.
+
+![Image of the Duplication tab]()
+
 ## Coverage
+
+![Image of the Coverage tab]()
 
 
 ## See also
