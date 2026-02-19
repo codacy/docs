@@ -14,7 +14,7 @@ _This feature leverages OpenAI models, and is strictly opt-in: it will only run 
 
 AI-enhanced comments are optional, machine-generated suggestions that appear directly in pull requests and review threads. They use Codacy's AI to provide concise issue summaries, remediation suggestions, and links to relevant documentation — helping reviewers and authors quickly understand and fix problems.
 
-More details about [AI-enhanced comments here →](../repositories-configure/integrations/github-integration.md#ai-enhanced-comments).
+More details about [AI-enhanced comments here](../repositories-configure/integrations/github-integration.md#ai-enhanced-comments).
 
 **How to turn it on**
 
@@ -47,7 +47,7 @@ _This feature leverages OpenAI models, and is strictly opt-in: you need to get i
 
 Codacy False Positive triage analyzes results on a commit basis to give you visibility into issues that may be false positives (based on their context). During triage, each issue is given a confidence score along with an explanation. When the confidence level falls below a defined threshold, the issue is then flagged as an AI false positive and surfaced for manual review. You can evaluate potential false positives during a pull request in app or on any Codacy page where issues appear. These issues can be ignored or marked as Not a false positive.
 
-More details about [False Positives here →](../repositories/commits.md#false-positive-issues).
+More details about [False Positives here](../repositories/commits.md#false-positive-issues).
 
 **How to turn it on**
 
@@ -70,7 +70,7 @@ _This feature leverages Google Gemini models, and is strictly opt-in: it will on
 
 The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the power of AI. It draws in the necessary context from source code and PR metadata to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
 
-More details about [AI Reviewer here →](../repositories-configure/integrations/github-integration.md#ai-reviewer).
+More details about [AI Reviewer here](../repositories-configure/integrations/github-integration.md#ai-reviewer).
 
 **How to turn it on**
 
@@ -78,7 +78,39 @@ More details about [AI Reviewer here →](../repositories-configure/integrations
 2. Navigate to the "Integrations" or "AI features" section (depending on your Codacy plan and UI version).
 3. Find "AI Reviewer", under "Status checks", and toggle the feature to "On" for the repository or organization scope you want to enable.
 4. Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews.
-5. To request a PR Review from codacy, add a **`codacy-review`** label to your Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.
+5. To request a PR Review from Codacy, add a **`codacy-review`** label to your Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.
+
+#### Custom Instructions
+
+To improve the results of the AI Reviewer, you can provide custom instructions to the AI Reviewer. These instructions are specific to a repository and help the AI Reviewer understand the structure of the code, the business logic of the project, and your own preferences.
+
+These instructions are specified in a `review.md` file in the `.codacy/instructions` directory of your repository.
+
+You can kickstart this instructions file by asking your AI coding agent of choice to summarize the project and the codebase. Here is an example prompt:
+
+```markdown
+Analyze this repository and generate a concise AI PR reviewer instruction file in Markdown.
+
+The file should give a PR reviewer the essential context that won't be visible in a diff. Cover:
+
+- **Purpose**: What this repo does in 1-2 sentences.
+- **Architecture**: High-level structure, patterns used (e.g. MVC, event-driven, monorepo, etc.).
+- **Folder structure**: Key directories and what lives in each. Skip obvious ones.
+- **Stack**: Languages, frameworks, major libraries, and their roles.
+- **Testing**: Framework used, where tests live, what's expected to be tested.
+- **Code style & conventions**: Naming, file organization, formatting tools, any patterns enforced.
+- **PR-specific rules**: Branch strategy, what a PR should/shouldn't include, migration rules, etc.
+- **Common pitfalls**: Things reviewers should flag — anti-patterns, known gotchas, areas that break easily.
+- **Out of scope**: Anything reviewers should explicitly ignore or not enforce.
+
+Rules for the output:
+- Output only the Markdown content, no preamble or explanation.
+- Be concise. Every line should earn its place — no filler.
+- Use short sections with bullet points. Avoid long prose.
+- If something is not applicable or not inferable, omit the section entirely.
+```
+
+
 
 **Notes**
 
