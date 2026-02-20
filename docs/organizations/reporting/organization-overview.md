@@ -138,7 +138,7 @@ These metrics are the basis of all components in this dashboard:
 
 | Metric | Description |
 | ------ | ----------- |
-| **Coverage** | _coveredLines / coverableLines_ <br/>Aggregation of all covered lines divided by all coverable lines across all repositories (or your filter selection, see [filters](#overview-filters)). This metric only includes repositories reporting coverage. |
+ **Coverage** | `coveredLines / coverableLines` <br/>Aggregation of all covered lines divided by all coverable lines across all repositories (or your filter selection, see [filters](#overview-filters)). This metric only includes repositories reporting coverage. |
 | **Repositories reporting coverage** | Repositories that have coverage based on the latest merged pull request. For example, if the latest merged pull request reported coverage metrics to Codacy, that repository is counted as reporting coverage. |
 | **Coverage trend** | Trend over time for covered lines, uncovered lines, and organization coverage (or your filter selection, see [filters](#overview-filters)). You can select different time ranges and granularities, and select a date to see which repositories changed most in that period. |
 
