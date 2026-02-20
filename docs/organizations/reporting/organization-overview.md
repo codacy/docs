@@ -93,7 +93,7 @@ To learn more about how grades are calculated [how metrics are calculated](../..
 ![Image of the Complexity tab](./images/organization-overview-complexity.png)
 
 Complexity is a metric that allows you to understand which repositories are at risk of ...
-In this tab, you'll be able to understand your complexity positioning (based on the number of complex files) at an organization level, plus how repos stack according to their [Goals](../../repositories/adjusting-quality-goals.md). We consider a file "complex" if its cyclomatic complexity value is higher than the goal defined at a repository level. To learn about what we consider a complex file, see [how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
+In this tab, you'll be able to understand your complexity positioning (based on the number of complex files) at an organization level, plus how repos stack according to their [Goals](../../repositories-configure/adjusting-quality-goals.md). We consider a file "complex" if its cyclomatic complexity value is higher than the goal defined at a repository level. To learn about what we consider a complex file, see [how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
 
 From this panel you can understand, from the list of the top 100 most recently updated repositories, which ones are above, below or don't have a goal. Since complexity is a "depreciative metric", repositories "above goal" will be the ones immediately flagged, so you can review and take action uppon them.
 
@@ -107,9 +107,9 @@ On the bottom, you have a section where you can see the distribution of complex 
 
 Duplication is a metric that allows you to check if sequences of duplicate code exist in at least two different places of the source code of your repository.
 
-In this tab, you'll be able to see the average of duplication that you have in your repositores, check which repos has duplication above, bellow or without any goals set up.
+In this tab, you'll be able to see the average of duplication that you have in your repositores, check which repos has duplication above, bellow or without any [goals](../../repositories-configure/adjusting-quality-goals.md) set up.
 
-To learn more about duplication metrics, see [How duplication is calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication).
+To learn more about duplication metrics, see [how duplication is calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication).
 
 !!! important
     Duplication metrics are based **at most on the last 100 updated repositories**.
