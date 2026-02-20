@@ -11,7 +11,7 @@ Across the application, Codacy calculates and displays data for the repositories
 
 ![Repositories list](images/repositories.png)
 
-This page lists the repositories that you follow on Codacy sorted by [last updated date](organization-overview.md#last-updated-repositories), and allows you to compare the repositories on the list according to the following metrics:
+This page lists the repositories that you follow on Codacy sorted by [last updated date](./reporting/organization-overview.md#last-updated-repositories), and allows you to compare the repositories on the list according to the following metrics:
 
 -   [Grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade)
 -   [Issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues)

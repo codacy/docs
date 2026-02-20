@@ -4,7 +4,7 @@ description: The organization's AI Risk Hub dashboard provides an overview of al
 
 # AI Risk Hub
 
-The **AI Risk Hub** dashboard provides an overview of all the AI issues detected in the repositories applied to the organization's AI Policy standard and your organization's risk level based on your AI practices. Here, you can navigate through the issues detected in your repositories and filter them by severity and category. You can also filter the issues by selecting specific repositories or using [the segments that you have set up](segments.md).
+The **AI Risk Hub** dashboard provides an overview of all the AI issues detected in the repositories applied to the organization's AI Policy standard and your organization's risk level based on your AI practices. Here, you can navigate through the issues detected in your repositories and filter them by severity and category. You can also filter the issues by selecting specific repositories or using [the segments that you have set up](../segments.md).
 
 !!! important
     Currently this tab is a preview of a Business tier feature.
@@ -52,7 +52,7 @@ Ensures protection on all fronts, by integrating vulnerability detection through
 This list displays repositories in descending order based on the number of AI issues. Depending on the filters applied, the list will show repositories with the most AI open issues, grouped by severity or AI category.
 
 
-![Repositories with most AI issues](images/repositories-with-most-ai-issues.png)
+![Repositories with most AI issues](../images/repositories-with-most-ai-issues.png)
 
 ## Risk Level
 
@@ -67,10 +67,10 @@ These control factors are specified in the **AI Risk Checklist**.
 With most repositories today being subject to GenAI code contributions, the checklist covers essential source code controls that we recommend to enable across all projects within your organization:
 
 - AI Policy enabled: Enable the AI Policy inside the AI Risk Hub tab.
-- Coverage enabled: Set up code coverage for your repositories. See how to [upload coverage data](../coverage-reporter/index.md) to Codacy.
-- Enforced gates: Add [gates to your repositories](../repositories-configure/adjusting-quality-gates.md), and preferentially [apply repositories to gate policies](./using-gate-policies.md). 
-- Protected pull requests: Protect your pull requests by [enforcing quality gates](../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
-- Daily vulnerability scans: [Enable Proactive SCA](./managing-security-and-risk.md#dependencies-list) to protect your repositories from dependencies vulnerabilities.
-- Applications scanned: [Enable App scanning](./managing-security-and-risk.md#app-scanning) to scan Web Applications and APIs for security vulnerabilities.
+- Coverage enabled: Set up code coverage for your repositories. See how to [upload coverage data](../../coverage-reporter/index.md) to Codacy.
+- Enforced gates: Add [gates to your repositories](../../repositories-configure/adjusting-quality-gates.md), and preferentially [apply repositories to gate policies](../using-gate-policies.md). 
+- Protected pull requests: Protect your pull requests by [enforcing quality gates](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
+- Daily vulnerability scans: [Enable Proactive SCA](../managing-security-and-risk.md#dependencies-list) to protect your repositories from dependencies vulnerabilities.
+- Applications scanned: [Enable App scanning](../managing-security-and-risk.md#app-scanning) to scan Web Applications and APIs for security vulnerabilities.
 
 ![AI Risk Checklist](images/ai-risk-checklist.png)
