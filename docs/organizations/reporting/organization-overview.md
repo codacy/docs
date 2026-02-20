@@ -4,7 +4,7 @@ description: The Organization overview provides an overview of the repositories 
 
 # Organization overview
 
-Codacy guarantees you high-level visibility of your organization regarding its code quality, security positioning, AI risks, plus Codacy's usage and configurations. In the **Organization overview**, you'll be able to see all these metrics at a glance.
+Codacy guarantees you high-level visibility of your organization regarding its code quality, security positioning, AI risks, and Codacy's usage and configurations. In the **Organization overview**, you'll be able to see all these metrics at a glance.
 
 The **Organization overview** summarizes the repositories belonging to your Git provider organization that you [follow on Codacy](../managing-repositories.md). Here you can compare their statuses and check for items that require your attention.
 
@@ -43,18 +43,26 @@ On this page, you can also see the **Organization setup** area, which provides y
 
 ![Image of Code health and security section](./images/organization-overview-code-health-security.png)
 
-The **Overall quality** chart compares the repositories that you follow regarding [grade](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade), [issues](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues), [complex files](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity), [duplication](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication), and [code coverage](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage). Each tab displays the average value for the corresponding metric for the last updated repositories.
+The **Code health and security** provides a snapshot of your organization and its hotspots. Here you can see at a glance the number of Open Issues, New vs Fixed issues, Prevented issues, along with complexity, duplication, coverage and security metrics. You can click on any of these metrics to go into more details on each section.
+
+Some of these metrics will be dependent on your billing plan, and are calculated based on different factors. To understand more, you can check the table below:
+
+| Metric | Availability | How it is calculated |
+| ------ | ------------ | -------------------- |
+| Open issues, New and Fixed issues, and Prevented issues | Paid plans | [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues) |
+| Grade | Open source & Trials | [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade) |
+| Complexity | All plans | [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity) |
+| Duplication | All plans | [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication) |
+| Coverage | All plans <a href="#coverage"><sup>1</sup></a>| [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage) |
+| Security | All plans | [More details](../managing-security-and-risk.md) |
+
 
 !!! important
     -   The overall quality chart calculates metrics and displays data only for the **repositories that you follow** on Codacy. This means that depending on their list of followed repositories, two users can see different results on this chart.
 
-    -   The overall quality chart displays information for **at most the last 100 updated repositories**.
+    -   Metrics like Grade, Complexity, Duplication, and Coverage (on free plans) only represent **at most the last 100 updated repositories**.
 
--   Hover the mouse pointer over the bars to see the metrics for the corresponding repositories.
--   Click the bars to navigate directly to the corresponding repository.
-
-If you have over 8 repositories, the chart displays your repositories grouped by grade or percentage intervals. Click the bars to see and navigate directly to the corresponding repositories.
-
+<sup><span id="coverage">1</span></sup>: The way that coverage metrics are calculated is different between Paid, and Open source and trials. [Learn more](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage)
 
 ### Last updated repositories
 
