@@ -62,7 +62,7 @@ Some of these metrics depend on your billing plan and are calculated differently
 
     -   Metrics like grade, complexity, duplication, and coverage (on free plans) represent **at most the last 100 updated repositories**.
 
-<sup><span id="coverage-note">1</span></sup>: Coverage metrics are calculated differently for paid plans and for open source and trial plans. [Learn more](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage).
+<sup><span id="coverage-note">1</span></sup>: Coverage metrics are calculated differently for paid plans and for open source and trial plans. [Learn more](#coverage).
 
 ### Last updated repositories
 
@@ -124,6 +124,7 @@ The **Coverage** tab provides organization-level visibility into your coverage s
 
 !!! important
     The Coverage tab has two modes:
+
     - On trial and open source plans, you can see the average repository coverage across the 100 most recently updated repositories. This includes visibility into which repositories are above goal, below goal, or without a goal, similar to the Duplication and Complexity tabs.
     - On paid plans, the dashboard removes the 100-repository limitation and provides additional metrics to help you prioritize improvements. This is the mode covered in this page.
 
