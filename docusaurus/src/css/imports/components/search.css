@@ -1,0 +1,33 @@
+
+/* Local search (navbar) sizing: keep input and dropdown consistent */
+:root {
+    --codacy-search-width: min(30rem, 50vw);
+    --codacy-search-width-collapsed: 14rem;
+    --search-local-modal-width: var(--codacy-search-width);
+    --ifm-navbar-search-input-background-color: var(--ifm-background-color);
+}
+
+@media (max-width: 576px) {
+    :root {
+        --codacy-search-width: min(22rem, calc(100vw - 15rem - var(--ifm-navbar-padding-horizontal) * 2));
+        --codacy-search-width-collapsed: 10rem;
+    }
+}
+
+.navbar .navbar__search {
+    min-width: var(--codacy-search-width-collapsed);
+}
+  
+.navbar .navbar__search-input {
+    background: var(--ifm-navbar-search-input-background-color) var(--ifm-navbar-search-input-icon) no-repeat 0.75rem center / 1rem 1rem;
+    width: var(--codacy-search-width-collapsed);
+    transition: width 160ms ease;
+    border: 1px solid var(--ifm-color-emphasis-300);
+    border-radius: 0.5rem;
+    height: 2.5rem;
+}
+
+.navbar .navbar__search-input:focus {
+    width: var(--codacy-search-width);
+}
+  
