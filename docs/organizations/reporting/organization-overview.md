@@ -81,7 +81,7 @@ The **Last updated repositories** list displays the last updated repositories, s
 
 ![Image of the Grade tab](./images/organization-overview-grade.png)
 
-Grade tab will give you visibility over the distributions of Grades accross your repositories. From this tab, you can understand which repositories are most at risk by selecting a grade from the distribution chart. This will give you prioritize which repositories need more attention.
+Grade tab will give you visibility over the distributions of Grades across your repositories. From this tab, you can understand which repositories are most at risk by selecting a grade from the distribution chart. This will help you prioritize which repositories need more attention.
 
 To learn more about how grades are calculated [see how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade).
 
@@ -96,7 +96,7 @@ Complexity allows you to understand which repositories are at risk of having cod
 
 In this tab, you'll be able to understand your complexity positioning (based on the number of complex files) at an organization level, plus how repos stack according to their [Goals](../../repositories-configure/adjusting-quality-goals.md). We consider a file "complex" if its cyclomatic complexity value is higher than the goal defined at a repository level. To learn about what we consider a complex file, see [how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
 
-From this panel you can understand, from the list of the top 100 most recently updated repositories, which ones are above, below or don't have a goal. Since complexity is a "depreciative metric", repositories "above goal" will be the ones immediately flagged, so you can review and take action uppon them.
+From this panel you can understand, from the list of the top 100 most recently updated repositories, which ones are above, below or don't have a goal. Since complexity is a "depreciative metric", repositories "above goal" will be the ones immediately flagged, so you can review and take action upon them.
 
 On the bottom, you have a section where you can see the distribution of complex files, and here you can understand more clearly which files are complex because they are above goal, below goal, or without a goal on their repository. Files are not filterable, whereas the Repository goal distributions are.
 
@@ -120,7 +120,7 @@ To learn more about duplication metrics, see [how duplication is calculated](../
 
 ![Image of the Coverage tab](./images/organization-overview-coverage.png)
 
-The Coverage tab provides you visibity at an organization level of your organization-wide coverage positioning. Strong coverage positioning allows you to have better protection over your code and derisk code changes / breaking incidents.
+The Coverage tab provides you visibility at an organization level of your organization-wide coverage positioning. Strong coverage positioning allows you to have better protection over your code and derisk code changes / breaking incidents.
 
 !!! important
     The coverage tab has two modes:
