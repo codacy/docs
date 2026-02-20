@@ -127,7 +127,7 @@ The Coverage tab provides you visibility at an organization level of your organi
     - On Trial and Open source plans, you're able to see your repository coverage average across the 100 most recently updated repositories. It provides visibility about which repositories are above, below or without goal, similar to the the other Duplication and Complexity tabs
     - On Paid plans, we invested on providing wider visibility of your coverage positioning, removing the 100 repository limitation, and providing important metrics on where to invest the most. This is the version of the dashboard that we'll cover on this documentation.
 
-    To understand better how these metrics are calculated, [learn more](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#coverage).
+    To understand better how these metrics are calculated, [learn more](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage).
 
 The Coverage tab is based on two defining metrics:
 
