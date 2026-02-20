@@ -4,7 +4,7 @@ description: The Organization overview provides an overview of the repositories 
 
 # Organization overview
 
-Codacy guarantees you high-level visibility of your organization regarding its code quality, security positioning, AI risks, and Codacy's usage and configurations. In the **Organization overview**, you'll be able to see all these metrics at a glance.
+Codacy gives you high-level visibility into your organization's code quality, security posture, AI risks, and usage and configuration metrics. In the **Organization overview**, you can see these metrics at a glance.
 
 The **Organization overview** summarizes the repositories belonging to your Git provider organization that you [follow on Codacy](../managing-repositories.md). Here you can compare their statuses and check for items that require your attention.
 
@@ -20,18 +20,18 @@ The Organization overview contains the following tabs:
 - [Complexity](#complexity)
 - [Duplication](#duplication)
 - [Coverage](#coverage)
-- [Codacy Usage](./codacy-usage.md)
+- [Codacy usage](./codacy-usage.md)
 - [AI Risk Hub](./ai-risk-hub.md)
 
-<div id="overview-filters">You can use the filters at the top of the page to filter all information displayed by the repositories or segments that you select. For example, you can use the filter to monitor the quality of the repositories maintained by specific teams or that include certain programming languages, or to ignore legacy repositories that are no longer maintained. Your filter selection is stored in your browser so that you can keep your focus between your visits.</div>
+<div id="overview-filters">Use the filters at the top of the page to filter all dashboard information by repositories or segments. For example, use filters to monitor repositories maintained by specific teams or repositories using specific programming languages, or to ignore legacy repositories that are no longer maintained. Your filter selection is stored in your browser, so your view is preserved between visits.</div>
 
-On this page, we'll cover the Overview section, along with the Grade, Complexity, Duplication, and Coverage sections.
+This page covers the Overview, Grade, Complexity, Duplication, and Coverage sections.
 
 {% include-markdown "../../assets/includes/dashboard-api-report-note.md" %}
 
 ## Overview
 
-On the Organization overview you have the following areas to help you monitor your repositories:
+On the Organization overview page, you have the following areas to help you monitor your repositories:
 
 -   [Code health and security](#code-health-and-security)
 -   [Last updated repositories](#last-updated-repositories)
@@ -43,26 +43,26 @@ On this page, you can also see the **Organization setup** area, which provides y
 
 ![Image of Code health and security section](./images/organization-overview-code-health-security.png)
 
-The **Code health and security** provides a snapshot of your organization and its hotspots. Here you can see at a glance the number of Open Issues, New vs Fixed issues, Prevented issues, along with complexity, duplication, coverage and security metrics. You can click on any of these metrics to go into more details on each section.
+The **Code health and security** area provides a snapshot of your organization and key hotspots. Here, you can see at a glance open issues, new vs. fixed issues, prevented issues, and complexity, duplication, coverage, and security metrics. You can click any metric to see more details.
 
-Some of these metrics will be dependent on your billing plan, and are calculated based on different factors. To understand more, you can check the table below:
+Some of these metrics depend on your billing plan and are calculated differently. For details, see the following table:
 
 | Metric | Availability | How it is calculated |
 | ------ | ------------ | -------------------- |
 | Open issues, New and Fixed issues, and Prevented issues | Paid plans | [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues) |
-| Grade | Open source & Trials | [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade) |
+| Grade | Open source and trial plans | [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade) |
 | Complexity | All plans | [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity) |
 | Duplication | All plans | [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication) |
-| Coverage | All plans <a href="#coverage"><sup>1</sup></a>| [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage) |
+| Coverage | All plans <a href="#coverage-note"><sup>1</sup></a> | [More details](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage) |
 | Security | All plans | [More details](../managing-security-and-risk.md) |
 
 
 !!! important
     -   The overall quality chart calculates metrics and displays data only for the **repositories that you follow** on Codacy. This means that depending on their list of followed repositories, two users can see different results on this chart.
 
-    -   Metrics like Grade, Complexity, Duplication, and Coverage (on free plans) only represent **at most the last 100 updated repositories**.
+    -   Metrics like grade, complexity, duplication, and coverage (on free plans) represent **at most the last 100 updated repositories**.
 
-<sup><span id="coverage">1</span></sup>: The way that coverage metrics are calculated is different between Paid, and Open source and trials. [Learn more](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage)
+<sup><span id="coverage-note">1</span></sup>: Coverage metrics are calculated differently for paid plans and for open source and trial plans. [Learn more](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage).
 
 ### Last updated repositories
 
@@ -81,7 +81,7 @@ The **Last updated repositories** list displays the last updated repositories, s
 
 ![Image of the Grade tab](./images/organization-overview-grade.png)
 
-Grade tab will give you visibility over the distributions of Grades across your repositories. From this tab, you can understand which repositories are most at risk by selecting a grade from the distribution chart. This will help you prioritize which repositories need more attention.
+The **Grade** tab gives you visibility into grade distribution across your repositories. From this tab, you can identify the repositories with the highest risk by selecting a grade in the distribution chart.
 
 To learn more about how grades are calculated [see how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade).
 
@@ -94,11 +94,11 @@ To learn more about how grades are calculated [see how metrics are calculated](.
 
 Complexity allows you to understand which repositories are at risk of having code that is more difficult to test and more likely to have defects.
 
-In this tab, you'll be able to understand your complexity positioning (based on the number of complex files) at an organization level, plus how repos stack according to their [Goals](../../repositories-configure/adjusting-quality-goals.md). We consider a file "complex" if its cyclomatic complexity value is higher than the goal defined at a repository level. To learn about what we consider a complex file, see [how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
+In this tab, you can understand your organization's complexity status (based on the number of complex files) and how repositories compare against their [goals](../../repositories-configure/adjusting-quality-goals.md). A file is considered complex if its cyclomatic complexity value is higher than the goal defined at repository level. To learn more, see [how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
 
-From this panel you can understand, from the list of the top 100 most recently updated repositories, which ones are above, below or don't have a goal. Since complexity is a "depreciative metric", repositories "above goal" will be the ones immediately flagged, so you can review and take action upon them.
+This panel shows, from the top 100 most recently updated repositories, which repositories are above goal, below goal, or have no goal. Because complexity is better when lower, repositories above goal are highlighted so you can review and act on them.
 
-On the bottom, you have a section where you can see the distribution of complex files, and here you can understand more clearly which files are complex because they are above goal, below goal, or without a goal on their repository. Files are not filterable, whereas the Repository goal distributions are.
+At the bottom of the tab, the complex files distribution helps you understand which files are complex because they are above goal, below goal, or in repositories without a goal. Files are not filterable, while repository goal distributions are.
 
 !!! important
     Complexity metrics are based **at most on the last 100 updated repositories**.
@@ -108,7 +108,7 @@ On the bottom, you have a section where you can see the distribution of complex 
 
 Duplication allows you to check if sequences of duplicate code exist in at least two different places of the source code of your repository.
 
-In this tab, you'll be able to see the average of duplication that you have in your repositores, check which repos has duplication above, bellow or without any [goals](../../repositories-configure/adjusting-quality-goals.md) set up.
+In this tab, you can see your average duplication and check which repositories are above goal, below goal, or without configured [goals](../../repositories-configure/adjusting-quality-goals.md).
 
 To learn more about duplication metrics, see [how duplication is calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication).
 
@@ -120,29 +120,29 @@ To learn more about duplication metrics, see [how duplication is calculated](../
 
 ![Image of the Coverage tab](./images/organization-overview-coverage.png)
 
-The Coverage tab provides you visibility at an organization level of your organization-wide coverage positioning. Strong coverage positioning allows you to have better protection over your code and derisk code changes / breaking incidents.
+The **Coverage** tab provides organization-level visibility into your coverage status. Strong coverage helps protect your code and reduce the risk of regressions when code changes.
 
 !!! important
-    The coverage tab has two modes:
-    - On Trial and Open source plans, you're able to see your repository coverage average across the 100 most recently updated repositories. It provides visibility about which repositories are above, below or without goal, similar to the the other Duplication and Complexity tabs
-    - On Paid plans, we invested on providing wider visibility of your coverage positioning, removing the 100 repository limitation, and providing important metrics on where to invest the most. This is the version of the dashboard that we'll cover on this documentation.
+    The Coverage tab has two modes:
+    - On trial and open source plans, you can see the average repository coverage across the 100 most recently updated repositories. This includes visibility into which repositories are above goal, below goal, or without a goal, similar to the Duplication and Complexity tabs.
+    - On paid plans, the dashboard removes the 100-repository limitation and provides additional metrics to help you prioritize improvements. This is the mode covered in this page.
 
     To understand better how these metrics are calculated, [learn more](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage).
 
-The Coverage tab is based on two defining metrics:
+The Coverage tab is based on two key metrics:
 
 - **Covered lines**: number of covered lines reported into Codacy;
 - **Coverable lines**: number of lines that can be covered based on your coverage reports.
 
-These are the basis to build all components on this dashboard. Here you'll find:
+These metrics are the basis of all components in this dashboard:
 
 | Metric | Description |
 | ------ | ----------- |
-| **Coverage** | _coveredLines / coverableLines_ <br/>Aggregation of all covered lines per coverable lines across all repositories (or filter selection, see [filters](#overview-filters)). This metric only concerns repositories that have coverage being reported. |
-| **Repositories reporting coverage** | Repositories that have coverage, based on the latest merged pull request. e.g. If the last PR that was merged reported coverage metrics to Codacy, that repository is considered as having coverage. |
-| **Coverage trend** | Trend over time of Covered Lines, Uncovered lines and the organization's (or filter selection, see [filters](#overview-filters)) **Coverage** over time. You can select different time ranges and granularities, and even select a date to see which repositories had the biggest changes in that time period. |
+| **Coverage** | _coveredLines / coverableLines_ <br/>Aggregation of all covered lines divided by all coverable lines across all repositories (or your filter selection, see [filters](#overview-filters)). This metric only includes repositories reporting coverage. |
+| **Repositories reporting coverage** | Repositories that have coverage based on the latest merged pull request. For example, if the latest merged pull request reported coverage metrics to Codacy, that repository is counted as reporting coverage. |
+| **Coverage trend** | Trend over time for covered lines, uncovered lines, and organization coverage (or your filter selection, see [filters](#overview-filters)). You can select different time ranges and granularities, and select a date to see which repositories changed most in that period. |
 
-It's possible to download the data from each of these charts on the three dotted icons on the top right corners, where you can copy values in JSON or CSV format.
+You can download data from each chart using the ellipsis icon in the top-right corner and export values in JSON or CSV format.
 
 ## See also
 -   [Which metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md)
