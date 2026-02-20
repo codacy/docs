@@ -142,6 +142,8 @@ These are the basis to build all components on this dashboard. Here you'll find:
 | **Repositories reporting coverage** | Repositories that have coverage, based on the latest merged pull request. e.g. If the last PR that was merged reported coverage metrics to Codacy, that repository is considered as having coverage. |
 | **Coverage trend** | Trend over time of Covered Lines, Uncovered lines and the organization's (or filter selection, see [filters](#overview-filters)) **Coverage** over time. You can select different time ranges and granularities, and even select a date to see which repositories had the biggest changes in that time period. |
 
+It's possible to download the data from each of these charts on the three dotted icons on the top right corners, where you can copy values in JSON or CSV format.
+
 ## See also
 -   [Which metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md)
 -   [Using the Codacy API to obtain current issues in repositories](../../codacy-api/examples/obtaining-current-issues-in-repositories.md)
