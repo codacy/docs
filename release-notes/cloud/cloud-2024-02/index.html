@@ -11,7 +11,7 @@
         <meta name="description" content="Release notes for Codacy Cloud February 2024.">
       
       
-        <meta http-equiv="last-modified" content="2024-09-26 11:17:52">
+        <meta http-equiv="last-modified" content="2026-02-20 10:08:57">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2024-02/">
@@ -995,18 +995,6 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../organizations/organization-overview/" title="Organization overview" class="md-nav__link">
-      Organization overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
-
-  <li class="md-nav__item">
     <a href="../../../organizations/managing-repositories/" title="Managing repositories" class="md-nav__link">
       Managing repositories
     </a>
@@ -1030,8 +1018,45 @@
           
 
 
+  <li class="md-nav__item md-nav__item--nested">
+    
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-4" type="checkbox" id="nav-7-4">
+    
+    <label class="md-nav__link" for="nav-7-4">
+      Reporting
+      <span class="md-nav__icon md-icon">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
+      </span>
+    </label>
+    <nav class="md-nav" aria-label="Reporting" data-md-level="2">
+      <label class="md-nav__title" for="nav-7-4">
+        <span class="md-nav__icon md-icon">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
+        </span>
+        Reporting
+      </label>
+      <ul class="md-nav__list" data-md-scrollfix>
+        
+        
+          
+          
+          
+
+
   <li class="md-nav__item">
-    <a href="../../../organizations/issues-metrics/" title="Issues metrics" class="md-nav__link">
+    <a href="../../../organizations/reporting/organization-overview/" title="Organization overview" class="md-nav__link">
+      Organization overview
+    </a>
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../../../organizations/reporting/issues-metrics/" title="Issues metrics" class="md-nav__link">
       Issues metrics
     </a>
   </li>
@@ -1043,7 +1068,7 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../organizations/codacy-usage/" title="Codacy usage" class="md-nav__link">
+    <a href="../../../organizations/reporting/codacy-usage/" title="Codacy usage" class="md-nav__link">
       Codacy usage
     </a>
   </li>
@@ -1055,9 +1080,14 @@
 
 
   <li class="md-nav__item">
-    <a href="../../../organizations/ai-risk-hub/" title="AI Risk Hub" class="md-nav__link">
+    <a href="../../../organizations/reporting/ai-risk-hub/" title="AI Risk Hub" class="md-nav__link">
       AI Risk Hub
     </a>
+  </li>
+
+        
+      </ul>
+    </nav>
   </li>
 
         
@@ -1092,16 +1122,16 @@
 
   <li class="md-nav__item md-nav__item--nested">
     
-      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-10" type="checkbox" id="nav-7-10">
+      <input class="md-nav__toggle md-toggle" data-md-toggle="nav-7-7" type="checkbox" id="nav-7-7">
     
-    <label class="md-nav__link" for="nav-7-10">
+    <label class="md-nav__link" for="nav-7-7">
       Managing integrations
       <span class="md-nav__icon md-icon">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" /></svg>
       </span>
     </label>
     <nav class="md-nav" aria-label="Managing integrations" data-md-level="2">
-      <label class="md-nav__title" for="nav-7-10">
+      <label class="md-nav__title" for="nav-7-7">
         <span class="md-nav__icon md-icon">
           <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20,11V13H8L13.5,18.5L12.08,19.92L4.16,12L12.08,4.08L13.5,5.5L8,11H20Z" /></svg>
         </span>
@@ -4937,7 +4967,7 @@
 <li>The Codacy GitHub App no longer requires <strong>Read and write access to Administration</strong> repository permission. For more information, see the <a href="../cloud-2024-01-15-gh-repository-ssh-keys-discontinuation/">Discontinuation of SSH keys for GitHub repositories</a>. (PLUTO-803)</li>
 <li>The coverage data sent by the new Coverage engine to your Git provider moved from <strong>beta</strong> to stable. Thus, the coverage data sent by the old engine is now marked <strong>deprecated</strong>. For more information, <a href="../cloud-2023-11-23-new-coverage-engine-status-checks/">see the rollout details of the new Coverage engine</a>. (ALA-766)</li>
 <li>The Coverage Pull Requests page now gets data from the new Coverage engine. For more information, <a href="../cloud-2023-11-23-new-coverage-engine-status-checks/">see the rollout details of the new Coverage engine</a>. (ALA-770)</li>
-<li>The <a href="../../../organizations/organization-overview/">Organization overview</a> is now available on all plans. (ALA-842)</li>
+<li>The <a href="../../../organizations/reporting/organization-overview/">Organization overview</a> is now available on all plans. (ALA-842)</li>
 <li>Improved the mechanism to refresh organizations from the Git provider. As a result, we removed the option to manually refresh the list of organizations when <a href="../../../organizations/what-are-organizations/#adding-an-organization">adding new organizations to Codacy</a>. (ALA-862)</li>
 <li>For GitHub, if you have email privacy enabled on the provider, Codacy doesn't show your private email addresses when displaying your personal details on lists, search filters, or activity. (PLUTO-794)</li>
 <li>Added support for the Checkstyle filters <a href="https://checkstyle.sourceforge.io/filters/suppressioncommentfilter.html">SuppressionCommentFilter</a>, <a href="https://checkstyle.sourceforge.io/checks/annotation/suppresswarningsholder.html">SuppressWarningsHolder</a>, and <a href="https://checkstyle.sourceforge.io/filters/suppresswarningsfilter.html">SuppressWarningsFilter</a>. (TCE-709)</li>
@@ -5164,7 +5194,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">September 26, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 20, 2026</span>
     
   </small>
 </div>
