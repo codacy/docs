@@ -60,7 +60,7 @@ Some of these metrics depend on your billing plan and are calculated differently
 !!! important
     -   The **Code health and security** area calculates metrics and displays data only for the **repositories that you follow** on Codacy. This means that depending on their list of followed repositories, two users can see different results on this chart.
 
-    -   Metrics like grade, complexity, duplication, and coverage (on free plans) represent **at most the last 100 updated repositories**.
+    -   Some organization-level metrics are limited to the latest 100 updated repositories, depending on the metric and your plan.
 
 <sup><span id="coverage-note">1</span></sup>: Coverage metrics are calculated differently for paid plans and for open source and trial plans. [Learn more](#coverage).
 
@@ -83,10 +83,9 @@ The **Last updated repositories** list displays the last updated repositories, s
 
 The **Grade** tab gives you visibility into grade distribution across your repositories. From this tab, you can identify the repositories with the highest risk by selecting a grade in the distribution chart.
 
-To learn more about how grades are calculated [see how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade).
+At organization level, **Grade** is the average grade across your latest 100 updated repositories.
 
-!!! important
-    Grade metrics are based **at most on the last 100 updated repositories**.
+To learn more about how grades are calculated [see how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade).
 
 ## Complexity
 
@@ -94,26 +93,24 @@ To learn more about how grades are calculated [see how metrics are calculated](.
 
 Complexity allows you to understand which repositories are at risk of having code that is more difficult to test and more likely to have defects.
 
+At organization level, **Complexity** is the percentage of complex files across your latest 100 updated repositories.
+
 In this tab, you can understand your organization's complexity status (based on the number of complex files) and how repositories compare against their [goals](../../repositories-configure/adjusting-quality-goals.md). A file is considered complex if its cyclomatic complexity value is higher than the goal defined at repository level. To learn more, see [how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
 
 This panel shows, from the top 100 most recently updated repositories, which repositories are above goal, below goal, or have no goal. Because complexity is better when lower, repositories above goal are highlighted so you can review and act on them.
 
 At the bottom of the tab, the complex files distribution helps you understand which files are complex because they are above goal, below goal, or in repositories without a goal. Files are not filterable, while repository goal distributions are.
 
-!!! important
-    Complexity metrics are based **at most on the last 100 updated repositories**.
-
 ## Duplication
 ![Image of the Duplication tab](./images/organization-overview-duplication.png)
 
 Duplication allows you to check if sequences of duplicate code exist in at least two different places of the source code of your repository.
 
+At organization level, **Duplication** is the average duplication across your latest 100 updated repositories.
+
 In this tab, you can see your average duplication and check which repositories are above goal, below goal, or without configured [goals](../../repositories-configure/adjusting-quality-goals.md).
 
 To learn more about duplication metrics, see [how duplication is calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication).
-
-!!! important
-    Duplication metrics are based **at most on the last 100 updated repositories**.
 
 
 ## Coverage
@@ -122,13 +119,12 @@ To learn more about duplication metrics, see [how duplication is calculated](../
 
 The **Coverage** tab provides organization-level visibility into your coverage status. Strong coverage helps protect your code and reduce the risk of regressions when code changes.
 
-!!! important
-    The Coverage tab has two modes:
+At organization level, **Coverage** depends on your plan:
 
-    - On trial and open source plans, you can see the average repository coverage across the 100 most recently updated repositories. This includes visibility into which repositories are above goal, below goal, or without a goal, similar to the Duplication and Complexity tabs.
-    - On paid plans, the dashboard removes the 100-repository limitation and provides additional metrics to help you prioritize improvements. This is the mode covered in this page.
+- On trial and open source plans, it is the average coverage across your latest 100 updated repositories.
+- On paid plans, it is a line-based percentage calculated as `coveredLines / coverableLines` across repositories reporting coverage.
 
-    To understand better how these metrics are calculated, [learn more](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage).
+To understand better how these metrics are calculated, [learn more](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage).
 
 The Coverage tab is based on two key metrics:
 
