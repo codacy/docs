@@ -58,7 +58,7 @@ Some of these metrics depend on your billing plan and are calculated differently
 
 
 !!! important
-    -   The overall quality chart calculates metrics and displays data only for the **repositories that you follow** on Codacy. This means that depending on their list of followed repositories, two users can see different results on this chart.
+    -   The **Code health and security** area calculates metrics and displays data only for the **repositories that you follow** on Codacy. This means that depending on their list of followed repositories, two users can see different results on this chart.
 
     -   Metrics like grade, complexity, duplication, and coverage (on free plans) represent **at most the last 100 updated repositories**.
 
