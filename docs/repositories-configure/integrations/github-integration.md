@@ -32,6 +32,12 @@ Adds a report to your pull requests showing whether your pull requests and cover
 
 ### AI Reviewer
 
+{%
+    include-markdown "../../assets/includes/paid.md"
+    start="<!--paid-start-->"
+    end="<!--paid-end-->"
+%}
+
 !!! note
     This feature is only supported on GitHub.
 
