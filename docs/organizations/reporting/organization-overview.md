@@ -126,6 +126,8 @@ To understand better how coverage is calculated, [learn more](../../faq/code-ana
 
 ### Coverage dashboard on Paid plans
 
+![Image of the Coverage tab](./images/organization-overview-coverage.png)
+
 The Coverage tab is based on two key metrics:
 
 - **Covered lines**: number of covered lines reported into Codacy;
