@@ -102,7 +102,7 @@ https://docs.codacy.com/organizations/integrations/slack-integration/,The organi
 https://docs.codacy.com/organizations/reporting/ai-risk-hub/,The organization's AI Risk Hub dashboard provides an overview of all the AI issues detected in the repositories applied to the organization's AI Policy standard and your organization's risk level based on your AI practices.
 https://docs.codacy.com/organizations/reporting/codacy-usage/,"The Codacy usage dashboard provides an overview of your organization's configurations and their impact. You can filter repositories by quality gates and coverage, select specific repositories, or use the segments that you have set up."
 https://docs.codacy.com/organizations/reporting/issues-metrics/,The organization's Issues dashboard provides an overview of all the issues detected in the repositories belonging to your Git provider organization.
-https://docs.codacy.com/organizations/reporting/organization-overview/,The Organization overview provides an overview of the repositories belonging to your Git provider organization. Here you can compare their statuses and check for items that require your attention.
+https://docs.codacy.com/organizations/reporting/organization-overview/,The Organization overview summarizes repositories in your Git provider organization so you can compare status and quickly identify items that need attention.
 https://docs.codacy.com/release-notes/,Index of release notes for Codacy Cloud and Codacy Self-hosted.
 https://docs.codacy.com/release-notes/cloud/cloud-2018-07-23/,"Release notes for Codacy Cloud July 23, 2018."
 https://docs.codacy.com/release-notes/cloud/cloud-2018-10-19/,"Release notes for Codacy Cloud October 19, 2018."
