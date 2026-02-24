@@ -44,12 +44,14 @@ This area displays the information that identifies the pull request (name, autho
 The Coverage tab provides a detailed breakdown of how your changes impact the project's test coverage. It allows you to ensure that new code is properly tested before it is merged.
 
 **Coverage Overview**
+
 At the top of the tab, two primary indicators give you an immediate health check of the Pull Request:
 
 * **Diff Coverage**: The percentage of new or modified executable lines that are covered by tests.
 * **Coverage Variation**: The net impact (increase or decrease) the PR has on the overall project coverage percentage.
 
 **File Breakdown**
+
 On the left sidebar, you can find a list of all files modified in the PR. For each file, Codacy displays its specific diff coverage percentage, helping you quickly identify which parts of your contribution might be missing tests.
 
 **Diff Visualization**
