@@ -39,6 +39,29 @@ This area displays the information that identifies the pull request (name, autho
     end="<!--tabs-end-->"
 %}
 
+## Coverage tab
+
+The Coverage tab provides a detailed breakdown of how your changes impact the project's test coverage. It allows you to ensure that new code is properly tested before it is merged.
+
+**Coverage Overview**
+At the top of the tab, two primary indicators give you an immediate health check of the Pull Request:
+
+* **Diff Coverage**: The percentage of new or modified executable lines that are covered by tests.
+* **Coverage Variation**: The net impact (increase or decrease) the PR has on the overall project coverage percentage.
+
+**File Breakdown**
+On the left sidebar, you can find a list of all files modified in the PR. For each file, Codacy displays its specific diff coverage percentage, helping you quickly identify which parts of your contribution might be missing tests.
+
+**Diff Visualization**
+The main view displays the code changes with a specialized coverage overlay to pinpoint exactly what is being tested:
+
+* **Covered Lines (Green)**: Lines executed by your test suite. These are marked with a green highlight and a label indicating the number of hits (e.g., 1 hits), representing how many times that line was executed during the test run.
+* **Uncovered Lines (Red)**: Executable lines that were not reached by any tests. These are marked with a red highlight and a Not covered label.
+
+*Note: Lines that are not executable (like comments or empty lines) will not show a coverage status.*
+
+![Commits tab](images/pull-requests-tab-coverage.png)
+
 ## Commits tab
 
 The **Commits** tab displays an overview of each commit included in the pull request, such as the analysis status and the number of issues introduced.
