@@ -68,12 +68,12 @@ Some metrics depend on your billing plan and use plan-specific calculations. For
 
 The **Last updated repositories** list shows repositories sorted by most recent update first.
 
-![Last updated repositories](images/organization-overview-repositories-last-updated.png)
+![Last updated repositories](./images/organization-overview-repositories-last-updated.png)
 
 !!! note
     The source of the "last updated" value depends on your Git provider:
 
-    -   **GitHub:** Date of the most recent commit to any branch (`pushed_at` in the [GitHub Repositories API](https://docs.github.com/en/rest/repos/repos#list-organization-repositories){: target=_"blank"}).
+    -   **GitHub:** Date of the most recent commit to any branch (`pushed_at` in the [GitHub Repositories API](https://docs.github.com/en/rest/repos/repos#list-organization-repositories)).
     -   **GitLab:** Date when the project was last updated (`last_activity_at` in the [GitLab Groups API](https://docs.gitlab.com/ee/api/groups.html)). This value updates [at most once per hour](https://gitlab.com/gitlab-org/gitlab/-/issues/20952).
     -   **Bitbucket:** Date when the repository was last updated (`updated_on` in the [Bitbucket Repositories API](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/#api-group-repositories)). On **Bitbucket Server**, Codacy cannot retrieve this value, so repositories are listed alphabetically.
 
