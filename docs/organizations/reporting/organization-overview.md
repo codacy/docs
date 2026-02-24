@@ -1,18 +1,18 @@
 ---
-description: The Organization overview provides an overview of the repositories belonging to your Git provider organization. Here you can compare their statuses and check for items that require your attention.
+description: The Organization overview summarizes repositories in your Git provider organization so you can compare status and quickly identify items that need attention.
 ---
 
 # Organization overview
 
-Codacy gives you high-level visibility into your organization's code quality, security posture, AI risks, and usage and configuration metrics. In the **Organization overview**, you can see these metrics at a glance.
+Codacy provides high-level visibility into your organization's code quality, security posture, AI risk, usage, and configuration metrics. The **Organization overview** consolidates these signals in a single view.
 
-The **Organization overview** summarizes the repositories belonging to your Git provider organization that you [follow on Codacy](../managing-repositories.md). Here you can compare their statuses and check for items that require your attention.
+The **Organization overview** summarizes repositories in your Git provider organization that you [follow on Codacy](../managing-repositories.md). Use it to compare repository status and identify areas that require action.
 
-To access your Organization overview, select an organization from the top navigation bar and select **Overview** on the left navigation sidebar.
+To open the Organization overview, select an organization in the top navigation bar, then select **Overview** in the left sidebar.
 
 ![Image of the Organization Overview on the Overview tab](./images/organization-overview.png)
 
-The Organization overview contains the following tabs:
+The Organization overview includes the following tabs:
 
 - [Overview](#overview)
 - [Open issues](./issues-metrics.md)
@@ -23,29 +23,29 @@ The Organization overview contains the following tabs:
 - [Codacy usage](./codacy-usage.md)
 - [AI Risk Hub](./ai-risk-hub.md)
 
-<div id="overview-filters">Use the filters at the top of the page to filter all dashboard information by repositories or segments. For example, use filters to monitor repositories maintained by specific teams or repositories using specific programming languages, or to ignore legacy repositories that are no longer maintained. Your filter selection is stored in your browser, so your view is preserved between visits.</div>
+<div id="overview-filters">Use the filters at the top of the page to scope all dashboard data by repositories or segments. For example, filter by repositories owned by specific teams, repositories using specific languages, or exclude legacy repositories that are no longer maintained. Filter selections are stored in your browser and persist across visits.</div>
 
-This page covers the Overview, Grade, Complexity, Duplication, and Coverage sections.
+This page documents the Overview, Grade, Complexity, Duplication, and Coverage sections.
 
 {% include-markdown "../../assets/includes/dashboard-api-report-note.md" %}
 
 ## Overview
 
-On the Organization overview page, you have the following areas to help you monitor your repositories:
+The Organization overview page includes the following areas to help you monitor repository health:
 
 -   [Code health and security](#code-health-and-security)
 -   [Last updated repositories](#last-updated-repositories)
 
-On this page, you can also see the **Organization setup** area, which provides you with a checklist of items that you should complete to ensure that your organization is set up correctly and that you're getting the most out of Codacy.
+This page also includes the **Organization setup** area, which provides a checklist of recommended actions to ensure your organization is configured correctly and fully using Codacy capabilities.
 
 <div id="overall-quality-chart"></div>
 ### Code health and security
 
 ![Image of Code health and security section](./images/organization-overview-code-health-security.png)
 
-The **Code health and security** area provides a snapshot of your organization and key hotspots. Here, you can see at a glance open issues, new vs. fixed issues, prevented issues, and complexity, duplication, coverage, and security metrics. You can click any metric to see more details.
+The **Code health and security** area provides an organizational snapshot and highlights key hotspots. It shows open issues, new vs. fixed issues, prevented issues, and complexity, duplication, coverage, and security metrics. Select any metric to open detailed results.
 
-Some of these metrics depend on your billing plan and are calculated differently. For details, see the following table:
+Some metrics depend on your billing plan and use plan-specific calculations. For details, see the following table:
 
 | Metric | Availability | How it is calculated |
 | ------ | ------------ | -------------------- |
@@ -58,90 +58,90 @@ Some of these metrics depend on your billing plan and are calculated differently
 
 
 !!! important
-    -   The **Code health and security** area calculates metrics and displays data only for the **repositories that you follow** on Codacy. This means that depending on their list of followed repositories, two users can see different results on this chart.
+    -   The **Code health and security** area calculates and displays metrics only for **repositories you follow** on Codacy. As a result, users with different followed repositories can see different values.
 
-    -   Some organization-level metrics are limited to the 100 most recently updated repositories, depending on the metric and your plan.
+    -   Some organization-level metrics are limited to the 100 most recently updated repositories, depending on the metric and plan.
 
-<sup><span id="coverage-note">1</span></sup>: Coverage metrics are calculated differently for paid plans and for open source and trial plans. [Learn more](#coverage).
+<sup><span id="coverage-note">1</span></sup>: Coverage metrics are calculated differently for paid plans versus open source and trial plans. [Learn more](#coverage).
 
 ### Last updated repositories
 
-The **Last updated repositories** list displays the last updated repositories, sorted by reverse date of the last update.
+The **Last updated repositories** list shows repositories sorted by most recent update first.
 
 ![Last updated repositories](images/organization-overview-repositories-last-updated.png)
 
 !!! note
-    The exact value of the last updated date of the repositories depends on your Git provider:
+    The source of the "last updated" value depends on your Git provider:
 
-    -   **GitHub:** date of the last commit to any branch of the repository (value of `pushed_at` from the [GitHub Repositories API](https://docs.github.com/en/rest/repos/repos#list-organization-repositories){: target=_"blank"}).
-    -   **GitLab:** date when the project was last updated (value of `last_activity_at` from the [GitLab Groups API](https://docs.gitlab.com/ee/api/groups.html)). Note that this value is only updated [at most once per hour](https://gitlab.com/gitlab-org/gitlab/-/issues/20952)).
-    -   **Bitbucket:** date when the repository was last updated (value of `updated_on` from the [Bitbucket Repositories API](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/#api-group-repositories)). **On Bitbucket Server** Codacy can't obtain this information and the list displays the repositories in alphabetical order.
+    -   **GitHub:** Date of the most recent commit to any branch (`pushed_at` in the [GitHub Repositories API](https://docs.github.com/en/rest/repos/repos#list-organization-repositories){: target=_"blank"}).
+    -   **GitLab:** Date when the project was last updated (`last_activity_at` in the [GitLab Groups API](https://docs.gitlab.com/ee/api/groups.html)). This value updates [at most once per hour](https://gitlab.com/gitlab-org/gitlab/-/issues/20952).
+    -   **Bitbucket:** Date when the repository was last updated (`updated_on` in the [Bitbucket Repositories API](https://developer.atlassian.com/cloud/bitbucket/rest/api-group-repositories/#api-group-repositories)). On **Bitbucket Server**, Codacy cannot retrieve this value, so repositories are listed alphabetically.
 
 ## Grade
 
 ![Image of the Grade tab](./images/organization-overview-grade.png)
 
-The **Grade** tab gives you visibility into grade distribution across your repositories. From this tab, you can identify the repositories with the highest risk by selecting a grade in the distribution chart.
+The **Grade** tab shows grade distribution across repositories. Use this view to identify higher-risk repositories by selecting a grade in the distribution chart.
 
 At organization level, **Grade** is the average grade across the 100 most recently updated repositories.
 
-To learn more about how grades are calculated [see how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade).
+For calculation details, see [how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade).
 
 ## Complexity
 
 ![Image of the Complexity tab](./images/organization-overview-complexity.png)
 
-Complexity allows you to understand which repositories are at risk of having code that is more difficult to test and more likely to have defects.
+The **Complexity** tab helps identify repositories where code may be harder to test and more defect-prone.
 
 At organization level, **Complexity** is the percentage of complex files across the 100 most recently updated repositories.
 
-In this tab, you can understand your organization's complexity status (based on the number of complex files) and how repositories compare against their [goals](../../repositories-configure/adjusting-quality-goals.md). A file is considered complex if its cyclomatic complexity value is higher than the goal defined at repository level. To learn more, see [how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
+This tab shows your organization's complexity status (based on complex file counts) and how repositories compare against configured [goals](../../repositories-configure/adjusting-quality-goals.md). A file is considered complex when its cyclomatic complexity exceeds the repository-level goal. For details, see [how metrics are calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
 
-This panel shows, from the top 100 most recently updated repositories, which repositories are above goal, below goal, or have no goal. Because complexity is better when lower, repositories above goal are highlighted so you can review and act on them.
+The panel classifies the top 100 most recently updated repositories as above goal, below goal, or without a goal. Because lower complexity is better, repositories above goal are highlighted for review.
 
-At the bottom of the tab, the complex files distribution helps you understand which files are complex because they are above goal, below goal, or in repositories without a goal. Files are not filterable, while repository goal distributions are.
+At the bottom of the tab, complex-file distribution shows whether files above goal, below goal, or without goals are driving complexity. Repository goal distributions are filterable; file-level data is not.
 
 ## Duplication
 ![Image of the Duplication tab](./images/organization-overview-duplication.png)
 
-Duplication allows you to check if sequences of duplicate code exist in at least two different places of the source code of your repository.
+The **Duplication** tab identifies repeated code sequences that appear in at least two locations in a repository.
 
 At organization level, **Duplication** is the average duplication across the 100 most recently updated repositories.
 
-In this tab, you can see your average duplication and check which repositories are above goal, below goal, or without configured [goals](../../repositories-configure/adjusting-quality-goals.md).
+This tab shows average duplication and indicates which repositories are above goal, below goal, or without configured [goals](../../repositories-configure/adjusting-quality-goals.md).
 
-To learn more about duplication metrics, see [how duplication is calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication).
+For metric details, see [how duplication is calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#duplication).
 
 
 ## Coverage
 
-The **Coverage** tab provides organization-level visibility into your coverage status. Strong coverage helps protect your code and reduce the risk of regressions when code changes.
+The **Coverage** tab provides organization-level visibility into coverage status. Higher coverage helps reduce regression risk when code changes.
 
 At organization level, **Coverage** depends on your plan:
 
 - On trial and open source plans, it is the average coverage across the 100 most recently updated repositories.
-- On paid plans, it is a line-based percentage calculated as `coveredLines / coverableLines` across repositories reporting coverage.
+- On paid plans, it is a line-based percentage calculated as `coveredLines / coverableLines` across repositories that report coverage.
 
-To understand better how coverage is calculated, [learn more](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage).
+For calculation details, see [how code coverage is calculated](../../faq/code-analysis/which-metrics-does-codacy-calculate.md#code-coverage).
 
 ### Coverage dashboard on Paid plans
 
 ![Image of the Coverage tab](./images/organization-overview-coverage.png)
 
-The Coverage tab is based on two key metrics:
+The Coverage tab on paid plans uses two key metrics:
 
-- **Covered lines**: number of covered lines reported into Codacy;
-- **Coverable lines**: number of lines that can be covered based on your coverage reports.
+- **Covered lines**: Number of covered lines reported to Codacy.
+- **Coverable lines**: Number of lines that can be covered, based on coverage reports.
 
-These metrics are the basis of all components in this dashboard:
+These metrics drive all dashboard components:
 
 | Metric | Description |
 | ------ | ----------- |
-| **Coverage** | `coveredLines / coverableLines` <br/>Aggregation of all covered lines divided by all coverable lines across all repositories (or your filter selection, see [filters](#overview-filters)). This metric only includes repositories reporting coverage. |
-| **Repositories reporting coverage** | Repositories that have coverage based on the latest merged pull request. For example, if the latest merged pull request reported coverage metrics to Codacy, that repository is counted as reporting coverage. |
-| **Coverage trend** | Trend over time for covered lines, uncovered lines, and organization coverage (or your filter selection, see [filters](#overview-filters)). You can select different time ranges and granularities, and select a date to see which repositories changed most in that period. |
+| **Coverage** | `coveredLines / coverableLines` <br/>Aggregation of all covered lines divided by all coverable lines across all repositories (or the current filter selection, see [filters](#overview-filters)). Includes only repositories reporting coverage. |
+| **Repositories reporting coverage** | Repositories with coverage data from the latest merged pull request. For example, if the latest merged pull request reported coverage metrics to Codacy, that repository is counted as reporting coverage. |
+| **Coverage trend** | Time-based trend for covered lines, uncovered lines, and organization coverage (or the current filter selection, see [filters](#overview-filters)). You can choose time ranges and granularities, and select a date to see which repositories changed the most during that period. |
 
-You can download data from each chart using the ellipsis icon in the top-right corner and export values in JSON or CSV format.
+You can export data from each chart using the ellipsis icon in the top-right corner in JSON or CSV format.
 
 ## See also
 -   [Which metrics does Codacy calculate?](../../faq/code-analysis/which-metrics-does-codacy-calculate.md)
