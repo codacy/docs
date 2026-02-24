@@ -50,7 +50,7 @@ It provides feedback on missing or weak tests, complex or duplicated code, and k
 !!! tip
     Improve the AI Reviewer results by providing custom instructions. [Learn how to do it here](../../codacy-ai/codacy-ai.md#custom-instructions).
 
-This setting can be enabled at a repository or organization level. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews. To request a PR Review from Codacy, add a **`codacy-review`** label to your Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.
+This setting can be enabled at a repository or organization level. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews. To request a PR review, click **Run Reviewer** in the Summary or call our [public API](https://api.codacy.com/api/api-docs#triggerpullrequestaireview). Your review will be published as soon as it's ready.
 
 
 ![AI Reviewer on Github](images/github-integration-ai-reviewer.png)
