@@ -47,6 +47,15 @@ Click a specific commit to see [detailed information about that commit](commits.
 
 ![Commits tab](images/pull-requests-tab-commits.png)
 
+## Coverage tab 
+
+![Commits tab](images/pull-requests-tab-commits.png)
+
+sdkjahjkfhsadlkfj
+asdçkfljlkasdjf
+asdfhkalsdkk
+
+
 ## Viewing analysis logs
 
 Analysis logs can help you track and understand the performance of the tools and the timing of analyses on your pull requests.
