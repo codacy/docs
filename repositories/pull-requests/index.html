@@ -11,7 +11,7 @@
         <meta name="description" content="The Pull Requests page displays an overview of the pull requests in your repository, such as the analysis status and the code quality metrics for each pull request. This allows you to monitor the code quality of the work in progress in your repository.">
       
       
-        <meta http-equiv="last-modified" content="2025-08-20 09:42:55">
+        <meta http-equiv="last-modified" content="2026-02-24 17:29:06">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories/pull-requests/">
@@ -621,6 +621,13 @@
         <li class="md-nav__item">
   <a href="#files-tab" class="md-nav__link">
     Files tab
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#coverage-tab" class="md-nav__link">
+    Coverage tab
   </a>
   
 </li>
@@ -5140,6 +5147,24 @@ it will automatically add a comment listing all the detected false positives.</p
 </ul>
 <p>Depending on the languages being analyzed or if you haven't <a href="../../coverage-reporter/">set up coverage for your repository</a>, some metrics <strong>may not be calculated</strong> (represented by <code>-</code>).</p>
 <p><img alt="Files tab" src="../images/pull-requests-tab-files.png" /></p>
+<h2 id="coverage-tab">Coverage tab<a class="headerlink" href="#coverage-tab" title="Permanent link">#</a></h2>
+<p>The Coverage tab provides a detailed breakdown of how your changes impact the project's test coverage. It allows you to ensure that new code is properly tested before it is merged.</p>
+<p><strong>Coverage Overview</strong></p>
+<p>At the top of the tab, two primary indicators give you an immediate health check of the Pull Request:</p>
+<ul>
+<li><strong>Diff Coverage</strong>: The percentage of new or modified executable lines that are covered by tests.</li>
+<li><strong>Coverage Variation</strong>: The net impact (increase or decrease) the PR has on the overall project coverage percentage.</li>
+</ul>
+<p><strong>File Breakdown</strong></p>
+<p>On the left sidebar, you can find a list of all files modified in the PR. For each file, Codacy displays its specific diff coverage percentage, helping you quickly identify which parts of your contribution might be missing tests.</p>
+<p><strong>Diff Visualization</strong>
+The main view displays the code changes with a specialized coverage overlay to pinpoint exactly what is being tested:</p>
+<ul>
+<li><strong>Covered Lines (Green)</strong>: Lines executed by your test suite. These are marked with a green highlight and a label indicating the number of hits (e.g., 1 hit), representing how many times that line was executed during the test run.</li>
+<li><strong>Uncovered Lines (Red)</strong>: Executable lines that were not reached by any tests. These are marked with a red highlight and a Not covered label.</li>
+</ul>
+<p><em>Note: Lines that are not executable (like comments or empty lines) will not show a coverage status.</em></p>
+<p><img alt="Coverage tab" src="../images/pull-requests-tab-coverage.png" /></p>
 <h2 id="commits-tab">Commits tab<a class="headerlink" href="#commits-tab" title="Permanent link">#</a></h2>
 <p>The <strong>Commits</strong> tab displays an overview of each commit included in the pull request, such as the analysis status and the number of issues introduced.</p>
 <p>Click a specific commit to see <a href="../commits/#status">detailed information about that commit</a>.</p>
@@ -5339,7 +5364,7 @@ it will automatically add a comment listing all the detected false positives.</p
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 20, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2026</span>
     
   </small>
 </div>
