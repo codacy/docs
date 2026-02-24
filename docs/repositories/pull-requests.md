@@ -55,12 +55,12 @@ On the left sidebar, you can find a list of all files modified in the PR. For ea
 **Diff Visualization**
 The main view displays the code changes with a specialized coverage overlay to pinpoint exactly what is being tested:
 
-* **Covered Lines (Green)**: Lines executed by your test suite. These are marked with a green highlight and a label indicating the number of hits (e.g., 1 hits), representing how many times that line was executed during the test run.
+* **Covered Lines (Green)**: Lines executed by your test suite. These are marked with a green highlight and a label indicating the number of hits (e.g., 1 hit), representing how many times that line was executed during the test run.
 * **Uncovered Lines (Red)**: Executable lines that were not reached by any tests. These are marked with a red highlight and a Not covered label.
 
 *Note: Lines that are not executable (like comments or empty lines) will not show a coverage status.*
 
-![Commits tab](images/pull-requests-tab-coverage.png)
+![Coverage tab](images/pull-requests-tab-coverage.png)
 
 ## Commits tab
 
