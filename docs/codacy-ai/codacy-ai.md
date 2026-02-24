@@ -78,7 +78,7 @@ More details about [AI Reviewer here](../repositories-configure/integrations/git
 2. Navigate to the "Integrations" or "AI features" section (depending on your Codacy plan and UI version).
 3. Find "AI Reviewer", under "Status checks", and toggle the feature to "On" for the repository or organization scope you want to enable.
 4. Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews.
-5. To request a PR Review from Codacy, add a **`codacy-review`** label to your Pull Request. Codacy listens to the event and will publish the review as soon as it's ready.
+5. To request a PR review, click **Run Reviewer** in the Summary or call our [public API](https://api.codacy.com/api/api-docs#triggerpullrequestaireview). Your review will be published as soon as it's ready.
 
 #### Custom Instructions
 
