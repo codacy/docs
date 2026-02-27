@@ -4,7 +4,34 @@
 
 Codacy AI is a set of optional features integrated into the Software designed to optimise development workflows and elevate code quality standards through automated issue descriptions, actionable recommendations and false-positive detection, is available for the Customer.
 
-Codacy AI utilizes only enterprise-grade instances of OpenAI and Google Gemini services with enhanced security, privacy, and data protection features. Customer Code processed through Codacy AI will not be used by Codacy, OpenAI, or any third-party AI provider for training, improving, or developing artificial intelligence models, machine learning algorithms, or any other automated systems.
+For details on how Codacy handles your data when AI features are enabled, see [AI data usage and privacy](#ai-data-usage-and-privacy).
+
+## AI data usage and privacy
+
+This section provides a consolidated overview of how Codacy handles your data when AI features are enabled.
+
+### Model training
+
+Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into any model training — this applies to Codacy, OpenAI, and Google Gemini alike.
+
+### How prompts are handled
+
+Codacy AI features use one-shot prompts: each request is self-contained, and neither the prompts sent to the AI nor the outputs returned are stored by Codacy.
+
+### Debug logs
+
+Codacy retains minimal logs strictly for debugging purposes (e.g., to verify data formatting, delivery, and internal reasoning fields). These logs:
+
+-   Are retained for up to **30 days** when using OpenAI models.
+-   Are retained for up to **55 days** when using Google Gemini models.
+-   Follow a low-retention policy and are automatically deleted after the retention period.
+-   **Do not contain identifiable information** — no repository names, user identifiers, or organization identifiers are stored in these logs.
+
+### AI providers
+
+Codacy AI uses enterprise-grade instances of [OpenAI](https://openai.com/policies/api-data-usage-policies) and [Google Gemini](https://cloud.google.com/gemini/docs/discover/data-governance) with enhanced security, privacy, and data protection features. Please refer to each provider's data governance documentation for further detail.
+
+If you have additional questions or compliance requirements, contact us at <support@codacy.com>.
 
 ## AI Features
 
@@ -32,8 +59,7 @@ More details about [AI-enhanced comments here](../repositories-configure/integra
 
 **Data usage and privacy**
 
-- To generate an AI-enhanced comment, Codacy only processes the specific issue context: the issue line plus up to ten lines before and ten lines after that line. No additional repository data is sent or used.
-- Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into model training.
+To generate an AI-enhanced comment, Codacy only processes the specific issue context: the issue line plus up to ten lines before and ten lines after that line. No additional repository data is sent or used. For full details on data handling, see [AI data usage and privacy](#ai-data-usage-and-privacy).
 
 ### Smart False Positive Triage
 
@@ -55,9 +81,8 @@ More details about [False Positives here](../repositories/commits.md#false-posit
 
 **Notes**
 
-- Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into model training.
-- To detect a Possible False Positive, Codacy only processes the specific issue context: one request per file with issues. No additional repository data is sent or used.
-- Prompts are neither stored nor visible by anyone
+- To detect a possible false positive, Codacy only processes the specific issue context: one request per file with issues. No additional repository data is sent or used.
+- For full details on data handling, see [AI data usage and privacy](#ai-data-usage-and-privacy).
 
 <div id="pr-reviewer"></div>
 
@@ -114,6 +139,5 @@ Rules for the output:
 
 **Notes**
 
-- Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into model training.
-- To enrich the review, the git diff of the Pull Request as well as some related files' contents can be sent as context. No data is stored on our side, or used to train any models.
-- Prompts are neither stored nor visible by anyone
+- To enrich the review, the git diff of the pull request as well as some related files' contents can be sent as context.
+- For full details on data handling, see [AI data usage and privacy](#ai-data-usage-and-privacy).
