@@ -41,7 +41,7 @@ Adds a report to your pull requests showing whether your pull requests and cover
 !!! note
     This feature is only supported on GitHub.
 
-When enabled, Codacy posts a **Codacy's Analysis Summary** comment on your pull requests each time a new analysis completes, giving you a full overview of code quality metric changes — including issues, complexity, and duplication — without requiring you to open the Codacy app.
+When enabled, Codacy posts a **Codacy's Analysis Summary** comment on your pull requests each time a new analysis completes, giving you a full overview of code quality,  security, complexity, and duplication metric changes, without requiring you to open the Codacy app.
 
 #### Enable AI reviewer {: id="ai-reviewer"}
 

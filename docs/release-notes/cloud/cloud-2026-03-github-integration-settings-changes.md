@@ -14,13 +14,13 @@ We are making two changes to the GitHub integration settings over the coming wee
 
 ## Coverage summary moving to Pull request review {: id="coverage-summary"}
 
-Codacy is consolidating coverage data into the Pull request review comment so that you get a complete picture of your code quality changes in a single place, without the need for a separate comment.
+Codacy is consolidating coverage data into the Pull request review comment so that you get a complete picture of your code quality and security changes in a single place, without the need for a separate comment.
 
 In the coming weeks, Codacy will migrate all repositories and organizations that have **Coverage summary** enabled to **Pull request review**. On that date, the Coverage summary setting will be removed.
 
 ### What to expect
 
--   Coverage changes will appear alongside quality metrics in the Codacy Analysis Summary PR comment.
+-   Coverage changes will appear alongside quality and security metrics in the Codacy Analysis Summary PR comment.
 -   The Coverage summary setting will be removed.
 -   The AI Reviewer is **not** automatically enabled as part of this migration.
 
