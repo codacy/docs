@@ -9,24 +9,8 @@ rss_href: /feed_rss_created.xml
 
 We are making two changes to the GitHub integration settings over the coming weeks. Both are handled automatically - you don't need to take any action.
 
--   [**Coverage summary moving to Pull request review**](#coverage-summary) — the Coverage summary setting is being removed; coverage data will soon be included in the Pull request review comment.
 -   [**AI-enhanced comments (Beta) being deprecated for GitHub**](#ai-enhanced-comments) — AI-enhanced comments are being replaced by the AI Reviewer on March 16, 2026.
-
-## Coverage summary moving to Pull request review {: id="coverage-summary"}
-
-Codacy is consolidating coverage data into the Pull request review comment so that you get a complete picture of your code quality and security changes in a single place, without the need for a separate comment.
-
-In the coming weeks, Codacy will migrate all repositories and organizations that have **Coverage summary** enabled to **Pull request review**. On that date, the Coverage summary setting will be removed.
-
-### What to expect
-
--   Coverage changes will appear alongside quality and security metrics in the Codacy Analysis Summary PR comment.
--   The Coverage summary setting will be removed.
--   The AI Reviewer is **not** automatically enabled as part of this migration.
-
-### What do you need to do?
-
-Nothing. Codacy will handle the migration automatically for any repository or organization that had Coverage summary enabled. If you didn't have this setting on, this won't affect you.
+-   [**Coverage summary moving to Pull request review**](#coverage-summary) — the Coverage summary setting is being removed; coverage data will soon be included in the Pull request review comment.
 
 ## AI-enhanced comments (Beta) being deprecated on March 16, 2026 {: id="ai-enhanced-comments"}
 
@@ -46,6 +30,22 @@ On March 16, 2026, Codacy will migrate all repositories and organizations that h
 ### What do you need to do?
 
 Nothing. Codacy will handle the migration automatically. If you have any further questions, contact <support@codacy.com>.
+
+## Coverage summary moving to Pull request review {: id="coverage-summary"}
+
+Codacy is consolidating coverage data into the Pull request review comment so that you get a complete picture of your code quality and security changes in a single place, without the need for a separate comment.
+
+In the coming weeks, Codacy will migrate all repositories and organizations that have **Coverage summary** enabled to **Pull request review**. On that date, the Coverage summary setting will be removed.
+
+### What to expect
+
+-   Coverage changes will appear alongside quality and security metrics in the Codacy Analysis Summary PR comment.
+-   The Coverage summary setting will be removed.
+-   The AI Reviewer is **not** automatically enabled as part of this migration.
+
+### What do you need to do?
+
+Nothing. Codacy will handle the migration automatically for any repository or organization that had Coverage summary enabled. If you didn't have this setting on, this won't affect you.
 
 ## See also
 
