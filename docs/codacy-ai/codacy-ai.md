@@ -12,15 +12,11 @@ This section provides a consolidated overview of how Codacy handles your data wh
 
 ### Model training
 
-Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into any model training — this applies to Codacy, OpenAI, and Google Gemini alike.
-
-### How prompts are handled
-
-Codacy AI features use one-shot prompts: each request is self-contained, and neither the prompts sent to the AI nor the outputs returned are stored by Codacy.
+Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into any model training — this applies to Codacy, OpenAI, Google, Anthropic, or any other third-party AI provider.
 
 ### Debug logs
 
-Codacy retains minimal logs strictly for debugging purposes (e.g., to verify data formatting, delivery, and internal reasoning fields). These logs:
+OpenAI and Google retain minimal logs strictly for debugging purposes (e.g., to verify data formatting, delivery, and internal reasoning fields). These logs do not live on Codacy's servers. They:
 
 -   Are retained for up to **30 days** when using OpenAI models.
 -   Are retained for up to **55 days** when using Google Gemini models.
