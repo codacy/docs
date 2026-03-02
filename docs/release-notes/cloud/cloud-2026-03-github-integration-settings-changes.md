@@ -35,7 +35,7 @@ Codacy is deprecating the AI-enhanced comments (Beta) feature in favour of the A
 On March 16, 2026, Codacy will migrate all repositories and organizations that have **AI-enhanced comments** enabled to the AI Reviewer and remove the setting.
 
 !!! note
-    If your organization has specific legal requirements around AI features that would not be in accordance with this change, AI-enhanced comments will simply be disabled rather than migrated to the AI Reviewer. If you're comfortable with it, the AI Reviewer can be enabled by your team at any time. For more information, contact your account manager or <support@codacy.com>.
+    Organizations with contractual restrictions on AI providers or content analysis scope will not be automatically migrated to the AI Reviewer. For these organizations, AI-enhanced comments will simply be disabled. The AI Reviewer can be enabled at any time from your [integration settings](../../repositories-configure/integrations/github-integration.md#ai-reviewer). For more information, contact your account manager or <support@codacy.com>.
 
 ### What to expect
 
