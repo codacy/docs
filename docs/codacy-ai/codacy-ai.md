@@ -68,7 +68,7 @@ More details about [False Positives here](../repositories/commits.md#false-posit
 
 _This feature leverages Google Gemini models, and is strictly opt-in: it will only run on repositories or projects where a repository admin has enabled it._
 
-The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the power of AI. It draws in the necessary context from source code and PR metadata to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
+The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from source code and PR metadata to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
 
 More details about [AI Reviewer here](../repositories-configure/integrations/github-integration.md#ai-reviewer).
 
