@@ -66,7 +66,7 @@ More details about [False Positives here](../repositories/commits.md#false-posit
 !!! note
     AI Reviewer is currently only available on GitHub, for all Team and Business plans.
 
-_This feature leverages Google Gemini models, and is strictly opt-in; it will only run on repositories or projects where a repository or organization admin has enabled it._
+_This feature leverages Google Gemini models, and is strictly opt-in; it will only run on repositories or organizations where an admin has enabled it._
 
 The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, Jira ticket if [integration exists](../organizations/integrations/jira-integration.md), source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
 
@@ -79,6 +79,12 @@ More details about [AI Reviewer here](../repositories-configure/integrations/git
 3. Find "AI Reviewer", under "Status checks", and toggle the feature to "On" for the repository or organization scope you want to enable.
 4. Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews.
 5. To request a PR review, click **Run Reviewer** in the Summary or call our [public API](https://api.codacy.com/api/api-docs#triggerpullrequestaireview). Your review will be published as soon as it's ready.
+
+#### Jira context for the AI Reviewer
+
+If the Jira integration is enabled, we will automatically attempt to detect the Jira ticket key (ABC-123, case-insensitive) in the Pull request metadata. If found, the ticket title and description will be used to enrich the context of our reviewer.
+
+More about the [Jira integration here](../organizations/integrations/jira-integration.md).
 
 #### Custom Instructions
 
