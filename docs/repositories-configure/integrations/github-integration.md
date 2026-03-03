@@ -48,7 +48,7 @@ When enabled, Codacy posts a **Codacy's Analysis Summary** comment on your pull 
 !!! note
     If you enable the AI Reviewer, consider disabling AI-enhanced comments to avoid receiving duplicate comments on Codacy issues.
 
-The AI Reviewer extends Pull request review with an AI-powered code analysis. It combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from source code and PR metadata to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
+The AI Reviewer extends Pull request reviews with an AI-powered code analysis. It combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, Jira ticket if [integration exists](../../organizations/integrations/jira-integration.md), source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
 
 It provides feedback on missing or weak tests, complex or duplicated code, and keeps security concerns up to date. Beyond that, it adds contextual insights about whether the changes follow the requirements, business rules, and logic used in the project.
 

@@ -2,7 +2,7 @@
 
 ## What is Codacy AI?
 
-Codacy AI is a set of optional features integrated into the Software designed to optimise development workflows and elevate code quality standards through automated issue descriptions, actionable recommendations and false-positive detection, is available for the Customer.
+Codacy AI is a set of optional features integrated into the Software, designed to optimise development workflows and elevate code quality standards through automated issue descriptions, actionable recommendations and false-positive detection. These features are available for the Customer.
 
 Codacy AI utilizes only enterprise-grade instances of OpenAI and Google Gemini services with enhanced security, privacy, and data protection features. Customer Code processed through Codacy AI will not be used by Codacy, OpenAI, or any third-party AI provider for training, improving, or developing artificial intelligence models, machine learning algorithms, or any other automated systems.
 
@@ -66,9 +66,9 @@ More details about [False Positives here](../repositories/commits.md#false-posit
 !!! note
     AI Reviewer is currently only available on GitHub, for all Team and Business plans.
 
-_This feature leverages Google Gemini models, and is strictly opt-in: it will only run on repositories or projects where a repository admin has enabled it._
+_This feature leverages Google Gemini models, and is strictly opt-in; it will only run on repositories or projects where a repository or organization admin has enabled it._
 
-The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from source code and PR metadata to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
+The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, Jira ticket if [integration exists](../organizations/integrations/jira-integration.md), source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
 
 More details about [AI Reviewer here](../repositories-configure/integrations/github-integration.md#ai-reviewer).
 
