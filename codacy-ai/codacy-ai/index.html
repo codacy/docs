@@ -11,7 +11,7 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool.">
       
       
-        <meta http-equiv="last-modified" content="2026-03-02 16:19:38">
+        <meta http-equiv="last-modified" content="2026-03-03 14:49:31">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-ai/codacy-ai/">
@@ -4953,7 +4953,7 @@
                 
                 <h1 id="codacy-ai">Codacy AI<a class="headerlink" href="#codacy-ai" title="Permanent link">#</a></h1>
 <h2 id="what-is-codacy-ai">What is Codacy AI?<a class="headerlink" href="#what-is-codacy-ai" title="Permanent link">#</a></h2>
-<p>Codacy AI is a set of optional features integrated into the Software designed to optimise development workflows and elevate code quality standards through automated issue descriptions, actionable recommendations and false-positive detection, is available for the Customer.</p>
+<p>Codacy AI is a set of optional features integrated into the Software, designed to optimise development workflows and elevate code quality standards through automated issue descriptions, actionable recommendations and false-positive detection. These features are available for the Customer.</p>
 <p>Codacy AI utilizes only enterprise-grade instances of OpenAI and Google Gemini services with enhanced security, privacy, and data protection features. Customer Code processed through Codacy AI will not be used by Codacy, OpenAI, or any third-party AI provider for training, improving, or developing artificial intelligence models, machine learning algorithms, or any other automated systems.</p>
 <h2 id="ai-features">AI Features<a class="headerlink" href="#ai-features" title="Permanent link">#</a></h2>
 <h3 id="ai-enhanced-comments">AI-enhanced comments<a class="headerlink" href="#ai-enhanced-comments" title="Permanent link">#</a></h3>
@@ -5003,8 +5003,8 @@
 <p class="admonition-title">Note</p>
 <p>AI Reviewer is currently only available on GitHub, for all Team and Business plans.</p>
 </div>
-<p><em>This feature leverages Google Gemini models, and is strictly opt-in: it will only run on repositories or projects where a repository admin has enabled it.</em></p>
-<p>The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from source code and PR metadata to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.</p>
+<p><em>This feature leverages Google Gemini models, and is strictly opt-in; it will only run on repositories or organizations where an admin has enabled it.</em></p>
+<p>The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, Jira ticket if <a href="../../organizations/integrations/jira-integration/">integration exists</a>, source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.</p>
 <p>More details about <a href="../../repositories-configure/integrations/github-integration/#ai-reviewer">AI Reviewer here</a>.</p>
 <p><strong>How to turn it on</strong></p>
 <ol>
@@ -5014,6 +5014,9 @@
 <li>Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews.</li>
 <li>To request a PR review, click <strong>Run Reviewer</strong> in the Summary or call our <a href="https://api.codacy.com/api/api-docs#triggerpullrequestaireview">public API</a>. Your review will be published as soon as it's ready.</li>
 </ol>
+<h4 id="jira-context-for-the-ai-reviewer">Jira context for the AI Reviewer<a class="headerlink" href="#jira-context-for-the-ai-reviewer" title="Permanent link">#</a></h4>
+<p>If the Jira integration is enabled, we will automatically attempt to detect the Jira ticket key (ABC-123, case-insensitive) in the Pull request metadata. If found, the ticket title and description will be used to enrich the context of our reviewer.</p>
+<p>More about the <a href="../../organizations/integrations/jira-integration/">Jira integration here</a>.</p>
 <h4 id="custom-instructions">Custom Instructions<a class="headerlink" href="#custom-instructions" title="Permanent link">#</a></h4>
 <p>To improve the results of the AI Reviewer, you can provide custom instructions to the AI Reviewer. These instructions are specific to a repository and help the AI Reviewer understand the structure of the code, the business logic of the project, and your own preferences.</p>
 <p>These instructions are specified in a <code>review.md</code> file in the <code>.codacy/instructions</code> directory of your repository.</p>
@@ -5200,7 +5203,7 @@ Rules for the output:
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 2, 2026</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 3, 2026</span>
     
   </small>
 </div>

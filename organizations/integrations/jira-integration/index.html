@@ -11,7 +11,7 @@
         <meta name="description" content="Integrate Jira with Codacy to be able to create Jira tickets directly from Codacy findings, and import your Jira issues for Security and risk management to manage them all in one place as security items.">
       
       
-        <meta http-equiv="last-modified" content="2025-08-22 09:13:46">
+        <meta http-equiv="last-modified" content="2026-03-03 14:49:31">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/integrations/jira-integration/">
@@ -1213,6 +1213,13 @@
         <li class="md-nav__item">
   <a href="#uninstalling-the-jira-integration" class="md-nav__link">
     Uninstalling the Jira integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ai-reviewer-context" class="md-nav__link">
+    AI reviewer context
   </a>
   
 </li>
@@ -4995,6 +5002,13 @@
 <p class="admonition-title">Important</p>
 <p>Uninstalling the Jira integration as described above deletes all associated open items. You can alternatively uninstall the Jira integration on the Jira website: this doesn't delete anything, but it prevents Codacy from opening new Jira-related items.</p>
 </div>
+<h2 id="ai-reviewer-context">AI reviewer context<a class="headerlink" href="#ai-reviewer-context" title="Permanent link">#</a></h2>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>AI Reviewer is currently only available on GitHub, for all Team and Business plans.</p>
+</div>
+<p>If the repository or organization has the AI Reviewer enabled, it will automatically check the Pull Request metadata for a Jira ticket key (ABC-123, case-insensitive). The title and description will be fetched to enrich the review context, and the process will cross-check the required deliverable and acceptance criteria with the existing code changes. </p>
+<p>More details about <a href="../../../repositories-configure/integrations/github-integration/#ai-reviewer">AI Reviewer here</a>.</p>
 <h2 id="creating-jira-tickets-from-issues-dependencies-and-files">Creating Jira tickets from issues, dependencies and files<a class="headerlink" href="#creating-jira-tickets-from-issues-dependencies-and-files" title="Permanent link">#</a></h2>
 <p>Installing the Jira integration enables the feature of creating Jira tickets from issues, dependencies and files</p>
 <h3 id="creating-a-jira-ticket-for-an-issue">Creating a Jira ticket for an issue<a class="headerlink" href="#creating-a-jira-ticket-for-an-issue" title="Permanent link">#</a></h3>
@@ -5184,7 +5198,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">August 22, 2025</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 3, 2026</span>
     
   </small>
 </div>
