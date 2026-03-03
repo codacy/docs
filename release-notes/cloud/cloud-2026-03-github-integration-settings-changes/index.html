@@ -11,7 +11,7 @@
         <meta name="description" content="We are making two changes to the GitHub integration settings over the coming weeks. Both are handled automatically - you don&#x27;t need to take any action.">
       
       
-        <meta http-equiv="last-modified" content="2026-03-02 16:19:38">
+        <meta http-equiv="last-modified" content="2026-03-03 14:21:29">
       
       
         <link rel="canonical" href="https://docs.codacy.com/release-notes/cloud/cloud-2026-03-github-integration-settings-changes/">
@@ -2644,7 +2644,7 @@
       
         <li class="md-nav__item">
   <a href="#ai-enhanced-comments" class="md-nav__link">
-    AI-enhanced comments (Beta) being deprecated on March 16, 2026
+    AI-enhanced comments (Beta) being deprecated on March 17, 2026
   </a>
   
 </li>
@@ -4970,24 +4970,32 @@
 </div>
 <p>We are making two changes to the GitHub integration settings over the coming weeks. Both are handled automatically - you don't need to take any action.</p>
 <ul>
-<li><a href="#ai-enhanced-comments"><strong>AI-enhanced comments (Beta) being deprecated for GitHub</strong></a> — AI-enhanced comments are being replaced by the AI Reviewer on March 16, 2026.</li>
+<li><a href="#ai-enhanced-comments"><strong>AI-enhanced comments (Beta) being deprecated for GitHub</strong></a> — AI-enhanced comments are being replaced by the <a href="../../../codacy-ai/codacy-ai/#pr-reviewer">AI Reviewer</a> on March 17, 2026.</li>
 <li><a href="#coverage-summary"><strong>Coverage summary moving to Pull request review</strong></a> — the Coverage summary setting is being removed; coverage data will soon be included in the Pull request review comment.</li>
 </ul>
-<h2 id="ai-enhanced-comments">AI-enhanced comments (Beta) being deprecated on March 16, 2026<a class="headerlink" href="#ai-enhanced-comments" title="Permanent link">#</a></h2>
-<p>Codacy is deprecating the AI-enhanced comments (Beta) feature in favour of the AI Reviewer, which provides a more accurate, comprehensive, and streamlined experience for identifying and addressing issues.</p>
-<p>On March 16, 2026, Codacy will migrate all repositories and organizations that have <strong>AI-enhanced comments</strong> enabled to the AI Reviewer and remove the setting.</p>
+<h2 id="ai-enhanced-comments">AI-enhanced comments (Beta) being deprecated on March 17, 2026<a class="headerlink" href="#ai-enhanced-comments" title="Permanent link">#</a></h2>
+<p>Codacy is deprecating the AI-enhanced comments (Beta) feature in favour of the <a href="../../../codacy-ai/codacy-ai/#ai-reviewer">AI Reviewer</a>, which provides a more accurate, comprehensive, and context-aware experience for identifying and addressing issues.</p>
+<p>On March 17, 2026, Codacy will migrate all repositories and organizations that have <strong>AI-enhanced comments</strong> enabled to the <a href="../../../codacy-ai/codacy-ai/#ai-reviewer">AI Reviewer</a> and remove the setting.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Organizations with contractual restrictions on AI providers or content analysis scope will not be automatically migrated to the AI Reviewer. For these organizations, AI-enhanced comments will simply be disabled. The AI Reviewer can be enabled at any time from your <a href="../../../repositories-configure/integrations/github-integration/#ai-reviewer">integration settings</a>. For more information, contact your account manager or <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
 </div>
 <h3 id="what-to-expect">What to expect<a class="headerlink" href="#what-to-expect" title="Permanent link">#</a></h3>
 <ul>
-<li>The AI-enhanced comments (Beta) setting will be removed on March 16, 2026.</li>
-<li>If you had AI-enhanced comments enabled at repository or organization level, those will be migrated to the AI Reviewer accordingly.</li>
+<li>On March 17, 2026, the AI-enhanced comments setting will be removed and any repository or organization where it is enabled will be migrated to the AI Reviewer.</li>
+<li>Repositories where AI-enhanced comments are not enabled will not have the AI Reviewer enabled automatically.</li>
 <li>The AI Reviewer defaults to <strong>manual</strong> mode, so your team won't receive unexpected reviews.</li>
 </ul>
 <h3 id="what-do-you-need-to-do">What do you need to do?<a class="headerlink" href="#what-do-you-need-to-do" title="Permanent link">#</a></h3>
-<p>Nothing. Codacy will handle the migration automatically. If you have any further questions, contact <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
+<p>Nothing is required. Codacy will handle the migration automatically.</p>
+<p>If you prefer, you can enable the AI Reviewer now in your organization and repository integration settings. If you enable it before March 17, 2026, we recommend manually disabling <strong>AI-enhanced comments</strong> at the same time to avoid duplicate comments on Pull Requests.</p>
+<p>If you have any further questions, contact <a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;">&#115;&#117;&#112;&#112;&#111;&#114;&#116;&#64;&#99;&#111;&#100;&#97;&#99;&#121;&#46;&#99;&#111;&#109;</a>.</p>
+<h3 id="why-this-change">Why this change<a class="headerlink" href="#why-this-change" title="Permanent link">#</a></h3>
+<ul>
+<li>The <a href="../../../codacy-ai/codacy-ai/#pr-reviewer">AI Reviewer</a> uses broader context from source code and PR metadata (and Jira tickets, if enabled), which improves accuracy and reduces noise.</li>
+<li>You can guide reviews with custom instructions using a <code>review.md</code> file in your repository.</li>
+<li>You can trigger reviews on demand from Pull Requests using the <strong>Run review</strong> button.</li>
+</ul>
 <h2 id="coverage-summary">Coverage summary moving to Pull request review<a class="headerlink" href="#coverage-summary" title="Permanent link">#</a></h2>
 <p>Codacy is consolidating coverage data into the Pull request review comment so that you get a complete picture of your code quality and security changes in a single place, without the need for a separate comment.</p>
 <p>In the coming weeks, Codacy will migrate all repositories and organizations that have <strong>Coverage summary</strong> enabled to <strong>Pull request review</strong>. On that date, the Coverage summary setting will be removed.</p>
@@ -5160,7 +5168,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 2, 2026</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 3, 2026</span>
     
   </small>
 </div>
