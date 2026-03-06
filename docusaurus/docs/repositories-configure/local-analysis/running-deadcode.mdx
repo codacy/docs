@@ -1,0 +1,49 @@
+---
+title: Running deadcode
+description: Instructions on how to run deadcode as a client-side tool on Codacy.
+tool_name: deadcode
+---
+
+import ClientSideToolAdvanced from '../../_includes/ClientSideToolAdvanced.mdx';
+import ClientSideToolInstructionsItems from '../../_includes/ClientSideToolInstructionsItems.mdx';
+
+To run deadcode as a [client-side tool](client-side-tools.md):
+
+<ol>
+    <ClientSideToolInstructionsItems toolName="deadcode" />
+    <li>
+        Download and run the{' '}
+        <a href="https://github.com/codacy/codacy-analysis-cli#install">
+            Codacy Analysis CLI
+        </a>{' '}
+        on the root of the repository, specifying the tool deadcode.
+
+        ```bash
+        codacy-analysis-cli analyze --tool deadcode \
+                                    --allow-network \
+                                    --upload \
+                                    --verbose
+        ```
+
+        <p>
+            <strong>If you're using an account API token</strong>, you must also
+            provide the flags <code>--provider</code>, <code>--username</code>,
+            and <code>--project</code>. You can obtain the values for these
+            flags from the URL of your repository dashboard on Codacy:
+        </p>
+
+        ```bash
+        codacy-analysis-cli analyze --provider <gh, ghe, gl, gle, bb, or bbe> \
+                                    --username <name of your Codacy organization> \
+                                    --project <name of your repository> \
+                                    --tool deadcode \
+                                    --allow-network \
+                                    --upload \
+                                    --verbose
+        ```
+    </li>
+</ol>
+
+The Codacy Analysis CLI runs deadcode on your repository and uploads the results to Codacy so you can use them in your workflow.
+
+<ClientSideToolAdvanced toolName="deadcode" />
