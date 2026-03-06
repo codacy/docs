@@ -30,7 +30,7 @@ jobs:
 
       - name: Comment PR if there are deleted files
         if: steps.changed-files.outputs.any_deleted == 'true'
-        uses: thollander/actions-comment-pull-request@v2
+        uses: thollander/actions-comment-pull-request@v3
         with:
           message: |
             ## Remember to add redirects
