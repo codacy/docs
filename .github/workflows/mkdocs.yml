@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v6
+        uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6
         with:
           token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
           submodules: true
@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0
 
       - name: Set up Python
-        uses: actions/setup-python@v5
+        uses: actions/setup-python@a26af69be951a213d495a4c3e4e4022e16d87065 # v5
         with:
           python-version: "3.x"
           cache: "pip"
@@ -30,7 +30,7 @@ jobs:
       - name: Obtain pull request number
         id: pull_request
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
-        uses: jwalton/gh-find-current-pr@v1
+        uses: jwalton/gh-find-current-pr@f3d61b485d2801773f7a07b2aaa3306bd8f8e653 # v1
 
       - name: Set up environment variables
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
@@ -43,7 +43,7 @@ jobs:
           mkdocs -v build
 
       - name: Upload meta descriptions artifact
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4
         with:
           name: meta-descriptions
           path: ./site/meta-descriptions.csv
@@ -56,13 +56,13 @@ jobs:
       - name: Obtain Netlify alias from branch name
         id: branch
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
-        uses: common-fate/branch-name@v1.1.2
+        uses: common-fate/branch-name@baca702844ae4e7dfd7bfdfa6a9bd4235bc9f08e # v1.1.2
         with:
           max-length: 35
 
       - name: Deploy docs (branch preview)
         if: github.ref != 'refs/heads/master' && !startsWith(github.ref, 'refs/heads/release/v')
-        uses: nwtgck/actions-netlify@v3.0
+        uses: nwtgck/actions-netlify@4cbaf4c08f1a7bfa537d6113472ef4424e4eb654 # v3.0
         with:
           publish-dir: ./site
           production-branch: master
@@ -93,7 +93,7 @@ jobs:
           echo -e "User-agent: *\nSitemap: https://${{ env.CUSTOM_DOMAIN }}/sitemap.xml" > "./site/robots.txt"
 
       - name: Deploy docs (Latest)
-        uses: peaceiris/actions-gh-pages@v4
+        uses: peaceiris/actions-gh-pages@4f9cc6602d3f66b9c108549d475ec49e8ef4d45e # v4
         if: github.ref == 'refs/heads/master'
         with:
           personal_token: ${{ secrets.DEPLOYMENT_PERSONAL_ACCESS_TOKEN }}
@@ -106,7 +106,7 @@ jobs:
 
       # Deploy Self-hosted docs on push to release/vM.m branch
       - name: Set up git author
-        uses: oleksiyrudenko/gha-git-credentials@v2
+        uses: oleksiyrudenko/gha-git-credentials@6132cfce45156e2c1562673f9be1a91a575ce879 # v2
         if: startsWith(github.ref, 'refs/heads/release/v')
         with:
           name: ${{ github.actor }}
