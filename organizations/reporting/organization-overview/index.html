@@ -11,7 +11,7 @@
         <meta name="description" content="The Organization overview summarizes repositories in your Git provider organization so you can compare status and quickly identify items that need attention.">
       
       
-        <meta http-equiv="last-modified" content="2026-02-24 10:09:39">
+        <meta http-equiv="last-modified" content="2026-03-24 12:26:13">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/reporting/organization-overview/">
@@ -5126,10 +5126,25 @@
 <p>For calculation details, see <a href="../../../faq/code-analysis/which-metrics-does-codacy-calculate/#code-coverage">how code coverage is calculated</a>.</p>
 <h3 id="coverage-dashboard-on-paid-plans">Coverage dashboard on Paid plans<a class="headerlink" href="#coverage-dashboard-on-paid-plans" title="Permanent link">#</a></h3>
 <p><img alt="Image of the Coverage tab" src="../images/organization-overview-coverage.png" /></p>
-<p>The Coverage tab on paid plans uses two key metrics:</p>
+<p>The Coverage tab on paid plans is divided into two main sections:</p>
+<ul>
+<li>
+<p><strong>Line coverage</strong></p>
+<p>Uses three main metrics:</p>
 <ul>
 <li><strong>Covered lines</strong>: Number of covered lines reported to Codacy.</li>
 <li><strong>Coverable lines</strong>: Number of lines that can be covered, based on coverage reports.</li>
+<li><strong>Coverage percentage</strong>: The percentage of covered lines.</li>
+</ul>
+</li>
+<li>
+<p><strong>File coverage</strong></p>
+<p>Uses two main metrics:</p>
+<ul>
+<li><strong>Files with coverage</strong>: Number of files that have coverage.</li>
+<li><strong>Total files</strong>: Total number of files.</li>
+</ul>
+</li>
 </ul>
 <p>These metrics drive all dashboard components:</p>
 <table>
@@ -5150,7 +5165,23 @@
 </tr>
 <tr>
 <td><strong>Coverage trend</strong></td>
-<td>Time-based trend for covered lines, uncovered lines, and organization coverage (or the current filter selection, see <a href="#overview-filters">filters</a>). You can choose time ranges and granularities, and select a date to see which repositories changed the most during that period.</td>
+<td>Time-based trend for covered lines, uncovered lines, and organization coverage (or the current filter selection, see <a href="#overview-filters">filters</a>). You can choose time ranges and granularity, and select a date to see which repositories changed the most during that period.</td>
+</tr>
+<tr>
+<td><strong>File coverage</strong></td>
+<td><code>filesWithCoverage / totalFiles</code> <br/>Aggregation of all the files that have coverage divided by all the files across all repositories (or the current filter selection, see <a href="#overview-filters">filters</a>). Includes only languages that support coverage.</td>
+</tr>
+<tr>
+<td><strong>Files by coverage percentage</strong></td>
+<td>Distribution chart grouping the files with coverage into coverage ranges: very low, low, medium, high, and very high. You can select one or more ranges to see the distribution of selected ranges for each language in the languages chart, each day in the trend chart, and the number of files within that range for each repository.</td>
+</tr>
+<tr>
+<td><strong>File coverage by language</strong></td>
+<td>Language breakdown showing file coverage percentages and covered/total file counts per language. You can choose one or more languages to view coverage performance across your repositories for those selected languages.</td>
+</tr>
+<tr>
+<td><strong>File coverage trend</strong></td>
+<td>Time-based trend for covered files, uncovered files, and overall file coverage percentage. You can choose time ranges and granularity, and select a date to see which repositories changed the most during that period.</td>
 </tr>
 </tbody>
 </table>
@@ -5317,7 +5348,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 24, 2026</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 24, 2026</span>
     
   </small>
 </div>
