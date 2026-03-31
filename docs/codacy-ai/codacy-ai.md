@@ -57,7 +57,8 @@ More details about [False Positives here](../repositories/commits.md#false-posit
 
 - Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into model training.
 - To detect a Possible False Positive, Codacy only processes the specific issue context: one request per file with issues. No additional repository data is sent or used.
-- Prompts are neither stored nor visible by anyone
+- Prompts are neither stored nor visible by anyone.
+- As an extra precaution, before any code snippet is sent to the AI model, Codacy automatically redacts secrets (API keys, tokens, credentials, and other high-entropy strings) from the code context.
 
 <div id="pr-reviewer"></div>
 
@@ -122,4 +123,5 @@ Rules for the output:
 
 - Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into model training.
 - To enrich the review, the git diff of the Pull Request as well as some related files' contents can be sent as context. No data is stored on our side, or used to train any models.
-- Prompts are neither stored nor visible by anyone
+- Prompts are neither stored nor visible by anyone.
+- As an extra precaution, before any code snippet is sent to the AI model, Codacy automatically redacts secrets (API keys, tokens, credentials, and other high-entropy strings) from the code context.
