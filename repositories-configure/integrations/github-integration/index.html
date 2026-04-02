@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Enable the GitHub integration to have status checks, annotations, issue and coverage summaries, and suggested fixes from Codacy directly on pull requests.">
+        <meta name="description" content="Enable the GitHub integration to have status checks, annotations, issue summaries, pull request summaries, and suggested fixes from Codacy directly on pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2026-03-03 14:49:31">
+        <meta http-equiv="last-modified" content="2026-04-02 14:05:52">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/github-integration/">
@@ -4987,7 +4987,7 @@
 </ul>
 </div>
 <p><img alt="Pull request status check on GitHub" src="../images/github-integration-pr-status.png" /></p>
-<h3 id="pull-request-review">Pull request review<a class="headerlink" href="#pull-request-review" title="Permanent link">#</a></h3>
+<h3 id="pull-request-summary">Pull request summary<a class="headerlink" href="#pull-request-summary" title="Permanent link">#</a></h3>
 <div class="admonition info">
 <p class="admonition-title">This feature is <a href="https://www.codacy.com/pricing">only available on paid plans</a></p>
 </div>
@@ -4995,13 +4995,11 @@
 <p class="admonition-title">Note</p>
 <p>This feature is only supported on GitHub.</p>
 </div>
-<p>When enabled, Codacy posts a <strong>Codacy's Analysis Summary</strong> comment on your pull requests each time a new analysis completes, giving you a full overview of code quality,  security, complexity, and duplication metric changes, without requiring you to open the Codacy app.</p>
-<h4 id="ai-reviewer">Enable AI reviewer<a class="headerlink" href="#ai-reviewer" title="Permanent link">#</a></h4>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>If you enable the AI Reviewer, consider disabling AI-enhanced comments to avoid receiving duplicate comments on Codacy issues.</p>
-</div>
-<p>The AI Reviewer extends Pull request reviews with an AI-powered code analysis. It combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, Jira ticket if <a href="../../../organizations/integrations/jira-integration/">integration exists</a>, source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.</p>
+<p>When enabled, Codacy posts a comment on your pull requests each time a new analysis completes. The comment shows the quality gate result and breaks down issues, metrics (complexity and duplication), and coverage (diff coverage and coverage variation), giving you a full picture of the impact of your changes without leaving GitHub.</p>
+<p><img alt="Pull request summary" src="../images/pull-request-summary.png" /></p>
+<h4 id="ai-reviewer">Enable AI Reviewer<a class="headerlink" href="#ai-reviewer" title="Permanent link">#</a></h4>
+<p>When enabled, the AI Reviewer posts a standalone code review on the pull request and adds a trigger section to the pull request summary comment, allowing you to run the reviewer on demand. When disabled, the trigger section does not appear in the pull request summary comment.</p>
+<p>The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, Jira ticket if <a href="../../../organizations/integrations/jira-integration/">integration exists</a>, source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.</p>
 <p>It provides feedback on missing or weak tests, complex or duplicated code, and keeps security concerns up to date. Beyond that, it adds contextual insights about whether the changes follow the requirements, business rules, and logic used in the project.</p>
 <p>Configure when the AI Reviewer runs using the <strong>Run reviewer</strong> setting:</p>
 <table>
@@ -5013,12 +5011,12 @@
 </thead>
 <tbody>
 <tr>
-<td>Manually</td>
-<td>Click <strong>Run Reviewer</strong> in the pull request comment or call our <a href="https://api.codacy.com/api/api-docs#triggerpullrequestaireview">public API</a> to trigger a review on demand.</td>
-</tr>
-<tr>
 <td>Automatically (first review only)</td>
 <td>Codacy runs the reviewer once automatically when the pull request is opened, then requires manual triggering for subsequent updates.</td>
+</tr>
+<tr>
+<td>Manually</td>
+<td>Click <strong>Run Reviewer</strong> in the pull request summary comment or call our <a href="https://api.codacy.com/api/api-docs#triggerpullrequestaireview">public API</a> to trigger a review on demand.</td>
 </tr>
 </tbody>
 </table>
@@ -5033,47 +5031,12 @@
 <h3 id="issue-summaries">Issue summaries<a class="headerlink" href="#issue-summaries" title="Permanent link">#</a></h3>
 <p>Shows an overall view of the changes in the pull request, including new issues and metrics such as complexity and duplication. To enable this option, you must enable <strong>Status checks</strong> first.</p>
 <p><img alt="Issue summary on GitHub" src="../images/github-integration-pr-summary.png" /></p>
-<h3 id="coverage-summaries">Coverage summaries<a class="headerlink" href="#coverage-summaries" title="Permanent link">#</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">Coverage summary is moving to Pull request review</p>
-<p>In the coming weeks, Codacy will include coverage data in the Pull request review comment and remove the Coverage summary setting. <a href="../../../release-notes/cloud/cloud-2026-03-github-integration-settings-changes/#coverage-summary">Learn more</a>.</p>
-</div>
-<p>Adds a pull request comment showing an overall view of the coverage metrics for the pull request, including details about the data that Codacy used to calculate the coverage variation and diff coverage metrics.</p>
-<p>When there are new coverage results, Codacy updates the last coverage summary comment if it's included in the last 5 comments of the pull request. Otherwise, Codacy creates a new comment.</p>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p><strong>To get coverage summaries</strong> you must also <a href="../../../coverage-reporter/">add coverage to your repository</a>.</p>
-</div>
-<p><img alt="Coverage summary on GitHub" src="../images/github-integration-coverage-summary.png" /></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This feature is only supported on GitHub and GitLab Cloud.</p>
-</div>
 <h3 id="suggest-fixes">Suggested fixes<a class="headerlink" href="#suggest-fixes" title="Permanent link">#</a></h3>
 <div class="admonition info">
 <p class="admonition-title">This feature is <a href="https://www.codacy.com/pricing">only available on paid plans</a></p>
 </div>
 <p>Adds comments on the lines of the pull request where Codacy finds new issues with suggestions on how to fix the issues. Codacy doesn't apply any changes automatically. To apply the changes, <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request#applying-suggested-changes">manually review and accept the suggestions</a>.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p>Enable also <strong>AI-enhanced comments</strong> to get ready-to-commit AI-generated fixes.</p>
-</div>
 <p><img alt="Comment suggesting a fix on GitHub" src="../images/github-integration-suggest-fixes.png" /></p>
-<h3 id="ai-enhanced-comments">AI-enhanced comments<a class="headerlink" href="#ai-enhanced-comments" title="Permanent link">#</a></h3>
-<div class="admonition warning">
-<p class="admonition-title">AI-enhanced comments (Beta) is being deprecated on March 16, 2026</p>
-<p>This feature is being replaced by the AI Reviewer, which provides a more accurate and comprehensive experience. <a href="../../../release-notes/cloud/cloud-2026-03-github-integration-settings-changes/#ai-enhanced-comments">Learn more</a>.</p>
-</div>
-<p>Adds AI-enhanced comments, providing insights and ready-to-commit AI-generated fixes for identified issues in cases where tool-suggested fixes are not supported. To enable this option, you must enable <strong>Suggested fixes</strong> first.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<ul>
-<li>This feature is compatible with most programming languages and requires no additional setup.</li>
-<li>Comments are generated using the description of the static analysis issue, information about the tool that detected the issue, and a few lines of surrounding code to provide the AI with extra context and improve its accuracy.</li>
-<li>This feature leverages the OpenAI API. No information is shared with other third parties or used to train AI models. Please refer to the <a href="https://openai.com/policies/api-data-usage-policies">OpenAI API data usage policies</a> for more information.</li>
-</ul>
-</div>
-<p><img alt="AI-enhanced comment on GitHub" src="../images/github-integration-ai-comment.png" /></p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../../getting-started/integrating-codacy-with-your-git-workflow/">Integrating Codacy with your Git workflow</a></li>
@@ -5234,7 +5197,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 3, 2026</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 2, 2026</span>
     
   </small>
 </div>

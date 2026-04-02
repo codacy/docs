@@ -11,7 +11,7 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool.">
       
       
-        <meta http-equiv="last-modified" content="2026-04-02 10:08:13">
+        <meta http-equiv="last-modified" content="2026-04-02 14:05:52">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-ai/codacy-ai/">
@@ -4969,9 +4969,12 @@
 <p>Codacy AI utilizes only enterprise-grade instances of OpenAI and Google Gemini services with enhanced security, privacy, and data protection features. Customer Code processed through Codacy AI will not be used by Codacy, OpenAI, or any third-party AI provider for training, improving, or developing artificial intelligence models, machine learning algorithms, or any other automated systems.</p>
 <h2 id="ai-features">AI Features<a class="headerlink" href="#ai-features" title="Permanent link">#</a></h2>
 <h3 id="ai-enhanced-comments">AI-enhanced comments<a class="headerlink" href="#ai-enhanced-comments" title="Permanent link">#</a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This feature is available on GitLab and Bitbucket. It is no longer available on GitHub, where it has been replaced by the <a href="#ai-reviewer">AI Reviewer</a>.</p>
+</div>
 <p><em>This feature leverages OpenAI models, and is strictly opt-in: it will only run on repositories or projects where a repository admin has enabled it.</em></p>
 <p>AI-enhanced comments are optional, machine-generated suggestions that appear directly in pull requests and review threads. They use Codacy's AI to provide concise issue summaries, remediation suggestions, and links to relevant documentation — helping reviewers and authors quickly understand and fix problems.</p>
-<p>More details about <a href="../../repositories-configure/integrations/github-integration/#ai-enhanced-comments">AI-enhanced comments here</a>.</p>
 <p><strong>How to turn it on</strong></p>
 <ol>
 <li>Go to your organization or repository settings in Codacy.</li>
@@ -5023,7 +5026,7 @@
 <ol>
 <li>Go to your organization or repository settings in Codacy.</li>
 <li>Navigate to the "Integrations" or "AI features" section (depending on your Codacy plan and UI version).</li>
-<li>Find "AI Reviewer", under "Status checks", and toggle the feature to "On" for the repository or organization scope you want to enable.</li>
+<li>Find "AI Reviewer", under "Pull request summary", and toggle the feature to "On" for the repository or organization scope you want to enable.</li>
 <li>Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews.</li>
 <li>To request a PR review, click <strong>Run Reviewer</strong> in the Summary or call our <a href="https://api.codacy.com/api/api-docs#triggerpullrequestaireview">public API</a>. Your review will be published as soon as it's ready.</li>
 </ol>
