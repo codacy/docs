@@ -11,7 +11,7 @@
         <meta name="description" content="Documentation for the Codacy automated code review tool.">
       
       
-        <meta http-equiv="last-modified" content="2026-03-03 14:49:31">
+        <meta http-equiv="last-modified" content="2026-04-02 10:08:13">
       
       
         <link rel="canonical" href="https://docs.codacy.com/codacy-ai/codacy-ai/">
@@ -5006,7 +5006,8 @@
 <ul>
 <li>Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into model training.</li>
 <li>To detect a Possible False Positive, Codacy only processes the specific issue context: one request per file with issues. No additional repository data is sent or used.</li>
-<li>Prompts are neither stored nor visible by anyone</li>
+<li>Prompts are neither stored nor visible to anyone.</li>
+<li>As an extra precaution, before any code snippet is sent to the AI model, Codacy automatically redacts secrets (API keys, tokens, credentials, and other high-entropy strings) from the code context.</li>
 </ul>
 <div id="pr-reviewer"></div>
 
@@ -5057,7 +5058,8 @@ Rules for the output:
 <ul>
 <li>Codacy does not use your code, repository contents, or comments to train external AI models. No customer code or review text is incorporated into model training.</li>
 <li>To enrich the review, the git diff of the Pull Request as well as some related files' contents can be sent as context. No data is stored on our side, or used to train any models.</li>
-<li>Prompts are neither stored nor visible by anyone</li>
+<li>Prompts are neither stored nor visible to anyone.</li>
+<li>As an extra precaution, before any code snippet is sent to the AI model, Codacy automatically redacts secrets (API keys, tokens, credentials, and other high-entropy strings) from the code context.</li>
 </ul>
               
               
@@ -5215,7 +5217,7 @@ Rules for the output:
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">March 3, 2026</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 2, 2026</span>
     
   </small>
 </div>
