@@ -1,5 +1,5 @@
 ---
-description: Enable the GitHub integration to have status checks, annotations, issue summaries, and suggested fixes from Codacy directly on pull requests.
+description: Enable the GitHub integration to have status checks, annotations, issue summaries, pull request summaries, and suggested fixes from Codacy directly on pull requests.
 ---
 
 # GitHub integration
@@ -43,7 +43,7 @@ Adds a report to your pull requests showing whether your pull requests and cover
 
 When enabled, Codacy posts a comment on your pull requests each time a new analysis completes. The comment shows the quality gate result and breaks down issues, metrics (complexity and duplication), and coverage (diff coverage and coverage variation), giving you a full picture of the impact of your changes without leaving GitHub.
 
-#### Enable AI reviewer {: id="ai-reviewer"}
+#### Enable AI Reviewer {: id="ai-reviewer"}
 
 When enabled, the AI Reviewer posts a standalone code review on the pull request and adds a trigger section to the pull request summary comment, allowing you to run the reviewer on demand. When disabled, the trigger section does not appear in the pull request summary comment.
 

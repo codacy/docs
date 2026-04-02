@@ -115,7 +115,7 @@ If you are using the old status check to block merging pull requests on GitHub, 
 
 ## GitHub coverage summaries from the new Coverage engine {: id="coverage-summaries"}
 
-!!! info "This section applies to the repositories for which you set Codacy to post [coverage summaries](../../repositories-configure/integrations/github-integration.md#coverage-summaries) to your GitHub pull requests"
+!!! info "This section applies to the repositories for which you set Codacy to post coverage summaries to your GitHub pull requests"
 
 {%
     include-markdown "../../assets/includes/coverage-github-accept-permissions.md"
