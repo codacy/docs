@@ -43,6 +43,8 @@ Adds a report to your pull requests showing whether your pull requests and cover
 
 When enabled, Codacy posts a comment on your pull requests each time a new analysis completes. The comment shows the quality gate result and breaks down issues, metrics (complexity and duplication), and coverage (diff coverage and coverage variation), giving you a full picture of the impact of your changes without leaving GitHub.
 
+![Pull request summary](images/pull-request-summary.png)
+
 #### Enable AI Reviewer {: id="ai-reviewer"}
 
 When enabled, the AI Reviewer posts a standalone code review on the pull request and adds a trigger section to the pull request summary comment, allowing you to run the reviewer on demand. When disabled, the trigger section does not appear in the pull request summary comment.
@@ -55,8 +57,8 @@ Configure when the AI Reviewer runs using the **Run reviewer** setting:
 
 | Mode | Behaviour |
 |------|-----------|
-| Manually | Click **Run Reviewer** in the pull request summary comment or call our [public API](https://api.codacy.com/api/api-docs#triggerpullrequestaireview) to trigger a review on demand. |
 | Automatically (first review only) | Codacy runs the reviewer once automatically when the pull request is opened, then requires manual triggering for subsequent updates. |
+| Manually | Click **Run Reviewer** in the pull request summary comment or call our [public API](https://api.codacy.com/api/api-docs#triggerpullrequestaireview) to trigger a review on demand. |
 
 !!! tip
     Improve the AI Reviewer results by providing custom instructions. [Learn how to do it here](../../codacy-ai/codacy-ai.md#custom-instructions).
