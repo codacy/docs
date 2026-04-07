@@ -10,11 +10,12 @@ Codacy AI utilizes only enterprise-grade instances of OpenAI and Google Gemini s
 
 ### AI-enhanced comments
 
+!!! note
+    This feature is available on GitLab and Bitbucket. It is no longer available on GitHub, where it has been replaced by the [AI Reviewer](#ai-reviewer).
+
 _This feature leverages OpenAI models, and is strictly opt-in: it will only run on repositories or projects where a repository admin has enabled it._
 
 AI-enhanced comments are optional, machine-generated suggestions that appear directly in pull requests and review threads. They use Codacy's AI to provide concise issue summaries, remediation suggestions, and links to relevant documentation — helping reviewers and authors quickly understand and fix problems.
-
-More details about [AI-enhanced comments here](../repositories-configure/integrations/github-integration.md#ai-enhanced-comments).
 
 **How to turn it on**
 
@@ -77,7 +78,7 @@ More details about [AI Reviewer here](../repositories-configure/integrations/git
 
 1. Go to your organization or repository settings in Codacy.
 2. Navigate to the "Integrations" or "AI features" section (depending on your Codacy plan and UI version).
-3. Find "AI Reviewer", under "Status checks", and toggle the feature to "On" for the repository or organization scope you want to enable.
+3. Find "AI Reviewer", under "Pull request summary", and toggle the feature to "On" for the repository or organization scope you want to enable.
 4. Save your changes. Once enabled, Codacy will start adding a Summary to your pull requests based on the AI-enriched reviews.
 5. To request a PR review, click **Run Reviewer** in the Summary or call our [public API](https://api.codacy.com/api/api-docs#triggerpullrequestaireview). Your review will be published as soon as it's ready.
 
