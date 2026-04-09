@@ -122,6 +122,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>To solve flagged valid Python "assert" statements, create a <code>bandit.yml</code> on the root of the repository containing: <code>skips: \['B101'\]</code></td>
   </tr>
   <tr>
+    <td>BiomeJS</td>
+    <td>CSS, JavaScript, JSON, TypeScript</td>
+    <td><code>biome.json</code>, <code>biome.jsonc</code>, <code>.biome.json</code>, <code>.biome.jsonc</code></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>Brakeman</td>
     <td>Ruby</td>
     <td><code>config/brakeman.yml</code></td>
