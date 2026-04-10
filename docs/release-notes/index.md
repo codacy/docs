@@ -18,6 +18,8 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 2026
 
+-   [Cloud March 2026](cloud/cloud-2026-03.md)
+-   [Changes to GitHub integration settings March, 2026](cloud/cloud-2026-03-github-integration-settings-changes.md)
 -   [Cloud February 2026](cloud/cloud-2026-02.md)
 -   [Semgrep to Opengrep migration February, 2026](cloud/cloud-2026-02-migrating-semgrep.md)
 -   [Cloud January 2026](cloud/cloud-2026-01.md)
