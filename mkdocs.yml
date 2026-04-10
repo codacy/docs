@@ -690,8 +690,9 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2026:
-                      - release-notes/cloud/cloud-2026-02.md
+                      - release-notes/cloud/cloud-2026-03.md
                       - release-notes/cloud/cloud-2026-03-github-integration-settings-changes.md
+                      - release-notes/cloud/cloud-2026-02.md
                       - release-notes/cloud/cloud-2026-01.md
                       - release-notes/cloud/cloud-2026-01-adding-golangci-lint.md
                 - 2025:
