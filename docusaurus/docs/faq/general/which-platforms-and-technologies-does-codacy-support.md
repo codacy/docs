@@ -1,0 +1,85 @@
+---
+title: Which platforms and technologies does Codacy support?
+---
+
+
+This page includes information about software platforms and technologies compatible with Codacy.
+
+## Supported version control systems and Git providers
+
+Codacy supports repositories from the following Git providers:
+
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Hosting model</th>
+      <th>Name used on Codacy</th>
+      <th>Required Codacy version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- GitHub -->
+    <tr>
+      <th rowspan="2" style={{verticalAlign: 'middle'}}>
+        <a style={{color: 'white'}} href="https://github.com">GitHub</a>
+      </th>
+      <td><p><strong>GitHub.com</strong></p></td>
+      <td><p>GitHub Cloud</p></td>
+      <td><p>Codacy Cloud or<br/>Codacy Self-hosted</p></td>
+    </tr>
+    <tr>
+      <td><p><strong>GitHub Enterprise Server</strong><br/>version 3.6.2 or later</p></td>
+      <td><p>GitHub Enterprise</p></td>
+      <td><p>Codacy Self-hosted</p></td>
+    </tr>
+    <tr><td colspan="4"></td></tr>
+    <!-- GitLab -->
+    <tr>
+      <th rowspan="2" style={{verticalAlign: 'middle'}}>
+        <a style={{color: 'white'}} href="https://about.gitlab.com">GitLab</a>
+      </th>
+      <td><p><strong>GitLab SaaS</strong></p></td>
+      <td><p>GitLab Cloud</p></td>
+      <td><p>Codacy Cloud or<br/>Codacy Self-hosted</p></td>
+    </tr>
+    <tr>
+      <td><p><strong>GitLab Self-managed</strong><br/>version 14.8 or later</p></td>
+      <td><p>GitLab Enterprise</p></td>
+      <td><p>Codacy Self-hosted</p></td>
+    </tr>
+    <tr><td colspan="4"></td></tr>
+    <!-- Bitbucket -->
+    <tr>
+      <th rowspan="2" style={{verticalAlign: 'middle'}}>
+        <a style={{color: 'white'}} href="https://bitbucket.org">Bitbucket</a>
+      </th>
+      <td><p><strong>Bitbucket Cloud</strong></p></td>
+      <td><p>Bitbucket Cloud</p></td>
+      <td><p>Codacy Cloud or<br/>Codacy Self-hosted</p></td>
+    </tr>
+    <tr>
+      <td><p><strong>Bitbucket Data Center</strong><br/>
+             <strong>Bitbucket Server</strong><br/>version 6.6.0 or later</p></td>
+      <td><p>Bitbucket Server</p></td>
+      <td><p>Codacy Self-hosted</p></td>
+    </tr>
+  </tbody>
+</table>
+
+:::note
+Although older versions of the self-hosted Git providers may work with Codacy without loss of functionality, Codacy will only fix issues and ensure compatibility with the versions listed above.
+:::
+
+## Supported browsers
+
+Codacy runs on every modern browser supporting HTML5 and CSS3:
+
+-   Chrome 67+
+-   Firefox 45+
+-   Internet Explorer 11+
+-   Microsoft Edge 13+
+
+## Supported character encodings
+
+Codacy supports the UTF-8 character encoding standard.
