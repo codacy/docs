@@ -4,15 +4,15 @@ description: The organization's AI Risk Hub dashboard provides an overview of al
 
 # AI Risk Hub
 
-The **AI Risk Hub** gives you visibility into the AI usage, dependencies, and risks across your organization's repositories. It brings together AI policy compliance, risk assessment, and a detailed inventory of AI resources found in your codebase.
+The **AI Risk Hub** gives you visibility into the AI usage, dependencies, and risks across your organization's repositories. It brings together AI policy compliance, risk assessment, and a detailed list of AI assets found in your codebase.
 It also provides an overview of all the AI issues detected in the repositories applied to the organization's AI Policy standard and your organization's risk level based on your AI practices. Here, you can navigate through the issues detected in your repositories and filter them by severity and category. You can also filter the issues by selecting specific repositories or using [the segments that you have set up](segments.md).
 
 !!! important
-    This dashboard is a Business tier feature, generally available until May 18.
+    This dashboard is a Business tier feature, generally available until May 18, 2026.
 
 To access the AI Risk Hub, select an organization from the top navigation bar and click on **AI Risk** on the left navigation sidebar.
 
-Inside this hub, you can find the following pages to help you monitor the AI risk of your organization:
+Inside this hub, you can find the following tabs to help you monitor the AI risk of your organization:
 
 - [Overview](#overview)
 - [AI assets](#ai-assets)
@@ -155,7 +155,7 @@ Codacy detects resources from the following AI providers:
 
 ### How it works
 
-The inventory is built from static analysis of your repositories' source code. For each AI resource found, Codacy records:
+The AI assets list is built from static analysis of your repositories' source code. For each AI resource found, Codacy records:
 
 - Which **provider** the resource belongs to (e.g. OpenAI, Anthropic)
 - What **type** of resource it is (model usage, dependency, API key, endpoint)
@@ -163,7 +163,7 @@ The inventory is built from static analysis of your repositories' source code. F
 - How many **repositories** contain it
 - How many total **references** to it exist
 
-### Navigating the inventory
+### Navigating AI assets
 
 Resources are listed as expandable entries. You can drill into each one to see:
 
@@ -175,7 +175,7 @@ Resources are listed as expandable entries. You can drill into each one to see:
 
 ### Filtering
 
-You can filter the inventory using the sidebar on the left:
+You can filter AI assets using the sidebar on the left:
 
 - **Providers**—filter by one or more AI vendors
 - **Resource types**—filter by resource type (model usage, dependency, API key, endpoint)
