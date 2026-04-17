@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the GitHub integration to have status checks, annotations, issue summaries, pull request summaries, and suggested fixes from Codacy directly on pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2026-04-02 14:05:52">
+        <meta http-equiv="last-modified" content="2026-04-17 12:34:51">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/github-integration/">
@@ -672,6 +672,13 @@
         <li class="md-nav__item">
   <a href="#configuring" class="md-nav__link">
     Configuring the GitHub integration
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#merge-queues" class="md-nav__link">
+    Merge queues
   </a>
   
 </li>
@@ -5049,6 +5056,9 @@
 </div>
 <p>Adds comments on the lines of the pull request where Codacy finds new issues with suggestions on how to fix the issues. Codacy doesn't apply any changes automatically. To apply the changes, <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request#applying-suggested-changes">manually review and accept the suggestions</a>.</p>
 <p><img alt="Comment suggesting a fix on GitHub" src="../images/github-integration-suggest-fixes.png" /></p>
+<h2 id="merge-queues">Merge queues<a class="headerlink" href="#merge-queues" title="Permanent link">#</a></h2>
+<p>To support GitHub <strong>merge queues</strong>, our GitHub App requires <strong>Merge Groups</strong> permissions so it can listen for and respond to the <code>checks_requested</code> action for merge group events.</p>
+<p>When a merge group event is triggered for a pull request in the merge queue, Codacy automatically sends a green status check for <strong>Codacy Static Code Analysis</strong> to the relevant commit. By the time a pull request enters the merge queue, it has already gone through Codacy's analysis — either receiving a green status or being manually bypassed. Since the pull request was already unblocked before joining the queue, always responding with green is a safe and practical approach that keeps things moving without unnecessary friction.</p>
 <h2 id="see-also">See also<a class="headerlink" href="#see-also" title="Permanent link">#</a></h2>
 <ul>
 <li><a href="../../../getting-started/integrating-codacy-with-your-git-workflow/">Integrating Codacy with your Git workflow</a></li>
@@ -5209,7 +5219,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 2, 2026</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 17, 2026</span>
     
   </small>
 </div>

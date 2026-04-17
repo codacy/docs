@@ -11,7 +11,7 @@
         <meta name="description" content="Review the list of permissions that Codacy requires from your Git provider to analyze your code.">
       
       
-        <meta http-equiv="last-modified" content="2024-02-22 11:20:30">
+        <meta http-equiv="last-modified" content="2026-04-17 12:34:51">
       
       
         <link rel="canonical" href="https://docs.codacy.com/getting-started/which-permissions-does-codacy-need-from-my-account/">
@@ -5058,6 +5058,11 @@
       <td>Codacy retrieves repository contents to get installation access tokens when integrating with your repositories and clone them, and for code coverage analysis.<br/><strong>Codacy requests this permission since September 2023.</strong> Make sure an organization owner <a href="https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</td>
     </tr>
     <tr>
+      <td>Merge groups</td>
+      <td>Read-Only</td>
+      <td>Codacy listens for the `merge_group` webhook event and responds to the `checks_requested` action accordingly.</td>
+    </tr>
+    <tr>
       <td colspan="3"><strong>Organization permissions:</strong></td>
     </tr>
     <tr>
@@ -5346,7 +5351,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">February 22, 2024</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 17, 2026</span>
     
   </small>
 </div>
