@@ -15,7 +15,7 @@ To access the AI Risk Hub, select an organization from the top navigation bar an
 Inside this hub, you can find the following pages to help you monitor the AI risk of your organization:
 
 - [Overview](#overview)
-- [AI Inventory](#ai-inventory)
+- [AI assets](#ai-assets)
 - [Tools & workflows](#tools--workflows)
 
 ---
@@ -28,7 +28,7 @@ The **Overview** tab is the main dashboard for monitoring AI risk across your or
 - [Risk Level](#risk-level)
 - [AI Risk Checklist](#ai-risk-checklist)
 - [Repositories with most AI issues](#repositories-with-most-ai-issues)
-- [AI Inventory summary](#ai-inventory-summary)
+- [AI assets summary](#ai-assets-summary)
 
 ![AI Risk Hub overview](images/ai-risk-hub.png)
 
@@ -108,21 +108,21 @@ Each entry shows how the repository's AI issue count has changed compared to the
 
 ---
 
-### AI Inventory summary
+### AI assets summary
 
 This section shows a high-level view of the AI resources discovered across your repositories, broken down by provider. For each provider, you can see the number of resources and repositories involved, as well as a breakdown by resource type.
 
-The section surfaces the top AI providers detected in your organization. You can click through to the full [AI Inventory](#ai-inventory) for a detailed view.
+The section surfaces the top AI providers detected in your organization. You can click through to the full [AI assets](#ai-assets) tab for a detailed view.
 
-![AI Inventory summary](images/ai-risk-inventory-overview.png)
+![AI assets summary](images/ai-risk-ai-asset-overview.png)
 
 ---
 
-## AI Inventory
+## AI assets
 
-The **AI Inventory** tab gives you a detailed, searchable view of all AI resources discovered across your organization's repositories. Resources are detected through static analysis and represent actual AI usage found in the code — not just configuration.
+The **AI assets** tab gives you a detailed, searchable view of all AI resources discovered across your organization's repositories. Resources are detected through static analysis and represent actual AI usage found in the code — not just configuration.
 
-![AI Inventory](images/ai-risk-inventory.png)
+![AI assets](images/ai-risk-ai-asset-tab.png)
 
 ### Resource types
 
