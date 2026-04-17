@@ -4,7 +4,7 @@ description: The Organization overview summarizes repositories in your Git provi
 
 # Organization overview
 
-Codacy provides high-level visibility into your organization's code quality, security posture, AI risk, usage, and configuration metrics. The **Organization overview** consolidates these signals in a single view.
+Codacy provides high-level visibility into your organization's code quality, security posture, usage, and configuration metrics. The **Organization overview** consolidates these signals in a single view.
 
 The **Organization overview** summarizes repositories in your Git provider organization that you [follow on Codacy](../managing-repositories.md). Use it to compare repository status and identify areas that require action.
 
@@ -21,7 +21,6 @@ The Organization overview includes the following tabs:
 - [Duplication](#duplication)
 - [Coverage](#coverage)
 - [Codacy usage](./codacy-usage.md)
-- [AI Risk Hub](./ai-risk-hub.md)
 
 <div id="overview-filters">Use the filters at the top of the page to scope all dashboard data by repositories or segments. For example, filter by repositories owned by specific teams, repositories using specific languages, or exclude legacy repositories that are no longer maintained. Filter selections are stored in your browser and persist across visits.</div>
 

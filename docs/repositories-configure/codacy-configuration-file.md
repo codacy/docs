@@ -173,6 +173,7 @@ The following are the tool names that must be used in the Codacy configuration f
 ```text
 ameba
 bandit
+biome
 brakeman
 checkov
 checkstyle
