@@ -16,7 +16,7 @@ Inside this hub, you can find the following pages to help you monitor the AI ris
 
 - [Overview](#overview)
 - [AI assets](#ai-assets)
-- [Tools & workflows](#tools--workflows)
+- [Tools & workflows](#tools-workflows)
 
 ---
 
