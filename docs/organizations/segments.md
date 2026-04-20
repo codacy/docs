@@ -1,7 +1,7 @@
 # Segments
 
 !!! important
-    Segments are not supported for Personal orgs, as Custom Properties are not available in Github for these orgs.
+    Segments are not supported for Personal orgs, as Custom Properties are not available in GitHub for these orgs.
 
 Segments are dimensions that Codacy reads from your provider that organizes repositories into relevant groups for you. Today, Segments are available for:
 
@@ -31,7 +31,7 @@ For changes to repository **Custom Properties** in GitHub to be **automatically*
 !!! note
     If the permission is **not accepted**, users will still be able to use Repository Custom Properties as filters in Codacy, but will need to manually trigger a sync. This can be done using the **manual sync** button available in the filter dropdown, which allows users to synchronize changes from GitHub, though the process may take longer.
 
-Also, the target Custom Properties need to have the option **Allow repository actors to set this property** enabled in Github. 
+Also, the target Custom Properties need to have the option **Allow repository actors to set this property** enabled in GitHub.
 
 ### Bitbucket Projects {: id="bitbucket-projects"}
 Bitbucket Projects allow you to organize your repositories into relevant contexts for you, making it easier to categorize and filter them. Create, use, and manage Projects for your repositories directly in Bitbucket. 
