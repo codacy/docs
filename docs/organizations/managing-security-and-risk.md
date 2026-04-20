@@ -782,5 +782,5 @@ What happens when you delete an image:
 
 If there is no last analysis date for an image tag, it means that the SBOM file was received but the scan has not been completed yet. The most likely scenario is that an analysis hasn't been executed yet.
 !!! note
-Remember that scans run nightly (UTC). If you just uploaded the SBOM file, but need results immediately consider using our [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2) to run a local analysis to scan for any issues.
+    Remember that scans run nightly (UTC). If you just uploaded the SBOM file, but need results immediately consider using our [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2) to run a local analysis to scan for any issues.
  
