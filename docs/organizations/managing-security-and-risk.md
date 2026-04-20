@@ -681,7 +681,7 @@ Follow our [roadmap](https://roadmap.codacy.com) for updates on this feature.
 
 ## Container scanning {: id="container-scanning"}
 
-Container Scanning is a technique to scan your container image's dependencies for known vulnerabilities. The **Security and risk management > App scanning** page allows you to set up scans that run automatically every night, and surface actionable security findings as new vulnerabilities get discovered.
+Container Scanning is a technique to scan your container image's dependencies for known vulnerabilities. The **Security and risk management > Container scanning** page allows you to set up scans that run automatically every night, and surface actionable security findings as new vulnerabilities get discovered.
 
 ### How our container image scanning Works
 
@@ -693,7 +693,7 @@ The security tool analyzes your uploaded SBOM (Software Bill of Materials) files
 2. The image dependencies are scanned against Trivy's vulnerability databases
 3. Results appear in the UI after processing
 
-#### Scan Frequency
+#### Scan frequency
 
 1. Proactive scans run automatically once per day
 2. Scans are executed every night (UTC) and the findings are updated automatically
@@ -704,7 +704,7 @@ No manual action is required to trigger scans after the initial setup.
 
 You can set up container scanning in one of two ways: by connecting your CI/CD pipeline or by manually uploading your image SBOM. Once configured, your image dependencies are scanned daily and results will appear in the Image card list.
 
-#### CI/CD Integration
+#### CI/CD integration
 You must authenticate the Codacy CLI so your pipeline can securely send your image SBOM to Codacy. 
 
 ![Security and risk management import container SBOM in CICD](images/security-risk-management-container-upload-cicd.png)
@@ -722,7 +722,7 @@ When CI/CD is configured:
 
 This is the recommended setup for continuous coverage.
 
-#### Manual Upload
+#### Manual upload
 You can also manually upload your container's Software Bill of Materials (SBOM) in CycloneDX or SPDX format.
 
 ![Security and risk management manually import container SBOM](images/security-risk-management-container-upload-manually.png)
@@ -731,7 +731,7 @@ To manually upload an image SBOM, you need to:
 
 1. Add the image name;
 2. Add the image tag;
-3. Upload your SBOM file(environment and repository fields are optional).
+3. Upload your SBOM file (environment and repository fields are optional).
 
 !!! note
     You can use the [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2) to generate and upload your SBOM file to Codacy.
@@ -740,7 +740,7 @@ To manually upload an image SBOM, you need to:
 
 ### Image card list
 
-The Image card list provides an overview of all container images and their last added tag.
+The Image card list provides an overview of all container images and the most recent tag pushed for each image.
 
 ![Security and risk management container images](images/security-risk-management-container-image-card-list.png)
 
@@ -781,7 +781,7 @@ What happens when you delete an image:
     This action cannot be undone.
     You can also delete a specific tag inside an image card.
 
-### No Results Yet
+### No results yet
 
 If there is no last analysis date for an image tag, it means that the SBOM file was received but the scan has not been completed yet. The most likely scenario is that an analysis hasn't been executed yet.
 
