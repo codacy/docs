@@ -732,8 +732,9 @@ To manually upload an image SBOM, you need to:
 1. Add the image name;
 2. Add the image tag;
 3. Upload your SBOM file(environment and repository fields are optional).
-   !!! note
-       You can use the [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2) to generate and upload your SBOM file to Codacy.
+
+!!! note
+    You can use the [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2) to generate and upload your SBOM file to Codacy.
    
 
 
