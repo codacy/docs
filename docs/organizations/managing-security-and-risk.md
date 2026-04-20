@@ -688,11 +688,13 @@ Container Scanning is a technique to scan your container image's dependencies fo
 The security tool analyzes your upload SBOM (Software Bill of Materials) files to find vulnerabilities in your container images. An SBOM of a container lists all the dependencies included in the image, which in turn allows the scanner to search for known vulnerabilities (CVEs).
 
 #### High-level flow
+
 1. Image SBOMs are received either via CI/CD integration or manual upload
 2. The image dependencies are scanned against Trivy's vulnerability databases
 3. Results appear in the UI after processing
 
 #### Scan Frequency
+
 1. Proactive scans run automatically once per day
 2. Scans are executed every night (UTC) and the findings are updated automatically
 
@@ -724,6 +726,7 @@ You can also manually upload your container's Software Bill of Materials (SBOM) 
 ![Security and risk management manually import container SBOM](images/security-risk-management-container-upload-manually.png)
 
 In order to do manually upload an image, you need to:
+
 1. Add the image name;
 2. Add the image tag;
 3. Upload your container image file(environment and repository fields are optional).
@@ -739,6 +742,7 @@ The Image card list provides an overview of all container images and their last 
 ![Security and risk management container images](images/security-risk-management-container-image-card-list.png)
 
 For each image, you can see:
+
 - Image name
 - The most recent tag pushed for this image
 - Options and entry point to check all image tags.
@@ -748,6 +752,7 @@ By clicking the card for a specific image, you will see a list of all tags for t
 ![Security and risk management container image tags](images/security-risk-management-container-tag-list.png)
 
 For the image tags, the list is sorted by latest uploaded, and the information includes:
+
 - Tag used
 - Environment (optional field)
 - Last analysis: Date of the last scan for that tag
@@ -764,6 +769,7 @@ Once a tag is scanned, you can click on the `check findings` link to access the 
 ![Security and risk management delete container SBOM](images/security-risk-management-container-delete-image.png)
 
 What happens when you delete an image:
+
 - The image is permanently removed
 - All associated image tags are deleted
 - Scan history and results for that image are removed
