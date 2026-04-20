@@ -723,14 +723,12 @@ You can also manually upload your container's Software Bill of Materials (SBOM) 
 
 ![Security and risk management manually import container SBOM](images/security-risk-management-container-upload-manually.png)
 
-In order to do that, you need to:
-1. Add an image name;
-2. Add an image tag;
-3. Upload your container image file.
-   1. Environment and repository fields are optional.
-
-!!! note
-    You can use the [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2) to generate and upload your SBOM file to Codacy.
+In order to do manually upload an image, you need to:
+1. Add the image name;
+2. Add the image tag;
+3. Upload your container image file(environment and repository fields are optional).
+   !!! note
+       You can use the [Codacy CLI v2](https://github.com/codacy/codacy-cli-v2) to generate and upload your SBOM file to Codacy.
    
 
 
