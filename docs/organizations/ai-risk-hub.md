@@ -209,7 +209,7 @@ Clicking a tool card opens a detail view grouped by detection pattern (for examp
 
 1. **Repositories**—which repositories contain this detection, with file and reference counts
 2. **Files**—the specific files within each repository
-3. **Lines**—the exact lines where the tool is referenced, with direct links to the file in your Git provider
+3. **References**—the exact lines where the tool is referenced, with direct links to the file in your Git provider
 
 ![Tools & workflows detail](images/ai-risk-tools-wf-expanded.png)
 
