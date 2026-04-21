@@ -128,12 +128,12 @@ The **AI assets** tab gives you a detailed, searchable view of all AI resources 
 
 Codacy detects four types of AI resources:
 
-| Type | Pattern ID | Description |
+| Type | Categories | Description |
 |------|------------|-------------|
-| Model usage | `ai_model_usage` | Direct calls to AI model APIs |
-| Dependency | `ai_dependency` | AI SDKs and packages included as dependencies |
-| API key | `ai_key` | AI service API keys and credentials found in code |
-| Endpoint / env variable | `ai_env_endpoint` | Environment variables and endpoint references for AI services |
+| Model usage | Model | Direct calls to AI model APIs |
+| Dependency | Dependency | AI SDKs and packages included as dependencies |
+| API key | Key | AI service API keys and credentials found in code |
+| Endpoint / env variable | Endpoint | Environment variables and endpoint references for AI services |
 
 ### Supported providers
 
