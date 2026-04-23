@@ -4,18 +4,19 @@ description: The organization's AI Risk Hub dashboard provides an overview of al
 
 # AI Risk Hub
 
-The **AI Risk Hub** gives you visibility into the AI usage, dependencies, and risks across your organization's repositories. It brings together AI policy compliance, risk assessment, and a detailed inventory of AI resources found in your codebase.
+The **AI Risk Hub** gives you visibility into the AI usage, dependencies, and risks across your organization's repositories. It brings together AI policy compliance, risk assessment, and a detailed list of AI assets found in your codebase.
 It also provides an overview of all the AI issues detected in the repositories applied to the organization's AI Policy standard and your organization's risk level based on your AI practices. Here, you can navigate through the issues detected in your repositories and filter them by severity and category. You can also filter the issues by selecting specific repositories or using [the segments that you have set up](segments.md).
 
 !!! important
-    This dashboard is a Business tier feature, generally available until May 18.
+    This dashboard is a Business tier feature, generally available until May 18, 2026.
 
 To access the AI Risk Hub, select an organization from the top navigation bar and click on **AI Risk** on the left navigation sidebar.
 
-Inside this hub, you can find the following pages to help you monitor the AI risk of your organization:
+Inside this hub, you can find the following tabs to help you monitor the AI risk of your organization:
 
 - [Overview](#overview)
-- [AI Inventory](#ai-inventory)
+- [AI assets](#ai-assets)
+- [Tools & workflows](#tools-workflows)
 
 ---
 
@@ -27,7 +28,7 @@ The **Overview** tab is the main dashboard for monitoring AI risk across your or
 - [Risk Level](#risk-level)
 - [AI Risk Checklist](#ai-risk-checklist)
 - [Repositories with most AI issues](#repositories-with-most-ai-issues)
-- [AI Inventory summary](#ai-inventory-summary)
+- [AI assets summary](#ai-assets-summary)
 
 ![AI Risk Hub overview](images/ai-risk-hub.png)
 
@@ -107,32 +108,32 @@ Each entry shows how the repository's AI issue count has changed compared to the
 
 ---
 
-### AI Inventory summary
+### AI assets summary
 
 This section shows a high-level view of the AI resources discovered across your repositories, broken down by provider. For each provider, you can see the number of resources and repositories involved, as well as a breakdown by resource type.
 
-The section surfaces the top AI providers detected in your organization. You can click through to the full [AI Inventory](#ai-inventory) for a detailed view.
+The section surfaces the top AI providers detected in your organization. You can click through to the full [AI assets](#ai-assets) tab for a detailed view.
 
-![AI Inventory summary](images/ai-risk-inventory-overview.png)
+![AI assets summary](images/ai-risk-ai-asset-overview.png)
 
 ---
 
-## AI Inventory
+## AI assets
 
-The **AI Inventory** tab gives you a detailed, searchable view of all AI resources discovered across your organization's repositories. Resources are detected through static analysis and represent actual AI usage found in the code — not just configuration.
+The **AI assets** tab gives you a detailed, searchable view of all AI resources discovered across your organization's repositories. Resources are detected through static analysis and represent actual AI usage found in the code—not just configuration.
 
-![AI Inventory](images/ai-risk-inventory.png)
+![AI assets](images/ai-risk-ai-asset-tab.png)
 
 ### Resource types
 
 Codacy detects four types of AI resources:
 
-| Type | Pattern ID | Description |
+| Type | Categories | Description |
 |------|------------|-------------|
-| Model usage | `ai_model_usage` | Direct calls to AI model APIs |
-| Dependency | `ai_dependency` | AI SDKs and packages included as dependencies |
-| API key | `ai_key` | AI service API keys and credentials found in code |
-| Endpoint / env variable | `ai_env_endpoint` | Environment variables and endpoint references for AI services |
+| Model usage | Model | Direct calls to AI model APIs |
+| Dependency | Dependency | AI SDKs and packages included as dependencies |
+| API key | Key | AI service API keys and credentials found in code |
+| Endpoint / env variable | Endpoint | Environment variables and endpoint references for AI services |
 
 ### Supported providers
 
@@ -154,7 +155,7 @@ Codacy detects resources from the following AI providers:
 
 ### How it works
 
-The inventory is built from static analysis of your repositories' source code. For each AI resource found, Codacy records:
+The AI assets list is built from static analysis of your repositories' source code. For each AI resource found, Codacy records:
 
 - Which **provider** the resource belongs to (e.g. OpenAI, Anthropic)
 - What **type** of resource it is (model usage, dependency, API key, endpoint)
@@ -162,23 +163,62 @@ The inventory is built from static analysis of your repositories' source code. F
 - How many **repositories** contain it
 - How many total **references** to it exist
 
-### Navigating the inventory
+### Navigating AI assets
 
 Resources are listed as expandable entries. You can drill into each one to see:
 
-1. **Repositories** — which repositories contain the resource, with file counts and reference counts per repository
-2. **Files** — within each repository, the specific files where the resource appears
-3. **Lines** — within each file, the exact lines where the resource is referenced, with direct links to the file in your Git provider
+1. **Repositories**—which repositories contain the resource, with file counts and reference counts per repository
+2. **Files**—within each repository, the specific files where the resource appears
+3. **Lines**—within each file, the exact lines where the resource is referenced, with direct links to the file in your Git provider
 
 ![AI resource detail](images/ai-risk-resource.png)
 
 ### Filtering
 
-You can filter the inventory using the sidebar on the left:
+You can filter AI assets using the sidebar on the left:
 
-- **Providers** — filter by one or more AI vendors
-- **Resource types** — filter by resource type (model usage, dependency, API key, endpoint)
-- **Repositories** — filter by specific repository names
-- **Segments** — filter by repository segments if segmentation is enabled for your organization
+- **Providers**—filter by one or more AI vendors
+- **Resource types**—filter by resource type (model usage, dependency, API key, endpoint)
+- **Repositories**—filter by specific repository names
+- **Segments**—filter by repository segments if segmentation is enabled for your organization
 
 You can reset all filters at once using the **Reset filters** button.
+
+---
+
+## Tools & workflows
+
+The **Tools & workflows** tab shows AI tools and coding assistants detected across your organization's repositories.
+
+![Tools & workflows overview](images/ai-risk-tools-wf-overview.png)
+
+Tools are displayed as cards showing the tool name, number of detected resources, repositories involved, and a badge indicating whether the tool was detected as a **usage** or **workflow**.
+
+### Detection categories
+
+Detections are grouped into two categories:
+
+- **Usage**—tool detected via code-level patterns:
+    - **Code marker**—tool signatures or attribution markers found in source code
+    - **Commit**—references to the tool in commit messages or metadata
+- **Workflow**—tool detected via configuration or process files, such as commands, `.gitignore` entries, hooks, instructions, settings, skills, agent definitions, governance files, or IDE configuration
+
+### Navigating tool details
+
+Clicking a tool card opens a detail view grouped by detection pattern (for example, "Generated with [Claude Code]" or "Generated by Claude"). For each detection pattern, you can drill into:
+
+1. **Repositories**—which repositories contain this detection, with file and reference counts
+2. **Files**—the specific files within each repository
+3. **References**—the exact lines where the tool is referenced, with direct links to the file in your Git provider
+
+![Tools & workflows detail](images/ai-risk-tools-wf-expanded.png)
+
+### Filtering
+
+You can filter the tools list using the sidebar on the left:
+
+- **Segments**—filter by repository segments
+- **Repositories**—filter by specific repository names
+- **Categories**—filter by detection category and subcategory:
+    - Usage: Code marker, Commit
+    - Workflow: Commands, Gitignore, Hooks, Instructions, Settings, Skills
