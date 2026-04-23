@@ -11,7 +11,7 @@
         <meta name="description" content="The organization's AI Risk Hub dashboard provides an overview of all the AI issues detected in the repositories applied to the organization's AI Policy standard and your organization's risk level based on your AI practices.">
       
       
-        <meta http-equiv="last-modified" content="2026-04-07 12:59:49">
+        <meta http-equiv="last-modified" content="2026-04-23 09:06:00">
       
       
         <link rel="canonical" href="https://docs.codacy.com/organizations/ai-risk-hub/">
@@ -1148,8 +1148,15 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#ai-inventory" class="md-nav__link">
-    AI Inventory
+  <a href="#ai-assets" class="md-nav__link">
+    AI assets
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#tools-workflows" class="md-nav__link">
+    Tools &amp; workflows
   </a>
   
 </li>
@@ -4976,17 +4983,18 @@
                 
                 
                 <h1 id="ai-risk-hub">AI Risk Hub<a class="headerlink" href="#ai-risk-hub" title="Permanent link">#</a></h1>
-<p>The <strong>AI Risk Hub</strong> gives you visibility into the AI usage, dependencies, and risks across your organization's repositories. It brings together AI policy compliance, risk assessment, and a detailed inventory of AI resources found in your codebase.
+<p>The <strong>AI Risk Hub</strong> gives you visibility into the AI usage, dependencies, and risks across your organization's repositories. It brings together AI policy compliance, risk assessment, and a detailed list of AI assets found in your codebase.
 It also provides an overview of all the AI issues detected in the repositories applied to the organization's AI Policy standard and your organization's risk level based on your AI practices. Here, you can navigate through the issues detected in your repositories and filter them by severity and category. You can also filter the issues by selecting specific repositories or using <a href="../segments/">the segments that you have set up</a>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>This dashboard is a Business tier feature, generally available until May 18.</p>
+<p>This dashboard is a Business tier feature, generally available until May 18, 2026.</p>
 </div>
 <p>To access the AI Risk Hub, select an organization from the top navigation bar and click on <strong>AI Risk</strong> on the left navigation sidebar.</p>
-<p>Inside this hub, you can find the following pages to help you monitor the AI risk of your organization:</p>
+<p>Inside this hub, you can find the following tabs to help you monitor the AI risk of your organization:</p>
 <ul>
 <li><a href="#overview">Overview</a></li>
-<li><a href="#ai-inventory">AI Inventory</a></li>
+<li><a href="#ai-assets">AI assets</a></li>
+<li><a href="#tools-workflows">Tools &amp; workflows</a></li>
 </ul>
 <hr />
 <h2 id="overview">Overview<a class="headerlink" href="#overview" title="Permanent link">#</a></h2>
@@ -4996,7 +5004,7 @@ It also provides an overview of all the AI issues detected in the repositories a
 <li><a href="#risk-level">Risk Level</a></li>
 <li><a href="#ai-risk-checklist">AI Risk Checklist</a></li>
 <li><a href="#repositories-with-most-ai-issues">Repositories with most AI issues</a></li>
-<li><a href="#ai-inventory-summary">AI Inventory summary</a></li>
+<li><a href="#ai-assets-summary">AI assets summary</a></li>
 </ul>
 <p><img alt="AI Risk Hub overview" src="../images/ai-risk-hub.png" /></p>
 <h3 id="ai-policy-compliance">AI Policy Compliance<a class="headerlink" href="#ai-policy-compliance" title="Permanent link">#</a></h3>
@@ -5045,43 +5053,43 @@ It also provides an overview of all the AI issues detected in the repositories a
 <p>Each entry shows how the repository's AI issue count has changed compared to the previous month.</p>
 <p><img alt="Repositories with most AI issues" src="../images/ai-risk-repositories.png" /></p>
 <hr />
-<h3 id="ai-inventory-summary">AI Inventory summary<a class="headerlink" href="#ai-inventory-summary" title="Permanent link">#</a></h3>
+<h3 id="ai-assets-summary">AI assets summary<a class="headerlink" href="#ai-assets-summary" title="Permanent link">#</a></h3>
 <p>This section shows a high-level view of the AI resources discovered across your repositories, broken down by provider. For each provider, you can see the number of resources and repositories involved, as well as a breakdown by resource type.</p>
-<p>The section surfaces the top AI providers detected in your organization. You can click through to the full <a href="#ai-inventory">AI Inventory</a> for a detailed view.</p>
-<p><img alt="AI Inventory summary" src="../images/ai-risk-inventory-overview.png" /></p>
+<p>The section surfaces the top AI providers detected in your organization. You can click through to the full <a href="#ai-assets">AI assets</a> tab for a detailed view.</p>
+<p><img alt="AI assets summary" src="../images/ai-risk-ai-asset-overview.png" /></p>
 <hr />
-<h2 id="ai-inventory">AI Inventory<a class="headerlink" href="#ai-inventory" title="Permanent link">#</a></h2>
-<p>The <strong>AI Inventory</strong> tab gives you a detailed, searchable view of all AI resources discovered across your organization's repositories. Resources are detected through static analysis and represent actual AI usage found in the code — not just configuration.</p>
-<p><img alt="AI Inventory" src="../images/ai-risk-inventory.png" /></p>
+<h2 id="ai-assets">AI assets<a class="headerlink" href="#ai-assets" title="Permanent link">#</a></h2>
+<p>The <strong>AI assets</strong> tab gives you a detailed, searchable view of all AI resources discovered across your organization's repositories. Resources are detected through static analysis and represent actual AI usage found in the code—not just configuration.</p>
+<p><img alt="AI assets" src="../images/ai-risk-ai-asset-tab.png" /></p>
 <h3 id="resource-types">Resource types<a class="headerlink" href="#resource-types" title="Permanent link">#</a></h3>
 <p>Codacy detects four types of AI resources:</p>
 <table>
 <thead>
 <tr>
 <th>Type</th>
-<th>Pattern ID</th>
+<th>Categories</th>
 <th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
 <td>Model usage</td>
-<td><code>ai_model_usage</code></td>
+<td>Model</td>
 <td>Direct calls to AI model APIs</td>
 </tr>
 <tr>
 <td>Dependency</td>
-<td><code>ai_dependency</code></td>
+<td>Dependency</td>
 <td>AI SDKs and packages included as dependencies</td>
 </tr>
 <tr>
 <td>API key</td>
-<td><code>ai_key</code></td>
+<td>Key</td>
 <td>AI service API keys and credentials found in code</td>
 </tr>
 <tr>
 <td>Endpoint / env variable</td>
-<td><code>ai_env_endpoint</code></td>
+<td>Endpoint</td>
 <td>Environment variables and endpoint references for AI services</td>
 </tr>
 </tbody>
@@ -5104,7 +5112,7 @@ It also provides an overview of all the AI issues detected in the repositories a
 <li>Community models</li>
 </ul>
 <h3 id="how-it-works">How it works<a class="headerlink" href="#how-it-works" title="Permanent link">#</a></h3>
-<p>The inventory is built from static analysis of your repositories' source code. For each AI resource found, Codacy records:</p>
+<p>The AI assets list is built from static analysis of your repositories' source code. For each AI resource found, Codacy records:</p>
 <ul>
 <li>Which <strong>provider</strong> the resource belongs to (e.g. OpenAI, Anthropic)</li>
 <li>What <strong>type</strong> of resource it is (model usage, dependency, API key, endpoint)</li>
@@ -5112,23 +5120,57 @@ It also provides an overview of all the AI issues detected in the repositories a
 <li>How many <strong>repositories</strong> contain it</li>
 <li>How many total <strong>references</strong> to it exist</li>
 </ul>
-<h3 id="navigating-the-inventory">Navigating the inventory<a class="headerlink" href="#navigating-the-inventory" title="Permanent link">#</a></h3>
+<h3 id="navigating-ai-assets">Navigating AI assets<a class="headerlink" href="#navigating-ai-assets" title="Permanent link">#</a></h3>
 <p>Resources are listed as expandable entries. You can drill into each one to see:</p>
 <ol>
-<li><strong>Repositories</strong> — which repositories contain the resource, with file counts and reference counts per repository</li>
-<li><strong>Files</strong> — within each repository, the specific files where the resource appears</li>
-<li><strong>Lines</strong> — within each file, the exact lines where the resource is referenced, with direct links to the file in your Git provider</li>
+<li><strong>Repositories</strong>—which repositories contain the resource, with file counts and reference counts per repository</li>
+<li><strong>Files</strong>—within each repository, the specific files where the resource appears</li>
+<li><strong>Lines</strong>—within each file, the exact lines where the resource is referenced, with direct links to the file in your Git provider</li>
 </ol>
 <p><img alt="AI resource detail" src="../images/ai-risk-resource.png" /></p>
 <h3 id="filtering">Filtering<a class="headerlink" href="#filtering" title="Permanent link">#</a></h3>
-<p>You can filter the inventory using the sidebar on the left:</p>
+<p>You can filter AI assets using the sidebar on the left:</p>
 <ul>
-<li><strong>Providers</strong> — filter by one or more AI vendors</li>
-<li><strong>Resource types</strong> — filter by resource type (model usage, dependency, API key, endpoint)</li>
-<li><strong>Repositories</strong> — filter by specific repository names</li>
-<li><strong>Segments</strong> — filter by repository segments if segmentation is enabled for your organization</li>
+<li><strong>Providers</strong>—filter by one or more AI vendors</li>
+<li><strong>Resource types</strong>—filter by resource type (model usage, dependency, API key, endpoint)</li>
+<li><strong>Repositories</strong>—filter by specific repository names</li>
+<li><strong>Segments</strong>—filter by repository segments if segmentation is enabled for your organization</li>
 </ul>
 <p>You can reset all filters at once using the <strong>Reset filters</strong> button.</p>
+<hr />
+<h2 id="tools-workflows">Tools &amp; workflows<a class="headerlink" href="#tools-workflows" title="Permanent link">#</a></h2>
+<p>The <strong>Tools &amp; workflows</strong> tab shows AI tools and coding assistants detected across your organization's repositories.</p>
+<p><img alt="Tools &amp; workflows overview" src="../images/ai-risk-tools-wf-overview.png" /></p>
+<p>Tools are displayed as cards showing the tool name, number of detected resources, repositories involved, and a badge indicating whether the tool was detected as a <strong>usage</strong> or <strong>workflow</strong>.</p>
+<h3 id="detection-categories">Detection categories<a class="headerlink" href="#detection-categories" title="Permanent link">#</a></h3>
+<p>Detections are grouped into two categories:</p>
+<ul>
+<li><strong>Usage</strong>—tool detected via code-level patterns:<ul>
+<li><strong>Code marker</strong>—tool signatures or attribution markers found in source code</li>
+<li><strong>Commit</strong>—references to the tool in commit messages or metadata</li>
+</ul>
+</li>
+<li><strong>Workflow</strong>—tool detected via configuration or process files, such as commands, <code>.gitignore</code> entries, hooks, instructions, settings, skills, agent definitions, governance files, or IDE configuration</li>
+</ul>
+<h3 id="navigating-tool-details">Navigating tool details<a class="headerlink" href="#navigating-tool-details" title="Permanent link">#</a></h3>
+<p>Clicking a tool card opens a detail view grouped by detection pattern (for example, "Generated with [Claude Code]" or "Generated by Claude"). For each detection pattern, you can drill into:</p>
+<ol>
+<li><strong>Repositories</strong>—which repositories contain this detection, with file and reference counts</li>
+<li><strong>Files</strong>—the specific files within each repository</li>
+<li><strong>References</strong>—the exact lines where the tool is referenced, with direct links to the file in your Git provider</li>
+</ol>
+<p><img alt="Tools &amp; workflows detail" src="../images/ai-risk-tools-wf-expanded.png" /></p>
+<h3 id="filtering_1">Filtering<a class="headerlink" href="#filtering_1" title="Permanent link">#</a></h3>
+<p>You can filter the tools list using the sidebar on the left:</p>
+<ul>
+<li><strong>Segments</strong>—filter by repository segments</li>
+<li><strong>Repositories</strong>—filter by specific repository names</li>
+<li><strong>Categories</strong>—filter by detection category and subcategory:<ul>
+<li>Usage: Code marker, Commit</li>
+<li>Workflow: Commands, Gitignore, Hooks, Instructions, Settings, Skills</li>
+</ul>
+</li>
+</ul>
               
               
                 
@@ -5285,7 +5327,7 @@ It also provides an overview of all the AI issues detected in the repositories a
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 7, 2026</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 23, 2026</span>
     
   </small>
 </div>
