@@ -165,7 +165,8 @@ The table below lists all languages that Codacy supports and the corresponding t
     <tr>
       <td>CSS</td>
       <td>.css</td>
-      <td><a href="https://stylelint.io/">Stylelint</a></td>
+      <td><a href="https://biomejs.dev/">BiomeJS</a>,
+          <a href="https://stylelint.io/">Stylelint</a></td>
       <td>-</td>
       <td>-</td>
       <td>-</td>
@@ -290,7 +291,8 @@ The table below lists all languages that Codacy supports and the corresponding t
     <tr>
       <td>JavaScript</td>
       <td>.js, .jsx, .jsm, .vue, .mjs</td>
-      <td><a href="https://eslint.org/">ESLint</a>,
+      <td><a href="https://biomejs.dev/">BiomeJS</a>,
+          <a href="https://eslint.org/">ESLint</a>,
           <a href="https://pmd.github.io/">PMD</a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#opengrep"><sup>1</sup></a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
@@ -305,7 +307,8 @@ The table below lists all languages that Codacy supports and the corresponding t
     <tr>
       <td>JSON</td>
       <td>.json</td>
-      <td><a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
+      <td><a href="https://biomejs.dev/">BiomeJS</a>,
+          <a href="https://github.com/FasterXML/jackson-core">Jackson Linter</a></td>
       <td>-</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
           <a href="https://trivy.dev">Trivy</a></td>
@@ -638,7 +641,8 @@ The table below lists all languages that Codacy supports and the corresponding t
     <tr>
       <td>TypeScript</td>
       <td>.ts, .tsx</td>
-      <td><a href="https://eslint.org/">ESLint</a>,
+      <td><a href="https://biomejs.dev/">BiomeJS</a>,
+          <a href="https://eslint.org/">ESLint</a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#opengrep"><sup>1</sup></a></td>
       <td><a href="https://eslint.org/docs/rules/">ESLint</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
@@ -761,6 +765,10 @@ The following table lists the Codacy GitHub repositories corresponding to each s
 <tr>
 <td><a href="https://github.com/PyCQA/bandit">Bandit</a></td>
 <td><a href="https://github.com/codacy/codacy-bandit" class="skip-vale">codacy/codacy-bandit</a></td>
+</tr>
+<tr>
+<td><a href="https://biomejs.dev/">BiomeJS</a></td>
+<td><a href="https://github.com/codacy/codacy-biomejs" class="skip-vale">codacy/codacy-biomejs</a></td>
 </tr>
 <tr>
 <td><a href="https://brakemanscanner.org/">Brakeman</a> <a href="#opengrep-brakeman"><sup>7</sup></a></td>

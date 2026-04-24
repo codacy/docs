@@ -459,7 +459,7 @@ plugins:
               "repositories-configure/integrations/jira-integration.md": "organizations/integrations/jira-integration.md"
               "repositories-configure/integrations/slack-integration.md": "organizations/integrations/slack-integration.md"
               # Moved pages
-              "organizations/ai-risk-hub.md": "organizations/reporting/ai-risk-hub.md"
+              "organizations/reporting/ai-risk-hub.md": "organizations/ai-risk-hub.md"
               "organizations/codacy-usage.md": "organizations/reporting/codacy-usage.md"
               "organizations/issue-metrics.md": "organizations/reporting/issues-metrics.md"
               "organizations/issues-metrics.md": "organizations/reporting/issues-metrics.md"
@@ -618,9 +618,9 @@ nav:
                   - organizations/reporting/organization-overview.md
                   - organizations/reporting/issues-metrics.md
                   - organizations/reporting/codacy-usage.md
-                  - organizations/reporting/ai-risk-hub.md
           - organizations/using-gate-policies.md
           - organizations/using-coding-standards.md
+          - organizations/ai-risk-hub.md
           - Managing integrations:
                 - organizations/integrations/default-git-provider-integration-settings.md
                 - Slack integration for Security issues: organizations/integrations/slack-integration.md
@@ -690,7 +690,9 @@ nav:
           - release-notes/index.md
           - Cloud:
                 - 2026:
+                      - release-notes/cloud/cloud-2026-03.md
                       - release-notes/cloud/cloud-2026-03-github-integration-settings-changes.md
+                      - release-notes/cloud/cloud-2026-02.md
                       - release-notes/cloud/cloud-2026-01.md
                       - release-notes/cloud/cloud-2026-01-adding-golangci-lint.md
                 - 2025:

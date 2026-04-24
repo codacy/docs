@@ -4,7 +4,7 @@ description: The Organization overview summarizes repositories in your Git provi
 
 # Organization overview
 
-Codacy provides high-level visibility into your organization's code quality, security posture, AI risk, usage, and configuration metrics. The **Organization overview** consolidates these signals in a single view.
+Codacy provides high-level visibility into your organization's code quality, security posture, usage, and configuration metrics. The **Organization overview** consolidates these signals in a single view.
 
 The **Organization overview** summarizes repositories in your Git provider organization that you [follow on Codacy](../managing-repositories.md). Use it to compare repository status and identify areas that require action.
 
@@ -21,7 +21,6 @@ The Organization overview includes the following tabs:
 - [Duplication](#duplication)
 - [Coverage](#coverage)
 - [Codacy usage](./codacy-usage.md)
-- [AI Risk Hub](./ai-risk-hub.md)
 
 <div id="overview-filters">Use the filters at the top of the page to scope all dashboard data by repositories or segments. For example, filter by repositories owned by specific teams, repositories using specific languages, or exclude legacy repositories that are no longer maintained. Filter selections are stored in your browser and persist across visits.</div>
 
@@ -128,10 +127,22 @@ For calculation details, see [how code coverage is calculated](../../faq/code-an
 
 ![Image of the Coverage tab](./images/organization-overview-coverage.png)
 
-The Coverage tab on paid plans uses two key metrics:
+The Coverage tab on paid plans is divided into two main sections:
 
-- **Covered lines**: Number of covered lines reported to Codacy.
-- **Coverable lines**: Number of lines that can be covered, based on coverage reports.
+- **Line coverage**
+
+    Uses three main metrics:
+
+    - **Covered lines**: Number of covered lines reported to Codacy.
+    - **Coverable lines**: Number of lines that can be covered, based on coverage reports.
+    - **Coverage percentage**: The percentage of covered lines.
+
+- **File coverage**
+
+    Uses two main metrics:
+
+    - **Files with coverage**: Number of files that have coverage.
+    - **Total files**: Total number of files.
 
 These metrics drive all dashboard components:
 
@@ -139,7 +150,11 @@ These metrics drive all dashboard components:
 | ------ | ----------- |
 | **Coverage** | `coveredLines / coverableLines` <br/>Aggregation of all covered lines divided by all coverable lines across all repositories (or the current filter selection, see [filters](#overview-filters)). Includes only repositories reporting coverage. |
 | **Repositories reporting coverage** | Repositories with coverage data from the latest merged pull request. For example, if the latest merged pull request reported coverage metrics to Codacy, that repository is counted as reporting coverage. |
-| **Coverage trend** | Time-based trend for covered lines, uncovered lines, and organization coverage (or the current filter selection, see [filters](#overview-filters)). You can choose time ranges and granularities, and select a date to see which repositories changed the most during that period. |
+| **Coverage trend** | Time-based trend for covered lines, uncovered lines, and organization coverage (or the current filter selection, see [filters](#overview-filters)). You can choose time ranges and granularity, and select a date to see which repositories changed the most during that period. |
+| **File coverage** | `filesWithCoverage / totalFiles` <br/>Aggregation of all the files that have coverage divided by all the files across all repositories (or the current filter selection, see [filters](#overview-filters)). Includes only languages that support coverage. |
+| **Files by coverage percentage** | Distribution chart grouping the files with coverage into coverage ranges: very low, low, medium, high, and very high. You can select one or more ranges to see the distribution of selected ranges for each language in the languages chart, each day in the trend chart, and the number of files within that range for each repository. |
+| **File coverage by language** | Language breakdown showing file coverage percentages and covered/total file counts per language. You can choose one or more languages to view coverage performance across your repositories for those selected languages. |
+| **File coverage trend** | Time-based trend for covered files, uncovered files, and overall file coverage percentage. You can choose time ranges and granularity, and select a date to see which repositories changed the most during that period. |
 
 You can export data from each chart using the ellipsis icon in the top-right corner in JSON or CSV format.
 

@@ -33,6 +33,15 @@ To uninstall the Jira integration, open your organization **Integrations**, page
 !!! important
     Uninstalling the Jira integration as described above deletes all associated open items. You can alternatively uninstall the Jira integration on the Jira website: this doesn't delete anything, but it prevents Codacy from opening new Jira-related items.
 
+## AI reviewer context
+
+!!! tip
+    AI Reviewer is currently only available on GitHub, for all Team and Business plans.
+
+If the repository or organization has the AI Reviewer enabled, it will automatically check the Pull Request metadata for a Jira ticket key (ABC-123, case-insensitive). The title and description will be fetched to enrich the review context, and the process will cross-check the required deliverable and acceptance criteria with the existing code changes. 
+
+More details about [AI Reviewer here](../../repositories-configure/integrations/github-integration.md#ai-reviewer).
+
 ## Creating Jira tickets from issues, dependencies and files
 
 Installing the Jira integration enables the feature of creating Jira tickets from issues, dependencies and files

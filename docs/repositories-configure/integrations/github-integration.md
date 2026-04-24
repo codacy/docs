@@ -1,5 +1,5 @@
 ---
-description: Enable the GitHub integration to have status checks, annotations, issue and coverage summaries, and suggested fixes from Codacy directly on pull requests.
+description: Enable the GitHub integration to have status checks, annotations, issue summaries, pull request summaries, and suggested fixes from Codacy directly on pull requests.
 ---
 
 # GitHub integration
@@ -33,7 +33,7 @@ Adds a report to your pull requests showing whether your pull requests and cover
 
 ![Pull request status check on GitHub](images/github-integration-pr-status.png)
 
-### Pull request review {: id="pull-request-review"}
+### Pull request summary {: id="pull-request-summary"}
 
 {%
     include-markdown "../../assets/includes/paid.md"
@@ -44,14 +44,15 @@ Adds a report to your pull requests showing whether your pull requests and cover
 !!! note
     This feature is only supported on GitHub.
 
-When enabled, Codacy posts a **Codacy's Analysis Summary** comment on your pull requests each time a new analysis completes, giving you a full overview of code quality,  security, complexity, and duplication metric changes, without requiring you to open the Codacy app.
+When enabled, Codacy posts a comment on your pull requests each time a new analysis completes. The comment shows the quality gate result and breaks down issues, metrics (complexity and duplication), and coverage (diff coverage and coverage variation), giving you a full picture of the impact of your changes without leaving GitHub.
 
-#### Enable AI reviewer {: id="ai-reviewer"}
+![Pull request summary](images/pull-request-summary.png)
 
-!!! note
-    If you enable the AI Reviewer, consider disabling AI-enhanced comments to avoid receiving duplicate comments on Codacy issues.
+#### Enable AI Reviewer {: id="ai-reviewer"}
 
-The AI Reviewer extends Pull request review with an AI-powered code analysis. It combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from source code and PR metadata to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
+When enabled, the AI Reviewer posts a standalone code review on the pull request and adds a trigger section to the pull request summary comment, allowing you to run the reviewer on demand. When disabled, the trigger section does not appear in the pull request summary comment.
+
+The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, Jira ticket if [integration exists](../../organizations/integrations/jira-integration.md), source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
 
 It provides feedback on missing or weak tests, complex or duplicated code, and keeps security concerns up to date. Beyond that, it adds contextual insights about whether the changes follow the requirements, business rules, and logic used in the project.
 
@@ -59,8 +60,8 @@ Configure when the AI Reviewer runs using the **Run reviewer** setting:
 
 | Mode | Behaviour |
 |------|-----------|
-| Manually | Click **Run Reviewer** in the pull request comment or call our [public API](https://api.codacy.com/api/api-docs#triggerpullrequestaireview) to trigger a review on demand. |
 | Automatically (first review only) | Codacy runs the reviewer once automatically when the pull request is opened, then requires manual triggering for subsequent updates. |
+| Manually | Click **Run Reviewer** in the pull request summary comment or call our [public API](https://api.codacy.com/api/api-docs#triggerpullrequestaireview) to trigger a review on demand. |
 
 !!! tip
     Improve the AI Reviewer results by providing custom instructions. [Learn how to do it here](../../codacy-ai/codacy-ai.md#custom-instructions).
@@ -80,23 +81,6 @@ Shows an overall view of the changes in the pull request, including new issues a
 
 ![Issue summary on GitHub](images/github-integration-pr-summary.png)
 
-### Coverage summaries
-
-!!! warning "Coverage summary is moving to Pull request review"
-    In the coming weeks, Codacy will include coverage data in the Pull request review comment and remove the Coverage summary setting. [Learn more](../../release-notes/cloud/cloud-2026-03-github-integration-settings-changes.md#coverage-summary).
-
-Adds a pull request comment showing an overall view of the coverage metrics for the pull request, including details about the data that Codacy used to calculate the coverage variation and diff coverage metrics.
-
-When there are new coverage results, Codacy updates the last coverage summary comment if it's included in the last 5 comments of the pull request. Otherwise, Codacy creates a new comment.
-
-!!! important
-    **To get coverage summaries** you must also [add coverage to your repository](../../coverage-reporter/index.md).
-
-![Coverage summary on GitHub](images/github-integration-coverage-summary.png)
-
-!!! note
-    This feature is only supported on GitHub and GitLab Cloud.
-
 ### Suggested fixes {: id="suggest-fixes"}
 
 {%
@@ -107,21 +91,13 @@ When there are new coverage results, Codacy updates the last coverage summary co
 
 Adds comments on the lines of the pull request where Codacy finds new issues with suggestions on how to fix the issues. Codacy doesn't apply any changes automatically. To apply the changes, [manually review and accept the suggestions](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request#applying-suggested-changes).
 
-!!! tip
-    Enable also **AI-enhanced comments** to get ready-to-commit AI-generated fixes.
-
 ![Comment suggesting a fix on GitHub](images/github-integration-suggest-fixes.png)
 
-### AI-enhanced comments
+## Merge queues {: id="merge-queues"}
 
-!!! warning "AI-enhanced comments (Beta) is being deprecated on March 16, 2026"
-    This feature is being replaced by the AI Reviewer, which provides a more accurate and comprehensive experience. [Learn more](../../release-notes/cloud/cloud-2026-03-github-integration-settings-changes.md#ai-enhanced-comments).
+To support GitHub **merge queues**, our GitHub App requires **Merge Groups** permissions so it can listen for and respond to the `checks_requested` action for merge group events.
 
-Adds AI-enhanced comments, providing insights and ready-to-commit AI-generated fixes for identified issues in cases where tool-suggested fixes are not supported. To enable this option, you must enable **Suggested fixes** first.
-
-{% include-markdown "../../assets/includes/ai-info.md" %}
-
-![AI-enhanced comment on GitHub](images/github-integration-ai-comment.png)
+When a merge group event is triggered for a pull request in the merge queue, Codacy automatically sends a green status check for **Codacy Static Code Analysis** to the relevant commit. By the time a pull request enters the merge queue, it has already gone through Codacy's analysis — either receiving a green status or being manually bypassed. Since the pull request was already unblocked before joining the queue, always responding with green is a safe and practical approach that keeps things moving without unnecessary friction.
 
 ## See also
 

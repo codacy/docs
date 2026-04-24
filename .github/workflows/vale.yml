@@ -8,13 +8,13 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout code
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           submodules: false
 
       - name: Vale
-        uses: errata-ai/vale-action@reviewdog
+        uses: errata-ai/vale-action@0135b9fe2b3107365569cc3142b9a1c85221ea2f # reviewdog
         with:
           filter_mode: added
           debug: true
