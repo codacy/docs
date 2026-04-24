@@ -97,7 +97,9 @@ Adds comments on the lines of the pull request where Codacy finds new issues wit
 
 To support GitHub **merge queues**, our GitHub App requires **Merge Groups** permissions so it can listen for and respond to the `checks_requested` action for merge group events.
 
-When a merge group event is triggered for a pull request in the merge queue, Codacy automatically sends a green status check for **Codacy Static Code Analysis** to the relevant commit. By the time a pull request enters the merge queue, it has already gone through Codacy's analysis — either receiving a green status or being manually bypassed. Since the pull request was already unblocked before joining the queue, always responding with green is a safe and practical approach that keeps things moving without unnecessary friction.
+When a merge group event is triggered for a pull request in the merge queue, Codacy automatically sends a green status check for **Codacy Static Code Analysis** — and also for **Codacy Coverage Variation** and **Codacy Diff Coverage** if the respective [Gates](../../repositories-configure/adjusting-quality-gates.md) are being enforced.
+
+When a pull request enters the merge queue, it has already gone through Codacy's analysis — either receiving a green status or being manually bypassed. Since it was already unblocked before joining the queue, always returning green is a safe approach that avoids unnecessary friction.
 
 ## See also
 
