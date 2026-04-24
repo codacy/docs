@@ -26,6 +26,9 @@ Depending on the options that you enable, Codacy will automatically update pull 
 
 Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository. You can then optionally [block merging pull requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
 
+!!! important
+    For open source repositories on GitHub, Codacy will not run analysis if **Status checks** is disabled. Make sure this setting is enabled to keep analysis running.
+
 {% include-markdown "../../assets/includes/status-checks-important.md" %}
 
 ![Pull request status check on GitHub](images/github-integration-pr-status.png)
