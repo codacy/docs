@@ -8,10 +8,10 @@
       <meta charset="utf-8">
       <meta name="viewport" content="width=device-width,initial-scale=1">
       
-        <meta name="description" content="Codacy only analyzes open source repositories if the admin of the repository is a committer to that repository.">
+        <meta name="description" content="Codacy only analyzes open source repositories if the following conditions are met:">
       
       
-        <meta http-equiv="last-modified" content="2023-06-19 14:28:20">
+        <meta http-equiv="last-modified" content="2026-04-24 11:31:44">
       
       
         <link rel="canonical" href="https://docs.codacy.com/faq/troubleshooting/why-isnt-my-public-repository-being-analyzed/">
@@ -4941,7 +4941,12 @@
                 
                 
                 <h1 id="why-isnt-my-public-repository-being-analyzed">Why isn't my public repository being analyzed?<a class="headerlink" href="#why-isnt-my-public-repository-being-analyzed" title="Permanent link">#</a></h1>
-<p>Codacy only analyzes open source repositories if the admin of the repository is a committer to that repository.</p>
+<p>Codacy only analyzes open source repositories if the following conditions are met:</p>
+<ul>
+<li>The admin of the repository is a committer to that repository.</li>
+<li>For GitHub repositories, <strong>Status checks</strong> is enabled in the <a href="../../../repositories-configure/integrations/github-integration/#status-checks">GitHub integration settings</a> for the repository, either directly or via the <a href="../../../organizations/integrations/default-git-provider-integration-settings/">organization defaults</a>.</li>
+</ul>
+<p>If <strong>Status checks</strong> is disabled, Codacy will not run analysis for open source repositories on GitHub.</p>
               
               
                 
@@ -5098,7 +5103,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">June 19, 2023</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 24, 2026</span>
     
   </small>
 </div>

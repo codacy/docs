@@ -11,7 +11,7 @@
         <meta name="description" content="Enable the GitHub integration to have status checks, annotations, issue summaries, pull request summaries, and suggested fixes from Codacy directly on pull requests.">
       
       
-        <meta http-equiv="last-modified" content="2026-04-17 12:34:51">
+        <meta http-equiv="last-modified" content="2026-04-24 11:31:44">
       
       
         <link rel="canonical" href="https://docs.codacy.com/repositories-configure/integrations/github-integration/">
@@ -4999,6 +4999,10 @@
 <p>Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the <a href="../../adjusting-quality-gates/">quality gate rules</a> for your repository. You can then optionally <a href="../../../getting-started/integrating-codacy-with-your-git-workflow/#blocking-pull-requests">block merging pull requests that aren't up to standards</a>.</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
+<p>For open source repositories on GitHub, Codacy will not run analysis if <strong>Status checks</strong> is disabled. Make sure this setting is enabled to keep analysis running.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
 <p><strong>To get a status for coverage</strong> you must also:</p>
 <ul>
 <li><a href="../../../coverage-reporter/">Add coverage to your repository</a></li>
@@ -5219,7 +5223,7 @@
 <div class="md-source-date">
   <small>
     
-      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 17, 2026</span>
+      Last modified <span class="git-revision-date-localized-plugin git-revision-date-localized-plugin-date">April 24, 2026</span>
     
   </small>
 </div>
