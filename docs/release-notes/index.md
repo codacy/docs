@@ -16,8 +16,42 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Cloud release notes {: id="cloud"}
 
+2026
+
+-   [Cloud April 2026](cloud/cloud-2026-04.md)
+-   [Cloud March 2026](cloud/cloud-2026-03.md)
+-   [Changes to GitHub integration settings March, 2026](cloud/cloud-2026-03-github-integration-settings-changes.md)
+-   [Cloud February 2026](cloud/cloud-2026-02.md)
+-   [Semgrep to Opengrep migration February, 2026](cloud/cloud-2026-02-migrating-semgrep.md)
+-   [Cloud January 2026](cloud/cloud-2026-01.md)
+-   [Adding GolangCI-Lint as new supported tool January, 2026](cloud/cloud-2026-01-adding-golangci-lint.md)
+
+2025
+
+-   [Cloud December 2025](cloud/cloud-2025-12.md)
+-   [Cloud November 2025](cloud/cloud-2025-11.md)
+-   [Cloud October 2025](cloud/cloud-2025-10.md)
+-   [Cloud September 2025](cloud/cloud-2025-09.md)
+-   [Cloud August 2025](cloud/cloud-2025-08.md)
+-   [Cloud July 2025](cloud/cloud-2025-07.md)
+-   [Cloud June 2025](cloud/cloud-2025-06.md)
+-   [Adding SQLFluff and Reek as new supported tools June, 2025](cloud/cloud-2025-06-adding-sqlfluff-reek.md)
+-   [Cloud May 2025](cloud/cloud-2025-05.md)
+-   [Cloud April 2025](cloud/cloud-2025-04.md)
+-   [Cloud March 2025](cloud/cloud-2025-03.md)
+-   [Adding Ruff and Lizard as new supported tools February, 2025](cloud/cloud-2025-02-adding-ruff-lizard.md)
+-   [Cloud February 2025](cloud/cloud-2025-02.md)
+-   [Cloud January 2025](cloud/cloud-2025-01.md)
+
 2024
 
+-   [Cloud December 2024](cloud/cloud-2024-12.md)
+-   [Cloud November 2024](cloud/cloud-2024-11.md)
+-   [Cloud October 2024](cloud/cloud-2024-10.md)
+-   [Cloud September 2024](cloud/cloud-2024-09.md)
+-   [Adding ESLint 9 and PMD 7 as new supported tools September, 2024](cloud/cloud-2024-09-adding-eslint9-and-pmd7.md)
+-   [Cloud August 2024](cloud/cloud-2024-08.md)
+-   [Cloud July 2024](cloud/cloud-2024-07.md)
 -   [Cloud June 2024](cloud/cloud-2024-06.md)
 -   [Cloud May 2024](cloud/cloud-2024-05.md)
 -   [Cloud April 2024](cloud/cloud-2024-04.md)
@@ -101,8 +135,17 @@ For product updates that are in progress or planned [visit the Codacy public roa
 
 ## Codacy Self-hosted release notes {: id="self-hosted"}
 
+v16
+
+-   [v16.0.0](self-hosted/self-hosted-v16.0.0.md) (January, 2026)
+
+v15
+
+-   [v15.0.0](self-hosted/self-hosted-v15.0.0.md) (April 10, 2025)
+
 v14
 
+-   [v14.1.1](self-hosted/self-hosted-v14.1.1.md) (March 10, 2025)
 -   [v14.0.0](self-hosted/self-hosted-v14.0.0.md) (June 26, 2024)
 
 v13

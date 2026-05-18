@@ -1,5 +1,5 @@
 ---
-description: Enable the GitHub integration to have status checks, annotations, issue and coverage summaries, and suggested fixes from Codacy directly on pull requests.
+description: Enable the GitHub integration to have status checks, annotations, issue summaries, pull request summaries, and suggested fixes from Codacy directly on pull requests.
 ---
 
 # GitHub integration
@@ -26,9 +26,48 @@ Depending on the options that you enable, Codacy will automatically update pull 
 
 Adds a report to your pull requests showing whether your pull requests and coverage are up to standards or not as configured on the [quality gate rules](../../repositories-configure/adjusting-quality-gates.md) for your repository. You can then optionally [block merging pull requests that aren't up to standards](../../getting-started/integrating-codacy-with-your-git-workflow.md#blocking-pull-requests).
 
+!!! important
+    For open source repositories on GitHub, Codacy will not run analysis if **Status checks** is disabled. Make sure this setting is enabled to keep analysis running.
+
 {% include-markdown "../../assets/includes/status-checks-important.md" %}
 
 ![Pull request status check on GitHub](images/github-integration-pr-status.png)
+
+### Pull request summary {: id="pull-request-summary"}
+
+{%
+    include-markdown "../../assets/includes/paid.md"
+    start="<!--paid-start-->"
+    end="<!--paid-end-->"
+%}
+
+!!! note
+    This feature is only supported on GitHub.
+
+When enabled, Codacy posts a comment on your pull requests each time a new analysis completes. The comment shows the quality gate result and breaks down issues, metrics (complexity and duplication), and coverage (diff coverage and coverage variation), giving you a full picture of the impact of your changes without leaving GitHub.
+
+![Pull request summary](images/pull-request-summary.png)
+
+#### Enable AI Reviewer {: id="ai-reviewer"}
+
+When enabled, the AI Reviewer posts a standalone code review on the pull request and adds a trigger section to the pull request summary comment, allowing you to run the reviewer on demand. When disabled, the trigger section does not appear in the pull request summary comment.
+
+The AI Reviewer combines the reliability of deterministic, rule-based static code analysis with the enhanced context and prioritization capabilities of AI. It draws in the necessary context from PR metadata, Jira ticket if [integration exists](../../organizations/integrations/jira-integration.md), source code, and Codacy data to ensure the business intent matches the technical outcome, and can catch logic gaps that conventional scanners (and human reviewers) often miss.
+
+It provides feedback on missing or weak tests, complex or duplicated code, and keeps security concerns up to date. Beyond that, it adds contextual insights about whether the changes follow the requirements, business rules, and logic used in the project.
+
+Configure when the AI Reviewer runs using the **Run reviewer** setting:
+
+| Mode | Behaviour |
+|------|-----------|
+| Automatically (first review only) | Codacy runs the reviewer once automatically when the pull request is opened, then requires manual triggering for subsequent updates. |
+| Manually | Click **Run Reviewer** in the pull request summary comment or call our [public API](https://api.codacy.com/api/api-docs#triggerpullrequestaireview) to trigger a review on demand. |
+
+!!! tip
+    Improve the AI Reviewer results by providing custom instructions. [Learn how to do it here](../../codacy-ai/codacy-ai.md#custom-instructions).
+
+![AI Reviewer on Github](images/github-integration-ai-reviewer.png)
+
 
 ### Issue annotations
 
@@ -42,20 +81,6 @@ Shows an overall view of the changes in the pull request, including new issues a
 
 ![Issue summary on GitHub](images/github-integration-pr-summary.png)
 
-### Coverage summaries
-
-Adds a pull request comment showing an overall view of the coverage metrics for the pull request, including details about the data that Codacy used to calculate the coverage variation and diff coverage metrics.
-
-When there are new coverage results, Codacy updates the last coverage summary comment if it's included in the last 5 comments of the pull request. Otherwise, Codacy creates a new comment.
-
-!!! important
-    **To get coverage summaries** you must also [add coverage to your repository](../../coverage-reporter/index.md).
-
-![Coverage summary on GitHub](images/github-integration-coverage-summary.png)
-
-!!! note
-    This feature is only supported on GitHub Cloud.
-
 ### Suggested fixes {: id="suggest-fixes"}
 
 {%
@@ -66,48 +91,15 @@ When there are new coverage results, Codacy updates the last coverage summary co
 
 Adds comments on the lines of the pull request where Codacy finds new issues with suggestions on how to fix the issues. Codacy doesn't apply any changes automatically. To apply the changes, [manually review and accept the suggestions](https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/reviewing-changes-in-pull-requests/incorporating-feedback-in-your-pull-request#applying-suggested-changes).
 
-!!! tip
-    Enable also **AI-enhanced comments** to get ready-to-commit AI-generated fixes.
-
 ![Comment suggesting a fix on GitHub](images/github-integration-suggest-fixes.png)
 
-### AI-enhanced comments
+## Merge queues {: id="merge-queues"}
 
-Adds AI-enhanced comments, providing insights and ready-to-commit AI-generated fixes for identified issues in cases where tool-suggested fixes are not supported. To enable this option, you must enable **Suggested fixes** first.
+To support GitHub **merge queues**, our GitHub App requires **Merge Groups** permissions so it can listen for and respond to the `checks_requested` action for merge group events.
 
-{% include-markdown "../../assets/includes/ai-info.md" %}
+When a merge group event is triggered for a pull request in the merge queue, Codacy automatically sends a green status check for **Codacy Static Code Analysis** — and also for **Codacy Coverage Variation** and **Codacy Diff Coverage** if the respective [Gates](../../repositories-configure/adjusting-quality-gates.md) are being enforced.
 
-![AI-enhanced comment on GitHub](images/github-integration-ai-comment.png)
-
-## Generating automatic pull request summaries
-
-!!! info "This is a preview feature"
-    This is an upcoming Codacy feature. If you're interested, contact <a href="mailto:support@codacy.com">support@codacy.com</a> for early access.
-
-Codacy can provide a clear, high-level summary of the code changes introduced by a pull request, based on the committed code.
-Codacy generates an overview of the changes in the pull request so that any reviewer can understand its intent and impact.
-
-![Automatic Summary on GitHub](images/github-integration-automatic-summary.png)
-
-!!! note
-    -   This feature uses only AWS services within Codacy's existing infrastructure. No information is shared with any other third party or used to train AI models.
-    -   Summaries are generated using the pull request title, branch name, commit messages, and changes diff.
-
-To enable this feature, add the following to the [Codacy configuration file](../codacy-configuration-file.md) `.codacy.yaml` in the root of your repository:
-
-```yaml
----
-reviews:
-  high_level_summary: true
-```
-
-You can also enable this feature across your organization by creating the above file in the root of a repository named `.codacy`. This file will be used as the default configuration for all repositories in the organization and overridden by repository-specific configuration files.
-
-Once enabled, summaries will be created when pull requests are opened and updated at each commit to reflect any changes to the pull request.
-
-Pull requests opened by bots, such as Dependabot, are ignored.
-
-If you see duplicated comments posted by Codacy on the same pull request, please ensure that your repository only has one configured webhook for Codacy.
+When a pull request enters the merge queue, it has already gone through Codacy's analysis — either receiving a green status or being manually bypassed. Since it was already unblocked before joining the queue, always returning green is a safe approach that avoids unnecessary friction.
 
 ## See also
 

@@ -11,8 +11,9 @@ For **private repositories**, Codacy only analyzes commits from people in your C
 
 To list and manage the people in your organization, open your organization **Settings**, page **People**. This page also shows their last activity on Codacy.
 
-!!! note
-    In some Enterprise plans, Codacy automatically assigns a seat to any person with at least one analyzed commit to your private repositories over the past 90 days and frees up the seat after 90 days of code analysis inactivity.
+!!! note "In some Enterprise plans"
+    - Codacy automatically assigns a seat to any person with at least one analyzed commit to your private repositories over the past 90 days and frees up the seat after 90 days of code analysis inactivity.
+    - **Members** are people that signup and joined an Organization in Codacy, and **Authors** are people that contribute to code changes. It can happen that Authors aren't Codacy Members. 
 
 ![People in an organization](images/organization-people.png)
 
@@ -49,8 +50,9 @@ To add people to your organization:
 
     !!! important
         - To prevent the same person from occupying more than one seat in your organization, make sure your teammates [update the email addresses associated with their Codacy account](../account/emails.md#updating).
-
         - **On GitHub and Bitbucket organizations**, Codacy automatically reduces seat duplication when commits are pushed by associating all the commit email addresses from the same Git provider user with a single Codacy committer. This mechanism requires that all developers committing to your private repositories [set their Git email address](../account/emails.md#git-config) and add all their email addresses to their [GitHub account](https://github.com/settings/emails) or [Bitbucket account](https://bitbucket.org/account/settings/email/).
+        - Codacy doesn't allow you to have one email associated with more than one GitHub account. You can manage your [associated emails in the provider GitHub](https://docs.github.com/en/account-and-profile/setting-up-and-managing-your-personal-account-on-github/managing-email-preferences/adding-an-email-address-to-your-github-account). 
+
 
     ![Adding people to your organization](images/organization-people-add-modal.png)
 

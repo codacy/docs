@@ -68,6 +68,11 @@ If you log in with GitHub, Codacy requires the following [app permissions](https
       <td>Codacy retrieves repository contents to get installation access tokens when integrating with your repositories and clone them, and for code coverage analysis.<br/><strong>Codacy requests this permission since September 2023.</strong> Make sure an organization owner <a href="https://docs.github.com/en/apps/using-github-apps/reviewing-and-modifying-installed-github-apps">approves Codacy GitHub App updated permissions</a> on your GitHub organization.</td>
     </tr>
     <tr>
+      <td>Merge groups</td>
+      <td>Read-Only</td>
+      <td>Codacy listens for the `merge_group` webhook event and responds to the `checks_requested` action accordingly.</td>
+    </tr>
+    <tr>
       <td colspan="3"><strong>Organization permissions:</strong></td>
     </tr>
     <tr>

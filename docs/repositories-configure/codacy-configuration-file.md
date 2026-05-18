@@ -6,7 +6,7 @@ description: Use the Codacy configuration file to configure advanced features on
 
 Codacy supports configuring certain advanced features through a configuration file, such as:
 
--   [Ignoring files](#ignore-files) globally, for duplication, or a specific tool
+-   [Ignoring files](#ignore-files) globally, for duplication, for cyclomatic complexity, or a specific tool
 
 -   [Including specific ignored files](#include-files) in the analysis
 
@@ -50,6 +50,12 @@ To use a Codacy configuration file:
         config:
           languages:
             - "ruby"
+      metric:
+        exclude_paths:
+          - "src/test.ts"
+        config:
+          languages:
+            - "typescript"
     languages:
       css:
         extensions:
@@ -101,6 +107,24 @@ exclude_paths:
   - "**/*.resource"
 ```
 
+### Syntax for configuring cyclomatic complexity
+
+Cyclomatic complexity can be disabled or partially ignored for certain paths, files or languages.
+
+!!! note
+    Cyclomatic complexity is referred as `metric` in the configuration file.
+
+    ```yaml
+    ---
+    engines:
+      metric:
+        exclude_paths:
+          - "src/test.ts"
+        config:
+          languages:
+            - "typescript"
+    ```
+
 ## Including specific files using a Codacy configuration file {: id="include-files"}
 
 The Codacy configuration file allows you to explicitly specify files or directories to include in the analysis. This is particularly useful for [bypassing files or directories that are ignored by default](./ignoring-files.md#default-ignored-files) or specified in `exclude_paths`.
@@ -149,6 +173,7 @@ The following are the tool names that must be used in the Codacy configuration f
 ```text
 ameba
 bandit
+biome
 brakeman
 checkov
 checkstyle
@@ -160,23 +185,28 @@ credo
 dartanalyzer
 detekt
 eslint-8
+eslint-9
 flawfinder
 hadolint
 jacksonlinter
+lizard
 markdownlint
 phpcs
 phpmd
 pmd
+pmd-7
 prospector
 psscriptanalyzer
 pylintpython3
 remark-lint
 revive
+roslyn
 rubocop
+ruff
 scalastyle
-semgrep
+opengrep
 shellcheck
-sonarscharp
+sonarcsharp
 sonarvb
 spectral
 SQLint
@@ -188,7 +218,7 @@ tsqllint
 
 The following names are **deprecated** and shouldn't be used, although they're still accepted in the Codacy configuration file:
 
--   `bundleraudit` - The tool **bundler-audit** [is deprecated](../release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation.md). If you are using **Semprep** or **Trivy** instead, use the names `trivy` or `semgrep`.
+-   `bundleraudit` - The tool **bundler-audit** [is deprecated](../release-notes/cloud/cloud-2023-10-13-bundler-audit-deprecation.md). If you are using **Opengrep** or **Trivy** instead, use the names `trivy` or `opengrep`.
 -   `csslint` - The tool **CSSLint** [is deprecated](../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md). If you are using **Stylelint** instead, use the name `stylelint`.
 -   `eslint` - Use the name `eslint-8` for **ESLint**.
 -   `jshint`, `tslint` - The tools **JSHint** and **TSLint** [are deprecated](../release-notes/cloud/cloud-2023-10-25-csslint-jshint-fauxpas-tailor-tslint-deprecation.md). If you are using **ESLint** instead, use the name `eslint-8`.

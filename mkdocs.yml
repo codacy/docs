@@ -29,7 +29,7 @@ extra_javascript:
 # Extra variables
 # https://github.com/rosscdh/mkdocs-markdownextradata-plugin
 extra:
-    codacy_self_hosted_version: "14.0.0"
+    codacy_self_hosted_version: "15.0.0"
     codacy_coverage_reporter_version: "13.10.15"
     segment_key: "4sT1ml0BeKdR1RtrK5dSQmwxmvcUpYtL"
     user_feedback: "true"
@@ -240,8 +240,8 @@ plugins:
               "hc/en-us/sections/360003014233-Configure-your-repo.md": "repositories-configure/configuring-code-patterns.md"
               "hc/en-us/sections/360003183099.md": "organizations/what-are-organizations.md"
               "hc/en-us/sections/360003183099-Synced-Organizations.md": "organizations/what-are-organizations.md"
-              "hc/en-us/articles/360003863274.md": "organizations/organization-overview.md"
-              "hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-.md": "organizations/organization-overview.md"
+              "hc/en-us/articles/360003863274.md": "organizations/reporting/organization-overview.md"
+              "hc/en-us/articles/360003863274-Organization-Dashboard-How-does-it-work-.md": "organizations/reporting/organization-overview.md"
               "hc/en-us/articles/360003863434.md": "repositories/repository-dashboard.md"
               "hc/en-us/articles/360003863434-Personal-Dashboard-How-does-it-work-.md": "repositories/repository-dashboard.md"
               "hc/en-us/articles/360003863594.md": "index.md"
@@ -459,6 +459,11 @@ plugins:
               "repositories-configure/integrations/jira-integration.md": "organizations/integrations/jira-integration.md"
               "repositories-configure/integrations/slack-integration.md": "organizations/integrations/slack-integration.md"
               # Moved pages
+              "organizations/reporting/ai-risk-hub.md": "organizations/ai-risk-hub.md"
+              "organizations/codacy-usage.md": "organizations/reporting/codacy-usage.md"
+              "organizations/issue-metrics.md": "organizations/reporting/issues-metrics.md"
+              "organizations/issues-metrics.md": "organizations/reporting/issues-metrics.md"
+              "organizations/organization-overview.md": "organizations/reporting/organization-overview.md"
               "faq/general/plan-and-billing.md": "faq/general/how-can-i-change-or-cancel-my-plan.md"
               "organizations/why-can't-i-see-my-organization.md": "faq/troubleshooting/why-cant-i-see-my-organization.md"
               "repositories-configure/integrations/bitbucket-cloud-integration.md": "repositories-configure/integrations/bitbucket-integration.md"
@@ -472,7 +477,7 @@ plugins:
               "coverage-reporter/troubleshooting/commit-detection.md": "coverage-reporter/index.md"
               "coverage-reporter/troubleshooting/swift-objectivec.md": "coverage-reporter/index.md"
               "faq/troubleshooting/failed-to-clone-the-repository-generate-a-new-ssh-key.md": "faq/troubleshooting/we-no-longer-have-access-to-this-repository.md"
-              "organizations/organization-dashboard-overview.md": "organizations/organization-overview.md"
+              "organizations/organization-dashboard-overview.md": "organizations/reporting/organization-overview.md"
               "repositories/repository-dashboard-overview.md": "repositories/repository-dashboard.md"
               "faq/repositories/how-do-i-transfer-delete-a-repository-from-my-account.md": "index.md"
               "repositories/security-dashboard.md": "organizations/managing-security-and-risk.md"
@@ -499,6 +504,7 @@ plugins:
               "repositories/commits-view.md": "repositories/commits.md"
               "repositories/files-view.md": "repositories/files.md"
               "repositories/issues-view.md": "repositories/issues.md"
+              "repositories/coverage-view.md": "repositories/coverage.md"
               "coverage-reporter/generating-coverage-reports.md": "coverage-reporter/index.md"
               "coverage-reporter/adding-coverage-to-your-repository.md": "coverage-reporter/index.md"
               "faq/code-analysis/error-line-endings.md": "faq/troubleshooting/error-line-endings.md"
@@ -562,17 +568,22 @@ nav:
           - getting-started/supported-languages-and-tools.md
           - getting-started/which-permissions-does-codacy-need-from-my-account.md
           - getting-started/adding-a-codacy-badge.md
-    - Repositories on Codacy Quality:
+    - Codacy Guardrails (IDE Extension):
+          - codacy-guardrails/codacy-guardrails-getting-started.md
+          - codacy-guardrails/codacy-guardrails-how-to-use.md
+          - codacy-guardrails/codacy-guardrails-how-to-configure-rules.md
+          - codacy-guardrails/codacy-guardrails-limitations.md
+          - codacy-guardrails/codacy-guardrails-troubleshooting.md
+          - codacy-guardrails/codacy-guardrails-faq.md
+    - Codacy AI:
+          - codacy-ai/codacy-ai.md
+    - Repositories on Codacy:
           - repositories/repository-dashboard.md
           - repositories/commits.md
           - repositories/files.md
           - repositories/issues.md
+          - repositories/coverage.md
           - repositories/pull-requests.md
-    - Repositories on Codacy Coverage:
-          - repositories-coverage/repository-dashboard.md
-          - repositories-coverage/commits.md
-          - repositories-coverage/files.md
-          - repositories-coverage/pull-requests.md
     - Configuring your repositories:
           - repositories-configure/configuring-code-patterns.md
           - repositories-configure/managing-branches.md
@@ -593,17 +604,24 @@ nav:
           - Local analysis:
                 - repositories-configure/local-analysis/client-side-tools.md
                 - repositories-configure/local-analysis/running-aligncheck.md
+                - repositories-configure/local-analysis/running-dartanalyzer.md
                 - repositories-configure/local-analysis/running-deadcode.md
                 - repositories-configure/local-analysis/running-spotbugs.md
+                - repositories-configure/local-analysis/running-eslint.md
           - repositories-configure/using-submodules.md
           - repositories-configure/codacy-configuration-file.md
           - repositories-configure/removing-your-repository.md
     - Organizations:
           - organizations/what-are-organizations.md
-          - organizations/organization-overview.md
           - organizations/managing-repositories.md
+          - organizations/segments.md
+          - Reporting:
+                  - organizations/reporting/organization-overview.md
+                  - organizations/reporting/issues-metrics.md
+                  - organizations/reporting/codacy-usage.md
           - organizations/using-gate-policies.md
           - organizations/using-coding-standards.md
+          - organizations/ai-risk-hub.md
           - Managing integrations:
                 - organizations/integrations/default-git-provider-integration-settings.md
                 - Slack integration for Security issues: organizations/integrations/slack-integration.md
@@ -613,6 +631,8 @@ nav:
           - organizations/audit-logs-for-organizations.md
           - organizations/roles-and-permissions-for-organizations.md
           - organizations/changing-your-plan-and-billing.md
+    - Enterprise Cloud:
+          - enterprise-cloud/github-enterprise-cloud.md
     - Your account:
           - account/managing-your-profile.md
           - account/emails.md
@@ -630,10 +650,12 @@ nav:
                 - codacy-api/examples/obtaining-current-issues-in-repositories.md
                 - codacy-api/examples/identifying-commits-without-coverage-data.md
                 - codacy-api/examples/uploading-dast-results.md
+                - codacy-api/examples/triggering-dast-scans.md
     - Managing Codacy Self-hosted: "!include submodules/chart/mkdocs.yml"
     - Troubleshooting and FAQs:
           - General:
                 - faq/general/which-platforms-and-technologies-does-codacy-support.md
+                - faq/general/how-does-codacy-support-github-enterprise.md
                 - faq/general/how-does-codacy-support-gitlab-cloud.md
                 - faq/general/how-does-codacy-support-gitlab-enterprise.md
                 - faq/general/how-does-codacy-support-bitbucket-cloud.md
@@ -668,7 +690,36 @@ nav:
     - Release notes:
           - release-notes/index.md
           - Cloud:
+                - 2026:
+                      - release-notes/cloud/cloud-2026-04.md
+                      - release-notes/cloud/cloud-2026-03.md
+                      - release-notes/cloud/cloud-2026-03-github-integration-settings-changes.md
+                      - release-notes/cloud/cloud-2026-02.md
+                      - release-notes/cloud/cloud-2026-01.md
+                      - release-notes/cloud/cloud-2026-01-adding-golangci-lint.md
+                - 2025:
+                      - release-notes/cloud/cloud-2025-12.md
+                      - release-notes/cloud/cloud-2025-11.md
+                      - release-notes/cloud/cloud-2025-10.md
+                      - release-notes/cloud/cloud-2025-09.md
+                      - release-notes/cloud/cloud-2025-08.md
+                      - release-notes/cloud/cloud-2025-07.md
+                      - release-notes/cloud/cloud-2025-06.md
+                      - release-notes/cloud/cloud-2025-06-adding-sqlfluff-reek.md
+                      - release-notes/cloud/cloud-2025-05.md
+                      - release-notes/cloud/cloud-2025-04.md
+                      - release-notes/cloud/cloud-2025-03.md
+                      - release-notes/cloud/cloud-2025-02-adding-ruff-lizard.md      
+                      - release-notes/cloud/cloud-2025-02.md
+                      - release-notes/cloud/cloud-2025-01.md
                 - 2024:
+                      - release-notes/cloud/cloud-2024-12.md
+                      - release-notes/cloud/cloud-2024-11.md
+                      - release-notes/cloud/cloud-2024-10.md
+                      - release-notes/cloud/cloud-2024-09.md
+                      - release-notes/cloud/cloud-2024-09-adding-eslint9-and-pmd7.md
+                      - release-notes/cloud/cloud-2024-08.md
+                      - release-notes/cloud/cloud-2024-07.md
                       - release-notes/cloud/cloud-2024-06.md
                       - release-notes/cloud/cloud-2024-05.md
                       - release-notes/cloud/cloud-2024-04.md
@@ -738,7 +789,12 @@ nav:
                       - release-notes/cloud/cloud-2018-10-19.md
                       - release-notes/cloud/cloud-2018-07-23.md
           - Self-hosted:
+                - v16:
+                      - release-notes/self-hosted/self-hosted-v16.0.0.md
+                - v15:
+                      - release-notes/self-hosted/self-hosted-v15.0.0.md
                 - v14:
+                      - release-notes/self-hosted/self-hosted-v14.1.1.md
                       - release-notes/self-hosted/self-hosted-v14.0.0.md
                 - v13:
                       - release-notes/self-hosted/self-hosted-v13.0.0.md

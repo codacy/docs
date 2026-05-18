@@ -19,13 +19,13 @@ To configure your repository, follow these steps:
 
 ## 1. Ignoring files {: id="ignoring-files"}
 
-[Ignore any files and directories](../repositories-configure/ignoring-files.md) that aren't relevant for the Codacy analysis, such as generated code or any third-party libraries included in your repositories.
+[Ignore any files and directories](../repositories-configure/ignoring-files.md) that aren't relevant for the Codacy analysis, such as generated code or any third-party libraries included in your repositories. Learn more about [Ignoring files](../repositories-configure/ignoring-files.md).
 
 ![Ignoring files](../repositories-configure/images/ignored-files.png)
 
 ## 2. Adjusting code pattern configuration {: id="configuring-code-patterns"}
 
-[Adjust the tools and code patterns](../repositories-configure/configuring-code-patterns.md) that Codacy uses to analyze your repository. If security is important for your team, review the [security and risk management dashboard](../organizations/managing-security-and-risk.md) to ensure that your configuration detects potential security issues.
+[Configure the tools and code patterns](../repositories-configure/configuring-code-patterns.md) that Codacy uses to analyze your repository. If security is important for your team, review the [Security and risk management dashboard](../organizations/managing-security-and-risk.md) to ensure that your configuration detects potential security issues.
 
 !!! tip
     To ensure that multiple repositories consistently follow the same global tool and code pattern configurations, [use an organization coding standard](../organizations/using-coding-standards.md).

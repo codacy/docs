@@ -11,7 +11,7 @@ Across the application, Codacy calculates and displays data for the repositories
 
 ![Repositories list](images/repositories.png)
 
-This page lists the repositories that you follow on Codacy sorted by [last updated date](organization-overview.md#last-updated-repositories), and allows you to compare the repositories on the list according to the following metrics:
+This page lists the repositories that you follow on Codacy sorted by [last updated date](./reporting/organization-overview.md#last-updated-repositories), and allows you to compare the repositories on the list according to the following metrics:
 
 -   [Grade](../faq/code-analysis/which-metrics-does-codacy-calculate.md#grade)
 -   [Issues](../faq/code-analysis/which-metrics-does-codacy-calculate.md#issues)
@@ -68,7 +68,19 @@ To follow or unfollow repositories on Codacy:
     You automatically **start following** a repository as soon as you access any page from that repository. For example, when you access the repository using a direct link on your Git provider UI.
 
     Conversely, you automatically **stop following** a repository as soon as you try accessing any page from that repository but you don't have permissions to see that repository anymore.
+ 
+## Finding your repositories with Segments {: id="provider-segments"}
+
+Codacy allows you to utilise [**Segments**](../segments) to categorize and filter repositories more effectively within the Codacy platform.
+!!! info "Check out how to [enable and configure **Segments**](../segments/#enabling-segments)"
+
+![Repositories list filter](images/organization-manage-repos-custom-properties.png)
+
+
+![Repositories list sync](images/organization-manage-repos-custom-properties-sync.png)
+
+
 
 ## See also
-
--   [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)
+-  [How to setup Segments?](../segments)
+-  [Which metrics does Codacy calculate?](../faq/code-analysis/which-metrics-does-codacy-calculate.md)

@@ -145,3 +145,10 @@ If you're experiencing segmentation faults when uploading the coverage results d
 echo "$(dig +short api.codacy.com | tail -n1) api.codacy.com" >> /etc/hosts
 ```
 
+## I received the message: "Invalid configuration: Either a project or account API token must be provided or available in an environment variable" in a build from a commit created by Dependabot (Github)
+
+When builds are triggered by Dependabot, they run with a read-only GITHUB_TOKEN and don’t have access to any secrets stored in GitHub Actions. This can break workflows — for example, the token may be missing and coverage reports can’t be uploaded to Codacy.
+
+[See GitHub’s documentation for details.](https://docs.github.com/en/code-security/dependabot/troubleshooting-dependabot/troubleshooting-dependabot-on-github-actions#troubleshooting-failures-when-dependabot-triggers-existing-workflows)
+
+If you still need to upload coverage from Dependabot’s pull requests, a workaround is to add an empty commit to those PRs. Because the commit comes from a regular user account, the workflow will then have access to the repository’s secrets, allowing the upload to succeed.

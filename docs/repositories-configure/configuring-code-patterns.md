@@ -9,6 +9,9 @@ description: Configure the static analysis tools and code patterns that Codacy u
 By default, Codacy analyzes your repositories using a subset of the supported analysis tools and code patterns. These defaults are based on current best practices and community feedback, and you can adapt them to your needs as follows:
 
 -   [Configuring tools and code patterns using the Codacy UI](#configuring-tools-and-code-patterns-using-the-codacy-ui)
+-   [Discover code patterns across all tools](#discover-code-patterns-across-all-tools)
+-   [Customizing applied coding standards](#using-your-own-tool-configuration-files)
+-   [Customizing patterns when following coding standards](#customizing-patterns-following-standards)
 -   [Using tool configuration files](#using-your-own-tool-configuration-files)
 
 ## Configuring tools and code patterns using the Codacy UI
@@ -36,11 +39,29 @@ To configure the tools and code patterns for a repository using the Codacy UI:
 
 1.  Optionally, to take the changes into account immediately, [reanalyze the repository manually](../faq/repositories/how-do-i-reanalyze-my-repository.md). Otherwise, Codacy will use the updated configuration when analyzing new commits and pull requests.
 
-## Detaching a coding standard from a repository {: id="detaching"}
+## Discover code patterns across all tools {: id="discover-code-patterns-across-all-tools"}
 
-If the repository is following a coding standard, a notice is displayed. To detach the [coding standard](../organizations/using-coding-standards.md) from the repository, click **Detach repository** and confirm.
+To discover code patterns across all tools, click **Discover patterns** at the top of the **Tools** list.
 
-![Detaching a coding standard](images/code-patterns-cs-detach.png)
+Use the input field to search for patterns by name or description. You can also filter by severity level, issue category, recommended or disabled patterns.
+
+You can also expand your search to include patterns from all tools, even if the tool is not enabled for the repository.
+
+## Customizing applied coding standards {: id="customizing-applied-coding-standards"}
+
+To apply or edit a repository's [coding standards](../organizations/using-coding-standards.md), click **Customize** in the **Following ...** section at the top of the **Code patterns** page.
+
+![Customize applied coding standards](images/code-patterns-cs-customize.png)
+
+Select the coding standards that you want to follow or stop following and click **Apply**.
+
+![Customize applied coding standards](images/code-patterns-cs-customize-modal.png)
+
+
+## Customizing patterns when following coding standards {: id="customizing-patterns-following-standards"}
+
+Tools and patterns enabled by a coding standard are enforced and cannot be disabled.
+You can add extra tools and patterns, if these are not enabled by any applied coding standard.
 
 ## Using tool configuration files {: id="using-your-own-tool-configuration-files"}
 
@@ -101,6 +122,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>To solve flagged valid Python "assert" statements, create a <code>bandit.yml</code> on the root of the repository containing: <code>skips: \['B101'\]</code></td>
   </tr>
   <tr>
+    <td>BiomeJS</td>
+    <td>CSS, JavaScript, JSON, TypeScript</td>
+    <td><code>biome.json</code>, <code>biome.jsonc</code>, <code>.biome.json</code>, <code>.biome.jsonc</code></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>Brakeman</td>
     <td>Ruby</td>
     <td><code>config/brakeman.yml</code></td>
@@ -137,16 +164,16 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
   </tr>
   <tr>
-    <td><a href="https://eslint.org/docs/user-guide/configuring">ESLint</a></td>
+    <td>ESLint v8</td>
     <td>JavaScript, TypeScript</td>
     <td><code>.eslintrc.js</code>, <code>.eslintrc.cjs</code>, <code>.eslintrc.yaml</code>, <code>.eslintrc.yml</code>, <code>.eslintrc.json</code></td>
-    <td><a href="https://github.com/codacy/codacy-eslint/blob/master/src/eslintPlugins.ts">Plugins configurable on the Codacy UI</a><br />
-        <a href="https://github.com/codacy/codacy-eslint/blob/master/package.json#L58">Other supported plugins</a><br />
-
-        <p>If you're using <a href="https://eslint.org/docs/latest/user-guide/configuring/configuration-files#cascading-and-hierarchy">module-level ESLint configuration files</a>, you must also include a ESLint configuration file <strong>on the root of your repository</strong> for Codacy to detect that you're using configuration files. For example, add the following minimal <code>.eslintrc.json</code> configuration file:</p>
-
-        <pre><code>{ "root": true }</code></pre>
-    </td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>ESLint v9</td>
+    <td>JavaScript, TypeScript</td>
+    <td><code>eslint.config.js</code>, <code>eslint.config.mjs</code>, <code>eslint.config.cjs</code></td>
+    <td></td>
   </tr>
   <tr>
     <td>Hadolint</td>
@@ -157,7 +184,7 @@ The table below lists the configuration file names that Codacy detects and suppo
   <tr>
     <td>markdownlint</td>
     <td>Markdown</td>
-    <td><code>.markdownlint.json</code></td>
+    <td><code>.markdownlint.yml</code>, <code>.markdownlint.yaml</code>, <code>.markdownlint.jsonc</code>, <code>.markdownlint.json</code></td>
     <td></td>
   </tr>
   <tr>
@@ -209,13 +236,19 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td>Supports alternative configuration file <code>.rubocop-codacy.yml</code> for Codacy analysis, allowing exclusion of private gems. This prevents analysis issues caused by private gem references, ensuring proper validation by Codacy.</td>
   </tr>
   <tr>
+    <td>Ruff</td>
+    <td>Python</td>
+    <td><code>pyproject.toml, ruff.toml, .ruff.toml</code></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>Scalastyle</td>
     <td>Scala</td>
     <td><code>scalastyle-config.xml</code>, <code>scalastyle_config.xml</code></td>
     <td></td>
   </tr>
   <tr>
-    <td>Semgrep</td>
+    <td>Opengrep</td>
     <td>Apex, C++, C#, Dockerfile, Elixir, GitHub Actions, Go, Java, JavaScript, Kotlin, PHP, Python, Ruby, Rust, Scala, Shell, Swift, Terraform, TypeScript</td>
     <td><code>.semgrep.yaml</code></td>
     <td></td>
@@ -244,6 +277,12 @@ The table below lists the configuration file names that Codacy detects and suppo
     <td><code>findbugs.xml</code>, <code>findbugs-includes.xml</code>, <code>findbugs-excludes.xml</code>, <code>spotbugs.xml</code>, <code>spotbugs-includes.xml</code>, <code>spotbugs-excludes.xml</code></td>
     <td>Supports configuration file in directories other than root and can search up to 5 directories into the repository.</td>
   </tr>
+    <tr>
+    <td>SQLFluff</td>
+    <td>SQL</td>
+    <td><code>setup.cfg</code>, <code>tox.ini</code>, <code>pep8.ini</code>, <code>.sqlfluff</code>, <code>pyproject.toml</code></td>
+    <td>Supports configuration file in directories other than root</td>
+  </tr>
   <tr>
     <td>Stylelint</td>
     <td>CSS, LESS, SASS</td>
@@ -268,7 +307,7 @@ The table below lists the configuration file names that Codacy detects and suppo
 !!! note
     Codacy doesn't support configuration files for the following tools:
 
-    -   aligncheck
+    -   Aligncheck
     -   Checkov
     -   Clang-Tidy
     -   Codacy Scalameta Pro
@@ -278,6 +317,7 @@ The table below lists the configuration file names that Codacy detects and suppo
     -   Flawfinder
     -   Gosec
     -   Jackson Linter
+    -   Lizard
     -   PSScriptAnalyzer
     -   ShellCheck
     -   SQLint

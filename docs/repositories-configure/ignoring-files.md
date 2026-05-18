@@ -8,7 +8,11 @@ description: Ignore or exclude files from the Codacy analysis and see the list o
 
 In some situations, you may want to ignore or exclude files from the Codacy analysis.
 
-To exclude files from your repository analysis open your repository **Settings**, tab **Ignored Files**, and select the files you want to ignore. This view only shows the files on your main branch.
+To exclude files from your repository analysis open your repository **Files**, page. From there, you can select a file and exclude it by clicking on the Ignore file button.
+
+![Ignoring a file](images/ignoring-a-file.png)
+
+To view the current excluded files, select the **Ignored** tab on the same page.
 
 ![Ignored files](images/ignored-files.png)
 
@@ -18,6 +22,8 @@ To exclude files from your repository analysis open your repository **Settings**
     -   You can also ignore files using your own [tool configuration files](configuring-code-patterns.md#using-your-own-tool-configuration-files), although this depends on the option being supported by each tool.
 
     -   {% include-markdown "../assets/includes/coverage-ignore.md" %}
+    
+    -  When excluding files from **Duplication** analysis, you must state the **entire path** to the files. Unlike quality analysis, wildcards will not work, resulting in files not being excluded.
 
 If you need more flexibility in ignoring files, use a Codacy configuration file to [define a custom list of file paths to exclude](codacy-configuration-file.md#syntax-for-ignoring-files).
 

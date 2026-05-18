@@ -9,10 +9,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repo with history
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
         with:
           fetch-depth: 0
-      - uses: Rebilly/lexi@v2
+      - uses: Rebilly/lexi@5a517542b048ca8cb46e43f27736fed84dfb0e84 # v2
         with:
           github-token: ${{ secrets.GITHUB_TOKEN }}
           glob: 'docs/**/*.md'

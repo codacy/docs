@@ -16,6 +16,12 @@ Codacy supports client-side tools in two ways:
 
     You can't configure these tools on the Codacy UI, since you manage their configuration locally.
 
+!!! tip
+    In order to receive results from local analysis, the flag "Run analysis on your build server" **must be enabled**.
+
+![Client-side analysis flow](images/run-analysis-through-build-server.png)
+
+
 The table below describes the supported client-side tools and includes links to specific instructions on how to run each tool.
 
 !!! tip
@@ -63,6 +69,11 @@ The table below describes the supported client-side tools and includes links to 
         <td><a href="https://github.com/tsenart/deadcode">deadcode</a></td>
         <td>deadcode is a <span class="skip-vale">very simple</span> utility which detects unused declarations in Go packages.</td>
         <td><a href="../running-deadcode/">Running deadcode</a> (containerized)</td>
+    </tr>
+    <tr>
+        <td><a href="https://github.com/golangci/golangci-lint">GolangCI-Lint</a></td>
+        <td>GolangCI-Lint is a fast, parallelized Go linters runner that aggregates dozens of different linters into a single tool, allowing developers to detect bugs, style errors, and complexity issues efficiently in their Go codebases.</td>
+        <td><a href="https://github.com/codacy/codacy-golangci-lint#usage">Running GolangCI-Lint</a> (standalone)</td>
     </tr>
     <tr>
         <td><a href="https://github.com/securego/gosec">Gosec</a></td>

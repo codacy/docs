@@ -3,9 +3,9 @@ page_name: "commit"
 file_name: "commits"
 ---
 
-# Quality Commits page
+# Commits page
 
-The **Quality Commits page** displays an overview of the commits in your repository, such as the analysis status and the code quality metrics for each commit. This allows you to monitor the evolution of the code quality per commit in your repository.
+The **Commits page** displays an overview of the commits in your repository, such as the analysis status and the code quality metrics for each commit. This allows you to monitor the evolution of the code quality per commit in your repository.
 
 By default, the page lists the commits on the main branch of your repository, but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display commits on other branches.
 
@@ -100,6 +100,25 @@ The following are example situations that can lead to potential issues:
 
     This happens when Codacy reports potential issues in files that weren't changed in your pull request. [Read more about this GitHub feature](https://developer.github.com/changes/2019-09-06-more-check-annotations-shown-in-files-changed-tab/).
 
+### False positive issues
+
+!!! info
+    The False Positive detection is a business tier feature. If you are a Codacy Pro customer interested in upgrading to gain access to this feature, reach out to our customer success team.
+
+If your commit includes issues detected as false positives, an **Ignore all false positives** option will appear above the first issue in the list. This allows you to bulk ignore all detected false positives at once.
+
+For more details on managing false positives, see [Managing system-detected false positives](issues.md#managing-system-detected-false-positives).
+
+![Detected false positives](images/pull-requests-false-positives.png)
+
+During a pull request analysis, if Codacy identifies issues that appear to be false positives, 
+it will automatically add a comment listing all the detected false positives.
+
+![Detected false positives comment](images/pull-requests-false-positives-comment.png)
+
+!!! note
+    Pull Request comments for False Positives are currently supported on GitHub only.
+
 ## Duplication tab {: id="duplication-tabs"}
 
 The **Duplication** tab displays the lists of clones (duplicated code blocks) that the {{ page.meta.page_name }} adds or fixes. You can click a clone to expand it and inspect the code.
@@ -111,15 +130,9 @@ The **Duplication** tab displays the lists of clones (duplicated code blocks) th
 The **Complexity** tab displays the complexity changes introduced by the {{ page.meta.page_name }}. Use the sidebar filters to filter the list by high increase (4 or more), low increase (1 to 3), or improvement (less than 0).
 
 !!! note
-    When calculating the complexity variation introduced by a {{ page.meta.page_name }}, Codacy only considers files with a high increase in complexity. For more information, see [how Codacy calculates cyclomatic complexity](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
+    For more information, see [how Codacy calculates cyclomatic complexity](../faq/code-analysis/which-metrics-does-codacy-calculate.md#complexity).
 
 ![Complexity tab](./images/{{ page.meta.file_name }}-tab-complexity.png)
-
-{%
-    include-markdown "../repositories-coverage/commits.md"
-    start="<!--tab-diff-start-->"
-    end="<!--tab-diff-end-->"
-%}
 
 ## Diff tab
 
