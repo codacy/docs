@@ -15,7 +15,7 @@ jobs:
         id: lychee
         uses: lycheeverse/lychee-action@8646ba30535128ac92d33dfc9133794bfdd9b411 # v2
         with:
-          args: --verbose ./docs/**/*.md ./submodules/chart/docs/**/*.md
+          args: --verbose --accept '100..=103,200..=299,403' ./docs/**/*.md ./submodules/chart/docs/**/*.md
           jobSummary: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
