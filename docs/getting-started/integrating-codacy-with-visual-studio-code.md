@@ -73,7 +73,7 @@ See [how to manage the analysis of your repository's branches](../repositories-c
 1.  Make sure that the repository you’re working on is analyzed by Codacy and that you have a [repository read](../organizations/roles-and-permissions-for-organizations.md) role or higher.
 
     !!! tip
-        If this is your first time using Codacy, see [how to add and analyze your first repository](./codacy-quickstart.md#adding-your-first-repository).
+        If this is your first time using Codacy, see [how to get started](./codacy-quickstart.md#adding-your-organization-to-codacy).
 
 1.  Install the extension from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=codacy-app.codacy) or through the [Extensions view in VS Code](https://code.visualstudio.com/docs/editor/extension-marketplace#_browse-for-extensions).
 

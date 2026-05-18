@@ -31,7 +31,7 @@ In the main view, you can find the following information:
 1.  Make sure that the repository you’re working on is analyzed by Codacy and that you have a [repository read](../organizations/roles-and-permissions-for-organizations.md) role or higher.
 
     !!! tip
-        If this is your first time using Codacy, see [how to add and analyze your first repository](./codacy-quickstart.md#adding-your-first-repository).
+        If this is your first time using Codacy, see [how to get started](./codacy-quickstart.md#adding-your-organization-to-codacy).
 
 1.  Install the plugin from the [JetBrains Marketplace](https://plugins.jetbrains.com/plugin/23924-codacy) or through the [plugin settings panel](https://www.jetbrains.com/help/idea/managing-plugins.html) in your IntelliJ IDE.
 
