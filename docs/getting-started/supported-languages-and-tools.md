@@ -235,7 +235,8 @@ The table below lists all languages that Codacy supports and the corresponding t
           <a href="https://github.com/securego/gosec">Gosec</a> <a href="#client-side"><sup>3</sup></a>,
           <a href="https://github.com/mgechev/revive">Revive</a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#opengrep"><sup>1</sup></a>,
-          <a href="https://staticcheck.io/">Staticcheck</a> <a href="#client-side"><sup>3</sup></a></td>
+          <a href="https://staticcheck.io/">Staticcheck</a> <a href="#client-side"><sup>3</sup></a>,
+          <a href="https://github.com/golangci/golangci-lint">GolangCI Lint</a><a href="#client-side"><sup>3</sup></a></td>
       <td><a href="https://github.com/opengrep/opengrep/">Opengrep</a> <a href="#suggest-fixes">🔧</a></td>
       <td><a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a></td>
@@ -376,7 +377,7 @@ The table below lists all languages that Codacy supports and the corresponding t
     <tr>
       <td>Markdown</td>
       <td>.md, .markdown, .mdown, .mkdn, .mkd, .mdwn, .mkdown, .ron</td>
-      <td><a href="https://github.com/remarkjs/remark-lint">remark-lint</a>, <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a></td>
+      <td><a href="https://github.com/remarkjs/remark-lint">remark-lint</a>, <a href="https://github.com/DavidAnson/markdownlint">markdownlint</a>, <a href="https://github.com/seojoonkim/agentlinter">Agentlinter</a></td>
       <td><a href="https://github.com/DavidAnson/markdownlint">markdownlint</a> <a href="#suggest-fixes">🔧</a></td>
       <td>-</td>
       <td>-</td>
