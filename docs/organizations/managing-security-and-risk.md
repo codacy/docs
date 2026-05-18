@@ -372,6 +372,10 @@ Security and risk management supports checking the languages and infrastructure-
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a></td>
     </tr>
     <tr>
+      <td>AsyncAPI</td>
+      <td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
+    </tr>
+    <tr>
       <td>AWS CloudFormation</td>
       <td><a href="https://github.com/bridgecrewio/checkov/">Checkov</a>,
           <a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>1</sup></a></td>
@@ -399,8 +403,14 @@ Security and risk management supports checking the languages and infrastructure-
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
+      <td>CSS</td>
+      <td><a href="https://stylelint.io/">Stylelint</a>,
+      <a href="https://biomejs.dev/">BiomeJS</a></td>
+    </tr>
+    <tr>
       <td>Dart</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>,
+      <a href="https://github.com/dart-lang/sdk/tree/main/pkg/analyzer_cli">dartanalyzer</a></td>
     </tr>
     <tr>
       <td>Dockerfile</td>
@@ -421,7 +431,9 @@ Security and risk management supports checking the languages and infrastructure-
       <td>Go</td>
       <td><a href="https://github.com/securego/gosec">Gosec</a><a href="#client-side"> <sup>2</sup></a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
+          <a href="https://trivy.dev">Trivy</a>,
+          <a href="https://github.com/mgechev/revive">Revive</a>,
+          <a href="https://github.com/golangci/golangci-lint">GolangCI Lint</a><a href="#client-side"> <sup>2</sup></a></td>
     </tr>
     <tr>
       <td>Groovy</td>
@@ -441,11 +453,13 @@ Security and risk management supports checking the languages and infrastructure-
       <td>JavaScript</td>
       <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>4</sup></a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
+          <a href="https://trivy.dev">Trivy</a>,
+          <a href="https://biomejs.dev/">BiomeJS</a></td>
     </tr>
     <tr>
       <td>JSON</td>
-      <td><a href="https://trivy.dev">Trivy</a></td>
+      <td><a href="https://trivy.dev">Trivy</a>,
+      <a href="https://biomejs.dev/">BiomeJS</a></td>
     </tr>
     <tr>
       <td>Kotlin</td>
@@ -456,8 +470,20 @@ Security and risk management supports checking the languages and infrastructure-
       <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>1</sup></a></td>
     </tr>
     <tr>
+      <td>Less</td>
+      <td><a href="https://stylelint.io/">Stylelint</a></td>
+    </tr>
+    <tr>
+      <td>Markdown</td>
+      <td><a href="https://github.com/seojoonkim/agentlinter">Agentlinter</a></td>
+    </tr>
+    <tr>
       <td>Objective-C</td>
       <td><a href="https://clang.llvm.org/extra/clang-tidy/">Clang-Tidy</a><a href="#client-side"> <sup>2</sup></a></td>
+    </tr>
+    <tr>
+      <td>OpenAPI</td>
+      <td><a href="https://stoplight.io/open-source/spectral/">Spectral</a></td>
     </tr>
     <tr>
       <td>PHP</td>
@@ -492,6 +518,10 @@ Security and risk management supports checking the languages and infrastructure-
           <a href="https://trivy.dev">Trivy</a></td>
     </tr>
     <tr>
+      <td>Sass</td>
+      <td><a href="https://stylelint.io/">Stylelint</a></td>
+    </tr>
+    <tr>
       <td>Scala</td>
       <td><a href="https://github.com/codacy/codacy-scalameta">Codacy Scalameta Pro</a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
@@ -499,7 +529,8 @@ Security and risk management supports checking the languages and infrastructure-
     </tr>
     <tr>
       <td>Swift</td>
-      <td><a href="https://github.com/opengrep/opengrep/">Opengrep</a></td>
+      <td><a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
+      <a href="https://github.com/realm/SwiftLint">SwiftLint</a></td>
     </tr>
     <tr>
       <td>Shell</td>
@@ -519,7 +550,8 @@ Security and risk management supports checking the languages and infrastructure-
       <td>TypeScript</td>
       <td><a href="https://eslint.org/">ESLint</a> <a href="#eslint-plugin"><sup>4</sup></a>,
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
-          <a href="https://trivy.dev">Trivy</a></td>
+          <a href="https://trivy.dev">Trivy</a>,
+          <a href="https://biomejs.dev/">BiomeJS</a></td>
     </tr>
     <tr>
       <td>Visual Basic</td>
