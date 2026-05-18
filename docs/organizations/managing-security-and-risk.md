@@ -433,7 +433,7 @@ Security and risk management supports checking the languages and infrastructure-
           <a href="https://github.com/opengrep/opengrep/">Opengrep</a>,
           <a href="https://trivy.dev">Trivy</a>,
           <a href="https://github.com/mgechev/revive">Revive</a>,
-          <a href="https://github.com/golangci/golangci-lint">GolangCI Lint</a><a href="#client-side"> <sup>2</sup></td>
+          <a href="https://github.com/golangci/golangci-lint">GolangCI Lint</a><a href="#client-side"> <sup>2</sup></a></td>
     </tr>
     <tr>
       <td>Groovy</td>
@@ -469,7 +469,6 @@ Security and risk management supports checking the languages and infrastructure-
       <td>Kubernetes</td>
       <td><a href="https://trivy.dev">Trivy</a> <a href="#yaml-only"><sup>1</sup></a></td>
     </tr>
-    <tr>
     <tr>
       <td>Less</td>
       <td><a href="https://stylelint.io/">Stylelint</a></td>
