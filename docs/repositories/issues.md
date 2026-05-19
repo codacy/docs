@@ -5,7 +5,7 @@ The **Issues page** lists all the issues that Codacy detected in your repository
 By default, the page lists the issues on the main branch of your repository but if you have [more than one branch enabled](../repositories-configure/managing-branches.md) you can use the drop-down list at the top of the page to display issues on other branches.
 
 !!! note
-    [You can use the Codacy API](../codacy-api/examples/obtaining-current-issues-in-repositories.md) to generate reports or obtain information about the current issues in your repositories in a more flexible way.
+    [You can use the Codacy API](../codacy-api/examples/obtaining-current-issues-in-repositories.md) to generate reports or obtain information about the current issues in your repositories in a more flexible way. You can also list, filter, and manage issues directly from your terminal with the [Codacy Cloud CLI](../codacy-cloud-cli/index.md).
 
 ![Issues page](images/issues.png)
 

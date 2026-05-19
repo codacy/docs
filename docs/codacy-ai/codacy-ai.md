@@ -6,6 +6,9 @@ Codacy AI is a set of optional features integrated into the Software, designed t
 
 Codacy AI utilizes only enterprise-grade instances of OpenAI and Google Gemini services with enhanced security, privacy, and data protection features. Customer Code processed through Codacy AI will not be used by Codacy, OpenAI, or any third-party AI provider for training, improving, or developing artificial intelligence models, machine learning algorithms, or any other automated systems.
 
+!!! tip
+    Want to interact with Codacy from your terminal or AI assistant? The [Codacy Cloud CLI](../codacy-cloud-cli/index.md) lets you query issues, security findings, pull requests, and more — all without opening a browser.
+
 ## AI Features
 
 ### AI-enhanced comments
