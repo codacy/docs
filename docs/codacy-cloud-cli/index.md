@@ -8,7 +8,7 @@ The Codacy Cloud CLI gives you a fast terminal interface to your Codacy data. Ad
 
 Pair it with the [Codacy Claude Code skill](#install-the-claude-code-skill) to interact with your Codacy data in plain language directly from your AI assistant.
 
-<div style="position: relative; padding-bottom: 61.224489795918366%; height: 0;"><iframe src="https://www.loom.com/embed/1960b3f07f2c419682a1e22e2b2928d1" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+<div style="position: relative; padding-bottom: 61.224489795918366%; height: 0;"><iframe src="https://www.loom.com/embed/1960b3f07f2c419682a1e22e2b2928d1" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
 
 ## Installation
 
@@ -129,7 +129,11 @@ codacy findings gh my-org --scan-types SAST,Secrets
 codacy findings gh my-org --scan-types SCA,IaC --severities High
 ```
 
-Findings are tracked with statuses like `Overdue`, `OnTrack`, and `DueSoon`. Use `--statuses` to filter accordingly.
+Findings are tracked with statuses like `Overdue`, `OnTrack`, and `DueSoon`. Use `--statuses` to filter accordingly:
+
+```bash
+codacy findings gh my-org --statuses Overdue,DueSoon
+```
 
 ### Inspect pull requests
 

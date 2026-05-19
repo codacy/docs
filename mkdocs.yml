@@ -574,9 +574,10 @@ nav:
           - codacy-guardrails/codacy-guardrails-limitations.md
           - codacy-guardrails/codacy-guardrails-troubleshooting.md
           - codacy-guardrails/codacy-guardrails-faq.md
+    - Codacy Cloud CLI:
+          - codacy-cloud-cli/index.md
     - Codacy AI:
           - codacy-ai/codacy-ai.md
-          - Codacy Cloud CLI: codacy-cloud-cli/index.md
     - Repositories on Codacy:
           - repositories/repository-dashboard.md
           - repositories/commits.md
