@@ -6,7 +6,7 @@ description: Install and use the Codacy Cloud CLI to manage your repositories, i
 
 The Codacy Cloud CLI gives you a fast terminal interface to your Codacy data. Add repositories, review issues, investigate security findings, inspect pull requests, and configure tools—all without opening a browser.
 
-Pair it with [Codacy Skills](#use-with-an-ai-assistant) to interact with your Codacy data in plain language directly from your AI assistant.
+Pair it with [Codacy Skills](#install-the-codacy-skills) to interact with your Codacy data in plain language directly from your AI assistant.
 
 <div style="position: relative; padding-bottom: 61.224489795918366%; height: 0;"><iframe src="https://www.loom.com/embed/1960b3f07f2c419682a1e22e2b2928d1" allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: 0;"></iframe></div>
 
@@ -40,24 +40,23 @@ Get your API token under **My Account > Access Management > API Tokens** in Coda
 
 To remove your stored credentials, run `codacy logout`.
 
-## Use with an AI assistant {: id="use-with-an-ai-assistant"}
+## Install the Codacy skills {: id="install-the-codacy-skills"}
 
-The [Codacy Skills](https://github.com/codacy/codacy-skills) repository provides a set of skills for Claude (Claude Code and Claude.ai) that let you interact with your Codacy data in plain language, without needing to remember command syntax:
+The [Codacy Skills](https://github.com/codacy/codacy-skills) let your AI assistant interact with your Codacy data in plain language, without needing to remember command syntax:
 
 - "Show me the critical security findings in my org"
 - "What issues were introduced in PR #42?"
 - "Ignore all false positives in the last pull request"
 
-!!! tip
-    If you use **Claude Code**, install the skills package in one step:
+**Claude Code** (recommended):
 
-    ```bash
-    claude plugin install codacy-skills@codacy
-    ```
+```bash
+claude plugin install codacy-skills@codacy
+```
 
-    If you use **Claude.ai**, download the skill folder, zip it, and upload it under **Settings > Capabilities > Skills**.
+**Claude.ai**: download the skill folder, zip it, and upload it under **Settings > Capabilities > Skills**.
 
-    For other AI assistants, use the CLI commands directly — the skills repository is a useful reference for understanding what the CLI can do and how to structure prompts.
+If you use a different AI assistant, visit the [Codacy Skills repository](https://github.com/codacy/codacy-skills) to install the skills directly.
 
 ## What you can do
 
