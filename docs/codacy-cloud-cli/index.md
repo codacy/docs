@@ -22,7 +22,7 @@ Alternatively, you can build from source. See the [GitHub repository](https://gi
 
 ## Authentication {: id="authentication"}
 
-Run `codacy login` and enter your API token when prompted. Codacy stores your credentials at `~/.codacy/credentials`.
+Run `codacy login` and enter your API token when prompted. Codacy stores your credentials encrypted at `~/.codacy/credentials`.
 
 ```bash
 codacy login
@@ -36,7 +36,7 @@ codacy login --token <your-api-token>
 
 You can also set `CODACY_API_TOKEN` as an environment variable. This takes precedence over stored credentials.
 
-Get your API token under **My Account > Access Management** in Codacy. See [API tokens](../codacy-api/api-tokens.md) for details.
+Get your API token under **My Account > Access Management > API Tokens** in Codacy. See [API tokens](../codacy-api/api-tokens.md) for details.
 
 To remove your stored credentials, run `codacy logout`.
 
