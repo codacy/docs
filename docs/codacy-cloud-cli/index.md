@@ -40,7 +40,7 @@ Get your API token under **My Account > Access Management > API Tokens** in Coda
 
 To remove your stored credentials, run `codacy logout`.
 
-## Install the Codacy skills {: id="install-the-codacy-skills"}
+## Install the Codacy Skills {: id="install-the-codacy-skills"}
 
 The [Codacy Skills](https://github.com/codacy/codacy-skills) let your AI assistant interact with your Codacy data in plain language, without needing to remember command syntax:
 
