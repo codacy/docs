@@ -4,7 +4,7 @@ description: Install and use the Codacy Cloud CLI to manage your repositories, i
 
 # Codacy Cloud CLI
 
-The Codacy Cloud CLI gives you a fast terminal interface to your Codacy data. Add repositories, review issues, investigate security findings, inspect pull requests, and configure tools — all without opening a browser.
+The Codacy Cloud CLI gives you a fast terminal interface to your Codacy data. Add repositories, review issues, investigate security findings, inspect pull requests, and configure tools—all without opening a browser.
 
 Pair it with the [Codacy Claude Code skill](#install-the-claude-code-skill) to interact with your Codacy data in plain language directly from your AI assistant.
 
@@ -18,7 +18,7 @@ Install the CLI using npm:
 npm install -g @codacy/codacy-cloud-cli
 ```
 
-Alternatively, you can build from source — see the [GitHub repository](https://github.com/codacy/codacy-cloud-cli) for instructions.
+Alternatively, you can build from source. See the [GitHub repository](https://github.com/codacy/codacy-cloud-cli) for instructions.
 
 ## Authentication {: id="authentication"}
 
@@ -28,7 +28,7 @@ Run `codacy login` and enter your API token when prompted. Codacy stores your cr
 codacy login
 ```
 
-To authenticate without a prompt — for example in a CI/CD pipeline — pass your token directly:
+To authenticate without a prompt (for example, in a CI/CD pipeline), pass your token directly:
 
 ```bash
 codacy login --token <your-api-token>
@@ -43,7 +43,7 @@ To remove your stored credentials, run `codacy logout`.
 ## Install the Claude Code skill {: id="install-the-claude-code-skill"}
 
 !!! tip
-    This step is optional but highly recommended. The Codacy skill for Claude Code lets you ask questions about your Codacy data in plain language — without needing to remember command syntax.
+    This step is optional but highly recommended. The Codacy skill for Claude Code lets you ask questions about your Codacy data in plain language, without needing to remember command syntax.
 
 Install the Codacy skills package in Claude Code:
 
@@ -77,13 +77,13 @@ List the repositories in an organization and see their analysis status:
 codacy repositories gh my-org
 ```
 
-Get a full overview of a specific repository — analysis status, quality metrics, and recent activity:
+Get a full overview of a specific repository (analysis status, quality metrics, and recent activity):
 
 ```bash
 codacy repository gh my-org my-repo
 ```
 
-You can also add or remove repositories, follow/unfollow them, link coding standards, and request reanalysis — all from the same command using flags like `--add`, `--remove`, and `--reanalyze`.
+You can also add or remove repositories, follow/unfollow them, link coding standards, and request reanalysis. Use flags like `--add`, `--remove`, and `--reanalyze` on the same command.
 
 ### Review code issues
 
@@ -107,7 +107,7 @@ Ignore all issues matching your current filters in one step:
 codacy issues gh my-org my-repo --severities Critical --ignore --ignore-reason FalsePositive
 ```
 
-Inspect a single issue and ignore or unignore it:
+Inspect a single issue and ignore or remove the ignore flag:
 
 ```bash
 codacy issue gh my-org my-repo <issueId> --ignore --ignore-reason AcceptedUse
@@ -151,7 +151,7 @@ Ignore all potential false positives in a PR at once:
 codacy pull-request gh my-org my-repo 42 --ignore-all-false-positives
 ```
 
-Request reanalysis of the PR's HEAD commit:
+Request reanalysis of the pull request HEAD commit:
 
 ```bash
 codacy pull-request gh my-org my-repo 42 --reanalyze
@@ -198,7 +198,7 @@ codacy pattern gh my-org my-repo eslint max-len --enable --parameter max=120
 
 ### Terminal-first PR review
 
-Before merging, check the full analysis of a pull request — issues, coverage delta, and security findings — without leaving the terminal:
+Before merging, check the full analysis of a pull request (issues, coverage delta, and security findings) without leaving the terminal:
 
 ```bash
 # See the PR summary
@@ -241,6 +241,7 @@ gh issue comment 123 --body "Monthly quality report: $REPORT"
 
 Use the CLI in a GitHub Actions workflow to automatically review and flag issues on a schedule:
 
+{% raw %}
 ```yaml
 name: Monthly Codacy Issue Triage
 on:
@@ -263,6 +264,7 @@ jobs:
             --output json > issues.json
           echo "Open critical/high issues: $(cat issues.json | jq length)"
 ```
+{% endraw %}
 
 ## See also
 
