@@ -207,49 +207,23 @@ codacy pull-request gh my-org my-repo 42 --diff
 
 Feed both outputs to Claude Code (with the Codacy skill installed) to decide what to fix and apply it directly.
 
-### Monthly quality report
+### Use the CLI in CI
 
-Generate a JSON summary of open issues and pipe it to `jq` for a quick overview:
-
-```bash
-codacy issues gh my-org my-repo --output json | jq '{ total: length, critical: [.[] | select(.severity == "Critical")] | length, high: [.[] | select(.severity == "High")] | length }'
-```
-
-Post the result as a comment on a GitHub issue to keep your team informed:
-
-```bash
-REPORT=$(codacy issues gh my-org my-repo --output json | jq -r '"Critical: \([.[] | select(.severity=="Critical")] | length), High: \([.[] | select(.severity=="High")] | length)"')
-gh issue comment 123 --body "Monthly quality report: $REPORT"
-```
-
-### Scheduled issue triage in CI
-
-Use the CLI in a GitHub Actions workflow to automatically review and flag issues on a schedule:
+The CLI works in any CI environment. Set `CODACY_API_TOKEN` as a secret and install the CLI as a step:
 
 {% raw %}
 ```yaml
-name: Monthly Codacy Issue Triage
-on:
-  schedule:
-    - cron: '0 9 1 * *'  # First day of each month at 09:00 UTC
+- name: Install Codacy Cloud CLI
+  run: npm install -g @codacy/codacy-cloud-cli
 
-jobs:
-  triage:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Install Codacy Cloud CLI
-        run: npm install -g @codacy/codacy-cloud-cli
-
-      - name: Generate issue report
-        env:
-          CODACY_API_TOKEN: ${{ secrets.CODACY_API_TOKEN }}
-        run: |
-          codacy issues gh ${{ github.repository_owner }} my-repo \
-            --severities Critical,High \
-            --output json > issues.json
-          echo "Open critical/high issues: $(cat issues.json | jq length)"
+- name: Run Codacy CLI
+  env:
+    CODACY_API_TOKEN: ${{ secrets.CODACY_API_TOKEN }}
+  run: codacy issues gh ${{ github.repository_owner }} my-repo --output json
 ```
 {% endraw %}
+
+From there, pipe the JSON output to `jq`, post results as PR comments with the [GitHub CLI](https://cli.github.com/), open issues, send Slack notifications — whatever fits your workflow.
 
 ## See also
 
