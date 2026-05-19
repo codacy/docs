@@ -28,13 +28,7 @@ Run `codacy login` and enter your API token when prompted. Codacy stores your cr
 codacy login
 ```
 
-To authenticate without a prompt (for example, in a CI/CD pipeline), pass your token directly:
-
-```bash
-codacy login --token <your-api-token>
-```
-
-You can also set `CODACY_API_TOKEN` as an environment variable. This takes precedence over stored credentials.
+For non-interactive environments such as CI/CD pipelines, set the `CODACY_API_TOKEN` environment variable instead. This takes precedence over stored credentials.
 
 Get your API token under **My Account > Access Management > API Tokens** in Codacy. See [API tokens](../codacy-api/api-tokens.md) for details.
 
