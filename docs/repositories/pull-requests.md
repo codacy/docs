@@ -13,6 +13,9 @@ By default, the page lists open pull requests, but you can click the **Closed** 
 
 Click a specific pull request to see detailed information about the code quality changes introduced by that pull request.
 
+!!! tip
+    You can also inspect pull request analysis, view an annotated diff, and manage issues directly from your terminal using the [Codacy Cloud CLI](../codacy-cloud-cli/index.md).
+
 ![Pull request detail](images/pull-requests-detail.png)
 
 The next sections describe each area of the pull request detail page.
