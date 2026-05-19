@@ -53,9 +53,9 @@ claude plugin install codacy-skills@codacy
 
 Once installed, you can ask Claude things like:
 
-- *"Show me the critical security findings in my org"*
-- *"What issues were introduced in PR #42?"*
-- *"Ignore all false positives in the last pull request"*
+- "Show me the critical security findings in my org"
+- "What issues were introduced in PR #42?"
+- "Ignore all false positives in the last pull request"
 
 ## What you can do
 
@@ -71,15 +71,11 @@ Use `--output json` on any command to get machine-readable output for scripting.
 
 ### Manage your repositories
 
-List the repositories in an organization and see their analysis status:
-
 ```bash
+# List repositories in an organization
 codacy repositories gh my-org
-```
 
-Get a full overview of a specific repository (analysis status, quality metrics, and recent activity):
-
-```bash
+# Get a full overview of a specific repository
 codacy repository gh my-org my-repo
 ```
 
@@ -87,17 +83,19 @@ You can also add or remove repositories, follow/unfollow them, link coding stand
 
 ### Review code issues
 
-List issues in a repository, with optional filters for severity, category, tool, author, and branch:
+List and filter issues by severity, category, tool, author, or branch:
 
 ```bash
+# List all issues
 codacy issues gh my-org my-repo
+
+# Filter by severity and category
 codacy issues gh my-org my-repo --severities Critical,High --categories Security
+
+# Filter by branch or author
 codacy issues gh my-org my-repo --branch feature/my-feature --authors dev@example.com
-```
 
-Get a count overview instead of the full list:
-
-```bash
+# Show counts only
 codacy issues gh my-org my-repo --overview
 ```
 
@@ -115,16 +113,16 @@ codacy issue gh my-org my-repo <issueId> --ignore --ignore-reason AcceptedUse
 
 ### Investigate security findings
 
-List security findings for an organization or a specific repository:
+List findings for an organization or a specific repository, with optional filters:
 
 ```bash
+# Organization-wide findings
 codacy findings gh my-org
+
+# Per-repository, filtered by severity
 codacy findings gh my-org my-repo --severities Critical,High
-```
 
-Filter by scan type to focus on what matters:
-
-```bash
+# Filter by scan type
 codacy findings gh my-org --scan-types SAST,Secrets
 codacy findings gh my-org --scan-types SCA,IaC --severities High
 ```
@@ -137,61 +135,42 @@ codacy findings gh my-org --statuses Overdue,DueSoon
 
 ### Inspect pull requests
 
-Get the full analysis summary for a pull request:
-
 ```bash
+# Get the full analysis summary
 codacy pull-request gh my-org my-repo 42
-```
 
-View an annotated diff showing new issues and coverage changes line by line:
-
-```bash
+# View an annotated diff with new issues and coverage changes
 codacy pull-request gh my-org my-repo 42 --diff
-```
 
-Ignore all potential false positives in a PR at once:
-
-```bash
+# Ignore all false positives in bulk
 codacy pull-request gh my-org my-repo 42 --ignore-all-false-positives
-```
 
-Request reanalysis of the pull request HEAD commit:
-
-```bash
+# Trigger reanalysis of the HEAD commit
 codacy pull-request gh my-org my-repo 42 --reanalyze
 ```
 
 ### Configure tools and patterns
 
-List all tools for a repository and see which ones are enabled:
-
 ```bash
+# List all tools and see which are enabled
 codacy tools gh my-org my-repo
-```
 
-Enable or disable a specific tool:
-
-```bash
+# Enable or disable a tool
 codacy tool gh my-org my-repo eslint --enable
 codacy tool gh my-org my-repo pylint --disable
-```
 
-Import tool configurations from a `.codacy/codacy.config.json` file:
-
-```bash
+# Import tool configuration from .codacy/codacy.config.json
 codacy tools gh my-org my-repo --import
 ```
 
-Bulk-enable or bulk-disable patterns for a tool:
+Bulk-enable or bulk-disable patterns, or set a parameter on a specific pattern:
 
 ```bash
+# Bulk-enable or bulk-disable by category or severity
 codacy patterns gh my-org my-repo eslint --categories Security --enable-all
 codacy patterns gh my-org my-repo eslint --severities Minor --disable-all
-```
 
-Set a parameter on a specific pattern:
-
-```bash
+# Set a parameter on a specific pattern
 codacy pattern gh my-org my-repo eslint max-len --enable --parameter max=120
 ```
 
