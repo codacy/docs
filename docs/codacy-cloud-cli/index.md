@@ -45,6 +45,7 @@ The [Codacy Skills](https://github.com/codacy/codacy-skills) let your AI assista
 **Claude Code** (recommended):
 
 ```bash
+claude plugin marketplace add codacy/codacy-skills
 claude plugin install codacy-skills@codacy
 ```
 
