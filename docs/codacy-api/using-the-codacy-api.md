@@ -2,6 +2,9 @@
 
 The Codacy API allows you to programmatically retrieve and analyze data from Codacy and perform a few configuration changes.
 
+!!! tip
+    Looking for a higher-level interface? The [Codacy Cloud CLI](../codacy-cloud-cli/index.md) wraps the Codacy API with ready-to-use commands for managing repositories, issues, security findings, and pull requests from your terminal.
+
 Codacy supports two API versions but we strongly recommend using the new API v3 when possible since it's the version being actively developed. Import the OpenAPI 2.0 definition provided below into your development tools to help bootstrap your integration with Codacy.
 
 <table>
