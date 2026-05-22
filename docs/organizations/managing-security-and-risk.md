@@ -585,6 +585,42 @@ You're also able to click any dependency to find out more information about it.
 
  The dependency overview page offers a quick bird's-eye view of that particular dependency. You'll be able to see all different versions that are being used, including which repository is using them, the oldest and most recent versions you're leveraging, as well as the highest criticality of security issues, the license <a href="#license-scanning"><sup>5</sup></a> applied to any particular version of that dependency, and the [OSSF Scorecard](#ossf-scorecard) security assessment.
 
+### Transitive dependencies {: id="transitive-dependencies"}
+
+A **transitive dependency** is a package your repository doesn't import directly — it's pulled in through another package you depend on. When a vulnerability lives in a transitive dependency, the package you need to upgrade is often *not* the vulnerable one itself, but an ancestor higher up the chain that has a patched release available.
+
+Codacy surfaces the full import chain for every finding caused by a transitive dependency, so you can see exactly which package to bump.
+
+#### Where you see it
+
+Open the **Findings** tab under **Security and risk management**. Findings caused by a transitive dependency are labelled **Transitive Dependency** in the header.
+
+![Security and risk management transitive dependency finding](images/security-risk-management-transitive-chain.png)
+
+When you expand a transitive finding, the import chain appears at the top of the finding card. It shows every hop from your repository down to the vulnerable package, ending with the CVE identifier.
+
+#### Reading the chain
+
+Each segment is one package in the resolution path. The chain reads left to right:
+
+- **First segment** — your repository.
+- **Middle segments** — the intermediate packages that pull in the vulnerable one.
+- **Upgrade label** — when an intermediate package has a patched release available, an "Upgrade to *version*" marker appears on it. This is the package you bump to fix the vulnerability across this path.
+- **Last package segment** — the vulnerable package and version.
+- **CVE identifier** — the specific vulnerability.
+
+In the example above, the vulnerable package is `Torch@2.4.0`, but the fix is to upgrade `accelerate` to `1.1.1` — that release of `accelerate` no longer resolves to the affected `Torch` version.
+
+#### When no upgrade is available
+
+If no package in the chain has a patched release yet, the chain shows the full path without an upgrade label. In that case the vulnerability cannot be resolved by a version bump alone; you may need to wait for an upstream fix, apply a workaround, or accept the risk per your organization's policy.
+
+#### Limitations
+
+- The import chain is shown only for findings that come from dependency scanning. Findings from other scan types (container scanning, app scanning) do not show a chain.
+- Each finding shows a single representative path. If a repository reaches the same vulnerable package through more than one chain, only one is displayed.
+- The upgrade label reflects the nearest ancestor with a known patched release at scan time. If multiple ancestors could be upgraded, the closest one to the vulnerable package is suggested.
+
 ### OSSF Scorecard {: id="ossf-scorecard"}
 
 The **OSSF Scorecard** feature provides additional security insights for your dependencies by displaying security assessment data from the Open Source Security Foundation (OSSF) Scorecard project.
