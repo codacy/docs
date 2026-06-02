@@ -597,29 +597,33 @@ Open the **Findings** tab under **Security and risk management**. Findings cause
 
 ![Security and risk management transitive dependency finding](images/security-risk-management-transitive-chain.png)
 
-When you expand a transitive finding, the import chain appears at the top of the finding card. It shows every hop from your repository down to the vulnerable package, ending with the CVE identifier.
+When you expand a transitive finding, the import chain appears at the top of the finding card. It shows every hop from the first affected dependency down to the vulnerable package.
 
 #### Reading the chain
 
-Each segment is one package in the resolution path. The chain reads left to right:
+The chain reads left to right:
 
-- **First segment** — your repository.
-- **Middle segments** — the intermediate packages that pull in the vulnerable one.
-- **Upgrade label** — when an intermediate package has a patched release available, an "Upgrade to *version*" marker appears on it. This is the package you bump to fix the vulnerability across this path.
-- **Last package segment** — the vulnerable package and version.
-- **CVE identifier** — the specific vulnerability.
+- **Transitive** — the icon and label that identifies this as a transitive dependency finding.
+- **Intermediate segments** — the packages in the resolution path, connected by arrows (`→`). Each one is a dependency that pulls in the next.
+- **Last segment** — the vulnerable package and version, shown in bold.
+- **Fixed version** — when a patched release is available, a **Fixed version *x.x.x*** label appears at the end of the chain. This is the version to target when upgrading to resolve the vulnerability.
 
-In the example above, the vulnerable package is `Torch@2.4.0`, but the fix is to upgrade `accelerate` to `1.1.1` — that release of `accelerate` no longer resolves to the affected `Torch` version.
+For example:
 
-#### When no upgrade is available
+```
+Transitive → peft@0.11.1 → accelerate@0.31.0 → Torch@2.4.0   Fixed version 1.1.1
+```
 
-If no package in the chain has a patched release yet, the chain shows the full path without an upgrade label. In that case the vulnerability cannot be resolved by a version bump alone; you may need to wait for an upstream fix, apply a workaround, or accept the risk per your organization's policy.
+In this example, `Torch@2.4.0` is the vulnerable package, and upgrading to the indicated fixed version resolves the vulnerability across this dependency path.
+
+#### When no fixed version is available
+
+If no patched release exists yet, the chain is shown without a **Fixed version** label. In that case the vulnerability cannot be resolved by a version bump alone; you may need to wait for an upstream fix, apply a workaround, or accept the risk per your organization's policy.
 
 #### Limitations
 
 - The import chain is shown only for findings that come from dependency scanning. Findings from other scan types (container scanning, app scanning) do not show a chain.
 - Each finding shows a single representative path. If a repository reaches the same vulnerable package through more than one chain, only one is displayed.
-- The upgrade label reflects the nearest ancestor with a known patched release at scan time. If multiple ancestors could be upgraded, the closest one to the vulnerable package is suggested.
 
 ### OSSF Scorecard {: id="ossf-scorecard"}
 
