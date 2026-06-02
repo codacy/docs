@@ -611,14 +611,14 @@ The chain reads left to right:
 For example:
 
 ```
-Transitive → peft@0.11.1 → accelerate@0.31.0 → Torch@2.4.0   Fixed version 1.1.1
+Transitive → peft@0.11.1 → accelerate@0.31.0 → Torch@2.4.0   Fixed version 2.4.1
 ```
 
 In this example, `Torch@2.4.0` is the vulnerable package, and upgrading to the indicated fixed version resolves the vulnerability across this dependency path.
 
 #### When no fixed version is available
 
-If no patched release exists yet, the chain is shown without a **Fixed version** label. In that case the vulnerability cannot be resolved by a version bump alone; you may need to wait for an upstream fix, apply a workaround, or accept the risk per your organization's policy.
+If no patched release exists yet, the chain is shown without a **Fixed version** label. In that case the vulnerability cannot be resolved by a version bump alone; you may need to wait for an upstream fix, apply a workaround (such as explicitly setting the version of the transitive dependency), or accept the risk per your organization's policy.
 
 #### Limitations
 
