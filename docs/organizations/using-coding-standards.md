@@ -17,7 +17,7 @@ This page covers the following topics:
 ## Creating a coding standard {: id="creating"}
 
 !!! note
-    Codacy currently supports up to 10 coding standards per organization.
+    Codacy currently supports up to 30 coding standards per organization.
 
 To create a coding standard for your organization:
 
@@ -177,7 +177,7 @@ A common strategy is to start with a baseline standard containing fundamental ru
 ![Coding standards strategies](images/coding-standard-strategy.png)
 
 !!! note
-    You can apply up to 10 coding standards to your organization. Standards can overlap, meaning a single repository can follow multiple standards simultaneously.
+    You can apply up to 30 coding standards to your organization. Standards can overlap, meaning a single repository can follow multiple standards simultaneously.
 
 !!! important
     If the same pattern appears in multiple standards, the version from the most recently created and applied standard (with its parameters) takes precedence.
