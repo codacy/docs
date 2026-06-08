@@ -93,6 +93,7 @@ TSLint
 TSQLLint
 unassigns
 unfollow
+unignore
 vacuumdb
 Visualforce
 VSCode

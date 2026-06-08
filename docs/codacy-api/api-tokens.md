@@ -9,6 +9,7 @@ Codacy provides **account** and **repository**-level API tokens that allow you t
 -   [Upload coverage data](../coverage-reporter/index.md) to Codacy
 -   Upload to Codacy the results of [running client-side analysis tools](../repositories-configure/local-analysis/client-side-tools.md)
 -   [Authenticate when using the Codacy API](using-the-codacy-api.md#authenticating-requests)
+-   [Authenticate with the Codacy Cloud CLI](../codacy-cloud-cli/index.md#authentication)
 
 The sections below provide details about the two types of API tokens and instructions on how to generate and revoke them.
 
