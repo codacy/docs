@@ -17,7 +17,7 @@ This page covers the following topics:
 ## Creating a coding standard {: id="creating"}
 
 !!! note
-    Codacy currently supports up to 10 coding standards per organization.
+    Codacy currently supports up to 30 coding standards per organization.
 
 To create a coding standard for your organization:
 
